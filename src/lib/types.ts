@@ -163,6 +163,7 @@ export interface SketchData {
   humanness: number;
   width?: number;
   height?: number;
+  sessionSeed?: number;
   elements: SketchElement[];
 }
 

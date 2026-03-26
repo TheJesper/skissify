@@ -19,7 +19,7 @@ function getWobbleOpts(sketch: SketchData, el: SketchElement): WobbleOptions {
     amplitude: sketch.amplitude,
     waves: sketch.waves,
     humanness: sketch.humanness,
-    seed: hashElement(el),
+    seed: hashElement(el) + (sketch.sessionSeed || 0),
   };
 }
 
@@ -142,6 +142,28 @@ export function renderSketch(
   const defaultColor =
     sketch.paper === "blueprint" ? "#a8c8e8" : sketch.inkColor || "#111";
 
+  // Center elements on paper — compute bounding box and offset
+  const bbox = computeBoundingBox(sketch.elements);
+  let offsetX = 0;
+  let offsetY = 0;
+  if (bbox) {
+    const contentW = bbox.maxX - bbox.minX;
+    const contentH = bbox.maxY - bbox.minY;
+    const contentCenterX = bbox.minX + contentW / 2;
+    const contentCenterY = bbox.minY + contentH / 2;
+    const paperCenterX = w / 2;
+    const paperCenterY = h / 2;
+    const dx = paperCenterX - contentCenterX;
+    const dy = paperCenterY - contentCenterY;
+    if (Math.abs(dx) > w * 0.05) offsetX = dx;
+    if (Math.abs(dy) > h * 0.05) offsetY = dy;
+  }
+
+  if (offsetX !== 0 || offsetY !== 0) {
+    ctx.save();
+    ctx.translate(offsetX, offsetY);
+  }
+
   // Render each element
   for (const el of sketch.elements) {
     ctx.save();
@@ -243,14 +265,23 @@ export function renderSketch(
         ctx.moveTo(el.x2 + nx, el.y2 + ny);
         ctx.lineTo(el.x2 - nx, el.y2 - ny);
         ctx.stroke();
-        // Label
+        // Label — rotate text to follow the dim line, offset outward
         const midX = (el.x1 + el.x2) / 2;
         const midY = (el.y1 + el.y2) / 2;
         ctx.font = "12px 'Caveat', cursive";
         ctx.fillStyle = el.color || defaultColor;
         ctx.textAlign = "center";
         ctx.textBaseline = "bottom";
-        ctx.fillText(el.label, midX, midY - 4);
+        const isVertical = Math.abs(el.x2 - el.x1) < Math.abs(el.y2 - el.y1);
+        if (isVertical) {
+          ctx.save();
+          ctx.translate(midX, midY);
+          ctx.rotate(-Math.PI / 2);
+          ctx.fillText(el.label, 0, -6);
+          ctx.restore();
+        } else {
+          ctx.fillText(el.label, midX, midY - 6);
+        }
         break;
       }
 
@@ -360,4 +391,46 @@ export function renderSketch(
 
     ctx.restore();
   }
+
+  if (offsetX !== 0 || offsetY !== 0) {
+    ctx.restore();
+  }
+}
+
+function computeBoundingBox(
+  elements: SketchElement[]
+): { minX: number; minY: number; maxX: number; maxY: number } | null {
+  if (!elements || elements.length === 0) return null;
+
+  let minX = Infinity,
+    minY = Infinity,
+    maxX = -Infinity,
+    maxY = -Infinity;
+
+  for (const el of elements) {
+    if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
+      minX = Math.min(minX, el.x1, el.x2);
+      minY = Math.min(minY, el.y1, el.y2);
+      maxX = Math.max(maxX, el.x1, el.x2);
+      maxY = Math.max(maxY, el.y1, el.y2);
+    } else if ("x" in el && "w" in el && "h" in el) {
+      minX = Math.min(minX, el.x);
+      minY = Math.min(minY, el.y);
+      maxX = Math.max(maxX, el.x + el.w);
+      maxY = Math.max(maxY, el.y + el.h);
+    } else if ("cx" in el && "r" in el) {
+      minX = Math.min(minX, el.cx - el.r);
+      minY = Math.min(minY, el.cy - el.r);
+      maxX = Math.max(maxX, el.cx + el.r);
+      maxY = Math.max(maxY, el.cy + el.r);
+    } else if ("x" in el && "y" in el) {
+      minX = Math.min(minX, el.x);
+      minY = Math.min(minY, el.y - 20);
+      maxX = Math.max(maxX, el.x + 80);
+      maxY = Math.max(maxY, el.y);
+    }
+  }
+
+  if (!isFinite(minX)) return null;
+  return { minX, minY, maxX, maxY };
 }
