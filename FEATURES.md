@@ -25,6 +25,8 @@
 ### Canvas Interaction
 - Click-to-select elements (hit detection for all element types)
 - Shift+click multi-select
+- **Drag-to-move selected elements** (all 14 types, zoom-corrected, 4px dead zone)
+- **Dynamic cursor**: grab on hover over selected element, grabbing during drag
 - Delete/Backspace to remove selected
 - Escape to deselect
 - Scroll-wheel zoom
@@ -85,6 +87,11 @@
 - MCP Skill API (expose as MCP server)
 - Layers (walls, furniture, electrical, plumbing, annotations)
 - Shareable links & collaboration
+
+## Recently Implemented (Engineering Agent)
+
+- [x] **Drag-to-move selected elements** — all 14 element types, zoom-corrected scaling, 4px dead-zone, full undo/redo integration
+- [x] **Dynamic cursor feedback** — grab on hover, grabbing during drag, crosshair elsewhere
 
 ## Suggested Features for Launch Readiness
 
