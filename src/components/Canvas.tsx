@@ -9,6 +9,7 @@ interface CanvasProps {
   redrawKey: number;
   selectedElements: Set<number>;
   onSelectElements: (elements: Set<number>) => void;
+  onMoveSelected?: (dx: number, dy: number) => void;
 }
 
 export default function Canvas({
@@ -16,13 +17,17 @@ export default function Canvas({
   redrawKey,
   selectedElements,
   onSelectElements,
+  onMoveSelected,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [cursor, setCursor] = useState<string>("crosshair");
   const isPanning = useRef(false);
+  const isDraggingElements = useRef(false);
   const lastMouse = useRef({ x: 0, y: 0 });
+  const dragStartMouse = useRef({ x: 0, y: 0 });
   const lastTouchDist = useRef<number | null>(null);
   const lastTouchCenter = useRef<{ x: number; y: number } | null>(null);
 
@@ -91,9 +96,11 @@ export default function Canvas({
     draw();
   }, [draw, redrawKey]);
 
-  // Mouse handlers for selection
+  // Mouse handlers for selection and drag-to-move
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLCanvasElement>) => {
+      // If we just finished a drag, don't treat it as a click
+      if (isDraggingElements.current) return;
       const canvas = canvasRef.current;
       if (!canvas) return;
 
@@ -129,36 +136,118 @@ export default function Canvas({
     [sketch.elements, canvasW, canvasH, selectedElements, onSelectElements]
   );
 
-  // Zoom with scroll
+  // Zoom with scroll — zoom toward mouse cursor for pixel-perfect feel
   const handleWheel = useCallback(
     (e: React.WheelEvent) => {
       e.preventDefault();
-      const delta = e.deltaY > 0 ? 0.9 : 1.1;
-      setZoom((z) => Math.max(0.2, Math.min(5, z * delta)));
+      const container = containerRef.current;
+      if (!container) return;
+
+      const rect = container.getBoundingClientRect();
+      const mx = e.clientX - rect.left - rect.width / 2;
+      const my = e.clientY - rect.top - rect.height / 2;
+
+      const factor = e.deltaY > 0 ? 0.9 : 1.1;
+
+      setZoom((prevZoom) => {
+        const newZoom = Math.max(0.2, Math.min(5, prevZoom * factor));
+        const scale = newZoom / prevZoom;
+        setPan((p) => ({
+          x: mx - scale * (mx - p.x),
+          y: my - scale * (my - p.y),
+        }));
+        return newZoom;
+      });
     },
     []
   );
 
-  // Pan with alt/ctrl + drag
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
-    if (e.altKey || e.ctrlKey) {
-      isPanning.current = true;
-      lastMouse.current = { x: e.clientX, y: e.clientY };
-    }
-  }, []);
+  // Pan with alt/ctrl + drag; move elements otherwise when selected
+  const handleMouseDown = useCallback(
+    (e: React.MouseEvent) => {
+      if (e.altKey || e.ctrlKey) {
+        isPanning.current = true;
+        lastMouse.current = { x: e.clientX, y: e.clientY };
+        return;
+      }
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    if (isPanning.current) {
-      setPan((p) => ({
-        x: p.x + (e.clientX - lastMouse.current.x),
-        y: p.y + (e.clientY - lastMouse.current.y),
-      }));
-      lastMouse.current = { x: e.clientX, y: e.clientY };
-    }
-  }, []);
+      // Check if pressing down on a selected element → start drag-move
+      if (selectedElements.size > 0 && onMoveSelected) {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const rect = canvas.getBoundingClientRect();
+        const scaleX = canvasW / rect.width;
+        const scaleY = canvasH / rect.height;
+        const mx = (e.clientX - rect.left) * scaleX;
+        const my = (e.clientY - rect.top) * scaleY;
+
+        // Check if click is on any selected element
+        const hitOnSelected = [...selectedElements].some((i) => {
+          const el = sketch.elements[i];
+          return el && hitTest(el, mx, my);
+        });
+
+        if (hitOnSelected) {
+          isDraggingElements.current = false; // will flip to true on first move
+          dragStartMouse.current = { x: e.clientX, y: e.clientY };
+          lastMouse.current = { x: e.clientX, y: e.clientY };
+          e.preventDefault();
+        }
+      }
+    },
+    [selectedElements, sketch.elements, canvasW, canvasH, onMoveSelected]
+  );
+
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent) => {
+      if (isPanning.current) {
+        setPan((p) => ({
+          x: p.x + (e.clientX - lastMouse.current.x),
+          y: p.y + (e.clientY - lastMouse.current.y),
+        }));
+        lastMouse.current = { x: e.clientX, y: e.clientY };
+        return;
+      }
+
+      // Drag selected elements
+      if (
+        !isPanning.current &&
+        selectedElements.size > 0 &&
+        onMoveSelected &&
+        e.buttons === 1
+      ) {
+        const dx = e.clientX - lastMouse.current.x;
+        const dy = e.clientY - lastMouse.current.y;
+
+        if (!isDraggingElements.current) {
+          // Only start dragging after a minimum move threshold
+          const totalDx = e.clientX - dragStartMouse.current.x;
+          const totalDy = e.clientY - dragStartMouse.current.y;
+          if (Math.sqrt(totalDx * totalDx + totalDy * totalDy) > 4) {
+            isDraggingElements.current = true;
+          }
+        }
+
+        if (isDraggingElements.current) {
+          // Scale mouse delta to canvas coords
+          const canvas = canvasRef.current;
+          if (canvas) {
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = canvasW / rect.width;
+            const scaleY = canvasH / rect.height;
+            // Also account for zoom
+            onMoveSelected((dx * scaleX) / zoom, (dy * scaleY) / zoom);
+          }
+          lastMouse.current = { x: e.clientX, y: e.clientY };
+        }
+      }
+    },
+    [selectedElements, onMoveSelected, canvasW, canvasH, zoom]
+  );
 
   const handleMouseUp = useCallback(() => {
     isPanning.current = false;
+    isDraggingElements.current = false;
   }, []);
 
   // Touch: pinch-to-zoom and two-finger pan
@@ -221,8 +310,14 @@ export default function Canvas({
   return (
     <div
       ref={containerRef}
-      className="flex-1 overflow-hidden bg-neutral-800 flex items-center justify-center touch-none"
-      style={{ minHeight: 0 }}
+      className="flex-1 overflow-hidden flex items-center justify-center touch-none"
+      style={{
+        minHeight: 0,
+        backgroundColor: "#2a2a2a",
+        backgroundImage:
+          "radial-gradient(circle, #3a3a3a 1px, transparent 1px)",
+        backgroundSize: "24px 24px",
+      }}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -244,12 +339,20 @@ export default function Canvas({
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
-          className="shadow-2xl cursor-crosshair rounded"
+          className="cursor-crosshair rounded"
           style={{
             maxWidth: "100%",
             maxHeight: "calc(100vh - 60px)",
             width: "auto",
             height: "auto",
+            boxShadow:
+              sketch.paper === "blueprint"
+                ? "0 0 40px 8px rgba(26, 58, 92, 0.5), 0 25px 50px -12px rgba(0, 0, 0, 0.6)"
+                : "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+            border:
+              sketch.paper === "blueprint"
+                ? "1px solid rgba(100, 160, 220, 0.3)"
+                : "none",
           }}
         />
       </div>

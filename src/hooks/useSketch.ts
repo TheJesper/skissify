@@ -166,6 +166,18 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setSelectedElements(new Set());
   }, [sketch.elements, selectedElements, updateSketch]);
 
+  const moveSelected = useCallback(
+    (dx: number, dy: number) => {
+      if (selectedElements.size === 0) return;
+      const newElements = sketch.elements.map((el, i) => {
+        if (!selectedElements.has(i)) return el;
+        return translateElement(el, dx, dy);
+      });
+      updateSketch({ elements: newElements as SketchData["elements"] });
+    },
+    [sketch.elements, selectedElements, updateSketch]
+  );
+
   const redraw = useCallback(() => {
     setSketch((prev) => {
       const next = { ...prev, sessionSeed: newSessionSeed() };
@@ -213,6 +225,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     updateFromJson,
     addElement,
     deleteSelected,
+    moveSelected,
     redraw,
     updateSketch,
     undo,
@@ -220,4 +233,29 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     canUndo,
     canRedo,
   };
+}
+
+// --- Helper: translate any element by (dx, dy) ---
+function translateElement(
+  el: SketchData["elements"][number],
+  dx: number,
+  dy: number
+): SketchData["elements"][number] {
+  // Line-based elements (x1, y1, x2, y2)
+  if ("x1" in el && "y1" in el && "x2" in el && "y2" in el) {
+    return { ...el, x1: el.x1 + dx, y1: el.y1 + dy, x2: el.x2 + dx, y2: el.y2 + dy };
+  }
+  // Rect, door, stair (x, y, w, h)
+  if ("x" in el && "y" in el && "w" in el) {
+    return { ...el, x: (el as { x: number }).x + dx, y: (el as { y: number }).y + dy };
+  }
+  // Circle, column (cx, cy)
+  if ("cx" in el && "cy" in el) {
+    return { ...el, cx: el.cx + dx, cy: el.cy + dy };
+  }
+  // Text (x, y)
+  if ("x" in el && "y" in el) {
+    return { ...el, x: (el as { x: number }).x + dx, y: (el as { y: number }).y + dy };
+  }
+  return el;
 }
