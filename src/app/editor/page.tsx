@@ -102,6 +102,7 @@ function EditorInner({
     updateFromJson,
     addElement,
     deleteSelected,
+    moveSelected,
     redraw,
     updateSketch,
     undo,
@@ -247,6 +248,7 @@ function EditorInner({
           redrawKey={redrawKey}
           selectedElements={selectedElements}
           onSelectElements={setSelectedElements}
+          onMoveSelected={moveSelected}
         />
       </div>
 

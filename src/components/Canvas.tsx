@@ -247,7 +247,11 @@ export default function Canvas({
 
   const handleMouseUp = useCallback(() => {
     isPanning.current = false;
-    isDraggingElements.current = false;
+    // Note: isDraggingElements.current is reset AFTER click fires
+    // so we use a short timeout to allow the click to check it first
+    setTimeout(() => {
+      isDraggingElements.current = false;
+    }, 0);
   }, []);
 
   // Touch: pinch-to-zoom and two-finger pan
@@ -293,6 +297,37 @@ export default function Canvas({
     lastTouchCenter.current = null;
   }, []);
 
+  // Update cursor when hovering over selected elements
+  const handleCursorHover = useCallback(
+    (e: React.MouseEvent<HTMLCanvasElement>) => {
+      if (isDraggingElements.current) {
+        setCursor("grabbing");
+        return;
+      }
+      if (e.altKey || e.ctrlKey) {
+        setCursor("grab");
+        return;
+      }
+      if (selectedElements.size > 0 && onMoveSelected) {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const rect = canvas.getBoundingClientRect();
+        const scaleX = canvasW / rect.width;
+        const scaleY = canvasH / rect.height;
+        const mx = (e.clientX - rect.left) * scaleX;
+        const my = (e.clientY - rect.top) * scaleY;
+        const hitOnSelected = [...selectedElements].some((i) => {
+          const el = sketch.elements[i];
+          return el && hitTest(el, mx, my);
+        });
+        setCursor(hitOnSelected ? "grab" : "crosshair");
+      } else {
+        setCursor("crosshair");
+      }
+    },
+    [selectedElements, sketch.elements, canvasW, canvasH, onMoveSelected]
+  );
+
   // Keyboard
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -336,11 +371,12 @@ export default function Canvas({
           onClick={handleClick}
           onWheel={handleWheel}
           onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
+          onMouseMove={(e) => { handleMouseMove(e); handleCursorHover(e); }}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
-          className="cursor-crosshair rounded"
+          className="rounded"
           style={{
+            cursor,
             maxWidth: "100%",
             maxHeight: "calc(100vh - 60px)",
             width: "auto",

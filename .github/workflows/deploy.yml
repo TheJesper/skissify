@@ -1,17 +1,23 @@
-name: Deploy to Proxmox
+name: Deploy to Hetzner
 
 on:
   push:
-    branches: [main, master]
+    branches: [master]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger deploy webhook
-        run: |
-          curl -s -X POST \
-            -H "Content-Type: application/json" \
-            -H "X-Hub-Signature-256: sha256=$(echo -n '{}' | openssl dgst -sha256 -hmac '${{ secrets.DEPLOY_WEBHOOK_SECRET }}' | cut -d' ' -f2)" \
-            -d '{}' \
-            "https://deploy.conzeon.dev/webhook?project=skissify"
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: 65.109.62.25
+          username: root
+          key: ${{ secrets.HETZNER_SSH_KEY }}
+          script: |
+            cd /root/skissify
+            git pull origin master
+            docker compose up -d --build --remove-orphans
+            docker image prune -f
+            sleep 5
+            curl -sf http://localhost:9700/ > /dev/null && echo "Health check OK" || echo "Health check FAILED"
