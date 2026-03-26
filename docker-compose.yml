@@ -13,4 +13,4 @@ services:
 networks:
   traefik-net:
     external: true
-    name: dnsify_default
+    name: traefik-network
