@@ -20,6 +20,23 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Smooth page transitions */
+main,
+section {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;
@@ -58,8 +75,77 @@ input[type="range"]::-webkit-slider-thumb {
   background: #3b82f6;
   cursor: pointer;
   border: 2px solid #1e3a5f;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
 }
 
 textarea:focus {
   outline: none;
+}
+
+/* JSON syntax highlighting */
+.json-string {
+  color: #f59e0b;
+}
+
+.json-number {
+  color: #34d399;
+}
+
+.json-bool {
+  color: #a78bfa;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
+
+/* Mobile bottom sheet slide-up animation */
+.mobile-bottom-sheet {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Toast fade-in */
+.toast-fade-in {
+  animation: toastIn 0.3s ease-out;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Mobile responsive: ControlPanel width override in bottom sheet */
+@media (max-width: 767px) {
+  .mobile-bottom-sheet .w-\[300px\] {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+/* Touch-friendly: larger touch targets on mobile */
+@media (max-width: 767px) {
+  button {
+    min-height: 36px;
+  }
 }

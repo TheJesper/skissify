@@ -23,6 +23,8 @@ export default function Canvas({
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const isPanning = useRef(false);
   const lastMouse = useRef({ x: 0, y: 0 });
+  const lastTouchDist = useRef<number | null>(null);
+  const lastTouchCenter = useRef<{ x: number; y: number } | null>(null);
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
@@ -159,6 +161,49 @@ export default function Canvas({
     isPanning.current = false;
   }, []);
 
+  // Touch: pinch-to-zoom and two-finger pan
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      lastTouchDist.current = Math.sqrt(dx * dx + dy * dy);
+      lastTouchCenter.current = {
+        x: (e.touches[0].clientX + e.touches[1].clientX) / 2,
+        y: (e.touches[0].clientY + e.touches[1].clientY) / 2,
+      };
+    }
+  }, []);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      const center = {
+        x: (e.touches[0].clientX + e.touches[1].clientX) / 2,
+        y: (e.touches[0].clientY + e.touches[1].clientY) / 2,
+      };
+
+      if (lastTouchDist.current !== null && lastTouchCenter.current !== null) {
+        const scale = dist / lastTouchDist.current;
+        setZoom((z) => Math.max(0.2, Math.min(5, z * scale)));
+        setPan((p) => ({
+          x: p.x + (center.x - lastTouchCenter.current!.x),
+          y: p.y + (center.y - lastTouchCenter.current!.y),
+        }));
+      }
+
+      lastTouchDist.current = dist;
+      lastTouchCenter.current = center;
+    }
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    lastTouchDist.current = null;
+    lastTouchCenter.current = null;
+  }, []);
+
   // Keyboard
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -176,8 +221,11 @@ export default function Canvas({
   return (
     <div
       ref={containerRef}
-      className="flex-1 overflow-hidden bg-neutral-800 flex items-center justify-center"
+      className="flex-1 overflow-hidden bg-neutral-800 flex items-center justify-center touch-none"
       style={{ minHeight: 0 }}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       <div
         style={{
