@@ -26,7 +26,7 @@ export const PLANS = {
   },
   pro: {
     name: "Pro",
-    price: 5,
+    price: 2,
     priceId: process.env.STRIPE_PRICE_ID,
     features: [
       "Everything in Free",
