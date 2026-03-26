@@ -1,0 +1,12 @@
+{
+  "id": "skissify",
+  "shortkey": "skis",
+  "task_prefix": "SKIS",
+  "emoji": "✏️",
+  "name": "Skissify",
+  "description": "AI-compatible hand-drawn sketch SaaS. JSON-in, beautiful sketch-out. Floor plans, diagrams, architecture sketches with wobble/humanness rendering.",
+  "type": "app",
+  "stack": ["next.js", "react", "typescript", "tailwind", "canvas"],
+  "port": null,
+  "repo": "W:/code/sketchai"
+}
