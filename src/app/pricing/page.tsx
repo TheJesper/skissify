@@ -74,7 +74,7 @@ export default function PricingPage() {
             </span>
             <h3 className="text-xl font-bold text-white mb-2">{PLANS.pro.name}</h3>
             <div className="text-3xl font-bold text-white mb-6">
-              EUR5<span className="text-sm font-normal text-neutral-500">/mo</span>
+              &euro;5<span className="text-sm font-normal text-neutral-500">/mo</span>
             </div>
             <ul className="space-y-3 mb-8">
               {PLANS.pro.features.map((f) => (
