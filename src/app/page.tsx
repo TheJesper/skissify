@@ -73,6 +73,18 @@ export default function Home() {
               Editor
             </Link>
             <Link
+              href="/create"
+              className="text-sm text-neutral-400 hover:text-white transition-colors"
+            >
+              Create with AI
+            </Link>
+            <Link
+              href="/for-agents"
+              className="text-sm text-neutral-400 hover:text-white transition-colors"
+            >
+              For Agents
+            </Link>
+            <Link
               href="#pricing"
               className="text-sm text-neutral-400 hover:text-white transition-colors"
             >
@@ -277,6 +289,12 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <Link href="/editor" className="hover:text-white transition-colors">
               Editor
+            </Link>
+            <Link href="/create" className="hover:text-white transition-colors">
+              Create with AI
+            </Link>
+            <Link href="/for-agents" className="hover:text-white transition-colors">
+              For Agents
             </Link>
             <Link
               href="/dashboard"
