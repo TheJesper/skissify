@@ -1,0 +1,16 @@
+services:
+  skissify:
+    build: .
+    container_name: skissify
+    restart: unless-stopped
+    ports:
+      - "9700:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - traefik-net
+
+networks:
+  traefik-net:
+    external: true
+    name: dnsify_default
