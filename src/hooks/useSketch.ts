@@ -6,10 +6,19 @@ import { presets, defaultPreset } from "@/lib/presets";
 
 const MAX_HISTORY = 50;
 
-export function useSketch(initialData?: SketchData) {
+function newSessionSeed(): number {
+  return Math.floor(Math.random() * 2147483647);
+}
+
+export function useSketch(initialData?: SketchData, initialPresetName?: string) {
   const initial = initialData ?? presets[defaultPreset];
-  const [sketch, setSketch] = useState<SketchData>(initial);
-  const [activePreset, setActivePreset] = useState<string>(initialData ? "" : defaultPreset);
+  const [sketch, setSketch] = useState<SketchData>({
+    ...initial,
+    sessionSeed: initial.sessionSeed ?? newSessionSeed(),
+  });
+  const [activePreset, setActivePreset] = useState<string>(
+    initialPresetName || (initialData ? "" : defaultPreset)
+  );
   const [selectedElements, setSelectedElements] = useState<Set<number>>(new Set());
   const [redrawKey, setRedrawKey] = useState(0);
   const jsonRef = useRef<string>(JSON.stringify(initial, null, 2));
@@ -68,9 +77,10 @@ export function useSketch(initialData?: SketchData) {
   const loadPreset = useCallback((name: string) => {
     const preset = presets[name];
     if (preset) {
-      setSketch(preset);
+      const withSeed = { ...preset, sessionSeed: newSessionSeed() };
+      setSketch(withSeed);
       setActivePreset(name);
-      jsonRef.current = JSON.stringify(preset, null, 2);
+      jsonRef.current = JSON.stringify(withSeed, null, 2);
       setSelectedElements(new Set());
     }
   }, []);
@@ -157,6 +167,11 @@ export function useSketch(initialData?: SketchData) {
   }, [sketch.elements, selectedElements, updateSketch]);
 
   const redraw = useCallback(() => {
+    setSketch((prev) => {
+      const next = { ...prev, sessionSeed: newSessionSeed() };
+      jsonRef.current = JSON.stringify(next, null, 2);
+      return next;
+    });
     setRedrawKey((k) => k + 1);
   }, []);
 
