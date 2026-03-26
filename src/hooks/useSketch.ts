@@ -4,20 +4,41 @@ import { useState, useCallback, useRef } from "react";
 import { SketchData, PaperType, ToolType } from "@/lib/types";
 import { presets, defaultPreset } from "@/lib/presets";
 
-export function useSketch() {
-  const [sketch, setSketch] = useState<SketchData>(presets[defaultPreset]);
-  const [activePreset, setActivePreset] = useState<string>(defaultPreset);
+const MAX_HISTORY = 50;
+
+export function useSketch(initialData?: SketchData) {
+  const initial = initialData ?? presets[defaultPreset];
+  const [sketch, setSketch] = useState<SketchData>(initial);
+  const [activePreset, setActivePreset] = useState<string>(initialData ? "" : defaultPreset);
   const [selectedElements, setSelectedElements] = useState<Set<number>>(new Set());
   const [redrawKey, setRedrawKey] = useState(0);
-  const jsonRef = useRef<string>(JSON.stringify(presets[defaultPreset], null, 2));
+  const jsonRef = useRef<string>(JSON.stringify(initial, null, 2));
+
+  // Undo/redo history
+  const historyRef = useRef<SketchData[]>([initial]);
+  const historyIndexRef = useRef(0);
+  const [canUndo, setCanUndo] = useState(false);
+  const [canRedo, setCanRedo] = useState(false);
+
+  const pushHistory = useCallback((state: SketchData) => {
+    const idx = historyIndexRef.current;
+    const newHistory = historyRef.current.slice(0, idx + 1);
+    newHistory.push(state);
+    if (newHistory.length > MAX_HISTORY) newHistory.shift();
+    historyRef.current = newHistory;
+    historyIndexRef.current = newHistory.length - 1;
+    setCanUndo(historyIndexRef.current > 0);
+    setCanRedo(false);
+  }, []);
 
   const updateSketch = useCallback((updates: Partial<SketchData>) => {
     setSketch((prev) => {
       const next = { ...prev, ...updates };
       jsonRef.current = JSON.stringify(next, null, 2);
+      pushHistory(next);
       return next;
     });
-  }, []);
+  }, [pushHistory]);
 
   const setPaper = useCallback(
     (paper: PaperType) => updateSketch({ paper }),
@@ -139,6 +160,28 @@ export function useSketch() {
     setRedrawKey((k) => k + 1);
   }, []);
 
+  const undo = useCallback(() => {
+    if (historyIndexRef.current <= 0) return;
+    historyIndexRef.current--;
+    const state = historyRef.current[historyIndexRef.current];
+    setSketch(state);
+    jsonRef.current = JSON.stringify(state, null, 2);
+    setCanUndo(historyIndexRef.current > 0);
+    setCanRedo(true);
+    setSelectedElements(new Set());
+  }, []);
+
+  const redo = useCallback(() => {
+    if (historyIndexRef.current >= historyRef.current.length - 1) return;
+    historyIndexRef.current++;
+    const state = historyRef.current[historyIndexRef.current];
+    setSketch(state);
+    jsonRef.current = JSON.stringify(state, null, 2);
+    setCanUndo(true);
+    setCanRedo(historyIndexRef.current < historyRef.current.length - 1);
+    setSelectedElements(new Set());
+  }, []);
+
   return {
     sketch,
     activePreset,
@@ -157,5 +200,9 @@ export function useSketch() {
     deleteSelected,
     redraw,
     updateSketch,
+    undo,
+    redo,
+    canUndo,
+    canRedo,
   };
 }
