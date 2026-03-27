@@ -253,6 +253,24 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setSelectedElements(pastedIndices);
   }, [sketch.elements, updateSketch]);
 
+  /** Set the color of all selected elements */
+  const colorSelected = useCallback(
+    (color: string) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          return { ...el, color };
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
   const rotateSelected = useCallback(
     (degrees: number) => {
       if (selectedElements.size === 0) return;
@@ -378,6 +396,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     commitResize,
     copySelected,
     pasteElements,
+    colorSelected,
     rotateSelected,
     redraw,
     importSketch,

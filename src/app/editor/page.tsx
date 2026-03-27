@@ -127,6 +127,7 @@ function EditorInner({
     commitResize,
     copySelected,
     pasteElements,
+    colorSelected,
     rotateSelected,
     redraw,
     importSketch,
@@ -343,6 +344,16 @@ function EditorInner({
     return () => window.removeEventListener("keydown", handler);
   }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, rotateSelected]);
 
+  // Compute the color of the first selected element (or undefined)
+  const selectedColor: string | undefined = (() => {
+    if (selectedElements.size === 0) return undefined;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el) return undefined;
+    const raw = (el as unknown as Record<string, unknown>).color;
+    return typeof raw === "string" ? raw : sketch.inkColor;
+  })();
+
   return (
     <div className="h-screen flex flex-col overflow-hidden">
       <Toolbar
@@ -389,6 +400,7 @@ function EditorInner({
             width={sketch.width}
             height={sketch.height}
             selectedCount={selectedElements.size}
+            selectedColor={selectedColor}
             onPaper={setPaper}
             onTool={setTool}
             onAmplitude={setAmplitude}
@@ -400,6 +412,7 @@ function EditorInner({
             onResize={handleResize}
             onAddElement={addElement}
             onDeleteSelected={deleteSelected}
+            onColorSelected={colorSelected}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -494,6 +507,7 @@ function EditorInner({
             width={sketch.width}
             height={sketch.height}
             selectedCount={selectedElements.size}
+            selectedColor={selectedColor}
             onPaper={setPaper}
             onTool={setTool}
             onAmplitude={setAmplitude}
@@ -505,6 +519,7 @@ function EditorInner({
             onResize={handleResize}
             onAddElement={addElement}
             onDeleteSelected={deleteSelected}
+            onColorSelected={colorSelected}
           />
         </div>
       )}

@@ -14,6 +14,8 @@ interface ControlPanelProps {
   width?: number;
   height?: number;
   selectedCount: number;
+  /** Current color of the selected element (undefined when nothing selected) */
+  selectedColor?: string;
   onPaper: (p: PaperType) => void;
   onTool: (t: ToolType) => void;
   onAmplitude: (v: number) => void;
@@ -25,6 +27,8 @@ interface ControlPanelProps {
   onResize: (w: number, h: number) => void;
   onAddElement: (type: string) => void;
   onDeleteSelected: () => void;
+  /** Called when the user changes the color of selected elements */
+  onColorSelected?: (color: string) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -69,6 +73,7 @@ export default function ControlPanel({
   width,
   height,
   selectedCount,
+  selectedColor,
   onPaper,
   onTool,
   onAmplitude,
@@ -80,6 +85,7 @@ export default function ControlPanel({
   onResize,
   onAddElement,
   onDeleteSelected,
+  onColorSelected,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -283,16 +289,47 @@ export default function ControlPanel({
           </div>
         </div>
         {selectedCount > 0 && (
-          <div className="mt-2 flex items-center gap-2">
-            <span className="text-xs text-[#268bd2]">
-              {selectedCount} selected
-            </span>
-            <button
-              onClick={onDeleteSelected}
-              className="px-2 py-0.5 bg-red-900/50 hover:bg-red-800/60 text-red-300 rounded text-xs"
-            >
-              Delete
-            </button>
+          <div className="mt-2 space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="text-xs text-[#268bd2]">
+                {selectedCount} selected
+              </span>
+              <button
+                onClick={onDeleteSelected}
+                className="ml-auto px-2 py-0.5 bg-red-900/50 hover:bg-red-800/60 text-red-300 rounded text-xs"
+              >
+                Delete
+              </button>
+            </div>
+            {onColorSelected && (
+              <div className="flex items-center gap-2">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide shrink-0">
+                  Element color
+                </label>
+                <div className="flex items-center gap-1.5 ml-auto">
+                  {presetInkColors.map((c) => (
+                    <button
+                      key={c.key}
+                      title={c.label}
+                      onClick={() => onColorSelected(c.key)}
+                      className={`w-5 h-5 rounded transition-all border ${
+                        selectedColor && normalizeColor(selectedColor) === normalizeColor(c.key)
+                          ? "ring-2 ring-[#268bd2] border-transparent"
+                          : "border-[#93a1a1]"
+                      }`}
+                      style={{ backgroundColor: c.key }}
+                    />
+                  ))}
+                  <input
+                    type="color"
+                    value={selectedColor ? normalizeColor(selectedColor) : "#111111"}
+                    onChange={(e) => onColorSelected(e.target.value)}
+                    className="w-6 h-5 rounded cursor-pointer border border-[#93a1a1] bg-[#fdf6e3] p-0"
+                    title="Pick custom element color"
+                  />
+                </div>
+              </div>
+            )}
           </div>
         )}
       </Section>
