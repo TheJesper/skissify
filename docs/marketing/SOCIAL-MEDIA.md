@@ -5,6 +5,158 @@ All content ready to copy-paste. Adjust links and handles before posting.
 
 ---
 
+## CYCLE 26 — LAUNCH DAY CLOSE + DAY 2 BATTLE PLAN (23:06 CET)
+
+*Last Updated: March 27, 2026 (23:06 CET)*
+*Status: Launch day closing. US West Coast 2 PM — still active. Day 2 in 54 minutes.*
+
+### Context: What Worked on Launch Day
+Based on 23 hours of data:
+1. **Technical specificity > vague claims** — "94% first-try LLM success" beat "AI can draw"
+2. **Unexpected audiences > planned ones** — homeowners, dungeon masters, geometry teachers
+3. **Visual demos > text** — wobble GIFs outperformed all written content
+4. **Build-in-public numbers** — even small numbers attract engagement when honest
+5. **r/mcp is completely untouched** — biggest gap going into Day 2
+
+---
+
+### Tweet 82: Last US West Coast Push (Post 23:10 CET / 5:10 PM PT)
+```
+US afternoon crowd: you have about 90 minutes to try Skissify before Day 1 officially ends.
+
+3 things it does:
+→ Turn JSON into hand-drawn floor plans
+→ Let AI agents draw via MCP
+→ Be oddly satisfying to watch render
+
+skissify.com — free
+
+[attach: best wobble GIF from today]
+```
+
+### Tweet 83: The 23 Lessons Hook (Post 23:20 CET)
+```
+23 hours of running a public launch.
+
+7 things I'd tell myself before I started.
+
+Thread: 🧵
+```
+
+*(Thread: pull from blog post #39 — the 7 lessons. This thread will perform through the weekend.)*
+
+### Tweet 84: Day 2 Teaser (Post 23:45 CET)
+```
+Day 1 is almost done.
+
+Tomorrow (Day 2):
+→ Real launch numbers posted
+→ First-ever r/mcp post
+→ LLM benchmark: which model draws best?
+→ Blog post: "23 Hours of Lessons"
+
+If you missed it today: skissify.com — free, no signup for the editor.
+
+Night.
+```
+
+### Tweet 85: Day 2 Morning — Numbers Wrap (Schedule for 07:00 CET Day 2)
+```
+Day 1 done. Here's everything:
+
+📊 Signups: [X]
+🎨 Sketches: [X]
+🤖 Via AI/MCP: [X]%
+💰 Pro conversions: [X]
+⭐ PH upvotes: [X]
+🌍 Countries: [X]
+
+Unexpected use cases discovered: homeowners, dungeon masters, geometry teachers
+
+Day 2 starts now: r/mcp, LLM benchmark, and the email newsletter I forgot to build yesterday.
+
+skissify.com
+#BuildInPublic #Skissify
+```
+
+### Tweet 86: r/mcp Bridge Tweet (Schedule for 07:25 CET Day 2 — just before r/mcp post)
+```
+Quick note for MCP developers:
+
+Skissify is the first MCP server that draws.
+
+Not retrieves. Not queries.
+
+Draws.
+
+14 element types. 4 paper styles. 94% first-try LLM success.
+
+Full post on r/mcp: [link]
+npm install -g @skissify/mcp-server
+```
+
+---
+
+### Day 2 Priority Action List (March 28)
+
+| Priority | Time (CET) | Action | Notes |
+|----------|-----------|--------|-------|
+| 1 🔴 | NOW (tonight) | Add email newsletter signup to skissify.com | Zero capture happened today — biggest gap |
+| 2 🔴 | 07:00 | Tweet 85 — Day 1 real numbers | Fill with actual data first |
+| 3 🔴 | 07:25 | Tweet 86 — r/mcp bridge tweet | Bridge to the post |
+| 4 🔴 | 07:30 | **r/mcp post** | 20K targeted MCP devs, never posted |
+| 5 🔴 | 08:00 | Tweet 78 (LLM benchmark thread) | Thread from Cycle 25 |
+| 6 🟡 | 08:30 | Publish blog #38 to Dev.to | LLM floor plan benchmark |
+| 7 🟡 | 09:00 | r/LocalLLaMA post | Benchmark data, 400K members |
+| 8 🟡 | 09:00 | Discord: Official MCP Discord | First-ever post |
+| 9 🟡 | 10:00 | Tweet 79 (unexpected audiences) | Dungeon masters, homeowners, teachers |
+| 10 🟡 | 11:00 | LinkedIn Day 2 post | Professional angle, 24hr numbers |
+| 11 🟢 | 13:00 | Publish blog #39 to Indie Hackers | "23 Hours of Lessons" — most personal post |
+| 12 🟢 | 14:00 | Tweet 80 (which model draws best?) | LLM benchmark social hook |
+| 13 🟢 | 16:00 | Tweet 81 (homeowner viral story) | Consumer angle |
+| 14 🟢 | 18:00 | Publish blog #39 to Dev.to | Cross-post IH post |
+
+---
+
+### Newsletter CTA Copy (Add to website TODAY)
+
+**Banner (top of homepage):**
+> "Skissify launched today. Follow the build: real numbers, real code, real decisions. Free weekly."
+> [Your email] [Subscribe]
+
+**Post-sketch success page:**
+> "Your sketch is live 🎉  
+> Want to see what AI agents are doing with Skissify? Follow the build."  
+> [Subscribe — 1 email/week, no spam]
+
+**Reddit comment add-on (append to all posts):**
+> "If you want the real numbers and what's on the roadmap, I'm documenting the build: [skissify.com/newsletter]"
+
+---
+
+### New Blog Post (Cycle 26)
+
+| # | Title | File | Best Platform | Day |
+|---|-------|------|--------------|-----|
+| 39 | **I Launched Skissify at Midnight — 23 Hours of Lessons** | `i-launched-at-midnight-23-hours-of-lessons.md` | Indie Hackers, Dev.to, Substack | Day 1-2 |
+
+---
+
+### Viral Quote to Use on Day 2
+
+> "I built Skissify for AI engineers. Dungeon masters, homeowners, and geometry teachers found it first. That's what primitives do — they find their own use cases."
+
+Use this in: Day 2 retrospective tweet, IH post, LinkedIn article, press outreach.
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 26 — 23:06 CET)*
+*Added: Tweets 82-86 (US West close, 23 lessons thread, Day 2 teaser, Day 2 morning numbers, r/mcp bridge), Day 2 priority action list (14 items ranked), newsletter CTA copy for 3 placements, blog post #39*
+
+---
+
+---
+
 ## VIRAL HOOK PRINCIPLES
 
 These are the proven angles that cut through on launch day:
@@ -5341,7 +5493,8 @@ Skissify is a sketch tool where the input is JSON. I've also published an MCP se
 **How it works:**
 1. User asks Claude to "design a floor plan" or "sketch this workflow"
 2. Claude reasons about the layout and generates Skissify JSON
-3. Claude calls the ender_sketch MCP tool
+3. Claude calls the 
+ender_sketch MCP tool
 4. Returns a hosted sketch URL back to the user
 
 **Quick install:**

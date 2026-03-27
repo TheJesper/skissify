@@ -150,6 +150,18 @@ Hook: "Vibe coding produced a monoculture. Vibe drawing produces originals."
 Focus: Unexpected use case — renovation planning, contractor communication, non-developer users  
 Hook: "The most popular use case on launch day wasn't what the developer expected"
 
+### The Primitives Narrative (NEW — Cycle 26)
+"I built Skissify for AI engineers. Dungeon masters, homeowners, and geometry teachers found it first."  
+Focus: What happens when you build a primitive instead of an app — the use cases find you  
+Hook: "Primitives find their own use cases. We just provide the surface."  
+Evidence from launch day: 3 completely unplanned audiences emerged in 23 hours
+
+### The "Missing Primitive" Press Angle (NEW — Cycle 26)
+"12,770 MCP servers exist. None of them draw. Until now."  
+Focus: The gap in the AI ecosystem — every other primitive was covered (data, text, files, web) except visual output  
+Hook: "The last missing tool in the AI agent stack was a pencil"  
+Data: MCP SDK hit 97M+ monthly downloads in March 2026 — mainstream status confirmed
+
 ---
 
 ## Frequently Asked Questions (for press)
