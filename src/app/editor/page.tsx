@@ -13,6 +13,7 @@ import ControlPanel from "@/components/ControlPanel";
 import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
 import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
+import { renderSketchToSVG } from "@/lib/svg-renderer";
 
 function EditorContent() {
   const searchParams = useSearchParams();
@@ -169,6 +170,20 @@ function EditorInner({
     a.click();
   }, [sketchSlug]);
 
+  const handleDownloadSVG = useCallback(() => {
+    const svgString = renderSketchToSVG(sketch);
+    const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    const filename = sketchSlug
+      ? `skissify-${sketchSlug}.svg`
+      : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.svg`;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [sketch, sketchSlug]);
+
   const handleResize = useCallback(
     (w: number, h: number) => {
       updateSketch({ width: w, height: h });
@@ -239,6 +254,10 @@ function EditorInner({
           e.preventDefault();
           handleDownload();
         }
+        if (e.key === "E" && e.shiftKey) {
+          e.preventDefault();
+          handleDownloadSVG();
+        }
         if (e.key === "c" && !isInput && selectedElements.size > 0) {
           e.preventDefault();
           copySelected();
@@ -263,7 +282,7 @@ function EditorInner({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, copySelected, pasteElements, rotateSelected]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected]);
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">
@@ -271,6 +290,7 @@ function EditorInner({
         onRedraw={redraw}
         onPrint={handlePrint}
         onDownload={handleDownload}
+        onDownloadSVG={handleDownloadSVG}
         onSave={handleSave}
         onUndo={undo}
         onRedo={redo}
