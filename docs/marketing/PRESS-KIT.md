@@ -744,3 +744,47 @@ This is a broader story about what happens when AI acts as a translation layer f
 | The Changelog Discord | 50K+ | Show & Tell: programmatic sketch rendering | 21:30 CET Day 1 |
 
 *Press Kit last updated: March 27, 2026 (Cycle 19 — 17:00 CET)*
+
+---
+
+## PRESS KIT UPDATE — Cycle 21 (March 27, 2026 - 18:00 CET)
+
+### Fresh Narrative Angles (For Journalists)
+
+**The AI Marketing Story:**
+Skissify's Day 1 marketing content was entirely AI-generated and improved by a cron-scheduled agent running every 45 minutes. 29 blog posts, 60+ social posts, 12 platforms — no human marketing team. This meta-story is itself newsworthy for AI/dev media.
+
+**The Primitives Finding Their Use Case:**
+"We built it for AI engineers. Homeowners started using it to plan kitchen renovations." This is the startup discovery story in 2026 — AI primitives getting adopted by markets you didn't target.
+
+**The Missing Layer Angle:**
+Every MCP server talk or AI agent story now has a visual output gap. Skissify is the first tool to fill it. Pitch line: "The 12,771st MCP server — but the first one that draws."
+
+### Confirmed Market Signals (Day 1)
+- MCP tools are growing fast: 177,436 MCP tools analyzed (Nov 2024 - Feb 2026), 65% now take actions (up from 27%)
+- Skissify sits in the 35% that produce outputs rather than just taking actions
+- Dev.to, Hacker News, and Bluesky are the highest-ROI platforms for MCP product launches in 2026
+
+### Updated One-Liner Options
+
+**Technical (for HN/dev audience):**
+> "The first MCP server that draws. JSON in, hand-drawn sketch out, AI agents native."
+
+**Consumer (for homeowner/design audience):**
+> "Tell your AI what a room should look like. Skissify draws it for you."
+
+**Press (for journalists):**
+> "Skissify gives AI agents a pencil — floor plans, diagrams, and wireframes from natural language."
+
+**Punchy (for social):**
+> "Figma is for communicating decisions. Skissify is for making them."
+
+### Stats for Press (Day 1 - fill in at 23:00)
+- Launched: March 27, 2026
+- Free tier: [X] sketches created in first 24 hours
+- Top use case: [expected vs actual]
+- Countries: [X] countries on Day 1
+- Blog content: 29 posts published/ready
+- Blog post #29 template is ready for real-numbers retrospective at 23:00 CET
+
+*Press Kit Last Updated: Cycle 21 - 18:00 CET, March 27, 2026*

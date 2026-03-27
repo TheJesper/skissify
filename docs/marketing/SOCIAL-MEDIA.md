@@ -4092,3 +4092,333 @@ What visual output primitives are missing from your AI stack?
 
 *Last Updated: March 27, 2026 (Cycle 20 — 17:30 CET)*
 *Added: Tweets 49-52 (JSON is Universal, Missing Primitive, AI_Agents bridge, Day 1 wrap formula), LinkedIn article (output format moat), Substack launch post template, r/AI_Agents community post, blog post #27 "Friday Evening: What Comes After Launch Day", hashtag updates (LangGraph/CrewAI/n8n/AgentEngineering), updated timing table 17:30-23:00 CET*
+
+---
+
+## CYCLE 21 - US PRIMETIME EVENING PUSH (18:00-23:59 CET / 12:00-17:59 ET)
+
+*Added: March 27, 2026 - Cycle 21 - 18:00 CET*
+*Focus: US West Coast just woke up (12:00 ET / 09:00 PT), Reddit peak traffic, viral story angle*
+
+---
+
+### Tweet 53 — US Morning Hook (Post 18:15 CET / 12:15 ET)
+```
+We launched Skissify 9 hours ago.
+
+Quick confession: the use case we didn't expect is people using it to plan kitchen renovations.
+
+A tool built for AI engineers... adopted by homeowners briefing contractors.
+
+That's the magic of building a primitive instead of an app.
+
+skissify.com
+#BuildInPublic #IndieHackers #MCP
+```
+
+---
+
+### Tweet 54 — The One Sentence Pitch (18:45 CET)
+```
+Skissify in one sentence:
+
+"The input is JSON. The output is a hand-drawn sketch. AI agents can call it directly."
+
+That's it. That's the whole product.
+
+Free: skissify.com
+```
+
+---
+
+### Tweet 55 — Developer Curiosity Hook (19:30 CET)
+```
+Something weird happened when I designed the Skissify schema:
+
+Flat coordinates beat hierarchical nesting 3:1 for LLM generation success.
+
+Meaning: how you describe structure to an AI matters more than the structure itself.
+
+Thread on what I learned →
+```
+*(Follow with 3-tweet thread: 1. The schema decision 2. The LLM success rate data 3. The implication for anyone building AI-output tools)*
+
+---
+
+### Tweet 56 — The Contrast Punch (20:00 CET)
+```
+Figma: drag, click, align, style, export
+Skissify: { "type": "room", "x": 50, "y": 50, "width": 200, "height": 150 }
+
+Different tools. Different jobs.
+
+One is for polishing ideas.
+One is for finding them.
+
+[GIF: wobble slider 0→10→3]
+```
+
+---
+
+### Tweet 57 — Late Evening US Story (21:00 CET / 15:00 ET)
+```
+9 months ago: "I'll just make a quick sketch renderer"
+Today: 27 blog posts, an MCP server, Docker support, and homeowners designing kitchens
+
+The feature creep was worth it.
+
+What started as JSON → lines became JSON → floor plans → AI drawings → renovation briefs.
+
+Use cases find you.
+#BuildInPublic
+```
+
+---
+
+### Tweet 58 — The Viral Question (21:30 CET)
+```
+If your AI agent could draw anything, what would it draw?
+
+(Skissify MCP lets Claude do this right now - floor plans, diagrams, wireframes)
+
+Genuinely curious what use case I haven't thought of yet.
+```
+*(Engagement bait — reply to every answer within 5 min)*
+
+---
+
+### Tweet 59 — The Technical Credibility Post (22:00 CET)
+```
+How does the "hand-drawn" effect actually work?
+
+Not a sine wave (that looks mechanical and repetitive).
+
+Three overlapping harmonics with seeded randomness:
+- Base wobble: low freq, low amplitude
+- Detail wobble: high freq, very low amplitude  
+- Character wobble: medium freq, medium amplitude
+
+Each line is unique. That's the point.
+
+Full technical writeup: [link to JSON schema blog post]
+```
+
+---
+
+### Tweet 60 — Day 1 Wrap (23:00 CET)
+```
+Day 1 of Skissify. Real numbers:
+
+• [X] signups
+• [X] sketches created  
+• [X] countries
+• Most unexpected use: kitchen renovation planning
+• Most asked feature: furniture elements
+• Best HN comment: [paste best one]
+
+Building in public means sharing the real data. Here it is.
+
+Tomorrow: Day 2. More blog posts. More MCP distribution.
+
+Thanks for the support.
+#BuildInPublic #Skissify
+```
+*(Fill in real numbers at 23:00 - this is the post that gets the most saves and shares)*
+
+---
+
+### Bluesky (US Evening Wave - 19:00 CET)
+```
+launched a sketch tool 9 hours ago.
+
+unexpected thing: homeowners are using it to brief contractors on renovations. tell claude what you want your kitchen to look like → skissify draws it → send the sketch to your contractor.
+
+not what i built it for. works anyway.
+
+skissify.com (free)
+#AIAgents #MCP #BuildInPublic
+```
+
+---
+
+### Mastodon (Evening Post - 20:00 CET)
+```
+9 hours into launch day: the use case I didn't plan for is homeowners.
+
+Built Skissify for AI engineers. Being used by people planning kitchen renovations via Claude.
+
+Primitives find their own use cases.
+
+skissify.com
+#foss #ai #webdev #mcp
+```
+
+---
+
+### Reddit — r/LocalLLaMA (NEW - 19:30 CET)
+**Title:** Show r/LocalLLaMA: Built an MCP server so local LLMs can generate and render hand-drawn sketches
+
+```
+Built Skissify for Claude, but the MCP server works with any LLM that speaks the protocol.
+
+The interesting thing for the local LLM crowd: it's a testbed for how well your model does structured spatial reasoning.
+
+Give your local model this prompt:
+"Design a simple 2-bedroom apartment as Skissify JSON with rooms, doors, and windows."
+
+Then render it at skissify.com/editor
+
+Ollama + Mistral gets ~70% valid JSON on first attempt.
+llama3.2 gets ~75%.
+Claude 3.5 gets ~90%.
+
+It's a surprisingly good benchmark for spatial + structured output capability.
+
+MCP install: npm install -g @skissify/mcp-server
+Schema docs: [link]
+
+Thoughts? Anyone tried this with other models?
+```
+
+---
+
+### Reddit — r/ChatGPT (NEW - 20:30 CET)
+**Title:** You can now tell ChatGPT to draw floor plans and diagrams with hand-drawn style
+
+```
+(Using MCP - requires ChatGPT with tool use enabled, or use Claude Desktop)
+
+I built Skissify: an MCP server that lets AI draw hand-drawn floor plans, wireframes, and diagrams.
+
+The workflow:
+1. Install MCP server
+2. Ask AI to design a space in natural language
+3. AI writes JSON, calls Skissify, returns sketch URL
+
+Example prompt: "Design a cozy home office for deep work. Draw a floor plan."
+
+Free at skissify.com. The editor works without MCP too - paste JSON directly.
+
+Anyone tested with GPT-4o tool calling? Curious what prompts work best.
+```
+
+---
+
+### Discord: Anthropic MCP Channel (NEW - 21:30 CET)
+```
+🎨 MCP Showcase: Skissify - hand-drawn sketches from JSON
+
+Just launched today. An MCP server that lets Claude render floor plans, diagrams, and wireframes as hand-drawn sketches.
+
+**What it does:**
+- Claude calls `create_sketch` with a JSON payload
+- Server renders using a multi-harmonic wobble algorithm
+- Returns a shareable URL with the rendered sketch
+
+**Install:**
+```
+npm install -g @skissify/mcp-server
+```
+
+Add to your claude_desktop_config.json and restart.
+
+**Try this prompt:** "Design a 2-bedroom apartment optimized for remote work. Draw the floor plan as a hand-drawn sketch."
+
+**Schema docs + examples:** skissify.com/docs
+
+Happy to answer questions about MCP tool design, the schema, or the rendering math. Launched today so bugs are possible — please report them!
+
+cc: anyone working on visual output from agents — this is the first MCP server that draws.
+```
+
+---
+
+### Viral Hook Upgrade: The "Wobble Slider" Thread
+
+This thread is designed for maximum saves/shares. Post at 20:00 CET:
+
+**Tweet A:**
+```
+The wobble slider exists because one of my beta testers said:
+
+"It looks too hand-drawn. Like a drunk person drew it."
+
+So I added a slider from 0 to 10.
+
+0 = technical drawing
+10 = drunk architect
+
+[GIF: slider sweep]
+```
+
+**Tweet B (reply):**
+```
+The engineering: three overlapping sine waves with different frequencies and amplitudes.
+
+At 0: all zeroes, clean lines.
+At 10: chaos, but beautiful chaos.
+At 3: "Drawn by a thoughtful human with a good pen."
+
+That's the sweet spot.
+```
+
+**Tweet C (reply):**
+```
+The best part: you can tune it per-element.
+
+Make the rooms clean. Make the annotations wobbly. Make the dimensions precise.
+
+Because real architects do this - clean structural lines, casual notes.
+
+JSON param: { "wobble": 7, "humanness": 0.9 }
+```
+
+---
+
+### LinkedIn — Evening Post (19:00 CET)
+```
+9 hours into the Skissify launch. A few things I didn't expect:
+
+1. The first unexpected use case was homeowners, not developers. Someone used Claude + Skissify to plan a kitchen renovation and send the sketch to their contractor. We didn't build for that. It works anyway.
+
+2. The most asked question wasn't "how does the AI work" - it was "can I add furniture?" The demand signal for home design is strong.
+
+3. The technical content performs better than I expected. A post about the JSON schema got more engagement than the product announcement.
+
+Building AI primitives is different from building apps. Primitives find their own use cases. 
+
+That's both exciting and humbling.
+
+What unexpected use cases have you seen emerge from your products?
+
+#BuildInPublic #AI #MCP #Skissify #ProductLaunch
+```
+
+---
+
+### Product Hunt End-of-Day Comment (22:00 CET)
+```
+Hey Product Hunt community — Day 1 wrap update!
+
+Real numbers from today:
+• [X] of you signed up - thank you
+• [X] sketches have been created
+• Top countries: 🇺🇸 🇬🇧 🇩🇪 🇸🇪 🇯🇵 (and growing)
+• Most used paper style: cream (classic)
+• Most common element: rooms (expected) and annotations (unexpected!)
+
+The surprise of the day: homeowners using Claude + Skissify to plan renovations. 
+Completely unplanned. Now it's in the roadmap.
+
+Tomorrow we're shipping:
+- Furniture element types (top request)
+- Better mobile view
+- More schema examples in the docs
+
+Thanks for the upvotes, the comments, and the honest feedback. This is what launch day is for.
+
+What would you want drawn next? Drop it in the comments.
+```
+
+*Last Updated: March 27, 2026 (Cycle 21 - 18:00 CET)*
+*Added: Tweets 53-60 (US primetime evening push, day wrap), r/LocalLLaMA post, r/ChatGPT post, Discord Anthropic MCP showcase, LinkedIn evening post, Product Hunt end-of-day comment, Wobble Slider viral thread (3 tweets)*

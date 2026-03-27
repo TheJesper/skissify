@@ -1078,3 +1078,84 @@ The homeowner use case is the most important data point from launch day. Here's 
 3. **r/homedesign post** (Cycle 12) — post at 14:30 CET
 4. **Newsletter pitches** — send TLDR AI, Ben's Bites, The Rundown at 15:00 CET
 5. **Tweet 22** — speed comparison — queue for 15:30 CET
+
+---
+
+## Marketing Improvements (Cycle 21 - March 27, 18:00 CET)
+
+### ? STATUS: FRIDAY EVENING - US WEST COAST JUST WOKE UP (09:00 PT / 18:00 CET)
+
+It's 18:00 CET. US West Coast is at 09:00 AM — the highest-value tech audience is just starting their day. EU is winding down. This is the final US primetime window before the weekend. Maximum effort for the next 3 hours.
+
+### Completed This Cycle
+- [x] ? **SOCIAL-MEDIA.md Cycle 21**: Added Tweets 53-60 (US evening primetime push + Day 1 wrap), 3-tweet "Wobble Slider" viral thread, r/LocalLLaMA post, r/ChatGPT post, Discord Anthropic MCP showcase post, LinkedIn evening post, Product Hunt end-of-day comment template. Full 18:00-23:59 CET coverage.
+- [x] ? **Blog post #28 NEW**: "Why Hand-Drawn Sketches Beat Figma — The Viral Version" — companion post to the full article with tweet thread version (5 tweets), LinkedIn article hook + subheads, Reddit r/webdev version, HN comment version, the one-liner ("Figma is for communicating decisions. Sketches are for making them."), and the 280-char viral tweet. File: `docs/marketing/blog/why-hand-drawn-sketches-beat-figma-viral.md`
+- [x] ? **Blog post #29 NEW**: "Skissify Day One: The Real Numbers" — complete template for the 23:00 CET retrospective post with real metrics table, homeowner story section, three lessons framework, AI marketing meta-story angle, Day 2 plan. Publish-ready at 23:00 when you fill in actual numbers. File: `docs/marketing/blog/day-one-retrospective-real-numbers.md`
+- [x] ? **Hashtag intelligence update**: Confirmed trending 2026 developer hashtags — #LangGraph, #CrewAI, #n8n, #AgentEngineering, #MCPServers (65% now take actions), MCP narrative still peak interest. Dev.to post "65% of MCP Tools Now Take Actions" from today (March 27, 2026) — Skissify is in the right space.
+
+### Viral Hook for US West Coast (Use Now)
+
+The angle that cuts through on Friday evening US tech:
+
+```
+It's Friday morning for some of you. Here's a 3-second demo.
+
+Tell Claude: "design a small apartment, 2 bedrooms"
+Claude writes JSON, Skissify draws it.
+
+No prompting tricks. No image generation. A schema → hand-drawn floor plan.
+
+[GIF: Claude typing → sketch appearing]
+
+skissify.com/editor ← paste JSON directly, no install needed
+```
+
+### NEW Community Targets (Cycle 21)
+| Community | Platform | Members | Post Angle | Time |
+|-----------|----------|---------|-----------|------|
+| r/LocalLLaMA | Reddit | 500K+ | LLM spatial reasoning benchmark | 19:30 CET |
+| r/ChatGPT | Reddit | 4M+ | Tell ChatGPT to draw floor plans | 20:30 CET |
+| Anthropic MCP Discord | Discord | 50K+ | MCP Showcase: hand-drawn sketch output | 21:30 CET |
+| Hacker News (reply) | HN | - | Reply to any MCP/agent/design tool threads | All day |
+
+### The 23:00 CET Retrospective — Do Not Skip
+
+The Day 1 retrospective post (blog/day-one-retrospective-real-numbers.md) is the highest-ROI post of the launch.
+
+- Indie Hackers: honest metrics posts consistently get 500-2000 reads
+- Twitter: "here are my real Day 1 numbers" posts get 3-10x saves vs announcements
+- Gets reshared Day 2-7 as people discover the launch
+
+**Steps at 23:00:**
+1. Fill in all [PLACEHOLDER] values with real data
+2. Write the 3 honest lessons based on what actually happened
+3. Write the "honest reflection" paragraph fresh
+4. Publish to Indie Hackers (title: "I launched an AI drawing tool today. Real numbers inside.")
+5. Tweet the highlights with "Full story on IH: [link]"
+
+### Week 2 Pipeline (Added Cycle 21)
+
+These actions become available after the launch dust settles:
+
+| Action | Platform | Day | Why |
+|--------|----------|-----|-----|
+| Submit to PulseMCP.com | Directory | Day 2 | MCP server directory, high-intent traffic |
+| Submit to MCP Registry | Directory | Day 2 | Anthropic official listing |
+| Submit to Dev Hunt | Directory | Day 3 | Less competitive than PH |
+| TLDR AI newsletter pitch | Email | Day 2 | 500K+ AI developer subscribers |
+| Ben's Bites pitch | Email | Day 2 | 100K+ AI subscribers, loves build stories |
+| The Rundown AI pitch | Email | Day 2 | 300K+ subscribers |
+| "Furniture elements" feature drop | Twitter | Day 3 | Top requested feature = instant re-engagement |
+| Homeowner landing page | Site | Day 5 | skissify.com/renovation — non-dev audience |
+
+### Key Insight: The Primitives Narrative
+
+The strongest story of Cycle 21 (for media, newsletters, and social): **primitives find their own use cases**.
+
+Quote to use everywhere:
+> "We built Skissify for AI engineers. Homeowners are using it to brief contractors. That's what happens when you build a primitive instead of an app."
+
+This is the narrative that gets picked up by tech journalists and indie hacker blogs.
+
+*Last Updated: March 27, 2026 (Cycle 21 - 18:00 CET)*
+*Added: Tweets 53-60, Wobble Slider viral thread, r/LocalLLaMA post, r/ChatGPT post, Discord showcase post, LinkedIn evening post, PH end-of-day comment, Blog post #28 (viral Figma hooks), Blog post #29 (Day 1 retrospective template), Week 2 directory/newsletter pipeline, Primitives narrative framework*
