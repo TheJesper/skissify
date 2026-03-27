@@ -10,6 +10,7 @@ import { getShareableURL, getDrawURL } from "@/lib/url-encoding";
 interface ToolbarProps {
   onRedraw: () => void;
   onPrint: () => void;
+  onDownload?: () => void;
   onSave?: () => Promise<string | null>;
   onUndo?: () => void;
   onRedo?: () => void;
@@ -22,6 +23,7 @@ interface ToolbarProps {
 export default function Toolbar({
   onRedraw,
   onPrint,
+  onDownload,
   onSave,
   onUndo,
   onRedo,
@@ -207,6 +209,20 @@ export default function Toolbar({
           Make Private
         </button>
 
+        {onDownload && (
+          <button
+            onClick={onDownload}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded text-xs font-medium transition-colors"
+            title="Download as PNG (Ctrl+Shift+S)"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            PNG
+          </button>
+        )}
         <button
           onClick={onPrint}
           className="hidden sm:block px-3 py-1.5 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded text-xs font-medium transition-colors"
@@ -318,6 +334,7 @@ export default function Toolbar({
                 { keys: ["Ctrl", "Z"], desc: "Undo" },
                 { keys: ["Ctrl", "Y"], desc: "Redo" },
                 { keys: ["Ctrl", "S"], desc: "Save sketch" },
+                { keys: ["Ctrl", "Shift", "S"], desc: "Download as PNG" },
                 { keys: ["Ctrl", "C"], desc: "Copy selected elements" },
                 { keys: ["Ctrl", "V"], desc: "Paste elements" },
                 { keys: ["Ctrl", "D"], desc: "Duplicate selected" },

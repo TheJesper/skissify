@@ -130,6 +130,20 @@ function EditorInner({
     }
   }, []);
 
+  const handleDownload = useCallback(() => {
+    const canvas = document.querySelector("canvas");
+    if (!canvas) return;
+    const dataUrl = canvas.toDataURL("image/png");
+    const a = document.createElement("a");
+    a.href = dataUrl;
+    // Use slug if saved, otherwise timestamp
+    const filename = sketchSlug
+      ? `skissify-${sketchSlug}.png`
+      : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.png`;
+    a.download = filename;
+    a.click();
+  }, [sketchSlug]);
+
   const handleResize = useCallback(
     (w: number, h: number) => {
       updateSketch({ width: w, height: h });
@@ -192,9 +206,13 @@ function EditorInner({
           e.preventDefault();
           redo();
         }
-        if (e.key === "s") {
+        if (e.key === "s" && !e.shiftKey) {
           e.preventDefault();
           handleSave();
+        }
+        if (e.key === "S" && e.shiftKey) {
+          e.preventDefault();
+          handleDownload();
         }
         if (e.key === "c" && !isInput && selectedElements.size > 0) {
           e.preventDefault();
@@ -220,13 +238,14 @@ function EditorInner({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, copySelected, pasteElements, rotateSelected]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, copySelected, pasteElements, rotateSelected]);
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">
       <Toolbar
         onRedraw={redraw}
         onPrint={handlePrint}
+        onDownload={handleDownload}
         onSave={handleSave}
         onUndo={undo}
         onRedo={redo}
