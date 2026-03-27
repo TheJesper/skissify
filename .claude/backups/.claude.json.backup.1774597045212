@@ -82,7 +82,7 @@
     "tengu_bergotte_lantern": false,
     "tengu_sotto_voce": true,
     "tengu_system_prompt_global_cache": true,
-    "tengu_streaming_tool_execution2": true,
+    "tengu_streaming_tool_execution2": false,
     "tengu_moth_copse": false,
     "tengu_tool_search_unsupported_models": [
       "haiku"
