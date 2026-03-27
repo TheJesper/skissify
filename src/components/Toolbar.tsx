@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import UserMenu from "./UserMenu";
@@ -37,6 +37,7 @@ export default function Toolbar({
   const [toast, setToast] = useState<string | null>(null);
   const [showShareDialog, setShowShareDialog] = useState(false);
   const [showProModal, setShowProModal] = useState(false);
+  const [showShortcuts, setShowShortcuts] = useState(false);
 
   const showToast = useCallback((msg: string) => {
     setToast(msg);
@@ -74,6 +75,24 @@ export default function Toolbar({
 
   const handleMakePrivate = useCallback(() => {
     setShowProModal(true);
+  }, []);
+
+  // Global keyboard shortcut: ? opens shortcuts panel
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement;
+      const isInput =
+        target instanceof HTMLTextAreaElement ||
+        target instanceof HTMLInputElement;
+      if (e.key === "?" && !isInput) {
+        setShowShortcuts((v) => !v);
+      }
+      if (e.key === "Escape") {
+        setShowShortcuts(false);
+      }
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
   }, []);
 
   return (
@@ -222,6 +241,13 @@ export default function Toolbar({
         >
           Redraw
         </button>
+        <button
+          onClick={() => setShowShortcuts(true)}
+          className="px-2.5 py-1.5 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 hover:text-neutral-200 rounded text-xs font-medium transition-colors"
+          title="Keyboard shortcuts (?)"
+        >
+          ?
+        </button>
         <div className="ml-2 border-l border-neutral-700 pl-3">
           <UserMenu />
         </div>
@@ -275,6 +301,47 @@ export default function Toolbar({
             </div>
 
             <button onClick={() => setShowShareDialog(false)} className="mt-4 w-full px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded-lg text-sm font-medium transition-colors">Close</button>
+          </div>
+        </div>
+      )}
+
+      {/* Keyboard Shortcuts Panel */}
+      {showShortcuts && (
+        <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={() => setShowShortcuts(false)}>
+          <div className="bg-neutral-900 border border-neutral-700 rounded-2xl p-6 max-w-md w-full mx-4 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between mb-5">
+              <h3 className="text-lg font-bold text-white">Keyboard Shortcuts</h3>
+              <button onClick={() => setShowShortcuts(false)} className="text-neutral-500 hover:text-neutral-300 text-xl leading-none">×</button>
+            </div>
+            <div className="space-y-1">
+              {[
+                { keys: ["Ctrl", "Z"], desc: "Undo" },
+                { keys: ["Ctrl", "Y"], desc: "Redo" },
+                { keys: ["Ctrl", "S"], desc: "Save sketch" },
+                { keys: ["Ctrl", "C"], desc: "Copy selected elements" },
+                { keys: ["Ctrl", "V"], desc: "Paste elements" },
+                { keys: ["Ctrl", "D"], desc: "Duplicate selected" },
+                { keys: ["R"], desc: "Rotate selected 15° clockwise" },
+                { keys: ["Shift", "R"], desc: "Rotate selected 15° counter-clockwise" },
+                { keys: ["Del / ⌫"], desc: "Delete selected elements" },
+                { keys: ["Esc"], desc: "Deselect all" },
+                { keys: ["Shift+click"], desc: "Add to selection" },
+                { keys: ["Drag (empty)"], desc: "Box-select elements" },
+                { keys: ["Alt+drag"], desc: "Pan canvas" },
+                { keys: ["Scroll"], desc: "Zoom toward cursor" },
+                { keys: ["?"], desc: "Toggle this panel" },
+              ].map(({ keys, desc }) => (
+                <div key={desc} className="flex items-center justify-between py-1.5 border-b border-neutral-800 last:border-0">
+                  <span className="text-sm text-neutral-300">{desc}</span>
+                  <div className="flex items-center gap-1">
+                    {keys.map((k) => (
+                      <kbd key={k} className="text-[11px] font-mono text-neutral-300 bg-neutral-700 border border-neutral-600 rounded px-1.5 py-0.5">{k}</kbd>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <button onClick={() => setShowShortcuts(false)} className="mt-5 w-full px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded-lg text-sm font-medium transition-colors">Close</button>
           </div>
         </div>
       )}

@@ -386,6 +386,57 @@ The sketch/diagram market in 2026 is fragmenting into three lanes: (1) open-sour
 
 ---
 
+## Update Log: March 27, 2026 — 03:06 CET | Automated Strategy Run #3
+
+### 🔴 CRITICAL: Lucid Software Advances MCP Server + Launches "Process Agent" (TODAY)
+- **URL**: https://www.prnewswire.com/news-releases/lucid-software-advances-mcp-server-offering-and-lucid-ai-capabilities-debuts-process-agent-302725846.html
+- Announced **March 27, 2026** — hours ago
+- Lucid (Lucidchart + Lucidspark) — the enterprise visual collaboration market leader — upgraded its MCP server and introduced a "Process Agent": an AI that captures undocumented workflows and converts them into shared visual canvases
+- Quote from Lucid CPO: *"Lucid is a system of action, bringing ideas out of siloed documents onto a shared visual canvas where work can move forward"*
+- Lucid's "AI Readiness Report" finding: **only 16% of knowledge workers** say their company's workflows are "extremely well-documented" — this is Lucid's wedge for MCP
+- **Target**: Enterprise organizations. Pricing: $8-20/user/mo (existing). Not competing in developer/sketch lane.
+- **Skissify impact**: This VALIDATES the "visual tools need MCP" market thesis at enterprise scale. Lucid's Process Agent for enterprise is exactly what Skissify's MCP server is for individual developers and agents. Different price point, same underlying insight: AI needs visual output tools.
+- **Risk level**: LOW direct competition (enterprise vs. developer), HIGH validation signal — the market is moving fast
+
+### 🟡 SIGNAL: Excalidraw Shipped Native Mindmap Support + Improved Pencil Mode
+- **URL**: https://maqtoob.com/tool/plus-excalidraw/
+- Recent Excalidraw+ updates include: **native mindmap support**, SVG export improvements, Pencil writing smoothing for stylus input, and ability to embed drawings in notes
+- This closes one of the previously documented weaknesses (no mindmap type)
+- **Skissify response**: Excalidraw is improving its human-use UX. They are NOT improving their programmatic/agent use case. Our lane remains clear.
+
+### 🟡 WATCH: Napkin AI Reportedly Launched Public API — Verify
+- **Conflicting sources** (March 2026):
+  - raitly.com (March 2026): *"Napkin AI introduced new AI models for higher quality visuals... and launched a public API for developers"*
+  - creativetoolsai.com (March 2026): *"As of 2026, Napkin AI doesn't offer a public API for developers"*
+- **Status**: Unconfirmed. If true, Napkin AI entering the API space is a directional signal — the market for visual generation APIs is forming
+- **Skissify response**: Monitor Napkin AI's API pricing (if real). Their focus is business storytelling/infographics — not floor plans, not hand-drawn architectural drawings, not JSON-first. Differentiation intact.
+- **URL to watch**: https://napkin.ai/pricing
+
+### 🟢 OPPORTUNITY: JFrog Launches Universal MCP Registry for Enterprise
+- **URL**: https://jfrog.com/press-room/jfrog-unveils-universal-mcp-registry-for-ai-software-supply-chain/
+- JFrog launched an enterprise-grade Universal MCP Registry (March 2026) as part of their AI Catalog — for security-conscious IT departments to audit and approve MCP servers
+- This is important: enterprise IT is now formally evaluating which MCP servers are "approved for use"
+- **Skissify implication**: A Skissify MCP server published on modelcontextprotocol.io AND listed in JFrog-style registries = enterprise-discoverable. The PLG → enterprise funnel becomes real. Getting registered early matters.
+
+### 🔵 CONTEXT: MCP Protocol Post-Standard Practice (March 24, 2026)
+- **URL**: https://use-apify.com/blog/mcp-standard-ecosystem-2026 (March 24, 2026)
+- MCP is now described as the "documented, JSON-RPC-style bridge" that all AI hosts (IDEs, assistants) use to discover tools
+- MCP blog roadmap (March 9, 2026): protocol is evolving from "local data fetching" to "enterprise-grade autonomous framework" — formal auth, multi-agent pipelines, resource discovery
+- **Skissify implication**: Ship MCP server while the ecosystem is young. Once auth/enterprise features mature, verification and trust scores will matter — early movers get default trust.
+
+### 🔵 CONTEXT: tldraw — No New Features, Still Recovering from PR Drama
+- No significant tldraw product news in March 2026
+- DeepWiki last indexed tldraw March 7, 2026 — no major commits since PR drama
+- The community fragmentation documented in Run #2 persists
+- **Opportunity window remains open**: tldraw has stalled; Skissify can capture developer mindshare
+
+### Updated Competitor Matrix Addition: Lucid Software
+| Tool | MCP Server | Process Agent | Hand-drawn | Floor Plans | Target Segment | Pricing |
+|------|-----------|---------------|-----------|-------------|----------------|---------|
+| **Lucid** | **Yes (advanced, March 2026)** | **Yes (new)** | No | No | Enterprise | $8-20/user/mo |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

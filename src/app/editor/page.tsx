@@ -103,6 +103,7 @@ function EditorInner({
     addElement,
     deleteSelected,
     moveSelected,
+    commitDrag,
     copySelected,
     pasteElements,
     rotateSelected,
@@ -272,6 +273,7 @@ function EditorInner({
           selectedElements={selectedElements}
           onSelectElements={setSelectedElements}
           onMoveSelected={moveSelected}
+          onDragEnd={commitDrag}
         />
       </div>
 

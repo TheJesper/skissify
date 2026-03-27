@@ -173,3 +173,88 @@ AI floor plan generators (floor-plan.ai, OpenArt, Planner5D) are image-generatio
 | EUR 2/mo works ONLY as "starter API key + watermark removal" | High | Anchor Pro at EUR 5; EUR 2 = API Starter if launched |
 
 ---
+
+## Entry: March 27, 2026 — 03:06 CET | Automated Strategy Run #3
+
+### Theme: Enterprise Validates the Thesis — Now Lucid Is Proof the Market Is Real
+
+---
+
+#### Finding 1: Lucid's "Process Agent" Launch Is a Market Validation Gift
+
+Lucid Software (Lucidchart) just announced a Process Agent that turns undocumented workflows into visual diagrams via MCP — **today, March 27, 2026**.
+
+Key data point from Lucid's own research: **only 16% of knowledge workers** describe their company's workflows as "extremely well-documented." That's the market pain that makes visual-output AI tools valuable at every level — enterprise (Lucid's lane) AND developer/indie (Skissify's lane).
+
+**What makes Skissify pay EUR 2/mo**: Same insight, different scale. A developer whose Claude agent produces JSON architecture diagrams or floor plans doesn't want raw JSON in a chat — they want something they can paste into a Notion doc, email to a client, or use in a pitch. A hand-drawn SVG is immediately more communicative than text. The EUR 2 unlock is "make my agent's output presentable."
+
+**The Lucid parallel as pitch language**: "Lucid charges $8-20/user/month to make enterprise diagrams visual. Skissify is EUR 2/month for developers who want the same for their AI agent output." This is a strong anchor.
+
+---
+
+#### Finding 2: The "EUR 2/mo" Question Reframed Through New Evidence
+
+Three runs of data now converge on a single answer:
+
+> **Someone pays EUR 2/mo for Skissify when their AI agent or personal workflow produces visual output they're embarrassed to share.**
+
+Specific triggers:
+1. **The agent pipeline embarrassment trigger**: Claude generates a floor plan JSON. The developer shows it to a client. Client sees raw JSON. Developer immediately wants rendered output. EUR 2 removes the watermark and makes the SVG shareable. This is impulse territory.
+2. **The "coffee money" anchor**: The micro-SaaS data (bigideasdb.com, March 2026) confirms that tools targeting workflows where people "waste 5-10 hours/week" can command $49-199/mo. Skissify at EUR 2 is so far below that threshold it requires zero deliberation. The decision isn't "is this worth EUR 2" — it's "this is $0.07/day, just buy it."
+3. **The professional signal trigger**: Every developer who uses Eraser's free watermarked MCP eventually pays to remove the watermark. Skissify can clone this exact behavior. The watermark exists not to annoy but to create a decision moment: "I've embedded this in my pipeline. Do I want it looking amateur?"
+
+**Revised EUR 2 pricing logic**:
+- NOT a feature-based tier
+- YES a "watermark removal + clean API renders" starter
+- Frame it as: "EUR 2/mo = your agent's output looks like a professional made it"
+
+---
+
+#### Finding 3: Excalidraw Closed a Weakness — But Not Our Lane
+
+Excalidraw shipped native mindmap support in recent updates, closing one of their documented gaps. This is meaningful — it shows Excalidraw is actively improving and not stagnant.
+
+**What this does NOT change for Skissify**:
+- Excalidraw still has zero architectural elements (walls, doors, windows, stairs, dimensions)
+- Excalidraw's MCP/JSON is internal-format-first, not designed for clean LLM output
+- Excalidraw has no API pricing model — it's free/open-source with Excalidraw+ subscription
+
+**What to watch**: If Excalidraw adds a paid API tier or a "generate from JSON" endpoint, re-evaluate. Until then, they are improving the human-use product, not the agent-use product.
+
+---
+
+#### Finding 4: Napkin AI API Situation Creates a Narrative Opportunity
+
+Sources conflict on whether Napkin AI has launched a public API. One says yes (raitly.com), one says no (creativetoolsai.com) — both March 2026.
+
+**This is actually useful regardless**:
+- If Napkin AI HAS an API: positions "text-to-visual APIs" as a category that developers are searching for. Skissify should be in that search.
+- If Napkin AI does NOT have an API: Skissify can SEO-target "napkin ai api alternative" as a keyword. Developers searching for Napkin AI's API would find Skissify's JSON-to-sketch API.
+
+**Action**: Target the keyword "napkin ai api" in Skissify's blog and documentation.
+
+---
+
+#### Finding 5: JFrog's Enterprise MCP Registry = Future B2B Sales Channel
+
+JFrog launched a Universal MCP Registry (March 2026) — enterprise IT can audit and approve MCP servers. This creates a new sales motion for Skissify at the right stage:
+
+1. Today: Get listed on modelcontextprotocol.io (free, first-mover)
+2. Q3-Q4 2026: Get listed on JFrog AI Catalog MCP Registry (enterprise discovery)
+3. When an IT department approves Skissify MCP for internal use → enterprise license conversation begins
+
+This is the exact PLG → enterprise funnel. No direct sales required. The MCP server IS the top of funnel.
+
+---
+
+### Summary Signals This Cycle
+
+| Signal | Urgency | Action |
+|--------|---------|--------|
+| Lucid launches Process Agent + MCP upgrade (TODAY) | High | Use as market proof; "Skissify is the developer-scale Lucid" |
+| Excalidraw closes mindmap gap | Medium | Monitor; they're not entering our lane, just improving theirs |
+| Napkin AI API conflicting reports | Medium | SEO-target "napkin ai api" as a keyword regardless |
+| JFrog MCP Registry = enterprise B2B channel | Medium | Get listed on modelcontextprotocol.io now; JFrog later |
+| EUR 2/mo = watermark removal + professional signal | High | Frame consistently: not a feature tier, a professional upgrade |
+
+---

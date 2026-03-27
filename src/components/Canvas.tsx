@@ -10,6 +10,8 @@ interface CanvasProps {
   selectedElements: Set<number>;
   onSelectElements: (elements: Set<number>) => void;
   onMoveSelected?: (dx: number, dy: number) => void;
+  /** Called when a drag-move gesture ends — use to commit to undo history */
+  onDragEnd?: () => void;
 }
 
 export default function Canvas({
@@ -18,6 +20,7 @@ export default function Canvas({
   selectedElements,
   onSelectElements,
   onMoveSelected,
+  onDragEnd,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -349,12 +352,16 @@ export default function Canvas({
       isBoxSelecting.current = false;
       boxStartScreen.current = null;
 
-      // Reset element drag (after click event fires)
+      // Commit element drag to undo history if a drag actually occurred
+      const wasDragging = isDraggingElements.current;
       setTimeout(() => {
         isDraggingElements.current = false;
       }, 0);
+      if (wasDragging && onDragEnd) {
+        onDragEnd();
+      }
     },
-    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements]
+    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd]
   );
 
   const handleMouseLeave = useCallback(() => {
@@ -366,10 +373,15 @@ export default function Canvas({
     setBoxSelectionRect(null);
     isBoxSelecting.current = false;
     boxStartScreen.current = null;
+    // Commit drag to undo history if a drag was in progress
+    const wasDragging = isDraggingElements.current;
     setTimeout(() => {
       isDraggingElements.current = false;
     }, 0);
-  }, []);
+    if (wasDragging && onDragEnd) {
+      onDragEnd();
+    }
+  }, [onDragEnd]);
 
   // Touch: pinch-to-zoom and two-finger pan
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
