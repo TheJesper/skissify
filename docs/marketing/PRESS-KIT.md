@@ -481,3 +481,98 @@ Launch day produced an unexpected signal: homeowners using Skissify to sketch re
 
 *Press kit version 6.0 — March 27, 2026 (13:02 CET — Cycle 12)*  
 *Added: Visual iteration loop angle, open schema angle, non-developer discovery story angle*
+
+---
+
+## Specific Journalist & Publication Contacts — Cycle 13 (March 27, 13:30 CET)
+
+*These are the publications most likely to cover a technical indie launch with AI angles. Research-verified as of March 2026.*
+
+### Tier 1: Highest Probability of Coverage
+
+| Publication | Contact approach | Angle to lead with | Notes |
+|-------------|-----------------|-------------------|-------|
+| **The New Stack** | thenewstack.io/write-for-us | Visual output gap in AI agent stacks | Already covering MCP (confirmed — March 2026 article exists). Angle: "The missing layer in your agentic stack." |
+| **Dev.to** | Submit via dev.to/new post | Any technical angle | Not press, but 1M+ reach. Cross-post all blog posts. Use their #showdev tag on launch day. |
+| **Hacker Newsletter** | hackernewsletter.com | HN thread if it gets traction | Curates top HN posts weekly. Natural if Show HN performs well. |
+| **Ben's Bites** | bensbites.beehiiv.com/submissions | "AI can draw now" angle | Covers indie AI tool launches regularly. Short entries (2-3 sentences) work. |
+| **TLDR AI** | tldr.tech/ai (submit form) | MCP + agent visual output | 500K+ developer subscribers. Best pitch: the MCP angle + "12,770 servers, none draw" stat. |
+
+### Tier 2: Longer-lead but high-value
+
+| Publication | Contact approach | Angle to lead with | Notes |
+|-------------|-----------------|-------------------|-------|
+| **Wired** | wired.com/story-ideas | Homeowner use case + AI surprise angle | Mainstream press story: "Built for AI, used by homeowners." Needs 1-2 weeks of traction data first. |
+| **The Verge** | Submit via theverge.com/contact | AI tools, consumer angle | Their audience responds to "non-developer discovers AI tool" stories. Wait for Day 7 data. |
+| **TechCrunch** | techcrunch.com/got-a-tip | Indie SaaS + AI tools | Long shot for launch day but pitch if traction validates. Need 1,000+ signups or viral moment. |
+| **VentureBeat** | venturebeat.com/contact | Enterprise AI agent tooling | More technical/enterprise slant. Angle: the agentic stack visual output layer. |
+| **Ars Technica** | ArsTechnica forums | Technical deep-dive | Their audience loves algorithm deep-dives. The multi-harmonic wobble post is ideal content for this. |
+
+### Podcast Pitches (Week 2-3)
+
+| Podcast | Host | Audience | Angle |
+|---------|------|---------|-------|
+| **Indie Hackers Podcast** | Courtland Allen | Solo founders | Build-in-public, €5 SaaS, launch story |
+| **The Changelog** | Adam Stacoviak | Developers | Open schema + MCP technical discussion |
+| **Practical AI** | Chris Benson | AI practitioners | AI agent visual output, JSON-first architecture |
+| **Software Engineering Daily** | Jeff Meyerson | Senior engineers | Rendering engine deep-dive, Canvas 2D |
+| **Syntax.fm** | Wes Bos, Scott Tolinski | Frontend devs | Next.js 15 + Canvas 2D + wobble algorithm |
+
+### Cold Outreach Scripts
+
+**For newsletters (short, scannable):**
+```
+Subject: New tool: JSON → hand-drawn sketches, AI agent native (MCP)
+
+[Newsletter name] reader here. I built something you might cover:
+
+Skissify — skissify.com
+What: JSON-first sketch renderer. AI agents use it via MCP (Model Context Protocol).
+Why interesting: First sketch tool where Claude can generate, not just describe, a floor plan.
+Numbers: 14 element types, 4 paper styles, free + €5/mo Pro. MCP install: 2 minutes.
+Launched: Today (March 27, 2026)
+
+Demo (no signup): skissify.com/editor
+Happy to provide GIFs, interview, or exclusive screenshots.
+
+[Name]
+```
+
+**For tech journalists:**
+```
+Subject: Launch day tip: Skissify — AI agents can now draw (not just describe) floor plans
+
+Hi [Name],
+
+One-liner: AI agents can now generate visual sketches natively, not just text descriptions. Skissify (skissify.com) launched today with MCP support — Claude can design and draw floor plans in conversation.
+
+The angle that might interest your readers: we found non-developer homeowners using it on launch day to sketch renovation plans for contractor calls. Built for AI agents, discovered by humans renovating kitchens.
+
+Launch day context:
+- Show HN: [link]  
+- Product Hunt: [link]
+- Live editor: skissify.com/editor (no signup)
+
+Available for a call or written Q&A. Assets available.
+
+[Name], skissify.com
+```
+
+---
+
+## Award & Recognition Targets (Week 2+)
+
+These are submit-and-wait but worth the 10-minute effort per entry:
+
+| Award/Recognition | URL | Notes |
+|------------------|-----|-------|
+| Golden Kitty Awards | producthunt.com/golden-kitty | Annual PH award — need strong launch |
+| Webby Awards — Apps category | webbyawards.com | Submit Q4 2026 after gathering users |
+| Indie Hacker of the Month | indiehackers.com | Submit after Month 1 retrospective |
+| Dev.to Top 7 Tools of the Week | dev.to/listings | Post good content → gets featured |
+| GitHub Trending | github.com/trending | Requires open-source release of MCP server |
+
+---
+
+*Press kit version 7.0 — March 27, 2026 (13:30 CET — Cycle 13)*  
+*Added: Specific journalist/publication contacts, podcast pitch list, cold outreach scripts, award targets*

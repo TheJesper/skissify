@@ -2,6 +2,8 @@
 
 *Published: March 2026 — Cross-post to Dev.to, Hashnode*
 
+> **What you'll get from this post:** A step-by-step breakdown of exactly how an AI agent (Claude via MCP) goes from natural language to a rendered floor plan sketch — including the JSON schema, the wobble algorithm, and a real conversation example you can reproduce.
+
 ---
 
 Last week I asked Claude to design a 2-bedroom apartment and sketch it for me.
@@ -162,4 +164,24 @@ The future of AI agents isn't just text. It's agents that can think, design, and
 
 *Questions? I'm happy to discuss the rendering approach, the JSON schema design, or the MCP integration in the comments.*
 
+---
+
+## What's Next for Skissify
+
+The current element set covers architectural floor plans well. The next evolution is:
+- **Furniture library** — pre-defined furniture blocks (sofa, desk, queen bed) at standard sizes
+- **Electrical symbols** — power outlets, switches, light fixtures
+- **Plumbing fixtures** — sinks, toilets, showers for bathroom/kitchen layouts
+- **Multi-floor exports** — generate all floors as a set from one prompt
+
+If you're building something that would benefit from any of these, let me know — it shapes the roadmap.
+
+---
+
 **Tags:** ai, agents, mcp, architecture, floor-plans, javascript, developer-tools
+
+**Distribution notes (internal):**
+- Dev.to: Primary — technical audience, MCP integration is the main hook
+- Hashnode: Cross-post with "mcp" and "ai-agents" tags for SEO
+- Publish Day 3 (Sunday Mar 29) — gives developers the weekend to try it
+- Use the "real conversation" section as a Twitter thread teaser with a link

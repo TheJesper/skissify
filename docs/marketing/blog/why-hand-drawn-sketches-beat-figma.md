@@ -3,6 +3,8 @@
 *Published: March 2026 — Cross-post to Dev.to, Hashnode, Medium*  
 *~1,800 words | 8 min read*
 
+> **TL;DR:** Figma is excellent — for production design. For early-stage idea exploration, rough sketches generate better feedback, unlock bolder thinking, and save you from the trap of polishing the wrong thing. In 2026, AI agents can now generate those sketches programmatically. This changes the speed of early design entirely.
+
 ---
 
 There's a moment every designer and developer knows: you're in a meeting, someone asks "what would this look like?", and you reach for a pen.
@@ -153,4 +155,18 @@ Skissify is one answer to that challenge. JSON in, hand-drawn sketch out, AI-rea
 - [How AI Agents Can Draw Floor Plans](/blog/how-ai-agents-draw-floor-plans)
 - [Skissify vs Excalidraw: Different Tools for Different Jobs](/blog/skissify-vs-excalidraw)
 
+---
+
+## Comments Welcome
+
+If you've found a workflow that bridges early sketching with production tools better than what I described here, I'm genuinely curious. The design tooling ecosystem is moving fast — especially with the AI integration layer.
+
+---
+
 **Tags:** design, ux, ai, developer-tools, figma, sketching, mcp, floor-plans, prototyping
+
+**Distribution notes (internal):**
+- Medium: Frame for design/UX audience — lead with the "Figma signals this is the design" insight
+- Hashnode: Strong SEO play for "figma vs sketching" and "low fidelity prototyping" keywords
+- Dev.to: Use the AI/MCP angle in the subheader — developer audience responds to that
+- Best publish day: Tuesday-Wednesday Week 2 (Day 5-6) after launch dust settles

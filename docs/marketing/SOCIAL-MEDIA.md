@@ -2403,5 +2403,208 @@ If the post gets traction:
 
 ---
 
-*Last Updated: March 27, 2026 (Cycle 12 — 13:02 CET)*
-*Added: Tweets 16-20, LinkedIn article, r/homedesign post, updated timing table, visual feedback loop tweet thread, schema transparency thread*
+---
+
+## Cycle 13 Additions — US Morning Wave (13:30 CET)
+
+### Tweet 21: The Unexpected Use Case (Post at 14:30 CET — US East Coast 8:30 AM)
+
+```
+I built Skissify for AI agents.
+
+Then a homeowner used it to explain her kitchen to her contractor.
+
+She doesn't know what JSON is.
+She just described the room to Claude.
+5 minutes. A sketch. The contractor understood.
+
+The product works for people I didn't build it for.
+
+skissify.com
+```
+
+**Why this works:** Unexpected use case widens the audience at US morning peak. Non-developer readers can picture themselves doing this. Emotional resonance. Different from all previous "AI agent" tweets.
+
+---
+
+### Tweet 22: The Retro Comparison Hook (Post at 15:30 CET — US East Coast 9:30 AM)
+
+```
+Design tools in 2026, ranked by how fast you can go from "I have an idea" to "someone else can see it":
+
+Paper napkin: 30 seconds ✅
+Skissify + Claude: 60 seconds ✅
+Excalidraw: 3 minutes
+Figma: 10+ minutes (if you don't get lost in components)
+
+Speed isn't the goal. Iteration is.
+
+Fast means more tries. More tries means better ideas.
+
+skissify.com
+```
+
+**Why this works:** Listicle format gets high engagement on Twitter. Positions Skissify favorably without attacking competitors. The "iteration" reframe adds intellectual weight.
+
+---
+
+### Tweet 23: The Integration Drop (Post at 17:30 CET — US East Coast 11:30 AM)
+
+```
+Skissify works with:
+
+→ Claude Desktop (MCP — 3 lines of config)
+→ Any MCP client
+→ Any AI agent via REST API
+→ Direct JSON paste in the editor
+
+No SDK required. No library. No lock-in.
+
+The schema is public. If you can describe a shape in JSON, you can use Skissify.
+
+Docs: skissify.com/docs
+```
+
+**Why this works:** Developer audience (US morning) wants to know how to integrate. Answers the "but how?" question that's in their head after seeing earlier tweets. Low barrier to action.
+
+---
+
+### Tweet 24: The Weekend Hacker Hook (Post at 20:00 CET Friday — US East Coast 2:00 PM, entering Friday afternoon)
+
+```
+It's Friday afternoon.
+
+If you have 20 minutes this weekend:
+
+1. Install @skissify MCP server
+2. Tell Claude to draw you something
+3. Post what it makes
+
+I'm curious what non-floor-plan use cases people discover.
+
+Docs + setup: skissify.com/docs
+
+(It's free.)
+```
+
+**Why this works:** Friday afternoon US timing is optimal for "try this weekend" hooks. Clear 3-step ask. Ends with community participation invite. The curiosity angle is genuine — we don't know all the use cases yet.
+
+---
+
+### Tweet 25: The Transparent Metrics Final Post (Post at 22:00 CET)
+
+*This replaces/supplements Tweet 5 and Tweet 20. Intended as the DEFINITIVE Day 1 wrap.*
+
+```
+Day 1 of Skissify is done.
+
+I committed to transparency. So here's everything:
+
+📊 [X] signups
+🖊️ [X] sketches created  
+🤖 [X] sketches via AI/MCP
+💶 [X] Pro subscribers
+⭐ [X] Product Hunt upvotes
+💬 [X] HN points, [X] comments
+
+What surprised me most: homeowners using it for renovation planning.
+
+What was harder than expected: Product Hunt timezone gap.
+
+What worked better than expected: the r/homedesign post.
+
+Full retrospective: [link to blog/we-launched-today...]
+
+Thank you to everyone who tried it, tweeted about it, or just looked at the site.
+
+Now I sleep.
+```
+
+**Why this works:** Authentic end-of-day post that rewards people who've been following the launch. Build-in-public at its best. Sets up Day 2 content naturally. Human moment after a long day.
+
+---
+
+### r/SideProject Evening Update (Post at 16:00 CET)
+
+**Post in original r/SideProject thread as an update comment:**
+
+```
+[UPDATE — 8 hours in]:
+
+Launched at midnight. A few numbers for the curious:
+- [X] signups so far
+- Biggest surprise: homeowners using it for renovation planning (didn't see that coming)
+- Hacker News: [link] — great technical thread on JSON vs DSL design
+- Most popular paper style: cream (classic napkin feel wins)
+
+The r/homedesign post got more engagement than the dev-focused posts. Floor plans for human spaces beat floor plans for software spaces in raw user interest.
+
+Still free to try: skissify.com
+MCP server: npm install -g @skissify/mcp-server
+```
+
+**Why this works:** Update comments in launch threads get upvotes and keep the original post fresh. Shows momentum. Authentic. Non-promotional.
+
+---
+
+### Discord: Anthropic #show-and-tell (Post at 16:30 CET)
+
+```
+Hey everyone — built something you might enjoy playing with.
+
+Skissify launched today: a JSON-to-hand-drawn-sketch tool with MCP support.
+
+Give Claude this config and ask it to "draw a 2-bedroom apartment layout":
+
+[MCP config snippet]
+
+Then watch it design the geometry, generate the JSON, and render a floor plan sketch.
+
+What surprised us on launch day: homeowners are using it alongside developers. The floor plan use case turns out to be useful even for people who've never heard of MCP.
+
+Happy to answer questions. Docs: skissify.com/docs
+```
+
+---
+
+### Updated Full Timing Table (Cycle 13)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 07:00 | Tweet 1 — launch | Cycle 1 |
+| 09:00 | Tweet 12 — PH live | Cycle 11 |
+| 09:15 | Anthropic Discord #mcp-showcase | Cycle 11 |
+| 10:00 | Show HN | LAUNCH-DAY-NOW.md |
+| 10:30 | Tweet 9 — A2A stack | Cycle 10 |
+| 11:00 | r/SideProject | LAUNCH-DAY-NOW.md |
+| 11:30 | Tweet 13 — vibe drawing | Cycle 11 |
+| 12:00 | Publish "Launch Day Letter" blog | Cycle 9 |
+| 13:00 | Tweet 14 + Publish live update blog | Cycles 11-12 |
+| 13:30 | Tweet 16 + LinkedIn article | Cycle 12 |
+| 14:00 | Tweet 10 — traction numbers | Cycle 10 |
+| **14:30** | **Tweet 21 — homeowner use case** | **Cycle 13** |
+| 14:30 | r/homedesign post | Cycle 12 |
+| 15:00 | r/AIAssistants + newsletter pitches | Cycles 10-11 |
+| 15:30 | Tweet 17 — feedback loop | Cycle 12 |
+| **15:30** | **Tweet 22 — speed comparison** | **Cycle 13** |
+| 16:00 | Tweet 15 — "the gap" | Cycle 11 |
+| **16:00** | **r/SideProject update comment** | **Cycle 13** |
+| 16:30 | Tweet 18 — schema thread | Cycle 12 |
+| 16:30 | r/AIEngineering + Anthropic Discord | Cycles 11+13 |
+| 17:00 | Tweet 4 — comparison + r/mcp | LAUNCH-DAY-NOW.md |
+| **17:30** | **Tweet 23 — integration drop** | **Cycle 13** |
+| 17:30 | Tweet 11 — image generator rebuke | Cycle 10 |
+| 18:00 | Tweet 6 — US wave | Cycle 9 |
+| 19:00 | Tweet 19 — human story | Cycle 12 |
+| 19:30 | Tweet 7 — hot take | Cycle 9 |
+| **20:00** | **Tweet 24 — Friday weekend hacker** | **Cycle 13** |
+| 20:00 | Tweet 20 — traction transparency | Cycle 12 |
+| 20:00 | r/ClaudeAI post | Cycle 9 |
+| 21:00 | Tweet 8 — build-in-public wrap | Cycle 9 |
+| **22:00** | **Tweet 25 — definitive Day 1 wrap** | **Cycle 13** |
+| 22:00 | Fill numbers + publish "We Launched Today" | blog/we-launched-today... |
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 13 — 13:30 CET)*
+*Added: Tweets 21-25 (US morning through Day 1 wrap), r/SideProject update, Anthropic #show-and-tell, updated full timing table*

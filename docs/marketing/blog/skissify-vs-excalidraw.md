@@ -2,6 +2,8 @@
 
 *Published: March 2026 — Cross-post to Dev.to, Hashnode*
 
+> **Bottom line up front:** Excalidraw = human draws, AI watches. Skissify = AI draws, human sees. They're complements, not competitors. Use this guide to know which to reach for when.
+
 ---
 
 Whenever I mention Skissify, the first question is usually: "How is this different from Excalidraw?"
@@ -156,4 +158,21 @@ They're not competitors. They're complements for different moments in the design
 
 *Try Skissify at [skissify.com](https://skissify.com) — the editor is free, no signup required.*
 
+---
+
+## What About tldraw?
+
+Short answer: tldraw is a developer SDK primarily — it's excellent if you're building a whiteboard into your own product. Commercial license is $6K/year. It doesn't have MCP support and doesn't have the architectural element set.
+
+A three-way comparison (Skissify vs Excalidraw vs tldraw) is in progress for Week 2.
+
+---
+
 **Tags:** comparison, excalidraw, design-tools, ai, mcp, developer-tools, sketching
+
+**Distribution notes (internal):**
+- Dev.to: Best home — developer community knows both tools, high search volume for "excalidraw alternatives"
+- Medium: Use the "The Architectural Difference" section as the hook subheader
+- SEO targets: "excalidraw alternative", "excalidraw vs skissify", "ai diagram tool", "mcp drawing tool"
+- Publish Day 4 (Mon Mar 30) — after the HN/PH rush, when Google starts indexing
+- Tweet hook: "Excalidraw = human draws. Skissify = AI draws. Different jobs. Here's when to use which 👇"

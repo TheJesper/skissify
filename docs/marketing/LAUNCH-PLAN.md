@@ -162,6 +162,49 @@
 
 ---
 
+## Marketing Improvements (Cycle 13 — March 27, 13:30 CET)
+
+### ⚡ STATUS: US EAST COAST JUST WOKE UP (8:30 AM ET)
+
+This is the second highest-value traffic window of the day. EU crowd is at lunch, US East Coast is arriving at their desks. Post Tweet 21 NOW.
+
+### Completed This Cycle
+- [x] ✅ **Blog post #17 NEW**: "The Floor Plan That Surprised Me" — 900-word personal narrative post about a homeowner discovering Skissify on launch day for renovation planning. Written in real-time voice. Perfect for Substack, Medium personal edition. File: `docs/marketing/blog/the-floor-plan-that-surprised-me.md`
+- [x] ✅ **Blog posts 1-3 enhanced**: Added TL;DR callout boxes, distribution notes, and US-audience framing to `why-hand-drawn-sketches-beat-figma.md`, `how-ai-agents-draw-floor-plans.md`, and `skissify-vs-excalidraw.md`. Better scannability for US morning readers.
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 13**: Tweets 21-25 (US morning homeowner story, speed comparison, integration drop, Friday weekend hacker hook, definitive Day 1 wrap), r/SideProject update comment, Anthropic #show-and-tell Discord post, full timing table extended to 22:00 CET
+- [x] ✅ **PRESS-KIT.md v7.0**: Added specific journalist contacts (The New Stack, Ben's Bites, TLDR AI, Wired, The Verge, TechCrunch), 5 podcast pitches with specific hosts, two cold outreach email scripts, and awards/recognition targets for Week 2+
+
+### Key Insight: The Homeowner Signal
+Launch day produced an unexpected data point: homeowners using Skissify for renovation planning (floor plans for contractor calls). This is:
+1. **A broader market signal** — the product works for non-developers
+2. **A better viral story** — "AI built for agents, used by homeowners" is more shareable than "AI agent tool"
+3. **A press angle** — consumer tech press (Wired, The Verge) responds to this kind of "unexpected human use" story
+
+**Recommendation:** Track how many non-developer signups occur in the first 48 hours. If the ratio is > 30%, consider adding explicit non-developer onboarding flow and changing primary landing page headline to lead with the human use case.
+
+### Tweets 21-25 Summary (Cycle 13)
+| Tweet | Time | Angle |
+|-------|------|-------|
+| 21 | 14:30 | Homeowner use case — US morning surprise story |
+| 22 | 15:30 | Speed comparison — sketch tools ranked by time-to-idea |
+| 23 | 17:30 | Integration summary — how to connect everything |
+| 24 | 20:00 | Friday weekend hacker hook — try it this weekend |
+| 25 | 22:00 | Definitive Day 1 metrics wrap — transparent build-in-public |
+
+### New Blog Post #17 — Distribution Plan
+| Platform | Publish day | Hook |
+|---------|------------|------|
+| Substack | Day 2-3 | Personal newsletter launch story |
+| Medium (personal) | Day 4 | "The day I realized who my product is actually for" |
+| Indie Hackers | Week 2 | As part of the Month 1 retrospective |
+
+### Immediate Actions Right Now (13:30 CET)
+1. **Post LinkedIn article** (drafted in Cycle 12 — publish NOW for EU lunch + US morning)
+2. **Queue Tweet 21** for 14:30 CET (homeowner story — best US morning hook)
+3. **Send 3 newsletter pitches** (Ben's Bites, TLDR AI, Hacker Newsletter) — drafted in Cycle 13 PRESS-KIT
+
+---
+
 ## Marketing Improvements (Cycle 12 — March 27, 13:02 CET)
 
 ### 🕐 CURRENT STATUS: AFTERNOON WAVE — US East Coast Waking Up
