@@ -4,6 +4,10 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { SketchData } from "@/lib/types";
 import { renderSketch } from "@/lib/renderer";
 
+/** Clamp zoom to [min, max] */
+const MIN_ZOOM = 0.1;
+const MAX_ZOOM = 8;
+
 interface CanvasProps {
   sketch: SketchData;
   redrawKey: number;
@@ -12,6 +16,10 @@ interface CanvasProps {
   onMoveSelected?: (dx: number, dy: number) => void;
   /** Called when a drag-move gesture ends — use to commit to undo history */
   onDragEnd?: () => void;
+  /** Called with current zoom level whenever it changes */
+  onZoomChange?: (zoom: number) => void;
+  /** Exposed ref so parent can call resetView() */
+  canvasControlRef?: React.MutableRefObject<{ resetView: () => void } | null>;
 }
 
 export default function Canvas({
@@ -21,6 +29,8 @@ export default function Canvas({
   onSelectElements,
   onMoveSelected,
   onDragEnd,
+  onZoomChange,
+  canvasControlRef,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -47,6 +57,36 @@ export default function Canvas({
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
+
+  // Reset view: fit canvas to container with small padding
+  const resetView = useCallback(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const cw = container.clientWidth;
+    const ch = container.clientHeight;
+    const padding = 48;
+    const fitZoom = Math.min(
+      (cw - padding * 2) / canvasW,
+      (ch - padding * 2) / canvasH,
+      1 // Never zoom in beyond 100% on reset
+    );
+    setZoom(fitZoom);
+    setPan({ x: 0, y: 0 });
+    onZoomChange?.(fitZoom);
+  }, [canvasW, canvasH, onZoomChange]);
+
+  // Expose resetView via ref
+  useEffect(() => {
+    if (canvasControlRef) {
+      canvasControlRef.current = { resetView };
+    }
+  }, [canvasControlRef, resetView]);
+
+  // Auto-fit on first mount and when canvas dimensions change
+  useEffect(() => {
+    resetView();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [canvasW, canvasH]);
 
   // Render
   const draw = useCallback(() => {
@@ -194,12 +234,13 @@ export default function Canvas({
       const factor = e.deltaY > 0 ? 0.9 : 1.1;
 
       setZoom((prevZoom) => {
-        const newZoom = Math.max(0.2, Math.min(5, prevZoom * factor));
+        const newZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, prevZoom * factor));
         const scale = newZoom / prevZoom;
         setPan((p) => ({
           x: mx - scale * (mx - p.x),
           y: my - scale * (my - p.y),
         }));
+        onZoomChange?.(newZoom);
         return newZoom;
       });
     },
@@ -277,13 +318,10 @@ export default function Canvas({
         }
 
         if (isDraggingElements.current) {
-          const canvas = canvasRef.current;
-          if (canvas) {
-            const rect = canvas.getBoundingClientRect();
-            const scaleX = canvasW / rect.width;
-            const scaleY = canvasH / rect.height;
-            onMoveSelected((dx * scaleX) / zoom, (dy * scaleY) / zoom);
-          }
+          // rect.width already accounts for the CSS transform scale (zoom),
+          // so we just need canvas-coordinate scale: canvasW / (canvasW * zoom) = 1/zoom.
+          // Equivalent but simpler than reading getBoundingClientRect each frame.
+          onMoveSelected(dx / zoom, dy / zoom);
           lastMouse.current = { x: e.clientX, y: e.clientY };
         }
         return;
@@ -409,7 +447,11 @@ export default function Canvas({
 
       if (lastTouchDist.current !== null && lastTouchCenter.current !== null) {
         const scale = dist / lastTouchDist.current;
-        setZoom((z) => Math.max(0.2, Math.min(5, z * scale)));
+        setZoom((z) => {
+          const nz = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z * scale));
+          onZoomChange?.(nz);
+          return nz;
+        });
         setPan((p) => ({
           x: p.x + (center.x - lastTouchCenter.current!.x),
           y: p.y + (center.y - lastTouchCenter.current!.y),
@@ -461,10 +503,21 @@ export default function Canvas({
       if (e.key === "Escape") {
         onSelectElements(new Set());
       }
+      // Press "0" (without modifiers) to reset/fit the view
+      if (e.key === "0" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        const target = e.target as HTMLElement;
+        const isInput =
+          target instanceof HTMLTextAreaElement ||
+          target instanceof HTMLInputElement;
+        if (!isInput) {
+          e.preventDefault();
+          resetView();
+        }
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [onSelectElements]);
+  }, [onSelectElements, resetView]);
 
   return (
     <div
@@ -536,6 +589,49 @@ export default function Canvas({
           }}
         />
       )}
+
+      {/* Zoom controls overlay — bottom-right */}
+      <div
+        className="absolute bottom-3 right-3 flex items-center gap-1 z-20"
+        style={{ pointerEvents: "auto" }}
+      >
+        <button
+          onClick={() => {
+            setZoom((z) => {
+              const nz = Math.max(MIN_ZOOM, z / 1.25);
+              onZoomChange?.(nz);
+              return nz;
+            });
+          }}
+          className="w-7 h-7 flex items-center justify-center bg-neutral-800/80 hover:bg-neutral-700 text-neutral-300 rounded text-sm font-bold transition-colors border border-neutral-700/50"
+          title="Zoom out"
+          aria-label="Zoom out"
+        >
+          −
+        </button>
+        <button
+          onClick={resetView}
+          className="px-2 h-7 flex items-center justify-center bg-neutral-800/80 hover:bg-neutral-700 text-neutral-400 hover:text-neutral-200 rounded text-[11px] font-mono transition-colors border border-neutral-700/50 min-w-[46px]"
+          title="Reset view to fit (double-click canvas to reset)"
+          aria-label="Reset zoom"
+        >
+          {Math.round(zoom * 100)}%
+        </button>
+        <button
+          onClick={() => {
+            setZoom((z) => {
+              const nz = Math.min(MAX_ZOOM, z * 1.25);
+              onZoomChange?.(nz);
+              return nz;
+            });
+          }}
+          className="w-7 h-7 flex items-center justify-center bg-neutral-800/80 hover:bg-neutral-700 text-neutral-300 rounded text-sm font-bold transition-colors border border-neutral-700/50"
+          title="Zoom in"
+          aria-label="Zoom in"
+        >
+          +
+        </button>
+      </div>
     </div>
   );
 }

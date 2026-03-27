@@ -666,3 +666,55 @@ Without these tutorials, Skissify will be invisible even when its MCP server is 
 - [Excalidraw Alternatives (Balsamiq)](https://balsamiq.com/blog/excalidraw-alternatives/)
 - [Best AI Diagram Tools 2026 (InfraSketch)](https://infrasketch.net/blog/best-ai-diagram-tools-2026)
 - [Best AI Diagram Tools 2026 (DEV.to)](https://dev.to/dashin_pro/best-ai-diagramming-tools-for-developers-in-2026-3ni3)
+
+---
+
+## Update Log: March 27, 2026 — 08:28 CET | Automated Strategy Run #8
+
+### 🟡 SIGNAL: "Excalidraw Alternatives" Content Wave Surging (March 24–27, 2026)
+- **URL**: https://startupik.com/excalidraw-alternatives-best-diagram-tools-for-teams/ (March 15, published 3 days ago)
+- **URL**: https://www.exafol.com/products/excalidraw/alternatives (6 days ago)
+- **URL**: https://www.producthunt.com/products/excalidraw/alternatives (4 days ago)
+- Multiple fresh "Excalidraw alternatives" roundups are ranking and active. All list Witeboard, A Web Whiteboard, Traw, draw.io, Whimsical — **none list Skissify**, because Skissify hasn't launched publicly.
+- These pages will rank for years. Skissify appearing on these roundups post-launch = guaranteed discovery channel.
+- **Action**: After launch, submit Skissify to Product Hunt under "Excalidraw alternatives" category, and reach out to the Startupik and Exafol writers for inclusion in their roundups. No SEO effort needed — just product launch + outreach.
+- **SEO note**: "Excalidraw alternatives 2026" generates active developer searches. Being on 2 of these pages is worth more than 10 blog posts.
+
+### 🟡 SIGNAL: Excalidraw MCP Evangelism Continues — GitHub Copilot Integration Tutorial (March 24, 2026)
+- **URL**: https://thomasthornton.cloud/creating-diagrams-with-an-excalidraw-agent-skill-and-excalidraw-mcp/ (3 days ago per search)
+- The Thomas Thornton tutorial (previously documented in Run #4) continues gaining traction in search results — appearing in both "Excalidraw MCP" and "hand-drawn diagram" searches.
+- Quote from search snippet: "Learn how an Excalidraw Agent Skill powered by Excalidraw MCP in GitHub Copilot can generate Cloud, Terraform, and workflow diagrams from natural language prompts."
+- **Status**: This tutorial is the benchmark. Skissify's counter-tutorial (assigning in DAILY-ACTIONS) will target the SAME keyword space — "Claude Code diagram", "AI agent hand-drawn sketch" — while differentiating on floor plans, architectural elements, and EUR 2/mo pricing vs Excalidraw+'s $6-7/mo.
+
+### 🟢 OPPORTUNITY: Developers Actively Building LLM → JSON → Floor Plan Pipelines Without a Good Renderer
+- **URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d (3 weeks ago)
+- Re-confirmed: This DEV Community tutorial (Google Gemini + Matplotlib floor plan pipeline) continues to surface in "floor plan JSON API programmatic" searches.
+- Quote: *"Google Gemini API – Parses natural language prompts and converts them into structured JSON layouts. Matplotlib – Used to visualize the floor plan by plotting rooms as geometric shapes."*
+- Matplotlib is Python-only, ugly output, no hand-drawn aesthetic, no SVG, no API.
+- **This exact developer is Skissify's target user.** They've already done the hard part (LLM → JSON). Skissify is the render step they're missing.
+- **Action**: Comment on this post (assigned since Run #6, must verify if done). Skissify should own the comment section of this tutorial.
+
+### 🔵 CONTEXT: No New Direct Competitors Found in This Scan Window (March 24–27)
+- Searches conducted: AI sketch tool MCP hand-drawn (week), Excalidraw tldraw features (week), MCP news March 2026 (week), floor plan JSON API developer (month)
+- **No new entrant to the "hand-drawn + JSON-native + MCP + floor plan" quadrant detected**
+- Competition remains: Excalidraw (hand-drawn, no floor plans), draw.io (floor plans, no hand-drawn), Eraser (MCP, no hand-drawn), Figma (MCP, no sketchy style)
+- **The white space persists.** Every week this is confirmed is a week the moat can be strengthened.
+
+### 🔵 CONTEXT: Product Hunt "Excalidraw Alternatives" Still Not Containing Skissify
+- Product Hunt's curated Excalidraw alternatives page now lists: Witeboard, A Web Whiteboard, Traw, Whiteborb — all basic whiteboard tools
+- No JSON-first, no MCP, no floor plan tools in this list
+- **Opportunity**: Post-launch, Skissify submitting to this PH alternatives list occupies a category currently empty of programmatic/agent-ready sketch tools
+
+### Updated Competitor Intelligence Summary (as of Run #8)
+
+| Competitor | MCP Status | Hand-drawn | Floor Plans | Agent-friendly JSON | Recent Change |
+|-----------|-----------|-----------|-------------|---------------------|---------------|
+| Excalidraw | Official + community | Yes | No | No (internal format) | Mindmap support added; MCP evangelism growing |
+| tldraw | No official | Yes | No | No (imperative API) | Desktop app + local HTTP Canvas API shipped |
+| Eraser | Yes (HTTP + Agent Skills) | No | No | No | Active MCP adoption in CI/CD workflows |
+| Figma | Yes (use_figma, beta) | No | No | No | Full read/write MCP open beta (March 25-27) |
+| Lucid | Yes (advanced) | No | No | No | Process Agent launched March 26 |
+| draw.io | Official (JGraph) | No | Yes | No (XML) | Gaining MCP tutorial traction in dev community |
+| Whimsical | Official (desktop) | Semi | No | No | Stable — no new features noted |
+| Napkin AI | No | Semi | No | No | API availability still unclear (conflicting March 2026 sources) |
+| **Skissify** | **Planned — CRITICAL** | **Yes** | **Yes** | **Yes (native)** | **Still unchallenged in niche; MCP unbuilt** |
