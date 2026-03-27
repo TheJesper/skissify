@@ -90,6 +90,9 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Per-element color picker in Selection panel** — When one or more elements are selected, the "Selection" section in the left sidebar shows 8 preset color swatches + a custom `<input type="color">`. Clicking any swatch or picking a custom color instantly applies it to every selected element's `color` property, replacing the need to edit raw JSON. Color change is fully undoable (Ctrl+Z). Swatch palette matches the global Ink Color section for consistency. Mobile bottom-sheet ControlPanel updated too.
+
+
 - [x] **Ink Color Picker in Sidebar** — New "Ink Color" section in the left control panel with 8 preset swatches (black, blue, red, green, brown, gray, teal, purple) + native `<input type="color">` for custom colors. Active color highlighted with blue ring. Hex value shown as monospace label. Previously only changeable via raw JSON editor.
 
 - [x] **Blueprint board inset fix** — Blueprint paper now renders with a 4px dark border (`#0d1f3a`) around the edge before filling the blue gradient, giving it the same "paper sitting on board" appearance as cream/white modes instead of a flat edge-to-edge blue fill.
