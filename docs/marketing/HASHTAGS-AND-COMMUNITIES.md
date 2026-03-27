@@ -143,7 +143,7 @@ These communities are smaller but high-quality engagement. Use 3-5 tags.
 | r/LocalLLaMA | Reddit | 280K | Self-hosting + local agent angle |
 | Anthropic Discord #mcp-showcase | Discord | 100K+ | Core MCP developer community |
 | Indie Hackers | Website | 500K | Build-in-public audience |
-| PulseMCP.com | Website | Growing | MCP server directory — submit now |
+| PulseMCP.com | Website | 12,770+ servers listed | MCP server directory — submit NOW (confirmed 12,770+ listed as of March 2026) |
 
 ### Tier 2 — Post Day 2-3
 
@@ -222,13 +222,15 @@ Thanks,
 
 ## Trending Topics to Piggyback On
 
-Based on current landscape (March 2026):
+Based on current landscape (March 2026) — updated Cycle 7:
 
-1. **MCP ecosystem explosion** — Anthropic's MCP has 2,000+ servers. We're one of few visual output tools.
-2. **AI agents going mainstream** — $9B market, 46% annual growth. Anything "AI agent native" gets attention.
-3. **"AI can do X now" viral format** — "AI can draw now" is a proven hook structure.
+1. **MCP has WON** — "Why MCP Won" articles trending (The New Stack, Dev.to). 12,770+ servers on PulseMCP. Use the number: "12,770 MCP servers, none draw" is the hook.
+2. **AI agents going mainstream** — "2026 is the year AI goes truly agentic" (Generect, Jan 2026). Any tool with "agent-native" positioning gets traction.
+3. **"AI can do X now" viral format** — "AI can draw now" is a proven hook structure. Has worked consistently.
 4. **Build-in-public boom** — transparent metrics posts consistently outperform polished marketing.
 5. **vibe coding / AI-generated UIs** — Skissify fits the "describe it to build it" trend.
+6. **NEW: Input tools vs output tools framing** — most MCP servers retrieve data; Skissify generates. This framing is fresh and not overused.
+7. **NEW: Determinism as a feature** — LLM image generation is unreliable for technical diagrams. "Doesn't hallucinate" is a compelling counter-claim vs DALL-E/Midjourney for floor plans.
 
 **Trend-reactive post idea:**
 If any AI agent news breaks this week (new Claude release, GPT update), post:

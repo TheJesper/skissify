@@ -162,6 +162,33 @@
 
 ---
 
+## Marketing Improvements (Cycle 7 — March 27, 04:41 CET)
+
+### Completed This Cycle
+- [x] ✅ Blog post #9 NEW: "MCP Has 12,000+ Servers. None of Them Draw." — punchy, data-backed post using the real stat (PulseMCP shows 12,770+ servers). Frames Skissify as the only visual OUTPUT tool in the MCP ecosystem. Best angle yet for HN comments and Bluesky virality. File: `docs/marketing/blog/mcp-has-12000-servers-none-of-them-draw.md`
+- [x] ✅ SOCIAL-MEDIA.md: Added **"12,770 MCP servers" viral hook tweet** — data-driven, specific, highest-contrast hook we have for the HN wave at 10:00 CET
+- [x] ✅ SOCIAL-MEDIA.md: Added **precision/determinism angle tweet** — counters image generator comparison ("Skissify doesn't hallucinate")
+- [x] ✅ SOCIAL-MEDIA.md: Added **complete Bluesky 4-post thread** — optimized for Bluesky's threading culture, includes a JSON snippet in post 3
+- [x] ✅ SOCIAL-MEDIA.md: Added **LinkedIn article hook for Day 2** with the 12,770 stat and "3 lessons from launch" framing
+- [x] ✅ SOCIAL-MEDIA.md: Added **r/homedesign soft-launch post** (Day 3) — human interest framing, avoids hard sell, shows actual AI-designed floor plan
+- [x] ✅ SOCIAL-MEDIA.md: Added **reactive tweet template** for if any MCP/AI news breaks today
+
+### Blog Post #9 — Key Stats to Embed
+- 12,770+ MCP servers on PulseMCP (confirmed via web research, March 2026)
+- LLM success rate: 88-92% for floor plans (200+ test generations)
+- Three reasons this timing is right: MCP critical mass, improved LLM spatial reasoning, agent-native developer appetite
+- "Input tools vs output tools" framing — most MCP servers retrieve; Skissify generates
+
+### Today's Most Powerful Hook (Use Before 10:00 CET)
+> "There are 12,770 MCP servers. None of them draw. Until today."
+
+This is Skissify's best differentiator, backed by a real number, framed as a gap being filled. Use in:
+- HN first comment (already in SOCIAL-MEDIA.md Show HN template)
+- Bluesky launch thread (just added)
+- Tweet for the 10:00 CET HN wave
+
+---
+
 ## Marketing Improvements (Cycle 6 — March 27, 03:35 CET)
 
 ### Completed This Cycle

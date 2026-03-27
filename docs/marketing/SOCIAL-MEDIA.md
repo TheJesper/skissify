@@ -1268,3 +1268,157 @@ Is there a design pattern from other JSON-first tools that I'm missing? The sche
 
 *Last Updated: March 27, 2026 (Cycle 6 — 03:35 CET)*  
 *Added: Launch Morning Emergency Protocol (03:35–07:00 CET), full PH maker comment ready to paste, HN Show HN post + first comment template, new blog post "The First Sketch Tool for AI Agents" in docs/marketing/blog/*
+
+---
+
+## NEW VIRAL HOOKS — CYCLE 7 (04:41 CET)
+
+### Tweet: "12,770 MCP Servers" Hook (HIGH PRIORITY — use for 10:00 CET HN wave)
+```
+There are 12,770 MCP servers.
+
+Slack. Notion. GitHub. Jira. Postgres. Weather. Email.
+
+None of them draw.
+
+Until today.
+
+Skissify: give AI agents a pen.
+JSON → hand-drawn sketch, via MCP.
+
+skissify.com
+
+[attach: floor plan GIF — JSON becomes a sketch]
+```
+
+### Tweet: The Precision Angle (A/B test vs main tweet)
+```
+Image generators hallucinate floor plans.
+"Put the door here" → door appears somewhere else.
+
+Skissify doesn't hallucinate.
+
+JSON in = exact sketch out.
+Every time. Deterministic. Correct.
+
+Because AI agents need precision, not vibes.
+
+skissify.com
+```
+
+### Bluesky Thread (4 posts — high engagement format)
+
+**Post 1:**
+```
+I just launched something.
+
+12,770 MCP servers exist. Slack. GitHub. Notion. All the data tools.
+
+None of them could draw.
+
+Skissify can. 🧵
+```
+
+**Post 2:**
+```
+AI agents are surprisingly good at spatial reasoning.
+
+Ask Claude to design a home office. You get room dimensions, furniture placement, natural light decisions.
+
+The problem: it comes out as text. You have to imagine it.
+
+Skissify turns that text-reasoning into an actual sketch.
+```
+
+**Post 3:**
+```
+The trick: JSON is the interface, not a canvas.
+
+{
+  "elements": [
+    { "type": "rect", "x": 50, "y": 50, "w": 300, "h": 200, "label": "Office" },
+    { "type": "window", "x": 50, "y": 100, "w": 80, "h": 20 },
+    { "type": "door-symbol", "x": 200, "y": 50, "w": 70, "h": 20 }
+  ]
+}
+
+→ Hand-drawn office sketch. Instantly.
+```
+
+**Post 4:**
+```
+Claude generates the JSON. Skissify renders it. You see the floor plan.
+
+No drag-and-drop. No human in the middle.
+
+Free at skissify.com
+MCP server: npm install -g @skissify/mcp-server
+
+#MCP #AIAgents #DevTools
+```
+
+---
+
+### LinkedIn Article Hook (Post Day 2 — March 28)
+**Headline:** Why AI Agents Need Their Own Sketch Tool (And Why None Existed Until Now)
+
+```
+There are 12,770+ MCP servers available today.
+
+Every major productivity tool has an AI connector. Slack, Notion, GitHub, Salesforce, Stripe — they all have MCP integrations. AI agents can read from them, write to them, update them.
+
+But they couldn't draw.
+
+I built Skissify to fix that.
+
+After launching today, here's what I learned about the gap between "AI can reason about space" and "AI can output a sketch":
+
+[3 lessons] [link to full post]
+
+#AIAgents #MCP #ProductLaunch #BuildInPublic #DeveloperTools
+```
+
+---
+
+### r/homedesign Soft-Launch Post (Day 3 — avoid hard selling)
+**Title:** I used AI to design a home office layout and got a hand-drawn floor plan — here's how
+
+```
+Last week I asked Claude to design a home office for a dual-monitor setup with a standing desk. 
+I expected a description. I got a hand-drawn floor plan.
+
+Here's the floor plan it generated: [image]
+
+It designed:
+- North-east orientation for morning light (I mentioned I prefer that)
+- 3.2m × 2.8m — snug but workable
+- Cable management corner by the power outlet wall
+- Separate reading nook with a chair, because I mentioned wanting to read away from the screen
+
+The tool behind it is Skissify, which I also built (full disclosure). 
+The point isn't to advertise — it's that AI-designed floor plans are actually useful now.
+
+Would you use this for home renovation planning? Curious what the community thinks.
+```
+
+---
+
+### Reactive Tweet Template (use if MCP/AI news breaks today)
+```
+[New AI thing] can now [impressive capability].
+
+But can it draw?
+
+With Skissify + MCP: yes.
+
+Ask Claude to sketch anything. It calls Skissify, returns a hand-drawn diagram in the chat.
+
+JSON → hand-drawn sketch. No drag-and-drop needed.
+
+skissify.com
+```
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 7 — 04:41 CET)*  
+*Added: "12,770 MCP servers" viral hook tweet, determinism/precision angle tweet, Bluesky 4-post thread, LinkedIn article hook, r/homedesign soft-launch post, reactive tweet template for AI news*
