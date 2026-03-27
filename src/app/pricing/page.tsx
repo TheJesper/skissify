@@ -21,7 +21,7 @@ export default function PricingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-950 px-6 py-16">
+    <div className="min-h-screen px-6 py-16" style={{ backgroundColor: "#fdf6e3" }}>
       <div className="max-w-2xl mx-auto text-center">
         <Link href="/" className="inline-flex items-center gap-2 mb-12">
           <svg
@@ -31,61 +31,61 @@ export default function PricingPage() {
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
-            className="text-blue-400"
+            className="text-[#268bd2]"
           >
             <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
           </svg>
-          <span className="text-xl font-bold text-white">
-            Skiss<span className="text-blue-400">ify</span>
+          <span className="text-xl font-bold text-[#073642]">
+            Skiss<span className="text-[#268bd2]">ify</span>
           </span>
         </Link>
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[#073642] mb-4">
           Choose your plan
         </h1>
-        <p className="text-neutral-400 mb-12">
+        <p className="text-[#657b83] mb-12">
           Start free. Upgrade for private sketches and more.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-8 text-left">
-            <h3 className="text-xl font-bold text-white mb-2">{PLANS.free.name}</h3>
-            <div className="text-3xl font-bold text-white mb-6">
-              $0<span className="text-sm font-normal text-neutral-500">/mo</span>
+          <div className="border border-[#93a1a1]/30 rounded-xl p-8 text-left" style={{ backgroundColor: "#eee8d5" }}>
+            <h3 className="text-xl font-bold text-[#073642] mb-2">{PLANS.free.name}</h3>
+            <div className="text-3xl font-bold text-[#073642] mb-6">
+              $0<span className="text-sm font-normal text-[#839496]">/mo</span>
             </div>
             <ul className="space-y-3 mb-8">
               {PLANS.free.features.map((f) => (
-                <li key={f} className="flex items-center gap-2 text-sm text-neutral-300">
-                  <span className="text-green-400">+</span> {f}
+                <li key={f} className="flex items-center gap-2 text-sm text-[#586e75]">
+                  <span className="text-[#859900]">+</span> {f}
                 </li>
               ))}
             </ul>
             <Link
-              href="/editor"
-              className="block text-center px-6 py-3 bg-neutral-800 hover:bg-neutral-700 text-white font-medium rounded-lg transition-colors"
+              href="/"
+              className="block text-center px-6 py-3 bg-[#93a1a1]/20 hover:bg-[#93a1a1]/30 text-[#073642] font-medium rounded-lg transition-colors"
             >
               Get started
             </Link>
           </div>
 
-          <div className="bg-neutral-900 border-2 border-blue-600 rounded-xl p-8 text-left relative">
-            <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-blue-600 text-white text-xs font-bold rounded-full">
+          <div className="border-2 border-[#268bd2] rounded-xl p-8 text-left relative" style={{ backgroundColor: "#eee8d5" }}>
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-[#268bd2] text-white text-xs font-bold rounded-full">
               POPULAR
             </span>
-            <h3 className="text-xl font-bold text-white mb-2">{PLANS.pro.name}</h3>
-            <div className="text-3xl font-bold text-white mb-6">
-              &euro;5<span className="text-sm font-normal text-neutral-500">/mo</span>
+            <h3 className="text-xl font-bold text-[#073642] mb-2">{PLANS.pro.name}</h3>
+            <div className="text-3xl font-bold text-[#073642] mb-6">
+              &euro;{PLANS.pro.price}<span className="text-sm font-normal text-[#839496]">/mo</span>
             </div>
             <ul className="space-y-3 mb-8">
               {PLANS.pro.features.map((f) => (
-                <li key={f} className="flex items-center gap-2 text-sm text-neutral-300">
-                  <span className="text-blue-400">+</span> {f}
+                <li key={f} className="flex items-center gap-2 text-sm text-[#586e75]">
+                  <span className="text-[#268bd2]">+</span> {f}
                 </li>
               ))}
             </ul>
             <button
               onClick={handleUpgrade}
-              className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition-colors"
+              className="w-full px-6 py-3 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white font-medium rounded-lg transition-colors"
             >
               Upgrade to Pro
             </button>

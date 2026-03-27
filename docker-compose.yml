@@ -5,10 +5,16 @@ services:
     restart: unless-stopped
     ports:
       - "9700:3000"
+    env_file: .env
     environment:
       - NODE_ENV=production
+    volumes:
+      - skissify-data:/app/data
     networks:
       - traefik-net
+
+volumes:
+  skissify-data:
 
 networks:
   traefik-net:

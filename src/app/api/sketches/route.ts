@@ -5,6 +5,22 @@ import { createSketchSchema, sanitizeSketchData } from "@/lib/validations";
 import { rateLimit } from "@/lib/rate-limit";
 import { generateSlug } from "@/lib/slug";
 
+// CORS preflight
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
+}
+
+function corsHeaders() {
+  return { "Access-Control-Allow-Origin": "*" };
+}
+
 // POST /api/sketches — save a sketch
 export async function POST(req: NextRequest) {
   const ip = req.headers.get("x-forwarded-for") ?? "anonymous";
@@ -45,7 +61,7 @@ export async function POST(req: NextRequest) {
     },
   });
 
-  return NextResponse.json({ slug: sketch.slug, id: sketch.id }, { status: 201 });
+  return NextResponse.json({ slug: sketch.slug, id: sketch.id }, { status: 201, headers: corsHeaders() });
 }
 
 // GET /api/sketches — list user's sketches (requires auth)
