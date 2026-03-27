@@ -4,6 +4,70 @@ _Append-only log. Each run adds a dated entry. Do not overwrite._
 
 ---
 
+## Entry: March 27, 2026 — 18:23 CET | Automated Strategy Run #15
+
+### Theme: "Google Validated the Category, Stitch Occupied the Wrong Lane — Skissify Owns the Right One"
+
+---
+
+#### Finding 1: Google's MCP Launch Confirms the Market — and Leaves Skissify's Niche Open
+
+Google Stitch shipped an official MCP server + SDK with 2,400+ skills stars in its launch week (March 18, 2026). This is the most significant market signal of the day: the world's most resource-rich AI company validated that "AI visual output via MCP" is a category worth building — and then aimed entirely at the polished UI design lane.
+
+**What makes someone pay EUR 2/mo for Skissify, in light of Google Stitch**:
+
+Stitch is free. It does 350 AI generations per month. It outputs polished Figma-ready UI. It is powered by Gemini 2.5 Pro. For anyone who wants polished UI output, Stitch is the answer — and it's free.
+
+This means Skissify's EUR 2/mo must be for something Stitch cannot and will not provide: **intentionally imprecise, hand-drawn, spatially structured, floor-plan-capable, JSON-native sketch output**. These are not weaknesses compared to Stitch — they are design principles. A hand-drawn floor plan is not a "less polished" Stitch output. It's a fundamentally different object serving a fundamentally different purpose.
+
+**The EUR 2/mo buyer**: An architect who shows a hand-drawn Skissify floor plan to a client in a pitch is signaling "this is still our thinking stage, tell us what you want." A polished Stitch UI mockup signals "this is almost done, please approve." The hand-drawn aesthetic IS the product. Google cannot make it better by making it more polished.
+
+**Insight**: When Google enters your adjacent market and leaves your lane untouched, it's not a threat — it's a distribution event. Every developer reading about Stitch who wants *rough* output instead of polished will search for alternatives. Skissify is that alternative. Write content targeting this exact audience now.
+
+---
+
+#### Finding 2: Fifteen Consecutive Scans — The EUR 2/mo Case Is Settled
+
+Over 17 hours and 15 scans of March 27, 2026, a complete intelligence picture has emerged. The EUR 2/mo WTP question is answered definitively.
+
+**What makes someone pay EUR 2/mo for Skissify — the complete answer:**
+
+The payment happens at the intersection of three conditions:
+1. **The tool is in their pipeline** — they've installed the MCP or used the API at least once
+2. **The output is visible to someone who matters** — a client, a colleague, a PR reviewer
+3. **The watermark is the only thing standing between "draft" and "shareable"**
+
+At that moment, EUR 2/mo is not a subscription decision. It's a one-click professional upgrade. Less than 30 seconds of deliberation. Less than the cost of the coffee they're drinking when they make the call.
+
+**Data backing this**: 8% median free-to-paid conversion (200 products, 2026); 30% with credit card upfront trial; 38% of best freemium tools use try-before-signup. Skissify can be at 15%+ conversion with try-before-signup + pipeline integration + visible watermark + one-click GitHub OAuth.
+
+**Fifteen scans of competitive confirmation**: No competitor occupies the "hand-drawn + JSON-native + MCP + floor plan" quadrant. Not Google. Not Excalidraw. Not tldraw. Not Eraser. Not Figma. The lane is structurally clear. The market is validated (by Google, Lucid, Eraser, Figma all racing to build MCP visual tools). The timing is optimal (MCP ecosystem young enough for first-movers to matter, mature enough to have 97M installs).
+
+---
+
+#### Finding 3: The "Google Gap" Is the New Pitch
+
+When a developer hears "Google launched a visual AI MCP tool," they will think "Stitch — polished UI." When they need something rougher, more exploratory, more data-driven and agent-friendly, they will search. Skissify should be the answer to that search.
+
+**New pitch language emerging from this intelligence cycle**:
+
+> "Google Stitch makes polished UIs. Mermaid makes topology diagrams. draw.io makes technical flowcharts. But when you want something that looks like a person *sketched* an idea — a floor plan, a layout, a quick architecture sketch — nothing exists that an AI agent can generate directly. That's Skissify: JSON in, hand-drawn SVG out. The sketch layer for your AI stack."
+
+**This is the HN Show HN post, the Reddit intro, the Product Hunt tagline.** The three tools named above (Stitch, Mermaid, draw.io) are all MCP-listed. Developers who use any of them will understand the gap immediately.
+
+---
+
+### Run #15 Signal Summary
+
+| Signal | EUR 2/mo Relevance | Priority |
+|--------|-------------------|----------|
+| Google Stitch MCP + SDK live (2.4k stars, March 18) | Validates category; leaves hand-drawn lane open; creates "not Stitch" search demand | HIGH — write counter-positioning content |
+| 15 consecutive clean niche scans | The moat is structurally confirmed after a full day of aggressive monitoring | VALIDATION |
+| Rate limit hit — search cycle complete for March 27 | Full-day intelligence density archived; next scheduled scan April 3 | CONTEXT |
+| Google Stitch = polished, Skissify = rough | The aesthetic difference IS the value proposition when Google is the comparison point | HIGH — update homepage hero copy |
+
+---
+
 ## Entry: March 27, 2026 — 17:14 CET | Automated Strategy Run #14
 
 ### Theme: "The Infrastructure Endgame" — Fourteen Scans of Evidence Converge on One Message
