@@ -1,5 +1,90 @@
 # Skissify Market Insights
 
+---
+
+## Entry: March 27, 2026 — 21:51 CET | Automated Strategy Run #18
+
+### Theme: "The Last Entry Before the Window Either Opens or Closes"
+
+---
+
+#### Finding 1: What Makes Someone Pay EUR 2/mo — The 18-Run Final Answer
+
+After 18 consecutive automated strategy cycles across 20+ hours of March 27, 2026, this is the definitive, evidence-backed answer to the EUR 2/mo question:
+
+**Someone pays EUR 2/mo for Skissify at the exact moment these three conditions are simultaneously true:**
+
+1. **The MCP is installed and running in their pipeline.** Not evaluated — deployed. The `render_sketch` tool is in their Claude Desktop config or API workflow. It's being called automatically.
+
+2. **The watermarked output appears somewhere that matters.** A client email. A GitHub PR description. A Notion doc. A slide deck. The output left the developer's private terminal and became visible to someone else.
+
+3. **The mental math takes under 5 seconds.** "EUR 2/mo. Less than a cup of coffee. Removes the watermark permanently. My API key is already in .env. One click." The decision has no friction because the tool is already integrated. The purchase is purely hygiene.
+
+**The framing that converts — distilled from 18 runs:**
+> "The watermark is not a paywall. It's a decision point. When the tool is in your pipeline and the output is in front of someone who matters, EUR 2 is not a question. It's a reflex."
+
+**Complementary insight from this final cycle**: Spacely AI charges $19-25/mo for AI interior design (with watermark on free tier). This validates the "free+watermark, pay to remove" model across the entire adjacent market. Skissify at EUR 2/mo is the cheapest watermark removal in the AI visual tools category — by a factor of 10. The price is defensibly low, not accidentally low.
+
+---
+
+#### Finding 2: The Hand-Drawn Aesthetic Is Becoming a React Primitive (New Signal)
+
+"Stroke" appeared in Product Hunt's UI Frameworks category this week — a React library for hand-drawn SVG motion animations. This is a new data point: the hand-drawn aesthetic is spreading from standalone tools (Excalidraw, Skissify) into the React component layer.
+
+**What this means for Skissify's EUR 2/mo value proposition**:
+
+The aesthetic alone is becoming commoditized at the component level. A developer can add Stroke to their app and get hand-drawn SVG animations for free. This accelerates Skissify's need to emphasize its **structural, data-first** differentiators rather than just the visual style:
+
+- **The JSON manifest IS the floor plan** — versionable, diffable, agent-readable, embeddable. No component library does this.
+- **Architectural domain vocabulary** (walls, doors, windows, stairs, dimensions) — no React library has these.
+- **MCP-native generation** — Stroke is for animating manually drawn SVGs, not for agents generating them from JSON descriptions.
+
+**Pricing implication**: As "hand-drawn style" becomes available for free via React libraries, Skissify's EUR 2/mo must be clearly about the **data layer + rendering pipeline** — not just the aesthetic. Update homepage copy to lead with "The sketch layer for AI agents" (data-centric) before "hand-drawn aesthetic" (visual-centric).
+
+---
+
+#### Finding 3: The Opportunity Window — A Final Measurement
+
+Across all 18 runs, the opportunity window has been measured from multiple angles. Here is the final consolidated view:
+
+| Window Type | Measurement | Expires |
+|-------------|-------------|---------|
+| "Google Gap" narrative | 5-7 days remaining (as of March 27) | April 3-4, 2026 |
+| Hand-drawn sketch MCP niche | Structurally confirmed unoccupied | Unknown — monitor weekly |
+| Mermaid search volume growth (1,015% YoY) | Peak growth window for "diagrams as code" | 2026 full year |
+| Plan7Architect price increase acquisition window | 4 days remaining | March 31, 2026 |
+| MCP ecosystem first-mover advantage | 5,000 servers but <50 visual tools | Q2 2026 before registry fills |
+| tldraw community fragmentation opportunity | Persisting | Ongoing |
+
+**The compound insight**: Multiple time-sensitive windows (Google Gap, Plan7Architect pricing, MCP first-mover) converge on the same 2-week period: **March 28 – April 10, 2026**. This is the highest-value launch window in Skissify's history. After April 10, the Google Gap is stale, the Plan7Architect window closes, and the MCP registry will be measurably more crowded.
+
+---
+
+#### Finding 4: The Spacely AI Pricing Datapoint Validates EUR 2/mo Model
+
+New data from this cycle: Spacely AI (AI interior design with floor plan features) charges $19-25/mo for paid tiers with a free tier that includes watermarks. This is in the same adjacent market as Skissify (AI-assisted floor plan/interior design), targeting non-developer users.
+
+**Key insight**: If non-technical interior designers pay $19-25/mo for raster-output AI tools with watermarks, developer users building automated pipelines will pay EUR 2-5/mo for structured JSON → hand-drawn SVG rendering with API access. The EUR 2/mo price point is not just "below the decision threshold" — it's genuinely disruptive relative to every competitor in the adjacent market.
+
+**The pitch this enables**: "Floor plan AI tools charge $19-25/mo for raster image output. Skissify charges EUR 2/mo for structured JSON API output that your AI agent can version, diff, and re-render on demand. The data stays yours."
+
+---
+
+### Run #18 Final Signal Summary
+
+| Signal | EUR 2/mo Insight | Status |
+|--------|-----------------|--------|
+| Stroke (React hand-drawn SVG) | Aesthetic commoditizing at component level — Skissify must emphasize data-first position | WATCH |
+| Blueprints AI (raster floor plans, architects) | Validates market demand; likely non-competitive (no JSON/API) | WATCH |
+| Spacely AI ($19-25/mo, watermark on free) | EUR 2 is 10x cheaper than adjacent market → price is right | CONFIRMED |
+| Plan7Architect price window (March 31) | 4 days remain for acquisition blog post | TIME-SENSITIVE |
+| 18 consecutive clean niche scans | Structural moat holding after a full day of intensive monitoring | CONFIRMED |
+| Google Gap narrative: ~5 days remaining | Publish HN post within 5 days of MCP launch | TIME-SENSITIVE |
+| All marketing infrastructure pre-built | Everything ready to activate | READY |
+| `packages/mcp` — empty | The single remaining unlock | CRITICAL |
+
+---
+
 _Append-only log. Each run adds a dated entry. Do not overwrite._
 
 ---

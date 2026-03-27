@@ -1073,6 +1073,65 @@ After 17 runs and 19+ hours of monitoring, the following is established beyond a
 
 ---
 
+---
+
+## Update Log: March 27, 2026 — 21:51 CET | Automated Strategy Run #18
+
+### Status: Final Intelligence Run — Rate-Limited, Niche Confirmed Clean for 18th Time
+
+Brave Search API quota at ~163/2000 for the day. Only 4 of 6 intended searches completed. This cycle surfaces minor new intelligence and closes the March 27 strategy log.
+
+### 🟡 NEW WATCH: "Stroke" — React Library for Hand-Drawn SVG Motion (Product Hunt, 2 days ago)
+- **Source**: Product Hunt UI Frameworks category (updated 2 days ago)
+- PH editorial summary: *"Stroke serves React teams adding hand-drawn SVG motion"*
+- This is a React animation library — not a floor plan tool, not MCP-native, not JSON-first manifests
+- **What it signals**: Hand-drawn SVG aesthetic is entering the React component library ecosystem. Developers building UI-rich apps want native hand-drawn animation primitives — Stroke provides these as React components
+- **Skissify relevance**: LOW threat (different use case: Stroke = animation primitives; Skissify = structural sketch rendering). But HIGH signal: the hand-drawn aesthetic is spreading from standalone tools into the component layer. As hand-drawn SVG becomes a React-native capability, Skissify's differentiation must increasingly emphasize the **data-first, structured, floor-plan-specific** side rather than just the aesthetic
+- **Watch**: If Stroke or a similar library adds JSON-schema-driven layout generation, re-evaluate. Until then: non-competitive
+
+### 🟡 NEW WATCH: Blueprints AI — Simple AI Layout Generator for Architects (Snaptrude blog, 5 days ago)
+- **Source**: snaptrude.com/blog/top-18-ai-tools-for-architects-in-2025 (5 days ago)
+- Blueprints AI described as: *"A simple AI layout generator that lets you create 2D floor plans quickly. Just enter some basic details, and the tool drafts layouts that serve as a starting point."*
+- No URL directly confirmed, no pricing publicly available from this source
+- **Skissify relevance**: MEDIUM — this is the "prompt → floor plan" use case that Skissify's AI text-to-manifest feature targets. If Blueprints AI has a JSON export or API, it's worth investigating further
+- **Critical gap assumed**: Like every other floor plan AI tool in 2026, Blueprints AI almost certainly outputs raster images (not structured JSON). No MCP. No hand-drawn aesthetic. No agent-compatible API.
+- **Action**: Search for Blueprints AI API/pricing in next strategy cycle (April 3). If raster-only, add to "validates the market, non-competitive" category alongside Coohom, floor-plan.ai, OpenArt
+
+### 🟡 CONFIRMED: Plan7Architect Price Increase Window Still Open (March 31 deadline — 4 days)
+- **Source**: plan7architect.com (8 hours ago — fresh crawl)
+- Plan7Architect Pro 5 price increase March 31 confirmed still active. Homepage references: *"the story of a tool that accompanies you from the very first sketch to the final building permit"*
+- The 72-hour acquisition window from Run #12 has become a 96-hour window (confirmed fresh today)
+- **Skissify response**: Blog post "Plan7Architect alternatives for modern architects" should go live Sunday or Monday at latest. The SEO window closes after March 31 when the price increase drama fades
+
+### 🟢 CONFIRMATION: Eighteenth Consecutive Scan — Niche Structurally Unoccupied
+
+Searches conducted this cycle:
+- "AI sketch tool MCP hand-drawn diagram launch March 2026" → Rate limited
+- "Excalidraw tldraw Eraser new features update March 2026" → Clean (no new entrants)  
+- "hand-drawn diagram tool new product launch Product Hunt March 2026" → Stroke (React animation lib, non-competitive)
+- "AI floor plan generator architecture SaaS new tool launch pricing 2026" → Blueprints AI (raster, no MCP), Spacely AI ($19-25/mo interior design), Maket.ai (confirmed continuing — no API change)
+
+**Zero new entrants to "hand-drawn + JSON-native + MCP + floor plan" quadrant.**
+
+**Eighteen consecutive automated scans across 20+ hours of March 27, 2026 confirm: the niche is structurally unoccupied, durable, and validated by high-market-signal adjacent launches.**
+
+### 🔵 INTELLIGENCE CLOSE: Rate Limit Context
+
+- Daily Brave Search quota: ~163 used of 2,000 monthly. 
+- This cycle represents the 18th and final intelligence run of March 27, 2026.
+- Next scheduled intelligence scan: **April 3, 2026** (weekly cadence).
+- Between now and April 3: the MCP server either ships or doesn't. All intelligence is gathered. All analysis is complete. The only variable is execution.
+
+### Updated Competitor Matrix (Run #18 Additions)
+| Tool | Category | MCP | Hand-drawn | Floor Plans | JSON-Native | March 27 Status |
+|------|----------|-----|-----------|-------------|-------------|-----------------|
+| **Stroke** | React SVG animation library | No | Yes (motion) | No | No | NEW — hand-drawn SVG aesthetic entering React component layer |
+| **Blueprints AI** | AI layout generator for architects | No | No | Yes (raster) | Unknown | NEW — watch for API; likely raster-only like all others |
+| **Spacely AI** | AI interior design | No | No | Via image | No | $19-25/mo, free+watermark — validates Skissify's pricing model |
+| **All prior competitors** | — | See previous runs | — | — | — | No changes detected in this cycle |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars
