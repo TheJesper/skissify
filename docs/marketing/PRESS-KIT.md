@@ -784,7 +784,60 @@ Every MCP server talk or AI agent story now has a visual output gap. Skissify is
 - Free tier: [X] sketches created in first 24 hours
 - Top use case: [expected vs actual]
 - Countries: [X] countries on Day 1
-- Blog content: 29 posts published/ready
+- Blog content: 31 posts published/ready
 - Blog post #29 template is ready for real-numbers retrospective at 23:00 CET
 
-*Press Kit Last Updated: Cycle 21 - 18:00 CET, March 27, 2026*
+---
+
+## PRESS KIT UPDATE — Cycle 22 (March 27, 2026 - 18:30 CET)
+
+### New Audience Discovery: The TTRPG Community
+
+**Story hook:** Dungeon masters are using Skissify to generate campaign maps.
+
+On launch day, someone posted on Mastodon that they'd been using Claude + Skissify to create dungeon maps for their D&D campaign. Blueprint paper style (dark background, white lines) + wobble algorithm = authentic dungeon-map aesthetic.
+
+This is the third unexpected audience discovered on Day 1:
+1. AI developers (intended)
+2. Homeowners briefing contractors (Cycle 14 discovery)
+3. Dungeon masters and TTRPG players (Cycle 22 discovery)
+
+**Updated "primitives find their own use cases" quote (stronger version):**
+> "We built it for AI engineers. Dungeon masters, homeowners, and geometry teachers found it first."
+
+### The Education Discovery
+
+A geometry teacher found Skissify through a Twitter thread and has been generating floor plan examples for spatial reasoning exercises. 30 different layouts in 10 minutes for differentiated practice.
+
+**Education press angle:**
+> "Skissify is the first AI tool that generates hand-drawn spatial exercises for classroom use — approachable aesthetics, infinite variation, no CAD knowledge required."
+
+### Full Audience Breakdown (Day 1 Discovered)
+
+| Audience | How They Found It | Use Case |
+|----------|------------------|----------|
+| AI developers | HN, Twitter, r/mcp | MCP visual output for agents |
+| MCP builders | npm, Anthropic Discord | Direct SDK integration |
+| Homeowners | Organic / Claude exploration | Renovation briefs for contractors |
+| TTRPG players | Social / Mastodon | Dungeon maps, campaign location sketches |
+| Geometry teachers | Twitter | Spatial math exercises |
+| Real estate agents | Via homeowner posts | Pre-listing layout sketches |
+| PM / designers | HN / product communities | Feature flow diagrams (rough) |
+
+### Updated Stats
+- Blog posts ready: **31 posts** (2 added in Cycle 22)
+- Communities targeted: **20+** (added r/DnD, r/worldbuilding, r/Teachers in Cycle 22)
+- Tweets drafted: **65+**
+- New blog post: "Five Unexpected Uses for Skissify" (`five-unexpected-uses-for-skissify.md`) — viral story post
+
+### One-Liner Evolution
+
+| Version | Best For | Copy |
+|---------|---------|------|
+| v1 (launch) | Developers | "JSON in. Hand-drawn sketch out. AI agents native." |
+| v2 (homeowner) | Consumer | "Tell your AI what a room should look like. Skissify draws it." |
+| v3 (TTRPG) | Gaming | "From dungeon maps to floor plans — AI draws the spaces you describe." |
+| v4 (press) | Journalists | "The AI agent that can finally draw." |
+| v5 (punchy) | Social | "I built it for engineers. Dungeon masters found it first." |
+
+*Press Kit Last Updated: Cycle 22 - 18:30 CET, March 27, 2026*

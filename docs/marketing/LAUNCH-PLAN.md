@@ -1159,3 +1159,98 @@ This is the narrative that gets picked up by tech journalists and indie hacker b
 
 *Last Updated: March 27, 2026 (Cycle 21 - 18:00 CET)*
 *Added: Tweets 53-60, Wobble Slider viral thread, r/LocalLLaMA post, r/ChatGPT post, Discord showcase post, LinkedIn evening post, PH end-of-day comment, Blog post #28 (viral Figma hooks), Blog post #29 (Day 1 retrospective template), Week 2 directory/newsletter pipeline, Primitives narrative framework*
+
+---
+
+## Marketing Improvements (Cycle 22 — March 27, 18:30 CET)
+
+### ? STATUS: FRIDAY EVENING PRIME — US WEST COAST PEAK (09:30 AM PT)
+
+### Completed This Cycle
+- [x] ? **Blog post #30 NEW**: "Five Unexpected Uses for Skissify" — viral story post covering TTRPG dungeon maps, homeowner renovation briefs, PM flow diagrams, classroom spatial math, and real estate pre-listing sketches. Strong Medium/Dev.to post; the dungeon map use case is a genuine surprise. File: `docs/marketing/blog/five-unexpected-uses-for-skissify.md`
+- [x] ? **Blog post #31 NEW**: "Skissify in the Classroom" — full education angle guide for teachers using AI-generated floor plans in geometry, design thinking, history, STEM/code, and creative writing classes. Targets r/Teachers, LinkedIn education audience, and Medium. Publish Week 2. File: `docs/marketing/blog/the-education-angle.md`
+- [x] ? **SOCIAL-MEDIA.md Cycle 22**: Added Tweets 61-65 (dungeon map hook, education hook, five-uses opener, engagement ask, LLM success rate benchmark), r/DnD post, r/worldbuilding post, r/Teachers post, Week 2 directory submission checklist (11 directories in priority order).
+- [x] ? **LAUNCH-PLAN.md Cycle 22 update**: New ideas below.
+
+### New Untapped Communities (Cycle 22)
+
+These communities haven't been touched across 21 previous cycles:
+
+| Community | Members | Skissify Angle | Priority |
+|-----------|---------|---------------|---------|
+| **r/DnD** | 7M+ | Dungeon map generation with blueprint style | ?? High |
+| **r/worldbuilding** | 1.5M+ | Location/building floor plan sketches for fantasy/sci-fi settings | ?? High |
+| **r/Teachers** | 350K+ | Spatial math + geometry exercises with AI-generated floor plans | ?? Medium |
+| **r/homeschooling** | 150K+ | Free educational tools, AI for learning | ?? Medium |
+| **r/tabletopgaming** | 300K+ | TTRPG maps, dungeon and location sketches | ?? Medium |
+| **r/architecture** | 200K+ | Early-stage sketch communication (per Cycle 19) | ?? Medium |
+| **r/gamedesign** | 100K+ | Level layout prototyping with AI | ?? Low |
+| **r/interiordesign** | 800K+ | Room planning with AI sketches | ?? Low |
+
+### New Content Angles (Cycle 22)
+
+**TTRPG/Gaming Angle**
+The dungeon map use case is potentially viral in gaming communities. Key insight: blueprint paper style + wobble = perfect dungeon map aesthetic. This is a case where an unintended use case creates a new market segment.
+
+**Education Angle**
+Completely untapped. 350K+ teachers in r/Teachers. LinkedIn educator audience. The "AI that generates differentiated practice problems as spatial exercises" hook is strong and non-promotional.
+
+**"Benchmark Friday" Angle**
+Tweet 65 (LLM success rates on spatial JSON generation) can spark technical discussion. Local LLM community (r/LocalLLaMA) cares deeply about this kind of benchmark data. Could attract the "which local model should I use?" crowd.
+
+### Week 2 New Ideas
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Dungeon map example gallery** | TTRPG communities drive massive organic traffic | Low | High |
+| **Education landing page** (skissify.com/for-teachers) | Teachers share with other teachers, strong viral coefficient | Medium | High |
+| **LLM benchmark page** | Attracts technical audience, SEO, drives debate | Medium | Medium |
+| **"Design your dream space" campaign** | Consumer hook that spreads on social media | Low | High |
+| **TTRPG tool directory submissions** | r/TTRPG, TTRPG.com, RPGGeek — niche but high-intent | Low | Medium |
+| **Element type expansion vote** | Tweet: "What element type should we add next?" — drives engagement | Zero | High |
+| **API playground page** | Interactive JSON → sketch demo in the browser, no account | Medium | High |
+
+### Key Quote (Cycle 22 — Use Everywhere)
+
+> "I built it for AI engineers. Dungeon masters, homeowners, and geometry teachers found it first."
+
+This version of the primitives narrative is more specific and more surprising than the Cycle 21 version. The dungeon master detail is unexpected enough to make people stop and share.
+
+### Blog Post Inventory (Full — 31 posts as of Cycle 22)
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1 | Why Hand-Drawn Beats Figma | why-hand-drawn-sketches-beat-figma.md | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | how-ai-agents-draw-floor-plans.md | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | skissify-vs-excalidraw.md | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | build-first-ai-floor-plan-15-minutes.md | Dev.to | Day 2 |
+| 5 | We Launched Today | we-launched-today-here-is-what-happened.md | Indie Hackers | Day 1 22:00 |
+| 6 | JSON Schema Behind Skissify | the-json-schema-behind-skissify.md | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | how-to-add-skissify-to-your-ai-agent-workflow.md | Dev.to, Hashnode | Day 7 |
+| 8 | First Sketch Tool for AI Agents | the-first-sketch-tool-for-ai-agents.md | HN direct, Dev.to | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | mcp-has-12000-servers-none-of-them-draw.md | Dev.to, Bluesky | Day 2 |
+| 10 | I Gave Claude a Pencil | i-gave-claude-a-pencil.md | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | launch-day-letter-to-ai-developers.md | Dev.to 12:00 | Day 1 |
+| 12 | Three-Layer Stack: Missing Visual Layer | mcp-a2a-three-layer-stack-visual-output.md | Dev.to, HN ref | Day 3 |
+| 13 | Vibe Drawing | vibe-drawing-the-ai-design-shift.md | Dev.to, Medium | Day 4 |
+| 14 | Real Estate Floor Plan Revolution | the-real-estate-ai-floor-plan-revolution.md | Medium, LinkedIn | Day 5 |
+| 15 | Launch Day Live Update Hour 4 | launch-day-live-update-hour-4.md | Dev.to | Day 1 13:00 |
+| 16 | The Visual Feedback Loop | ai-agent-visual-feedback-loop.md | Dev.to, Medium | Day 6 |
+| 17 | The Floor Plan That Surprised Me | the-floor-plan-that-surprised-me.md | Substack, Medium | Day 2-3 |
+| 18 | Skissify for Non-Developers | skissify-for-non-developers-complete-guide.md | Medium, r/HomeImprovement | Day 3-4 |
+| 19 | Why Your AI Agent Needs Visual Output | why-your-ai-agent-needs-visual-output-now.md | Dev.to, HN ref | Day 2 |
+| 20 | The Weekend Project | the-weekend-project-that-taught-me-about-ai-visual-output.md | Indie Hackers, Medium | Day 2-3 |
+| 21 | Skissify vs Google Stitch | skissify-vs-google-stitch-different-jobs.md | Dev.to, Medium | Day 4 |
+| 22 | The End of Text-Only AI Output | the-end-of-text-only-ai-output.md | Dev.to, HN | Day 3 |
+| 23 | Vibe Coding Is Dead, Vibe Drawing Is Next | vibe-coding-is-dead-vibe-drawing-is-next.md | Medium, Dev.to | Day 1-2 |
+| 24 | The Napkin Phase AI Was Missing | the-napkin-phase-ai-was-missing.md | Substack, Medium | Day 2-3 |
+| 25 | What Happened in the First 16 Hours | what-happened-in-the-first-16-hours.md | Dev.to, IH | Day 1 |
+| 26 | Developer Built for Devs, Homeowners Used It | developer-accidentally-built-for-homeowners.md | Medium, Substack | Day 2 |
+| 27 | Friday Evening: What Comes After Launch Day | evening-push-friday-what-comes-next.md | Dev.to, Substack | Day 1 |
+| 28 | Why Hand-Drawn Beats Figma (Viral) | why-hand-drawn-sketches-beat-figma-viral.md | Twitter thread, LinkedIn | Day 2 |
+| 29 | Day One Retrospective — Real Numbers | day-one-retrospective-real-numbers.md | IH, Dev.to | Day 1 23:00 |
+| 30 | **Five Unexpected Uses for Skissify** | **five-unexpected-uses-for-skissify.md** | **Medium, Dev.to** | **Day 1-2** |
+| 31 | **Skissify in the Classroom** | **the-education-angle.md** | **Medium, LinkedIn, r/Teachers** | **Week 2** |
+
+*Last Updated: March 27, 2026 (Cycle 22 — 18:30 CET)*
+*Added: Blog posts #30-31 (five unexpected uses, classroom education angle), new untapped communities table (TTRPG, worldbuilding, teachers), Week 2 new ideas table, updated full 31-post blog inventory*

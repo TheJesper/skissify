@@ -2,6 +2,108 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #15 (18:23 CET, Friday March 27)
+
+### Priority Context (Run #15 — End-of-day Friday, final scan of March 27)
+- **15 consecutive niche-clean scans** over 17 hours — the structural moat is confirmed beyond any doubt
+- **Google Stitch MCP + SDK live** (2,400+ skills stars, March 18) — Google validated the visual MCP category and left Skissify's hand-drawn lane completely untouched
+- **"The Google Gap" is now the pitch**: Stitch = polished UI, Mermaid = topology, draw.io = technical. Skissify = the only hand-drawn sketch MCP for spatial/floor-plan/agent output
+- **All docs pre-loaded**: tutorials drafted, SEO targets identified, MCP directories listed, copy library exists — the only remaining unlock is shipping `@skissify/mcp` to npm
+- **Delay cost**: ~400 users/week (Smartsheet benchmark at 10% of Skissify's TAM)
+
+---
+
+### ✅ Saturday Action 1: Use "The Google Gap" as Your Launch Narrative — Write It While It's Timely (45 minutes)
+
+**Why Saturday specifically**: Google Stitch's MCP launch (March 18) is in the news NOW. The "Google built visual MCP and left the sketch lane open" narrative has a shelf life of approximately 2–3 weeks before it becomes stale. Tomorrow (Saturday March 28) is the perfect window to write the counter-positioning piece that rides this wave.
+
+**The post to write** (save to `docs/marketing/blog/google-gap-post.md`):
+
+**Title option A (Twitter/X thread)**: "Google launched a visual design MCP tool. They made polished UIs. Nobody made the hand-drawn sketch version. So I did."
+
+**Title option B (HN Show HN)**: "Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP that Google Stitch isn't."
+
+**Title option C (DEV Community)**: "Google Stitch, Figma MCP, Mermaid MCP — and the visual MCP nobody built: hand-drawn floor plans from AI agents"
+
+**Core argument**: Three MCPs cover: polished UI (Stitch), topology diagrams (Mermaid), technical drawings (draw.io). Zero MCPs produce hand-drawn sketches from structured JSON. Especially not floor plans with architectural elements. Skissify is that missing layer.
+
+**Why this converts to EUR 2/mo**: The post reaches developers already in the "what MCP tools exist for visual output?" research phase. When they find Skissify, they're pre-qualified. The EUR 2/mo decision happens when they try it and get a watermarked output they want to share.
+
+**Success metric**: Any HN upvotes, r/ClaudeAI replies, or Twitter shares that include "didn't know about this" = winning.
+
+---
+
+### ✅ Saturday Action 2: Ship `@skissify/mcp` v0.1 to npm — This Is The Day (4–6 hours — CRITICAL)
+
+**Why Saturday is the day**: This action has appeared in every strategy cycle since 01:11 CET (17 hours of recommendations). The Google Stitch launch (2,400 stars in one week) proves that a well-packaged MCP tool can get immediate viral adoption. The window where "hand-drawn sketch MCP" is unclaimed is **this weekend**.
+
+**Minimum viable MCP v0.1** (do NOT over-engineer):
+```typescript
+// packages/mcp/src/index.ts
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+  name: "skissify",
+  version: "0.1.0",
+  description: "Hand-drawn SVG sketches from JSON manifests. Floor plans, diagrams, wireframes. The sketch layer for AI agents."
+});
+
+server.tool(
+  "render_sketch",
+  "Render a Skissify JSON manifest as a hand-drawn SVG sketch. Supports floor plans with walls, doors, windows, stairs, dimensions. Returns SVG string.",
+  { manifest: z.object({}).passthrough() },
+  async ({ manifest }) => {
+    const svg = await renderManifest(manifest, { watermark: true });
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**Post-ship mechanical work (30 minutes)**:
+- Submit to `modelcontextprotocol.io/registry`
+- PR to `awesome-mcp-servers` GitHub (Diagrams/Visual section)
+- Submit to `mcpservers.org`, `claudefa.st`, `mcpmanager.ai`
+- Post to r/ClaudeAI: "Just shipped the first hand-drawn sketch MCP — floor plans, architecture diagrams, napkin sketches from JSON"
+
+**Success metric**: `npx @skissify/mcp` installs and runs. Claude Desktop shows `render_sketch` in tool list. One floor plan generated via Claude prompt. Screenshot it — that screenshot is your launch GIF.
+
+---
+
+### ✅ Saturday Action 3: Write the "Google Gap" Positioning in Homepage Copy (30 minutes — CONVERSION)
+
+**Why Saturday**: If the MCP server ships Saturday, developers landing on skissify.com for the first time will see the homepage. The Google Stitch launch creates a fresh cultural reference point — "not Stitch" is now a meaningful positioning statement that developers will immediately understand.
+
+**Copy change to make** (update wherever the hero section lives — app source or `docs/marketing/COPY-LIBRARY.md`):
+
+**Before** (assumed generic): "Skissify — JSON to hand-drawn sketches"
+
+**After** (specific, timely):
+> Hero: "The sketch layer for your AI stack"
+> Sub: "Google Stitch makes polished UIs. Mermaid makes flowcharts. Skissify makes hand-drawn sketches — floor plans, architecture diagrams, napkin ideas. JSON in, SVG out. MCP-native."
+> CTA: "Try it free — no signup required"
+
+**Why "no signup required" is the CTA**: 38% of best freemium products let users try before signing up. The watermark creates the conversion moment; the gate at the door creates churn. Remove the gate. Keep the watermark.
+
+**Time**: 30 minutes. Zero code required if updating COPY-LIBRARY.md as the canonical copy source.
+
+---
+
+### Completion Log (to be updated after Saturday)
+- [ ] "Google Gap" post written (docs/marketing/blog/google-gap-post.md): ___
+- [ ] MCP v0.1 live on npm (`@skissify/mcp`): ___
+- [ ] Submitted to 4+ MCP directories: ___
+- [ ] Homepage copy updated with "Google Gap" narrative: ___
+- [ ] Screenshot of first Claude-generated sketch via MCP: ___
+
+
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #14 (17:14 CET, Friday March 27)
 
 ### Priority Context (Run #14 — End-of-day Friday intelligence summary)

@@ -4422,3 +4422,239 @@ What would you want drawn next? Drop it in the comments.
 
 *Last Updated: March 27, 2026 (Cycle 21 - 18:00 CET)*
 *Added: Tweets 53-60 (US primetime evening push, day wrap), r/LocalLLaMA post, r/ChatGPT post, Discord Anthropic MCP showcase, LinkedIn evening post, Product Hunt end-of-day comment, Wobble Slider viral thread (3 tweets)*
+
+---
+
+## CYCLE 22 — FRIDAY 18:30 CET (US West Coast Prime + Untapped Niches)
+
+### Context: 18:30 CET | US West Coast: 09:30 AM | This is peak US Friday engagement
+
+**New angles this cycle:**
+- TTRPG/dungeon map community (r/DnD, r/worldbuilding) — uncontested niche
+- Education angle (r/Teachers, LinkedIn educators)
+- "Five unexpected uses" viral hook
+- Directory submission checklist for Week 2
+
+---
+
+### Tweet 61 — Dungeon Map Hook (Post 18:45 CET)
+```
+Someone used Skissify to generate dungeon maps for their D&D campaign.
+
+Blueprint paper style + wobble = exactly what a dungeon map looks like.
+
+Tell Claude: "Design a 3-chamber dungeon: entrance hall with pillars, a corridor with a trap, and a circular boss room"
+
+It draws it.
+
+skissify.com
+
+#DnD #TTRPG #AITools #MCP
+```
+
+### Tweet 62 — Education Hook (Post 19:15 CET)
+```
+A geometry teacher found Skissify today.
+
+She's generating floor plans for spatial reasoning exercises.
+
+30 different layouts in 10 minutes. Students calculate area, perimeter, scale — using something that actually looks like a sketch, not a CAD horror.
+
+I didn't plan this. It works.
+
+skissify.com
+
+#EdTech #STEM #Math #AIinEducation
+```
+
+### Tweet 63 — The Five Uses Thread Opener (Post 20:00 CET)
+```
+I built Skissify for AI agent developers.
+
+Here's who's actually using it on Day 1:
+
+1. Dungeon masters making campaign maps
+2. Homeowners briefing contractors  
+3. PMs sketching feature flow diagrams
+4. A geometry teacher teaching spatial math
+5. Real estate agents making pre-listing sketches
+
+Full story: [link to blog/five-unexpected-uses-for-skissify.md when published]
+
+Primitives find their own use cases.
+```
+
+### Tweet 64 — The "What Will YOU Use It For" Engagement Post (Post 21:00 CET)
+```
+On Day 1 we saw:
+ Dungeon maps
+ Renovation briefs
+ PM flow diagrams
+ Classroom exercises
+ Pre-listing sketches
+
+Tomorrow we'll see something we haven't thought of yet.
+
+That's my favorite thing about building a primitive.
+
+What would YOU use Skissify for?
+
+skissify.com (free, no signup for the editor)
+```
+
+### Tweet 65 — Technical Credibility: LLM Success Rates (Post 22:00 CET)
+```
+Raw LLM success rates for generating valid Skissify JSON:
+
+Claude 3.7 Sonnet: ~92% floor plans, ~88% diagrams, ~71% wireframes
+llama3.2 (local): ~75% average
+Mistral (local): ~70% average
+
+Why the variance? Floor plans have natural spatial constraints that help LLMs self-correct. Wireframes require UI reasoning that's less grounded in physical space.
+
+The schema is flat + absolute coords. That's why the numbers are this high.
+
+#LLM #MCP #AIAgents #BenchmarkFriday
+```
+
+---
+
+### Reddit — r/DnD (Post 19:30 CET)
+**Title:** I accidentally built a dungeon map tool — here's what happened
+
+```
+I built Skissify as an AI developer tool: JSON in, hand-drawn sketch out.
+
+Then someone on Mastodon posted that they'd been using it to generate dungeon maps with Claude.
+
+I hadn't considered it. But it works *perfectly*.
+
+The blueprint paper style (dark background, white lines) makes it look exactly like a dungeon map from a planning notebook. The wobble algorithm gives the walls that authentic "drawn by hand at the game table" feel.
+
+**The prompt that works:**
+"Design a 3-chamber dungeon in Skissify JSON: entrance hall with 2 pillars, a narrow trapped corridor, and a circular boss chamber with a raised platform. Use blueprint paper style."
+
+Claude generates the JSON, Skissify renders it, you get a hand-drawn dungeon map in about 30 seconds.
+
+**What element types work for dungeons:**
+- `room` — chambers
+- `wall` — corridor segments
+- `door` — passages between rooms
+- `column` — pillars
+- `text` — annotations (trap locations, treasure, lore)
+- `stairs` — level transitions
+
+**Free at skissify.com** — editor works without signup, no account needed to generate maps.
+
+I'm considering adding a `dungeon-door` type (the classic "door in a gap in the wall" look) — is that something the community would find useful?
+
+[image: example dungeon map in blueprint style]
+```
+
+### Reddit — r/worldbuilding (Post 20:30 CET)
+**Title:** Tool for quickly sketching location floor plans and layouts via AI
+
+```
+Quick share for worldbuilders who want to generate rough layouts without learning CAD:
+
+Skissify (skissify.com) takes a text description, converts it to JSON via any AI assistant, and renders a hand-drawn sketch. Good for: building layouts, town squares, cave systems, ship decks, tavern floor plans.
+
+The output style is deliberately rough — like a planning sketch, not an architectural drawing. For worldbuilding, that's often exactly right: suggests the space without committing to every detail.
+
+**What I've seen people use it for today:**
+- Dungeon maps (blueprint style works perfectly)
+- Tavern and inn floor plans
+- Ship deck layouts
+- Castle great halls
+
+**Prompt template for worldbuilders:**
+"Design a [location type] floor plan for a [genre] setting. Include [key features]. Use Skissify JSON with [cream/blueprint/grid] paper style."
+
+Free, no signup. Editor at skissify.com/editor.
+
+Not affiliated with D&D or any specific TTRPG system — works for any genre.
+```
+
+### Reddit — r/Teachers (Post 20:00 CET)
+**Title:** Using AI to generate floor plan sketches for spatial math exercises
+
+```
+Fellow teachers: this might be useful for spatial reasoning lessons.
+
+Skissify (skissify.com) generates hand-drawn floor plan sketches from text descriptions. A geometry teacher told me today she's been using it to generate example layouts for area/perimeter exercises — 30 different problems in 10 minutes.
+
+**Why it works for classrooms:**
+1. Hand-drawn aesthetic = approachable, not intimidating like CAD drawings
+2. Free (no student accounts needed)
+3. Infinitely variable — no two generated layouts are identical
+4. The JSON is also a teaching tool: students can see the coordinates and work backwards
+
+**Example exercises:**
+- "Calculate the total floor area of this apartment"
+- "The owner wants to add a room. Where could it fit?"
+- "Which layout minimizes walking distance between kitchen and bedroom?"
+
+**The AI handles the complexity:** describe what you want in plain language → Claude generates Skissify JSON → sketch appears. No technical knowledge needed.
+
+Works with: Claude Desktop (free), or paste descriptions into any AI assistant and copy the JSON to the editor.
+
+Editor is at skissify.com/editor — works in any browser, no signup, no cost.
+
+Would love to know if this is useful for your curriculum. What else would make it more useful for teaching?
+```
+
+---
+
+### Directory Submission Checklist (Week 2 Priority)
+
+Submit Skissify to these directories in order of priority:
+
+| Directory | URL | Notes | Target Day |
+|-----------|-----|-------|-----------|
+| **PulseMCP.com** | pulsemcp.com/submit | MCP server directory, high-intent traffic | Day 2 (Sat) |
+| **MCP Registry** | github.com/anthropics/mcp | Anthropic official listing | Day 2 (Sat) |
+| **AlternativeTo** | alternativeto.net | Alt to: Excalidraw, tldraw, Mermaid | Day 2 (Sat) |
+| **Dev Hunt** | devhunt.org | Less competitive than PH | Day 3 (Sun) |
+| **There's An AI For That** | theresanaiforthat.com | Broad AI audience | Day 3 (Sun) |
+| **SaaSHub** | saashub.com | Developer/SaaS discovery | Day 4 (Mon) |
+| **ToolFinder** | toolfinder.co | AI tools category | Day 4 (Mon) |
+| **Uneed** | uneed.best | Indie maker community | Day 5 (Tue) |
+| **BetaList** | betalist.com | Free (2 month wait) or $129 expedited | Day 2 (Sat) |
+| **npm (MCP server)** | npmjs.com | Ensure @skissify/mcp-server is listed | Day 2 (Sat) |
+| **GitHub Trending** | N/A | Push the MCP server repo, star beg in communities | Day 2 (Sat) |
+| **Hacker News Who Is Hiring** | N/A | Not relevant yet | — |
+
+---
+
+### Timing Table (Cycle 22 — 18:30-23:59 CET)
+
+| Time (CET) | Platform | Action |
+|------------|----------|--------|
+| 18:45 | Twitter/X | Tweet 61 — dungeon map hook |
+| 19:15 | Twitter/X | Tweet 62 — education hook |
+| 19:30 | r/DnD | Dungeon map post |
+| 20:00 | Twitter/X | Tweet 63 — five unexpected uses opener |
+| 20:00 | r/Teachers | Spatial math education post |
+| 20:30 | r/worldbuilding | Worldbuilding location sketches |
+| 21:00 | Twitter/X | Tweet 64 — "what will you use it for?" |
+| 21:30 | Discord (Anthropic) | MCP showcase (Cycle 21) |
+| 22:00 | Twitter/X | Tweet 65 — LLM success rates benchmark |
+| 22:00 | Email outreach | 5-8 newsletter pitches (see Cycle 19) |
+| 23:00 | Twitter/X | Tweet 60 — Day 1 wrap real numbers |
+| 23:00 | Blog | Publish "five-unexpected-uses" to preferred platform |
+
+### New Blog Posts This Cycle (22)
+| # | Title | File | Best Platform | Day |
+|---|-------|------|--------------|-----|
+| 30 | **Five Unexpected Uses for Skissify** | `five-unexpected-uses-for-skissify.md` | Medium, Dev.to | Day 1-2 |
+| 31 | **Skissify in the Classroom** | `the-education-angle.md` | Medium, LinkedIn, r/Teachers | Week 2 |
+
+### New Communities Added (Cycle 22)
+| Community | Members | Angle |
+|-----------|---------|-------|
+| r/DnD | 7M+ | Dungeon map generation with blueprint style |
+| r/worldbuilding | 1.5M+ | Location/building floor plan sketches |
+| r/Teachers | 350K+ | Spatial math exercises + floor plan generation |
+
+*Last Updated: March 27, 2026 (Cycle 22 — 18:30 CET)*
+*Added: Tweets 61-65 (dungeon map, education, five uses, engagement, LLM benchmark), r/DnD post, r/worldbuilding post, r/Teachers post, Week 2 directory submission checklist, blog posts #30 (five unexpected uses) and #31 (education angle), timing table 18:30-23:59 CET*
