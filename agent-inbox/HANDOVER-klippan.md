@@ -1,43 +1,184 @@
-# Handover: klippan session → skissify
+# Session Handover: Skissify rebuild — 4 tasks, do them IN ORDER:
 
-**Date:** 2026-03-27
-**Session:** klippan (coding)
+TASK 1: EDITOR AS LANDING PAGE
+- Move editor to be the root page (/ route). Delete the marketing landing page.
+- Add a small dismissable welcome toast/overlay (not a full landing page) explaining what Skissify is
+- Toast should be dismissable with X or swipe, stored in localStorage so it only shows once
 
-## Changes Made
+TASK 2: SOLARIZED THEME OVERHAUL
+- Replace ALL dark/black theme colors with the POC Solarized palette:
+  base3:#fdf6e3, base2:#eee8d5, base1:#93a1a1, base0:#839496,
+  base00:#657b83, base01:#586e75, base02:#073642, base03:#002b36,
+  yellow:#b58900, orange:#cb4b16, red:#dc322f, magenta:#d33682,
+  violet:#6c71c4, blue:#268bd2, cyan:#2aa198, green:#859900
+- Background should be warm sand/beige (base3/base2), NOT black/dark
+- Accent colors from the Solarized brights (blue, cyan, green, magenta)
+- Must look FUN and UNIQUE, not like every other dark-mode tool
+- Update layout.tsx, globals.css, all components
 
-### 1. Welcome toast localStorage persistence (`src/app/page.tsx`)
-- Toast now checks `localStorage.getItem("skissify-welcome-dismissed")` on init
-- Both X dismiss and 8s auto-timeout save `"skissify-welcome-dismissed"` to localStorage
-- Toast only shows once per browser
+TASK 3: FIX DOOR RENDERING IN renderer.ts
+- door-symbol arc angles are WRONG compared to POC (initial-poc-and-sketch/sketchpaper.jsx lines 234-244)
+- POC right swing horizontal: angle = -(i/10)*PI/2 (0 to -PI/2), points at [x+w+cos(a)*w, y+sin(a)*w]
+- Production WRONGLY uses: angle = -PI/2 + (i/11)*(PI/2) — reversed direction!
+- POC left swing horizontal: angle = PI+(i/10)*PI/2 
+- Production WRONGLY uses: angle = -PI + (i/11)*(PI/2)
+- POC vertical wall: single formula angle = -(i/10)*PI/2+PI/2, points at [x+sin(a)*w, y+w+cos(a)*w]
+- Production splits into right/left with wrong formulas
+- FIX: Match the POC exactly. Use 10 segments not 11. Copy the POC logic character by character.
+- Also check door-slide against POC lines 246-257
 
-### 2. door-slide renderer fix (`src/lib/renderer.ts`)
-- Fixed door-slide rendering to match POC (`initial-poc-and-sketch/sketchpaper.jsx` lines 246-257)
-- POC draws two panel rectangles (outlined): left panel full-rect + right panel inset-rect (with 1px inset)
-- Production was incorrectly drawing centerlines instead of panel outlines
-- Both horizontal and vertical wall variants fixed
+TASK 4: VERIFY WITH DEV SERVER
+- Run npm run dev and verify it builds without errors
+- Check that the editor loads at /
+- Check that the theme is warm/light solarized
 
-### 3. Toolbar Solarized cleanup (`src/components/Toolbar.tsx`)
-- `bg-green-700` → `#859900` (Solarized green) for toast notification
-- `bg-neutral-800` → `#073642` (Solarized base02) for share dialog input fields (3 occurrences)
+REFERENCE FILES:
+- POC (NEVER modify): initial-poc-and-sketch/sketchpaper.jsx
+- Renderer: src/lib/renderer.ts (door fix here)
+- Layout: src/app/layout.tsx
+- Editor page: src/app/editor/page.tsx (move to page.tsx root)
+- Root page: src/app/page.tsx (replace with editor)
+- Globals: src/app/globals.css
 
-## What Works
-- Build passes clean (no errors)
-- Editor loads at `/` route
-- Solarized theme applied to all editor components
-- door-symbol rendering already correct (matched POC)
-- door-slide rendering now matches POC
+**Session:** klippan · **Type:** coding · **Mode:** continuous-feedback
+**Date:** 2026-03-27 · **Duration:** unknown
+**Agents:** SK skissify
+**Outcome:** —
 
-### 4. UserMenu Solarized (`src/components/UserMenu.tsx`)
-- Replaced all neutral-* Tailwind classes and text-white with Solarized inline styles
-- Loading state, sign-in button, avatar, dropdown all use Solarized palette
-- "New Sketch" link updated to point to `/` instead of `/editor`
+## Decisions & Key Points
 
-### 5. Canvas selection colors (`src/components/Canvas.tsx`)
-- Selection box: `#3b82f6` → `#268bd2` (Solarized blue)
-- Rotation indicator: `#f59e0b` → `#b58900` (Solarized yellow)
-- Resize handles: `#ffffff` → `#fdf6e3` (Solarized base3), stroke `#3b82f6` → `#268bd2`
+- **[REVIEW]** SK: REVIEW summary:
 
-## What Doesn't Work Yet / Known Gaps
-- Secondary pages (gallery, pricing, create, for-agents, dashboard, auth) still use dark theme colors — separate from editor scope
-- `src/app/editor/page.tsx` still exists as a duplicate editor page — works fine but could be simplified to a redirect
-- MiniCanvasDemo.tsx and HeroSketchAnimation.tsx have non-Solarized colors but are only used in marketing pages, not the editor
+Changes made:
+1. Welcome toast: Added localStorage persistence � only shows once per browser. Dismissing via X or auto-timeout (8s) both save to localStorage.
+2. door-slide renderer: …
+- **[DONE]** SK: DONE
+
+DELIVERABLES:
+- [fix] Welcome toast localStorage persistence in src/app/page.tsx � only shows once per browser
+- [fix] door-slide renderer in src/lib/renderer.ts � matches POC panel outlines exa…
+
+## Per-Agent Summary
+
+### SK skissify
+
+- [HANDSHAKE] Skissify dev agent. Skills: Next.js, React, Canvas rendering, CSS/Tailwind. Task received: 4 tasks in order � (1) editor as landing page with welcome …
+- [PROGRESS] PROGRESS: Assessed codebase state. Tasks 1-3 were partially done in commit 928f41b. Remaining fixes: (1) Welcome toast now uses localStorage so it onl…
+- [REVIEW] REVIEW summary:
+
+Changes made:
+1. Welcome toast: Added localStorage persistence � only shows once per browser. Dismissing via X or auto-timeout (8s) b…
+- [DONE] DONE
+
+DELIVERABLES:
+- [fix] Welcome toast localStorage persistence in src/app/page.tsx � only shows once per browser
+- [fix] door-slide renderer in sr…
+- [PROGRESS] PROGRESS: Additional Solarized fixes applied. UserMenu.tsx fully converted (neutral-* ? Solarized, text-white ? #fdf6e3). Canvas.tsx selection/resize …
+
+## Chat Log (5 messages)
+
+| # | Agent | Tag | Message |
+|---|-------|-----|---------|
+| 1 | SK | HANDSHAKE | Skissify dev agent. Skills: Next.js, React, Canvas rendering, CSS/Tailwind. Task… |
+| 2 | SK | PROGRESS | PROGRESS: Assessed codebase state. Tasks 1-3 were partially done in commit 928f4… |
+| 3 | SK | REVIEW | REVIEW summary:  Changes made: 1. Welcome toast: Added localStorage persistence … |
+| 4 | SK | DONE | DONE  DELIVERABLES: - [fix] Welcome toast localStorage persistence in src/app/pa… |
+| 5 | SK | PROGRESS | PROGRESS: Additional Solarized fixes applied. UserMenu.tsx fully converted (neut… |
+
+---
+
+*Auto-generated by TeamRoom · session klippan*
+
+
+---
+
+# Session Handover: Skissify rebuild — 4 tasks, do them IN ORDER:
+
+TASK 1: EDITOR AS LANDING PAGE
+- Move editor to be the root page (/ route). Delete the marketing landing page.
+- Add a small dismissable welcome toast/overlay (not a full landing page) explaining what Skissify is
+- Toast should be dismissable with X or swipe, stored in localStorage so it only shows once
+
+TASK 2: SOLARIZED THEME OVERHAUL
+- Replace ALL dark/black theme colors with the POC Solarized palette:
+  base3:#fdf6e3, base2:#eee8d5, base1:#93a1a1, base0:#839496,
+  base00:#657b83, base01:#586e75, base02:#073642, base03:#002b36,
+  yellow:#b58900, orange:#cb4b16, red:#dc322f, magenta:#d33682,
+  violet:#6c71c4, blue:#268bd2, cyan:#2aa198, green:#859900
+- Background should be warm sand/beige (base3/base2), NOT black/dark
+- Accent colors from the Solarized brights (blue, cyan, green, magenta)
+- Must look FUN and UNIQUE, not like every other dark-mode tool
+- Update layout.tsx, globals.css, all components
+
+TASK 3: FIX DOOR RENDERING IN renderer.ts
+- door-symbol arc angles are WRONG compared to POC (initial-poc-and-sketch/sketchpaper.jsx lines 234-244)
+- POC right swing horizontal: angle = -(i/10)*PI/2 (0 to -PI/2), points at [x+w+cos(a)*w, y+sin(a)*w]
+- Production WRONGLY uses: angle = -PI/2 + (i/11)*(PI/2) — reversed direction!
+- POC left swing horizontal: angle = PI+(i/10)*PI/2 
+- Production WRONGLY uses: angle = -PI + (i/11)*(PI/2)
+- POC vertical wall: single formula angle = -(i/10)*PI/2+PI/2, points at [x+sin(a)*w, y+w+cos(a)*w]
+- Production splits into right/left with wrong formulas
+- FIX: Match the POC exactly. Use 10 segments not 11. Copy the POC logic character by character.
+- Also check door-slide against POC lines 246-257
+
+TASK 4: VERIFY WITH DEV SERVER
+- Run npm run dev and verify it builds without errors
+- Check that the editor loads at /
+- Check that the theme is warm/light solarized
+
+REFERENCE FILES:
+- POC (NEVER modify): initial-poc-and-sketch/sketchpaper.jsx
+- Renderer: src/lib/renderer.ts (door fix here)
+- Layout: src/app/layout.tsx
+- Editor page: src/app/editor/page.tsx (move to page.tsx root)
+- Root page: src/app/page.tsx (replace with editor)
+- Globals: src/app/globals.css
+
+**Session:** klippan · **Type:** coding · **Mode:** continuous-feedback
+**Date:** 2026-03-27 · **Duration:** unknown
+**Agents:** SK skissify
+**Outcome:** —
+
+## Decisions & Key Points
+
+- **[REVIEW]** SK: REVIEW summary:
+
+Changes made:
+1. Welcome toast: Added localStorage persistence � only shows once per browser. Dismissing via X or auto-timeout (8s) both save to localStorage.
+2. door-slide renderer: …
+- **[DONE]** SK: DONE
+
+DELIVERABLES:
+- [fix] Welcome toast localStorage persistence in src/app/page.tsx � only shows once per browser
+- [fix] door-slide renderer in src/lib/renderer.ts � matches POC panel outlines exa…
+
+## Per-Agent Summary
+
+### SK skissify
+
+- [HANDSHAKE] Skissify dev agent. Skills: Next.js, React, Canvas rendering, CSS/Tailwind. Task received: 4 tasks in order � (1) editor as landing page with welcome …
+- [PROGRESS] PROGRESS: Assessed codebase state. Tasks 1-3 were partially done in commit 928f41b. Remaining fixes: (1) Welcome toast now uses localStorage so it onl…
+- [REVIEW] REVIEW summary:
+
+Changes made:
+1. Welcome toast: Added localStorage persistence � only shows once per browser. Dismissing via X or auto-timeout (8s) b…
+- [DONE] DONE
+
+DELIVERABLES:
+- [fix] Welcome toast localStorage persistence in src/app/page.tsx � only shows once per browser
+- [fix] door-slide renderer in sr…
+- [PROGRESS] PROGRESS: Additional Solarized fixes applied. UserMenu.tsx fully converted (neutral-* ? Solarized, text-white ? #fdf6e3). Canvas.tsx selection/resize …
+
+## Chat Log (5 messages)
+
+| # | Agent | Tag | Message |
+|---|-------|-----|---------|
+| 1 | SK | HANDSHAKE | Skissify dev agent. Skills: Next.js, React, Canvas rendering, CSS/Tailwind. Task… |
+| 2 | SK | PROGRESS | PROGRESS: Assessed codebase state. Tasks 1-3 were partially done in commit 928f4… |
+| 3 | SK | REVIEW | REVIEW summary:  Changes made: 1. Welcome toast: Added localStorage persistence … |
+| 4 | SK | DONE | DONE  DELIVERABLES: - [fix] Welcome toast localStorage persistence in src/app/pa… |
+| 5 | SK | PROGRESS | PROGRESS: Additional Solarized fixes applied. UserMenu.tsx fully converted (neut… |
+
+---
+
+*Auto-generated by TeamRoom · session klippan*

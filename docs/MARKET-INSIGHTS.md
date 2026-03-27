@@ -930,3 +930,66 @@ Snaptrude's growing adoption among professional architects (BIM, 3D, full-stack 
 | draw-it-mcp (free, freehand) | Confirms Skissify must position as structured/reproducible, not freehand | MEDIUM — messaging clarity needed |
 | Snaptrude architect B2B traction | Architecture firms = Team tier (EUR 12/user) opportunity | MEDIUM — case study play post-launch |
 | 12 consecutive clean niche scans | Moat is holding; window for clean launch is still open | VALIDATION |
+
+---
+
+## Entry: March 27, 2026 — 16:05 CET | Automated Strategy Run #13
+
+### Theme: "Infrastructure Pricing Psychology" — When EUR 2/mo Isn't a Subscription, It's a Line Item
+
+---
+
+#### Finding 1: The 5,000-Server Milestone Changes EUR 2/mo Psychology
+
+As of this cycle, MCP has crossed 5,000 servers and is now governed by the Linux Foundation under the Agentic AI Foundation (AAIF). This changes how developers think about their MCP stack costs.
+
+When there were 500 MCP servers, developers evaluated each tool individually. At 5,000 servers, developers think about their MCP stack as *infrastructure* — just like npm packages, API keys, or hosting costs. Monthly developer infrastructure spend has normalized at $20–60/month for stack add-ons (Resend, Neon, Upstash, Trigger.dev etc. — each $0–20/mo).
+
+**EUR 2/mo Skissify fits exactly in this mental model**: it's not a "SaaS subscription decision" — it's a `npm install` + credit card on file. The purchase decision is made once, silently, when the developer adds it to their MCP config. No procurement approval, no ROI calculation, no comparison shopping. Just: "does this do the thing I need?" → yes → pay.
+
+**Actionable framing**: Skissify's pricing page should say "Add to your stack for EUR 2/mo" not "Subscribe to Skissify Pro." Language matters — "add to stack" is infrastructure language. Infrastructure spend doesn't get cut at the end of the quarter; it sits in `.env` files for years.
+
+---
+
+#### Finding 2: The "No Sketch Tool in Daily Stacks" Gap — Organic Insertion Opportunity
+
+An active Reddit thread (r/ClaudeAI, "MCP servers I use every single day," 5 days ago, ongoing) shows zero sketch/diagram/drawing tools in developer daily-driver stacks. Top daily MCPs: filesystem, GitHub, memory, web search, code runners. Visual output is completely absent.
+
+This is a behavioral gap, not a preference gap. Developers don't use sketch MCPs because **the right one doesn't exist yet**. The moment a sketch MCP produces genuinely useful hand-drawn architectural output, it will be adopted into daily stacks organically — the community is primed.
+
+**EUR 2/mo WTP insight**: Developers in this thread are clearly power users (running 5+ MCPs simultaneously). They've already decided "MCP tools are worth paying for." The conversion from "tried Skissify MCP" to "paid EUR 2/mo to remove watermark" is not a value decision for these users — it's a friction-removal purchase. At EUR 2/mo, the question is not "is this worth it?" The question is "is signing up with a credit card annoying enough that I'll just live with the watermark?" Stripe's one-click saved payment addresses this. Consider: offer a free trial activated by GitHub OAuth (no credit card) → 14-day trial → EUR 2/mo ask. Lower the watermark-removal ask to one click post-trial.
+
+---
+
+#### Finding 3: Uizard's Direction Confirms Skissify's Positioning is Correct — Different Vectors, Same Aesthetic
+
+Uizard's "Autodesigner 2.0" is described in multiple fresh 2026 roundups as: "transforms text prompts or hand-drawn sketches into editable, multi-screen mockups." Uizard's direction: human-drawn sketch → polished digital output. Skissify's direction: structured JSON → beautiful hand-drawn output.
+
+These are the two poles of the hand-drawn sketch value chain:
+- **Uizard pole**: Human creates rough, AI polishes it (sketch → clean)
+- **Skissify pole**: AI creates structured data, Skissify sketches it (clean → hand-drawn)
+
+The fact that Uizard has funding, users, and ongoing press coverage *validates the market* for hand-drawn aesthetics in developer/design workflows. The fact that it serves the opposite vector *confirms Skissify's differentiation*.
+
+**EUR 2/mo WTP insight for this segment**: Uizard charges $10–$20/mo for their Pro tier. Developers and architects who want the *output* direction (agent-generated JSON → hand-drawn sketch) will pay at least EUR 5/mo for a cleaner, API-first version of this value. EUR 2/mo is the entry ramp; EUR 5/mo is where serious users end up.
+
+---
+
+#### Finding 4: MCP Curation Directories Are the New App Store — Skissify Must Submit at Launch
+
+Two new curated "best MCP servers" directories launched this week (claudefa.st, mcpmanager.ai). Both are Google-indexed, actively maintained, and targeting Claude Code users specifically. Neither lists any sketch/visual output tool. The top 50 popular MCPs are generic business tools (Slack, Zapier, HubSpot, Google Workspace).
+
+**Distribution math**: If a curated MCP directory has 10,000 monthly visitors and converts 5% to tool signups, getting listed = 500 qualified developer leads per month at zero cost. Getting listed on 5 directories = 2,500 leads/month. At 8% paid conversion = 200 paid users/month at EUR 2–5/mo = EUR 400–1,000 MRR from directory distribution alone, compounding indefinitely.
+
+**Action**: Create a launch checklist item: "Submit to mcpservers.org, claudefa.st, mcpmanager.ai, awesome-mcp-servers, LobeHub, modelcontextprotocol.io on day 1." This is mechanical work, not creative work. Do it immediately after shipping the MCP server.
+
+---
+
+#### Signal Table for Run #13
+| Signal | EUR 2/mo Insight | Priority |
+|--------|-----------------|----------|
+| MCP: 5,000 servers, Linux Foundation | Skissify is infrastructure spend, not subscription spend | HIGH — reframe pricing copy |
+| r/ClaudeAI daily stack = no sketch tools | First-mover slot completely open in power-user community | HIGH — target for launch post |
+| Uizard coverage = opposite vector, same aesthetic | Market validated; Skissify differentiation confirmed | MEDIUM — update positioning docs |
+| MCP curation directories active (claudefa.st, mcpmanager.ai) | Day-1 directory submission = passive lead gen at scale | HIGH — add to launch checklist |
+| 13 consecutive clean niche scans | The window is still open; urgency is quantifiable in weeks, not months | VALIDATION |
