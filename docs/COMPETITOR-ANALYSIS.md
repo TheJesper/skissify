@@ -437,6 +437,43 @@ The sketch/diagram market in 2026 is fragmenting into three lanes: (1) open-sour
 
 ---
 
+## Update Log: March 27, 2026 — 04:04 CET | Automated Strategy Run #4
+
+### 🟡 SIGNAL: ExcaliDash Launches — Self-Hosted Excalidraw with Real Multiplayer (March 24, 2026)
+- **URL**: https://www.blog.brightcoding.dev/2026/03/04/excalidash-the-revolutionary-self-hosted-excalidraw-dashboard
+- A community project, "ExcaliDash", launched a self-hosted Excalidraw dashboard with Socket.IO-based true multiplayer editing — users see each other's cursors, changes propagate in milliseconds, described as "deep integration" not a hacky overlay
+- This closes one of Excalidraw's documented weaknesses: collaboration requiring Excalidraw+ cloud. Self-hosters can now run multiplayer Excalidraw at zero cost
+- **Impact on Skissify**: Low. ExcaliDash improves Excalidraw's human collaboration story. It does NOT touch programmatic generation, JSON-first architecture, MCP server, or floor-plan elements — Skissify's entire value stack
+- **Watch**: If ExcaliDash gains wide adoption (>1k GitHub stars), it confirms "self-hosted sketch with collab" is a strong pull — and Skissify should develop its own self-hosted story for teams
+
+### 🔴 THREAT SIGNAL: Excalidraw + GitHub Copilot MCP = Developer Workflow Integration (March 24, 2026)
+- **URL**: https://thomasthornton.cloud/creating-diagrams-with-an-excalidraw-agent-skill-and-excalidraw-mcp/
+- Thomas Thornton (cloud/DevOps community blogger) published a detailed guide showing GitHub Copilot via VS Code + Excalidraw MCP → natural language → live Excalidraw canvas
+- Key quote: *"You stay in the editor, describe the system in natural language, and GitHub Copilot can start building the picture on a live Excalidraw canvas while you are still thinking it through."*
+- Key insight from the piece: **"Moving diagramming back into the workflow matters more than making it faster"** — Excalidraw MCP is getting developer adoption because it lives where code lives
+- This means Excalidraw's MCP server is now being actively evangelized in developer communities — not just listed
+- **Impact on Skissify**: MEDIUM-HIGH. Excalidraw is winning the "architecture diagrams in VS Code" workflow. Skissify must ship MCP server AND write a similar developer workflow tutorial targeting the same use case — but with hand-drawn aesthetics and floor plan DNA as differentiators
+- **Skissify response**: Write "How to generate hand-drawn floor plans from Claude in VS Code" as a direct content play against this workflow. This is the tutorial that claims the floor plan MCP niche before someone else does.
+
+### 🟢 CONTEXT: MCP Ecosystem Map Confirms 97M Downloads + Multi-Protocol Era
+- **URL**: https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp
+- Published 1 week ago — confirms MCP at 97M downloads and describes A2A (Agent-to-Agent), ACP, and UCP protocols alongside MCP
+- MCP is the standard for "tool use" but A2A is emerging for agent orchestration — multi-agent pipelines
+- **Skissify implication**: The future state is AI agents calling other AI agents, which call tools like Skissify. Being MCP-compliant today means Skissify is accessible from future multi-agent pipelines automatically. Ship the MCP server while MCP is THE standard, before protocol fragmentation makes multi-protocol support necessary.
+
+### 🔵 CONTEXT: SaaS Micro-Niche Pricing — $49-199/mo for High-Pain Workflows
+- **URL**: https://bigideasdb.com/micro-saas-ideas-2026 (2 weeks ago)
+- Data from 238K+ real user complaints: tools targeting 5-10 hours/week of manual work command **$49-199/month** willingness to pay
+- For tools with lower but regular friction (like watermarked outputs), the impulse zone is confirmed at sub-$10/mo
+- **Skissify implication**: The EUR 2/mo "API Starter" tier is psychologically correct for removing a recurring friction (watermarked renders). But pipeline-critical use cases (architecture firm generating floor plans for every client pitch) map to EUR 20-50/mo territory. Prioritize the upper tiers in outreach, lower tier for self-serve conversion.
+
+### Updated Competitor Matrix Addition: ExcaliDash (Community Project)
+| Tool | MCP Server | Self-hosted Collab | Hand-drawn | Floor Plans | Programmatic JSON | Cost |
+|------|-----------|-------------------|-----------|-------------|-------------------|------|
+| **ExcaliDash** | Via Excalidraw MCP | **Yes (Socket.IO, new)** | Yes | No | No | Free (OSS) |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

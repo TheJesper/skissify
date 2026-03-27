@@ -258,3 +258,82 @@ This is the exact PLG → enterprise funnel. No direct sales required. The MCP s
 | EUR 2/mo = watermark removal + professional signal | High | Frame consistently: not a feature tier, a professional upgrade |
 
 ---
+
+## Entry: March 27, 2026 — 04:04 CET | Automated Strategy Run #4
+
+### Theme: Developer Workflow Integration Is the Conversion Trigger — Not Features
+
+---
+
+#### Finding 1: The "Workflow Integration" Insight Is the Real Conversion Model
+
+New signal this cycle: a detailed tutorial showing GitHub Copilot + Excalidraw MCP went live (thomasthornton.cloud, March 24, 2026). The author's core insight: *"Moving diagramming back into the workflow matters more than making it faster."*
+
+**What makes someone pay EUR 2/mo for Skissify — the workflow integration answer:**
+
+The purchase happens when Skissify is INSIDE a working pipeline, not when someone evaluates it standalone. Sequence:
+1. Developer has Claude/Copilot generating architecture/floor plan JSON (common workflow in 2026)
+2. The output is useful but not shareable — it's raw JSON or a watermarked SVG
+3. The developer pastes their agent's JSON into Skissify, sees a beautiful hand-drawn sketch in seconds
+4. They embed Skissify into the pipeline. Now it's automatic.
+5. Two weeks later: "I should just remove the watermark. EUR 2. Done."
+
+**The EUR 2/mo payment is not a purchase decision. It's a workflow hygiene action.**
+
+Actionable implication: build the MCP server so the pipeline is a single tool call, not a manual copy-paste step. The moment Skissify is automated in a pipeline, watermark removal becomes a no-brainer.
+
+---
+
+#### Finding 2: ExcaliDash's Self-Hosted Multiplayer Success = Team Opportunity
+
+ExcaliDash (Socket.IO-based self-hosted Excalidraw multiplayer, March 2026) confirms: teams want collaborative sketch tools they can self-host.
+
+**For Skissify**: A self-hosted team edition (Docker image, EUR 99/mo or EUR 999/year flat rate) is a validated B2B motion. No per-seat billing. For architecture firms, law firms, or IP-sensitive startups — this is an enterprise offering Excalidraw can't match (their collab is cloud-only via Excalidraw+ at $6-7/user/mo).
+
+---
+
+#### Finding 3: Tutorial-First Growth Is Proven and Required
+
+Excalidraw's MCP is winning developer mindshare because advocates write workflow integration tutorials. The tutorial IS the distribution channel.
+
+**Skissify's priority tutorial topics** (ordered by SEO/discovery value):
+1. "Generate hand-drawn floor plans from Claude in VS Code" — direct counter to the Excalidraw Copilot tutorial
+2. "How to add Skissify to your Claude Code workflow"
+3. "Text-to-floor-plan with any LLM: the Skissify pipeline" — cites arxiv paper
+4. "Napkin AI API alternative for developers"
+5. "Hand-drawn architecture diagrams with GitHub Copilot"
+
+Each tutorial ends with: "This workflow works with the free tier. Remove the watermark at EUR 2/mo."
+
+---
+
+#### Finding 4: SaaS Pricing Data Confirms Tier Architecture Is Psychologically Correct
+
+bigideasdb.com (March 2026, 238K+ real complaints analyzed):
+- Low-pain friction (watermarked output): sub-$5/mo impulse territory ✓
+- Medium pain (5-10 hrs/week manual): $49-199/mo ✓
+- Critical business process: $200+/mo negotiated
+
+Skissify's tiers map correctly. What's missing is the PIPELINE that creates the pain. The MCP server creates the pipeline. No MCP server = no pain = no conversion.
+
+---
+
+#### Finding 5: A2A Protocol Emergence — Skissify as Visual Primitive in Multi-Agent Pipelines
+
+The AI protocol ecosystem map (digitalapplied.com, March 2026, 1 week old) shows MCP + A2A + ACP + UCP as the emerging multi-agent stack. MCP handles tool calls; A2A handles agent orchestration.
+
+**Positioning opportunity**: "Skissify is the visual rendering primitive for multi-agent pipelines." In future A2A orchestrations, any sub-agent can call Skissify via MCP to generate a visual. Being MCP-compliant today means automatic compatibility with A2A pipelines as they mature.
+
+---
+
+### Summary Signals This Cycle
+
+| Signal | Urgency | Action |
+|--------|---------|--------|
+| Excalidraw MCP being actively evangelized in VS Code/Copilot workflows | HIGH | Write competing tutorial: hand-drawn floor plans from Claude in VS Code |
+| ExcaliDash multiplayer confirms self-hosted team demand | MEDIUM | Plan EUR 99/mo self-hosted team tier for roadmap |
+| Workflow integration = EUR 2/mo conversion trigger, not features | CRITICAL | MCP server → pipeline integration → watermark removal impulse buy |
+| SaaS pricing data confirms tier structure | LOW | No change needed — validate with real users post-launch |
+| A2A protocol emergence | LOW now → HIGH Q3 2026 | Ensure MCP architecture compatible with future A2A orchestrators |
+
+---

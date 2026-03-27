@@ -222,3 +222,80 @@ _Actionable items proposed by the automated strategy advisor. Append-only._
 - Confirm MCP server development progress — if still zero lines of code, escalate to critical blocker
 
 ---
+
+## 2026-03-27 (Friday) — Cycle Run 04:04 CET
+
+### Context This Cycle
+- ExcaliDash (self-hosted Excalidraw multiplayer, Socket.IO) launched — confirms self-hosted team demand
+- Thomas Thornton blog post (March 24) showing GitHub Copilot + Excalidraw MCP = live canvas from natural language — Excalidraw MCP is being actively evangelized
+- MCP ecosystem described as multi-protocol (MCP + A2A + ACP) — early MCP tooling leads into future multi-agent pipelines
+- SaaS micro-niche data: $49-199/mo WTP for high-pain workflows; sub-$5 impulse for friction removal
+- Conversion insight: EUR 2/mo happens after pipeline integration, not before. Workflow = conversion trigger.
+
+---
+
+### ✅ Action 1: Write the Counter-Tutorial — "Hand-Drawn Floor Plans from Claude in VS Code"
+
+**Why today**: Thomas Thornton's "Creating Diagrams with Excalidraw MCP" (thomasthornton.cloud) is 3 days old and gaining traction in developer communities. It's the #1 content piece for "Excalidraw MCP" right now. Skissify needs a direct content counterpart in the same format, targeting the same developer audience, showing hand-drawn floor plan output that Excalidraw MCP cannot produce.
+
+**Concrete steps**:
+1. Draft in `docs/marketing/blog/vs-code-floor-plans-tutorial.md`
+2. Structure:
+   - Problem: "Diagramming leaves the editor — so it never gets done"
+   - Setup: Claude Desktop + Skissify MCP server config (2 lines of JSON)
+   - Demo: Natural language → JSON manifest → rendered hand-drawn floor plan
+   - Why Skissify vs Excalidraw: floor plan elements (walls, doors, windows), hand-drawn aesthetic, EUR 2/mo not $6-7/mo
+   - Call to action: free tier link
+3. Include a screenshot or GIF slot: `[SCREENSHOT: VS Code + Claude panel + Skissify sketch output]`
+4. Target SEO keywords: "excalidraw mcp alternative", "claude floor plan diagram", "hand-drawn architecture diagram AI"
+
+**Target**: Draft written today (45-60 min). Publish when MCP server ships.
+
+**Why this matters**: The Excalidraw tutorial is the current benchmark. Skissify's tutorial needs to exist NOW — even as a draft — so it's ready to publish the same day the MCP server goes live. First-to-publish after MCP launch wins the SEO position.
+
+---
+
+### ✅ Action 2: Document the Self-Hosted Team Tier in Business Plan
+
+**Why today**: ExcaliDash's traction (self-hosted Excalidraw multiplayer gaining attention) validates demand for self-hosted collaborative sketch tools. Skissify's rendering engine running locally is a natural fit for architecture firms and IP-sensitive clients. A flat-rate EUR 99/mo self-hosted tier is significantly more compelling than Excalidraw+ ($6-7/user/mo) and Miro ($20/user/mo) for small teams.
+
+**Concrete steps**:
+1. Open `docs/BUSINESS-PLAN.md`, add "Self-Hosted Team" row to the Tier Structure table:
+   - **Self-Hosted Team — EUR 99/mo**: Docker image, unlimited users, local MCP server, private deployment, email support
+2. Add to the Revenue Streams section under "Enterprise licenses": "Self-Hosted Team tier (EUR 99/mo flat) — Docker image for teams where data must stay on-premise. Target: architecture firms, legal, finance."
+3. Update the 10,000 Users scenario to include 3 self-hosted team subscriptions (~EUR 300/mo additional MRR at that scale)
+
+**Target**: 20 minutes. Text edits only — no product work required today.
+
+**Why this matters**: ExcaliDash validated the demand. Skissify should have the tier documented before the first architecture firm or law firm asks about it. Better to have an answer ready than lose the deal to "we don't have a self-hosted option."
+
+---
+
+### ✅ Action 3: Audit: What Is the MCP Server's Current Status?
+
+**Why today**: This is the fourth consecutive strategy cycle recommending the same action: ship the MCP server. The window is NOW. Excalidraw's MCP is being evangelized in VS Code. Lucid has an advanced MCP. Eraser has MCP + Agent Skills. The "hand-drawn sketch MCP" niche is unclaimed but only briefly.
+
+**Concrete steps**:
+1. Check if `packages/mcp/` or similar directory exists in `W:/code/skissify/`
+2. If no MCP code exists at all:
+   - Create `W:/code/skissify/mcp/index.ts` with the minimal skeleton: one MCP server, one tool (`render_sketch`), accepts JSON manifest, returns SVG string — nothing else
+   - This can be done in under 2 hours with the existing rendering engine
+3. If partial code exists:
+   - Identify the single blocking issue preventing a v0.1 release
+   - Write it down in `docs/MCP-REGISTRY-PLAN.md` as a tracked blocker
+4. Set a deadline: **MCP server published to npm by April 3, 2026.** If that deadline is missed, the "hand-drawn sketch MCP" slot will have more competition.
+
+**Target**: 30 minutes audit + decision. Real work can be this weekend.
+
+**Why this matters**: Every action in these cycles flows from the MCP server not yet existing. Without it, there's no pipeline to embed Skissify in. Without the pipeline, there's no EUR 2/mo impulse buy. Without the EUR 2 buy, there's no conversion ladder to EUR 5 and EUR 20. The MCP server is the entire conversion machine.
+
+---
+
+### Notes for Next Cycle
+- Report MCP server status: does `W:/code/skissify/mcp/` exist? Any working code?
+- Check if VS Code tutorial draft was started
+- Verify Self-Hosted Team tier was added to BUSINESS-PLAN.md
+- Monitor for new Excalidraw MCP tutorials — track where the developer community is congregating around this topic
+- Check Napkin AI pricing page directly for API availability update
+
+---
