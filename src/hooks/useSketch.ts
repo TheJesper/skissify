@@ -271,6 +271,39 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setRedrawKey((k) => k + 1);
   }, []);
 
+  /** Replace the entire sketch with imported data (e.g., from a JSON file) */
+  const importSketch = useCallback((data: SketchData) => {
+    const withSeed = { ...data, sessionSeed: newSessionSeed() };
+    setSketch(withSeed);
+    setActivePreset("");
+    jsonRef.current = JSON.stringify(withSeed, null, 2);
+    setSelectedElements(new Set());
+    pushHistory(withSeed);
+    setRedrawKey((k) => k + 1);
+  }, [pushHistory]);
+
+  /** Clear canvas and start blank */
+  const newSketch = useCallback(() => {
+    const blank: SketchData = {
+      paper: "cream",
+      tool: "ballpoint",
+      inkColor: "#111111",
+      amplitude: 0.5,
+      waves: 0.5,
+      humanness: 0.5,
+      width: 900,
+      height: 650,
+      sessionSeed: newSessionSeed(),
+      elements: [],
+    };
+    setSketch(blank);
+    setActivePreset("");
+    jsonRef.current = JSON.stringify(blank, null, 2);
+    setSelectedElements(new Set());
+    pushHistory(blank);
+    setRedrawKey((k) => k + 1);
+  }, [pushHistory]);
+
   const undo = useCallback(() => {
     if (historyIndexRef.current <= 0) return;
     historyIndexRef.current--;
@@ -318,6 +351,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     pasteElements,
     rotateSelected,
     redraw,
+    importSketch,
+    newSketch,
     updateSketch,
     undo,
     redo,

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import UserMenu from "./UserMenu";
@@ -12,6 +12,8 @@ interface ToolbarProps {
   onPrint: () => void;
   onDownload?: () => void;
   onDownloadSVG?: () => void;
+  onImportJSON?: (data: SketchData) => void;
+  onNewSketch?: () => void;
   onSave?: () => Promise<string | null>;
   onUndo?: () => void;
   onRedo?: () => void;
@@ -28,6 +30,8 @@ export default function Toolbar({
   onPrint,
   onDownload,
   onDownloadSVG,
+  onImportJSON,
+  onNewSketch,
   onSave,
   onUndo,
   onRedo,
@@ -45,6 +49,8 @@ export default function Toolbar({
   const [showShareDialog, setShowShareDialog] = useState(false);
   const [showProModal, setShowProModal] = useState(false);
   const [showShortcuts, setShowShortcuts] = useState(false);
+  const [showNewConfirm, setShowNewConfirm] = useState(false);
+  const importInputRef = useRef<HTMLInputElement>(null);
 
   const showToast = useCallback((msg: string) => {
     setToast(msg);
@@ -83,6 +89,51 @@ export default function Toolbar({
   const handleMakePrivate = useCallback(() => {
     setShowProModal(true);
   }, []);
+
+  const handleImportClick = useCallback(() => {
+    importInputRef.current?.click();
+  }, []);
+
+  const handleImportFile = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files?.[0];
+      if (!file || !onImportJSON) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        try {
+          const text = ev.target?.result as string;
+          const data = JSON.parse(text) as SketchData;
+          if (!data || !Array.isArray(data.elements)) {
+            showToast("Invalid JSON — missing elements array");
+            return;
+          }
+          onImportJSON(data);
+          showToast("Sketch imported ✓");
+        } catch {
+          showToast("Failed to parse JSON file");
+        }
+        // Reset input so same file can be re-imported
+        if (importInputRef.current) importInputRef.current.value = "";
+      };
+      reader.readAsText(file);
+    },
+    [onImportJSON, showToast]
+  );
+
+  const handleExportJSON = useCallback(() => {
+    if (!sketch) return;
+    const json = JSON.stringify(sketch, null, 2);
+    const blob = new Blob([json], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    const filename = sketchSlug
+      ? `skissify-${sketchSlug}.json`
+      : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.json`;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [sketch, sketchSlug]);
 
   // Global keyboard shortcut: ? opens shortcuts panel
   useEffect(() => {
@@ -207,6 +258,23 @@ export default function Toolbar({
 
       {/* Right actions */}
       <div className="flex items-center gap-1.5 md:gap-2">
+        {/* New Sketch */}
+        {onNewSketch && (
+          <button
+            onClick={() => setShowNewConfirm(true)}
+            className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded text-xs font-medium transition-colors"
+            title="Start a new blank sketch"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="12" y1="18" x2="12" y2="12"/>
+              <line x1="9" y1="15" x2="15" y2="15"/>
+            </svg>
+            New
+          </button>
+        )}
+
         {/* Share Link (URL-encoded) -- always available */}
         {sketch && (
           <button
@@ -255,6 +323,45 @@ export default function Toolbar({
             </svg>
             SVG
           </button>
+        )}
+        {/* JSON export */}
+        {sketch && (
+          <button
+            onClick={handleExportJSON}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded text-xs font-medium transition-colors"
+            title="Download as JSON (portable sketch file)"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            JSON
+          </button>
+        )}
+        {/* JSON import */}
+        {onImportJSON && (
+          <>
+            <input
+              ref={importInputRef}
+              type="file"
+              accept=".json,application/json"
+              className="hidden"
+              onChange={handleImportFile}
+            />
+            <button
+              onClick={handleImportClick}
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded text-xs font-medium transition-colors"
+              title="Import sketch from JSON file"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+              Import
+            </button>
+          </>
         )}
         <button
           onClick={onPrint}
@@ -369,6 +476,7 @@ export default function Toolbar({
                 { keys: ["Ctrl", "S"], desc: "Save sketch" },
                 { keys: ["Ctrl", "Shift", "S"], desc: "Download as PNG" },
                 { keys: ["Ctrl", "Shift", "E"], desc: "Download as SVG" },
+                { keys: ["Ctrl", "Shift", "J"], desc: "Export as JSON" },
                 { keys: ["Ctrl", "C"], desc: "Copy selected elements" },
                 { keys: ["Ctrl", "V"], desc: "Paste elements" },
                 { keys: ["Ctrl", "D"], desc: "Duplicate selected" },
@@ -394,6 +502,41 @@ export default function Toolbar({
               ))}
             </div>
             <button onClick={() => setShowShortcuts(false)} className="mt-5 w-full px-4 py-2 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded-lg text-sm font-medium transition-colors">Close</button>
+          </div>
+        </div>
+      )}
+
+      {/* New Sketch Confirm Modal */}
+      {showNewConfirm && (
+        <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={() => setShowNewConfirm(false)}>
+          <div className="bg-[#fdf6e3] border border-[#93a1a1] rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl text-center" onClick={(e) => e.stopPropagation()}>
+            <div className="w-14 h-14 bg-[#cb4b16]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#cb4b16]">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="12" y1="18" x2="12" y2="12"/>
+                <line x1="9" y1="15" x2="15" y2="15"/>
+              </svg>
+            </div>
+            <h3 className="text-lg font-bold text-[#073642] mb-2">Start a new sketch?</h3>
+            <p className="text-sm text-[#657b83] mb-6">Your current work will be discarded. Make sure to save or export first if you want to keep it.</p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowNewConfirm(false)}
+                className="flex-1 px-4 py-2 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded-lg text-sm font-medium transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => {
+                  setShowNewConfirm(false);
+                  onNewSketch?.();
+                }}
+                className="flex-1 px-4 py-2 bg-[#cb4b16] hover:bg-[#cb4b16]/80 text-[#fdf6e3] rounded-lg text-sm font-medium transition-colors"
+              >
+                New Sketch
+              </button>
+            </div>
           </div>
         </div>
       )}

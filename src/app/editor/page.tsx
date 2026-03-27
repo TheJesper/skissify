@@ -127,6 +127,8 @@ function EditorInner({
     pasteElements,
     rotateSelected,
     redraw,
+    importSketch,
+    newSketch,
     updateSketch,
     undo,
     redo,
@@ -182,6 +184,20 @@ function EditorInner({
     const filename = sketchSlug
       ? `skissify-${sketchSlug}.svg`
       : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.svg`;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [sketch, sketchSlug]);
+
+  const handleDownloadJSON = useCallback(() => {
+    const json = JSON.stringify(sketch, null, 2);
+    const blob = new Blob([json], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    const filename = sketchSlug
+      ? `skissify-${sketchSlug}.json`
+      : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.json`;
     a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
@@ -261,6 +277,10 @@ function EditorInner({
           e.preventDefault();
           handleDownloadSVG();
         }
+        if (e.key === "J" && e.shiftKey) {
+          e.preventDefault();
+          handleDownloadJSON();
+        }
         if (e.key === "c" && !isInput && selectedElements.size > 0) {
           e.preventDefault();
           copySelected();
@@ -285,7 +305,7 @@ function EditorInner({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, rotateSelected]);
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">
@@ -294,6 +314,8 @@ function EditorInner({
         onPrint={handlePrint}
         onDownload={handleDownload}
         onDownloadSVG={handleDownloadSVG}
+        onImportJSON={importSketch}
+        onNewSketch={newSketch}
         onSave={handleSave}
         onUndo={undo}
         onRedo={redo}
