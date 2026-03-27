@@ -21,6 +21,8 @@ export interface BaseElement {
   type: ElementType;
   color?: string;
   strokeWidth?: number;
+  /** Rotation in degrees (clockwise), applied around the element's bounding-box center */
+  rotation?: number;
 }
 
 export interface LineElement extends BaseElement {

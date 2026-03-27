@@ -95,7 +95,24 @@ export default function Canvas({
         }
 
         if (bounds) {
-          ctx.strokeRect(bounds.x, bounds.y, bounds.w, bounds.h);
+          if (el.rotation) {
+            // Draw rotated selection box
+            const cx = bounds.x + bounds.w / 2;
+            const cy = bounds.y + bounds.h / 2;
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.rotate((el.rotation * Math.PI) / 180);
+            ctx.strokeRect(-bounds.w / 2, -bounds.h / 2, bounds.w, bounds.h);
+            // Small rotation indicator dot above the box
+            ctx.beginPath();
+            ctx.setLineDash([]);
+            ctx.arc(0, -bounds.h / 2 - 8, 4, 0, Math.PI * 2);
+            ctx.strokeStyle = "#f59e0b";
+            ctx.stroke();
+            ctx.restore();
+          } else {
+            ctx.strokeRect(bounds.x, bounds.y, bounds.w, bounds.h);
+          }
         }
       }
 

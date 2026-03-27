@@ -349,6 +349,43 @@ The sketch/diagram market in 2026 is fragmenting into three lanes: (1) open-sour
 
 ---
 
+## Update Log: March 27, 2026 — 02:15 CET | Automated Strategy Run #2
+
+### 🔴 CRITICAL: Eraser Launched MCP Server + Agent Skills (March 2026)
+- **URL**: https://www.eraser.io/agent-integrations
+- Eraser now ships BOTH an HTTP MCP server (`https://app.eraser.io/api/mcp`) AND an Agent Skills package (`npx skills add eraserlabs/eraser-io`) — compatible with Claude Code, Codex, and other coding agents
+- **Free tier**: Returns rendered diagram images FOR FREE (watermarked). API key removes watermark + unlocks higher resolution
+- **Diagram types supported**: Architecture diagrams, flowcharts, BPMN, sequence diagrams, ERDs — all technical/clean, zero hand-drawn capability
+- **Use cases they're pitching**: CI/CD agents, documentation agents, DevOps chatbots, PR review agents — all developer-workflow focused
+- **Skissify response needed**: Eraser has validated that the market WANTS agent-integrated diagram generation. They own the "technical/clean" lane. Skissify's hand-drawn lane is now even more clearly differentiated — but urgency to ship MCP server escalates to CRITICAL. Eraser's agent integrations page is visually polished and developer-friendly. Skissify needs to match this level of developer UX on its MCP landing.
+- **Risk level**: Medium (they don't do hand-drawn, floor plans, or JSON-first manifests) but HIGH for the "agents generating diagrams" mindshare battle
+
+### 🟡 SIGNAL: Academic Validation of LLM-to-Floor-Plan Pipeline
+- **URL**: https://arxiv.org/html/2509.00543v1 — "Text-to-Layout: A Generative Workflow for Drafting Architectural Floor Plans Using LLMs" (Aug 2025)
+- LLMs (GPT-4 class) generating structured JSON files with coordinates for walls, doors, windows, furniture → automated 3D model construction in Autodesk Revit
+- This is academically validated: LLMs CAN generate accurate floor plan JSON. Skissify's bet on LLM-to-JSON-to-sketch is sound and peer-reviewed
+- **Skissify action**: Cite this paper in developer documentation and HN posts. "If you need a floor plan, any LLM can generate the JSON — Skissify renders it hand-drawn."
+
+### 🟡 SIGNAL: floor-plan.ai + OpenArt AI Floor Plan Generators Active
+- **URLs**: https://floor-plan.ai, https://openart.ai/generator/floor-plan, https://planner5d.com/use/ai-floor-plan-generator
+- Multiple AI floor plan generators active in 2026, targeting architects and real estate — all output raster images via diffusion models
+- **Critical gap**: None output JSON. None offer programmatic API. None have hand-drawn aesthetic. None are MCP-compatible
+- **Skissify differentiation**: These tools are image-gen wrappers. Skissify is data-first — the JSON IS the floor plan, rendering is just one step
+
+### 🟢 CONTEXT: MCP Ecosystem "Standard Practice" as of March 24, 2026
+- **URL**: https://use-apify.com/blog/mcp-standard-ecosystem-2026 (March 24, 2026)
+- MCP is now described as "standard practice" not experimental — "Teams are tired of one-off agent glue per product"
+- **URL**: https://blog.qualys.com/product-tech/2026/03/19/mcp-servers-shadow-it-ai-qualys-totalai-2026 (March 19, 2026) — MCP called "The New Shadow IT for AI"
+- Even non-tech companies (Smartsheet — March 24, 2026) are shipping MCP servers
+- Eraser's MCP landing page format (`npx skills add eraserlabs/eraser-io`) is the new standard for dev-tool distribution
+
+### Updated Competitor Matrix Row: Eraser
+| Tool | MCP Server | Agent Skills | Hand-drawn | Floor Plans | Free Tier |
+|------|-----------|--------------|-----------|-------------|-----------|
+| **Eraser** | **Yes (HTTP, March 2026)** | **Yes (Agent Skills pkg)** | No | No | Yes (watermarked) |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

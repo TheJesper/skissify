@@ -167,17 +167,30 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setSelectedElements(new Set());
   }, [sketch.elements, selectedElements, updateSketch]);
 
+  // Move selected elements silently (no undo entry) — used during live drag
   const moveSelected = useCallback(
     (dx: number, dy: number) => {
       if (selectedElements.size === 0) return;
-      const newElements = sketch.elements.map((el, i) => {
-        if (!selectedElements.has(i)) return el;
-        return translateElement(el, dx, dy);
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          return translateElement(el, dx, dy);
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        return next;
       });
-      updateSketch({ elements: newElements as SketchData["elements"] });
     },
-    [sketch.elements, selectedElements, updateSketch]
+    [selectedElements]
   );
+
+  // Commit current state to undo history (called once when drag ends)
+  const commitDrag = useCallback(() => {
+    setSketch((prev) => {
+      pushHistory(prev);
+      return prev;
+    });
+  }, [pushHistory]);
 
   const copySelected = useCallback(() => {
     if (selectedElements.size === 0) return;
@@ -200,6 +213,25 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     updateSketch({ elements: newElements });
     setSelectedElements(pastedIndices);
   }, [sketch.elements, updateSketch]);
+
+  const rotateSelected = useCallback(
+    (degrees: number) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          const current = el.rotation ?? 0;
+          const next = ((current + degrees) % 360 + 360) % 360;
+          return { ...el, rotation: next };
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
 
   const redraw = useCallback(() => {
     setSketch((prev) => {
@@ -249,8 +281,10 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     addElement,
     deleteSelected,
     moveSelected,
+    commitDrag,
     copySelected,
     pasteElements,
+    rotateSelected,
     redraw,
     updateSketch,
     undo,

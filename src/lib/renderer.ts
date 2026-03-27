@@ -170,6 +170,14 @@ export function renderSketch(
     setupStroke(ctx, sketch, { ...el, color: el.color || defaultColor });
     const opts = getWobbleOpts(sketch, el);
 
+    // Apply element rotation if specified
+    if (el.rotation) {
+      const center = getElementCenter(el);
+      ctx.translate(center.x, center.y);
+      ctx.rotate((el.rotation * Math.PI) / 180);
+      ctx.translate(-center.x, -center.y);
+    }
+
     switch (el.type) {
       case "line":
         drawWobbleLine(ctx, el.x1, el.y1, el.x2, el.y2, opts);
@@ -395,6 +403,23 @@ export function renderSketch(
   if (offsetX !== 0 || offsetY !== 0) {
     ctx.restore();
   }
+}
+
+/** Returns the center point of a single element for rotation transforms */
+function getElementCenter(el: SketchElement): { x: number; y: number } {
+  if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
+    return { x: (el.x1 + el.x2) / 2, y: (el.y1 + el.y2) / 2 };
+  }
+  if ("cx" in el && "cy" in el) {
+    return { x: el.cx, y: el.cy };
+  }
+  if ("x" in el && "y" in el && "w" in el && "h" in el) {
+    return { x: (el as { x: number; w: number }).x + (el as { w: number }).w / 2, y: (el as { y: number; h: number }).y + (el as { h: number }).h / 2 };
+  }
+  if ("x" in el && "y" in el) {
+    return { x: (el as { x: number }).x, y: (el as { y: number }).y };
+  }
+  return { x: 0, y: 0 };
 }
 
 function computeBoundingBox(

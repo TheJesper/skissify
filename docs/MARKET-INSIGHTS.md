@@ -100,3 +100,76 @@ Based on competitor weakness analysis + MCP ecosystem growth (97M installs, Marc
 | EUR 2/mo pricing concern | High | Don't launch at EUR 2; anchor at EUR 5 |
 
 ---
+
+## Entry: March 27, 2026 — 02:15 CET | Automated Strategy Run #2
+
+### Theme: What Would Make Someone Pay EUR 2/mo — The Real Answer After New Data
+
+---
+
+#### Finding 1: EUR 2/mo Only Works as an "Agent Automation Starter" Tier
+
+New data from this cycle: Eraser gives agent integrations **free** (watermarked) with API key required for clean output. This is a critical pricing reference point.
+
+**What this means for EUR 2/mo:**
+- EUR 2/mo is defensible ONLY as a "remove the watermark + 200 renders/mo" tier for hobby agents
+- The real WTP signal from Eraser's model: developers will pay for **API key + clean output** not for a "subscription"
+- **Recommendation**: Frame EUR 2/mo as "Skissify API Starter — 200 clean renders/month, no watermark, MCP-ready". This is a purchasing job-to-be-done: "I want my agent's output to look professional, not have a watermark."
+- At EUR 2, the friction is near-zero for any developer running even one small agent pipeline
+
+**The EUR 2 psychological hook:** "Less than a coffee. Cleaner output forever." — Not about features, about professional signal.
+
+---
+
+#### Finding 2: Eraser's Free Agent Tier Is a Distribution Strategy, Not a Business Model
+
+Eraser returning watermarked images for free (via MCP + Agent Skills) is a land-grab, not sustainable pricing. They're betting on:
+1. Developers embed it in pipelines
+2. Pipelines go to production
+3. Watermark becomes unacceptable → upgrade to API key
+
+**Skissify opportunity**: Match Eraser's free-tier generosity on the MCP server. Allow free renders (watermarked). Make the API key EUR 2/mo for 200 renders or EUR 10/mo for 2,000. This is exactly the right pricing shape for agent-era tools.
+
+---
+
+#### Finding 3: Academic Validation Changes the Pitch
+
+The arxiv.org paper (Aug 2025) — "Text-to-Layout: Drafting Architectural Floor Plans Using LLMs" — is a gift:
+- LLMs reliably generate JSON floor plan coordinates: walls, doors, windows, furniture
+- The pipeline is: `user prompt → LLM → JSON → renderer`
+- Skissify IS the renderer in this academic workflow, just with hand-drawn aesthetics added
+- **Pitch reframe**: "Skissify completes the LLM floor plan pipeline that academia already validated."
+- Use this in developer documentation, HN launch post, and any architecture/proptech outreach
+- URL to cite: https://arxiv.org/html/2509.00543v1
+
+---
+
+#### Finding 4: The MCP "Shadow IT" Signal Is a B2B Hook
+
+Qualys (March 19, 2026) calling MCP "The New Shadow IT for AI" means:
+- Enterprise IT departments are actively watching which MCP servers employees adopt
+- If Skissify's MCP gets used in Slack/Notion/GitHub workflows, IT buyers will discover it and ask for a formal license
+- **B2B motion**: Build bottom-up MCP adoption first → IT discovers it → sell enterprise license
+- This is the exact PLG (Product-Led Growth) motion that made Figma enterprise-scale
+
+---
+
+#### Finding 5: Raster Floor Plan Generators Are Non-Competitive
+
+AI floor plan generators (floor-plan.ai, OpenArt, Planner5D) are image-generation wrappers. They cannot be programmatically controlled, output pixel images (not structured data), have no API, and cannot be versioned or embedded.
+
+**Skissify's moat**: The JSON manifest IS the data — versionable, diffable, embeddable, agent-readable. These tools are as unrelated to Skissify as Midjourney is to a database.
+
+---
+
+### Summary Signals This Cycle
+
+| Signal | Urgency | Action |
+|--------|---------|--------|
+| Eraser ships MCP + Agent Skills — free + watermarked | CRITICAL | Match with Skissify MCP, frame EUR 2/mo as "clean renders" |
+| Academic paper validates LLM-to-JSON-to-layout pipeline | High | Use as proof in documentation and HN launch copy |
+| MCP is "standard practice" + "shadow IT" per enterprise analysts | High | Build PLG MCP → enterprise discovery funnel |
+| Raster floor plan generators active but non-competitive | Low | Market validation only — not a threat |
+| EUR 2/mo works ONLY as "starter API key + watermark removal" | High | Anchor Pro at EUR 5; EUR 2 = API Starter if launched |
+
+---
