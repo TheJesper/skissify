@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   output: "standalone",
   webpack: (config) => {
     // Fix for WasmHash crash on Node.js v22 (xxhash64 wasm unavailable)
-    // Fall back to md4 which uses Node's built-in crypto
-    config.output.hashFunction = "md4";
+    // md4 is also unavailable in OpenSSL 3 (Node.js v22+), fall back to sha256
+    config.output.hashFunction = "sha256";
     return config;
   },
 };
