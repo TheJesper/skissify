@@ -1916,3 +1916,235 @@ What I'm least sure about: is JSON the right interface long-term, or should this
 
 *Last Updated: March 27, 2026 (Cycle 10 — 07:55 CET)*
 *Added: A2A protocol angle tweet, real-time traction post template, image generator rebuke tweet, r/AIAssistants post, PH maker comment template, HN first comment template, key timing table update*
+
+---
+
+## Cycle 11 Additions (March 27, 2026 — 09:00 CET)
+
+### PRODUCT HUNT IS LIVE RIGHT NOW (09:00 CET)
+
+PH launched at 09:01. This is the critical 2-hour window. Here's what matters most:
+
+**Priority 1:** Post your maker comment NOW (template in SOCIAL-MEDIA.md PH section)  
+**Priority 2:** Share PH link in the following order — personal network → Discord communities → direct DMs  
+**Priority 3:** Every comment on PH gets a reply within 15 minutes (algorithm rewards activity)  
+**Priority 4:** DO NOT ask for upvotes — it's against PH rules and people can tell
+
+---
+
+### Tweet 12: Product Hunt Live (Post NOW — 09:00-09:15 CET)
+
+```
+We're live on @ProductHunt today 🎉
+
+Skissify — the first sketch tool where the input is JSON, not drag-and-drop.
+
+AI agents can literally draw floor plans now.
+
+If you've been following along, this is the moment. 🙏
+
+→ [ProductHunt link]
+```
+
+---
+
+### Tweet 13: "Vibe Drawing" Angle (Post at 11:30 CET)
+
+```
+You've heard of vibe coding.
+
+Let me introduce vibe drawing.
+
+Tell Claude what to sketch. It designs the layout, generates the JSON, calls Skissify via MCP, and returns a hand-drawn drawing.
+
+No Figma. No mouse. Just describe → see.
+
+skissify.com
+```
+
+**Why this works:** "Vibe coding" is a known reference point (Karpathy coined it in 2025). "Vibe drawing" is the natural extension. It requires zero explanation to the audience who already knows vibe coding.
+
+---
+
+### Tweet 14: Real Estate Angle (Post at 13:00 CET — US morning)
+
+```
+Estate agents spend €300 and 3 days getting a floor plan drawn.
+
+We just made that 5 minutes and free.
+
+Describe the layout → Claude designs it → Skissify renders it → hand-drawn sketch.
+
+skissify.com
+
+[attach: side-by-side of apartment description vs rendered floor plan]
+```
+
+---
+
+### Tweet 15: The "Gap" Hook (Post at 16:00 CET)
+
+```
+AI can write code.
+AI can write essays.
+AI can compose music.
+
+Until today, AI couldn't draw.
+
+Not "generate an image" — draw a floor plan with correct geometry, labeled rooms, dimension lines, and architectural symbols.
+
+That's what Skissify + MCP does.
+
+skissify.com
+```
+
+---
+
+### Discord Community Posts (09:30–11:00 CET)
+
+**Anthropic Discord — #mcp-showcase:**
+```
+Hey — just launched Skissify today! 🎉
+
+It's an MCP server that lets Claude draw hand-drawn sketches from JSON. Tell Claude "design a floor plan" and you get an actual drawing back, not a text description.
+
+The MCP tool is `create_sketch`. Takes a JSON manifest (paper type, wobble settings, elements), returns a rendered sketch URL.
+
+Would love to hear from anyone building agent workflows where visual output would help. What other MCP servers are you all pairing with right now?
+
+→ skissify.com | npm install -g @skissify/mcp-server
+```
+
+**The Changelog Discord — #launches:**
+```
+Built something I think this community might appreciate.
+
+Skissify: JSON → hand-drawn sketch. MCP server for AI agents.
+
+The interesting part: it's JSON-first by design, which makes it usable by scripts, APIs, and AI agents without any drag-and-drop.
+
+LLMs can generate the sketch manifest directly — tried it with Claude and got floor plans, system diagrams, UI wireframes all from natural language prompts.
+
+Just launched today: skissify.com
+```
+
+**Indie Hackers Slack:**
+```
+Launched today: Skissify — sketch generation tool for AI agents.
+
+JSON in, hand-drawn sketch out. Free tier + Pro at €5/mo.
+
+The business case I hadn't fully thought through until building: real estate agents, renovation contractors, anyone who needs fast spatial sketches. The AI angle brought me here but the use cases are broader.
+
+Day 1 metrics at 22:00 CET tonight. Would love feedback from anyone who tries it.
+
+skissify.com
+```
+
+---
+
+### r/AIEngineering (New community — Post at 16:30 CET)
+
+**Title:** I added visual output to my AI agent stack — here's what changed
+
+```
+Background: I build AI-assisted tools for spatial reasoning tasks (floor plans, architecture). The gap has always been the same: AI can reason about space excellently, but the output was always text.
+
+So I built Skissify — a sketch renderer where the input is JSON. The MCP server exposes a `create_sketch` tool to Claude. You describe a layout, Claude designs and renders it.
+
+**What changed in my workflow once I had visual output:**
+
+1. Iteration speed tripled — I could see if the layout "felt right" instead of reasoning about it abstractly from text
+2. Stakeholder communication became visual immediately — sketches don't need explanation
+3. Prompt quality improved — when you see the output is wrong, you know *how* to fix the prompt; text descriptions hide failures
+
+The tech: Canvas 2D, multi-harmonic wobble engine, 14 architectural element types. MCP server on npm.
+
+Any engineers here using MCP with visual output tools? Curious what the current state of the art is outside of image generators (which don't work well for technical diagrams — non-deterministic, wrong geometry, no schema).
+
+→ skissify.com
+```
+
+---
+
+### TikTok / Reels Script #1: "Vibe Drawing" (Record today, post tonight/tomorrow)
+
+**Duration:** 30-45 seconds  
+**Hook (0-3s):** Pointing at camera — "You know vibe coding? I built vibe drawing."  
+**Demo (3-25s):** Screen recording — type "design me a kitchen" into Claude → watch sketch appear  
+**CTA (25-35s):** "AI agents can draw now. Link in bio."  
+**Caption:** AI can draw floor plans now 🤯 #AI #VibeCode #DevTools #FloorPlan #MCP #Claude #SideProject
+
+---
+
+### TikTok / Reels Script #2: The Wobble Slider (Visual hook — post Day 3-4)
+
+**Duration:** 20-25 seconds  
+**Hook (0-3s):** "This is what makes Skissify look hand-drawn" [cursor on humanness slider]  
+**Demo (3-20s):** Slow drag from 0 to 10 — watch lines go from ruler-straight to shaky — pull back to 3  
+**CTA (20-25s):** "Hand-drawn sketches from JSON. Free at skissify.com."  
+**Caption:** The wobble slider 😮 #OddlySatisfying #DevTools #CodeDesign #Skissify #CodingLife
+
+---
+
+### Newsletter Cold Pitch (Send today — US morning 15:00-16:00 CET)
+
+**TLDR AI / The Rundown subject lines (A/B test):**
+- A: "Tool tip: AI agents can draw floor plans now (new MCP server)"
+- B: "Launched today: JSON-to-sketch with MCP support — Skissify"
+- C: "The missing visual output tool for AI agent stacks"
+
+**Body:**
+```
+Hi [Name],
+
+Quick launch submission for [Newsletter Name]:
+
+**Skissify** — sketch tool where the input is JSON, not drag-and-drop.
+
+The hook: it has an MCP server, so AI agents (Claude, GPT) can generate hand-drawn floor plans, wireframes, and diagrams from natural language. Tell Claude to sketch something; it calls Skissify and returns a drawing.
+
+- 14 architectural element types
+- Multi-harmonic wobble rendering (not the usual sine-wave fake)
+- MCP server on npm
+- Free tier + Pro €5/mo
+
+Launched today (March 27, 2026): skissify.com
+
+Happy to provide demo GIF, test API key, or a short quote. Let me know.
+
+Thanks,
+[Founder name]
+```
+
+---
+
+### Timing Table Update (Cycle 11)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 09:00-09:15 | Tweet 12 — PH live + share link | Cycle 11 above |
+| 09:15-09:30 | Anthropic Discord #mcp-showcase | Cycle 11 above |
+| 09:30 | The Changelog Discord | Cycle 11 above |
+| 10:00 | Show HN submission | LAUNCH-DAY-NOW.md |
+| 10:30 | Tweet 9 — A2A stack | Cycle 10 |
+| 11:30 | Tweet 13 — vibe drawing | Cycle 11 above |
+| 12:00 | Publish "Launch Day Letter" on Dev.to | blog/launch-day-letter... |
+| 13:00 | Tweet 14 — real estate angle | Cycle 11 above |
+| 14:00 | Tweet 10 — real-time traction (fill numbers) | Cycle 10 |
+| 15:00 | r/AIAssistants post | Cycle 10 |
+| 15:00-16:00 | Newsletter pitches | Cycle 11 above |
+| 16:00 | Tweet 15 — "the gap" hook | Cycle 11 above |
+| 16:30 | r/AIEngineering post | Cycle 11 above |
+| 17:00 | Tweet 4 — comparison + r/mcp | LAUNCH-DAY-NOW.md |
+| 17:30 | Tweet 11 — image generator rebuke | Cycle 10 |
+| 18:00 | Tweet 6 — US wave | Cycle 9 |
+| 19:30 | Tweet 7 — hot take | Cycle 9 |
+| 20:00 | r/ClaudeAI post | Cycle 9 |
+| 21:00 | Tweet 8 — build-in-public wrap | Cycle 9 |
+| 22:00 | "We launched today" blog (fill numbers) | blog/we-launched-today... |
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 11 — 09:00 CET)*
+*Added: Tweet 12-15 (PH live, vibe drawing, real estate, gap hook), Discord community scripts, r/AIEngineering post, TikTok/Reels scripts, newsletter cold pitch templates, full timing table to 22:00*

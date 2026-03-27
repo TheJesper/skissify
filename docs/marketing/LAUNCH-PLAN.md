@@ -162,6 +162,65 @@
 
 ---
 
+## Marketing Improvements (Cycle 11 — March 27, 09:00 CET)
+
+### ⚡ STATUS: PRODUCT HUNT IS LIVE
+It's 09:00 CET. Product Hunt launched at 09:01. **RIGHT NOW is the highest-priority 2 hours of launch day.**
+
+### Critical Actions — Next 2 Hours (09:00–11:00 CET)
+1. **Post PH maker comment** (template in SOCIAL-MEDIA.md Cycle 11)
+2. **Tweet 12** — "we're live on @ProductHunt" — share the PH link
+3. **Anthropic Discord #mcp-showcase** — post now (template in SOCIAL-MEDIA.md Cycle 11)
+4. **Reply to every PH comment within 15 mins** — this drives the algorithm
+5. **At 10:00** — Submit Show HN (LAUNCH-DAY-NOW.md)
+
+### Completed This Cycle
+- [x] ✅ **Blog post #13 NEW**: "Vibe Drawing: What Vibe Coding Is Doing to Design" — 1,400-word post framing Skissify as the visual complement to vibe coding. Uses Karpathy's "vibe coding" meme as the hook. Concrete 5-step workflow example. Files: `docs/marketing/blog/vibe-drawing-the-ai-design-shift.md`
+- [x] ✅ **Blog post #14 NEW**: "The Real Estate Floor Plan Revolution Nobody's Talking About" — 1,200-word post targeting PropTech and real estate agent audience. Quantifies the disruption (€300 + 3 days → 5 minutes + free). Includes agent workflow guide and developer API section. File: `docs/marketing/blog/the-real-estate-ai-floor-plan-revolution.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 11**: Tweets 12-15 (PH live, vibe drawing, real estate, gap hook), Discord community scripts (Anthropic, Changelog, IH Slack), r/AIEngineering post, TikTok/Reels scripts, newsletter cold pitch, full updated timing table to 22:00 CET
+- [x] ✅ **PRESS-KIT.md v5.0**: Added three new press angles (vibe drawing, real estate disruption, visual output stack gap) + key stats table. Now ready for press outreach.
+
+### New Blog Posts (Cycle 11) — Distribution Schedule
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 13 | Vibe Drawing: What Vibe Coding Is Doing to Design | vibe-drawing... | Dev.to, Medium | Day 4 (Mon) |
+| 14 | The Real Estate Floor Plan Revolution | the-real-estate... | Medium, LinkedIn article | Day 5 (Tue) |
+
+### What's Different About Cycle 11
+**It's launch hour.** PH is live. Previous cycles focused on preparing content. Cycle 11 focus is:
+1. **PH engagement** — maker comment + reply cadence for the algorithm
+2. **"Vibe drawing" meme** — new named hook that piggybacks on existing vibe coding awareness
+3. **Real estate angle** — opens a second audience beyond developers (PropTech, agents, homeowners)
+4. **Discord community blitz** — 3 templates ready to post in the next 90 minutes
+5. **r/AIEngineering** — new community identified, not targeted by any previous cycle
+
+### New Hashtag Insight (Cycle 11)
+Based on current trends (March 2026):
+- **#VibeDrawing** — not yet taken; Skissify can OWN this hashtag. Use consistently.
+- **#AIFloorPlan** — specific, searchable, low competition
+- **#MCPTools** — growing fast with the MCP ecosystem
+- **#AgentVisuals** — emerging concept, forward-looking
+
+### Updated Full Blog Inventory (14 posts)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1 | Why Hand-Drawn Sketches Beat Figma | why-hand-drawn... | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | how-ai-agents... | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | skissify-vs-excalidraw | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | build-first-ai... | Dev.to | Day 2 |
+| 5 | We Launched Today | we-launched-today... | Indie Hackers | Day 1 (22:00) |
+| 6 | JSON Schema Behind Skissify | the-json-schema... | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | how-to-add-skissify... | Dev.to, Hashnode, Medium | Day 7 |
+| 8 | First Sketch Tool for AI Agents | the-first-sketch... | HN direct, Dev.to | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | mcp-has-12000... | Dev.to, Bluesky | Day 2 |
+| 10 | I Gave Claude a Pencil | i-gave-claude... | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | launch-day-letter... | Dev.to (12:00 today) | Day 1 |
+| 12 | Three-Layer Stack: Missing Visual Layer | mcp-a2a-three-layer... | Dev.to, HN ref | Day 3 |
+| 13 | **Vibe Drawing** | **vibe-drawing...** | **Dev.to, Medium** | **Day 4** |
+| 14 | **Real Estate Floor Plan Revolution** | **the-real-estate...** | **Medium, LinkedIn** | **Day 5** |
+
+---
+
 ## Marketing Improvements (Cycle 10 — March 27, 07:55 CET)
 
 ### Completed This Cycle

@@ -486,6 +486,86 @@ The SVG is publicly shareable, embeddable in Notion/docs, and downloadable.
 
 ---
 
+## 2026-03-27 (Friday) — Cycle Run 08:28 CET
+
+### Context This Cycle
+- "Excalidraw alternatives" roundup content wave surging — Skissify not listed yet (pre-launch)
+- Excalidraw MCP developer evangalism continuing (thomasthornton.cloud tutorial still ranking, 3 days old)
+- LLM → JSON → floor plan developers (Gemini + Matplotlib tutorial) still the highest-intent free acquisition target
+- EUR 2/mo confirmed viable via GoCardless (1% + €0.20 fee cap); 89% net margin at micro scale
+- Niche unoccupied: 8th consecutive scan, no new hand-drawn + JSON + MCP + floor plan competitor
+
+---
+
+### ✅ Action 1: Submit Skissify to "Excalidraw Alternatives" Pages After Launch — Plan It Now
+
+**Why now**: Three fresh "Excalidraw alternatives" roundup pages appeared in search results this week alone (Product Hunt, Startupik, Exafol). These pages have long SEO shelf-lives and target the exact developer segment Skissify serves. None list Skissify today — because Skissify hasn't launched. This is a free, high-intent acquisition channel that requires zero ad spend.
+
+**Steps to take this week** (pre-launch prep):
+1. Create `docs/marketing/LAUNCH-OUTREACH-LIST.md` with the following targets:
+   - producthunt.com/products/excalidraw/alternatives — submit after PH launch
+   - startupik.com (contact: Ali Hajimohamadi) — pitch Skissify for inclusion in "Excalidraw alternatives for teams" piece
+   - exafol.com — submit tool listing
+   - balsamiq.com/blog/excalidraw-alternatives — existing alternatives article
+   - getalai.com/blog/napkin-ai-alternatives — active alternatives roundup
+2. Prepare a 100-word Skissify "alternatives" pitch blurb:
+   - "Skissify — JSON-first, hand-drawn sketch tool with MCP support. Unlike Excalidraw, Skissify renders floor plans, architectural elements (walls, doors, windows, stairs), and accepts clean JSON from any AI agent. Free tier with watermark. EUR 2/mo for clean API output. MCP server for Claude, Copilot, and Cursor."
+3. Store the blurb in `docs/marketing/COPY-LIBRARY.md` under "Alternatives Submission Blurb"
+
+**Target**: List created + blurb written today (30 minutes). Submit to all pages on PH launch day.
+
+**Why this beats paid acquisition**: Developers searching "Excalidraw alternatives" already know they want a sketch tool. The conversion rate from intent-match content is 12–18% vs 3–7% baseline. 100 visitors from these pages = 12–18 free signups. No ad budget needed.
+
+---
+
+### ✅ Action 2: Post the DEV Community Comment on the Gemini Floor Plan Tutorial — Today, Not Tomorrow
+
+**Why today**: This action has been assigned in every cycle since Run #6 (two cycles ago). The DEV Community tutorial by bindupautra_jyotibrat is actively surfacing in search results for "floor plan JSON API programmatic developer" queries. Every day without the Skissify comment is a day of missed qualified traffic.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment to post** (use verbatim or close):
+> "Nice work — the Gemini JSON step is the clever part. If you want to try a different rendering layer, I built Skissify (skissify.com) to solve exactly this: it takes the same JSON structure (rooms, doors, walls, dimensions) and outputs a hand-drawn SVG that looks like someone sketched it on paper. Free tier available. Might be a fun style comparison for a follow-up post."
+
+**Time required**: 5 minutes to copy-paste and post. This is the lowest effort / highest potential ROI action in the list.
+
+**Success metric**: Any clicks from the comment in the first 48 hours = validated audience. If the article author responds positively, DM them about featuring a Skissify tutorial.
+
+---
+
+### ✅ Action 3: Verify Completion of the Most Critical Outstanding Actions
+
+**Why today**: Eight strategy cycles have run since midnight. Many actions have been proposed but completion is unconfirmed. Before another set of actions is planned for Saturday, verify the status of the three most critical items:
+
+**Verification checklist** (spend 20 minutes auditing):
+
+1. **MCP server code** — Does `W:/code/skissify/packages/mcp/` exist? Is there any working TypeScript implementing `render_sketch`?
+   - If YES: what's blocking v0.1 publish to npm?
+   - If NO: this is the single most critical gap. Block Saturday morning for this.
+
+2. **Counter-tutorial draft** — Does `docs/marketing/blog/vs-code-floor-plans-tutorial.md` exist? (assigned in Run #4)
+   - If NO: write a 5-bullet outline today (30 min). Full draft can be Sunday.
+
+3. **MCP-TUTORIAL.md** — Does `docs/MCP-TUTORIAL.md` exist? (assigned in Run #6)
+   - If NO: create it now. It's 20 lines of markdown with a JSON config block and 3 steps. This is the spec that guides the MCP server build.
+
+**Why verify vs. just create**:  
+Strategy cycles produce diminishing returns if actions aren't executed. The goal of this cycle is not to generate a 9th set of new ideas — it's to confirm that the most critical existing ideas have become code, docs, or real-world actions.
+
+**Outcome target**: After this audit, there should be a clear, date-stamped status on the 3 items above recorded in `docs/marketing/DAILY-ACTIONS.md` under a "Completion Log" section.
+
+---
+
+### Notes for Next Cycle (Target: April 3, 2026 or earlier)
+- **Priority #1**: Confirm MCP server existence and publish timeline
+- Has the DEV Community comment been posted (this is cycle 3 of assigning this)?
+- Are Skissify's launch outreach targets documented in LAUNCH-OUTREACH-LIST.md?
+- Audit: how many of the 20+ actions from Runs #1–8 have been completed? Generate a completion percentage.
+- Monitor "excalidraw alternatives" SERPs weekly — Skissify should appear post-launch
+- Watch for any new "JSON sketch MCP" entries in modelcontextprotocol.io registry
+
+---
+
 ## 2026-03-27 (Friday) — Cycle Run 07:16 CET
 
 ### Context This Cycle
