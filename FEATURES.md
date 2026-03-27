@@ -90,6 +90,10 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Ink Color Picker in Sidebar** — New "Ink Color" section in the left control panel with 8 preset swatches (black, blue, red, green, brown, gray, teal, purple) + native `<input type="color">` for custom colors. Active color highlighted with blue ring. Hex value shown as monospace label. Previously only changeable via raw JSON editor.
+
+- [x] **Blueprint board inset fix** — Blueprint paper now renders with a 4px dark border (`#0d1f3a`) around the edge before filling the blue gradient, giving it the same "paper sitting on board" appearance as cream/white modes instead of a flat edge-to-edge blue fill.
+
 - [x] **Zoom controls overlay + auto-fit** — −/% /+ button group in canvas bottom-right corner; live zoom readout (e.g. "87%"); clicking % resets/fits the view; canvas auto-fits on mount and on sketch resize so every sketch opens at a sensible zoom; keyboard shortcut `0` = fit view (added to shortcuts panel); drag-move element scaling bug fixed (was dividing by zoom twice); zoom range extended to [0.1×–8×].
 
 
