@@ -68,9 +68,9 @@ export default function CreatePage() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-950">
+    <div className="min-h-screen" style={{ backgroundColor: "#fdf6e3" }}>
       {/* Nav */}
-      <nav className="border-b border-neutral-800 px-6 py-4">
+      <nav className="border-b border-[#93a1a1]/20 px-6 py-4">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <svg
@@ -82,25 +82,25 @@ export default function CreatePage() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-blue-400"
+              className="text-[#268bd2]"
             >
               <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
               <path d="m15 5 4 4" />
             </svg>
-            <span className="text-xl font-bold text-white">
-              Skiss<span className="text-blue-400">ify</span>
+            <span className="text-xl font-bold text-[#073642]">
+              Skiss<span className="text-[#268bd2]">ify</span>
             </span>
           </Link>
           <div className="flex items-center gap-4">
             <Link
               href="/editor"
-              className="text-sm text-neutral-400 hover:text-white transition-colors"
+              className="text-sm text-[#657b83] hover:text-[#073642] transition-colors"
             >
               Editor
             </Link>
             <Link
               href="/for-agents"
-              className="text-sm text-neutral-400 hover:text-white transition-colors"
+              className="text-sm text-[#657b83] hover:text-[#073642] transition-colors"
             >
               For Agents
             </Link>
@@ -111,10 +111,10 @@ export default function CreatePage() {
       {/* Hero section with sketch paper background */}
       <section className="px-6 pt-16 pb-12">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Create with <span className="text-blue-400">AI</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#073642] mb-4">
+            Create with <span className="text-[#268bd2]">AI</span>
           </h1>
-          <p className="text-lg text-neutral-400 mb-10">
+          <p className="text-lg text-[#657b83] mb-10">
             Describe what you want to sketch and let AI draw it for you
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function CreatePage() {
               />
               <button
                 onClick={handleGenerate}
-                className="mt-4 w-full px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors text-lg"
+                className="mt-4 w-full px-6 py-3 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white font-semibold rounded-lg transition-colors text-lg"
               >
                 Generate Sketch
               </button>
@@ -160,11 +160,11 @@ export default function CreatePage() {
               {showComingSoon && (
                 <div className="mt-4 p-4 bg-amber-100 border border-amber-300 rounded-lg text-amber-800 text-sm">
                   AI generation coming soon -- for now, use the{" "}
-                  <Link href="/editor" className="text-blue-600 underline font-medium">
+                  <Link href="/editor" className="text-[#268bd2] underline font-medium">
                     JSON editor
                   </Link>{" "}
                   or the{" "}
-                  <Link href="/for-agents" className="text-blue-600 underline font-medium">
+                  <Link href="/for-agents" className="text-[#268bd2] underline font-medium">
                     MCP tool
                   </Link>{" "}
                   to create sketches programmatically.
@@ -175,7 +175,7 @@ export default function CreatePage() {
 
           {/* Example prompts */}
           <div className="mt-8">
-            <h3 className="text-sm font-medium text-neutral-500 mb-3 uppercase tracking-wider">
+            <h3 className="text-sm font-medium text-[#839496] mb-3 uppercase tracking-wider">
               Try an example
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -183,7 +183,7 @@ export default function CreatePage() {
                 <button
                   key={ep}
                   onClick={() => setPrompt(ep)}
-                  className="px-3 py-1.5 bg-neutral-900 border border-neutral-800 rounded-full text-sm text-neutral-400 hover:text-white hover:border-neutral-600 transition-colors"
+                  className="px-3 py-1.5 bg-[#eee8d5] border border-[#93a1a1]/20 rounded-full text-sm text-[#657b83] hover:text-[#073642] hover:border-[#93a1a1]/40 transition-colors"
                 >
                   {ep}
                 </button>
@@ -194,28 +194,28 @@ export default function CreatePage() {
       </section>
 
       {/* For AI Agents section */}
-      <section className="px-6 py-16 bg-neutral-900/50 border-t border-neutral-800">
+      <section className="px-6 py-16 bg-[#eee8d5]/50 border-t border-[#93a1a1]/20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-white mb-2">For AI Agents</h2>
-          <p className="text-neutral-400 mb-8">
+          <h2 className="text-2xl font-bold text-[#073642] mb-2">For AI Agents</h2>
+          <p className="text-[#657b83] mb-8">
             AI agents can create sketches directly via the API or MCP tool. No UI needed.
           </p>
 
           <div className="grid gap-6">
             {/* Manifest URL */}
-            <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-              <h3 className="text-sm font-medium text-neutral-400 uppercase tracking-wider mb-3">
+            <div className="bg-[#eee8d5] border border-[#93a1a1]/20 rounded-xl p-6">
+              <h3 className="text-sm font-medium text-[#657b83] uppercase tracking-wider mb-3">
                 Manifest URL
               </h3>
               <div className="flex items-center gap-3">
-                <code className="flex-1 px-4 py-2.5 bg-neutral-950 rounded-lg text-blue-400 font-mono text-sm border border-neutral-800">
+                <code className="flex-1 px-4 py-2.5 bg-[#fdf6e3] rounded-lg text-[#268bd2] font-mono text-sm border border-[#93a1a1]/20">
                   https://skissify.com/api/manifest
                 </code>
                 <button
                   onClick={() =>
                     copyToClipboard("https://skissify.com/api/manifest", "manifest")
                   }
-                  className="px-4 py-2.5 bg-neutral-800 hover:bg-neutral-700 text-white text-sm font-medium rounded-lg transition-colors whitespace-nowrap"
+                  className="px-4 py-2.5 bg-[#eee8d5] hover:bg-[#93a1a1]/20 text-[#073642] text-sm font-medium rounded-lg transition-colors whitespace-nowrap border border-[#93a1a1]/20"
                 >
                   {copied === "manifest" ? "Copied!" : "Copy"}
                 </button>
@@ -223,15 +223,15 @@ export default function CreatePage() {
             </div>
 
             {/* MCP setup */}
-            <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-              <h3 className="text-sm font-medium text-neutral-400 uppercase tracking-wider mb-3">
+            <div className="bg-[#eee8d5] border border-[#93a1a1]/20 rounded-xl p-6">
+              <h3 className="text-sm font-medium text-[#657b83] uppercase tracking-wider mb-3">
                 MCP Server Setup
               </h3>
-              <p className="text-neutral-400 text-sm mb-4">
+              <p className="text-[#657b83] text-sm mb-4">
                 Add Skissify as an MCP tool in your Claude Desktop or agent config:
               </p>
               <div className="relative">
-                <pre className="px-4 py-3 bg-neutral-950 rounded-lg text-neutral-300 font-mono text-xs border border-neutral-800 overflow-x-auto">
+                <pre className="px-4 py-3 bg-[#fdf6e3] rounded-lg text-[#586e75] font-mono text-xs border border-[#93a1a1]/20 overflow-x-auto">
 {`{
   "mcpServers": {
     "skissify": {
@@ -248,7 +248,7 @@ export default function CreatePage() {
                       "mcp"
                     )
                   }
-                  className="absolute top-2 right-2 px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 text-xs rounded transition-colors"
+                  className="absolute top-2 right-2 px-3 py-1 bg-[#eee8d5] hover:bg-[#93a1a1]/20 text-[#657b83] text-xs rounded transition-colors"
                 >
                   {copied === "mcp" ? "Copied!" : "Copy"}
                 </button>
@@ -256,20 +256,20 @@ export default function CreatePage() {
             </div>
 
             {/* Example JSON */}
-            <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-              <h3 className="text-sm font-medium text-neutral-400 uppercase tracking-wider mb-3">
+            <div className="bg-[#eee8d5] border border-[#93a1a1]/20 rounded-xl p-6">
+              <h3 className="text-sm font-medium text-[#657b83] uppercase tracking-wider mb-3">
                 Example API Call
               </h3>
-              <p className="text-neutral-400 text-sm mb-4">
-                POST this JSON to <code className="text-blue-400">/api/sketches</code> to create a sketch:
+              <p className="text-[#657b83] text-sm mb-4">
+                POST this JSON to <code className="text-[#268bd2]">/api/sketches</code> to create a sketch:
               </p>
               <div className="relative">
-                <pre className="px-4 py-3 bg-neutral-950 rounded-lg text-neutral-300 font-mono text-xs border border-neutral-800 overflow-x-auto max-h-64 overflow-y-auto">
+                <pre className="px-4 py-3 bg-[#fdf6e3] rounded-lg text-[#586e75] font-mono text-xs border border-[#93a1a1]/20 overflow-x-auto max-h-64 overflow-y-auto">
                   {exampleJson}
                 </pre>
                 <button
                   onClick={() => copyToClipboard(exampleJson, "json")}
-                  className="absolute top-2 right-2 px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 text-xs rounded transition-colors"
+                  className="absolute top-2 right-2 px-3 py-1 bg-[#eee8d5] hover:bg-[#93a1a1]/20 text-[#657b83] text-xs rounded transition-colors"
                 >
                   {copied === "json" ? "Copied!" : "Copy"}
                 </button>
@@ -277,20 +277,20 @@ export default function CreatePage() {
             </div>
 
             {/* Copy prompt button */}
-            <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-              <h3 className="text-sm font-medium text-neutral-400 uppercase tracking-wider mb-3">
+            <div className="bg-[#eee8d5] border border-[#93a1a1]/20 rounded-xl p-6">
+              <h3 className="text-sm font-medium text-[#657b83] uppercase tracking-wider mb-3">
                 Ready-made Agent Prompt
               </h3>
-              <p className="text-neutral-400 text-sm mb-4">
+              <p className="text-[#657b83] text-sm mb-4">
                 Copy this prompt and give it to Claude, GPT, or any AI agent to create a Skissify sketch:
               </p>
               <div className="relative">
-                <pre className="px-4 py-3 bg-neutral-950 rounded-lg text-neutral-300 font-mono text-xs border border-neutral-800 overflow-x-auto max-h-40 overflow-y-auto whitespace-pre-wrap">
+                <pre className="px-4 py-3 bg-[#fdf6e3] rounded-lg text-[#586e75] font-mono text-xs border border-[#93a1a1]/20 overflow-x-auto max-h-40 overflow-y-auto whitespace-pre-wrap">
                   {agentPrompt}
                 </pre>
                 <button
                   onClick={() => copyToClipboard(agentPrompt, "prompt")}
-                  className="absolute top-2 right-2 px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 text-xs rounded transition-colors"
+                  className="absolute top-2 right-2 px-3 py-1 bg-[#eee8d5] hover:bg-[#93a1a1]/20 text-[#657b83] text-xs rounded transition-colors"
                 >
                   {copied === "prompt" ? "Copied!" : "Copy"}
                 </button>
@@ -301,7 +301,7 @@ export default function CreatePage() {
           <div className="mt-8 text-center">
             <Link
               href="/for-agents"
-              className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+              className="text-[#268bd2] hover:text-[#268bd2]/80 font-medium transition-colors"
             >
               Full agent documentation &rarr;
             </Link>
@@ -310,14 +310,14 @@ export default function CreatePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-neutral-800 px-6 py-8">
-        <div className="max-w-5xl mx-auto flex items-center justify-between text-sm text-neutral-500">
+      <footer className="border-t border-[#93a1a1]/20 px-6 py-8">
+        <div className="max-w-5xl mx-auto flex items-center justify-between text-sm text-[#839496]">
           <span>Skissify -- Hand-drawn sketches from JSON</span>
           <div className="flex items-center gap-4">
-            <Link href="/editor" className="hover:text-white transition-colors">
+            <Link href="/editor" className="hover:text-[#073642] transition-colors">
               Editor
             </Link>
-            <Link href="/for-agents" className="hover:text-white transition-colors">
+            <Link href="/for-agents" className="hover:text-[#073642] transition-colors">
               For Agents
             </Link>
           </div>

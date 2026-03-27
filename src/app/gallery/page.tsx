@@ -19,9 +19,9 @@ export default function GalleryPage() {
   const presetNames = Object.keys(presets);
 
   return (
-    <div className="min-h-screen bg-neutral-950">
+    <div className="min-h-screen" style={{ backgroundColor: "#fdf6e3" }}>
       {/* Nav */}
-      <nav className="border-b border-neutral-800 px-6 py-4">
+      <nav className="border-b border-[#93a1a1]/20 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <svg
@@ -33,25 +33,25 @@ export default function GalleryPage() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-blue-400"
+              className="text-[#268bd2]"
             >
               <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
               <path d="m15 5 4 4" />
             </svg>
-            <span className="text-xl font-bold text-white">
-              Skiss<span className="text-blue-400">ify</span>
+            <span className="text-xl font-bold text-[#073642]">
+              Skiss<span className="text-[#268bd2]">ify</span>
             </span>
           </Link>
           <div className="flex items-center gap-4">
             <Link
               href="/editor"
-              className="text-sm text-neutral-400 hover:text-white transition-colors"
+              className="text-sm text-[#657b83] hover:text-[#073642] transition-colors"
             >
               Editor
             </Link>
             <Link
               href="/gallery"
-              className="text-sm text-white font-medium transition-colors"
+              className="text-sm text-[#073642] font-medium transition-colors"
             >
               Gallery
             </Link>
@@ -61,10 +61,10 @@ export default function GalleryPage() {
 
       {/* Header */}
       <section className="px-6 pt-16 pb-8 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#073642] mb-4">
           Preset Gallery
         </h1>
-        <p className="text-lg text-neutral-400 max-w-xl mx-auto">
+        <p className="text-lg text-[#657b83] max-w-xl mx-auto">
           Browse hand-drawn sketch presets. Click any card to open it in the
           editor and start customizing.
         </p>
@@ -95,17 +95,17 @@ export default function GalleryPage() {
 
       {/* CTA */}
       <section className="px-6 pb-24 text-center">
-        <div className="max-w-md mx-auto bg-neutral-900 border border-neutral-800 rounded-xl p-8">
-          <h2 className="text-2xl font-bold text-white mb-3">
+        <div className="max-w-md mx-auto bg-[#eee8d5] border border-[#93a1a1]/20 rounded-xl p-8">
+          <h2 className="text-2xl font-bold text-[#073642] mb-3">
             Create your own
           </h2>
-          <p className="text-neutral-400 mb-6 text-sm">
+          <p className="text-[#657b83] mb-6 text-sm">
             Start from scratch or fork any preset above. Define elements as
             JSON, adjust the hand-drawn style, and export or share.
           </p>
           <Link
             href="/editor"
-            className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors"
+            className="inline-block px-8 py-3 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white font-semibold rounded-lg transition-colors"
           >
             Open Editor
           </Link>

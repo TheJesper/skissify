@@ -80,16 +80,16 @@ export default function DashboardPage() {
 
   if (status === "loading" || loading) {
     return (
-      <div className="min-h-screen bg-neutral-950 flex items-center justify-center text-neutral-400">
+      <div className="min-h-screen flex items-center justify-center text-[#657b83]" style={{ backgroundColor: "#fdf6e3" }}>
         Loading...
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-neutral-950">
+    <div className="min-h-screen" style={{ backgroundColor: "#fdf6e3" }}>
       {/* Header */}
-      <header className="border-b border-neutral-800 px-6 py-4">
+      <header className="border-b border-[#93a1a1]/20 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2">
@@ -102,22 +102,22 @@ export default function DashboardPage() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-blue-400"
+                className="text-[#268bd2]"
               >
                 <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
                 <path d="m15 5 4 4" />
               </svg>
-              <span className="text-lg font-bold text-white">
-                Skiss<span className="text-blue-400">ify</span>
+              <span className="text-lg font-bold text-[#073642]">
+                Skiss<span className="text-[#268bd2]">ify</span>
               </span>
             </Link>
-            <span className="text-neutral-600">/</span>
-            <span className="text-neutral-300 font-medium">My Sketches</span>
+            <span className="text-[#93a1a1]">/</span>
+            <span className="text-[#586e75] font-medium">My Sketches</span>
           </div>
           <div className="flex items-center gap-3">
             <Link
               href="/editor"
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-lg transition-colors"
+              className="px-4 py-2 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white text-sm font-medium rounded-lg transition-colors"
             >
               New Sketch
             </Link>
@@ -130,15 +130,15 @@ export default function DashboardPage() {
       <main className="max-w-6xl mx-auto px-6 py-8">
         {sketches.length === 0 ? (
           <div className="text-center py-24">
-            <h2 className="text-xl font-semibold text-white mb-2">
+            <h2 className="text-xl font-semibold text-[#073642] mb-2">
               No sketches yet
             </h2>
-            <p className="text-neutral-400 mb-6">
+            <p className="text-[#657b83] mb-6">
               Create your first sketch to get started
             </p>
             <Link
               href="/editor"
-              className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition-colors"
+              className="inline-block px-6 py-3 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white font-medium rounded-lg transition-colors"
             >
               Create Sketch
             </Link>
@@ -148,11 +148,11 @@ export default function DashboardPage() {
             {sketches.map((s) => (
               <div
                 key={s.id}
-                className="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group"
+                className="bg-[#eee8d5] border border-[#93a1a1]/20 rounded-xl overflow-hidden group"
               >
                 {/* Thumbnail placeholder */}
                 <Link href={`/editor?edit=${s.slug}`}>
-                  <div className="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-600 group-hover:bg-neutral-750 transition-colors cursor-pointer">
+                  <div className="aspect-video bg-[#eee8d5] flex items-center justify-center text-[#93a1a1] group-hover:bg-[#93a1a1]/10 transition-colors cursor-pointer">
                     <svg
                       width="40"
                       height="40"
@@ -177,19 +177,19 @@ export default function DashboardPage() {
                           if (e.key === "Enter") handleRename(s.slug);
                           if (e.key === "Escape") setEditingTitle(null);
                         }}
-                        className="flex-1 bg-neutral-800 border border-neutral-600 rounded px-2 py-1 text-sm text-white"
+                        className="flex-1 bg-[#fdf6e3] border border-[#93a1a1]/30 rounded px-2 py-1 text-sm text-[#073642]"
                         autoFocus
                       />
                       <button
                         onClick={() => handleRename(s.slug)}
-                        className="text-xs text-blue-400 hover:text-blue-300"
+                        className="text-xs text-[#268bd2] hover:text-[#268bd2]/80"
                       >
                         Save
                       </button>
                     </div>
                   ) : (
                     <h3
-                      className="text-white font-medium mb-1 cursor-pointer hover:text-blue-400 transition-colors"
+                      className="text-[#073642] font-medium mb-1 cursor-pointer hover:text-[#268bd2] transition-colors"
                       onClick={() => {
                         setEditingTitle(s.slug);
                         setTitleDraft(s.title);
@@ -199,7 +199,7 @@ export default function DashboardPage() {
                     </h3>
                   )}
 
-                  <p className="text-xs text-neutral-500 mb-3">
+                  <p className="text-xs text-[#839496] mb-3">
                     Updated{" "}
                     {new Date(s.updatedAt).toLocaleDateString("en-US", {
                       month: "short",
@@ -213,8 +213,8 @@ export default function DashboardPage() {
                       onClick={() => handleTogglePublic(s.slug, s.public)}
                       className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
                         s.public
-                          ? "bg-green-900/30 text-green-400 hover:bg-green-900/50"
-                          : "bg-neutral-800 text-neutral-400 hover:bg-neutral-700"
+                          ? "bg-green-900/30 text-green-700 hover:bg-green-900/50"
+                          : "bg-[#eee8d5] text-[#657b83] hover:bg-[#93a1a1]/20 border border-[#93a1a1]/20"
                       }`}
                     >
                       {s.public ? "Public" : "Private"}
@@ -225,14 +225,14 @@ export default function DashboardPage() {
                           `${window.location.origin}/s/${s.slug}`
                         );
                       }}
-                      className="px-2 py-1 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 rounded text-xs transition-colors"
+                      className="px-2 py-1 bg-[#eee8d5] hover:bg-[#93a1a1]/20 text-[#657b83] rounded text-xs transition-colors border border-[#93a1a1]/20"
                     >
                       Copy Link
                     </button>
                     <div className="flex-1" />
                     <button
                       onClick={() => handleDelete(s.slug)}
-                      className="px-2 py-1 text-red-400 hover:bg-red-900/30 rounded text-xs transition-colors"
+                      className="px-2 py-1 text-red-600 hover:bg-red-900/10 rounded text-xs transition-colors"
                     >
                       Delete
                     </button>

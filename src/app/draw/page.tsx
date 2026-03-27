@@ -92,11 +92,11 @@ export default function DrawPage() {
 
   if (error) {
     return (
-      <div className="h-screen flex flex-col items-center justify-center bg-neutral-950 text-neutral-400 gap-4">
+      <div className="h-screen flex flex-col items-center justify-center text-[#657b83] gap-4" style={{ backgroundColor: "#fdf6e3" }}>
         <p className="text-lg">No sketch data found in URL.</p>
         <Link
           href="/editor"
-          className="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium transition-colors"
+          className="px-6 py-3 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white rounded-lg font-medium transition-colors"
         >
           Open Editor
         </Link>
@@ -106,7 +106,7 @@ export default function DrawPage() {
 
   if (!sketch) {
     return (
-      <div className="h-screen flex items-center justify-center bg-neutral-950 text-neutral-400">
+      <div className="h-screen flex items-center justify-center text-[#657b83]" style={{ backgroundColor: "#fdf6e3" }}>
         Loading sketch...
       </div>
     );
@@ -117,7 +117,8 @@ export default function DrawPage() {
   return (
     <div
       ref={containerRef}
-      className="h-screen w-screen bg-neutral-950 flex items-center justify-center overflow-hidden relative"
+      className="h-screen w-screen flex items-center justify-center overflow-hidden relative"
+      style={{ backgroundColor: "#fdf6e3" }}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -145,7 +146,7 @@ export default function DrawPage() {
       {/* Edit in Skissify link */}
       <a
         href={editUrl}
-        className="absolute bottom-4 right-4 px-3 py-1.5 bg-neutral-800/80 hover:bg-neutral-700 text-neutral-400 hover:text-white rounded text-xs font-medium transition-colors backdrop-blur-sm border border-neutral-700/50"
+        className="absolute bottom-4 right-4 px-3 py-1.5 bg-[#eee8d5]/80 hover:bg-[#eee8d5] text-[#657b83] hover:text-[#073642] rounded text-xs font-medium transition-colors backdrop-blur-sm border border-[#93a1a1]/30"
       >
         Edit in Skissify
       </a>
