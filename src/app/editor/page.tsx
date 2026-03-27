@@ -138,6 +138,8 @@ function EditorInner({
     canUndo,
     canRedo,
     updateElement,
+    nudgeSelected,
+    selectAll,
   } = useSketch(initialData ?? undefined, initialPreset ?? undefined);
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
@@ -332,6 +334,11 @@ function EditorInner({
           copySelected();
           pasteElements();
         }
+        if (e.key === "a" && !isInput) {
+          // Ctrl+A = select all elements
+          e.preventDefault();
+          selectAll();
+        }
       }
 
       // R = rotate selected 15° clockwise, Shift+R = 15° counter-clockwise
@@ -339,10 +346,19 @@ function EditorInner({
         e.preventDefault();
         rotateSelected(e.shiftKey ? -15 : 15);
       }
+
+      // Arrow keys = nudge selected elements (1px; Shift = 10px)
+      if (!isInput && selectedElements.size > 0 && !e.ctrlKey && !e.metaKey) {
+        const STEP = e.shiftKey ? 10 : 1;
+        if (e.key === "ArrowLeft")  { e.preventDefault(); nudgeSelected(-STEP, 0); }
+        if (e.key === "ArrowRight") { e.preventDefault(); nudgeSelected( STEP, 0); }
+        if (e.key === "ArrowUp")    { e.preventDefault(); nudgeSelected(0, -STEP); }
+        if (e.key === "ArrowDown")  { e.preventDefault(); nudgeSelected(0,  STEP); }
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, rotateSelected]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll]);
 
   // Compute the color of the first selected element (or undefined)
   const selectedColor: string | undefined = (() => {

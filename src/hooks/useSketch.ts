@@ -290,6 +290,29 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [selectedElements, pushHistory]
   );
 
+  /** Nudge selected elements by (dx, dy) and commit to undo history */
+  const nudgeSelected = useCallback(
+    (dx: number, dy: number) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          return translateElement(el, dx, dy);
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
+  /** Select all elements */
+  const selectAll = useCallback(() => {
+    setSelectedElements(new Set(sketch.elements.map((_, i) => i)));
+  }, [sketch.elements]);
+
   const redraw = useCallback(() => {
     setSketch((prev) => {
       const next = { ...prev, sessionSeed: newSessionSeed() };
@@ -407,6 +430,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     canUndo,
     canRedo,
     updateElement,
+    nudgeSelected,
+    selectAll,
   };
 }
 
