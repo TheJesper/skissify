@@ -146,3 +146,79 @@ _Actionable items proposed by the automated strategy advisor. Append-only._
 - Search for new floor-plan.ai / Planner5D API announcements — if they add JSON output, threat level rises
 
 ---
+
+## 2026-03-27 (Friday) — Cycle Run 03:06 CET
+
+### Context This Cycle
+- **Lucid Software** shipped an advanced MCP server + "Process Agent" — TODAY, March 27 2026
+- Excalidraw closed the mindmap gap (minor) but still not in our lane
+- Napkin AI API situation unclear — conflicting sources; SEO opportunity either way
+- JFrog launched enterprise MCP Registry — future B2B discovery channel
+- EUR 2/mo framing solidified: it's a "watermark removal + professional signal" purchase, not a feature tier
+- tldraw still stagnant post-PR-drama
+
+---
+
+### ✅ Action 1: Use Lucid's Launch as Social Proof — Write the "Size of the Opportunity" Post
+
+**Why today**: Lucid Software — a market leader with millions of enterprise users — just validated the exact thesis Skissify is built on: AI agents need visual output tools. This is a free credibility anchor that expires in 48 hours (news cycle).
+
+**Concrete steps**:
+1. Write a Twitter/X thread (draft in `docs/marketing/SOCIAL-MEDIA.md`):
+   - Tweet 1: "Lucid Software (Lucidchart) just launched an AI 'Process Agent' with MCP. Enterprise-grade. $8-20/user/mo. Their own research: only 16% of companies have well-documented workflows."
+   - Tweet 2: "The insight is universal: knowledge workers need visual AI output. Lucid built it for Fortune 500. Skissify builds it for developers and agents. JSON in → hand-drawn sketch out. EUR 2/mo."
+   - Tweet 3: "If a $500M+ company is racing to make AI output visual, maybe the problem is real. [link to Lucid announcement] [link to Skissify]"
+2. Post or schedule for Friday morning (peak dev Twitter time: 8-10 AM CET)
+3. No need to attack Lucid — just ride the news
+
+**Target**: Thread drafted in 20 minutes. Schedule for peak engagement.
+
+**Why this matters**: Associating Skissify with an enterprise launch (even as the indie alternative) gives instant category credibility. "If Lucid is doing it at $20/user, why aren't you using Skissify at EUR 2?" is a clean narrative.
+
+---
+
+### ✅ Action 2: Start Building a JFrog/MCP Registry Listing Plan
+
+**Why today**: JFrog's Universal MCP Registry launched this week — enterprise IT departments will use it to audit and approve MCP servers. This is the B2B discovery channel that didn't exist a week ago.
+
+**Concrete steps**:
+1. Create `docs/MCP-REGISTRY-PLAN.md` with:
+   - Target registries: modelcontextprotocol.io, JFrog AI Catalog, npm registry (`@skissify/mcp`)
+   - Listing requirements for each (name, description, homepage, categories, tool list)
+   - Draft tool descriptions: `render_sketch` (main), `list_element_types`, `get_schema`, `render_floor_plan`
+   - Security notes (no auth required for free tier, API key for Pro) — JFrog specifically evaluates this
+2. This document becomes the spec for both the MCP server AND its marketplace listings
+3. Takes 30-45 minutes; creates the roadmap for developer discovery
+
+**Target**: Written today. No code required.
+
+**Why this matters**: Being in enterprise MCP registries before competitors is worth months of marketing spend. The window is NOW while registries are forming. Lucid's announcement means enterprise IT is actively evaluating.
+
+---
+
+### ✅ Action 3: SEO Capture — Write "Napkin AI API Alternative" Content
+
+**Why today**: Sources conflict on whether Napkin AI has a public API (one says yes, one says no). Either way, developers are searching for "napkin ai api" — and Skissify should intercept that traffic.
+
+**Concrete steps**:
+1. Write a 300-word blog post draft in `docs/marketing/blog/`:
+   - Title: "Napkin AI API: What Developers Actually Need (And What Skissify Offers)"
+   - Structure: What Napkin AI does → What it lacks (no JSON-first, no floor plans, no MCP) → What Skissify offers instead
+   - End with: "If you're looking for a visual generation API your agents can call directly, try Skissify's JSON-to-sketch API. Free tier available."
+2. Also add "napkin ai api" as a target keyword in `docs/marketing/SEO-STRATEGY.md`
+3. This is a long-tail keyword with low competition and high intent (developers who want an API for visual generation)
+
+**Target**: Blog draft in 30 minutes. Publish when blog system is live.
+
+**Why this matters**: Napkin AI has strong brand recognition but weak developer API story. Developers searching for Napkin AI's API are pre-qualified Skissify buyers — they want programmatic visual generation and they're already aware the category exists.
+
+---
+
+### Notes for Next Cycle
+- Check if the Lucid thread got drafted and posted
+- Verify Napkin AI API status directly at napkin.ai/pricing — update competitor analysis accordingly
+- Check if MCP Registry Plan doc was created
+- Monitor if any competitor ships hand-drawn sketch output (game-changing threat)
+- Confirm MCP server development progress — if still zero lines of code, escalate to critical blocker
+
+---

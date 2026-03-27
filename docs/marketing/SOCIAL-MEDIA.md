@@ -1128,5 +1128,143 @@ MCP: npm install -g @skissify/mcp-server
 
 ---
 
-*Last Updated: March 27, 2026 (Cycle 5 — 02:30 CET)*  
-*Added: DM outreach templates, Week 1 content calendar, PH follow-up strategy, platform response templates (self-hosting, pricing), Bluesky/Mastodon template*
+---
+
+## ⚡ LAUNCH MORNING EMERGENCY PROTOCOL (03:35–07:00 CET)
+
+*You're awake. Launch is in 3.5 hours. Here's exactly what to do RIGHT NOW in order.*
+
+### Priority 1 — Before You Sleep (or if you can't sleep)
+1. **Schedule Tweet 1** in Buffer/TweetDeck for exactly 07:00 CET
+   - Copy "Tweet 1: Launch Announcement (VIRAL HOOK)" from above
+   - Do NOT manually tweet — you want it hitting at the optimal early-morning PT audience time
+2. **Record the Wobble Slider GIF** — this is the single highest-ROI thing you can do at 3am
+   - Open skissify.com editor
+   - Load any floor plan
+   - Open LICEcap or ShareX screen recording
+   - Slowly drag humanness slider: 0 → 10 → 3
+   - Stop recording (target: 8–12 seconds)
+   - Save as `wobble-demo.gif`
+   - This GIF goes in Tweet 3 and Reels/TikTok
+
+### Priority 2 — If You Have 30 More Minutes
+3. **Draft Product Hunt maker comment** (paste below, customize, save in drafts):
+
+```
+Hi Product Hunt! 👋
+
+I'm Jesper, the solo founder behind Skissify.
+
+Quick story of why this exists: I was using Claude to design apartment layouts and kept getting beautifully reasoned answers that I then had to manually redraw in Excalidraw. That felt wrong. AI can reason about space — it should be able to *show* you what it's thinking.
+
+So I built Skissify: a sketch tool where JSON is the input, not drag-and-drop. Because JSON is what AI agents speak.
+
+With the MCP server, you can tell Claude "design a 2-bed apartment for a remote worker" and get an actual hand-drawn floor plan back in the conversation. No redrawing. No copy-pasting room dimensions.
+
+Under the hood: multi-harmonic wobble rendering (not the boring sine-wave thing), 14 element types, 4 paper styles.
+
+**Try it free (no signup):** paste this JSON in the editor at skissify.com:
+
+```json
+{
+  "elements": [
+    { "type": "rect", "x": 50, "y": 50, "width": 300, "height": 200, "label": "Living Room" },
+    { "type": "door", "x": 50, "y": 130, "width": 80, "height": 20 },
+    { "type": "rect", "x": 50, "y": 270, "width": 140, "height": 140, "label": "Bedroom" },
+    { "type": "rect", "x": 210, "y": 270, "width": 140, "height": 140, "label": "Kitchen" }
+  ]
+}
+```
+
+Happy to answer any questions — I'm watching PH all day today.
+
+What would you add to this as an AI agent sketch tool? That's genuinely shaping my roadmap.
+```
+
+4. **Verify Product Hunt listing is queued** for 09:01 CET (= 00:01 PT)
+
+### Priority 3 — Can Wait Until 07:00 Wake-Up
+- Record AI agent demo GIF (Claude + MCP + sketch output)
+- Set up Hacker News Show HN post in a draft tab (submit at 10:00 CET)
+- DM outreach (do 5-10 DMs in the morning, not 3am)
+
+---
+
+## Product Hunt Maker Comment (Full Version — Ready to Paste)
+
+```
+Hi PH! I'm the solo founder of Skissify.
+
+**Why I built this:**
+AI agents can reason brilliantly about visual things — room layouts, system architecture, UI wireframes — but their output is always text. The human still has to redraw it. That gap frustrated me enough to spend several months closing it.
+
+**What Skissify does:**
+JSON in → hand-drawn sketch out. The JSON-first input means AI agents (not just humans) can create sketches. We ship an MCP server so Claude and other AI assistants can generate and render floor plans, diagrams, and wireframes in conversation.
+
+**The interesting technical bit:**
+Most sketch tools fake "hand-drawn" with a simple sine-wave offset. It looks mechanical. Skissify uses multi-harmonic wobble — three independent control axes (amplitude, frequency, humanness), seeded per-element so each line looks like it was drawn independently by the same hand.
+
+**Live numbers as of this comment:**
+- [X] signups in first hour
+- [X] sketches created
+- [X] MCP server installs
+
+**Free to try, no signup:** skissify.com
+**MCP server:** `npm install -g @skissify/mcp-server`
+
+What would you use this for? Floor plans, architecture diagrams, wireframes, something I haven't thought of? Every answer shapes what I build next.
+```
+
+---
+
+## Hacker News Show HN Post (Ready to Submit at 10:00 CET)
+
+**Title:** Show HN: Skissify – JSON to hand-drawn sketch, with MCP server for AI agents
+
+**Text:**
+```
+I built a sketch renderer where the input is JSON, not drag-and-drop.
+
+The motivation: AI agents can reason about space and layout, but their visual output is still text. I wanted to give them a pen.
+
+How it works:
+- You POST (or paste) JSON describing elements: rects, doors, windows, stairs, dimension lines, etc.
+- Skissify renders a hand-drawn sketch using multi-harmonic wobble (not simple sine-wave offset)
+- Returns a shareable URL
+
+The MCP server lets Claude and other AI assistants generate sketches autonomously:
+
+User: "Design a 15-person office — reception, 3 meeting rooms, open workspace, kitchen"
+Claude: [reasons about layout] → [generates JSON] → [calls create_sketch] → [returns rendered floor plan URL]
+
+Technical bits:
+- 14 element types, each with tuned wobble parameters
+- 4 paper styles: cream, white, grid, blueprint
+- Canvas 2D rendering, ~150ms server-side
+- LLM success rate: 92% floor plans, 88% diagrams, 71% wireframes (based on testing)
+- Seeded randomness → same JSON always produces same visual
+
+Free tier: unlimited public sketches, 50 API calls/month
+Pro: €5/month — private sketches, 2,000 API calls/month
+
+Try the editor (no signup): https://skissify.com
+MCP server: npm install -g @skissify/mcp-server
+
+Happy to get into the rendering math or schema design decisions in comments.
+```
+
+**First comment to post immediately after submission:**
+```
+One thing I'd love feedback on: the JSON schema itself.
+
+Current design philosophy: flat list of elements, absolute coordinates, top-level aesthetics object. Deliberately minimal — an LLM with 300 words of schema description can generate valid JSON on the first try.
+
+The alternative I considered was a semantic/hierarchical schema (rooms contain walls contain openings). More powerful, but LLM generation success rate dropped to ~60% in testing.
+
+Is there a design pattern from other JSON-first tools that I'm missing? The schema is the hardest design decision in the whole product.
+```
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 6 — 03:35 CET)*  
+*Added: Launch Morning Emergency Protocol (03:35–07:00 CET), full PH maker comment ready to paste, HN Show HN post + first comment template, new blog post "The First Sketch Tool for AI Agents" in docs/marketing/blog/*

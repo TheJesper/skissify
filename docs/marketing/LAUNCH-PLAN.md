@@ -162,6 +162,44 @@
 
 ---
 
+## Marketing Improvements (Cycle 6 — March 27, 03:35 CET)
+
+### Completed This Cycle
+- [x] ✅ Blog post #8 NEW: "The First Sketch Tool Built for AI Agents, Not Humans" — 1,600-word narrative piece explaining WHY JSON-first matters, the MCP timing, LLM success rates (92%/88%/71%), and the architectural decisions that made it all work. Best HN-submission post we have — technical, honest, shows reasoning. Cross-post to HN directly on launch day.
+- [x] ✅ SOCIAL-MEDIA.md: Added **Launch Morning Emergency Protocol (03:35–07:00 CET)** — exact priority-ordered action list for founder right now: schedule Tweet 1, record Wobble GIF, draft PH comment, verify PH listing
+- [x] ✅ SOCIAL-MEDIA.md: Added **complete Product Hunt maker comment** (ready to paste, includes tryable JSON snippet, live numbers placeholders, ends with a question to drive engagement)
+- [x] ✅ SOCIAL-MEDIA.md: Added **complete Show HN post + first comment** ready to submit at 10:00 CET — includes LLM success rates, technical schema rationale, invites community debate on schema design
+- [x] ✅ All 8 blog posts now in docs/marketing/blog/ — full distribution schedule covers Day 1–7
+
+### Blog Post #8 — Highlights
+"The First Sketch Tool Built for AI Agents, Not Humans":
+- Explains the gap: AI can reason visually, but can't output visuals
+- Three forces that make this the right timing: MCP critical mass, LLM spatial reasoning, developer appetite for agent-native tools
+- The schema decision (flat vs hierarchical) with actual data: 92% vs 60% success rate
+- What "built for AI agents" means in practice: determinism, error tolerance, API-level speed, programmatic aesthetic control
+- Full example of an agent session: user prompt → Claude reasoning → JSON → MCP call → sketch URL → conversational response
+- Clear positioning: NOT an image generator, NOT an Excalidraw replacement
+
+### Critical Founder Actions Right Now (03:35 CET)
+1. Schedule Tweet 1 for 07:00 CET → Buffer/TweetDeck
+2. Record Wobble Slider GIF (10 seconds, humanness 0→10→3)
+3. Draft PH maker comment (copy from SOCIAL-MEDIA.md, customize name)
+4. Verify PH listing is set to publish at 09:01 CET (= 00:01 PT)
+
+### Updated Blog Distribution (8 posts total)
+| Post | Platform Order | Day |
+|------|---------------|-----|
+| "We Launched Today" | Indie Hackers → Dev.to | Launch Day 22:00 |
+| "Build First AI Floor Plan" | Dev.to → Hashnode | Day 2 (Sat) |
+| "JSON Schema Behind Skissify" | Dev.to → HN reference | Day 2-3 |
+| "How AI Agents Draw Floor Plans" | Dev.to → Hashnode | Day 3 (Sun) |
+| "Skissify vs Excalidraw" | Dev.to → Medium | Day 4 (Mon) |
+| "Why Hand-Drawn Beats Figma" | Medium → Hashnode | Day 5 (Tue) |
+| "Add to Your AI Agent Workflow" | Dev.to → Hashnode → Medium | Day 7 (Thu) |
+| **"First Sketch Tool for AI Agents"** | **HN direct → Dev.to** | **Launch Day / Day 2** |
+
+---
+
 ## Marketing Improvements (Cycle 5 — March 27, 02:30 CET)
 
 ### Completed This Cycle
