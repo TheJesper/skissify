@@ -90,6 +90,8 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Root page feature parity + undo history reset on preset load** — The main page (/) was missing several features that the /editor page had. Now fully wired: resize handles (onResizeElement/onResizeEnd), per-element color picker (selectedColor + onColorSelected), arrow-key nudge (1px / Shift=10px), Ctrl+A select-all, double-click inline text editing overlay (text, rect label, dim label), and canvasControlRef for programmatic auto-fit. Also: loadPreset in useSketch now resets the undo/redo history stack so Ctrl+Z after switching presets no longer teleports you back to the previous preset — a confusing UX bug. Both desktop and mobile ControlPanel/PresetTabs instances updated.
+
 - [x] **Arrow-key nudge + Ctrl+A select all** — Arrow keys move selected element(s) by 1px; Shift+Arrow = 10px. Each nudge commits one undo entry. Ctrl+A selects all elements instantly. `nudgeSelected()` and `selectAll()` added to useSketch hook. Keyboard shortcuts panel updated to document both. Solves precision placement without needing to edit raw JSON coordinates.
 
 - [x] **Per-element color picker in Selection panel** — When one or more elements are selected, the "Selection" section in the left sidebar shows 8 preset color swatches + a custom `<input type="color">`. Clicking any swatch or picking a custom color instantly applies it to every selected element's `color` property, replacing the need to edit raw JSON. Color change is fully undoable (Ctrl+Z). Swatch palette matches the global Ink Color section for consistency. Mobile bottom-sheet ControlPanel updated too.
