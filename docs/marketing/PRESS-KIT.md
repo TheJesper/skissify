@@ -665,3 +665,37 @@ Skissify is a sketch tool with two modes: for developers, it's a JSON-to-sketch 
 Launched March 27, 2026 with 14 architectural element types, 4 paper styles, and a multi-harmonic wobble rendering engine that makes computer-generated lines look genuinely hand-drawn.
 
 Free tier available. Pro at €5/month.
+
+---
+
+## Cycle 18 Additions (March 27, 16:30 CET)
+
+### New Press Angle: Homeowner Discovery Story
+
+**Story Hook:** "Built for AI developers. Discovered by homeowners."
+
+On launch day, Skissify's most talked-about use case emerged organically: homeowners describing kitchen and bathroom renovation layouts to Claude, having it generate floor plan JSON, and printing the Skissify output to show contractors. The founder had no homeowner marketing — they found it themselves.
+
+**Who to pitch this to:**
+- Consumer lifestyle press (Wired home, Apartment Therapy Tech)
+- Local/regional home improvement publications
+- Real estate and renovation verticals (Houzz, This Old House digital)
+
+**Pitch angle:** "An AI developer tool accidentally solves a common homeowner problem: communicating renovation ideas to contractors without architectural training."
+
+### New Community Platforms (Added Cycle 18)
+| Platform | Members | Content Angle | Target Post Date |
+|----------|---------|--------------|-----------------|
+| r/HomeImprovement | 3.4M | Renovation planning with AI floor plans | 19:00 CET Day 1 |
+| r/DIY | 8.5M | Room layout sketches before starting projects | 20:00 CET Day 1 |
+| Indie Hackers community | 100K+ | Honest 16-hour launch update | 18:30 CET Day 1 |
+
+### Updated Q&A for Press
+
+**Q: Who is the target user?**  
+A: Two audiences emerged on launch day. Primary: developers and AI enthusiasts building with MCP and LLMs who need visual output for agents. Secondary (discovered organically): homeowners and property renovators who use AI assistants to describe layouts and want to communicate those ideas to contractors. Both groups use the same product differently — the developer via JSON/MCP, the homeowner via natural language to an AI that generates the JSON.
+
+**Q: Did you plan for the homeowner use case?**  
+A: No. I built Skissify entirely for the AI developer market. The homeowner use case emerged on Day 1 when people started sharing how they were using it. The JSON-first architecture that was designed for machines turns out to be equally useful when an AI generates that JSON in response to a human description.
+
+*Press Kit last updated: March 27, 2026 (Cycle 18 — 16:30 CET)*

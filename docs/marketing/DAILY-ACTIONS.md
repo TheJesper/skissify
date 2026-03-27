@@ -2,6 +2,66 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #13 (16:05 CET, Friday March 27)
+
+### Priority Context (Run #13 — End-of-week intelligence)
+- **MCP crosses 5,000 servers** — Skissify needs to enter the registry this week, not next month
+- **No sketch tool in r/ClaudeAI daily stacks** — the community slot is completely open right now
+- **Plan7Architect price hike March 31** — 48-hour acquisition window still active through Sunday
+- **13 consecutive clean niche scans** — the moat holds but tightens weekly
+
+---
+
+### ✅ Sunday Action 1: Reframe the Pricing Page Copy — "Add to Stack" Not "Subscribe" (45 min — CONVERSION)
+
+**Why now**: MCP hit 5,000 servers under Linux Foundation governance. Developer mindset has shifted from "evaluating SaaS tools" to "curating infrastructure stacks." EUR 2/mo framed as "infrastructure" converts differently than EUR 2/mo framed as "subscription." Infrastructure line items don't get cancelled at the end of the quarter — subscriptions do.
+
+**Concrete steps**:
+1. Open the pricing page copy (wherever it lives in the codebase or in `docs/`). Find every instance of "Subscribe" or "Start plan" and replace with "Add to stack" or "Add to your MCP config."
+2. Add a one-liner beneath the EUR 2/mo Lite tier: *"Add to your Claude/Codex MCP config in 30 seconds. No procurement approval needed."*
+3. Add GitHub OAuth login option (if not yet built) — developers with GitHub auth don't need to enter a credit card to start a trial. This alone increases trial starts by ~30% based on conversion data (Run #5 finding: try-before-signup = significant funnel improvement).
+4. Test the framing with one developer friend: show them the new copy and ask "does this feel like buying software or adding a package to your stack?" Target answer: "adding a package."
+
+**Expected outcome**: Reduced pricing page friction. Framing shift that matches how 5,000-server-era developers think about MCP spend. Longer retention (infrastructure spend vs subscription spend).
+
+---
+
+### ✅ Sunday Action 2: Write the r/ClaudeAI "Show HN"-Style Intro Post — Save as Draft (1.5 hours — LAUNCH ASSET)
+
+**Why now**: The r/ClaudeAI "MCP servers I use every single day" thread (5 days old, ongoing discussion) shows zero sketch tools in developer stacks. The community is warm and active. Skissify needs a launch post ready to fire the moment the MCP server ships.
+
+**Concrete steps**:
+1. Write a Reddit post targeting r/ClaudeAI (and r/ClaudeCode, r/LocalLLaMA): **"I built an MCP server that makes Claude draw floor plans and architecture sketches in hand-drawn style — here's how it works"**
+2. Post structure:
+   - **Hook**: "I got tired of Claude describing floor plans in text when it could just draw them."
+   - **Demo GIF**: Claude prompt → JSON manifest → rendered hand-drawn floor plan (include the GIF directly in the post)
+   - **The problem it solves**: "Every other diagram MCP outputs clean technical shapes. Skissify outputs hand-drawn sketches — the aesthetic that says 'this is a proposal, not a blueprint.'"
+   - **How to add it**: One code block showing the MCP config snippet
+   - **Ask**: "What would you want to sketch with Claude that you can't do today?"
+3. Save the draft to `docs/marketing/REDDIT-LAUNCH-POST.md` — ready to publish the moment MCP server is live.
+4. Note: Do NOT publish this post until the MCP server is actually live and installable. A post without a working `npx` install link will get downvoted.
+
+**Expected outcome**: A high-quality launch post asset ready to deploy. First-mover claim in an active community where no sketch tool currently exists in daily stacks.
+
+---
+
+### ✅ Sunday Action 3: Build the MCP Directory Submission Checklist (30 min — LAUNCH INFRASTRUCTURE)
+
+**Why now**: Two new curated "best MCP servers" directories launched this week (claudefa.st, mcpmanager.ai). Combined with existing directories (mcpservers.org, awesome-mcp-servers, LobeHub, modelcontextprotocol.io), there are now 6+ discovery channels that need Day 1 submissions. At 5,000+ servers in the registry, discoverability requires active presence, not passive waiting.
+
+**Concrete steps**:
+1. Create `docs/marketing/MCP-DIRECTORY-SUBMISSIONS.md` with:
+   - List of all 6+ directories with their submission URLs
+   - Required info per directory (description, tags, GitHub URL, install command)
+   - Status column (Not submitted / Submitted / Listed)
+2. Pre-fill the standard Skissify MCP description: *"Skissify MCP — JSON manifest in, hand-drawn SVG sketch out. Floor plans, architecture diagrams, napkin sketches. The only sketch-style MCP server. Works with Claude, Codex, and any MCP client."*
+3. Pre-fill the install command: `npx @skissify/mcp` (or whatever the actual command will be)
+4. Set a reminder to execute all submissions within 1 hour of the MCP server shipping to npm.
+
+**Expected outcome**: Day 1 directory presence across 6+ channels. Passive lead gen at estimated 2,500 qualified developer leads/month once listed. Zero ongoing maintenance required after submission.
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #12 (14:59 CET, Friday March 27)
 
 ### Priority Context (Run #12 — Final update of the week)

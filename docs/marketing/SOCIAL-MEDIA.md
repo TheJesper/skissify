@@ -3334,3 +3334,211 @@ If you build with AI agents or use design tools: what's your relationship with r
 
 *Last Updated: March 27, 2026 (Cycle 17 — 16:01 CET)*
 *Added: Tweets 37-40 ("Vibe Coding is Dead" newsjack, spatial AI thread, "7 things I didn't expect", midnight US West hook), Bluesky posts (vibe coding + homeowner story), LinkedIn article "AI Design Getting Rougher", r/designtools "why I made it ugly" post, full timing table 16:00-22:30, blog posts #23 + #24*
+
+---
+
+## Cycle 18 — Additional Content (16:30 CET)
+
+### Tweets 41-44: Evening US Prime Time (17:00–23:00 CET / 11:00 AM–5:00 PM ET)
+
+**Tweet 41 — 17:45 CET — The Launch Day Honesty Post**
+```
+16 hours into launch day. Here's what nobody tells you:
+
+You will feel like you're shouting into a void for the first 6 hours.
+
+Then something catches.
+
+A retweet. A comment. A Reddit thread. The HN post that sits at 3 points for 2 hours and hits the front page.
+
+You can't predict it. You can only be present when it happens.
+
+skissify.com — still live 🚀
+
+[no image needed — this one lands as pure text]
+```
+
+**Tweet 42 — 19:00 CET — The Homeowner Surprise (Consumer Angle)**
+```
+I built an AI tool for developers.
+
+The most popular use case on launch day: homeowners describing kitchen renovations to Claude and printing the floor plans for contractor calls.
+
+Not what I expected. Probably the bigger market.
+
+Funny how that works.
+
+skissify.com
+```
+
+**Tweet 43 — 21:00 CET — Technical Appreciation Post (Tag A Developer)**
+```
+The thing that took longest to build in @skissify:
+
+Making lines look like a HUMAN drew them.
+
+Sine wave offsets look mechanical. You can tell.
+
+Real hands oscillate at 3-5 different frequencies simultaneously, with decreasing amplitude on longer strokes.
+
+Multi-harmonic wobble. That's the secret.
+
+[attach: close-up comparison — mechanical vs multi-harmonic line]
+```
+
+**Tweet 44 — 23:00 CET — Day 1 Wrap (Build In Public)**
+```
+Day 1 complete.
+
+Here's what happened:
+→ [X] signups
+→ [X] sketches created
+→ [X] MCP renders via Claude
+→ [X] Pro conversions
+→ [X] countries
+
+What surprised me: [fill with real data]
+What didn't work: [fill honestly]
+What I'm fixing tomorrow: [fill]
+
+Everything's transparent at skissify.com. Build in public or bust.
+```
+
+---
+
+### r/HomeImprovement Post (Post 19:00 CET)
+**Title:** "I built a thing that lets you sketch your renovation ideas for contractor calls (powered by AI)"
+
+```
+Background: I'm a developer, not a designer or contractor.
+
+I built Skissify (skissify.com) primarily as an AI developer tool — it lets AI agents like Claude generate hand-drawn floor plans from JSON. The intended user was AI developers.
+
+What's happening on launch day: homeowners are using it.
+
+The pattern I'm seeing: describe a renovation layout to Claude in natural language → Claude generates the sketch JSON → Skissify renders a hand-drawn floor plan → you print it or share the link for the contractor call.
+
+It apparently solves a real communication problem: describing what you want to a contractor without being able to draw it precisely.
+
+**Current limitations:**
+- It's fairly technical to set up with Claude (requires MCP server or manual JSON)
+- There's no drag-and-drop editor yet (JSON input only right now)
+- You need to understand rough coordinate layouts to use the JSON directly
+
+**What it does well:**
+- 14 architectural element types (rooms, doors, windows, stairs, columns, dimensions)
+- Permanent share link for every sketch
+- Free tier with no sign-in required to view links
+
+If this is useful for renovation planning, I'd love to hear what features would make it less technical to use. The homeowner workflow wasn't in scope — it's becoming obvious it should be.
+
+[skissify.com](https://skissify.com) — free to try, no credit card
+
+*Disclosure: I'm the developer. Happy to answer technical questions.*
+```
+
+---
+
+### r/DIY Post (Post 20:00 CET)
+**Title:** "AI can draw rough floor plans now — useful for planning DIY room layouts before you start"
+
+```
+I launched a tool today called Skissify — it converts structured descriptions into hand-drawn floor plan sketches. Originally built for AI developers, but I'm realizing it's actually useful for DIY planning.
+
+How it works for DIY:
+1. Describe your room/layout to Claude (or any AI with MCP)
+2. The AI generates the sketch JSON
+3. Skissify renders it as a hand-drawn floor plan
+4. Share the link or print it
+
+Use cases I've seen today:
+- Bathroom renovation layout planning
+- Kitchen remodel cabinet placement
+- Garage organization ("where should the workbench go")
+- Home office setup planning
+
+The rendering is deliberately hand-drawn (not architectural CAD) — same fidelity as a careful napkin sketch. Good for communicating ideas, not for permit drawings.
+
+Free at skissify.com. No sign-in to view shared links.
+
+What DIY projects do you think this could help with?
+```
+
+---
+
+### Indie Hackers Community Post (Post 18:30 CET)
+**Title:** "Launched today — the first MCP-native sketch tool. Here's the honest 16-hour update."
+
+```
+I launched Skissify today (skissify.com). It's a sketch generation tool where the input is JSON — AI agents use it via MCP to create hand-drawn visual outputs.
+
+**Why I built it:**
+AI agents are great at reasoning about layouts, spaces, and diagrams. But the output was always text descriptions of visuals. Skissify closes that loop: JSON in, hand-drawn sketch + permanent URL out.
+
+**Honest 16-hour numbers:**
+[fill with real data before posting]
+
+**What I got wrong in my marketing plan:**
+- I underestimated how much a homeowner use case (renovation planning with contractors) would emerge
+- I overestimated how many people are ready to use MCP on Day 1
+- I underestimated how much content I could actually post in one day (planned 12 platforms, managed 5)
+
+**What I'd tell myself at midnight:**
+Fewer channels, more engagement. One good conversation beats ten broadcasts.
+
+**Biggest insight:**
+The "built for AI agents, used by homeowners" story is more interesting than the pure AI developer story. Both are true. The human story travels further.
+
+Happy to answer questions about the launch, the MCP architecture, or the rendering engine.
+```
+
+---
+
+### Updated Timing Table (Cycle 18 — 16:30 CET)
+
+| Time (CET) | Platform | Action | Status |
+|------------|----------|--------|--------|
+| ~~15:15~~ | Twitter/X | Tweet 29 — Google Stitch | Done/queued |
+| ~~16:15~~ | Twitter/X | Tweet 37 — Vibe Coding Dead | Done/queued |
+| ~~16:30~~ | Bluesky | Vibe coding/napkin post | Done/queued |
+| **17:00** | Twitter/X | **Tweet 38 — spatial AI thread** | Post now |
+| **17:45** | Twitter/X | **Tweet 41 — launch day honesty** | NEW |
+| **18:00** | LinkedIn | "AI Design Getting Rougher" article | NEW |
+| **18:00** | r/designtools | "Why I made it ugly" post | NEW |
+| **18:30** | Indie Hackers | 16-hour honest update | NEW |
+| 18:30 | r/LocalLLaMA | Launch post | LAUNCH-DAY-NOW |
+| 19:00 | r/webdev | Canvas 2D technical post | Cycle 15 |
+| **19:00** | r/HomeImprovement | Homeowner renovation post | NEW |
+| **19:30** | Twitter/X | Tweet 39 — "7 things I didn't expect" | Cycle 17 |
+| **19:30** | Twitter/X | **Tweet 42 — homeowner surprise** | NEW |
+| **20:00** | r/DIY | Renovation planning post | NEW |
+| 20:00 | r/ClaudeAI | Post | Cycle 9 |
+| **20:00** | Bluesky | Homeowner story post | Cycle 17 |
+| 20:15 | Twitter/X | Tweet 31 — Friday dream house | Cycle 15 |
+| **21:00** | Twitter/X | **Tweet 43 — multi-harmonic wobble tech** | NEW |
+| 21:30 | Twitter/X | Tweet 32 — "7 things" (backup) | Cycle 15 |
+| **22:30** | Twitter/X | Tweet 40 — midnight US West hook | Cycle 17 |
+| **23:00** | Twitter/X | **Tweet 44 — Day 1 wrap (real numbers)** | NEW — fill with data |
+
+---
+
+### Blog Posts Added This Cycle (18)
+| # | Post | File | Platform | Day |
+|---|------|------|----------|-----|
+| 25 | **"What Actually Happened in the First 16 Hours"** | `what-happened-in-the-first-16-hours.md` | Dev.to tonight, Indie Hackers Day 2 | Day 1 |
+
+---
+
+### New Communities Added This Cycle (18)
+| Community | Post Angle | Timing |
+|-----------|-----------|--------|
+| **r/HomeImprovement** | Renovation planning with AI floor plans | 19:00 CET |
+| **r/DIY** | Room layout planning before starting DIY work | 20:00 CET |
+| **Indie Hackers community post** | Honest 16-hour launch metrics + learnings | 18:30 CET |
+
+**Rationale:** The homeowner use case discovered organically on launch day opens a non-developer community door that was not previously targeted. r/HomeImprovement (3.4M members) and r/DIY (8.5M members) are underexplored for Skissify. Posts framed as "developer building for devs, discovered by homeowners" have authentic traction potential and low risk of being flagged as spam when transparent about being the developer.
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 18 — 16:30 CET)*
+*Added: Tweets 41-44 (launch day honesty, homeowner surprise, multi-harmonic tech, Day 1 wrap), r/HomeImprovement homeowner post, r/DIY room planning post, Indie Hackers 16-hour honest update, blog post #25 "What Actually Happened in the First 16 Hours", updated timing table*

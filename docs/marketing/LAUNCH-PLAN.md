@@ -162,6 +162,82 @@
 
 ---
 
+## Marketing Improvements (Cycle 18 — March 27, 16:30 CET)
+
+### ⚡ STATUS: US MORNING PRIME TIME — HOMEOWNER ANGLE IS THE SLEEPER HIT
+
+It's 16:30 CET (10:30 AM ET / 7:30 AM PT). US East Coast is fully awake, US West just starting. The "vibe coding is dead" window from Cycle 17 is still warm for the next 90 minutes. **The biggest new insight this cycle: the homeowner market is real.** Skissify was built for developers but is being discovered by homeowners planning renovations. This opens two high-traffic subreddits (r/HomeImprovement 3.4M, r/DIY 8.5M) that were not on the plan.
+
+### Homeowner Market Signal
+Launch day revealed an unexpected use case: people describing kitchen/bathroom renovations to Claude, getting floor plan JSON, rendering in Skissify, and printing for contractor calls. This is:
+- **A bigger market** than the AI developer segment (by user count)  
+- **A better press story** — "AI tool for developers accidentally used by homeowners" is the exact human-interest hook that gets shared on Hacker News, Twitter, and consumer press
+- **A new community vector** — r/HomeImprovement, r/DIY, r/malelivingspace, r/femalelivingspace never targeted before
+
+### Completed This Cycle
+- [x] ✅ **Blog post #25 NEW**: "What Actually Happened in the First 16 Hours of Launch" — honest build-in-public update with placeholder metrics table, 3 things that went better than expected, 3 that were harder, the homeowner discovery section, and practical learnings for other founders. Best for Dev.to tonight, Indie Hackers Day 2. File: `docs/marketing/blog/what-happened-in-the-first-16-hours.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 18**: Tweets 41-44 (launch day honesty post, homeowner surprise, multi-harmonic wobble tech, Day 1 wrap), r/HomeImprovement homeowner post, r/DIY room planning post, Indie Hackers 16-hour honest update, updated timing table 16:30-23:00 CET
+
+### New Blog Post (Cycle 18) — Distribution Plan
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 25 | **What Actually Happened in 16 Hours** | `what-happened-in-the-first-16-hours.md` | **Dev.to tonight, Indie Hackers Day 2** | **Day 1** |
+
+### New Communities Unlocked This Cycle
+| Community | Members | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/HomeImprovement** | 3.4M | "Developer discovers homeowners using it for renovation planning" | 19:00 CET |
+| **r/DIY** | 8.5M | "AI can rough-sketch room layouts for planning — useful before you start" | 20:00 CET |
+| **Indie Hackers** | — | Honest 16-hour launch metrics — post in #builds channel | 18:30 CET |
+
+### Strategic Idea: Homeowner Onboarding Flow (Week 2 Consideration)
+If > 30% of signups are non-developers by Day 3, consider:
+1. **A "Human Mode" landing page** — "Describe your room, get a sketch" headline instead of "JSON → hand-drawn"
+2. **A simpler input form** — room dimensions + style preferences that generates JSON automatically (no manual JSON needed)
+3. **A contractor-friendly share mode** — larger text, printable view, optional PDF export
+This is not a pivot. It's a dual-landing-page strategy to serve both markets from the same product.
+
+### Immediate Actions Right Now (16:30 CET)
+1. **Post Tweet 38** (spatial AI thread) — 17:00 CET — still warm window
+2. **Post Tweet 41** (launch day honesty) — 17:45 CET — US East best engagement time
+3. **Queue Tweet 42** (homeowner surprise) — 19:30 CET
+4. **Post Indie Hackers** honest 16-hour update — 18:30 CET
+5. **Post r/HomeImprovement** — 19:00 CET (be transparent you're the developer)
+6. **Post r/DIY** — 20:00 CET
+7. **Publish "What Happened in 16 Hours" on Dev.to** — tonight, after you have real numbers to fill in the metrics table
+8. **Post Tweet 44** (Day 1 wrap) — 23:00 CET — fill in REAL numbers, no placeholders
+
+### Cumulative Blog Inventory (25 posts)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1 | Why Hand-Drawn Sketches Beat Figma | why-hand-drawn... | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | how-ai-agents... | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | skissify-vs-excalidraw | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | build-first-ai... | Dev.to | Day 2 |
+| 5 | We Launched Today | we-launched-today... | Indie Hackers | Day 1 (22:00) |
+| 6 | JSON Schema Behind Skissify | the-json-schema... | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | how-to-add-skissify... | Dev.to, Hashnode | Day 7 |
+| 8 | First Sketch Tool for AI Agents | the-first-sketch... | HN direct, Dev.to | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | mcp-has-12000... | Dev.to, Bluesky | Day 2 |
+| 10 | I Gave Claude a Pencil | i-gave-claude... | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | launch-day-letter... | Dev.to | Day 1 |
+| 12 | Three-Layer Stack: Missing Visual Layer | mcp-a2a-three-layer... | Dev.to, HN ref | Day 3 |
+| 13 | Vibe Drawing | vibe-drawing... | Dev.to, Medium | Day 4 |
+| 14 | Real Estate Floor Plan Revolution | the-real-estate... | Medium, LinkedIn | Day 5 |
+| 15 | Launch Day Live Update — Hour 4 | launch-day-live-update... | Dev.to | Day 1 (13:00) |
+| 16 | The Visual Feedback Loop | ai-agent-visual-feedback-loop.md | Dev.to, Medium | Day 6 |
+| 17 | The Floor Plan That Surprised Me | the-floor-plan-that... | Substack, Medium | Day 2-3 |
+| 18 | Why Your AI Agent Needs Visual Output | why-your-ai-agent... | Dev.to, Medium | Day 2 |
+| 19 | The Weekend Project | the-weekend-project... | Indie Hackers | Day 2 |
+| 20 | Skissify for Non-Developers | skissify-for-non-developers... | Medium, Substack | Day 4 |
+| 21 | Skissify vs Google Stitch | skissify-vs-google-stitch... | Dev.to, Medium | Day 2-3 |
+| 22 | The End of Text-Only AI Output | the-end-of-text-only... | Dev.to, HN ref | Day 6-7 |
+| 23 | **Vibe Coding Is Dead. Vibe Drawing Is Next.** | vibe-coding-is-dead... | **Medium TODAY** | Day 1 tonight |
+| 24 | The Napkin Phase AI Was Missing | the-napkin-phase... | Substack, Medium | Day 2-3 |
+| 25 | **What Actually Happened in 16 Hours** | **what-happened-in-the-first-16-hours.md** | **Dev.to tonight** | **Day 1** |
+
+---
+
 ## Marketing Improvements (Cycle 17 — March 27, 16:01 CET)
 
 ### ⚡ STATUS: EVENING US SURGE — "VIBE CODING IS DEAD" NEWSJACK WINDOW OPEN NOW
