@@ -1550,5 +1550,204 @@ Here's what happened. →
 
 ---
 
-*Last Updated: March 27, 2026 (Cycle 7 — 04:41 CET)*  
-*Added: "12,770 MCP servers" viral hook tweet, determinism/precision angle tweet, Bluesky 4-post thread, LinkedIn article hook, r/homedesign soft-launch post, reactive tweet template for AI news*
+## CYCLE 9 ADDITIONS — March 27, 06:51 CET (Launch Morning — US Wave Strategy)
+
+### Why The US Wave Matters
+European launch window (07:00–14:00 CET) captures early EU audience.
+But the biggest developer Twitter/HN audience is US-based.
+US East Coast wakes up at 14:00 CET. US West Coast at 17:00 CET.
+Plan your second wind for 18:00–21:00 CET — when US is at peak lunchtime/afternoon browsing.
+
+---
+
+### Tweet 6: US Morning Wave (18:00 CET = 12:00 ET = 09:00 PT)
+```
+If you missed our launch this morning — we're Skissify.
+
+JSON → hand-drawn sketch.
+
+AI agents can use it natively via MCP. Give Claude a JSON schema and it draws floor plans, wireframes, architecture diagrams.
+
+12 hours in: [X] signups, [X] sketches created.
+
+skissify.com (free tier)
+
+#AITools #MCP #IndieHacker
+```
+
+### Tweet 7: Afternoon Engagement Hook (19:30 CET = 13:30 ET)
+```
+Hot take: Figma is the wrong tool for the first 10 minutes of a design.
+
+When you're figuring out IF an idea works — not how it looks — hand-drawn wins.
+Less visual polish = more honest feedback.
+
+Skissify makes hand-drawn the path of least resistance (even for AI agents).
+
+[attach: side-by-side: rough sketch vs polished Figma of same floor plan]
+```
+
+### Tweet 8: Build-In-Public Update (21:00 CET = 15:00 ET)
+```
+End of launch day update.
+
+Today:
+→ [X] signups
+→ [X] sketches created
+→ [X] Pro subscriptions
+→ [X] upvotes on Product Hunt
+→ [X] HN points
+
+Top feedback: [1 key thing people wanted]
+First bug reported: [what it was and if fixed]
+
+We'll be back tomorrow. Thanks for the launch day love. 🙏
+
+#BuildInPublic #IndieHackers
+```
+
+---
+
+### Reddit: US Evening Wave (20:00–21:00 CET)
+
+**r/ClaudeAI (post at 20:00 CET):**
+```
+Title: I built an MCP server that lets Claude draw floor plans (not describe them — actually draw them)
+
+Just launched today: Skissify MCP server.
+
+Claude can call create_sketch → returns a hand-drawn floor plan URL.
+
+Tell Claude: "Design a 1-bedroom apartment, minimize hallway space"
+It writes the JSON, calls the tool, returns a sketch you can share.
+
+npm install -g @skissify/mcp-server
+
+Happy to help anyone set it up — had a few users already get it running today.
+```
+
+**r/ChatGPT (post at 20:30 CET if ChatGPT has MCP support):**
+```
+Title: Skissify — give your AI assistant the ability to draw sketches via MCP
+
+If you're using any MCP-compatible AI: Skissify adds a "draw" tool.
+
+Prompt: "Design a home office for a 3m x 4m spare room, optimize for video calls"
+→ AI generates JSON layout
+→ Calls Skissify MCP
+→ Returns hand-drawn sketch URL
+
+JSON in. Hand-drawn out. Free tier at skissify.com.
+```
+
+---
+
+### Newsletter Pitch — US Evening Send (send by 17:00 CET for US morning delivery)
+
+**Subject line options:**
+- "AI agents can now draw (not just describe)"
+- "The first sketch tool built for Claude and GPT"
+- "JSON → hand-drawn sketch: a weird product that actually works"
+
+**Body:**
+```
+Hi [Name],
+
+Quick pitch for your [newsletter name] audience:
+
+Skissify — launched today — takes JSON and renders it as a hand-drawn sketch.
+
+The key hook: AI agents can call it natively via MCP. Claude can design a floor plan and actually draw it in the same step.
+
+It's the first sketch tool built for programmatic input rather than human interaction.
+
+Free tier available. €5/mo Pro.
+
+One-liner: "JSON in. Hand-drawn out. AI agents can draw."
+Full demo: skissify.com
+
+Would love a mention in your next issue if it fits. Happy to provide a custom demo GIF or quote.
+
+— [Your name]
+```
+
+**Priority newsletter targets for today:**
+1. TLDR AI (tldr.tech/ai) — high-signal AI tools, 500K+ subscribers
+2. The Rundown AI — popular AI newsletter
+3. The Changelog (changelog.com) — dev tools newsletter, perfect audience
+4. Indie Hackers weekly (if you have a connection)
+5. Cooper Press (JavaScript Weekly, Node Weekly) — if you frame it as a Node/npm story
+
+---
+
+### Dribbble & Design Community Posts (Day 2, but draft today)
+
+Skissify has a visual angle. The hand-drawn output is beautiful. Don't ignore design communities.
+
+**Dribbble shot description:**
+```
+Skissify — JSON to Hand-Drawn Sketch
+
+An AI-native sketch tool that turns structured data into hand-drawn visuals.
+The rendering engine uses multi-harmonic wobble — not a simple sine wave.
+
+Built for: floor plans, wireframes, architecture diagrams, system maps.
+Also: AI agents using it via MCP to generate sketches autonomously.
+
+Each paper style has its own character: cream napkin, blueprint, graph paper, white canvas.
+```
+*Post your best-looking floor plan screenshot as the Dribbble shot. Tag: #SketchTool #AIDesign #Visualization*
+
+**Behance project description:**
+```
+Skissify: A Sketch Tool for the Agent Era
+
+Project type: Product Design + Engineering
+Year: 2026
+
+Context: AI language models can reason about space and layout. They had no way to output visuals.
+Skissify is the bridge: JSON schema in, hand-drawn sketch out.
+
+The design challenge: make programmatic output feel human.
+The engineering challenge: multi-harmonic wobble that's consistent but not mechanical.
+
+[Include screenshots of all 4 paper styles + floor plan + wireframe + system diagram]
+```
+
+---
+
+### Launch Day Letter Blog Post
+New post for 12:00 CET publish: `docs/marketing/blog/launch-day-letter-to-ai-developers.md`
+
+A direct, personal letter from the founder to AI developers. Best for:
+- Dev.to (publish at 12:00 CET — catches US morning and EU midday)
+- Medium (same timing)
+- Hacker News (link in comments if HN thread is active)
+- LinkedIn newsletter
+
+This is the most "human" content we have. It explains the problem, the solution, and the vision without being a press release.
+
+---
+
+### Key Timing Summary — Full Launch Day Coverage
+| Time (CET) | Action | Audience |
+|------------|--------|---------|
+| 06:30 | Bluesky pre-launch post | EU early devs |
+| 07:00 | Tweet 1 (launch announcement) | Global |
+| 09:01 | Product Hunt live + maker comment | Global |
+| 09:15 | LinkedIn + PH share tweet | EU professionals |
+| 10:00 | Show HN submission | Global techies |
+| 11:00 | Reddit r/SideProject | Global indie hackers |
+| 12:00 | Publish "Launch Day Letter" blog post | US morning starts |
+| 14:00 | Tweet 3 (technical thread) + r/webdev | EU afternoon + US morning |
+| 17:00 | Tweet 4 (comparison) + r/mcp | US mid-morning |
+| 18:00 | Tweet 6 (US wave) — "if you missed it" | US lunch |
+| 19:30 | Tweet 7 (hot take engagement hook) | US early afternoon |
+| 20:00 | r/ClaudeAI post | US afternoon |
+| 21:00 | Tweet 8 (build-in-public end of day) | US afternoon + EU evening |
+| 22:00 | Fill blog post numbers + post to IH | Global |
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 9 — 06:51 CET)*
+*Added: US wave tweet strategy (Tweets 6-8), r/ClaudeAI + r/ChatGPT posts, newsletter pitch templates, Dribbble/Behance design community strategy, launch day letter blog post announcement, full timing table*

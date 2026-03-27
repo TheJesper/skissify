@@ -162,6 +162,48 @@
 
 ---
 
+## Marketing Improvements (Cycle 9 — March 27, 06:51 CET)
+
+### Completed This Cycle
+- [x] ✅ **Blog post #11 NEW**: "A Letter to AI Developers — Skissify Is Live" — 1,100-word personal launch day letter, conversational tone, includes MCP setup instructions in-body, ends with a genuine ask to share what gets built. Publish on Dev.to at 12:00 CET to catch US morning overlap. File: `docs/marketing/blog/launch-day-letter-to-ai-developers.md`
+- [x] ✅ **SOCIAL-MEDIA.md: US Wave Strategy** — three new tweets (6-8) targeting 18:00–21:00 CET when US lunch/afternoon audience peaks. "If you missed our launch this morning" framing for tweet 6, hot-take engagement hook for tweet 7, build-in-public end-of-day wrap for tweet 8.
+- [x] ✅ **SOCIAL-MEDIA.md: r/ClaudeAI + r/ChatGPT posts** — dedicated posts for AI assistant communities (20:00–20:30 CET), framed around the MCP capability rather than product promotion.
+- [x] ✅ **SOCIAL-MEDIA.md: Newsletter pitch templates** — copy-paste cold pitch for TLDR AI, The Rundown, The Changelog, and others. Can be sent before 17:00 CET for US morning delivery. Three subject line options included.
+- [x] ✅ **SOCIAL-MEDIA.md: Dribbble/Behance strategy** — description copy for design community posts. These platforms were missing from all previous cycles. Hand-drawn output is portfolio-worthy content.
+- [x] ✅ **SOCIAL-MEDIA.md: Full day timing table** — every action from 06:30 to 22:00 CET in one table, so founder has a single reference during the day.
+
+### What's Different About Cycle 9
+Previous cycles focused on content creation and EU morning launch. Cycle 9 fills the gap: **the US afternoon/evening wave**. The 18:00–21:00 CET window (12:00–15:00 ET, 09:00–12:00 PT) is a second major traffic opportunity that most EU founders miss because they're exhausted by then. The content is pre-written. Just need to post it.
+
+### Blog Post #11 — Key Features
+"A Letter to AI Developers" is different from the other 10 posts:
+- Personal, direct address — not a tutorial or comparison
+- Includes working JSON example in the letter body (reduces barrier to try it)
+- Full MCP setup instructions (3 steps) in context
+- Ends with a genuine ask to build things and share, not a CTA to upgrade
+- Right length for Dev.to (6 min read) without being exhausting
+- Best for launch day 12:00 CET publish — EU midday + US morning
+
+### Today's Full Action Table (for founder's reference)
+| Time (CET) | Action | File Reference |
+|------------|--------|---------------|
+| 06:30 | Bluesky pre-launch | SOCIAL-MEDIA.md Cycle 8 |
+| 07:00 | Tweet 1 (launch) | SOCIAL-MEDIA.md Tweet 1 |
+| 09:01 | Product Hunt + maker comment | LAUNCH-DAY-NOW.md |
+| 09:15 | LinkedIn + PH share tweet | SOCIAL-MEDIA.md Cycle 8 |
+| 10:00 | Show HN | LAUNCH-DAY-NOW.md |
+| 11:00 | r/SideProject | LAUNCH-DAY-NOW.md |
+| 12:00 | **Publish "Launch Day Letter" blog post** | blog/launch-day-letter... |
+| 14:00 | Tweet 3 thread + r/webdev | SOCIAL-MEDIA.md Tweet 3 / LAUNCH-DAY-NOW.md |
+| 17:00 | Tweet 4 + r/mcp | SOCIAL-MEDIA.md Tweet 4 / LAUNCH-DAY-NOW.md |
+| 18:00 | **Tweet 6: US wave "if you missed it"** | SOCIAL-MEDIA.md Cycle 9 |
+| 19:30 | **Tweet 7: hot take engagement** | SOCIAL-MEDIA.md Cycle 9 |
+| 20:00 | **r/ClaudeAI post** | SOCIAL-MEDIA.md Cycle 9 |
+| 21:00 | **Tweet 8: build-in-public wrap** | SOCIAL-MEDIA.md Cycle 9 |
+| 22:00 | Fill numbers + post to IH | blog/we-launched-today... |
+
+---
+
 ## Marketing Improvements (Cycle 8 — March 27, 05:46 CET)
 
 ### Completed This Cycle
