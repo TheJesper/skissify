@@ -162,6 +162,58 @@
 
 ---
 
+## Marketing Improvements (Cycle 20 — March 27, 17:30 CET)
+
+### ⚡ STATUS: FRIDAY EVENING EXECUTION — AGENT COMMUNITIES + SUBSTACK + DAY 1 WRAP
+
+It's 17:30 CET (11:30 AM ET / 8:30 AM PT). **Cycle 20 shifts from planning to execution quality.** The content is mostly written; this cycle adds the final high-value pieces before 23:00 CET. Key unlocks: r/AI_Agents community (50K+ members, discussing LangGraph/CrewAI/n8n — perfect fit), Substack launch post with dual-market narrative, LinkedIn article on output-format moat, and a precise Day 1 wrap tweet formula with fill-in-the-blanks for real numbers.
+
+### What Changed Since Cycle 19
+- **r/AI_Agents confirmed as active community**: Web research shows 50K+ members actively discussing LangGraph, CrewAI, AutoGen, n8n in March 2026. This is the exact agent-developer audience for Skissify's MCP angle. Was not in the plan.
+- **Substack template written**: The "builder's note" format (not marketing, just honest story) performs well on Substack. The dual-market discovery story is the right hook.
+- **LinkedIn article angle found**: "The next moat is output format" — ties Figma/Notion/Vercel pattern to AI output primitive positioning. Higher perceived quality than typical tool launch posts.
+- **Day 1 wrap tweet formula tightened**: Tweet 52 now has fill-in-the-blank structure for real numbers. The formula: stats + best moment + worst moment + most surprising + Day 2 goal. No placeholders in the final post.
+- **New viral hooks written**: "JSON is the new UI" (Tweet 49) and "Missing Primitive" (Tweet 50) are cleaner and more shareable than prior announcement tweets.
+- **Blog post #27 written**: "Friday Evening: What Comes After Launch Day" — the builder's guide to the 17:00-23:00 CET window. Honest, tactical, publishable tonight on Dev.to.
+- **New hashtags confirmed**: #LangChain, #LangGraph, #CrewAI, #n8n, #AgentEngineering — map to active communities verified in search.
+
+### Completed This Cycle (20)
+- [x] ✅ **Blog post #27 NEW**: "Friday Evening: What Comes After Launch Day" — tactical builder's guide covering US prime time window, dual-market problem, MCP moment, and the Day 1 wrap post formula. File: `docs/marketing/blog/evening-push-friday-what-comes-next.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 20**: Tweets 49-52 (JSON is Universal, Missing Primitive, AI_Agents bridge, Day 1 wrap formula), LinkedIn article template, Substack launch post template, r/AI_Agents full community post, updated timing table 17:30-23:00 CET, hashtag updates
+- [x] ✅ **Community gap closed**: r/AI_Agents (50K+) added with full post copy
+- [x] ✅ **Substack channel activated**: Full launch post template written with dual-market narrative hook
+- [x] ✅ **New hashtags researched**: #LangGraph #CrewAI #n8n #AgentEngineering confirmed active
+
+### New Blog Post (Cycle 20) — Distribution Plan
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 27 | **Friday Evening: What Comes After Launch Day** | `evening-push-friday-what-comes-next.md` | **Dev.to tonight, Substack Day 2** | **Day 1 evening** |
+
+### New Communities Unlocked This Cycle (20)
+| Community | Members | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/AI_Agents** | 50K+ | "Added drawing capability to agent stack via MCP" — framework-specific (LangGraph/CrewAI/n8n) | 21:00 CET |
+| **Substack** | — | Builder's note: "What happened when real people found it" — dual-market discovery | 21:30 CET |
+| **LinkedIn (article)** | — | "The next competitive moat for AI products is output format" | 18:00 CET |
+
+### Immediate Actions Right Now (17:30 CET)
+1. **Post Tweet 49** (JSON is Universal) — 17:45 CET — peak early-evening engagement window
+2. **Post LinkedIn article** — 18:00 CET — business/founder audience now active
+3. **Post Tweet 50** (Missing Primitive) — 19:00 CET
+4. **Post Tweet 51** (AI_Agents bridge) — 20:30 CET, 30 min before r/AI_Agents post
+5. **Post r/AI_Agents** — 21:00 CET (new community, high-value)
+6. **Post Substack** — 21:30 CET (alongside Discord posts)
+7. **Post Tweet 52** (Day 1 wrap) — 23:00 CET sharp — fill in REAL numbers only
+
+### Cumulative Blog Inventory (27 posts)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1-25 | [See Cycle 18 for full list] | various | various | various |
+| 26 | **Developer Built for AI Devs, Used by Homeowners** | `developer-accidentally-built-for-homeowners.md` | Medium, Substack, Indie Hackers | Day 2 |
+| 27 | **Friday Evening: What Comes After Launch Day** | `evening-push-friday-what-comes-next.md` | Dev.to tonight, Substack Day 2 | Day 1 evening |
+
+---
+
 ## Marketing Improvements (Cycle 19 — March 27, 17:00 CET)
 
 ### ⚡ STATUS: FRIDAY EVENING US PRIME TIME — NEWSLETTER OUTREACH + DISCORD COMMUNITIES

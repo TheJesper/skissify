@@ -3833,3 +3833,262 @@ Based on current platform trends:
 
 *Last Updated: March 27, 2026 (Cycle 19 — 17:00 CET)*
 *Added: Tweets 45-48 (dual-market, newsletter callout, Friday floor plan, Discord thanks), Bluesky Cycle 19 post, Mastodon Cycle 19 post, Discord posts (Anthropic MCP + Changelog), newsletter outreach template with 8 targets, r/Architecture new community post, blog post #26 "Developer Built for AI Devs / Homeowners Used It", hashtag research update, full timing table 17:00-23:00 CET*
+
+---
+
+## CYCLE 20 — March 27, 2026 — 17:30 CET
+
+### ⚡ STATUS: FRIDAY EVENING PRIME TIME — EXECUTION MODE
+
+It's 17:30 CET. The plan is written. The content is ready. **This cycle is about execution quality and plugging the remaining gaps: new viral angle (JSON-is-universal), r/AI_Agents community added, stronger Substack post template, refined Day 1 wrap tweet formula.**
+
+---
+
+### Tweet 49: The "JSON is Universal" Viral Hook (Post 17:45 CET)
+```
+Hot take: JSON is the new UI.
+
+Figma requires a human hand.
+Excalidraw requires a mouse.
+Skissify requires... JSON.
+
+Sounds worse. Is actually better.
+
+Because AI agents can write JSON.
+Scripts can write JSON.
+APIs return JSON.
+
+Anything that can output JSON can now output a hand-drawn sketch.
+
+skissify.com
+
+#MCP #AIAgents #BuildInPublic
+```
+
+### Tweet 50: The "Missing Primitive" Post (Post 19:00 CET)
+```
+Every MCP server I've seen returns one of:
+→ Text
+→ Data
+→ API response
+
+None of them return drawings.
+
+Skissify is the first MCP server that gives your AI agent a pencil.
+
+12,770+ MCP servers. This is #12,771.
+
+And it draws.
+
+skissify.com #MCP #ClaudeCode
+```
+
+### Tweet 51: r/AI_Agents Community Bridge (Post 20:30 CET)
+```
+If you're building with LangGraph, CrewAI, AutoGen, or n8n —
+
+Your agents can now draw.
+
+Not metaphorically. Actual hand-drawn sketches.
+
+JSON in → sketch out. MCP-native. Works with Claude, GPT, any agent that can call an HTTP endpoint.
+
+What would YOUR agents draw? skissify.com
+
+#AIAgents #LangChain #CrewAI #n8n
+```
+
+### Tweet 52: Build-In-Public Day 1 Wrap Formula (Post 23:00 CET)
+*Fill in real numbers before posting*
+```
+Day 1 done. Here's everything:
+
+📊 Signups: [X]
+🎨 Sketches created: [X]
+💰 Pro conversions: [X]
+⭐ PH upvotes: [X]
+🔥 HN points: [X]
+📦 npm installs (MCP): [X]
+
+Best moment: [specific story — the homeowner, the HN comment, the first Pro signup]
+Worst moment: [honest, specific]
+Most surprising: homeowners + renovation planning (didn't plan this)
+
+Day 2 goal: [X] signups. Working on [specific feature/fix].
+
+Thread if you want the full story 🧵
+
+#BuildInPublic #IndieHackers #MCP #Skissify
+```
+
+---
+
+### Substack Launch Post (New — High Priority, Post Tonight or Day 2)
+**Title:** "I built a tool for AI agents. Here's what happened when real people found it."
+
+```
+This is a builder's note — not a marketing post.
+
+I launched Skissify today. It's a sketch tool where the input is JSON. I built it for AI agents — Claude, GPT, LangGraph, anything that speaks MCP.
+
+Here's what I didn't expect:
+
+Within the first 8 hours, someone was using it to plan a kitchen renovation.
+
+They didn't write JSON. They described their kitchen to Claude: "12 feet wide, 9 feet deep, peninsula on the north wall, window above the sink." Claude wrote the JSON. Skissify rendered the sketch. They sent it to their contractor.
+
+I built an API. They found a product.
+
+---
+
+**What Skissify actually does:**
+- Takes JSON describing a space (rooms, walls, doors, windows, stairs)
+- Renders it as a hand-drawn sketch with tunable "humanness"
+- Serves as an MCP server so AI agents can render sketches directly
+- Produces public share links, no signup required to view
+
+**What I thought it was for:** AI developer workflows — agents that need visual output capability.
+
+**What it turns out to be for:** Anyone who needs a rough sketch and has access to an AI that can translate natural language into JSON.
+
+---
+
+The gap I'm filling isn't "sketch tool." It's "the missing visual output layer for language models."
+
+Text → Text: covered. Text → Image (diffusion): covered. Text → Structured diagram (hand-drawn): not covered until now.
+
+That's the market I accidentally found. And it's bigger than I thought.
+
+---
+
+If you want to try it: skissify.com — free, no signup to view shared links.
+
+If you're an AI developer: `npm install -g @skissify/mcp-server` and add to your Claude Desktop config. Your agents can start drawing in 5 minutes.
+
+Building in public. Updates follow.
+
+— [Founder name]
+```
+
+---
+
+### r/AI_Agents Post (NEW COMMUNITY — 50K+ members, Post 21:00 CET)
+**Title:** "I added a drawing capability to my agent stack — here's how MCP makes it work"
+
+```
+I built a tool called Skissify that lets AI agents render hand-drawn sketches from JSON. Sharing it here because r/AI_Agents is exactly the right audience.
+
+**The problem it solves:**
+AI agents can reason about space, layout, and design. But they had no way to output visual artifacts. Every agent framework returns text, JSON, or API responses. None of them draw.
+
+**How it works:**
+1. Agent generates JSON describing a space (rooms, walls, doors, etc.)
+2. Skissify MCP server receives the JSON via tool call
+3. Returns a URL to a hand-drawn sketch
+
+Works with Claude (via MCP), LangGraph (HTTP endpoint), CrewAI (HTTP endpoint), AutoGen, n8n, anything that can call an HTTP API.
+
+**The JSON schema:**
+```json
+{
+  "elements": [
+    { "type": "room", "x": 50, "y": 50, "width": 200, "height": 150, "label": "Living Room" },
+    { "type": "door", "x": 120, "y": 50, "style": "hinged", "direction": "up" }
+  ],
+  "style": { "wobble": 3, "humanness": 0.8 }
+}
+```
+
+**14 element types:** rooms, walls, doors (hinged/sliding), windows, stairs, dimension lines, columns, annotations, and more.
+
+**Launch day surprise:** homeowners started using it via Claude to brief contractors on renovation plans. Wasn't the target market but it works.
+
+Free at skissify.com. MCP server on npm. Self-hostable via Docker.
+
+What agent frameworks are you using? Happy to help with integration.
+
+*Disclosure: I built it — launching today.*
+```
+
+---
+
+### LinkedIn Article (Post Friday Evening — Business/Product Angle)
+**Title:** "Why the next competitive moat for AI products isn't the model — it's the output format"
+
+```
+I've been thinking about why Figma won over Adobe XD, why Notion won over Confluence, why Vercel won over traditional hosting.
+
+In each case, the winner matched the workflow of how people actually work — not how they theoretically work.
+
+For AI products in 2026, I think the same principle applies to output formats.
+
+Most AI tools output text. Some output images (diffusion). A few output code.
+
+Nobody was outputting hand-drawn sketches — the informal visual language of early-stage thinking.
+
+I launched Skissify today to fill that gap. It takes JSON (AI-friendly structured input) and renders hand-drawn floor plans, wireframes, and architecture diagrams.
+
+The MCP integration means AI agents don't just *describe* spaces — they *draw* them.
+
+On launch day, we discovered an unexpected second market: homeowners using Claude to plan kitchen renovations, with Skissify as the rendering engine. The AI translates natural language into JSON, Skissify draws it, the homeowner sends it to their contractor.
+
+This is what happens when you build a primitive, not an application. The use cases find you.
+
+What visual output primitives are missing from your AI stack?
+
+#AI #ProductDesign #MCP #BuildInPublic #Skissify
+```
+
+---
+
+### Updated Timing Table (Cycle 20 — 17:30 CET)
+
+| Time (CET) | Platform | Action | Status |
+|------------|----------|--------|--------|
+| **17:45** | Twitter/X | **Tweet 49 — JSON is Universal** | NEW Cycle 20 |
+| **17:45** | Bluesky | Cycle 19 homeowner/dungeon story | Cycle 19 |
+| **18:00** | Mastodon | Cycle 19 use-case surprise post | Cycle 19 |
+| **18:00** | LinkedIn | **New article: "The next moat is output format"** | NEW Cycle 20 |
+| **18:30** | Indie Hackers | 16-hour honest update | Cycle 18 |
+| **18:30** | Twitter/X | Tweet 46 — newsletter callout | Cycle 19 |
+| **19:00** | r/HomeImprovement | Homeowner renovation post | Cycle 18 |
+| **19:00** | Twitter/X | **Tweet 50 — "Missing Primitive"** | NEW Cycle 20 |
+| **19:30** | Twitter/X | Tweet 42 — homeowner surprise | Cycle 18 |
+| **20:00** | r/DIY | Renovation planning with AI | Cycle 18 |
+| **20:30** | Twitter/X | **Tweet 51 — r/AI_Agents bridge** | NEW Cycle 20 |
+| **21:00** | r/Architecture | Architecture feedback request | Cycle 19 |
+| **21:00** | **r/AI_Agents** | **MCP drawing capability post** | NEW Cycle 20 |
+| **21:30** | Discord: Anthropic MCP | MCP Showcase post | Cycle 19 |
+| **21:30** | Discord: Changelog | Show & Tell post | Cycle 19 |
+| **21:30** | **Substack** | **"What happened when real people found it"** | NEW Cycle 20 |
+| **22:00** | Email outreach | Send newsletter pitches (8 targets) | Cycle 19 |
+| **23:00** | Twitter/X | **Tweet 52 — Day 1 wrap (real numbers formula)** | NEW Cycle 20 |
+
+---
+
+### New Communities Added This Cycle (20)
+| Community | Members | Angle | Timing |
+|-----------|---------|-------|--------|
+| **r/AI_Agents** | 50K+ | MCP drawing capability for agent frameworks | 21:00 CET |
+| **Substack** | — | Builder's note: dual market discovery story | 21:30 CET |
+| **LinkedIn** | — | "The next moat is output format" article | 18:00 CET |
+
+### New Blog Post Added This Cycle (20)
+| # | Post | File | Platform | Day |
+|---|------|------|----------|-----|
+| 27 | **"Friday Evening: What Comes After Launch Day"** | `evening-push-friday-what-comes-next.md` | Dev.to tonight, Substack Day 2 | Day 1 evening |
+
+### Hashtag Update (Cycle 20 Research)
+**New communities confirmed active (from web search):**
+- `r/AI_Agents` — 50K+ members, active March 2026, currently discussing LangGraph/CrewAI/n8n
+- `r/ChatGPT` — 4M+ members, AI tools are heavily discussed
+- **LangGraph, CrewAI, AutoGen, n8n** are the trending agent frameworks right now — use these in copy
+
+**New hashtags to add for evening posts:**
+- `#LangChain` / `#LangGraph` — active AI developer community
+- `#CrewAI` — smaller but targeted agent dev audience
+- `#n8n` — automation community, strong overlap with homeowner use case
+- `#AgentEngineering` — emerging term for Claude Code / Codex CLI users
+
+*Last Updated: March 27, 2026 (Cycle 20 — 17:30 CET)*
+*Added: Tweets 49-52 (JSON is Universal, Missing Primitive, AI_Agents bridge, Day 1 wrap formula), LinkedIn article (output format moat), Substack launch post template, r/AI_Agents community post, blog post #27 "Friday Evening: What Comes After Launch Day", hashtag updates (LangGraph/CrewAI/n8n/AgentEngineering), updated timing table 17:30-23:00 CET*

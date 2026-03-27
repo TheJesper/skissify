@@ -2,6 +2,111 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #14 (17:14 CET, Friday March 27)
+
+### Priority Context (Run #14 — End-of-day Friday intelligence summary)
+- **14 consecutive niche-clean scans** — the quadrant is structurally unoccupied, but every week of delay costs ~40–400 potential first-week users (Smartsheet MCP benchmark)
+- **Coohom architect review published March 26** — architects are actively evaluation AI tools RIGHT NOW; outreach window is open this weekend
+- **MCP hits 5,000 servers + Linux Foundation governance** — developer mindset is "curating infrastructure", not "evaluating SaaS"
+- **All prior action assets documented** — MCP-TUTORIAL.md, SEO-TARGETS.md, COPY-LIBRARY.md, LAUNCH-OUTREACH-LIST.md have been assigned for days; pre-MCP-launch execution is the current blocker
+
+---
+
+### ✅ Saturday Action 1: Ship `@skissify/mcp` v0.1 to npm — Today Is the Day (4–6 hours — CRITICAL)
+
+**Why Saturday specifically**: Every strategy cycle since 01:11 CET has called out the MCP server as the single blocking item. The full launch infrastructure is documented and ready (pricing copy, tutorial draft, Reddit post, directory submission list). The only missing piece is the npm package. Saturday is the day.
+
+**Minimum viable MCP v0.1 — do NOT over-engineer**:
+```typescript
+// packages/mcp/src/index.ts
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+  name: "skissify",
+  version: "0.1.0",
+  description: "Hand-drawn SVG sketches from JSON manifests. Floor plans, diagrams, wireframes. The declarative sketch renderer for AI agents."
+});
+
+server.tool(
+  "render_sketch",
+  "Render a Skissify JSON manifest as a hand-drawn SVG. Returns SVG string. Supports floor plans, architecture diagrams, wireframes.",
+  { manifest: z.object({}).passthrough() },
+  async ({ manifest }) => {
+    const svg = await renderManifest(manifest, { watermark: true });
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**Step-by-step Saturday build**:
+1. `mkdir W:/code/skissify/packages/mcp && cd packages/mcp && npm init -y`
+2. `npm install @modelcontextprotocol/sdk zod`
+3. Wire `renderManifest` to existing Skissify rendering engine in `src/lib/renderer.ts`
+4. Test locally with Claude Desktop: add 2-line config to `claude_desktop_config.json`, verify `render_sketch` appears as a tool
+5. Write 20-line README with GIF slot: "JSON in → hand-drawn floor plan out → `npx @skissify/mcp`"
+6. `npm publish --access public` → package is live
+7. Submit to modelcontextprotocol.io/registry (takes 5 minutes, form-based)
+
+**Post-ship (15 minutes of mechanical work)**:
+- Submit to awesome-mcp-servers GitHub (PR with Skissify entry in Diagrams/Visual section)
+- Submit to mcpservers.org (submission form)
+- Submit to claudefa.st and mcpmanager.ai (find contact/submission on each site)
+
+**Success metric**: `npx @skissify/mcp` installs and runs. Claude Desktop shows `render_sketch` in tool list. One floor plan sketch generated via Claude.
+
+---
+
+### ✅ Saturday Action 2: Rewrite API Tier Copy — "Add to Stack" Language (30 minutes — CONVERSION)
+
+**Why Saturday**: This is a 30-minute text change with measurable conversion impact. The "infrastructure framing" insight (from 14 cycles of evidence) says: developers in 2026 don't "subscribe" to rendering APIs — they "add them to their stack." A single word change across the pricing page and README can shift the EUR 2/mo decision from "another subscription to manage" to "infrastructure line item, obviously yes."
+
+**The copy changes to make**:
+
+| Surface | Current (assumed) | New "Add to Stack" language |
+|---------|-------------------|----------------------------|
+| Pricing page hero | "Subscribe to Pro — EUR 5/mo" | "Add the rendering layer — EUR 2/mo API Starter" |
+| API Starter description | "200 renders/month, no watermark" | "200 clean renders/month. No watermark. API key in 30 seconds. Sits in your `.env` forever." |
+| README CTA | "Sign up for Pro" | "Add to your MCP config" |
+| Pricing page sub-line | "Cancel anytime" | "No procurement approval needed. No seat licenses. Just renders." |
+
+**File to update**: Whatever the current pricing copy lives in — could be the app source, or add a section to `docs/marketing/COPY-LIBRARY.md` as the canonical copy source.
+
+**Why Saturday vs Sunday**: If the MCP server ships Saturday, the first thing new users will see is the pricing page. These words are the first conversion moment. Have them ready.
+
+---
+
+### ✅ Saturday Action 3: Email Outreach to 2 Architecture Bloggers — While the Window Is Open (45 minutes — B2B SEED)
+
+**Why Saturday**: Coohom published a first-person architect's AI tool review on March 26 (yesterday). blog.chaos.com published "Best AI rendering tools for architects 2026" on March 25. Architecture bloggers are ACTIVELY writing AI tool roundups RIGHT NOW in March 2026. This is the highest-quality B2B content window of the quarter.
+
+**The outreach targets**:
+1. **blog.chaos.com author** — just published "Best AI rendering tools for architects 2026" (2 days ago). Ask for Skissify inclusion as a "hand-drawn sketch aesthetic" category addition — a niche their current roundup doesn't cover.
+2. **coohom.com/article author** — published the free AI architecture plan generator review yesterday (March 26). Their review covers 3D tools; Skissify is the 2D hand-drawn sketch tool they didn't review. Ask for a "what about quick hand-drawn client sketches?" follow-up mention.
+
+**The email to send** (short, direct, no pitch deck):
+> Subject: Hand-drawn AI floor plans — missing from your architect tools roundup?
+>
+> Hi [Name],
+>
+> I saw your [article] on AI tools for architects — great timing, this space is moving fast.
+>
+> You covered 3D rendering tools, but there's a different use case I didn't see: the client discovery phase, when architects want something that deliberately looks like a rough sketch (not polished CAD). Communicates "this is still exploratory" to clients.
+>
+> I built Skissify (skissify.com) for exactly this: describe a floor plan → AI generates JSON → Skissify renders it hand-drawn. Free to try, EUR 5/mo for clean exports.
+>
+> Would you be open to including it in a future roundup, or trying it for a follow-up article?
+
+**Save this email template** to `docs/marketing/EMAIL-AND-DIRECTORIES.md`.
+
+**Success metric**: Even one reply from an architect blogger = a content channel. One article mention = 200–2,000 qualified visitors. This is the highest-LTV B2B seed action available this weekend.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #13 (16:05 CET, Friday March 27)
 
 ### Priority Context (Run #13 — End-of-week intelligence)
