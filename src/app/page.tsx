@@ -211,6 +211,7 @@ function EditorInner({
     copySelected,
     pasteElements,
     colorSelected,
+    strokeWidthSelected,
     rotateSelected,
     nudgeSelected,
     selectAll,
@@ -455,6 +456,15 @@ function EditorInner({
     return typeof raw === "string" ? raw : sketch.inkColor;
   })();
 
+  // Compute the strokeWidth of the first selected element
+  const selectedStrokeWidth: number | undefined = (() => {
+    if (selectedElements.size === 0) return undefined;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el) return undefined;
+    return el.strokeWidth;
+  })();
+
   return (
     <div className="h-screen flex flex-col overflow-hidden">
       <Toolbar
@@ -526,6 +536,7 @@ function EditorInner({
             height={sketch.height}
             selectedCount={selectedElements.size}
             selectedColor={selectedColor}
+            selectedStrokeWidth={selectedStrokeWidth}
             onPaper={setPaper}
             onTool={setTool}
             onAmplitude={setAmplitude}
@@ -538,6 +549,7 @@ function EditorInner({
             onAddElement={addElement}
             onDeleteSelected={deleteSelected}
             onColorSelected={colorSelected}
+            onStrokeWidthSelected={strokeWidthSelected}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -627,6 +639,7 @@ function EditorInner({
           height={sketch.height}
           selectedCount={selectedElements.size}
           selectedColor={selectedColor}
+          selectedStrokeWidth={selectedStrokeWidth}
           onPaper={setPaper}
           onTool={setTool}
           onAmplitude={setAmplitude}
@@ -639,6 +652,7 @@ function EditorInner({
           onAddElement={addElement}
           onDeleteSelected={deleteSelected}
           onColorSelected={colorSelected}
+          onStrokeWidthSelected={strokeWidthSelected}
         />
       </MobileBottomSheet>
     </div>

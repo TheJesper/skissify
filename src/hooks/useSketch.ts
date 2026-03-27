@@ -277,6 +277,24 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [selectedElements, pushHistory]
   );
 
+  /** Set the strokeWidth of all selected elements */
+  const strokeWidthSelected = useCallback(
+    (strokeWidth: number) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          return { ...el, strokeWidth };
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
   const rotateSelected = useCallback(
     (degrees: number) => {
       if (selectedElements.size === 0) return;
@@ -438,6 +456,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     updateElement,
     nudgeSelected,
     selectAll,
+    strokeWidthSelected,
   };
 }
 

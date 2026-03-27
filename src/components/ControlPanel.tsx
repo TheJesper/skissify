@@ -16,6 +16,8 @@ interface ControlPanelProps {
   selectedCount: number;
   /** Current color of the selected element (undefined when nothing selected) */
   selectedColor?: string;
+  /** Current strokeWidth of the selected element */
+  selectedStrokeWidth?: number;
   onPaper: (p: PaperType) => void;
   onTool: (t: ToolType) => void;
   onAmplitude: (v: number) => void;
@@ -29,6 +31,8 @@ interface ControlPanelProps {
   onDeleteSelected: () => void;
   /** Called when the user changes the color of selected elements */
   onColorSelected?: (color: string) => void;
+  /** Called when the user changes the strokeWidth of selected elements */
+  onStrokeWidthSelected?: (w: number) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -74,6 +78,7 @@ export default function ControlPanel({
   height,
   selectedCount,
   selectedColor,
+  selectedStrokeWidth,
   onPaper,
   onTool,
   onAmplitude,
@@ -86,6 +91,7 @@ export default function ControlPanel({
   onAddElement,
   onDeleteSelected,
   onColorSelected,
+  onStrokeWidthSelected,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -328,6 +334,26 @@ export default function ControlPanel({
                     title="Pick custom element color"
                   />
                 </div>
+              </div>
+            )}
+            {onStrokeWidthSelected && (
+              <div className="flex items-center gap-2">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide shrink-0">
+                  Stroke width
+                </label>
+                <input
+                  type="range"
+                  min={0.5}
+                  max={8}
+                  step={0.5}
+                  value={selectedStrokeWidth ?? 1}
+                  onChange={(e) => onStrokeWidthSelected(parseFloat(e.target.value))}
+                  className="flex-1 h-1 accent-[#268bd2]"
+                  title="Element stroke width"
+                />
+                <span className="text-[10px] text-[#93a1a1] w-6 text-right font-mono">
+                  {(selectedStrokeWidth ?? 1).toFixed(1)}
+                </span>
               </div>
             )}
           </div>
