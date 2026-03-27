@@ -113,6 +113,8 @@
 - [x] **Drag-to-move undo fix** - drag moves now properly commit to undo history when mouse is released (or leaves canvas); `commitDrag` wired via new `onDragEnd` prop on Canvas; Ctrl+Z after dragging now correctly reverses the move
 - [x] **Keyboard shortcuts panel** - `?` button in toolbar (and `?` key shortcut) opens a modal listing all 15 keyboard shortcuts; works globally unless focus is in a text input; Escape closes it
 
+- [x] **Element resize handles** - Select any single element → drag-handles appear directly on canvas. Rect-like elements get 8 handles (corners + edge midpoints) with correct directional cursors (nwse-resize, n-resize, etc). Line/arrow/dashed/dim get 2 circular endpoint handles (p1/p2) to reposition either end. Circle gets 1 radius handle on the right edge. Handles hidden on rotated elements to avoid ambiguity. Live drag updates element without creating undo entries; single undo entry committed on mouseup. Minimum size enforced (4px). Fully integrated with undo/redo stack. New `onResizeElement` + `onResizeEnd` Canvas props; `resizeElement()` + `commitResize()` hooks in useSketch.
+
 ## Suggested Features for Launch Readiness
 
 ### Authentication
