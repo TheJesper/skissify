@@ -115,6 +115,8 @@
 
 - [x] **Element resize handles** - Select any single element → drag-handles appear directly on canvas. Rect-like elements get 8 handles (corners + edge midpoints) with correct directional cursors (nwse-resize, n-resize, etc). Line/arrow/dashed/dim get 2 circular endpoint handles (p1/p2) to reposition either end. Circle gets 1 radius handle on the right edge. Handles hidden on rotated elements to avoid ambiguity. Live drag updates element without creating undo entries; single undo entry committed on mouseup. Minimum size enforced (4px). Fully integrated with undo/redo stack. New `onResizeElement` + `onResizeEnd` Canvas props; `resizeElement()` + `commitResize()` hooks in useSketch.
 
+- [x] **JSON Import/Export + New Sketch** — "Import" button in toolbar loads a `.json` sketch file from disk (validates elements array, success/error toast); "JSON" button downloads current sketch as portable `.json` (Ctrl+Shift+J, smart filename); "New Sketch" button clears the canvas after a confirmation modal (sensible blank defaults). `importSketch()` and `newSketch()` hooks in `useSketch.ts`, both push undo history. Shortcuts panel updated.
+
 ## Suggested Features for Launch Readiness
 
 ### Authentication
