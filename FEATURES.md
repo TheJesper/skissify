@@ -90,6 +90,9 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Zoom controls overlay + auto-fit** — −/% /+ button group in canvas bottom-right corner; live zoom readout (e.g. "87%"); clicking % resets/fits the view; canvas auto-fits on mount and on sketch resize so every sketch opens at a sensible zoom; keyboard shortcut `0` = fit view (added to shortcuts panel); drag-move element scaling bug fixed (was dividing by zoom twice); zoom range extended to [0.1×–8×].
+
+
 - [x] **SVG export download** — "SVG" button in toolbar (sm+ visible); `Ctrl+Shift+E` keyboard shortcut; calls the fully-implemented `renderSketchToSVG()` renderer; smart filename: `skissify-<slug>.svg` when saved, timestamp-based otherwise; Blob URL triggers clean browser download without print dialog; keyboard shortcuts panel updated.
 
 - [x] **Local-storage autosave** — sketch is automatically saved to `localStorage` after 1.5s of inactivity (and flushed immediately on tab close). On fresh editor open (no URL params), the last autosaved sketch is restored and a brief "Restored from autosave" toast is shown. A subtle "Saved ✓" indicator appears in the toolbar. Users no longer lose work on accidental refresh or tab close.
