@@ -90,6 +90,8 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Per-element stroke width control** — When one or more elements are selected, a stroke width slider (0.5–8px, step 0.5) appears in the Selection section of the left sidebar. Changing the slider applies the new `strokeWidth` to all selected elements instantly. Fully undoable (Ctrl+Z). Wired into both `/` and `/editor` pages, including mobile bottom-sheet ControlPanel. Previously only changeable via raw JSON editor.
+
 - [x] **Root page feature parity + undo history reset on preset load** — The main page (/) was missing several features that the /editor page had. Now fully wired: resize handles (onResizeElement/onResizeEnd), per-element color picker (selectedColor + onColorSelected), arrow-key nudge (1px / Shift=10px), Ctrl+A select-all, double-click inline text editing overlay (text, rect label, dim label), and canvasControlRef for programmatic auto-fit. Also: loadPreset in useSketch now resets the undo/redo history stack so Ctrl+Z after switching presets no longer teleports you back to the previous preset — a confusing UX bug. Both desktop and mobile ControlPanel/PresetTabs instances updated.
 
 - [x] **Arrow-key nudge + Ctrl+A select all** — Arrow keys move selected element(s) by 1px; Shift+Arrow = 10px. Each nudge commits one undo entry. Ctrl+A selects all elements instantly. `nudgeSelected()` and `selectAll()` added to useSketch hook. Keyboard shortcuts panel updated to document both. Solves precision placement without needing to edit raw JSON coordinates.
