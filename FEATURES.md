@@ -94,6 +94,7 @@
 - [x] **Dynamic cursor feedback** - grab on hover, grabbing during drag, crosshair elsewhere
 - [x] **Build stability fix** - `next.config.ts` webpack `hashFunction='md4'` resolves WasmHash crash on Node.js v22 (`TypeError: Cannot read properties of undefined (reading 'length')`)
 - [x] **Copy/Paste/Duplicate elements** - Ctrl+C copies selected elements to clipboard, Ctrl+V pastes with +20px offset (new copies auto-selected), Ctrl+D duplicates in one step; all shortcuts guarded against textarea/input focus
+- [x] **Element rotation** - `R` key rotates selected elements 15° clockwise, `Shift+R` 15° counter-clockwise; rotation stored as `rotation` field in element JSON; canvas transform applied per-element at render time; selection box rotates with element and shows an amber dot indicator; undo/redo integrated; webpack md4 hashFunction fix re-applied (was accidentally dropped)
 
 ## Suggested Features for Launch Readiness
 

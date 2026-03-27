@@ -47,7 +47,7 @@
 ## ✨ Nya features att bygga
 
 - [ ] **Font-inställning per kategori** — välj font för: rumsetiketter, dimensionssiffror, möbeletiketter, titel/caption. Dropdown per kategori i sidebaren. Stöd för Google Fonts (Courier New, Kalam, Georgia, JetBrains Mono m.fl.)
-- [ ] **Rotera element** — markera ett element → rotera med scroll eller R-tangenten eller en rotationshandtag vid selection-boxen. Gäller rects, circles, text, window, door, stair
+- [x] **Rotera element** — R = 15° medurs, Shift+R = 15° moturs; rotation lagras i `rotation`-fältet; canvas-transform per element vid rendering; selection-box roterar med elementet
 - [ ] **Element-selector med drag-in** — panel med miniatyr-thumbnails grupperade per kategori (Väggar, Dörrar & Fönster, Möbler, Kök/Bad, Trappor, Text & Mått). Dra ett element från panelen till canvas → sätts in på rätt koordinat. Thumbnails renderas med Canvas 2D i miniatyr så de ser ut precis som i ritningen
 
 ### Drag-in element-kategorier (förslag)
