@@ -36,6 +36,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Claude Code / IDE artifacts
+.claude/
+Microsoft/
+AppData/
+
 /src/generated/prisma
 prisma/dev.db
 prisma/dev.db-journal
