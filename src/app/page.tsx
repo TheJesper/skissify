@@ -198,6 +198,8 @@ function EditorInner({
     setWaves,
     setHumanness,
     setInkColor,
+    setTextFont,
+    setDimFont,
     loadPreset,
     updateFromJson,
     addElement,
@@ -441,6 +443,8 @@ function EditorInner({
             waves={sketch.waves}
             humanness={sketch.humanness}
             inkColor={sketch.inkColor}
+            textFont={sketch.textFont}
+            dimFont={sketch.dimFont}
             width={sketch.width}
             height={sketch.height}
             selectedCount={selectedElements.size}
@@ -450,6 +454,8 @@ function EditorInner({
             onWaves={setWaves}
             onHumanness={setHumanness}
             onInkColor={setInkColor}
+            onTextFont={setTextFont}
+            onDimFont={setDimFont}
             onResize={handleResize}
             onAddElement={addElement}
             onDeleteSelected={deleteSelected}
@@ -494,6 +500,8 @@ function EditorInner({
           waves={sketch.waves}
           humanness={sketch.humanness}
           inkColor={sketch.inkColor}
+          textFont={sketch.textFont}
+          dimFont={sketch.dimFont}
           width={sketch.width}
           height={sketch.height}
           selectedCount={selectedElements.size}
@@ -503,6 +511,8 @@ function EditorInner({
           onWaves={setWaves}
           onHumanness={setHumanness}
           onInkColor={setInkColor}
+          onTextFont={setTextFont}
+          onDimFont={setDimFont}
           onResize={handleResize}
           onAddElement={addElement}
           onDeleteSelected={deleteSelected}
