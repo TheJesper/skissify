@@ -1,6 +1,6 @@
 "use client";
 
-import { PaperType, ToolType, PAPER_SIZES } from "@/lib/types";
+import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont } from "@/lib/types";
 
 interface ControlPanelProps {
   paper: PaperType;
@@ -9,6 +9,8 @@ interface ControlPanelProps {
   waves: number;
   humanness: number;
   inkColor: string;
+  textFont?: SkissifyFont;
+  dimFont?: SkissifyFont;
   width?: number;
   height?: number;
   selectedCount: number;
@@ -18,6 +20,8 @@ interface ControlPanelProps {
   onWaves: (v: number) => void;
   onHumanness: (v: number) => void;
   onInkColor: (c: string) => void;
+  onTextFont: (f: SkissifyFont) => void;
+  onDimFont: (f: SkissifyFont) => void;
   onResize: (w: number, h: number) => void;
   onAddElement: (type: string) => void;
   onDeleteSelected: () => void;
@@ -60,6 +64,8 @@ export default function ControlPanel({
   waves,
   humanness,
   inkColor,
+  textFont,
+  dimFont,
   width,
   height,
   selectedCount,
@@ -69,6 +75,8 @@ export default function ControlPanel({
   onWaves,
   onHumanness,
   onInkColor,
+  onTextFont,
+  onDimFont,
   onResize,
   onAddElement,
   onDeleteSelected,
@@ -153,6 +161,50 @@ export default function ControlPanel({
             title="Pick custom ink color"
           />
           <span className="text-[10px] text-[#93a1a1] font-mono">{activeInkColor}</span>
+        </div>
+      </Section>
+
+      {/* Text Font */}
+      <Section title="Text Font">
+        <div className="space-y-2">
+          <div>
+            <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">Labels &amp; Text</label>
+            <div className="grid grid-cols-2 gap-1">
+              {FONT_OPTIONS.map((f) => (
+                <button
+                  key={f.key}
+                  onClick={() => onTextFont(f.key)}
+                  className={`px-2 py-1.5 rounded text-xs transition-all border ${
+                    (textFont ?? "courier") === f.key
+                      ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5]"
+                      : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
+                  }`}
+                  style={{ fontFamily: f.css }}
+                >
+                  {f.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">Dimensions</label>
+            <div className="grid grid-cols-2 gap-1">
+              {FONT_OPTIONS.map((f) => (
+                <button
+                  key={f.key}
+                  onClick={() => onDimFont(f.key)}
+                  className={`px-2 py-1.5 rounded text-xs transition-all border ${
+                    (dimFont ?? "courier") === f.key
+                      ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5]"
+                      : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
+                  }`}
+                  style={{ fontFamily: f.css }}
+                >
+                  {f.label}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </Section>
 

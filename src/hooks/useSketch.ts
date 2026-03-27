@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
-import { SketchData, PaperType, ToolType } from "@/lib/types";
+import { SketchData, PaperType, ToolType, SkissifyFont } from "@/lib/types";
 import { presets, defaultPreset } from "@/lib/presets";
 
 const MAX_HISTORY = 50;
@@ -77,6 +77,16 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
 
   const setInkColor = useCallback(
     (inkColor: string) => updateSketch({ inkColor }),
+    [updateSketch]
+  );
+
+  const setTextFont = useCallback(
+    (textFont: SkissifyFont) => updateSketch({ textFont }),
+    [updateSketch]
+  );
+
+  const setDimFont = useCallback(
+    (dimFont: SkissifyFont) => updateSketch({ dimFont }),
     [updateSketch]
   );
 
@@ -356,6 +366,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setWaves,
     setHumanness,
     setInkColor,
+    setTextFont,
+    setDimFont,
     loadPreset,
     updateFromJson,
     addElement,

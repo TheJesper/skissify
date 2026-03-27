@@ -4,8 +4,17 @@ import {
   PAPER_COLORS,
   GRID_COLORS,
   BLUEPRINT_COLOR_MAP,
+  FONT_OPTIONS,
+  SkissifyFont,
   PaperType,
 } from "./types";
+
+/** Resolve a SkissifyFont key to a CSS font-family string */
+function resolveFontCss(font: SkissifyFont | undefined, fallback: string): string {
+  if (!font) return fallback;
+  const found = FONT_OPTIONS.find((f) => f.key === font);
+  return found ? found.css : fallback;
+}
 import {
   wobble,
   WobbleOptions,
@@ -472,7 +481,12 @@ function renderElement(
       } else {
         ctx.fillStyle = tc;
       }
-      ctx.font = `${size}px 'Courier New', monospace`;
+      // Per-element fontFamily overrides sketch-level textFont, which overrides default
+      const textFontCss = resolveFontCss(
+        (el.fontFamily as SkissifyFont | undefined) ?? sketch.textFont,
+        "'Courier New', monospace"
+      );
+      ctx.font = `${size}px ${textFontCss}`;
       // Character-by-character jitter
       let cx2 = x;
       for (let i = 0; i < content.length; i++) {
@@ -531,6 +545,8 @@ function renderElement(
       const midX = (dx1 + dx2) / 2;
       const midY = (dy1 + dy2) / 2;
       const isVertical = Math.abs(x2 - x1) < Math.abs(y2 - y1);
+      // Use el.fontFamily (per-element override) or sketch.dimFont; pass as fontFamily on text el
+      const dimFontKey = (el.fontFamily as SkissifyFont | undefined) ?? sketch.dimFont;
       renderElement(ctx, {
         type: "text",
         x: isVertical ? midX + px * 8 : midX,
@@ -538,7 +554,13 @@ function renderElement(
         content: label,
         size: 9,
         color,
-      }, idx + 600, sketch);
+        // fontFamily on text element overrides sketch.textFont inside renderElement
+        ...(dimFontKey ? { fontFamily: dimFontKey } : {}),
+      } as import("./types").TextElement, idx + 600, {
+        // Pass a sketch with textFont = dimFont so the dim label uses the right font
+        ...sketch,
+        textFont: dimFontKey ?? sketch.dimFont ?? sketch.textFont,
+      });
       break;
     }
 

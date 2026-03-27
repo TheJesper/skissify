@@ -82,6 +82,8 @@ export interface TextElement extends BaseElement {
   /** POC uses 'size', production uses 'fontSize' */
   fontSize?: number;
   size?: number;
+  /** Override font family for this element */
+  fontFamily?: string;
 }
 
 export interface DashedElement extends BaseElement {
@@ -102,6 +104,8 @@ export interface DimElement extends BaseElement {
   y2: number;
   label: string;
   offset?: number;
+  /** Override font family for this dimension's label */
+  fontFamily?: string;
 }
 
 export interface WindowElement extends BaseElement {
@@ -190,6 +194,23 @@ export type SketchElement =
   | OpeningElement
   | ColumnElement;
 
+/**
+ * Available font families for text rendering.
+ * Keys must be stable (used in JSON) — map to CSS font-family strings.
+ */
+export type SkissifyFont =
+  | "courier"    // Courier New — default monospace, technical feel
+  | "georgia"    // Georgia — classic serif, architectural
+  | "arial"      // Arial — clean sans-serif, modern
+  | "handwritten"; // 'Segoe Print', cursive — casual, hand-drawn feel
+
+export const FONT_OPTIONS: { key: SkissifyFont; label: string; css: string }[] = [
+  { key: "courier",    label: "Courier",    css: "'Courier New', monospace" },
+  { key: "georgia",    label: "Georgia",    css: "Georgia, serif" },
+  { key: "arial",      label: "Arial",      css: "Arial, sans-serif" },
+  { key: "handwritten", label: "Handwrit.", css: "'Segoe Print', 'Comic Sans MS', cursive" },
+];
+
 export interface SketchData {
   paper: PaperType;
   tool: ToolType;
@@ -200,6 +221,10 @@ export interface SketchData {
   width?: number;
   height?: number;
   sessionSeed?: number;
+  /** Default font for text/label elements */
+  textFont?: SkissifyFont;
+  /** Default font for dimension labels */
+  dimFont?: SkissifyFont;
   elements: SketchElement[];
 }
 

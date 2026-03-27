@@ -2,6 +2,135 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #16 (19:33 CET, Friday March 27)
+
+### Priority Context (Run #16 — End-of-day Friday, final scan of March 27)
+
+**Filesystem audit reveals the critical gap**: `W:/code/skissify/packages/` is empty — the `@skissify/mcp` npm package does not exist. **20+ marketing files are pre-built. Zero product files exist in packages/.**
+
+The entire EUR 2/mo conversion machine (discovery → install → pipeline → watermark → upgrade) activates the moment the MCP server ships. Every action below flows from this single truth.
+
+Additional context:
+- **16 consecutive niche-clean scans** — the "hand-drawn + JSON + MCP + floor plan" quadrant is structurally unoccupied
+- **Google Stitch "Google Gap" narrative has 7–10 more days of relevance** — launch must happen this weekend to ride this wave
+- **Rate limits hit** — all external intelligence gathered; no new scanning needed before launch
+- **Delay cost**: ~400 developer users/week not acquired (Smartsheet MCP benchmark at 10% TAM)
+
+---
+
+### ✅ Saturday Action 1 — CRITICAL: Ship `@skissify/mcp` v0.1 to npm (4–6 hours)
+
+**Why this is the only action that matters today**: Every other action in 16 cycles of strategy has been secondary to this one. The product creates the pipeline. The pipeline creates the watermark. The watermark triggers the EUR 2/mo purchase. Nothing converts without this.
+
+**Minimum viable MCP v0.1** (do NOT over-engineer — ship the skeleton):
+
+```typescript
+// W:/code/skissify/packages/mcp/src/index.ts
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+  name: "skissify",
+  version: "0.1.0",
+  description: "Hand-drawn SVG sketches from JSON manifests. Floor plans, architecture diagrams, napkin sketches. The sketch layer for AI agents."
+});
+
+server.tool(
+  "render_sketch",
+  "Render a Skissify JSON manifest as a hand-drawn SVG. Returns SVG string. Supports floor plans with walls, doors, windows, stairs, dimensions, and all Skissify element types.",
+  { manifest: z.object({}).passthrough() },
+  async ({ manifest }) => {
+    const svg = await renderManifest(manifest, { watermark: true });
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**Step-by-step Saturday execution**:
+1. `mkdir W:/code/skissify/packages/mcp && cd packages/mcp && npm init -y`
+2. `npm install @modelcontextprotocol/sdk zod`
+3. Wire `renderManifest` to the existing rendering engine in `src/lib/` (or equivalent)
+4. Test locally: add 2-line config to Claude Desktop's `claude_desktop_config.json`, verify `render_sketch` appears
+5. Generate one floor plan via Claude — take a screenshot. This is your launch demo.
+6. Write 20-line README with screenshot or GIF: `npx @skissify/mcp` → floor plan appears in Claude
+7. `npm publish --access public`
+8. Submit to modelcontextprotocol.io/registry (form-based, 5 minutes)
+9. PR to punkpeye/awesome-mcp-servers with entry in Diagrams/Visual section
+10. Submit to claudefa.st, mcpmanager.ai, mcpservers.org (see `docs/marketing/EMAIL-AND-DIRECTORIES.md` for URLs)
+
+**Success metric**: `npx @skissify/mcp` installs, runs, and generates a hand-drawn floor plan inside Claude Desktop. One screenshot of this is the entire marketing.
+
+---
+
+### ✅ Saturday Action 2 — HIGH: Publish the "Google Gap" HN Show HN Post (45 minutes — timing-sensitive)
+
+**Why this weekend specifically**: Google Stitch MCP + SDK launched March 18 (2,400+ skills stars). The "Google made visual AI MCP, left the sketch lane open" narrative is timely for 7–10 more days. After that, it becomes old news. This is the highest-signal launch narrative available and it expires.
+
+**The post to write** (save to `docs/marketing/blog/hn-launch-post.md`, publish when MCP is live on npm):
+
+```
+Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP that Google Stitch isn't.
+
+Google Stitch (MCP, SDK, 2,400+ stars) generates polished Figma-ready UIs.
+Mermaid MCP generates topology diagrams.
+draw.io MCP generates technical charts.
+
+Nobody generates hand-drawn sketches. Especially not floor plans.
+
+Skissify is that layer: describe a floor plan, architecture sketch, or napkin 
+diagram as JSON — Skissify renders it as a hand-drawn SVG. MCP-native.
+Works in Claude Desktop, Cursor, Windsurf, any MCP client.
+
+One tool call: render_sketch(manifest) → hand-drawn SVG.
+
+npx @skissify/mcp — free (watermarked), EUR 2/mo for clean output.
+Floor plans with walls, doors, windows, stairs, dimensions.
+Wobble amplitude. Paper types. Tool styles.
+
+→ skissify.com
+→ github.com/[skissify org]
+```
+
+**Why Show HN specifically**: Developer tools with an MCP angle are getting significant HN traction in March 2026. The niche claim ("nobody else does hand-drawn floor plan MCP") is defensible and concrete — HN rewards specific claims. The counter-positioning vs Google Stitch adds credibility and context.
+
+**Publish timing**: Same day as npm publish. Not before. A Show HN without an installable package gets downvoted.
+
+---
+
+### ✅ Saturday Action 3 — HIGH: Update Homepage Hero with "Google Gap" Copy (30 minutes — zero code)
+
+**Why this converts**: When the MCP server ships and developers land on skissify.com for the first time, the homepage is the first moment. The Google Stitch launch creates a shared cultural reference point — "not Stitch" is now a meaningful positioning statement that any developer who read about it will immediately understand.
+
+**The copy change** (wherever homepage hero lives — app source or staging):
+
+> **Hero**: "The sketch layer for your AI stack"
+>
+> **Sub**: "Google Stitch makes polished UIs. Mermaid makes flowcharts. Skissify makes hand-drawn sketches — floor plans, architecture diagrams, napkin ideas. JSON in, SVG out. MCP-native."
+>
+> **CTA**: "Try it — no signup required" ← keep free/anonymous entry path open (38% of best freemium tools do this)
+
+**Why "no signup required" is the right CTA**: The split-pane JSON editor is a perfect try-before-signup experience. The watermark creates the conversion moment; a gate at the door creates churn. Let them render for free. Gate at download-without-watermark.
+
+**If homepage is not editable today**: Write the copy to `docs/marketing/COPY-LIBRARY.md` under section "Homepage Hero — Active Version" so it's ready to implement when the code is touched next.
+
+---
+
+### Completion Log (update as Saturday progresses)
+- [ ] `@skissify/mcp` published to npm — `npm view @skissify/mcp` returns package info
+- [ ] MCP submitted to modelcontextprotocol.io/registry
+- [ ] MCP submitted to awesome-mcp-servers (PR opened)
+- [ ] Screenshot of first Claude-generated sketch via MCP captured
+- [ ] HN Show HN draft written (`docs/marketing/blog/hn-launch-post.md`)
+- [ ] Homepage copy updated or written to COPY-LIBRARY.md
+
+
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #15 (18:23 CET, Friday March 27)
 
 ### Priority Context (Run #15 — End-of-day Friday, final scan of March 27)

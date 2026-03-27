@@ -4,6 +4,90 @@ _Append-only log. Each run adds a dated entry. Do not overwrite._
 
 ---
 
+## Entry: March 27, 2026 — 19:33 CET | Automated Strategy Run #16
+
+### Theme: "The Infrastructure Is Ready — Only the Product Is Missing"
+
+---
+
+#### Finding 1: What Makes Someone Pay EUR 2/mo — The Final Synthesis After 16 Runs
+
+After 16 consecutive strategy cycles across a single Friday (01:11 → 19:33 CET, March 27, 2026), the EUR 2/mo willingness-to-pay question has been answered from every angle. Here is the definitive synthesis:
+
+**The EUR 2/mo buyer pays at exactly one moment**: when they realize Skissify is already inside their working pipeline and they want to keep it there professionally. Not when they evaluate the tool. Not when they read about it. After it's in their `.env` file.
+
+The three conditions that must be simultaneously true:
+1. **The MCP server is installed** — Skissify is in their Claude Desktop config or API workflow
+2. **The output is shared** — a client, colleague, or GitHub PR reviewer sees the watermarked sketch
+3. **The watermark is visible** — not annoying enough to abandon, visible enough to trigger removal
+
+At that intersection: EUR 2/mo is not a decision. It's a reflex. Less than 30 seconds of deliberation. Under EUR 0.07/day. The most effective "price" is one that people pay and never think about again.
+
+**Why EUR 2 specifically beats EUR 5 as the entry point**: EUR 5 is a subscription. EUR 2 is an API key. Developers in 2026 (5,000+ MCP servers, Linux Foundation governance, layered-tools paradigm) think of their tooling as infrastructure, not SaaS. "EUR 2/mo API Starter — 200 clean renders, API key, no watermark" reads as infrastructure cost. "EUR 5/mo Pro Plan" reads as a subscription to manage. The price difference is EUR 3. The psychology difference is conversion vs hesitation.
+
+**The number that matters most**: 8% median free-to-paid conversion (200 SaaS products, Growth Unhinged 2026). At 8%, Skissify needs 25 free API users to get 2 paying users. The MCP registry discovery → installs → free pipeline embeds → watermark removal is a cycle that runs at scale once the MCP server exists. Each week without it: ~40–400 potential first-week users not acquired (Smartsheet benchmark at 1–10% TAM).
+
+---
+
+#### Finding 2: The Launch Infrastructure Is Fully Assembled — The Product Is the Only Gap
+
+Run #16 performed a direct filesystem audit. Finding: `W:/code/skissify/packages/` is empty. The `@skissify/mcp` npm package does not exist anywhere in the codebase. This is surprising because:
+
+- `docs/marketing/` contains 20+ pre-built files
+- `docs/MARKET-INSIGHTS.md` has 1,100+ lines of intelligence
+- `docs/COMPETITOR-ANALYSIS.md` has 16 update log entries
+- MCP tutorial drafts, HN launch posts, email templates, SEO targets — all built
+
+The asymmetry between marketing infrastructure (complete) and product infrastructure (the MCP server: zero code) is the primary strategic risk as of March 27, 2026 19:33 CET. All the intelligence in the world does not convert without a `npx @skissify/mcp` command that works.
+
+**What this means for EUR 2/mo WTP**: The willingness to pay cannot be tested, measured, or actualized until the MCP server exists. Every insight in this file is a hypothesis until there is a product that creates the watermark-in-pipeline moment.
+
+**Saturday March 28 is the highest-value day in Skissify's history so far.** If the MCP server ships Saturday, the 16-run intelligence base activates as a conversion machine. If it doesn't, Run #17 will add intelligence to a system with no product to validate it against.
+
+---
+
+#### Finding 3: The "Google Gap" Narrative Has a 2-Week Shelf Life — Use It Now
+
+Google Stitch MCP + SDK confirmed live March 18, 2026 (2,400+ skills stars). As of March 27 (9 days later), the "Google made visual AI MCP, left the sketch lane open" narrative is still timely. In approximately 7–10 more days, it becomes old news.
+
+**The pitch that works right now** (not in 2 weeks):
+> "Google Stitch makes polished UIs via MCP. Mermaid MCP makes topology diagrams. draw.io MCP makes technical charts. Nobody made hand-drawn sketches. Especially not floor plans. That's Skissify — JSON in, hand-drawn SVG out, MCP-native. The sketch layer for your AI stack."
+
+**Why "Google Gap" converts in this window**: Developers are actively researching MCP visual tools this week because of Google Stitch coverage. When they search for "alternatives" or "other visual MCPs", the mental model is Stitch (polished) vs. something rough. Skissify is that something rough. The window for this counter-positioning is the next 7–10 days.
+
+**What to do Saturday**: Write the HN Show HN post using this narrative. Draft it to publish simultaneously with the MCP server going live on npm.
+
+---
+
+#### Finding 4: Competitor Velocity Summary — March 27, 2026 Final Count
+
+Over 16 runs and 17+ hours of surveillance, the following competitive moves were documented on March 27, 2026 alone:
+- Lucid Software: Advanced MCP server + Process Agent (March 27 — today)
+- Figma: Full read/write MCP open beta with Claude Code/Codex/Cursor (March 25-27)
+- Google Stitch: Official MCP server + SDK, 2,400+ skills stars (March 18)
+- Eraser: HTTP MCP server + Agent Skills package (March 2026)
+- tldraw: Desktop app with local HTTP Canvas API at localhost:7236 (week of March 25)
+- paper.design: Paper Desktop + Paper MCP (March 5)
+- draw-it-mcp: Freehand canvas MCP live on mcpservers.org (March 2026)
+- Mermaid MCP: 22+ types, 50+ templates, in awesome-mcp-servers (March 2026)
+- MCP ecosystem: 5,000+ servers, Linux Foundation governance
+
+**Zero of these** entered the "hand-drawn + JSON-native + floor plan" quadrant. Sixteen consecutive scans, zero niche entrants. The window is open — but the market is moving at velocity. The next scan should happen April 3, 2026.
+
+---
+
+### Run #16 Signal Summary
+
+| Signal | EUR 2/mo Insight | Priority |
+|--------|-----------------|----------|
+| `packages/` empty — MCP code does not exist | No product = no pipeline = no watermark = no EUR 2 | CRITICAL |
+| All marketing infrastructure pre-built | Launch is hours of coding, not weeks of planning | CRITICAL |
+| "Google Gap" narrative has 7–10 day window | Write HN post Saturday; publish with MCP launch | HIGH |
+| 16 consecutive clean niche scans | Gap is structurally confirmed, not accidental | VALIDATION |
+| Rate limit hit — intelligence cycle complete for March 27 | Full-day intelligence density archived | CONTEXT |
+
+---
+
 ## Entry: March 27, 2026 — 18:23 CET | Automated Strategy Run #15
 
 ### Theme: "Google Validated the Category, Stitch Occupied the Wrong Lane — Skissify Owns the Right One"
