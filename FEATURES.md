@@ -90,8 +90,10 @@
 
 ## Recently Implemented (Engineering Agent)
 
-- [x] **Drag-to-move selected elements** — all 14 element types, zoom-corrected scaling, 4px dead-zone, full undo/redo integration
-- [x] **Dynamic cursor feedback** — grab on hover, grabbing during drag, crosshair elsewhere
+- [x] **Drag-to-move selected elements** - all 14 element types, zoom-corrected scaling, 4px dead-zone, full undo/redo integration
+- [x] **Dynamic cursor feedback** - grab on hover, grabbing during drag, crosshair elsewhere
+- [x] **Build stability fix** - `next.config.ts` webpack `hashFunction='md4'` resolves WasmHash crash on Node.js v22 (`TypeError: Cannot read properties of undefined (reading 'length')`)
+- [x] **Copy/Paste/Duplicate elements** - Ctrl+C copies selected elements to clipboard, Ctrl+V pastes with +20px offset (new copies auto-selected), Ctrl+D duplicates in one step; all shortcuts guarded against textarea/input focus
 
 ## Suggested Features for Launch Readiness
 
