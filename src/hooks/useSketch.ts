@@ -98,6 +98,12 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
       setActivePreset(name);
       jsonRef.current = JSON.stringify(withSeed, null, 2);
       setSelectedElements(new Set());
+      // Reset undo/redo history so Ctrl+Z after a preset switch doesn't go back
+      // to the previous preset (confusing UX)
+      historyRef.current = [withSeed];
+      historyIndexRef.current = 0;
+      setCanUndo(false);
+      setCanRedo(false);
     }
   }, []);
 

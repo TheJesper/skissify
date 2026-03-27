@@ -206,11 +206,17 @@ function EditorInner({
     deleteSelected,
     moveSelected,
     commitDrag,
+    resizeElement,
+    commitResize,
     copySelected,
     pasteElements,
+    colorSelected,
     rotateSelected,
+    nudgeSelected,
+    selectAll,
     redraw,
     updateSketch,
+    updateElement,
     undo,
     redo,
     canUndo,
@@ -225,6 +231,12 @@ function EditorInner({
     return !localStorage.getItem("skissify-welcome-dismissed");
   });
   const { savedAt: autosaveSavedAt } = useAutosave(sketch);
+
+  // Canvas control ref — lets us trigger resetView from outside the Canvas
+  const canvasControlRef = useRef<{ resetView: () => void } | null>(null);
+
+  // Inline text edit state (double-click on text/rect/dim elements)
+  const [editingElement, setEditingElement] = useState<{ idx: number; field: string; value: string } | null>(null);
 
   useEffect(() => {
     if (restoredFromAutosave) {
@@ -242,6 +254,45 @@ function EditorInner({
     }, 8000);
     return () => clearTimeout(timer);
   }, [showWelcome]);
+
+  // Wrap loadPreset to also reset the view so the new sketch fits properly
+  const handleLoadPreset = useCallback((name: string) => {
+    loadPreset(name);
+    // Give React one frame to update canvasW/H before fitting
+    requestAnimationFrame(() => {
+      canvasControlRef.current?.resetView();
+    });
+  }, [loadPreset]);
+
+  // Inline text editing handlers
+  const handleDoubleClickElement = useCallback(
+    (idx: number) => {
+      const el = sketch.elements[idx];
+      if (!el) return;
+      if (el.type === "text") {
+        const t = el as unknown as Record<string, unknown>;
+        const val = (t.text ?? t.content ?? "") as string;
+        setEditingElement({ idx, field: "text", value: val });
+      } else if (el.type === "rect") {
+        const r = el as unknown as Record<string, unknown>;
+        setEditingElement({ idx, field: "label", value: (r.label ?? "") as string });
+      } else if (el.type === "dim") {
+        const d = el as unknown as Record<string, unknown>;
+        setEditingElement({ idx, field: "label", value: (d.label ?? "") as string });
+      }
+    },
+    [sketch.elements]
+  );
+
+  const commitInlineEdit = useCallback(() => {
+    if (!editingElement) return;
+    updateElement(editingElement.idx, { [editingElement.field]: editingElement.value });
+    setEditingElement(null);
+  }, [editingElement, updateElement]);
+
+  const cancelInlineEdit = useCallback(() => {
+    setEditingElement(null);
+  }, []);
 
   const handlePrint = useCallback(() => {
     const canvas = document.querySelector("canvas");
@@ -369,14 +420,40 @@ function EditorInner({
         }
       }
 
+      if (e.ctrlKey || e.metaKey) {
+        if (e.key === "a" && !isInput) {
+          e.preventDefault();
+          selectAll();
+        }
+      }
+
       if (e.key === "r" && !isInput && selectedElements.size > 0 && !e.ctrlKey && !e.metaKey) {
         e.preventDefault();
         rotateSelected(e.shiftKey ? -15 : 15);
       }
+
+      // Arrow keys = nudge selected elements (1px; Shift = 10px)
+      if (!isInput && selectedElements.size > 0 && !e.ctrlKey && !e.metaKey) {
+        const STEP = e.shiftKey ? 10 : 1;
+        if (e.key === "ArrowLeft")  { e.preventDefault(); nudgeSelected(-STEP, 0); }
+        if (e.key === "ArrowRight") { e.preventDefault(); nudgeSelected( STEP, 0); }
+        if (e.key === "ArrowUp")    { e.preventDefault(); nudgeSelected(0, -STEP); }
+        if (e.key === "ArrowDown")  { e.preventDefault(); nudgeSelected(0,  STEP); }
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll]);
+
+  // Compute the color of the first selected element (for per-element color picker)
+  const selectedColor: string | undefined = (() => {
+    if (selectedElements.size === 0) return undefined;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el) return undefined;
+    const raw = (el as unknown as Record<string, unknown>).color;
+    return typeof raw === "string" ? raw : sketch.inkColor;
+  })();
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">
@@ -430,10 +507,10 @@ function EditorInner({
         </div>
       )}
       <div className="hidden md:block">
-        <PresetTabs active={activePreset} onSelect={loadPreset} />
+        <PresetTabs active={activePreset} onSelect={handleLoadPreset} />
       </div>
 
-      <div className="flex flex-1 min-h-0">
+      <div className="flex flex-1 min-h-0 relative">
         {/* Left Panel */}
         <div className="hidden md:flex flex-col min-h-0">
           <ControlPanel
@@ -448,6 +525,7 @@ function EditorInner({
             width={sketch.width}
             height={sketch.height}
             selectedCount={selectedElements.size}
+            selectedColor={selectedColor}
             onPaper={setPaper}
             onTool={setTool}
             onAmplitude={setAmplitude}
@@ -459,6 +537,7 @@ function EditorInner({
             onResize={handleResize}
             onAddElement={addElement}
             onDeleteSelected={deleteSelected}
+            onColorSelected={colorSelected}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -474,7 +553,49 @@ function EditorInner({
           onSelectElements={setSelectedElements}
           onMoveSelected={moveSelected}
           onDragEnd={commitDrag}
+          onResizeElement={resizeElement}
+          onResizeEnd={commitResize}
+          onDoubleClickElement={handleDoubleClickElement}
+          canvasControlRef={canvasControlRef}
         />
+
+        {/* Inline text editing overlay */}
+        {editingElement && (
+          <div className="absolute inset-0 flex items-center justify-center z-50 bg-black/20">
+            <div className="rounded-xl shadow-2xl p-4 flex flex-col gap-3 w-72" style={{ backgroundColor: "#073642", border: "1px solid #268bd2" }}>
+              <label className="text-xs font-semibold uppercase tracking-wide" style={{ color: "#93a1a1" }}>
+                Edit {editingElement.field === "label" ? "label" : "text"}
+              </label>
+              <input
+                autoFocus
+                className="w-full rounded px-3 py-2 text-sm outline-none"
+                style={{ backgroundColor: "#002b36", color: "#839496", border: "1px solid #268bd2" }}
+                value={editingElement.value}
+                onChange={(e) => setEditingElement((prev) => prev ? { ...prev, value: e.target.value } : null)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") { e.preventDefault(); commitInlineEdit(); }
+                  if (e.key === "Escape") { e.preventDefault(); cancelInlineEdit(); }
+                }}
+              />
+              <div className="flex gap-2 justify-end">
+                <button
+                  onClick={cancelInlineEdit}
+                  className="px-3 py-1.5 rounded text-xs"
+                  style={{ backgroundColor: "#073642", color: "#657b83", border: "1px solid #586e75" }}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={commitInlineEdit}
+                  className="px-3 py-1.5 rounded text-xs font-semibold"
+                  style={{ backgroundColor: "#268bd2", color: "#fdf6e3" }}
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Mobile FAB */}
@@ -492,7 +613,7 @@ function EditorInner({
         open={mobileControlsOpen}
         onClose={() => setMobileControlsOpen(false)}
       >
-        <PresetTabs active={activePreset} onSelect={loadPreset} />
+        <PresetTabs active={activePreset} onSelect={handleLoadPreset} />
         <ControlPanel
           paper={sketch.paper}
           tool={sketch.tool}
@@ -505,6 +626,7 @@ function EditorInner({
           width={sketch.width}
           height={sketch.height}
           selectedCount={selectedElements.size}
+          selectedColor={selectedColor}
           onPaper={setPaper}
           onTool={setTool}
           onAmplitude={setAmplitude}
@@ -516,6 +638,7 @@ function EditorInner({
           onResize={handleResize}
           onAddElement={addElement}
           onDeleteSelected={deleteSelected}
+          onColorSelected={colorSelected}
         />
       </MobileBottomSheet>
     </div>
