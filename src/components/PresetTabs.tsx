@@ -9,8 +9,8 @@ interface PresetTabsProps {
 
 export default function PresetTabs({ active, onSelect }: PresetTabsProps) {
   return (
-    <div className="bg-neutral-900 border-b border-neutral-800 px-4 flex items-center h-[36px] shrink-0 overflow-x-auto">
-      <span className="text-[10px] text-neutral-500 uppercase tracking-wider mr-3 shrink-0">
+    <div className="px-4 flex items-center h-[36px] shrink-0 overflow-x-auto" style={{ backgroundColor: "#eee8d5", borderBottom: "1px solid #93a1a1" }}>
+      <span className="text-[10px] uppercase tracking-wider mr-3 shrink-0" style={{ color: "#93a1a1" }}>
         Demos
       </span>
       <div className="flex gap-1">
@@ -20,9 +20,13 @@ export default function PresetTabs({ active, onSelect }: PresetTabsProps) {
             onClick={() => onSelect(name)}
             className={`px-3 py-1 rounded text-xs font-medium transition-all whitespace-nowrap ${
               active === name
-                ? "bg-blue-600 text-white"
-                : "bg-neutral-800 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-200"
+                ? "text-[#fdf6e3]"
+                : "hover:bg-[#fdf6e3]"
             }`}
+            style={active === name
+              ? { backgroundColor: "#268bd2" }
+              : { backgroundColor: "#fdf6e3", color: "#657b83" }
+            }
           >
             {name}
           </button>

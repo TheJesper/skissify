@@ -596,43 +596,33 @@ function renderElement(
       const dwall = el.wall || "h";
 
       if (dwall === "h") {
+        // Horizontal wall line
+        HL(ctx, el.x, el.y, el.x + dw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+        const arcPts: Pt[] = [];
         if (swing === "right") {
-          // Door leaf + arc
-          HL(ctx, el.x, el.y, el.x + dw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
-          const arcPts: Pt[] = [];
-          for (let i = 0; i <= 11; i++) {
-            const angle = -Math.PI / 2 + (i / 11) * (Math.PI / 2);
-            arcPts.push([el.x + dw + Math.cos(angle) * dw, el.y + Math.sin(angle) * dw]);
+          // POC: angle = -(i/10)*PI/2, point at [x+w+cos(a)*w, y+sin(a)*w]
+          for (let i = 0; i <= 10; i++) {
+            const a = -(i / 10) * Math.PI / 2;
+            arcPts.push([el.x + dw + Math.cos(a) * dw, el.y + Math.sin(a) * dw]);
           }
-          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
         } else {
-          HL(ctx, el.x, el.y, el.x + dw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
-          const arcPts: Pt[] = [];
-          for (let i = 0; i <= 11; i++) {
-            const angle = -Math.PI + (i / 11) * (Math.PI / 2);
-            arcPts.push([el.x + Math.cos(angle) * dw, el.y + Math.sin(angle) * dw]);
+          // POC: angle = PI+(i/10)*PI/2, point at [x+cos(a)*w, y+sin(a)*w]
+          for (let i = 0; i <= 10; i++) {
+            const a = Math.PI + (i / 10) * Math.PI / 2;
+            arcPts.push([el.x + Math.cos(a) * dw, el.y + Math.sin(a) * dw]);
           }
-          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
         }
+        doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
       } else {
-        // Vertical wall door
-        if (swing === "right") {
-          HL(ctx, el.x, el.y, el.x, el.y + dw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
-          const arcPts: Pt[] = [];
-          for (let i = 0; i <= 11; i++) {
-            const angle = 0 + (i / 11) * (Math.PI / 2);
-            arcPts.push([el.x + Math.cos(angle) * dw, el.y + dw + Math.sin(angle) * dw]);
-          }
-          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
-        } else {
-          HL(ctx, el.x, el.y, el.x, el.y + dw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
-          const arcPts: Pt[] = [];
-          for (let i = 0; i <= 11; i++) {
-            const angle = Math.PI / 2 + (i / 11) * (Math.PI / 2);
-            arcPts.push([el.x + Math.cos(angle) * dw, el.y + Math.sin(angle) * dw]);
-          }
-          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
+        // Vertical wall line
+        HL(ctx, el.x, el.y, el.x, el.y + dw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+        // POC: angle = -(i/10)*PI/2+PI/2, point at [x+sin(a)*w, y+w+cos(a)*w]
+        const arcPts: Pt[] = [];
+        for (let i = 0; i <= 10; i++) {
+          const a = -(i / 10) * Math.PI / 2 + Math.PI / 2;
+          arcPts.push([el.x + Math.sin(a) * dw, el.y + dw + Math.cos(a) * dw]);
         }
+        doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
       }
       break;
     }

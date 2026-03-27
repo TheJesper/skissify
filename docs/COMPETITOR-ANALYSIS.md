@@ -734,6 +734,57 @@ Without these tutorials, Skissify will be invisible even when its MCP server is 
 
 ---
 
+## Update Log: March 27, 2026 — 13:48 CET | Automated Strategy Run #11
+
+### 🟢 MEGA DATA POINT: Smartsheet MCP — 4,000 Users + 1.74M Actions in ONE WEEK
+- **URL**: https://finance.yahoo.com/sectors/technology/articles/smartsheet-mcp-server-achieves-exceptional-130000914.html (March 24, 2026)
+- Smartsheet launched its MCP Server + native Claude integration and hit **4,000 users and 1.74 million total actions** in its first week
+- This is the clearest signal yet of MCP adoption velocity in enterprise workflows
+- **Skissify implication**: When Skissify MCP launches, first-week numbers in the thousands are achievable — IF the tool is discoverable (registry, npm, HN post). The Smartsheet data proves developer appetite for MCP integrations is real and immediate. Don't underestimate the launch window.
+- **Urgency**: Every day without a live Skissify MCP server is quantifiably expensive. 4,000 users in a week means the pipeline from "list on registry" to "first users" is near-instant.
+
+### 🟢 PRICING SIGNAL: Stripe + AI Companies Pushing Hybrid Usage-Based (March 2026)
+- **URL**: https://www.pymnts.com/news/artificial-intelligence/2026/stripe-introduces-billing-tools-to-meter-and-charge-ai-usage/ (3 weeks ago)
+- Stripe launched new billing tools specifically to meter and charge AI usage — moving away from pure seat-based subscription
+- **URL**: https://www.news.aakashg.com/p/how-to-price-ai-products (1 month ago)
+- Study of 50 highest-valued AI startups (Feb 2026): "Nearly half use two or three models simultaneously. OpenAI runs tiered subscriptions for consumers, usage-based for the API, and freemium for the free tier."
+- **31% of AI vendors** now use hybrid models (High Alpha data, Zylo)
+- **Skissify validation**: Skissify's three-tier structure (free+watermark / Pro EUR 5 subscription / API usage-based EUR 0.005/render) is exactly the OpenAI pattern applied to a micro-SaaS. This is now explicitly industry-standard, not experimental.
+- **Action implication**: Stripe's metered billing tooling makes the per-render overage model technically easy to implement. The infrastructure exists; this is a configuration task, not custom engineering.
+
+### 🟡 WATCH: Affinity by Canva Version 3.1 — Major Design Tool Update (March 2026)
+- **URL**: https://www.affinity.studio/blog/affinity-update-march-2026 (2 days ago)
+- Affinity (now owned by Canva, ~$1.3B acquisition) shipped Version 3.1 with "HUGE" feature updates: advanced compositing, AI-powered silhouette/cutout tools, improved vector editing
+- Positioned as "Figma killer" / "Canva for professionals"
+- No MCP server, no hand-drawn aesthetic, no floor plan support, no JSON-native API
+- **Skissify relevance**: LOW direct competition. Affinity competes in the polished graphic design space (Figma, Photoshop lane). No overlap with sketch/programmatic/floor-plan lane.
+- **But note**: Canva's acquisition of Affinity signals big-tech's continued consolidation of the visual design market. If Canva acquires or builds a sketch tool in this space, threat level rises significantly.
+- **Signal**: Even Canva (2B+ users) is investing heavily in the "serious design tool" market — validating that visual output tools are a growing category overall.
+
+### 🟡 SIGNAL: Excalidraw + "System Architecture" Mindshare Growing (March 27, 2026)
+- **URL**: https://startupik.com/how-to-design-system-architecture-using-excalidraw/ (4 days ago)
+- Fresh Startupik article: "Excalidraw has become a popular choice for architecture diagrams because it solves a common startup problem: most architecture diagrams are either too formal, too slow to update, or too difficult for cross-functional teams to use."
+- This positions Excalidraw as the default startup architecture diagramming tool — "architecture diagram" mindshare is deepening
+- **Skissify response**: System architecture diagrams are an Excalidraw lane. Floor plan sketches are Skissify's lane. The Startupik article reinforces the positioning gap — Excalidraw handles topology/architecture; Skissify handles spatial/floor-plan. These are complements for different contexts.
+- **Content opportunity**: Startupik is actively publishing Excalidraw tutorials (also maintains the "Excalidraw alternatives" roundup). Build a relationship with Startupik to get Skissify covered post-launch as the floor-plan-specific alternative.
+
+### 🟢 CONFIRMATION: Eleventh Consecutive Scan — Niche Unoccupied
+- Searches conducted: AI sketch tool hand-drawn MCP launch March 2026; new MCP tools diagram sketch whiteboard launch week; AI floor plan generator JSON API new launch 2026
+- **No new entrant** to the "hand-drawn + JSON-native + MCP + floor plan" quadrant detected
+- Affinity 3.1 (polished design — wrong lane), Smartsheet MCP (project management — wrong lane), Cyera MCP (security — wrong lane) — all adjacent but non-competitive
+- **Eleven consecutive scans: the niche is structurally durable.**
+
+### Updated Competitor Intelligence (Run #11 additions)
+
+| Competitor | What Changed This Week |
+|-----------|------------------------|
+| Smartsheet | MCP server: 4,000 users, 1.74M actions in week 1 — adoption velocity benchmark |
+| Affinity by Canva | Version 3.1 major update — polished design, zero sketch/MCP/floor plan |
+| Excalidraw | Startup architecture diagram mindshare deepening via tutorial content |
+| All others | No major changes detected |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

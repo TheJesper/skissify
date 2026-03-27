@@ -9,9 +9,27 @@
     format("woff2");
 }
 
+/* Solarized palette */
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --sol-base03: #002b36;
+  --sol-base02: #073642;
+  --sol-base01: #586e75;
+  --sol-base00: #657b83;
+  --sol-base0: #839496;
+  --sol-base1: #93a1a1;
+  --sol-base2: #eee8d5;
+  --sol-base3: #fdf6e3;
+  --sol-yellow: #b58900;
+  --sol-orange: #cb4b16;
+  --sol-red: #dc322f;
+  --sol-magenta: #d33682;
+  --sol-violet: #6c71c4;
+  --sol-blue: #268bd2;
+  --sol-cyan: #2aa198;
+  --sol-green: #859900;
+
+  --background: #fdf6e3;
+  --foreground: #586e75;
 }
 
 body {
@@ -37,31 +55,31 @@ section {
   }
 }
 
-/* Scrollbar styling */
+/* Scrollbar styling — Solarized */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: var(--sol-base2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: var(--sol-base1);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: var(--sol-base00);
 }
 
-/* Range slider styling */
+/* Range slider styling — Solarized */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   height: 4px;
-  background: #333;
+  background: var(--sol-base2);
   border-radius: 2px;
   outline: none;
 }
@@ -72,9 +90,9 @@ input[type="range"]::-webkit-slider-thumb {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #3b82f6;
+  background: var(--sol-blue);
   cursor: pointer;
-  border: 2px solid #1e3a5f;
+  border: 2px solid var(--sol-base3);
   transition: transform 0.15s ease;
 }
 
@@ -86,22 +104,22 @@ textarea:focus {
   outline: none;
 }
 
-/* JSON syntax highlighting */
+/* JSON syntax highlighting — Solarized accents */
 .json-string {
-  color: #f59e0b;
+  color: var(--sol-yellow);
 }
 
 .json-number {
-  color: #34d399;
+  color: var(--sol-green);
 }
 
 .json-bool {
-  color: #a78bfa;
+  color: var(--sol-violet);
 }
 
 /* Selection color */
 ::selection {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(38, 139, 210, 0.3);
   color: inherit;
 }
 

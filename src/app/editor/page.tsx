@@ -75,8 +75,8 @@ function EditorContent() {
 
   if (loading) {
     return (
-      <div className="h-screen flex flex-col items-center justify-center bg-neutral-950 text-neutral-400 gap-4">
-        <div className="w-8 h-8 border-2 border-neutral-700 border-t-blue-500 rounded-full animate-spin" />
+      <div className="h-screen flex flex-col items-center justify-center bg-[#fdf6e3] text-[#657b83] gap-4">
+        <div className="w-8 h-8 border-2 border-[#eee8d5] border-t-[#268bd2] rounded-full animate-spin" />
         <span className="text-sm">Loading sketch...</span>
       </div>
     );
@@ -302,8 +302,8 @@ function EditorInner({
         autosaveSavedAt={autosaveSavedAt}
       />
       {showAutosaveToast && (
-        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-[100] px-4 py-2 bg-neutral-800 border border-neutral-600 text-neutral-200 text-sm font-medium rounded-lg shadow-lg flex items-center gap-2">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400 shrink-0">
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-[100] px-4 py-2 bg-[#eee8d5] border border-[#93a1a1] text-[#586e75] text-sm font-medium rounded-lg shadow-lg flex items-center gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#268bd2] shrink-0">
             <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
             <path d="M12 8v4l3 3"/>
           </svg>
@@ -357,7 +357,7 @@ function EditorInner({
       {/* Mobile FAB to toggle controls */}
       <button
         onClick={() => setMobileControlsOpen(!mobileControlsOpen)}
-        className="md:hidden fixed bottom-6 right-6 w-14 h-14 bg-blue-600 hover:bg-blue-500 text-white rounded-full shadow-lg shadow-blue-600/30 flex items-center justify-center text-2xl z-50 transition-all"
+        className="md:hidden fixed bottom-6 right-6 w-14 h-14 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white rounded-full shadow-lg shadow-[#268bd2]/30 flex items-center justify-center text-2xl z-50 transition-all"
         aria-label="Toggle controls"
       >
         {mobileControlsOpen ? "\u00D7" : "\u2699"}
@@ -365,8 +365,8 @@ function EditorInner({
 
       {/* Mobile bottom sheet */}
       {mobileControlsOpen && (
-        <div className="md:hidden fixed inset-x-0 bottom-0 z-40 bg-neutral-900 border-t border-neutral-700 rounded-t-2xl max-h-[70vh] overflow-y-auto mobile-bottom-sheet">
-          <div className="w-12 h-1 bg-neutral-600 rounded-full mx-auto mt-3 mb-2" />
+        <div className="md:hidden fixed inset-x-0 bottom-0 z-40 bg-[#eee8d5] border-t border-[#93a1a1] rounded-t-2xl max-h-[70vh] overflow-y-auto mobile-bottom-sheet">
+          <div className="w-12 h-1 bg-[#93a1a1] rounded-full mx-auto mt-3 mb-2" />
           <PresetTabs active={activePreset} onSelect={loadPreset} />
           <ControlPanel
             paper={sketch.paper}
@@ -398,8 +398,8 @@ export default function EditorPage() {
   return (
     <Suspense
       fallback={
-        <div className="h-screen flex flex-col items-center justify-center bg-neutral-950 text-neutral-400 gap-4">
-          <div className="w-8 h-8 border-2 border-neutral-700 border-t-blue-500 rounded-full animate-spin" />
+        <div className="h-screen flex flex-col items-center justify-center bg-[#fdf6e3] text-[#657b83] gap-4">
+          <div className="w-8 h-8 border-2 border-[#eee8d5] border-t-[#268bd2] rounded-full animate-spin" />
           <span className="text-sm">Loading editor...</span>
         </div>
       }

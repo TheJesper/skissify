@@ -1,0 +1,6 @@
+# Plugin configuration - see SPEC-070 PLUGIN-3
+tasks: disk
+registry: json-disk
+comms: tags-disk
+chat: null
+terminal: bash

@@ -532,9 +532,9 @@ export default function Canvas({
       className="flex-1 overflow-hidden flex items-center justify-center touch-none relative"
       style={{
         minHeight: 0,
-        backgroundColor: "#2a2a2a",
+        backgroundColor: "#eee8d5",
         backgroundImage:
-          "radial-gradient(circle, #3a3a3a 1px, transparent 1px)",
+          "radial-gradient(circle, #93a1a1 1px, transparent 1px)",
         backgroundSize: "24px 24px",
       }}
       onTouchStart={handleTouchStart}
@@ -610,7 +610,7 @@ export default function Canvas({
               return nz;
             });
           }}
-          className="w-7 h-7 flex items-center justify-center bg-neutral-800/80 hover:bg-neutral-700 text-neutral-300 rounded text-sm font-bold transition-colors border border-neutral-700/50"
+          className="w-7 h-7 flex items-center justify-center bg-[#fdf6e3]/90 hover:bg-[#fdf6e3] text-[#586e75] rounded text-sm font-bold transition-colors border border-[#93a1a1]/50"
           title="Zoom out"
           aria-label="Zoom out"
         >
@@ -618,7 +618,7 @@ export default function Canvas({
         </button>
         <button
           onClick={resetView}
-          className="px-2 h-7 flex items-center justify-center bg-neutral-800/80 hover:bg-neutral-700 text-neutral-400 hover:text-neutral-200 rounded text-[11px] font-mono transition-colors border border-neutral-700/50 min-w-[46px]"
+          className="px-2 h-7 flex items-center justify-center bg-[#fdf6e3]/90 hover:bg-[#fdf6e3] text-[#657b83] hover:text-[#073642] rounded text-[11px] font-mono transition-colors border border-[#93a1a1]/50 min-w-[46px]"
           title="Reset view to fit (double-click canvas to reset)"
           aria-label="Reset zoom"
         >
@@ -632,7 +632,7 @@ export default function Canvas({
               return nz;
             });
           }}
-          className="w-7 h-7 flex items-center justify-center bg-neutral-800/80 hover:bg-neutral-700 text-neutral-300 rounded text-sm font-bold transition-colors border border-neutral-700/50"
+          className="w-7 h-7 flex items-center justify-center bg-[#fdf6e3]/90 hover:bg-[#fdf6e3] text-[#586e75] rounded text-sm font-bold transition-colors border border-[#93a1a1]/50"
           title="Zoom in"
           aria-label="Zoom in"
         >

@@ -83,7 +83,7 @@ export default function ControlPanel({
   };
   const activeInkColor = normalizeColor(inkColor);
   return (
-    <div className="w-[300px] min-w-[300px] bg-neutral-900 border-r border-neutral-700 flex flex-col overflow-y-auto text-neutral-200">
+    <div className="w-[300px] min-w-[300px] flex flex-col overflow-y-auto" style={{ backgroundColor: "#eee8d5", borderRight: "1px solid #93a1a1", color: "#586e75" }}>
       {/* Paper */}
       <Section title="Paper">
         <div className="flex gap-1.5">
@@ -93,12 +93,12 @@ export default function ControlPanel({
               onClick={() => onPaper(p.key)}
               className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
                 paper === p.key
-                  ? "ring-2 ring-blue-500 bg-neutral-700"
-                  : "bg-neutral-800 hover:bg-neutral-700"
+                  ? "ring-2 ring-[#268bd2] bg-[#eee8d5]"
+                  : "bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
               }`}
             >
               <span
-                className="inline-block w-3 h-3 rounded-sm mr-1 align-middle border border-neutral-600"
+                className="inline-block w-3 h-3 rounded-sm mr-1 align-middle border border-[#93a1a1]"
                 style={{ backgroundColor: p.color }}
               />
               {p.label}
@@ -116,8 +116,8 @@ export default function ControlPanel({
               onClick={() => onTool(t.key)}
               className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
                 tool === t.key
-                  ? "ring-2 ring-blue-500 bg-neutral-700"
-                  : "bg-neutral-800 hover:bg-neutral-700"
+                  ? "ring-2 ring-[#268bd2] bg-[#eee8d5]"
+                  : "bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
               }`}
             >
               {t.label}
@@ -137,22 +137,22 @@ export default function ControlPanel({
               className={`w-full aspect-square rounded transition-all border ${
                 activeInkColor === normalizeColor(c.key)
                   ? "ring-2 ring-blue-500 border-transparent"
-                  : "border-neutral-600 hover:border-neutral-400"
+                  : "border-[#93a1a1] hover:border-[#657b83]"
               }`}
               style={{ backgroundColor: c.key }}
             />
           ))}
         </div>
         <div className="flex items-center gap-2 mt-1">
-          <label className="text-xs text-neutral-400 shrink-0">Custom</label>
+          <label className="text-xs text-[#657b83] shrink-0">Custom</label>
           <input
             type="color"
             value={activeInkColor}
             onChange={(e) => onInkColor(e.target.value)}
-            className="w-8 h-7 rounded cursor-pointer border border-neutral-600 bg-neutral-800 p-0.5"
+            className="w-8 h-7 rounded cursor-pointer border border-[#93a1a1] bg-[#fdf6e3] p-0.5"
             title="Pick custom ink color"
           />
-          <span className="text-[10px] text-neutral-500 font-mono">{activeInkColor}</span>
+          <span className="text-[10px] text-[#93a1a1] font-mono">{activeInkColor}</span>
         </div>
       </Section>
 
@@ -180,8 +180,8 @@ export default function ControlPanel({
               onClick={() => onResize(size.width, size.height)}
               className={`flex-1 px-1.5 py-1 rounded text-xs font-medium transition-all ${
                 width === size.width && height === size.height
-                  ? "ring-2 ring-blue-500 bg-neutral-700"
-                  : "bg-neutral-800 hover:bg-neutral-700"
+                  ? "ring-2 ring-[#268bd2] bg-[#eee8d5]"
+                  : "bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
               }`}
             >
               {key}
@@ -190,25 +190,25 @@ export default function ControlPanel({
         </div>
         <div className="flex gap-2">
           <div className="flex-1">
-            <label className="text-[10px] text-neutral-400 uppercase">W</label>
+            <label className="text-[10px] text-[#657b83] uppercase">W</label>
             <input
               type="number"
               value={width || 900}
               onChange={(e) =>
                 onResize(parseInt(e.target.value) || 900, height || 650)
               }
-              className="w-full bg-neutral-800 border border-neutral-600 rounded px-2 py-1 text-xs text-neutral-200"
+              className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-xs text-[#586e75]"
             />
           </div>
           <div className="flex-1">
-            <label className="text-[10px] text-neutral-400 uppercase">H</label>
+            <label className="text-[10px] text-[#657b83] uppercase">H</label>
             <input
               type="number"
               value={height || 650}
               onChange={(e) =>
                 onResize(width || 900, parseInt(e.target.value) || 650)
               }
-              className="w-full bg-neutral-800 border border-neutral-600 rounded px-2 py-1 text-xs text-neutral-200"
+              className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-xs text-[#586e75]"
             />
           </div>
         </div>
@@ -216,23 +216,23 @@ export default function ControlPanel({
 
       {/* Selection Info */}
       <Section title="Selection">
-        <div className="text-[11px] text-neutral-400 space-y-0.5 font-mono">
+        <div className="text-[11px] text-[#657b83] space-y-0.5 font-mono">
           <div>
-            <kbd className="bg-neutral-700 px-1 rounded text-[10px]">click</kbd> select,{" "}
-            <kbd className="bg-neutral-700 px-1 rounded text-[10px]">shift+click</kbd> add
+            <kbd className="bg-[#eee8d5] px-1 rounded text-[10px]">click</kbd> select,{" "}
+            <kbd className="bg-[#eee8d5] px-1 rounded text-[10px]">shift+click</kbd> add
           </div>
           <div>
-            <kbd className="bg-neutral-700 px-1 rounded text-[10px]">del</kbd> remove,{" "}
-            <kbd className="bg-neutral-700 px-1 rounded text-[10px]">esc</kbd> deselect
+            <kbd className="bg-[#eee8d5] px-1 rounded text-[10px]">del</kbd> remove,{" "}
+            <kbd className="bg-[#eee8d5] px-1 rounded text-[10px]">esc</kbd> deselect
           </div>
           <div>
-            <kbd className="bg-neutral-700 px-1 rounded text-[10px]">scroll</kbd> zoom,{" "}
-            <kbd className="bg-neutral-700 px-1 rounded text-[10px]">alt/ctrl</kbd> pan
+            <kbd className="bg-[#eee8d5] px-1 rounded text-[10px]">scroll</kbd> zoom,{" "}
+            <kbd className="bg-[#eee8d5] px-1 rounded text-[10px]">alt/ctrl</kbd> pan
           </div>
         </div>
         {selectedCount > 0 && (
           <div className="mt-2 flex items-center gap-2">
-            <span className="text-xs text-blue-400">
+            <span className="text-xs text-[#268bd2]">
               {selectedCount} selected
             </span>
             <button
@@ -252,7 +252,7 @@ export default function ControlPanel({
             <button
               key={t}
               onClick={() => onAddElement(t)}
-              className="px-1.5 py-1.5 bg-neutral-800 hover:bg-neutral-700 rounded text-[11px] font-medium transition-all text-center"
+              className="px-1.5 py-1.5 bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 rounded text-[11px] font-medium transition-all text-center"
             >
               {t}
             </button>
@@ -271,8 +271,8 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div className="px-3 py-2.5 border-b border-neutral-800">
-      <h3 className="text-[10px] font-semibold uppercase tracking-wider text-neutral-500 mb-2">
+    <div className="px-3 py-2.5 border-b border-[#eee8d5]">
+      <h3 className="text-[10px] font-semibold uppercase tracking-wider text-[#93a1a1] mb-2">
         {title}
       </h3>
       {children}
@@ -291,7 +291,7 @@ function SliderControl({
 }) {
   return (
     <div className="flex items-center gap-2 mb-1.5">
-      <label className="text-xs text-neutral-400 w-20 shrink-0">{label}</label>
+      <label className="text-xs text-[#657b83] w-20 shrink-0">{label}</label>
       <input
         type="range"
         min={0}
@@ -299,9 +299,9 @@ function SliderControl({
         step={0.01}
         value={value}
         onChange={(e) => onChange(parseFloat(e.target.value))}
-        className="flex-1 h-1 accent-blue-500"
+        className="flex-1 h-1 accent-[#268bd2]"
       />
-      <span className="text-[10px] text-neutral-500 w-8 text-right font-mono">
+      <span className="text-[10px] text-[#93a1a1] w-8 text-right font-mono">
         {value.toFixed(2)}
       </span>
     </div>
