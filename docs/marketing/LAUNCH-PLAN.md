@@ -162,6 +162,53 @@
 
 ---
 
+## Marketing Improvements (Cycle 10 — March 27, 07:55 CET)
+
+### Completed This Cycle
+- [x] ✅ **Blog post #12 NEW**: "The Three-Layer AI Stack — And the Missing Visual Output Problem" — 1,400-word post framing Skissify as the visual output layer below MCP/A2A/WebMCP. Uses the hot "100+ enterprises on A2A" stat. Strong HN-comment weapon: references determinism, iteration, schema constraints. Why image generators don't work for agent workflows. File: `docs/marketing/blog/mcp-a2a-three-layer-stack-visual-output.md`
+- [x] ✅ **Tweet 9: A2A stack angle** — "Layer 4: structured visual output" framing, explicitly addresses the missing piece in the 3-layer stack narrative. Best time: 10:30 CET after Show HN goes live.
+- [x] ✅ **Tweet 10: Real-time traction post** — template to fill at 14:00 CET with actual numbers. Authentic build-in-public moment. High engagement potential if any traction is happening.
+- [x] ✅ **Tweet 11: Image generator rebuke** — direct answer to "why not DALL-E?" objection. Determinism angle. Strong for the r/mcp and r/LocalLLaMA audiences.
+- [x] ✅ **r/AIAssistants post copy** — framed as "AI assistants can draw now" (not product promo). Best for 15:00 CET. Separate from r/ClaudeAI by 30+ minutes.
+- [x] ✅ **Product Hunt maker comment template** — copy-paste ready with an embedded tryable JSON snippet and two engagement questions. Designed to drive comments (PH's algorithm rewards comment activity).
+- [x] ✅ **HN first comment template** — for Show HN at 10:00 CET. Explicitly invites technical debate on the JSON-vs-DSL design question. Includes the 12,770 MCP server stat. Designed to seed discussion, not self-promote.
+
+### What's Different About Cycle 10
+It's 07:55 CET. Launch tweet should be out (or posting in 5 minutes). Previous cycles focused on content creation for later. Cycle 10 focuses on **comment seeds and engagement templates** for the live-fire moments:
+- PH maker comment: drives comment activity → better PH algo placement
+- HN first comment: seeds the right technical discussion → makes the thread go deeper
+- Real-time traction tweet: authentic moment if numbers are good by 14:00
+- A2A framing: connects Skissify to the freshest AI infrastructure narrative
+
+### New Blog Post #12 — Best Use Cases
+"The Three-Layer AI Stack" covers:
+- The three-layer consensus stack (MCP, A2A, WebMCP)
+- Why image generators fail for agent workflows (3 reasons: no determinism, no structure, no schema)
+- Skissify as "Layer 4" — the visual output layer
+- A2A orchestration: Skissify as the visualization specialist agent role
+- Open spec philosophy (mirrors how MCP itself works)
+- Concrete iterative design example that actually runs today
+
+**Best platforms:** Dev.to (Day 3, Sun Mar 29), reference in HN comments today, LinkedIn on Day 5
+
+### Current Blog Post Inventory (12 posts, all ready to publish)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1 | Why Hand-Drawn Sketches Beat Figma | why-hand-drawn... | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | how-ai-agents... | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | skissify-vs-excalidraw | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | build-first-ai... | Dev.to | Day 2 |
+| 5 | We Launched Today | we-launched-today... | Indie Hackers | Day 1 (22:00) |
+| 6 | JSON Schema Behind Skissify | the-json-schema... | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | how-to-add-skissify... | Dev.to, Hashnode, Medium | Day 7 |
+| 8 | First Sketch Tool for AI Agents | the-first-sketch... | HN direct, Dev.to | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | mcp-has-12000... | Dev.to, Bluesky | Day 2 |
+| 10 | I Gave Claude a Pencil | i-gave-claude... | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | launch-day-letter... | Dev.to | Day 1 (12:00) |
+| 12 | **Three-Layer Stack: Missing Visual Layer** | **mcp-a2a-three-layer...** | **Dev.to, HN ref** | **Day 3** |
+
+---
+
 ## Marketing Improvements (Cycle 9 — March 27, 06:51 CET)
 
 ### Completed This Cycle
