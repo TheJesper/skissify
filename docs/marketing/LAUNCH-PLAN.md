@@ -162,6 +162,65 @@
 
 ---
 
+## Marketing Improvements (Cycle 15 — March 27, 15:05 CET)
+
+### ⚡ STATUS: AFTERNOON PUSH — US EAST COAST AT LUNCH, WEST COAST WAKING UP
+
+It's 15:05 CET (9:05 AM ET / 6:05 AM PT). The afternoon content wave must be in flight NOW. Google's Stitch "vibe design" launch last week is the most important ambient opportunity of launch day — ride it immediately.
+
+### Completed This Cycle
+- [x] ✅ **Blog post #21 NEW**: "Skissify vs Google Stitch — Why Both Exist" — 1,400-word comparison post that rides the Google Stitch vibe design coverage (The Register, India Today, Google blog — all this week). Positions Skissify as the spatial/programmatic complement to Stitch's UI polish. Best SEO: "Skissify vs Google Stitch", "vibe design vs vibe drawing". File: `docs/marketing/blog/skissify-vs-google-stitch-different-jobs.md`
+- [x] ✅ **Blog post #22 NEW**: "The End of Text-Only AI Output" — 1,200-word trend piece on the structured visual output category emerging in 2026. Three-layer framework (generative images / structured sketches / precision CAD). Strong HN angle: "why DALL-E doesn't solve this". Best Day 7 Dev.to or Medium post. File: `docs/marketing/blog/the-end-of-text-only-ai-output.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 15**: Tweets 29-32 (Google Stitch reaction, three-layers thread, Friday dream-house hook, "7 things I didn't expect"), r/designtools post, r/webdev Canvas 2D technical post, updated full timing table for 15:05-22:00 window
+
+### Key Intel: Google Stitch Context
+Google launched Stitch vibe design with MCP on March 19, 2026 — 8 days ago. Press cycle still hot:
+- The Register, India Today, Substack newsletter "nervegna" all covered this week
+- Hook: "Stitch is Figma with Gemini. Skissify is sketch output for autonomous agents. Different tools."
+- Tweet 29 rides this narrative: post at 15:15 CET while the press cycle is still warm
+
+### New Blog Posts (Cycle 15) — Distribution Plan
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 21 | Skissify vs Google Stitch | skissify-vs-google-stitch... | Dev.to, Medium | Day 2-3 (this weekend) |
+| 22 | The End of Text-Only AI Output | the-end-of-text-only... | Dev.to, HN reference | Day 6-7 (Apr 2-3) |
+
+### Immediate Actions Right Now (15:05 CET)
+1. **Post Tweet 29** (Google Stitch reaction) — 15:15 CET — HIGHEST PRIORITY, ride the narrative NOW
+2. **Queue Tweet 30 thread** for 17:15 CET (three layers visual output)
+3. **Queue Tweet 31** for 20:15 CET (Friday dream house hook)
+4. **Post r/designtools** at 18:30 CET (new community, not yet targeted)
+5. **Post r/webdev Canvas 2D** at 19:00 CET (technical audience, high SEO value)
+6. **Publish blog #21** (Stitch vs Skissify) on Dev.to today — SEO benefits from the Stitch press cycle
+
+### Updated Full Blog Inventory (22 posts)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1 | Why Hand-Drawn Sketches Beat Figma | why-hand-drawn... | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | how-ai-agents... | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | skissify-vs-excalidraw | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | build-first-ai... | Dev.to | Day 2 |
+| 5 | We Launched Today | we-launched-today... | Indie Hackers | Day 1 (22:00) |
+| 6 | JSON Schema Behind Skissify | the-json-schema... | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | how-to-add-skissify... | Dev.to, Hashnode, Medium | Day 7 |
+| 8 | First Sketch Tool for AI Agents | the-first-sketch... | HN direct, Dev.to | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | mcp-has-12000... | Dev.to, Bluesky | Day 2 |
+| 10 | I Gave Claude a Pencil | i-gave-claude... | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | launch-day-letter... | Dev.to (12:00 today) | Day 1 |
+| 12 | Three-Layer Stack: Missing Visual Layer | mcp-a2a-three-layer... | Dev.to, HN ref | Day 3 |
+| 13 | Vibe Drawing | vibe-drawing... | Dev.to, Medium | Day 4 |
+| 14 | Real Estate Floor Plan Revolution | the-real-estate... | Medium, LinkedIn | Day 5 |
+| 15 | Launch Day Live Update — Hour 4 | launch-day-live-update... | Dev.to | Day 1 (13:00) |
+| 16 | The Visual Feedback Loop | ai-agent-visual-feedback-loop.md | Dev.to, Medium | Day 6 |
+| 17 | The Floor Plan That Surprised Me | the-floor-plan-that... | Substack, Medium | Day 2-3 |
+| 18 | Why Your AI Agent Needs Visual Output | why-your-ai-agent... | Dev.to, Medium | Day 2 |
+| 19 | The Weekend Project | the-weekend-project... | Indie Hackers | Day 2 |
+| 20 | Skissify for Non-Developers | skissify-for-non-developers... | Medium, Substack | Day 4 |
+| 21 | **Skissify vs Google Stitch** | **skissify-vs-google-stitch...** | **Dev.to, Medium** | **Day 2-3** |
+| 22 | **The End of Text-Only AI Output** | **the-end-of-text-only...** | **Dev.to, HN ref** | **Day 6-7** |
+
+---
+
 ## Marketing Improvements (Cycle 13 — March 27, 13:30 CET)
 
 ### ⚡ STATUS: US EAST COAST JUST WOKE UP (8:30 AM ET)

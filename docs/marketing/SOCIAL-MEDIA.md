@@ -2783,5 +2783,187 @@ Has anyone else found AI tools useful for client visualization in real estate?
 
 ---
 
-*Last Updated: March 27, 2026 (Cycle 14 — 14:00 CET)*
-*Added: Non-developer audience tweets (26-28), r/HomeImprovement post, r/DIY post, r/RealEstate post, LinkedIn article brief, full Day 1 timing table, Day 2 preview*
+## CYCLE 15 ADDITIONS — March 27, 2026 (15:05 CET)
+
+### ⚡ CONTEXT: Google Stitch "Vibe Design" is the HOT narrative right now
+Google launched Stitch vibe design last week with MCP integration. This is Skissify's biggest ambient press opportunity — the whole tech press is writing about "AI + visual output" this week. Every tweet that rides the Google Stitch narrative benefits from that tailwind.
+
+### Tweet 29: Google Stitch Ride (Post NOW — 15:15 CET)
+```
+Google just shipped "vibe design" with Stitch.
+
+Good. The more people understand that AI can produce visual output, the better.
+
+But there's a gap Stitch doesn't fill:
+
+Stitch → AI helps humans design polished UI mockups
+Skissify → AI agents draw spatial sketches autonomously
+
+Different tools. Different jobs.
+
+If you need rough floor plans, diagrams, and sketches from AI agents — without a human touching the canvas:
+
+skissify.com
+
+#VibeDdesign #MCPTools #AIAgents
+```
+
+### Tweet 30: The "Layers" Thread (Post 17:15 CET — before r/mcp post)
+```
+AI visual output is splitting into three layers.
+
+I've been thinking about this since Google Stitch launched. Thread: 🧵
+```
+
+**Thread:**
+```
+1/ Layer 1: Generative images (DALL-E, Midjourney, Imagen)
+→ Beautiful, creative, non-deterministic
+→ Agent can't iterate on them programmatically
+→ Great for marketing, not workflows
+
+2/ Layer 2: Structured sketches (← this is where Skissify lives)
+→ JSON-in, sketch-out
+→ Same JSON = same sketch, every time
+→ Agent can change one element, only that changes
+→ Built for iteration, not just generation
+
+3/ Layer 3: Precision CAD
+→ Engineering-grade, millimeter accurate
+→ Too complex for most agent workflows
+→ Floor-to-ceiling learning curve
+
+4/ The biggest gap was always Layer 2.
+
+Not polished. Not precise. Just... spatial and fast and editable by code.
+
+That's what Skissify is.
+
+5/ This is why "why not use DALL-E for floor plans?" misses the point.
+
+A DALL-E floor plan is pixels.
+A Skissify floor plan is data with a sketch view.
+
+The agent knows what it drew. It can change it. That's the product.
+
+skissify.com | free tier available
+```
+
+### Tweet 31: The Friday Hook (Replace/augment Tweet 24 — Post 20:15 CET)
+```
+It's Friday night.
+
+You know what's more fun than watching Netflix?
+
+Asking Claude to sketch a floor plan for the house you'd build if you won the lottery.
+
+Try it:
+1. Install @skissify MCP server: npm install -g @skissify/mcp-server
+2. Add to Claude Desktop config
+3. Tell Claude: "Design my dream cabin. 2 bedrooms, loft, wrap-around porch. Draw it."
+
+Takes 3 minutes to set up. Results are unreasonably satisfying.
+
+skissify.com — free to use, no signup for the editor
+
+#FridayNight #Claude #MCPTools
+```
+
+### Tweet 32: The "What We Learned" Evening Post (Post 21:30 CET — before Day 1 metrics)
+```
+7 things I didn't expect from launch day:
+
+1. Homeowners used it for renovation planning. I built this for developers.
+
+2. "Vibe drawing" resonated more than "JSON to sketch". Narrative > features.
+
+3. The MCP angle drove technical conversations. Floor plan angle drove shares.
+
+4. Google Stitch coverage accidentally boosted us. Good for the whole category.
+
+5. People want to self-host. The Docker compose file was the most-starred GitHub thing.
+
+6. The wobble algorithm demo is the most-watched element. 10 seconds of slider movement > 1000 words of explanation.
+
+7. Friday was a good launch day. Weekend hackers are real. Don't believe the "launch on Tuesdays" advice blindly.
+
+Building in public: [Day 1 numbers when you have them]
+```
+
+### r/designtools Post (New community — Post 18:30 CET)
+**Title:** I built a sketch tool where AI agents are the primary "user"
+
+```
+Background: I've been building AI agent workflows for 2 years. One consistent gap: agents can reason about spatial layouts (floor plans, diagrams, wireframes) but couldn't produce visual output.
+
+So I built Skissify.
+
+The interface is JSON. No drag-and-drop canvas. The agent generates a JSON manifest describing elements (walls, rooms, doors, windows, annotations), sends it to Skissify via MCP, and gets a hand-drawn sketch back.
+
+The rendering engine uses multi-harmonic wobble for the hand-drawn aesthetic — not a simple sine wave, but three axes of control: amplitude, wave frequency, and "humanness" (random tremor overlay).
+
+I launched today. Unexpected result: homeowners are using it for renovation planning without any agent at all. Just "describe your kitchen to an AI assistant, get a sketch."
+
+The tool: skissify.com
+MCP server: npm install -g @skissify/mcp-server
+
+Happy to answer any questions about the rendering approach or the JSON schema design choices.
+```
+
+### r/webdev Post (Post 19:00 CET — technical angle)
+**Title:** Show r/webdev: I built a sketch renderer in Canvas 2D — multi-harmonic wobble for genuine hand-drawn effect
+
+```
+Built a Canvas 2D rendering engine for hand-drawn sketches. Happy to share the technical approach since a few people have asked.
+
+**The problem with "hand-drawn" tools:**
+Most sketch tools fake hand-drawn lines with a simple sine wave offset. The result looks mechanical — identical wobble pattern on every line, constant frequency, no variation.
+
+**What real hands actually do:**
+- Frequency varies (faster tremor when making small precise marks)
+- Amplitude varies (wider wobble on long strokes)
+- Phase differs between strokes (not synchronized)
+- Superimposed harmonics (the fundamental tremor has overtones)
+
+**Skissify's approach:**
+Multi-harmonic wobble with seeded randomness. Each element gets a deterministic seed based on its position, so:
+- Same JSON → same sketch (reproducible for AI agent workflows)  
+- "Wall at x:100" looks different from "wall at x:200" — independent seeds
+- 14 element types, each with tuned wobble behavior (door arcs ≠ wall lines)
+
+Three user-controllable parameters: amplitude (0-10), waves (frequency), humanness (random tremor overlay intensity).
+
+**Live demo:** skissify.com — free editor, wobble slider in the toolbar
+
+Curious about any questions on the Canvas 2D specifics — stroke decomposition, path rendering, the seeded noise implementation.
+```
+
+### Updated Full Timing Table (Cycle 15 — 15:05 CET)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| ~~14:30~~ | ~~Tweet 21 — homeowner use case~~ | Done/scheduled |
+| ~~14:30~~ | ~~r/homedesign post~~ | Done/scheduled |
+| ~~15:00~~ | ~~Newsletter pitches~~ | Done/scheduled |
+| 15:15 | **Tweet 29 — Google Stitch ride** | **Cycle 15 NEW** |
+| ~~15:30~~ | ~~Tweet 22 — speed comparison~~ | Done/scheduled |
+| ~~16:00~~ | ~~r/SideProject update comment~~ | Done/scheduled |
+| ~~16:30~~ | ~~Anthropic Discord + Changelog Discord~~ | Done/scheduled |
+| 17:00 | r/mcp post | LAUNCH-DAY-NOW.md |
+| 17:15 | **Tweet 30 — "three layers" thread** | **Cycle 15 NEW** |
+| ~~17:30~~ | ~~Tweet 23 — integration drop~~ | Done/scheduled |
+| 18:00 | Tweet 6 — US wave "if you missed it" | Cycle 9 |
+| 18:30 | r/LocalLLaMA | LAUNCH-DAY-NOW.md |
+| **18:30** | **r/designtools post** | **Cycle 15 NEW** |
+| 19:00 | **r/webdev Canvas 2D technical post** | **Cycle 15 NEW** |
+| 20:00 | r/ClaudeAI post | Cycle 9 |
+| 20:15 | **Tweet 31 — Friday dream house hook** | **Cycle 15 NEW** |
+| 21:00 | Tweet 8 — wrap | Cycle 9 |
+| 21:30 | **Tweet 32 — "7 things I didn't expect"** | **Cycle 15 NEW** |
+| 22:00 | Tweet 25 — definitive Day 1 metrics | Cycle 13 |
+| 22:00 | Publish "We Launched Today" blog (fill numbers) | blog/ |
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 15 — 15:05 CET)*
+*Added: Google Stitch reaction tweets (29-30 thread), Friday night hook tweet (31), "7 things I didn't expect" tweet (32), r/designtools post, r/webdev Canvas 2D technical post, updated timing table for 15:00-22:00 window*

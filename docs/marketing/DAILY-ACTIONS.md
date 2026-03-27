@@ -2,6 +2,60 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #12 (14:59 CET, Friday March 27)
+
+### Priority Context (Run #12 — Final update of the week)
+- **Plan7Architect Pro 5 raises prices March 31** — 3-day acquisition window opening NOW
+- **draw-it-mcp is live on mcpservers.org** — freehand category emerging, Skissify must position as structured/reproducible (not freehand)
+- **12 consecutive clean niche scans** — the moat is holding but MCP server remains the single blocking item
+- **Snaptrude architect B2B traction** — architecture firm case study is the Team tier unlock
+
+---
+
+### ✅ Saturday Action 1: Capture the Plan7Architect Price Increase Window (2 hours — HIGH ROI)
+
+**Why now**: Plan7Architect Pro 5 raises prices on March 31 — that's 72 hours from now. Traditional software users re-evaluating alternatives are the highest-intent Skissify prospects available this weekend.
+
+**Concrete steps**:
+1. Write and publish a short blog post: **"Plan7Architect raising prices? 3 modern alternatives for architects in 2026"** — include Skissify as the "AI-native sketch option" (not a direct replacement, a complementary positioning). Target keywords: "Plan7Architect alternative", "floor plan software 2026".
+2. Schedule this post to go live Saturday morning. It will index within 48 hours — just in time for the March 31 price increase searches.
+3. Post the blog link in: r/architecture, r/floorplans, r/homedesign with context: "If you're reconsidering your floor plan tools this weekend, here's a comparison."
+4. Add a Google Alert for: "Plan7Architect", "RoomSketcher pricing change", "Planner5D price" — catch the next pricing event within 48 hours.
+
+**Expected outcome**: 100–500 qualified visitors from the pricing search window. At 3% signup rate: 3–15 new free users who arrive with intent.
+
+---
+
+### ✅ Saturday Action 2: Publish a "Skissify vs draw-it-mcp" Positioning Piece (1 hour — MESSAGING)
+
+**Why now**: draw-it-mcp is live on mcpservers.org as of this week. When developers search "drawing MCP" or "sketch MCP" they'll find it. Skissify needs to own the "structured sketch MCP" search space before draw-it-mcp defines the category.
+
+**Concrete steps**:
+1. Write a concise DEV.to or Hashnode post: **"Two ways to sketch with AI agents: freehand canvas vs structured manifest"** — explain the difference between freehand (draw-it-mcp style) and declarative JSON-manifest (Skissify style). No disparagement — just clear positioning.
+2. Key message: "If you want to draw freely, draw-it-mcp is great. If you need reproducible, agent-generated architectural drawings or floor plans, Skissify gives you a JSON manifest that any LLM can generate."
+3. Include a code snippet showing: Claude generates a 3-room floor plan JSON → Skissify renders it hand-drawn. Contrast with: Claude telling you what to draw manually.
+4. Submit the post to awesome-mcp-servers as a "use cases" reference for Skissify MCP (when it ships).
+
+**Expected outcome**: Establishes Skissify as the structured end of the MCP drawing spectrum. Content that compounds as more drawing MCP tools emerge.
+
+---
+
+### ✅ Saturday Action 3: Draft the Architecture Firm Outreach Email + Identify 5 Target Firms (1.5 hours — B2B PIPELINE)
+
+**Why now**: Snaptrude's growing architect traction confirms that architecture firms are evaluating AI tools RIGHT NOW. The B2B pipeline — architecture firm as case study → Team tier (EUR 12/user) → reference customer — is the highest-LTV acquisition path available.
+
+**Concrete steps**:
+1. Identify 5 small-to-mid architecture firms (5–20 person studios) in Sweden (Jesper's network) and UK/Germany (English-language outreach). Use LinkedIn to find "Partner/Architect" titles at firms that do residential and commercial work — these firms do client pitches where sketch aesthetics matter.
+2. Draft the outreach email template (save to `docs/EMAIL-AND-DIRECTORIES.md`):
+   > Subject: Your client pitches — hand-drawn sketch tool for architects?
+   > "I'm building Skissify — a tool that lets you describe a floor plan in words (or JSON) and get a hand-drawn sketch instantly. Architects use it for early-stage client presentations where polished CAD feels premature. Would you be willing to try it for one client meeting?"
+3. The ask is NOT to pay — it's to use it in one client meeting and give feedback. This creates the case study.
+4. Do NOT send yet — hold until the MCP server is live and the tool has a proper landing page. But drafting now means you're ready to send the day of MCP launch.
+
+**Expected outcome**: 1–2 architecture firms as early B2B users → case study content → Team tier conversion (EUR 36–60/mo per firm).
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #11 (13:48 CET, Friday March 27)
 
 ### Priority Context
