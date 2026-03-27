@@ -261,7 +261,7 @@ export default function Canvas({
     // Draw selection highlights
     if (selectedElements.size > 0) {
       ctx.save();
-      ctx.strokeStyle = "#3b82f6";
+      ctx.strokeStyle = "#268bd2";
       ctx.lineWidth = 2;
       ctx.setLineDash([4, 4]);
       ctx.globalAlpha = 0.6;
@@ -287,7 +287,7 @@ export default function Canvas({
             ctx.beginPath();
             ctx.setLineDash([]);
             ctx.arc(0, -bounds.h / 2 - 8, 4, 0, Math.PI * 2);
-            ctx.strokeStyle = "#f59e0b";
+            ctx.strokeStyle = "#b58900";
             ctx.stroke();
             ctx.restore();
           } else {
@@ -312,8 +312,8 @@ export default function Canvas({
             // Shadow for contrast
             ctx.shadowColor = "rgba(0,0,0,0.35)";
             ctx.shadowBlur = 4;
-            ctx.fillStyle = "#ffffff";
-            ctx.strokeStyle = "#3b82f6";
+            ctx.fillStyle = "#fdf6e3";
+            ctx.strokeStyle = "#268bd2";
             ctx.lineWidth = 1.5;
             ctx.setLineDash([]);
             ctx.globalAlpha = 1;

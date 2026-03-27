@@ -131,7 +131,10 @@ function EditorInner({
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
   const [mobileControlsOpen, setMobileControlsOpen] = useState(false);
   const [showAutosaveToast, setShowAutosaveToast] = useState(!!restoredFromAutosave);
-  const [showWelcome, setShowWelcome] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return !localStorage.getItem("skissify-welcome-dismissed");
+  });
   const { savedAt: autosaveSavedAt } = useAutosave(sketch);
 
   useEffect(() => {
@@ -143,9 +146,13 @@ function EditorInner({
 
   // Auto-dismiss welcome toast after 8 seconds
   useEffect(() => {
-    const timer = setTimeout(() => setShowWelcome(false), 8000);
+    if (!showWelcome) return;
+    const timer = setTimeout(() => {
+      setShowWelcome(false);
+      localStorage.setItem("skissify-welcome-dismissed", "1");
+    }, 8000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [showWelcome]);
 
   const handlePrint = useCallback(() => {
     const canvas = document.querySelector("canvas");
@@ -309,7 +316,10 @@ function EditorInner({
             <strong style={{ color: "#268bd2" }}>Skissify</strong> — hand-drawn sketches from JSON. Try editing the JSON on the left or pick a preset above.
           </span>
           <button
-            onClick={() => setShowWelcome(false)}
+            onClick={() => {
+              setShowWelcome(false);
+              localStorage.setItem("skissify-welcome-dismissed", "1");
+            }}
             className="shrink-0 text-lg leading-none hover:opacity-70 transition-opacity"
             style={{ color: "#93a1a1" }}
           >

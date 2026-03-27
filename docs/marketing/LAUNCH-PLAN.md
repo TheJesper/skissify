@@ -162,6 +162,71 @@
 
 ---
 
+## Marketing Improvements (Cycle 17 — March 27, 16:01 CET)
+
+### ⚡ STATUS: EVENING US SURGE — "VIBE CODING IS DEAD" NEWSJACK WINDOW OPEN NOW
+
+It's 16:01 CET (10:01 AM ET / 7:01 AM PT). The most important opportunity this cycle: Michal Malewicz's "Vibe Coding Is OVER" Medium article is 3 days old and still trending in design circles. **Post Tweet 37 immediately** ("Vibe coding is dead. Vibe drawing is next.") — this is a live newsjack that will peak in the next 2 hours and die by tomorrow.
+
+### MCP Mainstream Confirmation
+MCP SDK: 97M+ monthly downloads in March 2026 (up from 100K at launch 16 months ago). Mainstream confirmed. Every MCP-adjacent tweet has outsized algorithmic reach right now.
+
+### Completed This Cycle
+- [x] ✅ **Blog post #23 NEW**: "Vibe Coding Is Dead. Vibe Drawing Is Next." — 1,100-word newsjack post riding the Malewicz "vibe coding is over" trend with Skissify as the answer. Frames "vibe drawing" as the napkin phase AI design tools missed. Best Medium post for today (maximum trend relevance window: 24 hours). File: `docs/marketing/blog/vibe-coding-is-dead-vibe-drawing-is-next.md`
+- [x] ✅ **Blog post #24 NEW**: "The Napkin Phase AI Was Missing" — 1,000-word narrative post about the design process that AI skipped (the rough sketch before execution). Stockholm coffee shop opening. Personal, literary, Substack-ready. File: `docs/marketing/blog/the-napkin-phase-ai-was-missing.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 17**: Tweets 37-40 (vibe coding newsjack, spatial AI thread, "7 things I didn't expect", midnight US West hook), Bluesky posts (vibe coding + homeowner story), LinkedIn article "Why AI Design Is Getting More Rough, Not More Polished", r/designtools "why I made it ugly" post, updated timing table 16:00-22:30 CET
+
+### Key Insight: The "Intentional Roughness" Angle
+Design community is actively tired of polished AI monoculture. The Skissify counter-narrative — "we made it deliberately rough because roughness invites revision" — is high-resonance right now. This angle works for:
+- r/designtools (authentic design philosophy discussion)
+- LinkedIn (professional design leadership)
+- Medium/Substack (longform narrative)
+- The "napkin phase" framing is unique, ownable, and true
+
+### Blog Post Distribution (Cycle 17 additions)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 23 | **Vibe Coding Is Dead** | `vibe-coding-is-dead...` | **Medium TODAY** | Day 1 (publish tonight) |
+| 24 | The Napkin Phase | `the-napkin-phase...` | Substack, Medium | Day 2-3 |
+
+### Immediate Actions Right Now (16:01 CET)
+1. **Post Tweet 37** (vibe coding newsjack) — 16:15 CET — **HIGHEST PRIORITY, 2-hour window**
+2. **Publish blog #23 on Medium** — tonight, before midnight, while "vibe coding" is trending
+3. **Post Bluesky vibe coding post** — 16:30 CET
+4. **Queue Tweet 38** (spatial AI thread) for 17:00 CET
+5. **Publish LinkedIn article** at 18:00 CET (EU evening + US morning audience)
+6. **Post r/designtools** "why I made it ugly" at 18:00 CET
+
+### Cumulative Blog Inventory (24 posts)
+| # | Post | Key Angle | Best Platform | Day |
+|---|------|-----------|--------------|-----|
+| 1 | Why Hand-Drawn Sketches Beat Figma | UX philosophy | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | Technical tutorial | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | Direct comparison | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | Tutorial | Dev.to | Day 2 |
+| 5 | We Launched Today | Build-in-public | Indie Hackers | Day 1 (22:00) |
+| 6 | JSON Schema Behind Skissify | Technical depth | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | Integration guide | Dev.to, Hashnode | Day 7 |
+| 8 | First Sketch Tool for AI Agents | Launch story | HN direct | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | Category creation | Dev.to | Day 2 |
+| 10 | I Gave Claude a Pencil | Narrative | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | Open letter | Dev.to | Day 1 |
+| 12 | Three-Layer Stack: Missing Visual Layer | Architecture | Dev.to | Day 3 |
+| 13 | Vibe Drawing | Trend piece | Dev.to, Medium | Day 4 |
+| 14 | Real Estate AI Floor Plan Revolution | Vertical | Medium, LinkedIn | Day 5 |
+| 15 | Launch Day Live Update — Hour 4 | Build-in-public | Dev.to | Day 1 |
+| 16 | The Visual Feedback Loop | Agent workflow | Dev.to, Medium | Day 6 |
+| 17 | The Floor Plan That Surprised Me | Homeowner narrative | Substack | Day 2-3 |
+| 18 | Why Your AI Agent Needs Visual Output | Evangelist | Dev.to | Day 2 |
+| 19 | The Weekend Project | IH story | Indie Hackers | Day 2 |
+| 20 | Skissify for Non-Developers | Consumer | Medium, Substack | Day 4 |
+| 21 | Skissify vs Google Stitch | Newsjack | Dev.to, Medium | Day 2-3 |
+| 22 | The End of Text-Only AI Output | Category | Dev.to | Day 6-7 |
+| 23 | **Vibe Coding Is Dead. Vibe Drawing Is Next.** | **Newsjack — TRENDING** | **Medium TODAY** | **Day 1 tonight** |
+| 24 | **The Napkin Phase AI Was Missing** | **Design philosophy** | **Substack, Medium** | **Day 2-3** |
+
+---
+
 ## Marketing Improvements (Cycle 15 — March 27, 15:05 CET)
 
 ### ⚡ STATUS: AFTERNOON PUSH — US EAST COAST AT LUNCH, WEST COAST WAKING UP

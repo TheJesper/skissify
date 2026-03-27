@@ -305,7 +305,7 @@ export default function Toolbar({
 
       {/* Toast notification */}
       {toast && (
-        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-[100] px-4 py-2 bg-green-700 text-[#073642] text-sm font-medium rounded-lg shadow-lg">
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-[100] px-4 py-2 text-sm font-medium rounded-lg shadow-lg" style={{ backgroundColor: "#859900", color: "#073642" }}>
           {toast}
         </div>
       )}
@@ -319,7 +319,7 @@ export default function Toolbar({
             <div className="mb-4">
               <label className="text-xs text-[#657b83] uppercase tracking-wider mb-1 block">Editor Link (editable)</label>
               <div className="flex gap-2">
-                <input type="text" readOnly value={getShareableURL(sketch)} className="flex-1 bg-neutral-800 border border-[#93a1a1] rounded px-3 py-2 text-xs text-[#586e75] font-mono truncate" />
+                <input type="text" readOnly value={getShareableURL(sketch)} className="flex-1 bg-[#073642] border border-[#93a1a1] rounded px-3 py-2 text-xs text-[#586e75] font-mono truncate" />
                 <button onClick={() => copyToClipboard(getShareableURL(sketch))} className="px-3 py-2 bg-[#268bd2] hover:bg-[#268bd2]/80 text-[#073642] rounded text-xs font-medium transition-colors shrink-0">Copy</button>
               </div>
               <p className="text-[10px] text-[#93a1a1] mt-1">Link: {getShareableURL(sketch).length} chars</p>
@@ -328,7 +328,7 @@ export default function Toolbar({
             <div className="mb-4">
               <label className="text-xs text-[#657b83] uppercase tracking-wider mb-1 block">View-Only Link (minimal)</label>
               <div className="flex gap-2">
-                <input type="text" readOnly value={getDrawURL(sketch)} className="flex-1 bg-neutral-800 border border-[#93a1a1] rounded px-3 py-2 text-xs text-[#586e75] font-mono truncate" />
+                <input type="text" readOnly value={getDrawURL(sketch)} className="flex-1 bg-[#073642] border border-[#93a1a1] rounded px-3 py-2 text-xs text-[#586e75] font-mono truncate" />
                 <button onClick={() => copyToClipboard(getDrawURL(sketch))} className="px-3 py-2 bg-[#268bd2] hover:bg-[#268bd2]/80 text-[#073642] rounded text-xs font-medium transition-colors shrink-0">Copy</button>
               </div>
               <p className="text-[10px] text-[#93a1a1] mt-1">Link: {getDrawURL(sketch).length} chars</p>
@@ -338,7 +338,7 @@ export default function Toolbar({
               <div className="mb-4">
                 <label className="text-xs text-[#657b83] uppercase tracking-wider mb-1 block">Saved Sketch Link</label>
                 <div className="flex gap-2">
-                  <input type="text" readOnly value={`${typeof window !== "undefined" ? window.location.origin : ""}/s/${savedSlug}`} className="flex-1 bg-neutral-800 border border-[#93a1a1] rounded px-3 py-2 text-xs text-[#586e75] font-mono truncate" />
+                  <input type="text" readOnly value={`${typeof window !== "undefined" ? window.location.origin : ""}/s/${savedSlug}`} className="flex-1 bg-[#073642] border border-[#93a1a1] rounded px-3 py-2 text-xs text-[#586e75] font-mono truncate" />
                   <button onClick={() => copyToClipboard(`${window.location.origin}/s/${savedSlug}`)} className="px-3 py-2 bg-[#268bd2] hover:bg-[#268bd2]/80 text-[#073642] rounded text-xs font-medium transition-colors shrink-0">Copy</button>
                 </div>
               </div>

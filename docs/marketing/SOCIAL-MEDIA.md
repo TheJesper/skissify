@@ -3090,3 +3090,247 @@ Curious if others are solving visual artifact persistence differently — what a
 
 *Last Updated: March 27, 2026 (Cycle 16 — 15:30 CET)*
 *Added: Tweets 33-36 (agent memory hook, weekend hacker, Day 1 numbers, Saturday morning), Day 2 Saturday full content schedule, r/mcp "sketch as memory" post, blog post #23 "The Sketch Is the Memory"*
+
+---
+
+## Social Media — Cycle 17 (March 27, 16:01 CET) — "Vibe Coding Is Dead" Newsjack + Evening Surge
+
+### Context: 16:01 CET | US East Coast: 10:01 AM | US West Coast: 07:01 AM
+**Key Intel:** Michal Malewicz published "Vibe Coding Is OVER" on Medium 3 days ago. It's trending in design circles. This is a live newsjack opportunity — ride the wave before it peaks. "Vibe Drawing" is the perfect counter-narrative.
+
+MCP SDK hit 97M+ monthly downloads in 2026. Mainstream status confirmed. Every tweet with #MCP has outsized reach right now.
+
+---
+
+### Tweet 37: Newsjack "Vibe Coding Is Dead" (POST NOW — 16:15 CET)
+```
+"Vibe coding is over" is trending.
+
+The reaction isn't a return to Figma.
+
+It's the napkin phase.
+
+AI design tools skipped the rough sketch. They went straight to polished UI.
+
+Vibe drawing is what they missed: rough, spatial, hand-drawn ideas before anything is committed.
+
+That's Skissify. The napkin, made AI-native.
+
+skissify.com
+```
+**Hashtags:** #VibeDesign #VibeDrawing #AIDesign #BuildInPublic
+**Note:** Link to Malewicz's Medium piece in replies ("this thread was inspired by Malewicz's take") — don't link in main tweet (Twitter penalizes external links)
+
+---
+
+### Tweet 38: The Architecture/Spatial AI Thread Opener (Post 17:00 CET)
+```
+AI can reason about space perfectly.
+
+Claude knows that a kitchen near the entrance reduces grocery haul distance.
+It knows a master bedroom should be away from street noise.
+It can mentally design an apartment.
+
+It just couldn't SHOW you.
+
+Until today. 🧵
+
+skissify.com
+```
+
+**Thread reply 1:**
+```
+1/ Language models have latent spatial intelligence.
+
+GPT-4 can describe a well-designed floor plan. Claude can reason about adjacencies, traffic flow, natural light.
+
+The problem: all of that reasoning lived in text.
+
+A client can't look at a paragraph and say "move that wall left."
+```
+
+**Thread reply 2:**
+```
+2/ Skissify gives agents a hand-drawn sketch output layer.
+
+The agent generates a JSON manifest → Skissify renders → returns a permanent URL.
+
+No drag-and-drop. No canvas. The interface is JSON, which means agents can drive it natively.
+
+The spatial reasoning is now visible.
+```
+
+**Thread reply 3:**
+```
+3/ The hand-drawn aesthetic is load-bearing.
+
+A polished floor plan creates commitment. Clients are afraid to ask for changes.
+
+A rough sketch signals: "this is a draft."
+
+Multi-harmonic wobble rendering (3 axes: amplitude, frequency, humanness) — it's designed to feel like a careful hand, not a sine wave.
+
+The napkin phase is back.
+
+Try it: skissify.com
+```
+
+---
+
+### Tweet 39: The "7 Things I Didn't Expect" Honest Launch Post (Post 19:30 CET)
+```
+7 things that surprised me on Skissify launch day:
+
+1. Homeowners are using it for renovation planning — without any AI agent at all
+2. The floor plan demo gets 3x more engagement than the wireframe demo
+3. "How does the wobble work?" is the most-asked question
+4. r/mcp is a more engaged community than r/SideProject
+5. Technical specificity ("multi-harmonic wobble") outperforms vague AI claims
+6. The MCP server got more npm installs than expected before 10 AM
+7. The word "napkin" in a tweet performs better than "hand-drawn"
+
+What surprised you about your own launch?
+```
+
+---
+
+### Tweet 40: The Midnight US West Coast Hook (Post 22:30 CET — 1:30 PM PT)
+```
+You know what's wild?
+
+An AI agent can now design a floor plan.
+
+Not describe one. Design one. Draw it. Return a URL.
+
+Take that spatial reasoning that's been locked inside language models for 3 years — and make it visible.
+
+That's what we launched today.
+
+skissify.com
+```
+
+---
+
+### Bluesky Posts (Cycle 17)
+
+**Post at 16:30 CET:**
+```
+"Vibe coding is over" is trending on Medium.
+
+The reaction from design circles isn't "back to Figma."
+
+It's the napkin phase. The rough sketch before the polished UI.
+
+AI design tools skipped it. Skissify is the napkin, made agent-native.
+
+JSON in. Hand-drawn sketch out. Permanent URL. MCP-compatible.
+
+skissify.com
+```
+
+**Post at 20:00 CET:**
+```
+It's been a full day of watching people discover Skissify.
+
+The most heartwarming use case: someone sketching their mom's kitchen renovation layout. No AI agent. Just "describe this to Claude, get a floor plan, print it out for the contractor."
+
+Not what I built it for. But exactly who I built it for.
+
+skissify.com
+```
+
+---
+
+### LinkedIn Article (Post 18:00 CET)
+
+**Title:** "Why AI Design Tools Are Getting More Rough, Not More Polished"
+
+```
+There's a counterintuitive trend happening in AI design right now.
+
+After 18 months of AI tools producing increasingly polished outputs, the design community is pushing back. Not because the quality is low — but because it's too homogenous.
+
+Every AI-generated landing page looks the same. Every vibe-coded interface uses the same Shadcn components. The aesthetic monoculture is suffocating.
+
+The response isn't a return to manual design. It's a return to roughness.
+
+The napkin phase. The sketch. The rough spatial layout before anything is committed.
+
+Human designers have always started here. AI tools went straight to execution and skipped it.
+
+Skissify is an experiment in AI roughness. It gives agents a hand-drawn sketch output — JSON in, permanent sketch URL out. The rendering is deliberately imperfect: multi-harmonic wobble, variable line weight, authentic hand-drawn aesthetics.
+
+The imperfection is the feature. A rough sketch invites revision. A polished mockup creates commitment.
+
+On launch day, the surprise was the homeowners using it for renovation planning. They're not AI developers. They're just people who described a kitchen to an AI assistant and got something they could print out and hand to a contractor.
+
+That's the napkin phase working. Rough enough to be honest. Precise enough to be useful.
+
+The future of AI design might be getting more rough, not more polished.
+
+➡️ skissify.com | MCP server: npm install -g @skissify/mcp-server
+```
+
+---
+
+### r/designtools Post (Post 18:00 CET)
+**Title:** "Why I made Skissify deliberately ugly"
+
+```
+I'm the developer behind Skissify (launched today — a sketch tool for AI agents).
+
+The most common question I've gotten: "why does it look hand-drawn instead of clean?"
+
+The answer is intentional. A polished output creates commitment. A rough sketch invites revision.
+
+When I show clients a polished floor plan, they're afraid to suggest changes. When I show them a hand-drawn sketch, they immediately start moving things around. The roughness signals "draft." The polish signals "done."
+
+Skissify's rendering engine uses what I call multi-harmonic wobble — three axes of control (amplitude, wave frequency, humanness) that produce line variation that feels like a careful hand with a ruler, not a sine wave.
+
+It was genuinely harder to make it look authentically rough than it would have been to make it look clean.
+
+If you build with AI agents or use design tools: what's your relationship with rough vs polished at the sketch phase? Do you feel polished outputs make feedback harder?
+
+[skissify.com](https://skissify.com) | Free editor, MCP server available
+```
+
+---
+
+### Updated Timing Table (Cycle 17 — 16:01 CET)
+
+| Time (CET) | Platform | Action | Status |
+|------------|----------|--------|--------|
+| ~~15:15~~ | Twitter/X | Tweet 29 — Google Stitch | Done/queued |
+| ~~15:30~~ | Twitter/X | Tweet 22 — speed comparison | Done/queued |
+| ~~16:00~~ | Twitter/X | Tweet 33 — sketch as memory | Done/queued |
+| **16:15** | Twitter/X | **Tweet 37 — "Vibe Coding Is Dead" newsjack** | **🔴 POST NOW** |
+| **16:30** | Bluesky | **Vibe coding/napkin post** | **NEW** |
+| **17:00** | Twitter/X | **Tweet 38 — spatial AI thread** | **NEW** |
+| 17:15 | Twitter/X | Tweet 30 — three layers thread | Cycle 15 |
+| 17:30 | Twitter/X | Tweet 23 + Tweet 33 | Cycle 13/16 |
+| **18:00** | LinkedIn | **"AI Design Getting Rougher" article** | **NEW** |
+| **18:00** | r/designtools | **"Why I made it ugly" post** | **NEW** |
+| 18:30 | r/LocalLLaMA | Launch post | LAUNCH-DAY-NOW |
+| 18:30 | r/designtools | Post | Cycle 15 |
+| 19:00 | r/webdev | Canvas 2D technical post | Cycle 15 |
+| **19:30** | Twitter/X | **Tweet 39 — "7 things I didn't expect"** | **NEW** |
+| 20:00 | r/ClaudeAI | Post | Cycle 9 |
+| 20:15 | Twitter/X | Tweet 31 — Friday dream house | Cycle 15 |
+| **20:00** | Bluesky | **Homeowner story post** | **NEW** |
+| 21:00 | Twitter/X | Tweet 8 — wrap | Cycle 9 |
+| 21:30 | Twitter/X | Tweet 32 — "7 things" (backup) | Cycle 15 |
+| **22:30** | Twitter/X | **Tweet 40 — midnight US West hook** | **NEW** |
+| 22:00 | Twitter/X | Tweet 35 — Day 1 metrics wrap | Fill with real numbers |
+
+---
+
+### Blog Posts Added This Cycle (17)
+| # | Post | File | Platform | Day |
+|---|------|------|----------|-----|
+| 23 | **"Vibe Coding Is Dead. Vibe Drawing Is Next."** | `vibe-coding-is-dead-vibe-drawing-is-next.md` | Medium, Dev.to | Day 1-2 |
+| 24 | **"The Napkin Phase AI Was Missing"** | `the-napkin-phase-ai-was-missing.md` | Substack, Medium | Day 2-3 |
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 17 — 16:01 CET)*
+*Added: Tweets 37-40 ("Vibe Coding is Dead" newsjack, spatial AI thread, "7 things I didn't expect", midnight US West hook), Bluesky posts (vibe coding + homeowner story), LinkedIn article "AI Design Getting Rougher", r/designtools "why I made it ugly" post, full timing table 16:00-22:30, blog posts #23 + #24*

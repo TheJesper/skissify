@@ -21,7 +21,7 @@ export default function UserMenu() {
 
   if (status === "loading") {
     return (
-      <div className="w-8 h-8 rounded-full bg-neutral-700 animate-pulse" />
+      <div className="w-8 h-8 rounded-full animate-pulse" style={{ backgroundColor: "#93a1a1" }} />
     );
   }
 
@@ -29,7 +29,8 @@ export default function UserMenu() {
     return (
       <button
         onClick={() => signIn()}
-        className="px-3 py-1.5 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded text-xs font-medium transition-colors"
+        className="px-3 py-1.5 rounded text-xs font-medium transition-colors"
+        style={{ backgroundColor: "#073642", color: "#93a1a1" }}
       >
         Sign In
       </button>
@@ -46,43 +47,47 @@ export default function UserMenu() {
           <img
             src={session.user.image}
             alt=""
-            className="w-8 h-8 rounded-full border-2 border-neutral-700 hover:border-blue-500 transition-colors"
+            className="w-8 h-8 rounded-full border-2 transition-colors"
+            style={{ borderColor: "#93a1a1" }}
           />
         ) : (
-          <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-sm font-bold">
+          <div className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold" style={{ backgroundColor: "#268bd2", color: "#fdf6e3" }}>
             {session.user?.name?.[0] ?? "U"}
           </div>
         )}
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-48 bg-neutral-800 border border-neutral-700 rounded-lg shadow-xl z-50 py-1">
-          <div className="px-3 py-2 border-b border-neutral-700">
-            <p className="text-sm font-medium text-white truncate">
+        <div className="absolute right-0 top-full mt-2 w-48 rounded-lg shadow-xl z-50 py-1" style={{ backgroundColor: "#eee8d5", border: "1px solid #93a1a1" }}>
+          <div className="px-3 py-2" style={{ borderBottom: "1px solid #93a1a1" }}>
+            <p className="text-sm font-medium truncate" style={{ color: "#073642" }}>
               {session.user?.name}
             </p>
-            <p className="text-xs text-neutral-400 truncate">
+            <p className="text-xs truncate" style={{ color: "#657b83" }}>
               {session.user?.email}
             </p>
           </div>
           <Link
             href="/dashboard"
             onClick={() => setOpen(false)}
-            className="block px-3 py-2 text-sm text-neutral-300 hover:bg-neutral-700 transition-colors"
+            className="block px-3 py-2 text-sm transition-colors hover:bg-[#fdf6e3]"
+            style={{ color: "#586e75" }}
           >
             My Sketches
           </Link>
           <Link
-            href="/editor"
+            href="/"
             onClick={() => setOpen(false)}
-            className="block px-3 py-2 text-sm text-neutral-300 hover:bg-neutral-700 transition-colors"
+            className="block px-3 py-2 text-sm transition-colors hover:bg-[#fdf6e3]"
+            style={{ color: "#586e75" }}
           >
             New Sketch
           </Link>
-          <hr className="border-neutral-700 my-1" />
+          <hr style={{ borderColor: "#93a1a1" }} className="my-1" />
           <button
             onClick={() => signOut()}
-            className="w-full text-left px-3 py-2 text-sm text-red-400 hover:bg-neutral-700 transition-colors"
+            className="w-full text-left px-3 py-2 text-sm transition-colors hover:bg-[#fdf6e3]"
+            style={{ color: "#dc322f" }}
           >
             Sign Out
           </button>

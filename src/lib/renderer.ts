@@ -634,17 +634,29 @@ function renderElement(
       const p1 = dsw * 0.55;
 
       if (dsWall === "h") {
-        // Track lines
+        // Track lines (top/bottom full width)
         HL(ctx, el.x, el.y, el.x + dsw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
         HL(ctx, el.x, el.y + dsd, el.x + dsw, el.y + dsd, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
-        // Panel sections
-        HL(ctx, el.x, el.y + dsd / 2, el.x + p1, el.y + dsd / 2, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
-        HL(ctx, el.x + dsw - p1, el.y + dsd / 2, el.x + dsw, el.y + dsd / 2, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+        // Left panel (full rect outline)
+        HL(ctx, el.x, el.y, el.x + p1, el.y, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        HL(ctx, el.x, el.y + dsd, el.x + p1, el.y + dsd, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+        HL(ctx, el.x, el.y, el.x, el.y + dsd, { ...opts, seed: opts.seed! + 5 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + p1, el.y, el.x + p1, el.y + dsd, { ...opts, seed: opts.seed! + 6 }, color, tool, paper, rng, h);
+        // Right panel (inset rect)
+        HL(ctx, el.x + dsw - p1, el.y + 1, el.x + dsw, el.y + 1, { ...opts, seed: opts.seed! + 7 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + dsw - p1, el.y + dsd - 1, el.x + dsw, el.y + dsd - 1, { ...opts, seed: opts.seed! + 8 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + dsw - p1, el.y + 1, el.x + dsw - p1, el.y + dsd - 1, { ...opts, seed: opts.seed! + 9 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + dsw, el.y + 1, el.x + dsw, el.y + dsd - 1, { ...opts, seed: opts.seed! + 10 }, color, tool, paper, rng, h);
       } else {
+        // Track lines (left/right full height)
         HL(ctx, el.x, el.y, el.x, el.y + dsw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
         HL(ctx, el.x + dsd, el.y, el.x + dsd, el.y + dsw, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
-        HL(ctx, el.x + dsd / 2, el.y, el.x + dsd / 2, el.y + p1, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
-        HL(ctx, el.x + dsd / 2, el.y + dsw - p1, el.x + dsd / 2, el.y + dsw, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+        // Top panel
+        HL(ctx, el.x, el.y, el.x + dsd, el.y, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        HL(ctx, el.x, el.y + p1, el.x + dsd, el.y + p1, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+        // Bottom panel (inset)
+        HL(ctx, el.x + 1, el.y + dsw - p1, el.x + dsd - 1, el.y + dsw - p1, { ...opts, seed: opts.seed! + 5 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + 1, el.y + dsw, el.x + dsd - 1, el.y + dsw, { ...opts, seed: opts.seed! + 6 }, color, tool, paper, rng, h);
       }
       break;
     }

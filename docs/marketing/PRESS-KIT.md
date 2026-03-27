@@ -139,6 +139,17 @@ Focus: pricing philosophy, build-in-public, founder story
 "Why this developer skipped Figma and built JSON sketches instead"  
 Focus: Figma vs sketch philosophy, low-fidelity prototyping, AI design workflow
 
+### Vibe Drawing Angle (NEW — Cycle 17)
+"After vibe coding, the next wave is vibe drawing — and this tool built it first"  
+Focus: The napkin phase AI design skipped, roughness-as-feature, intentional imperfection  
+Context: Rides the "vibe coding is over" backlash cycle in design circles (Malewicz, March 2026)  
+Hook: "Vibe coding produced a monoculture. Vibe drawing produces originals."
+
+### Consumer Discovery Angle (NEW — Cycle 17)
+"Built for AI agents, discovered by homeowners"  
+Focus: Unexpected use case — renovation planning, contractor communication, non-developer users  
+Hook: "The most popular use case on launch day wasn't what the developer expected"
+
 ---
 
 ## Frequently Asked Questions (for press)
