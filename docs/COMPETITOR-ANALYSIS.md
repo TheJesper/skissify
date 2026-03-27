@@ -306,6 +306,49 @@ The sketch/diagram market in 2026 is fragmenting into three lanes: (1) open-sour
 
 ---
 
+## Update Log
+
+### March 27, 2026 — Automated Strategy Run
+
+**New intelligence gathered this cycle:**
+
+#### 🔴 THREAT: Google Stitch "Vibe Design" Update (March 2026)
+- **URL**: https://www.nxcode.io/resources/news/google-stitch-complete-guide-vibe-design-2026
+- Google Stitch shipped a major March 2026 update: AI-native infinite canvas, voice interaction ("voice canvas"), instant prototyping, DESIGN.md-based design systems
+- Powered by Gemini 2.5 Pro — takes text, sketches, or wireframes → polished UI designs on infinite canvas, exports to Figma and React
+- Google Gemini Canvas rolled out to all US users (March 4, 2026 via TechCrunch)
+- **Skissify response needed**: Google Stitch is entering the sketch → design pipeline from the polished direction. Skissify's hand-drawn aesthetic and floor-plan DNA still differentiate it, but the "voice canvas" feature in Stitch (speak → sketch update) is a direct roadmap competitor to our planned voice-to-sketch moonshot
+- **Priority**: Add to Moonshot threat register. Our JSON-first architecture still gives agents better raw control than voice-only Stitch
+
+#### 🟡 SIGNAL: tldraw Closing External PRs + Test Suite Drama (Feb 2026)
+- **URL**: https://simonwillison.net/2026/Feb/25/closed-tests/ | https://github.com/tldraw/tldraw/issues/8082
+- Steve Ruiz (tldraw CEO) closed ALL external PRs to tldraw due to AI vibe-coding spam
+- Community controversy around moving 327 test files to closed-source repo (ultimately confirmed as a joke, but generated significant HN attention)
+- Simon Willison noted: "tldraw itself may eventually be a vibe-coded alternative to tldraw"
+- **Skissify opportunity**: tldraw community sentiment is fragile. Developer trust in tldraw is eroding. Skissify should position as the transparent, indie-dev-friendly alternative at a fraction of the price
+
+#### 🟢 OPPORTUNITY: MCP Hits 97M Installs (March 2026)
+- **URL**: https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything
+- MCP crossed **97 million installs** as of March 2026
+- MCP TypeScript SDK: **34,700+ dependent npm projects** (Context Studios, March 2026)
+- MCP now standard practice across dev ecosystem — Google Workspace CLI hit #1 HN this week
+- **Skissify response**: Window to claim "the sketch MCP" title is NOW. Every month we wait, the registry gets more crowded
+
+#### 🟡 WATCH: Maket.ai + DesignDrafter Floor Plan AI Maturing
+- **URL**: https://www.maket.ai/blog/ai-floor-plan-generator-guide-2026 | https://designdrafter.com
+- Maket.ai continues to grow as an AI architectural floor plan tool — targeting architects and design firms
+- DesignDrafter's "Floor Plan Studio" positioning itself in the 2026 AI floor plan wave
+- Neither has hand-drawn aesthetic or JSON-native/MCP architecture
+- **Skissify note**: These tools validate market demand. They go polished/technical; Skissify goes sketch/programmatic. Different segment.
+
+#### 🔵 CONTEXT: Napkin AI Review Wave (March 2026)
+- **URL**: https://getalai.com/blog/napkin-ai-alternatives
+- Napkin AI alternatives roundup now mentions **Gemini Canvas** as a competitor — signalling that big-tech canvas tools are entering the AI visual space
+- Napkin AI still positioned as "business storytelling" / infographics, not technical diagramming or floor plans
+- **Skissify note**: No threat to our lane. Continue monitoring.
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

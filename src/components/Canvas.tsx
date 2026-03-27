@@ -26,10 +26,21 @@ export default function Canvas({
   const [cursor, setCursor] = useState<string>("crosshair");
   const isPanning = useRef(false);
   const isDraggingElements = useRef(false);
+  const wasBoxSelecting = useRef(false);
   const lastMouse = useRef({ x: 0, y: 0 });
   const dragStartMouse = useRef({ x: 0, y: 0 });
   const lastTouchDist = useRef<number | null>(null);
   const lastTouchCenter = useRef<{ x: number; y: number } | null>(null);
+
+  // Box-select state
+  const boxStartScreen = useRef<{ x: number; y: number } | null>(null);
+  const isBoxSelecting = useRef(false);
+  const [boxSelectionRect, setBoxSelectionRect] = useState<{
+    left: number;
+    top: number;
+    width: number;
+    height: number;
+  } | null>(null);
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
@@ -96,19 +107,32 @@ export default function Canvas({
     draw();
   }, [draw, redrawKey]);
 
-  // Mouse handlers for selection and drag-to-move
-  const handleClick = useCallback(
-    (e: React.MouseEvent<HTMLCanvasElement>) => {
-      // If we just finished a drag, don't treat it as a click
-      if (isDraggingElements.current) return;
+  // Convert client coords to canvas coords using the canvas bounding rect
+  const clientToCanvas = useCallback(
+    (clientX: number, clientY: number): { mx: number; my: number } => {
       const canvas = canvasRef.current;
-      if (!canvas) return;
-
+      if (!canvas) return { mx: 0, my: 0 };
       const rect = canvas.getBoundingClientRect();
       const scaleX = canvasW / rect.width;
       const scaleY = canvasH / rect.height;
-      const mx = (e.clientX - rect.left) * scaleX;
-      const my = (e.clientY - rect.top) * scaleY;
+      return {
+        mx: (clientX - rect.left) * scaleX,
+        my: (clientY - rect.top) * scaleY,
+      };
+    },
+    [canvasW, canvasH]
+  );
+
+  // Mouse handlers for selection and drag-to-move
+  const handleClick = useCallback(
+    (e: React.MouseEvent<HTMLCanvasElement>) => {
+      // Suppress click after drag or box-select
+      if (isDraggingElements.current) return;
+      if (wasBoxSelecting.current) {
+        wasBoxSelecting.current = false;
+        return;
+      }
+      const { mx, my } = clientToCanvas(e.clientX, e.clientY);
 
       // Find clicked element (reverse order = top first)
       let hitIdx = -1;
@@ -133,7 +157,7 @@ export default function Canvas({
         onSelectElements(new Set());
       }
     },
-    [sketch.elements, canvasW, canvasH, selectedElements, onSelectElements]
+    [sketch.elements, clientToCanvas, selectedElements, onSelectElements]
   );
 
   // Zoom with scroll — zoom toward mouse cursor for pixel-perfect feel
@@ -162,7 +186,7 @@ export default function Canvas({
     []
   );
 
-  // Pan with alt/ctrl + drag; move elements otherwise when selected
+  // Pan with alt/ctrl + drag; drag-move elements; box-select on empty space
   const handleMouseDown = useCallback(
     (e: React.MouseEvent) => {
       if (e.altKey || e.ctrlKey) {
@@ -171,31 +195,36 @@ export default function Canvas({
         return;
       }
 
+      const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+
       // Check if pressing down on a selected element → start drag-move
       if (selectedElements.size > 0 && onMoveSelected) {
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-        const rect = canvas.getBoundingClientRect();
-        const scaleX = canvasW / rect.width;
-        const scaleY = canvasH / rect.height;
-        const mx = (e.clientX - rect.left) * scaleX;
-        const my = (e.clientY - rect.top) * scaleY;
-
-        // Check if click is on any selected element
         const hitOnSelected = [...selectedElements].some((i) => {
           const el = sketch.elements[i];
           return el && hitTest(el, mx, my);
         });
 
         if (hitOnSelected) {
-          isDraggingElements.current = false; // will flip to true on first move
+          isDraggingElements.current = false;
           dragStartMouse.current = { x: e.clientX, y: e.clientY };
           lastMouse.current = { x: e.clientX, y: e.clientY };
           e.preventDefault();
+          return;
         }
       }
+
+      // Check if clicking on any element at all (unselected)
+      const hitOnAny = sketch.elements.some((el) => hitTest(el, mx, my));
+
+      // Empty canvas space → prepare for box-select
+      if (!hitOnAny) {
+        boxStartScreen.current = { x: e.clientX, y: e.clientY };
+        isBoxSelecting.current = false;
+        wasBoxSelecting.current = false;
+        lastMouse.current = { x: e.clientX, y: e.clientY };
+      }
     },
-    [selectedElements, sketch.elements, canvasW, canvasH, onMoveSelected]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected]
   );
 
   const handleMouseMove = useCallback(
@@ -209,9 +238,9 @@ export default function Canvas({
         return;
       }
 
-      // Drag selected elements
+      // Drag selected elements (only when no box-select in progress)
       if (
-        !isPanning.current &&
+        !boxStartScreen.current &&
         selectedElements.size > 0 &&
         onMoveSelected &&
         e.buttons === 1
@@ -220,7 +249,6 @@ export default function Canvas({
         const dy = e.clientY - lastMouse.current.y;
 
         if (!isDraggingElements.current) {
-          // Only start dragging after a minimum move threshold
           const totalDx = e.clientX - dragStartMouse.current.x;
           const totalDy = e.clientY - dragStartMouse.current.y;
           if (Math.sqrt(totalDx * totalDx + totalDy * totalDy) > 4) {
@@ -229,26 +257,98 @@ export default function Canvas({
         }
 
         if (isDraggingElements.current) {
-          // Scale mouse delta to canvas coords
           const canvas = canvasRef.current;
           if (canvas) {
             const rect = canvas.getBoundingClientRect();
             const scaleX = canvasW / rect.width;
             const scaleY = canvasH / rect.height;
-            // Also account for zoom
             onMoveSelected((dx * scaleX) / zoom, (dy * scaleY) / zoom);
           }
           lastMouse.current = { x: e.clientX, y: e.clientY };
+        }
+        return;
+      }
+
+      // Box-select drag
+      if (boxStartScreen.current && e.buttons === 1 && !isPanning.current) {
+        const dx = e.clientX - boxStartScreen.current.x;
+        const dy = e.clientY - boxStartScreen.current.y;
+
+        if (!isBoxSelecting.current && (Math.abs(dx) > 4 || Math.abs(dy) > 4)) {
+          isBoxSelecting.current = true;
+        }
+
+        if (isBoxSelecting.current) {
+          const container = containerRef.current;
+          if (container) {
+            const containerRect = container.getBoundingClientRect();
+            setBoxSelectionRect({
+              left: Math.min(e.clientX, boxStartScreen.current.x) - containerRect.left,
+              top: Math.min(e.clientY, boxStartScreen.current.y) - containerRect.top,
+              width: Math.abs(dx),
+              height: Math.abs(dy),
+            });
+          }
         }
       }
     },
     [selectedElements, onMoveSelected, canvasW, canvasH, zoom]
   );
 
-  const handleMouseUp = useCallback(() => {
+  const handleMouseUp = useCallback(
+    (e: React.MouseEvent) => {
+      isPanning.current = false;
+
+      // Finalize box selection
+      if (isBoxSelecting.current && boxStartScreen.current) {
+        wasBoxSelecting.current = true;
+
+        const canvas = canvasRef.current;
+        if (canvas) {
+          const rect = canvas.getBoundingClientRect();
+          const scaleX = canvasW / rect.width;
+          const scaleY = canvasH / rect.height;
+
+          const x1 = (Math.min(e.clientX, boxStartScreen.current.x) - rect.left) * scaleX;
+          const y1 = (Math.min(e.clientY, boxStartScreen.current.y) - rect.top) * scaleY;
+          const x2 = (Math.max(e.clientX, boxStartScreen.current.x) - rect.left) * scaleX;
+          const y2 = (Math.max(e.clientY, boxStartScreen.current.y) - rect.top) * scaleY;
+
+          const boxSelected = new Set<number>();
+          sketch.elements.forEach((el, i) => {
+            if (boxHitTest(el, x1, y1, x2, y2)) boxSelected.add(i);
+          });
+
+          if (e.shiftKey) {
+            onSelectElements(new Set([...selectedElements, ...boxSelected]));
+          } else {
+            onSelectElements(boxSelected);
+          }
+        }
+      }
+
+      // Reset box-select state
+      setBoxSelectionRect(null);
+      isBoxSelecting.current = false;
+      boxStartScreen.current = null;
+
+      // Reset element drag (after click event fires)
+      setTimeout(() => {
+        isDraggingElements.current = false;
+      }, 0);
+    },
+    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements]
+  );
+
+  const handleMouseLeave = useCallback(() => {
     isPanning.current = false;
-    // Note: isDraggingElements.current is reset AFTER click fires
-    // so we use a short timeout to allow the click to check it first
+    // Cancel box-select when leaving canvas
+    if (isBoxSelecting.current) {
+      wasBoxSelecting.current = true;
+    }
+    setBoxSelectionRect(null);
+    isBoxSelecting.current = false;
+    boxStartScreen.current = null;
     setTimeout(() => {
       isDraggingElements.current = false;
     }, 0);
@@ -304,18 +404,16 @@ export default function Canvas({
         setCursor("grabbing");
         return;
       }
+      if (isBoxSelecting.current) {
+        setCursor("crosshair");
+        return;
+      }
       if (e.altKey || e.ctrlKey) {
         setCursor("grab");
         return;
       }
       if (selectedElements.size > 0 && onMoveSelected) {
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-        const rect = canvas.getBoundingClientRect();
-        const scaleX = canvasW / rect.width;
-        const scaleY = canvasH / rect.height;
-        const mx = (e.clientX - rect.left) * scaleX;
-        const my = (e.clientY - rect.top) * scaleY;
+        const { mx, my } = clientToCanvas(e.clientX, e.clientY);
         const hitOnSelected = [...selectedElements].some((i) => {
           const el = sketch.elements[i];
           return el && hitTest(el, mx, my);
@@ -325,15 +423,12 @@ export default function Canvas({
         setCursor("crosshair");
       }
     },
-    [selectedElements, sketch.elements, canvasW, canvasH, onMoveSelected]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected]
   );
 
   // Keyboard
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === "Delete" || e.key === "Backspace") {
-        // Handled by parent
-      }
       if (e.key === "Escape") {
         onSelectElements(new Set());
       }
@@ -345,7 +440,7 @@ export default function Canvas({
   return (
     <div
       ref={containerRef}
-      className="flex-1 overflow-hidden flex items-center justify-center touch-none"
+      className="flex-1 overflow-hidden flex items-center justify-center touch-none relative"
       style={{
         minHeight: 0,
         backgroundColor: "#2a2a2a",
@@ -371,9 +466,12 @@ export default function Canvas({
           onClick={handleClick}
           onWheel={handleWheel}
           onMouseDown={handleMouseDown}
-          onMouseMove={(e) => { handleMouseMove(e); handleCursorHover(e); }}
+          onMouseMove={(e) => {
+            handleMouseMove(e);
+            handleCursorHover(e);
+          }}
           onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
+          onMouseLeave={handleMouseLeave}
           className="rounded"
           style={{
             cursor,
@@ -392,9 +490,28 @@ export default function Canvas({
           }}
         />
       </div>
+
+      {/* Box-select rubber-band overlay */}
+      {boxSelectionRect && (
+        <div
+          className="pointer-events-none absolute"
+          style={{
+            left: boxSelectionRect.left,
+            top: boxSelectionRect.top,
+            width: boxSelectionRect.width,
+            height: boxSelectionRect.height,
+            border: "2px dashed rgba(59, 130, 246, 0.85)",
+            backgroundColor: "rgba(59, 130, 246, 0.08)",
+            borderRadius: "2px",
+            zIndex: 10,
+          }}
+        />
+      )}
     </div>
   );
 }
+
+// --- Helpers ---
 
 function hitTest(
   el: SketchData["elements"][number],
@@ -404,7 +521,6 @@ function hitTest(
   const margin = 12;
 
   if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-    // Line-based: distance to line segment
     const dist = distToSegment(mx, my, el.x1, el.y1, el.x2, el.y2);
     return dist < margin;
   }
@@ -424,6 +540,41 @@ function hitTest(
     return mx >= el.x - margin && mx <= el.x + 80 && my >= el.y - 20 && my <= el.y + margin;
   }
 
+  return false;
+}
+
+/** Test if an element's bounding area intersects the selection rectangle [x1,y1]→[x2,y2] */
+function boxHitTest(
+  el: SketchData["elements"][number],
+  x1: number,
+  y1: number,
+  x2: number,
+  y2: number
+): boolean {
+  if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
+    const ex1 = Math.min(el.x1, el.x2);
+    const ey1 = Math.min(el.y1, el.y2);
+    const ex2 = Math.max(el.x1, el.x2);
+    const ey2 = Math.max(el.y1, el.y2);
+    return ex1 <= x2 && ex2 >= x1 && ey1 <= y2 && ey2 >= y1;
+  }
+  if ("x" in el && "w" in el && "h" in el) {
+    return el.x <= x2 && el.x + el.w >= x1 && el.y <= y2 && el.y + el.h >= y1;
+  }
+  if ("cx" in el && "r" in el) {
+    return (
+      el.cx - el.r <= x2 &&
+      el.cx + el.r >= x1 &&
+      el.cy - el.r <= y2 &&
+      el.cy + el.r >= y1
+    );
+  }
+  if ("x" in el && "y" in el) {
+    // text — approximate bounding box
+    return (
+      el.x <= x2 && el.x + 80 >= x1 && el.y - 20 <= y2 && el.y + 5 >= y1
+    );
+  }
   return false;
 }
 
