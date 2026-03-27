@@ -121,6 +121,8 @@ function EditorInner({
     deleteSelected,
     moveSelected,
     commitDrag,
+    resizeElement,
+    commitResize,
     copySelected,
     pasteElements,
     rotateSelected,
@@ -351,6 +353,8 @@ function EditorInner({
           onSelectElements={setSelectedElements}
           onMoveSelected={moveSelected}
           onDragEnd={commitDrag}
+          onResizeElement={resizeElement}
+          onResizeEnd={commitResize}
         />
       </div>
 

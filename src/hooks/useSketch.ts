@@ -172,6 +172,30 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setSelectedElements(new Set());
   }, [sketch.elements, selectedElements, updateSketch]);
 
+  // Resize a single element silently (no undo entry) — used during live resize drag
+  const resizeElement = useCallback(
+    (idx: number, updates: Record<string, number>) => {
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (i !== idx) return el;
+          return { ...el, ...updates } as SketchData["elements"][number];
+        });
+        const next = { ...prev, elements: newElements };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        return next;
+      });
+    },
+    []
+  );
+
+  // Commit current state to undo history after resize ends
+  const commitResize = useCallback(() => {
+    setSketch((prev) => {
+      pushHistory(prev);
+      return prev;
+    });
+  }, [pushHistory]);
+
   // Move selected elements silently (no undo entry) — used during live drag
   const moveSelected = useCallback(
     (dx: number, dy: number) => {
@@ -288,6 +312,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     deleteSelected,
     moveSelected,
     commitDrag,
+    resizeElement,
+    commitResize,
     copySelected,
     pasteElements,
     rotateSelected,

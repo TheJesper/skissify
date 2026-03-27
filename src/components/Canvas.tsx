@@ -35,6 +35,123 @@ function getElementBounds(el: SketchElement): { x: number; y: number; w: number;
 const MIN_ZOOM = 0.1;
 const MAX_ZOOM = 8;
 
+// --- Resize handle types ---
+type HandleId = "nw" | "n" | "ne" | "w" | "e" | "sw" | "s" | "se" | "p1" | "p2" | "radius";
+
+interface ResizeHandle {
+  id: HandleId;
+  x: number;
+  y: number;
+}
+
+/** Cursor per handle type */
+const HANDLE_CURSOR: Record<HandleId, string> = {
+  nw: "nwse-resize",
+  se: "nwse-resize",
+  ne: "nesw-resize",
+  sw: "nesw-resize",
+  n: "ns-resize",
+  s: "ns-resize",
+  e: "ew-resize",
+  w: "ew-resize",
+  p1: "crosshair",
+  p2: "crosshair",
+  radius: "ew-resize",
+};
+
+/** Compute resize handles for a single element (canvas coords). Returns null if unsupported. */
+function getResizeHandles(el: SketchElement): ResizeHandle[] | null {
+  // Rect-like elements with x/y/w/h
+  if ("x" in el && "w" in el && "h" in el) {
+    const { x, y, w, h } = asRect(el);
+    const cx = x + w / 2;
+    const cy = y + h / 2;
+    return [
+      { id: "nw", x, y },
+      { id: "n",  x: cx, y },
+      { id: "ne", x: x + w, y },
+      { id: "w",  x, y: cy },
+      { id: "e",  x: x + w, y: cy },
+      { id: "sw", x, y: y + h },
+      { id: "s",  x: cx, y: y + h },
+      { id: "se", x: x + w, y: y + h },
+    ];
+  }
+  // Line-like elements with x1/y1/x2/y2
+  if ("x1" in el && "x2" in el) {
+    const { x1, y1, x2, y2 } = asLine(el);
+    return [
+      { id: "p1", x: x1, y: y1 },
+      { id: "p2", x: x2, y: y2 },
+    ];
+  }
+  // Circle
+  if ("cx" in el && "r" in el) {
+    const { cx, cy, r } = asCirc(el);
+    return [{ id: "radius", x: cx + r, y: cy }];
+  }
+  return null;
+}
+
+/** Hit-test a single handle (in canvas coords). HSIZE is half the handle size. */
+function hitHandle(h: ResizeHandle, mx: number, my: number, HSIZE = 10): boolean {
+  return Math.abs(mx - h.x) <= HSIZE && Math.abs(my - h.y) <= HSIZE;
+}
+
+/** Apply a resize delta to an element, returning a partial update object */
+function applyResizeDelta(
+  handleId: HandleId,
+  startEl: Record<string, number>,
+  dx: number,
+  dy: number
+): Record<string, number> {
+  const MIN_SIZE = 4;
+  switch (handleId) {
+    // Rect corners / edges
+    case "nw": {
+      const newW = Math.max(MIN_SIZE, startEl.w - dx);
+      const newH = Math.max(MIN_SIZE, startEl.h - dy);
+      return {
+        x: startEl.x + (startEl.w - newW),
+        y: startEl.y + (startEl.h - newH),
+        w: newW,
+        h: newH,
+      };
+    }
+    case "n": {
+      const newH = Math.max(MIN_SIZE, startEl.h - dy);
+      return { y: startEl.y + (startEl.h - newH), h: newH };
+    }
+    case "ne": {
+      const newW = Math.max(MIN_SIZE, startEl.w + dx);
+      const newH = Math.max(MIN_SIZE, startEl.h - dy);
+      return { y: startEl.y + (startEl.h - newH), w: newW, h: newH };
+    }
+    case "w": {
+      const newW = Math.max(MIN_SIZE, startEl.w - dx);
+      return { x: startEl.x + (startEl.w - newW), w: newW };
+    }
+    case "e":
+      return { w: Math.max(MIN_SIZE, startEl.w + dx) };
+    case "sw": {
+      const newW = Math.max(MIN_SIZE, startEl.w - dx);
+      return { x: startEl.x + (startEl.w - newW), w: newW, h: Math.max(MIN_SIZE, startEl.h + dy) };
+    }
+    case "s":
+      return { h: Math.max(MIN_SIZE, startEl.h + dy) };
+    case "se":
+      return { w: Math.max(MIN_SIZE, startEl.w + dx), h: Math.max(MIN_SIZE, startEl.h + dy) };
+    // Line endpoints
+    case "p1":
+      return { x1: startEl.x1 + dx, y1: startEl.y1 + dy };
+    case "p2":
+      return { x2: startEl.x2 + dx, y2: startEl.y2 + dy };
+    // Circle radius
+    case "radius":
+      return { r: Math.max(2, startEl.r + dx) };
+  }
+}
+
 interface CanvasProps {
   sketch: SketchData;
   redrawKey: number;
@@ -43,6 +160,10 @@ interface CanvasProps {
   onMoveSelected?: (dx: number, dy: number) => void;
   /** Called when a drag-move gesture ends — use to commit to undo history */
   onDragEnd?: () => void;
+  /** Called with element index and partial updates during resize drag */
+  onResizeElement?: (idx: number, updates: Record<string, number>) => void;
+  /** Called when resize drag ends — use to commit to undo history */
+  onResizeEnd?: () => void;
   /** Called with current zoom level whenever it changes */
   onZoomChange?: (zoom: number) => void;
   /** Exposed ref so parent can call resetView() */
@@ -56,6 +177,8 @@ export default function Canvas({
   onSelectElements,
   onMoveSelected,
   onDragEnd,
+  onResizeElement,
+  onResizeEnd,
   onZoomChange,
   canvasControlRef,
 }: CanvasProps) {
@@ -81,6 +204,13 @@ export default function Canvas({
     width: number;
     height: number;
   } | null>(null);
+
+  // Resize handle state
+  const activeResizeHandle = useRef<HandleId | null>(null);
+  const resizeElementIdx = useRef<number>(-1);
+  const resizeStartCanvas = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  const resizeStartEl = useRef<Record<string, number>>({});
+  const isResizing = useRef(false);
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
@@ -168,6 +298,41 @@ export default function Canvas({
 
       ctx.restore();
     }
+
+    // Draw resize handles when exactly 1 non-rotated element is selected
+    if (selectedElements.size === 1) {
+      const idx = [...selectedElements][0];
+      const el = sketch.elements[idx];
+      if (el && !el.rotation) {
+        const handles = getResizeHandles(el);
+        if (handles) {
+          ctx.save();
+          const HSIZE = 6;
+          for (const h of handles) {
+            // Shadow for contrast
+            ctx.shadowColor = "rgba(0,0,0,0.35)";
+            ctx.shadowBlur = 4;
+            ctx.fillStyle = "#ffffff";
+            ctx.strokeStyle = "#3b82f6";
+            ctx.lineWidth = 1.5;
+            ctx.setLineDash([]);
+            ctx.globalAlpha = 1;
+            ctx.beginPath();
+            if (h.id === "p1" || h.id === "p2" || h.id === "radius") {
+              // Circle handles for endpoints/radius
+              ctx.arc(h.x, h.y, HSIZE, 0, Math.PI * 2);
+            } else {
+              // Square handles for rect corners/edges
+              ctx.rect(h.x - HSIZE, h.y - HSIZE, HSIZE * 2, HSIZE * 2);
+            }
+            ctx.fill();
+            ctx.stroke();
+          }
+          ctx.shadowBlur = 0;
+          ctx.restore();
+        }
+      }
+    }
   }, [sketch, canvasW, canvasH, selectedElements]);
 
   useEffect(() => {
@@ -190,11 +355,21 @@ export default function Canvas({
     [canvasW, canvasH]
   );
 
+  /** Get handles for the currently selected element (if exactly 1 selected, non-rotated) */
+  const getActiveHandles = useCallback((): ResizeHandle[] | null => {
+    if (selectedElements.size !== 1) return null;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el || el.rotation) return null;
+    return getResizeHandles(el);
+  }, [selectedElements, sketch.elements]);
+
   // Mouse handlers for selection and drag-to-move
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLCanvasElement>) => {
-      // Suppress click after drag or box-select
+      // Suppress click after drag, resize, or box-select
       if (isDraggingElements.current) return;
+      if (isResizing.current) return;
       if (wasBoxSelecting.current) {
         wasBoxSelecting.current = false;
         return;
@@ -265,6 +440,34 @@ export default function Canvas({
 
       const { mx, my } = clientToCanvas(e.clientX, e.clientY);
 
+      // Check resize handles first (only when exactly 1 element selected)
+      if (onResizeElement && selectedElements.size === 1) {
+        const handles = getActiveHandles();
+        if (handles) {
+          for (const h of handles) {
+            if (hitHandle(h, mx, my)) {
+              const idx = [...selectedElements][0];
+              const el = sketch.elements[idx];
+              if (!el) break;
+              // Capture starting state
+              activeResizeHandle.current = h.id;
+              resizeElementIdx.current = idx;
+              resizeStartCanvas.current = { x: mx, y: my };
+              isResizing.current = false;
+              // Capture all numeric fields of the element
+              const snap: Record<string, number> = {};
+              for (const [k, v] of Object.entries(el as unknown as Record<string, unknown>)) {
+                if (typeof v === "number") snap[k] = v;
+              }
+              resizeStartEl.current = snap;
+              lastMouse.current = { x: e.clientX, y: e.clientY };
+              e.preventDefault();
+              return;
+            }
+          }
+        }
+      }
+
       // Check if pressing down on a selected element → start drag-move
       if (selectedElements.size > 0 && onMoveSelected) {
         const hitOnSelected = [...selectedElements].some((i) => {
@@ -292,17 +495,38 @@ export default function Canvas({
         lastMouse.current = { x: e.clientX, y: e.clientY };
       }
     },
-    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, onResizeElement, getActiveHandles]
   );
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent) => {
+
       if (isPanning.current) {
         setPan((p) => ({
           x: p.x + (e.clientX - lastMouse.current.x),
           y: p.y + (e.clientY - lastMouse.current.y),
         }));
         lastMouse.current = { x: e.clientX, y: e.clientY };
+        return;
+      }
+
+      // Resize drag
+      if (activeResizeHandle.current !== null && onResizeElement && e.buttons === 1) {
+        const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+        const dx = mx - resizeStartCanvas.current.x;
+        const dy = my - resizeStartCanvas.current.y;
+        if (!isResizing.current && (Math.abs(dx) > 2 || Math.abs(dy) > 2)) {
+          isResizing.current = true;
+        }
+        if (isResizing.current) {
+          const updates = applyResizeDelta(
+            activeResizeHandle.current,
+            resizeStartEl.current,
+            dx,
+            dy
+          );
+          onResizeElement(resizeElementIdx.current, updates);
+        }
         return;
       }
 
@@ -325,9 +549,6 @@ export default function Canvas({
         }
 
         if (isDraggingElements.current) {
-          // rect.width already accounts for the CSS transform scale (zoom),
-          // so we just need canvas-coordinate scale: canvasW / (canvasW * zoom) = 1/zoom.
-          // Equivalent but simpler than reading getBoundingClientRect each frame.
           onMoveSelected(dx / zoom, dy / zoom);
           lastMouse.current = { x: e.clientX, y: e.clientY };
         }
@@ -357,12 +578,24 @@ export default function Canvas({
         }
       }
     },
-    [selectedElements, onMoveSelected, canvasW, canvasH, zoom]
+    [selectedElements, onMoveSelected, canvasW, canvasH, zoom, onResizeElement]
   );
 
   const handleMouseUp = useCallback(
     (e: React.MouseEvent) => {
       isPanning.current = false;
+
+      // Finalize resize
+      if (activeResizeHandle.current !== null) {
+        const wasRes = isResizing.current;
+        activeResizeHandle.current = null;
+        isResizing.current = false;
+        resizeElementIdx.current = -1;
+        if (wasRes && onResizeEnd) {
+          onResizeEnd();
+        }
+        return;
+      }
 
       // Finalize box selection
       if (isBoxSelecting.current && boxStartScreen.current) {
@@ -406,11 +639,24 @@ export default function Canvas({
         onDragEnd();
       }
     },
-    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd]
+    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd]
   );
 
   const handleMouseLeave = useCallback(() => {
     isPanning.current = false;
+
+    // Finalize resize if in progress
+    if (activeResizeHandle.current !== null) {
+      const wasRes = isResizing.current;
+      activeResizeHandle.current = null;
+      isResizing.current = false;
+      resizeElementIdx.current = -1;
+      if (wasRes && onResizeEnd) {
+        onResizeEnd();
+      }
+      return;
+    }
+
     // Cancel box-select when leaving canvas
     if (isBoxSelecting.current) {
       wasBoxSelecting.current = true;
@@ -426,7 +672,7 @@ export default function Canvas({
     if (wasDragging && onDragEnd) {
       onDragEnd();
     }
-  }, [onDragEnd]);
+  }, [onDragEnd, onResizeEnd]);
 
   // Touch: pinch-to-zoom and two-finger pan
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
@@ -478,6 +724,12 @@ export default function Canvas({
   // Update cursor when hovering over selected elements
   const handleCursorHover = useCallback(
     (e: React.MouseEvent<HTMLCanvasElement>) => {
+      if (isResizing.current) {
+        if (activeResizeHandle.current) {
+          setCursor(HANDLE_CURSOR[activeResizeHandle.current] || "crosshair");
+        }
+        return;
+      }
       if (isDraggingElements.current) {
         setCursor("grabbing");
         return;
@@ -490,8 +742,23 @@ export default function Canvas({
         setCursor("grab");
         return;
       }
+
+      const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+
+      // Check resize handles first
+      if (selectedElements.size === 1) {
+        const handles = getActiveHandles();
+        if (handles) {
+          for (const h of handles) {
+            if (hitHandle(h, mx, my)) {
+              setCursor(HANDLE_CURSOR[h.id] || "crosshair");
+              return;
+            }
+          }
+        }
+      }
+
       if (selectedElements.size > 0 && onMoveSelected) {
-        const { mx, my } = clientToCanvas(e.clientX, e.clientY);
         const hitOnSelected = [...selectedElements].some((i) => {
           const el = sketch.elements[i];
           return el && hitTest(el, mx, my);
@@ -501,7 +768,7 @@ export default function Canvas({
         setCursor("crosshair");
       }
     },
-    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, getActiveHandles]
   );
 
   // Keyboard

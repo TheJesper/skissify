@@ -30,7 +30,7 @@
     "rename-conversation": 42,
     "custom-commands": 42
   },
-  "promptQueueUseCount": 575,
+  "promptQueueUseCount": 601,
   "cachedGrowthBookFeatures": {
     "tengu_pid_based_version_locking": true,
     "tengu_sm_compact": false,
@@ -582,7 +582,7 @@
         "currency": "EUR"
       },
       "remaining_passes": 3,
-      "timestamp": 1774594963515
+      "timestamp": 1774608371007
     }
   },
   "passesUpsellSeenCount": 4,
@@ -591,8 +591,8 @@
   "voiceNoticeSeenCount": 3,
   "skillUsage": {
     "teamroom": {
-      "usageCount": 23,
-      "lastUsedAt": 1774596776965
+      "usageCount": 25,
+      "lastUsedAt": 1774616011670
     },
     "use-template": {
       "usageCount": 5,
@@ -623,8 +623,8 @@
       "lastUsedAt": 1774186170277
     },
     "scheduled-agent": {
-      "usageCount": 21,
-      "lastUsedAt": 1774585116282
+      "usageCount": 22,
+      "lastUsedAt": 1774603085953
     },
     "validator": {
       "usageCount": 2,
@@ -746,7 +746,7 @@
   },
   "showSpinnerTree": false,
   "feedbackSurveyState": {
-    "lastShownTime": 1774468417493
+    "lastShownTime": 1774609641299
   },
   "sonnet45MigrationComplete": true,
   "sonnet45MigrationTimestamp": 1774250136380,
@@ -756,11 +756,12 @@
     "1c8df077-f0bc-4301-ba7d-608149fc2f2f": {
       "hasAccess": false,
       "hasAccessNotAsDefault": false,
-      "timestamp": 1774594963107
+      "timestamp": 1774608370372
     }
   },
   "effortCalloutV2Dismissed": true,
   "hasUsedBackslashReturn": true,
+  "anonymousId": "claudecode.v1.8229d77f-f66d-4698-87f7-5176c67df833",
   "oauthAccount": {
     "accountUuid": "b10bdb67-b085-4bd9-834f-5b6a206adbf6",
     "emailAddress": "wilfing@gmail.com",
@@ -773,6 +774,5 @@
     "organizationRole": "admin",
     "workspaceRole": null,
     "organizationName": "wilfing@gmail.com's Organization"
-  },
-  "anonymousId": "claudecode.v1.8229d77f-f66d-4698-87f7-5176c67df833"
+  }
 }
