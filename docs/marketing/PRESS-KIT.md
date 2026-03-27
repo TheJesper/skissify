@@ -169,4 +169,75 @@ For high-resolution assets, custom screenshots, or founder interviews:
 
 ---
 
-*Press kit version 1.0 — March 27, 2026*
+## Newsletter & Media Outreach Targets
+
+Submit to these publications on **Day 2-3 (March 28-29)**. Prioritized by audience fit and response rate.
+
+### Tier 1 — Submit Immediately (Day 2)
+
+| Publication | URL | Audience | Angle |
+|-------------|-----|----------|-------|
+| TLDR AI | tldr.tech/ai | 500K+ devs | MCP + AI agent visual output |
+| The Rundown AI | therundown.ai | 600K+ AI users | "AI agents can draw now" |
+| Ben's Bites | bensbites.co | 50K+ AI early adopters | New tool launch, indie |
+| Bytes.dev | bytes.dev | 100K+ JS devs | Canvas 2D rendering deep-dive |
+| Superhuman | superhumanai.com | 500K+ AI tools users | Productivity + workflow angle |
+
+### Tier 2 — Submit Day 3-5
+
+| Publication | URL | Audience | Angle |
+|-------------|-----|----------|-------|
+| JavaScript Weekly | javascriptweekly.com | 200K+ JS devs | Multi-harmonic wobble, Canvas 2D |
+| Pointer.io | pointer.io | 30K+ senior devs | Technical depth post |
+| Indie Hackers Newsletter | indiehackers.com | 100K+ founders | Build-in-public, €5 SaaS |
+| There's An AI For That | theresanaiforthat.com | 200K+ AI users | Tool directory listing |
+| AI Tools Club | aitoolsclub.com | 50K+ AI tool hunters | Discovery angle |
+
+### Directories (Submit Day 1-2)
+
+| Directory | URL | Notes |
+|-----------|-----|-------|
+| PulseMCP | pulsemcp.com/submit | MCP server directory — priority |
+| MCP Registry | github.com/modelcontextprotocol | Official Anthropic MCP list |
+| Dev Hunt | devhunt.org | Alternative to Product Hunt |
+| BetaList | betalist.com | $129 for expedited or free (2 mo wait) |
+| AlternativeTo | alternativeto.net | Add as alt to: Excalidraw, Figma, Mermaid |
+| SaaSHub | saashub.com | Product aggregator |
+| There's An AI For That | theresanaiforthat.com | Tool database |
+| ToolFinder | toolfinder.co | Developer tools |
+| Futurepedia | futurepedia.io | AI tools directory |
+| Product Hunt | producthunt.com | Main launch platform |
+
+---
+
+## Email Pitch Template (copy-paste ready)
+
+**Subject:** "Launch brief: Skissify — JSON → hand-drawn sketch, AI-agent-native (MCP)"
+
+```
+Hi [name],
+
+Quick pitch: Skissify (skissify.com) just launched — it turns JSON into hand-drawn sketches, and AI agents can use it natively via MCP (Model Context Protocol).
+
+Why it's interesting: for the first time, AI agents like Claude can create visual output — floor plans, architecture diagrams, wireframes — not just describe them. The input is JSON, not drag-and-drop.
+
+Numbers:
+→ 14 architectural element types
+→ Multi-harmonic wobble engine (seeded randomness, tuned per-element)
+→ 4 paper styles (cream, white, grid, blueprint)
+→ Free + Pro €5/month
+→ MCP server on npm (Claude Desktop install: 2 minutes)
+
+Try it live: skissify.com/editor (no signup needed)
+See a floor plan: [link to public example sketch]
+Full press kit: [contact for assets]
+
+Happy to provide interview, exclusive demo, or any screenshots you need.
+
+[Founder name], skissify.com
+```
+
+---
+
+*Press kit version 2.0 — March 27, 2026 (launch day)*  
+*Added: newsletter targets, directory list, outreach template*

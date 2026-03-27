@@ -437,6 +437,214 @@ Free: skissify.com — would love feedback from this community.
 
 ---
 
+## TikTok / Instagram Reels Scripts
+
+Short-form video is the fastest way to reach the developer/designer crowd who've never heard of MCP. These scripts are designed for screen-recorded demos — no face needed.
+
+### Reel 1: "AI Can Draw Now" (15-20 seconds)
+**Hook frame:** Text overlay: *"Ask your AI to draw a floor plan"*
+
+```
+[0s] Screen: Claude chat window, blank
+[1s] Typing: "Design a 1-bedroom apartment for a remote worker. Draw it."
+[3s] Claude thinking indicator
+[5s] "calling create_sketch..."
+[7s] Skissify opens — cream paper floor plan renders
+[10s] Zoom in on hand-drawn detail (wobble lines visible)
+[13s] Text overlay: "skissify.com — free"
+[15s] End card: @skissify
+```
+
+**Caption:**
+```
+AI agents can draw now 🤖✏️ 
+
+Ask Claude to design a floor plan, get a hand-drawn sketch back in seconds. Zero drag-and-drop.
+
+JSON in. Sketch out. AI-native.
+
+#AI #Claude #MCP #FloorPlan #DevTools #AIAgents #Skissify
+```
+
+---
+
+### Reel 2: "The Wobble Slider" (10 seconds)
+**Hook frame:** Text overlay: *"The most satisfying dev tool slider"*
+
+```
+[0s] Skissify editor, floor plan visible
+[2s] Drag amplitude slider: 0 → 10
+[5s] Lines go from ruler-straight to messily hand-drawn
+[7s] Slider dragged back to 3 — perfect balance
+[9s] Text overlay: "skissify.com"
+```
+
+**Caption:**
+```
+This slider is oddly satisfying 😮‍💨
+
+From "draftsman precision" to "drew this in a meeting" in one drag.
+
+That's the wobble engine. Three parameters, infinite aesthetics.
+
+#Satisfying #Dev #DesignTools #Skissify #WebDev
+```
+
+---
+
+### Reel 3: "Blueprint Mode" (12 seconds)
+**Hook frame:** Text overlay: *"Switch to blueprint mode"*
+
+```
+[0s] Skissify editor, cream paper floor plan
+[2s] Click paper style → blueprint
+[3s] Transition: room flips to dark blue + white lines
+[6s] Slow zoom across the blueprint
+[10s] Text overlay: "4 paper styles. 1 JSON."
+[12s] "skissify.com"
+```
+
+**Caption:**
+```
+One JSON. Four completely different vibes 🎨
+
+Cream → White → Grid → Blueprint
+
+Your AI-generated floor plan, your aesthetic.
+
+#Blueprint #AIFloorPlan #Skissify #DesignTools #MCP
+```
+
+---
+
+### Reel 4: "30-Second Tutorial" (30 seconds)
+**Hook frame:** Text overlay: *"Floor plan from text prompt in 30s"*
+
+```
+[0s] Claude Desktop open
+[2s] Typing prompt: "2-bedroom apartment, home office, open kitchen"
+[5s] Claude generating...
+[8s] "calling create_sketch..."
+[10s] Skissify link appears in chat
+[12s] Click the link — sketch renders
+[15s] Annotated labels: Living Room, Bedroom 1, Home Office
+[20s] "Share" button click → link copies
+[23s] Paste into Notion → sketch embedded
+[27s] Text overlay: "install: npm i -g @skissify/mcp-server"
+[30s] "skissify.com"
+```
+
+**Caption:**
+```
+Full workflow in 30 seconds:
+1. Ask Claude to design a layout
+2. Skissify renders a hand-drawn sketch
+3. Share it anywhere
+
+MCP server install takes 2 minutes.
+npm install -g @skissify/mcp-server
+
+#Tutorial #MCP #Claude #AIAgents #FloorPlan #DevTools
+```
+
+---
+
+## Launch Day Email Template
+
+Send to anyone who's given you their email (beta users, newsletter, personal network). Send at 09:00 CET — after Product Hunt goes live.
+
+**Subject line options (A/B test):**
+- A: "I gave Claude a pen — here's what happened"
+- B: "Skissify is live: JSON → hand-drawn sketches"
+- C: "AI agents can draw now. Here's the tool I built."
+
+**Body:**
+
+```
+Hey [name],
+
+Quick note: Skissify launched today.
+
+The short version: Skissify turns JSON into hand-drawn sketches. With MCP support, AI agents like Claude can create floor plans, diagrams, and wireframes autonomously.
+
+You ask Claude to sketch something. Claude generates JSON. Skissify renders it.
+
+Here's what I built:
+→ 14 element types (floor plans, architectural details, labels, dimensions)
+→ Multi-harmonic wobble engine (lines actually look human-drawn)
+→ 4 paper styles: cream, white, grid, blueprint
+→ MCP server — install in 2 minutes with Claude Desktop
+→ Free public sketches + Pro at €5/month
+
+Two easy ways to try it today:
+
+1. Open the editor (no signup):
+   skissify.com/editor
+
+2. Paste this JSON:
+   { "elements": [
+     { "type": "rect", "x": 50, "y": 50, "w": 200, "h": 150, "label": "Living Room" },
+     { "type": "door-symbol", "x": 120, "y": 50, "w": 60, "h": 20 }
+   ]}
+
+3. If you're on Claude Desktop, install the MCP server:
+   npm install -g @skissify/mcp-server
+
+I'd love honest feedback. What would make this genuinely useful for your workflow? What's missing?
+
+Reply to this email — I read everything and reply to most.
+
+[Your name]
+
+P.S. If you're on Product Hunt: [link]. Not asking for upvotes — just in case you're browsing.
+```
+
+---
+
+## Newsletter Outreach Template
+
+Send on Day 2-3 to AI/dev newsletters. Keep it short — editors get 50+ pitches a day.
+
+**Subject:** "Brief: Skissify — JSON to hand-drawn sketch, MCP-native (launched yesterday)"
+
+```
+Hi [editor name],
+
+One sentence: Skissify turns JSON into hand-drawn sketches, and AI agents can use it natively via MCP.
+
+Why it's interesting: AI agents now have visual output — Claude can design and draw floor plans, wireframes, and architecture diagrams on demand. No drag-and-drop. JSON is the interface.
+
+Key details:
+- Launched: March 27, 2026
+- Free + Pro €5/mo
+- MCP server (npm), Claude Desktop integration
+- Multi-harmonic wobble engine (actually looks hand-drawn, not fake)
+- 14 element types including architectural: doors, windows, stairs, dims
+
+Demo: skissify.com
+One-click floor plan example: [link to a public sketch]
+Press kit: skissify.com/press (or attached)
+
+Happy to provide exclusive demo, interview, or custom screenshot angle.
+
+[Name]
+skissify.com
+```
+
+**Target newsletters (prioritized):**
+1. **TLDR AI** — tldr.tech/ai — 500K+ subscribers, dev-focused, covers MCP tools
+2. **The Rundown AI** — therundown.ai — 600K+ subscribers, broad AI audience
+3. **Superhuman** — superhumanai.com — curated AI tools newsletter
+4. **Pointer.io** — pointer.io — developer-focused link digest
+5. **JavaScript Weekly** — javascriptweekly.com — for the Canvas 2D / rendering angle
+6. **Bytes.dev** — bytes.dev — dev newsletter, strong indie tool coverage
+7. **Indie Hackers newsletter** — indiehackers.com/newsletter — SaaS/indie audience
+8. **Ben's Bites** — bensbites.co — daily AI newsletter, covers new tools quickly
+9. **AI Tools Club** — aitoolsclub.com — AI tool discovery newsletter
+10. **There's An AI For That newsletter** — theresanaiforthat.com — tool directory + newsletter
+
+---
+
 ## Hashtag Strategy
 
 ### Primary (use on every post):

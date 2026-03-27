@@ -144,6 +144,29 @@
 
 ---
 
+## Marketing Improvements (Cycle 2 — March 27, 01:00 CET)
+
+### Completed This Cycle
+- [x] ✅ Blog post #1 expanded: "Why Hand-Drawn Sketches Beat Figma" — ~1,800 words, added cognitive research, the blank canvas problem, signal problem, when-Figma-wins section
+- [x] ✅ Blog post #4 NEW: "Build Your First AI Floor Plan in 15 Minutes" — step-by-step tutorial targeting Claude Desktop users, ideal for SEO + conversion
+- [x] ✅ SOCIAL-MEDIA.md: Added TikTok/Reels scripts (4 videos), launch email template, newsletter outreach template with 10 prioritized targets
+- [x] ✅ PRESS-KIT.md: Added newsletter/media outreach targets (Tier 1+2), directories checklist, copy-paste email pitch template
+
+### Blog Post Distribution Plan (updated)
+All 4 posts should be cross-posted:
+- Day 2 (Mar 28): Tutorial post ("Build Your First...") → Dev.to first, then Hashnode
+- Day 3 (Mar 29): AI floor plans post → Dev.to, Hashnode
+- Day 4 (Mar 30): Skissify vs Excalidraw → Dev.to, Medium
+- Day 5 (Mar 31): Hand-drawn vs Figma → Medium, Hashnode
+
+### Short-Form Video Priority (add to Day 2-3 schedule)
+- Record "The Wobble Slider" reel first — 10 seconds, no narration needed, high virality potential
+- Record "AI Can Draw Now" second — use Claude Desktop screen recording
+- Post both on: Instagram Reels, TikTok, YouTube Shorts, Twitter/X video
+- These can drive significant organic reach with zero paid budget
+
+---
+
 ## New Launch Ideas (added March 27)
 
 ### Virality Amplifiers
