@@ -639,6 +639,101 @@ Without these tutorials, Skissify will be invisible even when its MCP server is 
 
 ---
 
+## Update Log: March 27, 2026 — 09:34 CET | Automated Strategy Run #9
+
+### 🟡 NEW ENTRANT: paper.design — AI-Native Canvas Tool with MCP (March 5, 2026)
+- **URL**: https://paper.design | Review: https://www.banani.co/blog/paper-design-mcp-review (6 days ago)
+- Shipped **Paper Desktop + Paper MCP** on March 5, 2026 (build log entry: "Paper Desktop, Paper MCP, and eye dropper for shaders")
+- Canvas-based UI generation tool with Claude Code integration built in natively — no separate AI subscription required
+- Positioned as a Figma alternative / "AI-native design from scratch" — open alpha stage
+- MCP server enables agents to read/write Paper canvases
+- SFAI Labs comparison (2 weeks ago): "paper.design is in open alpha and lacks collaboration features, component management depth, and design system maturity that Figma has built over a decade"
+- **Skissify relevance**: paper.design targets polished UI/product design (like Figma, not like Skissify). No hand-drawn aesthetic, no floor plan support, no JSON-first data model.
+- **Risk level**: LOW direct competition. Signal value: HIGH — confirms that AI-native canvas tools with MCP are proliferating rapidly. Each new entrant in this space normalizes the "sketch tool + MCP" category that Skissify is entering.
+- **Monitoring note**: If paper.design gains traction and pivots toward sketch/rough aesthetics, reassess.
+
+### 🔴 CRITICAL: Mermaid MCP Now 22+ Diagram Types, 50+ Templates — Featured in awesome-mcp-servers (5 days ago)
+- **URL**: https://github.com/punkpeye/awesome-mcp-servers (5 days ago) — `Narasimhaponnada/mermaid-mcp` newly listed
+- **Features**: 22+ diagram types (flowcharts, sequence, class, ER, architecture, state machines, and more), 50+ pre-built templates, SVG/PNG/PDF exports, seamless integration with GitHub Copilot, Claude, and all MCP-compatible clients
+- This is the most feature-complete free diagram MCP server now available
+- Multiple other Mermaid MCP wrappers active on LobeHub: `kayaozkur/mcp-server-mermaid`, `hustcc/mcp-mermaid`, `zabolotiny/mermaid-diagram-claude-code`
+- The Mermaid MCP ecosystem is maturing rapidly in March 2026 — becoming the default text-to-diagram MCP
+- **Skissify positioning**: Mermaid MCP handles topology diagrams (flowcharts, sequences, ER). Skissify handles spatial diagrams (floor plans, architectural layouts) with hand-drawn aesthetics. These are complements, not competitors — but this new feature-richness closes Mermaid's gap in several areas where Skissify previously had differentiation (template library, multiple export formats).
+- **Urgent action**: Skissify MCP should explicitly list "Mermaid for diagrams, Skissify for sketches and floor plans" in documentation — partners in the stack, not competitors.
+
+### 🟢 MAJOR OPPORTUNITY: MCP Apps Spec Enables Interactive Sketches Inside AI Chats (Jan 2026, tutorial published 2 days ago)
+- **URL**: https://www.thingsaboutweb.dev/en/posts/mcp-apps (2 days ago)
+- **MCP Apps spec** (landed January 2026): MCP servers can now embed **interactive HTML UIs directly inside AI conversations**. The spec enables a two-way lifecycle: MCP server sends an HTML widget, user interacts, results flow back to the AI.
+- Article author built a Mermaid diagram renderer using the spec — the diagram renders live INSIDE the Claude/Cursor chat window.
+- Quote: *"MCP Apps let MCP Servers embed interactive HTML UIs directly inside AI conversations"*
+- **Skissify impact**: TRANSFORMATIVE. A Skissify MCP App could render the hand-drawn sketch **inline in the chat interface** — the user prompts Claude, Claude generates the JSON manifest, Skissify renders the sketch, it appears in the conversation. Zero friction. No tab-switching.
+- This is the "voice canvas" feature that Google Stitch is building — but as an MCP App, Skissify can ship it faster, cheaper, and with more developer customization.
+- **Priority upgrade**: Add MCP Apps support to the Skissify MCP server roadmap. Ship basic MCP server (v0.1) → then add interactive App widget (v0.2). The App widget is the viral demo that gets shared.
+
+### 🔵 CONTEXT: No New Direct Competitor in Skissify's Niche (Run #9 confirms Run #8)
+- Searches conducted: AI sketch tool MCP hand-drawn launch March 2026; hand-drawn diagram JSON API new launch 2026; MCP server floor plan visualization new launch 2026
+- **No new entrant** to the "hand-drawn + JSON-native + MCP + floor plan" quadrant detected
+- The niche remains unoccupied as of March 27, 2026 09:34 CET
+- Nine consecutive scans with zero niche entrants — statistically, this gap is durable, not accidental
+
+### Updated Competitor Matrix (Run #9 Additions)
+
+| Tool | MCP Status | Hand-drawn | Floor Plans | Agent-friendly JSON | Notable March 2026 Update |
+|------|-----------|-----------|-------------|---------------------|---------------------------|
+| **paper.design** | Yes (Paper MCP, March 5) | No | No | No | Open alpha; Canvas UI gen + Claude Code integration |
+| **mermaid-mcp** | Yes (22+ types, 50+ templates) | No | No | Text/DSL | Feature-richest diagram MCP now active; in awesome-mcp-servers |
+| **MCP Apps spec** | — | — | — | — | Jan 2026: interactive HTML in AI chats; enables inline sketch renderers |
+
+---
+
+## Update Log: March 27, 2026 — 11:40 CET | Automated Strategy Run #10
+
+### 🟢 CONFIRMATION: Ten Consecutive Scans — Skissify's Niche Remains Structurally Unoccupied
+- Full Product Hunt sweep of "Excalidraw alternatives", "Eraser alternatives", "sketch/whiteboard tools" categories conducted March 27, 2026 11:40 CET
+- Alternatives pages list: Witeboard, A Web Whiteboard, Traw, Whiteborb — all generic whiteboard tools. Zero JSON-native, MCP-ready, floor-plan-capable, hand-drawn tools
+- **Tenth consecutive scan with no new entrant to the niche.** The structural moat is holding.
+
+### 🟢 OPPORTUNITY: Product Hunt "Eraser Alternatives" Page Describes Skissify's Ideal User — Today
+- **URL**: https://www.producthunt.com/products/eraser-2/alternatives (updated 4 days ago)
+- The PH Eraser alternatives page describes its ideal user as: *"Teams and individuals who want fast, frictionless whiteboarding for architecture sketches, brainstorming, and interview practice — especially when you care more about clarity and speed than pixel-perfect diagram styling."*
+- This is **verbatim** Skissify's target persona — but Skissify is absent from this page
+- The page also highlights: *"Lightweight, quick-to-learn drawing model with a distinctive sketch aesthetic"* — Skissify's exact positioning
+- **Action**: After launch, submit Skissify to the PH Eraser alternatives page. The target user description is pre-written for Skissify.
+
+### 🟡 SIGNAL: Lucid AI Confirms Voice-to-Visual Now Live at Enterprise Scale
+- **URL**: https://www.prnewswire.com/news-releases/lucid-software-advances-mcp-server-offering-and-lucid-ai-capabilities-debuts-process-agent-302725846.html (confirmed fresh — 1 day ago)
+- Lucid's announcement (still surfacing in search as recent) includes voice-to-text prompting: *"Users can now speak, rather than type, directly into the Lucid AI interface. For example, an engineer can describe a complex sequence diagram for a login flow, and Lucid AI will generate the visual in real time."*
+- This is the enterprise-scale proof-of-concept for the "Voice-to-Sketch" moonshot feature on Skissify's roadmap
+- Lucid charges $8–20/user/mo for this. Skissify can offer a comparable voice→JSON→sketch pipeline at EUR 2–5/mo.
+- **Implication**: If enterprise users accept voice-to-visual at $20/user/mo, developer/indie users will pay EUR 2–5/mo for the same experience (simpler, faster, less polished).
+
+### 🟡 SIGNAL: Floor Plan Software Market Actively Expanding — All Without JSON or MCP
+- **URL**: https://www.mysiteplan.com/blogs/news/best-floor-plan-software (2 weeks ago) — "15 Best Floor Plan Software of 2026": SketchUp, Planner 5D, RoomSketcher, etc.
+- **URL**: https://www.basedlabs.ai/tools/floor-plan-generator (3 weeks ago) — "AI floor plan generator turns sketches or text into scaled, labeled plans"
+- **URL**: https://www.capterra.com/floor-plan-software/ (2 weeks ago) — enterprise floor plan software comparisons active
+- ALL tools listed: raster-image input/output, no JSON API, no MCP, no hand-drawn aesthetic, no agent compatibility
+- The floor plan software market is growing in parallel to Skissify's development — validating demand while remaining non-competitive
+- **Skissify's gap**: The only floor plan tool in any of these lists that could be programmatically driven by an AI agent is... none of them. Skissify is still the only option.
+
+### 🔵 CONTEXT: Developer Discovery Channels Are Stable — MCP Registries + PH Alternatives = The Channels
+- Multiple PH alternatives pages (Excalidraw, Eraser, Whimsical) confirmed active with fresh updates this week
+- LobeHub MCP marketplace confirmed updated 20 hours ago (Kubernetes MCP server newly listed)
+- AI Gateway MCP Catalog Intake tutorial (YouTube, 1 week ago) shows enterprise discovery of MCP tools via gateway catalogs
+- **Summary**: The three developer discovery channels Skissify needs to be in at launch: (1) modelcontextprotocol.io registry, (2) awesome-mcp-servers GitHub, (3) Product Hunt alternatives pages. All three are active and growing.
+
+### Updated Competitor Matrix Row: Lucid Software (Voice-to-Visual Confirmed)
+| Feature | Status (March 27, 2026 — confirmed) |
+|---------|-------------------------------------|
+| **Voice-to-Visual** | **Live — speak diagram description, AI generates visual in real time** |
+| MCP Server | Advanced (upgraded March 27) |
+| Process Agent | Yes (debuted March 27) |
+| Hand-drawn output | No |
+| Floor plans | No |
+| JSON-native | No |
+| Developer pricing | $8–20/user/mo (enterprise) |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

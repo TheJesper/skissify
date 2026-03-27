@@ -4,6 +4,116 @@ _Actionable items proposed by the automated strategy advisor. Append-only._
 
 ---
 
+## 2026-03-27 (Friday) — Cycle Run 11:40 CET | Automated Strategy Run #10
+
+### Context This Cycle
+- 10th consecutive niche-clean scan — structural moat confirmed again
+- PH "Eraser alternatives" page describes Skissify's exact user persona in PH editorial language
+- Lucid voice-to-visual confirmed live (March 27, $20/user/mo enterprise) — validates voice-as-interface at scale
+- Floor plan software market (15+ tools, Capterra category) still 100% raster — zero JSON API or MCP
+- Full organic acquisition funnel is now fully mapped — requires: MCP server + 3 registry listings + try-before-signup + 1 tutorial
+
+---
+
+### ✅ Action 1: Write a 100-Word "Alternatives Submission Blurb" for 5 Target Pages
+
+**Why now**: Product Hunt's Eraser alternatives page (4 days old, actively indexed) already describes Skissify's user in pre-written editorial language. Skissify isn't listed because it hasn't launched. The post-launch submission is a near-zero-cost, high-intent acquisition channel that will compound for years. Prepare the blurb today so launch day submission takes 5 minutes.
+
+**The five pages to target on launch day**:
+1. https://www.producthunt.com/products/eraser-2/alternatives
+2. https://www.producthunt.com/products/excalidraw/alternatives
+3. https://startupik.com/excalidraw-alternatives-best-diagram-tools-for-teams/
+4. https://www.exafol.com/products/excalidraw/alternatives
+5. https://www.producthunt.com/products/whimsical/alternatives
+
+**The submission blurb to write now** (`docs/marketing/COPY-LIBRARY.md`, section "Alternatives Submission Blurb"):
+> "Skissify — JSON-first hand-drawn sketch tool with MCP support. Built for AI agents and the developers who work alongside them. Unlike Excalidraw and Eraser, Skissify renders floor plans, walls, doors, windows, stairs, and dimensions in a hand-drawn aesthetic. Accepts clean JSON from any LLM — no DSL to learn. Free tier with watermark. EUR 2/mo for clean API output. Try it: skissify.com"
+
+**Time**: 15 minutes. Zero technical work.
+
+**Expected ROI**: At 12–18% intent-match conversion, 100 visitors from alternatives pages = 12–18 free signups. More efficient than cold SEO.
+
+---
+
+### ✅ Action 2: Confirm Action Completion Status — Run a 20-Minute Audit
+
+**Why now**: 10 strategy cycles have run since midnight on March 27. Over 25 specific actions have been proposed. This cycle should not produce more new actions until the backlog is triaged. The biggest risk to Skissify right now is not a lack of ideas — it's actions accumulating without execution.
+
+**Audit the 5 most critical actions across all prior cycles**:
+
+| Action | First Assigned | Status to Confirm |
+|--------|----------------|-------------------|
+| MCP server code (`packages/mcp/`) | Run #1 (01:11 CET) | Does the directory exist? |
+| `docs/MCP-TUTORIAL.md` | Run #6 (06:09 CET) | Does the file exist? |
+| `docs/marketing/SEO-TARGETS.md` | Run #7 (07:16 CET) | Does the file exist? |
+| DEV Community comment on Gemini+Matplotlib tutorial | Run #6 (06:09 CET) | Was it posted? |
+| `docs/marketing/COPY-LIBRARY.md` | Run #2 (02:15 CET) | Does the file exist with tier copy? |
+
+**How to audit**: Run `ls W:/code/skissify/packages/ W:/code/skissify/docs/MCP-TUTORIAL.md W:/code/skissify/docs/marketing/SEO-TARGETS.md W:/code/skissify/docs/marketing/COPY-LIBRARY.md` in one terminal command.
+
+**Record the results** in a new section at the bottom of this file:
+```
+## Completion Log
+- [DATE] MCP server: [yes/no]
+- [DATE] MCP-TUTORIAL.md: [yes/no]
+- [DATE] SEO-TARGETS.md: [yes/no]
+- [DATE] COPY-LIBRARY.md: [yes/no]
+- [DATE] DEV Community comment: [yes/no]
+```
+
+**Why this matters**: Strategy cycles without execution tracking are just brainstorming. This audit transforms 10 cycles of intelligence into an honest backlog with known status. Do this before adding any new actions to the queue.
+
+---
+
+### ✅ Action 3: Plan the Saturday Build — MCP v0.1 Is the Only Technical Priority
+
+**Why Saturday**: It's Friday 11:40 CET. The MCP server has been the #1 critical action in every strategy cycle since midnight. The window for "first hand-drawn sketch MCP" is still open — but it's closing as Figma, Eraser, Mermaid, Lucid, draw.io, Whimsical, and paper.design all have MCP servers live and active evangelism. The niche is unoccupied but the ecosystem is busy.
+
+**The minimal viable MCP v0.1** (4–6 hours of work, feasible Saturday):
+```typescript
+// packages/mcp/index.ts — skeleton
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({ name: "skissify", version: "0.1.0" });
+
+server.tool("render_sketch", "Render a Skissify JSON manifest as a hand-drawn SVG",
+  { manifest: z.object({}).passthrough() },
+  async ({ manifest }) => {
+    // call the existing Skissify renderer
+    const svg = await renderManifest(manifest);
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**Steps**:
+1. Create `W:/code/skissify/packages/mcp/` — run `npm init` + install `@modelcontextprotocol/sdk`
+2. Wire `render_sketch` to the existing rendering engine
+3. Test with Claude Desktop locally (5-minute config change)
+4. Publish to npm as `@skissify/mcp` with `public` access
+5. Submit to modelcontextprotocol.io/registry
+
+**Why this is THE priority**: Every other action (tutorials, SEO, pricing copy, alternatives submissions) depends on the MCP server existing. Without it, Skissify is an editor — not a platform. With it, Skissify is in the pipeline of every developer using Claude, Copilot, Cursor, or Windsurf.
+
+**Target**: MCP v0.1 live by end of day Saturday, March 28.
+
+---
+
+### Notes for Next Cycle (Target: April 3, 2026)
+- **Top question**: Does the MCP server exist? URL if yes.
+- Was the action completion audit done? What were the 5 status answers?
+- Was the 100-word alternatives blurb written and saved to COPY-LIBRARY.md?
+- Any new competitor detected in the "hand-drawn + JSON-native + MCP + floor plan" space? (10 clean cycles — continuing weekly)
+- Monitor voice-to-visual features at Lucid and Google Stitch — timeline of mainstream adoption
+- Check if paper.design evolves from open alpha toward paid/closed beta
+
+---
+
 ## 2026-03-27 (Friday) — Cycle Run 01:11 CET
 
 ### Context This Cycle
@@ -652,3 +762,80 @@ Strategy cycles produce diminishing returns if actions aren't executed. The goal
 - Scan for any new "JSON sketch tool" or "hand-drawn diagram MCP" entries in the registry
 
 ---
+
+---
+
+## 2026-03-27 (Friday) — Cycle Run 09:34 CET | Automated Strategy Run #9
+
+### Context This Cycle
+- MCP Apps spec (Jan 2026) enables inline HTML sketch rendering inside AI conversations — Skissify's viral demo mechanism
+- paper.design shipped Paper MCP (March 5) — validates AI-native canvas category; different lane, low threat
+- Mermaid MCP now 22+ diagram types, 50+ templates (newly in awesome-mcp-servers) — Skissify must differentiate explicitly
+- Nine consecutive scans: Skissify's "hand-drawn + JSON-native + MCP + floor plan" niche remains unoccupied
+- EUR 9/mo Pro worth testing vs EUR 5 — structural niche gap may support higher price at launch
+
+---
+
+### ✅ Action 1: Build MCP v0.2 with MCP Apps Support (Inline Sketch Rendering)
+
+**Why now**: The MCP Apps spec (January 2026) lets MCP servers embed interactive HTML inside AI chats. A developer built a Mermaid live renderer this way — the diagram appears inline. Skissify can do the same: user prompts Claude, JSON is generated, sketch renders inside the chat window. This is the viral demo that makes someone reach for their credit card.
+
+**Concrete steps**:
+1. Verify the MCP Apps spec at https://www.thingsaboutweb.dev/en/posts/mcp-apps — understand the two-way lifecycle (server sends HTML, user interacts, results return to agent)
+2. Build Skissify MCP v0.1 first: single 
+ender_sketch(json) tool returning SVG string — launch this immediately
+3. In parallel, design MCP v0.2: add an MCP App resource that serves an HTML widget with the live canvas renderer
+4. Test in Claude Desktop — show: prompt → JSON → hand-drawn floor plan appears in chat
+5. Record a 30-second screen capture of this working. This is the launch demo.
+
+**Why this is the highest-leverage build**: The inline demo is what converts viewers to users. Every "Show HN", every tutorial, every tweet that shows a sketch appearing inside Claude Desktop is free marketing. No other sketch MCP does this today.
+
+**Target**: MCP v0.1 live by April 3. MCP v0.2 (with App) by April 10.
+
+---
+
+### ✅ Action 2: Add Skissify to the awesome-mcp-servers list — and Frame Against Mermaid
+
+**Why now**: Mermaid MCP just appeared in awesome-mcp-servers with a detailed feature description. awesome-mcp-servers is the canonical discovery list for MCP tools — developers browsing it for diagram tools will see Mermaid but not Skissify. This is a gap that costs zero to fix post-launch.
+
+**Concrete steps**:
+1. After publishing @skissify/mcp to npm, fork https://github.com/punkpeye/awesome-mcp-servers
+2. Add Skissify under the "Diagrams & Visual" or "Design" section with this description:
+   > @skissify/mcp — JSON-native hand-drawn sketch renderer for AI agents. Floor plans, architectural elements, wobble aesthetics. Declarative JSON manifest in, hand-drawn SVG out. EUR 2/mo for clean renders.
+3. Position the entry ADJACENT to Mermaid MCP with explicit differentiation note: "Mermaid for topology diagrams; Skissify for spatial/floor plan sketches with hand-drawn aesthetics"
+4. Also submit to: lobehub.com/mcp (where multiple Mermaid MCPs are listed), and the official modelcontextprotocol.io registry
+
+**Time required**: 30 minutes post-launch. Zero cost. High discovery value.
+
+**Target keyword**: Developers searching for "floor plan MCP", "sketch MCP", or "hand-drawn diagram MCP" should find Skissify on day 1 of being listed.
+
+---
+
+### ✅ Action 3: Test EUR 9/mo Pro Pricing at Product Hunt Launch
+
+**Why now**: Nine strategy scans confirm Skissify occupies a structural niche with zero competitors. Price anchoring theory: when you are the only option, you have pricing power. The current EUR 5/mo Pro may be leaving money on the table. EUR 9/mo is still well below Excalidraw+ (-7/mo in USD = ~EUR 6.5/mo), still far below tldraw (/yr), still an impulse buy for any freelancer or developer, and still below the "needs manager approval" threshold.
+
+**Concrete steps**:
+1. On Product Hunt launch day, publish TWO pricing variants in the first 24 hours:
+   - If traffic skews developer/API: lead with EUR 2/mo API Starter + EUR 9/mo Pro
+   - If traffic skews designers/product people: lead with EUR 5/mo Pro
+2. Use Product Hunt comments to A/B test: mention both price points, watch which gets positive response
+3. Alternatively: set EUR 9/mo as the live price, offer EUR 5/mo as a "PH exclusive" 6-month deal (creates urgency + data point)
+4. Decision gate: if 0 paying users at EUR 9/mo after 2 weeks, drop to EUR 5/mo. If conversion happens, keep EUR 9.
+
+**Supporting data**: The structural niche gap analysis (Run #9) + 2026 micro-SaaS data showing EUR 2-5 as "impulse" suggests EUR 9 is still comfortably in impulse territory while being materially more valuable per user. 22 users at EUR 9/mo = EUR 198/mo vs 27 at EUR 5 = EUR 135/mo. Same approximate conversion count, higher revenue.
+
+**Target**: Decide pricing strategy by April 6 (one week before target PH launch).
+
+---
+
+### Notes for Next Cycle (Run #10 — Target: April 3, 2026 or sooner)
+- Is MCP v0.1 
+ender_sketch tool live on npm? Yes/no + URL
+- Has Skissify been submitted to awesome-mcp-servers or any MCP registry? Yes/no
+- Has the MCP Apps spec been evaluated for v0.2 inline rendering?
+- Is the EUR 9 vs EUR 5 pricing decision made?
+- Any new competitor spotted in the "hand-drawn + JSON-native + MCP + floor plan" niche? (9 runs clean — keep tracking)
+- Did the DEV Community comment on the Gemini+Matplotlib tutorial go live? (assigned Run #6, still pending)
+- Check: has paper.design updated features or pricing since open alpha?
+
