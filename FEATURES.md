@@ -117,6 +117,8 @@
 
 - [x] **JSON Import/Export + New Sketch** — "Import" button in toolbar loads a `.json` sketch file from disk (validates elements array, success/error toast); "JSON" button downloads current sketch as portable `.json` (Ctrl+Shift+J, smart filename); "New Sketch" button clears the canvas after a confirmation modal (sensible blank defaults). `importSketch()` and `newSketch()` hooks in `useSketch.ts`, both push undo history. Shortcuts panel updated.
 
+- [x] **Inline text editing** — double-click any `text`, `rect`, or `dim` element on the canvas to edit its content directly. A centered overlay input appears with Save/Cancel buttons. Enter saves, Escape cancels. Fully integrated with undo/redo (one history entry per commit). No JSON editor required for simple label changes.
+
 ## Suggested Features for Launch Readiness
 
 ### Authentication
