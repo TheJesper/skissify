@@ -581,6 +581,64 @@ Without these tutorials, Skissify will be invisible even when its MCP server is 
 
 ---
 
+---
+
+## Update Log: March 27, 2026 — 07:16 CET | Automated Strategy Run #7
+
+### 🟢 OPPORTUNITY: Mermaid Diagram Viewer Searches Up 1,015% YoY (2026)
+- **URL**: https://macmdviewer.com/blog/mermaid-live-editor-guide (2 weeks ago)
+- DataForSEO data cited in a Mermaid Live Editor guide: "Mermaid diagram viewer searches up **1,015% year-over-year**" in 2026
+- Mermaid remains MIT open source; the commercial "Mermaid Chart" adds hosted services
+- BrightCoding post (Feb 28, 2026): "Mermaid's DSL feels natural to developers — no XML hell or verbose JSON structures" — this is the same community that will appreciate Skissify's clean JSON manifest as an alternative
+- **Skissify implication**: The developer interest in "diagrams as code" is exploding. Mermaid owns text-based diagrams. Skissify owns the JSON-structured, spatially-accurate, hand-drawn-aesthetic slice. When developers outgrow Mermaid's layout limitations (a documented pain point), Skissify should be the next step for anything requiring spatial control or hand-drawn output.
+- **SEO opportunity**: "Mermaid alternative hand-drawn", "mermaid floor plan sketch" — zero competition for these keywords right now, 1000%+ search growth trend.
+
+### 🟢 OPPORTUNITY: "AI Developer Tools Are Layered, Not Competing" — New Framing Paradigm
+- **URL**: https://www.buildfastwithai.com/blogs/ai-tools-developers-march-2026 (5 days ago)
+- Key quote: *"AI developer tools in 2026 layer on top of each other. They do not compete. Your editor handles real-time suggestions. Your terminal agent handles complex multi-file features."*
+- This validates Skissify's positioning as a **rendering layer**, not an all-in-one design tool
+- **Implication for EUR 2/mo**: A EUR 2/mo "rendering layer" is not a subscription decision — it's an infrastructure add-on, like paying for a font API or a timezone library. The purchase decision is made ONCE when integrating into a pipeline, then forgotten.
+- **Competitor response needed**: Position Skissify explicitly as "the sketch layer for your AI stack" — not a Figma/Excalidraw/Miro replacement. This framing reduces friction at the point of first payment.
+
+### 🟡 SIGNAL: Excalidraw Plugin Appears in "Top 10 Figma Plugins for Designers 2026"
+- **URL**: https://www.purshology.com/2026/03/top-10-figma-plugins-every-ui-ux-designer-needs-in-2026/ (2 days ago)
+- An "Excalidraw Integration" Figma plugin is now listed among the top 10 Figma plugins for 2026 — showing Excalidraw's hand-drawn aesthetic is crossing over into polished design workflows
+- This is Excalidraw and Figma converging, with the hand-drawn aesthetic being used as a **style layer inside Figma** rather than as a standalone tool
+- **Skissify opportunity**: If designers are importing Excalidraw sketches into Figma, they want hand-drawn style inside their polished workflow. Skissify's embeddable SVG output (no Figma account needed) is a lighter, programmatic version of this same need for non-designers (developers, architects, product managers).
+- **Risk level**: LOW direct competition. This confirms the aesthetic is desirable in mainstream design flows.
+
+### 🟡 SIGNAL: AI Floor Plan Market Expanding to Adjacent Verticals (March 2026)
+- **URL**: https://oshamap.com/evacuation-plan-software (3 days ago) — AI floor plan → OSHA-compliant evacuation maps. "Upload floor plans or sketches, get print-ready maps."
+- **URL**: https://ocnjdaily.com/news/2026/mar/25/design-your-perfect-space-with-the-ai-floor-plan-generator-streamline-your-workflow/ (2 days ago) — mainstream consumer interest in AI floor plan generation accelerating
+- Adjacent market emerging: **emergency/safety planning tools** consuming floor plan data → evacuation routes, fire safety, ADA compliance checks
+- ALL of these tools take raster images as input (photos, scans). NONE accept structured JSON. None produce hand-drawn output.
+- **Skissify opportunity**: The "JSON floor plan as input" story is applicable to safety tools, real estate, renovation planning, facility management — not just architecture sketching. Skissify's JSON manifest could be the interoperability layer between LLM-generated layouts and these downstream tools.
+- **Product implication**: Add a "skissify.com/schema" documentation page as a permanent URL for the JSON schema — this makes it citable by adjacent tools and creates the foundation for Skissify becoming a data standard.
+
+### 🔵 CONTEXT: SaaS Trend Confirmation — AI-Driven + Usage-Based Is Now Universal
+- **URL**: https://www.eleken.co/blog-posts/saas-trends (1 month ago) — "SaaS in 2026 is defined by AI-driven transformation at every level... the real winners are those integrating AI strategically, embracing usage-based pricing, unbundling, and mobile-first, inclusive design"
+- **URL**: https://www.revenera.com/blog/software-monetization/saas-pricing-models-guide/ (1 week ago) — 6 winning strategies include usage-based as top tier
+- Usage-based pricing (pay per render) is now explicitly the recommended model for AI tools in multiple analyst reports
+- **Skissify validation**: The EUR 0.005/render overage pricing model documented in BUSINESS-PLAN.md is textbook correct for 2026. The EUR 2/mo API Starter tier (200 clean renders/mo) is the entry point into usage-based thinking.
+
+### 🔵 CONTEXT: No New Hand-Drawn/JSON-Native/MCP Sketch Competitors Detected This Cycle
+- Multiple web searches conducted (AI sketch tool launches, Product Hunt AI diagram, hand-drawn agent tools) — **no new direct competitor to Skissify's niche found** in the March 24–27 window
+- The "hand-drawn + JSON-first + MCP + floor plan" quadrant remains unoccupied as of March 27, 2026
+- Next scheduled search: April 3, 2026 (1-week check on space)
+
+### Updated Table: Mermaid.js (Search Trend Data)
+| Metric | Value (2026) |
+|--------|-------------|
+| **GitHub stars** | ~76,000 |
+| **Diagram viewer search YoY growth** | +1,015% (DataForSEO) |
+| **Integration** | GitHub, GitLab, Notion, Obsidian (native) |
+| **Hand-drawn output** | None |
+| **JSON manifest input** | None |
+| **MCP server** | Via wrappers only |
+| **Skissify complement** | Yes — Skissify is the hand-drawn/spatial upgrade when Mermaid's layout control is insufficient |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

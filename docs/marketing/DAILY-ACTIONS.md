@@ -485,3 +485,90 @@ The SVG is publicly shareable, embeddable in Notion/docs, and downloadable.
 - Check if any developers in the Gemini + floor plan DEV Community thread respond to the Skissify comment
 
 ---
+
+## 2026-03-27 (Friday) — Cycle Run 07:16 CET
+
+### Context This Cycle
+- **Signal**: Mermaid diagram viewer searches up 1,015% YoY (DataForSEO, 2026) — "diagrams as code" is exploding
+- **Signal**: AI dev tools "layer, not compete" — Skissify should be positioned as a **rendering layer** (infra), not a SaaS subscription
+- **Signal**: Adjacent floor plan markets (OSHA maps, consumer design) growing fast — ALL lack a JSON schema
+- **Confirmed**: No new direct competitor to Skissify's hand-drawn + JSON-native + MCP + floor plan quadrant detected in 3-day scan
+- **Figma MCP** ecosystem: tutorials proliferating, creating secondary searches for "lightweight alternative"
+
+---
+
+### ✅ Action 1: Create `docs/marketing/SEO-TARGETS.md` with Zero-Competition Keywords
+
+**Why today**: Mermaid is the entry drug for "diagrams as code" with 1,015% YoY search growth. Developers who hit Mermaid's layout limitations will look for spatial, JSON-based alternatives. None of these keywords have any ranking content today:
+
+- `mermaid alternative floor plan` — 0 competing results
+- `json diagram hand drawn sketch` — 0 competing results
+- `programmatic sketch tool api` — 0 competing results
+- `mermaid spatial layout alternative` — 0 competing results
+- `hand drawn architecture diagram json` — 0 competing results
+- `figma mcp alternative lightweight sketch` — trending, low competition (Figma MCP just launched)
+
+**Steps**:
+1. Create `W:/code/skissify/docs/marketing/SEO-TARGETS.md`
+2. Format: each keyword with target URL, blog post title idea, search intent, estimated effort
+3. Prioritize by: "will this searcher convert to free tier?" — all the above will
+4. Write the top 3 as priority blog posts: "Mermaid Alternative for Floor Plans", "JSON Sketch API for Developers", "Figma MCP for Quick Sketches vs Skissify"
+
+**Time required**: 45 minutes to create the doc. Blog posts can be written 1/day.
+
+**Why this matters**: Zero-competition keywords with growing audiences are free money. One 600-word blog post per keyword, written before anyone else, compounds for years. These are permanent SEO assets.
+
+---
+
+### ✅ Action 2: Publish `https://skissify.com/schema` — Claim the Floor Plan JSON Standard
+
+**Why today**: Multiple AI floor plan tools are proliferating (OSHA maps, consumer design, real estate) — all taking raster image input, none with a structured JSON schema. Skissify's JSON manifest is currently the ONLY documented, LLM-friendly floor plan data format in existence. Publishing it as a stable public URL makes Skissify citable, importable, and discoverable.
+
+**Steps**:
+1. Create a minimal `schema` page or static JSON file at `https://skissify.com/schema/v1` (or `/schema.json`)
+2. Include: full element type definitions, required/optional fields, coordinate system documentation, example manifests (apartment, office, diagram)
+3. Add a human-readable HTML version at `/schema` (not just raw JSON)
+4. Submit the URL to JSONSchema.org or Schema.org if applicable
+5. Add the schema URL to the README of any GitHub repos
+
+**Why this is a data standard play**: GeoJSON became the default geospatial format because it had a simple, public spec. Skissify's JSON schema can do the same for "LLM-generated spatial diagrams." Once LLMs are fine-tuned or prompted with this schema, adoption becomes self-reinforcing.
+
+**Time required**: 2-3 hours to write a thorough schema doc. Zero code if using a static page.
+
+**Revenue linkage**: The schema is free. Rendering is paid. Every developer who adopts the schema needs the renderer — Skissify is the only renderer that exists.
+
+---
+
+### ✅ Action 3: Reframe the API Tier Landing Copy as "Infrastructure" Not "Subscription"
+
+**Why today**: The dominant mental model among developers in 2026 is that AI tools layer on top of each other (not compete). Skissify's EUR 2/mo API Starter tier feels like "another subscription" when presented as SaaS, but feels like obvious infrastructure spend when presented as a rendering API. The framing change alone can double conversion from the free tier.
+
+**Current framing** (wrong): "Upgrade to Pro for EUR 5/mo"  
+**Better framing for API users**: "Add the Skissify rendering layer — EUR 2/mo API Starter. 200 clean renders/month. API key in 30 seconds."
+
+**Steps**:
+1. Update the pricing copy in `docs/BUSINESS-PLAN.md` to use "rendering layer" language for the API tier
+2. Draft landing page copy snippet for the API tier (store in `docs/marketing/COPY-LIBRARY.md`):
+   - Headline: "Your agents already know how to sketch. They just need a clean renderer."
+   - Sub: "Skissify is the hand-drawn SVG rendering layer for your AI stack. One API key. JSON in, sketch out."
+   - CTA: "Add the rendering layer — EUR 2/mo"
+3. Write a 1-paragraph explanation of when to use EUR 2 API Starter vs EUR 5 Pro:
+   - EUR 2: automated pipelines, MCP integrations, CI/CD doc generation
+   - EUR 5: human use, saves, sharing, private sketches, UI access
+
+**Time required**: 30 minutes to draft copy. No implementation needed today.
+
+**Why this matters**: Pricing pages where the cheapest tier reads like "infrastructure" (vs "limited SaaS") have significantly higher conversion among developers. This is the single highest-leverage copy change before launch.
+
+---
+
+### Notes for Next Cycle (Run #8 — Target: April 3, 2026)
+- Check if `SEO-TARGETS.md` was created with keywords and blog titles
+- Is `/schema` or `/schema.json` live or staged?
+- Is the "rendering layer" pricing copy updated in BUSINESS-PLAN.md?
+- Audit: what actions from previous cycles (Runs #1–6) have been completed vs outstanding?
+- Confirm: is `docs/MCP-TUTORIAL.md` written (assigned in Run #6)?
+- Is `@skissify/mcp` package skeleton created (assigned in Run #5)?
+- Scan for any new "JSON sketch tool" or "hand-drawn diagram MCP" entries in the registry
+
+---

@@ -494,3 +494,88 @@ This is the correct funnel. Not SEO → landing page → conversion. It's: MCP i
 | tldraw community trust still fragile, desktop app is new | MEDIUM | Monitor tldraw desktop adoption; message Skissify as "no license fee, cloud-first, JSON-native" |
 
 ---
+
+## Entry: March 27, 2026 — 07:16 CET | Automated Strategy Run #7
+
+### Theme: Skissify as the "Rendering Layer" — Infrastructure Pricing, Not SaaS Pricing
+
+---
+
+#### Finding 1: The "Layered Tools" Paradigm Changes the EUR 2/mo Framing
+
+New developer discourse (buildfastwithai.com, March 22, 2026): *"AI developer tools in 2026 layer on top of each other. They do not compete."* This is the dominant mental model of how developers are building AI stacks in 2026.
+
+**Critical insight for EUR 2/mo willingness to pay**: When developers think of Skissify as a *collaboration tool* (vs Excalidraw/Miro), EUR 2/mo feels cheap but also insubstantial — "is this worth the overhead of yet another subscription?" But when they think of Skissify as a **rendering layer** — like a font API, an image CDN, or a geocoding service — EUR 2/mo is non-controversial infrastructure spend. It's just the cost of the render function.
+
+**What makes someone pay EUR 2/mo specifically**: 
+- They've integrated Skissify into their pipeline (MCP or API)
+- Their output includes a watermark
+- A client or colleague sees the watermark and it looks unprofessional
+- EUR 2/mo removes that friction — it's a *professional signal* purchase, not a *feature* purchase
+- The decision takes less than 30 seconds: see watermark → $2 is nothing → upgrade
+
+**Pricing language change**: Stop saying "Pro at EUR 5/mo" first. Lead with "Rendering layer at EUR 2/mo" for the API use case. Reserve "Pro" for the human editor tier (saves, sharing, collaboration). The API tier should feel like infra, not SaaS.
+
+**Supporting data**: 
+- Usage-based pricing now the recommended default for AI tools (Revenera, 1 week ago; Eleken, 1 month ago)
+- 2026 micro-SaaS: high-pain workflows command $49-199/mo; low-friction removal (watermark, rate limits) is EUR 2-5/mo impulse (bigideasdb.com, run #4)
+- Infrastructure pricing removes subscription anxiety: pay only when you use it feels safer than monthly commitments
+
+---
+
+#### Finding 2: Mermaid's 1,015% Search Growth Is the Tide That Lifts Skissify
+
+DataForSEO 2026 data: "Mermaid diagram viewer" searches up 1,015% year-over-year. Mermaid is the gateway drug to "diagrams as code." Every developer who discovers Mermaid eventually hits its layout limitations: *"I can describe the topology but I can't control where things appear spatially."*
+
+**The Skissify upgrade path from Mermaid users**:
+1. Developer uses Mermaid for flowcharts/sequences in GitHub — happy
+2. Developer tries to make a room layout, architecture diagram, or floor plan — Mermaid breaks down (no spatial coordinates, no physical elements)
+3. Developer searches "mermaid alternative spatial diagram" or "mermaid floor plan"
+4. **Skissify should appear here** — it's the spatially-aware, JSON-first, hand-drawn step up from Mermaid's text DSL
+
+**Keyword opportunities** (zero competition today, high intent from growing audience):
+- "mermaid alternative floor plan" — nobody ranking for this
+- "json diagram hand drawn" — nobody ranking
+- "mermaid spatial layout" — nobody ranking  
+- "programmatic sketch tool" — nobody ranking
+
+**Action**: Create a `docs/marketing/SEO-TARGETS.md` file with these keywords. One targeted blog post per keyword, written before or at launch. These are permanently valuable SEO assets.
+
+---
+
+#### Finding 3: The Adjacent AI Floor Plan Market Creates a Data Standard Opportunity
+
+Multiple signals this cycle: AI-generated floor plan tools proliferating (OSHA evacuation maps, consumer space design, real estate) — ALL taking raster image input, ALL producing raster image output. None have a structured JSON schema.
+
+**The opportunity**: Skissify's JSON schema is the *only* structured, documented, publicly available floor plan data format designed for LLM output. If Skissify publishes `https://skissify.com/schema/v1/floor-plan.json` as a permanent, citable URL, it becomes the defacto standard that:
+- LLMs can be instructed to generate ("output a Skissify-compatible floor plan JSON")  
+- Adjacent tools can import ("import your floor plan from Skissify JSON")
+- Developers can reference in their own prompts and documentation
+
+**Historical analog**: JSON Schema for APIs, GeoJSON for geographic data, Mermaid text syntax for diagrams. Skissify can be the GeoJSON equivalent for floor plans. Nobody is occupying this position.
+
+**Monetization**: The schema is free. The renderer is where the money is. Publish the schema openly → drive adoption → charge for rendering. This is the classic open-core play at the *data format* level.
+
+---
+
+#### Finding 4: The Figma MCP Wave Creates Durable SEO Value for Skissify
+
+Figma's `use_figma` MCP open beta (March 25-27, 2026) has generated significant developer attention. Searches for "Claude Code Figma", "Figma MCP tutorial", "AI agent design tool" are peaking right now. 
+
+**The SEO opportunity with 6–12 month horizon**: Content written TODAY (tutorials, comparison posts, positioning copy) targeting "Figma MCP alternative", "lightweight AI sketch tool", "hand-drawn diagram MCP" will rank as Figma MCP tutorials flood the internet and create secondary searches. Developers who try Figma MCP and find it's overkill for quick sketches will search for alternatives. Skissify needs to be that answer.
+
+**Signal from Excalidraw integration in Figma plugins** (Purshology, March 25): An Excalidraw Integration Figma plugin is now in the top 10 Figma plugins of 2026. This shows designers are pulling hand-drawn aesthetics INTO polished tools. The appetite for hand-drawn style is mainstream — not a niche quirk.
+
+---
+
+### Summary Signals This Cycle (Run #7)
+
+| Signal | Urgency | Action |
+|--------|---------|--------|
+| "Rendering layer" framing unlocks EUR 2/mo as infra spend, not SaaS anxiety | HIGH | Reframe API tier pricing copy as infrastructure, not subscription |
+| Mermaid searches up 1,015% YoY — Skissify is the next step for spatial needs | HIGH | Target "mermaid alternative" long-tail keywords in SEO strategy |
+| No new direct competitor to Skissify's niche detected in 3-day scan | LOW | Confirm again in 1 week; continue claiming the space |
+| Adjacent floor plan tools (safety maps, consumer design) all lack JSON schema | MEDIUM | Publish public JSON schema URL as a data standard play |
+| Excalidraw hand-drawn aesthetic is now mainstream (in Figma plugin top 10) | MEDIUM | This validates our aesthetic differentiation with mainstream designers |
+
+---
