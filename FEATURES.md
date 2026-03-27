@@ -90,6 +90,9 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Local-storage autosave** — sketch is automatically saved to `localStorage` after 1.5s of inactivity (and flushed immediately on tab close). On fresh editor open (no URL params), the last autosaved sketch is restored and a brief "Restored from autosave" toast is shown. A subtle "Saved ✓" indicator appears in the toolbar. Users no longer lose work on accidental refresh or tab close.
+
+
 - [x] **PNG Download button** — "PNG" button in toolbar (Download icon, sm+ visible); `Ctrl+Shift+S` keyboard shortcut; smart filename: `skissify-<slug>.png` when saved, timestamp-based otherwise; no print dialog — direct browser download. Keyboard shortcuts panel updated.
 - [x] **Build stability fix (stale cache)** — added `prebuild` script that clears `.next` before every build to prevent `TypeError: The "data" argument must be of type string or Buffer` crash caused by stale build artifacts on Node.js v22. Also added explicit `build:clean` script.
 
@@ -110,7 +113,7 @@
 
 ### Persistence / Save & Load
 - Save sketches to database (Postgres/Supabase)
-- Local storage autosave
+- [x] Local storage autosave
 - Named sketch library per user
 - Import/export JSON files
 - Version history
