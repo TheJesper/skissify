@@ -33,7 +33,13 @@ function getElementBounds(el: SketchElement): { x: number; y: number; w: number;
 
 /** Clamp zoom to [min, max] */
 const MIN_ZOOM = 0.1;
-const MAX_ZOOM = 8;
+const MAX_ZOOM = 5;
+
+/** Clamp zoom value, guarding against NaN/Infinity */
+function safeZoom(value: number): number {
+  if (!Number.isFinite(value) || value <= 0) return 1;
+  return Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, value));
+}
 
 // --- Resize handle types ---
 type HandleId = "nw" | "n" | "ne" | "w" | "e" | "sw" | "s" | "se" | "p1" | "p2" | "radius";
@@ -222,11 +228,11 @@ export default function Canvas({
     const cw = container.clientWidth;
     const ch = container.clientHeight;
     const padding = 48;
-    const fitZoom = Math.min(
+    const fitZoom = safeZoom(Math.min(
       (cw - padding * 2) / canvasW,
       (ch - padding * 2) / canvasH,
       1 // Never zoom in beyond 100% on reset
-    );
+    ));
     setZoom(fitZoom);
     setPan({ x: 0, y: 0 });
     onZoomChange?.(fitZoom);
@@ -256,7 +262,12 @@ export default function Canvas({
     canvas.height = canvasH;
 
     ctx.clearRect(0, 0, canvasW, canvasH);
-    renderSketch(ctx, sketch, canvasW, canvasH);
+    try {
+      renderSketch(ctx, sketch, canvasW, canvasH);
+    } catch (err) {
+      console.error("Render error:", err);
+      return;
+    }
 
     // Draw selection highlights
     if (selectedElements.size > 0) {
@@ -416,8 +427,9 @@ export default function Canvas({
       const factor = e.deltaY > 0 ? 0.9 : 1.1;
 
       setZoom((prevZoom) => {
-        const newZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, prevZoom * factor));
-        const scale = newZoom / prevZoom;
+        const newZoom = safeZoom(prevZoom * factor);
+        const scale = prevZoom > 0 ? newZoom / prevZoom : 1;
+        if (!Number.isFinite(scale)) return newZoom;
         setPan((p) => ({
           x: mx - scale * (mx - p.x),
           y: my - scale * (my - p.y),
@@ -699,9 +711,9 @@ export default function Canvas({
       };
 
       if (lastTouchDist.current !== null && lastTouchCenter.current !== null) {
-        const scale = dist / lastTouchDist.current;
+        const scale = lastTouchDist.current > 0 ? dist / lastTouchDist.current : 1;
         setZoom((z) => {
-          const nz = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z * scale));
+          const nz = safeZoom(z * scale);
           onZoomChange?.(nz);
           return nz;
         });
@@ -810,7 +822,7 @@ export default function Canvas({
     >
       <div
         style={{
-          transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+          transform: `translate(${Number.isFinite(pan.x) ? pan.x : 0}px, ${Number.isFinite(pan.y) ? pan.y : 0}px) scale(${safeZoom(zoom)})`,
           transformOrigin: "center center",
           transition: "transform 0.05s ease-out",
         }}
@@ -872,7 +884,7 @@ export default function Canvas({
         <button
           onClick={() => {
             setZoom((z) => {
-              const nz = Math.max(MIN_ZOOM, z / 1.25);
+              const nz = safeZoom(z / 1.25);
               onZoomChange?.(nz);
               return nz;
             });
@@ -894,7 +906,7 @@ export default function Canvas({
         <button
           onClick={() => {
             setZoom((z) => {
-              const nz = Math.min(MAX_ZOOM, z * 1.25);
+              const nz = safeZoom(z * 1.25);
               onZoomChange?.(nz);
               return nz;
             });

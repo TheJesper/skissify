@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { useSketch } from "@/hooks/useSketch";
@@ -14,6 +14,93 @@ import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
 import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
+
+/** Swipe-down-to-close bottom sheet for mobile controls */
+function MobileBottomSheet({
+  open,
+  onClose,
+  children,
+}: {
+  open: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
+  const sheetRef = useRef<HTMLDivElement>(null);
+  const dragStartY = useRef<number | null>(null);
+  const [dragOffset, setDragOffset] = useState(0);
+  const [closing, setClosing] = useState(false);
+
+  // Reset state when opening
+  useEffect(() => {
+    if (open) {
+      setDragOffset(0);
+      setClosing(false);
+    }
+  }, [open]);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    // Only start drag from the handle area (first 40px)
+    const rect = sheetRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const touchY = e.touches[0].clientY;
+    if (touchY - rect.top < 40) {
+      dragStartY.current = touchY;
+    }
+  }, []);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (dragStartY.current === null) return;
+    const dy = e.touches[0].clientY - dragStartY.current;
+    // Only allow downward drag
+    setDragOffset(Math.max(0, dy));
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    if (dragStartY.current === null) return;
+    dragStartY.current = null;
+    if (dragOffset > 100) {
+      // Threshold reached -- close
+      setClosing(true);
+      setTimeout(onClose, 250);
+    } else {
+      // Snap back
+      setDragOffset(0);
+    }
+  }, [dragOffset, onClose]);
+
+  if (!open) return null;
+
+  return (
+    <>
+      {/* Backdrop */}
+      <div
+        className="md:hidden fixed inset-0 z-30 bg-black/30 transition-opacity"
+        style={{ opacity: closing ? 0 : 1 }}
+        onClick={onClose}
+      />
+      {/* Sheet */}
+      <div
+        ref={sheetRef}
+        className="md:hidden fixed inset-x-0 bottom-0 z-40 rounded-t-2xl max-h-[70vh] overflow-y-auto mobile-bottom-sheet"
+        style={{
+          backgroundColor: "#eee8d5",
+          borderTop: "1px solid #93a1a1",
+          transform: `translateY(${closing ? 100 : dragOffset}${closing ? "%" : "px"})`,
+          transition: dragStartY.current !== null ? "none" : "transform 0.25s ease-out",
+        }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        {/* Draggable handle */}
+        <div className="flex justify-center py-3 cursor-grab active:cursor-grabbing touch-none">
+          <div className="rounded-full" style={{ width: 40, height: 4, backgroundColor: "#93a1a1" }} />
+        </div>
+        {children}
+      </div>
+    </>
+  );
+}
 
 function EditorContent() {
   const searchParams = useSearchParams();
@@ -394,33 +481,33 @@ function EditorInner({
         {mobileControlsOpen ? "\u00D7" : "\u2699"}
       </button>
 
-      {/* Mobile bottom sheet */}
-      {mobileControlsOpen && (
-        <div className="md:hidden fixed inset-x-0 bottom-0 z-40 rounded-t-2xl max-h-[70vh] overflow-y-auto mobile-bottom-sheet" style={{ backgroundColor: "#eee8d5", borderTop: "1px solid #93a1a1" }}>
-          <div className="w-12 h-1 rounded-full mx-auto mt-3 mb-2" style={{ backgroundColor: "#93a1a1" }} />
-          <PresetTabs active={activePreset} onSelect={loadPreset} />
-          <ControlPanel
-            paper={sketch.paper}
-            tool={sketch.tool}
-            amplitude={sketch.amplitude}
-            waves={sketch.waves}
-            humanness={sketch.humanness}
-            inkColor={sketch.inkColor}
-            width={sketch.width}
-            height={sketch.height}
-            selectedCount={selectedElements.size}
-            onPaper={setPaper}
-            onTool={setTool}
-            onAmplitude={setAmplitude}
-            onWaves={setWaves}
-            onHumanness={setHumanness}
-            onInkColor={setInkColor}
-            onResize={handleResize}
-            onAddElement={addElement}
-            onDeleteSelected={deleteSelected}
-          />
-        </div>
-      )}
+      {/* Mobile bottom sheet with swipe-to-close */}
+      <MobileBottomSheet
+        open={mobileControlsOpen}
+        onClose={() => setMobileControlsOpen(false)}
+      >
+        <PresetTabs active={activePreset} onSelect={loadPreset} />
+        <ControlPanel
+          paper={sketch.paper}
+          tool={sketch.tool}
+          amplitude={sketch.amplitude}
+          waves={sketch.waves}
+          humanness={sketch.humanness}
+          inkColor={sketch.inkColor}
+          width={sketch.width}
+          height={sketch.height}
+          selectedCount={selectedElements.size}
+          onPaper={setPaper}
+          onTool={setTool}
+          onAmplitude={setAmplitude}
+          onWaves={setWaves}
+          onHumanness={setHumanness}
+          onInkColor={setInkColor}
+          onResize={handleResize}
+          onAddElement={addElement}
+          onDeleteSelected={deleteSelected}
+        />
+      </MobileBottomSheet>
     </div>
   );
 }

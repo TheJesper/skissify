@@ -50,6 +50,8 @@ export default function Toolbar({
   const [showProModal, setShowProModal] = useState(false);
   const [showShortcuts, setShowShortcuts] = useState(false);
   const [showNewConfirm, setShowNewConfirm] = useState(false);
+  const [showOverflowMenu, setShowOverflowMenu] = useState(false);
+  const overflowRef = useRef<HTMLDivElement>(null);
   const importInputRef = useRef<HTMLInputElement>(null);
 
   const showToast = useCallback((msg: string) => {
@@ -134,6 +136,18 @@ export default function Toolbar({
     a.click();
     URL.revokeObjectURL(url);
   }, [sketch, sketchSlug]);
+
+  // Close overflow menu on outside click
+  useEffect(() => {
+    if (!showOverflowMenu) return;
+    const handler = (e: MouseEvent) => {
+      if (overflowRef.current && !overflowRef.current.contains(e.target as Node)) {
+        setShowOverflowMenu(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [showOverflowMenu]);
 
   // Global keyboard shortcut: ? opens shortcuts panel
   useEffect(() => {
@@ -258,7 +272,7 @@ export default function Toolbar({
 
       {/* Right actions */}
       <div className="flex items-center gap-1.5 md:gap-2">
-        {/* New Sketch */}
+        {/* New Sketch -- desktop only */}
         {onNewSketch && (
           <button
             onClick={() => setShowNewConfirm(true)}
@@ -275,7 +289,7 @@ export default function Toolbar({
           </button>
         )}
 
-        {/* Share Link (URL-encoded) -- always available */}
+        {/* Share Link -- always visible */}
         {sketch && (
           <button
             onClick={handleShareLink}
@@ -287,7 +301,7 @@ export default function Toolbar({
           </button>
         )}
 
-        {/* Make Private */}
+        {/* Desktop-only buttons: Make Private, PNG, SVG, JSON, Import, Print */}
         <button
           onClick={handleMakePrivate}
           className="hidden sm:block px-3 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded text-xs font-medium transition-colors"
@@ -324,7 +338,6 @@ export default function Toolbar({
             SVG
           </button>
         )}
-        {/* JSON export */}
         {sketch && (
           <button
             onClick={handleExportJSON}
@@ -339,7 +352,6 @@ export default function Toolbar({
             JSON
           </button>
         )}
-        {/* JSON import */}
         {onImportJSON && (
           <>
             <input
@@ -370,6 +382,58 @@ export default function Toolbar({
         >
           Print
         </button>
+
+        {/* Mobile overflow menu -- visible only on small screens */}
+        <div ref={overflowRef} className="relative sm:hidden">
+          <button
+            onClick={() => setShowOverflowMenu((v) => !v)}
+            className="px-2.5 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded text-xs font-bold transition-colors"
+            title="More actions"
+            aria-label="More actions"
+          >
+            ...
+          </button>
+          {showOverflowMenu && (
+            <div
+              className="absolute right-0 top-full mt-1 w-44 rounded-lg shadow-lg border py-1 z-50"
+              style={{ backgroundColor: "#fdf6e3", borderColor: "#93a1a1" }}
+            >
+              {onDownload && (
+                <button onClick={() => { onDownload(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                  Download PNG
+                </button>
+              )}
+              {onDownloadSVG && (
+                <button onClick={() => { onDownloadSVG(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                  Download SVG
+                </button>
+              )}
+              {sketch && (
+                <button onClick={() => { handleExportJSON(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                  Export JSON
+                </button>
+              )}
+              <button onClick={() => { onPrint(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                Print
+              </button>
+              <button onClick={() => { handleMakePrivate(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                Make Private
+              </button>
+              {onImportJSON && (
+                <button onClick={() => { handleImportClick(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                  Import JSON
+                </button>
+              )}
+              {onNewSketch && (
+                <button onClick={() => { setShowNewConfirm(true); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                  New Sketch
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Essential buttons -- always visible */}
         {onSave && (
           <button
             onClick={handleSave}
@@ -399,7 +463,7 @@ export default function Toolbar({
         </button>
         <button
           onClick={() => setShowShortcuts(true)}
-          className="px-2.5 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#657b83] hover:text-[#073642] rounded text-xs font-medium transition-colors"
+          className="hidden sm:block px-2.5 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#657b83] hover:text-[#073642] rounded text-xs font-medium transition-colors"
           title="Keyboard shortcuts (?)"
         >
           ?
