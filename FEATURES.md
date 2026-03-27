@@ -90,6 +90,9 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **PNG Download button** — "PNG" button in toolbar (Download icon, sm+ visible); `Ctrl+Shift+S` keyboard shortcut; smart filename: `skissify-<slug>.png` when saved, timestamp-based otherwise; no print dialog — direct browser download. Keyboard shortcuts panel updated.
+- [x] **Build stability fix (stale cache)** — added `prebuild` script that clears `.next` before every build to prevent `TypeError: The "data" argument must be of type string or Buffer` crash caused by stale build artifacts on Node.js v22. Also added explicit `build:clean` script.
+
 - [x] **Drag-to-move selected elements** - all 14 element types, zoom-corrected scaling, 4px dead-zone, full undo/redo integration
 - [x] **Dynamic cursor feedback** - grab on hover, grabbing during drag, crosshair elsewhere
 - [x] **Build stability fix** - `next.config.ts` webpack `hashFunction='md4'` resolves WasmHash crash on Node.js v22 (`TypeError: Cannot read properties of undefined (reading 'length')`)
@@ -115,7 +118,8 @@
 ### Sharing
 - Public share links (read-only)
 - Embed code for websites
-- PNG/SVG export download button
+- [x] PNG download button (Ctrl+Shift+S, smart filename)
+- SVG export download button
 - Copy JSON to clipboard
 
 ### Payments (Stripe)
