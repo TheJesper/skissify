@@ -2,27 +2,37 @@ import {
   SketchData,
   SketchElement,
   PAPER_COLORS,
-  TOOL_STYLES,
+  GRID_COLORS,
+  BLUEPRINT_COLOR_MAP,
   PaperType,
 } from "./types";
 import {
-  wobbleLine,
-  wobbleCircle,
-  wobbleArc,
-  drawSmoothCurve,
+  wobble,
   WobbleOptions,
-  Point,
+  Pt,
+  mkRng,
+  doStroke,
 } from "./wobble";
+import type { Rng } from "./wobble";
 
-function getWobbleOpts(sketch: SketchData, el: SketchElement): WobbleOptions {
-  return {
-    amplitude: sketch.amplitude,
-    waves: sketch.waves,
-    humanness: sketch.humanness,
-    seed: hashElement(el) + (sketch.sessionSeed || 0),
-  };
+// ── Helpers ──────────────────────────────────────────────────────
+
+/** Resolve element color: textColor > color > inkColor, with blueprint mapping */
+function resolveColor(
+  el: SketchElement,
+  sketch: SketchData,
+  isText: boolean = false
+): string {
+  const raw = (isText && "textColor" in el && el.textColor)
+    ? el.textColor
+    : el.color || sketch.inkColor || "#111";
+  if (sketch.paper === "blueprint") {
+    return BLUEPRINT_COLOR_MAP[raw] || "#d8eaff";
+  }
+  return raw;
 }
 
+/** DJB2 hash for deterministic seeding per element */
 function hashElement(el: SketchElement): number {
   const str = JSON.stringify(el);
   let h = 0;
@@ -32,95 +42,713 @@ function hashElement(el: SketchElement): number {
   return Math.abs(h);
 }
 
-function setupStroke(
-  ctx: CanvasRenderingContext2D,
-  sketch: SketchData,
-  el: SketchElement
-): void {
-  const tool = TOOL_STYLES[sketch.tool];
-  ctx.strokeStyle = el.color || sketch.inkColor || "#111";
-  ctx.lineWidth = el.strokeWidth || tool.lineWidth;
-  ctx.globalAlpha = tool.opacity;
-  ctx.lineCap = "round";
-  ctx.lineJoin = "round";
+function getWobbleOpts(sketch: SketchData, el: SketchElement, idx: number): WobbleOptions {
+  return {
+    amplitude: sketch.amplitude,
+    waves: sketch.waves,
+    humanness: sketch.humanness,
+    seed: idx * 997 + 42 + (sketch.sessionSeed || 0),
+  };
 }
 
-function drawWobbleLine(
+/** Helper line: generates wobble points and renders with per-tool stroke */
+function HL(
   ctx: CanvasRenderingContext2D,
-  x1: number,
-  y1: number,
-  x2: number,
-  y2: number,
-  opts: WobbleOptions
+  x1: number, y1: number, x2: number, y2: number,
+  opts: WobbleOptions,
+  color: string,
+  tool: string,
+  paper: PaperType,
+  rng: Rng,
+  humanness: number
 ): void {
-  const points = wobbleLine(x1, y1, x2, y2, opts);
-  drawSmoothCurve(ctx, points);
+  const lineRng = mkRng(opts.seed ?? Math.floor(x1 * 100 + y1 * 37 + x2 * 13 + y2 * 7));
+  const pts = wobble(x1, y1, x2, y2, opts.amplitude, opts.waves, lineRng, opts.humanness);
+  doStroke(ctx, pts, color, tool as any, paper, rng, humanness);
 }
 
-function drawArrowHead(
+// ── Paper & Grid ─────────────────────────────────────────────────
+
+function drawPaperBackground(
   ctx: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  angle: number,
-  size: number
+  w: number, h: number,
+  paper: PaperType
 ): void {
-  ctx.beginPath();
-  ctx.moveTo(
-    x - size * Math.cos(angle - Math.PI / 6),
-    y - size * Math.sin(angle - Math.PI / 6)
-  );
-  ctx.lineTo(x, y);
-  ctx.lineTo(
-    x - size * Math.cos(angle + Math.PI / 6),
-    y - size * Math.sin(angle + Math.PI / 6)
-  );
-  ctx.stroke();
+  if (paper === "blueprint") {
+    // Linear gradient for blueprint
+    const grad = ctx.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, "#1a3a6b");
+    grad.addColorStop(0.5, "#1e4278");
+    grad.addColorStop(1, "#16305e");
+    ctx.fillStyle = grad;
+  } else {
+    ctx.fillStyle = PAPER_COLORS[paper] || PAPER_COLORS.cream;
+  }
+  ctx.fillRect(0, 0, w, h);
+}
+
+function drawPaperTexture(
+  ctx: CanvasRenderingContext2D,
+  w: number, h: number,
+  paper: PaperType,
+  rng: () => number
+): void {
+  if (paper === "blueprint") {
+    // White speckles for blueprint
+    ctx.fillStyle = "rgba(255,255,255,0.03)";
+    for (let i = 0; i < 300; i++) {
+      const sx = rng() * w;
+      const sy = rng() * h;
+      const sr = rng() * 1.5;
+      ctx.beginPath();
+      ctx.arc(sx, sy, sr, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  } else {
+    // Paper noise particles
+    for (let i = 0; i < 600; i++) {
+      const sx = rng() * w;
+      const sy = rng() * h;
+      const sw = rng() * 2;
+      const sh = rng() * 2;
+      const isLight = rng() > 0.5;
+      ctx.fillStyle = isLight
+        ? `rgba(255,255,255,${rng() * 0.05})`
+        : `rgba(0,0,0,${rng() * 0.05})`;
+      ctx.fillRect(sx, sy, sw, sh);
+    }
+  }
 }
 
 function drawGrid(
   ctx: CanvasRenderingContext2D,
-  w: number,
-  h: number,
+  w: number, h: number,
   paper: PaperType
 ): void {
-  if (paper === "yellow") {
-    ctx.strokeStyle = "#e8e4c8";
-    ctx.lineWidth = 0.5;
-    ctx.globalAlpha = 0.4;
-    const step = 25;
-    for (let x = step; x < w; x += step) {
-      ctx.beginPath();
-      ctx.moveTo(x, 0);
-      ctx.lineTo(x, h);
-      ctx.stroke();
-    }
-    for (let y = step; y < h; y += step) {
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(w, y);
-      ctx.stroke();
-    }
-    ctx.globalAlpha = 1;
-  } else if (paper === "blueprint") {
-    ctx.strokeStyle = "#2a5a8c";
-    ctx.lineWidth = 0.3;
-    ctx.globalAlpha = 0.5;
-    const step = 20;
-    for (let x = step; x < w; x += step) {
-      ctx.beginPath();
-      ctx.moveTo(x, 0);
-      ctx.lineTo(x, h);
-      ctx.stroke();
-    }
-    for (let y = step; y < h; y += step) {
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(w, y);
-      ctx.stroke();
-    }
-    ctx.globalAlpha = 1;
+  const gridColor = GRID_COLORS[paper];
+
+  // Minor grid: 20px, thin
+  ctx.strokeStyle = gridColor;
+  ctx.lineWidth = 0.35;
+  ctx.globalAlpha = paper === "blueprint" ? 1 : 0.35;
+  for (let x = 20; x < w; x += 20) {
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, h);
+    ctx.stroke();
   }
+  for (let y = 20; y < h; y += 20) {
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(w, y);
+    ctx.stroke();
+  }
+
+  // Major grid: 100px, slightly thicker
+  ctx.lineWidth = 0.6;
+  if (paper === "blueprint") {
+    ctx.strokeStyle = "rgba(180,210,255,.18)";
+    ctx.globalAlpha = 1;
+  } else {
+    ctx.globalAlpha = 0.15;
+  }
+  for (let x = 100; x < w; x += 100) {
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, h);
+    ctx.stroke();
+  }
+  for (let y = 100; y < h; y += 100) {
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(w, y);
+    ctx.stroke();
+  }
+
+  ctx.globalAlpha = 1;
 }
+
+// ── Blueprint Overlay ────────────────────────────────────────────
+
+function drawBlueprintOverlay(
+  ctx: CanvasRenderingContext2D,
+  W: number, H: number,
+  title: string = "PLANRITNING"
+): void {
+  const wc = "rgba(200,225,255,.75)";
+  const wl = "rgba(200,225,255,.5)";
+
+  ctx.save();
+
+  // Double border
+  ctx.strokeStyle = wc;
+  ctx.lineWidth = 0.9;
+  ctx.strokeRect(10, 10, W - 20, H - 20);
+  ctx.lineWidth = 0.4;
+  ctx.strokeRect(14, 14, W - 28, H - 28);
+
+  // Center title
+  ctx.fillStyle = wc;
+  ctx.font = "bold 11px Georgia, serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "top";
+  ctx.fillText(title, W / 2, 16);
+
+  // Decorative underline
+  ctx.strokeStyle = wl;
+  ctx.lineWidth = 0.4;
+  const titleW = ctx.measureText(title).width;
+  ctx.beginPath();
+  ctx.moveTo(W / 2 - titleW / 2 - 70, 30);
+  ctx.lineTo(W / 2 + titleW / 2 + 70, 30);
+  ctx.stroke();
+
+  // Title block (bottom-right)
+  const tw = 180, th = 72;
+  const tx = W - 10 - tw, ty = H - 10 - th;
+
+  ctx.strokeStyle = wc;
+  ctx.lineWidth = 0.6;
+  ctx.strokeRect(tx, ty, tw, th);
+
+  // Horizontal dividers
+  ctx.beginPath();
+  ctx.moveTo(tx, ty + 22);
+  ctx.lineTo(tx + tw, ty + 22);
+  ctx.moveTo(tx, ty + 44);
+  ctx.lineTo(tx + tw, ty + 44);
+  ctx.stroke();
+
+  // Vertical divider in lower rows
+  ctx.beginPath();
+  ctx.moveTo(tx + 90, ty + 22);
+  ctx.lineTo(tx + 90, ty + th);
+  ctx.stroke();
+
+  // Title block text
+  ctx.fillStyle = wc;
+  ctx.textAlign = "left";
+  ctx.font = "bold 8px Georgia, serif";
+  ctx.fillText(title, tx + 6, ty + 6);
+  ctx.font = "7px Georgia, serif";
+  ctx.fillText("ÄGARE: Villa Ekvägen 12", tx + 6, ty + 28);
+  ctx.fillText("DATUM: 15 Januari 1902", tx + 6, ty + 50);
+  ctx.fillText("SKALA: 1:100", tx + 96, ty + 28);
+  ctx.fillText("ARK.NR: A-001", tx + 96, ty + 50);
+
+  // North arrow
+  const nax = tx - 22, nay = H - 44;
+  ctx.strokeStyle = wc;
+  ctx.lineWidth = 0.5;
+  ctx.beginPath();
+  ctx.moveTo(nax, nay - 12);
+  ctx.lineTo(nax, nay + 12);
+  ctx.moveTo(nax - 4, nay);
+  ctx.lineTo(nax + 4, nay);
+  ctx.stroke();
+  ctx.fillStyle = wc;
+  ctx.font = "bold 7px Georgia, serif";
+  ctx.textAlign = "center";
+  ctx.fillText("N", nax, nay - 15);
+
+  // Scale bar
+  ctx.strokeStyle = wl;
+  ctx.lineWidth = 0.5;
+  const sbx = 24, sby = H - 18, sbw = 80, sbh = 4;
+  ctx.strokeRect(sbx, sby, sbw, sbh);
+  for (let i = 0; i < 4; i++) {
+    if (i % 2 === 0) {
+      ctx.fillStyle = wl;
+      ctx.fillRect(sbx + i * (sbw / 4), sby, sbw / 4, sbh);
+    }
+  }
+  ctx.fillStyle = wl;
+  ctx.font = "6px Georgia, serif";
+  ctx.textAlign = "left";
+  ctx.fillText("0  5  10  15m", sbx, sby - 3);
+
+  ctx.restore();
+}
+
+// ── Element Centering ────────────────────────────────────────────
+
+function computeBoundingBox(
+  elements: SketchElement[]
+): { minX: number; minY: number; maxX: number; maxY: number } | null {
+  if (!elements || elements.length === 0) return null;
+
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+
+  for (const el of elements) {
+    if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
+      const x1 = el.x1 as number, y1 = el.y1 as number;
+      const x2 = el.x2 as number, y2 = el.y2 as number;
+      minX = Math.min(minX, x1, x2);
+      minY = Math.min(minY, y1, y2);
+      maxX = Math.max(maxX, x1, x2);
+      maxY = Math.max(maxY, y1, y2);
+    } else if ("x" in el && "w" in el && "h" in el) {
+      const x = el.x as number, y = (el as { y: number }).y;
+      const w = el.w as number, h = el.h as number;
+      minX = Math.min(minX, x);
+      minY = Math.min(minY, y);
+      maxX = Math.max(maxX, x + w);
+      maxY = Math.max(maxY, y + h);
+    } else if ("cx" in el && "r" in el) {
+      const cx = el.cx as number, cy = (el as { cy: number }).cy;
+      const r = el.r as number;
+      minX = Math.min(minX, cx - r);
+      minY = Math.min(minY, cy - r);
+      maxX = Math.max(maxX, cx + r);
+      maxY = Math.max(maxY, cy + r);
+    } else if ("x" in el && "y" in el) {
+      const x = el.x as number, y = (el as { y: number }).y;
+      minX = Math.min(minX, x);
+      minY = Math.min(minY, y - 20);
+      maxX = Math.max(maxX, x + 80);
+      maxY = Math.max(maxY, y);
+    }
+  }
+
+  if (!isFinite(minX)) return null;
+  return { minX, minY, maxX, maxY };
+}
+
+/** Centers and scales elements to fit within paper, capped at scale=1 */
+function centerElements(
+  ctx: CanvasRenderingContext2D,
+  elements: SketchElement[],
+  w: number, h: number,
+  pad: number = 32
+): void {
+  const bbox = computeBoundingBox(elements);
+  if (!bbox) return;
+
+  const contentW = bbox.maxX - bbox.minX;
+  const contentH = bbox.maxY - bbox.minY;
+  if (contentW <= 0 || contentH <= 0) return;
+
+  const availW = w - pad * 2;
+  const availH = h - pad * 2;
+  const scale = Math.min(1, availW / contentW, availH / contentH);
+
+  const cx = (bbox.minX + bbox.maxX) / 2;
+  const cy = (bbox.minY + bbox.maxY) / 2;
+  const tx = w / 2 - cx * scale;
+  const ty = h / 2 - cy * scale;
+
+  ctx.translate(tx, ty);
+  if (scale < 1) ctx.scale(scale, scale);
+}
+
+// ── Element Center for Rotation ──────────────────────────────────
+
+function getElementCenter(el: SketchElement): { x: number; y: number } {
+  if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
+    return { x: ((el.x1 as number) + (el.x2 as number)) / 2, y: ((el.y1 as number) + (el.y2 as number)) / 2 };
+  }
+  if ("cx" in el && "cy" in el) {
+    return { x: el.cx as number, y: el.cy as number };
+  }
+  if ("x" in el && "y" in el && "w" in el && "h" in el) {
+    return { x: (el.x as number) + (el.w as number) / 2, y: (el as { y: number }).y + (el.h as number) / 2 };
+  }
+  if ("x" in el && "y" in el) {
+    return { x: el.x as number, y: (el as { y: number }).y };
+  }
+  return { x: 0, y: 0 };
+}
+
+// ── Render Element ───────────────────────────────────────────────
+
+function renderElement(
+  ctx: CanvasRenderingContext2D,
+  el: SketchElement,
+  idx: number,
+  sketch: SketchData
+): void {
+  const opts = getWobbleOpts(sketch, el, idx);
+  const rng = mkRng(idx * 997 + 42);
+  const color = resolveColor(el, sketch);
+  const tool = sketch.tool;
+  const paper = sketch.paper;
+  const h = sketch.humanness;
+
+  ctx.save();
+
+  // Apply element rotation if specified
+  if (el.rotation) {
+    const center = getElementCenter(el);
+    ctx.translate(center.x, center.y);
+    ctx.rotate((el.rotation * Math.PI) / 180);
+    ctx.translate(-center.x, -center.y);
+  }
+
+  switch (el.type) {
+    case "line":
+      HL(ctx, el.x1, el.y1, el.x2, el.y2, opts, color, tool, paper, rng, h);
+      break;
+
+    case "rect": {
+      const { x, y, w, h: rh } = el;
+      const a = opts.amplitude;
+      // Corner offsets for hand-drawn feel
+      const co = () => (rng() - 0.5) * a * 0.3;
+      HL(ctx, x + co(), y + co(), x + w + co(), y + co(), { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w + co(), y + co(), x + w + co(), y + rh + co(), { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w + co(), y + rh + co(), x + co(), y + rh + co(), { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x + co(), y + rh + co(), x + co(), y + co(), { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+      // Render label if present
+      if (el.label) {
+        renderElement(ctx, {
+          type: "text",
+          x: x + 5,
+          y: y + rh / 2 + 4,
+          content: el.label,
+          size: 9,
+          color: resolveColor(el, sketch, true),
+        }, idx + 500, sketch);
+      }
+      break;
+    }
+
+    case "circle": {
+      const { cx, cy, r } = el;
+      const n = Math.max(20, Math.floor(r * 1.8));
+      const pts: Pt[] = [];
+      for (let i = 0; i <= n; i++) {
+        const angle = -Math.PI / 2 + (i / n) * Math.PI * 2;
+        const rr = r + (rng() - 0.5) * opts.amplitude * 0.7;
+        pts.push([cx + Math.cos(angle) * rr, cy + Math.sin(angle) * rr]);
+      }
+      doStroke(ctx, pts, color, tool as any, paper, rng, h);
+      break;
+    }
+
+    case "arc": {
+      const acx = el.cx ?? el.x ?? 0;
+      const acy = el.cy ?? el.y ?? 0;
+      const startAngle = (el.startAngle ?? 0) * Math.PI / 180;
+      const endAngle = el.sweep != null
+        ? startAngle + el.sweep * Math.PI / 180
+        : (el.endAngle ?? 90) * Math.PI / 180;
+      const pts: Pt[] = [];
+      for (let i = 0; i <= 15; i++) {
+        const t = i / 15;
+        const angle = startAngle + t * (endAngle - startAngle);
+        pts.push([acx + Math.cos(angle) * el.r, acy + Math.sin(angle) * el.r]);
+      }
+      doStroke(ctx, pts, color, tool as any, paper, rng, h);
+      break;
+    }
+
+    case "arrow": {
+      HL(ctx, el.x1, el.y1, el.x2, el.y2, opts, color, tool, paper, rng, h);
+      // Arrowhead
+      const angle = Math.atan2(el.y2 - el.y1, el.x2 - el.x1);
+      const s = 9, sp = 0.42;
+      HL(ctx, el.x2, el.y2,
+        el.x2 - s * Math.cos(angle - sp), el.y2 - s * Math.sin(angle - sp),
+        { ...opts, seed: opts.seed! + 10 }, color, tool, paper, rng, h);
+      HL(ctx, el.x2, el.y2,
+        el.x2 - s * Math.cos(angle + sp), el.y2 - s * Math.sin(angle + sp),
+        { ...opts, seed: opts.seed! + 11 }, color, tool, paper, rng, h);
+      break;
+    }
+
+    case "text": {
+      const { x, y } = el;
+      const content = el.content || el.text || "";
+      const size = el.size || el.fontSize || 11;
+      const tc = resolveColor(el, sketch, true);
+      if (sketch.paper === "blueprint") {
+        // Override text color on blueprint
+        ctx.fillStyle = "#e0f0ff";
+      } else {
+        ctx.fillStyle = tc;
+      }
+      ctx.font = `${size}px 'Courier New', monospace`;
+      // Character-by-character jitter
+      let cx2 = x;
+      for (let i = 0; i < content.length; i++) {
+        const cw = ctx.measureText(content[i]).width;
+        const jy = (rng() - 0.5) * opts.amplitude * 0.4;
+        const rot = (rng() - 0.5) * opts.amplitude * 0.01;
+        ctx.save();
+        ctx.globalAlpha = 0.88 + rng() * 0.12;
+        ctx.translate(cx2, y + jy);
+        ctx.rotate(rot);
+        ctx.fillText(content[i], 0, 0);
+        ctx.restore();
+        cx2 += cw;
+      }
+      break;
+    }
+
+    case "dashed": {
+      ctx.setLineDash([6, 4]);
+      HL(ctx, el.x1, el.y1, el.x2, el.y2, opts, color, tool, paper, rng, h);
+      ctx.setLineDash([]);
+      break;
+    }
+
+    case "dim": {
+      const { x1, y1, x2, y2, label, offset: dimOffset = 0 } = el;
+      // Perpendicular direction
+      const dist = Math.hypot(x2 - x1, y2 - y1);
+      const px = -(y2 - y1) / dist;
+      const py = (x2 - x1) / dist;
+
+      // If offset, draw extension lines (dashed)
+      let dx1 = x1, dy1 = y1, dx2 = x2, dy2 = y2;
+      if (dimOffset !== 0) {
+        dx1 = x1 + px * dimOffset;
+        dy1 = y1 + py * dimOffset;
+        dx2 = x2 + px * dimOffset;
+        dy2 = y2 + py * dimOffset;
+        ctx.setLineDash([3, 3]);
+        HL(ctx, x1, y1, dx1, dy1, { ...opts, seed: opts.seed! + 20 }, color, tool, paper, rng, h);
+        HL(ctx, x2, y2, dx2, dy2, { ...opts, seed: opts.seed! + 21 }, color, tool, paper, rng, h);
+        ctx.setLineDash([]);
+      }
+
+      // Main dimension line (thinner wobble)
+      HL(ctx, dx1, dy1, dx2, dy2, { ...opts, amplitude: opts.amplitude * 0.3, waves: opts.waves * 0.5 }, color, tool, paper, rng, h);
+
+      // Tick marks at both ends
+      const tn = 5;
+      HL(ctx, dx1 + px * tn, dy1 + py * tn, dx1 - px * tn, dy1 - py * tn,
+        { ...opts, seed: opts.seed! + 30 }, color, tool, paper, rng, h);
+      HL(ctx, dx2 + px * tn, dy2 + py * tn, dx2 - px * tn, dy2 - py * tn,
+        { ...opts, seed: opts.seed! + 31 }, color, tool, paper, rng, h);
+
+      // Label
+      const midX = (dx1 + dx2) / 2;
+      const midY = (dy1 + dy2) / 2;
+      const isVertical = Math.abs(x2 - x1) < Math.abs(y2 - y1);
+      renderElement(ctx, {
+        type: "text",
+        x: isVertical ? midX + px * 8 : midX,
+        y: isVertical ? midY + py * 8 : midY - 8,
+        content: label,
+        size: 9,
+        color,
+      }, idx + 600, sketch);
+      break;
+    }
+
+    case "window": {
+      // Support both legacy (x1/y1/x2/y2) and POC (x/y/w/d/wall) format
+      let wx: number, wy: number, ww: number, wd: number, wall: "h" | "v";
+      if (el.x1 != null && el.y1 != null && el.x2 != null && el.y2 != null) {
+        // Legacy format — infer wall direction and dimensions
+        wx = Math.min(el.x1, el.x2);
+        wy = Math.min(el.y1, el.y2);
+        if (Math.abs(el.x2 - el.x1) >= Math.abs(el.y2 - el.y1)) {
+          wall = "h";
+          ww = Math.abs(el.x2 - el.x1);
+          wd = 8;
+        } else {
+          wall = "v";
+          ww = Math.abs(el.y2 - el.y1);
+          wd = 8;
+          wx = el.x1;
+          wy = Math.min(el.y1, el.y2);
+        }
+      } else {
+        wx = el.x ?? 0;
+        wy = el.y ?? 0;
+        ww = el.w ?? 60;
+        wd = el.d ?? 8;
+        wall = el.wall ?? "h";
+      }
+
+      if (wall === "h") {
+        // Two parallel horizontal lines (top/bottom)
+        HL(ctx, wx, wy, wx + ww, wy, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+        HL(ctx, wx, wy + wd, wx + ww, wy + wd, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+        // End caps
+        HL(ctx, wx, wy, wx, wy + wd, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        HL(ctx, wx + ww, wy, wx + ww, wy + wd, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+        // Inner glass lines
+        HL(ctx, wx, wy + wd * 0.35, wx + ww, wy + wd * 0.35, { ...opts, seed: opts.seed! + 5 }, color, tool, paper, rng, h);
+        HL(ctx, wx, wy + wd * 0.65, wx + ww, wy + wd * 0.65, { ...opts, seed: opts.seed! + 6 }, color, tool, paper, rng, h);
+      } else {
+        // Vertical window
+        HL(ctx, wx, wy, wx, wy + ww, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+        HL(ctx, wx + wd, wy, wx + wd, wy + ww, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+        HL(ctx, wx, wy, wx + wd, wy, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        HL(ctx, wx, wy + ww, wx + wd, wy + ww, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+        HL(ctx, wx + wd * 0.35, wy, wx + wd * 0.35, wy + ww, { ...opts, seed: opts.seed! + 5 }, color, tool, paper, rng, h);
+        HL(ctx, wx + wd * 0.65, wy, wx + wd * 0.65, wy + ww, { ...opts, seed: opts.seed! + 6 }, color, tool, paper, rng, h);
+      }
+      break;
+    }
+
+    case "door-symbol": {
+      const dw = el.w || 36;
+      const swing = el.swing || "right";
+      const dwall = el.wall || "h";
+
+      if (dwall === "h") {
+        if (swing === "right") {
+          // Door leaf + arc
+          HL(ctx, el.x, el.y, el.x + dw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          const arcPts: Pt[] = [];
+          for (let i = 0; i <= 11; i++) {
+            const angle = -Math.PI / 2 + (i / 11) * (Math.PI / 2);
+            arcPts.push([el.x + dw + Math.cos(angle) * dw, el.y + Math.sin(angle) * dw]);
+          }
+          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
+        } else {
+          HL(ctx, el.x, el.y, el.x + dw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          const arcPts: Pt[] = [];
+          for (let i = 0; i <= 11; i++) {
+            const angle = -Math.PI + (i / 11) * (Math.PI / 2);
+            arcPts.push([el.x + Math.cos(angle) * dw, el.y + Math.sin(angle) * dw]);
+          }
+          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
+        }
+      } else {
+        // Vertical wall door
+        if (swing === "right") {
+          HL(ctx, el.x, el.y, el.x, el.y + dw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          const arcPts: Pt[] = [];
+          for (let i = 0; i <= 11; i++) {
+            const angle = 0 + (i / 11) * (Math.PI / 2);
+            arcPts.push([el.x + Math.cos(angle) * dw, el.y + dw + Math.sin(angle) * dw]);
+          }
+          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
+        } else {
+          HL(ctx, el.x, el.y, el.x, el.y + dw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          const arcPts: Pt[] = [];
+          for (let i = 0; i <= 11; i++) {
+            const angle = Math.PI / 2 + (i / 11) * (Math.PI / 2);
+            arcPts.push([el.x + Math.cos(angle) * dw, el.y + Math.sin(angle) * dw]);
+          }
+          doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
+        }
+      }
+      break;
+    }
+
+    case "door-slide": {
+      const dsw = el.w || 60;
+      const dsd = el.d || 8;
+      const dsWall = el.wall || "h";
+      const p1 = dsw * 0.55;
+
+      if (dsWall === "h") {
+        // Track lines
+        HL(ctx, el.x, el.y, el.x + dsw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+        HL(ctx, el.x, el.y + dsd, el.x + dsw, el.y + dsd, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+        // Panel sections
+        HL(ctx, el.x, el.y + dsd / 2, el.x + p1, el.y + dsd / 2, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + dsw - p1, el.y + dsd / 2, el.x + dsw, el.y + dsd / 2, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+      } else {
+        HL(ctx, el.x, el.y, el.x, el.y + dsw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + dsd, el.y, el.x + dsd, el.y + dsw, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + dsd / 2, el.y, el.x + dsd / 2, el.y + p1, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        HL(ctx, el.x + dsd / 2, el.y + dsw - p1, el.x + dsd / 2, el.y + dsw, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+      }
+      break;
+    }
+
+    case "stair": {
+      const stairSteps = el.steps || 8;
+      const sh = el.h / stairSteps;
+      const dir = el.dir || "up";
+
+      // Side walls
+      HL(ctx, el.x, el.y, el.x, el.y + el.h, { ...opts, seed: opts.seed! + 100 }, color, tool, paper, rng, h);
+      HL(ctx, el.x + el.w, el.y, el.x + el.w, el.y + el.h, { ...opts, seed: opts.seed! + 101 }, color, tool, paper, rng, h);
+
+      // Treads
+      for (let i = 0; i <= stairSteps; i++) {
+        const sy = el.y + sh * i;
+        HL(ctx, el.x, sy, el.x + el.w, sy, { ...opts, seed: opts.seed! + i }, color, tool, paper, rng, h);
+      }
+
+      // Direction arrow
+      const acx = el.x + el.w / 2;
+      const acy1 = dir === "up" ? el.y + el.h * 0.7 : el.y + el.h * 0.3;
+      const acy2 = dir === "up" ? el.y + el.h * 0.3 : el.y + el.h * 0.7;
+      HL(ctx, acx, acy1, acx, acy2, { ...opts, seed: opts.seed! + 200 }, color, tool, paper, rng, h);
+      // Small arrowhead
+      const aAngle = Math.atan2(acy2 - acy1, 0);
+      const as = 4;
+      HL(ctx, acx, acy2, acx - as, acy2 - (dir === "up" ? -as : as),
+        { ...opts, seed: opts.seed! + 201 }, color, tool, paper, rng, h);
+      HL(ctx, acx, acy2, acx + as, acy2 - (dir === "up" ? -as : as),
+        { ...opts, seed: opts.seed! + 202 }, color, tool, paper, rng, h);
+      break;
+    }
+
+    case "opening": {
+      // Support both formats
+      let ox: number, oy: number, ow: number, owall: "h" | "v";
+      if (el.x1 != null && el.y1 != null && el.x2 != null && el.y2 != null) {
+        // Legacy: x1/y1/x2/y2
+        if (Math.abs(el.x2 - el.x1) >= Math.abs(el.y2 - el.y1)) {
+          owall = "h";
+          ox = Math.min(el.x1, el.x2);
+          oy = el.y1;
+          ow = Math.abs(el.x2 - el.x1);
+        } else {
+          owall = "v";
+          ox = el.x1;
+          oy = Math.min(el.y1, el.y2);
+          ow = Math.abs(el.y2 - el.y1);
+        }
+      } else {
+        ox = el.x ?? 0;
+        oy = el.y ?? 0;
+        ow = el.w ?? 60;
+        owall = el.wall ?? "h";
+      }
+
+      // Dashed opening line
+      ctx.setLineDash([3, 3]);
+      if (owall === "h") {
+        HL(ctx, ox, oy, ox + ow, oy, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      } else {
+        HL(ctx, ox, oy, ox, oy + ow, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      }
+      ctx.setLineDash([]);
+
+      // Tick marks at ends
+      const tk = 4;
+      if (owall === "h") {
+        HL(ctx, ox, oy - tk, ox, oy + tk, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+        HL(ctx, ox + ow, oy - tk, ox + ow, oy + tk, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      } else {
+        HL(ctx, ox - tk, oy, ox + tk, oy, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+        HL(ctx, ox - tk, oy + ow, ox + tk, oy + ow, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      }
+      break;
+    }
+
+    case "column": {
+      const ccx = el.cx ?? el.x ?? 0;
+      const ccy = el.cy ?? el.y ?? 0;
+      const cs = el.s ?? el.size ?? 12;
+      const half = cs / 2;
+      // Square outline
+      HL(ctx, ccx - half, ccy - half, ccx + half, ccy - half, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, ccx + half, ccy - half, ccx + half, ccy + half, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, ccx + half, ccy + half, ccx - half, ccy + half, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, ccx - half, ccy + half, ccx - half, ccy - half, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+      // X diagonal cross
+      HL(ctx, ccx - half, ccy - half, ccx + half, ccy + half, { ...opts, seed: opts.seed! + 5 }, color, tool, paper, rng, h);
+      HL(ctx, ccx + half, ccy - half, ccx - half, ccy + half, { ...opts, seed: opts.seed! + 6 }, color, tool, paper, rng, h);
+      break;
+    }
+  }
+
+  ctx.restore();
+}
+
+// ── Main Render Pipeline ─────────────────────────────────────────
 
 export function renderSketch(
   ctx: CanvasRenderingContext2D,
@@ -130,332 +758,32 @@ export function renderSketch(
 ): void {
   const w = sketch.width || canvasWidth;
   const h = sketch.height || canvasHeight;
+  const textureRng = mkRng(sketch.sessionSeed || 12345);
 
-  // Background
-  ctx.fillStyle = PAPER_COLORS[sketch.paper] || PAPER_COLORS.cream;
-  ctx.fillRect(0, 0, w, h);
+  // 1. Paper background
+  drawPaperBackground(ctx, w, h, sketch.paper);
 
-  // Grid for certain paper types
+  // 2. Paper texture (noise/speckles)
+  drawPaperTexture(ctx, w, h, sketch.paper, textureRng);
+
+  // 3. Grid
   drawGrid(ctx, w, h, sketch.paper);
 
-  // Default ink color for blueprint
-  const defaultColor =
-    sketch.paper === "blueprint" ? "#a8c8e8" : sketch.inkColor || "#111";
+  // 4. Center and scale elements
+  ctx.save();
+  centerElements(ctx, sketch.elements, w, h);
 
-  // Center elements on paper — compute bounding box and offset
-  const bbox = computeBoundingBox(sketch.elements);
-  let offsetX = 0;
-  let offsetY = 0;
-  if (bbox) {
-    const contentW = bbox.maxX - bbox.minX;
-    const contentH = bbox.maxY - bbox.minY;
-    const contentCenterX = bbox.minX + contentW / 2;
-    const contentCenterY = bbox.minY + contentH / 2;
-    const paperCenterX = w / 2;
-    const paperCenterY = h / 2;
-    const dx = paperCenterX - contentCenterX;
-    const dy = paperCenterY - contentCenterY;
-    if (Math.abs(dx) > w * 0.05) offsetX = dx;
-    if (Math.abs(dy) > h * 0.05) offsetY = dy;
-  }
+  // 5. Render all elements
+  sketch.elements.forEach((el, idx) => {
+    renderElement(ctx, el, idx, sketch);
+  });
 
-  if (offsetX !== 0 || offsetY !== 0) {
+  ctx.restore();
+
+  // 6. Blueprint overlay (drawn on top, not affected by centering)
+  if (sketch.paper === "blueprint") {
     ctx.save();
-    ctx.translate(offsetX, offsetY);
-  }
-
-  // Render each element
-  for (const el of sketch.elements) {
-    ctx.save();
-    setupStroke(ctx, sketch, { ...el, color: el.color || defaultColor });
-    const opts = getWobbleOpts(sketch, el);
-
-    // Apply element rotation if specified
-    if (el.rotation) {
-      const center = getElementCenter(el);
-      ctx.translate(center.x, center.y);
-      ctx.rotate((el.rotation * Math.PI) / 180);
-      ctx.translate(-center.x, -center.y);
-    }
-
-    switch (el.type) {
-      case "line":
-        drawWobbleLine(ctx, el.x1, el.y1, el.x2, el.y2, opts);
-        break;
-
-      case "rect": {
-        // Four wobble lines forming a rectangle
-        drawWobbleLine(ctx, el.x, el.y, el.x + el.w, el.y, { ...opts, seed: opts.seed! + 1 });
-        drawWobbleLine(ctx, el.x + el.w, el.y, el.x + el.w, el.y + el.h, { ...opts, seed: opts.seed! + 2 });
-        drawWobbleLine(ctx, el.x + el.w, el.y + el.h, el.x, el.y + el.h, { ...opts, seed: opts.seed! + 3 });
-        drawWobbleLine(ctx, el.x, el.y + el.h, el.x, el.y, { ...opts, seed: opts.seed! + 4 });
-        break;
-      }
-
-      case "circle": {
-        const points = wobbleCircle(el.cx, el.cy, el.r, opts);
-        drawSmoothCurve(ctx, points, true);
-        break;
-      }
-
-      case "arc": {
-        const arcPoints = wobbleArc(
-          el.cx,
-          el.cy,
-          el.r,
-          el.startAngle,
-          el.endAngle,
-          opts
-        );
-        drawSmoothCurve(ctx, arcPoints);
-        break;
-      }
-
-      case "arrow": {
-        drawWobbleLine(ctx, el.x1, el.y1, el.x2, el.y2, opts);
-        const angle = Math.atan2(el.y2 - el.y1, el.x2 - el.x1);
-        drawArrowHead(ctx, el.x2, el.y2, angle, 10);
-        break;
-      }
-
-      case "text": {
-        const fontSize = el.fontSize || 14;
-        ctx.font = `${fontSize}px 'Caveat', cursive`;
-        ctx.fillStyle = el.color || defaultColor;
-        ctx.globalAlpha = TOOL_STYLES[sketch.tool].opacity;
-        // Slight rotation for hand-drawn feel
-        const rotation = (Math.sin(hashElement(el)) * sketch.humanness * 2 * Math.PI) / 180;
-        ctx.save();
-        ctx.translate(el.x, el.y);
-        ctx.rotate(rotation);
-        ctx.fillText(el.text, 0, 0);
-        ctx.restore();
-        break;
-      }
-
-      case "dashed": {
-        const dashLen = el.dashLength || 8;
-        const gapLen = el.gapLength || 6;
-        const len = Math.sqrt((el.x2 - el.x1) ** 2 + (el.y2 - el.y1) ** 2);
-        const dx = (el.x2 - el.x1) / len;
-        const dy = (el.y2 - el.y1) / len;
-        let pos = 0;
-        let segIdx = 0;
-        while (pos < len) {
-          const segEnd = Math.min(pos + dashLen, len);
-          drawWobbleLine(
-            ctx,
-            el.x1 + dx * pos,
-            el.y1 + dy * pos,
-            el.x1 + dx * segEnd,
-            el.y1 + dy * segEnd,
-            { ...opts, seed: opts.seed! + segIdx++ }
-          );
-          pos = segEnd + gapLen;
-        }
-        break;
-      }
-
-      case "dim": {
-        // Dimension line with arrows and label
-        const dimAngle = Math.atan2(el.y2 - el.y1, el.x2 - el.x1);
-        drawWobbleLine(ctx, el.x1, el.y1, el.x2, el.y2, opts);
-        drawArrowHead(ctx, el.x1, el.y1, dimAngle + Math.PI, 8);
-        drawArrowHead(ctx, el.x2, el.y2, dimAngle, 8);
-        // Extension lines
-        const nx = -Math.sin(dimAngle) * 8;
-        const ny = Math.cos(dimAngle) * 8;
-        ctx.beginPath();
-        ctx.moveTo(el.x1 + nx, el.y1 + ny);
-        ctx.lineTo(el.x1 - nx, el.y1 - ny);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(el.x2 + nx, el.y2 + ny);
-        ctx.lineTo(el.x2 - nx, el.y2 - ny);
-        ctx.stroke();
-        // Label — rotate text to follow the dim line, offset outward
-        const midX = (el.x1 + el.x2) / 2;
-        const midY = (el.y1 + el.y2) / 2;
-        ctx.font = "12px 'Caveat', cursive";
-        ctx.fillStyle = el.color || defaultColor;
-        ctx.textAlign = "center";
-        ctx.textBaseline = "bottom";
-        const isVertical = Math.abs(el.x2 - el.x1) < Math.abs(el.y2 - el.y1);
-        if (isVertical) {
-          ctx.save();
-          ctx.translate(midX, midY);
-          ctx.rotate(-Math.PI / 2);
-          ctx.fillText(el.label, 0, -6);
-          ctx.restore();
-        } else {
-          ctx.fillText(el.label, midX, midY - 6);
-        }
-        break;
-      }
-
-      case "window": {
-        // Wall line with perpendicular ticks showing window
-        drawWobbleLine(ctx, el.x1, el.y1, el.x2, el.y2, opts);
-        const wLen = Math.sqrt((el.x2 - el.x1) ** 2 + (el.y2 - el.y1) ** 2);
-        const wdx = (el.x2 - el.x1) / wLen;
-        const wdy = (el.y2 - el.y1) / wLen;
-        const wnx = -wdy * 6;
-        const wny = wdx * 6;
-        const tickCount = Math.max(2, Math.floor(wLen / 15));
-        for (let i = 0; i <= tickCount; i++) {
-          const t = i / tickCount;
-          const px = el.x1 + wdx * wLen * t;
-          const py = el.y1 + wdy * wLen * t;
-          ctx.beginPath();
-          ctx.moveTo(px - wnx, py - wny);
-          ctx.lineTo(px + wnx, py + wny);
-          ctx.stroke();
-        }
-        break;
-      }
-
-      case "door-symbol": {
-        // Door swing arc
-        const doorW = el.w || 80;
-        const swing = el.swing || "left";
-        const hingeX = swing === "left" ? el.x : el.x + doorW;
-        const startA = swing === "left" ? -90 : 180;
-        const endA = swing === "left" ? 0 : 270;
-        // Draw the door line
-        const doorEndX = swing === "left" ? el.x + doorW : el.x;
-        drawWobbleLine(ctx, hingeX, el.y, doorEndX, el.y, opts);
-        // Draw the swing arc
-        const arcPts = wobbleArc(hingeX, el.y, doorW, startA, endA, opts);
-        drawSmoothCurve(ctx, arcPts);
-        break;
-      }
-
-      case "door-slide": {
-        const dsW = el.w || 80;
-        const dsDir = el.direction || "right";
-        // Two parallel lines
-        drawWobbleLine(ctx, el.x, el.y, el.x + dsW, el.y, { ...opts, seed: opts.seed! + 1 });
-        drawWobbleLine(ctx, el.x, el.y + 4, el.x + dsW, el.y + 4, { ...opts, seed: opts.seed! + 2 });
-        // Arrow indicating slide direction
-        const arrowX1 = dsDir === "right" ? el.x + dsW * 0.3 : el.x + dsW * 0.7;
-        const arrowX2 = dsDir === "right" ? el.x + dsW * 0.7 : el.x + dsW * 0.3;
-        const arrowAngle = Math.atan2(0, arrowX2 - arrowX1);
-        drawArrowHead(ctx, arrowX2, el.y + 2, arrowAngle, 6);
-        break;
-      }
-
-      case "stair": {
-        const stairSteps = el.steps || 8;
-        const stepH = el.h / stairSteps;
-        // Outline
-        drawWobbleLine(ctx, el.x, el.y, el.x + el.w, el.y, { ...opts, seed: opts.seed! + 100 });
-        drawWobbleLine(ctx, el.x, el.y + el.h, el.x + el.w, el.y + el.h, { ...opts, seed: opts.seed! + 101 });
-        drawWobbleLine(ctx, el.x, el.y, el.x, el.y + el.h, { ...opts, seed: opts.seed! + 102 });
-        drawWobbleLine(ctx, el.x + el.w, el.y, el.x + el.w, el.y + el.h, { ...opts, seed: opts.seed! + 103 });
-        // Treads
-        for (let i = 1; i < stairSteps; i++) {
-          const sy = el.y + stepH * i;
-          drawWobbleLine(ctx, el.x, sy, el.x + el.w, sy, { ...opts, seed: opts.seed! + i });
-        }
-        break;
-      }
-
-      case "opening": {
-        // Gap in wall with small perpendicular returns
-        const oLen = Math.sqrt((el.x2 - el.x1) ** 2 + (el.y2 - el.y1) ** 2);
-        const odx = (el.x2 - el.x1) / oLen;
-        const ody = (el.y2 - el.y1) / oLen;
-        const returnLen = 6;
-        const rnx = -ody * returnLen;
-        const rny = odx * returnLen;
-        // Left return
-        ctx.beginPath();
-        ctx.moveTo(el.x1 - rnx, el.y1 - rny);
-        ctx.lineTo(el.x1 + rnx, el.y1 + rny);
-        ctx.stroke();
-        // Right return
-        ctx.beginPath();
-        ctx.moveTo(el.x2 - rnx, el.y2 - rny);
-        ctx.lineTo(el.x2 + rnx, el.y2 + rny);
-        ctx.stroke();
-        break;
-      }
-
-      case "column": {
-        const colSize = el.size || 10;
-        ctx.fillStyle = el.color || defaultColor;
-        const colPoints = wobbleCircle(el.cx, el.cy, colSize / 2, opts);
-        ctx.beginPath();
-        ctx.moveTo(colPoints[0].x, colPoints[0].y);
-        for (let i = 1; i < colPoints.length; i++) {
-          ctx.lineTo(colPoints[i].x, colPoints[i].y);
-        }
-        ctx.closePath();
-        ctx.fill();
-        ctx.stroke();
-        break;
-      }
-    }
-
+    drawBlueprintOverlay(ctx, w, h);
     ctx.restore();
   }
-
-  if (offsetX !== 0 || offsetY !== 0) {
-    ctx.restore();
-  }
-}
-
-/** Returns the center point of a single element for rotation transforms */
-function getElementCenter(el: SketchElement): { x: number; y: number } {
-  if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-    return { x: (el.x1 + el.x2) / 2, y: (el.y1 + el.y2) / 2 };
-  }
-  if ("cx" in el && "cy" in el) {
-    return { x: el.cx, y: el.cy };
-  }
-  if ("x" in el && "y" in el && "w" in el && "h" in el) {
-    return { x: (el as { x: number; w: number }).x + (el as { w: number }).w / 2, y: (el as { y: number; h: number }).y + (el as { h: number }).h / 2 };
-  }
-  if ("x" in el && "y" in el) {
-    return { x: (el as { x: number }).x, y: (el as { y: number }).y };
-  }
-  return { x: 0, y: 0 };
-}
-
-function computeBoundingBox(
-  elements: SketchElement[]
-): { minX: number; minY: number; maxX: number; maxY: number } | null {
-  if (!elements || elements.length === 0) return null;
-
-  let minX = Infinity,
-    minY = Infinity,
-    maxX = -Infinity,
-    maxY = -Infinity;
-
-  for (const el of elements) {
-    if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-      minX = Math.min(minX, el.x1, el.x2);
-      minY = Math.min(minY, el.y1, el.y2);
-      maxX = Math.max(maxX, el.x1, el.x2);
-      maxY = Math.max(maxY, el.y1, el.y2);
-    } else if ("x" in el && "w" in el && "h" in el) {
-      minX = Math.min(minX, el.x);
-      minY = Math.min(minY, el.y);
-      maxX = Math.max(maxX, el.x + el.w);
-      maxY = Math.max(maxY, el.y + el.h);
-    } else if ("cx" in el && "r" in el) {
-      minX = Math.min(minX, el.cx - el.r);
-      minY = Math.min(minY, el.cy - el.r);
-      maxX = Math.max(maxX, el.cx + el.r);
-      maxY = Math.max(maxY, el.cy + el.r);
-    } else if ("x" in el && "y" in el) {
-      minX = Math.min(minX, el.x);
-      minY = Math.min(minY, el.y - 20);
-      maxX = Math.max(maxX, el.x + 80);
-      maxY = Math.max(maxY, el.y);
-    }
-  }
-
-  if (!isFinite(minX)) return null;
-  return { minX, minY, maxX, maxY };
 }

@@ -1,8 +1,35 @@
 "use client";
 
 import { useRef, useEffect, useCallback, useState } from "react";
-import { SketchData } from "@/lib/types";
+import { SketchData, SketchElement } from "@/lib/types";
 import { renderSketch } from "@/lib/renderer";
+
+// Type-safe accessors for union element types
+type AnyEl = Record<string, unknown>;
+const asLine = (el: SketchElement) => el as unknown as { x1: number; y1: number; x2: number; y2: number };
+const asRect = (el: SketchElement) => el as unknown as { x: number; y: number; w: number; h: number };
+const asCirc = (el: SketchElement) => el as unknown as { cx: number; cy: number; r: number };
+const asPos = (el: SketchElement) => el as unknown as { x: number; y: number };
+
+function getElementBounds(el: SketchElement): { x: number; y: number; w: number; h: number } | null {
+  if ("x1" in el && "x2" in el) {
+    const { x1, y1, x2, y2 } = asLine(el);
+    return { x: Math.min(x1, x2) - 5, y: Math.min(y1, y2) - 5, w: Math.abs(x2 - x1) + 10, h: Math.abs(y2 - y1) + 10 };
+  }
+  if ("x" in el && "w" in el && "h" in el) {
+    const { x, y, w, h } = asRect(el);
+    return { x: x - 5, y: y - 5, w: w + 10, h: h + 10 };
+  }
+  if ("cx" in el && "r" in el) {
+    const { cx, cy, r } = asCirc(el);
+    return { x: cx - r - 5, y: cy - r - 5, w: r * 2 + 10, h: r * 2 + 10 };
+  }
+  if ("x" in el && "y" in el) {
+    const { x, y } = asPos(el);
+    return { x: x - 5, y: y - 20, w: 80, h: 30 };
+  }
+  return null;
+}
 
 /** Clamp zoom to [min, max] */
 const MIN_ZOOM = 0.1;
@@ -115,27 +142,7 @@ export default function Canvas({
 
         let bounds: { x: number; y: number; w: number; h: number } | null = null;
 
-        if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-          const minX = Math.min(el.x1, el.x2);
-          const minY = Math.min(el.y1, el.y2);
-          bounds = {
-            x: minX - 5,
-            y: minY - 5,
-            w: Math.abs(el.x2 - el.x1) + 10,
-            h: Math.abs(el.y2 - el.y1) + 10,
-          };
-        } else if ("x" in el && "w" in el && "h" in el) {
-          bounds = { x: el.x - 5, y: el.y - 5, w: el.w + 10, h: el.h + 10 };
-        } else if ("cx" in el && "r" in el) {
-          bounds = {
-            x: el.cx - el.r - 5,
-            y: el.cy - el.r - 5,
-            w: el.r * 2 + 10,
-            h: el.r * 2 + 10,
-          };
-        } else if ("x" in el && "y" in el) {
-          bounds = { x: el.x - 5, y: el.y - 20, w: 80, h: 30 };
-        }
+        bounds = getElementBounds(el);
 
         if (bounds) {
           if (el.rotation) {
@@ -645,24 +652,21 @@ function hitTest(
 ): boolean {
   const margin = 12;
 
-  if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-    const dist = distToSegment(mx, my, el.x1, el.y1, el.x2, el.y2);
-    return dist < margin;
+  if ("x1" in el && "x2" in el) {
+    const { x1, y1, x2, y2 } = asLine(el);
+    return distToSegment(mx, my, x1, y1, x2, y2) < margin;
   }
   if ("x" in el && "w" in el && "h" in el) {
-    return (
-      mx >= el.x - margin &&
-      mx <= el.x + el.w + margin &&
-      my >= el.y - margin &&
-      my <= el.y + el.h + margin
-    );
+    const { x, y, w, h } = asRect(el);
+    return mx >= x - margin && mx <= x + w + margin && my >= y - margin && my <= y + h + margin;
   }
   if ("cx" in el && "r" in el) {
-    const dist = Math.sqrt((mx - el.cx) ** 2 + (my - el.cy) ** 2);
-    return dist < el.r + margin;
+    const { cx, cy, r } = asCirc(el);
+    return Math.sqrt((mx - cx) ** 2 + (my - cy) ** 2) < r + margin;
   }
   if ("x" in el && "y" in el) {
-    return mx >= el.x - margin && mx <= el.x + 80 && my >= el.y - 20 && my <= el.y + margin;
+    const { x, y } = asPos(el);
+    return mx >= x - margin && mx <= x + 80 && my >= y - 20 && my <= y + margin;
   }
 
   return false;
@@ -676,29 +680,23 @@ function boxHitTest(
   x2: number,
   y2: number
 ): boolean {
-  if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-    const ex1 = Math.min(el.x1, el.x2);
-    const ey1 = Math.min(el.y1, el.y2);
-    const ex2 = Math.max(el.x1, el.x2);
-    const ey2 = Math.max(el.y1, el.y2);
+  if ("x1" in el && "x2" in el) {
+    const l = asLine(el);
+    const ex1 = Math.min(l.x1, l.x2), ey1 = Math.min(l.y1, l.y2);
+    const ex2 = Math.max(l.x1, l.x2), ey2 = Math.max(l.y1, l.y2);
     return ex1 <= x2 && ex2 >= x1 && ey1 <= y2 && ey2 >= y1;
   }
   if ("x" in el && "w" in el && "h" in el) {
-    return el.x <= x2 && el.x + el.w >= x1 && el.y <= y2 && el.y + el.h >= y1;
+    const r = asRect(el);
+    return r.x <= x2 && r.x + r.w >= x1 && r.y <= y2 && r.y + r.h >= y1;
   }
   if ("cx" in el && "r" in el) {
-    return (
-      el.cx - el.r <= x2 &&
-      el.cx + el.r >= x1 &&
-      el.cy - el.r <= y2 &&
-      el.cy + el.r >= y1
-    );
+    const c = asCirc(el);
+    return c.cx - c.r <= x2 && c.cx + c.r >= x1 && c.cy - c.r <= y2 && c.cy + c.r >= y1;
   }
   if ("x" in el && "y" in el) {
-    // text — approximate bounding box
-    return (
-      el.x <= x2 && el.x + 80 >= x1 && el.y - 20 <= y2 && el.y + 5 >= y1
-    );
+    const p = asPos(el);
+    return p.x <= x2 && p.x + 80 >= x1 && p.y - 20 <= y2 && p.y + 5 >= y1;
   }
   return false;
 }

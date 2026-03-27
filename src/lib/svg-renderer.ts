@@ -18,6 +18,9 @@ import {
   Point,
 } from "./wobble";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const E = (el: SketchElement): any => el as any;
+
 function hashElement(el: SketchElement): number {
   const str = JSON.stringify(el);
   let h = 0;
@@ -97,26 +100,27 @@ function computeBoundingBox(
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
 
   for (const el of elements) {
-    if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-      minX = Math.min(minX, el.x1, el.x2);
-      minY = Math.min(minY, el.y1, el.y2);
-      maxX = Math.max(maxX, el.x1, el.x2);
-      maxY = Math.max(maxY, el.y1, el.y2);
+    const a = el as unknown as Record<string, number>;
+    if ("x1" in el && "x2" in el) {
+      minX = Math.min(minX, a.x1, a.x2);
+      minY = Math.min(minY, a.y1, a.y2);
+      maxX = Math.max(maxX, a.x1, a.x2);
+      maxY = Math.max(maxY, a.y1, a.y2);
     } else if ("x" in el && "w" in el && "h" in el) {
-      minX = Math.min(minX, el.x);
-      minY = Math.min(minY, el.y);
-      maxX = Math.max(maxX, el.x + el.w);
-      maxY = Math.max(maxY, el.y + el.h);
+      minX = Math.min(minX, a.x);
+      minY = Math.min(minY, a.y);
+      maxX = Math.max(maxX, a.x + a.w);
+      maxY = Math.max(maxY, a.y + a.h);
     } else if ("cx" in el && "r" in el) {
-      minX = Math.min(minX, el.cx - el.r);
-      minY = Math.min(minY, el.cy - el.r);
-      maxX = Math.max(maxX, el.cx + el.r);
-      maxY = Math.max(maxY, el.cy + el.r);
+      minX = Math.min(minX, a.cx - a.r);
+      minY = Math.min(minY, a.cy - a.r);
+      maxX = Math.max(maxX, a.cx + a.r);
+      maxY = Math.max(maxY, a.cy + a.r);
     } else if ("x" in el && "y" in el) {
-      minX = Math.min(minX, el.x);
-      minY = Math.min(minY, el.y - 20);
-      maxX = Math.max(maxX, el.x + 80);
-      maxY = Math.max(maxY, el.y);
+      minX = Math.min(minX, a.x);
+      minY = Math.min(minY, a.y - 20);
+      maxX = Math.max(maxX, a.x + 80);
+      maxY = Math.max(maxY, a.y);
     }
   }
 
@@ -125,17 +129,18 @@ function computeBoundingBox(
 }
 
 function getElementCenter(el: SketchElement): { x: number; y: number } {
+  const a = el as unknown as Record<string, number>;
   if ("x1" in el && "x2" in el && "y1" in el && "y2" in el) {
-    return { x: (el.x1 + el.x2) / 2, y: (el.y1 + el.y2) / 2 };
+    return { x: (a.x1 + a.x2) / 2, y: (a.y1 + a.y2) / 2 };
   }
   if ("cx" in el && "cy" in el) {
-    return { x: el.cx, y: el.cy };
+    return { x: a.cx, y: a.cy };
   }
   if ("x" in el && "y" in el && "w" in el && "h" in el) {
-    return { x: (el as { x: number; w: number }).x + (el as { w: number }).w / 2, y: (el as { y: number; h: number }).y + (el as { h: number }).h / 2 };
+    return { x: a.x + a.w / 2, y: a.y + a.h / 2 };
   }
   if ("x" in el && "y" in el) {
-    return { x: (el as { x: number }).x, y: (el as { y: number }).y };
+    return { x: a.x, y: a.y };
   }
   return { x: 0, y: 0 };
 }
@@ -212,42 +217,51 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     }
 
     case "arc": {
-      const pts = wobbleArc(el.cx, el.cy, el.r, el.startAngle, el.endAngle, opts);
+      const ea = E(el);
+      const acx = ea.cx ?? ea.x ?? 0;
+      const acy = ea.cy ?? ea.y ?? 0;
+      const startA = ea.startAngle ?? 0;
+      const endA = ea.sweep != null ? startA + ea.sweep : (ea.endAngle ?? 90);
+      const pts = wobbleArc(acx, acy, ea.r, startA, endA, opts);
       parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
       break;
     }
 
     case "arrow": {
-      const pts = wobbleLine(el.x1, el.y1, el.x2, el.y2, opts);
+      const ea2 = E(el);
+      const pts = wobbleLine(ea2.x1, ea2.y1, ea2.x2, ea2.y2, opts);
       parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
-      const angle = Math.atan2(el.y2 - el.y1, el.x2 - el.x1);
-      parts.push(renderArrowHead(el.x2, el.y2, angle, 10, style));
+      const angle = Math.atan2(ea2.y2 - ea2.y1, ea2.x2 - ea2.x1);
+      parts.push(renderArrowHead(ea2.x2, ea2.y2, angle, 10, style));
       break;
     }
 
     case "text": {
-      const fontSize = el.fontSize || 14;
+      const et = E(el);
+      const fontSize = et.size || et.fontSize || 14;
+      const content = et.content || et.text || "";
       const rotation = (Math.sin(hashElement(el)) * sketch.humanness * 2 * Math.PI) / 180;
       const fillColor = el.color || defaultColor;
       parts.push(
-        `<text x="${el.x}" y="${el.y}" font-family="'Caveat', cursive" font-size="${fontSize}" fill="${fillColor}" opacity="${style.opacity}" transform="rotate(${(rotation * 180) / Math.PI} ${el.x} ${el.y})">${escapeXml(el.text)}</text>`
+        `<text x="${el.x}" y="${el.y}" font-family="'Courier New', monospace" font-size="${fontSize}" fill="${fillColor}" opacity="${style.opacity}" transform="rotate(${(rotation * 180) / Math.PI} ${el.x} ${el.y})">${escapeXml(content)}</text>`
       );
       break;
     }
 
     case "dashed": {
-      const dashLen = el.dashLength || 8;
-      const gapLen = el.gapLength || 6;
-      const len = Math.sqrt((el.x2 - el.x1) ** 2 + (el.y2 - el.y1) ** 2);
-      const dx = (el.x2 - el.x1) / len;
-      const dy = (el.y2 - el.y1) / len;
+      const ed = E(el);
+      const dashLen = ed.dashLength || 8;
+      const gapLen = ed.gapLength || 6;
+      const len = Math.sqrt((ed.x2 - ed.x1) ** 2 + (ed.y2 - ed.y1) ** 2);
+      const dx = (ed.x2 - ed.x1) / len;
+      const dy = (ed.y2 - ed.y1) / len;
       let pos = 0;
       let segIdx = 0;
       while (pos < len) {
         const segEnd = Math.min(pos + dashLen, len);
         const pts = wobbleLine(
-          el.x1 + dx * pos, el.y1 + dy * pos,
-          el.x1 + dx * segEnd, el.y1 + dy * segEnd,
+          ed.x1 + dx * pos, ed.y1 + dy * pos,
+          ed.x1 + dx * segEnd, ed.y1 + dy * segEnd,
           { ...opts, seed: opts.seed! + segIdx++ }
         );
         parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
@@ -257,46 +271,50 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     }
 
     case "dim": {
-      const dimAngle = Math.atan2(el.y2 - el.y1, el.x2 - el.x1);
-      const pts = wobbleLine(el.x1, el.y1, el.x2, el.y2, opts);
+      const edm = E(el);
+      const dimAngle = Math.atan2(edm.y2 - edm.y1, edm.x2 - edm.x1);
+      const pts = wobbleLine(edm.x1, edm.y1, edm.x2, edm.y2, opts);
       parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
-      parts.push(renderArrowHead(el.x1, el.y1, dimAngle + Math.PI, 8, style));
-      parts.push(renderArrowHead(el.x2, el.y2, dimAngle, 8, style));
-      // Extension lines
+      parts.push(renderArrowHead(edm.x1, edm.y1, dimAngle + Math.PI, 8, style));
+      parts.push(renderArrowHead(edm.x2, edm.y2, dimAngle, 8, style));
       const nx = -Math.sin(dimAngle) * 8;
       const ny = Math.cos(dimAngle) * 8;
-      parts.push(`<line x1="${el.x1 + nx}" y1="${el.y1 + ny}" x2="${el.x1 - nx}" y2="${el.y1 - ny}" ${sa}/>`);
-      parts.push(`<line x1="${el.x2 + nx}" y1="${el.y2 + ny}" x2="${el.x2 - nx}" y2="${el.y2 - ny}" ${sa}/>`);
-      // Label
-      const midX = (el.x1 + el.x2) / 2;
-      const midY = (el.y1 + el.y2) / 2;
-      const fillColor = el.color || defaultColor;
-      const isVertical = Math.abs(el.x2 - el.x1) < Math.abs(el.y2 - el.y1);
+      parts.push(`<line x1="${edm.x1 + nx}" y1="${edm.y1 + ny}" x2="${edm.x1 - nx}" y2="${edm.y1 - ny}" ${sa}/>`);
+      parts.push(`<line x1="${edm.x2 + nx}" y1="${edm.y2 + ny}" x2="${edm.x2 - nx}" y2="${edm.y2 - ny}" ${sa}/>`);
+      const midX = (edm.x1 + edm.x2) / 2;
+      const midY = (edm.y1 + edm.y2) / 2;
+      const fillColor = edm.color || defaultColor;
+      const isVertical = Math.abs(edm.x2 - edm.x1) < Math.abs(edm.y2 - edm.y1);
       if (isVertical) {
         parts.push(
-          `<text x="${midX}" y="${midY}" font-family="'Caveat', cursive" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto" transform="rotate(-90 ${midX} ${midY})" dy="-6">${escapeXml(el.label)}</text>`
+          `<text x="${midX}" y="${midY}" font-family="'Courier New', monospace" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto" transform="rotate(-90 ${midX} ${midY})" dy="-6">${escapeXml(edm.label)}</text>`
         );
       } else {
         parts.push(
-          `<text x="${midX}" y="${midY - 6}" font-family="'Caveat', cursive" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto">${escapeXml(el.label)}</text>`
+          `<text x="${midX}" y="${midY - 6}" font-family="'Courier New', monospace" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto">${escapeXml(edm.label)}</text>`
         );
       }
       break;
     }
 
     case "window": {
-      const pts = wobbleLine(el.x1, el.y1, el.x2, el.y2, opts);
+      const ew = E(el);
+      const wx1 = ew.x1 ?? ew.x ?? 0;
+      const wy1 = ew.y1 ?? ew.y ?? 0;
+      const wx2 = ew.x2 ?? (wx1 + (ew.w ?? 60));
+      const wy2 = ew.y2 ?? wy1;
+      const pts = wobbleLine(wx1, wy1, wx2, wy2, opts);
       parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
-      const wLen = Math.sqrt((el.x2 - el.x1) ** 2 + (el.y2 - el.y1) ** 2);
-      const wdx = (el.x2 - el.x1) / wLen;
-      const wdy = (el.y2 - el.y1) / wLen;
+      const wLen = Math.sqrt((wx2 - wx1) ** 2 + (wy2 - wy1) ** 2);
+      const wdx = (wx2 - wx1) / wLen;
+      const wdy = (wy2 - wy1) / wLen;
       const wnx = -wdy * 6;
       const wny = wdx * 6;
       const tickCount = Math.max(2, Math.floor(wLen / 15));
       for (let i = 0; i <= tickCount; i++) {
         const t = i / tickCount;
-        const px = el.x1 + wdx * wLen * t;
-        const py = el.y1 + wdy * wLen * t;
+        const px = wx1 + wdx * wLen * t;
+        const py = wy1 + wdy * wLen * t;
         parts.push(`<line x1="${px - wnx}" y1="${py - wny}" x2="${px + wnx}" y2="${py + wny}" ${sa}/>`);
       }
       break;
@@ -353,21 +371,29 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     }
 
     case "opening": {
-      const oLen = Math.sqrt((el.x2 - el.x1) ** 2 + (el.y2 - el.y1) ** 2);
-      const odx = (el.x2 - el.x1) / oLen;
-      const ody = (el.y2 - el.y1) / oLen;
+      const e = E(el);
+      const ox1 = e.x1 ?? e.x ?? 0;
+      const oy1 = e.y1 ?? e.y ?? 0;
+      const ox2 = e.x2 ?? (ox1 + (e.w ?? 60));
+      const oy2 = e.y2 ?? oy1;
+      const oLen = Math.sqrt((ox2 - ox1) ** 2 + (oy2 - oy1) ** 2);
+      const odx = (ox2 - ox1) / oLen;
+      const ody = (oy2 - oy1) / oLen;
       const returnLen = 6;
       const rnx = -ody * returnLen;
       const rny = odx * returnLen;
-      parts.push(`<line x1="${el.x1 - rnx}" y1="${el.y1 - rny}" x2="${el.x1 + rnx}" y2="${el.y1 + rny}" ${sa}/>`);
-      parts.push(`<line x1="${el.x2 - rnx}" y1="${el.y2 - rny}" x2="${el.x2 + rnx}" y2="${el.y2 + rny}" ${sa}/>`);
+      parts.push(`<line x1="${ox1 - rnx}" y1="${oy1 - rny}" x2="${ox1 + rnx}" y2="${oy1 + rny}" ${sa}/>`);
+      parts.push(`<line x1="${ox2 - rnx}" y1="${oy2 - rny}" x2="${ox2 + rnx}" y2="${oy2 + rny}" ${sa}/>`);
       break;
     }
 
     case "column": {
-      const colSize = el.size || 10;
+      const ec = E(el);
+      const colSize = ec.s ?? ec.size ?? 10;
+      const ccx = ec.cx ?? ec.x ?? 0;
+      const ccy = ec.cy ?? ec.y ?? 0;
       const fillColor = el.color || defaultColor;
-      const colPoints = wobbleCircle(el.cx, el.cy, colSize / 2, opts);
+      const colPoints = wobbleCircle(ccx, ccy, colSize / 2, opts);
       const d = pointsToPath(colPoints, true);
       parts.push(`<path d="${d}" fill="${fillColor}" stroke="${style.stroke}" stroke-width="${style.strokeWidth}" opacity="${style.opacity}" stroke-linecap="round" stroke-linejoin="round"/>`);
       break;

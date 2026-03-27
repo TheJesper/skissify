@@ -300,21 +300,18 @@ function translateElement(
   dx: number,
   dy: number
 ): SketchData["elements"][number] {
-  // Line-based elements (x1, y1, x2, y2)
+  const a = el as unknown as Record<string, unknown>;
   if ("x1" in el && "y1" in el && "x2" in el && "y2" in el) {
-    return { ...el, x1: el.x1 + dx, y1: el.y1 + dy, x2: el.x2 + dx, y2: el.y2 + dy };
+    return { ...el, x1: (a.x1 as number) + dx, y1: (a.y1 as number) + dy, x2: (a.x2 as number) + dx, y2: (a.y2 as number) + dy };
   }
-  // Rect, door, stair (x, y, w, h)
   if ("x" in el && "y" in el && "w" in el) {
-    return { ...el, x: (el as { x: number }).x + dx, y: (el as { y: number }).y + dy };
+    return { ...el, x: (a.x as number) + dx, y: (a.y as number) + dy };
   }
-  // Circle, column (cx, cy)
   if ("cx" in el && "cy" in el) {
-    return { ...el, cx: el.cx + dx, cy: el.cy + dy };
+    return { ...el, cx: (a.cx as number) + dx, cy: (a.cy as number) + dy };
   }
-  // Text (x, y)
   if ("x" in el && "y" in el) {
-    return { ...el, x: (el as { x: number }).x + dx, y: (el as { y: number }).y + dy };
+    return { ...el, x: (a.x as number) + dx, y: (a.y as number) + dy };
   }
   return el;
 }

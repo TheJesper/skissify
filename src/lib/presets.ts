@@ -2,12 +2,12 @@ import { SketchData } from "./types";
 
 export const presets: Record<string, SketchData> = {
   "napkin sketch": {
-    paper: "cream",
-    tool: "ballpoint",
-    inkColor: "#111",
-    amplitude: 0.8,
-    waves: 0.7,
-    humanness: 0.2,
+    paper: "yellow",
+    tool: "pencil",
+    inkColor: "#222",
+    amplitude: 2.8,
+    waves: 1.5,
+    humanness: 0.55,
     elements: [
       // Simple box diagram
       { type: "rect", x: 100, y: 80, w: 200, h: 120, color: "#111" },
@@ -26,10 +26,10 @@ export const presets: Record<string, SketchData> = {
   "plan drawing": {
     paper: "cream",
     tool: "ballpoint",
-    inkColor: "#222",
-    amplitude: 0.5,
-    waves: 0.6,
-    humanness: 0.12,
+    inkColor: "#111",
+    amplitude: 0.7,
+    waves: 0.8,
+    humanness: 0.15,
     width: 900,
     height: 650,
     elements: [
@@ -90,47 +90,47 @@ export const presets: Record<string, SketchData> = {
 
   blueprint: {
     paper: "blueprint",
-    tool: "ink",
-    inkColor: "#a8c8e8",
-    amplitude: 0.3,
-    waves: 0.5,
-    humanness: 0.08,
+    tool: "ballpoint",
+    inkColor: "#d8eaff",
+    amplitude: 0.15,
+    waves: 0.3,
+    humanness: 0.04,
     width: 900,
     height: 650,
     elements: [
       // Outer walls
-      { type: "line", x1: 60, y1: 60, x2: 840, y2: 60, color: "#c8ddf0" },
-      { type: "line", x1: 840, y1: 60, x2: 840, y2: 590, color: "#c8ddf0" },
-      { type: "line", x1: 840, y1: 590, x2: 60, y2: 590, color: "#c8ddf0" },
-      { type: "line", x1: 60, y1: 590, x2: 60, y2: 60, color: "#c8ddf0" },
+      { type: "line", x1: 60, y1: 60, x2: 840, y2: 60, color: "#222" },
+      { type: "line", x1: 840, y1: 60, x2: 840, y2: 590, color: "#222" },
+      { type: "line", x1: 840, y1: 590, x2: 60, y2: 590, color: "#222" },
+      { type: "line", x1: 60, y1: 590, x2: 60, y2: 60, color: "#222" },
       // Inner rooms
-      { type: "rect", x: 80, y: 80, w: 250, h: 200, color: "#8ab4d8" },
-      { type: "rect", x: 370, y: 80, w: 200, h: 200, color: "#8ab4d8" },
-      { type: "rect", x: 610, y: 80, w: 200, h: 250, color: "#8ab4d8" },
-      { type: "rect", x: 80, y: 320, w: 350, h: 240, color: "#8ab4d8" },
-      { type: "rect", x: 470, y: 370, w: 340, h: 190, color: "#8ab4d8" },
+      { type: "rect", x: 80, y: 80, w: 250, h: 200, color: "#333" },
+      { type: "rect", x: 370, y: 80, w: 200, h: 200, color: "#333" },
+      { type: "rect", x: 610, y: 80, w: 200, h: 250, color: "#333" },
+      { type: "rect", x: 80, y: 320, w: 350, h: 240, color: "#333" },
+      { type: "rect", x: 470, y: 370, w: 340, h: 190, color: "#333" },
       // Labels
-      { type: "text", x: 150, y: 190, text: "BEDROOM 1", fontSize: 16, color: "#c8ddf0" },
-      { type: "text", x: 420, y: 190, text: "KITCHEN", fontSize: 16, color: "#c8ddf0" },
-      { type: "text", x: 660, y: 210, text: "LIVING", fontSize: 16, color: "#c8ddf0" },
-      { type: "text", x: 190, y: 450, text: "MASTER BEDROOM", fontSize: 16, color: "#c8ddf0" },
-      { type: "text", x: 580, y: 475, text: "BATHROOM", fontSize: 16, color: "#c8ddf0" },
+      { type: "text", x: 150, y: 190, text: "BEDROOM 1", fontSize: 16, color: "#222" },
+      { type: "text", x: 420, y: 190, text: "KITCHEN", fontSize: 16, color: "#222" },
+      { type: "text", x: 660, y: 210, text: "LIVING", fontSize: 16, color: "#222" },
+      { type: "text", x: 190, y: 450, text: "MASTER BEDROOM", fontSize: 16, color: "#222" },
+      { type: "text", x: 580, y: 475, text: "BATHROOM", fontSize: 16, color: "#222" },
       // Dimensions
-      { type: "dim", x1: 60, y1: 40, x2: 840, y2: 40, label: "15.6 m", color: "#6a9ac4" },
-      { type: "dim", x1: 40, y1: 60, x2: 40, y2: 590, label: "10.6 m", color: "#6a9ac4" },
+      { type: "dim", x1: 60, y1: 40, x2: 840, y2: 40, label: "15.6 m", color: "#666" },
+      { type: "dim", x1: 40, y1: 60, x2: 40, y2: 590, label: "10.6 m", color: "#666" },
       // Windows
-      { type: "window", x1: 140, y1: 60, x2: 270, y2: 60, color: "#6a9ac4" },
-      { type: "window", x1: 620, y1: 60, x2: 780, y2: 60, color: "#6a9ac4" },
+      { type: "window", x1: 140, y1: 60, x2: 270, y2: 60, color: "#666" },
+      { type: "window", x1: 620, y1: 60, x2: 780, y2: 60, color: "#666" },
     ],
   },
 
   villa: {
-    paper: "white",
+    paper: "cream",
     tool: "ballpoint",
-    inkColor: "#333",
+    inkColor: "#111",
     amplitude: 0.6,
-    waves: 0.65,
-    humanness: 0.15,
+    waves: 0.8,
+    humanness: 0.12,
     width: 950,
     height: 700,
     elements: [
@@ -346,80 +346,80 @@ export const presets: Record<string, SketchData> = {
   },
 
   architecture: {
-    paper: "blueprint",
-    tool: "ink",
-    inkColor: "#a8c8e8",
-    amplitude: 0.3,
-    waves: 0.4,
-    humanness: 0.06,
+    paper: "white",
+    tool: "ballpoint",
+    inkColor: "#111",
+    amplitude: 0.7,
+    waves: 0.9,
+    humanness: 0.14,
     width: 900,
     height: 650,
     elements: [
       // Title
-      { type: "text", x: 300, y: 30, text: "BUILDING ELEVATION - NORTH", fontSize: 18, color: "#6a9ac4" },
+      { type: "text", x: 300, y: 30, text: "BUILDING ELEVATION - NORTH", fontSize: 18, color: "#666" },
 
       // Ground level line
-      { type: "line", x1: 100, y1: 520, x2: 800, y2: 520, color: "#c8ddf0", strokeWidth: 2.5 },
+      { type: "line", x1: 100, y1: 520, x2: 800, y2: 520, color: "#222", strokeWidth: 2.5 },
 
       // Ground floor walls
-      { type: "line", x1: 150, y1: 520, x2: 150, y2: 350, color: "#c8ddf0", strokeWidth: 2 },
-      { type: "line", x1: 750, y1: 520, x2: 750, y2: 350, color: "#c8ddf0", strokeWidth: 2 },
+      { type: "line", x1: 150, y1: 520, x2: 150, y2: 350, color: "#222", strokeWidth: 2 },
+      { type: "line", x1: 750, y1: 520, x2: 750, y2: 350, color: "#222", strokeWidth: 2 },
 
       // First floor line
-      { type: "line", x1: 150, y1: 350, x2: 750, y2: 350, color: "#c8ddf0", strokeWidth: 2 },
+      { type: "line", x1: 150, y1: 350, x2: 750, y2: 350, color: "#222", strokeWidth: 2 },
 
       // First floor walls up to roof
-      { type: "line", x1: 150, y1: 350, x2: 150, y2: 200, color: "#c8ddf0", strokeWidth: 2 },
-      { type: "line", x1: 750, y1: 350, x2: 750, y2: 200, color: "#c8ddf0", strokeWidth: 2 },
+      { type: "line", x1: 150, y1: 350, x2: 150, y2: 200, color: "#222", strokeWidth: 2 },
+      { type: "line", x1: 750, y1: 350, x2: 750, y2: 200, color: "#222", strokeWidth: 2 },
 
       // Roof line (eaves)
-      { type: "line", x1: 130, y1: 200, x2: 770, y2: 200, color: "#c8ddf0", strokeWidth: 1.5 },
+      { type: "line", x1: 130, y1: 200, x2: 770, y2: 200, color: "#222", strokeWidth: 1.5 },
 
       // Roof triangle
-      { type: "line", x1: 130, y1: 200, x2: 450, y2: 100, color: "#c8ddf0", strokeWidth: 2 },
-      { type: "line", x1: 770, y1: 200, x2: 450, y2: 100, color: "#c8ddf0", strokeWidth: 2 },
+      { type: "line", x1: 130, y1: 200, x2: 450, y2: 100, color: "#222", strokeWidth: 2 },
+      { type: "line", x1: 770, y1: 200, x2: 450, y2: 100, color: "#222", strokeWidth: 2 },
 
       // Ground floor: front door
-      { type: "rect", x: 410, y: 420, w: 80, h: 100, color: "#8ab4d8" },
-      { type: "text", x: 425, y: 475, text: "DOOR", fontSize: 12, color: "#8ab4d8" },
+      { type: "rect", x: 410, y: 420, w: 80, h: 100, color: "#333" },
+      { type: "text", x: 425, y: 475, text: "DOOR", fontSize: 12, color: "#333" },
 
       // Ground floor windows
-      { type: "rect", x: 200, y: 400, w: 80, h: 70, color: "#8ab4d8" },
-      { type: "line", x1: 240, y1: 400, x2: 240, y2: 470, color: "#8ab4d8" },
-      { type: "line", x1: 200, y1: 435, x2: 280, y2: 435, color: "#8ab4d8" },
+      { type: "rect", x: 200, y: 400, w: 80, h: 70, color: "#333" },
+      { type: "line", x1: 240, y1: 400, x2: 240, y2: 470, color: "#333" },
+      { type: "line", x1: 200, y1: 435, x2: 280, y2: 435, color: "#333" },
 
-      { type: "rect", x: 320, y: 400, w: 60, h: 70, color: "#8ab4d8" },
-      { type: "line", x1: 350, y1: 400, x2: 350, y2: 470, color: "#8ab4d8" },
+      { type: "rect", x: 320, y: 400, w: 60, h: 70, color: "#333" },
+      { type: "line", x1: 350, y1: 400, x2: 350, y2: 470, color: "#333" },
 
-      { type: "rect", x: 530, y: 400, w: 60, h: 70, color: "#8ab4d8" },
-      { type: "line", x1: 560, y1: 400, x2: 560, y2: 470, color: "#8ab4d8" },
+      { type: "rect", x: 530, y: 400, w: 60, h: 70, color: "#333" },
+      { type: "line", x1: 560, y1: 400, x2: 560, y2: 470, color: "#333" },
 
-      { type: "rect", x: 630, y: 400, w: 80, h: 70, color: "#8ab4d8" },
-      { type: "line", x1: 670, y1: 400, x2: 670, y2: 470, color: "#8ab4d8" },
-      { type: "line", x1: 630, y1: 435, x2: 710, y2: 435, color: "#8ab4d8" },
+      { type: "rect", x: 630, y: 400, w: 80, h: 70, color: "#333" },
+      { type: "line", x1: 670, y1: 400, x2: 670, y2: 470, color: "#333" },
+      { type: "line", x1: 630, y1: 435, x2: 710, y2: 435, color: "#333" },
 
       // First floor windows
-      { type: "rect", x: 220, y: 240, w: 80, h: 70, color: "#8ab4d8" },
-      { type: "line", x1: 260, y1: 240, x2: 260, y2: 310, color: "#8ab4d8" },
-      { type: "line", x1: 220, y1: 275, x2: 300, y2: 275, color: "#8ab4d8" },
+      { type: "rect", x: 220, y: 240, w: 80, h: 70, color: "#333" },
+      { type: "line", x1: 260, y1: 240, x2: 260, y2: 310, color: "#333" },
+      { type: "line", x1: 220, y1: 275, x2: 300, y2: 275, color: "#333" },
 
-      { type: "rect", x: 410, y: 240, w: 80, h: 70, color: "#8ab4d8" },
-      { type: "line", x1: 450, y1: 240, x2: 450, y2: 310, color: "#8ab4d8" },
-      { type: "line", x1: 410, y1: 275, x2: 490, y2: 275, color: "#8ab4d8" },
+      { type: "rect", x: 410, y: 240, w: 80, h: 70, color: "#333" },
+      { type: "line", x1: 450, y1: 240, x2: 450, y2: 310, color: "#333" },
+      { type: "line", x1: 410, y1: 275, x2: 490, y2: 275, color: "#333" },
 
-      { type: "rect", x: 600, y: 240, w: 80, h: 70, color: "#8ab4d8" },
-      { type: "line", x1: 640, y1: 240, x2: 640, y2: 310, color: "#8ab4d8" },
-      { type: "line", x1: 600, y1: 275, x2: 680, y2: 275, color: "#8ab4d8" },
+      { type: "rect", x: 600, y: 240, w: 80, h: 70, color: "#333" },
+      { type: "line", x1: 640, y1: 240, x2: 640, y2: 310, color: "#333" },
+      { type: "line", x1: 600, y1: 275, x2: 680, y2: 275, color: "#333" },
 
       // Floor labels
-      { type: "text", x: 770, y: 440, text: "GF", fontSize: 16, color: "#6a9ac4" },
-      { type: "text", x: 770, y: 290, text: "1F", fontSize: 16, color: "#6a9ac4" },
+      { type: "text", x: 770, y: 440, text: "GF", fontSize: 16, color: "#666" },
+      { type: "text", x: 770, y: 290, text: "1F", fontSize: 16, color: "#666" },
 
       // Width dimension
-      { type: "dim", x1: 150, y1: 560, x2: 750, y2: 560, label: "12.0 m", color: "#6a9ac4" },
+      { type: "dim", x1: 150, y1: 560, x2: 750, y2: 560, label: "12.0 m", color: "#666" },
 
       // Height dimension
-      { type: "dim", x1: 100, y1: 520, x2: 100, y2: 200, label: "6.4 m", color: "#6a9ac4" },
+      { type: "dim", x1: 100, y1: 520, x2: 100, y2: 200, label: "6.4 m", color: "#666" },
 
       // Ground level dashes
       { type: "dashed", x1: 100, y1: 525, x2: 800, y2: 525, color: "#4a7a9c" },

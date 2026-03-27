@@ -20,6 +20,7 @@ export type ElementType =
 export interface BaseElement {
   type: ElementType;
   color?: string;
+  textColor?: string;
   strokeWidth?: number;
   /** Rotation in degrees (clockwise), applied around the element's bounding-box center */
   rotation?: number;
@@ -39,6 +40,7 @@ export interface RectElement extends BaseElement {
   y: number;
   w: number;
   h: number;
+  label?: string;
 }
 
 export interface CircleElement extends BaseElement {
@@ -50,11 +52,16 @@ export interface CircleElement extends BaseElement {
 
 export interface ArcElement extends BaseElement {
   type: "arc";
-  cx: number;
-  cy: number;
+  /** Center x (POC uses 'x', also supports 'cx') */
+  x?: number;
+  y?: number;
+  cx?: number;
+  cy?: number;
   r: number;
-  startAngle: number;
-  endAngle: number;
+  startAngle?: number;
+  /** POC uses sweep (relative angle), production uses endAngle (absolute) */
+  sweep?: number;
+  endAngle?: number;
 }
 
 export interface ArrowElement extends BaseElement {
@@ -69,8 +76,12 @@ export interface TextElement extends BaseElement {
   type: "text";
   x: number;
   y: number;
-  text: string;
+  /** POC uses 'content', production uses 'text' */
+  text?: string;
+  content?: string;
+  /** POC uses 'size', production uses 'fontSize' */
   fontSize?: number;
+  size?: number;
 }
 
 export interface DashedElement extends BaseElement {
@@ -90,29 +101,40 @@ export interface DimElement extends BaseElement {
   x2: number;
   y2: number;
   label: string;
+  offset?: number;
 }
 
 export interface WindowElement extends BaseElement {
   type: "window";
-  x1: number;
-  y1: number;
-  x2: number;
-  y2: number;
+  /** POC format: x/y/w/d/wall */
+  x?: number;
+  y?: number;
+  w?: number;
+  d?: number;
+  wall?: "h" | "v";
+  /** Legacy format: x1/y1/x2/y2 */
+  x1?: number;
+  y1?: number;
+  x2?: number;
+  y2?: number;
 }
 
 export interface DoorSymbolElement extends BaseElement {
   type: "door-symbol";
   x: number;
   y: number;
-  w: number;
+  w?: number;
   swing?: "left" | "right";
+  wall?: "h" | "v";
 }
 
 export interface DoorSlideElement extends BaseElement {
   type: "door-slide";
   x: number;
   y: number;
-  w: number;
+  w?: number;
+  d?: number;
+  wall?: "h" | "v";
   direction?: "left" | "right";
 }
 
@@ -123,20 +145,32 @@ export interface StairElement extends BaseElement {
   w: number;
   h: number;
   steps?: number;
+  dir?: "up" | "down";
 }
 
 export interface OpeningElement extends BaseElement {
   type: "opening";
-  x1: number;
-  y1: number;
-  x2: number;
-  y2: number;
+  /** POC format: x/y/w/wall */
+  x?: number;
+  y?: number;
+  w?: number;
+  wall?: "h" | "v";
+  /** Legacy format: x1/y1/x2/y2 */
+  x1?: number;
+  y1?: number;
+  x2?: number;
+  y2?: number;
 }
 
 export interface ColumnElement extends BaseElement {
   type: "column";
-  cx: number;
-  cy: number;
+  /** POC format uses x/y/s */
+  x?: number;
+  y?: number;
+  s?: number;
+  /** Legacy format uses cx/cy/size */
+  cx?: number;
+  cy?: number;
   size?: number;
 }
 
@@ -176,24 +210,57 @@ export interface PaperSize {
 }
 
 export const PAPER_SIZES: Record<string, PaperSize> = {
+  "A4 landscape": { label: "A4 landscape", width: 595, height: 420 },
+  "A4 portrait": { label: "A4 portrait", width: 420, height: 595 },
+  "A3 landscape": { label: "A3 landscape", width: 700, height: 495 },
+  "16:9": { label: "16:9", width: 640, height: 360 },
   "A4+": { label: "A4+", width: 1000, height: 750 },
   A4: { label: "A4", width: 842, height: 595 },
   "A3+": { label: "A3+", width: 1400, height: 1000 },
-  "16:9": { label: "16:9", width: 1280, height: 720 },
 };
 
+/** POC paper background colors */
 export const PAPER_COLORS: Record<PaperType, string> = {
-  cream: "#f5f0e0",
-  white: "#ffffff",
-  yellow: "#fffff0",
-  blueprint: "#1a3a5c",
+  cream: "#f7f0e6",
+  white: "#fafafa",
+  yellow: "#fef9d3",
+  blueprint: "#1a3a6b", // gradient start; actual blueprint uses gradient in renderer
 };
 
+/** Board background colors (infinite canvas behind paper) */
+export const BOARD_COLORS: Record<PaperType, string> = {
+  cream: "#f0ead8",
+  white: "#f0f0f0",
+  yellow: "#f5efbf",
+  blueprint: "#162d58",
+};
+
+/** Grid line colors per paper type */
+export const GRID_COLORS: Record<PaperType, string> = {
+  cream: "#a8c4d8",
+  white: "#b5cde2",
+  yellow: "#c8b470",
+  blueprint: "rgba(180,210,255,.1)",
+};
+
+/** Blueprint color mapping — converts dark colors to light blueprint tones */
+export const BLUEPRINT_COLOR_MAP: Record<string, string> = {
+  "#111": "#d8eaff",
+  "#222": "#b0d0f0",
+  "#8b1a1a": "#ff9999",
+  "#1a3a8c": "#88d0ff",
+  "#1a4a20": "#aaefcd",
+  "#666": "#88aacc",
+  "#333": "#c0d8f0",
+  "#555": "#a0b8d0",
+};
+
+/** Simple tool line width/opacity for fallback; POC uses per-tool stroke renderers */
 export const TOOL_STYLES: Record<
   ToolType,
   { lineWidth: number; opacity: number }
 > = {
-  pencil: { lineWidth: 1, opacity: 0.6 },
-  ballpoint: { lineWidth: 1.5, opacity: 0.85 },
-  ink: { lineWidth: 2.5, opacity: 1.0 },
+  pencil: { lineWidth: 0.45, opacity: 0.3 },
+  ballpoint: { lineWidth: 0.8, opacity: 0.7 },
+  ink: { lineWidth: 1.0, opacity: 0.9 },
 };
