@@ -6,6 +6,24 @@
 
 ---
 
+## ⚡ URGENT: 02:00–06:00 CET (Before Launch Window Opens)
+
+*You have 4 hours. Here's what to do RIGHT NOW:*
+
+### Must-do before sleeping (if sleeping):
+1. **Verify site is up** — open skissify.com in an incognito window
+2. **Test the MCP server** — `npm install -g @skissify/mcp-server`, add to Claude Desktop config, ask Claude "draw a rectangle" — verify it returns a sketch URL
+3. **Product Hunt listing** — is it queued to go live at 09:01 CET? If not, do it now
+4. **Record at least ONE demo GIF** — the wobble slider (10 seconds, no narration) is the easiest and highest-ROI. Open Skissify, open ShareX or LICEcap, record amplitude 0→10→3
+5. **Schedule Tweet 1** — queue the launch tweet in Buffer/TweetDeck for 07:00 CET, don't trust yourself to be awake
+
+### If you have time left:
+- Write the 3 numbers in the retrospective post placeholder (check analytics at 22:00 today)
+- DM 5-10 specific people who would genuinely find it useful (not "please upvote" — "I built X, you might like it")
+- Add your Product Hunt URL to the scheduled tweets
+
+---
+
 ## Pre-Launch Checklist (Tonight — March 26/27)
 
 ### Product Readiness
@@ -141,6 +159,45 @@
 - Month 1 retrospective: publish transparent metrics (build-in-public)
 - Evaluate: enough traction for Team tier? Enterprise interest?
 - Plan Month 2 based on data
+
+---
+
+## Marketing Improvements (Cycle 4 — March 27, 02:00 CET)
+
+### Completed This Cycle
+- [x] ✅ Blog post #6 NEW: "The JSON Schema Behind Skissify — How We Made AI Agents into Designers" — 2,000-word technical deep-dive targeting HN/Dev.to developer audience; covers schema design decisions, wobble math, LLM generation rates, 3 things we got wrong first
+- [x] ✅ SOCIAL-MEDIA.md: Added Indie Hackers post template (Day 2, with real metrics placeholder table, honest framing)
+- [x] ✅ SOCIAL-MEDIA.md: Added Discord per-server templates for 5 communities (Anthropic Discord, MCP Discord, Indie Hackers Slack, The Changelog Discord, generic dev servers) — each tuned to that community's culture
+- [x] ✅ All 6 blog posts ready for distribution:
+  1. `why-hand-drawn-sketches-beat-figma.md` — Medium, Hashnode (Day 5)
+  2. `how-ai-agents-draw-floor-plans.md` — Dev.to, Hashnode (Day 3)
+  3. `skissify-vs-excalidraw.md` — Dev.to, Medium (Day 4)
+  4. `build-first-ai-floor-plan-15-minutes.md` — Dev.to first (Day 2)
+  5. `we-launched-today-here-is-what-happened.md` — fill tonight 22:00, post to Indie Hackers
+  6. `the-json-schema-behind-skissify.md` — NEW, Dev.to + HN follow-up thread (Day 2-3)
+
+### Technical Blog Post Summary
+"The JSON Schema Behind Skissify" covers:
+- Why SVG/Excalidraw format/Canvas API were wrong for LLM generation
+- The schema design (flat list, absolute coords, top-level aesthetics)
+- Multi-harmonic wobble math (code included)
+- Per-element wobble tuning logic
+- Actual MCP tool description used
+- LLM generation success rate (~85%)
+- 3 schema mistakes and how they were fixed
+- Roadmap (furniture, rotation, SVG export)
+
+This post is optimized for Hacker News engagement: technical, shows reasoning, honest about failures, includes code.
+
+### Blog Distribution Schedule (Final)
+| Post | Platform Order | Day |
+|------|---------------|-----|
+| "We Launched Today" | Indie Hackers → Dev.to | Launch Day 22:00 |
+| "Build First AI Floor Plan" | Dev.to → Hashnode | Day 2 (Sat) |
+| "JSON Schema Behind Skissify" | Dev.to → HN reference link | Day 2-3 |
+| "How AI Agents Draw Floor Plans" | Dev.to → Hashnode | Day 3 (Sun) |
+| "Skissify vs Excalidraw" | Dev.to → Medium | Day 4 (Mon) |
+| "Why Hand-Drawn Beats Figma" | Medium → Hashnode | Day 5 (Tue) |
 
 ---
 

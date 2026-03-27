@@ -819,6 +819,165 @@ Free editor: skissify.com
 
 ---
 
+---
+
+## Indie Hackers Post (Day 2 — March 28)
+
+**Title:** I launched Skissify yesterday — here are the real numbers (build-in-public)
+
+```
+Hey Indie Hackers,
+
+Yesterday I launched Skissify: a sketch tool where the input is JSON instead of drag-and-drop.
+
+Why JSON? Because AI agents can generate it. With MCP support (Model Context Protocol), Claude and other AI assistants can design and draw floor plans, wireframes, and architecture diagrams in conversation. No human hand needed.
+
+---
+
+**The real numbers (24 hours post-launch):**
+
+| Metric | Target | Actual |
+|--------|--------|--------|
+| Website visits | 500 | [X] |
+| Signups | 50 | [X] |
+| Sketches created | 100 | [X] |
+| Pro subscriptions | 5 | [X] |
+| Product Hunt upvotes | 100 | [X] |
+| HN points | 50 | [X] |
+| MCP npm installs | 10 | [X] |
+
+*[Fill in real numbers before posting]*
+
+---
+
+**What worked:**
+[Fill in from launch day]
+
+**What didn't:**
+[Fill in honestly]
+
+**Biggest surprise:**
+[Fill in]
+
+---
+
+**What I built:**
+- JSON-first rendering engine — paste JSON, get a hand-drawn sketch
+- 14 element types (including architectural: doors, windows, stairs, dimension lines)
+- Multi-harmonic wobble algorithm (lines look actually hand-drawn, not fake)
+- 4 paper styles: cream, white, grid, blueprint
+- MCP server — npm install, works with Claude Desktop
+- Free tier (public sketches) + Pro at €5/month
+
+**Stack:** Next.js 15, TypeScript, Canvas 2D, Prisma/SQLite, Stripe
+
+---
+
+**What's the plan now:**
+
+Keep shipping. Priority order based on feedback:
+1. [Top user request from launch day]
+2. SVG export
+3. More element types (furniture blocks, electrical)
+4. Potentially: collaborative editing
+
+If you're an indie hacker who's used AI agents in your product, I'd love to hear: **what other visual output problems do you wish AI could solve?**
+
+Live at skissify.com — editor is free, no signup needed to try.
+```
+
+---
+
+## Discord Per-Server Templates
+
+*Each Discord community has different norms. Use the right tone for each.*
+
+### Anthropic Discord (#mcp-showcase or #cool-projects)
+```
+Hey! Just launched a new MCP server today — Skissify 🎉
+
+It lets AI agents create hand-drawn sketches. You ask Claude to design a floor plan (or wireframe, or diagram), it generates JSON, calls Skissify's MCP server, and returns a rendered sketch.
+
+Install: `npm install -g @skissify/mcp-server`
+
+Claude Desktop config:
+{
+  "mcpServers": {
+    "skissify": {
+      "command": "npx",
+      "args": ["@skissify/mcp-server"],
+      "env": { "SKISSIFY_API_KEY": "your-key" }
+    }
+  }
+}
+
+Free API key at skissify.com — would love feedback from this community on the MCP interface and what tool calls you'd want.
+```
+
+### MCP Discord (discord.gg/6tGkQcFjBY or discord.me/mcp)
+```
+New MCP server drop: Skissify ✏️
+
+`create_sketch` tool — takes a JSON manifest describing elements (rects, doors, windows, stairs, dimensions), renders as hand-drawn sketch, returns a URL.
+
+Use case: AI agents that need visual output. Ask Claude to design a space and it can actually draw it.
+
+14 element types, 4 paper styles, tunable wobble engine.
+
+Install: `npm i -g @skissify/mcp-server`
+Docs + free API key: skissify.com
+
+Happy to answer technical questions about the schema or rendering approach.
+```
+
+### Indie Hackers Slack (#show-ih)
+```
+🚀 Launched today: Skissify — JSON to hand-drawn sketches, built for AI agents
+
+The pitch: Skissify has no drag-and-drop. The input is JSON. Which means AI agents can use it natively (MCP server included).
+
+Tell Claude to draw a floor plan → it generates JSON → calls Skissify → you get a sketch.
+
+Free tier + Pro at €5/month. Launched on Product Hunt today: [link]
+
+Would love IH feedback especially on the pricing — is €5/mo the right number for this audience?
+```
+
+### The Changelog Discord (#projects or #show-dev)
+```
+Built and launched: Skissify
+
+It's a sketch renderer where JSON is the input, not mouse clicks. I wanted AI agents to have visual output capabilities — so I built a tool with a JSON-first API and an MCP server.
+
+Technical bit that was fun: the rendering engine uses multi-harmonic wobble (not the boring sine-wave approach most tools use) to make lines look authentically hand-drawn.
+
+14 element types including architectural specifics: hinged doors, sliding doors, windows, staircases, dimension lines. Each element type has tuned wobble parameters.
+
+Stack: Next.js 15 / TypeScript / Canvas 2D / Prisma / SQLite
+MCP: npm install -g @skissify/mcp-server
+
+skissify.com — free tier available
+```
+
+### Developer Discords (generic — good for AI/dev servers)
+```
+Hey — just launched Skissify today, figured this community might find it interesting.
+
+One-liner: AI agents can now create hand-drawn sketches.
+
+The tool takes JSON as input (floor plans, diagrams, wireframes) and renders it with a hand-drawn aesthetic. With MCP support, Claude can design and draw layouts autonomously in conversation.
+
+What makes it technically interesting:
+- Multi-harmonic wobble algorithm (not simple sine wave)
+- 14 architectural element types
+- Seeded randomness (same JSON → same sketch, but each element looks unique)
+- Full MCP server (npm)
+
+Editor is free at skissify.com, no signup needed to try.
+```
+
+---
+
 ## Response Templates
 
 ### When someone asks "Why not just use Excalidraw?":

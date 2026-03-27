@@ -239,5 +239,85 @@ Happy to provide interview, exclusive demo, or any screenshots you need.
 
 ---
 
-*Press kit version 2.0 — March 27, 2026 (launch day)*  
-*Added: newsletter targets, directory list, outreach template*
+---
+
+## Product Hunt Listing — Ready to Submit
+
+*Copy-paste these exact fields into producthunt.com/posts/new*
+
+### Product Name
+```
+Skissify
+```
+
+### Tagline (50 chars — use exactly this)
+```
+JSON to hand-drawn sketches — built for AI agents
+```
+
+### Description (480 chars — fits 500 char limit with room)
+```
+Skissify renders JSON into hand-drawn sketches: floor plans, wireframes, architecture diagrams.
+
+What makes it different:
+→ JSON-first: paste JSON or let an AI agent generate it
+→ AI-native: first sketch tool with MCP support — Claude can create sketches programmatically
+→ 14 element types including architectural: doors, windows, stairs, dimension lines
+→ Tunable wobble engine: amplitude, waves, humanness
+
+Free (public sketches) or Pro at €5/mo for private + API.
+```
+
+### Topics (select all that apply)
+- Developer Tools
+- Artificial Intelligence
+- Design Tools
+- Productivity
+
+### Links
+- Website: https://skissify.com
+- GitHub (MCP server): [add when public]
+
+### Gallery Images (upload in this order)
+1. `skissify-og-hero.png` — split view: JSON left, floor plan right
+2. `skissify-paper-types.png` — 4 paper styles side by side
+3. `skissify-mcp-claude.png` — Claude Desktop using MCP to create a sketch
+4. `skissify-element-types.png` — all 14 element types rendered
+5. `skissify-share-view.png` — public share link view
+
+### Maker's First Comment (post within 5 minutes of going live)
+```
+Hey Product Hunt! 👋
+
+I'm [name] — I built Skissify because I wanted AI agents to have visual output.
+
+The idea: describe a sketch in JSON (or let Claude do it), Skissify renders it as a hand-drawn image. Floor plans, wireframes, architecture diagrams — anything you'd sketch on a napkin.
+
+Why JSON? Because it means any AI agent can generate sketches programmatically. The MCP server lets Claude design and draw floor plans in conversation. No drag-and-drop. No human hand needed.
+
+The wobble engine uses multi-harmonic algorithms — not the mechanical sine-wave you see in other tools. Three tunable parameters: amplitude (how wobbly), waves (frequency), and humanness (random tremor). Go from ruler-straight to "drew this in a hurry."
+
+What's here today:
+✅ 14 element types (including architectural: doors, windows, stairs, dimensions)
+✅ 4 paper styles (cream, white, grid, blueprint)
+✅ 3 tool types (pencil, ballpoint, ink)
+✅ MCP server (npm install, Claude Desktop ready)
+✅ Free tier — public sketches
+✅ Pro at €5/mo — private + API
+
+To try it right now: skissify.com/editor — no signup, paste any JSON.
+
+What would you use this for? Floor plans? System diagrams? UI wireframes? And what element types should I add next? I'm building the roadmap in public based on feedback.
+
+Thanks for being here on launch day 🙏
+```
+
+### Pre-Launch Page Strategy
+- Create "coming soon" PH page at least 24h before launch (for follower accumulation)
+- Share the "coming soon" link in 2-3 relevant Discord communities the night before
+- Do NOT ask for upvotes directly — ask for feedback
+
+---
+
+*Press kit version 3.0 — March 27, 2026 (02:00 CET)*  
+*Added: Product Hunt listing ready-to-submit, Discord per-server templates (in SOCIAL-MEDIA.md)*
