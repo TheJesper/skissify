@@ -2,6 +2,134 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #17 (20:43 CET, Friday March 27)
+
+### Priority Context (Run #17 — End-of-day Friday, intelligence cycle closed)
+
+This is the final strategy run of March 27, 2026. Brave Search quota is exhausted. 17 consecutive scans confirmed the niche is structurally unoccupied. The intelligence cycle is complete. Saturday is the only remaining variable.
+
+**The situation in one paragraph**: All marketing infrastructure is pre-built. All competitive intelligence is gathered. The EUR 2/mo conversion thesis is validated across 8 independent data sources. The "Google Gap" narrative has 5–7 more days of relevance. The MCP registry has 5,000+ servers and is discoverable by enterprise IT. The only thing that doesn't exist is `@skissify/mcp`. Saturday is the day it either gets built or the window narrows further.
+
+**Delay cost (Smartsheet benchmark)**: ~400 developer users/week not acquired.
+
+---
+
+### ✅ Saturday Action 1 — ONLY ACTION THAT MATTERS: Ship `@skissify/mcp` v0.1 (4–6 hours)
+
+This action has appeared in every single one of the 17 strategy runs today. It is the unlock for everything else. Do not start Action 2 or Action 3 until this is done.
+
+**Build sequence (do not deviate)**:
+
+```bash
+# Step 1: Create package
+mkdir W:/code/skissify/packages/mcp
+cd W:/code/skissify/packages/mcp
+npm init -y
+
+# Step 2: Install dependencies
+npm install @modelcontextprotocol/sdk zod
+
+# Step 3: Create entry point
+# (implement render_sketch tool — see skeleton below)
+
+# Step 4: Test locally
+# Add to claude_desktop_config.json, verify tool appears
+
+# Step 5: Publish
+npm publish --access public
+
+# Step 6: Submit to registries (30 min mechanical work)
+# modelcontextprotocol.io/registry
+# awesome-mcp-servers PR
+# claudefa.st, mcpmanager.ai, mcpservers.org
+```
+
+**Minimum viable implementation** (the only code that matters for v0.1):
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+  name: "skissify",
+  version: "0.1.0",
+  description: "Hand-drawn SVG sketches from JSON manifests. Floor plans, architecture diagrams, napkin sketches. The sketch layer for AI agents."
+});
+
+server.tool(
+  "render_sketch",
+  "Render a Skissify JSON manifest as a hand-drawn SVG. Supports floor plans with walls, doors, windows, stairs, dimensions. Returns SVG string. Free tier includes watermark.",
+  { manifest: z.object({}).passthrough() },
+  async ({ manifest }) => {
+    // Call existing Skissify rendering engine
+    const svg = await renderManifest(manifest, { watermark: true });
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**Success metric**: `npx @skissify/mcp` installs, Claude Desktop shows `render_sketch` in tool list, one floor plan generated. Screenshot this — it is the entire marketing campaign.
+
+---
+
+### ✅ Saturday Action 2 — HIGH: Publish HN "Show HN" Post (45 min — do this AFTER Action 1 is live on npm)
+
+**The post** (save to `docs/marketing/blog/hn-launch-post.md` or publish directly):
+
+```
+Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP that Google Stitch isn't.
+
+Google Stitch launched an AI canvas MCP this month — polished UIs, Figma exports, Gemini-powered.
+Mermaid MCP: 22+ topology diagram types, 50+ templates.
+draw.io MCP: technical flowcharts and process diagrams.
+
+Nobody made the hand-drawn sketch version. Especially not floor plans.
+
+Skissify: describe a floor plan or architecture sketch as JSON → renders as hand-drawn SVG.
+MCP-native. Works in Claude Desktop, Cursor, any MCP client.
+
+- render_sketch(manifest) → hand-drawn SVG
+- Floor plans: walls, doors, windows, stairs, columns, dimensions
+- Tunable: wobble amplitude, paper type (cream/grid/blueprint), tool style (pencil/ink/ballpoint)
+- Free (watermarked). EUR 2/mo clean renders. EUR 5/mo Pro (saves, sharing).
+
+npx @skissify/mcp
+
+The declarative approach: describe the finished scene in JSON, Skissify renders it.
+Unlike tldraw's imperative Canvas API (send commands), Skissify is one-shot: JSON in → SVG out.
+```
+
+**Why this week specifically**: Google Stitch's MCP launch (2,400+ skills stars) is still in the news cycle. This HN post rides that wave as a counter-positioning. After April 3, the Stitch reference becomes stale.
+
+---
+
+### ✅ Saturday Action 3 — MEDIUM: Update Homepage Copy to "Google Gap" Positioning (30 min)
+
+If any time remains after Actions 1 and 2, update the homepage hero copy. If not, write it to `docs/marketing/COPY-LIBRARY.md` under "Homepage Hero — Active Version":
+
+**New hero**:
+- **Headline**: "The sketch layer for your AI stack"
+- **Sub**: "Google Stitch makes polished UIs. Mermaid makes flowcharts. Skissify makes hand-drawn sketches — floor plans, architecture diagrams, napkin ideas. JSON in, SVG out. MCP-native."
+- **CTA**: "Try it — no signup required" (pipeline: free render → watermark → upgrade)
+
+**Why "no signup required"**: 38% of 2026's best freemium tools use try-before-signup. The watermark is the conversion trigger, not the gate.
+
+---
+
+### Completion Log (update Saturday evening)
+- [ ] `@skissify/mcp` v0.1 published to npm: ___
+- [ ] Submitted to modelcontextprotocol.io/registry: ___
+- [ ] PR to awesome-mcp-servers opened: ___
+- [ ] Submitted to claudefa.st + mcpmanager.ai + mcpservers.org: ___
+- [ ] HN Show HN post published: ___
+- [ ] Screenshot of first Claude-generated sketch: ___
+- [ ] Homepage copy updated or written to COPY-LIBRARY.md: ___
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #16 (19:33 CET, Friday March 27)
 
 ### Priority Context (Run #16 — End-of-day Friday, final scan of March 27)

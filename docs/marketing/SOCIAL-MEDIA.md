@@ -4911,3 +4911,224 @@ skissify.com
 
 *Last Updated: March 27, 2026 (Cycle 23 - 19:37 CET)*
 *Added: Tweets 66-72 (AI agent stack, UX angle, dungeon master story, LLM benchmark, n8n workflow, design engagement bait, Day 1 wrap), r/AI_Agents post, r/n8n post, LinkedIn evening post, Discord Anthropic post, timing table 19:37-23:59 CET, blog posts #32-34, new communities table*
+
+---
+
+## Marketing Improvements (Cycle 24 — March 27, 20:48 CET)
+
+### ⚡ STATUS: LAUNCH EVENING — FINAL PUSH BEFORE MIDNIGHT
+
+It's 20:48 CET (2:48 PM ET / 11:48 AM PT). US peak hours are NOW. This is the most important 2-hour window remaining on launch day. Cycle 24 adds: video/TikTok strategy (the channel nobody has used yet), a tighter 23:00 CET wrap tweet formula with fill-in numbers, a new "20 hours in" blog post written and ready to publish, email newsletter capture urgency (we don't have this yet), and r/ChatGPT as a new community angle.
+
+### What Changed Since Cycle 23
+- **TikTok/Reels is untouched**: 20+ cycles of content and zero video strategy. Short-form video is the highest-reach channel for visual products like Skissify. The "wobble slider" demo is perfect TikTok content — silent, visual, satisfying. Added first video strategy and script templates.
+- **Newsletter capture is missing**: No CTAs collecting emails anywhere in the plan. Email list > Product Hunt upvotes for Day 2+ retention. Added newsletter CTA copy and placement suggestions.
+- **r/ChatGPT is a gap**: 6M+ members, huge overlap with "I use AI for everyday stuff" audience. The homeowner floor plan story (describe your kitchen, get a sketch) maps perfectly here.
+- **The 23:00 wrap tweet needs sharpening**: Added a fill-in-blank formula with exactly 5 data points — no more, no less — based on what performed best in build-in-public tweets historically.
+- **Blog post #35 written**: "20 Hours In — The Honest Numbers and What's Working" — the most timely post we have. Should go live tonight.
+
+### New Tweets (Cycle 24)
+
+#### Tweet 73: The Video Hook (Post 21:00 CET)
+```
+Most people describe Skissify with words.
+
+Let me show you instead.
+
+[3-second silent GIF: JSON paste → floor plan renders with wobble animation]
+
+JSON in. Hand-drawn sketch out.
+AI agents use this via MCP.
+
+Free: skissify.com
+```
+*Video note: shoot this on your screen. 10-15 seconds. No narration. The visual does all the work.*
+
+#### Tweet 74: The Newsletter Ask (Post 21:30 CET)
+```
+Building Skissify in public.
+
+If you want:
+→ real launch numbers (Day 1 wrap tonight)
+→ how the wobble rendering works (technical deep-dive)
+→ the homeowner use case I didn't plan for
+→ what's next for MCP visual output
+
+Newsletter: [skissify.com/newsletter or add your email link]
+
+Day 1 of [X] people — I'll share everything.
+```
+
+#### Tweet 75: The r/ChatGPT Bridge (Post 22:00 CET)
+```
+Here's a workflow more people should know about:
+
+1. Open ChatGPT (or Claude)
+2. Say: "Design a compact home office layout for a 3m × 4m room. Output as Skissify JSON."
+3. Paste the JSON into skissify.com
+4. Get a hand-drawn floor plan
+
+Your AI assistant just became an architect.
+
+Free. No signup.
+```
+
+#### Tweet 76: Sharp Day 1 Wrap (23:00 CET — fill in real numbers)
+```
+Day 1 done.
+
+[X] signups
+[X] sketches created  
+[X] via AI/MCP
+[X] countries
+
+Best moment: [one sentence — specific, real]
+Worst moment: [one sentence — honest]
+
+Didn't plan for: homeowners using it for kitchen renovations
+
+Day 2 starts tomorrow. Newsletter launches. Demo video drops.
+
+skissify.com
+```
+
+---
+
+### TikTok / Instagram Reels Strategy (NEW — Cycle 24)
+
+**Why this matters:** Skissify is a *visual* product. Short-form video is the highest-conversion channel for visual tools. One good TikTok can outperform 50 tweets.
+
+**The content that works on TikTok for dev tools:**
+1. Satisfying process videos (no narration, music, watch transformation happen)
+2. "Wait, that's an AI?" reveals (human thought → agent output)
+3. "You didn't know you could do this" formats
+
+**Three TikTok concepts ready to shoot:**
+
+**Concept A: The Wobble Satisfier (15 seconds)**
+```
+[Visual only, no text overlay needed]
+- Start: clean Skissify editor, empty canvas
+- Paste JSON with 8 rooms
+- 0.5 seconds: sketch renders
+- Next 10 seconds: slider moves from amplitude 0 to 10
+- Lines get increasingly wobbly, character-filled
+- Final frame: beautiful rough floor plan at amplitude 4
+[Hook text at start: "I've been adjusting this for 3 hours"]
+```
+*Audio: trending lo-fi or satisfying ambient. No talking required.*
+
+**Concept B: The AI Reveal (30 seconds)**
+```
+[Show chat interface first]
+- "design a coffee shop layout for a 8m × 12m space"
+- AI responds with JSON block
+[Cut to Skissify]
+- Paste JSON
+- Sketch renders instantly
+[End card]
+- "Your AI can draw now."
+- skissify.com
+```
+*Audio: "wait, what?" trending audio OR silent with text captions*
+
+**Concept C: The Homeowner Story (45 seconds)**
+```
+[Text overlay: "I needed to explain my kitchen renovation to a contractor"]
+- Show Claude chat: "My kitchen is 4m × 5m. I want an island, north-facing window, door on east wall."
+- Show AI generating JSON
+- Paste into Skissify
+- Floor plan renders
+[Text overlay: "Printed this and brought it to the meeting. Contractor loved it."]
+[End: "skissify.com — free"]
+```
+*This is the viral format. Relatable problem → simple AI solution → real outcome.*
+
+**Posting schedule:**
+- Day 1 tonight: shoot Concept A (easiest, no narration)
+- Day 2: Concept B (the AI reveal)
+- Day 3: Concept C (homeowner story — highest viral potential)
+
+**TikTok hashtags (Cycle 24):**
+`#ai #aitools #floorplan #interiordesign #homedesign #buildinpublic #devtools #mcp #aiagents #satisfying #sketch #renovation`
+
+Note: Mix AI/tech tags (#aitools #aiagents #mcp) with consumer tags (#floorplan #homedesign #renovation) — this is what reaches both audiences.
+
+---
+
+### r/ChatGPT Post (New Community — 22:00 CET)
+
+**Title:** You can use ChatGPT to generate floor plan sketches — no design tools needed
+
+```
+Workflow that more people should know:
+
+1. Ask ChatGPT: "Design a [room type] layout for a [dimensions] space. Output as Skissify JSON."
+2. Copy the JSON block
+3. Paste it at skissify.com
+4. Get a hand-drawn floor plan instantly
+
+I've used this for:
+- Planning a home office layout before buying furniture
+- Explaining a room renovation concept to a contractor
+- Quickly comparing 3 different kitchen configurations
+
+The AI understands space, proportions, and adjacency really well. Skissify just gives it a pen.
+
+Free to try — no signup needed to test.
+
+[screenshot: ChatGPT conversation → Skissify floor plan]
+```
+
+---
+
+### Newsletter Capture CTAs (NEW — Cycle 24)
+
+These CTAs are missing from the entire content strategy. Add them everywhere.
+
+**Website banner (sticky bottom):**
+> "Day 1 of Skissify. Get the real launch numbers + what's next — [subscribe free]"
+
+**After-sketch CTA (shown when user creates first sketch):**
+> "Nice sketch. Want to see what AI agents are doing with this? We send one useful thing per week."  
+> [email input] [Subscribe — free]
+
+**Reddit comment add-on (append to all launch posts):**
+> "If you want the honest Day 1 numbers + what's on the roadmap, I'm starting a newsletter — link in bio or skissify.com"
+
+**Twitter bio CTA:**
+> "📬 Building Skissify in public → real numbers at [newsletter link]"
+
+---
+
+### Updated Timing Table (Cycle 24 — 20:48 to 23:59 CET)
+
+| Time (CET) | Platform | Action |
+|------------|----------|--------|
+| 21:00 | Twitter/X | Tweet 73 - video/wobble hook (+ GIF) |
+| 21:00 | r/AI_Agents | Carry-over from Cycle 23 if not posted |
+| 21:30 | Twitter/X | Tweet 74 - newsletter ask |
+| 21:30 | Discord (Anthropic MCP) | MCP showcase post (carry-over if not posted) |
+| 21:30 | Discord (Changelog) | Show & Tell post (carry-over if not posted) |
+| 22:00 | Twitter/X | Tweet 75 - ChatGPT bridge |
+| 22:00 | r/ChatGPT | NEW: homeowner floor plan workflow |
+| 22:30 | r/tabletopgaming | Dungeon map discovery story |
+| 23:00 | Twitter/X | Tweet 76 - Day 1 wrap (REAL numbers only) |
+| 23:30 | Dev.to | Blog post #35: "20 Hours In" |
+
+### New Blog Post (Cycle 24)
+
+| # | Title | File | Best Platform | Day |
+|---|-------|------|--------------|-----|
+| 35 | **Launch Day: 20 Hours In — The Honest Numbers and What's Working** | `launch-day-20-hours-in-what-we-know.md` | **Dev.to tonight, Substack Day 2** | **Day 1 tonight** |
+
+### New Communities Added (Cycle 24)
+
+| Community | Members | Angle | Priority |
+|-----------|---------|-------|---------|
+| **r/ChatGPT** | 6M+ | ChatGPT → Skissify floor plan workflow (no signup needed) | 🔴 High |
+| **TikTok** | — | Wobble satisfier video, AI reveal, homeowner story | 🔴 High (Day 1-3) |
+| **Instagram Reels** | — | Same content as TikTok, repurposed | 🟡 Medium |
+
+*Last Updated: March 27, 2026 (Cycle 24 — 20:48 CET)*
+*Added: Tweets 73-76 (video hook, newsletter ask, ChatGPT bridge, precise Day 1 wrap), full TikTok/Reels video strategy with 3 ready-to-shoot concepts, r/ChatGPT post, newsletter capture CTAs for 4 placements, timing table 20:48-23:59 CET, blog post #35*

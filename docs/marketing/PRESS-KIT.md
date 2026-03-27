@@ -840,4 +840,52 @@ A geometry teacher found Skissify through a Twitter thread and has been generati
 | v4 (press) | Journalists | "The AI agent that can finally draw." |
 | v5 (punchy) | Social | "I built it for engineers. Dungeon masters found it first." |
 
-*Press Kit Last Updated: Cycle 22 - 18:30 CET, March 27, 2026*
+---
+
+## PRESS KIT UPDATE — Cycle 24 (March 27, 2026 - 20:48 CET)
+
+### Video Assets (NEW — First Video Strategy)
+
+Short-form video is now a priority channel for Skissify press coverage and social distribution. The following video concepts are approved for press use and public sharing:
+
+**Video A: The Wobble Satisfier (15 seconds)**
+- Content: Skissify editor, empty canvas → JSON paste → floor plan renders → wobble amplitude slider moves from 0 to 10
+- Format: Silent, no narration, ambient audio or trending lo-fi
+- Shooting window: Tonight (Day 1 evening)
+- Filename (when produced): `skissify-wobble-satisfier-15s.mp4`
+
+**Video B: The AI Reveal (30 seconds)**
+- Content: Claude chat window — natural language prompt → AI generates JSON → cut to Skissify → paste → instant sketch
+- Format: Screen recording, optional caption overlay
+- Target: Day 2 morning
+- Filename: `skissify-ai-reveal-30s.mp4`
+
+**Video C: The Homeowner Story (45 seconds)**
+- Content: Problem setup (contractor meeting) → describe room to Claude → get JSON → paste to Skissify → floor plan renders → print
+- Format: Text overlay storytelling, no face needed
+- Viral target: Highest cross-audience potential (tech + home/DIY)
+- Filename: `skissify-homeowner-story-45s.mp4`
+
+### New Press Angle: The Dual Market Discovery
+
+**Hook:** "I built a developer tool. On Day 1, homeowners used it more than developers expected."
+
+The accidental consumer market for Skissify is a genuine story. Homeowners are using Claude to describe room layouts, pasting the JSON output into Skissify, and printing floor plans for contractor meetings. No JSON knowledge required — Claude handles all the technical input.
+
+This creates a rare launch story: a tool that opened two different markets simultaneously, with zero product changes.
+
+**Pitch copy for consumer press:**
+> "Skissify was built for AI developers. On launch day, the most surprising use case came from homeowners planning kitchen renovations — using ChatGPT to describe their space, getting JSON back, and pasting it into Skissify for a hand-drawn floor plan. The product hadn't changed. The audience was just wider than expected."
+
+### One-Liner Evolution (Updated)
+
+| Version | Best For | Copy |
+|---------|---------|------|
+| v1 (launch) | Developers | "JSON in. Hand-drawn sketch out. AI agents native." |
+| v2 (homeowner) | Consumer | "Tell your AI what a room should look like. Skissify draws it." |
+| v3 (TTRPG) | Gaming | "From dungeon maps to floor plans — AI draws the spaces you describe." |
+| v4 (press) | Journalists | "The AI agent that can finally draw." |
+| v5 (punchy) | Social | "I built it for engineers. Dungeon masters found it first." |
+| v6 (video) | TikTok/Reels | "JSON in. Hand-drawn out. AI agents use this." (3-second text overlay) |
+
+*Press Kit Last Updated: Cycle 24 - 20:48 CET, March 27, 2026*

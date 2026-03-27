@@ -214,6 +214,58 @@ It's 17:30 CET (11:30 AM ET / 8:30 AM PT). **Cycle 20 shifts from planning to ex
 
 ---
 
+## Marketing Improvements (Cycle 21 — March 27, 20:48 CET)
+
+### ⚡ STATUS: LAUNCH EVENING — FINAL 2-HOUR PUSH, US PEAK ENGAGEMENT NOW
+
+It's 20:48 CET (2:48 PM ET / 11:48 AM PT). This is the highest-value window remaining on launch day. US both coasts are fully online. The content backlog is deep — execution quality is what matters now. **Cycle 21's biggest additions: TikTok/Reels video strategy (first time video has been planned), newsletter capture CTAs (missing from every prior cycle), r/ChatGPT as high-traffic new community, and Blog post #35 written and ready to publish tonight.**
+
+### What Changed Since Cycle 20
+- **TikTok strategy written**: First short-form video plan in 21 cycles. Three ready-to-shoot concepts (wobble satisfier, AI reveal, homeowner story). The wobble satisfier can be shot in 15 minutes with no narration.
+- **Newsletter capture CTAs**: No email capture strategy existed anywhere. Added 4 placement CTAs: website banner, post-sketch, Reddit comment add-on, Twitter bio. Email > PH upvotes for retention.
+- **r/ChatGPT unlocked**: 6M+ member community not in any prior plan. The "describe room → ChatGPT JSON → Skissify floor plan" workflow works with zero Skissify-specific knowledge.
+- **Blog post #35 written**: "Launch Day: 20 Hours In" — most timely content we have. Publish tonight at 23:30 CET.
+- **Tweets 73-76 written**: Video hook, newsletter ask, ChatGPT bridge, and sharpened Day 1 wrap formula.
+
+### Completed This Cycle (21)
+- [x] ✅ **Blog post #35 NEW**: "Launch Day: 20 Hours In — The Honest Numbers and What's Working" — honest evening wrap covering the two-audience discovery, the "can I draw with my mouse?" gap, MCP market signal, and Day 2 plan. File: `docs/marketing/blog/launch-day-20-hours-in-what-we-know.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 24**: Tweets 73-76, full TikTok/Reels strategy with 3 shoot-ready concepts, r/ChatGPT post, newsletter capture CTAs for 4 placements, updated timing table 20:48-23:59 CET
+- [x] ✅ **TikTok strategy activated**: Wobble satisfier (easiest, tonight), AI reveal (Day 2), homeowner story (Day 3 — highest viral potential)
+- [x] ✅ **Newsletter capture added**: 4 CTA placements ready to implement
+- [x] ✅ **r/ChatGPT post written**: 6M+ members, homeowner/everyday-user angle, no technical barrier
+
+### New Blog Post (Cycle 21)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 35 | **Launch Day: 20 Hours In — The Honest Numbers** | `launch-day-20-hours-in-what-we-know.md` | Dev.to tonight, Substack Day 2 | **Day 1 tonight** |
+
+### New Communities Unlocked (Cycle 21)
+| Community | Members | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/ChatGPT** | 6M+ | "ChatGPT can generate floor plan JSON → paste to Skissify → instant sketch" | 22:00 CET |
+| **TikTok** | — | Wobble satisfier (shot tonight) | Day 1-3 |
+
+### Immediate Actions Right Now (20:48 CET)
+1. **Shoot TikTok Concept A** (wobble satisfier) — 5-15 minutes, no narration, highest ROI per minute of effort
+2. **Post Tweet 73** (video hook) — 21:00 CET
+3. **Post to r/AI_Agents** if not yet posted (carry-over from Cycle 23)
+4. **Post Discord: Anthropic MCP** if not yet posted — 21:30 CET
+5. **Post Discord: Changelog** if not yet posted — 21:30 CET
+6. **Post Tweet 74** (newsletter ask) — 21:30 CET
+7. **Post r/ChatGPT** — 22:00 CET
+8. **Post Tweet 75** (ChatGPT bridge) — 22:00 CET
+9. **Post Tweet 76** (Day 1 wrap) — 23:00 CET sharp, **real numbers only**
+10. **Publish blog post #35** on Dev.to — 23:30 CET
+
+### Cumulative Blog Inventory (35 posts)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1-27 | [See Cycles 1-20 for full list] | various | various | various |
+| 28-34 | [See Cycles 21-23 for list] | various | various | various |
+| 35 | **Launch Day: 20 Hours In** | `launch-day-20-hours-in-what-we-know.md` | Dev.to tonight, Substack Day 2 | Day 1 |
+
+---
+
 ## Marketing Improvements (Cycle 19 — March 27, 17:00 CET)
 
 ### ⚡ STATUS: FRIDAY EVENING US PRIME TIME — NEWSLETTER OUTREACH + DISCORD COMMUNITIES
