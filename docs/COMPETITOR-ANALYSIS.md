@@ -890,6 +890,45 @@ Without these tutorials, Skissify will be invisible even when its MCP server is 
 
 ---
 
+## Update Log: March 27, 2026 — 17:14 CET | Automated Strategy Run #14
+
+### 🟡 NEW ENTRANT WATCH: Coohom AI Floor Planner — Free 3D, Zero JSON, Zero MCP (Published March 26, 2026)
+- **URL**: https://www.coohom.com/article/free-ai-architecture-plan-generator (published March 26, 2026 — yesterday)
+- Coohom published a first-person architect's review of "Free AI Architecture Plan Generator" tools (their own platform) — getting fresh SEO traction
+- Coohom platform: upload sketch/photo → AI generates 2D floor plan → converts to 3D visualization
+- Target: interior designers, homeowners, architects wanting 3D walkthroughs from rough sketches
+- Input: raster images (photos, scans). Output: 3D renders and 2D floor plan images. No JSON. No MCP. No API.
+- Pricing: free tier described as "forever free" with 2D floor planning, 3D visualization, AI-assisted layout
+- **Skissify relevance**: LOW direct competition. Coohom targets the consumer/visual interior design space. No programmatic API, no MCP, no agent compatibility. But their SEO traction (fresh content, March 26) means "AI floor plan generator" searches will surface Coohom before Skissify.
+- **Skissify response**: Coohom occupies "human uploads sketch → get polished 3D." Skissify occupies "AI agent outputs JSON → get hand-drawn 2D." These are opposite ends of the same workflow.
+- **Signal**: Architecture blog coverage (blog.chaos.com, March 25) lists AI rendering tools for architects at student tiers as low as $7.60/mo — this validates architect willingness to pay for AI visual tools in the $5–20/mo range.
+
+### 🟢 CONFIRMED: Fourteenth Consecutive Scan — Niche Unoccupied
+- Searches: "AI sketch tool MCP hand-drawn diagram launch March 2026", "floor plan AI JSON generator architecture sketch new tool 2026", "Excalidraw tldraw new features product update March 2026", "MCP registry new tools listed week March 24 2026 sketch"
+- **Results**: Coohom (3D, raster, no MCP), Snaptrude (BIM/3D architects), Autodesk Fusion (enterprise CAD), Rendair (image upload → AI render, not JSON-native) — all adjacent, all non-competitive
+- **No new entrant to "hand-drawn + JSON-native + MCP + floor plan" quadrant detected**
+- **Fourteen consecutive automated scans confirm: the niche is real, durable, and structurally unoccupied.**
+
+### 🔵 CONTEXT: Excalidraw Still Winning Developer Mind-Share for System Architecture (March 27)
+- Startupik article (4 days ago): "Excalidraw has become a popular choice for startup architecture" — architecture diagram mindshare deepening
+- Excalidraw alternatives roundups surfacing fresh content (Product Hunt 4 days ago, Startupik 3 days ago) — actively indexed
+- Thomas Thornton tutorial (March 24) still ranking for "Excalidraw MCP agent" searches
+- **Skissify implication**: Excalidraw is winning the "startup system diagrams" lane. Skissify must claim the "floor plan + spatial sketch" lane before Excalidraw expands its scope.
+
+### 🔵 CONTEXT: SaaS Pricing Hybrid Model Confirmed Again as Standard (March 2026)
+- **URL**: https://blog.alguna.com/saas-pricing-models/ (2 weeks ago) — hybrid usage-based is top-ranked 2026 model
+- **URL**: https://bigideasdb.com/micro-saas-ideas-2026 (2 weeks ago) — $49-199/mo for high-pain, sub-$5 for friction removal
+- Skissify's three-tier hybrid (free+watermark / EUR 5 subscription / EUR 0.005/render API) continues to align with 2026 best practices
+
+### Updated Competitor Matrix (Run #14 Additions)
+| Tool | Input | Output | MCP | Hand-drawn | Floor Plans | Pricing | New Signal |
+|------|-------|--------|-----|-----------|-------------|---------|-----------|
+| **Coohom** | Raster photos/sketches | 3D renders + 2D images | No | No | Yes (3D/2D) | Free + paid | Fresh SEO push March 26, architect blogger review |
+| **Rendair** | Uploaded images | AI-rendered visuals | No | No | Via image | $7.60/mo student | Listed in top AI architect tools March 25 |
+| **All others** | No change from Run #13 | — | — | — | — | — | — |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars
