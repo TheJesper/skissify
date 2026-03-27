@@ -379,6 +379,7 @@ export default function Toolbar({
                 { keys: ["Drag (empty)"], desc: "Box-select elements" },
                 { keys: ["Alt+drag"], desc: "Pan canvas" },
                 { keys: ["Scroll"], desc: "Zoom toward cursor" },
+                { keys: ["0"], desc: "Fit / reset view" },
                 { keys: ["?"], desc: "Toggle this panel" },
               ].map(({ keys, desc }) => (
                 <div key={desc} className="flex items-center justify-between py-1.5 border-b border-neutral-800 last:border-0">
