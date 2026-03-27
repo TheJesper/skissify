@@ -90,6 +90,8 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **SVG export download** — "SVG" button in toolbar (sm+ visible); `Ctrl+Shift+E` keyboard shortcut; calls the fully-implemented `renderSketchToSVG()` renderer; smart filename: `skissify-<slug>.svg` when saved, timestamp-based otherwise; Blob URL triggers clean browser download without print dialog; keyboard shortcuts panel updated.
+
 - [x] **Local-storage autosave** — sketch is automatically saved to `localStorage` after 1.5s of inactivity (and flushed immediately on tab close). On fresh editor open (no URL params), the last autosaved sketch is restored and a brief "Restored from autosave" toast is shown. A subtle "Saved ✓" indicator appears in the toolbar. Users no longer lose work on accidental refresh or tab close.
 
 
@@ -122,7 +124,7 @@
 - Public share links (read-only)
 - Embed code for websites
 - [x] PNG download button (Ctrl+Shift+S, smart filename)
-- SVG export download button
+- [x] SVG export download button (Ctrl+Shift+E, smart filename, uses full SVG renderer)
 - Copy JSON to clipboard
 
 ### Payments (Stripe)
