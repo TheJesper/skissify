@@ -304,6 +304,23 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setRedrawKey((k) => k + 1);
   }, [pushHistory]);
 
+  /** Update any field(s) of a single element by index and push to undo history */
+  const updateElement = useCallback(
+    (idx: number, updates: Record<string, unknown>) => {
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (i !== idx) return el;
+          return { ...el, ...updates } as SketchData["elements"][number];
+        });
+        const next = { ...prev, elements: newElements };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [pushHistory]
+  );
+
   const undo = useCallback(() => {
     if (historyIndexRef.current <= 0) return;
     historyIndexRef.current--;
@@ -358,6 +375,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     redo,
     canUndo,
     canRedo,
+    updateElement,
   };
 }
 

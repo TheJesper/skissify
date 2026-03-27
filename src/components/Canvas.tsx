@@ -174,6 +174,27 @@ interface CanvasProps {
   onZoomChange?: (zoom: number) => void;
   /** Exposed ref so parent can call resetView() */
   canvasControlRef?: React.MutableRefObject<{ resetView: () => void } | null>;
+  /** Called with element index when user double-clicks an element to edit its text */
+  onDoubleClickElement?: (idx: number) => void;
+}
+
+/** Returns the editable text content of an element, or null if not text-editable */
+function getElementText(el: SketchElement): { field: string; value: string } | null {
+  if (el.type === "text") {
+    const t = el as unknown as Record<string, unknown>;
+    return { field: "text", value: (t.text ?? t.content ?? "") as string };
+  }
+  if (el.type === "rect") {
+    const r = el as unknown as Record<string, unknown>;
+    if (r.label !== undefined) return { field: "label", value: r.label as string };
+    // Support adding label to any rect
+    return { field: "label", value: "" };
+  }
+  if (el.type === "dim") {
+    const d = el as unknown as Record<string, unknown>;
+    return { field: "label", value: (d.label ?? "") as string };
+  }
+  return null;
 }
 
 export default function Canvas({
@@ -187,6 +208,7 @@ export default function Canvas({
   onResizeEnd,
   onZoomChange,
   canvasControlRef,
+  onDoubleClickElement,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -411,6 +433,26 @@ export default function Canvas({
       }
     },
     [sketch.elements, clientToCanvas, selectedElements, onSelectElements]
+  );
+
+  // Double-click → inline text edit
+  const handleDoubleClick = useCallback(
+    (e: React.MouseEvent<HTMLCanvasElement>) => {
+      if (!onDoubleClickElement) return;
+      const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+      for (let i = sketch.elements.length - 1; i >= 0; i--) {
+        const el = sketch.elements[i];
+        if (hitTest(el, mx, my)) {
+          const editable = getElementText(el);
+          if (editable !== null) {
+            onSelectElements(new Set([i]));
+            onDoubleClickElement(i);
+          }
+          return;
+        }
+      }
+    },
+    [sketch.elements, clientToCanvas, onSelectElements, onDoubleClickElement]
   );
 
   // Zoom with scroll — zoom toward mouse cursor for pixel-perfect feel
@@ -832,6 +874,7 @@ export default function Canvas({
           width={canvasW}
           height={canvasH}
           onClick={handleClick}
+          onDoubleClick={handleDoubleClick}
           onWheel={handleWheel}
           onMouseDown={handleMouseDown}
           onMouseMove={(e) => {
