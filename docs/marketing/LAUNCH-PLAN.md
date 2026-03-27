@@ -702,3 +702,69 @@ All 4 posts should be cross-posted:
 | Someone finds a bug live | Fix immediately, thank them publicly |
 | Product Hunt gets 0 engagement | Check: did listing go live? Is maker comment posted? DM supporters |
 | Reddit post removed | Check subreddit rules; reframe title if needed; try different sub |
+
+---
+
+## Marketing Improvements (Cycle 14 — March 27, 14:00 CET)
+
+### ⚡ STATUS: FRIDAY AFTERNOON — US EAST COAST PEAK, EU WIND-DOWN
+
+It's 14:00 CET. US East Coast is at 8:00 AM — prime morning browsing window. EU is post-lunch. This is the sustained high-traffic period before the US West Coast wakes up at 17:00 CET.
+
+### Completed This Cycle
+- [x] ✅ **Blog post #18 NEW**: "Skissify for Non-Developers: You Don't Need to Write JSON" — 1,200-word consumer-facing guide explaining how homeowners, designers, and non-developers can use Skissify for renovation planning, contractor communication, and space design. No technical jargon. Includes real kitchen workflow. Best for: Medium personal, LinkedIn article, r/HomeImprovement, r/DIY. File: `docs/marketing/blog/skissify-for-non-developers-complete-guide.md`
+- [x] ✅ **Blog post #19 NEW**: "Why Your AI Agent Needs Visual Output — And Why Text Isn't Enough" — 1,400-word technical manifesto for developer/HN audience. Covers: three-layer mismatch, why image generators fail, schema-first approach with LLM success rates, determinism advantage, visual iteration loop concept. Best for: Dev.to Day 2, HN comments, Hashnode. File: `docs/marketing/blog/why-your-ai-agent-needs-visual-output-now.md`
+- [x] ✅ **Blog post #20 NEW**: "The Weekend Project That Taught Me Everything About AI Visual Output" — 1,100-word founder story for Indie Hackers/Medium. Narrative arc: kitchen renovation → the gap → schema design → wobble problem → launch day surprise. Authentic build-in-public voice. File: `docs/marketing/blog/the-weekend-project-that-taught-me-about-ai-visual-output.md`
+- [x] ✅ **HASHTAGS-AND-COMMUNITIES.md Cycle 14**: Added confirmed trending hashtag intelligence (#VibeCoding 150K+/month, #VibeDrawing still unclaimed), 7 new subreddits (r/HomeImprovement 3M+, r/DIY 5M+, r/RealEstate 700K), non-developer community strategy, Discord servers for Week 2, and podcast pitch template + 7 target podcasts.
+- [x] ✅ **PRESS-KIT.md v8.0**: Added "non-developer discovery" press angle with journalist quote, 3 new one-liner variants (developer/consumer/press), updated key stats table (20 blog posts ready), descriptions of new blog posts, consumer-audience product description v3.
+
+### The Non-Developer Signal: What To Do With It
+
+The homeowner use case is the most important data point from launch day. Here's the action plan:
+
+**Immediate (today):**
+1. Create a dedicated "Skissify for Home Design" example sketch — a kitchen or bedroom layout with labeled rooms, furniture blocks, a door on the right wall. Make it visual, make it relatable to a non-developer.
+2. Post Tweet 21 at 14:30 CET (already in Cycle 13 — homeowner story)
+3. Queue the r/HomeImprovement post for Day 3 (use blog post #18 as the basis)
+
+**Day 2-3:**
+- Submit blog post #18 to Medium "personal" publication (not tech publication)
+- Post to r/HomeImprovement: frame as "AI + sketch tool for renovation planning"
+- LinkedIn article: "Why a homeowner using Skissify changed my product thinking"
+
+**Week 2:**
+- Consider a dedicated landing page: skissify.com/for-homeowners or skissify.com/renovation
+- Add home renovation examples to the gallery
+- Target Apartment Therapy, Houzz, design-adjacent newsletters
+
+### New Blog Posts (Cycle 14) — Full Inventory
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1 | Why Hand-Drawn Beats Figma | why-hand-drawn... | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | how-ai-agents... | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | skissify-vs-excalidraw | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | build-first-ai... | Dev.to | Day 2 |
+| 5 | We Launched Today | we-launched-today... | Indie Hackers | Day 1 22:00 |
+| 6 | JSON Schema Behind Skissify | the-json-schema... | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | how-to-add-skissify... | Dev.to, Hashnode | Day 7 |
+| 8 | First Sketch Tool for AI Agents | the-first-sketch... | HN direct, Dev.to | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | mcp-has-12000... | Dev.to, Bluesky | Day 2 |
+| 10 | I Gave Claude a Pencil | i-gave-claude... | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | launch-day-letter... | Dev.to 12:00 today | Day 1 |
+| 12 | Three-Layer Stack: Missing Visual Layer | mcp-a2a-three-layer... | Dev.to, HN ref | Day 3 |
+| 13 | Vibe Drawing | vibe-drawing... | Dev.to, Medium | Day 4 |
+| 14 | Real Estate Floor Plan Revolution | the-real-estate... | Medium, LinkedIn | Day 5 |
+| 15 | Launch Day Live Update Hour 4 | launch-day-live-update... | Dev.to | Day 1 13:00 |
+| 16 | The Visual Feedback Loop | ai-agent-visual-feedback... | Dev.to, Medium | Day 6 |
+| 17 | The Floor Plan That Surprised Me | the-floor-plan-surprised... | Substack, Medium | Day 2-3 |
+| 18 | **Skissify for Non-Developers** | **skissify-for-non-developers...** | **Medium, r/HomeImprovement** | **Day 3-4** |
+| 19 | **Why Your AI Agent Needs Visual Output** | **why-your-ai-agent...** | **Dev.to, HN ref** | **Day 2** |
+| 20 | **The Weekend Project** | **the-weekend-project...** | **Indie Hackers, Medium** | **Day 2-3** |
+
+### Immediate Actions at 14:00 CET
+1. ✅ **Tweet 21** (Cycle 13) should be queuing for 14:30 CET — homeowner use case hook
+2. ✅ **LinkedIn article** (Cycle 12) should be live — publish NOW if not done
+3. **r/homedesign post** (Cycle 12) — post at 14:30 CET
+4. **Newsletter pitches** — send TLDR AI, Ben's Bites, The Rundown at 15:00 CET
+5. **Tweet 22** — speed comparison — queue for 15:30 CET

@@ -260,3 +260,79 @@ JSON → hand-drawn sketch in seconds. Try it: skissify.com"
 ---
 
 *Note: Hashtag volumes change. Monitor performance weekly and drop any set that's consistently under-performing vs others. The MCP/AIAgents cluster is expected to remain strong through Q2 2026.*
+
+---
+
+## Cycle 14 Research Update — March 27, 14:00 CET
+
+### Confirmed Trending Hashtag Intelligence (March 2026)
+
+**#VibeCoding** — 150,000+ posts/month on X. Karpathy's term has fully mainstreamed.
+**#VibeDrawing** — UNCLAIMED. Skissify can OWN this. Use consistently on all visual/sketch posts.
+**#MCPTools** — growing rapidly with 12,770+ MCP servers live on PulseMCP.
+**#AgentNative** — emerging descriptor for tools built for AI agents first.
+**#AIFloorPlan** — specific, searchable, low competition, growing.
+**#VibeSketch** — alternative to VibeDrawing; test both.
+
+### New Subreddits to Target (Day 3-5)
+
+| Community | Platform | Size | Angle |
+|-----------|---------|------|-------|
+| r/HomeImprovement | Reddit | 3M+ | Skissify for renovation planning (non-dev) |
+| r/DIY | Reddit | 5M+ | Floor plan for home projects |
+| r/RealEstate | Reddit | 700K | Client communication angle |
+| r/interiordesign | Reddit | 500K | Design ideation tool |
+| r/AIAssistants | Reddit | 200K | MCP + Claude visual output |
+| r/ClaudeAI | Reddit | 150K | MCP-native integration |
+| r/ChatGPT | Reddit | 2M+ | General AI tools angle (if ChatGPT adds MCP) |
+
+### Non-Developer Communities to Target (Week 2)
+
+These communities represent the "homeowner surprise" cohort — people using Skissify for renovation, design, and space planning. They're a larger total market than developers.
+
+- **r/HomeImprovement** — frame as "AI helps you sketch your renovation ideas"
+- **r/FirstTimeHomeBuyer** — "visualize your space before you buy"
+- **Houzz community** — architecture/interior design social platform
+- **Apartment Therapy** — design blog/community, accepts contributor posts
+- **HGTV social communities** — large home-focused audience
+
+### Discord Servers to Target (Week 2)
+
+| Server | Focus | Angle |
+|--------|-------|-------|
+| Anthropic Discord | AI development | MCP integration showcase |
+| LangChain Discord | Agent frameworks | Visual output for agent stacks |
+| CrewAI Discord | Multi-agent | Floor plan generation demo |
+| Cursor Discord | Vibe coding | Vibe drawing natural extension |
+| Lovable/Bolt Discord | No-code AI | Non-developer visual tool |
+
+### Podcast Pitches (Week 2)
+
+Quick-pitch email template:
+```
+Subject: "AI agents can now draw — founder story for [podcast name]"
+
+Hi [host],
+
+I built a sketch tool this week and something unexpected happened on launch day.
+
+I built it for AI developers. A homeowner used it to explain her kitchen to a contractor.
+
+Quick episode pitch: Why AI visual output is the missing piece, and what I learned about 
+who actually needs it. 20-30 minutes.
+
+Skissify launched March 27. 14 element types. MCP server. €5/mo.
+
+Happy to provide a demo or live sketch during the recording.
+
+[Name], skissify.com
+```
+
+Target podcasts:
+1. Indie Hackers Podcast (indiehackers.com/podcast)
+2. Developer Tea (developertea.com)  
+3. The Changelog (changelog.com/podcast)
+4. Syntax.fm (syntax.fm)
+5. Software Engineering Daily (softwareengineeringdaily.com)
+6. TLDR AI Daily (tldr.tech/ai podcast)
+7. Lex Fridman (long-shot, but MCP + AI visual output is his territory)

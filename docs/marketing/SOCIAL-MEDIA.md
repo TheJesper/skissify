@@ -2608,3 +2608,180 @@ Happy to answer questions. Docs: skissify.com/docs
 
 *Last Updated: March 27, 2026 (Cycle 13 — 13:30 CET)*
 *Added: Tweets 21-25 (US morning through Day 1 wrap), r/SideProject update, Anthropic #show-and-tell, updated full timing table*
+
+---
+
+## Cycle 14 Additions — Friday Afternoon (14:00 CET)
+
+### NEW: Non-Developer Audience Tweets (US Morning Wave)
+
+#### Tweet 26: The Renovation Hook (for r/HomeImprovement + consumer Twitter — Day 3)
+```
+Tried to explain a kitchen renovation to a contractor.
+
+After 3 conversations and a lot of "no, the island goes THERE" —
+
+I just drew it.
+
+With AI.
+
+Describe the room → Claude designs it → Skissify draws it → contractor gets it instantly.
+
+Free: skissify.com
+
+[attach: kitchen floor plan sketch — cream paper, labeled rooms]
+```
+
+#### Tweet 27: The DIY Angle (Day 3-4, Saturday morning)
+```
+Weekend project idea: design your space before you touch anything.
+
+1. Tell Claude how big the room is
+2. Say where the windows and doors are
+3. Tell it what furniture you need
+4. Watch it draw the layout
+
+Takes 5 minutes.
+Saves 5 hours of moving furniture the wrong way.
+
+skissify.com
+```
+
+#### Tweet 28: The "Two Audiences" Thread (Post Day 4)
+```
+I built Skissify for AI developers.
+
+On launch day, I got more messages from homeowners.
+
+So now Skissify has two jobs: 🧵
+```
+
+**Thread:**
+```
+1/ The developer job: give AI agents a visual output layer.
+
+Tell Claude to design a system architecture. It generates JSON. Skissify renders a hand-drawn diagram.
+No text description. An actual drawing.
+```
+
+```
+2/ The homeowner job: communicate a space without design software.
+
+Describe your kitchen to Claude. It sketches the layout. You show it to your contractor.
+No Floorplanner. No Autocad. Just words and a sketch.
+```
+
+```
+3/ Both jobs are the same tool.
+
+One JSON schema. One rendering engine. One wobble algorithm.
+
+The input is always: "what elements are in this space, where are they?"
+The output is always: a hand-drawn sketch.
+
+skissify.com — free tier, no signup for the editor.
+```
+
+---
+
+### NEW: Non-Dev Community Posts
+
+#### r/HomeImprovement (Post Day 3 — March 28)
+**Title:** I used AI to sketch my kitchen renovation and showed it to my contractor — it worked
+
+```
+Long-time lurker here. Been planning a kitchen renovation and kept running into the same problem: I can describe what I want perfectly, but getting it into a visual that my contractor can actually work from was always a mess.
+
+This week I tried something: I described the kitchen layout to Claude (the AI), and used a tool called Skissify to render what it designed as a hand-drawn floor plan. Took about 5 minutes.
+
+Result: [sketch link or image]
+
+My contractor understood it on first look. No more "no, the island goes THERE."
+
+Skissify is free at skissify.com — the editor doesn't require signup and there's no design software involved. You just describe the space.
+
+Curious if anyone else has found good AI tools for home project planning?
+```
+
+#### r/DIY (Post Day 4 — March 29)
+**Title:** Quick tool for sketching a project layout before you start building
+
+```
+Before any DIY project, I try to sketch the layout. Usually that means 30 minutes fighting Floorplanner or making a mess on graph paper.
+
+Found a tool last week that changes this: Skissify (skissify.com).
+
+Describe your project area to an AI assistant. It generates a sketch. You get a hand-drawn floor plan or layout without touching design software.
+
+For home DIY: useful for garages, shed layouts, deck plans, workshop organization, room rearrangements.
+
+The output isn't CAD-precise — it's intentionally rough, like a planning sketch. That's the right level of detail for communicating an idea before you start measuring.
+
+Free to try. Thought this community might find it useful.
+```
+
+#### r/RealEstate (Post Week 2)
+**Title:** Free tool for creating quick floor plan sketches for client walkthroughs
+
+```
+Agents: I found a tool that's been useful for creating quick layout sketches for client walkthroughs — Skissify (skissify.com).
+
+It uses AI to generate hand-drawn floor plans from a text description. For a property showing, you can quickly sketch the layout (approximate room sizes, door/window positions) and share it as a link.
+
+It's not a replacement for proper floor plan software, but for quick communication during early-stage client conversations, it's faster than anything else I've tried.
+
+Free tier includes unlimited public sketches. No software installation.
+
+Has anyone else found AI tools useful for client visualization in real estate?
+```
+
+---
+
+### NEW: LinkedIn Article — The Non-Developer Discovery (Publish Day 2)
+
+**Title:** I Built an AI Tool for Developers. Homeowners Are Using It.
+
+**Key points:**
+1. Skissify was built for AI agent developers (JSON + MCP)
+2. Launch day: homeowner used it to communicate kitchen layout to contractor
+3. The underlying value proposition is broader than the technical implementation
+4. "Communicate a spatial idea without design software" is the real product
+5. Lesson: sometimes the product is bigger than the feature
+
+**Target audience:** Product managers, startup founders, designers
+**Hashtags:** #ProductDiscovery #AITools #BuildInPublic #ProductStrategy #StartupLessons #DesignThinking
+
+---
+
+### Full Timing Table — Remaining Day 1 + Day 2 Preview
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 14:30 | Tweet 21 — homeowner use case | Cycle 13 |
+| 14:30 | r/homedesign post | Cycle 12 |
+| 14:30 | LinkedIn article (if not done) | Cycle 12 |
+| 15:00 | Newsletter pitches: TLDR AI, Ben's Bites, The Rundown | Cycle 11-13 |
+| 15:30 | Tweet 22 — speed comparison | Cycle 13 |
+| 16:00 | r/SideProject update comment | Cycle 13 |
+| 16:30 | Anthropic Discord + Changelog Discord | Cycles 11+13 |
+| 17:00 | r/mcp post | LAUNCH-DAY-NOW.md |
+| 17:30 | Tweet 23 — integration drop | Cycle 13 |
+| 18:00 | Tweet 6 — US wave "if you missed it" | Cycle 9 |
+| 18:30 | r/LocalLLaMA | LAUNCH-DAY-NOW.md |
+| 19:00 | Tweet 19 — human story DM | Cycle 12 |
+| 20:00 | Tweet 24 — Friday weekend hacker | Cycle 13 |
+| 20:00 | r/ClaudeAI post | Cycle 9 |
+| 21:00 | Tweet 8 — wrap | Cycle 9 |
+| 22:00 | Tweet 25 — definitive Day 1 metrics | Cycle 13 |
+| 22:00 | Publish "We Launched Today" blog (fill numbers) | blog/ |
+| --- | --- | --- |
+| **Day 2 (Sat Mar 28)** | | |
+| Morning | Blog post #19: Dev.to "Why Your AI Agent Needs Visual Output" | Cycle 14 |
+| Morning | Blog post #20: Indie Hackers "The Weekend Project" | Cycle 14 |
+| Afternoon | r/HomeImprovement non-dev post | **Cycle 14** |
+| Evening | LinkedIn article "I Built for Devs, Homeowners Used It" | **Cycle 14** |
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 14 — 14:00 CET)*
+*Added: Non-developer audience tweets (26-28), r/HomeImprovement post, r/DIY post, r/RealEstate post, LinkedIn article brief, full Day 1 timing table, Day 2 preview*

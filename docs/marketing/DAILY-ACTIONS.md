@@ -1,5 +1,106 @@
 # Daily Actions Log
 
+---
+
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #11 (13:48 CET, Friday March 27)
+
+### Priority Context
+- Smartsheet MCP: 4,000 users + 1.74M actions in first week — adoption velocity proves the launch window is real
+- Eleven consecutive niche-clean scans — nobody is building what Skissify is building, but the window is finite
+- The MCP server remains unbuilt; all prior intelligence points to this as the single blocking item
+
+---
+
+### ✅ Saturday Priority 1: Ship MCP v0.1 — One Tool, One Day
+
+**The single highest-ROI action in the entire backlog.** The Smartsheet data now gives us a concrete benchmark: tools that ship MCP servers and get listed in the registry see 4,000 users in week 1. Skissify's TAM is smaller, but even 10% of that is 400 developer users in the first week — all entering the pipeline that leads to EUR 2–5/mo conversion.
+
+**Minimum viable MCP v0.1** — achievable in a Saturday:
+
+```typescript
+// W:/code/skissify/packages/mcp/src/index.ts
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({ name: "skissify", version: "0.1.0",
+  description: "Render JSON manifests as hand-drawn SVG sketches. Floor plans, diagrams, wireframes." });
+
+server.tool("render_sketch",
+  "Render a Skissify JSON manifest as a hand-drawn SVG. Returns SVG string. Use for floor plans, architectural sketches, diagrams.",
+  { manifest: z.object({}).passthrough(), watermark: z.boolean().optional() },
+  async ({ manifest, watermark }) => {
+    const svg = await renderManifest(manifest, { watermark: watermark !== false });
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**Saturday steps** (4–6 hours):
+1. `mkdir W:/code/skissify/packages/mcp && cd packages/mcp && npm init -y`
+2. `npm install @modelcontextprotocol/sdk zod`
+3. Wire `renderManifest` to the existing Skissify rendering engine (`src/lib/renderer.ts`)
+4. Test locally with Claude Desktop (2 lines in `claude_desktop_config.json`)
+5. Publish: `npm publish --access public` as `@skissify/mcp`
+6. Submit to modelcontextprotocol.io/registry
+
+**Why Sunday is too late**: The MCP window is now quantified. Every week of delay ≈ 400+ potential first-week users not acquired.
+
+---
+
+### ✅ Saturday Priority 2: Configure Stripe Metered Billing (2-Hour Task)
+
+Stripe's new AI-usage billing tools (March 2026) make Skissify's hybrid pricing model a configuration task, not engineering. With the MCP server shipping Saturday, payment infrastructure needs to be ready for the first users who want clean renders.
+
+**The 2-hour Stripe config**:
+1. Create Stripe products: Free (no Stripe product), Pro EUR 5/mo (subscription), API Starter EUR 2/mo (subscription + 200 render quota), Overage EUR 0.005/render (metered)
+2. Enable Stripe Billing Meter for `render_count` — this is the new Stripe feature for AI usage
+3. Wire the meter to the render endpoint: increment on each render, check quota in `src/lib/plan-check.ts`
+4. Test: create a test customer, trigger renders, confirm meter increments
+
+**Why Saturday**: The MCP server launch and payment infrastructure should ship together. A tool that people want to pay for but can't is a conversion lost.
+
+---
+
+### ✅ Saturday Priority 3: Write and Schedule the Launch Thread for Sunday Morning
+
+The Figma MCP wave (biggest design tool conversation of March 2026) is still active. The Smartsheet MCP success story is fresh. Sunday morning (8–10 AM CET) is peak developer Twitter/X engagement. If the MCP server ships Saturday, Sunday is the optimal launch window.
+
+**The thread to write Saturday** (draft in `docs/marketing/SOCIAL-MEDIA.md`):
+
+> 🧵 Thread: I built the missing piece of the AI agent visual stack
+> 
+> Every diagram MCP outputs clean, technical visuals. (Figma, Excalidraw, Mermaid — all polished or typographic.)
+> 
+> Sometimes you want something rougher. A sketch. A floor plan. Something that says "this is an idea, not a deliverable."
+> 
+> Meet Skissify. JSON in → hand-drawn SVG out. [gif: Claude → floor plan JSON → sketch rendered]
+> 
+> MCP server: `npx @skissify/mcp` — one tool, render_sketch, accepts any JSON manifest.
+> 
+> Free (watermarked). EUR 2/mo for clean output. EUR 5/mo for saves + sharing + private sketches.
+> 
+> Floor plans, architecture diagrams, wireframes, napkin ideas. If it can be described as coordinates, Skissify can sketch it.
+> 
+> 🔗 skissify.com | `npm install @skissify/mcp`
+> 
+> (Inspired by Excalidraw's beauty, tldraw's programmatic vision, and every architect who just needed a quick sketch.)
+
+**Record metrics**: Screenshot follower count before posting. Check mentions/clicks 24h later. This is the first signal of market fit.
+
+---
+
+### Completion Log (to be updated after Saturday)
+- [ ] MCP v0.1 live on npm: (URL when done)
+- [ ] Stripe metered billing configured: (test link when done)
+- [ ] Launch thread drafted: (yes/no)
+- [ ] MCP submitted to modelcontextprotocol.io/registry: (yes/no)
+
+---
+
 _Actionable items proposed by the automated strategy advisor. Append-only._
 
 ---

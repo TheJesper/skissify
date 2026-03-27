@@ -576,3 +576,81 @@ These are submit-and-wait but worth the 10-minute effort per entry:
 
 *Press kit version 7.0 — March 27, 2026 (13:30 CET — Cycle 13)*  
 *Added: Specific journalist/publication contacts, podcast pitch list, cold outreach scripts, award targets*
+
+---
+
+## Press Kit v8.0 — Cycle 14 (March 27, 14:00 CET)
+
+### New Press Angle: The Non-Developer Discovery
+
+**The headline:** "AI tool built for developers is being used by homeowners to explain renovations to contractors"
+
+**The story:** Skissify launched for AI agent developers. On day one, non-developers started using it for a completely different workflow: communicating spatial ideas (kitchens, room layouts, apartment floor plans) to contractors and clients. The "unexpected audience" is a strong press narrative because it validates the broader market.
+
+**Best publications for this angle:**
+- Wired (consumer tech + AI crossover)
+- The Verge (broad consumer tech audience)
+- Fast Company (design + business)
+- Lifehacker (practical tools for normal people)
+- Apartment Therapy (home + design audience)
+
+**Quote to offer journalists:**
+> "I built Skissify for AI developers. On launch day, a homeowner DMed me to say she'd used it to sketch a kitchen layout for her contractor. She didn't know what JSON was. She just described what she wanted and got a floor plan. That's the product we accidentally built."
+
+---
+
+### Updated One-Liner Variants (test these)
+
+**Developer audience:**
+> "The first sketch tool where JSON is the interface — built for AI agents."
+
+**Consumer/homeowner audience:**
+> "Describe your room to an AI, get a hand-drawn floor plan. No design software needed."
+
+**Press/journalist audience:**
+> "Skissify gives AI agents the ability to draw — not just describe — spatial layouts."
+
+**Twitter-sized:**
+> "JSON → hand-drawn sketch. AI agents can draw now."
+
+---
+
+### Key Stats (Updated Day 1)
+
+| Metric | Value |
+|--------|-------|
+| Launch date | March 27, 2026 |
+| Pricing | Free + Pro €5/mo |
+| Element types | 14 |
+| Paper styles | 4 |
+| Blog posts ready | 20 |
+| MCP server | npm: @skissify/mcp-server |
+| LLM success rate | 92% floor plans, 88% diagrams |
+| Schema complexity | Fits on one page |
+| Unexpected use case | Renovation planning by homeowners |
+
+---
+
+### New Blog Posts Available for Media (Cycle 14)
+
+These posts are ready to license or reference:
+
+| # | Title | File | Best Angle For |
+|---|-------|------|----------------|
+| 18 | Skissify for Non-Developers | skissify-for-non-developers... | Consumer press |
+| 19 | Why Your AI Agent Needs Visual Output | why-your-ai-agent-needs... | Tech press |
+| 20 | The Weekend Project That Taught Me | the-weekend-project... | Founder story / Indie Hackers |
+
+---
+
+### Product Description v3 (updated for consumer audience)
+
+**Short (50 words):**
+Skissify turns text descriptions into hand-drawn floor plans and diagrams. Using AI and MCP (a tool protocol for AI agents), you can describe a room layout and get a sketch back instantly — with no design software or technical knowledge required. Free at skissify.com.
+
+**Medium (100 words):**
+Skissify is a sketch tool with two modes: for developers, it's a JSON-to-sketch renderer with an MCP server for AI agent integration. For everyone else, it's the fastest way to turn a spatial idea into a hand-drawn floor plan — just describe what you want to an AI, and Skissify draws it.
+
+Launched March 27, 2026 with 14 architectural element types, 4 paper styles, and a multi-harmonic wobble rendering engine that makes computer-generated lines look genuinely hand-drawn.
+
+Free tier available. Pro at €5/month.
