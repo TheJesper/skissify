@@ -18,6 +18,8 @@ interface ToolbarProps {
   canRedo?: boolean;
   sketchSlug?: string | null;
   sketch?: SketchData;
+  /** ISO timestamp of last autosave, or null */
+  autosaveSavedAt?: string | null;
 }
 
 export default function Toolbar({
@@ -31,6 +33,7 @@ export default function Toolbar({
   canRedo = false,
   sketchSlug,
   sketch,
+  autosaveSavedAt,
 }: ToolbarProps) {
   const { data: session } = useSession();
   const [saving, setSaving] = useState(false);
@@ -160,6 +163,19 @@ export default function Toolbar({
       >
         Gallery
       </Link>
+
+      {/* Autosave indicator */}
+      {autosaveSavedAt && (
+        <span
+          className="hidden lg:flex items-center gap-1 text-[10px] text-neutral-600 mr-2"
+          title={`Autosaved at ${new Date(autosaveSavedAt).toLocaleTimeString()}`}
+        >
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          Saved
+        </span>
+      )}
 
       {/* Spacer */}
       <div className="flex-1" />

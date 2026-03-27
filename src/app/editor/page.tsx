@@ -12,6 +12,7 @@ import PresetTabs from "@/components/PresetTabs";
 import ControlPanel from "@/components/ControlPanel";
 import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
+import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
 
 function EditorContent() {
   const searchParams = useSearchParams();
@@ -26,6 +27,7 @@ function EditorContent() {
     presetParam && presets[presetParam] ? presetParam : null
   );
   const [loading, setLoading] = useState(true);
+  const [restoredFromAutosave, setRestoredFromAutosave] = useState(false);
 
   useEffect(() => {
     // First check URL hash for encoded sketch data
@@ -43,6 +45,16 @@ function EditorContent() {
 
     // Then check query params for fork/edit
     const slug = forkSlug || editSlug;
+    if (!slug && !presetParam) {
+      // No URL context — try to restore from autosave
+      const autosaved = loadAutosave();
+      if (autosaved) {
+        setInitialData(autosaved);
+        setRestoredFromAutosave(true);
+      }
+      setLoading(false);
+      return;
+    }
     if (!slug) {
       setLoading(false);
       return;
@@ -74,6 +86,7 @@ function EditorContent() {
       initialData={initialData}
       loadedSlug={loadedSlug}
       initialPreset={initialPreset}
+      restoredFromAutosave={restoredFromAutosave}
     />
   );
 }
@@ -82,10 +95,12 @@ function EditorInner({
   initialData,
   loadedSlug,
   initialPreset,
+  restoredFromAutosave,
 }: {
   initialData: SketchData | null;
   loadedSlug: string | null;
   initialPreset?: string | null;
+  restoredFromAutosave?: boolean;
 }) {
   const {
     sketch,
@@ -117,6 +132,16 @@ function EditorInner({
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
   const [mobileControlsOpen, setMobileControlsOpen] = useState(false);
+  const [showAutosaveToast, setShowAutosaveToast] = useState(!!restoredFromAutosave);
+  const { savedAt: autosaveSavedAt } = useAutosave(sketch);
+
+  // Show a one-time toast when restored from autosave
+  useEffect(() => {
+    if (restoredFromAutosave) {
+      const timer = setTimeout(() => setShowAutosaveToast(false), 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [restoredFromAutosave]);
 
   const handlePrint = useCallback(() => {
     const canvas = document.querySelector("canvas");
@@ -253,7 +278,17 @@ function EditorInner({
         canRedo={canRedo}
         sketchSlug={sketchSlug}
         sketch={sketch}
+        autosaveSavedAt={autosaveSavedAt}
       />
+      {showAutosaveToast && (
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-[100] px-4 py-2 bg-neutral-800 border border-neutral-600 text-neutral-200 text-sm font-medium rounded-lg shadow-lg flex items-center gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400 shrink-0">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+            <path d="M12 8v4l3 3"/>
+          </svg>
+          Restored from autosave
+        </div>
+      )}
       <div className="hidden md:block">
         <PresetTabs active={activePreset} onSelect={loadPreset} />
       </div>
