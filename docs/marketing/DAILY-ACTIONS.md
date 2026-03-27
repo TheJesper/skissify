@@ -2,6 +2,114 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #18 (21:51 CET, Friday March 27)
+
+### Priority Context (Run #18 — Intelligence cycle closed, final run of March 27)
+
+This is the 18th and final automated strategy run of March 27, 2026. The Brave Search API quota is substantially exhausted. 18 consecutive scans across 20+ hours confirmed the niche is structurally unoccupied. All intelligence that can be gathered has been gathered. The March 27 strategy log is now closed.
+
+**State of play in one sentence**: 20+ files of pre-built marketing infrastructure, 18 runs of competitive intelligence, zero lines of `@skissify/mcp` code — Saturday is the decision point.
+
+---
+
+### ✅ Saturday Action 1 — SOLE BLOCKING ITEM: Ship `@skissify/mcp` v0.1 to npm
+
+**This action has appeared in all 18 runs. It is the only action that matters today.**
+
+This cycle adds one new piece of context: Spacely AI charges $19–25/mo with a watermark-based free tier in the adjacent market. This confirms Skissify's EUR 2/mo model is 10x cheaper than the market rate. The product is correctly priced. Now it needs to exist.
+
+**The minimum viable package (do not over-engineer)**:
+
+```bash
+mkdir W:/code/skissify/packages/mcp && cd W:/code/skissify/packages/mcp
+npm init -y
+npm install @modelcontextprotocol/sdk zod
+```
+
+```typescript
+// src/index.ts — minimum viable MCP v0.1
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+  name: "skissify",
+  version: "0.1.0",
+  description: "JSON manifest in → hand-drawn SVG out. Floor plans, architecture sketches, napkin diagrams. The sketch layer for AI agents."
+});
+
+server.tool(
+  "render_sketch",
+  "Render a Skissify JSON manifest as a hand-drawn SVG. Returns SVG string. Supports floor plans with walls, doors, windows, stairs, columns, dimensions, and all other Skissify element types. Free renders include a watermark.",
+  { manifest: z.object({}).passthrough() },
+  async ({ manifest }) => {
+    const svg = await renderManifest(manifest, { watermark: true });
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**Post-publish (30 minutes of mechanical work)**:
+1. Submit to `modelcontextprotocol.io/registry`
+2. PR to `punkpeye/awesome-mcp-servers` (add under Diagrams/Visual section)
+3. Submit to `mcpservers.org`, `claudefa.st`, `mcpmanager.ai`
+4. Screenshot of first Claude-generated sketch — this is the entire marketing campaign
+
+**Success metric**: `npx @skissify/mcp` installs, Claude Desktop shows `render_sketch` in tool list, one floor plan renders.
+
+---
+
+### ✅ Saturday Action 2 — HIGH: Publish HN Show HN Post (45 min — publish AFTER npm publish)
+
+The "Google Gap" narrative has approximately 5–7 days of relevance remaining. This is the last time this will be called out — the window is closing.
+
+**Post title**: "Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP that fills the gap Google Stitch left"
+
+**Core content (save to `docs/marketing/blog/hn-launch-post.md`)**:
+> Google Stitch: polished UIs via MCP.
+> Mermaid MCP: 22+ topology diagram types.
+> draw.io MCP: technical charts.
+> 
+> Nobody made the hand-drawn sketch version. Especially not floor plans.
+> 
+> Skissify: describe a floor plan or architecture sketch as JSON → hand-drawn SVG.
+> `npx @skissify/mcp` — free (watermarked), EUR 2/mo clean renders, EUR 5/mo Pro.
+> Walls, doors, windows, stairs, columns, dimension lines. Tunable wobble. Paper types.
+> Declarative: describe the scene once, Skissify renders it. One tool call. No state.
+> 
+> skissify.com
+
+---
+
+### ✅ Saturday Action 3 — MEDIUM: "Plan7Architect Alternative" Blog Post (30 min — deadline March 31)
+
+Plan7Architect raises prices March 31. The acquisition window closes in 4 days. This is the last cycle that will flag this opportunity — act or let it pass.
+
+**Post title**: "Plan7Architect raising prices? What modern architects are using instead in 2026"
+
+**Key message**: Position Skissify as the AI-native sketch tool for early-stage client presentations — not a direct replacement, but a complement. Target keywords: "Plan7Architect alternative", "floor plan software 2026 alternative".
+
+**File**: `docs/marketing/blog/plan7architect-alternative.md`
+**Publish by**: Sunday March 29 for March 31 search traffic.
+
+---
+
+### Completion Log (update Saturday evening)
+- [ ] `@skissify/mcp` v0.1 published to npm
+- [ ] Submitted to modelcontextprotocol.io/registry
+- [ ] PR opened to awesome-mcp-servers
+- [ ] Submitted to claudefa.st, mcpmanager.ai, mcpservers.org
+- [ ] HN Show HN post published (URL: ___)
+- [ ] Screenshot of first Claude-generated sketch captured
+- [ ] Plan7Architect blog post written to docs/
+
+---
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #17 (20:43 CET, Friday March 27)
 
 ### Priority Context (Run #17 — End-of-day Friday, intelligence cycle closed)

@@ -1361,3 +1361,68 @@ Post timing: US lunch hour (13:30-14:00 ET) is peak r/AI_Agents traffic.
 
 *Last Updated: March 27, 2026 (Cycle 23 - 19:37 CET)*
 *Added: Blog posts #32-34 (agent stack, Figma replacement, dungeon master story), r/AI_Agents as top-priority community, n8n integration angle, LLM benchmark social content, timing table for US prime time execution*
+
+---
+
+## Marketing Improvements (Cycle 25 - March 27, 21:56 CET)
+
+### ?? STATUS: END OF DAY 1 — DAY 2 BATTLE PLAN READY
+
+### Completed This Cycle
+- [x] ?? **Blog post #36 NEW**: "Day 2 Momentum: How to Keep a Product Launch Alive" — Indie Hackers/Dev.to post with the actual playbook for Day 2: real numbers post, community gaps, new angles. File: docs/marketing/blog/day-2-momentum-how-to-keep-a-product-launch-alive.md
+- [x] ?? **Blog post #37 NEW**: "Why Skissify Belongs in Your MCP Server Stack" — Written specifically for r/mcp and the MCP Discord. Technical, MCP-native, explains the gap in the ecosystem. File: docs/marketing/blog/why-skissify-belongs-in-your-mcp-server-stack.md
+- [x] ?? **Blog post #38 NEW**: "Which AI Model Is Best at Drawing Floor Plans? (We Tested 8)" — Full benchmark post for r/LocalLLaMA, HN, and Dev.to. Model comparison table, optimized prompt recipe, spatial coherence analysis. File: docs/marketing/blog/the-llm-floor-plan-benchmark.md
+- [x] ?? **SOCIAL-MEDIA.md Cycle 25**: Full Day 2 timing table (07:00-18:00 CET), Tweets 77-81 (Day 1 numbers, LLM benchmark thread, unexpected audiences, which model wins, homeowner viral), r/mcp post (FIRST EVER — critical missing community), r/LocalLLaMA post, LinkedIn Day 2 post
+- [x] ?? **Identified r/mcp as critical gap**: 20K highly targeted MCP developers, we have never posted there. This is the highest ROI single action for Day 2.
+
+### Key Insight (Cycle 25)
+
+**r/mcp is the single most valuable community we haven't touched.**
+
+20K members who are specifically building with and for Model Context Protocol. This is our exact audience. We have zero presence there. First post in that community on Day 2 morning will land with maximum relevance.
+
+**The LLM benchmark angle is Day 2's best new content.**
+
+r/LocalLLaMA is 400K members who obsessively discuss model performance benchmarks. "Which model draws floor plans best?" is exactly the kind of question that community wants answered. A good data post there can drive 100+ signups from a highly technical audience.
+
+### Day 2 Priority Actions (March 28)
+
+| Action | Time | Community | Expected Impact |
+|--------|------|-----------|----------------|
+| Post Day 1 real numbers wrap | 07:00 CET | Twitter/X | Trust building |
+| **r/mcp post (FIRST EVER)** | 07:30 CET | r/mcp | ?? High - core audience |
+| LLM benchmark Twitter thread | 08:00 CET | Twitter/X | Tech virality |
+| Publish benchmark blog | 08:30 CET | Dev.to | SEO + r/LocalLLaMA crosspost |
+| **r/LocalLLaMA benchmark post** | 09:00 CET | r/LocalLLaMA | ?? High - 400K members |
+| **MCP Discord first post** | 09:00 CET | Discord | Direct MCP community |
+| Unexpected audiences tweet | 10:00 CET | Twitter/X | General virality |
+| LinkedIn Day 2 post | 11:00 CET | LinkedIn | Professional trust |
+| r/AI_Agents (if pending) | 13:00 CET | r/AI_Agents | 500K agent builders |
+| Homeowner viral hook | 16:00 CET | Twitter/X | Cross-audience reach |
+
+### New Blog Post Inventory (Full - 38 posts as of Cycle 25)
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1-35 | (see Cycle 24) | ... | ... | ... |
+| 36 | **Day 2 Momentum** | day-2-momentum-how-to-keep-a-product-launch-alive.md | IH, Dev.to | Day 2 |
+| 37 | **MCP Stack Post** | why-skissify-belongs-in-your-mcp-server-stack.md | r/mcp, Dev.to | Day 2 |
+| 38 | **LLM Benchmark** | the-llm-floor-plan-benchmark.md | r/LocalLLaMA, HN | Day 2 |
+
+### Critical Content Gaps Remaining
+
+| Gap | Why It Matters | Action |
+|----|---------------|--------|
+| **r/mcp** has never been posted to | Exact core audience | Post Day 2 07:30 CET |
+| **Newsletter signup flow** doesn't exist yet | Converts curiosity into subscribers | Build Week 1 |
+| **Interactive JSON playground** on homepage | Converts visitors to users | Build Week 2 |
+| **Benchmark page** on skissify.com | SEO magnet, technical credibility | Build Week 2 |
+| **GitHub repo stars** campaign | Social proof for developers | Ask on r/mcp Day 2 |
+| **Video content** (any of Concepts A/B/C) | Highest ROI channel for visual tool | Shoot Day 2-3 |
+
+### One-Liner: Day 2 Best Version
+
+> "Homeowners, dungeon masters, and geometry teachers walked in. Engineers were already there. I built it for one audience. The product found the others."
+
+*Last Updated: March 27, 2026 (Cycle 25 - 21:56 CET)*
+*Added: Blog posts #36-38 (Day 2 playbook, MCP stack, LLM benchmark), r/mcp identified as critical untouched community, full Day 2 priority action table, content gaps inventory, Day 2 Twitter threads 77-81*
