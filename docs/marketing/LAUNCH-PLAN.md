@@ -162,6 +162,48 @@
 
 ---
 
+## Marketing Improvements (Cycle 5 — March 27, 02:30 CET)
+
+### Completed This Cycle
+- [x] ✅ Blog post #7 NEW: "How to Add Skissify to Your AI Agent Workflow" — 2,000-word integration guide targeting developers, covers MCP (Option 1), direct REST API (Option 2), give-LLM-the-schema approach (Option 3), prompting strategies, LLM success rates by use case, TypeScript + Python code samples. Best post for SEO ("AI agent visual output", "MCP sketch tool")
+- [x] ✅ SOCIAL-MEDIA.md: Added DM outreach templates (4 variants by audience: AI agent devs, architects/designers, MCP enthusiasts, indie hackers) with explicit "max 15 DMs/day" guard and "no upvote begging" rule
+- [x] ✅ SOCIAL-MEDIA.md: Added full Week 1 content calendar (Day 2-7) with specific post per platform per day — no more guessing what to post next
+- [x] ✅ SOCIAL-MEDIA.md: Added Product Hunt follow-up sequence (0-30min, 1hr, 3hr, 6hr, end-of-day)
+- [x] ✅ SOCIAL-MEDIA.md: Added platform response templates for self-hosting, pricing, MCP stability
+- [x] ✅ SOCIAL-MEDIA.md: Added Bluesky/Mastodon cross-post template
+- [x] ✅ PRESS-KIT.md: Added step-by-step video asset recording guide — 4 GIF specs, screen recording checklist, screenshot checklist (10 min version for founder)
+- [x] ✅ PRESS-KIT.md: Added interview talking points for podcast/newsletter appearances
+
+### Blog Post #7 Highlights
+"How to Add Skissify to Your AI Agent Workflow" targets the integration-minded developer:
+- Option 1: Claude Desktop + MCP (3 steps, easiest)
+- Option 2: Direct REST API with request/response examples
+- Option 3: Give LLM the schema in system prompt (most powerful)
+- Prompting strategies: specific dimensions, request dimension lines, coordinate anchors, incremental build
+- LLM success rates: floor plans 92%, diagrams 88%, wireframes 71%
+- Python + TypeScript parsing code for extracting JSON from LLM responses
+- Real use cases from "launch" adopters: real estate, home office, doc generation, Slack wireframes, renovation
+
+### Updated Blog Distribution Schedule
+| Post | Platform Order | Day |
+|------|---------------|-----|
+| "We Launched Today" | Indie Hackers → Dev.to | Launch Day 22:00 |
+| "Build First AI Floor Plan" | Dev.to → Hashnode | Day 2 (Sat) |
+| "JSON Schema Behind Skissify" | Dev.to → HN reference link | Day 2-3 |
+| "How AI Agents Draw Floor Plans" | Dev.to → Hashnode | Day 3 (Sun) |
+| "Skissify vs Excalidraw" | Dev.to → Medium | Day 4 (Mon) |
+| "Why Hand-Drawn Beats Figma" | Medium → Hashnode | Day 5 (Tue) |
+| **"Add to Your AI Agent Workflow"** | **Dev.to → Hashnode → Medium** | **Day 7 (Thu)** |
+
+### Critical Reminder for Founder (02:30 CET RIGHT NOW)
+Before sleeping, do 2 things that matter most:
+1. **Record "The Wobble Slider" GIF** — 10 seconds, humanness 0→10→3, LICEcap or ShareX. This is the single highest-ROI asset you can create tonight.
+2. **Schedule Tweet 1** — queue in Buffer/TweetDeck for 07:00 CET. Copy from SOCIAL-MEDIA.md "Tweet 1: Launch Announcement (VIRAL HOOK)"
+
+Everything else can wait until morning. These two cannot.
+
+---
+
 ## Marketing Improvements (Cycle 4 — March 27, 02:00 CET)
 
 ### Completed This Cycle

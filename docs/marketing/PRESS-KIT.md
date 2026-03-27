@@ -319,5 +319,87 @@ Thanks for being here on launch day 🙏
 
 ---
 
-*Press kit version 3.0 — March 27, 2026 (02:00 CET)*  
-*Added: Product Hunt listing ready-to-submit, Discord per-server templates (in SOCIAL-MEDIA.md)*
+---
+
+## Video Asset Recording Guide
+
+*For the founder — step-by-step to capture all essential video assets before 09:00 CET*
+
+### Tools Needed
+- **GIF recording:** LICEcap (Windows/Mac, free) or ShareX (Windows, free)
+- **Screen recording:** OBS Studio (free) or built-in screen recorder
+- **Video editing (optional):** Canva, CapCut, or DaVinci Resolve
+
+### GIF 1 — "The Wobble Slider" (10 seconds, HIGHEST PRIORITY)
+1. Open skissify.com/editor with any floor plan loaded (use the villa preset)
+2. Start recording — crop to show only the canvas + wobble slider
+3. Drag `humanness` slider from 0 → 10 → back to 3 (slow, deliberate)
+4. Stop recording
+5. Target: 10-15 seconds, under 5MB GIF
+6. **Post immediately** — this is your most shareable asset, no narration needed
+
+### GIF 2 — "JSON to Sketch" (15 seconds)
+1. Start with empty editor (clear existing sketch)
+2. Open a code editor side by side with the browser
+3. Type (or paste) a simple 3-room floor plan JSON
+4. Click render → sketch appears
+5. Cut for 15-second GIF
+
+### GIF 3 — "Paper Style Switch" (12 seconds)
+1. Load a floor plan
+2. Click through 4 paper styles: cream → white → grid → blueprint
+3. Pause 2s on each
+4. Total: ~12 seconds
+
+### Screen Recording — "Claude MCP Demo" (30-45 seconds)
+This is the most impactful asset for the AI agent angle:
+1. Open Claude Desktop + Skissify side by side
+2. Type to Claude: "Design a 2-bedroom apartment and draw it as a floor plan"
+3. Show Claude generating JSON, calling create_sketch, returning the URL
+4. Click the URL → sketch renders in Skissify
+5. **This alone can be your hero YouTube Short + LinkedIn video**
+
+### Quick Screenshot Checklist (10 minutes)
+Open each, screenshot at 2x:
+- [ ] `skissify-editor-floorplan.png` — villa preset on cream paper
+- [ ] `skissify-blueprint.png` — same preset, blueprint style
+- [ ] `skissify-paper-types.png` — screenshot each, stitch 4-up
+- [ ] `skissify-pricing.png` — pricing page full viewport
+- [ ] `skissify-og-hero.png` — 1200×630px split view (use a design tool or Canva)
+
+---
+
+## Interview Talking Points
+
+*For podcast/newsletter/video interviews — bullet points the founder can speak from naturally*
+
+### On the product:
+- "I wanted AI agents to be able to draw, not just describe."
+- "The input is JSON because that's what AI agents are good at generating."
+- "Multi-harmonic wobble sounds technical — what it means is lines look like a human actually drew them."
+- "14 element types was the right scope for v1 — enough for floor plans, not so many it's overwhelming."
+
+### On the business:
+- "€5/month was a deliberate choice. I'd rather have 1,000 casual users than 10 enterprise customers I have to babysit."
+- "Free tier is real — public sketches, no time limit, no credit card."
+- "I'm building in public because accountability makes me ship faster."
+
+### On MCP:
+- "Model Context Protocol is Anthropic's standard for giving AI agents external tools. We were one of the first visual output tools to support it."
+- "MCP felt obvious — any tool that wants to be AI-native needs to speak MCP."
+- "The install is: one npm command, one JSON edit, restart. That's it."
+
+### On the market:
+- "Excalidraw is for humans. Skissify is for agents. Different tools, different moments."
+- "The gap was obvious: AI can reason about space perfectly but had no way to output visual artifacts."
+- "Floor plans are the MVP use case, but diagrams, wireframes, network topology — anything spatial works."
+
+### Origin story:
+- "I was building a home renovation planner and asked Claude to sketch a layout. It gave me 200 words. I wanted a picture."
+- "The wobble engine took longer than everything else combined. Simple sine waves looked terrible."
+- "Launched as a side project. Kept it lean: Next.js, SQLite, Stripe. No Kubernetes."
+
+---
+
+*Press kit version 4.0 — March 27, 2026 (02:30 CET)*  
+*Added: Video asset recording guide (step-by-step for founder), interview talking points, self-hosting FAQ answer*

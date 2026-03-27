@@ -73,3 +73,76 @@ _Actionable items proposed by the automated strategy advisor. Append-only._
 - Explore Maket.ai API pricing for comparison
 
 ---
+
+## 2026-03-27 (Friday) — Cycle Run 02:15 CET
+
+### Context This Cycle
+- Eraser launched MCP server + Agent Skills package (free watermarked renders, pay for clean) — direct competitor in agent diagram space
+- Academic paper (arxiv Aug 2025) validates LLM → JSON → floor plan pipeline
+- MCP now "standard practice" + called "shadow IT" by enterprise analysts
+- EUR 2/mo viable ONLY as API Starter tier (watermark removal + clean renders)
+
+---
+
+### ✅ Action 1: Model Eraser's Agent Page — Create a Skissify MCP Landing Doc
+
+**Why now**: Eraser's `eraser.io/agent-integrations` is the gold standard for developer-facing MCP launch pages. They show exact JSON config, npm install command, use cases, and FAQs. This is the format that converts developers.
+
+**Concrete steps**:
+1. Draft `docs/MCP-QUICKSTART.md` showing:
+   - JSON config block: `{ "mcpServers": { "skissify": { "url": "https://skissify.com/api/mcp", "type": "http" } } }`
+   - `npx skills add skissify/skissify` install line (even if not live yet — draft the intent)
+   - 3 use cases: CI/CD sketch generation, floor plan from LLM, wireframe in docs
+   - FAQ: "Is the MCP free?" → "Yes, watermarked. EUR 2/mo removes watermark."
+2. Share this doc to validate the format before any code is written
+3. This file becomes the spec for the MCP server implementation
+
+**Target**: Written today. 45 minutes.
+
+**Why this matters**: Writing the landing doc before building the server forces you to think like a developer user, not an implementer. Eraser clearly did this — their agent page is frictionless.
+
+---
+
+### ✅ Action 2: Cite the arxiv Floor Plan Paper in One Key Document
+
+**Why now**: "Text-to-Layout: A Generative Workflow for Drafting Architectural Floor Plans Using LLMs" (arxiv.org/html/2509.00543v1) validates that LLMs generate JSON floor plan coordinates accurately. This is your technical credibility anchor.
+
+**Concrete steps**:
+1. Add citation to `docs/BUSINESS-PLAN.md` under the "Technical Moat" section: "Peer-reviewed research (2025) confirms LLMs can reliably generate JSON-structured floor plan coordinates — Skissify is the rendering layer this pipeline was missing."
+2. Draft one tweet: "Academic research (2025) shows LLMs can generate JSON floor plan coordinates for walls, doors, windows, furniture. They just need a renderer. That's Skissify. [arxiv link]"
+3. Save the tweet draft in `docs/marketing/SOCIAL-MEDIA.md` under "Launch Tweet Library"
+
+**Target**: 20 minutes. Zero technical work required.
+
+**Why this matters**: Developer audiences trust citations. One arxiv link in your HN post is worth 10 marketing sentences.
+
+---
+
+### ✅ Action 3: Finalize EUR 2/mo "API Starter" Tier Framing
+
+**Why now**: Eraser's pricing model (free + watermarked, pay to clean) is the validated approach for agent-era tools. Skissify should adopt the same psychological structure. Today: write the pricing copy, not code.
+
+**Concrete steps**:
+1. Update `docs/BUSINESS-PLAN.md` pricing table to add:
+   - **API Starter — EUR 2/mo**: 200 clean renders/month, no watermark, MCP server key, JSON API access
+   - **Free tier**: Unlimited watermarked renders, no API key required
+   - Reframe Pro at EUR 5/mo as "human tier" (UI, saves, sharing) vs EUR 2 "agent tier" (API, renders)
+2. Write the one-liner for each tier:
+   - Free: "Build with Skissify — watermark included"
+   - API Starter EUR 2: "Your agent, your brand — clean renders, no watermark"
+   - Pro EUR 5: "You + your agents — unlimited saves, private sketches, API included"
+3. Add to `docs/marketing/DEMO-SCRIPTS.md`: "The EUR 2 pitch: One API key. 200 renders. Your agent stops producing watermarked floor plans. Less than a coffee."
+
+**Target**: 30 minutes. Pricing copy only, no Stripe changes needed today.
+
+**Why this matters**: Eraser validated this exact pricing model this week. Adapting it to Skissify's context NOW means you have a ready pitch when the MCP server ships.
+
+---
+
+### Notes for Next Cycle
+- Check if MCP Quickstart doc was written — if not, escalate
+- Monitor Eraser's agent integrations for new diagram types (if they add hand-drawn style, threat level jumps)
+- Check if the arxiv tweet draft got into SOCIAL-MEDIA.md
+- Search for new floor-plan.ai / Planner5D API announcements — if they add JSON output, threat level rises
+
+---

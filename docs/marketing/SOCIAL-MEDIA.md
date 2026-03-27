@@ -999,3 +999,134 @@ Good timing to ask — I'm prioritizing the roadmap based on launch feedback. [F
 ```
 That's fair feedback. [Specific acknowledgment of their point]. What would you do differently? I'd genuinely like to understand the better approach.
 ```
+
+### When someone asks "Can I self-host?":
+```
+Yes! Docker Compose setup is included. Clone the repo, `cp .env.example .env`, fill in Stripe keys if you want payments, then `docker-compose up`. The MCP server works against your local instance too.
+```
+
+### When someone asks about pricing:
+```
+Free tier: unlimited public sketches, 50 API calls/month, 1 user.
+Pro (€5/mo): private sketches, 2,000 API calls/month, full API access.
+It's intentionally cheap — I'd rather have 1,000 users at €5 than 10 at €50.
+```
+
+---
+
+## DM Outreach Templates
+
+*Use for individual DMs to people who might genuinely use Skissify. NOT a "please upvote" message. Maximum 15 DMs per day.*
+
+### Template 1: For developers building AI agents
+```
+Hey [name] — saw your work on [project/tweet]. Quick heads up: I just launched Skissify — a sketch tool where AI agents can create hand-drawn visuals via MCP. Thought it might fit in your [agent/project] workflow. It's free: skissify.com. No ask, just thought you'd find it useful.
+```
+
+### Template 2: For architects / designers who use AI
+```
+Hi [name] — noticed you use Claude/AI in your design process. I just launched Skissify — it lets AI generate hand-drawn floor plans and diagrams via MCP. Might save you time on early-stage sketches. Free to try: skissify.com
+```
+
+### Template 3: For MCP enthusiasts
+```
+Hey [name] — saw you're into MCP. I built an MCP server for Skissify (sketch/floor plan renderer). It's live — `npm i -g @skissify/mcp-server`. Genuinely curious if it works in your setup, would love to hear if you hit any rough edges.
+```
+
+### Template 4: For indie hackers / founders
+```
+Hey [name] — saw you post about [relevant topic]. I launched a small tool today: Skissify — AI agents can draw floor plans via MCP. It's my first SaaS, free + €5/mo. If you get a minute, I'd love honest feedback on the positioning: skissify.com
+```
+
+---
+
+## Week 1 Content Calendar (Day-by-Day)
+
+### Day 1 — Friday March 27 (TODAY)
+Already scheduled. See posting schedule above.
+
+### Day 2 — Saturday March 28
+- **Dev.to post:** "Build Your First AI Floor Plan in 15 Minutes" (`build-first-ai-floor-plan-15-minutes.md`)
+- **Indie Hackers:** Post with real Day 1 numbers (fill placeholder in `we-launched-today-here-is-what-happened.md`)
+- **Tweet:** Day 1 follow-up — "The response to [X] was unexpected. Here's what I learned." (build-in-public hook)
+- **LinkedIn:** Thank-you post + top 3 pieces of feedback
+
+### Day 3 — Sunday March 29
+- **Dev.to:** "How AI Agents Can Draw Floor Plans" (`how-ai-agents-draw-floor-plans.md`)
+- **Hashnode:** Cross-post Day 2 Dev.to article
+- **Tweet:** Technical thread — "I've been watching how people use Skissify. Here are 5 ways I didn't expect."
+- **Reddit r/webdev:** Post about Canvas 2D rendering approach if HN thread died down
+
+### Day 4 — Monday March 30
+- **Dev.to:** "Skissify vs Excalidraw" (`skissify-vs-excalidraw.md`)
+- **Medium:** Cross-post "Why Hand-Drawn Beats Figma" 
+- **Tweet:** Comparison thread — visual grid showing Excalidraw vs Skissify output side-by-side
+- **LinkedIn:** "Why I built JSON-first instead of drag-and-drop" — good engagement bait for design leaders
+
+### Day 5 — Tuesday March 31
+- **Hashnode:** "Skissify vs Excalidraw" cross-post
+- **Dev.to:** "The JSON Schema Behind Skissify" (`the-json-schema-behind-skissify.md`)
+- **Tweet:** "I published the JSON schema for Skissify. Fork it. Build on it. [link]" — open source angle
+- **r/programming:** Only if MCP/HN thread had positive momentum
+
+### Day 6 — Wednesday April 1
+- **Medium:** "How AI Agents Can Draw Floor Plans" cross-post
+- **Tweet:** "One week of Skissify — what I fixed, what I broke, what people actually asked for"
+- **YouTube Shorts (if recorded):** Upload Short 1 or Short 2
+
+### Day 7 — Thursday April 2
+- **Dev.to:** "How to Add Skissify to Your AI Agent Workflow" (`how-to-add-skissify-to-your-ai-agent-workflow.md`) — NEW, targeting Claude Desktop users
+- **Tweet:** Integration tutorial thread
+- **Reddit r/ClaudeAI:** "I built an MCP server for visual output — here's how it works" (if not too self-promotional by community standards)
+- **Week 1 metrics post:** Transparent numbers on Indie Hackers
+
+---
+
+## Product Hunt Follow-Up Strategy
+
+After going live, this sequence maximizes Day 1 PH performance:
+
+**00-30 min after listing goes live:**
+- Post maker's comment immediately
+- Tweet "We're live on @ProductHunt: [link]" — include direct link
+- Post to LinkedIn: "We're live on Product Hunt today..."
+
+**1 hour after live:**
+- DM 5-10 builders in your network (not "please upvote" — "would love your feedback on the listing")
+- Check for comments, respond to all within 10 minutes
+
+**3 hours after live:**
+- Share in Slack groups (Indie Hackers Slack, relevant Discord servers)
+- Check ranking — are you in top 5? Top 10?
+
+**6 hours after live:**
+- Tweet #2 with screenshot of ranking (if good)
+- Share in Telegram groups if relevant
+
+**End of day:**
+- Thank everyone, post transparent results
+- Respond to every PH comment that came in
+
+---
+
+## Bluesky/Mastodon Cross-Post Template
+
+```
+🚀 Launched Skissify today!
+
+It's a sketch tool where the input is JSON — designed so AI agents can create hand-drawn visuals.
+
+Claude can literally design a floor plan, generate JSON, call Skissify via MCP, and return a sketch.
+
+14 element types. 4 paper styles. Tunable wobble engine.
+
+Free: skissify.com
+MCP: npm install -g @skissify/mcp-server
+
+#BuildInPublic #AI #MCP #IndieHacker
+```
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 5 — 02:30 CET)*  
+*Added: DM outreach templates, Week 1 content calendar, PH follow-up strategy, platform response templates (self-hosting, pricing), Bluesky/Mastodon template*
