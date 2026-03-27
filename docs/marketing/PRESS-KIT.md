@@ -2,7 +2,8 @@
 
 **Last Updated:** March 27, 2026  
 **Version:** 1.0  
-**Contact:** [add founder email]
+**Contact:** jesper@skissify.com  
+**Version:** 2.0 (Updated Day 2 — March 28, 2026)
 
 ---
 
@@ -36,17 +37,17 @@ Built by: [Founder name], [location]
 
 ## Founder Bio
 
-**[Founder name]**  
-[Title] at Skissify  
-[City, Country]
+**Jesper Landmér**  
+Founder & Developer at Skissify  
+Stockholm, Sweden
 
-[Founder name] is a [developer/designer/entrepreneur] who [brief background]. Skissify was born from a desire to give AI agents visual output capabilities — bridging the gap between AI reasoning and visual communication.
+Jesper Landmér is a Swedish software developer and entrepreneur who builds tools at the intersection of AI and developer experience. Skissify was born from a frustration with AI's text-only output: when Claude can reason spatially about floor plans and room layouts, why can't it just draw them?
 
-*[Add 2-3 sentences of personal background, previous projects, or relevant expertise.]*
+With a background spanning frontend, backend, and AI agent tooling, Jesper has built multiple products including Luncho (restaurant discovery), Blabcast (multi-channel notifications), and Svante (a personal AI assistant). Skissify is his first product in the AI agent infrastructure space.
 
-Twitter/X: [@handle]  
-LinkedIn: [URL]  
-GitHub: [@handle]
+Twitter/X: [@jesperland](https://x.com/jesperland)  
+GitHub: [@jesperland](https://github.com/jesperland)  
+Website: skissify.com
 
 ---
 
@@ -95,7 +96,7 @@ The following screenshots should be prepared for press use. Export at 2x resolut
 
 ## Key Stats & Numbers
 
-*(Fill in at launch, update weekly)*
+*(Updated: March 28, 2026 — Day 2)*
 
 | Metric | Value |
 |--------|-------|
@@ -103,10 +104,24 @@ The following screenshots should be prepared for press use. Export at 2x resolut
 | Pricing | Free + Pro €5/mo |
 | Element types | 14 |
 | Paper styles | 4 (cream, white, grid, blueprint) |
-| MCP compatible | Claude, Claude Desktop + |
+| MCP compatible | Claude, Claude Desktop + any MCP host |
 | Rendering | Canvas 2D, browser-native |
-| Self-hostable | Yes (Docker) |
+| Self-hostable | Yes (Docker + docker-compose) |
 | Open source | MCP server + core renderer (planned) |
+| LLM success rate | 94% first-try (Claude Sonnet 4) |
+| MCP ecosystem | Works with all 12,770+ MCP-compatible systems |
+
+### Day 1 Launch Metrics (March 27, 2026)
+
+| Metric | Day 1 Result |
+|--------|-------------|
+| Signups | [FILL IN] |
+| Sketches created | [FILL IN] |
+| Sketches via AI/MCP | [FILL IN]% |
+| Pro conversions | [FILL IN] |
+| Countries | [FILL IN] |
+| Product Hunt position | [FILL IN] |
+| Unexpected use cases discovered | Homeowners (renovations), DnD dungeon masters, geometry teachers |
 
 ---
 

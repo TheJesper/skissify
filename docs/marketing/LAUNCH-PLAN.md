@@ -1465,3 +1465,91 @@ r/LocalLLaMA is 400K members who obsessively discuss model performance benchmark
 
 *Last Updated: March 27, 2026 (Cycle 25 - 21:56 CET)*
 *Added: Blog posts #36-38 (Day 2 playbook, MCP stack, LLM benchmark), r/mcp identified as critical untouched community, full Day 2 priority action table, content gaps inventory, Day 2 Twitter threads 77-81*
+
+
+---
+
+## Marketing Improvements (Cycle 27 — March 28, 00:13 CET)
+
+### ⚡ STATUS: DAY 2 BEGINS — r/mcp IS THE PRIORITY, LLM BENCHMARK GOES AT 08:00
+
+It's 00:13 CET on March 28. Day 1 is officially over. Day 2 starts in 7 hours with the alarm going off at 07:00 CET to post real numbers.
+
+**The single most important thing for Day 2: post to r/mcp.** This was a critical gap from Day 1 — Skissify was built specifically for MCP developers and the community never heard about it on launch day. The post is written, the context is set, the install instructions are clear. Post at 07:30 CET sharp.
+
+**Second priority: LLM benchmark.** The data exists, the blog post exists. The Twitter thread format is ready. This is the highest-quality technical content we have — concrete numbers (94% Claude, 88% GPT-4o, etc.) that will resonate with r/LocalLLaMA (400K members) and drive genuine MCP developer interest.
+
+### What Changed Since Cycle 26
+- **r/mcp post finally written and ready**: Full post copy, install instructions, benchmark reference, feedback asks. The Day 1 gap is now a Day 2 asset — we get to frame it as "launching to our core community on Day 2 with real data."
+- **Two new blog posts written**: "Day 2: We Finally Posted to r/mcp" (#40 — honest narrative for Indie Hackers/Dev.to) and "The Skissify API Reference for Agent Builders" (#41 — technical reference, Hashnode/Dev.to). These fill the technical content gap.
+- **Tweets 87-91 written**: Day 2 numbers wrap (Tweet 87), r/mcp bridge (88), LLM benchmark thread (89), unexpected audiences (90), LinkedIn bridge (91).
+- **SOCIAL-MEDIA.md Cycle 27**: Full Day 2 action table (14 prioritized items), r/mcp post copy, r/LocalLLaMA post, MCP Discord post, LinkedIn Day 2 full post, Bluesky Day 2.
+- **PRESS-KIT.md updated**: Founder bio now has real details (Jesper Landmér, Stockholm), Day 1 metrics table added (fill in actuals), contact email added, version bumped to 2.0.
+- **Hashtag research confirmed**: MCP ecosystem confirmed mainstream (97M+ monthly SDK downloads as of March 2026). Key active hashtags from dev.to March 2026 data: #agents #ai #mcp #news — exactly our content pillars.
+
+### Completed This Cycle (27)
+- [x] ✅ **Blog post #40 NEW**: "Day 2: We Finally Posted to r/mcp — The Audience We Actually Built For" — honest narrative about the Day 1 gap, what MCP developers need to know, benchmark summary, and what Day 2 looks like. File: docs/marketing/blog/day-2-rmcp-launch-the-audience-we-built-for.md
+- [x] ✅ **Blog post #41 NEW**: "The Skissify API Reference for Agent Builders" — full technical reference with element types table, style parameters, optimized prompt template, error handling pattern, self-hosting instructions, and roadmap. File: docs/marketing/blog/the-skissify-api-reference-for-agent-builders.md
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 27**: Tweets 87-91, r/mcp full post copy (first ever), r/LocalLLaMA benchmark post, MCP Discord post, LinkedIn Day 2, Bluesky Day 2, Day 2 action table (14 items)
+- [x] ✅ **PRESS-KIT.md upgraded**: Founder bio with real details (Jesper Landmér, Stockholm), Day 1 metrics table, contact email, version 2.0
+- [x] ✅ **Web research completed**: MCP ecosystem mainstream confirmed (97M+ monthly downloads March 2026), active hashtags validated, AI agent tool landscape mapped
+
+### New Blog Posts (Cycle 27)
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 40 | **Day 2: We Finally Posted to r/mcp** | day-2-rmcp-launch-the-audience-we-built-for.md | Indie Hackers, Dev.to | Day 2 |
+| 41 | **The Skissify API Reference for Agent Builders** | 	he-skissify-api-reference-for-agent-builders.md | Dev.to, Hashnode, official docs | Day 2 |
+
+### Cumulative Blog Inventory (41 posts)
+
+| Range | See |
+|-------|-----|
+| #1-38 | Cycles 1-26 (see above) |
+| #39 | "I Launched at Midnight — 23 Hours of Lessons" (Cycle 26) |
+| #40 | "Day 2: We Finally Posted to r/mcp" (Cycle 27) |
+| #41 | "The Skissify API Reference for Agent Builders" (Cycle 27) |
+
+### Day 2 Execution Checklist
+
+| Priority | Time | Action | Notes |
+|----------|------|--------|-------|
+| 1 🔴 | 07:00 CET | Fill in real Day 1 numbers | Analytics, Stripe, sketch DB |
+| 2 🔴 | 07:00 CET | Tweet 87 (real numbers) | Do NOT post placeholders |
+| 3 🔴 | 07:25 CET | Tweet 88 (r/mcp bridge) | 5 min before the post |
+| 4 🔴 | 07:30 CET | **r/mcp post** | This is the #1 priority |
+| 5 🔴 | 08:00 CET | Tweet 89 (LLM benchmark thread) | 5-tweet thread ready |
+| 6 🔴 | 08:30 CET | Publish LLM benchmark on Dev.to | the-llm-floor-plan-benchmark.md |
+| 7 🔴 | 09:00 CET | r/LocalLLaMA benchmark post | 400K members |
+| 8 🔴 | 09:00 CET | MCP Discord post | First post in official Discord |
+| 9 🟡 | 09:30 CET | Bluesky Day 2 | |
+| 10 🟡 | 10:00 CET | Tweet 90 (unexpected audiences) | Best viral hook for Day 2 |
+| 11 🟡 | 11:00 CET | LinkedIn Day 2 | Professional trust-building |
+| 12 🟡 | 13:00 CET | Publish blog #40 on Indie Hackers | r/mcp honest narrative |
+| 13 🟢 | 14:00 CET | Publish API reference on Dev.to/Hashnode | Technical content |
+| 14 🟢 | 16:00 CET | Add email newsletter signup | Biggest infrastructure gap |
+| 15 🟢 | All day | Reply to all open HN/Reddit comments | Community engagement |
+
+### Strategic Insight: The "Day 1 Gap" Becomes a Day 2 Asset
+
+Missing r/mcp on launch day feels like a mistake — and it was. But it can be reframed:
+
+"We posted to r/mcp today, not yesterday. Here's why that's actually better:
+- We have real data to share (not 'we hope this is interesting')
+- We've seen the unexpected use cases (homeowners, dungeon masters)
+- We can lead with the benchmark numbers (94% first-try success)
+- We can frame it as 'here's what happened when regular people found our MCP tool first'"
+
+The honest framing is always more compelling than a polished launch.
+
+### Critical Infrastructure Still Missing
+
+| Gap | Priority | Action |
+|----|----------|--------|
+| **Email newsletter signup** | 🔴 Day 2 | Add banner + post-sketch CTA |
+| **Video content** | 🟡 Day 2-3 | Wobble slider GIF minimum |
+| **Interactive playground on homepage** | 🟡 Week 1 | JSON → live render, no signup |
+| **Benchmark page on skissify.com** | 🟢 Week 1 | SEO magnet for "JSON sketch API" |
+
+*Last Updated: March 28, 2026 (00:13 CET — Cycle 27)*
+*Added: Blog posts #40-41, Cycle 27 full Day 2 battle plan, PRESS-KIT.md upgraded with real founder bio, SOCIAL-MEDIA.md Cycle 27 complete (Tweets 87-91 + all community posts), infrastructure gaps prioritized*
