@@ -699,3 +699,48 @@ A: Two audiences emerged on launch day. Primary: developers and AI enthusiasts b
 A: No. I built Skissify entirely for the AI developer market. The homeowner use case emerged on Day 1 when people started sharing how they were using it. The JSON-first architecture that was designed for machines turns out to be equally useful when an AI generates that JSON in response to a human description.
 
 *Press Kit last updated: March 27, 2026 (Cycle 18 — 16:30 CET)*
+
+---
+
+## Cycle 19 Additions (March 27, 17:00 CET)
+
+### Newsletter Outreach Priority List (updated)
+
+The highest-ROI action not yet taken on launch day: personal outreach to AI/dev newsletters. Updated priority list with personalized angles:
+
+| Newsletter | Subscribers | Angle to Lead With | Contact Method |
+|------------|-------------|-------------------|----------------|
+| **TLDR AI** (tldr.tech) | 750K | "AI agents can now draw — Skissify adds visual output to the MCP ecosystem" | Newsletter submission form |
+| **The Rundown AI** | 700K+ | "The missing tool in AI agent stacks: a sketch renderer" | therundown.ai/submit or Twitter DM |
+| **Ben's Bites** | 50K (high quality) | Indie/founder story — "built in public, launched today" | bensbites.co/submit |
+| **Bytes.dev** | 100K JS devs | Canvas 2D multi-harmonic wobble — technical interest | bytes.dev submit form |
+| **Superhuman** | 500K | Productivity angle: "AI briefings with visual output, not just text" | Twitter DM or email |
+| **JavaScript Weekly** | 200K | Web tech angle — Canvas API, seeded randomness, Next.js | javascriptweekly.com/submissions |
+| **Pointer.io** | 30K (senior devs) | Technical depth: "the rendering engine that makes AI-generated floor plans look human-drawn" | pointer.io submit |
+| **Console.dev** | "interesting developer tools" curation | Clean fit — MCP, JSON-first, Canvas rendering | console.dev/tools |
+
+**Outreach timing:** Email tonight (22:00 CET) while still Day 1. Follow-up if no response by Day 5.
+
+### New Blog Post for Media (Cycle 19)
+| # | Title | File | Best Angle For |
+|---|-------|------|----------------|
+| 26 | **"I Built a Tool for AI Developers. Homeowners Are Using It to Renovate Their Kitchens."** | `developer-accidentally-built-for-homeowners.md` | Consumer press, Medium viral, Indie Hackers |
+
+### New Press Angle: "Claude as Input Sanitizer"
+
+**Story Hook:** "Claude is the input sanitizer nobody had to build."
+
+The technical insight: Skissify requires JSON. Most people can't write JSON. Claude can translate natural language → valid Skissify JSON. This makes Skissify accessible to anyone who can describe a room — without knowing anything about JSON.
+
+**Press angle:** The AI agent didn't just make Skissify smarter. It made it usable by people who weren't the intended audience.
+
+This is a broader story about what happens when AI acts as a translation layer for technical tools — a story that will be true for hundreds of developer tools in 2026.
+
+### New Third-Party Communities (Cycle 19)
+| Platform | Members | Content Angle | Target Post Date |
+|----------|---------|--------------|-----------------|
+| r/Architecture | ~250K | "What element types are missing for architectural communication?" | 21:00 CET Day 1 |
+| Anthropic Discord #mcp-showcase | 100K+ | Technical MCP server showcase + schema feedback | 21:30 CET Day 1 |
+| The Changelog Discord | 50K+ | Show & Tell: programmatic sketch rendering | 21:30 CET Day 1 |
+
+*Press Kit last updated: March 27, 2026 (Cycle 19 — 17:00 CET)*

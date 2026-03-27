@@ -162,6 +162,64 @@
 
 ---
 
+## Marketing Improvements (Cycle 19 — March 27, 17:00 CET)
+
+### ⚡ STATUS: FRIDAY EVENING US PRIME TIME — NEWSLETTER OUTREACH + DISCORD COMMUNITIES
+
+It's 17:00 CET (11:00 AM ET / 8:00 AM PT). Friday evening is underrated for engagement — both US coasts are fully online and social feeds are busier than average. **This cycle's biggest unlock: newsletter outreach and Discord communities were underutilized.** 8 specific AI/dev newsletters identified for direct pitch. 2 Discord communities queued. r/Architecture added as new community. Blog post #26 written on the dual-market story.
+
+### What Changed Since Cycle 18
+- **Dual-market story is crystallizing**: Developer tool + homeowner use case = two real markets from a single product. This is now a press angle, not just an insight.
+- **Newsletter outreach was missing**: No active outreach to TLDR AI, The Rundown, Ben's Bites, Bytes.dev, Superhuman despite these being highest-ROI channels for a developer tool. Templates written this cycle.
+- **Discord communities not yet posted**: Anthropic MCP Showcase and Changelog Discord posts written and ready.
+- **r/Architecture unlocked**: Architecture community not yet targeted. Post written from "I'm a developer building in your domain, what's missing?" angle — low-spam-risk, high-feedback-value.
+
+### Completed This Cycle (19)
+- [x] ✅ **Blog post #26 NEW**: "I Built a Tool for AI Developers. Homeowners Are Using It to Renovate Their Kitchens." — Full narrative piece on the dual-market discovery. The best press angle of launch day. Medium Day 2, Substack Day 2, Indie Hackers Day 2. File: `docs/marketing/blog/developer-accidentally-built-for-homeowners.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 19**: Tweets 45-48 (dual-market surprise, newsletter callout, Friday floor plan thread, Discord community thanks), Bluesky Cycle 19 narrative post, Mastodon use-case surprise post, Discord templates for Anthropic MCP + Changelog, newsletter outreach template with 8 named targets, r/Architecture new community post, hashtag research update (trending March 2026: #MCP #ClaudeCode #VibeCoding #BuildInPublic #AIAgents), full timing table 17:00-23:00 CET
+- [x] ✅ **Newsletter targets identified**: TLDR AI (750K), The Rundown (700K+), Ben's Bites (50K), Bytes.dev (100K), Superhuman (500K), JavaScript Weekly (200K), Pointer.io (30K), Indie Hackers Newsletter (100K) — all with personalized angle notes
+- [x] ✅ **HASHTAG UPDATE**: Trending hashtags confirmed for evening posts — #MCP, #ClaudeCode, #VibeCoding, #BuildInPublic, #DiagramsAsCode, #NoCode (homeowner market), #AIDesign
+
+### New Blog Post (Cycle 19)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 26 | **Developer Built for AI Devs, Used by Homeowners** | `developer-accidentally-built-for-homeowners.md` | **Medium Day 2, Substack Day 2** | Day 2 |
+
+### New Communities Unlocked This Cycle (19)
+| Community | Members | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/Architecture** | ~250K | "What architectural elements are missing? Developer asks architects" | 21:00 CET |
+| **Anthropic Discord #mcp-showcase** | 100K+ | Technical MCP server showcase + JSON schema feedback request | 21:30 CET |
+| **The Changelog Discord** | 50K+ | Show & Tell: JSON-driven sketch rendering, Canvas 2D | 21:30 CET |
+| **AI Newsletter direct outreach** | 750K+ each | Personal email pitch to 8 high-fit newsletters | 22:00 CET |
+
+### Strategic Idea: "Human Mode" Input Form
+If homeowner signups continue on Day 2, build a simple natural-language-to-sketch entry point:
+- Text input: "Describe your room" → Claude API → Skissify JSON → instant render
+- No JSON required
+- Marketed as: "Describe your space. Get a sketch."
+- Can be a separate `/rooms` route, not replacing the JSON editor
+- **Decision trigger**: if > 25% of Day 2 signups describe themselves as non-developers in any feedback form
+
+### Immediate Actions Right Now (17:00 CET)
+1. **Post Tweet 45** (dual-market surprise) — 17:15 CET
+2. **Post Bluesky Cycle 19** (homeowner/dungeon narrative) — 17:30 CET
+3. **Post Tweet 46** (newsletter callout) — 18:30 CET
+4. **Post Mastodon** (use-case surprise) — 18:00 CET
+5. **Post Discord: Anthropic MCP** — 21:30 CET (peak MCP community active hours)
+6. **Post Discord: Changelog** — 21:30 CET
+7. **Post r/Architecture** — 21:00 CET (less time-sensitive, genuine community post)
+8. **Send newsletter outreach emails** — 22:00 CET (5-8 emails, personalized)
+9. **Post Tweet 47** (Friday floor plan) — 20:00 CET — highest engagement window
+
+### Cumulative Blog Inventory (26 posts)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1-25 | [See Cycle 18 for full list] | various | various | various |
+| 26 | **Developer Built for AI Devs, Used by Homeowners** | `developer-accidentally-built-for-homeowners.md` | Medium, Substack, Indie Hackers | Day 2 |
+
+---
+
 ## Marketing Improvements (Cycle 18 — March 27, 16:30 CET)
 
 ### ⚡ STATUS: US MORNING PRIME TIME — HOMEOWNER ANGLE IS THE SLEEPER HIT
