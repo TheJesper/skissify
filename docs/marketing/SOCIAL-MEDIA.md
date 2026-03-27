@@ -1420,5 +1420,135 @@ skissify.com
 
 ---
 
+## Cycle 8 Additions — Launch Morning (05:46 CET, March 27 2026)
+
+### Emergency Pre-Launch Tweet (06:30 CET — Bluesky + Mastodon now)
+Get ahead of the Product Hunt wave by warming up Bluesky/Mastodon before 09:00 CET.
+
+**Bluesky:**
+```
+There are 12,770 MCP servers. None of them draw. Until today.
+
+Skissify turns JSON into hand-drawn sketches — floor plans, diagrams, wireframes.
+AI agents can generate and render sketches via MCP, no human in the loop.
+
+skissify.com — free tier available. Launching on Product Hunt at 09:00 CET.
+
+#MCP #AIAgents #BuildInPublic
+```
+
+**Mastodon (fosstodon / hachyderm):**
+```
+Show HN incoming: I built a JSON-to-sketch tool designed for AI agents.
+
+Tell Claude to design a floor plan → it writes JSON → calls Skissify MCP → returns a hand-drawn sketch.
+
+The input is JSON. The output is visual. The middle step is an LLM.
+
+skissify.com (free tier) — launching today on Product Hunt
+#webdev #ai #mcp #foss #indiedev
+```
+
+---
+
+### Personal DM Templates (Send to 5-10 people before 09:00 CET)
+*These are NOT "please upvote" messages. They're personal, specific, value-first.*
+
+**For MCP developers:**
+```
+Hey [name] — you've been building MCP tools and I thought you might find this interesting.
+
+I built an MCP server that lets AI agents draw. Like, actually draw — not describe what to draw.
+Tell Claude "design a floor plan" and it calls Skissify and returns a hand-drawn sketch.
+
+Launching today: skissify.com
+
+I'd love to know if it fits any workflow you're already building. No pressure, just thought it was relevant.
+```
+
+**For architects / interior designers:**
+```
+Hey [name] — I built a tool you might actually use.
+
+It lets you describe a layout to an AI and get back a hand-drawn floor plan — not a polished CAD drawing, 
+more like a quick client sketch. Good for early-stage client conversations.
+
+Live today: skissify.com — free to try, no credit card.
+
+Would love your honest take on whether it's useful for how you work.
+```
+
+**For indie hackers / solodevs:**
+```
+Hey [name] — built a thing, launching today.
+
+Skissify: JSON → hand-drawn sketch, with MCP support so AI agents can generate floor plans autonomously.
+
+If you're building anything that needs visual output from AI, this might be the missing piece.
+
+skissify.com — launching on Product Hunt in a few hours. Would love your thoughts.
+```
+
+---
+
+### Product Hunt Day-Of Posts
+
+**Tweet at 09:01 CET (moment PH goes live):**
+```
+We're live on Product Hunt! 🚀
+
+Skissify: JSON in. Hand-drawn sketch out. AI agents can draw.
+
+→ [Product Hunt URL]
+
+If you've been wondering what AI visual output looks like in practice — this is it.
+```
+
+**LinkedIn at 09:15 CET:**
+```
+Today we launched Skissify on Product Hunt.
+
+The pitch: AI agents can describe a floor plan. But they couldn't draw one.
+
+Skissify is the bridge: JSON in (LLM-generated), hand-drawn sketch out, MCP server so Claude can call it directly.
+
+→ [Product Hunt URL]
+
+Built for AI agents. Works for humans too.
+```
+
+---
+
+### HN Wave Preparation (10:00 CET)
+See `docs/marketing/HN-RESPONSE-PLAYBOOK.md` for:
+- Full Show HN title + body (ready to paste)
+- First comment to post immediately after submitting
+- 12 predicted HN comment types with draft responses
+- Comment prioritization strategy
+
+---
+
+### "I Gave Claude a Pencil" — Personal Blog Post
+New blog post for Day 2-3: `docs/marketing/blog/i-gave-claude-a-pencil.md`
+
+A founder story piece — the personal, narrative version of why Skissify exists. Best for:
+- Medium (reaches non-developer audience)
+- Substack (if you have subscribers)
+- Personal blog
+- Cross-post to Dev.to with #buildinpublic
+
+This complements the technical blog posts with an emotional hook. The title is the Twitter hook: "I gave Claude a pencil."
+
+Potential tweet to promote it:
+```
+I gave Claude a pencil.
+
+Here's what happened. →
+
+[link to blog post]
+```
+
+---
+
 *Last Updated: March 27, 2026 (Cycle 7 — 04:41 CET)*  
 *Added: "12,770 MCP servers" viral hook tweet, determinism/precision angle tweet, Bluesky 4-post thread, LinkedIn article hook, r/homedesign soft-launch post, reactive tweet template for AI news*

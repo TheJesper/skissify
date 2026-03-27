@@ -162,6 +162,42 @@
 
 ---
 
+## Marketing Improvements (Cycle 8 — March 27, 05:46 CET)
+
+### Completed This Cycle
+- [x] ✅ **LAUNCH-DAY-NOW.md** CREATED — minute-by-minute action plan for 05:46–22:00 CET with exact tweet copy, PH maker comment template, Show HN body + first comment (copy-paste ready), Reddit post copy for each wave, and an hourly metrics tracking table. The founder's single-source-of-truth for today.
+- [x] ✅ **HN-RESPONSE-PLAYBOOK.md** CREATED — 12 predicted Hacker News comment types with ready-to-post responses. Covers: "Why not Excalidraw?", "Couldn't you use DALL-E?", "This is niche", "JSON is verbose", "It's just SVG", "What's the business model?", "Open source?", plus positive engagement templates and comment prioritization order. The founder can respond in under 2 minutes per comment.
+- [x] ✅ **Blog post #10 NEW**: "I Gave Claude a Pencil" — a personal founder story (700 words) for Medium/Substack. Narrative arc: the gap AI couldn't fill → the schema insight → the wobble algorithm → the MCP moment → what went wrong → why today. The emotional complement to the technical blog posts. Title doubles as a viral tweet hook.
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 8 additions**: Bluesky + Mastodon pre-launch posts (06:30 CET), 3 personal DM templates by audience, Product Hunt go-live tweets (09:01 CET), LinkedIn post, HN playbook reference, and a "I Gave Claude a Pencil" tweet to promote the new blog post.
+
+### What the Founder Has Right Now (05:46 CET)
+Everything needed for launch day is ready. Not "needs a bit more polish" — **actually ready to paste and post**.
+
+| Asset | File | Status |
+|-------|------|--------|
+| Tweet 1 (07:00) | SOCIAL-MEDIA.md | ✅ Copy-paste ready |
+| Bluesky pre-launch (06:30) | SOCIAL-MEDIA.md Cycle 8 | ✅ Copy-paste ready |
+| PH maker comment | SOCIAL-MEDIA.md | ✅ Copy-paste ready |
+| Show HN title + body | LAUNCH-DAY-NOW.md | ✅ Copy-paste ready |
+| HN first comment | LAUNCH-DAY-NOW.md | ✅ Copy-paste ready |
+| 12 HN response drafts | HN-RESPONSE-PLAYBOOK.md | ✅ Copy-paste ready |
+| Reddit Wave 1 (r/SideProject) | LAUNCH-DAY-NOW.md | ✅ Copy-paste ready |
+| Reddit Wave 2 (r/webdev) | LAUNCH-DAY-NOW.md | ✅ Copy-paste ready |
+| Reddit Wave 3 (r/mcp) | LAUNCH-DAY-NOW.md | ✅ Copy-paste ready |
+| 5 DM templates | SOCIAL-MEDIA.md Cycle 8 | ✅ Copy-paste ready |
+| 10 blog posts | docs/marketing/blog/ | ✅ 10 posts ready to publish |
+| End-of-day retro post | we-launched-today... | Fill numbers at 22:00 |
+
+### Most Important Thing Right Now (05:46 CET)
+**Read LAUNCH-DAY-NOW.md.** It's the playbook for the next 16 hours.
+
+### New Blog Posts This Cycle
+| Post | File | Best Platform | Day |
+|------|------|--------------|-----|
+| "I Gave Claude a Pencil" | i-gave-claude-a-pencil.md | Medium, Substack | Day 2-3 |
+
+---
+
 ## Marketing Improvements (Cycle 7 — March 27, 04:41 CET)
 
 ### Completed This Cycle
