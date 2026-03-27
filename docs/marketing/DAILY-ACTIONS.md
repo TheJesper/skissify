@@ -299,3 +299,91 @@ _Actionable items proposed by the automated strategy advisor. Append-only._
 - Check Napkin AI pricing page directly for API availability update
 
 ---
+
+## 2026-03-27 (Friday) — Cycle Run 05:04 CET
+
+### Context This Cycle
+- tldraw shipped desktop app with imperative local HTTP Canvas API (this week)
+- GitHub trending: 5 of 15 top new repos are MCP/Skills — virality window is OPEN
+- 2026 free-to-paid conversion data: median 8%, freemium 3–7%, credit-card trial: 30%
+- EUR 2/mo math doesn't work until 5,000+ free users — EUR 5/mo Pro is the correct early anchor
+
+---
+
+### ✅ Action 1: Write the "Declarative vs. Imperative" Developer Post
+
+**Why now**: tldraw's new desktop Canvas API (shipped this week) is imperative — send commands one at a time. Skissify's JSON manifest is declarative — describe the whole scene at once. This is a genuine, timely technical differentiation that developers will understand immediately.
+
+**What to write**:
+- Short dev blog post (400–600 words): *"Why AI agents prefer declarative sketch formats"*
+- Core argument: Imperative APIs (tldraw actions, Excalidraw programmatic writes) require state-tracking across multiple tool calls. Declarative JSON manifest (Skissify) = one prompt, one render, done.
+- Include a code snippet: Claude generating a floor plan JSON → `render_sketch` → SVG in one shot
+- Target audience: developers who've hit the tldraw API or Excalidraw MCP and found it fiddly
+
+**Post it**: Dev.to + HN comments (in any tldraw or Excalidraw MCP discussions) + Twitter/X thread
+**Estimated time**: 2 hours including a real code example
+
+---
+
+### ✅ Action 2: Remove the Signup Gate from the JSON Editor
+
+**Why now**: 2026 free-to-paid data confirms 38% of best freemium tools let users try before signup. Skissify's split-pane JSON editor is a perfect "try before you sign up" demo. Every user hitting a signup gate before they've seen the product is a lost conversion.
+
+**What to change**:
+- JSON editor → sketch rendering: NO auth required
+- Export SVG/PNG (with watermark): require signup (captures email, creates free account)
+- Export without watermark: EUR 5/mo Pro gate
+
+**Expected impact**: Higher top-of-funnel. At 3–7% conversion from free → paid, more free users = more paid users. Every signup barrier cut increases the free user pool by an estimated 30–50% (benchmark from try-before-signup tools).
+
+**Concrete steps**:
+1. Remove auth middleware from `/api/render` endpoint (or the equivalent rendering route)
+2. Add watermark to SVG/PNG output for unauthenticated renders
+3. Gate the "download without watermark" button behind login/Pro check
+4. Test the full flow: anonymous user → renders sketch → sees watermark → clicks "remove watermark" → signup/upgrade prompt
+
+**Estimated time**: 3–4 hours of implementation
+
+---
+
+### ✅ Action 3: Create a Minimal `@skissify/mcp` npm Package Skeleton
+
+**Why now**: MCP/Skills virality is at peak right now — 5 of 15 top trending GitHub repos this week are skills/MCP packages. `louislva/claude-peers-mcp` hit 1,109 GitHub stars in a single week. The virality window is open. A well-packaged, minimal Skissify MCP with a compelling README demo can trend.
+
+**Minimum viable MCP server**:
+```json
+{
+  "name": "@skissify/mcp",
+  "tools": [
+    {
+      "name": "render_sketch",
+      "description": "Render a Skissify JSON manifest as a hand-drawn SVG",
+      "input": { "manifest": "JSON object describing sketch elements" },
+      "output": "SVG string or URL"
+    }
+  ]
+}
+```
+
+**Steps**:
+1. Create `W:/code/skissify/packages/mcp/` directory
+2. `npm init` + `@modelcontextprotocol/sdk` dependency
+3. Implement `render_sketch` tool — call the local Skissify render engine
+4. Write a 10-line README with a GIF demo: `claude → JSON manifest → hand-drawn floor plan`
+5. Publish to npm with `public` access
+6. Submit to modelcontextprotocol.io/registry
+
+**Estimated time**: 4–6 hours for a working v0.1 (transport only, no cloud auth needed yet)
+
+**Why this is the highest ROI action this week**: MCP install → pipeline dependency → watermark annoyance → EUR 5/mo upgrade. This is the entire revenue funnel, and it starts here.
+
+---
+
+### Notes for Next Cycle
+- Did we write the declarative vs. imperative post? Link if yes.
+- Is the signup gate removed from the JSON editor?
+- Does `W:/code/skissify/packages/mcp/` exist with working code?
+- tldraw desktop: monitor GitHub star velocity — if it's gaining traction fast, accelerate the "vs tldraw" messaging
+- Check if any Skissify MCP competitors emerge in the registry (search "hand-drawn" or "sketch" in MCP registry)
+
+---

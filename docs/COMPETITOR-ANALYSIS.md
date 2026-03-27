@@ -474,6 +474,42 @@ The sketch/diagram market in 2026 is fragmenting into three lanes: (1) open-sour
 
 ---
 
+## Update Log: March 27, 2026 — 05:04 CET | Automated Strategy Run #5
+
+### 🔴 CRITICAL: tldraw Ships Desktop App with Local HTTP Canvas API (Week of March 25, 2026)
+- **URL**: https://github.com/tldraw/tldraw-desktop
+- tldraw launched **tldraw-desktop** — an Electron app for editing `.tldr` files locally — with a **built-in local HTTP Canvas API** (`localhost:7236`)
+- API endpoints: `GET /api/doc/:id/shapes`, `GET /api/doc/:id/screenshot`, `POST /api/doc/:id/exec`, `POST /api/doc/:id/actions`
+- Supported structured actions: `create, update, delete, clear, move, place, label, align, distribute, stack, bringToFront, sendToBack, resize, rotate, pen, setMyView`
+- Also exposes `GET /api/llms` — tldraw SDK docs formatted for LLM consumption (llms-full.txt) — this is explicitly targeting AI agents reading the API surface
+- Available for macOS (Universal), Windows x64/ARM64, Linux x64/ARM64
+- **Skissify impact**: HIGH. tldraw now has a local programmatic API. However: (1) requires running a desktop app, (2) still $6k/yr commercial license, (3) actions are structured (not JSON-manifest-first — it's a command list, not a scene description), (4) no hand-drawn tuning, (5) no floor plan elements. Skissify's web-first + cloud API + JSON manifest is still a fundamentally different proposition — but tldraw has closed the "programmatic access" gap in their local use case.
+- **Response needed**: Document the architectural difference between tldraw's "imperative Canvas API" (send commands) vs Skissify's "declarative JSON manifest" (describe the scene). This is a meaningful technical differentiator worth explaining in developer docs.
+
+### 🟡 SIGNAL: GitHub Trending Week Mar 17–25 — Skills + Agent Harness War
+- **URL**: https://www.shareuhack.com/en/posts/github-trending-weekly-2026-03-25
+- Top trending repos week of March 17–25: Skills ecosystem (5 of top 15), agent harness repos (claude-code, superpowers) surpassing 100K stars
+- `louislva/claude-peers-mcp` (+1,109 stars in one week, TypeScript, March 21) — multi-agent MCP server launched THIS WEEK showing viral appetite for new MCP tools
+- `VoltAgent/awesome-codex-subagents` (+2,421 stars new) — agent subagents ecosystem growing rapidly
+- **Skissify implication**: The Skills ecosystem is exploding. "Packaging a tool as a Skill/MCP and sharing it" is a viral growth pattern right now. Shipping `@skissify/mcp` and a skills-compatible package could capture this wave.
+
+### 🟢 CONVERSION DATA: 2026 Free-to-Paid Conversion Report (Growth Unhinged + ChartMogul, 200 products)
+- **URL**: https://www.growthunhinged.com/p/free-to-paid-conversion-report — Published March 2026
+- **Median free-to-paid conversion: 8%** across 200 B2B SaaS products
+- Freemium converts 3–7% (best companies hit 15%)
+- Free trials requiring credit card convert at **30%** — 5x those that don't
+- 57% of products use free trial as primary landing; only 26% use freemium
+- AI-native products convert at **43%** vs 51% for AI/SaaS hybrids vs 57% for pure SaaS — AI products have lower conversion but faster signup
+- 38% of freemium products let users try before creating account ("try-before-you-signup")
+- **Skissify implication**: Allowing sketch generation without signup (try before you create account) significantly improves top-of-funnel. If EUR 2/mo Lite exists, conversion will be low (3%). If Euro 5/mo Pro with a no-credit-card 14-day trial is the offer, median 8% conversion with upside to 15% is realistic. A credit-card-required trial could hit 30%.
+
+### Updated Competitor Matrix Row: tldraw Desktop
+| Tool | Local API | Agent Actions | Hand-drawn | Floor Plans | JSON Manifest | License Cost |
+|------|----------|---------------|-----------|-------------|---------------|--------------|
+| **tldraw desktop** | **Yes (HTTP, localhost:7236)** | **Yes (imperative actions)** | Yes | No | No (command-based) | $6k/yr commercial |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

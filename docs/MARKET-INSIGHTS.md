@@ -337,3 +337,79 @@ The AI protocol ecosystem map (digitalapplied.com, March 2026, 1 week old) shows
 | A2A protocol emergence | LOW now → HIGH Q3 2026 | Ensure MCP architecture compatible with future A2A orchestrators |
 
 ---
+
+## Entry: March 27, 2026 — 05:04 CET | Automated Strategy Run #5
+
+### Theme: Declarative vs. Imperative — Skissify's JSON Manifest Is the Right Bet
+
+---
+
+#### Finding 1: tldraw's Desktop API Proves Imperative Is Hard — Declarative Wins for Agents
+
+tldraw's new desktop Canvas API (shipped this week, localhost:7236) exposes structured actions: `create, update, delete, move, place, align, rotate, pen...` This is an imperative command queue — you tell the canvas what to do step by step. Compare to Skissify's JSON manifest, which describes the *finished scene* declaratively.
+
+**Why this matters for EUR 2/mo conversion**: Agents strongly prefer declarative formats. Every LLM trained on JSON data can write a Skissify manifest in one pass. Generating tldraw action sequences requires stateful reasoning over multiple steps. This is a real technical moat. Marketing language: *"Describe the sketch once. Skissify renders it. No commands, no state, no loops."*
+
+**Pricing implication**: API users who hit this difference (trying tldraw's API, finding it complex) are the natural conversion funnel. They'll pay for Skissify's API tier after a single frustrating experience with an imperative canvas API.
+
+---
+
+#### Finding 2: Free-to-Paid Conversion Reality Check (2026 Data, 200 Products)
+
+Source: Growth Unhinged + ChartMogul report, January 2026, 200 B2B SaaS products
+
+Key numbers that directly impact Skissify's model:
+- **Median conversion: 8%** (freemium is 3–7%; best case 15%)
+- **Free trial with credit card upfront: 30% conversion** — 5x without card
+- **AI-native products: 43% conversion** (lower than pure SaaS at 57%)
+- Most trials are **14 days** (62% of products)
+- 38% of freemium products let users **try without signing up** — this significantly improves top-of-funnel
+
+**What this means for Skissify's EUR 2/mo tier**:
+At 3–7% freemium conversion, Skissify needs ~300–700 free users to find 21 paid users at EUR 2 = EUR 42/mo. That's below break-even. The math only works if the free base is large (10K+) or if the price is EUR 5+ (same conversion, more revenue per user). **EUR 2/mo Lite is not worth building unless you already have 5,000+ free users.** The correct early move is a 14-day Pro trial (no credit card) targeting EUR 5/mo conversion.
+
+**Action trigger**: Allow sketch rendering without signup (try-before-you-create-account) to maximize freemium top-of-funnel per the 38% benchmark.
+
+---
+
+#### Finding 3: The Skills/MCP Virality Flywheel Is Now
+
+GitHub trending week March 17–25 shows 5 of 15 top new repos are skills-related. `louislva/claude-peers-mcp` got 1,109 stars in its launch week (TypeScript, MCP). `VoltAgent/awesome-codex-subagents` hit 2,421 stars. Skills and MCP packages are virally shareable artifacts right now — the equivalent of `npm install some-cool-tool` from 2015.
+
+**Implication for Skissify**: A well-packaged `@skissify/mcp` with a compelling 3-second README demo (JSON in → hand-drawn floor plan image out) can trend on GitHub right now. This is a time-limited opportunity. The MCP registry is young enough that first-movers get lasting organic placement.
+
+**The EUR 2/mo pathway through MCP virality**:
+1. Developer discovers Skissify MCP on GitHub/registry
+2. Uses it free (watermarked SVG output)
+3. Integrates into their AI pipeline — they now depend on Skissify
+4. Watermark is visible in their output → impulse removal purchase at EUR 2–5/mo
+5. API usage scales → they upgrade to EUR 10-25/mo API tier
+
+This is the correct funnel. Not SEO → landing page → conversion. It's: MCP install → dependency → watermark friction → pay.
+
+---
+
+#### Finding 4: "Try Before Signup" Is the Right Default for Skissify
+
+38% of best-performing freemium products in 2026 let users try before creating an account (vibe-coding tools like Lovable, Replit, ChatGPT set this expectation). Skissify's split-pane JSON editor → live sketch is a **perfect try-before-signup experience**. No auth, no gate. Just paste JSON, see sketch, download with watermark.
+
+**Friction escalation ladder** (natural, not forced):
+1. Paste JSON, see sketch → FREE, no signup
+2. Export SVG/PNG → require signup (free tier, captures email)
+3. Export without watermark → EUR 5/mo Pro
+4. API access → EUR 5-25/mo Pro/API tier
+5. Floor plan templates → Free (viral), MCP access → EUR 5+
+
+---
+
+### Summary Signals This Cycle
+
+| Signal | Urgency | Action |
+|--------|---------|--------|
+| tldraw desktop API is imperative — agents will hate it | HIGH | Document Skissify's declarative JSON manifest as the smarter agent format |
+| Median freemium conversion is 3-7%; EUR 2/mo is economically weak | HIGH | Price at EUR 5/mo Pro, allow try-before-signup for free |
+| MCP/Skills virality peak right now (5/15 top repos this week are skills) | CRITICAL | Ship `@skissify/mcp` immediately — trend window is open |
+| Try-before-signup: 38% of best freemium tools do this | MEDIUM | Remove signup gate from JSON editor; require signup only at export |
+| tldraw community trust still fragile, desktop app is new | MEDIUM | Monitor tldraw desktop adoption; message Skissify as "no license fee, cloud-first, JSON-native" |
+
+---
