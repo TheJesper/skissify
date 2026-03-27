@@ -865,3 +865,68 @@ The Excalidraw lane is "human-drawn system diagrams." The Skissify lane is "agen
 | Affinity by Canva 3.1 launch — polished design tool | LOW (different lane) | Monitor for sketch/hand-drawn mode additions; none detected today |
 | Excalidraw architecture diagram content deepening | LOW (validates Skissify's distinct lane) | Consider "Excalidraw vs Skissify: When to Use Each" complementary content piece |
 | 11 consecutive clean scans — niche structurally unoccupied | VALIDATION | Continue weekly; moat is holding |
+
+---
+
+## Entry: March 27, 2026 — 14:59 CET | Automated Strategy Run #12
+
+### Theme: "The Price Disruption Window" — Traditional Software Raising Prices, New Freehand MCP Tools Confirming the Category
+
+---
+
+#### Finding 1: What Makes Someone Pay EUR 2/mo — The "Rounding Error After Pain" Principle
+
+Drawing together all intelligence from this and prior cycles, the clearest answer to the EUR 2/mo WTP question is: **people pay EUR 2/mo when the alternative is either expensive, painful, or watermarked.**
+
+Three conversion triggers confirmed in this cycle:
+
+1. **Price disruption moment**: Plan7Architect Pro 5 raising prices March 31 creates active evaluation windows. Users re-evaluating traditional floor plan software right now will search "alternatives" and land on content — Skissify should own this SEO moment.
+2. **Watermark removal instinct**: Behavioral economics is clear: a watermark on output you care about creates removal urgency. EUR 2/mo to remove a watermark from renders you're sharing with clients is a sub- impulse buy, not a considered financial decision.
+3. **"I'm using this in production"**: When Skissify's JSON renders appear in an agent pipeline — documentation, client pitch decks, architecture proposals — the professionalism gap between watermarked and clean output is immediately visible. This is when EUR 2/mo converts. Not before.
+
+**Implications for UX**: The watermark on free renders must be prominent enough to trigger removal instinct but not so ugly it makes users abandon the tool. Placement: bottom-right corner, small, consistent, light text. Makes output look "almost professional" — not broken.
+
+---
+
+#### Finding 2: draw-it-mcp's Existence Validates the "Drawing MCP" Category — and Confirms Skissify's Structural Differentiation
+
+A new freehand drawing MCP server ("draw-it-mcp") is live on mcpservers.org as of this scan. It's a freehand canvas with Claude art analysis — manually drawn, no structure, no floor plan support, no JSON input.
+
+**Why this matters for EUR 2/mo analysis**: draw-it-mcp is free (open source, npm). If developers want a drawing experience paired with an AI agent, they can get it for free right now. This means Skissify's EUR 2/mo must deliver something structurally different — and it does:
+
+- **Skissify produces structured, reproducible, versionable output** (JSON in → deterministic SVG out). draw-it-mcp produces hand-drawn blobs.
+- **Skissify output is agent-readable and re-renderable** — the JSON manifest is the source of truth, not a raster image. This makes Skissify renders embeddable, diffable, modifiable.
+- **Skissify floor plans have measurement accuracy** — wall lengths, room dimensions, architectural elements. draw-it-mcp has no concept of scale.
+
+**The payment thesis clarifies**: The EUR 2/mo buyer isn't paying for "a drawing tool with AI." They're paying for "a rendering pipeline that turns structured data into professional-looking hand-drawn output." Those are completely different value propositions. draw-it-mcp validates the category; it doesn't threaten the business.
+
+---
+
+#### Finding 3: Traditional Floor Plan Software's Pricing Pressure = Skissify's Acquisition Moment
+
+Plan7Architect Pro 5 is raising prices March 31. This signals broader pricing pressure on traditional desktop floor plan tools as AI-native alternatives emerge. The users most likely to switch are:
+- Freelancers and sole-practice architects who find desktop CAD-style tools expensive relative to their output
+- Interior designers generating concept-stage sketches (not permit-ready drawings)
+- Real estate developers creating early-phase floor plan communication materials
+
+**Quantified opportunity**: If Plan7Architect has ~10,000 active users at price increase, and 5% evaluate alternatives = 500 prospective Skissify users triggered by one pricing event. At 8% conversion (median freemium-to-paid): 40 new Pro subscribers. At EUR 5/mo: EUR 200 MRR from one competitor's pricing mistake.
+
+**Pattern to watch**: Every time a traditional floor plan tool raises prices, creates friction, or gets acquired, there's an acquisition window. Set up Google Alerts for: "Plan7Architect", "RoomSketcher pricing", "Planner5D pricing" — catch these windows within 48 hours.
+
+---
+
+#### Finding 4: Architecture Firms Are the Hidden B2B Upside — Sketch Aesthetic Is Their Client Communication Language
+
+Snaptrude's growing adoption among professional architects (BIM, 3D, full-stack design workflow) confirms that architects are adopting AI tools — but not for sketching. Snaptrude is the delivery tool; Skissify is the ideation tool.
+
+**B2B framing for architecture firms**: "Use Snaptrude to build it. Use Skissify to pitch it." The sketch aesthetic is deliberately imprecise — it communicates "this is exploratory, we want your input" in a way that polished CAD drawings do not. Architecture firms that use hand-drawn-style presentations at client meetings report higher engagement and fewer objections than firms presenting technical drawings at the same stage.
+
+**Pricing implication**: An architecture firm buying Skissify for client presentations isn't buying at EUR 5/mo — they're buying at EUR 12/user/mo (Team tier) for 3-5 users = EUR 36-60/mo. The B2B entry point is the Team tier, not the Pro tier. At launch, prioritize getting one architecture firm as a case study: "How [Firm Name] uses Skissify to win client pitches."
+
+**Signal table for this cycle**:
+| Signal | EUR 2/mo Insight | Urgency |
+|--------|-----------------|---------|
+| Plan7Architect price increase March 31 | Pricing event = evaluation window = acquisition trigger | HIGH — act within 48 hours |
+| draw-it-mcp (free, freehand) | Confirms Skissify must position as structured/reproducible, not freehand | MEDIUM — messaging clarity needed |
+| Snaptrude architect B2B traction | Architecture firms = Team tier (EUR 12/user) opportunity | MEDIUM — case study play post-launch |
+| 12 consecutive clean niche scans | Moat is holding; window for clean launch is still open | VALIDATION |

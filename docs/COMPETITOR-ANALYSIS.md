@@ -785,6 +785,54 @@ Without these tutorials, Skissify will be invisible even when its MCP server is 
 
 ---
 
+## Update Log: March 27, 2026 — 14:59 CET | Automated Strategy Run #12
+
+### 🔴 NEW ENTRANT: draw-it-mcp — Freehand Drawing MCP on mcpservers.org (Live)
+- **URL**: https://mcpservers.org/en/servers/Pandoll-AI/draw-it-mcp
+- A new MCP server "Draw-it-MCP" is live — browser-based drawing canvas that runs locally via `npx draw-it-mcp` with Claude Code/Cursor integration. Features: 6 colors, 4 brush sizes, brush/eraser, undo/redo, PNG export, dark/light mode.
+- Self-described as "beautiful AI-powered drawing application" — AI integration allows Claude to "analyze and discuss your artwork" (not generate structured content)
+- **Critical gap vs Skissify**: No JSON input, no structured elements (walls, doors, dimensions), no floor plan support, no SVG output, no hand-drawn aesthetic with tunable parameters — it's a freehand sketchpad, not a manifest-driven renderer. The MCP "integration" is AI art analysis, not agent-driven generation.
+- **Risk level**: LOW. Targets digital artists and students wanting to draw manually with AI commentary. Completely different use case from Skissify's declarative JSON → structured sketch pipeline.
+- **But it signals**: Freehand + MCP is appearing in the ecosystem. The broader "drawing + AI agents" category is getting populated. Skissify's structured approach is still uniquely differentiated.
+
+### 🟢 OPPORTUNITY: Snaptrude Gaining Architect Traction — BIM/3D, Zero MCP, Zero Hand-drawn
+- **URL**: https://www.snaptrude.com/pricing | https://checkthat.ai/brands/snaptrude
+- Snaptrude (AI-powered concept design for architects) is getting fresh media coverage in March 2026 — text → editable 3D architecture models, BIM exports, browser-based. Reviewed by AIChief as "best platform for interior/exterior designers" (1 week ago).
+- Target: Professional architects and interior designers. Pricing: tiered per-seat (enterprise-level).
+- **No MCP server. No hand-drawn aesthetic. No JSON-native format. No programmatic API.**
+- **Skissify differentiator**: Snaptrude targets the architect's full design workflow (BIM, 3D, collaboration). Skissify targets the sketch moment — quick ideation, agent-generated floor plans, napkin-stage drawings. These are complementary: Snaptrude produces polished 3D; Skissify produces hand-drawn 2D concepts. An architect could use both.
+- **Adjacent B2B opportunity**: Architecture firms using Snaptrude for delivery + Skissify for client pitch sketches. The sketch aesthetic positions Skissify as "exploratory" rather than "technical" — exactly what early-stage client presentations require.
+
+### 🟡 SIGNAL: Microsoft Data Formulator 0.7 Alpha — AI-Driven Data Visualization (March 2026)
+- **URL**: https://github.com/microsoft/data-formulator (updated March 2, 2026)
+- Microsoft shipped Data Formulator 0.7 alpha: AI agents explore data with rich visualizations. "More charts, new experience, enterprise-ready."
+- No hand-drawn output, no floor plans, no JSON-first sketch manifest. Targets data visualization (charts, graphs) not sketch/diagram workflows.
+- **Relevance**: LOW direct competition. Microsoft investing in "AI + visualization" confirms the category is growing, but their lane (data viz) doesn't overlap with Skissify's (architectural sketching/diagrams).
+
+### 🟡 WATCH: Plan7Architect Pro 5 Raising Prices March 31, 2026 — Traditional Floor Plan Software Under Pressure
+- **URL**: https://plan7architect.com/product/pro/
+- Plan7Architect is raising prices on March 31, 2026 — "Don't miss out, purchase your license now." Traditional desktop floor plan software (CAD-style, one-time license) showing pricing pressure.
+- **Skissify opportunity**: Users forced to re-evaluate traditional floor plan tools at price increase moments are the most likely to try modern alternatives. Skissify's EUR 5/mo subscription framed as "lighter, faster, AI-compatible" vs traditional software's one-time high license costs.
+- **SEO micro-opportunity**: "Plan7Architect alternative", "floor plan software alternatives 2026" — active searches at this exact moment (price increase window).
+
+### 🟢 CONFIRMATION: Run #12 — Niche Remains Structurally Unoccupied (Twelfth Consecutive Scan)
+- Searches conducted: AI sketch tool hand-drawn diagram MCP launch March 2026; new AI diagram visualization tool Product Hunt GitHub March 2026; floor plan generator AI architecture sketching tool launch 2026; MCP server diagram sketch new tool awesome-mcp-servers week March 2026
+- **draw-it-mcp** (freehand canvas): adjacent but non-competitive (manual drawing vs structured JSON manifest)
+- **Snaptrude** (BIM/3D architecture): professional architects lane, not sketch/agent lane
+- **Data Formulator 0.7** (Microsoft data viz): charts lane, completely separate
+- **No tool found** with: hand-drawn aesthetic + JSON-native input + MCP support + floor plan elements
+- **Twelve consecutive automated scans confirm: the niche is real, durable, and unoccupied.**
+
+### Updated Competitor Matrix (Run #12 Additions)
+| Tool | MCP Status | Hand-drawn | Floor Plans | JSON Manifest | Target User | Recent Change |
+|------|-----------|-----------|-------------|---------------|-------------|---------------|
+| **draw-it-mcp** | Yes (freehand canvas) | Freehand only | No | No | Digital artists, students | NEW — live on mcpservers.org |
+| **Snaptrude** | No | No | Yes (BIM/3D) | No | Professional architects | Fresh media coverage March 2026 |
+| **Data Formulator 0.7** | No | No | No | Partial (data schema) | Data analysts | Alpha March 2, 2026 (Microsoft) |
+| **Plan7Architect Pro 5** | No | No | Yes (CAD-style) | No | Traditional architects | Price increase March 31 — conversion window |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

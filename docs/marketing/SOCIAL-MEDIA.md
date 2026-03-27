@@ -2967,3 +2967,126 @@ Curious about any questions on the Canvas 2D specifics — stroke decomposition,
 
 *Last Updated: March 27, 2026 (Cycle 15 — 15:05 CET)*
 *Added: Google Stitch reaction tweets (29-30 thread), Friday night hook tweet (31), "7 things I didn't expect" tweet (32), r/designtools post, r/webdev Canvas 2D technical post, updated timing table for 15:00-22:00 window*
+
+---
+
+## Social Media — Cycle 16 (March 27, 15:30 CET) — Saturday Prep + Evening US Wave
+
+### Context: 15:30 CET | US East Coast: 9:30 AM | US West Coast: 6:30 AM
+This cycle focuses on:
+1. **Tweets 33-36**: Evening US wave (17:00–22:00 CET) + Day 2 Saturday morning posts
+2. **Day 2 Saturday content schedule**: US weekend devs are most active 11:00-20:00 ET (17:00-02:00 CET)
+3. **Blog post #23**: Agent memory angle — new hook for r/mcp community
+
+---
+
+### Tweet 33: The "Sketch as Memory" Developer Hook (Post 17:30 CET)
+`
+Your AI agent's floor plan shouldn't live in a conversation that disappears.
+
+Skissify returns a permanent URL for every sketch.
+
+GET /api/sketch/abc123 → get the JSON back → modify → re-render → new permanent URL.
+
+The sketch IS the memory. No hallucination. No reconstruction. Full fidelity.
+
+↳ skissify.com
+`
+
+### Tweet 34: The Weekend Hacker Hook (Post 20:00 CET — Friday night US West)
+`
+It's Friday night. You have 48 hours.
+
+48 hours is enough time to:
+• Give your AI agent the ability to draw floor plans
+• Build a home renovation tool
+• Create a spatial reasoning interface for a real estate app
+• Ship something your friends will actually use
+
+One npm install: @skissify/mcp-server
+
+What are you building?
+`
+
+### Tweet 35: The "Day 1 By The Numbers" Honest Wrap (Post 22:00 CET — fill with real data)
+`
+Day 1 done. Here's what actually happened:
+
+📊 [X] signups
+🎨 [Y] sketches created  
+💳 [Z] Pro subscribers
+⭐ [N] PH upvotes
+🔥 [M] HN points
+📦 [K] MCP installs
+
+Unexpected: [BIGGEST_SURPRISE_FROM_TODAY]
+
+Building in public means showing the real numbers. This is them.
+
+Tomorrow: shipping [FEATURE_OR_FIX_MOST_REQUESTED_TODAY]
+
+What would you want to see Day 2?
+`
+
+### Tweet 36: Saturday Morning Launch Reminder (Schedule for Saturday 09:00 CET)
+`
+Good morning to the Saturday hackers ☀️
+
+If you missed the Skissify launch yesterday:
+→ AI agents can now generate hand-drawn sketches via MCP
+→ JSON in. Sketch out. Permanent URL.
+→ First sketch tool built for autonomous agents, not humans
+
+Free at skissify.com
+MCP server: npm install -g @skissify/mcp-server
+
+The weekend is the best time to try it. No meetings. No deadlines. Just building.
+`
+
+### Day 2 Saturday Content Schedule
+
+| Time (CET) | Platform | Content | Notes |
+|------------|----------|---------|-------|
+| 09:00 | Twitter/X | Tweet 36 (Saturday morning) | Pre-schedule tonight |
+| 10:00 | Dev.to | **Publish blog #23** "The Sketch Is the Memory" | NEW — r/mcp angle |
+| 10:00 | Dev.to | **Publish blog #4** "Build First AI Floor Plan in 15 Min" | Tutorial, drives signups |
+| 10:30 | r/mcp | Post "The Sketch as Memory" — link to blog #23 | New community hook |
+| 11:00 | Dev.to | **Publish blog #9** "12,770 MCP Servers, None Draw" | Follow the dev.to audience |
+| 12:00 | Dev.to | **Publish blog #8** "First Sketch Tool for AI Agents" | HN-quality technical post |
+| 12:30 | Indie Hackers | **Publish blog #5** "We Launched Today" (fill numbers tonight) | Build-in-public audience |
+| 13:00 | Twitter/X | Tweet promoting blog #23 (memory angle) | Link to Dev.to post |
+| 14:00 | r/AIEngineering | Cross-post "Sketch as Memory" framing | Developer/architect audience |
+| 15:00 | Twitter/X | Tweet 34 if not posted Friday night | Weekend hacker hook |
+| 16:00 | Hashnode | **Publish blog #2** "How AI Agents Draw Floor Plans" | SEO + Hashnode audience |
+| 18:00 | LinkedIn | Post "What we learned from Day 1" (non-developer angle) | Professional audience |
+| 20:00 | Twitter/X | Day 2 check-in tweet (how's Saturday going) | Build in public |
+
+### r/mcp Post (Day 2 — Post at 10:30 CET Saturday)
+**Title:** Sketches as persistent visual memory in agent workflows — a new MCP pattern
+
+`
+The memory problem in MCP agent workflows has mostly been solved at the text layer — knowledge graphs, file-based context, sqlite memory servers.
+
+There's a visual layer nobody's talking about.
+
+When an agent produces a spatial artifact (floor plan, diagram, wireframe), where does it live? In a conversation that disappears. In a description that loses precision.
+
+I built Skissify to solve this:
+- Agent calls MCP → generates JSON manifest → Skissify renders → returns permanent URL
+- Next session: agent fetches /api/sketch/[id] → gets the JSON back → modifies it → re-renders
+- The sketch URL is the persistent visual artifact
+
+The renderer is deterministic (seeded per-element), so same JSON = same sketch. You can version it. You can diff it in your agent logic.
+
+Full post: [link to blog #23]
+
+The MCP server: npm install -g @skissify/mcp-server
+The schema: skissify.com/schema
+
+Curious if others are solving visual artifact persistence differently — what are your patterns?
+`
+
+---
+
+*Last Updated: March 27, 2026 (Cycle 16 — 15:30 CET)*
+*Added: Tweets 33-36 (agent memory hook, weekend hacker, Day 1 numbers, Saturday morning), Day 2 Saturday full content schedule, r/mcp "sketch as memory" post, blog post #23 "The Sketch Is the Memory"*
