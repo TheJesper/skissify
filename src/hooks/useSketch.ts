@@ -22,6 +22,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
   const [selectedElements, setSelectedElements] = useState<Set<number>>(new Set());
   const [redrawKey, setRedrawKey] = useState(0);
   const jsonRef = useRef<string>(JSON.stringify(initial, null, 2));
+  const clipboardRef = useRef<SketchData["elements"]>([]);
 
   // Undo/redo history
   const historyRef = useRef<SketchData[]>([initial]);
@@ -178,6 +179,28 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [sketch.elements, selectedElements, updateSketch]
   );
 
+  const copySelected = useCallback(() => {
+    if (selectedElements.size === 0) return;
+    clipboardRef.current = sketch.elements.filter((_, i) =>
+      selectedElements.has(i)
+    );
+  }, [sketch.elements, selectedElements]);
+
+  const pasteElements = useCallback(() => {
+    if (clipboardRef.current.length === 0) return;
+    // Offset pasted elements by 20px so they don't land exactly on top
+    const OFFSET = 20;
+    const pasted = clipboardRef.current.map((el) =>
+      translateElement(el, OFFSET, OFFSET)
+    ) as SketchData["elements"];
+    const newElements = [...sketch.elements, ...pasted];
+    const pastedIndices = new Set(
+      Array.from({ length: pasted.length }, (_, i) => sketch.elements.length + i)
+    );
+    updateSketch({ elements: newElements });
+    setSelectedElements(pastedIndices);
+  }, [sketch.elements, updateSketch]);
+
   const redraw = useCallback(() => {
     setSketch((prev) => {
       const next = { ...prev, sessionSeed: newSessionSeed() };
@@ -226,6 +249,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     addElement,
     deleteSelected,
     moveSelected,
+    copySelected,
+    pasteElements,
     redraw,
     updateSketch,
     undo,

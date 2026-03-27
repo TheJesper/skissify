@@ -103,6 +103,8 @@ function EditorInner({
     addElement,
     deleteSelected,
     moveSelected,
+    copySelected,
+    pasteElements,
     redraw,
     updateSketch,
     undo,
@@ -192,11 +194,25 @@ function EditorInner({
           e.preventDefault();
           handleSave();
         }
+        if (e.key === "c" && !isInput && selectedElements.size > 0) {
+          e.preventDefault();
+          copySelected();
+        }
+        if (e.key === "v" && !isInput) {
+          e.preventDefault();
+          pasteElements();
+        }
+        if (e.key === "d" && !isInput && selectedElements.size > 0) {
+          // Ctrl+D = duplicate (copy + paste in one step)
+          e.preventDefault();
+          copySelected();
+          pasteElements();
+        }
       }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, copySelected, pasteElements]);
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">
