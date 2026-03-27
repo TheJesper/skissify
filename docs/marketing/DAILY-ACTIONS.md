@@ -387,3 +387,101 @@ _Actionable items proposed by the automated strategy advisor. Append-only._
 - Check if any Skissify MCP competitors emerge in the registry (search "hand-drawn" or "sketch" in MCP registry)
 
 ---
+
+## 2026-03-27 (Friday) — Cycle Run 06:09 CET
+
+### Context This Cycle
+- **BREAKING**: Figma opened canvas to AI agents via `use_figma` MCP open beta (March 25-27, 2026) — massive media wave. Fast Company named Figma most innovative enterprise company 2026. Claude Code, Codex, Cursor all now write to Figma.
+- **New signal**: Google Gemini + Matplotlib floor plan pipeline tutorial on DEV Community (3 weeks ago) — developers building LLM→JSON→render pipelines without a good renderer. Skissify IS that renderer.
+- **Confirmed**: Tutorial ecosystem is THE distribution channel for MCP tools. Excalidraw and draw.io gaining adoption purely through community tutorials, not product launches.
+- **URL**: https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/ (20 hours ago)
+- **URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+---
+
+### ✅ Action 1: Write a Counter-Narrative Post While "Figma + Claude Code" Is Trending
+
+**Why now**: Figma's `use_figma` MCP launch is the highest-traffic developer design conversation of March 2026. Every developer is reading about Claude Code + Figma MCP. Skissify needs to appear in this conversation with a clear differentiation, or be invisible during the biggest design-tool moment of Q1 2026.
+
+**The post to write** (choose one, do today):
+- **Option A (Twitter/X thread)**: "Figma + Claude Code is great — if you need pixel-perfect, design-system-linked output. But sometimes you want something rougher. A sketch. An idea. Something that says 'this is still in flux.' That's Skissify. EUR 2/mo. Hand-drawn SVG from any AI agent. No design system required."
+- **Option B (DEV Community post)**: "Figma MCP vs Skissify MCP: When you want polished vs. when you want a napkin sketch" — 500 words, include code examples for both, conclude with when to use each
+- **Option C (LinkedIn)**: Professional angle — "Not every diagram needs to be Figma-polished. Architecture firms, startups in discovery, PMs in planning mode: hand-drawn aesthetic signals 'this is draft, let's talk.' Skissify is the MCP that outputs that."
+
+**Target**: Option A written and posted TODAY. Option B scheduled for next dev session.
+
+**Expected impact**: Appears in Google searches for "Claude Code Figma alternative" and "Figma MCP sketch." Medium to high potential for developer retweets given Figma MCP is trending.
+
+**Success metric**: Any organic shares or replies asking "what's Skissify?"
+
+---
+
+### ✅ Action 2: Comment on the Gemini + Matplotlib Floor Plan Tutorial on DEV Community
+
+**Why now**: A developer tutorial on DEV Community shows Google Gemini generating JSON floor plans rendered via ugly Matplotlib charts. This developer and their readers are the exact Skissify user — they have the LLM pipeline, they just don't have a beautiful renderer. This is a free, targeted, non-spammy distribution channel.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment to write** (verbatim or close):
+> "Nice pipeline! The JSON layout step is the hard part — Gemini nails it. If you want to try a hand-drawn rendering layer instead of Matplotlib, I built Skissify (skissify.com) for exactly this. Takes the same JSON structure and outputs an SVG that looks like someone sketched it by hand. Free tier available, might be fun to compare the output styles."
+
+**Why this works**:
+- Not spam — it genuinely adds value to the reader
+- Places Skissify in front of readers already building LLM-to-floor-plan pipelines
+- DEV Community articles index well on Google — this comment will be visible for years
+- The Matplotlib output is objectively ugly — Skissify's hand-drawn style is a compelling upgrade
+
+**Time required**: 15 minutes to write and post the comment.
+
+**Success metric**: Any clicks to skissify.com from the comment = winning. Even 10 visits from a genuinely interested developer segment is high-quality traffic.
+
+---
+
+### ✅ Action 3: Write a "Skissify MCP Tutorial" Doc in the Repo (Even if MCP Isn't Live Yet)
+
+**Why now**: Every MCP tool that gains traction has a community tutorial. Excalidraw MCP has 4+ tutorials written by developers. Draw.io MCP has 3+. Figma MCP had tutorials within 20 hours of launch. The tutorial is the distribution. Skissify needs to own its own tutorial before the community writes a worse one.
+
+**What to write** (`docs/MCP-TUTORIAL.md`):
+
+```markdown
+# How to Generate Hand-Drawn Floor Plans with Claude Code + Skissify MCP
+
+## Setup
+\`\`\`json
+// Claude Desktop config
+{
+  "mcpServers": {
+    "skissify": {
+      "url": "https://skissify.com/api/mcp",
+      "type": "http"
+    }
+  }
+}
+\`\`\`
+
+## Step 1: Ask Claude to describe the floor plan
+"Generate a 2-bedroom apartment floor plan in Skissify JSON format, 65 sqm, living room facing south"
+
+## Step 2: Claude calls render_sketch
+[Claude generates JSON → calls render_sketch → returns hand-drawn SVG URL]
+
+## Step 3: Embed or download the sketch
+The SVG is publicly shareable, embeddable in Notion/docs, and downloadable.
+```
+
+**Why write docs before the MCP is live**: This doc becomes the spec for the implementation AND the tutorial that's ready to publish on launch day. Writing tutorials first is how great dev tool teams ship with instant traction.
+
+**Time required**: 45 minutes to write a thorough tutorial doc.
+
+**Success metric**: Tutorial is ready to publish to DEV Community and HN on the day the MCP server ships.
+
+---
+
+### Notes for Next Cycle
+- Was the Figma counter-narrative post published? Link if yes.
+- Was the DEV Community comment posted? Screenshot/link it.
+- Does `docs/MCP-TUTORIAL.md` exist?
+- Monitor: does the "Figma MCP alternative" keyword start showing Skissify in search?
+- Check if any developers in the Gemini + floor plan DEV Community thread respond to the Skissify comment
+
+---

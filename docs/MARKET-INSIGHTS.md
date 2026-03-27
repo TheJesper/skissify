@@ -4,6 +4,87 @@ _Append-only log. Each run adds a dated entry. Do not overwrite._
 
 ---
 
+## Entry: March 27, 2026 — 06:09 CET | Automated Strategy Run #6
+
+### Theme: Figma Goes Full MCP — And That's Good News for Skissify
+
+---
+
+#### Finding 1: Figma's Full MCP Read/Write Launch Creates a Massive Narrative Vacuum
+
+Figma just launched `use_figma` open beta (March 25, 2026) — full AI agent read/write access to Figma canvases. Fast Company named Figma one of the Most Innovative Enterprise Companies of 2026 (March 25, 2026) citing the MCP server. Every developer is reading about "Claude Code + Figma" this week.
+
+**What this means for EUR 2/mo Skissify WTP**:
+
+Paradoxically, Figma's launch HELPS Skissify. Here's why:
+- Figma at $15-75/editor/month targets designers. Skissify at EUR 2-5/month targets developers and agents.
+- Figma MCP = "I want polished, on-brand, design-system-consistent UI output." Skissify MCP = "I want a hand-drawn sketch that looks like someone thought of an idea." These are completely different use cases.
+- The influx of "Claude Code + MCP + visual output" conversations this week creates SEO demand that Skissify can capture with the right positioning
+
+**What makes someone pay EUR 2/mo specifically in THIS moment**: A developer reads the Figma + Claude Code tutorials, tries Figma MCP, realizes their use case (quick floor plan for a client, architecture sketch for a README, informal diagram for a pitch) doesn't need Figma's complexity. They search for "simpler sketch MCP" — Skissify should be that answer. EUR 2/mo is an impulse buy compared to Figma's per-editor pricing.
+
+**Action**: Publish content this week positioned as "The lightweight alternative to Figma MCP for developers who just need a sketch." This is the highest-traffic design-tool conversation of March 2026.
+
+---
+
+#### Finding 2: Developer-Built LLM-to-Floor-Plan Pipelines Are Proliferating — Without a Good Renderer
+
+Evidence from this cycle (dev.to, 3 weeks ago): A developer tutorial showing Gemini → JSON floor plan layout → Matplotlib rendering. The comment: "Gemini parses the prompt and converts it into a structured JSON layout containing room names, dimensions, and positions."
+
+**The Matplotlib problem**: Matplotlib renders floor plans as ugly geometric outlines. They are technically correct but visually unpresentable. This is exactly the "embarrassing output" problem that drives EUR 2/mo conversions.
+
+**Market signal**: Developer tutorials building LLM→JSON→render pipelines are appearing organically. These developers are Skissify's most natural early adopters. They've already validated the pipeline. They just need a beautiful renderer.
+
+**Quantified opportunity**: DEV Community has 1M+ developer readers. A single tutorial on this topic (LLM → JSON → Skissify hand-drawn floor plan) ranking on this platform drives recurring organic signups. The tutorial writes itself: "You have the JSON. Here's how to make it beautiful."
+
+---
+
+#### Finding 3: The Tutorial Ecosystem Is the Actual Distribution Channel for MCP Tools
+
+New evidence from this cycle:
+- 2+ community tutorials for draw.io MCP in VS Code (Medium, March 2026)
+- 2+ community tutorials for Excalidraw MCP + Claude Code (WordPress, March 2026)
+- Figma MCP tutorials appearing within 20 hours of the announcement (YouTube, Muzli, Reddit)
+
+**Pattern**: MCP tool adoption correlates directly with tutorial availability. Tools that have tutorials get installed. Tools without tutorials get forgotten.
+
+**Skissify implication**: Shipping the MCP server without tutorial content is equivalent to shipping a product and not listing it anywhere. The distribution plan must include:
+1. README with GIF/video demo
+2. DEV Community tutorial post
+3. Medium tutorial post
+4. HN Show HN post (the gold standard for developer tools)
+5. YouTube short (30-60 second demo: JSON → hand-drawn floor plan in real time)
+
+**EUR 2/mo pathway through tutorials**: Tutorial viewer → installs MCP → sees watermark in pipeline output → removes watermark → EUR 2. This is the funnel. No tutorials = no funnel.
+
+---
+
+#### Finding 4: Figma + Claude Code = Polished. Skissify + Claude Code = Rough. Both Are Valid.
+
+The developer community is currently absorbing "Figma MCP = design system integration, pixel-perfect output." This creates a clean counter-positioning for Skissify.
+
+Psychological framework:
+- **Figma audience**: "I need this to look production-ready"
+- **Skissify audience**: "I need this to look like an idea, not a deliverable"
+
+The second persona is more numerous in early-stage projects, startups, developer tools, architecture firms doing client discovery, and anyone using AI to brainstorm at speed.
+
+**EUR 2/mo trigger**: A developer is generating architecture sketches for a startup pitch. They see the Figma MCP announcement. They try it. It's too polished — looks like a mockup, not a thinking tool. They want something that signals "this is still in flux" (i.e., hand-drawn). They find Skissify. EUR 2 is the decision time: 0 seconds.
+
+---
+
+### Summary Signals This Cycle
+
+| Signal | Urgency | Insight |
+|--------|---------|---------|
+| Figma MCP full launch — massive media coverage | HIGH | Create "lightweight Figma MCP alternative" content this week while the conversation is active |
+| Gemini+Matplotlib floor plan tutorial on DEV Community | HIGH | Comment and target this developer segment directly — they need Skissify's renderer |
+| Tutorial ecosystem = MCP distribution channel | CRITICAL | MCP server ship is necessary but not sufficient — 3 tutorials must ship alongside |
+| Draw.io MCP gaining active community evangelism | MEDIUM | Not a threat; confirms that diagram-as-code + MCP is a real developer workflow |
+| Figma $15-75/editor vs Skissify EUR 2/mo | HIGH | Use price comparison as positioning anchor in all copy |
+
+---
+
 ## Entry: March 27, 2026 — 01:11 CET | Automated Strategy Run
 
 ### Theme: What Makes Someone Pay EUR 2/mo for Skissify?

@@ -510,6 +510,77 @@ The sketch/diagram market in 2026 is fragmenting into three lanes: (1) open-sour
 
 ---
 
+## Update Log: March 27, 2026 — 06:09 CET | Automated Strategy Run #6
+
+### 🔴 CRITICAL: Figma Opened Canvas to AI Agents — Full Read/Write MCP (March 25–27, 2026)
+
+- **URL**: https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/ (20 hours ago)
+- **URL**: https://muz.li/blog/figma-just-opened-the-canvas-to-ai-agents-heres-what-it-means-for-designers/ (3 days ago)
+- **URL**: https://www.reddit.com/r/ClaudeCode/comments/1s30dy7/ (2 days ago)
+- Figma announced open beta of `use_figma` — full read/write MCP access to Figma files. Claude Code, Codex, Cursor, and any MCP-compatible agent can now generate and modify design assets that are **genuinely linked to your design system**
+- Fast Company named Figma one of the "Most Innovative Companies in Enterprise for 2026" citing the MCP server as a key milestone — published 2 days ago
+- Quote from Muzli: *"Agents can now write directly to your Figma files using the new use_figma tool... generate and modify design assets that are genuinely linked to your design system"*
+- Claude Code is listed as a key Figma MCP client alongside Codex and Cursor
+
+**Skissify impact**: MEDIUM. Figma's `use_figma` targets polished UI design — not hand-drawn sketches, not floor plans. This is the professional designer space. However, the media noise around Figma + MCP + Claude Code is massive RIGHT NOW. Skissify should publish content that appears in this exact conversation — "what if you want hand-drawn output, not polished Figma?" is a meaningful counter-narrative.
+
+**Response needed**: Write a blog post or tweet thread titled "Figma + Claude Code is for polished designs. Skissify + Claude Code is for the back-of-napkin moment." This is a free SEO/social play against the highest-volume AI design conversation happening this week.
+
+---
+
+### 🟡 SIGNAL: Google Gemini Floor Plan JSON Pipeline Validated by Developers (3 weeks ago)
+
+- **URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+- Developer tutorial published on DEV Community showing: *"Gemini parses the prompt and converts it into a structured JSON layout containing room names, dimensions, and positions"*
+- The output is then rendered via Matplotlib (basic geometric shapes — not hand-drawn, not aesthetic)
+- This is the exact pipeline Skissify completes: **LLM → JSON → renderer**. But Matplotlib output is ugly Python charts. Skissify output is beautiful hand-drawn SVG.
+- This tutorial represents dozens/hundreds of developers already building LLM-to-floor-plan pipelines who have no good rendering layer
+
+**Skissify action**: Comment on this DEV Community post. Show Skissify as the "beautiful rendering step" that replaces Matplotlib. "You've built the hard part — here's a hand-drawn renderer for your JSON." This is a direct, relevant, non-spammy comment that places Skissify in front of developers already building what Skissify serves.
+
+**URL to target**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+---
+
+### 🟢 OPPORTUNITY: Excalidraw + Claude Code Tutorial Wave Continues (March 16, 2026)
+
+- **URL**: https://rajeevpentyala.com/2026/03/16/excalidraw-mcp-and-claude-code-design-architecture-diagrams/ (2 weeks ago)
+- **URL**: https://atalupadhyay.wordpress.com/2026/03/15/create-architecture-diagrams-with-mcp-claude-draw-io-excalidraw/ (2 weeks ago)
+- Community bloggers are actively writing Excalidraw MCP + Claude Code setup guides. These rank for "Claude Code diagram" searches.
+- The tutorial ecosystem for Excalidraw+MCP is actively growing — developer advocates writing and sharing their workflows
+
+**Skissify response**: The tutorial ecosystem is where mindshare gets captured. Skissify needs 2-3 tutorials that rank for:
+1. "Claude Code sketch tool" (currently returns Excalidraw tutorials)
+2. "hand-drawn diagram MCP server"
+3. "AI floor plan JSON renderer"
+
+Without these tutorials, Skissify will be invisible even when its MCP server is live.
+
+---
+
+### 🔵 CONTEXT: Draw.io MCP Getting Active Evangelism (March 2026)
+
+- **URL**: https://medium.com/@rakesh.sheshadri44/configuring-the-draw-io-mcp-server-in-vs-code-for-ai-generated-diagrams-09ff30cf6503 (2 weeks ago)
+- **URL**: https://changyou.medium.com/official-mcp-test-of-draw-io-0e814c376fe7 (1 month ago)
+- Multiple community articles explaining how to configure draw.io MCP in VS Code for AI diagram generation — gaining traction
+- draw.io MCP use case: generates technical diagrams that pop open in the draw.io editor for post-editing
+
+**What this confirms**: The "AI generates diagram, pops it into a tool" workflow is validated and being actively adopted. Skissify's version of this is cleaner (JSON in → hand-drawn SVG out, no editor required) and more aesthetically distinctive.
+
+---
+
+### Updated Competitor Matrix Row: Figma (MCP Upgraded — March 2026)
+| Feature | Status (March 27, 2026) |
+|---------|------------------------|
+| **MCP: use_figma read/write** | **Live open beta — full agent access** |
+| Agents supported | Claude Code, Codex, Cursor |
+| Design system integration | Yes — components, variables, tokens |
+| Hand-drawn output | No |
+| Floor plan support | No |
+| Target user | Professional designers |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars
