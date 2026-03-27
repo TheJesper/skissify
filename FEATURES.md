@@ -90,6 +90,8 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Arrow-key nudge + Ctrl+A select all** — Arrow keys move selected element(s) by 1px; Shift+Arrow = 10px. Each nudge commits one undo entry. Ctrl+A selects all elements instantly. `nudgeSelected()` and `selectAll()` added to useSketch hook. Keyboard shortcuts panel updated to document both. Solves precision placement without needing to edit raw JSON coordinates.
+
 - [x] **Per-element color picker in Selection panel** — When one or more elements are selected, the "Selection" section in the left sidebar shows 8 preset color swatches + a custom `<input type="color">`. Clicking any swatch or picking a custom color instantly applies it to every selected element's `color` property, replacing the need to edit raw JSON. Color change is fully undoable (Ctrl+Z). Swatch palette matches the global Ink Color section for consistency. Mobile bottom-sheet ControlPanel updated too.
 
 
