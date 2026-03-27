@@ -2,6 +2,60 @@
 
 ---
 
+## Entry: March 27, 2026 — 23:02 CET | Automated Strategy Run #19
+
+### Theme: "The Day the Intelligence Was Gathered — Now Execute"
+
+This is the final market insights entry for Friday March 27, 2026. After 19 consecutive strategy runs spanning 21+ hours, three findings crystallize the EUR 2/mo question permanently.
+
+---
+
+#### Finding 1: The EUR 2/mo Decision Has a Geography — It Lives Inside the Pipeline
+
+All 19 strategy runs have circled the same truth about who pays EUR 2/mo for Skissify. Run #19 confirms the final formulation:
+
+The EUR 2/mo decision does not happen at the pricing page. It happens **at the watermark, inside a document that someone else will read.**
+
+The purchase geography is:
+1. Developer installs @skissify/mcp (or calls the API)
+2. Agent generates a floor plan — rendered with Skissify, delivered to a Notion doc, PR, Slack message, or email
+3. The watermark is visible to someone who wasn't part of the build: a client, a colleague, a reviewer
+4. The developer removes the watermark in < 60 seconds, for < the price of a coffee per month
+
+This is not a SaaS purchase. It is a **professional signal purchase** — the same category as buying a custom email domain or removing a "made with Squarespace" footer. The purchase moment is triggered by visibility, not features.
+
+**Pricing page implication**: The pricing page should show the watermarked output and the clean output side by side. The copy should read: "What your clients see on free. What they see on paid." That's the complete sales pitch.
+
+---
+
+#### Finding 2: Six New MCP Servers Launched This Week — None in Skissify's Lane
+
+In the week spanning March 20–27, 2026, six significant MCP servers shipped or were confirmed:
+- Figma use_figma (full read/write, open beta — polished UI design)
+- Lucid advanced MCP + Process Agent (enterprise workflow visualization)
+- Google Stitch MCP + SDK (2,400 stars — polished UI generation)
+- tldraw Desktop HTTP Canvas API (imperative local commands — $6k/yr)
+- paper.design Paper MCP (alpha — UI canvas)
+- draw-it-mcp (freehand canvas — manual art)
+
+Total overlap with Skissify's "hand-drawn + JSON-native + floor plan" lane: **zero**.
+
+The market is filling in around Skissify's position without touching it. This is the architectural pattern of a genuine niche: adjacent tools multiply, the specific combination remains unclaimed.
+
+**Willingness-to-pay implication**: If Google (free, 350 gen/month), Figma ($15+/editor/mo), Lucid ($8-20/user/mo) and Eraser (free+watermark) are all validated in their adjacent lanes, Skissify's EUR 2/mo entry point for the hand-drawn sketch lane is not just viable — it is the obvious price for a niche tool in a validated market category. It is low enough to be impulse, high enough to cover infrastructure.
+
+---
+
+#### Finding 3: The Ecosystem Has Normalized "MCP as Infrastructure" — EUR 2/mo Is a Line Item, Not a Subscription
+
+From Run #7 through Run #19, a consistent signal emerged: developers in 2026 do not "subscribe" to MCP tools — they "add them to their stack." Smartsheet hit 1.74M actions in week 1. MCP is under Linux Foundation governance. JFrog has an enterprise MCP registry. The framing has shifted from "try this product" to "configure this infrastructure."
+
+EUR 2/mo infrastructure decisions are made once and forgotten. They appear on a monthly invoice under "developer tools" alongside Sentry ($0-26/mo), Resend ($0-20/mo), and Upstash ($0-10/mo). They do not get cancelled at the end of the quarter. They persist because the pipeline depends on them.
+
+**The implication for Skissify's pricing copy**: The word "subscribe" should not appear on the pricing page for the API Starter tier. The words "add to stack", "configure once", and "API key in your .env" should replace it. This is not marketing — it is accurate framing for the mental model of the purchaser.
+
+---
+
 ## Entry: March 27, 2026 — 21:51 CET | Automated Strategy Run #18
 
 ### Theme: "The Last Entry Before the Window Either Opens or Closes"

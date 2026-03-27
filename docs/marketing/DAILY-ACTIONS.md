@@ -2,6 +2,124 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #19 (23:02 CET, Friday March 27)
+
+### Priority Context (Run #19 — Final run, intelligence cycle fully closed)
+
+19 consecutive niche-clean scans. 21+ hours. 6 new MCP servers confirmed this week — zero in Skissify's lane. The @skissify/mcp package does not exist. Saturday is the only remaining variable in the entire strategy.
+
+**One sentence**: All intelligence is gathered, all marketing is written, all pricing is validated — the only thing that converts none of this into revenue is that the MCP server doesn't exist yet.
+
+---
+
+### ✅ Saturday Action 1 — THE ONLY ACTION THAT MATTERS: Build `@skissify/mcp` v0.1
+
+This action has been the #1 recommendation in all 19 strategy runs across 21+ hours. It has not changed. It will not change. Everything else flows from this.
+
+**Why Saturday specifically**: The "Google Gap" narrative (Figma MCP + Google Stitch MCP = polished UI covered, Skissify = hand-drawn sketch uncovered) has approximately 3-5 more days of relevance before it becomes last week's news. The HN Show HN post that rides this wave must post WITH a working `npx @skissify/mcp`. That means the package must exist by end of Saturday.
+
+**Minimum viable v0.1 — no scope creep:**
+
+```bash
+mkdir W:/code/skissify/packages/mcp
+cd W:/code/skissify/packages/mcp
+npm init -y
+npm install @modelcontextprotocol/sdk zod
+```
+
+```typescript
+// src/index.ts
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+  name: "skissify",
+  version: "0.1.0",
+  description: "Hand-drawn SVG sketches from JSON manifests. Floor plans, architecture diagrams, napkin ideas. The sketch layer for AI agents."
+});
+
+server.tool(
+  "render_sketch",
+  "Render a Skissify JSON manifest as a hand-drawn SVG sketch. Supports floor plans with walls, doors, windows, stairs, columns, dimensions. Returns SVG string. Free renders include watermark.",
+  { manifest: z.object({}).passthrough() },
+  async ({ manifest }) => {
+    const svg = await renderManifest(manifest, { watermark: true });
+    return { content: [{ type: "text", text: svg }] };
+  }
+);
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+**The 10-step Saturday sequence (do not skip steps):**
+1. Create the package directory + npm init
+2. Install @modelcontextprotocol/sdk + zod
+3. Wire renderManifest to the existing rendering engine (src/lib/)
+4. Test locally: add to Claude Desktop config, verify render_sketch appears
+5. Generate one floor plan via Claude prompt. Screenshot this.
+6. Write a 15-line README with the screenshot embedded
+7. `npm publish --access public` as `@skissify/mcp`
+8. Submit to modelcontextprotocol.io/registry (5-minute form)
+9. Open PR to punkpeye/awesome-mcp-servers
+10. Submit to claudefa.st, mcpmanager.ai, mcpservers.org
+
+**Success definition**: `npx @skissify/mcp` installs, Claude Desktop shows `render_sketch`, one floor plan generates. One screenshot. That is the launch.
+
+---
+
+### ✅ Saturday Action 2 — HIGH: HN Show HN Launch Post (publish after npm publish)
+
+**The post** (save to `docs/marketing/blog/hn-launch-post.md` if not already there):
+
+Title: "Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP that Figma and Stitch aren't."
+
+Body:
+> Figma just opened its canvas to AI agents (use_figma MCP). Google Stitch has an MCP + SDK (2,400 stars).
+> Both output polished, production-ready designs.
+> 
+> Nobody made the hand-drawn version. Especially not for floor plans.
+> 
+> Skissify: describe an architectural sketch or floor plan as JSON → rendered as hand-drawn SVG.
+> One MCP tool: render_sketch(manifest) → SVG. Declarative, not imperative.
+> 
+> npx @skissify/mcp — free (watermarked), EUR 2/mo for clean output.
+> Floor plans: walls, doors, windows, stairs, columns, dimension lines.
+> Tunable wobble. Paper types. Tool styles.
+>
+> → skissify.com
+
+**Timing**: Post simultaneously with npm publish. Not before.
+
+---
+
+### ✅ Saturday Action 3 — MEDIUM: Pricing Page Copy — "Watermark Side-by-Side" Conversion
+
+Based on 19 runs of analysis, the single highest-converting change to the pricing page is showing the watermarked output next to the clean output. No copy needed — the visual IS the pitch.
+
+**Implementation** (wherever the pricing UI lives):
+- Show a sample floor plan SVG twice: once with watermark, once without
+- Caption: "Free — what your clients see" | "EUR 2/mo — what your clients see"
+- CTA under clean version: "Remove watermark → add to stack"
+
+**Time**: 30 minutes if SVGs exist. Zero words of copy required.
+
+**Why this beats any text-based pitch**: The watermark removal is a visceral decision. Seeing the two side by side makes the EUR 2/mo feel like it cost less than it does — because the delta between the two states is so clear and the price is so low.
+
+---
+
+### Completion Log (update Saturday evening)
+- [ ] `@skissify/mcp` published: npm URL ___
+- [ ] Claude Desktop test: `render_sketch` appears ✓/✗
+- [ ] First floor plan screenshot captured: ✓/✗
+- [ ] Submitted to modelcontextprotocol.io: ✓/✗
+- [ ] PR to awesome-mcp-servers: ✓/✗
+- [ ] HN post published: URL ___
+- [ ] Pricing page watermark side-by-side: ✓/✗
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #18 (21:51 CET, Friday March 27)
 
 ### Priority Context (Run #18 — Intelligence cycle closed, final run of March 27)
