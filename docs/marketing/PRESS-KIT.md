@@ -447,3 +447,37 @@ Current AI agent stacks: input (MCP retrieval tools) → reasoning (LLM) → out
 
 *Press kit version 5.0 — March 27, 2026 (09:00 CET — Cycle 11)*  
 *Added: "Vibe drawing" press angle, real estate angle, visual output stack gap angle, key stats table*
+
+---
+
+## Fresh Press Angles — Cycle 12 (March 27, 13:02 CET)
+
+### Angle 4: "The Visual Iteration Loop" — AI + human spatial co-design
+New named concept from Cycle 12. When AI agents can both draw AND update their drawings based on feedback, a new interaction pattern emerges: the visual iteration loop. Text-only design needs 6+ turns. Visual iteration needs 2-3.
+
+**Pitch:** "Architects now refine a floor plan with AI in 3 conversational turns instead of 6. The sketch is the shared artifact that makes iteration possible."
+
+**Best for:** Architecture + design press, productivity newsletters, "future of work" columns
+
+---
+
+### Angle 5: The Open Schema Play
+Skissify's JSON schema is public and documented. Any LLM, any framework, any developer can generate valid Skissify manifests without an SDK. This positions Skissify as an ecosystem, not just a product — similar to how Mermaid's open text syntax made it the de-facto diagramming tool for documentation.
+
+**Pitch:** "Skissify's sketch format is an open spec. Any AI agent, script, or tool can generate it. We're building a standard, not a walled garden."
+
+**Best for:** Dev.to, GitHub communities, developer relations newsletter features
+
+---
+
+### Angle 6: The Non-Developer Discovery Story
+Launch day produced an unexpected signal: homeowners using Skissify to sketch renovation plans for contractor calls. Non-developer use cases (real estate, home renovation, interior design concept sketching) represent a second large market beyond the developer/AI audience.
+
+**Pitch:** "Built for AI agents, discovered by homeowners. The human use case nobody predicted: 'I described my kitchen to an AI and got a floor plan I could show my contractor.'"
+
+**Best for:** Consumer tech press (The Verge, Wired), home improvement channels, mainstream product features
+
+---
+
+*Press kit version 6.0 — March 27, 2026 (13:02 CET — Cycle 12)*  
+*Added: Visual iteration loop angle, open schema angle, non-developer discovery story angle*

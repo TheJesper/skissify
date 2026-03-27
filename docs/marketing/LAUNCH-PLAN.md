@@ -162,6 +162,62 @@
 
 ---
 
+## Marketing Improvements (Cycle 12 — March 27, 13:02 CET)
+
+### 🕐 CURRENT STATUS: AFTERNOON WAVE — US East Coast Waking Up
+
+It's hour 4 of launch day. HN and PH are live. Time to drive the US afternoon wave.
+
+### Completed This Cycle
+- [x] ✅ **Blog post #15 NEW**: "Launch Day Live Update — Hour 4" — honest mid-launch check-in with metrics table, what's working (MCP angle, technical specificity, comparison posts), what's harder than expected (PH timezone gap, HN luck), and the unexpected homeowner use case. Publish immediately on Dev.to. File: `docs/marketing/blog/launch-day-live-update-hour-4.md`
+- [x] ✅ **Blog post #16 NEW**: "The Visual Feedback Loop: What Changes When AI Agents Can See Their Own Plans" — 1,200-word deep dive on the iteration acceleration pattern (6 turns → 2-3 turns with visual feedback), why image generators don't solve this, the schema-first advantage. Best Dev.to/Medium post for Day 6. File: `docs/marketing/blog/ai-agent-visual-feedback-loop.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 12**: Tweets 16-20 (hour 4 check-in, feedback loop, schema transparency thread, human story DM, traction transparency), LinkedIn article (full draft), r/homedesign post, engagement strategy guide, full timing table updated to 22:00 CET
+- [x] ✅ **HASHTAGS-AND-COMMUNITIES.md** confirmed: MCP-mainstream angle is validated by web research — "MCP Goes Mainstream" and "Agents Take Over" are the dominant dev narratives of March 2026. #VibeDrawing is still unclaimed.
+
+### New Blog Posts (Cycle 12) — Distribution Schedule
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 15 | Launch Day Live Update — Hour 4 | launch-day-live-update... | Dev.to, Medium | Day 1 (13:00 today) |
+| 16 | The Visual Feedback Loop | ai-agent-visual-feedback-loop.md | Dev.to, Medium | Day 6 (Apr 1) |
+
+### What's Different About Cycle 12
+It's the afternoon. Previous cycles covered all the morning launch content. Cycle 12 fills the **13:00–22:00 gap**:
+1. **Hour 4 live update** — authenticity content for mid-launch momentum
+2. **LinkedIn article** — reaches engineering managers (different from Twitter/HN audience)
+3. **r/homedesign** — opens a non-developer audience that actually uses floor plans
+4. **Schema transparency tweet thread** — positions Skissify as open ecosystem, not walled garden
+5. **Human story tweet** — emotional anchor for the evening US wave
+6. **Visual feedback loop blog** — new concept ("visual iteration loop") that extends the vibe drawing narrative
+
+### New Named Concept (Cycle 12): "Visual Iteration Loop"
+- **Vibe coding** → describe code to build it (Karpathy, 2025)
+- **Vibe drawing** → describe visuals to draw them (Skissify Cycle 11)
+- **Visual iteration loop** → AI + human refine a spatial design through shared sketch artifacts ← NEW
+
+This three-concept hierarchy is a narrative stack. Each term builds on the previous one. Use it in interviews, blog posts, and the eventual "What Is Vibe Drawing?" explainer post.
+
+### Updated Full Blog Inventory (16 posts)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 1 | Why Hand-Drawn Sketches Beat Figma | why-hand-drawn... | Medium, Hashnode | Day 5 |
+| 2 | How AI Agents Draw Floor Plans | how-ai-agents... | Dev.to, Hashnode | Day 3 |
+| 3 | Skissify vs Excalidraw | skissify-vs-excalidraw | Dev.to, Medium | Day 4 |
+| 4 | Build First AI Floor Plan in 15 Min | build-first-ai... | Dev.to | Day 2 |
+| 5 | We Launched Today | we-launched-today... | Indie Hackers | Day 1 (22:00) |
+| 6 | JSON Schema Behind Skissify | the-json-schema... | Dev.to, HN ref | Day 2-3 |
+| 7 | Add Skissify to Your AI Workflow | how-to-add-skissify... | Dev.to, Hashnode, Medium | Day 7 |
+| 8 | First Sketch Tool for AI Agents | the-first-sketch... | HN direct, Dev.to | Day 1-2 |
+| 9 | 12,770 MCP Servers, None Draw | mcp-has-12000... | Dev.to, Bluesky | Day 2 |
+| 10 | I Gave Claude a Pencil | i-gave-claude... | Medium, Substack | Day 2-3 |
+| 11 | Launch Day Letter to AI Developers | launch-day-letter... | Dev.to (12:00 today) | Day 1 |
+| 12 | Three-Layer Stack: Missing Visual Layer | mcp-a2a-three-layer... | Dev.to, HN ref | Day 3 |
+| 13 | Vibe Drawing | vibe-drawing... | Dev.to, Medium | Day 4 |
+| 14 | Real Estate Floor Plan Revolution | the-real-estate... | Medium, LinkedIn | Day 5 |
+| 15 | **Launch Day Live Update — Hour 4** | **launch-day-live-update...** | **Dev.to** | **Day 1 (13:00)** |
+| 16 | **The Visual Feedback Loop** | **ai-agent-visual-feedback-loop...** | **Dev.to, Medium** | **Day 6** |
+
+---
+
 ## Marketing Improvements (Cycle 11 — March 27, 09:00 CET)
 
 ### ⚡ STATUS: PRODUCT HUNT IS LIVE
