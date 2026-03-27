@@ -75,6 +75,11 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [updateSketch]
   );
 
+  const setInkColor = useCallback(
+    (inkColor: string) => updateSketch({ inkColor }),
+    [updateSketch]
+  );
+
   const loadPreset = useCallback((name: string) => {
     const preset = presets[name];
     if (preset) {
@@ -276,6 +281,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setAmplitude,
     setWaves,
     setHumanness,
+    setInkColor,
     loadPreset,
     updateFromJson,
     addElement,

@@ -75,16 +75,21 @@ function drawPaperBackground(
   paper: PaperType
 ): void {
   if (paper === "blueprint") {
-    // Linear gradient for blueprint
-    const grad = ctx.createLinearGradient(0, 0, 0, h);
+    // Dark board border first (like how cream paper sits on a dark board)
+    ctx.fillStyle = "#0d1f3a";
+    ctx.fillRect(0, 0, w, h);
+    // Blueprint paper with 4px inset — gives "paper on board" look
+    const bm = 4;
+    const grad = ctx.createLinearGradient(bm, bm, bm, h - bm);
     grad.addColorStop(0, "#1a3a6b");
     grad.addColorStop(0.5, "#1e4278");
     grad.addColorStop(1, "#16305e");
     ctx.fillStyle = grad;
+    ctx.fillRect(bm, bm, w - bm * 2, h - bm * 2);
   } else {
     ctx.fillStyle = PAPER_COLORS[paper] || PAPER_COLORS.cream;
+    ctx.fillRect(0, 0, w, h);
   }
-  ctx.fillRect(0, 0, w, h);
 }
 
 function drawPaperTexture(

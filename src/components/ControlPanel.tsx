@@ -8,6 +8,7 @@ interface ControlPanelProps {
   amplitude: number;
   waves: number;
   humanness: number;
+  inkColor: string;
   width?: number;
   height?: number;
   selectedCount: number;
@@ -16,6 +17,7 @@ interface ControlPanelProps {
   onAmplitude: (v: number) => void;
   onWaves: (v: number) => void;
   onHumanness: (v: number) => void;
+  onInkColor: (c: string) => void;
   onResize: (w: number, h: number) => void;
   onAddElement: (type: string) => void;
   onDeleteSelected: () => void;
@@ -34,6 +36,17 @@ const toolTypes: { key: ToolType; label: string; icon: string }[] = [
   { key: "ink", label: "Ink", icon: "ink" },
 ];
 
+const presetInkColors: { key: string; label: string }[] = [
+  { key: "#111111", label: "Black" },
+  { key: "#1a3a8c", label: "Blue" },
+  { key: "#8b1a1a", label: "Red" },
+  { key: "#1a4a20", label: "Green" },
+  { key: "#8b6900", label: "Brown" },
+  { key: "#555555", label: "Gray" },
+  { key: "#1a5a5a", label: "Teal" },
+  { key: "#663399", label: "Purple" },
+];
+
 const elementTypes = [
   "line", "rect", "circle", "arc", "arrow", "text",
   "dashed", "dim", "window", "door-symbol", "door-slide",
@@ -46,6 +59,7 @@ export default function ControlPanel({
   amplitude,
   waves,
   humanness,
+  inkColor,
   width,
   height,
   selectedCount,
@@ -54,10 +68,20 @@ export default function ControlPanel({
   onAmplitude,
   onWaves,
   onHumanness,
+  onInkColor,
   onResize,
   onAddElement,
   onDeleteSelected,
 }: ControlPanelProps) {
+  // Normalize inkColor for comparison (handle #111 vs #111111)
+  const normalizeColor = (c: string) => {
+    if (!c) return "#111111";
+    if (c.length === 4) {
+      return "#" + c[1] + c[1] + c[2] + c[2] + c[3] + c[3];
+    }
+    return c.toLowerCase();
+  };
+  const activeInkColor = normalizeColor(inkColor);
   return (
     <div className="w-[300px] min-w-[300px] bg-neutral-900 border-r border-neutral-700 flex flex-col overflow-y-auto text-neutral-200">
       {/* Paper */}
@@ -99,6 +123,36 @@ export default function ControlPanel({
               {t.label}
             </button>
           ))}
+        </div>
+      </Section>
+
+      {/* Ink Color */}
+      <Section title="Ink Color">
+        <div className="grid grid-cols-4 gap-1.5 mb-1.5">
+          {presetInkColors.map((c) => (
+            <button
+              key={c.key}
+              title={c.label}
+              onClick={() => onInkColor(c.key)}
+              className={`w-full aspect-square rounded transition-all border ${
+                activeInkColor === normalizeColor(c.key)
+                  ? "ring-2 ring-blue-500 border-transparent"
+                  : "border-neutral-600 hover:border-neutral-400"
+              }`}
+              style={{ backgroundColor: c.key }}
+            />
+          ))}
+        </div>
+        <div className="flex items-center gap-2 mt-1">
+          <label className="text-xs text-neutral-400 shrink-0">Custom</label>
+          <input
+            type="color"
+            value={activeInkColor}
+            onChange={(e) => onInkColor(e.target.value)}
+            className="w-8 h-7 rounded cursor-pointer border border-neutral-600 bg-neutral-800 p-0.5"
+            title="Pick custom ink color"
+          />
+          <span className="text-[10px] text-neutral-500 font-mono">{activeInkColor}</span>
         </div>
       </Section>
 
