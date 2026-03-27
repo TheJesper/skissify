@@ -144,6 +144,37 @@
 
 ---
 
+## Marketing Improvements (Cycle 3 — March 27, 01:30 CET)
+
+### Completed This Cycle
+- [x] ✅ Blog post #5 NEW: "We Launched Skissify Today — Here's What Actually Happened" — build-in-public launch retrospective with placeholder sections to fill at 22:00 tonight
+- [x] ✅ HASHTAGS-AND-COMMUNITIES.md created — full hashtag framework (1-3-5 rule), 5 Twitter sets, Instagram/TikTok/LinkedIn sets, Tier 1/2/3 community ranking, newsletter outreach targets, trending topic guidance
+- [x] ✅ SOCIAL-MEDIA.md: Added Threads.net (3 posts) + YouTube Shorts scripts (3 videos)
+- [x] ✅ SOCIAL-MEDIA.md hashtag section upgraded with hot 2026 tags: #AgentNative #AIFirst #VibeDesign #JSONFirst
+
+### Blog Post Distribution Plan (updated)
+All 5 posts ready to publish:
+- Launch day 22:00: Retrospective post ("We Launched Today...") → fill placeholders with real data, publish to Indie Hackers
+- Day 2 (Mar 28): Tutorial post ("Build Your First...") → Dev.to first, then Hashnode
+- Day 3 (Mar 29): AI floor plans post → Dev.to, Hashnode
+- Day 4 (Mar 30): Skissify vs Excalidraw → Dev.to, Medium
+- Day 5 (Mar 31): Hand-drawn vs Figma → Medium, Hashnode
+
+### Short-Form Video Priority (updated)
+Priority order (impact × effort):
+1. "The Wobble Slider" (10s) — zero narration, high virality → TikTok, Reels, YouTube Shorts, Twitter/X
+2. "AI Can Draw Now" (15-20s) — MCP demo → all platforms
+3. "Blueprint Mode" (12s) — aesthetic switch → Instagram Reels, TikTok
+4. "30-Second Tutorial" — MCP full workflow → YouTube Shorts, Twitter/X
+5. "JSON to Floor Plan" (45s) — technical explainer → YouTube Shorts
+
+### New Platforms Added This Cycle
+- **Threads** (Meta) — 3 posts ready, skews design/creative audience
+- **YouTube Shorts** — 3 scripts ready, good for evergreen SEO discovery
+- **Hashtag research document** — prevents random hashtag usage, ensures strategic targeting
+
+---
+
 ## Marketing Improvements (Cycle 2 — March 27, 01:00 CET)
 
 ### Completed This Cycle

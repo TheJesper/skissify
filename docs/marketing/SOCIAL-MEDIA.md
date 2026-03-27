@@ -695,6 +695,130 @@ skissify.com
 
 ---
 
+## Threads (Meta) — Launch Posts
+
+*Threads skews toward design/creative audience. Slightly warmer tone than Twitter.*
+
+### Thread 1: Launch Announcement
+```
+Just launched something I've been building for months.
+
+Skissify — a sketch tool where the input is JSON.
+
+You describe what you want in structured data. Skissify draws it with a hand-drawn aesthetic — wobbling walls, pencil textures, the whole thing.
+
+The twist: because it's JSON-first, AI agents can use it natively. Claude can literally design a floor plan and draw it for you.
+
+Free at skissify.com 🖊️
+```
+
+### Thread 2: The Visual Demo (Day 2)
+```
+This is a floor plan that an AI designed and drew.
+
+No human touched a pencil. No drag-and-drop.
+
+Claude picked the room sizes, the layout, the adjacencies — then called Skissify via MCP and rendered it.
+
+The future of AI output isn't just text and code.
+
+skissify.com
+```
+
+### Thread 3: Aesthetic post (Week 1)
+```
+There's something satisfying about a hand-drawn floor plan that a computer made.
+
+The wobble on the walls. The slightly-off angles. The pencil texture on the labels.
+
+It's not supposed to look machine-perfect. It's supposed to look like someone sketched it quickly on paper.
+
+That's the whole vibe. skissify.com
+```
+
+---
+
+## YouTube Shorts Scripts
+
+*YouTube Shorts: 15-60 seconds. Strong hook in first 2 seconds. Subtitles essential.*
+
+### Short 1: "AI Drew This Floor Plan" (30 seconds)
+**Title:** AI drew this floor plan (no human hand involved)
+
+```
+[0s] TEXT OVERLAY ONLY: "I asked AI to draw me a floor plan"
+[2s] Screen: Claude Desktop, typing the prompt
+[5s] "Design a 2-bedroom apartment. Draw it."
+[7s] Claude: "calling create_sketch..."
+[10s] Skissify opens. Floor plan renders with animation.
+[15s] Slow pan: living room → bedroom → kitchen labels
+[20s] Zoom into wobble detail on wall
+[23s] TEXT: "JSON → hand-drawn sketch"
+[25s] TEXT: "skissify.com — free"
+[28s] TEXT: "MCP server: npm install -g @skissify/mcp-server"
+```
+
+**Description:**
+Skissify is a JSON-to-sketch tool with MCP support. AI agents can create and render hand-drawn floor plans, diagrams, and wireframes directly in conversation.
+
+Free: skissify.com
+MCP install: npm install -g @skissify/mcp-server
+
+#AI #FloorPlan #Claude #MCP #AIAgents #DevTools
+
+---
+
+### Short 2: "The Most Satisfying Dev Slider" (15 seconds)
+**Title:** The most satisfying slider in any dev tool
+
+```
+[0s] Skissify editor, floor plan visible
+[1s] TEXT: "humanness: 0"
+[2s] Drag humanness slider from 0 to 10
+[5s] Lines transform from ruler-straight to shaky hand-drawn
+[8s] TEXT: "humanness: 10"
+[10s] Drag back to 3 — perfect balance
+[12s] TEXT: "make your AI's drawings look more human"
+[14s] "skissify.com"
+```
+
+**Description:**
+The wobble engine in Skissify has 3 parameters: amplitude, wave frequency, and humanness. This is humanness.
+
+skissify.com
+
+#Satisfying #DevTools #AI #Design #WebDev
+
+---
+
+### Short 3: "JSON to Floor Plan" (45 seconds)
+**Title:** From JSON to hand-drawn floor plan in 45 seconds
+
+```
+[0s] TEXT: "What if your floor plan was just data?"
+[3s] Code editor: show simple JSON manifest
+[8s] Paste into Skissify editor
+[10s] Press render → sketch appears
+[14s] Edit one value in JSON (room width)
+[16s] Re-render → room expands on canvas
+[20s] Add "label": "Home Office" to JSON
+[23s] Re-render → label appears with hand-drawn style
+[28s] Switch paper style: cream → blueprint
+[32s] TEXT: "14 element types"
+[34s] TEXT: "4 paper styles"
+[36s] TEXT: "AI agent compatible via MCP"
+[40s] "skissify.com — free"
+```
+
+**Description:**
+Skissify is a JSON-first sketch tool. Edit the JSON, see the sketch update. AI agents can generate the JSON automatically.
+
+Free editor: skissify.com
+
+#FloorPlan #JSON #DevTools #AI #Architecture
+
+---
+
 ## Response Templates
 
 ### When someone asks "Why not just use Excalidraw?":
