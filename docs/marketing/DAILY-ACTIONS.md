@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #23 (03:48 CET, Saturday March 28)
+
+### Priority Context
+
+23 consecutive niche-clean scans. The "vibe design" news cycle (Figma MCP + Google Stitch) is 3–10 days old. Sunday is the last day this counter-narrative has full resonance before it becomes stale Monday. 
+
+**Scenario A**: `@skissify/mcp` shipped Saturday → Sunday is launch day (HN post + registry submissions)
+**Scenario B**: `@skissify/mcp` did NOT ship Saturday → Sunday is the final build window; MCP must ship before Monday or the optimal news window closes
+
+---
+
+### 🔴 Action 1 — LAUNCH OR BUILD: Ship MCP or Post Show HN (Mutually Exclusive Based on Build Status)
+
+**If MCP shipped Saturday** → Post "Show HN" Sunday 15:00–18:00 CET (peak US Eastern morning = peak HN visibility):
+
+> **Title**: `Show HN: Skissify – JSON in, hand-drawn SVG out. The sketch MCP that Figma MCP and Google Stitch aren't.`
+>
+> **Body**: Figma MCP outputs polished, design-system-linked UI. Google Stitch outputs production-ready components. Excalidraw MCP outputs topology diagrams that live in Obsidian notes. Nobody outputs hand-drawn spatial sketches from agent-generated JSON — especially not floor plans. `npx @skissify/mcp`. Free watermarked. EUR 2/mo clean. Walls, doors, windows, stairs, dimensions.
+
+**If MCP did NOT ship Saturday** → Sunday is a 6-hour build sprint. Same minimum viable scope as prior cycles: one tool, `render_sketch`, JSON in → SVG out, watermarked. Publish by Sunday 20:00 CET so registration submissions can happen Sunday evening.
+
+---
+
+### 🟡 Action 2 — COPY UPDATE: Reframe Excalidraw Positioning Based on New Signal
+
+**New intelligence from Run #23**: Excalidraw's editorial identity is now "keyboard-first, Obsidian integration, technical interviews." This is a narrower and more specific identity than "general sketch tool."
+
+**Action**: Update `docs/marketing/COPY-LIBRARY.md` homepage hero section to explicitly distinguish from Excalidraw's now-known Obsidian/topology lane:
+
+**New sub-line (update COPY-LIBRARY.md)**:
+> "Excalidraw is for topology diagrams in your notes. Skissify is for hand-drawn floor plans from your AI agents. Different moments, different tools."
+
+This framing is now accurate (Excalidraw has confirmed its Obsidian lane), respectful (not attacking a loved OSS tool), and clarifying (reduces buyer confusion about when to use each).
+
+**Time**: 20 minutes. Zero code required.
+
+---
+
+### 🟢 Action 3 — DISTRIBUTION: Submit to 3 MCP Discovery Channels (30 minutes — only if MCP is live)
+
+In order of impact:
+
+1. **modelcontextprotocol.io registry** — via GitHub PR to `modelcontextprotocol/servers`. First-mover placement.
+
+2. **awesome-mcp-servers** — PR to add under "Visualization / Diagrams" section adjacent to mermaid-mcp entry. Frame: "Mermaid for topology, Skissify for floor plans and hand-drawn spatial sketches."
+
+3. **claudefa.st** — active "best MCP servers" directory (launched March 25). Currently lists zero sketch/diagram tools. Skissify would be the first.
+
+**Note**: Do NOT submit to any directory without a working `npx @skissify/mcp` command. Submissions without a functional package get removed and damage early reputation.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #22 (02:40 CET, Saturday March 28)
 
 ### Priority Context

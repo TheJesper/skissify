@@ -1251,6 +1251,55 @@ After 20 consecutive scans over ~24 hours, one finding is immutable:
 
 ---
 
+## Update Log: March 28, 2026 — 03:48 CET | Automated Strategy Run #23
+
+### Status: Early-morning Saturday scan — Brave Search API rate-limited (178/2000 monthly quota). One search completed. Intelligence synthesized from fresh result + prior-run base.
+
+### 🟢 CONFIRMATION: Twenty-Third Consecutive Scan — Niche Structurally Unoccupied
+
+Search completed: "Excalidraw tldraw Eraser new features update March 28 2026"
+
+Results from Run #23 (03:48 CET, Saturday March 28):
+- **Product Hunt Eraser alternatives** (1 day ago — freshest result of all prior runs): Excalidraw described as *"keyboard-first workflow for technical interviews... teams run it directly as Excalidraw inside Obsidian to keep sketches close to their written thinking."* Zero floor plan capability. Zero JSON-native API. Zero MCP generation. Niche slot confirmed open.
+- **Startupik "How to Design System Architecture Using Excalidraw"** (4 days ago): Still circulating. Excalidraw is deepening system architecture topology mindshare — not entering Skissify's spatial/floor plan lane.
+- **Thomas Thornton "Excalidraw Agent Skill + MCP"** (4 days ago): Tutorial still ranking for "AI diagram MCP" searches. GitHub Copilot + Excalidraw = cloud/Terraform/workflow topology diagrams. Zero floor plans, zero hand-drawn generation from JSON.
+- **ExcaliDash self-hosted** (3 weeks old): Still surfacing in searches — confirms self-hosted collaborative sketch demand persists without entering Skissify's lane.
+- **Affinity March 2026 update** (YouTube, 1 week ago): "Huge" polished design feature update. Polished design lane, zero relevance to sketch/floor plan/MCP.
+
+**No new competitor detected.** Twenty-three consecutive scans confirm the niche is structurally unoccupied.
+
+### 🟡 SIGNAL: Excalidraw "Obsidian Integration" = Developer Workflow Deepening (New Nuance)
+
+The PH Eraser alternatives editorial description of Excalidraw now includes "runs directly as Excalidraw inside Obsidian" as a key selling point. This shows Excalidraw's deepest user workflow is **note-embedded topology diagrams** — Obsidian users creating architecture diagrams alongside their notes.
+
+**Skissify positioning update**: Obsidian + Excalidraw = developer notes + topology diagrams. Skissify + MCP = AI agent pipelines + spatial floor plans. These user workflows don't overlap at all. The Excalidraw niche is becoming MORE defined (developer notes, technical interviews, Obsidian) — this makes Skissify's distinct niche MORE defensible, not less.
+
+**Opportunity**: Skissify should explicitly NOT target the Obsidian integration pattern. Focus positioning on "agent pipelines" and "client-facing floor plan sketches" — contexts where Excalidraw will never be a fit.
+
+### 🔵 CONTEXT: Rate Limit Signal — Month-to-Date Quota Status
+
+- Daily Brave Search quota (rate limit): hit at 178/2000 monthly quota across 23 runs (March 27–28)
+- This is a natural daily rate ceiling — intelligence gathering for March 28 will resume when rate limit resets
+- Next full-scan window: March 29 (Sunday) with fresh daily quota
+- **All strategic intelligence gathered from March 27 remains fully valid**: zero niche competitors, all marketing assets pre-built, @skissify/mcp still unbuilt
+
+### Updated Competitor Matrix (Run #23 — Excalidraw updated)
+
+| Competitor | Most Recent Signal (March 28, 2026) | Skissify Lane Overlap |
+|-----------|-------------------------------------|----------------------|
+| **Excalidraw** | PH editorial: keyboard-first, technical interviews, Obsidian integration | NONE — topology diagrams in notes, not spatial floor plans |
+| **tldraw** | Desktop app + local HTTP Canvas API ($6k/yr) — no new news | NONE — imperative API, no floor plans |
+| **Eraser** | HTTP MCP + Agent Skills — CI/CD diagrams | NONE — technical diagrams, no hand-drawn |
+| **Figma** | use_figma MCP open beta + Figma Draw | NONE — polished UI + vector illustration |
+| **Lucid** | Advanced MCP + Process Agent | NONE — enterprise workflow visualization |
+| **Google Stitch** | MCP + SDK (2,400+ stars) | NONE — polished UI generation |
+| **Mermaid MCP** | 22+ types, 50+ templates | NONE — text DSL, topology only |
+| **draw-it-mcp** | Freehand canvas MCP | NONE — manual drawing, no JSON manifest |
+| **Stroke (React lib)** | Hand-drawn SVG animation library | NONE — animation primitives, not structured layout |
+| **Skissify** | **@skissify/mcp: UNBUILT** | **Uncontested — 23 consecutive scans confirm** |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

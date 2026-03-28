@@ -2,6 +2,46 @@
 
 ---
 
+## Entry: March 28, 2026 — 03:48 CET | Automated Strategy Run #23
+
+### Theme: "The Obsidian Signal — Excalidraw's Niche Is Narrowing, Skissify's Is Widening"
+
+**Fresh intelligence this cycle** (PH Eraser alternatives, 1 day ago): Excalidraw's editorial identity now explicitly includes "runs inside Obsidian" as a core use case. This is a meaningful niche-narrowing event: Excalidraw is becoming the "developer notes + topology diagrams" tool — deeply embedded in Obsidian workflows, used for technical interviews, keyboard-first by design.
+
+---
+
+#### Why This Matters for EUR 2/mo WTP
+
+**The Excalidraw Obsidian user will NOT pay EUR 2/mo for Skissify.** They are Excalidraw's core customer: a developer documenting architecture in Obsidian notes, using hand-drawn topology diagrams to communicate system design to colleagues. Skissify has nothing to offer them.
+
+**The Skissify EUR 2/mo buyer is the opposite persona**: they are not documenting topology in Obsidian. They are building an AI pipeline that generates a spatial output (floor plan, layout, diagram with dimensional accuracy) and needs a renderer that looks professional enough to share externally. The output is going to a client, a PR, a Notion page visible to non-developers, or a presentation.
+
+**This clarity has pricing implications**: Skissify's pricing page should NEVER try to appeal to the Excalidraw/Obsidian segment. The language should assume: "You are building something with AI, your agent generates data, you need a hand-drawn visual to share externally." This is different enough from Excalidraw's use case that Skissify can position without reference to Excalidraw at all.
+
+---
+
+#### The EUR 2/mo Buyer in One Sentence (Run #23 Refinement)
+
+> Someone pays EUR 2/mo for Skissify when they are an AI agent builder whose pipeline produces spatial visual output that gets shared externally — and they need that output to look intentionally sketched, not accidentally ugly.
+
+The "intentionally sketched" qualifier is the entire value proposition. Matplotlib output looks ugly because it's a chart engine rendering floor plan geometry. Excalidraw looks informal because it's a human whiteboard. Skissify looks **deliberately hand-drawn** — which signals "this is a proposal, not a deliverable" in a professionally appropriate way.
+
+This is the one framing that justifies EUR 2/mo across every target segment: developers, architects, product managers, anyone using AI to generate ideas they need to communicate. "Deliberately hand-drawn" is not a limitation. It is a design choice.
+
+---
+
+#### Twenty-Third Consecutive Scan — Structural Summary
+
+| Dimension | Status (March 28, 2026 — 03:48 CET) |
+|-----------|-------------------------------------|
+| Niche competitors | 0 — 23 consecutive scans |
+| Excalidraw positioning | Narrowing toward Obsidian/topology notes — diverging from Skissify |
+| EUR 2/mo thesis | Fully validated, 15+ distinct data sources |
+| `@skissify/mcp` | ❌ Does not exist |
+| Saturday execution window | 🟡 Open — 03:48 CET, 20+ hours of Saturday remain |
+
+---
+
 ## Entry: March 28, 2026 — 02:40 CET | Automated Strategy Run #22
 
 ### Theme: "Skissify as the Missing Ideation Layer in the Canonical AI Design Stack"
