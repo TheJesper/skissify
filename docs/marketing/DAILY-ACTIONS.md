@@ -2,6 +2,70 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #24 (05:00 CET, Saturday March 28)
+
+### Priority Context
+
+24 consecutive niche-clean scans. Saturday is `@skissify/mcp` build day. Sunday is launch day — IF the package ships Saturday. The Figma MCP + Google Stitch news cycle has approximately 5 days of remaining resonance before it becomes historical context.
+
+**Assumption**: By Sunday morning, `@skissify/mcp` has been published to npm and tested locally in Claude Desktop.
+
+---
+
+### 🔴 Action 1 — LAUNCH: Post "Show HN" During Peak Sunday Visibility Window (Priority: CRITICAL if MCP shipped)
+
+**Why Sunday specifically**: HN "Show HN" traffic peaks Saturday–Sunday 9am–2pm US Eastern = 15:00–20:00 CET Sunday. Saturday's peak window has passed. Sunday is the last weekend window before the Figma/Stitch news cycle fades Monday.
+
+**Target post time**: Sunday 15:00–18:00 CET
+
+**Post title** (use verbatim):
+> `Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP that Figma and Google Stitch aren't.`
+
+**Post body** (use this draft from the COPY-LIBRARY):
+> Figma just opened its canvas to AI agents (`use_figma` MCP). Google Stitch launched MCP + SDK (2,400+ stars in week 1). Both output polished, production-ready designs.
+>
+> Nobody made the hand-drawn version. Especially not for floor plans.
+>
+> Skissify: describe a floor plan or architecture sketch as JSON → rendered as hand-drawn SVG. One MCP tool: `render_sketch(manifest)` → SVG. Declarative, not imperative.
+>
+> `npx @skissify/mcp` — free (watermarked), EUR 2/mo for clean output.
+> Floor plans: walls, doors, windows, stairs, columns, dimension lines. Tunable wobble. Paper types.
+>
+> → skissify.com
+
+**DO NOT POST without**: a working `npx @skissify/mcp` command, a live demo URL, and at least 3 example sketches in the README.
+
+---
+
+### 🟡 Action 2 — DISTRIBUTION: Submit `@skissify/mcp` to 3 MCP Discovery Channels (30 minutes — only valid if MCP is live)
+
+In order of impact:
+
+1. **modelcontextprotocol.io/registry** — Submit via GitHub PR to `modelcontextprotocol/servers`. The official registry; Claude Desktop auto-discovery eventually pulls from here. First-mover placement matters.
+
+2. **awesome-mcp-servers** — PR to add Skissify under "Visualization / Diagrams" section. The `mermaid-mcp` entry (just added this week) gives a template for how to frame the entry. Positioning note: "Mermaid for topology diagrams, Skissify for hand-drawn spatial sketches and floor plans."
+   - URL: https://github.com/punkpeye/awesome-mcp-servers
+
+3. **claudefa.st** — Active "best MCP servers" directory (launched March 25, 2026). Zero sketch/diagram tools currently listed. Skissify would be the first.
+   - URL: https://claudefa.st/blog/tools/mcp-extensions/best-addons
+
+**IMPORTANT**: Do not submit to any directory without a working `npx @skissify/mcp` command. Submissions without a functional package are removed and damage early-stage reputation.
+
+---
+
+### 🟢 Action 3 — CONTENT: Comment on DEV Community Floor Plan Tutorial (15 minutes — standalone, no MCP dependency)
+
+**Target URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+This tutorial (Google Gemini + Matplotlib floor plan pipeline) has surfaced in **9 consecutive strategy scans** as the highest-intent free acquisition target. The developer did the hard work (LLM → structured JSON). Skissify is the rendering step they're missing.
+
+**Comment text** (post verbatim or lightly adapted):
+> "Fantastic walkthrough — the Gemini JSON step is genuinely the hard part. If you want to try a different rendering layer, I built Skissify (skissify.com) to solve exactly this: it takes structured JSON with rooms, walls, doors, and dimensions and renders it as a hand-drawn SVG — the kind that looks like someone sketched it on paper rather than generated it by a chart library. There's also an MCP server (`npx @skissify/mcp`) so Claude can call it directly in one tool call. Free tier available. Would love to hear how the JSON schema compares to what Gemini generates for you."
+
+**This action can be done Sunday regardless of MCP build status.** It is the single most cost-effective acquisition action in the backlog and has been deferred across 10+ prior cycles.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #23 (03:48 CET, Saturday March 28)
 
 ### Priority Context

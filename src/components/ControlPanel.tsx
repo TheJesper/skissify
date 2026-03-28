@@ -1,6 +1,7 @@
 "use client";
 
 import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS } from "@/lib/types";
+import ElementThumbnailPanel from "./ElementThumbnailPanel";
 
 interface ControlPanelProps {
   paper: PaperType;
@@ -71,11 +72,6 @@ const presetInkColors: { key: string; label: string }[] = [
   { key: "#663399", label: "Purple" },
 ];
 
-const elementTypes = [
-  "line", "rect", "circle", "arc", "arrow", "text",
-  "dashed", "dim", "window", "door-symbol", "door-slide",
-  "stair", "opening", "column",
-];
 
 export default function ControlPanel({
   paper,
@@ -506,17 +502,7 @@ export default function ControlPanel({
 
       {/* Add Elements */}
       <Section title="Add Element">
-        <div className="grid grid-cols-3 gap-1">
-          {elementTypes.map((t) => (
-            <button
-              key={t}
-              onClick={() => onAddElement(t)}
-              className="px-1.5 py-1.5 bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 rounded text-[11px] font-medium transition-all text-center"
-            >
-              {t}
-            </button>
-          ))}
-        </div>
+        <ElementThumbnailPanel paper={paper} onAddElement={onAddElement} />
       </Section>
     </div>
   );
