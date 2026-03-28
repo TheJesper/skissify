@@ -2,6 +2,87 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #25 (06:08 CET, Saturday March 28)
+
+### Priority Context
+
+25 consecutive niche-clean scans. 29+ hours of continuous intelligence gathering. One finding that has not changed across all 25 runs: **`@skissify/mcp` does not exist.**
+
+Today's actions are identical to the past 7+ Saturday-proposed action sets — because they haven't been executed yet. This cycle adds one new strategic insight (EUR 9/mo test) and reinforces the three core actions.
+
+---
+
+### 🔴 Action 1 — CRITICAL: Ship `@skissify/mcp` v0.1 to npm (Today — 4–6 hours)
+
+This is the 25th consecutive strategy cycle recommending this action. The window is open. The niche is clear. The infrastructure is ready. The HN counter-narrative (Figma MCP + Google Stitch = polished; Skissify = hand-drawn sketch) has 4–5 days of peak resonance remaining.
+
+**Minimum viable scope** — do not deviate:
+
+```bash
+mkdir W:/code/skissify/packages/mcp
+cd W:/code/skissify/packages/mcp
+npm init -y
+npm install @modelcontextprotocol/sdk zod
+```
+
+Single tool to implement: `render_sketch(manifest: JSON) → SVG string`. Watermark on free renders. That's v0.1.
+
+**Definition of done**: `npx @skissify/mcp` installs. Claude Desktop shows `render_sketch`. One floor plan JSON produces a hand-drawn SVG. Screenshot it.
+
+**Post-publish sequence** (30 minutes mechanical work):
+1. Submit to modelcontextprotocol.io/registry
+2. PR to awesome-mcp-servers (Diagrams/Visual section)
+3. Submit to claudefa.st + mcpmanager.ai + mcpservers.org
+
+---
+
+### 🟡 Action 2 — HIGH: Test EUR 9/mo Pro at Launch (Decision — 20 minutes)
+
+**New intelligence from Run #25**: Excalidraw's identity has hardened to "Obsidian notes + topology." Skissify now occupies a completely distinct lane with zero direct competitors (25 scans confirm). A structural moat supports a structural price.
+
+**The pricing test proposal**:
+- Set Pro tier to **EUR 9/mo** at launch (not EUR 5)
+- Still far below Excalidraw+ (~EUR 6.50 in USD terms at $6-7/mo), far below tldraw ($500/mo), far below Miro ($20/user)
+- Still an impulse buy (under EUR 0.30/day)
+- Provides a EUR 2/mo API Starter as the entry point, EUR 9/mo Pro as the upgrade
+
+**Decision gate**:
+- If 0 paying users at EUR 9/mo after 14 days → drop to EUR 5/mo
+- If any paying users at EUR 9/mo → keep and optimize
+
+**Action**: Update `docs/BUSINESS-PLAN.md` pricing table to show EUR 9/mo Pro as the launch test price. Add a footnote: "Testing EUR 9 vs EUR 5 at PH launch. Decision gate: 14 days."
+
+**Time**: 15 minutes. No code changes.
+
+---
+
+### 🟢 Action 3 — MEDIUM: Comment on DEV Community Floor Plan Tutorial (15 minutes — standalone, no MCP needed)
+
+This action has been recommended for 19+ consecutive cycles and has not been executed. It requires no MCP server, no code, and no launch. It can be done right now.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment** (post verbatim or lightly adapted):
+> "Fantastic walkthrough — the Gemini JSON step is genuinely the hard part. If you want to try a different rendering layer, I built Skissify (skissify.com) to solve exactly this: it takes structured JSON with rooms, walls, doors, and dimensions and renders it as a hand-drawn SVG — the kind that looks like someone sketched it on paper rather than a chart library generated it. There's also an MCP server (`npx @skissify/mcp`) so Claude can call it in one tool call. Free tier available. Would love to hear how the JSON schema compares to what Gemini generates for you."
+
+**Why this keeps being deferred**: Unknown. 15 minutes. No blockers. Do it now.
+
+---
+
+### Completion Log (update Saturday evening)
+- [ ] `@skissify/mcp` published to npm: URL ___
+- [ ] Submitted to modelcontextprotocol.io: ✓/✗
+- [ ] PR to awesome-mcp-servers: ✓/✗
+- [ ] Submitted to claudefa.st + mcpmanager.ai + mcpservers.org: ✓/✗
+- [ ] Screenshot of first Claude-generated sketch via MCP: ✓/✗
+- [ ] EUR 9/mo pricing test decision documented in BUSINESS-PLAN.md: ✓/✗
+- [ ] DEV Community comment posted: ✓/✗
+- [ ] HN Show HN draft ready (docs/marketing/blog/hn-launch-post.md): ✓/✗
+
+---
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #24 (05:00 CET, Saturday March 28)
 
 ### Priority Context

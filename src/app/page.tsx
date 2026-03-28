@@ -220,6 +220,8 @@ function EditorInner({
     toggleLockSelected,
     alignSelected,
     redraw,
+    importSketch,
+    newSketch,
     updateSketch,
     updateElement,
     undo,
@@ -482,6 +484,8 @@ function EditorInner({
         onPrint={handlePrint}
         onDownload={handleDownload}
         onDownloadSVG={handleDownloadSVG}
+        onImportJSON={importSketch}
+        onNewSketch={newSketch}
         onSave={handleSave}
         onUndo={undo}
         onRedo={redo}

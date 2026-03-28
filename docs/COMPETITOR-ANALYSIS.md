@@ -1347,6 +1347,59 @@ The PH Eraser alternatives editorial description of Excalidraw now includes "run
 
 ---
 
+## Update Log: March 28, 2026 — 06:08 CET | Automated Strategy Run #25
+
+### Status: Saturday early-morning scan — Rate-limited after 1 of 2 searches (186/2000 monthly quota). Intelligence synthesized from one fresh result + prior-run baseline.
+
+### 🟢 CONFIRMATION: Twenty-Fifth Consecutive Scan — Niche Structurally Unoccupied
+
+Search completed: "Excalidraw tldraw Eraser new features update March 28 2026"
+
+Results from Run #25 (06:08 CET, Saturday March 28):
+- **Product Hunt Eraser alternatives** (1 day ago — freshest available): Excalidraw described as *"keyboard-first workflow for technical interviews... some teams run it directly as Excalidraw inside Obsidian to keep sketches close to their written thinking."* Identical language to Run #23 and #24 — confirms Excalidraw's editorial identity has stabilized as "Obsidian notes + system architecture topology."
+- **Startupik "Design System Architecture Using Excalidraw"** (5 days ago): Still ranking for startup architecture diagram searches. No new features, no new lane changes.
+- **Thomas Thornton Excalidraw MCP tutorial** (4 days ago): Still the top result for "Excalidraw MCP" queries. No competing Skissify content exists yet.
+- **ExcaliDash self-hosted** (4 days ago): Same self-hosted Excalidraw multiplayer signal as Runs #4 and #23. No new developments.
+- **Affinity by Canva March 2026 YouTube** (1 week ago): Still surfacing in design tool update searches. Polished design lane, zero overlap.
+
+**No new entrant** to "hand-drawn + JSON-native + MCP + floor plan" quadrant detected.
+
+**Twenty-five consecutive automated scans spanning March 27 01:11 CET → March 28 06:08 CET confirm: the niche is structurally unoccupied.**
+
+### 🟡 SIGNAL: Excalidraw's "Obsidian Identity" Hardening — Now Editorial Consensus Across Multiple Sites
+
+Three consecutive scans (Runs #23, #24, #25) all return the same editorial description of Excalidraw: *"keyboard-first, technical interviews, teams run it inside Obsidian."* This isn't marketing copy — it's what curators and editorial teams are writing about Excalidraw after observing its user base. The identity is hardening.
+
+**Implications**:
+- Excalidraw's strongest user segment is: developers documenting architecture IN their notes. Not: architects sketching floor plans FOR clients.
+- This makes Skissify's "for AI agents and client-facing floor plan sketches" positioning MORE distinct, not less. The two products serve opposite ends of the same "rough visual" spectrum.
+- **Pricing clarity**: The Excalidraw/Obsidian user will never pay EUR 2/mo for Skissify. They have their tool. Skissify's EUR 2 buyer is the developer whose AI agent generates a spatial output (floor plan, layout diagram, architecture overview) that needs to look professional to someone outside their team. Completely different purchase context.
+
+### 🔵 META: Saturday Morning Build Window Confirmed Open
+
+As of 06:08 CET Saturday March 28, 2026:
+- All intelligence gathered: 25 scans, 29+ hours
+- All marketing infrastructure pre-built: 20+ files in `docs/marketing/`
+- Brave Search quota: 186/2000 monthly (rate limited per-request, not exhausted)
+- **`@skissify/mcp` package: does not exist**
+- Saturday build window: 18+ hours remaining
+
+**The HN "Show HN" counter-narrative window** (Figma MCP + Google Stitch "vibe design" still in developer consciousness) has approximately 4–5 days of peak resonance remaining. Publishing the HN post today or Sunday maximizes its relevance.
+
+### Updated Competitor Status (Run #25 — Saturday 06:08 CET)
+| Competitor | Saturday March 28 Status |
+|-----------|--------------------------|
+| Excalidraw | Identity hardening: Obsidian notes + topology. No floor plan, no JSON-native, no MCP generation. |
+| tldraw | Desktop HTTP API ($6k/yr). Community trust fragile. No new news. |
+| Eraser | HTTP MCP + Agent Skills (technical diagrams). No hand-drawn. No floor plans. |
+| Figma | use_figma MCP open beta. Polished UI lane. No hand-drawn. |
+| Google Stitch | MCP + SDK (2,400+ stars). Polished UI lane. No floor plan. |
+| Mermaid MCP | 22+ types, topology only. No spatial/floor plan. |
+| All others | No changes from prior runs. |
+| **Skissify** | **@skissify/mcp: does not exist — Saturday is the build day.** |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

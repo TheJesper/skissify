@@ -137,6 +137,16 @@ export default function Toolbar({
     URL.revokeObjectURL(url);
   }, [sketch, sketchSlug]);
 
+  const handleCopyJSON = useCallback(() => {
+    if (!sketch) return;
+    const json = JSON.stringify(sketch, null, 2);
+    navigator.clipboard.writeText(json).then(() => {
+      showToast("JSON copied to clipboard!");
+    }).catch(() => {
+      showToast("Failed to copy to clipboard");
+    });
+  }, [sketch, showToast]);
+
   // Close overflow menu on outside click
   useEffect(() => {
     if (!showOverflowMenu) return;
@@ -149,7 +159,7 @@ export default function Toolbar({
     return () => document.removeEventListener("mousedown", handler);
   }, [showOverflowMenu]);
 
-  // Global keyboard shortcut: ? opens shortcuts panel
+  // Global keyboard shortcuts: ? opens shortcuts panel; Ctrl+Shift+J exports JSON
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement;
@@ -161,11 +171,18 @@ export default function Toolbar({
       }
       if (e.key === "Escape") {
         setShowShortcuts(false);
+        setShowShareDialog(false);
+        setShowNewConfirm(false);
+      }
+      // Ctrl+Shift+J → Export as JSON
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === "J") {
+        e.preventDefault();
+        handleExportJSON();
       }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, []);
+  }, [handleExportJSON]);
 
   return (
     <>
@@ -342,7 +359,7 @@ export default function Toolbar({
           <button
             onClick={handleExportJSON}
             className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded text-xs font-medium transition-colors"
-            title="Download as JSON (portable sketch file)"
+            title="Download as JSON (Ctrl+Shift+J)"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -350,6 +367,19 @@ export default function Toolbar({
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
             JSON
+          </button>
+        )}
+        {sketch && (
+          <button
+            onClick={handleCopyJSON}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#eee8d5] hover:bg-[#fdf6e3] text-[#586e75] rounded text-xs font-medium transition-colors"
+            title="Copy JSON to clipboard"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </svg>
+            Copy
           </button>
         )}
         {onImportJSON && (
@@ -411,6 +441,11 @@ export default function Toolbar({
               {sketch && (
                 <button onClick={() => { handleExportJSON(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
                   Export JSON
+                </button>
+              )}
+              {sketch && (
+                <button onClick={() => { handleCopyJSON(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
+                  Copy JSON
                 </button>
               )}
               <button onClick={() => { onPrint(); setShowOverflowMenu(false); }} className="w-full text-left px-3 py-2 text-xs text-[#586e75] hover:bg-[#eee8d5] transition-colors">
@@ -544,13 +579,14 @@ export default function Toolbar({
                 { keys: ["Ctrl", "C"], desc: "Copy selected elements" },
                 { keys: ["Ctrl", "V"], desc: "Paste elements" },
                 { keys: ["Ctrl", "D"], desc: "Duplicate selected" },
+                { keys: ["Ctrl", "A"], desc: "Select all elements" },
                 { keys: ["R"], desc: "Rotate selected 15° clockwise" },
                 { keys: ["Shift", "R"], desc: "Rotate selected 15° counter-clockwise" },
                 { keys: ["↑ ↓ ← →"], desc: "Nudge selected 1px" },
                 { keys: ["Shift", "↑ ↓ ← →"], desc: "Nudge selected 10px" },
-                { keys: ["Ctrl", "A"], desc: "Select all elements" },
                 { keys: ["Del / ⌫"], desc: "Delete selected elements" },
                 { keys: ["Esc"], desc: "Deselect all" },
+                { keys: ["Double-click"], desc: "Edit text / label inline" },
                 { keys: ["Shift+click"], desc: "Add to selection" },
                 { keys: ["Drag (empty)"], desc: "Box-select elements" },
                 { keys: ["Alt+drag"], desc: "Pan canvas" },
