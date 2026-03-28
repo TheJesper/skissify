@@ -193,6 +193,74 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [sketch, updateSketch]
   );
 
+  /**
+   * Add an element at an explicit canvas position (used by drag-from-panel).
+   * The element is centered on (dropX, dropY).
+   */
+  const addElementAt = useCallback(
+    (type: string, dropX: number, dropY: number) => {
+      const baseProps = { color: sketch.inkColor };
+      let newEl;
+      const cx = dropX;
+      const cy = dropY;
+
+      switch (type) {
+        case "line":
+          newEl = { type: "line", x1: cx - 60, y1: cy, x2: cx + 60, y2: cy, ...baseProps };
+          break;
+        case "rect":
+          newEl = { type: "rect", x: cx - 60, y: cy - 40, w: 120, h: 80, ...baseProps };
+          break;
+        case "circle":
+          newEl = { type: "circle", cx, cy, r: 45, ...baseProps };
+          break;
+        case "arc":
+          newEl = { type: "arc", cx, cy, r: 40, startAngle: 0, endAngle: 90, ...baseProps };
+          break;
+        case "arrow":
+          newEl = { type: "arrow", x1: cx - 70, y1: cy, x2: cx + 70, y2: cy, ...baseProps };
+          break;
+        case "text":
+          newEl = { type: "text", x: cx, y: cy, text: "Text", fontSize: 18, ...baseProps };
+          break;
+        case "dashed":
+          newEl = { type: "dashed", x1: cx - 70, y1: cy, x2: cx + 70, y2: cy, ...baseProps };
+          break;
+        case "dim":
+          newEl = { type: "dim", x1: cx - 80, y1: cy, x2: cx + 80, y2: cy, label: "5.0m", ...baseProps };
+          break;
+        case "window":
+          newEl = { type: "window", x1: cx - 50, y1: cy, x2: cx + 50, y2: cy, color: "#336" };
+          break;
+        case "door-symbol":
+          newEl = { type: "door-symbol", x: cx, y: cy, w: 70, swing: "left", ...baseProps };
+          break;
+        case "door-slide":
+          newEl = { type: "door-slide", x: cx, y: cy, w: 70, direction: "right", ...baseProps };
+          break;
+        case "stair":
+          newEl = { type: "stair", x: cx - 30, y: cy - 50, w: 60, h: 100, steps: 8, ...baseProps };
+          break;
+        case "opening":
+          newEl = { type: "opening", x1: cx - 40, y1: cy, x2: cx + 40, y2: cy, ...baseProps };
+          break;
+        case "column":
+          newEl = { type: "column", cx, cy, size: 12, ...baseProps };
+          break;
+        default:
+          return;
+      }
+
+      const newIdx = sketch.elements.length;
+      updateSketch({
+        elements: [...sketch.elements, newEl as SketchData["elements"][number]],
+      });
+      // Auto-select the newly placed element
+      setSelectedElements(new Set([newIdx]));
+    },
+    [sketch, updateSketch, setSelectedElements]
+  );
+
   const deleteSelected = useCallback(() => {
     if (selectedElements.size === 0) return;
     // Skip deletion of locked elements
@@ -694,6 +762,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     loadPreset,
     updateFromJson,
     addElement,
+    addElementAt,
     deleteSelected,
     moveSelected,
     commitDrag,

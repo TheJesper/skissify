@@ -176,6 +176,8 @@ interface CanvasProps {
   canvasControlRef?: React.MutableRefObject<{ resetView: () => void } | null>;
   /** Called with element index when user double-clicks an element to edit its text */
   onDoubleClickElement?: (idx: number) => void;
+  /** Called when an element type is dropped onto the canvas — receives type + canvas coords */
+  onDropElement?: (type: string, canvasX: number, canvasY: number) => void;
 }
 
 /** Returns the editable text content of an element, or null if not text-editable */
@@ -209,6 +211,7 @@ export default function Canvas({
   onZoomChange,
   canvasControlRef,
   onDoubleClickElement,
+  onDropElement,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -768,6 +771,25 @@ export default function Canvas({
     }
   }, [onDragEnd, onResizeEnd]);
 
+  // Drag-and-drop: accept element type drops from the element panel
+  const handleDragOver = useCallback((e: React.DragEvent<HTMLDivElement>) => {
+    if (e.dataTransfer.types.includes("text/x-skissify-element")) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = "copy";
+    }
+  }, []);
+
+  const handleDrop = useCallback(
+    (e: React.DragEvent<HTMLDivElement>) => {
+      const elementType = e.dataTransfer.getData("text/x-skissify-element");
+      if (!elementType || !onDropElement) return;
+      e.preventDefault();
+      const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+      onDropElement(elementType, mx, my);
+    },
+    [clientToCanvas, onDropElement]
+  );
+
   // Touch: pinch-to-zoom and two-finger pan
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     if (e.touches.length === 2) {
@@ -901,6 +923,8 @@ export default function Canvas({
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
+      onDragOver={handleDragOver}
+      onDrop={handleDrop}
     >
       <div
         style={{

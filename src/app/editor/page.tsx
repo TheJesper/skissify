@@ -120,6 +120,7 @@ function EditorInner({
     loadPreset,
     updateFromJson,
     addElement,
+    addElementAt,
     deleteSelected,
     moveSelected,
     commitDrag,
@@ -476,6 +477,7 @@ function EditorInner({
             onResizeElement={resizeElement}
             onResizeEnd={commitResize}
             onDoubleClickElement={handleDoubleClickElement}
+            onDropElement={addElementAt}
           />
           {/* Inline text edit overlay */}
           {editingElement && (

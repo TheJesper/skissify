@@ -221,13 +221,27 @@ function ElementThumb({
     draw();
   }, [draw]);
 
+  const handleDragStart = useCallback(
+    (e: React.DragEvent<HTMLButtonElement>) => {
+      e.dataTransfer.setData("text/x-skissify-element", elementType);
+      e.dataTransfer.effectAllowed = "copy";
+      // Use the canvas thumbnail as the drag ghost image
+      if (canvasRef.current) {
+        e.dataTransfer.setDragImage(canvasRef.current, THUMB_SIZE / 2, THUMB_SIZE / 2);
+      }
+    },
+    [elementType]
+  );
+
   if (!preview) return null;
 
   return (
     <button
+      draggable
+      onDragStart={handleDragStart}
       onClick={() => onAdd(elementType)}
-      title={`Add ${preview.label}`}
-      className="flex flex-col items-center gap-0.5 p-1 rounded-lg transition-all hover:scale-105 active:scale-95 border border-transparent hover:border-[#93a1a1] hover:bg-[#fdf6e3]"
+      title={`Add ${preview.label} — click to add at center, drag to place anywhere`}
+      className="flex flex-col items-center gap-0.5 p-1 rounded-lg transition-all hover:scale-105 active:scale-95 border border-transparent hover:border-[#93a1a1] hover:bg-[#fdf6e3] cursor-grab active:cursor-grabbing"
       style={{ minWidth: 0 }}
     >
       <canvas
@@ -235,7 +249,7 @@ function ElementThumb({
         width={THUMB_SIZE}
         height={THUMB_SIZE}
         className="rounded shadow-sm border border-[#d0c9b8]"
-        style={{ width: THUMB_SIZE, height: THUMB_SIZE, display: "block" }}
+        style={{ width: THUMB_SIZE, height: THUMB_SIZE, display: "block", pointerEvents: "none" }}
       />
       <span className="text-[9px] text-[#93a1a1] font-medium leading-none mt-0.5 truncate w-full text-center">
         {preview.label}
