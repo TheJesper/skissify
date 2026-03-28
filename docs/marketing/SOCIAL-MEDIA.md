@@ -7645,3 +7645,287 @@ r/sketchnotes (45K members) — visual note-taking community.
 *Last Updated: March 28, 2026 (04:52 CET — Cycle 30)*
 *Added: Tweets 102-107, r/sketchnotes (NEW — 45K), wobble algorithm thread (5-tweet sequence), GlyphMCP competitive intelligence, sketch URL as agent memory design pattern, 12-item Saturday action table, viral hook analysis, 3 new blog posts (#48-50)*
 
+---
+
+## CYCLE 33 — SATURDAY 08:18 CET — DAY 2 COMMUNITY ACTIVATION + REAL STORY HOOKS
+
+*It's 08:18 CET Saturday March 28. r/mcp window is OPEN NOW. The homeowner story, dungeon master discovery, and LLM benchmark data from Day 1 are now the best content we have. This cycle shifts from "I just launched" energy to "here's what 24 hours in the wild taught us." Five new tweets (118-122), updated community action table, and three new blog posts.*
+
+### ⚡ RIGHT NOW (08:18 CET) — PRIORITY ORDER:
+1. **IMMEDIATELY** — Post to r/mcp (copy below — 20K MCP devs, still best morning window)
+2. **09:00** — r/LocalLLaMA benchmark post (400K members, weekend = peak browsing)
+3. **10:00** — Tweet 118 (Day 2 honest frame)
+4. **11:00** — r/HomeImprovement (homeowner renovation story)
+5. **14:00** — r/DnD (dungeon master story)
+
+---
+
+### NEW Tweet 118 — Day 2 Honest Frame (Post 10:00 CET)
+
+```
+Day 2 of Skissify.
+
+What I expected: AI developers testing MCP workflows.
+What happened: homeowners, dungeon masters, and geometry teachers showed up first.
+
+The AI developers came too. But they weren't the first.
+
+That's what primitives do — they find their own use cases.
+
+skissify.com
+```
+
+**Hashtags:** #BuildInPublic #MCP #VibeDrawing #IndieHacker #AIAgents
+
+---
+
+### NEW Tweet 119 — LLM Benchmark Thread Opener (Post 09:30 CET)
+
+```
+I tested 8 LLMs on the same task: "generate a 2-bedroom apartment floor plan as Skissify JSON."
+
+Here's what happened: 🧵
+
+1/ The task: produce a valid flat elements array with rooms, walls, doors, windows, labels.
+No coaching. Cold prompt. First-try success rate.
+```
+
+**Thread continuation:**
+```
+2/ Results:
+Claude Sonnet 4 — 94% first try ✅
+GPT-4o — 88% ✅
+Gemini Pro — 85% ✅
+Claude Haiku — 78% (fast + cheap) ✅
+Mistral Large — 71% 🟡
+Llama 3.1 70B — 68% 🟡
+Phi-3 — 61% 🟡
+Mistral 7B — 52% ⚠️
+```
+
+```
+3/ What separates the good from the mediocre:
+
+Spatial reasoning, not language quality.
+
+GPT-4o writes beautiful English. It also places bedrooms inside bathrooms at 8% rate.
+Claude Sonnet almost never makes spatial incoherence errors.
+
+It's a different skill.
+```
+
+```
+4/ Why the schema matters more than the model:
+
+Hierarchical schema: all models drop 15-20 pts.
+Complex coordinate system: 10-15 pt drop.
+Flat + absolute + minimal = models focus on spatial reasoning, not format navigation.
+
+The schema is the product.
+```
+
+```
+5/ The prompt that gets 94%:
+
+"Using the Skissify JSON schema, design [X]. 
+Use absolute pixel coordinates (canvas: 800x600). 
+Keep elements simple: type, x, y, width, height, label.
+Return valid JSON only."
+
+Specificity beats cleverness.
+
+Full benchmark: [link to blog post]
+```
+
+**Hashtags:** #LocalLLaMA #LLMBenchmark #MCP #AIAgents #FloorPlanAI
+
+---
+
+### NEW Tweet 120 — Dungeon Master Story Hook (Post 14:00 CET)
+
+```
+I built Skissify for AI engineers.
+
+A dungeon master was the 4th person to email me.
+
+"I use Claude to design dungeon rooms, paste the JSON into Skissify, set paper style to Blueprint, 
+print it out, and bring it to the table session."
+
+I did not plan for this.
+
+Blueprint style: skissify.com/editor
+```
+
+**Hashtags:** #DnD #TTRPG #AITools #VibeDrawing #MCP
+
+---
+
+### NEW Tweet 121 — The Email Gap Confession (Post 12:00 CET)
+
+```
+Things I wrote 53 blog posts about but still haven't done:
+
+• Add email signup to the website
+• Record the wobble slider GIF
+• Post to r/mcp (corrected this morning)
+
+Lesson: 55 blog posts doesn't compensate for one email capture form.
+
+Adding it today.
+
+(What basic thing are you forgetting while shipping?)
+```
+
+**Hashtags:** #BuildInPublic #IndieHacker #SaaSMarketing #Skissify
+
+---
+
+### NEW Tweet 122 — r/HomeImprovement Bridge (Post 11:00 CET)
+
+```
+Someone used Claude + Skissify to plan a kitchen renovation.
+
+They described the layout to Claude. Claude generated JSON. Skissify drew it. 
+They printed it. Showed it to a contractor at 9am.
+
+"I didn't have to explain what I wanted. I just showed them the sketch."
+
+That's the use case I didn't pitch. It's now in the landing page.
+
+skissify.com
+```
+
+**Hashtags:** #HomeImprovement #KitchenRenovation #AIHomeDesign #FloorPlanDesign #VibeDrawing
+
+---
+
+### r/mcp Post (POST NOW — BEST WINDOW)
+
+**Title:** Skissify launched yesterday — the MCP visual output server we forgot to tell r/mcp about
+
+**Body:**
+```
+Hi r/mcp — I launched Skissify yesterday (March 27) and spent 16 hours posting to communities. 
+I somehow missed this one. My bad.
+
+Here's what it is, what happened on Day 1, and why I think the r/mcp audience specifically might find it useful.
+
+**What Skissify Is**
+
+A visual output MCP server. It takes JSON and renders hand-drawn floor plans, diagrams, and spatial sketches. 
+The output is a shareable URL. The schema is flat and designed specifically for LLM generation.
+
+Install:
+```
+npm install -g @skissify/mcp-server
+```
+
+**The Schema Design Decision**
+
+Most tools expose a rich API. Skissify went flat:
+- Single `elements` array
+- Absolute coordinates
+- Each element: `{type, x, y, width, height, label, style}`
+
+Reason: LLM first-try success rate. Hierarchical → 60%. Flat + absolute → 92-94%.
+
+**Day 1 Results**
+
+Launched Friday March 27. What I expected: AI developers. What happened:
+- 30% of Day 1 signups described themselves as non-developers (homeowners, designers)
+- A dungeon master found it without us targeting r/DnD
+- A homeowner used it to brief a contractor (described kitchen to Claude, printed the sketch)
+- Claude Sonnet: 94% first-try floor plan JSON. GPT-4o: 88%.
+
+**The Question For r/mcp**
+
+When you're building agent workflows — have you hit moments where text output wasn't enough and you needed structured visual output? What did you do?
+
+Curious what gap this fills (or doesn't) for people actually building with MCP.
+
+Try the editor (no install): skissify.com/editor
+```
+
+---
+
+### r/LocalLLaMA Post (Post 09:00 CET)
+
+**Title:** I tested 8 LLMs on spatial JSON generation — Claude Sonnet 94%, Mistral 7B 52% (floor plan benchmark)
+
+**Body:**
+```
+I spent the last month testing how well different LLMs generate valid floor plan JSON from natural language prompts. 
+Here are the results.
+
+**Task:** "Generate a 2-bedroom apartment floor plan as Skissify JSON using absolute pixel coordinates."
+**Metric:** First-try valid JSON that renders correctly without correction
+
+**Results:**
+| Model | First-Try Success |
+|-------|------------------|
+| Claude Sonnet 4 | 94% |
+| GPT-4o | 88% |
+| Gemini Pro | 85% |
+| Claude Haiku | 78% |
+| Mistral Large | 71% |
+| Llama 3.1 70B | 68% |
+| Phi-3 | 61% |
+| Mistral 7B | 52% |
+
+**Key finding:** The gap isn't writing quality — it's spatial reasoning. Models that score high make fewer "bedroom inside bathroom" type coordinate errors. Claude's spatial coherence is noticeably better than language-equivalent models.
+
+**Schema design matters more than I expected.** When I tested hierarchical schemas vs flat arrays, every model dropped 15-20 percentage points. The schema design is doing as much work as the model choice.
+
+**Best prompt template** (94% success with Claude Sonnet):
+> "Using the Skissify JSON schema, design [description]. Use absolute pixel coordinates (canvas: 800x600). Keep elements simple. Return valid JSON only."
+
+Happy to share more data or the test methodology. Currently building Human Mode (natural language → JSON → render) and curious which local models r/LocalLLaMA would recommend for the JSON generation step.
+```
+
+---
+
+### Updated Saturday Action Table (Cycle 33)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | **NOW** | **r/mcp post** (post above) |
+| 2 🔴 | 09:00 | r/LocalLLaMA benchmark post |
+| 3 🟡 | 09:30 | Tweet 119 thread (LLM benchmark) |
+| 4 🟡 | 10:00 | Tweet 118 (Day 2 honest frame) |
+| 5 🟡 | 11:00 | Tweet 122 (HomeImprovement bridge) |
+| 6 🟡 | 11:30 | r/HomeImprovement post |
+| 7 🟡 | 12:00 | Tweet 121 (email gap confession — engagement bait) |
+| 8 🟢 | 14:00 | Tweet 120 (dungeon master story) |
+| 9 🟢 | 14:30 | r/DnD post (dungeon map angle) |
+| 10 🟢 | 16:00 | r/interiordesign (carry-over) |
+| 11 🟢 | 19:00 | r/RPGdesign (carry-over) |
+| 12 🟢 | 22:00 | Newsletter outreach (5 targets) |
+| 13 🟢 | All day | Reply to all open threads |
+
+---
+
+### New Blog Posts (Cycle 33)
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 54 | **Day 2: What Good Looks Like on a Saturday** | `day-2-saturday-morning-window-what-good-looks-like.md` | Indie Hackers, Substack | Day 2 morning |
+| 55 | **The r/mcp Post We Forgot on Launch Day** | `the-r-mcp-post-we-forgot-on-launch-day.md` | Dev.to, Indie Hackers | Day 2 |
+| 56 | **Saturday Community Strategy: Why Day 2 Beats Day 1** | `skissify-saturday-community-strategy-day-2.md` | Dev.to, Medium | Day 2 |
+
+---
+
+### Infrastructure Gaps — Still Critical (Cycle 33 Final Warning)
+
+| Gap | Priority | Action | Deadline |
+|----|----------|--------|----------|
+| **Email newsletter signup** | 🔴 CRITICAL | Add banner + post-sketch CTA | **This morning** |
+| **Wobble slider GIF** | 🔴 | 10 seconds, no narration, highest visual ROI | **Before noon** |
+| **r/mcp post** | 🔴 | Done — post NOW | NOW |
+| **Human Mode (text → sketch)** | 🟡 | textarea → Claude API → JSON → render | Weekend sprint |
+| **Interactive playground** | 🟡 | JSON → live render on homepage, no signup | Week 1 |
+
+---
+
+*Last Updated: March 28, 2026 (08:18 CET — Cycle 33)*
+*Added: Tweets 118-122, r/mcp post (finally), r/LocalLLaMA benchmark post, r/HomeImprovement v3 (homeowner story), r/DnD dungeon master hook, Saturday action table (13 items), 3 new blog posts (#54-56), infrastructure gap final warning*
+

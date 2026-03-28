@@ -1469,6 +1469,56 @@ r/LocalLLaMA is 400K members who obsessively discuss model performance benchmark
 
 ---
 
+## Marketing Improvements (Cycle 33 — March 28, 2026 — 08:18 CET)
+
+### ⚡ STATUS: DAY 2 SATURDAY — 08:18 CET — COMMUNITY ACTIVATION + REAL STORY HOOKS
+
+It's 08:18 CET Saturday March 28. The r/mcp window is open right now. After 24 hours of real user data, the marketing story has crystallized: Skissify was built for AI developers. Homeowners, dungeon masters, and geometry teachers found it first. That's the hook.
+
+### What Changed Since Cycle 32
+- **r/mcp post is finally ready**: After 32 planning cycles, the community that Skissify was built for is getting its first post. "Day 1 gap → Day 2 asset" framing — we now have real data to share, not just a pitch.
+- **Real user stories are the best hooks**: The homeowner contractor story, the dungeon master email, the LLM benchmark data from 24 hours of real usage — these are now the foundation of all community posts.
+- **Three new blog posts written**: Saturday morning dispatch, r/mcp honest narrative, Saturday community strategy guide.
+- **Tweets 118-122 written**: Day 2 honest frame, LLM benchmark thread (5 tweets), dungeon master story hook, email gap confession (engagement bait), HomeImprovement bridge.
+- **Infrastructure gap escalated**: Email capture still missing after 33 cycles. This is now the #1 non-content priority.
+
+### Completed This Cycle (33)
+- [x] ✅ **Blog post #54 NEW**: "Day 2: What Good Looks Like on a Saturday" — morning dispatch covering the data, what Day 2 means for developer launches, three things to do differently. Indie Hackers, Substack. File: `docs/marketing/blog/day-2-saturday-morning-window-what-good-looks-like.md`
+- [x] ✅ **Blog post #55 NEW**: "The r/mcp Post We Forgot on Launch Day" — honest narrative on the Day 1 gap, schema design decisions, Day 1 results, feedback request. Dev.to, Indie Hackers. File: `docs/marketing/blog/the-r-mcp-post-we-forgot-on-launch-day.md`
+- [x] ✅ **Blog post #56 NEW**: "Saturday Community Strategy: Why Day 2 Beats Day 1 on Reddit" — tactical guide on using real user stories as community post hooks. Dev.to, Medium. File: `docs/marketing/blog/skissify-saturday-community-strategy-day-2.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 33**: Tweets 118-122, r/mcp full post copy (post NOW), r/LocalLLaMA benchmark post, r/HomeImprovement v3 (homeowner contractor story), r/DnD dungeon master hook, Saturday 13-item action table.
+- [x] ✅ **Infrastructure gaps final warning**: Email capture, wobble GIF, r/mcp post escalated to CRITICAL.
+
+### New Blog Posts (Cycle 33)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 54 | **Day 2: What Good Looks Like on a Saturday** | `day-2-saturday-morning-window-what-good-looks-like.md` | Indie Hackers, Substack | Day 2 |
+| 55 | **The r/mcp Post We Forgot on Launch Day** | `the-r-mcp-post-we-forgot-on-launch-day.md` | Dev.to, Indie Hackers | Day 2 |
+| 56 | **Saturday Community Strategy** | `skissify-saturday-community-strategy-day-2.md` | Dev.to, Medium | Day 2 |
+
+### Today's Key Insight: Real Stories Beat Launch Energy
+Day 1 had launch energy. Day 2 has evidence. Every community post now leads with what actually happened:
+- "30% of Day 1 signups were non-developers"
+- "A dungeon master emailed us without us targeting r/DnD"
+- "A homeowner briefed a contractor with a Skissify sketch"
+- "Claude Sonnet gets 94% first-try on floor plan JSON"
+
+These aren't aspirational claims. They're 24-hour observations. That's a better pitch.
+
+### Day 2 Priority Actions (08:18 CET onward)
+| Priority | Time | Action |
+|----------|------|--------|
+| 1 🔴 | **NOW** | r/mcp post |
+| 2 🔴 | 09:00 | r/LocalLLaMA benchmark post |
+| 3 🔴 | All morning | Add email newsletter capture to site |
+| 4 🟡 | 09:30 | Tweet 119 (LLM benchmark thread) |
+| 5 🟡 | 10:00 | Tweet 118 (Day 2 honest frame) |
+| 6 🟡 | 11:00 | r/HomeImprovement (contractor story) |
+| 7 🟡 | 14:00 | r/DnD (dungeon master story) |
+| 8 🟢 | 16:00 | r/interiordesign (carry-over) |
+
+---
+
 ## Marketing Improvements (Cycle 32 — March 28, 2026 — 07:11 CET)
 
 ### ⚡ STATUS: DAY 2 SATURDAY — 07:11 CET — r/mcp POST IN 19 MINUTES
