@@ -360,19 +360,22 @@ function computeBoundingBox(
   return { minX, minY, maxX, maxY };
 }
 
-/** Centers and scales elements to fit within paper, capped at scale=1 */
-function centerElements(
-  ctx: CanvasRenderingContext2D,
+/**
+ * Compute the centering transform that maps element-space coords to canvas-space coords.
+ * Returns { tx, ty, scale } where the transform is: canvasX = elementX * scale + tx
+ * Exported so Canvas.tsx can use the same transform for hit-testing and selection rendering.
+ */
+export function computeCenterTransform(
   elements: SketchElement[],
   w: number, h: number,
   pad: number = 32
-): void {
+): { tx: number; ty: number; scale: number } {
   const bbox = computeBoundingBox(elements);
-  if (!bbox) return;
+  if (!bbox) return { tx: 0, ty: 0, scale: 1 };
 
   const contentW = bbox.maxX - bbox.minX;
   const contentH = bbox.maxY - bbox.minY;
-  if (contentW <= 0 || contentH <= 0) return;
+  if (contentW <= 0 || contentH <= 0) return { tx: 0, ty: 0, scale: 1 };
 
   const availW = w - pad * 2;
   const availH = h - pad * 2;
@@ -383,6 +386,17 @@ function centerElements(
   const tx = w / 2 - cx * scale;
   const ty = h / 2 - cy * scale;
 
+  return { tx, ty, scale };
+}
+
+/** Centers and scales elements to fit within paper, capped at scale=1 */
+function centerElements(
+  ctx: CanvasRenderingContext2D,
+  elements: SketchElement[],
+  w: number, h: number,
+  pad: number = 32
+): void {
+  const { tx, ty, scale } = computeCenterTransform(elements, w, h, pad);
   ctx.translate(tx, ty);
   if (scale < 1) ctx.scale(scale, scale);
 }

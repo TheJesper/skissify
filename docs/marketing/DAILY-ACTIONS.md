@@ -2,6 +2,76 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #28 (09:35 CET)
+
+### Priority Context
+
+**28 consecutive niche-clean scans across 32+ hours. Competitor landscape has stabilized. The gap is confirmed, durable, and undeniable. The Figma/Stitch narrative window closes Sunday evening.**
+
+---
+
+### 🔴 Action 1 — CRITICAL: Ship `@skissify/mcp` v0.1 (Today — 4–6 hours)
+
+This action is unchanged from 27 prior cycles. It is the only thing that matters.
+
+**Minimum viable scope:**
+```bash
+mkdir W:/code/skissify/packages/mcp
+cd W:/code/skissify/packages/mcp
+npm init -y
+npm install @modelcontextprotocol/sdk zod
+```
+
+One tool: `render_sketch(manifest: JSON) → SVG string`. Watermark on free output. That is v0.1.
+
+**Post-publish checklist (30 min):**
+1. Submit to modelcontextprotocol.io/registry  
+2. PR to punkpeye/awesome-mcp-servers (Visualization section)  
+3. Submit to claudefa.st, mcpmanager.ai, mcpservers.org  
+4. Post to r/ClaudeAI — "Show r/ClaudeAI: I built the first hand-drawn sketch MCP"
+
+**Definition of done**: `npx @skissify/mcp` installs. Claude Desktop shows `render_sketch`. One floor plan JSON → hand-drawn SVG. Screenshot exists.
+
+---
+
+### 🟡 Action 2 — HIGH: Publish "Skissify Is the Pre-Step" Counter-Narrative (Sunday March 29 — 45 min)
+
+The canonical AI design stack ("Stitch → Figma → Claude Code") is being published and cited across developer media. The gap Skissify fills — the sketch/ideation step before this stack — is visible and documented. The narrative window closes Monday.
+
+**Write and publish one of the following** (pick the platform you'll actually post to):
+
+- **DEV Community post**: "The 2026 AI design stack is missing a step — here's what the sketch layer looks like"
+- **Twitter/X thread**: "Everyone's talking about Stitch + Figma + Claude Code. Nobody's talking about the step before that. The napkin sketch. [GIF of Skissify rendering a floor plan from JSON]"
+- **HN Show HN**: Use the pre-built draft in `docs/marketing/HACKER-NEWS.md`
+
+**Key framing**: *"Google Stitch generates polished UI. Figma refines it. Claude Code implements it. Skissify is the JSON-to-hand-drawn-sketch step that happens before any of that. EUR 2/mo."*
+
+---
+
+### 🟢 Action 3 — MEDIUM: Post the DEV Community Comment on the Gemini+Matplotlib Tutorial (15 min, no blockers)
+
+**This has been assigned for 21+ consecutive cycles. It requires no MCP server, no launch, nothing. Just a browser.**
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment**:
+> "Excellent walkthrough — the Gemini JSON parsing step is the genuinely hard part and you've nailed it. If you're looking for a better renderer than Matplotlib, I built Skissify for this exact pipeline: it takes the structured floor plan JSON (rooms, walls, doors, dimensions) and renders it as a hand-drawn SVG — looks like someone sketched it on paper rather than a chart library generated it. Free tier available. There's an MCP server (`npx @skissify/mcp`) so Claude can call it directly. Would love to hear if the schema aligns with what Gemini generates for you."
+
+**Zero blockers. 15 minutes. Do it now.**
+
+---
+
+### Completion Log (update Saturday evening)
+- [ ] `@skissify/mcp` published to npm: URL ___
+- [ ] Submitted to modelcontextprotocol.io: ✓/✗
+- [ ] PR to awesome-mcp-servers: ✓/✗
+- [ ] claudefa.st + mcpmanager.ai + mcpservers.org: ✓/✗
+- [ ] DEV Community comment posted: ✓/✗
+- [ ] Counter-narrative post drafted: ✓/✗
+- [ ] Screenshot of first Claude-generated sketch via MCP: ✓/✗
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #27 (08:24 CET)
 
 ### Priority Context

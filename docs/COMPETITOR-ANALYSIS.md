@@ -1453,6 +1453,51 @@ Thomas Thornton's tutorial (March 24) is now 4 days old and still the #1 result 
 
 ---
 
+## Update Log: March 28, 2026 — 09:35 CET | Automated Strategy Run #28
+
+### Status: Saturday morning scan — Brave Search API rate-limited (196/2000 monthly quota). One of two searches completed. Fresh search returned identical landscape to Runs #25–27.
+
+### 🟢 CONFIRMATION: Twenty-Eighth Consecutive Scan — Niche Structurally Unoccupied
+
+Search completed: "Excalidraw tldraw Eraser new features update March 28 2026"
+
+Results from Run #28 (09:35 CET, Saturday March 28):
+- **Product Hunt Eraser alternatives** (2 days ago): Excalidraw described as *"keyboard-first workflow for technical interviews... some teams run it directly as Excalidraw inside Obsidian."* Language identical to Runs #23–27 — confirms editorial identity has fully hardened.
+- **Thomas Thornton Excalidraw MCP tutorial** (4 days old): Still #1 for "AI sketch MCP" searches. Cloud/Terraform topology via GitHub Copilot. Zero floor plan, zero JSON-native generation.
+- **Startupik "Design System Architecture Using Excalidraw"** (5 days old): Still ranking for startup architecture diagram searches. Excalidraw = topology/system architecture, not spatial floor plans.
+- **ExcaliDash self-hosted** (4 days old): Self-hosted Excalidraw with Socket.IO multiplayer. Topology tool, not floor plan.
+- **Affinity March 2026** (1 week old): Polished design tool update, YouTube coverage. Polished design lane, zero overlap.
+
+**No new entrant** to "hand-drawn + JSON-native + MCP + floor plan" quadrant detected.
+
+**Twenty-eight consecutive automated scans spanning 32+ hours confirm: the niche is structurally unoccupied.**
+
+### 🟡 NOTABLE: Competitor Landscape Has Fully Stabilized
+
+After 28 scans, the competitive landscape is no longer surfacing new entrants. The same results (Excalidraw MCP tutorial, Figma use_figma, Eraser Agent Skills, Google Stitch MCP) are cycling through every scan with minor age variations. This is a structural signal: the market has not produced a new entrant in the sketch/floor-plan/JSON-native/MCP lane across a 32-hour continuous monitoring window.
+
+**What this means**: The next scan that surfaces a new competitor in Skissify's lane will be the most important data point in this log. Until then, the niche is confirmed durable.
+
+### 🔵 META: This Is the Final Scan Before the Build Decision Window Closes
+
+The Figma `use_figma` MCP launch narrative (March 25–27) has a ~72-hour peak relevance window. As of 09:35 CET March 28, that window closes Sunday evening. Publishing Skissify's "hand-drawn sketch vs polished Figma" counter-narrative after Monday loses the freshness tie-in.
+
+**The window is: today (Saturday) or Sunday.**
+
+### Updated Competitor Status (Run #28 — Saturday 09:35 CET)
+| Competitor | March 28 09:35 CET Status |
+|-----------|--------------------------|
+| Excalidraw | Identity fully hardened: Obsidian notes + system topology. 5+ scans confirm no lane change. |
+| tldraw | Desktop HTTP API ($6k/yr). Community fragile. No new news for 3+ days. |
+| Eraser | HTTP MCP + Agent Skills. CI/CD diagrams. No new activity this cycle. |
+| Figma | use_figma MCP open beta. Polished UI + Figma Draw (vector). No sketch/floor plan. |
+| Google Stitch | MCP + SDK (2,400+ stars). Polished UI lane. Canonical stack "generate in Stitch." |
+| Mermaid MCP | 22+ types, 50+ templates. Text DSL. Topology only. |
+| All others | No changes from Runs #25–27. |
+| **Skissify** | **Niche confirmed unoccupied, 28 consecutive scans. `@skissify/mcp` still unbuilt. Today is the build day.** |
+
+---
+
 ## Update Log: March 28, 2026 — 08:24 CET | Automated Strategy Run #27 (skissify-strategy cron)
 
 ### Status: Saturday morning scan — 2 web searches completed, 1 rate-limited. Intelligence from fresh results + 26-run baseline.

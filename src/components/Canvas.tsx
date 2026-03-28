@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useCallback, useState } from "react";
 import { SketchData, SketchElement } from "@/lib/types";
-import { renderSketch } from "@/lib/renderer";
+import { renderSketch, computeCenterTransform } from "@/lib/renderer";
 
 // Type-safe accessors for union element types
 type AnyEl = Record<string, unknown>;
@@ -294,11 +294,16 @@ export default function Canvas({
       return;
     }
 
-    // Draw selection highlights
+    // Draw selection highlights and resize handles in element-space (apply centering transform)
+    const ct = computeCenterTransform(sketch.elements, canvasW, canvasH);
+
     if (selectedElements.size > 0) {
       ctx.save();
+      // Apply the same centering transform used by the renderer so selection boxes align with visual elements
+      ctx.translate(ct.tx, ct.ty);
+      if (ct.scale < 1) ctx.scale(ct.scale, ct.scale);
       ctx.strokeStyle = "#268bd2";
-      ctx.lineWidth = 2;
+      ctx.lineWidth = 2 / ct.scale; // keep stroke visually consistent
       ctx.setLineDash([4, 4]);
       ctx.globalAlpha = 0.6;
 
@@ -376,14 +381,17 @@ export default function Canvas({
         const handles = getResizeHandles(el);
         if (handles) {
           ctx.save();
-          const HSIZE = 6;
+          // Apply centering transform so handles align with visual element positions
+          ctx.translate(ct.tx, ct.ty);
+          if (ct.scale < 1) ctx.scale(ct.scale, ct.scale);
+          const HSIZE = 6 / ct.scale; // scale-compensated handle size
           for (const h of handles) {
             // Shadow for contrast
             ctx.shadowColor = "rgba(0,0,0,0.35)";
             ctx.shadowBlur = 4;
             ctx.fillStyle = "#fdf6e3";
             ctx.strokeStyle = "#268bd2";
-            ctx.lineWidth = 1.5;
+            ctx.lineWidth = 1.5 / ct.scale;
             ctx.setLineDash([]);
             ctx.globalAlpha = 1;
             ctx.beginPath();
@@ -409,19 +417,30 @@ export default function Canvas({
   }, [draw, redrawKey]);
 
   // Convert client coords to canvas coords using the canvas bounding rect
+  /**
+   * Convert screen client coordinates → element-space coordinates.
+   * Accounts for CSS zoom/pan, canvas CSS scaling, AND the centering transform
+   * applied by the renderer so that hit-testing aligns with visual element positions.
+   */
   const clientToCanvas = useCallback(
     (clientX: number, clientY: number): { mx: number; my: number } => {
       const canvas = canvasRef.current;
       if (!canvas) return { mx: 0, my: 0 };
       const rect = canvas.getBoundingClientRect();
+      // Canvas pixel = (client - rect.left) * (canvasW / rect.width)
       const scaleX = canvasW / rect.width;
       const scaleY = canvasH / rect.height;
+      const canvasPx = (clientX - rect.left) * scaleX;
+      const canvasPy = (clientY - rect.top) * scaleY;
+      // Apply inverse of centering transform: element = (canvasPx - tx) / scale
+      const ct = computeCenterTransform(sketch.elements, canvasW, canvasH);
+      const s = ct.scale > 0 ? ct.scale : 1;
       return {
-        mx: (clientX - rect.left) * scaleX,
-        my: (clientY - rect.top) * scaleY,
+        mx: (canvasPx - ct.tx) / s,
+        my: (canvasPy - ct.ty) / s,
       };
     },
-    [canvasW, canvasH]
+    [canvasW, canvasH, sketch.elements]
   );
 
   /** Get handles for the currently selected element (if exactly 1 selected, non-rotated) */
@@ -646,7 +665,12 @@ export default function Canvas({
         }
 
         if (isDraggingElements.current) {
-          onMoveSelected(dx / zoom, dy / zoom);
+          // Convert screen delta to element-space delta:
+          // screen → canvas pixel: divide by zoom (CSS scale)
+          // canvas pixel → element space: divide by centerScale
+          const ct = computeCenterTransform(sketch.elements, canvasW, canvasH);
+          const centerScale = ct.scale > 0 ? ct.scale : 1;
+          onMoveSelected(dx / zoom / centerScale, dy / zoom / centerScale);
           lastMouse.current = { x: e.clientX, y: e.clientY };
         }
         return;
@@ -700,14 +724,15 @@ export default function Canvas({
 
         const canvas = canvasRef.current;
         if (canvas) {
-          const rect = canvas.getBoundingClientRect();
-          const scaleX = canvasW / rect.width;
-          const scaleY = canvasH / rect.height;
-
-          const x1 = (Math.min(e.clientX, boxStartScreen.current.x) - rect.left) * scaleX;
-          const y1 = (Math.min(e.clientY, boxStartScreen.current.y) - rect.top) * scaleY;
-          const x2 = (Math.max(e.clientX, boxStartScreen.current.x) - rect.left) * scaleX;
-          const y2 = (Math.max(e.clientY, boxStartScreen.current.y) - rect.top) * scaleY;
+          // Convert box corners to element-space coordinates (same transform as clientToCanvas)
+          const { mx: x1, my: y1 } = clientToCanvas(
+            Math.min(e.clientX, boxStartScreen.current.x),
+            Math.min(e.clientY, boxStartScreen.current.y)
+          );
+          const { mx: x2, my: y2 } = clientToCanvas(
+            Math.max(e.clientX, boxStartScreen.current.x),
+            Math.max(e.clientY, boxStartScreen.current.y)
+          );
 
           const boxSelected = new Set<number>();
           sketch.elements.forEach((el, i) => {
@@ -736,7 +761,7 @@ export default function Canvas({
         onDragEnd();
       }
     },
-    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd]
+    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd, clientToCanvas]
   );
 
   const handleMouseLeave = useCallback(() => {
