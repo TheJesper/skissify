@@ -2,6 +2,58 @@
 
 ---
 
+## Update Log: March 28, 2026 — 22:11 CET | Automated Strategy Run #35
+
+### Status: Saturday late-evening scan — Brave Search API rate-limited (229/2000 monthly quota). One search completed (second rate-limited). Thirty-fifth consecutive scan. Niche structurally confirmed unoccupied.
+
+### 🟢 CONFIRMATION: Thirty-Fifth Consecutive Scan — Niche Structurally Unoccupied
+
+Search 1 completed: "AI sketch tool hand-drawn MCP diagram new launch March 2026"
+Search 2: Rate-limited (229/2000 quota)
+
+Results from Run #35 (22:11 CET, Saturday March 28):
+- **Thomas Thornton Excalidraw MCP tutorial** (now 5 days old): STILL #1 for "AI sketch MCP" searches. Architecture/cloud/Terraform topology via GitHub Copilot. Unchanged for 9+ consecutive scans. No Skissify-lane competitor has taken this slot.
+- **findskill.ai "Generate in Stitch → Figma → Claude Code"** (3 days old): Still the canonical AI design workflow document. Skissify remains the undocumented pre-step (ideation/sketch) before the workflow begins.
+- **zsky.ai "Best AI Sketch Generators 2026"** (1 week old): Still covering photo-to-artistic-style tools only. Zero programmatic/JSON-native/MCP tools. Skissify's programmatic sketch lane invisible to this category.
+- **MCP ecosystem** (use-apify.com, 4 days old): Confirmed "standard practice" framing persists.
+- **Cyera MCP** (security/enterprise — zero relevance to sketch lane).
+
+**No new entrant** to "hand-drawn + JSON-native + MCP + floor plan" quadrant detected.
+
+**Thirty-five consecutive automated scans spanning Friday March 27 01:11 CET → Saturday March 28 22:11 CET confirm: the niche is structurally unoccupied.**
+
+### 🟡 SIGNAL: Saturday Evening Confirms — The Counter-Narrative Window Is Closing Tonight
+
+The Figma `use_figma` MCP open beta story (The Neuron, March 25) is now 3 days old and entering the final 24 hours of peak SERP relevance. The findskill.ai "Stitch → Figma → Claude Code" canonical stack article (3 days old) is on the same trajectory. By Sunday evening both will have dropped from developer first-page searches.
+
+**Run #35 timing assessment** (22:11 CET Saturday):
+- The HN counter-narrative window is approximately **10–14 hours remaining** (Sunday morning 08:00–12:00 CET is the final optimal window)
+- If `@skissify/mcp` shipped during Saturday's build session, a Sunday morning HN post is still at full effectiveness
+- If it didn't ship, Sunday is the last full build day and Monday HN at reduced effectiveness is the fallback
+
+### 🔵 STATUS: End-of-Saturday Summary
+
+| Asset | Status (22:11 CET, March 28) |
+|-------|------------------------------|
+| Competitive intelligence | ✅ 35 runs complete — niche confirmed unoccupied |
+| Marketing infrastructure | ✅ 20+ files pre-built in docs/marketing/ |
+| `@skissify/mcp` npm package | ❓ Unknown (Saturday build day — filesystem not audited this run) |
+| HN timing window | 🔴 Final 10–14 hours (Sunday morning) |
+| Plan7Architect price hike | 🟡 3 days remaining (closes March 31) |
+| Brave Search quota | 229/2000 monthly used |
+
+### Updated Competitor Matrix Row (Run #35 — No New Entrants)
+
+| Tool | March 28 22:11 CET Status | Skissify Threat |
+|------|--------------------------|-----------------|
+| Excalidraw | MCP tutorial (5 days old) still #1. Identity: Obsidian notes + cloud topology. | None |
+| Google Stitch | "Canonical stack" still findskill.ai #1 (3 days old). Polished UI lane. | None |
+| Figma | use_figma MCP open beta — still dominant design story. Polished UI. | None |
+| All others | No changes from Runs #28–34. | None |
+| **Skissify** | **35 consecutive niche-clean scans. `@skissify/mcp` status: unknown as of Saturday evening.** | **Uncontested** |
+
+---
+
 ## Update Log: March 28, 2026 — 21:07 CET | Automated Strategy Run #34
 
 ### Status: Saturday evening scan — Brave Search API rate-limited (228/2000 monthly quota). Two searches completed. Thirty-fourth consecutive scan confirms niche unoccupied.

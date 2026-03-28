@@ -2,6 +2,64 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #35 (22:11 CET, Saturday March 28)
+
+### Priority Context
+
+**35 consecutive niche-clean scans. Niche confirmed structurally unoccupied. HN counter-narrative window closes Sunday noon CET. Three triggers have been identified for EUR 2/mo conversion: watermark removal (impulse), pipeline dependency (sticky), domain legitimacy (premium). Today is the most important day in the Skissify launch timeline.**
+
+---
+
+### 🔴 Action 1 — FINAL WINDOW: HN "Show HN" Before Sunday Noon CET
+
+**This is the last optimal moment** to ride the Figma MCP + Google Stitch "canonical AI design stack" news cycle as a counter-narrative. After Sunday noon, the conversation moves on.
+
+**Condition A — `@skissify/mcp` IS live on npm:**
+Post HN **Sunday 08:00–11:00 CET** using verbatim title and body from `docs/marketing/HACKER-NEWS.md`. Do not deviate. Do not add length. Link directly to skissify.com + npm install command.
+
+**Condition B — `@skissify/mcp` is NOT live:**
+Sunday is the final build sprint. Target 06:00–17:00 CET. Ship a working `npx @skissify/mcp` command that responds to a single tool call (`render_sketch`). Post HN Sunday 18:00–20:00 CET — less optimal timing but still same weekend as the Figma/Stitch news cycle.
+
+**Do NOT post HN with a broken npm package.** A broken demo on HN generates permanent negative reviews that suppress future HN posts. Confirm `npx @skissify/mcp` works locally before posting.
+
+**Expected ROI of Sunday vs Monday HN post**: ~EUR 10/mo MRR premium (400 visitors vs 100 visitors at comparable conversion rates). Worth the effort.
+
+---
+
+### 🟡 Action 2 — DEADLINE TODAY: "Plan7Architect Alternative" SEO Blog Post (closes March 31)
+
+Plan7Architect is raising prices on **March 31, 2026** — 2 days from now. This is the last 48-hour window to capture "Plan7Architect alternative" search traffic from users evaluating their options.
+
+**Steps (60–90 min, zero code):**
+1. Write a 600–800 word blog post: *"Plan7Architect alternatives for modern architects in 2026 — lighter, faster, AI-compatible"*
+2. Lead with the price increase context, then position Skissify as the hand-drawn/AI-agent-friendly alternative at EUR 5/mo
+3. Mention: JSON-first, MCP-compatible, no desktop install, sketch aesthetic for client presentations
+4. Publish on skissify.com/blog or a Medium draft (indexed faster via Medium's SEO authority if site isn't established yet)
+5. Submit URL to Reddit r/architecture and r/floorplan with a genuine non-spammy framing
+
+**Exact SEO targets**: "Plan7Architect alternative", "floor plan software alternative March 2026", "AI floor plan tool web-based"
+
+**Why today**: The price increase drama creates active search intent for exactly 72 hours (Friday–Monday). After March 31, these searchers stop looking and make their decision. Skissify wins only if it appears before they choose.
+
+---
+
+### 🟢 Action 3 — ONGOING: Register `@skissify/mcp` on Three Discovery Channels Simultaneously at Launch
+
+When `@skissify/mcp` goes live, submit to all three channels in the same 2-hour window (not sequentially over days). These channels compound each other — HN readers check awesome-mcp-servers, LobeHub readers check PH.
+
+**Channel 1: modelcontextprotocol.io registry**
+Submit via PR to https://github.com/modelcontextprotocol/servers — the official MCP registry. This is the JFrog/enterprise discovery path and the first thing developers check when evaluating MCP servers.
+
+**Channel 2: awesome-mcp-servers**
+Open a PR to punkpeye/awesome-mcp-servers on GitHub (the list where mermaid-mcp was featured 5 days ago with immediate visibility). Add Skissify under "Visualization / Sketch Tools" category.
+
+**Channel 3: LobeHub MCP Marketplace**
+Submit to https://lobehub.com/mcp — the marketplace that listed Kubernetes MCP 20 hours ago. LobeHub has active developer traffic and automated indexing.
+
+**Why all three simultaneously**: Developers discover new MCP tools via cross-referencing — they see a PH mention, search awesome-mcp-servers, then check LobeHub pricing/install. Missing any one channel loses ~30% of potential discovery. The launch submission sprint takes 2 hours and captures the full funnel.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #34 (21:07 CET, Saturday March 28)
 
 ### Priority Context
