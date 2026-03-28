@@ -218,6 +218,7 @@ function EditorInner({
     setRenderStyle,
     reorderSelected,
     toggleLockSelected,
+    alignSelected,
     redraw,
     updateSketch,
     updateElement,
@@ -562,6 +563,7 @@ function EditorInner({
             onStrokeWidthSelected={strokeWidthSelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
+            onAlign={alignSelected}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
           />
@@ -670,6 +672,7 @@ function EditorInner({
           onStrokeWidthSelected={strokeWidthSelected}
           onToggleLock={toggleLockSelected}
           onReorder={reorderSelected}
+          onAlign={alignSelected}
           renderStyle={sketch.renderStyle}
           onRenderStyle={setRenderStyle}
         />

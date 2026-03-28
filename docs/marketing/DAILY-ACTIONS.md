@@ -2,6 +2,61 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #22 (02:40 CET, Saturday March 28)
+
+### Priority Context
+
+22 consecutive niche-clean scans. The Figma MCP + Google Stitch "vibe design" news cycle is now 4–10 days old. It will drop off HN front pages by Monday. If `@skissify/mcp` shipped Saturday, Sunday is the launch day. If it didn't ship Saturday, Sunday is the recovery build day.
+
+These three actions assume the MCP package **shipped Saturday**. If not, replace Action 1 with finishing the build.
+
+---
+
+### 🔴 Action 1 — LAUNCH: Post "Show HN" During Peak Sunday Visibility Window
+
+**Why Sunday**: HN "Show HN" traffic peaks Saturday–Sunday 9am–2pm US Eastern (3pm–8pm CET). Saturday's window closed. Sunday's is still available. This is the last weekend window before the Figma/Stitch news cycle is stale.
+
+**Post target time**: Sunday 15:00–18:00 CET
+
+**Title (use verbatim)**: `Show HN: Skissify – JSON to hand-drawn sketches, built for AI agents (MCP server, floor plans, architectural elements)`
+
+**Opening line**: "Figma MCP does polished design. Google Stitch does voice-to-UI. Skissify does the back-of-napkin moment — hand-drawn SVG from a declarative JSON manifest. Floor plans with walls, doors, windows, and dimension lines. `npx @skissify/mcp` to add it to your Claude/Cursor stack."
+
+**Link to**: `https://skissify.com` + GitHub repo (if open-sourced core)
+
+**Do NOT post without**: a working npm package, a live demo URL, and at least 5 example sketches rendered in the README.
+
+---
+
+### 🟡 Action 2 — SUBMIT: Register on Three MCP Discovery Channels (30 minutes total)
+
+In order of impact:
+
+1. **modelcontextprotocol.io registry** — Submit `@skissify/mcp` immediately after npm publish. Official registry; Claude Desktop auto-discovery pulls from here.
+   - URL: Submit via GitHub PR to `modelcontextprotocol/servers` repo
+
+2. **awesome-mcp-servers GitHub** — Open a PR to add Skissify under "Visualization / Diagrams" category.
+   - URL: https://github.com/punkpeye/awesome-mcp-servers
+   - Note: `mermaid-mcp` was just added here this week — the list is actively curated and merges fast
+
+3. **claudefa.st** — Submit via their intake form (launched March 25, 2026; actively maintained; zero sketch tools currently listed)
+   - URL: https://claudefa.st/blog/tools/mcp-extensions/best-addons
+
+---
+
+### 🟢 Action 3 — CONTENT: Comment on the DEV Community Floor Plan Tutorial (15 minutes)
+
+**Target**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+This tutorial (Google Gemini + Matplotlib floor plan pipeline) surfaces repeatedly in "floor plan JSON API" searches. The developer built the hard part (LLM → structured JSON). Skissify is the render step they're missing.
+
+**Comment draft** (non-spammy, genuine value-add):
+> "Fantastic walkthrough — this is exactly the pipeline I've been thinking about. One thing you might find useful: we just shipped Skissify (skissify.com), which takes the exact JSON format your Gemini step produces and renders it as hand-drawn SVG — walls, doors, rooms, dimension lines. There's an MCP server so Claude/Cursor can call it directly too. Would have saved you the Matplotlib gymnastics :) If you try it, curious what you think about the JSON schema compatibility."
+
+**Why this works**: Genuine answer to a real developer problem. Zero spam feel. Surfaces Skissify to exactly the right audience — developers already building what Skissify serves.
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #20 (00:20 CET, Saturday March 28)
 
 ### Priority Context

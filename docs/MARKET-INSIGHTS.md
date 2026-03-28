@@ -2,6 +2,38 @@
 
 ---
 
+## Entry: March 28, 2026 — 02:40 CET | Automated Strategy Run #22
+
+### Theme: "Skissify as the Missing Ideation Layer in the Canonical AI Design Stack"
+
+**New framing discovered this cycle** (from findskill.ai, 2 days ago):
+
+The 2026 canonical AI design workflow is crystallizing as: `Prompt → Google Stitch (sketch/polish) → Figma (refine) → Claude Code (implement)`. This stack is being written about, shared, and evangelized. It is becoming the "how we work now" mental model for AI-augmented designers.
+
+**Skissify's insight**: This stack has no dedicated **rough ideation** step. Stitch generates polished output immediately. For use cases where the goal is NOT polished UI — floor plans, architectural concepts, napkin-stage system sketches, whiteboard photos turned into clean hand-drawn renders — the stack has a gap at the very beginning.
+
+**The insertion point**: `Prompt/JSON → Skissify (rough hand-drawn sketch) → [Stitch / Figma / Claude Code]`. Skissify is the step before the stack starts — the "think with your hands" moment that precedes "make it real." This is genuinely complementary, not competitive. Skissify and Stitch serve different moments in the same creative pipeline.
+
+---
+
+#### Why This Framing Matters for EUR 2/mo
+
+1. **Complementary tools have lower sales friction than competing tools.** A developer who pays for Stitch + Figma + Claude Code will add Skissify at EUR 2/mo without a second thought — it fills a slot they didn't know was empty.
+
+2. **"Sketch before you design" is a real creative pattern.** Architects sketch on paper before CAD. Engineers whiteboard before coding. Product managers draw flows before Figma. Skissify digitizes this pre-design moment programmatically — the first tool to do so via MCP.
+
+3. **The EUR 2/mo "ideation layer" framing removes price resistance entirely.** Users don't compare EUR 2/mo to Figma's $15/mo. They compare it to the cost of a paper sketch pad (~EUR 3). The competitive frame is analog, not digital.
+
+---
+
+#### Competitive Gap Confirmed (Run #22)
+
+Search results from 02:40 CET confirm the "Stitch → Figma → Claude Code" workflow is now being published as canonical — and Skissify is absent from it entirely. This absence is both the problem (not known) and the opportunity (slot is open). The slot will be filled by whoever ships first.
+
+**22 consecutive scans. Zero competitors in the slot. Saturday March 28 is the ship day.**
+
+---
+
 ## Entry: March 28, 2026 — 00:20 CET | Automated Strategy Run #20
 
 ### Theme: "Saturday Is the Build Day — The EUR 2/mo Thesis Doesn't Need More Evidence"

@@ -43,6 +43,8 @@ interface ControlPanelProps {
   onToggleLock?: () => void;
   /** Called to reorder selected elements in z-order */
   onReorder?: (direction: "front" | "back" | "forward" | "backward") => void;
+  /** Called to align 2+ selected elements */
+  onAlign?: (mode: "left" | "right" | "top" | "bottom" | "centerH" | "centerV" | "distributeH" | "distributeV") => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -107,6 +109,7 @@ export default function ControlPanel({
   selectedLocked,
   onToggleLock,
   onReorder,
+  onAlign,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -448,6 +451,54 @@ export default function ControlPanel({
                 <span>{selectedLocked ? "🔒" : "🔓"}</span>
                 <span>{selectedLocked ? "Locked — click to unlock" : "Lock element"}</span>
               </button>
+            )}
+            {onAlign && selectedCount >= 2 && (
+              <div className="space-y-1.5">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide block">
+                  Align
+                </label>
+                {/* Row 1: align edges */}
+                <div className="grid grid-cols-6 gap-0.5">
+                  {(
+                    [
+                      { mode: "left",    title: "Align left edges",    icon: "⬅" },
+                      { mode: "centerH", title: "Center horizontally", icon: "↔" },
+                      { mode: "right",   title: "Align right edges",   icon: "➡" },
+                      { mode: "top",     title: "Align top edges",     icon: "⬆" },
+                      { mode: "centerV", title: "Center vertically",   icon: "↕" },
+                      { mode: "bottom",  title: "Align bottom edges",  icon: "⬇" },
+                    ] as const
+                  ).map(({ mode, title, icon }) => (
+                    <button
+                      key={mode}
+                      onClick={() => onAlign(mode)}
+                      title={title}
+                      className="flex items-center justify-center px-1 py-1.5 bg-[#fdf6e3] hover:bg-[#eee8d5] rounded text-sm transition-all border border-[#93a1a1]"
+                    >
+                      {icon}
+                    </button>
+                  ))}
+                </div>
+                {/* Row 2: distribute (only useful with 3+) */}
+                {selectedCount >= 3 && (
+                  <div className="grid grid-cols-2 gap-0.5">
+                    <button
+                      onClick={() => onAlign("distributeH")}
+                      title="Distribute horizontal spacing equally"
+                      className="flex items-center justify-center gap-1 px-2 py-1 bg-[#fdf6e3] hover:bg-[#eee8d5] rounded text-[10px] font-medium transition-all border border-[#93a1a1]"
+                    >
+                      ←→ Distribute H
+                    </button>
+                    <button
+                      onClick={() => onAlign("distributeV")}
+                      title="Distribute vertical spacing equally"
+                      className="flex items-center justify-center gap-1 px-2 py-1 bg-[#fdf6e3] hover:bg-[#eee8d5] rounded text-[10px] font-medium transition-all border border-[#93a1a1]"
+                    >
+                      ↑↓ Distribute V
+                    </button>
+                  </div>
+                )}
+              </div>
             )}
           </div>
         )}

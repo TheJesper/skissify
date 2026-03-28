@@ -475,6 +475,151 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [selectedElements, pushHistory]
   );
 
+  /**
+   * Align selected elements along a shared edge or axis.
+   * Requires 2+ selected elements.
+   *
+   * Align modes:
+   *   left    — align left edges to the leftmost element's left edge
+   *   right   — align right edges to the rightmost element's right edge
+   *   top     — align top edges to the topmost element's top edge
+   *   bottom  — align bottom edges to the bottommost element's bottom edge
+   *   centerH — center horizontally (vertical axis)
+   *   centerV — center vertically (horizontal axis)
+   *   distributeH — distribute equal horizontal spacing between elements
+   *   distributeV — distribute equal vertical spacing between elements
+   */
+  const alignSelected = useCallback(
+    (
+      mode:
+        | "left"
+        | "right"
+        | "top"
+        | "bottom"
+        | "centerH"
+        | "centerV"
+        | "distributeH"
+        | "distributeV"
+    ) => {
+      if (selectedElements.size < 2) return;
+
+      setSketch((prev) => {
+        const indices = [...selectedElements].sort((a, b) => a - b);
+
+        /** Get [left, top, right, bottom] for any element */
+        function bounds(el: SketchData["elements"][number]): {
+          left: number;
+          top: number;
+          right: number;
+          bottom: number;
+          cx: number;
+          cy: number;
+        } {
+          const a = el as unknown as Record<string, unknown>;
+          if ("x1" in el && "x2" in el) {
+            const x1 = a.x1 as number, y1 = a.y1 as number, x2 = a.x2 as number, y2 = a.y2 as number;
+            return {
+              left: Math.min(x1, x2), top: Math.min(y1, y2),
+              right: Math.max(x1, x2), bottom: Math.max(y1, y2),
+              cx: (x1 + x2) / 2, cy: (y1 + y2) / 2,
+            };
+          }
+          if ("x" in el && "w" in el && "h" in el) {
+            const x = a.x as number, y = a.y as number, w = a.w as number, h = a.h as number;
+            return { left: x, top: y, right: x + w, bottom: y + h, cx: x + w / 2, cy: y + h / 2 };
+          }
+          if ("cx" in el && "r" in el) {
+            const cx = (a.cx as number), cy = (a.cy as number), r = a.r as number;
+            return { left: cx - r, top: cy - r, right: cx + r, bottom: cy + r, cx, cy };
+          }
+          if ("x" in el && "y" in el) {
+            const x = a.x as number, y = a.y as number;
+            return { left: x, top: y, right: x + 40, bottom: y + 20, cx: x + 20, cy: y + 10 };
+          }
+          return { left: 0, top: 0, right: 0, bottom: 0, cx: 0, cy: 0 };
+        }
+
+        /** Translate a single element by (dx, dy) */
+        function shift(el: SketchData["elements"][number], dx: number, dy: number): SketchData["elements"][number] {
+          return translateElement(el, dx, dy);
+        }
+
+        const selEls = indices.map((i) => prev.elements[i]);
+        const selBounds = selEls.map(bounds);
+
+        const minLeft = Math.min(...selBounds.map((b) => b.left));
+        const maxRight = Math.max(...selBounds.map((b) => b.right));
+        const minTop = Math.min(...selBounds.map((b) => b.top));
+        const maxBottom = Math.max(...selBounds.map((b) => b.bottom));
+        const groupCx = (minLeft + maxRight) / 2;
+        const groupCy = (minTop + maxBottom) / 2;
+
+        const newElements = [...prev.elements];
+
+        if (mode === "distributeH") {
+          // Sort selected by their center X
+          const sorted = [...indices].sort(
+            (a, b) => bounds(prev.elements[a]).cx - bounds(prev.elements[b]).cx
+          );
+          if (sorted.length < 3) return prev; // nothing to distribute with only 2
+          const firstBounds = bounds(prev.elements[sorted[0]]);
+          const lastBounds = bounds(prev.elements[sorted[sorted.length - 1]]);
+          const totalW = selBounds.reduce((s, b) => s + (b.right - b.left), 0);
+          const span = lastBounds.right - firstBounds.left;
+          const gap = (span - totalW) / (sorted.length - 1);
+          let cursor = firstBounds.left;
+          sorted.forEach((origIdx) => {
+            const b = bounds(prev.elements[origIdx]);
+            const w = b.right - b.left;
+            const dx = cursor - b.left;
+            newElements[origIdx] = shift(newElements[origIdx], dx, 0);
+            cursor += w + gap;
+          });
+        } else if (mode === "distributeV") {
+          const sorted = [...indices].sort(
+            (a, b) => bounds(prev.elements[a]).cy - bounds(prev.elements[b]).cy
+          );
+          if (sorted.length < 3) return prev;
+          const firstBounds = bounds(prev.elements[sorted[0]]);
+          const lastBounds = bounds(prev.elements[sorted[sorted.length - 1]]);
+          const totalH = selBounds.reduce((s, b) => s + (b.bottom - b.top), 0);
+          const span = lastBounds.bottom - firstBounds.top;
+          const gap = (span - totalH) / (sorted.length - 1);
+          let cursor = firstBounds.top;
+          sorted.forEach((origIdx) => {
+            const b = bounds(prev.elements[origIdx]);
+            const h = b.bottom - b.top;
+            const dy = cursor - b.top;
+            newElements[origIdx] = shift(newElements[origIdx], 0, dy);
+            cursor += h + gap;
+          });
+        } else {
+          indices.forEach((origIdx, i) => {
+            const b = selBounds[i];
+            let dx = 0, dy = 0;
+            switch (mode) {
+              case "left":    dx = minLeft - b.left; break;
+              case "right":   dx = maxRight - b.right; break;
+              case "top":     dy = minTop - b.top; break;
+              case "bottom":  dy = maxBottom - b.bottom; break;
+              case "centerH": dx = groupCx - b.cx; break;
+              case "centerV": dy = groupCy - b.cy; break;
+            }
+            if (dx !== 0 || dy !== 0) {
+              newElements[origIdx] = shift(newElements[origIdx], dx, dy);
+            }
+          });
+        }
+
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
   /** Toggle locked state on selected elements */
   const toggleLockSelected = useCallback(() => {
     if (selectedElements.size === 0) return;
@@ -573,6 +718,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setRenderStyle,
     reorderSelected,
     toggleLockSelected,
+    alignSelected,
   };
 }
 

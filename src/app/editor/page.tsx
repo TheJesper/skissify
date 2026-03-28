@@ -144,6 +144,7 @@ function EditorInner({
     setRenderStyle,
     reorderSelected,
     toggleLockSelected,
+    alignSelected,
   } = useSketch(initialData ?? undefined, initialPreset ?? undefined);
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
@@ -453,6 +454,7 @@ function EditorInner({
             onStrokeWidthSelected={strokeWidthSelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
+            onAlign={alignSelected}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
           />
@@ -567,6 +569,7 @@ function EditorInner({
             onStrokeWidthSelected={strokeWidthSelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
+            onAlign={alignSelected}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
           />
