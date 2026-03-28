@@ -1700,3 +1700,111 @@ IBM research published this week confirms A2A and MCP are converging on a single
 
 *Last Updated: March 28, 2026 (02:32 CET — Cycle 28)*
 *Added: Blog posts #42-44, r/DnD community (NEW), r/HomeImprovement v2, Tweets 92-96, LinkedIn + Bluesky Day 2 posts, full 21-item Saturday action table, Human Mode product decision, A2A convergence monitoring note*
+
+---
+
+## Marketing Improvements (Cycle 29 — March 28, 2026 — 03:41 CET)
+
+### ⚡ STATUS: DAY 2 PRE-DAWN — SATURDAY AFTERNOON/EVENING PIPELINE FILLED
+
+It's 03:41 CET on Day 2 (Saturday, March 28). Cycle 28 was thorough for morning activation. Cycle 29 fills the afternoon/evening window and adds three new high-value content assets: a 28-hour traction report (Indie Hackers angle), a Human Mode build story (founder transparency), and a "10 things" list post (designed for wide sharing).
+
+### Key New Additions This Cycle (29)
+
+**Blog post #45 — Saturday Traction Report: 28 Hours In**
+The honest narrative post: three surprises, what worked in marketing, what's being fixed, and what Skissify actually is (Day 2 version). Best platform: Indie Hackers (primary), Substack. File: `saturday-traction-report-28-hours.md`
+
+**Blog post #46 — Human Mode: Why We're Building It in 48 Hours**
+Product decision transparency post. Three signals, the technical case, the positioning shift, ship date. Best platform: Medium, Substack, Dev.to. File: `human-mode-why-we-built-it-in-48-hours.md`
+
+**Blog post #47 — 10 Things You Can Sketch with One Claude Prompt**
+The wide-sharing list post: kitchen renovations, dungeon maps, wireframes, garden plans, screenplay blocking, server room layouts. Designed to travel beyond the developer audience. Best platform: Dev.to, Hashnode, Medium. File: `ten-things-you-can-sketch-with-one-claude-prompt.md`
+
+**Two new communities unlocked:**
+- r/interiordesign (2.8M members) — interior design use case framing
+- r/RPGdesign (80K — highly engaged TTRPG design niche) — dungeon map + feature request post
+
+**Five new tweets (97-101):**
+- Tweet 97: 10 things list hook (high share rate format)
+- Tweet 98: Human Mode decision transparency
+- Tweet 99: Garden use case surprise
+- Tweet 100: Milestone tweet (100th launch tweet) — emotional arc
+- Tweet 101: Interior design bridge
+
+**Newsletter outreach templates ready for Saturday evening send:** 5 targets with personalized angles (TLDR AI, The Rundown, Ben's Bites, Bytes.dev, Indie Hackers Newsletter).
+
+### Completed This Cycle (29)
+
+- [x] ✅ **Blog post #45 NEW**: Saturday Traction Report: 28 Hours In — honest Day 2 narrative for Indie Hackers/Substack
+- [x] ✅ **Blog post #46 NEW**: Human Mode: Why We're Building It in 48 Hours — product decision post for Medium/Substack
+- [x] ✅ **Blog post #47 NEW**: 10 Things You Can Sketch with One Claude Prompt — wide-sharing list for Dev.to/Hashnode
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 29**: Tweets 97-101, r/interiordesign post, r/RPGdesign post, newsletter templates for 5 targets, hashtag intelligence update
+- [x] ✅ **r/interiordesign unlocked**: 2.8M members, interior design concept sketching angle
+- [x] ✅ **r/RPGdesign unlocked**: 80K engaged TTRPG design niche, feature request post
+- [x] ✅ **Hashtag intelligence updated**: #VibeDraw (own this), #A2A (monitor), #ClaudeCode (active), #AgentStack (growing)
+
+### New Blog Posts (Cycle 29)
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 45 | **Saturday Traction Report: 28 Hours In** | saturday-traction-report-28-hours.md | Indie Hackers (primary), Substack | Day 2 |
+| 46 | **Human Mode: Why We're Building It in 48 Hours** | human-mode-why-we-built-it-in-48-hours.md | Medium, Substack, Dev.to | Day 2 |
+| 47 | **10 Things You Can Sketch with One Claude Prompt** | ten-things-you-can-sketch-with-one-claude-prompt.md | Dev.to, Hashnode, Medium | Day 2-3 |
+
+### New Communities (Cycle 29)
+
+| Community | Members | Angle | Post Time (CET) |
+|-----------|---------|-------|-----------------|
+| **r/interiordesign** | 2.8M | Interior concept sketches — AI describes, Skissify draws | 18:00 Saturday |
+| **r/RPGdesign** | 80K | Dungeon maps + feature request post — highly engaged | 19:00 Saturday |
+
+### Saturday Afternoon Priority Actions (14:00–22:00 CET)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🟡 | 14:30 | Tweet 97 (10 things list) |
+| 2 🟡 | 16:00 | Tweet 98 (Human Mode decision) + publish blog #47 on Dev.to |
+| 3 🟢 | 17:30 | Tweet 99 (garden use case) |
+| 4 🟢 | 18:00 | r/interiordesign post (NEW) |
+| 5 🟢 | 19:00 | r/RPGdesign post (NEW) |
+| 6 🟢 | 20:00 | Tweet 100 (milestone — 100th tweet) |
+| 7 🟢 | 21:00 | Tweet 101 (interior design bridge) |
+| 8 🟢 | 22:00 | Newsletter outreach emails (5 targets) |
+| 9 🟢 | All day | Community replies (HN, Reddit, all threads) |
+
+### Cumulative Blog Inventory (47 posts)
+
+| Range | See |
+|-------|-----|
+| #1-41 | Cycles 1-27 (see above) |
+| #42 | "Day 2 Debrief" (Cycle 28) |
+| #43 | "The Human Mode Story" (Cycle 28) |
+| #44 | "Why a Sketch URL Beats a Screenshot" (Cycle 28) |
+| #45 | "Saturday Traction Report: 28 Hours In" (Cycle 29) |
+| #46 | "Human Mode: Why We're Building It in 48 Hours" (Cycle 29) |
+| #47 | "10 Things You Can Sketch with One Claude Prompt" (Cycle 29) |
+
+### Critical Infrastructure — Still Missing (Reprioritized)
+
+| Gap | Priority | Action | Deadline |
+|----|----------|--------|----------|
+| **Email newsletter signup** | 🔴 TODAY | Add to site — banner + post-sketch CTA | Saturday |
+| **Human Mode feature** | 🔴 TODAY | textarea → Claude API → JSON → render | Saturday–Sunday |
+| **Video content (wobble GIF)** | 🟡 Day 2-3 | 15 minutes, no narration, highest visual ROI | Sunday |
+| **Interactive playground on homepage** | 🟡 Week 1 | JSON → live render, no signup required | Week 1 |
+| **Benchmark page on skissify.com** | 🟢 Week 1 | SEO magnet for "JSON sketch API" searches | Week 1 |
+| **A2A protocol support** | 🟢 Week 2-3 | MCP+A2A convergence accelerating | Week 2-3 |
+
+### Strategic Note: #VibeDraw Category Ownership
+
+**Vibe coding** is the established term for AI-assisted code generation. No equivalent term exists for AI-assisted visual/sketch generation. "Vibe drawing" and "#VibeDraw" are currently unclaimed.
+
+Skissify should move to own this framing:
+- Tweet consistently with #VibeDraw
+- Use "vibe drawing" in blog posts and product copy
+- Pitch to newsletter writers as "the vibe drawing infrastructure layer"
+
+If this term gains traction, Skissify is the origin point. Low effort, potentially high long-term value.
+
+*Last Updated: March 28, 2026 (03:41 CET — Cycle 29)*
+*Added: Blog posts #45-47 (3 new posts), r/interiordesign (NEW — 2.8M), r/RPGdesign (NEW — 80K), Tweets 97-101, newsletter outreach templates (5 targets), #VibeDraw category ownership strategy, Saturday afternoon action table (9 items)*
