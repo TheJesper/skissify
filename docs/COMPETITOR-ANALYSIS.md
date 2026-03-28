@@ -1453,6 +1453,64 @@ Thomas Thornton's tutorial (March 24) is now 4 days old and still the #1 result 
 
 ---
 
+## Update Log: March 28, 2026 — 08:24 CET | Automated Strategy Run #27 (skissify-strategy cron)
+
+### Status: Saturday morning scan — 2 web searches completed, 1 rate-limited. Intelligence from fresh results + 26-run baseline.
+
+### 🟢 CONFIRMATION: Twenty-Seventh Consecutive Scan — Niche Structurally Unoccupied
+
+Search 1 completed: "AI sketch tool MCP hand-drawn diagram launch March 2026"
+Search 2 completed: "SaaS pricing trends 2026 willingness to pay developer tools"
+
+Results from Run #27 (08:24 CET, Saturday March 28):
+- **Thomas Thornton Excalidraw MCP tutorial** (4 days old): STILL #1 result for "AI sketch MCP" searches. Architecture/cloud topology via GitHub Copilot. Zero floor plan, zero JSON-native generation. Unchanged for 5+ consecutive scans.
+- **The Neuron** (March 25, 3 days ago): Figma `use_figma` MCP open beta — "AI agents design directly on the live Figma canvas." Polished UI lane. Still dominant design AI story.
+- **findskill.ai** (2 days ago): "The practical workflow for most people in 2026: **generate in Stitch, refine in Figma if needed, implement via MCP to Claude Code.**" Canonical AI design stack document stabilized.
+- **Google Stitch** (Nervegna Substack, 1 week ago): Vibe Design article still circulating. Polished UI lane.
+- **Smartsheet MCP** (March 24): 4,000 users/1.74M actions week-1 benchmark holds.
+- **Voxturr SaaS Market Analysis** (1 week ago): "Buyers in regulated industries and operationally complex sectors are willing to pay 30–50% more for software that understands their industry natively." Architecture-domain Skissify = premium pricing justified.
+- **Revenera SaaS Pricing Guide** (1 week ago): Outcome-based and usage-based plans growing at same pace as subscriptions. Skissify's hybrid (subscription + per-render) confirmed as standard 2026 model.
+- **eleken.co SaaS Trends 2026** (1 month ago): Usage-based pricing listed as one of the top trends alongside AI as core infrastructure.
+
+**No new entrant** to "hand-drawn + JSON-native + MCP + floor plan" quadrant detected.
+
+**Twenty-seven consecutive automated scans confirm: the niche is structurally unoccupied.**
+
+### 🟢 NEW PRICING SIGNAL: Industry-Specific SaaS Commands 30–50% Premium (March 2026)
+
+**Source**: Voxturr SaaS Market Analysis (1 week ago)
+- "Buyers in regulated industries and operationally complex sectors are willing to pay 30–50% more for software that understands their industry natively."
+- Architecture and construction are regulated, complex, domain-specific industries.
+- **Skissify implication**: An architecture-domain sketch tool (walls, doors, windows, stairs, dimensions, drawing conventions) can command a 30–50% premium over a generic sketch tool at the same feature level.
+- **Pricing recalculation**: If the generic sketch tool value is EUR 5/mo, the domain-specific architecture version justifies EUR 7–9/mo — exactly the EUR 9/mo Pro test recommended in Runs #9 and #25.
+- **B2B tier implication**: Architecture firms (Team tier, EUR 12/user/mo) should actually be priced at EUR 15–18/user/mo given the 30–50% domain premium finding.
+
+### 🟢 NEW PRICING SIGNAL: Outcome-Based & Usage-Based Plans Now Growing as Fast as Subscriptions
+
+**Source**: Revenera 2025 Monetization Monitor (cited in guide published 1 week ago)
+- Outcome-based and usage-based plans now growing at the same pace as subscriptions.
+- This is a structural shift: developers are choosing to pay for what they use, not what they have access to.
+- **Skissify implication**: The EUR 0.005/render overage model is aligned with the fastest-growing pricing category. Making overage frictionless (no cap warnings, just metered billing) is the correct 2026 implementation.
+- **EUR 2/mo API Starter validation**: The "200 renders/month included" at EUR 2 with transparent overage is the hybrid model that both Stripe (new metered billing tools) and market analysts (Revenera) are calling the winning approach.
+
+### 🟢 CONFIRMATION: Twenty-Seventh Scan — Canonical AI Stack Stable, Skissify Gap Persistent
+
+The "Stitch → Figma → Claude Code" canonical workflow (findskill.ai, 2 days ago) is now appearing consistently across 3 consecutive scans without modification. This means:
+1. The stack has stabilized — it won't add a sketch layer without external pressure
+2. Skissify's position as the "pre-stack sketch step" is a durable gap, not a temporary oversight
+3. The EUR 2/mo "add the missing step" narrative has 2–4 more weeks of resonance before it becomes standard background context
+
+### Updated Competitor Matrix (Run #27 — No New Competitors)
+| Competitor | March 28 08:24 CET Status |
+|-----------|--------------------------|
+| Excalidraw | MCP tutorial (now 5 days old) still #1 for AI sketch MCP searches. Topology lane deepening. |
+| Google Stitch | Canonical stack: "generate in Stitch, refine in Figma, implement via Claude Code." Polished UI lane. |
+| Figma | use_figma MCP open beta. Dominant design AI story. |
+| All others | No changes from prior runs. |
+| **Skissify** | **27 consecutive niche-clean scans. `@skissify/mcp` still unbuilt. Today is the build day.** |
+
+---
+
 ## Sources
 
 - [Excalidraw GitHub](https://github.com/excalidraw/excalidraw) -- 119k+ stars

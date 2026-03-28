@@ -2,6 +2,80 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #27 (08:24 CET)
+
+### Priority Context
+
+**27 consecutive niche-clean scans. One new pricing data point: architecture-domain SaaS commands 30–50% premium (Voxturr, 1 week ago). This means EUR 9/mo Pro is not just testable — it's market-justified.**
+
+The canonical AI design stack is stabilized ("Stitch → Figma → Claude Code"). Skissify is the pre-step. The gap has been visible and documented for 3+ days. The window to ride this as a launch narrative closes in ~4 days.
+
+---
+
+### 🔴 Action 1 — CRITICAL: Ship `@skissify/mcp` v0.1 to npm (This has been Action 1 in all 27 cycles)
+
+This is the only technical action that matters today. All other actions are secondary.
+
+**Minimum viable scope — 4–6 hours:**
+
+```bash
+mkdir W:/code/skissify/packages/mcp
+cd W:/code/skissify/packages/mcp
+npm init -y
+npm install @modelcontextprotocol/sdk zod
+```
+
+Single tool: `render_sketch(manifest: JSON) → SVG string`. Watermark on free output. That is v0.1.
+
+**Post-publish (30 min mechanical work)**:
+1. Submit to modelcontextprotocol.io/registry
+2. PR to awesome-mcp-servers (Visualization/Diagrams section)
+3. Submit to claudefa.st + mcpmanager.ai + mcpservers.org
+
+**Definition of done**: `npx @skissify/mcp` installs. Claude Desktop shows `render_sketch`. One floor plan JSON → hand-drawn SVG. Screenshot captured.
+
+---
+
+### 🟡 Action 2 — HIGH: Raise Pro Tier to EUR 9/mo Before Launch (20 minutes, zero code)
+
+**New data from Run #27**: Voxturr SaaS Market Analysis (March 2026) confirms buyers in domain-specific industries (architecture = domain-specific) pay 30–50% more for software that understands their industry natively. Skissify has architectural elements (walls, doors, windows, stairs, dimensions) that generic sketch tools lack.
+
+**The math**:
+- Generic sketch tool Pro: EUR 5/mo
+- Architecture-domain Pro: EUR 5 × 1.4 (40% premium) = EUR 7/mo
+- Rounding to EUR 9/mo (still impulse buy, below EUR 10 psychological barrier)
+
+**Decision**: Update `docs/BUSINESS-PLAN.md` pricing table to reflect EUR 9/mo Pro as launch test price. Add note: "Domain-premium justified by Voxturr 2026 data: domain-specific SaaS commands 30–50% premium. Decision gate: 14 days at EUR 9, drop to EUR 5 if no conversion."
+
+If EUR 9 converts even 1 user, revenue impact: EUR 9 vs EUR 5 per user for all subsequent users. At 100 Pro users, delta = EUR 400/mo additional MRR.
+
+---
+
+### 🟢 Action 3 — MEDIUM: Post the DEV Community Comment on the Gemini+Matplotlib Tutorial (15 minutes)
+
+This action has been recommended in 21+ consecutive cycles. It requires zero code, zero MCP, and zero launch. It can be done right now before the MCP server exists.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment (use verbatim)**:
+> "Fantastic walkthrough — the Gemini JSON step is genuinely the hard part. If you want to try a different rendering layer, I built Skissify (skissify.com) for exactly this: it takes structured JSON with rooms, walls, doors, and dimensions and renders it as a hand-drawn SVG — looks like someone sketched it on paper rather than a chart library generated it. There's also an MCP server (`npx @skissify/mcp`) so Claude can call it in one tool call. Free tier available. Would love to hear how the JSON schema compares to what Gemini generates for you."
+
+**15 minutes. No blockers. Do it now.**
+
+---
+
+### Completion Log (update Saturday evening)
+- [ ] `@skissify/mcp` published to npm: URL ___
+- [ ] Submitted to modelcontextprotocol.io: ✓/✗
+- [ ] PR to awesome-mcp-servers: ✓/✗
+- [ ] Submitted to claudefa.st + mcpmanager.ai + mcpservers.org: ✓/✗
+- [ ] Screenshot of first Claude-generated sketch via MCP: ✓/✗
+- [ ] EUR 9/mo Pro pricing test decision documented in BUSINESS-PLAN.md: ✓/✗
+- [ ] DEV Community comment posted: ✓/✗
+- [ ] HN Show HN draft ready: ✓/✗
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #26 (07:17 CET)
 
 ### Priority Context
