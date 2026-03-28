@@ -2075,3 +2075,85 @@ It's 04:52 CET on Day 2. Cycle 30 adds competitive intelligence from web researc
 
 *Last Updated: March 28, 2026 (04:52 CET — Cycle 30)*
 *Added: Blog posts #48-50, r/sketchnotes (NEW — 45K), GlyphMCP competitive intelligence, Tweets 102-107, wobble thread (5-tweet sequence), PRESS-KIT.md Cycle 30 update, 12-item Saturday action table, viral hooks table, competitive comparison table*
+
+---
+
+## Marketing Improvements (Cycle 34 - March 28, 2026 - 09:28 CET)
+
+### 📊 STATUS: DAY 2 SATURDAY MORNING — COMMUNITY DEPTH + MERMAID ANGLE
+
+It's 09:28 CET on Day 2. 33 hours post-launch. Cycle 34 targets community depth over breadth — new communities (r/AgentsOfAI, r/HomeImprovement, r/Teachers, r/TTRPG), a Mermaid competitive angle that answers "why not just use Mermaid?", LinkedIn for the professional audience, a TikTok/Reels script, and 3 new blog posts.
+
+Key new insight: the return visits metric is the right Day 2 KPI. Signups fluctuate; someone who reopened Skissify 24 hours later is a genuine user signal.
+
+### Completed This Cycle (34)
+
+- [x] 📝 **Blog post #57 NEW**: "Skissify vs Mermaid vs Excalidraw: Which Diagram Tool Belongs in Your AI Stack?" — full 3-way comparison for technical audience. Best platform: Dev.to (primary), r/mcp, r/AI_Agents. File: skissify-vs-mermaid-vs-excalidraw-full-comparison.md
+- [x] 📝 **Blog post #58 NEW**: "The Napkin Sketch API That Didn't Exist" — founder story, the gap, the API design decisions, what happened post-launch. Best platform: Indie Hackers (primary), Substack, Medium. File: 	he-napkin-sketch-api-that-didnt-exist.md
+- [x] 📝 **Blog post #59 NEW**: "Saturday Noon: The Launch Window Is Closing" — honest Day 2 dispatch, return visits framework, what matters in the next 12 hours. Best platform: Indie Hackers, Substack. File: saturday-noon-launch-window-closing.md
+- [x] 📱 **SOCIAL-MEDIA.md Cycle 34**: Tweets 123-128, LinkedIn post, TikTok/Reels script, r/AgentsOfAI (NEW), r/HomeImprovement (4.2M), r/Teachers (380K), r/TTRPG (320K), Mermaid pre-emption tweet, Three Tools thread (5-tweet sequence), 18-item Saturday action table
+- [x] 🔍 **Web research done**: r/AI_Agents community confirmed active, r/AgentsOfAI confirmed, homeowner angle validated (4.2M r/HomeImprovement), educator angle unlocked (r/Teachers 380K)
+- [x] 🏷️ **Hashtag intelligence updated**: #AgentsOfAI, #DiagramsAsCode, r/TTRPG dungeon map angle identified
+
+### New Blog Posts (Cycle 34)
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 57 | **Skissify vs Mermaid vs Excalidraw** | skissify-vs-mermaid-vs-excalidraw-full-comparison.md | Dev.to, r/mcp, r/AI_Agents | Day 2 |
+| 58 | **The Napkin Sketch API That Didn't Exist** | 	he-napkin-sketch-api-that-didnt-exist.md | Indie Hackers, Substack | Day 2 |
+| 59 | **Saturday Noon: The Launch Window Is Closing** | saturday-noon-launch-window-closing.md | Indie Hackers, Substack | Day 2 |
+
+### New Communities (Cycle 34)
+
+| Community | Members | Angle | Post Time (CET) |
+|-----------|---------|-------|-----------------|
+| **r/AgentsOfAI** | 50K+ | AI visual output primitive, Day 2 data, LLM benchmark | 13:00 Saturday |
+| **r/HomeImprovement** | 4.2M | Contractor briefing - describe room to Claude, print sketch | 15:00 Saturday |
+| **r/Teachers** | 380K | Geometry diagrams, AI-generated hand-drawn worksheets | 16:30 Saturday |
+| **r/TTRPG** | 320K | Dungeon map generation, one Claude prompt → full map | 18:00 Saturday |
+
+### Critical Infrastructure - Still Missing (Cycle 34)
+
+| Gap | Priority | Action | Deadline |
+|----|----------|--------|----------|
+| **Email newsletter signup** | 🔴 CRITICAL NOW | Add banner + post-sketch CTA TODAY | This morning |
+| **Wobble slider GIF** | 🔴 CRITICAL NOW | 10 seconds, amplitude sweep, no narration | This morning |
+| **Human Mode feature** | 🟡 TODAY | textarea → Claude API → JSON → render | Weekend sprint |
+| **Interactive playground** | 🟢 Week 1 | JSON → live render on homepage, no signup | Week 1 |
+| **Benchmark page** | 🟢 Week 1 | SEO magnet, publish the 94% stat officially | Week 1 |
+
+### Saturday Priority Actions (Cycle 34 — 09:28 CET)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | NOW | Email signup on homepage |
+| 2 🔴 | ASAP | Wobble GIF recording |
+| 3 🟡 | 09:30 | Tweet 123 (Mermaid pre-emption) |
+| 4 🟡 | 13:00 | r/AgentsOfAI (NEW — 50K members) |
+| 5 🟡 | 15:00 | r/HomeImprovement (NEW — 4.2M members) |
+| 6 🟡 | 16:30 | r/Teachers (NEW — 380K members) |
+| 7 🟡 | 18:00 | r/TTRPG (NEW — 320K members) |
+| 8 🟡 | 20:00 | Day 2 wrap tweet with real metrics |
+| 9 🟡 | 22:00 | Newsletter outreach (5 targets) |
+
+### Key New Angles This Cycle
+
+**Mermaid comparison:** "Why not just use Mermaid?" is now pre-empted with a clear answer. Tweet 123 ready. Blog post #57 covers full 3-way comparison (Skissify + Mermaid + Excalidraw).
+
+**Return visits framework:** Day 2 KPI is return visits, not signups. If >15% of Day 1 uniques come back, the product has genuine pull. Report tonight.
+
+**LinkedIn unlock:** Professional audience (architects, interior designers, contractors) is reachable on LinkedIn with the homeowner/renovation angle.
+
+**TikTok script ready:** "I asked Claude to draw a floor plan and it actually worked." Record once GIF is done. High viral potential on EdTech and HomeDesign TikTok.
+
+### Cumulative Blog Inventory (59 posts)
+
+| Range | See |
+|-------|-----|
+| #1-50 | Cycles 1-30 |
+| #51-53 | Cycle 31 |
+| #54-56 | Cycle 33 |
+| #57-59 | Cycle 34 (this cycle) |
+
+*Last Updated: March 28, 2026 (09:28 CET - Cycle 34)*
+*Added: Blog posts #57-59, r/AgentsOfAI (NEW 50K), r/HomeImprovement (NEW 4.2M), r/Teachers (NEW 380K), r/TTRPG (NEW 320K), Tweets 123-128, LinkedIn post, TikTok script, Mermaid pre-emption angle, return visits KPI framework, 18-item Saturday action table*

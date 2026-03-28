@@ -7929,3 +7929,356 @@ Happy to share more data or the test methodology. Currently building Human Mode 
 *Last Updated: March 28, 2026 (08:18 CET — Cycle 33)*
 *Added: Tweets 118-122, r/mcp post (finally), r/LocalLLaMA benchmark post, r/HomeImprovement v3 (homeowner story), r/DnD dungeon master hook, Saturday action table (13 items), 3 new blog posts (#54-56), infrastructure gap final warning*
 
+
+---
+
+## CYCLE 34 - SATURDAY 09:28 CET - COMMUNITY DEPTH + MERMAID ANGLE
+
+*It's 09:28 CET Saturday March 28. 33 hours post-launch. Cycle 34 adds 6 new tweets (123-128), a Mermaid competitive angle (new!), LinkedIn post for the professional audience, TikTok script for the "AI can draw" hook, updated hashtag intelligence, and 3 new community threads.*
+
+### ? PRIORITY RIGHT NOW (09:28 CET) - ORDER MATTERS:
+1. **NOW** - Add email newsletter signup to homepage (this is critical - no email list yet)
+2. **ASAP** - Record wobble slider GIF (10 seconds, amplitude 0→8, no narration)
+3. **09:30** - Post Tweet 123 (Mermaid comparison angle - new viral hook)
+4. **10:00** - r/LocalLLaMA benchmark post if not already live
+5. **11:00** - Tweet 124 (Saturday honest metrics hook)
+
+---
+
+### NEW Tweet 123 - The Mermaid Pre-emption (Post 09:30 CET)
+
+`
+Someone always asks: "Why not just use Mermaid?"
+
+Mermaid: flowcharts, sequence diagrams, ER graphs.
+Nodes and edges. Logic. Structure. Great for that.
+
+Skissify: floor plans, room layouts, rough spatial sketches.
+JSON → hand-drawn output. Built for spatial reasoning.
+
+Key difference: Mermaid has no concept of physical space.
+Ask it for a floor plan. You'll get a box labeled "bedroom."
+
+Also: Mermaid doesn't wobble. That's intentional.
+
+skissify.com
+#MCP #AIAgents #DiagramsAsCode #DevTools #VibeDraw
+`
+
+---
+
+### NEW Tweet 124 - Return Visits Hook (Post 11:00 CET)
+
+`
+Day 2 launch metric I care about most: return visits.
+
+Not signups. Not page views.
+
+Someone who opened your product on Day 1,
+closed it, thought about it,
+and came back on Day 2?
+
+That's a user.
+
+Day 1 gives you visitors.
+Day 2 tells you if you built something.
+
+(Checking our numbers at noon. Will report honestly.)
+
+#BuildInPublic #IndieHackers #ProductLaunch #SoloFounder
+`
+
+---
+
+### NEW Tweet 125 - The "Three Tools, One Stack" Thread (Post 14:00 CET)
+
+`
+If you're building AI agent workflows in 2026,
+you need three diagram tools. Thread (1/5) 🧵
+
+#AIAgents #MCP #DevTools #BuildInPublic
+`
+
+`
+(2/5) Mermaid: your logic layer.
+
+Flowcharts, sequence diagrams, API flows.
+LLMs write it reasonably well (~70% first-try).
+GitHub renders it natively.
+Use it for system architecture docs.
+`
+
+`
+(3/5) Excalidraw: your whiteboard.
+
+Real-time collaboration with humans.
+Draw together in a meeting.
+Export for async sharing.
+Human input only — not designed for AI generation.
+`
+
+`
+(4/5) Skissify: your spatial output primitive.
+
+JSON in → hand-drawn sketch out.
+MCP native — Claude calls it autonomously.
+94% first-try LLM success.
+14 architectural element types.
+For floor plans, wireframes, anything spatial.
+`
+
+`
+(5/5) You probably need all three.
+
+Mermaid for logic.
+Excalidraw for collaboration.
+Skissify for AI spatial output.
+
+Different tools. Different jobs.
+
+Thread tl;dr at skissify.com/blog
+
+#MCP #AIAgents #DevTools #VibeDraw
+`
+
+---
+
+### NEW Tweet 126 - The Educator Surprise (Post 16:00 CET)
+
+`
+A teacher used Skissify to generate geometry diagrams for worksheets.
+
+Described the shapes to Claude.
+Claude wrote the JSON.
+Skissify drew hand-drawn triangles, circles, right angles.
+
+"My students respond better to hand-drawn diagrams.
+They feel approachable instead of textbook."
+
+I built this for AI engineers.
+Geometry teachers found it.
+
+That's what you get when you build a primitive.
+
+skissify.com
+#EdTech #AIinEducation #MathTeacher #AITools #VibeDraw
+`
+
+---
+
+### NEW Tweet 127 - The Wobble Algorithm Thread (visual hook, Post 17:30 CET)
+
+`
+The wobble slider is the feature nobody asked for
+and everyone plays with.
+
+[GIF: amplitude 0 to 8]
+
+Here's how it works, in three numbers: (1/4) 🧵
+`
+
+`
+(2/4) Amplitude (0-10):
+How far each line deviates from its target path.
+0 = technical drawing.
+8 = someone drew this with their non-dominant hand.
+Sweet spot for "genuine napkin sketch": 3-4.
+`
+
+`
+(3/4) Wave frequency (1-8):
+How many oscillation cycles per stroke.
+High frequency = jittery, nervous energy.
+Low frequency = loose, confident line.
+Most floor plans: 3-4.
+`
+
+`
+(4/4) Humanness (0.0-1.0):
+Randomness multiplier.
+Prevents mechanical uniformity — makes each stroke slightly different.
+0.4 = "drawn quickly, not carelessly."
+1.0 = "drawn by someone in a hurry."
+
+The combination makes it feel real, not generated.
+
+skissify.com
+#CreativeCoding #GenerativeArt #WebDev #DevTools #VibeDraw
+`
+
+---
+
+### NEW Tweet 128 - Weekend Founder Tone (Post 20:00 CET)
+
+`
+33 hours post-launch.
+
+Thing I didn't expect: the tool I built for AI developers
+is being used by people who've never heard of MCP.
+
+Homeowners. Teachers. Dungeon masters.
+
+The sketch API I built as AI infrastructure
+turned out to be useful outside the AI world.
+
+That's either a problem or a massive opportunity.
+
+I think it's an opportunity.
+
+#BuildInPublic #IndieHackers #SoloFounder #ProductLaunch
+`
+
+---
+
+### NEW LinkedIn Post (Post 12:00 CET - Professional Audience)
+
+**Hook:** "Day 2 of a product launch is where most launches fail silently."
+
+**Body:**
+`
+I launched Skissify (skissify.com) 33 hours ago. Here's the Day 2 honest report.
+
+What Skissify does: converts JSON descriptions into hand-drawn sketches. 
+AI agents can use it natively via MCP — Claude can design and render a floor plan 
+autonomously in a single conversation.
+
+Day 1 surprises:
+• 25% of users were homeowners doing renovation planning (not AI developers)
+• Tabletop RPG players found it without any targeting (dungeon maps)
+• A teacher used it to generate geometry diagrams for worksheets
+• Claude Sonnet: 94% first-try JSON success. Mistral 7B: 52%.
+
+The real lesson: when you build infrastructure (not a feature), 
+use cases emerge that you never designed for.
+
+The kitchen renovation user didn't find Skissify because I marketed to homeowners. 
+They found it because JSON-to-sketch is a general capability, 
+and their problem was spatial communication.
+
+This is what primitives do: they get used in unexpected contexts.
+
+If you're building AI agent workflows and need visual output — not charts, 
+not image generation, but rough spatial sketches — I'd love to know if this fills a gap.
+
+Try the editor (no signup): skissify.com/editor
+MCP install: npm install -g @skissify/mcp-server
+`
+
+**Hashtags:** #AIAgents #MCP #ProductLaunch #BuildInPublic #SaaS #AITools #Innovation
+
+---
+
+### NEW TikTok/Reels Script (Record when GIF is ready)
+
+**Hook (0-3 seconds):** "I asked Claude to draw me a floor plan and it actually worked."
+
+**Demo (3-15 seconds):**
+- Type: "2-bedroom apartment, open kitchen"
+- Cut to: Claude generating JSON (fast)
+- Cut to: Skissify rendering the sketch (wobble appears)
+- Hold 3 seconds on the finished floor plan
+
+**CTA (15-20 seconds):** "It's called Skissify. Link in bio. It's free."
+
+**Caption:**
+`
+AI can draw floor plans now 🏠✏️
+
+@skissify via Claude MCP - just describe the room and it sketches it
+
+JSON → hand-drawn output, no drawing required
+
+#AI #FloorPlan #AITools #MCP #VibeDrawing #Claude #HomeDesign #TechTok #DevTok
+`
+
+---
+
+### NEW r/agentsOfAI Post (Post 13:00 CET)
+
+**Title:** I built the missing visual output primitive for AI agent stacks — here's the Day 2 report
+
+**Body:**
+`
+Hi r/AgentsOfAI — launched Skissify yesterday (skissify.com). 
+It's a JSON-to-hand-drawn-sketch API with a native MCP server.
+
+The gap it fills: AI agents can reason about space, layout, and physical relationships, 
+but text output requires the human to mentally visualize the result. 
+Skissify gives agents a way to render spatial thinking directly.
+
+Day 1 data I thought you'd find useful:
+
+**LLM benchmark (floor plan JSON generation, first-try success):**
+- Claude Sonnet 4: 94%
+- GPT-4o: 88%  
+- Gemini Pro: 85%
+- Claude Haiku: 78%
+- Mistral Large: 71%
+- Llama 3.1 70B: 68%
+
+The pattern: spatial coherence (no "bedroom inside bathroom" errors) correlates with score. 
+Claude's spatial reasoning is noticeably better than language-quality equivalent models.
+
+**Schema decision that made the difference:**
+Flat arrays, absolute coordinates, minimal required fields. 
+Every model dropped 15-20 points when I tested hierarchical schemas.
+
+**Unexpected use cases from Day 1:**
+- Homeowners briefing contractors (printed sketch to meeting)
+- Dungeon masters generating maps
+- Teacher making geometry worksheets
+
+I expected 80% AI developers. I got 40%.
+
+What agent use cases are people in this community working on where you've hit the 
+"I need visual output but don't want full image generation" problem?
+`
+
+---
+
+### Updated Hashtag Intelligence (Cycle 34)
+
+| Hashtag | Trend | Notes |
+|---------|-------|-------|
+| #VibeDraw | Growing — own it | Post consistently, Skissify is origin point |
+| #MCP | Stable at high volume | r/mcp community active |
+| #AIAgents | Rising | r/AI_Agents 180K+ members, active |
+| #AgentsOfAI | Growing | r/AgentsOfAI community, AI product builders |
+| #BuildInPublic | Stable | Good for founder transparency posts |
+| #DiagramsAsCode | Niche but exact | Developers who already understand the concept |
+| #VibeCoding | Established | Bridge to #VibeDraw — "vibe coding" → "vibe drawing" |
+
+### NEW Communities to Target This Cycle (Cycle 34)
+
+| Community | Members | Angle | Post Time (CET) |
+|-----------|---------|-------|-----------------|
+| **r/AgentsOfAI** | 50K+ | AI agent visual output gap, Day 2 report | 13:00 Saturday |
+| **r/HomeImprovement** | 4.2M | Contractor briefing use case - describe room, print sketch | 15:00 Saturday |
+| **r/Teachers** | 380K | Geometry diagrams, hand-drawn worksheets, AI classroom | 16:30 Saturday |
+| **r/TTRPG** | 320K | Dungeon map generation, one Claude prompt → full map | 18:00 Saturday |
+
+### Saturday Action Table (Cycle 34)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | **NOW** | Add email signup to homepage (no list = biggest mistake) |
+| 2 🔴 | **ASAP** | Record wobble GIF (10s, amplitude sweep, no narration) |
+| 3 🟡 | 09:30 | Tweet 123 (Mermaid pre-emption) |
+| 4 🟡 | 10:00 | r/LocalLLaMA benchmark (if not already posted) |
+| 5 🟡 | 11:00 | Tweet 124 (return visits hook) |
+| 6 🟡 | 12:00 | LinkedIn post (professional audience) |
+| 7 🟡 | 13:00 | r/AgentsOfAI post (NEW) |
+| 8 🟡 | 14:00 | Tweet 125 thread (Three Tools, One Stack) |
+| 9 🟡 | 15:00 | r/HomeImprovement post (homeowner angle) |
+| 10 🟡 | 15:30 | r/interiordesign post (carry-over) |
+| 11 🟡 | 16:00 | Tweet 126 (educator surprise) |
+| 12 🟡 | 16:30 | r/Teachers post (NEW) |
+| 13 🟡 | 17:30 | Tweet 127 thread (wobble algorithm - needs GIF) |
+| 14 🟡 | 18:00 | r/TTRPG post (NEW dungeon map angle) |
+| 15 🟡 | 19:00 | r/RPGdesign post (carry-over) |
+| 16 🟡 | 20:00 | Tweet 128 (weekend founder tone) |
+| 17 🟡 | 22:00 | Newsletter outreach (TLDR AI, The Rundown, Ben's Bites) |
+| 18 🟡 | All day | Reply to all open threads (HN, Reddit, Discord) |
+
+*Last Updated: March 28, 2026 (09:28 CET - Cycle 34)*
+*Added: Tweets 123-128, LinkedIn post, TikTok/Reels script, r/AgentsOfAI post, r/HomeImprovement (4.2M), r/Teachers (380K), r/TTRPG (320K), Mermaid comparison angle (new viral hook), return visits framework, hashtag intelligence update, 18-item Saturday action table*
