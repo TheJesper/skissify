@@ -9789,3 +9789,314 @@ Active + confirmed from web research:
 *Last Updated: March 28, 2026 (10:38 CET — Cycle 35)*
 *Added: Tweets 129-134, r/TTRPG (NEW 320K), r/Teachers (NEW 380K), Blog posts #60-63, hashtag confirmation from web, 15-item Saturday action table, email capture CRITICAL*
 
+
+
+---
+
+## SOCIAL-MEDIA.md Update (Cycle 40 - Sunday March 29, 2026 - 22:54 CET)
+
+### STATUS: SUNDAY NIGHT → MONDAY HN LAUNCH WINDOW
+
+It's 22:54 CET Sunday March 29. The Monday Show HN "Skissify + Human Mode" post fires in under 10 hours (09:00 CET Monday). This cycle adds:
+- Tweets 157-163 (Monday morning sequence, HN live, LinkedIn Human Mode, week-2 hook)
+- r/mcp Human Mode announcement post (copy-paste ready)
+- r/webdev "I replaced Figma exploration" post
+- Product Hunt launch-day comment replies playbook
+- Three new definitive blog posts published (see LAUNCH-PLAN.md Cycle 40)
+- Monday timing table (13 items)
+- Hashtag intelligence update
+
+---
+
+### Tweet 157 - Sunday Night "See You Monday" (Post 23:00 CET Sunday)
+
+`
+it's sunday night in sweden.
+
+tomorrow morning i'm posting skissify + human mode to Hacker News.
+
+human mode = describe a room in plain text → hand-drawn sketch, no JSON needed.
+
+i built the JSON version for AI developers.
+i built the human version for everyone else.
+
+see you at 09:00 CET tomorrow.
+
+skissify.com
+#BuildInPublic #IndieHackers
+`
+
+---
+
+### Tweet 158 - Monday HN Live Announcement (Post 09:05 CET Monday)
+
+`
+Show HN is live: Skissify + Human Mode
+
+🔗 [HN post link]
+
+"describe a room, get a hand-drawn floor plan"
+
+no JSON. no signup. just type and see.
+
+built for AI devs. now usable by everyone.
+
+#HackerNews #ShowHN #MCP #BuildInPublic
+`
+
+---
+
+### Tweet 159 - Monday Technical Angle (Post 09:30 CET Monday - for dev audience)
+
+`
+the reason Skissify works for LLMs:
+
+flat array of elements
+absolute coordinates (no relative positioning)
+14 element types (explicit vocabulary)
+no nesting
+
+result: Claude Sonnet 4 generates valid floor plan JSON 94% of the time on the first attempt
+
+schema design >> model capability for this task
+
+skissify.com/docs/schema
+#MCP #AIAgents #LLMEngineering
+`
+
+---
+
+### Tweet 160 - Human Mode Demo Thread (Post 10:00 CET Monday)
+
+`
+1/ I asked Claude to draw a coffee shop floor plan for me.
+
+here's exactly what happened 🧵
+`
+
+`
+2/ I typed: "small cafe, counter along back wall, 4 two-person tables, lounge area near east window"
+
+Claude called the Skissify MCP tool automatically
+
+no JSON. no prompting. just a request.
+`
+
+`
+3/ five seconds later: this.
+
+[sketch image]
+
+counter ✓
+4 tables ✓  
+lounge corner ✓
+blueprint paper ✓
+
+this is what I mean by "AI visual output"
+`
+
+`
+4/ the interesting part: the sketch URL stores the JSON
+
+you can send it to Claude and say "add a kitchen prep area behind the counter"
+
+it reads the previous sketch and modifies it
+
+sketch URL = agent memory
+
+skissify.com
+`
+
+---
+
+### Tweet 161 - Figma vs Sketch Hook (Post 11:00 CET Monday)
+
+`
+hot take: you're using Figma too early
+
+the first 30 minutes of any project should be rough sketches, not Figma
+
+Figma says "this is the design"
+a sketch says "this is an idea"
+
+people critique ideas differently than polished mockups
+
+now you can generate the sketch from plain text in 5 seconds
+
+no excuse to skip the rough stage anymore
+
+→ skissify.com (Human Mode)
+#ProductDesign #UX #AI #VibeDraw
+`
+
+---
+
+### Tweet 162 - Week 2 Building Announcement (Post 14:00 CET Monday)
+
+`
+week 2 of skissify.
+
+what i'm building next:
+→ TypeScript SDK (@skissify/client) for Mastra/LangGraph/CrewAI
+→ Benchmark page (94% Claude stat, published officially)
+→ Framework integrations page
+→ Interactive playground (no signup, homepage)
+
+what should i prioritize?
+
+#BuildInPublic #Skissify #IndieHackers
+`
+
+---
+
+### Tweet 163 - "Four Audiences" Viral Hook (Post 16:00 CET Monday)
+
+`
+i launched a sketch tool for AI developers.
+
+three other audiences found it:
+
+🏠 homeowners planning renovations
+🎲 dungeon masters generating maps
+📐 geometry teachers making worksheets
+
+i didn't design for any of them.
+
+primitives find their own use cases.
+
+(this is why you should ship narrow and let users decide)
+
+#BuildInPublic #ProductDev #AI
+`
+
+---
+
+### r/mcp Post - Human Mode Launch (Post 09:10 CET Monday)
+
+**Title:** Skissify + Human Mode: MCP sketch tool now works without JSON
+
+`
+Hi r/mcp — I launched Skissify on Friday (JSON-to-hand-drawn-sketch MCP server). Quick update: Human Mode is live.
+
+**What's new:** Text input → sketch, no JSON required.
+
+Previously: you needed to write JSON or have Claude generate it. Now: describe what you want and Skissify + Claude renders it directly.
+
+**For AI devs using MCP:** The JSON API is unchanged. Human Mode is a new input layer that calls the same renderer.
+
+MCP install: 
+px @skissify/mcp-server
+
+Then ask Claude: "Draw a 2-bedroom apartment in blueprint style using Skissify"
+
+94% first-try success with Claude Sonnet 4. Schema is flat + absolute coords — designed for LLM generation from the start.
+
+Show HN is live today if you want to discuss: [HN link]
+
+Free at skissify.com. What would you use this for?
+
+*Disclosure: I built it. Posting here because r/mcp is the core community.*
+`
+
+---
+
+### r/webdev Post - "I replaced my Figma exploration board" (Post 11:00 CET Monday)
+
+**Title:** I stopped using Figma for early-stage design. Here's what I use instead.
+
+`
+Long version is in my blog post (link below) but here's the short version:
+
+Figma is terrible for early-stage thinking. The moment you open it, you're in production design mode. You start polishing instead of exploring.
+
+Hand-drawn sketches work because they signal "this is an idea, not a design." People give better feedback when something looks rough.
+
+I built Skissify: you describe a layout in text, Claude + Skissify MCP renders a hand-drawn sketch. Looks like a pencil drawing, not a Figma file.
+
+Five seconds from "describe a room" to a floor plan sketch.
+
+I use this at the start of every project now: sketch first, Figma second.
+
+Blog: [why-hand-drawn-beats-figma-final.md → published URL]
+Try it: skissify.com (Human Mode, no signup)
+
+What do you use for early-stage exploration?
+
+*Disclosure: I built Skissify. Posting because I genuinely think the "sketch first" workflow is underused.*
+`
+
+---
+
+### LinkedIn Post - Human Mode Announcement (Post 12:00 CET Monday)
+
+`
+Skissify now has Human Mode.
+
+Before: describe a space → Claude generates JSON → Skissify renders sketch
+After: describe a space → sketch
+
+The same hand-drawn output. No JSON required.
+
+Why this matters beyond developers:
+- Homeowners briefing contractors can sketch a room in seconds
+- Interior designers can prototype layouts without CAD
+- Architects can share rough concepts without Figma overhead
+- Product managers can sketch information architecture without a designer
+
+The AI does the translation. You describe what you want.
+
+Try it free: skissify.com
+
+#AITools #ProductDesign #InteriorDesign #ArchitecturalSketch #AIForDesign
+`
+
+---
+
+### Monday Timing Table (Cycle 40 - March 29, 2026)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | 08:30 Mon | Tweet 157 pre-HN warmup (post Sunday night) |
+| 2 🔴 | 09:00 Mon | **Submit Show HN: Skissify + Human Mode** |
+| 3 🔴 | 09:05 Mon | HN first comment (copy from prep doc) |
+| 4 🔴 | 09:05 Mon | Tweet 158 (HN live announcement) |
+| 5 🔴 | 09:10 Mon | r/mcp Human Mode post |
+| 6 🔴 | 09:30 Mon | Tweet 159 (technical schema hook) |
+| 7 🟡 | 10:00 Mon | Tweet 160 thread (demo walkthrough) |
+| 8 🟡 | 11:00 Mon | Tweet 161 (Figma hot take) |
+| 9 🟡 | 11:00 Mon | r/webdev "I replaced Figma" post |
+| 10 🟡 | 12:00 Mon | LinkedIn Human Mode announcement |
+| 11 🟡 | 14:00 Mon | Tweet 162 (Week 2 building) |
+| 12 🟡 | 16:00 Mon | Tweet 163 (Four audiences viral hook) |
+| 13 🟢 | All day | Respond to HN within 5 minutes. Every. Comment. |
+
+---
+
+### Hashtag Intelligence (Cycle 40 - March 29, 2026)
+
+**Monday morning optimal hashtag sets:**
+
+*For HN launch tweets:*
+#HackerNews #ShowHN #BuildInPublic #MCP
+
+*For technical audience:*
+#MCP #AIAgents #LLMEngineering #AgentStack
+
+*For design/product audience:*
+#ProductDesign #UX #VibeDraw #AI
+
+*For build-in-public:*
+#BuildInPublic #IndieHackers #Skissify
+
+*For Human Mode launch:*
+#AITools #NoCode #HumanMode #VibeDraw
+
+**#VibeDraw status**: Still unclaimed by any other product. Own this category hard in Week 2.
+
+**Emerging Monday signals (based on IBM/Linux Foundation MCP+A2A momentum):**
+- #AgentStack — IBM BeeAI community actively growing
+- #A2A — Google Agent-to-Agent protocol, peak context this week
+- #Mastra — TypeScript agent framework, 22K+ stars, strong Monday dev traffic
+
+*Last Updated: March 29, 2026 (Cycle 40 - 22:54 CET)*
+*Added: Tweets 157-163, r/mcp Human Mode post, r/webdev post, LinkedIn post, Monday 13-item timing table, hashtag sets by audience*

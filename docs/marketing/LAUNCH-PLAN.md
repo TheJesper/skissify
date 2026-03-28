@@ -1,8 +1,86 @@
-# Skissify Launch Plan
+﻿﻿# Skissify Launch Plan
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com — JSON to hand-drawn sketch, AI-agent compatible
-**Status:** 🗓️ DAY 3 → DAY 4 — Sunday March 29, 21:48 CET — 74 hours post-launch
+**Status:** DAY 4 - Monday March 29, 22:54 CET - 77 hours post-launch | SHOW HN HUMAN MODE IN ~10 HOURS
+
+---
+
+## Marketing Improvements (Cycle 40 - March 29, 2026 - 22:54 CET)
+
+### STATUS: SUNDAY NIGHT — T-10 HOURS TO MONDAY HN SHOW HN + HUMAN MODE
+
+It's 22:54 CET Sunday March 29 (16:54 ET / 13:54 PT). 77 hours post-launch. The Monday Show HN "Skissify + Human Mode" post fires at 09:00 CET tomorrow. Cycle 40 sharpens the three core blog posts that will be cross-posted Monday morning, adds the full Monday social media sequence (Tweets 157-163), and delivers the r/mcp + r/webdev community posts ready to fire.
+
+### Key Focus: Quality Over Volume
+
+74 blog posts exist. The problem is no longer volume — it's polish. Cycle 40 writes three **definitive, final versions** of the highest-value topics:
+1. "Why hand-drawn sketches beat Figma" — the flagship non-technical argument
+2. "How AI agents draw floor plans" — the complete technical walkthrough with LLM benchmarks
+3. "Skissify vs Excalidraw" — the definitive comparison (the most-searched comparison query)
+
+These three posts cover the three highest-traffic organic search intents for Skissify. They replace earlier shorter versions and should be the canonical cross-posted versions on Dev.to, Hashnode, and Medium.
+
+### What Changed Since Cycle 39
+
+- **3 definitive blog posts written** — final, polished versions of the three core topics. Each is longer, more detailed, and more shareable than previous versions.
+- **SOCIAL-MEDIA.md Cycle 40**: Tweets 157-163 (Sunday night tease, HN live, schema hook, demo thread, Figma hot take, Week 2 building, Four Audiences viral), r/mcp Human Mode post, r/webdev post, LinkedIn post, 13-item Monday timing table.
+- **Hashtag sets by audience**: Separate sets for HN launch, technical, design, build-in-public, Human Mode audiences.
+
+### Completed This Cycle (40)
+- [x] ✅ **Blog post #75 DEFINITIVE**: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas (The Final Argument)" — 1,800 words, cognitive science case, the hybrid workflow, Figma vs sketch mental model, Human Mode CTA. File: docs/marketing/blog/why-hand-drawn-beats-figma-final.md
+- [x] ✅ **Blog post #76 DEFINITIVE**: "How AI Agents Can Draw Floor Plans — A Complete Technical Walkthrough" — 2,000 words, JSON schema, 8-LLM benchmark table, MCP code, API code, Human Mode, 5 copy-paste prompts. File: docs/marketing/blog/how-ai-agents-draw-floor-plans-v2.md
+- [x] ✅ **Blog post #77 DEFINITIVE**: "Skissify vs Excalidraw: The Definitive Comparison for AI-Assisted Workflows" — 2,100 words, full feature table, jobs comparison, Mermaid positioning, honest Excalidraw advantages, hybrid workflow. File: docs/marketing/blog/skissify-vs-excalidraw-definitive.md
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 40**: Tweets 157-163, r/mcp post, r/webdev post, LinkedIn post, 13-item Monday timing table, hashtag sets by audience
+
+### New Blog Posts (Cycle 40)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 75 | **Why Hand-Drawn Beats Figma (Definitive)** | why-hand-drawn-beats-figma-final.md | **Medium (primary), Dev.to, LinkedIn** | **Monday AM** |
+| 76 | **How AI Agents Draw Floor Plans (Definitive)** | how-ai-agents-draw-floor-plans-v2.md | **Dev.to (primary), Hashnode, r/mcp** | **Monday AM** |
+| 77 | **Skissify vs Excalidraw (Definitive)** | skissify-vs-excalidraw-definitive.md | **Dev.to (primary), Hashnode, r/webdev** | **Monday AM** |
+
+### Monday Morning Priority Actions (T-10 hours)
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | 08:30 | Tweet 157 (Sunday night pre-HN tease — post NOW) |
+| 2 🔴 | 09:00 | **SUBMIT Show HN: Skissify + Human Mode** |
+| 3 🔴 | 09:05 | HN first comment (copy from show-hn-skissify-human-mode-monday-prep.md) |
+| 4 🔴 | 09:05 | Tweet 158 (HN live announcement) |
+| 5 🔴 | 09:10 | r/mcp Human Mode announcement post |
+| 6 🔴 | 09:30 | Tweet 159 (94% schema hook for technical audience) |
+| 7 🟡 | 10:00 | Cross-post Blog #76 (floor plan walkthrough) to Dev.to |
+| 8 🟡 | 10:00 | Tweet 160 (demo thread) |
+| 9 🟡 | 11:00 | r/webdev "I replaced Figma exploration" post |
+| 10 🟡 | 11:00 | Tweet 161 (Figma hot take) |
+| 11 🟡 | 12:00 | Cross-post Blog #77 (vs Excalidraw) to Dev.to |
+| 12 🟡 | 12:00 | LinkedIn Human Mode announcement |
+| 13 🟢 | All day | Respond to every HN comment. Within 5 minutes. Every single one. |
+
+### New Ideas (Cycle 40)
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"What's your first sketch?" tweet challenge** | Ask followers to post their first Skissify sketch → UGC → community | Zero | High |
+| **Monday return-visit metric tweet** | "Day 4 return visit rate: X%. Is that good?" — nobody shares this metric | Zero | High |
+| **Dev.to "top posts" series strategy** | Post Blog #75, #76, #77 as separate Dev.to posts on Monday AM — all three can trend simultaneously | Low | Medium |
+| **Mastra showcase** | Submit Skissify as a Mastra community tool (22K+ stars, TypeScript audience) | Low | High |
+| **Week 2 "What's shipping" thread** | Every day this week, post one sentence on what shipped that day | Zero | Medium |
+
+### Critical Infrastructure - Status (Cycle 40)
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Human Mode feature** | 🔴 CRITICAL | Must ship before 09:00 Monday HN post |
+| **Wobble slider GIF** | 🔴 CRITICAL | Record tonight — embed in Monday HN first comment |
+| **Monday HN Show HN submission** | 🔴 CRITICAL | 09:00 Monday — copy ready |
+| **Email newsletter signup** | 🟡 | Should be live |
+| **TypeScript SDK** (@skissify/client) | 🟡 | This week |
+| **Benchmark page** | 🟡 | Week 1 — publish 94% stat officially |
+| **Directory submissions** | 🟡 | PulseMCP, AlternativeTo, DevHunt |
+
+*Last Updated: March 29, 2026 (Cycle 40 - 22:54 CET)*
+*Added: Blog posts #75-77 (definitive versions of three core topics), SOCIAL-MEDIA.md Cycle 40 (Tweets 157-163 + Monday community posts), 13-item Monday timing table, new ideas table*
+
+---
 
 ---
 
