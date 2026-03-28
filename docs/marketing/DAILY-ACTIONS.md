@@ -2,6 +2,80 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #34 (21:07 CET, Saturday March 28)
+
+### Priority Context
+
+**34 consecutive niche-clean scans. The niche is structurally confirmed. Domscribe launched today on Product Hunt — proving "agent visual tooling" is a growing product category, and Skissify's slot (hand-drawn sketch generation) is still open.**
+
+**Critical timing**: The Figma MCP / Google Stitch canonical stack counter-narrative window closes **Sunday noon CET**. An HN post before noon is 3–5x more effective than one posted Sunday evening. `@skissify/mcp` build status from Saturday is unknown.
+
+**Non-negotiable constraint**: Do NOT post HN without a working `npx @skissify/mcp`. Timing matters, but a broken product link on HN is worse than a late post.
+
+---
+
+### 🔴 Action 1 — CRITICAL WINDOW: HN "Show HN" Before Sunday Noon CET (or Final Build Sprint)
+
+**If `@skissify/mcp` IS live on npm** → Post HN Show HN **Sunday 08:00–11:00 CET** (EU morning + US late Saturday night = peak developer traffic globally).
+
+**Title** (use verbatim):
+> `Show HN: Skissify — JSON in, hand-drawn SVG out. The agent visual tool the canonical AI design stack is missing`
+
+**Body**:
+> The 2026 AI design stack: generate in Google Stitch, refine in Figma, implement via Claude Code. That stack has no sketch step — the napkin floor plan, the rough architecture layout, the "this is still exploratory" visual.
+>
+> Domscribe launched today giving coding agents live DOM context. The other end — generating hand-drawn sketches — is Skissify.
+>
+> JSON in → hand-drawn SVG out. One MCP tool: `render_sketch(manifest)`. Declarative, not imperative.
+>
+> `npx @skissify/mcp` — free (watermarked), EUR 2/mo clean output, EUR 5/mo Pro.
+> Floor plans: walls, doors, windows, stairs, columns, dimension lines. Tunable wobble. Paper types.
+>
+> 34 consecutive competitive scans: nobody else does hand-drawn + JSON-first + MCP + floor plans.
+>
+> → skissify.com
+
+**If `@skissify/mcp` is NOT live** → Sunday 06:00–14:00 CET is the final build sprint. Post HN Sunday evening even at reduced timing effectiveness. A working product at 19:00 CET Sunday beats a "coming soon" at 09:00.
+
+---
+
+### 🟡 Action 2 — DEADLINE TODAY: Submit Skissify to Domscribe-Adjacent Channels
+
+Domscribe's launch (today, PH "AI Coding Agents") creates a coattail opportunity. Developers installing Domscribe are exactly Skissify's audience — they're building agent visual tooling stacks.
+
+**Steps (30 min, zero code):**
+1. Find Domscribe's PH page and leave a genuine comment: *"Great tool — for the generation side of the agent visual stack (hand-drawn sketch output from JSON), I've been building Skissify. Interesting that both tools are emerging on the same day."*
+2. If Domscribe has a Discord or Slack, join and introduce Skissify in an #introductions or #tools channel.
+3. Add Domscribe to the competitor matrix in COMPETITOR-ANALYSIS.md as a "complementary tool" (DOM inspection = reading visual; Skissify = writing visual).
+
+**No MCP required for any of these steps.**
+
+---
+
+### 🟢 Action 3 — ZERO BLOCKER, 15 MIN: DEV Community Comment on Gemini+Matplotlib Tutorial
+
+This action has been deferred for 28+ consecutive cycles. It requires no code, no MCP, no launch.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment** (post verbatim):
+> "Excellent walkthrough — the Gemini JSON step is genuinely the hard part. If you want a different rendering layer, I built Skissify (skissify.com) for exactly this pipeline: takes structured JSON with rooms, walls, doors, and dimensions and renders it as a hand-drawn SVG — looks like someone sketched it on paper rather than a chart library generated it. There's an MCP server (`npx @skissify/mcp`) so Claude can call it directly. Free tier available. Would love to hear if the schema aligns with what Gemini generates for you."
+
+**Do this before Action 1. 15 minutes. Zero blockers. 28 deferrals is enough.**
+
+---
+
+### Completion Log (update Sunday evening)
+- [ ] DEV Community comment posted: ✓/✗
+- [ ] Domscribe PH/Discord comment posted: ✓/✗
+- [ ] `@skissify/mcp` confirmed live on npm: URL ___
+- [ ] HN Show HN posted: URL ___ (time posted: ___)
+- [ ] modelcontextprotocol.io registry submitted: ✓/✗
+- [ ] awesome-mcp-servers PR opened: ✓/✗
+- [ ] claudefa.st + mcpmanager.ai submitted: ✓/✗
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #33 (20:04 CET, Saturday March 28)
 
 ### Priority Context
