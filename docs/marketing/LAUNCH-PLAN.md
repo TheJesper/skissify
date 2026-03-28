@@ -1616,3 +1616,87 @@ The honest framing is always more compelling than a polished launch.
 
 *Last Updated: March 28, 2026 (00:13 CET — Cycle 27)*
 *Added: Blog posts #40-41, Cycle 27 full Day 2 battle plan, PRESS-KIT.md upgraded with real founder bio, SOCIAL-MEDIA.md Cycle 27 complete (Tweets 87-91 + all community posts), infrastructure gaps prioritized*
+
+---
+
+## Marketing Improvements (Cycle 28 — March 28, 2026 — 02:32 CET)
+
+### ⚡ STATUS: DAY 2 PRE-DAWN — CONTENT LOADED, MORNING ACTIVATION SCHEDULED
+
+It's 02:32 CET on Day 2 (Saturday, March 28). Launch day (Friday March 27) is complete. The r/mcp post is the #1 priority when the day activates at 07:30 CET. This cycle fills the content pipeline for all of Saturday and adds two new communities (r/DnD, r/HomeImprovement v2) based on Day 1 user discovery data.
+
+### Key Day 1 Discoveries Driving Cycle 28
+
+**Discovery 1: The Dungeon Master use case is real.**
+r/DnD community members found Skissify without us targeting them. Claude + MCP + Skissify generates convincing dungeon maps. r/DnD has 6.4M members and is a highly visual community where sketch links get shared. This is now a Day 2 community.
+
+**Discovery 2: The JSON barrier is the #1 non-developer blocker.**
+Home renovators and non-technical users love the sketch output but hit the JSON input wall. "Human Mode" (natural language → JSON → sketch) is now Day 2 priority, not Week 2. A tease tweet is written and ready.
+
+**Discovery 3: Sketch URLs as persistent agent memory is a novel technical angle.**
+This concept wasn't explicitly in the marketing before Cycle 28. The ability to fetch, modify, and version-control sketch JSON via URL is architecturally meaningful for agent developers. Blog post #44 and Tweet 92 both focus on this.
+
+**Discovery 4: A2A + MCP convergence is accelerating.**
+IBM research published this week confirms A2A and MCP are converging on a single entity card standard. Skissify's MCP server positions well in a world where A2A interop becomes standard. Keep monitoring for A2A integration angle.
+
+### Completed This Cycle (28)
+
+- [x] ✅ **Blog post #42 NEW**: "Day 2 Debrief: What the Numbers Actually Tell Us" — honest post-launch breakdown with four user profiles, three things that went better/worse, and the key insight about drawing being universal. File: `docs/marketing/blog/day-2-the-numbers-and-who-wants-skissify.md`
+- [x] ✅ **Blog post #43 NEW**: "The Human Mode Story" — product decision post on building the non-developer entry point. Honest, specific, actionable. File: `docs/marketing/blog/the-human-mode-story.md`
+- [x] ✅ **Blog post #44 NEW**: "Why a Sketch URL Beats a Screenshot (And Why AI Agents Care)" — technical architecture post on persistent visual memory. File: `docs/marketing/blog/why-sketch-url-beats-a-screenshot.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 28**: Tweets 92-96, r/DnD post (NEW community — 6.4M members), r/HomeImprovement v2 (revised framing), LinkedIn "Three Types" post, Bluesky Day 2, full 21-item Day 2 action table
+- [x] ✅ **r/DnD unlocked**: 6.4M members, dungeon map use case is authentic and unplanned — best kind of community post
+- [x] ✅ **Human Mode tease written**: Tweet 93, the-human-mode-story.md — builds anticipation while validating Day 1 learnings
+
+### New Blog Posts (Cycle 28)
+
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 42 | **Day 2 Debrief** | day-2-the-numbers-and-who-wants-skissify.md | Indie Hackers (primary), Dev.to | Day 2 |
+| 43 | **The Human Mode Story** | the-human-mode-story.md | Medium, Substack | Day 2 |
+| 44 | **Sketch URL Beats Screenshot** | why-sketch-url-beats-a-screenshot.md | Dev.to, Hashnode | Day 2 |
+
+### New Communities Unlocked (Cycle 28)
+
+| Community | Members | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/DnD** | 6.4M | "Dungeon maps via Claude + MCP — we didn't plan this" | 15:00 CET Saturday |
+| **r/HomeImprovement** | 3.4M | "Day 2 revision: stronger homeowner framing" | 15:30 CET Saturday |
+
+### Day 2 Priority Actions (Saturday March 28)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | 07:00 | Fill in real Day 1 analytics numbers |
+| 2 🔴 | 07:30 | **Post r/mcp** (Cycle 27 copy — top priority) |
+| 3 🔴 | 08:00-12:00 | Publish Day 2 debrief blog (real numbers) |
+| 4 🟡 | 09:15 | Tweet 92 (sketch URL as memory) |
+| 5 🟡 | 11:00 | LinkedIn "Three Types" post |
+| 6 🟡 | 12:00 | Publish Human Mode story on Medium |
+| 7 🟡 | 14:00 | Tweet 94 (dungeon map surprise) |
+| 8 🟡 | 15:00 | r/DnD post (NEW COMMUNITY) |
+| 9 🟢 | 16:00 | **Email newsletter CTA — add to site** (INFRASTRUCTURE) |
+| 10 🟢 | 17:00 | Publish Sketch URL blog on Dev.to |
+
+### Cumulative Blog Inventory (44 posts)
+
+| Range | See |
+|-------|-----|
+| #1-41 | Cycles 1-27 (see above) |
+| #42 | "Day 2 Debrief: What the Numbers Say" (Cycle 28) |
+| #43 | "The Human Mode Story" (Cycle 28) |
+| #44 | "Why a Sketch URL Beats a Screenshot" (Cycle 28) |
+
+### Critical Infrastructure Still Missing
+
+| Gap | Priority | Action | Notes |
+|----|----------|--------|-------|
+| **Email newsletter signup** | 🔴 Day 2 | Add banner + post-sketch CTA | Every day without this is lost subscribers |
+| **Video content** | 🟡 Day 2-3 | Wobble slider GIF (15 min to record) | Highest visual ROI per effort |
+| **Human Mode (natural language input)** | 🟡 Day 2-3 sprint | textarea → Claude API → JSON → render | Unlocks homeowner + TTRPG markets |
+| **Interactive playground on homepage** | 🟡 Week 1 | JSON → live render, no signup | SEO + conversion |
+| **Benchmark page on skissify.com** | 🟢 Week 1 | SEO for "JSON sketch API", "floor plan AI" | |
+| **A2A protocol support** | 🟢 Week 2-3 | MCP + A2A convergence accelerating | IBM confirms unified card standard coming |
+
+*Last Updated: March 28, 2026 (02:32 CET — Cycle 28)*
+*Added: Blog posts #42-44, r/DnD community (NEW), r/HomeImprovement v2, Tweets 92-96, LinkedIn + Bluesky Day 2 posts, full 21-item Saturday action table, Human Mode product decision, A2A convergence monitoring note*

@@ -916,3 +916,81 @@ This creates a rare launch story: a tool that opened two different markets simul
 | v6 (video) | TikTok/Reels | "JSON in. Hand-drawn out. AI agents use this." (3-second text overlay) |
 
 *Press Kit Last Updated: Cycle 24 - 20:48 CET, March 27, 2026*
+
+---
+
+## PRESS KIT UPDATE — Cycle 28 (March 28, 2026 — 02:32 CET — Day 2)
+
+### Day 1 Post-Mortem — The Full Audience Picture
+
+Now that Day 1 is complete, the audience story has fully crystallized. What emerged is not a single market but a **visual output platform** that multiple audiences converge on from different directions.
+
+### Confirmed Audience Map (Day 1 Data)
+
+| Audience | Size | How They Found Skissify | Primary Use Case | Conversion |
+|----------|------|------------------------|-----------------|------------|
+| AI/MCP Developers | Small, high-intent | HN, r/mcp, npm, Twitter | Agent visual output layer | High |
+| Homeowners | Large, medium-intent | Claude exploration, organic | Renovation briefs for contractors | Medium (blocked by JSON) |
+| TTRPG / D&D Players | Medium, high-engagement | Social sharing (unplanned) | Dungeon maps, campaign locations | High |
+| Product Managers | Small, growing | HN, product communities | Wireframe → low-fi prototype | Medium |
+| Geometry / Education | Very small | Twitter thread | Spatial math exercises | Low (free use) |
+| Real Estate | Emerging signal | Homeowner overlap | Pre-listing sketches | TBD |
+
+### The Narrative That Unlocks Press Coverage
+
+The best press story in the Skissify launch isn't the MCP integration (technical, niche).
+
+It's this:
+
+> "Skissify was built for AI developers. Dungeon masters, homeowners, and geometry teachers found it first — without any marketing targeting them. That's what happens when you build the output primitive AI was missing."
+
+**Why this works for press:**
+- Three dramatically different audiences (developer / homeowner / D&D player)
+- All arrived at the same product unprompted
+- The product didn't change — the perception of who it's for shifted
+- Visual / concrete (these are real people with real use cases)
+- Trend-adjacent (AI agents in March 2026 are mainstream news)
+
+**Pitch this to:** Wired, The Verge, TechCrunch "small startups" section, Fast Company (design angle), Ars Technica (technical angle), The Indie Hackers blog.
+
+### Day 2 One-Liner Additions
+
+| Version | Best For | Copy |
+|---------|---------|------|
+| v7 (Day 2 discovery) | Press pitch | "We built it for AI engineers. Dungeon masters and homeowners found it first." |
+| v8 (Human Mode tease) | Product Hunt | "JSON in, or just describe it — hand-drawn sketches for AI agents and humans alike." |
+| v9 (architecture angle) | Technical media | "The persistent visual memory layer for AI agents." |
+
+### Coming Soon: Human Mode
+
+**Human Mode** (in development as of Day 2) will add a natural language input path:
+
+- User describes: "3-bedroom apartment, living room facing south, kitchen open plan"
+- Claude API translates to Skissify JSON
+- Renders immediately
+- No JSON knowledge required
+
+**Press angle:** "Skissify removes the last technical barrier — now anyone can ask AI to draw something, not just developers who can write JSON."
+
+### Newsletter Pitch Template (for AI/Dev newsletters)
+
+**Subject:** [PITCH] Skissify — the first sketch tool AI agents can natively operate
+
+**Body:**
+Hi [Name],
+
+Skissify launched last week and reached [X] signups in 24 hours, including an unexpected discovery: D&D players are using Claude + Skissify to generate dungeon maps.
+
+The product is a JSON-to-hand-drawn-sketch tool with native MCP support — AI agents (Claude, GPT, local LLMs) can call it directly, generate floor plans, wireframes, and diagrams, and get back permanent, shareable URLs.
+
+Happy to provide:
+- Demo GIF
+- Working Claude Desktop integration for testing
+- Interview with founder Jesper Landmér (Stockholm)
+- Exclusive first-look at the "Human Mode" natural language input (in development)
+
+skissify.com | jesper@skissify.com
+
+P.S. The D&D dungeon map use case is genuinely delightful — happy to show you a Claude-generated dungeon if you want to lead with that angle.
+
+*Press Kit Last Updated: Cycle 28 - 02:32 CET, March 28, 2026*

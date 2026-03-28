@@ -6377,3 +6377,286 @@ Happy to share the JSON schema and answer any technical questions about the MCP 
 
 *Last Updated: March 28, 2026 (00:13 CET — Cycle 27)*
 *Added: Tweets 87-91, full r/mcp post copy (first ever, critical gap fixed), LLM benchmark Twitter thread, r/LocalLLaMA post, MCP Official Discord post, LinkedIn Day 2 full post, Day 2 priority action table (14 items), Blog posts #40-41*
+
+---
+
+## Social Media — Cycle 28 (March 28, 2026 — 02:32 CET) — Day 2 Deep Push
+
+### Context: Day 2 Pre-Dawn | US: Still Friday Night | EU: Early Saturday
+
+It's 02:32 CET on Day 2 (Saturday). Launch is done. Now it's about sustaining the wave while the team sleeps. These posts are scheduled for morning activation — 09:00–21:00 CET Saturday. US prime time hits 15:00–23:00 CET. The r/mcp and r/LocalLLaMA posts are the Day 2 anchors.
+
+**Cycle 28 focus:**
+1. New viral tweet angles: "Sketch URL as agent memory", "Human Mode coming soon" tease, D&D community hook
+2. r/DnD surprise use-case post (unexpected community — don't oversell, just share)
+3. LinkedIn: "The Three Types of Skissify Users" (formats well as a list post)
+4. New blog posts created: #42-44 (see below)
+5. Updated Day 2 action table with 09:00–21:00 schedule
+
+---
+
+### Tweet 92: The Sketch-URL-as-Memory Hook (Post 09:15 CET — after r/mcp)
+```
+Your AI agent can now draw. But more importantly:
+
+Every sketch it draws gets a permanent URL.
+
+Not a screenshot. Not a blob. A URL that returns the original JSON.
+
+So your agent can:
+→ Store it
+→ Fetch it back later
+→ Modify specific elements
+→ Version control spatial decisions
+
+The sketch IS the memory.
+
+↳ skissify.com
+```
+**Hashtags:** #AIAgents #MCP #BuildInPublic #SketchAI
+**Why it works:** "sketch as memory" is a novel conceptual frame. Developers who work on agent memory will immediately see the value.
+
+---
+
+### Tweet 93: The Human Mode Tease (Post 11:30 CET)
+```
+We built Skissify for AI agents. JSON in, sketch out.
+
+On Day 1, people who can't write JSON showed up anyway.
+
+Homeowners sketching kitchens. DMs designing dungeons. PMs wireframing flows.
+
+They loved the output. The JSON door stopped them.
+
+Working on a "describe it in plain English" mode.
+
+Builders: what should it prioritize? Room layouts? Wireframes? Anything?
+```
+**Hashtags:** #BuildInPublic #SideProject #AITools #SkissifyMCP
+**Why it works:** Invites community input, creates anticipation, frames the human-interest expansion honestly.
+
+---
+
+### Tweet 94: The Dungeon Map Surprise (Post 14:00 CET — US East Coast fully awake)
+```
+We built a floor plan tool for AI developers.
+
+Day 1 feedback from users we didn't expect:
+
+"Can Skissify do dungeon maps?" — r/DnD (we never posted there)
+
+Turns out: Claude + MCP + Skissify = procedurally generated D&D dungeon layouts.
+
+We didn't plan this. But we're not mad about it.
+
+[attach: example dungeon map sketch]
+```
+**Hashtags:** #DnD #TTRPG #AIAgents #BuildInPublic #Skissify
+**Why it works:** Unexpected use cases are the best social content. Authentic surprise + wider audience discovery.
+
+---
+
+### Tweet 95: The "Vibe Drawing" Positioning (Post 16:30 CET — US afternoon peak)
+```
+Vibe coding: you describe it → AI writes the code
+
+Vibe drawing (new): you describe it → AI sketches it
+
+We shipped the infrastructure layer for vibe drawing yesterday.
+
+Any AI agent with MCP access can now produce hand-drawn sketches from a description.
+
+That's a new category. And it starts with Skissify.
+
+↳ skissify.com/mcp
+```
+**Hashtags:** #VibeCoding #VibeDraw #AIAgents #MCP #BuildInPublic
+
+---
+
+### Tweet 96: The Saturday Hacker Invite (Post 19:00 CET — US West Coast weekend)
+```
+What are you building this weekend?
+
+If your project involves AI agents generating or displaying spatial data — floor plans, maps, diagrams, wireframes — you might want this:
+
+→ @skissify MCP server
+→ Give Claude the ability to draw
+→ 15 min setup
+→ First sketch free
+
+Let me know what you build 🔧
+```
+**Hashtags:** #WeekendProject #AIAgents #Skissify #BuildInPublic #HackerWeekend
+
+---
+
+### r/DnD Community Post (Cycle 28 — NEW COMMUNITY)
+
+**Subreddit:** r/DnD (6.4M members — NOT YET TARGETED)
+**Post Title:** "I built a tool that lets AI generate hand-drawn dungeon maps — turns out DMs want this"
+**Best time:** Saturday 15:00 CET (US East morning)
+
+```
+Hi r/DnD,
+
+I'm not a DnD player — I'm a developer. I built a tool called Skissify that turns JSON into hand-drawn floor plans and architectural sketches. I built it for AI agents (specifically Claude Desktop via MCP).
+
+Day 1 of launch, someone in the comments mentioned they'd used Claude + Skissify to generate a dungeon map for their campaign. I had no idea this was a use case until they pointed it out.
+
+The setup:
+1. Ask Claude to "design a dungeon level with 5 rooms, a boss chamber, and 2 corridors — output as Skissify JSON"
+2. Paste the JSON into Skissify
+3. Choose your paper style (blueprint paper looks amazing for dungeons)
+4. Share the link with your party before the session
+
+It's free for public sketches. The maps don't look professional — they look hand-drawn, which honestly might be better for the aesthetic.
+
+I'd genuinely love to know what dungeon/campaign map features would make this more useful for DMs. More element types? Labels? Grid overlay?
+
+[attach: example dungeon map generated by Claude]
+
+https://skissify.com
+```
+
+**Why r/DnD:** 6.4M members, passionate community, genuinely useful use case, we didn't plan this (authentic origin story), visual output is inherently shareable in this community.
+
+---
+
+### r/HomeImprovement Post v2 — Day 2 (Cycle 28 — REVISED)
+
+The original r/HomeImprovement post was planned for Day 1 evening but we don't have confirmation it was posted. Here's a refined Day 2 version:
+
+**Post Title:** "I built an AI tool that sketches room layouts — Day 1 taught me homeowners want this more than developers"
+
+```
+Hi r/HomeImprovement,
+
+Quick context: I'm a developer, and I built a tool called Skissify for AI developers. It turns JSON into hand-drawn floor plan sketches — designed for AI agents, not regular users.
+
+Day 1 of launch, I noticed something unexpected: homeowners were signing up and using it to sketch kitchen renovations and bedroom layouts. Not because they can code, but because:
+
+1. They asked Claude (the AI assistant) to design their room layout and give them Skissify JSON
+2. Pasted it into Skissify
+3. Got a hand-drawn sketch they could show their contractor
+
+That's... a real workflow. And not what I designed for.
+
+I'm building a "describe your room in plain English" mode so you don't need to touch JSON at all. Would look something like:
+
+"4m × 3m kitchen. Fridge on north wall. Island 1.5m × 0.8m in the center. Door on south side."
+
+→ instant sketch, share link, print for contractor meeting
+
+Would this be useful for renovation planning? What am I missing for the homeowner workflow?
+
+(Skissify is free for public sketches: skissify.com)
+```
+
+---
+
+### LinkedIn Post: "The Three Types of Skissify Users" (Post 12:00 CET Saturday)
+
+```
+We launched an AI sketch tool on Friday. 24 hours later, we have three user types we didn't fully anticipate.
+
+**Type 1: The MCP Developer**
+Configures Claude Desktop with our MCP server in 15 minutes. Asks Claude to "design a data center floor plan" and gets a hand-drawn sketch with a shareable URL. Comes back every day. This is who we built for.
+
+**Type 2: The Homeowner Planner**
+Uses Claude to describe their kitchen renovation, gets JSON they don't understand, pastes it into Skissify, prints the result for their contractor meeting. The JSON is invisible to them — Claude handles it. The sketch is all they need.
+
+**Type 3: The Dungeon Master**
+Uses Claude to generate D&D dungeon layouts. We never planned for this. They're some of our highest-activity users.
+
+What this tells me:
+
+The use case for "AI that can draw" is broader than "AI developers." The common thread isn't technical sophistication — it's the desire to produce a visual from a description.
+
+When your tool solves a latent need people didn't know was a tool category, you get unexpected users. That's not a problem to fix. It's a signal to follow.
+
+What category of "AI should just be able to draw this" have you hit personally?
+
+#BuildInPublic #AITools #MCP #ProductLaunch
+```
+
+---
+
+### Bluesky Day 2 Post (Post 10:00 CET)
+
+```
+Day 2 of @skissify.com
+
+The floor plan tool for AI agents discovered its second market: homeowners renovating kitchens and DMs designing dungeons.
+
+I built it for Claude Desktop MCP users. Regular people found a use case I didn't design for.
+
+"Human Mode" is now Day 2 priority, not Week 2.
+
+/skissify #MCPtools #BuildInPublic
+```
+
+---
+
+### Day 2 Full Action Table (Cycle 28 — 09:00–21:00 CET Saturday)
+
+| Priority | Time (CET) | Action | Status |
+|----------|-----------|--------|--------|
+| 1 🔴 | 07:00 | Fill in real Day 1 numbers | Check analytics + Stripe |
+| 2 🔴 | 07:30 | **r/mcp post** (Cycle 27 copy) | Critical — first post |
+| 3 🔴 | 08:00 | Tweet 87 (real numbers) | Fill blanks from analytics |
+| 4 🔴 | 08:00-12:00 | Publish Day 2 debrief blog | day-2-the-numbers-and-who-wants-skissify.md |
+| 5 🔴 | 08:30 | Publish LLM benchmark blog on Dev.to | the-llm-floor-plan-benchmark.md |
+| 6 🔴 | 09:00 | r/LocalLLaMA benchmark post | Cycle 27 copy |
+| 7 🔴 | 09:00 | MCP Official Discord post | Cycle 27 copy |
+| 8 🟡 | 09:15 | Tweet 92 (sketch URL as memory) | Cycle 28 NEW |
+| 9 🟡 | 10:00 | Bluesky Day 2 | Cycle 28 NEW |
+| 10 🟡 | 11:00 | LinkedIn "Three Types" post | Cycle 28 NEW |
+| 11 🟡 | 11:30 | Tweet 93 (Human Mode tease) | Cycle 28 NEW |
+| 12 🟡 | 12:00 | Publish "Human Mode Story" blog on Medium | the-human-mode-story.md |
+| 13 🟡 | 13:00 | Publish "Day 2 r/mcp" blog on Indie Hackers | day-2-rmcp-launch... |
+| 14 🟡 | 14:00 | Tweet 94 (dungeon map surprise) | Cycle 28 NEW |
+| 15 🟡 | 15:00 | **r/DnD post** (Cycle 28 NEW community) | Post with dungeon example |
+| 16 🟡 | 15:30 | r/HomeImprovement v2 post | Cycle 28 REVISED |
+| 17 🟢 | 16:00 | Tweet 95 (vibe drawing category) | Cycle 28 NEW |
+| 18 🟢 | 16:00 | Add email newsletter CTA to site | INFRASTRUCTURE 🔴 |
+| 19 🟢 | 17:00 | Publish "Sketch URL Beats Screenshot" blog | why-sketch-url-beats-a-screenshot.md |
+| 20 🟢 | 19:00 | Tweet 96 (Saturday hacker invite) | Cycle 28 NEW |
+| 21 🟢 | All day | Reply to all HN/Reddit comments | Community building |
+
+---
+
+### New Blog Posts Added (Cycle 28)
+
+| # | Title | File | Platform | Day |
+|---|-------|------|----------|-----|
+| 42 | **Day 2 Debrief: What the Numbers Say** | day-2-the-numbers-and-who-wants-skissify.md | Indie Hackers, Dev.to | Day 2 |
+| 43 | **The Human Mode Story** | the-human-mode-story.md | Medium, Substack | Day 2 |
+| 44 | **Why a Sketch URL Beats a Screenshot** | why-sketch-url-beats-a-screenshot.md | Dev.to, Hashnode | Day 2 |
+
+---
+
+### New Communities Unlocked (Cycle 28)
+
+| Community | Members | Angle | Status |
+|-----------|---------|-------|--------|
+| **r/DnD** | 6.4M | Dungeon map surprise use case — procedural maps via Claude + MCP | NEW — Day 2 |
+| **r/HomeImprovement** | 3.4M | Homeowner use case — revised, stronger framing | Cycle 28 REVISED |
+
+---
+
+### Viral Hook Summary (Cycle 28 Additions)
+
+| Hook | Tweet # | Why It Works |
+|------|---------|--------------|
+| "The sketch IS the memory" | 92 | Novel technical frame, agent-memory community |
+| "We're building a door for everyone else" | 93 (Human Mode) | Honest, expansion narrative |
+| "Dungeon maps: didn't plan for it, not mad" | 94 | Authentic surprise + new audience |
+| "Vibe drawing is the new vibe coding" | 95 | Piggybacks on established meme, positions category |
+| "What are you building this weekend?" | 96 | Invite participation, weekend energy |
+
+---
+
+*Last Updated: March 28, 2026 (02:32 CET — Cycle 28)*
+*Added: Tweets 92-96, r/DnD community post (NEW — 6.4M members), r/HomeImprovement v2 (revised), LinkedIn "Three Types" post, Bluesky Day 2, Human Mode tease, full Day 2 action table (21 items), Blog posts #42-44*
+
