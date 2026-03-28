@@ -3,6 +3,7 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { SketchData, SketchElement } from "@/lib/types";
 import { renderSketch, computeCenterTransform } from "@/lib/renderer";
+import Rulers, { RULER_SIZE } from "./Rulers";
 
 // Type-safe accessors for union element types
 type AnyEl = Record<string, unknown>;
@@ -228,6 +229,12 @@ export default function Canvas({
   const lastTouchDist = useRef<number | null>(null);
   const lastTouchCenter = useRef<{ x: number; y: number } | null>(null);
 
+  // Ruler state: cursor position in element-space, container dimensions, bounding rects
+  const [rulerCursor, setRulerCursor] = useState<{ x: number; y: number } | null>(null);
+  const [containerDims, setContainerDims] = useState({ w: 0, h: 0 });
+  const [canvasRectState, setCanvasRectState] = useState<DOMRect | null>(null);
+  const [containerRectState, setContainerRectState] = useState<DOMRect | null>(null);
+
   // Box-select state
   const boxStartScreen = useRef<{ x: number; y: number } | null>(null);
   const isBoxSelecting = useRef(false);
@@ -277,6 +284,28 @@ export default function Canvas({
     resetView();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [canvasW, canvasH]);
+
+  // Track container dimensions for rulers
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        setContainerDims({ w: entry.contentRect.width, h: entry.contentRect.height });
+      }
+    });
+    ro.observe(el);
+    setContainerDims({ w: el.clientWidth, h: el.clientHeight });
+    return () => ro.disconnect();
+  }, []);
+
+  // Update bounding rects whenever zoom/pan/size changes
+  useEffect(() => {
+    const c = canvasRef.current;
+    const el = containerRef.current;
+    if (c) setCanvasRectState(c.getBoundingClientRect());
+    if (el) setContainerRectState(el.getBoundingClientRect());
+  }, [zoom, pan, canvasW, canvasH, containerDims]);
 
   // Render
   const draw = useCallback(() => {
@@ -1013,6 +1042,7 @@ export default function Canvas({
 
   return (
     <div
+      id="rulers-container"
       ref={containerRef}
       className="flex-1 overflow-hidden flex items-center justify-center touch-none relative"
       style={{
@@ -1046,9 +1076,14 @@ export default function Canvas({
           onMouseMove={(e) => {
             handleMouseMove(e);
             handleCursorHover(e);
+            const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+            setRulerCursor({ x: mx, y: my });
           }}
           onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseLeave}
+          onMouseLeave={() => {
+            handleMouseLeave();
+            setRulerCursor(null);
+          }}
           className="rounded"
           style={{
             cursor,
@@ -1127,6 +1162,20 @@ export default function Canvas({
           +
         </button>
       </div>
+
+      {/* Canvas rulers */}
+      {containerDims.w > 0 && (
+        <Rulers
+          containerWidth={containerDims.w}
+          containerHeight={containerDims.h}
+          canvasW={canvasW}
+          canvasH={canvasH}
+          cursorPos={rulerCursor}
+          canvasRect={canvasRectState}
+          containerRect={containerRectState}
+          centerTransform={computeCenterTransform(sketch.elements, canvasW, canvasH)}
+        />
+      )}
     </div>
   );
 }
