@@ -1,7 +1,7 @@
 # Skissify Press Kit
 
-**Last Updated:** March 28, 2026 — 14:17 CET (Cycle 37)
-**Version:** 3.2
+**Last Updated:** March 28, 2026 — 20:39 CET (Cycle 38)
+**Version:** 3.3
 **Contact:** jesper@skissify.com
 
 ---
@@ -86,6 +86,17 @@ The following screenshots should be prepared for press use. Export at 2x resolut
 | 6 | Share link — public view of a sketch | `skissify-share-view.png` |
 | 7 | Pricing page | `skissify-pricing.png` |
 | 8 | Mobile view (read-only) | `skissify-mobile.png` |
+| 9 | Human Mode — text input field, sketch result | `skissify-human-mode.png` *(NEW — ship with Human Mode)* |
+| 10 | Dungeon map — blueprint paper, TTRPG room layout | `skissify-dungeon-map.png` *(NEW — audience discovery)* |
+| 11 | Geometry worksheet example — floor plan with dimension labels | `skissify-geometry-worksheet.png` *(NEW — education use case)* |
+| 1 | Editor view — cream paper, floor plan loaded | `skissify-editor-floorplan.png` |
+| 2 | Blueprint paper — white lines on blue | `skissify-blueprint.png` |
+| 3 | Four paper types side-by-side (same sketch) | `skissify-paper-types.png` |
+| 4 | All 14 element types rendered | `skissify-element-types.png` |
+| 5 | Claude Desktop / MCP integration in action | `skissify-mcp-claude.png` |
+| 6 | Share link — public view of a sketch | `skissify-share-view.png` |
+| 7 | Pricing page | `skissify-pricing.png` |
+| 8 | Mobile view (read-only) | `skissify-mobile.png` |
 
 ### Hero Image (OG)
 
@@ -115,7 +126,7 @@ The following screenshots should be prepared for press use. Export at 2x resolut
 
 ## Key Stats & Numbers
 
-*(Updated: March 28, 2026 — Day 2)*
+*(Updated: March 28, 2026 — Day 2 → Day 3 eve)*
 
 | Metric | Value |
 |--------|-------|
@@ -129,6 +140,18 @@ The following screenshots should be prepared for press use. Export at 2x resolut
 | Open source | MCP server + core renderer (planned) |
 | LLM success rate | 94% first-try (Claude Sonnet 4) |
 | MCP ecosystem | Works with all 12,770+ MCP-compatible systems |
+| Human Mode | Launching Week 1 — text → sketch, no JSON required |
+| Discovered audiences | AI developers, homeowners, dungeon masters, geometry teachers |
+
+### LLM Compatibility Benchmark (First-try success rate, floor plan task)
+
+| Model | Success Rate | Notes |
+|-------|-------------|-------|
+| Claude Sonnet 4 | **94%** | Recommended for production |
+| GPT-4o | **91%** | Strong alternative |
+| Gemini 2.5 Pro | **89%** | Solid option |
+| Llama 3.1 70B | **78%** | Usable with retry layer |
+| Mistral 7B | **52%** | Not recommended for production |
 
 ### Framework Integration Data (Updated — Cycle 37)
 

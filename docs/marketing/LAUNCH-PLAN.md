@@ -2,7 +2,96 @@
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com — JSON to hand-drawn sketch, AI-agent compatible
-**Status:** 🗓️ DAY 2 — Saturday March 28, 14:17 CET — 38 hours post-launch
+**Status:** 🗓️ DAY 2 → DAY 3 — Saturday March 28, 20:39 CET — 67 hours post-launch
+
+---
+
+## Marketing Improvements (Cycle 38 — March 28, 20:39 CET)
+
+### ⚡ STATUS: SATURDAY EVENING — DAY 3 PREP + HUMAN MODE ANNOUNCEMENT
+
+It's 20:39 CET Saturday March 28 (14:39 ET / 11:39 PT). Sunday launch push starts now. Cycle 38 activates the Human Mode announcement, the flagship "Four Audiences" Dev.to article (best long-form content of the launch), the LLM benchmark thread, r/programming and r/webdev Day 3 posts, newsletter outreach to 5 targets, and a Monday HN re-entry strategy built around Human Mode as a new angle.
+
+### Key New Angle: Human Mode Unlocks Non-Developer Audiences
+
+**Human Mode** — text → sketch with no JSON required — is the single feature that unlocks three of four discovered audiences (homeowners, dungeon masters, teachers) who want Skissify but don't want JSON. Announcing it now (72 hours post-launch) gives the slow-burn a second fuel source, and gives Monday's HN post a new concrete reason to post ("Show HN: Skissify + Human Mode — describe a room, get a hand-drawn floor plan").
+
+### What Changed Since Cycle 37
+
+- **"Four Audiences" Dev.to article written**: The flagship long-form content for launch week. ~2,200 words. Covers the surprise audience discovery, the primitives pattern, LLM benchmark data, and what's coming. File: `docs/marketing/blog/i-built-it-for-ai-devs-four-audiences-showed-up.md`
+- **Human Mode blog post written**: "The Version Without JSON" — explains Human Mode's design, trade-offs, and the decision to keep JSON-native while adding text input. File: `docs/marketing/blog/skissify-human-mode-no-json-required.md`
+- **Day 3 Sunday dispatch written**: "How to Land Week One of a Product Launch" — the builder's guide to the third day. Audit → write → seed. File: `docs/marketing/blog/day-3-sunday-the-week-one-landing.md`
+- **SOCIAL-MEDIA.md Cycle 38**: Tweets 145-150 (Human Mode, Day 3 momentum, LLM benchmark thread, wobble tech, Visual Primitive redux, Monday HN setup), r/programming Show post, r/webdev wobble algorithm post, 15-item Sunday timing table, newsletter outreach to 5 targets.
+- **Newsletter outreach targets identified**: TLDR AI, The Rundown, Superhuman, Ben's Bites, Pointer.io — 5 concrete targets with pitch angles for each.
+- **Monday HN strategy**: "Show HN: Skissify + Human Mode — describe a room, get a hand-drawn floor plan" — Human Mode is a distinct new feature that justifies a second Show HN post.
+
+### Completed This Cycle (38)
+- [x] ✅ **Blog post #69 NEW**: "I Built It for AI Devs — Four Audiences Showed Up" — flagship Dev.to article. ~2,200 words. LLM benchmark data, primitives pattern, four audience stories. File: `docs/marketing/blog/i-built-it-for-ai-devs-four-audiences-showed-up.md`
+- [x] ✅ **Blog post #70 NEW**: "Skissify Human Mode: The Version Without JSON" — Human Mode launch post. Design rationale, technical trade-offs, use cases for all four audiences. File: `docs/marketing/blog/skissify-human-mode-no-json-required.md`
+- [x] ✅ **Blog post #71 NEW**: "Day 3 Sunday: How to Land Week One of a Product Launch" — builder's guide to Day 3, data review, Week 1 strategy, three mistakes retrospective. File: `docs/marketing/blog/day-3-sunday-the-week-one-landing.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 38**: Tweets 145-150, r/programming Sunday Show post, r/webdev wobble algorithm post, Day 3 Sunday timing table (15 items), newsletter outreach targets, hashtag updates
+- [x] ✅ **Monday HN strategy planned**: "Show HN: Skissify + Human Mode" — new feature gives concrete reason for second post
+
+### New Blog Posts (Cycle 38)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 69 | **I Built It for AI Devs — Four Audiences Showed Up** | `i-built-it-for-ai-devs-four-audiences-showed-up.md` | **Dev.to (flagship), Hashnode, Medium** | **Day 3 Sunday** |
+| 70 | **Skissify Human Mode: The Version Without JSON** | `skissify-human-mode-no-json-required.md` | Medium, Substack | Day 3-4 |
+| 71 | **Day 3 Sunday: How to Land Week One** | `day-3-sunday-the-week-one-landing.md` | Indie Hackers, Substack | **Day 3** |
+
+### New Communities Unlocked (Cycle 38)
+| Community | Platform | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/programming** | Reddit | Show HN-style "I built this" + LLM benchmark | Sunday 09:00 CET |
+| **r/webdev** | Reddit | Wobble algorithm technical post | Sunday 15:00 CET |
+| **TLDR AI newsletter** | Email | MCP visual output, 94% LLM success rate | Sunday outreach |
+| **The Rundown AI** | Email | Four audiences story, free tier | Sunday outreach |
+| **Hacker News (second shot)** | HN | "Show HN: Skissify + Human Mode" | Monday 09:00 CET |
+
+### New Ideas (Cycle 38)
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Human Mode** | Unlocks 3/4 discovered audiences without JSON barrier | Medium | Very High |
+| **"Show HN: Human Mode" Monday post** | New concrete feature = new reason to post on HN | Zero | High |
+| **LLM benchmark as shareable content** | Data posts get shared/referenced in newsletters | Zero (data exists) | High |
+| **r/programming wobble algorithm post** | Technical audience loves implementation details | Low | Medium |
+| **Newsletter outreach (5 targets)** | Single email can unlock 10K-100K reach per newsletter | Low | High |
+| **#AIInfrastructure hashtag** | Positions Skissify as infra layer, not app | Zero | Medium |
+| **Worksheet Mode (from teacher's requests)** | Grid overlay, angle markers, dimension labels | Medium | High for edu |
+
+### Immediate Actions Right Now (20:39 CET)
+1. **21:00** — Tweet 145 (Human Mode announcement — broadest audience, posts while US is active)
+2. **22:00** — Tweet 144 (Day 2 real numbers wrap — fire with actual numbers)
+3. **Tonight** — Write/finalize Dev.to "Four Audiences" article for Sunday morning publish
+4. **Sunday 09:00** — r/programming Show post + Tweet 146 (Day 3 morning)
+5. **Sunday 11:00** — Publish Dev.to article, Tweet 147 LLM benchmark thread
+6. **Sunday 15:00** — r/webdev wobble post + newsletter outreach
+
+### Cumulative Blog Inventory (71 posts as of Cycle 38)
+| Range | See |
+|-------|-----|
+| #1-68 | Cycles 1-37 |
+| #69 | "I Built It for AI Devs — Four Audiences Showed Up" (Cycle 38) |
+| #70 | "Skissify Human Mode: The Version Without JSON" (Cycle 38) |
+| #71 | "Day 3 Sunday: How to Land Week One" (Cycle 38) |
+
+### Critical Infrastructure — Status (Cycle 38)
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Human Mode** | 🔴 CRITICAL | 🚧 Building this week — text → sketch, no JSON |
+| **Email newsletter signup** | 🔴 CRITICAL | ⚠️ Added Saturday, capturing leads |
+| **Wobble slider GIF** | 🔴 | ⚠️ Record today — 15 min, highest visual ROI |
+| **Monday HN "Show HN: Human Mode"** | 🟡 NEW | Prep Sunday evening, post Monday 09:00 CET |
+| **Newsletter outreach (5 targets)** | 🟡 NEW | TLDR AI, Rundown, Superhuman, Ben's Bites, Pointer.io |
+| **TypeScript SDK** (`@skissify/client`) | 🟡 | This week — Mastra/TypeScript devs |
+| **Directory submissions** | 🟡 | PulseMCP, AlternativeTo, DevHunt — today |
+| **Mastra plugin template** | 🟢 | Submit to Mastra templates ecosystem |
+| **Interactive JSON playground** | 🟢 | Week 1 |
+
+*Last Updated: March 28, 2026 (Cycle 38 — 20:39 CET)*
+*Added: Blog posts #69-71 (Four Audiences flagship, Human Mode launch, Day 3 dispatch), r/programming + r/webdev Day 3 posts, Tweets 145-150, Monday HN "Show HN: Human Mode" strategy, newsletter outreach to 5 targets, Human Mode as key Week 1 feature*
+
+---
 
 ---
 
