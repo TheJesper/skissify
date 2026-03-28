@@ -1,8 +1,8 @@
 # Skissify vs Excalidraw — Different Tools for Different Jobs
 
-*Published: March 2026 — Cross-post to Dev.to, Hashnode*
+*Updated: March 28, 2026 — Cross-post to Dev.to, Hashnode*
 
-> **Bottom line up front:** Excalidraw = human draws, AI watches. Skissify = AI draws, human sees. They're complements, not competitors. Use this guide to know which to reach for when.
+> **Bottom line up front:** Excalidraw = human draws, AI watches. Skissify = AI draws, human sees. They're complements, not competitors. Use this guide to know which to reach for when — and when a hybrid workflow beats both.
 
 ---
 
@@ -23,7 +23,10 @@ But they solve fundamentally different problems — and once you understand that
 | **Open source** | Core renderer (planned) | ✅ Fully OSS |
 | **Self-hostable** | ✅ Docker | ✅ Docker |
 | **Pricing** | Free + €5/mo Pro | Free + Excalidraw+ ($7/mo) |
+| **Paper styles** | 4 (cream, white, grid, blueprint) | 1 (cream-ish default) |
+| **Architectural elements** | 14 types (doors, windows, stairs, dims) | Basic shapes only |
 | **Best for** | AI workflows, code-generated sketches | Human collaboration, brainstorming |
+| **LLM first-try success** | 94% (Claude Sonnet 4) | N/A — not designed for LLM input |
 
 ---
 
@@ -41,7 +44,7 @@ Excalidraw also has a JSON format (its `.excalidraw` files), but that format isn
 
 ### Skissify: Code and AI-First Sketching
 
-Skissify has no canvas interaction (yet). There's no drag-and-drop. The input is JSON describing what you want drawn — absolute coordinates, sizes, types.
+Skissify has no canvas interaction. There's no drag-and-drop. The input is JSON describing what you want drawn — absolute coordinates, sizes, types.
 
 That sounds like a limitation. It's actually a feature.
 
@@ -61,7 +64,9 @@ Here's the philosophical divide:
 
 **Skissify** assumes the input could come from anywhere — human, script, or AI agent.
 
-In 2024, that difference was academic. In 2026, with AI agents doing meaningful creative and analytical work, it matters enormously.
+In 2024, that difference was academic. In 2026, with MCP hitting 97M+ monthly downloads and AI agents doing meaningful work in agent stacks, it matters enormously.
+
+The question isn't "which tool looks better?" It's "who is holding the pen?"
 
 ---
 
@@ -72,20 +77,29 @@ In 2024, that difference was academic. In 2026, with AI agents doing meaningful 
 - You want to draw something quickly by hand
 - You need basic flow diagrams with drag-and-drop simplicity
 - You're sharing editable diagrams for collaborative markup
-- Open-source self-hosting is a requirement
+- Open-source self-hosting is a hard requirement
+- Multiple humans will edit the same diagram simultaneously
 
 ### Use Skissify when:
-- You want an AI agent to create visuals
+- You want an AI agent to create visuals autonomously
 - You're generating sketches from structured data or code
 - You need architectural-specific elements (doors, windows, stairs, dimension lines)
-- You want precise wobble control (tunable amplitude, waves, humanness)
+- You want precise wobble control (tunable amplitude, waves, humanness per element)
 - You're building a pipeline that outputs sketches automatically
+- You need the same JSON to reliably produce the same sketch (determinism)
+- You're doing spatial reasoning work (floor plans, system architecture, network topology)
 
-### Use Both:
+### Use Both (The Hybrid Workflow):
 Many workflows benefit from both tools at different stages:
-- Use Skissify for AI-generated first drafts
-- Export or screenshot into Excalidraw for human annotation
-- Back to Skissify for clean final renders
+
+1. Use Skissify for AI-generated first drafts (5 seconds)
+2. Screenshot into Excalidraw for human annotation and collaborative markup
+3. Back to Skissify for clean final renders using the revised JSON
+
+Or for team workflows:
+1. Skissify generates the baseline (JSON → sketch)
+2. Excalidraw for group markup session
+3. Key decisions go back to Skissify for persistent, versioned output
 
 ---
 
@@ -96,14 +110,39 @@ This is worth dwelling on.
 MCP (Model Context Protocol) is how AI agents connect to external tools. With Skissify's MCP server, you can do things like:
 
 ```
-You: "Design the ground floor of a small office building — reception, 3 meeting rooms, open workspace for 20 people, kitchen. Show me the floor plan."
+You: "Design the ground floor of a small office building — reception, 3 meeting rooms, 
+      open workspace for 20 people, kitchen. Show me the floor plan."
 
 Claude: [designs layout, generates JSON, calls create_sketch, returns rendered drawing]
 ```
 
 Excalidraw has no equivalent. There's no way for an AI agent to natively create Excalidraw diagrams without a human redrawing the output.
 
+The install is one command:
+```bash
+npm install -g @skissify/mcp-server
+```
+
+Add to Claude Desktop config, restart, and Claude gains the ability to draw.
+
 As AI agents become more capable, this gap will widen. The tools that embrace programmatic interfaces will become essential; the tools that require human input will become finishing layers.
+
+---
+
+## Wobble: Same Goal, Different Implementation
+
+Both tools aim for a "hand-drawn" aesthetic. The engineering choices are completely different.
+
+**Excalidraw:** Applies a rough preset to shapes. The style is consistent across all elements — there's one "roughness" value.
+
+**Skissify:** Multi-harmonic wobble engine. Three independent axes of control:
+- **Amplitude** (how much deviation)
+- **Waves** (frequency of wobble)
+- **Humanness** (random tremor overlay)
+
+Each element type is tuned separately. A door arc wobbles differently than a wall line, which wobbles differently than a dimension marker.
+
+The practical result: Skissify's output looks more authentically hand-drawn because different parts of the sketch have different "hands." It's subtle but it matters — especially when the content is architectural (where wall precision vs. annotation casualness is a real design signal).
 
 ---
 
@@ -113,11 +152,11 @@ Both tools have free tiers for basic use.
 
 | Plan | Skissify | Excalidraw+ |
 |------|----------|-------------|
-| Free | Public sketches, editor | Local-only, no collaboration |
-| Pro | €5/mo — private sketches, API | $7/mo — cloud storage, team |
+| Free | Public sketches, editor, 50 API calls/mo | Local-only, no cloud storage |
+| Pro | €5/mo — private sketches, 2,000 API calls/mo | $7/mo — cloud storage, team features |
 | Enterprise | Custom | Custom |
 
-Skissify's free tier is more generous for individual use. Excalidraw+ is better value for teams that need real-time collaboration.
+Skissify's free tier is more generous for individual use. Excalidraw+ is better value for teams that need real-time collaboration and cloud sync.
 
 ---
 
@@ -129,6 +168,7 @@ Let's be honest about Skissify's gaps:
 2. **Mouse-driven drawing** — Sometimes you just want to draw by hand. Skissify doesn't support that.
 3. **Ecosystem maturity** — Excalidraw has years of polish, a huge user base, and extensive integrations.
 4. **Open source** — Excalidraw is fully OSS. Skissify's core renderer is planned OSS, but the web app is proprietary.
+5. **Plugin ecosystem** — Excalidraw has a rich plugin ecosystem. Skissify is earlier-stage.
 
 If you need a collaborative whiteboard that multiple humans edit together, Excalidraw wins. No contest.
 
@@ -136,11 +176,27 @@ If you need a collaborative whiteboard that multiple humans edit together, Excal
 
 ## What Skissify Does Better
 
-1. **AI agent output** — Only Skissify has MCP support and a JSON-first architecture designed for AI generation.
-2. **Architectural elements** — 14 element types including domain-specific: doors, windows, stairs, dimension lines, columns.
-3. **Wobble precision** — Skissify's multi-harmonic wobble engine gives fine-grained control that Excalidraw's single-parameter style doesn't match.
-4. **Paper styles** — Blueprint (dark blue, white lines), cream, grid, white — each with authentic rendering.
+1. **AI agent output** — Only Skissify has MCP support and a JSON-first architecture designed for AI generation. Claude, GPT-4o, Gemini, local LLMs — any of them can generate Skissify output natively.
+2. **Architectural elements** — 14 element types including domain-specific: hinged doors, sliding doors, windows, staircases, dimension lines, columns.
+3. **Wobble precision** — Per-element, multi-harmonic wobble control. Not a single roughness slider.
+4. **Paper styles** — Blueprint (dark blue, white lines), cream, grid, white — each with authentic rendering that sets different aesthetic contexts.
 5. **Code-generated sketches** — Any script or API consumer can generate Skissify sketches. Great for documentation automation.
+6. **Determinism** — Same JSON = same sketch. Always. Useful for versioned outputs in agent workflows.
+7. **LLM success rate** — Designed to be generated by AI: flat schema, absolute coordinates, minimal nesting. Claude hits 94% first-try.
+
+---
+
+## The Unexpected Uses (Launch Day Intel)
+
+When Skissify launched, the use cases that emerged beyond AI developers were instructive:
+
+**Homeowners** used it to describe renovation layouts to Claude and get floor plans for contractor meetings. No JSON knowledge required — Claude handles the translation from English to JSON.
+
+**D&D Dungeon Masters** discovered that blueprint style + wobble creates exactly the aesthetic of a hand-drawn dungeon map. Now r/DnD has posts about it.
+
+**Geometry teachers** used it to generate 30 different spatial layout problems in 10 minutes for classroom exercises.
+
+None of these were planned. All of them are enabled by the JSON-first, deterministic architecture that also makes it great for AI agents.
 
 ---
 
@@ -154,9 +210,13 @@ If the pen is held by JSON, a script, or an AI agent, use Skissify.
 
 They're not competitors. They're complements for different moments in the design process.
 
+And if you're building with AI agents in 2026, you need both: Skissify for the AI's output layer, Excalidraw for the human's annotation layer.
+
+The question isn't which one wins. It's: when is the human in the loop, and when is the agent?
+
 ---
 
-*Try Skissify at [skissify.com](https://skissify.com) — the editor is free, no signup required.*
+*Try Skissify at [skissify.com](https://skissify.com) — the editor is free, no signup required. MCP server: `npm install -g @skissify/mcp-server`*
 
 ---
 
@@ -164,15 +224,26 @@ They're not competitors. They're complements for different moments in the design
 
 Short answer: tldraw is a developer SDK primarily — it's excellent if you're building a whiteboard into your own product. Commercial license is $6K/year. It doesn't have MCP support and doesn't have the architectural element set.
 
-A three-way comparison (Skissify vs Excalidraw vs tldraw) is in progress for Week 2.
+A three-way comparison (Skissify vs Excalidraw vs tldraw) is coming in Week 2.
 
 ---
 
-**Tags:** comparison, excalidraw, design-tools, ai, mcp, developer-tools, sketching
+## What About Mermaid?
+
+Mermaid takes a different approach — text DSL for diagrams. It's excellent for flowcharts, sequence diagrams, and ER models. But it doesn't produce spatial/architectural sketches (no floor plans), and the output is SVG-clean rather than hand-drawn.
+
+Skissify and Mermaid can complement each other: Mermaid for logical flow, Skissify for spatial layout.
+
+---
+
+**Tags:** comparison, excalidraw, design-tools, ai, mcp, developer-tools, sketching, tldraw
 
 **Distribution notes (internal):**
 - Dev.to: Best home — developer community knows both tools, high search volume for "excalidraw alternatives"
-- Medium: Use the "The Architectural Difference" section as the hook subheader
-- SEO targets: "excalidraw alternative", "excalidraw vs skissify", "ai diagram tool", "mcp drawing tool"
+- Medium: Use "The Architectural Difference" section as the hook subheader
+- SEO targets: "excalidraw alternative", "excalidraw vs skissify", "ai diagram tool", "mcp drawing tool", "skissify vs excalidraw"
 - Publish Day 4 (Mon Mar 30) — after the HN/PH rush, when Google starts indexing
-- Tweet hook: "Excalidraw = human draws. Skissify = AI draws. Different jobs. Here's when to use which 👇"
+- Tweet hook: "Excalidraw = human draws. Skissify = AI draws. Here's when to use which, and when to use both 👇"
+- **NEW**: Added "unexpected uses" section with launch day discoveries (homeowners, D&D DMs, teachers)
+- **NEW**: Added Mermaid comparison section
+- **NEW**: Expanded hybrid workflow section

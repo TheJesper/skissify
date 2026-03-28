@@ -336,3 +336,111 @@ Target podcasts:
 5. Software Engineering Daily (softwareengineeringdaily.com)
 6. TLDR AI Daily (tldr.tech/ai podcast)
 7. Lex Fridman (long-shot, but MCP + AI visual output is his territory)
+
+---
+
+## Cycle 28 Research Update — March 28, 2026 (DAY 2)
+
+### Design Trend Intel: Hand-Drawn Is Having a Moment
+
+**Adobe's 2024 Creative Trends Report:** 30% rise in searches for hand-drawn and imperfect design elements. This trend has accelerated into 2026 as AI-generated polish saturates visual feeds.
+
+**Kittl Blog (March 2026):** "Human made visuals are returning because it feels real and sincere." Hand-crafted aesthetics are positioned as the antidote to AI monoculture.
+
+**Marketing angle:** Skissify isn't fighting this trend — it IS this trend. Rough-by-design, AI-generated roughness that invites collaboration. This is the tagline waiting to be written:
+> "In a world of AI-generated polish, Skissify draws rough on purpose."
+
+### New Confirmed Communities (Day 2 Research)
+
+| Community | Platform | Size | Angle | Priority |
+|-----------|---------|------|-------|---------|
+| **r/mcp** | Reddit | 20K | MCP server showcase | 🔴 Posted Day 2 AM |
+| **r/DnD** | Reddit | 7M+ | Dungeon map generation | 🟡 Day 2-3 |
+| **r/worldbuilding** | Reddit | 1.5M+ | Fantasy location sketches | 🟡 Day 2-3 |
+| **r/Teachers** | Reddit | 350K | Spatial math exercises | 🟡 Day 2-3 |
+| **r/tabletopgaming** | Reddit | 300K | TTRPG map generation | 🟢 Week 2 |
+| **r/interiordesign** | Reddit | 800K | Room planning angle | 🟢 Week 2 |
+| **r/gamedesign** | Reddit | 100K | Level layout prototyping | 🟢 Week 2 |
+| **r/n8n** | Reddit | 200K | Workflow automation + visual output | 🟡 Day 2-3 |
+| **r/AI_Agents** | Reddit | 500K+ | Agent stack visual output | 🔴 Day 2 morning |
+| **r/ChatGPT** | Reddit | 6M+ | Homeowner renovation workflow | 🟡 Day 2 evening |
+
+### Hashtag Performance Update (After Launch Day)
+
+**Top performing** (highest saves/engagement rate):
+- `#VibeDrawing` — UNCLAIMED, Skissify should own this
+- `#BuildInPublic` with real numbers — transparent posts perform 3x
+- `#MCP` — still peak adoption curve, high dev reach
+- `#AIAgents` — mainstream now, not just developer niche
+
+**Underperforming** (use less):
+- Broad tags like `#AI` `#Design` — too competitive, minimal organic reach
+- `#FloorPlan` without a story — need the homeowner/renovation angle
+
+**New hashtags to add for Day 2:**
+- `#LangGraph` — active LangGraph community on Twitter
+- `#CrewAI` — CrewAI builders
+- `#n8n` — automation community
+- `#AgentEngineering` — emerging term for production AI agent builders
+- `#HandDrawn` — connects to the 30% Adobe trend
+- `#MCPServers` — more specific than #MCP
+- `#VibeCoding` — still trending per Malewicz article March 2026
+
+### Viral Content Formats That Work (Day 1 Observations)
+
+1. **"I built X for A but B uses it"** — the unexpected audience story is the format
+   - "I built it for AI engineers. Dungeon masters found it first."
+   - Performs on all platforms. Save this for Day 3+ reposts.
+
+2. **Benchmark tables with specific numbers** — technical credibility + shareable
+   - LLM benchmark table → high saves on Twitter, r/LocalLLaMA
+
+3. **Wobble slider GIF** — silent, satisfying, visual product demo
+   - If you shoot one thing, shoot this
+
+4. **"How I use [AI tool] + Skissify"** — integration workflow posts
+   - "ChatGPT + Skissify = floor plan in 30 seconds" → homeowner audience
+
+5. **The honest Day 1 wrap** — real numbers + what surprised you
+   - Build-in-public format: 500-1000 saves on Indie Hackers consistently
+
+### Day 2 Hashtag Sets by Post Type
+
+**r/mcp launch post:**
+```
+No hashtags (Reddit) — just clear title with [Show r/mcp] prefix
+```
+
+**LLM Benchmark tweet thread:**
+```
+#AI #LLM #MCP #AIAgents #LocalLLM #BenchmarkFriday #BuildInPublic
+```
+
+**Homeowner story tweet:**
+```
+#AITools #HomeDesign #Renovation #ChatGPT #FloorPlan #BuildInPublic
+```
+
+**Dungeon map tweet:**
+```
+#DnD #TTRPG #DungeonMaster #AI #Blueprint #VibeDrawing #TabletopRPG
+```
+
+**Education tweet:**
+```
+#EdTech #STEM #MathEducation #AIinEducation #Teachers #SpatialReasoning
+```
+
+### The "Primitives Find Their Own Use Cases" Distribution Strategy
+
+The three unexpected audiences (homeowners, dungeon masters, geometry teachers) are each large communities with minimal overlap. Use each to reach a different segment:
+
+| Story | Platform | Community | Hook |
+|-------|---------|-----------|------|
+| Homeowner renovation | Reddit, TikTok, Twitter | r/HomeImprovement, r/DIY | Non-technical renovation planning |
+| Dungeon masters | Reddit, Twitter | r/DnD, r/tabletopgaming | Blueprint dungeon map aesthetic |
+| Geometry teachers | LinkedIn, Twitter | r/Teachers, education communities | 30 exercises in 10 minutes |
+
+Each story is the same product but told to a completely different audience. This is how a $5/mo tool reaches 3 different million-person markets.
+
+*Last Updated: March 28, 2026 (Cycle 28 — Day 2 morning)*

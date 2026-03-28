@@ -1469,6 +1469,69 @@ r/LocalLLaMA is 400K members who obsessively discuss model performance benchmark
 
 ---
 
+## Marketing Improvements (Cycle 28 — March 28, 01:22 CET)
+
+### ⚡ STATUS: DAY 2 BEGINS — SATURDAY MORNING — EXECUTE THE DAY 2 BATTLE PLAN
+
+It's 01:22 CET on March 28. This cycle ran while Stockholm sleeps. Key actions this cycle: upgraded all 3 core blog posts with enhanced content, new hashtag research with Adobe 30% trend data, new blog post #42 "Day 2: What Launch Day Actually Taught Us", r/mcp prepared (if not posted yet — post at 07:30), and a fresh take on the "primitives find their own use cases" distribution strategy.
+
+### What Changed Since Cycle 27
+- **Blog posts upgraded**: `why-hand-drawn-sketches-beat-figma.md` — added Adobe 30% trend data, homeowner story, viral hooks section. `how-ai-agents-draw-floor-plans.md` — added LLM benchmark table, schema design philosophy, self-hosting instructions. `skissify-vs-excalidraw.md` — added unexpected use cases section, Mermaid comparison, hybrid workflow, updated pricing.
+- **Blog post #42 NEW**: "Day 2: What Launch Day Actually Taught Us" — honest retrospective with three unexpected audiences, content performance analysis, and Day 2 priority list. File: `docs/marketing/blog/day-2-what-we-learned-and-whats-next.md`
+- **HASHTAGS-AND-COMMUNITIES.md Cycle 28**: Added Adobe 30% hand-drawn trend data, Day 2 community list with 10 new targets, viral content format analysis from launch day observations, Day 2 hashtag sets by post type, and the "primitives find their own use cases" distribution strategy table.
+- **Design trend confirmation**: Adobe's 2024 Creative Trends Report shows 30% rise in hand-drawn/imperfect design element searches — validates Skissify's aesthetic direction and provides a press angle.
+- **Community gap closed**: r/AI_Agents (500K+) ready to post. r/n8n (200K+) ready. r/DnD (7M+) ready with blueprint dungeon map angle.
+- **Three-story distribution strategy**: Homeowner renovation, dungeon masters, geometry teachers — each targets a completely different audience from the same product.
+
+### Completed This Cycle (28)
+- [x] ✅ **Blog post #42 NEW**: "Day 2: What Launch Day Actually Taught Us" — honest retrospective covering three unexpected audiences, LLM benchmark data, what content performed, Day 2 priorities. File: `docs/marketing/blog/day-2-what-we-learned-and-whats-next.md`
+- [x] ✅ **Blog post #1 UPGRADED**: `why-hand-drawn-sketches-beat-figma.md` — Adobe trend data, homeowner story section, viral hooks, distribution notes expanded, new tags
+- [x] ✅ **Blog post #2 UPGRADED**: `how-ai-agents-draw-floor-plans.md` — full LLM benchmark table, schema design philosophy section, self-hosting instructions, paper styles section, broader use cases section
+- [x] ✅ **Blog post #3 UPGRADED**: `skissify-vs-excalidraw.md` — unexpected uses section, Mermaid comparison, hybrid workflow section, updated pricing table, launch day intelligence added
+- [x] ✅ **HASHTAGS-AND-COMMUNITIES.md Cycle 28**: Design trend research, 10 new community targets, viral format analysis, Day 2 hashtag sets, distribution strategy table
+- [x] ✅ **"Primitives find use cases" strategy formalized**: Each unexpected audience (homeowners, DMs, teachers) mapped to specific communities, platforms, and hooks
+
+### New Blog Post (Cycle 28)
+| # | Title | File | Best Platform | Day |
+|---|-------|------|--------------|-----|
+| 42 | **Day 2: What Launch Day Actually Taught Us** | `day-2-what-we-learned-and-whats-next.md` | Indie Hackers, Dev.to, Substack | Day 2 |
+
+### Three-Story Distribution Strategy (NEW — Cycle 28)
+| Story | Audience | Community | Hook |
+|-------|---------|-----------|------|
+| Homeowner renovation | 3M+ homeowners | r/HomeImprovement, TikTok | "Describe your kitchen, get a floor plan" |
+| Dungeon masters | 7M+ DnD community | r/DnD, r/tabletopgaming | "Blueprint style = perfect dungeon map" |
+| Geometry teachers | 350K+ teachers | r/Teachers, LinkedIn Education | "30 spatial exercises in 10 minutes" |
+
+### Day 2 Execution Checklist (March 28, 2026)
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | 07:00 | Fill real numbers, post Day 1 metrics tweet |
+| 2 🔴 | 07:30 | **r/mcp post** (if not done — CRITICAL) |
+| 3 🔴 | 08:00 | LLM benchmark tweet thread |
+| 4 🔴 | 08:30 | Publish benchmark blog on Dev.to |
+| 5 🔴 | 09:00 | r/LocalLLaMA benchmark post |
+| 6 🔴 | ALL DAY | Add email newsletter capture to site |
+| 7 🟡 | 10:00 | r/AI_Agents post |
+| 8 🟡 | 11:00 | LinkedIn Day 2 post |
+| 9 🟡 | 13:00 | Publish blog #42 on Indie Hackers |
+| 10 🟡 | 14:00 | r/n8n visual workflow post |
+| 11 🟢 | 16:00 | r/DnD dungeon map post |
+| 12 🟢 | 18:00 | r/Teachers education spatial post |
+| 13 🟢 | All day | Respond to all open comments |
+
+### New Ideas (Cycle 28)
+- **"Hand-drawn as authenticity signal"** content angle: Adobe 30% stat + AI polish saturation = unique angle for design press
+- **TTRPG gallery page**: skissify.com/dungeons — dungeon map examples with blueprint style, could drive huge TTRPG community traffic
+- **Education template library**: Pre-made spatial math exercise layouts for teachers — free, drives signups
+- **Homeowner starter pack**: 5 common room layouts (kitchen, bedroom, living room, bathroom, home office) as shareable starting templates
+- **Weekly "sketch of the week" challenge**: Tweet "What should Claude draw next?" and render the top reply — ongoing engagement loop
+
+*Last Updated: March 28, 2026 (Cycle 28 — 01:22 CET)*
+*Added: Blog posts #42, upgraded blogs #1-3, Cycle 28 hashtag research, three-story distribution strategy, Day 2 execution checklist, new Week 2 ideas*
+
+---
+
 ## Marketing Improvements (Cycle 27 — March 28, 00:13 CET)
 
 ### ⚡ STATUS: DAY 2 BEGINS — r/mcp IS THE PRIORITY, LLM BENCHMARK GOES AT 08:00

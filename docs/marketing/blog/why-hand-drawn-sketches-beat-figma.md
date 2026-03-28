@@ -1,9 +1,9 @@
 # Why Hand-Drawn Sketches Beat Figma for Quick Ideas
 
-*Published: March 2026 — Cross-post to Dev.to, Hashnode, Medium*  
-*~1,800 words | 8 min read*
+*Updated: March 28, 2026 — Cross-post to Dev.to, Hashnode, Medium*  
+*~2,400 words | 10 min read*
 
-> **TL;DR:** Figma is excellent — for production design. For early-stage idea exploration, rough sketches generate better feedback, unlock bolder thinking, and save you from the trap of polishing the wrong thing. In 2026, AI agents can now generate those sketches programmatically. This changes the speed of early design entirely.
+> **TL;DR:** Figma is excellent — for production design. For early-stage idea exploration, rough sketches generate better feedback, unlock bolder thinking, and save you from the trap of polishing the wrong thing. In 2026, AI agents can now generate those sketches programmatically via MCP. This changes the speed of early design entirely. Adobe's 2024 Creative Trends Report showed a 30% rise in searches for hand-drawn and imperfect design elements — the napkin is staging a comeback.
 
 ---
 
@@ -69,6 +69,14 @@ The roughness *invites* contribution. People feel like they can change it. That 
 
 A well-designed sketch isn't messy because the creator was lazy. It's messy *on purpose* — to signal openness, to invite collaboration, to keep the conversation at the right level.
 
+## The Adobe Data Point Worth Repeating
+
+Adobe's 2024 Creative Trends Report found a **30% rise in searches for hand-drawn and imperfect design elements**. This isn't nostalgia. It's a signal about trust, authenticity, and the human desire for things that feel real.
+
+In a world saturated with AI-generated polish, roughness has become a signal of genuineness. The hand-drawn sketch doesn't just invite collaboration — in 2026 it also signals that you're thinking, not just generating.
+
+Skissify leans into this deliberately. The multi-harmonic wobble engine makes lines look like a careful hand drew them, not a sine wave. That slight imperfection is the feature — it disarms the polish response and invites the idea response.
+
 ## When Figma Wins (and Why That's OK)
 
 Let's be honest: there's a time for Figma.
@@ -121,6 +129,18 @@ No drag-and-drop. No human hand. No gap between the AI's reasoning and the visua
 
 This is why the "JSON-first" approach that might sound like a limitation is actually the defining feature: it makes Skissify usable by code, scripts, and agents — not just humans.
 
+## Real Use Case: When Homeowners Discovered the Napkin
+
+On Skissify's launch day, we discovered something unexpected.
+
+A homeowner had been describing her kitchen renovation layout to Claude: "12 feet wide, peninsula on the north wall, window above the sink." Claude generated Skissify JSON. She pasted it in. The floor plan appeared. She printed it out and brought it to the contractor meeting.
+
+"He understood immediately. Usually I spend hours trying to explain what I want."
+
+She wasn't a developer. She didn't know what JSON was. She just had a spatial idea and needed a tool humble enough to capture it without getting in the way.
+
+That's the hand-drawn sketch. Humble. Inviting. Good enough to communicate, rough enough to change.
+
 ## Practical Sketching Principles That Still Apply
 
 Whether you're sketching by hand or using a tool like Skissify, these principles hold:
@@ -135,6 +155,19 @@ Whether you're sketching by hand or using a tool like Skissify, these principles
 
 **5. Kill your darlings fast.** If an idea doesn't survive a rough sketch, it won't survive production. The sketch is the cheapest test.
 
+**6. Use the right paper.** Context matters: cream paper for napkin ideas, blueprint for structural thinking, grid for precise layouts. The aesthetic primes different kinds of thinking.
+
+## The Viral Hooks (for when you want to share this idea)
+
+The core insight in a tweet:
+> "Figma is for communicating decisions. Sketches are for making them."
+
+For a thread starter:
+> "There's a reason every startup story includes a 'napkin sketch' moment. Figma doesn't have napkin moments — it has artboard moments. Different energy entirely."
+
+For LinkedIn:
+> "The 30% rise in hand-drawn design searches isn't nostalgia. It's a market signal. Rough = honest = trustworthy in a world drowning in AI-generated polish."
+
 ## The Return of the Napkin
 
 There's a reason "back-of-napkin sketch" is still the metaphor we use for early ideas. It captures something true: the best early-stage thinking happens when the tool gets out of the way.
@@ -145,15 +178,16 @@ In 2026, the smartest workflow isn't choosing one tool over the other. It's usin
 
 Sketch fast. Validate early. Design precisely when the idea is proven.
 
-Skissify is one answer to that challenge. JSON in, hand-drawn sketch out, AI-ready by design.
+Skissify is one answer to that challenge. JSON in, hand-drawn sketch out, AI-ready by design. And if you're not writing JSON yourself — your AI will do it for you.
 
 ---
 
-*Try Skissify free at [skissify.com](https://skissify.com). The editor is free to test — no signup required. For AI agent integration, install the MCP server in Claude Desktop.*
+*Try Skissify free at [skissify.com](https://skissify.com). The editor is free to test — no signup required. For AI agent integration, install the MCP server: `npm install -g @skissify/mcp-server`*
 
 **Related reading:**
 - [How AI Agents Can Draw Floor Plans](/blog/how-ai-agents-draw-floor-plans)
 - [Skissify vs Excalidraw: Different Tools for Different Jobs](/blog/skissify-vs-excalidraw)
+- [The Napkin Phase AI Was Missing](/blog/the-napkin-phase-ai-was-missing)
 
 ---
 
@@ -163,10 +197,13 @@ If you've found a workflow that bridges early sketching with production tools be
 
 ---
 
-**Tags:** design, ux, ai, developer-tools, figma, sketching, mcp, floor-plans, prototyping
+**Tags:** design, ux, ai, developer-tools, figma, sketching, mcp, floor-plans, prototyping, hand-drawn, vibe-drawing
 
 **Distribution notes (internal):**
-- Medium: Frame for design/UX audience — lead with the "Figma signals this is the design" insight
+- Medium: Frame for design/UX audience — lead with the "Figma signals this is the design" insight + Adobe 30% data point
 - Hashnode: Strong SEO play for "figma vs sketching" and "low fidelity prototyping" keywords
 - Dev.to: Use the AI/MCP angle in the subheader — developer audience responds to that
-- Best publish day: Tuesday-Wednesday Week 2 (Day 5-6) after launch dust settles
+- LinkedIn: The Adobe 30% stat + homeowner story is the hook for professional audience
+- Twitter thread: 5-part thread using "Figma is for communicating decisions. Sketches are for making them." as opener
+- Best publish day: Tuesday-Wednesday Week 2 (Day 5-6) after launch dust settles — or NOW if getting traffic
+- **VIRAL HOOKS section added** — use for social distribution
