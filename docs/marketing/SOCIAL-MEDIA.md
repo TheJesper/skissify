@@ -1,8 +1,240 @@
 # Skissify — Social Media Launch Content
 
 **Launch Date: March 27, 2026**  
-**Day 2 (March 28): See Cycle 28 section at the top for Saturday content**
+**Day 2 (March 28): See Cycle 31 section at the TOP for current Saturday 06:00 CET content**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 31 — SATURDAY 06:02 CET — LAUNCH DAY +1 MORNING ACTIVATION
+
+*It's 06:02 CET Saturday March 28. Launch day is done. This cycle covers the first 6 hours of Day 2: the r/mcp post, the morning benchmarks, the email capture urgency, and three new viral hooks targeting communities not yet posted to.*
+
+### The Three Things That MUST Happen Before 10:00 CET Today
+
+1. **07:30 — r/mcp post** — this community was never notified. They're the exact audience Skissify was built for. 20K members. Post it.
+2. **Email newsletter capture live on site** — zero emails collected yesterday. Before you do anything else at your computer, add a simple email form.
+3. **Real numbers tweet at 07:00** — only post if you have real data. Do NOT post placeholder numbers.
+
+---
+
+### NEW Tweet 108 — Saturday Early Riser Hook (06:30 CET if awake, else 09:00)
+
+```
+It's early Saturday.
+
+I launched Skissify 30 hours ago.
+
+Here's what I got wrong:
+
+→ Forgot to tell the MCP community (their post is at 07:30)
+→ Didn't build email capture before launch (fixing this morning)
+→ Underestimated homeowners by 400%
+→ Never expected dungeon masters to show up at all
+
+Build in public means sharing the mistakes too.
+
+Back to work.
+
+skissify.com
+#BuildInPublic #IndieHackers #SoloFounder
+```
+
+---
+
+### NEW Tweet 109 — The Viral Comparison Post (Post 11:00 CET)
+
+```
+AI tools that let you describe and see:
+
+Code → GitHub Copilot, Cursor ✅
+Writing → Claude, ChatGPT ✅
+Images → DALL-E, Midjourney ✅
+Sketches → ...nothing?
+
+Until yesterday.
+
+Skissify: JSON in, hand-drawn sketch out.
+AI agents call it via MCP.
+You describe, it draws.
+
+skissify.com
+
+#AI #AIAgents #MCP #VibeDrawing
+```
+
+---
+
+### NEW Tweet 110 — Saturday Builder Hook (Post 14:00 CET)
+
+```
+Saturday afternoon challenge:
+
+Give Claude Desktop this task:
+"Design a cozy studio apartment for a creative person. Maximize natural light. Include a reading nook. Draw it."
+
+See what it comes up with.
+
+Skissify MCP is the drawing layer.
+npm install -g @skissify/mcp-server
+
+Share what it draws 👀
+
+skissify.com (free)
+```
+
+---
+
+### NEW Tweet 111 — The "Human Mode" Tease (Post 16:00 CET)
+
+```
+The most common feedback from Day 1:
+
+"I love the output. I just don't want to write JSON."
+
+Fair.
+
+Building "Human Mode" this weekend:
+- Type in plain English
+- Skissify calls Claude
+- Sketch appears
+- No JSON visible
+
+Testing now. Will ship before Monday.
+
+What would you describe first?
+```
+
+---
+
+### NEW Tweet 112 — The Design Tool Manifesto (Post 19:00 CET)
+
+```
+Unpopular opinion: the best design tool for a new idea is one that looks bad.
+
+Rough = honest
+Polished = commitment before you're ready
+
+Skissify is deliberately rough.
+
+The wobble algorithm is not a bug. It's not "we couldn't afford a better renderer."
+
+It's the signal that this is a draft. That revision is expected.
+
+That's the whole product philosophy.
+
+skissify.com — rough by design
+#DesignTools #AI #VibeDraw #BuildInPublic
+```
+
+---
+
+### NEW r/mcp Post — PRIORITY (Post 07:30 CET TODAY)
+
+Already drafted in Cycle 27. Use that exact copy. Do not modify. Post at 07:30 CET.
+
+---
+
+### NEW r/HomeImprovement Campaign Post (Post 10:00 CET Saturday)
+
+**Title:** "Tool I built got used by homeowners before I planned for it — sharing the workflow"
+
+```
+Hi r/HomeImprovement,
+
+Developer here. I built Skissify (skissify.com) as an AI developer tool. It generates hand-drawn floor plans from JSON.
+
+On launch day yesterday, homeowners discovered a workflow I hadn't designed for:
+
+1. Describe your room to Claude: "My kitchen is 4m × 5m. I want a peninsula on the north side. Window above the sink. Fridge left of the door."
+2. Claude generates the JSON layout
+3. Paste JSON into Skissify
+4. Get a hand-drawn floor plan you can print and bring to your contractor
+
+Several people told me this made contractor communication much easier — "he immediately understood what I wanted."
+
+The limitation: you need to paste JSON manually. I'm building a "describe it in plain English" mode this weekend that removes that step.
+
+Current free features:
+- Public sketches (no signup)
+- 14 room elements (walls, doors, windows, stairs, islands, etc.)
+- 4 paper styles including blueprint
+- Shareable link for every sketch
+
+Would this be useful for renovation planning? What room element types should I add for homeowner use cases?
+
+[example floor plan image]
+
+https://skissify.com
+```
+
+---
+
+### NEW Hashtag Research — Cycle 31 (Confirmed Active March 28, 2026)
+
+From web research this morning:
+
+**Top performing hashtags for developer/AI tool launches (March 2026):**
+- `#MCP` — mainstream as of March 2026, 97M monthly SDK downloads
+- `#AIAgents` — broad, high-engagement developer community
+- `#BuildInPublic` — strong on weekends (founders building Saturday)
+- `#IndieHackers` — engaged weekend audience
+- `#VibeDrawing` — UNCLAIMED. Skissify should own this. Use consistently.
+- `#VibeDraw` — short form of above
+- `#Claude` / `#ClaudeCode` — active developer community
+- `#LangGraph` / `#CrewAI` / `#n8n` — agent framework communities
+
+**New consumer/home hashtags (not yet used):**
+- `#HomeReno` — high weekend engagement
+- `#KitchenRenovation` — specific, conversion-ready audience
+- `#FloorPlanDesign` — searchable, low competition
+- `#AIHomeDesign` — emerging category, Skissify can lead it
+
+**TikTok/Instagram hashtags for video content (shoot today if possible):**
+- `#satisfying` — wobble slider content, no words needed
+- `#ai` + `#homedesign` hybrid posts
+- `#floorplan` — 800M+ TikTok views
+
+---
+
+### Community Timing Table — Saturday March 28 (Cycle 31)
+
+| Time (CET) | Platform | Action | Priority |
+|------------|----------|--------|---------|
+| 06:30 | — | Add email newsletter capture to site | 🔴 CRITICAL |
+| 07:00 | Twitter/X | Tweet real Day 1 numbers (fill from analytics) | 🔴 |
+| 07:30 | r/mcp | **FIRST EVER POST — MCP community** (Cycle 27 copy) | 🔴 |
+| 08:00 | Twitter/X | LLM benchmark thread (Cycle 27 copy) | 🔴 |
+| 08:30 | Dev.to | Publish LLM benchmark blog | 🟡 |
+| 09:00 | r/LocalLLaMA | Benchmark post | 🟡 |
+| 09:00 | Twitter/X | Tweet 108 — Saturday early riser | 🟡 |
+| 10:00 | r/HomeImprovement | Campaign post (NEW Cycle 31 copy) | 🟡 |
+| 11:00 | Twitter/X | Tweet 109 — viral comparison post | 🟡 |
+| 14:00 | Twitter/X | Tweet 110 — Saturday builder challenge | 🟢 |
+| 16:00 | Twitter/X | Tweet 111 — Human Mode tease | 🟢 |
+| 18:00 | r/interiordesign | Interior design community post (Cycle 29) | 🟢 |
+| 19:00 | Twitter/X | Tweet 112 — design manifesto | 🟢 |
+| 19:00 | r/RPGdesign | TTRPG design community (Cycle 29) | 🟢 |
+| 22:00 | Email | Newsletter outreach (5 targets from Cycle 29) | 🟢 |
+| All day | All | Reply to every open comment from Day 1 | 🔴 |
+
+---
+
+### What's New in Cycle 31 vs Previous Cycles
+
+| Addition | Why |
+|----------|-----|
+| Email capture urgency | Zero email collection on Day 1 — every hour without it is lost retention |
+| Tweet 108-112 | Fresh Saturday content, different angles from launch day copy |
+| r/HomeImprovement Campaign Post | Stronger framing based on Day 1 homeowner signal |
+| Confirmed hashtag research | March 28 morning data — #VibeDraw, #VibeDrawing unclaimed |
+| Consumer hashtag set | #HomeReno, #KitchenRenovation, #FloorPlanDesign — new audience segment |
+| Human Mode tease | Ship signal — builds anticipation |
+
+*Last Updated: March 28, 2026 (Cycle 31 — 06:02 CET)*
+*Added: Tweets 108-112, r/HomeImprovement campaign post, hashtag research update, email capture urgency, full Saturday timing table (12 actions), Human Mode tease*
+
+---
 
 ---
 

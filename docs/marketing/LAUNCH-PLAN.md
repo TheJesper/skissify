@@ -1619,6 +1619,78 @@ The honest framing is always more compelling than a polished launch.
 
 ---
 
+## Marketing Improvements (Cycle 31 — March 28, 2026 — 06:02 CET)
+
+### ⚡ STATUS: SATURDAY DAY 2 MORNING — 06:02 CET — PRE-ACTIVATION
+
+It's 06:02 CET on Saturday March 28. Day 2 has started. This cycle runs before the team (or founder) wakes up. Priority: lock in the critical morning actions, plug the email capture gap, and queue the five new tweets (108-112) for Saturday deployment.
+
+### What This Cycle Fixed (vs Cycle 30)
+
+1. **Email capture urgency escalated to 🔴 CRITICAL**: Zero email subscribers after 30 hours of launch. Every hour without a signup form is permanent retention loss. This should have been built Day 0.
+
+2. **r/HomeImprovement post rewritten**: Stronger consumer framing based on the actual homeowner signal from Day 1. The old post was too technical. New version leads with the "contractor communication" story.
+
+3. **Tweets 108-112 written**: Saturday-specific hooks covering early riser honesty, viral comparison ("all AI categories covered except sketches"), builder challenge, Human Mode tease, and design philosophy manifesto.
+
+4. **Consumer hashtag set added**: `#HomeReno`, `#KitchenRenovation`, `#FloorPlanDesign`, `#AIHomeDesign` — completely new audience segment, zero overlap with existing dev/MCP hashtag strategy.
+
+5. **#VibeDrawing confirmed unclaimed**: Searched this morning. Nobody owns this hashtag. Skissify should plant its flag consistently.
+
+6. **New blog post written**: "Day 2: The Saturday Morning Battle Plan" — honest 5am founder dispatch covering the infrastructure gaps, the unexpected audiences, and what Day 2 actually looks like. Best for Indie Hackers + Substack.
+
+### What Remains Missing (Critical Gaps)
+
+| Gap | Priority | Deadline |
+|----|----------|----------|
+| **Email newsletter signup form** | 🔴 CRITICAL | Before 08:00 CET today |
+| **Video content (wobble GIF)** | 🔴 | Before noon Saturday |
+| **r/mcp post** | 🔴 | 07:30 CET sharp |
+| **Human Mode feature** | 🟡 | Saturday-Sunday sprint |
+| **Interactive JSON playground** | 🟢 | Week 1 |
+| **A2A protocol monitoring** | 🟢 | Week 2-3 |
+
+### New Ideas (Cycle 31)
+
+| Idea | Why | Effort |
+|------|-----|--------|
+| **`/dungeons` gallery page** | TTRPG community gets something to share + SEO for "AI dungeon map" | Low (20 example sketches + landing page) |
+| **"AI Home Design" category play** | Decorilla, ArchiVinci, MyRoomDesigner all exist — none are sketch-primitive-first | Medium |
+| **Homeowner starter pack** | 5 shareable room templates (kitchen, bedroom, living room, bathroom, home office) | Low |
+| **Newsletter with real launch numbers** | First email = Day 1 results. Everyone who just saw the launch will open this. | None (just send it) |
+| **"What's your LLM model?" poll** | Tweet poll — which model do you use for agent tasks? Drives benchmark post visibility | Zero |
+
+### Completed This Cycle (31)
+- [x] ✅ **Blog post NEW**: "Day 2: The Saturday Morning Battle Plan" — 900-word honest dispatch from 06:00 CET. File: `docs/marketing/blog/day-2-saturday-morning-battle-plan.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 31**: Tweets 108-112, r/HomeImprovement campaign post (revised), hashtag research update, consumer hashtag set, email capture urgency escalated, Saturday timing table (12 prioritized actions)
+- [x] ✅ **Hashtag research confirmed**: #VibeDrawing unclaimed, #VibeDraw unclaimed, consumer home design hashtags mapped, #MCP mainstream confirmed (97M monthly downloads)
+- [x] ✅ **Community gaps reviewed**: r/mcp still unposted (07:30 today), r/HomeImprovement needs stronger copy (done), r/interiordesign pending (18:00 today)
+
+### Day 2 Full Action Table (Cycle 31 — Final Version)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | 06:30 | **Add email capture to skissify.com** (before anything else) |
+| 2 🔴 | 07:00 | Tweet real Day 1 numbers (no placeholders) |
+| 3 🔴 | 07:30 | **r/mcp post** — first ever |
+| 4 🔴 | 08:00 | LLM benchmark Twitter thread |
+| 5 🔴 | 08:30 | Publish benchmark blog on Dev.to |
+| 6 🔴 | 09:00 | r/LocalLLaMA post |
+| 7 🟡 | 09:00 | Tweet 108 — Saturday early riser |
+| 8 🟡 | 10:00 | r/HomeImprovement campaign post |
+| 9 🟡 | 11:00 | Tweet 109 — viral comparison |
+| 10 🟡 | All morning | Reply to ALL open HN/Reddit/PH comments |
+| 11 🟢 | 14:00 | Tweet 110 — Saturday builder challenge |
+| 12 🟢 | 16:00 | Tweet 111 — Human Mode tease |
+| 13 🟢 | 18:00 | r/interiordesign post (Cycle 29) |
+| 14 🟢 | 19:00 | Tweet 112 — design manifesto |
+| 15 🟢 | 22:00 | Newsletter outreach (5 targets) |
+
+*Last Updated: March 28, 2026 (Cycle 31 — 06:02 CET)*
+*Added: Day 2 battle plan locked, email capture escalated to critical, blog post #51 written, 5 new tweets, r/HomeImprovement revised, consumer hashtags added, #VibeDrawing confirmed unclaimed*
+
+---
+
 ## Marketing Improvements (Cycle 28 — March 28, 2026 — 02:32 CET)
 
 ### ⚡ STATUS: DAY 2 PRE-DAWN — CONTENT LOADED, MORNING ACTIVATION SCHEDULED
