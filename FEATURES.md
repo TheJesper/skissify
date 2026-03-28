@@ -90,6 +90,9 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Render Style selector** — 3-button panel in the left sidebar (and mobile bottom-sheet): **Sketch** (✏️ default hand-drawn look, full amplitude + humanness), **Technical** (📐 caps amplitude ≤0.6 & humanness ≤0.15 for crisp precise lines; rect elements also draw an inset double-line to simulate thick architectural walls), **Blueprint** (🔵 caps amplitude ≤0.5 & humanness ≤0.1; auto-switches paper to blueprint blue). Applied to both canvas renderer and SVG export. Fully undoable. Active button shows blue ring highlight. Wired into both `/` and `/editor` pages, desktop and mobile.
+
+
 - [x] **Per-element stroke width control** — When one or more elements are selected, a stroke width slider (0.5–8px, step 0.5) appears in the Selection section of the left sidebar. Changing the slider applies the new `strokeWidth` to all selected elements instantly. Fully undoable (Ctrl+Z). Wired into both `/` and `/editor` pages, including mobile bottom-sheet ControlPanel. Previously only changeable via raw JSON editor.
 
 - [x] **Root page feature parity + undo history reset on preset load** — The main page (/) was missing several features that the /editor page had. Now fully wired: resize handles (onResizeElement/onResizeEnd), per-element color picker (selectedColor + onColorSelected), arrow-key nudge (1px / Shift=10px), Ctrl+A select-all, double-click inline text editing overlay (text, rect label, dim label), and canvasControlRef for programmatic auto-fit. Also: loadPreset in useSketch now resets the undo/redo history stack so Ctrl+Z after switching presets no longer teleports you back to the previous preset — a confusing UX bug. Both desktop and mobile ControlPanel/PresetTabs instances updated.
