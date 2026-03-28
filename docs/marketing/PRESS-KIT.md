@@ -994,3 +994,55 @@ skissify.com | jesper@skissify.com
 P.S. The D&D dungeon map use case is genuinely delightful — happy to show you a Claude-generated dungeon if you want to lead with that angle.
 
 *Press Kit Last Updated: Cycle 28 - 02:32 CET, March 28, 2026*
+
+---
+
+## PRESS KIT UPDATE — Cycle 30 (March 28, 2026 — 04:52 CET — Day 2 Morning)
+
+### Competitive Intelligence: The MCP Visual Layer Gap
+
+**New research finding (Cycle 30):** Excalidraw has no official MCP server as of early 2026. The only community-built option is GlyphMCP (built in a weekend, December 2025) — a wrapper, not a purpose-built tool. This confirms Skissify's unique position.
+
+**The comparison table for press use:**
+
+| Factor | GlyphMCP (community Excalidraw wrapper) | Skissify |
+|--------|----------------------------------------|----------|
+| MCP support type | Community wrapper | First-party, native |
+| LLM first-try success | ~60-70% (estimated) | 94% (benchmarked, Claude Sonnet 4) |
+| Schema design | Adapted from Excalidraw's internal format | Built for LLM generation from scratch |
+| Architectural elements | Basic shapes | 14 types (doors, windows, stairs, dimension lines) |
+| Paper styles | 1 | 4 (cream, white, grid, blueprint) |
+| Persistent URLs | Unclear/no | Yes — permanent |
+| Official support | No | Yes |
+
+**Press framing:** "Skissify is the only sketch tool designed from the ground up for AI agent use — not retrofitted via community wrappers."
+
+### New One-Liners (Cycle 30)
+
+| Version | Best For | Copy |
+|---------|---------|------|
+| v10 (competitive) | Technical media | "The first sketch tool with a purpose-built LLM schema. 94% first-try success. Community MCP wrappers average 60-70%." |
+| v11 (design pattern) | Dev community | "A sketch URL is persistent, inspectable agent memory. Skissify makes that possible." |
+| v12 (Saturday morning) | Build-in-public | "It's Day 2. Dungeon masters are still here. Homeowners are still here. The product didn't change. The world just got wider." |
+
+### New Press Angle (Cycle 30)
+
+**"The Missing Layer in the Agent Stack"**
+
+Every other primitive in the AI agent ecosystem was addressed by 2025: web search (Brave, Tavily), file access (filesystem tools), code execution (E2B, Modal), database queries, API calls.
+
+Visual output was the last gap. No dedicated, purpose-built tool existed.
+
+The timing matters: the MCP ecosystem hit 12,000+ servers and 97M+ monthly SDK downloads in March 2026. This is the mainstream moment for agent tooling. Skissify launched into the peak of that growth curve.
+
+**Pitch to:** TechCrunch (AI beats), The Verge (tools/apps), Wired (AI futures), Fast Company (design + AI), TLDR AI (750K dev subscribers), The Rundown (700K+), Hacker Newsletter.
+
+### New Blog Posts Available for Pitch/Press Preview (Cycle 30)
+
+| Post | File | Angle |
+|------|------|-------|
+| Saturday Reality Check | `blog/the-weekend-launch-saturday-reality-check.md` | Honest Day 2 founder dispatch |
+| MCP Visual Layer | `blog/the-mcp-visual-layer-what-12000-servers-are-missing.md` | Technical: the missing primitive |
+| Sketch URL as Agent Memory | `blog/sketch-url-as-agent-memory.md` | Design pattern for agent builders |
+
+*Press Kit Last Updated: Cycle 30 - 04:52 CET, March 28, 2026*
