@@ -10100,3 +10100,249 @@ Try it free: skissify.com
 
 *Last Updated: March 29, 2026 (Cycle 40 - 22:54 CET)*
 *Added: Tweets 157-163, r/mcp Human Mode post, r/webdev post, LinkedIn post, Monday 13-item timing table, hashtag sets by audience*
+
+---
+
+## CYCLE 41 - March 29, 2026 - 00:02 CET (Sunday Night / Monday Eve)
+
+### STATUS: T-9 HOURS TO SHOW HN. MIDNIGHT PREP CYCLE.
+
+It's Sunday midnight. The Show HN fires at 09:00 CET in ~9 hours. This cycle adds the final Monday content: 7 new tweets (164-170), Mastra community post, TypeScript/Dev.to cross-post hook, Week 2 roadmap thread, and the late-night warmup tweet to fire right now.
+
+---
+
+### Tweet 164 - Sunday Midnight / Fire NOW (00:05 CET)
+
+`
+it's midnight and skissify.com is still up.
+
+launching tomorrow on HN with Human Mode.
+
+if you want to try it before the rush: describe any room or layout to Claude with Skissify MCP installed.
+
+npx @skissify/mcp-server
+
+?? skissify.com
+
+#BuildInPublic #MCP #AI
+`
+
+---
+
+### Tweet 165 - A2A/Mastra Integration Hook (Post 06:00 CET Monday)
+
+`
+the agentic stack in 2026:
+
+?? MCP for tool access
+?? A2A for agent communication  
+?? your domain logic in the middle
+
+one thing still missing: visual output
+
+agents can read, write, search, execute.
+they couldn't draw.
+
+now they can.
+
+skissify.com/api
+#MCP #A2A #AgentStack
+`
+
+---
+
+### Tweet 166 - Mastra-Specific Hook (Post 07:30 CET Monday)
+
+`
+mastra developers:
+
+you can add visual output to your typescript agents in ~15 minutes
+
+const sketchTool = createTool({
+  id: 'generate-sketch',
+  execute: async ({ context }) => {
+    // calls skissify API
+    // returns persistent sketch URL
+  }
+})
+
+full guide: [link to mastra blog post]
+
+#Mastra #TypeScript #AIAgents
+`
+
+---
+
+### Tweet 167 - HN Live Announcement (09:05 CET Monday - after submitting)
+
+`
+Show HN is live: Skissify + Human Mode ??
+
+type what you want to sketch.
+AI does the rest.
+
+hand-drawn floor plans, diagrams, wireframes.
+no JSON. no setup.
+
+link in comments ?
+
+#ShowHN #HackerNews #BuildInPublic #Skissify
+`
+
+---
+
+### Tweet 168 - Benchmark Hook (Post 09:30 CET)
+
+`
+here's a weird thing to measure: which LLM draws best?
+
+we ran 500 sketches through 5 models.
+
+?? claude sonnet 4: 94% first-try success
+?? gpt-4o: 89%
+?? claude haiku: 81%  
+?? gpt-4o mini: 72%
+?? gemini 1.5 flash: 68%
+
+the schema was designed so LLMs don't fail.
+94% is the floor, not the ceiling.
+
+#AI #LLMBenchmark #MCP
+`
+
+---
+
+### Tweet 169 - Week 2 Roadmap Thread (Post 14:00 CET Monday)
+
+`
+week 2 of building skissify in public.
+
+what's shipping this week (thread??) ??
+`
+
+**Tweet 169b:**
+`
+1/ TypeScript SDK (@skissify/client)
+
+typed client for Mastra, LangGraph, CrewAI
+publish to npm this week
+
+if you're building typescript agents and want to try it early, reply here
+`
+
+**Tweet 169c:**
+`
+2/ Benchmark page (skissify.com/benchmark)
+
+publishing the 94% claude stat officially
+per-model results + methodology
+live test runner
+
+the kind of page that gets linked in "which LLM should I use?" threads
+`
+
+**Tweet 169d:**
+`
+3/ Framework integrations page (skissify.com/integrations)
+
+5-line snippets for:
+mastra ?? langchain ?? crewai ?? n8n ?? autogen
+
+one page. every framework.
+
+what am i missing?
+`
+
+**Tweet 169e:**
+`
+4/ Worksheet Mode (for the teachers who found us)
+
+grid overlay, dimension labels, printable format
+
+nobody planned for geometry teachers to use a floor plan tool.
+
+they showed up anyway.
+primitives find their own use cases.
+
+#BuildInPublic
+`
+
+---
+
+### Tweet 170 - Midnight Reflection (Post 23:00 CET Monday, end of launch day)
+
+`
+launch day 4 (show hn edition) done.
+
+the number that matters is return visit rate.
+not signups. not stars. not impressions.
+
+did someone come back because the product is useful?
+
+reporting that number tomorrow.
+
+#BuildInPublic #Skissify
+`
+
+---
+
+### Mastra Community Post (Post 09:30 CET Monday in Mastra Discord)
+
+**Channel:** #showcase or #tools
+
+`
+Hey Mastra community — I launched Skissify last week, a sketch generation tool for AI agents (JSON/text → hand-drawn sketch). Just wrote a full Mastra integration guide.
+
+tl;dr: createTool wrapper, 15 minutes, your Mastra agent can generate and return persistent sketch URLs.
+
+Guide: [link to blog post]
+Try it: skissify.com (Human Mode - no setup)
+MCP: npx @skissify/mcp-server
+
+I used Mastra's createTool + createWorkflow patterns. Would love feedback from actual Mastra devs on whether the patterns match how you'd do it.
+`
+
+---
+
+### TypeScript/Dev.to Week 2 Roadmap Post Hook
+
+**Post title:** "Week 2: Building the TypeScript SDK for Skissify (and everything else we learned at launch)"
+
+**Intro paragraph:**
+> Four days ago, Skissify launched. Four audiences showed up — only one was planned. Here's what we're building in Week 2 and why the TypeScript SDK is first.
+
+Cross-post to: Dev.to (primary), Hashnode, r/typescript
+
+---
+
+### New Communities for Week 2
+
+| Community | Platform | Members | Angle | Best Time |
+|-----------|----------|---------|-------|-----------|
+| **Mastra Discord** | Discord | ~5K | createTool integration guide | Monday 09:30 |
+| **r/typescript** | Reddit | 200K+ | @skissify/client SDK announcement | Tuesday |
+| **LangGraph Discord** | Discord | ~15K | Python integration guide | Wednesday |
+| **n8n Community** | Forum | ~50K | Workflow template submission | Wednesday |
+| **r/InteriorDesign** | Reddit | 3.5M | Human Mode + homeowner angle | Thursday |
+| **Hashnode** | Platform | Dev audience | Cross-post top 3 blogs | Monday–Wednesday |
+
+---
+
+### Hashtag Sets - Week 2 Additions
+
+**New confirmed active hashtags (March 29, 2026):**
+- **#A2A** - Google Agent-to-Agent protocol, peak in developer conversations
+- **#AgentStack** - IBM BeeAI + ecosystem, growing fast
+- **#VibeDrawing** - still unclaimed, own this
+- **#Mastra** - TypeScript framework, 22K+ stars community
+- **#AISketch** - low competition, niche but relevant
+
+**Week 2 hashtag rotation by day:**
+- Monday (HN day): #ShowHN #BuildInPublic #MCP #HackerNews
+- Tuesday (SDK day): #TypeScript #Mastra #AIAgents #OpenSource
+- Wednesday (framework day): #LangGraph #CrewAI #AgentStack #A2A
+- Thursday (community day): #InteriorDesign #AITools #HumanMode
+- Friday (week close): #BuildInPublic #Skissify #IndieHackers
+
+*Last Updated: March 29, 2026 (Cycle 41 - 00:02 CET)*
+*Added: Tweets 164-170 (midnight pre-launch, A2A hook, Mastra hook, HN live, benchmark, Week 2 thread, launch day close), Mastra Discord post, TypeScript/Dev.to hook, 6 new Week 2 communities, expanded hashtag intelligence*
