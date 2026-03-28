@@ -9,6 +9,8 @@ import {
   PAPER_COLORS,
   TOOL_STYLES,
   PaperType,
+  FONT_OPTIONS,
+  SkissifyFont,
 } from "./types";
 import {
   wobbleLine,
@@ -20,6 +22,13 @@ import {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const E = (el: SketchElement): any => el as any;
+
+/** Resolve a SkissifyFont key to a CSS font-family string for SVG */
+function resolveFontCssSvg(font: SkissifyFont | string | undefined, fallback: string): string {
+  if (!font) return fallback;
+  const found = FONT_OPTIONS.find((f) => f.key === font);
+  return found ? found.css : fallback;
+}
 
 function hashElement(el: SketchElement): number {
   const str = JSON.stringify(el);
@@ -252,8 +261,13 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       const content = et.content || et.text || "";
       const rotation = (Math.sin(hashElement(el)) * sketch.humanness * 2 * Math.PI) / 180;
       const fillColor = el.color || defaultColor;
+      // Respect per-element fontFamily override, then sketch-level textFont, then default
+      const textFontCss = resolveFontCssSvg(
+        (et.fontFamily as SkissifyFont | undefined) ?? sketch.textFont,
+        "'Courier New', monospace"
+      );
       parts.push(
-        `<text x="${el.x}" y="${el.y}" font-family="'Courier New', monospace" font-size="${fontSize}" fill="${fillColor}" opacity="${style.opacity}" transform="rotate(${(rotation * 180) / Math.PI} ${el.x} ${el.y})">${escapeXml(content)}</text>`
+        `<text x="${el.x}" y="${el.y}" font-family="${textFontCss}" font-size="${fontSize}" fill="${fillColor}" opacity="${style.opacity}" transform="rotate(${(rotation * 180) / Math.PI} ${el.x} ${el.y})">${escapeXml(content)}</text>`
       );
       break;
     }
@@ -295,13 +309,18 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       const midY = (edm.y1 + edm.y2) / 2;
       const fillColor = edm.color || defaultColor;
       const isVertical = Math.abs(edm.x2 - edm.x1) < Math.abs(edm.y2 - edm.y1);
+      // Respect per-element fontFamily override, then sketch-level dimFont, then textFont, then default
+      const dimFontCss = resolveFontCssSvg(
+        (edm.fontFamily as SkissifyFont | undefined) ?? sketch.dimFont ?? sketch.textFont,
+        "'Courier New', monospace"
+      );
       if (isVertical) {
         parts.push(
-          `<text x="${midX}" y="${midY}" font-family="'Courier New', monospace" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto" transform="rotate(-90 ${midX} ${midY})" dy="-6">${escapeXml(edm.label)}</text>`
+          `<text x="${midX}" y="${midY}" font-family="${dimFontCss}" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto" transform="rotate(-90 ${midX} ${midY})" dy="-6">${escapeXml(edm.label)}</text>`
         );
       } else {
         parts.push(
-          `<text x="${midX}" y="${midY - 6}" font-family="'Courier New', monospace" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto">${escapeXml(edm.label)}</text>`
+          `<text x="${midX}" y="${midY - 6}" font-family="${dimFontCss}" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto">${escapeXml(edm.label)}</text>`
         );
       }
       break;
@@ -449,9 +468,32 @@ export function renderSketchToSVG(sketch: SketchData): string {
     ? `<g transform="translate(${offsetX} ${offsetY})">\n${elementsSvg}\n</g>`
     : elementsSvg;
 
+  // Build @font-face import for Google Fonts used in this sketch
+  const usedFonts = new Set<string>();
+  if (sketch.textFont) usedFonts.add(sketch.textFont);
+  if (sketch.dimFont) usedFonts.add(sketch.dimFont);
+  sketch.elements.forEach((el) => {
+    const anyEl = el as unknown as Record<string, unknown>;
+    if (typeof anyEl.fontFamily === "string") usedFonts.add(anyEl.fontFamily);
+  });
+
+  const googleFontKeys = ["handwritten", "kalam", "jetbrains"];
+  const googleFontFamilies: string[] = [];
+  for (const key of usedFonts) {
+    if (googleFontKeys.includes(key)) {
+      if (key === "handwritten") googleFontFamilies.push("Caveat");
+      else if (key === "kalam") googleFontFamilies.push("Kalam");
+      else if (key === "jetbrains") googleFontFamilies.push("JetBrains+Mono");
+    }
+  }
+
+  const fontDefs = googleFontFamilies.length > 0
+    ? `  <defs>\n    <style>@import url('https://fonts.googleapis.com/css2?family=${googleFontFamilies.join("&amp;family=")}&amp;display=swap');</style>\n  </defs>\n`
+    : "";
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <rect width="${w}" height="${h}" fill="${bgColor}"/>
+${fontDefs}  <rect width="${w}" height="${h}" fill="${bgColor}"/>
 ${renderGrid(w, h, sketch.paper)}
 ${elementsGroup}
 </svg>`;

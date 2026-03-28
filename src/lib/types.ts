@@ -199,18 +199,23 @@ export type SketchElement =
 /**
  * Available font families for text rendering.
  * Keys must be stable (used in JSON) — map to CSS font-family strings.
+ * Google Fonts loaded: Caveat, Kalam, JetBrains Mono (see layout.tsx).
  */
 export type SkissifyFont =
-  | "courier"    // Courier New — default monospace, technical feel
-  | "georgia"    // Georgia — classic serif, architectural
-  | "arial"      // Arial — clean sans-serif, modern
-  | "handwritten"; // 'Segoe Print', cursive — casual, hand-drawn feel
+  | "courier"       // Courier New — default monospace, technical feel
+  | "georgia"       // Georgia — classic serif, architectural
+  | "arial"         // Arial — clean sans-serif, modern
+  | "handwritten"   // Caveat — Google Font, natural handwriting (replaces Segoe Print)
+  | "kalam"         // Kalam — Google Font, casual handwritten, warmer than Caveat
+  | "jetbrains";    // JetBrains Mono — Google Font, crisp technical monospace
 
 export const FONT_OPTIONS: { key: SkissifyFont; label: string; css: string }[] = [
-  { key: "courier",    label: "Courier",    css: "'Courier New', monospace" },
-  { key: "georgia",    label: "Georgia",    css: "Georgia, serif" },
-  { key: "arial",      label: "Arial",      css: "Arial, sans-serif" },
-  { key: "handwritten", label: "Handwrit.", css: "'Segoe Print', 'Comic Sans MS', cursive" },
+  { key: "courier",     label: "Courier",    css: "'Courier New', monospace" },
+  { key: "georgia",     label: "Georgia",    css: "Georgia, serif" },
+  { key: "arial",       label: "Arial",      css: "Arial, sans-serif" },
+  { key: "handwritten", label: "Caveat",     css: "'Caveat', 'Segoe Print', cursive" },
+  { key: "kalam",       label: "Kalam",      css: "'Kalam', cursive" },
+  { key: "jetbrains",   label: "JetBrains",  css: "'JetBrains Mono', 'Courier New', monospace" },
 ];
 
 /**
