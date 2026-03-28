@@ -2,6 +2,66 @@
 
 ---
 
+## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #20 (00:20 CET, Saturday March 28)
+
+### Priority Context
+
+20 consecutive niche-clean scans. 24 hours of intelligence. Zero new competitors. The "Vibe Design" news cycle (Figma MCP + Google Stitch) is 3–7 days old and will fall off front pages by Monday. The HN counter-narrative window is open **today only**.
+
+Three actions. One path. In order.
+
+---
+
+### 🔴 Action 1 — BUILD: Ship `@skissify/mcp` v0.1 (The Only Blocker)
+
+**Why today**: The Figma MCP open beta is 3 days old. Google Stitch MCP is 7 days old. HN "Show HN" counter-narrative ("these do polished, Skissify does hand-drawn") has maximum resonance this weekend. Every day without a live package is a day the window narrows.
+
+**Minimum viable scope**:
+```bash
+cd W:/code/skissify
+mkdir -p packages/mcp
+cd packages/mcp && npm init -y
+npm install @modelcontextprotocol/sdk zod
+```
+
+Single tool to ship: `render_sketch(manifest: JSON) → SVG string`. Free tier includes watermark. That's the entire v0.1. No auth, no billing, no user accounts. Just the render.
+
+**Definition of done**: `npx @skissify/mcp` starts the server locally. Claude Desktop can call `render_sketch`. A floor plan JSON produces a hand-drawn SVG. Watermark present on free output.
+
+**Estimated time**: 4–6 hours for a developer who knows the existing rendering engine.
+
+---
+
+### 🟡 Action 2 — PUBLISH: Post "Show HN" While the Figma MCP News Is Still Hot
+
+**Why today**: The Thomas Thornton "Excalidraw + GitHub Copilot" tutorial is 4 days old and still ranking. The Figma use_figma announcement is 3 days old. HN's design/AI community is primed for the "but what about hand-drawn?" question. Skissify is the answer. This is the specific post that rides that wave:
+
+**Title**: `Show HN: Skissify – JSON to hand-drawn sketches, built for AI agents (floor plans, architecture diagrams)`
+
+**Key framing**: "Figma MCP does polished design. Google Stitch does voice-to-UI. Skissify does the back-of-napkin moment — hand-drawn SVG from a declarative JSON manifest. Floor plans with walls, doors, windows, and dimension lines. `npx @skissify/mcp` to add to your agent stack. Free tier with watermark. EUR 2/mo to remove it."
+
+**Only possible after Action 1 is complete.** Do not post without a working package.
+
+**Target window**: Saturday 15:00–20:00 CET (9am–2pm US Eastern — peak HN Show HN visibility).
+
+---
+
+### 🟢 Action 3 — REGISTER: Submit to MCP Registries and Discovery Channels
+
+**Why today**: The MCP ecosystem has 5,000+ servers under Linux Foundation governance. Registry listings compound — early entries get indexed first, curated in "top MCP servers" roundups, and organically discovered by developers browsing `awesome-mcp-servers`. Waiting one more week means entering a more crowded registry.
+
+**Three submissions (in order of impact):**
+
+1. **modelcontextprotocol.io** — the official registry. Submit `@skissify/mcp` immediately after npm publish. This is where Claude Desktop's auto-discovery will eventually pull from.
+
+2. **awesome-mcp-servers (GitHub)** — open a PR to add Skissify under "Visualization / Diagrams." The list is actively maintained and curated (mermaid-mcp was just added this week). A merged PR = permanent discovery.
+
+3. **claudefa.st + mcpmanager.ai** — both launched "best MCP servers" directories this week (March 25–26). Both are actively maintained. Both currently have zero sketch/diagram tools. Submit via their intake form or GitHub.
+
+**Time estimate**: 30 minutes total after the package is live.
+
+---
+
 ## 2026-03-28 (Saturday) — Proposed by Automated Strategy Run #19 (23:02 CET, Friday March 27)
 
 ### Priority Context (Run #19 — Final run, intelligence cycle fully closed)

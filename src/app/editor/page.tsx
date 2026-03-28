@@ -141,6 +141,7 @@ function EditorInner({
     updateElement,
     nudgeSelected,
     selectAll,
+    setRenderStyle,
   } = useSketch(initialData ?? undefined, initialPreset ?? undefined);
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
@@ -441,6 +442,8 @@ function EditorInner({
             onDeleteSelected={deleteSelected}
             onColorSelected={colorSelected}
             onStrokeWidthSelected={strokeWidthSelected}
+            renderStyle={sketch.renderStyle}
+            onRenderStyle={setRenderStyle}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -550,6 +553,8 @@ function EditorInner({
             onDeleteSelected={deleteSelected}
             onColorSelected={colorSelected}
             onStrokeWidthSelected={strokeWidthSelected}
+            renderStyle={sketch.renderStyle}
+            onRenderStyle={setRenderStyle}
           />
         </div>
       )}

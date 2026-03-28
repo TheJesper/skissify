@@ -2,6 +2,46 @@
 
 ---
 
+## Entry: March 28, 2026 — 00:20 CET | Automated Strategy Run #20
+
+### Theme: "Saturday Is the Build Day — The EUR 2/mo Thesis Doesn't Need More Evidence"
+
+This is the first entry of Saturday March 28, 2026. No new external intelligence was gathered this cycle (Brave Search API rate-limited at 170/2000 monthly quota after 19 runs yesterday). The analysis below synthesizes all prior intelligence into the definitive EUR 2/mo case.
+
+---
+
+#### Finding 1: The "Vibe Design Moment" Is a Conversion Catalyst for EUR 2/mo
+
+The Google Stitch/Figma MCP narrative ("vibe design") that dominated March 18–27 has created a specific developer psychology: **design tools are now expected to integrate with agents**. Developers who set up Figma MCP, Excalidraw MCP, or Google Stitch this past week are now in "MCP tool discovery mode." They are actively evaluating which tools to add to their stack.
+
+This is the highest-conversion moment for Skissify's EUR 2/mo tier. A developer already running 3–5 MCP tools makes the decision to add `@skissify/mcp` in under 30 seconds. The EUR 2/mo price never crosses their cognitive threshold — it is below the minimum unit of attention for a developer who just committed to $20/mo for Claude Pro to run their agent stack.
+
+**EUR 2/mo insight**: The purchase decision is made BEFORE the pricing page is visited. It is made when the developer reads "hand-drawn floor plan from JSON" and thinks "that's the one gap in my visual output stack." The pricing page is just the checkout, not the sales pitch.
+
+---
+
+#### Finding 2: The "Polished UI vs Hand-Drawn Sketch" Market Split Is Now Permanent
+
+As of March 28, the MCP visual output market has formally split into two lanes:
+- **Lane A (Polished UI)**: Figma use_figma, Google Stitch, paper.design — all serving "turn natural language or code into production-ready UI." Priced at $0–$20+/user/mo. Giants competing.
+- **Lane B (Hand-drawn/Sketch)**: Excalidraw MCP (topology diagrams only, no floor plans), draw-it-mcp (freehand art only, no JSON) — fragmented, partial. No single tool owns this lane with JSON-native + floor plan + tunable aesthetics.
+
+Skissify is Lane B's owner-in-waiting. This lane split is **permanent** because the use cases are genuinely different: Lane A is for "what gets shipped"; Lane B is for "what gets sketched before shipping." Both are needed. Lane A is 10x more funded. Lane B is 10x more open.
+
+**EUR 2/mo insight**: Lane B users don't compare Skissify to Figma. They compare it to drawing on paper. EUR 2/mo is cheaper than a Moleskine per month. The competitive set for EUR 2/mo is not "other SaaS tools" — it is "analog alternatives." Against that comparison, EUR 2/mo wins instantly.
+
+---
+
+#### Finding 3: Saturday Is the Last Credible Day to Ride the "Vibe Design" News Cycle
+
+The Figma MCP open beta story broke March 25. Google Stitch MCP was March 18. The Thomas Thornton "Excalidraw + GitHub Copilot" tutorial is 4 days old. These stories will be off front pages by Monday.
+
+The HN "Show HN" post framing from `docs/marketing/HACKER-NEWS.md` explicitly uses the counter-narrative: "Figma MCP does polished design. Skissify MCP does hand-drawn sketches. Different moment, different tool." This framing has maximum resonance THIS WEEKEND when the Figma MCP story is still fresh. By Tuesday it becomes generic.
+
+**EUR 2/mo insight**: Launch timing affects the first-month conversion pool. A Saturday launch captures developers actively browsing HN/Reddit during weekend "tool exploration" mode. Weekend HN traffic for "Show HN" posts historically peaks Saturday 9am–2pm US Eastern (3pm–8pm CET). That window is 15 hours from now.
+
+---
+
 ## Entry: March 27, 2026 — 23:02 CET | Automated Strategy Run #19
 
 ### Theme: "The Day the Intelligence Was Gathered — Now Execute"

@@ -215,6 +215,7 @@ function EditorInner({
     rotateSelected,
     nudgeSelected,
     selectAll,
+    setRenderStyle,
     redraw,
     updateSketch,
     updateElement,
@@ -550,6 +551,8 @@ function EditorInner({
             onDeleteSelected={deleteSelected}
             onColorSelected={colorSelected}
             onStrokeWidthSelected={strokeWidthSelected}
+            renderStyle={sketch.renderStyle}
+            onRenderStyle={setRenderStyle}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -653,6 +656,8 @@ function EditorInner({
           onDeleteSelected={deleteSelected}
           onColorSelected={colorSelected}
           onStrokeWidthSelected={strokeWidthSelected}
+          renderStyle={sketch.renderStyle}
+          onRenderStyle={setRenderStyle}
         />
       </MobileBottomSheet>
     </div>

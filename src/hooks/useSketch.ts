@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
-import { SketchData, PaperType, ToolType, SkissifyFont } from "@/lib/types";
+import { SketchData, PaperType, ToolType, SkissifyFont, RenderStyle } from "@/lib/types";
 import { presets, defaultPreset } from "@/lib/presets";
 
 const MAX_HISTORY = 50;
@@ -87,6 +87,18 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
 
   const setDimFont = useCallback(
     (dimFont: SkissifyFont) => updateSketch({ dimFont }),
+    [updateSketch]
+  );
+
+  const setRenderStyle = useCallback(
+    (renderStyle: RenderStyle) => {
+      // Blueprint mode auto-switches paper to blueprint
+      const extra: Partial<SketchData> = { renderStyle };
+      if (renderStyle === "blueprint") {
+        extra.paper = "blueprint";
+      }
+      updateSketch({ ...extra, sessionSeed: newSessionSeed() });
+    },
     [updateSketch]
   );
 
@@ -457,6 +469,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     nudgeSelected,
     selectAll,
     strokeWidthSelected,
+    setRenderStyle,
   };
 }
 

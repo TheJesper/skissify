@@ -31,10 +31,20 @@ function hashElement(el: SketchElement): number {
 }
 
 function getWobbleOpts(sketch: SketchData, el: SketchElement): WobbleOptions {
+  // Apply render style overrides
+  let amplitude = sketch.amplitude;
+  let humanness = sketch.humanness;
+  if (sketch.renderStyle === "technical") {
+    amplitude = Math.min(amplitude, 0.6);
+    humanness = Math.min(humanness, 0.15);
+  } else if (sketch.renderStyle === "blueprint") {
+    amplitude = Math.min(amplitude, 0.5);
+    humanness = Math.min(humanness, 0.1);
+  }
   return {
-    amplitude: sketch.amplitude,
+    amplitude,
     waves: sketch.waves,
-    humanness: sketch.humanness,
+    humanness,
     seed: hashElement(el) + (sketch.sessionSeed || 0),
   };
 }

@@ -52,10 +52,20 @@ function hashElement(el: SketchElement): number {
 }
 
 function getWobbleOpts(sketch: SketchData, el: SketchElement, idx: number): WobbleOptions {
+  // Apply render style overrides to wobble parameters
+  let amplitude = sketch.amplitude;
+  let humanness = sketch.humanness;
+  if (sketch.renderStyle === "technical") {
+    amplitude = Math.min(amplitude, 0.6);
+    humanness = Math.min(humanness, 0.15);
+  } else if (sketch.renderStyle === "blueprint") {
+    amplitude = Math.min(amplitude, 0.5);
+    humanness = Math.min(humanness, 0.1);
+  }
   return {
-    amplitude: sketch.amplitude,
+    amplitude,
     waves: sketch.waves,
-    humanness: sketch.humanness,
+    humanness,
     seed: idx * 997 + 42 + (sketch.sessionSeed || 0),
   };
 }
@@ -412,6 +422,21 @@ function renderElement(
       HL(ctx, x + w + co(), y + co(), x + w + co(), y + rh + co(), { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
       HL(ctx, x + w + co(), y + rh + co(), x + co(), y + rh + co(), { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
       HL(ctx, x + co(), y + rh + co(), x + co(), y + co(), { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+      // Technical/blueprint mode: draw an inset rect to simulate thick double-line walls
+      if (sketch.renderStyle === "technical" || sketch.renderStyle === "blueprint") {
+        const wallThickness = Math.max(3, (el.strokeWidth ?? 1) * 1.5);
+        const ix = x + wallThickness;
+        const iy = y + wallThickness;
+        const iw = w - wallThickness * 2;
+        const irh = rh - wallThickness * 2;
+        if (iw > 2 && irh > 2) {
+          const ico = () => (rng() - 0.5) * a * 0.1;
+          HL(ctx, ix + ico(), iy + ico(), ix + iw + ico(), iy + ico(), { ...opts, seed: opts.seed! + 11 }, color, tool, paper, rng, h);
+          HL(ctx, ix + iw + ico(), iy + ico(), ix + iw + ico(), iy + irh + ico(), { ...opts, seed: opts.seed! + 12 }, color, tool, paper, rng, h);
+          HL(ctx, ix + iw + ico(), iy + irh + ico(), ix + ico(), iy + irh + ico(), { ...opts, seed: opts.seed! + 13 }, color, tool, paper, rng, h);
+          HL(ctx, ix + ico(), iy + irh + ico(), ix + ico(), iy + ico(), { ...opts, seed: opts.seed! + 14 }, color, tool, paper, rng, h);
+        }
+      }
       // Render label if present
       if (el.label) {
         renderElement(ctx, {

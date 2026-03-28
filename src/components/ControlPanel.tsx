@@ -1,6 +1,6 @@
 "use client";
 
-import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont } from "@/lib/types";
+import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS } from "@/lib/types";
 
 interface ControlPanelProps {
   paper: PaperType;
@@ -33,6 +33,10 @@ interface ControlPanelProps {
   onColorSelected?: (color: string) => void;
   /** Called when the user changes the strokeWidth of selected elements */
   onStrokeWidthSelected?: (w: number) => void;
+  /** Current render style */
+  renderStyle?: RenderStyle;
+  /** Called when the user changes the render style */
+  onRenderStyle?: (s: RenderStyle) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -92,6 +96,8 @@ export default function ControlPanel({
   onDeleteSelected,
   onColorSelected,
   onStrokeWidthSelected,
+  renderStyle,
+  onRenderStyle,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -145,6 +151,29 @@ export default function ControlPanel({
           ))}
         </div>
       </Section>
+
+      {/* Render Style */}
+      {onRenderStyle && (
+        <Section title="Render Style">
+          <div className="grid grid-cols-3 gap-1">
+            {RENDER_STYLE_OPTIONS.map((s) => (
+              <button
+                key={s.key}
+                onClick={() => onRenderStyle(s.key)}
+                title={s.description}
+                className={`flex flex-col items-center gap-0.5 px-1 py-1.5 rounded text-[10px] font-medium transition-all border ${
+                  (renderStyle ?? "sketch") === s.key
+                    ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#073642]"
+                    : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 text-[#657b83]"
+                }`}
+              >
+                <span className="text-base leading-none">{s.icon}</span>
+                <span>{s.label}</span>
+              </button>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* Ink Color */}
       <Section title="Ink Color">

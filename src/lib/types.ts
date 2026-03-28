@@ -211,6 +211,20 @@ export const FONT_OPTIONS: { key: SkissifyFont; label: string; css: string }[] =
   { key: "handwritten", label: "Handwrit.", css: "'Segoe Print', 'Comic Sans MS', cursive" },
 ];
 
+/**
+ * Render style presets that affect wobble parameters and drawing behavior.
+ * - sketch: default hand-drawn look (high amplitude + humanness)
+ * - technical: crisp technical drawing (low amplitude + humanness, double-line rects)
+ * - blueprint: blueprint mode (sets blue paper, very low wobble)
+ */
+export type RenderStyle = "sketch" | "technical" | "blueprint";
+
+export const RENDER_STYLE_OPTIONS: { key: RenderStyle; label: string; icon: string; description: string }[] = [
+  { key: "sketch",    label: "Sketch",    icon: "✏️", description: "Hand-drawn, wobbly lines" },
+  { key: "technical", label: "Technical", icon: "📐", description: "Crisp, precise lines" },
+  { key: "blueprint", label: "Blueprint", icon: "🔵", description: "Blueprint style on blue paper" },
+];
+
 export interface SketchData {
   paper: PaperType;
   tool: ToolType;
@@ -225,6 +239,8 @@ export interface SketchData {
   textFont?: SkissifyFont;
   /** Default font for dimension labels */
   dimFont?: SkissifyFont;
+  /** Render style: affects wobble parameters and drawing mode */
+  renderStyle?: RenderStyle;
   elements: SketchElement[];
 }
 
