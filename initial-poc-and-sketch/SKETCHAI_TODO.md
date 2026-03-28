@@ -7,7 +7,7 @@
 - [ ] **Blueprint eternity board** — blå bakgrund nu, skall vara mörk board med papper ovanpå precis som cream-mode
 - [ ] **UI-element överlappar** — möbler/etiketter sticker utanför väggar, t.ex. SOFFA/VARDAGSRUM/SOFFBORD i plan drawing. Koordinater behöver justeras per preset
 - [ ] **Ritning ej centrerad på papperet** — elementen hamnar inte mitt på papperet, sitter mot övre vänster. `centerOf()` verkar inte appliceras korrekt vid initial render
-- [ ] **Randomness vid laddning av preset** — varje gång ett preset laddas ska en ny slump-seed genereras så linjerna ser olika ut. Nu ser det exakt likadant ut varje gång man byter och kommer tillbaka
+- [x] **Randomness vid laddning av preset** — DONE: `loadPreset()` anropar `newSessionSeed()` så att varje presetladdning ger nya slumpmässiga linjer
 
 ## 🎨 GUI & Branding
 
