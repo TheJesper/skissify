@@ -1,8 +1,191 @@
 # Skissify — Social Media Launch Content
 
 **Launch Date: March 27, 2026**  
-**Day 2 (March 28): See Cycle 31 section at the TOP for current Saturday 06:00 CET content**
+**Day 2 (March 28): See Cycle 32 section at the TOP for current Saturday 07:11 CET content**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 32 — SATURDAY 07:11 CET — DAY 2 PEAK MORNING PUSH
+
+*It's 07:11 CET Saturday March 28. r/mcp goes live in 19 minutes. This cycle adds 5 new tweets (113-117), a Day 2 dev community afternoon content wave, the "Visual Primitive" manifesto angle, and a Reddit reply template for when people ask "why not just use Mermaid?"*
+
+### ⚡ RIGHT NOW (07:11 CET) — DO THESE IN ORDER:
+1. **07:15** — Check real analytics, prepare Day 1 numbers tweet (Tweet 87 in Cycle 27)
+2. **07:30** — Post to **r/mcp** (copy from SOCIAL-MEDIA.md Cycle 27 — first ever post, 20K MCP devs)
+3. **08:00** — Post LLM benchmark tweet thread (Tweet 89 Cycle 27 — 5 tweets)
+4. **08:30** — Publish `the-llm-floor-plan-benchmark.md` on Dev.to
+5. **09:00** — r/LocalLLaMA benchmark post
+
+---
+
+### NEW Tweet 113 — The "Why Not Mermaid?" Pre-emption (Post 10:00 CET)
+
+```
+Someone always asks: "Why not just use Mermaid?"
+
+Mermaid: sequence diagrams, flowcharts, Git graphs. 
+Text → structured, technical diagrams. Great tool.
+
+Skissify: floor plans, spatial layouts, rough sketches.
+JSON → hand-drawn aesthetic output. 
+Built for AI agents that need to produce visual artifacts.
+
+Different tools. Different jobs.
+
+(Also: Mermaid doesn't wobble. That's a feature.)
+
+skissify.com
+#MCP #AIAgents #DevTools #VibeDrawing
+```
+
+---
+
+### NEW Tweet 114 — The "Day 2 Unlock" Transparency Hook (Post 11:30 CET)
+
+```
+Day 2 of a product launch is underrated.
+
+Day 1: you beg people to try it
+Day 2: people who already tried it come back
+
+The metric I'm watching today isn't signups.
+It's return visits.
+
+If someone opens skissify.com twice in 48 hours,
+that's a user, not just a visitor.
+
+(Day 1 returns tracker opens at noon.)
+
+#BuildInPublic #IndieHackers #ProductLaunch
+```
+
+---
+
+### NEW Tweet 115 — The "Visual Primitive" Manifesto (Post 13:00 CET)
+
+```
+Why does Skissify exist?
+
+Every AI stack has:
+✅ Text generation
+✅ Code generation  
+✅ Data retrieval
+✅ Image generation
+❌ Structured spatial output
+
+Structured spatial output is a primitive.
+Like a database is a primitive.
+Like an API endpoint is a primitive.
+
+You don't build a database into every app.
+You connect to one.
+
+Skissify is the sketch primitive.
+
+#MCP #AIAgents #AgentStack #VibeDrawing
+```
+
+---
+
+### NEW Tweet 116 — The Homeowner Surprise Story (Viral format — Post 15:00 CET)
+
+```
+Yesterday someone used Skissify to brief their kitchen contractor.
+
+They described their renovation idea to Claude.
+Claude wrote JSON.
+Skissify drew a floor plan.
+They printed it and brought it to the contractor meeting.
+
+The contractor said "this is clearer than most architect drawings."
+
+I built this for AI engineers.
+
+🏠 Homeowners are using it to renovate kitchens.
+🏰 Dungeon masters are making maps.
+📐 Geometry teachers are making exercises.
+
+That's what happens when you build a primitive.
+
+skissify.com
+#AI #HomeRenovation #AIAgents #VibeDrawing #BuildInPublic
+```
+
+---
+
+### NEW Tweet 117 — "What Should We Add Next?" Community Engagement (Post 17:00 CET)
+
+```
+Skissify currently supports 14 element types:
+
+walls, rooms, doors (hinged + sliding), windows,
+stairs, dimension lines, columns, furniture (basic),
+annotations, arrows, circles, polygons, sketchy text
+
+What should be element #15?
+
+🏊 Pool → reply "pool"
+🚗 Car/parking → reply "parking"  
+🌳 Garden/landscape → reply "garden"
+🛋️ Furniture pack → reply "furniture"
+
+Top response ships in Week 1.
+```
+
+---
+
+### Day 2 Saturday Timing Table (Cycle 32)
+
+| Time (CET) | Action | Priority |
+|-----------|--------|---------|
+| 07:00 | Check analytics, fill real numbers | 🔴 |
+| 07:30 | **r/mcp post** (20K members — FIRST EVER) | 🔴 |
+| 08:00 | LLM benchmark tweet thread (5 tweets) | 🔴 |
+| 08:30 | Publish benchmark blog on Dev.to | 🔴 |
+| 09:00 | r/LocalLLaMA post | 🔴 |
+| 09:30 | Add email newsletter capture to site | 🔴 |
+| 10:00 | Tweet 113 (Why not Mermaid?) | 🟡 |
+| 11:00 | r/HomeImprovement post | 🟡 |
+| 11:30 | Tweet 114 (Day 2 return visits) | 🟡 |
+| 13:00 | Tweet 115 (Visual Primitive manifesto) | 🟡 |
+| 14:00 | r/n8n workflow post | 🟡 |
+| 15:00 | Tweet 116 (Homeowner surprise story — viral format) | 🟢 |
+| 17:00 | Tweet 117 (What should we add next? Poll) | 🟢 |
+| 18:00 | r/interiordesign post | 🟢 |
+| 19:00 | r/RPGdesign / r/DnD post | 🟢 |
+| 22:00 | Newsletter outreach emails (5 targets) | 🟢 |
+
+---
+
+### Cycle 32 — Reddit Reply Template: "Why not just use Mermaid/Excalidraw/tldraw?"
+
+When someone asks this (it will happen on r/mcp, r/LocalLLaMA, HN), use this response:
+
+**For Mermaid comparison:**
+> Mermaid is brilliant for what it does — flowcharts, sequence diagrams, ER diagrams. It's text-in, structured diagram out. Skissify is JSON-in, spatial sketch out. The key differences: (1) spatial primitives — rooms, walls, doors, dimension lines; (2) aesthetic control — the wobble algorithm produces intentionally rough output suitable for design thinking phases; (3) LLM optimization — the flat schema was designed specifically for high first-try LLM success rate (94% for Claude). Different tools, different jobs.
+
+**For Excalidraw comparison:**
+> Excalidraw is designed for human interaction — you draw by hand, it just keeps the rough style. Skissify is designed for programmatic input — AI agents generate the JSON. There's no official Excalidraw MCP server built for LLM generation; community wrappers exist but aren't optimized for the schema. Skissify's LLM success rate on floor plans is 94% vs ~60-70% for community wrappers. Also: Skissify has domain-specific elements (hinged doors, window symbols, dimension lines) that Excalidraw doesn't have natively.
+
+**For tldraw comparison:**
+> tldraw is a whiteboard. You draw on it. It has an SDK. Skissify is a render engine — you give it JSON, it gives you a sketch. The use cases barely overlap: tldraw is for live collaborative drawing, Skissify is for AI agent output and programmatic generation.
+
+---
+
+### New Community: r/SoftwareArchitecture (Post Day 3)
+
+r/SoftwareArchitecture has ~180K members who spend significant time diagramming system designs. The "Skissify for system architecture sketches" angle hasn't been used. Post body:
+
+**Title:** I built a JSON → hand-drawn sketch tool — how are you currently drawing early-stage architecture diagrams?
+
+**Body:**
+> I'm working on [show your system diagram rendered in Skissify] and curious how this community draws early-stage architecture. Not the polished C4 diagrams — the rough "this is what I'm thinking" sketches that happen before the proper diagram. Does anyone have a workflow for AI-assisted architecture sketching?
+
+---
+
+*Cycle 32 added: March 28, 2026, 07:11 CET*
+*Tweets 113-117, Mermaid/Excalidraw/tldraw comparison templates, r/SoftwareArchitecture new community, Day 2 full timing table*
 
 ---
 

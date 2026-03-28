@@ -1469,6 +1469,54 @@ r/LocalLLaMA is 400K members who obsessively discuss model performance benchmark
 
 ---
 
+## Marketing Improvements (Cycle 32 — March 28, 2026 — 07:11 CET)
+
+### ⚡ STATUS: DAY 2 SATURDAY — 07:11 CET — r/mcp POST IN 19 MINUTES
+
+It's 07:11 CET Saturday March 28. This is the peak engagement window for r/mcp. The entire Day 1 executed without ever posting to the 20K-member MCP developer community. That changes at 07:30.
+
+### What Changed Since Cycle 31
+- **5 new tweets written (113-117)**: "Why Not Mermaid?" pre-emption, Day 2 return visitors metric, Visual Primitive manifesto, Homeowner Surprise Story (viral format), and "What should we add next?" community poll
+- **Reddit comparison templates written**: Ready-to-paste responses for "why not Mermaid/Excalidraw/tldraw?" objections
+- **r/SoftwareArchitecture unlocked**: 180K members who actively diagram system designs — never targeted across 31 previous cycles
+- **Blog post #53 written**: "Day 2, 07:00 CET: What We Know" — the Saturday morning dispatch
+- **Visual Primitive manifesto angle**: New framing — Skissify as infrastructure, not a tool (database/API endpoint analogy)
+- **Homeowner Surprise Story formatted for virality**: Contractor story formatted as viral tweet with clear narrative arc
+
+### Completed This Cycle (32)
+- [x] ✅ **Blog post #53 NEW**: "Day 2, 07:00 CET: What We Know" — morning dispatch for Indie Hackers/Substack/Dev.to. File: `docs/marketing/blog/day-2-saturday-7am-what-we-know.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 32**: Tweets 113-117, comparison response templates (Mermaid/Excalidraw/tldraw), r/SoftwareArchitecture new community, Saturday timing table
+- [x] ✅ **Web research completed**: Product Hunt AI agent category active (Stitch 2.0 same week), Agentation confirms "visual context" is trending — Skissify is in the right category
+- [x] ✅ **"Visual Primitive" narrative crystallized**: Database/API endpoint analogy is strongest developer framing yet
+
+### New Blog Post (Cycle 32)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 53 | **Day 2, 07:00 CET: What We Know** | `day-2-saturday-7am-what-we-know.md` | Indie Hackers, Dev.to, Substack | Day 2 morning |
+
+### New Communities Unlocked (Cycle 32)
+| Community | Members | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/SoftwareArchitecture** | 180K | "How do you sketch early-stage architecture before the proper diagram?" | Day 3 |
+
+### New Ideas Added (Cycle 32)
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"Element Type Poll"** (Tweet 117) | Drives engagement + shapes roadmap based on community vote | Zero | High |
+| **Return visitor metric tracking** | Day 2 success metric: people who came back, not just signups | Low | High |
+| **"Skissify for system design"** angle | r/SoftwareArchitecture 180K members | Low | Medium |
+| **Homeowner starter templates** | Free room JSON examples — removes JSON barrier | Low | High |
+| **Comparison landing page** | skissify.com/compare — Mermaid/Excalidraw/tldraw for SEO | Medium | Medium |
+| **"Made with Skissify" gallery** | Social proof + community building + SEO | Medium | High |
+
+### Strategic Framing: The "Visual Primitive" Narrative (NEW — Cycle 32)
+
+> "Every AI stack has text generation, code generation, data retrieval, image generation. None has structured spatial output. Skissify is the sketch primitive — like a database or API endpoint, it's infrastructure you connect to, not a tool you use manually."
+
+**Where to use it:** Tweet 115, HN comments, r/mcp post intro, PRESS-KIT, LinkedIn, newsletter pitches.
+
+---
+
 ## Marketing Improvements (Cycle 28 — March 28, 01:22 CET)
 
 ### ⚡ STATUS: DAY 2 BEGINS — SATURDAY MORNING — EXECUTE THE DAY 2 BATTLE PLAN
