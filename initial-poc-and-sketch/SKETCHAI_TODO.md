@@ -2,11 +2,11 @@
 
 ## 🐛 Buggar att fixa
 
-- [ ] **Pan exakt 1:1** — papperet skall följa musen pixel-perfekt vid drag, ingen skalningsfaktor
+- [x] **Pan exakt 1:1** — DONE: drag-move nu dividerar med `zoom × centerScale` (ej bara zoom); hit-testing och selection-boxes justeras för renderer centering-transform via `computeCenterTransform()`
 - [ ] **10.6m dimensionslinje** — hamnar fortfarande på höger sida inuti huset, skall vara utanför vänster vägg
 - [ ] **Blueprint eternity board** — blå bakgrund nu, skall vara mörk board med papper ovanpå precis som cream-mode
 - [ ] **UI-element överlappar** — möbler/etiketter sticker utanför väggar, t.ex. SOFFA/VARDAGSRUM/SOFFBORD i plan drawing. Koordinater behöver justeras per preset
-- [ ] **Ritning ej centrerad på papperet** — elementen hamnar inte mitt på papperet, sitter mot övre vänster. `centerOf()` verkar inte appliceras korrekt vid initial render
+- [x] **Ritning ej centrerad på papperet** — DONE: `centerElements()` anropas korrekt i renderaren; Canvas hit-testing justerad för samma transform via `computeCenterTransform()`
 - [x] **Randomness vid laddning av preset** — DONE: `loadPreset()` anropar `newSessionSeed()` så att varje presetladdning ger nya slumpmässiga linjer
 
 ## 🎨 GUI & Branding
