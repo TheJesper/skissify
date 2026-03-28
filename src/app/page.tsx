@@ -218,6 +218,7 @@ function EditorInner({
     selectAll,
     setRenderStyle,
     setSnapGrid,
+    setMetadata,
     reorderSelected,
     toggleLockSelected,
     alignSelected,
@@ -574,6 +575,8 @@ function EditorInner({
             onRenderStyle={setRenderStyle}
             snapGrid={sketch.snapGrid ?? 0}
             onSnapGrid={setSnapGrid}
+            metadata={sketch.metadata}
+            onMetadata={setMetadata}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -686,6 +689,8 @@ function EditorInner({
           onRenderStyle={setRenderStyle}
           snapGrid={sketch.snapGrid ?? 0}
           onSnapGrid={setSnapGrid}
+          metadata={sketch.metadata}
+          onMetadata={setMetadata}
         />
       </MobileBottomSheet>
     </div>

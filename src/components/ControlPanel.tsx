@@ -1,6 +1,6 @@
 "use client";
 
-import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS } from "@/lib/types";
+import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS, BlueprintMetadata } from "@/lib/types";
 import ElementThumbnailPanel from "./ElementThumbnailPanel";
 
 interface ControlPanelProps {
@@ -50,6 +50,10 @@ interface ControlPanelProps {
   snapGrid?: number;
   /** Called when the user changes grid snap size */
   onSnapGrid?: (size: number) => void;
+  /** Blueprint metadata for title block */
+  metadata?: BlueprintMetadata;
+  /** Called when the user edits blueprint metadata */
+  onMetadata?: (m: BlueprintMetadata) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -112,6 +116,8 @@ export default function ControlPanel({
   onAlign,
   snapGrid,
   onSnapGrid,
+  metadata,
+  onMetadata,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -146,6 +152,35 @@ export default function ControlPanel({
           ))}
         </div>
       </Section>
+
+      {/* Blueprint Title Block */}
+      {paper === "blueprint" && onMetadata && (
+        <Section title="Title Block">
+          <div className="space-y-1.5">
+            {([
+              { key: "title", label: "Title", placeholder: "FLOOR PLAN" },
+              { key: "owner", label: "Owner", placeholder: "Project name" },
+              { key: "scale", label: "Scale", placeholder: "1:100" },
+              { key: "date", label: "Date", placeholder: "2026-03-28" },
+              { key: "sheetNumber", label: "Sheet #", placeholder: "A-001" },
+              { key: "drawnBy", label: "Drawn by", placeholder: "Author" },
+            ] as const).map(({ key, label, placeholder }) => (
+              <div key={key} className="flex items-center gap-2">
+                <label className="text-[10px] text-[#657b83] w-14 shrink-0">{label}</label>
+                <input
+                  type="text"
+                  value={(metadata as Record<string, string | undefined>)?.[key] ?? ""}
+                  placeholder={placeholder}
+                  onChange={(e) =>
+                    onMetadata({ ...metadata, [key]: e.target.value || undefined })
+                  }
+                  className="flex-1 bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-xs text-[#586e75] placeholder:text-[#93a1a1]"
+                />
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* Tool */}
       <Section title="Tool">

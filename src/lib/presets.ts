@@ -97,6 +97,12 @@ export const presets: Record<string, SketchData> = {
     humanness: 0.04,
     width: 900,
     height: 650,
+    metadata: {
+      title: "FLOOR PLAN",
+      owner: "Sample Residence",
+      scale: "1:100",
+      sheetNumber: "A-001",
+    },
     elements: [
       // Outer walls
       { type: "line", x1: 60, y1: 60, x2: 840, y2: 60, color: "#222" },

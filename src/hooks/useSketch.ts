@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
-import { SketchData, PaperType, ToolType, SkissifyFont, RenderStyle } from "@/lib/types";
+import { SketchData, BlueprintMetadata, PaperType, ToolType, SkissifyFont, RenderStyle } from "@/lib/types";
 import { presets, defaultPreset } from "@/lib/presets";
 
 const MAX_HISTORY = 50;
@@ -104,6 +104,11 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
 
   const setSnapGrid = useCallback(
     (snapGrid: number) => updateSketch({ snapGrid }),
+    [updateSketch]
+  );
+
+  const setMetadata = useCallback(
+    (metadata: BlueprintMetadata) => updateSketch({ metadata }),
     [updateSketch]
   );
 
@@ -791,6 +796,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     strokeWidthSelected,
     setRenderStyle,
     setSnapGrid,
+    setMetadata,
     reorderSelected,
     toggleLockSelected,
     alignSelected,

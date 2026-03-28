@@ -6,6 +6,7 @@
 import {
   SketchData,
   SketchElement,
+  BlueprintMetadata,
   PAPER_COLORS,
   TOOL_STYLES,
   PaperType,
@@ -435,6 +436,88 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
   return parts.join("\n");
 }
 
+/** Render the blueprint overlay (title block, borders, north arrow, scale bar) as SVG elements */
+function renderBlueprintOverlay(W: number, H: number, meta?: BlueprintMetadata): string {
+  const m = meta ?? {};
+  const title = m.title || "PLANRITNING";
+  const owner = m.owner || "";
+  const date = m.date || "";
+  const scale = m.scale || "1:100";
+  const sheetNum = m.sheetNumber || "";
+  const drawnBy = m.drawnBy || "";
+
+  const wc = "rgba(200,225,255,0.75)";
+  const wl = "rgba(200,225,255,0.5)";
+  const parts: string[] = [];
+
+  // Double border
+  parts.push(`<rect x="10" y="10" width="${W - 20}" height="${H - 20}" fill="none" stroke="${wc}" stroke-width="0.9"/>`);
+  parts.push(`<rect x="14" y="14" width="${W - 28}" height="${H - 28}" fill="none" stroke="${wc}" stroke-width="0.4"/>`);
+
+  // Center title
+  parts.push(`<text x="${W / 2}" y="24" font-family="Georgia, serif" font-size="11" font-weight="bold" fill="${wc}" text-anchor="middle">${escapeXml(title)}</text>`);
+
+  // Decorative underline
+  parts.push(`<line x1="${W / 2 - 70}" y1="30" x2="${W / 2 + 70}" y2="30" stroke="${wl}" stroke-width="0.4"/>`);
+
+  // Title block (bottom-right) — 3-4 rows × 2 columns
+  const tw = 200;
+  const th = drawnBy ? 94 : 72;
+  const tx = W - 10 - tw;
+  const ty = H - 10 - th;
+  const rowH = 22;
+  const rowCount = drawnBy ? 4 : 3;
+
+  parts.push(`<rect x="${tx}" y="${ty}" width="${tw}" height="${th}" fill="none" stroke="${wc}" stroke-width="0.6"/>`);
+
+  // Horizontal dividers
+  for (let r = 1; r < rowCount; r++) {
+    parts.push(`<line x1="${tx}" y1="${ty + r * rowH}" x2="${tx + tw}" y2="${ty + r * rowH}" stroke="${wc}" stroke-width="0.6"/>`);
+  }
+
+  // Vertical divider in data rows (below title row)
+  parts.push(`<line x1="${tx + 100}" y1="${ty + rowH}" x2="${tx + 100}" y2="${ty + th}" stroke="${wc}" stroke-width="0.6"/>`);
+
+  // Title block text
+  // Row 0: title (full width)
+  parts.push(`<text x="${tx + 6}" y="${ty + 14}" font-family="Georgia, serif" font-size="8" font-weight="bold" fill="${wc}">${escapeXml(title)}</text>`);
+
+  // Row 1: owner | scale
+  if (owner) parts.push(`<text x="${tx + 6}" y="${ty + rowH + 14}" font-family="Georgia, serif" font-size="7" fill="${wc}">${escapeXml(owner)}</text>`);
+  parts.push(`<text x="${tx + 106}" y="${ty + rowH + 14}" font-family="Georgia, serif" font-size="7" fill="${wc}">SCALE: ${escapeXml(scale)}</text>`);
+
+  // Row 2: date | sheet number
+  if (date) parts.push(`<text x="${tx + 6}" y="${ty + 2 * rowH + 14}" font-family="Georgia, serif" font-size="7" fill="${wc}">DATE: ${escapeXml(date)}</text>`);
+  if (sheetNum) parts.push(`<text x="${tx + 106}" y="${ty + 2 * rowH + 14}" font-family="Georgia, serif" font-size="7" fill="${wc}">SHEET: ${escapeXml(sheetNum)}</text>`);
+
+  // Row 3 (optional): drawn by
+  if (drawnBy) {
+    parts.push(`<text x="${tx + 6}" y="${ty + 3 * rowH + 14}" font-family="Georgia, serif" font-size="7" fill="${wc}">BY: ${escapeXml(drawnBy)}</text>`);
+  }
+
+  // North arrow
+  const nax = tx - 22;
+  const nay = H - 44;
+  parts.push(`<line x1="${nax}" y1="${nay - 12}" x2="${nax}" y2="${nay + 12}" stroke="${wc}" stroke-width="0.5"/>`);
+  parts.push(`<line x1="${nax - 4}" y1="${nay}" x2="${nax + 4}" y2="${nay}" stroke="${wc}" stroke-width="0.5"/>`);
+  parts.push(`<text x="${nax}" y="${nay - 17}" font-family="Georgia, serif" font-size="7" font-weight="bold" fill="${wc}" text-anchor="middle">N</text>`);
+
+  // Scale bar
+  const sbx = 24;
+  const sby = H - 18;
+  const sbw = 80;
+  const sbh = 4;
+  parts.push(`<rect x="${sbx}" y="${sby}" width="${sbw}" height="${sbh}" fill="none" stroke="${wl}" stroke-width="0.5"/>`);
+  for (let i = 0; i < 4; i++) {
+    if (i % 2 === 0) {
+      parts.push(`<rect x="${sbx + i * (sbw / 4)}" y="${sby}" width="${sbw / 4}" height="${sbh}" fill="${wl}"/>`);
+    }
+  }
+  parts.push(`<text x="${sbx}" y="${sby - 3}" font-family="Georgia, serif" font-size="6" fill="${wl}">0  5  10  15m</text>`);
+
+  return parts.join("\n");
+}
+
 /** Render a SketchData to a complete SVG string. */
 export function renderSketchToSVG(sketch: SketchData): string {
   const w = sketch.width || 1000;
@@ -491,10 +574,16 @@ export function renderSketchToSVG(sketch: SketchData): string {
     ? `  <defs>\n    <style>@import url('https://fonts.googleapis.com/css2?family=${googleFontFamilies.join("&amp;family=")}&amp;display=swap');</style>\n  </defs>\n`
     : "";
 
+  // Blueprint overlay (drawn on top of elements, same as canvas renderer)
+  const blueprintOverlay = sketch.paper === "blueprint"
+    ? renderBlueprintOverlay(w, h, sketch.metadata)
+    : "";
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
 ${fontDefs}  <rect width="${w}" height="${h}" fill="${bgColor}"/>
 ${renderGrid(w, h, sketch.paper)}
 ${elementsGroup}
+${blueprintOverlay}
 </svg>`;
 }
