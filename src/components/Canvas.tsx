@@ -303,6 +303,16 @@ export default function Canvas({
         const el = sketch.elements[idx];
         if (!el) continue;
 
+        const isLocked = !!(el as unknown as Record<string, unknown>).locked;
+        // Locked elements: use orange dashed selection box
+        if (isLocked) {
+          ctx.strokeStyle = "#cb4b16";
+          ctx.setLineDash([4, 3]);
+        } else {
+          ctx.strokeStyle = "#268bd2";
+          ctx.setLineDash([4, 3]);
+        }
+
         let bounds: { x: number; y: number; w: number; h: number } | null = null;
 
         bounds = getElementBounds(el);
@@ -320,11 +330,34 @@ export default function Canvas({
             ctx.beginPath();
             ctx.setLineDash([]);
             ctx.arc(0, -bounds.h / 2 - 8, 4, 0, Math.PI * 2);
-            ctx.strokeStyle = "#b58900";
+            ctx.strokeStyle = isLocked ? "#cb4b16" : "#b58900";
             ctx.stroke();
             ctx.restore();
           } else {
             ctx.strokeRect(bounds.x, bounds.y, bounds.w, bounds.h);
+            // Draw lock icon indicator (small square) at top-left of bounds when locked
+            if (isLocked) {
+              ctx.save();
+              ctx.globalAlpha = 1;
+              ctx.setLineDash([]);
+              const lx = bounds.x + 2;
+              const ly = bounds.y + 2;
+              const ls = 10;
+              ctx.fillStyle = "#cb4b16";
+              ctx.strokeStyle = "#fdf6e3";
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.rect(lx, ly, ls, ls);
+              ctx.fill();
+              ctx.stroke();
+              // Small lock body lines
+              ctx.strokeStyle = "#fdf6e3";
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.arc(lx + ls / 2, ly + ls / 2, 2.5, 0, Math.PI * 2);
+              ctx.stroke();
+              ctx.restore();
+            }
           }
         }
       }
@@ -494,7 +527,7 @@ export default function Canvas({
 
       const { mx, my } = clientToCanvas(e.clientX, e.clientY);
 
-      // Check resize handles first (only when exactly 1 element selected)
+      // Check resize handles first (only when exactly 1 element selected and not locked)
       if (onResizeElement && selectedElements.size === 1) {
         const handles = getActiveHandles();
         if (handles) {
@@ -503,6 +536,8 @@ export default function Canvas({
               const idx = [...selectedElements][0];
               const el = sketch.elements[idx];
               if (!el) break;
+              // Skip resize if element is locked
+              if ((el as unknown as Record<string, unknown>).locked) break;
               // Capture starting state
               activeResizeHandle.current = h.id;
               resizeElementIdx.current = idx;
@@ -523,13 +558,18 @@ export default function Canvas({
       }
 
       // Check if pressing down on a selected element → start drag-move
+      // Only if all selected elements are unlocked
       if (selectedElements.size > 0 && onMoveSelected) {
         const hitOnSelected = [...selectedElements].some((i) => {
           const el = sketch.elements[i];
           return el && hitTest(el, mx, my);
         });
+        const allLocked = [...selectedElements].every((i) => {
+          const el = sketch.elements[i];
+          return el && (el as unknown as Record<string, unknown>).locked;
+        });
 
-        if (hitOnSelected) {
+        if (hitOnSelected && !allLocked) {
           isDraggingElements.current = false;
           dragStartMouse.current = { x: e.clientX, y: e.clientY };
           lastMouse.current = { x: e.clientX, y: e.clientY };

@@ -1330,3 +1330,42 @@ After 20 consecutive scans over ~24 hours, one finding is immutable:
 | Whimsical | Official (desktop) | Semi | No | No | Stable — no new features noted |
 | Napkin AI | No | Semi | No | No | API availability still unclear (conflicting March 2026 sources) |
 | **Skissify** | **Planned — CRITICAL** | **Yes** | **Yes** | **Yes (native)** | **Still unchallenged in niche; MCP unbuilt** |
+
+---
+
+## Update Log: March 28, 2026 — 01:32 CET | Automated Strategy Run #21
+
+### Status: Saturday overnight scan — rate-limited after 1 search (173/2000 monthly quota). Intelligence below synthesized from prior runs + one fresh result.
+
+### 🟢 CONFIRMATION: Twenty-First Consecutive Scan — Niche Remains Structurally Unoccupied
+
+Fresh search completed: "AI sketch diagram tool MCP launch new March 2026"
+
+**Results from Run #21:**
+- **DEV Community** (3 days ago): "The Complete Guide to MCP: Building AI-Native Applications in 2026" — MCP described as "a fundamental shift in how we architect AI applications." No sketch/hand-drawn tool mentioned.
+- **Fast Company** (3 days ago): Figma "Most Innovative Enterprise Companies 2026" — cites MCP server, Figma Draw (vector illustration, NOT hand-drawn sketch style), ChatGPT app. Zero floor plan or JSON-native sketch tools.
+- **Smartsheet Community** (3 days ago): MCP Server GA (March 24, 2026) — confirms Smartsheet's 4,000-user first-week data remains the adoption velocity benchmark.
+- **Wikipedia MCP article** (2 days ago): MCP Wikipedia page updated, covering ecosystem growth. No sketch-specific tools in article.
+
+**Key fresh signal — Figma Draw**: Fast Company confirms Figma launched **Figma Draw**, described as "an enhanced tool for freeform illustration and vector graphics editing reducing the need for designers to reach for other software." This is a polished vector illustration tool (competing with Illustrator/Affinity), not a hand-drawn architectural sketch tool. Hand-drawn aesthetic is not mentioned. Zero overlap with Skissify's niche.
+
+**No new entrant detected.** Twenty-one consecutive scans confirm niche is structurally unoccupied.
+
+### 🟡 SIGNAL: Figma Draw Launches — Polished Vector, Not Hand-Drawn Sketch
+- **Source**: Fast Company "Most Innovative Companies in Enterprise 2026" (3 days ago, March 25, 2026)
+- Figma Draw is for "freeform illustration and vector graphics" — Illustrator-replacement territory
+- Combined with `use_figma` MCP, Figma is becoming a full-stack design platform (polished UI + illustration + MCP agents)
+- **Skissify impact**: LOW. Figma's lane is moving further from Skissify's, not closer. They are becoming more polished/professional. Skissify's rough-sketch + floor-plan + JSON-native lane is even more distinct.
+- **Positioning note**: "Figma draws vectors. Skissify draws sketches. They are not the same thing." This distinction becomes clearer every week Figma expands into polished tooling.
+
+### 🔵 CONTEXT: MCP Is Now Wikipedia-Level Mainstream
+- MCP Wikipedia article (2 days ago) covers adoption by IDEs, Replit, Sourcegraph, OpenAI
+- The protocol is no longer "emerging" — it is infrastructure
+- **Skissify implication**: Any tool NOT on MCP in 6 months will be a legacy tool in developer perception. The window to launch as an "early MCP tool" vs "late MCP tool" closes around Q2 2026.
+
+### Updated Competitor Matrix (Run #21)
+| Tool | March 28 Status |
+|------|----------------|
+| Figma | Added Figma Draw (vector illustration) — polished lane expanding further from Skissify |
+| All others | No changes detected this cycle |
+| **Skissify MCP** | **Still unbuilt — Saturday March 28 is the build window** |

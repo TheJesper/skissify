@@ -216,6 +216,8 @@ function EditorInner({
     nudgeSelected,
     selectAll,
     setRenderStyle,
+    reorderSelected,
+    toggleLockSelected,
     redraw,
     updateSketch,
     updateElement,
@@ -466,6 +468,12 @@ function EditorInner({
     return el.strokeWidth;
   })();
 
+  // True if ANY selected element is locked
+  const selectedLocked: boolean = (() => {
+    if (selectedElements.size === 0) return false;
+    return [...selectedElements].some((i) => !!(sketch.elements[i] as unknown as Record<string, unknown>)?.locked);
+  })();
+
   return (
     <div className="h-screen flex flex-col overflow-hidden">
       <Toolbar
@@ -538,6 +546,7 @@ function EditorInner({
             selectedCount={selectedElements.size}
             selectedColor={selectedColor}
             selectedStrokeWidth={selectedStrokeWidth}
+            selectedLocked={selectedLocked}
             onPaper={setPaper}
             onTool={setTool}
             onAmplitude={setAmplitude}
@@ -551,6 +560,8 @@ function EditorInner({
             onDeleteSelected={deleteSelected}
             onColorSelected={colorSelected}
             onStrokeWidthSelected={strokeWidthSelected}
+            onToggleLock={toggleLockSelected}
+            onReorder={reorderSelected}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
           />
@@ -643,6 +654,7 @@ function EditorInner({
           selectedCount={selectedElements.size}
           selectedColor={selectedColor}
           selectedStrokeWidth={selectedStrokeWidth}
+          selectedLocked={selectedLocked}
           onPaper={setPaper}
           onTool={setTool}
           onAmplitude={setAmplitude}
@@ -656,6 +668,8 @@ function EditorInner({
           onDeleteSelected={deleteSelected}
           onColorSelected={colorSelected}
           onStrokeWidthSelected={strokeWidthSelected}
+          onToggleLock={toggleLockSelected}
+          onReorder={reorderSelected}
           renderStyle={sketch.renderStyle}
           onRenderStyle={setRenderStyle}
         />

@@ -24,6 +24,8 @@ export interface BaseElement {
   strokeWidth?: number;
   /** Rotation in degrees (clockwise), applied around the element's bounding-box center */
   rotation?: number;
+  /** When true, the element cannot be moved, resized, or deleted via canvas interactions */
+  locked?: boolean;
 }
 
 export interface LineElement extends BaseElement {

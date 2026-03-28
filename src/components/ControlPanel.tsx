@@ -37,6 +37,12 @@ interface ControlPanelProps {
   renderStyle?: RenderStyle;
   /** Called when the user changes the render style */
   onRenderStyle?: (s: RenderStyle) => void;
+  /** Whether any selected element is locked */
+  selectedLocked?: boolean;
+  /** Called when the user toggles lock on selected elements */
+  onToggleLock?: () => void;
+  /** Called to reorder selected elements in z-order */
+  onReorder?: (direction: "front" | "back" | "forward" | "backward") => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -98,6 +104,9 @@ export default function ControlPanel({
   onStrokeWidthSelected,
   renderStyle,
   onRenderStyle,
+  selectedLocked,
+  onToggleLock,
+  onReorder,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -384,6 +393,61 @@ export default function ControlPanel({
                   {(selectedStrokeWidth ?? 1).toFixed(1)}
                 </span>
               </div>
+            )}
+            {onReorder && (
+              <div className="space-y-1.5">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide block">
+                  Layer order
+                </label>
+                <div className="grid grid-cols-4 gap-1">
+                  <button
+                    onClick={() => onReorder("back")}
+                    title="Send to Back"
+                    className="flex flex-col items-center gap-0.5 px-1 py-1.5 bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 rounded text-[9px] font-medium transition-all border border-[#93a1a1]"
+                  >
+                    <span className="text-sm leading-none">⬇⬇</span>
+                    <span>Back</span>
+                  </button>
+                  <button
+                    onClick={() => onReorder("backward")}
+                    title="Send Backward"
+                    className="flex flex-col items-center gap-0.5 px-1 py-1.5 bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 rounded text-[9px] font-medium transition-all border border-[#93a1a1]"
+                  >
+                    <span className="text-sm leading-none">⬇</span>
+                    <span>Down</span>
+                  </button>
+                  <button
+                    onClick={() => onReorder("forward")}
+                    title="Bring Forward"
+                    className="flex flex-col items-center gap-0.5 px-1 py-1.5 bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 rounded text-[9px] font-medium transition-all border border-[#93a1a1]"
+                  >
+                    <span className="text-sm leading-none">⬆</span>
+                    <span>Up</span>
+                  </button>
+                  <button
+                    onClick={() => onReorder("front")}
+                    title="Bring to Front"
+                    className="flex flex-col items-center gap-0.5 px-1 py-1.5 bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 rounded text-[9px] font-medium transition-all border border-[#93a1a1]"
+                  >
+                    <span className="text-sm leading-none">⬆⬆</span>
+                    <span>Front</span>
+                  </button>
+                </div>
+              </div>
+            )}
+            {onToggleLock && (
+              <button
+                onClick={onToggleLock}
+                className={`w-full flex items-center gap-2 px-2 py-1.5 rounded text-xs font-medium transition-all border ${
+                  selectedLocked
+                    ? "border-[#cb4b16] bg-[#cb4b16]/10 text-[#cb4b16]"
+                    : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 text-[#657b83]"
+                }`}
+                title={selectedLocked ? "Unlock selected elements" : "Lock selected elements (prevents move/resize)"}
+              >
+                <span>{selectedLocked ? "🔒" : "🔓"}</span>
+                <span>{selectedLocked ? "Locked — click to unlock" : "Lock element"}</span>
+              </button>
             )}
           </div>
         )}

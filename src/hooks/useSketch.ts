@@ -195,7 +195,11 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
 
   const deleteSelected = useCallback(() => {
     if (selectedElements.size === 0) return;
-    const newElements = sketch.elements.filter((_, i) => !selectedElements.has(i));
+    // Skip deletion of locked elements
+    const newElements = sketch.elements.filter((el, i) => {
+      if (!selectedElements.has(i)) return true; // not selected, keep
+      return !!(el as unknown as Record<string, unknown>).locked; // locked → keep
+    });
     updateSketch({ elements: newElements });
     setSelectedElements(new Set());
   }, [sketch.elements, selectedElements, updateSketch]);
@@ -391,6 +395,103 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setRedrawKey((k) => k + 1);
   }, [pushHistory]);
 
+  /** Move selected elements in the z-order (rendering order) */
+  const reorderSelected = useCallback(
+    (direction: "front" | "back" | "forward" | "backward") => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const indices = [...selectedElements].sort((a, b) => a - b);
+        const elements = [...prev.elements];
+        const n = elements.length;
+
+        if (direction === "front") {
+          // Remove selected, append at end
+          const selected = indices.map((i) => elements[i]);
+          const rest = elements.filter((_, i) => !selectedElements.has(i));
+          const next = { ...prev, elements: [...rest, ...selected] as SketchData["elements"] };
+          jsonRef.current = JSON.stringify(next, null, 2);
+          // Update selectedElements to new indices
+          const newIndices = new Set(Array.from({ length: selected.length }, (_, i) => rest.length + i));
+          pushHistory(next);
+          setTimeout(() => setSelectedElements(newIndices), 0);
+          return next;
+        }
+
+        if (direction === "back") {
+          // Remove selected, prepend at start
+          const selected = indices.map((i) => elements[i]);
+          const rest = elements.filter((_, i) => !selectedElements.has(i));
+          const next = { ...prev, elements: [...selected, ...rest] as SketchData["elements"] };
+          jsonRef.current = JSON.stringify(next, null, 2);
+          const newIndices = new Set(Array.from({ length: selected.length }, (_, i) => i));
+          pushHistory(next);
+          setTimeout(() => setSelectedElements(newIndices), 0);
+          return next;
+        }
+
+        if (direction === "forward") {
+          // Move each selected element one position toward the end (swap with next unselected)
+          const newElements = [...elements];
+          // Process from highest index to lowest to avoid cascading shifts
+          for (let i = n - 1; i >= 0; i--) {
+            if (selectedElements.has(i) && i < n - 1 && !selectedElements.has(i + 1)) {
+              [newElements[i], newElements[i + 1]] = [newElements[i + 1], newElements[i]];
+            }
+          }
+          const next = { ...prev, elements: newElements as SketchData["elements"] };
+          jsonRef.current = JSON.stringify(next, null, 2);
+          pushHistory(next);
+          // Recompute selected indices after swap
+          const newIndices = new Set<number>();
+          newElements.forEach((el, idx) => {
+            if (indices.some((oi) => elements[oi] === el)) newIndices.add(idx);
+          });
+          setTimeout(() => setSelectedElements(newIndices), 0);
+          return next;
+        }
+
+        if (direction === "backward") {
+          // Move each selected element one position toward the start (swap with prev unselected)
+          const newElements = [...elements];
+          for (let i = 0; i < n; i++) {
+            if (selectedElements.has(i) && i > 0 && !selectedElements.has(i - 1)) {
+              [newElements[i], newElements[i - 1]] = [newElements[i - 1], newElements[i]];
+            }
+          }
+          const next = { ...prev, elements: newElements as SketchData["elements"] };
+          jsonRef.current = JSON.stringify(next, null, 2);
+          pushHistory(next);
+          const newIndices = new Set<number>();
+          newElements.forEach((el, idx) => {
+            if (indices.some((oi) => elements[oi] === el)) newIndices.add(idx);
+          });
+          setTimeout(() => setSelectedElements(newIndices), 0);
+          return next;
+        }
+
+        return prev;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
+  /** Toggle locked state on selected elements */
+  const toggleLockSelected = useCallback(() => {
+    if (selectedElements.size === 0) return;
+    setSketch((prev) => {
+      // If any selected element is unlocked, lock all; otherwise unlock all
+      const anyUnlocked = [...selectedElements].some((i) => !prev.elements[i]?.locked);
+      const newElements = prev.elements.map((el, i) => {
+        if (!selectedElements.has(i)) return el;
+        return { ...el, locked: anyUnlocked };
+      });
+      const next = { ...prev, elements: newElements as SketchData["elements"] };
+      jsonRef.current = JSON.stringify(next, null, 2);
+      pushHistory(next);
+      return next;
+    });
+  }, [selectedElements, pushHistory]);
+
   /** Update any field(s) of a single element by index and push to undo history */
   const updateElement = useCallback(
     (idx: number, updates: Record<string, unknown>) => {
@@ -470,6 +571,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     selectAll,
     strokeWidthSelected,
     setRenderStyle,
+    reorderSelected,
+    toggleLockSelected,
   };
 }
 
