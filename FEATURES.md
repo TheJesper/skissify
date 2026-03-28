@@ -149,6 +149,8 @@
 
 - [x] **Inline text editing** — double-click any `text`, `rect`, or `dim` element on the canvas to edit its content directly. A centered overlay input appears with Save/Cancel buttons. Enter saves, Escape cancels. Fully integrated with undo/redo (one history entry per commit). No JSON editor required for simple label changes.
 
+- [x] **`/api/render` — Direct SVG render endpoint** — `POST /api/render` accepts a `SketchData` manifest and returns a hand-drawn SVG directly (`Content-Type: image/svg+xml`). No auth, no database, instant output. Also accepts `?format=json` (or `format` in body) to get `{ svg, width, height }` JSON. Accepts both `{ data: SketchData }` envelope and bare `SketchData` at top level for convenience. Shares the same rate limiter as other endpoints. Full CORS support for cross-origin agent use. `/api/manifest` updated to document the endpoint and its two response modes. `/for-agents` page updated: step 3 now shows the render endpoint with a curl example; save-and-share moved to step 4; both curl snippets shown side-by-side. Build passes — `/api/render` shows as a dynamic route.
+
 ## Suggested Features for Launch Readiness
 
 ### Authentication

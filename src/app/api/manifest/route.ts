@@ -6,6 +6,13 @@ const manifest = {
   description: "AI-agent-compatible hand-drawn sketch tool. Define sketches as JSON and get beautiful hand-drawn style SVG/PNG output with organic wobble effects.",
   url: "https://skissify.com",
   api: {
+    render: {
+      method: "POST",
+      path: "/api/render",
+      description: "Render a sketch manifest directly to SVG. Body: { data: SketchData, format?: 'svg'|'json' }. Returns SVG string (image/svg+xml) by default, or { svg, width, height } when format='json'. No auth required. Also accepts bare SketchData at top level for convenience.",
+      returns: "SVG string (default) or { svg: string, width: number, height: number } (format=json)",
+      rateLimit: "shared with other endpoints",
+    },
     createSketch: {
       method: "POST",
       path: "/api/sketches",
@@ -168,10 +175,17 @@ const manifest = {
   },
   agentPrompt: `To create a Skissify sketch:
 
+QUICK RENDER (no auth, immediate SVG):
 1. Fetch https://skissify.com/api/manifest to learn the full schema
 2. Construct a JSON object with: paper, tool, inkColor, amplitude, waves, humanness, width, height, and an elements array
 3. Each element needs a "type" and type-specific properties (see elementTypes in schema)
-4. POST the JSON as { "data": <your sketch>, "title": "My Sketch" } to https://skissify.com/api/sketches
+4. POST { "data": <your sketch> } to https://skissify.com/api/render
+5. You'll get back an SVG image directly (Content-Type: image/svg+xml)
+   Or use format="json" to get { svg, width, height } as JSON
+
+SAVE & SHARE (creates a public link):
+1-3. Same as above
+4. POST { "data": <your sketch>, "title": "My Sketch" } to https://skissify.com/api/sketches
 5. You'll get back { "slug": "abc123" } -- the sketch is viewable at https://skissify.com/s/abc123
 
 Tips:
@@ -179,7 +193,8 @@ Tips:
 - Keep amplitude 0.5-0.8 for natural wobble without being messy
 - For floor plans, use line/rect for walls, then add window/door-symbol/dim elements
 - For diagrams, use rect + text for boxes and arrow for connections
-- Text uses the Caveat handwriting font automatically`,
+- Text uses the Caveat handwriting font automatically
+- Use /api/render for one-off renders; use /api/sketches when you want a persistent URL`,
 };
 
 export async function GET() {

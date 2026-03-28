@@ -63,8 +63,29 @@ const steps = [
   },
   {
     num: "03",
-    title: "POST to save",
-    description: "Send the sketch to the API. You'll get back a slug for the shareable URL.",
+    title: "Render to SVG instantly",
+    description: "POST to /api/render — get back an SVG directly. No auth, no database, just raw hand-drawn output.",
+    code: `// Quick render — returns SVG (image/svg+xml)
+const res = await fetch("https://skissify.com/api/render", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ data: sketch })
+});
+const svg = await res.text();
+// Use as src in <img>, save as .svg, embed inline, etc.
+
+// Or get JSON wrapper { svg, width, height }:
+const res2 = await fetch("https://skissify.com/api/render?format=json", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ data: sketch })
+});
+const { svg: svgStr, width, height } = await res2.json();`,
+  },
+  {
+    num: "04",
+    title: "Save & share (optional)",
+    description: "Send the sketch to /api/sketches to persist it and get a public shareable URL.",
     code: `const res = await fetch("https://skissify.com/api/sketches", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
@@ -74,13 +95,7 @@ const steps = [
   })
 });
 const { slug } = await res.json();
-// View at: https://skissify.com/s/{slug}`,
-  },
-  {
-    num: "04",
-    title: "View or embed",
-    description: "Open the shareable URL, fork in the editor, or fetch the sketch data back via GET.",
-    code: `// View:  https://skissify.com/s/{slug}
+// View at: https://skissify.com/s/{slug}
 // Edit:  https://skissify.com/editor?edit={slug}
 // Fork:  https://skissify.com/editor?fork={slug}
 // API:   GET https://skissify.com/api/sketches/{slug}`,
@@ -346,11 +361,46 @@ export default function ForAgentsPage() {
             <div className="border border-[#93a1a1]/20 rounded-xl p-6" style={{ backgroundColor: "#eee8d5" }}>
               <h3 className="text-[#073642] font-semibold mb-3">Direct API (curl)</h3>
               <p className="text-sm text-[#657b83] mb-4">
-                No MCP? Use the REST API directly:
+                No MCP? Use the REST API directly. <code className="text-[#268bd2]">/api/render</code> returns SVG instantly — no auth needed:
               </p>
+              <div className="relative mb-4">
+                <pre className="px-4 py-3 bg-[#073642] rounded-lg text-[#93a1a1] font-mono text-xs border border-[#586e75]/30 overflow-x-auto">
+{`# Render to SVG (no auth, instant)
+curl -X POST https://skissify.com/api/render \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "data": {
+      "paper": "cream",
+      "tool": "ballpoint",
+      "inkColor": "#222",
+      "amplitude": 0.7,
+      "waves": 0.8,
+      "humanness": 0.15,
+      "width": 540,
+      "height": 420,
+      "elements": [
+        {"type":"rect","x":50,"y":50,"w":200,"h":120},
+        {"type":"text","x":100,"y":115,"text":"Hello"}
+      ]
+    }
+  }' > sketch.svg`}
+                </pre>
+                <button
+                  onClick={() =>
+                    copyToClipboard(
+                      `curl -X POST https://skissify.com/api/render \\\n  -H "Content-Type: application/json" \\\n  -d '{"data":{"paper":"cream","tool":"ballpoint","inkColor":"#222","amplitude":0.7,"waves":0.8,"humanness":0.15,"width":540,"height":420,"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":120},{"type":"text","x":100,"y":115,"text":"Hello"}]}}' > sketch.svg`,
+                      "curl-render"
+                    )
+                  }
+                  className="absolute top-2 right-2 px-3 py-1 bg-[#586e75] hover:bg-[#657b83] text-[#fdf6e3] text-xs rounded transition-colors"
+                >
+                  {copied === "curl-render" ? "Copied!" : "Copy"}
+                </button>
+              </div>
               <div className="relative">
                 <pre className="px-4 py-3 bg-[#073642] rounded-lg text-[#93a1a1] font-mono text-xs border border-[#586e75]/30 overflow-x-auto">
-{`curl -X POST https://skissify.com/api/sketches \\
+{`# Save & share (creates public link)
+curl -X POST https://skissify.com/api/sketches \\
   -H "Content-Type: application/json" \\
   -d '{
     "title": "My Sketch",
@@ -368,7 +418,8 @@ export default function ForAgentsPage() {
         {"type":"text","x":100,"y":115,"text":"Hello"}
       ]
     }
-  }'`}
+  }'
+# Returns: { "slug": "abc123" } → https://skissify.com/s/abc123`}
                 </pre>
                 <button
                   onClick={() =>
