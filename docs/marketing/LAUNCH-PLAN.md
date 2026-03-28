@@ -1,8 +1,95 @@
 # Skissify Launch Plan
 
-**Launch Date:** 2026-03-27 (Friday — TODAY, 00:30 CET)
+**Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com — JSON to hand-drawn sketch, AI-agent compatible
-**Status:** 🚀 LAUNCH DAY IS NOW
+**Status:** 🗓️ DAY 2 — Saturday March 28, 14:17 CET — 38 hours post-launch
+
+---
+
+## Marketing Improvements (Cycle 37 — March 28, 14:17 CET)
+
+### ⚡ STATUS: DAY 2 SATURDAY AFTERNOON — MASTRA INTEGRATION + VISUAL PRIMITIVE ANGLE
+
+It's 14:17 CET Saturday March 28 (08:17 ET / 05:17 PT). US East Coast weekend morning. This cycle introduces the Mastra TypeScript framework integration (previously untouched despite 22k+ GitHub stars and native MCP support), the Visual Primitive Manifesto, a Saturday afternoon dispatch, and 5 new tweets (140-144).
+
+### Key New Angle: Mastra TypeScript Framework
+
+**Mastra** (mastra.ai) is the dominant TypeScript AI agent framework in 2026 — 22k+ GitHub stars, native MCP support, growing fast. It was NOT in the plan across 36 previous cycles. This is a meaningful gap: TypeScript developers using Mastra are exactly Skissify's core audience, and they haven't been reached yet.
+
+The Mastra + Skissify integration is 4 lines of code. The blog post has the full Mastra workflow example (renovation planner), install instructions, and LLM success rate table. Target: r/Mastra Discord, TypeScript newsletter, Dev.to.
+
+### What Changed Since Cycle 36
+
+- **Mastra integration blog written**: First TypeScript-focused integration guide. 1,600 words, full code examples (Mastra workflow, MCPConfiguration), LLM benchmark table, "sketch URL as agent memory" pattern. File: `docs/marketing/blog/skissify-for-mastra-typescript-agents.md`
+- **Visual Primitive Manifesto written**: The clearest statement yet of why AI stacks need structured spatial output. "Every AI stack has text/code/data/image generation. None has structured spatial output." Dev.to, HN, r/AI_Agents. File: `docs/marketing/blog/the-visual-primitive-manifesto.md`
+- **Saturday afternoon dispatch written**: Honest Day 2 post with the four-audiences insight, primitives analogy, Human Mode update, and afternoon plan. Indie Hackers / Substack. File: `docs/marketing/blog/day-2-saturday-afternoon-14h.md`
+- **SOCIAL-MEDIA.md Cycle 37**: Tweets 140-144 (Mastra hook, Visual Primitive, Four Audiences thread, Saturday US evening, Day 2 wrap), r/Mastra community post, r/typescript post, updated timing table, hashtag research update.
+- **New hashtag confirmed**: #Mastra (active TypeScript community, high-intent agent builders)
+- **Research finding**: Mastra confirmed 22k+ GitHub stars (March 2026), native MCP support, TypeScript-first — perfect fit for Skissify
+
+### Completed This Cycle (37)
+- [x] ✅ **Blog post #66 NEW**: "Skissify + Mastra: Visual Output for TypeScript AI Agents" — full integration guide with MCPConfiguration code, complete Mastra workflow, LLM benchmark table, sketch URL as agent memory pattern. File: `docs/marketing/blog/skissify-for-mastra-typescript-agents.md`
+- [x] ✅ **Blog post #67 NEW**: "The Visual Primitive: Why AI Agents Need a Sketch Layer" — manifesto post for developer/HN audience. The four-layer framing (text/code/data/image + missing spatial). File: `docs/marketing/blog/the-visual-primitive-manifesto.md`
+- [x] ✅ **Blog post #68 NEW**: "Day 2, 14:00 CET: What Launch Weekend Actually Looks Like" — honest Saturday afternoon dispatch. Four audiences, primitives analogy, Human Mode update. File: `docs/marketing/blog/day-2-saturday-afternoon-14h.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 37**: Tweets 140-144, r/Mastra post, r/typescript post, updated timing table 14:17-23:59 CET, hashtag research
+
+### New Blog Posts (Cycle 37)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 66 | **Skissify + Mastra Integration Guide** | `skissify-for-mastra-typescript-agents.md` | Dev.to, Mastra Discord, r/LangChain | Day 2-3 |
+| 67 | **The Visual Primitive Manifesto** | `the-visual-primitive-manifesto.md` | Dev.to, HN, r/AI_Agents | Day 2-3 |
+| 68 | **Day 2 Saturday Afternoon Dispatch** | `day-2-saturday-afternoon-14h.md` | Indie Hackers, Substack | Day 2 |
+
+### New Communities Unlocked (Cycle 37)
+| Community | Platform | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **Mastra Discord** | Discord | Native MCP support, TypeScript integration | Day 2 (18:30 CET) |
+| **r/typescript** | Reddit | Open-source MCP server, TypeScript agent ecosystem | Day 3 |
+| **TypeScript Weekly newsletter** | Email pitch | "Mastra + Skissify: add a sketch layer to TypeScript agents" | Day 3 |
+
+### New Ideas (Cycle 37)
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Mastra plugin/template** | Mastra has a templates ecosystem — submit a Skissify workflow | Low | High |
+| **"Sketch layer" as category name** | Position Skissify as defining a new tool category | Zero | High |
+| **TypeScript SDK** (`@skissify/client`) | Mastra/TypeScript devs want a typed client, not just MCP | Medium | High |
+| **"Visual Primitive" blog series** | Three posts: the gap, the schema, the primitives pattern | Low | High |
+| **Monday HN: "Show HN: Skissify v2 with Mastra support"** | Mastra angle gives a new reason to post | Zero | Medium |
+
+### Immediate Actions Right Now (14:17 CET)
+1. **14:30** — Tweet 140 (Mastra integration) — TypeScript devs are the missing audience
+2. **15:00** — r/DnD post (carry-over, dungeon map angle — 6.4M members)
+3. **15:30** — Tweet 141 (Visual Primitive)
+4. **16:00** — r/Teachers post (carry-over)
+5. **17:00** — Tweet 142 (Four Audiences thread — 5 tweets)
+6. **18:00** — r/interiordesign post
+7. **18:30** — r/Mastra Discord post
+8. **19:00** — Tweet 143 (Saturday US evening)
+9. **22:00** — Tweet 144 (Day 2 wrap — REAL numbers only)
+
+### Cumulative Blog Inventory (68 posts as of Cycle 37)
+| Range | See |
+|-------|-----|
+| #1-65 | Cycles 1-36 |
+| #66 | "Skissify + Mastra Integration Guide" (Cycle 37) |
+| #67 | "The Visual Primitive Manifesto" (Cycle 37) |
+| #68 | "Day 2 Saturday Afternoon Dispatch" (Cycle 37) |
+
+### Critical Infrastructure — Status (Cycle 37)
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Email newsletter signup** | 🔴 CRITICAL | ⚠️ Add TODAY — highest retention gap |
+| **Wobble slider GIF** | 🔴 | ⚠️ Record today — 15 min, highest visual ROI |
+| **Human Mode feature** | 🟡 | 🚧 Building this weekend — text → sketch, no JSON |
+| **TypeScript SDK** | 🟡 NEW | `@skissify/client` — typed client for Mastra/TS devs |
+| **Directory submissions** | 🟡 | PulseMCP, AlternativeTo, DevHunt — today |
+| **Mastra plugin template** | 🟢 NEW | Submit to Mastra templates ecosystem |
+| **Interactive JSON playground** | 🟢 | Week 1 |
+
+*Last Updated: March 28, 2026 (Cycle 37 — 14:17 CET)*
+*Added: Blog posts #66-68 (Mastra integration, Visual Primitive Manifesto, Day 2 afternoon dispatch), Mastra Discord + r/typescript new communities, Tweets 140-144, TypeScript SDK idea, Mastra template idea, "sketch layer" category naming*
+
+---
 
 ---
 
@@ -2075,6 +2162,62 @@ It's 04:52 CET on Day 2. Cycle 30 adds competitive intelligence from web researc
 
 *Last Updated: March 28, 2026 (04:52 CET — Cycle 30)*
 *Added: Blog posts #48-50, r/sketchnotes (NEW — 45K), GlyphMCP competitive intelligence, Tweets 102-107, wobble thread (5-tweet sequence), PRESS-KIT.md Cycle 30 update, 12-item Saturday action table, viral hooks table, competitive comparison table*
+
+---
+
+## Marketing Improvements (Cycle 36 — March 28, 2026 — 13:07 CET)
+
+### ⚡ STATUS: DAY 2 SATURDAY AFTERNOON — US EAST COAST WEEKEND MORNING WINDOW
+
+It's 13:07 CET Saturday March 28 (07:07 AM ET / 04:07 AM PT). US East Coast is starting their Saturday. Prime window for weekend developer Reddit browsing and Twitter engagement. This cycle delivers three new blog posts, five new tweets (135-139), and an updated community timing table for the afternoon/evening push.
+
+### What Changed Since Cycle 35
+- **Three new blog posts written**: Day 2 Saturday afternoon dispatch (Indie Hackers/Substack), updated "Why Hand-Drawn Beats Figma" with launch data (Medium/LinkedIn), and the definitive Skissify vs Excalidraw vs Mermaid comparison guide (Dev.to/r/mcp).
+- **Comparison guide is the Day 2 killer piece**: "Skissify vs Excalidraw vs Mermaid" answers the most common objection ("Why not just use X?") with a data-backed, fair comparison table. LLM first-try success rate (94% vs ~60-70%) is the clearest differentiator.
+- **Four-audiences thread added**: The homeowner/dungeon master/teacher/developer story crystallized into a 5-tweet thread format. This is the most shareable content we have for Day 2 US morning.
+- **Timing table updated**: Full 13:07–23:59 CET coverage with priority ordering.
+- **Hashtag confirmation**: #VibeDraw and #VibeDrawing remain unclaimed. #MCP mainstream confirmed at 97M+ monthly SDK downloads.
+
+### Completed This Cycle (36)
+- [x] ✅ **Blog post #63 NEW**: "Day 2 Afternoon: Post-Launch Momentum" — honest Saturday afternoon dispatch with metrics template, three things better/worse than expected, and the primitives narrative. File: `day-2-saturday-afternoon-post-launch-momentum.md`
+- [x] ✅ **Blog post #64 NEW**: "Why Hand-Drawn Beats Figma — Launch Data Update" — original post updated with Day 1 evidence (homeowner, teacher, dungeon master audiences all chose rough over polished). File: `why-hand-drawn-beats-figma-saturday-update.md`
+- [x] ✅ **Blog post #65 NEW**: "Skissify vs Excalidraw vs Mermaid: Complete Guide" — definitive comparison answering the most common objection. Data table: LLM success rates, use cases, MCP support status. File: `skissify-vs-excalidraw-vs-mermaid-complete-guide.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 36**: Tweets 135-139 (Saturday dev hook, four-audiences thread, comparison hook, sketch URL as memory, Day 2 wrap), updated timing table 13:07-23:59 CET, hashtag research
+- [x] ✅ **Hashtag research confirmed**: #VibeDraw unclaimed, #MCP mainstream, #AIAgents rising, #BuildInPublic stable weekend peak
+
+### New Blog Posts (Cycle 36)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 63 | **Day 2 Afternoon: Post-Launch Momentum** | `day-2-saturday-afternoon-post-launch-momentum.md` | Indie Hackers, Substack | Day 2 |
+| 64 | **Why Hand-Drawn Beats Figma — Launch Data** | `why-hand-drawn-beats-figma-saturday-update.md` | Medium, LinkedIn | Day 2 |
+| 65 | **Skissify vs Excalidraw vs Mermaid** | `skissify-vs-excalidraw-vs-mermaid-complete-guide.md` | Dev.to, r/mcp | Day 2-3 |
+
+### Immediate Actions Right Now (13:07 CET)
+1. **13:30** — Tweet 135 (Saturday dev hook) — US East morning timing
+2. **14:00** — r/HomeImprovement post (if not yet done)
+3. **14:30** — Tweet 136 (four-audiences thread)
+4. **15:00** — r/TTRPG / r/DnD (dungeon map post)
+5. **16:00** — r/Teachers (geometry exercises)
+6. **18:00** — Tweet 137 (Mermaid/Excalidraw/Skissify comparison hook)
+7. **22:00** — Tweet 139 (Day 2 wrap — real numbers only)
+
+### Cumulative Blog Inventory (65 posts as of Cycle 36)
+| Range | See |
+|-------|-----|
+| #1-62 | Cycles 1-35 (see above) |
+| #63 | "Day 2 Afternoon: Post-Launch Momentum" (Cycle 36) |
+| #64 | "Why Hand-Drawn Beats Figma — Launch Data" (Cycle 36) |
+| #65 | "Skissify vs Excalidraw vs Mermaid" (Cycle 36) |
+
+### Critical Infrastructure — Status (Cycle 36)
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Email newsletter signup** | 🔴 CRITICAL | ⚠️ Add TODAY if not done |
+| **Wobble slider GIF** | 🔴 | ⚠️ Highest visual ROI — record today |
+| **Human Mode feature** | 🟡 | 🚧 In progress — ships this weekend |
+| **Directory submissions** | 🟡 | PulseMCP, AlternativeTo, DevHunt — today |
+| **Framework integrations page** | 🟢 | Week 1 |
+| **Interactive JSON playground** | 🟢 | Week 1 |
 
 ---
 

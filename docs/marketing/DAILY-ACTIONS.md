@@ -2,6 +2,231 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #33 (20:04 CET, Saturday March 28)
+
+### Priority Context
+
+**33 consecutive niche-clean scans. 33+ hours of intelligence across two days. The niche is structurally confirmed and the gap is architecturally durable — not accidental.** MCP is at 97M monthly downloads (CoinSpectator, March 27). The canonical AI design stack ("Stitch → Figma → Claude Code") is 3 days old — the counter-narrative HN window closes Monday. Plan7Architect price increase is Tuesday March 31. `@skissify/mcp` build status from Saturday is unknown.
+
+**Core assumption for Sunday**: If Saturday's build session produced `@skissify/mcp`, Sunday is launch day. If it didn't, Sunday is the absolute final window — the HN narrative expires Monday, the Plan7Architect SEO window expires Tuesday.
+
+---
+
+### 🔴 Action 1 — LAUNCH OR FINAL BUILD: HN Show HN or Finish the Package (All-Day Priority)
+
+**If `@skissify/mcp` IS live on npm** → Post HN Show HN **Sunday 15:00–19:00 CET** (peak US Eastern morning traffic — last viable weekend window before counter-narrative expires Monday).
+
+**Title** (use verbatim):
+> `Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch layer the AI design stack is missing`
+
+**Body**:
+> The documented 2026 AI design stack: generate in Stitch, refine in Figma, implement via Claude Code.
+> That stack has no sketch step. The napkin floor plan, the rough architecture layout — nothing handles that.
+>
+> Skissify is that step: describe a sketch as JSON → renders as hand-drawn SVG. One MCP tool: `render_sketch(manifest)`. Declarative — describe the scene, get the sketch.
+>
+> `npx @skissify/mcp` — free (watermarked), EUR 2/mo clean output, EUR 5/mo Pro.
+> Floor plans: walls, doors, windows, stairs, columns, dimension lines. Tunable wobble. Paper types.
+>
+> 33 consecutive competitive scans: nobody else does hand-drawn + JSON-first + MCP + floor plans.
+>
+> → skissify.com
+
+**Do NOT post without**: working `npx @skissify/mcp`, live demo URL, 3+ example sketches in README.
+
+**If `@skissify/mcp` is NOT live** → Sunday is the final build window. Target: ship by 18:00 CET. Then distribute.
+
+---
+
+### 🟡 Action 2 — DEADLINE TODAY: "Plan7Architect Alternatives" Blog Post (45 min, zero code)
+
+Plan7Architect Pro 5 raises prices **Tuesday March 31**. Publishing Sunday gives 48h for search indexing — just enough. This action has zero dependencies on the MCP server.
+
+**Post title**: `Plan7Architect raising prices March 31? What modern architects use instead in 2026`
+
+**Key angle**:
+- Plan7Architect = traditional desktop CAD, one-time license model, now price-hiking
+- Skissify = AI-native, EUR 5/mo, hand-drawn sketches for client-facing proposals (not permit drawings)
+- Also mention: Snaptrude (3D professional), Planner5D (consumer), Coohom (interior design)
+
+**Keywords**: "Plan7Architect alternative 2026", "floor plan software alternative", "AI floor plan subscription"
+
+**Save to**: `docs/marketing/blog/plan7architect-alternative.md` and publish. **Deadline: Sunday evening.**
+
+---
+
+### 🟢 Action 3 — ZERO BLOCKER, 15 MIN: DEV Community Comment on Gemini+Matplotlib Tutorial
+
+This action has been deferred for 27+ consecutive cycles. It requires no code, no MCP, no launch.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment** (post verbatim):
+> "Excellent walkthrough — the Gemini JSON step is genuinely the hard part. If you want a different rendering layer, I built Skissify (skissify.com) for exactly this pipeline: takes structured JSON with rooms, walls, doors, and dimensions and renders it as a hand-drawn SVG — looks like someone sketched it on paper rather than a chart library generated it. There's an MCP server (`npx @skissify/mcp`) so Claude can call it directly. Free tier available. Would love to hear if the schema aligns with what Gemini generates for you."
+
+**Do this first. 15 minutes. Zero blockers. It has waited long enough.**
+
+---
+
+### Completion Log (update Sunday evening)
+- [ ] DEV Community comment posted: ✓/✗
+- [ ] Plan7Architect blog post saved to docs/marketing/blog/ and published: ✓/✗
+- [ ] `@skissify/mcp` confirmed live on npm: URL ___
+- [ ] HN Show HN posted: URL ___
+- [ ] modelcontextprotocol.io registry submitted: ✓/✗
+- [ ] awesome-mcp-servers PR opened: ✓/✗
+- [ ] claudefa.st + mcpmanager.ai submitted: ✓/✗
+
+---
+
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #32 (14:28 CET, Saturday March 28)
+
+### Priority Context
+
+**32 consecutive niche-clean scans. 33+ hours of intelligence. Brave Search quota: 209/2000 monthly.** The Figma/Stitch MCP news cycle closes Monday — HN counter-narrative window: Sunday only. Plan7Architect price hike is Tuesday March 31 — the blog post window is NOW. `@skissify/mcp` is the only remaining blocker for all revenue-generating activity.
+
+**Core assumption**: If `@skissify/mcp` shipped Saturday, Sunday is launch + distribution day. If it didn't ship, replace Action 1 below with a 6-hour build sprint (the MCP server, nothing else).
+
+---
+
+### 🔴 Action 1 — BUILD OR LAUNCH (All-day priority)
+
+**If `@skissify/mcp` DID ship Saturday** → Post HN Show HN **Sunday 15:00–19:00 CET** (peak US Eastern morning window — last viable weekend slot before news cycle fades).
+
+**Title** (use verbatim):
+> `Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch layer the AI design stack is missing`
+
+**Body**:
+> The 2026 canonical AI design stack: generate in Google Stitch, refine in Figma, implement via Claude Code. That stack has no sketch/ideation step. The napkin floor plan, the rough architecture layout — nothing handles that moment.
+>
+> Skissify is that step: describe a floor plan or sketch as JSON → renders as hand-drawn SVG. One MCP tool: `render_sketch(manifest)`. Declarative — describe the scene, get the sketch.
+>
+> `npx @skissify/mcp` — free (watermarked), EUR 2/mo clean output, EUR 5/mo Pro.
+> Floor plans: walls, doors, windows, stairs, columns, dimension lines. Tunable wobble. Paper types.
+>
+> 32 consecutive competitive scans: no one else is doing hand-drawn + JSON-first + MCP + floor plans.
+>
+> → skissify.com
+
+**Do NOT post without**: working `npx @skissify/mcp`, live demo URL, 3+ example sketches in README.
+
+**If MCP did NOT ship Saturday** → Sunday is a 6-hour build sprint. Ship by 18:00 CET. Everything else waits.
+
+---
+
+### 🟡 Action 2 — ZERO BLOCKER (45 min, no MCP needed): "Plan7Architect Alternatives" Blog Post
+
+Plan7Architect Pro 5 raises prices **Tuesday March 31**. This is the last morning to publish and capture search indexing before the spike. This action requires no code, no MCP, no launch.
+
+**Post title**: `Plan7Architect raising prices March 31? What modern architects use instead in 2026`
+
+**Key points**:
+- Plan7Architect = desktop CAD-style, one-time license → price hike live
+- Skissify angle: "For client-facing concept sketches before permit drawings, Skissify generates hand-drawn floor plans from natural language. EUR 5/mo. No CAD required."
+- Also mention: Snaptrude (3D, professional), Planner 5D (consumer), Coohom (interior)
+
+**Target keywords**: "Plan7Architect alternative 2026", "floor plan software alternative", "AI floor plan subscription"
+
+**Save to**: `docs/marketing/blog/plan7architect-alternative.md` and publish to blog. 45 minutes.
+
+---
+
+### 🟢 Action 3 — ZERO BLOCKER (15 min): DEV Community Comment on Gemini+Matplotlib Tutorial
+
+This action has been deferred for 26+ consecutive cycles. No code, no MCP, no launch needed.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment** (post verbatim):
+> "Excellent walkthrough — the Gemini JSON step is genuinely the hard part. If you want a different rendering layer, I built Skissify (skissify.com) for exactly this pipeline: takes structured JSON with rooms, walls, doors, and dimensions and renders it as a hand-drawn SVG — looks like someone sketched it on paper rather than a chart library generated it. There's an MCP server (`npx @skissify/mcp`) so Claude can call it directly. Free tier available. Would love to hear if the schema aligns with what Gemini generates for you."
+
+**Do this first. 15 minutes. Zero blockers.**
+
+---
+
+### Completion Log (update Sunday evening)
+- [ ] DEV Community comment posted: ✓/✗
+- [ ] Plan7Architect blog post saved to docs/marketing/blog/: ✓/✗
+- [ ] `@skissify/mcp` confirmed live on npm: URL ___
+- [ ] HN Show HN posted: URL ___
+- [ ] modelcontextprotocol.io registry submitted: ✓/✗
+- [ ] awesome-mcp-servers PR opened: ✓/✗
+- [ ] claudefa.st + mcpmanager.ai submitted: ✓/✗
+
+---
+
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #31 (13:17 CET, Saturday March 28)
+
+### Priority Context
+
+**31 consecutive niche-clean scans. 36+ hours of intelligence. 207/2000 Brave Search monthly quota used.** The Figma/Stitch/Excalidraw MCP news cycle peaks today — counter-narrative HN post must go up Sunday or loses critical relevance. Plan7Architect price hike is Monday March 31 — 2 days remain on that SEO window. The `@skissify/mcp` package is the only remaining blocker for everything.
+
+**Core assumption for Sunday actions**: `@skissify/mcp` shipped Saturday. If it didn't, ALL actions collapse into one: finish the build first.
+
+---
+
+### 🔴 Action 1 — BUILD OR LAUNCH: Ship MCP or Post "Show HN" (All-Day Priority)
+
+**If `@skissify/mcp` DID ship Saturday** → Post HN Show HN **Sunday 15:00–19:00 CET** (peak US Eastern morning window).
+
+**Title** (use verbatim):
+> `Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch layer missing from the AI design stack`
+
+**Body**:
+> The 2026 AI design stack: generate in Google Stitch, refine in Figma, implement via Claude Code. No sketch step. The napkin floor plan, the rough architecture diagram — nothing in the stack handles that moment.
+>
+> Skissify is that step: describe a floor plan or sketch as JSON → renders as hand-drawn SVG. One MCP tool: `render_sketch(manifest)`. Declarative — describe the scene, get the sketch. No state. No commands.
+>
+> `npx @skissify/mcp` — free (watermarked), EUR 2/mo to remove watermark, EUR 5/mo Pro.
+> Floor plans: walls, doors, windows, stairs, columns, dimension lines. Tunable wobble. Paper types.
+> → skissify.com
+
+**Do NOT post without**: working `npx @skissify/mcp`, live demo URL, 3+ example sketches in README.
+
+**If MCP did NOT ship Saturday** → Sunday is the final build window. Ship by 20:00 CET. Everything else waits.
+
+---
+
+### 🟡 Action 2 — SEO WINDOW (Deadline: Sunday evening): "Plan7Architect Alternatives" Blog Post
+
+Plan7Architect Pro 5 raises prices **Monday March 31**. This is the last day to publish and capture search traffic before the spike.
+
+**Post title**: `Plan7Architect raising prices? What modern architects use instead in 2026`
+
+**Key points**:
+- Plan7Architect = desktop CAD-style, one-time license → price hike imminent
+- Modern alternatives: Snaptrude (3D, professional), Planner 5D (consumer), Coohom (interior)
+- Skissify angle: "For client-facing concept sketches before permit drawings, Skissify generates hand-drawn floor plans from natural language. EUR 5/mo. No CAD required."
+
+**Target keywords**: "Plan7Architect alternative 2026", "floor plan software alternative", "AI floor plan subscription"
+
+**Time**: 45 minutes. Zero code required. Save to `docs/marketing/blog/plan7architect-alternative.md` and publish.
+
+---
+
+### 🟢 Action 3 — ZERO BLOCKER (15 minutes): Post DEV Community Comment on Gemini+Matplotlib Tutorial
+
+This action has been deferred for 25+ consecutive cycles. It requires no code, no MCP server, no launch.
+
+**URL**: https://dev.to/bindupautra_jyotibrat/building-an-ai-floor-planner-with-google-gemini-and-matplotlib-5c5d
+
+**Comment** (post verbatim):
+> "Excellent walkthrough — the Gemini JSON step is genuinely the hard part. If you want a different rendering layer, I built Skissify (skissify.com) for exactly this pipeline: takes structured JSON with rooms, walls, doors, and dimensions and renders it as a hand-drawn SVG — looks like someone sketched it on paper rather than a chart library generated it. There's an MCP server (`npx @skissify/mcp`) so Claude can call it directly. Free tier available. Would love to hear if the schema aligns with what Gemini generates for you."
+
+**Do this first. 15 minutes. Zero blockers.**
+
+---
+
+### Completion Log (update Sunday evening)
+- [ ] DEV Community comment posted: ✓/✗
+- [ ] `@skissify/mcp` confirmed live on npm: URL ___
+- [ ] HN Show HN posted (or Sunday build completed): URL ___
+- [ ] modelcontextprotocol.io registry submitted: ✓/✗
+- [ ] awesome-mcp-servers PR opened: ✓/✗
+- [ ] Plan7Architect blog post published: ✓/✗
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #30 (12:07 CET, Saturday March 28)
 
 ### Priority Context

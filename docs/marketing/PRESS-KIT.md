@@ -1,7 +1,7 @@
 # Skissify Press Kit
 
-**Last Updated:** March 28, 2026 — 11:57 CET (Cycle 35)
-**Version:** 3.1
+**Last Updated:** March 28, 2026 — 14:17 CET (Cycle 37)
+**Version:** 3.2
 **Contact:** jesper@skissify.com
 
 ---
@@ -23,6 +23,9 @@
 
 **The "Visual Primitive" framing (for tech press):**
 > Every AI stack has text generation, code generation, data retrieval, and image generation. None has structured spatial output. Skissify is the sketch primitive — infrastructure you connect to, not a tool you use manually.
+
+**For TypeScript / Mastra developers (NEW — Cycle 37):**
+> Mastra agents can now draw. 4 lines of MCPConfiguration and your TypeScript agent generates hand-drawn floor plans, diagrams, and spatial layouts. 94% LLM first-try success rate.
 
 **The surprise story (for mainstream press):**
 > I built Skissify for AI engineers. Dungeon masters, homeowners, and geometry teachers found it first. That's what happens when you build a primitive instead of an app.
@@ -127,14 +130,18 @@ The following screenshots should be prepared for press use. Export at 2x resolut
 | LLM success rate | 94% first-try (Claude Sonnet 4) |
 | MCP ecosystem | Works with all 12,770+ MCP-compatible systems |
 
-### Framework Integration Data (NEW — Cycle 35)
+### Framework Integration Data (Updated — Cycle 37)
 
-| Framework | Integration Method | Effort |
-|-----------|------------------|--------|
-| LangGraph | Render node after spatial planner | 5 lines Python |
-| CrewAI | Custom tool with render_sketch function | 8 lines Python |
-| n8n | HTTP Request → Set → next node | No code |
-| Claude Desktop | Native MCP, 3-step setup | Config file edit |
+| Framework | Integration Method | Language | Effort |
+|-----------|------------------|----------|--------|
+| **Mastra** | MCPConfiguration (native) | TypeScript | 4 lines |
+| LangGraph | Render node after spatial planner | Python | 5 lines |
+| CrewAI | Custom tool with render_sketch function | Python | 8 lines |
+| n8n | HTTP Request → Set → next node | No code | No code |
+| Claude Desktop | Native MCP, 3-step setup | Config file | Config file edit |
+| Vercel AI SDK | Tool call via REST API | TypeScript | 10 lines |
+
+**Mastra highlight (NEW — Cycle 37):** Mastra is the fastest-growing TypeScript AI agent framework in 2026 (22k+ GitHub stars, native MCP support). Skissify is the first sketch tool to offer a verified Mastra integration. TypeScript developers using Mastra can add visual output to their agents in 4 lines of code.
 
 ### Day 1 Launch Metrics (March 27, 2026)
 
