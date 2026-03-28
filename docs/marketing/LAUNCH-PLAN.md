@@ -2,7 +2,91 @@
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com — JSON to hand-drawn sketch, AI-agent compatible
-**Status:** 🗓️ DAY 2 → DAY 3 — Saturday March 28, 20:39 CET — 67 hours post-launch
+**Status:** 🗓️ DAY 3 → DAY 4 — Sunday March 29, 21:48 CET — 74 hours post-launch
+
+---
+
+## Marketing Improvements (Cycle 39 — March 28, 21:48 CET)
+
+### ⚡ STATUS: SUNDAY NIGHT — CLOSE THE LAUNCH WEEK + PREP MONDAY HN
+
+It's 21:48 CET Sunday March 28 (15:48 ET / 12:48 PT). 74 hours post-launch. The weekend slow-burn continues. Cycle 39 closes the launch week with three new deliverables, prepares the Monday HN Human Mode submission, and surfaces the missing Sunday-night content gap that every previous cycle left unfilled.
+
+### Key New Angle: Close the Week While US Is Online
+
+Sunday evening EU time = Sunday afternoon US West Coast = highest Monday-prep engagement window. This is when newsletter editors queue their Monday content. This is when Hacker News post timing matters. Cycle 39 owns this window.
+
+### What Changed Since Cycle 38
+
+- **72-hour retrospective written**: The definitive honest Skissify launch story. Real numbers template, four unexpected audiences, three things that worked, three that didn't, Week 2 priorities. Best IH post of the launch. File: `docs/marketing/blog/72-hour-retrospective-launch-week-skissify.md`
+- **Monday HN Human Mode prep written**: Full Show HN title, body, first comment, expected objections + responses, and post-submission tweet timing. Copy-paste ready. File: `docs/marketing/blog/show-hn-skissify-human-mode-monday-prep.md`
+- **Sunday close-out blog post written**: "Sunday Night: How to Close a Launch Week" — tactical guide for the 20:00–23:59 Sunday window. Human Mode as Week 2 hook, second HN angle, newsletter timing. File: `docs/marketing/blog/sunday-night-how-to-close-a-launch-week.md`
+- **SOCIAL-MEDIA.md Cycle 39**: Tweets 151-156 (72h check-in, newsletter signal, Monday primer, wobble algorithm late engagement, Human Mode Sunday tease, Monday HN live), r/programming Sunday night post, Day 4 timing table (11 items), updated hashtag sets.
+- **Week 2 priorities locked**: Human Mode ships first. Second HN post Monday 09:00. Newsletter outreach to 5 targets tonight.
+
+### Completed This Cycle (39)
+- [x] ✅ **Blog post #72 NEW**: "72 Hours In: The Honest Skissify Launch Retrospective" — definitive launch story with real numbers template, four audiences, three wins, three mistakes, Week 2 plan. File: `docs/marketing/blog/72-hour-retrospective-launch-week-skissify.md`
+- [x] ✅ **Blog post #73 NEW**: "Monday HN Post Preparation: Show HN Skissify + Human Mode" — internal prep doc with full HN copy, first comment template, objection responses, post-submission tweet timing. File: `docs/marketing/blog/show-hn-skissify-human-mode-monday-prep.md`
+- [x] ✅ **Blog post #74 NEW**: "Sunday Night: How to Close a Launch Week" — tactical guide for the Sunday 20:00–23:59 CET window for product launches. Human Mode as Week 2 hook, second HN strategy, newsletter close-out. File: `docs/marketing/blog/sunday-night-how-to-close-a-launch-week.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 39**: Tweets 151-156, r/programming Sunday post, Day 4 timing table, updated hashtag sets
+
+### New Blog Posts (Cycle 39)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 72 | **72 Hours In: The Honest Retrospective** | `72-hour-retrospective-launch-week-skissify.md` | **Indie Hackers (primary), Dev.to, Medium** | **Day 3 Sunday night** |
+| 73 | **Monday HN Prep: Skissify + Human Mode** | `show-hn-skissify-human-mode-monday-prep.md` | Internal prep doc — do not publish | Tonight |
+| 74 | **Sunday Night: How to Close a Launch Week** | `sunday-night-how-to-close-a-launch-week.md` | Indie Hackers, Substack | **Day 3 Sunday** |
+
+### Day 4 Priority Actions (Sunday Night → Monday)
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | **21:30 Sun** | Tweet 155 (Human Mode tease — Sunday US audience) |
+| 2 🔴 | **22:00 Sun** | Tweet 151 (72h honest check-in) |
+| 3 🔴 | **22:30 Sun** | Publish 72h retrospective on Indie Hackers |
+| 4 🟡 | **23:00 Sun** | Newsletter outreach (5 targets) |
+| 5 🟡 | **23:00 Sun** | Tweet 152 (newsletter signal) |
+| 6 🔴 | **08:30 Mon** | Tweet 153 (Monday HN primer) |
+| 7 🔴 | **09:00 Mon** | **Submit Show HN: Skissify + Human Mode** |
+| 8 🔴 | **09:05 Mon** | Post HN first comment (see prep doc) |
+| 9 🔴 | **09:10 Mon** | Tweet 156 (HN live announcement) |
+| 10 🟡 | **10:00 Mon** | r/mcp Human Mode update post |
+| 11 🟡 | **11:00 Mon** | LinkedIn Human Mode announcement |
+| 12 🔴 | All day Mon | Respond to HN comments within 5 minutes |
+
+### New Ideas (Cycle 39)
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **72-hour retrospective as IH post** | Honest numbers + four audience story = most shareable IH content of the launch | Zero (written) | High |
+| **"Sunday night close-out" as evergreen content** | Tactical post that other founders will share and reference | Zero (written) | Medium |
+| **Monday HN as a second chance, not a re-post** | Human Mode is a new feature — justifies new submission | Zero | High |
+| **Weekly "Sketch of the Week" challenge** | Ongoing engagement loop: tweet "What should Claude draw?" and render top reply | Zero | Medium |
+| **Public return-visit metric share on Monday** | "Day 4 return visit rate: X%. Is that good?" — honest metric, drives engagement | Zero | High |
+| **Worksheet Mode (from educator requests)** | Grid overlay, dimension labels, printable formatting for classroom use | Medium | High for edu |
+
+### Cumulative Blog Inventory (74 posts as of Cycle 39)
+| Range | See |
+|-------|-----|
+| #1-71 | Cycles 1-38 |
+| #72 | "72 Hours In: The Honest Retrospective" (Cycle 39) |
+| #73 | "Monday HN Prep Doc" (Cycle 39 — internal) |
+| #74 | "Sunday Night: How to Close a Launch Week" (Cycle 39) |
+
+### Critical Infrastructure — Status (Cycle 39)
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Email newsletter signup** | 🔴 CRITICAL | ⚠️ Should be live — if not, add tonight |
+| **Wobble slider GIF** | 🔴 CRITICAL | ⚠️ Record before Monday HN post — embed in HN comment |
+| **Human Mode feature** | 🔴 CRITICAL | 🚧 Must ship before Monday HN post |
+| **Monday HN submission** | 🔴 CRITICAL | 09:00 Mon — copy ready in prep doc |
+| **Newsletter outreach (5 targets)** | 🟡 | Tonight — TLDR AI, Rundown, Superhuman, Ben's Bites, Pointer.io |
+| **TypeScript SDK** (`@skissify/client`) | 🟡 | This week — Mastra/TypeScript devs |
+| **Directory submissions** | 🟡 | PulseMCP, AlternativeTo, DevHunt — this week |
+| **Interactive JSON playground** | 🟢 | Week 1 |
+
+*Last Updated: March 28, 2026 (Cycle 39 — 21:48 CET)*
+*Added: Blog posts #72-74 (72h retrospective, Monday HN prep, Sunday night guide), SOCIAL-MEDIA.md Cycle 39 (Tweets 151-156), Day 4 timing table, new ideas table, Human Mode as critical Monday blocker*
+
+---
 
 ---
 

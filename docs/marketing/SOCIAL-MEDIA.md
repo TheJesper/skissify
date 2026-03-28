@@ -1,8 +1,184 @@
 # Skissify — Social Media Launch Content
 
 **Launch Date: March 27, 2026**  
-**Day 3 (March 29): See Cycle 38 section at the TOP for current Sunday 20:39 CET content**
+**Day 3 (March 29): See Cycle 39 section at the TOP for current Sunday 21:48 CET content**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 39 — SUNDAY NIGHT 21:48 CET — 72H POST-LAUNCH — CLOSE THE WEEK, PREP MONDAY HN
+
+*It's 21:48 CET Sunday March 28 (15:48 ET / 12:48 PT). 74 hours post-launch. The weekend slow-burn is active. This cycle adds 6 new tweets (151-156), a definitive 72-hour retrospective post, the Sunday close-out play, Monday HN Human Mode post preparation, newsletter close-out dispatch, and a Day 4 execution table. Key insight: Sunday evening is the last chance to influence Monday morning tech coverage — use it.*
+
+### ⚡ RIGHT NOW (21:48 CET) — PRIORITY ORDER:
+1. **22:00 CET** — Tweet 151 (72-hour honest check-in — Sunday evening reflection)
+2. **22:30 CET** — Publish 72-hour retrospective on Indie Hackers (file: `72-hour-retrospective-launch-week-skissify.md`)
+3. **23:00 CET** — Newsletter outreach to TLDR AI, Rundown, Ben's Bites (if not yet sent)
+4. **23:30 CET** — Tweet 152 (newsletter outreach signal — "if you know an AI newsletter editor...")
+5. **TONIGHT** — Write and review Monday HN post body (file: `show-hn-skissify-human-mode-monday-prep.md`)
+6. **Monday 09:00 CET** — Submit Show HN: "Skissify + Human Mode — describe a room, get a hand-drawn floor plan"
+
+---
+
+### NEW Tweet 151 — Sunday Night 72-Hour Honest Check-in (Post 22:00 CET)
+
+```
+72 hours after launching Skissify.
+
+The audience I built it for: AI engineers using Claude + MCP.
+The audiences who showed up: homeowners, dungeon masters, geometry teachers.
+
+Human Mode ships this week. For the people who want the sketch but not the JSON.
+
+What's your setup for handling unexpected audiences?
+#BuildInPublic #ProductLaunch #AITools #VibeDrawing
+```
+
+---
+
+### NEW Tweet 152 — Newsletter Outreach Signal (Post 23:00 CET Sunday)
+
+```
+If you know an editor at TLDR AI, The Rundown, Ben's Bites, or Superhuman — I'd love an intro.
+
+Skissify launched Friday. Hand-drawn floor plans from LLM output.
+94% first-try success rate. Four audiences, only one was planned.
+
+Story is here: [link to 72h retrospective]
+#TLDR #AINewsletter #BuildInPublic
+```
+
+---
+
+### NEW Tweet 153 — Monday Morning Primer (Schedule for 08:30 CET Monday)
+
+```
+Monday 09:00 CET:
+
+"Show HN: Skissify + Human Mode — describe a room in plain English, get a hand-drawn floor plan"
+
+No JSON required. Free tier. MCP server still there for devs.
+
+See you in the thread.
+#HackerNews #BuildInPublic #MCP #AIAgents
+```
+
+---
+
+### NEW Tweet 154 — Wobble Algorithm Late Engagement (Post 22:00 Sunday if engagement allows)
+
+```
+The thing that makes Skissify sketches look hand-drawn is a multi-harmonic wobble function.
+
+Each line is perturbed with sin/cos waves at 3 frequencies.
+The amplitude is tunable per element.
+
+The difference between amplitude=0 (sterile CAD) and amplitude=10 (rushed napkin):
+
+[GIF: wobble slider sweep 0 → 10 → 3]
+
+Full write-up: [link to wobble algorithm post]
+#Canvas2D #WebDev #AlgorithmDesign
+```
+
+---
+
+### NEW Tweet 155 — Human Mode Tease for Sunday Night US Audience (Post 21:30 CET)
+
+```
+Homeowners found Skissify without us targeting them.
+
+They describe their kitchens to Claude, paste the JSON, show the sketch to contractors.
+
+The problem: they have to know what JSON is.
+
+Human Mode removes that.
+
+"Open kitchen, 2 bedrooms, south-facing living room."
+→ Hand-drawn floor plan. No JSON.
+
+Ships Monday.
+skissify.com
+```
+
+---
+
+### NEW Tweet 156 — Monday HN Day-Of Thread Anchor (Post 09:05 CET Monday after HN submission)
+
+```
+Skissify + Human Mode is on Hacker News this morning.
+
+Describe a room in plain English → hand-drawn floor plan.
+For the 30% of our users who wanted the output but not the JSON.
+
+[HN link]
+
+Also: the wobble algorithm question in the thread is my favorite.
+```
+
+---
+
+### Day 4 Sunday Evening → Monday Timing Table (Cycle 39)
+
+| Time (CET) | Action | Priority |
+|-----------|--------|----------|
+| 21:30 Sun | Tweet 155 (Human Mode tease — Sunday US audience) | 🔴 |
+| 22:00 Sun | Tweet 151 (72h honest check-in) | 🔴 |
+| 22:30 Sun | Publish 72h retrospective on Indie Hackers | 🔴 |
+| 23:00 Sun | Newsletter outreach (TLDR AI, Rundown, Ben's Bites) | 🟡 |
+| 23:00 Sun | Tweet 152 (newsletter signal) | 🟡 |
+| 23:30 Sun | Review Monday HN post copy | 🟡 |
+| 08:30 Mon | Tweet 153 (Monday HN primer) | 🔴 |
+| 09:00 Mon | **Submit Show HN: Skissify + Human Mode** | 🔴 CRITICAL |
+| 09:05 Mon | Post HN body comment (see show-hn prep doc) | 🔴 |
+| 09:10 Mon | Tweet 156 (HN live announcement) | 🔴 |
+| 10:00 Mon | Post r/mcp Human Mode update | 🟡 |
+| 11:00 Mon | LinkedIn Human Mode announcement | 🟡 |
+| All day Mon | Respond to HN comments within 5 min | 🔴 |
+
+---
+
+### r/programming Sunday Night Post (Post 22:00–23:00 CET if sub is active)
+
+```
+Title: I built a hand-drawn sketch API for AI agents – 72 hours of unexpected audiences
+
+72 hours since launching Skissify.
+
+Quick context: it's a JSON-to-hand-drawn-sketch API. AI agents describe spatial layouts as JSON; it renders them as hand-drawn sketches in four paper styles. MCP server, REST API, free tier.
+
+What I didn't expect:
+
+1. 30%+ of Day 1 signups were not developers. Homeowners. Dungeon masters. Geometry teachers.
+2. r/mcp engagement on Day 2 outperformed Product Hunt Day 1.
+3. The most-shared metric: "Claude Sonnet gets 94% first-try on floor plan JSON." Data posts get bookmarked.
+
+What I'd do differently: email capture before launch. Video before launch. Post to the community you actually built the tool for on Day 1, not Day 2.
+
+Human Mode (text → sketch, no JSON) ships this week for the non-developer audiences.
+
+Happy to answer questions about schema design, the wobble algorithm, or the audience discovery.
+
+skissify.com | @skissify
+```
+
+---
+
+### Updated Hashtag Set — Cycle 39
+
+**Core developer set (all posts):**
+`#MCP #AIAgents #BuildInPublic #VibeDrawing`
+
+**Human Mode specific:**
+`#AITools #HomeDesign #NoCode #HumanMode`
+
+**HN/launch retrospective:**
+`#ProductLaunch #IndieHackers #LaunchWeek #SaaSLaunch`
+
+**Weekend/Sunday engagement:**
+`#BuildInPublic #IndieHackers #StartupLife`
+
+---
 
 ---
 
