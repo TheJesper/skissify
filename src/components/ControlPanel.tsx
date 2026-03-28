@@ -46,6 +46,10 @@ interface ControlPanelProps {
   onReorder?: (direction: "front" | "back" | "forward" | "backward") => void;
   /** Called to align 2+ selected elements */
   onAlign?: (mode: "left" | "right" | "top" | "bottom" | "centerH" | "centerV" | "distributeH" | "distributeV") => void;
+  /** Current grid snap size (0 = off) */
+  snapGrid?: number;
+  /** Called when the user changes grid snap size */
+  onSnapGrid?: (size: number) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -106,6 +110,8 @@ export default function ControlPanel({
   onToggleLock,
   onReorder,
   onAlign,
+  snapGrid,
+  onSnapGrid,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -501,6 +507,49 @@ export default function ControlPanel({
       </Section>
 
       {/* Add Elements */}
+      {/* Grid Snap */}
+      {onSnapGrid && (
+        <Section title="Grid Snap">
+          <div className="space-y-2">
+            {/* On/Off toggle row */}
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-[#657b83]">
+                {snapGrid && snapGrid > 0 ? `${snapGrid}px grid active` : "Off"}
+              </span>
+              <button
+                onClick={() => onSnapGrid(snapGrid && snapGrid > 0 ? 0 : 20)}
+                className={`px-3 py-1 rounded text-xs font-medium transition-all border ${
+                  snapGrid && snapGrid > 0
+                    ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#073642]"
+                    : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 text-[#657b83]"
+                }`}
+              >
+                {snapGrid && snapGrid > 0 ? "✦ On" : "○ Off"}
+              </button>
+            </div>
+            {/* Grid size presets */}
+            {snapGrid !== undefined && snapGrid > 0 && (
+              <div className="grid grid-cols-5 gap-1">
+                {[5, 10, 20, 40, 80].map((size) => (
+                  <button
+                    key={size}
+                    onClick={() => onSnapGrid(size)}
+                    className={`px-1 py-1.5 rounded text-[10px] font-medium transition-all border ${
+                      snapGrid === size
+                        ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#073642]"
+                        : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 text-[#657b83]"
+                    }`}
+                    title={`${size}px grid`}
+                  >
+                    {size}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </Section>
+      )}
+
       <Section title="Add Element">
         <ElementThumbnailPanel paper={paper} onAddElement={onAddElement} />
       </Section>

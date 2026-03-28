@@ -143,6 +143,7 @@ function EditorInner({
     nudgeSelected,
     selectAll,
     setRenderStyle,
+    setSnapGrid,
     reorderSelected,
     toggleLockSelected,
     alignSelected,
@@ -458,6 +459,8 @@ function EditorInner({
             onAlign={alignSelected}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
+            snapGrid={sketch.snapGrid ?? 0}
+            onSnapGrid={setSnapGrid}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -574,6 +577,8 @@ function EditorInner({
             onAlign={alignSelected}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
+            snapGrid={sketch.snapGrid ?? 0}
+            onSnapGrid={setSnapGrid}
           />
         </div>
       )}

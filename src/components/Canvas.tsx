@@ -223,6 +223,8 @@ export default function Canvas({
   const wasBoxSelecting = useRef(false);
   const lastMouse = useRef({ x: 0, y: 0 });
   const dragStartMouse = useRef({ x: 0, y: 0 });
+  // Grid snap: track last applied snapped delta so we can send incremental snapped moves
+  const lastSnappedDelta = useRef({ x: 0, y: 0 });
   const lastTouchDist = useRef<number | null>(null);
   const lastTouchCenter = useRef<{ x: number; y: number } | null>(null);
 
@@ -292,6 +294,53 @@ export default function Canvas({
     } catch (err) {
       console.error("Render error:", err);
       return;
+    }
+
+    // Draw grid snap overlay when snapGrid is active
+    if (sketch.snapGrid && sketch.snapGrid > 0) {
+      const g = sketch.snapGrid;
+      const ct2 = computeCenterTransform(sketch.elements, canvasW, canvasH);
+      ctx.save();
+      ctx.translate(ct2.tx, ct2.ty);
+      if (ct2.scale < 1) ctx.scale(ct2.scale, ct2.scale);
+      // Grid dimensions in element space
+      const gridW = (canvasW - ct2.tx * 2) / (ct2.scale < 1 ? ct2.scale : 1);
+      const gridH = (canvasH - ct2.ty * 2) / (ct2.scale < 1 ? ct2.scale : 1);
+      ctx.strokeStyle = sketch.paper === "blueprint"
+        ? "rgba(100,160,240,0.18)"
+        : "rgba(100,120,200,0.12)";
+      ctx.lineWidth = 0.5;
+      ctx.setLineDash([]);
+      // Vertical lines
+      for (let x = 0; x <= gridW + g; x += g) {
+        const sx = Math.round(x / g) * g;
+        ctx.beginPath();
+        ctx.moveTo(sx, 0);
+        ctx.lineTo(sx, gridH);
+        ctx.stroke();
+      }
+      // Horizontal lines
+      for (let y = 0; y <= gridH + g; y += g) {
+        const sy = Math.round(y / g) * g;
+        ctx.beginPath();
+        ctx.moveTo(0, sy);
+        ctx.lineTo(gridW, sy);
+        ctx.stroke();
+      }
+      // Dot at each intersection (small crosshair dot)
+      ctx.fillStyle = sketch.paper === "blueprint"
+        ? "rgba(100,180,255,0.25)"
+        : "rgba(80,100,180,0.2)";
+      for (let x = 0; x <= gridW + g; x += g) {
+        for (let y = 0; y <= gridH + g; y += g) {
+          const sx = Math.round(x / g) * g;
+          const sy = Math.round(y / g) * g;
+          ctx.beginPath();
+          ctx.arc(sx, sy, 1.5, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      ctx.restore();
     }
 
     // Draw selection highlights and resize handles in element-space (apply centering transform)
@@ -595,6 +644,8 @@ export default function Canvas({
           isDraggingElements.current = false;
           dragStartMouse.current = { x: e.clientX, y: e.clientY };
           lastMouse.current = { x: e.clientX, y: e.clientY };
+          // Reset snap accumulator for fresh drag
+          lastSnappedDelta.current = { x: 0, y: 0 };
           e.preventDefault();
           return;
         }
@@ -670,8 +721,28 @@ export default function Canvas({
           // canvas pixel → element space: divide by centerScale
           const ct = computeCenterTransform(sketch.elements, canvasW, canvasH);
           const centerScale = ct.scale > 0 ? ct.scale : 1;
-          onMoveSelected(dx / zoom / centerScale, dy / zoom / centerScale);
-          lastMouse.current = { x: e.clientX, y: e.clientY };
+
+          const snapGrid = sketch.snapGrid && sketch.snapGrid > 0 ? sketch.snapGrid : 0;
+          if (snapGrid > 0) {
+            // Grid snap: use total displacement from drag start, snap to grid,
+            // then send only the delta from last snapped position to avoid accumulation errors.
+            const totalScreenDx = e.clientX - dragStartMouse.current.x;
+            const totalScreenDy = e.clientY - dragStartMouse.current.y;
+            const totalElDx = totalScreenDx / zoom / centerScale;
+            const totalElDy = totalScreenDy / zoom / centerScale;
+            const snappedTotalDx = Math.round(totalElDx / snapGrid) * snapGrid;
+            const snappedTotalDy = Math.round(totalElDy / snapGrid) * snapGrid;
+            const incDx = snappedTotalDx - lastSnappedDelta.current.x;
+            const incDy = snappedTotalDy - lastSnappedDelta.current.y;
+            if (incDx !== 0 || incDy !== 0) {
+              onMoveSelected(incDx, incDy);
+              lastSnappedDelta.current = { x: snappedTotalDx, y: snappedTotalDy };
+            }
+            // Don't update lastMouse — we still track dragStartMouse for total delta
+          } else {
+            onMoveSelected(dx / zoom / centerScale, dy / zoom / centerScale);
+            lastMouse.current = { x: e.clientX, y: e.clientY };
+          }
         }
         return;
       }
@@ -809,10 +880,16 @@ export default function Canvas({
       const elementType = e.dataTransfer.getData("text/x-skissify-element");
       if (!elementType || !onDropElement) return;
       e.preventDefault();
-      const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+      let { mx, my } = clientToCanvas(e.clientX, e.clientY);
+      // Snap drop position to grid if active
+      const snapGrid = sketch.snapGrid && sketch.snapGrid > 0 ? sketch.snapGrid : 0;
+      if (snapGrid > 0) {
+        mx = Math.round(mx / snapGrid) * snapGrid;
+        my = Math.round(my / snapGrid) * snapGrid;
+      }
       onDropElement(elementType, mx, my);
     },
-    [clientToCanvas, onDropElement]
+    [clientToCanvas, onDropElement, sketch.snapGrid]
   );
 
   // Touch: pinch-to-zoom and two-finger pan

@@ -2078,6 +2078,89 @@ It's 04:52 CET on Day 2. Cycle 30 adds competitive intelligence from web researc
 
 ---
 
+## Marketing Improvements (Cycle 35 — March 28, 2026 — 11:57 CET)
+
+### ⚡ STATUS: DAY 2 SATURDAY NOON — AFTERNOON COMMUNITY BLITZ + AGENT FRAMEWORK ANGLE
+
+It's 11:57 CET Saturday March 28. The morning developer wave (r/mcp, r/LocalLLaMA, LLM benchmark) should be live. This cycle owns the full Saturday afternoon and adds a major new angle: **Skissify as the visual output primitive for CrewAI, LangGraph, and n8n.** Based on web research, these are the dominant agent frameworks in March 2026 — and none has a visual output story.
+
+### What Changed Since Cycle 34
+- **CrewAI/LangGraph/n8n integration blog written**: Full code examples for all three frameworks + MCP. First time agent framework integrations have been written up as blog content. File: `docs/marketing/blog/skissify-for-crewai-langgraph-n8n.md`
+- **"Four Unplanned Audiences" blog written**: The primitives narrative crystallized into a standalone Medium-grade post. The homeowner/dungeon master/teacher/developer story. File: `docs/marketing/blog/the-four-unplanned-audiences.md`
+- **Saturday noon dispatch written**: Honest "what noon looks like" post for Indie Hackers/Substack. Includes the return-visits-as-real-KPI framing. File: `docs/marketing/blog/day-2-saturday-noon-launch-weekend-playbook.md`
+- **SOCIAL-MEDIA.md Cycle 35**: Tweets 129-135 (Four Audiences viral hook, CrewAI/LangGraph technical, Sketch URL as memory, Saturday energy, directory admin, Day 2 wrap, Monday preview). Full community posts: r/Teachers, r/AgentsOfAI, r/TTRPG, r/n8n.
+- **PRESS-KIT.md v3.1**: Added Framework Integration Angle (CrewAI/LangGraph/n8n), Primitives Story press angle, framework integration data table.
+- **New hashtags confirmed active**: #LangGraph, #CrewAI, #n8n, #AgentEngineering — dominant in dev communities week of March 28, 2026.
+
+### Completed This Cycle (35)
+- [x] ✅ **Blog post #60 NEW**: "Skissify + CrewAI, LangGraph, n8n: Adding Visual Output to Your Agent Stack" — full integration guide with code for all three frameworks + MCP. LLM benchmark table. Sketch URL as agent memory pattern. File: `docs/marketing/blog/skissify-for-crewai-langgraph-n8n.md`
+- [x] ✅ **Blog post #61 NEW**: "The Four Unplanned Audiences of Skissify" — Medium-grade narrative on primitives finding their own use cases. Four audiences: AI devs, homeowners, dungeon masters, geometry teachers. File: `docs/marketing/blog/the-four-unplanned-audiences.md`
+- [x] ✅ **Blog post #62 NEW**: "Day 2, Saturday Noon: The Launch Weekend Playbook" — honest dispatch on what Saturday noon looks like for a product launch. Return visits as real metric. Saturday afternoon schedule. File: `docs/marketing/blog/day-2-saturday-noon-launch-weekend-playbook.md`
+- [x] ✅ **SOCIAL-MEDIA.md Cycle 35**: Tweets 129-135, r/Teachers post (380K), r/AgentsOfAI post (50K), r/TTRPG post (320K), r/n8n post (200K), full community copy
+- [x] ✅ **PRESS-KIT.md v3.1**: Framework Integration Angle, Primitives Story press angle, integration data table
+- [x] ✅ **Hashtag research**: #LangGraph, #CrewAI, #n8n confirmed active March 2026; #VibeDrawing still unclaimed; #AgentEngineering growing
+
+### New Blog Posts (Cycle 35)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 60 | **Skissify + CrewAI, LangGraph, n8n** | `skissify-for-crewai-langgraph-n8n.md` | Dev.to, r/AI_Agents, r/n8n | Day 2-3 |
+| 61 | **The Four Unplanned Audiences** | `the-four-unplanned-audiences.md` | Medium, Substack, Indie Hackers | Day 2-3 |
+| 62 | **Day 2, Saturday Noon: The Launch Weekend Playbook** | `day-2-saturday-noon-launch-weekend-playbook.md` | Indie Hackers, Substack | Day 2 |
+
+### New Communities Activated (Cycle 35)
+| Community | Members | Post Angle | Post Time |
+|-----------|---------|-----------|-----------|
+| **r/Teachers** | 380K | Spatial math geometry diagrams via AI | 12:00 CET |
+| **r/AgentsOfAI** | 50K | Day 2 data + LLM benchmark table | 13:00 CET |
+| **r/TTRPG** | 320K | Dungeon map walkthrough + missing elements request | 16:30 CET |
+| **r/n8n** | 200K | 3-node workflow, no code, property/renovation use case | 19:00 CET |
+
+### New Ideas (Cycle 35)
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"Sketch URL as Agent Memory" design pattern page** | Novel architectural concept, SEO for "agent visual memory", HN-worthy | Low | High |
+| **Framework integrations page** (skissify.com/integrations) | LangGraph, CrewAI, n8n — each with 5-line code snippet | Low | High |
+| **r/n8n integration template** | n8n has a template marketplace — submit a Skissify workflow template | Low | Medium |
+| **CrewAI Hub listing** | CrewAI has a community tools hub — submit Skissify as a visual tool | Low | Medium |
+| **"Which LLM draws best?" benchmark page on site** | r/LocalLLaMA always links to benchmark pages, SEO magnet | Medium | High |
+| **Monday "return visit" tweet** | Post exact return visit % on Monday morning (build-in-public metric nobody shares) | Zero | High |
+
+### Immediate Actions Right Now (11:57 CET)
+1. **12:00** — r/Teachers post (HIGHEST PRIORITY for this exact window)
+2. **13:00** — r/AgentsOfAI post
+3. **14:00** — Tweet 129 (Four Audiences — best viral tweet of the day)
+4. **15:00** — r/HomeImprovement post (Cycle 34 carry-over)
+5. **15:30** — Tweet 130 (CrewAI/LangGraph/n8n technical hook)
+6. **16:30** — r/TTRPG post
+7. **17:00** — Tweet 131 (Sketch URL as agent memory)
+8. **18:00** — r/interiordesign post
+9. **19:00** — r/n8n post
+10. **22:00** — Tweet 134 (Day 2 wrap — REAL NUMBERS only)
+
+### Cumulative Blog Inventory (62 posts as of Cycle 35)
+| Range | See |
+|-------|-----|
+| #1-59 | Cycles 1-34 (see above) |
+| #60 | "Skissify + CrewAI, LangGraph, n8n" (Cycle 35) |
+| #61 | "The Four Unplanned Audiences" (Cycle 35) |
+| #62 | "Day 2, Saturday Noon Playbook" (Cycle 35) |
+
+### Critical Infrastructure — Still Missing (Escalated)
+| Gap | Priority | Action | Deadline |
+|----|----------|--------|----------|
+| **Email newsletter signup** | 🔴 CRITICAL | Homepage banner + post-sketch CTA | TODAY — every hour without this is lost |
+| **Wobble slider GIF** | 🔴 CRITICAL | 10 seconds, amplitude sweep, no narration | TODAY — highest visual ROI per minute |
+| **Human Mode feature** | 🟡 | textarea → Claude API → JSON → render | Weekend sprint |
+| **Directory submissions** | 🟡 | PulseMCP, AlternativeTo, DevHunt, SaaSHub | Today/tomorrow |
+| **Framework integrations page** | 🟢 | skissify.com/integrations — LangGraph, CrewAI, n8n | Week 1 |
+| **Interactive JSON playground** | 🟢 | No-signup, homepage | Week 1 |
+| **Benchmark page** | 🟢 | Publish 94% stat officially | Week 1 |
+
+*Last Updated: March 28, 2026 (Cycle 35 — 11:57 CET)*
+*Added: Blog posts #60-62 (CrewAI/LangGraph/n8n, Four Audiences, Saturday Noon), SOCIAL-MEDIA.md Cycle 35 (Tweets 129-135 + 4 community posts), PRESS-KIT.md v3.1, hashtag research, framework integration angle, new ideas table*
+
+---
+
 ## Marketing Improvements (Cycle 34 - March 28, 2026 - 09:28 CET)
 
 ### 📊 STATUS: DAY 2 SATURDAY MORNING — COMMUNITY DEPTH + MERMAID ANGLE

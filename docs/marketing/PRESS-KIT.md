@@ -1,7 +1,7 @@
 # Skissify Press Kit
 
-**Last Updated:** March 28, 2026 — 07:11 CET (Cycle 32)
-**Version:** 3.0
+**Last Updated:** March 28, 2026 — 11:57 CET (Cycle 35)
+**Version:** 3.1
 **Contact:** jesper@skissify.com
 
 ---
@@ -127,6 +127,15 @@ The following screenshots should be prepared for press use. Export at 2x resolut
 | LLM success rate | 94% first-try (Claude Sonnet 4) |
 | MCP ecosystem | Works with all 12,770+ MCP-compatible systems |
 
+### Framework Integration Data (NEW — Cycle 35)
+
+| Framework | Integration Method | Effort |
+|-----------|------------------|--------|
+| LangGraph | Render node after spatial planner | 5 lines Python |
+| CrewAI | Custom tool with render_sketch function | 8 lines Python |
+| n8n | HTTP Request → Set → next node | No code |
+| Claude Desktop | Native MCP, 3-step setup | Config file edit |
+
 ### Day 1 Launch Metrics (March 27, 2026)
 
 | Metric | Day 1 Result |
@@ -165,6 +174,14 @@ Focus: MCP integration, natural language → visual output, Claude use cases
 ### Indie SaaS Angle
 "Solo developer launches sketch tool for €5/month in the age of enterprise SaaS bloat"  
 Focus: pricing philosophy, build-in-public, founder story
+
+### Framework Integration Angle (NEW — Cycle 35)
+"The visual output primitive for CrewAI, LangGraph, and n8n pipelines"  
+Focus: agent framework integrations, LLM success rate benchmark, sketch URL as agent memory pattern
+
+### Primitives Story (Best for Mainstream Press)
+"Built it for AI developers. Dungeon masters, homeowners, and geometry teachers found it first."  
+Focus: unexpected use cases from launch day, what it means when primitives find their own audiences
 
 ### Design Tools Angle
 "Why this developer skipped Figma and built JSON sketches instead"  

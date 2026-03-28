@@ -102,6 +102,11 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [updateSketch]
   );
 
+  const setSnapGrid = useCallback(
+    (snapGrid: number) => updateSketch({ snapGrid }),
+    [updateSketch]
+  );
+
   const loadPreset = useCallback((name: string) => {
     const preset = presets[name];
     if (preset) {
@@ -785,6 +790,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     selectAll,
     strokeWidthSelected,
     setRenderStyle,
+    setSnapGrid,
     reorderSelected,
     toggleLockSelected,
     alignSelected,

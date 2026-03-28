@@ -266,6 +266,12 @@ export interface SketchData {
   renderStyle?: RenderStyle;
   /** Metadata for blueprint title block overlay */
   metadata?: BlueprintMetadata;
+  /**
+   * Grid snap size in element-space pixels.
+   * 0 or undefined = grid snap off; positive = snap to this grid.
+   * Elements snap to the nearest multiple when dragged or placed.
+   */
+  snapGrid?: number;
   elements: SketchElement[];
 }
 
