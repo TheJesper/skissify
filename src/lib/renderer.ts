@@ -1,6 +1,7 @@
 import {
   SketchData,
   SketchElement,
+  BlueprintMetadata,
   PAPER_COLORS,
   GRID_COLORS,
   BLUEPRINT_COLOR_MAP,
@@ -197,8 +198,16 @@ function drawGrid(
 function drawBlueprintOverlay(
   ctx: CanvasRenderingContext2D,
   W: number, H: number,
-  title: string = "PLANRITNING"
+  meta?: BlueprintMetadata
 ): void {
+  const m = meta ?? {};
+  const title = m.title || "PLANRITNING";
+  const owner = m.owner || "";
+  const date = m.date || "";
+  const scale = m.scale || "1:100";
+  const sheetNum = m.sheetNumber || "";
+  const drawnBy = m.drawnBy || "";
+
   const wc = "rgba(200,225,255,.75)";
   const wl = "rgba(200,225,255,.5)";
 
@@ -227,9 +236,10 @@ function drawBlueprintOverlay(
   ctx.lineTo(W / 2 + titleW / 2 + 70, 30);
   ctx.stroke();
 
-  // Title block (bottom-right)
-  const tw = 180, th = 72;
+  // Title block (bottom-right) — 3 rows × 2 columns
+  const tw = 200, th = drawnBy ? 94 : 72;
   const tx = W - 10 - tw, ty = H - 10 - th;
+  const rowH = 22;
 
   ctx.strokeStyle = wc;
   ctx.lineWidth = 0.6;
@@ -237,28 +247,40 @@ function drawBlueprintOverlay(
 
   // Horizontal dividers
   ctx.beginPath();
-  ctx.moveTo(tx, ty + 22);
-  ctx.lineTo(tx + tw, ty + 22);
-  ctx.moveTo(tx, ty + 44);
-  ctx.lineTo(tx + tw, ty + 44);
+  for (let r = 1; r < (drawnBy ? 4 : 3); r++) {
+    ctx.moveTo(tx, ty + r * rowH);
+    ctx.lineTo(tx + tw, ty + r * rowH);
+  }
   ctx.stroke();
 
-  // Vertical divider in lower rows
+  // Vertical divider in data rows (below title row)
   ctx.beginPath();
-  ctx.moveTo(tx + 90, ty + 22);
-  ctx.lineTo(tx + 90, ty + th);
+  ctx.moveTo(tx + 100, ty + rowH);
+  ctx.lineTo(tx + 100, ty + th);
   ctx.stroke();
 
   // Title block text
   ctx.fillStyle = wc;
   ctx.textAlign = "left";
+
+  // Row 0: title (full width)
   ctx.font = "bold 8px Georgia, serif";
   ctx.fillText(title, tx + 6, ty + 6);
+
   ctx.font = "7px Georgia, serif";
-  ctx.fillText("ÄGARE: Villa Ekvägen 12", tx + 6, ty + 28);
-  ctx.fillText("DATUM: 15 Januari 1902", tx + 6, ty + 50);
-  ctx.fillText("SKALA: 1:100", tx + 96, ty + 28);
-  ctx.fillText("ARK.NR: A-001", tx + 96, ty + 50);
+
+  // Row 1: owner | scale
+  if (owner) ctx.fillText(owner, tx + 6, ty + rowH + 6);
+  ctx.fillText("SCALE: " + scale, tx + 106, ty + rowH + 6);
+
+  // Row 2: date | sheet number
+  if (date) ctx.fillText("DATE: " + date, tx + 6, ty + 2 * rowH + 6);
+  if (sheetNum) ctx.fillText("SHEET: " + sheetNum, tx + 106, ty + 2 * rowH + 6);
+
+  // Row 3 (optional): drawn by
+  if (drawnBy) {
+    ctx.fillText("BY: " + drawnBy, tx + 6, ty + 3 * rowH + 6);
+  }
 
   // North arrow
   const nax = tx - 22, nay = H - 44;
@@ -837,7 +859,7 @@ export function renderSketch(
   // 6. Blueprint overlay (drawn on top, not affected by centering)
   if (sketch.paper === "blueprint") {
     ctx.save();
-    drawBlueprintOverlay(ctx, w, h);
+    drawBlueprintOverlay(ctx, w, h, sketch.metadata);
     ctx.restore();
   }
 }

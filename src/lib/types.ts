@@ -232,6 +232,22 @@ export const RENDER_STYLE_OPTIONS: { key: RenderStyle; label: string; icon: stri
   { key: "blueprint", label: "Blueprint", icon: "🔵", description: "Blueprint style on blue paper" },
 ];
 
+/** Metadata shown in the blueprint title block (bottom-right table) */
+export interface BlueprintMetadata {
+  /** Drawing title, e.g. "FLOOR PLAN" or "PLANRITNING" */
+  title?: string;
+  /** Owner / project name, e.g. "Villa Ekvägen 12" */
+  owner?: string;
+  /** Date string, e.g. "2026-03-28" */
+  date?: string;
+  /** Scale indication, e.g. "1:100" */
+  scale?: string;
+  /** Drawing/archive number, e.g. "A-001" */
+  sheetNumber?: string;
+  /** Author / drawn by */
+  drawnBy?: string;
+}
+
 export interface SketchData {
   paper: PaperType;
   tool: ToolType;
@@ -248,6 +264,8 @@ export interface SketchData {
   dimFont?: SkissifyFont;
   /** Render style: affects wobble parameters and drawing mode */
   renderStyle?: RenderStyle;
+  /** Metadata for blueprint title block overlay */
+  metadata?: BlueprintMetadata;
   elements: SketchElement[];
 }
 
