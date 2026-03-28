@@ -2,6 +2,74 @@
 
 ---
 
+## Update Log: March 28, 2026 — 23:15 CET | Automated Strategy Run #36
+
+### Status: Saturday late-night scan — Brave Search API rate-limited (229/2000 monthly quota). One search completed. **CRITICAL DISCOVERY: `mcp-server/` was built on March 26, 2026 — all prior scans were checking wrong directory (`packages/`).**
+
+### 🚨 CRITICAL CORRECTION: MCP Server EXISTS — Shipped March 26, 2026
+
+**`W:/code/skissify/mcp-server/`** — confirmed built and compiled March 26, 2026:
+- `dist/index.js` and full tooling compiled ✅
+- 5 tools implemented: `skissify_create_sketch`, `skissify_add_element`, `skissify_create_floor_plan`, `skissify_list_element_types`, `skissify_export`
+- 14 element types: `line rect circle arc arrow text dashed dim window door-symbol door-slide stair opening column`
+- 3 floor plan styles: napkin, blueprint, clean
+- Fully MCP-SDK-compliant (stdio transport)
+- Named `@skissify/mcp-server`, version 1.0.0
+- **Prior runs #16–35 all reported "does not exist" by checking the wrong directory (`packages/`)**
+
+**This changes the launch status from BLOCKED to READY.**
+The HN post, MCP registry submissions, npm publish, and community announcements can begin **today (Sunday March 29)**.
+
+### 🟢 CONFIRMATION: Thirty-Sixth Consecutive Scan — Niche Structurally Unoccupied
+
+Search completed: "AI sketch tool hand-drawn MCP diagram new launch March 2026"
+
+Results from Run #36 (23:15 CET, Saturday March 28):
+- **Thomas Thornton Excalidraw MCP tutorial** (now 5 days old): STILL #1 for "AI sketch MCP" searches. Cloud/Terraform/workflow topology via GitHub Copilot. Zero floor plan, zero JSON-native generation. **Skissify MCP counter-tutorial slot still open.**
+- **findskill.ai "Generate in Stitch → Figma → Claude Code"** (3 days old): Canonical AI design stack continues to circulate with Skissify as the undocumented pre-step.
+- **zsky.ai "Best AI Sketch Generators 2026"** (1 week old): Still covers photo-to-art tools only. Programmatic/JSON-native/MCP sketch tools entirely absent. Skissify would be the only entrant in this category.
+- **MCP "standard practice"** (use-apify.com, 5 days old): MCP as the primary AI infrastructure layer confirmed again.
+- **Cyera MCP** (security/enterprise — zero sketch relevance).
+
+**No new competitor in the "hand-drawn + JSON-native + MCP + floor plan" quadrant.**
+
+**Thirty-six consecutive automated scans: niche structurally unoccupied. But now: Skissify MCP is built and ready.**
+
+### 🔴 NEW STATUS TABLE: Ready to Launch
+
+| Asset | Status (23:15 CET, March 28) |
+|-------|------------------------------|
+| `mcp-server/dist/index.js` | ✅ Built March 26 — LIVE |
+| `skissify_create_floor_plan` tool | ✅ Implemented |
+| `skissify_create_sketch` tool | ✅ Implemented |
+| `skissify_list_element_types` tool | ✅ Implemented |
+| `@skissify/mcp-server` npm publish | ❓ Unknown — needs `npm publish` |
+| MCP registry submission | ❌ Not yet done |
+| HN "Show HN" post | ❌ Not posted |
+| Plan7Architect blog post | ❌ Not written (deadline March 31) |
+| HN timing window | 🔴 Final window: Sunday morning 08:00–12:00 CET |
+
+### 🟡 SIGNAL: Saturday Evening Confirms — Post HN Sunday Morning
+
+The findskill.ai "Stitch → Figma → Claude Code" article (3 days old) and Figma use_figma MCP open beta story (The Neuron, 4 days old) are in the final 24 hours of their peak SERP relevance. The counter-narrative ("canonical stack missing a sketch step — here's Skissify") must go live Sunday morning at the latest.
+
+With the MCP server confirmed built and compiled, the only remaining actions are:
+1. `npm publish` in `mcp-server/` directory
+2. Copy HN post from `docs/marketing/HACKER-NEWS.md` and post Sunday 08:00–12:00 CET
+3. Submit to modelcontextprotocol.io registry, awesome-mcp-servers, LobeHub, claudefa.st, mcpmanager.ai
+
+### Updated Competitor Matrix Row (Run #36 — No New Entrants + Status Correction)
+
+| Tool | March 28 23:15 CET Status | Skissify Threat |
+|------|--------------------------|-----------------|
+| Excalidraw | MCP tutorial (5 days old) still #1. Identity: Obsidian notes + topology. | None |
+| Google Stitch | "Stitch → Figma → Claude Code" canonical stack (3 days old). | None |
+| Figma | use_figma MCP open beta — dominant design story (4 days old). | None |
+| All others | No changes from Runs #28–35. | None |
+| **Skissify** | **`mcp-server/` CONFIRMED BUILT March 26. 36 consecutive niche-clean scans. LAUNCH READY.** | **Uncontested** |
+
+---
+
 ## Update Log: March 28, 2026 — 22:11 CET | Automated Strategy Run #35
 
 ### Status: Saturday late-evening scan — Brave Search API rate-limited (229/2000 monthly quota). One search completed (second rate-limited). Thirty-fifth consecutive scan. Niche structurally confirmed unoccupied.

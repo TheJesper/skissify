@@ -4,6 +4,7 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { SketchData, SketchElement } from "@/lib/types";
 import { renderSketch, computeCenterTransform } from "@/lib/renderer";
 import Rulers, { RULER_SIZE } from "./Rulers";
+import ContextMenu, { ContextMenuAction } from "./ContextMenu";
 
 // Type-safe accessors for union element types
 type AnyEl = Record<string, unknown>;
@@ -179,6 +180,10 @@ interface CanvasProps {
   onDoubleClickElement?: (idx: number) => void;
   /** Called when an element type is dropped onto the canvas — receives type + canvas coords */
   onDropElement?: (type: string, canvasX: number, canvasY: number) => void;
+  /** Called when user picks an action from the right-click context menu */
+  onContextMenuAction?: (actionId: string) => void;
+  /** Whether any selected element is locked (used to build context menu) */
+  selectedLocked?: boolean;
 }
 
 /** Returns the editable text content of an element, or null if not text-editable */
@@ -213,6 +218,8 @@ export default function Canvas({
   canvasControlRef,
   onDoubleClickElement,
   onDropElement,
+  onContextMenuAction,
+  selectedLocked,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -251,6 +258,9 @@ export default function Canvas({
   const resizeStartCanvas = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const resizeStartEl = useRef<Record<string, number>>({});
   const isResizing = useRef(false);
+
+  // Context menu state
+  const [contextMenu, setContextMenu] = useState<{ x: number; y: number } | null>(null);
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
@@ -921,6 +931,50 @@ export default function Canvas({
     [clientToCanvas, onDropElement, sketch.snapGrid]
   );
 
+  // Right-click context menu
+  const handleContextMenu = useCallback(
+    (e: React.MouseEvent<HTMLCanvasElement>) => {
+      e.preventDefault();
+      // Only show if there are selected elements and a handler
+      if (!onContextMenuAction || selectedElements.size === 0) return;
+      setContextMenu({ x: e.clientX, y: e.clientY });
+    },
+    [onContextMenuAction, selectedElements]
+  );
+
+  // Build context menu actions from current selection state
+  const buildContextMenuActions = (): ContextMenuAction[] => {
+    const count = selectedElements.size;
+    const isLocked = !!selectedLocked;
+    const actions: ContextMenuAction[] = [];
+
+    if (count === 1) {
+      actions.push({ id: "edit-text", icon: "✏️", label: "Edit text" });
+    }
+    actions.push({ id: "duplicate", icon: "⧉", label: count > 1 ? `Duplicate (${count})` : "Duplicate" });
+    actions.push({ id: "copy", icon: "⎘", label: count > 1 ? `Copy (${count})` : "Copy" });
+
+    actions.push({ id: "bring-front", icon: "⬆⬆", label: "Bring to front", separator: true });
+    actions.push({ id: "send-back",  icon: "⬇⬇", label: "Send to back" });
+
+    if (count >= 2) {
+      actions.push({ id: "align-left",    icon: "⬅", label: "Align left",    separator: true });
+      actions.push({ id: "align-center-h", icon: "↔", label: "Align center H" });
+      actions.push({ id: "align-right",   icon: "➡", label: "Align right" });
+    }
+
+    actions.push({
+      id: isLocked ? "unlock" : "lock",
+      icon: isLocked ? "🔓" : "🔒",
+      label: isLocked ? "Unlock" : "Lock",
+      separator: true,
+    });
+
+    actions.push({ id: "delete", icon: "🗑", label: count > 1 ? `Delete (${count})` : "Delete", separator: true, danger: true });
+
+    return actions;
+  };
+
   // Touch: pinch-to-zoom and two-finger pan
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     if (e.touches.length === 2) {
@@ -1084,6 +1138,7 @@ export default function Canvas({
             handleMouseLeave();
             setRulerCursor(null);
           }}
+          onContextMenu={handleContextMenu}
           className="rounded"
           style={{
             cursor,
@@ -1174,6 +1229,17 @@ export default function Canvas({
           canvasRect={canvasRectState}
           containerRect={containerRectState}
           centerTransform={computeCenterTransform(sketch.elements, canvasW, canvasH)}
+        />
+      )}
+
+      {/* Right-click context menu */}
+      {contextMenu && onContextMenuAction && (
+        <ContextMenu
+          x={contextMenu.x}
+          y={contextMenu.y}
+          actions={buildContextMenuActions()}
+          onAction={onContextMenuAction}
+          onClose={() => setContextMenu(null)}
         />
       )}
     </div>

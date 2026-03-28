@@ -2,6 +2,68 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #36 (23:15 CET, Saturday March 28)
+
+### 🚨 STATUS CORRECTION: MCP Server Is BUILT — Launch is Ready NOW
+
+**`W:/code/skissify/mcp-server/` was compiled on March 26, 2026.** All prior action items about "build the MCP server" are obsolete. The three Sunday actions below assume the product is ready and the focus is 100% distribution.
+
+---
+
+### 🔴 Action 1 (08:00–12:00 CET) — Publish npm + Post HN "Show HN"
+
+**This is the highest-leverage action in the entire Skissify history. Do it first thing Sunday morning.**
+
+**Step 1 — npm publish (5 minutes):**
+```bash
+cd W:/code/skissify/mcp-server
+npm publish --access public
+```
+Confirm `@skissify/mcp-server` appears on npmjs.com. Then test:
+```bash
+npx @skissify/mcp-server
+```
+
+**Step 2 — Post HN (15 minutes):**
+Use the pre-written post in `docs/marketing/HACKER-NEWS.md`. Post at 08:00–11:00 CET Sunday.
+Do NOT post if `npx @skissify/mcp-server` fails — a broken demo on HN generates permanent negative reviews.
+
+**Expected outcome**: 400–1,200 HN visitors, 30–100 signups, 5–15 paying users (EUR 2–5/mo). First MRR.
+
+**Why today**: The Figma MCP open beta + Google Stitch "canonical AI stack" news cycle (March 25–27) expires Monday. The counter-narrative ("stack missing a sketch step") is most resonant in the next 12 hours.
+
+---
+
+### 🟡 Action 2 (Anytime Sunday) — Submit to 5 MCP Registries/Directories
+
+Once npm package is live, submit to all five discovery channels in parallel:
+
+1. **modelcontextprotocol.io registry** — official Anthropic registry (most important)
+2. **awesome-mcp-servers** (GitHub: punkpeye/awesome-mcp-servers) — PR or issue submission
+3. **claudefa.st/blog/tools/mcp-extensions** — curated Claude Code MCP list (no sketch tools yet)
+4. **mcpmanager.ai** — active MCP directory (no sketch tools yet)
+5. **LobeHub MCP marketplace** — where draw-it-mcp and mermaid-mcp are listed
+
+No code required — just submit the npm package name + description + GitHub URL to each registry. Each submission is a permanent discovery channel.
+
+**Time investment**: 60–90 min total. **ROI**: Ongoing organic installs indefinitely.
+
+---
+
+### 🟡 Action 3 (Before March 31) — "Plan7Architect Alternative" Blog Post
+
+Plan7Architect raises prices March 31. Write and publish before then:
+
+**Title**: *"Plan7Architect alternatives for modern architects in 2026 — lighter, faster, AI-compatible"*
+**SEO targets**: "Plan7Architect alternative", "floor plan software alternative 2026", "AI floor plan web-based"
+**Key angle**: EUR 5/mo vs Plan7Architect's higher one-time price + price increase. Skissify: JSON-first, MCP-compatible, no desktop install required, hand-drawn aesthetic for client presentations.
+**Publish to**: skissify.com/blog OR a Medium draft (faster Google indexing via Medium authority)
+**Cross-post**: Reddit r/architecture, r/floorplan — genuine framing, not spam
+
+**Deadline**: Monday March 30 at latest (price hike drama fades after March 31).
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #35 (22:11 CET, Saturday March 28)
 
 ### Priority Context

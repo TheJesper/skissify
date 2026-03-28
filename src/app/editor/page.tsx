@@ -257,6 +257,51 @@ function EditorInner({
     setEditingElement(null);
   }, []);
 
+  // Handle right-click context menu actions
+  const handleContextMenuAction = useCallback(
+    (actionId: string) => {
+      switch (actionId) {
+        case "duplicate":
+          copySelected();
+          pasteElements();
+          break;
+        case "copy":
+          copySelected();
+          break;
+        case "bring-front":
+          reorderSelected("front");
+          break;
+        case "send-back":
+          reorderSelected("back");
+          break;
+        case "align-left":
+          alignSelected("left");
+          break;
+        case "align-center-h":
+          alignSelected("centerH");
+          break;
+        case "align-right":
+          alignSelected("right");
+          break;
+        case "lock":
+        case "unlock":
+          toggleLockSelected();
+          break;
+        case "delete":
+          deleteSelected();
+          break;
+        case "edit-text": {
+          const idx = [...selectedElements][0];
+          if (idx !== undefined) handleDoubleClickElement(idx);
+          break;
+        }
+        default:
+          break;
+      }
+    },
+    [copySelected, pasteElements, reorderSelected, alignSelected, toggleLockSelected, deleteSelected, selectedElements, handleDoubleClickElement]
+  );
+
   const handleSave = useCallback(async (): Promise<string | null> => {
     try {
       if (sketchSlug) {
@@ -484,6 +529,8 @@ function EditorInner({
             onResizeEnd={commitResize}
             onDoubleClickElement={handleDoubleClickElement}
             onDropElement={addElementAt}
+            onContextMenuAction={handleContextMenuAction}
+            selectedLocked={selectedLocked}
           />
           {/* Inline text edit overlay */}
           {editingElement && (
