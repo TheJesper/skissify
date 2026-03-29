@@ -1380,3 +1380,109 @@ Reason: v4 leads with the human use case, avoids "AI tool" framing that triggers
 
 *Last Updated: March 29, 2026 (Cycle 44 - 04:26 CET)*
 *Added: HN timing correction (Tuesday +28%), new one-liners v25-v28, HN title v4, screenshot priority with status, newsletter outreach priority*
+
+---
+
+## PRESS-KIT.md v3.5 — Cycle 45 — March 29, 2026 — 05:35 CET
+
+### LAUNCH STATUS: T-27 HOURS (Show HN Tuesday 09:00-10:00 CET)
+
+---
+
+### NEW ONE-LINERS v29-v34
+
+These emerged from watching how real users described Skissify post-launch:
+
+| Version | One-Liner | Audience | Context |
+|---------|-----------|---------|---------|
+| v29 | "The sketch your AI agent sends instead of a wall of text." | Developers | Technical |
+| v30 | "Figma is for presenting. Skissify is for figuring out." | Product managers | Decision tools |
+| v31 | "Your contractor will finally understand what you want." | Homeowners | Renovation angle |
+| v32 | "AI-native from the schema up." | AI/ML engineers | Technical precision |
+| v33 | "The napkin sketch that lives in your codebase." | Developers | Permanence angle |
+| v34 | "Rough on purpose. Honest by design." | Design community | Fidelity signal |
+
+**Best HN title candidate (v5):** "Show HN: Skissify – hand-drawn floor plan sketches via JSON + MCP, 94% first-try LLM rate"
+
+---
+
+### SCREENSHOT PRIORITY (Updated Cycle 45)
+
+| Priority | Screenshot | Status | Notes |
+|---------|-----------|--------|-------|
+| 1 BLOCKER | Human Mode: before (text input) + after (sketch output) | NEEDED | Most shareable consumer demo |
+| 2 CRITICAL | Claude Desktop + MCP generating floor plan | NEEDED | HN audience primary hook |
+| 3 CRITICAL | Blueprint style floor plan (clean, professional look) | NEEDED | Best visual first impression |
+| 4 HIGH | Side-by-side: 4 paper styles (napkin/blueprint/technical/rough) | NEEDED | Shows product range |
+| 5 HIGH | Mobile: sketches on phone (homeowner use case) | NEEDED | Consumer press angle |
+| 6 MEDIUM | Mastra TypeScript agent code + resulting sketch | NEEDED | Developer integration proof |
+| 7 MEDIUM | Sketch URL in Slack/Notion context | NICE | Shows workflow integration |
+
+---
+
+### PRESS ANGLES (Updated — 10 total)
+
+| # | Angle | Target Publications | Status |
+|---|-------|-------------------|--------|
+| 1 | AI agents finally have a visual output format | Dev.to, HN, TechCrunch | Ready |
+| 2 | MCP ecosystem gets a sketch tool | r/mcp, MCP Discord, Anthropic blog | Ready |
+| 3 | Homeowners use AI to communicate with contractors | Home/renovation press, r/HomeImprovement | Emerging |
+| 4 | The fidelity signal: why rough beats polished for feedback | UX/design press, Nielsen Norman | Blog post ready |
+| 5 | 94% LLM first-try rate via flat schema design | ML/NLP community, papers-adjacent | Data ready |
+| 6 | Schema design for AI-native tools | Engineering blogs, HN | Technical post ready |
+| 7 | AI tools for non-developers (Human Mode launch) | Consumer tech press | Product ready |
+| 8 | D&D/TTRPG: AI dungeon map generation | Gaming press, r/DnD, r/TTRPG | Community proven |
+| 9 | AI geometry worksheets for math education | EdTech press, r/Teachers | User story confirmed |
+| 10 | Build-in-public: 4 unplanned audiences in launch week | Indie Hackers, Product Hunt | Story authentic |
+
+---
+
+### MEDIA OUTREACH TARGETS (Cycle 45 — DO TODAY)
+
+**Newsletter outreach (contact before Monday midnight for Tuesday feature):**
+
+| Newsletter | Subscribers | Contact | Angle | Deadline |
+|-----------|------------|---------|-------|---------|
+| TLDR AI | 600K+ | tldr.tech/ai | AI agent visual output, MCP integration | TODAY |
+| The Rundown AI | 500K+ | therundown.ai/submit | Consumer angle: AI draws floor plans | TODAY |
+| Ben's Bites | 100K+ | bensbites.beehiiv.com | Developer tool with consumer surprise | TODAY |
+| AI Breakfast | 80K+ | Submit form | Technical: 94% LLM success rate | Monday |
+| The Batch (deeplearning.ai) | 700K+ | Editorial only | Schema design for AI-native tools | Week 2 |
+| Pointer.io | 30K devs | pointer.io/contribute | Dev workflow integration | Week 2 |
+
+**Twitter/X accounts to notify at HN submission time:**
+
+- @levelsio (400K) — indie hackers love tools
+- @marc_louvion (150K) — build-in-public, SaaS tools
+- @Suhail (200K) — product + AI discourse
+- @karpathy (1.1M) — IF you have a compelling LLM schema angle (don't spam)
+- @swyx (80K) — MCP/AI developer community
+- @t3dotgg (200K) — TypeScript/developer audience
+
+---
+
+### FOUNDER BIO (v2 — More specific, less generic)
+
+**Short bio (50 words):**
+Jesper is a developer and entrepreneur who builds AI-native tools. He created Skissify in March 2026 when he noticed that AI agents could generate precise spatial data but had no way to show it visually. Skissify renders JSON into hand-drawn sketches with a 94% first-try LLM success rate.
+
+**Slightly longer (100 words):**
+Jesper is a Swedish developer and founder who builds tools at the intersection of AI and practical utility. After noticing that AI agents could reliably describe spatial layouts but had no visual output format, he spent a week designing the Skissify schema — flat-list, absolute-coordinate JSON that language models can predict reliably. The result: a REST API and MCP server that converts structured data into hand-drawn floor plan sketches. During launch week, the tool was adopted by AI developers, homeowners planning renovations, educators, and dungeon masters — none of which he planned for.
+
+---
+
+### PRODUCT BOILERPLATE (v3)
+
+**25-word version:**
+Skissify converts JSON into hand-drawn architectural sketches. AI agents use it to produce visual floor plans via a REST API and native MCP server.
+
+**50-word version:**
+Skissify is an AI-native sketch renderer: give it structured JSON, get back a hand-drawn floor plan. Built for AI agents (MCP server, REST API) and non-developers (Human Mode: describe a space in text, get a sketch). 94% first-try LLM success rate. Free at skissify.com.
+
+**100-word version:**
+Skissify is a JSON-to-sketch API specializing in architectural and spatial layouts. It converts structured JSON into hand-drawn floor plan sketches in four visual styles: napkin, blueprint, technical, and rough. AI agents integrate via a native MCP server (Claude Desktop: 2 lines of config) or a REST API. Human Mode lets non-developers describe spaces in plain text. The schema was designed from the ground up for LLM prediction: flat-list, absolute coordinates, 14 architectural primitives. First-try LLM success rate: 94% for Claude, 88% for GPT-4o. Free tier available. API key at skissify.com.
+
+---
+
+*Last Updated: March 29, 2026 (Cycle 45 — 05:35 CET)*
+*Added: One-liners v29-v34, HN title v5, screenshot priority (7 items), press angles 9-10 (education + build-in-public), media outreach targets (newsletter + Twitter), Founder Bio v2, Product Boilerplate v3*

@@ -2985,3 +2985,135 @@ It's 04:26 CET Sunday March 29. This is the final pre-dawn prep cycle before Sho
 
 *Last Updated: March 29, 2026 (Cycle 44 - 04:26 CET)*
 *Added: Blog posts #89-91 (contrarian Figma piece, plain-English floor plans guide, honest Excalidraw comparison), SOCIAL-MEDIA.md Cycle 44 (Tweets 189-196 + 3 community posts + HN title v4), PRESS-KIT.md Cycle 44, HN timing correction (Tue +28%), revised pre-HN checklist*
+
+---
+
+## Marketing Improvements (Cycle 45 - March 29, 2026 - 05:35 CET)
+
+### STATUS: SUNDAY 05:35 CET - T-27 HOURS TO SHOW HN - FULL PLATFORM EXPANSION
+
+It's 05:35 CET Sunday March 29. Show HN fires Tuesday March 31, 09:00-10:00 CET. This is the final dedicated pre-launch content cycle. Focus: new platforms we've been ignoring (Threads, LinkedIn Newsletter, IndieHackers, Substack Notes), new blog post angles, and the final tweet sequence through HN day.
+
+### What Changed This Cycle (45)
+
+- **Blog post #92 NEW**: "Why Hand-Drawn Sketches Beat Figma: A Product Manager's Real-World Guide" — PM decision-workflow angle, stakeholder alignment use case, AI-honest-draft framing. File: `why-hand-drawn-sketches-beat-figma-product-managers-guide.md`
+- **Blog post #93 NEW**: "How AI Agents Can Draw Floor Plans: 5 Real Workflows You Can Run Today" — Five distinct integration workflows (homeowner to Mastra agent), copy-paste code, LLM benchmark table. File: `how-ai-agents-draw-floor-plans-five-real-workflows.md`
+- **Blog post #94 NEW**: "Skissify vs Excalidraw: A Deep Dive for People Who've Tried Both (2026 Edition)" — Definitive comparison, honest overlap, 3-tool comparison (+ Mermaid), clear use-case tables. File: `skissify-vs-excalidraw-deep-dive-2026.md`
+- **SOCIAL-MEDIA.md Cycle 45**: Threads (3 posts), LinkedIn Newsletter Edition 1, IndieHackers post, Substack Note, Dev.to article plan, YouTube/TikTok scripts (2), Tweets 197-204, platform priority table, hashtag-by-platform intelligence
+- **PRESS-KIT.md v3.5**: One-liners v29-v34, HN title v5, screenshot priority (7 items), media outreach targets, Founder Bio v2, Product Boilerplate v3
+- **Web research**: Product Hunt confirms AI coding agents dominant March 2026 (UI-aware agents surging), HN timing data still supports Tuesday vs Monday
+
+### Completed This Cycle (45)
+
+- [x] Blog post #92: PM real-world guide (stakeholder alignment, AI-honest-draft framing)
+- [x] Blog post #93: 5 real workflows (homeowner through Mastra agent, with code)
+- [x] Blog post #94: Skissify vs Excalidraw deep dive (most comprehensive comparison yet)
+- [x] SOCIAL-MEDIA.md Cycle 45: 4 new platforms + Tweets 197-204
+- [x] PRESS-KIT.md v3.5: New one-liners, media outreach targets, boilerplate v3
+- [x] Web research: Product Hunt March 2026 AI tool landscape confirmed
+
+### New Blog Posts (Cycle 45)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 92 | **Why Sketches Beat Figma: PM Guide** | `why-hand-drawn-sketches-beat-figma-product-managers-guide.md` | Medium, LinkedIn Pulse | Monday-Tuesday |
+| 93 | **5 Real AI Floor Plan Workflows** | `how-ai-agents-draw-floor-plans-five-real-workflows.md` | Dev.to, r/mcp, r/ChatGPT | Tuesday |
+| 94 | **Skissify vs Excalidraw Deep Dive** | `skissify-vs-excalidraw-deep-dive-2026.md` | Dev.to, r/webdev, Hashnode | Tuesday-Wednesday |
+
+### New Platform Strategy (Cycle 45)
+
+| Platform | Why Now | Content Type | Priority |
+|---------|---------|-------------|---------|
+| **Threads** | Design/creative/consumer audience, very different from Twitter | 3 conversational story posts | HIGH |
+| **LinkedIn Newsletter** | Notification push to ALL followers — 10x reach vs regular post | Founder story + metrics | HIGH |
+| **IndieHackers** | 200K founders, honest week-1 numbers = front page potential | Metrics post | HIGH |
+| **Substack Notes** | Dev community migration, pre-HN warmup | 30-min pre-HN note | MEDIUM |
+| **Dev.to** | Evergreen SEO, technical audience, respects content quality | 3 technical how-to posts | MEDIUM |
+| **YouTube Shorts/TikTok** | Consumer viral potential, untapped channel, scripts written | 2 demo videos | MEDIUM |
+
+### New Viral Hooks (Cycle 45)
+
+| Hook | Format | Why | Platform |
+|------|--------|-----|---------|
+| **"The contractor actually listened"** | Tweet/Threads | Relatable homeowner story, non-technical | Twitter, Threads |
+| **"Figma is for presenting. Skissify is for figuring out."** | One-liner | PM/design audience, quotable | LinkedIn, Twitter |
+| **"Rough on purpose. Honest by design."** | Tagline/hook | Aesthetic philosophy, design press | LinkedIn, Threads |
+| **Schema flatness lesson** | Tweet thread | Developer insight, independently shareable | Twitter/HN |
+| **LinkedIn Newsletter** | Long-form | Notification push, professional network | LinkedIn |
+| **YouTube Kitchen Sketch** | 45s video | Consumer viral, no tech background | TikTok, YouTube |
+
+### NEW IDEAS (Cycle 45)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"Product surprised me" thread** | Honest launch reflection, 4 unplanned audiences — authenticity drives engagement | Zero (story exists) | High |
+| **LinkedIn Newsletter** | All followers get notification — 10x feed reach | Low (post written) | Very High |
+| **IndieHackers post with real numbers** | Community values transparency, front-page potential for honest metrics | Low | High |
+| **Dev.to series: 3 technical posts** | Evergreen SEO, doesn't expire, technical audience | Low (posts written) | High |
+| **TikTok kitchen sketch video** | Consumer viral potential, zero current video presence | Medium (recording) | High |
+| **Newsletter cold outreach today** | TLDR AI, The Rundown — can get in Tuesday's issue | Low | Very High |
+| **Twitter/X accounts to tag at HN submit** | 5 specific high-follower accounts with right audience fit | Zero | High |
+| **Substack Notes** | Dev community reads Substack, 08:30 CET warmup slot available | Zero | Medium |
+
+### Updated Launch Day Timeline (Tuesday March 31)
+
+| Time (CET) | Action | Platform | Priority |
+|-----------|--------|---------|---------|
+| 08:30 | Tweet 200 (Show HN eve warmup) | Twitter | HIGH |
+| 08:30 | Substack Note (pre-HN announcement) | Substack | MEDIUM |
+| **09:00-09:30** | **?? SHOW HN SUBMIT** | **Hacker News** | **CRITICAL** |
+| 09:00 | Tweet 202 (about to submit) | Twitter | HIGH |
+| 09:05 | Tweet 203 (HN live + link) | Twitter | HIGH |
+| 09:05 | r/mcp post | Reddit | HIGH |
+| 09:30 | r/ClaudeAI post | Reddit | HIGH |
+| 10:00 | r/webdev post | Reddit | HIGH |
+| 10:00 | All day: respond to every HN comment within 5 min | HN | CRITICAL |
+| 11:00 | Threads post 1 (kitchen contractor story) | Threads | MEDIUM |
+| 11:00 | r/ChatGPT post (Human Mode) | Reddit | HIGH |
+| 12:00 | r/homeimprovement post | Reddit | MEDIUM |
+| 13:00 | LinkedIn Newsletter Edition 1 | LinkedIn | HIGH |
+| 14:00 | Dev.to article 1 | Dev.to | MEDIUM |
+| 17:00 | Tweet 201 (Human Mode announcement) | Twitter | HIGH |
+| 18:00 | Tweet 204 (live metrics update) | Twitter | HIGH |
+| 20:00 | IndieHackers post (with real numbers) | IndieHackers | MEDIUM |
+| 22:00 | Bluesky cross-posts | Bluesky | LOW |
+| All day | Monitor + respond: HN, Reddit, Twitter mentions | All | CRITICAL |
+
+### Pre-Launch Checklist (Final — Cycle 45)
+
+#### BLOCKERS (must be done before HN submit)
+- [ ] Human Mode: live and tested end-to-end (skissify.com/human)
+- [ ] Decide HN title: v4 vs v5 (both ready in SOCIAL-MEDIA.md)
+- [ ] Email newsletter signup visible on homepage
+- [ ] Contact TLDR AI + The Rundown AI today (Sunday)
+
+#### HIGH PRIORITY (do before HN)
+- [ ] Screenshot: Human Mode text input → sketch output
+- [ ] Screenshot: Claude Desktop MCP floor plan generation  
+- [ ] Screenshot: Blueprint style floor plan (best visual impression)
+- [ ] Screenshot: 4 paper styles side-by-side
+- [ ] Pre-write HN first comment (template ready in SOCIAL-MEDIA.md)
+
+#### CONTENT QUEUED AND READY
+- [x] Tweet 197-204 (ready to fire on schedule)
+- [x] HN post + first comment (templates in SOCIAL-MEDIA.md Cycle 44)
+- [x] r/mcp, r/webdev, r/ClaudeAI, r/ChatGPT posts (ready)
+- [x] LinkedIn Newsletter Edition 1 (ready)
+- [x] IndieHackers post template (ready — fill in real numbers)
+- [x] Threads posts 1-3 (ready)
+- [x] Blog posts #92-94 (ready to publish)
+- [x] Dev.to articles plan (3 posts, topics defined)
+
+### Cumulative Blog Inventory (94 posts as of Cycle 45)
+
+| Range | See |
+|-------|-----|
+| #1-82 | Cycles 1-40 |
+| #83-85 | Cycle 41 |
+| #86-88 | Cycle 42 |
+| (Cycle 43 = PRESS-KIT + SOCIAL-MEDIA only) |
+| #89-91 | Cycle 44 |
+| #92-94 | Cycle 45 (this cycle) |
+
+*Last Updated: March 29, 2026 (Cycle 45 — 05:35 CET)*
+*Added: Blog posts #92-94 (PM guide, 5 workflows, Excalidraw deep dive), SOCIAL-MEDIA.md Cycle 45 (4 new platforms + Tweets 197-204), PRESS-KIT.md v3.5, final launch timeline, pre-launch checklist, new platform strategy table, new ideas table*
