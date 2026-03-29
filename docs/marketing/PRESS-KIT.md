@@ -1651,3 +1651,64 @@ Jesper
 
 *Last Updated: March 29, 2026 (Cycle 48 — 09:00 CET)*
 *Added: Video demo scripts (2 × 45-60s for TikTok/YouTube), press contact template, screenshots checklist v4, brand voice guide, quick facts v4*
+
+---
+
+## CYCLE 49 ADDITIONS — Sunday March 29, 2026 — 10:03 CET
+
+### LAUNCH-DAY JOURNALIST HOOK (Use for Same-Day Outreach)
+
+**Subject line options (test these):**
+- "The AI tool that accidentally became popular with dungeon masters" 
+- "Show HN today: AI sketch generation for homeowners, devs, and RPG players"
+- "One-sentence pitch: GPT-4 can draw floor plans now (via API)"
+
+**Two-paragraph pitch (journalist-ready):**
+`
+Skissify is a REST API and MCP tool that converts text descriptions into hand-drawn 
+architectural sketches. AI assistants like Claude can call it natively to produce 
+permanent, shareable sketch URLs — without any human touching a drawing canvas.
+
+Launched Friday. Unexpected early audiences: homeowners (briefing contractors), 
+geometry teachers (generating worksheets), and tabletop RPG dungeon masters 
+(building campaign maps). Doing Show HN today. Free tier. No install required.
+`
+
+### FOUNDER BIO (Short — 75 words)
+
+Jesper Håkansson is a solo developer and the founder of Skissify. He built the initial version in two days in March 2026 while experimenting with visual output primitives for AI agents. He is also the creator of the Luncho restaurant discovery app, the Covers task management system, and multiple MCP tooling projects. He builds in public.
+
+### FOUNDER BIO (Tweet-length — 25 words)
+
+Solo dev. Built Skissify in 48 hours. Wanted AI agents to draw. Accidentally built something homeowners and dungeon masters use too.
+
+### TAGLINES RANKED (Pick One per Audience)
+
+| Audience | Tagline |
+|---------|---------|
+| Developer | "The visual output primitive for AI agents" |
+| Homeowner | "Describe it. Get a sketch. Share it." |
+| Press | "The AI tool that turns text into hand-drawn floor plans" |
+| HN | "JSON or plain text → hand-drawn sketch URL (MCP native)" |
+| LinkedIn | "Before Figma, there's a napkin. Skissify is the AI napkin." |
+
+### COMPETITIVE LANDSCAPE (1-page version for press)
+
+| Tool | What It Does | Why Different from Skissify |
+|------|-------------|---------------------------|
+| Excalidraw | Human-drawn whiteboard | Manual input; no generation API |
+| Figma | Professional design tool | Overkill for early ideation; no AI generation |
+| Mermaid | Diagram-from-code | Flow/sequence diagrams; no spatial layout |
+| DALL-E / image gen | Photo-realistic renders | Not editable, not structured, not embeddable |
+| **Skissify** | **API for AI spatial sketch generation** | **Programmatic, MCP native, schema-optimized for LLMs** |
+
+### PRODUCT DEMO FLOW (For Journalists / Conference Demos)
+
+1. Open **skissify.com/human** in browser
+2. Type: *"small studio apartment with open kitchen and bathroom in the corner"*
+3. Hit generate — sketch appears in ~3 seconds
+4. Show the URL — permanent, shareable, works in any browser
+5. Show Claude Desktop (if available): type same prompt, sketch appears in the chat
+6. Mention: "Same tool. Two entry points — human or AI."
+
+---

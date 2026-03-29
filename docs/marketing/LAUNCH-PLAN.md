@@ -3373,3 +3373,84 @@ Topics: Excalidraw, Mermaid/PlantUML, SVG generation, "niche use case", "why han
 
 *Last Updated: March 29, 2026 (Cycle 48 - 09:00 CET)*
 *Added: Blog posts #96-98 (Monday publishing schedule optimized), SOCIAL-MEDIA.md Cycle 48 (Tweets 221-227, 3 Reddit posts, Product Hunt pre-launch, One-liners v46-50, HN Objection Bank), 3 new communities (r/vibecoding + r/AI_Agents + r/n8n), critical action checklist with clear Monday schedule*
+
+---
+
+## Marketing Improvements (Cycle 49 - March 29, 2026 - 10:03 CET)
+
+### STATUS: SUNDAY 10:03 CET - T-23 HOURS TO SHOW HN - LAUNCH EVE SPRINT
+
+Everything is written. Today is about activation, not creation. Tomorrow is execution.
+
+### What Changed This Cycle (49)
+
+- **Blog post #99 NEW**: "Why Hand-Drawn Sketches Beat Figma: The Science and the Sell" — the clean, science-backed Medium-optimized version. Distinct angle from all prior versions. File: why-hand-drawn-sketches-beat-figma-the-science-and-the-sell.md
+- **Blog post #100 NEW**: "How AI Agents Can Draw Floor Plans: The Non-Technical Story" — consumer audience, homeowner framing, Substack/LinkedIn optimized. Milestone: 100th blog post. File: how-ai-agents-draw-floor-plans-the-non-technical-story.md
+- **Blog post #101 NEW**: "Skissify vs Excalidraw: Pick the Right Tool" — fastest, cleanest comparison yet. 3-min read. Dev.to/r/webdev. File: skissify-vs-excalidraw-pick-the-right-tool.md
+- **SOCIAL-MEDIA.md Cycle 49**: Tweets 228-232 (Sunday eve through HN day arc), full 6-tweet schema story thread (viral technical hook), LinkedIn launch eve story, r/homeimprovement soft post, Discord templates for 4 servers (Anthropic, Mastra, LangChain, CrewAI), Threads/Bluesky Human Mode focus, One-liners v51-55
+- **PRESS-KIT.md Cycle 49**: Launch-day journalist hook, journalist-ready 2-paragraph pitch, ranked taglines by audience, competitive landscape table, journalist demo flow script
+
+### Blog Milestone: Post #100
+
+| # | Post | File | Platform | When |
+|---|------|------|---------|------|
+| 99 | **Why Hand-Drawn Beats Figma: Science & Sell** | why-hand-drawn-sketches-beat-figma-the-science-and-the-sell.md | Medium, LinkedIn Pulse | Monday 09:00 CET |
+| 100 | **How AI Agents Draw Floor Plans: Non-Technical** | how-ai-agents-draw-floor-plans-the-non-technical-story.md | Substack, LinkedIn | Monday 08:00 CET |
+| 101 | **Skissify vs Excalidraw: Pick the Right Tool** | skissify-vs-excalidraw-pick-the-right-tool.md | Dev.to, r/webdev | Monday 11:00 CET |
+
+### New Channels Found (Cycle 49)
+
+| Channel | Platform | Post timing |
+|---------|---------|------------|
+| **r/homeimprovement** | Reddit | Monday 10:30 (after HN live) |
+| **Anthropic Discord #claude-for-developers** | Discord | Monday 08:30 |
+| **Mastra Discord #showcase** | Discord | Monday 09:30 |
+| **LangChain Discord #tools** | Discord | Monday 10:00 |
+| **CrewAI Discord #showcase** | Discord | Monday 11:00 |
+
+### Updated Monday Schedule (Final)
+
+| Time | Action | Platform |
+|------|--------|---------|
+| 07:00 | Tweet 230 (launch day morning energy) | Twitter |
+| 08:00 | Publish blog #100 (non-technical story) | Substack, LinkedIn |
+| 08:30 | Post to Anthropic Discord | Discord |
+| 09:00 | **SUBMIT SHOW HN** | HN |
+| 09:00 | Tweet 231 (HN submit + thread kick) | Twitter |
+| 09:30 | Post to Mastra Discord | Discord |
+| 10:00 | Tweet 232 thread (schema story — 6 tweets) | Twitter |
+| 10:00 | Post r/vibecoding | Reddit |
+| 10:00 | Post r/ClaudeAI | Reddit |
+| 10:00 | Post to LangChain Discord | Discord |
+| 10:30 | Post r/homeimprovement (soft) | Reddit |
+| 11:00 | Post r/AI_Agents | Reddit |
+| 11:00 | Post to CrewAI Discord | Discord |
+| 11:00 | Publish blog #101 (Excalidraw comparison) | Dev.to |
+| 09:00 | Publish blog #99 (Figma science) | Medium |
+| 12:00 | LinkedIn Sunday story post | LinkedIn |
+| 13:00 | Post r/n8n | Reddit |
+| 18:00 | LinkedIn Newsletter Edition 1 | LinkedIn |
+| All day | Reply to every HN comment within 15 min | HN |
+
+### Final Remaining Blockers
+
+| Priority | Action | Status |
+|----------|--------|--------|
+| 🚨 BLOCKER | Human Mode: live and tested at skissify.com/human | ? |
+| 🚨 TODAY | Email TLDR AI + Rundown + Ben's Bites | ? |
+| 🚨 TODAY | Product Hunt "Coming Soon" page | ? |
+| 📸 MONDAY | Screenshots (Human Mode, Blueprint, MCP) | ? |
+| 😴 TONIGHT | Sleep before 23:00 CET | - |
+
+### Cumulative Blog Inventory (101 posts as of Cycle 49)
+
+| Range | See |
+|-------|-----|
+| #1-91 | Cycles 1-44 |
+| #92-94 | Cycle 45 |
+| #95 | Cycle 46 |
+| #96-98 | Cycle 48 |
+| #99-101 | Cycle 49 (this cycle) |
+
+*Last Updated: March 29, 2026 (Cycle 49 — 10:03 CET)*
+*Added: Blog posts #99-101 (milestone: post #100), SOCIAL-MEDIA.md Cycle 49 (Tweets 228-232, schema thread, LinkedIn story, r/homeimprovement, Discord templates x4, Threads/Bluesky, One-liners v51-55), PRESS-KIT.md Cycle 49 (journalist hook, 2-para pitch, taglines by audience, competitor table, demo flow)*

@@ -12536,3 +12536,249 @@ Follow to get notified on launch day.
 
 *Last Updated: March 29, 2026 (Cycle 48 - 09:00 CET)*
 *Added: 4 new communities (r/vibecoding, r/AI_Agents, r/n8n, Mastra Discord), Tweets 221-227 (Sunday-Tuesday full arc), 3 new Reddit posts, Product Hunt pre-launch text, One-liners v46-v50, HN Objection Bank (5 pre-written responses)*
+
+---
+
+## CYCLE 49 — SUNDAY 10:03 CET — T-23H TO SHOW HN — LAUNCH EVE SPRINT
+
+*It's Sunday March 29, 10:03 CET. Show HN fires Monday (tomorrow). This cycle adds Discord outreach templates (4 new servers), Twitter threads optimized for Tuesday morning, a viral LinkedIn story post, TikTok/Reels hooks, and emergency launch-day contingency tweets.*
+
+### NEW: DISCORD COMMUNITIES (Untapped — Go Monday Morning Before HN)
+
+| Server | Channel to target | What to post |
+|--------|-----------------|-------------|
+| **Anthropic Discord** | #claude-for-developers | "Built an MCP tool that gives Claude drawing abilities — Show HN tomorrow" |
+| **Mastra Discord** | #showcase or #tools | "Mastra integration guide live — Skissify as visual output layer for your agents" |
+| **LangChain Discord** | #tools-and-integrations | "REST API for spatial sketch generation — works with any chain" |
+| **CrewAI Discord** | #showcase | "CrewAI agents can now generate floor plan URLs as task outputs" |
+
+**Discord message template (adapt per server):**
+`
+Hey — built something that might be useful for your workflows here.
+
+Skissify adds a visual output layer to AI agents. Give it plain text or JSON, get back a hand-drawn sketch URL.
+
+Native MCP server (works in Claude Desktop), REST API, 94% LLM first-try success rate.
+
+Doing Show HN tomorrow (Monday 09:00 CET) if you want to see the thread.
+Try it free: skissify.com/human
+`
+
+---
+
+### Tweet 228 — Sunday Evening Story Hook (Sunday 20:00 CET)
+
+`
+one week ago I was trying to explain a room layout to a contractor
+
+I typed it out. sent 3 voice memos. drew on paper. photographed it. texted it.
+
+he still built the wrong wall
+
+this week I sent him a link
+
+one sentence. three seconds. correct wall.
+
+skissify.com
+`
+
+### Tweet 229 — T-minus 12 Hours Hook (Sunday 21:00 CET)
+
+`
+tomorrow morning 09:00 CET
+
+I submit to Show HN
+
+seven days of building. 98 blog posts. one product.
+
+the thing I'm most proud of isn't the code
+
+it's what happened when homeowners and dungeon masters found it before the devs did
+
+tomorrow: skissify.com
+#BuildInPublic #ShowHN
+`
+
+### Tweet 230 — LAUNCH DAY MORNING (Monday 07:00 CET — high-energy open)
+
+`
+LAUNCH DAY
+
+09:00 CET I submit to Show HN
+
+here's what you need to know in 30 seconds:
+
+→ describe any room in plain text
+→ get a hand-drawn sketch URL
+→ works in Claude Desktop (2-line MCP config)
+→ free to try, no account needed
+
+skissify.com/human
+
+let's go
+`
+
+### Tweet 231 — HN Submit + Thread Kick (Monday 09:00 CET — pin this)
+
+`
+🚀 Show HN is live
+
+"Skissify — describe a room in plain text, get a hand-drawn floor plan sketch"
+
+[HN LINK]
+
+Built for AI devs who need visual output in agent workflows.
+Discovered by homeowners, educators, and dungeon masters.
+
+One week old. 94% LLM success rate. MCP native. Free tier.
+
+Try without install: skissify.com/human
+
+Reply with your sketch — I'll RT every single one today
+`
+
+### Tweet 232 — Thread: The Schema Story (Monday 10:00 CET — educational viral hook)
+
+`
+Thread: Why I made the Skissify schema "dumber" and success rate jumped from 60% to 94%
+
+🧵 1/6
+`
+
+`
+2/ First version had nested JSON: rooms containing walls containing doors
+
+Smart hierarchy. Made sense to me.
+
+LLMs hated it.
+
+They'd forget to close nested arrays. Hallucinate parent IDs. Generate valid JSON that was geometrically impossible.
+
+First-try success: ~60%
+`
+
+`
+3/ I flattened everything.
+
+No nesting. No parent-child relationships. Absolute coordinates only. Every element is a sibling.
+
+{"elements": [
+  {"type": "wall", "x1": 0, "y1": 0, "x2": 400, "y2": 0},
+  {"type": "wall", "x1": 400, "y1": 0, "x2": 400, "y2": 300},
+  {"type": "door", "x": 150, "y": 0, "width": 80}
+]}
+`
+
+`
+4/ First-try success rate: 94%
+
+Not because LLMs are bad at hierarchies.
+
+Because spatial layouts don't need hierarchies. A wall doesn't "belong" to a room. It exists at coordinates. The room emerges from the walls.
+
+I was imposing programmer instincts onto a geometry problem.
+`
+
+`
+5/ The lesson I took:
+
+LLM schema design isn't about what's logically correct.
+It's about what's *consistently predictable*.
+
+Flat structures. Absolute references. Explicit types. Fewer decisions per element.
+
+Every added "smart feature" is a potential failure mode.
+`
+
+`
+6/ The Skissify schema is public: [link]
+
+14 primitives. All flat. All absolute.
+
+If you're designing schemas for LLM generation, the boring choice is usually the right one.
+
+#MCP #AIAgents #LLMEngineering #BuildInPublic
+`
+
+---
+
+### LinkedIn Story Post — Launch Eve (Sunday 18:00 CET)
+
+`
+One week ago, Skissify didn't exist.
+
+Here's what happened:
+
+Day 0 (Friday): Built and launched a tool that lets AI agents generate hand-drawn floor plan sketches.
+
+Day 1 (Saturday): Expected developers. Got homeowners.
+
+Day 2 (Sunday): Expected UX designers. Got dungeon masters.
+
+Day 3 (Monday): Expected early adopters. Got geometry teachers.
+
+Day 7 (today): Doing Show HN tomorrow morning.
+
+The thing nobody tells you about building in public:
+You build for one audience.
+The world tells you who actually needed it.
+
+The tool: skissify.com
+Show HN: Monday 09:00 CET
+
+What unexpected audience have you built for?
+`
+
+---
+
+### Threads / Bluesky — Human Mode Focus (Monday 08:30 CET)
+
+`
+no app download
+no account
+no JSON
+no design skills needed
+
+type a room description
+get a hand-drawn sketch URL
+share it with anyone
+
+skissify.com/human
+
+launching on HN in 30 minutes
+`
+
+---
+
+### Reddit r/homeimprovement — SOFT POST (Monday 10:30 CET — after HN goes live)
+
+**Title:** I built a thing that lets you describe your room renovation idea and get a sketch to share with a contractor
+
+`
+Sharing this here because a surprising number of early users turned out to be homeowners doing exactly this.
+
+It's called Skissify. You go to skissify.com/human, type something like "open plan kitchen with island, dining area near window, utility closet by the back door" and you get a hand-drawn sketch URL back in a few seconds.
+
+No app, no account. The URL is permanent so you can text it to your contractor.
+
+Built it for AI developers initially. Homeowners found it first.
+
+Happy to answer questions about how it works.
+`
+
+---
+
+### One-Liners v51-v55 (Cycle 49)
+
+| # | One-liner | Best context |
+|---|-----------|-------------|
+| 51 | "It's not an app. It's a sketch URL." | Threads, Bluesky, casual Twitter |
+| 52 | "Before Figma: the napkin. Skissify is the AI version of the napkin." | LinkedIn, design community |
+| 53 | "Every contractor argument that started with 'I thought you said...' — this is the fix." | Consumer, homeowner angle |
+| 54 | "One week old, four audiences we didn't plan for. That's how you know you built a primitive." | IH, Substack, HN story |
+| 55 | "The output isn't the sketch. The output is the conversation the sketch starts." | Twitter, LinkedIn |
+
+---
+
+*Last Updated: March 29, 2026 (Cycle 49 — 10:03 CET)*
+*Added: Discord server outreach templates (4 servers), Tweets 228-232 (Sunday eve through HN thread), LinkedIn launch eve story, Threads/Bluesky human mode focus, r/homeimprovement soft post, One-liners v51-55, full Twitter thread on schema design (6-tweet viral thread)*
