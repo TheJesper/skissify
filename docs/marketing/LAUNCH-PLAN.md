@@ -1,11 +1,93 @@
-﻿﻿# Skissify Launch Plan
+﻿# Skissify Launch Plan
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com - JSON to hand-drawn sketch, AI-agent compatible
-**Status:** DAY 4 - Monday March 30, 00:02 CET - 79 hours post-launch | SHOW HN FIRES IN ~9 HOURS
+**Status:** DAY 4/3 — Sunday March 29, 03:18 CET / Monday 09:00 HN launch | SHOW HN FIRES IN ~6 HOURS
 
 ---
+---
 
+## Marketing Improvements (Cycle 43 — March 29, 2026 — 03:18 CET)
+
+### STATUS: SUNDAY 03:18 CET — T-6 HOURS TO SHOW HN
+
+It's 03:18 CET. Show HN fires at 09:00 CET Monday. This is the last quiet window before the Monday launch storm.
+
+Cycle 43: final content polish, cognitive science angle, trending hashtag confirmation, new community targets (r/ClaudeAI, r/MachineLearning, r/ProductManagement), three new definitive v3 blog posts.
+
+### What Changed Since Cycle 42
+
+- **Blog post #89 NEW**: "Why Hand-Drawn Sketches Beat Figma: The Cognitive Science Final Argument" — fidelity signal effect, blank canvas problem, AI-native case. 1,500 words. File: docs/marketing/blog/why-hand-drawn-sketches-beat-figma-cognitive-science-final.md
+- **Blog post #90 NEW**: "How AI Agents Can Draw Floor Plans: The Complete Technical Guide (v3)" — 8-model benchmark, Mastra + LangGraph code, prompt template, 5 copy-paste prompts. 2,200 words. File: docs/marketing/blog/how-ai-agents-draw-floor-plans-complete-technical-guide-v3.md
+- **Blog post #91 NEW**: "Skissify vs Excalidraw: The Final Comparison 2026" — feature table, honest pros/cons, hybrid workflow, Mermaid placement. 1,800 words. File: docs/marketing/blog/skissify-vs-excalidraw-the-final-comparison-2026.md
+- **SOCIAL-MEDIA.md Cycle 43**: Tweets 179-188, r/ClaudeAI Human Mode post, r/webdev warm-up, Indie Hackers Day 4 update, timing table, fresh hashtag research, 8 new communities
+- **PRESS-KIT.md v3.5**: Press angles 8-10, screenshot priority table, newsletter outreach 10 targets, one-liners v21-v24
+
+### New Blog Posts (Cycle 43)
+| # | Post | File | Best Platform | Day |
+|---|------|------|--------------|-----|
+| 89 | Why Hand-Drawn: Cognitive Science Final | why-hand-drawn-sketches-beat-figma-cognitive-science-final.md | Medium, LinkedIn | Monday |
+| 90 | AI Floor Plans: Complete Guide v3 | how-ai-agents-draw-floor-plans-complete-technical-guide-v3.md | Dev.to, r/mcp | Monday |
+| 91 | Skissify vs Excalidraw: Final 2026 | skissify-vs-excalidraw-the-final-comparison-2026.md | Dev.to, r/webdev | Monday |
+
+### Immediate Actions (03:18 CET Sunday)
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🟡 | NOW | Tweet 179 (Sunday night US hook) |
+| 2 🔴 | TONIGHT | Verify Human Mode is live + tested |
+| 3 🔴 | 08:00 Mon | Tweet 182 (Day 4 We're Back) |
+| 4 🔴 | 08:30 Mon | Tweet 171 (Pre-HN warmup) |
+| 5 🔴 | 09:00 Mon | SUBMIT Show HN |
+| 6 🔴 | 09:05 Mon | HN first comment |
+| 7 🔴 | 09:10 Mon | r/ClaudeAI Human Mode post |
+| 8 🟡 | 10:00 Mon | r/webdev warm-up + blog #90 on Dev.to |
+| 9 🟡 | 11:00 Mon | blog #91 Dev.to + LinkedIn |
+| 10 🟡 | 12:00 Mon | blog #89 Medium |
+| 11 🔴 | All day Mon | Respond to every HN comment within 5 min |
+| 12 🟡 | 18:00 Mon | Tweet 184 (return visit rate — real data) |
+| 13 🟡 | 20:00 Mon | Indie Hackers Day 4 honest update |
+
+### New Ideas (Cycle 43)
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| "Flat JSON wins" standalone Dev.to article | Schema design lesson + benchmark data | Low | High |
+| AlternativeTo listing | Excalidraw/Mermaid alternative = search traffic | Zero | High |
+| r/ClaudeAI Human Mode | 550K members, exact audience | Low | High |
+| LinkedIn "rough vs polished" cognitive science | Architects, UX leads, PMs | Low | Medium-High |
+| r/MachineLearning benchmark post | 2.7M members, data-hungry | Low | High |
+| Return visit rate as Week 2 anchor metric | Nobody publishes this, drives discussion | Zero | High |
+| Bluesky #BuildInPublic daily posts | Growing dev migration, underserved | Zero | Medium |
+
+### New Communities Unlocked (Cycle 43)
+| Community | Platform | Size | Angle | Priority |
+|-----------|----------|------|-------|----------|
+| r/ClaudeAI | Reddit | 550K+ | Human Mode + MCP | Monday |
+| r/MachineLearning | Reddit | 2.7M | LLM benchmark data | Wednesday |
+| r/ProductManagement | Reddit | 350K+ | Replace whiteboard session | Tuesday |
+| AlternativeTo | Directory | High-intent | vs Excalidraw/Mermaid | Monday |
+| DevHunt | Directory | Medium | Second PH | Monday |
+| Bluesky #BuildInPublic | Bluesky | Growing | Daily posts | Daily |
+
+### Cumulative Blog Inventory (91 posts as of Cycle 43)
+| Range | Posts |
+|-------|-------|
+| #1-88 | Cycles 1-42 |
+| #89 | Why Hand-Drawn: Cognitive Science Final (Cycle 43) |
+| #90 | AI Floor Plans: Complete Guide v3 (Cycle 43) |
+| #91 | Skissify vs Excalidraw: Final Comparison 2026 (Cycle 43) |
+
+### Critical Infrastructure Status (Cycle 43)
+| Gap | Priority | Status |
+|----|----------|--------|
+| Human Mode | CRITICAL | Must be live before 09:00 Monday |
+| Email newsletter | CRITICAL | Add before HN if not live |
+| Wobble slider GIF | HIGH | Record before Monday AM |
+| AlternativeTo listing | HIGH | Monday |
+| TypeScript SDK | HIGH | Wednesday |
+| Benchmark page | HIGH | Tuesday |
+
+*Last Updated: March 29, 2026 (Cycle 43 — 03:18 CET)*
+*Added: Blog posts #89-91 (definitive v3 versions), SOCIAL-MEDIA.md Cycle 43 (Tweets 179-188 + community posts), PRESS-KIT.md v3.5 (angles 8-10, newsletter targets), new communities, hashtag research*
 ## Marketing Improvements (Cycle 41 - March 30, 2026 - 00:02 CET)
 
 ### STATUS: SUNDAY MIDNIGHT — T-9 HOURS TO SHOW HN LAUNCH

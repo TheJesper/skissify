@@ -1,8 +1,71 @@
 # Skissify Press Kit
 
-**Last Updated:** March 28, 2026 — 20:39 CET (Cycle 38)
-**Version:** 3.3
+**Last Updated:** March 29, 2026 — 03:18 CET (Cycle 43)
+**Version:** 3.5
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 43 Updates (March 29, 2026 — 03:18 CET)
+
+### New One-Liners (v21-v24)
+
+**For cognitive science / design press (NEW):**
+> Rough sketches invite collaboration. Polished mockups invite criticism. Skissify is the tool for the phase where you're still deciding.
+
+**For mainstream tech press (NEW):**
+> I gave Claude a pencil. It can now draw floor plans, dungeon maps, and office layouts — 94% success rate on the first try.
+
+**For the "four audiences" story (NEW):**
+> Built for AI engineers. Found by dungeon masters, homeowners, and geometry teachers. That's what happens when you ship a primitive.
+
+**For A2A/protocol press (NEW):**
+> MCP has 97M monthly downloads. A2A is coming. Neither protocol has a visual output story yet. Skissify is the sketch primitive for both.
+
+### New Press Angles (Cycle 43)
+
+**Angle 8: "The Cognitive Science of Rough"**
+- *Hook*: Research shows rough drawings invite collaboration; polished mockups invite criticism. The hand-drawn aesthetic isn't a style choice — it's a communication strategy.
+- *Target*: UX/design press, LinkedIn design audience, FastCompany, Design Week
+- *Stat to use*: 30% of Day 1 signups were non-developers choosing rough sketches over polished wireframes
+
+**Angle 9: "LLM Schema Design Lesson"**
+- *Hook*: Flat JSON = 94% LLM success. Nested JSON = ~60%. The counterintuitive lesson: dumb schemas that LLMs can predict beat smart schemas that require reasoning.
+- *Target*: HN, Dev.to, r/LLMEngineering, r/MachineLearning, AI newsletters
+- *Stat to use*: 8-model benchmark, Claude at 94% vs Llama 3.3 at 71%
+
+**Angle 10: "The Protocol Visual Layer Gap"**
+- *Hook*: MCP and A2A are the two dominant agent protocols in 2026. Neither has a spatial/visual output story. Skissify is positioning as the sketch primitive for the post-protocol world.
+- *Target*: Protocol-aware developers, agent infrastructure press, HN technical threads
+- *Stat to use*: 12,000+ MCP servers, 0 with purpose-built spatial JSON schema
+
+### Screenshot Priority List (Updated Cycle 43)
+
+| # | Screenshot | Use Case | Status |
+|---|-----------|---------|--------|
+| 1 | Editor with floor plan (blueprint style) | Press hero image | ⚠️ Record |
+| 2 | Human Mode text input → sketch output | Human Mode announcement | ⚠️ Record |
+| 3 | Side-by-side: JSON ↔ rendered sketch | Technical press | ⚠️ Record |
+| 4 | Mobile share view | Consumer press | ⚠️ Record |
+| 5 | Dungeon map (blueprint paper) | TTRPG community | ⚠️ Record |
+| 6 | Claude Desktop + MCP tool call → sketch URL | Developer press | ⚠️ Record |
+| 7 | Wobble slider at different amplitude settings | Feature explanation | ⚠️ Record |
+| 8 | Four paper styles side by side | Aesthetic range | ⚠️ Record |
+
+### Newsletter Outreach Targets (Updated Cycle 43)
+
+| Newsletter | Subscribers | Best Pitch Angle | Contact |
+|-----------|-------------|-----------------|---------|
+| TLDR AI | 750K+ | MCP visual output, 94% benchmark | submit@tldr.tech |
+| The Rundown AI | 700K+ | Four audiences story | rundownai.com/submit |
+| Ben's Bites | 100K+ | Founder story, homeowner discovery | bens.bites@beehiiv.com |
+| Bytes.dev | 100K+ | JSON schema design lesson | bytesdev.io |
+| Superhuman | 500K+ | AI agent primitive angle | superhuman.ai/submit |
+| JavaScript Weekly | 200K+ | TypeScript SDK (Week 2 — @skissify/client) | weeklydevtools.com |
+| Pointer.io | 30K+ | Design + developer crossover angle | pointer.io/submit |
+| Indie Hackers Newsletter | 100K+ | Four audiences build-in-public story | indiehackers.com |
+| AI Tool Report | 50K+ | Show HN traction + Human Mode | ai-tool-report.com |
+| Product Hunt Newsletter | Large | Day 4 launch story | producthunt.com |
 
 ---
 

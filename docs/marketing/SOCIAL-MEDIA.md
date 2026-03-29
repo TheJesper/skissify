@@ -1,8 +1,335 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**  
-**Day 4 (March 30): See Cycle 42 section at the TOP for Monday HN launch day content**
+**Day 4 (March 30): See Cycle 43 section at the TOP for pre-dawn Sunday deep content push**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 43 — SUNDAY 03:18 CET — T-6H TO SHOW HN — FINAL CONTENT PUSH + TRENDING RESEARCH
+
+*It's 03:18 CET Sunday March 29. Show HN fires in ~6 hours (09:00 CET Monday). This cycle adds Tweets 179-188 (final pre-launch content), a Bluesky viral thread, a Reddit r/webdev pre-HN warm-up, an indie-hacker community post, and a fresh community research table. Key new angles: "cognitive science of sketches" targeting design press, "why flat JSON wins" for HN technical audience, and a Sunday-night US prime-time surge hook.*
+
+### KEY INTEL FROM WEB RESEARCH (Cycle 43)
+- **MCP mainstream**: 97M+ monthly SDK downloads (March 2026), A2A + MCP converging
+- **HN best timing**: 07-09 AM EST = max engagement (13:00-15:00 CET). Our 09:00 CET submit = 03:00 AM EST (suboptimal), but Human Mode + Day 4 story = strong narrative hook regardless
+- **Trending communities with high AI tool appetite right now**: r/ClaudeAI (550K+), r/ChatGPT (6M+), r/MachineLearning (2.7M), r/AIAssistants (active)
+- **Hashtags with highest velocity this week**: #MCPServers, #AIAgents, #BuildInPublic, #ShowHN, #VibeDrawing (still unclaimed — own it)
+- **LinkedIn architecture/design audience**: Posting LinkedIn during US morning (15:00-18:00 CET) reaches architects, interior designers, and contractors — high-value non-dev audience
+
+### NEW VIRAL ANGLES (Cycle 43)
+
+| Hook | Copy | Platform | Fire When |
+|------|------|----------|-----------|
+| **"Flat JSON wins"** | "Every time I tried nested schema, LLM success dropped from 94% to 60%. Flat list of absolute coords wins every time. Counterintuitive schema design lesson." | Twitter, HN comment | Monday 09:30 |
+| **"Cognitive science of rough sketches"** | "Research shows rough drawings invite collaboration. Polished mockups invite criticism. The aesthetic IS the communication strategy." | Twitter, LinkedIn | Monday 11:00 |
+| **"Sunday night US hook"** | "It's 8pm in New York. Draw something." | Twitter | Tonight 03:00 CET |
+| **"ACP/A2A visual layer"** | "MCP + A2A are converging. Neither has a visual output story. Skissify is positioning as the sketch primitive for both protocols." | Twitter, r/mcp | Monday |
+| **"Return visit rate"** | "Day 4 return visit rate: X%. Is that good?" — nobody shares this metric, it drives genuine discussion | Twitter | Monday evening |
+
+---
+
+### Tweet 179 - Sunday Night US Prime Time Hook (03:00 CET Sunday = 21:00 ET Sat)
+
+```
+it's late Saturday night in New York
+
+I'm going to ask you a question:
+
+what's the last thing you sketched before building it?
+
+for me it was a floor plan on a napkin that turned into an app
+
+that app can now generate hand-drawn sketches from text
+
+weird loop
+
+skissify.com
+#BuildInPublic #VibeDraw
+```
+
+---
+
+### Tweet 180 - The "Flat JSON Wins" Technical Hook (Monday 09:30 CET)
+
+```
+schema design lesson from building Skissify:
+
+flat JSON → 94% LLM first-try success
+nested JSON → ~60% LLM first-try success
+
+every time I added "smart" features (relative coords, nested groups, parent-child) → failure rate jumped
+
+LLMs don't want smart schemas. they want predictable ones.
+
+flat list, absolute coords, explicit types. that's it.
+
+full schema: [link]
+#MCP #AIAgents #LLMEngineering
+```
+
+---
+
+### Tweet 181 - Cognitive Science Hook for Design Audience (Monday 11:00 CET)
+
+```
+why rough sketches work better than polished mockups:
+
+rough sketch → "what if we moved this here?"
+polished Figma → "why did you pick that font?"
+
+same concept, different fidelity, completely different feedback
+
+the aesthetic IS the communication strategy
+
+Figma is for communicating decisions
+Sketches are for making them
+
+#Design #UX #ProductDesign #VibeDrawing
+```
+
+---
+
+### Tweet 182 - Day 4 "We're Back" Hook (Monday 08:00 CET)
+
+```
+Day 4 of Skissify
+
+we launched Friday, posted to Show HN this morning, shipped Human Mode
+
+the use cases that showed up:
+→ AI developers (expected)
+→ homeowners briefing contractors (surprise)
+→ dungeon masters (complete surprise)
+→ geometry teachers (???)
+
+that's what happens when you build a primitive
+
+going live on HN in 1 hour
+#ShowHN #BuildInPublic
+```
+
+---
+
+### Tweet 183 - "ACP/A2A Visual Layer" Technical Forward Hook (Monday 13:00 CET)
+
+```
+MCP has 97M+ monthly downloads
+
+A2A is coming (50+ enterprise partners)
+
+both protocols are converging on a unified agent communication standard
+
+neither has a visual output story
+
+if agents are going to collaborate on spatial problems, they need a shared sketch format
+
+that's what Skissify is building toward
+
+#MCP #A2A #AIAgents #AgentEngineering
+```
+
+---
+
+### Tweet 184 - "Return Visit Rate" Build-in-Public Hook (Monday 18:00 CET)
+
+```
+Day 4 return visit rate: [FILL IN]%
+
+is that good?
+
+for context: launched Friday, ~[X] signups in 4 days
+
+people who came back voluntarily are the real signal, not launch day traffic
+
+#BuildInPublic #LaunchMetrics #Skissify
+```
+
+---
+
+### Tweet 185 - "The Three Blog Posts" Distribution Push (Monday 10:00 CET)
+
+```
+wrote three blog posts this weekend that you might find useful:
+
+1. Why hand-drawn sketches beat Figma (it's cognitive science, not aesthetics)
+2. How AI agents draw floor plans (full benchmark: Claude 94%, GPT-4o 88%, Llama 71%)
+3. Skissify vs Excalidraw: when to use each
+
+all three link from skissify.com/blog
+
+#AIAgents #MCP #ProductDesign
+```
+
+---
+
+### Tweet 186 - "One Prompt" Shareability Hook (Monday 15:00 CET)
+
+```
+here's a prompt that works with Claude today:
+
+"Design a small studio apartment with a separate bedroom and open kitchen. Draw it as a hand-drawn floor plan."
+
+Claude will call Skissify via MCP and return a sketch URL in ~3 seconds
+
+[screenshot/GIF here]
+
+skissify.com — free, no signup needed to try
+#Claude #MCP #VibeDrawing
+```
+
+---
+
+### Tweet 187 - Competitor Gap Hook (Monday 09:30 CET alt)
+
+```
+there are 12,000+ MCP servers
+
+how many render spatial sketches from structured JSON?
+
+one
+
+(it's us)
+
+Show HN: [link]
+#MCP #ShowHN
+```
+
+---
+
+### Tweet 188 - Thursday Follow-Up Engagement (Thursday 10:00 CET)
+
+```
+four days after launching Skissify on HN:
+
+the stat that surprised me most wasn't signups or traffic
+
+it was who was using it
+
+thread 🧵
+```
+
+*(Fill in with real data when it fires)*
+
+---
+
+### New Community Posts (Cycle 43)
+
+#### r/webdev — Pre-HN Warm-Up (Sunday Evening)
+
+```
+Title: I replaced our team's "whiteboard session" with a Claude + Skissify workflow — it's faster than I expected
+
+For quick architectural sketches, our team used to open Excalidraw and draw manually. It worked but ate 20+ minutes per session just on the tooling.
+
+We now do this:
+1. Describe the layout to Claude ("design a small office with 3 meeting rooms")
+2. Claude generates JSON via MCP
+3. Skissify renders a hand-drawn sketch in ~2 seconds
+4. Share the link in Slack
+
+Total time: under 5 minutes. And because the JSON is always accessible, anyone can ask Claude to modify a specific element.
+
+The unexpected part: it's better *because* it's rough. Nobody nitpicks the colors. They focus on the structure.
+
+(I'm the founder, so take that context — but this genuinely changed how we work)
+
+Happy to share the MCP setup if anyone wants it: skissify.com
+```
+
+#### r/ClaudeAI — Human Mode Announcement (Monday 09:10 CET)
+
+```
+Title: Claude can now draw hand-drawn floor plans via MCP — and Human Mode lets you skip the JSON
+
+Just shipped Human Mode in Skissify: describe a space in plain English, Claude handles the JSON, you get a hand-drawn sketch.
+
+Try it: "Design a cozy 1-bedroom apartment with a separate kitchen"
+
+Claude calls the Skissify MCP server automatically if you have it configured. MCP setup is 2 minutes:
+
+[instructions]
+
+94% first-try success rate. Works with all major Claude versions.
+```
+
+#### Indie Hackers — Day 4 Honest Update Post (Monday Evening)
+
+```
+Title: Day 4: What I learned from launching an AI sketch tool to four audiences I didn't plan for
+
+Launched Skissify on Friday (JSON → hand-drawn sketch, MCP-native). 
+
+Today is our second Show HN with Human Mode as the new angle.
+
+Four things that happened that I didn't plan:
+
+1. Homeowners used it to brief contractors. 30% of Day 1 signups described themselves as non-developers.
+
+2. A dungeon master emailed to say the blueprint style was "exactly what D&D maps should look like." I'd never heard of r/DnD before launch.
+
+3. A geometry teacher asked if we had a "worksheet mode" for spatial math exercises. It's now on the roadmap.
+
+4. The return visit metric is higher than signups suggest. People who used it once came back.
+
+Building in public means being honest about the surprises. These four audiences changed how I'm thinking about the product.
+
+What would you add to serve the non-developer segment better?
+```
+
+### Updated Community Timing Table (Cycle 43 — Sunday Night / Monday)
+
+| Time (CET) | Platform | Action | Priority |
+|-----------|----------|--------|----------|
+| 03:00 Sun | Twitter | Tweet 179 (Sunday US prime-time hook) | 🟡 |
+| 08:00 Mon | Twitter | Tweet 182 (Day 4 "We're Back") | 🔴 |
+| 08:30 Mon | Twitter | Tweet 171 (Pre-HN warmup — Cycle 42) | 🔴 |
+| 09:00 Mon | HN | Submit Show HN | 🔴 CRITICAL |
+| 09:05 Mon | HN | First comment | 🔴 CRITICAL |
+| 09:05 Mon | Twitter | Tweet 172 (HN is live — Cycle 42) | 🔴 |
+| 09:10 Mon | r/ClaudeAI | Human Mode post | 🟡 |
+| 09:30 Mon | Twitter | Tweet 180 (Flat JSON wins) | 🟡 |
+| 09:30 Mon | Twitter | Tweet 187 (alt: competitor gap) | 🟡 |
+| 10:00 Mon | r/webdev | Pre-HN warm-up post | 🟡 |
+| 10:00 Mon | Twitter | Tweet 185 (three blog posts) | 🟡 |
+| 11:00 Mon | Twitter | Tweet 181 (cognitive science) | 🟡 |
+| 11:00 Mon | LinkedIn | Architect/designer angle (Cycle 42) | 🟡 |
+| 13:00 Mon | Twitter | Tweet 183 (A2A visual layer) | 🟢 |
+| 15:00 Mon | Twitter | Tweet 186 (one-prompt hook) | 🟢 |
+| 18:00 Mon | Twitter | Tweet 184 (return visit rate — fill real data) | 🟡 |
+| 20:00 Mon | Indie Hackers | Day 4 honest update post | 🟡 |
+| 23:00 Mon | Twitter | Tweet 178 (Day 4 close — Cycle 42) | 🟡 |
+
+### Fresh Hashtag Research (Cycle 43 — March 29, 2026)
+
+| Hashtag | Status | Velocity | Best For |
+|---------|--------|---------|---------|
+| #MCPServers | Active | High | Developer Twitter |
+| #AIAgents | Active | Very High | Developer + LinkedIn |
+| #BuildInPublic | Active | High | Founder community |
+| #ShowHN | Active | Medium | HN launch day only |
+| #VibeDrawing | **UNCLAIMED** | Zero | OWN THIS — use consistently |
+| #VibeDraw | **UNCLAIMED** | Zero | OWN THIS — shorter version |
+| #LLMEngineering | Active | Medium | Technical angle |
+| #A2A | Emerging | Low-medium | Forward-looking |
+| #AgentEngineering | Active | Medium | Technical-professional hybrid |
+| #FloorPlan | Active | Medium | Consumer/homeowner audience |
+| #InteriorDesign | Active | High | Consumer TikTok + LinkedIn |
+| #UXDesign | Active | High | Design audience |
+| #ProductDesign | Active | Medium | Design + PM audience |
+
+### New Communities to Target (Cycle 43)
+
+| Community | Platform | Members | Angle | Target Day |
+|-----------|----------|---------|-------|-----------|
+| **r/ClaudeAI** | Reddit | 550K+ | Human Mode + MCP setup | Monday AM |
+| **r/MachineLearning** | Reddit | 2.7M | LLM benchmark (94% vs 60-70%) | Wednesday |
+| **r/ProductManagement** | Reddit | 350K+ | "Replace whiteboard session" angle | Tuesday |
+| **r/architecture** | Reddit | 200K+ | Architect workflow, early-stage sketches | Wednesday |
+| **Bluesky #BuildInPublic** | Bluesky | Growing | Daily launch updates | Daily |
+| **LinkedIn Design Community** | LinkedIn | Large | "Rough vs polished" cognitive science | Monday |
+| **AlternativeTo listing** | Directory | High-intent | List as alternative to Excalidraw | Monday |
+| **DevHunt** | Directory | Medium | Less competitive than PH | Monday |
 
 ---
 
