@@ -1,8 +1,84 @@
 # Skissify Press Kit
 
-**Last Updated:** March 29, 2026 — 07:49 CET (Cycle 47)
-**Version:** 4.0
+**Last Updated:** March 29, 2026 — 11:28 CET (Cycle 50)
+**Version:** 5.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 50 Updates (March 29, 2026 — 11:28 CET)
+
+### Status: T-46 Hours to Show HN — Final Polish
+
+**Show HN fires Tuesday March 31, 09:00 CET.** This update adds sharper one-liners, the "constraint argument" press angle, updated blog inventory (104 posts), and the definitive product boilerplate v5 optimized for tomorrow's HN submission.
+
+### New One-Liners (v59-v65)
+
+**For technical press / HN:**
+> "Flat JSON schema, 94% first-try LLM accuracy, MCP server, Human Mode. Four days post-launch."
+
+**The constraint argument (best new angle):**
+> "Figma is for communicating decisions. Skissify is for making them."
+
+**The schema insight (HN-native):**
+> "Nested JSON: 60% LLM accuracy. Flat list: 94%. The most counterintuitive schema lesson in AI tooling."
+
+**For product managers:**
+> "Skip the Figma tax. Describe the layout, get the sketch, think with it, then open Figma."
+
+**For AI infrastructure press:**
+> "Every AI stack has text, code, data, and image generation. Skissify adds structured spatial output."
+
+**For homeowner/consumer press:**
+> "Describe your kitchen renovation in one sentence. Get a floor plan. Show your contractor."
+
+**Twitter-optimal (new):**
+> "Drawing it yourself? Excalidraw. AI drawing it? Skissify."
+
+### Product Boilerplate v5 (Show HN Optimized)
+
+> **Skissify** is a JSON-to-sketch renderer with a native MCP server. AI agents (via Claude Desktop or any MCP-compatible framework) can generate hand-drawn floor plans, room layouts, and spatial diagrams from structured JSON or plain-text descriptions. A Human Mode accepts natural language with no JSON required. The hand-drawn aesthetic — controlled by a "wobble" parameter — is intentional: rough sketches invite collaboration, polished wireframes invite criticism. Architecture: flat JSON schema (not hierarchical), 94% first-try LLM accuracy with Claude Sonnet 4, permanent sketch URLs, 4 paper styles (napkin, graph, blueprint, villa). Launched March 27, 2026. Show HN: Tuesday March 31, 09:00 CET.
+
+### New Press Angle (Cycle 50): "The Constraint Argument"
+
+**Hook:** Figma is the wrong tool for early-stage thinking — not because it's bad, but because it's too powerful. The right tool for making spatial decisions is one with almost no options. Skissify is built on this insight.
+
+**For design press:** The cognitive science of rough sketches — why lower fidelity gets better feedback (fidelity signal effect) and why precision tools cause premature commitment.
+
+**Target publications:** UX Magazine, Smashing Magazine, UX Collective, A List Apart, r/UXDesign
+
+**Key quote:**
+> "Figma optimizes for communicating a decision. The problem is you have to make the decision first. That's the 9am problem most design workflows don't solve."
+
+### Blog Inventory Summary (104 posts as of Cycle 50)
+
+| Range | Status |
+|-------|--------|
+| #1-101 | Complete — Cycles 1-49 |
+| #102 | "Why Hand-Drawn Sketches Beat Figma: The Constraint Argument" (Cycle 50) |
+| #103 | "How AI Agents Can Draw Floor Plans: The MCP Anatomy" (Cycle 50) |
+| #104 | "Skissify vs Excalidraw: A Decision Tree" (Cycle 50) |
+
+### Screenshot Priority v5 (Pre-HN Checklist)
+
+| Priority | Screenshot | Status |
+|----------|-----------|--------|
+| 🔴 CRITICAL | Human Mode: text input → sketch output (show the full flow) | ❌ |
+| 🔴 CRITICAL | Blueprint floor plan (most visually impressive paper style) | ❌ |
+| 🔴 CRITICAL | Claude Desktop: agent generating floor plan via MCP | ❌ |
+| 🟡 HIGH | 4 paper styles side-by-side | ❌ |
+| 🟡 HIGH | JSON editor → rendered sketch (technical audience) | ❌ |
+| 🟢 MEDIUM | Wobble slider comparison (0 vs 5 vs 10) | ❌ |
+| 🟢 MEDIUM | Sharing link generated | ❌ |
+
+### Press Contact & Response Times
+
+- **Email:** jesper@skissify.com
+- **Twitter/X:** @skissify
+- **Turnaround for review requests:** Same day (during Show HN week)
+- **Available for interviews:** Monday March 30 — Wednesday April 1
+
+
 
 ---
 

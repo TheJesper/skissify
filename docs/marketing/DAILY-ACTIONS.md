@@ -2,6 +2,131 @@
 
 ---
 
+## 2026-03-30 (Monday) — Proposed by Automated Strategy Run #46 (11:49 CET, Sunday March 29)
+
+### Context: **46 consecutive niche-clean scans. Sunday HN window CLOSED 11:00 CET today. Monday 08:00–10:00 CET is now THE launch window — treat it as a hard deadline. Figma/Stitch counter-narrative window expires Wednesday March 31. Plan7Architect price hike closes Tuesday March 31. `@skissify/mcp-server` dist/ confirmed, `publishConfig` is the 30-second fix.**
+
+---
+
+### 🔴 Action 1 (HARD DEADLINE — Monday 08:00–10:00 CET) — Publish MCP + Post HN
+
+**This is not optional. The Figma/Stitch news-tie hook expires Wednesday. Monday morning is the last viable launch window with a fresh narrative.**
+
+```bash
+# Step 1: Fix publishConfig (30 seconds)
+# Add to W:/code/skissify/mcp-server/package.json:
+#   "publishConfig": { "access": "public" }
+
+# Step 2: Publish to npm (5 minutes)
+cd W:/code/skissify/mcp-server
+npm publish --access public
+npm view @skissify/mcp-server  # Verify after 2-3 min
+
+# Step 3: Post "Show HN" (15 minutes)
+# Use pre-written post at: docs/marketing/HACKER-NEWS.md
+# Optimal window: Monday 08:00–10:00 CET sharp
+```
+
+**HN post hook (Monday framing)**: *"Show HN: Skissify — JSON to hand-drawn sketches with MCP support. Figma + Stitch handle polished UI. I built the sketch step that happens before that."*
+
+**Dev comment angles ready**:
+- "Why not GPT FloorPlan Builder?" → *"$20/mo ChatGPT Plus, raster output, no API. Skissify is EUR 2/mo, SVG, MCP-native."*
+- "Why not Excalidraw?" → *"Excalidraw is for humans with a mouse. Skissify is for AI agents with JSON. Different tool."*
+- "Why not Mermaid?" → *"Mermaid is topology diagrams. Skissify is spatial/floor plan. Also: tunable hand-drawn aesthetic."*
+
+---
+
+### 🟡 Action 2 (Monday March 30) — Submit to 5 MCP Registries
+
+After npm publish is confirmed, submit `@skissify/mcp-server` to all 5 registries. This is 90 minutes of copy-paste work, not code.
+
+1. **modelcontextprotocol.io/registry** — official Anthropic registry, highest trust
+2. **awesome-mcp-servers** (GitHub punkpeye/awesome-mcp-servers) — open PR with entry
+3. **LobeHub MCP marketplace** — lobehub.com/mcp
+4. **claudefa.st** — claudefa.st/tools/mcp-extensions/best-addons
+5. **mcpmanager.ai** — mcpmanager.ai
+
+**Template entry for all registries**:
+```
+Name: Skissify MCP
+Package: @skissify/mcp-server
+Description: Generate hand-drawn sketches and floor plans from JSON manifests.
+Built for AI agents. 14 architectural element types. Tunable hand-drawn aesthetic.
+Tools: skissify_create_sketch, skissify_create_floor_plan, skissify_add_element,
+       skissify_export_sketch, skissify_list_sketches, list_element_types
+```
+
+---
+
+### 🟡 Action 3 (Monday–Tuesday March 30–31) — Plan7Architect Comparison Post (Closes March 31)
+
+Plan7Architect Pro 5 raises prices **March 31** — the final day for this SEO micro-opportunity. Users searching "Plan7Architect alternative" right now have high purchase intent.
+
+**Write and publish** (200 words, 30 minutes):
+- Title: *"Plan7Architect prices going up? Try Skissify for AI-compatible floor plan sketches"*
+- Platform: dev.to or skissify.com/blog
+- Keywords: "Plan7Architect alternative", "floor plan software 2026 alternative", "AI floor plan tool EUR"
+- Include Skissify's EUR 2/mo API Starter vs Plan7Architect's upcoming higher one-time license
+- Publish by Monday evening March 30 to get 24 hours of indexing before March 31 deadline
+
+**Why this works**: Price increase announcements generate active "alternative" search intent. The window is exactly 48 hours. No other sketch tool is targeting this keyword right now.
+
+---
+
+## 2026-03-30 (Monday) — Proposed by Automated Strategy Run #45 (10:08 CET, Sunday March 29)
+
+### Context: **45 consecutive niche-clean scans. HN Sunday window closes 11:00 CET today. If missed → Monday 08:00–10:00 CET is the fallback. GPT FloorPlan Builder confirmed as ideal contrast case for developer copy. Per-seat pricing collapse creates a "timing window" narrative. Plan7Architect price hike closes Tuesday March 31.**
+
+---
+
+### 🔴 Action 1 (ASAP — TODAY or Monday 08:00–10:00 CET) — Publish MCP + Post HN
+
+If the Sunday window (closes 11:00 CET) is missed, Monday 08:00–10:00 CET is the next best window.
+
+```bash
+# 1. Add to mcp-server/package.json (30 seconds):
+#    "publishConfig": { "access": "public" }
+# 2. cd W:/code/skissify/mcp-server
+# 3. npm publish --access public
+# 4. Verify: npm view @skissify/mcp-server (wait 2–3 min)
+# 5. Copy HN post from docs/marketing/HACKER-NEWS.md and publish
+```
+
+**New HN comment angle (Run #45)**: When asked "why not GPT FloorPlan Builder?" — *"GPT FloorPlan Builder requires ChatGPT Plus at $20/mo and outputs DALL-E raster images. Skissify is EUR 2/mo, MCP-native, outputs editable SVG. For agent pipelines, there's no comparison."*
+
+**New HN comment angle (pricing)**: *"Per-seat pricing is dying in 2026 — every SaaS is struggling to move to usage-based. Skissify launches already there: EUR 0.005/render. For AI agents, this aligns cost with value."*
+
+---
+
+### 🟡 Action 2 (Monday March 30) — "GPT FloorPlan Builder vs Skissify" Comparison Page
+
+GPT FloorPlan Builder is appearing in mainstream floor plan software roundups (theclose.com, March 24). It's Skissify's best contrast case. A comparison page targeting "GPT FloorPlan Builder alternative" captures developers who found it inadequate.
+
+**Steps**:
+1. Create `docs/marketing/COMPARISON-GPT-FLOORPLAN.md` with the comparison table (cost, output format, API, agent-compatible)
+2. Write a 300-word blog post: *"Why I switched from GPT FloorPlan Builder to Skissify for my AI pipeline"*
+3. Target keywords: "GPT FloorPlan Builder alternative", "ChatGPT floor plan API", "floor plan MCP server"
+4. Submit to DEV Community (dev.to) — same audience as the Gemini+Matplotlib tutorial (targeted since Run #6)
+
+**Why Monday**: theclose.com roundup is 5 days old and still ranking. Monday is the optimal day to publish counter-content while the original article is still generating traffic.
+
+---
+
+### 🟡 Action 3 (Monday–Tuesday March 30–31) — Plan7Architect Price Hike SEO Micro-Win (Closes March 31)
+
+Plan7Architect Pro 5 raises prices on **March 31** — the exact moment when users reconsider their floor plan software options. This 48-hour window generates real "Plan7Architect alternatives" search intent.
+
+**Steps**:
+1. Write 200-word blog post: *"Plan7Architect prices going up? Here are modern alternatives"*
+2. Target keywords: "Plan7Architect alternative", "floor plan software alternatives 2026", "cheaper floor plan tool"
+3. Publish on skissify.com blog (or DEV Community as fallback)
+4. Include Skissify's API Starter at EUR 2/mo vs Plan7Architect's upcoming higher pricing
+5. Submit to G2 and Capterra "Floor Plan Software" category before March 31
+
+**Why this works**: Price increase announcements create active Google search intent. Users looking for alternatives have high purchase intent. A blog post published March 30 has 24 hours to index before the deadline drama peaks March 31.
+
+---
+
 ## 2026-03-30 (Monday) — Proposed by Automated Strategy Run #44 (09:03 CET, Sunday March 29)
 
 ### Context: **44 consecutive niche-clean scans. `@skissify/mcp-server` dist/ CONFIRMED. HN window closes ~11:00 CET TODAY. Supabase MCP v0.7.0 sets Zod quality bar. Floor plan software roundup active with zero MCP tools (techjockey.com). Plan7Architect price hike closes Tuesday March 31.**

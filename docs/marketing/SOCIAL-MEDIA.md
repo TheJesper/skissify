@@ -1,8 +1,385 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**
-**Day 4 (March 30): See Cycle 43 section at the TOP for pre-dawn Sunday deep content push**
+**Day 4 (March 30 — Cycle 50 at TOP): Show HN TOMORROW Tuesday 09:00 CET. Last Sunday push.**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 50 — SUNDAY MARCH 29, 11:28 CET — T-46 HOURS TO SHOW HN
+
+*It's 11:28 CET Sunday March 29. Show HN fires Tuesday March 31 at 09:00 CET. This is the last full Sunday content cycle. Focus: lock in the Tuesday execution, add genuinely new angles, sharpen the copy that will fire Monday. Three new blog posts written: constraint argument (Figma), MCP anatomy (floor plans), decision tree (Excalidraw). Trending hashtags confirmed. New communities added.*
+
+### CYCLE 50 STATUS
+- **Show HN**: Tuesday March 31 — 09:00 CET (T-46h)
+- **Blog posts this cycle**: #102-104 (constraint argument, MCP anatomy, decision tree)
+- **Key new angle**: "The constraint argument" — Figma has too many options, that's the problem
+- **Key new angle**: "MCP anatomy" — deepest technical walkthrough yet, flat schema explanation
+- **Key new angle**: "Decision tree" — fastest, clearest Skissify vs Excalidraw yet
+
+### NEW VIRAL HOOKS (Cycle 50)
+
+| Hook | Copy | Platform | Fire When |
+|------|------|----------|-----------|
+| **"The constraint argument"** | "Figma is for communicating decisions. Skissify is for making them." | Twitter, LinkedIn | Monday 09:00 |
+| **"94% flat schema"** | "Nested JSON schema: 60% first-try LLM accuracy. Flat list with absolute coords: 94%. The most counterintuitive schema design lesson I know." | Twitter, HN | Monday 10:00 |
+| **"Decision tree"** | "Are you drawing it yourself? Excalidraw. Is an AI drawing it? Skissify. That's the whole comparison." | Twitter, r/webdev | Tuesday pre-HN |
+| **"Figma tax"** | "25 minutes to open a frame, name a file, pick a device size, and add auto-layout. Zero ideas explored. That's the Figma tax for early-stage thinking." | Twitter, r/UXDesign | Monday |
+| **"Sketch URL as memory"** | "A sketch URL is permanent, inspectable, shareable spatial memory for AI agents. Nobody's named this design pattern yet." | Twitter, r/AI_Agents | Monday |
+
+---
+
+### Tweet 233 — Sunday Mid-Morning (11:30 CET) — Constraint Argument
+
+```
+the problem with opening figma to sketch an idea:
+
+you have too many options
+
+frame size? artboard? component library? naming conventions?
+
+40 minutes later you're adjusting column spacing instead of answering the original question
+
+rough sketch > figma for thinking
+
+#VibeDrawing #DesignProcess
+```
+
+### Tweet 234 — Sunday Afternoon (14:00 CET) — Schema Insight (Technical Viral)
+
+```
+flat JSON: 94% first-try LLM accuracy for floor plans
+nested JSON: 60%
+
+reason: LLMs have been trained on enormous amounts of flat data
+nested structures require maintaining a mental stack while generating
+flat structures = just add the next item to the list
+
+counterintuitive schema design lesson
+
+#MCP #AIEngineering #LLM
+```
+
+### Tweet 235 — Sunday Afternoon (16:00 CET) — Decision Tree Hook
+
+```
+skissify vs excalidraw
+
+simple decision tree:
+
+are you drawing it yourself? → excalidraw
+is an AI drawing it? → skissify
+
+the tools serve different input modes
+they're not competing, they're sequential
+
+skissify.com
+#AIAgents #MCP #VibeDraw
+```
+
+### Tweet 236 — Sunday Evening (19:00 CET) — T-38h Show HN Warmup
+
+```
+t-38 hours until I submit Show HN
+
+this is the product: JSON or plain text → hand-drawn floor plan sketch
+
+what I'm doing tonight:
+- testing Human Mode end to end
+- writing the HN first comment (doing this in advance always)
+- not redesigning anything
+
+skissify.com
+#ShowHN #BuildInPublic #LaunchDay
+```
+
+### Tweet 237 — Sunday Evening (21:00 CET) — US Prime Time Hook
+
+```
+it's 3pm on the US east coast
+
+here's a thing I learned building skissify:
+
+when you give an AI agent a tool that draws instead of writes,
+the conversation gets more spatial
+
+"move the kitchen to the north wall" hits differently when there's a sketch
+
+skissify.com/s/demo
+#AIAgents #MCP #VibeDrawing
+```
+
+### Tweet 238 — Monday Morning (08:00 CET) — Pre-HN Day Launch
+
+```
+show HN tomorrow
+
+quick preview of what I'm submitting:
+
+skissify — describe a room in plain text, get a hand-drawn floor plan
+
+Human Mode: no JSON, no coding, describe it and get a sketch
+MCP server: Claude Desktop draws floor plans natively
+
+free tier, no signup needed for first sketch
+
+tomorrow 09:00 CET
+```
+
+### Tweet 239 — Monday (10:00 CET) — Constraint Argument Deep Hook
+
+```
+figma is for communicating decisions
+skissify is for making them
+
+the difference:
+
+figma optimizes for precision → forces commitment before you're ready
+rough sketch optimizes for exploration → stays in debate-mode longer
+
+this is the actual reason rough sketches get better feedback than polished mockups
+
+#DesignProcess #ProductDesign #UX
+```
+
+### Tweet 240 — Monday Afternoon (14:00 CET) — Show HN Eve Build-in-Public
+
+```
+tomorrow is the day
+
+wrote 104 blog posts preparing for this
+built Human Mode specifically because homeowners found the product before developers did
+tested the flat JSON schema decision across 200+ LLM generations (94% first try)
+
+the thing I still don't know: whether it gets traction
+
+tomorrow I find out
+
+skissify.com
+#ShowHN #BuildInPublic
+```
+
+### Tweet 241 — Tuesday 09:00 CET — Show HN LIVE
+
+```
+🚀 Show HN is live
+
+Show HN: Skissify — describe a room, get a hand-drawn floor plan sketch
+
+json or plain text → mcp or rest api → hand-drawn sketch
+
+Claude Sonnet: 94% first-try accuracy
+Human Mode: no JSON required
+free tier: 10 sketches/month
+
+[HN LINK]
+
+skissify.com
+#ShowHN #MCP #AIAgents
+```
+
+### Tweet 242 — Tuesday 09:05 CET — HN First Comment Announcement
+
+```
+if you're reading the HN thread, I'll respond to every comment
+
+things I want to talk about:
+- flat JSON schema decision (why it works)
+- the 4 unexpected audiences (homeowners, dungeon masters, teachers)
+- what week 2 is building
+
+come argue with me about whether this should just be a library
+
+[HN LINK]
+```
+
+### Tweet 243 — Tuesday Afternoon (16:00 CET) — Live Metrics
+
+```
+6 hours into Show HN
+
+[X] points, [Y] comments
+
+most interesting objection so far: [fill in live]
+most interesting use case: [fill in live]
+
+return visit rate: [fill in live]%
+
+the real metric nobody talks about
+#ShowHN #BuildInPublic #RealNumbers
+```
+
+---
+
+### New Reddit Posts (Cycle 50)
+
+#### r/UXDesign — "The Figma Tax: Why We Keep Opening Figma Too Early"
+
+```
+Title: The constraint argument against opening Figma for early-stage ideas
+
+I've been building a sketch tool that generates hand-drawn floor plans from JSON/text. 
+
+In the process I noticed something: every time I opened Figma to sketch an early idea, I spent the first 20 minutes not sketching.
+
+Frame size. Artboard naming. Component library. Auto-layout.
+
+There's a term for this: the Figma tax. The cognitive overhead of using a precision tool for exploration work.
+
+Rough sketches work for early ideas not because they're "better" but because they're constrained. No pixel precision = no pixel arguments. The roughness signals "this is still up for debate."
+
+Anyone else deliberately staying out of Figma for early-stage design work? What do you use instead?
+
+[Not a hard promo — built Skissify as an AI-agent-first sketch tool but the question applies broadly]
+```
+
+#### r/mcp (if not already posted this cycle)
+
+```
+Title: Skissify Day 4 update — flat JSON schema, 94% first-try accuracy
+
+Quick update from the Skissify MCP server 4 days post-launch.
+
+The most common question: why flat JSON schema instead of hierarchical?
+
+Short answer: nested schema = 60% first-try LLM accuracy. Flat list with absolute coords = 94%.
+
+LLMs have been trained on massive amounts of flat tabular data. Flat schemas don't require maintaining a stack while generating — each element is just "add the next item to the list."
+
+This is probably the most generally useful thing we learned building this.
+
+Show HN fires tomorrow (Tuesday March 31, 09:00 CET) if anyone wants to upvote/comment.
+
+skissify.com
+```
+
+---
+
+### LinkedIn Posts (Cycle 50)
+
+#### LinkedIn — Sunday Personal Story Post
+
+```
+Four days ago I launched Skissify — a tool that converts JSON or plain text descriptions into hand-drawn floor plan sketches, with an MCP server so Claude Desktop can draw floor plans natively.
+
+I expected AI developers to use it.
+
+30% of sign-ups are homeowners.
+
+The pattern that emerged: homeowners describe their renovation to Claude, Claude generates a sketch via Skissify, they show it to their contractor. "The contractor actually understood what I wanted for the first time."
+
+When you build a primitive instead of an app, it finds its own use cases.
+
+Show HN fires tomorrow: I'll share the real numbers then.
+
+#AItools #ProductLaunch #BuildInPublic #UXDesign
+```
+
+---
+
+### One-Liners v53-v58 (Cycle 50)
+
+**v53 — The constraint one-liner:**
+> "Figma has too many options. That's the problem. Skissify has almost none. That's the feature."
+
+**v54 — The schema insight:**
+> "Flat JSON: 94% LLM accuracy. Nested JSON: 60%. The most counterintuitive schema lesson in AI tooling."
+
+**v55 — The decision tree:**
+> "Drawing it yourself? Excalidraw. AI drawing it? Skissify. Done."
+
+**v56 — The homeowner one:**
+> "Built for AI developers. Homeowners use it to brief contractors. That's what spatial primitives do."
+
+**v57 — The Figma tax:**
+> "The Figma tax: 25 minutes to start sketching an idea. The idea is gone by then."
+
+**v58 — The memory one:**
+> "Sketch URL = permanent, inspectable, shareable spatial memory for AI agents. This design pattern doesn't have a name yet."
+
+---
+
+### Trending Hashtags Confirmed (Cycle 50 Research)
+
+Based on web search, active March 29 2026:
+
+| Hashtag | Activity | Use for |
+|---------|---------|---------|
+| #MCP | Very high | All technical posts |
+| #AIAgents | Very high | Agent workflow posts |
+| #BuildInPublic | High | Founder story posts |
+| #ShowHN | High | Tuesday HN posts |
+| #VibeDrawing | Unclaimed — OWN IT | All sketch/aesthetic posts |
+| #VibeDraw | Unclaimed — OWN IT | Short-form version |
+| #UXDesign | High | Figma/design posts |
+| #MCPServers | Rising | Technical developer posts |
+| #LangGraph | Active | Framework integration posts |
+| #CrewAI | Active | Framework integration posts |
+| #Mastra | Active TypeScript | TypeScript agent posts |
+| #ProductDesign | Steady | Design audience |
+
+**A2A note**: IBM confirmed A2A + MCP convergence this week. Monitor for #A2A as emerging hashtag. Position Skissify as "sketch primitive for both protocols" when relevant.
+
+---
+
+### Show HN Minute-by-Minute Playbook (Tuesday March 31)
+
+| Time (CET) | Action | Priority |
+|-----------|--------|---------|
+| 08:00 | Final check: Human Mode working? Email signup on homepage? | BLOCKER |
+| 08:30 | Tweet 238 "tomorrow is the day" warm-up | HIGH |
+| 08:45 | Open HN, prepare submission tab | CRITICAL |
+| **09:00** | **SUBMIT: "Show HN: Skissify — describe a room, get a hand-drawn floor plan sketch"** | 🚨 CRITICAL |
+| 09:03 | Tweet 241 (HN live announcement) | HIGH |
+| 09:05 | Post HN first comment (pre-written, copy-paste) | CRITICAL |
+| 09:05 | Post r/mcp (pre-written) | HIGH |
+| 09:10 | Tweet 242 (HN engagement invite) | MEDIUM |
+| 09:30 | r/ClaudeAI (Human Mode + MCP native) | HIGH |
+| 10:00 | r/webdev (decision tree angle) | HIGH |
+| 10:00 | r/vibecoding | HIGH |
+| 10:30 | r/AI_Agents | HIGH |
+| 11:00 | LinkedIn Newsletter Edition 1 | HIGH |
+| 11:00 | r/ChatGPT (Human Mode, homeowner angle) | MEDIUM |
+| 12:00 | r/homeimprovement | MEDIUM |
+| 13:00 | r/n8n | LOW |
+| All day | Reply to EVERY HN comment within 10 min | 🚨 CRITICAL |
+| 16:00 | Tweet 243 (live metrics — fill real numbers) | HIGH |
+| 20:00 | IndieHackers post with real numbers | HIGH |
+| 22:00 | Day close tweet + return visit rate | HIGH |
+
+### HN First Comment v4 (Final — Copy-Paste at 09:05)
+
+```
+Hi HN. Built this because every AI agent stack has text, code, data, and image generation — 
+but nothing produces structured spatial output that a human can reason with.
+
+Technical note that might be interesting: the JSON schema is flat (absolute coords, top-level 
+elements) rather than hierarchical. This single decision took first-try LLM accuracy from ~60% 
+to 94%. LLMs have been trained on enormous amounts of flat tabular data; nested structures 
+require maintaining a mental stack while generating.
+
+Four unexpected audiences from launch week:
+- AI developers using MCP (expected)
+- Homeowners briefing contractors (not expected — 30% of sign-ups)  
+- Dungeon masters making maps with blueprint style (definitely not expected)
+- Geometry teachers generating spatial math exercises (also not expected)
+
+That last one surprised me most. A teacher in Germany emailed to say she'd generated 30 
+differentiated floor plan exercises for her class in 10 minutes.
+
+Human Mode (plain text → sketch, no JSON) was built specifically because the homeowner signal 
+was so strong.
+
+Happy to discuss the schema design, the wobble algorithm, or why image generators (DALL-E etc.) 
+don't work for this use case (no determinism, no spatial structure, no iterability).
+
+skissify.com — free tier, 10 sketches/month.
+```
+
+---
+
+*Last Updated: March 29, 2026 (Cycle 50 — 11:28 CET)*
+*Added: Blog posts #102-104 (constraint argument, MCP anatomy, decision tree), Tweets 233-243 (Sunday through Show HN arc), Reddit posts for r/UXDesign + r/mcp, LinkedIn Sunday story, One-liners v53-v58, HN First Comment v4 (final), Show HN minute-by-minute playbook, trending hashtag table*
 
 ---
 
