@@ -75,7 +75,6 @@ export default function GalleryPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {presetNames.map((name) => {
             const preset = presets[name];
-            const bg = PAPER_COLORS[preset.paper as PaperType] || "#f5f0e0";
             const desc =
               presetDescriptions[name] || "A Skissify preset sketch.";
 
@@ -84,9 +83,9 @@ export default function GalleryPage() {
                 key={name}
                 name={name}
                 description={desc}
-                paperColor={bg}
-                tool={preset.tool}
                 paper={preset.paper}
+                tool={preset.tool}
+                sketch={preset}
               />
             );
           })}

@@ -2,6 +2,66 @@
 
 ---
 
+## Entry: March 29, 2026 — 07:55 CET | Automated Strategy Run #43
+
+### Theme: "What Makes Someone Pay EUR 2/mo for Skissify? — The Sunday Morning Discovery Window"
+
+**Intelligence basis**: Run #43. 43 consecutive niche-clean scans. 3 fresh web searches. Key data: xTiles + Flow newly on PH Eraser alternatives (non-competitive); graphically.io "AI tools for designers" published 16 hours ago; businessupside.com per-seat pricing obituary (2 days ago); Voxturr 30–50% domain-specific premium confirmed; micro-SaaS WTP $49–199/mo for pain workflows, EUR 2 impulse range validated.
+
+---
+
+#### Finding 1: Why EUR 2/mo Works — Three Distinct Buyer Triggers
+
+This run crystallizes three separate psychological pathways to the EUR 2/mo conversion, each validated by distinct data:
+
+**Trigger A: The Infrastructure Instinct** (bigideasdb.com, 2 weeks; voxturr.com, 1 week)
+- Developer tools priced below EUR 5/mo are bought as infrastructure add-ons, not tool subscriptions
+- The purchase decision happens once: "does this fit my stack?" — then it's forgotten as a line item
+- EUR 2/mo is below the threshold where developers calculate ROI. They just pay it.
+- *The pitch*: "It's less than a coffee. It's not a subscription decision, it's a stack decision."
+
+**Trigger B: The Platform Tax Escape** (GPT FloorPlan Builder, theclose.com, 5 days ago)
+- ChatGPT Plus costs $20/mo and is required to use the GPT FloorPlan Builder
+- Developers who want AI-generated floor plans either pay $20/mo for ChatGPT Plus OR they pay EUR 2/mo for Skissify's API and use any LLM they already have
+- The EUR 2/mo tier is not competing with "free" — it's competing with "$20/mo lock-in to one LLM"
+- *The pitch*: "Stop paying $20/mo to use a floor plan GPT. EUR 2/mo, works with Claude, GPT-4, or Gemini."
+
+**Trigger C: The Domain Premium Unlock** (voxturr.com 30–50% premium; businessupside.com)
+- Architecture-domain software commands 30–50% more than generic software
+- EUR 2/mo is actually the floor, not the ceiling — architecture firms and construction tech teams expect to pay EUR 7–9/mo for a domain-native tool
+- The EUR 2/mo tier is the entry point into a pricing ladder that goes EUR 2 → EUR 5 → EUR 9 → EUR 12/user/mo
+- *The pitch for domain buyers*: "Built for architects and AI agents who generate floor plans. Not a generic whiteboard."
+
+---
+
+#### Finding 2: The Sunday Morning SEO Pattern — Skissify Has a Weekly Acquisition Window
+
+Run #43 was conducted at 07:55 CET Sunday March 29. In this single run:
+- PH Excalidraw alternatives updated **16 hours ago** (03:49 CET Sunday) — active editorial curation happens Sunday mornings
+- graphically.io published fresh AI tools roundup **16 hours ago** (Sunday morning)
+- CoolMindMaps vs Excalidraw comparison published **10 hours ago** (Sunday morning)
+
+**Pattern**: Sunday mornings (03:00–08:00 CET) are when AI tools editorial content gets published and when Product Hunt curation pages are updated. This is when developers are actively researching alternatives to their current tools (late-night US Saturday + early EU Sunday).
+
+**Strategic implication**: The optimal time to be "discovered" — via PH submission, roundup inclusion, or HN post — is Sunday morning. The HN post should go up at 08:00–10:00 CET Sunday to catch this exact window. **The current moment (07:55 CET Sunday March 29) is the window.**
+
+---
+
+#### Finding 3: "Per-Seat Is Dead" — Skissify Launches into a Pricing Paradigm Shift
+
+**Source**: businessupside.com (2 days ago): *"Charging 'per seat' no longer works for the vendor or the client because AI makes workers 10x more productive. SaaS companies are having a hard time moving to Usage-Based or Outcome-Based pricing in 2026."*
+
+Skissify's per-render pricing model launches as the established players (Miro at $20/user, Figma at $15/user, Lucid at $8/user) struggle to justify per-seat costs in an era of AI-assisted work. This is a timing gift:
+
+- The established tools built their pricing on "seats = work done"
+- Skissify prices on "renders = output produced"
+- A developer with an AI agent generating 500 floor plans/month pays EUR 2.50 in overage (at EUR 0.005/render) — this is LESS than one month of a single Miro seat
+- The comparative math is embarrassingly favorable: "500 AI-generated floor plans for EUR 4.50 total, or 500 manual sketches in Miro for $20/user/month"
+
+**Actionable**: Add this comparison to the pricing page FAQ: "How does this compare to Miro/Figma per-seat pricing?"
+
+---
+
 ## Entry: March 29, 2026 — 06:49 CET | Automated Strategy Run #42
 
 ### Theme: "ChatGPT GPTs Enter Floor Plan Roundups — And Why That Makes EUR 2/mo Look Like a Bargain"

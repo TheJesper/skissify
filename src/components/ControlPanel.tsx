@@ -1,6 +1,7 @@
 "use client";
 
-import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS, BlueprintMetadata } from "@/lib/types";
+import { useState } from "react";
+import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS, BlueprintMetadata, SketchElement } from "@/lib/types";
 import ElementThumbnailPanel from "./ElementThumbnailPanel";
 
 interface ControlPanelProps {
@@ -77,6 +78,15 @@ interface ControlPanelProps {
   metadata?: BlueprintMetadata;
   /** Called when the user edits blueprint metadata */
   onMetadata?: (m: BlueprintMetadata) => void;
+  /**
+   * The actual element data when exactly one element is selected.
+   * Used to show position/size coordinate inputs in the Selection panel.
+   */
+  selectedElement?: SketchElement;
+  /** Index of the single selected element (for updateElement calls) */
+  selectedElementIdx?: number;
+  /** Called when the user edits coordinates/size of the selected element */
+  onUpdateElement?: (idx: number, updates: Record<string, unknown>) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -103,6 +113,118 @@ const presetInkColors: { key: string; label: string }[] = [
   { key: "#663399", label: "Purple" },
 ];
 
+
+/** Coordinate/size editing fields for a single selected element. */
+function ElementCoordEditor({
+  element,
+  elementIdx,
+  onUpdate,
+}: {
+  element: SketchElement;
+  elementIdx: number;
+  onUpdate: (idx: number, updates: Record<string, unknown>) => void;
+}) {
+  // Local draft state so user can type freely without immediate re-render flicker
+  const [draft, setDraft] = useState<Record<string, string>>({});
+
+  const el = element as unknown as Record<string, unknown>;
+
+  // Determine which coordinate fields to show based on element type
+  type Field = { key: string; label: string };
+  let fields: Field[] = [];
+
+  if (["line", "arrow", "dashed", "dim"].includes(element.type)) {
+    fields = [
+      { key: "x1", label: "x1" },
+      { key: "y1", label: "y1" },
+      { key: "x2", label: "x2" },
+      { key: "y2", label: "y2" },
+    ];
+  } else if (element.type === "rect") {
+    fields = [
+      { key: "x", label: "x" },
+      { key: "y", label: "y" },
+      { key: "w", label: "w" },
+      { key: "h", label: "h" },
+    ];
+  } else if (element.type === "circle") {
+    fields = [
+      { key: "cx", label: "cx" },
+      { key: "cy", label: "cy" },
+      { key: "r", label: "r" },
+    ];
+  } else if (element.type === "text") {
+    fields = [
+      { key: "x", label: "x" },
+      { key: "y", label: "y" },
+      { key: "fontSize", label: "size" },
+    ];
+  } else if (element.type === "arc") {
+    fields = [
+      { key: "cx", label: "cx" },
+      { key: "cy", label: "cy" },
+      { key: "r", label: "r" },
+    ];
+  } else if (["stair", "window", "opening", "door-symbol", "door-slide", "column"].includes(element.type)) {
+    fields = [
+      { key: "x", label: "x" },
+      { key: "y", label: "y" },
+      { key: "w", label: "w" },
+    ];
+  }
+
+  if (fields.length === 0) return null;
+
+  const getValue = (key: string): string => {
+    if (key in draft) return draft[key];
+    const v = el[key];
+    return v != null ? String(Math.round((v as number) * 10) / 10) : "0";
+  };
+
+  const handleChange = (key: string, value: string) => {
+    setDraft((prev) => ({ ...prev, [key]: value }));
+  };
+
+  const handleCommit = (key: string, value: string) => {
+    const num = parseFloat(value);
+    if (!isNaN(num)) {
+      onUpdate(elementIdx, { [key]: num });
+    }
+    // Clear draft so it re-reads from the element
+    setDraft((prev) => {
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+  };
+
+  return (
+    <div className="mt-1">
+      <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">
+        Position &amp; Size
+        <span className="ml-1.5 text-[#93a1a1] capitalize">({element.type})</span>
+      </label>
+      <div className="grid grid-cols-4 gap-1">
+        {fields.map(({ key, label }) => (
+          <div key={key} className="flex flex-col gap-0.5">
+            <label className="text-[9px] text-[#93a1a1] uppercase text-center">{label}</label>
+            <input
+              type="number"
+              value={getValue(key)}
+              onChange={(e) => handleChange(key, e.target.value)}
+              onBlur={(e) => handleCommit(key, e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleCommit(key, (e.target as HTMLInputElement).value);
+                e.stopPropagation(); // prevent canvas keyboard shortcuts
+              }}
+              className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-1 py-1 text-[11px] text-[#586e75] text-center font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function ControlPanel({
   paper,
@@ -149,6 +271,9 @@ export default function ControlPanel({
   selectedHasGroup,
   onGroupSelected,
   onUngroupSelected,
+  selectedElement,
+  selectedElementIdx,
+  onUpdateElement,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -416,6 +541,14 @@ export default function ControlPanel({
                 Delete
               </button>
             </div>
+            {/* Coordinate editor — shown when exactly one element is selected */}
+            {selectedCount === 1 && selectedElement && selectedElementIdx != null && onUpdateElement && (
+              <ElementCoordEditor
+                element={selectedElement}
+                elementIdx={selectedElementIdx}
+                onUpdate={onUpdateElement}
+              />
+            )}
             {onColorSelected && (
               <div className="flex items-center gap-2">
                 <label className="text-[10px] text-[#657b83] uppercase tracking-wide shrink-0">

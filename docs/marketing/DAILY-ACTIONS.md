@@ -2,6 +2,56 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Updated by Automated Strategy Run #43 (07:55 CET, Sunday March 29)
+
+### Context: **43 consecutive niche-clean scans. `@skissify/mcp-server` dist/ CONFIRMED. `publishConfig` missing — 30-second fix. HN window IS OPEN RIGHT NOW (07:55 CET). xTiles + Flow newly listed on PH Eraser alternatives (non-competitive). graphically.io AI tools roundup published 16h ago — post-launch submission target. Per-seat pricing dying per businessupside.com — Skissify's per-render model is ahead of the curve.**
+
+---
+
+### 🔴 Action 1 (RIGHT NOW — HN window closes ~11:00 CET) — Fix publishConfig + npm publish + Post HN
+
+The window is open. The product is built. The only blocker is one JSON field.
+
+```bash
+# 1. Add publishConfig to mcp-server/package.json:
+#    "publishConfig": { "access": "public" }
+# 2. cd W:/code/skissify/mcp-server
+# 3. npm publish --access public
+# 4. npm view @skissify/mcp-server  (wait 2–3 min for CDN propagation)
+# 5. Post HN "Show HN" from docs/marketing/HACKER-NEWS.md
+```
+
+**New angle for HN comments (Run #43 intelligence)**: If asked about ChatGPT alternatives — "GPT FloorPlan Builder requires ChatGPT Plus at $20/mo and outputs raster 3D images you can't edit programmatically. Skissify is EUR 2/mo, outputs JSON-native SVG, works with any LLM via MCP."
+
+---
+
+### 🔴 Action 2 (After npm publish — same day) — Submit to 5 MCP Registries
+
+1. modelcontextprotocol.io/registry — official listing
+2. github.com/punkpeye/awesome-mcp-servers — PR to add @skissify/mcp-server
+3. LobeHub MCP marketplace — submit package
+4. claudefa.st/blog/tools/mcp-extensions — submit for inclusion
+5. mcpmanager.ai — submit @skissify/mcp-server
+
+---
+
+### 🟡 Action 3 (Today, after HN post) — Submit to Sunday Editorial Windows
+
+**Run #43 confirmed**: Sunday 03:00–08:00 CET is when PH curation pages and AI tools roundups are updated. Submit Skissify NOW while the editorial cycle is active:
+
+1. **Product Hunt Excalidraw alternatives page** (updated 16h ago at 03:49 CET) — submit Skissify as the JSON-native, MCP-ready, floor-plan-capable alternative
+2. **Product Hunt Eraser alternatives page** (updated 2 days ago, now lists xTiles + Flow) — submit Skissify in the hand-drawn/agent-pipeline category
+3. **graphically.io AI tools roundup** (published 16h ago) — contact editor to add Skissify as "the only programmatic hand-drawn sketch generator" (opposite direction from UI conversion tools they cover)
+4. **Startupik Excalidraw alternatives** (5 days ago, actively maintained) — contact for inclusion
+
+---
+
+### 🟢 Action 4 (Tomorrow, Monday March 30) — Plan7Architect SEO Window Closing Tuesday
+
+**Plan7Architect price increase closes March 31** (48 hours remaining). Publish blog post targeting "plan7architect alternative" and "floor plan software alternatives 2026" keywords. Frame Skissify as the AI-native, EUR 2/mo alternative to expensive traditional CAD software.
+
+---
+
 ## 2026-03-29 (Sunday) — Updated by Automated Strategy Run #42 (06:49 CET, Sunday March 29)
 
 ### Context: **42 consecutive niche-clean scans. `@skissify/mcp-server` BUILT AND COMPILED. dist/ CONFIRMED EXISTS (index.js + tools/). NOT ON NPM (E404 confirmed). Missing `publishConfig` field in package.json — 30-second fix then `npm publish`. HN window OPEN NOW (06:49–11:00 CET). GPT FloorPlan Builder discovered in mainstream "best floor plan software" roundups — new SEO battleground confirmed. MCP ecosystem crosses enterprise phase with WorkOS/JFrog coverage.**

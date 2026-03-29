@@ -493,6 +493,10 @@ function EditorInner({
     return [...selectedElements].some((i) => !!(sketch.elements[i] as unknown as Record<string, unknown>)?.groupId);
   })();
 
+  // Single-element coordinate editor
+  const singleSelectedIdx: number | undefined = selectedElements.size === 1 ? [...selectedElements][0] : undefined;
+  const singleSelectedElement = singleSelectedIdx != null ? sketch.elements[singleSelectedIdx] : undefined;
+
   return (
     <div className="h-screen flex flex-col overflow-hidden">
       <Toolbar
@@ -572,6 +576,9 @@ function EditorInner({
             onSnapGrid={setSnapGrid}
             metadata={sketch.metadata}
             onMetadata={setMetadata}
+            selectedElement={singleSelectedElement}
+            selectedElementIdx={singleSelectedIdx}
+            onUpdateElement={updateElement}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -703,6 +710,9 @@ function EditorInner({
             onSnapGrid={setSnapGrid}
             metadata={sketch.metadata}
             onMetadata={setMetadata}
+            selectedElement={singleSelectedElement}
+            selectedElementIdx={singleSelectedIdx}
+            onUpdateElement={updateElement}
           />
         </div>
       )}
