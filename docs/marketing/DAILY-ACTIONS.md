@@ -2,6 +2,67 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #38 (01:26 CET, Sunday March 29)
+
+### Context: 38 consecutive niche-clean scans. MCP server built March 26. HN window opens 08:00 CET. WorkOS enterprise MCP guide published 3 days ago = enterprise discovery path now active. nxcode.io validates $19–99/mo WTP for AI tools — EUR 2/mo is infrastructure psychology, not SaaS psychology. Plan7Architect price hike closes March 31 (2 days). Brave rate-limited this run (238/2000 monthly quota used).
+
+---
+
+### 🔴 Action 1 (PRIORITY — 08:00–11:00 CET TODAY) — npm Publish + Hacker News "Show HN"
+
+**WHY NOW**: HN Sunday morning (08:00–11:00 CET) = EU waking up + US Saturday night browsing = peak global developer traffic. The Figma MCP + Google Stitch news cycle expires Monday. WorkOS MCP enterprise guide (3 days old) means engineering leaders are actively evaluating MCPs RIGHT NOW.
+
+**Step 1 — npm publish (5 min):**
+```bash
+cd W:/code/skissify/mcp-server
+# Verify publishConfig exists in package.json (add if missing: "publishConfig": { "access": "public" })
+npm publish --access public
+# Confirm: https://www.npmjs.com/package/@skissify/mcp-server
+```
+
+**Step 2 — Smoke test (5 min):**
+```bash
+npx @skissify/mcp-server
+# Must respond to MCP protocol without errors. DO NOT post HN if this fails.
+```
+
+**Step 3 — Post Show HN** using draft in `docs/marketing/HACKER-NEWS.md`. Title suggestion:
+> `Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP missing from every AI design stack`
+
+**Expected outcome**: 400–1,200 HN visitors. 30–100 free signups. 5–15 paying users. First MRR of EUR 10–75. Launch event that unlocks all discovery channels.
+
+---
+
+### 🟡 Action 2 (Anytime Sunday, after npm is live) — Submit to 5 MCP Registries
+
+Once `@skissify/mcp-server` is live on npm, a single 90-minute submission sprint captures all discovery channels simultaneously:
+
+1. **modelcontextprotocol.io registry** — official registry; WorkOS-reading engineering leaders will check here first
+2. **github.com/punkpeye/awesome-mcp-servers** — PR: `| @skissify/mcp-server | Hand-drawn architectural sketches from JSON manifests — floor plans, walls, doors, dimensions | TypeScript |`
+3. **claudefa.st/blog/tools/mcp-extensions** — zero sketch tools listed; Skissify fills the gap
+4. **mcpmanager.ai** — active directory; zero sketch tools yet
+5. **lobehub.com/mcp** — where draw-it-mcp and mermaid-mcp are listed; Skissify completes the visual tier
+
+**Also**: Submit to Product Hunt Excalidraw alternatives page (updated 9 hours ago in Run #37 — page is actively maintained and prime for new submissions).
+
+---
+
+### 🟡 Action 3 (Before Tuesday March 31 — 2 days remaining) — "Plan7Architect Alternative" SEO Blog Post
+
+Plan7Architect Pro 5 price increase closes **March 31**. The active search window closes Tuesday. Write and publish Sunday to capture 48 hours of index time.
+
+**Title**: *"Plan7Architect raising prices March 31? What modern architects use instead in 2026 — lighter, faster, AI-compatible"*
+
+**Key angle**: EUR 5/mo Skissify vs Plan7Architect one-time license + hike. JSON-first, hand-drawn aesthetic for client sketches (not permit drawings), MCP-native, no desktop install.
+
+**SEO targets**: "Plan7Architect alternative 2026", "floor plan software alternative March 2026", "AI floor plan subscription web-based"
+
+**Estimated writing time**: 45 min using existing content in `docs/marketing/COPY-LIBRARY.md`.
+
+**NEW angle from Run #38**: Frame Skissify as the "client presentation" tool vs Plan7Architect's "permit drawing" tool. These are not competing for the same use case — architects need both. EUR 5/mo Skissify complements Plan7Architect rather than replacing it. This reduces buyer resistance and increases conversion from architectural audiences.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #37 (00:19 CET, Sunday March 29)
 
 ### Context: Run #37 confirms MCP server built March 26. Niche unoccupied (37 consecutive scans). PH Excalidraw alternatives page refreshed 9h ago. SaaSpocalypse favors AI-native tools. HN window opens at 08:00 CET. 3 actionable items below — ordered by impact.

@@ -235,6 +235,11 @@ export default function Canvas({
   const lastSnappedDelta = useRef({ x: 0, y: 0 });
   const lastTouchDist = useRef<number | null>(null);
   const lastTouchCenter = useRef<{ x: number; y: number } | null>(null);
+  // Single-touch state for tap-to-select and drag-to-move/pan
+  const touchStartPos = useRef<{ x: number; y: number } | null>(null);
+  const touchStartTime = useRef<number>(0);
+  const isTouchDraggingElements = useRef(false);
+  const lastSingleTouch = useRef<{ x: number; y: number } | null>(null);
 
   // Ruler state: cursor position in element-space, container dimensions, bounding rects
   const [rulerCursor, setRulerCursor] = useState<{ x: number; y: number } | null>(null);
@@ -975,9 +980,13 @@ export default function Canvas({
     return actions;
   };
 
-  // Touch: pinch-to-zoom and two-finger pan
+  // Touch: pinch-to-zoom, two-finger pan, single-touch tap-to-select and drag-to-move/pan
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     if (e.touches.length === 2) {
+      // Two-finger: pinch/pan — cancel any in-progress single-touch drag
+      isTouchDraggingElements.current = false;
+      touchStartPos.current = null;
+      lastSingleTouch.current = null;
       const dx = e.touches[0].clientX - e.touches[1].clientX;
       const dy = e.touches[0].clientY - e.touches[1].clientY;
       lastTouchDist.current = Math.sqrt(dx * dx + dy * dy);
@@ -985,6 +994,13 @@ export default function Canvas({
         x: (e.touches[0].clientX + e.touches[1].clientX) / 2,
         y: (e.touches[0].clientY + e.touches[1].clientY) / 2,
       };
+    } else if (e.touches.length === 1) {
+      // Single-touch: record start for tap detection and potential drag
+      const t = e.touches[0];
+      touchStartPos.current = { x: t.clientX, y: t.clientY };
+      touchStartTime.current = Date.now();
+      lastSingleTouch.current = { x: t.clientX, y: t.clientY };
+      isTouchDraggingElements.current = false;
     }
   }, []);
 
@@ -1014,13 +1030,104 @@ export default function Canvas({
 
       lastTouchDist.current = dist;
       lastTouchCenter.current = center;
-    }
-  }, []);
+    } else if (e.touches.length === 1 && lastSingleTouch.current !== null) {
+      e.preventDefault();
+      const t = e.touches[0];
+      const dx = t.clientX - lastSingleTouch.current.x;
+      const dy = t.clientY - lastSingleTouch.current.y;
 
-  const handleTouchEnd = useCallback(() => {
-    lastTouchDist.current = null;
-    lastTouchCenter.current = null;
-  }, []);
+      const startPos = touchStartPos.current;
+      const totalDx = startPos ? t.clientX - startPos.x : 0;
+      const totalDy = startPos ? t.clientY - startPos.y : 0;
+      const totalDist = Math.sqrt(totalDx * totalDx + totalDy * totalDy);
+
+      // Check if the touch started on a selected element (only after 6px movement to confirm drag intent)
+      if (!isTouchDraggingElements.current && totalDist > 6 && startPos && onMoveSelected && selectedElements.size > 0) {
+        const { mx: startMx, my: startMy } = clientToCanvas(startPos.x, startPos.y);
+        const hitOnSelected = [...selectedElements].some((i) => {
+          const el = sketch.elements[i];
+          return el && !((el as unknown as Record<string, unknown>).locked) && hitTest(el, startMx, startMy);
+        });
+        if (hitOnSelected) {
+          isTouchDraggingElements.current = true;
+          lastSnappedDelta.current = { x: 0, y: 0 };
+        }
+      }
+
+      if (isTouchDraggingElements.current && onMoveSelected) {
+        // Convert screen-space delta to element-space delta
+        const snapGrid = sketch.snapGrid && sketch.snapGrid > 0 ? sketch.snapGrid : 0;
+        const ct = computeCenterTransform(sketch.elements, canvasW, canvasH);
+        const dxEl = dx / (zoom * ct.scale);
+        const dyEl = dy / (zoom * ct.scale);
+        let finalDx = lastSnappedDelta.current.x + dxEl;
+        let finalDy = lastSnappedDelta.current.y + dyEl;
+        if (snapGrid > 0) {
+          const snappedX = Math.round(finalDx / snapGrid) * snapGrid;
+          const snappedY = Math.round(finalDy / snapGrid) * snapGrid;
+          if (snappedX !== 0 || snappedY !== 0) {
+            onMoveSelected(snappedX, snappedY);
+            lastSnappedDelta.current = { x: finalDx - snappedX, y: finalDy - snappedY };
+          } else {
+            lastSnappedDelta.current = { x: finalDx, y: finalDy };
+          }
+        } else {
+          onMoveSelected(dxEl, dyEl);
+        }
+      } else if (!isTouchDraggingElements.current && totalDist > 3) {
+        // Pan the canvas
+        setPan((p) => ({ x: p.x + dx, y: p.y + dy }));
+      }
+
+      lastSingleTouch.current = { x: t.clientX, y: t.clientY };
+    }
+  }, [selectedElements, sketch.elements, sketch.snapGrid, zoom, canvasW, canvasH, clientToCanvas, onMoveSelected]);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    const wasDraggingElements = isTouchDraggingElements.current;
+    isTouchDraggingElements.current = false;
+
+    if (e.touches.length === 0) {
+      lastTouchDist.current = null;
+      lastTouchCenter.current = null;
+
+      // Commit element drag to undo history
+      if (wasDraggingElements && onDragEnd) {
+        onDragEnd();
+      }
+
+      // Tap-to-select: if touch was short and didn't move much, treat as a click
+      const startPos = touchStartPos.current;
+      const elapsed = Date.now() - touchStartTime.current;
+      if (startPos && !wasDraggingElements && elapsed < 400) {
+        const changedTouch = e.changedTouches[0];
+        if (changedTouch) {
+          const dx = changedTouch.clientX - startPos.x;
+          const dy = changedTouch.clientY - startPos.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 12) {
+            // Treat as a tap — find element under tap point
+            const { mx, my } = clientToCanvas(changedTouch.clientX, changedTouch.clientY);
+            let tappedIdx = -1;
+            for (let i = sketch.elements.length - 1; i >= 0; i--) {
+              if (hitTest(sketch.elements[i], mx, my)) {
+                tappedIdx = i;
+                break;
+              }
+            }
+            if (tappedIdx >= 0) {
+              onSelectElements(new Set([tappedIdx]));
+            } else {
+              onSelectElements(new Set());
+            }
+          }
+        }
+      }
+
+      touchStartPos.current = null;
+      lastSingleTouch.current = null;
+    }
+  }, [sketch.elements, clientToCanvas, onSelectElements, onDragEnd]);
 
   // Update cursor when hovering over selected elements
   const handleCursorHover = useCallback(

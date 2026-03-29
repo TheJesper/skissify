@@ -2,6 +2,53 @@
 
 ---
 
+## Entry: March 29, 2026 — 01:26 CET | Automated Strategy Run #38
+
+### Theme: "The EUR 2/mo Price Is Infrastructure Psychology, Not SaaS Psychology"
+
+**Intelligence basis**: Run #38. 38 consecutive niche-clean scans. MCP server confirmed built March 26. Brave Search rate-limited (1 of 2 searches completed). New signals: WorkOS MCP enterprise guide (3 days old), nxcode.io micro-SaaS WTP data ($19–99/mo validated for AI tools), MCP standard ecosystem confirmation from use-apify.com.
+
+---
+
+#### Finding 1: EUR 2/mo Lives in the "Infrastructure" Mental Bucket — Not the "Subscription" Bucket
+
+nxcode.io's January 2026 micro-SaaS report validates $19–99/mo as the standard WTP range for AI content tools. At EUR 2/mo, Skissify is priced at 2–10% of that range. This is intentional — but not for the reason it might seem.
+
+EUR 2/mo doesn't fail the "is this tool worth $99/mo" test. It bypasses that test entirely. It's never compared against $99 tools because it doesn't feel like a tool purchase. It feels like adding a package to a `.env` file. Like setting up `STRIPE_API_KEY`. Developers do this without procurement approval, without comparing alternatives, and without evaluating ROI.
+
+**The mental model difference**:
+- $99/mo tool: "Is this worth $99? What am I getting? Is there a better option?" → deliberation → cancellation risk
+- EUR 2/mo infrastructure: "Obviously yes, I'll add this, done." → no deliberation → high retention
+
+The SaaS WTP data shows users will pay $19–99/mo for the right AI tool. Skissify's EUR 2/mo captures the impulse-buy segment first, then the EUR 5–12/mo tier captures the "I'm actually using this seriously" segment. The $19–99/mo segment is where Team/Enterprise tier growth eventually lands (EUR 12/user/mo = USD ~13/user/mo, within the validated range).
+
+**Pricing ladder implication**: The EUR 2 tier is not the revenue tier — it's the acquisition tier. Every EUR 2 user is a pipeline dependency candidate. Pipeline dependencies convert to EUR 5 Pro. EUR 5 Pro users expand to EUR 12/user Team. The ladder is correct.
+
+#### Finding 2: WorkOS MCP Enterprise Formalization = New Discovery Path Opening
+
+WorkOS (3 days ago) published the definitive "what every engineering team needs to know about MCP" guide for 2026. WorkOS serves engineering leaders at growth-stage companies. These are exactly the people who will green-light MCP server adoption across their teams.
+
+**What this means for Skissify's discovery path**:
+- Engineering leader reads WorkOS MCP guide → decides to build MCP toolchain for their team → searches for visual output MCPs → finds Skissify (if it's in the registry)
+- This is a B2B pipeline, not a developer PLG pipeline
+- The purchase decision at this level is not EUR 2/mo — it's EUR 12/user/mo Team tier or higher
+
+**Critical action it creates**: Being in modelcontextprotocol.io registry is not optional for this discovery path. WorkOS-reading engineering leaders will consult the official registry, not search Twitter or Reddit. If Skissify isn't in the official registry when this guide's readers start evaluating visual MCPs, Skissify is invisible to the highest-LTV customer segment.
+
+**Timeline**: WorkOS guide was published 3 days ago. Engineering leaders read it, evaluate, and begin procurement in 2–4 weeks. Skissify needs to be in the registry by April 5 to capture this window.
+
+#### Finding 3: The Canonical Stack Gap Is Now Formally Documented in Enterprise Guides
+
+The "generate in Stitch → refine in Figma → implement via Claude Code" canonical stack (findskill.ai, multiple citations) is now appearing in enterprise-facing MCP guides. This elevates the Skissify narrative from "niche developer tool" to "missing enterprise architecture decision."
+
+**B2B pitch evolution**: When the canonical AI stack is missing its sketch step AND enterprise teams are now formally evaluating MCP tools (WorkOS guide), the Skissify pitch becomes:
+
+> "Your team has adopted the 2026 AI design stack: Stitch, Figma, Claude Code. Every architecture review, client proposal, and system design starts with a rough sketch. That step currently has no tool in your stack. Skissify's MCP server adds it. EUR 12/user/month. Your agents generate floor plans, architecture diagrams, and client sketches from JSON. No new subscriptions for individuals — one Team tier, unlimited users."
+
+This is a Team tier pitch, not a Pro tier pitch. The Team tier generates EUR 12×10 = EUR 120/mo for a 10-person team — 24x more revenue than a solo Pro subscriber.
+
+---
+
 ## Entry: March 29, 2026 — 00:19 CET | Automated Strategy Run #37
 
 ### Theme: "Why EUR 2/mo Is the Correct Entry Price in the SaaSpocalypse Era"
