@@ -1548,3 +1548,106 @@ Skissify is a JSON-to-sketch API specializing in architectural and spatial layou
 
 *Last Updated: March 29, 2026 (Cycle 45 — 05:35 CET)*
 *Added: One-liners v29-v34, HN title v5, screenshot priority (7 items), press angles 9-10 (education + build-in-public), media outreach targets (newsletter + Twitter), Founder Bio v2, Product Boilerplate v3*
+
+
+---
+
+## PRESS-KIT.md — v4 (March 29, 2026 — Cycle 48)
+
+### NEW: VIDEO DEMO SCRIPTS (for TikTok/YouTube Shorts — 45-60 seconds)
+
+**Script 1: The Kitchen Contractor**
+```
+[Phone screen visible]
+"I described my kitchen renovation in plain text."
+[Type: "4x3 meter kitchen, island in the center, sink on the north wall, fridge by the door"]
+"Sent it to Skissify."
+[Sketch appears — hand-drawn, clean]
+"Sent the sketch to my contractor."
+"He immediately knew what I wanted."
+"No architect. No CAD software. Just words."
+skissify.com/human
+```
+
+**Script 2: The AI Agent Demo**
+```
+[Terminal visible]
+"Claude can draw floor plans now."
+[Claude Desktop prompt: "Sketch a small studio apartment for a remote worker"]
+[Sketch appears within 3 seconds]
+"It's a native MCP tool."
+"Two lines of config."
+"Every Claude conversation can now produce hand-drawn sketches."
+[Sketch shown]
+"skissify.com — it's free to try."
+```
+
+### NEW: PRESS CONTACT TEMPLATE (ready to send)
+
+Subject: Skissify — AI agent tool that draws hand-drawn floor plans (Show HN Tuesday, free tier)
+
+Hi [name],
+
+I'm building Skissify — an API and MCP server that converts structured JSON or plain text into hand-drawn architectural sketches. AI agents (Claude, GPT-4, etc.) use it to produce visual floor plans as part of agentic workflows.
+
+Three things that might make it worth a mention:
+1. Show HN: launching Tuesday March 31, 09:00 CET
+2. Free tier available — no friction to try
+3. Surprise audiences: built for devs, adopted by homeowners, educators, and dungeon masters
+
+Human Mode (no JSON, no install): skissify.com/human
+Product screenshots: [attach]
+Founder available for comment/quote
+
+Best,
+Jesper
+[email]
+
+---
+
+### UPDATED PRODUCT SCREENSHOTS CHECKLIST (v4)
+
+| # | Screenshot | Format | Status | Where to use |
+|---|-----------|--------|--------|-------------|
+| 1 | Human Mode: text input → sketch output (side by side) | 1200x630 | NEEDED | Hero image, social |
+| 2 | Claude Desktop MCP → floor plan generation | 1200x630 | NEEDED | HN, dev press |
+| 3 | Blueprint style floor plan (clean blue lines) | 1200x630 | NEEDED | Press kit |
+| 4 | 4 styles side-by-side (napkin/blueprint/technical/rough) | 1600x900 | NEEDED | Product Hunt |
+| 5 | Mobile browser: sketch displayed on iPhone | 1200x630 | NEEDED | Consumer angle |
+| 6 | Mastra TypeScript code + resulting sketch | 1600x900 | NEEDED | Dev.to, r/webdev |
+| 7 | Dungeon map sketch | 800x800 | NICE | Gaming press |
+| 8 | Geometry worksheet layout | 800x800 | NICE | EdTech angle |
+
+**Naming convention for screenshots:** `skissify-[description]-[date].png`  
+**Storage:** `public/press/` or send to press@skissify.com
+
+---
+
+### BRAND VOICE GUIDE (Quick Reference)
+
+| Tone | Yes | No |
+|------|-----|-----|
+| Confident | "94% first-try success" | "We hope this helps" |
+| Direct | "AI agents need visual output." | "We're excited to announce..." |
+| Honest | "Built for devs, found other audiences" | "Revolutionary paradigm shift" |
+| Technical when needed | "Flat-list absolute-coord JSON" | "Cutting-edge AI-powered solution" |
+| Warm when personal | "A dungeon master emailed to ask for more shapes" | "Our diverse user base has expressed..." |
+
+---
+
+### QUICK FACTS v4 (for journalists, one-liners)
+
+- **Founded:** March 2026
+- **Team:** 1 developer + AI agents
+- **Pricing:** Free tier + paid API
+- **Schema:** Open spec (flat-list, absolute coords, 14 primitives)
+- **LLM success rate:** 94% (Claude), 88% (GPT-4o) first-try
+- **MCP server:** `npm install -g @skissify/mcp-server`
+- **Human Mode:** skissify.com/human (no JSON, no install)
+- **Unexpected audiences:** Homeowners, geometry teachers, dungeon masters
+- **Show HN:** Tuesday March 31, 2026, 09:00 CET
+
+---
+
+*Last Updated: March 29, 2026 (Cycle 48 — 09:00 CET)*
+*Added: Video demo scripts (2 × 45-60s for TikTok/YouTube), press contact template, screenshots checklist v4, brand voice guide, quick facts v4*

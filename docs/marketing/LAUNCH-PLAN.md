@@ -3284,3 +3284,92 @@ It's 06:43 CET Sunday. Show HN fires Tuesday 09:00 CET. This cycle focuses on th
 
 *Last Updated: March 29, 2026 (Cycle 46 - 06:43 CET)*
 *Added: Blog post #95 (T-24h honest prep diary), NEWSLETTER-OUTREACH.md (ready-to-send email templates for TLDR AI/Rundown/Ben's Bites + Twitter DM drafts), SOCIAL-MEDIA.md Cycle 46 (HN First Comment v3 final, Tweets 205-210, Bluesky, Mastodon, r/mcp day-of, one-liners v35-v39), final pre-HN checklist with TODAY actions*
+
+---
+
+## Marketing Improvements (Cycle 48 — March 29, 2026 — 09:00 CET)
+
+### STATUS: SUNDAY 09:00 CET — T-47 HOURS TO SHOW HN — FINAL SUNDAY PUSH
+
+This is the last full content cycle before Show HN. Monday is execution + prep only. Everything that can be written has been written. Focus shifts from creation to activation.
+
+### What Changed This Cycle (48)
+
+- **Blog post #96 NEW**: "Why Hand-Drawn Sketches Beat Figma: The Monday Argument" — concise, punchy, 3-min read optimized for Medium/LinkedIn. File: `why-hand-drawn-sketches-beat-figma-the-monday-argument.md`
+- **Blog post #97 NEW**: "Skissify vs Excalidraw: The Only Comparison You Need" — definitive clear-lane comparison, Dev.to/r/webdev audience, includes code samples. File: `skissify-vs-excalidraw-the-only-comparison-you-need.md`
+- **Blog post #98 NEW**: "How AI Agents Draw Floor Plans: A Monday Primer" — targets r/AI_Agents and r/vibecoding, REST API + MCP code examples, real workflows. File: `how-ai-agents-draw-floor-plans-monday-primer.md`
+- **SOCIAL-MEDIA.md Cycle 48**: Tweets 221-227 (Sunday through Tuesday HN close arc), 3 new Reddit posts (r/vibecoding, r/AI_Agents, r/n8n), Product Hunt pre-launch text, One-liners v46-v50, **HN Objection Bank** (5 copy-paste responses to top objections — critical for Tuesday)
+- **Research**: Confirmed r/vibecoding (very active MCP tools thread Feb 2026) and r/AI_Agents (active 2026 agentic community) as high-value new targets
+
+### New Blog Posts (Cycle 48)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 96 | **Why Hand-Drawn Beats Figma: The Monday Argument** | `why-hand-drawn-sketches-beat-figma-the-monday-argument.md` | Medium, LinkedIn Pulse | Monday 09:00 CET |
+| 97 | **Skissify vs Excalidraw: The Only Comparison** | `skissify-vs-excalidraw-the-only-comparison-you-need.md` | Dev.to, r/webdev | Monday 11:00 CET |
+| 98 | **How AI Agents Draw Floor Plans: Monday Primer** | `how-ai-agents-draw-floor-plans-monday-primer.md` | Dev.to, r/AI_Agents, r/vibecoding | Monday 14:00 CET |
+
+### New Communities Found (Cycle 48)
+
+| Community | Platform | Activity | Post Timing |
+|-----------|---------|---------|------------|
+| **r/vibecoding** | Reddit | Very active (MCP essentials thread Feb 2026) | Monday 10:00 |
+| **r/AI_Agents** | Reddit | Active agentic workflow discussions | Monday 11:00 |
+| **r/n8n** | Reddit | Large automation community (MCP curated list thread) | Monday 13:00 |
+
+### Critical Remaining Actions
+
+| Priority | Action | Deadline | Status |
+|----------|--------|----------|--------|
+| 🔴 BLOCKER | Human Mode: live and tested at skissify.com/human | Before Tue 09:00 | ❓ |
+| 🔴 TODAY | Email TLDR AI (templates in NEWSLETTER-OUTREACH.md) | Tonight | ❌ |
+| 🔴 TODAY | Email The Rundown AI | Tonight | ❌ |
+| 🔴 TODAY | Email Ben's Bites | Tonight | ❌ |
+| 🔴 TODAY | Setup Product Hunt "Coming Soon" page | Today | ❌ |
+| 🟡 MONDAY | Screenshots: Human Mode, Blueprint, Claude Desktop | Monday AM | ❌ |
+| 🟡 MONDAY | Decide HN title v4 vs v5 | Monday night | ❌ |
+| 🟡 MONDAY | Test HN objection bank (5 responses in SOCIAL-MEDIA.md Cycle 48) | Monday | ✅ written |
+| 🟡 MONDAY | Publish blog post #95 (T-24h diary) — already written | Monday AM | ❌ |
+| 🟡 MONDAY | Post r/ClaudeAI (ready in Cycle 47) | Monday 10:00 | ❌ |
+| 🟡 MONDAY | Post r/AI_Agents (ready in Cycle 48) | Monday 11:00 | ❌ |
+| 🟡 MONDAY | Post r/vibecoding (ready in Cycle 48) | Monday 10:00 | ❌ |
+| 🟢 MONDAY | Post r/n8n (ready in Cycle 48) | Monday 13:00 | ❌ |
+| 🟢 TONIGHT | Sleep before 23:00 CET | Tonight | — |
+
+### HN Objection Bank (READ THIS BEFORE TUESDAY)
+
+5 pre-written responses to top objections are now in SOCIAL-MEDIA.md Cycle 48.
+Copy-paste them. Don't write from scratch under Tuesday pressure.
+
+Topics: Excalidraw, Mermaid/PlantUML, SVG generation, "niche use case", "why hand-drawn"
+
+### Monday Content Publishing Schedule
+
+| Time | Action | Where |
+|------|--------|-------|
+| 07:00 | Tweet 222 (Monday morning tease) | Twitter |
+| 08:00 | Publish blog #95 (T-24h diary) | IndieHackers + Substack |
+| 09:00 | Publish blog #96 (Figma argument) | Medium / LinkedIn Pulse |
+| 10:00 | Tweet 223 (objection responses preview) | Twitter |
+| 10:00 | Post r/vibecoding | Reddit |
+| 10:00 | Post r/ClaudeAI | Reddit |
+| 11:00 | Post r/AI_Agents | Reddit |
+| 11:00 | Publish blog #97 (Excalidraw comparison) | Dev.to |
+| 12:00 | LinkedIn Sunday post (from Cycle 47) | LinkedIn |
+| 13:00 | Post r/n8n | Reddit |
+| 14:00 | Publish blog #98 (floor plans primer) | Dev.to |
+| 18:00 | LinkedIn Newsletter Edition 1 | LinkedIn |
+| 20:00 | Tweet 224 (Monday evening pre-HN) | Twitter |
+| 20:00 | IndieHackers template (fill real numbers) | IndieHackers |
+
+### Cumulative Blog Inventory (98 posts as of Cycle 48)
+
+| Range | See |
+|-------|-----|
+| #1-91 | Cycles 1-44 |
+| #92-94 | Cycle 45 |
+| #95 | Cycle 46 |
+| #96-98 | Cycle 48 (this cycle) |
+
+*Last Updated: March 29, 2026 (Cycle 48 - 09:00 CET)*
+*Added: Blog posts #96-98 (Monday publishing schedule optimized), SOCIAL-MEDIA.md Cycle 48 (Tweets 221-227, 3 Reddit posts, Product Hunt pre-launch, One-liners v46-50, HN Objection Bank), 3 new communities (r/vibecoding + r/AI_Agents + r/n8n), critical action checklist with clear Monday schedule*
