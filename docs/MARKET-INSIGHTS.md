@@ -2,6 +2,54 @@
 
 ---
 
+## Entry: March 29, 2026 — 00:19 CET | Automated Strategy Run #37
+
+### Theme: "Why EUR 2/mo Is the Correct Entry Price in the SaaSpocalypse Era"
+
+**Intelligence basis**: Run #37. 37 consecutive niche-clean scans. MCP server confirmed built. HN window open. New signal: PH Excalidraw alternatives page updated 9 hours ago — Skissify still absent. SaaSpocalypse context from TechCrunch + Voxturr domain premium data.
+
+---
+
+#### Finding 1: The SaaSpocalypse Is Good for Skissify
+
+TechCrunch's March 2026 "SaaSpocalypse" analysis describes generic SaaS tools being displaced by AI-native alternatives. This is framed as catastrophic for incumbents (Miro, generic whiteboards) but is precisely the market opening Skissify needs.
+
+The tools dying in the SaaSpocalypse are: subscription-based, human-operated, non-programmable, not AI-agent-compatible. The tools winning are: AI-native, usage-based, MCP-compatible, with domain-specific vocabulary.
+
+**EUR 2/mo implications**:
+- The buyer's mindset has shifted from "I need a whiteboard subscription" to "I need an AI rendering layer." EUR 2/mo is priced for the second mindset — it feels like infrastructure, not software.
+- Voxturr data: domain-specific tools command 30–50% premium. Generic sketch = EUR 0 (Excalidraw). Domain-specific architecture sketch = EUR 5/mo. EUR 2/mo entry tier = gateway to a domain premium product.
+- In the SaaSpocalypse, users cancel $20/mo tools but add $2/mo infrastructure line items. EUR 2 survives budget cuts that kill EUR 20.
+
+#### Finding 2: The EUR 2/mo Entry Tier Is a Discovery Tool, Not a Revenue Source
+
+The `skissify_list_element_types` MCP tool exposes 14 domain-specific element types to any agent that calls it. Agents calling Skissify MCP discover `door-symbol`, `door-slide`, `stair`, `column`, `dim` — vocabulary that signals architectural domain value immediately.
+
+At EUR 2/mo (200 renders/month), an architect or developer using Skissify for client pitches hits the limit in <1 week. The limit converts them to EUR 5/mo Pro before they've consciously decided to subscribe. The conversion is triggered by usage, not by a sales page.
+
+**WTP model (Sunday HN launch scenario)**:
+- HN post: 800 visitors (conservative), 8% free signup = 64 signups
+- 15% watermark-removal conversion = ~10 EUR 2/mo subscribers = EUR 20 MRR
+- 2–3 Team tier inquiries = EUR 24–36 MRR
+- Realistic first-week MRR: **EUR 44–56** (vs EUR 135 break-even at 3 months)
+- EUR 2 tier converts in 7 days to EUR 5 via usage-driven upgrade. First-month blended ARPU: ~EUR 3.50.
+
+#### Finding 3: The "Canonical Stack Gap" Is a Confirmed WTP Signal
+
+The findskill.ai "generate in Stitch → refine in Figma → implement via Claude Code" canonical workflow (3 days old, still actively circulating) creates a measurable WTP trigger:
+
+Developers building this stack spend:
+- Stitch: EUR 0 (free tier 350 gen/mo)
+- Figma: EUR 15/editor/mo
+- Claude Code/API: EUR 10–50/mo depending on usage
+- **Missing step (Skissify)**: EUR 2/mo
+
+EUR 2/mo is the cheapest addition to a EUR 25–65/mo existing stack. The purchase decision is asymmetric — it costs the user less than a rounding error on their existing AI bill. This is the WTP zone where conversion is emotional ("why not?") not rational.
+
+**Conversion copy implication**: Landing page should show the canonical stack with Skissify inserted at the start. "You're already spending EUR 25+/mo on this stack. Skissify costs less than a coffee." 
+
+---
+
 ## Entry: March 28, 2026 — 23:15 CET | Automated Strategy Run #36
 
 ### Theme: "The MCP Server Was Built All Along — What EUR 2/mo Looks Like When the Product Is Actually Ready"

@@ -2,6 +2,64 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #37 (00:19 CET, Sunday March 29)
+
+### Context: Run #37 confirms MCP server built March 26. Niche unoccupied (37 consecutive scans). PH Excalidraw alternatives page refreshed 9h ago. SaaSpocalypse favors AI-native tools. HN window opens at 08:00 CET. 3 actionable items below — ordered by impact.
+
+---
+
+### 🔴 Action 1 (PRIORITY — 08:00–12:00 CET TODAY) — npm Publish + Hacker News "Show HN"
+
+**WHY TODAY**: The Figma MCP open beta + Google Stitch "canonical AI stack" news cycle (March 25–27) expires by Monday. The PH Excalidraw alternatives page updated 9 hours ago — highest developer discovery traffic window of the week. Do this first.
+
+**Step 1 — Verify npm publish readiness (5 min):**
+```bash
+cd W:/code/skissify/mcp-server
+# Check if publishConfig is set; if not, add to package.json:
+# "publishConfig": { "access": "public" }
+npm publish --access public
+# Verify: https://www.npmjs.com/package/@skissify/mcp-server
+```
+
+**Step 2 — Smoke test before posting (5 min):**
+```bash
+npx @skissify/mcp-server
+# Must start without errors. DO NOT post HN if this fails.
+```
+
+**Step 3 — Post HN Show HN (15 min):**
+Use pre-written post in `docs/marketing/HACKER-NEWS.md`. Target: 08:00–11:00 CET (EU morning, US late Saturday night = peak global developer traffic).
+
+**Expected outcome**: 400–1,200 visitors, 30–100 free signups, 5–15 paying users. First MRR.
+
+---
+
+### 🟡 Action 2 (Anytime Sunday, after npm is live) — Submit to 5 MCP Registries
+
+Once `@skissify/mcp-server` is live on npm, submit to all five discovery channels in a single 90-minute session:
+
+1. **modelcontextprotocol.io/registry** — official registry (most important)
+2. **github.com/punkpeye/awesome-mcp-servers** — PR with: `| @skissify/mcp-server | Generates hand-drawn architectural sketches from JSON manifests | TypeScript |`
+3. **claudefa.st/blog/tools/mcp-extensions** — email or submit form; no sketch tools listed yet
+4. **mcpmanager.ai** — active MCP directory; no sketch tools yet
+5. **lobehub.com/mcp** — LobeHub marketplace (draw-it-mcp and mermaid-mcp are here; Skissify fills the floor-plan gap)
+
+**After HN post**: Submit Skissify to the **Product Hunt Excalidraw alternatives page** (updated 9 hours ago — prime timing). The page is actively maintained and Google-indexed.
+
+---
+
+### 🟡 Action 3 (Before Tuesday March 31) — "Plan7Architect Alternative" SEO Blog Post
+
+Plan7Architect price increase closes **March 31** — 2 days remaining. Publish before then to capture active search traffic.
+
+**Title**: *"Plan7Architect alternatives for modern architects in 2026 — lighter, faster, AI-compatible"*
+**Angle**: EUR 5/mo vs Plan7Architect's one-time license + price increase. Skissify: JSON-first, MCP-compatible, hand-drawn aesthetic for client presentations, no desktop install.
+**SEO targets**: "Plan7Architect alternative", "floor plan software alternative 2026", "AI floor plan web-based tool"
+**Publish to**: skissify.com/blog (preferred) OR Medium draft (faster indexing)
+**Estimated writing time**: 45 minutes using `docs/marketing/COPY-LIBRARY.md` content.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #36 (23:15 CET, Saturday March 28)
 
 ### 🚨 STATUS CORRECTION: MCP Server Is BUILT — Launch is Ready NOW
