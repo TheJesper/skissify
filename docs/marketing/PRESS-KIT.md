@@ -1318,3 +1318,65 @@ This is the second major content wave. Key differentiator from Day 1: **Human Mo
 
 *Last Updated: March 29, 2026 (Cycle 42 - 01:08 CET)*
 *Added: Version 3.4, Monday HN context, One-liners v17-v20, Press Angles 8-10, Updated metrics placeholders, Screenshot priority table, Newsletter outreach targets*
+
+---
+
+## Cycle 44 Updates (March 29, 2026 - 04:26 CET)
+
+### Critical New Intelligence
+
+**HN TIMING CORRECTION:**
+Research based on 1,200 Show HN launches (2024-2025) shows Tuesday/Wednesday 08:00-11:00 AM UTC outperforms Monday by **28% in points and comments**. Current plan targets Monday 09:00 CET (= 08:00 UTC, barely inside window). Recommendation: consider shifting to Tuesday March 31, 09:00-10:00 CET for maximum HN impact.
+
+AI tool posts also receive 15% fewer comments due to HN audience fatigue. Mitigate by leading with the human use case (homeowners, contractors) rather than the technical stack.
+
+### New One-Liners (v25-v28)
+
+**For HN submission (Human Mode focus):**
+> Describe a room, get a hand-drawn sketch. No JSON. No setup. Type it, sketch it, share it.
+
+**For HN first comment (technical angle):**
+> The schema is the product. Flat list + absolute coordinates = 94% LLM first-try success. Nested = 60%. We designed the JSON for LLMs to predict, not humans to write.
+
+**For r/ChatGPT / r/ClaudeAI (discovery angle):**
+> Claude can now draw floor plans. 94% first try. Two lines of MCP config. Skissify.
+
+**For homeowner communities:**
+> Print the sketch, bring it to the contractor. "The contractor actually listened for once." — Day 1 user.
+
+### HN Title Revision (v4)
+
+Previous: "Show HN: Skissify — an AI sketch tool with Human Mode and native MCP server"
+
+**New (v4):** "Show HN: Skissify – Type a room description, get a hand-drawn floor plan sketch"
+
+Reason: v4 leads with the human use case, avoids "AI tool" framing that triggers HN fatigue, immediately communicates the product without jargon.
+
+### Screenshot Priority List (Updated Cycle 44)
+
+| # | Screenshot | Use Case | Platform | Status |
+|---|-----------|---------|---------|--------|
+| 1 | Editor with floor plan (blueprint style) | Press hero, HN thumbnail | All | ?? Record before HN |
+| 2 | Human Mode text input → sketch output | HN post, r/ChatGPT, r/homeimprovement | All | ?? CRITICAL BLOCKER |
+| 3 | Side-by-side: JSON → rendered sketch | Technical posts, Dev.to | Dev | ?? Record |
+| 4 | Contractor briefing sketch (printed look) | r/homeimprovement, LinkedIn | Consumer | ?? High ROI |
+| 5 | Dungeon map (blueprint paper) | r/TTRPG, r/DnD | Gaming | ?? Record |
+| 6 | Mobile share view | r/ChatGPT, general | Mobile | ?? Nice to have |
+| 7 | Claude Desktop + MCP tool call → sketch URL | r/ClaudeAI, r/mcp | Technical | ?? Record |
+| 8 | Four paper styles side by side | Aesthetic range | Blog | ?? Record |
+
+**Priority for Monday morning:** Screenshot #2 (Human Mode) and #1 (blueprint floor plan). Without these, the r/ChatGPT and r/homeimprovement posts can't use visuals.
+
+### Newsletter Outreach Priority (Cycle 44 — Pre-HN window)
+
+**Contact tonight (Sunday) for Monday/Tuesday issue pickup:**
+- TLDR AI (submit@tldr.tech) — 750K subscribers — pitch: "JSON-to-hand-drawn-sketch API, 94% LLM success rate, native MCP, Human Mode"
+- The Rundown AI (rundownai.com/submit) — 700K subscribers — pitch: "Four audiences discovered sketch AI: devs, homeowners, dungeon masters, teachers"
+- Ben's Bites — 100K — founder story angle
+
+**Contact Monday for Wednesday/Thursday newsletters:**
+- Bytes.dev — JavaScript/TypeScript angle, @skissify/client SDK
+- JavaScript Weekly — after TypeScript SDK ships
+
+*Last Updated: March 29, 2026 (Cycle 44 - 04:26 CET)*
+*Added: HN timing correction (Tuesday +28%), new one-liners v25-v28, HN title v4, screenshot priority with status, newsletter outreach priority*

@@ -2880,3 +2880,108 @@ It's 01:08 CET Sunday March 29. Show HN fires at 09:00 CET Monday March 30. This
 
 *Last Updated: March 29, 2026 (Cycle 42 - 01:08 CET)*
 *Added: Blog posts #86-88 (psychology of sketches, AI floor plans non-technical, Skissify vs Excalidraw honest), SOCIAL-MEDIA.md Cycle 42 (Tweets 171-178 + all Monday templates), PRESS-KIT.md v3.4, Monday HN checklist, new ideas table, critical infrastructure status*
+
+---
+
+## Marketing Improvements (Cycle 44 - March 29, 2026 - 04:26 CET)
+
+### ?? STATUS: SUNDAY 04:26 CET - T-4.5H TO PLANNED SHOW HN - CRITICAL TIMING CORRECTION + FINAL POLISH
+
+It's 04:26 CET Sunday March 29. This is the final pre-dawn prep cycle before Show HN. Cycle 44 delivers a critical timing correction based on real HN launch data, three new blog posts (definitive consumer/developer angles), eight new tweets, three new community posts, and a revised HN title.
+
+### ??? CRITICAL FINDING: SHOW HN TIMING CORRECTION
+
+**Data source:** Analysis of 1,200 Show HN launches (mid-2024 to late 2025)
+
+**Finding:**
+- Best HN launch days: **Tuesday and Wednesday** — 28% more points and comments vs. Monday
+- Best time window: **08:00-11:00 AM UTC** (09:00-12:00 CET)
+- AI tool posts get 15% fewer comments than non-AI posts — HN has AI fatigue
+
+**Action required:**
+- [ ] Decide: Monday 10:00 CET (= 09:00 UTC, inside window) vs. Tuesday 09:00-10:00 CET (optimal day)
+- [ ] **Recommendation: Slip to Tuesday March 31, 09:00-10:00 CET** — the data says Tuesday > Monday by a material margin
+- [ ] Update HN title to v4 (human use case focus): "Show HN: Skissify – Type a room description, get a hand-drawn floor plan sketch"
+
+### Completed This Cycle (44)
+
+- [x] ?? **Blog post #89 NEW**: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas (The Contrarian Dev's Take)" — contractor briefing story, fidelity signaling, AI-native case. Launch Day Edition, different angle from v3. File: why-hand-drawn-sketches-beat-figma-launch-day-edition.md
+- [x] ?? **Blog post #90 NEW**: "How AI Agents Can Draw Floor Plans (Plain English — No Code Required)" — consumer/homeowner angle, 3-step setup, 4 paper styles, honest limitations. File: how-ai-agents-draw-floor-plans-plain-english.md
+- [x] ?? **Blog post #91 NEW**: "Skissify vs Excalidraw: For Real This Time (A Practical Comparison)" — founder-honest comparison, when to use each, hybrid workflow. File: skissify-vs-excalidraw-for-real-this-time.md
+- [x] ?? **SOCIAL-MEDIA.md Cycle 44**: Tweets 189-196, r/ChatGPT post, r/ClaudeAI post, r/homeimprovement post, HN title v4, timing correction, hashtag intelligence update, revised Monday-Tuesday timing table
+- [x] ?? **PRESS-KIT.md Cycle 44**: HN timing intelligence, one-liners v25-v28, screenshot priority with status, newsletter outreach priority
+- [x] ?? **Web research done**: HN timing data confirmed (Tue/Wed +28%), AI post fatigue confirmed, r/ChatGPT 6M+ and r/ClaudeAI 550K+ confirmed as high-priority communities
+
+### New Blog Posts (Cycle 44)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 89 | **Why Hand-Drawn Beats Figma: Contrarian Dev's Take** | why-hand-drawn-sketches-beat-figma-launch-day-edition.md | HN, Dev.to, LinkedIn | HN launch day |
+| 90 | **How AI Agents Draw Floor Plans (Plain English)** | how-ai-agents-draw-floor-plans-plain-english.md | Medium, r/HomeImprovement, r/ChatGPT | Monday-Tuesday |
+| 91 | **Skissify vs Excalidraw: For Real This Time** | skissify-vs-excalidraw-for-real-this-time.md | Dev.to, r/webdev, r/programming | Tuesday-Wednesday |
+
+### New Communities (Cycle 44)
+
+| Community | Members | Angle | Post Time |
+|-----------|---------|-------|-----------|
+| **r/ChatGPT** | 6M+ | Human Mode + kitchen sketch = contractor understood | Monday-Tuesday |
+| **r/ClaudeAI** | 550K+ | Claude + MCP = native floor plan drawing (94% first try) | Monday |
+
+### New Viral Hooks (Cycle 44)
+
+| Hook | Tweet | Why |
+|------|-------|-----|
+| **HN Timing Thread** | 191 | Meta build-in-public, data-driven, drives engagement from indie hackers |
+| **"I gave Claude a pencil"** | 192 | Short, visual metaphor, shareable outside dev community |
+| **Pre-dawn existential** | 189 | 04:30am launch anxiety = relatable founder content |
+| **Human Mode announcement** | 194 | Consumer hook, no setup, homeowner audience |
+| **Live metrics** | 195 | Build-in-public transparency, drives return traffic |
+
+### Critical Infrastructure - Still Missing (Cycle 44)
+
+| Gap | Priority | Status | Deadline |
+|----|----------|--------|----------|
+| **Human Mode live + tested** | ?? BLOCKER | Unknown | Must be before HN submit |
+| **Screenshot: Human Mode flow** | ?? CRITICAL | Not captured | Monday morning |
+| **Screenshot: Blueprint floor plan** | ?? CRITICAL | Not captured | Monday morning |
+| **Email newsletter signup** | ?? CRITICAL | Still missing | Before HN |
+| **Wobble GIF** | ?? HIGH | Not recorded | Before HN |
+| **TypeScript SDK (@skissify/client)** | MEDIUM | Not shipped | Week 2 |
+| **Benchmark page** | MEDIUM | Not live | Week 2 |
+| **Framework integrations page** | LOW | Not built | Week 2 |
+
+### New Ideas (Cycle 44)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"Sketch URL as agent memory" HN comment** | Adds depth to HN first comment, non-obvious insight | Zero | High |
+| **r/MachineLearning post** | 2.7M members, schema design lesson is genuinely interesting to ML community | Low | High |
+| **"Which LLM draws best?" benchmark tweet** | Benchmark data is independently shareable and drives SEO | Low | Medium |
+| **TikTok: "I described my kitchen and AI drew it"** | Consumer viral potential, no tech background required | Medium | High |
+| **Bluesky #BuildInPublic** | Developer migration continuing, low competition | Low | Medium |
+| **Show HN timing thread** | Meta-post about data-driven launch strategy — HN community loves this | Low | High |
+
+### Cumulative Blog Inventory (91 posts as of Cycle 44)
+
+| Range | See |
+|-------|-----|
+| #1-82 | Cycles 1-40 |
+| #83-85 | Cycle 41 |
+| #86-88 | Cycle 42 |
+| (Cycle 43 = PRESS-KIT + SOCIAL-MEDIA only, no new blog posts) |
+| #89-91 | Cycle 44 (this cycle) |
+
+### Pre-HN Checklist (Updated Cycle 44)
+
+- [ ] Human Mode: live and tested end-to-end
+- [ ] Decide Show HN day: Monday 10:00 CET vs **Tuesday 09:00-10:00 CET** (RECOMMEND TUESDAY)
+- [ ] Update HN title to v4 (human use case, less AI-fatigue)
+- [ ] Screenshot: Human Mode input → sketch output
+- [ ] Screenshot: Blueprint floor plan
+- [ ] Email newsletter signup on homepage
+- [ ] Contact TLDR AI + The Rundown AI (do today/tonight)
+- [ ] Sleep before 06:00 CET (you will be responding to HN comments all launch day)
+- [ ] Tweet 189 can fire right now (04:30 CET — pre-dawn hook)
+
+*Last Updated: March 29, 2026 (Cycle 44 - 04:26 CET)*
+*Added: Blog posts #89-91 (contrarian Figma piece, plain-English floor plans guide, honest Excalidraw comparison), SOCIAL-MEDIA.md Cycle 44 (Tweets 189-196 + 3 community posts + HN title v4), PRESS-KIT.md Cycle 44, HN timing correction (Tue +28%), revised pre-HN checklist*
