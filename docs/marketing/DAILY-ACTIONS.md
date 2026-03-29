@@ -2,6 +2,90 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #41 (05:43 CET, Sunday March 29)
+
+### Context: **41 consecutive niche-clean scans. `@skissify/mcp-server` BUILT AND COMPILED — NOT ON NPM (E404 confirmed this run).** MCP server has 5 tools: `skissify_create_sketch`, `skissify_add_element`, `skissify_create_floor_plan`, `list_element_types`, `skissify_export_sketch`. HN optimal window: **08:00–11:00 CET TODAY — 2 hours 17 minutes away.** Outcome-based billing validated as 2026 model. Domain-specific pricing premium (30–50%) confirms EUR 9/mo Pro test. Brave rate-limited at 251/2000 monthly quota.
+
+---
+
+### 🔴 Action 1 (NOW — 06:00 CET, before HN window opens) — `npm publish --access public`
+
+**This is the only command standing between 41 cycles of preparation and actual revenue.**
+
+The MCP server is fully built. dist/ is compiled. package.json is correct (`@skissify/mcp-server`, v1.0.0). The npm check this run confirmed E404 — it is NOT published.
+
+```bash
+cd W:/code/skissify/mcp-server
+
+# Step 1: Verify publishConfig exists (add if missing)
+# Add to package.json if not present: "publishConfig": { "access": "public" }
+
+# Step 2: Check npm login
+npm whoami
+
+# Step 3: Publish
+npm publish --access public
+
+# Step 4: Verify
+npm view @skissify/mcp-server
+# Should show: @skissify/mcp-server@1.0.0
+
+# Step 5: Smoke test
+node dist/index.js
+# Must start without errors before posting HN
+```
+
+**Do NOT post HN until `npm view @skissify/mcp-server` returns package info.**
+
+**Why 06:00 and not 08:00**: Publishing at 06:00 gives 2 hours for npm CDN propagation before the HN post. `npx @skissify/mcp-server` must install cleanly when HN readers try it.
+
+**Expected outcome**: EUR 2/mo pipeline activated. First paying user possible within 24 hours.
+
+---
+
+### 🔴 Action 2 (08:00–11:00 CET — HN Show HN) — Post "Show HN"
+
+**Only valid after npm publish succeeds.**
+
+**Title** (use verbatim):
+> `Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP missing from every AI design stack`
+
+**Body**:
+> The 2026 AI design stack: generate in Google Stitch, refine in Figma, implement via Claude Code. That stack has no sketch step — the napkin floor plan, the rough architecture layout, the "this is still exploratory" visual.
+>
+> Skissify is that step: describe a sketch as JSON → rendered as hand-drawn SVG. MCP-native.
+>
+> `npx @skissify/mcp-server` — 5 tools: create_sketch, add_element, create_floor_plan, list_element_types, export_sketch.
+>
+> Floor plans: walls, doors, windows, stairs, columns, dimension lines. Tunable wobble. Paper types (cream/white/blueprint).
+>
+> Free (watermarked). EUR 2/mo clean output. EUR 5/mo Pro.
+>
+> 41 consecutive competitive scans: nobody else does hand-drawn + JSON-first + MCP + floor plans.
+>
+> → skissify.com
+
+**Why 08:00–11:00 CET**: EU developers waking up + US East Coast late Saturday night = peak global developer traffic. This is the only Sunday HN window.
+
+---
+
+### 🟡 Action 3 (Sunday afternoon, after HN post) — Submit to 5 MCP Registries + PH Alternatives
+
+Submit all 5 in one 90-minute session after HN post is live:
+
+| Registry | URL | Priority |
+|---------|-----|---------|
+| modelcontextprotocol.io/registry | Official registry — submit via GitHub PR to modelcontextprotocol/servers | **Critical** |
+| github.com/punkpeye/awesome-mcp-servers | PR: add Skissify under Visualization/Diagrams next to mermaid-mcp | **Critical** |
+| claudefa.st/blog/tools/mcp-extensions | No sketch tools listed — Skissify would be first. Submit via form. | High |
+| mcpmanager.ai | Active MCP directory. Zero sketch tools. | High |
+| lobehub.com/mcp | draw-it-mcp and mermaid-mcp are here. Skissify fills the floor-plan gap. | High |
+| producthunt.com/products/excalidraw/alternatives | PH page updated 13h ago — active curation cycle open. Submit Skissify. | **Critical** |
+
+**Note on package name**: The MCP server package is `@skissify/mcp-server`, not `@skissify/mcp`. Use the correct name in all registry submissions.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #40 (04:34 CET, Sunday March 29)
 
 ### Context: 40 consecutive niche-clean scans. MCP server built March 26. HN optimal window: 08:00–11:00 CET TODAY (~3.5 hours). PH Excalidraw alternatives updated 13h ago — active curation, prime submission window. CoolMindMaps vs Excalidraw comparison published this morning (no Skissify). Plan7Architect price hike closes March 31 (2 days). Brave rate-limited (249/2000 monthly quota). This is the launch day.

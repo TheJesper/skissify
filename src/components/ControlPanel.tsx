@@ -42,6 +42,19 @@ interface ControlPanelProps {
   renderStyle?: RenderStyle;
   /** Called when the user changes the render style */
   onRenderStyle?: (s: RenderStyle) => void;
+  /**
+   * Per-element font override for the first selected text/dim element.
+   * undefined if nothing is selected or none of the selected elements are text/dim.
+   * null means the selected element has no per-element override (uses sketch default).
+   */
+  selectedFontFamily?: string | null;
+  /**
+   * True when any selected element is a text or dim type
+   * (controls whether the per-element font row is shown).
+   */
+  hasTextOrDimSelected?: boolean;
+  /** Called when the user sets a per-element font override on selected text/dim elements */
+  onFontFamilySelected?: (fontFamily: string | undefined) => void;
   /** Whether any selected element is locked */
   selectedLocked?: boolean;
   /** Called when the user toggles lock on selected elements */
@@ -116,6 +129,9 @@ export default function ControlPanel({
   onFillColorSelected,
   renderStyle,
   onRenderStyle,
+  selectedFontFamily,
+  hasTextOrDimSelected,
+  onFontFamilySelected,
   selectedLocked,
   onToggleLock,
   onReorder,
@@ -489,6 +505,42 @@ export default function ControlPanel({
                     className="w-6 h-5 rounded cursor-pointer border border-[#93a1a1] bg-[#fdf6e3] p-0"
                     title="Pick custom fill color"
                   />
+                </div>
+              </div>
+            )}
+            {/* Per-element font override — shown when text or dim elements are selected */}
+            {hasTextOrDimSelected && onFontFamilySelected && (
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <label className="text-[10px] text-[#657b83] uppercase tracking-wide">
+                    Element font
+                  </label>
+                  {selectedFontFamily != null && (
+                    <button
+                      onClick={() => onFontFamilySelected(undefined)}
+                      title="Remove per-element font override (use sketch default)"
+                      className="text-[9px] text-[#cb4b16] hover:text-[#dc322f] transition-colors"
+                    >
+                      ✕ clear
+                    </button>
+                  )}
+                </div>
+                <div className="grid grid-cols-3 gap-1">
+                  {FONT_OPTIONS.map((f) => (
+                    <button
+                      key={f.key}
+                      onClick={() => onFontFamilySelected(f.key)}
+                      title={`Set font to ${f.label}`}
+                      className={`px-1 py-1 rounded text-[10px] font-medium transition-all border truncate ${
+                        selectedFontFamily === f.key
+                          ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#073642]"
+                          : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 text-[#657b83]"
+                      }`}
+                      style={{ fontFamily: f.css }}
+                    >
+                      {f.label}
+                    </button>
+                  ))}
                 </div>
               </div>
             )}

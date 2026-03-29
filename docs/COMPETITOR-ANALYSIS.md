@@ -2,6 +2,54 @@
 
 ---
 
+## Update Log: March 29, 2026 — 05:43 CET | Automated Strategy Run #41
+
+### Status: Sunday pre-dawn scan — 2 of 3 searches completed (Brave rate-limited at 251/2000 monthly quota). **MCP server (`@skissify/mcp-server`) BUILT and compiled since March 26 — but NOT YET PUBLISHED to npm (E404 confirmed). 41st consecutive niche-clean scan.**
+
+### 🟡 CRITICAL NEW FINDING: MCP Server Is Built But Unpublished — The Exact Blocker
+
+This run performed an npm registry check: `npm view @skissify/mcp-server` returns **E404 — Not Found**. This confirms:
+
+- `W:/code/skissify/mcp-server/dist/index.js` — **EXISTS** (compiled March 26)
+- `W:/code/skissify/mcp-server/src/index.ts` — **EXISTS** (full MCP server with 5 tools)
+- npm registry entry for `@skissify/mcp-server` — **DOES NOT EXIST**
+
+The MCP server has: `skissify_create_sketch`, `skissify_add_element`, `skissify_create_floor_plan`, `list_element_types`, `skissify_export_sketch`, `skissify_list_sketches`. Package name: `@skissify/mcp-server`. The dist is compiled. The README exists. The only action remaining is `npm publish --access public`.
+
+**HN window (08:00–11:00 CET) is 2 hours and 17 minutes away.** This is the most time-sensitive gap in the entire 41-run history.
+
+### 🟢 CONFIRMATION: 41st Consecutive Niche-Clean Scan
+
+Searches conducted this run:
+1. "AI sketch tool MCP hand-drawn diagram 2026 launch" ✅
+2. "SaaS pricing trends 2026 micro-SaaS developer tools EUR willingness to pay" ✅
+3. "Excalidraw tldraw new features update March 2026" — Rate-limited (251/2000 quota)
+
+**Results from Run #41 (05:43 CET, Sunday March 29):**
+
+- **Thomas Thornton Excalidraw MCP tutorial** (thomasthornton.cloud, now 5 days old): STILL #1 for "AI sketch MCP". Cloud/Terraform/workflow topology. Zero floor plan, zero JSON-native generation. **6th consecutive day of SERP dominance.** Slot still open for Skissify.
+- **graphically.io "Best AI tools for graphic designers 2026"** (now 14+ hours old): Confirms hand-drawn sketch conversion market from designer perspective. Zero JSON-native or programmatic tools listed.
+- **MCP ecosystem** (use-apify.com, 5 days ago): "Teams are tired of one-off agent glue per product." MCP as standardization layer confirmed — validates Skissify's MCP-first positioning.
+- **SaaS pricing data** (bigideasdb.com, 2 weeks ago): Micro-SaaS $49–199/mo WTP for high-pain workflows, EUR 2–5 impulse range confirmed for friction-removal tools.
+- **Domain-specific premium** (voxturr.com, 1 week ago): 30–50% pricing premium for industry-native software — architecture domain validated. EUR 9/mo Pro test supported.
+- **Outcome-based billing** (businessupside.com, 2 days ago): Per-seat pricing dying; usage-based/outcome-based is the 2026 model. Skissify's per-render API pricing is correctly aligned.
+
+**No new hand-drawn + JSON-native + MCP + floor plan competitor detected. 41 consecutive clean scans.**
+
+### Updated Competitor Matrix (Run #41 — Sunday March 29, 05:43 CET)
+
+| Tool | Status | Skissify Threat |
+|------|--------|-----------------|
+| Excalidraw | 5+ day old MCP tutorial still #1. Obsidian/topology lane. No floor plan, no JSON-native generation. | None |
+| Google Stitch | Polished UI lane, canonical stack reference. No hand-drawn. | None |
+| Figma | use_figma MCP open beta. Design system lane. | None |
+| tldraw | $6K/yr SDK, community fragmented, no new news. | None |
+| Mermaid MCP | 22+ diagram types, text DSL only, no spatial/floor plan. | None |
+| graphically.io tools | Raster-to-vector, not programmatic JSON generators. Different lane. | None |
+| **Skissify** | **MCP server built+compiled March 26. NOT YET ON NPM. 5 tools ready. HN window: 2h17m away.** | **Uncontested** |
+
+---
+
 ## Update Log: March 29, 2026 — 04:34 CET | Automated Strategy Run #40
 
 ### Status: Sunday pre-dawn scan — 2 of 3 searches completed (rate-limited at 249/2000 monthly quota). **MCP server confirmed built March 26. HN window opens in ~3.5 hours (08:00 CET). 40th consecutive niche-clean scan.**

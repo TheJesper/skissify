@@ -131,6 +131,7 @@ function EditorInner({
     colorSelected,
     strokeWidthSelected,
     fillColorSelected,
+    fontFamilySelected,
     rotateSelected,
     redraw,
     importSketch,
@@ -442,6 +443,28 @@ function EditorInner({
     return (el as unknown as Record<string, unknown>).fillColor as string | undefined;
   })();
 
+  // True if any selected element is a text or dim type
+  const hasTextOrDimSelected: boolean = (() => {
+    if (selectedElements.size === 0) return false;
+    return [...selectedElements].some((i) => {
+      const el = sketch.elements[i];
+      return el?.type === "text" || el?.type === "dim";
+    });
+  })();
+
+  // Per-element fontFamily of the first selected text/dim element (null = no override)
+  const selectedFontFamily: string | null | undefined = (() => {
+    if (!hasTextOrDimSelected) return undefined;
+    for (const i of selectedElements) {
+      const el = sketch.elements[i];
+      if (el?.type === "text" || el?.type === "dim") {
+        const raw = (el as unknown as Record<string, unknown>).fontFamily;
+        return typeof raw === "string" ? raw : null;
+      }
+    }
+    return undefined;
+  })();
+
   // True if ANY selected element is locked
   const selectedLocked: boolean = (() => {
     if (selectedElements.size === 0) return false;
@@ -497,6 +520,8 @@ function EditorInner({
             selectedColor={selectedColor}
             selectedStrokeWidth={selectedStrokeWidth}
             selectedFillColor={selectedFillColor}
+            selectedFontFamily={selectedFontFamily}
+            hasTextOrDimSelected={hasTextOrDimSelected}
             selectedLocked={selectedLocked}
             onPaper={setPaper}
             onTool={setTool}
@@ -512,6 +537,7 @@ function EditorInner({
             onColorSelected={colorSelected}
             onStrokeWidthSelected={strokeWidthSelected}
             onFillColorSelected={fillColorSelected}
+            onFontFamilySelected={fontFamilySelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
             onAlign={alignSelected}
@@ -621,6 +647,8 @@ function EditorInner({
             selectedColor={selectedColor}
             selectedStrokeWidth={selectedStrokeWidth}
             selectedFillColor={selectedFillColor}
+            selectedFontFamily={selectedFontFamily}
+            hasTextOrDimSelected={hasTextOrDimSelected}
             selectedLocked={selectedLocked}
             onPaper={setPaper}
             onTool={setTool}
@@ -636,6 +664,7 @@ function EditorInner({
             onColorSelected={colorSelected}
             onStrokeWidthSelected={strokeWidthSelected}
             onFillColorSelected={fillColorSelected}
+            onFontFamilySelected={fontFamilySelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
             onAlign={alignSelected}

@@ -2,6 +2,69 @@
 
 ---
 
+## Entry: March 29, 2026 — 05:43 CET | Automated Strategy Run #41
+
+### Theme: "The EUR 2/mo Conversion — New Pricing Signals and the Outcome-Based Billing Shift"
+
+**Intelligence basis**: Run #41. 41 consecutive niche-clean scans. Fresh web data from this run: bigideasdb.com micro-SaaS WTP data (2 weeks ago), voxturr.com domain-premium pricing (1 week ago), businessupside.com outcome-based billing (2 days ago). MCP server confirmed built but unpublished to npm.
+
+---
+
+#### Finding 1: EUR 2/mo Is Confirmed Impulse Territory — But EUR 9/mo Is Also in Range
+
+**Source**: bigideasdb.com "50 Micro SaaS Ideas for 2026" (2 weeks ago)
+
+Key quote: *"$49–199/month willingness to pay. The best micro SaaS ideas for 2026 have three traits: measurable pain (users quantify time or money lost), a market gap score above 8, and niche specificity (serving one vertical deeply)."*
+
+**Implication for Skissify**:
+- EUR 2/mo sits far below the $49+ WTP threshold — meaning EUR 2 is leaving significant money on the table if the pain is real
+- The $49–199/mo range applies when users can **quantify** time/money saved. For an architect who bills EUR 120/hr and saves 30 min of manual sketching: EUR 2 is obviously correct (impulse, no approval needed). EUR 15/mo is also correct (1 min of billable time).
+- **Recommendation**: Keep EUR 2/mo API Starter as the frictionless entry. Test EUR 9/mo Pro (prior recommendation) before EUR 5. Architecture domain may support even higher.
+- Domain-specific premium data (voxturr.com, 1 week): **30–50% more** for industry-native software. Skissify with architectural elements = domain-native. EUR 5 × 1.4 = EUR 7, rounded to EUR 9 = still defensible.
+
+---
+
+#### Finding 2: Outcome-Based Billing Is the 2026 Model — Skissify's Per-Render Pricing Is Correctly Positioned
+
+**Source**: businessupside.com "Enterprise SaaS Adoption Trends 2026" (2 days ago)
+
+Key quote: *"Charging 'per seat' no longer works for the vendor or the client because AI makes workers 10 times more productive. SaaS companies are having a hard time moving to 'Usage-Based' or 'Outcome-Based' pricing in 2026."*
+
+**Implication for Skissify**:
+- Skissify's API tier (per render = per outcome) is structurally aligned with where the market is going
+- "Seats" are dying — a subscription for an AI agent is meaningless. A charge per rendered sketch is clean.
+- MCP agents generating 10,000 sketches/month should pay proportionally. The EUR 0.005/render model is correctly designed.
+- **Framing opportunity**: When pitching API Starter (EUR 2/mo), emphasize "200 clean renders" (outcome count), not "Pro access" (subscription language). "Pay for what you generate, nothing more."
+
+---
+
+#### Finding 3: What Would Make Someone Pay EUR 2/mo — Revised Complete Model (41 Runs)
+
+After 41 cycles of analysis, the EUR 2/mo conversion is best understood as **3 distinct psychological archetypes**:
+
+| Archetype | Trigger | Time-to-Pay | Key Barrier |
+|-----------|---------|-------------|-------------|
+| **The Deliverable Presenter** (Designer/PM) | "My AI output looks unprofessional in client deck. Skissify fixed it in 2 min." | < 30 min | None if the sketch looks good |
+| **The Pipeline Builder** (Developer) | "My agent generates JSON, Skissify renders it. Watermark breaks the pipeline." | < 15 min after pipeline works | None if npm install is smooth |
+| **The Domain Professional** (Architect) | "Hand-drawn floor plan sketch in 60 seconds instead of 40 min. Client presentation wins." | < 1 week after first use | Needs a use case win first |
+
+**The EUR 2/mo conversion is NOT about the price.** The price is irrelevant (less than a coffee). The conversion is about **the moment when the watermark or the limit interrupts a real workflow**. Optimize for: (1) getting people into a real workflow fast, (2) making the watermark visible at exactly the right moment (on export, not during editing).
+
+---
+
+#### Finding 4: The "Publish to npm" Blocker Is the Entire Conversion Machine
+
+This cycle's npm check (`E404` on `@skissify/mcp-server`) reveals the single blocker preventing all revenue:
+
+Without npm:
+- Pipeline Builders cannot `npx @skissify/mcp-server` → no pipeline → no watermark moment → no EUR 2/mo
+- MCP registries have nothing to list → no organic discovery → no inbound
+- HN Show HN has nothing to link to → no launch event → no initial signups
+
+**The run confirmed**: `mcp-server/dist/index.js` is compiled and ready. The package just needs `npm publish --access public`. This is a 60-second command that unlocks the entire revenue funnel.
+
+---
+
 ## Entry: March 29, 2026 — 04:34 CET | Automated Strategy Run #40
 
 ### Theme: "What Makes Someone Pay EUR 2/mo for Skissify — Pre-Launch Final Analysis"

@@ -413,6 +413,33 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [selectedElements, pushHistory]
   );
 
+  /**
+   * Set the fontFamily override on all selected text / dim elements.
+   * Pass undefined to remove the per-element override (falls back to sketch.textFont / sketch.dimFont).
+   */
+  const fontFamilySelected = useCallback(
+    (fontFamily: string | undefined) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          if (el.type !== "text" && el.type !== "dim") return el;
+          if (fontFamily === undefined) {
+            const { fontFamily: _removed, ...rest } = el as typeof el & { fontFamily?: string };
+            void _removed;
+            return rest as SketchData["elements"][number];
+          }
+          return { ...el, fontFamily };
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
   const rotateSelected = useCallback(
     (degrees: number) => {
       if (selectedElements.size === 0) return;
@@ -819,6 +846,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     selectAll,
     strokeWidthSelected,
     fillColorSelected,
+    fontFamilySelected,
     setRenderStyle,
     setSnapGrid,
     setMetadata,
