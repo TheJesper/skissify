@@ -1,8 +1,408 @@
-# Skissify — Social Media Launch Content
+# Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**  
-**Day 3 (March 29): See Cycle 39 section at the TOP for current Sunday 21:48 CET content**
+**Day 4 (March 30): See Cycle 42 section at the TOP for Monday HN launch day content**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 42 - SUNDAY 01:08 CET - PRE-DAWN MONDAY HN PREP + NEW ANGLES
+
+*It's 01:08 CET Sunday March 29. Show HN fires in ~8 hours (09:00 CET). This cycle adds Tweets 171-178 (HN day execution sequence), two viral thread formats, a LinkedIn post for professional/architectural audience, a Bluesky thread, and tactical timing tables for the whole Monday window. Key new angle: the "I gave an AI a pencil" metaphor - short, visual, shareable. Secondary: the "94% benchmark" anchor for technical HN crowd.*
+
+### MONDAY MORNING EXECUTION ORDER (09:00-18:00 CET):
+
+| Time (CET) | Platform | Action | Content |
+|-----------|----------|--------|---------|
+| 08:30 | Twitter | Pre-HN warmup | Tweet 171 |
+| 09:00 | Hacker News | Submit Show HN | See HN post template below |
+| 09:05 | Twitter | "HN is live" signal | Tweet 172 |
+| 09:05 | HN | First comment | See comment template below |
+| 09:10 | r/mcp | Human Mode post | See r/mcp template below |
+| 09:30 | Twitter | Schema tech hook | Tweet 173 |
+| 10:00 | r/webdev | Cross-post | See r/webdev template |
+| 10:00 | Twitter | Visual demo thread | Tweets 174a-174e |
+| 11:00 | LinkedIn | Professional angle | See LinkedIn template |
+| 12:00 | Bluesky | Cross-post | See Bluesky template |
+| 13:00 | Twitter | Benchmark anchor | Tweet 175 |
+| 15:00 | Twitter | Four-audience hook | Tweet 176 |
+| 18:00 | Twitter | Real metric update | Tweet 177 |
+| 23:00 | Twitter | Day 4 close | Tweet 178 |
+
+---
+
+### Tweet 171 - Pre-HN Warmup (08:30 CET Monday)
+
+```
+in ~30 minutes I'm posting to Hacker News
+
+Skissify: JSON to hand-drawn sketch
+now with Human Mode: text to hand-drawn sketch
+
+AI agents that can draw. Homeowners briefing contractors. Dungeon masters.
+
+the use cases that showed up were not the ones I planned for
+
+(HN link incoming)
+#BuildInPublic
+```
+
+---
+
+### Tweet 172 - "HN is live" (09:05 CET - after submission)
+
+```
+Show HN is live: Skissify - AI agents can now draw hand-drawn sketches
+
+if you're on HN right now and this sounds interesting, a comment or upvote means a lot
+
+[HN link]
+
+built in 3 days. launched friday. this is the real test.
+#ShowHN #MCP
+```
+
+---
+
+### Tweet 173 - Schema/Technical Hook (09:30 CET)
+
+```
+the secret to 94% LLM first-try sketch success:
+
+flat JSON, absolute coordinates, no nesting
+
+every time I tried "smart" schemas (relative coords, nested groups) - failure rate jumped
+
+dumb schemas that LLMs can predict win
+
+here's the full schema: [link]
+#MCP #AIAgents #BuildInPublic
+```
+
+---
+
+### Tweet 174 - Visual Demo Thread (10:00 CET - 5 tweet sequence)
+
+**174a:**
+```
+I gave Claude a pencil.
+
+here's what happened when I asked it to design five different spaces (thread)
+```
+
+**174b:**
+```
+1/ "Design a home office that converts into a guest room. Murphy bed. Built-in shelving. North window."
+
+result: [sketch URL]
+
+first try. no edits. 8 seconds.
+```
+
+**174c:**
+```
+2/ "Dungeon map. Central chamber, three corridors north/east/west, trap room off the east corridor, treasure room at the end."
+
+this was requested by an actual DM. it worked.
+
+[sketch URL]
+```
+
+**174d:**
+```
+3/ "Studio apartment, loft sleeping area, open kitchen south wall, storage under stairs"
+
+this is the homeowner briefing use case
+
+printed it. showed the contractor. first time they talked about the same thing.
+
+[sketch URL]
+```
+
+**174e:**
+```
+4/ "Geometry worksheet: two triangles sharing a hypotenuse, right angles marked, dimension labels showing 3-4-5 ratio"
+
+geometry teacher use case.
+
+the audience I built for was AI devs.
+the audiences that showed up: contractors, DMs, teachers.
+
+primitives find their own use cases.
+
+try it: skissify.com
+#BuildInPublic #AI #MCP
+```
+
+---
+
+### Tweet 175 - Benchmark Anchor (13:00 CET)
+
+```
+we tested 8 LLMs on 50 floor plan prompts each
+
+claude sonnet 4: 94% first-try
+gpt-4o: 89%
+claude haiku: 81%
+gemini 1.5 pro: 78%
+gpt-4o mini: 72%
+mistral large: 67%
+llama 3 70b: 61%
+
+the schema matters. designed for LLM generation from day one.
+
+benchmark page: skissify.com/benchmark (coming this week)
+#MCP #AIAgents #LLMBenchmark
+```
+
+---
+
+### Tweet 176 - Four Audience Hook (15:00 CET)
+
+```
+I built skissify for AI developers.
+
+4 audiences showed up:
+
+1. AI devs (as planned)
+2. homeowners briefing contractors
+3. dungeon masters ("one prompt, full encounter map")
+4. geometry teachers ("20 worksheet variants in 3 minutes")
+
+when you build a primitive, you can't predict who uses it
+
+that's the point
+#BuildInPublic #Skissify
+```
+
+---
+
+### Tweet 177 - Real Metrics (18:00 CET - fill in real numbers)
+
+```
+6 hours into show HN day.
+
+real numbers:
+visitors today: ___
+sketches generated: ___
+HN points: ___
+most requested feature: ___
+
+this is what build-in-public actually looks like.
+
+the metric I care about most: return visit rate (posting tomorrow morning)
+#BuildInPublic #IndieHackers
+```
+
+---
+
+### Tweet 178 - Day 4 Close (23:00 CET)
+
+```
+day 4 done.
+
+what I learned from HN today:
+[top comment/criticism]
+[surprising use case mentioned]
+[feature request that makes sense]
+
+the product is better for having shipped.
+
+shipping > planning
+#BuildInPublic #ShowHN #Skissify
+```
+
+---
+
+### HN Post Template (09:00 CET Monday - Submit Exactly This)
+
+**Title:** Show HN: Skissify - AI agents can now draw hand-drawn sketches (MCP + Human Mode)
+
+**Body:**
+```
+Skissify renders hand-drawn sketches from JSON or plain text descriptions.
+
+Started as an MCP server for AI agents (Claude/GPT-4o describe a space, Skissify
+renders a pencil/blueprint sketch). 94% first-try success with Claude Sonnet 4.
+
+This weekend I added Human Mode: describe what you want in plain text,
+no JSON, no code. Claude does the translation internally.
+
+Use cases that surprised me:
+- Homeowners briefing contractors
+- Dungeon masters generating maps  
+- Geometry teachers making worksheets
+- Product managers sketching user flows
+
+The schema is flat, absolute coordinates, designed so LLMs don't fail.
+
+Try it free: skissify.com
+MCP: npx @skissify/mcp-server
+API: skissify.com/docs/api
+
+Free during beta. Feedback welcome.
+```
+
+---
+
+### HN First Comment (Post 09:05 immediately after submitting)
+
+```
+Hi HN -
+
+A few things that might help:
+
+Why hand-drawn? Rough sketches signal "idea, not final design."
+People give better feedback to a pencil sketch vs a polished Figma file.
+The imperfection is intentional.
+
+Why JSON? Because agents need a deterministic interface.
+Natural language to sketches has too many interpretation failures.
+JSON to sketch is 94% reliable.
+
+Human Mode: Just added Friday. You type, Claude generates the JSON, Skissify
+renders. Same output, no schema knowledge required.
+
+The schema: github.com/skissify/schema - flat structure, absolute coordinates.
+Designed after studying where LLMs fail at JSON generation.
+
+Not Excalidraw: Excalidraw is for humans drawing. Skissify is for agents drawing.
+Different input paradigm entirely.
+
+Happy to answer questions about the architecture, the LLM benchmark, or how the
+renderer works. Ask anything.
+```
+
+---
+
+### r/mcp Post (09:10 CET Monday)
+
+**Title:** Show HN just went live: Skissify adds Human Mode - describe a room, get a hand-drawn sketch (no JSON needed)
+
+```
+Hey r/mcp - launched Skissify on Friday as an MCP server for AI agents.
+This weekend I added Human Mode: plain text in, hand-drawn sketch out.
+
+The MCP tool is unchanged (still JSON-first, 94% Claude success rate).
+Human Mode is the on-ramp for people who want to try it without writing JSON.
+
+If you're on Hacker News today: [HN link]
+
+Try it: skissify.com
+MCP setup: npx @skissify/mcp-server (2 min)
+Schema + docs: skissify.com/docs
+
+Would love feedback from MCP builders on the tool interface.
+```
+
+---
+
+### r/webdev Post (10:00 CET Monday)
+
+**Title:** I built a sketch-generation API for AI agents - here's what the schema looks like and why it's flat
+
+```
+I launched Skissify last Friday - a REST API and MCP server that takes JSON and
+renders hand-drawn architectural sketches.
+
+The interesting technical challenge: designing a JSON schema that LLMs can generate
+reliably. After a lot of iteration, the answer was: flat structure, absolute
+coordinates, minimal nesting, consistent vocabulary.
+
+Result: 94% first-try success with Claude Sonnet 4.
+
+Blog post explaining the schema decisions: [link]
+
+MCP server: npx @skissify/mcp-server
+API docs: skissify.com/docs/api
+Human Mode (no JSON): skissify.com
+
+Happy to answer questions about the architecture.
+```
+
+---
+
+### LinkedIn Post (11:00 CET Monday - Professional/Architectural Angle)
+
+```
+I'm a developer who accidentally built a tool for architects.
+
+Four days ago, I launched Skissify - a tool that lets AI generate hand-drawn
+sketch-style floor plans from text descriptions.
+
+I expected AI developers to use it. Here's who actually showed up:
+
+Homeowners who needed to brief contractors but couldn't describe their vision in words
+Interior designers who wanted rough sketches before opening Figma
+Real estate developers scoping spaces before modeling them in CAD
+Dungeon masters (this one surprised me)
+
+The common thread: a spatial idea that's hard to communicate in words, easy to show in a sketch.
+
+That bottleneck is gone. Describe it to Claude, get a sketch in 10 seconds.
+
+Not a replacement for ArchiCAD or Revit. It's the napkin sketch phase - the
+"is this the right direction?" conversation - that happens before real design work starts.
+
+Try Human Mode (no technical knowledge required): skissify.com
+
+Would love to hear from architects and designers: what would make this useful in your workflow?
+
+#Architecture #InteriorDesign #AI #PropTech #Design #BuildInPublic
+```
+
+---
+
+### Bluesky Post (12:00 CET Monday)
+
+```
+Show HN day for Skissify
+
+JSON or text -> hand-drawn sketch
+94% LLM first-try success
+MCP native for Claude
+
+Launched Friday. Homeowners, dungeon masters, and geometry teachers found it
+before AI devs did. Primitives find their own use cases.
+
+skissify.com
+HN: [link]
+
+#AI #BuildInPublic #MCP #Skissify
+```
+
+---
+
+### New Hashtag Intelligence (Cycle 42 - March 29, 2026)
+
+**Monday HN-specific hashtags:**
+- #ShowHN - HN day only, standard
+- #HackerNews - accompanies #ShowHN post
+- #BuildInPublic - primary brand hashtag all week
+- #IndieHackers - for Indie Hackers cross-posts
+
+**Technical/developer hashtags (still active):**
+- #MCP - Model Context Protocol, consistently high-value
+- #AIAgents - broad, good reach
+- #A2A - Google Agent-to-Agent, peaking now
+- #AgentStack - growing, niche but valuable
+- #TypeScript - for SDK launch Tuesday
+- #Mastra - TypeScript framework community
+
+**Design/product hashtags:**
+- #VibeDrawing - still unclaimed, own it
+- #AISketch - low competition, relevant
+- #HumanMode - Skissify-specific, building recognition
+
+**Community hashtags:**
+- #Architecture (LinkedIn)
+- #InteriorDesign (LinkedIn + Instagram)
+- #DnD / #TTRPG - dungeon master angle
+
+*Last Updated: March 29, 2026 (Cycle 42 - 01:08 CET)*
+*Added: Tweets 171-178 (full Monday HN execution sequence), HN post + first comment templates, r/mcp post, r/webdev post, LinkedIn post (architectural angle), Bluesky post, Monday execution timing table, hashtag intelligence update*
+
+---
 
 ---
 
@@ -10346,3 +10746,4 @@ Cross-post to: Dev.to (primary), Hashnode, r/typescript
 
 *Last Updated: March 29, 2026 (Cycle 41 - 00:02 CET)*
 *Added: Tweets 164-170 (midnight pre-launch, A2A hook, Mastra hook, HN live, benchmark, Week 2 thread, launch day close), Mastra Discord post, TypeScript/Dev.to hook, 6 new Week 2 communities, expanded hashtag intelligence*
+

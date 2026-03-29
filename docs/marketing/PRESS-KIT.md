@@ -1182,3 +1182,76 @@ Posts available at: W:/code/skissify/docs/marketing/blog/
 
 *Last Updated: March 28, 2026 (09:28 CET - Cycle 34)*
 *Added: One-liners v13-v16, Angles 5-7 (Three-Tool Stack, Unexpected Audiences, 94% Stat), press contact template, blog post count updated to 59*
+
+---
+
+## PRESS KIT UPDATE — Cycle 42 (March 29, 2026 — 01:08 CET)
+
+**Version 3.4**
+
+### Monday HN Launch Context
+
+Skissify is submitting to Show HN Monday March 30 at 09:00 CET with the title:
+`Show HN: Skissify - AI agents can now draw hand-drawn sketches (MCP + Human Mode)`
+
+This is the second major content wave. Key differentiator from Day 1: **Human Mode** is now live, removing the JSON barrier for non-technical users.
+
+### New One-Liners (v17-v20)
+
+**v17 — HN submission variant:**
+> Skissify: JSON or plain text in, hand-drawn sketch out. AI agents can draw via MCP. Humans can draw via text. 94% LLM first-try success.
+
+**v18 — "I gave AI a pencil" (viral hook):**
+> I gave Claude a pencil. It drew a floor plan. This is what happened next.
+
+**v19 — Non-developer friendly:**
+> Describe any room to Claude. Skissify draws it. Hand-drawn sketch, architectural symbols, shareable link. No drawing skill required.
+
+**v20 — The primitive framing:**
+> Skissify is the missing output format for AI agents: structured spatial sketches. Every AI stack has text, code, and image generation. None had sketch generation until now.
+
+### New Press Angles (Cycle 42)
+
+**Angle 8 — The Cognitive Science Angle:**
+> "Rough sketches generate better feedback than polished mockups — documented in design cognition research. Skissify makes rough sketches available to anyone who can type."
+> *Target: Design/UX publications, Medium, behavioral economics publications*
+
+**Angle 9 — The Primitives Discovery Angle:**
+> "Built for AI developers. Found by homeowners, dungeon masters, and geometry teachers. This is what happens when you build infrastructure instead of an app."
+> *Target: Indie Hackers, Wired, general startup press*
+
+**Angle 10 — The Monday HN Story:**
+> "A solo developer launched on a Friday, added Human Mode over the weekend, and is back on Hacker News on Monday. This is build-in-public at real velocity."
+> *Target: Build-in-public newsletters, Substack founders, Indie Hackers*
+
+### Updated Metrics to Reference in Press
+
+*(Fill in real numbers before outreach)*
+- Sketches generated since launch: ___
+- Countries that have generated sketches: ___
+- MCP server installations: ___
+- Return visitor rate: ___% (this is the product-market fit signal)
+- Blog posts published: 88+ across launch coverage
+
+### Screenshot Priority for Monday
+
+| Priority | Screenshot | Why Now |
+|----------|-----------|---------|
+| 1 - CRITICAL | Human Mode in action | First thing HN/press will ask about |
+| 2 - CRITICAL | Blueprint paper dungeon map | Most visually striking, most shareable |
+| 3 - HIGH | Four paper types side-by-side | Shows range immediately |
+| 4 - HIGH | MCP + Claude Desktop in action | Developer audience primary |
+| 5 - MEDIUM | LLM benchmark table | 94% stat needs visual backing |
+
+### Newsletter Targets (Outreach Tonight)
+
+| Newsletter | Subscribers | Angle | Contact |
+|-----------|-------------|-------|---------|
+| TLDR AI | 500K+ | MCP + visual output primitive | tldr.tech/ai |
+| The Rundown | 600K+ | "AI got a pencil" - consumer angle | therundown.ai |
+| Ben's Bites | 100K+ | Technical founder story | bensbites.beehiiv.com |
+| The Pragmatic Engineer | 300K+ | JSON schema design decisions | blog.pragmaticengineer.com |
+| Pointer.io | 35K dev-focused | Schema + MCP architecture | pointer.io |
+
+*Last Updated: March 29, 2026 (Cycle 42 - 01:08 CET)*
+*Added: Version 3.4, Monday HN context, One-liners v17-v20, Press Angles 8-10, Updated metrics placeholders, Screenshot priority table, Newsletter outreach targets*

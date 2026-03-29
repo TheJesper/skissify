@@ -2716,3 +2716,85 @@ Key new insight: the return visits metric is the right Day 2 KPI. Signups fluctu
 
 *Last Updated: March 28, 2026 (09:28 CET - Cycle 34)*
 *Added: Blog posts #57-59, r/AgentsOfAI (NEW 50K), r/HomeImprovement (NEW 4.2M), r/Teachers (NEW 380K), r/TTRPG (NEW 320K), Tweets 123-128, LinkedIn post, TikTok script, Mermaid pre-emption angle, return visits KPI framework, 18-item Saturday action table*
+
+---
+
+## Marketing Improvements (Cycle 42 - March 29, 2026 - 01:08 CET)
+
+### STATUS: SUNDAY 01:08 CET - T-8 HOURS TO SHOW HN - FINAL PRE-LAUNCH PREP
+
+It's 01:08 CET Sunday March 29. Show HN fires at 09:00 CET Monday March 30. This cycle is the last major prep window before launch day. Focus: HN execution precision, content sharpened for Monday audiences, and three new blog posts on the core topics.
+
+### What Changed This Cycle (42)
+
+- **SOCIAL-MEDIA.md Cycle 42**: Full Monday HN execution sequence (Tweets 171-178), HN post template, HN first comment template, r/mcp post, r/webdev post, LinkedIn architectural angle post, Bluesky post, Monday minute-by-minute timing table
+- **PRESS-KIT.md v3.4**: Monday HN context, One-liners v17-v20 ("I gave AI a pencil"), Press Angles 8-10, screenshot priority table, newsletter outreach targets
+- **Blog post #86 NEW**: "Why Hand-Drawn Sketches Beat Figma: The Psychology Nobody Talks About" - cognitive science framing, fidelity signal effect, Medium-grade long-form. File: `why-hand-drawn-sketches-beat-figma-the-psychology.md`
+- **Blog post #87 NEW**: "How AI Agents Can Draw Floor Plans: A Non-Technical Walkthrough" - homeowner/consumer angle, honest limitations, per-model benchmark table. File: `how-ai-agents-draw-floor-plans-from-text.md`
+- **Blog post #88 NEW**: "Skissify vs Excalidraw in 2026: An Honest Guide for People Who've Heard Both Names" - fair comparison, feature table, workflow that uses both, Mermaid placement. File: `skissify-vs-excalidraw-honest-2026-guide.md`
+- **Web research**: AI agents/Product Hunt trends March 2026 confirmed - Claude Code dominant, autonomous execution rising, AI tools peak cycle on PH
+
+### Completed This Cycle (42)
+
+- [x] Blog post #86: Psychology of hand-drawn vs Figma (cognitive science framing, new angle)
+- [x] Blog post #87: How AI agents draw floor plans - non-technical consumer walkthrough
+- [x] Blog post #88: Skissify vs Excalidraw honest 2026 guide
+- [x] SOCIAL-MEDIA.md Cycle 42: Tweets 171-178 + full HN day templates
+- [x] PRESS-KIT.md v3.4: Newsletter targets, screenshot priorities, new angles
+- [x] Web search: March 2026 trends confirmed
+
+### New Blog Posts (Cycle 42)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 86 | **The Psychology of Sketches vs Figma** | `why-hand-drawn-sketches-beat-figma-the-psychology.md` | Medium, LinkedIn | Monday-Tuesday |
+| 87 | **How AI Agents Draw Floor Plans: Non-Technical** | `how-ai-agents-draw-floor-plans-from-text.md` | Medium, r/homeimprovement | Monday |
+| 88 | **Skissify vs Excalidraw: Honest 2026 Guide** | `skissify-vs-excalidraw-honest-2026-guide.md` | Dev.to, r/webdev | Monday |
+
+### New Ideas (Cycle 42)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"I gave Claude a pencil"** viral tweet thread | Short, visual metaphor, non-technical hook, shareable outside dev community | Zero (written) | Very High |
+| **LinkedIn architectural angle** | Architects/interior designers aren't on Twitter, are on LinkedIn, have large networks | Low (post written) | High |
+| **Return visit rate Tuesday post** | Nobody publishes this metric. It's honest. Build-in-public credibility + Indie Hackers front page | Zero | High |
+| **Bluesky cross-posting** | Dev community has partially migrated there, underserved, low competition | Low | Medium |
+| **Newsletter cold outreach tonight** | TLDR AI, The Rundown, Ben's Bites - can include in tomorrow's issue if contacted before midnight | Low | Very High |
+| **"Fidelity signal effect" tweet** | Cognitive science backing for the hand-drawn argument - novel angle, academic credibility | Zero | Medium |
+
+### Monday HN Execution Checklist
+
+- [ ] Human Mode is live and tested (BLOCKER)
+- [ ] Review HN post copy (template in SOCIAL-MEDIA.md Cycle 42)
+- [ ] Pre-write HN first comment (template ready)
+- [ ] Queue Tweet 171 for 08:30 CET
+- [ ] r/mcp post ready to fire at 09:10
+- [ ] r/webdev post ready to fire at 10:00
+- [ ] LinkedIn post ready for 11:00
+- [ ] Real metrics tweet at 18:00 (fill in numbers)
+- [ ] Sleep before 02:00 CET - you need to respond to HN comments all day
+
+### Critical Infrastructure - Status (Cycle 42)
+
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Email newsletter signup** | CRITICAL | Still missing - add before HN submission |
+| **Human Mode** | CRITICAL | Must be live before 09:00 CET Monday |
+| **Wobble GIF** | HIGH | Record tonight if possible - highest visual ROI |
+| **Benchmark page** | MEDIUM | Week 2 - but reference 94% stat in HN post |
+| **TypeScript SDK @skissify/client** | MEDIUM | Week 2 - announce in Tweet 169 |
+| **Framework integrations page** | LOW | Week 2 |
+
+### New Communities for Week 2 (Cycle 42 Intelligence)
+
+| Community | Platform | Size | Angle | When |
+|-----------|----------|------|-------|------|
+| **Mastra Discord** | Discord | ~5K | createTool integration guide | Monday morning |
+| **r/typescript** | Reddit | 200K+ | @skissify/client SDK | Tuesday |
+| **LangGraph Discord** | Discord | ~15K | Python integration | Wednesday |
+| **Hashnode** | Platform | Dev audience | Cross-post top 3 blogs | Monday-Wednesday |
+| **r/InteriorDesign** | Reddit | 3.5M | Human Mode + homeowner | Thursday |
+| **Bluesky #BuildInPublic** | Bluesky | Growing | Daily build-in-public posts | Daily from Monday |
+
+*Last Updated: March 29, 2026 (Cycle 42 - 01:08 CET)*
+*Added: Blog posts #86-88 (psychology of sketches, AI floor plans non-technical, Skissify vs Excalidraw honest), SOCIAL-MEDIA.md Cycle 42 (Tweets 171-178 + all Monday templates), PRESS-KIT.md v3.4, Monday HN checklist, new ideas table, critical infrastructure status*
