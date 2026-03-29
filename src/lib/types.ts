@@ -26,6 +26,12 @@ export interface BaseElement {
   rotation?: number;
   /** When true, the element cannot be moved, resized, or deleted via canvas interactions */
   locked?: boolean;
+  /**
+   * Fill color for closed shapes (rect, circle, arc, stair, column, door-symbol, door-slide).
+   * Use "none" or omit for transparent fill (stroke-only).
+   * Supports any CSS color string, e.g. "#f0e8d0" or "rgba(200,180,160,0.4)".
+   */
+  fillColor?: string;
 }
 
 export interface LineElement extends BaseElement {

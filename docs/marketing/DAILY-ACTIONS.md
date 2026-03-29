@@ -2,6 +2,77 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #39 (03:30 CET, Sunday March 29)
+
+### Context: 39 consecutive niche-clean scans. MCP server built March 26. HN optimal window: 08:00–11:00 CET TODAY (4.5 hours away). Thomas Thornton Excalidraw tutorial still #1 at 5 days old — SERP slot wide open for Skissify counter-content. Plan7Architect price hike closes March 31 (2 days). Brave rate-limited (1/2 searches completed, 243/2000 monthly quota).
+
+---
+
+### 🔴 Action 1 (LAUNCH — 08:00–11:00 CET TODAY, 4.5 hours away) — npm Publish + "Show HN"
+
+**This is it. The window is now.** 39 scans confirm the niche is clear. The MCP server is built. Sunday 08:00–11:00 CET is the highest-traffic developer window of the week globally. Do this before the Figma MCP / Google Stitch news cycle expires Monday.
+
+**Sequence (30 minutes total):**
+
+```bash
+# Step 1 — Verify and publish (5 min)
+cd W:/code/skissify/mcp-server
+cat package.json | grep publishConfig   # must have: {"access":"public"}
+npm publish --access public
+# Verify live: https://www.npmjs.com/package/@skissify/mcp-server
+
+# Step 2 — Smoke test (5 min)
+npx @skissify/mcp-server
+# Must start without errors. DO NOT post HN if this fails.
+
+# Step 3 — Post HN "Show HN" (15 min)
+# Use: docs/marketing/HACKER-NEWS.md
+# Suggested title: "Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP missing from every AI design stack"
+# Post at exactly 08:00–09:00 CET for best reach.
+```
+
+**Why this specific window**: EU developers wake up at 08:00. US East Coast developers are still browsing Saturday night at 03:00 ET. This combination = peak global developer traffic. Missing it means waiting until Monday (news cycle stale) or next Sunday.
+
+**Expected outcome**: 400–1,200 HN visitors, 30–100 free signups, 5–15 paying users, first EUR MRR. More importantly: first pipeline dependencies created. Each EUR 2/mo user is a future EUR 12/user Team subscriber with near-zero churn.
+
+---
+
+### 🟡 Action 2 (Sunday, after npm is live — 90 minutes) — Submit to 5 MCP Registries Simultaneously
+
+The Thomas Thornton tutorial has held the #1 "AI sketch MCP" SERP slot for 5 days with zero competition. Being listed in MCP registries is the parallel path to SERP — engineering leaders go to the registry; developers go to search. Both paths need Skissify.
+
+**Submit to all 5 in one session:**
+
+| Registry | URL | Note |
+|---------|-----|------|
+| modelcontextprotocol.io/registry | Official registry — WorkOS guide directs engineering leaders here | **Highest priority** |
+| github.com/punkpeye/awesome-mcp-servers | PR: `\| @skissify/mcp-server \| Hand-drawn architectural sketches from JSON manifests — floor plans, walls, doors, dimensions \| TypeScript \|` | Immediate developer discovery |
+| claudefa.st/blog/tools/mcp-extensions | No sketch tools listed. Submit via site form or email. | Active developer curation |
+| mcpmanager.ai | Active MCP directory. No sketch tools yet. | 2-day indexing lag |
+| lobehub.com/mcp | draw-it-mcp and mermaid-mcp are here. Skissify fills visual output gap. | Broad discovery |
+
+**Also**: Submit Skissify to **Product Hunt Excalidraw alternatives page** (actively maintained, refreshed 9 hours before Run #38 — prime submission window).
+
+---
+
+### 🟡 Action 3 (Monday March 30 — before March 31 deadline) — "Plan7Architect Alternative" SEO Blog Post
+
+Plan7Architect Pro 5 raises prices **March 31**. That's 2 days from now. The active search queries ("Plan7Architect alternative", "floor plan software 2026") are live right now. Publishing Monday captures 24 hours of index time before the price hike closes the window.
+
+**Title**: *"Plan7Architect raising prices March 31 — what modern architects use instead"*
+
+**Key angles**:
+- EUR 5/mo Skissify vs Plan7Architect one-time license (now more expensive)
+- Web-based vs desktop install — no activation, always updated
+- Hand-drawn sketch aesthetic for client presentations (emotional, not technical)
+- MCP-native: your AI agent can generate the sketch, not just you
+- NOT a replacement for permit drawings — positioned as the "client pitch" tool vs the "permit tool"
+
+**Estimated writing time**: 40 minutes using `docs/marketing/COPY-LIBRARY.md` content.
+**Publish to**: skissify.com/blog
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #38 (01:26 CET, Sunday March 29)
 
 ### Context: 38 consecutive niche-clean scans. MCP server built March 26. HN window opens 08:00 CET. WorkOS enterprise MCP guide published 3 days ago = enterprise discovery path now active. nxcode.io validates $19–99/mo WTP for AI tools — EUR 2/mo is infrastructure psychology, not SaaS psychology. Plan7Architect price hike closes March 31 (2 days). Brave rate-limited this run (238/2000 monthly quota used).

@@ -213,6 +213,7 @@ function EditorInner({
     pasteElements,
     colorSelected,
     strokeWidthSelected,
+    fillColorSelected,
     rotateSelected,
     nudgeSelected,
     selectAll,
@@ -519,6 +520,15 @@ function EditorInner({
     return el.strokeWidth;
   })();
 
+  // Compute the fillColor of the first selected element
+  const selectedFillColor: string | undefined = (() => {
+    if (selectedElements.size === 0) return undefined;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el) return undefined;
+    return (el as unknown as Record<string, unknown>).fillColor as string | undefined;
+  })();
+
   // True if ANY selected element is locked
   const selectedLocked: boolean = (() => {
     if (selectedElements.size === 0) return false;
@@ -599,6 +609,7 @@ function EditorInner({
             selectedCount={selectedElements.size}
             selectedColor={selectedColor}
             selectedStrokeWidth={selectedStrokeWidth}
+            selectedFillColor={selectedFillColor}
             selectedLocked={selectedLocked}
             onPaper={setPaper}
             onTool={setTool}
@@ -613,6 +624,7 @@ function EditorInner({
             onDeleteSelected={deleteSelected}
             onColorSelected={colorSelected}
             onStrokeWidthSelected={strokeWidthSelected}
+            onFillColorSelected={fillColorSelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
             onAlign={alignSelected}
@@ -715,6 +727,7 @@ function EditorInner({
           selectedCount={selectedElements.size}
           selectedColor={selectedColor}
           selectedStrokeWidth={selectedStrokeWidth}
+          selectedFillColor={selectedFillColor}
           selectedLocked={selectedLocked}
           onPaper={setPaper}
           onTool={setTool}
@@ -729,6 +742,7 @@ function EditorInner({
           onDeleteSelected={deleteSelected}
           onColorSelected={colorSelected}
           onStrokeWidthSelected={strokeWidthSelected}
+          onFillColorSelected={fillColorSelected}
           onToggleLock={toggleLockSelected}
           onReorder={reorderSelected}
           onAlign={alignSelected}

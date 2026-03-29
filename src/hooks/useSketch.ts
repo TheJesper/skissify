@@ -389,6 +389,30 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [selectedElements, pushHistory]
   );
 
+  /** Set the fillColor of all selected elements (or remove it with "none" / undefined) */
+  const fillColorSelected = useCallback(
+    (fillColor: string | undefined) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          if (fillColor === undefined || fillColor === "none") {
+            // Remove fillColor property entirely
+            const { fillColor: _removed, ...rest } = el as typeof el & { fillColor?: string };
+            void _removed;
+            return rest as SketchData["elements"][number];
+          }
+          return { ...el, fillColor };
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
   const rotateSelected = useCallback(
     (degrees: number) => {
       if (selectedElements.size === 0) return;
@@ -794,6 +818,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     nudgeSelected,
     selectAll,
     strokeWidthSelected,
+    fillColorSelected,
     setRenderStyle,
     setSnapGrid,
     setMetadata,

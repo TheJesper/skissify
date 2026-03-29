@@ -19,6 +19,8 @@ interface ControlPanelProps {
   selectedColor?: string;
   /** Current strokeWidth of the selected element */
   selectedStrokeWidth?: number;
+  /** Current fillColor of the selected element (undefined = no fill) */
+  selectedFillColor?: string;
   onPaper: (p: PaperType) => void;
   onTool: (t: ToolType) => void;
   onAmplitude: (v: number) => void;
@@ -34,6 +36,8 @@ interface ControlPanelProps {
   onColorSelected?: (color: string) => void;
   /** Called when the user changes the strokeWidth of selected elements */
   onStrokeWidthSelected?: (w: number) => void;
+  /** Called when the user changes the fillColor of selected elements (undefined = remove fill) */
+  onFillColorSelected?: (color: string | undefined) => void;
   /** Current render style */
   renderStyle?: RenderStyle;
   /** Called when the user changes the render style */
@@ -95,6 +99,7 @@ export default function ControlPanel({
   selectedCount,
   selectedColor,
   selectedStrokeWidth,
+  selectedFillColor,
   onPaper,
   onTool,
   onAmplitude,
@@ -108,6 +113,7 @@ export default function ControlPanel({
   onDeleteSelected,
   onColorSelected,
   onStrokeWidthSelected,
+  onFillColorSelected,
   renderStyle,
   onRenderStyle,
   selectedLocked,
@@ -432,6 +438,58 @@ export default function ControlPanel({
                 <span className="text-[10px] text-[#93a1a1] w-6 text-right font-mono">
                   {(selectedStrokeWidth ?? 1).toFixed(1)}
                 </span>
+              </div>
+            )}
+            {onFillColorSelected && (
+              <div className="flex items-center gap-2">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide shrink-0">
+                  Fill color
+                </label>
+                <div className="flex items-center gap-1.5 ml-auto">
+                  {/* No-fill (transparent) button */}
+                  <button
+                    title="No fill (transparent)"
+                    onClick={() => onFillColorSelected(undefined)}
+                    className={`w-5 h-5 rounded transition-all border flex items-center justify-center text-[8px] font-bold ${
+                      !selectedFillColor || selectedFillColor === "none"
+                        ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#268bd2]"
+                        : "border-[#93a1a1] bg-white text-[#93a1a1]"
+                    }`}
+                    style={{
+                      background: "linear-gradient(135deg, #fff 40%, #f00 40%, #f00 60%, #fff 60%)",
+                    }}
+                  />
+                  {/* Preset fill swatches - lighter/translucent versions */}
+                  {[
+                    { key: "#f5e6d3", label: "Warm beige" },
+                    { key: "#e8f0e8", label: "Light green" },
+                    { key: "#e8e8f5", label: "Light blue" },
+                    { key: "#f5e8e8", label: "Light red" },
+                    { key: "#f5f5e0", label: "Light yellow" },
+                    { key: "#e8e8e8", label: "Light gray" },
+                    { key: "#d0e8f5", label: "Sky blue" },
+                    { key: "#e8d0f5", label: "Lavender" },
+                  ].map((c) => (
+                    <button
+                      key={c.key}
+                      title={c.label}
+                      onClick={() => onFillColorSelected(c.key)}
+                      className={`w-5 h-5 rounded transition-all border ${
+                        selectedFillColor && normalizeColor(selectedFillColor) === normalizeColor(c.key)
+                          ? "ring-2 ring-[#268bd2] border-transparent"
+                          : "border-[#93a1a1]"
+                      }`}
+                      style={{ backgroundColor: c.key }}
+                    />
+                  ))}
+                  <input
+                    type="color"
+                    value={selectedFillColor && selectedFillColor !== "none" ? normalizeColor(selectedFillColor) : "#f5e6d3"}
+                    onChange={(e) => onFillColorSelected(e.target.value)}
+                    className="w-6 h-5 rounded cursor-pointer border border-[#93a1a1] bg-[#fdf6e3] p-0"
+                    title="Pick custom fill color"
+                  />
+                </div>
               </div>
             )}
             {onReorder && (

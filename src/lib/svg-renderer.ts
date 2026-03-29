@@ -9,6 +9,7 @@ import {
   BlueprintMetadata,
   PAPER_COLORS,
   TOOL_STYLES,
+  BLUEPRINT_COLOR_MAP,
   PaperType,
   FONT_OPTIONS,
   SkissifyFont,
@@ -218,6 +219,13 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     }
 
     case "rect": {
+      // Render fill first if specified
+      if (el.fillColor && el.fillColor !== "none") {
+        const fc = sketch.paper === "blueprint"
+          ? (BLUEPRINT_COLOR_MAP[el.fillColor] ?? el.fillColor)
+          : el.fillColor;
+        parts.push(`<rect x="${el.x}" y="${el.y}" width="${el.w}" height="${el.h}" fill="${fc}" stroke="none"/>`);
+      }
       const sides = [
         wobbleLine(el.x, el.y, el.x + el.w, el.y, { ...opts, seed: opts.seed! + 1 }),
         wobbleLine(el.x + el.w, el.y, el.x + el.w, el.y + el.h, { ...opts, seed: opts.seed! + 2 }),
@@ -231,6 +239,13 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     }
 
     case "circle": {
+      // Render fill first if specified
+      if (el.fillColor && el.fillColor !== "none") {
+        const fc = sketch.paper === "blueprint"
+          ? (BLUEPRINT_COLOR_MAP[el.fillColor] ?? el.fillColor)
+          : el.fillColor;
+        parts.push(`<circle cx="${el.cx}" cy="${el.cy}" r="${el.r}" fill="${fc}" stroke="none"/>`);
+      }
       const pts = wobbleCircle(el.cx, el.cy, el.r, opts);
       parts.push(`<path d="${pointsToPath(pts, true)}" ${sa}/>`);
       break;

@@ -452,6 +452,14 @@ function renderElement(
     case "rect": {
       const { x, y, w, h: rh } = el;
       const a = opts.amplitude;
+      // Fill rect before stroking
+      if (el.fillColor && el.fillColor !== "none") {
+        const fillC = sketch.paper === "blueprint"
+          ? (BLUEPRINT_COLOR_MAP[el.fillColor] ?? el.fillColor)
+          : el.fillColor;
+        ctx.fillStyle = fillC;
+        ctx.fillRect(x, y, w, rh);
+      }
       // Corner offsets for hand-drawn feel
       const co = () => (rng() - 0.5) * a * 0.3;
       HL(ctx, x + co(), y + co(), x + w + co(), y + co(), { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
@@ -489,6 +497,16 @@ function renderElement(
 
     case "circle": {
       const { cx, cy, r } = el;
+      // Fill circle before stroking
+      if (el.fillColor && el.fillColor !== "none") {
+        const fillC = sketch.paper === "blueprint"
+          ? (BLUEPRINT_COLOR_MAP[el.fillColor] ?? el.fillColor)
+          : el.fillColor;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+        ctx.fillStyle = fillC;
+        ctx.fill();
+      }
       const n = Math.max(20, Math.floor(r * 1.8));
       const pts: Pt[] = [];
       for (let i = 0; i <= n; i++) {
