@@ -2,6 +2,78 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #40 (04:34 CET, Sunday March 29)
+
+### Context: 40 consecutive niche-clean scans. MCP server built March 26. HN optimal window: 08:00–11:00 CET TODAY (~3.5 hours). PH Excalidraw alternatives updated 13h ago — active curation, prime submission window. CoolMindMaps vs Excalidraw comparison published this morning (no Skissify). Plan7Architect price hike closes March 31 (2 days). Brave rate-limited (249/2000 monthly quota). This is the launch day.
+
+---
+
+### 🔴 Action 1 (LAUNCH — 08:00–11:00 CET TODAY, ~3.5 hours away) — npm Publish + "Show HN"
+
+**40 scans. Zero competitors. The niche is yours. Launch now.**
+
+MCP server is built (`W:/code/skissify/mcp-server/dist/index.js`). Sunday 08:00–11:00 CET is peak global developer traffic. The Figma MCP + Google Stitch news cycle expires Monday. This is the window.
+
+**Sequence (30 minutes total):**
+
+```bash
+# Step 1 — Verify and publish (5 min)
+cd W:/code/skissify/mcp-server
+cat package.json | grep publishConfig   # must have: {"access":"public"}
+npm publish --access public
+# Verify live: https://www.npmjs.com/package/@skissify/mcp-server
+
+# Step 2 — Smoke test (5 min)
+npx @skissify/mcp-server
+# Must start without errors. DO NOT post HN if this fails.
+
+# Step 3 — Post HN "Show HN" (15 min)
+# Use: docs/marketing/HACKER-NEWS.md
+# Title: "Show HN: Skissify — JSON in, hand-drawn SVG out. The sketch MCP missing from every AI design stack"
+# Post at exactly 08:00–09:00 CET for best reach.
+```
+
+**Why this specific window**: EU developers wake 08:00. US East Coast developers browse Saturday night at 03:00 ET. Peak global developer traffic. Missing it means waiting until next Sunday with a stale news hook.
+
+**Expected outcome**: 400–1,200 HN visitors, 30–100 free signups, 5–15 paying EUR 2/mo users, first pipeline dependencies created.
+
+**New data point (Run #40)**: PH Excalidraw alternatives page was updated 13 hours ago (active Sunday morning curation). Submit Skissify to PH alternatives **same day as HN post** — the curation cycle is live right now.
+
+---
+
+### 🟡 Action 2 (Sunday, after npm is live — 90 minutes) — Submit to 5 MCP Registries + PH Alternatives
+
+MCP at 97M monthly downloads (coinspectator.com, 1 day ago). Being listed while the ecosystem is young = compounding passive discovery. The registries are the parallel path to HN: engineering leaders go to registries; developers go to search and HN.
+
+**Submit to all 5 registries + 1 PH page in one session:**
+
+| Registry | URL | Priority |
+|---------|-----|---------|
+| modelcontextprotocol.io/registry | Official registry — highest engineering leader traffic | **Critical** |
+| github.com/punkpeye/awesome-mcp-servers | PR: `\| @skissify/mcp-server \| Hand-drawn architectural sketches from JSON manifests \| TypeScript \|` | **Critical** |
+| claudefa.st/blog/tools/mcp-extensions | No sketch tools listed. Submit via form/email. | High |
+| mcpmanager.ai | Active MCP directory. No sketch tools. | High |
+| lobehub.com/mcp | draw-it-mcp and mermaid-mcp are here. Skissify fills visual output gap. | High |
+| producthunt.com/products/excalidraw/alternatives | Updated 13 hours ago — active curation window | **Critical** |
+
+---
+
+### 🟡 Action 3 (Monday March 30 — before March 31 deadline) — "Plan7Architect Alternative" SEO + graphically.io Outreach
+
+Two time-sensitive content actions for Monday:
+
+**a) Plan7Architect SEO post (2 days remaining before price hike closes)**
+- Write and publish: "Plan7Architect alternatives for modern architects — hand-drawn sketch tools in 2026"
+- Target keywords: "Plan7Architect alternative", "floor plan software 2026", "AI floor plan tool"
+- Timing: publish Monday morning → 24 hours of index time before March 31 price hike search volume peaks
+
+**b) graphically.io outreach (post was published today, March 29 — 13 hours ago)**
+- Email graphically.io author: "I saw your '2026 AI tools for graphic designers' post from today — Skissify just launched and it's the only programmatic hand-drawn sketch tool in the category. Would you consider adding it?"
+- Fresh article = editor is active right now. Outreach within 24 hours has highest response rate.
+- URL: graphically.io/blog/best-ai-tools-fro-graphic-designers-2026
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #39 (03:30 CET, Sunday March 29)
 
 ### Context: 39 consecutive niche-clean scans. MCP server built March 26. HN optimal window: 08:00–11:00 CET TODAY (4.5 hours away). Thomas Thornton Excalidraw tutorial still #1 at 5 days old — SERP slot wide open for Skissify counter-content. Plan7Architect price hike closes March 31 (2 days). Brave rate-limited (1/2 searches completed, 243/2000 monthly quota).

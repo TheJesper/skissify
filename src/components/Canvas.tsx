@@ -33,6 +33,95 @@ function getElementBounds(el: SketchElement): { x: number; y: number; w: number;
   return null;
 }
 
+/**
+ * Smart guides: get the key X and Y snap positions for an element
+ * (left edge, center, right edge for X; top, center, bottom for Y).
+ */
+function getElementSnapEdges(el: SketchElement): { xs: number[]; ys: number[] } {
+  if ("x1" in el && "x2" in el) {
+    const l = el as unknown as { x1: number; y1: number; x2: number; y2: number };
+    return {
+      xs: [l.x1, l.x2, (l.x1 + l.x2) / 2],
+      ys: [l.y1, l.y2, (l.y1 + l.y2) / 2],
+    };
+  }
+  if ("x" in el && "w" in el && "h" in el) {
+    const r = el as unknown as { x: number; y: number; w: number; h: number };
+    return {
+      xs: [r.x, r.x + r.w / 2, r.x + r.w],
+      ys: [r.y, r.y + r.h / 2, r.y + r.h],
+    };
+  }
+  if ("cx" in el && "r" in el) {
+    const c = el as unknown as { cx: number; cy: number; r: number };
+    return {
+      xs: [c.cx - c.r, c.cx, c.cx + c.r],
+      ys: [c.cy - c.r, c.cy, c.cy + c.r],
+    };
+  }
+  if ("x" in el && "y" in el) {
+    const p = el as unknown as { x: number; y: number };
+    return { xs: [p.x], ys: [p.y] };
+  }
+  return { xs: [], ys: [] };
+}
+
+/**
+ * Compute active alignment guides given the current sketch state and which indices are being dragged.
+ * Returns element-space guide positions.
+ * @param elements  All elements in the sketch
+ * @param draggedIndices  Set of indices being dragged
+ * @param snapTolerance  Distance in element-space to trigger a guide (default 6px)
+ */
+function computeAlignmentGuides(
+  elements: SketchElement[],
+  draggedIndices: Set<number>,
+  snapTolerance = 6
+): Array<{ axis: "h" | "v"; pos: number }> {
+  const guides: Array<{ axis: "h" | "v"; pos: number }> = [];
+  if (draggedIndices.size === 0) return guides;
+
+  // Collect snap edges from non-selected elements
+  const staticXs: number[] = [];
+  const staticYs: number[] = [];
+  for (let i = 0; i < elements.length; i++) {
+    if (draggedIndices.has(i)) continue;
+    const { xs, ys } = getElementSnapEdges(elements[i]);
+    staticXs.push(...xs);
+    staticYs.push(...ys);
+  }
+
+  // Collect snap edges from dragged elements
+  const draggedXs: number[] = [];
+  const draggedYs: number[] = [];
+  for (const i of draggedIndices) {
+    const { xs, ys } = getElementSnapEdges(elements[i]);
+    draggedXs.push(...xs);
+    draggedYs.push(...ys);
+  }
+
+  const seen = new Set<string>();
+  // Check dragged edges against static edges
+  for (const dx of draggedXs) {
+    for (const sx of staticXs) {
+      if (Math.abs(dx - sx) <= snapTolerance) {
+        const key = `v:${Math.round(sx)}`;
+        if (!seen.has(key)) { seen.add(key); guides.push({ axis: "v", pos: sx }); }
+      }
+    }
+  }
+  for (const dy of draggedYs) {
+    for (const sy of staticYs) {
+      if (Math.abs(dy - sy) <= snapTolerance) {
+        const key = `h:${Math.round(sy)}`;
+        if (!seen.has(key)) { seen.add(key); guides.push({ axis: "h", pos: sy }); }
+      }
+    }
+  }
+
+  return guides;
+}
+
 /** Clamp zoom to [min, max] */
 const MIN_ZOOM = 0.1;
 const MAX_ZOOM = 5;
@@ -266,6 +355,10 @@ export default function Canvas({
 
   // Context menu state
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number } | null>(null);
+
+  // Smart alignment guides: list of {axis: 'h'|'v', pos: number} in element-space
+  const [smartGuides, setSmartGuides] = useState<Array<{ axis: "h" | "v"; pos: number }>>([]);
+  const smartGuidesRef = useRef<Array<{ axis: "h" | "v"; pos: number }>>([]);
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
@@ -503,11 +596,41 @@ export default function Canvas({
         }
       }
     }
+
+    // Draw smart alignment guides (if any active during drag)
+    const activeGuides = smartGuidesRef.current;
+    if (activeGuides.length > 0) {
+      const ctg = computeCenterTransform(sketch.elements, canvasW, canvasH);
+      ctx.save();
+      ctx.translate(ctg.tx, ctg.ty);
+      if (ctg.scale < 1) ctx.scale(ctg.scale, ctg.scale);
+      ctx.strokeStyle = "#dc322f"; // Solarized red
+      ctx.lineWidth = 1 / (ctg.scale > 0 ? ctg.scale : 1);
+      ctx.setLineDash([4, 4]);
+      ctx.globalAlpha = 0.7;
+      // Compute element-space canvas bounds (before centering transform)
+      const elW = ctg.scale < 1 ? canvasW / ctg.scale : canvasW;
+      const elH = ctg.scale < 1 ? canvasH / ctg.scale : canvasH;
+      for (const g of activeGuides) {
+        ctx.beginPath();
+        if (g.axis === "v") {
+          // Vertical guide line: full height
+          ctx.moveTo(g.pos, -ctg.ty / (ctg.scale > 0 ? ctg.scale : 1));
+          ctx.lineTo(g.pos, elH);
+        } else {
+          // Horizontal guide line: full width
+          ctx.moveTo(-ctg.tx / (ctg.scale > 0 ? ctg.scale : 1), g.pos);
+          ctx.lineTo(elW, g.pos);
+        }
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
   }, [sketch, canvasW, canvasH, selectedElements]);
 
   useEffect(() => {
     draw();
-  }, [draw, redrawKey]);
+  }, [draw, redrawKey, smartGuides]);
 
   // Convert client coords to canvas coords using the canvas bounding rect
   /**
@@ -787,6 +910,11 @@ export default function Canvas({
             onMoveSelected(dx / zoom / centerScale, dy / zoom / centerScale);
             lastMouse.current = { x: e.clientX, y: e.clientY };
           }
+
+          // Compute and show smart alignment guides
+          const guides = computeAlignmentGuides(sketch.elements, selectedElements);
+          smartGuidesRef.current = guides;
+          setSmartGuides(guides);
         }
         return;
       }
@@ -875,6 +1003,11 @@ export default function Canvas({
       if (wasDragging && onDragEnd) {
         onDragEnd();
       }
+      // Clear smart guides when drag ends
+      if (wasDragging) {
+        smartGuidesRef.current = [];
+        setSmartGuides([]);
+      }
     },
     [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd, clientToCanvas]
   );
@@ -901,6 +1034,9 @@ export default function Canvas({
     setBoxSelectionRect(null);
     isBoxSelecting.current = false;
     boxStartScreen.current = null;
+    // Clear smart guides when leaving canvas
+    smartGuidesRef.current = [];
+    setSmartGuides([]);
     // Commit drag to undo history if a drag was in progress
     const wasDragging = isDraggingElements.current;
     setTimeout(() => {
