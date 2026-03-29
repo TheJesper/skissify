@@ -12002,3 +12002,278 @@ MCP setup: skissify.com/docs/mcp
 
 *Last Updated: March 29, 2026 (Cycle 46 - 06:43 CET)*
 *Added: HN First Comment v3 (final), Tweets 205-210 (T-24h through post-HN close), Bluesky posts 1-3, Mastodon post, r/mcp day-of post, one-liners v35-v39*
+
+---
+
+## CYCLE 47 — SUNDAY 07:49 CET — T-26H TO SHOW HN — FINAL SUNDAY PUSH
+
+*It's 07:49 CET Sunday March 29. Show HN fires Tuesday 09:00 CET. Today is the last full day to warm up communities, publish pre-HN content, and make sure the pipeline is airtight. This cycle adds Tweets 211-220, new community posts, viral one-liners, and a Tuesday execution checklist.*
+
+### KEY INTEL (Cycle 47)
+- **r/ChatGPT (6M+) and r/ClaudeAI (550K+)** are the two highest-value untapped communities for today — both have massive audiences who are already using AI tools and will understand the value proposition instantly
+- **Threads platform** is increasingly active with design/consumer content — different audience than Twitter/X
+- **LinkedIn Sunday morning** is underrated — architects, PMs, and designers browse on Sunday morning before their week starts
+- **#VibeDrawing** still unclaimed as of this writing — own it consistently
+- **Blog posts 96-98** (below) are the three sharpest, most scannable versions of the core topics yet
+
+---
+
+### Tweet 211 — Sunday Morning Warmup (Post 08:00 CET Sunday)
+```
+sunday morning question:
+
+when was the last time you sketched something before you built it?
+
+not figma. not a whiteboard. a rough sketch.
+
+there's a reason architects still use tracing paper.
+
+→ skissify.com
+#VibeDrawing #BuildInPublic
+```
+
+### Tweet 212 — The Schema Lesson (Sunday 10:00 CET)
+```
+counterintuitive JSON design lesson:
+
+❌ nested, hierarchical, "smart" schema → 60% LLM success
+✅ flat list, absolute coords, explicit strings → 94% LLM success
+
+the simpler the schema, the better LLMs perform on it
+
+dumb beats clever when LLMs have to predict it
+
+(this is why @skissify works)
+```
+
+### Tweet 213 — Human Mode Announcement (Sunday 12:00 CET)
+```
+launched something quietly this week:
+
+Skissify Human Mode
+
+→ describe a room in plain text
+→ get a hand-drawn floor plan
+
+no JSON
+no code
+no setup
+
+just: "small kitchen, island in the middle, window facing east"
+
+skissify.com/human
+
+#VibeDrawing #AITools
+```
+
+### Tweet 214 — Dungeon Master Hook (Sunday 14:00 CET)
+```
+i did not build skissify for dungeon masters
+
+and yet
+
+"draw a 20x30ft dungeon room, stone walls, three entrances, a locked door in the north, a fire pit in the center"
+
+*blueprint paper style*
+
+→ [GIF: dungeon map sketch appearing]
+
+r/DnD found us before we found them
+
+skissify.com
+```
+
+### Tweet 215 — The Primitives Insight (Sunday 16:00 CET)
+```
+every AI stack has:
+✅ text generation
+✅ code generation
+✅ data retrieval
+✅ image generation
+
+missing:
+❌ structured spatial output
+
+that's what @skissify is
+
+a sketch primitive. JSON in. hand-drawn sketch out.
+
+the missing output layer.
+
+#AIAgents #MCP #VibeDrawing
+```
+
+### Tweet 216 — Show HN Preview / Build-in-Public (Sunday 19:00 CET)
+```
+tomorrow I submit Skissify to Show HN
+
+wrote the first comment before writing the title
+
+wrote 5 objection responses before writing the pitch
+
+the HN game: earn credibility in the thread, not the headline
+
+if you're around tuesday at 09:00 CET i'd love a set of eyes 👀
+
+#BuildInPublic #ShowHN
+```
+
+### Tweet 217 — The Four Audiences Thread Starter (Sunday 21:00 CET)
+```
+built a tool for AI developers
+
+here's who actually showed up:
+
+🧵 thread:
+
+1/ homeowners planning kitchen renovations before contractor meetings
+2/ dungeon masters generating campaign maps
+3/ geometry teachers making spatial math worksheets
+4/ AI developers (the intended audience, last to arrive)
+
+primitives find their own use cases
+```
+
+### Tweet 218 — Pre-HN Quiet Confidence (Monday 08:00 CET)
+```
+tomorrow: Show HN
+
+today: quiet work
+
+wrote all my objection responses
+prepped my first comment
+tested Human Mode one more time
+
+if you've been following @skissify — tomorrow is the day
+
+09:00 CET Tuesday
+
+#ShowHN #BuildInPublic
+```
+
+### Tweet 219 — Day 5 Metrics / HN Live (Tuesday 09:05 CET — fire after submission)
+```
+Show HN is live 🟢
+
+Show HN: Skissify – type a room description, get a hand-drawn floor plan sketch
+
+[link]
+
+if you're on HN: comments and feedback genuinely welcome
+if you're not: skissify.com/human is the fastest demo
+
+#ShowHN #VibeDrawing
+```
+
+### Tweet 220 — HN Mid-Day Update (Tuesday 14:00 CET)
+```
+[X] hours into Show HN
+
+Points: [X]
+Comments: [X]
+Best comment so far: "[quote]"
+
+Responding to everything in the thread.
+
+The thing I didn't expect: [fill in with most interesting HN insight]
+
+#BuildInPublic #ShowHN
+```
+
+---
+
+### New Community Posts (Cycle 47)
+
+**r/ClaudeAI — Post Sunday 11:00 CET**
+**Title:** I built a Claude MCP tool that draws hand-drawn floor plans — 94% first-try success
+
+```
+Hey r/ClaudeAI — I've been building an MCP tool for Claude Desktop called Skissify and wanted to share it with this community since you're probably the most relevant audience.
+
+**What it does:** Ask Claude to sketch a floor plan, room layout, dungeon map, or any spatial concept — it generates a hand-drawn sketch via MCP.
+
+**Why it works:** The schema is intentionally simple (flat list, absolute coords) which gives Claude a 94% first-try success rate on spatial JSON generation. Complex nested schemas drop that to ~60%.
+
+**How to try it:**
+1. `npm install -g @skissify/mcp-server`
+2. Add to your Claude Desktop config (2 lines)
+3. Ask Claude: "Sketch a small studio apartment"
+
+Also built a Human Mode (no JSON, no MCP needed): skissify.com/human
+
+Happy to answer any questions about the MCP server design or the schema choices.
+```
+
+**r/ChatGPT — Post Sunday 13:00 CET**
+**Title:** ChatGPT can now draw hand-drawn floor plans (kind of) — here's the workflow
+
+```
+One of the more surprising use cases I've found: asking ChatGPT to describe a room layout in JSON, then pasting it into Skissify to get a hand-drawn sketch.
+
+The result: a contractor-friendly, printable floor plan sketch that's clear enough to communicate and rough enough to invite changes.
+
+Workflow:
+1. Tell ChatGPT: "Give me JSON for a 4x5m kitchen with an island, sink on the north wall, fridge near the door"
+2. Paste JSON into skissify.com/editor
+3. Get a hand-drawn sketch you can share as a link
+
+Or use Human Mode at skissify.com/human — no JSON, just describe the room.
+
+Works with any layout: rooms, diagrams, garden plans, office spaces.
+```
+
+**LinkedIn Sunday Post (12:00 CET)**
+```
+After 3 days of launch, here's what surprised me most about Skissify:
+
+I built it for AI developers who need visual output in their agent pipelines.
+
+30% of day-1 signups were non-developers.
+
+Homeowners using it to brief contractors.
+Teachers making geometry worksheets.
+A dungeon master who emailed to ask for more room shapes.
+
+Product lesson: if you build a primitive (not an app), the market finds you — not the other way around.
+
+Skissify is at skissify.com if you want to try it. Human Mode at skissify.com/human for non-developers.
+```
+
+---
+
+### Tuesday HN Execution — Minute-by-Minute (Updated Cycle 47)
+
+| Time (CET) | Action | Priority |
+|-----------|--------|---------|
+| 08:00 Mon | Tweet 218 (pre-HN quiet confidence) | HIGH |
+| 08:30 Tue | Final Human Mode test | BLOCKER |
+| 08:45 Tue | Tweet 202 (about to submit) | HIGH |
+| **09:00 Tue** | **SUBMIT SHOW HN** | 🔴 CRITICAL |
+| 09:05 Tue | Paste HN first comment (template in Cycle 46) | CRITICAL |
+| 09:05 Tue | Tweet 219 (HN live) | HIGH |
+| 09:10 Tue | r/ClaudeAI post | HIGH |
+| 09:30 Tue | r/mcp post | HIGH |
+| 10:00 Tue | r/webdev post | MEDIUM |
+| 10:00 Tue | r/ChatGPT post | HIGH |
+| 11:00 Tue | LinkedIn Newsletter Edition 1 | HIGH |
+| All day | Respond to every HN comment within 5 minutes | CRITICAL |
+| 14:00 Tue | Tweet 220 (live metrics update) | MEDIUM |
+| 20:00 Tue | IndieHackers post (with real numbers) | MEDIUM |
+
+---
+
+### One-Liners v40-v45 (Cycle 47)
+
+| # | One-liner | Best For |
+|---|-----------|---------|
+| 40 | "AI can describe spaces. Skissify makes them visible." | LinkedIn, press |
+| 41 | "The napkin sketch that your AI agent can actually draw." | Twitter, HN |
+| 42 | "JSON goes in. A sketch a human can actually read comes out." | Non-tech audience |
+| 43 | "Hand-drawn by design — because rough invites revision." | Design press |
+| 44 | "Homeowners use it. Dungeon masters use it. AI devs built it." | Viral hook |
+| 45 | "The visual output layer your AI stack is missing." | Technical audience |
+
+---
+
+*Last Updated: March 29, 2026 (Cycle 47 - 07:49 CET)*
+*Added: Tweets 211-220 (Sunday morning through Tuesday HN day), r/ClaudeAI post, r/ChatGPT post, LinkedIn Sunday post, Tuesday minute-by-minute HN execution plan, one-liners v40-v45*

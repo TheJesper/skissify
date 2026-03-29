@@ -2,9 +2,87 @@
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com - JSON to hand-drawn sketch, AI-agent compatible
-**Status:** DAY 4/3 - Sunday March 29, 03:18 CET / Monday 09:00 HN launch | SHOW HN FIRES IN ~6 HOURS
+**Status:** DAY 4 - Sunday March 29, 07:49 CET | SHOW HN FIRES TUESDAY 09:00 CET (T-49h)
 
 ---
+
+## Marketing Improvements (Cycle 47 — March 29, 2026 — 07:49 CET)
+
+### STATUS: SUNDAY MORNING — T-49 HOURS TO SHOW HN — PRE-HN WARMUP
+
+It's 07:49 CET Sunday March 29. Show HN fires Tuesday March 31 at 09:00 CET (Tuesday is optimal per HN data: +28% engagement vs Monday).
+
+### What Changed Since Cycle 46
+
+- **3 new blog posts** — sharpest versions of the three evergreen topics:
+  - `why-hand-drawn-sketches-beat-figma-the-2-minute-argument.md` — scannable, 400 words, punchy
+  - `how-ai-agents-draw-floor-plans-step-by-step-2026.md` — all three options + LLM benchmark table
+  - `skissify-vs-excalidraw-honest-quick-guide.md` — fair comparison, hybrid workflow, use-case table
+- **SOCIAL-MEDIA.md Cycle 47**: Tweets 211-220, r/ClaudeAI post (first ever), r/ChatGPT post, LinkedIn Sunday post, Tuesday HN minute-by-minute, one-liners v40-v45
+- **PRESS-KIT.md v4.0**: Press Angles 11-13, Product Boilerplate v4 (Show HN optimized), Screenshot Priority v4
+
+### New Blog Posts (Cycle 47)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 96 | **Why Sketches Beat Figma: The 2-Minute Argument** | `why-hand-drawn-sketches-beat-figma-the-2-minute-argument.md` | Medium, LinkedIn, r/UXDesign | Sunday-Monday |
+| 97 | **How AI Agents Draw Floor Plans: Step-by-Step 2026** | `how-ai-agents-draw-floor-plans-step-by-step-2026.md` | Dev.to, r/mcp, Hashnode | Monday |
+| 98 | **Skissify vs Excalidraw: The Honest Quick Guide** | `skissify-vs-excalidraw-honest-quick-guide.md` | Dev.to, r/webdev, r/mcp | Monday-Tuesday |
+
+### Today's Priority Actions (Sunday March 29)
+
+| Priority | Time (CET) | Action |
+|----------|-----------|--------|
+| 1 🔴 | **BLOCKER** | Human Mode: live and tested |
+| 2 🔴 | **BLOCKER** | Email newsletter signup on homepage |
+| 3 🔴 | **TONIGHT** | Send TLDR AI + Rundown + Ben's Bites outreach |
+| 4 🟡 | 08:00 | Tweet 211 (Sunday warmup) |
+| 5 🟡 | 10:00 | Tweet 212 (schema lesson) |
+| 6 🟡 | 11:00 | r/ClaudeAI post (550K members — first ever) |
+| 7 🟡 | 12:00 | Tweet 213 (Human Mode) |
+| 8 🟡 | 13:00 | r/ChatGPT post (6M members) |
+| 9 🟡 | 14:00 | Tweet 214 (dungeon master) |
+| 10 🟡 | 16:00 | Tweet 215 (missing output layer) |
+| 11 🟡 | 19:00 | Tweet 216 (Show HN preview) |
+| 12 🟡 | 21:00 | Tweet 217 (four audiences thread) |
+
+### New Ideas (Cycle 47)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **AlternativeTo listing** | "Alternative to Excalidraw" high-intent search traffic, zero effort | Zero | High |
+| **"Flat JSON lesson" Dev.to post** | Schema insight is independently shareable, SEO for "LLM JSON schema design" | Low | High |
+| **r/sketchnotes post** | 45K niche visual notes community, genuinely on-topic | Low | Medium |
+| **@swyx Bluesky tag at HN submit** | swyx follows MCP/agent tools closely | Zero | High |
+| **DevHunt submission** | Less competitive than PH, second listing | Zero | Medium |
+| **"What would you sketch?" poll tweet** | UGC + engagement, draws in non-developer audience | Zero | High |
+
+### Critical Infrastructure — Status (Cycle 47)
+
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Human Mode live + tested** | 🔴 BLOCKER | Must be done before Tuesday 09:00 |
+| **Email newsletter signup** | 🔴 CRITICAL | Add TODAY |
+| **Wobble slider GIF** | 🔴 HIGH | Record today — 10 min max |
+| **Screenshots (7 items)** | 🔴 HIGH | Before Tuesday |
+| **Newsletter outreach** | 🔴 TODAY | TLDR AI, Rundown, Ben's Bites |
+| **AlternativeTo listing** | 🟡 Monday | Zero effort, high-intent traffic |
+| **TypeScript SDK @skissify/client** | 🟡 Week 2 | Announce Wednesday |
+| **Benchmark page** | 🟡 Week 2 | Official 94% stat page |
+
+### Cumulative Blog Inventory (98 posts as of Cycle 47)
+
+| Range | Posts |
+|-------|-------|
+| #1-91 | Cycles 1-44 |
+| #92-95 | Cycles 45-46 |
+| #96-98 | Cycle 47 (this cycle) |
+
+*Last Updated: March 29, 2026 (Cycle 47 — 07:49 CET)*
+*Added: Blog posts #96-98, SOCIAL-MEDIA.md Cycle 47 (Tweets 211-220 + community posts), PRESS-KIT.md v4.0, Today's priority action table, new ideas*
+
+---
+
 ---
 
 ## Marketing Improvements (Cycle 43 - March 29, 2026 - 03:18 CET)

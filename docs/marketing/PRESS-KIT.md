@@ -1,8 +1,70 @@
 # Skissify Press Kit
 
-**Last Updated:** March 29, 2026 — 03:18 CET (Cycle 43)
-**Version:** 3.5
+**Last Updated:** March 29, 2026 — 07:49 CET (Cycle 47)
+**Version:** 4.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 47 Updates (March 29, 2026 — 07:49 CET)
+
+### Status: T-26 Hours to Show HN — Pre-HN Final Polish
+
+**Show HN fires Tuesday March 31, 09:00 CET.** This update adds new one-liners, a sharpened product boilerplate optimized for the HN submission, new press angles, and updated screenshot priorities.
+
+### New One-Liners (v46-v52)
+
+**Headline (HN title):**
+> Show HN: Skissify — describe a room in plain text, get a hand-drawn floor plan sketch
+
+**For design press:**
+> Rough sketches aren't a limitation. They're a communication strategy. Skissify is built on that idea.
+
+**For AI/developer press:**
+> The spatial output primitive that every AI agent stack is missing. JSON in, hand-drawn sketch out, MCP native.
+
+**For homeowner/consumer press:**
+> Describe your kitchen renovation in one sentence. Get a floor plan sketch you can show your contractor.
+
+**For build-in-public / founder press:**
+> Built for AI developers. 30% of users are homeowners. Dungeon masters found it before we found them.
+
+**For the "what is it" question:**
+> Skissify is a JSON-to-sketch renderer with a built-in MCP server. AI agents can draw floor plans, room layouts, and spatial diagrams natively through Claude Desktop.
+
+**Twitter-friendly:**
+> every AI stack has text + code + data + images. none has structured spatial output. that's Skissify.
+
+### Updated Product Boilerplate (v4 — Use for Show HN and Press)
+
+> **Skissify** converts JSON or plain-text descriptions into hand-drawn floor plan sketches. It includes a native MCP server that lets Claude Desktop generate sketches directly from conversational prompts — no Figma, no CAD tools, no design skills required. A Human Mode accepts plain text descriptions and handles the JSON generation automatically. The hand-drawn aesthetic (controllable via a "wobble" parameter) is intentional: rough sketches invite collaboration, while polished wireframes invite criticism. Launched March 27, 2026. 94% first-try LLM accuracy with Claude Sonnet 4.
+
+### New Press Angles (Cycle 47)
+
+**Angle 11: "The Sunday Morning Contractor Brief"**
+- *Hook*: Homeowners are using an AI developer tool to sketch room layouts and show contractors before renovation calls. Nobody planned this.
+- *Target*: HomeImprovement/lifestyle press, Apartment Therapy, Houzz, This Old House
+- *Stat*: 30% of launch-week signups described themselves as non-developers
+
+**Angle 12: "The Missing Output Layer"**
+- *Hook*: In 2026, AI agents can write code, query databases, generate images, and book meetings. They still can't produce a spatial layout a human can read. Skissify closes the gap.
+- *Target*: AI infrastructure press, Ben's Bites, TLDR AI, The Rundown, VentureBeat AI
+
+**Angle 13: "Schema Design for LLMs (Not Humans)"**
+- *Hook*: The counterintuitive finding — dumb, flat JSON schemas outperform smart, nested ones by 30+ points when LLMs have to generate them. The lesson generalizes beyond sketching.
+- *Target*: HN, Dev.to, r/MachineLearning, engineering blogs
+
+### Screenshot Priority (v4 — Pre-HN Final)
+
+| # | Screenshot | Status | Use For |
+|---|-----------|--------|---------|
+| 1 | Human Mode: text input → sketch output | ⚠️ RECORD TODAY | HN hero image |
+| 2 | Blueprint floor plan (hero image) | ⚠️ RECORD TODAY | Press/landing page |
+| 3 | Claude Desktop MCP tool call → sketch URL | ⚠️ RECORD TODAY | Developer press |
+| 4 | Wobble slider demo (0 → 10 → 3) | ⚠️ RECORD TODAY | Feature GIF |
+| 5 | Four paper styles side-by-side | ⚠️ RECORD TODAY | Feature overview |
+| 6 | Dungeon map in blueprint style | ⚠️ RECORD TODAY | TTRPG community |
+| 7 | Homeowner workflow: text → sketch → share link | ⚠️ RECORD TODAY | Consumer press |
 
 ---
 
