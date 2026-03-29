@@ -3454,3 +3454,95 @@ Everything is written. Today is about activation, not creation. Tomorrow is exec
 
 *Last Updated: March 29, 2026 (Cycle 49 — 10:03 CET)*
 *Added: Blog posts #99-101 (milestone: post #100), SOCIAL-MEDIA.md Cycle 49 (Tweets 228-232, schema thread, LinkedIn story, r/homeimprovement, Discord templates x4, Threads/Bluesky, One-liners v51-55), PRESS-KIT.md Cycle 49 (journalist hook, 2-para pitch, taglines by audience, competitor table, demo flow)*
+
+---
+
+## Marketing Improvements (Cycle 51 — March 30, 2026 — 01:49 CET)
+
+### STATUS: MONDAY 01:49 CET — T-31 HOURS TO SHOW HN — LAUNCH EVE EXECUTION CYCLE
+
+Show HN fires TOMORROW Tuesday March 31 at 09:00 CET. This is the final content cycle.
+Everything that can be written has been written. Focus: sharpen execution, add launch-eve urgency content, lock final copy.
+
+### What Changed This Cycle (51)
+
+- **Blog post #102 NEW**: "Why Hand-Drawn Sketches Beat Figma: Launch Eve Edition" — launch-eve urgency angle, HN CTA at bottom. File: `why-hand-drawn-sketches-beat-figma-launch-eve-edition.md`
+- **Blog post #103 NEW**: "How AI Agents Can Draw Floor Plans: The Launch-Day Guide" — most comprehensive technical walkthrough. MCP + REST + Human Mode all covered. File: `how-ai-agents-draw-floor-plans-launch-day-guide.md`
+- **Blog post #104 NEW**: "Skissify vs Excalidraw: The Final Word Before Show HN" — definitive, honest, endorses Excalidraw where it wins. File: `skissify-vs-excalidraw-launch-eve-final.md`
+- **SOCIAL-MEDIA.md Cycle 51**: Tweets 238-244 (launch eve arc + launch morning), Reddit r/SideProject + r/entrepreneur posts, LinkedIn "Figma Tax" long-form, TikTok/Reels 30s script, Discord templates (Anthropic + Mastra), One-liners v56-60, Hashtag clusters (confirmed), FINAL locked Show HN submission title + first comment
+- **PRESS-KIT.md Cycle 51**: Media alert email template, Screenshots checklist v5 (10 items, priority-ranked, 2 blockers identified), Launch Day Quote Bank, Final tagline decision matrix, Quick facts v5
+
+### New Blog Posts (Cycle 51)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 102 | **Why Hand-Drawn Beats Figma: Launch Eve Edition** | `why-hand-drawn-sketches-beat-figma-launch-eve-edition.md` | Medium, IndieHackers | Monday 09:00 CET |
+| 103 | **How AI Agents Draw Floor Plans: Launch-Day Guide** | `how-ai-agents-draw-floor-plans-launch-day-guide.md` | Dev.to, r/AI_Agents | Monday 10:00 CET |
+| 104 | **Skissify vs Excalidraw: Final Word** | `skissify-vs-excalidraw-launch-eve-final.md` | Dev.to, r/webdev | Monday 11:00 CET |
+
+### Confirmed Hashtag Strategy (Cycle 51)
+
+| Cluster | Hashtags | Use When |
+|---------|---------|---------|
+| Developer | #MCP #AIAgents #BuildInPublic #ShowHN #LLM #Claude #AIEngineering | All developer posts |
+| Design | #DesignProcess #VibeDrawing #SketchFirst #NoFigma #ProductDesign | Design-audience posts |
+| Launch | #IndieHacker #SoloFounder #Launched #Maker #SideProject | Launch context |
+| Consumer | #HomeDesign #FloorPlan #AI #RenovationIdeas | Homeowner posts |
+| Tuesday combo | #ShowHN #MCP #AIAgents #BuildInPublic | All Tuesday posts |
+
+### FINAL Remaining Blockers (T-31h)
+
+| Priority | Action | Status |
+|----------|--------|--------|
+| 🚨 BLOCKER | Human Mode live + tested at skissify.com/human | ? |
+| 🚨 BLOCKER | Screenshot #1: Human Mode text input + sketch side by side | NOT DONE |
+| 🚨 BLOCKER | Screenshot #2: Claude Desktop MCP sketch in chat | NOT DONE |
+| 🔴 TODAY | Email TLDR AI + Rundown + Ben's Bites | ? |
+| 🔴 TODAY | Product Hunt "Coming Soon" page | ? |
+| 🟡 MONDAY AM | Screenshots #3–#4 (blueprint + JSON split) | NOT DONE |
+| 💤 TONIGHT | Sleep before 23:00 CET | - |
+
+### FINAL Show HN Submission Copy (Locked)
+
+**Title:** Show HN: Skissify – JSON or plain text → hand-drawn sketch URL (MCP native)
+
+**First comment:** See SOCIAL-MEDIA.md Cycle 51 — "SHOW HN SUBMISSION — FINAL LOCKED VERSION"
+
+### Monday Publishing Schedule (Final)
+
+| Time | Action | Platform |
+|------|--------|---------|
+| 07:00 | Tweet 239 (Monday morning) | Twitter |
+| 08:30 | Post to Anthropic Discord | Discord |
+| 09:00 | Publish blog #102 (Figma launch eve) | Medium, IndieHackers |
+| 09:00 | Tweet 240 (unexpected users) | Twitter |
+| 09:30 | Post to Mastra Discord | Discord |
+| 10:00 | Publish blog #103 (floor plans guide) | Dev.to |
+| 10:00 | Post r/vibecoding | Reddit |
+| 10:00 | Post r/ClaudeAI | Reddit |
+| 11:00 | Publish blog #104 (Excalidraw final) | Dev.to |
+| 11:00 | Tweet 241 (schema hook) | Twitter |
+| 11:00 | Post r/AI_Agents | Reddit |
+| 12:00 | Post r/SideProject (launch eve diary) | Reddit |
+| 13:00 | Post r/n8n | Reddit |
+| 13:00 | Post r/entrepreneur (unexpected audience) | Reddit |
+| 14:00 | Tweet 242 (community building Q) | Twitter |
+| 18:00 | LinkedIn "Figma Tax" post | LinkedIn |
+| 18:00 | LinkedIn Newsletter Edition 1 | LinkedIn |
+| 20:00 | Tweet 244 (final pre-HN evening) | Twitter |
+| 20:00 | IndieHackers template (fill real numbers) | IndieHackers |
+| 23:00 | Sleep | - |
+
+### Cumulative Blog Inventory (104 posts as of Cycle 51)
+
+| Range | See |
+|-------|-----|
+| #1-91 | Cycles 1-44 |
+| #92-94 | Cycle 45 |
+| #95 | Cycle 46 |
+| #96-98 | Cycle 48 |
+| #99-101 | Cycle 49 |
+| #102-104 | Cycle 51 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 51 — 01:49 CET)*
+*Added: Blog posts #102-104 (launch-eve trilogy), SOCIAL-MEDIA.md Cycle 51 (Tweets 238-244 + 2 Reddit posts + LinkedIn Figma Tax + TikTok script + Discord + One-liners v56-60 + confirmed hashtags + FINAL Show HN copy), PRESS-KIT.md Cycle 51 (media alert + screenshots v5 + quote bank + tagline matrix + quick facts v5)*

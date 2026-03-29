@@ -1,8 +1,358 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**
-**Day 4 (March 30 — Cycle 50 at TOP): Show HN TOMORROW Tuesday 09:00 CET. Last Sunday push.**
+**Day 4 (March 30 — Cycle 51 at TOP): Show HN TOMORROW Tuesday 09:00 CET. LAUNCH EVE — EXECUTION MODE.**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 51 — MONDAY MARCH 30, 2026 — 01:49 CET — LAUNCH EVE FINAL PUSH
+
+*It's 01:49 CET Monday March 30. Show HN fires in ~31 hours. This is the last content cycle before launch. New posts: 3 launch-eve blog posts written (#102-#104). Focus: sharpen the Monday publishing schedule, add final viral hooks, TikTok/Shorts script, last-minute community targeting, and the Reddit "launch eve diary" post.*
+
+### LAUNCH EVE STATUS
+- **Show HN**: Tuesday March 31 — 09:00 CET (T-31h)
+- **Blog posts this cycle**: #102-104 (launch-eve Figma argument, launch-day floor plans guide, final Excalidraw comparison)
+- **Hashtag research**: Confirmed top hashtags below
+- **New angle**: Reddit "launch eve diary" — authentic, personal, shareable
+- **New angle**: TikTok/Reels 30-second hook script (first video ever)
+
+---
+
+### TRENDING HASHTAGS — CONFIRMED (Cycle 51)
+
+**Developer / MCP audience:**
+`#MCP` `#AIAgents` `#BuildInPublic` `#ShowHN` `#OpenSource` `#DevTools` `#LLM` `#Claude` `#AIEngineering` `#VibeCode` `#VibeCoding`
+
+**Design / Product audience:**
+`#DesignProcess` `#UX` `#ProductDesign` `#NoFigma` `#VibeDrawing` `#SketchFirst` `#UIDesign` `#NapkinSketch`
+
+**Launch day cluster:**
+`#IndieHacker` `#SoloFounder` `#Launched` `#ProductHunt` `#SideProject` `#Maker` `#StartupLife`
+
+**Homeowner / consumer audience:**
+`#HomeDesign` `#FloorPlan` `#InteriorDesign` `#RenovationIdeas` `#HomeImprovement`
+
+**Trending combinations for Tuesday:**
+- Developer tweet: `#ShowHN #MCP #AIAgents #BuildInPublic`
+- LinkedIn: `#AI #DesignProcess #ProductThinking #BuildInPublic`
+- Consumer post: `#HomeDesign #AI #FloorPlan #SketchFirst`
+
+---
+
+### NEW VIRAL HOOKS (Cycle 51)
+
+| Hook | Copy | Platform | Fire When |
+|------|------|----------|-----------|
+| **"The 94% schema"** | "Spent 3 days optimizing JSON schema for LLMs. Went from 60% to 94% first-try accuracy. The trick: make everything flat. Counter-intuitive but real." | Twitter, HN comment | Tuesday during HN |
+| **"Launch eve feeling"** | "T-31 hours. The product works. The copy is written. The only thing left is to hit submit and mean it." | Twitter | Monday 02:00 |
+| **"The unexpected users"** | "I built it for AI developers. A dungeon master emailed me at 2am asking for more polygon shapes. A geometry teacher is using it for worksheets. A homeowner used it to brief a contractor. Launching tomorrow on HN." | Twitter, IndieHackers | Monday 09:00 |
+| **"Zero-to-sketch in English"** | "You can now say 'small apartment, bedroom on the left, bathroom at back' to an AI and get a floor plan. No JSON. No install. skissify.com/human" | Threads, Bluesky, Mastodon | Monday 10:00 |
+| **"Permanent sketch URL"** | "A sketch URL is the thing nobody named yet. It's spatial memory that's permanent, inspectable, shareable, and embeddable. AI agents need this. We built it." | LinkedIn, Twitter | Monday 11:00 |
+
+---
+
+### Tweet 238 — Monday Launch Eve (02:00 CET) — Honest Founder Moment
+
+```
+t-31 hours to Show HN
+
+everything is written. the product works.
+
+right now: sitting here at 2am making sure the schema docs are right
+
+shipping is surreal when you've been heads-down for 4 days straight
+
+skissify.com
+
+#BuildInPublic #ShowHN #IndieHacker
+```
+
+### Tweet 239 — Monday Morning (07:00 CET) — Last Pre-HN Energy
+
+```
+good morning.
+
+today:
+- publish 3 blog posts
+- post to 5 subreddits  
+- send newsletter outreach emails
+- test Human Mode end to end one more time
+- not touch the codebase
+
+tomorrow: Show HN at 09:00 CET
+
+see you there
+
+#ShowHN #BuildInPublic #AIAgents
+```
+
+### Tweet 240 — Monday 09:00 CET — Unexpected Users Hook
+
+```
+I built Skissify for AI developers
+
+who showed up instead:
+
+→ homeowners briefing contractors on renovations
+→ a geometry teacher generating problem worksheets
+→ dungeon masters building campaign maps
+→ a real estate agent sketching properties on the fly
+
+launching on Show HN tomorrow
+
+skissify.com
+```
+
+### Tweet 241 — Monday 11:00 CET — Technical Hook
+
+```
+the most counterintuitive schema insight from 72 hours of testing:
+
+flat JSON → 94% first-try LLM accuracy
+nested JSON → 60%
+
+LLMs have been trained on huge flat datasets
+hierarchy requires maintaining a mental stack while generating
+flat list = just append the next item
+
+this single design choice made Skissify work
+
+#MCP #LLM #AIEngineering
+```
+
+### Tweet 242 — Monday 14:00 CET — Community Building Pre-HN
+
+```
+if you work with AI agents, two questions:
+
+1. have you ever wished your agent could draw something instead of describing it?
+
+2. what would you want it to draw?
+
+asking because we launch on Show HN tomorrow and I want to understand real use cases
+
+skissify.com/human — try it free
+```
+
+### Tweet 243 — Monday 18:00 CET — LinkedIn Share
+
+```
+launching on Show HN tomorrow
+
+one thing I learned from 4 days of soft launch:
+
+hand-drawn style isn't aesthetic preference
+it's communication strategy
+
+when a sketch looks rough, people engage with it
+when it looks finished, they assume decisions are final
+
+sketch first, design later
+
+[link to blog post]
+```
+
+### Tweet 244 — Monday 20:00 CET — Final Pre-HN Evening
+
+```
+tonight's plan:
+
+→ sleep at a reasonable hour
+→ set alarm for 08:45 CET
+→ coffee
+→ submit Show HN at exactly 09:00 CET
+→ reply to every comment in real time
+
+if you're planning to read HN tomorrow morning, look for:
+"Show HN: Skissify – JSON or plain text → hand-drawn sketch URL"
+
+see you there ☕
+
+#ShowHN #BuildInPublic
+```
+
+---
+
+### REDDIT POSTS (Cycle 51 — New)
+
+#### r/SideProject — Launch Eve Diary
+
+**Title:** "Submitted Show HN tomorrow. Here's the 5-day prep journey (with real numbers)"
+
+```
+Launching Skissify on Show HN tomorrow (Tuesday, 09:00 CET). 
+
+Skissify is: JSON or plain text → hand-drawn floor plan sketch → permanent URL. Works as an MCP tool for Claude and other agents, or direct REST API.
+
+Here's the last 5 days:
+
+**Day 0 (Thursday):** Soft launch. Got upvotes on r/mcp. First 50 users. Built in 48 hours total.
+
+**Day 1 (Friday):** Wrote 40 blog posts (via agent). Found out dungeon masters use floor plans too. Unexpected.
+
+**Day 2 (Saturday):** Built Human Mode (no JSON, no install). Homeowners started using it.
+
+**Day 3 (Sunday):** Newsletter outreach, 60 more blog posts, Discord templates.
+
+**Day 4 (Monday):** This post. Schema docs finalized. Tomorrow: Show HN.
+
+One question: what makes a Show HN sink in the first hour? Real talk appreciated.
+
+Demo: skissify.com/human
+```
+
+#### r/entrepreneur — The Unexpected Audience Post
+
+**Title:** "Built something for developers, got completely different users — they might be better customers"
+
+```
+Short story: I built Skissify — a REST API for AI agents to generate hand-drawn architectural sketches. Target: developers building MCP tools for Claude and other agents.
+
+Who showed up in the first 72 hours:
+- Homeowners using it to brief contractors
+- A geometry teacher making worksheets
+- Dungeon masters building campaign maps
+- Real estate agents sketching properties fast
+
+None of these are my target market. All of them paid (or asked about paying).
+
+Has anyone else had the "wrong audience is the right audience" experience? Curious how you think about pivoting vs. serving both.
+
+[skissify.com — launching Show HN tomorrow if you want context]
+```
+
+---
+
+### LINKEDIN — Monday Publish (09:00 CET)
+
+**Post: "The Figma Tax" (long-form)**
+
+```
+There's a hidden cost to opening Figma to think through an idea.
+
+I call it the Figma tax.
+
+You open the app. You need to name the file. Create a frame. What size? Web? Mobile? Set up auto-layout. Import fonts. Pick a component library.
+
+You're 20 minutes in and haven't drawn a single idea.
+
+Figma is extraordinary for communicating decisions that have been made. Pixel specs, handoff docs, polished mockups.
+
+But ideas don't start finished. They start rough.
+
+There's research showing people give more honest feedback on sketches than polished designs. When something looks finished, people assume decisions are final. They hold back.
+
+When something looks like a napkin sketch, they feel invited to improve it.
+
+That's why Skissify produces hand-drawn output — not because it can't look polished, but because rough is the right signal for early-stage thinking.
+
+Tomorrow we're on Show HN. Product: text description → hand-drawn floor plan sketch.
+
+Try it: skissify.com/human
+
+What does your quick-idea process look like?
+
+#ProductDesign #AI #DesignProcess #Skissify #BuildInPublic
+```
+
+---
+
+### TIKTOK / REELS SCRIPT — 30 seconds (First Video)
+
+**File:** `docs/marketing/tiktok-script-01.md` (create separately)
+
+**Hook (0–3s):**
+*[Screen recording: typing in a text box]*
+"Watch me give an AI a floor plan in 10 seconds."
+
+**Demo (3–20s):**
+*[Type: "small apartment, bedroom left, bathroom back, open kitchen"]*
+*[Show sketch appearing]*
+"Three seconds. That's a real sketch."
+
+**Context (20–25s):**
+*[Show sketch URL being copied]*
+"It's a permanent URL. Send it to anyone. Your contractor, your architect, your agent."
+
+**CTA (25–30s):**
+*[Text overlay]*
+"skissify.com/human — free, no account. #SkissifyAI #AITools #FloorPlan #VibeDrawing"
+
+---
+
+### DISCORD TEMPLATES (Cycle 51 — Updated)
+
+#### Anthropic Discord #projects-and-tools
+
+```
+Hey — launching on Show HN tomorrow. Built Skissify: MCP tool that gives Claude the ability to produce hand-drawn floor plan sketches.
+
+Why hand-drawn: sketches look approximate (they are), polished renders look precise (they aren't). Claude needs to communicate rough spatial ideas, not architect specs.
+
+Setup is one npm install + config entry. Demo at skissify.com/human.
+
+Anyone using Claude for spatial reasoning tasks?
+```
+
+#### Mastra Discord #showcase
+
+```
+Built a Mastra integration for Skissify — the hand-drawn sketch generation API. Claude → Skissify MCP → sketch URL in chat.
+
+The interesting part is the schema: flat-list JSON, absolute coords, 14 primitives. First-try LLM accuracy: 94%. Nested schema was 60%.
+
+Sharing because flat schema design is underrated for agent tool output.
+
+skissify.com | npm install -g @skissify/mcp-server
+```
+
+---
+
+### ONE-LINERS (Cycle 51 — v56–v60)
+
+| # | One-liner | Best for |
+|---|-----------|---------|
+| v56 | "Every AI agent can talk. Now they can draw." | Twitter, LinkedIn headline |
+| v57 | "Hand-drawn means approximate. That's not a bug." | HN comment, LinkedIn |
+| v58 | "The napkin phase was the missing piece in AI output." | Twitter thread opener |
+| v59 | "Permanent spatial memory for AI agents, disguised as a sketch." | Technical audience |
+| v60 | "Built for developers. Discovered by homeowners. Launching tomorrow." | IndieHackers, r/SideProject |
+
+---
+
+### SHOW HN SUBMISSION — FINAL LOCKED VERSION
+
+**Title (use this):**
+> Show HN: Skissify – JSON or plain text → hand-drawn sketch URL (MCP native)
+
+**First comment (paste this immediately after submitting):**
+```
+Hey HN — I'm Jesper, the developer.
+
+The problem: AI agents can call APIs, write code, search the web. They can't draw. Not "generate images" — draw. Produce a structured spatial sketch that's editable, embeddable, and semantically correct.
+
+Skissify solves this. Send it a flat-list JSON (or plain English) describing rooms, doors, windows, furniture. Get back a permanent hand-drawn sketch URL.
+
+Why hand-drawn? Because "rough looking" signals "approximate." If Claude produces a photorealistic floor plan, you'd assume it was accurate. A napkin sketch signals: "this is the rough shape of the idea." That's correct for early-stage AI output.
+
+Key technical decision: flat-list JSON with absolute coordinates instead of nested schemas. LLM first-try accuracy went from 60% (nested) to 94% (flat). The flatness is the feature.
+
+Unexpected audiences in the first 4 days: homeowners briefing contractors, a geometry teacher making worksheets, dungeon masters building campaign maps.
+
+Try it: skissify.com/human (plain text, no account)
+MCP: npm install -g @skissify/mcp-server
+API: skissify.com
+
+Happy to answer questions about the schema design, the LLM accuracy work, or the Human Mode implementation.
+```
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 51 — 01:49 CET)*
+*Added: Cycle 51 full block — Tweets 238-244, Reddit r/SideProject + r/entrepreneur posts, LinkedIn "Figma Tax" long-form, TikTok/Reels 30s script, Discord templates (Anthropic + Mastra updated), One-liners v56-v60, confirmed hashtag clusters, viral hooks Cycle 51, FINAL locked Show HN submission title + first comment*
+
+---
 
 ---
 

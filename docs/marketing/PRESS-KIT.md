@@ -1788,3 +1788,105 @@ Solo dev. Built Skissify in 48 hours. Wanted AI agents to draw. Accidentally bui
 6. Mention: "Same tool. Two entry points — human or AI."
 
 ---
+
+## CYCLE 51 ADDITIONS — Monday March 30, 2026 — 01:49 CET — LAUNCH EVE
+
+### SHOW HN LAUNCH: Tuesday March 31, 2026 — 09:00 CET
+
+---
+
+### MEDIA ALERT — LAUNCH DAY (Use for Same-Day Email Blasts)
+
+**SUBJECT:** Show HN today: The API that lets AI agents draw floor plans (not just describe them)
+
+**BODY:**
+Hi [name],
+
+Launching on Hacker News today (Show HN, ~09:00 CET Tuesday March 31).
+
+One-liner: Skissify is a REST API and MCP tool that converts text descriptions into hand-drawn architectural sketches. AI agents like Claude call it natively; humans can use it at skissify.com/human.
+
+Why it matters: AI agents can write, code, and reason about spatial layouts — but they cannot draw them. Skissify closes that gap with a schema optimized for LLMs (94% first-try accuracy vs. 60% for standard nested JSON).
+
+Three unexpected early audiences: homeowners briefing contractors, geometry teachers making worksheets, dungeon masters building campaign maps.
+
+Demo (30 seconds): skissify.com/human — type any room layout description, get a sketch, share the URL.
+
+HN thread (live from ~09:00 CET): https://news.ycombinator.com
+
+Happy to provide screenshots, a custom demo, or a call. Built by one developer in 48 hours, now 4 days post-soft-launch.
+
+Best,
+Jesper Hakansson
+Founder, Skissify
+
+---
+
+### SCREENSHOTS CHECKLIST v5 (Updated for Launch Day)
+
+| # | Screenshot | Dimensions | Status | Priority |
+|---|------------|-----------|--------|---------|
+| 1 | Human Mode: text input + sketch output side by side | 1600x900 | NEEDED | **BLOCKER** |
+| 2 | Claude Desktop MCP: chat showing sketch URL embedded | 1600x900 | NEEDED | **BLOCKER** |
+| 3 | Blueprint style: floor plan with dimensions | 1600x900 | NEEDED | HIGH |
+| 4 | JSON input sketch output (split screen) | 1600x900 | NEEDED | HIGH |
+| 5 | 4 styles side-by-side (napkin/blueprint/technical/rough) | 1600x900 | NEEDED | Product Hunt |
+| 6 | Mobile browser: sketch on iPhone screen | 1200x630 | NEEDED | Consumer |
+| 7 | Mastra TypeScript code + sketch output | 1600x900 | NICE | Dev.to |
+| 8 | Dungeon map example | 800x800 | NICE | Gaming |
+| 9 | Geometry worksheet with shapes | 800x800 | NICE | EdTech |
+| 10 | n8n workflow calling Skissify API | 1600x900 | NICE | Automation |
+
+**CRITICAL:** Screenshots 1 + 2 must exist before HN submit. Everything else is bonus.
+
+---
+
+### LAUNCH DAY QUOTE BANK (Ready to Paste)
+
+For journalists asking about the product:
+"The visual primitive AI agents were missing. Text in, sketch URL out. Permanent, shareable, semantically correct."
+
+For journalists asking about the audience:
+"I built it for AI developers. The first unexpected user was a dungeon master asking for more polygon shapes. The second was a homeowner who could not explain her renovation idea in words. The third was a geometry teacher."
+
+For journalists asking about the technical decision:
+"The key insight: flat-list JSON with absolute coordinates achieves 94% first-try LLM accuracy. Nested schemas get ~60%. Flatness is the feature — LLMs think in lists, not trees."
+
+For journalists asking about competition:
+"Excalidraw is for humans drawing. Skissify is for AI agents drawing. They are sequential, not competitive. The napkin comes before Figma; Skissify is the AI napkin."
+
+---
+
+### PRODUCT TAGLINE DECISION — FINAL
+
+**Primary:** "The sketch layer for AI agents"
+**Technical:** "JSON or plain text to hand-drawn sketch URL (MCP native)"
+**Consumer:** "Describe it. Get a sketch. Share it."
+**Punchy:** "Every AI agent can talk. Now they can draw."
+
+Use Primary for LinkedIn header, HN title context, press.
+Use Technical for Show HN title.
+Use Consumer for Human Mode landing page headline.
+Use Punchy for Twitter bio, one-liner drops.
+
+---
+
+### QUICK FACTS v5 (Launch Day)
+
+- **Founded:** March 2026
+- **Soft launch:** Friday March 27, 2026
+- **Show HN:** Tuesday March 31, 2026 — 09:00 CET
+- **Team:** 1 developer + AI agents
+- **Pricing:** Free tier + paid API
+- **Schema:** Open spec flat-list, absolute coords, 14 primitives
+- **LLM first-try accuracy:** 94% (Claude), 88% (GPT-4o)
+- **MCP install:** npm install -g @skissify/mcp-server
+- **Human Mode:** skissify.com/human (no account, no JSON)
+- **Unexpected audiences:** Homeowners, geometry teachers, dungeon masters
+- **Blog posts written:** 104+ (for SEO + authority building)
+- **Days from idea to launch:** 4
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 51 — 01:49 CET)*
+*Added: Media alert (same-day email template), Screenshots checklist v5 (10 items, priority ranked), Launch Day Quote Bank (4 journalist scenarios), Founder social handles, Final tagline decision matrix, Quick facts v5*

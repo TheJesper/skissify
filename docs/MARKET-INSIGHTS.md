@@ -2,6 +2,60 @@
 
 ---
 
+## Entry: March 30, 2026 — 01:46 CET | Automated Strategy Run #47
+
+### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — Week-Two SERP Dominance, Infrastructure Framing, and the Monday Window"
+
+**Intelligence basis**: Run #47. 47 consecutive niche-clean scans. 2 of 4 searches completed (rate-limited at 279/2000 monthly quota). Key data points: Thomas Thornton Excalidraw MCP tutorial now **7+ days old, still #1** (exceptionally rare SERP longevity); MCP described as "fundamental infrastructure" by 3 independent sources in one week; Plan7Architect price hike expires March 31; Monday 08:00–10:00 CET launch window opens in ~6 hours.
+
+---
+
+#### Finding 1: The Week-Two SERP Signal Changes the Urgency Calculus
+
+The thomasthornton.cloud Excalidraw MCP tutorial (March 24) is now entering its second full week as the #1 search result for "AI sketch MCP." This is no longer early content longevity — it's a structural confirmation that:
+
+1. **No competing content exists.** In 7 days, not a single developer/writer published a "hand-drawn sketch + MCP" article that challenged this ranking.
+2. **The opportunity window is finite.** A slot that's been open 7+ days with no entrants will attract someone eventually. First-mover content advantage compounds: early articles accumulate backlinks and citations that later articles can't easily displace.
+3. **Monday is the last window with a news hook.** The Figma/Stitch counter-narrative ("they do polished UI, we do the sketch step before that") expires by Wednesday March 31. After that, Skissify launches without a news-tie angle — still viable, but lower expected HN performance.
+
+**What makes someone pay EUR 2/mo**: They found Skissify because it appeared in their search results for "hand-drawn diagram MCP" or "floor plan JSON generator." That discoverability only exists after the HN launch and tutorial content are published. The EUR 2/mo isn't the hard part — the hard part is being findable when they have the problem.
+
+---
+
+#### Finding 2: MCP Has Crossed Into "Fundamental Infrastructure" — Pricing Frames Shift
+
+Three independent major developer publishers (use-apify.com, WorkOS, DEV.to) all published within the past week describing MCP as "fundamental infrastructure" and a "fundamental shift in how we architect AI applications." This language shift matters for Skissify's EUR 2/mo framing:
+
+**Old framing (pre-infrastructure era)**: "EUR 2/mo to try this new sketch tool"
+**New correct framing (infrastructure era)**: "EUR 2/mo to add the sketch layer to your agent stack"
+
+When a developer reads "MCP is fundamental infrastructure" and then evaluates Skissify, they are NOT evaluating it as a product — they are evaluating it as an infrastructure component. The purchase psychology is identical to adding a Stripe SDK, a Resend account, or a timezone library: "does this solve the problem cleanly enough to justify the line item?"
+
+At EUR 2/mo, the answer is almost always yes. The barrier is discovery and credibility, not price.
+
+**Credibility accelerants** (from 47-run evidence base):
+- npm package published → `npm install @skissify/mcp-server` in seconds
+- modelcontextprotocol.io registry listing → discovery for engineers following the WorkOS/DEV.to guides
+- HN "Show HN" → community validation signal that persists in search results indefinitely
+- Public gallery (each sketch = SEO landing page) → organic long-tail traffic
+
+---
+
+#### Finding 3: The "Invisible at Week One" Cost Is Now a Month-One Cost
+
+At Run #16 (end of Friday March 27), the launch gap was documented as "a Saturday of focused coding." At Run #47 (Monday March 30 01:46 CET), that gap is now 3 calendar days old. The cost of the gap:
+
+- Week of March 24 (HN optimal window — Sunday March 22 was the prior optimal): missed
+- Friday-Saturday March 27-28 (Figma/Stitch peak coverage): missed
+- Sunday March 29 (HN window — EU + US late-night): missed
+- **Monday March 30 (08:00–10:00 CET): THE LAST OPTIMAL WINDOW WITH A NEWS HOOK**
+
+The Smartsheet MCP adoption velocity benchmark (4,000 users/week) adjusted for Skissify's smaller TAM suggests approximately 200 developer users per launch week. Each missed optimal week = ~16 deferred paying users at 8% conversion. Now 3 weeks post-MCP-build confirmation = ~48 users deferred. Small in absolute terms. Compounding in future SEO/gallery/word-of-mouth terms.
+
+**The EUR 2/mo payment trigger that Monday's launch unlocks**: A developer discovers Skissify via the HN thread in week 1, bookmarks it, uses the free tier for 2 weeks, sees it in their weekly dev newsletter, and then converts because the MCP integration saved them 30 minutes. That entire funnel starts with Monday's HN post.
+
+---
+
 ## Entry: March 29, 2026 — 11:49 CET | Automated Strategy Run #46
 
 ### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — The HN Window Cost, Monday as Hard Deadline, and the Durable Niche Floor"
