@@ -151,6 +151,8 @@
 
 - [x] **`/api/render` — Direct SVG render endpoint** — `POST /api/render` accepts a `SketchData` manifest and returns a hand-drawn SVG directly (`Content-Type: image/svg+xml`). No auth, no database, instant output. Also accepts `?format=json` (or `format` in body) to get `{ svg, width, height }` JSON. Accepts both `{ data: SketchData }` envelope and bare `SketchData` at top level for convenience. Shares the same rate limiter as other endpoints. Full CORS support for cross-origin agent use. `/api/manifest` updated to document the endpoint and its two response modes. `/for-agents` page updated: step 3 now shows the render endpoint with a curl example; save-and-share moved to step 4; both curl snippets shown side-by-side. Build passes — `/api/render` shows as a dynamic route.
 
+- [x] **Single-touch tap-to-select and drag-to-move on mobile** — Mobile users can now tap any element to select it (12px tolerance, 400ms tap window) and drag a selected element with one finger to move it. Single-finger drag on empty canvas pans the view. Two-finger pinch/pan unchanged. Grid snap respected during touch drag. Undo committed on touch-end, same as mouse drag. Previously the entire Selection panel was unreachable on touchscreens — all 14 element types are now fully interactable via touch.
+
 ## Suggested Features for Launch Readiness
 
 ### Authentication
