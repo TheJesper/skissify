@@ -90,6 +90,10 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Per-element font override for text and dim elements** — When any `text` or `dim` element is selected, a new "Element font" row appears in the Selection panel with 6 font buttons: Courier, Georgia, Arial, Caveat, Kalam, JetBrains Mono. Clicking a button sets the `fontFamily` field directly on the selected element(s), overriding the sketch-level text/dim font. A small "✕ clear" button removes the per-element override so the element falls back to the sketch default. Works for single and multi-select (all selected text/dim elements updated at once). Fully undo/redo integrated. Wired into both `/` and `/editor` pages, desktop sidebar and mobile bottom-sheet. The `fontFamily` field was already stored in element JSON and respected by the canvas renderer and SVG exporter — this feature adds the missing UI to set it without editing raw JSON.
+
+
+
 - [x] **Smart alignment guides during drag** — When dragging selected elements, live red dashed guide lines appear on the canvas whenever a dragged element's edge or center aligns within 6px of any non-selected element's edge or center. Vertical guides (red vertical lines) fire on left edge / center / right edge matches; horizontal guides on top / center / bottom matches. Guides clear automatically on drop. Works across all 14 element types on both `/` and `/editor` pages. Implemented via `computeAlignmentGuides()` + `getElementSnapEdges()` helper functions; guides rendered directly on the canvas using the centering transform for perfect visual alignment. Uses solarized red (`#dc322f`) with 70% opacity, 4/4 dash pattern.
 
 
