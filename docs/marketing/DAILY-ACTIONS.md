@@ -2,6 +2,60 @@
 
 ---
 
+## 2026-03-30 (Monday) — Proposed by Automated Strategy Run #44 (09:03 CET, Sunday March 29)
+
+### Context: **44 consecutive niche-clean scans. `@skissify/mcp-server` dist/ CONFIRMED. HN window closes ~11:00 CET TODAY. Supabase MCP v0.7.0 sets Zod quality bar. Floor plan software roundup active with zero MCP tools (techjockey.com). Plan7Architect price hike closes Tuesday March 31.**
+
+---
+
+### 🔴 Action 1 (TODAY Sunday — HN window closes ~11:00 CET) — Publish MCP + Post HN
+
+The HN window is open for approximately 2 more hours (until ~11:00 CET). If MCP is not published today, the Figma/Stitch counter-narrative loses peak freshness by Monday.
+
+```bash
+# 1. Add to mcp-server/package.json:
+#    "publishConfig": { "access": "public" }
+# 2. cd W:/code/skissify/mcp-server
+# 3. npm publish --access public
+# 4. Verify: npm view @skissify/mcp-server (wait 2–3 min)
+# 5. Copy HN post from docs/marketing/HACKER-NEWS.md and publish
+```
+
+If HN window is missed today, fallback: post Monday 08:00–10:00 CET (second-best window).
+
+---
+
+### 🔴 Action 2 (Monday March 30) — Submit to Floor Plan Software Roundups Before Plan7Architect Window Closes
+
+techjockey.com "Best Floor Plan Software in 2026" (3 days ago) has **zero AI-native, zero MCP tools** in its listing. This is a high-traffic SEO page that will drive floor plan software searches for months.
+
+**Steps**:
+1. Find contact/submission form on techjockey.com
+2. Submit Skissify as "AI-native programmatic floor plan generator" (new category, not replacing existing tools)
+3. Keyword pitch: "Only floor plan tool with JSON API + MCP integration for AI agents"
+4. Submit similar pitch to: capterra.com/floor-plan-software, getapp.com, g2.com (floor plan category)
+5. Write 200-word "Plan7Architect alternatives" blog post while price hike window is still active (SEO micro-win closes Tuesday March 31)
+
+---
+
+### 🟡 Action 3 (Monday March 30) — Add Zod Output Schemas to MCP Server (v0.2 Quality Sprint)
+
+Supabase MCP v0.7.0 (popularaitools.ai, 3 days ago) shipped typed Zod output schemas — this is now the production quality standard for 2026 MCP tools.
+
+**Steps**:
+1. Open `W:/code/skissify/mcp-server/src/index.ts`
+2. Add Zod output schema definitions for each tool response:
+   - `skissify_create_sketch`: `{ sketchId: string, svgUrl: string, elementCount: number }`
+   - `skissify_create_floor_plan`: `{ sketchId: string, svgUrl: string, rooms: number, totalArea?: number }`
+   - `skissify_export_sketch`: `{ url: string, format: 'svg' | 'png', bytes: number }`
+3. Export `createToolSchemas()` for Vercel AI SDK compatibility
+4. Bump version to 1.0.1, re-publish
+5. Add "Typed outputs (Zod)" to README features list — this is a differentiator vs most sketch MCPs
+
+**Why this matters for EUR 2/mo buyers**: Developers paying EUR 2/mo are integrating Skissify into TypeScript pipelines. Typed outputs eliminate defensive null-checking and make Skissify feel like first-class infrastructure, not a hobby project.
+
+---
+
 ## 2026-03-29 (Sunday) — Updated by Automated Strategy Run #43 (07:55 CET, Sunday March 29)
 
 ### Context: **43 consecutive niche-clean scans. `@skissify/mcp-server` dist/ CONFIRMED. `publishConfig` missing — 30-second fix. HN window IS OPEN RIGHT NOW (07:55 CET). xTiles + Flow newly listed on PH Eraser alternatives (non-competitive). graphically.io AI tools roundup published 16h ago — post-launch submission target. Per-seat pricing dying per businessupside.com — Skissify's per-render model is ahead of the curve.**

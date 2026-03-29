@@ -15,7 +15,8 @@ export type ElementType =
   | "door-slide"
   | "stair"
   | "opening"
-  | "column";
+  | "column"
+  | "path";
 
 export interface BaseElement {
   type: ElementType;
@@ -176,6 +177,12 @@ export interface OpeningElement extends BaseElement {
   y2?: number;
 }
 
+export interface PathElement extends BaseElement {
+  type: "path";
+  /** Array of {x, y} points forming the freehand path */
+  points: { x: number; y: number }[];
+}
+
 export interface ColumnElement extends BaseElement {
   type: "column";
   /** POC format uses x/y/s */
@@ -202,7 +209,8 @@ export type SketchElement =
   | DoorSlideElement
   | StairElement
   | OpeningElement
-  | ColumnElement;
+  | ColumnElement
+  | PathElement;
 
 /**
  * Available font families for text rendering.

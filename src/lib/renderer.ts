@@ -347,6 +347,14 @@ function computeBoundingBox(
       minY = Math.min(minY, cy - r);
       maxX = Math.max(maxX, cx + r);
       maxY = Math.max(maxY, cy + r);
+    } else if ("points" in el && Array.isArray((el as unknown as { points: unknown }).points)) {
+      const pts = (el as unknown as { points: { x: number; y: number }[] }).points;
+      for (const p of pts) {
+        minX = Math.min(minX, p.x);
+        minY = Math.min(minY, p.y);
+        maxX = Math.max(maxX, p.x);
+        maxY = Math.max(maxY, p.y);
+      }
     } else if ("x" in el && "y" in el) {
       const x = el.x as number, y = (el as { y: number }).y;
       minX = Math.min(minX, x);
@@ -412,6 +420,14 @@ function getElementCenter(el: SketchElement): { x: number; y: number } {
   }
   if ("x" in el && "y" in el && "w" in el && "h" in el) {
     return { x: (el.x as number) + (el.w as number) / 2, y: (el as { y: number }).y + (el.h as number) / 2 };
+  }
+  if ("points" in el && Array.isArray((el as unknown as { points: unknown }).points)) {
+    const pts = (el as unknown as { points: { x: number; y: number }[] }).points;
+    if (pts.length > 0) {
+      let sx = 0, sy = 0;
+      for (const p of pts) { sx += p.x; sy += p.y; }
+      return { x: sx / pts.length, y: sy / pts.length };
+    }
   }
   if ("x" in el && "y" in el) {
     return { x: el.x as number, y: (el as { y: number }).y };
@@ -849,6 +865,18 @@ function renderElement(
       // X diagonal cross
       HL(ctx, ccx - half, ccy - half, ccx + half, ccy + half, { ...opts, seed: opts.seed! + 5 }, color, tool, paper, rng, h);
       HL(ctx, ccx + half, ccy - half, ccx - half, ccy + half, { ...opts, seed: opts.seed! + 6 }, color, tool, paper, rng, h);
+      break;
+    }
+
+    case "path": {
+      if (el.points && el.points.length >= 2) {
+        // Render each segment with wobble for a natural hand-drawn look
+        for (let i = 0; i < el.points.length - 1; i++) {
+          const p1 = el.points[i];
+          const p2 = el.points[i + 1];
+          HL(ctx, p1.x, p1.y, p2.x, p2.y, { ...opts, seed: opts.seed! + i }, color, tool, paper, rng, h);
+        }
+      }
       break;
     }
   }

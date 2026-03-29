@@ -192,6 +192,16 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
         case "column":
           newEl = { type: "column", cx, cy, size: 12, ...baseProps };
           break;
+        case "path":
+          // Default path: a small squiggle
+          newEl = { type: "path", points: [
+            { x: cx - 40, y: cy },
+            { x: cx - 20, y: cy - 15 },
+            { x: cx, y: cy + 10 },
+            { x: cx + 20, y: cy - 5 },
+            { x: cx + 40, y: cy },
+          ], ...baseProps };
+          break;
         default:
           return;
       }
@@ -201,6 +211,24 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
       });
     },
     [sketch, updateSketch]
+  );
+
+  /**
+   * Add a freehand path element from an array of points.
+   * Returns the index of the newly added element.
+   */
+  const addPathElement = useCallback(
+    (points: { x: number; y: number }[]) => {
+      if (points.length < 2) return -1;
+      const newEl = { type: "path" as const, points, color: sketch.inkColor };
+      const newIdx = sketch.elements.length;
+      updateSketch({
+        elements: [...sketch.elements, newEl as SketchData["elements"][number]],
+      });
+      setSelectedElements(new Set([newIdx]));
+      return newIdx;
+    },
+    [sketch, updateSketch, setSelectedElements]
   );
 
   /**
@@ -256,6 +284,15 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
           break;
         case "column":
           newEl = { type: "column", cx, cy, size: 12, ...baseProps };
+          break;
+        case "path":
+          newEl = { type: "path", points: [
+            { x: cx - 40, y: cy },
+            { x: cx - 20, y: cy - 15 },
+            { x: cx, y: cy + 10 },
+            { x: cx + 20, y: cy - 5 },
+            { x: cx + 40, y: cy },
+          ], ...baseProps };
           break;
         default:
           return;
@@ -661,6 +698,14 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
             const cx = (a.cx as number), cy = (a.cy as number), r = a.r as number;
             return { left: cx - r, top: cy - r, right: cx + r, bottom: cy + r, cx, cy };
           }
+          if ("points" in el && Array.isArray(a.points)) {
+            const pts = a.points as { x: number; y: number }[];
+            if (pts.length > 0) {
+              let l = Infinity, t = Infinity, r = -Infinity, b = -Infinity;
+              for (const p of pts) { l = Math.min(l, p.x); t = Math.min(t, p.y); r = Math.max(r, p.x); b = Math.max(b, p.y); }
+              return { left: l, top: t, right: r, bottom: b, cx: (l + r) / 2, cy: (t + b) / 2 };
+            }
+          }
           if ("x" in el && "y" in el) {
             const x = a.x as number, y = a.y as number;
             return { left: x, top: y, right: x + 40, bottom: y + 20, cx: x + 20, cy: y + 10 };
@@ -857,6 +902,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     updateFromJson,
     addElement,
     addElementAt,
+    addPathElement,
     deleteSelected,
     moveSelected,
     commitDrag,
@@ -898,6 +944,10 @@ function translateElement(
   dy: number
 ): SketchData["elements"][number] {
   const a = el as unknown as Record<string, unknown>;
+  if ("points" in el && Array.isArray(a.points)) {
+    const pts = a.points as { x: number; y: number }[];
+    return { ...el, points: pts.map((p) => ({ x: p.x + dx, y: p.y + dy })) };
+  }
   if ("x1" in el && "y1" in el && "x2" in el && "y2" in el) {
     return { ...el, x1: (a.x1 as number) + dx, y1: (a.y1 as number) + dy, x2: (a.x2 as number) + dx, y2: (a.y2 as number) + dy };
   }

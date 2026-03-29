@@ -26,6 +26,14 @@ function getElementBounds(el: SketchElement): { x: number; y: number; w: number;
     const { cx, cy, r } = asCirc(el);
     return { x: cx - r - 5, y: cy - r - 5, w: r * 2 + 10, h: r * 2 + 10 };
   }
+  if ("points" in el && Array.isArray((el as unknown as { points: unknown }).points)) {
+    const pts = (el as unknown as { points: { x: number; y: number }[] }).points;
+    if (pts.length > 0) {
+      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+      for (const p of pts) { minX = Math.min(minX, p.x); minY = Math.min(minY, p.y); maxX = Math.max(maxX, p.x); maxY = Math.max(maxY, p.y); }
+      return { x: minX - 5, y: minY - 5, w: maxX - minX + 10, h: maxY - minY + 10 };
+    }
+  }
   if ("x" in el && "y" in el) {
     const { x, y } = asPos(el);
     return { x: x - 5, y: y - 20, w: 80, h: 30 };
@@ -275,6 +283,10 @@ interface CanvasProps {
   selectedLocked?: boolean;
   /** Whether any selected element belongs to a group (used to build context menu) */
   selectedHasGroup?: boolean;
+  /** Freehand draw mode — when true, mouse/touch draws a new path element */
+  drawMode?: boolean;
+  /** Called with simplified points when freehand draw stroke finishes */
+  onDrawPath?: (points: { x: number; y: number }[]) => void;
 }
 
 /** Returns the editable text content of an element, or null if not text-editable */
@@ -312,6 +324,8 @@ export default function Canvas({
   onContextMenuAction,
   selectedLocked,
   selectedHasGroup,
+  drawMode,
+  onDrawPath,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -362,6 +376,11 @@ export default function Canvas({
   // Smart alignment guides: list of {axis: 'h'|'v', pos: number} in element-space
   const [smartGuides, setSmartGuides] = useState<Array<{ axis: "h" | "v"; pos: number }>>([]);
   const smartGuidesRef = useRef<Array<{ axis: "h" | "v"; pos: number }>>([]);
+
+  // Freehand draw state
+  const isDrawing = useRef(false);
+  const drawPoints = useRef<{ x: number; y: number }[]>([]);
+  const [drawPreview, setDrawPreview] = useState<{ x: number; y: number }[] | null>(null);
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
@@ -629,7 +648,27 @@ export default function Canvas({
       }
       ctx.restore();
     }
-  }, [sketch, canvasW, canvasH, selectedElements]);
+
+    // Draw freehand preview path while drawing
+    if (drawPreview && drawPreview.length >= 2) {
+      const ctd = computeCenterTransform(sketch.elements, canvasW, canvasH);
+      ctx.save();
+      ctx.translate(ctd.tx, ctd.ty);
+      if (ctd.scale < 1) ctx.scale(ctd.scale, ctd.scale);
+      ctx.strokeStyle = sketch.inkColor || "#333";
+      ctx.lineWidth = 1.5 / (ctd.scale > 0 ? ctd.scale : 1);
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.globalAlpha = 0.6;
+      ctx.beginPath();
+      ctx.moveTo(drawPreview[0].x, drawPreview[0].y);
+      for (let i = 1; i < drawPreview.length; i++) {
+        ctx.lineTo(drawPreview[i].x, drawPreview[i].y);
+      }
+      ctx.stroke();
+      ctx.restore();
+    }
+  }, [sketch, canvasW, canvasH, selectedElements, drawPreview]);
 
   useEffect(() => {
     draw();
@@ -788,6 +827,15 @@ export default function Canvas({
 
       const { mx, my } = clientToCanvas(e.clientX, e.clientY);
 
+      // Freehand draw mode — start recording path
+      if (drawMode && onDrawPath) {
+        isDrawing.current = true;
+        drawPoints.current = [{ x: mx, y: my }];
+        setDrawPreview([{ x: mx, y: my }]);
+        e.preventDefault();
+        return;
+      }
+
       // Check resize handles first (only when exactly 1 element selected and not locked)
       if (onResizeElement && selectedElements.size === 1) {
         const handles = getActiveHandles();
@@ -864,6 +912,17 @@ export default function Canvas({
           y: p.y + (e.clientY - lastMouse.current.y),
         }));
         lastMouse.current = { x: e.clientX, y: e.clientY };
+        return;
+      }
+
+      // Freehand draw — add points
+      if (isDrawing.current && drawMode) {
+        const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+        drawPoints.current.push({ x: mx, y: my });
+        // Throttle preview updates — only update every 3 points for performance
+        if (drawPoints.current.length % 3 === 0) {
+          setDrawPreview([...drawPoints.current]);
+        }
         return;
       }
 
@@ -971,6 +1030,21 @@ export default function Canvas({
   const handleMouseUp = useCallback(
     (e: React.MouseEvent) => {
       isPanning.current = false;
+
+      // Finalize freehand draw
+      if (isDrawing.current && drawMode && onDrawPath) {
+        isDrawing.current = false;
+        const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+        drawPoints.current.push({ x: mx, y: my });
+        // Simplify the path using Ramer-Douglas-Peucker
+        const simplified = simplifyPath(drawPoints.current, 2);
+        setDrawPreview(null);
+        if (simplified.length >= 2) {
+          onDrawPath(simplified);
+        }
+        drawPoints.current = [];
+        return;
+      }
 
       // Finalize resize
       if (activeResizeHandle.current !== null) {
@@ -1540,6 +1614,13 @@ function hitTest(
     const { cx, cy, r } = asCirc(el);
     return Math.sqrt((mx - cx) ** 2 + (my - cy) ** 2) < r + margin;
   }
+  if ("points" in el && Array.isArray((el as unknown as { points: unknown }).points)) {
+    const pts = (el as unknown as { points: { x: number; y: number }[] }).points;
+    for (let i = 0; i < pts.length - 1; i++) {
+      if (distToSegment(mx, my, pts[i].x, pts[i].y, pts[i + 1].x, pts[i + 1].y) < margin) return true;
+    }
+    return false;
+  }
   if ("x" in el && "y" in el) {
     const { x, y } = asPos(el);
     return mx >= x - margin && mx <= x + 80 && my >= y - 20 && my <= y + margin;
@@ -1570,6 +1651,12 @@ function boxHitTest(
     const c = asCirc(el);
     return c.cx - c.r <= x2 && c.cx + c.r >= x1 && c.cy - c.r <= y2 && c.cy + c.r >= y1;
   }
+  if ("points" in el && Array.isArray((el as unknown as { points: unknown }).points)) {
+    const pts = (el as unknown as { points: { x: number; y: number }[] }).points;
+    let pMinX = Infinity, pMinY = Infinity, pMaxX = -Infinity, pMaxY = -Infinity;
+    for (const p of pts) { pMinX = Math.min(pMinX, p.x); pMinY = Math.min(pMinY, p.y); pMaxX = Math.max(pMaxX, p.x); pMaxY = Math.max(pMaxY, p.y); }
+    return pMinX <= x2 && pMaxX >= x1 && pMinY <= y2 && pMaxY >= y1;
+  }
   if ("x" in el && "y" in el) {
     const p = asPos(el);
     return p.x <= x2 && p.x + 80 >= x1 && p.y - 20 <= y2 && p.y + 5 >= y1;
@@ -1594,4 +1681,34 @@ function distToSegment(
   const nearX = x1 + t * dx;
   const nearY = y1 + t * dy;
   return Math.sqrt((px - nearX) ** 2 + (py - nearY) ** 2);
+}
+
+/** Ramer-Douglas-Peucker path simplification — reduces point count while preserving shape */
+function simplifyPath(
+  points: { x: number; y: number }[],
+  epsilon: number
+): { x: number; y: number }[] {
+  if (points.length <= 2) return points;
+
+  // Find the point with the maximum distance from the line between first and last
+  let maxDist = 0;
+  let maxIdx = 0;
+  const first = points[0];
+  const last = points[points.length - 1];
+
+  for (let i = 1; i < points.length - 1; i++) {
+    const d = distToSegment(points[i].x, points[i].y, first.x, first.y, last.x, last.y);
+    if (d > maxDist) {
+      maxDist = d;
+      maxIdx = i;
+    }
+  }
+
+  if (maxDist > epsilon) {
+    const left = simplifyPath(points.slice(0, maxIdx + 1), epsilon);
+    const right = simplifyPath(points.slice(maxIdx), epsilon);
+    return [...left.slice(0, -1), ...right];
+  }
+
+  return [first, last];
 }

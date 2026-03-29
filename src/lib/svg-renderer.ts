@@ -137,6 +137,14 @@ function computeBoundingBox(
       minY = Math.min(minY, a.cy - a.r);
       maxX = Math.max(maxX, a.cx + a.r);
       maxY = Math.max(maxY, a.cy + a.r);
+    } else if ("points" in el && Array.isArray((el as unknown as { points: unknown }).points)) {
+      const pts = (el as unknown as { points: { x: number; y: number }[] }).points;
+      for (const p of pts) {
+        minX = Math.min(minX, p.x);
+        minY = Math.min(minY, p.y);
+        maxX = Math.max(maxX, p.x);
+        maxY = Math.max(maxY, p.y);
+      }
     } else if ("x" in el && "y" in el) {
       minX = Math.min(minX, a.x);
       minY = Math.min(minY, a.y - 20);
@@ -159,6 +167,14 @@ function getElementCenter(el: SketchElement): { x: number; y: number } {
   }
   if ("x" in el && "y" in el && "w" in el && "h" in el) {
     return { x: a.x + a.w / 2, y: a.y + a.h / 2 };
+  }
+  if ("points" in el && Array.isArray((el as unknown as { points: unknown }).points)) {
+    const pts = (el as unknown as { points: { x: number; y: number }[] }).points;
+    if (pts.length > 0) {
+      let sx = 0, sy = 0;
+      for (const p of pts) { sx += p.x; sy += p.y; }
+      return { x: sx / pts.length, y: sy / pts.length };
+    }
   }
   if ("x" in el && "y" in el) {
     return { x: a.x, y: a.y };
@@ -441,6 +457,20 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       const colPoints = wobbleCircle(ccx, ccy, colSize / 2, opts);
       const d = pointsToPath(colPoints, true);
       parts.push(`<path d="${d}" fill="${fillColor}" stroke="${style.stroke}" stroke-width="${style.strokeWidth}" opacity="${style.opacity}" stroke-linecap="round" stroke-linejoin="round"/>`);
+      break;
+    }
+
+    case "path": {
+      const ep = E(el);
+      if (ep.points && ep.points.length >= 2) {
+        // Render each segment with wobble
+        for (let i = 0; i < ep.points.length - 1; i++) {
+          const p1 = ep.points[i];
+          const p2 = ep.points[i + 1];
+          const segPts = wobbleLine(p1.x, p1.y, p2.x, p2.y, { ...opts, seed: opts.seed! + i });
+          parts.push(`<path d="${pointsToPath(segPts)}" ${sa}/>`);
+        }
+      }
       break;
     }
   }
