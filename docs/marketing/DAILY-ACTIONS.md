@@ -2,6 +2,79 @@
 
 ---
 
+## 2026-03-29 (Sunday) — Updated by Automated Strategy Run #42 (06:49 CET, Sunday March 29)
+
+### Context: **42 consecutive niche-clean scans. `@skissify/mcp-server` BUILT AND COMPILED. dist/ CONFIRMED EXISTS (index.js + tools/). NOT ON NPM (E404 confirmed). Missing `publishConfig` field in package.json — 30-second fix then `npm publish`. HN window OPEN NOW (06:49–11:00 CET). GPT FloorPlan Builder discovered in mainstream "best floor plan software" roundups — new SEO battleground confirmed. MCP ecosystem crosses enterprise phase with WorkOS/JFrog coverage.**
+
+---
+
+### 🔴 Action 1 (NOW — 07:00 CET, before HN window closes) — Fix `publishConfig` + `npm publish`
+
+**The single command standing between 42 cycles of preparation and actual revenue.**
+
+`dist/index.js` exists. Package name is correct. The only remaining issue: `publishConfig` may be needed for scoped package publishing.
+
+```bash
+# Step 1: Add publishConfig to package.json
+# In W:/code/skissify/mcp-server/package.json, add:
+# "publishConfig": { "access": "public" }
+
+# Step 2: Check npm login
+cd W:/code/skissify/mcp-server
+npm whoami
+# If not logged in: npm login
+
+# Step 3: Publish
+npm publish --access public
+
+# Step 4: Verify (wait 2-3 min for CDN propagation)
+npm view @skissify/mcp-server
+# Should return package info
+
+# Step 5: Smoke test
+node dist/index.js
+# Must start without errors
+```
+
+**Do NOT post HN until `npm view @skissify/mcp-server` returns package info.**
+
+**Why publishConfig matters**: Without it, scoped packages (`@skissify/`) may default to private, causing publish to fail or require org permissions.
+
+---
+
+### 🔴 Action 2 (08:00–10:00 CET — "Show HN" during peak EU+US window)
+
+**Only valid after npm publish confirms `npm view @skissify/mcp-server` returns data.**
+
+**Post from**: docs/marketing/HACKER-NEWS.md (pre-written post — use verbatim)
+
+Key hook for today's context (Run #42 intelligence update): include the GPT FloorPlan Builder angle in comments if asked about alternatives — "Skissify is EUR 2/mo vs ChatGPT Plus at $20/mo for a floor plan GPT. It's also API-native and works with any LLM."
+
+---
+
+### 🟡 Action 3 (After HN post — same day) — Submit to "Best Floor Plan Software" Roundups
+
+**NEW ACTION from Run #42 intelligence**: GPT FloorPlan Builder is now appearing in mainstream "best floor plan software 2026" lists (theclose.com confirmed 5 days ago). Skissify can displace it in these lists post-launch.
+
+**Target roundups to submit to TODAY**:
+1. theclose.com "5 Best Floor Plan Software in 2026" — contact via site (most urgent — fresh article, actively indexed)
+2. maket.ai/blog/ai-floor-plan-generator-guide-2026 — submit as "programmatic AI floor plan tool"
+3. snaptrude.com/blog/top-18-ai-tools-for-architects-in-2025 — contact for inclusion
+4. Product Hunt Excalidraw alternatives page — submit Skissify post-HN (page updated 15h ago — editorial team is active Sundays)
+5. Product Hunt Eraser alternatives page — submit as "hand-drawn sketch alternative for agent pipelines"
+
+**Key pitch**: "The only AI floor plan tool that outputs JSON-native SVG via MCP. Works with Claude, GPT-4, Gemini. EUR 2/mo vs $20/mo for ChatGPT Plus."
+
+---
+
+### 🟢 Action 4 (Tomorrow, Monday March 30) — Blabcast Report + Plan7Architect SEO window
+
+1. **Plan7Architect price increase closes March 31** (2 days remaining): Publish "Plan7Architect alternatives for architects who want AI-native tools" blog post targeting "plan7architect alternative" keyword. This window closes Tuesday.
+
+2. **MCP registry submissions** (see EMAIL-AND-DIRECTORIES.md): modelcontextprotocol.io, awesome-mcp-servers, LobeHub, claudefa.st, mcpmanager.ai — submit today if npm publish succeeded.
+
+---
+
 ## 2026-03-29 (Sunday) — Proposed by Automated Strategy Run #41 (05:43 CET, Sunday March 29)
 
 ### Context: **41 consecutive niche-clean scans. `@skissify/mcp-server` BUILT AND COMPILED — NOT ON NPM (E404 confirmed this run).** MCP server has 5 tools: `skissify_create_sketch`, `skissify_add_element`, `skissify_create_floor_plan`, `list_element_types`, `skissify_export_sketch`. HN optimal window: **08:00–11:00 CET TODAY — 2 hours 17 minutes away.** Outcome-based billing validated as 2026 model. Domain-specific pricing premium (30–50%) confirms EUR 9/mo Pro test. Brave rate-limited at 251/2000 monthly quota.

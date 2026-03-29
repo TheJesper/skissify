@@ -2,6 +2,75 @@
 
 ---
 
+## Update Log: March 29, 2026 — 06:49 CET | Automated Strategy Run #42
+
+### Status: Sunday morning scan — 3 of 4 searches completed (Brave rate-limited at 260/2000 monthly quota). **MCP server (`@skissify/mcp-server`) dist/ CONFIRMED EXISTS — dist/index.js, dist/tools/ all present. NOT YET PUBLISHED to npm (E404 confirmed). package.json MISSING `publishConfig` field — this is the final 30-second blocker. 42nd consecutive niche-clean scan.**
+
+### 🔴 FINAL DISCOVERY: `publishConfig` Missing From package.json — The Last Unlock
+
+This run performed a direct filesystem check of `W:/code/skissify/mcp-server/package.json`. Findings:
+- `name`: `@skissify/mcp-server` ✅
+- `version`: `1.0.0` ✅
+- `main`: `dist/index.js` ✅
+- `dist/index.js`: **EXISTS** ✅
+- `dist/tools/`: **EXISTS** ✅
+- `publishConfig`: **MISSING** ❌
+
+Without `publishConfig: { "access": "public" }`, running `npm publish --access public` may still work but could fail depending on npm scoped package defaults. Add this field before publishing.
+
+**Fix (30 seconds)**:
+```json
+"publishConfig": { "access": "public" }
+```
+Then: `cd W:/code/skissify/mcp-server && npm publish --access public`
+
+### 🟡 NEW INTELLIGENCE: GPT FloorPlan Builder — ChatGPT GPT Store, Raster 3D Output
+
+**Source**: theclose.com "5 Best Floor Plan Software in 2026" (5 days ago); theresanaiforthat.com; chatgpt.com/g/g-oNFJULbLo-gpt-floorplan-builder
+
+A ChatGPT custom GPT "GPT FloorPlan Builder" has appeared in floor plan software roundups as a notable tool:
+- Developer: Sidra.ai
+- Input: uploaded 2D sketch photo OR natural language description
+- Output: DALL-E generated 3D model renders
+- Distribution: ChatGPT GPT Store (not an MCP server, not an API)
+- **Critical gap vs Skissify**: Raster image output (DALL-E renders), not SVG. No JSON-native input. No MCP. No structured elements. No hand-drawn aesthetic — it's photorealistic 3D. Cannot be embedded in a pipeline. Cannot be called programmatically by an agent.
+- **Risk level**: LOW. This is an image-gen GPT wrapper, not a structured sketch tool. The architectural style and use case are different. Skissify produces structured, editable, hand-drawn SVG. GPT FloorPlan Builder produces pretty 3D raster images.
+- **Signal value**: HIGH — ChatGPT GPTs are now appearing in "best floor plan software" roundups alongside real software. This validates that floor plan generation interest is mainstream enough for AI tools to displace traditional software in SEO lists. Skissify should be in these lists post-launch.
+- **URL discovered in theclose.com list** (5 days ago): First time a ChatGPT GPT appeared alongside Planner 5D, RoomSketcher, etc. in a mainstream "best floor plan software" article.
+
+### 🟢 CONFIRMATION: 42nd Consecutive Niche-Clean Scan
+
+Searches conducted this run:
+1. "Excalidraw tldraw Eraser new features update March 29 2026" ✅ — No new entrants
+2. "MCP ecosystem new tools sketch visualization floor plan launch March 29 2026" ✅ — No new sketch/hand-drawn MCP tools
+3. "GPT FloorPlan Builder OpenAI floor plan sketch tool 2026" ✅ — Raster 3D GPT (see above — non-competitive)
+4. "AI sketch tool MCP hand-drawn diagram new launch March 2026" — Rate-limited (260/2000 quota)
+
+**Results from Run #42 (06:49 CET, Sunday March 29):**
+- **Product Hunt Excalidraw alternatives** (updated **15 hours ago** — 03:49 CET Sunday): STILL only Witeboard, A Web Whiteboard, Traw, Whiteborb. Zero JSON-native, MCP-ready, floor-plan tools. Page updated while this analysis is being written.
+- **opentools.ai CoolMindMaps vs Excalidraw comparison** (9 hours ago — fresh): Mind-mapping comparison. No MCP, no floor plans, no JSON-native.
+- **excalidrawrecorder.com "Complete Guide 2026"** (1 week ago): Still circulating — Excalidraw topology/whiteboard use case. Unchanged.
+- **startupik.com "Design System Architecture Using Excalidraw"** (6 days ago): Startup architecture diagrams. No floor plans, no JSON-native generation.
+- **MCP ecosystem** (workos.com, 3 days ago + use-apify.com, 5 days ago): MCP confirmed as "primary integration layer" for AI tools. No new sketch tools listed.
+- **GPT FloorPlan Builder** (theclose.com, 5 days ago): Raster 3D output, ChatGPT GPT, no MCP. Full details above.
+
+**No new hand-drawn + JSON-native + MCP + floor plan competitor detected. 42 consecutive clean scans.**
+
+### Updated Competitor Matrix (Run #42 — Sunday March 29, 06:49 CET)
+
+| Tool | Status | Skissify Threat |
+|------|--------|-----------------|
+| Excalidraw | PH alternatives updated 15h ago — still topology/Obsidian. No floor plan, no JSON-native. | None |
+| CoolMindMaps | Fresh comparison vs Excalidraw (9h ago). Mind-mapping only. | None |
+| Google Stitch | Canonical stack "generate in Stitch → Figma → Claude Code". Polished UI. | None |
+| Figma | use_figma MCP open beta. Design system lane. | None |
+| tldraw | $6K/yr SDK, no new news. | None |
+| Mermaid MCP | 22+ types, text DSL only. | None |
+| GPT FloorPlan Builder | **NEW** — ChatGPT GPT, raster 3D output, no API/MCP/JSON, appearing in floor plan roundups. | None — raster, no agent compat |
+| **Skissify** | **dist/ CONFIRMED. publishConfig MISSING. 5 min from npm publish. HN window open NOW.** | **Uncontested** |
+
+---
+
 ## Update Log: March 29, 2026 — 05:43 CET | Automated Strategy Run #41
 
 ### Status: Sunday pre-dawn scan — 2 of 3 searches completed (Brave rate-limited at 251/2000 monthly quota). **MCP server (`@skissify/mcp-server`) BUILT and compiled since March 26 — but NOT YET PUBLISHED to npm (E404 confirmed). 41st consecutive niche-clean scan.**
