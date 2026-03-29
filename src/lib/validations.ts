@@ -6,6 +6,10 @@ const elementBaseSchema = z.object({
   strokeWidth: z.number().positive().max(20).optional(),
   rotation: z.number().optional(),
   locked: z.boolean().optional(),
+  /** Fill color for closed shapes */
+  fillColor: z.string().max(30).optional(),
+  /** Group identifier — elements sharing the same groupId are treated as a single unit */
+  groupId: z.string().max(64).optional(),
 });
 
 const lineElementSchema = elementBaseSchema.extend({
@@ -125,12 +129,17 @@ const columnElementSchema = elementBaseSchema.extend({
   s: z.number().positive().optional(),
 });
 
+const pathElementSchema = elementBaseSchema.extend({
+  type: z.literal("path"),
+  points: z.array(z.object({ x: z.number(), y: z.number() })).max(10000),
+});
+
 const sketchElementSchema = z.discriminatedUnion("type", [
   lineElementSchema, rectElementSchema, circleElementSchema,
   arcElementSchema, arrowElementSchema, textElementSchema,
   dashedElementSchema, dimElementSchema, windowElementSchema,
   doorSymbolElementSchema, doorSlideElementSchema, stairElementSchema,
-  openingElementSchema, columnElementSchema,
+  openingElementSchema, columnElementSchema, pathElementSchema,
 ]);
 
 const blueprintMetadataSchema = z.object({
@@ -156,6 +165,8 @@ export const sketchDataSchema = z.object({
   dimFont: z.enum(["courier", "georgia", "arial", "handwritten", "kalam", "jetbrains"]).optional(),
   renderStyle: z.enum(["sketch", "technical", "blueprint"]).optional(),
   metadata: blueprintMetadataSchema,
+  /** Grid snap size in element-space pixels. 0 or undefined = off. */
+  snapGrid: z.number().min(0).max(200).optional(),
   elements: z.array(sketchElementSchema).max(1000),
 });
 
