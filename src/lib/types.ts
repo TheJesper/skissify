@@ -26,6 +26,8 @@ export interface BaseElement {
   rotation?: number;
   /** When true, the element cannot be moved, resized, or deleted via canvas interactions */
   locked?: boolean;
+  /** Group identifier — elements sharing the same groupId are treated as a single unit for selection */
+  groupId?: string;
   /**
    * Fill color for closed shapes (rect, circle, arc, stair, column, door-symbol, door-slide).
    * Use "none" or omit for transparent fill (stroke-only).

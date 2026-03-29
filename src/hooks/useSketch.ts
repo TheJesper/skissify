@@ -749,6 +749,39 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [selectedElements, pushHistory]
   );
 
+  /** Assign a shared groupId to all selected elements (Ctrl+G) */
+  const groupSelected = useCallback(() => {
+    if (selectedElements.size < 2) return;
+    const gid = `g-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
+    setSketch((prev) => {
+      const newElements = prev.elements.map((el, i) => {
+        if (!selectedElements.has(i)) return el;
+        return { ...el, groupId: gid };
+      });
+      const next = { ...prev, elements: newElements as SketchData["elements"] };
+      jsonRef.current = JSON.stringify(next, null, 2);
+      pushHistory(next);
+      return next;
+    });
+  }, [selectedElements, pushHistory]);
+
+  /** Remove groupId from all selected elements (Ctrl+Shift+G) */
+  const ungroupSelected = useCallback(() => {
+    if (selectedElements.size === 0) return;
+    setSketch((prev) => {
+      const newElements = prev.elements.map((el, i) => {
+        if (!selectedElements.has(i)) return el;
+        const { groupId: _removed, ...rest } = el as typeof el & { groupId?: string };
+        void _removed;
+        return rest as SketchData["elements"][number];
+      });
+      const next = { ...prev, elements: newElements as SketchData["elements"] };
+      jsonRef.current = JSON.stringify(next, null, 2);
+      pushHistory(next);
+      return next;
+    });
+  }, [selectedElements, pushHistory]);
+
   /** Toggle locked state on selected elements */
   const toggleLockSelected = useCallback(() => {
     if (selectedElements.size === 0) return;
@@ -853,6 +886,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     reorderSelected,
     toggleLockSelected,
     alignSelected,
+    groupSelected,
+    ungroupSelected,
   };
 }
 

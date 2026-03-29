@@ -63,6 +63,12 @@ interface ControlPanelProps {
   onReorder?: (direction: "front" | "back" | "forward" | "backward") => void;
   /** Called to align 2+ selected elements */
   onAlign?: (mode: "left" | "right" | "top" | "bottom" | "centerH" | "centerV" | "distributeH" | "distributeV") => void;
+  /** Whether any selected element belongs to a group */
+  selectedHasGroup?: boolean;
+  /** Group selected elements (Ctrl+G) */
+  onGroupSelected?: () => void;
+  /** Ungroup selected elements (Ctrl+Shift+G) */
+  onUngroupSelected?: () => void;
   /** Current grid snap size (0 = off) */
   snapGrid?: number;
   /** Called when the user changes grid snap size */
@@ -140,6 +146,9 @@ export default function ControlPanel({
   onSnapGrid,
   metadata,
   onMetadata,
+  selectedHasGroup,
+  onGroupSelected,
+  onUngroupSelected,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -645,6 +654,33 @@ export default function ControlPanel({
                     </button>
                   </div>
                 )}
+              </div>
+            )}
+            {(onGroupSelected || onUngroupSelected) && selectedCount >= 2 && (
+              <div className="space-y-1.5">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide block">
+                  Group
+                </label>
+                <div className="grid grid-cols-2 gap-1">
+                  {onGroupSelected && (
+                    <button
+                      onClick={onGroupSelected}
+                      title="Group selected elements (Ctrl+G)"
+                      className="flex items-center justify-center gap-1 px-2 py-1.5 bg-[#fdf6e3] hover:bg-[#eee8d5] rounded text-[10px] font-medium transition-all border border-[#93a1a1]"
+                    >
+                      <span className="text-sm leading-none">⊞</span> Group
+                    </button>
+                  )}
+                  {onUngroupSelected && selectedHasGroup && (
+                    <button
+                      onClick={onUngroupSelected}
+                      title="Ungroup selected elements (Ctrl+Shift+G)"
+                      className="flex items-center justify-center gap-1 px-2 py-1.5 bg-[#fdf6e3] hover:bg-[#eee8d5] rounded text-[10px] font-medium transition-all border border-[#93a1a1]"
+                    >
+                      <span className="text-sm leading-none">⊟</span> Ungroup
+                    </button>
+                  )}
+                </div>
               </div>
             )}
           </div>

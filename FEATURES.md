@@ -90,6 +90,8 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Element grouping (group/ungroup)** — Select 2+ elements and press Ctrl+G to group them. Grouped elements share a `groupId` field — clicking any member auto-selects the entire group. Shift+click toggles the whole group in/out of the selection. Ctrl+Shift+G ungroups (removes `groupId` from selected elements). Group/Ungroup buttons appear in the Selection panel sidebar when 2+ elements are selected, and in the right-click context menu. Fully undo/redo integrated. `groupId?: string` added to `BaseElement` type (backward-compatible — omitting it has no effect). Works on both `/` and `/editor` pages, desktop sidebar and mobile bottom-sheet ControlPanel.
+
 - [x] **Per-element font override for text and dim elements** — When any `text` or `dim` element is selected, a new "Element font" row appears in the Selection panel with 6 font buttons: Courier, Georgia, Arial, Caveat, Kalam, JetBrains Mono. Clicking a button sets the `fontFamily` field directly on the selected element(s), overriding the sketch-level text/dim font. A small "✕ clear" button removes the per-element override so the element falls back to the sketch default. Works for single and multi-select (all selected text/dim elements updated at once). Fully undo/redo integrated. Wired into both `/` and `/editor` pages, desktop sidebar and mobile bottom-sheet. The `fontFamily` field was already stored in element JSON and respected by the canvas renderer and SVG exporter — this feature adds the missing UI to set it without editing raw JSON.
 
 

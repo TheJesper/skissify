@@ -273,6 +273,8 @@ interface CanvasProps {
   onContextMenuAction?: (actionId: string) => void;
   /** Whether any selected element is locked (used to build context menu) */
   selectedLocked?: boolean;
+  /** Whether any selected element belongs to a group (used to build context menu) */
+  selectedHasGroup?: boolean;
 }
 
 /** Returns the editable text content of an element, or null if not text-editable */
@@ -309,6 +311,7 @@ export default function Canvas({
   onDropElement,
   onContextMenuAction,
   selectedLocked,
+  selectedHasGroup,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -691,13 +694,33 @@ export default function Canvas({
       }
 
       if (hitIdx >= 0) {
+        // Auto-expand to group: if the clicked element has a groupId, select all members
+        const hitEl = sketch.elements[hitIdx];
+        const hitGroupId = (hitEl as unknown as Record<string, unknown>).groupId as string | undefined;
+        const groupIndices: number[] = [];
+        if (hitGroupId) {
+          sketch.elements.forEach((el, i) => {
+            if ((el as unknown as Record<string, unknown>).groupId === hitGroupId) groupIndices.push(i);
+          });
+        }
         if (e.shiftKey) {
           const next = new Set(selectedElements);
-          if (next.has(hitIdx)) next.delete(hitIdx);
-          else next.add(hitIdx);
+          if (hitGroupId && groupIndices.length > 1) {
+            // Toggle entire group
+            const allIn = groupIndices.every((i) => next.has(i));
+            if (allIn) groupIndices.forEach((i) => next.delete(i));
+            else groupIndices.forEach((i) => next.add(i));
+          } else {
+            if (next.has(hitIdx)) next.delete(hitIdx);
+            else next.add(hitIdx);
+          }
           onSelectElements(next);
         } else {
-          onSelectElements(new Set([hitIdx]));
+          if (hitGroupId && groupIndices.length > 1) {
+            onSelectElements(new Set(groupIndices));
+          } else {
+            onSelectElements(new Set([hitIdx]));
+          }
         }
       } else if (!e.shiftKey) {
         onSelectElements(new Set());
@@ -1102,6 +1125,13 @@ export default function Canvas({
       actions.push({ id: "align-left",    icon: "⬅", label: "Align left",    separator: true });
       actions.push({ id: "align-center-h", icon: "↔", label: "Align center H" });
       actions.push({ id: "align-right",   icon: "➡", label: "Align right" });
+    }
+
+    if (count >= 2) {
+      actions.push({ id: "group", icon: "⊞", label: "Group", separator: true });
+    }
+    if (selectedHasGroup) {
+      actions.push({ id: "ungroup", icon: "⊟", label: "Ungroup", separator: count < 2 });
     }
 
     actions.push({

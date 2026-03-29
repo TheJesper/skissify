@@ -224,6 +224,8 @@ function EditorInner({
     reorderSelected,
     toggleLockSelected,
     alignSelected,
+    groupSelected,
+    ungroupSelected,
     redraw,
     importSketch,
     newSketch,
@@ -336,6 +338,12 @@ function EditorInner({
         case "unlock":
           toggleLockSelected();
           break;
+        case "group":
+          groupSelected();
+          break;
+        case "ungroup":
+          ungroupSelected();
+          break;
         case "delete":
           deleteSelected();
           break;
@@ -348,7 +356,7 @@ function EditorInner({
           break;
       }
     },
-    [copySelected, pasteElements, reorderSelected, alignSelected, toggleLockSelected, deleteSelected, selectedElements, handleDoubleClickElement]
+    [copySelected, pasteElements, reorderSelected, alignSelected, toggleLockSelected, groupSelected, ungroupSelected, deleteSelected, selectedElements, handleDoubleClickElement]
   );
 
   const handlePrint = useCallback(() => {
@@ -482,6 +490,14 @@ function EditorInner({
           e.preventDefault();
           selectAll();
         }
+        if (e.key === "g" && !e.shiftKey && !isInput && selectedElements.size >= 2) {
+          e.preventDefault();
+          groupSelected();
+        }
+        if (e.key === "G" && e.shiftKey && !isInput && selectedElements.size > 0) {
+          e.preventDefault();
+          ungroupSelected();
+        }
       }
 
       if (e.key === "r" && !isInput && selectedElements.size > 0 && !e.ctrlKey && !e.metaKey) {
@@ -500,7 +516,7 @@ function EditorInner({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected]);
 
   // Compute the color of the first selected element (for per-element color picker)
   const selectedColor: string | undefined = (() => {
@@ -557,6 +573,12 @@ function EditorInner({
   const selectedLocked: boolean = (() => {
     if (selectedElements.size === 0) return false;
     return [...selectedElements].some((i) => !!(sketch.elements[i] as unknown as Record<string, unknown>)?.locked);
+  })();
+
+  // True if ANY selected element belongs to a group
+  const selectedHasGroup: boolean = (() => {
+    if (selectedElements.size === 0) return false;
+    return [...selectedElements].some((i) => !!(sketch.elements[i] as unknown as Record<string, unknown>)?.groupId);
   })();
 
   return (
@@ -655,6 +677,9 @@ function EditorInner({
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
             onAlign={alignSelected}
+            selectedHasGroup={selectedHasGroup}
+            onGroupSelected={groupSelected}
+            onUngroupSelected={ungroupSelected}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
             snapGrid={sketch.snapGrid ?? 0}
@@ -683,6 +708,7 @@ function EditorInner({
           onDropElement={addElementAt}
           onContextMenuAction={handleContextMenuAction}
           selectedLocked={selectedLocked}
+          selectedHasGroup={selectedHasGroup}
         />
 
         {/* Inline text editing overlay */}
@@ -776,6 +802,9 @@ function EditorInner({
           onToggleLock={toggleLockSelected}
           onReorder={reorderSelected}
           onAlign={alignSelected}
+          selectedHasGroup={selectedHasGroup}
+          onGroupSelected={groupSelected}
+          onUngroupSelected={ungroupSelected}
           renderStyle={sketch.renderStyle}
           onRenderStyle={setRenderStyle}
           snapGrid={sketch.snapGrid ?? 0}
