@@ -17,6 +17,8 @@ const elementBaseSchema = z.object({
 const lineElementSchema = elementBaseSchema.extend({
   type: z.literal("line"),
   x1: z.number(), y1: z.number(), x2: z.number(), y2: z.number(),
+  /** Wall thickness: renders as two parallel lines with filled interior */
+  wallWidth: z.number().positive().max(100).optional(),
 });
 
 const rectElementSchema = elementBaseSchema.extend({
@@ -136,12 +138,78 @@ const pathElementSchema = elementBaseSchema.extend({
   points: z.array(z.object({ x: z.number(), y: z.number() })).max(10000),
 });
 
+// --- Furniture & fixture elements (all use bounding box: x, y, w, h) ---
+
+const bedElementSchema = elementBaseSchema.extend({
+  type: z.literal("bed"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+  pillows: z.union([z.literal(1), z.literal(2)]).optional(),
+});
+
+const sofaElementSchema = elementBaseSchema.extend({
+  type: z.literal("sofa"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+});
+
+const diningTableElementSchema = elementBaseSchema.extend({
+  type: z.literal("dining-table"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+  seats: z.number().int().positive().max(10).optional(),
+});
+
+const toiletElementSchema = elementBaseSchema.extend({
+  type: z.literal("toilet"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+});
+
+const bathtubElementSchema = elementBaseSchema.extend({
+  type: z.literal("bathtub"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+});
+
+const sinkElementSchema = elementBaseSchema.extend({
+  type: z.literal("sink"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+});
+
+const armchairElementSchema = elementBaseSchema.extend({
+  type: z.literal("armchair"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+});
+
+const deskElementSchema = elementBaseSchema.extend({
+  type: z.literal("desk"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+});
+
+const bookshelfElementSchema = elementBaseSchema.extend({
+  type: z.literal("bookshelf"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+  shelves: z.number().int().positive().max(20).optional(),
+});
+
+const stoveElementSchema = elementBaseSchema.extend({
+  type: z.literal("stove"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+  burners: z.union([z.literal(2), z.literal(4)]).optional(),
+});
+
+const showerElementSchema = elementBaseSchema.extend({
+  type: z.literal("shower"),
+  x: z.number(), y: z.number(), w: z.number(), h: z.number(),
+});
+
 const sketchElementSchema = z.discriminatedUnion("type", [
   lineElementSchema, rectElementSchema, circleElementSchema,
   arcElementSchema, arrowElementSchema, textElementSchema,
   dashedElementSchema, dimElementSchema, windowElementSchema,
   doorSymbolElementSchema, doorSlideElementSchema, stairElementSchema,
   openingElementSchema, columnElementSchema, pathElementSchema,
+  // Furniture & fixtures
+  bedElementSchema, sofaElementSchema, diningTableElementSchema,
+  toiletElementSchema, bathtubElementSchema, sinkElementSchema,
+  armchairElementSchema, deskElementSchema, bookshelfElementSchema,
+  stoveElementSchema, showerElementSchema,
 ]);
 
 const blueprintMetadataSchema = z.object({

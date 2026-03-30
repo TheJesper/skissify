@@ -2,6 +2,83 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #66 (19:12 CET, Monday March 30)
+
+### 🔴 Priority: CHROME DEVTOOLS MCP SIGNAL — The Last Urgency Gate
+
+Today is March 31. Google's own Chrome DevTools team shipped a Chrome DevTools MCP server **today** (11 hours ago). When the Google Chrome DevTools team publishes MCP tooling, the developer ecosystem treats "has MCP" as table stakes within weeks, not months. This is the clearest possible external validation that the window to launch `@skissify/mcp-server` as an "early MCP tool" rather than a "late adopter" is measured in days.
+
+**The publishConfig fix is 30 seconds. The npm publish is 5 minutes. The HN post is 20 minutes. This is the day.**
+
+---
+
+### Action 1: Fix publishConfig + npm publish @skissify/mcp-server (30 minutes total)
+
+**Why today is the day**: Chrome DevTools MCP shipped today. Developers discovering MCP through that repo will search for visual/sketch MCP tools in the next 48 hours. Skissify needs to be in npm + claudefa.st before that search wave peaks.
+
+**Concrete steps**:
+1. Open `W:/code/skissify/mcp-server/package.json`
+2. Add `"publishConfig": { "access": "public" }` (30 seconds)
+3. Run `cd W:/code/skissify/mcp-server && npm publish --access public` (5 minutes)
+4. Verify: `npm view @skissify/mcp-server` returns package details
+5. Test in Claude Desktop config: `{"mcpServers":{"skissify":{"command":"npx","args":["@skissify/mcp-server"]}}}`
+
+**Success metric**: `@skissify/mcp-server` appears on npmjs.com by 09:00 CET March 31.
+
+**Why this is #1**: 66 scans confirm the slot is open. Chrome DevTools MCP shipped today. The window is closing. This is the action that unlocks everything else.
+
+---
+
+### Action 2: Submit to 3 MCP Registries Immediately After npm Publish (45 minutes)
+
+**Why today**: claudefa.st updates every 18–24 hours. Submitting within hours of npm publish = appearing in the next cycle. The HN thread "I use Excalidraw to manage my blog diagrams" (2 hours old as of yesterday's run) confirmed exactly Skissify's target user is actively searching for a solution RIGHT NOW.
+
+**Concrete steps** (in priority order):
+1. **awesome-mcp-servers** (punkpeye/awesome-mcp-servers) — open PR adding under "Design & Visual":
+   > **@skissify/mcp-server** — JSON-native hand-drawn sketch renderer for AI agents. Floor plans, architectural elements, tunable wobble. Declarative JSON in, hand-drawn SVG out. `npx @skissify/mcp-server`
+2. **claudefa.st** — submit via submission form at claudefa.st/submit (updates every 18-24h, 50+ Claude Code best-of list)
+3. **modelcontextprotocol.io/registry** — official registry submission (if form available)
+
+**Distribution math**: awesome-mcp-servers has 50K+ GitHub stars. claudefa.st updates daily and covers Claude Code users ($20/mo subscribers). 3 registries × 10K+ monthly visitors × 5% click-through × 8% paid conversion = ~120 qualified leads/month at zero recurring cost.
+
+**Success metric**: awesome-mcp-servers PR opened by EOD March 31.
+
+---
+
+### Action 3: Post HN "Show HN" — The Chrome DevTools MCP Timing Hook (30 minutes)
+
+**Why today specifically**: Chrome DevTools MCP shipped TODAY (March 30, 11 hours ago). The developer conversation for the next 48–72 hours is "what other MCP tools should I add to my stack?" A "Show HN: Skissify — JSON to hand-drawn sketches, MCP server for AI agents" post tomorrow morning (08:00–10:00 CET Tuesday) rides directly on this conversation. The counter-narrative: "You now have Chrome DevTools MCP to inspect your UI. You need Skissify MCP to sketch the next one."
+
+**Concrete steps**:
+1. Open `W:/code/skissify/docs/marketing/HACKER-NEWS.md` — use the pre-written HN post draft
+2. Post at 08:00–10:00 CET Tuesday (EU morning + US Monday night developer peak)
+3. Update the draft's context to reference: "The same week Chrome DevTools team shipped their MCP server, we're launching the sketch MCP"
+4. In comments, reference the DEV.to Gemini floor plan tutorial (dev.to/bindupautra) — "this is the render step you're missing"
+
+**Success metric**: HN post live by 10:00 CET Tuesday March 31 with @skissify/mcp-server already on npm.
+
+---
+
+### Bonus: Write 200-word Comment on HN "I use Excalidraw for blog diagrams" Thread
+
+**Why**: The HN thread "I use Excalidraw to manage my diagrams for my blog" (https://news.ycombinator.com/item?id=47571376) is active and exactly targets Skissify's core use case. A genuine, non-spammy comment showing Skissify's JSON → SVG approach as the productized version of this DIY hack is the highest-ROI marketing action available.
+
+**Template**:
+> "We just shipped a tool for exactly this — Skissify takes JSON as input and renders hand-drawn SVG output natively. No Excalidraw fork needed. If you're generating diagrams programmatically (from code/agents), the JSON schema gives you structured control over elements, wobble amount, paper type, etc. It also has an MCP server if you want Claude Code to generate diagrams inline. [skissify.com] — would love your feedback given you've already solved the hard part (the ideation/JSON generation step)."
+
+**Success metric**: Comment posted, receives at least 1 upvote/reply.
+
+---
+
+### Notes Carried Forward to April 1 Run
+- Is @skissify/mcp-server live on npm? (The only remaining blocker)
+- awesome-mcp-servers PR opened?
+- HN post live?
+- HN Excalidraw blog thread comment posted?
+- Plan7Architect price window has expired by April 1 — skip this angle going forward
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #65 (18:06 CET, Monday March 30)
 
 ### Context: **65 consecutive niche-clean scans. HN thread "I use Excalidraw to manage diagrams for my blog" LIVE (2h ago) — developer DIY MCP+Excalidraw+OAuth = your exact customer. Plan7Architect SEO window has now EXPIRED (price hike deadline passed). Thomas Thornton SERP slot 11+ days — still open. mysiteplan.com fresh floor plan roundup (6 days) = zero agent-compatible tools at $7.99–49/mo confirming EUR 5/mo gap. 353/2000 Brave quota used.**

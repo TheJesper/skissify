@@ -57,7 +57,7 @@ const manifest = {
     width: { type: "number", default: 1000, description: "Canvas width in pixels" },
     height: { type: "number", default: 750, description: "Canvas height in pixels" },
     elementTypes: {
-      line: { props: ["x1", "y1", "x2", "y2", "color", "strokeWidth"], description: "A wobbly hand-drawn line between two points" },
+      line: { props: ["x1", "y1", "x2", "y2", "color", "strokeWidth", "wallWidth"], description: "A wobbly hand-drawn line between two points. Add wallWidth (pixels) to render as a double-line architectural wall with fill." },
       rect: { props: ["x", "y", "w", "h", "color", "fill", "strokeWidth"], description: "A hand-drawn rectangle. 'fill' is optional fill color." },
       circle: { props: ["cx", "cy", "r", "color", "fill"], description: "A hand-drawn circle centered at (cx, cy) with radius r" },
       arc: { props: ["cx", "cy", "r", "startAngle", "endAngle", "color"], description: "A hand-drawn arc. Angles in degrees." },
@@ -71,6 +71,20 @@ const manifest = {
       stair: { props: ["x", "y", "w", "h", "steps", "color"], description: "Staircase with horizontal treads" },
       opening: { props: ["x1", "y1", "x2", "y2", "color"], description: "Wall opening with small returns at each end" },
       column: { props: ["cx", "cy", "size", "color", "shape"], description: "Structural column. shape: 'circle' (default) or 'square'" },
+      path: { props: ["points", "color", "strokeWidth"], description: "Freehand path through an array of {x,y} waypoints, smoothly interpolated with Catmull-Rom spline" },
+      // Furniture (all use bounding box: x, y, w, h)
+      bed: { props: ["x", "y", "w", "h", "pillows", "color"], description: "Bed with headboard, pillows, and cover fold. pillows: 1 (single) or 2 (double, default)" },
+      sofa: { props: ["x", "y", "w", "h", "color"], description: "Sofa with backrest, armrests, and seat cushion divider" },
+      "dining-table": { props: ["x", "y", "w", "h", "seats", "color"], description: "Dining table with oval chairs on all sides. seats: chairs per long side (default 2)" },
+      armchair: { props: ["x", "y", "w", "h", "color"], description: "Armchair with curved backrest and armrests" },
+      desk: { props: ["x", "y", "w", "h", "color"], description: "L-shaped desk with pedestal return and drawer lines" },
+      bookshelf: { props: ["x", "y", "w", "h", "shelves", "color"], description: "Bookshelf with horizontal shelf dividers. shelves: number of dividers (default 3)" },
+      // Kitchen & Bath fixtures
+      toilet: { props: ["x", "y", "w", "h", "color"], description: "Toilet top-view: tank rectangle + bowl ellipse + inner seat ring" },
+      bathtub: { props: ["x", "y", "w", "h", "color"], description: "Bathtub top-view: outer frame + inner basin oval + faucet cross" },
+      sink: { props: ["x", "y", "w", "h", "color"], description: "Sink top-view: outer frame + basin oval + drain dot + T-faucet" },
+      stove: { props: ["x", "y", "w", "h", "burners", "color"], description: "Stove/cooktop top-view with burner circles. burners: 2 or 4 (default 4)" },
+      shower: { props: ["x", "y", "w", "h", "color"], description: "Shower enclosure top-view: square frame + diagonal spray lines + drain circle" },
     },
     paperSizes: {
       "A4+": { w: 1000, h: 750, description: "Default size, good for most sketches" },
