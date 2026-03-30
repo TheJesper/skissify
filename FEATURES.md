@@ -90,6 +90,11 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Sketch preview thumbnails in dashboard** — Added `GET /api/sketches/[slug]/thumbnail` endpoint that server-renders each saved sketch to SVG using the existing `svg-renderer` and returns it as `image/svg+xml` with a 10-minute browser cache (`Cache-Control: public, max-age=600`). Public sketches are accessible without auth; private sketches require the owner session. Dashboard sketch cards now show a lazy-loaded `<img>` thumbnail instead of a pencil-icon placeholder, using `object-contain` CSS so any sketch aspect ratio (A4, A3, 16:9) fits cleanly in the 16:9 card area. Graceful `onError` fallback restores the pencil icon if rendering fails. Makes the dashboard fully visual — users can identify their sketches at a glance without opening them.
+
+
+
+
 - [x] **Canvas Minimap + Elements panel z-order fix** — A live minimap thumbnail now appears in the bottom-left corner of the canvas area. It renders a scaled-down view of the full sketch using the same renderer, overlays a blue viewport indicator rectangle showing exactly what portion of the sketch is currently visible, and dims areas outside the viewport. Clicking anywhere on the minimap instantly pans the canvas to center on that point (panToElement callback). Automatically hidden when the sketch has no elements. Zoom level shown as a % label in the corner. Also fixed a longstanding bug in ElementsListPanel: the panel had a comment saying "render in reverse like Figma" but the code incorrectly used `idx = visualIdx` (forward order), so top-layer elements appeared at the *bottom* of the list. Fixed to `idx = elements.length - 1 - visualIdx` so the highest z-order element is at the top, matching Figma/Sketch layer panel conventions.
 
 
