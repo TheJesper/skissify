@@ -90,6 +90,10 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Smooth freehand path rendering (wobblePath + Catmull-Rom)** — Freehand `path` elements previously rendered segment-by-segment via `HL()`, which independently wobbled each segment endpoint, creating visible gaps and overlaps at every joint. Fixed by implementing `wobblePath()` in `wobble.ts`: a new function that takes all waypoints and generates a single continuous `Pt[]` stroke. It uses **Hermite spline interpolation** (Catmull-Rom tangents) to curve smoothly through all waypoints, and applies perpendicular wobble along each segment via a `sin(t·π)`-shaped envelope that tapers to zero at both ends — guaranteeing perfectly seamless joints. The unified stroke is passed to a single `doStroke()` call so all tool textures (ballpoint, pencil, ink, blueprint) apply consistently across the whole path. Canvas renderer (`renderer.ts`) and SVG exporter (`svg-renderer.ts`) both updated. Live drawing preview in `Canvas.tsx` upgraded from straight `lineTo` to quadratic bezier mid-point smoothing for a fluid drawing feel. Also added **Freehand** to the Add Element panel (`ElementThumbnailPanel.tsx`) — a squiggle thumbnail in the Lines category — so users can click-to-add or drag-to-place a freehand path element without having to enter draw mode first.
+
+
+
 - [x] **Sketch preview thumbnails in dashboard** — Added `GET /api/sketches/[slug]/thumbnail` endpoint that server-renders each saved sketch to SVG using the existing `svg-renderer` and returns it as `image/svg+xml` with a 10-minute browser cache (`Cache-Control: public, max-age=600`). Public sketches are accessible without auth; private sketches require the owner session. Dashboard sketch cards now show a lazy-loaded `<img>` thumbnail instead of a pencil-icon placeholder, using `object-contain` CSS so any sketch aspect ratio (A4, A3, 16:9) fits cleanly in the 16:9 card area. Graceful `onError` fallback restores the pencil icon if rendering fails. Makes the dashboard fully visual — users can identify their sketches at a glance without opening them.
 
 
