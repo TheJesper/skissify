@@ -5,7 +5,7 @@
 ### Rendering Engine
 - Canvas 2D renderer with seeded wobble algorithms (wobbleLine, wobbleCircle, wobbleArc)
 - Smooth curve interpolation via quadratic bezier
-- 14 element types: line, rect, circle, arc, arrow, text, dashed, dim, window, door-symbol, door-slide, stair, opening, column
+- 20 element types: line, rect, circle, arc, arrow, text, dashed, dim, window, door-symbol, door-slide, stair, opening, column, path, bed, sofa, dining-table, toilet, bathtub, sink
 - Per-element color and strokeWidth support
 - Multi-harmonic wobble (not simple S-curve)
 
@@ -31,6 +31,15 @@
 - Escape to deselect
 - Scroll-wheel zoom
 - Alt/Ctrl+drag pan
+
+### Furniture & Fixtures (NEW — Cycle 62)
+- **bed**: headboard divider, pillow circles (single/double via `pillows` prop), cover fold line
+- **sofa**: backrest, two armrests, seat cushion center divider
+- **dining-table**: table rectangle + oval chairs on all four sides (configurable `seats` per long side)
+- **toilet**: tank rectangle + bowl ellipse + inner seat ring
+- **bathtub**: outer frame + inner basin oval + faucet cross indicator
+- **sink**: outer frame + basin oval + drain dot + T-shape faucet
+All furniture elements use bounding box (x, y, w, h) and integrate with existing wobble rendering pipeline.
 
 ### Demo Presets
 - Napkin sketch (architecture diagram)
