@@ -17879,3 +17879,141 @@ If you work with AI agents in architecture, design, or product work - I'd love t
 *Last Updated: March 30, 2026 (Cycle 61 - 13:02 CET)*
 *Added: Trending hashtag research + platform stacks, new community targets (r/mcp, r/LocalLLaMA, Anthropic Discord, LangChain Discord), Tweets 351-365 (T-20h through post-HN arc + week 2 preview), YouTube Short script v1, Threads (Meta) first post, LinkedIn Long-Form Post v2 (launch day), Viral Hook Archive for underperforming posts*
 
+
+---
+
+## SOCIAL-MEDIA.md Cycle 65 (March 30, 2026 - 17:34 CET)
+### STATUS: PRODUCT HUNT LAUNCHES TOMORROW (APRIL 1 09:01 CET) | T-15.5H
+
+---
+
+### TWEETS 411-425 - PH Launch Day Arc (Full Coverage)
+
+**Tweet 411 - Tonight (Monday 21:00 CET) - Pre-PH Eve Countdown**
+
+Tomorrow is Product Hunt day.
+We launch at 09:01 CET (00:01 PT).
+If you have been following the Skissify build: tomorrow is the day I need your help.
+One upvote, one comment, one share. That is the whole ask.
+#BuildInPublic #ProductHunt #Skissify
+
+**Tweet 412 - Tonight (Monday 22:30 CET) - April Fools Angle**
+
+I am launching a real product on April Fools Day.
+Everyone who sees it will think it is a joke.
+Everyone who tries the demo will know it is not.
+skissify.com/editor
+#ProductHunt #AIAgents #MCP
+
+**Tweet 413 - Tuesday 00:30 CET - PH Goes Live**
+
+We are LIVE on @ProductHunt
+Skissify: hand-drawn sketches for AI agents.
+JSON in. Sketch URL out.
+If this is useful to you -- upvote, comment, try the demo.
+[PH link]
+#ProductHunt #AIAgents #MCP #SketchFirst
+
+**Tweet 414 - Tuesday 08:30 CET - PH Morning Boost**
+
+Good morning. Skissify has been live on @ProductHunt for 8 hours.
+1. 94% LLM accuracy on floor plans
+2. MCP native (Claude Desktop in 4 lines)
+3. Human Mode: describe space -> sketch URL (no JSON)
+Free tier. No credit card.
+[PH link]
+
+**Tweet 415 - Tuesday 09:30 CET - April Fools Hook**
+
+"Wait, is this an April Fools joke?"
+I get it. But:
+- The demo renders real sketches
+- The MCP server works with real Claude
+- Homeowners used it to brief real contractors
+- Dungeon masters generated real dungeons
+Launching on April 1st. Definitely not a joke.
+skissify.com/editor
+
+**Tweet 416-418 - Tuesday 10:30 CET - Schema Thread (3 tweets)**
+
+The most unintuitive thing I learned: Nested JSON = 61% LLM accuracy. Flat JSON = 94% LLM accuracy. Same model. Same prompt. Same task. Just a schema design change.
+
+[Thread 2] In nested JSON, the LLM has to track which abstraction level it is at. Room coords. Element coords. Nested element coords. It loses track, closes brackets early. Flat JSON removes this entirely.
+
+[Thread 3] The full Skissify schema: {"elements": [{"type": "rect", "x": 50, "y": 50, "w": 300, "h": 200, "label": "Living Room"}], "paper": "napkin"}. Flat list of elements. Absolute coordinates. One level. Claude gets 94% right first try.
+
+**Tweet 419 - Tuesday 12:00 CET - Midday Data**
+
+Skissify PH launch day noon update: [FILL REAL NUMBERS]
+The April Fools launch worked as intended: people check if it is real, try the demo, find out it is.
+#BuildInPublic #ProductHunt
+
+**Tweet 420 - Tuesday 14:00 CET - Unexpected Audiences**
+
+We built Skissify for AI developers. Who actually used it first:
+- Homeowners planning renovations
+- Dungeon masters generating maps
+- Geometry teachers making exercises
+- Architects roughing out early-stage plans
+That is what primitives do. They find their own use cases.
+
+**Tweet 421 - Tuesday 16:00 CET - Human Mode**
+
+Quick Human Mode demo: No JSON. No API. No config.
+Go to skissify.com/human
+Type: "Small 2BR apartment with open kitchen"
+Get a sketch URL.
+For everyone who said "I want this but I do not want to write JSON."
+
+**Tweet 422 - Tuesday 18:00 CET - PH Wind-Down**
+
+PH launches reset at midnight PT (09:00 CET). Final hours.
+If you have been meaning to check out Skissify: [PH link]
+Every upvote in the last few hours counts.
+#ProductHunt #AIAgents
+
+**Tweet 423 - Tuesday 20:00 CET - Wobble Algorithm**
+
+Someone asked why the sketches look hand-drawn.
+Answer: multi-harmonic wobble. Every line has a sine wave applied. Not random noise -- wave functions. Amplitude 0-10.
+At 0: perfect technical lines. At 10: loose napkin sketch. You control the wobble.
+
+**Tweet 424-425 - Tuesday 22:00-23:00 CET - Closing + Thank You**
+
+Last few hours on PH. If you want to help a solo founder who launched-on-April-Fools-Day: [PH link] The product is real. The sketches are real. Just the launch date is ironic.
+
+Whatever the final number is: I shipped a real tool, launched on April Fools Day, and learned that dungeon masters, homeowners, and geometry teachers care about rough sketches. That is a good week. Day 1 retro coming tomorrow.
+
+---
+
+### PH FIRST COMMENT v3 (FINAL - post within 2 minutes of launch)
+
+Hey PH! I am Jesper, solo founder of Skissify.
+
+Quick context: AI agents can reason about space but have no reliable way to draw. Ask Claude to generate a floor plan and it writes a text description. Ask for SVG and you get ~50% accuracy.
+
+Skissify gives AI agents a JSON schema they can reliably fill in (94% first-try accuracy on Claude 3.5). The filled-in JSON renders as a hand-drawn sketch URL. Any agent can decode it, modify it, regenerate it.
+
+What happened: we built this for AI developers. Homeowners started using it to brief contractors. Dungeon masters started generating maps. Geometry teachers started creating exercises. That is what happens when you build a primitive instead of an app.
+
+Three things to try today:
+1. Demo (no account): skissify.com/editor
+2. Human Mode: skissify.com/human
+3. Claude Desktop: 4-line config adds Skissify as a drawing tool
+
+Happy to answer anything -- technical, product, business model, why I launched on April Fools Day.
+
+---
+
+### HASHTAG STACK - PH Launch Day
+
+All PH posts: #ProductHunt #Skissify #AIAgents #MCP #BuildInPublic
+Technical: #MCP #ClaudeDesktop #JSONSchema #LLMAccuracy #AgentStack
+Design: #SketchFirst #HandDrawn #VibeDrawing #RoughDraft
+April Fools angle: #AprilFools #NotAJoke #ProductHunt #RealLaunch
+Homeowner: #FloorPlan #HomeDesign #AIHome #RenovationPlanning
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 65 - 17:34 CET)*
+*Added: Tweets 411-425 (full PH launch day arc), PH First Comment v3 (Final), PH comment templates, PH Day Hashtag Stack, r/producthunt post, Indie Hackers PH Milestone post*

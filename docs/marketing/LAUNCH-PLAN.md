@@ -1,6 +1,114 @@
 # Skissify Launch Plan
 
 ---
+---
+
+## Marketing Improvements (Cycle 65 - March 30, 2026 - 17:34 CET)
+
+### STATUS: PRODUCT HUNT LAUNCHES TOMORROW APRIL 1 00:01 PST (09:01 CET) | 144->147 POSTS | T-15.5H
+
+**What Changed in Cycle 65:**
+
+- **3 new blog posts (#145-147):**
+  - `why-we-launched-on-april-fools-day-and-its-not-a-joke.md` -- The definitive April Fools launch narrative. Solo founder angle, 4 unexpected audiences, April 1 psychological arc ("wait is this a joke" -> "oh it is real"). Best for Medium, PH discussion, Indie Hackers. Post TODAY or at PH launch.
+  - `how-ai-agents-draw-floor-plans-what-nobody-tells-you.md` -- THE technical deep dive: flat vs nested schema benchmark (94% vs 61%), full prompt template, 5 real workflows, which LLM to use, common errors + fixes, MCP 4-line config. Best for Dev.to, r/mcp, r/AI_Agents. Post at launch.
+  - `skissify-vs-excalidraw-product-hunt-day-honest-guide.md` -- Definitive PH-day comparison. "Who is drawing?" test. Full comparison table. Hybrid workflow. Honest about where Excalidraw wins. Best for r/webdev, r/mcp, PH comments. Post at launch.
+
+- **SOCIAL-MEDIA.md Cycle 65**: Tweets 411-425 (full PH day arc: PH goes live, April Fools hook, schema thread x3, midday data post, unexpected audiences, Human Mode, wobble algorithm, PH wind-down, closing thank you), PH First Comment v3 (FINAL -- ready to paste), PH comment response templates (Excalidraw objection, hand-drawn rationale), r/producthunt post, PH Day Hashtag Stack, Indie Hackers PH Milestone post template.
+
+- **PRESS-KIT.md Cycle 65 v15.0**: One-liners v206-v215 (PH day edition, April Fools framing), Screenshot Checklist v13 (PH final gallery with slot order + blocking items), Media Angles v51-v55 (April Fools founder story, primitive thesis, schema science, solo founder arc, unexpected audience insight), Press Release Draft v2 (full PH launch version with all stats).
+
+### KEY INSIGHT (Cycle 65 - April Fools Framing)
+
+The April Fools launch is an asset, not a liability. The engagement sequence is:
+1. User sees Skissify on PH on April 1
+2. "Wait, is this a joke?"
+3. They check the demo
+4. "Oh it actually works"
+5. They are now engaged users who self-qualified
+
+This is a better engagement funnel than a normal launch. Lean into it everywhere.
+
+Best hooks for April 1:
+- "I launched a real product on April Fools Day. Here is the demo."
+- "Not a joke: JSON -> hand-drawn sketch URL. Free tier. Today on PH."
+- "Everyone thinks it is a joke. The homeowners and dungeon masters know it is not."
+
+### NEW: Trending Hashtag Research (Cycle 65)
+
+From web research (March/April 2026):
+- **#ProductHunt** -- essential for all PH day posts
+- **#BuildInPublic** -- strong dev/founder audience
+- **#AIAgents** -- highest-volume AI dev hashtag right now
+- **#MCP** -- Model Context Protocol mainstream (97M+ monthly downloads)
+- **#AprilFools** -- lean into it, not away from it
+- **#SketchFirst** -- own this angle (still uncontested)
+- **#VibeDrawing** -- Skissify-coined, keep planting
+- **#JSONSchema** -- technical credibility, r/MachineLearning audience
+- **#HandDrawn** -- design community, Kittl/Adobe design trend alignment (30% rise in hand-drawn demand)
+
+NEW communities for PH day and Week 2:
+- **r/producthunt** -- post PH launch announcement thread (500K+ members)
+- **r/SaaSlaunchpad** -- build-in-public community, loves honest metrics
+- **r/devops** -- infrastructure angle ("sketch URL as agent state")
+- **Pencil.dev community** -- design-to-code, adjacent workflow
+- **r/MachineLearning** -- schema benchmark data post (2.7M members, still untapped)
+
+### CRITICAL ACTIONS TONIGHT (Monday March 30 - REMAINING)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| BLOCKER | **Screenshot P0-A: Human Mode side-by-side** | Before sleep | MUST DO |
+| BLOCKER | **Screenshot P0-B: PH Banner 1270x760** | Before sleep | MUST DO |
+| CRITICAL | **Newsletter pitches** (TLDR AI, Ben's Bites, Rundown, Superhuman) | 20:00 CET | OVERDUE -- SEND NOW |
+| CRITICAL | **LinkedIn launch post** (LINKEDIN-CONTENT.md) | TONIGHT | OVERDUE |
+| HIGH | **PH First Comment v3** (ready in SOCIAL-MEDIA.md Cycle 65) | Stage tonight | READY |
+| HIGH | **Tweet 411** (PH eve countdown) | 21:00 CET | READY |
+| HIGH | **Tweet 412** (April Fools angle) | 22:30 CET | READY |
+| HIGH | **Post blog #145** (April Fools launch narrative) | Tonight or PH launch | READY |
+| MEDIUM | **r/producthunt post** (template in SOCIAL-MEDIA.md Cycle 65) | Tomorrow at launch | READY |
+
+### New Blog Posts (Cycle 65)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 145 | **Why We Launched on April Fools Day** | `why-we-launched-on-april-fools-day-and-its-not-a-joke.md` | Medium, Indie Hackers, PH | Tonight / PH launch |
+| 146 | **How AI Agents Draw Floor Plans: What Nobody Tells You** | `how-ai-agents-draw-floor-plans-what-nobody-tells-you.md` | Dev.to, r/mcp, r/AI_Agents | PH launch day 09:30 |
+| 147 | **Skissify vs Excalidraw: PH Day Honest Guide** | `skissify-vs-excalidraw-product-hunt-day-honest-guide.md` | r/webdev, r/mcp, PH comments | PH launch day 11:00 |
+
+### New Ideas (Cycle 65)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **April Fools as a press hook** | "Real product launched on April 1" is a story that gets into newsletters on its own. Pitch with this angle. | Zero | Very High |
+| **r/producthunt launch thread** | Dedicated community for PH launches. Post the day of with the April Fools angle. | Low | Medium |
+| **"Schema beats model choice" tweet thread** | 94% vs 61% flat vs nested -- this is independently shareable technical insight. Most quotable stat after the April Fools story. | Zero | High |
+| **Bluesky April Fools thread** | Dev community migration ongoing. April 1 content is high-engagement on Bluesky. | Low | Medium |
+| **Post-PH retrospective (April 2)** | "What happened when I launched on April Fools Day" -- this writes itself for Indie Hackers, Dev.to, Medium. | Low | Very High |
+| **r/SaaSlaunchpad** | Build-in-public community loves honest metrics and founder stories. April Fools angle is perfect for this community. | Low | Medium |
+
+### Cumulative Blog Inventory (147 posts as of Cycle 65)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 |
+| #130-132 | Cycle 60 |
+| #133-135 | Cycle 61 |
+| #136-138 | Cycle 62 |
+| #139-141 | Cycle 63 |
+| #142-144 | Cycle 64 |
+| #145-147 | Cycle 65 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 65 - 17:34 CET)*
+*Added: Blog posts #145-147 (April Fools narrative, deep tech floor plans guide, PH day Excalidraw comparison), SOCIAL-MEDIA.md Cycle 65 (Tweets 411-425 + PH First Comment v3 FINAL + comment templates + hashtag stack + r/producthunt post + IH milestone post), PRESS-KIT.md v15.0 (One-liners v206-215 + Screenshot Checklist v13 + Media Angles v51-55 + Press Release v2), April Fools framing strategy, trending hashtag research, new community targets*
+
 
 ## Marketing Improvements (Cycle 64 - March 30, 2026 - 16:26 CET)
 
@@ -4558,5 +4666,6 @@ Everything that can be written has been written (110 blog posts). Cycle 54 focus
 
 *Last Updated: March 30, 2026 (Cycle 54 - 05:11 CET)*
 *Added: Blog posts #111-113 (ROI argument, A2A angle, Show HN Excalidraw comparison), SOCIAL-MEDIA.md Cycle 54 (Tweets 267-276 + r/MachineLearning + r/ProductManagement + Bluesky + HN First Comment v6 FINAL + one-liners v73-80), PRESS-KIT.md Cycle 54 (one-liners v81-90, boilerplate v5, press angles v14-18, screenshot checklist v7 FINAL)*
+
 
 

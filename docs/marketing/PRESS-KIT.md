@@ -3166,3 +3166,79 @@ Quote: "We spent more time on the wobble algorithm than on the API. The aestheti
 *Last Updated: March 30, 2026 (Cycle 61 - 13:02 CET)*
 *Added: One-liners v153-v164, Screenshot Checklist v9 (final with Product Hunt gallery assignments), Media Angles v31-v35 (remote work, multi-agent handoff, accuracy gap, unexpected audiences, wobble algorithm), Community Response Templates for comment threads*
 
+
+---
+
+## PRESS-KIT.md Cycle 65 (v15.0) - March 30, 2026 - 17:34 CET
+
+### One-Liners v206-v215 (Product Hunt Day Edition)
+
+v206: "We launched on April Fools Day. It is not a joke. It is a sketch tool for AI agents."
+v207: "Your AI agent can reason about space. Skissify lets it draw."
+v208: "JSON in. Hand-drawn sketch URL out. 94% LLM accuracy."
+v209: "Built for AI developers. Discovered by homeowners, dungeon masters, and geometry teachers."
+v210: "Skissify is what happens when you give AI a pencil instead of a paintbrush."
+v211: "Rough on purpose. Honest by design. For AI agents."
+v212: "The primitive that was missing from every AI agent stack."
+v213: "Excalidraw is for humans drawing. Skissify is for AI agents drawing."
+v214: "We did not plan the April Fools launch. The calendar planned it for us."
+v215: "MCP native. Free tier. Pencil-on-paper. No image generation needed."
+
+---
+
+### Screenshot Checklist v13 (Product Hunt Final Gallery)
+
+**BLOCKING (must have for PH gallery):**
+- [ ] P0-A: Human Mode side-by-side (text input + sketch output)
+- [ ] P0-B: PH Banner 1270x760 (Claude Desktop MCP in action, napkin style)
+
+**HIGH PRIORITY:**
+- [ ] P1-A: Blueprint floor plan (apartment, professional-looking)
+- [ ] P1-B: 4 paper styles side-by-side (napkin / blueprint / parchment / engineering)
+- [ ] P1-C: Dungeon map (blueprint style, DnD audience hook)
+- [ ] P1-D: Claude Desktop conversation showing MCP tool call
+
+**NICE TO HAVE:**
+- [ ] P2-A: Wireframe sketch (PM/product designer audience)
+- [ ] P2-B: JSON code + rendered output split screen
+
+---
+
+### Media Angles v51-v55 (Product Hunt Day)
+
+v51: **The April Fools Founder Story** - "I launched a real product on April Fools Day and it worked because everyone checked if it was a joke."
+v52: **The Primitive Thesis** - "We built a primitive, not an app. Four audiences we never targeted found it anyway."
+v53: **The Schema Science Story** - "Flat JSON gets 94% LLM accuracy. Nested JSON gets 61%. Schema design is the real AI reliability problem."
+v54: **The Solo Founder Arc** - "One developer, Stockholm, built the visual output layer that was missing from the AI agent ecosystem."
+v55: **The Unexpected Audience Insight** - "Homeowners, dungeon masters, and geometry teachers discovered a tool built for AI developers. That gap tells you something about what 'rough sketch' actually means."
+
+---
+
+### Press Release Draft v2 (Updated for PH Day)
+
+FOR IMMEDIATE RELEASE - April 1, 2026
+
+**Skissify Launches on Product Hunt: The First MCP Server That Gives AI Agents a Pencil**
+
+STOCKHOLM, April 1, 2026 -- Skissify, a new tool that enables AI agents to generate hand-drawn sketches programmatically, launched today on Product Hunt. The product gives AI assistants a reliable way to produce spatial visual output for the first time.
+
+Built by solo founder Jesper Landmér, Skissify translates a structured JSON schema into hand-drawn sketch URLs using a proprietary wobble rendering algorithm. In testing with over 200 floor plan generations, Claude 3.5 Sonnet achieves 94% first-try accuracy -- compared to approximately 50% for SVG generation approaches.
+
+"AI agents can describe spaces but they cannot draw them," said Landmér. "Every floor plan generation attempt returned a text description of a floor plan. I built the thing that was missing."
+
+Skissify integrates with Claude Desktop and any MCP-compatible agent framework via a 4-line configuration. It also supports Human Mode, which accepts plain-language descriptions and handles JSON generation internally.
+
+Since launching on March 27, Skissify has attracted users from four unexpected audiences: AI agent developers, homeowners using AI to brief contractors, tabletop RPG players generating dungeon maps, and educators creating spatial geometry exercises.
+
+"We built a primitive," Landmér said. "Primitives find their own use cases."
+
+Skissify is available at skissify.com with a free tier of 50 sketches per month. The MCP server is available via npm.
+
+CONTACT: [email]
+DEMO: skissify.com/editor
+PRODUCT HUNT: [PH link]
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 65 - v15.0)*
+*Added: One-liners v206-215 (PH day edition), Screenshot Checklist v13 (PH final gallery), Media Angles v51-55 (PH day angles), Press Release Draft v2 (full PH launch version), Founder Bio v4 (added April Fools launch context)*

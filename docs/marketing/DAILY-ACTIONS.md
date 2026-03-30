@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #64 (17:02 CET, Monday March 30)
+
+### Context: **64 consecutive niche-clean scans. Thomas Thornton SERP slot 10+ days old — uncontested. "Agentic SaaS pricing" named category in European Business Review (5 days ago). Construction drawing market validated as EUR 5/mo adjacent gap. MCP now conference keynote topic (Datasciencedojo). Plan7Architect price hike window closes TONIGHT (absolute last call). Publish or lose the SEO window.**
+
+---
+
+### 🔴 Action 1 (TONIGHT before midnight — Plan7Architect SEO window CLOSES)
+
+**What**: Publish the "Plan7Architect alternative" SEO blog post. This is the absolute final hour — the price hike expires March 31 midnight.
+
+**Angle**:
+> "Plan7Architect raised prices because it was built for 2019 CAD workflows. In 2026, your AI agent can generate floor plans from JSON. Skissify renders them hand-drawn for EUR 5/mo — no desktop app, no license negotiation, no 2026 price hike."
+
+**SEO targets**: "Plan7Architect alternative 2026", "floor plan software alternative EUR", "programmatic floor plan sketch"
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+
+---
+
+### 🔴 Action 2 (Tomorrow, April 1 — npm publish + registry submissions)
+
+**What**: Add `"publishConfig": { "access": "public" }` to `mcp-server/package.json` (30 seconds), then `npm publish --access public`, then submit to MCP registries.
+
+**Priority submission order** (by update cadence / audience value):
+1. **claudefa.st** (18–24h update cycle, Claude Code audience paying $20+/mo — highest conversion probability)
+2. **modelcontextprotocol.io/registry**
+3. **awesome-mcp-servers** (GitHub PR)
+4. **toolradar.com** (MCP meta-discovery layer, aggregated enterprise discovery)
+5. **LobeHub**
+6. **mcpmanager.ai**
+
+**Why claudefa.st is #1**: Updated every 18 hours. Reader profile: Claude Code users with MCP stacks already installed. EUR 2/mo is the cheapest add to their stack. Fastest path from "published" to "first paying users."
+
+---
+
+### 🟢 Action 3 (This week — "Agentic SaaS for the Execution Economy" blog post)
+
+**What**: Write a blog post leveraging the European Business Review's "agentic SaaS pricing" framing. Angle: "Your AI agent needs tools. Those tools should be priced for agents, not humans. Here's what that looks like."
+
+**Why now**: The European Business Review just named "agentic SaaS pricing" as a mainstream business strategy category (5 days ago, URL: https://www.europeanbusinessreview.com/architecting-a-new-agentic-saas-pricing-strategy-why-and-how/). Skissify can ride this wave with content that explicitly positions itself as an agentic SaaS tool: called by agents, priced by execution (EUR 0.005/render), not by seat.
+
+**Headline options**:
+- "Skissify is priced for the execution economy. Your agent pays per sketch."
+- "Why Skissify costs EUR 0.005/render and not $20/seat — the agentic SaaS pricing shift"
+- "The sketch layer for your AI agent stack: EUR 2/mo, pay-per-render, no commitment"
+
+**Target keywords**: "agentic SaaS pricing", "AI agent tool pricing 2026", "MCP tool pay per execution", "execution economy software pricing"
+
+**Publish to**: skissify.com/blog + LinkedIn + dev.to/@skissify
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #63 (15:54 CET, Monday March 30)
 
 ### Context: **63 consecutive niche-clean scans. claudefa.st updated 18h ago — zero sketch tools (submit at launch). OpenCode makes every coding agent MCP-native. Uizard getting fresh coverage = AI visual market growing (non-competitive). SaaStr confirms SaaS at S&P 500 discount — EUR 5/mo correctly timed. Plan7Architect window closes TONIGHT.**
