@@ -2,6 +2,64 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #59 (11:30 CET, Monday March 30)
+
+### Context: **59 consecutive niche-clean scans. 🔴 Plan7Architect price hike closes TODAY (March 31) — ABSOLUTE FINAL HOURS. Thomas Thornton SERP slot 9+ days old — still challengeable. NEW: toolradar.com as meta-MCP discovery channel (1 day ago). XDA Developers confirms Excalidraw = "Miro alternative" lane, NOT Skissify's lane. SaaS pricing intelligence structurally confirmed (3+ weeks, 5 sources — stop analyzing, start collecting). The niche is uncontested for the 59th consecutive scan. Execute.**
+
+---
+
+### 🔴 Action 1 (FINAL HOURS TODAY — Plan7Architect window closes at midnight March 31)
+
+**What**: Publish the "Plan7Architect alternative" SEO blog post **before midnight tonight**. The Plan7Architect Pro 5 price hike window closes at end of March 31. This is the absolute last opportunity for this SEO micro-win.
+
+**Title**: *"Plan7Architect raised their prices. Here's the EUR 5/mo AI-native alternative for client sketches."*
+
+**New angle from Run #59 (three-lane framing)**:
+> "Traditional floor plan software like Plan7Architect belongs to the 'CAD tool' lane. Figma/Stitch belong to the 'polished design' lane. Skissify is the third lane: programmatic, hand-drawn, agent-optimized. EUR 2/mo API. EUR 5/mo Pro. One JSON manifest → hand-drawn sketch."
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+**Hard deadline**: Before midnight March 31, 2026.
+
+---
+
+### 🔴 Action 2 (This Week — Add toolradar.com to MCP Registry Submissions)
+
+**What**: Submit `@skissify/mcp-server` to toolradar.com as a registered tool in their catalog. This is a new meta-discovery channel confirmed 1 day ago.
+
+**Why urgent**: toolradar.com now offers a "Toolradar MCP server" that gives AI agents access to 10,000+ catalogued software tools. Being in their catalog means Skissify appears in ambient agent discovery — no human choosing required. An enterprise agent searching for "sketch" or "floor plan" tools via Toolradar discovers Skissify autonomously.
+
+**Steps**:
+1. Submit `@skissify/mcp-server` to toolradar.com catalog
+2. Description template: "Skissify MCP: JSON-in, hand-drawn SVG out. Architectural floor plans, diagrams, napkin sketches for AI agents. 14 element types. Tunable aesthetics. Free (watermarked) / EUR 2/mo clean."
+3. Add toolradar.com to the existing registry submission checklist alongside modelcontextprotocol.io, awesome-mcp-servers, LobeHub, claudefa.st, mcpmanager.ai
+
+**Why toolradar.com changes the calculus**: This is the first meta-MCP catalog — not a static list for humans to browse, but an active discovery layer for agents. Being listed means passive enterprise revenue without sales effort. One 10-minute submission → indefinite agent-driven discovery.
+
+---
+
+### 🟢 Action 3 (This Week — Use XDA Developers Framing in Copy)
+
+**What**: Update Skissify's homepage and positioning copy to use the three-lane framing crystallized by XDA Developers' Excalidraw/Miro coverage.
+
+**The three lanes (now publicly documented)**:
+1. Miro alternative lane → Excalidraw ("minimal toolkit for human diagramming")
+2. Professional design lane → Figma, Google Stitch ("polished UI for product teams")
+3. **Programmatic sketch lane → Skissify** ("JSON-in, hand-drawn SVG out, agent-optimized")
+
+**New copy proposal for homepage hero** (update `docs/marketing/COPY-LIBRARY.md`):
+> "Not a whiteboard. Not a design tool. The programmatic sketch layer for AI pipelines.
+> JSON in → hand-drawn SVG out → EUR 2/mo."
+
+**Why this converts at maximum rate**: When a developer lands on Skissify and immediately recognizes they're in "bucket three" (not comparing to Excalidraw or Figma), the EUR 2/mo decision becomes a category recognition purchase, not a value comparison. A developer with a bucket-three need and only one supplier available converts at near-100% when the price is under EUR 5.
+
+**Time**: 30 minutes to update COPY-LIBRARY.md. No code changes required.
+
+---
+
+**Run #59 Summary**: 59 consecutive clean scans. Three competitive lanes now publicly confirmed by mass-market tech press (XDA Developers). Toolradar meta-MCP = new enterprise discovery channel. SaaS pricing structurally locked for 3+ weeks. Plan7Architect window closes TODAY. SERP slot still open. Stop analyzing — execute.
+
+---
+
 ## 2026-03-31 (Tuesday) — Proposed by Automated Strategy Run #58 (10:21 CET, Monday March 30)
 
 ### Context: **58 consecutive niche-clean scans. 🔴 Plan7Architect price hike expires TODAY (March 31) — FINAL 24 HOURS. Thomas Thornton SERP slot at 8+ days — still challengeable. Domo AI Agent Builder + MCP Server confirmed (March 25). DEV Community declares MCP "essential infrastructure." Value-based pricing = ROI frame for EUR 2/mo.**

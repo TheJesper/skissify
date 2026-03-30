@@ -2,6 +2,82 @@
 
 ---
 
+## Marketing Improvements (Cycle 60 — March 30, 2026 — 11:53 CET)
+
+### STATUS: T-21H — SHOW HN FIRES TUESDAY 09:00 CET — NEWSLETTER SEND WINDOW CLOSING
+
+**What Changed in Cycle 60:**
+
+- **3 new blog posts (#130-132):**
+  - `why-hand-drawn-sketches-beat-figma-the-premature-convergence-problem.md` — THE definitive angle: "premature convergence" from design research. Explains why polished mockups produce bad meetings. Cites Stanford d.school + IDEO. Includes Figma Tax calculation.
+  - `how-ai-agents-draw-floor-plans-the-coordinate-system-deep-dive.md` — THE canonical technical post: Schema A vs Schema C benchmark table with actual percentages, wobble algorithm explained, integration code for MCP + REST + Human Mode. Best for Dev.to + HN submission.
+  - `skissify-vs-excalidraw-the-collaboration-speed-test.md` — Fresh angle: literal stopwatch test. Excalidraw: 24 min. Skissify Human Mode: 3.5 min. Conclusion: different jobs, use both.
+
+- **NEW: LINKEDIN-CONTENT.md** — Full 5-post LinkedIn arc for launch week. Long-form, story-driven posts for PM/designer/tech leader audience. Launch story, schema insight, premature convergence PM post, four audiences retrospective, wobble algorithm craft post. LinkedIn timing recommendations included.
+
+- **NEW: PRODUCT-HUNT-SUBMISSION.md** — Complete PH submission draft: tagline, description, first comment, gallery asset list, outreach strategy. Target: Wednesday April 1 or Thursday April 2 (24-48h after Show HN).
+
+- **NEW: NEWSLETTER-EMAILS-LAUNCH-DAY.md** — ⚠️ CRITICAL: Copy-paste email pitches for TLDR AI, Ben's Bites, The Rundown AI, Superhuman, and Lenny's Newsletter. Must send TODAY before 18:00 CET to appear in Tuesday newsletters.
+
+- **SOCIAL-MEDIA.md Cycle 60**: LinkedIn launch arc summary, Product Hunt timeline, Newsletter send schedule, Tweets 341-350 (post-HN + PH day arc)
+
+### ⚠️ CRITICAL ACTIONS TODAY (Monday March 30)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🔴🔴🔴 | **Send newsletter pitches** (TLDR AI, Ben's Bites, The Rundown, Superhuman) | **16:00 TODAY** | ❌ SEND NOW |
+| 🔴🔴 | **Screenshot #1: Human Mode side-by-side** | Before sleep | ❌ BLOCKING HN |
+| 🔴🔴 | **Screenshot #2: Claude Desktop MCP in action** | Before sleep | ❌ BLOCKING HN |
+| 🔴 | **Human Mode end-to-end test** | Before sleep | ❓ VERIFY |
+| 🔴 | **LinkedIn post drafted + scheduled for 09:30 Tuesday** | Tonight | ❌ |
+| 🟠 | Product Hunt submission prepped (can launch Wed) | Tonight | ❌ (draft ready) |
+| 🟠 | Wobble GIF (5s, napkin style) | Tonight | ❌ |
+
+### New Blog Posts (Cycle 60)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 130 | **Why Hand-Drawn Beats Figma: Premature Convergence** | `why-hand-drawn-sketches-beat-figma-the-premature-convergence-problem.md` | Medium, LinkedIn, Lenny's Newsletter | Tuesday |
+| 131 | **How AI Agents Draw Floor Plans: Coordinate Deep Dive** | `how-ai-agents-draw-floor-plans-the-coordinate-system-deep-dive.md` | Dev.to, HN (standalone post), r/SoftwareEngineering | Tuesday |
+| 132 | **Skissify vs Excalidraw: The Collaboration Speed Test** | `skissify-vs-excalidraw-the-collaboration-speed-test.md` | Dev.to, r/webdev, Excalidraw subreddit | Tuesday after HN |
+
+### New Files Created (Cycle 60)
+
+| File | Purpose |
+|------|---------|
+| `docs/marketing/LINKEDIN-CONTENT.md` | 5-post LinkedIn arc, full copy-paste content for launch week |
+| `docs/marketing/PRODUCT-HUNT-SUBMISSION.md` | Complete PH submission draft + outreach strategy |
+| `docs/marketing/NEWSLETTER-EMAILS-LAUNCH-DAY.md` | ⚠️ SEND TODAY — copy-paste pitches for 5 newsletters |
+
+### New Ideas (Cycle 60)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **LinkedIn as primary professional amplification** | 0 posts there so far, PM/designer audience is huge for "premature convergence" angle | Low (written) | High |
+| **Product Hunt day 2** | Don't launch same day as HN — different audience, split the momentum | Zero (draft ready) | Medium-High |
+| **Newsletter pitch window** | Today 14-18h is the window to appear in Tuesday AM newsletters | Low (written) | Very High |
+| **Lenny's "premature convergence" angle** | Product insight framing — not a pitch, gets through the filter | Low (written) | High if covered |
+| **Stopwatch comparison format** | "I measured it" angles outperform opinion pieces on HN + Dev.to | Low (written) | Medium-High |
+
+### Cumulative Blog Inventory (132 posts as of Cycle 60)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 |
+| #130-132 | Cycle 60 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 60 — 11:53 CET)*
+*Added: Blog posts #130-132, LINKEDIN-CONTENT.md (5-post professional arc), PRODUCT-HUNT-SUBMISSION.md (complete PH draft), NEWSLETTER-EMAILS-LAUNCH-DAY.md (⚠️ SEND TODAY), SOCIAL-MEDIA.md Cycle 60 (LinkedIn arc + Tweets 341-350)*
+
+---
+
 ## Marketing Improvements (Cycle 59 — March 30, 2026 — 10:46 CET)
 
 ### STATUS: T-22H — SHOW HN FIRES TUESDAY 09:00 CET — FINAL MONDAY CONTENT PUSH

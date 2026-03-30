@@ -1,8 +1,175 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**
-**T-MINUS 22H TO SHOW HN — Monday March 30, 2026. Cycle 59. 10:46 CET.**
+**T-MINUS 21H TO SHOW HN — Monday March 30, 2026. Cycle 60. 11:53 CET.**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 60 — MONDAY MARCH 30, 2026 — 11:53 CET — SHOW HN T-21H
+
+*What changed this cycle: LinkedIn posts 1-5 (full launch week arc — professional audience), Product Hunt submission draft, Newsletter pitch emails (send today before 18:00!), Tweets 341-350 (post-HN LinkedIn amplification + Product Hunt day), new platforms: LinkedIn + Product Hunt strategy added.*
+
+---
+
+### LINKEDIN — LAUNCH WEEK ARC (NEW — Cycle 60)
+
+**See:** docs/marketing/LINKEDIN-CONTENT.md for full copy-paste posts.
+
+| Post | Topic | When |
+|------|-------|------|
+| Post 1 | Launch story ("I built something I can't explain") | Tuesday 09:30 CET |
+| Post 2 | Schema insight ("Model < Schema for spatial tasks") | Wednesday |
+| Post 3 | Premature convergence problem (PM audience) | Thursday |
+| Post 4 | Four audiences retrospective | Friday |
+| Post 5 | The wobble algorithm (technical craft) | Saturday |
+
+**LinkedIn timing:** Post between 07:30-09:00 or 12:00-13:30 CET for maximum reach.
+**Format:** Long-form. No images needed for first post — text performs better cold.
+
+---
+
+### PRODUCT HUNT — LAUNCH PLAN (NEW — Cycle 60)
+
+**See:** docs/marketing/PRODUCT-HUNT-SUBMISSION.md for full submission text.
+
+**Target date:** Wednesday April 1 or Thursday April 2 (24-48h after Show HN)
+**Reason:** Split momentum, not same-day — PH audience overlaps HN but isn't identical.
+
+Tagline: "Give your AI agent a pencil."
+First comment template: In PRODUCT-HUNT-SUBMISSION.md
+
+---
+
+### NEWSLETTER OUTREACH — SEND TODAY (CRITICAL — Cycle 60)
+
+**⚠️ THESE MUST GO OUT TODAY BEFORE 18:00 CET**
+**See:** docs/marketing/NEWSLETTER-EMAILS-LAUNCH-DAY.md for copy-paste emails.
+
+| Newsletter | Est. Reach | Send By |
+|-----------|-----------|---------|
+| TLDR AI | 500K+ | 15:00 |
+| Ben's Bites | 100K+ | 14:00 |
+| The Rundown AI | 400K+ | 15:00 |
+| Superhuman (Zain) | 200K+ | 15:00 |
+| Lenny's Newsletter | 500K+ PM | 16:00 |
+
+---
+
+### TWEETS 341-350 (CYCLE 60 — POST-SHOW HN + LINKEDIN DRIVE)
+
+#### Tweet 341 — Tuesday 10:00 CET — We're live
+```
+We're live on Hacker News.
+
+Show HN: Skissify – give your AI agent a pencil
+
+If you've ever wanted to see what happens when Claude draws a floor plan instead of describing one — today's the day.
+
+[HN link] | skissify.com/human
+```
+
+#### Tweet 342 — Tuesday 14:00 CET — schema insight hook
+```
+Hot take: the schema matters more than the model.
+
+We ran 200+ floor plan generations.
+Hierarchical JSON: ~58% first-try accuracy.
+Flat element list: ~94%.
+
+Same model. Different schema. 36pp gap.
+
+That's the actual story of building Skissify.
+```
+
+#### Tweet 343 — Tuesday 16:00 CET — unexpected audiences
+```
+I built a developer tool.
+
+Then homeowners, dungeon masters, and geometry teachers showed up.
+
+I didn't target any of them.
+
+Primitives find their own audiences.
+skissify.com
+```
+
+#### Tweet 344 — Tuesday 18:00 CET — end of day number update
+```
+End of day 1 on HN.
+
+[X] points, [Y] comments, [Z] signups.
+
+Best question from the thread: [pick best HN comment]
+
+Answering everything. Thank you for the feedback.
+```
+
+#### Tweet 345 — Wednesday 09:00 CET — LinkedIn amplification
+```
+Wrote up the design reasoning behind the wobble algorithm.
+
+Why deliberate imprecision matters in AI output.
+
+[LinkedIn post link]
+```
+
+#### Tweet 346 — Wednesday 11:00 CET — schema article
+```
+The blog post about our schema findings:
+
+Why flat JSON beats hierarchical for LLM spatial tasks.
+200+ tests. 36pp accuracy gap.
+
+This one's for the engineers.
+
+[Dev.to or blog link]
+```
+
+#### Tweet 347 — Wednesday 15:00 CET — Product Hunt announce
+```
+We're live on Product Hunt today.
+
+After a strong Show HN yesterday, the next stop is PH.
+
+If you tried Skissify and liked it: a vote and honest comment means a lot.
+
+[PH link]
+```
+
+#### Tweet 348 — Thursday — community appreciation
+```
+Something I didn't expect:
+
+The D&D dungeon master community found Skissify before the AI developer community fully did.
+
+r/DungeonsAndDragons > r/MachineLearning in week 1 traffic.
+
+I don't know what to do with this information.
+```
+
+#### Tweet 349 — Friday — week 1 retrospective tease
+```
+Week 1 retro publishing this weekend.
+
+Real numbers. Real mistakes. What worked, what didn't.
+
+The newsletter outreach that mattered. The communities that surprised us.
+
+Building in public means publishing the actual story.
+```
+
+#### Tweet 350 — Friday — week 1 close
+```
+Week 1 of Skissify: done.
+
+What I built for: AI developers.
+Who found it: homeowners, dungeon masters, teachers, and yes — AI developers.
+
+Next week: the product roadmap that responds to what we actually learned.
+
+Building this in public. Follow along.
+```
 
 ---
 

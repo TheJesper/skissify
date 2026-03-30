@@ -1,8 +1,86 @@
 # Skissify Press Kit
 
-**Last Updated:** March 30, 2026 - 10:46 CET (Cycle 59)
-**Version:** 9.0
+**Last Updated:** March 30, 2026 - 11:53 CET (Cycle 60)
+**Version:** 10.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 60 Updates (March 30, 2026 — 11:53 CET) — T-21H TO SHOW HN
+
+### JOURNALIST FAQ — LAUNCH DAY (NEW Cycle 60)
+
+*Ready for any journalist who reaches out after the Show HN. Answer fast. Don't make them wait.*
+
+**Q: What is Skissify in one sentence?**
+A: Skissify is a JSON-to-hand-drawn-sketch API that gives AI agents structured spatial output — the rough floor plans, wireframes, and diagrams that text-only agents couldn't produce before.
+
+**Q: What problem does it actually solve?**
+A: AI agents can generate text, code, data, and images. The gap was *structured spatial output* — a rough sketch, not a polished render. A floor plan you'd show a contractor. A wireframe you'd show a client. Something that communicates spatial ideas without looking like it was made by a design tool.
+
+**Q: Why hand-drawn specifically?**
+A: Two reasons. First, it signals exploration-phase work — rough sketches invite strategic feedback, polished diagrams invite execution feedback. Second, it works better for AI agents because the aesthetic forgives imprecision. A slightly-off wall in a hand-drawn style reads as style; in a CAD diagram it reads as error.
+
+**Q: How does the MCP integration work?**
+A: The MCP server (`@skissify/mcp-server`) plugs into Claude Desktop via 4 lines of config. Once connected, Claude can call `generate_sketch` as a tool, just like it calls web search or file read. The user says "draw me a floor plan" — Claude generates the JSON schema and calls the tool — sketch URL appears in the chat.
+
+**Q: What's the accuracy claim about?**
+A: We ran 200+ floor plan generation tests across four LLMs. We found that schema design affects accuracy more than model choice. Our flat element list schema (absolute coordinates, type discriminator) achieves ~94% first-try accuracy vs ~58% for hierarchical JSON schemas. The difference is whether the LLM has to track coordinate transformations between nested levels.
+
+**Q: Who are your actual users?**
+A: We built for AI developers. First week brought: AI developers (using MCP server), homeowners (renovation briefs for contractors via Human Mode), dungeon masters (fantasy building maps), and geometry teachers (spatial exercise materials). We targeted the first group; the others found us.
+
+**Q: Is this free?**
+A: Free tier covers unlimited public sketches. Pro tier at EUR 5/month adds private sketches and higher rate limits.
+
+**Q: What stage is the company?**
+A: Early-stage, bootstrapped. Launched March 27, 2026 from Stockholm, Sweden.
+
+**Q: What's the vision?**
+A: Every AI agent should be able to draw. Not generate images — draw. The structured, intentional, rough-but-correct output humans use when they're thinking spatially. We're building the infrastructure layer for that.
+
+---
+
+### LINKEDIN MEDIA ANGLE (NEW Cycle 60)
+
+**For LinkedIn articles / professional media:**
+
+**Headline:** "Why your design reviews keep going wrong — and what rough sketches have to do with it"
+
+**Angle:** The "premature convergence" problem from design research: polished mockups signal finished thinking, causing stakeholders to respond to execution details rather than strategic questions. Skissify is a tool response to this, but the insight applies to any team that leads exploration-phase work with high-fidelity visuals.
+
+**Quote:**
+> "Fidelity signals confidence. A rough sketch says 'this is an idea.' A polished mockup says 'this is a plan.' If you're still deciding whether you have the right idea, you're sending the wrong signal." — Jesper Lindström, Skissify
+
+---
+
+### PRODUCT HUNT ASSET SUMMARY (NEW Cycle 60)
+
+**See:** docs/marketing/PRODUCT-HUNT-SUBMISSION.md
+
+**Tagline:** "Give your AI agent a pencil."
+**Launch date:** Wednesday April 1 or Thursday April 2 (after Show HN)
+**Category:** Developer Tools
+
+---
+
+### ONE-LINERS v145-v152 — CYCLE 60
+
+**v145 (LINKEDIN):** "The sketch API that makes AI agents spatial thinkers, not just text generators."
+
+**v146 (PRODUCT HUNT):** "JSON in. Hand-drawn sketch at a URL out. Give your AI a pencil."
+
+**v147 (PM AUDIENCE):** "Why do your design reviews go wrong? Polished mockups signal finished thinking. We built the tool that keeps conversations at the right abstraction level."
+
+**v148 (PRECISION):** "Flat JSON schema. Wobble rendering algorithm. MCP server. Three layers that let Claude draw."
+
+**v149 (CONTRAST):** "Excalidraw is for drawing what you already know. Skissify is for sketching what you're still figuring out."
+
+**v150 (DATA-LED):** "Schema design matters more than model choice for spatial tasks. 94% vs 58%. We know because we ran the tests."
+
+**v151 (DISCOVERY):** "Built for developers. Found by homeowners, dungeon masters, and geometry teachers. Primitives find their own audiences."
+
+**v152 (MINIMALIST):** "The missing output format in your AI stack."
 
 ---
 
