@@ -2,6 +2,86 @@
 
 ---
 
+## Marketing Improvements (Cycle 64 - March 30, 2026 - 16:26 CET)
+
+### STATUS: 🚀 PRODUCT HUNT IN ~17H (APRIL 1 00:01 PST = 09:01 CET) | 141→144 POSTS
+
+**What Changed in Cycle 64:**
+
+- **3 new blog posts (#142-144):**
+  - `why-hand-drawn-sketches-beat-figma-the-product-hunt-day-case.md` — PH-launch-eve angle. Ties the four unexpected audiences back to the fidelity-effect design principle. Best for Dev.to, Medium, HN standalone. Post tonight 20:00 CET.
+  - `how-ai-agents-draw-floor-plans-the-product-hunt-launch-technical-primer.md` — Definitive technical explainer: 3-step pipeline, wobble algorithm detail, MCP interface with code, accuracy benchmark table, 5 real workflows. Best for Dev.to, r/mcp, r/LocalLLaMA. Post tomorrow morning.
+  - `skissify-vs-excalidraw-the-product-hunt-day-final-word.md` — THE canonical Excalidraw comparison. Short, clean, comparison table, honest verdict (use both). Designed to be the link you drop when someone asks. Best for r/webdev, r/mcp, Dev.to. Post tonight.
+
+- **SOCIAL-MEDIA.md Cycle 64**: Tweets 396-410 (full PH launch day arc: PH announcement, "who draws?" hook, wobble algorithm, four audiences thread ×6, accuracy data, primitive angle, live counter, dev hook, Human Mode, PH wind-down), Reddit r/producthunt post template, Dev.to cross-post guidance, Updated Hashtag Stack for PH Day, Indie Hackers PH Milestone post.
+
+- **PRESS-KIT.md Cycle 64 (v14.0)**: One-liners v191-v205 (PH edition, including #200 milestone), Screenshot Checklist v12 (PH final gallery with slot order + Dungeon Map + Wireframe screenshots), Media Angles v46-v50 (schema science story, solo founder arc, primitive thesis, April 1 timing angle, fidelity effect rediscovered), Product Hunt First Comment v2 (polished final), Full Press Release Draft (for newsletter pitches).
+
+### ✅ DONE / ⚠️ OPEN — TONIGHT MARCH 30 / APRIL 1 PH DAY
+
+| Priority | Item | Status |
+|----------|------|--------|
+| 🚨 | **Product Hunt launches April 1 00:01 PST (09:01 CET)** | ⏳ TONIGHT |
+| 🔴 | **Newsletter pitches** (TLDR AI, Ben's Bites, The Rundown, Superhuman) | ⚠️ CRITICAL — SEND NOW (Press Release in PRESS-KIT v14) |
+| 🔴 | **Screenshot P0-A: Human Mode side-by-side** | ⚠️ BLOCKING PH — MUST DO TONIGHT |
+| 🔴 | **Screenshot P0-B: PH Banner 1270×760 (Claude Desktop MCP)** | ⚠️ BLOCKING PH — MUST DO TONIGHT |
+| 🔴 | **PH First Comment v2** (ready in PRESS-KIT v14) | ✅ READY TO PASTE |
+| 🟡 | **Post blog #144 (vs Excalidraw PH final word)** | ⚠️ TONIGHT 21:00 |
+| 🟡 | **Post blog #142 (hand-drawn beats Figma PH case)** | ⚠️ TONIGHT 20:00 |
+| 🟡 | **LinkedIn launch post** (LINKEDIN-CONTENT.md) | ⚠️ OVERDUE — POST NOW |
+| 🟡 | **Indie Hackers PH Milestone post** (template in SOCIAL-MEDIA.md Cycle 64) | ⚠️ TOMORROW MORNING |
+| 🟡 | **r/producthunt post** (template in SOCIAL-MEDIA.md Cycle 64) | ⚠️ TOMORROW AT LAUNCH |
+| 🟡 | **r/architecture + r/DnD posts** (templates in SOCIAL-MEDIA.md Cycle 63) | ⚠️ TOMORROW |
+| 🟢 | **Post blog #143 (technical primer)** | Tomorrow morning 08:00 |
+| 🟢 | **Dev.to cross-post (vs Excalidraw + primer)** | Tomorrow |
+| 🟢 | **TikTok first video** (script in SOCIAL-MEDIA.md Cycle 63) | This week |
+| 🟢 | **Pinterest account + 5 pins** | This week |
+| 🟢 | **Wobble GIF** | This week |
+| 🟢 | **Vertical landing pages** (architects, teachers, DMs) | Next sprint |
+
+### New Blog Posts (Cycle 64)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 142 | **Why Hand-Drawn Beats Figma: Product Hunt Day Case** | `why-hand-drawn-sketches-beat-figma-the-product-hunt-day-case.md` | Dev.to, Medium, HN | Tonight 20:00 CET |
+| 143 | **How AI Agents Draw Floor Plans: PH Technical Primer** | `how-ai-agents-draw-floor-plans-the-product-hunt-launch-technical-primer.md` | Dev.to, r/mcp, r/LocalLLaMA | April 1 morning 08:00 |
+| 144 | **Skissify vs Excalidraw: PH Day Final Word** | `skissify-vs-excalidraw-the-product-hunt-day-final-word.md` | r/webdev, r/mcp, Dev.to | Tonight 21:00 CET |
+
+### New Ideas (Cycle 64)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Press Release (ready)** | Newsletter pitches need a hook + facts paragraph. Full draft now in PRESS-KIT v14. SEND TONIGHT. | Zero (written) | Very High |
+| **PH First Comment v2** | Polished, complete, ready to paste at 00:01 PST. Includes 3 community questions to drive engagement. | Zero | High |
+| **Dungeon Map screenshot** | DnD audience = viral on r/DnD + Reddit general. Hand-drawn dungeon = perfect visual hook. | Low (screenshot) | High |
+| **r/producthunt post** | Launch day thread on r/producthunt for additional visibility. Template ready. | Low | Medium |
+| **#200 One-liner milestone** | "One-liner #200" is a build-in-public hook. Tweet it. | Zero | Medium |
+| **April 1 framing** | "Launching on April Fools Day — it's not a joke" is a hook that writes itself. Use in tweets + PH First Comment. | Zero | High |
+| **Accuracy data as a tweet** | 94% vs 41% is the most credible technical claim. Post as a standalone data tweet on PH day noon. | Zero | High |
+
+### Cumulative Blog Inventory (144 posts as of Cycle 64)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 |
+| #130-132 | Cycle 60 |
+| #133-135 | Cycle 61 |
+| #136-138 | Cycle 62 |
+| #139-141 | Cycle 63 |
+| #142-144 | Cycle 64 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 64 - 16:26 CET)*
+*Added: Blog posts #142-144, SOCIAL-MEDIA.md Cycle 64 (Tweets 396-410, r/producthunt post, Dev.to guidance, Hashtag Stack PH Day, IH Milestone), PRESS-KIT.md Cycle 64 v14.0 (One-liners v191-v205, Screenshot Checklist v12, Media Angles v46-v50, PH First Comment v2, Press Release Draft)*
+
+---
+
 ## Marketing Improvements (Cycle 63 - March 31, 2026 - 15:18 CET)
 
 ### STATUS: 🚀 SHOW HN T+6H | PRODUCT HUNT TOMORROW (APRIL 1) | 138→141 POSTS

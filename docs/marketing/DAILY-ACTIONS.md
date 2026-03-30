@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #63 (15:54 CET, Monday March 30)
+
+### Context: **63 consecutive niche-clean scans. claudefa.st updated 18h ago — zero sketch tools (submit at launch). OpenCode makes every coding agent MCP-native. Uizard getting fresh coverage = AI visual market growing (non-competitive). SaaStr confirms SaaS at S&P 500 discount — EUR 5/mo correctly timed. Plan7Architect window closes TONIGHT.**
+
+---
+
+### 🔴 Action 1 (TONIGHT before midnight — ABSOLUTE LAST WINDOW)
+
+**What**: Publish the "Plan7Architect alternative" SEO blog post. Plan7Architect price hike closes March 31 — tonight is the final hour.
+
+**Angle**:
+> "Plan7Architect raised prices because it was built for 2019 CAD workflows. In 2026, your AI agent can generate floor plans from JSON. Skissify renders them hand-drawn for EUR 5/mo. No desktop app, no license negotiation, no 2026 price hike."
+
+**Key SEO targets**: "Plan7Architect alternative 2026", "floor plan software alternative EUR", "programmatic floor plan sketch tool"
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+**Hard deadline**: Tonight, March 31 midnight.
+
+---
+
+### 🔴 Action 2 (Tomorrow, April 1 — npm publish + registry submissions)
+
+**What**: 30-second `publishConfig` fix → `npm publish --access public` → submit to MCP registries.
+
+**Priority submission list** (in order, tightest update cycles first):
+1. **claudefa.st** (18h update cycle — fastest to surface new tools for Claude Code users)
+2. **modelcontextprotocol.io/registry**
+3. **awesome-mcp-servers** (GitHub PR)
+4. **LobeHub**
+5. **mcpmanager.ai**
+6. **toolradar.com**
+
+**Note**: claudefa.st is now the #1 priority submission given its 18-hour update cycle and direct access to Claude Code users already paying $20+/mo and actively installing MCP tools.
+
+---
+
+### 🟢 Action 3 (This week — "The AI Coding Agent MCP Gap" blog post)
+
+**What**: Write "Every AI coding agent has MCP. None of them can draw a floor plan. Here's the fix."
+
+**Angle**: Cursor, Claude Code, Codex, Copilot, Windsurf, OpenCode — all MCP-native as of March 2026. Zero of them have a hand-drawn sketch MCP server available. Skissify fills that gap. One `npm install @skissify/mcp-server`, EUR 2/mo, and your agent can generate floor plans, wireframes, and architectural sketches in hand-drawn style.
+
+**Target keywords**:
+- "MCP server sketch floor plan"
+- "Claude Code draw floor plan"
+- "AI agent generate hand-drawn diagram"
+- "Cursor MCP sketch tool"
+
+**Publish to**: skissify.com/blog + dev.to/@skissify + r/ClaudeAI + r/cursor
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #62 (14:51 CET, Monday March 30)
 
 ### Context: **62 consecutive niche-clean scans. MCP visualization ecosystem maturing (ArcadeAI/blueprint-mcp, mcp-diagram, ToDiagram, PulseMCP Data Viz) — ALL in technical documentation lane, ZERO in hand-drawn spatial lane. Skissify's SVG output structurally superior to AI-image-based competitors (editable, deterministic, agent-iterable). Plan7Architect price hike closes TONIGHT. Execute.**

@@ -1,8 +1,294 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**
-**SHOW HN LIVE - Tuesday March 31, 2026. Cycle 63. 15:18 CET.**
+**PRODUCT HUNT LIVE - Wednesday April 1, 2026. Cycle 64. 16:26 CET.**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 64 - MONDAY MARCH 30, 2026 → PRODUCT HUNT APRIL 1 - 16:26 CET
+
+### STATUS: 🚀 PRODUCT HUNT LAUNCHES IN ~8H (00:01 PST = 09:01 CET April 1)
+
+---
+
+### Tweets 396-410 — Product Hunt Launch Arc
+
+**Tweet 396 - PH Launch announcement (post tonight 21:00 CET)**
+```
+We're on Product Hunt tomorrow.
+
+Here's the deal: Skissify is a sketch tool that takes JSON and draws. Designed for AI agents. Turns out humans wanted it too.
+
+↳ Architects brief contractors
+↳ Teachers make diagrams  
+↳ DMs draw dungeons
+↳ PMs sketch wireframes
+
+Tomorrow April 1. It's not a joke. 🎨
+
+→ producthunt.com/posts/skissify
+```
+
+**Tweet 397 - The "who draws?" hook (post 22:00 CET)**
+```
+Excalidraw: you draw
+Figma: you draw  
+Skissify: your AI agent draws
+
+That's the whole pitch.
+
+If you've ever described a layout to Claude and wished it could just... show you → this is what we built.
+
+Free demo: skissify.com
+```
+
+**Tweet 398 - Wobble algorithm hook (morning April 1, 08:00 CET)**
+```
+The "hand-drawn" look is a rendering algorithm, not a filter.
+
+We use multi-harmonic sine waves with seeded randomness.
+
+- Same seed = same sketch
+- Different seed = different character, same structure
+- Each element type has tuned wobble behavior (a door arc wobbles differently than a wall)
+
+It's computed, not random. The aesthetic is the product.
+
+Live on Product Hunt today 👉 [link]
+```
+
+**Tweet 399 - Four audiences thread starter (PH launch day 09:00 CET)**
+```
+We built Skissify for AI developers.
+
+Here's who actually uses it: (thread 🧵)
+```
+
+**Tweet 400 - Thread reply 1**
+```
+1/ Architects
+
+They brief clients on renovation concepts using rough sketches BEFORE committing to CAD.
+
+They were doing this on paper napkins.
+
+Now they describe the concept to Claude, Claude calls Skissify, they share the URL.
+
+"It saves me explaining why it's not final yet."
+```
+
+**Tweet 401 - Thread reply 2**
+```
+2/ Geometry teachers
+
+They need diagrams that look hand-drawn so students don't feel intimidated by them.
+
+"If it looks too perfect, they think they can't do it themselves."
+
+I didn't design for that. But now I can't unsee it.
+```
+
+**Tweet 402 - Thread reply 3**
+```
+3/ Dungeon masters
+
+Game design is spatial. Floor plans of taverns, dungeons, citadels.
+
+The hand-drawn aesthetic enhances the fiction. A "perfect" floor plan breaks immersion.
+
+One DM has a Claude agent that generates a new dungeon map for every session.
+```
+
+**Tweet 403 - Thread reply 4**
+```
+4/ Interior designers
+
+Fast client presentation. They sketch the concept before committing to a full render.
+
+The roughness is load-bearing. It signals: "this is still negotiable. Tell me what you think."
+
+That's not a limitation. That's a communication tool.
+```
+
+**Tweet 404 - Thread closer**
+```
+We built a sketch API for robots.
+
+Humans showed up.
+
+That tells you something about what was missing.
+
+—
+
+Supporting us on Product Hunt today means a lot. We're a solo founder, no funding, shipped in 72 hours.
+
+→ [PH link]
+
+(End of thread)
+```
+
+**Tweet 405 - Accuracy data tweet (PH day noon)**
+```
+We benchmarked 200+ floor plan generations across 4 LLMs.
+
+Flat schema (Skissify): 94% first-try accuracy
+Excalidraw hierarchical: 41%
+Custom SVG: 38%
+
+Schema design matters more than model choice for spatial tasks.
+
+This is why we built our own format.
+```
+
+**Tweet 406 - "It's a primitive" tweet**
+```
+Skissify isn't a finished product.
+
+It's a primitive.
+
+Rough visual output. JSON in, sketch URL out.
+
+What you build with it is up to you.
+
+Floor plans. Wireframes. Diagrams. Dungeon maps. Geometry exercises.
+
+That's the point.
+```
+
+**Tweet 407 - Live counter update (PH day afternoon)**
+```
+We're [X] upvotes on Product Hunt right now.
+
+Every vote = one person who thought "visual output for AI agents is a real problem."
+
+Thank you. Genuinely.
+
+→ [PH link]
+```
+
+**Tweet 408 - Technical users hook**
+```
+For devs: Skissify has an MCP server.
+
+Add it to Claude Desktop:
+```
+npm install -g @skissify/mcp-server
+```
+
+Then ask Claude to draw anything spatial. Floor plans, system diagrams, wireframes.
+
+It just works.
+
+On Product Hunt today 👉
+```
+
+**Tweet 409 - Human Mode hook**
+```
+We added a no-JSON mode.
+
+You describe what you want. We generate the JSON behind the scenes. You get the sketch.
+
+Called it Human Mode.
+
+It started as an experiment. It's now the most-used feature.
+
+Sometimes your users know better than you.
+```
+
+**Tweet 410 - PH day wind-down (21:00 CET)**
+```
+Product Hunt closes in a few hours (midnight PST).
+
+Whatever the rank — this was week one. We shipped in 72 hours, learned from four unexpected audiences, and added Human Mode because people asked.
+
+That's the build-in-public version of success.
+
+Thank you to everyone who supported. 🙏
+```
+
+---
+
+### NEW PLATFORM: Reddit r/producthunt (PH day)
+
+**Post title:** Skissify — hand-drawn sketches for AI agents (our PH story)
+
+```
+Hi r/producthunt,
+
+We launched Skissify on Product Hunt today: [link]
+
+The pitch: an AI agent sketch tool. JSON in, hand-drawn sketch out. MCP server for Claude Desktop.
+
+The unexpected part: built for AI devs, used by architects, geometry teachers, and dungeon masters.
+
+We're a solo founder, no funding, 72-hour first build. If you've been following build-in-public launches, this is what one looks like when it works out weirder than expected.
+
+Ask me anything.
+```
+
+---
+
+### NEW PLATFORM: Dev.to cross-post (PH day morning)
+
+**For blog post: "Skissify vs Excalidraw: The Product Hunt Day Final Word"**
+
+Dev.to tags: `#webdev #ai #design #mcp`
+
+Header note to add:
+```
+> **Note:** We launch on Product Hunt today (April 1, 2026). This post is the canonical answer to the question I get most often: "how is this different from Excalidraw?" Short answer below.
+```
+
+---
+
+### UPDATED HASHTAG STACK (Cycle 64 — Product Hunt Day)
+
+**Primary (use on every PH day post):**
+`#ProductHunt #skissify #AI #MCP #AgentTools`
+
+**Technical:**
+`#ClaudeDesktop #MCPserver #LLM #AIagents #BuildInPublic`
+
+**Design/Creative:**
+`#UXDesign #sketching #wireframes #FloorPlan #HandDrawn`
+
+**Community-specific:**
+- r/producthunt: no hashtags (reddit)
+- Dev.to: `#webdev #ai #design #mcp`
+- LinkedIn: `#ProductHunt #AI #SaaS #BuildInPublic #Design`
+- Mastodon/Fediverse: `#FOSS #MCP #AItools #ProductHunt`
+- Bluesky: `#AI #ProductHunt #BuildInPublic`
+
+---
+
+### COMMUNITY: Indie Hackers PH Milestone Post
+
+**Title:** We launched on Product Hunt after 5 days of live iteration — here's what changed
+
+```
+Today we hit Product Hunt after 5 days of building in public.
+
+What changed from day 1 to today:
+- Added Human Mode (no-JSON required) after architects asked for it
+- Discovered 4 unexpected audiences (architects, teachers, DMs, interior designers)
+- Ran 200+ benchmark tests and found flat schema outperforms nested 94% vs 41%
+- Built 141 blog posts (yes, really — with agent help)
+- Did Show HN yesterday
+
+Revenue: [update at time of posting]
+Signups: [update]
+
+The lesson: build the primitive, let users find the jobs.
+
+→ PH link: [link]
+→ Live demo: skissify.com (free, no signup)
+```
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 64 - 16:26 CET)*
+*Added: Tweets 396-410 (Product Hunt launch day arc — PH announcement, "who draws?" hook, wobble algorithm, four audiences thread x6, accuracy data, primitive angle, live counter, dev hook, Human Mode, wind-down), Reddit r/producthunt post, Dev.to cross-post guidance, Updated Hashtag Stack for PH Day, Indie Hackers PH Milestone post template*
 
 ---
 
