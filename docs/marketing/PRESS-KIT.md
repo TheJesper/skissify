@@ -3617,3 +3617,113 @@ The product is available at skissify.com. MCP server at npmjs.com/@skissify/mcp-
 **Press assets:** skissify.com/press
 
 ---
+
+---
+
+## PRESS-KIT.md Cycle 68 — March 30, 2026 — 22:05 CET — v18.0
+
+### ONE-LINERS v246-v260 (Final launch pack — sharpest ever)
+
+246. "The missing visual layer for AI agents."
+247. "JSON in. Hand-drawn sketch out. That's the whole product."
+248. "AI agents got text output, code output, and data output. Now they get drawing."
+249. "94% LLM first-try accuracy. Because we made the schema flat."
+250. "Your agent can now sketch a floor plan in 200ms."
+251. "Figma is for finishing. Skissify is for starting."
+252. "The wobbly lines aren't a bug. They tell viewers: this is a draft."
+253. "We gave AI a pencil."
+254. "12,000 MCP servers exist. None of them draw. Until now."
+255. "Plain text → hand-drawn sketch. No signup. No API key. Instant."
+256. "Four lines of MCP config. Your agent becomes a visual designer."
+257. "The sketch URL is the API response."
+258. "We launched on April Fools Day because the product speaks for itself."
+259. "Agent memory as a sketch URL. Share it in Slack. React to it. Update it."
+260. "Not Excalidraw for AI. The sketch tool AI was missing."
+
+---
+
+### MEDIA ANGLES v71-v75 (Cycle 68 — Launch Day Press)
+
+**v71: The Schema Science Story**
+Angle: "Swedish indie developer discovers flat JSON beats nested for LLM accuracy — a generalizable finding for AI API design"
+Hook: 94% vs 61% is a concrete, quotable stat. Generalizes beyond Skissify.
+Target: Dev.to, Hacker News, tech blogs with AI readership
+
+**v72: The April Fools Brand Story**
+Angle: "Solo founder deliberately launches real product on April 1 — and explains why the date is actually an advantage"
+Hook: Counterintuitive marketing decision with a coherent theory behind it
+Target: IndieHackers, Inc, Fast Company startup section, morning newsletters
+
+**v73: The Missing Primitive Story**
+Angle: "AI agents have text, code, and data output. Visual output is the gap nobody noticed"
+Hook: Simple observation with significant implications for the entire agent ecosystem
+Target: AI-focused outlets: VentureBeat AI, The Information, The Batch (deeplearning.ai)
+
+**v74: The Unexpected Audience Story**
+Angle: "Developer built for AI engineers, got architects, teachers, and homeowners"
+Hook: Product-market fit stories that surprise resonate with both startup and mainstream tech audiences
+Target: Product Hunt community, IndieHackers, Medium startup section
+
+**v75: The Solo Founder Build-in-Public Story**
+Angle: "153 blog posts, 460 tweets, 68 agent cycles — how one developer built a launch machine"
+Hook: The meta-narrative of using AI to do marketing for an AI tool
+Target: IndieHackers, Starter Story, morning product newsletters
+
+---
+
+### LAUNCH-EVE PRESS ANGLES FOR MORNING NEWSLETTERS
+
+If pitching TLDR AI, Ben's Bites, The Rundown, or Superhuman tonight:
+
+Subject: "MCP now has a drawing tool (Skissify, launching on Product Hunt April 1)"
+
+Body:
+> Quick pitch: Skissify is an MCP-native sketch tool that lets AI agents generate hand-drawn sketches from JSON or plain text. Launching on Product Hunt tomorrow.
+>
+> The technical hook: We found that flat JSON schemas achieve 94% LLM first-try accuracy vs 61% for nested schemas — a generalizable insight for AI API design.
+>
+> The human hook: Built it for developers, got architects, teachers, homeowners, and dungeon masters.
+>
+> Free tier: 100 renders/day, unlimited MCP, unlimited editor demo.
+>
+> Product Hunt: [link]
+> Demo: skissify.com/editor
+>
+> Happy to share more / connect with the founder.
+
+---
+
+### FOUNDER BIO v4 (Updated for PH Launch)
+
+**Short version (1 sentence):**
+Jesper built Skissify after noticing that AI agents had text, code, and data output but no way to draw — and that rough sketches outperform polished mockups for early ideation.
+
+**Medium version (2-3 sentences):**
+Jesper is a solo developer who built Skissify — the visual output layer for AI agents. The idea came from a simple observation: MCP had 12,000 servers that could retrieve, transform, and generate data, but none that could draw. Skissify fixes that with a flat JSON schema (94% LLM first-try accuracy), an MCP server, a REST API, and a Human Mode that turns plain text into hand-drawn sketch URLs.
+
+**Full version (for press releases and About pages):**
+Jesper is a Swedish developer and solo founder who launched Skissify in March 2026. The product started as a weekend experiment: what would it look like if an AI agent could generate a hand-drawn sketch of a floor plan? That experiment turned into a launch: a sketch API with a flat JSON schema, an MCP server, a Human Mode for plain-text input, and a free tier that requires no signup.
+
+The core insight behind Skissify: hand-drawn sketches aren't just aesthetically interesting — they signal "draft" to human collaborators in a way that polished mockups don't. The wobble, the rough edges, the visible imprecision communicate that a sketch is open to feedback. That signal changes how people respond. Applied to AI-generated output, it means agents can produce spatial information that humans interpret correctly: as a starting point, not a finished design.
+
+Jesper launched Skissify on Product Hunt on April 1, 2026 — deliberately, after reasoning that the "is this real?" moment of an April Fools launch produces higher-engagement users than normal cold traffic.
+
+---
+
+### PRODUCT SCREENSHOTS CHECKLIST v16 — FINAL FOR PH GALLERY
+
+**P0 — BLOCKING (must have before PH submission):**
+- [ ] screenshot-human-mode-side-by-side.png — Plain text input on left, sketch URL output on right. Show the full flow in one frame.
+- [ ] screenshot-ph-banner-1270x760.png — Product Hunt gallery header. Show the editor, a floor plan sketch, and the one-liner: "The visual output layer for AI agents"
+
+**P1 — CRITICAL (get today):**
+- [ ] screenshot-mcp-claude-desktop.png — Claude Desktop with Skissify MCP configured, agent generating a floor plan sketch
+- [ ] screenshot-blueprint-floor-plan.png — Clean floor plan: living room + kitchen + 2 bedrooms + bathroom, wobble 3, labeled
+- [ ] screenshot-system-diagram.png — Server architecture diagram (boxes for services, arrows for connections, labels)
+
+**P2 — NICE TO HAVE (post-launch if not ready):**
+- [ ] screenshot-mobile-editor.png — Mobile Safari view of the editor with Human Mode
+- [ ] screenshot-agent-conversation.png — Chat thread where AI generates sketch mid-conversation
+- [ ] screenshot-dungeon-map.png — Fantasy dungeon map (unexpected audience proof)
+
+---

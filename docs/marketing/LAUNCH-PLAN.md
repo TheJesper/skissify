@@ -4965,3 +4965,88 @@ Users who overcame skepticism to try something are more engaged than users who w
 *Added: Blog posts #148-150 (midnight PH essay, PH eve technical deep dive, April Fools comparison), SOCIAL-MEDIA.md Cycle 66 (Tweets 426-440 + PH First Comment v4 FINAL + r/producthunt post + Comment Response Templates + Hashtag Stack + Bluesky Thread + IH Milestone post), PRESS-KIT.md v16.0 (One-liners v216-v230 + Screenshot Checklist v14 + Media Angles v56-v60 + Press Release v3 + PH First Comment v4), April Fools Filter Theory, MCP production adoption research, new ideas table*
 
 
+
+## Marketing Improvements (Cycle 68 — March 30, 2026 — 22:05 CET)
+
+### STATUS: T-11H TO PRODUCT HUNT LAUNCH | 153->156 POSTS | FINAL LAUNCH-EVE CYCLE
+
+**PRODUCT HUNT LAUNCHES IN ~11H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 68:**
+
+- **3 new blog posts (#154-156) — fresh angles, not covered before:**
+  - why-hand-drawn-sketches-beat-figma-the-10pm-before-launch.md — Personal, literary, genuinely different frame. The fidelity signal theory explained through the 10PM-before-a-meeting scenario. Not another "rough beats polished" argument — a concrete situation with a concrete action. Best for Medium, IndieHackers, and anyone sharing at 10PM tonight.
+  - how-ai-agents-draw-floor-plans-the-april-1-release-notes.md — Release notes framing is fresh. Honest about what went wrong (mobile bug, wobble default, MCP docs gap). Working copy-paste floor plan JSON. Technical + personal. Best for Dev.to, HN, r/mcp.
+  - skissify-vs-excalidraw-the-collaboration-test.md — "Who is holding the pen?" as the single decision test. Cleanest comparison framing yet. Endorses Excalidraw honestly. Full feature table. Hybrid workflow section. Best for r/webdev, r/mcp, Dev.to.
+
+- **SOCIAL-MEDIA.md Cycle 68**: Tweets 461-475 (final launch arc: T-11h tonight send, launch morning 07:30, PH LIVE 09:01, April Fools lean-in, copy-paste viral hook tweet with working JSON, schema science stat tweet, unexpected audiences thread x5, midday engagement check, A2A/protocol angle, solo founder close), Instagram caption with full hashtag stack, TikTok scripts x2 (30-sec and 60-sec), LinkedIn launch day post (SEND TONIGHT), Bluesky launch day thread x3, Trending Hashtag Stack v2 (primary/secondary/technical/design/growth/Instagram/avoid).
+
+- **PRESS-KIT.md v18.0**: One-liners v246-v260 (sharpest single-sentence pack, includes "We gave AI a pencil" and "12,000 MCP servers. None drew. Until now."), Media Angles v71-v75 (Schema Science, April Fools Brand, Missing Primitive, Unexpected Audience, Solo Founder Build-in-Public), Launch-eve newsletter pitch template (ready to copy-paste to TLDR AI/Ben's Bites/Rundown/Superhuman), Founder Bio v4 (short/medium/full), Screenshot Checklist v16 FINAL.
+
+### NEW BLOG POSTS (Cycle 68)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 154 | **Why Hand-Drawn Beats Figma: The 10PM Before Launch** | why-hand-drawn-sketches-beat-figma-the-10pm-before-launch.md | Medium, IndieHackers | Tonight / PH launch |
+| 155 | **How AI Agents Draw Floor Plans: April 1 Release Notes** | how-ai-agents-draw-floor-plans-the-april-1-release-notes.md | Dev.to, HN, r/mcp | 09:30 CET April 1 |
+| 156 | **Skissify vs Excalidraw: The Collaboration Test** | skissify-vs-excalidraw-the-collaboration-test.md | r/webdev, r/mcp, Dev.to | 11:00 CET April 1 |
+
+### NEW IDEAS (Cycle 68)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Instagram Reels: "I gave Claude a pencil"** | 30-second screen recording of JSON → sketch render. No voice required. Loop-friendly. Shareable across developer Instagram accounts. | Low (script ready) | Medium-High |
+| **TikTok: "April Fools launch strategy"** | Counterintuitive angle that performs well as short-form content regardless of Skissify context. | Low (script ready) | High |
+| **"Release notes" framing for product updates** | The release notes format (what works, what we got wrong) is a high-trust format that signals honesty. Use for all future blog posts about product updates. | Zero | Medium |
+| **Schema science as standalone HN post** | "Flat JSON arrays vs nested objects: 94% vs 61% LLM first-try accuracy" deserves its own HN Show submission post-launch. | Low | High |
+| **LinkedIn post TONIGHT** | Template ready in SOCIAL-MEDIA.md Cycle 68. OVERDUE. Send before sleep. | Zero | High |
+
+### CRITICAL ACTIONS — RIGHT NOW (10PM March 30)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| ?? BLOCKER | **Screenshot P0-A: Human Mode side-by-side** | Before sleep | MUST DO |
+| ?? BLOCKER | **Screenshot P0-B: PH Banner 1270x760** | Before sleep | MUST DO |
+| ?? CRITICAL | **LinkedIn launch post** | NOW | Template ready in SOCIAL-MEDIA.md Cycle 68 |
+| ?? CRITICAL | **Newsletter pitches** (TLDR AI, Ben's Bites, Rundown, Superhuman) | NOW | Template ready in PRESS-KIT.md Cycle 68 |
+| ?? HIGH | **Tweet 461** (T-11h countdown, send now) | 22:00 CET | Ready in SOCIAL-MEDIA.md Cycle 68 |
+| ?? HIGH | **Stage PH First Comment** | Tonight | Ready in SOCIAL-MEDIA.md Cycle 66/67 |
+| ?? HIGH | **Post blog #154** (10PM before launch essay) | Tonight | Ready |
+
+### UPDATED APRIL 1 POSTING SCHEDULE (Cycle 68)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 22:00 March 30 | Tweet 461 — T-11h countdown | SOCIAL-MEDIA Cycle 68 |
+| 22:00 March 30 | LinkedIn launch post | SOCIAL-MEDIA Cycle 68 |
+| 22:00 March 30 | Post blog #154 (10PM essay) | blog/ Cycle 68 |
+| 07:30 April 1 | Tweet 462 — launch morning | SOCIAL-MEDIA Cycle 68 |
+| 09:01 April 1 | **PRODUCT HUNT LIVE** | — |
+| 09:01 April 1 | Tweet 463 — PH LIVE | SOCIAL-MEDIA Cycle 68 |
+| 09:01 April 1 | Post PH First Comment | SOCIAL-MEDIA Cycle 66 |
+| 09:15 April 1 | Tweet 464 — April Fools lean-in | SOCIAL-MEDIA Cycle 68 |
+| 09:30 April 1 | Post blog #155 (release notes) | blog/ Cycle 68 |
+| 09:45 April 1 | Tweet 465 — copy-paste JSON hook | SOCIAL-MEDIA Cycle 68 |
+| 10:00 April 1 | Tweet 466 — schema science stat | SOCIAL-MEDIA Cycle 68 |
+| 10:30 April 1 | Tweet 467 thread — unexpected audiences | SOCIAL-MEDIA Cycle 68 |
+| 11:00 April 1 | Post blog #156 (collaboration test) | blog/ Cycle 68 |
+| 12:00 April 1 | Post r/producthunt | SOCIAL-MEDIA Cycle 65 |
+| 12:00 April 1 | Post r/mcp | SOCIAL-MEDIA Cycle 67 |
+| 13:00 April 1 | Tweet 468 — midday engagement | SOCIAL-MEDIA Cycle 68 |
+| 15:00 April 1 | Post Mastodon/fosstodon | SOCIAL-MEDIA Cycle 67 |
+| 16:00 April 1 | Post r/MachineLearning | PRESS-KIT community map |
+| 16:00 April 1 | Post Anthropic Discord #mcp-showcase | SOCIAL-MEDIA Cycle 67 |
+| 18:00 April 1 | Tweet 470 — solo founder close | SOCIAL-MEDIA Cycle 68 |
+| 20:00 April 1 | IndieHackers April 1 retrospective (fill numbers) | — |
+
+### CUMULATIVE BLOG INVENTORY (156 posts as of Cycle 68)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-153 | Cycles 53-67 |
+| #154-156 | Cycle 68 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 68 — 22:05 CET)*
+*Added: Blog posts #154-156 (10PM fidelity essay, April 1 release notes, collaboration test comparison), SOCIAL-MEDIA.md Cycle 68 (Tweets 461-475 + Instagram caption + TikTok scripts x2 + LinkedIn post + Bluesky thread x3 + Hashtag Stack v2), PRESS-KIT.md v18.0 (One-liners v246-260 + Media Angles v71-75 + Newsletter pitch template + Founder Bio v4 + Screenshot Checklist v16 FINAL)*
+
