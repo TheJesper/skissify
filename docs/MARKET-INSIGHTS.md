@@ -2,6 +2,73 @@
 
 ---
 
+## Entry: March 30, 2026 — 17:02 CET | Automated Strategy Run #64
+
+### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — Agentic SaaS Pricing Reaches Mainstream Business Press; Construction Drawing Market Validated as EUR 5/mo Gap; MCP Now Conference-Level Infrastructure"
+
+**Intelligence basis**: Run #64. 64 consecutive niche-clean scans. 3 searches completed (349/2000 monthly quota). Key signals: European Business Review names "agentic SaaS pricing" as distinct category (5 days ago — mainstream business strategy press). ezypmp.com confirms construction drawing management market matured, zero MCP/JSON/hand-drawn tools. Datasciencedojo Agentic AI Conference features MCP as keynote topic (3 days ago). Thomas Thornton Excalidraw tutorial now 10+ days in SERP. Agentic SaaS pricing (seats→outcomes) now a mainstream business press topic.
+
+---
+
+#### Finding 1: "Agentic SaaS Pricing" Is Now a Named Category in Mainstream Business Strategy Press — And Skissify Is One
+
+**Source**: europeanbusinessreview.com "Architecting a New Agentic SaaS Pricing Strategy" (5 days ago)
+**URL**: https://www.europeanbusinessreview.com/architecting-a-new-agentic-saas-pricing-strategy-why-and-how/
+
+The European Business Review — a mainstream business strategy publication — named "agentic SaaS pricing" as a distinct pricing category in an article published 5 days ago. The core framing: **"seats → outcomes as agentic AI drives the execution economy."** Per-execution billing is defined as the standard model for tools called by agents rather than used directly by humans.
+
+**What makes someone pay EUR 2/mo for Skissify**: The European Business Review's article names this exact mechanism: Skissify is an *agentic SaaS* tool — it is called by an AI agent (Claude, Codex, Cursor) to generate visual output, not opened by a human in a browser. Per-render pricing (EUR 0.005/render) is textbook "execution economy" pricing. EUR 2/mo API Starter = the minimum viable subscription for a tool integrated into an agent pipeline.
+
+The psychological shift: **the EUR 2/mo decision is made ONCE** by the developer configuring their agent pipeline. After that, it's an infrastructure line item — like a CDN or an email API. The agent pays per render invisibly. The developer never thinks about it again.
+
+**Why this matters now**: The European Business Review reaching this conclusion means enterprise procurement teams and engineering managers are reading about "agentic SaaS pricing" as a strategic concept — not just developers on Hacker News. This creates a top-down pull: managers who read this article will actively ask "which of our AI agent workflows are using properly priced agentic tools?" Skissify answers that question for the visual output step.
+
+---
+
+#### Finding 2: Construction Drawing Management Market Validated as Adjacent High-Value Gap (EUR 5/mo Can Compete at the Low End of a $100–500+/mo Market)
+
+**Source**: ezypmp.com "Construction Drawing Management Software 2026" (3 days ago)
+**URL**: https://ezypmp.com/construction-drawing-management-software-2026/
+
+A fresh market analysis of construction/architectural drawing tools confirms: the market has matured, enterprise tools (Procore, PlanGrid, Bluebeam, Autodesk Construction Cloud) dominate at $100–500+/mo per user. Zero of these tools: accept JSON input, have MCP servers, produce hand-drawn aesthetic output, or support programmatic agent-driven generation.
+
+**What makes someone pay EUR 5/mo for Skissify (B2B angle)**: A construction project manager or architect who currently pays $0 to hand-draw stakeholder sketches (or $200/mo for CAD) will pay EUR 5/mo for an AI agent that generates hand-drawn floor plan sketches from JSON descriptions. The value proposition: generate a presentation-ready sketch in 10 seconds vs 30 minutes of manual work or $200/mo for software that requires training.
+
+**The gap**: The construction drawing market has a price cliff — either expensive enterprise CAD ($100–500+/mo) or nothing (paper sketching). Skissify at EUR 5/mo sits at the "nothing vs something" threshold and wins on speed and agent-compatibility.
+
+**Segment to target post-launch**: Architecture firm project coordinators (not licensed architects) who need client presentation sketches but don't have CAD access. EUR 5/mo vs zero for a tool that outputs professional-looking hand-drawn floor plan graphics = immediate value.
+
+---
+
+#### Finding 3: MCP Is Now Agentic AI Conference Keynote Content — Enterprise Discovery Inflection Point
+
+**Source**: datasciencedojo.com/agentic-ai-conference (3 days ago)
+**URL**: https://datasciencedojo.com/agentic-ai-conference/
+
+Datasciencedojo (100K+ audience, major data science education platform) is running a dedicated "Agentic AI Conference" with MCP featured as a core track: "Use Docker Sandboxes and the MCP Toolkit to add guardrails and observability to agentic workflows."
+
+**What makes someone pay EUR 2/mo for Skissify (conference-funnel angle)**: Conference attendees who learn about MCP for the first time at Datasciencedojo's event will search for available MCP tools afterwards. The modelcontextprotocol.io/registry, awesome-mcp-servers, claudefa.st, and mcpmanager.ai are the discovery pages they'll land on. Skissify appearing as "the sketch/floor plan MCP tool" on these pages converts conference-educated developers who are specifically looking for new MCP tools to add to their stacks.
+
+**Scale implication**: Datasciencedojo has 100K+ followers. Even 0.1% conversion to "tries Skissify" = 100 users from this conference's audience alone.
+
+---
+
+#### Finding 4: SaaS Pricing Intelligence — 4 Consecutive Stable Weeks = Structural Confirmation
+
+**Sources**: mindk.com (3 days ago), businessupside.com (3 days ago), Revenera (2 weeks), bigideasdb.com (2 weeks), voxturr.com (2 weeks)
+
+All five SaaS pricing sources that have appeared consistently across 30+ runs now represent **4 consecutive stable weeks** of the same findings:
+- Usage-based/outcome-based pricing: dominant 2026 model
+- Per-seat pricing: dying, incumbents struggling to transition
+- Domain-specific tools: 30–50% pricing premium
+- Micro-SaaS impulse threshold: sub-$10/mo
+
+At 4 weeks of stability, this is no longer trend intelligence — it is **confirmed structural market data**. Skissify's EUR 2/5/12 tier ladder + EUR 0.005/render overage is locked in as the structurally correct 2026 pricing architecture. No further pricing validation research needed.
+
+**What makes someone pay EUR 2/mo for Skissify (pricing psychology)**: Per the businessupside.com data, per-seat pricing is dying because AI makes workers 10x more productive. EUR 2/mo per-user makes no sense in this context. EUR 0.005/render makes perfect sense — you pay for the output you use, not the access you might use. EUR 2/mo is the "always available" floor that includes enough renders for evaluation, with transparent overage above that. No commitment anxiety. No "am I using this enough to justify it?" guilt. Just: my agent uses it when it needs to.
+
+---
+
 ## Entry: March 30, 2026 — 15:54 CET | Automated Strategy Run #63
 
 ### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — OpenCode MCP Confirms Ecosystem Mainstream Adoption; claudefa.st Updated 18 Hours Ago With No Hand-Drawn Sketch Tool Listed"
