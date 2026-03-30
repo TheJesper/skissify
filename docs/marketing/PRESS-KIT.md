@@ -3727,3 +3727,96 @@ Jesper launched Skissify on Product Hunt on April 1, 2026 — deliberately, afte
 - [ ] screenshot-dungeon-map.png — Fantasy dungeon map (unexpected audience proof)
 
 ---
+
+
+---
+
+## PRESS-KIT.md - v19.0 (Cycle 69 - March 31, 2026 - 00:21 CET)
+
+### STATUS: T-9H TO PH LAUNCH | FINAL PRE-LAUNCH PRESS KIT UPDATE
+
+---
+
+### ONE-LINERS v261-v275 (Cycle 69 - Final Launch Eve Edition)
+
+These are the cleanest one-liners yet. Distilled from 156 blog posts.
+
+**v261:** "We gave AI a pencil."
+**v262:** "The visual output layer for AI agents."
+**v263:** "12,000 MCP servers. None drew. Until now."
+**v264:** "LLMs can think about space. Now they can show their work."
+**v265:** "Rough sketches outperform polished mockups. We automate the rough sketch."
+**v266:** "AI agents have text, code, and data output. This is the drawing layer."
+**v267:** "Figma is for finished designs. Skissify is for thinking."
+**v268:** "The napkin phase AI was missing."
+**v269:** "Hand-drawn = 'still thinking.' That signal matters."
+**v270:** "Not a diagram tool. A sketch tool. The difference is fidelity and intent."
+**v271:** "Claude can describe your kitchen layout. Skissify lets it draw it."
+**v272:** "JSON in. Sketch URL out. MCP native."
+**v273:** "The wobble algorithm that makes AI drawings look human."
+**v274:** "94% LLM accuracy with flat schemas. 61% with nested. Build accordingly."
+**v275:** "For every AI agent that describes a space, Skissify draws it."
+
+---
+
+### MEDIA ANGLES v76-v80 (Cycle 69 - Fresh Angles)
+
+**v76: The Vibe Coding Homeowner**
+Angle: "Claude Code went viral with homeowners renovating their kitchens. Skissify is what they were actually looking for — a way to see what Claude was describing."
+Hook: The unexpected non-developer use case that validates product-market fit beyond the dev community
+Target: Consumer tech press, home/design publications, morning lifestyle newsletters
+
+**v77: The Framework Gap**
+Angle: "Every 2026 AI agent framework comparison covers tools, memory, orchestration, and code execution. None has a visual output story. Skissify fills that gap."
+Hook: A structural gap in the AI agent ecosystem that nobody had named until now
+Target: Developer-focused outlets, VentureBeat AI, TechCrunch AI, The Information
+
+**v78: The Schema Science Scoop**
+Angle: "Flat JSON arrays achieve 94% LLM first-try accuracy vs 61% for nested objects. We discovered this building Skissify. It changes AI API design principles."
+Hook: A concrete, reproducible finding that generalizes beyond Skissify
+Target: HN front page, Lobsters, AI engineering newsletters (TLDR AI, The Batch)
+
+**v79: The Four Audiences**
+Angle: "Built for AI developers. Adopted first by homeowners, teachers, dungeon masters, and architects."
+Hook: Unexpected product-market fit stories are irresistible for startup and product press
+Target: Product Hunt community, IndieHackers, Medium startup section, Starter Story
+
+**v80: The Midnight Build**
+Angle: "68 AI agent cycles. 156 blog posts. One solo developer building a launch machine with the tool he's launching."
+Hook: The meta-narrative of using AI agents to market an AI agent tool
+Target: IndieHackers, Developer publications, BuildInPublic community
+
+---
+
+### COMMUNITY MAP v5 - WHERE TO POST ON LAUNCH DAY
+
+| Time (CET) | Community | What to Post | Content |
+|------------|-----------|--------------|---------|
+| 09:01 | Product Hunt | Launch + upvote | Primary launch page |
+| 09:30 | HN Show HN | Show HN submission | "LLMs can now draw" title |
+| 10:00 | r/AIAgents | Show submission | Framework gap angle |
+| 10:30 | r/mcp | MCP integration post | 4-line config + schema insight |
+| 11:00 | r/SideProject | Launch post | Solo founder + April 1 thesis |
+| 12:00 | r/producthunt | Community post | April 1 support request |
+| 12:00 | r/webdev | Skissify vs Excalidraw | Honest comparison angle |
+| 13:00 | Anthropic Discord #mcp-servers | MCP launch | Technical framing |
+| 13:00 | LangChain Discord | REST API integration | LangGraph code snippet |
+| 14:00 | Mastra Discord | TypeScript MCP | Mastra integration guide |
+| 15:00 | Mastodon/Fosstodon | Open source launch | Open framing |
+| 16:00 | r/MachineLearning | Schema science post | 94% vs 61% finding |
+| 16:00 | Dev.to | Blog post crosspost | Floor plan AI technical guide |
+
+---
+
+### APRIL 2 POST-MORTEM FRAMEWORK (Write the day after)
+
+Sections to include:
+1. **The Numbers**: upvotes, website visits, signups, renders in 24h
+2. **The April Fools Filter**: did the theory hold? Conversion rate vs normal?
+3. **What we got wrong**: honest, specific, builds trust
+4. **The unexpected audience**: which of the four dominated?
+5. **What's next**: roadmap, what we're building based on feedback
+
+Best platforms for the post-mortem: IndieHackers (guaranteed upvotes), Dev.to, Medium, HN Show HN
+
+---

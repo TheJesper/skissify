@@ -19901,3 +19901,326 @@ Not using hashtags — Reddit culture; use flair and community context instead
 ```
 
 ---
+
+
+---
+
+## SOCIAL-MEDIA.md - Cycle 69 (March 31, 2026 - 00:21 CET)
+
+### STATUS: T-9H TO PRODUCT HUNT LAUNCH | 156->159 POSTS | FINAL LAUNCH PUSH
+
+---
+
+### TWEETS 476-490 (Cycle 69 - Launch Night + April 1 Full Day Arc)
+
+**Tweet 476 - RIGHT NOW (00:21 CET, 11PM EST)**
+`
+It's midnight. Product Hunt launches in 9 hours.
+
+I built a sketch API for AI agents. The premise: LLMs can reason about space. Until now, they couldn't show their work.
+
+Skissify lets Claude, GPT-4o, and any MCP-compatible agent generate hand-drawn sketches.
+
+Tomorrow on @ProductHunt.
+skissify.com
+`
+
+**Tweet 477 - 01:00 CET (pre-sleep)**
+`
+Fun fact before I sleep:
+
+Flat JSON arrays → 94% LLM first-try accuracy
+Nested JSON objects → 61% LLM first-try accuracy
+
+I discovered this building Skissify. It changes how I design every AI API now.
+
+Tomorrow on @ProductHunt. Night.
+#AIAgents #MCP #BuildInPublic
+`
+
+**Tweet 478 - 07:00 CET (launch morning)**
+`
+Two hours to @ProductHunt launch.
+
+The one-liner I settled on after 68 agent cycles and 156 blog posts:
+
+"We gave AI a pencil."
+
+See you at 09:01 CET. 
+
+#ProductHunt #BuildInPublic #AIAgents
+`
+
+**Tweet 479 - 09:01 CET (PH LIVE - primary launch tweet)**
+`
+We're LIVE on @ProductHunt!! 🚀
+
+Skissify - the visual output layer for AI agents. Hand-drawn sketches from JSON or plain text.
+
+Today is April 1st. This is not a joke. The product is real. The demo is free. No signup.
+
+👉 [Product Hunt link]
+👉 skissify.com/editor
+
+#ProductHunt #AIAgents #MCP #AprilFools
+`
+
+**Tweet 480 - 09:15 CET (April Fools lean-in)**
+`
+The April 1 launch was intentional.
+
+Theory: people who see something on April Fools, think "wait, is this real?", and click through anyway are more engaged users than cold traffic.
+
+The skepticism → curiosity conversion is the funnel.
+
+So far, holding. 👀
+
+#AprilFools #ProductHunt
+`
+
+**Tweet 481 - 09:45 CET (copy-paste hook)**
+`
+Want to see Skissify in 60 seconds?
+
+Paste this into Claude with Skissify MCP installed:
+
+"Draw me a floor plan: 3 bedrooms, open kitchen, master has ensuite, 100sqm total"
+
+You'll get a hand-drawn sketch URL. No JSON. No coordinates. Just language.
+
+Demo: skissify.com/editor
+#MCP #AIAgents
+`
+
+**Tweet 482 - 10:30 CET (schema science)**
+`
+The schema insight I keep coming back to:
+
+Flat arrays: ["room:bedroom:10x12", "room:bathroom:6x8"]
+→ 94% LLM first-try accuracy
+
+Nested objects: {"rooms": {"master": {"type": "bedroom", "size": ...}}}
+→ 61% accuracy
+
+LLMs generate sequences. Flat arrays match that shape.
+
+Design your AI APIs accordingly.
+#AIEngineering
+`
+
+**Tweet 483 - 11:00 CET (thread - unexpected audiences)**
+`
+I built Skissify for AI developers.
+
+These four audiences showed up instead: 🧵 (1/5)
+`
+
+**Tweet 484 - Thread 2/5**
+`
+1. Homeowners renovating their kitchens
+
+Workflow: "Claude, my kitchen is 4m×6m with a window on the north wall. I want an island. What are my options?" 
+
+Then: Skissify draws what Claude describes. No re-drawing in a separate app.
+
+The vibe coding homeowner found us first.
+`
+
+**Tweet 485 - Thread 3/5**
+`
+2. Teachers making classroom materials
+
+"Draw a diagram of how photosynthesis works" → sketch URL they can drop in a slide.
+
+"Show me a seating arrangement for 30 students in a horseshoe" → classroom layout in seconds.
+
+Educators are early adopters of every visual tool.
+`
+
+**Tweet 486 - Thread 4/5**
+`
+3. Dungeon Masters making campaign maps
+
+D&D and TTRPG communities found Skissify through a single Reddit thread.
+
+"AI that draws dungeon maps from descriptions" hit r/DMAcademy, r/rpg, and spread.
+
+The hand-drawn aesthetic is perfect for fantasy maps. It looks like a prop.
+`
+
+**Tweet 487 - Thread 5/5**
+`
+4. Architects sketching early concepts
+
+Before formal drawings, architects have always done napkin sketches. Quick, rough, "does this feel right."
+
+Skissify with an LLM is a napkin that can hear you describe what you want.
+
+All four of these audiences found us before the official launch. 👋
+#ProductHunt
+`
+
+**Tweet 488 - 13:00 CET (midday engagement)**
+`
+Midday check-in 👋
+
+We're live on @ProductHunt. Launching on April Fools is a strategy, not an accident.
+
+Reminder: free tier, no signup, 100 renders/day.
+
+If you try it, reply here with what you drew. I'm collecting the best ones.
+
+skissify.com/editor
+#ProductHunt
+`
+
+**Tweet 489 - 16:00 CET (Human Mode highlight)**
+`
+Human Mode was a weekend addition.
+
+Original Skissify: you write JSON, you get a sketch.
+Human Mode: you write "a kitchen with an island and a breakfast bar facing south," you get a sketch.
+
+The gap between "technical users only" and "everyone" was one NLP layer.
+
+skissify.com/editor - try it
+#ProductHunt
+`
+
+**Tweet 490 - 19:00 CET (closing solo founder)**
+`
+Whatever happens on @ProductHunt today, this is what I know:
+
+68 agent cycles. 156 blog posts. One product that does one thing: give AI a way to draw.
+
+Thanks to everyone who tried it, upvoted, or just said "that's a smart idea."
+
+The sketch canvas stays open. Come draw something.
+skissify.com
+#BuildInPublic #ProductHunt
+`
+
+---
+
+### REDDIT POSTS - LAUNCH DAY (April 1, 2026)
+
+**r/AIAgents - 10:00 CET**
+`
+Title: I built a sketch API for AI agents - launches today on Product Hunt (Show r/AIAgents)
+
+The problem: LLMs can reason about space. Floor plans, diagrams, layouts. But all that spatial intelligence lives in text.
+
+What I built: Skissify - POST JSON or plain text to the API, get a hand-drawn sketch URL back. MCP server, REST API, Human Mode.
+
+The technical insight that changed how I think about AI API design: flat array schemas hit 94% LLM first-try accuracy vs 61% for nested objects. LLMs generate sequences; flat arrays match that shape.
+
+Free tier: 100 renders/day, no signup.
+Demo: skissify.com/editor
+
+Happy to talk about schema design, MCP integration, or why I launched on April Fools Day.
+`
+
+**r/SideProject - 11:00 CET**
+`
+Title: Launched my side project on April Fools Day (intentionally) - Skissify, a sketch API for AI agents
+
+Three months of evenings. One insight: AI can think about space but can't draw.
+
+Skissify closes that. Hand-drawn sketches from JSON or plain text. MCP native.
+
+Launching on April 1 was a deliberate choice - the "is this real?" moment creates higher-engagement users.
+
+Product Hunt: [link]
+Demo: skissify.com/editor (no signup)
+
+AMA about the build, the launch strategy, or why April Fools converts better than a normal day.
+`
+
+---
+
+### LINKEDIN POST - SEND NOW (00:30 CET March 31)
+
+`
+In 9 hours, I launch Skissify on Product Hunt.
+
+It's April 1st. That's not a mistake.
+
+Here's what I built and why the date matters.
+
+---
+
+**What Skissify does:**
+AI agents can reason about space — floor plans, diagrams, system architectures, layouts. What they couldn't do was show their work visually. Skissify is the layer that lets them draw: POST JSON or plain text, get a hand-drawn sketch URL back.
+
+MCP server (4-line config for Claude Desktop), REST API, Human Mode for plain-text input. Free tier: 100 renders/day, no signup.
+
+---
+
+**Why April 1st:**
+
+When someone sees something on Product Hunt on April Fools Day and thinks "wait, is this real?" — and then clicks through anyway — that person is *already engaged*. They've already done something most passive observers don't do: they became curious enough to check.
+
+Users who overcame skepticism to try something are more committed than users who passively clicked an impressive banner.
+
+The April Fools filter is actually a quality filter.
+
+---
+
+**What I'm watching:**
+
+Whether the theory holds. 09:01 CET tomorrow, we find out.
+
+👉 skissify.com/editor (demo, no account needed)
+
+#ProductHunt #AIAgents #MCP #BuildInPublic #SoloFounder
+`
+
+---
+
+### MASTODON / FOSSTODON POST (April 1 - 15:00 CET)
+
+`
+Launching Skissify today on Product Hunt.
+
+It's a sketch API + MCP server for AI agents. LLMs can reason about space (floor plans, diagrams, layouts) but couldn't draw the result. Skissify fixes that.
+
+Free, open to all, 100 renders/day without signup.
+
+Demo: skissify.com/editor
+
+#MCP #AIAgents #OpenSource #ProductHunt #BuildInPublic
+`
+
+---
+
+### HACKER NEWS - SHOW HN TITLE OPTIONS (Cycle 69)
+
+Best options for April 1 Show HN submission timing (09:30 CET):
+
+1. Show HN: Skissify – LLMs can now draw (hand-drawn sketch API + MCP server)
+2. Show HN: Skissify – I gave AI agents a pencil (JSON → hand-drawn sketch URL)
+3. Show HN: Skissify – MCP server that gives Claude the ability to draw sketches
+
+**Recommended:** Option 1. Direct, specific, states the capability clearly. "LLMs can now draw" is a strong hook.
+
+---
+
+### NEW TRENDING HASHTAG RESEARCH (Cycle 69)
+
+Fresh angles based on current MCP/agent discourse:
+
+- **#AgentNative** - positions Skissify as infrastructure-level, not app-level
+- **#MCPNative** - niche but highly targeted; the MCP developer community uses this
+- **#VibeDesign** - emerging alongside #VibeCoding, unclaimed for sketching tools
+- **#SpatialAI** - relevant for floor plan and layout use cases
+- **#DrawWithAI** - consumer-friendly bridge term; good for Instagram/TikTok
+- **#WhiteboardAI** - positions against the whiteboard-in-Zoom workflow
+- **#SketchLayer** - new, unclaimed; could own this as "the sketch layer for AI agents"
+
+**April 1 recommended stack (Twitter/X):**
+#ProductHunt #AIAgents #MCP #AprilFools #BuildInPublic #SkissifyLaunch
+
+**Post-PH stack (April 2+):**
+#AIAgents #MCP #AgentNative #SketchLayer #VibeDesign #BuildInPublic
+
+---

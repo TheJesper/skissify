@@ -5140,3 +5140,105 @@ Users who overcame skepticism to try something are more engaged than users who w
 *Last Updated: March 30, 2026 (Cycle 68 — 22:05 CET)*
 *Added: Blog posts #154-156 (10PM fidelity essay, April 1 release notes, collaboration test comparison), SOCIAL-MEDIA.md Cycle 68 (Tweets 461-475 + Instagram caption + TikTok scripts x2 + LinkedIn post + Bluesky thread x3 + Hashtag Stack v2), PRESS-KIT.md v18.0 (One-liners v246-260 + Media Angles v71-75 + Newsletter pitch template + Founder Bio v4 + Screenshot Checklist v16 FINAL)*
 
+
+
+## Marketing Improvements (Cycle 69 - March 31, 2026 - 00:21 CET)
+
+### STATUS: T-9H TO PRODUCT HUNT LAUNCH | 156->159 POSTS | LAUNCH-NIGHT FINAL CYCLE
+
+**PRODUCT HUNT LAUNCHES IN ~9H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 69:**
+
+- **3 new blog posts (#157-159) - fresh angles targeting new audiences:**
+  - claude-code-went-viral-now-give-it-a-pencil.md - Capitalizes on Claude Code viral homeowner moment. Connects "vibe coding for renovation planning" directly to Skissify's value prop. First-person, literary, targets Medium and anyone who used Claude Code to plan home layouts this winter.
+  - seven-ai-agent-frameworks-one-missing-feature.md - References the Dev.to "Top 7 AI agent frameworks in 2026" article trending now. Framework-by-framework integration guide. Skissify as "the missing piece" in every comparison. Best for Dev.to, r/AIAgents, HN.
+  - ibe-coding-non-programmers-used-ai-to-redesign-their-homes.md - Homeowner renovation workflow before/after Skissify. Four unexpected audiences crystallized. Consumer-friendly angle for non-developer press. Best for Medium, lifestyle tech press, Product Hunt community.
+
+- **SOCIAL-MEDIA.md Cycle 69**: Tweets 476-490 (complete final day arc: midnight countdown, pre-sleep flat schema hook, launch morning, PH LIVE 09:01, April Fools lean-in, copy-paste JSON hook, schema science stat, unexpected audiences thread ×5, midday check-in, Human Mode highlight, solo founder close), Reddit posts for r/AIAgents and r/SideProject, LinkedIn launch post (SEND NOW), Mastodon/Fosstodon post, HN Show HN title options (best: "LLMs can now draw"), new hashtag research (#AgentNative, #MCPNative, #VibeDesign, #SketchLayer).
+
+- **PRESS-KIT.md v19.0**: One-liners v261-v275 (cleanest batch yet; leads with "We gave AI a pencil"), Media Angles v76-v80 (The Vibe Coding Homeowner, The Framework Gap, Schema Science Scoop, Four Audiences, Midnight Build), Community Map v5 (hour-by-hour launch day posting schedule across all platforms), April 2 Post-Mortem Framework (sections + platforms).
+
+### NEW BLOG POSTS (Cycle 69)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 157 | **Claude Code Went Viral. Now Give It a Pencil.** | claude-code-went-viral-now-give-it-a-pencil.md | Medium, IndieHackers | PH launch morning |
+| 158 | **7 AI Agent Frameworks. One Missing Feature.** | seven-ai-agent-frameworks-one-missing-feature.md | Dev.to, r/AIAgents, HN | 10:00 CET April 1 |
+| 159 | **The Vibe Coders Who Redesigned Their Homes** | ibe-coding-non-programmers-used-ai-to-redesign-their-homes.md | Medium, lifestyle tech | 11:00 CET April 1 |
+
+### KEY RESEARCH FINDINGS (Cycle 69)
+
+- **Claude Code / vibe coding homeowner trend** is live and active. Articles published in the last 3 days confirm the winter 2025 non-programmer wave. Skissify is the natural follow-on product for that audience.
+- **"Top 7 AI agent frameworks 2026" comparison** (Dev.to, 3 days ago) covers LangGraph, CrewAI, AutoGen, Mastra, n8n AI, Pydantic AI, Agno. None have a visual output story. Framework gap angle is validated and timely.
+- **AutoGen + MCP** now supported via mcp-bridge — Skissify MCP works across more frameworks than previously documented.
+- **Trending now**: #AgentNative, #VibeDesign, #MCPNative, #SketchLayer — fresh unclaimed hashtags.
+- **MCP production deployment** is the active conversation in dev communities. "2026 is the year AI goes truly agentic" framing is current.
+
+### CRITICAL ACTIONS - RIGHT NOW (00:21 CET March 31)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🔴 BLOCKER | Screenshot P0-A: Human Mode side-by-side | Before sleep | MUST DO |
+| 🔴 BLOCKER | Screenshot P0-B: PH Banner 1270x760 | Before sleep | MUST DO |
+| 🔴 CRITICAL | LinkedIn launch post | NOW | Template in SOCIAL-MEDIA Cycle 69 |
+| 🔴 CRITICAL | Newsletter pitches (TLDR AI, Ben's Bites, Rundown, Superhuman) | NOW | Template in PRESS-KIT v18 |
+| 🟡 HIGH | Tweet 476 (midnight countdown) | 00:30 CET | Ready in SOCIAL-MEDIA Cycle 69 |
+| 🟡 HIGH | Tweet 477 (pre-sleep schema hook) | 01:00 CET | Ready in SOCIAL-MEDIA Cycle 69 |
+| 🟡 HIGH | Stage PH First Comment | Tonight | Ready in SOCIAL-MEDIA Cycles 66/67 |
+
+### APRIL 1 LAUNCH DAY SCHEDULE (Final)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 00:30 March 31 | Tweet 476 - midnight countdown | SOCIAL-MEDIA Cycle 69 |
+| 01:00 March 31 | Tweet 477 - pre-sleep schema hook | SOCIAL-MEDIA Cycle 69 |
+| 01:00 March 31 | LinkedIn launch post | SOCIAL-MEDIA Cycle 69 |
+| 07:00 April 1 | Tweet 478 - launch morning | SOCIAL-MEDIA Cycle 69 |
+| 09:01 April 1 | **🚀 PRODUCT HUNT LIVE** | - |
+| 09:01 April 1 | Tweet 479 - PH LIVE | SOCIAL-MEDIA Cycle 69 |
+| 09:01 April 1 | Post PH First Comment | SOCIAL-MEDIA Cycle 66 |
+| 09:15 April 1 | Tweet 480 - April Fools lean-in | SOCIAL-MEDIA Cycle 69 |
+| 09:30 April 1 | Show HN submission | SOCIAL-MEDIA Cycle 69 |
+| 09:45 April 1 | Tweet 481 - copy-paste hook | SOCIAL-MEDIA Cycle 69 |
+| 09:45 April 1 | Post blog #157 (Claude Code + pencil) | blog/ Cycle 69 |
+| 10:00 April 1 | Tweet 482 - schema science | SOCIAL-MEDIA Cycle 69 |
+| 10:00 April 1 | r/AIAgents post | SOCIAL-MEDIA Cycle 69 |
+| 10:30 April 1 | r/mcp post | Previous cycles |
+| 10:30 April 1 | Tweet 483-487 thread - unexpected audiences | SOCIAL-MEDIA Cycle 69 |
+| 11:00 April 1 | Post blog #158 (7 frameworks) | blog/ Cycle 69 |
+| 11:00 April 1 | r/SideProject post | SOCIAL-MEDIA Cycle 69 |
+| 11:00 April 1 | Post blog #159 (vibe coders + homes) | blog/ Cycle 69 |
+| 12:00 April 1 | r/producthunt post | Previous cycles |
+| 12:00 April 1 | r/webdev post | Previous cycles |
+| 13:00 April 1 | Tweet 488 - midday check-in | SOCIAL-MEDIA Cycle 69 |
+| 13:00 April 1 | Anthropic Discord + LangChain Discord | SOCIAL-MEDIA Cycle 69 |
+| 14:00 April 1 | Mastra Discord | SOCIAL-MEDIA Cycle 69 |
+| 15:00 April 1 | Mastodon/Fosstodon | SOCIAL-MEDIA Cycle 69 |
+| 16:00 April 1 | r/MachineLearning (schema science) | PRESS-KIT community map |
+| 16:00 April 1 | Tweet 489 - Human Mode | SOCIAL-MEDIA Cycle 69 |
+| 19:00 April 1 | Tweet 490 - solo founder close | SOCIAL-MEDIA Cycle 69 |
+| 20:00 April 1 | IndieHackers milestone post | - |
+| April 2 | Post-mortem blog | PRESS-KIT v19 framework |
+
+### NEW IDEAS (Cycle 69)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"7 frameworks" response post** | Directly references a trending Dev.to article from 3 days ago. Timely. Could get shared by framework communities. | Zero (done) | High |
+| **Homeowner renovation audience** | This audience is underserved in current blog content. First time explicitly writing for them. Huge potential via Claude Code adjacent channels. | Zero (done) | High |
+| **#SketchLayer hashtag** | First-mover on "the sketch layer for AI agents" framing. Worth planting consistently post-launch. | Low | Medium |
+| **Post-mortem framework** | April 2 post-mortem is guaranteed content regardless of results. Template in PRESS-KIT v19. | Zero (template done) | Very High |
+| **AutoGen + MCP angle** | AutoGen now supports MCP via mcp-bridge. This wasn't in previous content. Post-launch blog opportunity. | Low | Medium |
+
+### CUMULATIVE BLOG INVENTORY (159 posts as of Cycle 69)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-153 | Cycles 53-67 |
+| #154-156 | Cycle 68 |
+| #157-159 | Cycle 69 (this cycle) |
+
+*Last Updated: March 31, 2026 (Cycle 69 - 00:21 CET)*
+*Added: Blog posts #157-159 (Claude Code homeowner angle, 7 frameworks gap, vibe coders renovation), SOCIAL-MEDIA.md Cycle 69 (Tweets 476-490 + Reddit posts + LinkedIn + Mastodon + HN titles + hashtag research), PRESS-KIT.md v19.0 (One-liners v261-275 + Media Angles v76-80 + Community Map v5 + Post-Mortem Framework)*
