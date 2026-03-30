@@ -2,6 +2,49 @@
 
 ---
 
+## Entry: March 30, 2026 — 22:24 CET | Automated Strategy Run #69
+
+### Theme: Category Inversion — Why EUR 2/mo Skissify Competes With Nobody
+
+#### Insight 1: The Entire Competing Market Goes the Wrong Direction
+
+This run confirmed what earlier runs hinted: pixa.com, floor-plan.ai, arcadium3d.com, maket.ai, GPT FloorPlan Builder — all go **raster sketch → polished plan**. They serve humans who have paper and want digital. Skissify serves agents that have data and want sketches.
+
+**WTP implication**: Customers who pay $7.99–$49/mo for pixa.com/RoomSketcher/Planner5D are NOT Skissify's market. Skissify's market is developers and AI agents building pipelines that need structured visual output. These are completely different buyers — one is a consumer (paying for convenience), the other is an infrastructure buyer (paying for reliability and programmatic access).
+
+**EUR 2/mo framing for infrastructure buyers**: The question isn't "is EUR 2 worth a sketch?" — it's "is EUR 2 worth being able to call `skissify_create_floor_plan` from any AI agent, forever, without building your own renderer?" Infrastructure buyers don't compare to consumer alternatives. They compare to build-vs-buy.
+
+#### Insight 2: agentic Pricing at 61%+ Mainstream Means Skissify Launches into a Ready Market
+
+**Source**: getmonetizely.com (Jan 5, 2026) — usage-based pricing hit 61% mainstream adoption in 2022 and is now ABOVE the majority threshold. Outcome/agentic billing is the next wave.
+
+Skissify's EUR 0.005/render overage is not experimental — it's been the market norm for 4 years. The developer who adopts Skissify is already paying metered bills for OpenAI, Vercel, Supabase. Adding Skissify to the stack feels normal. The EUR 2/mo base is a predictability floor, not a subscription box.
+
+**New pricing language**: "Skissify bills like infrastructure — EUR 2/mo baseline, EUR 0.005 per render. No seat limits. No surprise invoice. Just pay for what you use."
+
+#### Insight 3: fastmcp.me + mcpmarket.com Are Under-Exploited Discovery Channels
+
+The MCP registry landscape has expanded to include usage-ranked directories (fastmcp.me) and active marketplaces (mcpmarket.com) — both without sketch/floor-plan tools. Being present at launch across ALL registries (now 7 identified targets) means Skissify appears in the results of every developer evaluating their MCP stack.
+
+Each registry submission costs 30 minutes. Combined, they represent a distribution surface that a bootstrapped product would normally pay thousands in ads to achieve organically. Free, high-quality, persistent SEO.
+
+#### Insight 4: Van Westendorp WTP Methodology Should Be Deployed at First 100 Users
+
+**Source**: goldendoorasset.com (Feb 23, 2026) — recommends Van Westendorp PSM + "list 5 adjacent products your buyer also purchases" as anchor.
+
+For Skissify, the adjacent products its buyers also use:
+1. Supabase (EUR 0–25/mo)
+2. Vercel (EUR 0–20/mo)
+3. OpenAI API (EUR 5–50/mo usage-based)
+4. Excalidraw (EUR 0–7/mo)
+5. Resend/Postmark (EUR 0–20/mo)
+
+The average developer in this stack pays EUR 20–100/mo across infrastructure. Skissify at EUR 2/mo is at the bottom of every stack these buyers maintain. The "too cheap" threshold in Van Westendorp (where buyers worry about quality) is probably around EUR 1/mo. EUR 2/mo is above the "feels cheap but trustworthy" floor.
+
+**Recommended action at launch**: 4-question Van Westendorp email to first 50 users. Results will either validate EUR 2/5/12 tiers or surface EUR 9/mo Pro as the optimal middle tier.
+
+---
+
 ## Entry: March 30, 2026 — 21:19 CET | Automated Strategy Run #68
 
 ### Theme: "Why Would Someone Pay EUR 2/mo for Skissify?" — Five Crystallized Answers
