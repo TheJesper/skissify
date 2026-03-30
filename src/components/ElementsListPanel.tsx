@@ -19,6 +19,12 @@ const TYPE_ICONS: Record<string, string> = {
   opening: "⊓",
   column: "▪",
   path: "〰",
+  bed: "🛏",
+  sofa: "🛋",
+  "dining-table": "🪑",
+  toilet: "🚽",
+  bathtub: "🛁",
+  sink: "🪣",
 };
 
 /** Get a short display label for an element */
@@ -34,6 +40,12 @@ function getLabel(el: SketchElement, idx: number): string {
   }
   if (el.type === "dim" && a.label) {
     return `dim ${a.label}`;
+  }
+  // Furniture: use type name with index for clarity
+  const furnitureTypes = ["bed", "sofa", "dining-table", "toilet", "bathtub", "sink"];
+  if (furnitureTypes.includes(el.type)) {
+    const typeName = el.type.replace("-", " ");
+    return `${typeName} #${idx}`;
   }
   return `${el.type} #${idx}`;
 }

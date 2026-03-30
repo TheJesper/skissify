@@ -374,6 +374,22 @@ function EditorInner({
     [copySelected, pasteElements, pasteInPlace, selectSameType, reorderSelected, alignSelected, toggleLockSelected, groupSelected, ungroupSelected, deleteSelected, selectedElements, handleDoubleClickElement]
   );
 
+  /** Handle element selection from the Elements List panel */
+  const handleSelectFromList = useCallback(
+    (idx: number, shiftKey: boolean) => {
+      setSelectedElements((prev) => {
+        if (shiftKey) {
+          const next = new Set(prev);
+          if (next.has(idx)) next.delete(idx);
+          else next.add(idx);
+          return next;
+        }
+        return new Set([idx]);
+      });
+    },
+    [setSelectedElements]
+  );
+
   const handlePrint = useCallback(() => {
     const canvas = document.querySelector("canvas");
     if (!canvas) return;
@@ -728,6 +744,10 @@ function EditorInner({
             onUpdateElement={updateElement}
             drawMode={drawMode}
             onDrawModeChange={setDrawMode}
+            elements={sketch.elements}
+            selectedElements={selectedElements}
+            onSelectElement={handleSelectFromList}
+            onToggleVisibility={toggleVisibility}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -864,6 +884,10 @@ function EditorInner({
           onUpdateElement={updateElement}
           drawMode={drawMode}
           onDrawModeChange={setDrawMode}
+          elements={sketch.elements}
+          selectedElements={selectedElements}
+          onSelectElement={handleSelectFromList}
+          onToggleVisibility={toggleVisibility}
         />
       </MobileBottomSheet>
     </div>

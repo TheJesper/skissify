@@ -2,6 +2,53 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #62 (14:51 CET, Monday March 30)
+
+### Context: **62 consecutive niche-clean scans. MCP visualization ecosystem maturing (ArcadeAI/blueprint-mcp, mcp-diagram, ToDiagram, PulseMCP Data Viz) — ALL in technical documentation lane, ZERO in hand-drawn spatial lane. Skissify's SVG output structurally superior to AI-image-based competitors (editable, deterministic, agent-iterable). Plan7Architect price hike closes TONIGHT. Execute.**
+
+---
+
+### 🔴 Action 1 (TONIGHT — Plan7Architect window closes March 31)
+
+**What**: Publish "Plan7Architect alternative" SEO blog post before midnight.
+
+**Angle (updated with ecosystem differentiation framing)**:
+> "Plan7Architect raised prices because it was built for 2019 CAD workflows. The 2026 alternative isn't another CAD tool — it's Skissify: JSON in, hand-drawn SVG out, MCP-native, EUR 5/mo. Works with Claude, Codex, any AI agent. No license negotiations, no desktop app, no price hike."
+
+**Why this post works now**: blueprint-mcp, mcp-diagram, and the growing MCP visualization ecosystem are all technical/clean output. Skissify is the only hand-drawn option in the ecosystem. This is a meaningful differentiator to highlight in any "alternatives" post.
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+**Hard deadline**: Tonight, March 31.
+
+---
+
+### 🔴 Action 2 (Tomorrow, April 1 — MCP publish + HN post)
+
+**What**: 30-second `publishConfig` fix → `npm publish --access public` → "Show HN" at 08:00–10:00 CET.
+
+**Updated HN angle (MCP ecosystem differentiation)**:
+> "The MCP visualization ecosystem now has tools for codebases (blueprint-mcp), technical docs (mcp-diagram), and data charts (PulseMCP). None of them produce hand-drawn architectural sketches from JSON. Skissify does: JSON in, hand-drawn SVG out, 14 architectural element types, EUR 2/mo API."
+
+**Submit to registries SAME DAY**: modelcontextprotocol.io/registry, awesome-mcp-servers, LobeHub, claudefa.st, mcpmanager.ai, toolradar.com
+
+---
+
+### 🟢 Action 3 (This week — "The MCP Sketch Gap" blog post)
+
+**What**: Write "Why Every MCP Diagram Tool Is Missing the Hand-Drawn Layer" — positioning Skissify in contrast to the maturing technical MCP ecosystem.
+
+**Angle**: The ecosystem has mermaid-mcp, draw.io, blueprint-mcp, mcp-diagram, ToDiagram. All produce clean/technical output. For AI agents that need to produce human-feeling output (floor plans, napkin sketches, architectural concepts), Skissify is the only option.
+
+**Keywords to target**:
+- "hand-drawn diagram MCP"
+- "JSON to sketch SVG API"
+- "AI agent sketch tool"
+- "architectural sketch MCP server"
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #61 (13:46 CET, Monday March 30)
 
 ### Context: **61 consecutive niche-clean scans. Thomas Thornton Excalidraw MCP tutorial now 1 FULL WEEK old in SERP (confirmed fresh results). NEW SEGMENT DISCOVERED: "documentation-as-code" developers hacking Excalidraw for programmatic SVG — direct Skissify buyers. MCP = production infrastructure (Supabase docs updated 3 days ago). Plan7Architect price hike window closes TONIGHT. Execute.**

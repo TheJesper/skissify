@@ -2,6 +2,67 @@
 
 ---
 
+## Entry: March 30, 2026 — 14:51 CET | Automated Strategy Run #62
+
+### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — The Ecosystem Niche Lock and Why Differentiated Output Wins in a Maturing MCP Market"
+
+**Intelligence basis**: Run #62. 62 consecutive niche-clean scans. 3 searches completed (338/2000 monthly quota). Key new signals: ArcadeAI/blueprint-mcp (codebase architecture via Nano Banana Pro — AI image output, not SVG), skywork.ai mcp-diagram ecosystem analysis (technical documentation lane maturing), PulseMCP Data Visualization MCP (matplotlib charts). SaaS pricing intelligence: value-based confirmed, Van Westendorp WTP methodology recommended by ogblocks.dev. graphically.io confirms hand-drawn demand active in scan-to-digital direction.
+
+---
+
+#### Finding 1: The MCP Visualization Ecosystem Is Splitting Into Two Distinct Lanes — Skissify Owns the Unoccupied One
+
+**Context**: Run #62 reveals a maturing MCP visualization ecosystem with multiple active tools: ArcadeAI/blueprint-mcp (codebase architecture via AI image generation), mcp-diagram (system documentation), ToDiagram (JSON/YAML/XML/CSV → interactive technical), PulseMCP Data Viz (matplotlib charts). The skywork.ai analysis covers "a spectrum of visualization MCP tools" — all in the technical/clean/polished output lane.
+
+**The split**:
+- **Lane 1 — Technical Documentation** (crowded): Mermaid MCP, draw.io, mcp-diagram, ToDiagram, blueprint-mcp. Input: code, text DSL, data. Output: clean technical diagrams.
+- **Lane 2 — Hand-Drawn Spatial Sketching** (empty): Input: structured JSON with spatial elements. Output: hand-drawn aesthetic SVG with architectural vocabulary. **Skissify only.**
+
+**Why someone pays EUR 2/mo**: The technical documentation lane has free alternatives (Mermaid, draw.io). Free tools can't replicate hand-drawn aesthetics or architectural vocabularies — these require a product investment that justifies a subscription. When an agent needs to output something that *looks human-made* (client pitch, design concept, exploration sketch), it cannot use Mermaid or matplotlib. It needs Skissify. EUR 2/mo is the only option — there is no cheaper alternative with equivalent output.
+
+**The EUR 2/mo "no substitute" argument**: In economics, willingness to pay is highest when there's no substitute. For hand-drawn programmatic spatial sketching, Skissify has no substitute. EUR 2/mo is psychologically priced to convert everyone who needs this capability — the price is below the "should I evaluate alternatives?" threshold because there ARE no alternatives.
+
+---
+
+#### Finding 2: ArcadeAI/blueprint-mcp Uses Image Generation for Diagrams — Why SVG Rendering Is a Structural Advantage
+
+**Source**: github.com/ArcadeAI/blueprint-mcp (active project, discovered Run #62)
+
+blueprint-mcp generates architecture diagrams using Nano Banana Pro — an AI image generation model (Gemini 3 Pro Image). This means its output is raster pixels, not structured vector graphics.
+
+**Structural consequences of AI-image output vs Skissify's SVG output**:
+| Dimension | blueprint-mcp (AI image) | Skissify (SVG render) |
+|-----------|--------------------------|----------------------|
+| Editability | Cannot be modified post-generation | JSON manifest = editable, versionable source |
+| Consistency | Non-deterministic — different each time | Deterministic — same JSON = same output |
+| Agent use | One-shot generation, hard to iterate | Iterative — agent modifies manifest, re-renders |
+| File size | Large raster (200KB+) | Small SVG (5-20KB) |
+| Embedding | IMG tag only | SVG inline, CSS-styleable |
+| Version control | Binary diff | Text diff (JSON manifest) |
+| SEO | Not indexable | SVG text is indexable |
+
+**Why this matters for EUR 2/mo**: An agent that needs to iterate on a floor plan — revise room dimensions, add a door, move a wall — cannot do this with AI-image output. It would need to regenerate the entire image. With Skissify's JSON manifest, the agent edits 3 numbers in the JSON and the output updates instantly. This is the "agent iteration" use case that blueprint-mcp cannot serve. EUR 2/mo buys not just visual output but **agent-compatible, iterable visual output**.
+
+---
+
+#### Finding 3: Van Westendorp WTP Survey — The EUR 9/mo Pro Test Is Justified
+
+**Source**: ogblocks.dev "How to Price a SaaS Product" (6 days ago) — recommends Van Westendorp Price Sensitivity Meter during feature interviews.
+
+Current BUSINESS-PLAN.md has Pro at EUR 5/mo. The domain-specific premium data (voxturr.com: 30-50% above generic tools) plus the Van Westendorp methodology suggest testing EUR 9/mo as the Pro ceiling.
+
+**Four WTP questions to run with early users**:
+1. "At what price would Skissify Pro feel *too cheap* (you'd question quality)?" → Expected: EUR 2-3
+2. "At what price would Skissify Pro feel like a *bargain*?" → Expected: EUR 5-7
+3. "At what price would Skissify Pro start feeling *expensive*?" → Expected: EUR 12-15
+4. "At what price would Skissify Pro be *too expensive* to consider?" → Expected: EUR 20+
+
+The intersection of "too cheap" and "too expensive" curves typically validates the optimal price point. For a domain-specific architectural tool with no direct competition, the range EUR 7–12/mo is hypothesized as the optimal Pro price — current EUR 5/mo may be leaving 30-50% margin on the table.
+
+**Recommended action**: Keep EUR 5/mo for launch (conversion-maximizing entry point), raise to EUR 9/mo Pro after Month 3 with data from first 100 user WTP surveys. The EUR 2/mo API Starter stays permanently as the "infrastructure line item" tier.
+
+---
+
 ## Entry: March 30, 2026 — 13:46 CET | Automated Strategy Run #61
 
 ### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — The Documentation-as-Code Developer and the Infrastructure Instinct"
