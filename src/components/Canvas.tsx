@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useCallback, useState } from "react";
-import { SketchData, SketchElement } from "@/lib/types";
+import { SketchData, SketchElement, BOARD_COLORS } from "@/lib/types";
 import { renderSketch, computeCenterTransform } from "@/lib/renderer";
 import Rulers, { RULER_SIZE } from "./Rulers";
 import ContextMenu, { ContextMenuAction } from "./ContextMenu";
@@ -1632,9 +1632,10 @@ export default function Canvas({
       className="flex-1 overflow-hidden flex items-center justify-center touch-none relative"
       style={{
         minHeight: 0,
-        backgroundColor: "#eee8d5",
-        backgroundImage:
-          "radial-gradient(circle, #93a1a1 1px, transparent 1px)",
+        backgroundColor: sketch.paper === "blueprint" ? BOARD_COLORS.blueprint : "#eee8d5",
+        backgroundImage: sketch.paper === "blueprint"
+          ? "radial-gradient(circle, rgba(100,160,220,0.15) 1px, transparent 1px)"
+          : "radial-gradient(circle, #93a1a1 1px, transparent 1px)",
         backgroundSize: "24px 24px",
       }}
       onTouchStart={handleTouchStart}
@@ -1760,6 +1761,7 @@ export default function Canvas({
           canvasRect={canvasRectState}
           containerRect={containerRectState}
           centerTransform={computeCenterTransform(sketch.elements, canvasW, canvasH)}
+          paper={sketch.paper}
         />
       )}
 

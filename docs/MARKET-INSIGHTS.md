@@ -2,6 +2,52 @@
 
 ---
 
+## Entry: March 30, 2026 — 23:28 CET | Automated Strategy Run #70
+
+### Theme: Figma MCP Paywall = Skissify Differentiator + Composio Opens Enterprise Discovery
+
+#### Insight 1: Figma's MCP Paywall Reveals Developer Frustration — Full Access at EUR 2/mo Is Skissify's Positioning
+
+**Source**: HN thread (5 hours ago): "Figma's MCP Update Reflects a Larger Industry Shift" — developer states: "I pay for Pro, but the one feature that would actually make MCP useful is gated behind enterprise."
+
+This is the most actionable competitive insight in 10+ days. The major visual design tools are shipping MCP as enterprise-tier features. Skissify can ship full MCP at EUR 2/mo from day one. The framing isn't "Skissify is better than Figma" — it's "Skissify is the only visual MCP tool where the API works without an enterprise contract."
+
+**EUR 2/mo WTP mechanism**: Developers expressing frustration at Figma's enterprise gate are actively willing to pay a small amount for an alternative that "just works." EUR 2/mo is the sweet spot — below "feels like a decision" and above "feels fake." A developer frustrated at Figma's enterprise paywall will sign up for EUR 2 in the same moment they read about it.
+
+**Marketing copy (high-conversion)**: "Figma gates their MCP behind enterprise. Skissify ships full MCP at EUR 2/mo. Connect Claude to hand-drawn sketches without an enterprise contract."
+
+#### Insight 2: The Architectural AI Tool Market Is Maturing in the Wrong Direction — Skissify Is Upstream
+
+**Source**: illustrarch.com (5 days ago) — "AI Floor Plan Generator: Top 8 Tools for Architects & Designers." All 8 tools produce polished, technical, dimensioned outputs. None produce hand-drawn sketches.
+
+The architecture software market is racing toward precision: adjacency logic, parking ratios, code compliance, BIM interoperability. This is what architects need for permits and construction documents.
+
+What architects need BEFORE technical drawings: client-facing ideation sketches that communicate ideas without committing to specifications. That's hand-drawn territory — and hand-drawn territory has no AI tool. Skissify is the pre-technical-drawing step that the technical drawing market is not building.
+
+**New pricing implication**: Architecture firms paying $200–$500/mo for Autodesk Forma or Spacemaker will pay EUR 5–12/mo for client presentation sketches generated from JSON. Skissify is a line item, not a replacement.
+
+#### Insight 3: Composio Gateway (850+ Tools) Opens Enterprise MCP Discovery — Submit at Launch
+
+**Source**: toolradar.com (4 hours ago) — Composio aggregates 850+ MCP integrations into a single gateway. Enterprise teams install once, get access to 850 tools.
+
+Skissify in Composio's catalog = passive discovery by every enterprise AI team that uses Composio. The conversion math: if 0.1% of Composio's enterprise users discover Skissify through the gateway and convert to EUR 12/user Team tier, that's potentially hundreds of MRR from a single registry submission.
+
+**Priority**: composio.dev submission now at parity with modelcontextprotocol.io/registry as a launch-day action.
+
+#### Insight 4: Unbundling Named as 2026 SaaS Winner — Skissify Is Maximally Unbundled
+
+**Source**: eleken.co SaaS Trends (refreshed 1 day ago) — "real winners: AI-driven, usage-based pricing, **unbundling**, mobile-first."
+
+Skissify does one thing: JSON → hand-drawn SVG. No bloat. No collaboration suite. No enterprise dashboard. Just one capability, done extremely well, priced for infrastructure.
+
+This is the 2026 winning pattern: unbundled micro-tools replacing feature-bloated suites. Miro loses to "10 tools that each do one thing." Skissify is the "sketch" unbundle of the collaboration suite category.
+
+**Positioning at launch**: "We don't do everything. We do hand-drawn sketches from JSON, and we do it better than anyone."
+
+---
+
+---
+
 ## Entry: March 30, 2026 — 22:24 CET | Automated Strategy Run #69
 
 ### Theme: Category Inversion — Why EUR 2/mo Skissify Competes With Nobody

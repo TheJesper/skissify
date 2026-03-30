@@ -1,3 +1,92 @@
+# Skissify Competitive Analysis (March/April 2026)
+
+---
+
+## Update Log: March 30, 2026 — 23:28 CET | Automated Strategy Run #70
+
+### Status: Monday late-night final scan — 3 of 4 searches completed (378/2000 monthly quota). **🟢 Plan7Architect window expired. Thomas Thornton tutorial: STILL in SERP as "1 week ago" — 15th+ consecutive day. NEW: toolradar.com "MCP Gateway: Best Options for 2026" (4 HOURS AGO — freshest result this cycle) confirms Composio gateway with 850+ MCP integrations active. Figma's MCP update HN discussion (5 hours ago) reveals developer frustration: Pro plan doesn't unlock full MCP power — "real power locked away." illustrarch.com AI Floor Plan Generator roundup (5 days ago) confirms architecture market maturing with polished outputs — zero JSON-native/hand-drawn/MCP. imagine.art "5 Best AI Interior Design Tools 2026" (5 days ago) confirms Sketch-to-Render lane still raster-only. CIO.com: "Is AI the end of SaaS as we know it?" (1 week ago). eleken.co SaaS trends updated 1 day ago. 70 consecutive niche-clean scans.**
+
+### 🟢 CONFIRMATION: 70th Consecutive Niche-Clean Scan
+
+Searches conducted this run:
+1. "AI sketch tool MCP hand-drawn diagram floor plan new launch April 2026" ✅
+2. "MCP ecosystem new tools visualization sketch April 2026 competitor launch" ✅
+3. "Excalidraw tldraw new features update April 2026 competitor" ✅
+4. "SaaS pricing agentic 2026 EUR developer tools willingness to pay" ✅
+
+**Results from Run #70 (23:28 CET, Monday March 30, 2026):**
+
+- **Thomas Thornton Excalidraw MCP tutorial** (thomasthornton.cloud, "1 week ago" in results): STILL #1 for "AI sketch MCP" searches — **15th+ consecutive day** of SERP dominance. Cloud/Terraform/workflow topology. Zero floor plan, zero JSON-native generation.
+- **toolradar.com "MCP Gateway: Best Options for 2026"** (**4 HOURS AGO — FRESHEST result this cycle**): Composio gateway with 850+ pre-built MCP integrations (GitHub, Jira, Linear, AWS, GCP, Salesforce). Zero sketch/floor plan/hand-drawn tools. Meta-layer MCP discovery platform actively cataloguing tools. **Skissify at launch should register with Composio's tool catalog for passive enterprise discovery.**
+- **Figma's MCP Update Reflects a Larger Industry Shift** (HN thread, news.ycombinator.com, **5 HOURS AGO — very fresh**): "I pay for Pro, but the one feature that would actually make MCP useful, Auto Fill, is gated behind an enterprise plan. So the surface is there, but the real power is locked away." — Developer expressing frustration that Figma's MCP value is paywalled behind enterprise tier. This is a **Skissify differentiator**: `@skissify/mcp-server` with full MCP power at EUR 2/mo, not enterprise-gated.
+- **illustrarch.com "AI Floor Plan Generator: Top 8 Tools for Architects & Designers"** (**5 days ago — NEW**): "What has changed in 2026 is the quality of outputs. Earlier tools produced rough massing diagrams. Current platforms generate dimensioned, room-labeled layouts that include adjacency logic, parking ratios, and in some cases, code compliance checks." — All tools reviewed: raster image output, no JSON API, no MCP, no hand-drawn aesthetic. Market maturing into polished-output direction. Zero JSON-native structured renderer.
+- **imagine.art "5 Best AI Interior Design Tools in 2026"** (**5 days ago — NEW**): "Sketch to Render special is that it reads your spatial intent first and then enhances it visually. Your layout decisions survive the rendering process." — Raster sketch → photorealistic render direction. Zero JSON/MCP/hand-drawn output. Non-competitive.
+- **openpr.com AI Floor Plan** (**3 days ago**): floor-plan.ai press release confirming raster floor plan generation. Zero JSON/MCP. Non-competitive.
+- **atalupadhyay.wordpress.com "Create Architecture Diagrams with MCP: Claude, Draw.io & Excalidraw"** (2 weeks ago, confirmed fresh): "Everything in Excalidraw has a hand-drawn, sketch-like appearance... signals work-in-progress." AWS architecture via MCP. Zero floor plan, zero JSON-native. Still circulating.
+- **Canva floor plans** (2 weeks ago): Consumer floor plan creation via Canva drag-and-drop. Zero JSON API, zero MCP.
+- **HN Excalidraw blog diagram thread** (news.ycombinator.com/item?id=47571376, **3 HOURS AGO** — STILL active): Now showing "3 hours ago" in results — thread has been generating fresh comments for 29+ hours. Excalidraw programmatic SVG discussion ongoing.
+- **use-apify.com MCP Standard Ecosystem 2026** (1 week ago): "Teams tired of one-off agent glue." Stable.
+- **Domo AI Agent Builder + MCP Server** (5 days ago): Enterprise BI. Stable.
+- **europeanbusinessreview.com "Agentic SaaS Pricing"** (5 days ago): "Seats → outcomes." Stable.
+- **eleken.co SaaS Trends 2026** (**1 day ago — refreshed**): "Real winners: AI-driven transformation, usage-based pricing, unbundling, mobile-first." Fresh editorial cycle confirms usage-based pricing is the ongoing 2026 standard.
+- **CIO.com "Is AI the end of SaaS as we know it?"** (1 week ago): "Enterprises might replace expensive SaaS contracts with AI agents." Confirms SaaSpocalypse narrative still active.
+- **mindk.com SaaS Application Development 2026** (3 days ago): Value-based pricing dominant. Stable.
+
+**No new hand-drawn + JSON-native + MCP + floor plan competitor detected. 70 consecutive clean scans.**
+
+### 🔴 CRITICAL NEW SIGNAL: Figma MCP — Full Power Enterprise-Gated, Developers Frustrated (5 hours ago)
+
+**Source**: news.ycombinator.com — "Figma's MCP Update Reflects a Larger Industry Shift" (5 hours ago)
+- Developer quote: "I pay for Pro, but the one feature that would actually make MCP useful, Auto Fill, is gated behind an enterprise plan. So the surface is there, but the real power is locked away."
+- "I get that this is still the wild west for MCP, and I agree..."
+- Also: "Canva's MCP — Pro tier doesn't unlock Auto Fill, that's enterprise-only."
+- **Skissify positioning**: The major design tools (Figma, Canva) are shipping MCP with enterprise paywalls. Skissify can ship `@skissify/mcp-server` with **full MCP capability at EUR 2/mo** — no enterprise tier required for programmatic access. This is a genuine market positioning opportunity against frustrated Figma Pro users.
+- **Marketing copy unlock**: "Figma's MCP requires an enterprise plan. Skissify's MCP works at EUR 2/mo. Full access. No paywall. Because you shouldn't need an enterprise contract to connect your agent to a sketch tool."
+
+### 🔴 SIGNAL: toolradar.com "MCP Gateway" Published 4 Hours Ago — Composio 850+ Tools
+
+**Source**: toolradar.com/blog/mcp-gateway (4 hours ago)
+- Toolradar is actively covering MCP gateway aggregators as of 4 hours before this run
+- Composio gateway: 850+ pre-built MCP integrations (developer tools, cloud infra, CRMs, more)
+- **Skissify implication**: Composio is another launch-day discovery target. If Skissify's `@skissify/mcp-server` is listed in Composio's catalog (or a PR/submission), it becomes accessible through every agent that uses the Composio gateway — passive discovery from 850+ tools at once.
+- **New registry addition**: Composio catalog (via composio.dev) — now 8 launch-day registry targets.
+
+### 🟡 NEW SIGNAL: illustrarch.com AI Floor Plan Roundup (5 days ago) — Architecture Market Maturing
+
+**Source**: illustrarch.com "AI Floor Plan Generator: Top 8 Tools for Architects & Designers" (5 days ago)
+- Fresh architectural publication roundup confirming market maturity: "Current platforms generate dimensioned, room-labeled layouts with adjacency logic, parking ratios, code compliance checks."
+- Tools reviewed: Spacemaker, Autodesk Forma, Finch, Hypar, and others — all polished, all raster/BIM output, all zero MCP, zero JSON-native hand-drawn.
+- **Skissify gap**: None of these 8 tools generates hand-drawn sketch output. None accept JSON input. None have MCP. The architectural AI tool market is full of polished technical tools — and entirely devoid of the "rough sketch" layer that communicates ideas to clients before technical drawings begin.
+- **B2B angle**: Architecture firms using these polished tools for permits and technical documents use Skissify for the client-facing ideation sketches earlier in the workflow. These markets are not competing — they're sequential.
+
+### 🟡 NEW SIGNAL: eleken.co SaaS Trends Updated 1 Day Ago — "Real Winners: AI-Driven, Usage-Based, Unbundling"
+
+**Source**: eleken.co "Top SaaS trends in tech, marketing, pricing, and design. 2026 edition" (1 day ago — refreshed from prior 1 month old)
+- Fresh editorial cycle confirms: "real winners are those integrating AI strategically, embracing low-code, usage-based pricing, unbundling, and mobile-first"
+- **Unbundling** is named explicitly as a 2026 winner strategy — selling a single focused capability (like "hand-drawn sketch API") rather than a bloated suite
+- **Skissify validation**: Skissify is maximally unbundled — it does one thing (JSON → hand-drawn SVG) with deep quality. This is explicitly the 2026 winning pattern.
+
+### 🟢 STRUCTURAL CONFIRMATION: HN Excalidraw Blog Diagram Thread Still Active (29+ Hours, 3 Hours Ago)
+
+The HN thread (news.ycombinator.com/item?id=47571376) is now showing "3 hours ago" in search results — 29+ hours after initial discovery in Run #65. This is a remarkable 29+ hour active HN thread about programmatic Excalidraw diagram generation. Skissify's comment opportunity (if published) would still land in front of an active, engaged audience.
+
+### Updated Competitor Matrix (Run #70 — Monday March 30, 23:28 CET)
+
+| Tool | Status | Skissify Threat |
+|------|--------|-----------------|
+| Excalidraw | MCP tutorial **15+ days** still ranking. HN blog thread STILL ACTIVE (3h ago). Topology/Obsidian lane. | None |
+| tldraw | No new features. $6K/yr SDK. | None |
+| Figma | MCP update HN discussion **5 hours ago** — enterprise paywall frustration. Polished UI lane. | None — opposite lane, but MCP paywall = Skissify opportunity |
+| Google Stitch | MCP + SDK (2,400+ stars). Polished UI lane. | None |
+| Canva | MCP with Auto Fill enterprise-gated (per HN 5h ago). Consumer design lane. | None |
+| illustrarch.com floor plan tools | Polished architectural AI tools (5 days). Raster/BIM, zero JSON/MCP/hand-drawn. | None |
+| Composio gateway | 850+ MCP integrations. Meta-discovery layer (toolradar, 4h ago). | Opportunity — submit at launch |
+| MCP ecosystem | Gateways emerging, enterprise maturity. 97M+ downloads. | Opportunity |
+| SaaS pricing | Agentic seats→outcomes (EBR 5d). Usage-based refreshed 1d. Unbundling named as winner. | Tailwind |
+| **Skissify** | **dist/ CONFIRMED. publishConfig MISSING (30s fix). 70 consecutive niche-clean scans. Figma MCP paywall = Skissify differentiator.** | **Uncontested** |
+
+---
+
 # Skissify Competitive Analysis (March 2026)
 
 ---

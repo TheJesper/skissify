@@ -1,14 +1,20 @@
 "use client";
 
 import { useRef, useEffect, useCallback } from "react";
+import { PaperType } from "@/lib/types";
 
 const RULER_SIZE = 22; // px thickness
 const FONT = "9px JetBrains Mono, monospace";
-const BG = "#eee8d5";
-const TICK_COLOR = "#93a1a1";
-const TEXT_COLOR = "#586e75";
-const CURSOR_COLOR = "#dc322f"; // solarized red
-const CORNER_BG = "#e6dfcc";
+
+/** Color themes for rulers — adapts to paper type */
+const RULER_THEMES = {
+  default: { bg: "#eee8d5", tick: "#93a1a1", text: "#586e75", cursor: "#dc322f", corner: "#e6dfcc" },
+  blueprint: { bg: "#0f2340", tick: "rgba(100,160,220,0.4)", text: "rgba(160,200,240,0.7)", cursor: "#ff6b6b", corner: "#0c1d38" },
+};
+
+function getRulerTheme(paper?: PaperType) {
+  return paper === "blueprint" ? RULER_THEMES.blueprint : RULER_THEMES.default;
+}
 
 interface RulersProps {
   containerWidth: number;
@@ -21,6 +27,7 @@ interface RulersProps {
   /** Container element bounding rect (viewport coords) */
   containerRect: DOMRect | null;
   centerTransform: { tx: number; ty: number; scale: number };
+  paper?: PaperType;
 }
 
 /**
@@ -44,7 +51,9 @@ export default function Rulers({
   canvasRect,
   containerRect,
   centerTransform: ct,
+  paper,
 }: RulersProps) {
+  const theme = getRulerTheme(paper);
   const hCanvasRef = useRef<HTMLCanvasElement>(null);
   const vCanvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -83,11 +92,11 @@ export default function Rulers({
     if (!ctx) return;
     ctx.scale(dpr, dpr);
 
-    ctx.fillStyle = BG;
+    ctx.fillStyle = theme.bg;
     ctx.fillRect(0, 0, w, RULER_SIZE);
 
     // Bottom border line
-    ctx.strokeStyle = TICK_COLOR;
+    ctx.strokeStyle = theme.tick;
     ctx.lineWidth = 0.5;
     ctx.beginPath();
     ctx.moveTo(RULER_SIZE, RULER_SIZE - 0.5);
@@ -122,7 +131,7 @@ export default function Rulers({
       if (x < RULER_SIZE - 1 || x > w + 1) continue;
 
       const isMajor = Math.abs(v % major) < 0.01;
-      ctx.strokeStyle = TICK_COLOR;
+      ctx.strokeStyle = theme.tick;
       ctx.lineWidth = isMajor ? 1 : 0.5;
       ctx.beginPath();
       ctx.moveTo(x, isMajor ? 2 : RULER_SIZE * 0.55);
@@ -130,7 +139,7 @@ export default function Rulers({
       ctx.stroke();
 
       if (isMajor) {
-        ctx.fillStyle = TEXT_COLOR;
+        ctx.fillStyle = theme.text;
         ctx.fillText(String(Math.round(v)), x, 1);
       }
     }
@@ -139,7 +148,7 @@ export default function Rulers({
     if (cursorPos) {
       const pos = elementToContainer(cursorPos.x, 0);
       if (pos && pos.cx >= RULER_SIZE && pos.cx <= w) {
-        ctx.fillStyle = CURSOR_COLOR;
+        ctx.fillStyle = theme.cursor;
         ctx.beginPath();
         ctx.moveTo(pos.cx - 4, RULER_SIZE);
         ctx.lineTo(pos.cx + 4, RULER_SIZE);
@@ -148,7 +157,7 @@ export default function Rulers({
         ctx.fill();
       }
     }
-  }, [containerWidth, canvasRect, containerRect, ct, canvasW, pxPerUnitX, cursorPos, elementToContainer]);
+  }, [containerWidth, canvasRect, containerRect, ct, canvasW, pxPerUnitX, cursorPos, elementToContainer, theme]);
 
   // Draw vertical ruler
   const drawV = useCallback(() => {
@@ -164,11 +173,11 @@ export default function Rulers({
     if (!ctx) return;
     ctx.scale(dpr, dpr);
 
-    ctx.fillStyle = BG;
+    ctx.fillStyle = theme.bg;
     ctx.fillRect(0, 0, RULER_SIZE, h);
 
     // Right border line
-    ctx.strokeStyle = TICK_COLOR;
+    ctx.strokeStyle = theme.tick;
     ctx.lineWidth = 0.5;
     ctx.beginPath();
     ctx.moveTo(RULER_SIZE - 0.5, RULER_SIZE);
@@ -202,7 +211,7 @@ export default function Rulers({
       if (y < RULER_SIZE - 1 || y > h + 1) continue;
 
       const isMajor = Math.abs(v % major) < 0.01;
-      ctx.strokeStyle = TICK_COLOR;
+      ctx.strokeStyle = theme.tick;
       ctx.lineWidth = isMajor ? 1 : 0.5;
       ctx.beginPath();
       ctx.moveTo(isMajor ? 2 : RULER_SIZE * 0.55, y);
@@ -213,7 +222,7 @@ export default function Rulers({
         ctx.save();
         ctx.translate(RULER_SIZE / 2 - 2, y);
         ctx.rotate(-Math.PI / 2);
-        ctx.fillStyle = TEXT_COLOR;
+        ctx.fillStyle = theme.text;
         ctx.fillText(String(Math.round(v)), 0, 0);
         ctx.restore();
       }
@@ -223,7 +232,7 @@ export default function Rulers({
     if (cursorPos) {
       const pos = elementToContainer(0, cursorPos.y);
       if (pos && pos.cy >= RULER_SIZE && pos.cy <= h) {
-        ctx.fillStyle = CURSOR_COLOR;
+        ctx.fillStyle = theme.cursor;
         ctx.beginPath();
         ctx.moveTo(RULER_SIZE, pos.cy - 4);
         ctx.lineTo(RULER_SIZE, pos.cy + 4);
@@ -232,7 +241,7 @@ export default function Rulers({
         ctx.fill();
       }
     }
-  }, [containerHeight, canvasRect, containerRect, ct, canvasH, pxPerUnitY, cursorPos, elementToContainer]);
+  }, [containerHeight, canvasRect, containerRect, ct, canvasH, pxPerUnitY, cursorPos, elementToContainer, theme]);
 
   useEffect(() => {
     drawH();
@@ -249,9 +258,9 @@ export default function Rulers({
           left: 0,
           width: RULER_SIZE,
           height: RULER_SIZE,
-          backgroundColor: CORNER_BG,
-          borderRight: `0.5px solid ${TICK_COLOR}`,
-          borderBottom: `0.5px solid ${TICK_COLOR}`,
+          backgroundColor: theme.corner,
+          borderRight: `0.5px solid ${theme.tick}`,
+          borderBottom: `0.5px solid ${theme.tick}`,
         }}
       />
       {/* Horizontal ruler (top) */}

@@ -2,6 +2,75 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #70 (23:28 CET, Monday March 30)
+
+### Context: Run #70 Key Findings
+
+- **70 consecutive niche-clean scans** — 15+ days, zero competitor in hand-drawn + JSON-native + MCP + floor plan
+- **Figma MCP paywall frustration** (HN, 5 hours ago): Figma Pro users locked out of MCP features; enterprise-only. Skissify full MCP at EUR 2/mo is a live positioning differentiator.
+- **Composio gateway** (toolradar.com, 4 hours ago): 850+ MCP integrations. Submit Skissify at launch for enterprise passive discovery.
+- **illustrarch.com** (5 days ago): Architecture AI tool market maturing into polished/technical direction — hand-drawn client sketch lane unoccupied.
+- **HN Excalidraw thread** (3 hours ago): STILL active at 29+ hours. Programmatic diagram discussion ongoing.
+- **eleken.co** (refreshed 1 day ago): Unbundling confirmed as 2026 winner. Skissify is maximally unbundled.
+- publishConfig fix + npm publish remains THE unblocked action #1.
+
+---
+
+### 🔴 Action 1: Fix publishConfig and publish @skissify/mcp-server to npm (30 min)
+
+THE only action that matters. Everything else is blocked by this.
+
+```
+1. Open W:/code/skissify/mcp-server/package.json
+2. Add "publishConfig": { "access": "public" }
+3. cd W:/code/skissify/mcp-server && npm publish --access public
+4. Verify: npm view @skissify/mcp-server
+```
+
+---
+
+### 🔴 Action 2: Comment on active HN Excalidraw thread (20 min)
+
+**Thread**: news.ycombinator.com/item?id=47571376 — STILL active (3 hours ago at time of this run). Developer building DIY Excalidraw + MCP + OAuth pipeline for programmatic diagrams.
+
+**Suggested comment**:
+> "We built Skissify for exactly this — JSON in, hand-drawn SVG out, no Excalidraw fork or OAuth plumbing needed. If you're generating diagrams programmatically from agents or code, the JSON schema gives you structured control over elements, wobble, paper type, and architectural elements (walls, doors, windows, stairs). MCP server too for inline Claude Code generation. [skissify.com] — love hearing from devs who've already solved the hard part of the pipeline."
+
+This targets the highest-intent developer audience available right now.
+
+---
+
+### 🟡 Action 3: Post on HN referencing Figma MCP paywall frustration (30 min)
+
+**Tie-in**: HN discussion "Figma's MCP Update Reflects a Larger Industry Shift" is 5 hours old and active. The thread surfaces developer frustration with enterprise-gated MCP features.
+
+**Comment angle**: Reply to any "MCP is paywalled" comment in that thread:
+> "This is exactly why we built Skissify's MCP at EUR 2/mo with no feature tiers. Full programmatic access to hand-drawn sketch generation — no enterprise contract required. [skissify.com/mcp]"
+
+This is a genuine, value-adding comment (not spam) that reaches a frustrated audience at the exact moment of frustration.
+
+---
+
+### 🟡 Action 4: Add Composio to launch-day registry submission list (15 min)
+
+**URL**: composio.dev/tools (find submission form)
+
+**Why**: Composio aggregates 850+ MCP integrations. Enterprise AI teams use Composio as a single gateway. Being listed = passive discovery from every Composio-connected enterprise agent.
+
+**Submit**: Tool name, description, npm package (`@skissify/mcp-server`), use cases (floor plans, diagrams, architectural sketches), pricing (free tier + EUR 2/mo API).
+
+**Updated registry list at launch** (now 8 targets):
+1. modelcontextprotocol.io/registry
+2. awesome-mcp-servers (GitHub PR)
+3. claudefa.st
+4. mcpmanager.ai
+5. LobeHub
+6. toolradar.com
+7. fastmcp.me + mcpmarket.com
+8. **composio.dev** ← NEW
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #69 (22:24 CET, Monday March 30)
 
 ### Context: Run #69 Key Findings
