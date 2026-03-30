@@ -15,5 +15,12 @@
   "devDependencies": {
     "@types/node": "^22",
     "typescript": "^5.7"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
