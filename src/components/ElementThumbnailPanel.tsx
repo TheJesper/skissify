@@ -168,6 +168,63 @@ const ELEMENT_PREVIEWS: Record<string, { label: string; sketch: SketchData }> = 
       }],
     },
   },
+
+  // ── Furniture & Fixtures ──────────────────────────────────────
+
+  bed: {
+    label: "Bed",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 60,
+      elements: [{ type: "bed", x: 6, y: 6, w: THUMB_SIZE - 12, h: THUMB_SIZE - 12, pillows: 2, color: "#555" }],
+    },
+  },
+  sofa: {
+    label: "Sofa",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 61,
+      elements: [{ type: "sofa", x: 6, y: 10, w: THUMB_SIZE - 12, h: THUMB_SIZE - 20, color: "#555" }],
+    },
+  },
+  "dining-table": {
+    label: "Table",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 62,
+      elements: [{ type: "dining-table", x: 12, y: 14, w: THUMB_SIZE - 24, h: THUMB_SIZE - 28, seats: 2, color: "#555" }],
+    },
+  },
+  toilet: {
+    label: "Toilet",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 63,
+      elements: [{ type: "toilet", x: 10, y: 6, w: THUMB_SIZE - 20, h: THUMB_SIZE - 12, color: "#555" }],
+    },
+  },
+  bathtub: {
+    label: "Bathtub",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 64,
+      elements: [{ type: "bathtub", x: 6, y: 8, w: THUMB_SIZE - 12, h: THUMB_SIZE - 16, color: "#555" }],
+    },
+  },
+  sink: {
+    label: "Sink",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 65,
+      elements: [{ type: "sink", x: 8, y: 8, w: THUMB_SIZE - 16, h: THUMB_SIZE - 16, color: "#555" }],
+    },
+  },
 };
 
 // ── Category groupings ────────────────────────────────────────────
@@ -192,6 +249,10 @@ const ELEMENT_CATEGORIES = [
   {
     label: "Structure",
     items: ["stair", "column"],
+  },
+  {
+    label: "Furniture & Fixtures",
+    items: ["bed", "sofa", "dining-table", "toilet", "bathtub", "sink"],
   },
 ];
 

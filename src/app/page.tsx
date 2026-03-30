@@ -745,6 +745,8 @@ function EditorInner({
           onDragEnd={commitDrag}
           onResizeElement={resizeElement}
           onResizeEnd={commitResize}
+          onRotateElement={rotateElementSilent}
+          onRotateEnd={commitRotate}
           onDoubleClickElement={handleDoubleClickElement}
           canvasControlRef={canvasControlRef}
           onDropElement={addElementAt}

@@ -150,6 +150,8 @@ function EditorInner({
     setRenderStyle,
     setSnapGrid,
     setMetadata,
+    rotateElementSilent,
+    commitRotate,
     reorderSelected,
     toggleLockSelected,
     alignSelected,
@@ -629,6 +631,8 @@ function EditorInner({
             onDragEnd={commitDrag}
             onResizeElement={resizeElement}
             onResizeEnd={commitResize}
+            onRotateElement={rotateElementSilent}
+            onRotateEnd={commitRotate}
             onDoubleClickElement={handleDoubleClickElement}
             onDropElement={addElementAt}
             onContextMenuAction={handleContextMenuAction}

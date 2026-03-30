@@ -1056,6 +1056,7 @@ export default function Canvas({
 
       // Rotation drag
       if (isRotating.current && onRotateElement && e.buttons === 1) {
+        setCursor("grabbing");
         const { mx, my } = clientToCanvas(e.clientX, e.clientY);
         const currentAngle = Math.atan2(my - rotatePivot.current.y, mx - rotatePivot.current.x);
         const deltaAngle = (currentAngle - rotateStartAngle.current) * (180 / Math.PI);
@@ -1541,6 +1542,10 @@ export default function Canvas({
         }
         return;
       }
+      if (isRotating.current) {
+        setCursor("grabbing");
+        return;
+      }
       if (isDraggingElements.current) {
         setCursor("grabbing");
         return;
@@ -1562,7 +1567,7 @@ export default function Canvas({
         const el = sketch.elements[idx];
         if (el && !(el as unknown as Record<string, unknown>).locked) {
           if (hitRotationHandle(el, mx, my)) {
-            setCursor("crosshair");
+            setCursor("grab");
             return;
           }
         }

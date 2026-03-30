@@ -202,6 +202,25 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
             { x: cx + 40, y: cy },
           ], ...baseProps };
           break;
+        // ── Furniture & Fixtures ──────────────────────────────
+        case "bed":
+          newEl = { type: "bed", x: cx - 50, y: cy - 35, w: 100, h: 70, pillows: 2, ...baseProps };
+          break;
+        case "sofa":
+          newEl = { type: "sofa", x: cx - 60, y: cy - 25, w: 120, h: 50, ...baseProps };
+          break;
+        case "dining-table":
+          newEl = { type: "dining-table", x: cx - 60, y: cy - 40, w: 120, h: 80, seats: 2, ...baseProps };
+          break;
+        case "toilet":
+          newEl = { type: "toilet", x: cx - 20, y: cy - 30, w: 40, h: 60, ...baseProps };
+          break;
+        case "bathtub":
+          newEl = { type: "bathtub", x: cx - 35, y: cy - 60, w: 70, h: 120, ...baseProps };
+          break;
+        case "sink":
+          newEl = { type: "sink", x: cx - 25, y: cy - 25, w: 50, h: 50, ...baseProps };
+          break;
         default:
           return;
       }
@@ -293,6 +312,25 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
             { x: cx + 20, y: cy - 5 },
             { x: cx + 40, y: cy },
           ], ...baseProps };
+          break;
+        // ── Furniture & Fixtures ──────────────────────────────
+        case "bed":
+          newEl = { type: "bed", x: cx - 50, y: cy - 35, w: 100, h: 70, pillows: 2, ...baseProps };
+          break;
+        case "sofa":
+          newEl = { type: "sofa", x: cx - 60, y: cy - 25, w: 120, h: 50, ...baseProps };
+          break;
+        case "dining-table":
+          newEl = { type: "dining-table", x: cx - 60, y: cy - 40, w: 120, h: 80, seats: 2, ...baseProps };
+          break;
+        case "toilet":
+          newEl = { type: "toilet", x: cx - 20, y: cy - 30, w: 40, h: 60, ...baseProps };
+          break;
+        case "bathtub":
+          newEl = { type: "bathtub", x: cx - 35, y: cy - 60, w: 70, h: 120, ...baseProps };
+          break;
+        case "sink":
+          newEl = { type: "sink", x: cx - 25, y: cy - 25, w: 50, h: 50, ...baseProps };
           break;
         default:
           return;

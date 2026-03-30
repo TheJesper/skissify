@@ -608,6 +608,7 @@ export default function Toolbar({
                 { keys: ["D"], desc: "Toggle freehand draw mode" },
                 { keys: ["R"], desc: "Rotate selected 15° clockwise" },
                 { keys: ["Shift", "R"], desc: "Rotate selected 15° counter-clockwise" },
+                { keys: ["Drag ↻ handle"], desc: "Drag rotation handle above element (Shift = 15° snap)" },
                 { keys: ["↑ ↓ ← →"], desc: "Nudge selected 1px" },
                 { keys: ["Shift", "↑ ↓ ← →"], desc: "Nudge selected 10px" },
                 { keys: ["Del / ⌫"], desc: "Delete selected elements" },
