@@ -3722,3 +3722,100 @@ Show HN fires in ~6 hours at 09:00 CET. This is the absolute final content cycle
 
 *Last Updated: March 31, 2026 (Cycle 52 - 02:56 CET)*
 *Added: Blog posts #105-107 (Show HN day editions — sharpest versions of all 3 core topics), SOCIAL-MEDIA.md Cycle 52 (Tweets 245-250 + LinkedIn launch + Mastodon/Bluesky + HN Response Playbook 6 scenarios + new community targets + PH hunter template), PRESS-KIT.md Cycle 52 (Quick Facts v6 + one-liners v6 + investor section + Show HN press context)*
+
+---
+
+## Marketing Improvements (Cycle 54 — March 30, 2026 — 05:11 CET)
+
+### STATUS: MONDAY 05:11 CET — T-28 HOURS TO SHOW HN — FINAL CONTENT CYCLE
+
+Show HN fires Tuesday March 31 at 09:00 CET. This is the last content cycle before launch day.
+
+Everything that can be written has been written (110 blog posts). Cycle 54 focuses on:
+1. Three sharpest blog posts yet (new angles not covered in prior cycles)
+2. Monday tweet arc (Tweets 267–276) — complete pre-HN day sequence
+3. HN First Comment v6 (FINAL — the sharpest version)
+4. Two new community posts (r/MachineLearning, r/ProductManagement — both untapped)
+5. Bluesky evening post + One-liners v73–80
+6. PRESS-KIT.md Cycle 54 — one-liners v81–90, boilerplate v5, press angles v14–18
+
+### What Changed in Cycle 54
+
+- **3 new blog posts (#111-113):**
+  - `why-hand-drawn-sketches-beat-figma-the-roi-argument.md` — ROI/cost calculation angle, PM audience, new approach not covered in any prior version
+  - `how-ai-agents-draw-floor-plans-the-a2a-angle.md` — A2A/three-layer stack angle, multi-agent visual specialist pattern, benchmark table
+  - `skissify-vs-excalidraw-the-show-hn-version.md` — cleanest, most honest comparison yet, specifically designed for HN audience skeptics
+- **SOCIAL-MEDIA.md Cycle 54**: Tweets 267–276 (complete Monday arc), r/MachineLearning schema benchmark post (NEW — 2.7M members, never targeted), r/ProductManagement Figma cost post (NEW — 350K members), Bluesky evening post, HN First Comment v6 (FINAL), One-liners v73–80
+- **PRESS-KIT.md Cycle 54**: One-liners v81–90 (sharpest set), Screenshot checklist v7 (FINAL), Founder bio v3, Boilerplate v5 (Show HN ready), Press angles v14–18
+
+### New Blog Posts (Cycle 54)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 111 | **Why Hand-Drawn Beats Figma: The ROI Argument** | `why-hand-drawn-sketches-beat-figma-the-roi-argument.md` | Medium, LinkedIn, r/ProductManagement | Monday 09:00 CET |
+| 112 | **How AI Agents Draw Floor Plans: The A2A Angle** | `how-ai-agents-draw-floor-plans-the-a2a-angle.md` | Dev.to, r/AI_Agents, A2A Discord | Monday 10:00 CET |
+| 113 | **Skissify vs Excalidraw: Show HN Version** | `skissify-vs-excalidraw-the-show-hn-version.md` | Dev.to, r/webdev, r/mcp | Monday 11:00 CET |
+
+### Today's Priority Actions (Monday March 30)
+
+| Priority | Time (CET) | Action | Status |
+|----------|-----------|--------|--------|
+| 1 🔴 | **MORNING** | Screenshot: Human Mode flow (BLOCKING) | ❌ |
+| 2 🔴 | **MORNING** | Screenshot: Claude Desktop MCP (BLOCKING) | ❌ |
+| 3 🔴 | **MORNING** | Screenshot: Blueprint floor plan | ❌ |
+| 4 🔴 | **TODAY** | Human Mode: live and tested end-to-end | ❌ |
+| 5 🔴 | **TODAY** | Email TLDR AI + The Rundown + Ben's Bites | ❌ |
+| 6 🟠 | **TODAY** | Wobble GIF (5 seconds, amplitude 0→10→3) | ❌ |
+| 7 🟡 | 05:30 | Tweet 267 (pre-dawn founder) | Ready |
+| 8 🟡 | 07:00 | Tweet 268 (PM ROI hook) | Ready |
+| 9 🟡 | 08:00 | Tweet 269 (MCP timing newsjack) | Ready |
+| 10 🟡 | 09:00 | Tweet 270 (schema thread, 4 tweets) | Ready |
+| 11 🟡 | 09:00 | Publish blog #111 (Figma ROI) | Ready |
+| 12 🟡 | 10:00 | Publish blog #112 (A2A angle) | Ready |
+| 13 🟡 | 11:00 | Publish blog #113 (Excalidraw Show HN) | Ready |
+| 14 🟡 | 11:00 | r/MachineLearning schema benchmark post | Ready |
+| 15 🟡 | 12:00 | Tweet 272 (Human Mode feature) | Ready |
+| 16 🟡 | 14:00 | r/ProductManagement Figma cost post | Ready |
+| 17 🟡 | 16:00 | Tweet 274 (A2A angle) | Ready |
+| 18 🟡 | 19:00 | Tweet 275 (final eve) | Ready |
+| 19 ⏰ | **TUESDAY 08:45** | Wake up. Coffee. Test product. | — |
+| 20 ⏰ | **TUESDAY 09:00** | SUBMIT Show HN | — |
+| 21 ⏰ | **TUESDAY 09:05** | Post HN First Comment v6 (FINAL, in SOCIAL-MEDIA.md) | Ready |
+
+### New Ideas (Cycle 54)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **r/MachineLearning schema benchmark post** | 2.7M members, schema design is independently interesting to ML community, data-backed | Low (post written) | High |
+| **r/ProductManagement Figma cost calculation** | 350K members, zero presence there, ROI angle is genuinely useful | Low (post written) | Medium |
+| **"Most MCP servers retrieve. We generate."** tagline | Clearest differentiator from 12,000+ other MCP servers, works for all audiences | Zero | High |
+| **A2A Discord outreach** | Google's Agent-to-Agent community, visual output is core A2A use case, ~5K engaged | Low | Medium |
+| **HN First Comment v6** — "Schema is 90% of the product" framing | Invites technical debate, addresses top objection preemptively, authentic | Zero (written) | High |
+| **OpenAI MCP timing newsjack** | March 26 OpenAI MCP adoption + March 27 Skissify launch = credible positioning story | Zero | High |
+
+### Critical Infrastructure — Status (Cycle 54)
+
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Screenshots (3 critical)** | 🔴 BLOCKING | Must be done today |
+| **Wobble GIF** | 🟠 HIGH | Today |
+| **Human Mode live + tested** | 🔴 BLOCKING | Before 09:00 Tuesday |
+| **Newsletter outreach (3 targets)** | 🔴 TODAY | TLDR AI, The Rundown, Ben's Bites — templates in NEWSLETTER-OUTREACH.md |
+| **Email newsletter signup** | 🟠 HIGH | Should be live |
+| **AlternativeTo listing** | 🟡 MEDIUM | Monday or post-launch |
+
+### Cumulative Blog Inventory (113 posts as of Cycle 54)
+
+| Range | Posts |
+|-------|-------|
+| #1-91 | Cycles 1-44 |
+| #92-95 | Cycles 45-46 |
+| #96-98 | Cycle 48 |
+| #99-101 | Cycle 49 |
+| #102-104 | Cycle 51 |
+| #105-107 | Cycle 52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 54 — 05:11 CET)*
+*Added: Blog posts #111-113 (ROI argument, A2A angle, Show HN Excalidraw comparison), SOCIAL-MEDIA.md Cycle 54 (Tweets 267–276 + r/MachineLearning + r/ProductManagement + Bluesky + HN First Comment v6 FINAL + one-liners v73–80), PRESS-KIT.md Cycle 54 (one-liners v81–90, boilerplate v5, press angles v14–18, screenshot checklist v7 FINAL)*

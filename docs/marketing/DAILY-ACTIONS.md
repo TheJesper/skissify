@@ -2,6 +2,71 @@
 
 ---
 
+## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #50 (04:57 CET, Monday March 30)
+
+### Context: **50 consecutive niche-clean scans. HN launch window opens 08:00 CET — ~3 hours away. Plan7Architect price hike closes TOMORROW (March 31). SaaStr confirms "SaaS Rout of 2026" — traditional SaaS under pressure, AI-native tools outperforming. Thomas Thornton tutorial now in week 2. Van Westendorp WTP survey = first-month priority. All windows closing today. Execute now.**
+
+---
+
+### 🔴 Action 1 (HARD DEADLINE — Monday 08:00–10:00 CET, ~3 hours away) — publishConfig + npm Publish + HN Post
+
+**NEW context from Run #50**: The SaaStr "SaaS Rout of 2026" is a live news hook. Use it in comments: "Traditional sketch tools charge $20/user. We launched at EUR 5/mo because it's 2026." This is a fresh counter-narrative angle beyond just the Figma/Stitch hook.
+
+**Execute in exactly this order (20 minutes total):**
+
+```bash
+# Step 1: Add publishConfig to mcp-server/package.json (30 seconds)
+# File: W:/code/skissify/mcp-server/package.json
+# Add: "publishConfig": { "access": "public" }
+
+# Step 2: Publish to npm (5 minutes)
+cd W:\code\skissify\mcp-server
+npm publish --access public
+# Verify: npm view @skissify/mcp-server
+
+# Step 3: Smoke test (2 minutes)
+node dist/index.js
+
+# Step 4: Post "Show HN" at 08:00–10:00 CET (15 minutes)
+# Pre-written post: docs/marketing/HACKER-NEWS.md
+# Title: "Show HN: Skissify – JSON to hand-drawn sketches, built for AI agents (MCP included)"
+```
+
+**NEW Run #50 HN comment angle (SaaS Rout)**: *"SaaStr says SaaS is trading at a discount to the S&P 500 for the first time ever. We priced Skissify for that world — EUR 5/mo Pro, not $20/user. The sketch use case shouldn't cost what an enterprise collab suite costs."*
+
+---
+
+### 🔴 Action 2 (Monday, after npm publish) — Plan7Architect SEO Blog Post (LAST DAY)
+
+The Plan7Architect Pro 5 price hike closes **tomorrow (March 31)**. This is the final 24-hour window for the SEO play.
+
+**Target keywords**: "Plan7Architect alternatives", "floor plan software alternatives 2026", "affordable floor plan tool"
+**Angle**: "Plan7Architect just raised their prices. Here's why Skissify at EUR 5/mo is the modern alternative — JSON-native, AI-agent-compatible, no CAD complexity."
+**Publishing target**: skissify.com/blog OR dev.to/@skissify
+**Time required**: 45 minutes to draft, 15 minutes to publish
+
+This blog post captures users actively reconsidering their floor plan software stack today. It's the highest time-sensitivity SEO action of the entire launch sequence.
+
+---
+
+### 🟡 Action 3 (Monday afternoon, after HN post is live) — Run Van Westendorp WTP Survey with First 50 Users
+
+**New from Run #50**: ogblocks.dev (5 days ago) confirmed Van Westendorp Price Sensitivity Meter as the 2026 standard for WTP validation.
+
+**When to run**: Once first 50 HN/PH signups are in (likely Monday afternoon or Tuesday).
+
+**Survey tool**: Typeform (free tier) or Google Forms. 4 questions only:
+1. At what monthly price is Skissify too cheap to trust?
+2. At what price does Skissify start to feel like a bargain?
+3. At what price does it start to feel expensive?
+4. At what price is it too expensive to consider?
+
+**Expected result** (hypothesis based on 50-run intelligence): Bargain zone EUR 2–3/mo; expensive threshold EUR 8–10/mo. If confirmed, EUR 5/mo Pro is correctly positioned as mid-range, not budget.
+
+**Why this matters**: If the survey shows "too cheap" is above EUR 2, eliminate the API Starter tier and make EUR 5 the entry. The data from real users is worth more than any competitive intelligence analysis.
+
+---
+
 ## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #49 (03:53 CET, Monday March 30)
 
 ### Context: **49 consecutive niche-clean scans. HN window opens 08:00 CET in ~4 hours. Figma/Stitch counter-narrative: LAST VIABLE WINDOW. Plan7Architect price hike expires TODAY/TOMORROW (March 31). `@skissify/mcp-server` dist/ confirmed. `publishConfig` = 30-second fix. Thomas Thornton tutorial now 8+ days old, still #1 — SERP slot is yours to claim. Value-based pricing confirmed as 2026 SaaS standard (mindk.com, 3 days ago).**

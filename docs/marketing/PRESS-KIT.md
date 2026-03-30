@@ -1998,3 +1998,91 @@ Skissify's Show HN post: "Skissify — JSON or plain text → hand-drawn sketch 
 
 *Last Updated: March 31, 2026 (Cycle 52 — 02:56 CET — Show HN Day)*
 *Added: Quick Facts v6, One-liner options v6, Founder hook (launch day version), Investor/angel section, Show HN context for press*
+
+---
+
+## PRESS-KIT.md — Cycle 54 Update (March 30, 2026 — 05:11 CET)
+
+### One-Liners v81–v90 (Sharpest Set Yet)
+
+| # | One-liner | Audience |
+|---|-----------|---------|
+| 81 | "The first MCP tool that doesn't retrieve — it generates." | Developer press |
+| 82 | "OpenAI adopted MCP on March 26. We launched March 27. Timing: accidental. Positioning: perfect." | Tech press, HN |
+| 83 | "AI agents can reason spatially. Now they can draw spatially." | General tech press |
+| 84 | "JSON in, hand-drawn sketch URL out. That's the entire product." | Hacker News |
+| 85 | "We designed the schema before we designed the renderer. That's why it works." | Technical press |
+| 86 | "Rough sketches invite revision. Polished wireframes suppress it. We made the rough one." | Design press |
+| 87 | "Homeowners use it to brief contractors. Developers use it to build agents. Same product." | Mainstream tech press |
+| 88 | "The visual output layer for the three-layer AI stack." | Enterprise / B2B angle |
+| 89 | "The hand-drawn aesthetic is a feature, not a limitation. Roughness is honest." | Design press, Substack |
+| 90 | "94% is not a marketing number. It's a schema design outcome." | Technical press, analysts |
+
+---
+
+### Screenshot Checklist v7 (FINAL — Priority Ranked)
+
+**MUST HAVE before Show HN (blocking):**
+- [ ] Human Mode: text input → sketch output side-by-side (mobile-friendly format)
+- [ ] Claude Desktop chat showing MCP floor plan generation in conversation
+- [ ] Blueprint floor plan with dimension labels (the best-looking output)
+
+**HIGH VALUE (before HN if possible):**
+- [ ] Wobble slider GIF — 5 seconds, amplitude 0→10→3, most viral asset
+- [ ] 4 paper styles side-by-side (napkin, plan, blueprint, villa)
+- [ ] JSON schema view next to rendered output
+
+**WEEK 2:**
+- [ ] Multi-agent workflow diagram (Skissify as visual specialist agent)
+- [ ] benchmark.skissify.com screenshot with model comparison table
+- [ ] TypeScript SDK code snippet + rendered output
+
+---
+
+### Founder Bio v3 (Final)
+
+**Jesper Landmér** — Stockholm, Sweden
+
+Solo founder. Built Skissify in the margins of other projects after noticing AI agents could reason about space but had no way to produce spatial output. Launched March 27, 2026. Day 1 users included homeowners planning kitchen renovations and a dungeon master who never emailed to explain how they found it.
+
+Building: skissify.com | @thejesper | Previously: Luncho, VUK, Devkit
+
+*"I designed the JSON schema before I wrote any rendering code. That turned out to be the right call."*
+
+---
+
+### Product Boilerplate v5 (Show HN Ready)
+
+**Short (tweet-length):**
+Skissify turns JSON or plain text into hand-drawn sketch URLs. Built for AI agents via MCP. 94% first-try LLM accuracy. Works in Claude Desktop today.
+
+**Medium (press pitch):**
+Skissify is a sketch API built specifically for AI agents. Send JSON or plain text describing a space, get back a permanent, shareable hand-drawn sketch URL. Native MCP support means AI agents can draw floor plans, diagrams, and layouts directly in conversation. 94% first-try success rate across LLMs, thanks to a schema designed from the ground up for LLM generation reliability.
+
+**Long (full pitch):**
+AI agents have gotten remarkably good at spatial reasoning — they can describe floor plans, layout architectures, plan room configurations. But they've had no way to produce spatial *output*. Text descriptions of spaces aren't the same as seeing them.
+
+Skissify solves this with a purpose-built JSON-to-sketch API with native MCP support. Send a minimal JSON object describing elements (rooms, doors, furniture, labels) and receive a permanent sketch URL in ~800ms. The hand-drawn aesthetic is intentional: rough output invites revision, polished output suppresses it. When AI agents produce first-draft spatial ideas, roughness is honest.
+
+The schema was designed specifically for LLM generation reliability: flat structure, absolute coordinates, explicit type fields, minimal required parameters. This achieves 94% first-try success with Claude 3.7 Sonnet (vs ~60-70% for community wrappers around other formats).
+
+Human Mode (no JSON required): POST plain text to /human and receive the same sketch URL, for users who don't want to think about schemas.
+
+Launched March 27, 2026. Current users include AI developers, homeowners briefing contractors, dungeon masters, and geometry teachers — none of whom were in the original target audience.
+
+---
+
+### Press Angles v14–v18 (Cycle 54)
+
+| # | Angle | Publication fit |
+|---|-------|-----------------|
+| 14 | **"The day MCP went mainstream, this tool shipped the first output server"** — OpenAI MCP adoption March 26, Skissify launched March 27. The visual output gap was the last piece. | Tech Crunch, The Verge, The Register |
+| 15 | **"94% accuracy because of schema design, not model choice"** — The technical insight that LLM output reliability is a schema problem, not a model problem. | The New Stack, Dev.to, HN |
+| 16 | **"Designed for robots, adopted by homeowners and dungeon masters"** — The unexpected audiences story. | Wired, mainstream tech press |
+| 17 | **"The missing output layer in the three-layer AI stack"** — MCP/A2A/WebMCP covers tools, agents, web. None covers visual spatial output. | Enterprise tech press, analysts |
+| 18 | **"The schema IS the product"** — Solo founder designs JSON format before writing any rendering code. The boring architectural decision that explains the 94% number. | Indie Hackers, technical founders |
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 54 — 05:11 CET)*
+*Added: One-liners v81–90 (sharpest set), Screenshot checklist v7 (FINAL), Founder bio v3, Product boilerplate v5 (Show HN ready), Press angles v14–18*
