@@ -321,6 +321,8 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       const et = E(el);
       const fontSize = et.size || et.fontSize || 14;
       const content = et.content || et.text || "";
+      const lineHeightMultiplier = et.lineHeight ?? 1.4;
+      const lineSpacing = fontSize * lineHeightMultiplier;
       const rotation = (Math.sin(hashElement(el)) * sketch.humanness * 2 * Math.PI) / 180;
       const fillColor = el.color || defaultColor;
       // Respect per-element fontFamily override, then sketch-level textFont, then default
@@ -328,9 +330,34 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
         (et.fontFamily as SkissifyFont | undefined) ?? sketch.textFont,
         "'Courier New', monospace"
       );
-      parts.push(
-        `<text x="${el.x}" y="${el.y}" font-family="${textFontCss}" font-size="${fontSize}" fill="${fillColor}" opacity="${style.opacity}" transform="rotate(${(rotation * 180) / Math.PI} ${el.x} ${el.y})">${escapeXml(content)}</text>`
-      );
+
+      // Build lines: split on \n (maxWidth word-wrap is approximate in SVG via tspan)
+      const rawLines = content.split("\n");
+      // For SVG we don't have canvas measureText, so word-wrap is skipped here —
+      // explicit \n breaks are fully honoured. maxWidth is passed as a hint to
+      // the SVG textLength attribute so browsers compress/expand glyphs to fit.
+      const maxWidth: number | undefined = et.maxWidth && et.maxWidth > 0 ? et.maxWidth : undefined;
+
+      if (rawLines.length === 1) {
+        // Single-line fast path
+        const widthAttr = maxWidth ? ` textLength="${maxWidth}" lengthAdjust="spacingAndGlyphs"` : "";
+        parts.push(
+          `<text x="${el.x}" y="${el.y}" font-family="${textFontCss}" font-size="${fontSize}" fill="${fillColor}" opacity="${style.opacity}" transform="rotate(${(rotation * 180) / Math.PI} ${el.x} ${el.y})"${widthAttr}>${escapeXml(content)}</text>`
+        );
+      } else {
+        // Multiline: use <tspan> elements with dy offsets
+        const tspans = rawLines.map((line: string, i: number) => {
+          const dy = i === 0 ? "0" : lineSpacing.toFixed(1);
+          const widthAttr =
+            maxWidth && line.length > 0
+              ? ` textLength="${maxWidth}" lengthAdjust="spacingAndGlyphs"`
+              : "";
+          return `<tspan x="${el.x}" dy="${dy}"${widthAttr}>${escapeXml(line)}</tspan>`;
+        });
+        parts.push(
+          `<text font-family="${textFontCss}" font-size="${fontSize}" fill="${fillColor}" opacity="${style.opacity}" transform="rotate(${(rotation * 180) / Math.PI} ${el.x} ${el.y})">${tspans.join("")}</text>`
+        );
+      }
       break;
     }
 

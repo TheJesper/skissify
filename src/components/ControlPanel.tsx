@@ -249,24 +249,66 @@ function ElementCoordEditor({
 
   return (
     <div className="mt-1 space-y-2">
-      {/* Text content editor for text elements */}
+      {/* Text content editor for text elements — textarea supports multiline (\n) */}
       {element.type === "text" && (
-        <div>
-          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">
+        <div className="space-y-1.5">
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block">
             Text content
+            <span className="ml-1.5 text-[#93a1a1] normal-case font-normal">(Shift+Enter = new line)</span>
           </label>
-          <input
-            type="text"
+          <textarea
+            rows={Math.max(2, (getTextValue("text") || getTextValue("content")).split("\n").length + 1)}
             value={getTextValue("text") || getTextValue("content")}
             onChange={(e) => handleTextChange("text", e.target.value)}
             onBlur={(e) => handleTextCommit("text", e.target.value)}
             onKeyDown={(e) => {
-              if (e.key === "Enter") handleTextCommit("text", (e.target as HTMLInputElement).value);
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                handleTextCommit("text", (e.target as HTMLTextAreaElement).value);
+              }
               e.stopPropagation();
             }}
-            placeholder="Enter text…"
-            className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-[11px] text-[#586e75] font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+            placeholder={"Enter text…\nShift+Enter for new line"}
+            className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-[11px] text-[#586e75] font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none resize-none"
           />
+          {/* Line height + max width controls (shown when text has content) */}
+          <div className="flex items-center gap-2">
+            <label className="text-[9px] text-[#657b83] uppercase tracking-wide shrink-0">
+              Line ht
+            </label>
+            <input
+              type="number"
+              min="1.0"
+              max="3.0"
+              step="0.1"
+              value={getValue("lineHeight") || "1.4"}
+              onChange={(e) => handleChange("lineHeight", e.target.value)}
+              onBlur={(e) => handleCommit("lineHeight", e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleCommit("lineHeight", (e.target as HTMLInputElement).value);
+                e.stopPropagation();
+              }}
+              className="w-16 bg-[#fdf6e3] border border-[#93a1a1] rounded px-1 py-0.5 text-[11px] text-[#586e75] text-center font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+            />
+            <label className="text-[9px] text-[#657b83] uppercase tracking-wide shrink-0 ml-1">
+              Wrap at
+            </label>
+            <input
+              type="number"
+              min="0"
+              step="10"
+              value={getValue("maxWidth") || "0"}
+              onChange={(e) => handleChange("maxWidth", e.target.value)}
+              onBlur={(e) => handleCommit("maxWidth", e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleCommit("maxWidth", (e.target as HTMLInputElement).value);
+                e.stopPropagation();
+              }}
+              placeholder="0"
+              className="w-16 bg-[#fdf6e3] border border-[#93a1a1] rounded px-1 py-0.5 text-[11px] text-[#586e75] text-center font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+            />
+            <span className="text-[9px] text-[#93a1a1]">px (0=off)</span>
+          </div>
         </div>
       )}
       {/* Rect label editor */}

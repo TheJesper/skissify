@@ -812,21 +812,39 @@ function EditorInner({
         {/* Inline text editing overlay */}
         {editingElement && (
           <div className="absolute inset-0 flex items-center justify-center z-50 bg-black/20">
-            <div className="rounded-xl shadow-2xl p-4 flex flex-col gap-3 w-72" style={{ backgroundColor: "#073642", border: "1px solid #268bd2" }}>
+            <div className="rounded-xl shadow-2xl p-4 flex flex-col gap-3 w-80" style={{ backgroundColor: "#073642", border: "1px solid #268bd2" }}>
               <label className="text-xs font-semibold uppercase tracking-wide" style={{ color: "#93a1a1" }}>
                 Edit {editingElement.field === "label" ? "label" : "text"}
+                {editingElement.field === "text" && (
+                  <span className="ml-2 normal-case font-normal text-[10px]" style={{ color: "#586e75" }}>Shift+Enter = new line · Enter = save</span>
+                )}
               </label>
-              <input
-                autoFocus
-                className="w-full rounded px-3 py-2 text-sm outline-none"
-                style={{ backgroundColor: "#002b36", color: "#839496", border: "1px solid #268bd2" }}
-                value={editingElement.value}
-                onChange={(e) => setEditingElement((prev) => prev ? { ...prev, value: e.target.value } : null)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") { e.preventDefault(); commitInlineEdit(); }
-                  if (e.key === "Escape") { e.preventDefault(); cancelInlineEdit(); }
-                }}
-              />
+              {editingElement.field === "text" ? (
+                <textarea
+                  autoFocus
+                  rows={Math.max(2, editingElement.value.split("\n").length + 1)}
+                  className="w-full rounded px-3 py-2 text-sm outline-none resize-none"
+                  style={{ backgroundColor: "#002b36", color: "#839496", border: "1px solid #268bd2" }}
+                  value={editingElement.value}
+                  onChange={(e) => setEditingElement((prev) => prev ? { ...prev, value: e.target.value } : null)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); commitInlineEdit(); }
+                    if (e.key === "Escape") { e.preventDefault(); cancelInlineEdit(); }
+                  }}
+                />
+              ) : (
+                <input
+                  autoFocus
+                  className="w-full rounded px-3 py-2 text-sm outline-none"
+                  style={{ backgroundColor: "#002b36", color: "#839496", border: "1px solid #268bd2" }}
+                  value={editingElement.value}
+                  onChange={(e) => setEditingElement((prev) => prev ? { ...prev, value: e.target.value } : null)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") { e.preventDefault(); commitInlineEdit(); }
+                    if (e.key === "Escape") { e.preventDefault(); cancelInlineEdit(); }
+                  }}
+                />
+              )}
               <div className="flex gap-2 justify-end">
                 <button
                   onClick={cancelInlineEdit}

@@ -697,30 +697,51 @@ function EditorInner({
           {editingElement && (
             <div className="absolute inset-0 pointer-events-none flex items-center justify-center z-30">
               <div
-                className="pointer-events-auto flex flex-col gap-2 bg-[#fdf6e3] border border-[#268bd2] rounded-lg shadow-xl p-3 min-w-[220px] max-w-[380px]"
+                className="pointer-events-auto flex flex-col gap-2 bg-[#fdf6e3] border border-[#268bd2] rounded-lg shadow-xl p-3 min-w-[240px] max-w-[400px]"
                 style={{ boxShadow: "0 4px 32px rgba(38,139,210,0.18)" }}
               >
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-[11px] font-semibold text-[#268bd2] uppercase tracking-wider">
                     Edit {editingElement.field === "label" ? "label" : "text"}
                   </span>
-                  <span className="text-[10px] text-[#93a1a1] ml-auto">Enter = save · Esc = cancel</span>
+                  <span className="text-[10px] text-[#93a1a1] ml-auto">
+                    {editingElement.field === "text" ? "Shift+Enter = new line · Enter = save · Esc = cancel" : "Enter = save · Esc = cancel"}
+                  </span>
                 </div>
-                <input
-                  // eslint-disable-next-line jsx-a11y/no-autofocus
-                  autoFocus
-                  className="w-full bg-[#eee8d5] border border-[#93a1a1] rounded px-2 py-1.5 text-sm text-[#073642] focus:outline-none focus:ring-2 focus:ring-[#268bd2] font-mono"
-                  value={editingElement.value}
-                  onChange={(e) =>
-                    setEditingElement((prev) =>
-                      prev ? { ...prev, value: e.target.value } : prev
-                    )
-                  }
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") { e.preventDefault(); commitInlineEdit(); }
-                    if (e.key === "Escape") { e.preventDefault(); cancelInlineEdit(); }
-                  }}
-                />
+                {editingElement.field === "text" ? (
+                  <textarea
+                    // eslint-disable-next-line jsx-a11y/no-autofocus
+                    autoFocus
+                    rows={Math.max(2, editingElement.value.split("\n").length + 1)}
+                    className="w-full bg-[#eee8d5] border border-[#93a1a1] rounded px-2 py-1.5 text-sm text-[#073642] focus:outline-none focus:ring-2 focus:ring-[#268bd2] font-mono resize-none"
+                    value={editingElement.value}
+                    onChange={(e) =>
+                      setEditingElement((prev) =>
+                        prev ? { ...prev, value: e.target.value } : prev
+                      )
+                    }
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); commitInlineEdit(); }
+                      if (e.key === "Escape") { e.preventDefault(); cancelInlineEdit(); }
+                    }}
+                  />
+                ) : (
+                  <input
+                    // eslint-disable-next-line jsx-a11y/no-autofocus
+                    autoFocus
+                    className="w-full bg-[#eee8d5] border border-[#93a1a1] rounded px-2 py-1.5 text-sm text-[#073642] focus:outline-none focus:ring-2 focus:ring-[#268bd2] font-mono"
+                    value={editingElement.value}
+                    onChange={(e) =>
+                      setEditingElement((prev) =>
+                        prev ? { ...prev, value: e.target.value } : prev
+                      )
+                    }
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") { e.preventDefault(); commitInlineEdit(); }
+                      if (e.key === "Escape") { e.preventDefault(); cancelInlineEdit(); }
+                    }}
+                  />
+                )}
                 <div className="flex gap-2 justify-end">
                   <button
                     className="px-3 py-1 text-xs rounded bg-[#eee8d5] hover:bg-[#93a1a1]/30 text-[#586e75] transition-colors"

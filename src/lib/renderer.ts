@@ -614,6 +614,9 @@ function renderElement(
       const { x, y } = el;
       const content = el.content || el.text || "";
       const size = el.size || el.fontSize || 11;
+      const lineHeightMultiplier = el.lineHeight ?? 1.4;
+      const lineSpacing = size * lineHeightMultiplier;
+      const maxWidth = el.maxWidth && el.maxWidth > 0 ? el.maxWidth : 0;
       const tc = resolveColor(el, sketch, true);
       if (sketch.paper === "blueprint") {
         // Override text color on blueprint
@@ -627,19 +630,48 @@ function renderElement(
         "'Courier New', monospace"
       );
       ctx.font = `${size}px ${textFontCss}`;
-      // Character-by-character jitter
-      let cx2 = x;
-      for (let i = 0; i < content.length; i++) {
-        const cw = ctx.measureText(content[i]).width;
-        const jy = (rng() - 0.5) * opts.amplitude * 0.4;
-        const rot = (rng() - 0.5) * opts.amplitude * 0.01;
-        ctx.save();
-        ctx.globalAlpha = 0.88 + rng() * 0.12;
-        ctx.translate(cx2, y + jy);
-        ctx.rotate(rot);
-        ctx.fillText(content[i], 0, 0);
-        ctx.restore();
-        cx2 += cw;
+
+      // Build lines: split on \n first, then word-wrap each segment if maxWidth is set
+      const rawLines = content.split("\n");
+      const lines: string[] = [];
+      for (const rawLine of rawLines) {
+        if (!maxWidth) {
+          lines.push(rawLine);
+        } else {
+          // Word-wrap within maxWidth
+          const words = rawLine.split(" ");
+          let currentLine = "";
+          for (const word of words) {
+            const testLine = currentLine ? currentLine + " " + word : word;
+            const testWidth = ctx.measureText(testLine).width;
+            if (testWidth > maxWidth && currentLine) {
+              lines.push(currentLine);
+              currentLine = word;
+            } else {
+              currentLine = testLine;
+            }
+          }
+          if (currentLine) lines.push(currentLine);
+        }
+      }
+
+      // Render each line with character-by-character jitter
+      for (let li = 0; li < lines.length; li++) {
+        const lineText = lines[li];
+        const lineY = y + li * lineSpacing;
+        let cx2 = x;
+        for (let i = 0; i < lineText.length; i++) {
+          const cw = ctx.measureText(lineText[i]).width;
+          const jy = (rng() - 0.5) * opts.amplitude * 0.4;
+          const rot = (rng() - 0.5) * opts.amplitude * 0.01;
+          ctx.save();
+          ctx.globalAlpha = 0.88 + rng() * 0.12;
+          ctx.translate(cx2, lineY + jy);
+          ctx.rotate(rot);
+          ctx.fillText(lineText[i], 0, 0);
+          ctx.restore();
+          cx2 += cw;
+        }
       }
       break;
     }

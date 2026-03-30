@@ -1821,7 +1821,16 @@ function hitTest(
   }
   if ("x" in el && "y" in el) {
     const { x, y } = asPos(el);
-    return mx >= x - margin && mx <= x + 80 && my >= y - 20 && my <= y + margin;
+    // Estimate multiline text height for better hit-testing
+    const elAny = el as unknown as Record<string, unknown>;
+    const fontSize = (elAny.fontSize as number) || (elAny.size as number) || 11;
+    const lineHeight = (elAny.lineHeight as number) ?? 1.4;
+    const lineSpacing = fontSize * lineHeight;
+    const rawContent = String(elAny.text || elAny.content || "");
+    const lineCount = Math.max(1, rawContent.split("\n").length);
+    const textHeight = lineCount > 1 ? lineSpacing * lineCount : fontSize;
+    const textWidth = (elAny.maxWidth as number) || 120; // fallback estimate
+    return mx >= x - margin && mx <= x + textWidth + margin && my >= y - fontSize - margin && my <= y + (lineCount - 1) * lineSpacing + margin;
   }
 
   return false;
@@ -1858,7 +1867,14 @@ function boxHitTest(
   }
   if ("x" in el && "y" in el) {
     const p = asPos(el);
-    return p.x <= x2 && p.x + 80 >= x1 && p.y - 20 <= y2 && p.y + 5 >= y1;
+    const elAny = el as unknown as Record<string, unknown>;
+    const fontSize = (elAny.fontSize as number) || (elAny.size as number) || 11;
+    const lineHeight = (elAny.lineHeight as number) ?? 1.4;
+    const lineSpacing = fontSize * lineHeight;
+    const rawContent = String(elAny.text || elAny.content || "");
+    const lineCount = Math.max(1, rawContent.split("\n").length);
+    const textWidth = (elAny.maxWidth as number) || 120;
+    return p.x <= x2 && p.x + textWidth >= x1 && p.y - fontSize <= y2 && p.y + (lineCount - 1) * lineSpacing >= y1;
   }
   return false;
 }

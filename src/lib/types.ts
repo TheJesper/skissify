@@ -110,6 +110,17 @@ export interface TextElement extends BaseElement {
   size?: number;
   /** Override font family for this element */
   fontFamily?: string;
+  /**
+   * Line height multiplier (e.g. 1.4 = 140% of fontSize). Defaults to 1.4.
+   * Used for multiline text (text with \n) and auto-wrapped text.
+   */
+  lineHeight?: number;
+  /**
+   * Maximum width in element-space pixels before text auto-wraps.
+   * When set, text that exceeds this width is word-wrapped onto additional lines.
+   * When 0 or undefined, no auto-wrapping occurs (only \n explicit breaks).
+   */
+  maxWidth?: number;
 }
 
 export interface DashedElement extends BaseElement {
