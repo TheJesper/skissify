@@ -79,12 +79,30 @@ export const presets: Record<string, SketchData> = {
       { type: "door-symbol", x: 500, y: 250, w: 55, swing: "right", color: "#8B4513" },
       { type: "door-symbol", x: 770, y: 600, w: 70, swing: "left", color: "#8B4513" },
 
-      // Dimensions
+      // Dimensions (offset outside walls)
       { type: "dim", x1: 50, y1: 30, x2: 850, y2: 30, label: "16.0 m", color: "#8B4513" },
-      { type: "dim", x1: 30, y1: 50, x2: 30, y2: 600, label: "11.0 m", color: "#8B4513" },
+      { type: "dim", x1: 30, y1: 50, x2: 30, y2: 600, label: "11.0 m", color: "#8B4513", offset: -20 },
 
       // Stair in hall
       { type: "stair", x: 620, y: 80, w: 60, h: 140, steps: 10, color: "#888" },
+
+      // Furniture: SOVRUM (bedroom, x=55..348, y=55..318)
+      { type: "bed", x: 100, y: 70, w: 160, h: 110, pillows: 2, color: "#7a6a5a" },
+      { type: "rect", x: 270, y: 75, w: 40, h: 35, color: "#9a8a7a", label: "" },  // nightstand
+
+      // Furniture: KÖK (kitchen, x=358..498, y=55..318)
+      { type: "stove", x: 365, y: 65, w: 80, h: 60, burners: 4, color: "#666" },
+      { type: "dining-table", x: 368, y: 175, w: 115, h: 90, seats: 1, color: "#7a6a5a" },
+
+      // Furniture: VARDAGSRUM (living room, x=55..498, y=328..593)
+      { type: "sofa", x: 65, y: 345, w: 180, h: 70, color: "#6a7a8a" },
+      { type: "armchair", x: 375, y: 345, w: 70, h: 65, color: "#6a7a8a" },
+      { type: "rect", x: 180, y: 435, w: 120, h: 60, color: "#8a7a6a", label: "" },  // coffee table
+
+      // Furniture: BADRUM (bathroom, x=508..698, y=388..593)
+      { type: "toilet", x: 515, y: 395, w: 55, h: 80, color: "#aaa" },
+      { type: "sink", x: 580, y: 395, w: 55, h: 50, color: "#aaa" },
+      { type: "bathtub", x: 515, y: 490, w: 170, h: 90, color: "#aaa" },
     ],
   },
 
@@ -195,6 +213,28 @@ export const presets: Record<string, SketchData> = {
       // Trees outside (circles)
       { type: "circle", cx: 40, cy: 40, r: 15, color: "#2a5c2a" },
       { type: "circle", cx: 910, cy: 40, r: 12, color: "#2a5c2a" },
+
+      // Furniture: SOVRUM 1 (x=58..348, y=58..348) — double bed + nightstand
+      { type: "bed", x: 80, y: 70, w: 170, h: 120, pillows: 2, color: "#7a6a5a" },
+      { type: "rect", x: 258, y: 75, w: 45, h: 40, color: "#9a8a7a", label: "" },
+
+      // Furniture: KÖK (x=358..598, y=58..348) — stove + dining table
+      { type: "stove", x: 365, y: 65, w: 90, h: 65, burners: 4, color: "#666" },
+      { type: "dining-table", x: 368, y: 195, w: 130, h: 100, seats: 2, color: "#7a6a5a" },
+
+      // Furniture: SOVRUM 2 (x=608..892, y=58..348) — single bed + desk
+      { type: "bed", x: 618, y: 70, w: 140, h: 100, pillows: 1, color: "#7a6a5a" },
+      { type: "desk", x: 760, y: 65, w: 110, h: 75, color: "#8a7a6a" },
+
+      // Furniture: VARDAGSRUM (x=58..598, y=358..642) — sofa + armchair + coffee table
+      { type: "sofa", x: 70, y: 380, w: 200, h: 80, color: "#6a7a8a" },
+      { type: "armchair", x: 420, y: 378, w: 80, h: 75, color: "#6a7a8a" },
+      { type: "rect", x: 190, y: 480, w: 140, h: 70, color: "#8a7a6a", label: "" },
+
+      // Furniture: BAD (x=758..892, y=358..642) — toilet + sink + shower
+      { type: "toilet", x: 765, y: 368, w: 55, h: 80, color: "#aaa" },
+      { type: "sink", x: 828, y: 368, w: 52, h: 50, color: "#aaa" },
+      { type: "shower", x: 765, y: 465, w: 115, h: 110, color: "#aaa" },
     ],
   },
   "office layout": {
