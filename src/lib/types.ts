@@ -51,6 +51,13 @@ export interface LineElement extends BaseElement {
   y1: number;
   x2: number;
   y2: number;
+  /**
+   * Wall thickness in canvas units. When set, the line is rendered as two parallel
+   * hand-drawn lines with a filled interior — the standard architectural wall representation.
+   * The fill color follows `fillColor` (defaults to paper background).
+   * Example: wallWidth: 8 renders a thick wall suitable for exterior walls.
+   */
+  wallWidth?: number;
 }
 
 export interface RectElement extends BaseElement {

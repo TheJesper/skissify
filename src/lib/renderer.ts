@@ -463,9 +463,52 @@ function renderElement(
   }
 
   switch (el.type) {
-    case "line":
-      HL(ctx, el.x1, el.y1, el.x2, el.y2, opts, color, tool, paper, rng, h);
+    case "line": {
+      if (el.wallWidth && el.wallWidth > 0) {
+        // ── Wall rendering: two parallel wobble lines with filled interior ──
+        const { x1, y1, x2, y2, wallWidth } = el;
+        const hw = wallWidth / 2;
+        // Perpendicular unit vector
+        const dx = x2 - x1;
+        const dy = y2 - y1;
+        const len = Math.sqrt(dx * dx + dy * dy);
+        if (len > 0.001) {
+          const nx = -dy / len; // perpendicular x
+          const ny = dx / len;  // perpendicular y
+
+          // Offset endpoints for both parallel lines
+          const ax1 = x1 + nx * hw, ay1 = y1 + ny * hw;
+          const ax2 = x2 + nx * hw, ay2 = y2 + ny * hw;
+          const bx1 = x1 - nx * hw, by1 = y1 - ny * hw;
+          const bx2 = x2 - nx * hw, by2 = y2 - ny * hw;
+
+          // Fill the wall interior
+          const fillC = el.fillColor && el.fillColor !== "none"
+            ? (sketch.paper === "blueprint" ? (BLUEPRINT_COLOR_MAP[el.fillColor] ?? el.fillColor) : el.fillColor)
+            : (sketch.paper === "blueprint" ? "rgba(26,58,107,0.95)" : PAPER_COLORS[sketch.paper] ?? "#f5f0e8");
+          ctx.save();
+          ctx.beginPath();
+          ctx.moveTo(ax1, ay1);
+          ctx.lineTo(ax2, ay2);
+          ctx.lineTo(bx2, by2);
+          ctx.lineTo(bx1, by1);
+          ctx.closePath();
+          ctx.fillStyle = fillC;
+          ctx.fill();
+          ctx.restore();
+
+          // Draw the two parallel wobble lines
+          HL(ctx, ax1, ay1, ax2, ay2, { ...opts, seed: opts.seed! + 0 }, color, tool, paper, rng, h);
+          HL(ctx, bx1, by1, bx2, by2, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+        } else {
+          // Degenerate line — fallback
+          HL(ctx, el.x1, el.y1, el.x2, el.y2, opts, color, tool, paper, rng, h);
+        }
+      } else {
+        HL(ctx, el.x1, el.y1, el.x2, el.y2, opts, color, tool, paper, rng, h);
+      }
       break;
+    }
 
     case "rect": {
       const { x, y, w, h: rh } = el;

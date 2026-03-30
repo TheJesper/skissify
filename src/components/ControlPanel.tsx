@@ -100,6 +100,15 @@ interface ControlPanelProps {
   onSelectElement?: (idx: number, shiftKey: boolean) => void;
   /** Called when the user toggles visibility of an element */
   onToggleVisibility?: (idx: number) => void;
+  /**
+   * Current wallWidth of the selected line element (undefined if no line selected or no wall).
+   * 0 means no wall (plain line). > 0 means wall with that thickness.
+   */
+  selectedWallWidth?: number | null;
+  /** Called when the user sets/clears wall thickness on selected line elements */
+  onWallWidthSelected?: (w: number | undefined) => void;
+  /** True when any selected element is a line type */
+  hasLineSelected?: boolean;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -425,6 +434,9 @@ export default function ControlPanel({
   selectedElements,
   onSelectElement,
   onToggleVisibility,
+  selectedWallWidth,
+  onWallWidthSelected,
+  hasLineSelected,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -747,6 +759,57 @@ export default function ControlPanel({
                 <span className="text-[10px] text-[#93a1a1] w-6 text-right font-mono">
                   {(selectedStrokeWidth ?? 1).toFixed(1)}
                 </span>
+              </div>
+            )}
+            {/* Wall thickness control — shown when one or more line elements are selected */}
+            {hasLineSelected && onWallWidthSelected && (
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <label className="text-[10px] text-[#657b83] uppercase tracking-wide shrink-0">
+                    Wall thickness
+                  </label>
+                  {selectedWallWidth != null && selectedWallWidth > 0 && (
+                    <button
+                      onClick={() => onWallWidthSelected(undefined)}
+                      title="Remove wall (plain line)"
+                      className="text-[9px] text-[#cb4b16] hover:text-[#dc322f] transition-colors"
+                    >
+                      ✕ plain line
+                    </button>
+                  )}
+                </div>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="range"
+                    min={2}
+                    max={30}
+                    step={1}
+                    value={selectedWallWidth ?? 0}
+                    onChange={(e) => onWallWidthSelected(parseFloat(e.target.value))}
+                    className="flex-1 h-1 accent-[#268bd2]"
+                    title="Wall thickness in canvas units"
+                  />
+                  <span className="text-[10px] text-[#93a1a1] w-8 text-right font-mono">
+                    {selectedWallWidth ? `${selectedWallWidth}px` : "off"}
+                  </span>
+                </div>
+                {/* Quick preset thickness buttons */}
+                <div className="flex gap-1">
+                  {[0, 4, 8, 12, 20].map((w) => (
+                    <button
+                      key={w}
+                      title={w === 0 ? "No wall (plain line)" : `Wall thickness ${w}px`}
+                      onClick={() => onWallWidthSelected(w === 0 ? undefined : w)}
+                      className={`flex-1 py-1 rounded text-[9px] font-medium transition-all border ${
+                        (w === 0 && !selectedWallWidth) || selectedWallWidth === w
+                          ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#073642]"
+                          : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#eee8d5] text-[#657b83]"
+                      }`}
+                    >
+                      {w === 0 ? "—" : w === 4 ? "thin" : w === 8 ? "int" : w === 12 ? "ext" : "thick"}
+                    </button>
+                  ))}
+                </div>
               </div>
             )}
             {onFillColorSelected && (

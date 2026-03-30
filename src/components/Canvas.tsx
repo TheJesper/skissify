@@ -17,7 +17,11 @@ const asPos = (el: SketchElement) => el as unknown as { x: number; y: number };
 function getElementBounds(el: SketchElement): { x: number; y: number; w: number; h: number } | null {
   if ("x1" in el && "x2" in el) {
     const { x1, y1, x2, y2 } = asLine(el);
-    return { x: Math.min(x1, x2) - 5, y: Math.min(y1, y2) - 5, w: Math.abs(x2 - x1) + 10, h: Math.abs(y2 - y1) + 10 };
+    // For wall lines, expand bounds to include the full wall thickness
+    const wallPad = (el as unknown as { wallWidth?: number }).wallWidth
+      ? Math.ceil(((el as unknown as { wallWidth: number }).wallWidth) / 2) + 3
+      : 5;
+    return { x: Math.min(x1, x2) - wallPad, y: Math.min(y1, y2) - wallPad, w: Math.abs(x2 - x1) + wallPad * 2, h: Math.abs(y2 - y1) + wallPad * 2 };
   }
   if ("x" in el && "w" in el && "h" in el) {
     const { x, y, w, h } = asRect(el);

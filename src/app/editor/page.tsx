@@ -515,6 +515,25 @@ function EditorInner({
     });
   })();
 
+  // True if any selected element is a line type (controls wall thickness UI)
+  const hasLineSelected: boolean = (() => {
+    if (selectedElements.size === 0) return false;
+    return [...selectedElements].some((i) => sketch.elements[i]?.type === "line");
+  })();
+
+  // wallWidth of the first selected line element (null = no line selected, undefined = no wall)
+  const selectedWallWidth: number | null | undefined = (() => {
+    if (!hasLineSelected) return null;
+    for (const i of selectedElements) {
+      const el = sketch.elements[i];
+      if (el?.type === "line") {
+        const raw = (el as unknown as Record<string, unknown>).wallWidth;
+        return typeof raw === "number" ? raw : undefined;
+      }
+    }
+    return null;
+  })();
+
   // Per-element fontFamily of the first selected text/dim element (null = no override)
   const selectedFontFamily: string | null | undefined = (() => {
     if (!hasTextOrDimSelected) return undefined;
@@ -634,6 +653,16 @@ function EditorInner({
             selectedElements={selectedElements}
             onSelectElement={handleSelectFromList}
             onToggleVisibility={toggleVisibility}
+            hasLineSelected={hasLineSelected}
+            selectedWallWidth={selectedWallWidth}
+            onWallWidthSelected={(w) => {
+              for (const i of selectedElements) {
+                const el = sketch.elements[i];
+                if (el?.type === "line") {
+                  updateElement(i, w != null && w > 0 ? { wallWidth: w } : { wallWidth: undefined });
+                }
+              }
+            }}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -780,6 +809,16 @@ function EditorInner({
             selectedElements={selectedElements}
             onSelectElement={handleSelectFromList}
             onToggleVisibility={toggleVisibility}
+            hasLineSelected={hasLineSelected}
+            selectedWallWidth={selectedWallWidth}
+            onWallWidthSelected={(w) => {
+              for (const i of selectedElements) {
+                const el = sketch.elements[i];
+                if (el?.type === "line") {
+                  updateElement(i, w != null && w > 0 ? { wallWidth: w } : { wallWidth: undefined });
+                }
+              }
+            }}
           />
         </div>
       )}

@@ -231,8 +231,36 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
 
   switch (el.type) {
     case "line": {
-      const pts = wobbleLine(el.x1, el.y1, el.x2, el.y2, opts);
-      parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
+      if (el.wallWidth && el.wallWidth > 0) {
+        // ── Wall rendering: two parallel wobble lines with filled interior ──
+        const { x1, y1, x2, y2, wallWidth } = el;
+        const hw = wallWidth / 2;
+        const dx = x2 - x1, dy = y2 - y1;
+        const len = Math.sqrt(dx * dx + dy * dy);
+        if (len > 0.001) {
+          const nx = -dy / len, ny = dx / len;
+          const ax1 = x1 + nx * hw, ay1 = y1 + ny * hw;
+          const ax2 = x2 + nx * hw, ay2 = y2 + ny * hw;
+          const bx1 = x1 - nx * hw, by1 = y1 - ny * hw;
+          const bx2 = x2 - nx * hw, by2 = y2 - ny * hw;
+          const fillC = el.fillColor && el.fillColor !== "none"
+            ? (sketch.paper === "blueprint" ? (BLUEPRINT_COLOR_MAP[el.fillColor] ?? el.fillColor) : el.fillColor)
+            : (sketch.paper === "blueprint" ? "rgba(26,58,107,0.95)" : PAPER_COLORS[sketch.paper] ?? "#f5f0e8");
+          // Fill polygon
+          parts.push(`<polygon points="${ax1},${ay1} ${ax2},${ay2} ${bx2},${by2} ${bx1},${by1}" fill="${fillC}" stroke="none"/>`);
+          // Two parallel wobble lines
+          const ptsA = wobbleLine(ax1, ay1, ax2, ay2, { ...opts, seed: opts.seed! + 0 });
+          const ptsB = wobbleLine(bx1, by1, bx2, by2, { ...opts, seed: opts.seed! + 1 });
+          parts.push(`<path d="${pointsToPath(ptsA)}" ${sa}/>`);
+          parts.push(`<path d="${pointsToPath(ptsB)}" ${sa}/>`);
+        } else {
+          const pts = wobbleLine(el.x1, el.y1, el.x2, el.y2, opts);
+          parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
+        }
+      } else {
+        const pts = wobbleLine(el.x1, el.y1, el.x2, el.y2, opts);
+        parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
+      }
       break;
     }
 
