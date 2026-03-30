@@ -99,7 +99,7 @@ export default async function PublicSketchPage({ params }: Props) {
 
       {/* Canvas */}
       <main className="max-w-4xl mx-auto px-6 py-8">
-        <PublicSketchView data={sketchData} />
+        <PublicSketchView data={sketchData} slug={sketch.slug} title={sketch.title} />
         <p className="text-center text-[#839496] text-sm mt-6">
           Created with{" "}
           <a href="/" className="text-[#268bd2] hover:text-[#268bd2]/80">

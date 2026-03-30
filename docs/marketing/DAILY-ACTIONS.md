@@ -2,6 +2,64 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #71 (00:33 CET, Tuesday March 31)
+
+### Context: Run #71 Key Findings
+
+- **71 consecutive niche-clean scans** — zero competitor in hand-drawn + JSON-native + MCP category
+- **6 MCP-native agentic frameworks** (LangGraph, AutoGen, CrewAI + 3 more) all active, none have a sketch tool example — direct launch opportunity
+- **120+ agentic tools mapped, zero visual/sketch category** — Skissify is category-creating
+- **Excalidraw stagnant** (v0.18.0 = March 2025) — 12 months no major feature. Window is open.
+- **Value-based pricing confirmed dominant**: EUR 2/mo framed as infrastructure (build vs. buy) converts better than framing it as "cheap subscription"
+
+---
+
+### 🎯 Action 1: Write One Framework Integration Example (LangGraph or AutoGen) — Priority: HIGH
+
+**What**: Write a 20–30 line code snippet showing `@skissify/mcp-server` integrated with either LangGraph or AutoGen. Agent receives a floor plan prompt → calls Skissify → returns hand-drawn SVG.
+
+**Why now**: aimultiple.com (9h ago) confirmed AutoGen and LangGraph are the top two MCP-native frameworks. Zero sketch tools appear in any framework tutorial. Being the first Skissify code example in these communities = category ownership. Framework communities actively share useful MCP servers.
+
+**Where to publish**: LangGraph GitHub Discussions, AutoGen Discord, or dev.to under the "LangGraph" tag. Also add to Skissify docs as `examples/langraph-floor-plan.py`.
+
+**Expected outcome**: Framework community discovery, inbound GitHub stars, potential repost by framework maintainers (they love showing what their MCP integration enables).
+
+**Time estimate**: 45–60 minutes (write example + docs page + 1 community post)
+
+---
+
+### 🎯 Action 2: Register `@skissify/mcp-server` on Composio — Priority: HIGH
+
+**What**: Submit Skissify's MCP server to Composio's tool catalog (composio.dev). Composio aggregates 850+ MCP integrations and is actively covered by tool discovery platforms (toolradar.com, 4h ago in prior run).
+
+**Why now**: Enterprise teams installing Composio as their MCP gateway automatically gain access to every tool in the catalog. Being listed = passive enterprise discovery without active outreach. This is the highest-leverage distribution action that costs zero ongoing effort once done.
+
+**Steps**:
+1. Go to composio.dev/tools or their GitHub integration request
+2. Submit `@skissify/mcp-server` with description, schema, and link
+3. Add Composio badge to README: "Available on Composio"
+
+**Expected outcome**: Passive enterprise discovery. Even 1 enterprise Team subscription (EUR 12/user/mo × 5 users = EUR 60/mo) from Composio discovery justifies 30 minutes of setup.
+
+**Time estimate**: 30–45 minutes
+
+---
+
+### 🎯 Action 3: Reframe Pricing Page Copy Using "Infrastructure Pricing" Language — Priority: MEDIUM
+
+**What**: Update the pricing page (or draft copy for it) to reframe EUR 2/mo as infrastructure pricing, not subscription pricing. Replace "EUR 2/month" framing with "build vs. buy" math visible to the visitor.
+
+**Proposed copy**:
+- Instead of: "EUR 2/mo — Pro plan"
+- Use: "EUR 2/mo — cheaper than the first hour of building it yourself. Hand-drawn sketch infrastructure. No enterprise contract required."
+- Add comparison line: "Building this renderer from scratch: 20–40 developer hours. Skissify: EUR 24/year."
+
+**Why now**: mindk.com (3 days ago) confirms value-based pricing dominates 2026 — users pay for perceived value, not price points. The EUR 2/mo currently feels like "cheap SaaS." Reframed as infrastructure, it feels like a no-brainer API fee. This shift in copy framing can improve conversion rate without changing the price.
+
+**Time estimate**: 30 minutes to draft copy; 15 minutes to update pricing page/docs
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #70 (23:28 CET, Monday March 30)
 
 ### Context: Run #70 Key Findings

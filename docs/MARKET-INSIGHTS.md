@@ -2,6 +2,52 @@
 
 ---
 
+## Entry: March 31, 2026 — 00:33 CET | Automated Strategy Run #71
+
+### Theme: Category Creation — Skissify as the 12th Category in the Agentic Tool Landscape
+
+#### Insight 1: No "Visual Output" Category Exists in the 120+ Agent Tool Landscape — Skissify Is Category-Creating
+
+**Source**: stackone.com "120+ Agentic AI Tools Mapped Across 11 Categories 2026" (1 week ago). aimultiple.com "Top 5 Agentic Frameworks" (9 hours ago). letsdatascience.com "AI Agent Frameworks 2026" (4 days ago).
+
+The agentic tool ecosystem has 120+ mapped tools across 11 categories. Zero of these categories covers visual or sketch output. When 6 production-grade frameworks (LangGraph, AutoGen, CrewAI, LlamaIndex, Haystack, Mastra) all support MCP natively and none list a sketch tool as an example MCP server — that is a gap, not a coincidence.
+
+**EUR 2/mo WTP mechanism for this insight**: Category creation changes the "should I pay?" question. When Skissify is the only sketch-output MCP tool in existence, users don't compare it against alternatives — they compare it against building it themselves. Building a hand-drawn SVG renderer from scratch costs a developer 20–40 hours. EUR 2/mo for 12 months = EUR 24. This isn't SaaS pricing psychology — it's build-vs-buy math. EUR 2 wins every time.
+
+**New messaging at launch**: "We're adding hand-drawn sketch output to the agentic tool landscape. It didn't exist before. Now it does. EUR 2/mo."
+
+#### Insight 2: 6 MCP-Native Frameworks, All Hungry for Tools — Skissify Should Target Framework Communities
+
+**Source**: aimultiple.com (9h ago), lindy.ai (18h ago), letsdatascience.com (4d ago)
+
+By March 2026, six production-grade frameworks (LangGraph v1.0.10, AutoGen, CrewAI, LlamaIndex, Haystack, Mastra) all support MCP natively. All of them are building example libraries and tutorials to show what MCP can do. None of them have a visual output tool.
+
+**EUR 2/mo WTP mechanism**: Framework communities (LangGraph Discord, AutoGen GitHub Discussions, CrewAI Slack) actively share "here's a cool MCP server" posts. A developer reading a CrewAI tutorial that shows `@skissify/mcp-server` generating floor plan sketches will sign up for EUR 2 in the same session — it's a "show me something surprising" moment with zero friction at EUR 2.
+
+**Tactical implication**: Write one code example per framework. 6 frameworks × one code snippet = 6 community posts, 6 SEO pages, 6 discovery surfaces. This is free marketing at launch.
+
+#### Insight 3: Excalidraw Stagnant (v0.18.0 = March 2025) — 12 Months of Frozen Feature Set
+
+**Source**: docker.weifengx.com Excalidraw Docker guide (3 weeks ago)
+
+Excalidraw's most-used competitor position is held by a product that hasn't shipped a major feature in 12 months. "Active maintenance and security attention" means no JSON API, no MCP, no architectural elements are coming. The window for Skissify to establish position in the JSON-native + MCP lane before Excalidraw wakes up is open.
+
+**EUR 2/mo WTP mechanism**: Excalidraw's 12-month feature freeze means frustrated users are actively looking for what's next. Developers who love the hand-drawn aesthetic but find Excalidraw insufficient for programmatic use are the most conversion-ready segment. EUR 2/mo is low enough to try without abandoning Excalidraw — it's additive, not replacement.
+
+#### Insight 4: Value-Based Pricing Requires Visible Value at EUR 2 — "Build vs Buy" Is the Frame
+
+**Source**: mindk.com SaaS Application Development 2026 (3 days ago): "users often don't care about the price — they care about the value at the price you offer."
+
+EUR 2/mo only works if the value is viscerally obvious at the moment of decision. The value calculation for a developer:
+- Time to build hand-drawn SVG renderer from scratch: 20–40 hours
+- Developer hourly rate: €50–150/hr → €1,000–6,000 one-time build cost
+- Skissify at EUR 2/mo: €24/year → **42x–250x cheaper than building it yourself**
+- Plus: ongoing maintenance, schema updates, MCP hosting, element library
+
+The EUR 2/mo pricing isn't "cheap SaaS" — it's "infrastructure pricing." Like paying €2/mo for a CDN API. Nobody debates that. Reframe the pricing page: not "EUR 2/mo subscription" but "EUR 2/mo infrastructure."
+
+---
+
 ## Entry: March 30, 2026 — 23:28 CET | Automated Strategy Run #70
 
 ### Theme: Figma MCP Paywall = Skissify Differentiator + Composio Opens Enterprise Discovery
