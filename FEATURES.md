@@ -90,6 +90,10 @@
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Canvas Minimap + Elements panel z-order fix** — A live minimap thumbnail now appears in the bottom-left corner of the canvas area. It renders a scaled-down view of the full sketch using the same renderer, overlays a blue viewport indicator rectangle showing exactly what portion of the sketch is currently visible, and dims areas outside the viewport. Clicking anywhere on the minimap instantly pans the canvas to center on that point (panToElement callback). Automatically hidden when the sketch has no elements. Zoom level shown as a % label in the corner. Also fixed a longstanding bug in ElementsListPanel: the panel had a comment saying "render in reverse like Figma" but the code incorrectly used `idx = visualIdx` (forward order), so top-layer elements appeared at the *bottom* of the list. Fixed to `idx = elements.length - 1 - visualIdx` so the highest z-order element is at the top, matching Figma/Sketch layer panel conventions.
+
+
+
 - [x] **Dim label + offset editing, text/rect content editing in sidebar** — When a `dim` element is selected, the sidebar Selection panel now shows: (1) an editable "Dimension label" text input to change the measurement label (e.g. "10.6 m" → "5.0 m") without touching raw JSON, and (2) an "Offset" field with a numeric input plus 5 quick-preset buttons (−30/−20/0/+20/+30) that shift the dim line perpendicularly from its baseline — essential for pulling dimension lines cleanly outside walls in floor plans. When a `text` element is selected, a "Text content" input appears so the label text can be changed directly. When a `rect` element is selected, an optional "Label" field is editable. All edits go through `updateElement()` → full undo/redo (Ctrl+Z). The offset feature resolves the longstanding "10.6 m dim line renders inside the house" issue by letting users push dimension lines to the correct side without editing raw JSON.
 
 
