@@ -398,3 +398,107 @@ export function drawSmoothCurve(
   }
   cpath(ctx, pts);
 }
+
+/**
+ * Generate a single seamless wobble stroke through an array of waypoints.
+ *
+ * Unlike calling wobble() segment-by-segment, this function:
+ * 1. Computes Catmull-Rom tangent directions at each waypoint
+ * 2. Applies gentle perpendicular wobble along each segment, but FORCES
+ *    both ends of each segment to the exact waypoint coordinates, so there
+ *    are no gaps or overlaps at joints.
+ * 3. Returns a single flat Pt[] array suitable for a single doStroke() call.
+ *
+ * Ideal for freehand path elements drawn by the user.
+ */
+export function wobblePath(
+  waypoints: { x: number; y: number }[],
+  amp: number,
+  waves: number,
+  rng: Rng,
+  humanness: number = 0
+): Pt[] {
+  if (waypoints.length < 2) {
+    return waypoints.map((p) => [p.x, p.y] as Pt);
+  }
+
+  const allPts: Pt[] = [];
+
+  for (let seg = 0; seg < waypoints.length - 1; seg++) {
+    const p0 = waypoints[Math.max(0, seg - 1)];
+    const p1 = waypoints[seg];
+    const p2 = waypoints[seg + 1];
+    const p3 = waypoints[Math.min(waypoints.length - 1, seg + 2)];
+
+    const dx = p2.x - p1.x;
+    const dy = p2.y - p1.y;
+    const dist = Math.hypot(dx, dy);
+    if (dist < 0.5) {
+      if (seg === 0) allPts.push([p1.x, p1.y]);
+      continue;
+    }
+
+    // Normal vector (perpendicular to this segment)
+    const nx = -dy / dist;
+    const ny = dx / dist;
+
+    // Catmull-Rom tangents for smooth curve blending
+    const t0x = (p2.x - p0.x) * 0.5;
+    const t0y = (p2.y - p0.y) * 0.5;
+    const t1x = (p3.x - p1.x) * 0.5;
+    const t1y = (p3.y - p1.y) * 0.5;
+
+    // Number of sub-points proportional to segment length
+    const segs = Math.max(4, Math.floor(dist / 4));
+    const segSeed = (rng() * 1e6) | 0;
+    const segRng = mkRng(segSeed);
+
+    // Amplitude envelope that tapers to 0 at both ends (so joints are seamless)
+    const env = (t: number) =>
+      Math.sin(t * Math.PI) *
+      Math.min(1, Math.pow(t / 0.1, 0.5)) *
+      Math.min(1, Math.pow((1 - t) / 0.1, 0.5));
+
+    for (let i = 0; i <= segs; i++) {
+      const t = i / segs;
+      const t2 = t * t;
+      const t3 = t2 * t;
+
+      // Hermite spline interpolation
+      const h00 = 2 * t3 - 3 * t2 + 1;
+      const h10 = t3 - 2 * t2 + t;
+      const h01 = -2 * t3 + 3 * t2;
+      const h11 = t3 - t2;
+
+      const bx = h00 * p1.x + h10 * t0x + h01 * p2.x + h11 * t1x;
+      const by = h00 * p1.y + h10 * t0y + h01 * p2.y + h11 * t1y;
+
+      // Perpendicular wobble (tapered to zero at joints)
+      let w = 0;
+      const numHarmonics = 2 + Math.floor(segRng() * 2);
+      for (let h = 0; h < numHarmonics; h++) {
+        const hAmp = (amp * (0.3 + segRng() * 0.7)) / (h + 1);
+        const hFreq = waves * (0.5 + segRng() * 1.5);
+        const hPhase = segRng() * Math.PI * 2;
+        w += Math.sin(t * Math.PI * 2 * hFreq + hPhase) * hAmp * env(t);
+      }
+
+      // Humanness: small random jitter
+      const jx = humanness > 0 ? (segRng() - 0.5) * humanness * 1.5 * env(t) : 0;
+      const jy = humanness > 0 ? (segRng() - 0.5) * humanness * 1.5 * env(t) : 0;
+
+      const px = bx + nx * w + jx;
+      const py = by + ny * w + jy;
+
+      if (seg === 0 || i > 0) {
+        allPts.push([px, py]);
+      }
+    }
+  }
+
+  // Ensure last point is exact
+  const last = waypoints[waypoints.length - 1];
+  allPts.push([last.x, last.y]);
+
+  return allPts;
+}

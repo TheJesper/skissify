@@ -18,8 +18,10 @@ import {
   wobbleLine,
   wobbleCircle,
   wobbleArc,
+  wobblePath,
   WobbleOptions,
   Point,
+  mkRng,
 } from "./wobble";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -463,13 +465,12 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     case "path": {
       const ep = E(el);
       if (ep.points && ep.points.length >= 2) {
-        // Render each segment with wobble
-        for (let i = 0; i < ep.points.length - 1; i++) {
-          const p1 = ep.points[i];
-          const p2 = ep.points[i + 1];
-          const segPts = wobbleLine(p1.x, p1.y, p2.x, p2.y, { ...opts, seed: opts.seed! + i });
-          parts.push(`<path d="${pointsToPath(segPts)}" ${sa}/>`);
-        }
+        // Render as single seamless stroke using wobblePath for smooth joints
+        const pathRng = mkRng(opts.seed ?? 42);
+        const rawPts = wobblePath(ep.points, opts.amplitude, opts.waves, pathRng, opts.humanness ?? 0);
+        // Convert Pt[] (tuples) to Point[] (objects) for pointsToPath
+        const pts: Point[] = rawPts.map(([x, y]) => ({ x, y }));
+        parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
       }
       break;
     }

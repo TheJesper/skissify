@@ -760,8 +760,17 @@ export default function Canvas({
       ctx.globalAlpha = 0.6;
       ctx.beginPath();
       ctx.moveTo(drawPreview[0].x, drawPreview[0].y);
-      for (let i = 1; i < drawPreview.length; i++) {
-        ctx.lineTo(drawPreview[i].x, drawPreview[i].y);
+      if (drawPreview.length === 2) {
+        ctx.lineTo(drawPreview[1].x, drawPreview[1].y);
+      } else {
+        // Smooth Catmull-Rom preview using quadratic bezier through midpoints
+        for (let i = 1; i < drawPreview.length - 1; i++) {
+          const mx = (drawPreview[i].x + drawPreview[i + 1].x) / 2;
+          const my = (drawPreview[i].y + drawPreview[i + 1].y) / 2;
+          ctx.quadraticCurveTo(drawPreview[i].x, drawPreview[i].y, mx, my);
+        }
+        const last = drawPreview[drawPreview.length - 1];
+        ctx.lineTo(last.x, last.y);
       }
       ctx.stroke();
       ctx.restore();

@@ -8,6 +8,7 @@ import {
   FONT_OPTIONS,
   SkissifyFont,
   PaperType,
+  ToolType,
 } from "./types";
 
 /** Resolve a SkissifyFont key to a CSS font-family string */
@@ -18,6 +19,7 @@ function resolveFontCss(font: SkissifyFont | undefined, fallback: string): strin
 }
 import {
   wobble,
+  wobblePath,
   WobbleOptions,
   Pt,
   mkRng,
@@ -905,12 +907,10 @@ function renderElement(
 
     case "path": {
       if (el.points && el.points.length >= 2) {
-        // Render each segment with wobble for a natural hand-drawn look
-        for (let i = 0; i < el.points.length - 1; i++) {
-          const p1 = el.points[i];
-          const p2 = el.points[i + 1];
-          HL(ctx, p1.x, p1.y, p2.x, p2.y, { ...opts, seed: opts.seed! + i }, color, tool, paper, rng, h);
-        }
+        // Render as a single seamless stroke using wobblePath for smooth joints
+        const pathRng = mkRng(opts.seed ?? 42);
+        const pts = wobblePath(el.points, opts.amplitude, opts.waves, pathRng, opts.humanness ?? 0);
+        doStroke(ctx, pts, color, tool as ToolType, paper, rng, h);
       }
       break;
     }

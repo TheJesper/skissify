@@ -148,6 +148,26 @@ const ELEMENT_PREVIEWS: Record<string, { label: string; sketch: SketchData }> = 
       elements: [{ type: "column", cx: THUMB_SIZE / 2, cy: THUMB_SIZE / 2, size: 16, color: "#444" }],
     },
   },
+  path: {
+    label: "Freehand",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#333",
+      amplitude: 0.6, waves: 0.7, humanness: 0.15,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 56,
+      elements: [{
+        type: "path",
+        color: "#333",
+        points: [
+          { x: 6, y: THUMB_SIZE - 10 },
+          { x: 14, y: THUMB_SIZE / 2 + 4 },
+          { x: 22, y: THUMB_SIZE / 2 - 6 },
+          { x: 30, y: THUMB_SIZE / 2 + 2 },
+          { x: 38, y: THUMB_SIZE / 2 - 8 },
+          { x: THUMB_SIZE - 6, y: 10 },
+        ],
+      }],
+    },
+  },
 };
 
 // ── Category groupings ────────────────────────────────────────────
@@ -155,7 +175,7 @@ const ELEMENT_PREVIEWS: Record<string, { label: string; sketch: SketchData }> = 
 const ELEMENT_CATEGORIES = [
   {
     label: "Lines",
-    items: ["line", "dashed", "arrow"],
+    items: ["line", "dashed", "arrow", "path"],
   },
   {
     label: "Shapes",
