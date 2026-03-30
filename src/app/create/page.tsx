@@ -1,15 +1,68 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const examplePrompts = [
   "A 3-bedroom apartment with kitchen and living room",
-  "A simple flowchart: Start -> Process -> Decision -> End",
+  "A simple flowchart: Start → Process → Decision → End",
   "Office layout with 4 desks, meeting room, and kitchen",
-  "System architecture: Frontend -> API -> Database with a cache layer",
+  "System architecture: Frontend → API → Database with a cache layer",
   "Site plan with parking, building footprint, and landscaping",
 ];
+
+/** Maps prompts to the best preset + paper type */
+const PRESET_RULES: { keywords: string[]; preset: string }[] = [
+  {
+    keywords: ["blueprint", "technical", "permit", "permit", "cad", "dwg", "engineering"],
+    preset: "blueprint",
+  },
+  {
+    keywords: ["apartment", "floor plan", "flat", "bedroom", "bathroom", "kitchen", "room", "house", "hallway", "sovrum", "vardagsrum", "badrum", "kök"],
+    preset: "plan drawing",
+  },
+  {
+    keywords: ["villa", "larger", "big house", "detached", "two floor", "two-storey"],
+    preset: "villa",
+  },
+  {
+    keywords: ["office", "desk", "meeting room", "reception", "workspace", "coworking", "open plan"],
+    preset: "office layout",
+  },
+  {
+    keywords: ["flowchart", "flow chart", "decision", "process", "diagram", "workflow", "bpmn", "start", "end", "if else", "branch"],
+    preset: "flowchart",
+  },
+  {
+    keywords: ["architecture", "facade", "elevation", "exterior", "building front", "storeys", "floors"],
+    preset: "architecture",
+  },
+  {
+    keywords: ["garden", "landscape", "outdoor", "trees", "plants", "patio", "path", "beds", "lawn", "site plan", "parking"],
+    preset: "garden plan",
+  },
+  {
+    keywords: ["napkin", "sketch", "rough", "quick", "idea", "concept", "system", "api", "backend", "frontend", "server", "database", "network", "architecture diagram", "tech", "component"],
+    preset: "napkin sketch",
+  },
+];
+
+function matchPreset(prompt: string): string {
+  const lower = prompt.toLowerCase();
+  let bestPreset = "napkin sketch";
+  let bestScore = 0;
+
+  for (const rule of PRESET_RULES) {
+    const score = rule.keywords.filter((kw) => lower.includes(kw)).length;
+    if (score > bestScore) {
+      bestScore = score;
+      bestPreset = rule.preset;
+    }
+  }
+
+  return bestPreset;
+}
 
 const exampleJson = `{
   "title": "My Sketch",
@@ -53,18 +106,43 @@ You'll get back a { "slug": "..." } -- viewable at https://skissify.com/s/{slug}
 
 export default function CreatePage() {
   const [prompt, setPrompt] = useState("");
-  const [showComingSoon, setShowComingSoon] = useState(false);
   const [copied, setCopied] = useState<string | null>(null);
+  const [matchedPreset, setMatchedPreset] = useState<string | null>(null);
+  const [isRedirecting, setIsRedirecting] = useState(false);
+  const router = useRouter();
 
-  const handleGenerate = () => {
-    setShowComingSoon(true);
-    setTimeout(() => setShowComingSoon(false), 5000);
+  const handleGenerate = useCallback(() => {
+    if (!prompt.trim()) return;
+    const preset = matchPreset(prompt.trim());
+    setMatchedPreset(preset);
+    setIsRedirecting(true);
+    // Brief delay so user sees the match confirmation before redirect
+    setTimeout(() => {
+      router.push(`/?preset=${encodeURIComponent(preset)}`);
+    }, 800);
+  }, [prompt, router]);
+
+  const handlePromptChange = (value: string) => {
+    setPrompt(value);
+    setMatchedPreset(null);
+    setIsRedirecting(false);
   };
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
     setCopied(label);
     setTimeout(() => setCopied(null), 2000);
+  };
+
+  const presetEmoji: Record<string, string> = {
+    "plan drawing": "🏠",
+    "villa": "🏡",
+    "blueprint": "📐",
+    "office layout": "🏢",
+    "flowchart": "📊",
+    "architecture": "🏗️",
+    "garden plan": "🌿",
+    "napkin sketch": "✏️",
   };
 
   return (
@@ -108,14 +186,14 @@ export default function CreatePage() {
         </div>
       </nav>
 
-      {/* Hero section with sketch paper background */}
+      {/* Hero section */}
       <section className="px-6 pt-16 pb-12">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-[#073642] mb-4">
             Create with <span className="text-[#268bd2]">AI</span>
           </h1>
           <p className="text-lg text-[#657b83] mb-10">
-            Describe what you want to sketch and let AI draw it for you
+            Describe what you want to sketch and jump straight into the editor with the right template
           </p>
         </div>
       </section>
@@ -140,36 +218,64 @@ export default function CreatePage() {
 
             <div className="relative">
               <label className="block text-sm font-medium text-amber-900 mb-2">
-                Describe what you want to sketch...
+                What do you want to sketch?
               </label>
               <textarea
                 value={prompt}
-                onChange={(e) => setPrompt(e.target.value)}
+                onChange={(e) => handlePromptChange(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
+                    handleGenerate();
+                  }
+                }}
                 placeholder="A 3-bedroom apartment with open kitchen, living room, and balcony..."
                 rows={4}
                 className="w-full px-4 py-3 rounded-lg border-2 border-amber-800/20 bg-white/70 text-amber-950 placeholder-amber-700/40 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
                 style={{ fontFamily: "'Caveat', cursive", fontSize: "18px" }}
               />
-              <button
-                onClick={handleGenerate}
-                className="mt-4 w-full px-6 py-3 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white font-semibold rounded-lg transition-colors text-lg"
-              >
-                Generate Sketch
-              </button>
 
-              {showComingSoon && (
-                <div className="mt-4 p-4 bg-amber-100 border border-amber-300 rounded-lg text-amber-800 text-sm">
-                  AI generation coming soon -- for now, use the{" "}
-                  <Link href="/editor" className="text-[#268bd2] underline font-medium">
-                    JSON editor
-                  </Link>{" "}
-                  or the{" "}
-                  <Link href="/for-agents" className="text-[#268bd2] underline font-medium">
-                    MCP tool
-                  </Link>{" "}
-                  to create sketches programmatically.
+              {/* Preset match preview */}
+              {matchedPreset && (
+                <div
+                  className="mt-3 px-4 py-3 rounded-lg flex items-center gap-3 text-sm"
+                  style={{ backgroundColor: "#e8f4e8", border: "1px solid #93c49a" }}
+                >
+                  <span className="text-xl">{presetEmoji[matchedPreset] ?? "✏️"}</span>
+                  <div>
+                    <span className="font-medium text-[#2a6232]">
+                      {isRedirecting ? "Opening" : "Best match"}:
+                    </span>{" "}
+                    <span className="text-[#1a4a22] font-semibold capitalize">{matchedPreset}</span>
+                    {isRedirecting && (
+                      <span className="ml-2 text-[#2a6232] animate-pulse">loading editor…</span>
+                    )}
+                  </div>
                 </div>
               )}
+
+              <button
+                onClick={handleGenerate}
+                disabled={!prompt.trim() || isRedirecting}
+                className="mt-4 w-full px-6 py-3 bg-[#268bd2] hover:bg-[#268bd2]/80 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold rounded-lg transition-colors text-lg flex items-center justify-center gap-2"
+              >
+                {isRedirecting ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                    Opening editor…
+                  </>
+                ) : (
+                  <>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+                      <path d="m15 5 4 4" />
+                    </svg>
+                    Create Sketch
+                  </>
+                )}
+              </button>
+              <p className="mt-2 text-center text-xs text-amber-700/60">
+                ⌘ Enter to create — opens the editor with the best-matching template
+              </p>
             </div>
           </div>
 
@@ -182,12 +288,41 @@ export default function CreatePage() {
               {examplePrompts.map((ep) => (
                 <button
                   key={ep}
-                  onClick={() => setPrompt(ep)}
+                  onClick={() => handlePromptChange(ep)}
                   className="px-3 py-1.5 bg-[#eee8d5] border border-[#93a1a1]/20 rounded-full text-sm text-[#657b83] hover:text-[#073642] hover:border-[#93a1a1]/40 transition-colors"
                 >
                   {ep}
                 </button>
               ))}
+            </div>
+          </div>
+
+          {/* Or browse gallery */}
+          <div className="mt-10 text-center">
+            <span className="text-sm text-[#93a1a1]">or</span>
+            <div className="mt-3 flex items-center justify-center gap-4 flex-wrap">
+              <Link
+                href="/gallery"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#eee8d5] hover:bg-[#ddd8c5] border border-[#93a1a1]/30 rounded-lg text-sm font-medium text-[#586e75] transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                </svg>
+                Browse gallery
+              </Link>
+              <Link
+                href="/editor"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#eee8d5] hover:bg-[#ddd8c5] border border-[#93a1a1]/30 rounded-lg text-sm font-medium text-[#586e75] transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+                  <path d="m15 5 4 4" />
+                </svg>
+                Open blank editor
+              </Link>
             </div>
           </div>
         </div>
@@ -312,7 +447,7 @@ export default function CreatePage() {
       {/* Footer */}
       <footer className="border-t border-[#93a1a1]/20 px-6 py-8">
         <div className="max-w-5xl mx-auto flex items-center justify-between text-sm text-[#839496]">
-          <span>Skissify -- Hand-drawn sketches from JSON</span>
+          <span>Skissify — Hand-drawn sketches from JSON</span>
           <div className="flex items-center gap-4">
             <Link href="/editor" className="hover:text-[#073642] transition-colors">
               Editor
