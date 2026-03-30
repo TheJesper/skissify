@@ -22,7 +22,12 @@ export type ElementType =
   | "dining-table"
   | "toilet"
   | "bathtub"
-  | "sink";
+  | "sink"
+  | "armchair"
+  | "desk"
+  | "bookshelf"
+  | "stove"
+  | "shower";
 
 export interface BaseElement {
   type: ElementType;
@@ -275,6 +280,50 @@ export interface SinkElement extends BaseElement {
   h: number;
 }
 
+export interface ArmchairElement extends BaseElement {
+  type: "armchair";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface DeskElement extends BaseElement {
+  type: "desk";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface BookshelfElement extends BaseElement {
+  type: "bookshelf";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  /** Number of shelf dividers. Default 3. */
+  shelves?: number;
+}
+
+export interface StoveElement extends BaseElement {
+  type: "stove";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  /** Number of burners (2 or 4). Default 4. */
+  burners?: 2 | 4;
+}
+
+export interface ShowerElement extends BaseElement {
+  type: "shower";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
 export type SketchElement =
   | LineElement
   | RectElement
@@ -296,7 +345,12 @@ export type SketchElement =
   | DiningTableElement
   | ToiletElement
   | BathtubElement
-  | SinkElement;
+  | SinkElement
+  | ArmchairElement
+  | DeskElement
+  | BookshelfElement
+  | StoveElement
+  | ShowerElement;
 
 /**
  * Available font families for text rendering.

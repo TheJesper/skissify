@@ -1226,6 +1226,172 @@ function renderElement(
       HL(ctx, scx, ftY, scx, ftY + 8, { ...opts, seed: opts.seed! + 11, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
       break;
     }
+
+    case "armchair": {
+      const { x, y, w, h: ah } = el;
+      const armW = Math.min(w * 0.14, 14);
+      const backH = ah * 0.28;
+
+      // Outer frame
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + ah, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + ah, x, y + ah, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + ah, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Back cushion line
+      HL(ctx, x, y + backH, x + w, y + backH, { ...opts, seed: opts.seed! + 5, amplitude: opts.amplitude * 0.4 }, color, tool, paper, rng, h);
+
+      // Armrest dividers (slightly thicker zone indicators)
+      HL(ctx, x + armW, y, x + armW, y + ah, { ...opts, seed: opts.seed! + 6, amplitude: opts.amplitude * 0.35 }, color, tool, paper, rng, h);
+      HL(ctx, x + w - armW, y, x + w - armW, y + ah, { ...opts, seed: opts.seed! + 7, amplitude: opts.amplitude * 0.35 }, color, tool, paper, rng, h);
+
+      // Seat cushion — single rounded blob in center seat area
+      const scx2 = x + w / 2;
+      const scy2 = y + backH + (ah - backH) * 0.45;
+      const srx2 = (w - armW * 2) * 0.38;
+      const sry2 = (ah - backH) * 0.28;
+      const acpts: Pt[] = [];
+      const acn = 16;
+      for (let i = 0; i <= acn; i++) {
+        const a = (i / acn) * Math.PI * 2;
+        acpts.push([scx2 + Math.cos(a) * srx2 + (rng() - 0.5) * opts.amplitude * 0.35,
+                    scy2 + Math.sin(a) * sry2 + (rng() - 0.5) * opts.amplitude * 0.35]);
+      }
+      doStroke(ctx, acpts, color, tool as any, paper, rng, h);
+      break;
+    }
+
+    case "desk": {
+      const { x, y, w, h: deskH } = el;
+      // Desktop surface (outer rectangle)
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + deskH, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + deskH, x, y + deskH, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + deskH, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Pedestal/drawer unit (right side, ~30% width)
+      const pedW = w * 0.3;
+      const pedX = x + w - pedW;
+      HL(ctx, pedX, y, pedX, y + deskH, { ...opts, seed: opts.seed! + 5, amplitude: opts.amplitude * 0.4 }, color, tool, paper, rng, h);
+
+      // Two drawer lines in pedestal
+      const d1Y = y + deskH * 0.35;
+      const d2Y = y + deskH * 0.7;
+      HL(ctx, pedX, d1Y, x + w, d1Y, { ...opts, seed: opts.seed! + 6, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      HL(ctx, pedX, d2Y, x + w, d2Y, { ...opts, seed: opts.seed! + 7, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      break;
+    }
+
+    case "bookshelf": {
+      const { x, y, w, h: bsh } = el;
+      const shelves = el.shelves ?? 3;
+
+      // Outer frame
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + bsh, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + bsh, x, y + bsh, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + bsh, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Shelf dividers (horizontal lines)
+      for (let i = 1; i <= shelves; i++) {
+        const shY = y + (bsh / (shelves + 1)) * i;
+        HL(ctx, x, shY, x + w, shY, { ...opts, seed: opts.seed! + 10 + i, amplitude: opts.amplitude * 0.35 }, color, tool, paper, rng, h);
+      }
+      break;
+    }
+
+    case "stove": {
+      const { x, y, w, h: stoveH } = el;
+      const burners = el.burners ?? 4;
+
+      // Outer frame
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + stoveH, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + stoveH, x, y + stoveH, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + stoveH, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Burner circles
+      if (burners === 2) {
+        const positions = [{ fx: 0.3, fy: 0.5 }, { fx: 0.7, fy: 0.5 }];
+        for (let bi = 0; bi < positions.length; bi++) {
+          const bcx = x + w * positions[bi].fx;
+          const bcy = y + stoveH * positions[bi].fy;
+          const br = Math.min(w, stoveH) * 0.18;
+          const bpts: Pt[] = [];
+          for (let i = 0; i <= 18; i++) {
+            const a = (i / 18) * Math.PI * 2;
+            bpts.push([bcx + Math.cos(a) * br + (rng() - 0.5) * opts.amplitude * 0.3,
+                       bcy + Math.sin(a) * br + (rng() - 0.5) * opts.amplitude * 0.3]);
+          }
+          doStroke(ctx, bpts, color, tool as any, paper, rng, h);
+          // Inner ring
+          const bpts2: Pt[] = [];
+          for (let i = 0; i <= 14; i++) {
+            const a = (i / 14) * Math.PI * 2;
+            bpts2.push([bcx + Math.cos(a) * br * 0.55 + (rng() - 0.5) * opts.amplitude * 0.25,
+                        bcy + Math.sin(a) * br * 0.55 + (rng() - 0.5) * opts.amplitude * 0.25]);
+          }
+          doStroke(ctx, bpts2, color, tool as any, paper, rng, h);
+        }
+      } else {
+        // 4 burners in 2×2 grid
+        const positions = [
+          { fx: 0.28, fy: 0.28 }, { fx: 0.72, fy: 0.28 },
+          { fx: 0.28, fy: 0.72 }, { fx: 0.72, fy: 0.72 },
+        ];
+        for (let bi = 0; bi < 4; bi++) {
+          const bcx = x + w * positions[bi].fx;
+          const bcy = y + stoveH * positions[bi].fy;
+          const br = Math.min(w, stoveH) * 0.15;
+          const bpts: Pt[] = [];
+          for (let i = 0; i <= 16; i++) {
+            const a = (i / 16) * Math.PI * 2;
+            bpts.push([bcx + Math.cos(a) * br + (rng() - 0.5) * opts.amplitude * 0.3,
+                       bcy + Math.sin(a) * br + (rng() - 0.5) * opts.amplitude * 0.3]);
+          }
+          doStroke(ctx, bpts, color, tool as any, paper, rng, h);
+          // Inner ring
+          const bpts2: Pt[] = [];
+          for (let i = 0; i <= 12; i++) {
+            const a = (i / 12) * Math.PI * 2;
+            bpts2.push([bcx + Math.cos(a) * br * 0.5 + (rng() - 0.5) * opts.amplitude * 0.25,
+                        bcy + Math.sin(a) * br * 0.5 + (rng() - 0.5) * opts.amplitude * 0.25]);
+          }
+          doStroke(ctx, bpts2, color, tool as any, paper, rng, h);
+        }
+      }
+      break;
+    }
+
+    case "shower": {
+      const { x, y, w, h: shH } = el;
+      // Outer frame
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + shH, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + shH, x, y + shH, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + shH, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Quarter-circle shower tray arc (corner shower indicator)
+      const arcCX = x;
+      const arcCY = y;
+      const arcR = Math.min(w, shH) * 0.85;
+      const arcPts: Pt[] = [];
+      const arcN = 20;
+      for (let i = 0; i <= arcN; i++) {
+        const a = (i / arcN) * (Math.PI / 2); // 0 to 90°
+        arcPts.push([arcCX + Math.cos(a) * arcR + (rng() - 0.5) * opts.amplitude * 0.4,
+                     arcCY + Math.sin(a) * arcR + (rng() - 0.5) * opts.amplitude * 0.4]);
+      }
+      doStroke(ctx, arcPts, color, tool as any, paper, rng, h);
+
+      // Showerhead indicator (small cross at top-right area)
+      const hX = x + w * 0.75;
+      const hY = y + shH * 0.2;
+      const hR = Math.min(w, shH) * 0.08;
+      HL(ctx, hX - hR, hY, hX + hR, hY, { ...opts, seed: opts.seed! + 10, amplitude: opts.amplitude * 0.25 }, color, tool, paper, rng, h);
+      HL(ctx, hX, hY - hR, hX, hY + hR, { ...opts, seed: opts.seed! + 11, amplitude: opts.amplitude * 0.25 }, color, tool, paper, rng, h);
+      break;
+    }
   }
 
   ctx.restore();

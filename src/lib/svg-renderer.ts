@@ -529,6 +529,176 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       }
       break;
     }
+
+    // ── Furniture & Fixtures (SVG) ──────────────────────────────────────
+
+    case "bed": {
+      const { x, y, w, h: bh } = E(el);
+      const pillows = el.pillows ?? 2;
+      const headH = bh * 0.22;
+      // Outer frame
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+bh],[x+w,y+bh,x,y+bh],[x,y+bh,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      parts.push(`<path d="${pointsToPath(wobbleLine(x,y+headH,x+w,y+headH,{...opts,seed:opts.seed!+5,amplitude:opts.amplitude*0.4}))}" ${sa}/>`);
+      const pilR = Math.min(w * 0.16, headH * 0.32);
+      const pilY = y + headH * 0.5;
+      if (pillows === 1) {
+        parts.push(`<path d="${pointsToPath(wobbleCircle(x+w/2, pilY, pilR*1.3, {...opts,seed:opts.seed!+6}), true)}" ${sa}/>`);
+      } else {
+        [0.27, 0.73].forEach((fx, pi) => {
+          parts.push(`<path d="${pointsToPath(wobbleCircle(x+w*fx, pilY, pilR*1.1, {...opts,seed:opts.seed!+6+pi}), true)}" ${sa}/>`);
+        });
+      }
+      const foldY = y + headH + bh * 0.15;
+      parts.push(`<path d="${pointsToPath(wobbleLine(x+w*0.05,foldY,x+w*0.95,foldY,{...opts,seed:opts.seed!+10,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      break;
+    }
+
+    case "sofa": {
+      const { x, y, w, h: sh } = E(el);
+      const armW = Math.min(w * 0.12, 12);
+      const backH = sh * 0.3;
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+sh],[x+w,y+sh,x,y+sh],[x,y+sh,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      parts.push(`<path d="${pointsToPath(wobbleLine(x,y+backH,x+w,y+backH,{...opts,seed:opts.seed!+5,amplitude:opts.amplitude*0.4}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(x+armW,y,x+armW,y+sh,{...opts,seed:opts.seed!+6,amplitude:opts.amplitude*0.35}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(x+w-armW,y,x+w-armW,y+sh,{...opts,seed:opts.seed!+7,amplitude:opts.amplitude*0.35}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(x+w/2,y+backH,x+w/2,y+sh,{...opts,seed:opts.seed!+8,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      break;
+    }
+
+    case "dining-table": {
+      const { x, y, w, h: dh } = E(el);
+      const seats = el.seats ?? 2;
+      const chairW = Math.min(w / (seats + 0.5), 28);
+      const chairH = Math.min(dh * 0.4, 20);
+      const chairGap = 4;
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+dh],[x+w,y+dh,x,y+dh],[x,y+dh,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      const totalW = seats * (chairW + 4) - 4;
+      const startX = x + (w - totalW) / 2;
+      for (let s = 0; s < seats; s++) {
+        const cx2 = startX + s * (chairW + 4) + chairW / 2;
+        parts.push(`<path d="${pointsToPath(wobbleCircle(cx2, y - chairGap - chairH/2, (chairW+chairH)/4, {...opts,seed:opts.seed!+20+s}), true)}" ${sa}/>`);
+        parts.push(`<path d="${pointsToPath(wobbleCircle(cx2, y + dh + chairGap + chairH/2, (chairW+chairH)/4, {...opts,seed:opts.seed!+30+s}), true)}" ${sa}/>`);
+      }
+      const ecW = chairH, ecH = Math.min(chairW * 0.7, dh * 0.45);
+      const avgR = (ecW + ecH) / 4;
+      parts.push(`<path d="${pointsToPath(wobbleCircle(x - chairGap - ecW/2, y+dh/2, avgR, {...opts,seed:opts.seed!+40}), true)}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleCircle(x + w + chairGap + ecW/2, y+dh/2, avgR, {...opts,seed:opts.seed!+41}), true)}" ${sa}/>`);
+      break;
+    }
+
+    case "toilet": {
+      const { x, y, w, h: th } = E(el);
+      const tankH = th * 0.3;
+      const tankW = w * 0.85;
+      const tankX = x + (w - tankW) / 2;
+      const tank = [[tankX,y,tankX+tankW,y],[tankX+tankW,y,tankX+tankW,y+tankH],[tankX+tankW,y+tankH,tankX,y+tankH],[tankX,y+tankH,tankX,y]] as [number,number,number,number][];
+      tank.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      const bowlCX = x + w/2, bowlCY = y + tankH + (th-tankH)*0.5;
+      const bowlRX = w * 0.46, bowlRY = (th-tankH) * 0.44;
+      const avgBowl = (bowlRX + bowlRY) / 2;
+      parts.push(`<path d="${pointsToPath(wobbleCircle(bowlCX, bowlCY, avgBowl, {...opts,seed:opts.seed!+5}), true)}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleCircle(bowlCX, bowlCY, avgBowl*0.72, {...opts,seed:opts.seed!+6}), true)}" ${sa}/>`);
+      break;
+    }
+
+    case "bathtub": {
+      const { x, y, w, h: bth } = E(el);
+      const wallT = Math.min(w * 0.06, 6);
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+bth],[x+w,y+bth,x,y+bth],[x,y+bth,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      const icx = x + w/2, icy = y + bth*0.52;
+      const irx = w/2 - wallT - 2, iry = bth*0.5 - wallT - 2;
+      parts.push(`<path d="${pointsToPath(wobbleCircle(icx, icy, (irx+iry)/2, {...opts,seed:opts.seed!+5}), true)}" ${sa}/>`);
+      const ftapY = y + wallT + 4, ftapX = x + w/2;
+      parts.push(`<path d="${pointsToPath(wobbleLine(ftapX-6,ftapY,ftapX+6,ftapY,{...opts,seed:opts.seed!+10,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(ftapX,ftapY-3,ftapX,ftapY+3,{...opts,seed:opts.seed!+11,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      break;
+    }
+
+    case "sink": {
+      const { x, y, w, h: skh } = E(el);
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+skh],[x+w,y+skh,x,y+skh],[x,y+skh,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      const scx = x+w/2, scy = y+skh*0.56;
+      const srx = w*0.36, sry = skh*0.33;
+      parts.push(`<path d="${pointsToPath(wobbleCircle(scx, scy, (srx+sry)/2, {...opts,seed:opts.seed!+5}), true)}" ${sa}/>`);
+      parts.push(`<circle cx="${scx}" cy="${scy}" r="2" fill="${style.stroke}" opacity="0.7"/>`);
+      const ftY = y+skh*0.15;
+      parts.push(`<path d="${pointsToPath(wobbleLine(scx-7,ftY,scx+7,ftY,{...opts,seed:opts.seed!+10,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(scx,ftY,scx,ftY+8,{...opts,seed:opts.seed!+11,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      break;
+    }
+
+    case "armchair": {
+      const { x, y, w, h: ah } = E(el);
+      const armW = Math.min(w * 0.14, 14);
+      const backH = ah * 0.28;
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+ah],[x+w,y+ah,x,y+ah],[x,y+ah,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      parts.push(`<path d="${pointsToPath(wobbleLine(x,y+backH,x+w,y+backH,{...opts,seed:opts.seed!+5,amplitude:opts.amplitude*0.4}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(x+armW,y,x+armW,y+ah,{...opts,seed:opts.seed!+6,amplitude:opts.amplitude*0.35}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(x+w-armW,y,x+w-armW,y+ah,{...opts,seed:opts.seed!+7,amplitude:opts.amplitude*0.35}))}" ${sa}/>`);
+      const scx2 = x+w/2, scy2 = y+backH+(ah-backH)*0.45;
+      const srx2 = (w-armW*2)*0.38, sry2 = (ah-backH)*0.28;
+      parts.push(`<path d="${pointsToPath(wobbleCircle(scx2, scy2, (srx2+sry2)/2, {...opts,seed:opts.seed!+8}), true)}" ${sa}/>`);
+      break;
+    }
+
+    case "desk": {
+      const { x, y, w, h: deskH } = E(el);
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+deskH],[x+w,y+deskH,x,y+deskH],[x,y+deskH,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      const pedW = w*0.3, pedX = x+w-pedW;
+      parts.push(`<path d="${pointsToPath(wobbleLine(pedX,y,pedX,y+deskH,{...opts,seed:opts.seed!+5,amplitude:opts.amplitude*0.4}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(pedX,y+deskH*0.35,x+w,y+deskH*0.35,{...opts,seed:opts.seed!+6,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(pedX,y+deskH*0.7,x+w,y+deskH*0.7,{...opts,seed:opts.seed!+7,amplitude:opts.amplitude*0.3}))}" ${sa}/>`);
+      break;
+    }
+
+    case "bookshelf": {
+      const { x, y, w, h: bsh } = E(el);
+      const shelves = el.shelves ?? 3;
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+bsh],[x+w,y+bsh,x,y+bsh],[x,y+bsh,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      for (let i = 1; i <= shelves; i++) {
+        const shY = y + (bsh / (shelves + 1)) * i;
+        parts.push(`<path d="${pointsToPath(wobbleLine(x,shY,x+w,shY,{...opts,seed:opts.seed!+10+i,amplitude:opts.amplitude*0.35}))}" ${sa}/>`);
+      }
+      break;
+    }
+
+    case "stove": {
+      const { x, y, w, h: stoveH } = E(el);
+      const burners = el.burners ?? 4;
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+stoveH],[x+w,y+stoveH,x,y+stoveH],[x,y+stoveH,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      const positions = burners === 2
+        ? [{ fx: 0.3, fy: 0.5 }, { fx: 0.7, fy: 0.5 }]
+        : [{ fx: 0.28, fy: 0.28 }, { fx: 0.72, fy: 0.28 }, { fx: 0.28, fy: 0.72 }, { fx: 0.72, fy: 0.72 }];
+      const br = Math.min(w, stoveH) * (burners === 2 ? 0.18 : 0.15);
+      positions.forEach(({ fx, fy }, bi) => {
+        const bcx = x + w * fx, bcy = y + stoveH * fy;
+        parts.push(`<path d="${pointsToPath(wobbleCircle(bcx, bcy, br, {...opts,seed:opts.seed!+10+bi}), true)}" ${sa}/>`);
+        parts.push(`<path d="${pointsToPath(wobbleCircle(bcx, bcy, br*0.52, {...opts,seed:opts.seed!+20+bi}), true)}" ${sa}/>`);
+      });
+      break;
+    }
+
+    case "shower": {
+      const { x, y, w, h: shH } = E(el);
+      const frame = [[x,y,x+w,y],[x+w,y,x+w,y+shH],[x+w,y+shH,x,y+shH],[x,y+shH,x,y]] as [number,number,number,number][];
+      frame.forEach(([x1,y1,x2,y2], i) => parts.push(`<path d="${pointsToPath(wobbleLine(x1,y1,x2,y2,{...opts,seed:opts.seed!+i+1}))}" ${sa}/>`));
+      const arcR = Math.min(w, shH) * 0.85;
+      const arcPts = wobbleArc(x, y, arcR, 0, 90, {...opts, seed: opts.seed! + 5});
+      parts.push(`<path d="${pointsToPath(arcPts)}" ${sa}/>`);
+      const hX = x + w*0.75, hY = y + shH*0.2, hR = Math.min(w, shH)*0.08;
+      parts.push(`<path d="${pointsToPath(wobbleLine(hX-hR,hY,hX+hR,hY,{...opts,seed:opts.seed!+10,amplitude:opts.amplitude*0.25}))}" ${sa}/>`);
+      parts.push(`<path d="${pointsToPath(wobbleLine(hX,hY-hR,hX,hY+hR,{...opts,seed:opts.seed!+11,amplitude:opts.amplitude*0.25}))}" ${sa}/>`);
+      break;
+    }
   }
 
   if (rotationPrefix) {

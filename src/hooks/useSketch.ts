@@ -221,6 +221,21 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
         case "sink":
           newEl = { type: "sink", x: cx - 25, y: cy - 25, w: 50, h: 50, ...baseProps };
           break;
+        case "armchair":
+          newEl = { type: "armchair", x: cx - 35, y: cy - 35, w: 70, h: 70, ...baseProps };
+          break;
+        case "desk":
+          newEl = { type: "desk", x: cx - 55, y: cy - 35, w: 110, h: 70, ...baseProps };
+          break;
+        case "bookshelf":
+          newEl = { type: "bookshelf", x: cx - 50, y: cy - 20, w: 100, h: 40, shelves: 3, ...baseProps };
+          break;
+        case "stove":
+          newEl = { type: "stove", x: cx - 35, y: cy - 35, w: 70, h: 70, burners: 4, ...baseProps };
+          break;
+        case "shower":
+          newEl = { type: "shower", x: cx - 40, y: cy - 40, w: 80, h: 80, ...baseProps };
+          break;
         default:
           return;
       }
@@ -331,6 +346,21 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
           break;
         case "sink":
           newEl = { type: "sink", x: cx - 25, y: cy - 25, w: 50, h: 50, ...baseProps };
+          break;
+        case "armchair":
+          newEl = { type: "armchair", x: cx - 35, y: cy - 35, w: 70, h: 70, ...baseProps };
+          break;
+        case "desk":
+          newEl = { type: "desk", x: cx - 55, y: cy - 35, w: 110, h: 70, ...baseProps };
+          break;
+        case "bookshelf":
+          newEl = { type: "bookshelf", x: cx - 50, y: cy - 20, w: 100, h: 40, shelves: 3, ...baseProps };
+          break;
+        case "stove":
+          newEl = { type: "stove", x: cx - 35, y: cy - 35, w: 70, h: 70, burners: 4, ...baseProps };
+          break;
+        case "shower":
+          newEl = { type: "shower", x: cx - 40, y: cy - 40, w: 80, h: 80, ...baseProps };
           break;
         default:
           return;

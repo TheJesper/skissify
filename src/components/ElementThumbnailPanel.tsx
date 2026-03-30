@@ -225,6 +225,51 @@ const ELEMENT_PREVIEWS: Record<string, { label: string; sketch: SketchData }> = 
       elements: [{ type: "sink", x: 8, y: 8, w: THUMB_SIZE - 16, h: THUMB_SIZE - 16, color: "#555" }],
     },
   },
+  armchair: {
+    label: "Armchair",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 70,
+      elements: [{ type: "armchair", x: 6, y: 6, w: THUMB_SIZE - 12, h: THUMB_SIZE - 12, color: "#555" }],
+    },
+  },
+  desk: {
+    label: "Desk",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 71,
+      elements: [{ type: "desk", x: 6, y: 8, w: THUMB_SIZE - 12, h: THUMB_SIZE - 16, color: "#555" }],
+    },
+  },
+  bookshelf: {
+    label: "Bookshelf",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 72,
+      elements: [{ type: "bookshelf", x: 6, y: 8, w: THUMB_SIZE - 12, h: THUMB_SIZE - 16, shelves: 3, color: "#555" }],
+    },
+  },
+  stove: {
+    label: "Stove",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 73,
+      elements: [{ type: "stove", x: 6, y: 6, w: THUMB_SIZE - 12, h: THUMB_SIZE - 12, burners: 4, color: "#555" }],
+    },
+  },
+  shower: {
+    label: "Shower",
+    sketch: {
+      paper: "cream", tool: "ballpoint", inkColor: "#555",
+      amplitude: 0.45, waves: 0.5, humanness: 0.07,
+      width: THUMB_SIZE, height: THUMB_SIZE, sessionSeed: 74,
+      elements: [{ type: "shower", x: 6, y: 6, w: THUMB_SIZE - 12, h: THUMB_SIZE - 12, color: "#555" }],
+    },
+  },
 };
 
 // ── Category groupings ────────────────────────────────────────────
@@ -251,8 +296,12 @@ const ELEMENT_CATEGORIES = [
     items: ["stair", "column"],
   },
   {
-    label: "Furniture & Fixtures",
-    items: ["bed", "sofa", "dining-table", "toilet", "bathtub", "sink"],
+    label: "Furniture",
+    items: ["bed", "sofa", "armchair", "dining-table", "desk", "bookshelf"],
+  },
+  {
+    label: "Kitchen & Bath",
+    items: ["toilet", "bathtub", "sink", "stove", "shower"],
   },
 ];
 
