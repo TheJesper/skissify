@@ -1745,6 +1745,7 @@ function hitTest(
   mx: number,
   my: number
 ): boolean {
+  if (el.visible === false) return false;
   const margin = 12;
 
   if ("x1" in el && "x2" in el) {
@@ -1782,6 +1783,7 @@ function boxHitTest(
   x2: number,
   y2: number
 ): boolean {
+  if (el.visible === false) return false;
   if ("x1" in el && "x2" in el) {
     const l = asLine(el);
     const ex1 = Math.min(l.x1, l.x2), ey1 = Math.min(l.y1, l.y2);

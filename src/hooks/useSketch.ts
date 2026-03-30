@@ -898,6 +898,25 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     });
   }, [selectedElements, pushHistory]);
 
+  /** Toggle visibility of an element by index */
+  const toggleVisibility = useCallback(
+    (idx: number) => {
+      setSketch((prev) => {
+        const el = prev.elements[idx];
+        if (!el) return prev;
+        const newElements = prev.elements.map((e, i) => {
+          if (i !== idx) return e;
+          return { ...e, visible: e.visible === false ? undefined : false };
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [pushHistory]
+  );
+
   /** Update any field(s) of a single element by index and push to undo history */
   const updateElement = useCallback(
     (idx: number, updates: Record<string, unknown>) => {
@@ -992,6 +1011,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     alignSelected,
     groupSelected,
     ungroupSelected,
+    toggleVisibility,
   };
 }
 

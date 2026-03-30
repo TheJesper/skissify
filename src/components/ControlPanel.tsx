@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS, BlueprintMetadata, SketchElement } from "@/lib/types";
 import ElementThumbnailPanel from "./ElementThumbnailPanel";
+import ElementsListPanel from "./ElementsListPanel";
 
 interface ControlPanelProps {
   paper: PaperType;
@@ -91,6 +92,14 @@ interface ControlPanelProps {
   drawMode?: boolean;
   /** Called when the user toggles freehand draw mode */
   onDrawModeChange?: (active: boolean) => void;
+  /** All elements in the sketch (for the elements list panel) */
+  elements?: SketchElement[];
+  /** Currently selected element indices */
+  selectedElements?: Set<number>;
+  /** Called when the user clicks an element in the list panel */
+  onSelectElement?: (idx: number, shiftKey: boolean) => void;
+  /** Called when the user toggles visibility of an element */
+  onToggleVisibility?: (idx: number) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -412,6 +421,10 @@ export default function ControlPanel({
   onUpdateElement,
   drawMode,
   onDrawModeChange,
+  elements,
+  selectedElements,
+  onSelectElement,
+  onToggleVisibility,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -1029,6 +1042,18 @@ export default function ControlPanel({
               </p>
             )}
           </div>
+        </Section>
+      )}
+
+      {/* Elements List */}
+      {elements && onSelectElement && onToggleVisibility && selectedElements && (
+        <Section title={`Elements (${elements.length})`}>
+          <ElementsListPanel
+            elements={elements}
+            selectedElements={selectedElements}
+            onSelectElement={onSelectElement}
+            onToggleVisibility={onToggleVisibility}
+          />
         </Section>
       )}
 

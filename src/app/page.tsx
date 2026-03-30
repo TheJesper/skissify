@@ -236,6 +236,7 @@ function EditorInner({
     newSketch,
     updateSketch,
     updateElement,
+    toggleVisibility,
     undo,
     redo,
     canUndo,

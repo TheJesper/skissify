@@ -588,6 +588,7 @@ export function renderSketchToSVG(sketch: SketchData): string {
   }
 
   const elementsSvg = sketch.elements
+    .filter((el) => el.visible !== false)
     .map((el) => renderElement(sketch, el, defaultColor))
     .join("\n");
 

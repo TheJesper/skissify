@@ -3209,3 +3209,73 @@ Two new curated "best MCP servers" directories launched this week (claudefa.st, 
 | Uizard coverage = opposite vector, same aesthetic | Market validated; Skissify differentiation confirmed | MEDIUM — update positioning docs |
 | MCP curation directories active (claudefa.st, mcpmanager.ai) | Day-1 directory submission = passive lead gen at scale | HIGH — add to launch checklist |
 | 13 consecutive clean niche scans | The window is still open; urgency is quantifiable in weeks, not months | VALIDATION |
+
+---
+
+## Entry: March 30, 2026 - 08:09 CET | Automated Strategy Run #56
+
+### Theme: "Infrastructure Pricing Psychology II" — The 97M Download Threshold Changes Everything
+
+---
+
+#### Finding 1: MCP at 97M Downloads — The "Early Adopter Premium" Is Now Closing
+
+**Data point**: MCP has crossed 97 million downloads (source: digitalapplied.com AI Agent Protocol Ecosystem Map 2026, 2 weeks ago). A2A protocol has 50+ ecosystem partners. Apify's engineering blog (6 days ago) frames MCP as "the solution to one-off agent glue" — it is now *expected infrastructure* for any tool claiming AI compatibility.
+
+**EUR 2/mo WTP implication**: When MCP was at 34K npm dependents (earlier cycle), being on MCP was a differentiator. At 97M downloads, NOT being on MCP is a disqualifier. The psychology shifts from "this tool has MCP — bonus points" to "this tool doesn't have MCP — I won't use it." This **raises the urgency floor** for shipping @skissify/mcp while simultaneously making the EUR 2/mo ask even easier — developers using MCP are already heavy infrastructure spenders.
+
+**Pricing psychology**: At 97M downloads, MCP tools are evaluated like npm packages, not like SaaS apps. Developers don't price-compare npm packages — they install or they don't. EUR 2/mo for a Skissify MCP license is the same mental category as `$0.008/request for Upstash Redis`. It's infrastructure cost, not a discretionary subscription.
+
+---
+
+#### Finding 2: The "Outcome-Based" Pricing Wave — Skissify Is Already Aligned
+
+**Data point** (businessupside.com, 3 days ago): "Charging per seat no longer works because AI makes workers 10x more productive. SaaS companies are hard-shifting to usage-based or outcome-based pricing in 2026."
+
+**Data point** (softwaretimes.blog, 1 month ago): "AI-driven usage-based and outcome-based models replacing per-seat... AI-agent licensing as standard practice."
+
+**Skissify alignment**: The business plan's hybrid model (flat monthly + per-render API overage at EUR 0.005/render) is precisely what 2026 buyers expect. This is not a pivot needed — it's validation. **The specific opportunity**: when pitching to architects, developers, or teams, frame Skissify as "pay for what you render, not for seats." A 3-person architecture firm generating 500 sketches/month pays EUR 12/mo Team + EUR 0 overage (included) — transparent and fair.
+
+**EUR 2/mo angle**: The EUR 2/mo entry tier is the *outcome-based gateway*: users pay EUR 2 when they decide Skissify produces outcomes they value (clean renders, no watermark). The watermark on free tier IS the outcome gate — it says "you got the sketch, now pay to own it cleanly."
+
+---
+
+#### Finding 3: tldraw's Latest Focus — Interoperability, Not Innovation
+
+**Data point**: tldraw's most recent release notes snippet (March 2026): "Snappier arrows, paste from Excalidraw, and most widely translated whiteboard application in the world."
+
+**Analysis**: tldraw is doubling down on interoperability (Excalidraw paste import) and quality-of-life improvements. They are not building MCP, not building JSON-native generation, not targeting AI agents as primary users. The "paste from Excalidraw" feature is a defensive move to poach Excalidraw users — horizontal competition between existing human-centric tools.
+
+**Strategic implication**: Both Excalidraw and tldraw are competing for the *same human-operated whiteboard user*. Neither is building toward programmatic generation. This confirms Skissify's vector is orthogonal: the agent-generated JSON → hand-drawn output workflow has zero incumbent.
+
+**Response needed?** No new tldraw feature requires a Skissify response. Their SDK at $6K/year commercial remains a strong price contrast against Skissify's EUR 5/mo Pro.
+
+---
+
+#### Finding 4: EUR 2/mo Is an Acquisition Price, Not a Business Price — The Ceiling Is EUR 49+
+
+**Data point**: bigideasdb.com (2 weeks ago): "users reporting 5-10 hours/week saved... willingness to pay $49-199/month." nxcode.io (Jan 2026): AI content tools see WTP of $19-99/month.
+
+**Reconciliation**: These benchmarks are for tools that replace significant manual work (hours/week). Skissify replaces the act of manually drawing floor plans / diagrams — for architects and developers who sketch frequently, this is genuine hour-saving. A freelance architect charging EUR 150/hr who saves 2 hours/week on sketch production saves EUR 300/week. EUR 12/mo (Team tier) is a 0.04% ROI calculation — trivially easy to justify.
+
+**Insight**: EUR 2/mo is the right *entry price* for individuals and developers who sketch occasionally. But for architects and technical teams with frequent sketch needs, the *ceiling* is much higher. The Team tier at EUR 12/user/mo is actually UNDERPRICED for the architecture B2B segment. Consider a future "Architecture Studio" tier at EUR 25-40/user/mo with:
+- Unlimited renders
+- Custom element library (branded floor plan symbols)
+- Export as DXF/PDF
+- Client-facing gallery links
+- Priority support
+
+This tier doesn't need to be built now — but it validates that EUR 2-5/mo is early-adopter acquisition pricing, not the long-term revenue ceiling.
+
+---
+
+#### Signal Table for Run #56
+
+| Signal | EUR 2/mo Insight | Urgency |
+|--------|-----------------|---------|
+| MCP: 97M downloads confirmed | Infrastructure spend psychology — EUR 2 = npm install cost | CRITICAL — MCP build now |
+| Outcome-based pricing dominant in 2026 | Skissify's hybrid model is already best-practice | VALIDATION |
+| tldraw latest: interoperability focus, no MCP | No threat in Skissify's lane; $6K vs EUR 5 contrast holds | LOW |
+| Micro-SaaS WTP $49-199/mo general market | EUR 2/mo is acquisition; Team/Architecture tier = real revenue | MEDIUM — plan upsell path |
+| Zero competitor in JSON+hand-drawn+MCP+floor plan | 23+ clean scans — niche structurally unoccupied | VALIDATION — ship MCP |
+

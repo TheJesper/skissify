@@ -35,6 +35,8 @@ export interface BaseElement {
    * Supports any CSS color string, e.g. "#f0e8d0" or "rgba(200,180,160,0.4)".
    */
   fillColor?: string;
+  /** When false, the element is hidden from canvas/SVG rendering and non-selectable via click */
+  visible?: boolean;
 }
 
 export interface LineElement extends BaseElement {

@@ -10,6 +10,8 @@ const elementBaseSchema = z.object({
   fillColor: z.string().max(30).optional(),
   /** Group identifier — elements sharing the same groupId are treated as a single unit */
   groupId: z.string().max(64).optional(),
+  /** When false, the element is hidden from rendering */
+  visible: z.boolean().optional(),
 });
 
 const lineElementSchema = elementBaseSchema.extend({

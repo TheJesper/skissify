@@ -944,8 +944,9 @@ export function renderSketch(
   ctx.save();
   centerElements(ctx, sketch.elements, w, h);
 
-  // 5. Render all elements
+  // 5. Render all elements (skip hidden)
   sketch.elements.forEach((el, idx) => {
+    if (el.visible === false) return;
     renderElement(ctx, el, idx, sketch);
   });
 

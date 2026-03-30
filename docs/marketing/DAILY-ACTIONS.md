@@ -3958,3 +3958,73 @@ ender_sketch tool live on npm? Yes/no + URL
 - Did the DEV Community comment on the Gemini+Matplotlib tutorial go live? (assigned Run #6, still pending)
 - Check: has paper.design updated features or pricing since open alpha?
 
+
+---
+
+## Daily Actions: Tuesday, March 31, 2026 | Strategy Run #56
+
+*Generated Monday March 30, 08:09 CET. Based on: MCP 97M downloads milestone, outcome-based pricing dominance, tldraw interoperability focus, EUR 2/mo acquisition psychology validation.*
+
+---
+
+### ?? Action 1: Ship @skissify/mcp v0.1 — The Window Is Now, Not Next Week
+
+**Why today**: MCP has crossed 97 million downloads (confirmed). At this scale, NOT being on MCP is a disqualifier for developer adoption, not a differentiator gap. Every week without `@skissify/mcp` on npm is a week where Skissify is invisible to 97M potential distribution points. tldraw's latest release (snappier arrows, Excalidraw paste) confirms they are NOT building toward MCP — the slot is open and getting more valuable daily.
+
+**Concrete steps (March 31)**:
+1. Create `W:/code/skissify/mcp-server/index.ts` with one tool: `render_sketch(json: SkissifyManifest): { svg: string, watermarked: boolean }`
+2. Publish to npm as `@skissify/mcp` — version `0.1.0`
+3. Test in Claude Desktop: `{"mcpServers":{"skissify":{"command":"npx","args":["@skissify/mcp"]}}}`
+4. Record a 30-second screen capture: prompt → JSON → hand-drawn floor plan appears in chat
+5. Push to GitHub; update README with `npx @skissify/mcp` quickstart
+
+**Success metric**: `@skissify/mcp` is discoverable on npm by end of March 31.
+
+**Why this is #1**: The launch demo video (Claude generating a floor plan sketch) is the single highest-conversion marketing asset. It cannot be made without the MCP server. Everything else is blocked behind this.
+
+---
+
+### ?? Action 2: Submit to MCP Directories — Day-1 Passive Lead Gen (30 min work, indefinite returns)
+
+**Why today**: Search for "JSON to hand-drawn sketch API tool competitor 2026" returns nothing relevant — the directories are empty in Skissify's category. awesome-mcp-servers, claudefa.st, mcpmanager.ai, and lobehub.com/mcp list no sketch/visual/floor-plan tool. First listing = permanent first-mover advantage in directory search results.
+
+**Concrete steps (March 31, after MCP v0.1 ships)**:
+1. Fork https://github.com/punkpeye/awesome-mcp-servers and add entry under "Design & Visual":
+   > **@skissify/mcp** — JSON-native hand-drawn sketch renderer for AI agents. Floor plans, architectural elements, wobble aesthetics. Declarative JSON in, hand-drawn SVG out. `npx @skissify/mcp`
+2. Submit to https://lobehub.com/mcp (position adjacent to Mermaid MCP entries)
+3. Submit to official MCP registry at modelcontextprotocol.io (registry form)
+4. Note for claudefa.st and mcpmanager.ai: check submission forms — add to queue
+
+**Distribution math**: 5 directories × 10,000 monthly visitors × 5% click-through × 8% paid conversion = ~200 qualified leads/month at zero ongoing cost. This is the best ROI action after shipping the MCP server.
+
+**Success metric**: Pull request opened on punkpeye/awesome-mcp-servers by EOD March 31.
+
+---
+
+### ?? Action 3: Write and Publish "How Claude Draws Floor Plans with Skissify" — The SEO & Demo Asset
+
+**Why today**: The search landscape for "JSON to hand-drawn sketch" returns only 2016-era Sketch app plugins — zero modern tools. This is an SEO vacuum. A well-written tutorial targeting keywords like "AI agent floor plan generator", "MCP sketch tool", "Claude draw floor plan", and "hand-drawn diagram API" will rank fast because competition is literally zero.
+
+**Concrete steps (March 31)**:
+1. Write a 1,200-word tutorial at `W:/code/skissify/docs/marketing/blog/how-claude-draws-floor-plans.md`
+   - Title: "How to Generate Hand-Drawn Floor Plans with Claude and Skissify"
+   - Structure: intro (why hand-drawn sketches matter for AI output) → install @skissify/mcp → paste example JSON → see result → pay EUR 2/mo to remove watermark
+   - Include a real JSON manifest example (2-bedroom apartment sketch)
+   - End with CTA to skissify.com
+2. This post doubles as the Hacker News "Show HN" draft and the DEV Community article
+3. Target keywords embedded naturally: "MCP floor plan", "AI sketch tool", "hand-drawn SVG generator", "Claude MCP visual"
+
+**Why now (not later)**: Tutorial content ranks faster when published immediately after a tool launches. Publishing the tutorial day-of-launch signals to Google that the content is fresh and authoritative. Every day delayed = slower rank accumulation.
+
+**Success metric**: Tutorial draft complete in `docs/marketing/blog/` by EOD March 31. Ready to publish same day as HN launch.
+
+---
+
+### Notes for Next Cycle (Run #57 — Target: April 1 or ASAP)
+- Is `@skissify/mcp` live on npm? (Blocked everything else)
+- Has awesome-mcp-servers PR been opened?
+- Has the tutorial draft been written?
+- Is the EUR 9 vs EUR 5 pricing decision finalized? (Decision gate: April 6)
+- MCP 97M downloads — check if any visual/sketch tool appeared in the last 48 hours
+- Search: "skissify mcp" — are we indexed anywhere yet?
+
