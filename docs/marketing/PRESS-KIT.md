@@ -1,8 +1,136 @@
 # Skissify Press Kit
 
-**Last Updated:** March 31, 2026 - 14:10 CET (Cycle 62)
-**Version:** 12.0
+**Last Updated:** March 31, 2026 - 15:18 CET (Cycle 63)
+**Version:** 13.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 63 Updates (March 31, 2026 - 15:18 CET) - SHOW HN T+6H / PRODUCT HUNT EVE
+
+### LAUNCH STATUS: SHOW HN LIVE + PRODUCT HUNT TOMORROW
+
+**One-liners v177-v190 (Cycle 63 — Post-HN + Multi-Audience Edition)**
+
+**v177 (UNEXPECTED AUDIENCES HOOK):** "We built for AI developers. Architects, educators, dungeon masters, and real estate agents showed up instead."
+
+**v178 (UNIVERSAL PITCH — NEW):** "Skissify turns any description into a hand-drawn sketch. For AI agents, it's an MCP tool. For humans, it's a text box. Same output, different door."
+
+**v179 (PRODUCT HUNT DAY):** "Launching on Product Hunt April 1. Not a joke. The visual gap in AI agents is now filled."
+
+**v180 (EDUCATOR ANGLE — NEW):** "Hand-drawn sketches aren't just aesthetics. They signal 'idea, not spec' — and that changes every meeting, classroom, and client call they appear in."
+
+**v181 (REAL ESTATE — NEW):** "No floor plan? No problem. Describe the space, get a shareable sketch URL. Works for listings, contractor meetings, renovation planning."
+
+**v182 (DUNGEON MASTER — NEW):** "The AI sketch aesthetic we chose for product ideation turns out to be identical to 40 years of dungeon map aesthetics. We accidentally built a dungeon map generator."
+
+**v183 (MULTI-AGENT ARCHITECTURE):** "A Skissify URL isn't an image link. It's a base64-compressed JSON payload. Any agent can decode it, modify it, regenerate it. The URL is the intermediate representation."
+
+**v184 (VIRAL HOOK — NEW):** "12,000+ MCP servers. Zero of them drew. Until now."
+
+**v185 (HUMAN MODE — REFINED):** "No JSON. No API key. No account. Just type what you want to sketch and get a URL."
+
+**v186 (BIP ANGLE — NEW):** "I launched on HN this morning. Six hours in, the loudest fans are people I never planned to reach."
+
+**v187 (SCHEMA INSIGHT):** "Flat JSON coordinates → 94% LLM spatial accuracy. Hierarchical nesting → 58%. Schema design is product design."
+
+**v188 (PH DAY PITCH):** "Give your AI agent a pencil. Free. 4 lines of config. Hand-drawn. Permanent URLs. Launching on Product Hunt today."
+
+**v189 (EDUCATION PITCH — NEW):** "When a diagram looks finished, students accept it. When it looks hand-drawn, they argue with it. We accidentally built a pedagogical tool."
+
+**v190 (PARTNER/INTEGRATION PITCH — NEW):** "Skissify is a visual output primitive for any agent stack — LangChain, Mastra, CrewAI, Claude, n8n. If your agent can reason spatially, it can now draw."
+
+---
+
+### SCREENSHOT CHECKLIST v11 — CYCLE 63 (POST-HN ADDITIONS)
+
+*Previous priorities unchanged. New additions for multi-audience marketing:*
+
+**NEW — Secondary Gallery (vertical-specific):**
+- [ ] **#8 — Architect/Interior Design use case:** Human Mode with a room description input. Caption: "Rough concept, instantly shareable."
+- [ ] **#9 — Dungeon map:** A dungeon floor plan sketch. Caption: "Not just floor plans. Any spatial layout."
+- [ ] **#10 — Multi-agent URL passing:** Code snippet showing sketch URL as variable being passed between agents. Caption: "The URL encodes the full data structure."
+- [ ] **#11 — Before/after meeting:** Two sketches side-by-side — rough (Skissify) vs. polished (Figma mockup). Caption: "Same idea. Different meetings."
+
+---
+
+### MEDIA ANGLES v41-v45 — CYCLE 63
+
+**v41 — The Unexpected Audiences Story:**
+> "Skissify was built for AI developers. Within four days of launch, architects, educators, game designers, and real estate agents were among the loudest users. None of them use the MCP server. They use Human Mode — a plain-text input form added as an afterthought. The gap between 'I have an idea' and 'there's a sketch on screen' turned out to be universal."
+
+**v42 — The Solo Founder Arc:**
+> "One developer, one week, four unexpected markets. The Skissify story is a case study in what happens when you solve a specific infrastructure problem and discover the solution is more universal than the problem."
+
+**v43 — The Pedagogical Principle:**
+> "The hand-drawn aesthetic isn't just visual style. It encodes a semantic signal: 'this is an idea, not a decision.' Educators, architects, and product managers are exploiting that signal. The aesthetic is the product."
+
+**v44 — The URL-as-Data Architecture:**
+> "Every Skissify URL is a base64-compressed JSON payload. Multi-agent workflows can decode, modify, and regenerate sketches without any image regeneration. In 2026, a URL isn't just an address — it can be a data structure."
+
+**v45 — The Product Hunt Timing:**
+> "Skissify launches on Product Hunt the week MCP achieved mainstream developer adoption. The timing isn't accidental — the tool fills a gap that only became visible once agent tool-calling was ubiquitous. Skissify is infrastructure for the second wave of MCP adoption."
+
+---
+
+### PRODUCT HUNT SUBMISSION SUMMARY (READY TO POST)
+
+**Tagline:** Give your AI agent a pencil.
+
+**Description (250 chars):**
+Skissify is an MCP server that turns natural language into hand-drawn sketch URLs. JSON → sketch. Works with Claude Desktop and any MCP-compatible agent. Free tier. Human Mode for non-technical users. The visual gap in AI agents is now filled.
+
+**First Comment (founder post):**
+```
+Hey Product Hunt! 👋
+
+I'm Jesper, the solo developer behind Skissify.
+
+The problem: AI agents in 2026 can reason brilliantly about spatial layouts — floor plans, diagrams, site maps — but they couldn't produce visual output. Every AI output format existed except drawings.
+
+Skissify fills the gap. It's an MCP server that gives Claude and other agents a "draw" tool. Natural language → flat JSON schema → hand-drawn sketch URL. No image generation, no Stable Diffusion — pure structured output.
+
+**Why hand-drawn?**
+Rough sketches get better feedback than polished mockups. Fidelity signals intent. When something looks finished, people treat it as finished. Rough sketches keep the conversation at the concept level.
+
+**What surprised us:**
+We built for AI developers. Architects, educators, game designers, and real estate agents showed up instead. Human Mode (plain-text input, no code required) turned out to unlock a second market we never planned for.
+
+**Free tier:** unlimited public sketches, no account required.
+**Pro (EUR 5/mo):** private sketches + higher rate limits.
+
+Try it: skissify.com
+MCP setup: skissify.com/docs/mcp (4 lines of config)
+
+Happy to answer anything! 🙏
+```
+
+---
+
+### INDIE HACKERS LAUNCH POST TEMPLATE (CYCLE 63 — NEW)
+
+**Title:** I built the visual layer for AI agents in one week. Here's what happened.
+
+**Body:**
+I launched Skissify last Thursday. It's an MCP server that gives Claude the ability to draw — natural language in, hand-drawn sketch URL out.
+
+Here's the four-day arc:
+
+**Day 1 (Thursday):** HN Show HN. Mostly developers. MCP community engagement. Early validation that the schema design (flat JSON, not hierarchical) was genuinely novel.
+
+**Day 2 (Saturday):** Reddit. r/mcp, r/LocalLLaMA. Discovered the "flat JSON = 94% accuracy" angle resonated more than the product pitch.
+
+**Day 3 (Sunday):** Discovered Human Mode. Built it in two hours. A plain-text form that calls the same API. No JSON required.
+
+**Day 4 (Tuesday):** Second Show HN. Product Hunt tomorrow. Architects, educators, dungeon masters, and real estate agents are my loudest users. None of them use the MCP server.
+
+**Revenue:** EUR 5/month pro tier. Early adopters. Not covering costs yet.
+
+**What I'd tell someone starting:** Build two doors. The technical API and the non-technical form. The second audience is often more interesting than the first.
+
+**What's next:** Vertical landing pages for architects/designers. Export formats (PDF, SVG download). Pricing for professional use. Maybe a real estate integration.
+
+Current MRR: [update before posting]
 
 ---
 

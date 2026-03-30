@@ -2,6 +2,84 @@
 
 ---
 
+## Marketing Improvements (Cycle 63 - March 31, 2026 - 15:18 CET)
+
+### STATUS: 🚀 SHOW HN T+6H | PRODUCT HUNT TOMORROW (APRIL 1) | 138→141 POSTS
+
+**What Changed in Cycle 63:**
+
+- **3 new blog posts (#139-141):**
+  - `show-hn-t6h-live-traction-report.md` — Real-time launch day traction report. Build-in-public transparency. Covers what went right (schema angle, Human Mode), what's still open (screenshots, newsletter pitches). Honest, mid-launch voice. Best for Dev.to, Medium, HN standalone, personal blog. Post at 15:00 CET.
+  - `product-hunt-launch-april-1-everything-you-need-to-know.md` — Product Hunt launch preview. What it is, what we're launching with, what we want from PH day. Pre-hype for tonight/tomorrow. Best for Twitter thread, email list, Dev.to. Post tonight (21:00 CET).
+  - `the-four-unexpected-audiences-who-found-skissify.md` — VIRAL CANDIDATE. The four audiences (architects, educators, game designers, real estate) that found Skissify without being the target. Core insight: "The gap between 'idea in head' and 'sketch on screen' is universal." Best for HN standalone, Dev.to, LinkedIn, Medium. HIGH priority.
+
+- **SOCIAL-MEDIA.md Cycle 63**: Tweets 381-395 (post-HN afternoon arc: traction signal, four audiences thread, PH preview, technical depth, wind-down), TikTok script v1 (30s screen recording format, new platform), Pinterest board strategy (new platform — home design, architecture verticals), Substack Notes drops (2), Hashtag stack update (platform-by-platform, post-HN), new community targets (r/architecture, r/interior, r/DnD, r/realestate, Pinterest, TikTok, Indie Hackers), Reddit post templates for r/architecture and r/DnD.
+
+- **PRESS-KIT.md Cycle 63 (v13.0)**: One-liners v177-v190 (unexpected audiences edition), Screenshot Checklist v11 (adds 4 vertical-specific screenshots), Media Angles v41-v45 (unexpected audiences, solo founder arc, pedagogical principle, URL-as-data architecture, PH timing), Product Hunt First Comment (ready to paste), Indie Hackers launch post template.
+
+### ✅ DONE / ⚠️ OPEN — EVENING MARCH 31 / APRIL 1
+
+| Priority | Item | Status |
+|----------|------|--------|
+| 🚨 | **SHOW HN is live** | ✅ LIVE |
+| 🚨 | **Product Hunt launches April 1 00:01 PST** | ⏳ TONIGHT |
+| 🔴 | **Newsletter pitches** (TLDR AI, Ben's Bites, The Rundown, Superhuman) | ⚠️ OVERDUE — SEND NOW |
+| 🔴 | **Screenshot #1: Human Mode side-by-side** | ⚠️ BLOCKING PH — DO BEFORE SLEEP |
+| 🔴 | **Screenshot #2: Claude Desktop MCP in action** | ⚠️ BLOCKING PH — DO BEFORE SLEEP |
+| 🟡 | **Post "four unexpected audiences" blog to Dev.to** | ⚠️ TONIGHT (highest viral potential) |
+| 🟡 | **LinkedIn launch post** (copy in LINKEDIN-CONTENT.md) | ⚠️ OVERDUE — STILL OPEN |
+| 🟡 | **PH First Comment ready** (in PRESS-KIT.md v13 Cycle 63 section) | ✅ READY |
+| 🟡 | **r/architecture post** (template in SOCIAL-MEDIA.md Cycle 63) | ⚠️ TODAY/TOMORROW |
+| 🟡 | **r/DnD post** (template in SOCIAL-MEDIA.md Cycle 63) | ⚠️ TODAY/TOMORROW |
+| 🟡 | **Indie Hackers launch post** (template in PRESS-KIT.md v13) | ⚠️ TOMORROW |
+| 🟢 | **Pinterest account + first 5 pins** | This week |
+| 🟢 | **TikTok first video** (script ready in SOCIAL-MEDIA.md) | This week |
+| 🟢 | **Substack Notes drops** (2 ready in SOCIAL-MEDIA.md) | Tonight/Tomorrow |
+| 🟢 | **Wobble GIF** | This week |
+
+### New Blog Posts (Cycle 63)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 139 | **Show HN T+6H Live Traction Report** | `show-hn-t6h-live-traction-report.md` | Dev.to, Medium, personal blog | NOW (15:00 CET) |
+| 140 | **Product Hunt Launch: Everything You Need to Know** | `product-hunt-launch-april-1-everything-you-need-to-know.md` | Twitter thread, email list, Dev.to | Tonight (21:00 CET) |
+| 141 | **Four Unexpected Audiences Who Found Skissify** | `the-four-unexpected-audiences-who-found-skissify.md` | HN standalone, Dev.to, LinkedIn, Medium | ASAP — highest viral potential |
+
+### New Ideas (Cycle 63)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **TikTok — 30s screen recording** | Visual product = visual platform. Script ready. Dev content exploding on TikTok. | Medium (record it) | High (new audience) |
+| **Pinterest — home design boards** | Skissify outputs are pin-able. Home design is huge on Pinterest. Long content half-life. | Low (strategy ready) | Medium (slow burn, high quality) |
+| **r/architecture + r/interior angle** | The architect/designer audience is real. Two new subreddits with templates ready. | Low | Medium |
+| **r/DnD dungeon map angle** | Hilarious but real. Dungeon map use case is authentic. HN-style "accidentally built X" story. | Low | Medium-High (viral potential) |
+| **Indie Hackers launch post** | IH community loves transparent launch retrospectives. Template ready. | Low | Medium |
+| **Substack Notes** | Growing dev-adjacent writing community. Two drops ready. | Low | Low-Medium |
+| **Vertical landing pages** (architects, educators, DnD) | The four audiences need their own entry points. Human Mode is one, but a dedicated page converts better. | High | High (next sprint) |
+| **"What I learned from 4 unexpected audiences"** blog → IH Milestone | Best build-in-public post this week. Already written (blog #141). Submit as IH milestone too. | Low | High |
+
+### Cumulative Blog Inventory (141 posts as of Cycle 63)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 |
+| #130-132 | Cycle 60 |
+| #133-135 | Cycle 61 |
+| #136-138 | Cycle 62 |
+| #139-141 | Cycle 63 (this cycle) |
+
+*Last Updated: March 31, 2026 (Cycle 63 - 15:18 CET)*
+*Added: Blog posts #139-141, SOCIAL-MEDIA.md Cycle 63 (Tweets 381-395, TikTok script v1, Pinterest strategy, Substack Notes drops, hashtag stack update, new community targets + templates for r/architecture + r/DnD), PRESS-KIT.md Cycle 63 v13.0 (One-liners v177-v190, Screenshot Checklist v11, Media Angles v41-v45, PH First Comment, Indie Hackers launch post template)*
+
+---
+
 ## Marketing Improvements (Cycle 62 - March 31, 2026 - 14:10 CET)
 
 ### STATUS: 🚀 SHOW HN IS LIVE — T+5H

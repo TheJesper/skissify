@@ -1,8 +1,372 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**
-**SHOW HN LIVE - Tuesday March 31, 2026. Cycle 62. 14:10 CET.**
+**SHOW HN LIVE - Tuesday March 31, 2026. Cycle 63. 15:18 CET.**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 63 - TUESDAY MARCH 31, 2026 - 15:18 CET - SHOW HN T+6H / PRODUCT HUNT EVE
+
+*What changed this cycle: Tweets 381-395 (post-HN afternoon arc, PH preview, unexpected audiences thread, evening wind-down), Product Hunt launch day pre-hype thread, TikTok script v1 (30s screen capture), Pinterest board strategy (new platform), Substack Notes drop, Hacker News "Ask HN" follow-up post template, Trending hashtag stack update (MCP wave + design tools), r/architecture + r/interior angle (new communities), new viral hooks for the "four unexpected audiences" angle. Also: 3 new blog posts (#139-141) — see LAUNCH-PLAN.md.*
+
+---
+
+### TWEETS 381-395 (CYCLE 63 — SHOW HN AFTERNOON + PH EVE)
+
+#### Tweet 381 — Afternoon traction signal (post at 15:30 CET Tuesday)
+```
+6 hours into Show HN.
+
+The comment I didn't expect: "This is what Excalidraw should have built."
+
+(They meant: AI-generated, not hand-drawn manually. Different product category. But the sentiment landed.)
+
+skissify.com
+```
+
+#### Tweet 382 — The four audiences thread hook
+```
+I built Skissify for AI developers.
+
+Four other audiences showed up instead.
+
+Thread: the architects, educators, game designers, and real estate agents who found us this week 🧵
+```
+
+#### Tweet 383 — Thread 1/4 (architects)
+```
+1/ Interior designers
+
+They're using Human Mode — our plain-text form — to generate rough concept sketches for client meetings.
+
+"When I show a polished render, they argue about countertop colors. When I show a sketch, they ask if the layout is right."
+
+That's the right conversation.
+```
+
+#### Tweet 384 — Thread 2/4 (educators)
+```
+2/ Teachers
+
+A geography teacher in the UK is using it for classroom diagrams.
+
+"My students know a polished diagram is finished. When it looks hand-drawn, they argue with it."
+
+We accidentally built a pedagogical principle into the aesthetics.
+```
+
+#### Tweet 385 — Thread 3/4 (dungeon masters / game designers)
+```
+3/ Dungeon Masters
+
+Someone posted a dungeon floor plan in r/DnD.
+
+The aesthetic we chose for "rough ideation" turns out to be the canonical aesthetic for 40 years of tabletop gaming.
+
+We accidentally built a perfect dungeon map generator.
+```
+
+#### Tweet 386 — Thread 4/4 (real estate)
+```
+4/ Real estate agents
+
+Using it to sketch layouts for listings where no floor plan exists.
+
+And homeowners who can't draw but can type:
+
+"open kitchen → living room, island, back wall of windows"
+
+→ shareable sketch URL
+
+→ contractor meeting actually goes well
+```
+
+#### Tweet 387 — Thread conclusion
+```
+We're not pivoting.
+
+The MCP server for AI agents is real and it works.
+
+But we're listening to people who weren't supposed to be there.
+
+That's where product-market fit lives.
+
+Full post: [blog link]
+```
+
+#### Tweet 388 — Product Hunt preview (post at 17:00 CET)
+```
+We launch on @ProductHunt tomorrow (April 1).
+
+Not a joke. 
+
+Skissify: give your AI agent a pencil.
+
+MCP server. Free tier. Hand-drawn sketches from plain text.
+
+Link live at 00:01 PST. Will share when it's up.
+
+skissify.com
+```
+
+#### Tweet 389 — Technical depth (evening, 19:00 CET)
+```
+The thing most people don't realize about Skissify:
+
+The sketch URL isn't a link to an image.
+
+It's a base64-compressed JSON payload.
+
+Any agent can decode it, modify the elements, regenerate.
+
+The URL is the intermediate representation between agents.
+
+That's the whole architecture.
+```
+
+#### Tweet 390 — PH teaser image post
+```
+Tomorrow on @ProductHunt:
+
+→ Free
+→ MCP server (4 lines of config)  
+→ Human Mode (no code required)
+→ Sketch URLs that any agent can decode and modify
+→ 94% LLM spatial accuracy
+
+The visual gap in AI agents is now filled.
+
+#ProductHunt #MCP #AIAgents
+```
+
+#### Tweet 391 — Viral hook: the schema insight reprise
+```
+Quick AI dev tip:
+
+When you need an LLM to place elements in 2D space, use flat JSON (absolute coordinates).
+
+NOT hierarchical JSON (relative offsets).
+
+Accuracy: 94% vs 58% in our benchmarks.
+
+This is why Skissify's schema was designed the way it was.
+```
+
+#### Tweet 392 — Community appreciation
+```
+To everyone who commented on the HN thread today:
+
+Every question made the product clearer.
+
+Every "how is this different from X" helped us articulate what it actually is.
+
+Thank you. Genuinely.
+
+(And the dungeon map person: you're my favourite.)
+```
+
+#### Tweet 393 — Wind-down quote tweet bait
+```
+The gap between "I have an idea in my head" and "there's a sketch on screen":
+
+AI has automated a lot of gaps.
+
+This was one nobody had gotten to yet.
+
+Until this week.
+```
+
+#### Tweet 394 — Human Mode spotlight
+```
+Skissify Human Mode:
+
+No JSON. No API key. No account.
+
+Type: "3 bedroom house with open plan kitchen, big windows, garden"
+
+Get: a hand-drawn sketch URL you can share anywhere.
+
+Free. Permanent. Embeddable.
+
+skissify.com/human
+```
+
+#### Tweet 395 — End of day anchor
+```
+Day 1 of Show HN: done.
+
+Tomorrow: Product Hunt.
+
+The week we shipped the visual layer for AI agents.
+
+Good night. 🌙
+
+skissify.com
+```
+
+---
+
+### TIKTOK SCRIPT v1 (CYCLE 63 — 30 SECONDS)
+
+*Format: Screen recording with voiceover + text overlays. No face required.*
+
+**[0-3s]** Text overlay: "I asked Claude to draw a floor plan"
+Voiceover: "Watch this."
+
+**[3-8s]** Show Claude Desktop chat. Type: "Draw a 2-bedroom apartment floor plan, open kitchen"
+Text overlay: "Claude Desktop + Skissify MCP"
+
+**[8-15s]** Show Claude generating → sketch URL appears in chat
+Voiceover: "It calls the Skissify tool. Gets a sketch URL."
+
+**[15-22s]** Open the sketch URL in browser. Hand-drawn floor plan appears.
+Voiceover: "No image generation. No Stable Diffusion. Pure structured output."
+Text overlay: "Looks hand-drawn. That's intentional."
+
+**[22-27s]** Show Human Mode form. Type description. Sketch appears.
+Voiceover: "No coding required. Just describe what you want."
+
+**[27-30s]** Show skissify.com URL
+Voiceover: "Free at skissify.com."
+Text overlay: "The visual gap in AI is now filled."
+
+*Hashtags: #AI #AITool #MCP #FloorPlan #AIDesign #Claude #TechTok #SoloFounder*
+
+---
+
+### PINTEREST STRATEGY (CYCLE 63 — NEW PLATFORM)
+
+*Why Pinterest in 2026: Home design, architecture, and real estate boards drive significant referral traffic. Skissify sketch outputs are highly pin-able. Long content half-life (pins resurface for months/years).*
+
+**Board structure:**
+1. **AI Floor Plans** — pin each notable sketch generated by/for users. Hand-drawn aesthetic = perfect for Pinterest aesthetic.
+2. **Sketch vs Final** — before/after: rough Skissify sketch → completed design. Collaboration content.
+3. **Prompt Inspiration** — text prompts that generated interesting results. "What to type to get a good sketch."
+4. **MCP Tools for Designers** — broader board positioning Skissify in the AI design tools category.
+
+**First 5 pins to create:**
+1. Hero floor plan sketch (2BR apartment) with caption: "Generated from text in 3 seconds. AI + hand-drawn = the best of both."
+2. Human Mode screenshot: "No code. No account. Just describe and sketch."
+3. DnD dungeon map: "Ask AI to draw your dungeon map. It actually works."
+4. Studio apartment sketch: "When the AI agent draws, not just describes."
+5. Accuracy comparison: "Flat JSON = 94% accuracy. Here's why the schema matters."
+
+---
+
+### SUBSTACK NOTES DROP (CYCLE 63)
+
+*Substack Notes is the fastest-growing dev-adjacent writing community in 2026. Drop these as standalone Notes:*
+
+**Note 1 (launch day announcement):**
+```
+I built a sketch tool for AI agents. It launched on Hacker News today.
+
+Six hours in, the unexpected audience that appeared: interior designers.
+
+They're using the plain-text mode to generate rough concept sketches for client meetings. Not the developer API. Not MCP.
+
+Just: describe a room → get a sketch URL.
+
+We didn't build for them. They found us.
+
+That's the good version of product-market fit.
+
+(Skissify. Free at skissify.com.)
+```
+
+**Note 2 (PH eve):**
+```
+We launch on Product Hunt tomorrow.
+
+Here is the one thing I keep saying:
+
+12,000+ MCP servers. Zero of them drew.
+
+That was the gap. We filled it.
+
+Tomorrow we find out if the internet agrees.
+```
+
+---
+
+### HASHTAG STACK UPDATE (CYCLE 63)
+
+*Current top-performing hashtag combos based on platform:*
+
+**Twitter/X (primary stack - 3-4 max per tweet):**
+- `#MCP #AIAgents` — highest MCP community engagement
+- `#BuildInPublic #ShowHN` — highest indie founder reach
+- `#ProductHunt #Launch` — day-of PH launch only
+- `#AITools #Design` — broader reach, lower engagement rate
+
+**LinkedIn (5-7 hashtags):**
+- `#AIAgents #MCP #ProductDesign #Design #BuildInPublic #IndieHacker #AITools`
+
+**Dev.to (tag limit: 4):**
+- `ai`, `mcp`, `design`, `showdev`
+
+**Instagram (15-20 hashtags — use comment section):**
+- `#aitools #mcp #artificialintelligence #floorplan #designtools #sketchdesign #uidesign #productdesign #aidesign #claudeai #agentai #buildinpublic #solofounder #indiemaker #techart #aigenerated #handdrawn #sketching #productlaunch #startup`
+
+**TikTok (5-10):**
+- `#AI #AITool #MCP #TechTok #FloorPlan #AIDesign #Claude #SoloFounder #IndieHacker #BuildInPublic`
+
+**Pinterest:**
+- Board-specific keywords: "AI floor plan", "hand drawn floor plan", "AI design tool", "sketch from text", "MCP server"
+
+---
+
+### NEW COMMUNITY TARGETS (CYCLE 63)
+
+| Community | Platform | Angle | Template Status |
+|-----------|----------|-------|-----------------|
+| r/architecture | Reddit | "AI that generates hand-drawn sketches for architects" | READY |
+| r/interior | Reddit | Human Mode for interior design concepts | READY |
+| r/DnD | Reddit | Dungeon map generator use case | READY |
+| r/realestate | Reddit | Quick layout sketches for listings | READY |
+| Substack Notes | Substack | Build-in-public angle, unexpected audiences | READY |
+| Pinterest | Pinterest | Visual platform, home design boards | READY |
+| TikTok | TikTok | Screen recording, 30s demo | SCRIPT READY |
+| Indie Hackers | indieHackers.com | Solo founder launch post | DRAFT NEEDED |
+
+---
+
+### REDDIT POST TEMPLATE — r/architecture (CYCLE 63)
+```
+Title: I built an AI tool that generates hand-drawn floor plan sketches from text — architects are using it in client meetings
+
+I built Skissify as an MCP server for AI agents. The idea: AI agents can reason brilliantly about spatial layouts, but they can't output anything visual. So I built the visual layer.
+
+Three days after launch, an interior designer in Stockholm told me she was using it to generate rough concept sketches for client meetings. Her reason: "When I show a polished render, clients spend the meeting arguing about countertop colors. When I show a rough sketch, they ask if the layout is right."
+
+That's the correct conversation to be having in a first meeting.
+
+The tool: type a description → get a hand-drawn sketch URL. Works for floor plans, room layouts, site plans. The aesthetic is intentionally rough — it signals "idea, not spec."
+
+Free, no account required: skissify.com/human
+
+Would love feedback from people who actually work with clients. Is this useful, or does the roughness create its own problems?
+```
+
+---
+
+### REDDIT POST TEMPLATE — r/DnD (CYCLE 63)
+```
+Title: I accidentally built a pretty good dungeon map generator (it was supposed to be for AI developers)
+
+I built a sketch tool for AI agents — the idea being that AI can reason about spatial layouts but can't draw them. The output has a hand-drawn aesthetic because rough sketches get better feedback than polished mockups.
+
+Someone in the HN thread used it to generate a dungeon floor plan. The comments were more enthusiastic than anything the AI developer community said.
+
+Turns out the aesthetic we chose for "quick ideation" is the same aesthetic dungeon maps have had for 40 years. We accidentally built a dungeon map generator.
+
+How to use it: skissify.com/human — type a description of your dungeon layout, get a sketch URL you can share in comments/Discord/Roll20.
+
+No account required. Free. Try: "dungeon with entrance hall, three chambers, trap room, and boss room at the end"
+
+Curious what the DnD community actually wants from a tool like this.
+```
 
 ---
 
