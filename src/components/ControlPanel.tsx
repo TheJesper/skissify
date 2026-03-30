@@ -137,7 +137,14 @@ function ElementCoordEditor({
   type Field = { key: string; label: string };
   let fields: Field[] = [];
 
-  if (["line", "arrow", "dashed", "dim"].includes(element.type)) {
+  if (["line", "arrow", "dashed"].includes(element.type)) {
+    fields = [
+      { key: "x1", label: "x1" },
+      { key: "y1", label: "y1" },
+      { key: "x2", label: "x2" },
+      { key: "y2", label: "y2" },
+    ];
+  } else if (element.type === "dim") {
     fields = [
       { key: "x1", label: "x1" },
       { key: "y1", label: "y1" },
@@ -202,29 +209,154 @@ function ElementCoordEditor({
     });
   };
 
+  // Text content: get the effective text value for text/rect/dim elements
+  const getTextValue = (key: string): string => {
+    if (key in draft) return draft[key];
+    const v = el[key];
+    return v != null ? String(v) : "";
+  };
+
+  const handleTextChange = (key: string, value: string) => {
+    setDraft((prev) => ({ ...prev, [key]: value }));
+  };
+
+  const handleTextCommit = (key: string, value: string) => {
+    onUpdate(elementIdx, { [key]: value });
+    setDraft((prev) => {
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+  };
+
   return (
-    <div className="mt-1">
-      <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">
-        Position &amp; Size
-        <span className="ml-1.5 text-[#93a1a1] capitalize">({element.type})</span>
-      </label>
-      <div className="grid grid-cols-4 gap-1">
-        {fields.map(({ key, label }) => (
-          <div key={key} className="flex flex-col gap-0.5">
-            <label className="text-[9px] text-[#93a1a1] uppercase text-center">{label}</label>
+    <div className="mt-1 space-y-2">
+      {/* Text content editor for text elements */}
+      {element.type === "text" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">
+            Text content
+          </label>
+          <input
+            type="text"
+            value={getTextValue("text") || getTextValue("content")}
+            onChange={(e) => handleTextChange("text", e.target.value)}
+            onBlur={(e) => handleTextCommit("text", e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handleTextCommit("text", (e.target as HTMLInputElement).value);
+              e.stopPropagation();
+            }}
+            placeholder="Enter text…"
+            className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-[11px] text-[#586e75] font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+          />
+        </div>
+      )}
+      {/* Rect label editor */}
+      {element.type === "rect" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">
+            Label (optional)
+          </label>
+          <input
+            type="text"
+            value={getTextValue("label")}
+            onChange={(e) => handleTextChange("label", e.target.value)}
+            onBlur={(e) => handleTextCommit("label", e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handleTextCommit("label", (e.target as HTMLInputElement).value);
+              e.stopPropagation();
+            }}
+            placeholder="Room label…"
+            className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-[11px] text-[#586e75] font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+          />
+        </div>
+      )}
+      {/* Dim label + offset editor */}
+      {element.type === "dim" && (
+        <div className="space-y-1.5">
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block">
+            Dimension label
+          </label>
+          <input
+            type="text"
+            value={getTextValue("label")}
+            onChange={(e) => handleTextChange("label", e.target.value)}
+            onBlur={(e) => handleTextCommit("label", e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handleTextCommit("label", (e.target as HTMLInputElement).value);
+              e.stopPropagation();
+            }}
+            placeholder="e.g. 3.6 m"
+            className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-[11px] text-[#586e75] font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+          />
+          <div className="flex items-center gap-2">
+            <label className="text-[10px] text-[#657b83] uppercase tracking-wide shrink-0">
+              Offset
+            </label>
             <input
               type="number"
-              value={getValue(key)}
-              onChange={(e) => handleChange(key, e.target.value)}
-              onBlur={(e) => handleCommit(key, e.target.value)}
+              value={getValue("offset")}
+              onChange={(e) => handleChange("offset", e.target.value)}
+              onBlur={(e) => handleCommit("offset", e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === "Enter") handleCommit(key, (e.target as HTMLInputElement).value);
-                e.stopPropagation(); // prevent canvas keyboard shortcuts
+                if (e.key === "Enter") handleCommit("offset", (e.target as HTMLInputElement).value);
+                e.stopPropagation();
               }}
-              className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-1 py-1 text-[11px] text-[#586e75] text-center font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+              placeholder="0"
+              className="w-20 bg-[#fdf6e3] border border-[#93a1a1] rounded px-1 py-1 text-[11px] text-[#586e75] text-center font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
             />
+            <span className="text-[9px] text-[#93a1a1]">px perp.</span>
+            {/* Quick offset presets */}
+            <div className="flex gap-0.5 ml-auto">
+              {[-30, -20, 0, 20, 30].map((v) => (
+                <button
+                  key={v}
+                  onClick={() => {
+                    onUpdate(elementIdx, { offset: v });
+                    setDraft((prev) => {
+                      const next = { ...prev };
+                      delete next["offset"];
+                      return next;
+                    });
+                  }}
+                  className={`px-1 py-0.5 rounded text-[9px] font-mono border transition-all ${
+                    (el["offset"] ?? 0) === v
+                      ? "ring-1 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#073642]"
+                      : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#eee8d5] text-[#657b83]"
+                  }`}
+                  title={`Set offset to ${v}px`}
+                >
+                  {v > 0 ? `+${v}` : v}
+                </button>
+              ))}
+            </div>
           </div>
-        ))}
+        </div>
+      )}
+      {/* Coordinate fields */}
+      <div>
+        <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">
+          Position &amp; Size
+          <span className="ml-1.5 text-[#93a1a1] capitalize">({element.type})</span>
+        </label>
+        <div className="grid grid-cols-4 gap-1">
+          {fields.map(({ key, label }) => (
+            <div key={key} className="flex flex-col gap-0.5">
+              <label className="text-[9px] text-[#93a1a1] uppercase text-center">{label}</label>
+              <input
+                type="number"
+                value={getValue(key)}
+                onChange={(e) => handleChange(key, e.target.value)}
+                onBlur={(e) => handleCommit(key, e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handleCommit(key, (e.target as HTMLInputElement).value);
+                  e.stopPropagation(); // prevent canvas keyboard shortcuts
+                }}
+                className="w-full bg-[#fdf6e3] border border-[#93a1a1] rounded px-1 py-1 text-[11px] text-[#586e75] text-center font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
