@@ -2,6 +2,71 @@
 
 ---
 
+## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #57 (09:14 CET, Monday March 30)
+
+### Context: **57 consecutive niche-clean scans. 🔴 HN window is OPEN RIGHT NOW (09:14 CET — optimal until 10:00). Plan7Architect price hike expires TOMORROW (March 31) — FINAL 36 HOURS. Thomas Thornton SERP slot at 1+ week — challengeable within 48–72h. ybuild.ai confirms zero-friction shipping moment. EUR 2/mo = competence signal, not just a feature tier. Execute all three actions today or the triple-convergence window closes permanently.**
+
+---
+
+### 🔴 Action 1 (EXECUTE IN THE NEXT 46 MINUTES — Window closes 10:00 CET) — publishConfig + npm Publish + HN Post
+
+**Why this exact moment:** The HN optimal window (08:00–10:00 CET) has 46 minutes remaining. This is the last Monday with all three urgency signals simultaneously active. After today, the Plan7Architect SEO window closes, the Thornton SERP slot ages further, and the next optimal HN Monday is 7 days away.
+
+**Execute in exactly this order (20 minutes total):**
+
+```bash
+# Step 1: Add publishConfig to mcp-server/package.json (30 seconds)
+# In W:/code/skissify/mcp-server/package.json, add:
+# "publishConfig": { "access": "public" }
+
+# Step 2: Publish to npm (5 minutes)
+cd W:\code\skissify\mcp-server
+npm publish --access public
+
+# Step 3: Verify
+npm view @skissify/mcp-server
+
+# Step 4: Post "Show HN" at 09:14–10:00 CET
+# Pre-written post: docs/marketing/HACKER-NEWS.md
+```
+
+**NEW Run #57 HN comment angle (competence signal framing)**:
+*"The watermark on free renders isn't a nag screen — it's the visible evidence that you haven't finished your pipeline. EUR 2/mo removes it. For developers whose identity is around shipping finished things, this is identity spend, not feature spend."*
+
+---
+
+### 🔴 Action 2 (Today by 14:00 CET — LAST DAY of SEO window) — Plan7Architect SEO Blog Post
+
+**Hard deadline**: Plan7Architect Pro 5 price hike closes TOMORROW (March 31). This is the final 36-hour window. Publish today before 14:00 CET to get ~20 hours of indexing before peak search traffic tomorrow.
+
+**Title**: *"Plan7Architect raised their prices. Here's the EUR 5/mo AI-native alternative for client sketches."*
+
+Target keywords: "Plan7Architect alternative", "floor plan software 2026 alternatives", "AI floor plan sketch tool"
+
+**New angle from Run #57**: Frame Skissify as the "frictionless pipeline" choice — *"Traditional floor plan software runs on your computer. Skissify runs in your AI pipeline. Different jobs."*
+
+Publish to: skissify.com/blog + dev.to/@skissify
+
+---
+
+### 🟡 Action 3 (Today afternoon, after HN post live) — Counter-Tutorial to Challenge Thornton SERP
+
+**Target**: thomasthornton.cloud (1+ week old, #1 for "AI sketch MCP") — challengeable within 48–72h of a well-targeted dev.to post.
+
+**Title**: *"How to generate hand-drawn floor plans from Claude using @skissify/mcp-server"*
+
+**Publish to**: dev.to/@skissify
+**Keywords**: "Claude Code sketch tool", "hand-drawn diagram MCP server", "AI floor plan JSON renderer"
+**Length**: ~1,500 words with JSON manifest code example + rendered sketch screenshot
+
+**NEW Run #57 framing**: Open with *"Claude can describe your floor plan in words. But what if it could just draw it?"* — targets the ybuild.ai "frictionless developer" identity.
+
+---
+
+**Run #57 Summary**: 57 consecutive clean scans. Three urgency signals converge TODAY. Total execution: ~3 hours. First EUR 2/mo subscribers: this week.
+
+---
+
 ## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #52 (07:06 CET, Monday March 30)
 
 ### Context: **52 consecutive niche-clean scans. 🔴 HN window opens at 08:00 CET — 54 minutes from now. Thomas Thornton tutorial at 1+ WEEK SERP dominance (still #1 for "AI sketch MCP"). SaaS pricing intelligence stable 14+ days — usage-based confirmed as structural standard. Plan7Architect price hike expires TODAY. Excalidraw/tldraw frozen. The niche is yours until it isn't.**

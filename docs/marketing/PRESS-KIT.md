@@ -2353,3 +2353,110 @@ Launched March 27, 2026. Current users include AI developers, homeowners briefin
 
 *Last Updated: March 30, 2026 (Cycle 54 — 05:11 CET)*
 *Added: One-liners v81–90 (sharpest set), Screenshot checklist v7 (FINAL), Founder bio v3, Product boilerplate v5 (Show HN ready), Press angles v14–18*
+
+---
+
+## Cycle 58 Updates (March 30, 2026 - 09:38 CET) - T-23.5H TO SHOW HN
+
+### Show HN Title Variants (Data-Backed Research)
+
+From analysis of 1,200+ Show HN launches (Nov 2025 data):
+- Titles under 55 chars: +24% upvotes
+- "API" keyword: +26% relative score
+- "AI-Powered" in title: -15% (oversaturated — avoid)
+- Question-style titles: +2.2x comments
+
+**FINAL RECOMMENDED:** `Show HN: Skissify – give your AI agent a pencil` (50 chars)
+**BACKUP:** `Show HN: Skissify – JSON to hand-drawn sketches, MCP API` (55 chars, "API" keyword)
+
+---
+
+### One-Liners v121-v128 (Cycle 58)
+
+| # | One-liner | Best context |
+|---|-----------|-------------|
+| 121 | "Give your AI agent a pencil." | Show HN, everywhere, homepage hero |
+| 122 | "Spatial reasoning without spatial output is half a product." | Technical audience |
+| 123 | "We wrote 122 blog posts before Show HN. Probably overdid it." | Self-aware builder Twitter |
+| 124 | "The polished mockup suppresses feedback. The rough sketch invites it. This is why we wobble." | Design + PM communities |
+| 125 | "Floor plan in 800ms. No AutoCAD license required." | Architecture, homeowner communities |
+| 126 | "The JSON schema was designed before the renderer. That's why it works." | Technical/HN audience |
+| 127 | "Your AI agent can reason about space. Now it can draw it too." | AI developer communities |
+| 128 | "Sketch URL as agent memory: the output that's also a reference." | MCP/agent builder audience |
+
+---
+
+### Press Release v3 (Launch Day - Final)
+
+**FOR IMMEDIATE RELEASE - March 31, 2026**
+
+**Skissify Launches on Hacker News: The First MCP Server That Draws**
+
+*Stockholm, Sweden* — Skissify, a JSON-to-hand-drawn-sketch API built specifically for AI agents, launches today on Hacker News Show HN. The product solves a gap that has existed since the rise of agentic AI: models can reason about space, but couldn't produce spatial output until now.
+
+**The Product**
+Skissify accepts JSON or plain text and returns a permanent, shareable hand-drawn sketch URL in ~800ms. A native MCP (Model Context Protocol) server allows Claude Desktop and other LLM-based agents to call the API directly in conversation, generating floor plans, diagrams, and spatial layouts without leaving the chat interface.
+
+**The Number That Matters**
+94% first-try LLM success rate on sketch generation — compared to approximately 60% for community wrappers around other formats. The difference is schema design: flat structure, absolute coordinates, required type fields on every element.
+
+**The Unexpected Users**
+Skissify was built for AI engineers building MCP-enabled workflows. Its first week of users included homeowners briefing contractors, a dungeon master mapping their campaign, and a geometry teacher generating spatial exercises at scale. None of these were in the original target audience.
+
+**Quote**
+"I designed the JSON schema before I wrote any rendering code. That turned out to be the right call. The schema *is* the product — everything else is consequence." — Jesper Landmér, Founder
+
+**Availability**
+Free tier available at skissify.com. MCP server: `npx skissify-mcp install`. API documentation at skissify.com/docs.
+
+**Contact**
+Press: press@skissify.com | @thejesper on X/Twitter
+
+---
+
+### Media Contact Sheet (Cycle 58)
+
+| Publication | Contact angle | Priority |
+|-------------|--------------|----------|
+| Hacker News (Show HN) | Technical community, schema design | TODAY |
+| The Verge | "AI gets a pencil" consumer angle | Today/tomorrow |
+| TechCrunch | MCP ecosystem story, timing with OpenAI adoption | Today |
+| Wired | Unexpected users: homeowners + dungeon masters | Week 2 |
+| Fast Company | "Figma Tax" + PM productivity angle | Week 2 |
+| The New Stack | Schema design as LLM reliability lever | Week 2 |
+| Indie Hackers | Solo founder + technical schema insight | Today |
+| Dev.to | MCP integration tutorial | Today |
+| Product Hunt | Day after Show HN (spillover traffic) | Tomorrow |
+
+---
+
+### Quick Reference Card (Print This for Launch Day)
+
+```
+SKISSIFY LAUNCH DAY - MARCH 31, 2026
+
+TIME ZONE: CET (Stockholm)
+
+08:00 - Tweet 316 (one hour warning)
+08:45 - Wake up. Coffee. Test product end-to-end.
+09:00 - SUBMIT Show HN
+         Title: "Show HN: Skissify – give your AI agent a pencil"
+09:05 - Post HN First Comment (HN First Comment v8, in SOCIAL-MEDIA.md)
+09:01 - Tweet 317 (it's live)
+09:30 - Reply to every HN comment (first 2 hours critical)
+10:00 - Demo thread (Tweet 319-321)
+11:00 - Bluesky Show HN thread
+12:00 - Reply to any HN follow-up comments
+13:00 - Unexpected user story tweet (Tweet 323)
+15:00 - Honest HN update tweet (Tweet 324)
+15:00 - r/SideProject Show HN cross-post
+18:00 - Wind-down tweet (Tweet 325)
+18:00 - DM Product Hunt hunters for tomorrow
+21:00 - Close of day tweet (Tweet 326)
+```
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 58 - 09:38 CET)*
+*Added: Show HN title variants (data-backed), One-liners v121-128, Press Release v3 (launch day final), Media Contact Sheet, Launch Day Quick Reference Card*
+

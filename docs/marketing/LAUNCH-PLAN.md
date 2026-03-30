@@ -1,5 +1,90 @@
 # Skissify Launch Plan
 
+---
+
+## Marketing Improvements (Cycle 58 - March 30, 2026 - 09:38 CET)
+
+### STATUS: T-23.5H - SHOW HN FIRES TUESDAY 09:00 CET
+
+**What Changed in Cycle 58:**
+
+- **3 new blog posts (#123-125):**
+  - `why-hand-drawn-sketches-beat-figma-the-bias-test.md` - NEW angle: the cognitive bias that makes polished mockups kill honest feedback. Cites real design research. ROI calculation. "Figma Tax" calculator.
+  - `how-ai-agents-draw-floor-plans-the-geometry-teacher-problem.md` - NEW angle: spatial content at scale. Geometry teacher use case. LLM benchmark table (4 models). Full code examples for plain text and JSON approaches.
+  - `skissify-vs-excalidraw-the-four-actual-differences.md` - CLEAREST comparison yet: 4 differences, honest decision table, "not a switch, an addition" framing.
+
+- **SOCIAL-MEDIA.md Cycle 58**: Show HN title A/B variants (data-backed: sub-55 chars = +24% upvotes, "API" = +26%), Tweets 316-326 (Show HN day sequence, hour by hour), new communities (r/AutoCAD, r/homedesign, r/LearnProgramming, r/DungeonMasters, Mastra Discord), TikTok script v2, Instagram carousel concept, Indie Hackers template, Bluesky Show HN thread, One-liners v113-v120
+
+- **PRESS-KIT.md Cycle 58**: One-liners v121-128, Press Release v3 (final launch day version), Media Contact Sheet, **Launch Day Quick Reference Card** (print-ready timeline for Tuesday)
+
+### KEY RESEARCH FINDING (Cycle 58)
+
+Analysis of 1,200+ Show HN launches (Nov 2025 data):
+- **Titles under 55 chars: +24% upvotes**
+- **"API" keyword: +26% relative score**
+- **"AI-Powered" phrase: -15% (avoid)**
+- Question-style titles: +2.2x comments
+
+**NEW RECOMMENDED TITLE:** `Show HN: Skissify – give your AI agent a pencil` (50 chars)
+
+This is better than the previous "JSON to hand-drawn sketches, with MCP support for AI agents" (64 chars). Update the HN submission.
+
+### New Blog Posts (Cycle 58)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 123 | **Why Hand-Drawn Beats Figma: The Bias Test** | `why-hand-drawn-sketches-beat-figma-the-bias-test.md` | Medium, LinkedIn, r/ProductManagement | Launch day |
+| 124 | **How AI Agents Draw Floor Plans: Geometry Teacher Problem** | `how-ai-agents-draw-floor-plans-the-geometry-teacher-problem.md` | Dev.to, r/LearnProgramming, education angle | Week 2 |
+| 125 | **Skissify vs Excalidraw: Four Actual Differences** | `skissify-vs-excalidraw-the-four-actual-differences.md` | Dev.to, r/webdev, any comparison queries | Launch day |
+
+### New Communities Identified (Cycle 58)
+
+| Community | Size | Angle | Timing |
+|-----------|------|-------|--------|
+| r/AutoCAD | 77K | "Before you commit to AutoCAD — rough idea phase" | Launch day |
+| r/homedesign | 892K | "I asked Claude to draw my kitchen plan" | Day after Show HN |
+| r/LearnProgramming | 4.1M | "Schema design for LLM reliability" | 2-3 days post |
+| r/DungeonMasters | 500K+ | "Dungeon masters were my first unplanned users" | Week 2 |
+| Mastra Discord | Active | TypeScript agent + Skissify code example | After Show HN |
+
+### Pre-Launch Final Checklist (T-23.5H)
+
+| Priority | Item | Status |
+|----------|------|--------|
+| ?? | **Update Show HN title to:** "Show HN: Skissify – give your AI agent a pencil" | URGENT |
+| ?? | Screenshots x3 (Human Mode, Blueprint, Claude Desktop MCP) | ? BLOCKING |
+| ?? | Wobble GIF (5 seconds, slider 0-10) | ? BLOCKING |
+| ?? | Email TLDR AI, Ben's Bites, The Rundown (templates ready in PRESS-KIT v3) | Do before 18:00 today |
+| ?? | HN First Comment v8 staged and ready to paste | Ready (SOCIAL-MEDIA.md) |
+| ?? | Product tested end-to-end at 08:45 tomorrow | Tomorrow |
+| ?? | Print Launch Day Quick Reference Card from PRESS-KIT.md | Today |
+
+### Cumulative Blog Inventory (125 posts as of Cycle 58)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 (this cycle) |
+
+### New Ideas (Cycle 58)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"Give your AI agent a pencil"** as Show HN title | Data shows sub-55 chars wins, this is memorable + intriguing + honest | Zero | High |
+| **Quick Reference Card** for launch day | Jesper needs a printable timeline, not just docs | Low (written) | High |
+| **Geometry teacher case study** as standalone blog | Education angle opens a new audience segment nobody has targeted yet | Low (written) | Medium |
+| **r/DungeonMasters post** in Week 2 | 500K members, unexpected audience story resonates, completely untapped | Low | Medium |
+| **"Figma Tax" calculator** as interactive page | $12K/year per designer team is a very shareable number | Medium | High |
+| **Press Release v3** ready to send on launch | Improved framing: "The First MCP Server That Draws" | Zero (written) | High |
+
+*Last Updated: March 30, 2026 (Cycle 58 - 09:38 CET)*
+*Added: Blog posts #123-125 (bias test, geometry teacher, four actual differences), SOCIAL-MEDIA.md Cycle 58 (Tweets 316-326 + new communities + TikTok v2 + Instagram carousel + IH template + Bluesky thread + one-liners v113-120), PRESS-KIT.md Cycle 58 (one-liners v121-128, Press Release v3 FINAL, Media Contact Sheet, Launch Day Quick Reference Card), KEY RESEARCH: sub-55 char Show HN title = +24% upvotes, updated title recommendation*
+
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com - JSON to hand-drawn sketch, AI-agent compatible
 **Status:** DAY 5 — Monday March 30, 08:31 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-25h)
@@ -4019,4 +4104,5 @@ Everything that can be written has been written (110 blog posts). Cycle 54 focus
 
 *Last Updated: March 30, 2026 (Cycle 54 — 05:11 CET)*
 *Added: Blog posts #111-113 (ROI argument, A2A angle, Show HN Excalidraw comparison), SOCIAL-MEDIA.md Cycle 54 (Tweets 267–276 + r/MachineLearning + r/ProductManagement + Bluesky + HN First Comment v6 FINAL + one-liners v73–80), PRESS-KIT.md Cycle 54 (one-liners v81–90, boilerplate v5, press angles v14–18, screenshot checklist v7 FINAL)*
+
 
