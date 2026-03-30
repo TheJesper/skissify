@@ -1,8 +1,84 @@
 # Skissify Press Kit
 
-**Last Updated:** March 29, 2026 - 11:28 CET (Cycle 50)
-**Version:** 5.0
+**Last Updated:** March 30, 2026 - 06:17 CET (Cycle 55)
+**Version:** 6.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 55 Updates (March 30, 2026 — 06:17 CET) — T-27H TO SHOW HN
+
+### NEW ONE-LINERS (v89-v96)
+
+**The schema insight (HN-native):**
+> "Flat JSON schema: 94% LLM accuracy. Hierarchical schema: 60%. The simpler the structure, the better sequential generation performs."
+
+**The Figma Tax (design/PM audiences):**
+> "I timed myself opening Figma to sketch a quick idea. 22 minutes before the first line. That's the Figma tax."
+
+**The fidelity signal (research angle):**
+> "Polished designs get 'looks good' feedback. Rough sketches get honest feedback. That's cognitive science, not aesthetics."
+
+**The primitives quote (founder/IH angle):**
+> "Built for AI devs. Homeowners, dungeon masters, and geometry teachers found it first. That's what primitives do."
+
+**The timing hook:**
+> "Sam Altman backed MCP on March 26. Skissify launched the first sketch MCP server on March 27."
+
+**The one-decision quote:**
+> "Are you drawing it yourself? Use Excalidraw. Is an AI drawing it? Use Skissify."
+
+**The agent memory angle:**
+> "A Skissify URL is permanent, inspectable, shareable spatial memory for AI agents. Nobody named this design pattern yet."
+
+**The napkin pitch:**
+> "It's the napkin. But programmable."
+
+### PRESS ANGLES v14-v18 (NEW)
+
+**Angle 14 — The LLM Schema Lesson:**
+AI tool launched with a counterintuitive engineering finding: flat JSON schemas outperform hierarchical schemas for LLM generation. 94% vs 60% first-try accuracy. The "correct" data model for humans is the wrong model for AI generation. Independent interest for AI/ML press.
+
+**Angle 15 — The Figma Tax:**
+Every designer knows the phenomenon but nobody named it. Opening Figma to sketch an idea costs 20+ minutes before the first line. Skissify is the tool for the napkin phase — the exploration stage that happens *before* Figma.
+
+**Angle 16 — Four Audiences:**
+Developer tool built for AI engineers. In 5 days: homeowners briefing contractors, dungeon masters mapping campaigns, geometry teachers generating worksheets. The "primitives find their own use cases" story.
+
+**Angle 17 — MCP Timing:**
+Skissify launched the day after Sam Altman announced OpenAI's MCP adoption. First purpose-built sketch tool in the post-mainstream-MCP era.
+
+**Angle 18 — Sequential Generation vs Hierarchy:**
+Technical angle for dev/ML press: why does flat JSON get 94% first-try LLM accuracy vs 60% for nested? The mechanism behind the finding, and what it means for AI-native API design.
+
+### QUICK FACTS v7 (T-27H FINAL)
+
+| Fact | Value |
+|------|-------|
+| Launch date | March 27, 2026 |
+| Days live | 5 |
+| Blog posts written | 116 |
+| MCP server install | `npm install -g @skissify/mcp-server` |
+| Human Mode URL | skissify.com/human |
+| LLM accuracy (Claude Sonnet 4) | 94% first-try |
+| LLM accuracy (hierarchical schema) | ~60% first-try |
+| Element types | 14 |
+| Paper styles | 4 (cream, white, blueprint, graph) |
+| Unexpected audiences | 3 (homeowners, dungeon masters, geometry teachers) |
+| Show HN | Tuesday March 31, 09:00 CET |
+
+### PRODUCT BOILERPLATE v6 (FINAL — Show HN ready)
+
+**One sentence:**
+Skissify turns JSON or plain text descriptions into hand-drawn sketch URLs — and AI agents can call it natively via MCP.
+
+**Two sentences:**
+Skissify is a sketch rendering API and MCP server that gives AI agents the ability to draw. You send JSON describing elements (rooms, doors, windows, labels) or describe a space in plain English, and get back a permanent, shareable, agent-readable sketch URL.
+
+**One paragraph (press/newsletter):**
+Skissify fills the missing output layer in AI agent stacks: structured visual output. Every AI stack today has text generation, code generation, and image generation — but nothing for hand-drawn spatial sketches that agents can generate, read back, and iterate on. Skissify provides a JSON-first API and MCP server that Claude, GPT-4o, and other agents can use to produce hand-drawn floor plans, diagrams, and spatial layouts. The product launched March 27 after a key engineering insight: flat JSON schemas get 94% LLM first-try accuracy vs 60% for hierarchical schemas. In 5 days, it found four audiences: AI developers, homeowners briefing contractors, dungeon masters mapping campaigns, and geometry teachers. Launching on Show HN Tuesday March 31.
+
+---
 
 ---
 

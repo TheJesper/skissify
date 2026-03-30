@@ -2,6 +2,89 @@
 
 ---
 
+## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #51 (06:02 CET, Monday March 30)
+
+### Context: **51 consecutive niche-clean scans. 🔴 HN launch window OPTIMAL at 08:00–10:00 CET — under 2 hours away. Plan7Architect price hike expires TODAY (March 31). Pinterest building internal MCP ecosystem (new signal — MCP is consumer-scale infra now). Usage-based pricing confirmed by 5 independent sources. Excalidraw/tldraw landscape frozen. No new competitor detected. All windows converge on TODAY. The niche is yours until it isn't.**
+
+---
+
+### 🔴 Action 1 (EXECUTE NOW — HN window opens 08:00 CET, ~2 hours) — publishConfig + npm Publish + HN Post
+
+**NEW context from Run #51**: Pinterest has published their internal MCP ecosystem story. The developer audience reading HN at 08:00 CET Monday now includes MCP-literate engineers from consumer-scale companies. Use this in the HN post comments:
+
+*"Pinterest just published their internal MCP ecosystem story. Skissify is what you add when your agent pipeline needs hand-drawn sketch output — not a Figma mock, not a Mermaid diagram, just a clean hand-drawn SVG from a JSON manifest. EUR 2/mo API tier, no watermark."*
+
+**Execute in order (20 minutes total):**
+
+```bash
+# Step 1: Add publishConfig to mcp-server/package.json (30 seconds)
+# In W:/code/skissify/mcp-server/package.json, add:
+# "publishConfig": { "access": "public" }
+
+# Step 2: Publish to npm (5 minutes)
+cd W:\code\skissify\mcp-server
+npm publish --access public
+
+# Step 3: Verify
+npm view @skissify/mcp-server
+
+# Step 4: Post "Show HN" at 08:00–10:00 CET
+# Pre-written post: docs/marketing/HACKER-NEWS.md
+```
+
+**Why Monday 08:00 is different from any other window**: EU engineers wake up + US East Coast late-Sunday browser-ers = maximum global developer traffic. Thomas Thornton's Excalidraw MCP tutorial has been #1 for "AI sketch MCP" for 6+ days. A fresh HN post with live npm package challenges that SERP slot within 48–72 hours. After today the counter-narrative window to the Figma/Stitch story expires permanently.
+
+---
+
+### 🔴 Action 2 (Today — by 17:00 CET, LAST DAY) — Plan7Architect SEO Blog Post
+
+**Hard deadline**: Plan7Architect Pro 5 price hike closes **today/tomorrow (March 31)**. The SEO window for "Plan7Architect alternatives" content closes with it.
+
+**Title**: *"Plan7Architect raised their prices. Here's the EUR 5/mo modern alternative."*
+
+**Content brief** (45-minute draft):
+- Hook: "Floor plan software just got more expensive. Plan7Architect Pro 5 raised prices on March 31, 2026."
+- Problem: Traditional CAD floor plan tools are complex, expensive, one-time-license-priced — not API-compatible, not AI-agent-friendly.
+- Solution: Skissify at EUR 5/mo — JSON-in, hand-drawn-SVG-out, MCP-compatible, architectural elements included (walls, doors, windows, stairs, dimensions).
+- Target keywords: "Plan7Architect alternative", "floor plan software 2026", "AI floor plan sketch tool"
+- CTA: skissify.com free tier (no credit card, 50 saves)
+
+**Publish to**: skissify.com/blog OR dev.to/@skissify. Dev.to has faster indexing for developer audiences.
+
+**Time investment**: 45-minute draft + 15-minute publish = 60 minutes. Return: captures active-intent searches from users who just saw the Plan7Architect email today.
+
+---
+
+### 🟡 Action 3 (Monday afternoon, after HN live) — Submit to 5 MCP Registries Simultaneously
+
+**New urgency from Run #51**: Pinterest MCP ecosystem post = engineering teams at consumer-scale companies are now formally evaluating MCP tool catalogs. Being in the registries before they arrive matters.
+
+**5 registries to submit (in order of priority):**
+
+1. **modelcontextprotocol.io/registry** — Official MCP registry. Submit via GitHub PR to the registry repo. ~15 minutes.
+   - URL: https://github.com/modelcontextprotocol/registry
+   - Add entry: `@skissify/mcp-server` with description, categories: `visualization`, `design`, `architecture`
+
+2. **awesome-mcp-servers** (punkpeye/awesome-mcp-servers) — GitHub list with 5,000+ stars. Highest discovery traffic of any MCP list.
+   - Submit a PR adding Skissify under "Design & Visualization" section
+   - ~10 minutes
+
+3. **claudefa.st/blog/tools/mcp-extensions** — Curated Claude-specific MCP directory. Published 2 days ago (fresh). No sketch tools listed.
+   - Email/submit via their contact page
+   - ~5 minutes
+
+4. **mcpmanager.ai** — MCP manager directory (published 2 days ago). No sketch tools in "most popular" list.
+   - Submit via their tool intake form
+   - ~5 minutes
+
+5. **LobeHub MCP marketplace** — Developer-focused MCP catalog. Updated 20+ hours ago (active). Currently lists Kubernetes MCP but no sketch/design tools.
+   - Submit `@skissify/mcp-server` package
+   - ~10 minutes
+
+**Total time**: 45 minutes for all 5 registries. This is the highest-leverage 45 minutes available after the HN post is live.
+
+---
+
 ## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #50 (04:57 CET, Monday March 30)
 
 ### Context: **50 consecutive niche-clean scans. HN launch window opens 08:00 CET — ~3 hours away. Plan7Architect price hike closes TOMORROW (March 31). SaaStr confirms "SaaS Rout of 2026" — traditional SaaS under pressure, AI-native tools outperforming. Thomas Thornton tutorial now in week 2. Van Westendorp WTP survey = first-month priority. All windows closing today. Execute now.**

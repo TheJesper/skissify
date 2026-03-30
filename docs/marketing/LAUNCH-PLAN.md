@@ -1,8 +1,64 @@
-﻿# Skissify Launch Plan
+# Skissify Launch Plan
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com - JSON to hand-drawn sketch, AI-agent compatible
-**Status:** DAY 5 — Monday March 30, 04:02 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-29h)
+**Status:** DAY 5 — Monday March 30, 06:17 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-27h)
+
+---
+
+## Marketing Improvements (Cycle 55 — March 30, 2026 — 06:17 CET)
+
+### STATUS: MONDAY LAUNCH MORNING — T-27 HOURS TO SHOW HN
+
+It's 06:17 CET Monday March 30. Show HN fires at 09:00 CET Tuesday March 31. US West Coast coming online. This is the final content cycle before launch day.
+
+**What Changed in Cycle 55:**
+- **3 new blog posts (#114-116):** 	he-tuesday-morning-test... (fidelity signal / Figma Tax), how-ai-agents-draw-floor-plans-the-constraint-approach (flat vs hierarchical schema, 94% accuracy breakdown), skissify-vs-excalidraw-the-tuesday-test (cleanest comparison yet)
+- **SOCIAL-MEDIA.md Cycle 55**: Tweets 277-286 (complete Monday arc), Show HN First Comment v6 FINAL, LinkedIn constraint argument, r/MachineLearning post, r/ProductManagement Figma Tax, one-liners v81-88
+- **New viral hooks**: "The Figma Tax", "Constraint beats hierarchy (94% vs 60%)", "The Tuesday Test"
+
+### Today's Priority Actions (Monday March 30)
+
+| Priority | Time (CET) | Action | Status |
+|----------|-----------|--------|--------|
+| 1 🔴 | **MORNING** | Screenshot: Human Mode flow | ❌ BLOCKING |
+| 2 🔴 | **MORNING** | Screenshot: Blueprint floor plan | ❌ BLOCKING |
+| 3 🔴 | **MORNING** | Screenshot: Claude Desktop + MCP | ❌ BLOCKING |
+| 4 🔴 | **TODAY** | Human Mode: live and tested | ❌ BLOCKING |
+| 5 🟠 | **TODAY** | Wobble GIF (5 seconds, slider 0→10) | ❌ |
+| 6 🔴 | **TODAY** | Email TLDR AI + The Rundown + Ben's Bites | ❌ |
+| 7 🟡 | 06:30 | Tweet 277 (launch morning energy) | Ready |
+| 8 🟡 | 08:00 | Tweet 278 (Sam Altman timing) | Ready |
+| 9 🟡 | 09:00 | Tweet 279 (four audiences viral hook) | Ready |
+| 10 🟡 | 10:00 | Tweet 280 (schema constraint insight) | Ready |
+| 11 🟡 | 11:00 | Tweet 281 (Figma Tax) + r/MachineLearning | Ready |
+| 12 🟡 | 11:00 | LinkedIn constraint argument post | Ready |
+| 13 🟡 | 14:00 | Tweet 283 (Human Mode) + r/ProductManagement | Ready |
+| 14 🟡 | 22:00 | Tweet 286 (final eve) | Ready |
+| 15 ⏰ | **TUE 08:45** | Wake up. Coffee. Final breath. | — |
+| 16 ⏰ | **TUE 09:00** | SUBMIT Show HN | — |
+| 17 ⏰ | **TUE 09:05** | Post HN First Comment v6 | Ready |
+
+### New Blog Posts (Cycle 55)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 114 | **The Tuesday Morning Test** | 	he-tuesday-morning-test-why-rough-sketches-get-better-feedback.md | Medium, LinkedIn, r/UXDesign | Monday-Tuesday |
+| 115 | **The Constraint Approach (AI Floor Plans)** | how-ai-agents-draw-floor-plans-the-constraint-approach.md | Dev.to, r/MachineLearning | Monday |
+| 116 | **Skissify vs Excalidraw: The Tuesday Test** | skissify-vs-excalidraw-the-tuesday-test.md | Dev.to, r/webdev, r/mcp | Monday-Tuesday |
+
+### Cumulative Blog Inventory (116 posts as of Cycle 55)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 55 — 06:17 CET)*
+
+---
 
 ---
 
@@ -3819,3 +3875,4 @@ Everything that can be written has been written (110 blog posts). Cycle 54 focus
 
 *Last Updated: March 30, 2026 (Cycle 54 — 05:11 CET)*
 *Added: Blog posts #111-113 (ROI argument, A2A angle, Show HN Excalidraw comparison), SOCIAL-MEDIA.md Cycle 54 (Tweets 267–276 + r/MachineLearning + r/ProductManagement + Bluesky + HN First Comment v6 FINAL + one-liners v73–80), PRESS-KIT.md Cycle 54 (one-liners v81–90, boilerplate v5, press angles v14–18, screenshot checklist v7 FINAL)*
+
