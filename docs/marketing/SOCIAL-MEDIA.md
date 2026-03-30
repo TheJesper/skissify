@@ -18017,3 +18017,387 @@ Homeowner: #FloorPlan #HomeDesign #AIHome #RenovationPlanning
 
 *Last Updated: March 30, 2026 (Cycle 65 - 17:34 CET)*
 *Added: Tweets 411-425 (full PH launch day arc), PH First Comment v3 (Final), PH comment templates, PH Day Hashtag Stack, r/producthunt post, Indie Hackers PH Milestone post*
+
+---
+
+## CYCLE 66 - MONDAY MARCH 30, 2026 → PRODUCT HUNT APRIL 1 - 18:41 CET
+
+### STATUS: 🚀 PRODUCT HUNT IN T-14.5H (09:01 CET APRIL 1) | 147→150 POSTS | CYCLE 66
+
+---
+
+### Tweets 426-440 — PH Final Countdown + April 1 Day Arc (Final Prep)
+
+**Tweet 426 - Final Monday night (post 21:00 CET tonight)**
+```
+T-12h to Product Hunt.
+
+I'm not sleeping. I'm writing.
+
+Tomorrow is April Fools Day. We chose it on purpose.
+
+Here's why: the best filter for a product called Skissify is people who look at it, think "wait is this a joke?", try the demo anyway, and become users.
+
+Skepticism → curiosity → actual use.
+
+That's the funnel we're betting on.
+
+skissify.com ↓
+```
+
+**Tweet 427 - April Fools framing for PH day (post April 1, 09:01 CET IMMEDIATELY after launch)**
+```
+We're live on Product Hunt. It's April Fools Day.
+
+The product is real. The demo works. The JSON → sketch pipeline has a 94% first-try LLM success rate.
+
+Here's what you'll find if you click: skissify.com/editor
+
+[GIF of JSON → sketch rendering]
+
+We'll be here all day. Ask us anything.
+
+→ [PH link]
+```
+
+**Tweet 428 - April 1 meta-hook (post 09:30 CET)**
+```
+Hot take for April Fools Day:
+
+A product that makes people say "wait, is this real?" is better than one that makes them say "oh, another AI tool."
+
+We get 5 seconds to earn attention. Confusion is more memorable than polish.
+
+Skissify is on Product Hunt today. It's not a joke.
+```
+
+**Tweet 429 - Schema science thread starter (post 10:00 CET)**
+```
+Why does Skissify get 94% LLM first-try accuracy on floor plan JSON?
+
+The schema design. Thread 🧵
+
+[1/5] The first version used a hierarchical schema: room → walls → corners → coordinates. Logical. Disastrous. 61% success rate.
+```
+
+**Tweet 430 - Schema thread 2/5 (post immediately after 429)**
+```
+[2/5] The problem: LLMs get confused by nesting depth.
+
+They'd put rooms inside walls. Forget to close arrays. Generate valid-looking JSON that described physically impossible spaces.
+
+The fix: make everything flat.
+```
+
+**Tweet 431 - Schema thread 3/5**
+```
+[3/5] Flat schema: every element (wall, door, window, furniture) is a sibling in a top-level shapes array.
+
+No hierarchy. No nesting.
+
+LLMs have one context level to track instead of four.
+
+Result: 94% first-try.
+```
+
+**Tweet 432 - Schema thread 4/5**
+```
+[4/5] The wobble is separate from the schema.
+
+One global parameter (0-10) controls how hand-drawn it looks.
+
+0 = architectural precision
+10 = looks like you drew it after coffee #5
+
+We tune it per-paper style: napkin gets 4-6, blueprint gets 2-3.
+```
+
+**Tweet 433 - Schema thread 5/5 + CTA**
+```
+[5/5] The schema is open.
+
+Your agents can read it, write it, inspect a URL, modify the JSON, and regenerate.
+
+A sketch URL is inspectable state. Not a black-box image.
+
+This is the thing that makes it work for multi-agent pipelines.
+
+Try it: skissify.com (it's on Product Hunt today)
+```
+
+**Tweet 434 - Midday data/social proof (post 12:00 CET April 1)**
+```
+4 hours into Product Hunt.
+
+Still here. Still answering every comment.
+
+If you've tried Skissify today — what did you sketch? Reply and I'll retweet the best ones.
+
+(The dungeon maps are already winning.)
+```
+
+**Tweet 435 - "Unexpected audiences" hook (post 14:00 CET)**
+```
+I built Skissify for AI developers.
+
+Here's who showed up:
+
+1. Homeowners briefing contractors
+2. Dungeon masters generating maps
+3. Geometry teachers making diagrams
+4. PMs who hate waiting for design mockups
+
+Primitives find their own use cases. Every time.
+```
+
+**Tweet 436 - Human Mode angle (post 15:30 CET)**
+```
+Hot-take: most AI tools are for people who are already developers.
+
+Skissify has a Human Mode. Describe your room in plain text. No JSON. No prompts. Just: "small apartment, open kitchen, 2 bedrooms."
+
+You get a hand-drawn floor plan.
+
+The homeowners found it before we announced it.
+```
+
+**Tweet 437 - PH wind-down / thank you (post 18:00 CET April 1)**
+```
+We've been on Product Hunt for 9 hours.
+
+Thank you to everyone who upvoted, commented, tried the demo, or told us our sketches look like a 7-year-old drew them.
+
+(That's the point.)
+
+Skissify: give your AI agent a pencil.
+
+→ skissify.com
+```
+
+**Tweet 438 - "It's not a joke" closing hook (post 20:00 CET April 1)**
+```
+We launched on April Fools Day.
+
+Prediction: you'll remember that more than if we launched on a Tuesday in February.
+
+For better or for worse — that's the experiment.
+
+Thanks for being part of it. 🎨
+```
+
+**Tweet 439 - Post-PH retrospective teaser (post 22:00 CET April 1)**
+```
+Launching on April Fools Day: a build-in-public retrospective.
+
+Going up tomorrow. Real numbers. Honest mistakes. The three things that worked.
+
+The biggest surprise: [spoiler: it wasn't the dungeon masters]
+
+Follow for the post-mortem.
+```
+
+**Tweet 440 - Post-PH build-in-public (post April 2)**
+```
+Numbers from launching on April Fools Day.
+
+[fill in: X signups / Y sketches created / Z upvotes]
+
+The April 1 funnel played out exactly as predicted:
+
+1. "Wait is this real?"
+2. They try the demo
+3. They become users
+
+Skepticism → curiosity → use.
+
+Full write-up: [link]
+```
+
+---
+
+### Product Hunt First Comment v3 — FINAL (paste at 09:01 CET April 1)
+
+```
+Hi Product Hunt! 👋
+
+Yes, it's April Fools Day. No, this is not a joke.
+
+Skissify is a sketch tool built for AI agents. You give it JSON (or plain text), it gives you a hand-drawn floor plan, diagram, or wireframe URL you can share or embed.
+
+The 3-minute demo path:
+1. Open skissify.com/editor
+2. Paste the example JSON (it's pre-loaded)
+3. Watch it render as a hand-drawn sketch
+4. Change any coordinate and see it update live
+
+**The MCP path (if you use Claude Desktop):**
+Add 4 lines to your config, ask Claude to "draw me a floor plan for a small apartment." It calls Skissify. You get a URL.
+
+**What nobody expected:**
+- Homeowners started using it to brief contractors ("here's what I'm thinking")  
+- Dungeon masters started generating maps ("blueprint style + rectangle = dungeon room")
+- Geometry teachers started making spatial diagrams for students
+
+We built this for agent developers. The product found its own audiences.
+
+**Why hand-drawn and not polished?**
+Rough sketches invite honest feedback. A polished mockup makes people argue about button colors. A sketch makes people say "yes" or "the kitchen needs to be bigger." That's the right conversation at the right time.
+
+I'm here all day answering every question. Fire away.
+
+Technical questions I love: schema design, wobble algorithm, LLM accuracy benchmarks, multi-agent patterns.
+
+Questions I also love: "did you really launch on April Fools on purpose?" (yes) and "what does the dungeon master integration actually look like?" (here's the JSON...)
+```
+
+---
+
+### r/producthunt Post — April 1 Launch Thread
+
+**Title:** Show r/producthunt: Skissify - I launched on April Fools Day on purpose. Here's the product + the reasoning.
+
+**Post:**
+```
+Hey r/producthunt 👋
+
+Skissify launched on Product Hunt today. It converts JSON (or plain text) into hand-drawn sketch URLs. Built primarily for AI agents and MCP workflows, but ended up being used by homeowners, dungeon masters, and geometry teachers.
+
+The April 1 strategy:
+
+Most people see "April Fools Day launch" as a liability. I saw it as a filter. The people who click anyway — who see something that looks like it might be a joke and try it anyway — are exactly the people who become power users. Curiosity > polish as an acquisition strategy.
+
+Real stats from 5 days of launch:
+- 94% LLM first-try JSON accuracy (flat schema beat hierarchical by 33 points)
+- 4 unplanned audience segments
+- The homeowners found Human Mode before we announced it
+
+Today's our Product Hunt day. Would love feedback from this community specifically on: does the April Fools framing hurt us? Help us? Neutral?
+
+Link: [PH link]
+```
+
+---
+
+### PH Comment Response Templates
+
+**Response to "How is this different from Excalidraw?"**
+```
+Great question — the difference is who's drawing.
+
+Excalidraw is for humans with a mouse. It's excellent at that.
+
+Skissify is for AI agents via code/MCP. The JSON schema was designed from scratch to be something LLMs produce accurately — flat structure, 6 element types, explicit wobble controls. Our LLM first-try accuracy is 94% vs ~60-70% for community Excalidraw wrappers.
+
+You can also use both in sequence: Skissify for AI first-pass, Excalidraw for human refinement.
+```
+
+**Response to "Why hand-drawn and not clean vector?"**
+```
+Intentional design decision.
+
+Rough sketches lower the cognitive cost of giving feedback. A polished mockup makes people critique button colors. A sketch makes them say "yes" or "that wall is load-bearing."
+
+We call it the fidelity effect: the roughness of your output signals to the viewer what kind of response you want. Hand-drawn says "this is for discussion." Figma mockup says "this is decided."
+
+For AI agent workflows especially, hand-drawn is the right output fidelity for first-pass spatial reasoning.
+```
+
+**Response to "Is this just for floor plans?"**
+```
+Floor plans are the demo case but no — anything spatial works:
+- Wireframes
+- System architecture diagrams  
+- Dungeon maps (r/DnD found us)
+- Garden layouts
+- Classroom spatial math exercises
+
+The schema supports rects, circles, lines, doors, windows, and text labels. If your content can be described as shapes with positions, Skissify can render it.
+```
+
+---
+
+### Trending Hashtag Stack — PH Day April 1
+
+**Morning posts (09:00-12:00 CET):**
+`#ProductHunt #AprilFools #BuildInPublic #MCP #AIAgents #SketchFirst`
+
+**Technical posts:**
+`#MCP #AIAgents #JSONSchema #LLM #Claude #ModelContextProtocol`
+
+**Consumer/viral posts:**
+`#VibeDrawing #SketchFirst #HandDrawn #FloorPlan #AIDesign #HomeDesign`
+
+**Build-in-public posts:**
+`#BuildInPublic #IndieHacker #SoloFounder #Launched #SideProject`
+
+---
+
+### Bluesky Thread — April Fools Day Launch
+
+**Post 1:**
+```
+We launched on Product Hunt today. It's April Fools Day. We did it on purpose.
+
+The theory: skepticism → curiosity → genuine use is a better funnel than polished announcement → polite scroll-past.
+
+Skissify: JSON → hand-drawn sketch URL. Built for AI agents.
+
+skissify.com
+```
+
+**Post 2:**
+```
+The April 1 funnel in practice:
+
+1. User sees Skissify on PH on April 1
+2. "Wait, is this a joke?"
+3. They check the demo
+4. "Oh it actually works"
+5. They are now engaged users who self-qualified
+
+The filter is the feature.
+```
+
+**Post 3:**
+```
+For the Bluesky dev community specifically:
+
+MCP integration is 4 lines in your Claude Desktop config. Ask Claude to draw a floor plan. It calls Skissify. You get a URL with inspectable JSON.
+
+The schema is flat, open, and versioned. Your agents can decode + modify it.
+
+Technical docs: skissify.com/docs
+```
+
+---
+
+### Indie Hackers PH Milestone Post
+
+**Title:** We launched on April Fools Day. Here's why and what happened.
+
+**Body:**
+```
+Skissify went live on Product Hunt today (April 1).
+
+Yes, on purpose.
+
+Here's the thinking: a product that makes someone say "wait, is this a joke?" requires them to look closer. That second look is the engagement. Products that look polished and obvious get a scroll-past. Products that create a moment of confusion earn a click.
+
+We're a sketch tool for AI agents. JSON → hand-drawn floor plan URL. MCP native. Free tier.
+
+What happened in 5 launch days before PH:
+- Built for AI developers
+- Found by homeowners, dungeon masters, geometry teachers
+- 94% LLM first-try accuracy on floor plan JSON
+- Show HN on March 31
+
+What I'm tracking today:
+- PH upvotes and comment quality
+- Trial-to-signup conversion from PH
+- Whether the April 1 framing helped or hurt
+
+I'll post a full retrospective tomorrow with real numbers.
+
+If you're reading this on PH day: thank you for clicking despite the date.
+```
+

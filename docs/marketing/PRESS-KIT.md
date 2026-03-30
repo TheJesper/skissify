@@ -3242,3 +3242,127 @@ PRODUCT HUNT: [PH link]
 
 *Last Updated: March 30, 2026 (Cycle 65 - v15.0)*
 *Added: One-liners v206-215 (PH day edition), Screenshot Checklist v13 (PH final gallery), Media Angles v51-55 (PH day angles), Press Release Draft v2 (full PH launch version), Founder Bio v4 (added April Fools launch context)*
+
+---
+
+## PRESS-KIT v16.0 — Cycle 66 — March 30, 2026 (18:41 CET)
+
+### One-Liners v216-v230 — PH Day Eve + April Fools Edition
+
+**v216 (emotional):** "I built a sketch tool. It launches tomorrow. On April Fools Day. On purpose."  
+**v217 (technical):** "94% LLM first-try accuracy on spatial JSON. The schema is 90% of the product."  
+**v218 (minimal):** "JSON in. Hand-drawn sketch out. Free tier. Launches April 1."  
+**v219 (April Fools lead):** "Not a prank. Skissify converts JSON to hand-drawn sketches. AI agents love it. Homeowners found it anyway."  
+**v220 (fidelity angle):** "Rough on purpose. A hand-drawn sketch gets better feedback than a Figma mockup. Always."  
+**v221 (MCP angle):** "Every MCP server retrieves or processes. Ours draws. That's the gap we fill."  
+**v222 (unexpected audiences):** "Built for AI developers. Used by homeowners, dungeon masters, and geometry teachers. Classic primitive."  
+**v223 (filter theory):** "The best product launch filter: make them wonder if it's a joke. The curious ones become users."  
+**v224 (April 1 meta):** "Launching on April Fools Day. The product that survives the skepticism is the product worth building."  
+**v225 (for journalists):** "Skissify is the visual output primitive AI agent stacks have been missing. It launched on April Fools Day because the founder is either brilliant or reckless. Jury's still out."  
+**v226 (concise):** "Give your AI agent a pencil. That's Skissify."  
+**v227 (schema):** "Flat JSON schema. 94% LLM accuracy. Free tier. The technical decision that made the whole thing work."  
+**v228 (human mode):** "No JSON? Use Human Mode. Describe your room. Get a sketch. No developer skills required."  
+**v229 (memorable):** "The wobble is intentional. A sketch that looks hand-drawn invites better feedback."  
+**v230 (closing):** "We're on Product Hunt today. It's April 1. We're not joking."
+
+---
+
+### Screenshot Checklist v14 — PH Final Gallery
+
+**BLOCKING (must have):**
+- [ ] P0-A: Human Mode side-by-side (text input left, sketch output right) — THE conversion screenshot
+- [ ] P0-B: PH Banner 1270×760 — Claude Desktop with MCP call visible in sidebar, sketch in main panel
+
+**HIGH PRIORITY:**
+- [ ] P1-A: Blueprint dungeon map (dark paper, white lines, 4 rooms + corridors)
+- [ ] P1-B: Napkin floor plan with labeled rooms (living room, kitchen, 2 beds)
+- [ ] P1-C: JSON → sketch split view (code editor left, rendered sketch right)
+
+**NICE TO HAVE:**
+- [ ] P2-A: Wobble slider at 0 vs 10 side-by-side
+- [ ] P2-B: All 4 paper styles tiled (napkin, blueprint, graph, textured)
+- [ ] P2-C: Multi-agent pipeline diagram showing sketch URL as state
+
+---
+
+### Media Angles v56-v60 — April 1 Launch Edition
+
+**Angle 56: "The April Fools Founder"**
+Solo founder deliberately launches on April Fools Day as a filter mechanism. The theory: skepticism → curiosity → genuine engagement beats polished announcement → scroll-past. Tested live on Product Hunt. Results pending.
+
+**Angle 57: "The Primitive Thesis Validated"**
+Built for AI developers. Four unplanned audiences showed up: homeowners, dungeon masters, educators, PMs. Classic "built a primitive, it found its own use cases" story. Most quotable: "I built it for one audience. The product found the others."
+
+**Angle 58: "94% and Why It Matters"**
+Schema design decision (flat over hierarchical) improved LLM accuracy from 61% to 94% on spatial JSON generation. The single best technical story from the launch. Data-backed, counterintuitive, independently valuable.
+
+**Angle 59: "The Missing Visual Layer"**
+12,000+ MCP servers. Nearly none produce visual output. One does. The AI agent stack (text/code/data/image) was missing structured spatial output. Skissify fills that gap.
+
+**Angle 60: "The Wobble Algorithm"**
+The most technically interesting detail: how do you make AI-generated sketches look hand-drawn without looking broken? Multi-harmonic sinusoidal distortion tuned to amplitude 4-6 for napkin style, 2-3 for blueprint. The craft behind the rough aesthetic.
+
+---
+
+### Press Release v3 — April 1 Launch Version
+
+**FOR IMMEDIATE RELEASE — April 1, 2026**
+
+**SKISSIFY LAUNCHES ON PRODUCT HUNT ON APRIL FOOLS DAY. THE PRODUCT IS REAL.**
+
+*Stockholm, Sweden — April 1, 2026* — Skissify, a hand-drawn sketch tool built for AI agents, launched today on Product Hunt. The launch date — April Fools Day — was chosen deliberately.
+
+"A product that makes someone ask 'wait, is this real?' earns a second look," said Jesper Landmér, founder of Skissify. "The people who check the demo anyway are exactly the right users."
+
+Skissify converts JSON (or plain text via Human Mode) into hand-drawn sketch URLs, with a native Model Context Protocol (MCP) server for integration with Claude Desktop, Mastra, LangGraph, and other AI agent frameworks. The product launched publicly on March 27, 2026.
+
+**Key metrics:**
+- 94% LLM first-try accuracy on spatial JSON generation (flat schema design)
+- 4 unplanned user segments discovered in 5 days: AI developers, homeowners briefing contractors, dungeon masters generating maps, geometry teachers
+- 147 blog posts written during launch week
+
+**Technical differentiation:** Skissify's flat JSON schema was designed specifically to maximize LLM generation accuracy. Independent benchmarks show ~60-70% first-try success with community Excalidraw wrappers vs 94% with Skissify's purpose-built schema.
+
+**The April Fools thesis:** Skepticism → curiosity → genuine use is a better acquisition funnel than polished announcement → scroll-past. Results from today's Product Hunt launch will be published in a post-mortem on April 2.
+
+**Try it:** skissify.com  
+**Product Hunt:** producthunt.com/posts/skissify  
+**Contact:** [founder email]
+
+---
+
+### Product Hunt First Comment — Launch Day (REVISED v4)
+
+Use this at 09:01 CET on April 1:
+
+```
+Hi Product Hunt! 🎨
+
+Yes, it's April Fools Day. No, this is not a joke. We picked the date on purpose.
+
+The theory: a product that makes you ask "wait, is this real?" earns a second look. The people who try it anyway are the users worth having.
+
+**What Skissify does:**
+JSON → hand-drawn sketch URL. Or plain text → sketch (Human Mode). MCP native.
+
+**The 3-minute test:**
+1. skissify.com/editor
+2. The example JSON is pre-loaded
+3. Watch it render as a hand-drawn sketch
+4. Modify any value, see it update live
+
+**For agent developers:**
+4 lines in your Claude Desktop config. Ask Claude to "draw a floor plan for a small apartment." Done.
+
+**What we didn't expect:**
+- Homeowners briefing contractors
+- Dungeon masters generating maps (blueprint paper style = instant dungeon map aesthetic)
+- Geometry teachers making spatial diagrams
+
+We built this for one audience. Four found it.
+
+I'm here all day. Ask me anything: the schema design (flat beats hierarchical by 33 accuracy points), the wobble algorithm (multi-harmonic sinusoidal distortion), why we chose hand-drawn over crisp vector, or why we launched on April 1.
+
+Let's go. 🚀
+```
+

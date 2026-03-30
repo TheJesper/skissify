@@ -2,6 +2,71 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #65 (18:06 CET, Monday March 30)
+
+### Context: **65 consecutive niche-clean scans. HN thread "I use Excalidraw to manage diagrams for my blog" LIVE (2h ago) — developer DIY MCP+Excalidraw+OAuth = your exact customer. Plan7Architect SEO window has now EXPIRED (price hike deadline passed). Thomas Thornton SERP slot 11+ days — still open. mysiteplan.com fresh floor plan roundup (6 days) = zero agent-compatible tools at $7.99–49/mo confirming EUR 5/mo gap. 353/2000 Brave quota used.**
+
+---
+
+### 🔴 Action 1 (TONIGHT / TOMORROW MORNING — HN Thread Comment, highest-ROI action available)
+
+**What**: Comment on the live HN thread: https://news.ycombinator.com/item?id=47571376
+
+**The thread**: Developer built custom Payload CMS block + DIY MCP server with OAuth to generate/update Excalidraw diagrams via Claude Code. This is your EXACT target customer paying with engineering hours instead of EUR 2/mo.
+
+**What to write** (be genuine, not promotional — the HN audience will smell spam):
+> "This is the exact problem we're building Skissify for — JSON in, hand-drawn SVG out, MCP-native. We noticed developers spending weekends on Excalidraw+MCP stacks and built a EUR 2/mo API Starter instead. The schema is open and the rendering is designed to be called by agents, not humans. Happy to share early access if you want to see if it fits your Payload CMS use case."
+
+**Why now**: The thread is 2 hours old. Top HN comments get the most visibility in the first 4–6 hours. This window is open right now and closes tonight.
+
+**Expected outcome**: Direct early adopter interest from the developer who wrote the post + the HN audience who upvoted it (all developers solving the same problem).
+
+---
+
+### 🔴 Action 2 (TOMORROW — publishConfig fix + npm publish, been pending for days)
+
+**What**: Fix the 30-second blocker and publish:
+```bash
+# In W:/code/skissify/mcp-server/package.json, add:
+"publishConfig": { "access": "public" }
+
+# Then:
+cd W:/code/skissify/mcp-server && npm publish --access public
+```
+
+**Then submit to (priority order)**:
+1. **claudefa.st** (updated every 18–24h, Claude Code audience, highest conversion)
+2. **modelcontextprotocol.io/registry**
+3. **awesome-mcp-servers** (GitHub PR)
+4. **toolradar.com** (MCP meta-discovery layer — gives access to enterprise agent discovery)
+5. **LobeHub** + **mcpmanager.ai**
+
+**Why still urgent**: The HN developer from Action 1 will search for Skissify after seeing the comment. If `@skissify/mcp-server` doesn't exist on npm, the conversion dies instantly. npm publish is the single action that turns the HN comment from a vanity play into a real acquisition.
+
+---
+
+### 🟢 Action 3 (THIS WEEK — "Why I built Skissify instead of hacking Excalidraw" blog post)
+
+**What**: Write a technical blog post from the founder's perspective using the HN thread as the opening hook.
+
+**Opening hook**:
+> "Yesterday a developer on HN described spending a weekend building a custom Payload CMS block + MCP server with OAuth to get programmatic hand-drawn diagrams for their blog. I saw the thread and thought: that's exactly why I built Skissify."
+
+**Structure**:
+1. The DIY problem (HN thread as evidence)
+2. Why Excalidraw+MCP is always going to be a hack (internal format, not agent-designed)
+3. What a JSON-native approach looks like (Skissify schema example)
+4. Floor plan example: same JSON, 3 rendering styles
+5. EUR 2/mo API Starter — the anti-DIY price
+
+**SEO targets**: "excalidraw mcp alternative", "programmatic hand-drawn diagram API", "JSON to SVG hand-drawn", "AI agent diagram tool"
+
+**Publish to**: skissify.com/blog + dev.to/@skissify + share in the HN thread (after it gains traction)
+
+**Why this post wins**: The HN thread is SEO evidence of active demand for exactly this topic. A blog post titled "Why I built Skissify instead of hacking Excalidraw+MCP" will rank for searches that the HN thread already validated.
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #64 (17:02 CET, Monday March 30)
 
 ### Context: **64 consecutive niche-clean scans. Thomas Thornton SERP slot 10+ days old — uncontested. "Agentic SaaS pricing" named category in European Business Review (5 days ago). Construction drawing market validated as EUR 5/mo adjacent gap. MCP now conference keynote topic (Datasciencedojo). Plan7Architect price hike window closes TONIGHT (absolute last call). Publish or lose the SEO window.**
