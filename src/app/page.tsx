@@ -214,6 +214,8 @@ function EditorInner({
     commitRotate,
     copySelected,
     pasteElements,
+    pasteInPlace,
+    selectSameType,
     colorSelected,
     strokeWidthSelected,
     fillColorSelected,
@@ -322,6 +324,12 @@ function EditorInner({
           copySelected();
           pasteElements();
           break;
+        case "paste-in-place":
+          pasteInPlace();
+          break;
+        case "select-same-type":
+          selectSameType();
+          break;
         case "copy":
           copySelected();
           break;
@@ -362,7 +370,7 @@ function EditorInner({
           break;
       }
     },
-    [copySelected, pasteElements, reorderSelected, alignSelected, toggleLockSelected, groupSelected, ungroupSelected, deleteSelected, selectedElements, handleDoubleClickElement]
+    [copySelected, pasteElements, pasteInPlace, selectSameType, reorderSelected, alignSelected, toggleLockSelected, groupSelected, ungroupSelected, deleteSelected, selectedElements, handleDoubleClickElement]
   );
 
   const handlePrint = useCallback(() => {
@@ -480,9 +488,14 @@ function EditorInner({
           e.preventDefault();
           copySelected();
         }
-        if (e.key === "v" && !isInput) {
+        if (e.key === "v" && !isInput && !e.shiftKey) {
           e.preventDefault();
           pasteElements();
+        }
+        if (e.key === "V" && e.shiftKey && !isInput) {
+          // Ctrl+Shift+V = paste in place (no offset)
+          e.preventDefault();
+          pasteInPlace();
         }
         if (e.key === "d" && !isInput && selectedElements.size > 0) {
           e.preventDefault();
@@ -533,7 +546,7 @@ function EditorInner({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, pasteInPlace, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode]);
 
   // Compute the color of the first selected element (for per-element color picker)
   const selectedColor: string | undefined = (() => {

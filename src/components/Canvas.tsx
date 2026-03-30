@@ -1317,6 +1317,8 @@ export default function Canvas({
     }
     actions.push({ id: "duplicate", icon: "⧉", label: count > 1 ? `Duplicate (${count})` : "Duplicate" });
     actions.push({ id: "copy", icon: "⎘", label: count > 1 ? `Copy (${count})` : "Copy" });
+    actions.push({ id: "paste-in-place", icon: "📌", label: "Paste in Place" });
+    actions.push({ id: "select-same-type", icon: "⬡", label: "Select Same Type" });
 
     actions.push({ id: "bring-front", icon: "⬆⬆", label: "Bring to front", separator: true });
     actions.push({ id: "send-back",  icon: "⬇⬇", label: "Send to back" });

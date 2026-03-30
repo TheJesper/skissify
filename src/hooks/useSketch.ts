@@ -414,6 +414,36 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setSelectedElements(pastedIndices);
   }, [sketch.elements, updateSketch]);
 
+  /** Paste in place — paste copied elements at their original position (no offset). */
+  const pasteInPlace = useCallback(() => {
+    if (clipboardRef.current.length === 0) return;
+    const pasted = [...clipboardRef.current] as SketchData["elements"];
+    const newElements = [...sketch.elements, ...pasted];
+    const pastedIndices = new Set(
+      Array.from({ length: pasted.length }, (_, i) => sketch.elements.length + i)
+    );
+    updateSketch({ elements: newElements });
+    setSelectedElements(pastedIndices);
+  }, [sketch.elements, updateSketch]);
+
+  /**
+   * Select all elements of the same type as the currently selected element(s).
+   * If nothing is selected, does nothing.
+   */
+  const selectSameType = useCallback(() => {
+    if (selectedElements.size === 0) return;
+    // Collect types of currently selected elements
+    const types = new Set(
+      Array.from(selectedElements).map((i) => sketch.elements[i]?.type).filter(Boolean)
+    );
+    const matching = new Set(
+      sketch.elements
+        .map((el, i) => (types.has(el.type) ? i : -1))
+        .filter((i) => i >= 0)
+    );
+    setSelectedElements(matching);
+  }, [sketch.elements, selectedElements]);
+
   /** Set the color of all selected elements */
   const colorSelected = useCallback(
     (color: string) => {
@@ -936,6 +966,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     commitRotate,
     copySelected,
     pasteElements,
+    pasteInPlace,
+    selectSameType,
     colorSelected,
     rotateSelected,
     redraw,

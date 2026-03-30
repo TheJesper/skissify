@@ -642,20 +642,55 @@ function renderElement(
       const isVertical = Math.abs(x2 - x1) < Math.abs(y2 - y1);
       // Use el.fontFamily (per-element override) or sketch.dimFont; pass as fontFamily on text el
       const dimFontKey = (el.fontFamily as SkissifyFont | undefined) ?? sketch.dimFont;
-      renderElement(ctx, {
-        type: "text",
-        x: isVertical ? midX + px * 8 : midX,
-        y: isVertical ? midY + py * 8 : midY - 8,
-        content: label,
-        size: 9,
-        color,
-        // fontFamily on text element overrides sketch.textFont inside renderElement
-        ...(dimFontKey ? { fontFamily: dimFontKey } : {}),
-      } as import("./types").TextElement, idx + 600, {
-        // Pass a sketch with textFont = dimFont so the dim label uses the right font
-        ...sketch,
-        textFont: dimFontKey ?? sketch.dimFont ?? sketch.textFont,
-      });
+      const labelFontCss = resolveFontCss(dimFontKey, "'Courier New', monospace");
+      const labelSize = 9;
+
+      if (isVertical) {
+        // For vertical dim lines, rotate the label 90° CCW so it runs along the line.
+        // Place it offset perpendicular to the line (i.e., to the left/right depending on px).
+        // px points perpendicular to the line; for a purely vertical line x1=x2, px = -(y2-y1)/dist.
+        // We draw centered on the midpoint, offset px * 16 outward.
+        const labelColor = sketch.paper === "blueprint" ? "#e0f0ff" : color;
+        ctx.save();
+        ctx.translate(midX + px * 16, midY);
+        ctx.rotate(-Math.PI / 2);
+        // Light jitter for hand-drawn feel
+        const jy = (rng() - 0.5) * opts.amplitude * 0.4;
+        const rot2 = (rng() - 0.5) * opts.amplitude * 0.008;
+        ctx.rotate(rot2);
+        ctx.font = `${labelSize}px ${labelFontCss}`;
+        ctx.fillStyle = labelColor;
+        ctx.globalAlpha = 0.88 + rng() * 0.12;
+        ctx.textAlign = "center";
+        ctx.fillText(label, 0, jy + labelSize * 0.35);
+        ctx.textAlign = "left"; // reset
+        ctx.restore();
+      } else {
+        // Horizontal dim: draw label centered above the line
+        // Pre-measure total width so we can center it at midX
+        const labelColor = sketch.paper === "blueprint" ? "#e0f0ff" : color;
+        ctx.save();
+        ctx.font = `${labelSize}px ${labelFontCss}`;
+        const totalW = ctx.measureText(label).width;
+        const startX = midX - totalW / 2;
+        const baseY = midY - 8;
+        ctx.fillStyle = labelColor;
+        // Character-by-character jitter for hand-drawn feel
+        let cx3 = startX;
+        for (let i = 0; i < label.length; i++) {
+          const cw = ctx.measureText(label[i]).width;
+          const jy = (rng() - 0.5) * opts.amplitude * 0.4;
+          const rot2 = (rng() - 0.5) * opts.amplitude * 0.01;
+          ctx.save();
+          ctx.globalAlpha = 0.88 + rng() * 0.12;
+          ctx.translate(cx3, baseY + jy);
+          ctx.rotate(rot2);
+          ctx.fillText(label[i], 0, 0);
+          ctx.restore();
+          cx3 += cw;
+        }
+        ctx.restore();
+      }
       break;
     }
 
