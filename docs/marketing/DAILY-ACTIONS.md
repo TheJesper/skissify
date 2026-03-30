@@ -2,6 +2,67 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #60 (12:39 CET, Monday March 30)
+
+### Context: **60 consecutive niche-clean scans. 🔴 Plan7Architect price hike closes TODAY (March 31) — ABSOLUTE FINAL HOURS for SEO blog post. Thomas Thornton SERP slot now 9+ days — challengeable TODAY. NEW: SaaSpocalypse framing confirmed (saassimply.com, 3 days ago) + solo-founder $5K–$50K/mo range documented (globalpublicist24.com, 1 week ago) + graphically.io confirms hand-drawn demand in OPPOSITE direction (all traffic goes sketch→digital; Skissify owns digital→sketch unclaimed). MCP confirmed essential infrastructure by Domo, WorkOS, DEV Community this week. The niche is uncontested for the 60th time. Execute.**
+
+---
+
+### 🔴 Action 1 (TODAY — Plan7Architect window CLOSES tonight)
+
+**What**: Publish the "Plan7Architect alternative" SEO blog post TODAY before end of day. This is the final window.
+
+**New angle from Run #60 (SaaSpocalypse framing)**:
+> "Plan7Architect raised their price because they built a 2019 tool at 2019 margins. Skissify is a 2026 tool: EUR 5/mo Pro, EUR 2/mo API, hand-drawn output, MCP-native. The SaaSpocalypse is repricing everything. Skissify is already priced for the new market."
+
+**Title**: *"Plan7Architect raised their prices in 2026. Here's what solo architects actually need."*
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+**Hard deadline**: End of day March 31.
+
+---
+
+### 🔴 Action 2 (Tomorrow, April 1 — Publish MCP Server + npm + HN Post)
+
+**What**: The 30-second fix (add `"publishConfig": { "access": "public" }` to `mcp-server/package.json`) → `npm publish --access public` → Post "Show HN: Skissify — JSON to hand-drawn sketches, MCP-native, built for AI agents."
+
+**New angle from Run #60 (SaaSpocalypse + three-lane framing)**:
+> HN post hook: "Figma and Stitch do polished UI. Excalidraw does topology diagrams. Nothing does what we needed: structured JSON in, hand-drawn sketch out, for AI agents. So we built it. EUR 2/mo API. `npx @skissify/mcp-server`. Floor plans, napkin diagrams, architectural sketches — all from JSON."
+
+**Why April 1 specifically**: The Thomas Thornton Excalidraw MCP tutorial has now been in the #1 SERP position for "AI sketch MCP" for 9+ days. A Skissify HN post + counter-tutorial published Tuesday April 1 challenges that slot within 48–72 hours. Waiting past Wednesday likely means the counter-narrative loses the news-tie-in to Figma/Stitch coverage (now 6 days old — fading but still citeable).
+
+**Steps**:
+1. `cd W:/code/skissify/mcp-server`
+2. Add `"publishConfig": { "access": "public" }` to `package.json`
+3. `npm publish --access public`
+4. Submit to: modelcontextprotocol.io/registry, awesome-mcp-servers, LobeHub, claudefa.st, mcpmanager.ai, **toolradar.com** (NEW)
+5. Post HN "Show HN" at 08:00–10:00 CET
+
+---
+
+### 🟢 Action 3 (This Week — Write Counter-Tutorial to Own the SERP Slot)
+
+**What**: Publish a tutorial titled "How to generate hand-drawn floor plans from Claude in VS Code" — directly targeting the keyword slot occupied by the Thomas Thornton Excalidraw MCP tutorial.
+
+**New angle from Run #60 (hand-drawn demand in opposite direction)**:
+> The graphically.io roundup shows all "hand-drawn AI tools" take sketch INPUT and produce digital OUTPUT. Skissify is the only tool doing the reverse: structured data → hand-drawn output. This tutorial is the first content in the world to explain agent-generated hand-drawn sketches. It will rank.
+
+**Tutorial outline**:
+1. Install `@skissify/mcp-server` (Claude Desktop/Code config JSON — 2 lines)
+2. Prompt Claude: "Generate a 2-bedroom apartment floor plan as a Skissify JSON manifest"
+3. Claude produces the manifest, Skissify renders hand-drawn SVG
+4. Screenshot the result (the viral demo moment)
+5. Compare to: Excalidraw MCP output (topology, not floor plan) — Skissify's differentiator visible
+
+**Publish to**: skissify.com/blog + dev.to/@skissify (same day as HN post for maximum cross-traffic)
+**Target SERP keywords**: "Claude Code sketch tool", "hand-drawn diagram MCP server", "AI floor plan JSON renderer", "Skissify MCP tutorial"
+
+---
+
+**Run #60 Summary**: 60 consecutive clean scans (milestone). SaaSpocalypse confirmed as Skissify's tailwind — AI-native tools are the beneficiary class. Solo-founder niche SaaS earns $5K–$50K/mo — Skissify targets the floor. Hand-drawn AI demand active but entirely in wrong direction — Skissify owns the unclaimed direction. MCP crosses to essential enterprise infrastructure this week. Plan7Architect window FINAL TODAY. Execute.
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #59 (11:30 CET, Monday March 30)
 
 ### Context: **59 consecutive niche-clean scans. 🔴 Plan7Architect price hike closes TODAY (March 31) — ABSOLUTE FINAL HOURS. Thomas Thornton SERP slot 9+ days old — still challengeable. NEW: toolradar.com as meta-MCP discovery channel (1 day ago). XDA Developers confirms Excalidraw = "Miro alternative" lane, NOT Skissify's lane. SaaS pricing intelligence structurally confirmed (3+ weeks, 5 sources — stop analyzing, start collecting). The niche is uncontested for the 59th consecutive scan. Execute.**

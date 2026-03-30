@@ -2,6 +2,73 @@
 
 ---
 
+## Marketing Improvements (Cycle 61 — March 30, 2026 — 13:02 CET)
+
+### STATUS: T-20H — SHOW HN FIRES TUESDAY 09:00 CET — FINAL CONTENT PUSH COMPLETE
+
+**What Changed in Cycle 61:**
+
+- **3 new blog posts (#133-135):**
+  - `why-hand-drawn-sketches-beat-figma-the-remote-work-argument.md` — NEW ANGLE: remote work turned exploratory artifacts into permanent docs. Async fidelity trap. Slack threads making rough sketches look like design specs. Best for LinkedIn + Slack communities.
+  - `how-ai-agents-draw-floor-plans-the-multiagent-handoff.md` — MOST TECHNICAL YET: multi-agent sketch URL passing. Agent 1 generates → Agent 2 decodes/modifies → Agent 3 receives final version. No image regeneration, no information loss. The URL is the intermediate representation. Best for LangChain/Mastra Discord, Dev.to, HN standalone post.
+  - `skissify-vs-excalidraw-the-ai-native-comparison.md` — CLEANEST COMPARISON: one-sentence distinction + head-to-head table including API support, LLM accuracy. "Who is drawing?" is the test. Use both, different phases. Best for r/webdev, r/mcp, r/AITools.
+
+- **SOCIAL-MEDIA.md Cycle 61**: Trending hashtag research + platform stacks, new community targets (r/mcp with drawing MCP server angle, r/LocalLLaMA, Anthropic Discord, LangChain Discord), Tweets 351-365 (T-20h through post-HN arc + week 2 preview), YouTube Short script v1 (60 seconds, screen recording format), Threads (Meta) first post, LinkedIn Long-Form Post v2 (launch day), Viral Hook Archive
+
+- **PRESS-KIT.md Cycle 61 (v11.0)**: One-liners v153-v164, Screenshot Checklist v9 (FINAL — includes Product Hunt gallery slot assignments), Media Angles v31-v35 (remote work, multi-agent handoff, accuracy gap, unexpected audiences, wobble algorithm), Community Response Templates for "how is this different from X?" comment threads
+
+### ⚠️ CRITICAL ACTIONS TODAY (Monday March 30 — STILL OPEN)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🔴🔴🔴 | **Send newsletter pitches** (TLDR AI, Ben's Bites, The Rundown, Superhuman) | **16:00 TODAY** | ❌ SEND NOW |
+| 🔴🔴 | **Screenshot #1: Human Mode side-by-side** | Before sleep | ❌ BLOCKING HN |
+| 🔴🔴 | **Screenshot #2: Claude Desktop MCP in action** | Before sleep | ❌ BLOCKING HN |
+| 🔴 | **Human Mode end-to-end test** | Before sleep | ❓ VERIFY |
+| 🔴 | **LinkedIn post drafted + scheduled for 09:30 Tuesday** | Tonight | ❌ (copy in LINKEDIN-CONTENT.md) |
+| 🟠 | **Post Tweet 351 (T-20h countdown)** | NOW | ❌ |
+| 🟠 | Product Hunt submission prepped (launch Wed) | Tonight | ❌ (draft in PRODUCT-HUNT-SUBMISSION.md) |
+| 🟠 | Wobble GIF (5s, napkin style) | Tonight | ❌ |
+| 🟡 | YouTube Short (60s screen recording) | This week | Script ready in SOCIAL-MEDIA.md |
+
+### New Blog Posts (Cycle 61)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 133 | **Why Hand-Drawn Beats Figma: Remote Work Argument** | `why-hand-drawn-sketches-beat-figma-the-remote-work-argument.md` | LinkedIn, Slack communities, Medium | Tuesday |
+| 134 | **How AI Agents Draw Floor Plans: Multi-Agent Handoff** | `how-ai-agents-draw-floor-plans-the-multiagent-handoff.md` | Dev.to, LangChain Discord, Mastra Discord, HN | Tuesday after Show HN |
+| 135 | **Skissify vs Excalidraw: The AI-Native Comparison** | `skissify-vs-excalidraw-the-ai-native-comparison.md` | r/webdev, r/mcp, r/AITools, Dev.to | Tuesday |
+
+### New Ideas (Cycle 61)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Threads (Meta) channel** | 0 presence there. Meta AI audience is big and underserved. Launch post copy ready. | Low | Medium |
+| **YouTube Shorts** | Short screen recording shows the product better than any written description. Script ready. | Medium (record it) | High |
+| **r/LocalLLaMA angle** | "Works with any model — Ollama, local LLaMA, not just Claude." Anti-vendor-lock framing. | Low | Medium |
+| **Community response templates** | Pre-written answers for "how is this different from X?" stop you from writing bad answers under pressure on launch day | Zero | High (protects the launch) |
+| **URL-as-document angle** | "A Skissify URL is a base64-compressed JSON payload. Any agent can decode, modify, regenerate." Technically impressive, communicates the architecture in one sentence. | Low | High (HN audience) |
+
+### Cumulative Blog Inventory (135 posts as of Cycle 61)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 |
+| #130-132 | Cycle 60 |
+| #133-135 | Cycle 61 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 61 — 13:02 CET)*
+*Added: Blog posts #133-135, SOCIAL-MEDIA.md Cycle 61 (hashtag research + Tweets 351-365 + YouTube Short script + Threads post + LinkedIn v2), PRESS-KIT.md Cycle 61 (One-liners v153-v164, Screenshot Checklist v9, Media Angles v31-v35, Community Response Templates)*
+
+---
+
 ## Marketing Improvements (Cycle 60 — March 30, 2026 — 11:53 CET)
 
 ### STATUS: T-21H — SHOW HN FIRES TUESDAY 09:00 CET — NEWSLETTER SEND WINDOW CLOSING
