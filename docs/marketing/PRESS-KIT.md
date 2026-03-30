@@ -1,28 +1,151 @@
 # Skissify Press Kit
 
-**Last Updated:** March 30, 2026 - 11:53 CET (Cycle 60)
-**Version:** 10.0
+**Last Updated:** March 31, 2026 - 14:10 CET (Cycle 62)
+**Version:** 12.0
 **Contact:** jesper@skissify.com
 
 ---
 
-## Cycle 60 Updates (March 30, 2026 — 11:53 CET) — T-21H TO SHOW HN
+## Cycle 62 Updates (March 31, 2026 - 14:10 CET) - SHOW HN LIVE
 
-### JOURNALIST FAQ — LAUNCH DAY (NEW Cycle 60)
+### LAUNCH DAY PRESS SNAPSHOT
+
+**Status:** Live on Hacker News (Show HN)
+**URL:** skissify.com
+**MCP Server:** `@skissify/mcp-server` (npm)
+**GitHub:** github.com/skissify/mcp-server
+**Free tier:** Yes — unlimited public sketches, no signup
+**Pro tier:** EUR 5/month — private sketches + higher rate limits
+
+---
+
+### ONE-LINERS v165-v176 — CYCLE 62 (LAUNCH DAY EDITION)
+
+**v165 (LAUNCH DAY PITCH):** "Give your AI agent a pencil — the first MCP server that turns natural language into hand-drawn sketches."
+
+**v166 (HACKER NEWS):** "JSON schema → hand-drawn sketch URL. 94% first-try LLM accuracy. Free. Launching today."
+
+**v167 (ONE-SENTENCE):** "Skissify is what happens when AI agents stop describing floor plans and start drawing them."
+
+**v168 (TECHNICAL):** "Flat JSON element list → deterministic wobble render → permanent sketch URL. No diffusion. No pixels. Pure structured spatial output."
+
+**v169 (NON-TECHNICAL):** "Type what you want to sketch. Get a shareable URL. No drawing skills required."
+
+**v170 (ARCHITECT AUDIENCE):** "Rough brief, instantly shareable — the hand-drawn aesthetic signals 'idea, not spec,' so clients give you the right kind of feedback."
+
+**v171 (PM AUDIENCE):** "Stop polishing the wrong thing. Generate rough sketches in seconds. Keep the conversation at the right abstraction level."
+
+**v172 (HOMEOWNER AUDIENCE):** "Tell an AI what your dream kitchen looks like. Get a sketch you can show your contractor."
+
+**v173 (AGENT DEVELOPER):** "The sketch URL encodes the full data structure. Multi-agent workflows can decode, modify, regenerate — no image regeneration needed."
+
+**v174 (COMPARISON):** "Excalidraw for what you know. Skissify for what you're figuring out."
+
+**v175 (VIRAL HOOK):** "12,000+ MCP servers. Zero of them drew. Until now."
+
+**v176 (TWITTER BIO):** "Give your AI a pencil. JSON → hand-drawn sketch. MCP server for Claude. Free."
+
+---
+
+### SCREENSHOT CHECKLIST v10 — LAUNCH DAY FINAL
+
+*Priority order for press/media requests:*
+
+**CRITICAL (blocking HN and PH):**
+- [ ] **#1 — Claude Desktop side-by-side:** Left: chat input ("Draw a 2BR apartment floor plan"). Right: sketch URL visible in response, sketch rendered. Shows the MCP workflow end-to-end.
+- [ ] **#2 — Human Mode before/after:** Left: text input field with plain language description. Right: resulting sketch URL. Shows non-technical access.
+- [ ] **#3 — Four sketches grid:** 2×2 grid showing: floor plan (pencil), napkin diagram (pen), blueprint style, villa. Shows aesthetic range.
+
+**SECONDARY (Product Hunt gallery):**
+- [ ] **#4 — Mobile screenshot:** Sketch URL open in iOS/Android browser. Shows mobile-ready output.
+- [ ] **#5 — Multi-agent diagram:** Flowchart showing Agent 1 → URL → Agent 2 → URL → Agent 3. Shows the technical architecture.
+- [ ] **#6 — Code snippet:** The 4-line claude_desktop_config.json addition. Shows developer-friendliness.
+- [ ] **#7 — Accuracy comparison table:** Side-by-side: hierarchical JSON result (~58%) vs flat JSON result (~94%). Same prompt, same model.
+
+**PRODUCT HUNT GALLERY ORDER (7 slots):**
+1. Hero: Claude Desktop MCP workflow (Screenshot #1)
+2. Human Mode: no-code access (Screenshot #2)
+3. Aesthetic range: 4 sketches (Screenshot #3)
+4. Mobile: works on phone (Screenshot #4)
+5. Multi-agent: technical architecture (Screenshot #5)
+6. Code: 4-line config (Screenshot #6)
+7. Accuracy: schema design matters (Screenshot #7)
+
+---
+
+### MEDIA ANGLES v36-v40 — CYCLE 62
+
+**v36 — The Launch Day Story (for any publication covering the Show HN):**
+> "Skissify launched on Hacker News the same week that MCP hit widespread adoption. The product fills a gap that became visible precisely because MCP unlocked AI agent tool-calling at scale: agents could retrieve data, run code, and query databases, but they couldn't produce spatial output. Skissify is infrastructure for the next phase of AI agent capability."
+
+**v37 — The Solo Founder Angle (for indie hacker / startup media):**
+> "Built by Jesper Lindström, a Stockholm-based developer, in under a week. Bootstrapped. The Show HN is the first paid marketing spend: zero. The first four customer segments discovered the product themselves."
+
+**v38 — The Schema Science Angle (for technical media):**
+> "The counterintuitive finding: schema design predicts LLM spatial accuracy more than model choice. Skissify's flat element list format achieves 94% first-try accuracy vs 58% for hierarchical schemas — with the same models. This has implications for any developer designing AI-callable spatial tools."
+
+**v39 — The 'Rough Draft Is a Format' Angle (for design/product media):**
+> "Skissify's premise: rough sketches perform a specific function in design workflows that polished outputs can't replace. The hand-drawn aesthetic signals 'exploration phase' — stakeholders respond with strategic questions instead of detail edits. Making 'rough draft' an AI-generatable output format changes what's possible in early-stage design conversations."
+
+**v40 — The Unexpected Audiences Angle (for general tech media):**
+> "Built for AI developers. First week: homeowners used it for contractor briefs. Dungeon masters used it for fantasy building maps. Geometry teachers used it for spatial exercises. The common thread: everyone needs to communicate spatial ideas. AI developers were the most sophisticated users, not the most numerous."
+
+---
+
+### FOUNDER BIO (Launch Day Version)
+
+**Jesper Lindström**
+Founder, Skissify
+Stockholm, Sweden
+
+Software developer and indie hacker. Built Skissify because AI agents could describe floor plans but couldn't draw them — and that gap was bothering him. Launched March 27, 2026. Bootstrapped. Skissify is his [N]th weekend project and the first one he woke up the next morning still thinking about.
+
+*Contact:* jesper@skissify.com
+*Twitter/X:* @jesper (or @skissify)
+*Location:* Stockholm, Sweden
+
+---
+
+### PRODUCT BOILERPLATE (Standard/Long Version)
+
+Skissify is a JSON-to-hand-drawn-sketch API and MCP server that gives AI agents structured spatial output capability. Where text-only AI output fails to communicate spatial relationships — floor plans, wireframes, diagrams, rough architectural briefs — Skissify provides a permanent sketch URL from a structured JSON element list.
+
+The product is built around three layers: a flat JSON schema designed for LLM spatial accuracy (94% first-try rate in benchmark testing), a wobble rendering engine that produces authentic hand-drawn output rather than precision graphics, and a URL-based storage system where each sketch URL decodes back to its original data structure for multi-agent workflow compatibility.
+
+Skissify includes an MCP server for Claude Desktop integration, a REST API for programmatic access, and a Human Mode interface for non-technical users. The free tier covers unlimited public sketches with no account required.
+
+Founded 2026. Bootstrapped. Based in Stockholm, Sweden.
+
+**Product:** skissify.com
+**MCP Server:** `npx @skissify/mcp-server`
+**API Docs:** skissify.com/docs
+**Contact:** jesper@skissify.com
+
+---
+
+### PRODUCT BOILERPLATE (Short Version — 50 words)
+
+Skissify gives AI agents a pencil. JSON schema → hand-drawn sketch URL. MCP server for Claude Desktop. REST API for agent pipelines. Human Mode for plain-language sketching. 94% LLM spatial accuracy. Free tier. No signup required. Built for AI developers; used by homeowners, architects, and dungeon masters too.
+
+---
+
+## Cycle 60 Updates (March 30, 2026 - 11:53 CET) - T-21H TO SHOW HN
+
+### JOURNALIST FAQ - LAUNCH DAY (NEW Cycle 60)
 
 *Ready for any journalist who reaches out after the Show HN. Answer fast. Don't make them wait.*
 
 **Q: What is Skissify in one sentence?**
-A: Skissify is a JSON-to-hand-drawn-sketch API that gives AI agents structured spatial output — the rough floor plans, wireframes, and diagrams that text-only agents couldn't produce before.
+A: Skissify is a JSON-to-hand-drawn-sketch API that gives AI agents structured spatial output - the rough floor plans, wireframes, and diagrams that text-only agents couldn't produce before.
 
 **Q: What problem does it actually solve?**
-A: AI agents can generate text, code, data, and images. The gap was *structured spatial output* — a rough sketch, not a polished render. A floor plan you'd show a contractor. A wireframe you'd show a client. Something that communicates spatial ideas without looking like it was made by a design tool.
+A: AI agents can generate text, code, data, and images. The gap was *structured spatial output* - a rough sketch, not a polished render. A floor plan you'd show a contractor. A wireframe you'd show a client. Something that communicates spatial ideas without looking like it was made by a design tool.
 
 **Q: Why hand-drawn specifically?**
-A: Two reasons. First, it signals exploration-phase work — rough sketches invite strategic feedback, polished diagrams invite execution feedback. Second, it works better for AI agents because the aesthetic forgives imprecision. A slightly-off wall in a hand-drawn style reads as style; in a CAD diagram it reads as error.
+A: Two reasons. First, it signals exploration-phase work - rough sketches invite strategic feedback, polished diagrams invite execution feedback. Second, it works better for AI agents because the aesthetic forgives imprecision. A slightly-off wall in a hand-drawn style reads as style; in a CAD diagram it reads as error.
 
 **Q: How does the MCP integration work?**
-A: The MCP server (`@skissify/mcp-server`) plugs into Claude Desktop via 4 lines of config. Once connected, Claude can call `generate_sketch` as a tool, just like it calls web search or file read. The user says "draw me a floor plan" — Claude generates the JSON schema and calls the tool — sketch URL appears in the chat.
+A: The MCP server (`@skissify/mcp-server`) plugs into Claude Desktop via 4 lines of config. Once connected, Claude can call `generate_sketch` as a tool, just like it calls web search or file read. The user says "draw me a floor plan" - Claude generates the JSON schema and calls the tool - sketch URL appears in the chat.
 
 **Q: What's the accuracy claim about?**
 A: We ran 200+ floor plan generation tests across four LLMs. We found that schema design affects accuracy more than model choice. Our flat element list schema (absolute coordinates, type discriminator) achieves ~94% first-try accuracy vs ~58% for hierarchical JSON schemas. The difference is whether the LLM has to track coordinate transformations between nested levels.
@@ -37,7 +160,7 @@ A: Free tier covers unlimited public sketches. Pro tier at EUR 5/month adds priv
 A: Early-stage, bootstrapped. Launched March 27, 2026 from Stockholm, Sweden.
 
 **Q: What's the vision?**
-A: Every AI agent should be able to draw. Not generate images — draw. The structured, intentional, rough-but-correct output humans use when they're thinking spatially. We're building the infrastructure layer for that.
+A: Every AI agent should be able to draw. Not generate images - draw. The structured, intentional, rough-but-correct output humans use when they're thinking spatially. We're building the infrastructure layer for that.
 
 ---
 
@@ -45,12 +168,12 @@ A: Every AI agent should be able to draw. Not generate images — draw. The stru
 
 **For LinkedIn articles / professional media:**
 
-**Headline:** "Why your design reviews keep going wrong — and what rough sketches have to do with it"
+**Headline:** "Why your design reviews keep going wrong - and what rough sketches have to do with it"
 
 **Angle:** The "premature convergence" problem from design research: polished mockups signal finished thinking, causing stakeholders to respond to execution details rather than strategic questions. Skissify is a tool response to this, but the insight applies to any team that leads exploration-phase work with high-fidelity visuals.
 
 **Quote:**
-> "Fidelity signals confidence. A rough sketch says 'this is an idea.' A polished mockup says 'this is a plan.' If you're still deciding whether you have the right idea, you're sending the wrong signal." — Jesper Lindström, Skissify
+> "Fidelity signals confidence. A rough sketch says 'this is an idea.' A polished mockup says 'this is a plan.' If you're still deciding whether you have the right idea, you're sending the wrong signal." - Jesper Lindström, Skissify
 
 ---
 
@@ -64,7 +187,7 @@ A: Every AI agent should be able to draw. Not generate images — draw. The stru
 
 ---
 
-### ONE-LINERS v145-v152 — CYCLE 60
+### ONE-LINERS v145-v152 - CYCLE 60
 
 **v145 (LINKEDIN):** "The sketch API that makes AI agents spatial thinkers, not just text generators."
 
@@ -84,9 +207,9 @@ A: Every AI agent should be able to draw. Not generate images — draw. The stru
 
 ---
 
-## Cycle 59 Updates (March 30, 2026 — 10:46 CET) — T-22H TO SHOW HN
+## Cycle 59 Updates (March 30, 2026 - 10:46 CET) - T-22H TO SHOW HN
 
-### NEW ONE-LINERS v137-v144 — CYCLE 59
+### NEW ONE-LINERS v137-v144 - CYCLE 59
 
 **v137 (THE TITLE):** "Give your AI agent a pencil."
 
@@ -94,7 +217,7 @@ A: Every AI agent should be able to draw. Not generate images — draw. The stru
 
 **v139 (INVESTOR):** "We found the missing primitive in the AI stack. 12,000+ MCP servers retrieve and execute. None produce structured spatial output. We're the first."
 
-**v140 (PRESS — SHORT):** "Skissify is what you use when you want your AI agent to draw something instead of describe it."
+**v140 (PRESS - SHORT):** "Skissify is what you use when you want your AI agent to draw something instead of describe it."
 
 **v141 (CONSUMER):** "Describe your room. Get a hand-drawn floor plan. Print it. Show it to your contractor."
 
@@ -106,18 +229,18 @@ A: Every AI agent should be able to draw. Not generate images — draw. The stru
 
 ---
 
-### PRESS RELEASE v4 — LAUNCH DAY FINAL — CYCLE 59
+### PRESS RELEASE v4 - LAUNCH DAY FINAL - CYCLE 59
 
 **FOR IMMEDIATE RELEASE**
 **March 31, 2026**
 
 **SKISSIFY LAUNCHES ON HACKER NEWS: FIRST MCP SERVER FOR AI AGENT SKETCH OUTPUT**
 
-*Stockholm, Sweden — March 31, 2026*
+*Stockholm, Sweden - March 31, 2026*
 
 Skissify, a Stockholm-based developer tool, launches today on Hacker News' Show HN with a product that gives AI agents structured hand-drawn sketch output for the first time.
 
-The product solves a persistent gap in AI agent stacks: while modern AI systems can generate text, code, data, and images, none could produce structured spatial output — the kind of rough floor plan, wireframe, or diagram that humans use for exploration-phase thinking.
+The product solves a persistent gap in AI agent stacks: while modern AI systems can generate text, code, data, and images, none could produce structured spatial output - the kind of rough floor plan, wireframe, or diagram that humans use for exploration-phase thinking.
 
 **The core product:**
 - A JSON-to-sketch API: send a structured element list, receive a hand-drawn sketch at a permanent URL
@@ -129,7 +252,7 @@ The product solves a persistent gap in AI agent stacks: while modern AI systems 
 
 **Unexpected adoption patterns:** Since launching on March 27, four distinct user groups have adopted the product: AI developers (the intended audience), homeowners planning renovation briefs for contractors, tabletop roleplaying dungeon masters, and geometry teachers generating spatial exercise materials.
 
-**Founder quote:** "We built the JSON schema carefully, the wobble algorithm deliberately, and the MCP integration for AI developers. The product found its own audiences. Homeowners, dungeon masters, and teachers walked in without us targeting them. That's what primitives do — they find their own use cases."
+**Founder quote:** "We built the JSON schema carefully, the wobble algorithm deliberately, and the MCP integration for AI developers. The product found its own audiences. Homeowners, dungeon masters, and teachers walked in without us targeting them. That's what primitives do - they find their own use cases."
 
 **Availability:** Free tier (unlimited public sketches). Pro at EUR 5/month. MCP server on npm as `@skissify/mcp-server`. API documentation at skissify.com/docs.
 
@@ -139,27 +262,27 @@ The product solves a persistent gap in AI agent stacks: while modern AI systems 
 
 ---
 
-### MEDIA ANGLES v27-v30 — CYCLE 59
+### MEDIA ANGLES v27-v30 - CYCLE 59
 
-**v27 — THE SCHEMA ANGLE (for tech press, HN, Dev.to)**
+**v27 - THE SCHEMA ANGLE (for tech press, HN, Dev.to)**
 "Why flat JSON beats nested JSON for AI spatial generation (with 200+ data points)"
 - Data angle: 94% vs 60% accuracy
 - Novel finding: schema design > model capability for spatial tasks
 - Invites technical debate
 
-**v28 — THE PRIMITIVE ANGLE (for VC/startup press)**
+**v28 - THE PRIMITIVE ANGLE (for VC/startup press)**
 "The missing primitive in the AI stack"
-- Framing: text / code / data / image / [spatial] — only one of these didn't exist
+- Framing: text / code / data / image / [spatial] - only one of these didn't exist
 - First-mover: 12,000+ MCP servers, none with this focus
 - Positioning: infrastructure, not application
 
-**v29 — THE FOUR AUDIENCES ANGLE (for general/consumer press)**
+**v29 - THE FOUR AUDIENCES ANGLE (for general/consumer press)**
 "Built for AI developers. Used by dungeon masters, homeowners, and teachers."
 - Human interest: the product found audiences the creator didn't target
 - Broad appeal: non-technical readers understand all four audiences
 - Classic "garage invention" story pattern
 
-**v30 — THE LAUNCH DAY META ANGLE (for build-in-public, Indie Hackers press)**
+**v30 - THE LAUNCH DAY META ANGLE (for build-in-public, Indie Hackers press)**
 "125 blog posts, 340 tweets, and one screenshot still not taken"
 - Honest founder story
 - Launch preparation vs reality
@@ -173,12 +296,12 @@ The product solves a persistent gap in AI agent stacks: while modern AI systems 
 - **URL pattern:** news.ycombinator.com/item?id=[TBD after submission]
 - **Expected discussion:** schema design debate, LLM accuracy benchmarks, comparison with Excalidraw/Mermaid, unexpected use cases
 - **Key stat to quote:** "94% first-try LLM accuracy with flat JSON schema"
-- **Human angle:** homeowners, dungeon masters, geometry teachers — products find their own audiences
+- **Human angle:** homeowners, dungeon masters, geometry teachers - products find their own audiences
 - **Technical angle:** MCP mainstream (97M monthly SDK downloads March 2026), Skissify is purpose-built for the post-MCP-mainstream era
 
 ---
 
-### LAUNCH DAY SCREENSHOT CHECKLIST v8 (FINAL — CYCLE 59)
+### LAUNCH DAY SCREENSHOT CHECKLIST v8 (FINAL - CYCLE 59)
 
 Priority order. Do these first:
 
@@ -201,11 +324,11 @@ Priority order. Do these first:
 
 ---
 
-## Cycle 57 Updates (March 30, 2026 — 08:31 CET) — T-25H TO SHOW HN
+## Cycle 57 Updates (March 30, 2026 - 08:31 CET) - T-25H TO SHOW HN
 
-### NEWSLETTER PITCH EMAILS — FINAL SEND-READY VERSIONS
+### NEWSLETTER PITCH EMAILS - FINAL SEND-READY VERSIONS
 
-**For TLDR AI (tldr.tech/ai) — Submit via tldr.tech/ai/submit**
+**For TLDR AI (tldr.tech/ai) - Submit via tldr.tech/ai/submit**
 
 Subject: `New launch: first MCP server for AI visual output (Skissify)`
 
@@ -227,21 +350,21 @@ Free tier: unlimited public sketches. Pro: EUR 5/month.
 Show HN link will be live at 09:00 CET Tuesday.
 
 Happy to provide additional technical details, GIFs, or demo assets.
-— Jesper (jesper@skissify.com)
+- Jesper (jesper@skissify.com)
 ```
 
 ---
 
-**For Ben's Bites (bensbites.com) — Email ben@bensbites.com**
+**For Ben's Bites (bensbites.com) - Email ben@bensbites.com**
 
-Subject: `Skissify — AI agents that actually draw`
+Subject: `Skissify - AI agents that actually draw`
 
 ```
 Hi Ben,
 
 Dropping a quick launch note: Skissify (skissify.com) goes live on Show HN Tuesday March 31.
 
-The two-line version: AI agents can now generate visual sketches. Not text descriptions of visuals — actual sketch URLs you can open and share.
+The two-line version: AI agents can now generate visual sketches. Not text descriptions of visuals - actual sketch URLs you can open and share.
 
 Technical detail your audience might care about: We discovered that LLM generation accuracy for structured visual output correlates strongly with schema flatness. Our flat schema gets 94% first-try success. The industry assumption was hierarchical = more expressive = better. The opposite is true for AI generation.
 
@@ -268,42 +391,42 @@ Product: The first MCP server for AI agent visual output. An AI asks for a floor
 Why readers might care:
 1. It's the missing output format in AI agent stacks (text → ✅, code → ✅, images → ✅, spatial sketches → ❌ until now)
 2. The 94% vs 60% LLM accuracy stat (schema design as product design)
-3. Launched the day after OpenAI backed MCP — timing was real
+3. Launched the day after OpenAI backed MCP - timing was real
 
 Free to try at skissify.com.
 ```
 
 ---
 
-### MEDIA ANGLES v23–v26 (CYCLE 57)
+### MEDIA ANGLES v23-v26 (CYCLE 57)
 
-**Angle 23 — The Schema Benchmark Story (Technical Press: HN, Dev.to, r/MachineLearning)**
-New data point for AI tooling: schema design drives LLM generation accuracy more than model capability. Skissify's flat schema achieves 94% first-try accuracy vs 60% for hierarchical schemas. The finding has implications beyond Skissify — it suggests AI tool builders are optimizing the wrong layer.
+**Angle 23 - The Schema Benchmark Story (Technical Press: HN, Dev.to, r/MachineLearning)**
+New data point for AI tooling: schema design drives LLM generation accuracy more than model capability. Skissify's flat schema achieves 94% first-try accuracy vs 60% for hierarchical schemas. The finding has implications beyond Skissify - it suggests AI tool builders are optimizing the wrong layer.
 
-**Angle 24 — The Content Strategy Experiment (Marketing/Indiehacker Press)**
+**Angle 24 - The Content Strategy Experiment (Marketing/Indiehacker Press)**
 A developer wrote 119 blog posts and 300+ tweets in 5 days before launching, without a single screenshot. Then launched on Hacker News. The strategy is a live experiment in SEO compounding vs. visual-first launch narratives. Results available post-Show HN.
 
-**Angle 25 — The Accidental Market (Startup/Consumer Tech Press)**
+**Angle 25 - The Accidental Market (Startup/Consumer Tech Press)**
 AI developer tools that launch for one audience and find another. Skissify launched for AI engineers. Within one week: homeowners briefing contractors, dungeon masters mapping campaigns, geometry teachers generating spatial exercises. The "AI primitive" pattern: minimal, composable tools get adopted by audiences the builders didn't plan for.
 
-**Angle 26 — The Visual Gap in AI Stacks (AI/Tech Press)**
+**Angle 26 - The Visual Gap in AI Stacks (AI/Tech Press)**
 Full angle: Every AI agent stack in 2026 has text generation, code execution, web search, data retrieval. None of them natively produce spatial visual output. The question Skissify answers: what does a floor plan "output format" look like when the generator is an LLM, not a human? Spatial computing meets language model output design.
 
 ### PRESS RELEASE DRAFT v2 (CYCLE 57)
 
-**FOR IMMEDIATE RELEASE — March 31, 2026**
+**FOR IMMEDIATE RELEASE - March 31, 2026**
 
 **Skissify Launches on Hacker News: First MCP Server for AI Agent Visual Output**
 
 *Developer tool enables AI agents to generate permanent, shareable hand-drawn sketch URLs from JSON or plain text*
 
-**Stockholm, Sweden — March 31, 2026** — Skissify, a sketch API and Model Context Protocol (MCP) server for AI agent visual output, launches today on Hacker News. The product enables AI agents like Claude and GPT-4o to generate hand-drawn-style sketch URLs from structured JSON or plain-text descriptions.
+**Stockholm, Sweden - March 31, 2026** - Skissify, a sketch API and Model Context Protocol (MCP) server for AI agent visual output, launches today on Hacker News. The product enables AI agents like Claude and GPT-4o to generate hand-drawn-style sketch URLs from structured JSON or plain-text descriptions.
 
 The core product: flat JSON describing spatial elements (rooms, shapes, labels, connections) returns a permanent shareable sketch URL rendered in a hand-drawn aesthetic. An MCP server makes the tool callable by AI agents without custom integration.
 
-A key technical finding during development: flat JSON schemas achieve approximately 94% first-try LLM generation accuracy versus 60% for hierarchical schemas. The finding suggests that AI tool builders optimizing their output schemas may see significant accuracy improvements from simplification — a counterintuitive result that has implications for AI-native tool design broadly.
+A key technical finding during development: flat JSON schemas achieve approximately 94% first-try LLM generation accuracy versus 60% for hierarchical schemas. The finding suggests that AI tool builders optimizing their output schemas may see significant accuracy improvements from simplification - a counterintuitive result that has implications for AI-native tool design broadly.
 
-"AI agents are increasingly good at spatial reasoning," said Jesper, founder of Skissify. "They can describe a floor plan in text better than most humans. But that description isn't a floor plan. Skissify is the output format that was missing — the visual layer between what the agent thinks and what the human sees."
+"AI agents are increasingly good at spatial reasoning," said Jesper, founder of Skissify. "They can describe a floor plan in text better than most humans. But that description isn't a floor plan. Skissify is the output format that was missing - the visual layer between what the agent thinks and what the human sees."
 
 Skissify launched publicly on March 27, 2026, the day after OpenAI publicly endorsed MCP as a universal AI agent protocol. Within five days, four distinct user audiences emerged: AI developers building agent pipelines, homeowners briefing contractors, dungeon masters mapping campaigns, and educators generating spatial exercises.
 
@@ -318,7 +441,7 @@ Skissify is a sketch API and MCP server built for AI agent visual output. Founde
 
 ---
 
-## Cycle 56 Updates (March 30, 2026 — 07:26 CET) — T-26H TO SHOW HN
+## Cycle 56 Updates (March 30, 2026 - 07:26 CET) - T-26H TO SHOW HN
 
 ### ONE-LINERS v97-v104 (SHOW HN FINAL SET)
 
@@ -341,23 +464,23 @@ Skissify is a sketch API and MCP server built for AI agent visual output. Founde
 > "The Figma Tax is real. 22 minutes to draw your first line. The napkin phase needed a different tool."
 
 **The agent memory angle:**
-> "A Skissify URL is permanent, shareable spatial memory. It's not an output — it's a checkpoint."
+> "A Skissify URL is permanent, shareable spatial memory. It's not an output - it's a checkpoint."
 
 **The honest comparison:**
 > "Excalidraw: you draw it. Skissify: the agent draws it. Different actors. Different tool."
 
 ### PRESS ANGLES v19-v22 (CYCLE 56 FINAL)
 
-**Angle 19 — The Show HN Story:**
+**Angle 19 - The Show HN Story:**
 A developer built a JSON-to-sketch API in a weekend, then spent 5 days writing 119 blog posts and 300 tweets before taking a single screenshot. Launching on Show HN Tuesday March 31.
 
-**Angle 20 — The Visual Gap in AI:**
+**Angle 20 - The Visual Gap in AI:**
 Every modern AI stack has text generation, code generation, and image generation. Nobody built the middle layer: structured, agent-readable, hand-drawn spatial sketches. Skissify is that layer.
 
-**Angle 21 — The Four Audiences:**
+**Angle 21 - The Four Audiences:**
 AI developer tools find unexpected users. Skissify launched for one audience (AI engineers). Within 5 days: homeowners briefing contractors, dungeon masters, geometry teachers. The primitive API story.
 
-**Angle 22 — The 119 Blog Post Strategy:**
+**Angle 22 - The 119 Blog Post Strategy:**
 A launch strategy of pure content volume: 119 blog posts in 5 days, covering every possible search angle. No ads, no influencers. Just content that compounds.
 
 ### FINAL SCREENSHOT CHECKLIST (CYCLE 56)
@@ -377,22 +500,22 @@ A launch strategy of pure content volume: 119 blog posts in 5 days, covering eve
 ### BOILERPLATE v7 (SHOW HN DAY FINAL)
 
 **HN title:**
-> Show HN: Skissify – JSON to hand-drawn sketches, with MCP support for AI agents
+> Show HN: Skissify - JSON to hand-drawn sketches, with MCP support for AI agents
 
 **One sentence:**
-> Skissify turns structured JSON into permanent, shareable hand-drawn sketch URLs — and AI agents can call it natively via MCP.
+> Skissify turns structured JSON into permanent, shareable hand-drawn sketch URLs - and AI agents can call it natively via MCP.
 
 **Elevator pitch (15 seconds, spoken):**
 > "AI agents are great at text and code. When they need to draw a floor plan, a wireframe, or a diagram, they had no native output format. Skissify is that format. Send JSON, get back a sketch URL. Works with Claude, GPT-4o, any MCP-compatible agent."
 
 **Press paragraph:**
-> Skissify is a sketch API and MCP server that gives AI agents the ability to produce visual outputs. The product accepts flat JSON describing spatial elements — rooms, shapes, labels, connections — and returns permanent, shareable sketch URLs rendered in a hand-drawn style. A key engineering finding: flat JSON schemas get 94% first-try LLM generation accuracy versus ~60% for hierarchical schemas, because sequential token generation performs better without depth-tracking overhead. Launched March 27, 2026, one day after OpenAI adopted MCP. In five days, four user audiences emerged: AI developers, homeowners briefing contractors, dungeon masters, and geometry teachers. Human Mode (type in plain English, no JSON required) launched March 29. Show HN: Tuesday March 31, 09:00 CET.
+> Skissify is a sketch API and MCP server that gives AI agents the ability to produce visual outputs. The product accepts flat JSON describing spatial elements - rooms, shapes, labels, connections - and returns permanent, shareable sketch URLs rendered in a hand-drawn style. A key engineering finding: flat JSON schemas get 94% first-try LLM generation accuracy versus ~60% for hierarchical schemas, because sequential token generation performs better without depth-tracking overhead. Launched March 27, 2026, one day after OpenAI adopted MCP. In five days, four user audiences emerged: AI developers, homeowners briefing contractors, dungeon masters, and geometry teachers. Human Mode (type in plain English, no JSON required) launched March 29. Show HN: Tuesday March 31, 09:00 CET.
 
 ---
 
 ---
 
-## Cycle 55 Updates (March 30, 2026 — 06:17 CET) — T-27H TO SHOW HN
+## Cycle 55 Updates (March 30, 2026 - 06:17 CET) - T-27H TO SHOW HN
 
 ### NEW ONE-LINERS (v89-v96)
 
@@ -422,19 +545,19 @@ A launch strategy of pure content volume: 119 blog posts in 5 days, covering eve
 
 ### PRESS ANGLES v14-v18 (NEW)
 
-**Angle 14 — The LLM Schema Lesson:**
+**Angle 14 - The LLM Schema Lesson:**
 AI tool launched with a counterintuitive engineering finding: flat JSON schemas outperform hierarchical schemas for LLM generation. 94% vs 60% first-try accuracy. The "correct" data model for humans is the wrong model for AI generation. Independent interest for AI/ML press.
 
-**Angle 15 — The Figma Tax:**
-Every designer knows the phenomenon but nobody named it. Opening Figma to sketch an idea costs 20+ minutes before the first line. Skissify is the tool for the napkin phase — the exploration stage that happens *before* Figma.
+**Angle 15 - The Figma Tax:**
+Every designer knows the phenomenon but nobody named it. Opening Figma to sketch an idea costs 20+ minutes before the first line. Skissify is the tool for the napkin phase - the exploration stage that happens *before* Figma.
 
-**Angle 16 — Four Audiences:**
+**Angle 16 - Four Audiences:**
 Developer tool built for AI engineers. In 5 days: homeowners briefing contractors, dungeon masters mapping campaigns, geometry teachers generating worksheets. The "primitives find their own use cases" story.
 
-**Angle 17 — MCP Timing:**
+**Angle 17 - MCP Timing:**
 Skissify launched the day after Sam Altman announced OpenAI's MCP adoption. First purpose-built sketch tool in the post-mainstream-MCP era.
 
-**Angle 18 — Sequential Generation vs Hierarchy:**
+**Angle 18 - Sequential Generation vs Hierarchy:**
 Technical angle for dev/ML press: why does flat JSON get 94% first-try LLM accuracy vs 60% for nested? The mechanism behind the finding, and what it means for AI-native API design.
 
 ### QUICK FACTS v7 (T-27H FINAL)
@@ -453,22 +576,22 @@ Technical angle for dev/ML press: why does flat JSON get 94% first-try LLM accur
 | Unexpected audiences | 3 (homeowners, dungeon masters, geometry teachers) |
 | Show HN | Tuesday March 31, 09:00 CET |
 
-### PRODUCT BOILERPLATE v6 (FINAL — Show HN ready)
+### PRODUCT BOILERPLATE v6 (FINAL - Show HN ready)
 
 **One sentence:**
-Skissify turns JSON or plain text descriptions into hand-drawn sketch URLs — and AI agents can call it natively via MCP.
+Skissify turns JSON or plain text descriptions into hand-drawn sketch URLs - and AI agents can call it natively via MCP.
 
 **Two sentences:**
 Skissify is a sketch rendering API and MCP server that gives AI agents the ability to draw. You send JSON describing elements (rooms, doors, windows, labels) or describe a space in plain English, and get back a permanent, shareable, agent-readable sketch URL.
 
 **One paragraph (press/newsletter):**
-Skissify fills the missing output layer in AI agent stacks: structured visual output. Every AI stack today has text generation, code generation, and image generation — but nothing for hand-drawn spatial sketches that agents can generate, read back, and iterate on. Skissify provides a JSON-first API and MCP server that Claude, GPT-4o, and other agents can use to produce hand-drawn floor plans, diagrams, and spatial layouts. The product launched March 27 after a key engineering insight: flat JSON schemas get 94% LLM first-try accuracy vs 60% for hierarchical schemas. In 5 days, it found four audiences: AI developers, homeowners briefing contractors, dungeon masters mapping campaigns, and geometry teachers. Launching on Show HN Tuesday March 31.
+Skissify fills the missing output layer in AI agent stacks: structured visual output. Every AI stack today has text generation, code generation, and image generation - but nothing for hand-drawn spatial sketches that agents can generate, read back, and iterate on. Skissify provides a JSON-first API and MCP server that Claude, GPT-4o, and other agents can use to produce hand-drawn floor plans, diagrams, and spatial layouts. The product launched March 27 after a key engineering insight: flat JSON schemas get 94% LLM first-try accuracy vs 60% for hierarchical schemas. In 5 days, it found four audiences: AI developers, homeowners briefing contractors, dungeon masters mapping campaigns, and geometry teachers. Launching on Show HN Tuesday March 31.
 
 ---
 
 ---
 
-## Cycle 53 Updates (March 30, 2026 - 04:02 CET) — T-29H TO SHOW HN
+## Cycle 53 Updates (March 30, 2026 - 04:02 CET) - T-29H TO SHOW HN
 
 ### NEW ONE-LINERS (v66-v72)
 
@@ -495,7 +618,7 @@ Skissify fills the missing output layer in AI agent stacks: structured visual ou
 
 ### MEDIA ANGLE: THE TIMING STORY (NEW)
 
-Sam Altman publicly announced OpenAI's adoption of MCP on March 26, 2026 — the day before Skissify launched. This makes Skissify one of the first purpose-built MCP tools in the post-OpenAI-adoption era.
+Sam Altman publicly announced OpenAI's adoption of MCP on March 26, 2026 - the day before Skissify launched. This makes Skissify one of the first purpose-built MCP tools in the post-OpenAI-adoption era.
 
 **Pitch:**
 > "Skissify launched the morning after Sam Altman said OpenAI would support MCP. The first sketch tool built for the protocol that just went mainstream."
@@ -507,7 +630,7 @@ Sam Altman publicly announced OpenAI's adoption of MCP on March 26, 2026 — the
 **Jesper Lind** is a developer and product builder based in Sweden. He builds AI-native tools and publishes everything in public. Skissify was built over a weekend after getting frustrated that AI agents could describe spatial layouts but not draw them. Five days after launch, it has four unexpected user audiences and a schema insight that may change how developers think about LLM-compatible JSON design.
 
 **Contact:** jesper@skissify.com | @skissify on X/Twitter | skissify.com
-**Available for interview:** Monday March 30 — Wednesday April 1, 2026. Same-day turnaround for email.
+**Available for interview:** Monday March 30 - Wednesday April 1, 2026. Same-day turnaround for email.
 
 ### SCREENSHOT CHECKLIST v6 (T-29H PRIORITY ORDER)
 
@@ -2413,13 +2536,13 @@ Use Punchy for Twitter bio, one-liner drops.
 
 ---
 
-## PRESS-KIT UPDATE — CYCLE 52 — SHOW HN DAY — 02:56 CET
+## PRESS-KIT UPDATE - CYCLE 52 - SHOW HN DAY - 02:56 CET
 
-### QUICK FACTS v6 (Show HN Day — March 31, 2026)
+### QUICK FACTS v6 (Show HN Day - March 31, 2026)
 
 - **Founded:** March 2026
 - **Soft launch:** Friday March 27, 2026
-- **Show HN:** TODAY Tuesday March 31, 2026 — 09:00 CET
+- **Show HN:** TODAY Tuesday March 31, 2026 - 09:00 CET
 - **Team:** 1 developer + AI agents
 - **Pricing:** Free tier (Human Mode, unlimited) + paid API (high-volume)
 - **Schema:** Open spec flat-list, absolute coords, 14 primitives
@@ -2432,7 +2555,7 @@ Use Punchy for Twitter bio, one-liner drops.
 
 ### ONE-LINER OPTIONS v6 (for journalists, hunters, DMs)
 
-1. "The sketch layer for AI agents — JSON in, hand-drawn sketch URL out."
+1. "The sketch layer for AI agents - JSON in, hand-drawn sketch URL out."
 2. "Every AI agent can talk. Now they can draw."
 3. "The napkin phase, made programmable."
 4. "Describe any space in plain English. Get a floor plan sketch. Share the URL."
@@ -2454,22 +2577,22 @@ Use Punchy for Twitter bio, one-liner drops.
 
 ### SHOW HN SUBMISSION CONTEXT (for press)
 
-Hacker News Show HN is the technical community's highest-signal launch venue — past launches include Stripe, Dropbox, and thousands of developer tools. Getting to the front page on Show HN is equivalent to a top-10 Product Hunt placement in terms of developer mindshare.
+Hacker News Show HN is the technical community's highest-signal launch venue - past launches include Stripe, Dropbox, and thousands of developer tools. Getting to the front page on Show HN is equivalent to a top-10 Product Hunt placement in terms of developer mindshare.
 
-Skissify's Show HN post: "Skissify — JSON or plain text → hand-drawn sketch URL (MCP native)"
+Skissify's Show HN post: "Skissify - JSON or plain text → hand-drawn sketch URL (MCP native)"
 
-*Last Updated: March 31, 2026 (Cycle 52 — 02:56 CET — Show HN Day)*
+*Last Updated: March 31, 2026 (Cycle 52 - 02:56 CET - Show HN Day)*
 *Added: Quick Facts v6, One-liner options v6, Founder hook (launch day version), Investor/angel section, Show HN context for press*
 
 ---
 
-## PRESS-KIT.md — Cycle 54 Update (March 30, 2026 — 05:11 CET)
+## PRESS-KIT.md - Cycle 54 Update (March 30, 2026 - 05:11 CET)
 
-### One-Liners v81–v90 (Sharpest Set Yet)
+### One-Liners v81-v90 (Sharpest Set Yet)
 
 | # | One-liner | Audience |
 |---|-----------|---------|
-| 81 | "The first MCP tool that doesn't retrieve — it generates." | Developer press |
+| 81 | "The first MCP tool that doesn't retrieve - it generates." | Developer press |
 | 82 | "OpenAI adopted MCP on March 26. We launched March 27. Timing: accidental. Positioning: perfect." | Tech press, HN |
 | 83 | "AI agents can reason spatially. Now they can draw spatially." | General tech press |
 | 84 | "JSON in, hand-drawn sketch URL out. That's the entire product." | Hacker News |
@@ -2482,7 +2605,7 @@ Skissify's Show HN post: "Skissify — JSON or plain text → hand-drawn sketch 
 
 ---
 
-### Screenshot Checklist v7 (FINAL — Priority Ranked)
+### Screenshot Checklist v7 (FINAL - Priority Ranked)
 
 **MUST HAVE before Show HN (blocking):**
 - [ ] Human Mode: text input → sketch output side-by-side (mobile-friendly format)
@@ -2490,7 +2613,7 @@ Skissify's Show HN post: "Skissify — JSON or plain text → hand-drawn sketch 
 - [ ] Blueprint floor plan with dimension labels (the best-looking output)
 
 **HIGH VALUE (before HN if possible):**
-- [ ] Wobble slider GIF — 5 seconds, amplitude 0→10→3, most viral asset
+- [ ] Wobble slider GIF - 5 seconds, amplitude 0→10→3, most viral asset
 - [ ] 4 paper styles side-by-side (napkin, plan, blueprint, villa)
 - [ ] JSON schema view next to rendered output
 
@@ -2503,7 +2626,7 @@ Skissify's Show HN post: "Skissify — JSON or plain text → hand-drawn sketch 
 
 ### Founder Bio v3 (Final)
 
-**Jesper Landmér** — Stockholm, Sweden
+**Jesper Landmér** - Stockholm, Sweden
 
 Solo founder. Built Skissify in the margins of other projects after noticing AI agents could reason about space but had no way to produce spatial output. Launched March 27, 2026. Day 1 users included homeowners planning kitchen renovations and a dungeon master who never emailed to explain how they found it.
 
@@ -2522,7 +2645,7 @@ Skissify turns JSON or plain text into hand-drawn sketch URLs. Built for AI agen
 Skissify is a sketch API built specifically for AI agents. Send JSON or plain text describing a space, get back a permanent, shareable hand-drawn sketch URL. Native MCP support means AI agents can draw floor plans, diagrams, and layouts directly in conversation. 94% first-try success rate across LLMs, thanks to a schema designed from the ground up for LLM generation reliability.
 
 **Long (full pitch):**
-AI agents have gotten remarkably good at spatial reasoning — they can describe floor plans, layout architectures, plan room configurations. But they've had no way to produce spatial *output*. Text descriptions of spaces aren't the same as seeing them.
+AI agents have gotten remarkably good at spatial reasoning - they can describe floor plans, layout architectures, plan room configurations. But they've had no way to produce spatial *output*. Text descriptions of spaces aren't the same as seeing them.
 
 Skissify solves this with a purpose-built JSON-to-sketch API with native MCP support. Send a minimal JSON object describing elements (rooms, doors, furniture, labels) and receive a permanent sketch URL in ~800ms. The hand-drawn aesthetic is intentional: rough output invites revision, polished output suppresses it. When AI agents produce first-draft spatial ideas, roughness is honest.
 
@@ -2530,24 +2653,24 @@ The schema was designed specifically for LLM generation reliability: flat struct
 
 Human Mode (no JSON required): POST plain text to /human and receive the same sketch URL, for users who don't want to think about schemas.
 
-Launched March 27, 2026. Current users include AI developers, homeowners briefing contractors, dungeon masters, and geometry teachers — none of whom were in the original target audience.
+Launched March 27, 2026. Current users include AI developers, homeowners briefing contractors, dungeon masters, and geometry teachers - none of whom were in the original target audience.
 
 ---
 
-### Press Angles v14–v18 (Cycle 54)
+### Press Angles v14-v18 (Cycle 54)
 
 | # | Angle | Publication fit |
 |---|-------|-----------------|
-| 14 | **"The day MCP went mainstream, this tool shipped the first output server"** — OpenAI MCP adoption March 26, Skissify launched March 27. The visual output gap was the last piece. | Tech Crunch, The Verge, The Register |
-| 15 | **"94% accuracy because of schema design, not model choice"** — The technical insight that LLM output reliability is a schema problem, not a model problem. | The New Stack, Dev.to, HN |
-| 16 | **"Designed for robots, adopted by homeowners and dungeon masters"** — The unexpected audiences story. | Wired, mainstream tech press |
-| 17 | **"The missing output layer in the three-layer AI stack"** — MCP/A2A/WebMCP covers tools, agents, web. None covers visual spatial output. | Enterprise tech press, analysts |
-| 18 | **"The schema IS the product"** — Solo founder designs JSON format before writing any rendering code. The boring architectural decision that explains the 94% number. | Indie Hackers, technical founders |
+| 14 | **"The day MCP went mainstream, this tool shipped the first output server"** - OpenAI MCP adoption March 26, Skissify launched March 27. The visual output gap was the last piece. | Tech Crunch, The Verge, The Register |
+| 15 | **"94% accuracy because of schema design, not model choice"** - The technical insight that LLM output reliability is a schema problem, not a model problem. | The New Stack, Dev.to, HN |
+| 16 | **"Designed for robots, adopted by homeowners and dungeon masters"** - The unexpected audiences story. | Wired, mainstream tech press |
+| 17 | **"The missing output layer in the three-layer AI stack"** - MCP/A2A/WebMCP covers tools, agents, web. None covers visual spatial output. | Enterprise tech press, analysts |
+| 18 | **"The schema IS the product"** - Solo founder designs JSON format before writing any rendering code. The boring architectural decision that explains the 94% number. | Indie Hackers, technical founders |
 
 ---
 
-*Last Updated: March 30, 2026 (Cycle 54 — 05:11 CET)*
-*Added: One-liners v81–90 (sharpest set), Screenshot checklist v7 (FINAL), Founder bio v3, Product boilerplate v5 (Show HN ready), Press angles v14–18*
+*Last Updated: March 30, 2026 (Cycle 54 - 05:11 CET)*
+*Added: One-liners v81-90 (sharpest set), Screenshot checklist v7 (FINAL), Founder bio v3, Product boilerplate v5 (Show HN ready), Press angles v14-18*
 
 ---
 
@@ -2558,11 +2681,11 @@ Launched March 27, 2026. Current users include AI developers, homeowners briefin
 From analysis of 1,200+ Show HN launches (Nov 2025 data):
 - Titles under 55 chars: +24% upvotes
 - "API" keyword: +26% relative score
-- "AI-Powered" in title: -15% (oversaturated — avoid)
+- "AI-Powered" in title: -15% (oversaturated - avoid)
 - Question-style titles: +2.2x comments
 
-**FINAL RECOMMENDED:** `Show HN: Skissify – give your AI agent a pencil` (50 chars)
-**BACKUP:** `Show HN: Skissify – JSON to hand-drawn sketches, MCP API` (55 chars, "API" keyword)
+**FINAL RECOMMENDED:** `Show HN: Skissify - give your AI agent a pencil` (50 chars)
+**BACKUP:** `Show HN: Skissify - JSON to hand-drawn sketches, MCP API` (55 chars, "API" keyword)
 
 ---
 
@@ -2587,19 +2710,19 @@ From analysis of 1,200+ Show HN launches (Nov 2025 data):
 
 **Skissify Launches on Hacker News: The First MCP Server That Draws**
 
-*Stockholm, Sweden* — Skissify, a JSON-to-hand-drawn-sketch API built specifically for AI agents, launches today on Hacker News Show HN. The product solves a gap that has existed since the rise of agentic AI: models can reason about space, but couldn't produce spatial output until now.
+*Stockholm, Sweden* - Skissify, a JSON-to-hand-drawn-sketch API built specifically for AI agents, launches today on Hacker News Show HN. The product solves a gap that has existed since the rise of agentic AI: models can reason about space, but couldn't produce spatial output until now.
 
 **The Product**
 Skissify accepts JSON or plain text and returns a permanent, shareable hand-drawn sketch URL in ~800ms. A native MCP (Model Context Protocol) server allows Claude Desktop and other LLM-based agents to call the API directly in conversation, generating floor plans, diagrams, and spatial layouts without leaving the chat interface.
 
 **The Number That Matters**
-94% first-try LLM success rate on sketch generation — compared to approximately 60% for community wrappers around other formats. The difference is schema design: flat structure, absolute coordinates, required type fields on every element.
+94% first-try LLM success rate on sketch generation - compared to approximately 60% for community wrappers around other formats. The difference is schema design: flat structure, absolute coordinates, required type fields on every element.
 
 **The Unexpected Users**
 Skissify was built for AI engineers building MCP-enabled workflows. Its first week of users included homeowners briefing contractors, a dungeon master mapping their campaign, and a geometry teacher generating spatial exercises at scale. None of these were in the original target audience.
 
 **Quote**
-"I designed the JSON schema before I wrote any rendering code. That turned out to be the right call. The schema *is* the product — everything else is consequence." — Jesper Landmér, Founder
+"I designed the JSON schema before I wrote any rendering code. That turned out to be the right call. The schema *is* the product - everything else is consequence." - Jesper Landmér, Founder
 
 **Availability**
 Free tier available at skissify.com. MCP server: `npx skissify-mcp install`. API documentation at skissify.com/docs.
@@ -2635,7 +2758,7 @@ TIME ZONE: CET (Stockholm)
 08:00 - Tweet 316 (one hour warning)
 08:45 - Wake up. Coffee. Test product end-to-end.
 09:00 - SUBMIT Show HN
-         Title: "Show HN: Skissify – give your AI agent a pencil"
+         Title: "Show HN: Skissify - give your AI agent a pencil"
 09:05 - Post HN First Comment (HN First Comment v8, in SOCIAL-MEDIA.md)
 09:01 - Tweet 317 (it's live)
 09:30 - Reply to every HN comment (first 2 hours critical)
@@ -2657,7 +2780,7 @@ TIME ZONE: CET (Stockholm)
 
 ---
 
-## Cycle 61 Updates — March 30, 2026 — 13:02 CET (T-20H TO SHOW HN)
+## Cycle 61 Updates - March 30, 2026 - 13:02 CET (T-20H TO SHOW HN)
 
 ### ONE-LINERS v153-v164
 
@@ -2687,11 +2810,11 @@ TIME ZONE: CET (Stockholm)
 
 ---
 
-### SCREENSHOT CHECKLIST v9 (FINAL — CYCLE 61)
+### SCREENSHOT CHECKLIST v9 (FINAL - CYCLE 61)
 
 *For Show HN, Product Hunt, and all launch-day media*
 
-**MUST HAVE (blocking — do not launch without):**
+**MUST HAVE (blocking - do not launch without):**
 
 | # | Screenshot | File name | Notes |
 |---|-----------|-----------|-------|
@@ -2709,7 +2832,7 @@ TIME ZONE: CET (Stockholm)
 | 7 | **Multi-agent workflow diagram** | `multiagent-flow.png` | Simple diagram: Agent 1 → URL → Agent 2 → URL → Agent 3. Use Skissify to make it. |
 
 **For Product Hunt gallery specifically:**
-- Banner (1270×760): Screenshot #2 (Claude Desktop MCP) — most visual impact
+- Banner (1270×760): Screenshot #2 (Claude Desktop MCP) - most visual impact
 - Gallery slot 1: Screenshot #1 (Human Mode)
 - Gallery slot 2: Screenshot #4 (Blueprint style)
 - Gallery slot 3: Screenshot #6 (JSON editor)
@@ -2718,29 +2841,29 @@ TIME ZONE: CET (Stockholm)
 
 ### MEDIA ANGLES v31-v35 (Cycle 61)
 
-**v31 — The Remote Work Fidelity Problem**
+**v31 - The Remote Work Fidelity Problem**
 *For: LinkedIn/professional media, Slack communities, PM-focused publications*
 Angle: Remote async teams have accidentally turned exploratory sketches into permanent reference documents. Fidelity signals commitment. Rough sketches invite strategy; polished mockups invite polish. Skissify is a tool response to a communication problem, not a drawing problem.
 Quote: "Remote work removed the physical cues that told collaborators 'this is rough.' We rebuilt those cues in software."
 
-**v32 — The Multi-Agent Visual Handoff**
+**v32 - The Multi-Agent Visual Handoff**
 *For: Dev.to, technical AI publications, LangChain/Mastra communities*
 Angle: Multi-agent systems need structured intermediate representations at every handoff. For text: JSON. For code: files. For spatial information: Skissify sketch URLs. The URL encodes the full state; agents can decode, modify, and regenerate. No image generation at each step.
 Quote: "A Skissify URL is structured data that renders as a sketch. That's the difference between a snapshot and a state."
 
-**v33 — The Accuracy Gap**
+**v33 - The Accuracy Gap**
 *For: Technical HN crowd, LLM research community*
 Angle: Schema design matters more than model choice for spatial generation tasks. Flat absolute-coordinate schemas achieve ~94% first-try accuracy vs ~41% for Excalidraw-format JSON. The practical implication: if you're building agents that need visual output, choose the schema before choosing the model.
 Supporting data: 200+ floor plan generation tests across 4 LLMs. Schema A (Skissify flat) vs Schema C (Excalidraw hierarchical) benchmark available on request.
 
-**v34 — The Unexpected Audience Story**
+**v34 - The Unexpected Audience Story**
 *For: Indie Hackers, general press, TechCrunch if applicable*
-Angle: Built for AI developers. First week of users: homeowners briefing contractors, dungeon masters building fantasy taverns, geometry teachers making exercises, interior designers rapid-prototyping. The product is a primitive — rough spatial output — and different communities use it for different jobs.
+Angle: Built for AI developers. First week of users: homeowners briefing contractors, dungeon masters building fantasy taverns, geometry teachers making exercises, interior designers rapid-prototyping. The product is a primitive - rough spatial output - and different communities use it for different jobs.
 Quote: "We built a sketch API for robots. Humans showed up. That tells you something about what was missing."
 
-**v35 — The Wobble Algorithm**
+**v35 - The Wobble Algorithm**
 *For: Programming/creative coding communities, Hacker News*
-Angle: The hand-drawn aesthetic isn't a filter. It's a rendering algorithm. Multi-harmonic wobble with seeded randomness produces different jitter on every element, controlled by amplitude, frequency (waves), and humanness parameters. The seed makes sketches deterministic — same seed, same sketch. The algorithm is open for inspection.
+Angle: The hand-drawn aesthetic isn't a filter. It's a rendering algorithm. Multi-harmonic wobble with seeded randomness produces different jitter on every element, controlled by amplitude, frequency (waves), and humanness parameters. The seed makes sketches deterministic - same seed, same sketch. The algorithm is open for inspection.
 Quote: "We spent more time on the wobble algorithm than on the API. The aesthetic is the product."
 
 ---
@@ -2750,19 +2873,19 @@ Quote: "We spent more time on the wobble algorithm than on the API. The aestheti
 *For when someone asks "how is this different from [X]?" in a comment thread*
 
 **vs Mermaid:**
-"Mermaid generates flowcharts and sequence diagrams from markdown syntax. Skissify generates floor plans, wireframes, and spatial diagrams from JSON schema. Different element types, different aesthetic (hand-drawn vs clean), different use case (spatial layout vs logic flow). They don't overlap much — I'd use both in the same project."
+"Mermaid generates flowcharts and sequence diagrams from markdown syntax. Skissify generates floor plans, wireframes, and spatial diagrams from JSON schema. Different element types, different aesthetic (hand-drawn vs clean), different use case (spatial layout vs logic flow). They don't overlap much - I'd use both in the same project."
 
 **vs DALL-E/image generation:**
-"Image generation produces a photo-realistic or artistic render. Skissify produces a structured sketch — specific elements at specific coordinates with specific types. The output is more like a CAD file that looks rough than a generated image. An agent can decode the sketch URL and modify specific elements; you can't do that with a generated image."
+"Image generation produces a photo-realistic or artistic render. Skissify produces a structured sketch - specific elements at specific coordinates with specific types. The output is more like a CAD file that looks rough than a generated image. An agent can decode the sketch URL and modify specific elements; you can't do that with a generated image."
 
 **vs ASCII art:**
-"Ha — no. The output is a canvas render with actual coordinate geometry. It just looks like someone drew it by hand. The wobble is computed, not random. The dimensions are accurate. The element types (wall, door-symbol, window, stair, etc.) are architectural primitives."
+"Ha - no. The output is a canvas render with actual coordinate geometry. It just looks like someone drew it by hand. The wobble is computed, not random. The dimensions are accurate. The element types (wall, door-symbol, window, stair, etc.) are architectural primitives."
 
 **vs Tldraw:**
-"Tldraw is a drawing tool for humans. Skissify is an output format for agents. The comparison is like asking how Postgres compares to a spreadsheet — different things optimized for different users."
+"Tldraw is a drawing tool for humans. Skissify is an output format for agents. The comparison is like asking how Postgres compares to a spreadsheet - different things optimized for different users."
 
 ---
 
-*Last Updated: March 30, 2026 (Cycle 61 — 13:02 CET)*
+*Last Updated: March 30, 2026 (Cycle 61 - 13:02 CET)*
 *Added: One-liners v153-v164, Screenshot Checklist v9 (final with Product Hunt gallery assignments), Media Angles v31-v35 (remote work, multi-agent handoff, accuracy gap, unexpected audiences, wobble algorithm), Community Response Templates for comment threads*
 

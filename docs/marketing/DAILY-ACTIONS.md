@@ -2,6 +2,59 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #61 (13:46 CET, Monday March 30)
+
+### Context: **61 consecutive niche-clean scans. Thomas Thornton Excalidraw MCP tutorial now 1 FULL WEEK old in SERP (confirmed fresh results). NEW SEGMENT DISCOVERED: "documentation-as-code" developers hacking Excalidraw for programmatic SVG — direct Skissify buyers. MCP = production infrastructure (Supabase docs updated 3 days ago). Plan7Architect price hike window closes TONIGHT. Execute.**
+
+---
+
+### 🔴 Action 1 (TODAY before midnight — FINAL WINDOW)
+
+**What**: Publish the "Plan7Architect alternative" SEO blog post. **Plan7Architect price hike closes March 31 — tonight is the absolute last day this post has its news hook.**
+
+**Angle (updated with documentation-as-code segment)**:
+> "Plan7Architect raised prices because it was built for 2019 CAD workflows. If you're a developer who wants to generate floor plan sketches programmatically — from JSON, from Claude, from an agent pipeline — Skissify is EUR 5/mo and takes 2 minutes to set up. No license negotiations, no desktop app, no 2026 price hike."
+
+**Key SEO targets**:
+- "Plan7Architect alternative 2026"
+- "floor plan software alternative EUR"
+- "programmatic floor plan sketch tool"
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+**Hard deadline**: Tonight, March 31.
+
+---
+
+### 🔴 Action 2 (Tomorrow, April 1 — npm publish + HN post)
+
+**What**: The 30-second `publishConfig` fix → `npm publish --access public` → "Show HN" post at 08:00–10:00 CET.
+
+**NEW angle from Run #61 (documentation-as-code segment)**:
+> HN post hook: *"We noticed developers forking Excalidraw to get programmatic SVG exports for their blog. That's a workaround for something that should be a product. Skissify is that product: JSON in, hand-drawn SVG out, MCP server included, EUR 2/mo API. No fork required."*
+
+**Submit to MCP registries SAME DAY**: modelcontextprotocol.io/registry, awesome-mcp-servers, LobeHub, claudefa.st, mcpmanager.ai, toolradar.com
+
+---
+
+### 🟢 Action 3 (This Week — Blog post targeting documentation-as-code devs)
+
+**What**: Publish "Replace your Excalidraw frame-export hack with Skissify's JSON API" — targeting the exact developer segment revealed by the Martin Lysk blog post (1 day ago).
+
+**Why this ranks**: 
+- The query "excalidraw programmatic svg export" has zero direct answers (the Lysk post itself IS the top result — a hack tutorial). A Skissify post offering a cleaner solution will rank immediately.
+- The audience already knows they want this. They're searching for it. The conversion rate on "here's the product version of your hack" is extremely high.
+
+**Post outline**:
+1. "If you're maintaining a forked Excalidraw for your blog diagrams, you know the pain"
+2. Show the Skissify JSON → SVG pipeline (3 lines of JSON, one API call)
+3. Show the MCP server for Claude: generate diagrams directly from prose
+4. EUR 2/mo API Starter: the cost of one coffee to eliminate a maintenance burden forever
+
+**Publish to**: skissify.com/blog + dev.to/@skissify
+**Target keywords**: "excalidraw programmatic svg", "hand-drawn diagram API", "JSON to SVG hand-drawn", "blog diagram as code"
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #60 (12:39 CET, Monday March 30)
 
 ### Context: **60 consecutive niche-clean scans. 🔴 Plan7Architect price hike closes TODAY (March 31) — ABSOLUTE FINAL HOURS for SEO blog post. Thomas Thornton SERP slot now 9+ days — challengeable TODAY. NEW: SaaSpocalypse framing confirmed (saassimply.com, 3 days ago) + solo-founder $5K–$50K/mo range documented (globalpublicist24.com, 1 week ago) + graphically.io confirms hand-drawn demand in OPPOSITE direction (all traffic goes sketch→digital; Skissify owns digital→sketch unclaimed). MCP confirmed essential infrastructure by Domo, WorkOS, DEV Community this week. The niche is uncontested for the 60th time. Execute.**
