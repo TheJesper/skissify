@@ -2,7 +2,93 @@
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com - JSON to hand-drawn sketch, AI-agent compatible
-**Status:** DAY 4 - Sunday March 29, 07:49 CET | SHOW HN FIRES TUESDAY 09:00 CET (T-49h)
+**Status:** DAY 5 — Monday March 30, 04:02 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-29h)
+
+---
+
+## Marketing Improvements (Cycle 53 — March 30, 2026 — 04:02 CET)
+
+### STATUS: MONDAY LAUNCH EVE — T-29 HOURS TO SHOW HN
+
+It's 04:02 CET Monday March 30. Show HN fires at 09:00 CET Tuesday March 31. This is the last overnight cycle before launch day.
+
+**The opportunity window:** Sam Altman announced OpenAI MCP support on March 26 — the day before Skissify launched. This positions Skissify as one of the first purpose-built MCP tools in the post-mainstream-adoption era. This is a newsjacking angle we haven't fully used yet.
+
+### What Changed in Cycle 53
+
+- **3 new blog posts (#108-110):**
+  - `monday-t-minus-29-launch-eve-live-blog.md` — founder live blog, emotional anchor, authentic voice
+  - `skissify-for-five-agent-frameworks-2026.md` — technical integration guide (Claude Desktop, Mastra, LangGraph, CrewAI, n8n)
+  - `the-morning-before-show-hn-what-ive-built.md` — honest pre-HN reflection, schema insight explained
+- **SOCIAL-MEDIA.md Cycle 53**: Tweets 257-266 (Monday launch-eve burst), r/MachineLearning post, LinkedIn Monday story, Bluesky launch-eve, revised HN first comment v5 (sharpest yet), 5 new viral hooks
+- **PRESS-KIT.md Cycle 53**: One-liners v66-v72, Sam Altman/MCP timing angle, final founder bio, Screenshot checklist v6 (wobble GIF priority)
+
+### Today's Priority Actions (Monday March 30)
+
+| Priority | Time (CET) | Action | Status |
+|----------|-----------|--------|--------|
+| 1 🔴 | **MORNING** | Screenshot: Human Mode flow (type → sketch) | ❌ |
+| 2 🔴 | **MORNING** | Screenshot: Blueprint floor plan | ❌ |
+| 3 🔴 | **MORNING** | Screenshot: Claude Desktop + MCP | ❌ |
+| 4 🟠 | **TODAY** | Wobble GIF (5 seconds, slider 0→10) | ❌ |
+| 5 🟠 | **TODAY** | Human Mode: live and edge-case tested | ❌ |
+| 6 🟡 | 04:00 | Tweet 257 (live now - launch eve reflection) | Ready |
+| 7 🟡 | 07:00 | Tweet 258 (morning warmup) | Ready |
+| 8 🟡 | 08:00 | Tweet 259 (Sam Altman / MCP timing) | Ready |
+| 9 🟡 | 09:00 | LinkedIn Monday story | Ready |
+| 10 🟡 | 10:00 | Tweet 260 (five frameworks thread) | Ready |
+| 11 🟡 | 11:00 | r/MachineLearning post (flat schema insight) | Ready |
+| 12 🟡 | 12:00 | Tweet 261 (geometry teacher story) | Ready |
+| 13 🟡 | 14:00 | Tweet 262 (Human Mode demo) | Ready |
+| 14 🟡 | 16:00 | Tweet 263 (schema thread teaser for tomorrow) | Ready |
+| 15 🟡 | 18:00 | Tweet 264 (wobble explanation) | Ready |
+| 16 🟡 | 20:00 | Tweet 265 + Bluesky launch-eve | Ready |
+| 17 🟡 | 22:00 | Tweet 266 (final reflection before sleep) | Ready |
+| 18 ⏰ | **08:45 Tue** | Wake up. Coffee. Final breath. | — |
+| 19 ⏰ | **09:00 Tue** | SUBMIT Show HN | — |
+| 20 ⏰ | **09:01 Tue** | Post HN first comment | Ready (v5) |
+
+### New Ideas (Cycle 53)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Sam Altman / MCP timing newsjack** | Credible timing story — launched day after OpenAI adopted MCP | Zero | High |
+| **r/MachineLearning flat schema post** | Schema insight is independently valuable to 2.7M members | Low | High |
+| **Five frameworks blog → Dev.to** | Technical integration guide fills a real search gap | Low | High |
+| **"DM me your room" Twitter engagement** | UGC driver — reply with sketch URLs, extremely shareable | Zero | Medium-High |
+| **A2A Discord post** | Google's Agent-to-Agent community, visual output is core A2A use case | Low | Medium |
+| **r/LocalLLaMA** | MCP-savvy community, early adopters, 500K+ | Low | Medium |
+| **Live blog → Medium** | The launch-eve live blog is strong authentic content, republish Monday afternoon | Zero | Medium |
+| **Benchmark page /accuracy** | Official page showing 94% stat with methodology | Low | Medium |
+
+### Critical Infrastructure — Status (Cycle 53)
+
+| Gap | Priority | Status |
+|----|----------|--------|
+| **Screenshots (3 critical)** | 🔴 BLOCKING | Must be done today |
+| **Wobble GIF** | 🟠 HIGH | Today, 10 min max |
+| **Human Mode tested** | 🔴 BLOCKING | Before 09:00 tomorrow |
+| **Email newsletter signup** | 🟠 HIGH | Still missing — add today |
+| **AlternativeTo listing** | 🟡 MEDIUM | Monday or post-launch |
+| **TypeScript SDK** | ⬜ WEEK 2 | Post-HN |
+| **Benchmark page** | ⬜ WEEK 2 | Post-HN |
+
+### Cumulative Blog Inventory (110 posts as of Cycle 53)
+
+| Range | Posts |
+|-------|-------|
+| #1-91 | Cycles 1-44 |
+| #92-95 | Cycles 45-46 |
+| #96-98 | Cycle 47 |
+| #99-101 | Cycles 48-49 |
+| #102-104 | Cycle 50 |
+| #105-107 | Cycle 52 |
+| #108-110 | Cycle 53 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 53 — 04:02 CET)*
+*Added: Blog posts #108-110, Monday priority action table, new ideas (Sam Altman timing newsjack, r/MachineLearning, five frameworks), critical infrastructure status v3, blog inventory update*
+
+---
 
 ---
 

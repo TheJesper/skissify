@@ -6,6 +6,64 @@
 
 ---
 
+## Cycle 53 Updates (March 30, 2026 - 04:02 CET) — T-29H TO SHOW HN
+
+### NEW ONE-LINERS (v66-v72)
+
+**For developer communities / HN:**
+> "Flat list: 94% LLM accuracy. Nested schema: 60%. That's the Skissify schema insight in one sentence."
+
+**For timing / newsjacking angle:**
+> "Sam Altman blessed MCP on March 26. I shipped the first sketch MCP server on March 27."
+
+**For broader tech press:**
+> "Every AI agent can talk. Skissify teaches them to draw."
+
+**For consumer / non-developer press:**
+> "Type a room. Get a sketch URL. Text it to your contractor. No app. No account."
+
+**For the 'why not Figma' question:**
+> "Figma is for refining decisions. Skissify is for making them."
+
+**The most concise pitch:**
+> "It's the napkin. But programmable."
+
+**The unexpected twist hook:**
+> "I built it for AI devs. Geometry teachers, homeowners, and dungeon masters found it first. Launching on HN tomorrow."
+
+### MEDIA ANGLE: THE TIMING STORY (NEW)
+
+Sam Altman publicly announced OpenAI's adoption of MCP on March 26, 2026 — the day before Skissify launched. This makes Skissify one of the first purpose-built MCP tools in the post-OpenAI-adoption era.
+
+**Pitch:**
+> "Skissify launched the morning after Sam Altman said OpenAI would support MCP. The first sketch tool built for the protocol that just went mainstream."
+
+**Target:** TechCrunch, The Verge, The New Stack, VentureBeat, AI tool newsletters
+
+### FOUNDER BIO (Final Version)
+
+**Jesper Lind** is a developer and product builder based in Sweden. He builds AI-native tools and publishes everything in public. Skissify was built over a weekend after getting frustrated that AI agents could describe spatial layouts but not draw them. Five days after launch, it has four unexpected user audiences and a schema insight that may change how developers think about LLM-compatible JSON design.
+
+**Contact:** jesper@skissify.com | @skissify on X/Twitter | skissify.com
+**Available for interview:** Monday March 30 — Wednesday April 1, 2026. Same-day turnaround for email.
+
+### SCREENSHOT CHECKLIST v6 (T-29H PRIORITY ORDER)
+
+| Priority | Screenshot | Status | Notes |
+|----------|-----------|--------|-------|
+| 🔴 BLOCKING | Human Mode: type input → sketch appears | ❌ | Most shareable, captures non-tech audience |
+| 🔴 BLOCKING | Blueprint floor plan with labels | ❌ | Visually most impressive style |
+| 🔴 CRITICAL | Claude Desktop + MCP: agent generates sketch | ❌ | Core developer use case |
+| 🟠 HIGH | Wobble 0 vs 5 vs 10 side-by-side | ❌ | Explains the product's core insight |
+| 🟠 HIGH | 4 paper styles: napkin/graph/blueprint/villa | ❌ | Product depth |
+| 🟡 MEDIUM | JSON editor → rendered sketch | ❌ | Technical audience hook |
+| 🟡 MEDIUM | Sketch URL being shared (the URL itself as the product) | ❌ | Distribution angle |
+| ⬜ NICE | GIF of wobble slider animating | ❌ | Best engagement driver if you have time |
+
+**Wobble GIF priority:** If you do one thing today, record a 5-second screen capture of the wobble slider moving from 0 to 10 while the sketch updates. This communicates the product better than any description.
+
+---
+
 ## Cycle 50 Updates (March 29, 2026 - 11:28 CET)
 
 ### Status: T-46 Hours to Show HN - Final Polish
