@@ -914,6 +914,243 @@ function renderElement(
       }
       break;
     }
+
+    // ── Furniture & Fixtures ───────────────────────────────────
+
+    case "bed": {
+      const { x, y, w, h: bh } = el;
+      const pillows = el.pillows ?? 2;
+      const headH = bh * 0.22; // headboard area height
+
+      // Outer frame
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + bh, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + bh, x, y + bh, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + bh, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Headboard divider line
+      HL(ctx, x, y + headH, x + w, y + headH, { ...opts, seed: opts.seed! + 5, amplitude: opts.amplitude * 0.4 }, color, tool, paper, rng, h);
+
+      // Pillows (circles near headboard)
+      const pilR = Math.min(w * 0.16, headH * 0.32);
+      const pilY = y + headH * 0.5;
+      if (pillows === 1) {
+        const ppts: Pt[] = [];
+        const pn = 16;
+        const pcx = x + w / 2;
+        for (let i = 0; i <= pn; i++) {
+          const a = (i / pn) * Math.PI * 2;
+          ppts.push([pcx + Math.cos(a) * pilR * 1.3 + (rng() - 0.5) * opts.amplitude * 0.3,
+                     pilY + Math.sin(a) * pilR + (rng() - 0.5) * opts.amplitude * 0.3]);
+        }
+        doStroke(ctx, ppts, color, tool as any, paper, rng, h);
+      } else {
+        for (let pi = 0; pi < 2; pi++) {
+          const pcx = x + w * (pi === 0 ? 0.27 : 0.73);
+          const ppts: Pt[] = [];
+          const pn = 14;
+          for (let i = 0; i <= pn; i++) {
+            const a = (i / pn) * Math.PI * 2;
+            ppts.push([pcx + Math.cos(a) * pilR * 1.1 + (rng() - 0.5) * opts.amplitude * 0.3,
+                       pilY + Math.sin(a) * pilR + (rng() - 0.5) * opts.amplitude * 0.3]);
+          }
+          doStroke(ctx, ppts, color, tool as any, paper, rng, h);
+        }
+      }
+
+      // Cover fold line (light)
+      const foldY = y + headH + bh * 0.15;
+      HL(ctx, x + w * 0.05, foldY, x + w * 0.95, foldY, { ...opts, seed: opts.seed! + 10, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      break;
+    }
+
+    case "sofa": {
+      const { x, y, w, h: sh } = el;
+      const armW = Math.min(w * 0.12, 12);
+      const backH = sh * 0.3;
+
+      // Outer frame (back + sides + front)
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + sh, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + sh, x, y + sh, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + sh, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Back cushion line
+      HL(ctx, x, y + backH, x + w, y + backH, { ...opts, seed: opts.seed! + 5, amplitude: opts.amplitude * 0.4 }, color, tool, paper, rng, h);
+
+      // Armrest dividers
+      HL(ctx, x + armW, y, x + armW, y + sh, { ...opts, seed: opts.seed! + 6, amplitude: opts.amplitude * 0.35 }, color, tool, paper, rng, h);
+      HL(ctx, x + w - armW, y, x + w - armW, y + sh, { ...opts, seed: opts.seed! + 7, amplitude: opts.amplitude * 0.35 }, color, tool, paper, rng, h);
+
+      // Seat cushion divider (middle)
+      const midX = x + w / 2;
+      HL(ctx, midX, y + backH, midX, y + sh, { ...opts, seed: opts.seed! + 8, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      break;
+    }
+
+    case "dining-table": {
+      const { x, y, w, h: dh } = el;
+      const seats = el.seats ?? 2;
+      const chairW = Math.min(w / (seats + 0.5), 28);
+      const chairH = Math.min(dh * 0.4, 20);
+      const chairGap = 4;
+
+      // Table rectangle
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + dh, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + dh, x, y + dh, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + dh, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Chairs on top and bottom (oval approximation via points)
+      const totalW = seats * (chairW + 4) - 4;
+      const startX = x + (w - totalW) / 2;
+      for (let s = 0; s < seats; s++) {
+        const cx2 = startX + s * (chairW + 4) + chairW / 2;
+        // Top chairs
+        const ty = y - chairGap - chairH / 2;
+        const bpts: Pt[] = [];
+        const bpn = 12;
+        for (let i = 0; i <= bpn; i++) {
+          const a = (i / bpn) * Math.PI * 2;
+          bpts.push([cx2 + Math.cos(a) * chairW / 2 + (rng() - 0.5) * opts.amplitude * 0.4,
+                     ty + Math.sin(a) * chairH / 2 + (rng() - 0.5) * opts.amplitude * 0.4]);
+        }
+        doStroke(ctx, bpts, color, tool as any, paper, rng, h);
+
+        // Bottom chairs
+        const ty2 = y + dh + chairGap + chairH / 2;
+        const bpts2: Pt[] = [];
+        for (let i = 0; i <= bpn; i++) {
+          const a = (i / bpn) * Math.PI * 2;
+          bpts2.push([cx2 + Math.cos(a) * chairW / 2 + (rng() - 0.5) * opts.amplitude * 0.4,
+                      ty2 + Math.sin(a) * chairH / 2 + (rng() - 0.5) * opts.amplitude * 0.4]);
+        }
+        doStroke(ctx, bpts2, color, tool as any, paper, rng, h);
+      }
+
+      // End chairs (1 each side)
+      const cy2 = y + dh / 2;
+      const ecW = chairH;
+      const ecH = Math.min(chairW * 0.7, dh * 0.45);
+      for (let side = 0; side < 2; side++) {
+        const ecX = side === 0 ? x - chairGap - ecW / 2 : x + w + chairGap + ecW / 2;
+        const ecpts: Pt[] = [];
+        for (let i = 0; i <= 12; i++) {
+          const a = (i / 12) * Math.PI * 2;
+          ecpts.push([ecX + Math.cos(a) * ecW / 2 + (rng() - 0.5) * opts.amplitude * 0.4,
+                      cy2 + Math.sin(a) * ecH / 2 + (rng() - 0.5) * opts.amplitude * 0.4]);
+        }
+        doStroke(ctx, ecpts, color, tool as any, paper, rng, h);
+      }
+      break;
+    }
+
+    case "toilet": {
+      const { x, y, w, h: th } = el;
+      const tankH = th * 0.3;
+      const tankW = w * 0.85;
+      const tankX = x + (w - tankW) / 2;
+
+      // Tank (rectangle)
+      HL(ctx, tankX, y, tankX + tankW, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, tankX + tankW, y, tankX + tankW, y + tankH, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, tankX + tankW, y + tankH, tankX, y + tankH, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, tankX, y + tankH, tankX, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Bowl (ellipse)
+      const bowlCX = x + w / 2;
+      const bowlCY = y + tankH + (th - tankH) * 0.5;
+      const bowlRX = w * 0.46;
+      const bowlRY = (th - tankH) * 0.44;
+      const bpts: Pt[] = [];
+      const bn = 24;
+      for (let i = 0; i <= bn; i++) {
+        const a = (i / bn) * Math.PI * 2;
+        bpts.push([bowlCX + Math.cos(a) * bowlRX + (rng() - 0.5) * opts.amplitude * 0.4,
+                   bowlCY + Math.sin(a) * bowlRY + (rng() - 0.5) * opts.amplitude * 0.4]);
+      }
+      doStroke(ctx, bpts, color, tool as any, paper, rng, h);
+
+      // Inner bowl ring (seat)
+      const sRX = bowlRX * 0.72;
+      const sRY = bowlRY * 0.72;
+      const spts: Pt[] = [];
+      for (let i = 0; i <= bn; i++) {
+        const a = (i / bn) * Math.PI * 2;
+        spts.push([bowlCX + Math.cos(a) * sRX + (rng() - 0.5) * opts.amplitude * 0.3,
+                   bowlCY + Math.sin(a) * sRY + (rng() - 0.5) * opts.amplitude * 0.3]);
+      }
+      doStroke(ctx, spts, color, tool as any, paper, rng, h);
+      break;
+    }
+
+    case "bathtub": {
+      const { x, y, w, h: bth } = el;
+      const wallT = Math.min(w * 0.06, 6);
+      // Outer frame
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + bth, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + bth, x, y + bth, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + bth, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Inner oval (bathing basin)
+      const icx = x + w / 2;
+      const icy = y + bth * 0.52;
+      const irx = w / 2 - wallT - 2;
+      const iry = bth * 0.5 - wallT - 2;
+      const ipts: Pt[] = [];
+      const inn = 28;
+      for (let i = 0; i <= inn; i++) {
+        const a = (i / inn) * Math.PI * 2;
+        ipts.push([icx + Math.cos(a) * irx + (rng() - 0.5) * opts.amplitude * 0.4,
+                   icy + Math.sin(a) * iry + (rng() - 0.5) * opts.amplitude * 0.4]);
+      }
+      doStroke(ctx, ipts, color, tool as any, paper, rng, h);
+
+      // Faucet end indicator (small lines at top center)
+      const ftapY = y + wallT + 4;
+      const ftapX = x + w / 2;
+      HL(ctx, ftapX - 6, ftapY, ftapX + 6, ftapY, { ...opts, seed: opts.seed! + 10, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      HL(ctx, ftapX, ftapY - 3, ftapX, ftapY + 3, { ...opts, seed: opts.seed! + 11, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      break;
+    }
+
+    case "sink": {
+      const { x, y, w, h: skh } = el;
+      // Outer frame
+      HL(ctx, x, y, x + w, y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y, x + w, y + skh, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+      HL(ctx, x + w, y + skh, x, y + skh, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+      HL(ctx, x, y + skh, x, y, { ...opts, seed: opts.seed! + 4 }, color, tool, paper, rng, h);
+
+      // Basin oval (inner)
+      const scx = x + w / 2;
+      const scy = y + skh * 0.56;
+      const srx = w * 0.36;
+      const sry = skh * 0.33;
+      const skpts: Pt[] = [];
+      const sn = 20;
+      for (let i = 0; i <= sn; i++) {
+        const a = (i / sn) * Math.PI * 2;
+        skpts.push([scx + Math.cos(a) * srx + (rng() - 0.5) * opts.amplitude * 0.35,
+                    scy + Math.sin(a) * sry + (rng() - 0.5) * opts.amplitude * 0.35]);
+      }
+      doStroke(ctx, skpts, color, tool as any, paper, rng, h);
+
+      // Drain dot
+      ctx.beginPath();
+      ctx.arc(scx, scy, 2, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.globalAlpha = 0.7;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+
+      // Faucet (T-shape at top edge of basin)
+      const ftY = y + skh * 0.15;
+      HL(ctx, scx - 7, ftY, scx + 7, ftY, { ...opts, seed: opts.seed! + 10, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      HL(ctx, scx, ftY, scx, ftY + 8, { ...opts, seed: opts.seed! + 11, amplitude: opts.amplitude * 0.3 }, color, tool, paper, rng, h);
+      break;
+    }
   }
 
   ctx.restore();

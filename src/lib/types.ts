@@ -16,7 +16,13 @@ export type ElementType =
   | "stair"
   | "opening"
   | "column"
-  | "path";
+  | "path"
+  | "bed"
+  | "sofa"
+  | "dining-table"
+  | "toilet"
+  | "bathtub"
+  | "sink";
 
 export interface BaseElement {
   type: ElementType;
@@ -197,6 +203,60 @@ export interface ColumnElement extends BaseElement {
   size?: number;
 }
 
+/** Furniture & fixture elements — all use bounding box (x, y, w, h) */
+
+export interface BedElement extends BaseElement {
+  type: "bed";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  /** Number of pillows: 1 (single) or 2 (double). Default 2. */
+  pillows?: 1 | 2;
+}
+
+export interface SofaElement extends BaseElement {
+  type: "sofa";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface DiningTableElement extends BaseElement {
+  type: "dining-table";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  /** Number of seats per long side. Default 2. */
+  seats?: number;
+}
+
+export interface ToiletElement extends BaseElement {
+  type: "toilet";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface BathtubElement extends BaseElement {
+  type: "bathtub";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface SinkElement extends BaseElement {
+  type: "sink";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
 export type SketchElement =
   | LineElement
   | RectElement
@@ -212,7 +272,13 @@ export type SketchElement =
   | StairElement
   | OpeningElement
   | ColumnElement
-  | PathElement;
+  | PathElement
+  | BedElement
+  | SofaElement
+  | DiningTableElement
+  | ToiletElement
+  | BathtubElement
+  | SinkElement;
 
 /**
  * Available font families for text rendering.
