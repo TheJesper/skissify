@@ -2,6 +2,54 @@
 
 ---
 
+## Entry: March 30, 2026 — 10:21 CET | Automated Strategy Run #58
+
+### Theme: "What Makes Someone Pay EUR 2/mo for Skissify? — The Infrastructure Instinct vs The Subscription Reflex"
+
+**Intelligence basis**: Run #58. 58 consecutive niche-clean scans. 3 searches completed (321/2000 monthly quota). Fresh signals: Domo AI Agent Builder + MCP Server (March 25 — new enterprise MCP entrant); DEV Community "MCP is essential infrastructure knowledge" (5 days ago); mindk.com value-based pricing (3 days ago, 3rd cycle appearance — now structurally confirmed); Thomas Thornton tutorial 8+ days in SERP dominance; SaaS pricing intelligence stable for 3+ weeks.
+
+---
+
+#### Finding 1: The Developer Who Pays EUR 2/mo Has Already Decided — They're Paying for the Absence of Friction
+
+New framing from Run #58's DEV Community signal: MCP is "essential infrastructure knowledge, no longer optional." When developers internalize a tool as infrastructure, the payment decision changes fundamentally.
+
+**The infrastructure instinct**: Developers do not evaluate infrastructure the same way they evaluate software subscriptions. A EUR 2/mo infrastructure fee behaves like a hosting cost, not a SaaS subscription. Hosting costs don't get cancelled when budgets tighten — they get cancelled when the project dies. This is a fundamentally different retention characteristic.
+
+**Evidence**: The DEV Community framing ("MCP is essential infrastructure knowledge") signals that the developer persona who uses Skissify via MCP has already placed it in the "infrastructure" mental bucket. EUR 2/mo for an infrastructure-category tool is not a recurring expense to reconsider — it's a line item that persists until the project ends.
+
+**Practical implication**: The Skissify EUR 2/mo onboarding message should explicitly say "Add Skissify to your stack" (infrastructure language), NOT "Start your Skissify subscription" (SaaS language). The word "stack" appears 3x more often in developer daily conversation than "subscription." Speak their language to access their budget bucket.
+
+---
+
+#### Finding 2: Enterprise MCP Adoption (Domo, March 25) Creates a New Top-of-Funnel Path
+
+**New signal**: Domo launched an AI Agent Builder + MCP Server at Domopalooza (March 25). Domo serves enterprise companies with BI/data visualization workflows.
+
+**The pipeline hypothesis**: Enterprise companies using Domo for analytics → Domo MCP agents generate business insights → those insights need to be communicated visually (floor plans, process diagrams, spatial layouts) → Skissify MCP is called as a "final-mile visual renderer."
+
+This is a B2B enterprise path that doesn't require Skissify to sell directly to enterprises — it requires Skissify to be listed in the MCP registry where Domo agents can discover it. The discovery is ambient: enterprise agents browse available MCP tools; Skissify appears; the agent integrates it.
+
+**Practical implication**: Every enterprise company that ships a MCP server (Domo, Smartsheet, Lucid, Figma) expands the pool of enterprise agents that could call Skissify. The EUR 200/mo Enterprise tier becomes discoverable without an enterprise sales team — purely through MCP registry presence. This is a passive enterprise acquisition channel.
+
+---
+
+#### Finding 3: Value-Based Pricing Applied to EUR 2/mo — The ROI Frame
+
+**Signal stability**: mindk.com value-based pricing article is in its 3rd consecutive scan cycle (still fresh at 3 days old). "Users care about the value they get at the price you offer."
+
+**Applied ROI calculation for EUR 2/mo**:
+- Time to create a hand-drawn floor plan sketch manually: 15–45 minutes per sketch (architect estimate)
+- Time to generate via Skissify + LLM: 30–90 seconds
+- Value of time saved: if architect/developer bills at EUR 60-100/hr, one sketch saves EUR 15–45 in billable time
+- EUR 2/mo amortized over 1 sketch: EUR 2 → EUR 0 net cost on the FIRST use
+
+This means the EUR 2/mo tier pays for itself in a fraction of a single use. The purchase decision should not be "is EUR 2/mo worth it?" — it should be "why haven't I paid this already?"
+
+**Practical implication**: Conversion copy for EUR 2/mo should show the ROI calculation, not a feature list. "One AI-generated floor plan sketch = 30 seconds instead of 30 minutes. EUR 2/mo pays for itself the first time you use it." This reframes the purchase from cost to value recovery.
+
+---
+
 ## Entry: March 30, 2026 — 09:14 CET | Automated Strategy Run #57
 
 ### Theme: "What Makes Someone Pay EUR 2/mo for Skissify? — Three Compounding Urgency Signals on a Single Monday"

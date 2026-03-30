@@ -150,20 +150,29 @@ export default function DashboardPage() {
                 key={s.id}
                 className="bg-[#eee8d5] border border-[#93a1a1]/20 rounded-xl overflow-hidden group"
               >
-                {/* Thumbnail placeholder */}
+                {/* Sketch thumbnail */}
                 <Link href={`/editor?edit=${s.slug}`}>
-                  <div className="aspect-video bg-[#eee8d5] flex items-center justify-center text-[#93a1a1] group-hover:bg-[#93a1a1]/10 transition-colors cursor-pointer">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1"
-                      className="opacity-30"
-                    >
-                      <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
-                    </svg>
+                  <div className="aspect-video bg-[#eee8d5] overflow-hidden relative group-hover:opacity-90 transition-opacity cursor-pointer">
+                    <img
+                      src={`/api/sketches/${s.slug}/thumbnail`}
+                      alt={s.title}
+                      width={400}
+                      height={300}
+                      loading="lazy"
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        // Fallback to pencil icon if thumbnail fails
+                        const target = e.currentTarget;
+                        target.style.display = "none";
+                        const parent = target.parentElement;
+                        if (parent && !parent.querySelector(".thumb-fallback")) {
+                          const fallback = document.createElement("div");
+                          fallback.className = "thumb-fallback absolute inset-0 flex items-center justify-center text-[#93a1a1]";
+                          fallback.innerHTML = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="opacity-30"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>`;
+                          parent.appendChild(fallback);
+                        }
+                      }}
+                    />
                   </div>
                 </Link>
 
