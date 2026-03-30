@@ -2,6 +2,83 @@
 
 ---
 
+## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #48 (02:49 CET, Monday March 30)
+
+### Context: **48 consecutive niche-clean scans. HN window opens 08:00 CET in ~5 hours. Figma/Stitch counter-narrative: FINAL 24 HOURS. Plan7Architect price hike expires TOMORROW. `@skissify/mcp-server` dist/ confirmed. `publishConfig` = 30-second fix. This is the last Monday with a news hook.**
+
+---
+
+### 🔴 Action 1 (HARD DEADLINE — Monday 08:00–10:00 CET) — Add publishConfig + npm Publish + Post HN
+
+**Why today**: Thomas Thornton Excalidraw MCP tutorial is now 7+ days old and STILL #1 for "AI sketch MCP" searches. No competing content has been published in 8 days. Posting "Show HN: Skissify" today targets the same keyword slot from a different angle — hand-drawn floor plans vs cloud topology diagrams — and will index against the same searches within 24–72 hours.
+
+**Execute in order (~20 minutes total):**
+
+```bash
+# Step 1: Add publishConfig (30 seconds)
+# Edit W:/code/skissify/mcp-server/package.json — add this field:
+# "publishConfig": { "access": "public" }
+
+# Step 2: Publish to npm (5 minutes)
+cd W:\code\skissify\mcp-server
+npm publish --access public
+# Verify: npm view @skissify/mcp-server
+
+# Step 3: Post HN "Show HN" at 08:00–10:00 CET
+# Pre-written post: docs/marketing/HACKER-NEWS.md
+# Title: "Show HN: Skissify – JSON to hand-drawn sketches, built for AI agents (MCP included)"
+```
+
+**Pre-loaded HN counter-comments (post within 30 min of thread going live)**:
+- vs GPT FloorPlan Builder: "$20/mo ChatGPT Plus, raster output, no API/MCP. Skissify is EUR 2/mo, SVG output, agents can call it directly via MCP."
+- vs Excalidraw: "Excalidraw is for humans with a mouse. Skissify is for AI agents outputting JSON. Different tool, different workflow."
+- vs Mermaid: "Mermaid handles topology. Skissify handles spatial — floor plans, architectural layouts, tunable hand-drawn aesthetic."
+
+---
+
+### 🟡 Action 2 (Monday March 30, midday — after npm publish confirmed) — Submit to 5 MCP Registries
+
+Registry submission is the highest-leverage action after HN posting. The WorkOS "Everything Your Team Needs to Know About MCP in 2026" guide (4 days old, still ranking) funnels engineering teams to modelcontextprotocol.io/registry. Being there by end of Monday means capturing those teams this week.
+
+1. **modelcontextprotocol.io/registry** — highest trust, highest engineer traffic
+2. **awesome-mcp-servers** (github.com/punkpeye/awesome-mcp-servers) — open PR
+3. **LobeHub** (lobehub.com/mcp) — submit via form
+4. **claudefa.st** — "best MCP addons" directory
+5. **mcpmanager.ai** — active March 2026 curation
+
+**Registry description** (copy-paste ready):
+```
+Name: Skissify MCP
+Package: @skissify/mcp-server
+Category: Visual / Sketch / Design
+Description: Generate hand-drawn sketches and floor plans from JSON manifests.
+  Built for AI agents. 14 architectural element types (walls, doors, windows,
+  stairs, columns, dimensions). Tunable hand-drawn aesthetic. 3 styles: napkin,
+  blueprint, clean.
+Tools: skissify_create_sketch, skissify_create_floor_plan, skissify_add_element,
+       skissify_export_sketch, skissify_list_sketches, list_element_types
+Pricing: Free (public sketches, watermarked exports) / EUR 2/mo API Starter
+```
+
+---
+
+### 🟡 Action 3 (Monday March 30, end of day — LAST DAY before Plan7Architect window closes) — Publish "Plan7Architect Alternative" Blog Post
+
+Plan7Architect Pro 5 price hike closes **tomorrow (March 31)**. After March 31, the "alternatives to Plan7Architect" search volume drops. Today is the last viable day to capture this SEO window.
+
+**Post target**: skissify.com/blog + DEV.to + r/architecture + r/selfhosted
+
+**Post title**: *"Plan7Architect raising prices? Meet the modern alternative for AI-driven floor plan sketches"*
+
+**Key data points to include**:
+- Plan7Architect: traditional desktop CAD, license-based, price increase March 31
+- GPT FloorPlan Builder: $20/mo ChatGPT Plus required, raster 3D output, no API/MCP
+- Skissify: EUR 2/mo, structured SVG output, JSON-native, MCP server, programmatic API
+
+**Also note**: Value-based pricing signal from this run — frame Skissify as "priced at the infrastructure floor" (EUR 2/mo discovery tier) vs Plan7Architect's "seat cost" model. The value comparison favors Skissify for teams using AI agents.
+
+---
+
 ## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #47 (01:46 CET, Monday March 30)
 
 ### Context: **47 consecutive niche-clean scans. HN window opens 08:00 CET in ~6 hours. This is the LAST optimal launch window with a news hook. Figma/Stitch counter-narrative expires end of day. Plan7Architect price hike closes TOMORROW (March 31). `@skissify/mcp-server` dist/ confirmed. `publishConfig` = 30-second fix.**
