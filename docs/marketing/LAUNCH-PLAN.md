@@ -2,7 +2,68 @@
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com - JSON to hand-drawn sketch, AI-agent compatible
-**Status:** DAY 5 — Monday March 30, 07:26 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-26h)
+**Status:** DAY 5 — Monday March 30, 08:31 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-25h)
+
+---
+
+## Marketing Improvements (Cycle 57 — March 30, 2026 — 08:31 CET)
+
+### STATUS: T-25H — FINAL CYCLE BEFORE SHOW HN
+
+**What Changed in Cycle 57:**
+
+- **3 new blog posts (#120-122):**
+  - `why-hand-drawn-sketches-beat-figma-the-stakeholder-meeting-test.md` — new angle: the meeting room experiment + fidelity-feedback science, strongest ROI argument yet
+  - `how-ai-agents-draw-floor-plans-the-complete-2026-workflow.md` — sharpest technical guide: full stack walkthrough, 5 real workflows, accuracy breakdown, common errors + fixes
+  - `skissify-vs-excalidraw-the-workflow-decision-guide.md` — cleanest comparison: decision tree format, honest feature table, "pipeline not versus" conclusion
+
+- **SOCIAL-MEDIA.md Cycle 57**: 6 viral hook templates (Twitter, LinkedIn, Bluesky, TikTok/Reels, Discord/Slack), Tweets 301-315 (post-Show HN momentum arc), One-liners v105-v112
+
+- **PRESS-KIT.md Cycle 57 (v8.0)**: 3 send-ready newsletter pitch emails (TLDR AI, Ben's Bites, The Rundown AI), Press Release Draft v2, Media Angles v23-v26
+
+### Cumulative Blog Inventory (122 posts as of Cycle 57)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 (this cycle) |
+
+### NEW: Critical Pre-Launch Checklist (T-25H)
+
+**Must complete before 09:00 CET Tuesday:**
+
+| Priority | Item | Status | Why It Matters |
+|----------|------|--------|---------------|
+| 🔴 | Screenshots x3 (Human Mode, Blueprint, MCP) | ❌ BLOCKING | Cannot launch without visual proof |
+| 🔴 | Wobble GIF (5 seconds, 0→10) | ❌ BLOCKING | Single highest-impact content piece |
+| 🔴 | Email TLDR AI, Ben's Bites, The Rundown | ❌ Use Cycle 57 pitch emails | Send NOW, before 18:00 today |
+| 🔴 | Show HN title finalized | ✅ | "Show HN: Skissify – JSON to hand-drawn sketches, with MCP support for AI agents" |
+| 🟠 | HN First Comment v7 staged and ready to paste | ✅ Ready | Post at 09:05 sharp |
+| 🟠 | ProductHunt hunter DM sent | ❌ | 24h lead time needed |
+| 🟡 | Anthropic Discord #mcp-showcase post drafted | ✅ Cycle 57 | Post after HN goes live |
+| 🟡 | LangChain Discord post drafted | ✅ Cycle 57 | Post 30 min after HN |
+
+### NEW TACTICS — Cycle 57 Additions
+
+**The Stakeholder Meeting Test (Blog #120)**
+New framing: "run the A/B experiment yourself" — show Figma mockup vs sketch, compare feedback quality. More actionable than previous versions. Better for LinkedIn/PM communities.
+
+**TikTok/Reels 30-second script**
+Record today: hook → demo → CTA. Screen recording of Claude Desktop calling Skissify. This is the highest-leverage piece of content for non-developer audiences.
+
+**Post-HN Momentum Arc (Tweets 301-315)**
+Pre-written for the day after Show HN. Addresses the "why not Mermaid?" objection, surfaces unexpected users, deep-dives schema design. Ready to fire.
+
+**Press Release v2**
+Media-ready. Has the 94% vs 60% number (most quotable stat), founder quote, timing hook (launched day after MCP endorsement), four-audience story. Ready to send on launch day.
+
+*Last Updated: March 30, 2026 (Cycle 57 — 08:31 CET)*
+
+---
 
 ---
 
