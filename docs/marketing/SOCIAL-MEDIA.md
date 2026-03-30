@@ -1,8 +1,383 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**
-**T-MINUS 27H TO SHOW HN — Monday March 30, 2026. Cycle 55. 06:17 CET.**
+**T-MINUS 2H TO SHOW HN — Monday March 30, 2026. Cycle 56. 07:26 CET.**
 All content ready to copy-paste. Adjust links and handles before posting.
+
+---
+
+## CYCLE 56 — MONDAY MARCH 30, 2026 — 07:26 CET — SHOW HN EVE FINAL
+
+*T-26h to Show HN Tuesday 09:00 CET. Cycle 56 adds: Tweets 287-300 (full Tuesday Show HN execution day arc), Instagram launch-day caption, YouTube Shorts script hook, Discord/Slack outreach templates, ProductHunt hunter outreach DM, Reddit r/SideProject show-and-tell, 3 final blog posts (#117-119), new communities list, Show HN first comment v7 (tightest yet). This is the final content cycle before launch.*
+
+### CYCLE 56 WHAT'S NEW
+
+- **Tweets 287-300**: Complete Tuesday HN day arc from 08:45 pre-launch through 20:00 evening wrap
+- **Show HN First Comment v7**: Tighter, more HN-native, removes all marketing language
+- **Instagram launch caption**: Full visual post with hashtag stack
+- **YouTube Shorts hook script**: 15-second hook for screen-recording demos
+- **Reddit r/SideProject post**: Community show-and-tell template
+- **ProductHunt Hunter DM**: Outreach template for PH hunters
+- **New communities**: Slack workspaces, Discord servers identified
+
+---
+
+### SHOW HN LAUNCH DAY — TUESDAY MARCH 31 — COMPLETE TWEET ARC
+
+#### Tweet 287 — Tuesday 08:45 CET — Pre-Launch Final Breath
+
+```
+3 minutes.
+
+Show HN goes up at 09:00.
+
+5 days of building in public. 116 blog posts. 0 screenshots.
+
+Let's see what HN thinks.
+
+skissify.com
+#ShowHN
+```
+
+#### Tweet 288 — Tuesday 09:01 CET — Show HN Is Live
+
+```
+Show HN: Skissify – JSON to hand-drawn sketches for AI agents
+
+It's up.
+
+hacker news link in replies.
+
+skissify.com
+#ShowHN #MCP #AIAgents
+```
+
+#### Tweet 289 — Tuesday 09:15 CET — The One-Liner Thread
+
+```
+I keep getting asked: what IS Skissify?
+
+shortest answer:
+
+it's the layer between "Claude has an idea" and "a human can see it"
+
+1 MCP server. flat JSON schema. hand-drawn output. 94% first-try LLM accuracy.
+
+that's it.
+
+longer answer at skissify.com
+```
+
+#### Tweet 290 — Tuesday 10:00 CET — Live Demo Thread
+
+```
+live demo thread:
+
+type this into Claude Desktop (after npm install -g @skissify/mcp-server):
+
+"sketch a small coffee shop layout with counter, seating area, and storage"
+
+reply with what you get
+
+I'll post mine below 👇
+#MCP #AIAgents #ShowHN
+```
+
+#### Tweet 291 — Tuesday 10:30 CET — The Four Audiences Callback
+
+```
+when I launched 5 days ago I expected: AI developers
+
+who actually showed up:
+
+🤖 AI developers (building agent pipelines)
+🏠 Homeowners (briefing contractors through Claude)
+🎲 Dungeon masters (campaign maps)
+📐 Geometry teachers (worksheet sketches)
+
+primitives find their own use cases.
+```
+
+#### Tweet 292 — Tuesday 11:00 CET — The Schema Insight
+
+```
+engineering detail that surprised me most:
+
+flat JSON → 94% first-try LLM accuracy
+nested/hierarchical JSON → ~60%
+
+LLMs generate tokens sequentially
+nesting forces the model to track parent context
+flat lists don't
+
+the "correct" data model for humans is the wrong one for AI generation
+
+blog post: [link to new blog post]
+```
+
+#### Tweet 293 — Tuesday 12:00 CET — The Human Mode Announcement
+
+```
+human mode update:
+
+no JSON required anymore
+
+just type: "a small apartment with open kitchen and two bedrooms"
+
+Skissify figures out the coordinates
+
+still rough, still improving
+
+but the door is now open for everyone
+
+skissify.com/human
+```
+
+#### Tweet 294 — Tuesday 13:00 CET — The Honest Numbers Tweet
+
+```
+6 days in, honest numbers thread:
+
+→ blog posts written: 116 (yes, really)
+→ screenshots taken: 0 (yes, really)
+
+lesson: ship the thing, then document it
+
+the screenshots are happening today
+
+skissify.com
+#BuildInPublic
+```
+
+#### Tweet 295 — Tuesday 14:00 CET — The Figma Tax Reprise
+
+```
+reminder:
+
+the Figma tax is real
+
+opening Figma to sketch a quick idea: 22 minutes before you draw anything
+
+Skissify: describe it → sketch in <10 seconds
+
+not replacing Figma. just eliminating the tax for the napkin phase.
+```
+
+#### Tweet 296 — Tuesday 15:00 CET — The MCP Moment
+
+```
+MCP moment:
+
+Sam Altman backed it March 26
+OpenAI adopted it
+Vercel adopted it
+12,000+ servers
+
+and now one of them draws
+
+skissify.com
+#MCP #ModelContextProtocol
+```
+
+#### Tweet 297 — Tuesday 16:00 CET — The Comparison Thread
+
+```
+Skissify vs Excalidraw — the honest comparison:
+
+are you drawing it yourself? → Excalidraw
+is an AI drawing it? → Skissify
+
+not competition. different tools for different actors.
+
+one for humans. one for agents.
+
+full comparison: [skissify-vs-excalidraw link]
+```
+
+#### Tweet 298 — Tuesday 17:00 CET — HN Update
+
+```
+HN update (if doing well):
+
+[x] points, [y] comments
+
+top question so far: [paste real one]
+
+top criticism: [paste real one]
+
+this is exactly why you build in public
+
+skissify.com
+#ShowHN
+```
+
+#### Tweet 299 — Tuesday 18:00 CET — The Visual Primitive Thread
+
+```
+a thesis:
+
+every major developer tool eventually gets a visual primitive
+
+GitHub → Mermaid (diagrams in code)
+Notion → canvas
+Figma → API
+Claude/GPT → ?
+
+that last one was missing
+
+skissify.com is my answer to that question
+#MCP #AIAgents
+```
+
+#### Tweet 300 — Tuesday 20:00 CET — Evening Wrap
+
+```
+day 6 done.
+
+Show HN was today.
+
+whatever happens next: we built something real.
+
+5 days. 116 blog posts. one sketch API. four unexpected audiences.
+
+thank you to everyone who tried it.
+
+skissify.com
+#BuildInPublic
+```
+
+---
+
+### SHOW HN FIRST COMMENT v7 — TIGHTEST YET (post at 09:05 CET Tuesday)
+
+```
+Hey HN — founder here.
+
+Skissify converts JSON to hand-drawn-style sketches via MCP.
+
+The use case: AI agents produce text. When they need to produce a visual layout — a floor plan, a wireframe, a diagram — they had no native output format. Skissify is that format.
+
+Two things I found interesting building this:
+
+1. Flat JSON schema gets 94% first-try LLM generation accuracy. Hierarchical schema gets ~60%. The "correct" data model for humans (nested rooms/elements) is wrong for sequential LLM generation. Flat lists with absolute coordinates perform much better.
+
+2. I built it for AI developers. In 5 days: homeowners briefing contractors, dungeon masters making campaign maps, geometry teachers generating worksheets. Primitive APIs find unexpected users.
+
+Human Mode (launched Saturday): just describe what you want in plain text. No JSON needed.
+
+MCP setup: `npm install -g @skissify/mcp-server` + 3-line Claude Desktop config.
+
+Happy to go deep on the schema design, the wobble/hand-drawn rendering, or the MCP architecture.
+```
+
+---
+
+### INSTAGRAM — LAUNCH DAY POST
+
+**Caption:**
+```
+We're live on Hacker News today. 🎉
+
+Skissify: JSON to hand-drawn sketches for AI agents.
+
+Ask Claude to draw a floor plan. Get back a sketch URL.
+That's the whole thing.
+
+5 days. 116 blog posts. Tomorrow, Show HN.
+
+skissify.com — link in bio.
+
+#BuildInPublic #AITools #ProductLaunch #MCP #AIAgents #HandDrawn #Sketching #ProductDesign #StartupLife #SideProject #IndieHacker #TechStartup #MachineLearning #LLM #DesignTools
+```
+
+---
+
+### YOUTUBE SHORTS — 15-SECOND HOOK SCRIPT
+
+**Script:**
+```
+[Screen recording: Claude Desktop chat]
+"Watch what happens when I ask Claude to draw a floor plan."
+[Type: "Sketch a 2-bedroom apartment with open kitchen"]
+[Skissify sketch renders]
+"That's Skissify. JSON to hand-drawn sketch. MCP native."
+[End card: skissify.com]
+```
+
+**Hook text overlay:** "AI agents can draw now."
+
+---
+
+### REDDIT r/SideProject — SHOW-AND-TELL POST
+
+**Title:** `Show r/SideProject: I built a JSON-to-sketch API for AI agents (just launched on Show HN)`
+
+**Body:**
+```
+Hey r/SideProject,
+
+Launching on Show HN today: Skissify — a JSON-to-hand-drawn-sketch API built for AI agents.
+
+The problem: AI agents can generate text, code, and structured data. But when they need to produce a spatial layout — a floor plan, a wireframe, a diagram — there was no native output format. They'd describe it in text, which is... fine, but you can't look at text and immediately react to it.
+
+Skissify is the visual primitive for that. Send JSON with element coordinates → get back a sketch URL that looks hand-drawn.
+
+**The unexpected discovery:** flat JSON schema → 94% first-try LLM accuracy. Nested/hierarchical → ~60%. Counterintuitive but consistent.
+
+**Who actually used it:**
+- AI developers building agent pipelines (expected)
+- Homeowners briefing contractors through Claude (unexpected)
+- Dungeon masters making campaign maps (very unexpected)
+- Geometry teachers generating worksheets (really did not see this coming)
+
+**MCP setup:** `npm install -g @skissify/mcp-server` + 3-line Claude Desktop config.
+
+Happy to answer questions. And yes, I wrote 116 blog posts in 5 days. That was a choice.
+
+skissify.com
+```
+
+---
+
+### PRODUCTHUNT HUNTER OUTREACH DM
+
+```
+Hey [Hunter Name],
+
+Launching Skissify on Show HN today — JSON to hand-drawn sketches for AI agents. MCP native.
+
+The one-liner: AI agents can produce text and code. Skissify gives them a visual output layer.
+
+Built it in a weekend, launched Friday. Four unexpected user segments showed up (AI devs, homeowners, D&D players, geometry teachers). Would love to get it in front of the PH audience.
+
+Would you be up for hunting it? Happy to share the full story, screenshots, and first-comment draft.
+
+skissify.com
+```
+
+---
+
+### NEW COMMUNITIES (Cycle 56)
+
+**Slack Workspaces to join:**
+- `mlops.community` — #tools channel
+- `buildspace` — #show-and-tell
+- `SaaS Community` — #launches
+- `AI Developers` slack (multiple versions exist)
+
+**Discord Servers:**
+- Anthropic official Discord — #mcp-showcase
+- LangChain Discord — #showcase
+- Mastra Discord — #cool-projects
+- Pika Labs / AI art communities (Human Mode angle)
+
+**Reddit r/ channels to post (in order):**
+1. r/SideProject (today, show-and-tell)
+2. r/MachineLearning (schema insight angle — flat vs hierarchical)
+3. r/webdev (MCP setup guide)
+4. r/homeautomation (AI floor plan angle)
+5. r/DnD (dungeon master campaign map angle)
+6. r/learnprogramming (beginner MCP tutorial angle)
 
 ---
 

@@ -2,7 +2,90 @@
 
 **Launch Date:** 2026-03-27 (Friday)
 **Product:** skissify.com - JSON to hand-drawn sketch, AI-agent compatible
-**Status:** DAY 5 — Monday March 30, 06:17 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-27h)
+**Status:** DAY 5 — Monday March 30, 07:26 CET | SHOW HN FIRES TOMORROW TUESDAY 09:00 CET (T-26h)
+
+---
+
+## Marketing Improvements (Cycle 56 — March 30, 2026 — 07:26 CET)
+
+### STATUS: T-26H — FINAL CONTENT CYCLE BEFORE SHOW HN
+
+It's 07:26 CET Monday March 30. Show HN fires at 09:00 CET Tuesday March 31. This is the last content cycle before launch.
+
+**What Changed in Cycle 56:**
+- **3 new blog posts (#117-119):**
+  - `why-hand-drawn-sketches-beat-figma-the-show-hn-launch-day-case.md` — sharpest Figma Tax post yet, launch-day edition
+  - `how-ai-agents-draw-floor-plans-show-hn-launch-day-v2.md` — definitive technical guide, Show HN optimized
+  - `skissify-vs-excalidraw-the-show-hn-launch-version.md` — honest comparison, cleanest yet
+- **SOCIAL-MEDIA.md Cycle 56**: Tweets 287-300 (complete Tuesday Show HN execution arc), Show HN First Comment v7 (tightest yet), Instagram launch caption, YouTube Shorts script, Reddit r/SideProject template, ProductHunt hunter DM, expanded communities list (Slack + Discord)
+- **New communities identified**: Anthropic Discord #mcp-showcase, LangChain Discord, Mastra Discord, r/homeautomation, r/DnD audience angles
+- **New tactical assets**: PH hunter outreach DM template, YouTube Shorts 15-second hook script
+
+### Today's Priority Actions (Monday March 30 — FINAL)
+
+| Priority | Time (CET) | Action | Status |
+|----------|-----------|--------|--------|
+| 1 🔴 | **MORNING** | Screenshot: Human Mode flow | ❌ BLOCKING |
+| 2 🔴 | **MORNING** | Screenshot: Blueprint floor plan | ❌ BLOCKING |
+| 3 🔴 | **MORNING** | Screenshot: Claude Desktop + MCP | ❌ BLOCKING |
+| 4 🔴 | **TODAY** | Human Mode: live and tested | ❌ BLOCKING |
+| 5 🟠 | **TODAY** | Wobble GIF (5 seconds, slider 0→10) | ❌ |
+| 6 🔴 | **TODAY** | Email TLDR AI + The Rundown + Ben's Bites | ❌ |
+| 7 🟡 | 06:30 | Tweet 277 (launch morning energy) | Ready |
+| 8 🟡 | 08:00 | Tweet 278 (Sam Altman timing) | Ready |
+| 9 🟡 | 09:00 | Tweet 279 (four audiences) | Ready |
+| 10 🟡 | 10:00 | Tweet 280 (schema constraint) | Ready |
+| 11 🟡 | 11:00 | Tweet 281 (Figma Tax) + r/MachineLearning | Ready |
+| 12 🟡 | 12:00 | LinkedIn constraint argument | Ready |
+| 13 🟡 | 14:00 | Tweet 283 (Human Mode) + r/ProductManagement | Ready |
+| 14 🟡 | 22:00 | Tweet 286 (final eve) | Ready |
+| 15 ⏰ | **TUE 08:45** | Wake up. Coffee. Final breath. | — |
+| 16 ⏰ | **TUE 09:00** | SUBMIT Show HN | — |
+| 17 ⏰ | **TUE 09:05** | Post HN First Comment v7 | Ready |
+| 18 🟡 | **TUE 09:01** | Tweet 288 (Show HN is live) | Ready |
+| 19 🟡 | **TUE 10:00** | Live demo thread (Tweet 290) | Ready |
+| 20 🟡 | **TUE 15:00** | Reddit r/SideProject show-and-tell | Ready |
+
+### New Blog Posts (Cycle 56)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 117 | **Why Hand-Drawn Beats Figma (Show HN)** | why-hand-drawn-sketches-beat-figma-the-show-hn-launch-day-case.md | Medium, LinkedIn, HN comment | Launch day |
+| 118 | **How AI Agents Draw Floor Plans (v2)** | how-ai-agents-draw-floor-plans-show-hn-launch-day-v2.md | Dev.to, HN, r/MachineLearning | Launch day |
+| 119 | **Skissify vs Excalidraw (Show HN version)** | skissify-vs-excalidraw-the-show-hn-launch-version.md | Dev.to, r/webdev, r/mcp | Launch day |
+
+### Cumulative Blog Inventory (119 posts as of Cycle 56)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 (this cycle) |
+
+### New Ideas for Show HN Day
+
+**Engagement Tactics:**
+- Reply to every HN comment in first 2 hours — response rate directly correlates with ranking
+- Prepare 10 canned technical answers (schema design, MCP auth, wobble algorithm, pricing)
+- DM every person who tweets about MCP today with a personal note
+
+**Content Ideas for Post-HN:**
+- "What Hacker News taught me about my product" — authenticity wins
+- "The 5 questions HN asked that changed how I think about Skissify"
+- Live-tweet the HN comment feed with your reactions
+
+**Distribution Levers Not Yet Pulled:**
+- Product Hunt (schedule for day after HN to capture spillover)
+- Indie Hackers "Show IH" post
+- Twitter Spaces session "live building with Skissify and Claude"
+- YouTube: 5-minute demo video (screen record + voiceover)
+- Email newsletter blast to waiting list
+
+*Last Updated: March 30, 2026 (Cycle 56 — 07:26 CET)*
+
+---
 
 ---
 

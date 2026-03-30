@@ -2,6 +2,71 @@
 
 ---
 
+## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #52 (07:06 CET, Monday March 30)
+
+### Context: **52 consecutive niche-clean scans. 🔴 HN window opens at 08:00 CET — 54 minutes from now. Thomas Thornton tutorial at 1+ WEEK SERP dominance (still #1 for "AI sketch MCP"). SaaS pricing intelligence stable 14+ days — usage-based confirmed as structural standard. Plan7Architect price hike expires TODAY. Excalidraw/tldraw frozen. The niche is yours until it isn't.**
+
+---
+
+### 🔴 Action 1 (EXECUTE NOW — Window opens 08:00 CET, under 1 hour) — publishConfig + npm Publish + HN Post
+
+**Context from Run #52**: The Excalidraw MCP tutorial has now been #1 SERP for "AI sketch MCP" for 1 full week with zero competition. Every day this tutorial holds that slot without a Skissify counter-post is a day of developer intent (floor plan + MCP) that lands on topology diagrams instead. Today is the last optimal window.
+
+**Execute in order (20 minutes total):**
+
+```bash
+# Step 1: Add publishConfig to mcp-server/package.json (30 seconds)
+# In W:/code/skissify/mcp-server/package.json, add:
+# "publishConfig": { "access": "public" }
+
+# Step 2: Publish to npm (5 minutes)
+cd W:\code\skissify\mcp-server
+npm publish --access public
+
+# Step 3: Verify
+npm view @skissify/mcp-server
+
+# Step 4: Post "Show HN" at 08:00–10:00 CET
+# Pre-written post: docs/marketing/HACKER-NEWS.md
+```
+
+**Use this in HN comments when asked about alternatives**:
+*"Excalidraw MCP exists but it generates topology diagrams, not floor plans or spatial layouts. Skissify's JSON manifest describes the scene (walls, doors, dimensions) — the agent doesn't have to know how to draw, just what exists. EUR 2/mo API tier strips watermarks for pipeline use."*
+
+---
+
+### 🔴 Action 2 (Today — LAST DAY) — Plan7Architect SEO Blog Post
+
+**Hard deadline**: Plan7Architect Pro 5 price hike closes today (March 31). The "Plan7Architect alternatives" SEO window closes with it.
+
+**Title**: *"Plan7Architect raised their prices. Here's the EUR 5/mo modern alternative."*
+
+Target keywords: "Plan7Architect alternative", "floor plan software 2026 alternatives", "AI floor plan sketch tool"
+
+Publish to: skissify.com/blog OR dev.to/@skissify (faster indexing)
+Time investment: 60 minutes. Returns active-intent search traffic from architects who got the price-increase email today.
+
+---
+
+### 🟡 Action 3 (Monday afternoon, after HN post live) — Counter-Tutorial: "Hand-drawn floor plans with Claude + Skissify"
+
+**Target**: thomasthornton.cloud SERP slot (now 1 week old, challenging it within 48h is achievable)
+
+**Title**: *"How to generate hand-drawn floor plans from Claude using @skissify/mcp-server"*
+
+**Publish to**: dev.to/@skissify
+**Keywords**: "Claude Code sketch tool", "hand-drawn diagram MCP server", "AI floor plan JSON renderer"
+**Target length**: ~1,500 words with code examples (JSON manifest → rendered sketch screenshot)
+**Time investment**: 90 minutes
+
+This is the highest-leverage content action of the week. A single well-targeted dev.to post can challenge the Thornton tutorial SERP position within 3 days.
+
+---
+
+**Run #52 Summary**: 52 consecutive niche-clean scans. Pricing model structurally confirmed. SERP opportunity peaked. Window: NOW.
+
+---
+
 ## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #51 (06:02 CET, Monday March 30)
 
 ### Context: **51 consecutive niche-clean scans. 🔴 HN launch window OPTIMAL at 08:00–10:00 CET — under 2 hours away. Plan7Architect price hike expires TODAY (March 31). Pinterest building internal MCP ecosystem (new signal — MCP is consumer-scale infra now). Usage-based pricing confirmed by 5 independent sources. Excalidraw/tldraw landscape frozen. No new competitor detected. All windows converge on TODAY. The niche is yours until it isn't.**

@@ -1,8 +1,82 @@
 # Skissify Press Kit
 
-**Last Updated:** March 30, 2026 - 06:17 CET (Cycle 55)
-**Version:** 6.0
+**Last Updated:** March 30, 2026 - 07:26 CET (Cycle 56)
+**Version:** 7.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 56 Updates (March 30, 2026 — 07:26 CET) — T-26H TO SHOW HN
+
+### ONE-LINERS v97-v104 (SHOW HN FINAL SET)
+
+**The shortest pitch (8 words):**
+> "AI agents can talk. Now they can draw."
+
+**The honest one:**
+> "I built Skissify for AI developers. Homeowners, dungeon masters, and geometry teachers found it first. Show HN tomorrow."
+
+**The technical pitch (HN-native):**
+> "Flat JSON: 94% LLM first-try accuracy. Hierarchical: 60%. That's why Skissify's schema looks wrong and works right."
+
+**The market gap:**
+> "12,000 MCP servers. None of them draw. Until now."
+
+**The workflow pitch:**
+> "Describe → Sketch → Share → Iterate. Three seconds. No design tool. No account."
+
+**The founder insight:**
+> "The Figma Tax is real. 22 minutes to draw your first line. The napkin phase needed a different tool."
+
+**The agent memory angle:**
+> "A Skissify URL is permanent, shareable spatial memory. It's not an output — it's a checkpoint."
+
+**The honest comparison:**
+> "Excalidraw: you draw it. Skissify: the agent draws it. Different actors. Different tool."
+
+### PRESS ANGLES v19-v22 (CYCLE 56 FINAL)
+
+**Angle 19 — The Show HN Story:**
+A developer built a JSON-to-sketch API in a weekend, then spent 5 days writing 119 blog posts and 300 tweets before taking a single screenshot. Launching on Show HN Tuesday March 31.
+
+**Angle 20 — The Visual Gap in AI:**
+Every modern AI stack has text generation, code generation, and image generation. Nobody built the middle layer: structured, agent-readable, hand-drawn spatial sketches. Skissify is that layer.
+
+**Angle 21 — The Four Audiences:**
+AI developer tools find unexpected users. Skissify launched for one audience (AI engineers). Within 5 days: homeowners briefing contractors, dungeon masters, geometry teachers. The primitive API story.
+
+**Angle 22 — The 119 Blog Post Strategy:**
+A launch strategy of pure content volume: 119 blog posts in 5 days, covering every possible search angle. No ads, no influencers. Just content that compounds.
+
+### FINAL SCREENSHOT CHECKLIST (CYCLE 56)
+
+**STATUS: THESE MUST HAPPEN TODAY**
+
+| Priority | Screenshot | Status | Impact |
+|----------|-----------|--------|--------|
+| 🔴 CRITICAL | Human Mode: type → sketch | ❌ TODAY | Highest shareability for non-dev audience |
+| 🔴 CRITICAL | Blueprint floor plan + labels | ❌ TODAY | Most visually impressive |
+| 🔴 CRITICAL | Claude Desktop + MCP integration | ❌ TODAY | Core dev use case proof |
+| 🔴 CRITICAL | Wobble GIF (0→10, 5 seconds) | ❌ TODAY | Best single piece of content you can make |
+| 🟠 HIGH | 4 paper styles side by side | ❌ TODAY | Shows product depth |
+| 🟠 HIGH | Sketch URL in browser bar | ❌ TODAY | URL-as-product angle |
+| 🟡 MEDIUM | JSON input → sketch output split view | ❌ TODAY | Technical audience |
+
+### BOILERPLATE v7 (SHOW HN DAY FINAL)
+
+**HN title:**
+> Show HN: Skissify – JSON to hand-drawn sketches, with MCP support for AI agents
+
+**One sentence:**
+> Skissify turns structured JSON into permanent, shareable hand-drawn sketch URLs — and AI agents can call it natively via MCP.
+
+**Elevator pitch (15 seconds, spoken):**
+> "AI agents are great at text and code. When they need to draw a floor plan, a wireframe, or a diagram, they had no native output format. Skissify is that format. Send JSON, get back a sketch URL. Works with Claude, GPT-4o, any MCP-compatible agent."
+
+**Press paragraph:**
+> Skissify is a sketch API and MCP server that gives AI agents the ability to produce visual outputs. The product accepts flat JSON describing spatial elements — rooms, shapes, labels, connections — and returns permanent, shareable sketch URLs rendered in a hand-drawn style. A key engineering finding: flat JSON schemas get 94% first-try LLM generation accuracy versus ~60% for hierarchical schemas, because sequential token generation performs better without depth-tracking overhead. Launched March 27, 2026, one day after OpenAI adopted MCP. In five days, four user audiences emerged: AI developers, homeowners briefing contractors, dungeon masters, and geometry teachers. Human Mode (type in plain English, no JSON required) launched March 29. Show HN: Tuesday March 31, 09:00 CET.
+
+---
 
 ---
 
