@@ -128,6 +128,7 @@ function EditorInner({
     commitResize,
     copySelected,
     pasteElements,
+    addPathElement,
     colorSelected,
     strokeWidthSelected,
     fillColorSelected,
@@ -155,6 +156,9 @@ function EditorInner({
   } = useSketch(initialData ?? undefined, initialPreset ?? undefined);
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
+
+  // Freehand draw mode state
+  const [drawMode, setDrawMode] = useState(false);
 
   // Inline text edit state
   const [editingElement, setEditingElement] = useState<{ idx: number; field: string; value: string } | null>(null);
@@ -426,10 +430,15 @@ function EditorInner({
         if (e.key === "ArrowUp")    { e.preventDefault(); nudgeSelected(0, -STEP); }
         if (e.key === "ArrowDown")  { e.preventDefault(); nudgeSelected(0,  STEP); }
       }
+
+      // Escape exits freehand draw mode
+      if (e.key === "Escape" && !isInput) {
+        setDrawMode(false);
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode]);
 
   // Compute the color of the first selected element (or undefined)
   const selectedColor: string | undefined = (() => {
@@ -579,6 +588,8 @@ function EditorInner({
             selectedElement={singleSelectedElement}
             selectedElementIdx={singleSelectedIdx}
             onUpdateElement={updateElement}
+            drawMode={drawMode}
+            onDrawModeChange={setDrawMode}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -602,6 +613,10 @@ function EditorInner({
             onContextMenuAction={handleContextMenuAction}
             selectedLocked={selectedLocked}
             selectedHasGroup={selectedHasGroup}
+            drawMode={drawMode}
+            onDrawPath={(points) => {
+              addPathElement(points);
+            }}
           />
           {/* Inline text edit overlay */}
           {editingElement && (
@@ -713,6 +728,8 @@ function EditorInner({
             selectedElement={singleSelectedElement}
             selectedElementIdx={singleSelectedIdx}
             onUpdateElement={updateElement}
+            drawMode={drawMode}
+            onDrawModeChange={setDrawMode}
           />
         </div>
       )}

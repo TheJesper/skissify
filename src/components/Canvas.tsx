@@ -1372,6 +1372,11 @@ export default function Canvas({
   // Update cursor when hovering over selected elements
   const handleCursorHover = useCallback(
     (e: React.MouseEvent<HTMLCanvasElement>) => {
+      // In freehand draw mode, always show a pencil/crosshair cursor
+      if (drawMode) {
+        setCursor(isDrawing.current ? "cell" : "crosshair");
+        return;
+      }
       if (isResizing.current) {
         if (activeResizeHandle.current) {
           setCursor(HANDLE_CURSOR[activeResizeHandle.current] || "crosshair");
@@ -1416,7 +1421,7 @@ export default function Canvas({
         setCursor("crosshair");
       }
     },
-    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, getActiveHandles]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, getActiveHandles, drawMode]
   );
 
   // Keyboard

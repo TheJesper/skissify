@@ -204,6 +204,7 @@ function EditorInner({
     updateFromJson,
     addElement,
     addElementAt,
+    addPathElement,
     deleteSelected,
     moveSelected,
     commitDrag,
@@ -246,7 +247,10 @@ function EditorInner({
   });
   const { savedAt: autosaveSavedAt } = useAutosave(sketch);
 
-  // Canvas control ref — lets us trigger resetView from outside the Canvas
+  // Freehand draw mode state
+  const [drawMode, setDrawMode] = useState(false);
+
+  // Canvas control ref - lets us trigger resetView from outside the Canvas
   const canvasControlRef = useRef<{ resetView: () => void } | null>(null);
 
   // Inline text edit state (double-click on text/rect/dim elements)
@@ -513,10 +517,15 @@ function EditorInner({
         if (e.key === "ArrowUp")    { e.preventDefault(); nudgeSelected(0, -STEP); }
         if (e.key === "ArrowDown")  { e.preventDefault(); nudgeSelected(0,  STEP); }
       }
+
+      // Escape exits freehand draw mode
+      if (e.key === "Escape" && !isInput) {
+        setDrawMode(false);
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode]);
 
   // Compute the color of the first selected element (for per-element color picker)
   const selectedColor: string | undefined = (() => {
@@ -611,7 +620,7 @@ function EditorInner({
           style={{ backgroundColor: "#073642", color: "#93a1a1", border: "1px solid #268bd2" }}
         >
           <span className="text-sm leading-snug">
-            <strong style={{ color: "#268bd2" }}>Skissify</strong> — hand-drawn sketches from JSON. Try editing the JSON on the left or pick a preset above.
+            <strong style={{ color: "#268bd2" }}>Skissify</strong> - hand-drawn sketches from JSON. Try editing the JSON on the left or pick a preset above.
           </span>
           <button
             onClick={() => {
@@ -693,6 +702,8 @@ function EditorInner({
             selectedElement={singleSelectedElement}
             selectedElementIdx={singleSelectedIdx}
             onUpdateElement={updateElement}
+            drawMode={drawMode}
+            onDrawModeChange={setDrawMode}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -716,6 +727,10 @@ function EditorInner({
           onContextMenuAction={handleContextMenuAction}
           selectedLocked={selectedLocked}
           selectedHasGroup={selectedHasGroup}
+          drawMode={drawMode}
+          onDrawPath={(points) => {
+            addPathElement(points);
+          }}
         />
 
         {/* Inline text editing overlay */}
@@ -821,6 +836,8 @@ function EditorInner({
           selectedElement={singleSelectedElement}
           selectedElementIdx={singleSelectedIdx}
           onUpdateElement={updateElement}
+          drawMode={drawMode}
+          onDrawModeChange={setDrawMode}
         />
       </MobileBottomSheet>
     </div>

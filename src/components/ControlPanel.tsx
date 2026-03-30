@@ -87,6 +87,10 @@ interface ControlPanelProps {
   selectedElementIdx?: number;
   /** Called when the user edits coordinates/size of the selected element */
   onUpdateElement?: (idx: number, updates: Record<string, unknown>) => void;
+  /** Whether freehand draw mode is currently active */
+  drawMode?: boolean;
+  /** Called when the user toggles freehand draw mode */
+  onDrawModeChange?: (active: boolean) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -274,6 +278,8 @@ export default function ControlPanel({
   selectedElement,
   selectedElementIdx,
   onUpdateElement,
+  drawMode,
+  onDrawModeChange,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -859,6 +865,36 @@ export default function ControlPanel({
                   </button>
                 ))}
               </div>
+            )}
+          </div>
+        </Section>
+      )}
+
+      {/* Freehand Draw */}
+      {onDrawModeChange && (
+        <Section title="Draw">
+          <div className="flex flex-col gap-2">
+            <button
+              onClick={() => onDrawModeChange(!drawMode)}
+              className={`flex items-center gap-2 w-full px-3 py-2 rounded text-xs font-medium transition-all border ${
+                drawMode
+                  ? "ring-2 ring-[#268bd2] border-transparent bg-[#268bd2]/10 text-[#268bd2]"
+                  : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80 text-[#657b83]"
+              }`}
+              title={drawMode ? "Click to exit freehand draw mode" : "Click to enter freehand draw mode — draw freely on the canvas"}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="M2 2l7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+              {drawMode ? "✏️ Drawing… (click to stop)" : "Freehand Draw"}
+            </button>
+            {drawMode && (
+              <p className="text-[10px] text-[#93a1a1] leading-snug">
+                Click and drag on the canvas to draw. Release to finish a stroke. Press <kbd className="bg-[#eee8d5] px-1 rounded">Esc</kbd> to exit.
+              </p>
             )}
           </div>
         </Section>
