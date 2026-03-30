@@ -1,3 +1,109 @@
+## Marketing Improvements (Cycle 70 - March 31, 2026 - 01:30 CET)
+
+### STATUS: 🔴 T-7.5H TO PRODUCT HUNT LAUNCH | 156→158 BLOG POSTS | CYCLE 70 — PRE-DAWN FINAL
+
+**PRODUCT HUNT LAUNCHES IN ~7.5H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 70:**
+
+- **2 new blog posts (#157-158) — PRE-DAWN LAUNCH MORNING:**
+  - `founder-note-1am-before-product-hunt.md` — Honest 01:30am founder note. The filter theory, what I'm not anxious about, what comes next regardless. Publish at 09:00 CET April 1 on Medium (primary) + IndieHackers. High-authenticity first-person, strong viral potential on IndieHackers. One thing I'd tell my past self: build the email capture earlier.
+  - `product-hunt-live-first-hour-playbook.md` — Live-blog-format post with exact minute-by-minute playbook for the first hour. Fill-in placeholders for real numbers. Publish Dev.to 09:00 CET April 1, update hourly. Shows the process, builds trust, gives a template for other founders.
+
+- **SOCIAL-MEDIA.md Cycle 70**: Tweets 486-500 (500 tweet milestone — live launch day engagement pack: 01:30 pre-sleep note, 07:30 morning 90-min countdown, 09:05 first comment live, 09:45 early traction pulse with real numbers placeholder, 10:30 "who is upvoting" observation, 12:30 schema science hook, 14:00 April Fools filter theory update with real data, 15:00 "we didn't build this" unexpected audience story, 15:01 6-hour milestone, 18:30 evening momentum, 17:00 comparison hook, 21:00 wind-down with real numbers, 21:30 retrospective teaser, 09:00 April 2 day-after announcement, 10:00 April 2 roadmap reveal), PH comment response templates x5 (April Fools, Excalidraw comparison, business model, self-host, LLM compatibility), TikTok/YouTube Shorts 60-second script "I gave AI a pencil", Discord DM template for individual MCP developer community members, Newsletter email template for post-launch subscriber update.
+
+- **PRESS-KIT.md Cycle 70 (v15.0)**: One-liners v206-v215 (launch morning pack — workflow gap, pure function, memory angle, consumer short, honest pitch v2, April Fools meta, five words, wobble), 5 new viral angles never previously pitched (01:30 Founder Note, 500 Tweets meta, Schema Is the Product, Dungeon Master's Floor Plan API, 12000 MCP Servers Missing), Media contact priority table with personalized pitch template, PH Gallery Checklist final status.
+
+- **NEW IDEAS (Cycle 70):**
+  - **TikTok/YouTube Shorts "I gave AI a pencil" (60s)** — NEW PLATFORM. Visual-first demo script ready in SOCIAL-MEDIA Cycle 70. Hashtags: #TechTok #AIAgents #ProductHunt. Post April 1 during launch day.
+  - **"500 Tweets to Launch Day" meta post** — Transparent about AI-assisted marketing. Uniquely honest. Write April 2 for Substack/IndieHackers.
+  - **PH Comment Response Templates** — All 5 common comment types pre-written. Ready to paste immediately.
+  - **Newsletter subscriber update email** — Template ready for any signups from launch week. Send April 2.
+  - **Individual Discord DM template** — Personalized outreach to active MCP community members. Use sparingly, genuinely.
+
+### CRITICAL ACTIONS — FINAL CHECKLIST (March 31, 01:30 CET)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🚨 BLOCKER | **Screenshot P0-A: Human Mode side-by-side** | Before sleep | MUST CONFIRM |
+| 🚨 BLOCKER | **Screenshot P0-B: PH Banner 1270×760** | Before sleep | MUST CONFIRM |
+| 🔴 CRITICAL | **Tweet 486** (01:30 pre-sleep) | NOW | READY — Cycle 70 |
+| 🔴 CRITICAL | **LinkedIn launch post** (Cycle 69 copy) | OVERDUE | POST NOW OR 06:30 |
+| 🔴 CRITICAL | **Newsletter pitches** (TLDR AI, Ben's Bites, Rundown) | OVERDUE | SEND NOW |
+| 🟡 HIGH | **Tweet 487** (07:30 alarm countdown) | 07:30 CET | READY — Cycle 70 |
+| 🟡 HIGH | **Tweet 473 PIN** (PH LIVE — Cycle 69) | 09:01 CET | READY |
+| 🟡 HIGH | **First PH comment** | 09:01–09:03 | READY in SOCIAL-MEDIA Cycle 66 |
+| 🟡 HIGH | **Tweet 488** (first comment live) | 09:05 CET | READY — Cycle 70 |
+| 🟡 HIGH | **Show HN submission** | 09:30 CET | READY — Cycle 69 |
+| 🟡 HIGH | **r/mcp post** | 10:00 CET | READY — Cycle 69 |
+| 🟡 HIGH | **Blog #157 (founder note)** | 09:00 CET publish | READY |
+| 🟡 HIGH | **Blog #158 (first-hour playbook, live)** | 09:00 CET — update hourly | READY |
+| 🟢 NICE | **TikTok "I gave AI a pencil" shoot** | April 1 mid-day | Script READY — Cycle 70 |
+
+### APRIL 1 LAUNCH DAY SCHEDULE (FINAL — Cycle 70)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 01:30 (tonight) | Tweet 486 — founder note/pre-sleep | SOCIAL-MEDIA Cycle 70 |
+| 06:30 | LinkedIn launch post (OVERDUE — post now or at 06:30) | SOCIAL-MEDIA Cycle 69 |
+| 07:30 | Tweet 487 — 90-min countdown | SOCIAL-MEDIA Cycle 70 |
+| 09:00 | Publish blog #157 (founder note) | blog/ Cycle 70 |
+| 09:00 | Publish blog #158 (live playbook — update hourly) | blog/ Cycle 70 |
+| 09:01 | **Product Hunt goes LIVE** | — |
+| 09:01 | Tweet 473 — PH LIVE (PIN THIS) | SOCIAL-MEDIA Cycle 69 |
+| 09:01 | Post PH First Comment | SOCIAL-MEDIA Cycle 66 |
+| 09:05 | Tweet 488 — first comment live | SOCIAL-MEDIA Cycle 70 |
+| 09:15 | Tweet 474 — April Fools lean-in | SOCIAL-MEDIA Cycle 69 |
+| 09:30 | **Show HN submission** | SOCIAL-MEDIA Cycle 69 |
+| 09:30 | Tweet 475 — schema science | SOCIAL-MEDIA Cycle 69 |
+| 09:45 | Tweet 489 — early traction pulse (fill real numbers) | SOCIAL-MEDIA Cycle 70 |
+| 10:00 | Tweet thread 476 — four audiences | SOCIAL-MEDIA Cycle 69 |
+| 10:00 | **r/mcp post** | SOCIAL-MEDIA Cycle 69 |
+| 10:30 | Tweet 490 — who is upvoting | SOCIAL-MEDIA Cycle 70 |
+| 11:00 | Tweet 477 — comparison | SOCIAL-MEDIA Cycle 69 |
+| 11:30 | **r/AIAssistants post** | SOCIAL-MEDIA Cycle 69 |
+| 12:00 | Tweet 478 — midday push | SOCIAL-MEDIA Cycle 69 |
+| 12:30 | Tweet 491 — schema science (shareability hook) | SOCIAL-MEDIA Cycle 70 |
+| 13:00 | Tweet 479 — wobble science | SOCIAL-MEDIA Cycle 69 |
+| 14:00 | Post blog #155 (Figma vs napkin) | blog/ Cycle 69 |
+| 14:00 | **r/webdev post** | SOCIAL-MEDIA Cycle 69 |
+| 14:00 | Tweet 492 — April Fools filter theory update (fill real data) | SOCIAL-MEDIA Cycle 70 |
+| 14:30 | Tweet 480 — MCP/A2A stat | SOCIAL-MEDIA Cycle 69 |
+| 15:00 | Tweet 493 — "we didn't build this" story | SOCIAL-MEDIA Cycle 70 |
+| 15:01 | Tweet 494 — 6-hour milestone (fill real numbers) | SOCIAL-MEDIA Cycle 70 |
+| 16:00 | Tweet 481 — founder warm close | SOCIAL-MEDIA Cycle 69 |
+| 17:00 | Tweet 496 — comparison hook | SOCIAL-MEDIA Cycle 70 |
+| 18:00 | Tweet 482 — final hours push | SOCIAL-MEDIA Cycle 69 |
+| 18:30 | Tweet 495 — evening momentum | SOCIAL-MEDIA Cycle 70 |
+| 20:00 | Tweet 483 — wind-down retrospective | SOCIAL-MEDIA Cycle 69 |
+| 20:00 | IndieHackers "April 1 launch" post | — |
+| 21:00 | Tweet 497 — end of day (fill real numbers) | SOCIAL-MEDIA Cycle 70 |
+| 21:30 | Tweet 498 — retrospective teaser | SOCIAL-MEDIA Cycle 70 |
+| **APRIL 2** | | |
+| 09:00 | Tweet 499 + Blog #156 (retrospective with real numbers) | Cycle 69+70 |
+| 10:00 | Tweet 500 — roadmap reveal | SOCIAL-MEDIA Cycle 70 |
+| 10:00 | "500 Tweets" meta post for Substack/IndieHackers | NEW — Cycle 70 idea |
+| 12:00 | Newsletter email to all signups | SOCIAL-MEDIA Cycle 70 |
+
+### NEW BLOG POSTS (Cycle 70)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 157 | **Founder Note Written at 01:30 AM** | founder-note-1am-before-product-hunt.md | Medium (primary), IndieHackers | April 1 09:00 CET |
+| 158 | **Product Hunt Live: First-Hour Playbook** | product-hunt-live-first-hour-playbook.md | Dev.to, IndieHackers (live blog) | April 1 09:00 CET (update hourly) |
+
+### CUMULATIVE BLOG INVENTORY (158 posts as of Cycle 70)
+
+| Range | Posts |
+|-------|-------|
+| #1-156 | Cycles 1-69 |
+| #157-158 | Cycle 70 (this cycle) |
+
+*Last Updated: March 31, 2026 (Cycle 70 — 01:30 CET)*
+*Added: Blog posts #157-158 (founder note + live playbook), SOCIAL-MEDIA.md Cycle 70 (Tweets 486-500, 500-tweet milestone, PH comment response templates x5, TikTok script, Discord DM template, newsletter email), PRESS-KIT.md v15.0 (one-liners v206-v215, 5 new viral angles, media contact priority table, gallery checklist final).*
+
+---
+
 ## Marketing Improvements (Cycle 69 - March 30, 2026 - 23:09 CET)
 
 ### STATUS: 🔴 T-10H TO PRODUCT HUNT LAUNCH | 153→156 POSTS | FINAL CYCLE BEFORE LAUNCH

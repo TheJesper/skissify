@@ -1,8 +1,132 @@
 # Skissify Press Kit
 
-**Last Updated:** March 30, 2026 - 16:26 CET (Cycle 64)
-**Version:** 14.0
+**Last Updated:** March 31, 2026 - 01:30 CET (Cycle 70)
+**Version:** 15.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 70 Updates (March 31, 2026 - 01:30 CET) - PRODUCT HUNT IN 7.5H
+
+### STATUS: 🚀 T-7.5H | PRODUCT HUNT APRIL 1 09:01 CET | FINAL PRESS CYCLE
+
+---
+
+### ONE-LINERS v206-v215 (Cycle 70 — Launch Morning Pack)
+
+**v206 (TWEET-SIZED HOOK — April Fools angle):**
+"Launching an AI sketch tool on April Fools Day. The ones who click through anyway become the best users."
+
+**v207 (FOUNDER STORY SHORT-FORM — Medium/IH):**
+"Built in a week. Four unexpected audiences. One Product Hunt launch at 01:30am. Here's the honest account."
+
+**v208 (THE WORKFLOW GAP):**
+"Every AI agent workflow has a thinking step. Almost none have a drawing step. Skissify is the drawing step."
+
+**v209 (PURE FUNCTION — developer framing):**
+"POST description → GET sketch URL. That's the whole API. The hand-drawn rendering is on our side."
+
+**v210 (THE MEMORY ANGLE — agent developers):**
+"A Skissify URL is structured data that renders as a sketch. Agents can pass URLs to other agents. That's how multi-agent visual handoffs work."
+
+**v211 (CONSUMER SHORT):**
+"Type a room description. Get a hand-drawn floor plan. No Figma. No CAD. No account needed."
+
+**v212 (THE HONEST PITCH v2):**
+"We benchmarked 200+ floor plan renders to find the right schema. The product is the accuracy, not just the aesthetic."
+
+**v213 (APRIL FOOLS META):**
+"We launched on April Fools Day deliberately. Not as a joke. As a filter."
+
+**v214 (FIVE WORDS):**
+"AI agents that draw now."
+
+**v215 (THE WOBBLE):**
+"Hand-drawn by algorithm. Seeded, reproducible, computed. The wobble is the product."
+
+---
+
+### VIRAL ANGLES — Cycle 70 (New Hooks Not Yet Used)
+
+These angles haven't appeared in previous PRESS-KIT cycles and represent fresh entry points for media pitches and social content:
+
+**Angle A: "The 01:30AM Founder Note"**
+> Category: Solo founder authenticity  
+> Hook: "Founder writes honest note at 1:30am seven hours before Product Hunt. Here's what's actually in it."  
+> Why it works: Vulnerability + specificity + timing creates emotional resonance. Medium/Substack post bait.  
+> Best for: Morning PH content, IndieHackers, personal Twitter
+
+**Angle B: "500 Tweets to Launch Day"**
+> Category: Build-in-public meta  
+> Hook: "The marketing team (an AI agent) wrote 500 tweets before the product launched. Cycle 70 is live at 1:30am."  
+> Why it works: Uniquely transparent about AI-assisted content creation. Honest about the process.  
+> Best for: Twitter/X meta thread, Substack audience, AI-curious journalists
+
+**Angle C: "The Schema Is the Product"**
+> Category: Technical insight  
+> Hook: "Most people think the hand-drawn aesthetic is the product. It's not. The schema design is."  
+> Why it works: Counter-intuitive. Tech-credible. 94% vs 61% benchmark is concrete and shareable.  
+> Best for: HN, r/MachineLearning, Dev.to, AI newsletters
+
+**Angle D: "The Dungeon Master's Floor Plan API"**
+> Category: Unexpected audience delight  
+> Hook: "This AI sketch tool was built for developers. A D&D community in the Pacific Northwest adopted it for dungeon maps."  
+> Why it works: Contrast + specificity + humor. Highly shareable outside tech communities.  
+> Best for: TikTok, Twitter, Reddit r/DnD crosspost, gaming newsletters
+
+**Angle E: "What 12,000 MCP Servers Are Missing"**
+> Category: MCP ecosystem angle  
+> Hook: "There are 12,000+ MCP servers. None of them let your AI agent draw until now."  
+> Why it works: Big number + simple gap = immediately memorable.  
+> Best for: MCP-adjacent communities, Anthropic Discord, dev tool newsletters
+
+---
+
+### MEDIA CONTACT PRIORITY — Cycle 70 (T-7.5H FINAL)
+
+Focus for any email/DM today — personalized, short, with demo link:
+
+| Outlet | Contact approach | Best angle |
+|--------|-----------------|------------|
+| Ben's Bites | Email or Twitter DM | "AI agent that draws" — 1 line + demo link |
+| TLDR AI | Newsletter submission form | Schema benchmark (94% vs 61%) — technical credibility |
+| The Rundown AI | Twitter DM | April Fools filter theory — meta story |
+| Superhuman | Newsletter form | Four unexpected audiences — consumer story |
+| IndieHackers | Community post (April 2 with real numbers) | "Launched on April Fools Day" — authentic + numbers |
+| Dev.to | Cross-post blog post | Technical article with code |
+| r/MachineLearning (2.7M) | Schema science post (April 2) | 94% accuracy benchmark, JSON schema |
+
+**Pitch template (ultra-short):**
+```
+Subject: AI sketch tool launched on Product Hunt today (April 1 — yes, it's real)
+
+Hi [NAME],
+
+Skissify launched today on Product Hunt. It's a sketch API + MCP server that gives AI agents the ability to draw.
+
+The story I think is interesting for [OUTLET]: [ANGLE].
+
+Demo (30 seconds, no account): skissify.com/editor
+PH listing: [link]
+
+Happy to provide more detail.
+
+— Jesper
+```
+
+---
+
+### PRODUCT HUNT GALLERY CHECKLIST — FINAL (Cycle 70)
+
+| Asset | Status | Notes |
+|-------|--------|-------|
+| PH Banner 1270×760 | 🚨 MUST CONFIRM | Primary gallery image |
+| Human Mode screenshot | 🚨 MUST CONFIRM | P0 blocker |
+| Floor plan demo (3-panel) | ✅ | JSON → loading → result |
+| MCP integration screenshot | ✅ | Claude Desktop config |
+| Wobble algorithm comparison | ✅ | Same seed vs different seed |
+| Four audiences grid | ✅ | Architect/Teacher/DM/PM |
+| Editor interface full-screen | ✅ | Clean, logged-out state |
 
 ---
 
