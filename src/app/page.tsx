@@ -210,6 +210,8 @@ function EditorInner({
     commitDrag,
     resizeElement,
     commitResize,
+    rotateElementSilent,
+    commitRotate,
     copySelected,
     pasteElements,
     colorSelected,

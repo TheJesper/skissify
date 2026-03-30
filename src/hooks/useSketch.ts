@@ -343,6 +343,30 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     });
   }, [pushHistory]);
 
+  // Rotate a single element silently (no undo entry) - used during live rotate drag
+  const rotateElementSilent = useCallback(
+    (idx: number, angleDeg: number) => {
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (i !== idx) return el;
+          return { ...el, rotation: ((angleDeg % 360) + 360) % 360 } as SketchData["elements"][number];
+        });
+        const next = { ...prev, elements: newElements };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        return next;
+      });
+    },
+    []
+  );
+
+  // Commit current state to undo history after rotation drag ends
+  const commitRotate = useCallback(() => {
+    setSketch((prev) => {
+      pushHistory(prev);
+      return prev;
+    });
+  }, [pushHistory]);
+
   // Move selected elements silently (no undo entry) — used during live drag
   const moveSelected = useCallback(
     (dx: number, dy: number) => {
@@ -908,6 +932,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     commitDrag,
     resizeElement,
     commitResize,
+    rotateElementSilent,
+    commitRotate,
     copySelected,
     pasteElements,
     colorSelected,

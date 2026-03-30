@@ -203,6 +203,36 @@ function hitHandle(h: ResizeHandle, mx: number, my: number, HSIZE = 10): boolean
   return Math.abs(mx - h.x) <= HSIZE && Math.abs(my - h.y) <= HSIZE;
 }
 
+/**
+ * Get the rotation handle position for an element (canvas coords, element-space).
+ * Returns the handle center position and the element's pivot (center) position.
+ * The handle is rendered 20px above the top-center of the bounding box.
+ */
+function getRotationHandle(el: SketchElement): { handle: { x: number; y: number }; pivot: { x: number; y: number } } | null {
+  const bounds = getElementBounds(el);
+  if (!bounds) return null;
+  const pivot = { x: bounds.x + bounds.w / 2, y: bounds.y + bounds.h / 2 };
+  const rotation = el.rotation ?? 0;
+  // Offset: 20px above center (in element-local space, before rotation)
+  const localOffsetY = -(bounds.h / 2 + 20);
+  // Rotate the offset by the element's rotation to get the world-space handle pos
+  const rad = (rotation * Math.PI) / 180;
+  const handle = {
+    x: pivot.x + localOffsetY * Math.sin(rad),
+    y: pivot.y - localOffsetY * Math.cos(rad),
+  };
+  return { handle, pivot };
+}
+
+/** Hit-test the rotation handle. Returns true if (mx,my) is within HSIZE of the handle. */
+function hitRotationHandle(el: SketchElement, mx: number, my: number, HSIZE = 10): boolean {
+  const rh = getRotationHandle(el);
+  if (!rh) return false;
+  const dx = mx - rh.handle.x;
+  const dy = my - rh.handle.y;
+  return dx * dx + dy * dy <= HSIZE * HSIZE;
+}
+
 /** Apply a resize delta to an element, returning a partial update object */
 function applyResizeDelta(
   handleId: HandleId,
@@ -263,11 +293,11 @@ interface CanvasProps {
   selectedElements: Set<number>;
   onSelectElements: (elements: Set<number>) => void;
   onMoveSelected?: (dx: number, dy: number) => void;
-  /** Called when a drag-move gesture ends — use to commit to undo history */
+  /** Called when a drag-move gesture ends - use to commit to undo history */
   onDragEnd?: () => void;
   /** Called with element index and partial updates during resize drag */
   onResizeElement?: (idx: number, updates: Record<string, number>) => void;
-  /** Called when resize drag ends — use to commit to undo history */
+  /** Called when resize drag ends - use to commit to undo history */
   onResizeEnd?: () => void;
   /** Called with current zoom level whenever it changes */
   onZoomChange?: (zoom: number) => void;
@@ -275,7 +305,7 @@ interface CanvasProps {
   canvasControlRef?: React.MutableRefObject<{ resetView: () => void } | null>;
   /** Called with element index when user double-clicks an element to edit its text */
   onDoubleClickElement?: (idx: number) => void;
-  /** Called when an element type is dropped onto the canvas — receives type + canvas coords */
+  /** Called when an element type is dropped onto the canvas - receives type + canvas coords */
   onDropElement?: (type: string, canvasX: number, canvasY: number) => void;
   /** Called when user picks an action from the right-click context menu */
   onContextMenuAction?: (actionId: string) => void;
@@ -283,10 +313,14 @@ interface CanvasProps {
   selectedLocked?: boolean;
   /** Whether any selected element belongs to a group (used to build context menu) */
   selectedHasGroup?: boolean;
-  /** Freehand draw mode — when true, mouse/touch draws a new path element */
+  /** Freehand draw mode - when true, mouse/touch draws a new path element */
   drawMode?: boolean;
   /** Called with simplified points when freehand draw stroke finishes */
   onDrawPath?: (points: { x: number; y: number }[]) => void;
+  /** Called with element index and new rotation angle (degrees) during live rotate drag */
+  onRotateElement?: (idx: number, angleDeg: number) => void;
+  /** Called when rotate drag ends - use to commit to undo history */
+  onRotateEnd?: () => void;
 }
 
 /** Returns the editable text content of an element, or null if not text-editable */
@@ -326,6 +360,8 @@ export default function Canvas({
   selectedHasGroup,
   drawMode,
   onDrawPath,
+  onRotateElement,
+  onRotateEnd,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -381,6 +417,13 @@ export default function Canvas({
   const isDrawing = useRef(false);
   const drawPoints = useRef<{ x: number; y: number }[]>([]);
   const [drawPreview, setDrawPreview] = useState<{ x: number; y: number }[] | null>(null);
+
+  // Rotation handle drag state
+  const isRotating = useRef(false);
+  const rotateElementIdx = useRef<number>(-1);
+  const rotatePivot = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  const rotateStartAngle = useRef<number>(0); // angle from pivot to mouse at drag start
+  const rotateStartElemAngle = useRef<number>(0); // element's rotation at drag start
 
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
@@ -542,12 +585,6 @@ export default function Canvas({
             ctx.translate(cx, cy);
             ctx.rotate((el.rotation * Math.PI) / 180);
             ctx.strokeRect(-bounds.w / 2, -bounds.h / 2, bounds.w, bounds.h);
-            // Small rotation indicator dot above the box
-            ctx.beginPath();
-            ctx.setLineDash([]);
-            ctx.arc(0, -bounds.h / 2 - 8, 4, 0, Math.PI * 2);
-            ctx.strokeStyle = isLocked ? "#cb4b16" : "#b58900";
-            ctx.stroke();
             ctx.restore();
           } else {
             ctx.strokeRect(bounds.x, bounds.y, bounds.w, bounds.h);
@@ -571,6 +608,46 @@ export default function Canvas({
               ctx.lineWidth = 1;
               ctx.beginPath();
               ctx.arc(lx + ls / 2, ly + ls / 2, 2.5, 0, Math.PI * 2);
+              ctx.stroke();
+              ctx.restore();
+            }
+          }
+
+          // Draw rotation handle for single-selected non-locked elements
+          if (selectedElements.size === 1 && !isLocked) {
+            const rh = getRotationHandle(el);
+            if (rh) {
+              ctx.save();
+              ctx.setLineDash([]);
+              ctx.globalAlpha = 1;
+              // Stem line from top-center of bounding box to handle
+              const pivot = rh.pivot;
+              const rotation = el.rotation ?? 0;
+              const rad = (rotation * Math.PI) / 180;
+              const stemEndY = -(bounds.h / 2);
+              const stemStartWorld = {
+                x: pivot.x + stemEndY * Math.sin(rad),
+                y: pivot.y - stemEndY * Math.cos(rad),
+              };
+              ctx.strokeStyle = "#b58900";
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(stemStartWorld.x, stemStartWorld.y);
+              ctx.lineTo(rh.handle.x, rh.handle.y);
+              ctx.stroke();
+              // Handle circle
+              ctx.beginPath();
+              ctx.arc(rh.handle.x, rh.handle.y, 5, 0, Math.PI * 2);
+              ctx.fillStyle = "#fdf6e3";
+              ctx.strokeStyle = "#b58900";
+              ctx.lineWidth = 1.5;
+              ctx.fill();
+              ctx.stroke();
+              // Rotation arc indicator inside handle
+              ctx.beginPath();
+              ctx.arc(rh.handle.x, rh.handle.y, 3, -Math.PI * 0.7, Math.PI * 0.7);
+              ctx.strokeStyle = "#b58900";
+              ctx.lineWidth = 1;
               ctx.stroke();
               ctx.restore();
             }
@@ -788,7 +865,7 @@ export default function Canvas({
     [sketch.elements, clientToCanvas, onSelectElements, onDoubleClickElement]
   );
 
-  // Zoom with scroll — zoom toward mouse cursor for pixel-perfect feel
+  // Zoom with scroll - zoom toward mouse cursor for pixel-perfect feel
   const handleWheel = useCallback(
     (e: React.WheelEvent) => {
       e.preventDefault();
@@ -827,13 +904,34 @@ export default function Canvas({
 
       const { mx, my } = clientToCanvas(e.clientX, e.clientY);
 
-      // Freehand draw mode — start recording path
+      // Freehand draw mode - start recording path
       if (drawMode && onDrawPath) {
         isDrawing.current = true;
         drawPoints.current = [{ x: mx, y: my }];
         setDrawPreview([{ x: mx, y: my }]);
         e.preventDefault();
         return;
+      }
+
+      // Check rotation handle first (only when exactly 1 element selected, not locked)
+      if (onRotateElement && selectedElements.size === 1) {
+        const idx = [...selectedElements][0];
+        const el = sketch.elements[idx];
+        if (el && !(el as unknown as Record<string, unknown>).locked) {
+          if (hitRotationHandle(el, mx, my)) {
+            const rh = getRotationHandle(el);
+            if (rh) {
+              isRotating.current = true;
+              rotateElementIdx.current = idx;
+              rotatePivot.current = rh.pivot;
+              rotateStartAngle.current = Math.atan2(my - rh.pivot.y, mx - rh.pivot.x);
+              rotateStartElemAngle.current = el.rotation ?? 0;
+              lastMouse.current = { x: e.clientX, y: e.clientY };
+              e.preventDefault();
+              return;
+            }
+          }
+        }
       }
 
       // Check resize handles first (only when exactly 1 element selected and not locked)
@@ -900,7 +998,7 @@ export default function Canvas({
         lastMouse.current = { x: e.clientX, y: e.clientY };
       }
     },
-    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, onResizeElement, getActiveHandles]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, onResizeElement, onRotateElement, getActiveHandles, drawMode, onDrawPath]
   );
 
   const handleMouseMove = useCallback(
@@ -915,14 +1013,26 @@ export default function Canvas({
         return;
       }
 
-      // Freehand draw — add points
+      // Freehand draw - add points
       if (isDrawing.current && drawMode) {
         const { mx, my } = clientToCanvas(e.clientX, e.clientY);
         drawPoints.current.push({ x: mx, y: my });
-        // Throttle preview updates — only update every 3 points for performance
+        // Throttle preview updates - only update every 3 points for performance
         if (drawPoints.current.length % 3 === 0) {
           setDrawPreview([...drawPoints.current]);
         }
+        return;
+      }
+
+      // Rotation drag
+      if (isRotating.current && onRotateElement && e.buttons === 1) {
+        const { mx, my } = clientToCanvas(e.clientX, e.clientY);
+        const currentAngle = Math.atan2(my - rotatePivot.current.y, mx - rotatePivot.current.x);
+        const deltaAngle = (currentAngle - rotateStartAngle.current) * (180 / Math.PI);
+        let newRotation = rotateStartElemAngle.current + deltaAngle;
+        // Snap to 15° increments when Shift is held
+        if (e.shiftKey) newRotation = Math.round(newRotation / 15) * 15;
+        onRotateElement(rotateElementIdx.current, ((newRotation % 360) + 360) % 360);
         return;
       }
 
@@ -987,7 +1097,7 @@ export default function Canvas({
               onMoveSelected(incDx, incDy);
               lastSnappedDelta.current = { x: snappedTotalDx, y: snappedTotalDy };
             }
-            // Don't update lastMouse — we still track dragStartMouse for total delta
+            // Don't update lastMouse - we still track dragStartMouse for total delta
           } else {
             onMoveSelected(dx / zoom / centerScale, dy / zoom / centerScale);
             lastMouse.current = { x: e.clientX, y: e.clientY };
@@ -1024,7 +1134,7 @@ export default function Canvas({
         }
       }
     },
-    [selectedElements, onMoveSelected, canvasW, canvasH, zoom, onResizeElement]
+    [selectedElements, onMoveSelected, canvasW, canvasH, zoom, onResizeElement, onRotateElement, clientToCanvas, drawMode, onDrawPath]
   );
 
   const handleMouseUp = useCallback(
@@ -1043,6 +1153,14 @@ export default function Canvas({
           onDrawPath(simplified);
         }
         drawPoints.current = [];
+        return;
+      }
+
+      // Finalize rotation drag
+      if (isRotating.current) {
+        isRotating.current = false;
+        rotateElementIdx.current = -1;
+        if (onRotateEnd) onRotateEnd();
         return;
       }
 
@@ -1106,11 +1224,19 @@ export default function Canvas({
         setSmartGuides([]);
       }
     },
-    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd, clientToCanvas]
+    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd, onRotateEnd, clientToCanvas, drawMode, onDrawPath]
   );
 
   const handleMouseLeave = useCallback(() => {
     isPanning.current = false;
+
+    // Finalize rotation drag if in progress
+    if (isRotating.current) {
+      isRotating.current = false;
+      rotateElementIdx.current = -1;
+      if (onRotateEnd) onRotateEnd();
+      return;
+    }
 
     // Finalize resize if in progress
     if (activeResizeHandle.current !== null) {
@@ -1142,7 +1268,7 @@ export default function Canvas({
     if (wasDragging && onDragEnd) {
       onDragEnd();
     }
-  }, [onDragEnd, onResizeEnd]);
+  }, [onDragEnd, onResizeEnd, onRotateEnd]);
 
   // Drag-and-drop: accept element type drops from the element panel
   const handleDragOver = useCallback((e: React.DragEvent<HTMLDivElement>) => {
@@ -1223,7 +1349,7 @@ export default function Canvas({
   // Touch: pinch-to-zoom, two-finger pan, single-touch tap-to-select and drag-to-move/pan
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     if (e.touches.length === 2) {
-      // Two-finger: pinch/pan — cancel any in-progress single-touch drag
+      // Two-finger: pinch/pan - cancel any in-progress single-touch drag
       isTouchDraggingElements.current = false;
       touchStartPos.current = null;
       lastSingleTouch.current = null;
@@ -1346,7 +1472,7 @@ export default function Canvas({
           const dy = changedTouch.clientY - startPos.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 12) {
-            // Treat as a tap — find element under tap point
+            // Treat as a tap - find element under tap point
             const { mx, my } = clientToCanvas(changedTouch.clientX, changedTouch.clientY);
             let tappedIdx = -1;
             for (let i = sketch.elements.length - 1; i >= 0; i--) {
@@ -1398,6 +1524,18 @@ export default function Canvas({
 
       const { mx, my } = clientToCanvas(e.clientX, e.clientY);
 
+      // Check rotation handle
+      if (selectedElements.size === 1 && onRotateElement) {
+        const idx = [...selectedElements][0];
+        const el = sketch.elements[idx];
+        if (el && !(el as unknown as Record<string, unknown>).locked) {
+          if (hitRotationHandle(el, mx, my)) {
+            setCursor("crosshair");
+            return;
+          }
+        }
+      }
+
       // Check resize handles first
       if (selectedElements.size === 1) {
         const handles = getActiveHandles();
@@ -1421,7 +1559,7 @@ export default function Canvas({
         setCursor("crosshair");
       }
     },
-    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, getActiveHandles, drawMode]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, getActiveHandles, drawMode, onRotateElement]
   );
 
   // Keyboard
@@ -1527,7 +1665,7 @@ export default function Canvas({
         />
       )}
 
-      {/* Zoom controls overlay — bottom-right */}
+      {/* Zoom controls overlay - bottom-right */}
       <div
         className="absolute bottom-3 right-3 flex items-center gap-1 z-20"
         style={{ pointerEvents: "auto" }}
@@ -1544,7 +1682,7 @@ export default function Canvas({
           title="Zoom out"
           aria-label="Zoom out"
         >
-          −
+          -
         </button>
         <button
           onClick={resetView}
@@ -1688,7 +1826,7 @@ function distToSegment(
   return Math.sqrt((px - nearX) ** 2 + (py - nearY) ** 2);
 }
 
-/** Ramer-Douglas-Peucker path simplification — reduces point count while preserving shape */
+/** Ramer-Douglas-Peucker path simplification - reduces point count while preserving shape */
 function simplifyPath(
   points: { x: number; y: number }[],
   epsilon: number
