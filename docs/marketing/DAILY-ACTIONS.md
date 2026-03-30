@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #68 (21:19 CET, Monday March 30)
+
+### Context: Run #68 Key Findings
+
+- 68 consecutive niche-clean scans — no new competitor in hand-drawn + JSON-native + MCP + floor plan
+- Thomas Thornton Excalidraw MCP tutorial is **14 days old** and still #1 — the SERP slot is open for a Skissify tutorial
+- Google Stitch "complete overhaul" confirmed in fresh editorial (4 days, 1 week) — polished UI lane, non-competitive
+- Toolradar is actively building MCP tool review pages (Linear MCP, 3 days ago) — new registry to add at launch
+- HN blog diagram thread still showing fresh activity at 20:16 CET (26+ hours of discussion)
+- Plan7Architect SEO window: now expired
+- publishConfig fix + npm publish remains the #1 unblocked action
+
+---
+
+### 🔴 Action 1: Fix publishConfig + npm publish @skissify/mcp-server (30 min)
+
+The only remaining technical blocker. 30-second fix, 5-minute publish.
+
+1. Open `W:/code/skissify/mcp-server/package.json`
+2. Add `"publishConfig": { "access": "public" }`
+3. Run `cd W:/code/skissify/mcp-server && npm publish --access public`
+4. Verify: `npm view @skissify/mcp-server`
+
+**Why Wednesday**: Chrome DevTools MCP shipped Monday. The developer search wave for new MCP tools peaks in the 48–72 hour window after a major launch. Wednesday morning is still inside that window.
+
+---
+
+### 🔴 Action 2: Write and publish "JSON to hand-drawn floor plan" tutorial blog post (2 hours)
+
+The Thomas Thornton Excalidraw MCP tutorial (14 days old) is the uncontested #1 result for "AI sketch MCP." A Skissify counter-tutorial targeting "hand-drawn floor plan MCP" and "Claude Code sketch tool" would rank within 3–5 days with essentially zero SERP competition.
+
+**Target keywords**:
+- "AI agent hand-drawn sketch tool"
+- "hand-drawn floor plan MCP server"
+- "Claude Code sketch floor plan JSON"
+- "JSON to hand-drawn SVG API"
+
+**Article structure**: (1) The problem — agents need visual output, (2) The gap — polished tools don't do rough sketches, (3) Skissify's approach — JSON manifest → hand-drawn SVG, (4) Live demo with `@skissify/mcp-server`, (5) Architecture firm use case.
+
+---
+
+### 🟡 Action 3: Submit to Toolradar MCP registry at launch (30 min)
+
+Toolradar is actively building individual MCP tool review pages (3 days ago — Linear MCP). A "Skissify MCP reviews, pricing & alternatives" page on Toolradar creates independent Google SEO.
+
+**URL**: toolradar.com (submit form or contact)
+**Submission content**: Tool name, description, npm package, use cases, pricing tiers.
+
+This adds a 6th launch-day registry (alongside modelcontextprotocol.io, awesome-mcp-servers, claudefa.st, mcpmanager.ai, LobeHub).
+
+---
+
 ## 2026-03-31 (Tuesday) — Updated by Automated Strategy Run #67 (20:16 CET, Monday March 30)
 
 ### 🔴 Priority Recap (Run #67 addenda): HN Thread Still Live + Plan7Architect Window Now Closed

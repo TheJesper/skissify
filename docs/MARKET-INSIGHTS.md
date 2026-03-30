@@ -2,6 +2,64 @@
 
 ---
 
+## Entry: March 30, 2026 — 21:19 CET | Automated Strategy Run #68
+
+### Theme: "Why Would Someone Pay EUR 2/mo for Skissify?" — Five Crystallized Answers
+
+This run synthesizes all intelligence gathered across 68 scans to answer the central monetization question definitively.
+
+---
+
+#### Answer 1: Because the alternative is a weekend of engineering work
+
+**Evidence**: HN thread (news.ycombinator.com/item?id=47571376, active 26+ hours, confirmed "1 hour ago" at 20:16 CET). A developer built: Excalidraw fork + custom Payload CMS block + MCP server with OAuth + dark/light mode SVG pipeline — to solve what Skissify's JSON API solves in one `npm install`.
+
+**The EUR 2 math**: That developer spent conservatively 2–3 engineering days on the DIY solution. At EUR 50/hr that's EUR 800–1,200. Skissify at EUR 2/mo costs EUR 24/year. The ROI calculation is not "is EUR 2 worth it?" — it's "why would I spend EUR 1,000 when EUR 2 solves this?"
+
+**Conversion copy**: "No fork. No OAuth plumbing. No maintenance. Just `npm install @skissify/mcp-server` and call `skissify_create_floor_plan` from Claude."
+
+---
+
+#### Answer 2: Because MCP is now mandatory infrastructure
+
+**Evidence**: Google Chrome DevTools team shipped MCP server (March 30, 11 hours ago). workos.com enterprise MCP guide (5 days ago). 97M+ monthly downloads. Linux Foundation governance. 5,000+ servers.
+
+When Google's Chrome DevTools team ships MCP tooling, developers treat "has MCP" as table stakes within weeks. Skissify with `@skissify/mcp-server` moves from "nice to have" to "compliant with the stack I'm building." The EUR 2/mo isn't a subscription — it's the cost of being a compliant tool in the 2026 agent ecosystem.
+
+---
+
+#### Answer 3: Because Google Stitch and Figma do polished UI, not rough sketches
+
+**Evidence**: toools.design (4 days ago) + emergent.sh (1 week ago) — both confirm Stitch's March 2026 relaunch produces "high-fidelity UI" and "clean HTML/CSS code." Figma MCP writes to design system components. Neither tool produces hand-drawn sketches from structured JSON.
+
+**The gap Skissify fills**: Every major AI design tool in 2026 outputs polished, production-ready visuals. The market for rough, hand-drawn, spatial sketches from AI agents is completely unserved by these tools. EUR 2/mo for the only tool that solves this is not a price decision — it's a category decision.
+
+---
+
+#### Answer 4: Because the floor plan/architectural sketch market is paying $7.99–$49/mo for worse tools
+
+**Evidence**: techjockey.com floor plan roundup (4 days), mysiteplan.com (6 days) — traditional tools like RoomSketcher, Planner 5D, HomeByMe charge $7.99–$49/mo. None have JSON APIs, MCP servers, or agent-compatible output.
+
+**Pricing arbitrage**: Skissify at EUR 2/mo (API Starter) is 4–24x cheaper than the floor of the floor plan software market, while being the only tool in that market that an AI agent can call programmatically. The architectural firm paying $49/mo for RoomSketcher would switch to Skissify's EUR 12/user/mo Team tier in a heartbeat if they run AI-assisted client presentations.
+
+---
+
+#### Answer 5: Because domain-specific tools command 30–50% pricing premium in 2026
+
+**Evidence**: voxturr.com SaaS Market Analysis (2 weeks, stable). Architectural vocabulary (walls, doors, windows, stairs, columns, dimensions) is not available in any other sketch tool. The EUR 2/mo entry tier is the lowest-friction onramp; the real business is EUR 12–18/user/mo Team tier for firms using Skissify programmatically.
+
+**The EUR 2 → EUR 12 upgrade path**: Entry via watermark removal + API access (EUR 2). Stay for collaboration + higher API limits (EUR 12/user/mo). The domain-specific premium justifies the Team tier without price resistance — architecture firms are already paying $49/mo for inferior tools.
+
+---
+
+#### New Intelligence (Run #68): Toolradar MCP Review Ecosystem = Organic SEO at Launch
+
+**Evidence**: toolradar.com actively publishing individual MCP tool review pages (3 days ago — Linear MCP). Structured content: pricing, pros/cons, alternatives. These pages rank individually in Google.
+
+**Implication**: Toolradar submission at launch creates a "Skissify MCP reviews and alternatives" page that ranks organically. This is free SEO that compounds over time — exactly the kind of organic distribution that a solo-founder product needs. Priority submission target alongside awesome-mcp-servers and claudefa.st.
+
+---
+
 ## Entry: March 30, 2026 — 20:16 CET | Automated Strategy Run #67
 
 ### Theme: "Thread Still Alive" — HN Blog Diagram Discussion Active 24+ Hours, EUR 2/mo Comment Window Open NOW
