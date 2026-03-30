@@ -59,9 +59,11 @@ export default function ElementsListPanel({
 
   return (
     <div className="max-h-52 overflow-y-auto -mx-1">
-      {/* Render in reverse so top element appears first (like Figma) */}
-      {[...elements].map((el, reverseVisualIdx) => {
-        const idx = reverseVisualIdx;
+      {/* Render in reverse so top element (highest z-order) appears first — Figma convention */}
+      {[...elements].map((_, visualIdx) => {
+        // Reverse: visual position 0 → last element in array (top layer)
+        const idx = elements.length - 1 - visualIdx;
+        const el = elements[idx];
         const isSelected = selectedElements.has(idx);
         const isHidden = el.visible === false;
         const isLocked = !!(el as unknown as Record<string, unknown>).locked;
@@ -70,7 +72,7 @@ export default function ElementsListPanel({
 
         return (
           <button
-            key={idx}
+            key={`el-${idx}`}
             onClick={(e) => onSelectElement(idx, e.shiftKey)}
             className={`flex items-center gap-1.5 w-full px-1.5 py-1 text-left text-[11px] rounded transition-colors ${
               isSelected

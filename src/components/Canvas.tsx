@@ -5,6 +5,7 @@ import { SketchData, SketchElement } from "@/lib/types";
 import { renderSketch, computeCenterTransform } from "@/lib/renderer";
 import Rulers, { RULER_SIZE } from "./Rulers";
 import ContextMenu, { ContextMenuAction } from "./ContextMenu";
+import Minimap from "./Minimap";
 
 // Type-safe accessors for union element types
 type AnyEl = Record<string, unknown>;
@@ -321,6 +322,8 @@ interface CanvasProps {
   onRotateElement?: (idx: number, angleDeg: number) => void;
   /** Called when rotate drag ends - use to commit to undo history */
   onRotateEnd?: () => void;
+  /** Show minimap thumbnail overlay (default: true when sketch has > 0 elements) */
+  showMinimap?: boolean;
 }
 
 /** Returns the editable text content of an element, or null if not text-editable */
@@ -362,6 +365,7 @@ export default function Canvas({
   onDrawPath,
   onRotateElement,
   onRotateEnd,
+  showMinimap,
 }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -451,6 +455,23 @@ export default function Canvas({
       canvasControlRef.current = { resetView };
     }
   }, [canvasControlRef, resetView]);
+
+  /**
+   * Pan so that element-space coordinate (ex, ey) is centered in the viewport.
+   * Used by the minimap click handler.
+   */
+  const panToElement = useCallback(
+    (ex: number, ey: number) => {
+      // The pan offsets shift the canvas center. To center on (ex, ey):
+      // screen_center + pan + (ex - sketchW/2) * zoom = screen_center
+      // => pan.x = -(ex - sketchW/2) * zoom, pan.y = -(ey - sketchH/2) * zoom
+      setPan({
+        x: -(ex - canvasW / 2) * zoom,
+        y: -(ey - canvasH / 2) * zoom,
+      });
+    },
+    [canvasW, canvasH, zoom]
+  );
 
   // Auto-fit on first mount and when canvas dimensions change
   useEffect(() => {
@@ -1721,6 +1742,19 @@ export default function Canvas({
           canvasRect={canvasRectState}
           containerRect={containerRectState}
           centerTransform={computeCenterTransform(sketch.elements, canvasW, canvasH)}
+        />
+      )}
+
+      {/* Minimap thumbnail — shown when sketch has elements and showMinimap != false */}
+      {(showMinimap !== false) && sketch.elements.length > 0 && containerDims.w > 0 && (
+        <Minimap
+          sketch={sketch}
+          redrawKey={redrawKey}
+          zoom={zoom}
+          pan={pan}
+          containerW={containerDims.w}
+          containerH={containerDims.h}
+          onPanTo={panToElement}
         />
       )}
 
