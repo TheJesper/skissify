@@ -2,6 +2,71 @@
 
 ---
 
+## 2026-03-31 (Tuesday) — Proposed by Automated Strategy Run #58 (10:21 CET, Monday March 30)
+
+### Context: **58 consecutive niche-clean scans. 🔴 Plan7Architect price hike expires TODAY (March 31) — FINAL 24 HOURS. Thomas Thornton SERP slot at 8+ days — still challengeable. Domo AI Agent Builder + MCP Server confirmed (March 25). DEV Community declares MCP "essential infrastructure." Value-based pricing = ROI frame for EUR 2/mo.**
+
+---
+
+### 🔴 Action 1 (FINAL DAY — Plan7Architect SEO Window Closes TODAY March 31)
+
+**What**: Publish the "Plan7Architect alternative" SEO blog post before 18:00 CET today. This is the last day this piece has a news hook — after March 31 the price hike window is gone permanently.
+
+**Title**: *"Plan7Architect raised their prices. Here's the EUR 5/mo AI-native alternative for client sketches."*
+
+**Target keywords** (search intent active today):
+- "Plan7Architect alternative 2026"
+- "floor plan software alternative AI"
+- "AI floor plan sketch tool EUR"
+
+**New angle from Run #58 (value-based framing)**:
+> "Traditional floor plan software charges for a license. Skissify charges for value: EUR 2/mo per pipeline integration, EUR 5/mo per professional. One saved presentation prep hour pays for 3 months."
+
+**Publish to**: skissify.com/blog + dev.to/@skissify (cross-post). Both today, before 18:00 CET.
+
+**URL to reference in post**: plan7architect.com/product/pro/ (price increase page)
+
+---
+
+### 🟡 Action 2 (This Week — SERP Slot Challenge) — Publish "AI Sketch MCP Floor Plan" Tutorial
+
+**What**: Write and publish the Skissify counter-tutorial to Thomas Thornton's Excalidraw MCP post (thomasthornton.cloud, now 8 days old, still #1).
+
+**Title**: *"How to generate hand-drawn floor plans from Claude in VS Code — Skissify MCP"*
+
+**SEO target**: "AI sketch MCP floor plan hand-drawn" — completely uncontested keyword slot confirmed across 58 scans.
+
+**Content structure**:
+1. Install `@skissify/mcp-server` (30 seconds)
+2. Configure in Claude Desktop / VS Code Copilot
+3. Prompt: "Draw me a 3-bedroom apartment, ~80 sqm" → paste JSON manifest
+4. Screenshot of hand-drawn SVG output
+5. Compare: "Excalidraw MCP gives you topology. Skissify MCP gives you architecture sketches."
+
+**Why Tuesday**: Thomas Thornton's tutorial enters its 9th day — SERP positions start softening after day 7-8. Publishing Tuesday means Skissify's tutorial challenges the slot before the Thornton piece settles into long-tail territory.
+
+**Publish to**: skissify.com/docs/tutorials + DEV Community + Reddit (r/ClaudeAI, r/mcp_protocol)
+
+---
+
+### 🟢 Action 3 (This Week — Enterprise Discovery) — Submit to MCP Registry + Domo/Smartsheet Ecosystem Docs
+
+**What**: Submit `@skissify/mcp-server` to the MCP registry AND post a "compatible tools" comment on the Domo and Smartsheet MCP community threads.
+
+**Why now**: Domo (March 25) and Smartsheet (March 24, 4,000 users/week-1) both launched MCP servers this week. Their enterprise user communities are actively building MCP agent pipelines. Being discoverable in their ecosystems as "the visual sketch output MCP" is zero-cost enterprise distribution.
+
+**Steps**:
+1. Submit to modelcontextprotocol.io/registry (main registry — day-one listing)
+2. Submit to awesome-mcp-servers (GitHub PR)
+3. Post in community.smartsheet.com Smartsheet MCP thread: "For anyone building visual output workflows — @skissify/mcp-server generates hand-drawn floor plan and diagram sketches from JSON. Complements Smartsheet data perfectly."
+4. Post in Domo MCP launch thread (morningstar.com comments or Domo community forum)
+
+**Why Domo/Smartsheet**: Both target enterprise workflows where spatial/process visualization is a genuine need. A Domo agent that generates business intelligence can call Skissify to produce a hand-drawn layout for stakeholder communication. Zero marketing budget required — just presence in the right community threads.
+
+**ROI framing for community posts**: "One Domo workflow → one floor plan sketch → one saved presentation prep session. EUR 2/mo."
+
+---
+
 ## 2026-03-30 (Monday) — Refreshed by Automated Strategy Run #57 (09:14 CET, Monday March 30)
 
 ### Context: **57 consecutive niche-clean scans. 🔴 HN window is OPEN RIGHT NOW (09:14 CET — optimal until 10:00). Plan7Architect price hike expires TOMORROW (March 31) — FINAL 36 HOURS. Thomas Thornton SERP slot at 1+ week — challengeable within 48–72h. ybuild.ai confirms zero-friction shipping moment. EUR 2/mo = competence signal, not just a feature tier. Execute all three actions today or the triple-convergence window closes permanently.**

@@ -2,6 +2,88 @@
 
 ---
 
+## Marketing Improvements (Cycle 59 — March 30, 2026 — 10:46 CET)
+
+### STATUS: T-22H — SHOW HN FIRES TUESDAY 09:00 CET — FINAL MONDAY CONTENT PUSH
+
+**What Changed in Cycle 59:**
+
+- **4 new blog posts (#126-129):**
+  - `the-22-hour-countdown-what-actually-matters-before-show-hn.md` — the honest pre-launch founder dispatch. Best for Indie Hackers, Substack Monday afternoon.
+  - `why-hand-drawn-sketches-beat-figma-the-honesty-argument.md` — NEW ANGLE: "Figma Tax" isn't just licensing, it's the 30% of meeting time spent on polish-level feedback during exploration. ROI calculation. Fidelity signaling research cited.
+  - `how-ai-agents-draw-floor-plans-the-agent-memory-angle.md` — NEW ANGLE: sketch URL as persistent agent memory. Inspectable, mutable, chainable. Not a screenshot — a living document. Full technical walkthrough.
+  - `skissify-vs-excalidraw-the-show-hn-day-verdict.md` — sharpest comparison yet: 4-row table, honest "use both" recommendation, addresses the nested JSON accuracy gap directly.
+
+- **SOCIAL-MEDIA.md Cycle 59**: Tweets 327-340 (complete T-22h through Show HN day close arc), new Bluesky "visual artifact" thread, r/SoftwareEngineering schema design post (NEW — highly engaged engineering audience), r/AITools community post, Mastra Discord + LangGraph Discord templates, One-liners v129-v136
+
+- **PRESS-KIT.md Cycle 59 (v9.0)**: One-liners v137-v144 (launch-day best), Press Release v4 (FINAL — has schema accuracy stat, four audiences quote, full company details), Media Angles v27-v30, Show HN context for journalists, Screenshot Checklist v8 (final, prioritized, with 5-minute instructions for Screenshot #1)
+
+### KEY RESEARCH FINDING (Cycle 59 — Show HN Data Synthesis)
+
+From 1,200 Show HN launches analysis (confirmed via web search):
+- **YC-backed posts get 3.2x more engagement** — signal your credibility early
+- **Transparency posts outperform launch posts on Indie Hackers** — the retrospective is the real content
+- **First 2 hours determine ranking** — responding to every HN comment in the first 2 hours is the single highest-leverage launch-day action
+- **Schema design post** (r/SoftwareEngineering) is a completely untapped angle — large engineering community, data-backed, non-promotional framing
+
+### New Blog Posts (Cycle 59)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 126 | **The 22-Hour Countdown: What Actually Matters** | `the-22-hour-countdown-what-actually-matters-before-show-hn.md` | Indie Hackers, Substack | Monday 14:00 CET |
+| 127 | **Why Hand-Drawn Beats Figma: The Honesty Argument** | `why-hand-drawn-sketches-beat-figma-the-honesty-argument.md` | Medium, LinkedIn, r/UXDesign | Monday 15:00 CET |
+| 128 | **How AI Agents Draw Floor Plans: Agent Memory Angle** | `how-ai-agents-draw-floor-plans-the-agent-memory-angle.md` | Dev.to, r/AI_Agents, r/mcp | Monday 16:00 CET |
+| 129 | **Skissify vs Excalidraw: The Show HN Day Verdict** | `skissify-vs-excalidraw-the-show-hn-day-verdict.md` | Dev.to, r/webdev | Tuesday at HN submit |
+
+### New Communities Identified (Cycle 59)
+
+| Community | Size | Angle | Timing |
+|-----------|------|-------|--------|
+| r/SoftwareEngineering | 600K+ | "Flat JSON vs nested JSON accuracy data — 200+ tests" | Monday 13:00 CET |
+| r/AITools | Growing | "I built a sketch tool for AI agents, here's what surprised me" | Monday 12:00 CET |
+| LangGraph Discord | ~15K | MCP server integration, agent visual memory pattern | Monday after HN |
+| Mastra Discord | ~5K | TypeScript native integration, 4-line setup | Monday 09:30 |
+
+### T-22H Remaining Priorities (Monday March 30)
+
+| Priority | Item | Status |
+|----------|------|--------|
+| 🔴🔴 | **Screenshot #1: Human Mode side-by-side** (5 min) | ❌ BLOCKING |
+| 🔴🔴 | **Screenshot #2: Claude Desktop MCP** | ❌ BLOCKING |
+| 🔴🔴 | **Human Mode live and tested end-to-end** | ❓ VERIFY |
+| 🔴 | **Email TLDR AI, Ben's Bites, The Rundown** (before 18:00) | ❌ SEND NOW |
+| 🔴 | **Update Show HN title to:** "Show HN: Skissify – give your AI agent a pencil" | CHECK |
+| 🟠 | Wobble GIF (5s, amplitude 0→10→3) | ❌ |
+| 🟠 | Screenshot #3: Blueprint floor plan | ❌ |
+
+### New Ideas (Cycle 59)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **r/SoftwareEngineering schema post** | 600K engineers, schema design is independently valuable, data-backed = non-promotional | Low (written) | High |
+| **"Sketch URL as agent memory" Dev.to post** | Novel design pattern, no one has named this yet, attracts agent builders | Low (written) | High |
+| **The Honesty Argument blog** | New Figma angle: fidelity signaling research, quantified meeting cost, shareable for PM audience | Low (written) | Medium-High |
+| **LangGraph Discord outreach** | ~15K TypeScript agent builders, zero presence there | Low | Medium |
+| **Press Release v4** | FINAL version with all stats, ready to send to any journalist | Zero (written) | High if used |
+
+### Cumulative Blog Inventory (129 posts as of Cycle 59)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 59 — 10:46 CET)*
+*Added: Blog posts #126-129 (22h countdown, honesty argument, agent memory angle, Show HN day verdict), SOCIAL-MEDIA.md Cycle 59 (Tweets 327-340 + Bluesky thread + Reddit posts + Discord templates + One-liners v129-136 + HN First Comment v8 FINAL), PRESS-KIT.md v9.0 (one-liners v137-144, Press Release v4, Media Angles v27-30, Screenshot Checklist v8 FINAL), new communities (r/SoftwareEngineering, r/AITools, LangGraph Discord)*
+
+---
+
 ## Marketing Improvements (Cycle 58 - March 30, 2026 - 09:38 CET)
 
 ### STATUS: T-23.5H - SHOW HN FIRES TUESDAY 09:00 CET

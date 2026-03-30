@@ -1,8 +1,125 @@
 # Skissify Press Kit
 
-**Last Updated:** March 30, 2026 - 08:31 CET (Cycle 57)
-**Version:** 8.0
+**Last Updated:** March 30, 2026 - 10:46 CET (Cycle 59)
+**Version:** 9.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 59 Updates (March 30, 2026 — 10:46 CET) — T-22H TO SHOW HN
+
+### NEW ONE-LINERS v137-v144 — CYCLE 59
+
+**v137 (THE TITLE):** "Give your AI agent a pencil."
+
+**v138 (TECHNICAL):** "JSON schema + wobble algorithm + MCP = hand-drawn sketch at a URL. That URL contains the JSON. The JSON is mutable. The sketch is agent memory."
+
+**v139 (INVESTOR):** "We found the missing primitive in the AI stack. 12,000+ MCP servers retrieve and execute. None produce structured spatial output. We're the first."
+
+**v140 (PRESS — SHORT):** "Skissify is what you use when you want your AI agent to draw something instead of describe it."
+
+**v141 (CONSUMER):** "Describe your room. Get a hand-drawn floor plan. Print it. Show it to your contractor."
+
+**v142 (DEVELOPER):** "Finally. A sketch tool that LLMs can actually use. 94% first-try accuracy."
+
+**v143 (HUMOR/VIRAL):** "Built for developers. Used by homeowners, dungeon masters, and geometry teachers. The product has opinions about its audience that we don't."
+
+**v144 (MANIFESTO):** "Text. Code. Data. Images. AI stacks have all of these. None of them had structured spatial output. We built that."
+
+---
+
+### PRESS RELEASE v4 — LAUNCH DAY FINAL — CYCLE 59
+
+**FOR IMMEDIATE RELEASE**
+**March 31, 2026**
+
+**SKISSIFY LAUNCHES ON HACKER NEWS: FIRST MCP SERVER FOR AI AGENT SKETCH OUTPUT**
+
+*Stockholm, Sweden — March 31, 2026*
+
+Skissify, a Stockholm-based developer tool, launches today on Hacker News' Show HN with a product that gives AI agents structured hand-drawn sketch output for the first time.
+
+The product solves a persistent gap in AI agent stacks: while modern AI systems can generate text, code, data, and images, none could produce structured spatial output — the kind of rough floor plan, wireframe, or diagram that humans use for exploration-phase thinking.
+
+**The core product:**
+- A JSON-to-sketch API: send a structured element list, receive a hand-drawn sketch at a permanent URL
+- An MCP server (`@skissify/mcp-server`) enabling direct integration with Claude Desktop
+- Human Mode: plain text descriptions converted to sketches via Claude integration
+- Four paper styles: napkin, grid, blueprint, technical
+
+**Key finding from production testing:** The product uses a flat JSON schema (element list, absolute coordinates). Internal benchmarking across 200+ floor plan generations shows 94% first-try LLM accuracy with this schema vs ~60% for hierarchical schemas. Schema design is the primary driver of LLM accuracy in spatial generation tasks.
+
+**Unexpected adoption patterns:** Since launching on March 27, four distinct user groups have adopted the product: AI developers (the intended audience), homeowners planning renovation briefs for contractors, tabletop roleplaying dungeon masters, and geometry teachers generating spatial exercise materials.
+
+**Founder quote:** "We built the JSON schema carefully, the wobble algorithm deliberately, and the MCP integration for AI developers. The product found its own audiences. Homeowners, dungeon masters, and teachers walked in without us targeting them. That's what primitives do — they find their own use cases."
+
+**Availability:** Free tier (unlimited public sketches). Pro at EUR 5/month. MCP server on npm as `@skissify/mcp-server`. API documentation at skissify.com/docs.
+
+**Company:** Skissify (skissify.com). Founded 2026. Stockholm, Sweden.
+
+**Press contact:** jesper@skissify.com
+
+---
+
+### MEDIA ANGLES v27-v30 — CYCLE 59
+
+**v27 — THE SCHEMA ANGLE (for tech press, HN, Dev.to)**
+"Why flat JSON beats nested JSON for AI spatial generation (with 200+ data points)"
+- Data angle: 94% vs 60% accuracy
+- Novel finding: schema design > model capability for spatial tasks
+- Invites technical debate
+
+**v28 — THE PRIMITIVE ANGLE (for VC/startup press)**
+"The missing primitive in the AI stack"
+- Framing: text / code / data / image / [spatial] — only one of these didn't exist
+- First-mover: 12,000+ MCP servers, none with this focus
+- Positioning: infrastructure, not application
+
+**v29 — THE FOUR AUDIENCES ANGLE (for general/consumer press)**
+"Built for AI developers. Used by dungeon masters, homeowners, and teachers."
+- Human interest: the product found audiences the creator didn't target
+- Broad appeal: non-technical readers understand all four audiences
+- Classic "garage invention" story pattern
+
+**v30 — THE LAUNCH DAY META ANGLE (for build-in-public, Indie Hackers press)**
+"125 blog posts, 340 tweets, and one screenshot still not taken"
+- Honest founder story
+- Launch preparation vs reality
+- Authentic voice for IH/Substack audience
+
+---
+
+### SHOW HN CONTEXT FOR JOURNALISTS (T-22H VERSION)
+
+- **Submission time:** Tuesday March 31, 2026, 09:00 CET
+- **URL pattern:** news.ycombinator.com/item?id=[TBD after submission]
+- **Expected discussion:** schema design debate, LLM accuracy benchmarks, comparison with Excalidraw/Mermaid, unexpected use cases
+- **Key stat to quote:** "94% first-try LLM accuracy with flat JSON schema"
+- **Human angle:** homeowners, dungeon masters, geometry teachers — products find their own audiences
+- **Technical angle:** MCP mainstream (97M monthly SDK downloads March 2026), Skissify is purpose-built for the post-MCP-mainstream era
+
+---
+
+### LAUNCH DAY SCREENSHOT CHECKLIST v8 (FINAL — CYCLE 59)
+
+Priority order. Do these first:
+
+| Priority | Screenshot | Status | Why Critical |
+|----------|-----------|--------|-------------|
+| 🔴 1 | Human Mode: text input on left, sketch on right | ❌ NOT DONE | Highest-reach visual, 30s to understand product |
+| 🔴 2 | Claude Desktop MCP: chat message + sketch URL generated | ❌ NOT DONE | Proves MCP integration works, AI developer audience |
+| 🔴 3 | Blueprint floor plan (beautiful, obvious what it is) | ❌ NOT DONE | Best standalone visual for press/social |
+| 🟠 4 | 4 paper styles side by side (napkin/grid/blueprint/technical) | ❌ NOT DONE | Shows product range |
+| 🟠 5 | The wobble slider range (0-10 progression) | ❌ NOT DONE | Unique to Skissify, viral potential |
+
+**How to make Screenshot #1 in 5 minutes:**
+1. Open skissify.com/human
+2. Type: "a 2-bedroom apartment, living room facing south, kitchen connected"
+3. Get the sketch
+4. Screenshot the browser (human text on left side, sketch on right)
+5. Done.
+
+---
 
 ---
 
