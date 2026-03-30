@@ -23,6 +23,10 @@ interface ToolbarProps {
   sketch?: SketchData;
   /** ISO timestamp of last autosave, or null */
   autosaveSavedAt?: string | null;
+  /** Whether freehand draw mode is currently active */
+  drawMode?: boolean;
+  /** Called when the user toggles freehand draw mode from the toolbar */
+  onDrawModeChange?: (active: boolean) => void;
 }
 
 export default function Toolbar({
@@ -40,6 +44,8 @@ export default function Toolbar({
   sketchSlug,
   sketch,
   autosaveSavedAt,
+  drawMode = false,
+  onDrawModeChange,
 }: ToolbarProps) {
   const { data: session } = useSession();
   const [saving, setSaving] = useState(false);
@@ -239,6 +245,25 @@ export default function Toolbar({
             <kbd className="hidden lg:inline text-[9px] text-[#93a1a1] bg-[#eee8d5]/50 px-1 rounded">^Y</kbd>
           </button>
         </div>
+      )}
+
+      {/* Freehand Draw toggle button */}
+      {onDrawModeChange && (
+        <button
+          onClick={() => onDrawModeChange(!drawMode)}
+          title={drawMode ? "Exit freehand draw mode (D)" : "Freehand draw mode (D)"}
+          className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs font-medium transition-all mr-3 border ${
+            drawMode
+              ? "bg-[#268bd2] border-transparent text-white ring-2 ring-[#268bd2]/40"
+              : "bg-[#eee8d5] border-transparent text-[#586e75] hover:bg-[#fdf6e3]"
+          }`}
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/>
+            <path d="m15 5 4 4"/>
+          </svg>
+          <span className="hidden sm:inline">{drawMode ? "Drawing…" : "Draw"}</span>
+        </button>
       )}
 
       {/* Gallery link */}
@@ -580,6 +605,7 @@ export default function Toolbar({
                 { keys: ["Ctrl", "V"], desc: "Paste elements" },
                 { keys: ["Ctrl", "D"], desc: "Duplicate selected" },
                 { keys: ["Ctrl", "A"], desc: "Select all elements" },
+                { keys: ["D"], desc: "Toggle freehand draw mode" },
                 { keys: ["R"], desc: "Rotate selected 15° clockwise" },
                 { keys: ["Shift", "R"], desc: "Rotate selected 15° counter-clockwise" },
                 { keys: ["↑ ↓ ← →"], desc: "Nudge selected 1px" },

@@ -435,6 +435,12 @@ function EditorInner({
       if (e.key === "Escape" && !isInput) {
         setDrawMode(false);
       }
+
+      // D key toggles freehand draw mode
+      if (e.key === "d" && !isInput && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault();
+        setDrawMode((prev) => !prev);
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -523,6 +529,8 @@ function EditorInner({
         sketchSlug={sketchSlug}
         sketch={sketch}
         autosaveSavedAt={autosaveSavedAt}
+        drawMode={drawMode}
+        onDrawModeChange={setDrawMode}
       />
       {showAutosaveToast && (
         <div className="fixed top-16 left-1/2 -translate-x-1/2 z-[100] px-4 py-2 bg-[#eee8d5] border border-[#93a1a1] text-[#586e75] text-sm font-medium rounded-lg shadow-lg flex items-center gap-2">

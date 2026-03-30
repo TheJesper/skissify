@@ -2,6 +2,57 @@
 
 ---
 
+## Entry: March 30, 2026 — 02:49 CET | Automated Strategy Run #48
+
+### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — Value-Based Pricing, Domain Premium, and the Monday Window"
+
+**Intelligence basis**: Run #48. 48 consecutive niche-clean scans. 4 searches completed (289/2000 monthly quota). Fresh signals: value-based pricing emerging as 2026 top model (mindk.com, 2 days ago); 30–50% domain-specific premium confirmed (voxturr.com); $49–199/mo WTP for high-pain workflows (bigideasdb.com); per-seat pricing collapse (businessupside.com). MCP Wikipedia-mainstream (4 days ago). HN window opens in ~5 hours.
+
+---
+
+#### Finding 1: Value-Based Pricing Unlocks EUR 9–18 Pro/Team — Not Just EUR 2
+
+**Source**: mindk.com/blog/saas-application-development (2 days ago); voxturr.com SaaS Market Analysis (2 weeks ago); bigideasdb.com micro-SaaS ideas 2026 (2 weeks ago)
+
+Three data points converge on the same insight this run:
+
+1. **Value-based pricing is the 2026 top strategy** — users pay for value delivered, not features listed
+2. **30–50% domain-specific premium** — architecture-native software commands 30–50% more than generic tools at the same feature level
+3. **$49–199/mo WTP for workflows that save 5–10 hours/week** — floor plan sketching for architecture firms is a 5–10 hour/week activity
+
+**What makes someone pay EUR 2/mo**: The entry tier isn't really about value — it's about discovery. EUR 2/mo is the "try the infrastructure" price point. The REAL willingness to pay for Skissify's power users (architecture firms, construction tech companies, interior design consultancies) is EUR 15–25/mo — within the validated $49–199 WTP range once the 30–50% domain premium is factored in.
+
+**Pricing recalibration signal**: The current BUSINESS-PLAN.md Team tier (EUR 12/user/mo) should be tested at EUR 15–18/user/mo at launch. The voxturr.com data (2 weeks old, still relevant) specifically calls out "regulated industries and operationally complex sectors" — architecture and construction qualify. If early Team tier signups come at EUR 12, test EUR 15 on week 3–4.
+
+---
+
+#### Finding 2: Per-Seat Collapse = Skissify's Per-Render Model Is "Post-Transition"
+
+**Source**: businessupside.com Enterprise SaaS Adoption Trends (3 days ago); revenera.com SaaS Pricing Models Guide (2 weeks ago)
+
+businessupside.com (3 days old, fresh): *"Charging per seat no longer works for the vendor or the client because AI makes workers 10x more productive. SaaS companies are having a hard time moving to usage-based pricing in 2026."*
+
+This creates a specific EUR 2/mo WTP psychology:
+- Legacy tools (tldraw $6K/yr seat-based, Miro $20/user/mo seat-based) are fighting against usage-based migration
+- Skissify launches already usage-based — EUR 2/mo includes 200 renders, then EUR 0.005/render
+- For a developer evaluating infrastructure tools, Skissify's pricing reads as **already solved** — no legacy billing friction, no seat-counting overhead, just "I used 400 renders this month, I paid EUR 3"
+
+**The EUR 2/mo trigger**: A developer adds Skissify to their agent pipeline. Month 1: 180 renders free-tier, evaluating. Month 2: project scales, 600 renders at EUR 2 + EUR 2 overage = EUR 4. Month 3: 1,200 renders, they upgrade to Pro EUR 5/mo (1,000 included). This is the natural usage funnel — no upsell call needed.
+
+---
+
+#### Finding 3: MCP Is Wikipedia-Mainstream — Being Listed Is Now Table Stakes
+
+**Source**: Wikipedia MCP article (updated 4 days ago); DEV.to "Complete Guide to MCP 2026" (5 days ago, "fundamental shift in how we architect AI applications")
+
+When a protocol gets its own stable Wikipedia article AND independent publishers describe it as "fundamental infrastructure" in the same week, it has crossed the chasm from "developer experiment" to "technology you either use or explain why you don't."
+
+**What this means for EUR 2/mo WTP**: The friction point for paying EUR 2/mo for an MCP tool is now LOWER than it was 6 months ago. In October 2025, paying for an MCP tool required explaining what MCP is to your team. In March 2026, MCP is Wikipedia-mainstream — "we use MCP tools" needs no explanation. The decision to add Skissify to a stack is now equivalent to adding any other infrastructure library.
+
+**The EUR 2/mo trigger becomes**: "Does this MCP tool do what I need? Yes. Is EUR 2/mo reasonable for infrastructure? Yes. Done." The cognitive overhead is gone.
+
+---
+
 ## Entry: March 30, 2026 — 01:46 CET | Automated Strategy Run #47
 
 ### Theme: "What Would Make Someone Pay EUR 2/mo for Skissify? — Week-Two SERP Dominance, Infrastructure Framing, and the Monday Window"
