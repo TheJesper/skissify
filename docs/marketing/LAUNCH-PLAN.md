@@ -1,3 +1,93 @@
+## Marketing Improvements (Cycle 69 - March 30, 2026 - 23:09 CET)
+
+### STATUS: 🔴 T-10H TO PRODUCT HUNT LAUNCH | 153→156 POSTS | FINAL CYCLE BEFORE LAUNCH
+
+**PRODUCT HUNT LAUNCHES IN ~10H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 69:**
+
+- **3 new blog posts (#154-156) — UNIQUE ANGLES NOT YET WRITTEN:**
+  - `the-april-fools-filter-why-skeptics-become-your-best-users.md` — The marketing argument behind the April 1 date. Filter theory: skeptics who click through are higher-intent users. Framework for constraining launches to raise user quality. Best for IndieHackers (post April 2 with real numbers). Literary, first-person, unique meta-story.
+  - `the-one-thing-figma-cannot-do-that-a-napkin-can.md` — Premature convergence problem. Why wobbly lines are a signal, not a limitation. Connects sketch psychology → AI agent output → Skissify. Clean argument. Best for Dev.to, Medium. Post April 1 14:00 CET.
+  - `april-1-retrospective-what-actually-happens-when-you-launch-on-april-fools.md` — Template with fill-in placeholders ready for real April 1 numbers. Post April 2 morning. Submit to IndieHackers first — authenticity of real numbers matters there. High viral potential.
+
+- **SOCIAL-MEDIA.md Cycle 69**: Tweets 471-485 (final countdown arc: 23:30 pre-sleep, 06:45 alarm, 09:01 PH LIVE pin, 09:15 April Fools lean-in, 09:30 schema science, 10:00 four audiences thread x6, 11:00 comparison positioning, 12:00 midday push, 13:00 wobble science shareable, 14:30 MCP/A2A stat, 16:00 founder warm close, 18:00 final push, 20:00 wind-down retrospective tease, 09:00 April 2 day-after hook, 12:00 April 2 roadmap announcement), Reddit posts for r/mcp + r/AIAssistants + r/webdev (with non-promotional framing), Show HN submission text, Discord DM templates for Anthropic + LangChain servers, Trending hashtag research with 8 new tags including #VibeDesign, #AgentNative, #DrawWithAI, #SpatialAI, Platform-specific hashtag stacks for Twitter/LinkedIn/Bluesky/Instagram/TikTok.
+
+- **NEW IDEAS (Cycle 69):**
+  - **"The Filter Theory" as standalone Medium/IH post (April 2)** — done as blog #154, READY
+  - **April 1 Retrospective template** — done as blog #156, READY (fill in numbers April 2 morning)
+  - **Post Show HN at 09:30 CET April 1** — text ready in SOCIAL-MEDIA Cycle 69
+  - **r/mcp post at 10:00 CET** — ready in SOCIAL-MEDIA Cycle 69
+  - **Schedule a post-launch email to any signups** — not yet done, add to April 2 checklist
+  - **LinkedIn post tonight (23:30 CET)** — copy ready from Cycle 68, OVERDUE
+
+### CRITICAL ACTIONS — FINAL CHECKLIST (March 30, 11pm)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🚨 BLOCKER | **Screenshot P0-A: Human Mode side-by-side** | Before sleep | MUST DO |
+| 🚨 BLOCKER | **Screenshot P0-B: PH Banner 1270×760** | Before sleep | MUST DO |
+| 🔴 CRITICAL | **LinkedIn launch post** (Cycle 68 copy) | TONIGHT 23:30 | POST NOW |
+| 🔴 CRITICAL | **Newsletter pitches** (TLDR AI, Ben's Bites, Rundown) | TONIGHT | SEND NOW |
+| 🔴 CRITICAL | **Tweet 471** (pre-sleep countdown) | 23:30 CET | READY — Cycle 69 |
+| 🟡 HIGH | **Stage PH First Comment** | Before sleep | READY in SOCIAL-MEDIA Cycle 66 |
+| 🟡 HIGH | **Set 06:45 CET alarm** | Now | — |
+| 🟡 HIGH | **Tweet 472** (alarm post) | 06:45 CET | READY — Cycle 69 |
+| 🟡 HIGH | **Tweet 473 PIN** (PH LIVE) | 09:01 CET | READY — Cycle 69 |
+| 🟡 HIGH | **Show HN submission** | 09:30 CET | READY — Cycle 69 |
+| 🟡 HIGH | **r/mcp post** | 10:00 CET | READY — Cycle 69 |
+
+### APRIL 1 LAUNCH DAY SCHEDULE (FINAL — Cycle 69)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 23:30 (tonight) | Tweet 471 — pre-sleep countdown | SOCIAL-MEDIA Cycle 69 |
+| 23:30 (tonight) | LinkedIn launch post | SOCIAL-MEDIA Cycle 68 |
+| 06:45 | Tweet 472 — alarm/1h to launch | SOCIAL-MEDIA Cycle 69 |
+| 09:01 | **Product Hunt goes LIVE** | — |
+| 09:01 | Tweet 473 — PH LIVE (PIN THIS) | SOCIAL-MEDIA Cycle 69 |
+| 09:01 | Post PH First Comment | SOCIAL-MEDIA Cycle 66 |
+| 09:15 | Tweet 474 — April Fools lean-in | SOCIAL-MEDIA Cycle 69 |
+| 09:30 | **Show HN submission** | SOCIAL-MEDIA Cycle 69 |
+| 09:30 | Tweet 475 — schema science hook | SOCIAL-MEDIA Cycle 69 |
+| 10:00 | Tweet thread 476 — four audiences (6 tweets) | SOCIAL-MEDIA Cycle 69 |
+| 10:00 | **r/mcp post** | SOCIAL-MEDIA Cycle 69 |
+| 11:00 | Tweet 477 — comparison positioning | SOCIAL-MEDIA Cycle 69 |
+| 11:30 | **r/AIAssistants post** | SOCIAL-MEDIA Cycle 69 |
+| 12:00 | Tweet 478 — midday push (fill numbers) | SOCIAL-MEDIA Cycle 69 |
+| 13:00 | Tweet 479 — wobble science (most shareable) | SOCIAL-MEDIA Cycle 69 |
+| 14:00 | Post blog #155 (Figma vs napkin) | blog/ Cycle 69 |
+| 14:00 | **r/webdev post** | SOCIAL-MEDIA Cycle 69 |
+| 14:30 | Tweet 480 — MCP/A2A stat | SOCIAL-MEDIA Cycle 69 |
+| 16:00 | Tweet 481 — founder warm close | SOCIAL-MEDIA Cycle 69 |
+| 18:00 | Tweet 482 — final hours push | SOCIAL-MEDIA Cycle 69 |
+| 20:00 | Tweet 483 — wind-down (fill real numbers) | SOCIAL-MEDIA Cycle 69 |
+| 20:00 | IndieHackers "April 1 launch" post (fill numbers) | — |
+| **APRIL 2** | | |
+| 09:00 | Tweet 484 — day-after momentum | SOCIAL-MEDIA Cycle 69 |
+| 09:00 | **Post blog #156 retrospective** (with real numbers) | blog/ Cycle 69 |
+| 12:00 | Tweet 485 — roadmap announcement | SOCIAL-MEDIA Cycle 69 |
+
+### NEW BLOG POSTS (Cycle 69)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 154 | **The April Fools Filter: Why Skeptics Are Your Best Users** | the-april-fools-filter-why-skeptics-become-your-best-users.md | IndieHackers, Medium | April 2 (with real numbers) |
+| 155 | **The One Thing Figma Cannot Do That a Napkin Can** | the-one-thing-figma-cannot-do-that-a-napkin-can.md | Dev.to, Medium | April 1 14:00 CET |
+| 156 | **April 1 Retrospective Template** | april-1-retrospective-what-actually-happens-when-you-launch-on-april-fools.md | IndieHackers, Dev.to | April 2 morning (fill real numbers) |
+
+### CUMULATIVE BLOG INVENTORY (156 posts as of Cycle 69)
+
+| Range | Posts |
+|-------|-------|
+| #1-153 | Cycles 1-68 |
+| #154-156 | Cycle 69 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 69 - 23:09 CET)*
+*Added: Blog posts #154-156 (April Fools filter theory, Figma vs napkin, retrospective template), SOCIAL-MEDIA.md Cycle 69 (Tweets 471-485 + Reddit posts x3 + Show HN text + Discord DM templates + hashtag research 8 new tags), LAUNCH-PLAN.md Cycle 69 updated with final checklist and complete April 1 schedule.*
+
+---
+
 ## Marketing Improvements (Cycle 67 - March 30, 2026 - 20:56 CET)
 
 ### STATUS: T-12H TO PRODUCT HUNT LAUNCH | 150→153 POSTS | LAUNCH IMMINENT
