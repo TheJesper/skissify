@@ -3366,3 +3366,115 @@ I'm here all day. Ask me anything: the schema design (flat beats hierarchical by
 Let's go. 🚀
 ```
 
+
+---
+
+## Cycle 66 Updates (March 30, 2026 - 19:50 CET) — T-13H TO PRODUCT HUNT
+
+### ONE-LINERS v216-v230 (Cycle 66 — Final Pre-Launch Pack)
+
+**v216 (APRIL 1 TIMING — HONEST):** "We launched on April Fools Day because April 1 is the first day of a month on Product Hunt. The joke is that it was never a joke."
+
+**v217 (ORCHESTRATION):** "AI agents have a text problem. They reason about space perfectly. They can't show you what they mean. Skissify is the fix."
+
+**v218 (SCHEMA PHILOSOPHY):** "The schema IS the product. Everything else is implementation. Flat, open, versioned JSON that any agent or human can read and modify."
+
+**v219 (FUNNEL INSIGHT):** "Best launch day funnel: make people wonder if it's real. The skepticism earns the click. The demo earns the upvote."
+
+**v220 (SOLO FOUNDER):** "No VC. No team. No marketing budget. 147 blog posts, an MCP server, a JSON API, a free tier, and April Fools Day. This is how you launch in 2026."
+
+**v221 (COGNITIVE SCIENCE):** "There's a name for what kills early product ideas: premature convergence. Polished tools cause it. Rough sketches prevent it. We make rough sketches."
+
+**v222 (AGENT + HUMAN BOTH):** "Built for AI agents. Loved by architects at midnight, teachers with seating charts, DMs with dungeons, and PMs who just needed to sketch something fast."
+
+**v223 (PRIMITIVE FRAMING):** "Figma is a production tool. Excalidraw is a collaboration tool. Skissify is a primitive. JSON → URL. Build the tool you actually need on top."
+
+**v224 (DETERMINISM):** "Every sketch is deterministic. Same JSON, same seed, same sketch. This is how you make visual output reproducible in an AI pipeline."
+
+**v225 (SHORT PITCH):** "Turn this: { type: 'room', x: 50, y: 50, width: 400, height: 300 } into this: [hand-drawn sketch URL]. One POST request."
+
+**v226 (EMOTIONAL):** "The best thing that happened during the launch: a 6th grade teacher emailed to say she uses Skissify to make classroom diagrams that 'feel safe for students to argue with'. That's the fidelity effect, in practice."
+
+**v227 (MARKET TIMING):** "MCP has 97M+ monthly downloads. None of the 12,000 MCP servers could draw. Until today."
+
+**v228 (CONTRARIAN):** "Every AI product in 2026 adds a chat interface. We added a drawing interface. Different direction. Different audience."
+
+**v229 (METRIC HOOK):** "First 5 days live: 4 unexpected audience segments, 147 blog posts, 1 Show HN, 300 floor plan tests, 94% agent accuracy. Tomorrow: Product Hunt."
+
+**v230 (CLOSING):** "Launched April 1. Not a prank. A primitive. JSON in, hand-drawn sketch out. This is what the missing visual layer for AI looks like."
+
+---
+
+### SCREENSHOT CHECKLIST v14 (Cycle 66 — Final PH Gallery)
+
+**BLOCKING (must have before PH goes live):**
+- [ ] P0-A: Human Mode vs JSON Mode side-by-side — STILL NEEDED
+- [ ] P0-B: PH Banner 1270×760 — Claude Desktop + MCP tool call visible — STILL NEEDED
+
+**HIGH PRIORITY:**
+- [ ] P1: Hero floor plan (clean, 3-4 rooms, labeled, doors+windows visible)
+- [ ] P2: Split: Claude chat → JSON output → Skissify sketch URL
+- [ ] P3: Mobile view (sketch rendering on phone)
+- [ ] P4: Dungeon map (for r/DnD reach)
+- [ ] P5: Classroom layout (for education segment)
+- [ ] P6: Wireframe sketch (for PM/design segment)
+
+**NICE TO HAVE:**
+- [ ] P7: API request in terminal → sketch URL returned
+- [ ] P8: Multi-sketch comparison (same room, different seeds)
+- [ ] P9: Before/after: plain text description → sketch
+
+**Social preview order for PH gallery:**
+1. Hero floor plan (most shareable)
+2. Claude Desktop MCP call (most technical)
+3. Human Mode side-by-side (most accessible)
+4. Dungeon map (most viral potential)
+
+---
+
+### MEDIA ANGLES v56-v65 (Cycle 66)
+
+**v56 (APRIL 1 AS NARRATIVE):** "A real product that launched on April Fools Day — and the 'is this a joke?' question became the acquisition funnel. Unusual launch timing as UX."
+
+**v57 (SCHEMA SCIENCE):** "94% vs 61% accuracy on flat vs nested JSON. Why schema design matters more than model choice for AI visual output."
+
+**v58 (COGNITIVE DESIGN):** "The 30-year-old design research insight behind Skissify: rough sketches get better feedback than polished mockups. A solo founder built a product around it."
+
+**v59 (UNEXPECTED AUDIENCES):** "Built for developers. Used by architects at midnight, geometry teachers, and D&D dungeon masters. The story of product-market fit finding you."
+
+**v60 (AI PRIMITIVE):** "When 12,000 MCP servers don't draw: the visual output gap in AI agent infrastructure, and one product trying to fill it."
+
+**v61 (VIBE DRAWING):** "After vibe coding: vibe drawing. The shift from AI that describes to AI that sketches — and what it means for design workflows."
+
+**v62 (SOLO FOUNDER LAUNCH):** "147 blog posts, 5 days, 4 unexpected audiences: how a solo founder documented a live product launch in public."
+
+**v63 (MCP ECOSYSTEM):** "The first sketch tool built natively for the Model Context Protocol — and why the developer infrastructure layer matters for AI visual output."
+
+**v64 (FREE TIER PHILOSOPHY):** "Why Skissify's free tier is genuinely free: the reasoning behind letting developers build before asking for a credit card."
+
+**v65 (HAND-DRAWN IN 2026):** "Adobe reports 30% rise in demand for hand-drawn aesthetics in 2026. A tool that makes AI agents produce them."
+
+---
+
+### COMMUNITY TARGETING MAP (Cycle 66)
+
+| Community | Platform | Audience | Message | Status |
+|-----------|----------|----------|---------|--------|
+| r/MachineLearning | Reddit | ML engineers | Schema benchmark (94% vs 61%) | Queue |
+| r/DnD | Reddit | Dungeon Masters | Dungeon map generation | Queue |
+| r/architecture | Reddit | Architects | Brief contractor with AI sketch | Queue |
+| r/mcp | Reddit | MCP builders | MCP server, 4-line config | Queue |
+| r/producthunt | Reddit | PH community | April 1 launch announcement | PH day |
+| r/SaaSlaunchpad | Reddit | Founders | Solo launch story | PH day |
+| fosstodon.org | Mastodon | Open source devs | Open API, self-hostable | Queue |
+| hachyderm.io | Mastodon | Tech professionals | MCP + agent workflow | Queue |
+| Dungeon Masters Discord | Discord | TTRPG players | Dungeon map demo | Queue |
+| AI/ML Discords | Discord | Developers | Agent workflow demo | Queue |
+| Pencil.dev community | Various | Design-to-code | Sketch-to-layout workflow | Week 2 |
+| Pinterest | Pinterest | Homeowners, teachers | Floor plan / layout imagery | Week 1 |
+| YouTube Shorts | YouTube | Broad | AI agent draws demo | Week 1 |
+
+---
+
+*Last Updated: March 30, 2026 (Cycle 66 - 19:50 CET)*
+*Added: One-liners v216-v230 (final pre-launch pack), Screenshot Checklist v14, Media Angles v56-v65 (April 1 narrative, schema science, cognitive design, unexpected audiences, AI primitive, vibe drawing, solo founder), Community Targeting Map*

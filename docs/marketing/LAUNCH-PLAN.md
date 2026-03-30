@@ -3,6 +3,101 @@
 ---
 ---
 
+## Marketing Improvements (Cycle 66 - March 30, 2026 - 19:50 CET)
+
+### STATUS: PRODUCT HUNT LAUNCHES IN ~13H (APRIL 1 09:01 CET) | 147→150 POSTS | T-13H
+
+**What Changed in Cycle 66:**
+
+- **3 new blog posts (#148-150) — SHARPENED FINAL VERSIONS:**
+  - `why-hand-drawn-sketches-beat-figma-the-april-fools-launch-day-manifesto.md` — The definitive hand-drawn vs Figma argument written for April 1 launch day. Includes the 3-minute PM test, cognitive science framing (premature convergence), and April Fools meta-narrative. Best for Medium, IH, Dev.to. POST AT LAUNCH (09:01 CET).
+  - `how-ai-agents-draw-floor-plans-the-agent-orchestration-guide.md` — The canonical agent orchestration guide. Full JSON schema (copy-paste ready), 5 real workflows, flat vs nested benchmark (94% vs 61%), MCP 4-line config, tested prompt template, three failure modes + fixes. Best for Dev.to, r/mcp, r/AI_Agents, r/MachineLearning. POST AT LAUNCH.
+  - `skissify-vs-excalidraw-the-tool-you-actually-need.md` — Clean, honest, complete comparison. Full feature table. "Who draws?" decision matrix. Hybrid workflow (Skissify → Excalidraw → Figma). Honest about where Excalidraw wins. Best for r/webdev, r/mcp, PH comments, Dev.to. POST AT LAUNCH.
+
+- **SOCIAL-MEDIA.md Cycle 66**: Tweets 426-445 (late-night countdown → PH live → April Fools punchline → technical hook → audience thread → wobble → live counter → comparison → indie founder → evening wind-down → retrospective hook), NEW PLATFORMS (Mastodon posts, YouTube Shorts script 60s, TikTok hook rewrites x4, Pinterest pin descriptions x5, Discord message templates x2), viral hooks (cognitive science angle, schema-as-interface, "who draws?" question, April Fools meta-play), PH comment response templates (why April 1, Excalidraw comparison, pricing).
+
+- **PRESS-KIT.md Cycle 66 (v15.1)**: One-liners v216-v230 (final pre-launch pack — April 1 timing, orchestration, schema philosophy, funnel insight, solo founder, cognitive science), Screenshot Checklist v14 (blocking items flagged, gallery slot order), Media Angles v56-v65 (April 1 as narrative, schema science, cognitive design, unexpected audiences, AI primitive, vibe drawing, solo founder, MCP ecosystem, free tier philosophy, hand-drawn trend in 2026), Community Targeting Map (full table with platform/audience/message/status).
+
+### CRITICAL ACTIONS — TONIGHT (March 30, remaining ~2h before midnight)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🚨 BLOCKER | **Screenshot P0-A: Human Mode side-by-side** | Before sleep | MUST DO |
+| 🚨 BLOCKER | **Screenshot P0-B: PH Banner 1270×760** | Before sleep | MUST DO |
+| 🔴 CRITICAL | **Newsletter pitches** (TLDR AI, Ben's Bites, Rundown, Superhuman) | NOW | OVERDUE |
+| 🔴 CRITICAL | **LinkedIn launch post** (LINKEDIN-CONTENT.md) | NOW | OVERDUE |
+| 🟡 HIGH | **Tweet 426** (late night build-in-public) | 22:00 CET | READY |
+| 🟡 HIGH | **Tweet 427** (midnight countdown) | 23:30 CET | READY |
+| 🟡 HIGH | **PH First Comment v3** (SOCIAL-MEDIA.md Cycle 65) | Stage tonight | READY |
+
+### APRIL 1 LAUNCH DAY POSTING SCHEDULE
+
+| Time (CET) | Action | Template |
+|------------|--------|----------|
+| 09:01 | Tweet 428 — PH LIVE announcement | SOCIAL-MEDIA Cycle 66 |
+| 09:01 | Post PH First Comment v3 | SOCIAL-MEDIA Cycle 65 |
+| 09:15 | Tweet 429 — April Fools punchline | SOCIAL-MEDIA Cycle 66 |
+| 09:30 | Post blog #148 (manifesto) | blog/ Cycle 66 |
+| 10:00 | Tweet 430 — technical accuracy hook | SOCIAL-MEDIA Cycle 66 |
+| 10:30 | Tweet 431-434 thread — 4 audiences | SOCIAL-MEDIA Cycle 66 |
+| 11:00 | Post blog #150 (vs Excalidraw final) | blog/ Cycle 66 |
+| 11:30 | Tweet 435 — wobble algorithm | SOCIAL-MEDIA Cycle 66 |
+| 12:00 | Tweet 436 — live PH counter | SOCIAL-MEDIA Cycle 66 |
+| 12:00 | r/producthunt post | SOCIAL-MEDIA Cycle 65 |
+| 12:30 | Post blog #149 (agent orchestration) | blog/ Cycle 66 |
+| 13:00 | Tweet 437 — comparison hook | SOCIAL-MEDIA Cycle 66 |
+| 14:00 | Tweet 438 — solo founder | SOCIAL-MEDIA Cycle 66 |
+| 15:00 | r/mcp post | PRESS-KIT community map |
+| 16:00 | r/MachineLearning post (schema benchmark) | PRESS-KIT community map |
+| 18:00 | Tweet 439 — evening wind-down | SOCIAL-MEDIA Cycle 66 |
+
+### New Blog Posts (Cycle 66)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 148 | **Why Hand-Drawn Beats Figma: April Fools Launch Day Manifesto** | `why-hand-drawn-sketches-beat-figma-the-april-fools-launch-day-manifesto.md` | Medium, IH, Dev.to | 09:30 CET April 1 |
+| 149 | **How AI Agents Draw Floor Plans: Agent Orchestration Guide** | `how-ai-agents-draw-floor-plans-the-agent-orchestration-guide.md` | Dev.to, r/mcp, r/ML | 12:30 CET April 1 |
+| 150 | **Skissify vs Excalidraw: The Tool You Actually Need** | `skissify-vs-excalidraw-the-tool-you-actually-need.md` | r/webdev, r/mcp, Dev.to | 11:00 CET April 1 |
+
+### New Ideas (Cycle 66)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Mastodon/Fediverse launch posts** | Tech/dev community migrating from Twitter. fosstodon.org, hachyderm.io reach. Templates ready in SOCIAL-MEDIA Cycle 66. | Low | Medium |
+| **YouTube Shorts "Your AI Can Draw"** | 60s demo format, high algorithmic reach. Script written. Film + post this week. | Medium | High |
+| **TikTok hooks x4** | Algorithm-optimized hooks for 4 audience segments. Renovation/AI/founder/comparison. | Low | Medium |
+| **Pinterest floor plan pins** | Homeowner + teacher audience on Pinterest. 5 pin descriptions ready. Floor plan search traffic. | Low | Medium |
+| **r/MachineLearning schema benchmark post** | 94% vs 61% flat vs nested data is independently valuable to ML community. 2.7M members. | Low | High |
+| **"Premature convergence" angle** | The cognitive science term for what rough sketches prevent. Independently shareable insight for designer/PM audiences. | Zero | High |
+| **Post-PH retrospective (April 2)** | "What happened when I launched on April Fools Day" — writes itself for IH, Dev.to, Medium. Will include real numbers. | Low | Very High |
+| **Community Targeting Map** | Full map of 13 communities, platform, audience, message, status now in PRESS-KIT v15.1. Use as execution checklist. | Done | Reference |
+
+### Cumulative Blog Inventory (150 posts as of Cycle 66)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 |
+| #130-132 | Cycle 60 |
+| #133-135 | Cycle 61 |
+| #136-138 | Cycle 62 |
+| #139-141 | Cycle 63 |
+| #142-144 | Cycle 64 |
+| #145-147 | Cycle 65 |
+| #148-150 | Cycle 66 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 66 - 19:50 CET)*
+*Added: Blog posts #148-150 (final sharpened versions of three core topics), SOCIAL-MEDIA Cycle 66 (Tweets 426-445 + 5 new platforms + viral hooks + PH comment templates), PRESS-KIT v15.1 (One-liners v216-230 + Screenshot Checklist v14 + Media Angles v56-65 + Community Targeting Map), April 1 posting schedule, new platform ideas (Mastodon, YouTube Shorts, TikTok, Pinterest, r/MachineLearning)*
+
+---
+---
+
 ## Marketing Improvements (Cycle 65 - March 30, 2026 - 17:34 CET)
 
 ### STATUS: PRODUCT HUNT LAUNCHES TOMORROW APRIL 1 00:01 PST (09:01 CET) | 144->147 POSTS | T-15.5H
