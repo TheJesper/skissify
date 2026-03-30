@@ -99,6 +99,11 @@ All furniture elements use bounding box (x, y, w, h) and integrate with existing
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Furniture in default presets (plan drawing + villa)** - The two flagship floor plan presets now showcase the full furniture library on first load. "Plan drawing" preset: SOVRUM (bedroom) gets a double bed + nightstand; KÖK (kitchen) gets a 4-burner stove + dining table with chairs; VARDAGSRUM (living room) gets sofa + armchair + coffee table; BADRUM (bathroom) gets toilet + sink + bathtub. "Villa" preset: SOVRUM 1 gets a double bed + nightstand; KÖK gets stove + dining table; SOVRUM 2 gets a single bed + desk; VARDAGSRUM gets sofa + armchair + coffee table; BAD (bathroom) gets toilet + sink + shower. All furniture uses muted architectural colors for a clean, professional look. The 11.0m dim label in "plan drawing" now uses `offset: -20` to push it cleanly outside the walls. Previously every new user saw empty rooms with no indication the furniture elements existed — now the library is demonstrated instantly on the most-visited page.
+
+
+
+
 - [x] **API validation fix: all furniture & fixture elements now accepted** — The Zod validation schema in `validations.ts` was missing all 11 furniture/fixture element types: `bed`, `sofa`, `dining-table`, `toilet`, `bathtub`, `sink`, `armchair`, `desk`, `bookshelf`, `stove`, `shower`. Any call to `/api/render` or `/api/sketches` with these elements silently failed with a validation error — making the entire furniture library unusable via the public API. Fixed by adding proper `z.discriminatedUnion` schemas for all 11 types with their type-specific optional fields (`pillows`, `seats`, `shelves`, `burners`). Also added the missing `wallWidth` field to the `line` schema (it existed in types.ts and the renderer, but was being stripped by validation). The `/api/manifest` endpoint updated to document all 11 new element types plus `path` (also previously undocumented) with accurate prop lists, so AI agents using the schema to construct manifests will now know all available element types.
 
 
