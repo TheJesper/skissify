@@ -3478,3 +3478,142 @@ Let's go. 🚀
 
 *Last Updated: March 30, 2026 (Cycle 66 - 19:50 CET)*
 *Added: One-liners v216-v230 (final pre-launch pack), Screenshot Checklist v14, Media Angles v56-v65 (April 1 narrative, schema science, cognitive design, unexpected audiences, AI primitive, vibe drawing, solo founder), Community Targeting Map*
+
+
+---
+
+## PRESS-KIT Cycle 67 - March 30, 2026 (v17.0) — T-12H TO PRODUCT HUNT
+
+### One-Liners v231-v245 (T-12H Final Pack)
+
+**v231** (shortest): Give your AI agent a pencil.
+
+**v232** (technical): JSON schema → hand-drawn sketch URL. MCP native. 94% LLM accuracy.
+
+**v233** (consumer): Describe a room. Get a floor plan sketch. Show your contractor. Done.
+
+**v234** (philosophy): Figma communicates decisions. Skissify explores them.
+
+**v235** (April Fools framing): The only sketch tool that launched on April 1 — because rough and honest is the whole point.
+
+**v236** (market gap): 12,000+ MCP servers. Almost none produce visual output. One does.
+
+**v237** (agent developer): The missing output primitive for AI pipelines. Text → code → data → sketch.
+
+**v238** (investor angle): We built the visual output layer for AI agents. Nobody else has.
+
+**v239** (comparison): Excalidraw is for humans. Skissify is for agents. Not competition — different jobs.
+
+**v240** (technical depth): Flat JSON schema outperforms nested by 33 percentage points. Schema design is the product.
+
+**v241** (human story): I built it for AI engineers. Homeowners, dungeon masters, and teachers found it first.
+
+**v242** (brand): Deliberately rough. Honest by design. Hand-drawn because it invites revision.
+
+**v243** (urgency): Launching on Product Hunt April 1. Not a joke. The April Fools framing is the thesis.
+
+**v244** (social proof): 150+ blog posts. 66 marketing cycles. One product. Launch day: now.
+
+**v245** (economy): Free forever tier. €5/month for Pro. The sketch primitive should be accessible.
+
+---
+
+### MEDIA ANGLES v66-v70 (T-12H Pack)
+
+**Angle 66: The April Fools Founder**
+*"He launched a real AI product on April Fools Day. Here's why that was the right call."*
+- Solo founder (Stockholm)
+- 4 days from launch to Product Hunt
+- April 1 framing as thesis, not accident
+- Story for: tech press, founder blogs, IH, Dev.to
+
+**Angle 67: The Schema Science Story**
+*"33 percentage points of LLM accuracy from a single architectural decision."*
+- Flat vs nested JSON benchmark (94% vs 61%, 200+ tests)
+- Independently shareable technical insight
+- Not about Skissify, about LLM output design
+- Story for: ML/AI technical press, r/MachineLearning, HN
+
+**Angle 68: The Unexpected Audiences**
+*"He built it for AI engineers. Homeowners, dungeon masters, and teachers arrived uninvited."*
+- Primitives find their own use cases
+- Four distinct audiences from one product
+- Story for: startup press, indie hacker blogs, product communities
+
+**Angle 69: The Missing Primitive**
+*"AI agents have text, code, and data generation. None had structured visual output. Until now."*
+- Visual output gap in the agent stack
+- The sketch URL as agent memory and state
+- Story for: AI/agent-focused publications, developer press
+
+**Angle 70: The April Fools Filter Theory**
+*"The best product engagement funnel I accidentally designed: skepticism → curiosity → committed user."*
+- Launch day as UX experiment
+- The "is this real?" moment as engagement trigger
+- Story for: marketing, product, founder communities
+
+---
+
+### SCREENSHOT CHECKLIST v15 (FINAL - T-12H)
+
+**P0 — BLOCKING (product does not launch well without these)**
+
+- [ ] **Human Mode side-by-side**: Text input visible on left, rendered sketch on right. Browser screenshot. Essential for non-technical audience understanding.
+- [ ] **PH Banner 1270×760**: Product Hunt requires a gallery header. Show the product in action. Blueprint paper style looks best at this resolution.
+
+**P1 — CRITICAL (should be in PH gallery)**
+
+- [ ] **MCP in Claude Desktop**: Claude chat visible with a Skissify sketch URL in the response. Best proof-point for AI agent use case.
+- [ ] **Floor plan with furniture**: The plan preset with beds, sofas, tables visible. Shows the v1.1 furniture update.
+- [ ] **Blueprint style close-up**: Blueprint paper style, well-labeled rooms. Dramatic and visually distinctive.
+
+**P2 — NICE TO HAVE**
+
+- [ ] **Four paper styles grid**: 2×2 grid showing napkin/plan/blueprint/villa. One tweet/screenshot shows full range.
+- [ ] **Dungeon map**: Blueprint style, irregular room shapes, TTRPG aesthetic. r/DnD shareability.
+- [ ] **Wobble slider comparison**: Same floor plan at wobble 0 vs wobble 8. Shows the parameter's effect.
+
+---
+
+### T-12H MEDIA CONTACT PRIORITY LIST
+
+In rough order of highest ROI:
+
+1. **TLDR AI** (750K subscribers) — pitch "AI developer tool, MCP native, April Fools launch"
+2. **Ben's Bites** (50K subscribers) — pitch "build-in-public, solo founder, unexpected audiences"
+3. **The Rundown AI** (700K+) — pitch "visual output primitive, schema science"
+4. **Superhuman AI** (500K+) — pitch "productivity angle, floor plans for homeowners"
+5. **Indie Hackers newsletter** — pitch "transparent metrics, April Fools launch story"
+
+Email templates in NEWSLETTER-EMAILS-LAUNCH-DAY.md.
+
+---
+
+### LAUNCH DAY PRESS RELEASE v4 (FINAL)
+
+**FOR IMMEDIATE RELEASE — April 1, 2026**
+
+**SKISSIFY LAUNCHES ON PRODUCT HUNT: AI AGENTS NOW HAVE VISUAL OUTPUT**
+
+Stockholm, Sweden — Skissify, the first structured visual output tool built specifically for AI agents, launches today on Product Hunt. The product allows AI agents to generate hand-drawn sketch URLs from JSON or plain text, filling the visual output gap in modern AI pipelines.
+
+Skissify's core insight: AI agents excel at generating text, code, and data, but have no native way to produce spatial or visual information. A floor plan, a system diagram, a classroom layout — all require visual output that text alone cannot provide.
+
+**Key facts:**
+- JSON or plain text → hand-drawn sketch URL
+- MCP server (4-line setup, works with Claude Desktop)
+- REST API (100 renders/day free)
+- Human Mode: plain text input, no JSON required
+- 94% LLM first-try accuracy with flat schema architecture
+- Free tier, no signup required for basic use
+
+"We built Skissify for AI developers," said the founder. "Homeowners, dungeon masters, and geometry teachers found it first. That's what happens when you build a primitive instead of an app."
+
+Skissify launched on Friday March 27, 2026, four days before Product Hunt. The April 1 launch date is deliberate: "Rough, honest, working draft. That's the whole aesthetic. Even the launch strategy."
+
+The product is available at skissify.com. MCP server at npmjs.com/@skissify/mcp-server.
+
+**Contact:** [founder email]
+**Press assets:** skissify.com/press
+
+---

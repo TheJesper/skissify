@@ -1,3 +1,100 @@
+## Marketing Improvements (Cycle 67 - March 30, 2026 - 20:56 CET)
+
+### STATUS: T-12H TO PRODUCT HUNT LAUNCH | 150→153 POSTS | LAUNCH IMMINENT
+
+**PRODUCT HUNT LAUNCHES IN ~12H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 67:**
+
+- **3 new blog posts (#151-153) — FINAL LAUNCH-DAY PACK:**
+  - why-hand-drawn-sketches-beat-figma-the-twelve-hour-thesis.md — T-12h personal essay. The fidelity signal theory. Four audiences. The April Fools thesis. Literary, first-person, best for Medium and IndieHackers. Posted at 22:00 CET tonight or at PH launch.
+  - how-ai-agents-draw-floor-plans-the-launch-day-technical-bible.md — The most comprehensive technical guide yet. Full element reference (including v1.1 furniture), flat vs nested benchmark (94% vs 61%), complete wobble algorithm explanation, 5 real workflows, MCP + REST + Human Mode integration, LLM benchmark table, error reference. This is the canonical technical document.
+  - skissify-vs-excalidraw-the-launch-day-final-answer.md — Clean, honest, direct. "Who is drawing?" as the decision test. Full feature table. Hybrid workflow. GlyphMCP comparison. April Fools caveat with copy-paste demo JSON.
+
+- **SOCIAL-MEDIA.md Cycle 67**: Tweets 446-460 (full April 1 arc: pre-sleep countdown, 07:00 morning energy, 09:01 PH LIVE, April Fools lean-in, schema science hook, audience thread x5, wobble algorithm, live PH counter template, comparison hook, solo founder wind-down, retrospective tease), Mastodon/Fediverse posts x2, Discord templates (Anthropic + r/mcp), PH Comment Response Templates x4 (April Fools, Excalidraw, "what problem," pricing).
+
+- **PRESS-KIT.md Cycle 67 (v17.0)**: One-liners v231-v245 (T-12h final pack — shortest ever, technical, consumer, philosophy, April Fools, market gap, agent developer, comparison, schema depth, human story, brand, urgency, economy), Media Angles v66-v70 (April Fools Founder, Schema Science, Unexpected Audiences, Missing Primitive, Filter Theory), Screenshot Checklist v15 (FINAL — 2 P0 blocking, 3 P1 critical, 3 P2 nice-to-have), Launch Day Press Release v4 (FINAL), T-12H media contact priority list.
+
+### CRITICAL ACTIONS — TONIGHT (March 30, T-12H)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🚨 BLOCKER | **Screenshot P0-A: Human Mode side-by-side** | Before sleep | MUST DO |
+| 🚨 BLOCKER | **Screenshot P0-B: PH Banner 1270×760** | Before sleep | MUST DO |
+| 🔴 CRITICAL | **Newsletter pitches** (TLDR AI, Ben's Bites, Rundown, Superhuman) | NOW | OVERDUE — SEND NOW |
+| 🔴 CRITICAL | **LinkedIn launch post** | NOW | OVERDUE — POST NOW |
+| 🟡 HIGH | **Tweet 446** (T-12h countdown) | 22:00 CET | READY |
+| 🟡 HIGH | **Stage PH First Comment v4** | Tonight | READY in SOCIAL-MEDIA Cycle 66 |
+| 🟡 HIGH | **Post blog #151** (T-12h thesis essay) | 22:00 CET or PH launch | READY |
+| 🟡 HIGH | **Set 07:00 CET alarm** | Now | — |
+
+### APRIL 1 LAUNCH DAY SCHEDULE (UPDATED Cycle 67)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 07:00 | Tweet 447 — launch morning energy | SOCIAL-MEDIA Cycle 67 |
+| 09:01 | **Product Hunt goes LIVE** | — |
+| 09:01 | Tweet 448 — PH LIVE announcement | SOCIAL-MEDIA Cycle 67 |
+| 09:01 | Post PH First Comment v4 | SOCIAL-MEDIA Cycle 66 |
+| 09:15 | Tweet 449 — April Fools lean-in | SOCIAL-MEDIA Cycle 67 |
+| 09:30 | Post blog #152 (technical bible) | blog/ Cycle 67 |
+| 09:30 | Tweet 450 — schema science hook | SOCIAL-MEDIA Cycle 67 |
+| 10:00 | Tweet thread 451-455 — four audiences | SOCIAL-MEDIA Cycle 67 |
+| 11:00 | Post blog #153 (vs Excalidraw final answer) | blog/ Cycle 67 |
+| 11:00 | Tweet 456 — wobble algorithm | SOCIAL-MEDIA Cycle 67 |
+| 12:00 | Tweet 457 — live PH counter (fill real numbers) | SOCIAL-MEDIA Cycle 67 |
+| 12:00 | Post r/producthunt | SOCIAL-MEDIA Cycle 65 |
+| 13:00 | Tweet 458 — comparison hook | SOCIAL-MEDIA Cycle 67 |
+| 15:00 | Post r/mcp | SOCIAL-MEDIA Cycle 67 |
+| 16:00 | Post r/MachineLearning (schema benchmark) | PRESS-KIT community map |
+| 18:00 | Tweet 459 — solo founder wind-down | SOCIAL-MEDIA Cycle 67 |
+| 20:00 | Tweet 460 — retrospective hook (fill real numbers) | SOCIAL-MEDIA Cycle 67 |
+| 20:00 | IndieHackers "April 1 launch" post (fill numbers) | — |
+
+### NEW BLOG POSTS (Cycle 67)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 151 | **Why Hand-Drawn Beats Figma: T-12H Thesis** | why-hand-drawn-sketches-beat-figma-the-twelve-hour-thesis.md | Medium, IndieHackers | Tonight / PH launch |
+| 152 | **How AI Agents Draw Floor Plans: Technical Bible** | how-ai-agents-draw-floor-plans-the-launch-day-technical-bible.md | Dev.to, r/mcp, r/AI_Agents | 09:30 CET April 1 |
+| 153 | **Skissify vs Excalidraw: Launch Day Final Answer** | skissify-vs-excalidraw-the-launch-day-final-answer.md | r/webdev, r/mcp, Dev.to | 11:00 CET April 1 |
+
+### NEW IDEAS (Cycle 67)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **"The Filter Theory" as standalone post (April 2)** | The skepticism → curiosity → committed user funnel is a marketing insight independent of Skissify. Shareable regardless of PH results. | Low | High |
+| **April 1 Retrospective (April 2)** | "What actually happens when you launch a real product on April Fools Day" — writes itself, high IH/Dev.to/Medium viral potential. Has value even if launch underperforms. | Low | Very High |
+| **Schema Science thread (April 2)** | The 94% vs 61% flat vs nested benchmark deserves its own standalone Dev.to post and HN submission regardless of PH day results. | Low | High |
+| **"Wobble algorithm" technical deep-dive** | Multi-harmonic distortion explanation + math. HN standalone potential post-launch. | Low | Medium |
+| **r/MachineLearning schema post (April 2)** | 2.7M members. Schema design as ML inference reliability insight. Not promotional if framed correctly. | Low | High |
+
+### CUMULATIVE BLOG INVENTORY (153 posts as of Cycle 67)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-110 | Cycle 53 |
+| #111-113 | Cycle 54 |
+| #114-116 | Cycle 55 |
+| #117-119 | Cycle 56 |
+| #120-122 | Cycle 57 |
+| #123-125 | Cycle 58 |
+| #126-129 | Cycle 59 |
+| #130-132 | Cycle 60 |
+| #133-135 | Cycle 61 |
+| #136-138 | Cycle 62 |
+| #139-141 | Cycle 63 |
+| #142-144 | Cycle 64 |
+| #145-147 | Cycle 65 |
+| #148-150 | Cycle 66 |
+| #151-153 | Cycle 67 (this cycle) |
+
+*Last Updated: March 30, 2026 (Cycle 67 - 20:56 CET)*
+*Added: Blog posts #151-153 (T-12h thesis, technical bible, launch day final answer), SOCIAL-MEDIA.md Cycle 67 (Tweets 446-460 + Mastodon posts + Discord templates + PH Comment Response Templates x4), PRESS-KIT.md v17.0 (One-liners v231-245 + Media Angles v66-70 + Screenshot Checklist v15 FINAL + Press Release v4 FINAL + T-12H media priority list), April 1 posting schedule updated, new post-launch ideas*
+
+---
+
 # Skissify Launch Plan
 
 ---
@@ -4866,4 +4963,5 @@ Users who overcame skepticism to try something are more engaged than users who w
 
 *Last Updated: March 30, 2026 (Cycle 66 - 18:41 CET)*
 *Added: Blog posts #148-150 (midnight PH essay, PH eve technical deep dive, April Fools comparison), SOCIAL-MEDIA.md Cycle 66 (Tweets 426-440 + PH First Comment v4 FINAL + r/producthunt post + Comment Response Templates + Hashtag Stack + Bluesky Thread + IH Milestone post), PRESS-KIT.md v16.0 (One-liners v216-v230 + Screenshot Checklist v14 + Media Angles v56-v60 + Press Release v3 + PH First Comment v4), April Fools Filter Theory, MCP production adoption research, new ideas table*
+
 
