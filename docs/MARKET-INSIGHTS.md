@@ -2,6 +2,98 @@
 
 ---
 
+## Entry: March 31, 2026 — 18:26 CET | Automated Strategy Run #84
+
+### Theme: What Would Make Someone Pay EUR 2/mo — The "Thornton Taxonomy Gap" and "Data Viz Crowding Creates Clarity" Insights
+
+#### Insight 1: Thomas Thornton's MCP Diagram Taxonomy Has a Gap — And That Gap Is Skissify
+
+Thomas Thornton (thomasthornton.cloud) is the most-read MCP diagram tutorial blogger. He has now published two tutorials:
+1. Excalidraw MCP (March 24) — natural language → topology canvas
+2. draw.io MCP (March 2026, 1 month ago) — structured input → engineering diagram files
+
+His published taxonomy covers two of three MCP diagram modes. The third — hand-drawn spatial sketch from JSON — is absent. When a developer reads both of his tutorials and searches for "hand-drawn floor plan MCP," they find nothing. Skissify is the answer.
+
+**EUR 2/mo WTP from this insight**: A developer who has read both Thornton tutorials already understands MCP diagram generation deeply. They are at the TOP of the funnel — informed, motivated, and lacking only a tool for spatial sketch output. EUR 2/mo to fill that gap is not a decision. It's an automatic yes. These are the highest-quality EUR 2 buyers in the market.
+
+**Action**: Publish "The Three Types of Diagram MCP Tools in 2026" — naming Excalidraw, draw.io, and Skissify as the three modes. This directly captures Thornton's reader base in SERP. Consider pitching him directly post-launch.
+
+**Data source**: thomasthornton.cloud draw.io MCP tutorial (1 month ago, newly surfacing in Run #84)
+
+#### Insight 2: Data Viz MCP Crowding Makes Skissify's Spatial Sketch Lane MORE Valuable, Not Less
+
+Run #84 confirmed the fourth "AI + MCP + data visualization" product in the April quota cycle:
+- antvis/mcp-server-chart: 25+ analytical chart types
+- PulseMCP Data Viz: 8 matplotlib chart types
+- ToDiagram MCP: JSON/CSV/YAML → interactive diagrams
+- **NEW: MotherDuck "Dives"** (3 weeks ago): SQL → real-time shareable charts via Remote MCP
+
+Every new data viz MCP entrant increases the contrast between "charts from structured data" (crowded) and "hand-drawn sketches from spatial JSON" (zero competitors = Skissify). The more the data viz MCP category crowds, the more Skissify stands out as the ONLY non-analytical visual MCP tool.
+
+**EUR 2/mo WTP from this insight**: A developer building an agent pipeline that outputs BOTH analytical charts AND architectural sketches needs two tools: any of the four data viz MCPs for charts, and Skissify for sketches. EUR 2/mo for the sketch layer is the cheap, obvious complement to the chart tools they already use. The purchase framing is: "I use antvis for my charts. I use Skissify for my floor plans."
+
+**Marketing angle**: "Every chart MCP is covered. There's only one sketch MCP. Skissify."
+
+**Data source**: motherduck.com DuckDB Ecosystem Newsletter (March 2026, 3 weeks ago); antvis, PulseMCP, ToDiagram (Runs #83–84)
+
+#### Insight 3: The Excalidraw Video Tutorial Ecosystem Normalizes MCP Diagram Generation — Skissify Is the Next Step
+
+The Excalidraw MCP video ecosystem now has two YouTube tutorials in active SERP results:
+- "Let AI Draw Your Diagrams with Excalidraw's MCP Server" (1 day ago — still accumulating views)
+- "How to Create Architecture Diagrams with MCP: Claude, Draw.io & Excalidraw" (4 weeks ago)
+
+Combined with the three written tutorials from Feb–March (atalupadhyay, devsecopsai, codenote.net), there are now **5 active Excalidraw MCP tutorials** in developer search results. Every view is a developer who learns the MCP diagram generation paradigm — and then has no tool for hand-drawn floor plans.
+
+**EUR 2/mo WTP from this insight**: Developers who have watched/read these tutorials represent a pre-educated audience worth more per-user than a cold visitor. They know what MCP is. They know agents can generate visual output. They just don't have a spatial sketch tool. EUR 2/mo to complete their stack is trivial relative to the value they've already demonstrated by consuming 5 tutorials on the topic.
+
+**Video gap**: Zero YouTube tutorials exist for "hand-drawn floor plan MCP," "JSON sketch generator MCP," or "Skissify." At launch, a 3-minute demo video is the highest-ROI content investment. It would be the sole video result in this category.
+
+**Data source**: YouTube search results (Run #84, March 31 18:26 CET); prior runs #73, #77, #79, #81, #82, #83
+
+---
+
+## Entry: March 31, 2026 — 14:20 CET | Automated Strategy Run #83
+
+### Theme: What Would Make Someone Pay EUR 2/mo — The "ToDiagram Contrast" and "Buyer Anxiety" Insights
+
+#### Insight 1: ToDiagram's Existence Validates the "JSON In → Visual Out" Market — And Clarifies Skissify's Position
+
+ToDiagram MCP launched and operates in the "JSON → visual diagram" space — confirmed live this run. This is the first JSON-native diagram MCP found in 83 scans. Its existence does two things simultaneously:
+
+1. **Validates demand**: Developers want to generate visuals from structured JSON via MCP. This is not a niche experiment — there are now multiple competing products (ToDiagram, antvis/mcp-server-chart, PulseMCP) all serving the "JSON → diagram via MCP" workflow. Skissify's core bet is validated.
+
+2. **Clarifies Skissify's differentiation**: ToDiagram produces polished interactive web diagrams from arbitrary data. Skissify produces hand-drawn SVG from a spatial schema. A developer choosing between them is not comparing price points — they're choosing between fundamentally different outputs for fundamentally different jobs. ToDiagram: "visualize my database schema." Skissify: "sketch my floor plan."
+
+**EUR 2/mo WTP from this insight**: The buyer making this choice has already demonstrated willingness to pay for JSON → visual generation (they're evaluating ToDiagram, which has paid tiers). When they discover Skissify serves their architectural sketch use case at EUR 2/mo, conversion is near-instant. The mental framework is already installed.
+
+**Marketing copy**: "Like ToDiagram for your data. Skissify for your floor plans. Both JSON in. Very different outputs."
+
+**Data source**: todiagram.com/mcp (discovered Run #83, March 31 2026)
+
+#### Insight 2: "Flat Monthly License" Reduces Agentic Buyer Anxiety — EUR 2/mo Floor Is the Correct Psychological Anchor
+
+getmonetizely.com's 2026 SaaS/Agentic Pricing Guide (Jan 5, 2026) notes: "Agentic AI companies sometimes advertising old-school pricing options ('flat monthly license' for your AI agent) to reduce buyer anxiety." This is a critical psychological insight for Skissify's pricing presentation.
+
+The EUR 0.005/render pure usage model is technically optimal but can trigger "unpredictable cost" anxiety in developers. The EUR 2/mo API Starter (which includes 400 renders/month, then overage) is not just a price point — it is a **buyer anxiety reducer**. The flat monthly floor communicates: "You know what you're getting into. Maximum surprise is EUR X overage, not infinite."
+
+**EUR 2/mo WTP from this insight**: The EUR 2/mo floor converts not because it's cheap (though it is) but because it removes the "what if my agent goes crazy and generates 10,000 renders?" fear. Developers already pay for infrastructure services with flat+usage models (AWS EC2 reserved + spot, Cloudflare Workers + paid plan, Supabase free tier + pro). EUR 2/mo is a familiar psychological construct.
+
+**Pricing page implication**: Lead with "EUR 2/mo. Includes 400 renders. EUR 0.005/render after." Not: "EUR 0.005/render (minimum EUR 2/mo billed automatically)." The framing order matters enormously.
+
+**Data source**: getmonetizely.com "2026 Guide to SaaS, AI, and Agentic Pricing Models" (January 5, 2026)
+
+#### Insight 3: Excalidraw Tutorial Ecosystem Deepening — But Exclusively in Topology/Documentation Lane
+
+Three separate Excalidraw MCP tutorial articles surfaced this run (atalupadhyay 2 weeks, devsecopsai Feb 19, codenote.net Feb 12). All three serve the same use case: developer-generated architecture/workflow/documentation diagrams via AI prompt. None touch floor plans. None touch spatial layout. None touch JSON-schema-driven generation.
+
+**EUR 2/mo WTP from this insight**: The developers reading these Excalidraw tutorials are NOT Skissify's buyers. They have their tool. Skissify's EUR 2/mo buyer reads these tutorials and thinks: "That's great for architecture diagrams, but I need hand-drawn floor plan output from my AI agent's spatial JSON. Different job." The Excalidraw tutorial wave is increasing differentiation clarity, not reducing it.
+
+**The actual opportunity**: A developer who has read all three Excalidraw tutorials, understands MCP diagram generation deeply, and then searches for "hand-drawn floor plan MCP" finds nothing — until Skissify publishes. These are the highest-intent, lowest-friction EUR 2/mo buyers in existence. They've already done the education.
+
+**Data source**: atalupadhyay.wordpress.com (2 weeks), devsecopsai.today (Feb 19), codenote.net (Feb 12)
+
+---
+
 ## Entry: March 31, 2026 — 13:12 CET | Automated Strategy Run #82
 
 ### Theme: What Would Make Someone Pay EUR 2/mo — The "Pricing Evaluation Wave" and "Video Audience Multiplier" Insights

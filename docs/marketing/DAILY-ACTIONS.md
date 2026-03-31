@@ -2,6 +2,127 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #84 (18:26 CET, Tuesday March 31)
+
+### Context: Run #84 Key Findings
+- **84 consecutive niche-clean scans** — spatial sketch MCP lane still exclusively Skissify's
+- **Thomas Thornton now covers BOTH Excalidraw MCP AND draw.io MCP** — his taxonomy has a gap (hand-drawn spatial sketch) that Skissify fills
+- **MotherDuck "Dives" = 4th data viz MCP entrant** — confirms the data viz MCP lane is crowding while spatial sketch remains empty
+- **Excalidraw YouTube video is now 1+ day old and still ranking** — pre-educated audience growing hourly
+- **SaaS pricing: four independent sources** confirm per-execution + flat floor = correct model for EUR 2/mo
+- **April quota: 437/2000** (4 used this run)
+
+---
+
+### 🎯 Action 1 (CRITICAL — Wednesday AM): Publish MCP Server — The Thornton Taxonomy Gap Is Live
+
+Thomas Thornton (the most influential MCP diagram tutorial blogger) has now published tutorials on Excalidraw MCP and draw.io MCP. His taxonomy is missing hand-drawn spatial sketch MCP. That's Skissify. Every developer who reads his blog and searches for "hand-drawn floor plan MCP" finds nothing today.
+
+**Step A — Fix publishConfig and publish (30 min)**:
+1. Open `W:/code/skissify/mcp-server/package.json`
+2. Add: `"publishConfig": { "access": "public" }`
+3. Run: `cd W:/code/skissify/mcp-server && npm publish --access public`
+4. Verify: `npm view @skissify/mcp-server`
+
+**Step B — Email/pitch Thomas Thornton (15 min)**:
+thomasthornton.cloud — reach out via contact form or Twitter. "You've covered Excalidraw MCP and draw.io MCP. Here's the third type: hand-drawn spatial sketch MCP for floor plans and architectural diagrams. Would you consider a guest post or review?" He is the #1 blogger for MCP diagram tutorials. A single Thornton post = hundreds of qualified visitors.
+
+---
+
+### 🎯 Action 2 (HIGH — Wednesday): Publish "The Three Types of MCP Diagram Tools" Blog Post
+
+The Thomas Thornton taxonomy gap is now documented and confirmed. This is the post to write:
+
+**Title**: "The Three Types of MCP Diagram Tools in 2026: Topology, Engineering, and Sketch"
+
+**Structure**:
+1. **Type 1 — Topology/Canvas MCPs** (Excalidraw): Natural language → developer diagrams in an infinite canvas. Best for: system architecture, cloud topology, documentation.
+2. **Type 2 — Engineering Diagram MCPs** (draw.io MCP, Mermaid MCP): Structured input/text → diagram files (.drawio, .svg, .png). Best for: technical engineering diagrams, ER models, sequence diagrams.
+3. **Type 3 — Spatial Sketch MCPs** (Skissify): JSON spatial schema → hand-drawn SVG sketch. Best for: floor plans, architectural layouts, client-facing ideation sketches.
+
+**Why this ranks**: Thornton's tutorials rank for "MCP diagram generation." A post that names his taxonomy and adds a third type will appear alongside his content in SERP results within days. Zero competition for "Type 3 spatial sketch MCP" — Skissify owns the keyword.
+
+**SEO targets**: "MCP diagram types 2026", "hand-drawn diagram MCP", "spatial sketch MCP", "floor plan JSON MCP"
+
+---
+
+### 🎯 Action 3 (MEDIUM — Wednesday/Thursday): Submit to MotherDuck/DuckDB Community
+
+MotherDuck published a DuckDB ecosystem newsletter (3 weeks ago) featuring "Dives" — their new AI+MCP data visualization feature. They are actively covering MCP visualization tools in their developer newsletter.
+
+**Action**: Submit Skissify to MotherDuck's ecosystem directory or pitch them for newsletter inclusion. The framing: "You cover data viz MCPs. Here's the spatial sketch MCP. Both serve agent pipelines that need visual output — different use cases, complementary tools."
+
+**Why this matters**: DuckDB/MotherDuck has a developer newsletter audience that is already pre-educated on MCP + visualization. A Skissify mention in their newsletter = highly qualified traffic from the exact audience that pays EUR 2/mo for infrastructure tools.
+
+**Contact**: motherduck.com/community or their developer newsletter submission form.
+
+---
+
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #83 (14:20 CET, Tuesday March 31)
+
+### Context: Run #83 Key Findings
+- **83 consecutive niche-clean scans** — spatial sketch MCP lane still exclusively Skissify's
+- **NEW: ToDiagram MCP** — first JSON-in→visual-out MCP competitor found in 83 scans; LOW threat (polished vs hand-drawn, data viz vs floor plan), HIGH validation of the "JSON → diagram" market demand
+- **Excalidraw MCP tutorial wave still active** (3 articles from Feb–March) — topology/cloud lane, zero floor plan
+- **SaaS pricing cluster confirmed stable** — flat monthly + per-render model explicitly recommended for reducing buyer anxiety (getmonetizely.com)
+- **April quota: 433/2000** (4 used this run)
+
+---
+
+### 🎯 Action 1 (CRITICAL — Wednesday AM): npm publish + Respond to ToDiagram Discovery
+
+ToDiagram's appearance in Run #83 is the first meaningful validation signal in 83 scans that the "JSON in → diagram via MCP" market is real and attracting products. It is NOT a threat. It IS a catalyst.
+
+**Step A — Publish MCP server (30 min)**:
+1. Fix `publishConfig` in `mcp-server/package.json`: `"publishConfig": { "access": "public" }`
+2. `cd W:/code/skissify/mcp-server && npm publish --access public`
+3. Verify: `npm view @skissify/mcp-server`
+
+**Step B — Differentiation positioning vs ToDiagram (10 min)**:
+Add to website/README: "Like ToDiagram for your data. Skissify for your floor plans. Both JSON in. Very different outputs."
+This comparison frames Skissify positively against an established reference point without attacking a competitor.
+
+**Why now**: ToDiagram's existence means the "JSON → diagram via MCP" category has live competition. Skissify being unpublished while a competitor exists in the adjacent space is an opportunity cost growing by the day.
+
+---
+
+### 🎯 Action 2 (HIGH — Wednesday): Write "Skissify vs ToDiagram vs Excalidraw MCP" Comparison Post
+
+Three Excalidraw MCP tutorials are now actively ranking (Feb–March content still in SERP). ToDiagram is live. Skissify has no published comparison content. This is the post to write:
+
+**Title**: "Three ways to generate diagrams via MCP in 2026: Excalidraw, ToDiagram, and Skissify — which one?"
+
+**Structure**:
+1. Excalidraw MCP: natural language → topology/architecture diagrams in canvas (best for developer documentation)
+2. ToDiagram MCP: structured data → interactive web diagrams (best for visualizing databases, APIs, data flows)
+3. Skissify MCP: JSON spatial schema → hand-drawn SVG sketches (best for floor plans, architectural layouts, client-facing sketches)
+
+**Verdict table**:
+| Use case | Tool |
+|----------|------|
+| Architecture diagram from prompt | Excalidraw |
+| Database schema visualization | ToDiagram |
+| Hand-drawn floor plan from agent | Skissify |
+
+**SEO targets**: "MCP diagram comparison 2026", "JSON to diagram MCP", "hand-drawn floor plan MCP"
+**Time to write**: 60 min. Ranks in gaps left by Excalidraw/ToDiagram content.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Wednesday/Thursday): Submit to MCP Registries
+
+April quota is fresh (433/2000). MCP discovery channels are active and empty of sketch tools.
+
+**Priority submission list** (now includes ToDiagram context — position Skissify as the "spatial sketch" complement):
+1. **modelcontextprotocol.io/registry** — Primary. List alongside ToDiagram and Excalidraw in the "visualization" category.
+2. **awesome-mcp-servers** (GitHub) — PR with: "@skissify/mcp-server — Hand-drawn architectural sketch generation (floor plans, walls, doors, windows, dimensions). JSON schema → SVG."
+3. **claudefa.st** — Updated regularly. Skissify would be first hand-drawn/floor-plan entry.
+4. **mcpmanager.ai** — Submit with full description.
+5. **LobeHub** — MCP marketplace. Zero sketch tools. Category-creating.
+6. **pulsemcp.com** — Lists data viz tools. Skissify as "spatial sketch" category creates differentiation.
+
+---
+
 ## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #82 (13:12 CET, Tuesday March 31)
 
 ### Context: Run #82 Key Findings
