@@ -2,6 +2,70 @@
 
 ---
 
+## Entry: March 31, 2026 — 02:47 CET | Automated Strategy Run #73
+
+### Theme: What Makes Someone Pay EUR 2/mo for Skissify — Five Mechanisms, One Answer
+
+#### Insight 1: The YouTube Moment — Video Content Proves Developer Education Is Accelerating
+
+**Source**: YouTube "Let AI Draw Your Diagrams with Excalidraw's MCP Server" (10 hours ago, March 30, 2026)
+
+The first YouTube tutorial for Excalidraw MCP appeared 10 hours before this run. This is significant: YouTube content reaches developers who never read blog posts. The developer watching "plain English → Excalidraw diagram" is the exact developer who will then ask: "can I do the same thing but get a HAND-DRAWN floor plan instead of a clean technical diagram?"
+
+**EUR 2/mo WTP mechanism**: The developer who watches the Excalidraw YouTube video is already MCP-primed. They understand the concept, they've seen a demo, and they want the output to look different. That "I want hand-drawn, not technical" search is the highest-intent moment in Skissify's funnel. EUR 2/mo at that moment is not a pricing decision — it's a confirmation. Developers who understand MCP and want a specific visual output don't haggle at EUR 2.
+
+**Action for launch**: Skissify's highest-ROI piece of launch content is a YouTube video. "Hand-drawn floor plan from JSON + Claude Code" in 3 minutes. The Excalidraw tutorial wave is creating the audience. Skissify needs to be visible when that audience searches for the next step.
+
+#### Insight 2: The "Opposite Direction" Conversion — When Sketch-to-Digital Tools Fail Agents
+
+**Source**: graphically.io AI tools roundup (2 days ago, freshly maintained)
+
+Every AI sketch tool in the mainstream "AI for graphic designers" category converts hand-drawn INPUT into polished OUTPUT. They scan whiteboards, photos of napkin sketches, and rough drawings — and make them clean. This entire category fails agents because agents don't sketch on whiteboards; they generate structured data.
+
+**EUR 2/mo WTP mechanism for agents**: An agent managing a property management platform needs to generate floor plan thumbnails for 500 apartment listings. It can't scan a whiteboard. It can generate JSON. The discovery moment: "I need programmatic floor plan generation with a hand-drawn aesthetic for scale, and none of the sketch-to-digital tools accept JSON input." Skissify is not a search result at that point — it's the answer. EUR 2/mo for the 400-render API Starter is less than any API call cost-of-goods for comparable functionality.
+
+**Structural insight**: The "opposite direction" nature of Skissify's value proposition is its most defensible differentiator. It cannot be copied by adding features to existing tools because existing tools are architecturally inverted (they read human marks, not machine data). To compete with Skissify's core, a competitor would need to be rebuilt from scratch.
+
+#### Insight 3: Excalidraw MCP Tutorial Wave = Pre-Educated Market — Skissify's Most Valuable Audience
+
+**Source**: Accumulated from Runs #4 (Thomas Thornton blog), #71 (architecture diagram tutorial), #73 (YouTube video, 10 hours ago)
+
+Three Excalidraw MCP tutorials in three weeks, spanning blog → technical guide → video. Each one is educating a developer audience on how to use MCP for visual output. None of them lead to floor plans, hand-drawn aesthetics, or JSON-native manifests. They all hit a wall when the developer needs something more structured or more architectural.
+
+**EUR 2/mo WTP mechanism**: The Excalidraw tutorial creates a developer who:
+1. Understands MCP
+2. Can connect a diagram tool via `claude_desktop_config.json`
+3. Has run an MCP sketch workflow at least once
+4. Knows what they DON'T get from Excalidraw MCP (floor plans, tunable wobble, dimensional accuracy)
+
+This developer is Skissify's most valuable prospect. They've done the learning. They need only see that Skissify exists. EUR 2/mo is below the "do I install this?" decision threshold for a developer who has already set up three MCP servers. They just add another line to their config.
+
+#### Insight 4: What Actually Makes EUR 2/mo Feel Free — The Three Psychological Frames
+
+**Synthesis of 73 runs of pricing intelligence**
+
+Three distinct psychological frames make EUR 2/mo feel effortless to pay:
+
+1. **Infrastructure frame** (Chargebee + saassimply.com evidence): "I'm adding a render service to my agent pipeline. EUR 2/mo is a reasonable infrastructure line item." Devs who run AWS, Vercel, Upstash, etc. think in monthly infrastructure costs. EUR 2 disappears into that mental category. No subscription psychology. No "is this worth it?" friction.
+
+2. **Build-vs-buy frame** (mindk.com evidence): "Building a hand-drawn SVG renderer takes 20–40 hours. At my hourly rate, EUR 2/mo makes the decision trivially obvious." This frame works for ANY developer doing the math once. The math resolves instantly.
+
+3. **Capability unlock frame** (Excalidraw tutorial wave evidence): "I've seen MCP diagram tools. I know what they can and can't do. Skissify does the thing none of them do. EUR 2/mo is not a price — it's permission to use a capability that doesn't otherwise exist." Unique capability at a non-decision price = zero resistance.
+
+**Marketing implication**: The pricing page should present all three frames simultaneously. Don't pick one. Different developers land on different frames. All three resolve to "yes."
+
+#### Insight 5: Feature Competition Is Becoming Irrelevant — Category Position Matters More
+
+**Synthesis of Run #73 + prior runs on category structure**
+
+With 73 consecutive niche-clean scans confirmed, the strategic situation is increasingly clear: Skissify doesn't win on features — it wins on category existence. There is no "Skissify vs Competitor X feature comparison" because no competitor exists in the category. The only risk is not launching.
+
+The YouTube Excalidraw MCP video (10 hours ago) is the clearest signal yet: the MCP visual tools space is now generating VIDEO content, which means developer awareness is growing rapidly. The window where Skissify can enter as a "first discovery" in its category is measured in weeks, not months.
+
+**EUR 2/mo at category-first position**: When a developer searches "hand-drawn floor plan MCP" and finds exactly one result, they don't compare prices. They pay the price asked. EUR 2/mo at category-first position is not a discount — it's below the refusal threshold to maximize adoption velocity before category crowding begins.
+
+---
+
 ## Entry: March 31, 2026 — 01:43 CET | Automated Strategy Run #72
 
 ### Theme: Agentic SaaS Pricing Architecture — Why EUR 0.005/Render Is Structurally Correct

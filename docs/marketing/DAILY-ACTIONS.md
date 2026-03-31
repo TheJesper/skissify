@@ -2,6 +2,82 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #73 (02:47 CET, Tuesday March 31)
+
+### Context: Run #73 Key Findings
+
+- **73 consecutive niche-clean scans** — zero competitor in hand-drawn + JSON-native + MCP + floor plan. Confirmed again.
+- **NEW: YouTube "Let AI Draw Your Diagrams with Excalidraw MCP"** (10 hours ago) — Excalidraw MCP now getting VIDEO tutorial momentum. Skissify needs video content at launch.
+- **graphically.io roundup refreshed** (2 days ago) — confirms all AI sketch tools go sketch→digital (opposite direction from Skissify). Category inversion confirmed structurally.
+- **MCP still "standard practice"** (use-apify.com, 1 week) — stable ecosystem signal.
+- **Monthly Brave quota**: 391/2000 (1,609 remaining + resets April 1).
+- Plan7Architect price hike window: CLOSED (March 31 passed).
+- Thomas Thornton tutorial: 8+ days in SERP, still #1.
+
+---
+
+### 🎯 Action 1: Publish `@skissify/mcp-server` to npm — Priority: CRITICAL (Run #73 confirms STILL BLOCKED)
+
+This is run #73. The npm package still hasn't shipped. The fix is 30 seconds:
+1. Open `W:/code/skissify/mcp-server/package.json`
+2. Add: `"publishConfig": { "access": "public" }`
+3. Run: `cd W:/code/skissify/mcp-server && npm publish --access public`
+
+**New urgency from this run**: Excalidraw MCP is now generating YouTube tutorials (10 hours ago). Video content accelerates developer discovery. The window where Skissify can launch as "the first hand-drawn sketch MCP" — before Excalidraw inevitably adds JSON floor plan capability — is closing faster as Excalidraw's tutorial ecosystem grows.
+
+**Time**: 5 minutes maximum.
+
+---
+
+### 🎯 Action 2: Plan a 3-Minute YouTube Demo Video — Priority: HIGH (New from Run #73)
+
+**What**: Plan and record "Hand-drawn floor plan from JSON + Claude Code + Skissify MCP" — a 3–5 minute YouTube video.
+
+**Why now**: Excalidraw just published a YouTube MCP tutorial (10 hours ago). This is the first video-format tutorial in the Excalidraw MCP ecosystem. YouTube content reaches developers who don't read blog posts. The YouTube "AI sketch MCP" search slot is now occupied by Excalidraw topology diagrams. Skissify needs to appear in the same searches with a contrasting use case.
+
+**Video content outline**:
+1. (30s) "Every AI sketch MCP tutorial shows topology diagrams. Skissify generates floor plans."
+2. (60s) Demo: JSON manifest → Claude Code → Skissify MCP → hand-drawn SVG floor plan
+3. (60s) Wobble tuning, paper types, element types (walls, doors, windows)
+4. (60s) "EUR 2/mo for your agent pipeline. `npm install @skissify/mcp-server`."
+
+**Distribution**: YouTube + LinkedIn + X thread + Reddit r/ClaudeAI (where "MCP servers I use daily" thread is active)
+
+**SEO**: "hand-drawn floor plan MCP" + "JSON to sketch API" + "Skissify Claude Code" — all uncontested YouTube keywords.
+
+**Time**: 20 minutes to plan script; ~2 hours to record + edit.
+
+---
+
+### 🎯 Action 3: Write README Counter-Narrative — "Not a Diagram Tool" — Priority: MEDIUM
+
+**What**: Add a prominent section to `README.md` titled "How is Skissify different from Excalidraw MCP / diagram MCPs?"
+
+**Why now**: The Excalidraw MCP tutorial wave (3 tutorials in 3 weeks, now including video) is pre-educating developers on MCP diagram tools. When they find Skissify, they'll immediately ask: "how is this different from Excalidraw MCP?" A clear README answer converts confused visitors to paying users.
+
+**Content**:
+```
+## Skissify vs Excalidraw MCP / Technical Diagram Tools
+
+Excalidraw MCP: You describe a diagram in natural language → AI draws it on an Excalidraw canvas. 
+Great for topology, system architecture, workflow diagrams.
+
+Skissify: You provide a structured JSON manifest → Skissify renders hand-drawn SVG. 
+Built for AI agents generating spatial output: floor plans, architectural layouts, napkin sketches.
+
+| | Excalidraw MCP | Technical Diagram MCPs | Skissify |
+|---|---|---|---|
+| Input | Natural language | Code/text DSL | Structured JSON |
+| Output | Topology diagrams | Technical charts | Hand-drawn sketches |
+| Floor plans | ❌ | ❌ | ✅ |
+| JSON-native | ❌ | ❌ | ✅ |
+| Tunable aesthetics | ❌ | ❌ | ✅ |
+```
+
+**Time**: 30 minutes.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #72 (01:43 CET, Tuesday March 31)
 
 ### Context: Run #72 Key Findings
