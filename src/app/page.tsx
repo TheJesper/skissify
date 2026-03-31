@@ -12,6 +12,7 @@ import PresetTabs from "@/components/PresetTabs";
 import ControlPanel from "@/components/ControlPanel";
 import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
+import CommandPalette from "@/components/CommandPalette";
 import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
 import { useSession } from "next-auth/react";
@@ -257,6 +258,9 @@ function EditorInner({
 
   // Freehand draw mode state
   const [drawMode, setDrawMode] = useState(false);
+
+  // Command palette
+  const [showCommandPalette, setShowCommandPalette] = useState(false);
 
   // Canvas control ref - lets us trigger resetView from outside the Canvas
   const canvasControlRef = useRef<{ resetView: () => void } | null>(null);
@@ -569,10 +573,62 @@ function EditorInner({
         e.preventDefault();
         setSnapGrid((sketch.snapGrid ?? 0) > 0 ? 0 : 20);
       }
+
+      // Ctrl+K / Cmd+K → open Command Palette
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        setShowCommandPalette((v) => !v);
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, pasteInPlace, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode, setSnapGrid, sketch.snapGrid]);
+
+  /** Handle actions dispatched from the Command Palette */
+  const handleCommandPaletteAction = useCallback(
+    (actionId: string) => {
+      switch (actionId) {
+        case "undo": undo(); break;
+        case "redo": redo(); break;
+        case "select-all": selectAll(); break;
+        case "delete": deleteSelected(); break;
+        case "duplicate": copySelected(); pasteElements(); break;
+        case "copy": copySelected(); break;
+        case "paste": pasteElements(); break;
+        case "group": groupSelected(); break;
+        case "ungroup": ungroupSelected(); break;
+        case "new-sketch": newSketch(); break;
+        case "select-same-type": selectSameType(); break;
+        case "fit-view": canvasControlRef.current?.resetView(); break;
+        case "redraw": redraw(); break;
+        case "download-png": handleDownload(); break;
+        case "download-svg": handleDownloadSVG(); break;
+        case "download-json": {
+          const json = JSON.stringify(sketch, null, 2);
+          const blob = new Blob([json], { type: "application/json" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = sketchSlug ? `skissify-${sketchSlug}.json` : `skissify-${Date.now()}.json`;
+          a.click();
+          URL.revokeObjectURL(url);
+          break;
+        }
+        case "copy-json":
+          navigator.clipboard.writeText(JSON.stringify(sketch, null, 2)).catch(() => {});
+          break;
+        case "print": handlePrint(); break;
+        case "save": handleSave(); break;
+        case "zoom-in": break; // handled by Canvas internally
+        case "zoom-out": break;
+        case "toggle-shortcuts": break; // Toolbar handles this
+        default: break;
+      }
+    },
+    [undo, redo, selectAll, deleteSelected, copySelected, pasteElements, groupSelected, ungroupSelected,
+     newSketch, selectSameType, redraw, handleDownload, handleDownloadSVG, handlePrint, handleSave,
+     sketch, sketchSlug]
+  );
 
   // Compute the color of the first selected element (for per-element color picker)
   const selectedColor: string | undefined = (() => {

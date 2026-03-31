@@ -2,6 +2,65 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #76 (06:15 CET, Tuesday March 31)
+
+### Context: Run #76 Key Findings
+
+- **76 consecutive niche-clean scans** — zero competitor in hand-drawn + JSON-native + MCP + floor plan
+- **Data viz MCP category further crowding** — antvis, PulseMCP, mcpmarket.com all in analytical chart lane; spatial sketch lane stays Skissify-only
+- **Brave Search quota resets April 1** — fresh 2,000 searches for April monitoring cycle
+- **Pricing structural confirmation**: Forbes + EBR + Deloitte + mindk.com all confirm per-execution billing is the 2026 SaaS standard — Skissify's EUR 0.005/render architecture is correct
+- **MCP infrastructure status**: Wikipedia + DEV Community complete guide confirm MCP = essential developer infrastructure
+
+---
+
+### 🎯 Action 1: Post npm publish + "Show HN" — Priority: CRITICAL (First thing Wednesday)
+
+The niche has been clean for 76 consecutive scans. The MCP server (dist/index.js confirmed) is ready. The only remaining blocker was `publishConfig` in package.json (30-second fix). If not done Tuesday, Wednesday April 1 is the absolute must-ship day.
+
+**Commands**:
+```bash
+# In W:/code/skissify/mcp-server/package.json — add:
+"publishConfig": { "access": "public" }
+
+# Then:
+cd W:/code/skissify/mcp-server
+npm publish --access public
+```
+
+**HN post**: See `docs/marketing/HACKER-NEWS.md` for the pre-written "Show HN" post. Post between 08:00–10:00 CET Wednesday for optimal EU+US traffic.
+
+---
+
+### 🎯 Action 2: Submit to Fresh April MCP Registries — Priority: HIGH (Wednesday afternoon)
+
+Brave quota resets today. Use some quota to verify submission status on:
+- modelcontextprotocol.io/registry
+- awesome-mcp-servers GitHub (open PR)
+- claudefa.st (confirm listing appears within 24h of npm publish)
+- mcpmanager.ai
+- toolradar.com (confirmed building MCP catalog with review pages)
+- Composio catalog (850+ integrations, enterprise discovery layer)
+- fastmcp.me (GitHub stars + usage data ranking)
+
+Each registry submission takes 5–15 minutes. Total: ~90 minutes to cover all 7 channels.
+
+---
+
+### 🎯 Action 3: Write "Why Charts MCP ≠ Sketch MCP" Developer Post — Priority: MEDIUM
+
+**Why now**: antvis/mcp-server-chart (25+ chart types) is crowding the "visualization MCP" search results. Developers finding chart tools in searches will soon ask: "but what about spatial/architectural sketches?" A dev.to or hashnode post titled "The two kinds of visual MCP tools: charts vs sketches" places Skissify in front of developers already primed to understand the distinction.
+
+**Outline**:
+1. Data viz MCPs (antvis, PulseMCP) = quantitative → charts. Great for dashboards.
+2. Spatial sketch MCPs (Skissify) = structured spatial data → hand-drawn SVGs. Great for floor plans, diagrams, architectural concepts.
+3. Most agent workflows eventually need both. How to combine.
+4. EUR 2/mo entry — add the sketch layer to your existing chart pipeline.
+
+**Target keywords**: "visualization MCP 2026", "sketch MCP server", "hand-drawn diagram agent"
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #75 (05:05 CET, Tuesday March 31)
 
 ### Context: Run #75 Key Findings
