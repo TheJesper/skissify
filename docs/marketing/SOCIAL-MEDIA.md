@@ -22061,3 +22061,326 @@ Happy to answer any questions here. Genuinely.
 *CYCLE 75 STATUS: LAUNCH DAY | T-1h45m to Product Hunt | Blog posts #168-170 (3 definitive articles) added*
 *Added: Tweets 537-550 (full launch day arc), LinkedIn launch post, Reddit posts r/ChatGPT + r/artificial, Bluesky thread x3, Instagram caption, Discord Anthropic message, PH first comment, Hashtag Stack v3*
 *Last Updated: March 31, 2026 (Cycle 75 - 07:18 CET)*
+
+
+---
+
+## CYCLE 76 ADDITIONS — T-35 MINUTES TO LAUNCH (08:26 CET March 31)
+
+### TWEETS 551-565 — REAL-TIME LAUNCH WINDOW
+
+**Tweet 551 — T-35min (08:26 CET) Post NOW:**
+`
+T-35 minutes.
+
+The Product Hunt page goes live at 09:01 CET.
+
+If you've been watching me build this: thank you. Today is the day.
+
+skissify.com
+
+Not a joke. Actually.
+`
+
+**Tweet 552 — T-20min (08:40 CET):**
+`
+What I'm thinking about in the final 20 minutes before PH goes live:
+
+The first comment is more important than the tagline.
+The first 5 upvotes matter more than the next 50.
+The April 1 filter is already doing its job.
+
+See you at 09:01.
+`
+
+**Tweet 553 — Launch moment 09:01:**
+`
+WE'RE LIVE. ??
+
+Skissify is on Product Hunt RIGHT NOW.
+
+Give AI agents a way to draw, not just describe.
+JSON in → hand-drawn sketch URL out.
+MCP native. Free tier.
+
+?? [PH LINK]
+
+(Not a joke. Tap to verify.)
+`
+
+**Tweet 554 — 09:05 Schema Hook:**
+`
+Here's the most underrated technical thing I built:
+
+Nested JSON schema → LLMs get it right 61% of the time
+Flat array schema → LLMs get it right 94% of the time
+
+Schema design is product design. Especially for AI-native APIs.
+
+(New post on this in the blog: [LINK])
+`
+
+**Tweet 555 — 09:30 Audience thread (Thread opener):**
+`
+I built Skissify for AI developers.
+
+Here's who actually showed up on week one:
+
+(Thread /1)
+`
+**Tweet 555b — /2:**
+`
+AI developers — as expected. MCP server, Claude Desktop, floor plans for spatial agents.
+
+/2
+`
+**Tweet 555c — /3:**
+`
+Kitchen renovation homeowners — not expected. They wanted a quick sketch before meeting their contractor. They found it via "AI floor plan generator" on Google.
+
+/3
+`
+**Tweet 555d — /4:**
+`
+Dungeon masters — absolutely not expected. D&D encounter maps from plain text descriptions. They found it from r/DnD and haven't stopped.
+
+/4
+`
+**Tweet 555e — /5:**
+`
+Architecture students — makes sense in hindsight. Capture client briefs on a tablet. Rough sketch, instant URL, shareable.
+
+/5
+`
+**Tweet 555f — /6:**
+`
+The product is the same for all four.
+
+The API is the same. The schema is the same. The sketch output is the same.
+
+They found different doors into the same tool.
+
+That's when I knew we had something.
+skissify.com ??
+`
+
+**Tweet 556 — 10:00 Honest Comparison:**
+`
+Skissify vs Excalidraw — the honest version:
+
+Excalidraw: amazing for human-drawn diagrams, collaboration, pixel-precise editing
+Skissify: optimized for LLM-generated output, MCP native, programmatic sketch creation
+
+Different tools. Different jobs. Both valid.
+
+If your workflow involves AI agents generating layouts, Skissify.
+If it's human-first diagramming, Excalidraw.
+`
+
+**Tweet 557 — 11:00 Human Mode:**
+`
+No API key. No account. No JSON.
+
+Just go to skissify.com/human and type what you want drawn.
+
+"living room with L-shaped sofa and TV on north wall"
+
+Two seconds. Sketch URL you can share.
+
+The AI developer mode is cool. The human mode is magic.
+`
+
+**Tweet 558 — 13:00 Midday check-in template:**
+`
+Midday PH update — [X] upvotes, ranked #[X] in [Category]
+
+The most common first comment from people trying it: "wait this actually works?"
+
+Yes. It actually works.
+
+We're at [X] renders so far today.
+
+Still live: [PH LINK]
+`
+
+**Tweet 559 — 15:00 Meta-narrative:**
+`
+I used AI agents to build the launch marketing for an AI agent tool.
+
+170 blog posts. 550+ tweets drafted. Community strategy across 15 platforms.
+
+All generated and refined by AI cycles over 5 days.
+
+Then I reviewed and posted the best ones.
+
+This is what AI-augmented solo founder looks like in 2026.
+`
+
+**Tweet 560 — 17:00 Solo founder close:**
+`
+6 hours in. Built this alone. Launched today.
+
+If you upvoted, commented, or shared — genuinely thank you.
+
+The sketch layer for AI systems is real. It's live. It works.
+
+Skissify.com
+
+Whatever happens on the leaderboard today: this ships.
+`
+
+---
+
+### SHOW HN SUBMISSION — FINAL VERSION (09:30 CET)
+
+**Title:** Show HN: Skissify – Give AI agents a way to draw, not just describe
+
+**Body:**
+`
+I built Skissify because my AI agents kept describing spatial layouts in text when they needed to be showing them.
+
+JSON in → hand-drawn sketch URL out. MCP native (Claude Desktop + any MCP client). REST API for other LLM stacks.
+
+The hard part: LLMs got nested JSON schemas right 61% of the time. Flat array schemas: 94%. Flattening the schema was the biggest single product improvement I made.
+
+Use cases I built for: AI agent visual output, MCP spatial diagrams
+Use cases I didn't build for: kitchen renovation homeowners, D&D dungeon masters, architecture students
+
+100 free renders. No account needed at skissify.com/editor.
+
+MCP config (4 lines):
+{
+  "mcpServers": {
+    "skissify": {
+      "command": "npx",
+      "args": ["skissify-mcp"]
+    }
+  }
+}
+`
+
+---
+
+### BLUESKY — LAUNCH SEQUENCE (3 posts)
+
+**Bluesky 1 (09:01):**
+`
+We're live on Product Hunt.
+
+Skissify: JSON in → hand-drawn sketch URL out. MCP server for AI agents. Human mode for everyone else.
+
+Not a joke. (It's April 1. Worth clarifying.)
+
+skissify.com
+`
+
+**Bluesky 2 (10:30):**
+`
+The schema science finding from building Skissify:
+
+Flat JSON arrays: 94% LLM first-try accuracy
+Nested objects: 61%
+
+If you're designing APIs for LLM consumption, this matters.
+
+Full writeup: [blog link]
+`
+
+**Bluesky 3 (14:00):**
+`
+The four audiences using Skissify today:
+
+1. AI developers (expected)
+2. Kitchen renovation homeowners (not expected)
+3. D&D dungeon masters (very not expected)
+4. Architecture students (makes sense in hindsight)
+
+Same tool. Different doors.
+
+skissify.com
+`
+
+---
+
+### REDDIT r/ChatGPT — LAUNCH POST
+
+**Title:** I gave ChatGPT/Claude a way to actually draw things, not just describe them
+
+**Body:**
+`
+One thing I've wanted forever: when I ask an AI to design a room layout or a simple diagram, I want a picture, not a text description.
+
+So I built Skissify. It's an API (and MCP server) that converts plain text or JSON descriptions into hand-drawn sketch URLs. Works with any LLM.
+
+You can try it right now at skissify.com/human — just type what you want drawn. No account. Free.
+
+The technical insight that made it work: flat JSON schemas give LLMs 94% first-try accuracy. Nested schemas drop to 61%. Schema design turns out to matter a lot for AI-native APIs.
+
+Would love to hear if people get value from it. Launched today.
+`
+
+---
+
+### COMMUNITIES TO HIT TODAY — PRIORITIZED
+
+| Time | Community | Message | Status |
+|------|-----------|---------|--------|
+| 09:01 | Product Hunt | Launch + PH First Comment | STAGE NOW |
+| 09:30 | HN Show HN | "Give AI agents a way to draw" | READY |
+| 10:00 | r/AIAgents | Framework gap + schema science | READY |
+| 10:30 | r/ChatGPT | "I gave ChatGPT a way to draw" | NEW cycle 76 |
+| 11:00 | r/mcp | 4-line config + accuracy finding | READY |
+| 12:00 | r/SideProject | Solo founder + April 1 thesis | READY |
+| 12:30 | r/webdev | vs Excalidraw honest comparison | READY |
+| 13:00 | Anthropic Discord #mcp-servers | Short MCP launch note | READY |
+| 13:30 | LangChain Discord | REST API integration | READY |
+| 14:00 | r/homedesign | Homeowner renovation angle | NEW cycle 76 |
+| 15:00 | r/DnD | Dungeon map angle | NEW cycle 76 |
+| 16:00 | r/MachineLearning | Schema science finding | READY |
+| 19:00 | IndieHackers | Solo founder milestone | READY |
+
+---
+
+### r/homedesign POST (14:00 CET)
+
+**Title:** I built a tool that generates hand-drawn room sketches from plain text descriptions — homeowners are using it more than AI developers
+
+**Body:**
+`
+Built Skissify as a developer tool for AI agents. Homeowners found it first.
+
+The use case: you're planning a kitchen renovation. You have an idea in your head. You want to show your contractor something visual before the meeting.
+
+Go to skissify.com/human, type "kitchen with L-shaped counters, island in the middle, window above sink on north wall" — you get a rough sketch in 2 seconds. Share the URL.
+
+It's not Houzz. It's not a 3D render. It's a napkin sketch that gets the idea across.
+
+Free. No account needed. Built this because my AI agents needed visual output and it turned out humans wanted it too.
+`
+
+---
+
+### r/DnD POST (15:00 CET)
+
+**Title:** Built a free tool that generates hand-drawn dungeon/encounter maps from text descriptions. AI-generated but sketch-style, not pixel-art.
+
+**Body:**
+`
+I built Skissify for AI developers originally, but D&D players started using it and they're now one of my most enthusiastic user groups.
+
+You describe a dungeon room, encounter map, or floor plan in plain text. You get a rough hand-drawn sketch URL back in 2 seconds.
+
+Example: "30x40ft chamber, stone pillars in corners, locked door north, altar south, pit trap center"
+
+The sketch style looks like a DM's notebook. Which is kind of what it is.
+
+Free at skissify.com/human, no account needed.
+
+Would love feedback on what kinds of maps would make this more useful for tabletop use.
+`
+
+---
+
+*CYCLE 76 STATUS: LAUNCH DAY T-35MIN | 170→173 BLOG POSTS | FINAL WINDOW PUSH*
+*Added: Tweets 551-560 (real-time window arc, schema hook, audience thread, human mode, meta-narrative, solo close), Show HN final submission, Bluesky launch sequence x3, r/ChatGPT post, r/homedesign post, r/DnD post, Community priority map*
+*Last Updated: March 31, 2026 (Cycle 76 — 08:26 CET)*

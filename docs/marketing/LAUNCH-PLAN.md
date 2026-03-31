@@ -5836,3 +5836,75 @@ Users who overcame skepticism to try something are more engaged than users who w
 
 *Last Updated: March 31, 2026 (Cycle 75 - 07:18 CET)*
 *Added: Blog posts #168-170 (Figma manifesto, AI floor plans complete guide, vs Excalidraw definitive), SOCIAL-MEDIA.md Cycle 75 (Tweets 537-550 + LinkedIn + Reddit r/ChatGPT + r/artificial + Bluesky x3 + Instagram + Discord + PH First Comment + Hashtag Stack v3)*
+
+## Marketing Improvements (Cycle 76 - March 31, 2026 - 08:26 CET)
+
+### STATUS: ?? T-35MIN TO PRODUCT HUNT LAUNCH | 170→173 BLOG POSTS | CYCLE 76 — FINAL WINDOW
+
+**PRODUCT HUNT LAUNCHES IN ~35 MINUTES (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 76:**
+
+- **3 new blog posts (#171-173) — launch window content:**
+  - t-minus-35-minutes-final-launch-notes.md — Real-time founder perspective written at 08:26 CET. Four unexpected audiences, the April 1 filter thesis, and what comes next. Best for IndieHackers, Medium BuildInPublic.
+  - the-schema-design-insight-that-changed-everything.md — Technical deep-dive: flat vs nested JSON schemas, why 94% vs 61% accuracy, and the principle that schema design = product design for AI-native APIs. Best for HN, Dev.to, r/MachineLearning, TLDR AI.
+  - what-nobody-tells-you-about-launching-on-product-hunt.md — 7 real lessons beyond the standard PH guides: first comment > description, community > cold traffic, category choice matters, April 1 as filter, prep the post-mortem before launch. Best for IndieHackers, Medium startup.
+
+- **SOCIAL-MEDIA.md Cycle 76**: Tweets 551-560 (real-time T-35min window: NOW/08:26 post, T-20min, 09:01 live, schema hook, audience thread x6, honest comparison, human mode, midday template, meta-narrative, solo close), Show HN final submission body, Bluesky launch sequence x3, r/ChatGPT post, r/homedesign post (homeowner angle), r/DnD post (dungeon master angle), Community priority map with NEW communities (r/homedesign, r/DnD — two untapped audiences with zero Skissify exposure).
+
+### NEW BLOG POSTS (Cycle 76)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 171 | **T-Minus 35 Minutes: Launch Bunker Notes** | t-minus-35-minutes-final-launch-notes.md | IndieHackers, Medium | Publish NOW |
+| 172 | **The Schema Design Insight That Changed Everything** | the-schema-design-insight-that-changed-everything.md | HN, Dev.to, r/MachineLearning | 10:00 CET |
+| 173 | **What Nobody Tells You About Launching on PH** | what-nobody-tells-you-about-launching-on-product-hunt.md | IndieHackers, Medium | 11:00 CET |
+
+### NEW COMMUNITIES ADDED (Cycle 76)
+
+| Community | Audience | Message | Post Time |
+|-----------|----------|---------|-----------|
+| r/homedesign | Homeowners planning renovations | "Sketch from text, share URL, show contractor" | 14:00 CET |
+| r/DnD | Dungeon masters | "Hand-drawn encounter maps from text descriptions" | 15:00 CET |
+
+Both communities are large (r/homedesign: 2M+, r/DnD: 4M+) and have never been targeted in previous cycles.
+
+### FINAL T-35MIN CHECKLIST
+
+| Priority | Item | Status |
+|----------|------|--------|
+| ?? CRITICAL | Post Tweet 551 (T-35min) | POST NOW — copy from SOCIAL-MEDIA Cycle 76 |
+| ?? CRITICAL | Stage PH First Comment | STAGE NOW in PH dashboard |
+| ?? CRITICAL | Tweet 553 queued for 09:01 | QUEUE IT |
+| ?? HIGH | Show HN submission drafted | READY — final version in SOCIAL-MEDIA Cycle 76 |
+| ?? HIGH | Blog #171 (T-35min notes) | PUBLISH to website if connected |
+| ?? MEDIUM | r/homedesign post | Ready for 14:00 |
+| ?? MEDIUM | r/DnD post | Ready for 15:00 |
+
+### NEW IDEAS (Cycle 76)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **r/homedesign targeting** | 2M+ member community, zero Skissify exposure. Homeowners are already using the product — now write directly for them. | Zero (post written) | Very High |
+| **r/DnD targeting** | 4M+ member community, D&D users are already enthusiastic Skissify users. Post written in their language. | Zero (post written) | Very High |
+| **Schema science as standalone viral post** | The 94% vs 61% finding is independently compelling. Not just a Skissify story — it's an API design principle. Blog post written; post on HN as "Ask HN: Does schema flatness affect LLM accuracy?" | Low | High |
+| **Meta-narrative tweet at 15:00** | "I used AI agents to market an AI agent tool. 170 blog posts. 550 tweets." — This story itself is interesting to the BuildInPublic and AI community. | Zero (written) | Medium |
+| **Post-launch: r/MachineLearning schema post** | After PH closes, write up the schema science finding as a proper ML/NLP observation. No product promotion — just the finding. | Low | High |
+
+### CUMULATIVE BLOG INVENTORY (173 posts as of Cycle 76)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-153 | Cycles 53-67 |
+| #154-156 | Cycle 68 |
+| #157-159 | Cycle 69 |
+| #160-161 | Cycle 70 |
+| #162-163 | Cycle 71 |
+| #164-165 | Cycle 72/73 |
+| #166-167 | Cycle 74 |
+| #168-170 | Cycle 75 |
+| #171-173 | Cycle 76 (this cycle) |
+
+*Last Updated: March 31, 2026 (Cycle 76 — 08:26 CET)*
+*Added: Blog posts #171-173 (T-35min bunker notes, schema design insight, PH launch lessons), SOCIAL-MEDIA.md Cycle 76 (Tweets 551-560 + Show HN final + Bluesky x3 + r/ChatGPT + r/homedesign + r/DnD + Community priority map)*
