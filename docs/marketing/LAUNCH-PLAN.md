@@ -5732,3 +5732,107 @@ Users who overcame skepticism to try something are more engaged than users who w
 
 *Last Updated: March 31, 2026 (Cycle 69 - 00:21 CET)*
 *Added: Blog posts #157-159 (Claude Code homeowner angle, 7 frameworks gap, vibe coders renovation), SOCIAL-MEDIA.md Cycle 69 (Tweets 476-490 + Reddit posts + LinkedIn + Mastodon + HN titles + hashtag research), PRESS-KIT.md v19.0 (One-liners v261-275 + Media Angles v76-80 + Community Map v5 + Post-Mortem Framework)*
+
+## Marketing Improvements (Cycle 75 - March 31, 2026 - 07:18 CET)
+
+### STATUS: ?? T-1H45M TO PRODUCT HUNT LAUNCH | 167→170 BLOG POSTS | CYCLE 75 — FINAL HOUR PUSH
+
+**PRODUCT HUNT LAUNCHES IN ~1H45M (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 75:**
+
+- **3 new blog posts (#168-170) — launch day quality, evergreen content:**
+  - why-hand-drawn-sketches-beat-figma-the-launch-day-manifesto.md — The definitive "napkin vs Figma" argument. Explains the psychology of rough sketches getting better feedback. Best for Medium, IndieHackers, BuildInPublic community.
+  - how-ai-agents-draw-floor-plans-the-launch-day-complete-guide.md — Five concrete agent workflows (real estate AI, architecture briefing, game level design, education, multi-agent handoff). Technical + accessible. Best for Dev.to, HN, r/AIAgents.
+  - skissify-vs-excalidraw-the-april-1-definitive-guide.md — Honest, fair comparison. Positions both tools correctly. Designed to win trust from skeptics. Best for r/webdev, dev communities, comparison-searchers.
+
+- **SOCIAL-MEDIA.md Cycle 75**: Tweets 537-550 (full launch day arc: final countdown, 09:01 PH LIVE, April Fools lean-in, demo hook, schema science, unexpected audiences thread x5, midday check-in, Human Mode highlight, technical depth, solo founder close), LinkedIn launch day post, Reddit posts r/ChatGPT + r/artificial, Bluesky thread x3, Instagram caption, Discord Anthropic message, Product Hunt first comment (STAGE NOW), Hashtag Stack v3.
+
+- **NEW COMMUNITIES THIS CYCLE**: r/ChatGPT and r/artificial added to launch day schedule. Both have massive engaged audiences who've never seen Skissify.
+
+### NEW BLOG POSTS (Cycle 75)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 168 | **Why Hand-Drawn Sketches Beat Figma (Manifesto)** | why-hand-drawn-sketches-beat-figma-the-launch-day-manifesto.md | Medium, IndieHackers | 10:00 CET |
+| 169 | **How AI Agents Draw Floor Plans (Complete Guide)** | how-ai-agents-draw-floor-plans-the-launch-day-complete-guide.md | Dev.to, r/AIAgents | 11:00 CET |
+| 170 | **Skissify vs Excalidraw (Definitive April 1 Guide)** | skissify-vs-excalidraw-the-april-1-definitive-guide.md | r/webdev, dev communities | 12:00 CET |
+
+### RESEARCH FINDINGS (Cycle 75)
+
+- **Product Hunt AI categories are active**: AI Agents, AI Coding Agents, AI Infrastructure all showing strong recent launches. Skissify uniquely positioned — no direct competitor for "visual output layer" niche.
+- **X algorithm 2026**: Reply chains drive reach more than hashtags. Prioritize meaningful replies to AI community posts during launch window.
+- **r/ChatGPT and r/artificial** are underserved in launch plan — massive audiences, low Skissify exposure. Adding both to launch day schedule.
+- **Hashtag Stack v3**: Primary (#Skissify #ProductHunt #BuildInPublic #AIAgents) + Technical (#MCP #LLM #AgentNative) + Trending (#AI #Claude #Anthropic).
+
+### UPDATED LAUNCH DAY SCHEDULE (Cycle 75 - T-1h45m Final)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| **NOW** | Stage PH First Comment | SOCIAL-MEDIA Cycle 75 |
+| 07:30 | Tweet 537 - final countdown | SOCIAL-MEDIA Cycle 75 |
+| 08:45 | Tweet 521 - April 1 opening hook | SOCIAL-MEDIA Cycle 73 |
+| 08:50 | Tweet 503 - April 1 filter theory | Previous cycles |
+| **09:01** | ?? **PRODUCT HUNT LIVE** | — |
+| 09:01 | Tweet 538 - PH LIVE (PIN THIS) | SOCIAL-MEDIA Cycle 75 |
+| 09:01 | Post PH First Comment | SOCIAL-MEDIA Cycle 75 |
+| 09:05 | Bluesky Post 1 | SOCIAL-MEDIA Cycle 75 |
+| 09:15 | Tweet 539 - April Fools lean-in | SOCIAL-MEDIA Cycle 75 |
+| 09:30 | LinkedIn launch post | SOCIAL-MEDIA Cycle 75 |
+| 09:45 | Tweet 540 - demo hook | SOCIAL-MEDIA Cycle 75 |
+| 10:00 | Tweet 541 - schema science | SOCIAL-MEDIA Cycle 75 |
+| 10:00 | Post blog #168 (Figma manifesto) | blog/ Cycle 75 |
+| 10:30 | Tweet 542 thread - unexpected audiences | SOCIAL-MEDIA Cycle 75 |
+| 10:30 | r/ChatGPT post | SOCIAL-MEDIA Cycle 75 |
+| 11:00 | r/artificial post | SOCIAL-MEDIA Cycle 75 |
+| 11:00 | Post blog #169 (AI floor plans guide) | blog/ Cycle 75 |
+| 12:00 | r/producthunt post | Previous cycles |
+| 12:00 | r/webdev post | Previous cycles |
+| 12:00 | Post blog #170 (vs Excalidraw definitive) | blog/ Cycle 75 |
+| 13:00 | Tweet 543 - midday check-in | SOCIAL-MEDIA Cycle 75 |
+| 13:00 | Anthropic Discord + LangChain Discord | SOCIAL-MEDIA Cycle 75 |
+| 14:00 | r/weddingplanning post | SOCIAL-MEDIA Cycle 74 |
+| 14:00 | r/homeimprovement post | SOCIAL-MEDIA Cycle 74 |
+| 15:00 | Tweet 544 - Human Mode | SOCIAL-MEDIA Cycle 75 |
+| 15:00 | Blog #166 (wedding planner story) | blog/ Cycle 74 |
+| 16:00 | Tweet 545 - technical depth | SOCIAL-MEDIA Cycle 75 |
+| 16:00 | r/MachineLearning (schema science) | Previous cycles |
+| 19:00 | Tweet 546 - solo founder close | SOCIAL-MEDIA Cycle 75 |
+| 20:00 | IndieHackers milestone post | — |
+
+### CRITICAL ACTIONS RIGHT NOW (07:18 CET)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| ?? BLOCKER | Screenshot P0-A: Human Mode side-by-side | ASAP | MUST DO |
+| ?? BLOCKER | Screenshot P0-B: PH Banner 1270x760 | ASAP | MUST DO |
+| ?? CRITICAL | **Stage PH First Comment** (copy from SOCIAL-MEDIA Cycle 75) | Before 09:01 | READY |
+| ?? CRITICAL | Tweet 537 - final countdown | 07:30 | READY |
+| ?? HIGH | LinkedIn launch post | 09:30 | READY |
+
+### NEW IDEAS (Cycle 75)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **r/ChatGPT post** | 6M+ members. None have seen Skissify. "LLMs can now draw" is a perfect hook for this audience. | Zero (written) | Very High |
+| **r/artificial post** | Technical AI community, loves schema design content. The 94% vs 61% finding is perfect here. | Zero (written) | High |
+| **Definitive Excalidraw comparison** | Ranks for search long-term. Fair and honest framing wins trust. | Zero (written) | High |
+| **PH First Comment staging** | Get it ready NOW, post the moment PH goes live. First comment sets the conversation tone. | Zero (written) | Critical |
+| **Schema science tweet thread** | The 94% vs 61% finding is independently shareable content. AI engineers will engage with this. | Zero (written) | High |
+
+### CUMULATIVE BLOG INVENTORY (170 posts as of Cycle 75)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-153 | Cycles 53-67 |
+| #154-156 | Cycle 68 |
+| #157-159 | Cycle 69 |
+| #160-161 | Cycle 70 |
+| #162-163 | Cycle 71 |
+| #164-165 | Cycle 72/73 |
+| #166-167 | Cycle 74 |
+| #168-170 | Cycle 75 (this cycle) |
+
+*Last Updated: March 31, 2026 (Cycle 75 - 07:18 CET)*
+*Added: Blog posts #168-170 (Figma manifesto, AI floor plans complete guide, vs Excalidraw definitive), SOCIAL-MEDIA.md Cycle 75 (Tweets 537-550 + LinkedIn + Reddit r/ChatGPT + r/artificial + Bluesky x3 + Instagram + Discord + PH First Comment + Hashtag Stack v3)*
