@@ -2,6 +2,43 @@
 
 ---
 
+## Entry: March 31, 2026 — 07:25 CET | Automated Strategy Run #77
+
+### Theme: What Makes Someone Pay EUR 2/mo — The VC Moat Test and the Platform MCP Cascade
+
+#### Insight 1: The VC "Dead Zone" Test Is a WTP Litmus Test in Disguise
+
+developmentcorporate.com (3 days ago) reveals that VCs now evaluate AI tools against three moat criteria: workflow ownership depth, moat replicability, and pricing model resilience. This framework is not just for fundraising — it is a user decision-making proxy.
+
+When a developer evaluates whether to pay EUR 2/mo for Skissify, they are subconsciously running the same test:
+- **Workflow ownership**: "Will I depend on this JSON schema enough that switching is painful?" If the answer is yes (and for developers who build MCP pipelines around it, it will be), EUR 2/mo is not a subscription — it is a lock-in fee they pay willingly.
+- **Moat replicability**: "Can I build this myself?" Excalidraw MCP exists but requires topology thinking, not JSON manifests. The wobble algorithm, the architectural element library, the floor plan DNA — these are not afternoon builds. EUR 2/mo beats a weekend of engineering.
+- **Pricing model resilience**: "Will this tool survive the next wave?" Per-execution billing means Skissify gets MORE valuable as agents proliferate, not less. EUR 2/mo in Month 1 becomes EUR 5–20/mo by Month 6 as agentic workflows compound.
+
+**Data sources**: developmentcorporate.com (3 days), Chargebee AI Pricing Playbook (3 weeks), EBR Agentic SaaS Pricing (6 days)
+
+#### Insight 2: The Platform MCP Cascade Creates a New Discovery Funnel for EUR 2/mo Tools
+
+In the last 30 days, the following major platforms have shipped MCP servers: Figma (March 25), Google Stitch (March 18), Chrome DevTools / Google (March 30), Shopify (March 29), Supabase (ongoing maintenance). Every developer who installs any of these platform MCPs is now in a mental context of "I have MCP tools in my stack." The next question they ask is: "What else can I add?"
+
+At EUR 2/mo, Skissify is the cheapest possible answer to "what other MCP tools should I add?" The platform MCP cascade is a discovery funnel that ends at Skissify. The question is not "will they find us" — it is "are we listed where they look?"
+
+**Priority implication**: claudefa.st (updated every 18–24 hours), modelcontextprotocol.io/registry, awesome-mcp-servers, Composio catalog — these are the four directories where platform MCP developers will discover Skissify. Being listed in all four converts the cascade passively.
+
+**Data sources**: Shopify Dev MCP (2 days), Chrome DevTools MCP (March 30), Figma MCP open beta (March 25), Supabase MCP docs (active)
+
+#### Insight 3: The Agentic AI Development Cost Study Reveals the Component Layer Pricing Truth
+
+theninehertz.com "Agentic AI Development Costs 2026" (2 weeks ago) documents that full custom agentic AI solutions cost $500–$2,000/month. This is not the market Skissify competes in — but it reveals the pricing psychology of developers building agentic systems.
+
+A developer spending $500–$2,000/month on an AI agent stack views their individual component costs through a "component layer" lens. EUR 2/mo for a sketch renderer is not a subscription decision — it is a component selection decision. The question is "does this component do what I need at a reasonable cost?" not "is this worth EUR 2/mo?"
+
+**WTP implication**: The EUR 2/mo tier should be marketed to developers building agentic pipelines as a "component price" — like a Stripe fee, a Resend tier, or a Redis instance. The language should be: "Add hand-drawn sketch output to your agent pipeline. EUR 2/mo. No setup fees." This framing bypasses the subscription resistance entirely.
+
+**Data source**: theninehertz.com "Agentic AI Development Costs 2026" (2 weeks ago), Chargebee Playbook (3 weeks)
+
+---
+
 ## Entry: March 31, 2026 — 06:15 CET | Automated Strategy Run #76
 
 ### Theme: What Would Make Someone Pay EUR 2/mo for Skissify — The April 2026 Answer

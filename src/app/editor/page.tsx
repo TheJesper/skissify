@@ -12,6 +12,7 @@ import PresetTabs from "@/components/PresetTabs";
 import ControlPanel from "@/components/ControlPanel";
 import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
+import CommandPalette from "@/components/CommandPalette";
 import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
 
@@ -161,6 +162,9 @@ function EditorInner({
   } = useSketch(initialData ?? undefined, initialPreset ?? undefined);
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
+
+  // Command palette state
+  const [showCommandPalette, setShowCommandPalette] = useState(false);
 
   // Freehand draw mode state
   const [drawMode, setDrawMode] = useState(false);
@@ -372,6 +376,38 @@ function EditorInner({
     return null;
   }, [sketch, sketchSlug]);
 
+  /** Handle actions dispatched from the Command Palette */
+  const handleCommandPaletteAction = useCallback(
+    (actionId: string) => {
+      switch (actionId) {
+        case "undo": undo(); break;
+        case "redo": redo(); break;
+        case "select-all": selectAll(); break;
+        case "delete": deleteSelected(); break;
+        case "duplicate": copySelected(); pasteElements(); break;
+        case "copy": copySelected(); break;
+        case "paste": pasteElements(); break;
+        case "group": groupSelected(); break;
+        case "ungroup": ungroupSelected(); break;
+        case "new-sketch": newSketch(); break;
+        case "select-same-type": selectSameType(); break;
+        case "redraw": redraw(); break;
+        case "download-png": handleDownload(); break;
+        case "download-svg": handleDownloadSVG(); break;
+        case "download-json": handleDownloadJSON(); break;
+        case "copy-json":
+          navigator.clipboard.writeText(JSON.stringify(sketch, null, 2)).catch(() => {});
+          break;
+        case "print": handlePrint(); break;
+        case "save": handleSave(); break;
+        default: break;
+      }
+    },
+    [undo, redo, selectAll, deleteSelected, copySelected, pasteElements, groupSelected, ungroupSelected,
+     newSketch, selectSameType, redraw, handleDownload, handleDownloadSVG, handleDownloadJSON,
+     handlePrint, handleSave, sketch]
+  );
+
   // Keyboard shortcuts
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -479,6 +515,12 @@ function EditorInner({
         e.preventDefault();
         setSnapGrid((sketch.snapGrid ?? 0) > 0 ? 0 : 20);
       }
+
+      // Ctrl+K / Cmd+K → open Command Palette
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        setShowCommandPalette((v) => !v);
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -571,6 +613,20 @@ function EditorInner({
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">
+      {/* Command Palette — Ctrl+K */}
+      <CommandPalette
+        open={showCommandPalette}
+        onClose={() => setShowCommandPalette(false)}
+        onLoadPreset={(name) => { loadPreset(name); setShowCommandPalette(false); }}
+        onAddElement={(type) => { addElement(type); setShowCommandPalette(false); }}
+        onSetPaper={(p) => { setPaper(p); setShowCommandPalette(false); }}
+        onSetTool={(t) => { setTool(t); setShowCommandPalette(false); }}
+        onSetRenderStyle={(s) => { setRenderStyle(s); setShowCommandPalette(false); }}
+        onSetAmplitude={(v) => { setAmplitude(v); setShowCommandPalette(false); }}
+        onSetSnapGrid={(v) => { setSnapGrid(v); setShowCommandPalette(false); }}
+        onAction={(action) => { handleCommandPaletteAction(action); setShowCommandPalette(false); }}
+        presetNames={Object.keys(presets)}
+      />
       <Toolbar
         onRedraw={redraw}
         onPrint={handlePrint}

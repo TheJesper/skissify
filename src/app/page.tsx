@@ -942,6 +942,21 @@ function EditorInner({
       </button>
 
       {/* Mobile bottom sheet with swipe-to-close */}
+      {/* Command Palette — Ctrl+K */}
+      <CommandPalette
+        open={showCommandPalette}
+        onClose={() => setShowCommandPalette(false)}
+        onLoadPreset={(name) => { handleLoadPreset(name); setShowCommandPalette(false); }}
+        onAddElement={(type) => { addElement(type); setShowCommandPalette(false); }}
+        onSetPaper={(p) => { setPaper(p); setShowCommandPalette(false); }}
+        onSetTool={(t) => { setTool(t); setShowCommandPalette(false); }}
+        onSetRenderStyle={(s) => { setRenderStyle(s); setShowCommandPalette(false); }}
+        onSetAmplitude={(v) => { setAmplitude(v); setShowCommandPalette(false); }}
+        onSetSnapGrid={(v) => { setSnapGrid(v); setShowCommandPalette(false); }}
+        onAction={(action) => { handleCommandPaletteAction(action); setShowCommandPalette(false); }}
+        presetNames={Object.keys(presets)}
+      />
+
       <MobileBottomSheet
         open={mobileControlsOpen}
         onClose={() => setMobileControlsOpen(false)}

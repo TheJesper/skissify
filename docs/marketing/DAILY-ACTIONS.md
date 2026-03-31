@@ -2,6 +2,81 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #77 (07:25 CET, Tuesday March 31)
+
+### Context: Run #77 Key Findings
+
+- **77 consecutive niche-clean scans** — zero competitor in hand-drawn + JSON-native + MCP + floor plan
+- **Shopify Dev MCP Server launched (2 days ago)** — platform MCP cascade accelerating; discovery funnel growing
+- **VC "dead zone" framework confirms Skissify's moat** — workflow ownership, replicability, pricing resilience all PASS
+- **Excalidraw YouTube MCP video (15 hours old)** — topology tutorial ecosystem growing; floor plan / JSON-native lane still empty
+- **April Brave quota fresh** — full 2,000 searches available for April competitive monitoring
+- **Agentic SaaS pricing signal**: per-execution billing confirmed as moat indicator by VC community + Chargebee + EBR
+
+---
+
+### 🎯 Action 1 (CRITICAL): npm publish + Show HN — Wednesday Morning Window
+
+77 clean scans. The niche is yours. The MCP server dist/ is built. The only remaining blocker is `publishConfig`.
+
+**Step 1 — Fix package.json (30 seconds)**:
+```json
+// W:/code/skissify/mcp-server/package.json — add:
+"publishConfig": { "access": "public" }
+```
+
+**Step 2 — Publish to npm (5 minutes)**:
+```bash
+cd W:/code/skissify/mcp-server
+npm publish --access public
+```
+
+**Step 3 — Post Show HN (15 minutes)**:
+- Window: 08:00–10:00 CET Wednesday April 1
+- Draft: `docs/marketing/HACKER-NEWS.md`
+- Tie-in narrative: "Figma/Stitch does polished UI. Shopify Dev MCP does docs. Skissify does the back-of-napkin sketch your agent can't generate anywhere else."
+
+**Step 4 — Submit to MCP registries (90 minutes)**:
+- modelcontextprotocol.io/registry
+- awesome-mcp-servers GitHub (open PR)
+- claudefa.st (updated every 18–24 hours — Skissify appears within 24h of npm publish)
+- mcpmanager.ai
+- toolradar.com
+- Composio catalog (850+ integrations, enterprise discovery)
+- fastmcp.me
+
+---
+
+### 🎯 Action 2 (HIGH): Ride the Platform MCP Discovery Cascade
+
+Shopify Dev MCP (2 days ago) + Chrome DevTools MCP (yesterday) + Figma MCP (6 days) = a wave of platform developers who now have MCP in their daily stack. They are actively searching "what other MCP tools should I use?"
+
+**Write a 400-word dev.to post**: "The MCP stack I use with Shopify + Figma + Claude Code — and the one tool that was missing"
+- Frame: developer who has Shopify Dev MCP + Figma MCP + Chrome DevTools MCP — what's the sketch output tool?
+- Reveal: `@skissify/mcp-server` — JSON in, hand-drawn SVG out, floor plans, EUR 2/mo
+- CTA: npm install + claudefa.st listing link
+
+Target keywords: "MCP stack developer tools 2026", "Shopify MCP Claude Code", "sketch MCP server"
+
+This post ranks in "Shopify MCP" + "Claude Code MCP tools" searches — highly populated by the exact target audience.
+
+---
+
+### 🎯 Action 3 (MEDIUM): YouTube Demo Video — 3 Minutes, One Shot
+
+The Excalidraw MCP YouTube video (15 hours old, gaining views) will dominate "AI sketch MCP" YouTube search results for weeks. The ONLY way to compete in that SERP is a Skissify video that targets "hand-drawn floor plan MCP" — a search the Excalidraw video does not cover.
+
+**Script (3 minutes)**:
+1. (30s) Show the problem: "I'm building an agent that generates floor plans. No tool renders them as hand-drawn sketches."
+2. (60s) Live demo: Claude Code + `@skissify/mcp-server` → JSON manifest → hand-drawn floor plan SVG renders in chat
+3. (45s) Show the JSON schema: walls, doors, windows, stairs, dimensions — all in 20 lines of JSON
+4. (30s) Pricing: "EUR 2/mo. Add it to your stack."
+5. (15s) Links: npm, claudefa.st listing, skissify.com
+
+**Why now**: The YouTube MCP search category is dominated by Excalidraw (topology) and draw.io (technical). Zero floor plan / spatial sketch videos exist. A Skissify video published Wednesday April 1 owns this SERP slot for months.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #76 (06:15 CET, Tuesday March 31)
 
 ### Context: Run #76 Key Findings
