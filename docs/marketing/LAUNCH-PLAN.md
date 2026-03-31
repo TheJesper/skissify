@@ -5908,3 +5908,125 @@ Both communities are large (r/homedesign: 2M+, r/DnD: 4M+) and have never been t
 
 *Last Updated: March 31, 2026 (Cycle 76 — 08:26 CET)*
 *Added: Blog posts #171-173 (T-35min bunker notes, schema design insight, PH launch lessons), SOCIAL-MEDIA.md Cycle 76 (Tweets 551-560 + Show HN final + Bluesky x3 + r/ChatGPT + r/homedesign + r/DnD + Community priority map)*
+
+## Marketing Improvements (Cycle 77 - March 31, 2026 - 09:35 CET)
+
+### STATUS: ?? T-23.5H TO PRODUCT HUNT LAUNCH | 173176 BLOG POSTS | CYCLE 77 - PRE-LAUNCH FINAL DAY
+
+**PRODUCT HUNT LAUNCHES IN ~23.5H (APRIL 1 09:01 CET)**
+
+**TIMING NOTE: Previous cycles 75-76 appear to have miscalculated timing. As of 09:35 CET March 31, launch is ~23.5h away. Use this cycle's content for the full day before launch.**
+
+**What Changed in Cycle 77:**
+
+- **3 new blog posts (#174-176) - publication-ready, SEO-optimized:**
+  - skissify-vs-figma-for-quick-ideas-the-cognitive-science-case.md - The definitive "why rough beats polished for ideation" post. Includes the Stanford collaboration mode vs evaluation mode research angle, practical decision matrix, and AI agent use case. Best for Medium, LinkedIn, r/UXDesign. Publish 10:00 CET April 1.
+  - how-ai-agents-draw-floor-plans-the-production-workflow.md - Technical deep dive with actual Python/LangGraph code snippets, schema comparison (94% vs 61%), multi-agent workflow, and MCP config. Best for Dev.to, HN, r/MachineLearning. Publish 11:00 CET April 1.
+  - skissify-vs-excalidraw-2026-the-one-page-verdict.md - Honest, concise comparison. Decision tree. No hype. Positions Skissify as API/output layer vs Excalidraw as drawing canvas. Best for r/webdev, direct search traffic. Publish 12:00 CET April 1.
+
+- **SOCIAL-MEDIA.md Cycle 77**: Tweets 561-575 (full pre-launch day arc: April 1 filter post, schema science tease, four unexpected users, nostalgia hook, community seed, final night countdown + full launch day arc: live tweet, engineer hook, broad audience, live metrics template, unexpected users thread x3, evening pulse, thank-you close), Viral Hook Bank (10 hooks optimized for comment/reply openers), Mastodon/Fosstodon post, Dev.to teaser, IndieHackers milestone, Threads post, Post-Launch Response Templates x5 (Excalidraw deflect, roughness explanation, schema question, try it response, April Fools deflect).
+
+- **PRESS-KIT.md v20.0**: One-liners v306-315 (cognitive science, timing play, five primitives final form, anti-Figma, schema soundbite, homeowner discovery, wobble thesis, universal spatial need, investor, honest version), April 2 Post-Mortem Template v2 (complete fillable framework), Screenshot Manifest v20 (complete P0/P1/P2 checklist), Founder Bio v3 (short/medium/long for press), Boilerplate v3 (short/medium/long press-ready copy).
+
+### NEW BLOG POSTS (Cycle 77)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 174 | **Why Hand-Drawn Beats Figma: The Cognitive Science Case** | skissify-vs-figma-for-quick-ideas-the-cognitive-science-case.md | Medium, LinkedIn, r/UXDesign | 10:00 CET April 1 |
+| 175 | **How AI Agents Draw Floor Plans: Production Workflow** | how-ai-agents-draw-floor-plans-the-production-workflow.md | Dev.to, HN, r/MachineLearning | 11:00 CET April 1 |
+| 176 | **Skissify vs Excalidraw: The One-Page Verdict** | skissify-vs-excalidraw-2026-the-one-page-verdict.md | r/webdev, search traffic | 12:00 CET April 1 |
+
+### KEY IMPROVEMENTS THIS CYCLE
+
+1. **Post-Launch Response Templates** (Cycle 77 SOCIAL-MEDIA) - The asset nobody else writes pre-launch. Authentic, specific responses to the 5 most common objections/questions. Prevents sounding robotic when people engage on launch day.
+
+2. **April 2 Post-Mortem Template** (Cycle 77 PRESS-KIT) - Complete fillable framework. Write this on April 2 with real numbers. IndieHackers post-mortems consistently outperform regular posts. This one will work because the April 1 launch date itself is a good story.
+
+3. **Mastodon/Fosstodon community** - Zero coverage in previous cycles. Technical open-source community, MCP-adjacent audience. Should receive the MCP-focused post on launch day.
+
+4. **Viral Hook Bank** - 10 platform-optimized hooks for reply/comment openers. The X algorithm rewards reply chains more than hashtags in 2026 — having strong openers pre-written matters.
+
+5. **Founder Bio v3** - Three lengths (150 chars / 100 words / 200 words) for different press contexts. Previous press kit had inconsistent bio formats.
+
+### LAUNCH DAY SCHEDULE - COMPLETE (Cycle 77 Final)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| **TODAY (March 31)** | | |
+| 09:35 | Tweet 561 - April 1 filter post | SOCIAL-MEDIA Cycle 77 |
+| 11:00 | Tweet 562 - Schema science tease | SOCIAL-MEDIA Cycle 77 |
+| 13:00 | Tweet 563 - Four unexpected users | SOCIAL-MEDIA Cycle 77 |
+| 16:00 | Tweet 564 - Nostalgia hook | SOCIAL-MEDIA Cycle 77 |
+| 19:00 | Tweet 565 - Community seed (framework users) | SOCIAL-MEDIA Cycle 77 |
+| 21:00 | Tweet 566 - Final night countdown | SOCIAL-MEDIA Cycle 77 |
+| **APRIL 1** | | |
+| 08:50 | Tweet 521 - April 1 hook (10-min warning) | Cycle 73 |
+| **09:01** | ?? **PRODUCT HUNT LIVE** | - |
+| 09:01 | Tweet 567 - PH LIVE (PIN THIS) | SOCIAL-MEDIA Cycle 77 |
+| 09:01 | Post PH First Comment | SOCIAL-MEDIA Cycle 75 |
+| 09:05 | Bluesky launch | SOCIAL-MEDIA Cycle 75 |
+| 09:30 | Show HN submission | SOCIAL-MEDIA Cycle 76 |
+| 09:30 | LinkedIn launch post | SOCIAL-MEDIA Cycle 72 |
+| 09:30 | Anthropic Discord | SOCIAL-MEDIA Cycle 73 |
+| 09:30 | Mastodon/Fosstodon post | SOCIAL-MEDIA Cycle 77 |
+| 10:00 | Tweet 568 - Schema science for engineers | SOCIAL-MEDIA Cycle 77 |
+| 10:00 | Publish blog #174 (Figma cognitive science) | blog/ Cycle 77 |
+| 10:30 | r/ChatGPT post | SOCIAL-MEDIA Cycle 76 |
+| 11:00 | Tweet 569 - Broad "did you know" | SOCIAL-MEDIA Cycle 77 |
+| 11:00 | Publish blog #175 (production workflow) | blog/ Cycle 77 |
+| 11:00 | r/artificial post | SOCIAL-MEDIA Cycle 75 |
+| 12:00 | Tweet 570 - Live metrics template | SOCIAL-MEDIA Cycle 77 |
+| 12:00 | Publish blog #176 (vs Excalidraw one-page) | blog/ Cycle 77 |
+| 12:00 | r/producthunt + r/webdev | Previous cycles |
+| 13:00 | Anthropic + LangChain Discord | Previous cycles |
+| 14:00 | Tweet 571-573 - Unexpected users thread | SOCIAL-MEDIA Cycle 77 |
+| 14:00 | r/homedesign + r/weddingplanning | Cycles 76+74 |
+| 15:00 | r/DnD post | SOCIAL-MEDIA Cycle 76 |
+| 16:00 | r/MachineLearning schema science | Previous cycles |
+| 17:00 | Tweet 574 - Evening pulse | SOCIAL-MEDIA Cycle 77 |
+| 19:00 | IndieHackers milestone | SOCIAL-MEDIA Cycle 77 |
+| 20:00 | Tweet 575 - Thank-you close | SOCIAL-MEDIA Cycle 77 |
+| **APRIL 2** | | |
+| 09:00 | Write post-mortem (template in PRESS-KIT v20) | PRESS-KIT Cycle 77 |
+| 09:00 | Submit Betalist + remaining directories | - |
+
+### NEW IDEAS (Cycle 77)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **Mastodon/Fosstodon targeting** | Technical open-source community, MCP-native audience. Zero Skissify exposure in 76 previous cycles. One post ready in SOCIAL-MEDIA Cycle 77. | Zero (written) | Medium-High |
+| **Post-launch response templates** | The most underrated pre-launch asset. Having authentic answers to "isn't this Excalidraw?" and "why hand-drawn?" ready prevents fumbling. Builds trust in real-time. | Zero (written) | High |
+| **April 2 post-mortem as a planned asset** | IndieHackers post-mortems consistently outperform regular posts. Template is ready. The April Fools angle makes this one inherently interesting regardless of numbers. | Low (template done) | Very High |
+| **Cognitive science angle for Figma comparison** | Previous Figma comparison posts focus on features. The "collaboration mode vs evaluation mode" psychological angle is distinctive and shareable in design communities. | Zero (written) | High |
+| **LangGraph code snippet in blog post** | Technical readers want working code. The production workflow post (blog #175) has a real Python/LangGraph snippet showing exactly how to integrate Skissify in an agent. | Zero (written) | High |
+
+### OUTSTANDING CRITICAL ACTIONS
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| ?? BLOCKER | Screenshot P0-A: Human Mode side-by-side | Before 08:00 April 1 | MUST DO |
+| ?? BLOCKER | Screenshot P0-B: PH Banner 1270x760 | Before 08:00 April 1 | MUST DO |
+| ?? CRITICAL | Stage PH First Comment | Before 09:01 April 1 | READY (Cycle 75) |
+| ?? CRITICAL | Queue Tweet 561 | NOW | READY Cycle 77 |
+| ?? HIGH | LinkedIn launch post | 09:30 April 1 | READY Cycle 72 |
+| ?? HIGH | Show HN submission final text | 09:30 April 1 | READY Cycle 76 |
+| ?? MEDIUM | Mastodon/Fosstodon post | 09:30 April 1 | READY Cycle 77 |
+
+### CUMULATIVE BLOG INVENTORY (176 posts as of Cycle 77)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-153 | Cycles 53-67 |
+| #154-156 | Cycle 68 |
+| #157-159 | Cycle 69 |
+| #160-161 | Cycle 70 |
+| #162-163 | Cycle 71 |
+| #164-165 | Cycle 72/73 |
+| #166-167 | Cycle 74 |
+| #168-170 | Cycle 75 |
+| #171-173 | Cycle 76 |
+| #174-176 | Cycle 77 (this cycle) |
+
+*Last Updated: March 31, 2026 (Cycle 77 - 09:35 CET)*
+*Added: Blog posts #174-176 (Figma cognitive science, production workflow with code, vs Excalidraw one-page), SOCIAL-MEDIA.md Cycle 77 (Tweets 561-575 + Viral Hook Bank + Mastodon + Threads + IndieHackers + Post-Launch Response Templates x5), PRESS-KIT.md v20.0 (One-liners v306-315 + Post-Mortem Template v2 + Screenshot Manifest v20 + Founder Bio v3 + Boilerplate v3)*

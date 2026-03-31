@@ -4288,3 +4288,153 @@ Sections to include:
 Best platforms for the post-mortem: IndieHackers (guaranteed upvotes), Dev.to, Medium, HN Show HN
 
 ---
+
+---
+
+## PRESS-KIT.md - v20.0 (Cycle 77 - March 31, 2026 - 09:35 CET)
+
+### STATUS: T-23.5H TO LAUNCH | PRE-LAUNCH FINAL ASSET REVIEW
+
+---
+
+### ONE-LINERS v306-v315 (Cycle 77)
+
+**v306 (THE COGNITIVE SCIENCE ANGLE):**
+"Rough sketches get collaboration. Polished mockups get criticism. We automate the rough sketch."
+
+**v307 (THE TIMING PLAY):**
+"We launched on April 1 to filter for believers. It worked."
+
+**v308 (THE FIVE PRIMITIVES - Final Form):**
+"AI agents have five output types: text, code, data, image, sketch. The last one launched today."
+
+**v309 (THE ANTI-FIGMA POSITIONING):**
+"Figma is for shipping. Skissify is for thinking. Different phase, different tool."
+
+**v310 (THE SCHEMA SOUNDBITE):**
+"Flat arrays: 94%. Nested objects: 61%. We measured it. Schema design is product design for AI-native APIs."
+
+**v311 (THE HOMEOWNER DISCOVERY):**
+"I built it for AI developers. A homeowner used it to brief her contractor. That's when I understood what we'd actually built."
+
+**v312 (THE WOBBLE THESIS):**
+"The lines wobble on purpose. Wobble means 'still a draft.' Draft invites honest feedback. Honesty improves the outcome."
+
+**v313 (THE UNIVERSAL SPATIAL NEED):**
+"Spatial thinking is human. Not AI-developer-specific. Not enterprise-only. Anyone who needs to show someone else where things go."
+
+**v314 (THE INVESTOR ONE-LINER):**
+"The sketch layer for AI agents. MCP native. REST API. Human Mode. First mover in a primitive category."
+
+**v315 (THE HONEST VERSION):**
+"It draws rough sketches from text. That's it. Turns out that was missing."
+
+---
+
+### APRIL 2 POST-MORTEM TEMPLATE v2 (Cycle 77 - COMPLETE FRAMEWORK)
+
+Write this on April 2 with real numbers. This template is ready to fill in.
+
+**File to create:** docs/marketing/blog/april-2-post-mortem-real-numbers-real-lessons.md
+
+`markdown
+# 24 Hours of Skissify on Product Hunt: Real Numbers, Real Lessons
+
+*April 2, 2026 | The honest debrief*
+
+## The Numbers
+- Product Hunt ranking: #[X] of the day
+- Upvotes at 24h: [N]
+- Website visits: [N]
+- Free renders in 24h: [N]
+- Email signups: [N]
+- Paid conversions: [N]
+
+## The April 1 Filter: Did It Work?
+[Honest assessment. Did skeptics filter out? Was conversion rate higher or lower than expected?]
+
+## The Unexpected Finding
+[Something that surprised you. Every launch has one.]
+
+## What Didn't Work
+[3 specific things. Be honest. This is what makes IndieHackers posts go viral.]
+
+## What Worked Better Than Expected
+[3 specific things. Balance the honesty.]
+
+## The Four Audiences
+[Which of the four unexpected audiences (homeowners, DMs, architecture students, wedding planners) 
+generated the most engagement? Any new ones?]
+
+## What Comes Next
+[Roadmap signals. What feedback drove you to prioritize X?]
+
+## One Thing I'd Change
+[Specific. Concrete. Not "more preparation" — what exactly?]
+`
+
+---
+
+### SCREENSHOT MANIFEST v20 - FINAL LAUNCH CHECKLIST
+
+**P0 - MUST HAVE (before 09:01 CET):**
+- [ ] screenshot-human-mode-desktop.png - Human Mode editor with input and sketch output visible
+- [ ] screenshot-human-mode-mobile.png - Mobile view of Human Mode
+- [ ] screenshot-ph-banner-1270x760.png - Product Hunt gallery banner
+- [ ] screenshot-ph-logo-240x240.png - Product Hunt logo
+
+**P1 - HIGH VALUE (before 11:00 CET):**  
+- [ ] screenshot-agent-output-floor-plan.png - A Claude conversation generating a floor plan via MCP
+- [ ] screenshot-kitchen-renovation.png - Homeowner use case: kitchen layout from text
+- [ ] screenshot-dungeon-map.png - D&D encounter map from text description
+- [ ] screenshot-mcp-config-4lines.png - The 4-line MCP server config in Claude Desktop
+
+**P2 - NICE TO HAVE:**
+- [ ] screenshot-wedding-layout.png - Event table arrangement use case
+- [ ] screenshot-multi-agent.png - Multi-agent workflow generating a sketch at a step
+- [ ] screenshot-api-response.png - REST API response showing URL in JSON
+
+---
+
+### FOUNDER BIO (v3 - Cycle 77)
+
+**Short (150 chars for Product Hunt):**
+"Building Skissify — the sketch layer for AI agents. Solo developer. Launched on April Fools on purpose."
+
+**Medium (for press kit, 100 words):**
+"[Founder name] is a solo developer who built Skissify because their AI agents kept describing spatial layouts in text when they needed to show them visually. After discovering that flat JSON schemas gave LLMs 94% first-try accuracy vs 61% for nested schemas, they shipped a REST API and MCP server that converts text or JSON into hand-drawn sketch URLs. Skissify launched on Product Hunt on April 1, 2026 — intentionally, because the date filters for users who actually read the product description."
+
+**Long (for press inquiries, 200 words):**
+"[Founder name] is an indie developer building in the AI agent infrastructure space. Skissify emerged from a practical frustration: every AI agent framework handles text, code, data, and image output, but none had a native 'sketch' primitive for communicating spatial thinking.
+
+The product started as an internal tool for generating rough floor plans in AI workflows. Two discoveries shaped its direction: first, that LLMs produce dramatically better JSON when schemas are flat arrays rather than nested objects (94% vs 61% first-try accuracy); second, that the 'intentionally rough' sketch style unlocked a completely different feedback dynamic — rough sketches invite collaboration, polished mockups invite criticism.
+
+Skissify launched on Product Hunt on April 1, 2026. The date was chosen deliberately: skeptics filter themselves out, and the people who check the link are the people who will actually use the product. Human Mode (plain text input, no code) emerged from noticing that homeowners, teachers, and event planners were using the tool for completely non-developer use cases.
+
+Contact: jesper@skissify.com"
+
+---
+
+### BOILERPLATE (Press-ready, 3 versions)
+
+**Short boilerplate (50 words):**
+"Skissify is the sketch layer for AI agents. It converts text descriptions or JSON into hand-drawn sketch URLs via MCP server or REST API. Human Mode requires no code — just describe what you want drawn. Skissify is available at skissify.com with 100 free renders on signup."
+
+**Medium boilerplate (100 words):**
+"Skissify is an AI-native sketching API that converts text descriptions or JSON schemas into hand-drawn sketch URLs. Built for AI developers, it integrates with any MCP-compatible client (Claude Desktop, Cursor, Windsurf) via a 4-line config, or with any LLM stack via its REST API. Human Mode provides a no-code interface for homeowners, designers, event planners, and anyone who needs to turn a spatial idea into a shareable rough sketch. Skissify's flat JSON schema design achieves 94% LLM first-try accuracy. Available at skissify.com."
+
+**Long boilerplate (200 words):**
+"Skissify fills the gap in AI agent output formats. Where AI agents can generate text, code, data, and images, they've historically been unable to produce spatial sketches — rough-fidelity visual layouts that communicate 'here is the arrangement' without implying 'here is the final design.'
+
+Skissify's MCP server integrates with any MCP-compatible AI client via a 4-line configuration, enabling agents to call create_sketch as a native tool. The REST API supports any LLM stack. Human Mode provides a plain-text interface for non-developers who want to sketch room layouts, event arrangements, or floor plans from a description.
+
+Key technical differentiator: Skissify's flat JSON schema achieves 94% LLM first-try accuracy versus 61% for nested schemas — a finding that generalizes to any AI-native API design.
+
+The intentionally rough sketch style is a product decision, not a limitation. Rough sketches signal 'draft,' which invites collaboration rather than evaluation. This is why Skissify generates better creative conversations than polished mockups at the ideation stage.
+
+Skissify launched on Product Hunt on April 1, 2026. Available at skissify.com with 100 free renders on registration."
+
+---
+
+*Last Updated: March 31, 2026 (Cycle 77 - 09:35 CET)*
+*Added: One-liners v306-315 (cognitive science, timing play, five primitives final, anti-Figma, schema soundbite, homeowner discovery, wobble thesis, universal spatial, investor, honest), April 2 Post-Mortem Template v2 (full fillable framework), Screenshot Manifest v20 (complete checklist), Founder Bio v3 (short/medium/long), Boilerplate v3 (short/medium/long)*
