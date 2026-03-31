@@ -36,13 +36,12 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    # Deploy is best-effort — SSH may be firewalled
-    continue-on-error: true
     steps:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1
         with:
           host: 65.109.62.25
+          port: 2222
           username: root
           key: ${{ secrets.HETZNER_SSH_KEY }}
           command_timeout: 5m
