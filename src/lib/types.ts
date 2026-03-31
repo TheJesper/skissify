@@ -460,7 +460,7 @@ export const BOARD_COLORS: Record<PaperType, string> = {
   cream: "#f0ead8",
   white: "#f0f0f0",
   yellow: "#f5efbf",
-  blueprint: "#162d58",
+  blueprint: "#1a1c23",
 };
 
 /** Grid line colors per paper type */

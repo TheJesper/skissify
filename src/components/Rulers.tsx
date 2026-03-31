@@ -9,7 +9,7 @@ const FONT = "9px JetBrains Mono, monospace";
 /** Color themes for rulers — adapts to paper type */
 const RULER_THEMES = {
   default: { bg: "#eee8d5", tick: "#93a1a1", text: "#586e75", cursor: "#dc322f", corner: "#e6dfcc" },
-  blueprint: { bg: "#0f2340", tick: "rgba(100,160,220,0.4)", text: "rgba(160,200,240,0.7)", cursor: "#ff6b6b", corner: "#0c1d38" },
+  blueprint: { bg: "#1a1e28", tick: "rgba(100,150,200,0.4)", text: "rgba(150,185,220,0.7)", cursor: "#ff6b6b", corner: "#15181f" },
 };
 
 function getRulerTheme(paper?: PaperType) {

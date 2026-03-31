@@ -1634,7 +1634,7 @@ export default function Canvas({
         minHeight: 0,
         backgroundColor: sketch.paper === "blueprint" ? BOARD_COLORS.blueprint : "#eee8d5",
         backgroundImage: sketch.paper === "blueprint"
-          ? "radial-gradient(circle, rgba(100,160,220,0.15) 1px, transparent 1px)"
+          ? "radial-gradient(circle, rgba(80,95,110,0.35) 1px, transparent 1px)"
           : "radial-gradient(circle, #93a1a1 1px, transparent 1px)",
         backgroundSize: "24px 24px",
       }}
@@ -1680,7 +1680,7 @@ export default function Canvas({
             height: "auto",
             boxShadow:
               sketch.paper === "blueprint"
-                ? "0 0 40px 8px rgba(26, 58, 92, 0.5), 0 25px 50px -12px rgba(0, 0, 0, 0.6)"
+                ? "0 0 30px 6px rgba(20, 50, 90, 0.4), 0 25px 50px -12px rgba(0, 0, 0, 0.7)"
                 : "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
             border:
               sketch.paper === "blueprint"
