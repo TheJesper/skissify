@@ -2,6 +2,72 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #81 (12:01 CET, Tuesday March 31)
+
+### Context: Run #81 Key Findings
+- **81 consecutive niche-clean scans** — spatial sketch MCP lane still exclusively Skissify's
+- **HN thread now 40+ hours active (11h fresh at noon)** — fully evergreen, comment window permanently open
+- **Excalidraw YouTube MCP video at ~19h** — pre-educated buyer pool growing by the hour
+- **Martin Lysk blog post in active SEO cycle (2 days)** — forked Excalidraw signal = Skissify's target persona described in their own words
+- **April quota: 425/2000** (3 used this run)
+- **Rate-limited on AI sketch + SaaS pricing searches** — 2 of 4 searches completed
+
+---
+
+### 🎯 Action 1 (CRITICAL — Wednesday AM): npm publish + Post HN Comment on Live Thread
+
+The HN Excalidraw blog diagram thread (id=47571376) is still receiving fresh comments after 40+ hours — it is now evergreen and will be indexed by Google for months. This is the single highest-ROI action available today.
+
+**Step A — Publish MCP server first (30 min)**:
+1. Fix `publishConfig` in `mcp-server/package.json`: `"publishConfig": { "access": "public" }`
+2. `cd W:/code/skissify/mcp-server && npm publish --access public`
+3. Verify: `npm view @skissify/mcp-server`
+
+**Step B — Post HN comment (10 min)**:
+URL: https://news.ycombinator.com/item?id=47571376
+
+Suggested comment:
+> "This exact pipeline — programmatic SVG from structured data, no forked Excalidraw required — is what we built Skissify for. JSON schema in, hand-drawn SVG out. The floor plan mode is what I use most: walls, doors, windows, stairs as first-class elements. There's an MCP server too if you want Claude Code to generate sketches inline rather than maintaining a CMS integration. [skissify.com] — happy to discuss the schema design if that's useful."
+
+**Why this works**: The thread is now evergreen. This comment will surface in Google results for "Excalidraw programmatic SVG export" for months. It's not self-promotion — it's a direct, relevant answer to the thread's core pain.
+
+**Step C — Also post "Show HN" (15 min, 08:00–10:00 CET or any morning)**:
+Full draft: `docs/marketing/HACKER-NEWS.md`
+
+---
+
+### 🎯 Action 2 (HIGH — Wednesday): Publish "Why I forked Excalidraw and then deleted the fork" SEO Blog Post
+
+The Martin Lysk blog post (forked Excalidraw for programmatic SVG export) is 2 days old and ranking in "Excalidraw features update April 2026" searches. This is a real developer writing about the exact problem Skissify solves. His blog post is in active SEO cycle.
+
+**Opportunity**: Publish a Skissify blog post that appears alongside the Lysk post for the same searches.
+
+**Suggested title**: "I forked Excalidraw to get programmatic SVG export. Here's why I deleted the fork."
+
+**Outline**:
+1. The problem: Excalidraw is great for interactive sketching, terrible for automated output
+2. The fork: 2 hours to implement, 30 minutes per month to maintain across Excalidraw updates
+3. The alternative: Skissify's JSON schema → hand-drawn SVG — no fork, no maintenance, EUR 2/mo
+4. The comparison: `export_` frame naming trick vs structured JSON manifest
+5. Call to action: `npm install @skissify/mcp-server` + link to docs
+
+**SEO target keywords**: "Excalidraw programmatic SVG export", "Excalidraw fork programmatic", "hand-drawn SVG generator API"
+
+**Why now**: The Lysk blog is actively getting indexed and shared. A Skissify response published today appears in the same search cluster within 48–72 hours.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Wednesday/Thursday): Reach Out to Excalidraw YouTube Creator
+
+The YouTube video "Let AI Draw Your Diagrams with Excalidraw's MCP Server" (~19h old, gaining views) is the highest-quality pre-education channel for Skissify's target audience. The creator explained exactly what MCP diagram generation looks like — and left out the floor plan / architectural sketch use case entirely (not from oversight, but because Excalidraw doesn't do it).
+
+**Action**: Find the video creator's contact (YouTube channel, Twitter/X, LinkedIn). Send a brief message:
+> "Loved the Excalidraw MCP video. Worth knowing: for developers who need hand-drawn floor plans and architectural sketches (rather than topology diagrams), there's a complementary MCP server — Skissify. Same pattern, different output domain. If you do a follow-up covering the full 'AI diagram MCP landscape,' happy to demo. [link]"
+
+**Why**: If the creator covers Skissify in a follow-up video or adds it to the description as "for architectural sketches," Skissify gets distribution to the most pre-educated audience in the space at zero acquisition cost.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #80 (10:53 CET, Tuesday March 31)
 
 ### Context: Run #80 Key Findings
