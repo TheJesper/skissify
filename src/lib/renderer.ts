@@ -58,7 +58,11 @@ function getWobbleOpts(sketch: SketchData, el: SketchElement, idx: number): Wobb
   // Apply render style overrides to wobble parameters
   let amplitude = sketch.amplitude;
   let humanness = sketch.humanness;
-  if (sketch.renderStyle === "technical") {
+  if (sketch.renderStyle === "napkin") {
+    // Boost wobble for a looser, rougher feel
+    amplitude = Math.max(amplitude, 2.5);
+    humanness = Math.max(humanness, 0.6);
+  } else if (sketch.renderStyle === "technical") {
     amplitude = Math.min(amplitude, 0.6);
     humanness = Math.min(humanness, 0.15);
   } else if (sketch.renderStyle === "blueprint") {
@@ -797,7 +801,22 @@ function renderElement(
         wall = el.wall ?? "h";
       }
 
-      if (wall === "h") {
+      if (sketch.renderStyle === "napkin") {
+        // Napkin mode: draw a simple X across the opening — quick sketch shorthand for a window
+        if (wall === "h") {
+          // Single outline line along the wall
+          HL(ctx, wx, wy + wd / 2, wx + ww, wy + wd / 2, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          // X mark: two diagonals
+          HL(ctx, wx, wy, wx + ww, wy + wd, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+          HL(ctx, wx, wy + wd, wx + ww, wy, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        } else {
+          // Single outline line along the wall (vertical)
+          HL(ctx, wx + wd / 2, wy, wx + wd / 2, wy + ww, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          // X mark: two diagonals
+          HL(ctx, wx, wy, wx + wd, wy + ww, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+          HL(ctx, wx + wd, wy, wx, wy + ww, { ...opts, seed: opts.seed! + 3 }, color, tool, paper, rng, h);
+        }
+      } else if (wall === "h") {
         // Two parallel horizontal lines (top/bottom)
         HL(ctx, wx, wy, wx + ww, wy, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
         HL(ctx, wx, wy + wd, wx + ww, wy + wd, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
@@ -824,7 +843,21 @@ function renderElement(
       const swing = el.swing || "right";
       const dwall = el.wall || "h";
 
-      if (dwall === "h") {
+      if (sketch.renderStyle === "napkin") {
+        // Napkin mode: just draw the door line — no arc, pure simplicity
+        if (dwall === "h") {
+          HL(ctx, el.x, el.y, el.x + dw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          // Add a simple diagonal hint for door opening direction
+          if (swing === "right") {
+            HL(ctx, el.x + dw, el.y, el.x + dw * 0.3, el.y + dw * 0.7, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+          } else {
+            HL(ctx, el.x, el.y, el.x + dw * 0.7, el.y + dw * 0.7, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+          }
+        } else {
+          HL(ctx, el.x, el.y, el.x, el.y + dw, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
+          HL(ctx, el.x, el.y + dw, el.x + dw * 0.7, el.y + dw * 0.3, { ...opts, seed: opts.seed! + 2 }, color, tool, paper, rng, h);
+        }
+      } else if (dwall === "h") {
         // Horizontal wall line
         HL(ctx, el.x, el.y, el.x + dw, el.y, { ...opts, seed: opts.seed! + 1 }, color, tool, paper, rng, h);
         const arcPts: Pt[] = [];

@@ -376,13 +376,15 @@ export const FONT_OPTIONS: { key: SkissifyFont; label: string; css: string }[] =
 
 /**
  * Render style presets that affect wobble parameters and drawing behavior.
+ * - napkin: loose napkin-sketch look — simple X for windows, no door arcs, boosted wobble
  * - sketch: default hand-drawn look (high amplitude + humanness)
  * - technical: crisp technical drawing (low amplitude + humanness, double-line rects)
  * - blueprint: blueprint mode (sets blue paper, very low wobble)
  */
-export type RenderStyle = "sketch" | "technical" | "blueprint";
+export type RenderStyle = "napkin" | "sketch" | "technical" | "blueprint";
 
 export const RENDER_STYLE_OPTIONS: { key: RenderStyle; label: string; icon: string; description: string }[] = [
+  { key: "napkin",    label: "Napkin",    icon: "🗒️", description: "Rough napkin sketch — simple X windows, no arcs" },
   { key: "sketch",    label: "Sketch",    icon: "✏️", description: "Hand-drawn, wobbly lines" },
   { key: "technical", label: "Technical", icon: "📐", description: "Crisp, precise lines" },
   { key: "blueprint", label: "Blueprint", icon: "🔵", description: "Blueprint style on blue paper" },

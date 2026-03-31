@@ -48,7 +48,10 @@ function getWobbleOpts(sketch: SketchData, el: SketchElement): WobbleOptions {
   // Apply render style overrides
   let amplitude = sketch.amplitude;
   let humanness = sketch.humanness;
-  if (sketch.renderStyle === "technical") {
+  if (sketch.renderStyle === "napkin") {
+    amplitude = Math.max(amplitude, 2.5);
+    humanness = Math.max(humanness, 0.6);
+  } else if (sketch.renderStyle === "technical") {
     amplitude = Math.min(amplitude, 0.6);
     humanness = Math.min(humanness, 0.15);
   } else if (sketch.renderStyle === "blueprint") {
@@ -445,21 +448,45 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       const ew = E(el);
       const wx1 = ew.x1 ?? ew.x ?? 0;
       const wy1 = ew.y1 ?? ew.y ?? 0;
-      const wx2 = ew.x2 ?? (wx1 + (ew.w ?? 60));
-      const wy2 = ew.y2 ?? wy1;
-      const pts = wobbleLine(wx1, wy1, wx2, wy2, opts);
-      parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
-      const wLen = Math.sqrt((wx2 - wx1) ** 2 + (wy2 - wy1) ** 2);
-      const wdx = (wx2 - wx1) / wLen;
-      const wdy = (wy2 - wy1) / wLen;
-      const wnx = -wdy * 6;
-      const wny = wdx * 6;
-      const tickCount = Math.max(2, Math.floor(wLen / 15));
-      for (let i = 0; i <= tickCount; i++) {
-        const t = i / tickCount;
-        const px = wx1 + wdx * wLen * t;
-        const py = wy1 + wdy * wLen * t;
-        parts.push(`<line x1="${px - wnx}" y1="${py - wny}" x2="${px + wnx}" y2="${py + wny}" ${sa}/>`);
+      const ww = ew.w ?? 60;
+      const wd = ew.d ?? 8;
+      const wwall = ew.wall ?? "h";
+      if (sketch.renderStyle === "napkin") {
+        // Napkin mode: simple X across the opening
+        if (wwall === "h") {
+          const wx2 = wx1 + ww;
+          const wy2 = wy1 + wd;
+          // center line
+          parts.push(`<path d="${pointsToPath(wobbleLine(wx1, wy1 + wd / 2, wx2, wy1 + wd / 2, { ...opts, seed: opts.seed! + 1 }))}" ${sa}/>`);
+          // X diagonals
+          parts.push(`<path d="${pointsToPath(wobbleLine(wx1, wy1, wx2, wy2, { ...opts, seed: opts.seed! + 2 }))}" ${sa}/>`);
+          parts.push(`<path d="${pointsToPath(wobbleLine(wx1, wy2, wx2, wy1, { ...opts, seed: opts.seed! + 3 }))}" ${sa}/>`);
+        } else {
+          const wx2 = wx1 + wd;
+          const wy2 = wy1 + ww;
+          // center line
+          parts.push(`<path d="${pointsToPath(wobbleLine(wx1 + wd / 2, wy1, wx1 + wd / 2, wy2, { ...opts, seed: opts.seed! + 1 }))}" ${sa}/>`);
+          // X diagonals
+          parts.push(`<path d="${pointsToPath(wobbleLine(wx1, wy1, wx2, wy2, { ...opts, seed: opts.seed! + 2 }))}" ${sa}/>`);
+          parts.push(`<path d="${pointsToPath(wobbleLine(wx2, wy1, wx1, wy2, { ...opts, seed: opts.seed! + 3 }))}" ${sa}/>`);
+        }
+      } else {
+        const wx2 = ew.x2 ?? (wx1 + ww);
+        const wy2 = ew.y2 ?? wy1;
+        const pts = wobbleLine(wx1, wy1, wx2, wy2, opts);
+        parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
+        const wLen = Math.sqrt((wx2 - wx1) ** 2 + (wy2 - wy1) ** 2);
+        const wdx = (wx2 - wx1) / wLen;
+        const wdy = (wy2 - wy1) / wLen;
+        const wnx = -wdy * 6;
+        const wny = wdx * 6;
+        const tickCount = Math.max(2, Math.floor(wLen / 15));
+        for (let i = 0; i <= tickCount; i++) {
+          const t = i / tickCount;
+          const px = wx1 + wdx * wLen * t;
+          const py = wy1 + wdy * wLen * t;
+          parts.push(`<line x1="${px - wnx}" y1="${py - wny}" x2="${px + wnx}" y2="${py + wny}" ${sa}/>`);
+        }
       }
       break;
     }
@@ -467,14 +494,27 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     case "door-symbol": {
       const doorW = el.w || 80;
       const swing = el.swing || "left";
-      const hingeX = swing === "left" ? el.x : el.x + doorW;
-      const startA = swing === "left" ? -90 : 180;
-      const endA = swing === "left" ? 0 : 270;
-      const doorEndX = swing === "left" ? el.x + doorW : el.x;
-      const linePts = wobbleLine(hingeX, el.y, doorEndX, el.y, opts);
-      parts.push(`<path d="${pointsToPath(linePts)}" ${sa}/>`);
-      const arcPts = wobbleArc(hingeX, el.y, doorW, startA, endA, opts);
-      parts.push(`<path d="${pointsToPath(arcPts)}" ${sa}/>`);
+      if (sketch.renderStyle === "napkin") {
+        // Napkin mode: just the door line + a simple diagonal hint — no swing arc
+        const linePts = wobbleLine(el.x, el.y, el.x + doorW, el.y, opts);
+        parts.push(`<path d="${pointsToPath(linePts)}" ${sa}/>`);
+        if (swing === "right") {
+          const diagPts = wobbleLine(el.x + doorW, el.y, el.x + doorW * 0.3, el.y + doorW * 0.7, { ...opts, seed: opts.seed! + 2 });
+          parts.push(`<path d="${pointsToPath(diagPts)}" ${sa}/>`);
+        } else {
+          const diagPts = wobbleLine(el.x, el.y, el.x + doorW * 0.7, el.y + doorW * 0.7, { ...opts, seed: opts.seed! + 2 });
+          parts.push(`<path d="${pointsToPath(diagPts)}" ${sa}/>`);
+        }
+      } else {
+        const hingeX = swing === "left" ? el.x : el.x + doorW;
+        const startA = swing === "left" ? -90 : 180;
+        const endA = swing === "left" ? 0 : 270;
+        const doorEndX = swing === "left" ? el.x + doorW : el.x;
+        const linePts = wobbleLine(hingeX, el.y, doorEndX, el.y, opts);
+        parts.push(`<path d="${pointsToPath(linePts)}" ${sa}/>`);
+        const arcPts = wobbleArc(hingeX, el.y, doorW, startA, endA, opts);
+        parts.push(`<path d="${pointsToPath(arcPts)}" ${sa}/>`);
+      }
       break;
     }
 

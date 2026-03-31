@@ -54,6 +54,12 @@ const manifest = {
       waves: { type: "number", min: 0, max: 1, default: 0.8, description: "Frequency of wobble waves. Higher = more wiggles per line." },
       humanness: { type: "number", min: 0, max: 1, default: 0.15, description: "Random variation in stroke endpoints. Simulates imprecise hand placement." },
     },
+    renderStyle: {
+      type: "string",
+      enum: ["napkin", "sketch", "technical", "blueprint"],
+      default: "sketch",
+      description: "Render style preset. 'napkin' = rough sketch with simple X windows and no door arcs, boosted wobble; 'sketch' = default hand-drawn; 'technical' = crisp low-wobble with double-line walls; 'blueprint' = sets blue paper + crisp lines.",
+    },
     width: { type: "number", default: 1000, description: "Canvas width in pixels" },
     height: { type: "number", default: 750, description: "Canvas height in pixels" },
     elementTypes: {
