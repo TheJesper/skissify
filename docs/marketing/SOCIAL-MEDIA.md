@@ -1390,3 +1390,317 @@ I'll post the link here.
 
 Thank you in advance. It means more than you know.
 ```
+
+
+---
+
+## 🆕 CYCLE 80 ADDITIONS (March 31, 20:30 CET — T-8h)
+
+### LinkedIn Carousel Copy (Native LinkedIn Document Post)
+
+**Slide 1 — Hook:**
+```
+Why your AI agent can't draw
+(and what to do about it)
+```
+
+**Slide 2 — The Problem:**
+```
+In 2026, your AI can:
+✓ Write code
+✓ Analyze data
+✓ Draft emails
+✓ Plan projects
+
+But it still can't draw a floor plan.
+
+Every diagramming tool requires a human at the mouse.
+```
+
+**Slide 3 — The Gap:**
+```
+MCP has 12,000+ servers.
+Tools for reading. Searching. Writing. Executing.
+
+Zero tools for drawing.
+
+AI agents are text-only creatures in a visual world.
+```
+
+**Slide 4 — The Solution:**
+```
+Skissify fills the gap.
+
+JSON → hand-drawn SVG.
+No UI. No mouse. No design skills.
+
+Your AI agent describes the sketch.
+Skissify renders it.
+Done.
+```
+
+**Slide 5 — How It Works:**
+```
+1. Install the MCP server (npx skissify-mcp)
+2. Ask Claude to "sketch a floor plan"
+3. Claude generates JSON + calls the MCP tool
+4. You get a shareable hand-drawn sketch URL
+
+Total time: under 60 seconds.
+```
+
+**Slide 6 — Real Use Cases:**
+```
+What people are doing with Skissify:
+
+→ AI agents generating floor plans for real estate
+→ Claude sketching architecture diagrams for PRs
+→ Product managers replacing Miro for wireframes
+→ Dungeon masters generating D&D maps
+
+Use cases we didn't plan. All possible with one API.
+```
+
+**Slide 7 — The Differentiator:**
+```
+Why hand-drawn?
+
+Rough sketches invite better feedback than polished mockups.
+
+A wobbly sketch says: "this is an idea."
+A Figma frame says: "don't touch it."
+
+Skissify makes the wobble intentional.
+```
+
+**Slide 8 — CTA:**
+```
+Launching TODAY on Product Hunt.
+
+Free tier. No auth. REST API + MCP server.
+
+→ skissify.com
+→ Search "Skissify" on Product Hunt
+
+If you build AI agents, this is for you.
+```
+
+**LinkedIn Post Copy (to accompany carousel):**
+```
+I built the first diagram tool where AI agents are first-class citizens.
+
+Not "AI-assisted." Not "AI-enhanced." AI-native.
+
+Your Claude, your Cursor agent, your LangChain pipeline — they can all draw now.
+
+JSON in. Hand-drawn sketch out. No UI required.
+
+Today it's on Product Hunt. Would mean a lot if you check it out.
+
+→ [link to PH]
+
+#BuildInPublic #AI #DeveloperTools #ProductLaunch #MCP #IndieHacker
+```
+
+---
+
+### Launch Morning Mega-Thread (Post at 09:00 CET, April 1)
+
+**Tweet 1 of 7:**
+```
+We're live. 🎉
+
+Skissify launched on Product Hunt today — the diagram API where AI agents can draw.
+
+→ [Product Hunt link]
+
+It's April 1st. I know. It's real. Thread 🧵
+```
+
+**Tweet 2 of 7:**
+```
+The problem I was trying to solve:
+
+I kept building AI agents that needed to *show* something visual.
+
+Every diagram tool required a human at the controls.
+Figma. Miro. Excalidraw. Draw.io.
+
+All of them: designed for human hands.
+
+I wanted one designed for AI.
+```
+
+**Tweet 3 of 7:**
+```
+So I built the REST API version.
+
+POST JSON → get back hand-drawn SVG.
+<200ms. No auth. Free tier.
+
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":80,"label":"Your idea"}]}'
+
+→ Returns a sketch.
+```
+
+**Tweet 4 of 7:**
+```
+The MCP server is the real magic.
+
+npx skissify-mcp
+
+Add it to Claude Desktop. Then just ask:
+
+"Sketch my apartment floor plan."
+"Draw an architecture diagram for my API."
+"Generate a wireframe for this feature."
+
+Claude draws it. Hand-drawn. Wobbly. Real.
+```
+
+**Tweet 5 of 7:**
+```
+The wobble is intentional.
+
+Hand-drawn sketches are psychologically different from polished designs.
+
+A wobbly sketch says: "this is an idea, push on it."
+A Figma frame says: "someone worked on this, tread carefully."
+
+Better feedback. Faster iteration. On purpose.
+```
+
+**Tweet 6 of 7:**
+```
+What surprised me:
+
+I built this for AI developers.
+
+Turns out: architects use it for floor plans, product managers use it for wireframes, and D&D players use it for dungeon maps.
+
+I did not see that last one coming.
+```
+
+**Tweet 7 of 7:**
+```
+It's free to try. No account needed.
+
+→ skissify.com/api/render (API, no auth)
+→ skissify.com (browser editor)
+→ npx skissify-mcp (for Claude)
+→ [Product Hunt link] (if you want to support the launch)
+
+Thanks for reading. Go build something weird. ✏️
+```
+
+---
+
+### ProductHunt Launch Day Comment Templates
+
+**First comment on your own PH post (pin this):**
+```
+Hey everyone! 👋 Maker here.
+
+Quick context: Skissify was born from a frustration — I kept building AI agents that needed to output something *visual*, and every diagramming tool was designed for humans, not agents.
+
+The free /api/render endpoint is the best place to start. No account, no auth, just POST JSON and get back a hand-drawn SVG.
+
+The MCP server (npx skissify-mcp) is the experience I'm most proud of. If you have Claude Desktop, it's 30 seconds to "Claude can now draw."
+
+Happy to answer any questions. Launch day is chaotic but I'm here. 🙏
+```
+
+**When someone asks about pricing:**
+```
+Great question! Free tier has unlimited renders via /api/render — no auth, no rate limits.
+
+Paid plans (coming soon) will add: private renders, team sharing, custom styles, and higher-priority API.
+
+For today: everything on skissify.com is free. Try it without signing up.
+```
+
+**When someone asks "how is this different from Excalidraw?":**
+```
+Core difference: Excalidraw is for humans; Skissify is for both humans AND AI agents.
+
+Excalidraw is a great real-time collaborative UI. You use it with a mouse.
+Skissify is a REST API + MCP server. Your AI agent drives it programmatically.
+
+Different jobs. Many people use both — Excalidraw for live collaboration, Skissify when they want Claude to generate the initial sketch.
+```
+
+**When someone asks "why hand-drawn style?":**
+```
+Research shows rough sketches get better feedback than polished designs.
+
+A wobbly sketch signals: "this is still an idea — challenge it."
+A polished mockup signals: "this is done — approve it."
+
+The hand-drawn aesthetic isn't a shortcut. It's a feature that improves collaboration by keeping designs in "conversation mode" longer.
+```
+
+---
+
+### Indie Hackers Launch Day Comment Responses
+
+**When someone asks about tech stack:**
+```
+Next.js 15 (App Router), TypeScript, Prisma + SQLite for dev (Postgres in prod), 
+custom SVG rendering engine in pure TS. No canvas, no WebGL — everything is 
+generated as vector paths. The wobble comes from a Perlin noise algorithm.
+
+MCP server is a separate package. Both on npm.
+```
+
+**When someone asks about revenue:**
+```
+Day 1 — revenue is zero. The plan: free API to get adoption, 
+paid plans for private/team features, eventually a self-hosted option for enterprise.
+
+The goal for this week is signups and usage — not revenue.
+```
+
+---
+
+### New Hashtag Cluster: 2026 Edition
+
+**For AI/agent audience (Twitter/X, Bluesky):**
+```
+#MCPtools #AIagents #ClaudeAI #VibeDrawing #JSONtoSVG #Skissify
+```
+
+**For developer audience:**
+```
+#BuildInPublic #IndieHacker #OpenAPI #DevTools #APIFirst #Skissify
+```
+
+**For design/product audience:**
+```
+#ProductDesign #Wireframing #SketchFirst #UXDesign #ProductLaunch #Skissify
+```
+
+**For architecture/spatial audience:**
+```
+#FloorPlan #Architecture #AIDesign #SpaceDesign #Skissify
+```
+
+**Owned low-competition cluster (claim all on launch day):**
+```
+#Skissify #VibeDrawing #SketchFirst #JSONtoSVG #AIArtDirector #FlatJSON #VibeCodeing
+```
+
+---
+
+### Dev.to / Hashnode Launch Day Post Title Options (pick one)
+
+1. "I built the diagram API for AI agents — here's how it works"
+2. "npx skissify-mcp — how I made Claude able to draw"
+3. "JSON → hand-drawn sketch: the API I built because nobody else did"
+4. "Show HN: Skissify — POST JSON, get hand-drawn SVG, let Claude draw"
+5. "The wobble is intentional: why rough sketches beat polished mockups"
+
+**Best one for Dev.to:** Option 2 (MCP framing = high dev engagement)
+**Best one for Hashnode:** Option 3 (problem-solution framing = high SEO)
+**Best one for Show HN:** Option 4 (classic Show HN format)
