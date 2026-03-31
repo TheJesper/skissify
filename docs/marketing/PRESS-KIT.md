@@ -1,8 +1,150 @@
 # Skissify Press Kit
 
-**Last Updated:** March 31, 2026 - 03:48 CET (Cycle 72)
-**Version:** 16.0
+**Last Updated:** March 31, 2026 - 04:58 CET (Cycle 73)
+**Version:** 17.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 73 Updates (March 31, 2026 - 04:58 CET) — T-4H PRODUCT HUNT
+
+### ONE-LINERS v286-v295 (Cycle 73 — Final Pre-Launch Batch)
+
+**v286 (THE APRIL FOOLS QUALIFIER — hardest working line):**
+"Not a joke. But launching on April 1 means everyone who tries it made a choice."
+
+**v287 (THE SKEPTIC FUNNEL):**
+"The people who stop to confirm it's real? Those are the ones we built it for."
+
+**v288 (FOR DIRECTORIES / COLD SUBMISSIONS):**
+"Skissify: text in, hand-drawn sketch URL out. MCP native. Used by AI developers, architects, UX designers, and D&D dungeon masters."
+
+**v289 (THE DEVELOPER ONE-LINE PITCH):**
+"`POST /sketch` → get a URL → embed in agent memory. That's the whole API."
+
+**v290 (FOR JOURNALISTS / MEDIA):**
+"AI agents can write, code, analyze, search. Skissify is the first tool that lets them draw. The sketch layer is a new category."
+
+**v291 (FOR PRODUCT DESIGNERS):**
+"Rough by design. Hand-drawn means draft. Draft means honest feedback."
+
+**v292 (THE CATEGORY CLAIM — strong positioning):**
+"Skissify created the sketch layer. Every AI stack now has text, code, data, image, and sketch."
+
+**v293 (THE HUMAN MODE PITCH):**
+"No code, no account: skissify.com/human. Describe any space, get a sketch in 2 seconds. Interior designers, architects, anyone who thinks visually."
+
+**v294 (THE ACCURACY ONE-LINER):**
+"94% LLM first-try accuracy. 33% better than nested JSON. The data model is the product decision."
+
+**v295 (THE FIVE-WORD PRESS v3):**
+"AI agents can now draw."
+
+---
+
+### MEDIA ANGLES v86-v90 (Cycle 73 — Launch Day Hooks)
+
+**v86: The "AI Can Now Draw" Headline**
+> Category: Broad tech media
+> Hook: "AI tools can write, code, analyze, and generate images — but none could draw spatial diagrams until Skissify. Today that changes."
+> Why it works: Simple, declarative, true. Works for non-technical media.
+> Best for: TechCrunch pitch, Product Hunt featured story, general tech newsletters
+
+**v87: The Unexpected Audiences Story**
+> Category: Human interest / product discovery
+> Hook: "Built for AI developers. Architects, D&D dungeon masters, and interior designers showed up anyway."
+> Why it works: Surprise + diverse users = broader appeal story
+> Best for: Twitter/X threads, IndieHackers post-launch retrospective, podcast pitches
+
+**v88: The April 1 Meta Story**
+> Category: Contrarian / business insight
+> Hook: "This founder launched on April Fools Day intentionally. The skeptic funnel is the best funnel."
+> Why it works: Contrarian take on conventional launch wisdom. Shareable as business insight even without Skissify context.
+> Best for: Medium, Substack newsletters, indie hacker communities
+
+**v89: The Schema Design Revelation**
+> Category: Technical insight / developer interest
+> Hook: "One data model change improved accuracy from 61% to 94%. The most important decision wasn't in the renderer — it was in the JSON."
+> Why it works: Concrete numbers, counterintuitive lesson, generalizable principle
+> Best for: Dev.to, Hacker News, engineering blog syndication
+
+**v90: The MCP Category Story**
+> Category: Developer tools / AI infrastructure
+> Hook: "12,000+ MCP servers exist. Zero could draw. Here's the one that can."
+> Why it works: Contrast + specific number + gap filled
+> Best for: Anthropic Discord, r/ClaudeAI, MCP community channels
+
+---
+
+### LAUNCH DAY MEDIA PITCH (Email Template for Journalists)
+
+**Subject:** April 1 Real Launch: Skissify gives AI agents the ability to draw
+
+**Body:**
+> Hi [Name],
+>
+> Launching today on Product Hunt (April 1 — not a joke, deliberately):
+>
+> **Skissify** is the first sketch layer for AI agents. Text in → hand-drawn sketch URL out → MCP native.
+>
+> AI tools can write, code, analyze, and generate photorealistic images. None could generate structured spatial diagrams — floor plans, wireframes, org charts — that other agents could reference and share. Skissify is that layer.
+>
+> Key facts:
+> - MCP native: one tool call, persistent URL
+> - 94% LLM first-try accuracy (vs 61% with nested JSON — a schema design insight worth writing about on its own)
+> - Human mode: skissify.com/human, no account needed
+> - Unexpected audiences: architects, interior designers, D&D players showed up alongside the AI developers it was built for
+>
+> I'm building this publicly and can share real launch metrics by end of day.
+>
+> Demo: skissify.com
+> Product Hunt: [link]
+>
+> Happy to do a quick call or provide anything else you need.
+>
+> Jesper
+
+---
+
+### DIRECTORY SUBMISSIONS — NEW LIST (Cycle 73)
+
+| Directory | Status | Category to Use |
+|-----------|--------|----------------|
+| There's An AI For That (theresanaiforthat.com) | ⬜ TODO | Design + Developer Tools |
+| Futurepedia (futurepedia.io) | ⬜ TODO | AI Developer Tools |
+| Toolify.ai | ⬜ TODO | AI Tools / Productivity |
+| AI Tools Directory (aitoolsdirectory.com) | ⬜ TODO | AI Agent Tools |
+| Uneed (uneed.be) | ⬜ TODO | Developer + Design |
+| Peerlist (peerlist.io) | ⬜ TODO | Developer Tools |
+| Rankinpublic | ⬜ TODO | Build In Public |
+
+---
+
+### SCREENSHOT CHECKLIST — Cycle 73 (Final Launch Morning)
+
+**P0 BLOCKERS (must confirm before 09:01):**
+- [ ] Human Mode side-by-side: text input → sketch output
+- [ ] PH Banner 1270×760: Claude Desktop MCP floor plan
+- [ ] Mobile view of human mode (at least one mobile screenshot)
+
+**P1 HIGH (get if possible):**
+- [ ] API call + sketch URL result
+- [ ] Multi-agent workflow: 3 agents → sketch URL as shared memory
+- [ ] Sketch comparison: rough vs Figma equivalent (the bias test visual)
+- [ ] D&D dungeon map (unexpected audience hook — very shareable)
+- [ ] Real architecture floor plan generated from prompt
+
+**P2 NICE TO HAVE:**
+- [ ] Claude Desktop MCP panel with skissify_sketch tool visible
+- [ ] The flat JSON schema (visualize the data model insight)
+- [ ] Sketch URL embedded in agent memory/notes view
+
+---
+
+*Cycle 73 — March 31, 2026 04:58 CET*
+*Added: One-liners v286-v295, Media Angles v86-v90, Launch Day Media Pitch email template, Directory submissions list, Screenshot Checklist v18 (mobile + D&D dungeon as P1)*
+
+---
 
 ---
 

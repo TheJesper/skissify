@@ -1,3 +1,105 @@
+## Marketing Improvements (Cycle 73 - March 31, 2026 - 04:58 CET)
+
+### STATUS: 🔴 T-4H TO PRODUCT HUNT LAUNCH | 163→165 BLOG POSTS | CYCLE 73 — FINAL DISTRIBUTION EXPANSION + REAL-TIME PLAYBOOK
+
+**PRODUCT HUNT LAUNCHES IN ~4H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 73:**
+
+- **2 new blog posts (#164-165) — WRITTEN AND LIVE IN docs/marketing/blog/:**
+  - `product-hunt-live-april-1-launch-log.md` — Live launch log template. Publish at 09:01 CET, update with real numbers at 09:30, 10:00, 12:00, 18:00. Best for: Blog, Medium, IndieHackers. Fill in real metrics as day progresses. Shows authentic build-in-public engagement.
+  - `skissify-ph-comment-response-playbook.md` — Internal playbook with pre-written PH comment responses for every comment type: April Fools skeptics, Excalidraw comparison, hand-drawn aesthetic question, MCP integration questions, unexpected users. Also includes Discord message templates and DM outreach script. NOT for publication — use live on launch day.
+
+- **SOCIAL-MEDIA.md Cycle 73**: Tweets 521-528 (April 1 opening hook, schema fact drop, DM engagement prompt, unexpected users authentic storytelling, sketch layer category plant, live traction fill-in, thank-you, what's next tease), Threads x3 launch posts, Bluesky x2 launch posts, LinkedIn DM outreach script, 8 new AI directory submissions with template, Discord community list with message template.
+
+- **PRESS-KIT.md v17.0**: One-liners v286-v295 (April Fools qualifier, skeptic funnel, directory pitch, developer one-liner, journalist pitch, product design angle, category claim, human mode, accuracy stat, 5-word v3), Media Angles v86-v90 (AI can draw headline, unexpected audiences, April 1 meta, schema insight, MCP category), Launch Day Media Pitch email template, Directory submissions tracking list, Screenshot Checklist v18 (mobile + D&D dungeon).
+
+- **NEW IDEAS (Cycle 73):**
+  - **Uneed + Peerlist + Betalist submission TODAY** — These run alongside PH and deliver incremental traffic. Uneed is growing fast in the developer tools niche. Submit same day as PH for cross-amplification.
+  - **AI directories (There's An AI For That, Futurepedia, Toolify)** — Long-tail SEO + discovery. Submit today, benefit for months.
+  - **Threads + Bluesky as real platforms** — Both now have meaningful tech/AI communities. Posts don't need to be unique from Twitter; repurpose with slight edits.
+  - **PH Comment Response Playbook as internal tool** — Fastest way to maintain authentic engagement velocity during the first hours. Pre-written but personalized-feeling.
+  - **D&D dungeon map as viral screenshot** — The unexpected audience story is high-shareability. A dungeon map screenshot in the PH gallery would drive comments and shares from a non-AI audience.
+  - **LinkedIn DM outreach** — Warm connections in design/architecture/AI. 10-20 targeted DMs from founder > 1000 cold impressions. Do before 09:00.
+
+### NEW BLOG POSTS (Cycle 73)
+
+| # | Post | File | Purpose | When |
+|---|------|------|---------|------|
+| 164 | **Product Hunt Live — April 1 Launch Log** | `product-hunt-live-april-1-launch-log.md` | Live-updating launch day coverage | Publish 09:01 CET, update all day |
+| 165 | **PH Comment Response Playbook** | `skissify-ph-comment-response-playbook.md` | Internal launch-day tool | Not published — use live |
+
+### UPDATED APRIL 1 LAUNCH DAY SCHEDULE (Cycle 73 — Final Version)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 04:58 (now) | Tweet 513 — 5h founder pulse | SOCIAL-MEDIA Cycle 72 |
+| 05:00 | LinkedIn DM outreach (10-20 warm contacts) | PRESS-KIT Cycle 73 |
+| 05:30 | Submit to Uneed + Peerlist | SOCIAL-MEDIA Cycle 73 |
+| 06:00 | Tweet 501 — Cursor/coding agents hook | SOCIAL-MEDIA Cycle 71 |
+| 06:30 | Tweet 502 — The sketch phase | SOCIAL-MEDIA Cycle 71 |
+| 07:00 | Tweet 511 — UI designers/PMs | SOCIAL-MEDIA Cycle 72 |
+| 07:30 | Tweet 512 — accuracy data | SOCIAL-MEDIA Cycle 72 |
+| 08:45 | Tweet 521 — April 1 opening hook (10 min warning) | SOCIAL-MEDIA Cycle 73 |
+| 08:50 | Tweet 503 — April 1 filter theory | SOCIAL-MEDIA Cycle 71 |
+| 09:01 | **🚀 PRODUCT HUNT GOES LIVE** | — |
+| 09:01 | Tweet 504 — PH LIVE (PIN THIS) | SOCIAL-MEDIA Cycle 71 |
+| 09:01 | Post Blog #164 (live launch log) | blog/ Cycle 73 |
+| 09:01 | Post first PH comment (from playbook) | blog/ Cycle 73 |
+| 09:05 | Bluesky Post 1 | SOCIAL-MEDIA Cycle 73 |
+| 09:30 | Show HN submission | SOCIAL-MEDIA Cycle 69 |
+| 09:30 | Blog #162 (sketch before code) | blog/ Cycle 72 |
+| 09:30 | Tweet 505 — coding agent workflow | SOCIAL-MEDIA Cycle 71 |
+| 09:30 | LinkedIn launch post | SOCIAL-MEDIA Cycle 72 |
+| 09:30 | Anthropic Discord drop | SOCIAL-MEDIA Cycle 73 |
+| 10:00 | Tweet 522 — schema fact drop | SOCIAL-MEDIA Cycle 73 |
+| 10:00 | Tweet 506 — MCP + code demo | SOCIAL-MEDIA Cycle 71 |
+| 10:00 | r/vibecoding post | SOCIAL-MEDIA Cycle 72 |
+| 10:00 | Bluesky Post 2 | SOCIAL-MEDIA Cycle 73 |
+| 10:30 | r/cursor post | SOCIAL-MEDIA Cycle 72 |
+| 10:30 | LangChain Discord | SOCIAL-MEDIA Cycle 73 |
+| 11:00 | Tweet 523 — DM engagement prompt | SOCIAL-MEDIA Cycle 73 |
+| 11:00 | Tweet 507 — April Fools meta | SOCIAL-MEDIA Cycle 71 |
+| 11:00 | Threads Post 1 (launch) | SOCIAL-MEDIA Cycle 73 |
+| 11:30 | Tweet 514 — A2A multi-agent | SOCIAL-MEDIA Cycle 72 |
+| 12:00 | Tweet 515 + 524 — unexpected users | SOCIAL-MEDIA Cycle 72+73 |
+| 12:00 | Tweet 508 — Cursor-specific | SOCIAL-MEDIA Cycle 71 |
+| 12:00 | Threads Post 2 (roughness principle) | SOCIAL-MEDIA Cycle 73 |
+| 12:00 | Bluesky: midday update | — |
+| 13:00 | Tweet 516 — live metrics (fill real numbers) | SOCIAL-MEDIA Cycle 72 |
+| 13:00 | Threads Post 3 (real numbers) | SOCIAL-MEDIA Cycle 73 |
+| 14:00 | Tweet 509 — live metrics (fill real numbers) | SOCIAL-MEDIA Cycle 71 |
+| 15:00 | Tweet 525 — sketch layer category | SOCIAL-MEDIA Cycle 73 |
+| 15:30 | Tweet 526 — live traction (fill numbers) | SOCIAL-MEDIA Cycle 73 |
+| 17:00 | Submit to There's An AI For That + Futurepedia | SOCIAL-MEDIA Cycle 73 |
+| 20:00 | Tweet 527 — thank-you | SOCIAL-MEDIA Cycle 73 |
+| 20:30 | Tweet 520 — wind-down | SOCIAL-MEDIA Cycle 72 |
+| 21:00 | Tweet 528 — what's next tease | SOCIAL-MEDIA Cycle 73 |
+| **APRIL 2** | | |
+| 09:00 | Blog #163 (April 1 converts better — with REAL numbers) | blog/ Cycle 72 |
+| 09:00 | Submit Betalist + remaining directories | — |
+
+### CRITICAL OUTSTANDING ITEMS — T-4H CHECKLIST
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🚨 BLOCKER | Screenshot P0-A: Human Mode side-by-side | Before 07:00 | MUST CONFIRM |
+| 🚨 BLOCKER | Screenshot P0-B: PH Banner 1270×760 | Before 07:00 | MUST CONFIRM |
+| 🚨 BLOCKER | D&D dungeon screenshot in PH gallery | Before 08:00 | HIGH VALUE |
+| 🔴 CRITICAL | LinkedIn DM outreach (10-20 contacts) | Before 09:00 | DO NOW |
+| 🔴 CRITICAL | Uneed + Peerlist submissions | Before 09:00 | DO NOW |
+| 🔴 CRITICAL | Tweet 521 (April 1 hook, 10-min warning) | 08:50 CET | READY Cycle 73 |
+| 🔴 CRITICAL | PH First Comment (from playbook) | 09:01 CET | READY Cycle 73 |
+| 🟡 HIGH | Anthropic Discord drop | 09:30 CET | READY Cycle 73 |
+| 🟡 HIGH | AI directory submissions (5 platforms) | Before 17:00 | Template ready |
+| 🟡 HIGH | Bluesky Posts 1+2 | 09:05 + 10:00 | READY Cycle 73 |
+| 🟡 HIGH | Threads Posts 1+2+3 | 11:00+12:00+13:00 | READY Cycle 73 |
+
+*Last Updated: March 31, 2026 (Cycle 73 — 04:58 CET)*
+*Added: Blog posts #164-165 (live launch log + PH comment playbook), Tweets 521-528, Threads x3, Bluesky x2, LinkedIn DM script, 8 AI directory submissions, Discord community list, PRESS-KIT v17.0 (one-liners v286-295, media angles v86-90, journalist pitch email, screenshot checklist v18).*
+
+---
+
 ## Marketing Improvements (Cycle 72 - March 31, 2026 - 03:48 CET)
 
 ### STATUS: 🔴 T-5.2H TO PRODUCT HUNT LAUNCH | 161→164 BLOG POSTS | CYCLE 72 — PRE-DAWN FINAL POLISH
