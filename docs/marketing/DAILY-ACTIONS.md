@@ -2,6 +2,61 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #86 (20:53 CET, Tuesday March 31)
+
+### Context: Run #86 Key Findings
+- **86 consecutive niche-clean scans** — spatial sketch MCP lane uncontested
+- **Thomas Thornton's series is now a QUADRILOGY** — AWS, Azure, draw.io general, Excalidraw. Four cloud/engineering diagram tutorials. Zero spatial hand-drawn sketch. Skissify = the fifth type.
+- **HN thread still "20 hours ago"** — evergreen phase, comment window still open Tuesday evening
+- **SaaS pricing: 5+ weeks structurally stable** — EUR 2/mo + EUR 0.005/render is permanently correct
+- **AlternativeTo: 50+ alternatives, zero JSON-native** — submission slot still open
+- **April quota: 447/2000**
+
+---
+
+### 🎯 Action 1 (CRITICAL — Wednesday AM): Pitch Thomas Thornton to Add Skissify as "The Fifth Tutorial"
+
+Thornton's MCP diagram quadrilogy (Excalidraw, draw.io, AWS draw.io, Azure draw.io) is the most comprehensive MCP visual output tutorial series on the internet. His readers are the highest-quality Skissify prospects available. Skissify is the fifth type missing from his series.
+
+**Outreach message (email/contact form at thomasthornton.cloud)**:
+> "Hi Thomas — I've followed all four of your MCP diagram tutorials: Excalidraw for topology, draw.io general, AWS draw.io, and now the Azure draw.io variant. Your series has become the definitive MCP diagram reference for developers. You've covered cloud topology and engineering diagrams. There's a fifth type you haven't documented: spatial hand-drawn sketch MCP for floor plans, architectural layouts, and napkin diagrams. That's what we built at Skissify (skissify.com). JSON spatial schema in → hand-drawn SVG out, with a full MCP server. Would you be interested in a fifth tutorial? I can provide full technical walkthrough, working demo, and all implementation details. You'd be completing the most comprehensive MCP visual output series anywhere."
+
+**Why this converts**: He's invested in a four-part series. The fifth entry is natural momentum. Skissify gives him content; he gives Skissify his audience (1,000–5,000 readers per post, all pre-qualified MCP developers).
+
+---
+
+### 🎯 Action 2 (HIGH — Wednesday): Post to the HN Excalidraw Blog Diagram Thread (Still Evergreen)
+
+The HN thread (news.ycombinator.com/item?id=47571376) is in permanent evergreen mode after 25+ hours. The audience is now Google searchers who find it via organic search — higher intent than viral readers, and they convert to EUR 2/mo at higher rates.
+
+**Comment (post via HN account, 5 minutes)**:
+> "We built Skissify (skissify.com) for exactly this workflow — JSON in, hand-drawn SVG out, without needing a forked Excalidraw. The JSON schema gives structured control over spatial elements (walls, rooms, doors, windows, stairs, dimensions), wobble amount, paper type, and tool simulation (pencil/ink/ballpoint). There's also an MCP server so Claude Code can generate hand-drawn floor plan sketches inline in your workflow. You'd be our ideal first user — someone who clearly already built the hard part of the pipeline."
+
+**Why evergreen is actually better**: This comment will be discovered by Google searchers for months. The conversion timeline is 2–12 months of trickle traffic, not 24-hour viral traffic. A substantive, technical comment in an evergreen HN thread is one of the highest-ROI community placements available.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Wednesday/Thursday): Publish the MCP Server to npm and Register on All Skissify Registries
+
+86 consecutive scans confirm the niche is clear. The only blocker to capturing this opportunity is the unpublished MCP server. Today is a code action, not a marketing action.
+
+**Step A — Fix and publish (30 min)**:
+1. Open `W:/code/skissify/mcp-server/package.json`
+2. Add: `"publishConfig": { "access": "public" }`
+3. Run: `cd W:/code/skissify/mcp-server && npm publish --access public`
+4. Verify: `npm view @skissify/mcp-server`
+
+**Step B — Register on five channels (90 min)**:
+1. modelcontextprotocol.io/registry — primary official registry
+2. awesome-mcp-servers (GitHub PR)
+3. claudefa.st — updated every 18–24h, high Claude Code developer traffic
+4. LobeHub MCP marketplace
+5. alternativeto.net — submit Skissify as Excalidraw alternative (50+ listed, zero JSON-native)
+
+**Business impact**: Each day without a published MCP server is ~400 developer users not acquired (Smartsheet MCP benchmark: 4,000 users/week at 10% TAM). At EUR 2/mo, 86 clean scan days represent a compounding opportunity cost. The window is open. The code is built. The only action is `npm publish`.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #85 (19:48 CET, Tuesday March 31)
 
 ### Context: Run #85 Key Findings

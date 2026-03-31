@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: March 31, 2026*
+*Last updated: April 1, 2026 — Launch Day Edition*
 
 ---
 
