@@ -23,6 +23,7 @@ import {
   Point,
   mkRng,
 } from "./wobble";
+import { svgWatermarkSnippet } from "./watermark";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const E = (el: SketchElement): any => el as any;
@@ -815,7 +816,13 @@ function renderBlueprintOverlay(W: number, H: number, meta?: BlueprintMetadata):
 }
 
 /** Render a SketchData to a complete SVG string. */
-export function renderSketchToSVG(sketch: SketchData): string {
+/**
+ * Render a sketch to SVG string.
+ *
+ * @param sketch    - The sketch data to render
+ * @param watermark - When true, stamp a subtle "skissify.com" watermark in the bottom-right corner (free tier)
+ */
+export function renderSketchToSVG(sketch: SketchData, watermark = false): string {
   const w = sketch.width || 1000;
   const h = sketch.height || 750;
   const bgColor = PAPER_COLORS[sketch.paper] || PAPER_COLORS.cream;
@@ -876,11 +883,16 @@ export function renderSketchToSVG(sketch: SketchData): string {
     ? renderBlueprintOverlay(w, h, sketch.metadata)
     : "";
 
+  const watermarkSvg = watermark
+    ? svgWatermarkSnippet(w, h, sketch.paper !== "blueprint")
+    : "";
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
 ${fontDefs}  <rect width="${w}" height="${h}" fill="${bgColor}"/>
 ${renderGrid(w, h, sketch.paper)}
 ${elementsGroup}
 ${blueprintOverlay}
+${watermarkSvg}
 </svg>`;
 }

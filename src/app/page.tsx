@@ -14,6 +14,9 @@ import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
 import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
+import { useSession } from "next-auth/react";
+import { isPro } from "@/lib/plan-check";
+import { stampCanvasWatermark } from "@/lib/watermark";
 
 /** Swipe-down-to-close bottom sheet for mobile controls */
 function MobileBottomSheet({

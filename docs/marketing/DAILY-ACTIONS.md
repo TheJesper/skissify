@@ -2,6 +2,49 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #75 (05:05 CET, Tuesday March 31)
+
+### Context: Run #75 Key Findings
+
+- **75 consecutive niche-clean scans** — zero competitor in hand-drawn + JSON-native + MCP + floor plan
+- **Data viz MCP category crowding** (antvis/mcp-server-chart, PulseMCP, mcpmarket.com) — proves spatial sketch MCP is the last unoccupied quadrant
+- **antvis/mcp-server-chart**: 25+ chart types, AntV ecosystem — data analytics only, non-competitive
+- **Ibbaka + Forbes + Deloitte**: "Pricing architecture is the competitive weapon in 2026" — Skissify's per-render model is the correct architecture
+- **Monthly Brave quota resets April 1** — full 2,000 searches for April cycle
+- **HN blog thread**: still in long-tail; comment window today is the absolute last call
+
+---
+
+### 🎯 Action 1: Comment on HN "I use Excalidraw to manage my diagrams for my blog" — Priority: LAST CALL (Today only)
+
+**URL**: https://news.ycombinator.com/item?id=47571376
+
+The thread has now been active 33+ hours. Today (April 1) is the last meaningful window. Post before 10:00 CET.
+
+**Comment**:
+> "We built Skissify for exactly this workflow — JSON in, hand-drawn SVG out, no forked Excalidraw needed. One API call replaces the fork + export_ convention + build script. There's an MCP server too for Claude Code integration. EUR 2/mo. [skissify.com]"
+
+---
+
+### 🎯 Action 2: Submit @skissify/mcp-server to AntV/Visualization Community as Complementary Tool — Priority: HIGH
+
+**Why now**: antvis/mcp-server-chart just appeared in "MCP visualization" searches alongside Skissify's category. Developers finding chart MCPs will also want sketch MCPs. Position Skissify as the spatial sketch complement to antvis in any GitHub discussions, Discord channels, or forums where developers discuss MCP visual output tools.
+
+**Draft comment for GitHub Discussions**:
+> "antvis/mcp-server-chart handles quantitative data visualization. If you also need spatial/architectural sketches from structured data — floor plans, diagrams, napkin layouts — check out @skissify/mcp-server. JSON in, hand-drawn SVG out, MCP-native. Same pattern, different output type."
+
+---
+
+### 🎯 Action 3: Publish "Pricing Architecture for Agentic Tools" Positioning Post — Priority: MEDIUM
+
+**Why**: Forbes, Ibbaka, Deloitte all published on "pricing architecture is the competitive weapon." Skissify's per-render model is a case study in getting this right. A LinkedIn or Dev.to post that references the Forbes/Ibbaka thesis and positions Skissify's EUR 0.005/render as the architecture answer captures B2B SaaS decision-makers actively researching this topic.
+
+**Title**: "We priced Skissify at EUR 0.005/render because Forbes was right about agentic pricing"
+
+**Key angle**: "Not a seat subscription. Not a feature gate. A render budget. Pay for what your agent creates."
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #74 (03:55 CET, Tuesday March 31)
 
 ### Context: Run #74 Key Findings

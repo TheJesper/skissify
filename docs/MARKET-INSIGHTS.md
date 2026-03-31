@@ -2,6 +2,49 @@
 
 ---
 
+## Entry: March 31, 2026 — 05:05 CET | Automated Strategy Run #75
+
+### Theme: Pricing Architecture Is the Competitive Weapon — What EUR 2/mo Actually Signals
+
+#### Insight 1: The "Data Viz MCP" Category Is Crowding — Skissify's "Spatial Sketch MCP" Is the Last Unoccupied Quadrant
+
+Run #75 detected antvis/mcp-server-chart (25+ chart types, AntV ecosystem) alongside the already-documented PulseMCP Data Viz (matplotlib charts) and mcpmarket.com visualization server. Three data visualization MCP tools are now competing in the same analytical chart lane.
+
+**What this means**: The MCP visual output ecosystem has bifurcated:
+- **Analytical charts** (antvis, PulseMCP, mcpmarket): crowding fast, commodity-izing
+- **Spatial sketches** (Skissify): still the only entry, 75 scans confirm
+
+The crowding of data viz MCPs validates the market thesis (AI agents want visual output tools) while simultaneously proving Skissify's differentiation is structural. As developers search for "visualization MCP" and find 3+ chart tools but zero sketch tools, the gap Skissify fills becomes more visible, not less.
+
+**EUR 2/mo WTP from this**: A developer who has already installed antvis/mcp-server-chart for charts will add Skissify for spatial sketches without hesitation. They've already integrated visual output MCP tools into their pipeline. EUR 2/mo is a rounding error on the marginal utility of adding a second visual output type.
+
+#### Insight 2: Ibbaka, Forbes, Deloitte Converge — "Pricing Architecture Is the Competitive Weapon"
+
+Three high-authority publications (all surfacing fresh in Run #75 searches) have published in Q4 2025 – Q1 2026 on the same thesis: how you price (architecture) matters more than what you charge (price points) for agentic AI tools.
+
+**Ibbaka (Dec 2025)**: "2026 is the year pricing architecture, not price points, becomes the competitive weapon in B2B SaaS and agentic AI."
+**Forbes (Feb 2026)**: "Agentic AI is breaking the SaaS pricing model" — per-execution vs per-seat as structural disruption.
+**Deloitte (Nov 2025)**: "Pricing variety and experimentation in 2026 and beyond."
+
+**Skissify's pricing architecture** (free+watermark / EUR 2/mo API Starter / EUR 5/mo Pro / EUR 12/user Team / Enterprise + EUR 0.005/render overage) is not a price list — it is an architecture statement. It says: "We price for agent pipelines that call Skissify thousands of times. We price for human developers who use Skissify occasionally. We price for enterprise teams that need SLA and SSO. We have a lane for each."
+
+**What EUR 2/mo signals architecturally**: This is the "render budget floor" tier. Not a subscription to features — a commitment to a minimum API spend. This is the language of infrastructure, not SaaS. And in 2026, developers who understand the difference will self-select into it immediately.
+
+#### Insight 3: 75 Consecutive Clean Scans = The Niche Is Architecturally Unoccupied, Not Accidentally Empty
+
+At 75 scans, the niche analysis has moved from "intelligence" to "proof." The structural reason the quadrant is empty is now clear:
+
+1. **Chart/data viz MCP tools** solve the "quantitative → visual" use case (antvis, PulseMCP)
+2. **Technical diagram MCP tools** solve the "topology/code → diagram" use case (mermaid-mcp, draw.io, blueprint-mcp)
+3. **UI design MCP tools** solve the "prompt → polished interface" use case (Figma, Stitch, Uizard)
+4. **None** solve the "structured spatial data → hand-drawn sketch" use case
+
+The fourth category requires domain-specific knowledge (architectural elements, floor plan conventions, dimension rendering) plus aesthetic investment (wobble algorithms, paper simulation, tool types) plus agent-optimized architecture (JSON-native input, MCP server, per-render billing). This combination is not something a chart library adds in a sprint. It requires the specific design choices Skissify was built with from day one.
+
+**EUR 2/mo sustainability**: The barrier to category entry is high enough that EUR 2/mo is sustainable as the entry price — not because EUR 2 is expensive, but because the next competitor is probably 12–18 months away from matching the feature set. Skissify has a structural window, not a temporary gap.
+
+---
+
 ## Entry: March 31, 2026 — 03:55 CET | Automated Strategy Run #74
 
 ### Theme: The 30-Hour HN Thread — What Durable Community Discussion Tells Us About EUR 2/mo WTP
