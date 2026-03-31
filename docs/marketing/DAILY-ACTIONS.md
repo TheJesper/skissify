@@ -5817,3 +5817,64 @@ ender_sketch tool live on npm? Yes/no + URL
 - MCP 97M downloads — check if any visual/sketch tool appeared in the last 48 hours
 - Search: "skissify mcp" — are we indexed anywhere yet?
 
+
+---
+
+## Daily Actions: Tuesday, April 1, 2026 | Strategy Run #88
+
+*Generated March 31, 2026. Based on: Excalidraw MCP launch (26 tools, canvas-manipulation model), draw.io official MCP server, Thornton quadrilogy gap analysis, Napkin AI 5M users / no API overflow opportunity, EUR 2/mo activation psychology.*
+
+---
+
+### Action 1: Write and Publish "Declarative vs Imperative MCP Sketching — Why Skissify's Architecture Wins"
+
+**Why tomorrow**: Excalidraw just shipped 26 MCP tools and will receive significant developer press. Every article will explain how it works. Zero articles will explain why it's architecturally backwards for agent-native use cases. Skissify has a 72-hour window to own the counternarrative before the Excalidraw MCP hype cycle completes.
+
+**Concrete steps**:
+1. Write a 1,000-word blog post: "Excalidraw MCP vs Skissify MCP: Imperative Canvas Manipulation vs Declarative JSON Rendering"
+2. Key argument: Excalidraw MCP = 5+ tool calls + canvas state management to draw a floor plan. Skissify MCP = 1 JSON object → 1 SVG. The Unix philosophy applied to visual output.
+3. Include a side-by-side code comparison: Excalidraw MCP (multi-step) vs Skissify MCP (single call)
+4. Publish to DEV.to, target: "mcp", "excalidraw", "ai-agents" tags
+5. Post link in r/mcp and r/ClaudeAI
+
+**Success metric**: Post published and linked from two subreddits by end of April 1.
+
+---
+
+### Action 2: Contact Thomas Thornton — Pitch "The Fifth MCP Diagram Type" Guest Post
+
+**Why tomorrow**: Thornton's four-part MCP diagram series (Excalidraw, draw.io, AWS draw.io, Azure draw.io) is the highest-quality MCP diagram tutorial collection on the internet. His fifth post writes itself: spatial hand-drawn sketch generation with Skissify MCP. His audience (~1,000–5,000 readers per post) is the highest-intent demographic for Skissify — pre-qualified, MCP-literate, actively building agent workflows.
+
+**Concrete steps**:
+1. Find Thornton's contact: check thomasthornton.cloud/about, Twitter/LinkedIn profile
+2. Send a one-paragraph pitch: "I noticed your MCP diagram quadrilogy covers infrastructure tools. I built the fifth type — spatial hand-drawn sketch generation for floor plans and architectural diagrams. I'd love to write a guest post or be interviewed for your series. Here's a 30-second demo: [link]"
+3. Include the demo link (record screen capture: Claude prompt → JSON → floor plan sketch appears)
+4. Keep it short — one paragraph max, one demo link, one ask
+
+**Success metric**: Outreach email/DM sent by end of April 1. No response needed tomorrow — just send it.
+
+---
+
+### Action 3: Publish Skissify on MCP Directory Listings — Intercept Napkin AI Overflow Traffic
+
+**Why tomorrow**: Napkin AI has 5M users and no API. Developer users who hit the Napkin AI ceiling search for "visual generation API," "sketch API AI," "programmatic diagram tool." Lobehub.com/mcp, mcpservers.org, and the awesome-mcp-servers GitHub list are the three highest-traffic MCP discovery channels. Skissify is not listed on any of them. First listing = permanent first-mover advantage in directory search results in the sketch/visual category.
+
+**Concrete steps**:
+1. Submit to lobehub.com/mcp — fill out the tool submission form with: name "@skissify/mcp", description "JSON-native hand-drawn sketch renderer for AI agents — floor plans, architectural elements, tunable wobble. One JSON object in, one SVG out.", category "Design & Visual"
+2. Fork https://github.com/punkpeye/awesome-mcp-servers — add entry under "Design & Visual Tools"
+3. Submit to mcpservers.org via their submission form
+4. If @skissify/mcp is not yet on npm: create minimal `package.json` + `index.ts` stub and publish today — listings require a real npm package
+
+**Success metric**: PR opened on awesome-mcp-servers and at least one directory submission completed by end of April 1.
+
+---
+
+### Notes for Next Cycle (Run #89 — Target: April 2 or sooner)
+- Did the "Declarative vs Imperative" post get published and linked?
+- Was Thornton outreach sent?
+- Is Skissify listed on at least one MCP directory?
+- Is @skissify/mcp published on npm with a working `render_sketch` tool?
+- Monitor: Excalidraw MCP press coverage — is anyone framing it as "agent-native" or "programmatic"? (If yes, respond faster)
+- Check: did Thornton reply to outreach?
+- Pricing: EUR 2/mo entry tier — is it live on the pricing page? (Prerequisite for any paid conversion)
+

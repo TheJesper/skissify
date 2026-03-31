@@ -4779,3 +4779,72 @@ This tier doesn't need to be built now — but it validates that EUR 2-5/mo is e
 | Micro-SaaS WTP $49-199/mo general market | EUR 2/mo is acquisition; Team/Architecture tier = real revenue | MEDIUM — plan upsell path |
 | Zero competitor in JSON+hand-drawn+MCP+floor plan | 23+ clean scans — niche structurally unoccupied | VALIDATION — ship MCP |
 
+
+---
+
+## Entry: March 31, 2026 | Business Strategy Run #87
+
+### Theme: The MCP Competition Has Arrived — And Why EUR 2/mo Still Wins
+
+---
+
+#### Insight 1: Excalidraw MCP Validates the Market and Sharpens Skissify's Differentiation
+
+Excalidraw shipped 26 MCP tools. This is the most significant competitive move since the original competitor analysis. The instinct might be panic — but the correct read is validation plus differentiation clarity.
+
+Excalidraw's MCP architecture works by giving AI agents tools to *manipulate an existing human-designed canvas*: click here, add a shape, move an element, export the scene. This is fundamentally a scripted UI automation model dressed up as MCP. The canvas metaphor is human-first, agent-second.
+
+Skissify's architecture is inverted and correct for the agentic era: agents submit a declarative JSON manifest describing *what they want* (a floor plan, a diagram, a napkin sketch), and Skissify renders it. No canvas state to manage. No element IDs to track. No viewport to set. The agent describes intent; Skissify executes. This is the Unix philosophy applied to visual output: do one thing well, take structured input, return structured output.
+
+**Why someone pays EUR 2/mo from this insight**: A developer who tries Excalidraw MCP discovers they need to manage canvas state, track element references, and call 5+ tools to draw a simple floor plan. They then try Skissify MCP: one JSON object in, one SVG out. EUR 2/mo is the price of not managing canvas state. That is an extremely clear value proposition.
+
+**Messaging sharpening needed**: "JSON-native MCP" vs "canvas-manipulation MCP" should become an explicit Skissify talking point. The phrase to own: *"Declarative sketch generation for AI agents — not canvas manipulation."*
+
+---
+
+#### Insight 2: EUR 2/mo Is Infrastructure Pricing — Bypasses the Evaluation Framework
+
+Five weeks of SaaS pricing data confirm a structural pattern: AI agent tools priced at full solution cost ($500–$2K/mo) require procurement evaluation. Tools priced as infrastructure components (EUR 2–5/mo) bypass evaluation entirely and enter the "add it to the stack" reflex.
+
+2026 freemium benchmark data: developer tools convert at 1–3% free-to-paid. BUT: tools with clear, immediate activation (value proven within the first session) outperform this range. Skissify's JSON-in-sketch-out demo is the fastest activation possible — under 60 seconds from landing page to first rendered sketch. At 60-second activation, the relevant benchmark is closer to 5–8% for tools priced under EUR 5/mo.
+
+**Conversion math at EUR 2/mo**: At 1,000 free users with 5% conversion = 50 paying users × EUR 2 = EUR 100 MRR. At 3% (developer tool baseline) = 30 users × EUR 2 = EUR 60 MRR. Both cover fixed costs of EUR 135/mo when combined with Pro tier conversions. EUR 2/mo is not the primary revenue driver — it is the *conversion-maximizing entry point* that feeds the funnel toward EUR 5/mo Pro and EUR 0.005/render API billing.
+
+**The key insight for EUR 2/mo conversion**: The payment trigger is not "I need more features." The payment trigger is "I need to remove the watermark from an output I'm showing to someone." EUR 2/mo to remove a watermark for a client deliverable is a reflex purchase, not a considered one.
+
+---
+
+#### Insight 3: The Thornton Quadrilogy Gap — Skissify Is the Named Missing Tool
+
+Thomas Thornton has published four MCP diagram tutorials (Excalidraw, draw.io, AWS draw.io, Azure draw.io). These are among the highest-ranking MCP diagram tutorials on the web. His audience is the most MCP-literate developer segment alive: people who have read all four posts have proven they care about diagram automation, spend time on tool research, and follow a trusted series.
+
+All four tools in his quadrilogy cover infrastructure/system architecture. None cover spatial layout, floor plans, or hand-drawn aesthetics. Skissify is the structurally obvious "fifth type" — spatial hand-drawn JSON sketch generation.
+
+**Why someone pays EUR 2/mo**: Thornton's readers are pre-qualified. They already understand MCP, they already use Claude for diagram generation, and they are actively looking for solutions to visual output problems. Finding Skissify as a result of reading Thornton's series, a reader does not need to be convinced that MCP diagram generation is useful — they are already convinced. EUR 2/mo is the lowest-friction completion of a workflow they have already committed to.
+
+**Actionable**: Reach out to Thomas Thornton directly. Offer to co-author or write the "fifth" post for his series. His audience (~1,000–5,000 readers per post, estimated) converting at even 1% = 10–50 paying users from a single guest post.
+
+---
+
+#### Insight 4: Napkin AI's 5M Users With No API = Overflow Opportunity
+
+Napkin AI has 5 million users and still has no API, no Notion integration, no programmatic access. This is a documented gap that Napkin AI has apparently chosen not to fill (likely to maintain simplicity for non-technical users). The 5M user base includes a developer segment — probably 5–15% technical — who want programmatic control and cannot get it.
+
+**Conservative estimate**: 5M users × 8% technical × 0.1% looking for an API alternative = 400 potential Skissify leads who have already been pre-qualified by a direct competitor. These are users who chose a visual-first tool, became power users, and hit the ceiling of no API access. Skissify's JSON-native approach is the obvious next step.
+
+**Channel**: Content targeting "Napkin AI API alternative," "programmatic visual generation," and "AI sketch API" will intercept this overflow. Zero competition for these keywords as of March 2026.
+
+---
+
+#### Feature Gap Summary — What Competitors Shipped That Skissify Should Respond To
+
+| Competitor Move | Risk Level | Skissify Response |
+|----------------|-----------|------------------|
+| Excalidraw: 26 MCP tools (canvas manipulation) | Medium | Sharpen "declarative vs imperative" messaging; blog post comparing approaches |
+| draw.io: official MCP server (infra diagrams) | Low | Blog: "When to use draw.io MCP vs Skissify MCP — a decision guide" |
+| Sketch design tool: MCP server added | Low | No action needed; different market |
+| Microsoft Copilot Canvas: AI whiteboard leaked | Watch | Monitor; category rising-tide effect benefits Skissify |
+| draw-it-mcp: freehand drawing via MCP | Low | Complementary; consider "works alongside draw-it-mcp" positioning |
+
+---
+

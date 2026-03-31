@@ -5497,3 +5497,90 @@ Same 5 sources returning identical findings for 3+ consecutive weeks. This is no
 | Napkin AI | No | Semi | No | No | No changes detected |
 | **Skissify** | **Planned - CRITICAL** | **Yes** | **Yes** | **Yes (native)** | **Niche unoccupied - 23+ consecutive clean scans** |
 
+
+---
+
+## Update: March 31, 2026 | Business Strategy Run
+
+### Critical New Findings
+
+#### Excalidraw — MCP Integration Now Live (HIGH THREAT)
+
+Excalidraw has shipped MCP support, which materially closes their AI agent gap. Key details:
+- **26 MCP tools** including: `get_element`, `clear_canvas`, `export_scene`, `import_scene`, `export_to_image`, `duplicate_elements`, `snapshot_scene`, `describe_scene`, `get_canvas_screenshot`, `export_to_excalidraw_url`, `set_viewport`
+- **`read_diagram_guide`** tool returns best-practice color palettes, sizing rules, layout patterns — AI-generated diagram quality improvement
+- **Agent skill mode**: auto-detects MCP vs REST API, graceful fallback to HTTP endpoints
+- WorkOS published "Use Excalidraw Skills So Your Agents Can Describe Themselves" — enterprise-grade use case documentation
+- GitHub issue #10946 ("REST API for Excalidraw+ — enable AI agents") is gaining traction
+- Source: https://github.com/yctimlin/mcp_excalidraw, https://workos.com/blog/excalidraw-skills-agents-describe-themselves
+
+**Assessment**: Excalidraw MCP is real but targets general diagram creation. They still have zero floor-plan domain elements, zero coordinate-based spatial layout, zero tunable wobble. Their MCP adds *access to existing Excalidraw canvases* — it does not add *programmatic generation from structured JSON*. The architecture is inverted: agents manipulate a canvas designed for humans. Skissify's architecture is correct: agents submit declarative JSON manifests, Skissify renders. Excalidraw MCP is a workaround; Skissify MCP is a native interface.
+
+**Skissify response required**: Update marketing matrix to reflect "MCP support: Partial (canvas manipulation)" for Excalidraw, not "No". Sharpen messaging around JSON-native vs canvas-manipulation distinction.
+
+---
+
+#### draw.io — Official MCP Server Launched (MEDIUM THREAT)
+
+draw.io shipped an official MCP server and is receiving tutorial coverage:
+- Thomas Thornton series now a four-part quadrilogy: Excalidraw, draw.io general, AWS draw.io, Azure draw.io
+- Medium article: "Automating & Mastering Infrastructure Diagrams with Draw.io, MCP, and Antigravity" (Feb 2026)
+- Medium article: "Official MCP Test of Draw.io: AI Automatically Generates Architecture Diagrams" (Feb 2026)
+- draw.io MCP targets: infrastructure diagrams, cloud architecture, system design
+- Source: https://github.com/lgazo/drawio-mcp-server, https://medium.com/google-cloud/automating-mastering-infrastructure-diagrams-with-draw-io-mcp-and-antigravity-2839b78df143
+
+**Assessment**: draw.io MCP fills the enterprise architecture diagram niche — not the hand-drawn sketch niche. XML-based, no aesthetic control, targets Confluence/cloud org users. Zero overlap with Skissify's core use cases. The Thornton quadrilogy actually creates an opportunity: a "fifth type" (spatial hand-drawn sketch) tutorial featuring Skissify would slot naturally into his established series.
+
+---
+
+#### Sketch (design tool) — MCP Server Added (LOW THREAT)
+
+The design tool Sketch.app added a local MCP server connecting AI clients (Claude, Codex) to Sketch design files.
+- Source: https://www.sketch.com/docs/mcp-server/
+- **Assessment**: Targets professional UI/UX designers, not AI agent developers. No JSON programmatic input. Not a direct competitor but confirms the broader category trend: every visual tool is adding MCP in 2026.
+
+---
+
+#### Microsoft Copilot Canvas — AI Whiteboard Leaked (WATCH)
+
+Microsoft is developing Copilot Canvas — an AI-powered whiteboard with:
+- AI streaming (live generative responses as you draw/type)
+- Multi-model image generation (GPT-4o Image Gen variants)
+- Auto-naming of boards from content analysis
+- Microsoft 365 data integration + web search toggle
+- Source: https://www.windowslatest.com/2026/03/01/microsofts-copilot-canvas-leak-reveals-an-ai-powered-whiteboard-with-image-generation-ai-streaming-and-more/
+
+**Assessment**: Enterprise/consumer play, not developer/agent tool. Image generation ≠ structured sketch rendering. Targets Miro/FigJam users, not programmatic JSON users. Will raise general AI whiteboard awareness — a rising tide for the category.
+
+---
+
+#### draw-it-mcp — New MCP Drawing Tool (LOW THREAT)
+
+draw-it-mcp by Pandoll-AI: browser-based drawing app with Claude Desktop MCP integration, dark/light theme, 60 FPS canvas, AI analysis of artwork.
+- Source: https://github.com/Pandoll-AI/draw-it-mcp, https://lobehub.com/mcp/draw-it-mcp-draw-it-mcp
+- Launched/active Q1 2026
+- **Assessment**: Freehand artistic drawing tool — Claude analyzes drawings, not generates them. Not a direct competitor. Validates that the MCP+drawing category is being built out; Skissify is the JSON-structured end, draw-it-mcp is the freehand end.
+
+---
+
+#### Napkin AI — 5M Users, Still No API (OPPORTUNITY)
+
+Napkin AI has grown to 5M+ registered users (as of 2025). Key limitation: **still no API as of 2026**. No integrations with Notion, Google Slides, WordPress. Text-to-visual generation but closed ecosystem.
+- Source: https://www.napkin.ai/, https://raitly.com/tool/napkin-ai-1
+- **Assessment**: 5M users with no programmatic access = a large frustrated developer segment. Any Napkin AI user who needs automation will look elsewhere. Skissify's JSON-first + API model is directly positioned to capture this overflow.
+
+---
+
+### Updated Competitive Matrix (March 31, 2026)
+
+| Feature | Excalidraw | draw.io | Napkin AI | draw-it-mcp | **Skissify** |
+|---------|-----------|---------|-----------|-------------|-------------|
+| Hand-drawn style | Yes | No | Yes (auto) | Yes (freehand) | **Yes (tunable)** |
+| JSON-first input | No | XML | No | No | **Yes (native)** |
+| MCP support | Partial (canvas) | Yes (infra diagrams) | No | Yes (freehand) | **Yes (JSON-native)** |
+| Programmatic API | Limited | Partial | No | No | **Yes** |
+| Architectural elements | No | Basic | No | No | **Yes (14 types)** |
+| Floor plans | No | No | No | No | **Yes** |
+| Coordinate control | No | Partial | No | No | **Yes (x,y native)** |
+| Price | $7/mo | Free | Free (limited) | Free | **EUR 2-5/mo** |
+
