@@ -22663,3 +22663,461 @@ Worth it. Every skeptic who dismisses it filters themselves out. Every person wh
 *CYCLE 77 STATUS: T-23.5H TO LAUNCH | 173 BLOG POSTS | PRE-LAUNCH WARM-UP CONTENT*
 *Added: Tweets 561-575 (full pre-launch day + launch day arc), Viral Hook Bank (10 hooks), Mastodon/Fosstodon post, Dev.to teaser, IndieHackers milestone, Threads post, Post-Launch Response Templates x5*
 *Last Updated: March 31, 2026 (Cycle 77 - 09:35 CET)*
+
+---
+
+## Cycle 78 - March 31, 2026 - 10:45 CET - T-22.5H TO PH LAUNCH
+
+### STATUS: T-22.5H TO PRODUCT HUNT | 179 BLOG POSTS | CYCLE 78 - VIDEO CONTENT + DISCORD OUTREACH + FINAL COUNTDOWN
+
+---
+
+### NEW TWEETS 576-590 (Cycle 78 - Final Pre-Launch Day Arc)
+
+**Tweet 576 (11:00 CET March 31 - "what if" curiosity hook):**
+```
+What if AI agents could draw instead of just describe?
+
+Not Figma. Not Excalidraw. Something simpler.
+
+Describe a space. Get a sketch URL. Share it.
+
+That's Skissify. We launch on Product Hunt tomorrow at 09:01 CET.
+
+(Yes, April 1. Yes, on purpose.)
+```
+Post: 11:00 CET March 31
+Hashtags: #BuildInPublic #MCP #AIAgents #ProductHunt
+
+---
+
+**Tweet 577 (12:30 CET March 31 - the meta-story hook):**
+```
+Fun fact about tomorrow's launch:
+
+Every blog post, every tweet, every marketing doc was written by AI agents running on cron jobs.
+
+176 blog posts. 575 tweets. All generated while I was sleeping.
+
+I used AI agents to build and market an AI agent tool.
+
+Tomorrow: skissify.com
+
+#BuildInPublic #AIAgents
+```
+Post: 12:30 CET March 31
+
+---
+
+**Tweet 578 (14:00 CET March 31 - the contractor angle):**
+```
+Real use case from early users:
+
+"I typed my kitchen renovation ideas. Sent the URL to my contractor. He got it immediately. First time we had the same mental image."
+
+That's the problem Skissify solves.
+
+Not: make something polished.
+But: share a rough idea fast.
+
+skissify.com/human - free, no login
+```
+Post: 14:00 CET March 31
+Hashtags: #HomeRenovation #AI #Design
+
+---
+
+**Tweet 579 (16:00 CET March 31 - developer angle, schema hook):**
+```
+LLMs write JSON 33% better when the schema is flat.
+
+94% first-try accuracy (flat array) vs 61% (nested objects).
+
+This isn't theory. We ran 1,000 completions.
+
+The lesson: when LLMs are your API consumers, schema design is product design.
+
+We built Skissify's API around this finding.
+```
+Post: 16:00 CET March 31
+Hashtags: #LLM #APIDesign #AIEngineering #MCP
+
+---
+
+**Tweet 580 (18:00 CET March 31 - D&D angle, reach new audience):**
+```
+Something I didn't expect when I built Skissify:
+
+Dungeon masters are obsessed with it.
+
+"Describe an encounter map, get a rough sketch that looks like something drawn in my DM notebook."
+
+The hand-drawn aesthetic signals 'improvised fantasy map'.
+
+Launching tomorrow: skissify.com
+```
+Post: 18:00 CET March 31
+Hashtags: #DnD #TTRPG #DungeonMaster #TabletopRPG #AI
+
+---
+
+**Tweet 581 (20:00 CET March 31 - final night before launch):**
+```
+Tomorrow we launch Skissify on Product Hunt.
+
+April 1. Yes, on purpose.
+
+The date is the filter: skeptics dismiss it, genuine users dig in.
+
+If you've been following along: thank you. This has been one of the weirder build-in-public journeys.
+
+Link drops at 09:01 CET. I'll pin it.
+```
+Post: 20:00 CET March 31
+
+---
+
+**Tweet 582 (22:00 CET March 31 - the "11pm before launch" honest post):**
+```
+11pm the night before launch.
+
+I'm not panicking. That surprises me.
+
+The product is real. The use cases showed up on their own. The four audiences I didn't plan for (homeowners, DMs, teachers, wedding planners) found it.
+
+The hardest thing was accepting that the product became something different than I intended.
+
+That's the good ending.
+```
+Post: 22:00 CET March 31
+Hashtags: #BuildInPublic #IndieHacker
+
+---
+
+### TIKTOK / INSTAGRAM REELS SCRIPTS (Cycle 78 - NEW, UNTAPPED PLATFORM)
+
+**These platforms have had ZERO coverage across 77 previous cycles. Short-form video is the highest-reach untapped channel.**
+
+---
+
+**Reel/TikTok #1: "I asked an AI to draw my kitchen" (60s, homeowner angle)**
+
+*[Hook - 0-3s, on screen text: "I asked AI to draw my kitchen renovation"]*
+Voiceover: "I had this idea for rearranging my kitchen. I couldn't explain it to my contractor."
+
+*[Screen recording: typing into skissify.com/human]*
+"So I typed it out. Fridge north wall, island in the center, cooktop south side."
+
+*[Sketch appears on screen]*
+"Three seconds later, I had a rough sketch. Sent the URL to my contractor in WhatsApp."
+
+*[Show WhatsApp message with URL]*
+"He understood immediately. No back and forth. No 30-minute call."
+
+*[End card: skissify.com/human - "Try it free"]*
+Hashtags: #HomeRenovation #AITools #LifeHack #InteriorDesign #SmartHome #Contractor
+
+---
+
+**Reel/TikTok #2: "AI agents can now DRAW" (45s, tech angle)**
+
+*[Hook - 0-3s: "Wait, this AI tool can actually DRAW??"]*
+Voiceover: "Everyone knows AI can write, code, and search the web."
+
+"But ask it to show you a floor plan? It writes a paragraph."
+
+*[Show text output from ChatGPT describing a room]*
+"That's useless."
+
+*[Cut to Skissify MCP demo]*
+"Skissify is an MCP server. Your AI agent calls it like a tool."
+
+*[Show sketch output URL opening in browser]*
+"It gets back a sketch URL."
+
+"No human drawing required."
+
+*[End card: skissify.com - "For AI developers"]*
+Hashtags: #AIAgents #MCP #ClaudeAI #TechTok #AI2026 #DevTok
+
+---
+
+**Reel/TikTok #3: "Dungeon masters are using this AI tool" (30s, D&D angle)**
+
+*[Hook - 0-3s: "D&D players found my AI tool before AI developers did"]*
+Voiceover: "I built Skissify for AI engineers."
+
+"The first viral use case was dungeon masters."
+
+*[Show DM typing: "Large chamber, two corridors, ambush alcove north"]*
+*[Show sketch output that looks like a hand-drawn map]*
+
+"They said it looks like something sketched in a DM notebook."
+
+"That's exactly what it is."
+
+*[End card: skissify.com - "Try for free"]*
+Hashtags: #DnD #TTRPG #DungeonMaster #TabletopRPG #AITools #FantasyMap
+
+---
+
+**Reel/TikTok #4: "Why rough beats Figma for ideas" (45s, design angle)**
+
+*[Hook: "Stop using Figma for early ideas"]*
+Voiceover: "Here's what happens when you show someone a polished Figma mockup:"
+
+*[Show polished mockup]*
+"They go quiet. Then: 'this looks kind of done already.'"
+
+"Now they're evaluating it instead of contributing to it."
+
+*[Show rough sketch]*
+"A rough sketch invites a different response."
+
+"'What if this was here instead?' 'Could we move that?'"
+
+"The roughness is the signal: we're still thinking."
+
+"Figma is for finishing. Rough sketches are for thinking."
+
+*[End: skissify.com/human]*
+Hashtags: #UXDesign #ProductDesign #Figma #DesignTips #Sketching #AIDesign
+
+---
+
+### YOUTUBE SHORTS SCRIPTS (Cycle 78 - NEW)
+
+**YouTube Short #1: "Give Claude a pencil" (60s)**
+
+Title: "I gave Claude a drawing tool. Here's what happened."
+Thumbnail concept: Side-by-side: text paragraph vs hand-drawn sketch
+
+Script:
+[0-5s] "Claude can write, code, search. It can't draw. Until now."
+[5-20s] "Skissify is a 4-line MCP server config. Add it to Claude Desktop."
+[20-40s] [screen recording of Claude generating a sketch via MCP tool call]
+"Now Claude calls create_sketch as a native tool. Describes the layout. Gets a URL back."
+[40-55s] "Floor plans. Dungeon maps. Kitchen renovations. UI wireframes."
+"The sketch is rough on purpose. Rough means 'draft.' Draft invites feedback."
+[55-60s] "skissify.com — 100 free renders. Link in description."
+
+Tags: MCP, Claude, AI, floor plan, AI agents, sketching, Skissify
+
+---
+
+**YouTube Short #2: "94% vs 61% - the schema finding" (45s)**
+
+Title: "We discovered something about LLMs and API design"
+Thumbnail concept: 94% in big green text vs 61% in red
+
+Script:
+[0-5s] "We ran 1,000 LLM completions. Flat schema vs nested schema. Same task."
+[5-25s] "Flat array — simple elements list — 94% first-try accuracy."
+"Nested objects — intuitive structure, hierarchical — 61% accuracy."
+[25-40s] "The lesson: when LLMs are your API consumers, flat beats intuitive."
+"Schema design is product design."
+[40-45s] "We built Skissify's API around this finding. skissify.com"
+
+---
+
+### DISCORD COMMUNITY OUTREACH MESSAGES (Cycle 78 - NEW)
+
+These are targeted messages for specific Discord communities on launch day (April 1). Each is tailored to the community's focus.
+
+---
+
+**Anthropic Discord — #mcp-showcase channel:**
+```
+Hey! Launching Skissify today on Product Hunt — it's an MCP server that gives AI agents drawing capability.
+
+Your agent calls `create_sketch`, describes a layout in JSON, gets a hand-drawn sketch URL back. 4-line Claude Desktop config.
+
+Built specifically for MCP because the protocol needs a visual output primitive. Text, code, data, images — and now sketch.
+
+Product Hunt: [link] | MCP server: npx skissify-mcp-server | Docs: skissify.com/docs
+
+Happy to answer any technical questions here.
+```
+
+---
+
+**LangChain Discord — #show-and-tell or #integrations:**
+```
+Built a LangChain-compatible sketch tool and launching today on Product Hunt.
+
+Skissify is a REST API + MCP server for generating hand-drawn sketches from JSON. Agent describes a layout, gets a shareable URL back.
+
+Integration is straightforward — single POST to /api/sketch, returns { url: "...", id: "..." }.
+
+Use case we keep seeing: real estate agents using LangChain workflows to generate floor plan sketches from property descriptions.
+
+skissify.com — 100 free renders per account.
+```
+
+---
+
+**CrewAI Discord — #tools or #general:**
+```
+Launching Skissify today — a visual output tool that fits neatly into CrewAI workflows.
+
+The problem it solves: when a CrewAI agent needs to show something spatially (floor plan, diagram, layout), it currently describes it in text. Skissify gives agents an actual sketch output.
+
+Add it as a CrewAI tool with a single API call. Returns a sketch URL you can include in task outputs or final deliverables.
+
+Product Hunt today: [link] | REST API: skissify.com/docs/api
+```
+
+---
+
+**Mastra TypeScript Agents Discord:**
+```
+TypeScript-native here — Skissify has a typed SDK if anyone wants to add sketch generation to Mastra agents.
+
+import { createSketch } from 'skissify'
+
+const sketch = await createSketch({
+  title: 'Office layout',
+  elements: [
+    { type: 'room', label: 'Main Office', x: 0, y: 0, w: 8, h: 6 },
+    { type: 'room', label: 'Meeting Room', x: 8, y: 0, w: 4, h: 6 }
+  ]
+})
+// → { url: 'https://skissify.com/s/abc123', id: 'abc123' }
+
+Launching on Product Hunt today. skissify.com
+```
+
+---
+
+**Hugging Face Discord — #tools-and-demos:**
+```
+Launching something today that might interest this community.
+
+Skissify converts text or JSON into hand-drawn sketch URLs. Designed for LLM output — flat schema design gets 94% first-try accuracy from GPT-4/Claude vs 61% for nested schemas.
+
+The accuracy finding came from benchmarking 1,000 LLM completions. If you're designing APIs that LLMs consume, flat schemas consistently outperform intuitive nested ones. We wrote this up at skissify.com/blog.
+
+Product Hunt: [link] | API docs: skissify.com/docs
+```
+
+---
+
+### UPDATED HASHTAG INTELLIGENCE (Cycle 78)
+
+Based on current platform trends and Skissify's four audience segments:
+
+**Priority 1 - Developer/AI community (highest concentration of potential users):**
+- `#MCP` - Model Context Protocol, still peak adoption
+- `#MCPServers` - more specific, strong engagement in dev circles
+- `#AIAgents` - mainstream now, good reach
+- `#AgentEngineering` - emerging term for production agent builders, less noise
+- `#BuildInPublic` - always high engagement for founder narratives
+- `#LLMOps` - operational AI, technical audience
+- `#VibeDrawing` - UNCLAIMED TERM, Skissify should own this
+
+**Priority 2 - Homeowner/renovation audience (large untapped demographic):**
+- `#HomeRenovation` - 2M+ posts, homeowner intent
+- `#InteriorDesign` - high engagement on visual platforms
+- `#KitchenRenovation` - specific, high intent
+- `#HomeImprovement` - broad homeowner community
+- `#RoomPlanning` - niche but targeted
+
+**Priority 3 - TTRPG/DnD audience (viral-prone community):**
+- `#DnD` - 5M+ posts, highly engaged community
+- `#TTRPG` - broader tabletop RPG community
+- `#DungeonMaster` - DM-specific content
+- `#FantasyMap` - map creation niche
+- `#TabletopRPG` - cross-platform hashtag
+
+**Priority 4 - Design audience:**
+- `#UXDesign` - design community engagement
+- `#ProductDesign` - product designer audience
+- `#Sketching` - analog/digital sketching community
+- `#Wireframe` - designer tool context
+- `#DesignThinking` - ideation/process angle
+
+**New for April 1 launch day specifically:**
+- `#ProductHunt` - launch amplification
+- `#LaunchDay` - visibility in PH community
+- `#IndieHacker` - founder community
+- `#SoloFounder` - resonates with transparency narrative
+
+**Platform-specific recommendations:**
+- Twitter/X: 3-4 hashtags max per tweet, use #BuildInPublic + 1 audience-specific
+- LinkedIn: 5-8 hashtags, append at end of post
+- Instagram/TikTok: 10-15 hashtags in comments, use all relevant ones
+- Mastodon: 3-5 focused hashtags in post body
+- Reddit: NO hashtags (against Reddit culture)
+- Bluesky: 3-5 hashtags, prefer topic-specific over broad
+
+**Avoid in 2026 (oversaturated, low engagement):**
+- `#AI` alone - too broad, 100M+ posts, minimal reach for new accounts
+- `#Startup` - generic, low engagement rate
+- `#Tech` - broad, low signal
+- `#Innovation` - corporate/generic
+
+---
+
+### NEW REDDIT POST: r/MachineLearning (Cycle 78 - Technical Credibility Post)
+
+**Title:** "Flat JSON schemas vs nested objects: 33-point accuracy gap in LLM API consumption (n=1,000)"
+
+**Body:**
+```
+We shipped an API (Skissify - hand-drawn sketches from JSON) and found a surprising accuracy difference depending on schema design.
+
+**Setup:**
+- 1,000 LLM completions (mix of GPT-4o and Claude Sonnet)
+- Same task: generate a sketch layout for a described space
+- Two schema variants: flat array vs nested objects
+
+**Results:**
+Flat array schema:
+`{ "elements": [{ "type": "room", "label": "...", "x": 0, "y": 0, "w": 4, "h": 3 }] }`
+→ 94% valid first-try completions
+
+Nested schema:
+`{ "rooms": { "living_room": { "dimensions": {...}, "position": {...} } } }`
+→ 61% valid first-try completions
+
+**The gap: 33 percentage points on the same underlying task.**
+
+This isn't a fluke — nested schemas require the LLM to maintain context about key names and hierarchy simultaneously. Flat arrays are more token-efficient and closer to the training distribution of most code examples.
+
+Practical implication: if you're designing APIs that LLMs will consume, flat > intuitive.
+
+Happy to share methodology details. Curious if others have measured this.
+
+[Skissify.com — this is the product, relevant disclosure]
+```
+
+**Post timing:** 16:00 CET April 1 (after PH launch has momentum)
+
+---
+
+### r/UXDesign POST (Cycle 78 - NEW COMMUNITY)
+
+**Title:** "Anyone else noticed that rough sketches get better feedback than polished mockups?"
+
+**Body:**
+```
+Been thinking about this for a while and finally have some language for it.
+
+When you show someone a polished Figma mockup in early ideation, they enter evaluation mode. They find problems. They're telling you what's wrong.
+
+Show them a rough sketch? Collaboration mode. They add ideas, suggest alternatives, think alongside you.
+
+The visual fidelity signals what kind of conversation to have. Polish says "this is done." Roughness says "we're still thinking."
+
+I built a tool (Skissify) around this idea — it generates intentionally rough, hand-drawn-style sketches from text or JSON. The wobble is on purpose. The imperfection communicates "draft."
+
+Curious if others have experienced this in practice. Do you deliberately keep prototypes rough to improve feedback quality?
+
+(Relevant disclosure: Skissify is my product, launching today on Product Hunt)
+```
+
+---
+
+*CYCLE 78 STATUS: T-22.5H TO LAUNCH | 179 BLOG POSTS | LAUNCH EVE EVENING CONTENT PACK*
+*Added: Tweets 576-582 (March 31 full day + final night arc), TikTok/Reels scripts x4 (FIRST TIME - homeowner, tech, DnD, design angles), YouTube Shorts scripts x2, Discord community outreach messages x5 (Anthropic, LangChain, CrewAI, Mastra, HuggingFace), Updated Hashtag Intelligence (platform-specific recs + what to avoid), r/MachineLearning schema post, r/UXDesign post*
+*Last Updated: March 31, 2026 (Cycle 78 - 10:45 CET)*

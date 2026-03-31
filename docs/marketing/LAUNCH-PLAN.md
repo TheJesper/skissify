@@ -6030,3 +6030,125 @@ Both communities are large (r/homedesign: 2M+, r/DnD: 4M+) and have never been t
 
 *Last Updated: March 31, 2026 (Cycle 77 - 09:35 CET)*
 *Added: Blog posts #174-176 (Figma cognitive science, production workflow with code, vs Excalidraw one-page), SOCIAL-MEDIA.md Cycle 77 (Tweets 561-575 + Viral Hook Bank + Mastodon + Threads + IndieHackers + Post-Launch Response Templates x5), PRESS-KIT.md v20.0 (One-liners v306-315 + Post-Mortem Template v2 + Screenshot Manifest v20 + Founder Bio v3 + Boilerplate v3)*
+
+## Marketing Improvements (Cycle 78 - March 31, 2026 - 10:45 CET)
+
+### STATUS: T-22.5H TO PRODUCT HUNT LAUNCH | 179 BLOG POSTS | CYCLE 78 - VIDEO + DISCORD + HASHTAG INTELLIGENCE
+
+**PRODUCT HUNT LAUNCHES IN ~22.5H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 78:**
+
+- **3 new blog posts (#177-179) - sharper, cleaner versions of core topics:**
+  - why-hand-drawn-sketches-beat-figma-the-tiktok-generation-guide.md - Cleaner, faster version of the Figma argument. Includes a TikTok-brain TL;DR, decision matrix, and three specific failure scenarios for Figma in early ideation. Best for Medium, TikTok caption, LinkedIn. Ready to publish.
+  - how-ai-agents-draw-floor-plans-the-five-minute-explainer.md - The shortest, most accessible version of the floor plans post. 5-minute read. No jargon. Works for a broader audience including non-developers. Best for Dev.to, r/ChatGPT, LinkedIn.
+  - skissify-vs-excalidraw-what-nobody-tells-you.md - The most honest comparison post yet. Explicitly says where Excalidraw wins. Decision tree. Three-word answer at the end. Best for r/webdev, r/UXDesign, any SEO traffic.
+
+- **SOCIAL-MEDIA.md Cycle 78**: Tweets 576-582 (March 31 full day arc + final night before launch), TikTok/Instagram Reels scripts x4 (FIRST VIDEO CONTENT - homeowner, tech, D&D, design angles), YouTube Shorts scripts x2, Discord community outreach messages x5 (Anthropic/MCP-showcase, LangChain, CrewAI, Mastra, HuggingFace), Updated Hashtag Intelligence (platform-specific recommendations, what to avoid in 2026), r/MachineLearning schema science post, r/UXDesign discussion post.
+
+### NEW BLOG POSTS (Cycle 78)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 177 | **Why Hand-Drawn Beats Figma (The TikTok Guide)** | why-hand-drawn-sketches-beat-figma-the-tiktok-generation-guide.md | Medium, LinkedIn, TikTok caption | 10:00 CET April 1 |
+| 178 | **How AI Agents Draw Floor Plans: 5-Minute Explainer** | how-ai-agents-draw-floor-plans-the-five-minute-explainer.md | Dev.to, r/ChatGPT, LinkedIn | 11:30 CET April 1 |
+| 179 | **Skissify vs Excalidraw: What Nobody Tells You** | skissify-vs-excalidraw-what-nobody-tells-you.md | r/webdev, r/UXDesign, SEO | 13:00 CET April 1 |
+
+### KEY IMPROVEMENTS THIS CYCLE
+
+1. **Short-form video content (first time in 78 cycles)** — TikTok and Instagram Reels have had ZERO coverage. Four scripts ready to shoot: homeowner angle (kitchen renovation), tech angle (AI agents draw), D&D angle (dungeon masters), design angle (Figma vs rough sketches). YouTube Shorts scripts also ready.
+
+2. **Discord outreach messages** — 5 community-specific messages ready for Anthropic Discord, LangChain, CrewAI, Mastra, and HuggingFace. Each speaks the language of that community specifically.
+
+3. **r/MachineLearning schema science post** — The 94% vs 61% finding deserves its own ML community post as a technical observation, not just a product post. Written without hard sell; presents the finding, invites discussion.
+
+4. **r/UXDesign community post** — New community, discussion-first format. Asks "has anyone else noticed this?" and shares the collaboration-mode insight. Product disclosure at end.
+
+5. **Hashtag intelligence update** — Comprehensive 2026 hashtag guide with platform-specific recommendations, audience segments, and explicit "avoid" list. `#VibeDrawing` still unclaimed.
+
+### NEW COMMUNITIES (Cycle 78)
+
+| Community | Audience | Message Type | Timing |
+|-----------|----------|-------------|--------|
+| r/MachineLearning | ML researchers, engineers | Technical finding (schema accuracy) | 16:00 CET April 1 |
+| r/UXDesign | UX designers, PMs | Discussion-first, collaboration-mode insight | 14:30 CET April 1 |
+| Anthropic Discord #mcp-showcase | MCP developers | Technical launch announcement | 09:30 CET April 1 |
+| LangChain Discord | LangChain builders | Integration announcement | 10:00 CET April 1 |
+| CrewAI Discord | CrewAI developers | Tool integration post | 10:30 CET April 1 |
+| Mastra Discord | TypeScript agent builders | Code-first announcement | 11:00 CET April 1 |
+| HuggingFace Discord | ML practitioners | Schema finding + product disclosure | 11:30 CET April 1 |
+| TikTok (video) | Homeowners, general | "I asked AI to draw my kitchen" | April 1 afternoon |
+| Instagram Reels | Design/homeowner audience | Kitchen renovation script | April 1 afternoon |
+| YouTube Shorts | Tech/dev audience | "Give Claude a pencil" | April 1 |
+
+### UPDATED LAUNCH DAY SCHEDULE (Cycle 78 additions)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| **TODAY (March 31)** | | |
+| 11:00 | Tweet 576 - "what if AI agents could draw" | SOCIAL-MEDIA Cycle 78 |
+| 12:30 | Tweet 577 - meta-story (176 posts, AI wrote them) | SOCIAL-MEDIA Cycle 78 |
+| 14:00 | Tweet 578 - contractor/homeowner angle | SOCIAL-MEDIA Cycle 78 |
+| 16:00 | Tweet 579 - schema science (LLM accuracy) | SOCIAL-MEDIA Cycle 78 |
+| 18:00 | Tweet 580 - D&D angle | SOCIAL-MEDIA Cycle 78 |
+| 20:00 | Tweet 581 - final night before launch | SOCIAL-MEDIA Cycle 78 |
+| 22:00 | Tweet 582 - honest 11pm note | SOCIAL-MEDIA Cycle 78 |
+| **APRIL 1** | | |
+| 09:01 | PH LIVE | - |
+| 09:30 | Anthropic Discord #mcp-showcase | SOCIAL-MEDIA Cycle 78 |
+| 10:00 | LangChain Discord | SOCIAL-MEDIA Cycle 78 |
+| 10:30 | CrewAI Discord | SOCIAL-MEDIA Cycle 78 |
+| 11:00 | Blog #177 publish (Figma TikTok guide) | blog/ Cycle 78 |
+| 11:00 | Mastra Discord | SOCIAL-MEDIA Cycle 78 |
+| 11:30 | Blog #178 publish (5-min floor plans) | blog/ Cycle 78 |
+| 11:30 | HuggingFace Discord | SOCIAL-MEDIA Cycle 78 |
+| 13:00 | Blog #179 publish (vs Excalidraw) | blog/ Cycle 78 |
+| 14:30 | r/UXDesign post | SOCIAL-MEDIA Cycle 78 |
+| 16:00 | r/MachineLearning schema post | SOCIAL-MEDIA Cycle 78 |
+| Afternoon | TikTok "I asked AI to draw my kitchen" | SOCIAL-MEDIA Cycle 78 |
+| Afternoon | Instagram Reel - kitchen renovation | SOCIAL-MEDIA Cycle 78 |
+| Afternoon | YouTube Short "Give Claude a pencil" | SOCIAL-MEDIA Cycle 78 |
+
+### NEW IDEAS (Cycle 78)
+
+| Idea | Why | Effort | Impact |
+|------|-----|--------|--------|
+| **TikTok/Reels video content** | Zero video coverage in 77 cycles. Short-form video is the highest organic reach channel in 2026. Homeowner angle especially viral on TikTok. Scripts written, ready to shoot. | Low (shoot 2-3 minutes) | Very High |
+| **Discord outreach on launch day** | Discord communities (Anthropic, LangChain, CrewAI) are where actual MCP developers live. More targeted than Reddit for developer audience. Ready-to-paste messages written for each community. | Zero (written) | High |
+| **r/MachineLearning schema science** | The 94% vs 61% finding is independently credible. Post it as a technical observation, not a product post. ML community will engage with the methodology even without caring about Skissify. | Zero (written) | High |
+| **r/UXDesign discussion post** | New community (never targeted). Discussion-first format has high engagement rate. The "collaboration mode vs evaluation mode" angle resonates with UX practitioners. | Zero (written) | Medium-High |
+| **#VibeDrawing hashtag ownership** | This term is unclaimed. Post with #VibeDrawing consistently to own the term. Cross-reference with Malewicz #VibeCoding article. Claim before a competitor does. | Zero (just use it) | Medium |
+
+### OUTSTANDING ACTIONS (Updated Cycle 78)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| ?? BLOCKER | Screenshot P0-A: Human Mode | Before 08:00 April 1 | MUST DO |
+| ?? BLOCKER | Screenshot P0-B: PH Banner 1270x760 | Before 08:00 April 1 | MUST DO |
+| ?? CRITICAL | Post Tweets 576-582 (today, March 31) | Today | READY Cycle 78 |
+| ?? CRITICAL | Stage PH First Comment | Before 09:01 April 1 | READY Cycle 75 |
+| ?? HIGH | Queue Tweet 567 for 09:01 April 1 | Before sleep | READY Cycle 77 |
+| ?? HIGH | Discord messages x5 | 09:30-11:30 April 1 | READY Cycle 78 |
+| ?? NEW | Shoot 1 TikTok/Reel (kitchen angle) | April 1 afternoon | Scripts ready Cycle 78 |
+| ?? MEDIUM | r/MachineLearning post | 16:00 April 1 | READY Cycle 78 |
+| ?? MEDIUM | r/UXDesign discussion post | 14:30 April 1 | READY Cycle 78 |
+
+### CUMULATIVE BLOG INVENTORY (179 posts as of Cycle 78)
+
+| Range | Posts |
+|-------|-------|
+| #1-107 | Cycles 1-52 |
+| #108-153 | Cycles 53-67 |
+| #154-156 | Cycle 68 |
+| #157-159 | Cycle 69 |
+| #160-161 | Cycle 70 |
+| #162-163 | Cycle 71 |
+| #164-165 | Cycle 72/73 |
+| #166-167 | Cycle 74 |
+| #168-170 | Cycle 75 |
+| #171-173 | Cycle 76 |
+| #174-176 | Cycle 77 |
+| #177-179 | Cycle 78 (this cycle) |
+
+*Last Updated: March 31, 2026 (Cycle 78 - 10:45 CET)*
+*Added: Blog posts #177-179 (Figma TikTok guide, 5-min floor plans explainer, vs Excalidraw what nobody tells you), SOCIAL-MEDIA.md Cycle 78 (Tweets 576-582 + TikTok/Reels scripts x4 + YouTube Shorts x2 + Discord messages x5 + Hashtag Intelligence update + r/MachineLearning + r/UXDesign posts)*
