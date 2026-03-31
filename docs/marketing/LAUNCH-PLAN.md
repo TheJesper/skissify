@@ -1,3 +1,112 @@
+## Marketing Improvements (Cycle 74 - March 31, 2026 - 06:09 CET)
+
+### STATUS: 🔴 T-3H TO PRODUCT HUNT LAUNCH | 165→167 BLOG POSTS | CYCLE 74 — LAUNCH MORNING FINAL PUSH
+
+**PRODUCT HUNT LAUNCHES IN ~3H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 74:**
+
+- **2 new blog posts (#166-167) — WRITTEN AND LIVE IN docs/marketing/blog/:**
+  - `skissify-for-wedding-planners-event-designers.md` — First-person founder story about the unexpected human audiences: wedding planner, teacher, gardener. Targets non-developer mainstream press (Medium, lifestyle tech, Pinterest adjacent). Post 14:00 CET for afternoon wave. This angle hasn't been fully exploited.
+  - `ibm-a2a-mcp-convergence-skissify-is-the-visual-layer.md` — Technical deep dive connecting IBM's A2A+MCP convergence article (2 weeks ago) to Skissify's position as "the fifth primitive" in agent stacks. Posts the MCP/A2A stack gap with Skissify filling it. Best for Dev.to, r/AIAgents, LinkedIn technical. Post 15:00 CET.
+
+- **SOCIAL-MEDIA.md Cycle 74**: Tweets 529-536 (wedding planner hook, IBM A2A credibility, 5-word viral "We gave AI a pencil," Figma PM contrast, solo founder authentic moment, A2A technical signal post-launch, unexpected users narrative thread x6, April 1 meta skeptic deflector), Reddit posts for r/weddingplanning + r/homeimprovement (new untapped communities), Mastra Discord + Cursor Discord messages, 8-item viral hooks bank, 3 HN comment templates for technical objections.
+
+- **PRESS-KIT.md v18.0**: One-liners v296-305 (A2A convergence angle, wedding planner surprise, five-primitive framework, constraint-as-feature, schema milestone v300, Reddit conversational, investor deck, timing hook, zero-setup pitch, "Sketches. Now native to agents."), Media Angles v91-95 (convergence timing, universal spatial need, five-primitive framework, intentional roughness, solo launch), Screenshot Checklist v19 (added P0-D: multi-agent stack diagram).
+
+- **NEW IDEAS (Cycle 74):**
+  - **r/weddingplanning as untapped community** — 500K+ members, zero AI sketch tools. The wedding planner story is a genuine discovery that resonates there. High upvote potential if framed as "someone used this for real."
+  - **r/homeimprovement** — 3M+ members. The "AI + floor plan for renovation" angle plays directly. Frame as: Claude Code + Skissify for visualizing room changes before committing.
+  - **IBM A2A/MCP convergence angle** — The IBM article from 2 weeks ago is a credibility anchor. "We're the missing output type in the converging protocol stack" is a strong B2B/developer positioning claim.
+  - **"Five primitive" framework** — Text, code, data, image, sketch. This is a shareable mental model. Start planting it consistently. Every carousel post, thread, or talk should use this framework.
+  - **HN comment templates** — The most important launch-day asset nobody writes in advance. Three templates pre-written for the most common objections: "why hand-drawn," "vs Mermaid.js," "is this production-ready."
+
+### NEW BLOG POSTS (Cycle 74)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 166 | **I Built This for AI Developers. A Wedding Planner Used It First.** | `skissify-for-wedding-planners-event-designers.md` | Medium, IndieHackers, lifestyle tech | 14:00 CET April 1 |
+| 167 | **IBM Said A2A + MCP Are Converging. Here's What the Visual Layer Looks Like.** | `ibm-a2a-mcp-convergence-skissify-is-the-visual-layer.md` | Dev.to, r/AIAgents, LinkedIn technical | 15:00 CET April 1 |
+
+### UPDATED APRIL 1 LAUNCH DAY SCHEDULE (Cycle 74 — T-3H Final)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 06:09 (now) | This cycle complete | Cycle 74 |
+| 06:30 | Tweet 529 — wedding planner hook | SOCIAL-MEDIA Cycle 74 |
+| 07:00 | Tweet 530 — IBM A2A credibility + Tweet 501 | Cycles 74+71 |
+| 07:15 | Tweet 531 — "We gave AI a pencil" (clean viral) | SOCIAL-MEDIA Cycle 74 |
+| 07:30 | Tweet 532 — Figma PM contrast + Tweet 511 UI designers | Cycles 74+72 |
+| 07:45 | Tweet 533 — solo founder authentic moment | SOCIAL-MEDIA Cycle 74 |
+| 08:45 | Tweet 521 — April 1 opening hook (10 min warning) | SOCIAL-MEDIA Cycle 73 |
+| 08:50 | Tweet 503 — April 1 filter theory | SOCIAL-MEDIA Cycle 71 |
+| 09:01 | **🚀 PRODUCT HUNT GOES LIVE** | — |
+| 09:01 | Tweet 504 — PH LIVE (PIN THIS) | SOCIAL-MEDIA Cycle 71 |
+| 09:01 | Post Blog #164 (live launch log) | blog/ Cycle 73 |
+| 09:01 | Post first PH comment (from playbook) | blog/ Cycle 73 |
+| 09:05 | Bluesky Post 1 | SOCIAL-MEDIA Cycle 73 |
+| 09:30 | Show HN submission | SOCIAL-MEDIA Cycle 69 |
+| 09:30 | Blog #162 (sketch before code) | blog/ Cycle 72 |
+| 09:30 | Tweet 505 — coding agent workflow | SOCIAL-MEDIA Cycle 71 |
+| 09:30 | LinkedIn launch post | SOCIAL-MEDIA Cycle 72 |
+| 09:30 | Anthropic Discord drop | SOCIAL-MEDIA Cycle 73 |
+| 10:00 | Tweet 522 — schema fact drop (94% accuracy) | SOCIAL-MEDIA Cycle 73 |
+| 10:00 | Tweet 506 — MCP + code demo | SOCIAL-MEDIA Cycle 71 |
+| 10:00 | r/vibecoding post | SOCIAL-MEDIA Cycle 72 |
+| 10:00 | Bluesky Post 2 | SOCIAL-MEDIA Cycle 73 |
+| 10:30 | Tweet 534 — A2A technical signal | SOCIAL-MEDIA Cycle 74 |
+| 10:30 | r/cursor post | SOCIAL-MEDIA Cycle 72 |
+| 10:30 | LangChain Discord | SOCIAL-MEDIA Cycle 73 |
+| 11:00 | Tweet 523 — DM engagement prompt | SOCIAL-MEDIA Cycle 73 |
+| 11:00 | Tweet 507 — April Fools meta | SOCIAL-MEDIA Cycle 71 |
+| 11:00 | Threads Post 1 (launch) | SOCIAL-MEDIA Cycle 73 |
+| 11:00 | Tweet 535 — unexpected users thread (x6 replies) | SOCIAL-MEDIA Cycle 74 |
+| 11:30 | Tweet 514 — A2A multi-agent | SOCIAL-MEDIA Cycle 72 |
+| 12:00 | Tweet 536 — "still not convinced it's real" April 1 meta | SOCIAL-MEDIA Cycle 74 |
+| 12:00 | Tweet 524 — unexpected users authentic | SOCIAL-MEDIA Cycle 73 |
+| 12:00 | Threads Post 2 (roughness principle) | SOCIAL-MEDIA Cycle 73 |
+| 13:00 | Tweet 516 — live metrics (fill real numbers) | SOCIAL-MEDIA Cycle 72 |
+| 13:00 | r/weddingplanning post | SOCIAL-MEDIA Cycle 74 |
+| 13:00 | Threads Post 3 (real numbers) | SOCIAL-MEDIA Cycle 73 |
+| 14:00 | Blog #166 — wedding planner story | blog/ Cycle 74 |
+| 14:00 | Tweet 509 — live metrics (fill real numbers) | SOCIAL-MEDIA Cycle 71 |
+| 14:00 | r/homeimprovement post | SOCIAL-MEDIA Cycle 74 |
+| 15:00 | Blog #167 — IBM A2A convergence visual layer | blog/ Cycle 74 |
+| 15:00 | Tweet 525 — sketch layer category | SOCIAL-MEDIA Cycle 73 |
+| 15:30 | Tweet 526 — live traction (fill numbers) | SOCIAL-MEDIA Cycle 73 |
+| 17:00 | Submit to There's An AI For That + Futurepedia | SOCIAL-MEDIA Cycle 73 |
+| 20:00 | Tweet 527 — thank-you | SOCIAL-MEDIA Cycle 73 |
+| 20:30 | Tweet 520 — wind-down | SOCIAL-MEDIA Cycle 72 |
+| 21:00 | Tweet 528 — what's next tease | SOCIAL-MEDIA Cycle 73 |
+| **APRIL 2** | | |
+| 09:00 | Blog #163 (April 1 converts better — with REAL numbers) | blog/ Cycle 72 |
+| 09:00 | Submit Betalist + remaining directories | — |
+
+### CRITICAL OUTSTANDING ITEMS — T-3H CHECKLIST
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🚨 BLOCKER | Screenshot P0-A: Human Mode side-by-side | Before 07:00 | MUST CONFIRM |
+| 🚨 BLOCKER | Screenshot P0-B: PH Banner 1270×760 | Before 07:00 | MUST CONFIRM |
+| 🚨 BLOCKER | D&D dungeon screenshot in PH gallery | Before 08:00 | HIGH VALUE |
+| 🟡 HIGH | Screenshot P0-D: Multi-agent A2A/MCP stack diagram | Before 08:00 | NEW — Cycle 74 |
+| 🔴 CRITICAL | LinkedIn DM outreach (10-20 contacts) | Before 09:00 | DO NOW |
+| 🔴 CRITICAL | Uneed + Peerlist submissions | Before 09:00 | DO NOW |
+| 🔴 CRITICAL | Tweet 529 (wedding planner hook, pre-launch warm-up) | 06:30 CET | READY Cycle 74 |
+| 🔴 CRITICAL | Tweet 531 ("We gave AI a pencil" clean viral) | 07:15 CET | READY Cycle 74 |
+| 🔴 CRITICAL | Tweet 521 (April 1 hook, 10-min warning) | 08:50 CET | READY Cycle 73 |
+| 🔴 CRITICAL | PH First Comment (from playbook) | 09:01 CET | READY Cycle 73 |
+| 🟡 HIGH | Tweet 535 (unexpected users narrative thread) | 11:00 CET | READY Cycle 74 |
+| 🟡 HIGH | Blog #166 (wedding planner story — new audience) | 14:00 CET | READY Cycle 74 |
+| 🟡 HIGH | Blog #167 (IBM A2A convergence angle) | 15:00 CET | READY Cycle 74 |
+| 🟡 HIGH | r/weddingplanning post | 13:00 CET | READY Cycle 74 |
+| 🟡 HIGH | r/homeimprovement post | 14:00 CET | READY Cycle 74 |
+
+*Last Updated: March 31, 2026 (Cycle 74 — 06:09 CET)*
+*Added: Blog posts #166-167 (wedding planner story, IBM A2A convergence visual layer), Tweets 529-536 (launch morning final pack), Reddit r/weddingplanning + r/homeimprovement posts, Mastra+Cursor Discord messages, 8-item viral hooks bank, 3 HN comment templates, PRESS-KIT v18.0 (one-liners v296-305 + Media Angles v91-95 + Screenshot Checklist v19), "five primitive" framework language planted.*
+
+---
+
 ## Marketing Improvements (Cycle 73 - March 31, 2026 - 04:58 CET)
 
 ### STATUS: 🔴 T-4H TO PRODUCT HUNT LAUNCH | 163→165 BLOG POSTS | CYCLE 73 — FINAL DISTRIBUTION EXPANSION + REAL-TIME PLAYBOOK

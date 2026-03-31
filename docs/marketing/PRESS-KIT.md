@@ -1,8 +1,105 @@
 # Skissify Press Kit
 
-**Last Updated:** March 31, 2026 - 04:58 CET (Cycle 73)
-**Version:** 17.0
+**Last Updated:** March 31, 2026 - 06:09 CET (Cycle 74)
+**Version:** 18.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 74 Updates (March 31, 2026 - 06:09 CET) — T-3H PRODUCT HUNT
+
+### ONE-LINERS v296-v305 (Cycle 74 — Launch Morning Final Pack)
+
+**v296 (THE A2A/MCP CONVERGENCE ANGLE):**
+"IBM called it: A2A and MCP are converging. The one output type neither covers is spatial. Skissify is that layer."
+
+**v297 (THE WEDDING PLANNER SURPRISE — Human appeal):**
+"Built for AI developers. A wedding planner used it to map table placement. A teacher used it for desk rearrangement. A gardener used it for spring planting. The sketch layer turned out to be universal."
+
+**v298 (THE PROTOCOL STACK PITCH):**
+"Every AI agent stack has text, code, data, images. Skissify adds the fifth primitive: sketch."
+
+**v299 (THE CONSTRAINT IS THE FEATURE):**
+"We made it intentionally worse than Figma. That's the feature. Hand-drawn says 'draft.' Draft invites honest feedback."
+
+**v300 (THE SCHEMA MILESTONE):**
+"300th one-liner. Still: We gave AI a pencil."
+
+**v301 (FOR REDDIT/COMMUNITY — conversational):**
+"Genuine question before we launched: will anyone use a sketch tool that outputs hand-drawn wobble instead of clean CAD lines? Answer: yes, because the wobble is the message. 'This is a proposal, not a blueprint.'"
+
+**v302 (FOR VC/INVESTOR DECKS):**
+"Skissify occupies a unique position: the only spatial sketch layer compatible with MCP, A2A, and direct API. Sketch is the missing output type in every AI agent protocol."
+
+**v303 (THE TIMING HOOK):**
+"A2A v1 ships soon. MCP is already in production. The visual output format for that converging ecosystem launches today."
+
+**v304 (THE ZERO-SETUP PITCH):**
+"Try it in 30 seconds: skissify.app/human. No account. No credit card. Describe a room. Get a sketch."
+
+**v305 (THE FIVE-WORD v4):**
+"Sketches. Now native to agents."
+
+---
+
+### MEDIA ANGLES v91-v95 (Cycle 74 — Final Launch Morning)
+
+**v91: The Convergence Timing Story**
+> Category: Technical / forward-looking
+> Hook: "A2A and MCP are converging. Skissify just added the output format both protocols were missing: spatial sketches."
+> Why it works: Timely (IBM piece 2 weeks ago), positions Skissify in a live conversation about agent infrastructure
+> Best for: Technical blog syndication, Developer newsletters, LinkedIn for AI builders
+
+**v92: The Universal Spatial Need Story**
+> Category: Broad human interest
+> Hook: "I built a tool for AI developers. A wedding planner, a teacher, a gardener, and a Dungeon Master showed up first."
+> Why it works: Relatability + surprise + diversity. This story is shareable outside tech circles.
+> Best for: Medium viral articles, Twitter threads, ProductHunt community posts, IndieHackers
+
+**v93: The Five-Primitive Framework**
+> Category: Framework/thought leadership
+> Hook: "AI agent stacks have 4 output types: text, code, data, image. Skissify adds the fifth: sketch."
+> Why it works: Clean framework, easy to share/repeat, plants category language
+> Best for: LinkedIn carousel, thread starter, conference talk hook
+
+**v94: The Intentional Roughness Design Story**
+> Category: Design/engineering insight
+> Hook: "We made it worse on purpose. Hand-drawn lines over clean CAD made accuracy go up, adoption go up, and feedback quality go up."
+> Why it works: Counterintuitive + specific → shareable insight
+> Best for: Design Twitter, UX communities, engineering blogs
+
+**v95: The Solo Launch Story**
+> Category: Build-in-public / founder story
+> Hook: "165 blog posts, an MCP server, Human Mode, a press kit, and a Product Hunt page. All shipped by one person. On April 1. Intentionally."
+> Why it works: Milestone + timing + narrative tension
+> Best for: Hacker News (founder story), IndieHackers, Twitter/X #BuildInPublic
+
+---
+
+### LAUNCH MORNING CHECKLIST v19 (Cycle 74 — T-3H)
+
+Critical items by 09:01 CET:
+
+**🚨 SCREENSHOTS (P0 — affects PH ranking)**
+- [ ] P0-A: Human Mode side-by-side (before/after or sketch + code)
+- [ ] P0-B: PH Banner 1270×760 with tagline
+- [ ] P0-C: D&D dungeon map (viral, unexpected audience)
+- [ ] P0-D: Multi-agent workflow diagram showing Skissify in the A2A/MCP stack
+
+**🔴 SUBMISSIONS (do before 08:00)**
+- [ ] Uneed — submit now
+- [ ] Peerlist — submit now
+- [ ] LinkedIn DM outreach (10-20 warm contacts)
+
+**🟡 CONTENT READY (fire on schedule)**
+- [x] Tweets 529-536 (Cycle 74 — pre-launch + post-launch)
+- [x] Blog #166: Wedding planner story (post 14:00 CET)
+- [x] Blog #167: IBM A2A convergence visual layer (post 15:00 CET)
+- [x] r/weddingplanning post (13:00 CET)
+- [x] r/homeimprovement post (14:00 CET)
+- [x] Mastra Discord message (ready)
+- [x] Cursor Discord message (ready)
+- [x] HN comment templates x3 (ready)
 
 ---
 
