@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { useSketch } from "@/hooks/useSketch";
@@ -165,6 +165,9 @@ function EditorInner({
 
   // Command palette state
   const [showCommandPalette, setShowCommandPalette] = useState(false);
+
+  // Canvas control ref — lets us call resetView() from outside the Canvas (e.g. command palette fit-view)
+  const canvasControlRef = useRef<{ resetView: () => void } | null>(null);
 
   // Freehand draw mode state
   const [drawMode, setDrawMode] = useState(false);
@@ -391,6 +394,7 @@ function EditorInner({
         case "ungroup": ungroupSelected(); break;
         case "new-sketch": newSketch(); break;
         case "select-same-type": selectSameType(); break;
+        case "fit-view": canvasControlRef.current?.resetView(); break;
         case "redraw": redraw(); break;
         case "download-png": handleDownload(); break;
         case "download-svg": handleDownloadSVG(); break;
@@ -754,6 +758,7 @@ function EditorInner({
             onDrawPath={(points) => {
               addPathElement(points);
             }}
+            canvasControlRef={canvasControlRef}
           />
           {/* Inline text edit overlay */}
           {editingElement && (

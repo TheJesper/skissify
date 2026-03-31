@@ -2,6 +2,68 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #78 (08:33 CET, Tuesday March 31)
+
+### Context: Run #78 Key Findings
+- **78 consecutive niche-clean scans** — spatial sketch MCP lane remains exclusively Skissify's
+- **Supabase MCP maintained at midnight (8h ago)** — MCP is now production infrastructure, not experiment
+- **Excalidraw YouTube MCP video now ~16 hours old** — video tutorial gap confirmed: zero videos for "JSON hand-drawn floor plan MCP"
+- **Shopify Dev MCP + Chrome DevTools MCP + Supabase MCP** — platform MCP cascade accelerating daily
+- **April Brave quota at 412/2000** — intelligence cycle continuing
+
+---
+
+### 🎯 Action 1 (CRITICAL — Wednesday AM): npm publish + Show HN
+
+78 clean scans. April is here. The dist/ is built. Fix `publishConfig` and ship.
+
+**Step 1 — Fix package.json (30 seconds)**:
+```json
+"publishConfig": { "access": "public" }
+```
+
+**Step 2 — Publish (5 minutes)**:
+```bash
+cd W:/code/skissify/mcp-server && npm publish --access public
+```
+
+**Step 3 — Show HN (15 minutes, 08:00–10:00 CET)**:
+New hook for April 1: "78 automated strategy scans say no competitor exists for what I built — so I built it anyway"
+Full draft: `docs/marketing/HACKER-NEWS.md`
+
+**Step 4 — MCP Registry submissions (90 minutes)**:
+claudefa.st → modelcontextprotocol.io/registry → awesome-mcp-servers PR → mcpmanager.ai → Composio catalog → fastmcp.me → toolradar.com
+
+---
+
+### 🎯 Action 2 (HIGH — Wednesday): YouTube Demo Video
+
+The Excalidraw MCP YouTube video confirms the format works for developer tool discovery. Zero videos exist for "JSON hand-drawn floor plan MCP" or "AI agent sketch output."
+
+**Produce a 3-minute screen recording**:
+- Title: "Claude Code + Skissify MCP = hand-drawn floor plan in 30 seconds"
+- Content: Claude Code prompt → JSON manifest generated → `@skissify/mcp-server` renders → hand-drawn SVG in chat
+- Upload to YouTube with tags: MCP hand-drawn diagram, JSON floor plan generator, AI agent sketch tool, Excalidraw alternative programmatic
+- Post same day as HN launch for cross-channel momentum
+
+**Why now**: Excalidraw's YouTube MCP tutorial has ~16 hours of SEO headstart. Publishing Skissify's video Wednesday puts it in results alongside Excalidraw's — a developer searching "AI sketch MCP diagram" sees both. One does topology. One does floor plans. Skissify wins the floor plan click.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Wednesday/Thursday): "MCP Stack of 2026" Dev.to Post
+
+Platform MCP cascade is live: Shopify Dev MCP + Figma MCP + Chrome DevTools MCP + Supabase MCP = every serious developer now has 3–5 MCPs in their stack. They are actively looking for more.
+
+**Write 400-word dev.to post**:
+- Title: "The MCP stack every developer is building in April 2026 — and the one tool still missing"
+- Content: Shopify (docs/APIs) + Figma (design) + Chrome DevTools (debug) + Supabase (backend) + Skissify (sketch output) = complete agentic dev stack
+- CTA: install `@skissify/mcp-server`, EUR 2/mo
+- Target keyword: "MCP stack developer tools 2026"
+
+This post will appear alongside the Shopify Dev MCP coverage in searches. Zero competing content exists for "complete MCP developer stack 2026."
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #77 (07:25 CET, Tuesday March 31)
 
 ### Context: Run #77 Key Findings

@@ -63,8 +63,8 @@ export const presets: Record<string, SketchData> = {
 
       // Room labels — centered in each room to avoid wall overlap
       { type: "text", x: 155, y: 195, text: "SOVRUM", fontSize: 20, color: "#555" },
-      { type: "text", x: 395, y: 195, text: "K\u00d6K", fontSize: 20, color: "#555" },
-      { type: "text", x: 200, y: 475, text: "VARDAGSRUM", fontSize: 20, color: "#555" },
+      { type: "text", x: 395, y: 285, text: "K\u00d6K", fontSize: 20, color: "#555" },
+      { type: "text", x: 200, y: 560, text: "VARDAGSRUM", fontSize: 20, color: "#555" },
       { type: "text", x: 640, y: 225, text: "HALL", fontSize: 20, color: "#555" },
       { type: "text", x: 565, y: 500, text: "BADRUM", fontSize: 16, color: "#555" },
       { type: "text", x: 755, y: 500, text: "ENTR\u00c9", fontSize: 16, color: "#555" },
@@ -244,8 +244,8 @@ export const presets: Record<string, SketchData> = {
 
       // Room labels — centered in each room
       { type: "text", x: 150, y: 210, text: "SOVRUM 1", fontSize: 18, color: "#666" },
-      { type: "text", x: 445, y: 210, text: "K\u00d6K", fontSize: 22, color: "#666" },
-      { type: "text", x: 240, y: 510, text: "VARDAGSRUM", fontSize: 22, color: "#666" },
+      { type: "text", x: 445, y: 310, text: "K\u00d6K", fontSize: 22, color: "#666" },
+      { type: "text", x: 240, y: 620, text: "VARDAGSRUM", fontSize: 22, color: "#666" },
       { type: "text", x: 700, y: 210, text: "SOVRUM 2", fontSize: 18, color: "#666" },
       { type: "text", x: 650, y: 510, text: "HALL", fontSize: 20, color: "#666" },
       { type: "text", x: 795, y: 510, text: "BAD", fontSize: 16, color: "#666" },

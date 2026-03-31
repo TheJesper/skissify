@@ -2,6 +2,46 @@
 
 ---
 
+## Entry: March 31, 2026 — 08:33 CET | Automated Strategy Run #78
+
+### Theme: What Makes Someone Pay EUR 2/mo — The Midnight Infrastructure Signal and the Supabase Proof
+
+#### Insight 1: The "Midnight Maintenance" Test — When MCP Stops Being a Feature and Becomes Infrastructure
+
+Supabase's MCP documentation was updated at approximately 00:33 CET (midnight Stockholm time) on March 31, 2026 — appearing as "8 hours ago" in Tuesday morning searches. Production infrastructure gets maintained at midnight. Features do not.
+
+This matters for Skissify's EUR 2/mo pricing thesis: when developers see MCP docs maintained at midnight by Supabase, they stop evaluating MCP tools as "things to try" and start treating them as "components to budget for." The cognitive shift from "experiment" to "infrastructure line item" is complete. EUR 2/mo for `@skissify/mcp-server` is not a trial subscription — it is a component fee, equivalent to paying for Resend's email tier or a small Redis instance.
+
+**EUR 2/mo payment trigger (refined)**: The decision fires the moment a developer includes `@skissify/mcp-server` in a production agent config. Once it's in the config, it's infrastructure. Once it's infrastructure, EUR 2/mo is automatic. The initial friction is not price — it is discoverability.
+
+**Action implication**: Being listed in the same registries developers check when they set up their production MCP stack (claudefa.st, modelcontextprotocol.io, Composio) is the payment trigger. Not marketing, not pricing experiments — discoverability.
+
+**Data sources**: supabase.com MCP docs (8 hours ago, March 31), Chargebee AI Pricing Playbook (3 weeks), EBR Agentic SaaS Pricing (6 days)
+
+#### Insight 2: The Excalidraw YouTube Video Reveals the Video Content Gap
+
+The Excalidraw MCP YouTube video (~16 hours old at time of this run) is the third content format the Excalidraw MCP ecosystem has covered (blog → technical guide → video). Every video is about topology diagrams and natural language → Excalidraw canvas. Zero videos exist for "JSON to hand-drawn floor plan" or "AI agent sketch output MCP."
+
+At launch, a 3-minute YouTube video demonstrating `Claude Code + @skissify/mcp-server = hand-drawn floor plan in 30 seconds` would be the only video in this category globally. YouTube SEO for "MCP hand-drawn sketch," "JSON floor plan generator," "AI agent sketch tool" — all uncontested.
+
+**WTP implication**: Developers who discover Skissify via YouTube already understand the MCP paradigm (having watched the Excalidraw video). The educational burden is zero — they understand the install process, the use case framing, and the agent workflow. EUR 2/mo converts from video viewers faster than from cold search traffic because the mental model is already built.
+
+**Data source**: YouTube "Let AI Draw Your Diagrams with Excalidraw's MCP Server" (~16 hours old, March 31)
+
+#### Insight 3: The Draw.io MCP as a Pricing Anchor — Why EUR 2/mo Is the Right Architecture Decision
+
+draw.io (confirmed active, 1 week in SERP) is free and open source with an official MCP server. If Skissify is to charge EUR 2/mo while draw.io is free, the differentiation must be visceral and immediate.
+
+The answer is in the output quality: draw.io produces XML-based technical diagrams. Skissify produces hand-drawn SVG with tunable wobble, paper types, and architectural elements. The aesthetic difference is immediately apparent in the first render — no A/B test needed.
+
+**EUR 2/mo positioning against free alternatives**: "draw.io is free. So is Mermaid. So is Excalidraw. Skissify charges EUR 2/mo because we are the only renderer that produces hand-drawn architectural sketches from structured JSON — and that specific output doesn't exist anywhere for free. Free tools render diagrams. Skissify renders sketches."
+
+**Pricing architecture takeaway**: The EUR 2/mo isn't competing with free. It's occupying a category where free doesn't exist. Category pricing, not competitive pricing.
+
+**Data sources**: jgraph/drawio-mcp (1 week), BUSINESS-PLAN.md pricing analysis, 78 consecutive niche-clean scans
+
+---
+
 ## Entry: March 31, 2026 — 07:25 CET | Automated Strategy Run #77
 
 ### Theme: What Makes Someone Pay EUR 2/mo — The VC Moat Test and the Platform MCP Cascade
