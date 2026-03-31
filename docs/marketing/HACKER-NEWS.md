@@ -59,14 +59,30 @@ Happy to answer any technical questions about the wobble algorithm or the MCP in
 ## Timing
 
 ### Best time to post
-- **9:00-11:00 AM Pacific Time** (18:00-20:00 CET)
-- Weekday (Tuesday-Thursday preferred)
-- Avoid: weekends, US holidays, major tech news days
+- **Launch date: Wednesday, April 1, 2026**
+- **Post at: 10:00 CET (04:00 AM Eastern / 01:00 AM Pacific)**
+- EU morning developers + US late-night builders = solid global wave
+- Note: April 1 is April Fools' Day — lean into this in the first comment (see below)
+
+### April 1 First Comment Addendum
+Add this BEFORE the technical explanation:
+```
+Yes, it's April 1. No, it's not a joke.
+
+We figured: if we can convince people on the most skeptical day of the year, 
+the product must actually be interesting.
+
+Try the API yourself — no signup: curl -X POST https://skissify.com/api/render 
+-H "Content-Type: application/json" -d '{"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":150}]}'
+
+If it returns SVG, it's real. (It will.)
+```
 
 ### Why this matters
 - HN front page is most competitive during US business hours
 - But posting during peak hours means more initial votes = faster climb
 - Show HN posts get a slight boost from HN's ranking algorithm
+- April 1 actually helps: any post that survives the "it's a joke" skepticism earns credibility
 
 ---
 

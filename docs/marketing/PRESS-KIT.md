@@ -228,3 +228,50 @@ Jesper / Skissify
 Skissify is a product of Conzeon AB, Stockholm, Sweden.  
 The hand-drawn rendering engine is proprietary.  
 Sketch data stored on-platform is owned by the user.
+
+---
+
+## Quick Stats (for journalist fact-boxes)
+
+| | |
+|---|---|
+| **Element types** | 30+ (walls, doors, windows, stairs, furniture, dimensions, arrows, text) |
+| **API endpoint** | `POST https://skissify.com/api/render` |
+| **Auth required** | None (free tier) |
+| **Output format** | SVG (scalable, embeddable, editable) |
+| **Render time** | < 200ms average |
+| **MCP install** | `npx skissify-mcp` |
+| **Paper styles** | Cream, white, grid, blueprint |
+| **Drawing styles** | Pencil, ballpoint, ink |
+| **Wobble control** | 0 (clean) → 10 (very human) |
+| **Launch date** | April 1, 2026 |
+| **Price** | Free / Pro (from EUR 2/mo) |
+
+---
+
+## Awards / Recognition Targets
+
+*Submit to these after launch day:*
+
+1. **Product Hunt** — target: Top 5 Developer Tools of the Day
+2. **Golden Kitty Awards** — category: AI Tools  
+3. **Indie Hackers** — Featured milestone post
+4. **TLDR Newsletter** — Submit via tldr.tech/tech
+5. **The Batch (deeplearning.ai)** — Submit via their website
+6. **Bytes.dev newsletter** — Relevant for developer tools
+
+---
+
+## Appendix: Frequently Misunderstood Points
+
+**"Is the hand-drawn style a limitation?"**
+No. It's an intentional design choice. Rough-looking output signals "this is a draft, let's discuss the idea." Psychology research shows rough sketches get better, more structural feedback than polished mockups. We chose wobble on purpose.
+
+**"Can I use it without Claude?"**
+Yes. The REST API works with any HTTP client — curl, Python, JavaScript, any language. Claude is one way to generate the JSON input, not the only way.
+
+**"Is this just Excalidraw but with an API?"**
+No. Excalidraw is for humans drawing together in real-time. Skissify is for AI agents and automated pipelines. The JSON schema, architectural elements (walls, doors, windows), and MCP integration are designed from scratch for programmatic generation — not a port or wrapper.
+
+**"Does it work for non-floor-plan sketches?"**
+Yes. Skissify renders any layout — wireframes, system architecture diagrams, org charts, infographics. Floor plans are the flagship use case because architectural elements are the hardest to find elsewhere.

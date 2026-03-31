@@ -1,6 +1,72 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
+**Last updated: March 31, 2026 — Cycle 76**
+
+---
+
+## 🔥 NEW: Launch Day Power Posts (Added Cycle 76)
+
+### The "One Sentence" Hook (Best performer format — use as Tweet 1)
+
+```
+I gave Claude a pencil.
+
+It drew a floor plan.
+
+skissify.com
+```
+
+### The Specific Claim Post (high credibility, high CTR)
+```
+Skissify MCP: 94% first-try accuracy when Claude generates floor plan JSON.
+
+The key: flat element list with absolute coordinates beats nested/hierarchical JSON by 36%.
+
+Same model. Better schema. Better output.
+
+→ skissify.com/for-agents
+```
+
+### The "Unpopular Opinion" Format (high engagement, debate magnet)
+```
+Unpopular opinion: rough sketches are better than Figma mockups.
+
+Not because they look better.
+Because they invite better feedback.
+
+A wobbly sketch says "this is still an idea."
+A polished Figma frame says "this is done."
+
+Skissify makes AI agents produce wobbly sketches. Intentionally.
+
+skissify.com
+```
+
+### The "What If" Format (curiosity hook)
+```
+What if your AI coding agent could also sketch the floor plan it's about to automate?
+
+What if every README could have a hand-drawn architecture diagram?
+
+What if every PR triggered a sketch of what changed?
+
+All of this: skissify.com
+```
+
+### The Stack Post (dev community favorite)
+```
+My 2026 AI stack for visual output:
+
+Text → Claude
+Code → Claude Code
+Images → Midjourney
+Floor plans, diagrams, sketches → Skissify (JSON → hand-drawn SVG)
+
+The last one has an MCP server. Zero other tools in this category do.
+
+skissify.com
+```
 
 ---
 
@@ -362,6 +428,64 @@ It's a diagram API — POST JSON, get hand-drawn SVG. Super useful for docs, aut
 The /render endpoint is free and no-auth. 30+ element types including architectural symbols.
 
 Feedback welcome! https://skissify.com
+```
+
+---
+
+---
+
+## YouTube Description Template
+
+**Video title:** "I gave Claude a pencil — Skissify MCP demo"
+
+**Description:**
+```
+Skissify is a REST API + MCP server that turns JSON into hand-drawn SVG sketches. 
+In this demo: Claude Desktop generates a floor plan JSON and renders it as a 
+wobbly, hand-drawn sketch in under 10 seconds.
+
+No Figma. No mouse. No design skills.
+
+Try it: https://skissify.com
+MCP setup: npx skissify-mcp
+API (no auth needed): https://skissify.com/api/render
+
+0:00 - The problem: AI agents can't draw
+0:45 - MCP setup (30 seconds)
+1:30 - Claude draws a floor plan
+2:30 - Blueprint mode
+3:00 - Try it yourself
+
+#MCP #AIAgents #Claude #BuildInPublic #DeveloperTools
+```
+
+---
+
+## Threads / Meta Threads
+
+```
+Just launched Skissify — a tool where JSON becomes a hand-drawn sketch.
+
+Built it because AI agents can't draw. They can describe. They can structure. They can generate JSON. But every whiteboard tool needs a human at the keyboard.
+
+Skissify is the render step. Claude writes the JSON. Skissify draws the sketch.
+
+Free API at skissify.com. No auth. No rate limits. Try it right now.
+```
+
+---
+
+## Mastodon / Fediverse
+
+```
+🖊️ Launched Skissify today — JSON to hand-drawn SVG via REST API.
+
+AI-native, MCP server included, free tier with no auth required.
+
+Claude can draw floor plans now. That sentence is weirder than I expected.
+
+→ https://skissify.com
+#AITools #OpenSource #IndieHacker #WebDev
 ```
 
 ---

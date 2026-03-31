@@ -138,6 +138,20 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - **Community drops** — templates for Discord/Slack/subreddit drops in SOCIAL-MEDIA.md. Target r/floorplans for unexpected viral potential.
 - **"Viral hook formulas"** — 4 proven structures adapted for Skissify in SOCIAL-MEDIA.md. "No one told me you could..." is the best performer historically.
 
+## NEW IDEAS (Added 2026-03-31, Cycle 76 — 14:14 CET)
+
+- **Launch newsletter ready** — created `blog/launch-day-email-newsletter.md` with subject lines, body, and CTA. Send at 07:00 CET April 1.
+- **Retrospective template** — created `blog/launch-day-retrospective-template.md`. Fill in April 2, post immediately. "#BuildInPublic April Fools retrospective" is a strong content hook.
+- **YouTube description template** — added to SOCIAL-MEDIA.md. Even a 3-min screen recording posted on launch day beats nothing. Title: "I gave Claude a pencil — Skissify MCP demo"
+- **Threads / Mastodon copy** — added to SOCIAL-MEDIA.md. Don't ignore non-Twitter platforms on launch day.
+- **Power hook posts** — 5 new high-engagement Twitter formats added to SOCIAL-MEDIA.md top. Best performer: the 3-line "I gave Claude a pencil" post. Use this as Tweet 1.
+- **PRESS-KIT quick stats table** — added for journalists writing fact-boxes. Includes render time (<200ms), wobble range, paper/drawing styles.
+- **PRESS-KIT FAQ** — added "Frequently Misunderstood Points" section. Preempts the 4 most common objections before they're asked.
+- **Awards/recognition targets** — added TLDR, The Batch, Bytes.dev, Golden Kitty to post-launch submission list.
+- **"94% first-try accuracy" claim** — the schema design insight (flat vs nested JSON) is your most credible technical differentiator. Use it in developer-facing posts. It's concrete, testable, and impressive.
+- **The Stack Post format** — new Twitter format in SOCIAL-MEDIA.md. Positions Skissify as a natural member of the 2026 AI stack alongside Claude, Midjourney, etc. Devs respond well to "here's what I use."
+- **Specific webhook/CI automation angle** — not yet in any post. "GitHub Actions creates a sketch on every PR merge" is a genuinely interesting demo. Add to content calendar for Week 2.
+
 ## Post-Launch (Week 1)
 
 - Collect user feedback, ship quick fixes
