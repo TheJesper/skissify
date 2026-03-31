@@ -190,6 +190,7 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 |--------|----------|--------|
 | Post pre-launch email (20:00 CET) | 🔴 P0 | ⏳ |
 | Post "Tomorrow I launch" tweet (19:00-21:00 CET) | 🔴 P0 | ⏳ |
+| Post T-2h Twitter thread (20:00 CET, 3-tweet thread) | 🔴 P0 | ⏳ |
 | DM 5 friends who said they'd upvote PH | 🔴 P0 | ⏳ |
 | Record 60s demo OR make GIF | 🔴 P0 | ⏳ |
 | Confirm prod server is healthy | 🔴 P0 | ⏳ |
@@ -199,11 +200,24 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 ---
 
+## NEW IDEAS (Added 2026-03-31, Cycle 79 — 20:00 CET)
+
+- **r/mcp subreddit** — 11,833+ members in official MCP Discord alone. This community was missing from our drop templates. Added full r/mcp subreddit post and MCP Discord drop in SOCIAL-MEDIA.md. Post at 10:00 CET launch day.
+- **r/ClaudeAI** — 100K+ members, AI-native audience who already understand MCP. "I gave Claude a pencil" framing will resonate. Template added to SOCIAL-MEDIA.md.
+- **New blog post** — `blog/skissify-the-mcp-server-that-creates-not-reads.md` — positions Skissify in the MCP ecosystem gap (most MCP servers READ, Skissify CREATES). Strong angle for r/mcp and MCP Discord community.
+- **T-2h tweet thread** — 3-tweet thread for 20:00 CET tonight added to SOCIAL-MEDIA.md. Ends with the curl command as proof-of-concept. "If that returns an SVG, believe me."
+- **April Fools curl proof** — the specific tweet format asking skeptics to just run a curl command is powerful. It turns doubt into engagement. Use it.
+- **MCP.so directory** — confirmed target for Day 2 submissions. Very high signal-to-noise for the right audience.
+- **Hashtag clusters finalized** — Owned low-competition cluster: `#Skissify #VibeDrawing #SketchFirst #JSONtoSVG #AIArtDirector #FlatJSON`. Claim them all on launch day.
+
 ## Post-Launch (Week 1)
 
 - **April 2 morning:** Post Day 2 thread (see `blog/april-2-day-2-momentum-playbook.md`)
 - **April 2:** Post on Indie Hackers (see `blog/indie-hackers-launch-post.md`)
+- **April 2:** Post on r/mcp + MCP Discord (templates in SOCIAL-MEDIA.md)
+- **April 2:** Post on r/ClaudeAI (template in SOCIAL-MEDIA.md)
 - **April 3:** Publish "How AI agents draw floor plans" on Dev.to + Hashnode (canonical post ready)
+- **April 3:** Publish "The MCP server that creates not reads" on Dev.to (new, will resonate strongly with MCP community)
 - Collect user feedback, ship quick fixes
 - Publish "How I built Skissify" retrospective
 - Reach out to AI/dev newsletters (TLDR, The Batch, Bytes.dev, Hashnode newsletter)

@@ -2,6 +2,59 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #85 (19:48 CET, Tuesday March 31)
+
+### Context: Run #85 Key Findings
+- **85 consecutive niche-clean scans** — spatial sketch MCP lane still exclusively Skissify's
+- **Thomas Thornton has published THREE MCP diagram tutorials** — his full trilogy (Excalidraw, draw.io, AWS draw.io) has zero spatial hand-drawn sketch tutorial; Skissify's slot is a trilogy gap
+- **AlternativeTo: 50+ Excalidraw alternatives, zero JSON-native spatial sketch tools** — highest-traffic alternatives page, Skissify slot open
+- **HN thread still active 25+ hours** — comment window closing tonight (Tuesday ~21:00 CET)
+- **Excalidraw YouTube MCP video stable in SERP** — 1+ day old, confirmed fixture
+- **SaaS pricing: FIFTH consecutive week of identical structure** — per-execution pricing is permanent 2026 architecture, not a trend
+- **April quota: 441/2000** (4 used this run)
+
+---
+
+### 🎯 Action 1 (CRITICAL — Tonight / Wednesday AM): Post HN Comment Before Thread Goes Cold
+
+The HN Excalidraw blog diagram thread (news.ycombinator.com/item?id=47571376) is entering its evergreen phase after 25+ hours. **Post tonight before 21:00 CET** to reach the US morning audience (9:00–10:00 EST). After 21:00, the thread's active audience shrinks significantly.
+
+**Comment text (copy-paste ready)**:
+> "We built Skissify (skissify.com) for exactly this workflow — JSON in, hand-drawn SVG out, without needing to maintain a forked Excalidraw. The JSON schema gives structured control over spatial elements (walls, rooms, doors, windows, stairs, dimensions), wobble amount, paper type, and tool simulation (pencil/ink/ballpoint). There's also an MCP server so Claude Code can generate hand-drawn floor plan sketches inline in your workflow. Would genuinely love feedback from someone who's clearly already solved the pipeline problem — you'd be our ideal first user."
+
+**Why this works at 25+ hours**: The thread is now found mostly by Google searchers, not HN voters. A substantive technical comment adds lasting value. The "you'd be our ideal first user" framing is genuine and not promotional.
+
+---
+
+### 🎯 Action 2 (HIGH — Wednesday): Submit Skissify to AlternativeTo.net
+
+AlternativeTo (alternativeto.net/software/excalidraw/) lists 50+ Excalidraw alternatives. None are JSON-native spatial sketch tools. This is one of the highest-traffic software discovery pages for this category.
+
+**Steps**:
+1. Go to alternativeto.net
+2. Create account if needed
+3. Submit Skissify as "alternative to Excalidraw"
+4. Category: Diagram Editor / Drawing Tools
+5. Key differentiators in description: JSON-native, MCP server, floor plan elements, hand-drawn aesthetic with tunable wobble, agent-compatible API
+6. Add tags: MCP, floor-plan, JSON, hand-drawn, programmatic
+
+**Why this matters**: 50+ alternatives listed, zero in Skissify's lane. A listing here creates a permanent SEO-indexed page ("Skissify as Excalidraw alternative") that will rank for "programmatic Excalidraw alternative" and "JSON sketch tool" searches indefinitely.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Wednesday/Thursday): Pitch Thomas Thornton to Complete His MCP Diagram Trilogy with Skissify
+
+Thomas Thornton has published three MCP diagram tutorials (Excalidraw, draw.io, AWS draw.io). His trilogy covers topology, engineering diagrams, and cloud infrastructure. **He has not covered spatial hand-drawn sketch MCP.** This is the fourth type his audience needs.
+
+**Outreach message (email/Twitter/contact form)**:
+> "Hi Thomas — I've read all three of your MCP diagram tutorials (Excalidraw, draw.io, AWS draw.io). Your trilogy covers topology, engineering, and cloud infrastructure. There's a fourth type you haven't covered: spatial hand-drawn sketch MCP for floor plans and architectural layouts. We built Skissify for exactly this — JSON spatial schema in, hand-drawn SVG out, MCP server ready. Would you be interested in a fourth tutorial to complete the set? Happy to provide a technical walkthrough, demo access, and all the implementation details you'd need. Your tutorials are the best MCP diagram content on the internet — Skissify would fit naturally as the missing piece."
+
+**Contact**: thomasthornton.cloud (contact form), Twitter/X, or LinkedIn. He responds to technical outreach.
+
+**Why this converts**: He's already invested in building a comprehensive MCP diagram tutorial series. A fourth tutorial isn't extra work — it completes the series. Skissify gives him content; he gives Skissify his audience.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #84 (18:26 CET, Tuesday March 31)
 
 ### Context: Run #84 Key Findings

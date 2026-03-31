@@ -1223,3 +1223,170 @@ Different jobs. Use both.
 But if your AI agent needs to draw? There's only one choice.
 → skissify.com
 ```
+
+---
+
+## 🆕 MCP Community Drop Templates (Added Cycle 79 — T-2h, 20:00 CET)
+
+### r/mcp Subreddit Post (post at 10:00-11:00 CET on launch day)
+
+**Title:**
+```
+Show r/mcp: Skissify — the MCP server that lets AI agents draw hand-drawn sketches
+```
+
+**Body:**
+```
+Hey r/mcp 👋
+
+I built Skissify — an MCP server that gives AI agents the ability to **draw**.
+
+Most MCP tools read/retrieve. Skissify **creates** — specifically, it creates hand-drawn sketch SVGs from JSON input.
+
+**Setup:**
+```json
+{
+  "mcpServers": {
+    "skissify": {
+      "command": "npx",
+      "args": ["skissify-mcp"]
+    }
+  }
+}
+```
+
+**What it does:**
+- Claude describes a floor plan → Skissify renders a hand-drawn SVG
+- Returns a public URL you can share, embed, or store as agent memory
+- 30+ element types: walls, doors, furniture, arrows, dimensions, text
+- REST API also available (free, no auth): `POST https://skissify.com/api/render`
+
+**Why hand-drawn?** Rough sketches signal "this is a draft — push on it." That's usually the right signal for AI-generated visuals.
+
+Curious what workflows this could fit into for people here. Happy to answer technical questions.
+
+→ skissify.com
+```
+
+---
+
+### Official MCP Discord Drop (discord.gg/model-context-protocol — #show-and-tell or #tools)
+
+```
+hey 👋 I built an MCP server that gives AI agents the ability to **draw**
+
+🖊️ **Skissify** — JSON in, hand-drawn SVG out
+
+```
+npx skissify-mcp
+```
+
+Claude asks: "sketch a floor plan for a 2BR apartment"
+Skissify returns a URL to a wobbly, hand-drawn floor plan SVG
+
+30+ element types including architectural (walls, doors, stairs, furniture) + technical (arrows, dimensions, text)
+
+REST API is also free + no auth if you want to call it directly from your own agents
+
+skissify.com — launching today on Product Hunt if anyone wants to upvote 🙏
+```
+
+---
+
+### r/ClaudeAI Post (bonus — 100K+ members, AI-native audience)
+
+**Title:**
+```
+I gave Claude a pencil — Skissify lets Claude draw hand-drawn floor plans via MCP
+```
+
+**Body:**
+```
+One of the things I always wanted was for Claude to be able to produce visual output — not describe it, not link to Figma, but actually draw something.
+
+I built Skissify for this. It's an MCP server you add to Claude Desktop:
+
+```json
+{
+  "mcpServers": {
+    "skissify": {
+      "command": "npx",
+      "args": ["skissify-mcp"]
+    }
+  }
+}
+```
+
+Then just ask Claude: "sketch a floor plan for a studio apartment."
+
+Claude constructs the JSON, calls Skissify, and returns a URL to a hand-drawn SVG that looks like something you'd sketch on a napkin.
+
+It also works via direct REST API if you build your own agents:
+`POST https://skissify.com/api/render` — free, no auth
+
+Launched today on Product Hunt. Happy to answer questions about how it works.
+
+→ skissify.com
+```
+
+---
+
+### Hashtag Clusters (2026 confirmed, for all platforms)
+
+**MCP-specific cluster:**
+`#MCP #ModelContextProtocol #ClaudeDesktop #MCPServer #AIAgents #AITools`
+
+**Developer tools cluster:**
+`#DevTools #APIFirst #OpenAPI #DeveloperExperience #BuildInPublic #IndieHacker`
+
+**Visual/design cluster:**
+`#SketchFirst #VibeDrawing #HandDrawn #Diagrams #FloorPlan #AIDesign`
+
+**Owned/low-competition (claim these):**
+`#Skissify #VibeDrawing #SketchFirst #JSONtoSVG #AIArtDirector #FlatJSON`
+
+**April 1 angle:**
+`#AprilFools #BuiltForReal #NotAJoke #ProductHunt #LaunchDay`
+
+---
+
+### Final T-2h Tweet Thread (post at 20:00 CET tonight)
+
+**Tweet 1:**
+```
+T-11 hours to launch.
+
+I've been working on this for weeks. Tomorrow it goes live on Product Hunt.
+
+Skissify: the API where you POST JSON and get a hand-drawn sketch back.
+
+The weird part? AI agents can use it natively.
+
+skissify.com ✏️
+```
+
+**Tweet 2 (reply to above):**
+```
+Here's what launching on April 1st feels like:
+
+Every post I write, I wonder if people will think it's a joke.
+
+So I'm going to lean into it.
+
+"It's April 1st. I built a diagram API. AI agents draw floor plans with it. Yes, it's real. Here's the curl command to prove it:"
+
+curl -X POST https://skissify.com/api/render -H "Content-Type: application/json" -d '{"paper":"cream","wobble":2,"elements":[{"type":"rectangle","x":50,"y":50,"width":200,"height":150},{"type":"text","x":130,"y":120,"text":"Not a Joke"}]}' --output proof.svg
+
+If that returns an SVG, believe me.
+```
+
+**Tweet 3 (reply to above):**
+```
+To everyone who said they'd upvote on Product Hunt —
+
+Tomorrow morning, 07:00 CET. That's when it goes live.
+
+I'll post the link here.
+
+Thank you in advance. It means more than you know.
+```

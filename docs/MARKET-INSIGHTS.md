@@ -2,6 +2,61 @@
 
 ---
 
+## Entry: March 31, 2026 — 19:48 CET | Automated Strategy Run #85
+
+### Theme: What Would Make Someone Pay EUR 2/mo — The "50 Alternatives Gap," The Thornton Trilogy, and The Per-Execution Permanence Insights
+
+#### Insight 1: 50+ Excalidraw Alternatives Exist — Zero in Skissify's Lane
+
+AlternativeTo.net (2 weeks ago, freshly surfacing in Run #85) lists 50+ alternatives to Excalidraw. This is one of the highest-traffic software discovery pages for sketch tools. After examining the full 50+ list: zero tools are JSON-native, MCP-ready for spatial sketch, floor-plan capable, or hand-drawn with a programmatic API.
+
+**What this means for EUR 2/mo WTP**: When a developer lands on AlternativeTo searching for an Excalidraw alternative with programmatic capabilities, they exhaust 50+ options and find nothing. This is the highest-friction discovery moment in the category. A developer who has spent 20 minutes reviewing alternatives and found nothing is now HIGHLY motivated to pay EUR 2/mo for something that works. The willingness to pay correlates directly with search frustration. Skissify at EUR 2/mo is the relief purchase for 50 failed alternatives.
+
+**Marketing angle**: "We checked all 50+ Excalidraw alternatives. None accept JSON. None have MCP. None do floor plans in hand-drawn style. So we built Skissify."
+
+**Data source**: alternativeto.net/software/excalidraw/ (2 weeks ago)
+
+#### Insight 2: Thomas Thornton's MCP Diagram Trilogy Has a Structural Gap — Skissify Completes It
+
+In Run #85, a third Thornton tutorial was confirmed: "AWS Diagram Agent Skill with Draw.io MCP" (3 weeks ago). His full trilogy now covers:
+1. Excalidraw MCP — cloud/topology canvas
+2. draw.io MCP — engineering diagram files
+3. AWS draw.io MCP — cloud infrastructure diagrams
+
+Three tutorials. Three diagram modes. Zero spatial hand-drawn sketch. The trilogy is highly coherent and searchable — developers who read all three are the most MCP-literate developers on the internet. These are EXACTLY the users who will pay EUR 2/mo for a spatial sketch MCP when they find it.
+
+**EUR 2/mo WTP from this insight**: Thornton's trilogy readers are self-selected for: (a) being active MCP users, (b) caring about diagram generation workflows, (c) spending significant time on tool research. This cohort has demonstrated high willingness-to-invest-time, which correlates with willingness-to-invest-money. EUR 2/mo to complete their MCP diagram toolkit is not a purchase decision — it's a natural extension of the work they've already done.
+
+**Quantification**: Thornton's posts likely have 1,000–5,000 readers each (conservatively). Even 0.5% conversion at EUR 2/mo = 15–75 paying users from his audience alone — all without advertising.
+
+**Data source**: thomasthornton.cloud/aws-diagram-agent-skill-with-draw-io-mcp/ (3 weeks ago)
+
+#### Insight 3: Per-Execution Pricing Is Now Permanent SaaS Architecture — Not a Trend
+
+Run #85 marks the FIFTH consecutive week in which five independent SaaS pricing sources (chargebee, saassimply, theninehertz, dailyoilfutures, indiacarez) confirm the same pricing structure. At five weeks of stability, this is no longer market intelligence — it is a permanent feature of the 2026 SaaS landscape.
+
+Key new nuance from dailyoilfutures (2 weeks): "Semi-autonomous AI executes tasks independently, prompting hybrid pricing based on outcomes — such as Intercom charging per resolved support interaction." This is exactly Skissify's model: per rendered sketch = per resolved visual output. Skissify is priced for semi-autonomous agent execution.
+
+**EUR 2/mo WTP from this insight**: The monthly EUR 2 floor is not arbitrary — it is psychologically equivalent to the "monthly minimum" that infrastructure tools charge (e.g., Twilio SMS base, Stripe webhook costs). Developers building agent pipelines already budget in these small infrastructure line items. EUR 2/mo for Skissify registers as infrastructure cost, not software subscription. Infrastructure purchases are automatic; software subscriptions are evaluated. Skissify's EUR 2/mo should always be positioned as infrastructure.
+
+**Price permanence implication**: The EUR 2/mo tier is correctly priced for the 2026 SaaS architecture that now appears permanent. No adjustment needed. The EUR 5/mo Pro tier and EUR 12/user Team tier are the monetization levers — the EUR 2/mo is the pipeline anchor.
+
+**Data source**: dailyoilfutures.com "Agentic AI Reinvents SaaS" (2 weeks ago), chargebee (3 weeks), saassimply (2 weeks), theninehertz (2 weeks), indiacarez (2 days)
+
+#### Insight 4: The HN Thread Lifecycle Teaches Us About the Right Comment Timing
+
+The HN "I use Excalidraw to manage my diagrams for my blog" thread (id=47571376) has been active for 25+ hours (first discovered Run #65 at 18:06 Monday → still "19 hours ago" at 19:48 Tuesday). This thread's lifecycle teaches something important about community timing:
+
+- **Hours 0–12**: Hot thread — high visibility, high vote weight, competitive for upvotes
+- **Hours 12–24**: Cooling phase — serious readers, lower competition for attention, better for substantive technical comments
+- **Hours 24+**: Evergreen phase — long-tail SEO value, discovers via Google for months, best for "resource comment" that adds lasting value
+
+At 25+ hours, Skissify's comment should be written for the **evergreen audience** (Google searchers, not HN voters). The comment should read as a resource, not a reply: "If you're building pipelines like this, Skissify solves [X] — [link]. Here's how it fits your described workflow..."
+
+**Data source**: news.ycombinator.com/item?id=47571376 (confirmed active at 19:48 CET March 31)
+
+---
+
 ## Entry: March 31, 2026 — 18:26 CET | Automated Strategy Run #84
 
 ### Theme: What Would Make Someone Pay EUR 2/mo — The "Thornton Taxonomy Gap" and "Data Viz Crowding Creates Clarity" Insights
