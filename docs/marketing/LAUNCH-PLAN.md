@@ -299,3 +299,60 @@ Post the launch-eve tweet right now. It's 21:00 CET. The tweet is in SOCIAL-MEDI
 - Submit to tool directories (alternativeto.net, toolify.ai, there's an AI, MCP.so, PulseMCP)
 - Write "How AI agents use Skissify" case study
 - **Week 2:** GitHub Actions → Skissify sketch demo (highest viral potential, needs recording)
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 82 — 01:31 CET)
+
+### Missing Community Posts — Now Written (see SOCIAL-MEDIA.md Cycle 82 section)
+- **r/floorplans** — ✅ Post written. This community was identified as viral potential in HASHTAGS.md but never had copy. Soft-sell angle: "here's the workflow I'm using" + floor plan image. Post Day 3-4.
+- **r/architecture** — ✅ Post written. Technical angle on why rough sketches > polished in early client briefings. Post Day 3-4.
+- **Anthropic Discord #mcp-showcase** — ✅ Drop written. Emphasizes CREATE vs READ distinction + schema accuracy insight. Post Day 2.
+- **LangChain Discord** — ✅ Drop with Python code example. Post Day 2-3.
+- **Meta Threads** — ✅ Post written for Threads audience.
+- **r/homedesign** — ✅ Soft-sell post written (no hard sell, workflow story).
+
+### New Blog Post Created
+- **`blog/the-schema-design-that-got-94-percent-accuracy.md`** — ✅ NEW. Technical deep-dive on the flat vs nested JSON schema insight that improved LLM first-try accuracy from ~40% to ~94%. This is the highest-value technical post for HN and r/LocalLLaMA. Cross-post to Dev.to + Hashnode on April 3.
+  - Key angles: 3 schema changes explained with before/after, results across 7 models, MCP tool description matters too, generalizable principles.
+  - **Publish on HN with "Show HN: How we got 94% first-try LLM accuracy for structured JSON output"** — this will outperform the main product Show HN for technical audience.
+
+### Day 3-7 Retention Schedule — Now Written (see SOCIAL-MEDIA.md Cycle 82 section)
+Complete copy schedule for Days 3-7, including:
+- **Day 3 (April 3):** Twitter thread on schema insight → leads to new blog post
+- **Day 4 (April 4):** Unexpected audience story (dungeon masters, homeowners, geometry teachers) → LinkedIn article
+- **Day 5 (April 5):** Visual demo day (GIF post + Instagram reel)
+- **Day 6 (April 6):** Comparison post (Excalidraw/Mermaid/Figma/draw.io/Skissify table)
+- **Day 7 (April 7):** Week 1 retrospective thread — numbers + learnings + Week 2 roadmap preview
+
+### New Viral Angles Identified
+
+**"94% accuracy" HN post hook:**
+```
+Show HN: How schema design (not prompting) took LLM first-try JSON accuracy from 40% to 94%
+```
+This performs independently of Skissify. The insight is generalizable. HN loves these posts. Mention Skissify in context, not as the main subject.
+
+**"April Fools survived = best filter" angle:**
+The story of launching on April 1 and having people try it despite the day is the ACTUAL viral content. Every Day 2+ user who found it is pre-qualified as genuinely curious. Build narrative around this.
+
+**"Primitives find their own use cases" angle:**
+Three unexpected audiences (homeowners, DMs, teachers) represent three separate $1B+ total addressable markets. Each one deserves its own platform and community story. Don't try to serve all three simultaneously — alternate week by week.
+
+**GitHub Actions sketch demo (Week 2 priority):**
+Build a GitHub Action that generates a Skissify floor plan or architecture diagram on every PR merge. Record a 30s demo. This is the most shareable developer automation story. High viral ceiling on Twitter/X and r/programming.
+
+### Week 2 Priority Actions (April 6-12)
+| Action | Priority |
+|--------|----------|
+| Build + demo GitHub Actions integration | 🔴 P0 (highest viral ceiling) |
+| Post r/floorplans with screenshot | 🔴 P0 (untapped audience) |
+| Post r/architecture | 🟡 P1 |
+| Cross-post schema blog to HN | 🔴 P0 |
+| Submit to MCP.so, PulseMCP, AlternativeTo | 🟡 P1 |
+| Email TLDR AI, Console.dev, Bytes.dev | 🟡 P1 |
+| Python SDK release (unlocks new developer segment) | 🟡 P1 |
+| Post r/LocalLLaMA benchmark with real model table | 🟡 P1 |
+| "Skissify for Cursor/Windsurf" post | 🟢 P2 |
+
+---

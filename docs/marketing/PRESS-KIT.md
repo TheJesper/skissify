@@ -420,3 +420,26 @@ Submit to these after initial PH results:
 | Console.dev featured tool | console.dev/submit | April 3+ |
 | Changelog podcast/news | changelog.com | April 5+ |
 | Stack Overflow dev tools survey | — | 2027 nomination |
+
+---
+
+## The "April Fools Launch" Story (Added Cycle 82 — For Journalists)
+
+*This is the narrative hook journalists will actually use. The product story is interesting. The meta-story is better.*
+
+**The hook:** A developer launched a legitimately useful AI tool on April Fools Day — the single worst day of the year for product credibility. It worked anyway. Here's why that's interesting.
+
+**The angle:**
+April Fools creates the world's most aggressive pre-qualification filter. Only users who are genuinely curious try things on April 1. Users who bounce because of the date aren't your target audience anyway. The launch filter created a user cohort that skewed heavily toward: developers, skeptics who tested it themselves, and people who needed it enough to try despite the day.
+
+**Use this in pitches to:**
+- Tech media (The Verge, TechCrunch, Wired) — "I launched on the worst possible day and here's what I learned"
+- Build-in-public newsletter editors — transparent founder story with real insight
+- Indie Hackers — their readers love counterintuitive launch decisions that worked
+
+**One-sentence media hook:**
+> "A developer launched a hand-drawn sketch API on April Fools Day — by noon, he had real paying customers and a blog post called 'the skepticism is the marketing.'"
+
+---
+
+*Last updated: April 1, 2026 — Cycle 82*

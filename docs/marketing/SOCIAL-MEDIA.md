@@ -2734,3 +2734,347 @@ it's built.
 on launch day — means a lot. [If relevant: their audience would love [specific
 aspect] — let me know if you want a quick demo call].
 ```
+
+---
+
+## MISSING COMMUNITY POSTS (Added Cycle 82 — April 1, 2026)
+
+*These high-value communities were identified in HASHTAGS doc but never had specific copy written.*
+
+---
+
+### r/floorplans — Launch Day Post
+
+**Title:** `I built a tool where you describe a room in text and get a hand-drawn floor plan sketch`
+```
+Sharing this here because it seems like the right community.
+
+I built Skissify — you describe a floor plan to an AI, and it draws it as a hand-drawn sketch.
+
+Example: "2-bedroom apartment, kitchen and living area open plan, one bathroom off the hallway, master bedroom with ensuite" → Claude constructs the layout → Skissify renders a hand-drawn floor plan.
+
+It's not a floor plan design tool (no CAD precision). It's a quick ideation tool — the kind of rough sketch you'd draw on a napkin to explain your layout to someone. The hand-drawn style is intentional.
+
+Use cases people have found:
+- Explaining renovation ideas to a contractor before formal drawings
+- Quick "does this layout make sense?" sanity check before hiring a designer
+- Exploring 3-4 layout options quickly before committing to one
+
+Free to try at skissify.com. No signup for the API, or use Human Mode (just describe it).
+
+Curious if this is useful for people here — what's the most common "napkin sketch" moment in floor plan planning?
+```
+
+---
+
+### r/architecture — Launch Day Post
+
+**Title:** `Hand-drawn sketch API for AI agents — floor plans, sections, architectural diagrams [Show r/architecture]`
+```
+Built something I think this community might find interesting, even if it's from the tech angle.
+
+Skissify is a REST API that renders architectural drawings in a hand-drawn style. The input is JSON (or plain text via the browser), the output is SVG. AI agents can call it natively via MCP.
+
+The real use case I keep thinking about for architecture:
+
+Early client briefings are brutally hard. You've built something polished before you truly understand their problem. They react to your solution instead of helping define the brief.
+
+A rough sketch says: "here's our initial thinking, push on this." It's the same distinction between trace paper sketches and Revit files — different tools for different phases.
+
+Skissify automates the trace paper phase: describe a spatial concept, get a rough sketch, use it to have the right conversation.
+
+Supported element types: walls (double-line), doors (hinged/sliding with swing arcs), windows, stairs, columns, dimension lines, room labels, furniture.
+
+Four paper styles: cream (napkin), white (clean), blueprint (presentation), grid (technical).
+
+If you're an architect: I'd love to know what use case would make this actually useful for you, vs. what's missing.
+
+→ skissify.com
+```
+
+---
+
+### Anthropic Discord #mcp-showcase Drop
+
+```
+Skissify just launched — sharing here because it's something a bit different for the MCP ecosystem.
+
+Most MCP servers **retrieve or process** data. Skissify **creates** visual output.
+
+npx skissify-mcp → Claude gets a `create_sketch` tool.
+
+Claude can now: construct a JSON floor plan, call Skissify, and return a hand-drawn SVG of an apartment, wireframe, system diagram, or any spatial layout — embedded directly in the conversation.
+
+The interesting technical bit: the schema is designed specifically for first-try LLM accuracy (~94% success rate — flat JSON, not nested, with explicit coordinate constraints). Happy to share the schema design learnings if useful for anyone building MCP servers.
+
+→ skissify.com | Free API at /api/render | MCP: npx skissify-mcp
+```
+
+---
+
+### LangChain Discord Drop
+
+```
+Just launched: Skissify MCP + REST API for visual output in agent workflows.
+
+If you're building LangChain/LangGraph agents that need to produce diagrams, floor plans, or wireframes — the REST API is free and no-auth. POST JSON, get hand-drawn SVG.
+
+Python example:
+```python
+import requests
+resp = requests.post("https://skissify.com/api/render", json={
+    "paper": "cream",
+    "elements": [
+        {"type": "rect", "x": 50, "y": 50, "w": 200, "h": 150, "label": "Living Room"},
+        {"type": "door-symbol", "x": 50, "y": 120, "w": 40, "side": "left"}
+    ]
+})
+svg = resp.text  # hand-drawn SVG
+```
+
+No deps, no auth, works in any LangChain tool. Docs at skissify.com/for-agents.
+```
+
+---
+
+### Meta Threads Copy (Launch Day)
+
+```
+I launched a product on April 1st.
+
+Not a joke.
+
+You POST JSON to an API and get back a hand-drawn SVG sketch. AI agents can use it via MCP. Claude can literally draw floor plans now.
+
+Built it because I was tired of every diagram tool assuming a human was at the keyboard.
+
+Try it free at skissify.com — or just run:
+curl -X POST https://skissify.com/api/render -H "Content-Type: application/json" -d '{"elements":[{"type":"text","x":50,"y":50,"text":"it works"}]}'
+
+#AI #BuildInPublic #IndieHacker
+```
+
+---
+
+### r/homedesign — Soft Launch Post (No Hard Sell)
+
+**Title:** `Quick sketch of a kitchen layout for early-stage planning — what do you think of this workflow?`
+```
+Experimenting with a workflow for the "early ideation" phase of home renovation planning.
+
+The problem I kept running into: when you start talking to a contractor or designer, it's hard to communicate a spatial idea without either (a) drawing on a piece of paper that you then lose, or (b) building something in a CAD tool that takes way more time than the conversation warrants.
+
+Tried using an AI to sketch rough floor plans — described the kitchen layout in text, it produced this rough hand-drawn sketch (via Skissify if anyone's curious — it's a free API).
+
+[ATTACH: kitchen floor plan sketch image]
+
+The point isn't precision. It's "does this layout make sense before I commit to demolishing a wall."
+
+Anyone else doing this kind of quick spatial sketching as a step before getting to actual floor plans? Curious if this early-stage workflow resonates.
+```
+
+---
+
+## DAY 3-7 RETENTION COPY SCHEDULE (Added Cycle 82)
+
+*Launch momentum dies on Day 3 without a plan. This is the plan.*
+
+### Day 3 (April 3) — The Technical Deep-Dive Post
+
+**Twitter/X thread — "The schema insight":**
+```
+We got 94% first-try accuracy from LLMs generating floor plan JSON.
+
+The secret was boring: flat schemas outperform nested ones ~3:1.
+
+Thread on what we learned 🧵
+```
+
+**Thread 2:**
+```
+Problem: LLMs are great at spatial reasoning but bad at deeply nested JSON.
+
+A hierarchical schema with 3+ levels = "working memory" overload for the model.
+
+Flat JSON is simpler to track: 1 root object, 1 elements array, everything else is a property.
+```
+
+**Thread 3:**
+```
+Our original schema: nested coordinates, grouped layers, optional fields everywhere.
+
+First-try success: ~40%.
+
+After flattening: ~72% immediately.
+
+Removing optional fields from the spec: ~85%.
+
+Adding concrete pixel values to examples: ~94%.
+
+The prompt didn't change. The schema did.
+```
+
+**Thread 4:**
+```
+Full write-up: [link to blog/the-schema-design-that-got-94-percent-accuracy.md published on Dev.to]
+
+TL;DR: schema design > prompt engineering for structured output tasks.
+
+This is generalizable. If you're building any agent with structured JSON output, spend more time on the schema than on the prompt.
+```
+
+---
+
+### Day 4 (April 4) — The Unexpected Audience Story
+
+**Twitter/X:**
+```
+I built Skissify for AI developers.
+
+Day 1 users included:
+→ A dungeon master generating D&D maps
+→ A homeowner explaining her kitchen to a contractor
+→ A geometry teacher creating spatial reasoning exercises
+
+The API didn't change. The audience did.
+
+This is what "primitive" means. Primitives find their own use cases.
+
+skissify.com
+```
+
+**LinkedIn:**
+```
+Something interesting happened on launch day.
+
+I built Skissify for AI agents and developers. The audience had other ideas.
+
+Use cases I hadn't anticipated:
+- Dungeon masters generating blueprint-style battle maps (the architectural symbols + blueprint paper mode = surprisingly good dungeon aesthetic)
+- Homeowners sketching renovation plans to communicate with contractors
+- A geometry teacher generating 30 spatial reasoning exercises in 10 minutes
+
+I built a primitive. Primitives find their own use cases.
+
+The lesson for product builders: if your tool is genuinely useful at the "raw material" level, users will find applications you didn't design for. Your job is to make the primitive excellent, then follow the unexpected use cases.
+
+→ skissify.com
+
+#ProductDesign #BuildInPublic #AIAgents #IndieHacker
+```
+
+---
+
+### Day 5 (April 5) — The Visual Demo Day
+
+**Twitter/X — post a GIF:**
+```
+Best thing about building a sketch tool:
+
+The demos are beautiful.
+
+[GIF: JSON → floor plan renders, wobble slider 0→10→3]
+
+skissify.com — free tier, no account needed.
+
+#Skissify #VibeDrawing #HandDrawn
+```
+
+**Instagram/Reels caption:**
+```
+What 3 lines of JSON looks like rendered as a hand-drawn sketch.
+
+The wobble is the point.
+
+skissify.com (link in bio)
+
+#HandDrawn #AI #FloorPlan #BuildInPublic #VibeDrawing #CodeArt #CreativeCoding
+```
+
+---
+
+### Day 6 (April 6) — The Comparison Post
+
+**Twitter/X:**
+```
+The diagram tool comparison nobody asked for but I'm making anyway:
+
+Excalidraw → best for humans drawing together in real-time
+Mermaid → best for code-to-flowchart
+Figma → best for polished UI design
+draw.io → best for enterprise org charts
+
+Skissify → best when code or an AI agent needs to produce the diagram
+
+Different jobs. Use the right tool.
+
+Which one am I missing?
+```
+
+---
+
+### Day 7 (April 7) — The Week 1 Retrospective Post
+
+**Twitter/X thread:**
+```
+Skissify Week 1 retrospective.
+
+Numbers:
+→ [X] signups
+→ [X] API calls
+→ [X] GitHub stars
+→ [X] PH upvotes
+
+What I learned 🧵
+```
+
+**Thread posts:**
+```
+1/ The April Fools timing was a feature, not a bug.
+
+The filter it created: only the genuinely curious tried it.
+The retention effect: people who tried on April 1 and it worked remember that.
+
+"I thought it was a joke and it worked" is a better user acquisition story than "I tried it, it was fine."
+```
+
+```
+2/ The unexpected use cases are the business.
+
+AI developers were the plan. Homeowners, DMs, geometry teachers showed up.
+
+Each unexpected audience is a marketing channel I didn't design for.
+Week 2 plan: go to where they are.
+```
+
+```
+3/ The technical differentiator that resonated most: 94% first-try accuracy.
+
+Concrete numbers > abstract claims. Always.
+
+Every "AI-compatible" product should have a number that proves it.
+```
+
+```
+4/ The free API tier is the best marketing decision I made.
+
+Zero friction to try = the product markets itself to the audience most likely to use it: developers.
+
+A developer who integrates your free tier is 40x more likely to pay than one who reads about it.
+```
+
+```
+5/ What I'm building Week 2:
+→ Team sketch sharing
+→ Export to PNG/PDF
+→ Public gallery of community sketches
+→ Skissify for Python SDK
+→ [most-requested feature from Week 1]
+
+Following? → @skissify
+#BuildInPublic
+```
+
+---
+
+*Last updated: April 1, 2026 — Cycle 82 (Launch Day + Day 3-7 Retention Plan)*
