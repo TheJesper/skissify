@@ -1,12 +1,43 @@
-name: Deploy to Hetzner
+name: Build & Deploy
 
 on:
   push:
     branches: [master]
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/${{ env.IMAGE_NAME }}:latest
+            ghcr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    # Deploy is best-effort — SSH may be firewalled
+    continue-on-error: true
     steps:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1
@@ -14,6 +45,7 @@ jobs:
           host: 65.109.62.25
           username: root
           key: ${{ secrets.HETZNER_SSH_KEY }}
+          command_timeout: 5m
           script: |
             cd /root/skissify
             git pull origin master
