@@ -47,6 +47,10 @@ const PRESET_RULES: { keywords: string[]; preset: string }[] = [
     preset: "network topology",
   },
   {
+    keywords: ["studio", "studio apartment", "open plan", "open-plan", "loft", "single room", "one room", "compact", "bookshelf", "armchair", "work from home"],
+    preset: "studio apartment",
+  },
+  {
     keywords: ["napkin", "sketch", "rough", "quick", "idea", "concept", "system", "api", "backend", "frontend", "architecture diagram", "tech", "component"],
     preset: "napkin sketch",
   },
@@ -148,6 +152,7 @@ export default function CreatePage() {
     "garden plan": "🌿",
     "napkin sketch": "✏️",
     "network topology": "🌐",
+    "studio apartment": "🛋️",
   };
 
   return (

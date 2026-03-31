@@ -705,6 +705,112 @@ export const presets: Record<string, SketchData> = {
       { type: "text", x: 50, y: 520, text: "─── Replication", fontSize: 10, color: "#dc322f" },
     ],
   },
+
+  // ── Studio Apartment ─────────────────────────────────────────────────────
+  // Showcases: desk, bookshelf, armchair, stove, shower (and sofa, bed, toilet, sink)
+  // Layout: open living/work area (left), kitchen (right top), bathroom (right bottom)
+  "studio apartment": {
+    paper: "cream",
+    tool: "ballpoint",
+    inkColor: "#111",
+    amplitude: 0.65,
+    waves: 0.6,
+    humanness: 0.12,
+    width: 900,
+    height: 650,
+    elements: [
+      // ── Outer walls ────────────────────────────────────────────────────
+      { type: "line", x1: 50, y1: 50, x2: 850, y2: 50, color: "#222", strokeWidth: 2.5 },
+      { type: "line", x1: 50, y1: 50, x2: 50, y2: 600, color: "#222", strokeWidth: 2.5 },
+      { type: "line", x1: 50, y1: 600, x2: 850, y2: 600, color: "#222", strokeWidth: 2.5 },
+      { type: "line", x1: 850, y1: 50, x2: 850, y2: 600, color: "#222", strokeWidth: 2.5 },
+
+      // Second outer wall lines (double-wall convention)
+      { type: "line", x1: 57, y1: 57, x2: 843, y2: 57, color: "#333" },
+      { type: "line", x1: 57, y1: 57, x2: 57, y2: 593, color: "#333" },
+      { type: "line", x1: 57, y1: 593, x2: 843, y2: 593, color: "#333" },
+      { type: "line", x1: 843, y1: 57, x2: 843, y2: 593, color: "#333" },
+
+      // ── Interior walls ─────────────────────────────────────────────────
+      // Vertical divider: living area | kitchen+bathroom (x=580)
+      { type: "line", x1: 580, y1: 50, x2: 580, y2: 600, color: "#222", strokeWidth: 2 },
+      { type: "line", x1: 587, y1: 50, x2: 587, y2: 600, color: "#333" },
+
+      // Horizontal divider: kitchen | bathroom (y=340)
+      { type: "line", x1: 580, y1: 340, x2: 850, y2: 340, color: "#222", strokeWidth: 2 },
+      { type: "line", x1: 580, y1: 347, x2: 850, y2: 347, color: "#333" },
+
+      // ── Doors ──────────────────────────────────────────────────────────
+      // Front door (bottom wall, left side)
+      { type: "door-symbol", x: 120, y: 600, w: 80, swing: "left", color: "#8B4513" },
+
+      // Kitchen door (in vertical wall at x=580, around y=180)
+      { type: "opening", x1: 580, y1: 170, x2: 580, y2: 250, color: "#8B4513" },
+
+      // Bathroom door (in vertical wall at x=580, around y=430)
+      { type: "door-slide", x: 580, y: 400, w: 70, color: "#8B4513" },
+
+      // ── Windows ────────────────────────────────────────────────────────
+      // Top wall windows
+      { type: "window", x1: 200, y1: 50, x2: 380, y2: 50, color: "#336" },
+      { type: "window", x1: 620, y1: 50, x2: 790, y2: 50, color: "#336" },
+
+      // Left wall window
+      { type: "window", x1: 50, y1: 200, x2: 50, y2: 350, color: "#336" },
+
+      // ── Room labels ────────────────────────────────────────────────────
+      { type: "text", x: 270, y: 530, text: "LIVING / WORK", fontSize: 18, color: "#555" },
+      { type: "text", x: 625, y: 200, text: "KÖK", fontSize: 18, color: "#555" },
+      { type: "text", x: 615, y: 490, text: "BADRUM", fontSize: 16, color: "#555" },
+
+      // ── Work zone: desk + bookshelf (against top-left wall) ────────────
+      { type: "desk", x: 65, y: 65, w: 170, h: 90, color: "#7a6a5a" },
+      { type: "text", x: 88, y: 118, text: "SKRIVBORD", fontSize: 11, color: "#7a6a5a" },
+      { type: "bookshelf", x: 245, y: 65, w: 130, h: 90, shelves: 3, color: "#8a7a6a" },
+      { type: "text", x: 263, y: 118, text: "BOKHYLLA", fontSize: 11, color: "#8a7a6a" },
+
+      // Armchair facing the window (left wall)
+      { type: "armchair", x: 65, y: 220, w: 90, h: 85, color: "#6a7a8a" },
+
+      // ── Sleeping zone: bed + nightstand (right part of living area) ────
+      { type: "bed", x: 380, y: 65, w: 170, h: 220, pillows: 2, color: "#7a8a6a" },
+      // Nightstand (small rect beside bed)
+      { type: "rect", x: 380, y: 295, w: 50, h: 50, color: "#8a7a6a" },
+      { type: "circle", cx: 405, cy: 320, r: 16, color: "#999" },
+
+      // ── Sofa / lounge zone ─────────────────────────────────────────────
+      { type: "sofa", x: 140, y: 440, w: 220, h: 80, color: "#6a7888" },
+      { type: "rect", x: 380, y: 445, w: 80, h: 70, color: "#9a8a7a" },
+      { type: "text", x: 389, y: 485, text: "SOFFBORD", fontSize: 10, color: "#999" },
+
+      // ── Kitchen zone ───────────────────────────────────────────────────
+      // Counter along top wall
+      { type: "line", x1: 594, y1: 57, x2: 843, y2: 57, color: "#999", strokeWidth: 3 },
+      { type: "line", x1: 594, y1: 90, x2: 843, y2: 90, color: "#bbb" },
+      // Stove (top-left of kitchen)
+      { type: "stove", x: 594, y: 60, w: 100, h: 80, burners: 4, color: "#666" },
+      // Sink
+      { type: "sink", x: 705, y: 62, w: 80, h: 70, color: "#888" },
+      // Counter label
+      { type: "text", x: 610, y: 155, text: "BÄNK", fontSize: 12, color: "#888" },
+      // Counter right section (L-shape)
+      { type: "line", x1: 843, y1: 57, x2: 843, y2: 200, color: "#999", strokeWidth: 3 },
+      { type: "line", x1: 815, y1: 57, x2: 815, y2: 200, color: "#bbb" },
+      // Small dining table
+      { type: "dining-table", x: 615, y: 210, w: 160, h: 90, seats: 1, color: "#8a7a6a" },
+
+      // ── Bathroom zone ──────────────────────────────────────────────────
+      { type: "toilet", x: 594, y: 358, w: 70, h: 90, color: "#999" },
+      { type: "sink", x: 700, y: 358, w: 65, h: 65, color: "#999" },
+      { type: "shower", x: 710, y: 448, w: 125, h: 130, color: "#aaa" },
+      { type: "text", x: 720, y: 518, text: "DUSCH", fontSize: 11, color: "#aaa" },
+
+      // ── Dimensions ─────────────────────────────────────────────────────
+      { type: "dim", x1: 50, y1: 30, x2: 850, y2: 30, label: "16.0 m", color: "#8B4513" },
+      { type: "dim", x1: 30, y1: 50, x2: 30, y2: 600, label: "11.0 m", color: "#8B4513", offset: -20 },
+      { type: "dim", x1: 50, y1: 620, x2: 580, y2: 620, label: "10.6 m", color: "#8B4513" },
+    ],
+  },
 };
 
 export const presetDescriptions: Record<string, string> = {
@@ -717,6 +823,7 @@ export const presetDescriptions: Record<string, string> = {
   architecture: "Building elevation/facade showing two floors, windows, door, and roof line.",
   "garden plan": "Landscape plan with house footprint, garden beds, trees, patio, and paths.",
   "network topology": "Production infrastructure diagram with load balancer, web/app servers, database cluster, cache, and monitoring.",
+  "studio apartment": "Open-plan studio apartment showcasing desk, bookshelf, armchair, stove, shower, and all furniture elements.",
 };
 
 export const defaultPreset = "plan drawing";
