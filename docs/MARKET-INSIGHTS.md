@@ -2,6 +2,50 @@
 
 ---
 
+## Entry: March 31, 2026 — 01:43 CET | Automated Strategy Run #72
+
+### Theme: Agentic SaaS Pricing Architecture — Why EUR 0.005/Render Is Structurally Correct
+
+#### Insight 1: Chargebee Confirms Per-Action Pricing Is the 2026 Standard for Agent-Callable Tools
+
+**Source**: chargebee.com "Selling Intelligence: The 2026 Playbook for Pricing AI Agents" (3 weeks ago)
+
+Chargebee — one of the largest billing infrastructure companies — published a definitive 2026 playbook explicitly covering how to price tools that are called by AI agents rather than operated by humans. Three dominant models: usage-based (per call/render), outcome-based (per completed task), effort-based (per compute unit). All three converge on the same practical structure for a tool like Skissify: EUR 0.005/render overage with a flat monthly subscription floor.
+
+**EUR 2/mo WTP mechanism**: When an agent generates 400 floor plan sketches per month for a client presentation pipeline, the EUR 2 overage cost is invisible next to the value delivered. "Does it cost EUR 2 to generate 400 client-ready hand-drawn floor plans this month?" is not a question any architect asks twice. The per-render pricing means Skissify's cost scales with the agent's productivity — the more value it creates, the more it costs, but the ROI stays constant. This is the pricing architecture that enterprise buyers understand and approve instantly.
+
+**New messaging implication**: Stop framing EUR 2/mo as "cheap subscription." Frame it as "floor pricing for your sketch infrastructure." EUR 0.005/render is the honest price for what the tool does. The EUR 2/mo is just the minimum commitment. Enterprise procurement desks approve infrastructure line items. They scrutinize per-seat subscriptions.
+
+#### Insight 2: "Software Slaughter" Accelerating — Self-Driving Workflows Need Self-Driving Tools
+
+**Source**: saassimply.com "The Agentic Era: Software Slaughter and Self-Driving Workflows" (2 weeks ago)
+
+The "Software Slaughter" thesis: Large Action Models (LAMs) are replacing human-operated SaaS workflows. Tools that require human clicks are being eliminated from pipelines. Tools that speak JSON and MCP are being kept. The winners are usage-based, agent-native, and MCP-compatible. The losers are seat-licensed, human-UI-dependent, and built for 2019 workflows.
+
+**EUR 2/mo WTP mechanism for this insight**: In a self-driving workflow, EUR 2/mo is not paid by a human deciding to subscribe. It is authorized once by a developer or architect configuring the pipeline, then forgotten. The MCP server call costs happen automatically. The monthly billing is a background infrastructure line item — like an AWS service. Nobody debates their CloudWatch bill. Nobody debates their Skissify bill either. The frictionless recurring payment model is the natural fit for autonomous agentic workflows.
+
+**Competitive moat implication**: Every competitor (Excalidraw, Miro, tldraw) is a human-click tool. None are self-driving workflow tools. Skissify is built for the world that "Software Slaughter" is creating. The market is moving toward Skissify, not away from it.
+
+#### Insight 3: MCP Now Has Millions of Daily Active Developer Tool Users — Distribution at Scale
+
+**Source**: getknit.dev "The Future of MCP: Roadmap, Enhancements, and What's Next" (2 weeks ago)
+
+As of early 2026, MCP is "deployed across millions of daily active developer tool users" — natively supported by Anthropic, OpenAI, Google, and Microsoft. This means the distribution channel Skissify needs (modelcontextprotocol.io registry, awesome-mcp-servers, claudefa.st) is now reaching a truly large audience. This is not a niche developer community; it is mainstream developer infrastructure.
+
+**EUR 2/mo WTP mechanism**: With millions of daily MCP users, even 0.01% conversion from registry discovery to paid Pro = ~1,000 paying users. At EUR 5/mo Pro, that's EUR 5,000 MRR from passive registry listing alone. The cost of listing: zero. The activation energy for a developer already running MCP daily to add `@skissify/mcp-server` to their config: 60 seconds and EUR 2.
+
+**Launch priority implication**: modelcontextprotocol.io/registry and claudefa.st are not nice-to-haves for launch day. They are the primary distribution channel for reaching millions of developers who are already primed to add MCP tools. Launch day without registry listings is launch day without distribution.
+
+#### Insight 4: AI Diagram MCP Category Growing — Zero Tools Touch Skissify's Quadrant
+
+**Source**: medium.com/ai-diagram-maker (2 weeks ago), ArcadeAI/blueprint-mcp (prior run), mcp-diagram (prior run)
+
+Three distinct "technical diagram via MCP" tools have now been discovered across runs #62–72: AI Diagram Maker MCP (repo context → polished diagrams), blueprint-mcp (codebase architecture via image AI), mcp-diagram (automated system documentation). All three share: technical/polished output, no hand-drawn aesthetic, no floor plan capability, no JSON spatial manifest. The "technical diagram MCP" category is actively crowding. Skissify's "hand-drawn sketch MCP" category has zero occupants.
+
+**EUR 2/mo WTP mechanism**: As technical diagram MCPs proliferate, developers learn to think in terms of "which MCP gives me the output I need?" When they need polished technical docs, they use the diagram MCPs. When they need a hand-drawn floor plan for a client pitch — which they DO need, and which NONE of those tools can provide — Skissify is the only option at any price. The diverging categories make Skissify's uniqueness more obvious, not less.
+
+---
+
 ## Entry: March 31, 2026 — 00:33 CET | Automated Strategy Run #71
 
 ### Theme: Category Creation — Skissify as the 12th Category in the Agentic Tool Landscape

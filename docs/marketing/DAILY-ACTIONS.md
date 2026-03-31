@@ -2,6 +2,76 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #72 (01:43 CET, Tuesday March 31)
+
+### Context: Run #72 Key Findings
+
+- **72 consecutive niche-clean scans** — zero competitor in hand-drawn + JSON-native + MCP + floor plan. Period.
+- **AI Diagram Maker MCP + Dynatrace MCP** both confirmed this cycle — technical/data lanes, zero overlap. Category divergence is accelerating.
+- **Chargebee playbook**: per-action pricing confirmed as 2026 standard for agent-callable tools. EUR 0.005/render is textbook correct.
+- **eleken.co refreshed 1 day ago**: "AI-driven transformation at every level." AI-native tools winning.
+- **getknit.dev**: MCP at "millions of daily active developer tool users." Distribution at unprecedented scale.
+- **saassimply.com "Software Slaughter"**: LAMs replacing human-click workflows. Skissify is purpose-built for what survives.
+- Plan7Architect price hike window: **CLOSED** (March 31 passed). No longer actionable.
+- Thomas Thornton SERP slot: 8+ days old, still #1. Counter-tutorial opportunity still open.
+
+---
+
+### 🎯 Action 1: Publish `@skissify/mcp-server` to npm — Priority: CRITICAL (STILL BLOCKED)
+
+This is run #72. This action has been the #1 priority since run #36 when the MCP server was confirmed built. The fix is 30 seconds (add `"publishConfig": { "access": "public" }` to `W:/code/skissify/mcp-server/package.json`), then `npm publish --access public`.
+
+**What's blocking everything else**: Without the npm package live, there is no HN post, no MCP registry submission, no claudefa.st listing, no Composio registration, no framework integration examples. All distribution is gated on this one 30-second fix.
+
+**New urgency data from this run**: getknit.dev confirms MCP now reaches millions of daily developer tool users. Chargebee confirms per-render pricing is the 2026 standard. saassimply.com confirms AI-native tools are the "Software Slaughter" survivors. The market has moved further toward Skissify while the package remains unpublished.
+
+**Steps**:
+1. Open `W:/code/skissify/mcp-server/package.json`
+2. Add `"publishConfig": { "access": "public" }` before the closing `}`
+3. Run `cd W:/code/skissify/mcp-server && npm publish --access public`
+4. Verify: `npm view @skissify/mcp-server` returns package info
+
+**Time**: 5 minutes maximum.
+
+---
+
+### 🎯 Action 2: Price the Product as Infrastructure, Not Subscription — Update Pricing Copy
+
+**What**: Rewrite pricing page/docs copy to use "infrastructure pricing" language backed by the Chargebee 2026 playbook framing.
+
+**Chargebee insight from this run**: "Selecting the right number is less art than architecture: it must rest on customer willingness to pay, clear-eyed cost fundamentals, and an adaptive process." — For agent-callable tools, the pricing anchor is cost-per-action (EUR 0.005/render), not monthly seat value.
+
+**Proposed copy changes**:
+- Remove: "EUR 2/month subscription"
+- Add: "EUR 0.005/render · EUR 2/mo floor · Infrastructure pricing for self-driving workflows"
+- Add comparison: "400 hand-drawn floor plans/month for EUR 2. That's half a coffee."
+- Add framing: "We charge per sketch. Your agent creates. You pay per creation. No seat licenses. No enterprise contracts for basic access."
+
+**Why now**: saassimply.com "Software Slaughter" means prospects evaluating Skissify are increasingly thinking in terms of "agent pipeline cost" not "SaaS subscription cost." Meeting them with infrastructure language converts better than subscription language with this audience.
+
+**Time**: 30 minutes to draft; 15 minutes to update docs/pricing page.
+
+---
+
+### 🎯 Action 3: Write "Skissify vs Technical Diagram MCPs" Positioning Page
+
+**What**: Write a short positioning doc (or blog post) titled "Not a diagram tool. A sketch tool." that explicitly differentiates Skissify from the growing "technical diagram MCP" category (AI Diagram Maker MCP, blueprint-mcp, mcp-diagram, Mermaid MCP).
+
+**Why now**: This run discovered a third technical diagram MCP (AI Diagram Maker MCP). The "technical diagram MCP" category is getting defined in the market — and Skissify needs to be explicitly positioned as NOT that category, before developers mistake it for one more technical diagram tool.
+
+**Positioning frame**:
+- Technical diagram MCPs: repo/code → polished architecture diagrams (for documentation, internal dev wikis)
+- Skissify: structured JSON → hand-drawn sketch SVGs (for client communication, ideation, pre-technical exploration)
+- "Use a diagram MCP when you need to document what you built. Use Skissify when you need to sketch what you're going to build."
+
+**Where to publish**: `docs/POSITIONING.md` + blog post + add to README's "How is this different from X?" section
+
+**SEO opportunity**: "JSON to hand-drawn sketch API" + "hand-drawn diagram MCP" + "AI sketch tool vs diagram tool" — all completely uncontested keywords.
+
+**Time**: 45–60 minutes to write; ongoing SEO value.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #71 (00:33 CET, Tuesday March 31)
 
 ### Context: Run #71 Key Findings

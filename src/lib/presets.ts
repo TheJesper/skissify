@@ -116,35 +116,94 @@ export const presets: Record<string, SketchData> = {
     width: 900,
     height: 650,
     metadata: {
-      title: "FLOOR PLAN",
+      title: "FLOOR PLAN — UNIT A",
       owner: "Sample Residence",
       scale: "1:100",
       sheetNumber: "A-001",
+      drawnBy: "Skissify",
     },
     elements: [
-      // Outer walls
-      { type: "line", x1: 60, y1: 60, x2: 840, y2: 60, color: "#222" },
-      { type: "line", x1: 840, y1: 60, x2: 840, y2: 590, color: "#222" },
-      { type: "line", x1: 840, y1: 590, x2: 60, y2: 590, color: "#222" },
-      { type: "line", x1: 60, y1: 590, x2: 60, y2: 60, color: "#222" },
-      // Inner rooms
-      { type: "rect", x: 80, y: 80, w: 250, h: 200, color: "#333" },
-      { type: "rect", x: 370, y: 80, w: 200, h: 200, color: "#333" },
-      { type: "rect", x: 610, y: 80, w: 200, h: 250, color: "#333" },
-      { type: "rect", x: 80, y: 320, w: 350, h: 240, color: "#333" },
-      { type: "rect", x: 470, y: 370, w: 340, h: 190, color: "#333" },
-      // Labels
-      { type: "text", x: 150, y: 190, text: "BEDROOM 1", fontSize: 16, color: "#222" },
-      { type: "text", x: 420, y: 190, text: "KITCHEN", fontSize: 16, color: "#222" },
-      { type: "text", x: 660, y: 210, text: "LIVING", fontSize: 16, color: "#222" },
-      { type: "text", x: 190, y: 450, text: "MASTER BEDROOM", fontSize: 16, color: "#222" },
-      { type: "text", x: 580, y: 475, text: "BATHROOM", fontSize: 16, color: "#222" },
-      // Dimensions
-      { type: "dim", x1: 60, y1: 40, x2: 840, y2: 40, label: "15.6 m", color: "#666" },
-      { type: "dim", x1: 40, y1: 60, x2: 40, y2: 590, label: "10.6 m", color: "#666" },
-      // Windows
-      { type: "window", x1: 140, y1: 60, x2: 270, y2: 60, color: "#666" },
-      { type: "window", x1: 620, y1: 60, x2: 780, y2: 60, color: "#666" },
+      // ── Outer walls (double-line, blueprint white) ──────────────────────────
+      { type: "line", x1: 60, y1: 60, x2: 840, y2: 60, color: "#d8eaff", strokeWidth: 2.5 },
+      { type: "line", x1: 840, y1: 60, x2: 840, y2: 590, color: "#d8eaff", strokeWidth: 2.5 },
+      { type: "line", x1: 840, y1: 590, x2: 60, y2: 590, color: "#d8eaff", strokeWidth: 2.5 },
+      { type: "line", x1: 60, y1: 590, x2: 60, y2: 60, color: "#d8eaff", strokeWidth: 2.5 },
+      // Inner outer wall
+      { type: "line", x1: 68, y1: 68, x2: 832, y2: 68, color: "#d8eaff" },
+      { type: "line", x1: 832, y1: 68, x2: 832, y2: 582, color: "#d8eaff" },
+      { type: "line", x1: 832, y1: 582, x2: 68, y2: 582, color: "#d8eaff" },
+      { type: "line", x1: 68, y1: 582, x2: 68, y2: 68, color: "#d8eaff" },
+
+      // ── Interior walls ───────────────────────────────────────────────────────
+      // Horizontal divider (separates bedrooms/kitchen from living area)
+      { type: "line", x1: 60, y1: 330, x2: 530, y2: 330, color: "#d8eaff", strokeWidth: 2 },
+      { type: "line", x1: 60, y1: 337, x2: 530, y2: 337, color: "#d8eaff" },
+      // Vertical divider: bedroom 1 vs kitchen
+      { type: "line", x1: 320, y1: 60, x2: 320, y2: 330, color: "#d8eaff", strokeWidth: 2 },
+      { type: "line", x1: 327, y1: 60, x2: 327, y2: 330, color: "#d8eaff" },
+      // Vertical divider: kitchen vs living/hall
+      { type: "line", x1: 530, y1: 60, x2: 530, y2: 590, color: "#d8eaff", strokeWidth: 2 },
+      { type: "line", x1: 537, y1: 60, x2: 537, y2: 590, color: "#d8eaff" },
+      // Bathroom wall (horizontal)
+      { type: "line", x1: 530, y1: 390, x2: 730, y2: 390, color: "#d8eaff", strokeWidth: 2 },
+      { type: "line", x1: 530, y1: 397, x2: 730, y2: 397, color: "#d8eaff" },
+      // Bathroom wall (vertical, right side)
+      { type: "line", x1: 730, y1: 390, x2: 730, y2: 590, color: "#d8eaff", strokeWidth: 2 },
+      { type: "line", x1: 737, y1: 390, x2: 737, y2: 590, color: "#d8eaff" },
+
+      // ── Room labels ──────────────────────────────────────────────────────────
+      { type: "text", x: 130, y: 205, text: "BEDROOM 1", fontSize: 15, color: "#d8eaff" },
+      { type: "text", x: 355, y: 200, text: "KITCHEN", fontSize: 15, color: "#d8eaff" },
+      { type: "text", x: 620, y: 205, text: "LIVING ROOM", fontSize: 15, color: "#d8eaff" },
+      { type: "text", x: 140, y: 460, text: "MASTER BEDROOM", fontSize: 14, color: "#d8eaff" },
+      { type: "text", x: 565, y: 480, text: "BATHROOM", fontSize: 13, color: "#d8eaff" },
+      { type: "text", x: 760, y: 480, text: "HALL", fontSize: 13, color: "#d8eaff" },
+
+      // ── Windows ──────────────────────────────────────────────────────────────
+      { type: "window", x1: 110, y1: 60, x2: 260, y2: 60, color: "#a8c8ff" },
+      { type: "window", x1: 570, y1: 60, x2: 790, y2: 60, color: "#a8c8ff" },
+      { type: "window", x1: 60, y1: 130, x2: 60, y2: 280, color: "#a8c8ff" },
+      { type: "window", x1: 60, y1: 390, x2: 60, y2: 540, color: "#a8c8ff" },
+      { type: "window", x1: 840, y1: 100, x2: 840, y2: 290, color: "#a8c8ff" },
+
+      // ── Doors ────────────────────────────────────────────────────────────────
+      { type: "door-symbol", x: 240, y: 330, w: 65, swing: "right", color: "#a8c8ff" },
+      { type: "door-symbol", x: 530, y: 200, w: 60, swing: "left", color: "#a8c8ff" },
+      { type: "door-symbol", x: 730, y: 480, w: 60, swing: "right", color: "#a8c8ff" },
+      { type: "door-symbol", x: 810, y: 590, w: 65, swing: "left", color: "#a8c8ff" },
+
+      // ── Dimensions ──────────────────────────────────────────────────────────
+      { type: "dim", x1: 60, y1: 40, x2: 840, y2: 40, label: "15.6 m", color: "#8ab8e8" },
+      { type: "dim", x1: 38, y1: 60, x2: 38, y2: 590, label: "10.6 m", color: "#8ab8e8", offset: -20 },
+
+      // ── Stair in hall ────────────────────────────────────────────────────────
+      { type: "stair", x: 660, y: 80, w: 65, h: 150, steps: 9, color: "#8ab8e8" },
+
+      // ── Furniture: BEDROOM 1 (x=68..319, y=68..328) ──────────────────────────
+      { type: "bed", x: 80, y: 80, w: 155, h: 105, pillows: 2, color: "#8ab8e8" },
+      { type: "rect", x: 245, y: 83, w: 38, h: 30, color: "#7aa8d8" },  // nightstand
+
+      // ── Furniture: KITCHEN (x=328..529, y=68..328) ────────────────────────────
+      { type: "stove", x: 335, y: 75, w: 85, h: 60, burners: 4, color: "#8ab8e8" },
+      { type: "dining-table", x: 340, y: 185, w: 120, h: 100, seats: 2, color: "#8ab8e8" },
+
+      // ── Furniture: LIVING ROOM (x=545..832, y=68..328) ─────────────────────────
+      { type: "sofa", x: 555, y: 250, w: 190, h: 70, color: "#7aa8d8" },
+      { type: "armchair", x: 762, y: 248, w: 62, h: 62, color: "#7aa8d8" },
+      { type: "rect", x: 620, y: 150, w: 110, h: 60, color: "#7aa8d8" },  // coffee table
+
+      // ── Furniture: MASTER BEDROOM (x=68..529, y=345..582) ──────────────────────
+      { type: "bed", x: 80, y: 360, w: 185, h: 125, pillows: 2, color: "#8ab8e8" },
+      { type: "rect", x: 276, y: 363, w: 42, h: 36, color: "#7aa8d8" },  // nightstand
+      { type: "rect", x: 380, y: 360, w: 130, h: 65, color: "#7aa8d8" },  // wardrobe
+
+      // ── Furniture: BATHROOM (x=545..729, y=405..582) ────────────────────────────
+      { type: "toilet", x: 548, y: 408, w: 52, h: 72, color: "#8ab8e8" },
+      { type: "sink", x: 615, y: 408, w: 50, h: 48, color: "#8ab8e8" },
+      { type: "bathtub", x: 548, y: 492, w: 165, h: 82, color: "#8ab8e8" },
+
+      // ── Column / structural ──────────────────────────────────────────────────
+      { type: "column", cx: 534, cy: 333, size: 10, color: "#d8eaff" },
     ],
   },
 
