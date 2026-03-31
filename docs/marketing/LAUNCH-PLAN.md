@@ -1,7 +1,7 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: March 31, 2026 (T-1 day)**
+**Current Date: April 1, 2026 (LAUNCH DAY — Day 2 prep cycle complete)**
 
 ---
 
@@ -242,17 +242,60 @@ Post the launch-eve tweet right now. It's 21:00 CET. The tweet is in SOCIAL-MEDI
 
 ---
 
+## NEW IDEAS (Added 2026-04-01, Cycle 81 — Day 2 Prep)
+
+### Key Insights from Web Research
+- **Windsurf + Cursor + Claude Code** are the top dev tools in April 2026. All support MCP. Target users of all three — "Add Skissify to your [Cursor/Windsurf/Claude Code] workflow" is a relevant hook.
+- **"AI dev tool power rankings"** articles are trending on LogRocket, Dev.to etc. Get Skissify mentioned in one of these roundups. Pitch to blog editors directly.
+- **86% of creators use AI daily** (2026 stat). The audience for AI-native tools is now mainstream, not just early adopters.
+- **Reddit AI communities punish hype** — lead with "here's the curl command, try it yourself" format. Never make claims without evidence.
+- **Determinism is the underused angle vs DALL-E/Midjourney** for floor plans — "doesn't hallucinate proportions" is a concrete differentiator against image-gen tools.
+
+### New Content Angles for Day 2+
+- **"I launched on April Fools. Here's what happened."** — the retrospective with real numbers. Post Day 2 morning. This is the highest-performing BuildInPublic format.
+- **"Skissify for Cursor/Windsurf"** blog post — both tools support MCP. "Add a drawing tool to your vibe-coding environment" is a strong hook for the vibe-coding audience.
+- **LLM benchmark post** — test Skissify's JSON schema across 7 models, post results to r/LocalLLaMA. Technical credibility + shareable.
+- **"Deterministic vs generative" diagram angle** — position against DALL-E/Stable Diffusion for technical diagrams. "Same input, same output. No hallucinated geometry." Strong hook for r/artificial.
+- **GitHub Actions demo** — "Your PR now includes a sketch" is the most concrete automation story. Build this for Week 2. It's video-worthy.
+
+### Day 2 Priority Posts (April 2, 2026)
+| Time (CET) | Action | Template Location |
+|------------|--------|-------------------|
+| 07:00 | Twitter/X Day 2 thread (numbers + product hook) | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 08:00 | LinkedIn Day 2 post | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 09:00 | Reddit r/mcp | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 10:00 | Reddit r/ClaudeAI | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 11:00 | Reddit r/webdev | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 12:00 | Twitter comparison tweet | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 13:00 | Publish Day 2 blog post on Dev.to | `blog/how-ai-agents-draw-floor-plans-LAUNCH-DAY2.md` |
+| 14:00 | Instagram/Reels Day 2 post | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 16:00 | HN comment update (if thread alive) | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+| 20:00 | Day 2 wrap tweet | SOCIAL-MEDIA.md → DAY 2 QUEUE |
+
+### Blog Posts Ready for Day 2+ Publishing
+| Post | File | Platform Target |
+|------|------|----------------|
+| Why hand-drawn beats Figma (Day 2 edition) | `blog/why-hand-drawn-sketches-beat-figma-LAUNCH-DAY2.md` | LinkedIn Article, Hashnode |
+| How AI agents draw floor plans (Day 2 edition) | `blog/how-ai-agents-draw-floor-plans-LAUNCH-DAY2.md` | Dev.to, r/mcp, HN |
+| Skissify vs Excalidraw (Day 2 edition) | `blog/skissify-vs-excalidraw-LAUNCH-DAY2.md` | Reddit, Indie Hackers |
+
+*Note: These are tighter (600-700 word) platform-optimized versions alongside the longer CANONICAL posts. Use the Day 2 versions for platform drops, CANONICAL versions for SEO/long-form.*
+
+---
+
 ## Post-Launch (Week 1)
 
-- **April 2 morning:** Post Day 2 thread (see `blog/april-2-day-2-momentum-playbook.md`)
-- **April 2:** Post on Indie Hackers (see `blog/indie-hackers-launch-post.md`)
-- **April 2:** Post on r/mcp + MCP Discord (templates in SOCIAL-MEDIA.md)
-- **April 2:** Post on r/ClaudeAI (template in SOCIAL-MEDIA.md)
-- **April 3:** Publish "How AI agents draw floor plans" on Dev.to + Hashnode (canonical post ready)
-- **April 3:** Publish "The MCP server that creates not reads" on Dev.to (new, will resonate strongly with MCP community)
+- **April 2 morning:** ⏳ Post Day 2 thread (see `blog/april-2-day-2-momentum-playbook.md` + `SOCIAL-MEDIA.md DAY 2 QUEUE`)
+- **April 2:** ⏳ Post on Indie Hackers (see `blog/indie-hackers-launch-post.md`)
+- **April 2:** ⏳ Post on r/mcp + MCP Discord (templates in SOCIAL-MEDIA.md DAY 2 QUEUE)
+- **April 2:** ⏳ Post on r/ClaudeAI (template in SOCIAL-MEDIA.md DAY 2 QUEUE)
+- **April 3:** ⏳ Publish "How AI agents draw floor plans" on Dev.to + Hashnode (use LAUNCH-DAY2 version)
+- **April 3:** ⏳ Publish "The MCP server that creates not reads" on Dev.to (new, will resonate strongly with MCP community)
+- **April 3:** ⏳ Pitch TLDR AI, Console.dev, Bytes.dev (templates in PRESS-KIT.md)
+- **April 4-5:** ⏳ Post r/LocalLLaMA LLM benchmark (write benchmark first, then post)
+- **April 5+:** ⏳ Post r/artificial "deterministic vs generative" angle
 - Collect user feedback, ship quick fixes
 - Publish "How I built Skissify" retrospective
-- Reach out to AI/dev newsletters (TLDR, The Batch, Bytes.dev, Hashnode newsletter)
-- Submit to tool directories (alternativeto.net, toolify.ai, there's an AI, MCP.so)
+- Submit to tool directories (alternativeto.net, toolify.ai, there's an AI, MCP.so, PulseMCP)
 - Write "How AI agents use Skissify" case study
-- GitHub Actions → Skissify sketch demo (Week 2 content, high viral potential)
+- **Week 2:** GitHub Actions → Skissify sketch demo (highest viral potential, needs recording)

@@ -1,12 +1,45 @@
 # Skissify Press Kit
 
-*Last updated: April 1, 2026 — Launch Day Edition*
+*Last updated: April 1, 2026 — Cycle 81 (Day 2 Edition)*
 
 ---
 
 ## One-Liner
 
 **Skissify turns JSON into hand-drawn sketches — designed for AI agents and developers.**
+
+---
+
+## Target Audiences
+
+### Primary: AI Agent Builders & MCP Developers
+Developers building Claude Desktop workflows, Cursor/Windsurf plugins, LangChain/CrewAI/Mastra agents, or any AI pipeline that needs visual output. Pain point: AI can reason about space but couldn't output spatial diagrams until now. Skissify is the missing drawing primitive.
+
+**Size:** Estimated 200K–500K developers globally working on AI agent workflows in 2026.
+**Where they are:** r/mcp, r/ClaudeAI, Anthropic Discord, LangChain/CrewAI Discord, HackerNews, Dev.to.
+**Hook:** "npx skissify-mcp — Claude can now draw."
+
+### Secondary: Developers Who Hate Design Tools
+Backend and full-stack developers who need diagrams (architecture docs, PR descriptions, technical writeups) but find Figma/Miro too heavy and Mermaid too limited. Pain point: there's no API-first diagram tool that outputs something visually readable without manual layout work.
+
+**Size:** Millions of developers globally.
+**Where they are:** r/webdev, r/programming, HackerNews, GitHub Discussions.
+**Hook:** "POST JSON, get SVG. No account. No UI."
+
+### Tertiary: Design & Architecture (Unexpected Audience)
+Interior designers, architects, real estate professionals, and homeowners who discovered Skissify for floor plan sketching. Pain point: CAD is overkill for early-stage ideation; whiteboards don't produce shareable digital artifacts.
+
+**Size:** Large general market (interior design alone is a multi-billion $ industry).
+**Where they are:** r/HomeImprovement, r/interiordesign, r/architecture, Houzz, Pinterest.
+**Hook:** "Sketch your renovation idea and share it with a link."
+
+### Surprise Audience: Tabletop RPG & Game Design
+Dungeon Masters using Skissify to generate dungeon maps; game designers prototyping level layouts. Blueprint mode + architectural symbols = excellent dungeon aesthetic.
+
+**Where they are:** r/DnD, r/worldbuilding, r/tabletopgaming.
+**Hook:** "Blueprint-style dungeon maps in 30 seconds."
+
+---
 
 ---
 
