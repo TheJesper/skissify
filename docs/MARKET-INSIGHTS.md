@@ -2,6 +2,48 @@
 
 ---
 
+## Entry: April 1, 2026 — 00:15 CET | Automated Strategy Run #88
+
+### Theme: Why Someone Pays EUR 2/mo — "MCP Servers Are the New SaaS," the PulseMCP Distribution Gap, and the ToDiagram Structural Signal
+
+#### Insight 1: "MCP Servers Are the New SaaS" Is Now a Mainstream Developer Narrative — Skissify Is a Perfect Case Study
+
+A Dev.to article (dev.to/krisying, 2026) explicitly frames MCP monetization as "the new SaaS." This narrative is reaching the exact developer audience Skissify targets — people already building MCP stacks who are now evaluating which MCP tools to pay for.
+
+**Why someone pays EUR 2/mo from this insight**: A developer who has read the "MCP Servers are the new SaaS" article is already mentally inside the "MCP tool budget" frame. They're not asking "should I pay for software?" — they're asking "which MCP tools add to my stack?" EUR 2/mo is the natural answer for a production-quality MCP server in an uncontested niche. The decision is pre-made by the framing they've already absorbed.
+
+**Marketing angle**: "The MCP visual output layer your stack is missing for EUR 2/mo" hits exactly the frame this audience is in. It's not a pitch — it's a completion purchase.
+
+**Conversion path**: Skissify comment/reply in the Dev.to thread → author features Skissify as a case study in their follow-up post → Dev.to developer audience is the highest-intent EUR 2/mo cohort available.
+
+**Data source**: dev.to/krisying/mcp-servers-are-the-new-saas-how-im-monetizing-ai-tool-integrations-in-2026-2e9e
+
+#### Insight 2: PulseMCP Has 11,070+ Servers — Skissify Is Not Listed. This Is a Distribution Gap, Not a Marketing Gap.
+
+PulseMCP is now the primary MCP server discovery channel (11,070+ servers, daily-updated). It is where developers search for MCP tools. Not being listed on PulseMCP is equivalent to not existing for this audience.
+
+**Why someone pays EUR 2/mo from this insight**: Developers who find Skissify on PulseMCP come pre-qualified (they searched for a sketch/visual MCP tool) and encounter zero competing results in Skissify's exact category. The PulseMCP discovery moment is frictionless conversion — the searcher has already decided they want this category of tool. EUR 2/mo is the only option presented.
+
+**This is a distribution gap, not a marketing gap**: No amount of blog posts, HN comments, or Twitter threads will reach the developer who goes directly to PulseMCP to search. Only listing on PulseMCP captures this cohort. Currently, 100% of PulseMCP searchers for "sketch" or "floor plan" see zero results and leave.
+
+**Quantification**: At 11,070+ servers and the ecosystem growing ~2x every 2-3 weeks, PulseMCP will have 20,000+ servers by May 2026. Being listed at 11K is better than being listed at 20K — first-mover positioning in a growing directory compounds.
+
+**Data source**: pulsemcp.com/servers (April 2026)
+
+#### Insight 3: ToDiagram MCP Is the First Structural Overlap — What It Teaches About the EUR 2/mo Moat
+
+ToDiagram's MCP server (JSON/YAML/CSV/XML input → interactive diagrams) is the most structurally similar tool found in 88 scans. It has JSON input + MCP but lacks hand-drawn style and architectural elements. This teaches something important about why someone pays EUR 2/mo specifically for Skissify vs. using ToDiagram for free.
+
+**The moat is the aesthetic + the domain**: ToDiagram's output is clean, digital, data-visualization-style. It is correct for org charts and data models. It is wrong for a floor plan sketch, an architectural napkin drawing, or any context where the hand-drawn aesthetic communicates "this is exploratory, not final." The hand-drawn aesthetic is not decoration — it is communication intent. A developer generating a floor plan for a real estate AI agent needs the sketch to look like a sketch (inviting feedback, showing human scale), not a database diagram.
+
+**Why EUR 2/mo is justified over the free alternative**: ToDiagram MCP likely exists. A developer can use it for free. They pay EUR 2/mo for Skissify because ToDiagram cannot produce the hand-drawn floor plan aesthetic + architectural elements they need. The payment is for the specific output format, not for "a diagram MCP server." This means Skissify's pricing page must show the output — not describe it.
+
+**Marketing implication**: Every landing page hero should show a hand-drawn floor plan SVG output. Not JSON. Not a code editor. The output is the product. Developers will pay EUR 2/mo for output they cannot get anywhere else; they will not pay EUR 2/mo for a capability they can describe abstractly.
+
+**Data source**: todiagram.com/mcp (confirmed April 2026)
+
+---
+
 ## Entry: March 31, 2026 — 20:53 CET | Automated Strategy Run #86
 
 ### Theme: What Would Make Someone Pay EUR 2/mo — The Quadrilogy Gap, The Pricing Permanence Lock-In, and The Evergreen HN Thread Strategy

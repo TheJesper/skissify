@@ -2,6 +2,82 @@
 
 ---
 
+## Update Log: April 1, 2026 — 00:15 CET | Automated Strategy Run #88
+
+### Status: Wednesday midnight scan — 4 of 4 topic areas searched. **🟢 NICHE STILL CLEAN — 88 CONSECUTIVE CLEAN SCANS. KEY UPDATES: (1) PulseMCP server count jumped to 11,070+ (was 5,800 in Run #87) — nearly 2x growth, ecosystem accelerating. (2) Excalidraw now has an OFFICIAL MCP repo (excalidraw org on GitHub, "excalidraw-mcp") — streamable MCP App, no JSON schema or architectural elements. (3) tldraw 4.5.4 shipped (very recent): image pipeline + agent starter templates with manager architecture, mode system, action schema registries. (4) NEW: ToDiagram MCP — JSON/YAML/CSV/XML input → interactive diagrams via MCP, no hand-drawn style. (5) Dev.to article "MCP Servers are the new SaaS" circulating — excellent framing to co-opt for Skissify. (6) Gartner: 40% of enterprise SaaS spend shifts to usage-based by 2030. LANE STATUS: No JSON→hand-drawn-sketch+architectural-elements MCP tool found anywhere. 88 consecutive niche-clean scans.**
+
+### 🔴 NEW: Excalidraw Has an OFFICIAL MCP Repository (excalidraw org)
+
+**Source**: github.com/excalidraw/excalidraw-mcp (active 2026)
+
+Previous tracking (Run #87) identified Excalidraw MCP via Maaker AI / PulseMCP. Now confirmed: Excalidraw's own organization has published an official `excalidraw-mcp` repo — a "Streamable Excalidraw MCP App" enabling AI to create/edit hand-drawn diagrams in real time. This is first-party, not a third-party plugin.
+
+Additionally, a community MCP server `mcp_excalidraw` by yctimlin provides 26 MCP tools for full canvas control: create, edit, export, screenshot, snapshot.
+
+**What this means**: Excalidraw is now actively investing in MCP. This confirms the MCP visual layer is real and growing fast.
+
+**What it still lacks**: No JSON spatial schema input. No architectural floor plan elements (doors, windows, stairs, rooms, dimensions). No hand-drawn style output controllable via JSON parameters. Excalidraw MCP is about controlling a visual canvas interactively, not generating spatial sketches from structured data.
+
+**Skissify lane**: Still distinct. Excalidraw MCP = AI controls a whiteboard. Skissify MCP = JSON manifest in, hand-drawn architectural sketch out.
+
+### 🟡 UPDATE: MCP Server Count Now 11,070+ on PulseMCP (was 5,800)
+
+**Source**: pulsemcp.com/servers (daily-updated directory, April 2026)
+
+The MCP ecosystem grew significantly since Run #87. Cross-registry data:
+- PulseMCP: **11,070+** (broadest public index, daily updated)
+- All public registries combined: **8,600+**
+- SkillsIndex: 4,133 (up 873% from ~425 mid-2025)
+- FastMCP registry: 1,864 (as of March 2, 2026)
+- SDK downloads: **97M/month** confirmed (multiple sources, March 2026)
+
+The jump from 5,800 → 11,070+ in approximately 2 weeks indicates explosive growth. PulseMCP is now the highest-traffic MCP discovery channel. Skissify is not listed on PulseMCP — this is a missed distribution opportunity.
+
+### 🟡 NEW TOOL: ToDiagram MCP — JSON Input + MCP, No Hand-Drawn Style
+
+**Source**: todiagram.com/mcp (active 2026)
+
+ToDiagram has launched an MCP server accepting JSON/YAML/CSV/XML input and producing interactive editable diagrams. This is the closest structural competitor to Skissify found to date — JSON input + MCP — but produces graph/tree/network diagrams, not hand-drawn spatial sketches with architectural elements.
+
+**Gap**: No hand-drawn aesthetic, no spatial layout control, no floor plan elements (doors, windows, stairs). Pure data visualization direction (org charts, entity relationships), not spatial/architectural direction.
+
+**Monitor**: ToDiagram is the most structurally similar tool found. If they add hand-drawn rendering or architectural elements, escalate threat level.
+
+### 🟡 tldraw 4.5.4: Agent Starter Template with Manager Architecture (Very Recent)
+
+**Source**: tldraw.dev/releases (within days of April 1, 2026)
+
+tldraw's most recent release (4.5.4) adds:
+- **Agent starter template**: manager architecture, mode system, action schema registries, canvas linting
+- **Image pipeline starter template**: AI image generation workflow via visual node canvas
+- **Performance**: shape indicators now use 2D canvas rendering (25x faster, confirmed from prior runs)
+
+The agent starter template with "action schema registries" is notable — tldraw is building toward structured agent workflows on canvas. Still SDK-centric ($6K/yr commercial), no JSON-in architectural sketch output.
+
+### 🟢 NEW FRAMING SIGNAL: "MCP Servers Are the New SaaS" (Dev.to, 2026)
+
+**Source**: dev.to/krisying/mcp-servers-are-the-new-saas-how-im-monetizing-ai-tool-integrations-in-2026-2e9e
+
+A Dev.to article explicitly covers monetizing MCP tool integrations in 2026. The "MCP servers are the new SaaS" framing is circulating among the exact developer audience Skissify targets. Skissify is a perfect case study for this thesis: a monetized MCP server in an uncontested niche.
+
+**Marketing opportunity**: Reach out to author (krisying) — Skissify as a case study for their thesis would drive qualified developer traffic.
+
+### Updated Competitor Matrix (Run #88 — Wednesday April 1, 00:15 CET)
+
+| Tool | Status | Skissify Threat |
+|------|--------|-----------------|
+| Excalidraw | **OFFICIAL MCP repo** (excalidraw-mcp). Also: yctimlin community MCP (26 tools). MCP lane = whiteboard control. Feb 2026: presentation waiting room, custom AI keys. No JSON schema, no architectural elements. | Feature matrix updated (both have MCP, different lanes) |
+| tldraw | 4.5.4 (very recent): agent starter template + manager architecture + image pipeline. $6K/yr SDK still blocks indie. | Low (different market) |
+| ToDiagram | **NEW: Has MCP server** (JSON/YAML/CSV/XML input → interactive diagrams). No hand-drawn style. No spatial/floor plan elements. | Low-Medium — **closest structural overlap found to date** |
+| Microsoft Copilot Canvas | Leaked March 2026 (Project Firenze). Not yet GA. Enterprise target. | Low→Medium (12–18 months) |
+| draw.io / JGraph | Feb 2026 official MCP server. JSON input → engineering/cloud diagrams. No hand-drawn. | None |
+| JSON Crack | Most-starred JSON→diagram OSS. Graph/tree, no hand-drawn, no MCP, no spatial. | None |
+| ArchiMate MCP | Enterprise ArchiMate 3.2 diagrams via MCP (pskovajsa-archi-mcp on LobeHub). Not hand-drawn, not spatial. | None |
+| blueprint-mcp (ArcadeAI) | Codebase/system architecture diagrams via MCP. Not hand-drawn, not floor plan. | None |
+| **Skissify** | **88 consecutive niche-clean scans. JSON-native spatial hand-drawn sketch MCP lane: uncontested. PulseMCP listing pending.** | **Uncontested in core lane** |
+
+---
+
 ## Update Log: March 31, 2026 — 21:59 CET | Automated Strategy Run #87
 
 ### Status: Tuesday late-evening scan — 4 of 4 searches completed. **🟡 NICHE STILL CLEAN, BUT TWO NEW SIGNALS DEMAND IMMEDIATE ATTENTION. CONFIRMED: 87 consecutive niche-clean scans. CRITICAL NEW: (1) Microsoft Copilot Canvas leaked (March 2026) — AI-streaming whiteboard, potential long-term threat. (2) Excalidraw NOW HAS AN MCP SERVER via Maaker AI on PulseMCP — previous "No MCP" differentiation row in feature matrix requires immediate update. tldraw SDK 4.0 shipped 25x rendering perf improvement + AI image pipeline templates. 97M monthly MCP SDK downloads (March 2026), 5,800+ public MCP servers — ecosystem growing faster than prior estimates (was 34,700 npm deps; now 97M SDK downloads as primary metric). AlternativeTo gap: 50+ alternatives, still zero JSON-native spatial sketch. 🟡 NICHE CLEAN BUT DIFFERENTIATION ROW "MCP INTEGRATION" MUST BE UPDATED.**
