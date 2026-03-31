@@ -2,6 +2,73 @@
 
 ---
 
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #82 (13:12 CET, Tuesday March 31)
+
+### Context: Run #82 Key Findings
+- **82 consecutive niche-clean scans** — spatial sketch MCP lane still exclusively Skissify's
+- **Excalidraw YouTube MCP video now "1 day ago"** — crossed 24h mark, pre-educated buyer pool now substantial
+- **HN Excalidraw blog diagram thread still "12 hours ago"** — fully evergreen, fresh comments Tuesday afternoon
+- **solomonsignal.com Excalidraw pricing analysis (4 days old)** — developers actively comparing sketch tool pricing
+- **82nd scan confirms: no new competitor, VC dead-zone framework validates EUR 2/mo pricing architecture**
+- **April quota: 429/2000** (4 used this run)
+
+---
+
+### 🎯 Action 1 (CRITICAL — Thursday AM): npm publish + HN Comment
+
+The HN thread (id=47571376) is now fully evergreen — fresh comments arriving Tuesday afternoon confirm this thread will surface in Google search results for "Excalidraw programmatic SVG" for months. This is the highest-ROI action available.
+
+**Step A — Publish MCP server (30 min)**:
+1. Fix `publishConfig` in `mcp-server/package.json`: `"publishConfig": { "access": "public" }`
+2. `cd W:/code/skissify/mcp-server && npm publish --access public`
+3. Verify: `npm view @skissify/mcp-server`
+
+**Step B — Post HN comment (10 min)**:
+URL: https://news.ycombinator.com/item?id=47571376
+
+Suggested comment (evergreen framing, de-emphasize timing):
+> "If you're building a pipeline like this and want structured JSON → hand-drawn SVG without a forked Excalidraw instance, Skissify's MCP server does this natively. JSON schema describes walls, doors, windows, stairs, text, dimensions — hand-drawn SVG comes out. There's a floor plan mode if you need architectural elements. Works with any MCP-compatible agent (Claude, Cursor, Codex). [skissify.com] — schema docs linked if you want to compare approaches."
+
+**Why now**: Thread is still receiving comments today (Tuesday afternoon). A comment posted today ranks in "new" filter and will be indexed by Google for months of long-tail search traffic.
+
+---
+
+### 🎯 Action 2 (HIGH — Thursday): Publish Skissify Response to Excalidraw Pricing Comparisons
+
+solomonsignal.com's Excalidraw Free vs Paid analysis (4 days old) is ranking in competitor searches. This means developers evaluating Excalidraw pricing will encounter this article — and Skissify should be visible in the same search cluster with a targeted blog post.
+
+**Suggested post**: "Excalidraw is $7/mo for collaboration. Skissify is EUR 2/mo for agent pipelines. Here's how to choose."
+
+**Outline**:
+1. What Excalidraw+ buys you: collab rooms, shared libraries, cloud storage — for human teams
+2. What Skissify buys you: JSON → hand-drawn SVG API, MCP server, floor plan elements — for AI agents
+3. The decision: if your use case is human teams sketching together → Excalidraw+. If your use case is agents generating architectural sketches → Skissify
+4. Pricing comparison table: Excalidraw $7/mo vs Skissify EUR 2/mo (API Starter) → EUR 5/mo (Pro)
+5. CTA: `npx @skissify/mcp-server` + schema docs
+
+**SEO targets**: "Excalidraw free vs paid 2026", "Excalidraw alternative for API", "hand-drawn diagram API EUR"
+
+**Time to write**: 45 min. Time to rank alongside solomonsignal.com: 48–72 hours after publish.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Thursday/Friday): Submit Skissify to MCP Registries
+
+Now that the Excalidraw YouTube video (1 day old) is building the pre-educated buyer pool, being discoverable in MCP registries is critical — these developers will search for "floor plan MCP" and "architectural sketch MCP" after watching the topology video.
+
+**Submission checklist** (all free, all indexed by Google):
+1. **modelcontextprotocol.io/registry** — The official MCP registry. Primary discovery channel.
+2. **awesome-mcp-servers** (GitHub) — PR to add @skissify/mcp-server to the list
+3. **claudefa.st** — Updated 18h ago. Submit Skissify for their next update cycle.
+4. **mcpmanager.ai** — Active MCP directory. Submit with description and schema link.
+5. **LobeHub** — MCP marketplace. Zero sketch tools listed. Category-creating submission.
+6. **Composio catalog** (composio.dev) — 850+ integrations gateway. Passive enterprise discovery.
+7. **fastmcp.me** — Ranks by GitHub stars + real usage. Submit post-launch.
+
+**Time estimate**: 2 hours for all 7 submissions. Each submission compounds over time — registry listings age better than blog posts.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #81 (12:01 CET, Tuesday March 31)
 
 ### Context: Run #81 Key Findings

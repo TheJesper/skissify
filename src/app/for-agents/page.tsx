@@ -10,19 +10,28 @@ const liveExampleJson = {
   amplitude: 0.6,
   waves: 0.7,
   humanness: 0.12,
-  width: 400,
-  height: 300,
+  width: 480,
+  height: 340,
   elements: [
-    { type: "rect", x: 40, y: 40, w: 320, h: 220 },
-    { type: "line", x1: 200, y1: 40, x2: 200, y2: 260 },
-    { type: "line", x1: 40, y1: 160, x2: 200, y2: 160 },
-    { type: "window", x1: 80, y1: 40, x2: 160, y2: 40 },
-    { type: "door-symbol", x: 200, y: 80, w: 45, swing: "right" },
-    { type: "text", x: 80, y: 110, text: "Room A", fontSize: 16 },
-    { type: "text", x: 80, y: 210, text: "Room B", fontSize: 16 },
-    { type: "text", x: 260, y: 150, text: "Hall", fontSize: 16 },
-    { type: "dim", x1: 40, y1: 280, x2: 200, y2: 280, label: "4.0m" },
-    { type: "dim", x1: 200, y1: 280, x2: 360, y2: 280, label: "4.0m" },
+    // Outer walls
+    { type: "rect", x: 40, y: 40, w: 400, h: 260 },
+    // Interior wall dividing bedroom from living room
+    { type: "line", x1: 220, y1: 40, x2: 220, y2: 300 },
+    // Windows + doors
+    { type: "window", x1: 80, y1: 40, x2: 180, y2: 40 },
+    { type: "window", x1: 260, y1: 40, x2: 380, y2: 40 },
+    { type: "door-symbol", x: 220, y: 120, w: 50, swing: "right" },
+    // Room labels
+    { type: "text", x: 70, y: 85, text: "BEDROOM", fontSize: 13, color: "#5a4a3a" },
+    { type: "text", x: 255, y: 85, text: "LIVING ROOM", fontSize: 13, color: "#5a4a3a" },
+    // Furniture: bed in bedroom, sofa in living room
+    { type: "bed", x: 55, y: 150, w: 100, h: 130, pillows: 2, color: "#9a8a7a" },
+    { type: "sofa", x: 250, y: 180, w: 160, h: 65, color: "#6a7a8a" },
+    { type: "dining-table", x: 260, y: 120, w: 120, h: 50, seats: 1, color: "#8a7a6a" },
+    // Dimension lines
+    { type: "dim", x1: 40, y1: 316, x2: 220, y2: 316, label: "4.5m", color: "#8B4513" },
+    { type: "dim", x1: 220, y1: 316, x2: 440, y2: 316, label: "5.5m", color: "#8B4513" },
+    { type: "dim", x1: 24, y1: 40, x2: 24, y2: 300, label: "6.5m", color: "#8B4513", offset: -20 },
   ],
 };
 
@@ -443,42 +452,103 @@ curl -X POST https://skissify.com/api/sketches \\
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-[#073642] mb-2">Element Types Reference</h2>
           <p className="text-[#657b83] mb-8">
-            All available element types and their properties. Every element must have a{" "}
-            <code className="text-[#268bd2]">type</code> field.
+            All 26 available element types and their properties. Every element must have a{" "}
+            <code className="text-[#268bd2]">type</code> field. Common optional props on all elements:{" "}
+            <code className="text-[#268bd2]">color</code>, <code className="text-[#268bd2]">strokeWidth</code>,{" "}
+            <code className="text-[#268bd2]">rotation</code>, <code className="text-[#268bd2]">locked</code>,{" "}
+            <code className="text-[#268bd2]">fillColor</code>.
           </p>
 
-          <div className="grid gap-3">
-            {[
-              { type: "line", props: "x1, y1, x2, y2, color, strokeWidth", desc: "Wobbly hand-drawn line" },
-              { type: "rect", props: "x, y, w, h, color, fill, strokeWidth", desc: "Hand-drawn rectangle" },
-              { type: "circle", props: "cx, cy, r, color, fill", desc: "Hand-drawn circle" },
-              { type: "arc", props: "cx, cy, r, startAngle, endAngle, color", desc: "Hand-drawn arc (degrees)" },
-              { type: "arrow", props: "x1, y1, x2, y2, color", desc: "Line with arrowhead" },
-              { type: "text", props: "x, y, text, fontSize, color, fontFamily", desc: "Caveat handwriting text" },
-              { type: "dashed", props: "x1, y1, x2, y2, color, dashLength", desc: "Dashed line" },
-              { type: "dim", props: "x1, y1, x2, y2, label, color", desc: "Dimension line with label" },
-              { type: "window", props: "x1, y1, x2, y2, color", desc: "Window symbol (wall ticks)" },
-              { type: "door-symbol", props: "x, y, w, swing, color", desc: "Door with swing arc" },
-              { type: "door-slide", props: "x, y, w, color", desc: "Sliding door (parallel lines)" },
-              { type: "stair", props: "x, y, w, h, steps, color", desc: "Staircase with treads" },
-              { type: "opening", props: "x1, y1, x2, y2, color", desc: "Wall opening with returns" },
-              { type: "column", props: "cx, cy, size, color, shape", desc: "Structural column" },
-            ].map((el) => (
-              <div
-                key={el.type}
-                className="flex items-start gap-4 px-4 py-3 border border-[#93a1a1]/20 rounded-lg"
-                style={{ backgroundColor: "#fdf6e3" }}
-              >
-                <code className="flex-shrink-0 px-2 py-0.5 bg-[#268bd2]/10 text-[#268bd2] rounded text-sm font-mono font-medium min-w-[110px]">
-                  {el.type}
-                </code>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm text-[#586e75]">{el.desc}</p>
-                  <p className="text-xs text-[#839496] font-mono mt-1">{el.props}</p>
-                </div>
+          {[
+            {
+              category: "Primitives",
+              color: "#268bd2",
+              items: [
+                { type: "line", props: "x1, y1, x2, y2, wallWidth?", desc: "Wobbly line. Add wallWidth (px) to render as a double-line architectural wall with filled interior." },
+                { type: "rect", props: "x, y, w, h, fillColor?, label?", desc: "Hand-drawn rectangle. fillColor for room fills. Optional label drawn inside." },
+                { type: "circle", props: "cx, cy, r, fillColor?", desc: "Hand-drawn circle centered at (cx, cy) with radius r." },
+                { type: "arc", props: "cx, cy, r, startAngle, endAngle", desc: "Hand-drawn arc. startAngle/endAngle in degrees." },
+                { type: "path", props: "points: [{x,y}…], strokeWidth?", desc: "Freehand path through waypoints, smoothly interpolated with Catmull-Rom spline." },
+              ],
+            },
+            {
+              category: "Annotations",
+              color: "#859900",
+              items: [
+                { type: "arrow", props: "x1, y1, x2, y2", desc: "Line with arrowhead pointing from (x1,y1) to (x2,y2)." },
+                { type: "text", props: "x, y, text, fontSize?, fontFamily?", desc: "Hand-written style text. Uses Caveat font by default. fontFamily: Courier|Georgia|Arial|Caveat|Kalam|JetBrains Mono." },
+                { type: "dashed", props: "x1, y1, x2, y2, dashLength?", desc: "Dashed hand-drawn line. dashLength controls gap pattern." },
+                { type: "dim", props: "x1, y1, x2, y2, label, offset?", desc: "Dimension line with measurement label and tick marks. offset (px) shifts the line perpendicularly — use negative values to push outside walls (e.g. offset: -20)." },
+              ],
+            },
+            {
+              category: "Architecture",
+              color: "#cb4b16",
+              items: [
+                { type: "window", props: "x1, y1, x2, y2", desc: "Window symbol on a wall — perpendicular ticks at endpoints." },
+                { type: "door-symbol", props: "x, y, w, swing: 'left'|'right'", desc: "Door with arc showing swing direction." },
+                { type: "door-slide", props: "x, y, w", desc: "Sliding door shown as two parallel lines." },
+                { type: "stair", props: "x, y, w, h, steps?", desc: "Staircase with horizontal treads. steps defaults to 8." },
+                { type: "opening", props: "x1, y1, x2, y2", desc: "Wall opening with small returns at each end." },
+                { type: "column", props: "cx, cy, size, shape?: 'circle'|'square'", desc: "Structural column. Defaults to circle shape." },
+              ],
+            },
+            {
+              category: "Furniture",
+              color: "#6c71c4",
+              items: [
+                { type: "bed", props: "x, y, w, h, pillows?: 1|2", desc: "Bed with headboard, pillows (1=single, 2=double), and cover fold. Uses bounding box." },
+                { type: "sofa", props: "x, y, w, h", desc: "Sofa with backrest, two armrests, and seat cushion center divider." },
+                { type: "dining-table", props: "x, y, w, h, seats?: number", desc: "Table with oval chairs on all four sides. seats = chairs per long side (default 2)." },
+                { type: "armchair", props: "x, y, w, h", desc: "Armchair with curved backrest and armrests." },
+                { type: "desk", props: "x, y, w, h", desc: "L-shaped desk with pedestal return and drawer lines." },
+                { type: "bookshelf", props: "x, y, w, h, shelves?: number", desc: "Bookshelf with horizontal dividers. shelves = number of dividers (default 3)." },
+              ],
+            },
+            {
+              category: "Kitchen & Bath",
+              color: "#2aa198",
+              items: [
+                { type: "toilet", props: "x, y, w, h", desc: "Toilet top-view: tank rectangle + bowl ellipse + inner seat ring." },
+                { type: "bathtub", props: "x, y, w, h", desc: "Bathtub top-view: outer frame + inner basin oval + faucet cross indicator." },
+                { type: "sink", props: "x, y, w, h", desc: "Sink top-view: outer frame + basin oval + drain dot + T-shape faucet." },
+                { type: "stove", props: "x, y, w, h, burners?: 2|4", desc: "Stove/cooktop top-view with burner circles. burners defaults to 4." },
+                { type: "shower", props: "x, y, w, h", desc: "Shower enclosure: square frame + diagonal spray lines + drain circle." },
+              ],
+            },
+          ].map((group) => (
+            <div key={group.category} className="mb-8">
+              <div className="flex items-center gap-2 mb-3">
+                <span
+                  className="px-2 py-0.5 rounded text-xs font-bold text-white"
+                  style={{ backgroundColor: group.color }}
+                >
+                  {group.category}
+                </span>
+                <div className="flex-1 h-px bg-[#93a1a1]/20" />
               </div>
-            ))}
-          </div>
+              <div className="grid gap-2">
+                {group.items.map((el) => (
+                  <div
+                    key={el.type}
+                    className="flex items-start gap-4 px-4 py-3 border border-[#93a1a1]/20 rounded-lg"
+                    style={{ backgroundColor: "#fdf6e3" }}
+                  >
+                    <code
+                      className="flex-shrink-0 px-2 py-0.5 rounded text-sm font-mono font-medium min-w-[120px]"
+                      style={{ backgroundColor: `${group.color}18`, color: group.color }}
+                    >
+                      {el.type}
+                    </code>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm text-[#586e75]">{el.desc}</p>
+                      <p className="text-xs text-[#839496] font-mono mt-1">{el.props}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
