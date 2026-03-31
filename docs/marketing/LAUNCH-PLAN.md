@@ -210,6 +210,38 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - **MCP.so directory** — confirmed target for Day 2 submissions. Very high signal-to-noise for the right audience.
 - **Hashtag clusters finalized** — Owned low-competition cluster: `#Skissify #VibeDrawing #SketchFirst #JSONtoSVG #AIArtDirector #FlatJSON`. Claim them all on launch day.
 
+## NEW IDEAS (Added 2026-03-31, Cycle 80 — 21:00 CET — FINAL PREP)
+
+- **Atomic launch copy queue created** — SOCIAL-MEDIA.md now has a complete paste-ready post queue from 00:01 to 20:00 CET. Each platform, each post, each timestamp. Copy and post in order. No editing on launch day.
+- **Launch morning T-0 blog post** — `blog/launch-morning-t0-what-im-doing-first-hour.md` — real BuildInPublic content about the actual first-hour ops. Post on Dev.to/Hashnode April 2 as "how I launched" post.
+- **PRESS-KIT: Why Now section added** — Three market forces (MCP growth, agent workflows, empty API-first diagram market). Use this for journalist cold emails and VC conversations.
+- **PRESS-KIT: Defensibility table added** — 6 moats explained for investors/journalists who ask "why can't Google copy this next month?"
+- **PRESS-KIT: Journalist pitch email template** — subject line, body, CTA. Ready to paste into Gmail for cold journalist outreach April 2-3.
+- **PRESS-KIT: Awards targets table** — Golden Kitty, TLDR, The Batch, Bytes.dev, Console.dev, Changelog. Post to each after PH results land.
+- **r/mcp post ready** — distinct from r/artificial and r/webdev. Key angle: "MCP server that CREATES, not reads." High-signal audience.
+- **End-of-day wrap tweet pre-written** — template ready for 20:00 CET April 1. Fill in numbers, post immediately. BuildInPublic transparency is marketing.
+
+### T-9h Final Status (21:00 CET, March 31)
+
+| Item | Status |
+|------|--------|
+| SOCIAL-MEDIA.md atomic queue | ✅ Done |
+| LAUNCH-WAR-ROOM.md | ✅ Done (prev cycle) |
+| All 3 canonical blog posts | ✅ Done |
+| PRESS-KIT.md complete | ✅ Done + Why Now + Defensibility |
+| Launch eve tweets written | ✅ Done |
+| T-0 blog post | ✅ Done |
+| Demo GIF/video | ⚠️ **Script ready — MUST RECORD TONIGHT** |
+| Post launch-eve tweet | ⚠️ **DO THIS NOW (21:00 CET)** |
+| DM 5 PH upvoters | ⚠️ Do before sleep |
+| Prod server health check | ⚠️ Do before sleep |
+
+### One thing that still matters most
+
+Post the launch-eve tweet right now. It's 21:00 CET. The tweet is in SOCIAL-MEDIA.md. Copy it. Post it. Sleep.
+
+---
+
 ## Post-Launch (Week 1)
 
 - **April 2 morning:** Post Day 2 thread (see `blog/april-2-day-2-momentum-playbook.md`)

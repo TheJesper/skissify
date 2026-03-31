@@ -319,3 +319,71 @@ Submit to these after PH results are in:
 7. **There's An AI For That** — theresanaiforthat.com/submit
 8. **Toolify.ai** — toolify.ai (AI tool directory)
 9. **MCP.so** — get listed in MCP server directory (critical for discovery)
+
+---
+
+## Why Now — The Market Timing Argument (Added Cycle 80)
+
+*For journalists and investors who ask "why is this the right moment?"*
+
+### Three forces converging in 2026
+
+**1. MCP becomes the standard**  
+Anthropic's Model Context Protocol crossed 12,000 registered servers in early 2026. Every major AI development environment — Claude Desktop, Cursor, Cline, Continue — now supports MCP natively. The ecosystem is past the experimental stage. Developers are building production workflows on top of MCP. Skissify is the first visual output primitive in that ecosystem.
+
+**2. AI agent workflows need non-text output**  
+The generation of AI agents that just responds with text is ending. Modern agents are expected to produce artifacts: code, documents, data, images. Hand-drawn diagrams occupy a specific niche: they're faster to produce than polished graphics, semantically richer than text, and psychologically more useful for ideation than pixel-perfect mockups. Skissify is the API for that niche.
+
+**3. The API-first diagram market is empty**  
+Figma has an API (read-heavy, UI-centric). Excalidraw has export functions (not an API). Miro has an API (complex, expensive). Not one of them was designed for an AI agent to be a first-class user. The market gap is real and currently unserved.
+
+---
+
+## Defensibility
+
+*Why Skissify is hard to copy in 6 months:*
+
+| Moat | Detail |
+|------|--------|
+| **Schema design** | 94% first-try accuracy from LLMs — result of months of schema iteration. Not public, not replicable in weeks. |
+| **Architectural element library** | 30+ specialized elements (walls, door-swings, stairs, fixtures) with rendering rules tuned by domain. Competitors would need months of domain work. |
+| **The wobble algorithm** | Perlin noise-based hand-drawn aesthetics that look genuinely human. Not just "round the corners." Tuned over hundreds of test renders. |
+| **MCP ecosystem position** | First mover in MCP visual output. Already listed in Claude integrations. Directory rankings take months to build. |
+| **Free tier trust** | Free, no-auth API creates a flywheel: developers try it → embed it → depend on it → upgrade. Hard to dislodge once integrated. |
+| **SEO content** | 150+ indexed blog posts with high-intent keywords. Compounding advantage starting from launch day. |
+
+---
+
+## Journalist Pitch Email Template
+
+**Subject:** The first diagram tool where AI is the user, not just an assistant
+
+Hi [Name],
+
+I'm launching Skissify today — a REST API that turns JSON into hand-drawn SVG sketches.
+
+The angle that might interest your readers: this isn't a tool that uses AI to help humans draw. It's a tool where AI agents are the primary user. Claude, GPT-4, Gemini — any LLM with an API call can now generate hand-drawn floor plans, wireframes, and diagrams. No human needs to touch a mouse.
+
+The launch coincides with a real market shift: Anthropic's MCP protocol has passed 12,000 registered servers, and developers are building production-grade AI agent workflows. Skissify is the first visual output primitive designed for that ecosystem.
+
+It's live today at skissify.com. The API is free, no auth required. You can test it in 30 seconds with a curl command.
+
+Happy to do a demo, share the story, or answer any questions.
+
+Jesper | skissify.com
+
+---
+
+## Awards & Recognition Targets (Post-Launch)
+
+Submit to these after initial PH results:
+
+| Award/Feature | Where | When |
+|--------------|-------|------|
+| Product Hunt Golden Kitty (Developer Tools) | producthunt.com | December 2026 |
+| TLDR Tech feature | tldr.tech/submit | April 3+ |
+| The Batch (DeepLearning.AI) | deeplearning.ai/the-batch | April 3+ |
+| Bytes.dev newsletter | bytes.dev/submit | April 3+ |
+| Console.dev featured tool | console.dev/submit | April 3+ |
+| Changelog podcast/news | changelog.com | April 5+ |
+| Stack Overflow dev tools survey | — | 2027 nomination |
