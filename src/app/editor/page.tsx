@@ -14,7 +14,10 @@ import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
 import CommandPalette from "@/components/CommandPalette";
 import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
+import { renderSketch } from "@/lib/renderer";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
+import { stampCanvasWatermark } from "@/lib/watermark";
+import { usePlanStatus } from "@/hooks/usePlanStatus";
 
 function EditorContent() {
   const searchParams = useSearchParams();
@@ -178,6 +181,9 @@ function EditorInner({
   const [showAutosaveToast, setShowAutosaveToast] = useState(!!restoredFromAutosave);
   const { savedAt: autosaveSavedAt } = useAutosave(sketch);
 
+  // Plan status — watermark gating
+  const { pro: isPro } = usePlanStatus();
+
   // Show a one-time toast when restored from autosave
   useEffect(() => {
     if (restoredFromAutosave) {
@@ -215,21 +221,35 @@ function EditorInner({
   }, []);
 
   const handleDownload = useCallback(() => {
-    const canvas = document.querySelector("canvas");
-    if (!canvas) return;
-    const dataUrl = canvas.toDataURL("image/png");
-    const a = document.createElement("a");
-    a.href = dataUrl;
-    // Use slug if saved, otherwise timestamp
-    const filename = sketchSlug
-      ? `skissify-${sketchSlug}.png`
-      : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.png`;
-    a.download = filename;
-    a.click();
-  }, [sketchSlug]);
+    // Render off-screen so we can stamp watermark without touching live canvas
+    const w = sketch.width || 900;
+    const h = sketch.height || 650;
+    const offscreen = document.createElement("canvas");
+    offscreen.width = w;
+    offscreen.height = h;
+    const ctx = offscreen.getContext("2d");
+    if (!ctx) return;
+    renderSketch(ctx, sketch, w, h);
+    if (!isPro) {
+      const dark = sketch.paper !== "blueprint";
+      stampCanvasWatermark(ctx, w, h, dark);
+    }
+    offscreen.toBlob((blob) => {
+      if (!blob) return;
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      const filename = sketchSlug
+        ? `skissify-${sketchSlug}.png`
+        : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.png`;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }, "image/png");
+  }, [sketch, sketchSlug, isPro]);
 
   const handleDownloadSVG = useCallback(() => {
-    const svgString = renderSketchToSVG(sketch);
+    const svgString = renderSketchToSVG(sketch, !isPro);
     const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -240,7 +260,7 @@ function EditorInner({
     a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
-  }, [sketch, sketchSlug]);
+  }, [sketch, sketchSlug, isPro]);
 
   const handleDownloadJSON = useCallback(() => {
     const json = JSON.stringify(sketch, null, 2);

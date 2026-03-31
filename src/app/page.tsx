@@ -14,10 +14,10 @@ import Canvas from "@/components/Canvas";
 import JsonEditor from "@/components/JsonEditor";
 import CommandPalette from "@/components/CommandPalette";
 import { loadAutosave, useAutosave } from "@/hooks/useAutosave";
+import { renderSketch } from "@/lib/renderer";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
-import { useSession } from "next-auth/react";
-import { isPro } from "@/lib/plan-check";
 import { stampCanvasWatermark } from "@/lib/watermark";
+import { usePlanStatus } from "@/hooks/usePlanStatus";
 
 /** Swipe-down-to-close bottom sheet for mobile controls */
 function MobileBottomSheet({
@@ -256,6 +256,9 @@ function EditorInner({
   });
   const { savedAt: autosaveSavedAt } = useAutosave(sketch);
 
+  // Plan status — used for watermark gating on exports
+  const { pro: isPro } = usePlanStatus();
+
   // Freehand draw mode state
   const [drawMode, setDrawMode] = useState(false);
 
@@ -410,20 +413,38 @@ function EditorInner({
   }, []);
 
   const handleDownload = useCallback(() => {
-    const canvas = document.querySelector("canvas");
-    if (!canvas) return;
-    const dataUrl = canvas.toDataURL("image/png");
-    const a = document.createElement("a");
-    a.href = dataUrl;
-    const filename = sketchSlug
-      ? `skissify-${sketchSlug}.png`
-      : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.png`;
-    a.download = filename;
-    a.click();
-  }, [sketchSlug]);
+    // Render to an off-screen canvas so we can optionally stamp a watermark
+    // without mutating the live editor canvas.
+    const w = sketch.width || 900;
+    const h = sketch.height || 650;
+    const offscreen = document.createElement("canvas");
+    offscreen.width = w;
+    offscreen.height = h;
+    const ctx = offscreen.getContext("2d");
+    if (!ctx) return;
+    renderSketch(ctx, sketch, w, h);
+    if (!isPro) {
+      // Free tier: apply subtle "skissify.com" watermark
+      const dark = sketch.paper !== "blueprint";
+      stampCanvasWatermark(ctx, w, h, dark);
+    }
+    offscreen.toBlob((blob) => {
+      if (!blob) return;
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      const filename = sketchSlug
+        ? `skissify-${sketchSlug}.png`
+        : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.png`;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }, "image/png");
+  }, [sketch, sketchSlug, isPro]);
 
   const handleDownloadSVG = useCallback(() => {
-    const svgString = renderSketchToSVG(sketch);
+    // Pass watermark flag: free users get "skissify.com" in the SVG
+    const svgString = renderSketchToSVG(sketch, !isPro);
     const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -434,7 +455,7 @@ function EditorInner({
     a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
-  }, [sketch, sketchSlug]);
+  }, [sketch, sketchSlug, isPro]);
 
   const handleResize = useCallback(
     (w: number, h: number) => {

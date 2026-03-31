@@ -4,6 +4,7 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { SketchData } from "@/lib/types";
 import { renderSketch } from "@/lib/renderer";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
+import { stampCanvasWatermark } from "@/lib/watermark";
 
 interface Props {
   data: SketchData;
@@ -49,11 +50,20 @@ export default function PublicSketchView({ data, slug, title }: Props) {
     setSeed(Math.floor(Math.random() * 1_000_000));
   }, []);
 
-  /** Download current canvas as PNG */
+  /** Download current canvas as PNG — always watermarked on public share page */
   const handleDownloadPng = useCallback(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    canvas.toBlob((blob) => {
+    // Render to a fresh off-screen canvas so we can stamp the watermark
+    // without mutating the live displayed canvas.
+    const offscreen = document.createElement("canvas");
+    offscreen.width = w;
+    offscreen.height = h;
+    const ctx = offscreen.getContext("2d");
+    if (!ctx) return;
+    renderSketch(ctx, sketchWithSeed, w, h);
+    // Public share page always shows watermark (owner pro status unknown)
+    const dark = sketchWithSeed.paper !== "blueprint";
+    stampCanvasWatermark(ctx, w, h, dark);
+    offscreen.toBlob((blob) => {
       if (!blob) return;
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -64,12 +74,12 @@ export default function PublicSketchView({ data, slug, title }: Props) {
       setDownloadedPng(true);
       setTimeout(() => setDownloadedPng(false), 2000);
     }, "image/png");
-  }, [safeFilename]);
+  }, [sketchWithSeed, w, h, safeFilename]);
 
-  /** Download as SVG */
+  /** Download as SVG — always watermarked on public share page */
   const handleDownloadSvg = useCallback(() => {
     try {
-      const svgString = renderSketchToSVG(sketchWithSeed);
+      const svgString = renderSketchToSVG(sketchWithSeed, true);
       const blob = new Blob([svgString], { type: "image/svg+xml" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");

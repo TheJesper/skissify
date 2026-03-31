@@ -19,6 +19,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { sketchDataSchema, sanitizeSketchData } from "@/lib/validations";
 import { renderSketchToSVG } from "@/lib/svg-renderer";
 import { rateLimit } from "@/lib/rate-limit";
+import { auth } from "@/lib/auth";
+import { db } from "@/lib/db";
+import { isPro } from "@/lib/plan-check";
 
 function corsHeaders() {
   return {
@@ -88,9 +91,26 @@ export async function POST(req: NextRequest) {
   }
 
   const sanitized = sanitizeSketchData(parsed.data);
+
+  // Determine watermark: apply for unauthenticated callers and free-tier users.
+  // Pro subscribers get clean SVG output.
+  let applyWatermark = true;
+  try {
+    const session = await auth();
+    if (session?.user?.id) {
+      const user = await db.user.findUnique({
+        where: { id: session.user.id },
+        select: { stripePriceId: true, stripeSubscriptionId: true, stripeCurrentPeriodEnd: true },
+      });
+      if (isPro(user)) applyWatermark = false;
+    }
+  } catch {
+    // DB unavailable or not configured — default to watermark
+  }
+
   let svg: string;
   try {
-    svg = renderSketchToSVG(sanitized);
+    svg = renderSketchToSVG(sanitized, applyWatermark);
   } catch (err) {
     console.error("[/api/render] SVG render error:", err);
     return NextResponse.json(
