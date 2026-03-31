@@ -262,9 +262,9 @@ export const presets: Record<string, SketchData> = {
       { type: "door-symbol", x: 600, y: 150, w: 60, swing: "left", color: "#8B4513" },
       { type: "door-symbol", x: 750, y: 430, w: 55, swing: "right", color: "#8B4513" },
 
-      // Dimensions
+      // Dimensions (offset pushes vertical dim outside left wall)
       { type: "dim", x1: 50, y1: 25, x2: 900, y2: 25, label: "17.0 m", color: "#8B4513" },
-      { type: "dim", x1: 25, y1: 50, x2: 25, y2: 650, label: "12.0 m", color: "#8B4513" },
+      { type: "dim", x1: 25, y1: 50, x2: 25, y2: 650, label: "12.0 m", color: "#8B4513", offset: -20 },
 
       // Columns in vardagsrum
       { type: "column", cx: 300, cy: 500, size: 12, color: "#444" },
@@ -371,9 +371,9 @@ export const presets: Record<string, SketchData> = {
       { type: "door-symbol", x: 430, y: 600, w: 70, swing: "left", color: "#8B4513" },
       { type: "text", x: 440, y: 580, text: "ENTRANCE", fontSize: 12, color: "#8B4513" },
 
-      // Dimensions
+      // Dimensions (offset pushes vertical dim outside left wall)
       { type: "dim", x1: 50, y1: 30, x2: 850, y2: 30, label: "16.0 m", color: "#8B4513" },
-      { type: "dim", x1: 30, y1: 50, x2: 30, y2: 600, label: "11.0 m", color: "#8B4513" },
+      { type: "dim", x1: 30, y1: 50, x2: 30, y2: 600, label: "11.0 m", color: "#8B4513", offset: -20 },
 
       // Windows
       { type: "window", x1: 100, y1: 50, x2: 300, y2: 50, color: "#336" },
@@ -603,9 +603,106 @@ export const presets: Record<string, SketchData> = {
       { type: "arrow", x1: 820, y1: 80, x2: 820, y2: 40, color: "#333" },
       { type: "text", x: 815, y: 95, text: "N", fontSize: 16, color: "#333" },
 
-      // Dimensions
+      // Dimensions (offset pushes vertical dim outside left boundary)
       { type: "dim", x1: 60, y1: 610, x2: 840, y2: 610, label: "20.0 m", color: "#5a3a1a" },
-      { type: "dim", x1: 40, y1: 60, x2: 40, y2: 590, label: "14.0 m", color: "#5a3a1a" },
+      { type: "dim", x1: 40, y1: 60, x2: 40, y2: 590, label: "14.0 m", color: "#5a3a1a", offset: -20 },
+    ],
+  },
+  "network topology": {
+    paper: "white",
+    tool: "ballpoint",
+    inkColor: "#222",
+    amplitude: 0.5,
+    waves: 0.6,
+    humanness: 0.12,
+    width: 900,
+    height: 600,
+    elements: [
+      // Title
+      { type: "text", x: 280, y: 28, text: "Network Topology — Production", fontSize: 20, color: "#073642" },
+
+      // ── Internet / Cloud ──────────────────────────────────────────────────
+      { type: "circle", cx: 450, cy: 90, r: 45, color: "#268bd2" },
+      { type: "text", x: 421, y: 87, text: "Internet", fontSize: 14, color: "#268bd2" },
+      { type: "text", x: 432, y: 104, text: "/ Cloud", fontSize: 13, color: "#268bd2" },
+
+      // ── Load Balancer ─────────────────────────────────────────────────────
+      { type: "rect", x: 350, y: 175, w: 200, h: 55, color: "#2aa198" },
+      { type: "text", x: 382, y: 208, text: "Load Balancer", fontSize: 15, color: "#2aa198" },
+      // Arrow: cloud → LB
+      { type: "arrow", x1: 450, y1: 136, x2: 450, y2: 174, color: "#586e75" },
+
+      // ── Web servers (3 nodes) ─────────────────────────────────────────────
+      { type: "rect", x: 130, y: 290, w: 130, h: 50, color: "#268bd2" },
+      { type: "text", x: 150, y: 320, text: "Web-01", fontSize: 14, color: "#268bd2" },
+
+      { type: "rect", x: 385, y: 290, w: 130, h: 50, color: "#268bd2" },
+      { type: "text", x: 405, y: 320, text: "Web-02", fontSize: 14, color: "#268bd2" },
+
+      { type: "rect", x: 640, y: 290, w: 130, h: 50, color: "#268bd2" },
+      { type: "text", x: 660, y: 320, text: "Web-03", fontSize: 14, color: "#268bd2" },
+
+      // Arrows: LB → web servers
+      { type: "arrow", x1: 390, y1: 231, x2: 220, y2: 289, color: "#93a1a1" },
+      { type: "arrow", x1: 450, y1: 231, x2: 450, y2: 289, color: "#93a1a1" },
+      { type: "arrow", x1: 510, y1: 231, x2: 680, y2: 289, color: "#93a1a1" },
+
+      // ── App servers (2 nodes) ─────────────────────────────────────────────
+      { type: "rect", x: 270, y: 400, w: 150, h: 50, color: "#b58900" },
+      { type: "text", x: 286, y: 430, text: "App Server 1", fontSize: 13, color: "#b58900" },
+
+      { type: "rect", x: 480, y: 400, w: 150, h: 50, color: "#b58900" },
+      { type: "text", x: 496, y: 430, text: "App Server 2", fontSize: 13, color: "#b58900" },
+
+      // Arrows: web → app
+      { type: "arrow", x1: 225, y1: 341, x2: 310, y2: 399, color: "#93a1a1" },
+      { type: "arrow", x1: 450, y1: 341, x2: 390, y2: 399, color: "#93a1a1" },
+      { type: "arrow", x1: 450, y1: 341, x2: 515, y2: 399, color: "#93a1a1" },
+      { type: "arrow", x1: 705, y1: 341, x2: 595, y2: 399, color: "#93a1a1" },
+
+      // ── Database cluster ──────────────────────────────────────────────────
+      { type: "rect", x: 320, y: 505, w: 260, h: 55, color: "#dc322f" },
+      { type: "text", x: 348, y: 537, text: "PostgreSQL Primary", fontSize: 14, color: "#dc322f" },
+
+      // Arrows: app → db
+      { type: "arrow", x1: 350, y1: 451, x2: 400, y2: 504, color: "#93a1a1" },
+      { type: "arrow", x1: 555, y1: 451, x2: 505, y2: 504, color: "#93a1a1" },
+
+      // ── Redis cache ───────────────────────────────────────────────────────
+      { type: "rect", x: 680, y: 390, w: 130, h: 50, color: "#cb4b16" },
+      { type: "text", x: 701, y: 420, text: "Redis Cache", fontSize: 13, color: "#cb4b16" },
+
+      // Arrow: app → redis
+      { type: "arrow", x1: 631, y1: 420, x2: 679, y2: 420, color: "#93a1a1" },
+
+      // ── DB replica ────────────────────────────────────────────────────────
+      { type: "rect", x: 680, y: 505, w: 130, h: 55, color: "#6c71c4" },
+      { type: "text", x: 688, y: 530, text: "DB Replica", fontSize: 13, color: "#6c71c4" },
+      { type: "text", x: 697, y: 547, text: "(read-only)", fontSize: 11, color: "#6c71c4" },
+
+      // Arrow: primary → replica
+      { type: "arrow", x1: 581, y1: 533, x2: 679, y2: 533, color: "#dc322f" },
+      { type: "text", x: 602, y: 528, text: "replication", fontSize: 10, color: "#dc322f" },
+
+      // ── Monitoring / sidecar ─────────────────────────────────────────────
+      { type: "rect", x: 50, y: 390, w: 130, h: 50, color: "#859900" },
+      { type: "text", x: 68, y: 420, text: "Prometheus", fontSize: 13, color: "#859900" },
+
+      // Dashed connection: monitoring scrapes web
+      { type: "dashed", x1: 180, y1: 415, x2: 270, y2: 415, color: "#859900" },
+      { type: "dashed", x1: 130, y1: 390, x2: 195, y2: 340, color: "#859900" },
+
+      // ── Firewall boundary (dashed rect) ─────────────────────────────────
+      { type: "dashed", x1: 100, y1: 270, x2: 800, y2: 270, color: "#cc0000" },
+      { type: "dashed", x1: 100, y1: 270, x2: 100, y2: 570, color: "#cc0000" },
+      { type: "dashed", x1: 100, y1: 570, x2: 800, y2: 570, color: "#cc0000" },
+      { type: "dashed", x1: 800, y1: 570, x2: 800, y2: 270, color: "#cc0000" },
+      { type: "text", x: 105, y: 267, text: "DMZ / Private Network", fontSize: 11, color: "#cc0000" },
+
+      // ── Legend ───────────────────────────────────────────────────────────
+      { type: "text", x: 50, y: 490, text: "─── HTTP", fontSize: 10, color: "#93a1a1" },
+      { type: "text", x: 50, y: 505, text: "- - - Monitoring", fontSize: 10, color: "#859900" },
+      { type: "text", x: 50, y: 520, text: "─── Replication", fontSize: 10, color: "#dc322f" },
     ],
   },
 };
@@ -619,6 +716,7 @@ export const presetDescriptions: Record<string, string> = {
   flowchart: "Business process flowchart with decision diamond, error handling, and retry loop.",
   architecture: "Building elevation/facade showing two floors, windows, door, and roof line.",
   "garden plan": "Landscape plan with house footprint, garden beds, trees, patio, and paths.",
+  "network topology": "Production infrastructure diagram with load balancer, web/app servers, database cluster, cache, and monitoring.",
 };
 
 export const defaultPreset = "plan drawing";

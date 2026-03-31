@@ -560,10 +560,16 @@ function EditorInner({
         e.preventDefault();
         setDrawMode((prev) => !prev);
       }
+
+      // G key (no modifier) toggles grid snap on/off
+      if (e.key === "g" && !isInput && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+        e.preventDefault();
+        setSnapGrid((sketch.snapGrid ?? 0) > 0 ? 0 : 20);
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, pasteInPlace, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, pasteInPlace, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode, setSnapGrid, sketch.snapGrid]);
 
   // Compute the color of the first selected element (for per-element color picker)
   const selectedColor: string | undefined = (() => {

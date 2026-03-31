@@ -43,7 +43,11 @@ const PRESET_RULES: { keywords: string[]; preset: string }[] = [
     preset: "garden plan",
   },
   {
-    keywords: ["napkin", "sketch", "rough", "quick", "idea", "concept", "system", "api", "backend", "frontend", "server", "database", "network", "architecture diagram", "tech", "component"],
+    keywords: ["network", "topology", "infrastructure", "cloud", "server", "load balancer", "database cluster", "redis", "postgres", "vpc", "subnet", "firewall", "devops", "kubernetes", "microservice", "api gateway", "cdn"],
+    preset: "network topology",
+  },
+  {
+    keywords: ["napkin", "sketch", "rough", "quick", "idea", "concept", "system", "api", "backend", "frontend", "architecture diagram", "tech", "component"],
     preset: "napkin sketch",
   },
 ];
@@ -143,6 +147,7 @@ export default function CreatePage() {
     "architecture": "🏗️",
     "garden plan": "🌿",
     "napkin sketch": "✏️",
+    "network topology": "🌐",
   };
 
   return (

@@ -606,6 +606,7 @@ export default function Toolbar({
                 { keys: ["Ctrl", "D"], desc: "Duplicate selected" },
                 { keys: ["Ctrl", "A"], desc: "Select all elements" },
                 { keys: ["D"], desc: "Toggle freehand draw mode" },
+                { keys: ["G"], desc: "Toggle grid snap (20px)" },
                 { keys: ["R"], desc: "Rotate selected 15° clockwise" },
                 { keys: ["Shift", "R"], desc: "Rotate selected 15° counter-clockwise" },
                 { keys: ["Drag ↻ handle"], desc: "Drag rotation handle above element (Shift = 15° snap)" },

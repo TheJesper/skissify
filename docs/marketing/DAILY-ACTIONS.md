@@ -2,6 +2,66 @@
 
 ---
 
+## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #74 (03:55 CET, Tuesday March 31)
+
+### Context: Run #74 Key Findings
+
+- **74 consecutive niche-clean scans** — zero competitor in hand-drawn + JSON-native + MCP + floor plan. Confirmed.
+- **HN blog diagram thread STILL ACTIVE** (3 hours ago, 30+ hours of discussion) — comment window open TODAY 08:00–10:00 CET.
+- **Martin Lysk "How I manage Images for my Blog"** now surfacing in active SEO searches (2 days old, gaining traction) — DIY Excalidraw SVG hack validating Skissify demand.
+- **European Business Review "Agentic SaaS Pricing"** (6 days old, still ranking) — per-execution pricing confirmed as structural market shift.
+- **Monthly Brave quota RESETS today (April 1)** — full 2,000 searches available for April cycle.
+- **Thomas Thornton tutorial**: 9+ days in SERP, still #1.
+
+---
+
+### 🎯 Action 1: Comment on the HN Thread — "I use Excalidraw to manage my diagrams for my blog" — Priority: CRITICAL (Window closes today)
+
+**URL**: https://news.ycombinator.com/item?id=47571376
+
+**Why**: The thread has been active for 30+ hours and is STILL generating fresh comments. This is a once-in-74-runs opportunity: 30+ hours of validated developer discussion about the exact problem Skissify solves. Today (April 1) is the last day this thread will be in the HN long-tail. Post the comment before 10:00 CET.
+
+**Comment to post** (adapt tone to match the thread):
+> "We built Skissify for exactly this workflow — JSON in, hand-drawn SVG out, no forked Excalidraw needed. If you're generating diagrams programmatically (from agents or code), the JSON schema gives you structured control over elements, wobble amount, paper type, and architectural elements (walls, doors, windows, stairs). There's an MCP server too if you want Claude Code to generate sketches inline. [skissify.com] — would love feedback from someone who's clearly already solved the hard part of the pipeline."
+
+**Time**: 5 minutes. Highest ROI per minute of any action this week.
+
+---
+
+### 🎯 Action 2: Write "You Don't Need a Forked Excalidraw" Blog Post — Priority: HIGH
+
+**What**: A blog post targeting the Martin Lysk blog's SEO audience: developers searching for "Excalidraw programmatic SVG export" or "Excalidraw frame export automation."
+
+**Why**: The Lysk blog (blog.lysk.tech/excalidraw-frame-export/) is now in active SEO cycle (2 days old, surfacing in fresh searches). The developer audience finding this post is Skissify's highest-intent prospect: they know what they want (programmatic hand-drawn SVG), they've already confirmed no off-the-shelf solution exists, and they're considering building their own. A Skissify blog post appearing alongside the Lysk article converts this audience instantly.
+
+**Title**: "You Don't Need a Forked Excalidraw — Programmatic Hand-Drawn SVG with Skissify's JSON API"
+
+**Key points**:
+1. Show the Lysk approach (fork → export_ prefix → build script) — validate the problem
+2. Show the Skissify approach (3 JSON lines → API call → SVG)
+3. "EUR 2/mo vs maintaining a fork through every Excalidraw release"
+4. Code snippet: `npm install @skissify/mcp-server` + minimal JSON example
+
+**SEO targets**: "excalidraw programmatic svg export", "hand-drawn diagram api", "json to sketch api 2026"
+
+**Time**: 45–60 minutes to write + publish.
+
+---
+
+### 🎯 Action 3: Submit `@skissify/mcp-server` to claudefa.st + MCP Registry — Priority: HIGH (Quota resets today)
+
+**What**: With the monthly Brave quota resetting today (April 1), the intelligence infrastructure is refreshed. Use this momentum to execute the two most important distribution actions:
+
+1. **claudefa.st submission**: The "50+ Best MCP Servers for Claude Code" directory updates every 18–24 hours. Submit Skissify at: https://claudefa.st (check their submission form or GitHub). Skissify appearing here exposes it to Claude Code users who are already paying $20/mo and already running MCP stacks. EUR 2/mo is an instant add.
+
+2. **modelcontextprotocol.io registry**: Submit to the official MCP registry at https://modelcontextprotocol.io/registry. This is the highest-trust discovery channel — enterprise IT teams and developer advocates check the official registry when evaluating MCP tools.
+
+**Prerequisite**: `npm publish --access public` for `@skissify/mcp-server` must be done first (30-second fix in package.json: add `"publishConfig": { "access": "public" }`). Both submissions require the package to be live on npm.
+
+**Time**: npm publish = 5 minutes. Both registry submissions = 30 minutes.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #73 (02:47 CET, Tuesday March 31)
 
 ### Context: Run #73 Key Findings
