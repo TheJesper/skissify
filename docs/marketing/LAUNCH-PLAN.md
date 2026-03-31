@@ -174,10 +174,39 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 ---
 
+## NEW IDEAS (Added 2026-03-31, Cycle 78 — 19:30 CET)
+
+- **Pre-launch email tonight** — created `blog/launch-day-email-newsletter.md` with a March 31 pre-launch email (send at 20:00 CET). Primes your list overnight so they're ready to upvote at 07:00.
+- **Indie Hackers post** — created `blog/indie-hackers-launch-post.md` — ready-to-paste body, 3 comment responses pre-written for tech/pricing/competitor questions.
+- **Day 2 playbook** — created `blog/april-2-day-2-momentum-playbook.md` — full tweet thread, LinkedIn post, Reddit angles, and April 2 content calendar. Day 2 is the April Fools "wait, was that real?" window — own it.
+- **New platforms added to SOCIAL-MEDIA.md:** Bluesky (3 posts), Mastodon (2 posts for hachyderm + fosstodon), Threads (2 posts), Pinterest strategy (board name, pin types, audience note), full YouTube descriptions.
+- **5 new viral hook formulas** added to SOCIAL-MEDIA.md — "The contrast", "The specific demo", "The unexpected use", "The honest comparison", plus the high-performer "The thing that didn't exist."
+- **Hashtag additions:** `#VibeCodeing`, `#AIArtDirector`, `#FlatJSON` — all low-competition, ownable.
+- **Newsletter strategy clarified:** send pre-launch tonight, launch email at 07:00, Day 2 follow-up at 12:00 April 2. Three-email sequence ready.
+
+### T-10h Final Checklist (Tonight, March 31)
+
+| Action | Priority | Status |
+|--------|----------|--------|
+| Post pre-launch email (20:00 CET) | 🔴 P0 | ⏳ |
+| Post "Tomorrow I launch" tweet (19:00-21:00 CET) | 🔴 P0 | ⏳ |
+| DM 5 friends who said they'd upvote PH | 🔴 P0 | ⏳ |
+| Record 60s demo OR make GIF | 🔴 P0 | ⏳ |
+| Confirm prod server is healthy | 🔴 P0 | ⏳ |
+| Open browser tabs with staged copy | 🟡 P1 | ⏳ |
+| Drop in Slack communities (if any access) | 🟡 P1 | ⏳ |
+| Pin Product Hunt launch page | 🟡 P1 | ⏳ |
+
+---
+
 ## Post-Launch (Week 1)
 
+- **April 2 morning:** Post Day 2 thread (see `blog/april-2-day-2-momentum-playbook.md`)
+- **April 2:** Post on Indie Hackers (see `blog/indie-hackers-launch-post.md`)
+- **April 3:** Publish "How AI agents draw floor plans" on Dev.to + Hashnode (canonical post ready)
 - Collect user feedback, ship quick fixes
 - Publish "How I built Skissify" retrospective
-- Reach out to AI/dev newsletters (TLDR, The Batch, etc.)
-- Submit to tool directories (alternativeto.net, toolify.ai, there's an AI)
+- Reach out to AI/dev newsletters (TLDR, The Batch, Bytes.dev, Hashnode newsletter)
+- Submit to tool directories (alternativeto.net, toolify.ai, there's an AI, MCP.so)
 - Write "How AI agents use Skissify" case study
+- GitHub Actions → Skissify sketch demo (Week 2 content, high viral potential)
