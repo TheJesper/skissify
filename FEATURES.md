@@ -99,6 +99,11 @@ All furniture elements use bounding box (x, y, w, h) and integrate with existing
 
 ## Recently Implemented (Engineering Agent)
 
+- [x] **Complete /for-agents element reference — all 26 types, categorized** — The `/for-agents` AI onboarding page listed only 14 of 26 available element types — all 12 furniture/fixture types (bed, sofa, dining-table, armchair, desk, bookshelf, toilet, bathtub, sink, stove, shower) plus `path` were completely absent. Any AI agent using this page as reference would generate floor plans without furniture. Fixed one day before launch: flat 14-item list replaced with 5 color-coded category groups (Primitives, Annotations, Architecture, Furniture, Kitchen & Bath), matching the manifest schema. Each category has a colored badge + type pills for fast visual scanning. Added previously undocumented props: `line.wallWidth`, `dim.offset`, `rect.label`, `path.points`, plus common props `rotation`/`locked`/`fillColor`. Live example JSON updated to a mini floor plan with bed + sofa + dining-table showing correct furniture usage. Build passes, /for-agents +1.24 kB.
+
+
+
+
 - [x] **Studio apartment preset — desk, bookshelf, armchair, stove, shower showcase** — New `studio apartment` preset added to the gallery and preset tabs. Five furniture/fixture element types (desk, bookshelf, armchair, stove, shower) previously had no presence in any preset — users had no visual reference for what they looked like or how to use them. The new preset demonstrates all of them in a realistic open-plan studio layout: work zone (desk + bookshelf + armchair against the top-left wall), sleeping zone (double bed + nightstand), lounge zone (sofa + coffee table), kitchen partition (stove + sink + counter L-shape + dining table with chairs), and bathroom partition (toilet + sink + shower). Double-line outer walls, proper sliding/swing doors, windows on top and left walls, three dimension lines (16.0m × 11.0m outer, 10.6m living zone). `/create` page keyword matcher wired (studio, loft, open-plan, bookshelf, armchair, work from home → studio apartment) with 🛋️ emoji. `presetDescriptions` entry added. Gallery now has 10 presets covering all element categories. Build passes 20/20 pages.
 
 
