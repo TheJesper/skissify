@@ -59,7 +59,7 @@ All furniture elements use bounding box (x, y, w, h) and integrate with existing
 ### Bugs
 - Pan not pixel-perfect (scaling factor issue)
 - 10.6m dimension line renders inside house instead of outside
-- Blueprint mode lacks proper board background
+- ~~Blueprint mode lacks proper board background~~ FIXED: dark charcoal board (#1a1c23) with visible gray dot grid, matching cream/white drafting-table aesthetic
 - UI elements overlap walls in some presets
 - Drawing not centered on paper at initial render
 - No randomness on preset reload (same seed every time)
@@ -98,6 +98,8 @@ All furniture elements use bounding box (x, y, w, h) and integrate with existing
 - Shareable links & collaboration
 
 ## Recently Implemented (Engineering Agent)
+
+- [x] **Blueprint board background fix — dark charcoal drafting board** — Blueprint mode's infinite canvas board was the same dark blue (`#162d58`) as the paper itself, making it impossible to distinguish where paper ends and board begins. Changed the board to dark charcoal (`#1a1c23`) with visible gray dot grid (`rgba(80,95,110,0.35)`), matching the drafting-table aesthetic that cream/white modes already had. Ruler theme updated to match the dark neutral board. Paper shadow refined for better floating effect. The blue paper now clearly sits on a dark surface, exactly as described in the original SKETCHAI_TODO.md spec.
 
 - [x] **Complete /for-agents element reference — all 26 types, categorized** — The `/for-agents` AI onboarding page listed only 14 of 26 available element types — all 12 furniture/fixture types (bed, sofa, dining-table, armchair, desk, bookshelf, toilet, bathtub, sink, stove, shower) plus `path` were completely absent. Any AI agent using this page as reference would generate floor plans without furniture. Fixed one day before launch: flat 14-item list replaced with 5 color-coded category groups (Primitives, Annotations, Architecture, Furniture, Kitchen & Bath), matching the manifest schema. Each category has a colored badge + type pills for fast visual scanning. Added previously undocumented props: `line.wallWidth`, `dim.offset`, `rect.label`, `path.points`, plus common props `rotation`/`locked`/`fillColor`. Live example JSON updated to a mini floor plan with bed + sofa + dining-table showing correct furniture usage. Build passes, /for-agents +1.24 kB.
 
