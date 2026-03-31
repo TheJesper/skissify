@@ -1,6 +1,215 @@
 # Skissify - Social Media Launch Content
 
 **Launch Date: March 27, 2026**
+
+---
+
+## Cycle 71 — March 31, 2026 — 02:40 CET — T-6.5H TO PH LAUNCH
+
+### NEW TWEETS 501-510 (AI Coding Tools Angle + Launch Morning Final Arc)
+
+---
+
+**Tweet 501 — AI Coding Tools Angle (post 06:00 CET)**
+```
+Cursor, Lovable, v0 are all missing one thing:
+
+Visual context before the code.
+
+You describe your UI in words. The agent fills gaps with its assumptions.
+
+3 iterations later, the architecture is wrong.
+
+Try: Skissify → sketch URL → paste into Cursor as context.
+
+skissify.com/human (free)
+```
+Hashtags: #BuildInPublic #Cursor #AIAgents #ProductHunt
+
+---
+
+**Tweet 502 — The Sketch Phase (post 06:30 CET)**
+```
+There's a step in every good project nobody talks about.
+
+It's 15 minutes of drawing rough boxes before opening the editor.
+
+AI took over "writing the code."
+
+Nobody gave AI the sketch phase.
+
+That's what Skissify is. Launching on Product Hunt today.
+```
+Hashtags: #ProductHunt #AIAgents #VibeDrawing #BuildInPublic
+
+---
+
+**Tweet 503 — April 1 Filter Theory — SHORT (post at 08:45 CET, 15 min before PH)**
+```
+April 1 launch thesis:
+
+"Wait is this a joke?" → click to check → demo works → they're your user.
+
+The skepticism earns the second look.
+The second look earns the user.
+
+Skissify goes live on PH in 15 minutes.
+```
+Hashtags: #ProductHunt #BuildInPublic #LaunchDay
+
+---
+
+**Tweet 504 — PH LIVE (pin this at 09:01 CET)**
+```
+🚀 We're LIVE on Product Hunt.
+
+Skissify — give your AI agent a pencil.
+
+JSON or plain text → hand-drawn sketch URL.
+MCP native. 94% LLM accuracy. Free tier.
+
+Not a joke. April 1 is our vibe.
+
+👉 producthunt.com/posts/skissify
+
+#ProductHunt #MCP #AIAgents #SketchFirst
+```
+
+---
+
+**Tweet 505 — Coding Agent Hook (post 09:30 CET)**
+```
+New workflow unlocked:
+
+1. Open skissify.com/human
+2. Type your UI layout in plain text
+3. Get a sketch URL in 2 seconds
+4. Give that URL to Cursor/Claude as context
+5. Get code that matches what you actually pictured
+
+The sketch is the spec. Free. No install.
+```
+Hashtags: #AIAgents #Cursor #ClaudeCode #ProductHunt
+
+---
+
+**Tweet 506 — Agent Workflow Demo (post 10:00 CET)**
+```
+Claude can now draw floor plans AND write the code for them.
+
+MCP setup: 4 lines.
+
+Then:
+"Claude, sketch a simple dashboard layout, then give me the React component structure."
+
+The sketch → the code. Visual context the whole way.
+
+skissify.com/docs/mcp
+```
+Hashtags: #MCP #ClaudeCode #AIAgents #ProductHunt
+
+---
+
+**Tweet 507 — April Fools Meta-Take (post 11:00 CET)**
+```
+The best thing about an April 1 launch:
+
+Every person who checks if it's real becomes your most engaged user.
+
+Skepticism → curiosity → genuine trial.
+
+The filter works.
+
+How many of you are here because you weren't sure? 👇
+```
+Hashtags: #ProductHunt #BuildInPublic #Skissify
+
+---
+
+**Tweet 508 — Cursor Developers Specific (post 12:00 CET)**
+```
+For everyone using Cursor or Windsurf:
+
+Before you describe your UI to the agent, sketch it first.
+
+2 seconds. Free. No account.
+
+skissify.com/human
+
+"describe a sidebar-navigation app layout" → sketch URL → paste into Cursor.
+
+First iteration is closer. Always.
+```
+Hashtags: #Cursor #AIAgents #ProductHunt #DevTools
+
+---
+
+**Tweet 509 — Live Metrics Pulse (post 14:00 CET — fill real numbers)**
+```
+PH Day [X] hours in:
+
+→ [N] upvotes
+→ [N] comments
+→ [N] sketches generated today
+→ [N] unexpected audience DMs received
+
+The number I'm most proud of: [pick one real stat]
+
+Full story tomorrow.
+
+skissify.com
+```
+Hashtags: #BuildInPublic #ProductHunt #Transparency
+
+---
+
+**Tweet 510 — End of Day Wind-Down (post 21:00 CET)**
+```
+April 1 is almost over.
+
+Final check: not a joke.
+
+[N] upvotes on Product Hunt today.
+[N] sketches generated.
+[N] people who DM'd "wait is this actually real?"
+
+Tomorrow: the retrospective.
+
+Thanks for showing up.
+
+skissify.com
+```
+Hashtags: #ProductHunt #BuildInPublic #Skissify #LaunchDay
+
+---
+
+### NEW BLOG POSTS (Cycle 71 — 3 new posts)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 159 | **Cursor, Lovable, v0: Missing Visual Context** | `skissify-for-cursor-lovable-v0-visual-context-for-code-agents.md` | Dev.to, r/cursor, r/ClaudeAI | PH launch day |
+| 160 | **The Sketch Before the Code: A New AI Workflow** | `the-sketch-before-the-code-a-new-ai-workflow.md` | Dev.to, Medium, r/webdev | 10:00 CET April 1 |
+| 161 | **Why April 1 Launch Converts Better** | `why-april-1-launch-converts-better-than-any-other-day.md` | IndieHackers, Medium, Dev.to | 14:00 CET April 1 |
+
+---
+
+### TRENDING HASHTAG STACK (Cycle 71 — April 1 Final)
+
+**Primary (use on all PH day tweets):**
+`#ProductHunt` `#AIAgents` `#BuildInPublic` `#MCP`
+
+**AI Coding Tools angle (new in Cycle 71):**
+`#Cursor` `#ClaudeCode` `#AIAssistant` `#DevTools`
+
+**Skissify-owned:**
+`#VibeDrawing` `#SketchFirst` `#SketchLayer`
+
+**Launch day energy:**
+`#LaunchDay` `#IndieHacker` `#SoloFounder`
+
+**Avoid:** `#AI` (too broad), `#ChatGPT` (off-brand), `#AprilFools` (use sparingly)
+
+---
 **PRODUCT HUNT LIVE - Wednesday April 1, 2026. Cycle 64. 16:26 CET.**
 All content ready to copy-paste. Adjust links and handles before posting.
 

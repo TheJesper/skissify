@@ -1,3 +1,82 @@
+## Marketing Improvements (Cycle 71 - March 31, 2026 - 02:40 CET)
+
+### STATUS: 🔴 T-6.5H TO PRODUCT HUNT LAUNCH | 158→161 BLOG POSTS | CYCLE 71 — AI CODING TOOLS ANGLE
+
+**PRODUCT HUNT LAUNCHES IN ~6.5H (APRIL 1 09:01 CET)**
+
+**What Changed in Cycle 71:**
+
+- **3 new blog posts (#159-161) — AI CODING TOOLS + APRIL 1 META ANGLES:**
+  - `skissify-for-cursor-lovable-v0-visual-context-for-code-agents.md` — Directly targets Cursor/Lovable/v0 users. Workflow: sketch first (Skissify) → paste URL into coding agent as visual context → get code that matches what you actually pictured. First post explicitly targeting AI coding agents community (r/cursor, r/claudeCode). Strong DevTools angle.
+  - `the-sketch-before-the-code-a-new-ai-workflow.md` — Names the missing phase in every AI coding workflow: the sketch phase. Personal, narrative, explains why rough matters before code. Excellent for Dev.to and Medium. Pairs with coding agent posts.
+  - `why-april-1-launch-converts-better-than-any-other-day.md` — Crystallizes the April Fools filter theory into a standalone argument. The best meta-post for IndieHackers and Medium. Uses skepticism → curiosity → genuine trial as framework. Shares well regardless of PH day result.
+
+- **SOCIAL-MEDIA.md Cycle 71**: Tweets 501-510 (AI coding tools angle: Cursor/v0/Lovable workflow; April 1 pre-launch countdown at 08:45; PH live pin tweet 504; agent workflow demo; April Fools meta-take; live metrics pulse; end-of-day wind-down), Updated hashtag stack (adds #Cursor #ClaudeCode #DevTools to primary stack), New blog post index.
+
+- **NEW IDEAS (Cycle 71):**
+  - **AI Coding Tools as new community** — r/cursor, r/ClaudeAI, r/lovable are untapped. The "sketch before code" workflow is a genuine workflow improvement. Non-promotional, genuinely useful.
+  - **"April 1 converts better" as standalone IH post** — High IndieHackers viral potential. Publish April 2 regardless of PH outcome. The meta-story is interesting whether the launch succeeds or not.
+  - **Cursor/Dev.to article series** — 3 posts done. A "sketch-driven development" framing could be a week-2 content pillar.
+
+### NEW BLOG POSTS (Cycle 71)
+
+| # | Post | File | Best Platform | When |
+|---|------|------|--------------|------|
+| 159 | **Cursor/Lovable/v0: Missing Visual Context** | `skissify-for-cursor-lovable-v0-visual-context-for-code-agents.md` | Dev.to, r/cursor, r/ClaudeAI | 09:30 CET April 1 |
+| 160 | **The Sketch Before the Code** | `the-sketch-before-the-code-a-new-ai-workflow.md` | Dev.to, Medium, r/webdev | 11:00 CET April 1 |
+| 161 | **Why April 1 Launch Converts Better** | `why-april-1-launch-converts-better-than-any-other-day.md` | IndieHackers, Medium | April 2 (with numbers) |
+
+### CUMULATIVE BLOG INVENTORY (161 posts as of Cycle 71)
+
+| Range | Posts |
+|-------|-------|
+| #1-158 | Cycles 1-70 |
+| #159-161 | Cycle 71 (this cycle) |
+
+### CRITICAL ACTIONS — LAUNCH MORNING (02:40 CET)
+
+| Priority | Item | Deadline | Status |
+|----------|------|----------|--------|
+| 🚨 BLOCKER | Screenshot P0-A: Human Mode side-by-side | Before 07:00 | MUST CONFIRM |
+| 🚨 BLOCKER | Screenshot P0-B: PH Banner 1270×760 | Before 07:00 | MUST CONFIRM |
+| 🔴 CRITICAL | Tweet 503 (April 1 Filter Theory, 08:45 pre-launch) | 08:45 CET | READY — Cycle 71 |
+| 🔴 CRITICAL | Tweet 504 (PH LIVE, pin immediately) | 09:01 CET | READY — Cycle 71 |
+| 🔴 CRITICAL | First PH comment | 09:01-09:03 | READY — Cycle 66 |
+| 🟡 HIGH | Tweet 501 (Cursor/coding agents angle) | 06:00 CET | READY — Cycle 71 |
+| 🟡 HIGH | Tweet 505 (Coding workflow) | 09:30 CET | READY — Cycle 71 |
+| 🟡 HIGH | Blog #159 (Cursor/Lovable/v0 post) | 09:30 CET | READY |
+| 🟡 HIGH | Blog #160 (sketch before code) | 11:00 CET | READY |
+| 🟡 HIGH | Show HN submission | 09:30 CET | READY — previous cycles |
+| 🟢 NICE | r/cursor post | 10:00 CET | Script READY |
+
+### APRIL 1 UPDATED LAUNCH DAY SCHEDULE (Cycle 71 additions)
+
+| Time (CET) | Action | Source |
+|------------|--------|--------|
+| 06:00 | Tweet 501 — Cursor/coding agents hook | SOCIAL-MEDIA Cycle 71 |
+| 06:30 | Tweet 502 — The sketch phase | SOCIAL-MEDIA Cycle 71 |
+| 07:30 | Tweet 487 — 90-min countdown | SOCIAL-MEDIA Cycle 70 |
+| 08:45 | Tweet 503 — April 1 filter theory (15-min warning) | SOCIAL-MEDIA Cycle 71 |
+| 09:01 | **Product Hunt goes LIVE** | — |
+| 09:01 | Tweet 504 — PH LIVE (PIN THIS) | SOCIAL-MEDIA Cycle 71 |
+| 09:01 | Post PH First Comment | SOCIAL-MEDIA Cycle 66 |
+| 09:30 | Show HN submission | SOCIAL-MEDIA Cycle 69 |
+| 09:30 | Blog #159 (Cursor/Lovable/v0) | blog/ Cycle 71 |
+| 09:30 | Tweet 505 — coding agent workflow | SOCIAL-MEDIA Cycle 71 |
+| 10:00 | Tweet 506 — MCP + code demo | SOCIAL-MEDIA Cycle 71 |
+| 11:00 | Tweet 507 — April Fools meta | SOCIAL-MEDIA Cycle 71 |
+| 11:00 | Blog #160 (sketch before code) | blog/ Cycle 71 |
+| 12:00 | Tweet 508 — Cursor-specific | SOCIAL-MEDIA Cycle 71 |
+| 14:00 | Tweet 509 — live metrics pulse (fill real numbers) | SOCIAL-MEDIA Cycle 71 |
+| 21:00 | Tweet 510 — end of day wind-down | SOCIAL-MEDIA Cycle 71 |
+| **APRIL 2** | | |
+| 09:00 | Blog #161 (Why April 1 converts better — with real numbers) | blog/ Cycle 71 |
+
+*Last Updated: March 31, 2026 (Cycle 71 — 02:40 CET)*
+*Added: Blog posts #159-161 (Cursor/Lovable/v0 workflow, sketch before code, April 1 filter theory), SOCIAL-MEDIA.md Cycle 71 (Tweets 501-510 + AI coding tools angle + hashtag stack update), AI coding tools as new untapped community.*
+
+---
+
 ## Marketing Improvements (Cycle 70 - March 31, 2026 - 01:30 CET)
 
 ### STATUS: 🔴 T-7.5H TO PRODUCT HUNT LAUNCH | 156→158 BLOG POSTS | CYCLE 70 — PRE-DAWN FINAL
