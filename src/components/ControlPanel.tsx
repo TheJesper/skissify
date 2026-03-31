@@ -193,12 +193,30 @@ function ElementCoordEditor({
       { key: "cx", label: "cx" },
       { key: "cy", label: "cy" },
       { key: "r", label: "r" },
+      { key: "startAngle", label: "start°" },
+      { key: "endAngle", label: "end°" },
     ];
-  } else if (["stair", "window", "opening", "door-symbol", "door-slide", "column"].includes(element.type)) {
+  } else if (element.type === "stair") {
+    // Stair has x, y, w, h + steps
     fields = [
       { key: "x", label: "x" },
       { key: "y", label: "y" },
       { key: "w", label: "w" },
+      { key: "h", label: "h" },
+    ];
+  } else if (["window", "opening", "door-symbol", "door-slide", "column"].includes(element.type)) {
+    fields = [
+      { key: "x", label: "x" },
+      { key: "y", label: "y" },
+      { key: "w", label: "w" },
+    ];
+  } else if (["bed", "sofa", "dining-table", "armchair", "desk", "bookshelf", "stove", "shower", "toilet", "bathtub", "sink"].includes(element.type)) {
+    // Furniture & fixture elements — all use bounding box (x, y, w, h)
+    fields = [
+      { key: "x", label: "x" },
+      { key: "y", label: "y" },
+      { key: "w", label: "w" },
+      { key: "h", label: "h" },
     ];
   }
 
@@ -418,6 +436,149 @@ function ElementCoordEditor({
           ))}
         </div>
       </div>
+
+      {/* Furniture-specific property controls */}
+      {element.type === "bed" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">Bed type</label>
+          <div className="flex gap-1">
+            {([1, 2] as const).map((n) => (
+              <button
+                key={n}
+                onClick={() => onUpdate(elementIdx, { pillows: n })}
+                className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
+                  (el.pillows as number | undefined ?? 1) === n
+                    ? "ring-2 ring-[#268bd2] bg-[#fdf6e3] text-[#073642]"
+                    : "bg-[#fdf6e3] hover:bg-[#e8e0cc] text-[#586e75]"
+                }`}
+                title={n === 1 ? "Single bed (1 pillow)" : "Double bed (2 pillows)"}
+              >
+                {n === 1 ? "Single" : "Double"}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {element.type === "dining-table" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">Chairs per side</label>
+          <div className="flex gap-1">
+            {([1, 2, 3] as const).map((n) => (
+              <button
+                key={n}
+                onClick={() => onUpdate(elementIdx, { seats: n })}
+                className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
+                  (el.seats as number | undefined ?? 1) === n
+                    ? "ring-2 ring-[#268bd2] bg-[#fdf6e3] text-[#073642]"
+                    : "bg-[#fdf6e3] hover:bg-[#e8e0cc] text-[#586e75]"
+                }`}
+              >
+                {n} {n === 1 ? "chair" : "chairs"}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {element.type === "bookshelf" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">Shelves</label>
+          <div className="flex gap-1">
+            {([2, 3, 4, 5] as const).map((n) => (
+              <button
+                key={n}
+                onClick={() => onUpdate(elementIdx, { shelves: n })}
+                className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
+                  (el.shelves as number | undefined ?? 3) === n
+                    ? "ring-2 ring-[#268bd2] bg-[#fdf6e3] text-[#073642]"
+                    : "bg-[#fdf6e3] hover:bg-[#e8e0cc] text-[#586e75]"
+                }`}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {element.type === "stove" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">Burners</label>
+          <div className="flex gap-1">
+            {([2, 4] as const).map((n) => (
+              <button
+                key={n}
+                onClick={() => onUpdate(elementIdx, { burners: n })}
+                className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
+                  (el.burners as number | undefined ?? 4) === n
+                    ? "ring-2 ring-[#268bd2] bg-[#fdf6e3] text-[#073642]"
+                    : "bg-[#fdf6e3] hover:bg-[#e8e0cc] text-[#586e75]"
+                }`}
+              >
+                {n} burners
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {element.type === "stair" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">Steps</label>
+          <input
+            type="number"
+            min={2}
+            max={20}
+            value={String(el.steps as number | undefined ?? 8)}
+            onChange={(e) => onUpdate(elementIdx, { steps: parseInt(e.target.value, 10) || 8 })}
+            onKeyDown={(e) => e.stopPropagation()}
+            className="w-20 bg-[#fdf6e3] border border-[#93a1a1] rounded px-2 py-1 text-[11px] text-[#586e75] font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+          />
+        </div>
+      )}
+
+      {element.type === "door-symbol" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">Swing direction</label>
+          <div className="flex gap-1">
+            {(["left", "right"] as const).map((d) => (
+              <button
+                key={d}
+                onClick={() => onUpdate(elementIdx, { swing: d })}
+                className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
+                  (el.swing as string | undefined ?? "left") === d
+                    ? "ring-2 ring-[#268bd2] bg-[#fdf6e3] text-[#073642]"
+                    : "bg-[#fdf6e3] hover:bg-[#e8e0cc] text-[#586e75]"
+                }`}
+              >
+                {d === "left" ? "↺ Left" : "↻ Right"}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {element.type === "door-slide" && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">Slide direction</label>
+          <div className="flex gap-1">
+            {(["left", "right"] as const).map((d) => (
+              <button
+                key={d}
+                onClick={() => onUpdate(elementIdx, { direction: d })}
+                className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
+                  (el.direction as string | undefined ?? "right") === d
+                    ? "ring-2 ring-[#268bd2] bg-[#fdf6e3] text-[#073642]"
+                    : "bg-[#fdf6e3] hover:bg-[#e8e0cc] text-[#586e75]"
+                }`}
+              >
+                {d === "left" ? "← Left" : "→ Right"}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
