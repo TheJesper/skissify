@@ -385,17 +385,40 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
 
     case "dim": {
       const edm = E(el);
-      const dimAngle = Math.atan2(edm.y2 - edm.y1, edm.x2 - edm.x1);
-      const pts = wobbleLine(edm.x1, edm.y1, edm.x2, edm.y2, opts);
-      parts.push(`<path d="${pointsToPath(pts)}" ${sa}/>`);
-      parts.push(renderArrowHead(edm.x1, edm.y1, dimAngle + Math.PI, 8, style));
-      parts.push(renderArrowHead(edm.x2, edm.y2, dimAngle, 8, style));
-      const nx = -Math.sin(dimAngle) * 8;
-      const ny = Math.cos(dimAngle) * 8;
-      parts.push(`<line x1="${edm.x1 + nx}" y1="${edm.y1 + ny}" x2="${edm.x1 - nx}" y2="${edm.y1 - ny}" ${sa}/>`);
-      parts.push(`<line x1="${edm.x2 + nx}" y1="${edm.y2 + ny}" x2="${edm.x2 - nx}" y2="${edm.y2 - ny}" ${sa}/>`);
-      const midX = (edm.x1 + edm.x2) / 2;
-      const midY = (edm.y1 + edm.y2) / 2;
+      const dimOffset: number = edm.offset ?? 0;
+      const dist = Math.sqrt((edm.x2 - edm.x1) ** 2 + (edm.y2 - edm.y1) ** 2);
+      // Perpendicular direction (same math as canvas renderer)
+      const perpX = dist > 0 ? -(edm.y2 - edm.y1) / dist : 0;
+      const perpY = dist > 0 ? (edm.x2 - edm.x1) / dist : 0;
+
+      // Compute offset endpoints
+      let dx1 = edm.x1, dy1 = edm.y1, dx2 = edm.x2, dy2 = edm.y2;
+      if (dimOffset !== 0) {
+        dx1 = edm.x1 + perpX * dimOffset;
+        dy1 = edm.y1 + perpY * dimOffset;
+        dx2 = edm.x2 + perpX * dimOffset;
+        dy2 = edm.y2 + perpY * dimOffset;
+        // Dashed extension lines from original points to offset position
+        const dashSa = sa.replace(/stroke-dasharray="[^"]*"/, '') + ` stroke-dasharray="3,3"`;
+        const ext1pts = wobbleLine(edm.x1, edm.y1, dx1, dy1, { ...opts, seed: opts.seed! + 20 });
+        const ext2pts = wobbleLine(edm.x2, edm.y2, dx2, dy2, { ...opts, seed: opts.seed! + 21 });
+        parts.push(`<path d="${pointsToPath(ext1pts)}" ${dashSa}/>`);
+        parts.push(`<path d="${pointsToPath(ext2pts)}" ${dashSa}/>`);
+      }
+
+      const dimAngle = Math.atan2(dy2 - dy1, dx2 - dx1);
+      const ptsMain = wobbleLine(dx1, dy1, dx2, dy2, { ...opts, amplitude: opts.amplitude * 0.3, waves: opts.waves * 0.5 });
+      parts.push(`<path d="${pointsToPath(ptsMain)}" ${sa}/>`);
+
+      // Tick marks at both ends
+      const tn = 5;
+      const tnx = -Math.sin(dimAngle) * tn;
+      const tny = Math.cos(dimAngle) * tn;
+      parts.push(`<line x1="${dx1 + tnx}" y1="${dy1 + tny}" x2="${dx1 - tnx}" y2="${dy1 - tny}" ${sa}/>`);
+      parts.push(`<line x1="${dx2 + tnx}" y1="${dy2 + tny}" x2="${dx2 - tnx}" y2="${dy2 - tny}" ${sa}/>`);
+
+      const midX = (dx1 + dx2) / 2;
+      const midY = (dy1 + dy2) / 2;
       const fillColor = edm.color || defaultColor;
       const isVertical = Math.abs(edm.x2 - edm.x1) < Math.abs(edm.y2 - edm.y1);
       // Respect per-element fontFamily override, then sketch-level dimFont, then textFont, then default
@@ -404,8 +427,10 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
         "'Courier New', monospace"
       );
       if (isVertical) {
+        // Vertical dim: label rotated 90° CCW, offset perpendicular (16px outward)
+        const labelOffX = perpX * 16;
         parts.push(
-          `<text x="${midX}" y="${midY}" font-family="${dimFontCss}" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto" transform="rotate(-90 ${midX} ${midY})" dy="-6">${escapeXml(edm.label)}</text>`
+          `<text x="${midX + labelOffX}" y="${midY}" font-family="${dimFontCss}" font-size="12" fill="${fillColor}" text-anchor="middle" dominant-baseline="auto" transform="rotate(-90 ${midX + labelOffX} ${midY})" dy="-6">${escapeXml(edm.label)}</text>`
         );
       } else {
         parts.push(
