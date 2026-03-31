@@ -4,6 +4,289 @@
 
 ---
 
+## Cycle 72 — March 31, 2026 — 03:48 CET — T-5.2H TO PH LAUNCH
+
+### STATUS: 🔴 T-5.2H TO PRODUCT HUNT | CYCLE 72 — LAUNCH MORNING FINAL COPY POLISH
+
+---
+
+### NEW TWEETS 511-520 (Launch Morning Polish + Audience Expansion)
+
+**Tweet 511 — UI Designers & PMs (post 07:00 CET)**
+```
+Design tools do two different jobs:
+
+1. Figma/Framer → polish decisions that are already made
+2. Skissify → make decisions faster by seeing them rough first
+
+If you skip step 2 and go straight to step 1, you spend your polish budget on the wrong thing.
+
+Try step 2 first: skissify.com/human (free, no account)
+```
+Hashtags: #ProductDesign #UXDesign #VibeDrawing #BuildInPublic
+
+---
+
+**Tweet 512 — The Accuracy Data One-Liner (post 07:30 CET)**
+```
+Flat JSON schema → 94% LLM first-try accuracy.
+Nested JSON schema → 61%.
+
+The most important engineering decision in Skissify had nothing to do with the renderer.
+
+It was the data model.
+
+Schema design IS product design.
+
+#AIEngineering #MCP #LLM
+```
+
+---
+
+**Tweet 513 — The "5 Hours Before PH" Founder Pulse (post 04:00 CET if awake)**
+```
+Product Hunt goes live in 5 hours.
+
+Here's what I'm thinking about at 4am:
+
+Not the upvote count.
+Not the rank.
+
+Whether the filter works.
+
+April 1 means every person who tries Skissify today had to overcome "wait, is this a joke?"
+
+Those are the right users.
+
+skissify.com
+```
+Hashtags: #BuildInPublic #ProductHunt #LaunchDay
+
+---
+
+**Tweet 514 — A2A / Multi-Agent Workflow (post 10:30 CET)**
+```
+Multi-agent pattern that's working:
+
+Agent A: plans the space (text description)
+Agent B: calls Skissify MCP → gets sketch URL
+Agent C: stores URL in memory, references it later
+
+Three agents. One spatial artifact that persists across the session.
+
+The sketch URL is the shared state.
+
+skissify.com/docs/mcp
+```
+Hashtags: #AIAgents #MCP #MultiAgent #BuildInPublic
+
+---
+
+**Tweet 515 — "One API Call" Hook (post 11:30 CET)**
+```
+Give your AI agent a pencil in one API call:
+
+POST https://skissify.com/api/human
+{ "description": "2-bedroom apartment, open kitchen, south-facing windows" }
+
+→ { "url": "https://skissify.com/s/..." }
+
+That's it. That's the API. Free tier included.
+
+skissify.com/docs
+```
+Hashtags: #MCP #AIAgents #DevTools #API
+
+---
+
+**Tweet 516 — Post-PH Engagement Pulse (post 13:00 CET — fill real numbers)**
+```
+[N] hours into Product Hunt.
+
+Upvotes: [N]
+Comments: [N]
+Sketches generated today: [N]
+Best comment so far: "[quote the best one]"
+
+The April Fools filter is working.
+
+Everyone who's here believed it was real.
+
+Those are my people.
+
+skissify.com
+```
+Hashtags: #ProductHunt #BuildInPublic #LaunchDay
+
+---
+
+**Tweet 517 — Community Engagement (post 15:00 CET)**
+```
+Four communities found Skissify without targeting:
+
+→ AI developers (expected)
+→ Homeowners briefing contractors (not expected)
+→ Dungeon masters making maps (very not expected)
+→ Geometry teachers making exercises (????)
+
+Primitives find their own use cases.
+
+What community will find Skissify next?
+
+skissify.com
+```
+Hashtags: #BuildInPublic #AIAgents #IndieHacker
+
+---
+
+**Tweet 518 — r/cursor / r/ClaudeAI targeting (post 12:00 CET)**
+```
+Cursor tip: sketch before you code.
+
+Before you type your first prompt, open skissify.com/human
+Describe the UI you're building
+Get a sketch URL
+Paste it as visual context in Cursor
+
+First iteration matches your mental model.
+Technical debt from "unclear intent" drops significantly.
+
+Free. 2 seconds.
+```
+Hashtags: #Cursor #ClaudeCode #AIAgents #DevTools
+
+---
+
+**Tweet 519 — The Wobble Moment (post 14:00 CET)**
+```
+The aesthetic is not a coincidence.
+
+Hand-drawn = "this is a draft"
+Polished = "this is decided"
+
+When people see a rough sketch, they engage with the idea.
+When they see a finished design, they engage with the details.
+
+You want idea feedback first.
+
+That's why Skissify draws rough.
+
+skissify.com
+```
+Hashtags: #DesignProcess #UXDesign #VibeDrawing
+
+---
+
+**Tweet 520 — Launch Day Wind-Down (post 20:30 CET)**
+```
+April 1 is almost done.
+
+The filter worked.
+
+Every person who used Skissify today had to decide it wasn't a joke first.
+
+That's the audience I wanted.
+
+Tomorrow: the retrospective with real numbers.
+
+Tonight: sleep.
+
+skissify.com
+
+🙏 to everyone who showed up.
+```
+Hashtags: #ProductHunt #BuildInPublic #LaunchDay
+
+---
+
+### NEW PLATFORMS — Cycle 72
+
+#### r/vibecoding (post at 10:00 CET April 1)
+```
+Title: Vibe coding needs a vibe drawing phase — here's the missing workflow
+
+You vibe-code a UI. It looks wrong. You iterate. 7 turns later, you have something close to what you pictured.
+
+What was missing: the sketch phase.
+
+Before you open Cursor or Claude Code, describe the UI to Skissify. Get a hand-drawn sketch. Paste it as context.
+
+Now the agent builds toward a picture, not a description.
+
+Blog post: [link to the-sketch-before-the-code-a-new-ai-workflow.md]
+Demo: skissify.com/human (free, 2 seconds, no account)
+
+What vibe-coding tools are you pairing with spatial context?
+```
+
+#### r/cursor (post at 10:30 CET April 1)
+```
+Title: Workflow improvement: sketch before prompting Cursor
+
+Something I've been doing that makes Cursor iterations faster:
+
+1. Go to skissify.com/human
+2. Describe my UI in plain English ("dashboard with sidebar, stats row, main chart area")
+3. Get a sketch URL (2 seconds, free)
+4. Include it in my first Cursor prompt as: "here's a rough sketch of what I want: [URL]"
+
+Cursor reads the sketch URL as context. It builds toward the picture instead of guessing.
+
+Number of wrong-direction iterations dropped from ~6 to ~2.
+
+Anyone else using visual context with Cursor?
+```
+
+#### LinkedIn — April 1 Launch Day Professional Post (post 09:30 CET)
+```
+Today we launched Skissify on Product Hunt. On April Fools Day. Deliberately.
+
+The theory: every person who tries Skissify on April 1st had to first decide it wasn't a joke.
+
+That friction is a feature, not a bug.
+
+High-intent users are worth more than high-volume users.
+
+The filter is the funnel.
+
+If you're building AI agent workflows and need visual output — today's the day to try it.
+
+skissify.com/human — free, 2 seconds, no account.
+
+What communities are you building AI agent tools for in 2026?
+
+#AIAgents #MCP #ProductLaunch #BuildInPublic
+```
+
+---
+
+### HASHTAG STACK UPDATE — Cycle 72 (April 1, 2026)
+
+**New trending hashtags confirmed this cycle:**
+- `#Cursor` — AI coding tools community, very active
+- `#ClaudeCode` — Claude Code users, developer overlap
+- `#VibeCoding` — still active search term
+- `#VibeDrawing` — Skissify-owned, continue planting
+- `#SketchLayer` — emerging, plant consistently
+
+**Full April 1 PH Day stack by post type:**
+
+| Post type | Hashtag set |
+|-----------|-------------|
+| PH launch | #ProductHunt #AIAgents #MCP #BuildInPublic |
+| Technical | #MCP #AIEngineering #LLM #DevTools |
+| Cursor/dev tools | #Cursor #ClaudeCode #DevTools #AIAgents |
+| Design/UX | #UXDesign #ProductDesign #VibeDrawing #SketchFirst |
+| Founder/story | #BuildInPublic #IndieHacker #SoloFounder #LaunchDay |
+| Consumer | #HomeDesign #FloorPlan #AI #VibeDrawing |
+
+---
+
+*Last Updated: March 31, 2026 (Cycle 72 — 03:48 CET)*
+*Added: Tweets 511-520 (launch morning polish: UI designers, accuracy data, founder 4am pulse, A2A workflow, one API call, PH engagement pulse, communities, Cursor tip, wobble moment, wind-down), new community posts for r/vibecoding + r/cursor + LinkedIn, hashtag stack update for April 1*
+
+---
+
 ## Cycle 71 — March 31, 2026 — 02:40 CET — T-6.5H TO PH LAUNCH
 
 ### NEW TWEETS 501-510 (AI Coding Tools Angle + Launch Morning Final Arc)

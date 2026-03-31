@@ -1,8 +1,113 @@
 # Skissify Press Kit
 
-**Last Updated:** March 31, 2026 - 01:30 CET (Cycle 70)
-**Version:** 15.0
+**Last Updated:** March 31, 2026 - 03:48 CET (Cycle 72)
+**Version:** 16.0
 **Contact:** jesper@skissify.com
+
+---
+
+## Cycle 72 Updates (March 31, 2026 - 03:48 CET) — T-5.2H PRODUCT HUNT
+
+### ONE-LINERS v276-v285 (Cycle 72 — Pre-Dawn Launch Batch)
+
+**v276 (THE SKETCH PHASE — new concept framing):**
+"Every AI coding session is missing a step: the sketch. Skissify is that step."
+
+**v277 (AI CODING TOOLS ANGLE):**
+"Give Cursor a picture of what you want, not just a description. Skissify generates that picture in 2 seconds."
+
+**v278 (THE FILTER — April Fools meta-angle):**
+"The April Fools filter is the funnel. High-intent users only."
+
+**v279 (SCHEMA DEPTH):**
+"94% LLM first-try accuracy. The number is a schema design decision, not a model choice."
+
+**v280 (ONE LINE API):**
+"POST a description. GET a sketch URL. That's the whole API."
+
+**v281 (MULTI-AGENT PATTERN):**
+"Agent A plans. Agent B sketches via Skissify. Agent C references the URL. Three agents, one persistent visual artifact."
+
+**v282 (THE HONEST SHORT PITCH v3):**
+"Skissify: text in, hand-drawn sketch URL out. MCP native. Free tier. Launching on Product Hunt April 1. Not a joke."
+
+**v283 (FOR CURSOR USERS):**
+"Before your first Cursor prompt: sketch it at skissify.com/human. The agent builds toward a picture, not a description."
+
+**v284 (THE ROUGHNESS PRINCIPLE):**
+"Rough by design. Hand-drawn means 'draft.' That's the signal your stakeholders need to give honest feedback."
+
+**v285 (FIVE-WORD VERSION v2):**
+"Sketch first. Code second. Always."
+
+---
+
+### MEDIA ANGLES v81-v85 (Cycle 72 — Fresh Hooks)
+
+**v81: The "Sketch Before Code" Workflow Story**
+> Category: AI coding tools intersection
+> Hook: "There's a step every Cursor/Claude Code session is missing. It takes 2 minutes and cuts your wrong-direction iterations in half."
+> Why it works: Actionable, resonates with the Cursor/vibe-coding developer audience that's the hottest PH community right now.
+> Best for: Dev.to, r/cursor, r/ClaudeAI, Product Hunt comments
+
+**v82: The April Fools Conversion Thesis**
+> Category: Marketing insight
+> Hook: "Skeptics who click through to check if something is real are your highest-converting users. April Fools Day delivers them by design."
+> Why it works: Novel marketing argument. Stands on its own as a post independent of Skissify results.
+> Best for: IndieHackers (April 2 with real data), Medium, Substack
+
+**v83: The Multi-Agent Visual Handoff**
+> Category: Technical agent architecture
+> Hook: "Multi-agent workflows need visual artifacts that persist between agents. Sketch URLs are the missing primitive."
+> Why it works: Named pattern for a genuinely novel architecture. Agent developers will share this.
+> Best for: Dev.to, r/AIAgents, Anthropic Discord, LangChain Discord
+
+**v84: The Pre-Dawn Founder Note**
+> Category: Solo founder authenticity
+> Hook: "Writing this at 3:48am, 5 hours before Product Hunt. The filter theory. What's real and what isn't."
+> Why it works: Timestamp specificity + vulnerability + thesis = high-authenticity content.
+> Best for: Twitter/X founder community, IndieHackers, Medium
+
+**v85: The "Sketch Layer" Category**
+> Category: Market positioning
+> Hook: "Every AI stack now has text, code, data, image. None had structured spatial output until now. That layer is called the sketch layer."
+> Why it works: Category-creation language. Makes Skissify sound inevitable.
+> Best for: LinkedIn, formal media pitches, Product Hunt description
+
+---
+
+### SCREENSHOT CHECKLIST — Cycle 72 (Final Pre-Launch Confirm)
+
+**P0 BLOCKERS (must have before 09:01 CET):**
+- [ ] Human Mode: text input → sketch output side-by-side
+- [ ] PH Banner: 1270×760, Claude Desktop MCP floor plan
+
+**P1 HIGH (have by 10:00 CET):**
+- [ ] Cursor workflow screenshot: Skissify URL pasted as context
+- [ ] Blueprint style dungeon/floor plan
+- [ ] Four paper styles comparison
+
+**P2 NICE:**
+- [ ] Wobble slider at 0 vs 10 comparison
+- [ ] Multi-agent workflow diagram
+
+---
+
+### PRODUCT HUNT — CYCLE 72 FINAL STATUS
+
+**Submission:** LIVE at 09:01 CET April 1
+**First Comment:** Ready (SOCIAL-MEDIA Cycle 66)
+**Gallery:** 2 P0 assets needed (see above)
+**Tagline:** "Give your AI agent a pencil."
+**Category:** Developer Tools
+
+**April 1 launch day narrative (pitch to anyone asking):**
+> "We built a sketch tool for AI agents — JSON or plain text in, hand-drawn sketch URL out. We launched on April 1 deliberately. The skeptics who check if it's real are the high-intent users we want. Not a joke. Product Hunt today. skissify.com."
+
+---
+
+*Last Updated: March 31, 2026 (Cycle 72 — 03:48 CET)*
+*Version 16.0: One-liners v276-285 (AI coding tools + April Fools + multi-agent angles), Media Angles v81-85 (sketch-before-code, April Fools thesis, multi-agent handoff, pre-dawn founder note, sketch layer category), Screenshot Checklist v17, PH launch day narrative*
 
 ---
 

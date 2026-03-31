@@ -1,98 +1,87 @@
-# The Sketch Before the Code: A New AI Workflow Nobody Talks About
+# The Sketch Before the Code: A New AI Workflow
 
-There's a step in every good project that most devs skip.
-
-It lives between "I have an idea" and "I'm writing code." It's about 15 minutes of thinking with your hands — drawing rough boxes, arrows, spatial relationships — that changes everything that comes after.
-
-In 2026, AI agents have colonized "writing the code" so completely that we've forgotten what lives upstream.
-
-That step is the **sketch phase**. And it's the one thing AI coding pipelines are missing.
+*Why every AI coding session should start with a hand-drawn sketch*
 
 ---
 
-## What happens when you skip the sketch
+There's a phase in software development that nobody talks about, because it's embarrassing.
 
-You know the feeling.
+It's the phase where you open a new file, stare at it, type something, delete it, open Figma, close Figma, draw a rectangle, realize you don't know what goes inside it, and then spend 20 minutes writing code you're about to throw away.
 
-You open a new project. You have a sense of what it should do. You start describing it to Claude or Cursor or Bolt. The agent generates something. It's... fine. But it's not quite right. You iterate.
-
-Three hours later you've got 400 lines of working code in the wrong shape.
-
-The architecture doesn't match the mental model you had at the start, because the mental model you had at the start was never made concrete. It was a fuzzy cloud of intent that you fed into the agent one sentence at a time, and the agent filled in the gaps with its own assumptions.
-
-The fix is simple: **make the model explicit before the code exists**.
+I call it **the sketch phase**. AI tools have mostly skipped it.
 
 ---
 
-## The workflow that changes this
+## What Cursor, Claude Code, and v0 are missing
 
-Step 1: **Sketch the structure** (3 minutes)
+The AI coding tools of 2026 are extraordinary at turning ideas into working code. Cursor writes functions. Claude Code refactors entire files. v0 generates UI from prompts. Lovable builds full-stack apps from descriptions.
 
-Open **skissify.com/human**. Type what you're building in plain spatial terms:
+But all of them have the same gap: **they execute before you know what you want to execute**.
 
-> "Three-panel layout: sidebar with file tree on left, main editor in center, preview panel on right. Top bar with tabs."
+You type "build me a dashboard" and they start building. The first iteration is wrong. The second is closer. By the fifth, you've accumulated technical debt from ideas that changed mid-flight, because you were working out the architecture while the agent was writing code.
 
-You get a hand-drawn sketch URL back in 2 seconds.
-
-Step 2: **Use the sketch as agent context**
-
-Paste the URL into your coding agent conversation as the first message:
-
-> "I want to build something that looks roughly like this: [url]. Before we write any code, walk me through the data model and component tree you'd design."
-
-The agent now has visual grounding. It understands the spatial intent — not just the words you used to describe it.
-
-Step 3: **Iterate on the sketch before iterating on the code**
-
-If the agent's interpretation is wrong, update the sketch first. Add a label, move an element, annotate a relationship. The sketch is cheap to change. Code is expensive.
+The problem isn't the AI. The problem is you never sketched it first.
 
 ---
 
-## Why rough matters
+## The sketch phase: what it looks like
 
-When you sketch in Figma or draw a polished wireframe, you're signaling "this is close to final." The agent (and your human collaborators) treat it as a specification.
+In the pre-AI era, a good developer would spend 10-15 minutes before writing code:
 
-A Skissify sketch looks hand-drawn on purpose. The wobble, the rough lines, the pencil-on-napkin aesthetic communicate: *this is a direction, not a contract*. That changes how everyone — human or AI — engages with it.
+- Drawing boxes on a whiteboard
+- Sketching a component hierarchy on paper
+- Annotating a rough floor plan for a UI (literally — dashboard = rooms)
 
-Rough signals: open to revision.
-Polished signals: implement this.
+This isn't wasted time. It's the time that makes the execution fast. When you have a clear spatial picture of what you're building, the code writes itself.
 
-For early-stage thinking, you want rough.
-
----
-
-## For MCP users
-
-If you're running Claude Desktop with MCP enabled:
-
-```
-npm install -g @skissify/mcp-server
-```
-
-Then this conversation becomes possible:
-
-> **You:** I want to build a dashboard that shows sales metrics. Can you sketch a rough layout?
-> 
-> **Claude:** [calls generate_sketch, returns hand-drawn sketch URL]
-> 
-> **You:** Good. The KPI cards should be bigger. And add a filter row above the table.
-> 
-> **Claude:** [updates sketch, returns new URL]
-> 
-> **You:** Perfect. Now let's talk about the data model.
-
-The sketch is not a static image. It's a living artifact in the conversation — inspectable, modifiable, chain-passable between agents.
+AI coding tools made execution so fast that we skipped this phase. And now we're paying for it in iterations.
 
 ---
 
-## The takeaway
+## What the new workflow looks like
 
-AI changed how we write code. It hasn't yet changed how we think before writing code.
+Here's the workflow that's working for me, and for the people using Skissify as a pre-code sketch tool:
 
-That gap — the sketch phase — is still manual, still skipped, still undervalued.
+1. **Before opening Cursor or Claude Code, open Skissify**
+2. Type a description of your UI or system in plain English: "Dashboard with sidebar navigation, main content area, and a top stats bar with three cards"
+3. Get a hand-drawn sketch URL in 2 seconds — free, no account
+4. **Paste that sketch URL into your first Cursor/Claude Code message as context**
+5. Now execute
 
-Skissify is the tool for that phase. 2 seconds from text to sketch. Free to try. No signup.
+The difference is dramatic. When the agent has a sketch to work from, it makes assumptions that match what you actually pictured. Without the sketch, it fills gaps with its own defaults — which may not match yours.
 
-**skissify.com/human**
+---
 
-*Launching on Product Hunt April 1, 2026.*
+## Why hand-drawn matters
+
+You might wonder: why not a Figma mockup? Why not a screenshot?
+
+Because hand-drawn signals "this is a draft." When you give a polished Figma file to an AI agent as context, it optimizes for matching the spec. When you give a rough sketch, it optimizes for **understanding your intent** and filling in sensible details.
+
+The roughness is load-bearing. It says "I want something like this, use your judgment."
+
+Figma is for precision. Sketches are for intent.
+
+---
+
+## The 2026 AI coding workflow
+
+| Old workflow | New workflow |
+|-------------|-------------|
+| Open Cursor, describe what you want | Sketch it first (2 minutes) |
+| Agent builds, you iterate | Give sketch as context, agent executes |
+| 5-10 iterations to get architecture right | 2-3 iterations, architecture correct from the start |
+
+The total time is similar. The frustration is much lower. The final code is cleaner, because it was designed (in sketch) before it was built.
+
+---
+
+## Try it
+
+Go to [skissify.com/human](https://skissify.com/human). Type a description of your next UI or system. Get a sketch URL. Paste it into Cursor or Claude Code.
+
+Tell me if it changes how you work.
+
+---
+
+*Skissify is a free tool for generating hand-drawn sketches from text descriptions. It has an MCP server for AI agent workflows and a human-friendly form at skissify.com/human. No account needed for public sketches.*

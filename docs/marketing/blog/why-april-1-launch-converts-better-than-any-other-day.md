@@ -1,103 +1,106 @@
-# Why an April Fools Day Launch Converts Better Than Any Other Day
+# Why April 1 Launch Converts Better Than Any Other Day
 
-This is a contrarian take. I'm launching a real product on April 1, 2026. Here's the case for why that's not a mistake — and why it might be the best possible launch day for certain products.
-
----
-
-## The standard advice is wrong
-
-Most founders dread launching on April 1. "Nobody will take you seriously." "They'll think it's a joke." "Wait until April 2."
-
-I think this misunderstands what a product launch actually is.
-
-A launch isn't an announcement. It's an acquisition funnel. The job of launch day content is not to reach the most people — it's to reach the right people in the right frame of mind.
-
-And April Fools Day, if you lean into it correctly, creates a filter that leaves you with better users than almost any other launch day.
+*The counterintuitive case for launching on April Fools Day*
 
 ---
 
-## The April Fools acquisition funnel
+Everyone told me not to launch on April 1st.
 
-Here's what happens when someone sees Skissify trending on Product Hunt on April 1:
+"People will think it's a joke." "You'll get ironic upvotes but no real users." "Wait until Monday the 6th."
 
-1. They see it
+I launched anyway. And I think it might be the best marketing decision I've made.
+
+Here's the argument.
+
+---
+
+## The filter theory
+
+When someone sees Skissify on Product Hunt on April 1st, the first thing they think is: *wait, is this a joke?*
+
+That moment of skepticism is actually a conversion funnel.
+
+1. They see the product
 2. "Wait, is this a joke?"
-3. They click to check
-4. They watch the demo
-5. "Oh — it actually works"
+3. **They click to check** — this is engagement a normal launch doesn't force
+4. The demo works. It's real.
+5. They are now a high-intent, self-qualified user who overcame friction to get here
 
-That step 3 — the click to verify — is the money step. That click comes from genuine curiosity. And genuine curiosity produces genuine engagement.
-
-Compare this to a normal launch:
-1. They see it
-2. "Interesting"
-3. They scroll past
-
-The April Fools skepticism earns the second look. The second look earns the user.
+The April Fools skepticism isn't a barrier. It's a pre-screening step. The people who don't bother checking are probably not your users anyway. The people who do are already more engaged than a typical PH visitor.
 
 ---
 
-## Filters are good
+## Why self-qualified users are better users
 
-Every acquisition mechanism is a filter. Google search is a filter. SEO is a filter. A cold pitch deck is a filter.
+In conversion rate optimization, there's a concept called **friction-qualified leads**: users who convert despite friction are more valuable than users who convert without it.
 
-The April Fools filter is a particularly good one because it selects for people who:
-- Pay attention
-- Follow through when curious
-- Are willing to be surprised
+A user who clicks through "is this a joke?" has:
+- Higher intent
+- Stronger curiosity
+- Better tolerance for novelty
 
-Those are exactly the early adopters who give you useful feedback, share the product, and stick around.
+These are your early adopters. These are the people who will actually try the product instead of bookmarking it and forgetting.
 
----
-
-## The aesthetic alignment
-
-Skissify's entire value proposition is built around **deliberate roughness**. Hand-drawn sketches that look imperfect on purpose. The wobble is the product. The rough lines are the point.
-
-Launching a product about embracing imperfection on the day when "rough and imperfect" is culturally embraced is not ironic. It's aligned.
-
-April 1 and "hand-drawn aesthetic" are the same thesis: polish is overrated. Rough is honest.
+The April Fools filter doesn't reduce user quality. It **improves** it.
 
 ---
 
-## Practical reality
+## The cognitive science of skepticism
 
-Does this mean everyone will understand the product on first exposure? No.
+Research on belief updating shows that when someone initially doubts something and then discovers they were wrong, they tend to hold the corrected belief more strongly than if they'd believed it from the start.
 
-Does it mean some people will assume it's a joke and never click? Yes.
+In plain terms: a user who thought it was a joke and then discovered it was real remembers the product better, talks about it more, and returns more often.
 
-But here's the thing about people who assume it's a joke without checking: they weren't going to be useful users anyway. They're not the early adopters. They're not the people who send feedback. They're the ones who would have scrolled past on any day.
+The "oh wait, this is actually real" moment is a powerful memory anchor. It's unusual. It's surprising. It sticks.
 
-The ones who check — those are your users.
-
----
-
-## The evidence from our own launch
-
-We launched on March 27, five days ago. The first Show HN ran this week. The audiences that showed up unbidden — homeowners, dungeon masters, geometry teachers, architects — did so because something in the rough, honest description made them curious enough to look.
-
-Not despite the roughness. Because of it.
-
-April 1 extends that filter. It asks one more question of every potential user: *are you curious enough to check if this is real?*
-
-The ones who say yes are exactly who we want.
+Compare this to a normal launch: "Oh, another AI tool. Looks fine." That's forgettable.
 
 ---
 
-## How to do it right
+## The April Fools narrative bonus
 
-If you're launching on April 1, lean in — don't hedge.
+Launching on April 1st gave me a story. Not just "we launched." We launched with a specific date, a specific framing, a specific filter.
 
-**Don't say:** "It might look like an April Fools joke but we promise it's real!"
+"I launched a real AI tool on April Fools Day. Here's what happened."
 
-**Say:** "Launching April 1. Not a joke. Click to find out."
+That's a story that writes itself for Indie Hackers. For Dev.to. For Twitter. For every retrospective and post-mortem.
 
-The hedge destroys the dynamic. The confidence preserves it.
-
-Make the demo impossible to dismiss. Make the free tier frictionless. Make the product speak before anyone has to decide whether to believe the founder.
-
-And let the day do the filtering work for you.
+Normal launch days don't come with built-in narrative hooks. April 1st does.
 
 ---
 
-*Skissify is live on Product Hunt today, April 1, 2026. Hand-drawn sketch generation for AI agents. Not a joke. skissify.com*
+## The honest caveat
+
+I'll be honest: there's a real downside.
+
+Some people genuinely won't click, because they've learned to ignore April Fools content. You will lose some impressions.
+
+But the impressions you keep are better. And the users who convert are more valuable.
+
+That's a trade I'd make again.
+
+---
+
+## The retrospective (filling this in April 2nd)
+
+*This section will be updated with real numbers on April 2nd.*
+
+- Total PH upvotes on April 1: **[N]**
+- Upvote conversion rate vs day-before traffic: **[N]%**
+- Day-1 signups: **[N]**
+- Users who mentioned "I thought it was a joke but...": **[N DMs/comments]**
+- Return visit rate day 2: **[N]%**
+
+I'll update this post with real data on April 2nd. If the theory holds, the engagement quality metrics (return visits, session depth, Pro conversion) should be higher than a typical launch.
+
+---
+
+## The one-sentence version
+
+The best users are the ones who didn't believe you at first.
+
+April Fools Day delivers them by design.
+
+---
+
+*Skissify is a hand-drawn sketch generator for AI agents and humans. Launched April 1, 2026 on Product Hunt. Demo at skissify.com/human — free, no account needed.*
