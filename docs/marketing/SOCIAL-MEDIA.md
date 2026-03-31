@@ -1,7 +1,123 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: March 31, 2026 — Cycle 76**
+**Last updated: March 31, 2026 — Cycle 77 (T-12h)**
+
+---
+
+## 🚨 NEW: T-12h Final Pre-Launch Additions (Added Cycle 77 — 19:00 CET)
+
+### Tonight's Priority Posts (March 31 evening)
+
+**Best tweet to post TONIGHT (19:00-21:00 CET):**
+```
+Tomorrow I launch.
+
+Not "sometime soon." Not "next week."
+
+Tomorrow. Product Hunt. April 1st.
+
+Yes, really.
+
+You'll be able to describe a floor plan to Claude and watch it draw.
+No mouse. No Figma. No design skills.
+
+Just JSON → hand-drawn sketch.
+
+skissify.com ✏️
+```
+
+**Follow-up 30min later:**
+```
+Here's what I learned building Skissify:
+
+Rough sketches are psychologically different from polished mockups.
+
+A wobbly sketch says: "this is an idea, push on it."
+A Figma frame says: "someone worked on this, tread carefully."
+
+I built the wobble in on purpose.
+
+Tomorrow I launch it on the most skeptical day of the calendar.
+
+We'll see.
+```
+
+### Slack Community Template (missing from prior versions)
+
+**General developer Slacks:**
+```
+Hey! Launching tomorrow on Product Hunt.
+
+Built Skissify — a diagram API where you POST JSON and get hand-drawn SVG back.
+Works with Claude via MCP (npx skissify-mcp). Free /api/render endpoint, no auth.
+
+If anyone builds AI agents or wants programmatic diagramming — this was built for you.
+
+Preview at skissify.com/api/render (already live)
+```
+
+**Architecture/design Slacks:**
+```
+Building something that might be relevant here — a sketch API that produces genuinely 
+rough, hand-drawn style SVGs from JSON.
+
+Useful for early-stage layouts, floor plan prototyping, documentation visuals.
+No design tool knowledge needed. Claude can even generate them via MCP.
+
+Launching tomorrow — preview at skissify.com
+```
+
+### GitHub README / Documentation Cross-post
+
+**For posting in relevant GitHub Discussions or README sections of AI/agent repos:**
+```markdown
+## Visual Output with Skissify
+
+Skissify provides a free REST API for generating hand-drawn SVG sketches from JSON:
+
+```bash
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":120},{"type":"text","x":100,"y":115,"text":"My Component"}]}'
+```
+
+MCP server for Claude Desktop: `npx skissify-mcp`
+```
+
+### "The Honest One" — Alternative Launch Tweet for April 1 skeptics
+
+```
+You're right to be suspicious. It's April 1st.
+
+Here's how to test if Skissify is real without trusting me at all:
+
+```
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":120}]}'
+```
+
+→ Returns SVG.
+→ Hand-drawn rectangle.
+→ < 200ms.
+
+Or just go look: skissify.com
+```
+
+### For Product Hunt hunter note (the copy for your hunter):
+
+```
+Skissify is the most developer-friendly diagramming tool I've seen in years.
+
+JSON in → hand-drawn SVG out. No auth, no rate limits, no design skills.
+
+The MCP server is a 30-second Claude Desktop install and suddenly Claude draws floor plans.
+
+What gets me: the wobble is intentional. The hand-drawn aesthetic is a feature, not a shortcut. Rough sketches get better feedback than polished mockups — and now AI can produce that signal on purpose.
+
+A good one for developers, AI hackers, and architects who think in systems.
+```
 
 ---
 

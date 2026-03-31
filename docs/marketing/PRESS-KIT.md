@@ -275,3 +275,47 @@ No. Excalidraw is for humans drawing together in real-time. Skissify is for AI a
 
 **"Does it work for non-floor-plan sketches?"**
 Yes. Skissify renders any layout — wireframes, system architecture diagrams, org charts, infographics. Floor plans are the flagship use case because architectural elements are the hardest to find elsewhere.
+
+---
+
+## Live Coverage & Tagging Guide (Added Cycle 77)
+
+*Who to tag and mention on launch day for amplification:*
+
+### Twitter/X Accounts to Tag (contextually, not spammy)
+
+- **@AnthropicAI** — if showing Claude + MCP integration
+- **@ClaudeAI** — direct Claude use cases
+- **@ProductHunt** — use in PH launch thread
+- **@levelsio** — indie maker, BuildInPublic community leader, will reshare interesting tools
+- **@marc_louvion** — indie hacker with large following, shares MCP/AI tools
+- **@\_buildspace** — developer community, AI tools
+- **@swyx** — AI engineer community, MCP-adjacent audience
+- **@benparr** — follows AI tools launch news (Mashable/AI researcher)
+
+### Hashtag Timing Strategy (April 1 specific)
+
+**07:00-10:00 CET (launch window):**
+`#ProductHunt #Skissify #BuildInPublic #AI #IndieHacker`
+
+**10:00-14:00 CET (HN/Reddit window):**  
+`#ShowHN #WebDev #DeveloperTools #APIFirst #MCP`
+
+**14:00-20:00 CET (engagement window):**
+`#AIAgents #LLM #HandDrawn #Architecture #VibeDrawing`
+
+**April 1 specific:**
+`#AprilFools` (only in the meta-joke post — "it's real, try it")
+
+### PR Distribution (post-launch, Day 2-3)
+
+Submit to these after PH results are in:
+1. **TLDR Tech** — tldr.tech/submit (developer newsletter, ~750K readers)
+2. **The Batch (DeepLearning.AI)** — deeplearning.ai/the-batch
+3. **Bytes.dev** — bytes.dev/submit (JavaScript/web newsletter)
+4. **Console.dev** — console.dev/submit (dev tools newsletter)
+5. **Changelog** — changelog.com/news (open source + dev tools)
+6. **AlternativeTo** — add Skissify as alternative to Excalidraw, Figma, Miro
+7. **There's An AI For That** — theresanaiforthat.com/submit
+8. **Toolify.ai** — toolify.ai (AI tool directory)
+9. **MCP.so** — get listed in MCP server directory (critical for discovery)

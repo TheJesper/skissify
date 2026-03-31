@@ -152,6 +152,28 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - **The Stack Post format** — new Twitter format in SOCIAL-MEDIA.md. Positions Skissify as a natural member of the 2026 AI stack alongside Claude, Midjourney, etc. Devs respond well to "here's what I use."
 - **Specific webhook/CI automation angle** — not yet in any post. "GitHub Actions creates a sketch on every PR merge" is a genuinely interesting demo. Add to content calendar for Week 2.
 
+## NEW: T-12h Final Prep Additions (Cycle 77 — March 31, 19:00 CET)
+
+- **LAUNCH-WAR-ROOM.md created** — single file to open tomorrow morning. Hour-by-hour actions, response templates, KPI tracking table, emergency contacts, and priorities if time-constrained. This is the real ops doc for launch day.
+- **Launch-eve posts written** — `blog/launch-eve-tonight-march-31.md` has Twitter, LinkedIn, Slack, Dev.to copy ready to post TONIGHT. Use the "Tomorrow I launch" tweet at 19:00-21:00 CET tonight.
+- **Slack community templates added** — SOCIAL-MEDIA.md now has drop templates for architecture/design Slacks and general dev Slacks (separate from Discord).
+- **GitHub Discussions template** — for dropping in AI agent repo discussions where devs are already talking about visual output.
+- **"Honest test" tweet** — direct curl command for April Fools skeptics. No trust required — just run the command.
+- **Hunter copy ready** — Product Hunt hunter note copy added to SOCIAL-MEDIA.md.
+- **Tonight's priority action** — post the "Tomorrow I launch" tweet. It primes your audience and seeds anticipation overnight.
+
+### Still Not Done (last items before sleep)
+
+| Action | Priority | Owner |
+|--------|----------|-------|
+| Post launch-eve tweet (19:00-21:00 CET) | 🔴 P0 | Jesper |
+| Send PH preview to 5 friends who said they'd upvote | 🔴 P0 | Jesper |
+| Record 60s screen-record demo OR prep GIF | 🔴 P0 | Jesper |
+| Make sure prod server is healthy | 🔴 P0 | Jesper |
+| Stage social copy in browser tabs for tomorrow | 🟡 P1 | Jesper |
+
+---
+
 ## Post-Launch (Week 1)
 
 - Collect user feedback, ship quick fixes
