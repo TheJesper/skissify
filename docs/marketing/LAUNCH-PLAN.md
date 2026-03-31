@@ -53,14 +53,17 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 | Asset | Status |
 |-------|--------|
-| SOCIAL-MEDIA.md | ✅ Created |
-| Blog: hand-drawn vs Figma | ✅ Created |
-| Blog: AI agents & floor plans | ✅ Created |
-| Blog: Skissify vs Excalidraw | ✅ Created |
-| PRESS-KIT.md | ✅ Created |
-| Product Hunt description | ⏳ Write from PRESS-KIT |
-| Demo GIF / video | ⏳ Record screen capture |
+| SOCIAL-MEDIA.md | ✅ Enhanced (April Fools angle, TikTok scripts, viral hooks, hashtag clusters) |
+| Blog: hand-drawn vs Figma | ✅ Canonical version: `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-CANONICAL.md` |
+| Blog: AI agents & floor plans | ✅ Canonical version: `blog/how-ai-agents-draw-floor-plans-CANONICAL.md` |
+| Blog: Skissify vs Excalidraw | ✅ Canonical version: `blog/skissify-vs-excalidraw-CANONICAL.md` |
+| PRESS-KIT.md | ✅ Enhanced (video script, GIF script, pitch email, 3-audience hooks) |
+| Product Hunt description | ✅ In PRESS-KIT.md and PRODUCT-HUNT-SUBMISSION.md |
+| Demo GIF / video | ⚠️ Script ready in PRESS-KIT — needs recording TODAY |
 | Social banner image (OG) | ⏳ Generate |
+| TikTok/Reels video scripts | ✅ 3 scripts in SOCIAL-MEDIA.md |
+| Influencer outreach emails | ✅ Templates in SOCIAL-MEDIA.md |
+| Newsletter pitch email | ✅ In PRESS-KIT.md |
 
 ---
 
@@ -106,7 +109,7 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 ---
 
-## NEW IDEAS (Added 2026-03-31)
+## NEW IDEAS (Added 2026-03-31, Cycle 2 — 13:06 CET)
 
 - **AI Agents can literally draw floor plans** - position this heavily. Most tools need human UI interaction. Skissify doesn't. This is the hook.
 - **"JSON as a design language"** - new conceptual frame. Pitch Skissify as the tool where code becomes sketches. Target devs who hate Figma.
@@ -120,6 +123,20 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - **Free tier hook** - API /render is free and no-auth. Make this front and center. Zero friction to try.
 
 ---
+
+## NEW IDEAS (Added 2026-03-31, Cycle 3 — 13:06 CET)
+
+- **April Fools angle is a SUPERPOWER** — lean in hard. "We launched on the most skeptical day of the year. Did you try it? It works." This is the comeback narrative for Day 2.
+- **CANONICAL blog post strategy** — stop writing 20 variations of each post. The blog/ dir has 150+ posts, most duplicates. Created 3 canonical definitive versions suffixed `-CANONICAL.md` for actual publishing. Use these as single source of truth for Dev.to/Hashnode/Medium.
+- **TikTok/Reels scripts added** — 3 scripts ready in SOCIAL-MEDIA.md. "I gave Claude a pencil" is the viral hook. Record these on launch day.
+- **Influencer outreach templates** — ready in SOCIAL-MEDIA.md. Target AI YouTubers with the "Claude draws a floor plan" demo — it's extremely visual and shareable.
+- **Newsletter pitch email** — added to PRESS-KIT.md. Plug into TLDR Tech, The Batch, Bytes.dev, etc.
+- **Demo video script** — 60-second screen record script in PRESS-KIT.md. Prioritize recording this morning.
+- **GIF script** — 10-second looping GIF script in PRESS-KIT.md. Critical for PH gallery.
+- **Three audience hooks** — different hooks for devs, AI audience, and design/architecture in PRESS-KIT.md.
+- **Hashtag clusters** — confirmed 2026 clusters in SOCIAL-MEDIA.md. Key insight: `#VibeDrawing` and `#SketchFirst` are low-competition, own them.
+- **Community drops** — templates for Discord/Slack/subreddit drops in SOCIAL-MEDIA.md. Target r/floorplans for unexpected viral potential.
+- **"Viral hook formulas"** — 4 proven structures adapted for Skissify in SOCIAL-MEDIA.md. "No one told me you could..." is the best performer historically.
 
 ## Post-Launch (Week 1)
 

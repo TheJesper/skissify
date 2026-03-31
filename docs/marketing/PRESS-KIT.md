@@ -134,6 +134,86 @@ https://skissify.com
 
 ---
 
+## Demo Video Script (60-second screen record)
+
+```
+0:00 - 0:05  Title card: "What if your AI agent could draw?"
+
+0:05 - 0:15  Split screen: left = Claude conversation
+             User types: "Sketch a studio apartment floor plan, roughly 6x5 meters"
+             
+0:15 - 0:30  Claude constructs JSON (visible in panel)
+             Calls Skissify MCP tool
+             
+0:30 - 0:45  Floor plan renders: hand-drawn walls, furniture symbols,
+             room labels. Wobbly, beautiful, immediately readable.
+             
+0:45 - 0:55  Cut to: the same API call from a terminal
+             curl -X POST ... | opens in browser
+             
+0:55 - 1:00  End card: skissify.com  |  No signup. No auth. Just draw.
+```
+
+---
+
+## GIF Script (10 seconds — for Product Hunt gallery)
+
+```
+Frame 1: Empty JSON editor  →  {"elements": [...floor plan JSON...]}
+Frame 2: POST loading spinner
+Frame 3: Hand-drawn floor plan appears (cream paper, ballpoint style)
+Frame 4: "skissify.com" text fade in
+
+Loop. No audio needed.
+```
+
+---
+
+## Three Hooks for Different Audiences
+
+**For developer audiences:**
+> "It's a REST API that turns JSON into hand-drawn SVGs. No auth, no rate limits. POST a JSON object, get a sketch back. Your CI/CD pipeline can draw now."
+
+**For AI/agent audiences:**
+> "Skissify is the first diagram tool where AI agents are first-class citizens. Claude can draw floor plans natively via MCP. Any LLM can draw via the REST API."
+
+**For design/architecture audiences:**
+> "Rough sketches invite discussion. Polished mockups invite critique. Skissify generates rough — intentionally — because that's the right signal for early-stage design."
+
+---
+
+## Newsletter/Media Pitch Email
+
+```
+Subject: Product launch: the API that lets AI agents draw (April 1, not a joke)
+
+Hi [name],
+
+Quick pitch: Skissify launched today on Product Hunt.
+
+It's a REST API that turns JSON into hand-drawn SVG sketches. The hook: 
+AI agents can use it natively. Claude draws floor plans. Any LLM can 
+generate visual output via POST request.
+
+Why your readers might care:
+- The free /api/render endpoint is instantly testable (no signup)
+- The MCP server works with Claude Desktop in 2 minutes
+- Hand-drawn output is an intentional choice, not a limitation
+- 30+ architectural element types (walls, doors, windows, furniture)
+
+URL: https://skissify.com
+PH launch: [link]
+For agents: https://skissify.com/for-agents
+One-line demo: curl -X POST https://skissify.com/api/render -H "Content-Type: application/json" -d '{"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":150}]}'
+
+Happy to send a screen recording of Claude drawing a floor plan if that 
+makes the story easier to tell.
+
+Jesper / Skissify
+```
+
+---
+
 ## Contact
 
 **Press inquiries:** press@skissify.com *(or via the website contact form)*  

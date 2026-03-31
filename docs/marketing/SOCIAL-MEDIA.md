@@ -421,3 +421,275 @@ Feedback welcome! https://skissify.com
 | Apr 5 | "Skissify vs Excalidraw" blog post thread |
 | Apr 6 | Weekend — engage with community, respond to feedback |
 | Apr 7 | Week 1 metrics share, build-in-public update |
+
+---
+
+## April Fools Day Launch Angle 🎭
+
+Launching on April 1 is actually a *superpower*. Lean into it.
+
+### Opening gambit (Tweet on launch morning)
+```
+I know what you're thinking.
+
+"An API that turns JSON into hand-drawn sketches? 
+An AI that draws floor plans? 
+Launching on April 1st?"
+
+It's not a joke. It's https://skissify.com
+
+But honestly, wouldn't it be a great April Fools' product if it were fake?
+
+It isn't. Try it. ✏️
+```
+
+### Product Hunt top comment (pin this)
+```
+Yes, we launched on April 1st. No, it's not a joke.
+
+We figured: if you launch on the most skeptical day of the year and people still believe it, you probably built something real.
+
+Try it yourself: POST to https://skissify.com/api/render — no signup, no credit card. 
+If it returns a hand-drawn SVG, it's real. (It will.)
+```
+
+### The "April Fools" counternarrative post (Apr 2)
+```
+Here's the April Fools result:
+
+✅ 247 Product Hunt upvotes (not fake)
+✅ [X] signups (not fake)  
+✅ [Y] API calls (not fake)
+✅ Claude is drawing floor plans right now (not fake)
+
+Happy April 2nd. 🖊️
+
+https://skissify.com
+```
+
+---
+
+## TikTok / Instagram Reels Scripts 📱
+
+### Reel 1: "I gave Claude a pencil" (30 seconds)
+```
+HOOK (0-3s): "Claude can't draw. Or can it?"
+DEMO (3-20s): Screen record of typing in Claude Desktop: 
+  "Draw me a simple studio apartment floor plan"
+  → Claude generates JSON → Skissify renders it → wobbly hand-drawn floor plan appears
+CTA (20-30s): "Skissify gives AI agents a pencil. 
+  Free at skissify.com — link in bio"
+```
+
+### Reel 2: "Why architects still sketch on napkins" (45 seconds)
+```
+HOOK (0-5s): "Every architecture firm still has these" [show a notepad]
+POINT (5-30s): Rough sketches get better feedback than polished designs.
+  There's actual psychology behind this.
+  Figma looks finished → people are afraid to criticize
+  A wobbly sketch says "this is still an idea"
+TWIST (30-40s): "Now AI agents can produce that same psychological effect.
+  They describe a layout, Skissify renders it rough."
+CTA (40-45s): skissify.com
+```
+
+### Reel 3: "Zero to floor plan in 30 seconds" (30 seconds)
+```
+HOOK (0-3s): Timer starts. "30 second challenge."
+DEMO (3-25s): Speed-run — open terminal, POST JSON, get SVG, open in browser
+TEXT OVERLAY: "No Figma. No AutoCAD. No mouse."
+RESULT: Beautiful hand-drawn floor plan
+CTA (25-30s): "Try it free — no signup required"
+```
+
+---
+
+## Email Subject Lines (Newsletter / Cold Outreach)
+
+For tech/AI newsletters pitching coverage:
+- "Your AI can draw now (and it looks like a napkin sketch)"
+- "The API that 12,000 MCP servers were missing"
+- "We gave LLMs a pencil. It works."
+- "JSON → hand-drawn floor plan in one API call (free, no auth)"
+- "What if Claude could draw? [it can now]"
+
+For architecture/design communities:
+- "AI drew my floor plan in 30 seconds. Here's how."
+- "The design tool that doesn't care if you know Figma"
+- "Rough sketches invite feedback. Now AI can produce them too."
+
+---
+
+## Viral Hook Formulas 🎣
+
+These are proven high-engagement structures. Adapt for Skissify:
+
+### "No one told me you could..."
+```
+No one told me you could make Claude draw floor plans.
+
+Add skissify-mcp to your Claude config.
+Ask it to sketch a room layout.
+Watch it produce a wobbly hand-drawn floor plan.
+
+Nobody prepared me for how cool this is.
+```
+
+### "I'm going to say something controversial..."
+```
+I'm going to say something controversial:
+
+Figma is the wrong tool for early-stage design.
+
+The pixel-perfect look makes people critique the finish instead of the idea.
+
+That's why rough sketches exist. That's why Skissify exists.
+
+[skissify.com]
+```
+
+### "The thing nobody talks about with AI tools..."
+```
+The thing nobody talks about with AI tools:
+
+They can generate text beautifully.
+They can generate code beautifully.
+They cannot draw.
+
+12,000 MCP servers. Zero of them draw.
+
+I fixed that.
+
+→ skissify.com
+```
+
+### "If you told me a year ago..."
+```
+If you told me a year ago that I'd be watching Claude
+construct a JSON object describing a studio apartment
+and render it as a hand-drawn floor plan
+in under 10 seconds...
+
+I'd have said that sounds like a fun weekend project.
+
+It was. Now it's at skissify.com.
+```
+
+---
+
+## Community Drop Templates (Discord / Slack)
+
+### AI engineering Discord servers
+```
+Hey folks! Just launched Skissify — a REST API that turns JSON into 
+hand-drawn SVG sketches. Built for AI agents and devs.
+
+Why this matters for you: your LLM can now draw, not just describe.
+
+MCP server: npx skissify-mcp (works with Claude Desktop)
+API: POST https://skissify.com/api/render (free, no auth)
+
+Quick example below — or try it at skissify.com/for-agents
+
+[paste a small JSON + rendered image]
+
+Happy to answer questions!
+```
+
+### Architecture / design Discord servers
+```
+Hey! Building tool you might find interesting — Skissify generates 
+hand-drawn floor plans and architectural sketches from JSON.
+
+30+ element types: walls, doors, windows, stairs, all furniture.
+Blueprint mode. Shareable URLs. Free API.
+
+The "rough sketch" aesthetic is intentional — it signals "work in progress, 
+feedback welcome" which is exactly right for early design.
+
+https://skissify.com — no signup to try
+```
+
+### r/floorplans, r/architecture, r/homedesign
+```
+Title: I built an AI tool that draws rough floor plans — 
+feedback on the concept?
+
+Body: [honest explanation + demo, ask for feedback on the sketch style, 
+not the product. People love to critique aesthetics — use that energy.]
+```
+
+---
+
+## Influencer/Creator Outreach Templates
+
+### For AI YouTubers / streamers
+```
+Subject: Skissify launch — Claude can now draw floor plans (demo ready)
+
+Hey [name],
+
+Thought you might find this interesting for your content: 
+Skissify is an MCP server + REST API that lets Claude generate 
+hand-drawn sketches from JSON.
+
+Demo takes 2 minutes: add the MCP, ask Claude to sketch an apartment, 
+watch it draw a wobbly floor plan. Very visual, very shareable.
+
+API is free, no auth. Happy to give you early access to any pro features.
+
+[link] — let me know if you want a quick screen recording to save time!
+```
+
+### For IndieHacker / BuildInPublic accounts
+```
+Subject: Launching on April 1st — here's my story thread if you want to share
+
+Fellow builder here. Launching Skissify today — a JSON→hand-drawn sketch API.
+
+I have a build story thread ready if that's something your audience would like. 
+Solo project, ~4 months of nights/weekends, first real launch.
+
+No pressure — just thought the April Fools angle + the "AI can draw now" 
+hook might resonate with your followers.
+
+https://skissify.com
+```
+
+---
+
+## Hashtag Research Update (2026)
+
+### Confirmed high-engagement clusters for launch day:
+
+**Primary cluster (all posts):**
+`#Skissify #BuildInPublic #AI`
+
+**Tech/dev cluster:**
+`#DeveloperTools #APIFirst #WebDev #SaaS #IndieHacker #MakerLog`
+
+**AI/agent cluster:**
+`#MCP #LLM #AIAgents #Claude #MCPServer #AgentAI`
+
+**Design/UX cluster:**
+`#UXDesign #ProductDesign #DesignThinking #SketchFirst`
+
+**Architecture cluster:**
+`#Architecture #FloorPlan #InteriorDesign #HomeDesign`
+
+**Launch cluster:**
+`#ProductLaunch #ProductHunt #ShowHN #LaunchDay`
+
+### Platform-specific rules:
+- **Twitter/X**: Max 2-3 hashtags per tweet (more = looks spammy, algorithm penalizes)
+- **LinkedIn**: 5-8 hashtags in first comment, not in body text
+- **Instagram/TikTok**: Use all relevant hashtags, up to 15-20
+- **Reddit**: No hashtags — just natural community language
+- **Bluesky**: 3-5 hashtags, still developing hashtag culture
+
+### Trending niche hashtags to watch (March-April 2026):
+- `#MCPServer` — hot with Claude users, growing fast
+- `#AgentNative` — new framing for AI-first tools
+- `#VibeDrawing` — coined by a Skissify early post, try to own it
+- `#SketchFirst` — design-thinking angle, low competition
+- `#JSONtoSVG` — technical, findable by exact-match searchers
