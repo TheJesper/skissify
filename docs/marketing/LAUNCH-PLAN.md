@@ -283,6 +283,40 @@ Post the launch-eve tweet right now. It's 21:00 CET. The tweet is in SOCIAL-MEDI
 
 ---
 
+## NEW IDEAS (Added 2026-04-01, Cycle 84 — 03:47 CET — Week 2 Content Complete)
+
+**Context:** 3h15m until PH launch. All Day 1 assets already complete. This cycle focuses on Week 2 execution so Jesper has nothing to write, only post.
+
+### New Assets Created This Cycle
+
+- **LAUNCH-DAY-COMMAND-CARD.md** — ✅ Created `docs/marketing/LAUNCH-DAY-COMMAND-CARD.md`. Single phone-friendly doc with hour-by-hour actions, copy locations, skeptic reply cheatsheet, KPI tracker, and contingency plans. Open this one doc on launch day.
+- **Week 2 atomic copy queue** — ✅ Added 7 days of paste-ready posts (April 6-12) to SOCIAL-MEDIA.md. Covers: GitHub Actions viral demo, r/floorplans soft-sell, r/architecture, HN schema post, LLM benchmark Reddit post, Week 1 retrospective (fill-in template), Cursor/Windsurf angle, r/ChatGPT deterministic diagrams angle, DnD dungeon map angle + r/DnD post.
+
+### Week 2 Priority Execution Map
+
+| Date | Platform | Angle | Priority |
+|------|----------|-------|----------|
+| April 6 (Mon) | Twitter + LinkedIn | GitHub Actions PR sketch demo | 🔴 P0 |
+| April 7 (Tue) | r/floorplans + r/architecture | Floor plan workflow story | 🔴 P0 |
+| April 8 (Wed) | Hacker News | Schema design → 94% accuracy (Show HN) | 🔴 P0 |
+| April 9 (Thu) | Twitter + r/LocalLLaMA | LLM benchmark table | 🟡 P1 |
+| April 10 (Fri) | Twitter + LinkedIn | Week 1 retrospective (fill in numbers) | 🟡 P1 |
+| April 11 (Sat) | Twitter + r/ChatGPT | Cursor/Windsurf + deterministic diagrams | 🟡 P1 |
+| April 12 (Sun) | Twitter + r/DnD | Dungeon map discovery story | 🟢 P2 |
+
+### Insight: April 8 HN Schema Post is the Hidden P0
+
+The "Show HN: How schema design took LLM accuracy from 40% to 94%" post is the most technically credible HN angle Skissify has. It stands alone without needing Skissify to be the main subject — the insight is independently valuable. If Day 1 HN underperforms, this is the comeback post. Schedule it for Tuesday April 8 (HN peak traffic day).
+
+### Key Contingency: If Day 1 Numbers Disappoint
+
+1. Do NOT chase PH upvotes — shift energy to comments and real conversations
+2. Post HN schema post Tuesday instead of waiting (pull forward from April 8)
+3. The April Fools narrative *becomes stronger* with lower numbers — "I launched on April 1 and nobody believed me... until they tried the curl command." Lead with this on Day 2.
+4. r/mcp is highest-signal audience and can be re-hit on Day 2 with different framing
+
+---
+
 ## Post-Launch (Week 1)
 
 - **April 2 morning:** ⏳ Post Day 2 thread (see `blog/april-2-day-2-momentum-playbook.md` + `SOCIAL-MEDIA.md DAY 2 QUEUE`)
