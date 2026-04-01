@@ -1,19 +1,27 @@
 # How AI Agents Can Draw Floor Plans
 
 *The definitive technical guide — for Dev.to, Hacker News, and agent builders*
-*~2,000 words | Category: AI Engineering | Tags: AI agents, MCP, floor plans, API*
+*~2,200 words | Category: AI Engineering | Tags: AI agents, MCP, floor plans, API, Claude*
 
 ---
 
-Six months ago, if you asked an AI agent to design a room layout, you'd get a text description. 
+Ask Claude to design a room layout. You'll get something like this:
 
-> "Place a sofa against the north wall, facing south. A coffee table in front of it. A TV console opposite, with built-in shelving on either side."
+> "Place a sofa against the north wall, facing south. A coffee table in front of it. A TV unit opposite, with built-in shelving on either side. The bed should be in the southeast corner, perpendicular to the window."
 
-Helpful. Completely missing the point. You wanted a picture.
+It's coherent. It's spatially accurate. It's completely useless for anything you'd actually want to do with it.
 
-The problem wasn't the AI's spatial reasoning. LLMs are actually quite good at spatial reasoning — they can understand room dimensions, traffic flow, furniture clearances. The problem was the lack of a drawing primitive. They could think visually but couldn't output visually.
+You wanted a picture. You got a paragraph.
 
-Skissify adds that primitive.
+The problem was never the AI's spatial reasoning — LLMs are genuinely good at understanding room dimensions, traffic flow, and furniture clearances. The problem was the missing output primitive. LLMs could *think* visually but couldn't *output* visually. They had the ability to draw in their heads. They had no hands.
+
+Skissify gives them hands.
+
+It's a REST API that accepts JSON describing a sketch and returns SVG. AI agents can call it. No auth. No UI. Just a POST request that returns a drawing.
+
+Here's what actually happened when I gave Claude a pencil for the first time: I said *"Sketch a studio apartment."* Thirty seconds later, I was looking at a hand-drawn floor plan — wobbly walls, furniture symbols, room labels — that looked like something an architect would dash off on trace paper. The AI hadn't described a room. It had drawn one.
+
+That gap, from text to picture, is now closed.
 
 ---
 

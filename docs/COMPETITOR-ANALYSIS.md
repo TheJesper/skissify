@@ -2,6 +2,69 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #91 (05:55 CET)
+
+### Status: Wednesday morning scan — 4 topics researched. 🟢 NICHE STILL CLEAN — 91 consecutive scans confirm no JSON-native spatial hand-drawn sketch MCP competitor. KEY UPDATES: (1) **Frame0 MCP server** confirmed on PulseMCP — hand-drawn style wireframing, UI/UX lane only, no spatial/floor-plan, no JSON manifest, no architectural elements; closest aesthetic overlap in 91 scans but wrong job-to-be-done. (2) **Archy MCP server** confirmed — generates 20+ diagram types including "hand-drawn" via Mermaid/Sugiyama layout — text/code input, not JSON-first spatial, no floor-plan or architectural elements. (3) MCP Registry now at 6,400+ servers (up from ~2,000 in run #89) — explosive growth rate confirms Skissify listing urgency. (4) Credit-based pricing up 126% YoY (PricingSaaS 500 data) — Skissify's per-render model is validated, should be foregrounded. (5) tldraw last release 4.3 (January 2026), no new April updates found. (6) EUR 5/mo is still 60–80% below micro-SaaS market rate ($19–99/mo for AI tools). LANE STATUS: Frame0 and Archy are new entrants worth monitoring — both have hand-drawn aesthetic + MCP, but neither has spatial/floor-plan/architectural-elements capability. Skissify's specific lane: uncontested.
+
+### 🟡 NEW THREAT TO MONITOR: Frame0 MCP Server — Hand-Drawn Wireframing in MCP Ecosystem
+
+**Source**: pulsemcp.com/servers/niklauslee-frame0-diagramming, frame0.app, playbooks.com/mcp/niklauslee-frame0-diagramming
+
+Frame0 (frame0.app) is a Balsamiq-alternative wireframing tool that now has an MCP server. Key characteristics:
+- **Hand-drawn aesthetic**: Yes — sketch-style rendering, 1,500+ Lucide icons in sketch style
+- **MCP server**: Yes — `npx frame0-mcp-server`, listed on PulseMCP
+- **Input format**: Natural language prompts → wireframe creation/modification via MCP tool calls
+- **JSON output**: Saves to Frame0's own format (not a portable JSON manifest schema)
+- **Use case**: UI/UX wireframes — buttons, dropdowns, screens, user flows, UML, ER diagrams
+- **Spatial/floor-plan support**: None confirmed
+- **Architectural elements (doors, windows, stairs)**: None
+- **Standalone render API**: No — requires Frame0 desktop/web app to be running
+
+**Skissify lane impact**: Low (but monitor). Frame0 is in the UI wireframe lane — it makes app screens, not floor plans or spatial diagrams. The hand-drawn aesthetic + MCP combination is the closest aesthetic overlap in 91 scans. However, the job-to-be-done is entirely different (UI mockups vs. spatial sketches), the input model requires Frame0 app to be running (not a pure render API), and there is no architectural domain vocabulary. The audience is product designers, not agent builders creating spatial output.
+
+**Escalate to MEDIUM if**: Frame0 adds floor-plan elements OR publishes a standalone render API (JSON in → SVG/PNG out) without requiring the desktop app.
+
+### 🟡 NEW TOOL CONFIRMED: Archy MCP Server — 20+ Hand-Drawn Diagram Types via Mermaid
+
+**Source**: pulsemcp.com/servers/phxdev1-archy, mcpmarket.com/server/archy, lobehub.com/mcp/phxdev1-archy-mcp
+
+Archy is an MCP server for architectural diagram generation:
+- **Hand-drawn diagrams**: Yes — claims "20+ types of hand-drawn diagrams with Sugiyama layout"
+- **Input format**: Natural language description or GitHub repository analysis (not JSON manifest)
+- **Diagram types**: Flowcharts, sequence diagrams, C4 diagrams, Mermaid-based output
+- **Spatial/floor-plan support**: None confirmed — architecture = software architecture, not physical architecture
+- **Architectural elements (doors, windows, stairs)**: None
+- **MCP server**: Yes — listed on PulseMCP and MCP Market
+
+**Skissify lane impact**: Low. "Architectural" in Archy means software/system architecture (C4 diagrams, microservices), not physical spaces. Input is natural language, not JSON manifest. Output is Mermaid-rendered diagrams, not custom wobble-algorithm SVGs. The "hand-drawn" style is Mermaid's Rough.js layer, not tunable humanness parameters.
+
+**Escalate to MEDIUM if**: Archy adds floor-plan vocabulary (rooms, doors, dimensions) or supports JSON spatial input.
+
+### MCP Registry Scale Update — 6,400+ Servers Registered
+
+**Source**: use-apify.com/blog/mcp-standard-ecosystem-2026, thenewstack.io/model-context-protocol-roadmap-2026
+
+As of April 2026, the official MCP registry has 6,400+ registered servers (up from ~2,000 in run #89, ~11,070 on PulseMCP's broader catalog). Key ecosystem updates:
+- **MCP Server Cards**: Upcoming standard for `.well-known` URL exposing server metadata — registries/crawlers will auto-index capabilities without connecting. Skissify should implement this when published.
+- **Enterprise focus**: Audit trails, SSO-integrated auth are 2026 roadmap priorities — Skissify Enterprise tier language is well-positioned.
+- **Streamable HTTP at scale**: Production deployment friction being resolved — remote-hosted MCP servers becoming standard.
+
+**Implication**: At 6,400+ servers and growing, being listed is table stakes. Not listed = invisible. The urgency from runs #88–90 is confirmed and escalating.
+
+### Updated Competitor Matrix (Run #91 — Wednesday April 1, 05:55 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| Excalidraw | Custom AI tokens, presentation features. No JSON schema input, no MCP spatial render. | Low — human collab direction |
+| tldraw | 4.3.x (Jan 2026), no April updates. Agent templates, $6K/yr SDK unchanged. | Low-Medium — wrong price segment |
+| **Frame0** | **NEW: Hand-drawn wireframing MCP server on PulseMCP. UI/UX lane only.** | **Low-Monitor — hand-drawn+MCP but wrong job** |
+| **Archy** | **NEW: 20+ hand-drawn diagram types via Mermaid MCP. Software architecture lane.** | **Low — "architectural" = software, not spatial** |
+| ToDiagram | JSON/YAML → interactive diagrams via MCP. No hand-drawn. | Low-Medium — structural overlap, monitor for hand-drawn |
+| Dashin / InfraSketch / Napkin AI | Infra/flowchart/infographic lanes. No MCP, no spatial. | None |
+| **Skissify** | **91 consecutive niche-clean scans. JSON-native spatial hand-drawn sketch MCP: uncontested.** | **Uncontested** |
+
+---
+
 ## Update: 2026-04-01 — Manual Strategy Run (Morning CET)
 
 ### Status: Wednesday daytime scan — 4 topics researched. NICHE STILL CLEAN — 90th scan confirms no JSON-native spatial hand-drawn sketch MCP competitor. KEY UPDATES: (1) Excalidraw+ added presentation features, custom AI tokens (bring-your-own OpenAI/Claude key), and advanced charts in Feb 2026 — still no MCP JSON schema or architectural elements. (2) tldraw 4.5.x: 25x faster shape rendering via 2D canvas + R-tree indexing, agent starter template restructured with manager architecture and action schema registries — still SDK-priced at $6K/yr, no JSON-first spatial output. (3) MCP ecosystem: 97M+ monthly SDK downloads, MCP Registry at ~2,000 entries (launched Sept 2025), ContextForge security layer added — enterprise adoption wave confirmed. (4) New AI diagramming tools: Dashin (infra diagrams), InfraSketch (architecture from plain English), Napkin AI (text-to-infographic) — all flowchart/cloud-architecture lane, zero spatial hand-drawn sketch, zero MCP server. (5) EUR 2/mo framing confirmed below market; EUR 5/mo Pro is the right primary CTA (prior runs already flagged, confirmed again).

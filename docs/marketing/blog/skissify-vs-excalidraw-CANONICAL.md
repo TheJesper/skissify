@@ -1,13 +1,19 @@
 # Skissify vs Excalidraw: The Honest 2026 Comparison
 
 *The definitive comparison — for SEO, Dev.to, and honest discourse*
-*~1,600 words | Category: Tools | Tags: comparison, excalidraw, whiteboarding, AI*
+*~1,800 words | Category: Tools | Tags: comparison, excalidraw, whiteboarding, AI, MCP*
 
 ---
 
-Both tools make hand-drawn-style diagrams. Both export SVG. Both look great in a README. That's where the similarities end.
+I built one of these tools. I use the other one.
 
-This is an honest comparison written by someone who built one of them and genuinely respects the other.
+This is the comparison I'd want to read if I were evaluating both — honest about where each one wins, clear about the fundamental difference that determines which you should choose.
+
+**The short version:** Both tools output hand-drawn-style SVGs. Both are excellent. They are not competitors. They are designed for different operators. Excalidraw is built for human hands. Skissify is built for AI agents and code.
+
+If you draw with a mouse, use Excalidraw. If your code needs to draw, use Skissify. If your AI agent needs to draw, there's only one option.
+
+The longer version follows.
 
 ---
 

@@ -2,6 +2,45 @@
 
 ---
 
+## Entry: 2026-04-01 — Automated Strategy Run #91 (05:55 CET)
+
+### Theme: Credit Pricing Surge, EUR 5/mo Validation, and the Frame0 Proximity Signal
+
+#### Credit-Based Pricing Grew 126% YoY — Skissify's Per-Render Model Is Now Mainstream
+
+New data from PricingSaaS 500: credit-based pricing went from 35 companies (end 2024) to 79 companies (2025) — a 126% year-over-year increase. 85% of SaaS companies now use some form of usage-based or hybrid pricing. This validates Skissify's existing per-render model (EUR 0.005/render overage) as market-standard, not experimental.
+
+**Why someone pays EUR 5/mo + overage**: The mental model of "subscription for the seat, credits for the usage" is now familiar to developers. They understand: pay EUR 5 for access and included renders, pay more if agents run at scale. This is exactly Skissify's model. The trust barrier is now lower because the pricing *pattern* is ubiquitous. The output trust question remains the primary conversion bottleneck — but the pricing model no longer needs explanation.
+
+**Action implication**: Reframe the Pro tier as "EUR 5/mo + 1,000 credits included" in all copy. Don't hide the credit model — lead with it. Developers who build agent pipelines are already comfortable with this.
+
+**Source**: growthunhinged.com/p/2025-state-of-saas-pricing-changes, revenera.com/blog/software-monetization/saas-pricing-models-guide
+
+#### Frame0 + Archy: The "Hand-Drawn + MCP" Pattern Is Emerging — Skissify Must Differentiate on Domain
+
+Two new tools in April 2026 combine hand-drawn aesthetics with MCP servers: Frame0 (UI wireframing) and Archy (software architecture diagrams). Neither is in Skissify's spatial/floor-plan lane. But their existence signals: **the "hand-drawn MCP tool" category is forming**, and developers will start comparing these tools.
+
+**The differentiation claim that prevents category confusion**: "Skissify is the only MCP sketch tool for *spatial* output — floor plans, room layouts, architectural drawings, napkin blueprints. Frame0 makes app screens. Archy makes system diagrams. Skissify makes spaces."
+
+**Why someone pays EUR 5/mo from this**: When a developer Googles "hand-drawn MCP server" or "sketch MCP tool," they will find Frame0, Archy, and (if listed) Skissify. The prospect who needs a floor plan or spatial diagram will immediately see Skissify is the only option for their use case. The presence of Frame0 and Archy actually helps Skissify — they establish the category, and Skissify owns the spatial niche within it.
+
+**Urgency signal**: If Skissify is not listed on PulseMCP before Frame0 and Archy become the default "sketch MCP" references, the positioning window closes. Being discovered alongside them, not after them, is the goal.
+
+#### EUR 5/mo in the 2026 Micro-SaaS Context — It's a Bargain, Not a Commodity
+
+2026 micro-SaaS benchmarks (nxcode.io/resources/news/micro-saas-ideas-2026):
+- AI-powered tools: $19–99/mo typical WTP
+- Developer tools: $12–20/mo entry point
+- Solo/micro-SaaS generating $5K–50K MRR
+
+EUR 5/mo is 60–80% below the WTP floor for AI developer tools. This is not a price that will fail to convert — it's a price that may signal low confidence or limited features to a developer doing a $0.30-second price-quality scan.
+
+**Recommendation**: The EUR 5/mo price should be accompanied by the capability list prominently: "1,000 API renders, private sketches, MCP server access, architectural elements (doors, windows, stairs, dimensions)." The price is not the message. The capability-to-price ratio is the message.
+
+**The one sentence that converts**: "EUR 5/mo for a JSON-to-hand-drawn-sketch API with MCP support. tldraw charges $6,000/year for an SDK that doesn't even render spatial layouts."
+
+---
+
 ## Entry: 2026-04-01 — Manual Strategy Run (Morning CET)
 
 ### Theme: What Makes Someone Pay EUR 2/mo (or EUR 5/mo) for Skissify — The AI-Agent-Compatible Sketch Tool

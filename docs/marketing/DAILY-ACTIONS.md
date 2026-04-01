@@ -2,6 +2,60 @@
 
 ---
 
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #91 (05:55 CET, Wednesday April 1)
+
+### Context: Run #91 Key Findings
+- **91 consecutive niche-clean scans** — spatial sketch MCP lane uncontested
+- **Frame0 (hand-drawn wireframing MCP) and Archy (hand-drawn diagram MCP) now on PulseMCP** — category forming, Skissify not listed yet
+- **MCP Registry: 6,400+ servers** (up from ~2,000 run #89) — growth explosive, listing urgency at peak
+- **Credit-based pricing up 126% YoY** — per-render model is now market standard, should be foregrounded
+- **EUR 5/mo confirmed 60–80% below AI developer tool market rate** — capability list must do the conversion work, not price
+- **PulseMCP listing still not confirmed done from runs #88–90** — CRITICAL, carry forward as #1 priority
+
+---
+
+### 🎯 Action 1 (CRITICAL — Thursday): PulseMCP Submit + Differentiate From Frame0/Archy In Listing
+
+Frame0 (hand-drawn wireframes, MCP) and Archy (hand-drawn diagrams, MCP) are now listed on PulseMCP. Skissify is still not. A developer searching PulseMCP for "hand-drawn MCP" or "sketch MCP" will find these two tools and not find Skissify. The category window is closing.
+
+**Steps (30 min)**:
+1. Submit Skissify to pulsemcp.com/servers with description explicitly separating from Frame0/Archy: "JSON manifest → hand-drawn SVG for *spatial* sketches — floor plans, room layouts, blueprints, napkin diagrams. Architectural elements: doors, windows, stairs, dimensions. Unlike wireframing tools (Frame0) or system diagram tools (Archy), Skissify renders spaces, not screens or flowcharts."
+2. Keywords: `floor-plan hand-drawn spatial sketch json mcp architectural`
+3. Submit same description to modelcontextprotocol.io/registry
+4. Implement a `.well-known/mcp-server-card.json` (or equivalent) to prepare for the upcoming MCP Server Cards standard — get indexed automatically when crawlers launch
+
+**Why today**: Frame0 and Archy are the two reference points developers now see for "hand-drawn MCP." Every day without Skissify listed means Skissify is invisible in that category framing.
+
+---
+
+### 🎯 Action 2 (HIGH — Thursday): Lead With Credit Model On Pricing Page — "1,000 Renders Included"
+
+Credit-based pricing grew 126% YoY — it's now the expected pattern for AI/agent tools. Skissify's pricing page likely says "EUR 5/mo" without foregrounding what "1,000 renders/mo" means in practice for an agent builder.
+
+**Steps (25 min)**:
+1. Update pricing page Pro tier copy: change "EUR 5/mo" to "EUR 5/mo · 1,000 renders included" as the primary tier description
+2. Add a 2-line usage example beneath the tier: "That's 33 agent-generated sketches per day. Most agent workflows use 10–50 renders/week — one Pro subscription supports multiple projects."
+3. Add micro-comparison: "Render overage: EUR 0.005/sketch. 10,000 renders = EUR 50 in overage — still less than 1% of tldraw's $6K/yr license."
+4. The goal: developers should be able to cost-model their usage from the pricing page without emailing support
+
+**Why this converts**: Agent builders are comfortable with credit models and will immediately calculate whether EUR 5/mo covers their workflow. Making that calculation easy removes friction. Developers who can self-qualify (yes, this covers me / no, I need overage) convert faster.
+
+---
+
+### 🎯 Action 3 (HIGH — Thursday): Write "Skissify vs Frame0 — Different Jobs" Short Post
+
+Frame0's MCP server is getting developer traction as "the hand-drawn wireframing MCP." If Skissify doesn't own the "hand-drawn spatial sketch MCP" search term, Frame0 will become the reference point developers link to when asked for any hand-drawn MCP tool.
+
+**Steps (35 min)**:
+1. Write a 400-word Dev.to post or tweet thread: "Frame0 is great for UI screens. Archy is great for system diagrams. Neither of them will draw you a floor plan. Here's what the spatial sketch MCP niche actually needs — and why Skissify builds for it." Include a side-by-side: Frame0 screenshot (UI wireframe) vs. Skissify output (floor plan with room labels, doors, dimensions).
+2. Don't attack Frame0 or Archy — position alongside them: "Each tool has a lane. This is ours."
+3. Target search terms: "hand-drawn MCP tool", "floor plan MCP", "sketch API for agents", "spatial diagram JSON"
+4. Cross-post excerpt to r/ClaudeAI linking to the post
+
+**Why now**: The "hand-drawn MCP" category is forming this week with Frame0 and Archy visible on PulseMCP. Establishing Skissify as the *spatial* lane within that category now, while it's still forming, costs one post. Waiting costs search ranking and category framing.
+
+---
+
 ## 2026-04-01 (Wednesday) + 2026-04-02 (Thursday) — Manual Strategy Run (Morning April 1)
 
 ### Context: This Run's Key Findings

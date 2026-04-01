@@ -443,3 +443,40 @@ April Fools creates the world's most aggressive pre-qualification filter. Only u
 ---
 
 *Last updated: April 1, 2026 — Cycle 82*
+
+---
+
+## Day 2 Update (April 2, 2026 — Cycle 85)
+
+### Screenshots Status — Action Required
+
+The following screenshots are needed today for ongoing press outreach and social posts. Capture in priority order:
+
+| Screenshot | Priority | Use |
+|------------|----------|-----|
+| Floor plan on cream paper (full room, furniture, labels) | P0 | Twitter, PH gallery, press |
+| Claude conversation + resulting sketch side by side | P0 | Viral Twitter, journalist demo |
+| Blueprint mode — title block visible | P1 | LinkedIn, r/architecture |
+| JSON editor + rendered result split view | P1 | Dev.to header image, HN |
+| MCP config snippet + Claude drawing prompt | P1 | r/mcp post, Cursor community |
+| Mobile editor with floor plan loaded | P2 | Instagram, general social |
+
+Recommended tool: [cleanshot.com](https://cleanshot.com) or browser fullscreen + crop. Dimensions: 1200x675 for Twitter, 1270x760 for PH.
+
+### New Press Angles (Day 2)
+
+**The "AI got hands" angle** — most shareable for tech media:
+> Claude and similar AI models can now draw. Not generate images from text prompts — actually draw structured diagrams the same way a human architect would sketch on paper. Skissify is the REST API that makes this possible.
+
+**The "April Fools turned real" angle** — for culture/tech crossover:
+> The developer launched on April 1 knowing most people wouldn't believe him. The skeptics who tried the curl command anyway became his most loyal users.
+
+**The "API-first diagram market" angle** — for business/tech media:
+> Every major diagram tool (Figma, Excalidraw, Miro, draw.io) is designed for human hands first. Skissify is the first one designed for code and AI agents first. The API requires no auth and returns SVG in under 200ms.
+
+### Updated Contact
+
+**For press, demos, and review access:** press@skissify.com  
+**For agent integration questions:** hi@skissify.com  
+**Response SLA:** Same day (founder-led, small team)
+

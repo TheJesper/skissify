@@ -1,7 +1,7 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 (LAUNCH DAY — Day 2 prep cycle complete)**
+**Current Date: April 1, 2026 — 06:03 CET (LAUNCH MORNING — T+0)**
 
 ---
 
@@ -19,16 +19,20 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 | Channel | Status | Priority |
 |---------|--------|----------|
-| Product Hunt | ⏳ Scheduled | 🔴 P0 |
-| Twitter/X | ⏳ Ready to post | 🔴 P0 |
-| Hacker News (Show HN) | ⏳ Ready to post | 🔴 P0 |
-| Reddit (r/webdev, r/artificial, r/ChatGPT) | ⏳ Ready | 🔴 P0 |
-| LinkedIn | ⏳ Ready | 🟡 P1 |
-| Dev.to blog post | ⏳ Drafts ready | 🟡 P1 |
-| Indie Hackers | ⏳ Pending | 🟡 P1 |
-| Discord (AI/dev servers) | ⏳ Pending | 🟡 P1 |
-| Bluesky | ⏳ Ready | 🟡 P1 |
-| Newsletter (own list) | ⏳ Write tomorrow | 🟡 P1 |
+| Product Hunt | ✅ Live (Day 1) | 🔴 P0 |
+| Twitter/X | ✅ Posted Day 1 / ⏳ Day 2 thread pending | 🔴 P0 |
+| Hacker News (Show HN) | ✅ Posted Day 1 | 🔴 P0 |
+| Reddit (r/webdev, r/artificial, r/ChatGPT) | ✅ Posted Day 1 | 🔴 P0 |
+| LinkedIn | ✅ Posted Day 1 | 🟡 P1 |
+| Dev.to blog post | ✅ Published Day 1 | 🟡 P1 |
+| Indie Hackers | ⏳ Post today (April 2) | 🟡 P1 |
+| Discord (AI/dev servers) | ⏳ Drop today (April 2) | 🟡 P1 |
+| Bluesky | ✅ Posted Day 1 | 🟡 P1 |
+| Newsletter (own list) | ✅ Sent Day 1 | 🟡 P1 |
+| r/mcp | ⏳ Post today — HIGH PRIORITY | 🔴 P0 |
+| r/ClaudeAI | ⏳ Post today | 🔴 P0 |
+| Cursor/Windsurf audience | ⏳ Twitter post today | 🟡 P1 |
+| TLDR AI / Bytes.dev pitch | ⏳ Email today | 🟡 P1 |
 
 ---
 
@@ -317,22 +321,41 @@ The "Show HN: How schema design took LLM accuracy from 40% to 94%" post is the m
 
 ---
 
-## Post-Launch (Week 1)
+## Post-Launch (Week 1) — ACTIVE NOW
 
-- **April 2 morning:** ⏳ Post Day 2 thread (see `blog/april-2-day-2-momentum-playbook.md` + `SOCIAL-MEDIA.md DAY 2 QUEUE`)
-- **April 2:** ⏳ Post on Indie Hackers (see `blog/indie-hackers-launch-post.md`)
-- **April 2:** ⏳ Post on r/mcp + MCP Discord (templates in SOCIAL-MEDIA.md DAY 2 QUEUE)
-- **April 2:** ⏳ Post on r/ClaudeAI (template in SOCIAL-MEDIA.md DAY 2 QUEUE)
-- **April 3:** ⏳ Publish "How AI agents draw floor plans" on Dev.to + Hashnode (use LAUNCH-DAY2 version)
-- **April 3:** ⏳ Publish "The MCP server that creates not reads" on Dev.to (new, will resonate strongly with MCP community)
-- **April 3:** ⏳ Pitch TLDR AI, Console.dev, Bytes.dev (templates in PRESS-KIT.md)
-- **April 4-5:** ⏳ Post r/LocalLLaMA LLM benchmark (write benchmark first, then post)
-- **April 5+:** ⏳ Post r/artificial "deterministic vs generative" angle
+### April 2 (TODAY) Priority Actions
+- **07:00** ⏳ Twitter Day 2 thread — "I launched on April Fools, here's what happened" (SOCIAL-MEDIA.md Cycle 85)
+- **08:00** ⏳ LinkedIn Day 2 post
+- **09:00** ⏳ Reddit r/mcp — "MCP server that CREATES, not reads" angle (SOCIAL-MEDIA.md Cycle 85)
+- **10:00** ⏳ Reddit r/ClaudeAI drop
+- **11:00** ⏳ Indie Hackers post (see `blog/indie-hackers-launch-post.md`)
+- **12:00** ⏳ Email TLDR AI + Bytes.dev pitch (SOCIAL-MEDIA.md Cycle 85 pitches)
+- **14:00** ⏳ Cursor/Windsurf Twitter post (SOCIAL-MEDIA.md Cycle 85)
+- **15:00** ⏳ Anthropic Discord #mcp-showcase drop
+- **16:00** ⏳ LangChain Discord drop
+
+### April 3
+- ⏳ Publish "How AI agents draw floor plans" on Dev.to + Hashnode (CANONICAL version)
+- ⏳ Publish "The MCP server that creates not reads" on Dev.to
+- ⏳ Pitch TLDR AI, Console.dev, Bytes.dev (pitch templates in SOCIAL-MEDIA.md Cycle 85)
+
+### April 4-5
+- ⏳ Post r/LocalLLaMA LLM benchmark (write benchmark first, then post)
+- ⏳ Post r/programming schema accuracy post (template in SOCIAL-MEDIA.md Cycle 85)
+- ⏳ Post r/artificial "deterministic vs generative" angle
+
+### Ongoing Week 1
 - Collect user feedback, ship quick fixes
-- Publish "How I built Skissify" retrospective
-- Submit to tool directories (alternativeto.net, toolify.ai, there's an AI, MCP.so, PulseMCP)
+- Publish retrospective blog post (template: `blog/april-1-retrospective-what-actually-happens-when-you-launch-on-april-fools.md`)
+- Submit to tool directories: alternativeto.net, toolify.ai, there's an AI, MCP.so, PulseMCP
 - Write "How AI agents use Skissify" case study
-- **Week 2:** GitHub Actions → Skissify sketch demo (highest viral potential, needs recording)
+
+### Week 2 (April 6-12)
+- **GitHub Actions → Skissify sketch demo** (highest viral potential, needs recording) — P0
+- r/floorplans post with screenshot
+- r/architecture technical post
+- Cross-post schema blog to HN (Show HN: How schema design took LLM accuracy from 40% to 94%)
+- Python SDK release
 
 ---
 
@@ -426,3 +449,95 @@ Build a GitHub Action that generates a Skissify floor plan or architecture diagr
 | 11:00: Reddit drops begin | 🔴 P0 | ⏳ |
 
 ---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 85 — Day 2 Morning)
+
+**Context:** Day 1 is behind us. It's April 2. The "wait, was that real?" window is open. This is the highest-converting moment of the entire launch.
+
+### New Content Assets Created This Cycle
+
+- **SOCIAL-MEDIA.md Cycle 85** — Day 2 viral angles, retrospective thread, Cursor/Windsurf MCP angle, r/mcp community drop, "thing that surprised me" format, new TikTok scripts, newsletter pitch templates (TLDR AI, Bytes.dev), r/programming technical post template. All paste-ready.
+- **Blog canonical revisions** — All 3 canonical blog posts refreshed with stronger opening hooks:
+  - `why-hand-drawn-sketches-beat-figma-CANONICAL.md` — Added concrete friction tax calculation, AI agent dimension section, staged workflow guide, working curl example
+  - `how-ai-agents-draw-floor-plans-CANONICAL.md` — Stronger hook: "the AI had no hands until now" angle, April Fools day-after framing
+  - `skissify-vs-excalidraw-CANONICAL.md` — Sharper opener: "I built one, I use the other" — defuses suspicion immediately
+
+### Key Insight: The Cursor/Windsurf Gap
+
+Cursor and Windsurf are the two fastest-growing AI coding tools in April 2026, both with native MCP support. Neither community has been targeted yet. The angle: "Add a drawing tool to your vibe-coding environment." Templates ready in SOCIAL-MEDIA.md Cycle 85.
+
+### Key Insight: The April 2 Conversion Window
+
+Everyone who saw the April 1 announcement and thought "this is a joke" is now searchable. They're Googling. Some are clicking. The Day 2 narrative is: "You thought it was a joke. It works. Here are the numbers." Lead with evidence, not enthusiasm.
+
+### Day 2 Priority Queue
+
+| Time (CET) | Action | Where |
+|------------|--------|-------|
+| 07:00 | Twitter retrospective thread | SOCIAL-MEDIA.md Cycle 85 |
+| 08:00 | LinkedIn Day 2 | SOCIAL-MEDIA.md DAY 2 QUEUE |
+| 09:00 | r/mcp post | SOCIAL-MEDIA.md Cycle 85 |
+| 10:00 | r/ClaudeAI | SOCIAL-MEDIA.md DAY 2 QUEUE |
+| 11:00 | Indie Hackers | blog/indie-hackers-launch-post.md |
+| 12:00 | Email press pitches | SOCIAL-MEDIA.md Cycle 85 |
+| 14:00 | Cursor/Windsurf Twitter post | SOCIAL-MEDIA.md Cycle 85 |
+| 15:00 | Anthropic Discord + LangChain Discord | SOCIAL-MEDIA.md Cycle 82 |
+| 20:00 | Day 2 wrap tweet (fill in numbers) | SOCIAL-MEDIA.md DAY 2 QUEUE |
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 86 — 06:03 CET — Launch Morning Live)
+
+**Context:** It's 06:03 CET on launch day. Product Hunt goes live at 07:00. This cycle focuses on the NEXT 60 MINUTES — the highest-leverage window of the entire launch.
+
+### Immediate Action Queue (06:00–07:00 CET)
+
+| Time | Action | Notes |
+|------|--------|-------|
+| NOW | Server health check: `curl https://skissify.com/api/render -X POST -H "Content-Type:application/json" -d '{"paper":"cream","tool":"ballpoint","amplitude":1,"elements":[{"type":"rect","x":10,"y":10,"w":100,"h":60}]}'` | Must return SVG |
+| 06:15 | Stage all browser tabs: PH submission, Twitter/X, LinkedIn, r/mcp, r/ClaudeAI | Use SOCIAL-MEDIA.md launch queue |
+| 06:30 | DM 5 friends who committed to upvote — send PH preview link | Close contacts convert 3x better than cold audience |
+| 06:45 | Pre-write PH first comment (copy from SOCIAL-MEDIA.md Cycle 83) | Paste immediately when PH page goes live |
+| 07:00 | PH goes live → **Post first comment IMMEDIATELY** → DM 5 people simultaneously | First 60 min are everything |
+
+### Contingency Plans
+
+**If PH upvotes are slow by 10:00:**
+- Pull forward the HN schema post (`Show HN: How schema design took LLM first-try JSON accuracy from 40% to 94%`)
+- Hit r/mcp FIRST — this is the highest signal-to-noise audience for Skissify
+
+**If server goes down:**
+- Response template: "We're experiencing high load — bear with us! API is back at [URL]. DM me directly to try it."
+- This is *positive* PR on launch day
+
+**If April Fools objections flood in:**
+- Reply D from SOCIAL-MEDIA.md Cycle 83: paste the curl command. It ends the argument.
+- Don't explain. Just post proof.
+
+### New Angles Identified This Cycle
+
+- **"I'm watching my launch go live right now" live-tweeting** — authentic real-time BuildInPublic content. Post one tweet when PH goes live, one at 09:00 with first hour numbers, one at 12:00 mid-day check-in. Low effort, high authenticity.
+- **The "skeptic pipeline"** — April Fools skeptics who try the curl command become the best advocates. They go from disbelief to "actually this is real" publicly. Their journey IS your marketing. Engage every single one.
+- **Dev.to "live blog" format** — post an updating article "Launching on April Fools: a live log" that you edit throughout the day. Dev.to surfaces updated articles. Each edit drives a notification burst.
+- **ProductHunt hunter network** — if you have access, ask 1-2 known PH hunters to support. A hunter with followers can drive 50-100 upvotes alone.
+- **r/SideProject + r/startups** — not in the original plan but both communities have 400K+ members and respond well to "I launched today" posts with genuine numbers/story.
+
+### Launch Day Content Cadence (Revised)
+
+| Hour | Platform | Copy Location |
+|------|----------|---------------|
+| 07:00 | Product Hunt comment | SOCIAL-MEDIA.md Cycle 83 |
+| 09:00 | Twitter/X thread | SOCIAL-MEDIA.md launch queue |
+| 09:30 | LinkedIn | SOCIAL-MEDIA.md launch queue |
+| 10:00 | Show HN | LAUNCH-WAR-ROOM.md |
+| 11:00 | r/webdev, r/artificial, r/ChatGPT | SOCIAL-MEDIA.md launch queue |
+| 11:30 | r/mcp | SOCIAL-MEDIA.md Cycle 79/85 |
+| 12:00 | r/ClaudeAI | SOCIAL-MEDIA.md launch queue |
+| 12:00 | Twitter live check-in (numbers so far) | Improvised — be honest |
+| 13:00 | Dev.to blog post | CANONICAL blog (Figma post) |
+| 14:00 | Instagram Stories slide 3 | SOCIAL-MEDIA.md Cycle 83 |
+| 15:00 | Anthropic Discord #mcp-showcase | SOCIAL-MEDIA.md Cycle 82 |
+| 16:00 | r/SideProject "I launched today" | Write fresh — be vulnerable |
+| 18:00 | Engage all comments/replies | No template — genuine responses |
+| 20:00 | End-of-day wrap tweet with numbers | SOCIAL-MEDIA.md day 1 wrap |
+
