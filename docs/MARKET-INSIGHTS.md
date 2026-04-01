@@ -2,6 +2,49 @@
 
 ---
 
+## Entry: 2026-04-01 — Automated Strategy Run #100 (Night, ~22:30 CET)
+
+### Theme: The Excalidraw REST API Gap Is Skissify's Confirmed Moat + Credit Model Normalization
+
+#### Finding 1: Excalidraw Confirms Zero REST API — Skissify's Lane Is Validated
+
+**Source**: github.com/excalidraw/excalidraw-mcp (official), GitHub Issue #10946 (March 2026)
+
+Excalidraw's official MCP server launched with 26 tools and Anthropic partnership. Despite this aggressive AI integration push, GitHub Issue #10946 (March 2026) explicitly requests a REST API for Excalidraw+ — and the request is open with no implementation scheduled.
+
+**What this means**: The developer community has confirmed demand for headless Excalidraw output (GET JSON → GET SVG/PNG without a browser session). Excalidraw cannot currently deliver this. Skissify does. Every developer who finds Issue #10946 is a potential Skissify user.
+
+**Actionable insight**: Target this GitHub issue's audience directly. Write "Why Excalidraw has no REST API (and what to use instead)" — this will rank for "excalidraw REST API" searches AND will get traffic from developers who follow the issue. This is perhaps the highest-ROI blog post Skissify can publish in April 2026.
+
+#### Finding 2: Credit Model Adoption +126% YoY — But Buyer Confusion Is Growing
+
+**Source**: PricingSaaS 500 Index 2026, theregister.com/2026/03/31/usagebased_billing_muddles_software_vendor_pricing/
+
+The credit model is winning (79/500 top SaaS companies now use it, up from 35 in 2024). But The Register (March 31, 2026) reports that usage-based billing is now "muddling vendor pricing" — developers are fatigued by overcomplicated credit systems, tiers within tiers, and unpredictable bills.
+
+**What this means for Skissify's EUR 5/mo positioning**:
+- Skissify can position against confused pricing: "No credit bundles to decode. EUR 0.005/render. Always."
+- The simplest pricing explanation wins in 2026. Complexity is now a liability.
+- Pricing copy should emphasize predictability: "Render 1,000 sketches: EUR 5. Render 10: EUR 0.05. You always know."
+
+#### Finding 3: MCP Is Now Enterprise Infrastructure — Registry Absence Is Existential
+
+**Source**: cloud.google.com/blog, registry.modelcontextprotocol.io
+
+Google Cloud launched official, fully-managed remote MCP servers across all GCP services. This is not a developer hobbyist signal — this is enterprise validation. The MCP registry is now the first place enterprise developers look for visual output tools. Figma and Excalidraw are listed. Skissify is not.
+
+**Risk quantification**: Every week absent from the registry is compounding missed discovery. The "Recent Usage" sort on Glama.ai and mcp.so means first installations drive rankings — early listings compound. This is not a "get to it eventually" task. At current MCP ecosystem growth rates, each missed week costs measurable discovery opportunity.
+
+#### Finding 4: What Would Make Someone Pay EUR 2 for Skissify — New Data Point
+
+The programmatic diagram landscape scan (Q1 2026) reveals: the only REST API for multi-format diagram generation is Kroki (open source, self-hostable). Kroki wraps Mermaid, PlantUML, D2, Graphviz. It has zero hand-drawn output capability.
+
+**The EUR 2 trigger for developers who know Kroki**: "I use Kroki for technical diagrams. I need hand-drawn output for a client-facing sketch. The moment I discover Skissify's POST /render → SVG, I will pay EUR 2 immediately to test it in production."
+
+**New VP5 (developer migration trigger)**: A developer using Kroki for diagrams discovers Skissify via a "Kroki alternative hand-drawn" search. Skissify should publish "Kroki + Skissify: technical diagrams AND hand-drawn sketches in the same agent pipeline." This VP hasn't been exploited yet.
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #99 (Late Evening)
 
 ### Theme: EUR 2/mo — What Value Propositions Make It Work, and When They Don't

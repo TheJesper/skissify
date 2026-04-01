@@ -2,6 +2,74 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #100 (Night, ~22:30 CET)
+
+### Status: 6 topics researched. CRITICAL: Excalidraw MCP is now OFFICIALLY launched (26 tools, Anthropic partnership). GitHub Issue #10946 CONFIRMS no REST API for Excalidraw+ — this is Skissify's proven lane. Google Cloud launched fully-managed remote MCP servers across all GCP services — MCP is enterprise-validated. Credit model adoption +126% YoY (79/500 top SaaS use credits, up from 35 in 2024). The Register March 31: "usage-based billing muddles pricing" — buyer confusion is an opportunity. JSON→hand-drawn API: zero competition confirmed. dAIgram/DiagramGPT/Sketch2Scheme all in sketch-to-digital lane (different category). Kroki is the closest REST-API analogue but outputs technical styles only.
+
+### Excalidraw MCP — NOW OFFICIAL (THREAT ESCALATED TO HIGH)
+
+**Source**: github.com/excalidraw/excalidraw-mcp, x.com/excalidraw/status/2021284377506742331, pulsemcp.com, rajeevpentyala.com/2026/03/16/
+
+Excalidraw's MCP server has graduated from weekend project to officially maintained:
+- **26 MCP tools** including `export_to_image`, `get_canvas_screenshot`, `describe_scene`, `import_scene`, `export_to_excalidraw_url`, `set_viewport`
+- **Clients**: Claude, ChatGPT, VS Code, Goose, and any MCP-compatible client
+- **Anthropic partnership** confirmed — this is joint Excalidraw/Anthropic distribution
+- **Community fork**: `yctimlin/mcp_excalidraw` (independent canvas sync, released Jan 24 2026) also live on PulseMCP
+
+**The critical gap confirmed**: GitHub Issue #10946 (March 2026) requests a REST API for Excalidraw+ — **no programmatic REST access exists beyond the web UI**. Excalidraw MCP requires a running session (browser, Excalidraw+ subscription) — it is NOT headless. No POST-JSON-get-SVG endpoint exists in any Excalidraw product.
+
+**Threat assessment**: **HIGH (upgraded from HIGH WATCH)**. Excalidraw MCP is now active and officially distributed. BUT: the REST API gap is confirmed and documented in a public GitHub issue. Skissify's entire value proposition — `POST /api/render` → SVG, no session, no browser, no Chromium — is NOT replicable from Excalidraw's current roadmap. This is the moat. Blog content targeting "excalidraw REST API" searches is now validated.
+
+### Google Cloud MCP Servers — Enterprise MCP Validated (NEW — HIGH SIGNIFICANCE)
+
+**Source**: cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services
+
+Google Cloud launched fully-managed, remote MCP servers across all Google/GCP services. This means:
+- MCP is no longer a developer-tool ecosystem — it is an enterprise infrastructure layer
+- Official MCP Registry (registry.modelcontextprotocol.io) is now enterprise-validated (not just hobbyist)
+- Figma is already listed in the registry. Excalidraw is listed. Skissify is NOT listed.
+
+**Skissify threat assessment**: NOT a direct threat. This is a distribution crisis: Skissify is absent from the dominant enterprise-validated MCP registry while two visual tools (Figma, Excalidraw) occupy that space. Google's involvement means enterprise developers will discover visual tools via the MCP registry — Skissify must be listed before this wave peaks.
+
+### New AI Sketch/Diagram Tools Q1 2026 (LANDSCAPE SCAN)
+
+**Sources**: daigram.app, sketch2scheme.com, eraser.io/diagramgpt, diagrammingai.com, infrasketch.net/blog/best-ai-diagram-tools-2026
+
+| Tool | Approach | Headless JSON API? |
+|------|----------|-------------------|
+| dAIgram (daigram.app) | Photo of whiteboard/sketch → editable diagram | No |
+| Sketch2Scheme (sketch2scheme.com) | OCR hand-drawn → digital flowchart | No |
+| DiagramGPT by Eraser (eraser.io) | Text → diagram, developer-focused | No — editor-based |
+| Diagramming AI (diagrammingai.com) | NL → Excalidraw-style infographics | No — web app |
+| Kroki (kroki.io) | Unified REST API wrapping PlantUML/D2/Mermaid/Graphviz | YES — but technical styles only, no hand-drawn |
+
+**Competitive implication**: Headless JSON→hand-drawn SVG API is uncontested. Kroki is the closest functional analogue but returns technical/clean vector styles. None of these tools produce architectural sketch vocabulary (doors, stairs, dimensions) via a REST endpoint.
+
+### SaaS Pricing Trend — Credit Models +126% YoY (VALIDATES SKISSIFY MODEL)
+
+**Source**: PricingSaaS 500 Index 2026, theregister.com/2026/03/31/usagebased_billing_muddles_software_vendor_pricing/
+
+- **79 of PricingSaaS 500** now use credit-based pricing, up from 35 in 2024 — **+126% YoY**
+- **43% of SaaS** now use hybrid (subscription + usage), projected 61% by end 2026
+- **The Register, March 31 2026**: "usage-based billing is muddling vendor pricing" — buyer confusion is growing as vendors overcomplicate credit systems
+
+**Signal for Skissify**: The market has normalized credits, but vendors are making them confusing. Skissify's simple EUR 0.005/render model (transparent, no tiers to decode) is a competitive differentiator against confused usage billing. Add pricing copy that highlights simplicity: "No credit bundles to decode. EUR 0.005/render. That's it."
+
+### Updated Competitor Matrix (Run #100 — Wednesday April 1, late night)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw+** | Official MCP (26 tools, Anthropic partnership). NO REST API confirmed (GH Issue #10946). | **HIGH — but REST gap is our lane** |
+| **tldraw** | "computer" live (Gemini 2.0 Flash). SDK 4.0. Image Pipeline template. No render API. | **MEDIUM-HIGH** |
+| **Figma** | In official MCP registry. No hand-drawn or JSON-manifest API. | Low |
+| **Kroki** | REST API for text→diagram (Mermaid/PlantUML/D2). No hand-drawn, no architectural vocab. | **MEDIUM — closest API analogue** |
+| **dAIgram** | Photo→diagram conversion. No API, no JSON input, no hand-drawn output. | Low |
+| **Miro / FigJam** | Credit-metered AI. No headless API. Enterprise only. | Low |
+| **draw.io MCP** | Tutorial proliferation. XML/vector only. | Low — SEO opportunity |
+| **Skissify** | Headless JSON→hand-drawn SVG API: uncontested. MCP registry: absent (CRITICAL gap). | **Uncontested in headless spatial lane** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #99 (Late Evening)
 
 ### Status: Final scan of the day — 6 topics researched. NEW SIGNAL: tldraw "computer" project (computer.tldraw.com) is a live visual natural-language computing canvas powered by Gemini 2.0 Flash — node-based AI workflow builder, free, public. This is tldraw pivoting from "canvas SDK" toward "visual AI workflow platform." FigJam AI credit system enforced March 2026 (500–4,250 AI credits/month by plan) — metered AI is now standard even for collaboration incumbents. Whimsical AI: mindmaps/flowcharts from natural language, included in Pro. draw.io + Azure/AWS MCP agent skill tutorials proliferating. Excalidraw MCP ecosystem matured: 3+ competing community forks on Lobehub/PulseMCP/Glama. EUR 2/mo micro-SaaS research confirms: credit bundle (one-time) outperforms subscription at the $2 price point. NICHE: headless JSON spatial hand-drawn SVG API uncontested. tldraw "computer" is the biggest new development this week.

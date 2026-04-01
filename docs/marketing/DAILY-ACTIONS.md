@@ -2,6 +2,62 @@
 
 ---
 
+## 2026-04-02 — Strategy Run #100 Actions (Night, April 1, ~22:30 CET)
+
+### Context: Run #100 Key Findings
+- **Excalidraw official MCP** (26 tools, Anthropic partnership) — but GitHub Issue #10946 CONFIRMS no REST API for Excalidraw+. This is Skissify's proven lane.
+- **Google Cloud MCP servers** launched — MCP is now enterprise-validated. Figma + Excalidraw in registry. Skissify absent = existential.
+- **Credit model +126% YoY** (79 of top 500 SaaS use credits). The Register March 31: "usage-based billing muddles pricing" — simplicity is a differentiator.
+- **Kroki** is the closest REST-API diagram analogue — no hand-drawn output. Migration path VP unclaimed.
+
+---
+
+### Action 1 (CRITICAL — April 2, morning first): Submit Skissify to MCP Registry + Glama.ai
+
+This action has been flagged in EVERY daily plan. Excalidraw and Figma are now both in the official registry. Google Cloud validated the registry for enterprise developers. Every day absent = compounding missed discovery on a now-enterprise-grade channel.
+
+**Steps (2 hours, do this before anything else)**:
+1. Submit to official registry: github.com/modelcontextprotocol/registry — categories: "visual", "design", "architecture", "floor-plan"
+2. Submit to Glama.ai (glama.ai/mcp/servers) — complete ALL metadata, aim for Grade A
+3. Submit to mcp.so, pulsemcp.com, mcpservers.org (10 min each)
+4. Standard description: "POST a JSON manifest, receive a hand-drawn SVG. Floor plans, architectural sketches, napkin diagrams. No browser. No session. No Chromium."
+
+**Why NOW**: Google's enterprise validation means the registry is the discovery channel — not Twitter, not Reddit, the registry. First-mover advantage is closing fast.
+
+---
+
+### Action 2 (HIGH — April 2): Publish "Why Excalidraw Has No REST API" Post
+
+GitHub Issue #10946 (March 2026) confirms the community wants a headless Excalidraw REST API. Excalidraw's official response: none scheduled. This is a documented gap that Skissify fills, and it's discoverable via search.
+
+**Steps (1.5 hours)**:
+1. Write a 400-word blog post: "Why Excalidraw Has No REST API — And What to Use Instead"
+   - Section 1: What developers want (Issue #10946, MCP is session-dependent, not headless)
+   - Section 2: What Excalidraw's MCP actually does (requires running browser session)
+   - Section 3: What Skissify does instead (POST /api/render → SVG, zero session)
+   - Section 4: 5-line code example showing the difference
+2. Publish on Skissify blog + cross-post to dev.to
+3. SEO target: "excalidraw REST API", "excalidraw headless", "excalidraw programmatic"
+4. Optional: post a comment on GitHub Issue #10946 linking to the post (respectful, helpful framing)
+
+**Why this converts**: Developer hits Issue #10946, reads the post, tries Skissify's endpoint, uses free tier, hits the render limit, buys EUR 2 starter bundle.
+
+---
+
+### Action 3 (MEDIUM — April 2): Add Pricing Clarity Copy — Own the "Simple Billing" Position
+
+The Register (March 31, 2026): "usage-based billing is muddling vendor pricing." Developers are fatigued by complex credit systems. Skissify's EUR 0.005/render is the simplest possible pricing in the category — but only if the pricing page communicates it clearly.
+
+**Steps (30 min)**:
+1. Add a "Transparent Pricing" callout above the pricing table: "No bundles to decode. No surprises. EUR 0.005/render, always."
+2. Add a simple calculator: "I need [___] renders/month. That's EUR [___]." (static table is fine)
+3. Add a comparison line on the Pro tier: "1,000 renders included = EUR 5/mo. That's EUR 0.005/render — same rate at every scale."
+4. Remove any language that sounds like other SaaS credit confusion ("credits", "tokens", "units"). Use "renders" everywhere.
+
+**Why this matters**: In 2026, simplest pricing explanation wins. Every competitor is making pricing confusing. Skissify's EUR 0.005/render is genuinely simple — but only if it's communicated that way.
+
+---
+
 ## 2026-04-02 — Strategy Run #99 Actions (Late Evening, April 1)
 
 ### Context: Run #99 Key Findings
