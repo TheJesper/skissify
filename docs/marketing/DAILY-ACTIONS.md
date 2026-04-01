@@ -2,6 +2,17 @@
 
 ---
 
+## 2026-04-02 Daily Actions
+### Source: Evening Web Research, April 1, 2026
+
+1. **Publish "Skissify vs tldraw Image Pipeline" positioning post on X/Twitter** — tldraw's new 2026 "Image Pipeline" starter template is pulling AI workflow developers into tldraw's orbit. These developers are the exact segment that needs Skissify as the render layer. Post a 3-tweet thread: Tweet 1 — "tldraw's new Image Pipeline template is great for building AI image workflows. But what do you do when the agent needs to output a hand-drawn floor plan or architectural sketch? That's where Skissify comes in." Tweet 2 — show a code snippet: `POST /api/render` with a simple floor plan JSON → SVG response. Tweet 3 — "tldraw builds the canvas. Skissify renders the output. JSON in, hand-drawn SVG out. No browser required." Link to docs. Tag #tldraw #MCP #AIagents. This intercepts tldraw discovery traffic and reframes Skissify as complementary, not competing.
+
+2. **Add "EUR 2 Starter Credits" bundle to the pricing page** — 2026 data confirms outcome-based micro-pricing works (Intercom Fin $0.99/resolution → 8-figure ARR; Zendesk $1.50–$2.00/resolution). Add a one-time "Starter" credit bundle: 400 renders for EUR 2 (= EUR 0.005/render, same as overage rate). Place it prominently on the pricing page ABOVE the Pro tier as the lowest-friction entry point. Copy: "Try Skissify for real — 400 hand-drawn sketches, no watermarks, no subscription. EUR 2 one-time." Implementation: Stripe one-time payment → credit balance added to account. This creates a cash-generating, low-friction onramp that converts to Pro when credits run out. Estimated conversion to Pro from Starter bundle: 20–30% within 30 days (based on freemium conversion benchmarks: 1–3% free-to-paid, but bundle buyers have already demonstrated intent).
+
+3. **Request Excalidraw+ MCP alpha access AND check tldraw GitHub releases for any new export/render endpoint** — Excalidraw+ custom AI token support (Feb 2026) + Anthropic-partnered closed-alpha REST MCP means Claude agents may begin defaulting to Excalidraw+ before Skissify is even visible. Two parallel checks: (a) Submit alpha access request at plus.excalidraw.com/docs/mcp — use a real use case: "AI agent pipeline developer evaluating headless hand-drawn SVG options for architectural sketch output." (b) Check github.com/tldraw/tldraw/releases for any new endpoint, export method, or SVG output tool beyond the existing 3 MCP tools. If tldraw ships a `/render` endpoint in the next release: escalate to CRITICAL immediately. Both checks take under 30 minutes. Both protect Skissify's lane for the next 4–6 weeks.
+
+---
+
 ## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #97 (16:49 CET, Wednesday April 1)
 
 ### Context: Run #97 Key Findings
@@ -6408,4 +6419,64 @@ ender_sketch tool live on npm? Yes/no + URL
 - Monitor: Excalidraw MCP press coverage — is anyone framing it as "agent-native" or "programmatic"? (If yes, respond faster)
 - Check: did Thornton reply to outreach?
 - Pricing: EUR 2/mo entry tier — is it live on the pricing page? (Prerequisite for any paid conversion)
+
+---
+
+## Daily Actions: Thursday, April 2, 2026 | Strategy Run #98
+
+*Generated April 1, 2026 (19:05 CET). Based on: excalidraw-render (bassimeledath) now listed on Lobehub MCP directory (first Chromium-based headless hand-drawn competitor in discovery channel), SaaS pricing simplicity signal (2026 swing back to predictability), FloorMind text-to-floor-plan research (future input model shift in 12–24 months).*
+
+---
+
+### Action 1: List @skissify/mcp on Lobehub — Claim Position Adjacent to excalidraw-render (URGENT)
+
+**Why tomorrow**: `excalidraw-render` by bassimeledath is live at lobehub.com/mcp/bassimeledath-excalidraw-render — the ONLY headless hand-drawn renderer on Lobehub. Every developer searching "sketch MCP" or "hand-drawn SVG" finds it first. Skissify's advantage is decisive: no Chromium, no 3s cold start, pure HTTP API, works in Lambda/Vercel/CI. But that advantage is invisible until Skissify is listed next to it.
+
+**Concrete steps**:
+1. Ensure `@skissify/mcp` is published on npm (prerequisite — if not, publish minimal stub today)
+2. Submit to lobehub.com/mcp: name `@skissify/mcp`, category "Design & Visual", description: "JSON-native hand-drawn sketch API. No Chromium. No cold start. POST JSON → SVG in <200ms. Floor plans, doors, stairs, dimensions — architectural vocabulary included."
+3. Submit to glama.ai (20,650 servers — Skissify still not listed)
+4. Submit to official registry.modelcontextprotocol.io
+
+**Success metric**: Skissify listed on Lobehub by EOD April 2, adjacent to excalidraw-render.
+
+---
+
+### Action 2: Draft "No Chromium Required — Skissify vs. excalidraw-render for AI Pipelines" (600 words)
+
+**Why tomorrow**: Developers who try excalidraw-render and hit the Chromium wall (Lambda failure, 3s cold start, 150MB binary) will search for alternatives. A 600-word comparison post intercepts them at that search moment. Short to write, directly addresses the new Lobehub competitive reality, targets a specific pain point Skissify solves decisively.
+
+**Concrete steps**:
+1. Write `docs/marketing/blog/skissify-vs-excalidraw-render-no-chromium.md`
+   - Headline: "No Chromium Required: Skissify vs. excalidraw-render for AI Agent Pipelines"
+   - Lead: "If you've tried excalidraw-render in Lambda or Vercel, you've hit the wall. Here's what works instead."
+   - Comparison table: Cold start | Serverless support | Architectural elements | Input model | Price
+   - CTA: "Try Skissify free: 100 renders/month, no Chromium, <200ms"
+2. Publish on DEV.to: tags `mcp`, `ai-agents`, `excalidraw`, `api`, `serverless`
+3. Link from Lobehub listing once live
+
+**Success metric**: Post drafted by EOD April 2. Published on DEV.to when @skissify/mcp is live on npm.
+
+---
+
+### Action 3: Add `/generate` Endpoint to Roadmap — Pre-Empt FloorMind Productization
+
+**Why tomorrow**: FloorMind research (Feb 2026) confirmed text → floor plan in 2.3s via diffusion. Not a product yet — 12–24 month horizon. When it ships, input model shifts from JSON → natural language. Skissify's defense: `/generate` endpoint (text → Claude → JSON manifest → SVG). No competitor will have this combination. Documenting it now = roadmap commitment + investor/user signal.
+
+**Concrete steps**:
+1. Create/update `docs/ROADMAP.md` with Phase 3:
+   > **Phase 3 — `/generate` Endpoint (Q3 2026)**: Text prompt → Claude generates JSON manifest → render hand-drawn SVG. "Describe it, sketch it." Est. 2–3 dev days. Pricing: EUR 0.01/generate (render + LLM surcharge).
+2. This makes EUR 5/mo more defensible: agent iteration loops generate 10× more renders
+
+**Success metric**: ROADMAP.md updated with `/generate` spec by EOD April 2.
+
+---
+
+### Notes for Next Cycle (Run #99 — Target: April 2, 09:00 CET)
+- Is @skissify/mcp listed on Lobehub? (Adjacent to excalidraw-render — highest urgency)
+- Was "No Chromium" comparison post drafted?
+- Is `/generate` endpoint in ROADMAP.md?
+- Monitor: Excalidraw+ closed alpha status — any sign of headless REST endpoint going GA?
+- Check: Thomas Thornton outreach response (sent April 1)?
+- Glama.ai listing: Submit — 20,650 servers indexed, Skissify not found
 

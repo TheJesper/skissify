@@ -242,6 +242,11 @@ function EditorInner({
     updateSketch,
     updateElement,
     toggleVisibility,
+    setLayerVisibility,
+    setElementLayer,
+    addLayer,
+    removeLayer,
+    renameLayer,
     undo,
     redo,
     canUndo,
@@ -877,6 +882,12 @@ function EditorInner({
             }}
             selectedOpacity={selectedOpacity}
             onOpacitySelected={opacitySelected}
+            layers={sketch.layers}
+            onSetLayerVisibility={setLayerVisibility}
+            onAddLayer={addLayer}
+            onRemoveLayer={removeLayer}
+            onRenameLayer={renameLayer}
+            onSetElementLayer={setElementLayer}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -1062,6 +1073,12 @@ function EditorInner({
           }}
           selectedOpacity={selectedOpacity}
           onOpacitySelected={opacitySelected}
+          layers={sketch.layers}
+          onSetLayerVisibility={setLayerVisibility}
+          onAddLayer={addLayer}
+          onRemoveLayer={removeLayer}
+          onRenameLayer={renameLayer}
+          onSetElementLayer={setElementLayer}
         />
       </MobileBottomSheet>
     </div>

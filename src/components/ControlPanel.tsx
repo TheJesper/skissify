@@ -1371,6 +1371,22 @@ export default function ControlPanel({
         </Section>
       )}
 
+      {/* Layers Panel */}
+      {onAddLayer && onRemoveLayer && onRenameLayer && onSetLayerVisibility && (
+        <Section title="Layers">
+          <LayersPanel
+            layers={layers ?? []}
+            elements={elements ?? []}
+            onSetLayerVisibility={onSetLayerVisibility}
+            onAddLayer={onAddLayer}
+            onRemoveLayer={onRemoveLayer}
+            onRenameLayer={onRenameLayer}
+            selectedElements={selectedElements}
+            onSetElementLayer={onSetElementLayer}
+          />
+        </Section>
+      )}
+
       <Section title="Add Element">
         <ElementThumbnailPanel paper={paper} onAddElement={onAddElement} />
       </Section>

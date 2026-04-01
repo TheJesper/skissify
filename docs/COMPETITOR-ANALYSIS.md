@@ -2,6 +2,165 @@
 
 ---
 
+## Update: 2026-04-01 — Web Research Run (Evening, ~20:00 CET)
+
+### Status: Evening deep-dive — 6 topics researched. KEY FINDINGS: tldraw shipped canvas performance overhaul (25x faster shape indicators) + new AI Image Pipeline template in 2026. Excalidraw+ added Custom AI Tokens (Feb 2026) — users can now plug in own Claude/OpenAI keys. Google Stitch (ex-Galileo AI) launched free UI wireframe-to-code tool at Google I/O May 2025 — Gemini-powered, exports to Figma. MCP TypeScript SDK hit 97M+ monthly downloads; MCP donated to Linux Foundation. Wireframe lane seeing active AI investment (Figma AI, Miro AI, Uizard, Visily, UXPilot all active in 2026). Skissify's spatial/architectural JSON lane remains uncontested.
+
+### tldraw: Canvas Performance Overhaul + AI Image Pipeline Template (NEW — 2026)
+
+**Source**: github.com/tldraw/tldraw/releases, tldraw.dev/releases, releasebot.io/updates/tldraw
+
+New 2026 release details confirmed:
+- **25x faster shape rendering**: Shape indicators (hover/selection outlines) now use 2D Canvas instead of SVG — 25x perf gain when selecting many shapes. This significantly narrows the performance gap with native canvas tools.
+- **"Image pipeline" starter template** via `npx create-tldraw`: visual node-based canvas for building AI image generation workflows, with typed port connections, DAG-based execution backed by Cloudflare Worker API. This is a direct step toward automated pipeline use — the closest tldraw has come to "agent workflow" territory.
+- **Agent starter template restructured**: manager-based architecture, mode system, action schema registries, canvas linting, user action tracking. This gives AI agent developers a structured way to build agents that operate on tldraw canvases.
+- **Multiplayer self-hosted** confirmed available.
+- **Telestrator laser with grouped sessions** added.
+- SDK 4.0 remains $6K/yr commercial. 70K weekly npm installs confirmed.
+
+**Skissify threat assessment**: The Image Pipeline template and agent starter template indicate tldraw is actively courting the AI workflow developer. This is not yet headless JSON-to-SVG, but the direction is unmistakable. tldraw agents now have structured tooling. **Threat level: MEDIUM-HIGH (upgraded from MEDIUM)**. Monitor the next 2 releases for any `/render` or export-from-agent-state endpoint.
+
+**What Skissify must do**: Publish the "Skissify vs tldraw" positioning clearly. "tldraw agents build on an interactive canvas. Skissify agents POST JSON and receive SVG. Different tools for different pipeline stages." The Image Pipeline template could actually funnel developers TO Skissify: they design in tldraw → export manifest → render hand-drawn output via Skissify.
+
+### Excalidraw: Custom AI Tokens + Presentation Overhaul (Feb 2026)
+
+**Source**: plus.excalidraw.com/changelog, plus.excalidraw.com/plus
+
+February 2026 additions confirmed:
+- **Custom AI Tokens**: Users can now supply their own OpenAI, Claude, Gemini, or OpenRouter API keys to power all Excalidraw AI features. This is a significant UX shift — it means Excalidraw AI features work without Excalidraw controlling the LLM budget. Reduces Excalidraw+'s operating cost, increases AI feature adoption.
+- **Presentation Waiting Room**: Manage guest admission, admit/deny external participants.
+- **Advanced Charts**: Radar charts, multi-series chart visualization.
+- **Google Drive Video embeds**.
+- **Interactive presentations with real-time reactions + raised-hand queue**.
+- January 2026: YouTube video syncing, QR code session sharing, redesigned dark mode.
+
+**Key implication**: Custom AI token support means developers evaluating Excalidraw+ for agent workflows can now hook it to Claude directly — without Excalidraw proxying LLM calls. Combined with the closed-alpha MCP REST API (confirmed prior scan), Excalidraw is building a credible Claude-native agentic layer.
+
+**Skissify threat assessment**: **HIGH WATCH (maintained)**. The custom token feature accelerates Excalidraw+ adoption among developers already using Claude. The Anthropic partnership + custom token support + invite-only REST MCP alpha = Excalidraw is 3 steps into the headless lane. The architectural element vocabulary gap remains Skissify's primary differentiator.
+
+### Google Stitch (ex-Galileo AI): Free AI Wireframe-to-Code Tool (NEW — May 2025)
+
+**Source**: designforonline.com/5-ai-tools-you-should-know-about-in-2026/, Figma blog references
+
+Google acquired Galileo AI and relaunched as **Stitch** at Google I/O May 2025:
+- Free AI design tool from Google Labs
+- Text description → complete UI design with production-ready HTML + CSS
+- Powered by Gemini 3 Pro
+- One-click export to Figma
+- Targets web and mobile app UI wireframing
+
+**Skissify threat assessment**: **Low**. Stitch is UI/UX → code. Skissify is JSON manifest → hand-drawn spatial sketch. Different use case, different output format, different audience. However: Stitch establishes that Google is in the "text → visual" lane with a free product backed by Gemini. If Google expands Stitch toward floor plans or architectural sketches, re-evaluate.
+
+**Opportunity**: Developers who use Stitch for UI wireframes and need a hand-drawn architectural sketch for the same project have no tool. Skissify is the answer. Co-exist, don't compete.
+
+### Active Wireframe AI Field (2026) — Figma, Miro, Uizard, Visily, UXPilot
+
+**Source**: figma.com/solutions/ai-wireframe-generator/, miro.com/ai/wireframe/, banani.co, uizard.io, uxpilot.ai
+
+In 2026, all major UI/UX tools have shipped AI wireframe generation:
+- **Figma**: Prompt → interactive wireframe. Updated Feb 27 + Mar 4, 2026.
+- **Miro AI**: Text → layout proposal, image-to-UI capability.
+- **Uizard**: AI-powered UI design, active in 2026.
+- **Visily**: Text → professional UI layouts, targets non-designers.
+- **UXPilot**: Prompt → wireframe.
+
+**All are UI/UX wireframe tools — none are spatial/architectural sketch APIs.** None output hand-drawn SVG from a JSON manifest. None have `door-symbol`, `stair`, `dim`, `opening` elements. The wireframe AI space is saturated for app/UI work. The spatial/architectural hand-drawn API lane remains empty.
+
+**Skissify positioning implication**: Do not compete with Figma AI or Miro AI. They own the UI wireframe lane. Skissify owns the spatial sketch + architectural + hand-drawn pipeline output lane. If someone asks "is Skissify like Figma AI?" the answer is: "No — Skissify is a render API for JSON manifests describing architectural spaces and technical drawings. Not a UI design tool."
+
+### MCP Ecosystem: 97M+ Monthly Downloads, Linux Foundation, Enterprise Adoption
+
+**Source**: contextstudios.ai/blog/mcp-ecosystem-in-2026, use-apify.com/blog/mcp-standard-ecosystem-2026, cdata.com/blog/2026-year-enterprise-ready-mcp-adoption
+
+March 2026 MCP ecosystem status:
+- **TypeScript SDK v1.27.1, Python SDK v1.26** — current versions
+- **97M+ monthly downloads** across official SDKs
+- MCP donated to **Linux Foundation / Agentic AI Foundation (AAIF)** in late 2025 — neutral governance, not Anthropic-controlled
+- OpenAI Agents SDK v0.12.x and Google ADK v2.0 both natively support MCP
+- **Enterprise-ready adoption in 2026**: Merge, Composio provide managed auth + observability for MCP servers
+- **ContextForge**: open-source security layer for MCP (granular control over agent interactions)
+- 2026 is the year of "enterprise-wide MCP adoption" per multiple sources
+
+**For Skissify**: MCP listing is now a B2B enterprise discovery channel, not just a developer toy. Enterprise architecture firms or construction tech companies evaluating AI tools scan MCP registries. Skissify being unlisted means missing this new buying motion entirely. Listing urgency remains CRITICAL.
+
+### Updated Competitor Matrix (Evening Web Research — April 1, 2026)
+
+| Tool | Latest Update | Skissify Threat |
+|------|--------------|-----------------|
+| **Excalidraw+** | Feb 2026: Custom AI tokens (Claude/OpenAI/Gemini). Closed-alpha REST MCP with Anthropic. | **HIGH WATCH** |
+| **tldraw** | 2026: 25x canvas perf, Image Pipeline template, structured agent starter. SDK 4.0 $6K/yr. | **MEDIUM-HIGH (upgraded)** |
+| **Google Stitch** | May 2025 launch: free UI wireframe-to-code via Gemini 3. Figma export. | **Low** |
+| **Figma AI** | Mar 2026: active prompt→wireframe updates. UI lane only. | **Low** |
+| **Miro AI** | 2026: text→layout, image-to-UI. Enterprise collaboration lane. | **Low** |
+| **Visily / Uizard / UXPilot** | 2026: active AI wireframe tools, non-designer focus. UI lane. | **Low** |
+| **Skissify** | Spatial JSON → hand-drawn SVG lane: **still uncontested**. Not listed on Glama/MCP registry (ACTION REQUIRED). | **Uncontested in architectural/spatial lane** |
+
+---
+
+## Update: 2026-04-01 — Automated Strategy Run #98 (19:05 CET)
+
+### Status: Wednesday evening scan — 5 topics researched. 🟠 NEW COMPETITIVE ENTRY: `excalidraw-render` (bassimeledath) is now live on Lobehub MCP directory — headless Chromium-based Excalidraw renderer, ~3s cold start, PNG/SVG output. First community tool occupying Skissify's discovery real estate on Lobehub. tldraw v4.5.4 confirmed — no major April changes. Napkin AI: 5M users, still NO API. SaaS pricing: 2026 pendulum swinging back to simplicity (43%→61% hybrid models by EOD 2026, credits grew 126% YoY but may be over-indexed). FloorMind research (Feb 2026): text → floor plan in 2.3s via diffusion — not a product yet, but 12–24 months from productizing. NICHE STATUS: 98 scans — headless JSON spatial hand-drawn API uncontested, but Chromium wrappers now polluting the discovery lane on Lobehub.
+
+### 🟠 excalidraw-render (bassimeledath) — Chromium Headless Renderer Now on Lobehub (NEW — MEDIUM)
+
+**Source**: lobehub.com/mcp/bassimeledath-excalidraw-render, github.com/bassimeledath/tldraw-render-mcp
+
+A community MCP tool (`excalidraw-render`) by bassimeledath is now listed on Lobehub MCP directory — the first community headless Excalidraw renderer with public directory presence. Key technical characteristics:
+
+- **Headless Chromium** (via agent-browser) — renders Excalidraw diagrams server-side
+- **Output**: PNG or SVG
+- **Cold start**: ~3 seconds (browser launch + CDN import from esm.sh)
+- **Warm renders**: ~60ms
+- **Privacy**: All local — diagram data never sent to Excalidraw servers
+- **Hand-drawn aesthetic**: Yes (Excalidraw's native style)
+- **Architectural elements**: None (no `door-symbol`, `stair`, `dim`, `window`)
+- **Deployment**: Requires Chromium binary installed (~150MB), breaks in serverless (Lambda, Fly.io, Vercel Functions)
+- **Input**: Excalidraw element schema — NOT a spatial JSON manifest
+
+**Threat assessment**: **MEDIUM**. This tool is now listed on the same Lobehub directory where Skissify should be. Developers searching "sketch MCP" or "hand-drawn SVG" will find excalidraw-render FIRST. The Chromium dependency is the fatal flaw for pipeline use — but developers may not realize this until they try to deploy. Skissify's positioning against this: "No Chromium. No 3-second cold start. HTTP POST in <200ms. Works in Lambda, Vercel, any CI pipeline."
+
+**What Skissify must do**: List @skissify/mcp on Lobehub immediately, adjacent to excalidraw-render. Publish comparison content targeting "excalidraw-render alternative" and "headless sketch API no Chromium." The Chromium cold-start problem is the strongest paid conversion argument: developer hits the wall → discovers Skissify → pays EUR 5/mo.
+
+### 🟢 tldraw v4.5.4 — No Major April Changes (MEDIUM maintained)
+
+**Source**: tldraw.dev/releases, github.com/tldraw/tldraw/releases
+
+tldraw v4.5.4 confirmed as latest. No major April 2026 feature additions beyond what was documented in Run #97 (25x canvas performance, Image Pipeline template, agent starter template). Minor updates in 4.5.x series: consolidated options prop, quick zoom navigation, fill styles dropdown, shape-aware binding checks. SDK 4.0 commercial at $6K/yr unchanged. MCP App (interactive canvas, March 3) still interactive-only.
+
+**Threat level**: **MEDIUM (maintained)**. No escalation. The interactive canvas vs. headless API differentiation holds.
+
+### 🟢 Napkin AI — 5M Users, Still No API (OPPORTUNITY maintained)
+
+**Source**: getalai.com/blog/napkin-ai-alternatives, multiple G2/SaaS review sources
+
+Napkin AI confirmed at 5M+ registered users as of 2025–2026 with NO API offering and NO programmatic access. The tool remains browser-only for business diagram/infographic creation. Competitors (Gamma AI, Lucidchart, Miro) serve presentation and collaboration lanes — none serve the headless hand-drawn pipeline API lane.
+
+**Opportunity**: The 5M Napkin AI users who outgrow the browser tool or need programmatic generation have no upgrade path to a hand-drawn API. Skissify is that upgrade path. Target "Napkin AI API alternative" and "programmatic sketch generation" in SEO content.
+
+### 🟡 FloorMind Research — Text-to-Floor-Plan in 2.3s (FUTURE WATCH — 12–24 months)
+
+**Source**: medium.com/@mayuka.kothuru/from-words-to-walls (Feb 2026)
+
+"FloorMind" is a research project (not a product) demonstrating text prompt → 512×512 floor plan generation via diffusion in ~2.3 seconds. Accepts natural language: "Modern 3-bedroom apartment with open concept kitchen" → dimensioned, room-labeled layout. Not publicly available, not an API, not hand-drawn.
+
+**Implication for Skissify**: When text-to-floor-plan diffusion models productize (12–24 months), they shift the input model from JSON manifest → natural language. Skissify must pre-empt this with a `/generate` endpoint: LLM converts text → JSON manifest → Skissify renders hand-drawn SVG. First-mover on "describe it, sketch it" in the hand-drawn architectural lane.
+
+**Threat level**: **Low (current)** — research stage. **MEDIUM (12–24 months)** — watch for productization.
+
+### Updated Competitor Matrix (Run #98 — Wednesday April 1, 19:05 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw+** | Closed alpha MCP REST API with Anthropic. Custom AI tokens (Feb 2026). No headless endpoint confirmed. | **HIGH WATCH** |
+| **tldraw** | v4.5.4. MCP App (interactive). 70K weekly npm installs. $6K/yr SDK. No April changes. | **MEDIUM** |
+| **excalidraw-render** | **⬆️ NEW: Listed on Lobehub MCP directory. Chromium headless, ~3s cold start, PNG/SVG. No architectural elements.** | **MEDIUM — discovery lane conflict** |
+| **Napkin AI** | 5M users, NO API, browser-only. Still an overflow opportunity. | Low — referral opportunity |
+| **Archilogic** | GraphQL spatial data API, no hand-drawn, no MCP. | MEDIUM — floor plan lane |
+| **FloorMind (research)** | Text → 512×512 floor plan in 2.3s. Not a product. 12–24 month horizon. | Low (current), MEDIUM (future) |
+| **Skissify** | **98 scans. excalidraw-render on Lobehub (first headless competitor in directory). Napkin AI 5M users with no API (referral). tldraw no new features. Headless JSON spatial hand-drawn API: still uncontested as a product.** | **Uncontested as headless JSON product** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #97 (16:49 CET)
 
 ### Status: Wednesday evening scan — 6 topics researched. 🔴 NEW ESCALATION: Excalidraw+ MCP is in CLOSED ALPHA with Anthropic partnership — invite-only, built on Excalidraw+ REST API. This is the first real REST-API-with-hand-drawn-style threat to monitor. tldraw: no April updates beyond March 3 MCP App (3 tools: create/edit/delete, interactive only, confirmed). MCP ecosystem: Glama.ai now tracks 20,650 servers — Skissify is NOT listed (missed discovery channel). svg2roughjs confirmed library-only (no hosted API exists). Freemium conversion data: dev tools convert at 1–3%; gate on volume not quality. NICHE STATUS: 97 consecutive scans, headless JSON-native hand-drawn spatial sketch API uncontested — but Excalidraw+ MCP alpha with Anthropic is the first signal that requires immediate tracking.

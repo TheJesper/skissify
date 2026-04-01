@@ -2,6 +2,95 @@
 
 ---
 
+## Entry: 2026-04-01 — Evening Web Research (~20:00 CET)
+
+### Theme: What Makes Someone Pay EUR 2/mo for Skissify — Data-Driven Willingness-to-Pay Analysis
+
+#### The Core WTP Question
+
+The EUR 2/mo price point (equivalent to a "Render Credits" bundle or a future micro-tier) sits at an interesting psychological threshold. Based on 2026 market data:
+
+- **Intercom's Fin AI Agent** charges $0.99 per resolved ticket — scaled to 8-figure ARR at 393% annualized growth. Per-resolution micro-pricing WORKS at scale for AI tools.
+- **Zendesk AI agents**: $1.50–$2.00 per automated resolution. Same model, enterprise acceptance confirmed.
+- **B2B SaaS trial-to-paid conversion**: 20–40% when credit card is NOT required upfront. 6–15% when CC required. (Source: FirstPageSage 2026, SaaS Hero benchmarks 2026)
+- **Average B2B SaaS website**: 2.3% visitor-to-lead conversion; top performers exceed 10%.
+
+**Key WTP signal**: Intercom and Zendesk prove that $1–2 per AI-generated outcome is a psychologically accepted price in professional contexts. Skissify's EUR 0.005/render (= EUR 2 for 400 renders) maps cleanly to this pattern. The question is not "will they pay EUR 2?" — it's "do they feel value at EUR 2?"
+
+#### Pain Points That Justify Payment at EUR 2/mo
+
+**Pain 1: The client deliverable gap**
+An architect, freelancer, or AI agent generates a floor plan concept or technical sketch. Free tools (Excalidraw, tldraw) produce vector-clean diagrams. The hand-drawn aesthetic is a deliberate choice — it signals "concept, not finalized" — which is the correct communication for early-stage design reviews. No free tool provides this as a headless API. If the developer is inside a pipeline generating 50+ sketches/month, EUR 2 (or EUR 5/mo Pro) is irrelevant to the ROI.
+
+**Pain 2: The pipeline integration wall**
+A developer builds an AI agent that generates floor plan JSON. The agent works. The output is SVG. The client wants 20 variants. The free tier hits 50/month. EUR 5/mo is less than 10 minutes of the developer's billable rate. The upgrade is a no-brainer — but only if the free tier was good enough to prove value BEFORE hitting the wall.
+
+**Pain 3: No watermark for client-facing output**
+The most common reason developers don't upgrade tools is they never hit the moment where the tool is "visible to the outside world." For Skissify, that moment is: showing a hand-drawn floor plan to a client, investor, or colleague. If that sketch has a watermark, the developer removes Skissify from the stack before they even hit the payment page. The free tier must be watermark-free through the "first show" moment.
+
+**Pain 4: Private saves for professional work**
+Developers working on client projects cannot publish architectural sketches to a public gallery (confidentiality). The private save lock is therefore the right gate — it creates genuine friction for professional use cases while not degrading free-tier quality.
+
+#### Value Props vs Free Alternatives
+
+| Scenario | Free Alternative | Skissify Advantage |
+|----------|-----------------|-------------------|
+| Generate hand-drawn floor plan in AI pipeline | None (Excalidraw requires live canvas) | Headless POST JSON → SVG, no browser |
+| Architectural elements (doors, stairs, dims) | None — no free tool has this vocabulary | Native element types in JSON schema |
+| MCP integration for Claude agents | Excalidraw MCP (canvas-only, invite alpha) | Skissify MCP: stateless, pipeline-safe |
+| Hand-drawn aesthetic for concept sketches | Excalidraw (browser), tldraw (browser) | API output, embeddable anywhere |
+| EUR 0 cost for proof-of-concept | All competitors have free tiers | Skissify free: 100 renders, no watermark |
+
+**The key differentiator**: No free alternative offers a headless JSON → hand-drawn SVG API with an architectural vocabulary. The "free" alternatives require a running browser or canvas session. Skissify's free tier IS the killer feature — getting 100 clean renders in a pipeline costs EUR 0. The upgrade happens when the pipeline goes to production.
+
+#### User Segments Most Likely to Pay EUR 2–5/mo
+
+**Segment 1: Solo freelance developers building AI agent tools (HIGHEST WTP)**
+- Context: Building client-facing AI tools that generate visual outputs
+- Usage: 100–500 renders/month in agent pipelines
+- WTP: EUR 5/mo Pro — sub-expense-report, no approval needed
+- Trigger: When they ship to a paying client and need private saves + reliable API
+- Discovery: MCP registry, Hacker News, GitHub
+
+**Segment 2: Architecture students and indie architects (MEDIUM WTP)**
+- Context: Creating concept sketches for design reviews, presentations
+- Usage: 20–100 renders/month, mostly manual
+- WTP: EUR 2–5/mo — treat it like a Figma subscription
+- Trigger: First time they show a sketch to a professor/client
+- Discovery: Architecture forums, Reddit r/architecture, Instagram
+
+**Segment 3: AI/LLM developers testing agent output visualization (HIGH VOLUME, MEDIUM WTP)**
+- Context: Benchmarking agent performance with visual output verification
+- Usage: 500–5,000 renders/month in CI pipelines
+- WTP: EUR 5/mo + overage — the EUR 0.005/render overage is acceptable (less than most API costs)
+- Trigger: Integration test that generates a sketch to verify agent output
+- Discovery: Dev.to, Hacker News, MCP registry, GitHub Awesome lists
+
+**Segment 4: No-code builders using AI agents (EMERGING)**
+- Context: Non-technical users building automation flows with tools like Zapier AI, n8n, Make
+- Usage: Low volume, high intent — use Skissify for a specific niche workflow
+- WTP: EUR 2–5/mo, credit bundle preferred over subscription
+- Trigger: When they connect Skissify to their workflow and it works first time
+- Discovery: App directories, MCP registry, template marketplaces
+
+#### Positioning Angle That Converts at EUR 2–5/mo
+
+**The positioning that works**: "The render API for AI agents that need hand-drawn output."
+
+Not: "A sketch tool." Not: "An alternative to Excalidraw." Those comparisons invite the question "why not just use the free one?"
+
+Instead: Lead with the pipeline use case. "Your AI agent generates a floor plan. Skissify renders it as a hand-drawn SVG in under 200ms. No browser. No canvas. POST JSON, get SVG. 1,000 renders/month for EUR 5."
+
+**The EUR 2 entry point**: Consider a "Starter" credit bundle — 400 renders for EUR 2 (one-time, no subscription). This is the exact Intercom/Zendesk micro-pricing pattern applied to Skissify. It lets price-sensitive developers buy in once, experience the value, and convert to the EUR 5/mo Pro subscription when they run out and need more.
+
+**Conversion copyline that works**: "Less than a coffee. 400 hand-drawn sketches. No watermarks. No canvas required."
+
+#### Outcome-Based Pricing as the 2026 Standard
+
+The 2026 SaaS pricing shift (confirmed: Intercom Fin at $0.99/resolution → 8-figure ARR, Zendesk $1.50–$2.00/resolution, 79 PricingSaaS-500 companies on credit models) validates Skissify's EUR 0.005/render overage model. The mental model shift: developers no longer think "am I paying for a subscription?" — they think "am I getting value per unit of output?" At EUR 0.005/render, the question is: "Is one hand-drawn sketch worth half a cent?" For a client deliverable: obviously yes. This is the framing that converts.
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #97 (16:49 CET)
 
 ### Theme: Excalidraw+ Alpha Is the First Real Signal — And Glama.ai Is the Free Growth Channel We're Missing
@@ -37,6 +126,45 @@ Industry benchmark: developer tools convert at 1–3% freemium-to-paid. Top perf
 PricingSaaS 500 data: 79 companies now use credit models (up from 35 in mid-2024). The mental model that converts: "I bought 500 renders" > "each render costs EUR 0.005." Both are the same price but the bundle feels like a purchase decision made once, not a running meter.
 
 **Pricing suggestion**: Add a "Render Credits" bundle option alongside the subscription: 500 renders for EUR 2.50 (= EUR 0.005/render). This gives price-sensitive developers a way in without a recurring subscription. Many will start with a credit bundle → switch to Pro subscription when they exceed 500/month.
+
+---
+
+## Entry: 2026-04-01 — Automated Strategy Run #98 (19:05 CET)
+
+### Theme: The Chromium Gap Is the Paid Conversion Engine — And 2026 Pricing Is Swinging to Simplicity
+
+#### The Chromium Gap = The EUR 5/mo Conversion Trigger
+
+`excalidraw-render` (bassimeledath) is now listed on Lobehub MCP directory as a headless hand-drawn renderer. It uses Chromium. First render: ~3 seconds. Binary: ~150MB. Serverless-incompatible.
+
+This is the free alternative that developers will try first — and it is the experience that will drive them to pay EUR 5/mo for Skissify.
+
+**The conversion path**:
+1. Developer finds `excalidraw-render` on Lobehub → installs → tries in Lambda or Vercel → 3s cold start or deployment failure
+2. Developer searches "headless sketch API no Chromium" → finds Skissify
+3. Developer tries Skissify free tier → 100 renders, <200ms, works in any CI pipeline
+4. Developer hits 100/month cap → pays EUR 5/mo Pro
+
+**The Chromium cold-start problem must be the #1 technical differentiator on the Skissify landing page.** Not "JSON-first" — every developer who tried excalidraw-render already understands what they need. The headline: **"Hand-drawn sketches. No Chromium. No 3-second cold start. Works anywhere."**
+
+#### 2026 SaaS Pricing: Simplicity Is Returning
+
+Data (April 2026):
+- Credit models: 79 companies in PricingSaaS 500 (up from 35 in mid-2024, +126% YoY)
+- Hybrid models: 43% of companies now, heading to 61% by EOD 2026
+- **Key signal**: "In 2025 the pendulum swung toward credits. In 2026 it'll likely swing back toward simplicity and predictability." (getmonetizely.com)
+
+**Implication for EUR 2/mo strategy**: The EUR 2 credit bundle (400 renders) is a valid entry wedge but should NOT be the headline. Keep EUR 5/mo Pro as the primary anchor — clear, predictable, under the expense threshold. The EUR 2 bundle is an on-ramp for the price-sensitive developer who wants to test production quality before subscribing. Do not over-engineer the pricing page with multiple credit tiers.
+
+**Recommendation**: Two-tier clean: EUR 0 free (100 renders/month) → EUR 5/mo Pro (1,000 renders/month). One optional credit bundle add-on (EUR 2 = 400 renders). No more complexity.
+
+#### FloorMind Signal: Plan the `/generate` Endpoint Now
+
+FloorMind (Medium, Feb 2026): text prompt → 512×512 dimensioned floor plan via diffusion in ~2.3 seconds. Research stage, not a product. 12–24 month horizon to productization.
+
+**Strategic implication**: The input model will shift from JSON manifest → natural language within 2 years. Skissify must pre-empt this with a `/generate` endpoint: text description → Claude generates JSON manifest → Skissify renders hand-drawn SVG. The combination — "describe it, sketch it" — is defensible because competitors would need BOTH a text-to-spatial-JSON LLM layer AND a hand-drawn rendering engine with architectural vocabulary. No competitor has both.
+
+**Why EUR 5/mo is still justified even when text-to-floor-plan exists**: The `/generate` endpoint creates 10x more renders per workflow (iteration = generate → refine → regenerate). Usage-based overage (EUR 0.005/render) scales with the agent's iteration cycles. Outcome-based pricing justification: "Each hand-drawn revision your agent produces costs half a cent."
 
 ---
 

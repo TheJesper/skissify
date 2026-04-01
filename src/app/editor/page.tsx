@@ -163,6 +163,11 @@ function EditorInner({
     groupSelected,
     ungroupSelected,
     toggleVisibility,
+    setLayerVisibility,
+    setElementLayer,
+    addLayer,
+    removeLayer,
+    renameLayer,
   } = useSketch(initialData ?? undefined, initialPreset ?? undefined);
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
@@ -762,6 +767,12 @@ function EditorInner({
                 }
               }
             }}
+            layers={sketch.layers}
+            onSetLayerVisibility={setLayerVisibility}
+            onAddLayer={addLayer}
+            onRemoveLayer={removeLayer}
+            onRenameLayer={renameLayer}
+            onSetElementLayer={setElementLayer}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -942,6 +953,12 @@ function EditorInner({
                 }
               }
             }}
+            layers={sketch.layers}
+            onSetLayerVisibility={setLayerVisibility}
+            onAddLayer={addLayer}
+            onRemoveLayer={removeLayer}
+            onRenameLayer={renameLayer}
+            onSetElementLayer={setElementLayer}
           />
         </div>
       )}
