@@ -2,6 +2,36 @@
 
 ---
 
+## Entry: 2026-04-01 — Automated Strategy Run #95 (12:32 CET)
+
+### Theme: draw.io MCP Mainstream Traction = Market Education Engine, tldraw Consolidation = Defector Pipeline
+
+#### draw.io Official MCP Is a Market Education Engine — Skissify Captures the Overflow
+
+Draw.io's official MCP server launched February 3, 2026 and is now generating Google Cloud engineering blog posts, VS Code integration tutorials, and npm traction. Each post teaches a developer: "AI agents can create diagrams via MCP." That's exactly the mental model Skissify needs developers to have. But draw.io MCP has hard ceilings: editor must be open, format is XML, output is clean vector diagrams. For floor plans, architectural concept sketches, or any hand-drawn aesthetic content, draw.io MCP fails.
+
+**Why someone pays EUR 5/mo from this**: A developer follows a Google Cloud blog post → installs draw.io MCP → gets clean technical diagrams → needs to produce a hand-drawn floor plan or concept sketch for a client presentation → searches "draw.io MCP alternative hand-drawn." Today, that search has essentially zero competition. Skissify needs to own that keyword while the draw.io MCP content wave is cresting. The conversion is pre-warmed: the developer already understands MCP, already wants AI-generated diagrams, just needs the hand-drawn/spatial version.
+
+**One-sentence blog post pitch**: "draw.io MCP gives you infrastructure diagrams. Skissify gives you architectural sketches. They're not the same tool."
+
+**Target content**: Publish "Skissify vs draw.io MCP — when you need hand-drawn, not technical diagrams" while the draw.io MCP Google Cloud tutorial traffic is still building. The comparison search is a new long-tail keyword with early-mover advantage.
+
+#### tldraw's Platform Consolidation Creates a Steady Defector Stream
+
+tldraw v3.4 adding Excalidraw format compatibility is a platform consolidation move — absorb Excalidraw's user format under a $6K/yr commercial SDK. The developer community reaction to tldraw SDK 4.0/4.x licensing has been consistently negative. Now tldraw is pulling Excalidraw users into their SDK ecosystem. For any developer who wants hand-drawn canvas output without a React SDK dependency and without $6K/yr licensing risk, this is a push toward alternatives.
+
+**Why someone pays EUR 5/mo from this**: The defector profile: "I used Excalidraw, tldraw now wants $6K/yr to do the same thing with their SDK, I don't need a canvas framework — I need hand-drawn output for my pipeline." Skissify at EUR 5/mo is the obvious destination. The positioning is: "not an SDK, not a canvas framework — a render API. POST JSON, get hand-drawn SVG. EUR 5/mo." No React required. No SDK license risk. No $6K/yr.
+
+**Acquisition channel**: Monitor tldraw community spaces (Discord, GitHub discussions, X/Twitter) for "$6K SDK too expensive" sentiment. These conversations are the warm lead stream.
+
+#### MCP Streamable HTTP Transport = Batch Rendering Is the Next Moat Feature
+
+The 2026 MCP roadmap confirms Streamable HTTP Transport and JSON-RPC Batching. For Skissify, this directly enables **batch render API**: POST multiple JSON manifests in one call, receive multiple SVGs. This is a concrete Pro/Enterprise feature with no parallel in any app-dependent competitor (draw.io MCP, Excalidraw MCP, Frame0, Sketch MCP all require app sessions — batch is impossible).
+
+**Why someone pays EUR 12+/mo (Team tier) from this**: An architecture firm or AI pipeline generating 20–50 floor plan variants per job run needs batch rendering to keep the pipeline fast. At EUR 0.005/render, 50 renders = EUR 0.25. With batch efficiency, 50 renders in one API call completes in seconds instead of 50 sequential calls. This is the feature that converts the individual Pro subscriber (manual use) to Team tier (pipeline use). Announce batch rendering as a roadmap item during the Pro launch — it's a conversion signal for evaluating teams.
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #94 (09:16 CET)
 
 ### Theme: Predictable Pricing as a Moat, the Chromium Workaround Signal, and Enterprise MCP Scale

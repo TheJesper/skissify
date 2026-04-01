@@ -1,7 +1,7 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 — 11:44 CET (LAUNCH DAY — T+4H44M IN)**
+**Current Date: April 1, 2026 — 12:52 CET (LAUNCH DAY — T+5H52M IN)**
 
 ---
 
@@ -114,6 +114,64 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - Claude Discord
 - AI Engineer Discord
 - Dev.to
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 92 — 12:52 CET — T+5H52M IN)
+
+### Status at 13:00: Cycle 92 Additions
+
+| New This Cycle | Status |
+|----------------|--------|
+| Mastodon/Fosstodon (dev Fediverse) | ⏳ Post at 13:30 — copy in SOCIAL-MEDIA.md Cycle 92 |
+| Threads (Meta) | ⏳ Post at 14:00 — copy in SOCIAL-MEDIA.md Cycle 92 |
+| r/AIAssistants (200K) | ⏳ Post at 13:00 — copy in SOCIAL-MEDIA.md Cycle 92 |
+| YouTube Shorts script | ✅ Script written — SOCIAL-MEDIA.md Cycle 92 |
+| "MCP visual layer" Twitter thread | ⏳ Post at 13:00 — copy in SOCIAL-MEDIA.md Cycle 92 |
+| Schema insight Twitter mini-thread (5-tweet) | ⏳ Post at 16:00 — SOCIAL-MEDIA.md Cycle 92 |
+| Blog: launch-day-hour-6-the-users-we-didnt-expect.md | ✅ Written |
+| HN follow-up strategy (engage, don't repost) | ✅ Strategy in SOCIAL-MEDIA.md Cycle 92 |
+| Product Hunt Maker Update copy | ✅ Written — SOCIAL-MEDIA.md Cycle 92 |
+
+### New Insights — Cycle 92
+
+- **MCP is at 97 million monthly downloads (March 2026)** — the audience is massive. Reframe afternoon posts around "the visual layer MCP was missing" rather than product features. Every MCP post has this audience in it.
+
+- **Fediverse / Mastodon (Fosstodon)** — not previously targeted. Tech-forward community with strong dev representation. Self-promotion acceptable if genuine. Post the schema insight story — Fediverse rewards technical depth over marketing.
+
+- **Threads (Meta)** — large audience, visual-first. No MCP context needed. Lead with the human story: "I wanted a tool that makes AI sketches look like someone drew them." Works for non-developer audience.
+
+- **YouTube Shorts** — highest ceiling for viral reach. Script written this cycle. "I told Claude to draw my apartment floor plan. Here's what happened." — 60 seconds. Record priority: April 2-3 if not today.
+
+- **HN strategy update**: Don't submit a new Show HN thread. Instead, engage deeply with the existing thread. HN penalizes double-dips but rewards quality late-arriving comments. Best use: reply to existing thread with the schema accuracy data (40% → 94%) as a standalone technical insight.
+
+- **r/AIAssistants angle**: NOT the MCP/developer frame. Personal assistant user frame: "I added this to my AI setup and it now sketches things I describe." 200K members, casual AI users not hardcore developers. This is a different acquisition channel from r/mcp.
+
+- **Blog post published this cycle**: `blog/launch-day-hour-6-the-users-we-didnt-expect.md` — narrative live update about the four unexpected audiences: homeowners, teachers, D&D DMs, framework maintainers. This is the "developer built it, world found it" story. Best for Dev.to Day 1 evening or Day 2 morning.
+
+- **The "visual layer for MCP" positioning is now confirmed**: MCP has 97M monthly downloads, every major provider supports it, zero servers currently create visual artifacts. This is a defensible niche with a massive existing audience. Update homepage copy to lead with this after launch day.
+
+### Updated Launch Channel Status (13:00 CET)
+
+| Channel | Status |
+|---------|--------|
+| Product Hunt | ✅ Live |
+| Twitter/X | ✅ Day 1 done / ⏳ 13:00 + 16:00 threads pending |
+| Hacker News | ✅ Live / ⏳ engage comments this afternoon |
+| Reddit (r/webdev, r/artificial, r/ChatGPT) | ✅ Done |
+| r/mcp | ⏳ Post NOW |
+| r/ClaudeAI | ⏳ Post NOW |
+| r/startups AMA | ⏳ Post at 12:00 (overdue) |
+| r/AIAssistants (200K) | ⏳ Post at 13:00 — Cycle 92 copy ready |
+| r/n8n + automation | ⏳ Post at 12:30 (overdue) |
+| LinkedIn | ✅ Day 1 / ⏳ 12:30 update |
+| Discord wave | ⏳ 14:00 |
+| Bluesky | ✅ Day 1 / ⏳ 15:30 |
+| Mastodon/Fosstodon | ⏳ 13:30 — NEW — Cycle 92 copy ready |
+| Threads | ⏳ 14:00 — NEW — Cycle 92 copy ready |
+| Newsletter (own) | ✅ Sent |
+| Product Hunt Maker Update | ⏳ 20:00 — copy ready in Cycle 92 |
+| TLDR/Bytes.dev pitch | ⏳ Send today |
 
 ---
 

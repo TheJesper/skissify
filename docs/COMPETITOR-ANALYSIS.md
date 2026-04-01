@@ -2,6 +2,72 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #95 (12:32 CET)
+
+### Status: Wednesday midday scan — 4 topics researched. 🟢 NICHE CLEAN: No new JSON-native spatial headless hand-drawn sketch API detected. Draw.io official MCP gaining mainstream Google Cloud traction (Feb 2026) — app-dependent, XML-heavy, clean vector only. tldraw v3.4 adds Excalidraw compatibility (platform consolidation, still no MCP, $6K SDK). SketchUp 2026.1 AI Render launched (3D desktop app, different lane entirely). Sketch-to-3D-render tools (PromeAI, Rendair, LightX) confirmed different market direction (photo → render, not JSON → sketch). MCP Streamable HTTP Transport confirmed in 2026 roadmap = batch render upgrade opportunity. NICHE STATUS: 95 consecutive scans, spatial JSON headless hand-drawn sketch lane uncontested.
+
+### 🟡 Draw.io Official MCP — Mainstream Google Cloud Traction (Skissify Category Amplifier)
+
+**Source**: medium.com/google-cloud (Feb 2026), github.com/jgraph/drawio-mcp, thomasthornton.cloud, medium.com/@rakesh.sheshadri44 (Mar 2026)
+
+JGraph (draw.io) launched their official MCP server on February 3, 2026 (`@drawio/mcp` on npm). It is now generating significant developer blog coverage — Google Cloud engineers are publishing tutorials on using it for infrastructure diagrams. VS Code integration guides are circulating (Mar 2026). Multiple GitHub repos (community + official) exist with active stars.
+
+Key characteristics:
+- **Format**: XML-based (mxGraph format), NOT JSON-native
+- **Requires**: draw.io editor open — NOT headless
+- **Output**: Clean vector diagrams — NOT hand-drawn style
+- **Use cases**: Technical architecture, flowcharts, infrastructure diagrams
+- **Not**: A spatial/floor-plan tool, not hand-drawn, not programmatic JSON-first
+- **Threat level**: Low — different lane (technical diagrams vs. spatial hand-drawn)
+
+**Skissify lane impact**: **Positive — category education amplifier.** Every Google Cloud blog post teaching "AI agents can create diagrams via MCP" warms up the market for Skissify. Developers who learn draw.io MCP will hit its ceiling: requires editor running, XML-heavy schema, clean vector output only. For floor plans, architectural sketches, or presentation-ready hand-drawn visuals, they must look elsewhere. Skissify is the JSON-native, headless, hand-drawn answer. Target keyword: "draw.io MCP alternative hand-drawn" — near-zero competition today.
+
+**Conversion angle**: draw.io MCP creates mainstream awareness of "AI-created diagrams via MCP." When those developers need spatial content (floor plans, concepts) or hand-drawn aesthetic (presentations, napkin diagrams), Skissify captures the conversion. Publish a comparison post while draw.io MCP content is peaking.
+
+**Escalate to HIGH if**: draw.io adds hand-drawn/sketch render mode or pure headless JSON API.
+
+### 🟡 tldraw v3.4 — Excalidraw Compatibility Mode (Consolidation Signal)
+
+**Source**: tldraw.dev/releases (Jan 19, 2026)
+
+tldraw SDK v3.4 added Excalidraw format import/export compatibility. This is a platform play: tldraw is absorbing the Excalidraw community format under a $6K/yr commercial SDK license. Earlier versions v3.3 (readonly mode, sync) and v3.0 (new licensing, deep links) all show tldraw moving toward SaaS consolidation — still no MCP work in any release.
+
+Key characteristics:
+- **Still no MCP server** — v3.0 through v3.4 release notes show zero MCP work
+- **Still no headless JSON API** — SDK requires React/frontend integration
+- **Still $6,000/yr commercial license** — community frustration ongoing
+- **Excalidraw compat** — import/export only, helps absorb community, not a headless feature
+- **Threat level**: Low-Medium — SDK consolidation doesn't affect the API/headless lane
+
+**Skissify lane impact**: **Mildly positive.** tldraw consolidating Excalidraw format pushes more devs toward evaluating: "Do I really need to pay $6K/yr for a React canvas SDK?" Developers who want hand-drawn sketch output without SDK complexity and without licensing risk are Skissify's segment. v3.4 creates more price-sensitive defectors. Monitor: if tldraw ships a hosted API or MCP server, escalate immediately to HIGH.
+
+### MCP 2026 Roadmap: Streamable HTTP Transport = Batch Render Upgrade Path
+
+**Source**: blog.modelcontextprotocol.io/posts/2026-mcp-roadmap, thenewstack.io/model-context-protocol-roadmap-2026 (2026)
+
+The 2026 MCP roadmap confirms: Streamable HTTP Transport (real-time bidirectional data flow), JSON-RPC Batching (multiple requests in one call), and Tool Annotations (rich metadata about tool behavior, pricing, quota). "Enterprise-ready MCP" is the 2026 CData theme. These are now production-approaching features, not speculative.
+
+**Skissify lane impact**: Positive. Streamable HTTP enables streaming render progress for large sketch manifests. JSON-RPC Batching enables batch render calls: POST 10 floor plan variants → receive 10 SVGs. Tool Annotations allow Skissify's MCP tool to expose usage quota, pricing info, and capability flags in the schema — useful for agent cost management loops. These are Pro/Enterprise tier features that no app-dependent competitor can match.
+
+### Updated Competitor Matrix (Run #95 — Wednesday April 1, 12:32 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw** | Official MCP + community Chromium headless hack. No spatial elements, no JSON manifest API. | **MEDIUM** |
+| **draw.io** | **NEW MOMENTUM: Official MCP (Feb 2026), Google Cloud traction, VS Code guides. App-dependent, XML, clean vector only.** | **Low — category amplifier** |
+| **tldraw** | SDK v3.4 + Excalidraw compat. No MCP. $6K/yr SDK still driving community frustration. | Low-Medium — defector source |
+| Frame0 | Hand-drawn wireframing MCP. UI/UX only. | Low |
+| Sketch (app) | Official MCP (Mar 25). macOS-only. Design lane. | Low |
+| Archy | Mermaid-based software architecture MCP. | Low |
+| ToDiagram | JSON/YAML/XML → interactive diagrams. No hand-drawn. | Low-Medium |
+| Maket.ai | v2 live. 1M+ users. No sketch, no MCP. | Low — embed partner |
+| ArkDesign.ai | US code optimization AI. No sketch, no MCP. | Low — embed partner |
+| SketchUp 2026.1 | AI Render tool in desktop 3D app. Different lane entirely. | None |
+| Sketch-to-render APIs | PromeAI, Rendair, LightX — photo→3D render direction. Different market. | None |
+| **Skissify** | **95 scans clean. JSON-native spatial hand-drawn headless MCP: uncontested. draw.io MCP warming the market. tldraw consolidation driving defectors. Batch render roadmap item in progress.** | **Uncontested** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #94 (09:16 CET)
 
 ### Status: Wednesday mid-morning scan — 4 topics researched. 🟢 NICHE CLEAN: No new headless JSON spatial sketch competitor found. ArkDesign.ai identified (new architectural AI, US code optimization, investor/developer segment) — potential embed partner, not a threat. Community project `excalidraw-render` (headless Chromium/Puppeteer workaround) detected but is fragile, unofficial, not a real API — reinforces Skissify's headless render moat. MCP enterprise adoption accelerating globally: Pinterest 66K invocations/month, 97M SDK downloads/month. Usage-based pricing reaching 62% of AI products by 2027 — Skissify's transparent EUR 0.005/render model is ahead of the curve and a selling point vs. unpredictable competitors. NICHE STATUS: 94 consecutive scans, spatial JSON headless sketch lane uncontested.

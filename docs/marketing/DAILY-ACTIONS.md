@@ -2,6 +2,60 @@
 
 ---
 
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #95 (12:32 CET, Wednesday April 1)
+
+### Context: Run #95 Key Findings
+- **draw.io official MCP gaining Google Cloud traction** (Feb 2026 launch, now trending) → app-dependent, XML, no hand-drawn → category education for Skissify, early-mover SEO opportunity
+- **tldraw v3.4 adds Excalidraw compat** → platform consolidation, still no MCP, $6K/yr SDK → defector stream toward Skissify
+- **MCP Streamable HTTP + JSON-RPC Batching** in 2026 roadmap → batch render API is the next moat feature to build
+- **Sketch-to-render tools confirmed different lane** (PromeAI, Rendair, LightX) — no threat
+
+---
+
+### 🎯 Action 1 (HIGH — Thursday): Publish "Skissify vs draw.io MCP" Comparison Blog Post
+
+draw.io MCP is generating significant Google Cloud blog post traction right now. Every developer reading those posts will hit the ceiling (XML format, editor required, no hand-drawn). The keyword "draw.io MCP alternative hand-drawn" has near-zero competition today. This is a narrow early-mover SEO window.
+
+**Steps (45 min)**:
+1. Write a focused comparison post: "draw.io MCP vs Skissify — Technical Diagrams vs Hand-Drawn Sketches"
+2. Core argument: draw.io MCP = infrastructure/flowchart diagrams via AI (great for what it does). Skissify = spatial sketches, floor plans, architectural concepts, hand-drawn aesthetic (what draw.io cannot do). Different jobs.
+3. Include a concrete example: same data → draw.io output (clean XML vector) vs. Skissify output (hand-drawn sketch). Screenshot or GIF.
+4. Call to action: link to Skissify demo, mention EUR 5/mo Pro for API access.
+5. Publish on Skissify blog + cross-post to Dev.to and Medium
+6. Target tags: `mcp`, `ai-agents`, `draw-io`, `sketch`, `diagrams`, `developer-tools`
+
+**Why this converts**: Developers learning draw.io MCP are already warmed up to "AI + diagram tools via MCP." When they need hand-drawn output, Skissify is the natural next step. This post makes Skissify discoverable at exactly that search moment. The comparison search has essentially zero competition today — every week that passes, competition grows.
+
+---
+
+### 🎯 Action 2 (MEDIUM — Thursday): Monitor tldraw Community for Price-Sensitive Defectors
+
+tldraw v3.4 added Excalidraw compatibility but kept the $6K/yr commercial SDK. Community frustration about licensing is ongoing. These developers are the warmest possible Skissify leads: they need hand-drawn output, know what they want, and are actively frustrated with the alternative pricing.
+
+**Steps (20 min)**:
+1. Search GitHub discussions and Issues on `tldraw/tldraw` repo for comments about "$6K", "too expensive", "alternatives to tldraw", "open source"
+2. Search X/Twitter for "tldraw $6000" or "tldraw licensing" — look for recent frustrated posts
+3. Where relevant: reply with a low-pressure mention: "If you just need hand-drawn output via JSON or API (no SDK), Skissify might fit — EUR 5/mo. [link]"
+4. Do not be aggressive — only reply where the pain is clearly about SDK pricing/complexity vs. just wanting visual output
+5. Track any interested responders
+
+**Why this converts**: tldraw's pricing controversy is not going away. v3.4 consolidation accelerates the tension. A developer who decides "I don't need a $6K canvas SDK" is already halfway to Skissify. The remaining conversion distance is: "here's the simple API-first alternative."
+
+---
+
+### 🎯 Action 3 (MEDIUM — Thursday): Add Batch Render to Public Roadmap + Announce as Coming Feature
+
+MCP Streamable HTTP Transport and JSON-RPC Batching are coming in the 2026 MCP roadmap. Batch render API is the concrete Skissify feature this enables. Announcing it now builds anticipation, signals product maturity, and gives enterprise evaluators a reason to watch.
+
+**Steps (15 min)**:
+1. Add "Batch Render API (POST multiple manifests, receive multiple SVGs)" to the public roadmap page or GitHub issues/project board
+2. Write a one-paragraph "Coming Soon" note for the landing page or pricing page: "Batch Render API — Process 50 floor plan variants in a single API call. Built for agent pipelines and CI workflows. Coming Q3 2026."
+3. Optionally: post a brief X/Twitter update: "Next up for Skissify: batch render API. POST 10 JSON manifests, get 10 hand-drawn SVGs back. One call, your whole pipeline. For when you're generating layout variants at scale. EUR 0.005/render, EUR 5/mo Pro included renders."
+
+**Why this converts**: Teams evaluating whether Skissify fits in their pipeline need to know the roadmap. "Batch rendering coming Q3" turns a "not yet" into a "we'll start on Pro now and upgrade when batch lands." It also differentiates from every app-dependent competitor who cannot offer batch rendering at any price.
+
+---
+
 ## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #94 (09:16 CET, Wednesday April 1)
 
 ### Context: Run #94 Key Findings

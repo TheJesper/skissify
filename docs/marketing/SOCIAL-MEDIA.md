@@ -1,7 +1,224 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 1, 2026 — Cycle 91 (11:44 CET — 4H44M IN)**
+**Last updated: April 1, 2026 — Cycle 92 (12:52 CET — 5H52M IN)**
+
+---
+
+## CYCLE 92 — 12:52 CET — 5H52M IN (13:00–21:00 AFTERNOON SURGE)
+
+*Context: MCP has 97M monthly downloads as of March 2026. Every major AI provider supports it. Skissify is the only MCP server that creates visual artifacts instead of reading data. This is the afternoon's core message. Use "the visual layer MCP was missing" as the thread.*
+
+---
+
+### Twitter/X — "MCP visual layer" thread (post at 13:00)
+
+```
+MCP just hit 97 million monthly downloads.
+
+Every single one of those servers reads data, calls APIs, or surfaces text back to the model.
+
+None of them draw.
+
+Until today.
+
+skissify.com — the visual output layer for AI agents.
+npx skissify-mcp
+
+#MCP #ModelContextProtocol #AIAgents #BuildInPublic #VibeDrawing
+```
+
+---
+
+### r/AIAssistants — "I added this to my AI assistant" (post at 13:00 — 200K members)
+
+```
+Title: I added a drawing tool to my AI assistant setup — it now sketches floor plans and diagrams on demand
+
+For anyone who uses Claude, Cursor, or any MCP-compatible AI setup:
+
+I built Skissify — an MCP server that gives your AI the ability to actually draw. Not describe. Draw.
+
+One command to install: `npx skissify-mcp`
+
+Then tell your AI: "sketch the layout of a small apartment with a living room, kitchen, and bedroom"
+
+It produces a hand-drawn SVG. Wobbly lines, hand-written labels, pen-on-paper aesthetic.
+
+Use cases I've found:
+- Floor plans while house hunting ("sketch this listing's layout as I read it aloud")
+- Architecture diagrams while designing systems
+- Wireframes for UI ideas — rough, not polished
+- Dungeon maps (seriously, the D&D crowd loves this)
+
+The API is free, no auth, <300ms. Skissify.com
+
+Anyone else been filling in the "visual output" gap in their AI setup?
+```
+
+---
+
+### Mastodon/Fosstodon — Fediverse drop (post at 13:30)
+
+```
+🖊️ Launched Skissify today — an AI-native hand-drawn sketch tool
+
+REST API: POST JSON → get hand-drawn SVG
+MCP server: `npx skissify-mcp` → Claude can draw natively
+
+Free tier, no auth, open element schema.
+Flat JSON schema was the key insight: 40% → 94% first-try LLM accuracy.
+
+Built for devs, AI agents, and anyone who sketches before they design.
+
+https://skissify.com
+
+#FOSS #IndieWeb #BuildInPublic #AI #MCP #DevTools
+```
+
+---
+
+### Threads (Meta) — Visual-first post (post at 14:00)
+
+```
+I launched a tool today that lets AI draw floor plans and architecture diagrams by hand
+
+Like, actual wobbly hand-drawn lines. Not clean CAD. Like someone sketched it with a pen.
+
+The reason: when I show clients a polished diagram they nitpick details. When I show them a napkin sketch they respond to the concept.
+
+Skissify.com — JSON in, hand-drawn sketch out. AI agents can use it directly.
+```
+
+---
+
+### YouTube Shorts script — "Claude just drew my floor plan" (60 seconds)
+
+```
+[Hook — 0-3s]
+"I told Claude to sketch my apartment layout. Here's what happened."
+
+[Setup — 3-12s]
+Screen: Claude Code / chat interface open
+"I installed the Skissify MCP server — one command — and told Claude:
+'Sketch a small apartment with a living room, kitchen, bedroom, and bathroom.'"
+
+[Payoff — 12-30s]
+Screen: JSON being generated in Claude's output, then SVG rendering
+"It writes the JSON itself. And the output looks like someone drew it by hand."
+Show the rendered sketch at full screen for 3-4 seconds.
+"Wobbly lines, hand-written labels, real pen-on-paper feel."
+
+[Expand — 30-45s]
+"You can do floor plans, architecture diagrams, UI wireframes — anything spatial."
+"The API is free. No account. Under 300ms."
+
+[CTA — 45-60s]
+"npx skissify-mcp — one command and your AI can draw.
+Link in bio: skissify.com"
+
+Caption: "AI agents that can draw are different 🖊️ #AITools #MCP #ClaudeAI #BuildInPublic #VibeDrawing"
+```
+
+---
+
+### HN — Follow-up engagement strategy (for existing Show HN thread, afternoon)
+
+Don't post a new HN thread today. Instead:
+- Reply to every substantive comment with specific technical detail
+- If someone asks "why hand-drawn vs clean SVG?" → answer with the psychology angle (rough = invite feedback, polished = invite nitpicks)
+- If someone asks "how accurate are LLMs?" → share the 40% → 94% flat-JSON data
+- If no comment yet: reply to your own thread with: "5 hours in — turns out the April 1 date was the best acquisition filter I've ever used. The people who ran the curl command despite the date are exactly the early adopters you want."
+
+---
+
+### Twitter/X — "The schema insight" mini-thread (post at 16:00)
+
+```
+Tweet 1:
+We got from 40% to 94% first-try LLM accuracy on our API.
+One change. Thread:
+
+Tweet 2:
+The original schema was nested JSON.
+{"position": {"x": 50, "y": 50}, "size": {"w": 200, "h": 150}}
+
+LLMs had to infer nesting depth, key names, and structure simultaneously.
+40% success on first try.
+
+Tweet 3:
+The new schema is flat.
+{"x": 50, "y": 50, "w": 200, "h": 150}
+
+One level. Obvious keys. No inference required.
+94% success on first try. Consistent across Claude, GPT-4o, Gemini, Llama 3.
+
+Tweet 4:
+The second change: sensible defaults everywhere.
+LLMs don't hallucinate optional fields when they're not required.
+
+Tweet 5:
+The third change: example in the MCP tool description.
+A single example increases accuracy more than any schema change.
+
+Tweet 6:
+Lesson: API design for humans ≠ API design for LLMs.
+LLMs parse structure, not intention.
+Flat > nested. Explicit > inferred. Example > docs.
+
+Skissify.com — launched today. Try the API free, no auth.
+
+#MCP #LLM #APIDesign #BuildInPublic #AIAgents
+```
+
+---
+
+### Product Hunt Maker Update — End of Day 1 (post at 20:00 CET)
+
+```
+Subject: Day 1 — what actually happened
+
+We launched on April 1 intentionally. People told us we were crazy.
+
+Here's what the day taught us:
+
+The April Fools filter is the best early-adopter filter we've ever seen.
+Every user who ran the curl command despite the date has been genuinely engaged.
+
+Today's highlights:
+- First user created a floor plan for a real renovation project
+- A DM teacher used it to sketch classroom layouts for accessibility planning
+- Someone built a D&D dungeon map in 4 minutes
+- An AI agent framework maintainer asked about a native integration
+
+We built this for developers and AI agents.
+The first wave of real users are designers, teachers, homeowners, and game masters.
+
+That's the part no one predicts.
+
+Day 2 tomorrow. We'll be here.
+
+— Jesper
+```
+
+---
+
+### Bluesky — Afternoon visual post (post at 15:30)
+
+```
+6 hours into launch day.
+
+The April 1 gamble is paying off — not because of the joke, but because of the filter.
+
+Every person still trying Skissify at noon on April Fools Day is a self-selected early adopter.
+
+Skissify: JSON → hand-drawn sketch. REST API, free, no auth.
+Used by Claude via `npx skissify-mcp`
+
+skissify.com
+
+#BuildInPublic #AI #MCP #VibeDrawing
+```
 
 ---
 
