@@ -2,6 +2,44 @@
 
 ---
 
+## Entry: 2026-04-01 — Automated Strategy Run #97 (16:49 CET)
+
+### Theme: Excalidraw+ Alpha Is the First Real Signal — And Glama.ai Is the Free Growth Channel We're Missing
+
+#### Excalidraw+ MCP Alpha with Anthropic = Existential Risk If It Ships Headless
+
+Excalidraw+ MCP entered closed alpha in early 2026 with an Anthropic partnership. It is invite-only, built on a server-side REST API (not a canvas session), and confirmed to target Claude as primary client. This is the first time any hand-drawn visual tool has a credible server-side REST path.
+
+**Why someone still pays EUR 5/mo even if Excalidraw+ ships**: Excalidraw's element model is a general drawing surface — rectangles, lines, arrows, text. Skissify's JSON manifest is a spatial vocabulary: `door-symbol`, `door-slide`, `stair`, `dim`, `window`, `column`, `opening`. An architect or agent building floor plans needs this vocabulary. Excalidraw does not have `{ "type": "stair", "rise": 12, "tread": 9 }` — and adding that would require a major architectural initiative. Skissify's moat is the schema, not just the rendering.
+
+**The positioning shift this demands**: If Excalidraw+ ships headless, Skissify can no longer lead with "the only headless hand-drawn API." Lead instead with: "The only JSON sketch API with an architectural vocabulary." The moat moves from technology (headless) to domain (spatial/architectural elements + schema standards).
+
+**Concrete action**: Request Excalidraw+ alpha access this week. Study what their input format looks like. If it's close to Skissify's JSON manifest, publish the Skissify schema as an open standard on GitHub before they do — schema authorship = ecosystem ownership.
+
+#### Glama.ai: 20,650 MCP Servers — Skissify Missing from the Directory
+
+Glama.ai is the de facto MCP "App Store" with 20,650 servers, quality grades (A–F), weekly download sorting, and recent usage as primary ranking signal. Skissify is not listed. The official Anthropic registry (registry.modelcontextprotocol.io) also has no Skissify entry.
+
+**Why this matters for EUR 5/mo revenue**: A developer discovers Skissify on Glama → installs the MCP server → uses 5 sketches → hits the 50/month free cap → upgrades for EUR 5/mo. This is the entire acquisition funnel, requiring zero marketing spend. Listing on Glama is free. Not listing means every developer who searches "sketch MCP" or "SVG MCP" today finds competitors first.
+
+**Compounding effect**: Glama sorts by "Recent Usage" and "Weekly Downloads." Early traction compounds visibility. The first 20 developers who install via Glama push Skissify up the rankings, which drives the next 200. This window is open now and closes as the ecosystem matures. Estimated cost: 0 EUR. Estimated time: 2 hours.
+
+#### Freemium Conversion Data: Gate on Volume at the Right Moment
+
+Industry benchmark: developer tools convert at 1–3% freemium-to-paid. Top performer rate: 6–8% (in verticals where free tier solves partial problem only). Key insight: 90%+ of conversions happen in the first 30 days. After 90 days, non-payers almost never convert.
+
+**What makes someone pay EUR 2–5/mo for Skissify**: The free tier must allow enough renders to build a proof-of-concept (say 50/month), then hit a wall exactly when the developer wants to integrate Skissify into a real pipeline (an agent workflow, a CI job, a client deliverable generator). That's the conversion moment. Don't gate on quality (watermarks degrade trust). Don't gate on features (reduces evaluation depth). Gate on volume at the exact moment of pipeline integration.
+
+**Implication for free tier design**: Current plan (50 public sketches, watermark on exports) should be reconsidered. Alternative: 100 renders/month free, zero watermark, private saves locked at Pro. The developer shows a client a clean sketch during the free trial — that's the "wow moment" that drives upgrade. A watermark on that moment kills it.
+
+#### Credit Bundle UX > Per-Render Billing for Conversion
+
+PricingSaaS 500 data: 79 companies now use credit models (up from 35 in mid-2024). The mental model that converts: "I bought 500 renders" > "each render costs EUR 0.005." Both are the same price but the bundle feels like a purchase decision made once, not a running meter.
+
+**Pricing suggestion**: Add a "Render Credits" bundle option alongside the subscription: 500 renders for EUR 2.50 (= EUR 0.005/render). This gives price-sensitive developers a way in without a recurring subscription. Many will start with a credit bundle → switch to Pro subscription when they exceed 500/month.
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #96 (14:41 CET)
 
 ### Theme: tldraw MCP App Is the Inflection Point — Skissify Must Clarify "API not Canvas"

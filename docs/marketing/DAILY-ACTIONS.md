@@ -2,6 +2,60 @@
 
 ---
 
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #97 (16:49 CET, Wednesday April 1)
+
+### Context: Run #97 Key Findings
+- **Excalidraw+ MCP in CLOSED ALPHA** with Anthropic partnership — invite-only, REST API, server-side → first real hand-drawn REST threat → HIGH WATCH
+- **Glama.ai: 20,650 MCP servers** — Skissify NOT listed → free growth channel missing → ACTION REQUIRED
+- **tldraw**: no new April features; SDK 4.0 confirmed at 70K weekly npm installs, $10M Series A — scale confirmed, product stays interactive-canvas
+- **svg2roughjs** library confirmed as library-only (no hosted API) — niche still uncontested
+- **Freemium conversion**: 1–3% for dev tools; gate on volume not quality; credit bundles convert better than per-render billing
+
+---
+
+### 🎯 Action 1 (CRITICAL — Thursday morning): List Skissify on Glama.ai and Official MCP Registry
+
+Glama.ai now tracks 20,650 MCP servers with quality grades (A–F), recent usage sorting, and weekly download rankings. Skissify is not listed — this is a free, zero-effort growth channel that is not being used. The official Anthropic registry (registry.modelcontextprotocol.io) also has no Skissify entry. Every day unlisted = developers searching "sketch MCP" find zero results or competitors.
+
+**Steps (2 hours max)**:
+1. Submit to official registry: go to github.com/modelcontextprotocol/registry → follow submission guide → add Skissify MCP server entry (name, description, endpoint, GitHub URL, categories: "visual", "design", "architecture")
+2. Submit to Glama.ai: go to glama.ai/mcp/servers → find "Add Server" or submit form → complete ALL metadata fields (categories, tags, docs URL, example prompts) → target Grade A (requires: stable endpoint, complete docs, categories filled, example usage)
+3. Publish to mcp.so, pulsemcp.com, and mcpservers.org (same submission, 10 min each)
+4. Draft 2-sentence "what is Skissify MCP" description optimized for these directories: "Skissify MCP renders hand-drawn architectural sketches from JSON — floor plans, concept diagrams, technical drawings. POST a JSON manifest, receive a hand-drawn SVG. No browser, no session, no canvas required."
+
+**Why this is CRITICAL**: Glama sorts by "Recent Usage." First 20 installs push Skissify up the rankings, which drives the next 200. This compounding effect only starts when you're listed. Cost: EUR 0. Time: 2 hours. Missed opportunity per day: significant.
+
+---
+
+### 🎯 Action 2 (HIGH — Thursday): Request Excalidraw+ MCP Alpha Access
+
+Excalidraw+ MCP entered closed alpha with an Anthropic partnership — server-side REST API, not canvas-dependent. This is the first time a hand-drawn visual tool has a credible headless REST path. Skissify must understand what the input format looks like before it goes GA.
+
+**Steps (30 min)**:
+1. Visit plus.excalidraw.com/docs/mcp — read every word of the public docs
+2. Find the "Request Alpha Access" form or contact → submit with a legitimate use case (AI agent pipeline developer, testing MCP visual output tools)
+3. If no form found: email team@excalidraw.com (or find contact on GitHub issues) — "I'm building an AI agent pipeline and want to evaluate Excalidraw+ MCP for programmatic floor plan generation. Interested in alpha access."
+4. While waiting: check the API schema in their open-source repo to infer what the input format looks like
+5. Save findings to `docs/research/excalidraw-plus-mcp-schema.md`
+
+**Why this is HIGH**: If Excalidraw+ ships a `POST /render` that accepts JSON → SVG headlessly, and it launches with Anthropic integration, it's the first real competitor in Skissify's lane. Skissify needs 4–6 weeks lead time to publish the JSON manifest schema as an open standard and establish schema authorship before Excalidraw defines the vocabulary instead.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Thursday): Redesign Free Tier Trigger — Volume Gate, Not Quality Gate
+
+Industry data (FirstPageSage, 2026): developer tools convert at 1–3% freemium-to-paid. 90%+ of conversions happen in the first 30 days. The conversion trigger that works: hitting a volume wall exactly when the developer is integrating the tool into a real pipeline. The conversion trigger that kills: watermarks or quality degradation on the first "show a client" moment.
+
+**Steps (1 hour)**:
+1. Audit current free tier definition — specifically what limits exist and whether any degrade visual quality (watermarks, lower wobble quality, etc.)
+2. Draft new free tier proposal: 100 renders/month free, NO watermark, NO quality degradation. Private saves locked. API access (with key) locked at Pro. Sharing/gallery public. Export SVG quality: identical to Pro.
+3. Add a "Render Credits" bundle to the pricing page: 500 renders for EUR 2.50 (one-time, no subscription). This converts developers who are price-sensitive about recurring billing but will buy a credit pack when they hit the free cap.
+4. Document proposal in `docs/pricing/FREE-TIER-REDESIGN.md`
+
+**Why this converts**: A developer shows a client a hand-drawn floor plan generated by their AI agent — no watermark. Client is impressed. Developer needs to generate 10 more variants for the pitch deck. Hits the 100/month cap. Upgrades for EUR 5/mo. The "wow moment" (showing clean output to a client) must be on the free tier, not paywalled. Gate later, after the hook is set.
+
+---
+
 ## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #96 (14:41 CET, Wednesday April 1)
 
 ### Context: Run #96 Key Findings

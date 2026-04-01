@@ -2,6 +2,69 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #97 (16:49 CET)
+
+### Status: Wednesday evening scan — 6 topics researched. 🔴 NEW ESCALATION: Excalidraw+ MCP is in CLOSED ALPHA with Anthropic partnership — invite-only, built on Excalidraw+ REST API. This is the first real REST-API-with-hand-drawn-style threat to monitor. tldraw: no April updates beyond March 3 MCP App (3 tools: create/edit/delete, interactive only, confirmed). MCP ecosystem: Glama.ai now tracks 20,650 servers — Skissify is NOT listed (missed discovery channel). svg2roughjs confirmed library-only (no hosted API exists). Freemium conversion data: dev tools convert at 1–3%; gate on volume not quality. NICHE STATUS: 97 consecutive scans, headless JSON-native hand-drawn spatial sketch API uncontested — but Excalidraw+ MCP alpha with Anthropic is the first signal that requires immediate tracking.
+
+### 🔴 Excalidraw+ MCP Closed Alpha — Anthropic Partnership (NEW — ELEVATED to HIGH WATCH)
+
+**Source**: plus.excalidraw.com/docs/mcp, x.com/excalidraw (confirmed Anthropic collaboration), github.com/excalidraw/excalidraw-mcp v0.3.2 (Feb 9, 2026)
+
+Excalidraw+ MCP is now in CLOSED ALPHA — invite-only, built on the Excalidraw+ REST API, confirmed built in partnership with Anthropic. This is distinct from the open-source `excalidraw-mcp` (which requires a live canvas session). The Excalidraw+ alpha implies a server-side API that could in theory accept structured input and return images/SVGs without a running browser session.
+
+Key characteristics (what is confirmed):
+- **Invite-only alpha** — no public access as of April 1, 2026
+- **Built on Excalidraw+ REST API** — server-side, not client-side canvas
+- **Anthropic partnership** — Claude integration is first-class
+- **Hand-drawn aesthetic** — Excalidraw's core visual identity
+- **No architectural elements** — no doors, windows, stairs, dimensions (confirmed in open-source version)
+- **No JSON manifest schema** — Excalidraw's internal format, not a spatial JSON API
+
+**Skissify threat level**: **HIGH WATCH** (upgraded from MEDIUM). If Excalidraw+ MCP goes GA with a `/render` endpoint that accepts JSON and returns SVG headlessly, it becomes a direct competitor in the hand-drawn lane. The Anthropic partnership means Claude agents may prefer it natively. The mitigations remain: no architectural element vocabulary, no spatial layout schema, different input model (Excalidraw elements vs Skissify JSON manifest).
+
+**Monitor**: Check plus.excalidraw.com/docs/mcp weekly. Request alpha access. If they announce a `POST /api/render` that accepts arbitrary JSON → escalate to CRITICAL immediately.
+
+### 🟡 tldraw: No April Additions — Scale Data Confirmed (MEDIUM maintained)
+
+**Source**: tldraw.dev/blog/tldraw-mcp-app (Mar 30, 2026), appdevelopermagazine.com (SDK 4.0)
+
+No new tldraw features found beyond the March 3, 2026 MCP App launch. Scale data now confirmed: 70,000+ weekly npm installs, $10M Series A, 45K GitHub stars, 72K X followers, 8.75K Discord members, 100-day commercial trial for SDK 4.0. MCP App tools: 3 total (create shape, edit shape, delete shape). Interactive canvas only — no headless, no SVG export, no architectural elements.
+
+**Threat level**: **MEDIUM (maintained)**. Scale is meaningful but the product remains interactive-canvas-only. The 70K weekly installs signal developer adoption — tldraw is in many agent workflows. If they expand MCP tools to include an SVG export endpoint, re-evaluate.
+
+### 🟢 MCP Ecosystem: 20,650 Servers — Skissify Not Listed (OPPORTUNITY + ACTION REQUIRED)
+
+**Source**: glama.ai/mcp/servers (April 1, 2026), dev.to/zarq-ai (State of AI Assets Q1 2026), registry.modelcontextprotocol.io
+
+As of April 1, 2026, Glama.ai tracks 20,650 MCP servers (largest third-party directory, A–F quality grades, weekly download stats, recent usage sorting). Zarq AI: 17,468. Official Anthropic registry: ~2,000. 301 new servers added per month (February 2026 pace). Skissify is NOT currently listed on Glama or the official registry — this is a missed discovery channel.
+
+Key insight: Glama uses "Recent Usage" and "Weekly Downloads" as primary sort signals — early traction compounds visibility. The window to get early placement before the ecosystem matures is now. No dominant visual/sketch MCP tool exists in the index — the niche is open.
+
+**Action required**: List Skissify on official registry (free, registry.modelcontextprotocol.io) and Glama.ai today. Complete metadata, docs, and stable API endpoint → A grade → higher placement.
+
+### 🟢 No Headless JSON-to-SVG API Detected (NICHE CONFIRMED)
+
+**Source**: github.com/fskpf/svg2roughjs, roughjs.com, broad search Q1 2026
+
+svg2roughjs (GitHub: fskpf/svg2roughjs) converts existing SVGs to hand-drawn style using Rough.js — library only, no hosted API, no JSON manifest input, no MCP. Rough.js (rough-stuff/rough, MIT): ~9KB, client-side only. No hosted JSON-to-hand-drawn-SVG API with MCP support was found in any public source as of April 2026.
+
+**Threat level**: **Low (near-term)**. Main emerging risk: a developer wrapping svg2roughjs or Rough.js into a microservice. With Excalidraw+ alpha and tldraw already occupying developer mindshare, a community-built Rough.js API could appear. Skissify should patent the JSON schema vocabulary (or publish it as a standard) before this happens.
+
+### Updated Competitor Matrix (Run #97 — Wednesday April 1, 16:49 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw** | Official MCP: 26 tools (community fork), iterative AI loop. **⬆️ NEW: Excalidraw+ MCP in CLOSED ALPHA with Anthropic partnership.** No spatial elements, alpha is invite-only. | **HIGH WATCH (upgraded)** |
+| **tldraw** | MCP App (March 3): 3 tools, interactive canvas only. SDK 4.0: $10M Series A, 70K weekly npm installs, 100-day trial. No April updates. | **MEDIUM (maintained)** |
+| **draw.io** | Official MCP gaining Google Cloud traction. App-dependent, XML, no hand-drawn. | Low |
+| Frame0 | Hand-drawn wireframing MCP. UI/UX only. | Low |
+| Sketch (app) | Official MCP (Mar 25). macOS-only. Design lane. | Low |
+| **Archilogic** | GraphQL spatial data API, Floor Plan Engine SDK, 2D/3D. No hand-drawn, no JSON manifest, no MCP. | **MEDIUM — floor plan lane overlap** |
+| **svg2roughjs** | Library only (GitHub: fskpf/svg2roughjs). No hosted API. Rough.js wrapper. | Low (library risk) |
+| **Skissify** | **97 scans. Excalidraw+ alpha with Anthropic (first real REST-API hand-drawn threat). tldraw: no new features. 20,650 MCP servers on Glama — Skissify NOT listed. Headless JSON spatial hand-drawn API: still uncontested.** | **Uncontested in headless lane** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #96 (14:41 CET)
 
 ### Status: Wednesday afternoon scan — 5 topics researched. 🟡 THREAT ESCALATION: tldraw launched official MCP App on March 3, 2026 (Cursor-first, rolling to VS Code/ChatGPT/Claude) — interactive canvas, NOT headless JSON API. Still no clean JSON-to-SVG endpoint. Threat level upgraded LOW-MEDIUM → MEDIUM. Excalidraw official MCP expanded to 26 tools with closed AI feedback loop (describe_scene + get_canvas_screenshot). Archilogic spatial data platform identified — GraphQL API, 2D/3D rendering, JavaScript SDK — potential floor plan API overlap to monitor. MCP registry now 6,400+ registered servers (Feb 2026). Credit-based SaaS pricing models doubled in 6 months (35→79 companies). NICHE STATUS: 96 consecutive scans, headless JSON-native hand-drawn spatial sketch lane uncontested — but tldraw MCP App narrows the gap and must be tracked weekly.
