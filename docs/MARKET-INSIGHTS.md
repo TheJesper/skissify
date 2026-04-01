@@ -2,6 +2,78 @@
 
 ---
 
+## Entry: 2026-04-01 — Automated Strategy Run #93 (08:08 CET)
+
+### Theme: Category Formation, Headless Moat, and the `.well-known` Discovery Window
+
+#### The "Design Tool + MCP" Category Is Forming — Skissify Must Register Before Defaults Set
+
+Five tools now have MCP servers with design/sketch aesthetics: Excalidraw, Frame0, Archy, ToDiagram, and now Sketch (the app). Each is in a different lane — UI wireframes, software architecture, data diagrams, design system automation. Skissify's lane (spatial/floor-plan/JSON-headless) remains unoccupied. But the category "sketch/diagram MCP tool" is forming in developer consciousness, and when developers start comparing options in this category, the listed tools will be the defaults.
+
+**Why someone pays EUR 5/mo from this**: A developer researching "hand-drawn MCP server" for a floor plan use case will encounter Excalidraw MCP (requires app), Frame0 (makes app screens, not spaces), Archy (software diagrams), and Sketch MCP (macOS design app). None solve their problem. Skissify is the only tool that does. But only if Skissify is in the comparison set. Being listed = being considered = paying customers.
+
+**Strategic implication**: Category formation is happening without Skissify. The MCP registry listings (Glama, PulseMCP, official registry) are not optional — they are the category placement mechanism. A tool not in those registries in April 2026 will not be in the default comparison set by Q3 2026.
+
+#### The Headless Render API Is a Real Moat — Every Competitor Requires an App
+
+A consistent pattern across all five new MCP-enabled design/sketch tools: every single one requires the app to be running. Excalidraw MCP = need browser + Excalidraw tab open. Frame0 MCP = need Frame0 app. Sketch MCP = need Sketch on macOS. Archy = requires Archy's interface. None of them are pure "POST JSON → GET SVG" headless APIs.
+
+**Why someone pays EUR 5/mo from this**: Any developer building an automated pipeline (CI report generation, AI agent that produces spatial output, server-side PDF generation, nightly floor plan renders) cannot use any of the five app-dependent MCP tools. Skissify is literally the only option. The value proposition is not "better hand-drawn style" — it's "the only sketch renderer that works when there's no screen."
+
+**The three-sentence pitch that converts this insight**: "Every other sketch MCP tool requires an app running in a browser. Skissify is a render API — POST a JSON manifest, receive an SVG. It runs in your agent pipeline, your CI server, your report generator, your serverless function."
+
+#### MCP Server Cards = 30-Minute Task, Compounding Discovery
+
+The MCP 2026 roadmap adds "MCP Server Cards" — a `.well-known` URL standard for automatic server discovery. Once registries and agent hosts implement crawlers, any server with a valid `.well-known/mcp-server-card.json` gets auto-indexed across the ecosystem. This is the equivalent of submitting to every MCP registry at once, for free, permanently.
+
+**Why this matters for EUR 5/mo conversions**: More discovery = more trials = more conversions. A developer who finds Skissify through automatic registry discovery didn't have to search for it — it appeared in their tool-selection flow. Low-friction discovery is the highest-leverage activity at the pre-launch stage.
+
+**The one-sentence action**: Implement `.well-known/mcp-server-card.json` before launch, with keywords: `floor-plan hand-drawn spatial sketch json architectural headless`.
+
+#### Maket v2 Strengthens the Embed Revenue Case
+
+Maket's Q1 2026 launch of v2 (zoning code, HVAC, material takeoffs, 3D renders) signals Maket is moving upmarket toward enterprise real estate and architecture professionals. These users present to clients regularly. Their clients — investors, homeowners, planning boards — respond better to "concept sketch" visuals than photorealistic renders during the ideation phase. Skissify is the "concept mode" layer that Maket doesn't have.
+
+**Concrete EUR case**: An architecture firm using Maket pays $X/month for floor plan generation. They present 10 concepts per month. Each presentation benefits from having at least one hand-drawn sketch version. Skissify embed: EUR 500/year to Maket = <$1/render at their scale. The economics are obvious. The pitch is a 5-sentence cold email.
+
+---
+
+## Entry: 2026-04-01 — Automated Strategy Run #92 (06:59 CET)
+
+### Theme: The Excalidraw MCP Signal, the Render API Moat, and EUR 5/mo as Commodity Pricing
+
+#### Excalidraw MCP Is the Clearest "Why EUR 5/mo" Signal Yet
+
+Excalidraw just shipped an official MCP server for hand-drawn diagram generation in Claude. For many developers, this is now "free" — they can get hand-drawn diagrams in Claude without paying anything. This is actually useful positioning context for Skissify:
+
+**Why someone pays EUR 5/mo for Skissify when Excalidraw MCP is free:**
+1. **Headless / no-app**: Excalidraw MCP requires the browser app running. Skissify is a POST-JSON-get-SVG API. For CI pipelines, report generators, server-side rendering — Excalidraw MCP simply doesn't work. Skissify does.
+2. **Deterministic output**: Excalidraw MCP interprets natural language — the same prompt produces different layouts each time. Skissify uses a JSON manifest — the same JSON always produces the same sketch. Reproducibility is non-negotiable for production pipelines.
+3. **Spatial domain vocabulary**: Skissify has doors, windows, stairs, dimensions, columns, openings. Excalidraw has rectangles and arrows. If you're drawing a floor plan, Excalidraw MCP produces a block diagram labeled "bedroom." Skissify renders an architectural sketch.
+4. **Self-hostable + no rate limits**: Excalidraw MCP is tied to Excalidraw's service. Skissify's EUR 5/mo tier (and self-hosted option) gives the developer full control.
+
+**The three-word conversion hook**: "JSON in, SVG out." No app. No browser. No rate limit on your sketch pipeline.
+
+#### The Spatial AI Layer Is a Real Market — 1M+ Users Signal
+
+Maket.ai hitting 1M+ registered users for AI floor plan generation confirms: architects, interior designers, and construction-adjacent professionals are already adopting AI spatial tools. None of Maket's 1M users have a hand-drawn sketch output option. Skissify is the rendering layer that makes Maket-style JSON output presentable for client pitches and napkin-style ideation.
+
+**B2B positioning**: Sell Skissify to Maket-class tools as an embed/white-label. EUR 500–2,000/year for a "show as sketch" export mode. This is the embed licensing revenue stream from the business plan — now with a concrete named target market.
+
+**Why someone pays EUR 5/mo from this**: An architect using any AI floor plan tool wants to present rough concepts to clients without them thinking the AI made a final decision. A hand-drawn sketch aesthetic = "this is a concept, not a plan." That psychological framing is worth EUR 5/mo to anyone who presents to clients regularly.
+
+#### Outcome-Based Pricing Benchmark — EUR 0.005/Render Is Underpriced for Value
+
+New benchmark: Intercom charges $0.99 per AI resolution (customer support). Zendesk: $1.50–$2.00. These are B2B tools where the outcome (resolved support ticket) has clear dollar value.
+
+Skissify's outcome: a presentation-ready hand-drawn sketch that a consultant uses in a client deck. Conservative value: saves 30 minutes of manual drawing = $25+ at typical consulting rates. EUR 0.005/render = 0.02% of the value delivered.
+
+**Strategic implication**: EUR 0.005/render is not too cheap — it's good for high-volume agent adoption. But the Pro tier's 1,000 included renders should be communicated as "EUR 5/mo for unlimited-feel usage" not "EUR 5/mo flat fee." The render model makes the value concrete.
+
+**The one sentence that converts agents builders**: "At EUR 0.005/render, generating 200 floor plan sketches per month costs EUR 1 in overage. What does your current solution cost?"
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #91 (05:55 CET)
 
 ### Theme: Credit Pricing Surge, EUR 5/mo Validation, and the Frame0 Proximity Signal

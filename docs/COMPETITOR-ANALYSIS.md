@@ -2,6 +2,144 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #93 (08:08 CET)
+
+### Status: Wednesday morning scan — 5 topics researched. 🟡 NEW COMPETITOR: Sketch (the design app) launched official MCP server March 25, 2026 — design-tool-as-MCP-server pattern now confirmed across Excalidraw, Frame0, Sketch, Archy, and ToDiagram. Skissify still uncontested in spatial/floor-plan/JSON-headless lane. tldraw added cloud sync in early 2026 (SaaS pivot, high SDK cost drives devs to alternatives). Maket v2 launched Q1 2026 (1M+ users, zoning code, HVAC, material takeoffs) — embed partner opportunity strengthened. MCP Server Cards (`.well-known` auto-discovery) arriving in 2026 roadmap — Skissify must implement before launch. NICHE STATUS: 93 consecutive scans, spatial JSON headless sketch lane uncontested.
+
+### 🟡 NEW COMPETITOR: Sketch App Official MCP Server (March 25, 2026)
+
+**Source**: sketch.com/docs/mcp-server/ (updated March 25, 2026)
+
+Sketch — the long-standing UI/UX design application — launched an official built-in MCP server in version 2025.2.4+. Key characteristics:
+- **Input**: AI agent (Claude, Cursor, etc.) sends tool calls → manipulates Sketch design documents
+- **Commands**: Export assets, design system consistency checking, element manipulation, layer operations
+- **Target use case**: AI-assisted UI/UX design workflows within the Sketch app
+- **Not headless**: Requires Sketch app to be running on macOS — not available as a standalone render API
+- **Availability**: Not in Mac App Store version (direct download only)
+- **Pricing**: Sketch licenses start at $99/year (individual), $9/editor/month (teams)
+
+**Skissify lane impact**: Low (different job-to-be-done, different audience). Sketch MCP is for UI/UX designers using Claude to automate design tasks inside the Sketch app. It is not a spatial/floor-plan/architectural rendering tool, not a headless API, and not JSON-manifest-driven. The audience is product designers, not agent builders or architects.
+
+**What this signals**: The "design-tool + MCP server" pattern is now confirmed across 5 tools in the ecosystem: Excalidraw MCP, Frame0 MCP, Archy MCP, ToDiagram MCP, and now Sketch MCP. Skissify is the only tool in this emerging category that is (a) headless, (b) JSON-manifest-driven, and (c) spatial/architectural. This is a category-forming moment — Skissify must be listed before the category's "default tools" are set in developers' minds.
+
+**Escalate to MEDIUM if**: Sketch adds spatial elements (floor plans, architectural shapes) or exposes a headless render endpoint that takes JSON input and outputs SVG/PNG without requiring the app.
+
+### tldraw Cloud Sync Launch — SaaS Pivot (Early 2026)
+
+**Source**: tldraw.dev/releases (SDK 4.3, January 19, 2026)
+
+tldraw added cloud sync + user login to tldraw.com in early 2026 — a significant shift from purely stateless/local. Additional features in SDK 4.3: rich text (bold, italics, links, code) inside shapes, R-tree spatial indexing for large diagram performance, shape-aware binding.
+
+**Skissify lane impact**: Neutral-to-positive. tldraw's SaaS evolution and $6,000/yr SDK license actively pushes solo developers and small teams toward cheaper API-first alternatives. "I just want to render a sketch via API without a $6K bill" is a real developer pain point that Skissify solves at EUR 5/mo.
+
+### Maket v2 — Strengthened Embed Partner Signal
+
+**Source**: maket.ai (Q1 2026 launch)
+
+Maket v2 adds: zoning code verification, HVAC planning, material takeoffs, photorealistic 3D renders. Backed by $3.4M CAD seed. 1M+ users. Their output is detailed AI floor plans — none of which have a hand-drawn sketch export option.
+
+**Skissify lane impact**: Positive. Maket v2's richer output (now including zoning, HVAC, materials) makes it more enterprise-facing, and enterprise clients reviewing early-stage plans want "concept sketch" presentation mode, not CAD-level renders. Skissify's embed = exactly that. EUR 500–2,000/yr partnership now even more justified.
+
+### MCP Server Cards — Automatic Discovery Coming
+
+**Source**: blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/
+
+The MCP 2026 roadmap includes "MCP Server Cards" — a `.well-known` URL standard for automatic discovery of MCP server capabilities. Crawlers (registries, AI agent hosts) will index servers that implement this standard. Additionally, the Tasks primitive is receiving retry/expiry semantics — directly beneficial for async sketch generation jobs.
+
+**Skissify lane impact**: High value, low cost. Implementing `.well-known/mcp-server-card.json` before the crawlers launch = automatic free indexing across all major MCP registries. This is a 30-minute implementation task with compounding discoverability benefits.
+
+### Updated Competitor Matrix (Run #93 — Wednesday April 1, 08:08 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw** | Official MCP server live (hand-drawn AI diagrams). Custom AI token support. Requires app running, no JSON manifest, no spatial elements. | **MEDIUM** |
+| **Sketch (design app)** | **NEW: Official MCP server launched March 25, 2026. macOS-only, requires app running, UI/UX design lane.** | **Low — different job-to-be-done. Monitor.** |
+| tldraw | SDK 4.3 (Jan 2026), cloud sync added, rich text. $6K/yr SDK. SaaS pivot. | Low-Medium — pricing drives devs to alternatives |
+| Frame0 | Hand-drawn wireframing MCP server. UI/UX lane only. | Low-Monitor |
+| Archy | 20+ hand-drawn diagram types via Mermaid MCP. Software architecture only. | Low |
+| ToDiagram | JSON/YAML/XML/CSV → interactive diagrams via MCP. No hand-drawn. Pro tier required. | Low-Medium — watch for hand-drawn |
+| Maket.ai | v2 launched Q1 2026: 1M+ users, zoning code, HVAC, 3D renders. No sketch aesthetic, no MCP. | Low — strong embed partner candidate |
+| Planner 5D | Sketch→3D AI (inverse of Skissify). Adjacent market. | Low — different direction, validates market |
+| **Skissify** | **93 consecutive niche-clean scans. JSON-native spatial hand-drawn headless MCP: uncontested. Category forming around "design tool + MCP" but Skissify owns spatial headless JSON lane.** | **Uncontested (spatial+JSON+headless lane)** |
+
+---
+
+## Update: 2026-04-01 — Automated Strategy Run #92 (06:59 CET)
+
+### Status: Wednesday early-morning scan — 4 topics researched. 🟡 NICHE CLEAN BUT ESCALATION: Excalidraw now has an OFFICIAL MCP server (excalidraw/excalidraw-mcp) streaming hand-drawn diagrams to Claude/ChatGPT/VS Code. Still not JSON-first spatial — but narrows the aesthetic gap. MCP ecosystem at Glama: 20,249 servers (up from ~11,070 in run #91). Maket.ai confirms spatial AI floor plan market at 1M+ users but no sketch aesthetic. Outcome-based AI pricing ($0.99–$2/resolution) validates Skissify per-render model. NICHE STATUS: JSON-native spatial hand-drawn + architectural elements still uncontested.
+
+### 🔴 ESCALATION: Official Excalidraw MCP Server — Hand-Drawn Diagrams to Claude/ChatGPT
+
+**Source**: github.com/excalidraw/excalidraw-mcp, scriptbyai.com/excalidraw-mcp/, rajeevpentyala.com/2026/03/16/excalidraw-mcp-and-claude-code-design-architecture-diagrams/
+
+Excalidraw shipped an **official** MCP server (`excalidraw/excalidraw-mcp`) with real-time streaming to Claude, ChatGPT, VS Code, Goose, and any MCP-compatible client. Key characteristics:
+- **Input**: Natural language prompts via AI agent → Excalidraw canvas elements
+- **Output**: Hand-drawn style SVG rendered on interactive Excalidraw canvas
+- **Real-time sync**: Content drawn by Claude Code is reflected on canvas in real-time
+- **Editing**: Interactive fullscreen editing after AI generation
+- **Architecture diagrams**: Use case cited — "describe your architecture in plain English and get a fully rendered, editable diagram"
+- **JSON manifest**: No — not a portable JSON manifest schema; uses Excalidraw's own element format
+- **Spatial/floor-plan elements (doors, windows, stairs, dimensions)**: Not confirmed; no architectural domain vocabulary
+- **Standalone render API**: No — requires Excalidraw app to be running (same constraint as Frame0)
+
+**Skissify lane impact**: MEDIUM (escalated from Low). This is the first time Excalidraw offers direct MCP-based hand-drawn diagram generation in Claude. For casual users wanting "a quick diagram," Excalidraw MCP is now accessible. However: (1) still requires Excalidraw browser app to be open — not a headless JSON-in/SVG-out API; (2) no spatial vocabulary (doors, windows, stairs, dimensions); (3) natural language input, not deterministic JSON manifest — agent builders cannot guarantee reproducible output; (4) not self-hostable as a render API; (5) community variants exist (yctimlin/mcp_excalidraw) fragmented.
+
+**Escalate to HIGH if**: Excalidraw MCP exposes a headless render endpoint (JSON schema in → SVG/PNG out) without requiring the running app, OR if it adds floor-plan/architectural domain elements.
+
+**Key differentiator to communicate**: "Excalidraw MCP requires the app to be running. Skissify is a pure render API — POST JSON, get SVG. No app required. No browser. Works in any headless agent pipeline."
+
+### MCP Ecosystem Scale — Glama at 20,249 Servers (March 2026)
+
+**Source**: glama.ai/mcp, skillsindex.dev/blog/complete-guide-mcp-servers-2026/, nordicapis.com/7-mcp-registries-worth-checking-out/
+
+Multiple registries now track different subsets:
+- **Glama**: 20,249 servers (largest, as of March 2026)
+- **mcp.so**: 18,998 servers
+- **SkillsIndex**: 4,133 servers (873% increase from ~425 in mid-2025)
+- **Official MCP Registry**: ~2,000 entries (launched September 2025)
+- **PulseMCP**: ~11,070 (broader catalog)
+
+**Implication**: Glama is now the largest discovery surface. Submitting to Glama (in addition to PulseMCP and official registry) is critical. At 20K+ servers, search relevance and keyword tagging matter more than ever. Skissify must be findable on terms: `floor-plan`, `sketch`, `hand-drawn`, `spatial`, `architectural`, `JSON render`.
+
+### Floor Plan AI Market — Maket.ai at 1M+ Users (Confirmation of Adjacent Market)
+
+**Source**: cubi.casa/best-ai-floor-plan/, maket.ai, snaptrude.com/blog/ai-house-plan-generators-2025
+
+Key floor plan AI tools in 2026:
+- **Maket.ai**: 1M+ registered users, natural language → residential floor plans
+- **Archilogic**: Space GraphQL API for portfolio-level spatial queries
+- **Planner5D**: AI floor plan + 3D rendering
+- **Academic pipeline (Text-to-Layout)**: LLM → JSON coordinates (walls, doors, windows) → Revit 3D BIM
+
+The academic paper confirms: LLMs produce JSON with start/end coordinate pairs for walls, doors, windows — exactly the Skissify manifest pattern. This is the pipeline Skissify enables at the sketch layer.
+
+**Skissify lane impact**: Positive signal. 1M+ Maket users proves people want AI-generated spatial layouts. None of these tools render in hand-drawn sketch style with JSON input. Skissify can be positioned as "the sketch layer" for these pipelines — what you use when you want a napkin-style visual, not a CAD model.
+
+### Outcome-Based Pricing Validates Per-Render Model
+
+**Source**: valueships.com/post/ai-pricing-in-2026, saastr.com/the-great-price-surge-of-2025, ibbaka.com
+
+- Intercom Fin AI Agent: $0.99/resolution → 8-figure ARR, 393% annualized growth
+- Zendesk AI agents: $1.50–$2.00/automated resolution
+- 78% of SaaS companies now use value-based pricing (up from 62% in 2023)
+- Pricing pendulum swinging back toward simplicity/predictability in 2026 after credit-model surge
+
+**Skissify implication**: EUR 0.005/render overage is cheap and below market for AI-agent outcomes. If an agent-generated floor plan sketch saves a consultant 20 minutes, that render has $50+ value. EUR 0.005 is frictionless. The "per render" model also matches how developers think about API usage. Raise visibility of overage pricing — make it feel cheap, not invisible.
+
+### Updated Competitor Matrix (Run #92 — Wednesday April 1, 06:59 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw** | **OFFICIAL MCP server live — hand-drawn AI diagrams in Claude/ChatGPT. Requires app running, no JSON manifest, no spatial elements.** | **MEDIUM — escalated from Low. Monitor monthly.** |
+| tldraw | 4.3.x (Jan 2026), no April updates. Agent templates, $6K/yr SDK. | Low-Medium — wrong price segment |
+| Frame0 | Hand-drawn wireframing MCP server. UI/UX lane only. | Low-Monitor |
+| Archy | 20+ hand-drawn diagram types via Mermaid MCP. Software architecture only. | Low |
+| Maket.ai | 1M+ users, NL → residential floor plans. No sketch aesthetic, no MCP. | Low — adjacent market, potential integration partner |
+| ToDiagram | JSON/YAML → interactive diagrams via MCP. No hand-drawn. | Low-Medium — watch for hand-drawn |
+| **Skissify** | **92 consecutive niche-clean scans. JSON-native spatial hand-drawn sketch MCP: uncontested. Excalidraw MCP closes aesthetic gap but not functional gap.** | **Uncontested (spatial+JSON+headless lane)** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #91 (05:55 CET)
 
 ### Status: Wednesday morning scan — 4 topics researched. 🟢 NICHE STILL CLEAN — 91 consecutive scans confirm no JSON-native spatial hand-drawn sketch MCP competitor. KEY UPDATES: (1) **Frame0 MCP server** confirmed on PulseMCP — hand-drawn style wireframing, UI/UX lane only, no spatial/floor-plan, no JSON manifest, no architectural elements; closest aesthetic overlap in 91 scans but wrong job-to-be-done. (2) **Archy MCP server** confirmed — generates 20+ diagram types including "hand-drawn" via Mermaid/Sugiyama layout — text/code input, not JSON-first spatial, no floor-plan or architectural elements. (3) MCP Registry now at 6,400+ servers (up from ~2,000 in run #89) — explosive growth rate confirms Skissify listing urgency. (4) Credit-based pricing up 126% YoY (PricingSaaS 500 data) — Skissify's per-render model is validated, should be foregrounded. (5) tldraw last release 4.3 (January 2026), no new April updates found. (6) EUR 5/mo is still 60–80% below micro-SaaS market rate ($19–99/mo for AI tools). LANE STATUS: Frame0 and Archy are new entrants worth monitoring — both have hand-drawn aesthetic + MCP, but neither has spatial/floor-plan/architectural-elements capability. Skissify's specific lane: uncontested.
