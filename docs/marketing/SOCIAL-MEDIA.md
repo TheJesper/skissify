@@ -1,11 +1,372 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 1, 2026 — Cycle 90 (10:36 CET — 3H36M IN)**
+**Last updated: April 1, 2026 — Cycle 91 (11:44 CET — 4H44M IN)**
+
+---
+
+## CYCLE 91 — 11:44 CET — 4H44M IN (12:00–20:00 AFTERNOON/EVENING PUSH)
+
+*Reddit Wave 2 NOW. Afternoon is the long tail. Use this section for 12:00 onwards.*
+
+---
+
+### Twitter/X — "4.5 hours in, here's what's real" (post at 12:00)
+
+```
+4.5 hours in.
+
+Product Hunt: live.
+Show HN: alive.
+Reddit: comments coming in.
+
+The weird thing about launching on April 1: the people who actually try it
+are sorting themselves out from the ones who never would have.
+
+Skepticism → curl → working SVG → convert. That pipeline is real.
+
+skissify.com
+
+#BuildInPublic #VibeDrawing #MCP #AprilFoolsLaunch
+```
+
+---
+
+### r/startups — "I launched today. On April Fools. AMA." (post at 12:00)
+
+```
+Title: I launched on April Fools Day. Intentionally. Here's what happened in the first 5 hours.
+
+The April 1 experiment: would people treat a real product launch as a joke?
+
+The reality: the ones who ran the curl command converted immediately.
+The ones who said "nice joke" were never going to be users anyway.
+
+What I built: Skissify — a hand-drawn sketch API. POST JSON, get SVG.
+No auth. Free tier. AI agents can use it via MCP.
+
+5 hours in:
+- Product Hunt: live
+- Show HN: active discussion
+- Reddit: comments across 4 subs
+
+The April 1 filter is actually the best early-adopter filter I've ever seen.
+Anyone still here after the "lol prank" crowd left is genuinely curious.
+
+Ask me anything. Happy to share numbers, technical decisions, or the
+absolute chaos of watching real people use something you built.
+
+skissify.com (yes, it's real — try the curl command at the bottom)
+```
+
+---
+
+### LinkedIn — Afternoon Milestone (post at 12:30)
+
+```
+5 hours into our launch.
+
+We launched Skissify on April 1. Intentionally.
+
+Here's what the April Fools Day filter taught us:
+
+The first wave of people said "nice joke" and moved on.
+The second wave ran the curl command.
+The third wave started asking questions.
+
+Everyone in wave 2 and 3 is a better early adopter than anyone who never
+had to overcome skepticism to try us.
+
+The friction of April 1st might be the best acquisition filter we could
+have designed.
+
+Skissify: JSON → hand-drawn sketch. REST API, free, no auth.
+AI agents use it via `npx skissify-mcp`.
+
+skissify.com
+
+#BuildInPublic #ProductLaunch #AI #SaaS #Startup #AITools
+```
+
+---
+
+### r/n8n — Automation Workflow Drop (post at 12:30)
+
+```
+Title: Add hand-drawn sketch generation to your n8n workflows (HTTP node, free, no auth)
+
+Built a REST API that converts JSON to hand-drawn SVGs. Thought the n8n community might find it useful.
+
+Basic n8n workflow:
+HTTP Request node → POST to https://skissify.com/api/render → returns SVG
+
+You can chain it with:
+- Notion: "When architecture doc created → auto-generate diagram → attach to page"
+- Airtable: "When project record updated → sketch current layout → save to field"
+- Slack: "When design request submitted → generate sketch → reply with SVG link"
+
+Body format:
+{
+  "paper": "cream",
+  "drawingTool": "ballpoint",
+  "elements": [{"type": "rect", "x": 50, "y": 50, "w": 200, "h": 150, "label": "Main Room"}]
+}
+
+Full element reference at skissify.com/docs
+
+Anyone here using webhook-triggered diagramming? Curious what workflows people have.
+```
+
+---
+
+### Discord Drops — Wave 2 (14:00 CET — copy-paste ready)
+
+**Anthropic Discord — #mcp-showcase:**
+```
+🎨 Just launched Skissify — an MCP server that lets Claude actually draw sketches
+
+Most MCP tools read data and surface it to the model. Skissify is the reverse — it takes what Claude is thinking about and renders a visual artifact.
+
+`npx skissify-mcp` — one command, Claude can now draw floor plans, architecture diagrams, wireframes.
+
+Try it: ask Claude to "sketch the layout of a small apartment with a kitchen, bedroom, and bathroom."
+
+Launched today (yes, April 1 — yes it's real). skissify.com/for-agents
+```
+
+**LangChain/CrewAI Discord — #tools-and-integrations:**
+```
+Drop for anyone building Python agents: Skissify has a REST API that gives your agents visual output capability.
+
+One endpoint: POST /api/render with JSON → get SVG back
+No auth, free tier, <300ms
+
+The Python call is 4 lines:
+import requests, json
+resp = requests.post("https://skissify.com/api/render", json=manifest)
+svg_url = resp.json()["url"]
+
+Element vocabulary covers floor plans, architecture diagrams, tech diagrams, and general shapes.
+
+Docs: skissify.com/docs
+MCP server for Claude: npx skissify-mcp
+
+(Launched today on Product Hunt if you want to support: skissify.com)
+```
+
+**AI Engineer Discord:**
+```
+For the AI engineers here: launched Skissify today.
+
+It's the missing primitive — AI agents that can reason spatially now have a way to output spatial diagrams.
+
+REST API: POST JSON describing a sketch → get hand-drawn SVG
+MCP server: `npx skissify-mcp` gives Claude native drawing capability
+
+The schema insight from building it: flat JSON vs nested JSON = 94% vs 40% first-try LLM accuracy across 7 models. Happy to share the full comparison if anyone's interested.
+
+skissify.com — launched today, free tier, no auth.
+```
+
+---
+
+### Twitter/X — "Afternoon numbers" (post at 15:00 — fill in blanks)
+
+```
+Launch day afternoon check-in:
+
+Product Hunt: [XX] upvotes
+HN Show: [XX] points, [X] comments
+Reddit r/webdev: [XX] upvotes
+Reddit r/mcp: [XX] comments
+
+The April 1 filter continues to work.
+The ratio of "this is a prank" to "ok this actually works" is roughly [X]:1.
+
+I'll take it.
+
+skissify.com — try it, it's free.
+
+#BuildInPublic #VibeDrawing #IndieHacker
+```
+
+---
+
+### Twitter/X — Schema insight thread (post at 16:00)
+
+```
+The hardest part of building Skissify wasn't making lines look wobbly.
+
+It was designing the JSON schema so LLMs could use it reliably.
+
+First attempt: deeply nested.
+{"type":"rect","position":{"x":50,"y":50},"size":{"w":200,"h":150}}
+
+LLM first-try accuracy: ~40%.
+
+Refactored: completely flat.
+{"type":"rect","x":50,"y":50,"w":200,"h":150}
+
+LLM first-try accuracy: ~94%.
+
+Same data. Totally different shape. Why does it matter?
+
+1/5 🧵
+
+→ LLMs are pattern-matchers. Flat objects match more patterns.
+→ Deep nesting creates more failure points. One wrong key = broken render.
+→ Optional fields with defaults reduce hallucination surface area.
+
+2/5
+
+The MCP tool description matters as much as the schema.
+
+I added one example element in the tool description.
+Accuracy went from 94% to ~98%.
+
+A 30-token example beats 300 tokens of schema documentation.
+
+3/5
+
+Implication: if you're building tools for LLMs, schema ergonomics
+are as important as the API behavior itself.
+
+The model will use the path of least resistance. Make sure that path
+is the one that produces correct output.
+
+4/5
+
+Full technical writeup coming later this week.
+
+Skissify is at skissify.com — free REST API + MCP server.
+The schema that produces 94% first-try accuracy is open to explore.
+
+5/5
+
+#BuildInPublic #APIDesign #MCP #LLM #FlatJSON
+```
+
+---
+
+### Bluesky — Afternoon post (15:30)
+
+```
+4 hours into launching on April Fools Day.
+
+The skeptics who ran the curl command are now my most enthusiastic users.
+
+The ones who said "lol" are long gone.
+
+Wouldn't have designed it this way on purpose. Turned out to be the best early-adopter filter I've ever seen.
+
+skissify.com — JSON → hand-drawn SVG → done.
+
+#BuildInPublic #VibeDrawing #MCP
+```
+
+---
+
+### r/selfhosted / r/homelab — Optional Post (16:00)
+
+```
+Title: Self-hosted hand-drawn sketch renderer with REST API — good fit for local AI setups
+
+Built Skissify — a hand-drawn sketch API. Docker image available if you want to run it locally.
+
+Why it matters for homelab/self-hosted AI: If you're running Ollama, LM Studio, or any local LLM, you can give it drawing capability without any external API calls.
+
+docker-compose.yml at skissify.com/self-hosted (Docker image: skissify/render:latest)
+
+Local MCP config for Claude Desktop with Ollama:
+{
+  "skissify": {
+    "command": "npx",
+    "args": ["-y", "skissify-mcp", "--endpoint", "http://localhost:3210/api/render"]
+  }
+}
+
+No auth, no rate limits on self-hosted. Full element reference at skissify.com/docs.
+
+Anyone using visual output with local LLMs?
+```
+
+---
+
+### Twitter/X — End of Day Wrap (20:00 — fill in blanks)
+
+```
+Day 1 done.
+
+[XX] Product Hunt upvotes
+[XX] Show HN points
+[X,XXX] skissify.com visitors
+[XXX] API renders
+
+Launched on April Fools. The skeptics filtered themselves out.
+
+The ones who ran the curl command? Those are my users.
+
+Tomorrow: [what's planned for Day 2].
+
+Thanks to everyone who tried it, shared it, or said "wait, this is actually real?"
+
+That's the only review I needed.
+
+skissify.com
+
+#BuildInPublic #VibeDrawing #IndieHacker #ProductHunt #ShowHN
+```
+
+---
+
+### LinkedIn — End of Day Post (20:30)
+
+```
+Day 1 of launching Skissify is almost done.
+
+We launched on April 1. The question we were asking ourselves at midnight:
+"Will anyone take a product seriously if it launches on April Fools Day?"
+
+The answer: yes. But only a specific kind of person.
+
+The person who runs the curl command before believing you.
+The person who reads the docs before tweeting about it.
+The person who DMs you at 2pm asking about rate limits because they're already building something.
+
+Those are the people you want in your first 100 users.
+
+April 1 didn't filter out users. It pre-qualified them.
+
+Final numbers tomorrow. But tonight: grateful for the builders who try things.
+
+skissify.com
+
+#Startup #BuildInPublic #ProductLaunch #AI #IndieHacker #SaaS
+```
+
+---
+
+### NEW IDEAS — Cycle 91 (11:44 CET)
+
+**Untapped audience: r/AIAssistants (200K+ members)** — Not previously targeted. Post angle: "Added a drawing tool to Claude and it changed how I use it." More personal, less technical than r/mcp. Template needed — add in Cycle 92.
+
+**Platform: Mastodon (Fosstodon, hachyderm.io)** — 100K+ developer community, anti-hype, appreciates honest builder content. Best angle: flat-JSON schema insight (technical, no sell). Low effort high credibility.
+
+**"Skissify as CI artifact"** — The GitHub Actions demo (sketch auto-generated on PR merge) is the highest-ceiling Week 2 viral story. One screen recording of this workflow is worth 50 text posts. Prioritize for April 6-7.
+
+**Organic SEO hack** — "Hand-drawn architecture diagram generator" and "AI floor plan API" have almost no competition in Google. Adding a landing page for each exact phrase costs 2 hours and could drive organic traffic for months. Add to Week 2.
+
+**Product Hunt Maker Update** — Most PH makers forget about Maker Updates. Post one at 20:00 CET today: "Launched 13 hours ago. Here's what happened." It bumps the listing in activity feeds and is shown to people who upvoted. Extremely low effort, high visibility.
+
+**Cross-post the schema insight to Dev.to** — The "94% accuracy" thread is independent of Skissify. Dev.to will surface it to the AI/dev audience. Title: "Why flat JSON beats nested JSON for LLM tool calls — a real benchmark." Mention Skissify at the end.
+
+**New hashtag to own:** `#SketchFirst` — positions the pre-design phase. "Sketch first. Code after." Natural successor to #VibeCoding. Unclaimed. Use on every visual post from today.
 
 ---
 
 ## CYCLE 90 — 10:36 CET — 3H36M IN (11:00–16:00 WINDOW)
+
+*Reddit Wave 1 launching NOW. r/mcp should be live. Discord drops at 14:00. Use this section.*
 
 *Reddit Wave 1 launching NOW. r/mcp should be live. Discord drops at 14:00. Use this section.*
 

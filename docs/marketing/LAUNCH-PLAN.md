@@ -1,7 +1,7 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 — 06:03 CET (LAUNCH MORNING — T+0)**
+**Current Date: April 1, 2026 — 11:44 CET (LAUNCH DAY — T+4H44M IN)**
 
 ---
 
@@ -25,14 +25,18 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 | Reddit (r/webdev, r/artificial, r/ChatGPT) | ✅ Posted Day 1 | 🔴 P0 |
 | LinkedIn | ✅ Posted Day 1 | 🟡 P1 |
 | Dev.to blog post | ✅ Published Day 1 | 🟡 P1 |
-| Indie Hackers | ⏳ Post today (April 2) | 🟡 P1 |
-| Discord (AI/dev servers) | ⏳ Drop today (April 2) | 🟡 P1 |
-| Bluesky | ✅ Posted Day 1 | 🟡 P1 |
+| Indie Hackers | ⏳ Post NOW — template at blog/indie-hackers-launch-post.md | 🟡 P1 |
+| Discord (AI/dev servers) | ⏳ Drop at 14:00 — copy in SOCIAL-MEDIA.md Cycle 91 | 🟡 P1 |
+| Bluesky | ✅ Posted Day 1 / ⏳ Afternoon update at 15:30 | 🟡 P1 |
 | Newsletter (own list) | ✅ Sent Day 1 | 🟡 P1 |
-| r/mcp | ⏳ Post today — HIGH PRIORITY | 🔴 P0 |
-| r/ClaudeAI | ⏳ Post today | 🔴 P0 |
-| Cursor/Windsurf audience | ⏳ Twitter post today | 🟡 P1 |
-| TLDR AI / Bytes.dev pitch | ⏳ Email today | 🟡 P1 |
+| r/mcp | ⏳ Post NOW — HIGH PRIORITY (SOCIAL-MEDIA.md Cycle 90) | 🔴 P0 |
+| r/ClaudeAI | ⏳ Post NOW (SOCIAL-MEDIA.md Cycle 89) | 🔴 P0 |
+| r/startups AMA | ⏳ Post NOW — copy in SOCIAL-MEDIA.md Cycle 91 | 🔴 P0 |
+| r/n8n + automation communities | ⏳ Post at 12:30 — copy in SOCIAL-MEDIA.md Cycle 91 | 🟡 P1 |
+| r/AIAssistants (200K) | ⏳ Post today — template needed (Cycle 92) | 🟡 P1 |
+| Cursor/Windsurf audience | ⏳ Twitter post at 14:00 (SOCIAL-MEDIA.md Cycle 85) | 🟡 P1 |
+| Product Hunt Maker Update | ⏳ Post at 20:00 CET with Day 1 numbers — HIGH VISIBILITY | 🔴 P0 |
+| TLDR AI / Bytes.dev pitch | ⏳ Email at 12:00 — copy in SOCIAL-MEDIA.md Cycle 85 | 🟡 P1 |
 
 ---
 
@@ -110,6 +114,61 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - Claude Discord
 - AI Engineer Discord
 - Dev.to
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 91 — 11:44 CET — T+4H44M IN)
+
+### Status at Noon: What's Live vs Pending
+
+| Done | Pending (do NOW) |
+|------|------------------|
+| ✅ Product Hunt | ⏳ r/mcp (HIGH PRIORITY) |
+| ✅ Twitter/X thread | ⏳ r/ClaudeAI |
+| ✅ Show HN | ⏳ r/startups AMA |
+| ✅ r/webdev, r/artificial, r/ChatGPT | ⏳ r/n8n + automation communities (12:30) |
+| ✅ LinkedIn | ⏳ Discord wave (14:00) |
+| ✅ Dev.to | ⏳ Product Hunt Maker Update (20:00) |
+| ✅ Bluesky | ⏳ Indie Hackers post |
+
+### New Insights — Cycle 91
+
+- **The April Fools filter IS the acquisition strategy** — users who overcame disbelief to try the curl command are pre-qualified. Lean into this narrative in the afternoon posts. The skeptic who converted is the testimonial.
+
+- **Product Hunt Maker Update at 20:00 CET** — underused feature. Post it with Day 1 numbers. It appears in the PH activity feed and gets visibility from people who already upvoted. One of the highest ROI actions of the evening.
+
+- **Cross-post the flat-JSON schema insight to Dev.to standalone** — the "94% accuracy" story is independently interesting. Title: "Why flat JSON beats nested JSON for LLM tool calls." Mention Skissify at the end. Dev.to surfaces it to the AI/dev audience we need.
+
+- **r/AIAssistants (200K members)** — not previously targeted. Different angle than r/mcp: personal, "I added this to my AI assistant setup" rather than technical MCP framing. Copy template needed for Cycle 92.
+
+- **r/n8n + Make + Zapier communities** — large automation audiences (200K+ combined) who add HTTP Request nodes daily. Copy ready in SOCIAL-MEDIA.md Cycle 91.
+
+- **GitHub Actions integration demo (Week 2 P0)** — "Sketch auto-generated on every PR merge" is the highest-ceiling viral story for developers. One 30s screen recording = worth 50 text posts. Prioritize April 6-7.
+
+- **Organic SEO landing pages (Week 2)** — "hand-drawn architecture diagram generator" and "AI floor plan API" are nearly uncontested Google queries. Two focused landing pages = long-term organic traffic. 2-hour effort for months of impact.
+
+- **New hashtag to own today:** `#SketchFirst` — positions Skissify in the "sketch before you code/design" workflow. Natural successor to #VibeCoding. Unclaimed. Use on every visual post from today forward.
+
+- **New blog post published this cycle:** `blog/launch-day-t5h-what-i-know-now.md` — authentic mid-launch live update. Covers: April Fools filter insight, schema design insight (40%→94%), unexpected audiences (homeowners, DMs, teachers), API render count > upvote count. Formatted for Dev.to. Post as live update or Day 2 retrospective.
+
+### Afternoon Action Queue (12:00–20:00)
+
+| Time | Action | Source |
+|------|--------|--------|
+| NOW | r/mcp post | SOCIAL-MEDIA.md Cycle 90 |
+| NOW | r/ClaudeAI post | SOCIAL-MEDIA.md Cycle 89 |
+| 12:00 | r/startups AMA post | SOCIAL-MEDIA.md Cycle 91 |
+| 12:00 | Twitter "4.5h in" update | SOCIAL-MEDIA.md Cycle 91 |
+| 12:30 | LinkedIn afternoon milestone | SOCIAL-MEDIA.md Cycle 91 |
+| 12:30 | r/n8n automation drop | SOCIAL-MEDIA.md Cycle 91 |
+| 14:00 | Discord wave — Anthropic + LangChain + AI Engineer | SOCIAL-MEDIA.md Cycle 91 |
+| 15:00 | Twitter afternoon numbers check-in | SOCIAL-MEDIA.md Cycle 91 |
+| 15:30 | Bluesky afternoon update | SOCIAL-MEDIA.md Cycle 91 |
+| 16:00 | Twitter schema insight thread (5-tweet) | SOCIAL-MEDIA.md Cycle 91 |
+| 18:00 | Engage all comments — no templates, genuine replies | — |
+| 20:00 | Product Hunt Maker Update | Write fresh with real numbers |
+| 20:00 | Twitter end-of-day wrap | SOCIAL-MEDIA.md Cycle 91 |
+| 20:30 | LinkedIn end-of-day post | SOCIAL-MEDIA.md Cycle 91 |
 
 ---
 
