@@ -2,6 +2,69 @@
 
 ---
 
+## Entry: 2026-04-01 — Manual Strategy Run (Morning CET)
+
+### Theme: What Makes Someone Pay EUR 2/mo (or EUR 5/mo) for Skissify — The AI-Agent-Compatible Sketch Tool
+
+#### The EUR 2/mo Question Is the Wrong Frame — Here Is the Right One
+
+The question "what makes someone pay EUR 2/mo for Skissify" presupposes price is the conversion variable. Based on 2026 SaaS pricing research (getmonetizely.com, growthunhinged.com, willingnesstopay.com), price is not the conversion bottleneck for developer tools below EUR 10/mo. The real conversion variables are:
+
+1. **Output trust**: Has the prospect seen the actual hand-drawn SVG output and believed it would work in their workflow?
+2. **Workflow fit**: Can the prospect picture the exact moment they would call the API or MCP tool?
+3. **Switching cost**: How long does it take to try Skissify vs. their current solution (usually: no solution, they write text descriptions)?
+
+EUR 5/mo Pro — or even EUR 2/mo — converts from the same trigger: the prospect sees a hand-drawn floor plan or diagram that an agent produced from JSON and thinks "I need that." The price is irrelevant at that point. Typical micro-SaaS willingness-to-pay for tools that save 5–10 hours/week is $49–199/month (Freemius/bigideasdb 2026 research). EUR 5/mo is well below the pain threshold for any developer with a recurring agent visualization need.
+
+#### Who Actually Pays EUR 5/mo for Skissify (Persona Map)
+
+**Persona A: The MCP Stack Builder (highest intent)**
+- Building agent pipelines in Claude/Cursor/Gemini/Copilot ecosystems
+- Reads PulseMCP newsletter, tracks new MCP servers
+- Pain: agents produce text only, need visual output for handoffs to clients or docs
+- Trigger: sees Skissify in PulseMCP directory or referenced next to OpenClaw/CrewAI/Mastra
+- Time to pay: 48 hours from first contact. No approval needed. EUR 5 is a rounding error in their dev budget.
+
+**Persona B: The Indie AI Developer / Vibe Coder**
+- Building AI-powered products (floor plan generators, architecture tools, napkin diagram apps)
+- Needs rendering as a service — doesn't want to build wobble algorithms from scratch
+- Pain: Excalidraw isn't JSON-native; tldraw SDK is $6K/yr
+- Trigger: finds Skissify via HN/Reddit "Show HN" or "I built a thing" thread
+- Time to pay: 1 week (tries free tier, hits limit, upgrades)
+
+**Persona C: The Architecture / Construction Tech User**
+- Uses AI tools to generate floor plans for client presentations or internal review
+- Pain: no tool converts spatial room descriptions to hand-drawn sketches programmatically
+- Trigger: blog post "Build a floor plan generator in 15 minutes with Claude + Skissify" or similar
+- Time to pay: 2–4 weeks (discovers via SEO, tries, shares with team, upgrades)
+
+**Persona D: The D&D / Game Master Community (unexpected)**
+- Generates dungeon maps, encounter zones, room layouts for tabletop games
+- Pain: existing tools too rigid, not "sketch-like"
+- Trigger: Reddit r/DnD or r/worldbuilding post showcasing a Skissify-generated map
+- Time to pay: variable, but volume makes up for individual low-intent
+
+#### EUR 2/mo Specifically — When It Makes Sense as an Anchor (Not a Tier)
+
+EUR 2/mo should not be a product tier. It should be an anchor comparison in copy:
+
+> "Skissify Pro: EUR 5/mo. That's less than two coffees, less than any AI subscription, and it gives your agents a hand-drawn visual output layer."
+
+The EUR 2 number is useful as social proof ("it pays for itself if you use it once a month") but offering it as a tier price-anchors the product at hobbyist level and undercuts the enterprise tier's credibility. EUR 5/mo as the lowest paid tier is the right call (confirmed: break-even at 27 users, achievable in month 3–6).
+
+#### Key Conversion Insight: The "Sketch URL as Agent Memory" Angle
+
+One underexplored conversion driver: Skissify sketch URLs are shareable, persistent, and reproducible from the same JSON. This means:
+- An agent can generate a sketch, store the URL, and reference it in future context
+- A team can share a sketch URL in Slack/Notion instead of attaching an image
+- The URL IS the artifact — not a static screenshot
+
+This is a sticky behavior that competitors cannot easily replicate (Excalidraw URLs require an account; Miro URLs require a workspace). The "sketch URL as a first-class artifact" angle is a EUR 5/mo justification on its own: you're paying for persistent, reproducible, shareable agent output — not just a one-time render.
+
+**Data sources**: getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models, bigideasdb.com/micro-saas-ideas-2026, freemius.com/blog/micro-saas-pricing-strategies, growthunhinged.com/p/2025-state-of-saas-pricing-changes
+
+---
+
 ## Entry: April 1, 2026 — 02:31 CET | Automated Strategy Run #89
 
 ### Theme: OpenClaw as Co-Marketing Vector, EUR 5 as Primary CTA (Not EUR 2), and Enterprise MCP Readiness Window

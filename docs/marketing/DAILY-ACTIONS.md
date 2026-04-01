@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-04-01 (Wednesday) + 2026-04-02 (Thursday) — Manual Strategy Run (Morning April 1)
+
+### Context: This Run's Key Findings
+- Excalidraw+ added custom AI tokens (bring-your-own LLM key) — human collab direction, not agent API direction
+- tldraw 4.5.x: 25x faster rendering, agent starter template with action schema registries — still $6K/yr SDK
+- MCP ecosystem: 97M monthly SDK downloads, ~2,000 MCP Registry entries, ContextForge security layer emerging
+- New AI diagramming tools (Dashin, InfraSketch, Napkin AI) confirmed in flowchart/infra lane — not spatial sketch
+- EUR 5/mo Pro is the right primary CTA; "sketch URL as agent memory" is an underused conversion angle
+- Niche remains uncontested: 90 consecutive scans, no JSON-native spatial hand-drawn sketch MCP competitor
+
+---
+
+### Action 1 (TODAY — April 1): Publish a "Sketch URL as Agent Memory" Social Post + Blog Angle
+
+**Why now**: The "sketch URL = persistent shareable artifact" differentiation has not been used as a standalone marketing message yet. It's a category-defining claim: Excalidraw and Miro URLs require accounts; Skissify URLs are reproducible from JSON and shareable with zero friction. This is a EUR 5/mo justification that has nothing to do with price and everything to do with workflow stickiness.
+
+**Steps (30 min)**:
+1. Write a 3-tweet thread (or equivalent LinkedIn post): "Your AI agent produced text. Here's why that's incomplete. [Skissify sketch URL example] — this URL is reproducible, shareable, and generated from 10 lines of JSON. No account required to view."
+2. Post in r/ClaudeAI or r/LLMDevs with a short demo: Claude generates JSON → Skissify renders → share the URL in a Slack/Notion embed. Frame it as "sketch URL as a first-class agent output artifact."
+3. File a blog draft: "Why Skissify URLs Are Better Than Screenshots" — this is a direct SEO play for "shareable AI output" / "agent output format" searches.
+
+**Success metric**: 50+ link clicks or 10+ saves/upvotes on the community post.
+
+---
+
+### Action 2 (TODAY — April 1): Submit Skissify to MCP Registry (Official) + PulseMCP — If Not Yet Done
+
+**Why now**: The MCP Registry (launched Sept 2025, ~2,000 entries) and PulseMCP (11,070+ listings) are the two primary discovery vectors for MCP-literate developers — the highest-intent Skissify Pro prospects. ContextForge and Salt MCP Finder are emerging as governance/discovery layers on top of these registries. Being listed early means getting indexed before the governance tooling creates a "certified" vs "uncertified" tier.
+
+**Steps (20 min)**:
+1. Go to modelcontextprotocol.io/registry (or the current official registry URL) and submit the Skissify MCP server — description should include "JSON manifest → hand-drawn SVG, architectural elements (doors, windows, stairs, dimensions), programmatic output for AI agents."
+2. Submit to pulsemcp.com/servers — in the description, reference the OpenClaw integration if applicable: "Works inside OpenClaw agent orchestration for automated visual output."
+3. Check if SkillsIndex (skillsindex.ai or equivalent) has a submission flow — list there as well.
+
+**Success metric**: Skissify appears in at least one public MCP directory by April 3.
+
+---
+
+### Action 3 (TOMORROW — April 2): Write One "VS" Comparison Post Targeting tldraw's $6K/yr Pain
+
+**Why now**: tldraw's 4.5.x release is getting developer attention (agent templates, performance improvements). Developers evaluating tldraw for agent-driven canvas will hit the $6K/yr commercial license wall and look for alternatives. This is a moment to own the search query "tldraw alternative for agents" and "JSON sketch API cheaper than tldraw."
+
+**Steps (45 min)**:
+1. Write a short post (blog or Dev.to): "tldraw 4.5 is impressive — but it costs $6,000/year. Here's how I solved the agent visual output problem for EUR 5/month." Frame it as a practitioner sharing their experience, not a competitor attack.
+2. Include a concrete code comparison: tldraw SDK setup complexity vs. a 5-line Skissify JSON call.
+3. Target these search phrases in the content: "tldraw alternative," "cheap sketch API for agents," "JSON to hand-drawn diagram free."
+4. Post on Dev.to, link from HN comment if a tldraw thread is active.
+
+**Success metric**: Post published and indexed. 1 inbound traffic session from "tldraw alternative" within 2 weeks.
+
+---
+
 ## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #89 (02:31 CET, Wednesday April 1)
 
 ### Context: Run #89 Key Findings

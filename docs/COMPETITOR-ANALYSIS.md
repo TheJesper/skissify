@@ -2,6 +2,67 @@
 
 ---
 
+## Update: 2026-04-01 — Manual Strategy Run (Morning CET)
+
+### Status: Wednesday daytime scan — 4 topics researched. NICHE STILL CLEAN — 90th scan confirms no JSON-native spatial hand-drawn sketch MCP competitor. KEY UPDATES: (1) Excalidraw+ added presentation features, custom AI tokens (bring-your-own OpenAI/Claude key), and advanced charts in Feb 2026 — still no MCP JSON schema or architectural elements. (2) tldraw 4.5.x: 25x faster shape rendering via 2D canvas + R-tree indexing, agent starter template restructured with manager architecture and action schema registries — still SDK-priced at $6K/yr, no JSON-first spatial output. (3) MCP ecosystem: 97M+ monthly SDK downloads, MCP Registry at ~2,000 entries (launched Sept 2025), ContextForge security layer added — enterprise adoption wave confirmed. (4) New AI diagramming tools: Dashin (infra diagrams), InfraSketch (architecture from plain English), Napkin AI (text-to-infographic) — all flowchart/cloud-architecture lane, zero spatial hand-drawn sketch, zero MCP server. (5) EUR 2/mo framing confirmed below market; EUR 5/mo Pro is the right primary CTA (prior runs already flagged, confirmed again).
+
+### Excalidraw — February 2026 Feature Push
+
+**Source**: plus.excalidraw.com/changelog (February 2026)
+
+Excalidraw+ shipped a significant feature wave in Feb 2026:
+- **Presentation Waiting Room**: Guest admission flow for live sessions
+- **Custom AI Tokens**: Users can bring their own OpenAI, Claude, Gemini, or OpenRouter API keys — Excalidraw is now model-agnostic for its AI features
+- **Advanced Charts**: Radar charts, multi-series data charts
+- **Google Drive Video embeds**: Video playback in boards
+- **Interactive Presentations**: Real-time reactions, raised-hand queue
+- **New language localizations**: Russian, Spanish, Arabic
+
+**Skissify lane impact**: None. All features are human-collaboration-focused (presentations, reactions, guest access). The custom AI token feature signals Excalidraw is becoming an AI-assisted whiteboard, not an AI-agent-callable rendering API. No JSON schema input, no MCP server, no architectural elements. Excalidraw is moving toward Miro's direction (richer human collab) while Skissify moves toward the agentic layer (JSON in, SVG out).
+
+**Monitor signal**: If Excalidraw exposes its AI features via an MCP tool that accepts structured JSON describing spatial layouts, escalate to HIGH threat. Currently: different product strategy entirely.
+
+### tldraw — 4.5.x Performance & Agent Templates
+
+**Source**: github.com/tldraw/tldraw/releases, tldraw.dev/releases (2026)
+
+tldraw shipped meaningful engineering work:
+- **25x faster shape rendering**: Shape indicators now use 2D canvas instead of SVG — R-tree spatial indexing, significant canvas performance gains
+- **Agent starter template restructured**: Manager-based architecture, mode system, action schema registries, prompt part definitions — tldraw is explicitly building for AI agent integration scenarios
+- **Image pipeline template**: Visual node-based canvas for AI image generation workflows with typed port connections and DAG execution (via npx create-tldraw)
+- **API consolidation**: cameraOptions, textOptions, deepLinks now merged into single `options` prop
+
+**Skissify lane impact**: Low-Medium (elevated from Low). The agent starter template and action schema registry pattern shows tldraw is investing in making their SDK the platform for AI-driven canvas experiences. However: (1) still SDK-priced at $6K/yr commercial — blocks any indie/micro-SaaS adoption; (2) still not JSON-first for spatial output — it's a React SDK, not a render API; (3) no architectural domain elements. The agent template targets "AI controls a canvas" — Skissify targets "JSON manifest produces a sketch." Different job-to-be-done.
+
+**Watch**: If tldraw ships a hosted render API (JSON in → image/SVG out) at a price below $6K/yr, threat level increases to HIGH.
+
+### New 2026 AI Diagramming Entrants — All Wrong Lane
+
+**Source**: dev.to/dashin_pro/best-ai-diagramming-tools-for-developers-in-2026-3ni3, infrasketch.net/blog/best-ai-diagram-tools-2026, napkin.ai (2026)
+
+New tools confirmed active in 2026:
+- **Dashin**: Developer-focused infra diagrams, LLM system diagrams, microservices. Text → cloud/architecture diagram. No hand-drawn style, no MCP, no spatial/floor-plan elements.
+- **InfraSketch**: Free, plain English → architecture diagrams + design docs. System design lane. No hand-drawn, no MCP.
+- **Napkin AI**: Text → infographics, charts, mind maps. Business storytelling. No spatial sketch, no JSON input, no MCP.
+- **Pixazo AI Flowchart**: Text → professional flowcharts. Standard flowchart lane.
+- **EdrawMax AI**: Text → diagrams in selected styles. No hand-drawn spatial sketch.
+
+**Verdict**: The AI diagramming market is splitting into (a) flowchart/cloud-infra lane (Dashin, InfraSketch, EdrawMax) and (b) UI/UX wireframe lane (Banani, Stitch, Uizard — prior runs). Skissify's spatial hand-drawn sketch + architectural elements + JSON-native + MCP lane remains unoccupied across all scans.
+
+### Updated Competitor Matrix (Run #90 — Wednesday April 1, Morning CET)
+
+| Tool | 2026 Move | Skissify Threat |
+|------|-----------|-----------------|
+| Excalidraw | Custom AI tokens (bring-your-own LLM key), presentation features. Official MCP repo exists but no JSON schema. | Low — diverging toward human collab, not agent API |
+| tldraw | 25x render perf, agent starter template + action schema registry. $6K/yr SDK price unchanged. | Low-Medium — agent template signals intent but wrong pricing segment |
+| ToDiagram | JSON/YAML → interactive diagrams via MCP. No hand-drawn. | Low-Medium — closest structural overlap, monitor for hand-drawn mode |
+| Dashin / InfraSketch / Napkin AI | 2026 entrants in infra/flowchart/infographic lanes. No MCP, no spatial sketch. | None |
+| Banani / Google Stitch / TypMo | UI/UX wireframe lane. No MCP, no spatial, no JSON. | None |
+| Miro AI | Scattered thoughts → structured diagrams. Enterprise. No hand-drawn style. | None |
+| **Skissify** | **90 consecutive niche-clean scans. JSON-native spatial hand-drawn sketch MCP lane: uncontested.** | **Uncontested** |
+
+---
+
 ## Update Log: April 1, 2026 — 02:31 CET | Automated Strategy Run #89
 
 ### Status: Wednesday early-morning scan — 4 of 4 topic areas searched. **🟢 NICHE STILL CLEAN — 89 CONSECUTIVE CLEAN SCANS. KEY UPDATES: (1) PulseMCP confirmed at 11,070+ — ecosystem growth rate still explosive; 544 MCP clients listed. (2) OpenClaw featured in PulseMCP newsletter "Goes Viral" — direct co-marketing opportunity with Skissify's own ecosystem. (3) New AI wireframe competitors (Banani, Google Stitch, TypMo) confirmed in UI/UX lane — NOT spatial sketch lane. (4) MCP 2026 enterprise roadmap: audit trails + enterprise SSO auth — Skissify should prepare enterprise tier. (5) EUR 2/mo entry price is 6–10x below typical indie SaaS ($12–20/mo) — investigate whether EUR 5/mo Pro should be the primary CTA instead of underselling with EUR 2 framing. (6) MCP SDK: 97M monthly downloads, 10,000+ active servers, first-class support in Claude/ChatGPT/Cursor/Gemini/Copilot/VSCode. LANE STATUS: No JSON→hand-drawn-sketch+architectural-elements MCP tool found. 89 consecutive niche-clean scans.**
