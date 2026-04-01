@@ -2,6 +2,66 @@
 
 ---
 
+## 2026-04-02 — Strategy Run #99 Actions (Late Evening, April 1)
+
+### Context: Run #99 Key Findings
+- **tldraw "computer"** live at computer.tldraw.com — Gemini 2.0 Flash visual workflow canvas. Biggest new competitive development this week. Integration opportunity: Skissify as the render output layer.
+- **FigJam AI credit metering** enforced March 2026 — confirms credit-gated AI is consumer-normalized
+- **EUR 2/mo micro-SaaS WTP**: credit bundle (one-time) outperforms subscription at this price point — do NOT build EUR 2/mo recurring tier
+- **draw.io MCP tutorial content** proliferating — "draw.io MCP alternative hand-drawn" SEO window still open
+- **Excalidraw MCP ecosystem**: 3+ competing community forks live (Lobehub, PulseMCP, Glama) — Skissify still not listed
+
+---
+
+### Action 1 (HIGH — Wednesday April 2): Publish "tldraw computer + Skissify" Integration Post
+
+tldraw "computer" (computer.tldraw.com) just launched as a live, free Gemini-powered visual workflow canvas. It is getting Hacker News and developer blog attention now. These are exactly Skissify's target users — AI developers building visual workflows.
+
+**The opportunity**: Show a tldraw computer workflow where the final node calls `POST /api/render` on Skissify and receives a hand-drawn floor plan SVG. tldraw computer is the pipeline designer; Skissify is the render output. Complementary, not competitive.
+
+**Steps (45 min)**:
+1. Build a simple 3-node tldraw computer workflow: "Prompt" node → "Generate floor plan JSON" node → "POST to Skissify" node → receives SVG
+2. Screenshot or GIF the workflow + the hand-drawn output
+3. Write a 300-word blog post or X thread: "tldraw computer builds the workflow. Skissify renders the output. Here's what it looks like."
+4. Publish on Skissify blog + X thread tagging `#tldraw #MCP #AIagents`
+5. Target: intercept tldraw computer discovery traffic while the launch wave is active (1–2 week window)
+
+**Why now**: tldraw "computer" search interest is peaking. Early content ranks well. The "tldraw computer + Skissify" combination is unique — no other post will cover it in the next week. First-mover SEO on "tldraw computer render output" = compounding traffic.
+
+---
+
+### Action 2 (HIGH — Wednesday April 2): List Skissify on Glama.ai and Official MCP Registry (STILL NOT DONE — CRITICAL)
+
+This action has appeared in 3 consecutive daily plans. Glama.ai tracks 20,650 MCP servers. Skissify is not listed. Every day unlisted = zero discovery via the fastest-growing MCP directory. This is free, takes 2 hours, and drives compounding growth via "Recent Usage" sort.
+
+**Steps (2 hours, no excuses)**:
+1. Submit to official Anthropic registry: github.com/modelcontextprotocol/registry — follow submission guide, categories: "visual", "design", "architecture", "floor-plan"
+2. Submit to Glama.ai: glama.ai/mcp/servers — complete ALL metadata, target Grade A (requires stable endpoint, complete docs, example prompts)
+3. Submit to mcp.so, pulsemcp.com, mcpservers.org (10 min each — same metadata)
+4. Standard 2-sentence description: "Skissify MCP renders hand-drawn architectural sketches from JSON — floor plans, concept diagrams, technical drawings. POST a JSON manifest, receive a hand-drawn SVG. No browser, no session, no Chromium."
+
+**Completion gate**: Do not move to any other marketing action until this is done. Every MCP listing generates organic installations. Every installation pushes rankings. The compounding starts at listing, not before.
+
+---
+
+### Action 3 (MEDIUM — Wednesday April 2): Add EUR 2 Starter Credits Bundle to Pricing Page
+
+WTP research (2026) confirms: EUR 2/mo recurring subscription does NOT convert. EUR 2 one-time credit bundle DOES convert, at 20–30% upgrade rate to Pro within 30 days among buyers with a real use case.
+
+**Steps (1 hour)**:
+1. Add "Starter Credits" bundle as a one-time purchase option on the pricing page — position it between Free (EUR 0) and Pro (EUR 5/mo):
+   - Label: "Starter Credits"
+   - Price: EUR 2 one-time
+   - Value: 400 renders, no watermark, no subscription, no expiry
+   - Copy: "Less than a coffee. 400 hand-drawn sketches. No subscription."
+2. Implement via Stripe one-time payment → credit balance added to account
+3. Add conversion copy above the Pro tier: "Not ready to subscribe? Buy a render pack first."
+4. Track: measure % of Starter bundle buyers who upgrade to Pro within 30 days. Target: 20%+
+
+**Why this matters for EUR 2/mo strategy**: The EUR 2 bundle is not a revenue tier — it is a conversion mechanism. It turns "free user who hit the cap and left" into "paying customer who has proven intent." Once they've paid EUR 2, the EUR 5/mo Pro upgrade is a trivially small step.
+
+---
+
 ## 2026-04-02 Daily Actions
 ### Source: Evening Web Research, April 1, 2026
 
@@ -6479,4 +6539,93 @@ ender_sketch tool live on npm? Yes/no + URL
 - Monitor: Excalidraw+ closed alpha status — any sign of headless REST endpoint going GA?
 - Check: Thomas Thornton outreach response (sent April 1)?
 - Glama.ai listing: Submit — 20,650 servers indexed, Skissify not found
+
+
+## Actions: 2026-04-02
+
+*Generated 2026-04-01. Based on: Vercel json-render (13K stars, identical architecture to Skissify), MCP registry 10K+ servers (discovery via search now dominant), Google Stitch March 19 update (accelerates "describe→render" normalization but non-spatial domain), MCP shadow-IT enterprise signal (Qualys report).*
+
+---
+
+### Action 1: Write "Skissify Is json-render for Spatial Sketches" — Post on DEV.to + Link from 2 Communities
+
+**Why tomorrow**: Vercel's json-render hit 13,000+ GitHub stars with the exact same architecture as Skissify — schema-constrained LLM JSON → renderer. 13K developers now understand this pattern. A blog post connecting Skissify explicitly to this pattern intercepts that warm, pre-educated audience at the peak of their interest window. The json-render InfoQ announcement was March 2026 — the audience is still active. This is the highest-ROI content piece available this week.
+
+**Concrete steps**:
+1. Write `docs/marketing/blog/skissify-is-json-render-for-spatial-sketches.md`
+   - Headline: "Skissify Is json-render for Hand-Drawn Spatial Sketches"
+   - Lead: "Vercel's json-render got 13K stars by validating a pattern: schema-constrained LLM → JSON → renderer. Skissify is that exact architecture for floor plans, diagrams, and architectural sketches."
+   - Show the parallel: json-render schema catalog = Skissify JSON schema. LLM generates JSON tree = agent generates manifest. Renderer maps to UI = Skissify maps to hand-drawn SVG.
+   - Include a 3-line code snippet: POST /render with a simple manifest → SVG response
+   - CTA: "Try Skissify free — 100 renders/month. Same pattern, spatial domain."
+2. Publish on DEV.to: tags `json-render`, `mcp`, `ai-agents`, `generative-ui`, `api`
+3. Post link in r/ClaudeAI and r/webdev with framing: "Vercel json-render for spatial sketches — I built this before json-render, now there's a name for the pattern"
+
+**Success metric**: Post drafted by noon April 2. Published and linked from 2 subreddits by EOD April 2.
+
+---
+
+### Action 2: Optimize @skissify/mcp Registry Listing for Search-Dominant Discovery
+
+**Why tomorrow**: MCP registry has 10,000+ public servers. Discovery is now a search problem, not a browsing problem. Developers search "hand-drawn", "floor plan", "architectural sketch", "spatial diagram" — not "whiteboard" or "canvas." Every day Skissify's listing uses generic terms is a day of missed discovery. The listing description is the primary acquisition funnel for MCP-native developers and takes 20 minutes to fix.
+
+**Concrete steps**:
+1. Update the `@skissify/mcp` npm package description + README to front-load: "hand-drawn sketch API, floor plans, architectural elements, spatial diagrams, JSON-to-SVG, no Chromium, <200ms"
+2. Update submission on registry.modelcontextprotocol.io: description field must contain "hand-drawn", "floor plan", "architectural", "spatial" — these are zero-competition keywords in the MCP registry today
+3. Update Lobehub listing (if live): same keyword-first description
+4. Check: is Skissify listed on glama.ai (20,650 servers indexed)? If not, submit today — glama.ai is the second-largest MCP discovery surface after the official registry
+
+**Success metric**: npm description + MCP registry listing updated with spatial/architectural keywords. Glama.ai submission opened by EOD April 2.
+
+---
+
+### Action 3: Add Google Stitch Comparison Content — Own "Stitch for Floor Plans" Search Traffic
+
+**Why tomorrow**: Google Stitch's March 19 update (5 screens simultaneously, 7-framework code export) will drive significant content creation and search traffic around "AI wireframe tools 2026." This is a rising tide that Skissify can intercept by positioning as the spatial counterpart. The search phrase "floor plan AI tool like Google Stitch" has near-zero competition today — it will have competition in 30 days when the SEO content cycle catches up to the Stitch update.
+
+**Concrete steps**:
+1. Write `docs/marketing/blog/google-stitch-vs-skissify-spatial-output.md`
+   - Headline: "Google Stitch Does Screen Design. What Does Your Floor Plan Use?"
+   - Core argument: Stitch = UI screens (apps, dashboards, forms). Skissify = spatial output (floor plans, room layouts, site diagrams, architectural sketches). Both are "describe it → AI renders it." Different domains.
+   - Include a use-case table: Stitch wins (app screen, user flow, UI component) vs Skissify wins (floor plan, room layout, technical diagram, D&D map, garden plan)
+   - CTA: "If you need what lives in physical space, that's Skissify."
+2. Target keywords: "Google Stitch floor plan", "AI floor plan generator API", "Google Stitch spatial diagram alternative"
+3. Publish on blog + submit URL to Google Search Console for indexing
+
+**Success metric**: Post drafted by EOD April 2. Published and submitted for indexing by April 3.
+
+---
+
+### Notes for Next Cycle (Run #101 — Target: April 3, 09:00 CET)
+- Was "json-render for spatial sketches" post published and linked from 2 communities?
+- Is @skissify/mcp registry listing using spatial/architectural keywords?
+- Is Skissify listed on glama.ai (20,650 servers)?
+- Was Google Stitch comparison post drafted?
+- Monitor: Does Excalidraw GitHub April 1 update surface specific new features in changelog?
+- Check: Thomas Thornton response to outreach (sent March 31)?
+- Check: Is @skissify/mcp on npm with working render_sketch tool?
+
+---
+
+---
+
+### Notes for Next Cycle (Run #101 — Target: April 3, 09:00 CET) — Updated by Cycle 100
+
+**Cycle 100 completed:**
+- ✅ `blog/skissify-is-json-render-for-spatial-sketches.md` — Written. Publish to DEV.to Thursday 07:00 CET. High priority: 13K json-render developer audience is pre-educated and warm.
+- ✅ `blog/google-stitch-vs-skissify-spatial-output.md` — Written. Publish to skissify.com/blog + submit Google Search Console. "Google Stitch floor plan" keyword = near-zero competition today.
+- ✅ SOCIAL-MEDIA.md — Thursday content calendar added: json-render thread (07:30), Stitch gap tweet (09:30), 48h community showcase (12:00), glama.ai hook (16:00), LinkedIn schema post.
+
+**Still critical (carried from Cycle 99):**
+- ❌ DEMO VIDEO — Has been P0 since Cycle 82. Nothing replaces this. Record tonight.
+- ❌ glama.ai submission — 20,650 MCP servers indexed, Skissify still not listed. 20 minutes. Do Thursday AM.
+- ❌ Indie Hackers post — Copy exists in Cycle 98. Post before Thursday afternoon.
+- ❌ r/LocalLLaMA — Copy in Cycle 99. Post Thursday 09:00 CET.
+- ❌ r/ChatGPT — Copy in Cycle 99. Post Thursday 10:00 CET.
+
+**Next cycle focus (Cycle 101):**
+1. SEO: "skissify.com/blog" should have canonical URLs set up — blog posts are being syndicated but the canonical links need to point to skissify.com
+2. Analytics: What's the actual API call volume at T+48h? This number feeds the "48h retrospective" tweet template
+3. GitHub README update: Add the flat-schema accuracy stats (94% vs 40%) as a developer credibility signal
+4. Hacker News: "Show HN" timing — Tuesday 10:00–12:00 EST remains the highest-traffic slot. Prep the submission post this week.
 

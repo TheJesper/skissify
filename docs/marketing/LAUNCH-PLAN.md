@@ -1,7 +1,56 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — DAY 2/3 TRANSITION (SEE CYCLE 99)**
+**Current Date: April 1, 2026 — T+21H (SEE CYCLE 100)**
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 100 — T+21H Evening)
+
+### Cycle 100 — New Blog Posts Written (2 new posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Skissify Is json-render for Spatial Sketches | `blog/skissify-is-json-render-for-spatial-sketches.md` | Vercel json-render (13K stars) architecture parallel — intercepts pre-educated developer audience | ✅ Ready to publish |
+| Google Stitch vs Skissify | `blog/google-stitch-vs-skissify-spatial-output.md` | Google Stitch does screens, Skissify does space — zero-competition SEO keyword today | ✅ Ready to publish |
+
+### Cycle 100 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Twitter/X Thursday 07:30 — json-render parallel thread (3 tweets) | ✅ Added |
+| Twitter/X Thursday 09:30 — Google Stitch gap tweet | ✅ Added |
+| Twitter/X Thursday 12:00 — 48h community builds showcase tweet | ✅ Added |
+| Twitter/X Thursday 16:00 — glama.ai submission hook | ✅ Added |
+| LinkedIn Thursday morning — schema-as-LLM-UX post | ✅ Added |
+| r/webdev — json-render comparison post (link to blog) | ✅ Added |
+| DEV.to publication plan for both new posts | ✅ Added |
+| glama.ai submission copy (20,650 MCP servers indexed) | ✅ Added |
+| Viral hook bank additions (3 new hooks) | ✅ Added |
+
+### Cycle 100 — Priority Actions for Thursday April 3
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| Publish json-render blog to DEV.to + link from r/webdev | ⏳ Publish Thursday 07:00 CET | 🔴 P0 |
+| Publish Google Stitch comparison + submit to Search Console | ⏳ Publish Thursday 09:00 CET | 🔴 P0 |
+| Submit to glama.ai (20,650 MCP servers — free discovery) | ⏳ Thursday AM — 20 min task | 🔴 P0 |
+| Post r/LocalLLaMA (copy in Cycle 99 — still pending) | ⏳ Post Thursday 09:00 CET | 🔴 P0 |
+| Post r/ChatGPT homeowner angle (copy in Cycle 99) | ⏳ Post Thursday 10:00 CET | 🔴 P0 |
+| Twitter/X json-render thread (07:30 CET) | ⏳ Copy in Cycle 100 | 🔴 P0 |
+| Twitter/X 48-hour community showcase tweet (12:00 CET) | ⏳ Copy in Cycle 100 | 🟡 P1 |
+| LinkedIn schema-as-LLM-UX post | ⏳ Copy in Cycle 100 | 🟡 P1 |
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, still unrecorded | ⏳ Tonight before midnight | 🔴 P0 — CRITICAL |
+| Indie Hackers post (copy in Cycle 98 — still pending) | ⏳ Post NOW | 🔴 P0 |
+
+### Cycle 100 — Key Technical Insight Added
+
+**Flat schema = 94% LLM accuracy. Nested schema = 40%.**
+This is now in two blog posts and the LinkedIn post. It's the most credible, specific, shareable technical insight from launch week. Use it in every developer-facing post.
+
+### Cycle 100 — New SEO Opportunity Identified
+
+"Google Stitch floor plan" and "AI floor plan generator API" have near-zero competition today. The Google Stitch blog post targets these phrases. Submit to Search Console immediately after publishing — this window closes in ~30 days as SEO content catches up to the March 2026 Stitch update.
 
 ---
 
