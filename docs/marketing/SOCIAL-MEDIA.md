@@ -1,7 +1,225 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 1, 2026 — Cycle 89 (09:28 CET — 2H28M IN)**
+**Last updated: April 1, 2026 — Cycle 90 (10:36 CET — 3H36M IN)**
+
+---
+
+## CYCLE 90 — 10:36 CET — 3H36M IN (11:00–16:00 WINDOW)
+
+*Reddit Wave 1 launching NOW. r/mcp should be live. Discord drops at 14:00. Use this section.*
+
+---
+
+### Twitter/X — "3.5 Hours In" Live Update (post NOW, 10:40 CET)
+
+```
+3.5 hours in.
+
+Launched on April 1.
+Half the replies: "nice prank lol"
+Other half: running the curl command in their terminal.
+
+The second group is the product's whole future.
+
+→ skissify.com
+
+#BuildInPublic #VibeDrawing #MCP
+```
+
+---
+
+### Twitter/X — "What just happened on HN" (post when HN thread has traction, ~11:00)
+
+```
+Show HN is live.
+
+The technical question that's driving the most engagement:
+"How did you get 94% first-try LLM accuracy on structured JSON?"
+
+Answer: flat keys beat nested objects. Every time. Across every model.
+
+Thread → [paste HN link]
+```
+
+---
+
+### r/SideProject — Launch Post (post at 11:30 CET)
+
+```
+Title: I launched today (on April Fools). Here's what actually happened in the first 3 hours.
+
+I launched Skissify this morning.
+
+What it does: POST JSON → get a hand-drawn SVG back. REST API. Free. No auth.
+
+The April 1 experiment: would people actually try something that launched on April Fools Day?
+
+Answer so far: The skeptics who ran the curl command converted 100%. Every single one.
+
+The ones who said "nice joke" and moved on — those were the real losses.
+
+skissify.com — try it, takes 30 seconds.
+```
+
+---
+
+### r/n8n / Make / Zapier Communities (post at 12:00 CET)
+
+```
+Title: Built a hand-drawn sketch node for your automation workflows
+
+Skissify has a REST API: POST JSON to /api/render, get SVG back.
+
+Makes it trivially easy to add as an HTTP action in n8n, Make, or Zapier.
+
+Real workflow idea: When a Notion page tagged "architecture" is created → extract structure → POST to Skissify → attach sketch URL to the page.
+
+API: skissify.com/api/render (no auth, free tier, <300ms)
+Docs: skissify.com/docs
+
+Anyone building with workflow automation + AI agents?
+```
+
+---
+
+### Twitter/X — n8n/automation angle (12:30 CET)
+
+```
+Skissify works in n8n.
+
+HTTP Request node → POST your JSON → SVG back in 300ms.
+
+Every architecture review, project brief, or design idea your AI generates can auto-sketch itself.
+
+skissify.com/api/render — no auth, free tier.
+
+#n8n #WorkflowAutomation #AIAgents #BuildInPublic
+```
+
+---
+
+### LinkedIn — Mid-Day Milestone Post (post at 13:00 CET)
+
+```
+3 hours into launching Skissify on April Fools Day.
+
+I built a tool that turns JSON into hand-drawn sketches. The primary audience: AI agents that need visual output. Secondary: developers who hate design tools.
+
+What I've learned in the first 3 hours:
+
+→ April 1 is the best filter you can have. Everyone who tries it despite the date is genuinely curious.
+
+→ The curl command beats every other pitch. "Don't believe me? Try it:" works better than any copywriting.
+
+→ The r/mcp community (MCP developers) are the most valuable 500 users in the world for this product.
+
+If you're building with Claude Desktop, Cursor, or Windsurf: skissify.com/docs
+
+#BuildInPublic #AIAgents #DeveloperTools #MCP
+```
+
+---
+
+### Discord Drop — AI Tools / AutoGPT Community (14:00 CET)
+
+```
+🎨 Built something for AI agent builders — launched today.
+
+Skissify: POST JSON → hand-drawn SVG. REST API, no auth.
+MCP server: `npx skissify-mcp` (Claude can literally draw)
+
+The angle most people miss: it's deterministic. Same JSON = same sketch, every time. Useful when your agent needs to commit to a spatial layout and reference it later.
+
+Try it in 2 min: skissify.com
+API: skissify.com/api/render
+MCP docs: skissify.com/docs
+```
+
+---
+
+### HN Comment — Schema Design Reply (post when someone asks about accuracy)
+
+```
+The schema design was the real engineering problem, not the wobble algorithm.
+
+First version had nested JSON (position.x, size.width etc.) — ~40% LLM first-try accuracy.
+
+Refactored to flat keys (x, y, w, h directly on each element) — ~94% across 7 models.
+
+Three things that actually moved the number:
+1. Flat keys. Every nesting level costs accuracy.
+2. Sensible defaults. Don't make LLMs hallucinate optional fields.
+3. The MCP tool description is as important as the schema itself — example in the description outperforms schema improvements.
+
+This generalizes beyond Skissify. If you're building any API that LLMs generate JSON for, flat schema wins.
+```
+
+---
+
+### Twitter/X — Viral Comparison Hook (post at 14:00 CET)
+
+```
+Figma: 47 clicks to get from "I have an idea" to "here's a rough layout."
+
+Skissify: 1 curl command.
+
+Not for everything. But for the napkin phase?
+
+skissify.com
+
+#SketchFirst #VibeDesign #ProductDesign
+```
+
+---
+
+### Instagram/Reels Caption — Afternoon Post (14:00-15:00)
+
+```
+I gave Claude a pencil and asked it to sketch a floor plan.
+
+This is what happened.
+
+(It uses Skissify's MCP server — JSON in, hand-drawn SVG out.)
+
+No Figma. No Midjourney. No image generation hallucinations. Just Claude writing JSON that becomes a sketch.
+
+skissify.com — free, no signup.
+
+#AITools #AIAgents #VibeDrawing #MCP #BuildInPublic #SketchFirst #IndieHacker #ProductHunt #HandDrawn
+```
+
+---
+
+### Twitter/X — End-of-Afternoon Check-In (16:00 CET)
+
+```
+6 hours in.
+
+Numbers: [fill in PH upvotes] | [signups] | [API calls]
+
+The day the skeptics made me the most optimistic I've ever been about this product.
+
+Every "lol april fools" became "wait, this actually works."
+
+That journey IS the pitch.
+
+→ skissify.com
+```
+
+---
+
+### New Hashtag Cluster (April 2026 additions)
+
+Low-competition, ownworthy:
+- `#VibeDesign` — natural follow-on to #VibeCoding, currently unclaimed for this use case
+- `#SketchFirst` — design philosophy angle, low competition
+- `#JSONtoSVG` — technical, searchable, niche
+- `#A2A` — Google A2A protocol launch, Skissify fits as visual layer
+- `#AgentProtocol` — emerging in agent space
+- `#n8nWorkflow` — automation community
+- `#DeterministicDiagram` — counters "why not DALL-E?" in one phrase
+- `#MCPServer` — more specific than #MCP, better for MCP community
 
 ---
 

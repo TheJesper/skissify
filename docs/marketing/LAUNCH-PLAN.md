@@ -486,6 +486,59 @@ Everyone who saw the April 1 announcement and thought "this is a joke" is now se
 
 ---
 
+## NEW IDEAS (Added 2026-04-01, Cycle 90 — 10:36 CET — 3h36m In)
+
+**Context:** 3.5 hours in. HN live. Reddit Wave 1 launching NOW. 11:00-14:00 is the mid-launch execution window.
+
+### Status Check — What's Done vs Pending (10:36 CET)
+
+| Channel | Status |
+|---------|--------|
+| Product Hunt | ✅ Live |
+| Twitter/X | ✅ Thread posted ~09:00 |
+| HN Show HN | ✅ Posted ~10:00 |
+| r/webdev | ⏳ **POST NOW (11:00 window)** |
+| r/mcp | ⏳ **POST NOW — HIGH PRIORITY** |
+| r/ClaudeAI | ⏳ Post at 11:30 |
+| r/SideProject | ⏳ Post at 11:30 |
+| r/startups | ⏳ Post at 12:00 |
+| n8n/Make community | ⏳ NEW — post at 12:00 (templates in SOCIAL-MEDIA.md Cycle 90) |
+| Discord drops | ⏳ 14:00 (Anthropic, AI Engineer, AutoGPT) |
+| LinkedIn mid-day | ⏳ 13:00 (template in Cycle 90) |
+
+### New Assets Added This Cycle
+
+- **SOCIAL-MEDIA.md Cycle 90** — ✅ Full 11:00–16:00 paste-ready copy queue:
+  - "3.5 hours in" live tweet
+  - "What happened on HN" tweet format
+  - r/SideProject launch post
+  - **n8n/Make/Zapier community post (NEW AUDIENCE)**
+  - Twitter n8n automation angle
+  - LinkedIn mid-day milestone post
+  - Discord drop for AI Tools/AutoGPT community
+  - HN schema design reply template
+  - Twitter viral comparison hook (Figma friction count vs Skissify)
+  - Instagram/Reels afternoon caption
+  - End-of-afternoon check-in template
+  - New hashtag cluster: `#VibeDesign #SketchFirst #A2A #AgentProtocol #n8nWorkflow #DeterministicDiagram #MCPServer`
+
+### New Ideas
+
+- **n8n/Make/Zapier audience** — not previously targeted with dedicated copy. These communities have 200K+ members who add HTTP Request nodes daily. Skissify's API is trivial to add as an action node. Post r/n8n at 12:00.
+- **#VibeDesign hashtag** — Natural unclaimed successor to #VibeCoding. First mover advantage if you use it consistently today.
+- **"Deterministic diagram" framing** — most effective single-line counter to "why not DALL-E?": "Same JSON = same sketch, every time. No hallucinated proportions."
+- **AutoGPT Discord** (100K+ members) — add to 14:00 Discord drop wave alongside Anthropic and LangChain.
+- **HN comment strategy** — posting the flat-JSON schema insight as a comment on your own Show HN thread drives upvotes from people who never heard of Skissify.
+
+### Contingency: If Under 100 PH Upvotes at 14:00
+
+1. Don't chase PH harder — the number doesn't matter, the audience does
+2. Pull forward HN schema post to Thursday Apr 3 (was Apr 8)
+3. Post r/SideProject with honest low numbers — lower numbers = more relatable story = more comments
+4. Email TLDR AI personally (not template) — 1 paragraph, honest, genuine
+
+---
+
 ## NEW IDEAS (Added 2026-04-01, Cycle 89 — 09:28 CET — 2h28m In)
 
 **Context:** 2.5 hours in. Show HN about to drop (10:00). Reddit Wave 1 at 11:00. The "skeptic pipeline" is actively converting. This cycle focuses on the 10:00-14:00 window.
