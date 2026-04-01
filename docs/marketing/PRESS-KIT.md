@@ -1,6 +1,33 @@
 # Skissify Press Kit
 
-*Last updated: April 1, 2026 — Cycle 81 (Day 2 Edition)*
+*Last updated: April 2, 2026 — Cycle 96 (Day 2 Morning)*
+
+---
+
+## Day 2 Status (April 2, 2026)
+
+| Item | Status |
+|------|--------|
+| Product Hunt | ✅ Live — update with final Day 1 vote count |
+| Demo video (60s screen record) | ⚠️ Script ready — RECORD TODAY |
+| Demo GIF (10s) | ⚠️ Script ready — RECORD TODAY |
+| Social OG banner | ⚠️ Generate — 1200x630px |
+| Press inquiries inbox | ✅ press@skissify.com active |
+| Bluesky / Mastodon handle claimed | ⏳ Confirm handles |
+
+**Today's #1 priority:** Record the demo video. A 15-second silent screen capture of Claude drawing a floor plan via MCP will outperform every text post by 3–5x on Twitter/X and TikTok.
+
+---
+
+## Launch Metrics Snapshot (update with actuals)
+
+| Metric | Target | Actual |
+|--------|--------|--------|
+| Product Hunt upvotes | 200+ | — |
+| Signups Day 1 | 50+ | — |
+| API calls Day 1 | 100+ | — |
+| Twitter impressions | 10K+ | — |
+| GitHub stars | 20+ | — |
 
 ---
 

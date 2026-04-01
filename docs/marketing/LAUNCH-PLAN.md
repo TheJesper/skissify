@@ -1,7 +1,40 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 — 16:16 CET (LAUNCH DAY — T+9H IN — SEE CYCLE 95)**
+**Current Date: April 2, 2026 — DAY 2 (SEE CYCLE 96)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 96 — Day 2 Morning)
+
+### Status Overview: Day 2 Priority Actions
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| Record demo video (15–60 sec screen capture) | ⏳ DO THIS FIRST | 🔴 P0 |
+| Twitter/X Day 2 morning thread | ⏳ Post 09:00 CET — copy in SOCIAL-MEDIA.md Cycle 96 | 🔴 P0 |
+| LinkedIn Day 2 post | ⏳ Post 10:00 CET — copy in Cycle 96 | 🟡 P1 |
+| r/mcp post (if not done Day 1) | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
+| r/ClaudeAI post (if not done Day 1) | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
+| r/startups AMA | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
+| Indie Hackers (if not done Day 1) | ⏳ Post NOW | 🔴 P0 |
+| Hashnode crosspost | ⏳ Publish CANONICAL blog post | 🟡 P1 |
+| Mastodon / Fediverse post | ⏳ New — copy in Cycle 96 | 🟡 P1 |
+| r/worldbuilding post | ⏳ New Day 2 target — copy in Cycle 96 | 🟡 P1 |
+| r/gamedesign post | ⏳ New Day 2 target | 🟡 P1 |
+| r/VibeCoding post ("#VibeDrawing") | ⏳ New — post today | 🟡 P1 |
+| TLDR AI pitch email | ⏳ Send today | 🟡 P1 |
+| Ben's Bites / The Rundown AI pitch | ⏳ Send today — template in Cycle 96 | 🟡 P1 |
+| Product Hunt maker update (Day 1 wrap) | ⏳ Post with actual numbers | 🔴 P0 |
+| "#AIGotHands" tweet | ⏳ Post if not done last night | 🔴 P0 |
+
+### Key Day 2 Insights (Cycle 96)
+
+- **The demo video is the biggest unlocked lever.** Script has existed since Cycle 82. Every hour without it is leaving Twitter impressions on the table. Record first, everything else second.
+- **Coin "#AIGotHands" now.** Current posts: ~0. This phrase is short, true, memorable, and unclaimed. Three posts today across Twitter/X, TikTok, LinkedIn own it permanently.
+- **Three new Day 2 communities:** r/worldbuilding (1.2M), r/gamedesign (200K), r/VibeCoding — none were hit on Day 1. The dungeon/map angle connects worldbuilding; the vibe angle connects VibeCoding.
+- **Newsletter pitch window is open.** Ben's Bites, The Rundown AI, TLDR AI all accept pitches. These newsletters reach 100K–300K AI developers. One mention = more signups than a typical week of social posts.
+- **Day 2 blog posts written (Cycle 96):** Three fresh editions of the canonical blogs, tighter and Day 2-appropriate, ready to publish on Hashnode and Medium.
 
 ---
 
@@ -19,31 +52,36 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 | Channel | Status | Priority |
 |---------|--------|----------|
-| Product Hunt | ✅ Live (Day 1) | 🔴 P0 |
-| Twitter/X | ✅ Posted Day 1 / ⏳ Day 2 thread pending | 🔴 P0 |
+| Product Hunt | ✅ Live (Day 1) / ⏳ Maker update with Day 1 numbers | 🔴 P0 |
+| Twitter/X | ✅ Posted Day 1 / ⏳ Day 2 morning thread — copy in Cycle 96 | 🔴 P0 |
 | Hacker News (Show HN) | ✅ Posted Day 1 | 🔴 P0 |
 | Reddit (r/webdev, r/artificial, r/ChatGPT) | ✅ Posted Day 1 | 🔴 P0 |
-| LinkedIn | ✅ Posted Day 1 | 🟡 P1 |
+| LinkedIn | ✅ Posted Day 1 / ⏳ Day 2 post — copy in Cycle 96 | 🟡 P1 |
 | Dev.to blog post | ✅ Published Day 1 | 🟡 P1 |
-| Indie Hackers | ⏳ OVERDUE (was 10:00) — post NOW — blog/indie-hackers-launch-post.md | 🔴 P0 |
-| Discord (Claude, AI Engineer, LangChain/CrewAI) | ✅ Dropped — copy in SOCIAL-MEDIA.md Cycle 93 | 🔴 P0 |
-| Discord (n8n, Cursor) | ⏳ Drop at 17:00 — copy in SOCIAL-MEDIA.md Cycle 95 | 🟡 P1 |
-| Bluesky | ✅ Posted Day 1 + afternoon update 15:30 | 🟡 P1 |
+| Indie Hackers | ⏳ Post NOW (overdue since Day 1) — blog/indie-hackers-launch-post.md | 🔴 P0 |
+| Discord (Claude, AI Engineer, LangChain/CrewAI) | ✅ Dropped Day 1 | 🔴 P0 |
+| Discord (n8n, Cursor/Windsurf) | ⏳ Post if not done Day 1 — copy in Cycle 95 | 🟡 P1 |
+| Bluesky | ✅ Day 1 / ⏳ Day 2 post — copy in Cycle 96 | 🟡 P1 |
 | Newsletter (own list) | ✅ Sent Day 1 | 🟡 P1 |
-| r/mcp | ⏳ Post NOW if not done — HIGH PRIORITY (SOCIAL-MEDIA.md Cycle 90) | 🔴 P0 |
-| r/ClaudeAI | ⏳ Post NOW if not done (SOCIAL-MEDIA.md Cycle 89) | 🔴 P0 |
-| r/startups AMA | ⏳ Post if not done — copy in SOCIAL-MEDIA.md Cycle 91 | 🔴 P0 |
-| r/n8n + automation communities | ⏳ Post at 17:00 — copy in Cycle 95 | 🟡 P1 |
-| r/AIAssistants (200K) | ⏳ Post NOW if not done — copy in SOCIAL-MEDIA.md Cycle 92 | 🟡 P1 |
-| r/InteriorDesign | ⏳ Post NOW — copy in Cycle 93 | 🟡 P1 |
-| r/HomeImprovement | ⏳ Post NOW — copy in Cycle 93 | 🟡 P1 |
-| r/DnD | ⏳ Post NOW — copy in Cycle 93 (dungeon map angle) | 🟡 P1 |
-| r/ProgrammerHumor | ⏳ Post NOW — copy in SOCIAL-MEDIA.md Cycle 95 (April Fools meta) | 🟡 P1 |
-| Hashnode | ⏳ Post today — copy in Cycle 93 | 🟡 P1 |
-| Cursor/Windsurf Discord | ⏳ Post at 17:15 — copy in Cycle 95 | 🟡 P1 |
-| TikTok / Instagram Reels | ⏳ Record + post — 3 script options in SOCIAL-MEDIA.md Cycle 95 | 🟡 P1 |
-| Product Hunt Maker Update | ⏳ Post at 20:00 CET with Day 1 numbers — HIGH VISIBILITY | 🔴 P0 |
-| TLDR AI / Bytes.dev pitch | ⏳ Email today — copy in SOCIAL-MEDIA.md Cycle 94 | 🟡 P1 |
+| r/mcp | ⏳ Post NOW — HIGH PRIORITY — copy in Cycle 96 | 🔴 P0 |
+| r/ClaudeAI | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
+| r/startups AMA | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
+| r/n8n + automation communities | ⏳ Post — copy in Cycle 93/95 | 🟡 P1 |
+| r/AIAssistants (200K) | ⏳ Post NOW — copy in Cycle 96 | 🟡 P1 |
+| r/InteriorDesign | ⏳ Post — copy in Cycle 93 | 🟡 P1 |
+| r/HomeImprovement | ⏳ Post — copy in Cycle 93 | 🟡 P1 |
+| r/DnD | ⏳ Post — copy in Cycle 93 | 🟡 P1 |
+| r/ProgrammerHumor | ⏳ April Fools retrospective angle still works Day 2 — copy in Cycle 95 | 🟡 P1 |
+| Hashnode | ⏳ Crosspost CANONICAL blog — Cycle 96 day2 versions ready | 🟡 P1 |
+| Cursor/Windsurf Discord | ⏳ Post — copy in Cycle 95 | 🟡 P1 |
+| TikTok / Instagram Reels | ⏳ Record + post — scripts in Cycle 95 | 🟡 P1 |
+| TLDR AI / Bytes.dev pitch | ⏳ Email today — template in Cycle 96 | 🟡 P1 |
+| Ben's Bites / The Rundown AI | ⏳ NEW — email today — template in Cycle 96 | 🟡 P1 |
+| Mastodon / Fediverse | ⏳ NEW — post today — copy in Cycle 96 | 🟡 P2 |
+| r/worldbuilding (1.2M) | ⏳ NEW Day 2 target — map generation angle | 🟡 P1 |
+| r/gamedesign (200K) | ⏳ NEW Day 2 target — level layout angle | 🟡 P1 |
+| r/VibeCoding | ⏳ NEW — "#VibeDrawing" companion post | 🟡 P1 |
+| Demo video (record + share) | ⏳ HIGHEST LEVERAGE REMAINING ACTION | 🔴 P0 |
 
 ---
 
@@ -68,18 +106,19 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 | Asset | Status |
 |-------|--------|
-| SOCIAL-MEDIA.md | ✅ Enhanced through Cycle 95 (evening push, TikTok scripts, "AI got hands" hooks) |
-| Blog: hand-drawn vs Figma | ✅ Canonical version: `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-CANONICAL.md` |
-| Blog: AI agents & floor plans | ✅ Canonical version: `blog/how-ai-agents-draw-floor-plans-CANONICAL.md` |
-| Blog: Skissify vs Excalidraw | ✅ Canonical version: `blog/skissify-vs-excalidraw-CANONICAL.md` |
-| Blog: Launch day 9h live update | ✅ NEW: `blog/launch-day-9h-ai-got-hands.md` — honest retrospective, "AI got hands" angle |
-| PRESS-KIT.md | ✅ Enhanced (video script, GIF script, pitch email, 3-audience hooks) |
+| SOCIAL-MEDIA.md | ✅ Enhanced through Cycle 96 (Day 2 morning push, new platforms, hashtag strategy) |
+| Blog: hand-drawn vs Figma | ✅ Canonical: `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-CANONICAL.md` / Day 2: `blog/why-hand-drawn-sketches-beat-figma-cycle96-day2.md` |
+| Blog: AI agents & floor plans | ✅ Canonical: `blog/how-ai-agents-draw-floor-plans-CANONICAL.md` / Day 2: `blog/how-ai-agents-draw-floor-plans-cycle96-day2.md` |
+| Blog: Skissify vs Excalidraw | ✅ Canonical: `blog/skissify-vs-excalidraw-CANONICAL.md` / Day 2: `blog/skissify-vs-excalidraw-cycle96-day2.md` |
+| Blog: Launch day 9h live update | ✅ `blog/launch-day-9h-ai-got-hands.md` |
+| PRESS-KIT.md | ✅ Updated Cycle 96 — Day 2 status table, metrics snapshot added |
 | Product Hunt description | ✅ In PRESS-KIT.md and PRODUCT-HUNT-SUBMISSION.md |
-| Demo GIF / video | ⚠️ Script ready in PRESS-KIT -- needs recording TODAY before PH closes |
-| Social banner image (OG) | ⏳ Generate |
+| Demo GIF / video | ⚠️ Script ready — RECORD THIS MORNING — highest ROI action remaining |
+| Social banner image (OG) | ⏳ Generate 1200x630px |
 | TikTok/Reels video scripts | ✅ 3 scripts in SOCIAL-MEDIA.md Cycle 95 |
-| Influencer outreach emails | ✅ Templates in SOCIAL-MEDIA.md |
-| Newsletter pitch email | ✅ In PRESS-KIT.md |
+| Influencer outreach emails | ✅ Templates in SOCIAL-MEDIA.md Cycle 96 |
+| Newsletter pitch email | ✅ In PRESS-KIT.md + Cycle 96 pitch template |
+| Ben's Bites / Rundown AI pitch | ✅ Template in SOCIAL-MEDIA.md Cycle 96 |
 
 ---
 

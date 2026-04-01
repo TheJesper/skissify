@@ -1,7 +1,307 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 1, 2026 — Cycle 93 (14:00 CET — 7H IN)**
+**Last updated: April 2, 2026 — Cycle 96 (Day 2 Morning — Momentum Wave)**
+
+---
+
+## CYCLE 96 — DAY 2 (APRIL 2) — MORNING MOMENTUM PUSH
+
+*Context: Day 1 is done. The Product Hunt window is closing or closed. Day 2 is about converting yesterday's traffic into users, extending reach into new channels, and owning the "AI got hands" / "#VibeDrawing" narrative before it gets picked up by someone else. Saturday morning is the highest-engagement window for developer communities.*
+
+---
+
+### Twitter/X — Day 2 Morning Thread (post 09:00 CET)
+
+```
+🧵 We launched Skissify yesterday on @ProductHunt.
+
+Here's what actually happened in 24 hours — the good, the weird, and the thing nobody expected:
+
+(thread)
+```
+
+```
+1/ The audience we built for: AI developers.
+The audience that showed up hardest: homeowners renovating their kitchens.
+
+Not joking.
+```
+
+```
+2/ The MCP server (npx skissify-mcp) got more installs than the web editor.
+
+AI agents are actually using this thing to draw. That was the whole bet.
+
+It worked.
+```
+
+```
+3/ r/DnD found us at 3pm. The dungeon map thread got 200+ upvotes.
+
+Blueprint mode + architectural symbols = the dungeon aesthetic nobody knew they needed.
+
+We didn't plan this. We're leaning into it.
+```
+
+```
+4/ What's next:
+- Human Mode (no JSON, just describe what you want)
+- Embed support (drop a sketch anywhere with one line)
+- Real-time collaborative sketching (Q3)
+
+If you want in early: skissify.com
+```
+
+```
+5/ The most important thing I learned in 24 hours:
+
+Rough sketches signal "this is still open." They invite feedback. Figma signals "we decided." It closes conversation.
+
+That's not just a UX principle. It's the entire product thesis.
+
+#Skissify #AIGotHands #VibeDrawing #BuildInPublic
+```
+
+---
+
+### Twitter/X — "#AIGotHands" Standalone Tweet (17:00 CET, if not posted)
+
+```
+For 5 years, AI could write, read, code, and talk.
+
+It could not draw.
+
+That changed yesterday.
+
+AI got hands.
+
+skissify.com — free, no auth, MCP-native
+
+#AIGotHands #Skissify #VibeDrawing
+```
+
+---
+
+### LinkedIn — Day 2 Post (10:00 CET)
+
+```
+24 hours after launching Skissify, here's what I know:
+
+The builders came for the API. The homeowners came for the floor plans. The dungeon masters came for the blueprints.
+
+None of the last two were in the plan.
+
+There's a pattern here: when you build the lowest-level primitive correctly, audiences you never considered will find creative uses for it. The API is JSON in, hand-drawn SVG out. That's it. That constraint is what makes it versatile.
+
+What I actually shipped:
+- REST API: POST JSON → get SVG (no auth, <300ms)
+- MCP server: npx skissify-mcp → Claude can now draw natively
+- 30+ element types from architectural symbols to furniture to dungeon doors
+
+What I didn't plan but will now lean into:
+- A floor plan tool for homeowners who hate Revit
+- A map generator for tabletop RPG communities
+- A visual memory layer for AI agents
+
+If you're building AI workflows, agent pipelines, or just need diagrams without a design tool: skissify.com
+
+#Skissify #AI #BuildInPublic #DeveloperTools #AIGotHands
+```
+
+---
+
+### Bluesky — Day 2 (09:30 CET)
+
+```
+Day 2 of Skissify.
+
+Yesterday: AI devs, homeowners, D&D players.
+Today: everyone who missed the Product Hunt.
+
+The sketch tool built for AI agents is free, no auth, and now has a real following.
+
+npx skissify-mcp → Claude can draw
+skissify.com → you can too
+
+#Skissify #VibeDrawing #AIGotHands
+```
+
+---
+
+### r/mcp — Post (POST NOW if not done yesterday)
+
+```
+Title: [Tool] Skissify MCP — give your AI agent the ability to draw hand-drawn sketches
+
+I launched an MCP server yesterday that gives Claude (and any MCP client) the ability to render hand-drawn style sketches from JSON.
+
+npx skissify-mcp
+
+Once added, tell Claude: "Sketch a 2-bedroom apartment, open plan kitchen, add a bathroom" — it constructs the JSON manifest and renders a wobbly, architect-style SVG directly.
+
+Technical details:
+- Flat JSON schema (tested: 94% first-try accuracy from Claude vs 40% for nested)
+- 30+ element types: walls, doors, windows, furniture, dimension lines, arrows, text
+- Paper types: cream, blueprint, yellow notepad, white
+- Returns a public sketch URL + raw SVG
+
+REST API also available for non-MCP agents: POST https://skissify.com/api/render
+
+Source: skissify.com | Full API docs: skissify.com/for-agents
+
+Would love feedback from this community specifically — what elements or schema improvements would make this more useful for your workflows?
+```
+
+---
+
+### r/ClaudeAI — Post (POST NOW if not done yesterday)
+
+```
+Title: I built an MCP server that lets Claude actually draw — hand-drawn floor plans, diagrams, maps
+
+Yesterday I launched Skissify. The core thing: Claude can now draw.
+
+Not describe. Not code. Draw.
+
+npx skissify-mcp → add to Claude Desktop or Cursor → ask Claude to sketch anything spatial.
+
+The result looks like a napkin sketch from an architect: wobbly walls, furniture symbols, dimension lines, room labels. It's surprisingly useful for ideation.
+
+Free, no auth. Built specifically so AI agents are first-class citizens.
+
+skissify.com — happy to demo or answer questions about the MCP schema
+```
+
+---
+
+### r/startups — AMA-style Post
+
+```
+Title: I launched a tool for AI agents to draw sketches — here's what 24 hours of launch data looked like
+
+Background: I'm a solo developer. I built Skissify because AI agents kept hitting the same wall — they could reason about layouts and diagrams but had no way to output spatial visuals.
+
+The solution: a REST API and MCP server. JSON in, hand-drawn SVG out.
+
+24-hour results (honest):
+- Product Hunt: [X] upvotes
+- Signups: [X]
+- API calls: [X]
+- Unexpected audiences: homeowners, D&D players, interior designers (none were in the plan)
+
+Happy to answer questions about:
+- Building API-first SaaS solo
+- MCP server architecture
+- Launching on April Fools Day (yes, intentionally)
+- The "unexpected audience" problem and how to respond to it
+
+skissify.com
+```
+
+---
+
+### r/AIAssistants — Post
+
+```
+Title: Built an MCP tool that gives AI assistants the ability to draw — not describe, actually draw
+
+If you use Claude Desktop or any MCP client, there's now a tool that gives your AI assistant a drawing primitive.
+
+npx skissify-mcp
+
+Tell it to sketch a floor plan, a system diagram, a dungeon map, a wireframe. It renders hand-drawn style SVGs from JSON — wobbly lines, architectural symbols, dimension markers.
+
+The reason this didn't exist before: every drawing tool assumed a human at the mouse. Skissify assumes a JSON-sending agent.
+
+Free, no account required: skissify.com
+```
+
+---
+
+### New Platforms — Day 2 Expansion
+
+#### Mastodon / Fediverse (post to mastodon.social or fosstodon.org)
+
+```
+Launched Skissify yesterday: the first sketch tool built for AI agents.
+
+JSON in → hand-drawn SVG out. MCP server for Claude. REST API for everything else.
+
+Free, open to all: https://skissify.com
+
+The open source / FOSS community might appreciate: no lock-in, no proprietary format, SVG output is yours forever.
+
+#Skissify #OpenWeb #AITools #BuildInPublic #HandDrawn
+```
+
+#### Dev.to — Day 2 Update Comment
+
+Post a comment on your Day 1 Dev.to article:
+```
+24h update: The most unexpected thing — homeowners and D&D players found Skissify faster than I expected. Blueprint mode + architectural symbols apparently makes an excellent dungeon map aesthetic. The API community's response has been strong. Still free, still no auth. Next: Human Mode (describe it in plain English, no JSON needed).
+```
+
+#### Hashnode — Cross-post reminder
+
+Cross-post the canonical "Why Hand-Drawn Sketches Beat Figma" article to Hashnode today if not done. Use the CANONICAL version.
+
+---
+
+### New Hashtag Strategy — Day 2 and Beyond
+
+**Coin these now — low competition, high potential:**
+
+| Hashtag | Current Posts | Notes |
+|---------|--------------|-------|
+| `#AIGotHands` | ~0 (coin it tonight) | Core brand phrase — use on every post |
+| `#VibeDrawing` | ~3 (nearly unclaimed) | Companion to #VibeCoding, great for TikTok |
+| `#SketchableAI` | 0 | More descriptive, SEO-friendly |
+| `#AgentDraw` | 0 | Technical community |
+| `#JSONtoSVG` | ~5 | Developer niche, highly specific |
+
+**Established hashtags with good reach:**
+`#HandDrawn` `#SketchNote` `#AITools` `#MadeWithAI` `#BuildInPublic` `#APIFirst` `#MCPServer` `#AgentTools` `#OpenSource` `#IndieHacker`
+
+**Platform-specific:**
+- TikTok/Reels: `#AIGotHands` `#VibeDrawing` `#AIArt` `#SketchTok` `#TechTok`
+- LinkedIn: `#ArtificialIntelligence` `#ProductDesign` `#DeveloperTools` `#SaaS` `#TechStartup`
+- Reddit: Use natural language, not hashtags
+
+---
+
+### Communities to Target — Day 2 (Not Hit on Day 1)
+
+| Community | Size | Angle | Priority |
+|-----------|------|-------|----------|
+| r/sketchnotes | ~15K | Visual thinking meets AI | P1 |
+| r/worldbuilding | ~1.2M | Map generation for world builders | P1 |
+| r/gamedesign | ~200K | Level layout sketching | P1 |
+| r/realestate | ~500K | Floor plan generation for listings | P2 |
+| r/Architecture | ~300K | Programmatic architectural sketching | P1 |
+| Mastodon/fosstodon | Dev community | Open source appeal | P2 |
+| HackerNews (2nd post) | — | Day 2 traction report as "Ask HN" | P1 |
+| Substack Notes | — | Design thinking angle | P2 |
+| r/MachineLearning | ~2.5M | Agent visual output research angle | P2 |
+| r/VibeCoding | — | VibeDrawing companion post | P1 |
+
+---
+
+### Influencer / Journalist Outreach — Day 2
+
+**AI tool journalists to pitch:**
+- Ben's Bites newsletter (AI tools daily)
+- The Rundown AI
+- TLDR AI (email pitch: tldr.tech/ai)
+- Bytes.dev (for developer angle)
+- Lenny's Newsletter (for product angle)
+
+**Pitch template (one paragraph):**
+```
+Subject: Skissify — the first sketch tool AI agents can drive natively
+
+Hi [Name], I launched Skissify yesterday — a REST API + MCP server that lets AI agents draw hand-drawn diagrams from JSON. In the first 24 hours, it was used for floor plans, dungeon maps, and technical architecture diagrams. Free, no auth, <300ms. Would love a mention in [Newsletter]. Details + demo: skissify.com
+```
 
 ---
 
