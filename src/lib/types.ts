@@ -48,6 +48,11 @@ export interface BaseElement {
   fillColor?: string;
   /** When false, the element is hidden from canvas/SVG rendering and non-selectable via click */
   visible?: boolean;
+  /**
+   * Per-element opacity multiplier (0.0 = fully transparent, 1.0 = fully opaque).
+   * Multiplies the tool's base opacity. Omit or set to 1 for default rendering.
+   */
+  opacity?: number;
 }
 
 export interface LineElement extends BaseElement {

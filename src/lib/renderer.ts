@@ -458,6 +458,11 @@ function renderElement(
 
   ctx.save();
 
+  // Apply per-element opacity (multiplies on top of any globalAlpha set by callers)
+  if (el.opacity != null && el.opacity !== 1) {
+    ctx.globalAlpha = ctx.globalAlpha * el.opacity;
+  }
+
   // Apply element rotation if specified
   if (el.rotation) {
     const center = getElementCenter(el);

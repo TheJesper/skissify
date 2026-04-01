@@ -224,6 +224,7 @@ function EditorInner({
     strokeWidthSelected,
     fillColorSelected,
     fontFamilySelected,
+    opacitySelected,
     rotateSelected,
     nudgeSelected,
     selectAll,
@@ -733,6 +734,16 @@ function EditorInner({
     return [...selectedElements].some((i) => !!(sketch.elements[i] as unknown as Record<string, unknown>)?.groupId);
   })();
 
+  // Opacity of the first selected element (undefined = use tool default = 1)
+  const selectedOpacity: number | undefined = (() => {
+    if (selectedElements.size === 0) return undefined;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el) return undefined;
+    const raw = (el as unknown as Record<string, unknown>).opacity;
+    return typeof raw === "number" ? raw : undefined;
+  })();
+
   // Single-element coordinate editor: the actual element when exactly 1 is selected
   const singleSelectedIdx: number | undefined = selectedElements.size === 1 ? [...selectedElements][0] : undefined;
   const singleSelectedElement = singleSelectedIdx != null ? sketch.elements[singleSelectedIdx] : undefined;
@@ -864,6 +875,8 @@ function EditorInner({
                 }
               }
             }}
+            selectedOpacity={selectedOpacity}
+            onOpacitySelected={opacitySelected}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -1047,6 +1060,8 @@ function EditorInner({
               }
             }
           }}
+          selectedOpacity={selectedOpacity}
+          onOpacitySelected={opacitySelected}
         />
       </MobileBottomSheet>
     </div>

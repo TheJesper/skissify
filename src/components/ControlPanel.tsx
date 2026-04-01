@@ -109,6 +109,10 @@ interface ControlPanelProps {
   onWallWidthSelected?: (w: number | undefined) => void;
   /** True when any selected element is a line type */
   hasLineSelected?: boolean;
+  /** Current opacity of the first selected element (0-1, undefined = default/1) */
+  selectedOpacity?: number;
+  /** Called when the user sets opacity on selected elements (undefined = remove override) */
+  onOpacitySelected?: (opacity: number | undefined) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -640,6 +644,8 @@ export default function ControlPanel({
   selectedWallWidth,
   onWallWidthSelected,
   hasLineSelected,
+  selectedOpacity,
+  onOpacitySelected,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -961,6 +967,29 @@ export default function ControlPanel({
                 />
                 <span className="text-[10px] text-[#93a1a1] w-6 text-right font-mono">
                   {(selectedStrokeWidth ?? 1).toFixed(1)}
+                </span>
+              </div>
+            )}
+            {onOpacitySelected && (
+              <div className="flex items-center gap-2">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide shrink-0">
+                  Opacity
+                </label>
+                <input
+                  type="range"
+                  min={0}
+                  max={1}
+                  step={0.05}
+                  value={selectedOpacity ?? 1}
+                  onChange={(e) => {
+                    const v = parseFloat(e.target.value);
+                    onOpacitySelected(v >= 1 ? undefined : v);
+                  }}
+                  className="flex-1 h-1 accent-[#268bd2]"
+                  title="Element opacity (0 = transparent, 1 = opaque)"
+                />
+                <span className="text-[10px] text-[#93a1a1] w-8 text-right font-mono">
+                  {Math.round((selectedOpacity ?? 1) * 100)}%
                 </span>
               </div>
             )}

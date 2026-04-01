@@ -12,6 +12,8 @@ const elementBaseSchema = z.object({
   groupId: z.string().max(64).optional(),
   /** When false, the element is hidden from rendering */
   visible: z.boolean().optional(),
+  /** Per-element opacity multiplier (0-1) */
+  opacity: z.number().min(0).max(1).optional(),
 });
 
 const lineElementSchema = elementBaseSchema.extend({

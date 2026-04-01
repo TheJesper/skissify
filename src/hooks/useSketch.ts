@@ -599,6 +599,33 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [selectedElements, pushHistory]
   );
 
+  /**
+   * Set opacity on all selected elements (0 = transparent, 1 = opaque).
+   * Pass undefined to remove the per-element opacity override (falls back to tool opacity).
+   */
+  const opacitySelected = useCallback(
+    (opacity: number | undefined) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          if (opacity === undefined || opacity >= 1) {
+            // Remove opacity property (use tool default)
+            const { opacity: _removed, ...rest } = el as typeof el & { opacity?: number };
+            void _removed;
+            return rest as SketchData["elements"][number];
+          }
+          return { ...el, opacity };
+        });
+        const next = { ...prev, elements: newElements as SketchData["elements"] };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
   const rotateSelected = useCallback(
     (degrees: number) => {
       if (selectedElements.size === 0) return;
@@ -1071,6 +1098,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     strokeWidthSelected,
     fillColorSelected,
     fontFamilySelected,
+    opacitySelected,
     setRenderStyle,
     setSnapGrid,
     setMetadata,

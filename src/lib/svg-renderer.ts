@@ -109,10 +109,11 @@ interface StrokeStyle {
 
 function getStrokeStyle(sketch: SketchData, el: SketchElement, defaultColor: string): StrokeStyle {
   const tool = TOOL_STYLES[sketch.tool];
+  const elOpacity = (el as { opacity?: number }).opacity;
   return {
     stroke: el.color || defaultColor,
     strokeWidth: el.strokeWidth || tool.lineWidth,
-    opacity: tool.opacity,
+    opacity: elOpacity != null ? tool.opacity * elOpacity : tool.opacity,
   };
 }
 
@@ -767,8 +768,14 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
     }
   }
 
-  if (rotationPrefix) {
-    return `${rotationPrefix}\n${parts.join("\n")}\n${rotationSuffix}`;
+  const elOpacity = (el as { opacity?: number }).opacity;
+  const opacityPrefix = elOpacity != null && elOpacity !== 1 ? `<g opacity="${elOpacity.toFixed(3)}">` : "";
+  const opacitySuffix = opacityPrefix ? "</g>" : "";
+
+  if (rotationPrefix || opacityPrefix) {
+    const inner = parts.join("\n");
+    const rotated = rotationPrefix ? `${rotationPrefix}\n${inner}\n${rotationSuffix}` : inner;
+    return opacityPrefix ? `${opacityPrefix}\n${rotated}\n${opacitySuffix}` : rotated;
   }
   return parts.join("\n");
 }
