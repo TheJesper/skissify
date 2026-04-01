@@ -174,7 +174,7 @@ export const presets: Record<string, SketchData> = {
 
       // ── Dimensions ──────────────────────────────────────────────────────────
       { type: "dim", x1: 60, y1: 40, x2: 840, y2: 40, label: "15.6 m", color: "#8ab8e8" },
-      { type: "dim", x1: 38, y1: 60, x2: 38, y2: 590, label: "10.6 m", color: "#8ab8e8", offset: -20 },
+      { type: "dim", x1: 60, y1: 60, x2: 60, y2: 590, label: "10.6 m", color: "#8ab8e8", offset: 30 },
 
       // ── Stair in hall ────────────────────────────────────────────────────────
       { type: "stair", x: 660, y: 80, w: 65, h: 150, steps: 9, color: "#8ab8e8" },

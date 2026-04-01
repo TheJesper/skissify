@@ -56,6 +56,7 @@ export default function JsonEditor({ value, onChange }: JsonEditorProps) {
           color: "#839496",
           borderTop: isValid ? "1px solid #93a1a1" : "1px solid #dc322f",
           minHeight: "200px",
+          fontFamily: "'JetBrains Mono', 'Courier New', monospace",
         }}
       />
     </div>

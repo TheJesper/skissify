@@ -35,7 +35,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Kalam', system-ui, -apple-system, sans-serif;
+}
+
+/* Monospace / code elements use JetBrains Mono */
+code, pre, kbd,
+textarea.font-mono, .font-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 /* Smooth page transitions */
