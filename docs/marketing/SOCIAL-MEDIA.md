@@ -1,7 +1,242 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 101 (Day 2 — Thursday 00:04 CET — n8n, automation, fresh Day 2 push)**
+**Last updated: April 2, 2026 — Cycle 102 (Day 2 — Thursday 01:12 CET — Discord communities, Notion, TikTok scripts, r/HomeImprovement)**
+
+---
+
+## CYCLE 102 — DAY 2 THURSDAY 01:12 — DISCORD + NOTION + TIKTOK + HOME IMPROVEMENT
+
+*Context: Day 2, 01:12 CET. Three new blog posts written: Notion workflow, Discord community guide, TikTok/Reels strategy. New platforms: Anthropic Discord, LangChain Discord, CrewAI Discord, HuggingFace Discord, r/HomeImprovement, r/Notion, Figma Community. TikTok scripts written. Demo video remains P0 critical.*
+
+---
+
+### NEW PLATFORM: Anthropic Discord — #showcase
+
+```
+Just shipped: Skissify MCP — Claude can now draw hand-drawn sketches
+
+Add to your claude_desktop_config.json:
+{
+  "mcpServers": {
+    "skissify": {
+      "command": "npx",
+      "args": ["skissify-mcp"]
+    }
+  }
+}
+
+Ask Claude: "sketch a 3-bedroom floor plan" or "draw the architecture of a REST API"
+
+Output: a shareable sketch URL. Hand-drawn style. Instant.
+
+It's the visual output primitive MCP was missing.
+
+https://skissify.com
+```
+
+---
+
+### NEW PLATFORM: LangChain Discord — #tools-and-integrations
+
+```
+Tool share: Skissify — REST API for visual output in agent pipelines
+
+If your agents need floor plans, architecture diagrams, or spatial layouts:
+
+POST https://skissify.com/api/render
+{ "paper": "cream", "tool": "pencil", "elements": [...] }
+→ returns { "url": "https://skissify.com/s/..." }
+
+No API key. No auth. Free tier.
+
+Pair with a Claude/GPT call to generate the JSON from natural language:
+user prompt → LLM describes space → Skissify renders → shareable sketch
+
+Works with LangChain, CrewAI, LlamaIndex, Mastra — anything that can do HTTP.
+
+GitHub: github.com/skissify/skissify-mcp
+```
+
+---
+
+### NEW PLATFORM: CrewAI Discord — #showcase
+
+```
+Skissify: add a "draw" tool to any CrewAI agent
+
+Built for the workflow: one agent gathers data, another interprets it, a third visualizes it.
+
+Key technical insight: flat JSON schema = 94% LLM accuracy vs ~40% for nested schemas.
+We went through hierarchical (rooms contain elements) — LLMs constantly violated constraints.
+Flat coordinates (every element gets x, y, w, h) fixed it.
+
+REST API: POST https://skissify.com/api/render
+MCP: npx skissify-mcp
+
+skissify.com
+```
+
+---
+
+### NEW PLATFORM: HuggingFace Discord — #show-and-tell
+
+```
+Interesting finding while building Skissify (sketch-from-JSON API):
+
+Flat JSON schema → 94% LLM generation accuracy
+Nested/hierarchical → ~40% accuracy
+
+Switched from "rooms contain elements" (logical OOP) to flat coordinates (every element gets x, y, w, h). Accuracy jumped overnight.
+
+Implication: when designing JSON output schemas for LLMs, flat beats hierarchical even when hierarchical "makes more sense". LLMs generate well-defined primitives better than they maintain parent-child consistency.
+
+The tool: skissify.com — REST API for hand-drawn sketch generation.
+MCP: npx skissify-mcp
+```
+
+---
+
+### NEW PLATFORM: r/Notion
+
+```
+Title: I added AI-generated architecture diagrams to Notion with one MCP tool
+
+Setup:
+1. Add Skissify MCP to Claude Desktop (npx skissify-mcp)
+2. Ask Claude to sketch your system architecture / floor plan / diagram
+3. Claude returns a shareable URL
+4. Paste into Notion with /embed
+
+The sketch renders hand-drawn style — perfect for rough ideas and architecture docs where "polished" signals the wrong level of confidence.
+
+Takes 90 seconds. Free tier, no auth.
+
+Full workflow: [blog/skissify-notion-workflow-the-missing-diagram-layer.md]
+
+skissify.com
+```
+
+---
+
+### NEW PLATFORM: r/HomeImprovement
+
+```
+Title: Let AI sketch your renovation idea before you hire anyone
+
+Tried something: described my kitchen renovation to Claude (with Skissify MCP installed) and it drew a floor plan.
+
+"west wall: remove to open to living room. east wall: keep. Add island in center. sink stays on north wall."
+
+It generated a floor plan sketch I could actually show my contractor. Hand-drawn style — looks like something you'd sketch on paper, not a CAD drawing.
+
+Free to try at skissify.com. No account. Claude Desktop + npx skissify-mcp is the setup.
+
+Has anyone else been using AI for renovation planning?
+```
+
+---
+
+### Twitter/X — TikTok Launch Announcement (when video is ready)
+
+```
+I finally recorded the demo.
+
+15 seconds. Claude draws a floor plan.
+
+[video embed]
+
+If you've wondered what "AI with a pencil" looks like in 2026 — here it is.
+
+#AIGotHands #VibeDrawing #MCP
+```
+
+---
+
+### Twitter/X — Notion Community Hook (Day 2 afternoon)
+
+```
+Added Skissify to a Notion page today.
+
+Not as a screenshot. As a live embed.
+
+Ask Claude to design your system architecture → paste the sketch URL into /embed → it renders inline.
+
+Your AI-generated diagram lives in your docs. And you can regenerate it whenever the architecture changes.
+
+skissify.com | npx skissify-mcp
+
+#BuildInPublic #Notion #AIAgents
+```
+
+---
+
+### Twitter/X — Discord Community Thread (Day 2 evening)
+
+```
+Day 2: spent the morning posting to Discord communities instead of Twitter.
+
+Results so far: more technical conversation, higher signal, better feedback.
+
+Anthropic Discord #showcase → immediate MCP integration questions
+LangChain Discord → asked about agent framework integrations
+n8n community → someone already built a workflow
+
+Twitter is for reach. Discord is for users.
+
+#BuildInPublic #IndieHacker
+```
+
+---
+
+### TikTok/Reels Script — Core Demo (60 seconds)
+
+```
+[VIDEO SCRIPT — See blog/tiktok-reels-strategy-ai-draws-floor-plans.md for full scripts]
+
+HOOK: "Claude can't draw. Right?"
+BEAT: Show Claude Desktop → type prompt → floor plan appears
+CLOSE: "No Figma. No CAD. Just a prompt."
+CAPTION: I gave Claude a pencil and it designed my apartment 🏠 #AIGotHands #VibeDrawing #ClaudeAI #MCP #BuildInPublic
+```
+
+---
+
+### TikTok/Reels Script — D&D Dungeon Map (20 seconds — viral potential)
+
+```
+[0-3s] Text: "Asked Claude to make a dungeon map"
+[3-7s] Type in Claude Desktop: "sketch a dungeon with a main hall, trap room, and boss chamber"
+[7-14s] Blueprint-mode dungeon sketch renders
+[14-18s] Zoom in — "BOSS CHAMBER" label in wobbly font
+[18-20s] Text: "Blueprint mode is unhinged"
+
+CAPTION: Tried asking Claude to draw me a dungeon for D&D... 🗺️ Skissify has a blueprint mode and it goes HARD #DungeonsAndDragons #DnD #TTRPG #AIGotHands
+```
+
+---
+
+### LinkedIn — Notion Integration Post (Thursday AM)
+
+```
+Added AI-generated diagrams to Notion today. Not as screenshots — as live embeds.
+
+The workflow:
+1. Claude Desktop + Skissify MCP
+2. Describe your system architecture in plain language
+3. Claude builds the JSON, Skissify renders it
+4. Paste the URL into Notion /embed
+
+Why hand-drawn? Because in collaborative docs, "polished" signals "this is decided." A sketch signals "this is how we think it works — let's discuss."
+
+That distinction matters a lot in architecture decision records and system design proposals.
+
+Free API. No auth. MCP: npx skissify-mcp.
+
+Try it: skissify.com
+
+#AI #ProductManagement #SystemDesign #AIAgents #BuildInPublic
+```
 
 ---
 

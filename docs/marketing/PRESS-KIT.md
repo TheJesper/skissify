@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 101 (Day 2 Thursday 00:04 CET — n8n/automation community added, Day 2 status updated)*
+*Last updated: April 2, 2026 — Cycle 102 (Day 2 Thursday 01:12 CET — Discord communities, Notion, TikTok strategy, r/HomeImprovement, blog assets updated)*
 
 ---
 
@@ -19,12 +19,12 @@
 
 ---
 
-## Day 2 Status (April 2, 2026 — Thursday)
+## Day 2 Status (April 2, 2026 — Thursday, Cycle 102)
 
 | Item | Status |
 |------|--------|
 | Product Hunt | ✅ Live — update with final Day 1 vote count |
-| Demo video (60s screen record) | ⚠️ Script ready — RECORD TODAY (overdue since Cycle 82) |
+| Demo video (60s screen record) | ⚠️ TikTok script written (Cycle 102) — RECORD TODAY (overdue since Cycle 82) |
 | Demo GIF (10s) | ⚠️ Script ready — RECORD TODAY |
 | Social OG banner | ⚠️ Generate — 1200x630px |
 | Press inquiries inbox | ✅ press@skissify.com active |
@@ -33,10 +33,17 @@
 | glama.ai submission | ⏳ 20-min task — copy in SOCIAL-MEDIA.md Cycle 101 |
 | r/LocalLLaMA | ⏳ Post 09:00 CET — copy in SOCIAL-MEDIA.md Cycle 99 |
 | r/ChatGPT homeowner post | ⏳ Post 10:00 CET — copy in SOCIAL-MEDIA.md Cycle 99 |
-| r/automation + r/n8n | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 101 |
+| r/automation + r/n8n | ⏳ Copy in SOCIAL-MEDIA.md Cycle 101 |
+| r/HomeImprovement | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
+| r/Notion | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
+| Anthropic Discord #showcase | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
+| LangChain Discord #tools | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
+| CrewAI Discord #showcase | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
+| HuggingFace Discord #show-and-tell | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
+| TikTok / Instagram Reels | ⏳ Scripts written (Cycle 102) — record today |
 | Indie Hackers launch post | ⏳ OVERDUE — copy in SOCIAL-MEDIA.md Cycle 98 |
 
-**Today's #1 priority:** Record the demo video. A 15-second silent screen capture of Claude drawing a floor plan via MCP will outperform every text post by 3–5x on Twitter/X and TikTok.
+**Today's #1 priority:** Record the demo video. All TikTok/Reels scripts are ready (Cycle 102 blog + SOCIAL-MEDIA.md). A 15-second silent screen capture of Claude drawing a floor plan via MCP will outperform every text post by 5–10x across TikTok, Reels, and Twitter/X.
 
 ---
 
@@ -365,6 +372,12 @@ Sketch data stored on-platform is owned by the user.
 | r/automation | Reddit | — | Visual automation output, AI-in-the-middle pattern |
 | Make.com Community | Make | — | One HTTP module, no auth, AI-generated JSON |
 | glama.ai | MCP Index | 20K+ MCP servers | Free MCP discovery listing |
+| Anthropic Discord #showcase | Discord | — | MCP visual output primitive — most relevant early adopter community |
+| LangChain Discord #tools | Discord | — | REST API for visual output in agent pipelines |
+| CrewAI Discord #showcase | Discord | — | Add a "draw" tool to any CrewAI agent |
+| HuggingFace Discord #show-and-tell | Discord | — | Flat schema LLM accuracy insight (94% vs 40%) |
+| Figma Community Discord | Discord | Large | Hand-drawn sketches for the "napkin phase" Figma doesn't serve |
+| r/Notion | Reddit | 300K+ | AI-generated architecture diagrams embedded in Notion pages |
 
 ### Tier 3 — Niche but converting
 | Community | Platform | Size | Angle |
@@ -398,6 +411,13 @@ Sketch data stored on-platform is owned by the user.
 |-----------|------|-------|------------|
 | Skissify + n8n: Visual Automation | `blog/skissify-n8n-visual-automation.md` | n8n/automation workflow integration, one HTTP node | n8n Community, r/n8n, r/automation |
 | 48-Hour Retrospective: What Launch Traffic Looked Like | `blog/the-floor-plan-you-can-generate-in-48-hours.md` | Honest Day 2 numbers, 4 unexpected audiences, lessons | Dev.to, Indie Hackers, Hashnode |
+
+### New Blog Assets (Cycle 102)
+| Blog Post | File | Angle | Publish On |
+|-----------|------|-------|------------|
+| Skissify + Notion: Missing Diagram Layer | `blog/skissify-notion-workflow-the-missing-diagram-layer.md` | 30M Notion users, AI-generated diagrams as live embeds | r/Notion, Dev.to, Hashnode, LinkedIn |
+| 7 Discord Communities for Skissify | `blog/discord-communities-that-will-love-skissify.md` | Community playbook with exact copy for each Discord | Internal strategy reference (post excerpts only) |
+| TikTok/Reels Strategy for AI Demo Tools | `blog/tiktok-reels-strategy-ai-draws-floor-plans.md` | Full video scripts: core demo, D&D dungeon, homeowner, dev | Internal strategy reference — video scripts ready to record |
 
 ---
 

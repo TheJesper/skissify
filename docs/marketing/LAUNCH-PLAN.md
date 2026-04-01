@@ -1,7 +1,78 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — 00:04 CET, Day 2 (SEE CYCLE 101)**
+**Current Date: April 2, 2026 — 01:12 CET, Day 2 (SEE CYCLE 102)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 102 — Day 2 Thursday 01:12 CET)
+
+### Cycle 102 — New Blog Posts Written (3 new posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Skissify + Notion: The Missing Diagram Layer | `blog/skissify-notion-workflow-the-missing-diagram-layer.md` | 30M Notion users — AI-generated diagrams as live embeds, not screenshots | ✅ Ready to publish |
+| 7 Discord Communities That Will Love Skissify | `blog/discord-communities-that-will-love-skissify.md` | Community strategy playbook with exact copy for each Discord server | ✅ Internal reference + excerpts |
+| TikTok/Reels Strategy: AI Draws Floor Plans | `blog/tiktok-reels-strategy-ai-draws-floor-plans.md` | Full video scripts for 5 TikTok formats — ready to record | ✅ Scripts ready |
+
+### Cycle 102 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Anthropic Discord #showcase copy | ✅ Added |
+| LangChain Discord #tools-and-integrations copy | ✅ Added |
+| CrewAI Discord #showcase copy | ✅ Added |
+| HuggingFace Discord #show-and-tell copy | ✅ Added |
+| Figma Community Discord copy | ✅ Added |
+| r/Notion post copy | ✅ Added |
+| r/HomeImprovement post copy | ✅ Added |
+| Twitter/X TikTok launch announcement (for after recording) | ✅ Added |
+| Twitter/X Notion community hook (Thursday afternoon) | ✅ Added |
+| Twitter/X Discord community results thread (Thursday evening) | ✅ Added |
+| TikTok/Reels script: core demo 60s | ✅ Added |
+| TikTok/Reels script: D&D dungeon map 20s (high viral potential) | ✅ Added |
+| LinkedIn Notion integration post | ✅ Added |
+
+### Cycle 102 — PRESS-KIT.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Day 2 status table updated with 7 new Discord/Reddit channels | ✅ Updated |
+| Anthropic Discord, LangChain, CrewAI, HuggingFace, Figma, r/Notion added to Tier 2 | ✅ Added |
+| Cycle 102 blog assets table added | ✅ Added |
+
+### Cycle 102 — Priority Actions for Thursday April 2 (MORNING — URGENT)
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| **RECORD DEMO VIDEO** — All TikTok scripts ready, all you need is screen capture | ⏳ Record Thursday ASAP | 🔴 P0 — CRITICAL (overdue since Cycle 82) |
+| Post to Anthropic Discord #showcase (copy in Cycle 102) | ⏳ Get invite if needed + post | 🔴 P0 |
+| Post to LangChain Discord #tools (copy in Cycle 102) | ⏳ Post Thursday 09:00 CET | 🔴 P0 |
+| Post to r/n8n + r/automation (copy in Cycle 101) | ⏳ Post Thursday 10:00 CET | 🔴 P0 |
+| Post to r/LocalLLaMA (copy in Cycle 99) | ⏳ Post Thursday 09:00 CET | 🔴 P0 |
+| Submit to glama.ai (copy in Cycle 101) | ⏳ 20-min task — do now | 🔴 P0 |
+| Publish Notion blog to r/Notion + Dev.to | ⏳ Thursday AM | 🟡 P1 |
+| Post r/HomeImprovement (copy in Cycle 102) | ⏳ Thursday AM | 🟡 P1 |
+| TikTok post: core demo video | ⏳ After recording | 🔴 P0 (once recorded) |
+| TikTok post: D&D dungeon map | ⏳ After recording | 🟡 P1 (once recorded) |
+| Indie Hackers post (copy in Cycle 98 — STILL overdue) | ⏳ Post NOW | 🔴 P0 |
+
+### Cycle 102 — New Community Discovery
+
+| Channel | Size | Angle | Priority |
+|---------|------|-------|---------|
+| Anthropic Discord #showcase | Curated AI builders | MCP visual primitive — most qualified audience anywhere | 🔴 P0 |
+| LangChain Discord | Very active | Agent tool integration — they actively share/test tools | 🔴 P0 |
+| r/Notion | 300K+ | 30M Notion users — diagram layer is a real pain | 🟡 P1 |
+| r/HomeImprovement | 500K+ | Non-developer audience — renovation sketch use case | 🟡 P1 |
+| TikTok #AIGotHands | Emerging tag | Visual demo tool — transformation content performs extremely well | 🔴 P0 (need video) |
+| Instagram Reels | — | Same content as TikTok — cross-post immediately | 🟡 P1 |
+
+### Cycle 102 — Strategic Insight (Discord First)
+
+The pattern from Day 1 post-mortems: Twitter reaches many but converts few. Discord servers for AI builder communities (Anthropic, LangChain, CrewAI) are smaller but have dramatically higher conversion intent. These are people actively extending Claude, building agent pipelines, looking for output primitives. They will test Skissify immediately after seeing it.
+
+**Day 2 morning playbook:** Discord communities first (Anthropic, LangChain, HuggingFace), Reddit second (r/n8n, r/LocalLLaMA), Twitter third.
 
 ---
 
