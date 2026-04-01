@@ -5564,3 +5564,80 @@ Every use case that is NOT screen wireframing — floor plans, architectural lay
 | SketchUp 2026: AI textures in 3D tool | Rising AI-in-architecture awareness; category tailwind | LOW urgency |
 
 ---
+
+---
+
+## 2026-04-02 — What Makes Someone Pay EUR 2/mo for Skissify
+
+**Date**: April 2, 2026 | **Sources**: Freemius micro-SaaS research, Excalidraw MCP GitHub, tldraw releases, MCP ecosystem data, Crunchbase Q1 2026
+
+---
+
+### Core Finding: EUR 2 is Not a Price Point — It's a Commitment Signal
+
+The EUR 2/mo price is psychologically significant not because of the money, but because it signals intent. Freemius data (2026) on micro-SaaS (<1,000 users): once a user crosses ANY paid threshold (even EUR 1.99), churn drops dramatically. The free-to-any-paid transition is the hardest step. EUR 2 merely has to clear "worth the cost of a coffee" — it does not need to justify a budget meeting.
+
+**What triggers that crossing**:
+
+---
+
+### Trigger 1: The Blocked Workflow (Highest Conversion Intent)
+
+A developer has a working pipeline — Claude generates JSON, they need a visual output. They have used Skissify free tier. They hit the free tier limit (50 saves, watermark on export, no API access). Their workflow is *blocked*. EUR 2 to unblock takes 5 seconds. This is impulse purchase territory — same psychology as app store purchases.
+
+**Product implication**: The free tier must generate real value AND have a clearly felt ceiling. The watermark on export and the 50-save limit are the right blockers. The API key unlock at EUR 2 is the right trigger.
+
+---
+
+### Trigger 2: The Credibility Requirement (B2B Context)
+
+Developer is showing a demo or sharing a sketch with a client or manager. The "Powered by Skissify (Free)" watermark on the export is not acceptable in a professional context. EUR 2 removes it. This trigger fires on first professional use — often within days of signup.
+
+**Product implication**: Make the watermark visually present enough to be noticed, but not so intrusive it breaks the sketch aesthetics. The upgrade CTA on the export dialog must be one click.
+
+---
+
+### Trigger 3: The Automation Unlock (API-Driven Users)
+
+Developer read the Excalidraw MCP tutorial, tried it, hit the browser-session limitation. Googled "headless sketch API" or "stateless diagram renderer." Found Skissify. Posted a JSON manifest. It worked. They want to use it in CI/CD or an agent pipeline. The API key requires Pro (EUR 5) or Starter (EUR 2 if introduced). EUR 2 starter API key (rate-limited) is the right on-ramp.
+
+**Source evidence**: Excalidraw MCP official now live (Jan 2026) but browser-dependent. This actively creates displaced developers looking for headless alternatives.
+
+---
+
+### Trigger 4: The Annual Plan Framing
+
+EUR 2/mo billed annually = EUR 24/yr. Framed as "EUR 24/year — less than a lunch" this clears the mental expense threshold without triggering an approval process. Freemius data: annual plans significantly improve retention and reduce churn. Offering a EUR 19.99/yr option (discount from EUR 24) may outperform the EUR 2/mo monthly framing entirely.
+
+**Pricing test recommended**: EUR 1.99/mo vs EUR 19.99/yr side by side. Annual framing typically converts 30-40% of buyers to the annual option when shown first.
+
+---
+
+### Trigger 5: The "I Support This" User
+
+Developer has used Skissify, likes it, wants it to exist. EUR 2/mo is a patronage decision, not a feature purchase. This segment exists especially among developers who know how hard solo projects are. They need a simple reason: "Your EUR 2/mo keeps Skissify alive and gets you [feature list]."
+
+**Product implication**: Show the solo-founder story somewhere on the pricing page. Not a sob story — just honest framing. "Built by one person. Your subscription funds the next feature."
+
+---
+
+### Composite EUR 2 Value Proposition Formula (2026)
+
+For EUR 2/mo Skissify Starter to convert, it needs to hit at least ONE of:
+- Removes watermark (professional credibility trigger)
+- Unlocks private saves >50 (blocked workflow trigger)
+- Provides a rate-limited API key (automation trigger)
+- Offers annual framing at EUR 19.99/yr (commitment framing)
+
+The weakest pitch is "support this project." The strongest pitch is "your pipeline is blocked without this."
+
+---
+
+### What Will NOT Make Someone Pay EUR 2
+
+- Priority support (no one pays EUR 2 for support)
+- "Advanced export formats" (too vague)
+- Collaboration features (EUR 2 is single-user territory)
+- More elements types alone (only relevant if they need those elements NOW)
+
+---

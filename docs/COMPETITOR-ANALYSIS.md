@@ -6713,3 +6713,86 @@ Intercom Fin AI Agent: $0.99/resolution → 8-figure ARR at 393% growth. Zendesk
 | **Skissify** | Run #100. Vercel json-render validates architecture. MCP 10K+ server milestone. Headless spatial JSON → SVG: uncontested. | **Uncontested in headless spatial lane** |
 
 ---
+
+## Update: 2026-04-02 — Strategy Run #101 (April 2 Morning)
+
+### Summary
+5 fresh signals: (1) Excalidraw official MCP server went live with real streaming capability. (2) tldraw v4.4 released Feb 19 with 25x perf + "Image Pipeline" agent starter template — tldraw is now explicitly targeting AI agent workflows. (3) MCP ecosystem: 8,600+ servers across public registries, 97M monthly SDK downloads. (4) AI diagramming funding is thin — no major 2026 rounds for dedicated sketch/diagram tools. (5) Micro-SaaS pricing: indie founders doubled trial-to-paid by simplifying tiers + lowering entry price.
+
+---
+
+### Excalidraw Official MCP Server — LIVE (THREAT ESCALATED)
+
+**Sources**: https://github.com/excalidraw/excalidraw-mcp | https://dev.classmethod.jp/en/articles/excalidraw-mcp-claude-code/ | https://rajeevpentyala.com/2026/03/16/excalidraw-mcp-and-claude-code-design-architecture-diagrams/ | https://plus.excalidraw.com/changelog
+
+Excalidraw shipped an **official** MCP server (`excalidraw/excalidraw-mcp` on GitHub). It streams hand-drawn diagrams with smooth viewport camera control and interactive fullscreen editing. Works with Claude, ChatGPT, VS Code, Goose. January 2026 release.
+
+Community additions: `yctimlin/mcp_excalidraw` added 26 MCP tools (get_element, clear_canvas, export_scene, import_scene, iterative refinement). On PulseMCP and mcp.so directories with active user growth.
+
+**Threat assessment**: **HIGH — most significant move to date.** Excalidraw now has both an official MCP presence AND community-extended MCP tooling. Their limitation remains: requires a browser/DOM session for rendering — not headless, not stateless, not compatible with serverless architectures. Skissify's direct counter: "Excalidraw MCP needs a running browser. Skissify MCP is a single POST." That is the message.
+
+**Opportunity**: Every developer who tries Excalidraw MCP and hits the browser-session requirement is a Skissify prospect. Target the Excalidraw MCP GitHub issues and tutorials with this positioning.
+
+---
+
+### tldraw v4.4 (Feb 19, 2026) + Image Pipeline Template — Agent Workflow Push (THREAT ELEVATED)
+
+**Sources**: https://tldraw.dev/releases | https://releasebot.io/updates/tldraw | https://github.com/tldraw/tldraw/releases
+
+tldraw v4.4 released February 19, 2026. New "Image Pipeline" starter template via `npx create-tldraw` — a visual node-based canvas for AI image generation workflows: custom node shapes, typed port connections, pipeline regions with play/stop controls, DAG execution engine backed by Cloudflare Worker API.
+
+Also: 25x faster shape indicator rendering (2D canvas vs SVG), R-tree spatial indexing, delta-encoded draw data (massive storage savings), SQLite-pluggable TLSocketRoom, React 19.
+
+**Threat assessment**: **MEDIUM-HIGH.** tldraw is now explicitly building for agentic pipelines. Their SDK is $6,000/yr commercial, targets enterprise teams. Skissify targets individuals and small teams (EUR 5/mo). Positioning is differentiated by price segment and by stateless/stateful architecture. Their Image Pipeline template is UI workflow, not spatial/architectural sketch output.
+
+---
+
+### MCP Ecosystem — 8,600+ Public Servers, 97M Monthly SDK Downloads (ECOSYSTEM UPDATE)
+
+**Sources**: https://skillsindex.dev/blog/complete-guide-mcp-servers-2026/ | https://use-apify.com/blog/mcp-standard-ecosystem-2026 | https://mcpmanager.ai/blog/mcp-adoption-statistics/ | https://fastmcp.me/blog/top-10-most-popular-mcp-servers
+
+As of Q1 2026: 8,600+ MCP servers across public registries (4,133 on SkillsIndex alone, up from ~425 in mid-2025 — 873% growth in <12 months). 97 million monthly SDK downloads. 301 new servers added in February 2026 alone (accelerating). Official support: Anthropic, OpenAI, Google, Microsoft.
+
+Pinterest published a case study in March 2026 (Medium) on building an internal MCP ecosystem — enterprise adoption is now mainstream, not experimental.
+
+**Skissify positioning**: With 8,600+ servers, top-10 visibility in a category requires a complete metadata listing, active README, clear use-case description. "Visual / architecture / floor-plan / hand-drawn" is a near-empty category in the registry — first mover wins the organic discovery.
+
+---
+
+### AI Diagramming Funding Gap — No Major Rounds in 2026 (MARKET STRUCTURE SIGNAL)
+
+**Sources**: https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/ | https://aifundingtracker.com/ | https://dev.to/dashin_pro/best-ai-diagramming-tools-for-developers-in-2026-3ni3
+
+Q1 2026 total VC: $300B, 80% AI-focused. Top rounds: frontier labs (OpenAI, Anthropic, xAI), autonomous vehicles, semiconductors, robotics. **Zero major dedicated diagramming/sketch tool rounds identified.** Whimsical, Lucidchart, Miro mentioned as incumbents but no 2026 funding events.
+
+**Skissify implication**: No well-funded startup is entering the "headless JSON sketch renderer for AI agents" lane. The incumbents are not pivoting to serve this niche. This is a greenfield with no incoming funded competition. Solo-founder economics apply cleanly.
+
+---
+
+### Micro-SaaS EUR 2/mo Pricing Intelligence — Freemius Data
+
+**Sources**: https://freemius.com/blog/micro-saas-pricing-pages-that-convert/ | https://medium.com/@aymane.bt/the-future-of-saas-pricing-in-2026 | https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models
+
+Freemius analysis of micro-SaaS pricing pages (<1,000 users): indie founders who **simplified tiers** and **lowered entry price** doubled trial-to-paid rates and cut churn 30%. Key finding: the psychological barrier between EUR 0 (free) and EUR 2 (any paid) is steep — but once crossed, users rarely churn. Annual plans significantly improve retention.
+
+Hybrid pricing (base fee + usage) dominates even in micro-SaaS. Charm pricing (EUR 1.99 vs EUR 2.00) improves conversion on mobile (58% of pricing page traffic in 2026).
+
+**Skissify implication**: A EUR 1.99/mo "Starter" tier (below the EUR 2 psychological ceiling) positioned as "unlock API + private sketches" could serve as the conversion bridge between free and Pro. Test EUR 1.99 vs EUR 2 vs EUR 5 — the EUR 1.99 → EUR 5 step-up path may outperform jumping directly to EUR 5.
+
+---
+
+### Updated Competitor Matrix (April 2, 2026)
+
+| Tool | Status | Skissify Threat |
+|------|--------|-----------------|
+| **Excalidraw+** | Official MCP live (streaming, viewport control). Community adds 26 tools. Browser-session dependent. | **HIGH — but session-dep. is the gap** |
+| **tldraw** | v4.4. Image Pipeline agent template. 25x perf. $6K/yr SDK. | **MEDIUM-HIGH — price-segmented** |
+| **Vercel json-render** | 13K+ stars. Same JSON→renderer architecture. UI domain. | **LOW threat / HIGH tailwind** |
+| **Google Stitch** | March 19: 5 screens, 7 frameworks. Figma ecosystem. | **Low** |
+| **SketchUp 2026** | AI textures. 3D, $299+/yr. | **Low** |
+| **excalidraw-render MCP** | Chromium headless, 3s cold start. Still browser dep. | **MEDIUM — Skissify's counter** |
+| **Napkin AI** | 5M users. Still no API. | **Opportunity — dev overflow** |
+| **Miro / Figma** | Enterprise only. No JSON API or MCP render. | **Low** |
+| **Skissify** | Headless stateless JSON→SVG. Uncontested in spatial/architectural lane. | **Uncontested** |
+
+---

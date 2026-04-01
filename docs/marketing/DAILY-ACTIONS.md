@@ -6731,3 +6731,64 @@ ender_sketch tool live on npm? Yes/no + URL
 3. GitHub README update: Add the flat-schema accuracy stats (94% vs 40%) as a developer credibility signal
 4. Hacker News: "Show HN" timing — Tuesday 10:00–12:00 EST remains the highest-traffic slot. Prep the submission post this week.
 
+
+---
+
+## 2026-04-02 — Daily Actions (Strategy Run #102, April 2 Morning)
+
+### Context for Today
+- **Excalidraw official MCP is live** (Jan 2026) — browser-session dependent. This is Skissify's most important positioning gap to exploit.
+- **tldraw v4.4** added Image Pipeline template for agent workflows. Their users now actively need render output layers.
+- **MCP registry**: 8,600+ servers. Visual/architectural category is near-empty. First-mover listing wins organic discovery.
+- **Carry-over blocker**: MCP registry submission still not confirmed complete. This is Action 1 again — it is the single highest-leverage unblocked action.
+
+---
+
+### Action 1 (CRITICAL — complete before noon): Publish Skissify MCP Registry Listing with "vs Excalidraw MCP" Framing
+
+**Why today**: Excalidraw official MCP is now widely cited in tutorials (dev.classmethod.jp, rajeevpentyala.com). Developers are actively searching "excalidraw mcp" and hitting the browser-session wall. Skissify must be discoverable as the headless alternative at that exact moment.
+
+**Exact steps**:
+1. Submit to official MCP registry (https://github.com/modelcontextprotocol/registry) — tags: `visual`, `architecture`, `floor-plan`, `hand-drawn`, `JSON`, `SVG`, `headless`, `stateless`
+2. Description to use verbatim: *"POST a JSON manifest → receive a hand-drawn SVG. Floor plans, architecture diagrams, napkin sketches. Headless. Stateless. No browser session. No Chromium. Works in serverless and CI/CD."*
+3. Also submit to: glama.ai, mcp.so, pulsemcp.com — all three take <15 min each
+4. On mcp.so, add the comparison note: "Unlike Excalidraw MCP, no browser session required."
+
+**Success metric**: Listing live on at least 2 directories by end of day.
+
+---
+
+### Action 2 (HIGH — afternoon): Publish Blog Post "Excalidraw MCP vs Skissify MCP — When Headless Matters"
+
+**Why today**: Search volume for "excalidraw mcp" is actively growing (3+ tutorial posts visible in search results as of April 2). This is the highest-intent keyword Skissify can currently rank for. A direct comparison post captures developers at the exact decision point.
+
+**Outline** (target 600 words, publish to /blog on skissify.io):
+- Para 1: Excalidraw MCP is excellent. Here's what it does. (Fair framing, no trash talk)
+- Para 2: The limitation: it requires a running browser/DOM session. Here's why that matters for serverless, CI/CD, agent pipelines.
+- Para 3: Skissify MCP — single POST, returns SVG, no browser, works in any environment.
+- Para 4: Code snippet — Claude → Skissify MCP → SVG in 3 lines.
+- Para 5: When to use each. (Honest: Excalidraw for interactive editing + collaboration. Skissify for automated/programmatic generation.)
+- CTA: Free tier link + MCP registry link.
+
+**SEO targets**: "excalidraw mcp alternative", "headless diagram API", "stateless sketch renderer", "excalidraw mcp serverless"
+
+**Success metric**: Post published and submitted to dev.to and r/MachineLearning by 6pm.
+
+---
+
+### Action 3 (MEDIUM — evening): Set Up EUR 1.99/mo Starter Tier Pricing Test
+
+**Why today**: Freemius 2026 data confirms the free-to-paid transition is the hardest conversion barrier. A EUR 1.99/mo Starter tier (below the EUR 2 ceiling, charmed pricing) positioned as "unblock your pipeline" may significantly outperform asking free users to jump to EUR 5/mo Pro.
+
+**Exact steps**:
+1. Create a Stripe product: "Skissify Starter" — EUR 1.99/mo and EUR 19.99/yr (show annual first)
+2. What Starter includes: remove watermark, API key (500 renders/month), unlimited private saves, 1 user
+3. Update pricing page: show 3 tiers — Free | Starter EUR 1.99/mo | Pro EUR 5/mo
+4. Add to export dialog: "Remove watermark — EUR 1.99/mo →" as the primary CTA (not Pro, not a big ask)
+5. Track: measure Starter conversion vs direct Free→Pro conversion for 2 weeks
+
+**Hypothesis**: EUR 1.99 Starter will convert 2-3x more free users than EUR 5 Pro as the first paid step. Pro upsell happens after Starter engagement.
+
+**Success metric**: Starter tier live in Stripe and visible on pricing page by end of day.
+
+---
