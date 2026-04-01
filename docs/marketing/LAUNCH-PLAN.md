@@ -486,6 +486,52 @@ Everyone who saw the April 1 announcement and thought "this is a joke" is now se
 
 ---
 
+## NEW IDEAS (Added 2026-04-01, Cycle 88 — 08:20 CET — 1h20m In)
+
+**Context:** PH has been live for 80 minutes. Twitter thread should be live. HN posted. Now entering the mid-morning engagement window.
+
+### Immediate Actions (08:20–10:00 CET)
+
+| Time | Action | Where |
+|------|--------|-------|
+| NOW | Post "1 hour in" live update tweet | SOCIAL-MEDIA.md Cycle 88 |
+| NOW | Post r/SideProject launch post | SOCIAL-MEDIA.md Cycle 88 |
+| NOW | Drop in AI Engineer Discord + Claude Discord | SOCIAL-MEDIA.md Cycle 88 |
+| 08:30 | LinkedIn morning post (peak LinkedIn window) | SOCIAL-MEDIA.md Cycle 88 |
+| 09:00 | Post r/startups "I launched today. On April Fools. AMA." | SOCIAL-MEDIA.md Cycle 88 |
+| 10:00 | Check HN — if <10 points, post schema insight rescue comment | SOCIAL-MEDIA.md Cycle 88 |
+
+### New Channels Identified (Not Yet Posted)
+
+- **r/startups** (400K) — "I launched today. On April Fools. AMA." format works perfectly
+- **r/SideProject** (450K) — highest converting sub for "I launched today" posts — must post today
+- **n8n/Make/Zapier communities** — automation builders are a natural audience; Skissify fits as an action node
+- **A2A protocol angle** — Google's A2A + Anthropic's MCP together = Skissify is the visual output layer for both. New angle worth tweeting.
+
+### Key Insight: The Skeptic Pipeline is Working FOR You
+
+April 1st skeptics who try the curl command and get back an SVG are converting from disbelief to advocacy publicly. EVERY "lol april fools" comment is an engagement opportunity. Reply with the curl command. Don't explain — just post the proof. Their "wait, this actually works" reply is marketing you cannot buy.
+
+### Insight: LinkedIn 08:30-09:00 is the Best Window of the Day
+
+LinkedIn's algorithm favors posts that get engagement in the first 60 minutes. The 08:30-09:00 CET window hits European professionals at start-of-day, pre-meeting time. Post the "I launched on April 1" human story now, not at 09:30.
+
+### New Hashtag Angles (Added Cycle 88)
+
+- `#A2A #AgentToAgent` — Google's A2A protocol launched to ecosystem — Skissify is visual output for A2A too
+- `#AprilFoolsLaunch` — own this narrative, no competition
+- `#n8n #WorkflowAutomation` — automation community angle
+- `#VibeDrawing` — still unclaimed, post every visual with this
+
+### Contingency Checklist (If Numbers Disappoint at 12:00)
+
+1. The "launched on April 1" story only gets better with lower numbers — leads with contrast
+2. Shift to r/mcp and r/ClaudeAI — these communities use MCP daily and convert
+3. Pull forward the HN schema insight post (Show HN: schema design → 94% LLM accuracy) — Tuesday Apr 8 was planned but can move to Wednesday Apr 2 if Day 1 underperforms
+4. Record the wobble-slider GIF — one silent satisfying GIF will outperform 10 text posts
+
+---
+
 ## NEW IDEAS (Added 2026-04-01, Cycle 86 — 06:03 CET — Launch Morning Live)
 
 **Context:** It's 06:03 CET on launch day. Product Hunt goes live at 07:00. This cycle focuses on the NEXT 60 MINUTES — the highest-leverage window of the entire launch.

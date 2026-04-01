@@ -2,7 +2,109 @@
 
 ---
 
-## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #91 (05:55 CET, Wednesday April 1)
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #93 (08:08 CET, Wednesday April 1)
+
+### Context: Run #93 Key Findings
+- **Sketch (design app) official MCP server launched March 25, 2026** — 5th design/sketch tool with MCP. All require apps running. Skissify is still the only headless option. Category forming NOW.
+- **MCP Server Cards** (`.well-known` auto-discovery) in 2026 MCP roadmap — implement this before registries go live
+- **tldraw added cloud sync** (SDK 4.3) + rich text — SaaS pivot, $6K SDK drives devs to cheaper alternatives
+- **Maket v2 launched** (Q1 2026) — zoning, HVAC, 3D renders — upmarket move strengthens embed pitch
+
+---
+
+### 🎯 Action 1 (CRITICAL — Thursday): Implement `.well-known/mcp-server-card.json`
+
+MCP Server Cards is confirmed in the 2026 MCP roadmap. Registries and agent hosts will auto-crawl `.well-known/mcp-server-card.json` for server discovery. This is the lowest-effort, highest-leverage discoverability task available before launch — a 30-minute implementation that provides compounding free indexing.
+
+**Steps (30 min)**:
+1. Create `public/.well-known/mcp-server-card.json` on skissify.com with fields: `name`, `description`, `url`, `tags` (use: `floor-plan hand-drawn spatial sketch json architectural headless mcp`), `capabilities`, `pricing`
+2. Include a clear description: "Pure render API — POST JSON manifest, receive hand-drawn SVG. No app required. Headless. Works in any agent pipeline, CI server, or serverless function."
+3. Verify it's accessible at `https://skissify.com/.well-known/mcp-server-card.json`
+4. Submit the URL to MCP Server Cards index when the standard goes live (bookmark: blog.modelcontextprotocol.io/posts/2026-mcp-roadmap)
+
+**Why today**: The MCP Server Cards crawlers are not live yet — implementing now ensures Skissify is indexed from day one. Tools that implement this late will appear after those that were ready early.
+
+---
+
+### 🎯 Action 2 (HIGH — Thursday): Write "5 MCP Sketch Tools Compared — And Why None Work Headless" Post
+
+Five MCP-enabled sketch/design tools are now in the market: Excalidraw MCP, Frame0, Archy, ToDiagram, and Sketch app. All require apps running. This is a comparison post that writes itself and is SEO-rich ("MCP sketch tool", "headless sketch API", "hand-drawn MCP server", "JSON to SVG").
+
+**Steps (45 min)**:
+1. Write a 500-word comparison table post for Dev.to (or personal blog): compare the 5 tools on: headless?, JSON-manifest input?, spatial elements?, pricing, use case
+2. Conclusion: "If you're building an agent pipeline that needs visual output — floor plans, space diagrams, architectural sketches — none of these work server-side. Skissify does."
+3. Include a working code sample: `fetch('https://api.skissify.com/render', { body: JSON.stringify(manifest) })`
+4. Target keywords in title/H1: "headless sketch API" or "JSON to hand-drawn SVG"
+5. Cross-post excerpt to Twitter/X and LinkedIn with the comparison table as an image
+
+**Why this converts**: A developer evaluating "hand-drawn MCP server" options will find this post via search. The comparison validates their research effort and pre-answers their question. Skissify wins by being the only headless option, not by being the most featured.
+
+---
+
+### 🎯 Action 3 (CARRY-OVER CRITICAL — Thursday): Submit to Glama + PulseMCP + Official Registry
+
+Still the most urgent un-done action. The category is forming NOW with 5+ tools listed. Skissify must be present before "the defaults" are set in developer perception. Three listings, ~30 minutes total.
+
+**Steps (30 min)**:
+1. **Glama** (glama.ai/mcp, 20,249 servers) — submit with keywords: `floor-plan hand-drawn spatial sketch json architectural headless`
+2. **PulseMCP** (pulsemcp.com) — differentiate from Frame0 (UI wireframes) and Excalidraw MCP (app-dependent). Lead with: "Pure render API. POST JSON, get SVG. Headless. No app."
+3. **Official MCP Registry** (modelcontextprotocol.io/registry)
+4. In ALL listings, use this 2-sentence pitch: "Skissify renders JSON manifests as hand-drawn architectural sketches. Pure API — no app required — works in any headless agent pipeline, CI server, or serverless function."
+
+---
+
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #92 (06:59 CET, Wednesday April 1)
+
+### Context: Run #92 Key Findings
+- **Excalidraw now has official MCP server** — hand-drawn diagrams in Claude/ChatGPT, but requires app running, no JSON manifest, no spatial elements. Threat level: MEDIUM.
+- **Glama registry at 20,249 servers** — must be listed there in addition to PulseMCP and official registry
+- **Maket.ai: 1M+ users** — confirms spatial AI tool market; potential embed partner
+- **Outcome pricing ($0.99–$2/AI resolution)** — EUR 0.005/render confirmed underpriced for value, correctly priced for volume
+
+---
+
+### 🎯 Action 1 (CRITICAL — Thursday): Write "Skissify vs Excalidraw MCP — Why Headless Matters" Short Post
+
+Excalidraw's official MCP launch is the most concrete competitive event in 92 scans. Developer Twitter will be discussing it this week. Skissify must enter that conversation with a clear differentiation: "Excalidraw MCP draws diagrams in your browser. Skissify renders sketches in your pipeline."
+
+**Steps (40 min)**:
+1. Write a 400-word Dev.to/Twitter thread: "Excalidraw MCP is great for humans. Here's why it doesn't work for agent pipelines — and what does." Structure: (a) What Excalidraw MCP does well, (b) what it can't do (headless, spatial, deterministic JSON), (c) the 3 lines of code to use Skissify instead
+2. Create a simple code comparison: `fetch('https://api.skissify.com/render', { method: 'POST', body: JSON.stringify(floorPlanManifest) })` vs "open browser, launch Excalidraw app, prompt Claude, edit manually"
+3. Post to Dev.to, then cross-post excerpt to Twitter/X with a floor plan screenshot
+4. Target keyword for SEO: "headless sketch API" and "JSON to SVG hand-drawn"
+
+**Why today**: Excalidraw MCP is fresh news — riding this wave this week captures search traffic and positions Skissify in the "hand-drawn MCP tool" comparison searches
+
+---
+
+### 🎯 Action 2 (CRITICAL carry-over from #91): Submit to Glama + PulseMCP + Official Registry
+
+Glama is now the largest MCP discovery surface at 20,249 servers. Previous run identified PulseMCP urgency; Glama is equally critical and larger. Skissify needs listings on all three registries this week.
+
+**Steps (30 min)**:
+1. Submit to glama.ai/mcp — keywords: `floor-plan hand-drawn spatial sketch json mcp architectural headless`
+2. Submit to pulsemcp.com/servers — description differentiating from Frame0 (UI wireframes) and Excalidraw MCP (app-dependent)
+3. Submit to modelcontextprotocol.io/registry
+4. Implement `.well-known/mcp-server-card.json` for auto-indexing by upcoming MCP Server Cards crawlers
+5. In all listings, lead with: "Pure render API — no app required. POST JSON manifest, get hand-drawn SVG. Works headless in any agent pipeline."
+
+**Why today**: With Excalidraw MCP launching, developers searching for "hand-drawn MCP" will find Excalidraw first. Skissify being unlisted means it's invisible in exactly the comparison moment developers have now.
+
+---
+
+### 🎯 Action 3 (HIGH — Thursday): Reach Out to Maket.ai / Similar Tools as Embed Partner
+
+Maket.ai has 1M+ users generating AI floor plans. None of them have a hand-drawn sketch export. Skissify's renderer can be white-labeled or embedded in minutes.
+
+**Steps (25 min)**:
+1. Identify Maket.ai founder/product contact (LinkedIn or Product Hunt)
+2. Draft a 5-sentence cold email: "We render any floor plan JSON as a hand-drawn sketch. Your users present to clients — hand-drawn style says 'concept' not 'commitment.' White-label embed: 3 lines of code. EUR 500/year. Here's a live example." Attach a Skissify floor plan output.
+3. Send to 3 similar tools (Planner5D, Snaptrude, one other AI floor plan tool)
+4. Goal: 1 white-label partnership = EUR 500–2,000/yr recurring; any response validates the embed licensing model from the business plan
+
+**Why this converts**: Maket-class products want richer export options. A sketch export costs them nothing to build if Skissify handles the render. Recurring license = Skissify's secondary revenue stream activated.
+
+---
 
 ### Context: Run #91 Key Findings
 - **91 consecutive niche-clean scans** — spatial sketch MCP lane uncontested
