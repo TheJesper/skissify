@@ -892,8 +892,11 @@ export function renderSketchToSVG(sketch: SketchData, watermark = false): string
     if (Math.abs(dy) > h * 0.05) offsetY = dy;
   }
 
+  const hiddenLayers = new Set(
+    (sketch.layers ?? []).filter((l) => !l.visible).map((l) => l.id)
+  );
   const elementsSvg = sketch.elements
-    .filter((el) => el.visible !== false)
+    .filter((el) => el.visible !== false && !(el.layer && hiddenLayers.has(el.layer)))
     .map((el) => renderElement(sketch, el, defaultColor))
     .join("\n");
 

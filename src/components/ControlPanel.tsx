@@ -4,6 +4,7 @@ import { useState } from "react";
 import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS, BlueprintMetadata, SketchElement } from "@/lib/types";
 import ElementThumbnailPanel from "./ElementThumbnailPanel";
 import ElementsListPanel from "./ElementsListPanel";
+import LayersPanel from "./LayersPanel";
 
 interface ControlPanelProps {
   paper: PaperType;
@@ -113,6 +114,18 @@ interface ControlPanelProps {
   selectedOpacity?: number;
   /** Called when the user sets opacity on selected elements (undefined = remove override) */
   onOpacitySelected?: (opacity: number | undefined) => void;
+  /** Layers defined in the sketch */
+  layers?: import("@/lib/types").SketchLayer[];
+  /** Called when a layer's visibility is toggled */
+  onSetLayerVisibility?: (layerId: string, visible: boolean) => void;
+  /** Called when a new layer is created */
+  onAddLayer?: (layer: import("@/lib/types").SketchLayer) => void;
+  /** Called when a layer is removed */
+  onRemoveLayer?: (layerId: string) => void;
+  /** Called when a layer is renamed */
+  onRenameLayer?: (layerId: string, name: string) => void;
+  /** Called when selected elements are assigned to a layer */
+  onSetElementLayer?: (layerId: string | undefined) => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -646,6 +659,12 @@ export default function ControlPanel({
   hasLineSelected,
   selectedOpacity,
   onOpacitySelected,
+  layers,
+  onSetLayerVisibility,
+  onAddLayer,
+  onRemoveLayer,
+  onRenameLayer,
+  onSetElementLayer,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {

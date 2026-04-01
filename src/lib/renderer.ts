@@ -1460,9 +1460,13 @@ export function renderSketch(
   ctx.save();
   centerElements(ctx, sketch.elements, w, h);
 
-  // 5. Render all elements (skip hidden)
+  // 5. Render all elements (skip hidden or on hidden layers)
+  const hiddenLayers = new Set(
+    (sketch.layers ?? []).filter((l) => !l.visible).map((l) => l.id)
+  );
   sketch.elements.forEach((el, idx) => {
     if (el.visible === false) return;
+    if (el.layer && hiddenLayers.has(el.layer)) return;
     renderElement(ctx, el, idx, sketch);
   });
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
-import { SketchData, BlueprintMetadata, PaperType, ToolType, SkissifyFont, RenderStyle } from "@/lib/types";
+import { SketchData, BlueprintMetadata, PaperType, ToolType, SkissifyFont, RenderStyle, SketchLayer } from "@/lib/types";
 import { presets, defaultPreset } from "@/lib/presets";
 
 const MAX_HISTORY = 50;
@@ -1029,6 +1029,98 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [pushHistory]
   );
 
+  // ── Layer operations ──────────────────────────────────────────────────────
+
+  /** Toggle visibility of a named layer (by id) */
+  const setLayerVisibility = useCallback(
+    (layerId: string, visible: boolean) => {
+      setSketch((prev) => {
+        const layers = (prev.layers ?? []).map((l) =>
+          l.id === layerId ? { ...l, visible } : l
+        );
+        const next = { ...prev, layers };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [pushHistory]
+  );
+
+  /** Assign all selected elements to a layer id (or undefined to remove layer assignment) */
+  const setElementLayer = useCallback(
+    (layerId: string | undefined) => {
+      if (selectedElements.size === 0) return;
+      setSketch((prev) => {
+        const newElements = prev.elements.map((el, i) => {
+          if (!selectedElements.has(i)) return el;
+          const next = { ...el } as SketchData["elements"][number];
+          if (layerId === undefined) {
+            const { layer: _l, ...rest } = next as typeof next & { layer?: string };
+            void _l;
+            return rest as SketchData["elements"][number];
+          }
+          return { ...next, layer: layerId };
+        });
+        const updated = { ...prev, elements: newElements };
+        jsonRef.current = JSON.stringify(updated, null, 2);
+        pushHistory(updated);
+        return updated;
+      });
+    },
+    [selectedElements, pushHistory]
+  );
+
+  /** Add a new custom layer */
+  const addLayer = useCallback(
+    (layer: SketchLayer) => {
+      setSketch((prev) => {
+        const layers = [...(prev.layers ?? []), layer];
+        const next = { ...prev, layers };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [pushHistory]
+  );
+
+  /** Remove a layer and unassign any elements on it */
+  const removeLayer = useCallback(
+    (layerId: string) => {
+      setSketch((prev) => {
+        const layers = (prev.layers ?? []).filter((l) => l.id !== layerId);
+        const newElements = prev.elements.map((el) => {
+          if ((el as typeof el & { layer?: string }).layer !== layerId) return el;
+          const { layer: _l, ...rest } = el as typeof el & { layer?: string };
+          void _l;
+          return rest as SketchData["elements"][number];
+        });
+        const next = { ...prev, layers, elements: newElements };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [pushHistory]
+  );
+
+  /** Rename a layer */
+  const renameLayer = useCallback(
+    (layerId: string, name: string) => {
+      setSketch((prev) => {
+        const layers = (prev.layers ?? []).map((l) =>
+          l.id === layerId ? { ...l, name } : l
+        );
+        const next = { ...prev, layers };
+        jsonRef.current = JSON.stringify(next, null, 2);
+        pushHistory(next);
+        return next;
+      });
+    },
+    [pushHistory]
+  );
+
   const undo = useCallback(() => {
     if (historyIndexRef.current <= 0) return;
     historyIndexRef.current--;
@@ -1108,6 +1200,11 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     groupSelected,
     ungroupSelected,
     toggleVisibility,
+    setLayerVisibility,
+    setElementLayer,
+    addLayer,
+    removeLayer,
+    renameLayer,
   };
 }
 

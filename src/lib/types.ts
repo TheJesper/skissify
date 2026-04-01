@@ -29,6 +29,28 @@ export type ElementType =
   | "stove"
   | "shower";
 
+/**
+ * A named layer in the sketch. Elements with matching `layer` id are rendered/hidden together.
+ * Layers are stored in `SketchData.layers` and referenced by id on each element.
+ */
+export interface SketchLayer {
+  id: string;
+  name: string;
+  /** When false, all elements on this layer are hidden from canvas and SVG output */
+  visible: boolean;
+  /** Optional display color (CSS color) for the layer dot in the UI */
+  color?: string;
+}
+
+/** Predefined layer definitions for common floor plan / diagram use cases */
+export const DEFAULT_LAYERS: SketchLayer[] = [
+  { id: "walls",        name: "Walls",        visible: true, color: "#586e75" },
+  { id: "architecture", name: "Doors & Windows", visible: true, color: "#268bd2" },
+  { id: "furniture",    name: "Furniture",    visible: true, color: "#cb4b16" },
+  { id: "annotations",  name: "Annotations",  visible: true, color: "#2aa198" },
+  { id: "other",        name: "Other",        visible: true, color: "#839496" },
+];
+
 export interface BaseElement {
   type: ElementType;
   color?: string;
@@ -40,6 +62,11 @@ export interface BaseElement {
   locked?: boolean;
   /** Group identifier — elements sharing the same groupId are treated as a single unit for selection */
   groupId?: string;
+  /**
+   * Layer id this element belongs to. Must match an entry in `SketchData.layers[].id`.
+   * If omitted or the referenced layer does not exist, the element is always visible.
+   */
+  layer?: string;
   /**
    * Fill color for closed shapes (rect, circle, arc, stair, column, door-symbol, door-slide).
    * Use "none" or omit for transparent fill (stroke-only).
@@ -435,6 +462,11 @@ export interface SketchData {
    * Elements snap to the nearest multiple when dragged or placed.
    */
   snapGrid?: number;
+  /**
+   * Layer definitions. If omitted, all elements are on a single implicit visible layer.
+   * Add entries here to define named layers; reference them from elements via `element.layer`.
+   */
+  layers?: SketchLayer[];
   elements: SketchElement[];
 }
 
