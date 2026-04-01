@@ -1,7 +1,83 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 — T+21H (SEE CYCLE 100)**
+**Current Date: April 2, 2026 — 00:04 CET, Day 2 (SEE CYCLE 101)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 101 — Day 2 Thursday 00:04 CET)
+
+### Cycle 101 — New Blog Posts Written (2 new posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Skissify + n8n: Visual Automation | `blog/skissify-n8n-visual-automation.md` | n8n/automation community — one HTTP Request node adds drawing to any workflow | ✅ Ready to publish |
+| 48-Hour Retrospective: Launch Traffic | `blog/the-floor-plan-you-can-generate-in-48-hours.md` | Honest Day 2 numbers, 4 surprise audiences, flat schema insight | ✅ Ready to publish |
+
+### Cycle 101 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| n8n Community Forum post copy (one HTTP Request node angle) | ✅ Added |
+| Make.com / Zapier community post copy | ✅ Added |
+| Twitter/X Day 2 opener thread (08:00 CET) | ✅ Added |
+| Twitter/X n8n integration thread (09:00 CET) | ✅ Added |
+| Twitter/X flat schema developer thread (11:00 CET) | ✅ Added |
+| Twitter/X glama.ai submission hook (14:00 CET) | ✅ Added |
+| Reddit r/n8n post copy | ✅ Added |
+| Reddit r/automation post copy | ✅ Added |
+| glama.ai submission copy (full description) | ✅ Added |
+| YouTube Shorts 30-second Day 2 script | ✅ Added |
+| Substack Notes Day 2 reflection | ✅ Added |
+
+### Cycle 101 — PRESS-KIT.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Day 2 status table updated (more pending items, glama.ai, n8n) | ✅ Updated |
+| n8n community, r/n8n, r/automation, Make community added to Tier 2 | ✅ Added |
+| glama.ai added as Tier 2 distribution channel | ✅ Added |
+| Cycle 101 blog assets table added | ✅ Added |
+
+### Cycle 101 — Priority Actions for Thursday April 2
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| **RECORD DEMO VIDEO** — overdue since Cycle 82, zero excuses | ⏳ Record Thursday evening | 🔴 P0 — CRITICAL |
+| Post to n8n Community Forum (copy in Cycle 101) | ⏳ Post Thursday 09:00 CET | 🔴 P0 |
+| Post to r/n8n + r/automation (copy in Cycle 101) | ⏳ Post Thursday 10:00 CET | 🔴 P0 |
+| Submit to glama.ai (copy in Cycle 101) | ⏳ 20-min task — do first thing Thursday | 🔴 P0 |
+| Post to r/LocalLLaMA (copy in Cycle 99) | ⏳ Post Thursday 09:00 CET | 🔴 P0 |
+| Post to r/ChatGPT homeowner angle (copy in Cycle 99) | ⏳ Post Thursday 10:00 CET | 🔴 P0 |
+| Twitter/X Day 2 opener thread (08:00 CET, Cycle 101) | ⏳ Queue now | 🔴 P0 |
+| Twitter/X flat schema thread (11:00 CET, Cycle 101) | ⏳ Queue now | 🟡 P1 |
+| Twitter/X json-render thread (07:30 CET, Cycle 100) | ⏳ Queue now | 🟡 P1 |
+| LinkedIn schema-as-LLM-UX post (Cycle 100) | ⏳ Post Thursday AM | 🟡 P1 |
+| Publish n8n blog to Dev.to | ⏳ Strong automation SEO | 🟡 P1 |
+| Publish 48-hour retrospective to Indie Hackers + Dev.to | ⏳ Honest numbers resonate with IH audience | 🟡 P1 |
+| Indie Hackers launch post (copy in Cycle 98 — still overdue) | ⏳ Post ASAP | 🔴 P0 |
+
+### Cycle 101 — New Channels Identified
+
+| Channel | Size | Angle | Why Now |
+|---------|------|-------|---------|
+| n8n Community Forum (n8n.io/community) | Active | One HTTP node adds drawing to any automation | n8n users are builders who understand APIs, high conversion intent |
+| r/n8n | Reddit | Same angle | 50K+ members, underserved with visual automation tools |
+| r/automation | Reddit | REST API for visual output | High API literacy, love no-auth tools |
+| Make.com Community | Active | HTTP module walkthrough | Zapier/Make users actively look for new integrations |
+| glama.ai | MCP Index | Free listing, indexed by Claude Desktop users | Passive discovery channel, 20 min to submit |
+
+### Cycle 101 — Strategic Insight (n8n angle)
+
+The automation workflow community (n8n, Make, Zapier) was completely untapped. This is a high-converting audience because:
+1. They already understand APIs and HTTP calls — the integration is trivial
+2. They're actively looking for output primitives to add to their workflows
+3. The "AI-in-the-middle" pattern (AI generates JSON → Skissify renders) fits naturally into their existing n8n AI nodes
+4. No competitor is serving this use case (Excalidraw has no API, Mermaid is text-only)
+
+Post the n8n blog to n8n.io/community AND Dev.to on the same day for cross-platform SEO.
+
+---
 
 ---
 

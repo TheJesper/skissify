@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 99 (Day 2/3 Transition — Community Research + New Blog Posts)*
+*Last updated: April 2, 2026 — Cycle 101 (Day 2 Thursday 00:04 CET — n8n/automation community added, Day 2 status updated)*
 
 ---
 
@@ -19,16 +19,22 @@
 
 ---
 
-## Day 2 Status (April 2, 2026)
+## Day 2 Status (April 2, 2026 — Thursday)
 
 | Item | Status |
 |------|--------|
 | Product Hunt | ✅ Live — update with final Day 1 vote count |
-| Demo video (60s screen record) | ⚠️ Script ready — RECORD TODAY |
+| Demo video (60s screen record) | ⚠️ Script ready — RECORD TODAY (overdue since Cycle 82) |
 | Demo GIF (10s) | ⚠️ Script ready — RECORD TODAY |
 | Social OG banner | ⚠️ Generate — 1200x630px |
 | Press inquiries inbox | ✅ press@skissify.com active |
 | Bluesky / Mastodon handle claimed | ⏳ Confirm handles |
+| n8n community post | ⏳ Post — copy in SOCIAL-MEDIA.md Cycle 101 |
+| glama.ai submission | ⏳ 20-min task — copy in SOCIAL-MEDIA.md Cycle 101 |
+| r/LocalLLaMA | ⏳ Post 09:00 CET — copy in SOCIAL-MEDIA.md Cycle 99 |
+| r/ChatGPT homeowner post | ⏳ Post 10:00 CET — copy in SOCIAL-MEDIA.md Cycle 99 |
+| r/automation + r/n8n | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 101 |
+| Indie Hackers launch post | ⏳ OVERDUE — copy in SOCIAL-MEDIA.md Cycle 98 |
 
 **Today's #1 priority:** Record the demo video. A 15-second silent screen capture of Claude drawing a floor plan via MCP will outperform every text post by 3–5x on Twitter/X and TikTok.
 
@@ -354,6 +360,11 @@ Sketch data stored on-platform is owned by the user.
 | r/LocalLLaMA | Reddit | 266K+ | Self-hostable, LLM-native, floor plan benchmark |
 | r/ChatGPT | Reddit | 4M | Homeowner use case + no-code floor plans |
 | r/learnprogramming | Reddit | Large | Beginner MCP tutorial, first AI tool project |
+| n8n Community Forum | n8n.io/community | — | REST API that adds drawing to any workflow |
+| r/n8n | Reddit | — | HTTP Request node → hand-drawn sketch |
+| r/automation | Reddit | — | Visual automation output, AI-in-the-middle pattern |
+| Make.com Community | Make | — | One HTTP module, no auth, AI-generated JSON |
+| glama.ai | MCP Index | 20K+ MCP servers | Free MCP discovery listing |
 
 ### Tier 3 — Niche but converting
 | Community | Platform | Size | Angle |
@@ -381,6 +392,12 @@ Sketch data stored on-platform is owned by the user.
 | Why Hand-Drawn Beats Figma (Stakeholder Meeting) | `blog/why-hand-drawn-beats-figma-day3-thursday-angle.md` | PM/design team, Thursday meeting angle | Dev.to, Hashnode |
 | How AI Agents Draw Floor Plans (Homeowner Guide) | `blog/how-ai-agents-draw-floor-plans-the-homeowner-guide.md` | Non-developer, r/HomeImprovement, r/ChatGPT | skissify.com/blog |
 | Skissify vs Excalidraw (r/LocalLLaMA Verdict) | `blog/skissify-vs-excalidraw-the-localllama-verdict.md` | Local LLM, self-hosting, API-first | r/LocalLLaMA, Dev.to |
+
+### New Blog Assets (Cycle 101)
+| Blog Post | File | Angle | Publish On |
+|-----------|------|-------|------------|
+| Skissify + n8n: Visual Automation | `blog/skissify-n8n-visual-automation.md` | n8n/automation workflow integration, one HTTP node | n8n Community, r/n8n, r/automation |
+| 48-Hour Retrospective: What Launch Traffic Looked Like | `blog/the-floor-plan-you-can-generate-in-48-hours.md` | Honest Day 2 numbers, 4 unexpected audiences, lessons | Dev.to, Indie Hackers, Hashnode |
 
 ---
 

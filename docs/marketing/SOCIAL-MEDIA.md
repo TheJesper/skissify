@@ -1,7 +1,229 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 99 (Day 2 Late Night / Day 3 Prep)**
+**Last updated: April 2, 2026 — Cycle 101 (Day 2 — Thursday 00:04 CET — n8n, automation, fresh Day 2 push)**
+
+---
+
+## CYCLE 101 — DAY 2 THURSDAY 00:04 — AUTOMATION COMMUNITY + FRESH ANGLES
+
+*Context: It's midnight, start of Day 2 (April 2). The n8n and automation community is completely untapped. A new blog post targets that angle. YouTube Shorts script added. Glama.ai submission copy added. New "day 2 momentum" thread for those waking up to Skissify. Demo video remains the highest-ROI unrecorded asset.*
+
+---
+
+### NEW PLATFORM: n8n Community Forum (n8n.io/community)
+
+**Subject: Skissify REST API — add hand-drawn sketch generation to any workflow**
+
+```
+Hi n8n community — sharing a tool that pairs well with AI workflows in n8n.
+
+Skissify is a REST API that turns JSON into hand-drawn sketches. One HTTP Request node.
+
+POST https://skissify.com/api/render with a JSON manifest → get back a sketch URL.
+
+I've been using it for:
+- Auto-generating architecture diagrams when a new service is deployed
+- Floor plans from real estate listing data (with Claude extracting the spatial info)
+- System diagrams for bug report tickets
+
+No auth required on the free tier. The AI node (Claude/GPT) generates the JSON manifest, HTTP Request calls Skissify, and you get a shareable sketch URL.
+
+Full n8n walkthrough: [link to blog/skissify-n8n-visual-automation.md]
+
+Happy to answer questions about the JSON schema or integration patterns.
+```
+
+---
+
+### NEW PLATFORM: Make.com / Zapier Community
+
+```
+Title: Skissify — REST API that draws hand-drawn sketches from JSON
+
+Skissify is an API for automation workflows that need visual output.
+
+Any AI step in your workflow (ChatGPT module, Claude module) can generate the JSON, then an HTTP Request module calls Skissify and returns a sketch URL.
+
+Use cases:
+- Client onboarding diagrams from CRM data
+- Architecture overviews for new projects
+- Floor plans from property data
+
+Free tier: no API key. Paid: €5/mo for private sketches + higher rate limits.
+
+Try it: skissify.com/api/render
+```
+
+---
+
+### Twitter/X — Day 2 Opener (08:00 CET Thursday)
+
+```
+Day 2 of Skissify.
+
+Yesterday's most surprising use case: homeowners asking Claude to sketch renovation layouts.
+
+No JSON. No API. Just "design my kitchen" → Claude writes JSON → Skissify renders → hand-drawn floor plan.
+
+That was the workflow. Zero developers involved.
+
+#VibeDrawing #AIGotHands
+```
+
+---
+
+### Twitter/X — n8n Integration Thread (09:00 CET Thursday)
+
+```
+If you use n8n, Zapier, or Make: Skissify has a REST API that adds drawing to any workflow.
+
+One HTTP Request node.
+
+POST your JSON manifest → get a hand-drawn sketch URL back.
+
+Pair with a Claude/GPT step to generate the JSON from any data.
+
+Full walkthrough: [blog URL]
+
+#n8n #Automation #BuildInPublic
+```
+
+---
+
+### Twitter/X — Flat Schema Thread (11:00 CET Thursday — developer audience)
+
+```
+Here's the most counterintuitive thing I learned building Skissify:
+
+Flat JSON schema → 94% LLM accuracy
+Nested JSON schema → ~40% LLM accuracy
+
+I tried hierarchical: rooms contain doors. Logical. Clean.
+
+LLMs hated it. They'd generate plausible-looking JSON that violated the nesting rules constantly.
+
+Flat, explicit coordinates (every element gets x, y, w, h) fixed it overnight.
+
+When designing JSON schemas for LLM generation: flat beats nested, every time.
+
+#AIAgents #JSON #BuildInPublic
+```
+
+---
+
+### Twitter/X — glama.ai submission hook (14:00 CET Thursday)
+
+```
+Just submitted Skissify to glama.ai — the MCP server index with 20,000+ entries.
+
+If you use Claude Desktop, Cursor, or Windsurf: you can now discover Skissify as an MCP tool from within glama.
+
+This is the long-tail distribution channel for MCP tools. Took 20 minutes to submit. Worth it.
+
+#MCP #Claude #BuildInPublic
+```
+
+---
+
+### Reddit — r/n8n
+
+```
+Title: I added a REST API to my app so n8n workflows can generate hand-drawn sketches
+
+I built Skissify for AI agent pipelines (MCP, Claude Desktop), but realized it pairs perfectly with n8n.
+
+It's one HTTP Request node. POST JSON describing elements (boxes, arrows, text, rooms), get back a shareable sketch URL.
+
+Where it's useful:
+- Architecture diagrams from service lists
+- Floor plans from property data (pair with an AI node to extract spatial info)
+- Client onboarding visuals from CRM data
+
+The AI node generates the JSON. Skissify renders it. No manual diagram drawing.
+
+API: https://skissify.com/api/render (free tier, no auth)
+Full walkthrough: [blog post URL]
+
+Happy to share the JSON schema for common automation workflow types.
+```
+
+---
+
+### Reddit — r/automation
+
+```
+Title: Show r/automation: REST API that turns JSON into hand-drawn diagrams (no auth, free)
+
+Built a tool that fits automation workflows: POST JSON → hand-drawn sketch URL.
+
+Use it when your workflow needs to visualize data — floor plans, system diagrams, flow charts — without a human drawing it.
+
+Works with n8n, Make, Zapier, or any HTTP step.
+
+skissify.com — free tier, no account
+```
+
+---
+
+### glama.ai Submission Copy
+
+**Name:** Skissify MCP Server
+**One-liner:** JSON to hand-drawn sketch — AI agents can draw floor plans, diagrams, and wireframes via MCP
+**Description:**
+```
+Skissify is an MCP server that lets AI agents generate hand-drawn sketches from JSON manifests.
+
+Tools provided:
+- create_sketch: Takes a JSON manifest, returns a shareable sketch URL
+- list_presets: Returns available sketch presets (floor plan, system diagram, wireframe, blueprint)
+- get_schema: Returns the full element schema for a given sketch type
+
+Element types: rect, circle, arc, arrow, text, line, dashed, dim, window, door-symbol, door-slide, stair, opening, column
+
+Paper types: cream, white, graph, blueprint
+
+Install: npx skissify-mcp
+Add to Claude Desktop config under "mcpServers"
+
+Free tier: unlimited public sketches
+Paid: €5/mo for private sketches + API access
+```
+
+---
+
+### YouTube Shorts — Day 2 Script (NEW — 30 seconds)
+
+```
+[0–3s] Text on screen: "What happens when you give Claude a drawing tool?"
+[3–8s] Show Claude Desktop. Type: "Design me a 3-bedroom apartment layout, open plan kitchen"
+[8–15s] Watch Claude call the Skissify MCP tool — show the tool call with JSON
+[15–22s] Cut to skissify.com/s/[sketch-id] — the hand-drawn floor plan appears
+[22–27s] Zoom in on the wobbly walls, room labels, door symbols
+[27–30s] Text: "skissify.com — free tier available"
+
+Caption: "AI can now draw floor plans. Not describe them. Actually draw them. #AIAgotHands #MCP #VibeDrawing"
+```
+
+---
+
+### Substack Notes — Day 2 Reflection
+
+```
+24 hours after launching Skissify.
+
+The use case that surprised me most: homeowners renovating their kitchens, using Claude as a design assistant, and Skissify as the drawing output layer.
+
+Zero code. Zero JSON writing. Just: "describe the room you want" → Claude handles the rest → hand-drawn floor plan.
+
+The tool was built for AI agent developers. General consumers found it first.
+
+What this tells me: when AI is the interface, the tool can reach audiences the builder never anticipated. The hard part is no longer "can non-developers use this" — it's "can the AI explain to the user what's possible."
+
+#VibeDrawing #BuildInPublic #AIAgents
+```
+
+---
 
 ---
 
