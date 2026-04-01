@@ -2,6 +2,78 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #99 (Late Evening)
+
+### Status: Final scan of the day — 6 topics researched. NEW SIGNAL: tldraw "computer" project (computer.tldraw.com) is a live visual natural-language computing canvas powered by Gemini 2.0 Flash — node-based AI workflow builder, free, public. This is tldraw pivoting from "canvas SDK" toward "visual AI workflow platform." FigJam AI credit system enforced March 2026 (500–4,250 AI credits/month by plan) — metered AI is now standard even for collaboration incumbents. Whimsical AI: mindmaps/flowcharts from natural language, included in Pro. draw.io + Azure/AWS MCP agent skill tutorials proliferating. Excalidraw MCP ecosystem matured: 3+ competing community forks on Lobehub/PulseMCP/Glama. EUR 2/mo micro-SaaS research confirms: credit bundle (one-time) outperforms subscription at the $2 price point. NICHE: headless JSON spatial hand-drawn SVG API uncontested. tldraw "computer" is the biggest new development this week.
+
+### tldraw "computer" — Visual Natural Language Computing (NEW — MEDIUM-HIGH)
+
+**Source**: computer.tldraw.com, ai.google.dev/showcase/tldraw, the-decoder.com/tldraw-unveils-experimental-natural-language-computer-powered-by-gemini-2-0/
+
+tldraw has launched "computer" — a live, publicly accessible application at computer.tldraw.com. Users place nodes (text, images, prompts) on an infinite canvas and connect them with arrows. On "run," Gemini 2.0 Flash reads the diagram and executes the workflow:
+- **Powered by**: Gemini 2.0 Flash (Google partnership confirmed)
+- **Vision**: "First step toward visual programming with everyday language" — Steve Ruiz, founder
+- **Status**: Live, experimental, free at computer.tldraw.com
+- **Not a render API**: Canvas-based, interactive, session-dependent — no POST-JSON-get-SVG output
+
+**Skissify threat assessment**: **MEDIUM-HIGH (upgraded from MEDIUM)**. tldraw is now actively investing in AI developer acquisition — they want to be the visual layer for AI workflows. Developers who start in tldraw "computer" will look for render/export primitives. Skissify can position as the render output layer: "Built your AI flow in tldraw computer? Use Skissify to render the spatial output as hand-drawn SVG."
+
+**Opportunity**: Publish a "tldraw computer + Skissify" integration post showing a node workflow where the final step calls Skissify's POST /render. Intercepts tldraw computer's user base at the exact moment they need visual output.
+
+### FigJam AI — Credit System Enforced March 2026 (NEW UPDATE)
+
+**Source**: mockflow.com/blog/miro-vs-figjam, startup-house.com/blog/figjam-vs-miro
+
+FigJam enforced metered AI billing in March 2026: 500–4,250 AI credits/month by plan tier ($5/editor/month base). Same credit-gated model as Skissify's EUR 0.005/render — confirms the market accepts metered AI feature pricing at this abstraction level.
+
+**Threat assessment**: **Low**. FigJam is UI/UX collaboration in the Figma ecosystem. No spatial sketch API, no JSON manifest input, no architectural elements, no MCP render server. Data point only: credit metering is normalized even in consumer-adjacent tools.
+
+### Miro AI — Sidekicks on Intelligent Canvas (MAINTAINED)
+
+**Source**: taskade.com/blog/ai-brainstorming-tools, miro.com
+
+Miro (100M+ users, $8/user/month) shipping "AI Sidekicks" — agents that participate on the canvas, suggest next steps, create diagrams proactively. 2026 positioning: AI agents as canvas participants.
+
+**Threat assessment**: **Low**. Enterprise collaboration at $8/user/month. No headless render API, no JSON manifest input, no architectural vocabulary. Long-term watch: Miro has the distribution (100M users) to eventually build a render layer. If they announce a headless API, escalate immediately.
+
+### Whimsical AI — Mindmaps/Flowcharts (LOW THREAT CONFIRMED)
+
+**Source**: aiquiks.com/ai-tools/whimsical-ai
+
+Whimsical generates mind maps, flowcharts, wireframes from natural language. AI included in Pro tier. No JSON API, no architectural elements, no hand-drawn aesthetic API, no MCP server.
+
+**Threat assessment**: **Low**. Confirmed different lane.
+
+### draw.io MCP — Tutorial Content Proliferating (OPPORTUNITY)
+
+**Source**: thomasthornton.cloud, rubansiva.medium.com, atalupadhyay.wordpress.com/2026/03/15/
+
+draw.io MCP (launched Feb 3, 2026) is generating significant blog content — Azure/AWS diagram agent skills, infrastructure automation. High-authority domain tutorials warming developers up to "AI + MCP + diagrams." The draw.io output is clean XML vector — no hand-drawn, no architectural elements.
+
+**SEO opportunity**: "draw.io MCP alternative hand-drawn" = near-zero competition today. Every week this window stays open is a missed compounding SEO opportunity.
+
+### EUR 2/mo Micro-SaaS WTP — Market Signal
+
+**Source**: genailabs.agency, bigideasdb.com, getmonetizely.com, paddle.com
+
+EUR 2/mo is below optimal WTP thresholds for B2C micro-SaaS ($4–12/mo) and B2B tools ($5–49/mo). HOWEVER: EUR 2 as a one-time credit bundle (400 renders) outperforms EUR 2/mo subscription as a first-conversion mechanism. Credit bundles convert better than per-render billing for initial purchase. **Conclusion**: EUR 2 works ONLY as a one-time credit bundle, not a subscription tier. Optimal ladder: EUR 0 (100 renders/month free) → EUR 2 starter bundle (400 renders, one-time) → EUR 5/mo Pro.
+
+### Updated Competitor Matrix (Run #99 — Wednesday April 1, late evening)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw+** | MCP closed alpha (Anthropic partnership). Custom AI tokens (BYO Claude/OpenAI/Gemini keys). 3+ community MCP forks live. | **HIGH WATCH** |
+| **tldraw** | v4.5.4. NEW: "computer" live (computer.tldraw.com) — Gemini 2.0 Flash visual workflow canvas. SDK $6K/yr. | **MEDIUM-HIGH (upgraded)** |
+| **excalidraw-render** | Lobehub MCP directory. Chromium headless, ~3s cold start. | **MEDIUM — discovery conflict** |
+| **Miro AI** | Sidekicks on canvas, 100M+ users. No render API. | Low |
+| **FigJam AI** | Credit system enforced March 2026. Figma ecosystem only. | Low |
+| **Whimsical AI** | Natural language → mindmaps/flowcharts. No API lane. | Low |
+| **draw.io MCP** | Proliferating tutorial content. XML/vector, editor-dependent. | Low — SEO opportunity |
+| **Sketch MCP** | March 25 launch. macOS-only, design lane. | Low |
+| **Skissify** | 99 scans. tldraw "computer" is biggest new signal — visual AI workflow canvas live. Headless JSON spatial hand-drawn SVG API: uncontested as a product. | **Uncontested in headless spatial lane** |
+
+---
+
 ## Update: 2026-04-01 — Web Research Run (Evening, ~20:00 CET)
 
 ### Status: Evening deep-dive — 6 topics researched. KEY FINDINGS: tldraw shipped canvas performance overhaul (25x faster shape indicators) + new AI Image Pipeline template in 2026. Excalidraw+ added Custom AI Tokens (Feb 2026) — users can now plug in own Claude/OpenAI keys. Google Stitch (ex-Galileo AI) launched free UI wireframe-to-code tool at Google I/O May 2025 — Gemini-powered, exports to Figma. MCP TypeScript SDK hit 97M+ monthly downloads; MCP donated to Linux Foundation. Wireframe lane seeing active AI investment (Figma AI, Miro AI, Uizard, Visily, UXPilot all active in 2026). Skissify's spatial/architectural JSON lane remains uncontested.
@@ -6443,3 +6515,69 @@ Napkin AI has grown to 5M+ registered users (as of 2025). Key limitation: **stil
 | Coordinate control | No | Partial | No | No | **Yes (x,y native)** |
 | Price | $7/mo | Free | Free (limited) | Free | **EUR 2-5/mo** |
 
+
+---
+
+## Update: 2026-04-01 — Automated Strategy Run #100 (Morning Cycle)
+
+### Status: 7 topics researched. NEW SIGNALS: (1) Vercel json-render (13K+ GitHub stars, January 2026) is a direct conceptual peer — LLM generates a JSON spec constrained by a schema catalog, renderer maps it to output. This is Skissify's architecture validated by Vercel. (2) Google Stitch March 19 update: generates 5 interconnected screens simultaneously, exports production code in 7 frameworks — accelerating the wireframe-to-code lane but NOT the hand-drawn spatial/floor-plan lane. (3) SketchUp 2026: generative AI textures added, 3D architecture focus, no API lane. (4) MCP registry now lists 10,000+ public servers; enterprise shadow-IT framing emerging (Qualys report). (5) tldraw 25x canvas perf + agent starter template confirmed from prior cycle — no new moves April 1. (6) Excalidraw GitHub updated April 1 but no specific feature details surfaced. (7) Intercom Fin AI at $0.99/resolution hit 8-figure ARR at 393% growth — outcome-based micro-pricing is mainstream.
+
+### Vercel json-render — Conceptual Validation of Skissify's Architecture (NEW — BULLISH)
+
+**Source**: https://www.infoq.com/news/2026/03/vercel-json-render/ | https://github.com/vercel-labs/json-render | https://thenewstack.io/vercels-json-render-a-step-toward-generative-ui/
+
+Vercel open-sourced `json-render` (January 2026): developers define a catalog of permitted UI components as Zod schemas, an LLM generates a flat JSON tree constrained to that catalog, and the Renderer maps it to real implementations. Apache 2.0. 13,000+ GitHub stars in weeks.
+
+**Skissify parallel is exact**: Skissify defines a catalog of permitted sketch elements (via JSON schema), an LLM (or user) generates a JSON manifest constrained to that schema, and Skissify renders it to SVG/canvas. Vercel has now given this architecture a name and massive developer mindshare.
+
+**Threat assessment**: **LOW (competitor) / HIGH (tailwind)**. json-render targets UI components, not hand-drawn spatial sketches. But 13K developers now understand the "schema-constrained LLM → JSON → renderer" pattern. Skissify is the domain-specific application of this exact pattern for spatial/architectural output.
+
+**Opportunity**: Publish a blog post explicitly connecting Skissify to the json-render pattern. "Skissify is json-render for hand-drawn spatial sketches — same architecture, different domain." Intercept json-render searchers (13K+ GitHub stars = large audience) who need a visual/sketch output layer.
+
+### Google Stitch March 19 Update — UI Wireframe Lane, Not Spatial Lane (MAINTAINED LOW)
+
+**Source**: https://tech-insider.org/google-stitch-ai-design-tool-march-2026-update/
+
+Google Stitch updated March 19, 2026: now generates up to 5 interconnected screens simultaneously, maps user journeys automatically, exports production-ready code in 7 frameworks. Gemini-powered, free, exports to Figma.
+
+**Threat assessment**: **Low**. Stitch is accelerating the wireframe → production code pipeline. No hand-drawn aesthetic, no JSON manifest input, no architectural spatial elements, no MCP server. Stitch and Skissify are complementary: Stitch designs the app screen, Skissify sketches the floor plan of the building the app is for.
+
+### SketchUp 2026 — Generative AI Textures Added (LOW THREAT)
+
+**Source**: https://www.sketchupafrica.com/sketchup-products/whats-new-in-sketchup-2026/
+
+SketchUp 2026 adds "Generate Textures" — generative AI to sample an image or classic material and generate Photoreal Materials. Enhanced Environments and Photoreal visualization. Still a 3D modelling tool, not a 2D spatial sketch API.
+
+**Threat assessment**: **Low**. SketchUp is $299+/year, 3D-first, desktop-native. Different category. No JSON manifest, no MCP, no hand-drawn rendering. Rising awareness of AI in architecture tooling is a tailwind for Skissify, not a threat.
+
+### MCP Registry — 10,000+ Public Servers, Enterprise Shadow IT (ECOSYSTEM UPDATE)
+
+**Source**: https://blog.qualys.com/product-tech/2026/03/19/mcp-servers-shadow-it-ai-qualys-totalai-2026 | https://use-apify.com/blog/mcp-standard-ecosystem-2026 | https://stackgen.com/blog/the-10-best-mcp-servers-for-platform-engineers-in-2026
+
+MCP registry has crossed 10,000 public servers as of April 2026. Enterprise adoption accelerating: AWS, Microsoft, HashiCorp all shipping official MCP servers. Qualys published a security/governance report specifically about "MCP shadow IT" — sign that MCP has reached enterprise procurement visibility.
+
+**Opportunity for Skissify**: Being listed on the official MCP registry is now an enterprise credibility signal, not just developer discovery. The bar has risen: Skissify needs a listing with clear description, category, and schema documentation. Registrations are compounding — late entrants get buried.
+
+### Outcome-Based Micro-Pricing Mainstream — $0.99-$2.00/resolution Models (PRICING SIGNAL)
+
+**Source**: https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models | https://firstpagesage.com/seo-blog/average-saas-conversion-rates/
+
+Intercom Fin AI Agent: $0.99/resolution → 8-figure ARR at 393% growth. Zendesk: $1.50–$2.00/automated resolution. 43% of SaaS companies now combine subscription + usage. Trial-to-paid conversion: 20–40% with no credit card required.
+
+**Skissify implication**: EUR 0.005/render is correct pricing. At these micro-prices, usage compounds fast. Skissify's EUR 5/mo Pro = 1,000 renders/month → effective unit price EUR 0.005. The market has validated this exact pricing architecture.
+
+### Updated Competitor Matrix (Run #100 — Wednesday April 1, morning)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw+** | GitHub updated April 1 (details TBC). MCP closed alpha. Custom AI Tokens (BYO Claude/OpenAI). 3+ community MCP forks on Lobehub. | **HIGH WATCH** |
+| **tldraw** | v4.5.4. "computer" live (Gemini 2.0 Flash visual workflow). 25x canvas perf. Agent starter template. $6K/yr SDK. | **MEDIUM-HIGH** |
+| **Vercel json-render** | 13K+ stars. Same schema-constrained JSON→render architecture as Skissify. UI components domain. Apache 2.0. | **LOW (threat) / HIGH (tailwind)** |
+| **Google Stitch** | March 19 update: 5 screens simultaneous, 7 framework export. Figma ecosystem. | **Low** |
+| **SketchUp 2026** | Generative AI textures. 3D modelling, $299+/yr. | **Low** |
+| **excalidraw-render** | Lobehub MCP. Chromium headless, 3s cold start. | **MEDIUM — Skissify's direct counter** |
+| **Miro AI** | 100M+ users, Sidekicks. No render API. | Low |
+| **draw.io MCP** | Tutorial proliferation. XML/vector, editor-dependent. | Low — SEO opportunity |
+| **Skissify** | Run #100. Vercel json-render validates architecture. MCP 10K+ server milestone. Headless spatial JSON → SVG: uncontested. | **Uncontested in headless spatial lane** |
+
+---

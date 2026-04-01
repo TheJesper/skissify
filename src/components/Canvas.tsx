@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useCallback, useState } from "react";
+import { useRef, useEffect, useCallback, useState, useMemo } from "react";
 import { SketchData, SketchElement, BOARD_COLORS } from "@/lib/types";
 import { renderSketch, computeCenterTransform } from "@/lib/renderer";
 import Rulers, { RULER_SIZE } from "./Rulers";
@@ -436,6 +436,13 @@ export default function Canvas({
   const canvasW = sketch.width || 900;
   const canvasH = sketch.height || 650;
 
+  // Compute set of hidden layer ids so hit-testing skips elements on hidden layers.
+  // Memoized to keep a stable reference for useCallback dependency arrays.
+  const hiddenLayers = useMemo(
+    () => new Set((sketch.layers ?? []).filter((l) => !l.visible).map((l) => l.id)),
+    [sketch.layers]
+  );
+
   // Reset view: fit canvas to container with small padding
   const resetView = useCallback(() => {
     const container = containerRef.current;
@@ -586,6 +593,9 @@ export default function Canvas({
       for (const idx of selectedElements) {
         const el = sketch.elements[idx];
         if (!el) continue;
+        // Skip selection highlight for elements on hidden layers or hidden themselves
+        if (el.visible === false) continue;
+        if (el.layer && hiddenLayers.has(el.layer)) continue;
 
         const isLocked = !!(el as unknown as Record<string, unknown>).locked;
         // Locked elements: use orange dashed selection box
@@ -837,7 +847,7 @@ export default function Canvas({
       let hitIdx = -1;
       for (let i = sketch.elements.length - 1; i >= 0; i--) {
         const el = sketch.elements[i];
-        if (hitTest(el, mx, my)) {
+        if (hitTest(el, mx, my, hiddenLayers)) {
           hitIdx = i;
           break;
         }
@@ -876,7 +886,7 @@ export default function Canvas({
         onSelectElements(new Set());
       }
     },
-    [sketch.elements, clientToCanvas, selectedElements, onSelectElements]
+    [sketch.elements, clientToCanvas, selectedElements, onSelectElements, hiddenLayers]
   );
 
   // Double-click → inline text edit
@@ -886,7 +896,7 @@ export default function Canvas({
       const { mx, my } = clientToCanvas(e.clientX, e.clientY);
       for (let i = sketch.elements.length - 1; i >= 0; i--) {
         const el = sketch.elements[i];
-        if (hitTest(el, mx, my)) {
+        if (hitTest(el, mx, my, hiddenLayers)) {
           const editable = getElementText(el);
           if (editable !== null) {
             onSelectElements(new Set([i]));
@@ -896,7 +906,7 @@ export default function Canvas({
         }
       }
     },
-    [sketch.elements, clientToCanvas, onSelectElements, onDoubleClickElement]
+    [sketch.elements, clientToCanvas, onSelectElements, onDoubleClickElement, hiddenLayers]
   );
 
   // Zoom with scroll - zoom toward mouse cursor for pixel-perfect feel
@@ -1003,7 +1013,7 @@ export default function Canvas({
       if (selectedElements.size > 0 && onMoveSelected) {
         const hitOnSelected = [...selectedElements].some((i) => {
           const el = sketch.elements[i];
-          return el && hitTest(el, mx, my);
+          return el && hitTest(el, mx, my, hiddenLayers);
         });
         const allLocked = [...selectedElements].every((i) => {
           const el = sketch.elements[i];
@@ -1022,7 +1032,7 @@ export default function Canvas({
       }
 
       // Check if clicking on any element at all (unselected)
-      const hitOnAny = sketch.elements.some((el) => hitTest(el, mx, my));
+      const hitOnAny = sketch.elements.some((el) => hitTest(el, mx, my, hiddenLayers));
 
       // Empty canvas space → prepare for box-select
       if (!hitOnAny) {
@@ -1032,7 +1042,7 @@ export default function Canvas({
         lastMouse.current = { x: e.clientX, y: e.clientY };
       }
     },
-    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, onResizeElement, onRotateElement, getActiveHandles, drawMode, onDrawPath]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, onResizeElement, onRotateElement, getActiveHandles, drawMode, onDrawPath, hiddenLayers]
   );
 
   const handleMouseMove = useCallback(
@@ -1229,7 +1239,7 @@ export default function Canvas({
 
           const boxSelected = new Set<number>();
           sketch.elements.forEach((el, i) => {
-            if (boxHitTest(el, x1, y1, x2, y2)) boxSelected.add(i);
+            if (boxHitTest(el, x1, y1, x2, y2, hiddenLayers)) boxSelected.add(i);
           });
 
           if (e.shiftKey) {
@@ -1259,7 +1269,7 @@ export default function Canvas({
         setSmartGuides([]);
       }
     },
-    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd, onRotateEnd, clientToCanvas, drawMode, onDrawPath]
+    [sketch.elements, selectedElements, canvasW, canvasH, onSelectElements, onDragEnd, onResizeEnd, onRotateEnd, clientToCanvas, drawMode, onDrawPath, hiddenLayers]
   );
 
   const handleMouseLeave = useCallback(() => {
@@ -1449,7 +1459,7 @@ export default function Canvas({
         const { mx: startMx, my: startMy } = clientToCanvas(startPos.x, startPos.y);
         const hitOnSelected = [...selectedElements].some((i) => {
           const el = sketch.elements[i];
-          return el && !((el as unknown as Record<string, unknown>).locked) && hitTest(el, startMx, startMy);
+          return el && !((el as unknown as Record<string, unknown>).locked) && hitTest(el, startMx, startMy, hiddenLayers);
         });
         if (hitOnSelected) {
           isTouchDraggingElements.current = true;
@@ -1484,7 +1494,7 @@ export default function Canvas({
 
       lastSingleTouch.current = { x: t.clientX, y: t.clientY };
     }
-  }, [selectedElements, sketch.elements, sketch.snapGrid, zoom, canvasW, canvasH, clientToCanvas, onMoveSelected]);
+  }, [selectedElements, sketch.elements, sketch.snapGrid, zoom, canvasW, canvasH, clientToCanvas, onMoveSelected, hiddenLayers]);
 
   const handleTouchEnd = useCallback((e: React.TouchEvent) => {
     const wasDraggingElements = isTouchDraggingElements.current;
@@ -1513,7 +1523,7 @@ export default function Canvas({
             const { mx, my } = clientToCanvas(changedTouch.clientX, changedTouch.clientY);
             let tappedIdx = -1;
             for (let i = sketch.elements.length - 1; i >= 0; i--) {
-              if (hitTest(sketch.elements[i], mx, my)) {
+              if (hitTest(sketch.elements[i], mx, my, hiddenLayers)) {
                 tappedIdx = i;
                 break;
               }
@@ -1530,7 +1540,7 @@ export default function Canvas({
       touchStartPos.current = null;
       lastSingleTouch.current = null;
     }
-  }, [sketch.elements, clientToCanvas, onSelectElements, onDragEnd]);
+  }, [sketch.elements, clientToCanvas, onSelectElements, onDragEnd, hiddenLayers]);
 
   // Update cursor when hovering over selected elements
   const handleCursorHover = useCallback(
@@ -1593,14 +1603,14 @@ export default function Canvas({
       if (selectedElements.size > 0 && onMoveSelected) {
         const hitOnSelected = [...selectedElements].some((i) => {
           const el = sketch.elements[i];
-          return el && hitTest(el, mx, my);
+          return el && hitTest(el, mx, my, hiddenLayers);
         });
         setCursor(hitOnSelected ? "grab" : "crosshair");
       } else {
         setCursor("crosshair");
       }
     },
-    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, getActiveHandles, drawMode, onRotateElement]
+    [selectedElements, sketch.elements, clientToCanvas, onMoveSelected, getActiveHandles, drawMode, onRotateElement, hiddenLayers]
   );
 
   // Keyboard
@@ -1797,9 +1807,11 @@ export default function Canvas({
 function hitTest(
   el: SketchData["elements"][number],
   mx: number,
-  my: number
+  my: number,
+  hiddenLayers?: Set<string>
 ): boolean {
   if (el.visible === false) return false;
+  if (hiddenLayers && el.layer && hiddenLayers.has(el.layer)) return false;
   const margin = 12;
 
   if ("x1" in el && "x2" in el) {
@@ -1844,9 +1856,11 @@ function boxHitTest(
   x1: number,
   y1: number,
   x2: number,
-  y2: number
+  y2: number,
+  hiddenLayers?: Set<string>
 ): boolean {
   if (el.visible === false) return false;
+  if (hiddenLayers && el.layer && hiddenLayers.has(el.layer)) return false;
   if ("x1" in el && "x2" in el) {
     const l = asLine(el);
     const ex1 = Math.min(l.x1, l.x2), ey1 = Math.min(l.y1, l.y2);
