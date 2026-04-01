@@ -1,32 +1,72 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — DAY 2 (SEE CYCLE 96)**
+**Current Date: April 2, 2026 — DAY 2 (SEE CYCLE 97)**
 
 ---
 
-## NEW IDEAS (Added 2026-04-02, Cycle 96 — Day 2 Morning)
+## NEW IDEAS (Added 2026-04-02, Cycle 97 — Day 2 Afternoon)
 
-### Status Overview: Day 2 Priority Actions
+### Cycle 97 — New Blog Posts Written
+
+Three new blog posts added to `docs/marketing/blog/`:
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Vibe Drawing for Non-Coders | `vibe-drawing-no-code-floor-plans-ai.md` | Non-developer use case: homeowners, GMs, PMs | ✅ Ready to publish |
+| Sketch URL as Persistent Agent Memory | `the-sketch-url-as-persistent-memory.md` | Technical angle for agent builders | ✅ Ready to publish |
+| Product Team Workflow (vs Figma) | `why-hand-drawn-beats-figma-product-team-workflow.md` | PM/design team audience | ✅ Ready to publish |
+
+### Cycle 97 — New Social Content Added (SOCIAL-MEDIA.md)
+
+| Platform | Copy | Status |
+|----------|------|--------|
+| Twitter/X — Vibe Drawing afternoon thread | Cycle 97 section | ✅ Ready to post 14:00 |
+| Twitter/X — "VibeDrawing" viral hook | Cycle 97 section | ✅ Ready to post 17:00 |
+| Twitter/X — Sketch URL as agent memory | Cycle 97 section | ✅ Ready to post 19:00 |
+| LinkedIn — Afternoon homeowner surprise story | Cycle 97 section | ✅ Ready to post 14:30 |
+| r/homeimprovement (500K) | Cycle 97 section | ✅ NEW target — post today |
+| r/nocode | Cycle 97 section | ✅ NEW target — post today |
+| r/sketchnotes (15K) | Cycle 97 section | ✅ NEW target — post today |
+| Substack Notes | Cycle 97 section | ✅ NEW platform added |
+| Pinterest | Cycle 97 section | ✅ NEW platform added |
+| TikTok "Vibe Drawing" script | Cycle 97 section | ✅ Ready to record |
+
+### Cycle 97 — New Viral Angles Identified
+
+1. **"Vibe Drawing" as a coined phrase** — analogous to "Vibe Coding" (Karpathy). Short, memorable, true. Own this phrase in Week 1.
+2. **The homeowner surprise story** — "I built for developers, homeowners showed up" — this is the most relatable narrative for general tech media.
+3. **Sketch URL as persistent agent memory** — underutilized technical angle for multi-agent workflow builders; new blog post + Twitter thread ready.
+4. **Product team workflow** — "your first two hours should never touch Figma" — PM/design community hook distinct from the developer angle.
+
+### Status Overview: Day 2 Afternoon Actions (Cycle 97)
 
 | Action | Status | Priority |
 |--------|--------|----------|
-| Record demo video (15–60 sec screen capture) | ⏳ DO THIS FIRST | 🔴 P0 |
-| Twitter/X Day 2 morning thread | ⏳ Post 09:00 CET — copy in SOCIAL-MEDIA.md Cycle 96 | 🔴 P0 |
-| LinkedIn Day 2 post | ⏳ Post 10:00 CET — copy in Cycle 96 | 🟡 P1 |
-| r/mcp post (if not done Day 1) | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
-| r/ClaudeAI post (if not done Day 1) | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
-| r/startups AMA | ⏳ Post NOW — copy in Cycle 96 | 🔴 P0 |
-| Indie Hackers (if not done Day 1) | ⏳ Post NOW | 🔴 P0 |
-| Hashnode crosspost | ⏳ Publish CANONICAL blog post | 🟡 P1 |
-| Mastodon / Fediverse post | ⏳ New — copy in Cycle 96 | 🟡 P1 |
-| r/worldbuilding post | ⏳ New Day 2 target — copy in Cycle 96 | 🟡 P1 |
-| r/gamedesign post | ⏳ New Day 2 target | 🟡 P1 |
-| r/VibeCoding post ("#VibeDrawing") | ⏳ New — post today | 🟡 P1 |
+| Record demo video (15–60 sec screen capture) | ⏳ STILL P0 — record before sundown | 🔴 P0 |
+| Publish "Vibe Drawing" blog to Hashnode/Dev.to | ⏳ New — vibe-drawing-no-code-floor-plans-ai.md | 🔴 P0 |
+| Twitter/X afternoon Vibe Drawing thread | ⏳ Post 14:00 CET — copy in Cycle 97 | 🔴 P0 |
+| Twitter/X sketch-URL-as-memory tweet | ⏳ Post 19:00 CET — copy in Cycle 97 | 🟡 P1 |
+| LinkedIn afternoon post | ⏳ Post 14:30 CET — copy in Cycle 97 | 🟡 P1 |
+| r/homeimprovement post | ⏳ NEW — copy in Cycle 97 | 🟡 P1 |
+| r/nocode post | ⏳ NEW — copy in Cycle 97 | 🟡 P1 |
+| r/sketchnotes post | ⏳ NEW — copy in Cycle 97 | 🟡 P1 |
+| Substack Notes post | ⏳ NEW platform — copy in Cycle 97 | 🟡 P1 |
+| Pinterest floor plan pins | ⏳ NEW platform — descriptions in Cycle 97 | 🟡 P2 |
+| TikTok "Vibe Drawing" video | ⏳ Script in Cycle 97 — record this weekend | 🟡 P1 |
+| Twitter/X Day 2 morning thread | ✅ Copy in Cycle 96 | — |
+| LinkedIn Day 2 morning post | ✅ Copy in Cycle 96 | — |
+| r/mcp post | ✅ Copy in Cycle 96 — post if not done | — |
+| r/ClaudeAI post | ✅ Copy in Cycle 96 — post if not done | — |
+| r/startups AMA | ✅ Copy in Cycle 96 — post if not done | — |
+| Mastodon / Fediverse post | ✅ Copy in Cycle 96 | — |
+| r/worldbuilding post | ✅ Copy in Cycle 96 | — |
+| r/gamedesign post | ✅ Target identified — copy in Cycle 94 | — |
+| r/VibeCoding "#VibeDrawing" post | ✅ Target identified — now has dedicated angle | — |
 | TLDR AI pitch email | ⏳ Send today | 🟡 P1 |
 | Ben's Bites / The Rundown AI pitch | ⏳ Send today — template in Cycle 96 | 🟡 P1 |
 | Product Hunt maker update (Day 1 wrap) | ⏳ Post with actual numbers | 🔴 P0 |
-| "#AIGotHands" tweet | ⏳ Post if not done last night | 🔴 P0 |
+| Demo video record | ⏳ STILL #1 P0 | 🔴 P0 |
 
 ### Key Day 2 Insights (Cycle 96)
 

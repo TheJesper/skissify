@@ -1,7 +1,278 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 96 (Day 2 Morning — Momentum Wave)**
+**Last updated: April 2, 2026 — Cycle 97 (Day 2 Afternoon — Vibe Drawing Wave)**
+
+---
+
+## CYCLE 97 — DAY 2 (APRIL 2) — AFTERNOON PUSH (14:00–22:00 CET)
+
+*Context: Day 2 afternoon. PH voting is over. The audience that matters now is organic search, Reddit, and the newsletter crowd. New angle: "Vibe Drawing" — the non-coder use case. Three new blog posts ready (vibe drawing for non-coders, sketch URL as agent memory, product team workflow). New platforms: Substack Notes, r/nocode, r/homeimprovement, r/hpmor, Pinterest. Viral hook to lean into: the homeowner renovation story.*
+
+---
+
+### Twitter/X — Day 2 Afternoon Thread (14:00 CET)
+
+```
+I built Skissify for AI developers.
+
+Homeowners found it on their own.
+
+Here's the thing nobody in dev tooling talks about: when you build a good primitive, people outside your target audience discover uses you never planned.
+
+🧵
+```
+
+```
+1/ The use case I built for:
+Developer → writes JSON → gets SVG diagram
+
+The use case that showed up uninvited:
+Homeowner → tells Claude "sketch my kitchen renovation idea" → shows contractor the sketch
+
+Same API. Completely different job.
+```
+
+```
+2/ Why it works for homeowners:
+
+Rough sketches invite feedback. Polished floor plans from Revit look "decided."
+
+A wobbly hand-drawn layout says: "this is the idea, let's talk about it."
+
+The roughness IS the feature.
+```
+
+```
+3/ This is what I mean by #VibeDrawing:
+
+Same as vibe coding — describe in plain English, let AI construct it — but for spatial things.
+
+Floor plans. Dungeon maps. Wireframes. Room layouts. Office configurations.
+
+No JSON. No design tools. Just describe and draw.
+```
+
+```
+4/ Try it:
+
+Tell Claude: "Sketch a [whatever you're imagining]"
+
+(With skissify-mcp installed — npx skissify-mcp)
+
+Or: skissify.com → browser editor → no setup
+
+#VibeDrawing #AIGotHands #Skissify
+```
+
+---
+
+### Twitter/X — Viral Hook Standalone (17:00 CET)
+
+```
+Vibe coding: describe software in plain English, AI writes it.
+
+Vibe drawing: describe a space in plain English, AI sketches it.
+
+Floor plans. Wireframes. Dungeon maps. System diagrams.
+
+No JSON. No Figma. No mouse skills.
+
+skissify.com + npx skissify-mcp
+
+#VibeDrawing #AIGotHands
+```
+
+---
+
+### Twitter/X — Technical Hook (19:00 CET — developer audience)
+
+```
+Underrated Skissify use case:
+
+A sketch URL is persistent agent memory.
+
+Every render gets a deterministic public URL.
+The same JSON → same SVG, every time.
+
+Pass a sketch URL between agents in your pipeline.
+Each agent can retrieve the JSON, modify it, re-render.
+
+Spatial state that's human-inspectable and agent-readable.
+
+skissify.com/for-agents
+```
+
+---
+
+### LinkedIn — Day 2 Afternoon (14:30 CET)
+
+```
+Something unexpected happened the day after launching Skissify.
+
+I built it for AI developers. Then homeowners showed up.
+
+The pattern: when you build a truly API-first tool — zero friction, no auth, pure JSON in → output out — audiences you never anticipated find uses you never designed for.
+
+The homeowner use case works because:
+1. They describe a room layout to Claude in plain English
+2. Claude renders a hand-drawn sketch via Skissify MCP
+3. They show it to their contractor
+
+They never see the JSON. They never open a design tool. They describe, and they get a picture.
+
+This is what I'm calling Vibe Drawing — the spatial equivalent of vibe coding.
+
+And it turns out a lot of people who aren't developers need to think spatially: homeowners, teachers, game designers, event planners, architecture students, product managers.
+
+The primitive was always missing. The use cases were always there.
+
+skissify.com — free, no auth, MCP-native
+
+#BuildInPublic #AI #ProductDesign #VibeDrawing
+```
+
+---
+
+### r/homeimprovement — Post (NEW — Day 2 Target)
+
+```
+Title: I let AI sketch my renovation idea and showed it to my contractor — here's what happened
+
+Not a developer, just someone who wanted to redo their kitchen.
+
+I told Claude (AI assistant): "Sketch a kitchen, roughly 4 by 3 meters. L-shaped counter on two walls. Island in the center. Fridge and oven on the north wall. Window above the sink."
+
+It used a tool called Skissify to produce a hand-drawn floor plan — wobbly walls, symbols for the appliances, everything labeled. Took about 15 seconds.
+
+I shared the link with my contractor instead of trying to describe it verbally.
+
+He immediately understood the layout and flagged that the island placement would block the walk path to the door.
+
+Changed the plan in 20 seconds by just re-describing to Claude.
+
+The tool is free: skissify.com — no signup. If you're planning any renovation or room rearrangement, it's actually useful.
+```
+
+---
+
+### r/nocode — Post (NEW — Day 2 Target)
+
+```
+Title: Describe a floor plan / wireframe in plain English → AI draws it — no code, no design tools
+
+For anyone who's ever needed a rough visual but didn't want to learn Figma:
+
+1. Install Claude Desktop (free tier works)
+2. Add skissify-mcp (one config block, 2 minutes)
+3. Tell Claude to sketch whatever you're imagining
+
+It renders hand-drawn SVG sketches — floor plans, wireframes, diagrams — from your plain English description.
+
+No JSON. No canvas. No shape library. Just describe.
+
+skissify.com — also has a browser editor if you want to use it without any setup.
+```
+
+---
+
+### r/sketchnotes — Post (NEW — Visual Thinking Audience)
+
+```
+Title: Built a tool that generates hand-drawn style sketches from AI descriptions — thought this community might appreciate the "rough is intentional" angle
+
+The core idea behind Skissify: rough sketches invite feedback. Polished mockups invite critique of execution.
+
+The wobble, the uneven line weights, the hand-drawn aesthetic — these aren't limitations. They're signals. "This is still an idea. Push on it."
+
+The tool is an API + browser editor that produces hand-drawn SVGs from JSON (or via Claude MCP from plain English descriptions). Primarily built for developers and AI agents, but the design philosophy is straight from visual thinking tradition.
+
+skissify.com — free to try, no signup
+```
+
+---
+
+### Substack Notes — New Platform (Day 2)
+
+```
+The best design insight I rediscovered building Skissify:
+
+Rough sketches get better feedback than polished mockups.
+
+Not marginally better. Fundamentally better — because roughness signals "this is still open" and polish signals "we decided."
+
+Every pixel of polish you add to an early-stage design is a vote for premature convergence.
+
+Build the rough version first. On purpose.
+
+(Skissify is my attempt to make rough-first a programmable workflow: skissify.com)
+```
+
+---
+
+### Pinterest — Visual Discovery (NEW Platform — Day 2)
+
+*Pin the floor plan examples to boards: "Floor Plan Ideas", "Home Renovation", "AI Tools", "Architecture Sketches"*
+
+**Pin description template:**
+```
+Hand-drawn floor plan sketch generated by AI in 15 seconds — no design tool needed. Describe your room layout in plain English, get a shareable hand-drawn sketch. Perfect for renovation planning, sharing ideas with contractors, or early-stage home design. Free at skissify.com
+```
+
+---
+
+### New Viral Hooks — Cycle 97
+
+**The comparison hook (for general audiences):**
+```
+Vibe coding → AI writes your software from a description
+Vibe drawing → AI sketches your space from a description
+
+Same idea. Different output type.
+
+The missing half of the creative AI stack just got filled.
+```
+
+**The frustration hook (product managers, designers):**
+```
+"Can you open Figma and just sketch this quick idea?"
+
+The meeting that was supposed to be a brainstorm is now a 40-minute Figma session.
+
+The problem isn't Figma. The problem is using Figma before you know what you're building.
+
+Rough first. Polish second. Always.
+```
+
+**The surprise hook (homeowner / renovation angle):**
+```
+I built Skissify for AI developers.
+
+The unexpected top-3 use case: homeowners showing renovation ideas to their contractors.
+
+No one planned for this.
+No one had to.
+
+Build the primitive correctly. The use cases find you.
+```
+
+---
+
+### TikTok / Reels — "Vibe Drawing" Script (30 seconds)
+
+```
+Hook (0-3s): "You've heard of vibe coding. Meet vibe drawing."
+
+(3-12s): Screen record — type a room description into Claude, watch Skissify render it
+
+(12-22s): "No JSON. No Figma. No design tools. Just describe what you want."
+
+(22-28s): Cut to: three use cases fast — floor plan / dungeon map / wireframe
+
+(28-30s): "skissify.com — free, no signup"
+
+Caption: Vibe coding but for spaces. #VibeDrawing #AIGotHands #AITools
+```
 
 ---
 
