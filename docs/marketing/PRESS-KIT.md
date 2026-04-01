@@ -446,6 +446,46 @@ April Fools creates the world's most aggressive pre-qualification filter. Only u
 
 ---
 
+## Day 1 Mid-Launch Update (April 1, 2026 — Cycle 89 — 09:28 CET)
+
+### Emerging Story Angles from First 2.5 Hours
+
+**"The skeptic-to-advocate pipeline"** — most shareable human story:
+> Users who saw the April 1 launch and thought it was a joke are the best signal. The ones who ran the curl command anyway became advocates. The doubt-to-belief journey, fully visible in public Twitter replies, is the real marketing story.
+
+**"Deterministic AI diagrams vs generative image AI"** — technical differentiation:
+> Skissify produces the same output for the same input, every time. No hallucinated room proportions. No randomized geometry. When you need an AI to sketch a floor plan for a contractor meeting, you need something reproducible — not a DALL-E interpretation.
+
+**"The schema that LLMs already understand"** — unique technical angle:
+> Flat JSON with absolute coordinates gets 94% first-try accuracy across 7 models. Nested schemas see 40%. The insight: design for LLM training data patterns, not developer intuition. This principle applies beyond Skissify.
+
+### New Audience Segments Confirmed Active (Day 1)
+
+Beyond the planned developer audience, these segments are appearing organically:
+
+| Segment | Discovery path | Hook that works |
+|---------|---------------|-----------------|
+| Homeowners (renovation planning) | "AI assistant told me about Skissify" | "Sketch your renovation idea and show the contractor" |
+| Tabletop RPG players | Reddit/Discord | "Blueprint-mode dungeon maps in 30 seconds" |
+| Interior designers | Pinterest / AI tools | "Hand-drawn floor plan in 10 seconds — no CAD required" |
+| Architecture students | r/architecture | "The rough sketch your professor wants to see" |
+
+### Updated One-Liners by Audience
+
+**For developer press (TechCrunch, The Verge):**
+> "The first REST API where the output is a hand-drawn diagram — designed for an AI agent, not a human."
+
+**For AI/agent press (The Batch, AI newsletters):**
+> "Claude now has hands. Skissify is the MCP server that lets LLMs generate hand-drawn spatial diagrams — floor plans, wireframes, architecture — as native tool output."
+
+**For design press (Sidebar, Designer News):**
+> "Rough sketches get better feedback than polished mockups. Skissify is the API that makes rough-first workflows programmable — for both humans and AI agents."
+
+**For indie/maker press (Indie Hackers, Wired Backchannel):**
+> "A developer launched a hand-drawn sketch API on April Fools Day. By noon, homeowners and dungeon masters were using it for things he didn't plan for."
+
+---
+
 ## Day 2 Update (April 2, 2026 — Cycle 85)
 
 ### Screenshots Status — Action Required

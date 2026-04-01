@@ -1,7 +1,219 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 1, 2026 — Cycle 88 (08:20 CET — 1H20M IN)**
+**Last updated: April 1, 2026 — Cycle 89 (09:28 CET — 2H28M IN)**
+
+---
+
+## CYCLE 89 — 09:28 CET — 2H28M IN (10:00–14:00 WINDOW)
+
+*Show HN posts in ~30 min. Reddit Wave 1 starting at 11:00. Use this section now.*
+
+---
+
+### Show HN — Companion Tweet (post at 10:00 CET exactly when HN goes up)
+
+```
+Just posted on Hacker News.
+
+Show HN: Skissify – JSON to hand-drawn sketch (AI agents can draw via MCP)
+
+The schema design question is the interesting part.
+Flat keys vs nested objects: 94% vs 40% first-try accuracy.
+
+HN thread if you want the technical discussion: [paste link]
+```
+
+---
+
+### Twitter/X — 2.5 Hours In Live Update (post NOW, 09:30 CET)
+
+```
+2.5 hours into launching Skissify on April Fools.
+
+The skeptics are my favorite users.
+"Is this a joke?" → runs curl command → "oh"
+
+That journey is the whole pitch.
+
+Still going → skissify.com
+
+#BuildInPublic #AprilFoolsLaunch
+```
+
+---
+
+### r/mcp — Post at 10:00 CET (highest-signal dev audience)
+
+```
+Title: Skissify — the MCP tool that CREATES visual output (not just reads data)
+
+Most MCP servers are data readers: databases, file systems, APIs.
+Skissify is different: it generates hand-drawn SVG sketches from JSON.
+
+What this enables:
+- "Claude, design a floor plan" → Claude writes JSON → calls create_sketch → returns sketch URL
+- Full spatial output: walls, doors, windows, stairs, labels, dimensions
+- Works in Claude Desktop, Cursor, Windsurf, any MCP client
+
+Install: npx skissify-mcp
+No auth required. Free tier unlimited.
+
+94% first-try accuracy across 7 LLMs tested (schema was designed for LLM generation, not human input — flat coords, no nesting).
+
+Happy to answer schema design questions or integration questions.
+skissify.com
+```
+
+*Why now: r/mcp is the highest-signal MCP community. They use this daily. "MCP that creates" is the most distinctive frame.*
+
+---
+
+### r/ClaudeAI — Post at 11:30 CET
+
+```
+Title: I gave Claude a pencil (via MCP) — it drew a floor plan
+
+Skissify launched today on April Fools. Real tool, works immediately.
+
+What it does: Claude constructs JSON via MCP → Skissify renders it as a hand-drawn sketch.
+
+Try it in 2 mins:
+1. npx skissify-mcp
+2. Add to Claude Desktop config
+3. Ask: "Sketch a 2-bedroom apartment, home office priority"
+
+The floor plan looks like someone drew it carefully on cream paper.
+Not an AI image. Not a PNG. A deterministic SVG built from Claude's spatial reasoning.
+
+Difference from image generation (DALL-E, Midjourney): same JSON = same output, every time. No hallucinated geometry. No "kind of like a floor plan."
+
+skissify.com
+```
+
+---
+
+### r/webdev — "Show r/webdev" Post at 11:00 CET
+
+```
+Title: Show r/webdev: I built a JSON-to-hand-drawn-sketch renderer for AI agents
+
+Technical background: Skissify is a Canvas 2D renderer that applies multi-harmonic wobble to make vector elements look hand-drawn.
+
+Input: flat JSON manifest with element array (absolute coordinates).
+Output: wobbly SVG that looks like a ballpoint pen sketch on cream paper.
+
+The interesting engineering:
+- Multi-harmonic wobble (3 overlapping sine waves with seeded randomness per element — not a single sine wave)
+- Perlin noise for "humanness" layer
+- Flat JSON schema was designed for LLM generation: ~94% first-try across 7 models vs ~40% with nested schemas
+- Architectural elements: walls (double-line), hinged/sliding doors, windows, stairs, dimensions
+
+MCP server: npx skissify-mcp (2-min Claude Desktop setup)
+REST API: POST /api/render (no auth, free tier)
+
+Launched today. Feedback welcome — especially on schema design.
+
+skissify.com
+```
+
+---
+
+### Mastodon / Fediverse (hachyderm.io / fosstodon) — Post at 12:00 CET
+
+```
+New open-core tool launched today: Skissify
+
+JSON → hand-drawn sketch. The rendering engine will be MIT-licensed.
+
+Why it's interesting for the fediverse:
+- Self-hostable (Docker)
+- REST API with no auth, no tracking
+- MCP server for AI agent workflows
+- The "humanness" slider is actually a Perlin noise layer, not a gimmick
+
+skissify.com | #OpenSource #WebDev #AI #SelfHosted
+```
+
+---
+
+### Bluesky — 2-part thread at 12:30 CET
+
+Post 1:
+```
+Launched Skissify today on April Fools.
+
+JSON → hand-drawn sketches. For AI agents and developers.
+Claude can draw floor plans via MCP. No UI needed.
+
+The April 1 question: "wait, is this real?"
+The April 2 question: "what can I build with this?"
+
+#BuildInPublic
+```
+
+Post 2 (reply to post 1):
+```
+The technical detail worth sharing:
+
+Flat JSON schema beats nested for LLM generation.
+
+{"type":"rect","x":50,"y":50,"w":200,"h":150}
+
+vs
+
+{"type":"rect","position":{"x":50,"y":50},"size":{"w":200,"h":150}}
+
+First-try accuracy: 94% flat vs ~40% nested.
+
+It's not about prompting. It's about meeting LLMs where their training data is.
+```
+
+---
+
+### New Hashtag Clusters (Cycle 89 — April 2026 trending additions)
+
+**A2A (Agent-to-Agent protocol) angle — Google A2A + MCP convergence:**
+`#A2A #AgentProtocol #MCPServer #AgentNative`
+
+**"Vibe Design" — natural successor to VibeCoding:**
+`#VibeDesign #VibeDrawing #SketchFirst #AgentOutputs`
+
+**April Fools turns evergreen:**
+`#AprilFoolsLaunch #NotAJoke #ShipIt #LaunchedOnAprilFools`
+
+**For Cursor/Windsurf/Claude Code users specifically:**
+`#CursorIDE #WindsurfAI #ClaudeCode #VibeCoding`
+
+**New "own these" cluster (low competition, high precision):**
+`#DeterministicDiagram #JSONtoSVG #SketchAPI #AIDraws`
+
+---
+
+### Contingency: If HN thread is struggling by 13:00 CET
+
+Post this as a comment in the HN thread (or as a reply to your own Show HN):
+
+```
+Here's the part that surprised me building this:
+
+Schema design beats prompting for LLM JSON accuracy.
+
+Three schema changes took first-try accuracy from ~40% to ~94% across 7 models:
+
+1. Flat keys over nested: {"x":50,"y":50,"w":200} not {"position":{"x":50},"size":{"w":200}}
+2. Optional fields with defaults: don't require LLMs to fill what they'd guess wrong
+3. One JSON example in the MCP tool description: this added +12 points alone
+
+The LLMs aren't bad at JSON. They're bad at JSON schemas they haven't seen before.
+Design the schema to match what they've seen most, and they succeed immediately.
+
+Curious if others have found similar patterns in structured output tasks.
+```
+
+*Why: This comment is independently valuable on HN. It will be upvoted even if the main product post struggles. The Skissify mention is context, not the main subject.*
+
+---
 
 ---
 

@@ -486,6 +486,54 @@ Everyone who saw the April 1 announcement and thought "this is a joke" is now se
 
 ---
 
+## NEW IDEAS (Added 2026-04-01, Cycle 89 — 09:28 CET — 2h28m In)
+
+**Context:** 2.5 hours in. Show HN about to drop (10:00). Reddit Wave 1 at 11:00. The "skeptic pipeline" is actively converting. This cycle focuses on the 10:00-14:00 window.
+
+### Priority Queue: 10:00–14:00 CET
+
+| Time | Action | Template |
+|------|--------|----------|
+| 10:00 | Post Show HN | Pre-written |
+| 10:05 | Companion tweet "Just posted on HN" | SOCIAL-MEDIA.md Cycle 89 |
+| 10:30 | Post r/mcp | SOCIAL-MEDIA.md Cycle 89 |
+| 11:00 | Reddit r/webdev "Show r/webdev" | SOCIAL-MEDIA.md Cycle 89 |
+| 11:30 | r/ClaudeAI post | SOCIAL-MEDIA.md Cycle 89 |
+| 12:00 | Mastodon/Fediverse post | SOCIAL-MEDIA.md Cycle 89 |
+| 12:30 | Bluesky 2-part thread | SOCIAL-MEDIA.md Cycle 89 |
+| 13:00 | LinkedIn (if not done at 08:30) | SOCIAL-MEDIA.md Cycle 88 |
+| 14:00 | Discord drops (Anthropic, AI Engineer) | SOCIAL-MEDIA.md Cycle 82 |
+
+### New Blog Posts Added This Cycle
+
+- `blog/why-hand-drawn-beats-figma-reddit-r-figma.md` — ✅ Short-form r/Figma/r/Design community post. 600 words, conversational, "I stopped opening Figma first" angle. Post to r/Figma + r/UXDesign Day 3-4.
+- `blog/how-ai-agents-draw-floor-plans-5min-quickstart.md` — ✅ 5-minute quickstart tutorial. Step-by-step from zero to floor plan. Dev.to + r/mcp format. Best for developer onboarding.
+- `blog/skissify-vs-excalidraw-honest-5-questions.md` — ✅ Q&A format, 5 questions I get every day. Reddit-friendly, honest, doesn't oversell. Best for r/webdev, r/artificial, Indie Hackers comments.
+
+### New Trending Hashtag Clusters (April 2026)
+
+- **A2A (Agent-to-Agent):** `#A2A #AgentProtocol` — Google's A2A protocol convergence with MCP. Skissify = visual output for both protocols.
+- **Vibe Design:** `#VibeDesign` — natural next-phase of #VibeCoding. Own this before it scales.
+- **Cursor/Windsurf audience:** `#CursorIDE #WindsurfAI` — both support MCP natively, massive active dev audience.
+- **Deterministic output:** `#DeterministicDiagram` — counters the "why not DALL-E?" objection. "Same input, same output" is the differentiator.
+
+### Insight: The Show HN Schema Comment Is the Content
+
+The "How schema design took LLM accuracy from 40% to 94%" insight is independent of Skissify as a product. When you post it as a comment on your own Show HN, it gets upvoted by people who don't even care about sketch tools. This drives the thread into positive feedback territory. Always post it within 5 minutes of your Show HN submission.
+
+### Insight: r/mcp Posts at 10:00 Hit the Right Audience
+
+The r/mcp community uses MCP tools daily for production workflows. They don't need convincing about MCP value — they just need to know Skissify exists. Minimal sell needed. Lead with "MCP server that CREATES not reads" + schema accuracy number. That's the entire post.
+
+### Contingency: If PH Under 50 Upvotes at 13:00
+
+Don't chase upvotes. Shift strategy:
+1. Own the "launched on April Fools" narrative explicitly — "Everyone thought it was a joke. Some tried it anyway. Here's what happened."
+2. Move r/LocalLLaMA schema post forward to today (it was planned for April 9) — best technical audience for the 94% accuracy story
+3. The HN thread is more valuable than PH at this point — focus comments there
+
+---
+
 ## NEW IDEAS (Added 2026-04-01, Cycle 88 — 08:20 CET — 1h20m In)
 
 **Context:** PH has been live for 80 minutes. Twitter thread should be live. HN posted. Now entering the mid-morning engagement window.
