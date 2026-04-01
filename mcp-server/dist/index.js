@@ -6,7 +6,15 @@ import { createSketch } from "./tools/create-sketch.js";
 import { addElement } from "./tools/add-element.js";
 import { createFloorPlan } from "./tools/create-floor-plan.js";
 import { listElementTypes } from "./tools/list-elements.js";
-import { exportSketch } from "./tools/export.js";
+import { exportSketch, listSketches } from "./tools/export.js";
+/** All 26 element types supported by Skissify */
+const ALL_ELEMENT_TYPES = [
+    "line", "rect", "circle", "arc", "arrow", "text",
+    "dashed", "dim", "window", "door-symbol", "door-slide",
+    "stair", "opening", "column", "path",
+    "bed", "sofa", "dining-table", "armchair", "desk", "bookshelf",
+    "toilet", "bathtub", "sink", "stove", "shower",
+];
 const server = new Server({
     name: "skissify",
     version: "1.0.0",
@@ -61,11 +69,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
                                 properties: {
                                     type: {
                                         type: "string",
-                                        enum: [
-                                            "line", "rect", "circle", "arc", "arrow", "text",
-                                            "dashed", "dim", "window", "door-symbol", "door-slide",
-                                            "stair", "opening", "column",
-                                        ],
+                                        enum: ALL_ELEMENT_TYPES,
                                     },
                                 },
                                 required: ["type"],
@@ -110,11 +114,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
                             properties: {
                                 type: {
                                     type: "string",
-                                    enum: [
-                                        "line", "rect", "circle", "arc", "arrow", "text",
-                                        "dashed", "dim", "window", "door-symbol", "door-slide",
-                                        "stair", "opening", "column",
-                                    ],
+                                    enum: ALL_ELEMENT_TYPES,
                                 },
                             },
                             required: ["type"],
@@ -260,6 +260,38 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
                     required: ["sketchId"],
                 },
             },
+            {
+                name: "skissify_render",
+                description: "Render a sketch directly to SVG by calling the Skissify API at http://localhost:3000/api/render. " +
+                    "Returns the SVG markup so you can inspect the rendered output. " +
+                    "Requires a running Skissify dev server. Use skissify_export for offline JSON export.",
+                inputSchema: {
+                    type: "object",
+                    properties: {
+                        sketchId: {
+                            type: "string",
+                            description: "ID of a sketch created with skissify_create_sketch or skissify_create_floor_plan",
+                        },
+                        sketchData: {
+                            type: "object",
+                            description: "Raw SketchData JSON object. Use this as an alternative to sketchId to render without creating a sketch first.",
+                        },
+                        baseUrl: {
+                            type: "string",
+                            description: "Skissify server URL. Default: http://localhost:3000",
+                        },
+                    },
+                },
+            },
+            {
+                name: "skissify_list_sketches",
+                description: "List all sketches created in the current MCP server session. " +
+                    "Returns sketch IDs, names, element counts, and creation times.",
+                inputSchema: {
+                    type: "object",
+                    properties: {},
+                },
+            },
         ],
     };
 });
@@ -355,6 +387,63 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                                 mimeType: result.mimeType,
                                 instructions: result.instructions,
                                 data: result.data,
+                            }, null, 2),
+                        },
+                    ],
+                };
+            }
+            case "skissify_render": {
+                const { sketchId, sketchData, baseUrl = "http://localhost:3000" } = args;
+                let dataToRender;
+                if (sketchId) {
+                    const stored = (await import("./tools/create-sketch.js")).getSketch(sketchId);
+                    if (!stored)
+                        throw new Error(`Sketch not found: ${sketchId}`);
+                    dataToRender = stored.data;
+                }
+                else if (sketchData) {
+                    dataToRender = sketchData;
+                }
+                else {
+                    throw new Error("Provide either sketchId or sketchData");
+                }
+                const response = await fetch(`${baseUrl}/api/render`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ data: dataToRender }),
+                });
+                if (!response.ok) {
+                    const text = await response.text();
+                    throw new Error(`Render API returned ${response.status}: ${text}`);
+                }
+                const svg = await response.text();
+                return {
+                    content: [
+                        {
+                            type: "text",
+                            text: JSON.stringify({
+                                success: true,
+                                contentType: "image/svg+xml",
+                                svgLength: svg.length,
+                                svg,
+                                instructions: "SVG rendered successfully. The 'svg' field contains the full SVG markup.",
+                            }, null, 2),
+                        },
+                    ],
+                };
+            }
+            case "skissify_list_sketches": {
+                const sketches = listSketches();
+                return {
+                    content: [
+                        {
+                            type: "text",
+                            text: JSON.stringify({
+                                sketches,
+                                total: sketches.length,
+                                message: sketches.length === 0
+                                    ? "No sketches in this session yet. Create one with skissify_create_sketch or skissify_create_floor_plan."
+                                    : `Found ${sketches.length} sketch(es) in this session.`,
                             }, null, 2),
                         },
                     ],

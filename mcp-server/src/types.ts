@@ -20,7 +20,19 @@ export type ElementType =
   | "door-slide"
   | "stair"
   | "opening"
-  | "column";
+  | "column"
+  | "path"
+  | "bed"
+  | "sofa"
+  | "dining-table"
+  | "armchair"
+  | "desk"
+  | "bookshelf"
+  | "toilet"
+  | "bathtub"
+  | "sink"
+  | "stove"
+  | "shower";
 
 export interface BaseElement {
   type: ElementType;
@@ -143,6 +155,103 @@ export interface ColumnElement extends BaseElement {
   size?: number;
 }
 
+export interface PathElement extends BaseElement {
+  type: "path";
+  points: { x: number; y: number }[];
+}
+
+export interface BedElement extends BaseElement {
+  type: "bed";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  pillows?: 1 | 2;
+}
+
+export interface SofaElement extends BaseElement {
+  type: "sofa";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface DiningTableElement extends BaseElement {
+  type: "dining-table";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  seats?: number;
+}
+
+export interface ArmchairElement extends BaseElement {
+  type: "armchair";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface DeskElement extends BaseElement {
+  type: "desk";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface BookshelfElement extends BaseElement {
+  type: "bookshelf";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  shelves?: number;
+}
+
+export interface ToiletElement extends BaseElement {
+  type: "toilet";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface BathtubElement extends BaseElement {
+  type: "bathtub";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface SinkElement extends BaseElement {
+  type: "sink";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export interface StoveElement extends BaseElement {
+  type: "stove";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  burners?: 2 | 4;
+}
+
+export interface ShowerElement extends BaseElement {
+  type: "shower";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
 export type SketchElement =
   | LineElement
   | RectElement
@@ -157,7 +266,19 @@ export type SketchElement =
   | DoorSlideElement
   | StairElement
   | OpeningElement
-  | ColumnElement;
+  | ColumnElement
+  | PathElement
+  | BedElement
+  | SofaElement
+  | DiningTableElement
+  | ArmchairElement
+  | DeskElement
+  | BookshelfElement
+  | ToiletElement
+  | BathtubElement
+  | SinkElement
+  | StoveElement
+  | ShowerElement;
 
 export interface WobbleSettings {
   amplitude: number;

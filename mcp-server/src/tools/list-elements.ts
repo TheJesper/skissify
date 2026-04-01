@@ -1,4 +1,4 @@
-import { ElementTypeInfo } from "../types.js";
+import { ElementType, ElementTypeInfo } from "../types.js";
 
 export function listElementTypes(): ElementTypeInfo[] {
   return [
@@ -175,6 +175,152 @@ export function listElementTypes(): ElementTypeInfo[] {
         { name: "color", type: "string", required: false, description: "Fill/stroke color (hex)" },
       ],
       example: { type: "column", cx: 300, cy: 500, size: 12, color: "#444" },
+    },
+    {
+      type: "path" as ElementType,
+      description: "A freehand path defined by an array of {x, y} waypoints. Rendered as a smooth Catmull-Rom spline with wobble. Great for organic shapes, sketchy boundaries, or curved annotation lines.",
+      properties: [
+        { name: "points", type: "Array<{x: number, y: number}>", required: true, description: "Array of waypoints. Minimum 2 points." },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+        { name: "strokeWidth", type: "number", required: false, description: "Line thickness" },
+      ],
+      example: { type: "path", points: [{ x: 50, y: 100 }, { x: 150, y: 80 }, { x: 250, y: 120 }, { x: 350, y: 90 }], color: "#666" },
+    },
+    {
+      type: "bed" as ElementType,
+      description: "A bed symbol with headboard, pillow circles, and cover fold line. Use for bedrooms in floor plans.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 90 for single, 140 for double)" },
+        { name: "h", type: "number", required: true, description: "Height (depth of bed, e.g. 200)" },
+        { name: "pillows", type: "1 | 2", required: false, description: "Number of pillows: 1 (single) or 2 (double). Default: 2" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "bed", x: 80, y: 100, w: 140, h: 200, pillows: 2, color: "#8B6914" },
+    },
+    {
+      type: "sofa" as ElementType,
+      description: "A sofa symbol with backrest, two armrests, and seat cushion divider. Use in living rooms.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 200)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 80)" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "sofa", x: 150, y: 400, w: 200, h: 80, color: "#8B6914" },
+    },
+    {
+      type: "dining-table" as ElementType,
+      description: "A dining table with oval chairs around all four sides. Use in kitchen/dining rooms.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Table width (long dimension, e.g. 120)" },
+        { name: "h", type: "number", required: true, description: "Table height/depth (short dimension, e.g. 80)" },
+        { name: "seats", type: "number", required: false, description: "Chairs per long side (1, 2, or 3). Default: 2" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "dining-table", x: 300, y: 200, w: 120, h: 80, seats: 2, color: "#5a3e1b" },
+    },
+    {
+      type: "armchair" as ElementType,
+      description: "An armchair symbol with backrest and two armrests. Smaller than a sofa, use for reading nooks or office seating.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 70)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 70)" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "armchair", x: 380, y: 400, w: 70, h: 70, color: "#8B6914" },
+    },
+    {
+      type: "desk" as ElementType,
+      description: "A desk/work surface rectangle. Simpler than dining-table — no chairs. Use for offices, work-from-home zones.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 120)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 60)" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "desk", x: 100, y: 150, w: 120, h: 60, color: "#4a3728" },
+    },
+    {
+      type: "bookshelf" as ElementType,
+      description: "A bookshelf with horizontal shelf dividers. Use against walls for offices, studies, living rooms.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 80)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 30)" },
+        { name: "shelves", type: "number", required: false, description: "Number of shelf dividers (2–5). Default: 3" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "bookshelf", x: 50, y: 80, w: 80, h: 30, shelves: 3, color: "#6b4c2a" },
+    },
+    {
+      type: "toilet" as ElementType,
+      description: "A toilet symbol with tank rectangle and bowl ellipse + seat ring. Use in bathrooms.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 40)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 70)" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "toilet", x: 50, y: 80, w: 40, h: 70, color: "#666" },
+    },
+    {
+      type: "bathtub" as ElementType,
+      description: "A bathtub with outer frame, inner basin oval, and faucet cross indicator. Use in bathrooms.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 70)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 140)" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "bathtub", x: 120, y: 50, w: 70, h: 140, color: "#5a7a99" },
+    },
+    {
+      type: "sink" as ElementType,
+      description: "A sink with outer frame, basin oval, drain dot, and T-shape faucet. Use in bathrooms or kitchens.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 50)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 50)" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "sink", x: 200, y: 80, w: 50, h: 50, color: "#5a7a99" },
+    },
+    {
+      type: "stove" as ElementType,
+      description: "A stove/cooktop with burner circles. Use in kitchens.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 60)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 60)" },
+        { name: "burners", type: "2 | 4", required: false, description: "Number of burners. Default: 4" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "stove", x: 280, y: 80, w: 60, h: 60, burners: 4, color: "#4a4a4a" },
+    },
+    {
+      type: "shower" as ElementType,
+      description: "A shower stall with outer frame, inner drain circle, and diagonal showerhead line. Use in bathrooms.",
+      properties: [
+        { name: "x", type: "number", required: true, description: "Top-left X coordinate" },
+        { name: "y", type: "number", required: true, description: "Top-left Y coordinate" },
+        { name: "w", type: "number", required: true, description: "Width (e.g. 80)" },
+        { name: "h", type: "number", required: true, description: "Height/depth (e.g. 80)" },
+        { name: "color", type: "string", required: false, description: "Stroke color (hex)" },
+      ],
+      example: { type: "shower", x: 300, y: 50, w: 80, h: 80, color: "#5a7a99" },
     },
   ];
 }
