@@ -2,6 +2,61 @@
 
 ---
 
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #96 (14:41 CET, Wednesday April 1)
+
+### Context: Run #96 Key Findings
+- **tldraw official MCP App launched March 3, 2026** → interactive canvas (Cursor live, VS Code/ChatGPT/Claude coming), NOT headless JSON → threat UPGRADED to MEDIUM → positioning must clarify "API, not canvas"
+- **Excalidraw MCP expanded to 26 tools** → iterative AI loop (describe_scene + screenshot), create_from_mermaid → MEDIUM confirmed → no spatial/architectural elements still
+- **Archilogic spatial data platform** → GraphQL API, Floor Plan Engine SDK → floor plan lane overlap, potential embed partner
+- **Credit-based SaaS pricing doubled** (35 → 79 companies in 6 months) → Skissify's EUR 0.005/render model is now industry standard, not unusual
+
+---
+
+### 🎯 Action 1 (HIGH — Thursday): Add "Not a Canvas — A Render API" Positioning to Landing Page
+
+tldraw just launched their MCP App. Excalidraw MCP has 26 tools. Developers encountering these tools will now Google "sketch tool MCP" and need to immediately understand that Skissify is something different — a pure render API, not an interactive canvas. Without this clarification, Skissify gets lumped in with tldraw/Excalidraw MCP and evaluated on the wrong criteria.
+
+**Steps (30 min)**:
+1. Add a single clear sentence above the fold on the landing page: "Not an interactive canvas. A render API — POST JSON, get hand-drawn SVG."
+2. Add a 3-column differentiation block:
+   - tldraw MCP / Excalidraw MCP → Interactive drawing in your IDE (great for ideation)
+   - Mermaid / draw.io MCP → Text/XML to clean technical diagrams
+   - Skissify → JSON manifest to hand-drawn architectural SVG, headless, no app required
+3. Add "Works with any agent, any pipeline, any framework. No browser. No session." sub-headline.
+
+**Why this converts**: Every developer who just tried tldraw MCP in Cursor is now aware that "sketch tools can have MCP." When they need pipeline output (not interactive ideation), Skissify must be instantly recognizable as the answer. Zero-friction positioning: one sentence, understood in 3 seconds.
+
+---
+
+### 🎯 Action 2 (HIGH — Thursday): Post Comparison Tweet Thread "tldraw MCP vs Skissify"
+
+tldraw MCP App launched on March 3 — the developer conversation about it is still active. This is a 2-week window to inject Skissify into that conversation before it cools. The thread should be educational, not competitive — help developers understand the tool landscape.
+
+**Thread structure (5 tweets, 15 min)**:
+1. "Two very different tools both got MCP servers recently. Here's when to use which:" [hook]
+2. "tldraw MCP = interactive canvas in Cursor/VS Code. Your agent draws collaboratively, you see it live. Great for ideation and diagrams while coding." [fair to tldraw]
+3. "Excalidraw MCP = similar model, now with 26 tools and iterative AI refinement. The agent can SEE what it drew. Also app-session-based." [fair to Excalidraw]
+4. "Skissify = no canvas, no session. POST a JSON manifest describing your floor plan → get a hand-drawn SVG back. Headless. Built for pipelines, CI, reports, agent output." [Skissify's lane]
+5. "Different jobs. If you're generating layout variants at scale, or need an architectural concept sketch without a running app — that's what Skissify is for. EUR 5/mo. [link]"
+
+**Why this converts**: Developers following tldraw/Excalidraw MCP discussions are the exact right audience. An educational comparison thread gets engagement from the community, doesn't read as spam, and plants Skissify in the conversation at exactly the right moment.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Thursday): Research Archilogic Embed Partnership Pitch
+
+Archilogic is a spatial data platform with GraphQL API and 2D/3D floor plan rendering — targeting commercial real estate and AI-powered buildings. They generate structured spatial data but their output is interactive technical models, not hand-drawn concept sketches. The embed opportunity: "Archilogic data → Skissify hand-drawn presentation layer."
+
+**Steps (20 min)**:
+1. Visit archilogic.com — find contact/partnership page and founder/CEO name
+2. Draft a 4-sentence outreach email: (a) what Skissify is, (b) what Archilogic likely lacks for client presentations, (c) the specific pitch (EUR 500-2,000/yr embed license, white-label the renderer), (d) "10-minute call?"
+3. Save draft email to `docs/outreach/archilogic-pitch.md` (don't send without review)
+4. Repeat pattern for ArkDesign.ai (previously identified) — check if outreach was done
+
+**Why this converts**: Archilogic has real enterprise clients who need to present spatial data to boards and stakeholders. A "hand-drawn concept sketch export" is the one layer their technical platform lacks. Embed licenses at EUR 500-2,000/yr = one deal = months of server costs covered. Five deals = full-time viable side income stream.
+
+---
+
 ## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #95 (12:32 CET, Wednesday April 1)
 
 ### Context: Run #95 Key Findings

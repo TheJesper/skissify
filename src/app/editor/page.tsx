@@ -139,6 +139,7 @@ function EditorInner({
     strokeWidthSelected,
     fillColorSelected,
     fontFamilySelected,
+    opacitySelected,
     rotateSelected,
     redraw,
     importSketch,
@@ -619,6 +620,16 @@ function EditorInner({
     return undefined;
   })();
 
+  // Opacity of the first selected element (undefined = default/1)
+  const selectedOpacity: number | undefined = (() => {
+    if (selectedElements.size === 0) return undefined;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el) return undefined;
+    const raw = (el as unknown as Record<string, unknown>).opacity;
+    return typeof raw === "number" ? raw : undefined;
+  })();
+
   // True if ANY selected element is locked
   const selectedLocked: boolean = (() => {
     if (selectedElements.size === 0) return false;
@@ -701,6 +712,7 @@ function EditorInner({
             selectedStrokeWidth={selectedStrokeWidth}
             selectedFillColor={selectedFillColor}
             selectedFontFamily={selectedFontFamily}
+            selectedOpacity={selectedOpacity}
             hasTextOrDimSelected={hasTextOrDimSelected}
             selectedLocked={selectedLocked}
             onPaper={setPaper}
@@ -718,6 +730,7 @@ function EditorInner({
             onStrokeWidthSelected={strokeWidthSelected}
             onFillColorSelected={fillColorSelected}
             onFontFamilySelected={fontFamilySelected}
+            onOpacitySelected={opacitySelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
             onAlign={alignSelected}
@@ -879,6 +892,7 @@ function EditorInner({
             selectedStrokeWidth={selectedStrokeWidth}
             selectedFillColor={selectedFillColor}
             selectedFontFamily={selectedFontFamily}
+            selectedOpacity={selectedOpacity}
             hasTextOrDimSelected={hasTextOrDimSelected}
             selectedLocked={selectedLocked}
             onPaper={setPaper}
@@ -896,6 +910,7 @@ function EditorInner({
             onStrokeWidthSelected={strokeWidthSelected}
             onFillColorSelected={fillColorSelected}
             onFontFamilySelected={fontFamilySelected}
+            onOpacitySelected={opacitySelected}
             onToggleLock={toggleLockSelected}
             onReorder={reorderSelected}
             onAlign={alignSelected}

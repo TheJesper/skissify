@@ -2,6 +2,38 @@
 
 ---
 
+## Entry: 2026-04-01 — Automated Strategy Run #96 (14:41 CET)
+
+### Theme: tldraw MCP App Is the Inflection Point — Skissify Must Clarify "API not Canvas"
+
+#### tldraw MCP App Launch Changes the Positioning Conversation
+
+tldraw launched their official MCP App on March 3, 2026. This is the first time a direct-category competitor (hand-drawn canvas tool) has an official MCP presence with active client rollout (Cursor live, VS Code/ChatGPT/Claude coming). Previous competitive scans correctly flagged this as the highest-priority risk to monitor.
+
+**Why the lane is still clear — but the message must sharpen**: tldraw MCP returns an interactive canvas inside the agent's host app (Cursor, VS Code). The agent draws on it. This is collaborative visual ideation. Skissify is NOT this. Skissify is a render API — submit a JSON manifest describing a floor plan, receive an SVG. No app session. No canvas. No browser. No interaction loop. The use case is entirely different: tldraw MCP is for "thinking with visuals," Skissify is for "delivering visuals as output."
+
+**Why someone pays EUR 2-5/mo after seeing tldraw MCP**: A developer experiments with tldraw MCP in Cursor for interactive diagramming. They then need to: (a) export a client-ready concept sketch of the floor plan they're designing, (b) generate 10 layout variants for a CI report, or (c) create a hand-drawn SVG for an investor deck. tldraw MCP cannot help with any of these — there's no POST-JSON-get-SVG endpoint. Skissify is the render layer they need. The acquisition narrative: "Draw interactively in tldraw → render the final output beautifully in Skissify."
+
+**Key copy implication**: Add to the landing page: "Not an interactive canvas. A render API. POST JSON. Get hand-drawn SVG. Works with tldraw, Excalidraw, or any AI agent." This directly addresses the developer who just encountered tldraw MCP and is now confused about what problem Skissify solves.
+
+#### Excalidraw MCP's Iterative Loop = A Benchmark Skissify Should Study
+
+The Excalidraw MCP's `describe_scene` + `get_canvas_screenshot` feedback loop means AI agents can now draw, inspect what they drew (visually), and refine. This is technically impressive and changes the UX bar for AI-generated diagrams.
+
+**Why someone pays EUR 2-5/mo despite this**: Excalidraw's iterative loop is powerful for free-form diagrams. But it has no concept of a "floor plan element" — no door symbols, no stair runs, no dimension annotations. An architect or developer building a house concept sketch can iterate in Excalidraw and get generic shapes; they cannot get architecturally correct door openings or stair representations. Skissify's element library (`door-symbol`, `door-slide`, `stair`, `dim`, `window`, `column`) is a specialized vocabulary that Excalidraw cannot match without a major architectural elements initiative.
+
+**Roadmap implication**: Skissify should consider an inspection capability — even a simple `GET /sketch/{id}/elements` that returns the rendered element positions — to enable agent loops that verify and refine sketches. This does not require a live canvas. A stateless version is: POST manifest → receive SVG + element bounding boxes → agent can verify layout programmatically.
+
+#### Credit-Based SaaS Pricing Doubled in 6 Months — Skissify's EUR 0.005/render Is Industry Standard
+
+PricingSaaS 500 Index: 79 companies now use credit models, up from 35 at end of 2024. Figma, HubSpot, Salesforce added credit models in this period. Average org spend on AI-native apps: $1.2M/year (108% YoY). AI costs are making pure per-seat models unworkable; usage-based pricing is the 2026 standard.
+
+**Why this helps Skissify specifically**: EUR 5/mo + EUR 0.005/render is now a recognizable pricing pattern, not an unusual one. The developer evaluating Skissify has already seen this model from Figma, HubSpot, and dozens of AI tools. The pattern reads as "professional, legit." When Skissify was designed (early 2026), this was 17% of SaaS companies; now it's 15.8% of the top 500 and growing. By the time Skissify has 100 users, this pricing model will be industry standard.
+
+**Copy implication**: On the pricing page, lead with: "1,000 renders/month included — that's 1,000 hand-drawn floor plans, concept sketches, or AI pipeline outputs for EUR 5. Then EUR 0.005 each." The 1,000 renders concrete anchor makes the math tangible. Most users will never exceed it. The overage transparency (EUR 0.005/render) builds trust.
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #95 (12:32 CET)
 
 ### Theme: draw.io MCP Mainstream Traction = Market Education Engine, tldraw Consolidation = Defector Pipeline

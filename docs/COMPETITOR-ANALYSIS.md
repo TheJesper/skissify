@@ -2,6 +2,95 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #96 (14:41 CET)
+
+### Status: Wednesday afternoon scan — 5 topics researched. 🟡 THREAT ESCALATION: tldraw launched official MCP App on March 3, 2026 (Cursor-first, rolling to VS Code/ChatGPT/Claude) — interactive canvas, NOT headless JSON API. Still no clean JSON-to-SVG endpoint. Threat level upgraded LOW-MEDIUM → MEDIUM. Excalidraw official MCP expanded to 26 tools with closed AI feedback loop (describe_scene + get_canvas_screenshot). Archilogic spatial data platform identified — GraphQL API, 2D/3D rendering, JavaScript SDK — potential floor plan API overlap to monitor. MCP registry now 6,400+ registered servers (Feb 2026). Credit-based SaaS pricing models doubled in 6 months (35→79 companies). NICHE STATUS: 96 consecutive scans, headless JSON-native hand-drawn spatial sketch lane uncontested — but tldraw MCP App narrows the gap and must be tracked weekly.
+
+### 🔴 tldraw Official MCP App Launched — March 3, 2026 (ESCALATED to MEDIUM)
+
+**Source**: tldraw.dev/blog/tldraw-mcp-app (March 3, 2026), mcp.aibase.com, github.com/bassimeledath/tldraw-render-mcp
+
+tldraw launched their official MCP App on March 3, 2026 — initially in Cursor, with VS Code, ChatGPT, and Claude rollout announced. MCP Apps are a tldraw extension of MCP servers that return interactive UIs instead of just text — the MCP server returns a full interactive tldraw canvas in the agent's workspace.
+
+**ALSO**: Community project `tldraw-render-mcp` (github.com/bassimeledath/tldraw-render-mcp) provides headless rendering via Chromium singleton — PNG/SVG output, ~5-8s first render, ~100ms subsequent. Not an official product but it now exists and works.
+
+Key characteristics of official tldraw MCP App:
+- **Interactive canvas** — agents can draw, diagram, visually collaborate via tldraw
+- **NOT headless JSON API** — requires tldraw canvas running in host app (Cursor, VS Code, etc.)
+- **NOT JSON-to-SVG export** — outputs interactive canvas state, not standalone SVG files
+- **NOT hand-drawn style** — tldraw's style is clean vector (optional hand-drawn CSS approximation, inconsistent)
+- **NOT spatial/architectural** — no floor plan elements, no dimensions, no doors/windows
+- **SDK $6K/yr still applies** for production commercial use
+- **Threat level**: **MEDIUM (upgraded from Low-Medium)** — now has MCP presence, but different use case
+
+**Why Skissify's headless lane survives**: tldraw MCP App requires the tldraw canvas to be open in Cursor/VS Code — it is an in-IDE interactive drawing surface, not an API you POST JSON to and receive SVG. Agents using tldraw MCP are building diagrams interactively, not integrating into automated pipelines. Skissify's core use case — POST `{elements: [...]}` → receive clean hand-drawn SVG for use in a pipeline, report, or client deliverable — remains unaddressed by tldraw. The community `tldraw-render-mcp` Chromium approach also survives Skissify's critique from prior scans: requires running Chromium process, 5-8s cold start, no architectural elements, not a first-party API.
+
+**What changed**: tldraw MCP now means the "developer picks MCP diagram tool" conversation might skip Skissify if the developer only needs interactive canvas collaboration (not export pipeline). The key differentiator to emphasize: "Skissify is NOT an interactive canvas — it's a render API. JSON in, SVG out. Use it in pipelines, CI, agents, reports. No browser, no session, no canvas required."
+
+**Escalate to HIGH if**: tldraw ships a `/render` endpoint that accepts JSON and returns SVG headlessly (no Chromium), with hand-drawn style output, at a reasonable price.
+
+### 🟡 Excalidraw Official MCP App — Expanded to 26 Tools, Iterative AI Loop (MEDIUM confirmed)
+
+**Source**: github.com/excalidraw/excalidraw-mcp, eriperspective.medium.com (Feb 2026), rajeevpentyala.com (Mar 2026)
+
+The official Excalidraw MCP App (`excalidraw/excalidraw-mcp`) has expanded to 26 tools:
+- **Element CRUD**: create_element, get_element, update_element, delete_element, query_elements, batch_create_elements, duplicate_elements
+- **Layout**: align_elements, distribute_elements, group_elements, ungroup_elements, lock_elements, unlock_elements
+- **Scene Awareness (KEY)**: `describe_scene`, `get_canvas_screenshot` — AI can SEE what it drew, enabling iterative refinement
+- **File I/O**: export_scene, import_scene, export_to_image, export_to_excalidraw_url, **create_from_mermaid**
+- **State**: clear_canvas, snapshot_scene, restore_snapshot
+- **Design Guide**: `read_diagram_guide` — returns best-practice color palettes, sizing rules, anti-patterns
+
+The `create_from_mermaid` tool and `describe_scene` + `get_canvas_screenshot` feedback loop make Excalidraw MCP a real iterative AI diagramming tool — not just one-shot generation.
+
+Key characteristics:
+- **Interactive canvas** — still requires Excalidraw app/+ to be open (same constraint as tldraw MCP)
+- **Hand-drawn aesthetic** — this is the one tool that matches Skissify's visual lane
+- **No architectural elements** — no doors, windows, stairs, dimensions, floor plan types
+- **No headless JSON API** — export_to_image exists but requires app session; not a pure POST → SVG pipeline
+- **Threat level**: **MEDIUM (confirmed)** — hand-drawn style match + active development + strong community
+
+**Key positioning against Excalidraw MCP**: Excalidraw MCP makes beautiful hand-drawn diagrams — but only if you're working interactively. Skissify's lane is programmatic: your agent defines the sketch via JSON manifest, Skissify renders it to SVG without any app session. For architectural domain content (floor plans, technical drawings with dimension annotations), Excalidraw has no equivalent of Skissify's `window`, `door-symbol`, `door-slide`, `stair`, `dim`, `opening`, `column` elements.
+
+**Monitor**: If Excalidraw MCP adds `create_from_json_manifest` with architectural element types and a headless export mode, escalate to HIGH immediately.
+
+### 🟡 Archilogic — Spatial Data Platform with GraphQL API (New — MEDIUM)
+
+**Source**: archilogic.com (2026)
+
+Archilogic is a spatial data platform for AI-powered buildings — offering a Space GraphQL API, Floor Plan Engine SDK (JavaScript/TypeScript), and 2D/3D interactive rendering. Described as having "superbly documented API, great data model, easy-to-use web SDK."
+
+Key characteristics:
+- **Target**: Commercial real estate, property management, "AI-powered buildings"
+- **Input**: Existing architectural data/CAD import — NOT JSON manifest creation
+- **Output**: Interactive 2D/3D floor plans (not hand-drawn, not sketch aesthetic)
+- **API**: GraphQL against portfolio/floor data — complex queries, not simple POST → render
+- **SDK**: JavaScript/TypeScript, requires frontend integration
+- **No MCP server** detected
+- **No hand-drawn style** — professional clean vector rendering
+- **Threat level**: **MEDIUM** — floor plan API space overlap, but different aesthetic, different input model
+
+**Skissify differentiation**: Archilogic is for managing existing building data and complex spatial portfolios. Skissify is for creating new concept sketches from scratch via JSON — a design/presentation tool, not a data management platform. The price point is also different: Archilogic targets enterprise real estate; Skissify targets developers at EUR 5/mo.
+
+**Embed partner angle**: Same as ArkDesign.ai — Archilogic generates the data, Skissify renders the concept presentation layer. Pitch: "Your clients need a hand-drawn concept sketch, not a technical floor plan data model."
+
+### Updated Competitor Matrix (Run #96 — Wednesday April 1, 14:41 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw** | Official MCP app: 26 tools, iterative AI loop (describe_scene + screenshot), create_from_mermaid. No spatial elements, no headless JSON manifest API. | **MEDIUM** |
+| **tldraw** | **⬆️ NEW: Official MCP App launched March 3, 2026 (Cursor + VS Code/ChatGPT/Claude rollout). Interactive canvas, not headless. $6K/yr SDK unchanged. Community tldraw-render-mcp headless Chromium exists.** | **MEDIUM (upgraded from Low-Medium)** |
+| **draw.io** | Official MCP gaining Google Cloud traction. App-dependent, XML, no hand-drawn. | Low — category amplifier |
+| Frame0 | Hand-drawn wireframing MCP. UI/UX only. | Low |
+| Sketch (app) | Official MCP (Mar 25). macOS-only. Design lane. | Low |
+| **Archilogic** | **NEW: GraphQL spatial data API, Floor Plan Engine SDK, 2D/3D. No hand-drawn, no JSON manifest, no MCP.** | **MEDIUM — floor plan lane overlap** |
+| ToDiagram | JSON/YAML/XML → interactive diagrams. No hand-drawn. | Low-Medium |
+| Maket.ai | 1M+ users. No sketch, no MCP. | Low — embed partner |
+| ArkDesign.ai | Architectural schematic optimization. No sketch, no MCP. | Low — embed partner |
+| **Skissify** | **96 scans. tldraw now has MCP App (interactive, not headless). Excalidraw MCP expanded (no spatial elements). Headless JSON-native hand-drawn spatial architectural sketch API: still uncontested.** | **Uncontested in headless lane** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #95 (12:32 CET)
 
 ### Status: Wednesday midday scan — 4 topics researched. 🟢 NICHE CLEAN: No new JSON-native spatial headless hand-drawn sketch API detected. Draw.io official MCP gaining mainstream Google Cloud traction (Feb 2026) — app-dependent, XML-heavy, clean vector only. tldraw v3.4 adds Excalidraw compatibility (platform consolidation, still no MCP, $6K SDK). SketchUp 2026.1 AI Render launched (3D desktop app, different lane entirely). Sketch-to-3D-render tools (PromeAI, Rendair, LightX) confirmed different market direction (photo → render, not JSON → sketch). MCP Streamable HTTP Transport confirmed in 2026 roadmap = batch render upgrade opportunity. NICHE STATUS: 95 consecutive scans, spatial JSON headless hand-drawn sketch lane uncontested.
