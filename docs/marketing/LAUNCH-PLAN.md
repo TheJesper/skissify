@@ -1,7 +1,73 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — DAY 2 (SEE CYCLE 97)**
+**Current Date: April 2, 2026 — DAY 2 (SEE CYCLE 98)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 98 — Day 2 Evening)
+
+### Cycle 98 — New Blog Posts Written (3 fresh posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Why Hand-Drawn Sketches Beat Figma | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas.md` | Meeting psychology + AI 2026 angle | ✅ Ready to publish |
+| How AI Agents Can Draw Floor Plans | `blog/how-ai-agents-can-draw-floor-plans.md` | Technical guide, agent framework examples | ✅ Ready to publish |
+| Skissify vs Excalidraw | `blog/skissify-vs-excalidraw-comparison.md` | Honest competitor comparison, SEO | ✅ Ready to publish |
+
+### Cycle 98 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Trending hashtag intelligence section (researched April 2026) | ✅ Added |
+| Twitter/X Day 2 closing tweet (21:30 CET) | ✅ Added |
+| Twitter/X comparison hook (20:00 CET) | ✅ Added |
+| Twitter/X developer proof tweet with JSON snippet (22:00) | ✅ Added |
+| Indie Hackers full post copy (brutal-honesty angle) | ✅ Added |
+| DEV.to syndication post | ✅ Added |
+| Bluesky evening post | ✅ Added |
+| Mastodon/Fediverse technical post | ✅ Added |
+| r/SideProject post (NEW community) | ✅ Added |
+| r/SaaS post (API-first monetization angle, NEW) | ✅ Added |
+
+### Cycle 98 — PRESS-KIT.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Quick reference TL;DR table at top | ✅ Added |
+| Founder bio expanded with context and background | ✅ Enhanced |
+| Target communities section with Tier 1/2/3 breakdown | ✅ Added |
+| Newsletter targets with pitch angles | ✅ Added |
+
+### Cycle 98 — New Status Additions
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas.md | ✅ Written — publish on Hashnode/Dev.to | 🔴 P0 |
+| Blog: how-ai-agents-can-draw-floor-plans.md | ✅ Written — publish on Dev.to | 🔴 P0 |
+| Blog: skissify-vs-excalidraw-comparison.md | ✅ Written — SEO value, publish tomorrow | 🟡 P1 |
+| Twitter/X evening tweets (20:00, 21:30, 22:00 CET) | ⏳ Copy in Cycle 98 | 🔴 P0 |
+| Indie Hackers post | ⏳ Post NOW — copy in Cycle 98 | 🔴 P0 |
+| r/SideProject post | ⏳ Copy in Cycle 98 | 🟡 P1 |
+| r/SaaS post | ⏳ Copy in Cycle 98 | 🟡 P1 |
+| TLDR AI newsletter pitch | ⏳ Email template in SOCIAL-MEDIA.md | 🟡 P1 |
+| Demo video | ⏳ STILL #1 P0 — record before midnight | 🔴 P0 |
+
+### Cycle 98 — Hashtag Strategy Update
+
+**Researched April 2026. Key findings:**
+- `#BuildInPublic` — highest quality/volume ratio for indie builders, use on every post
+- `#AIAgents` — emerging, strong for agent tooling launches in 2026
+- `#MCP` — high-intent technical audience, use for MCP-specific posts
+- `#VibeDrawing` — currently ~3 posts, claim this NOW before window closes
+- `#AIGotHands` — currently ~0 posts, Skissify should own this phrase
+- X/Twitter 2026 recommendation: 1-2 hashtags per tweet max; use 3 only for community threads
+
+### Cycle 98 — New Community Targets
+
+Two new communities identified from research that weren't in the plan:
+1. **r/SideProject** — high-fit indie builder audience, accepts launch posts, underused
+2. **r/SaaS** — good for the "API-first free tier" strategic discussion, drives founder audience
 
 ---
 
@@ -146,10 +212,10 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 | Asset | Status |
 |-------|--------|
-| SOCIAL-MEDIA.md | ✅ Enhanced through Cycle 96 (Day 2 morning push, new platforms, hashtag strategy) |
-| Blog: hand-drawn vs Figma | ✅ Canonical: `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-CANONICAL.md` / Day 2: `blog/why-hand-drawn-sketches-beat-figma-cycle96-day2.md` |
-| Blog: AI agents & floor plans | ✅ Canonical: `blog/how-ai-agents-draw-floor-plans-CANONICAL.md` / Day 2: `blog/how-ai-agents-draw-floor-plans-cycle96-day2.md` |
-| Blog: Skissify vs Excalidraw | ✅ Canonical: `blog/skissify-vs-excalidraw-CANONICAL.md` / Day 2: `blog/skissify-vs-excalidraw-cycle96-day2.md` |
+| SOCIAL-MEDIA.md | ✅ Enhanced through Cycle 98 (Day 2 evening, 2 new communities, hashtag intelligence, closing tweets) |
+| Blog: hand-drawn vs Figma | ✅ Canonical + Cycle 96 Day2 + NEW: `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas.md` (Cycle 98) |
+| Blog: AI agents & floor plans | ✅ Canonical + Cycle 96 Day2 + NEW: `blog/how-ai-agents-can-draw-floor-plans.md` (Cycle 98) |
+| Blog: Skissify vs Excalidraw | ✅ Canonical + Cycle 96 Day2 + NEW: `blog/skissify-vs-excalidraw-comparison.md` (Cycle 98) |
 | Blog: Launch day 9h live update | ✅ `blog/launch-day-9h-ai-got-hands.md` |
 | PRESS-KIT.md | ✅ Updated Cycle 96 — Day 2 status table, metrics snapshot added |
 | Product Hunt description | ✅ In PRESS-KIT.md and PRODUCT-HUNT-SUBMISSION.md |

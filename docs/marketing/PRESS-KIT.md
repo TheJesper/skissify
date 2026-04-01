@@ -1,6 +1,21 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 96 (Day 2 Morning)*
+*Last updated: April 2, 2026 — Cycle 98 (Day 2 Evening — Enhanced)*
+
+---
+
+## Quick Reference (TL;DR for journalists and reviewers)
+
+| | |
+|---|---|
+| **Product** | Skissify — hand-drawn sketch API for AI agents & developers |
+| **One-liner** | JSON in. Hand-drawn SVG out. AI agents can draw. |
+| **Live URL** | https://skissify.com |
+| **API** | `POST https://skissify.com/api/render` — no auth, free |
+| **MCP** | `npx skissify-mcp` — works in Claude Desktop, Cursor, Windsurf |
+| **Founded** | 2026, Stockholm, Sweden |
+| **Founder** | Jesper (Conzeon AB) |
+| **Press** | press@skissify.com |
 
 ---
 
@@ -110,9 +125,15 @@ Launched April 2026. Built in Stockholm, Sweden.
 
 ## Founder Bio
 
-**Jesper** is a developer and designer based in Stockholm, Sweden. He builds tools that make the gap between ideas and visuals smaller — for both humans and AI agents. Skissify was born from a simple frustration: why can't an LLM just draw?
+**Jesper** is a developer and designer based in Stockholm, Sweden. He builds tools that close the gap between ideas and visuals — for both humans and AI agents.
 
-He's also building Luncho (restaurant discovery), Svante (personal AI assistant), and various open-source tools in the JavaScript/TypeScript ecosystem.
+Skissify was born from a specific frustration: LLMs are excellent at spatial reasoning, but their only output format is text. Ask Claude to design a room and you get a paragraph. Accurate, often insightful — but you can't hand a paragraph to a contractor or pass it to the next agent in a pipeline. The output primitive was missing. Skissify is that primitive.
+
+He's also building Luncho (AI-powered restaurant discovery) and Svante (personal AI assistant), and contributes to the open-source JavaScript/TypeScript ecosystem. Skissify is his first developer-tools launch targeting the AI agent builder community.
+
+**Background:** Full-stack development, product design, and systems architecture. Particular interest in the intersection of AI reasoning and visual communication.
+
+**Contact:** Available for interviews, podcasts, and technical deep-dives on API-first design and the AI visual output problem. Reach via press@skissify.com.
 
 ---
 
@@ -306,6 +327,48 @@ Sketch data stored on-platform is owned by the user.
 | **Wobble control** | 0 (clean) → 10 (very human) |
 | **Launch date** | April 1, 2026 |
 | **Price** | Free / Pro (from EUR 2/mo) |
+
+---
+
+## Target Communities for Coverage
+
+### Tier 1 — Highest ROI (post immediately)
+| Community | Platform | Size | Angle |
+|-----------|----------|------|-------|
+| r/mcp | Reddit | Growing | "Claude can draw natively via MCP" |
+| r/ClaudeAI | Reddit | 200K+ | API tool for Claude workflows |
+| Hacker News | HN | — | Show HN — JSON to hand-drawn SVG |
+| Indie Hackers | IH | — | API-first SaaS + launch story |
+| r/artificial | Reddit | 600K+ | AI visual output primitive |
+
+### Tier 2 — High Fit
+| Community | Platform | Size | Angle |
+|-----------|----------|------|-------|
+| r/homeimprovement | Reddit | 500K+ | Sketch renovation ideas → show contractor |
+| r/webdev | Reddit | 2M+ | REST API diagram tool, no auth |
+| r/SideProject | Reddit | — | Solo founder launch story |
+| r/SaaS | Reddit | — | API-first monetization discussion |
+| AI Engineer Discord | Discord | — | Visual output layer for agent stacks |
+| Dev.to | Blog | — | Technical tutorial + blog syndication |
+| Hashnode | Blog | — | Cross-post canonical blog posts |
+
+### Tier 3 — Niche but converting
+| Community | Platform | Size | Angle |
+|-----------|----------|------|-------|
+| r/worldbuilding | Reddit | 1.2M | AI dungeon/map generation |
+| r/DnD | Reddit | Large | Blueprint dungeon maps in 30 seconds |
+| r/gamedesign | Reddit | 200K | Level layout prototyping |
+| r/architecture | Reddit | 300K | Early-stage floor plan sketching |
+| r/nocode | Reddit | — | Describe → sketch, no JSON needed |
+| r/sketchnotes | Reddit | 15K | Visual thinking + AI output |
+
+### Newsletter Targets (pitch this week)
+| Newsletter | Audience | Pitch angle |
+|------------|----------|-------------|
+| TLDR AI | 500K+ AI devs | MCP server + no-auth API |
+| Ben's Bites | 100K AI builders | "AI got hands" narrative |
+| The Rundown AI | 300K | Visual output as missing AI primitive |
+| Bytes.dev | Developer-focused | REST API + architectural use case |
 
 ---
 

@@ -1,7 +1,222 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 97 (Day 2 Afternoon — Vibe Drawing Wave)**
+**Last updated: April 2, 2026 — Cycle 98 (Day 2 Evening Push + New Platform Blitz)**
+
+---
+
+## CYCLE 98 — DAY 2 (APRIL 2) — EVENING PUSH (19:00–24:00 CET)
+
+*Context: Day 2 evening. The "Vibe Drawing" wave is building. Three fresh blog posts published today. Goals for tonight: close the day with a conversion-focused tweet, hit three new subreddits, post on Indie Hackers (still untouched), post to DEV.to, and queue up the "Skissify vs Excalidraw" blog for tomorrow morning. Demo video remains P0. Hashtags to own: #VibeDrawing, #AIGotHands, #MCP.*
+
+---
+
+### Trending Hashtag Intelligence (April 2026)
+
+**High-volume, established:**
+- `#BuildInPublic` — evergreen, large indie builder audience, daily volume
+- `#IndieHacker` — quality audience, high signal-to-noise
+- `#AIAgents` — emerging, strong for agent tooling launches
+- `#MCP` — technical, high-intent developer audience
+- `#AI` / `#ArtificialIntelligence` — broad reach
+
+**Niche/owned (Skissify-specific):**
+- `#VibeDrawing` — claim this NOW, 3-day window to own it
+- `#AIGotHands` — currently ~0 posts, unclaimed, highly memorable
+- `#HandDrawn` — visual community crossover
+
+**Platform strategy (per X/Twitter data 2026):** Use 1-2 hashtags per tweet for maximum reach. Save 3 for community-specific or trending posts. Never exceed 3 on X.
+
+---
+
+### Twitter/X — Day 2 Closing Tweet (21:30 CET)
+
+```
+Day 2 of Skissify.
+
+Things I didn't expect:
+→ Homeowners using it to explain renovations to contractors
+→ DMs from dungeon masters
+→ A product team using it to replace their Figma exploration board
+
+Things I did expect:
+→ Developers. Agent builders. MCP integrations.
+
+Building a drawing primitive turns out to attract everyone who thinks spatially.
+
+That's most people.
+
+skissify.com — still free, still no auth
+
+#BuildInPublic #VibeDrawing
+```
+
+---
+
+### Twitter/X — Comparison Hook (20:00 CET — SEO-friendly)
+
+```
+Skissify vs Excalidraw — honest answer:
+
+Excalidraw: humans draw together in real time. Excellent.
+Skissify: AI agents and code draw via API. Completely different thing.
+
+Both good. Different jobs.
+
+If a human holds the mouse → Excalidraw.
+If code or AI draws → Skissify (only option with a real API).
+
+Full comparison: [link to blog post]
+
+#AIAgents #MCP #BuildInPublic
+```
+
+---
+
+### Twitter/X — Developer Proof Tweet (22:00 CET)
+
+```
+The Skissify manifest that generates a 2-bed floor plan:
+
+{
+  "paper": "cream",
+  "tool": "pencil",
+  "elements": [
+    {"type": "rect", "x": 0, "y": 0, "width": 250, "height": 180, "label": "Living"},
+    {"type": "rect", "x": 0, "y": 180, "width": 120, "height": 120, "label": "Bed 1"},
+    {"type": "rect", "x": 130, "y": 180, "width": 120, "height": 120, "label": "Bed 2"},
+    {"type": "door-symbol", "x": 50, "y": 0, "width": 70},
+    {"type": "window", "x": 100, "y": 0, "width": 60}
+  ]
+}
+
+POST to /api/render → hand-drawn SVG. No auth. Free.
+
+That's the whole API. Claude generates this from a sentence.
+
+#AIGotHands #MCP
+```
+
+---
+
+### Indie Hackers — Post (STILL UNTOUCHED — POST TONIGHT)
+
+```
+Title: I launched a JSON-to-sketch API on April Fools' Day. Here's what happened.
+
+Brutal honesty post from the first 36 hours.
+
+The product: Skissify. You POST JSON describing a sketch → get back hand-drawn SVG. There's an MCP server so Claude can draw natively. Floor plans, wireframes, diagrams. No auth, no rate limit on the free tier.
+
+What I expected: developer adoption, AI agent builders, some MCP interest.
+
+What actually happened:
+- Hacker News: decent reception, good technical discussion
+- Twitter/X: strong on the "AI got hands" angle
+- Reddit: r/artificial and r/webdev got traction; r/mcp is still pending (post this)
+- Product Hunt: [live, update with actual vote count]
+- Homeowners: completely unexpected. People are using Claude + Skissify to sketch renovation ideas and show contractors. Never designed for this.
+
+Things I got wrong:
+- Launched on April 1. Spend 20% of your energy dealing with "is this a joke?" No, it's not.
+- No demo video on launch day. Script was written. Recording wasn't done. This is the single highest-leverage thing I still haven't done. If you're launching a visual tool: record the demo first.
+- Posted to 6 subreddits on Day 1. Missed r/mcp, r/ClaudeAI, r/homeimprovement, r/worldbuilding. These are now queued for Day 2.
+
+What I'd do differently:
+1. Demo video before anything else.
+2. Skip April 1. Or fully commit to the bit (I did neither).
+3. Indie Hackers on Day 1. It's the highest-quality founder audience and I completely forgot.
+
+Current status: 36 hours in. Not going viral. Not dead. Building momentum via blog posts and Reddit community approach.
+
+If you're building developer tools or AI primitives: feel free to ask anything. Happy to share numbers when they stabilize.
+
+skissify.com — if you want to see what the product actually does.
+```
+
+---
+
+### DEV.to — Syndication Post (Queue for tomorrow morning)
+
+```
+Title: I gave Claude a pencil — here's what happened
+
+[Excerpt from how-ai-agents-can-draw-floor-plans.md blog post]
+
+Read the full post: skissify.com/blog/how-ai-agents-draw-floor-plans
+
+Tags: ai, mcp, claude, flooorplans, api
+```
+
+---
+
+### Bluesky — Evening Post
+
+```
+Day 2 of building in public with Skissify.
+
+Unexpected user: homeowners explaining renovation layouts to contractors via Claude + Skissify sketches. Built it for devs. Homeowners showed up.
+
+That's usually a sign you built something fundamental, not just something useful.
+
+skissify.com #VibeDrawing #BuildInPublic
+```
+
+---
+
+### Mastodon / Fediverse — Technical Post
+
+```
+Skissify launched yesterday — a REST API that turns JSON into hand-drawn SVGs.
+
+The MCP server (npx skissify-mcp) gives Claude, Cursor, and compatible agents a native draw() capability. POST JSON, get SVG. No auth.
+
+Supports architectural elements: walls, doors, windows, stairs, furniture. Useful for floor plans, wireframes, diagrams.
+
+Open to fediverse feedback. The rendering algorithm (wobble + humanness parameters) is the part I'm most proud of.
+
+skissify.com | #MCP #OpenSource #IndieHacker
+```
+
+---
+
+### r/SideProject — Post (NEW — High Fit)
+
+```
+Title: I built a JSON-to-hand-drawn-sketch API so AI agents can finally draw
+
+Side project that became a real launch: Skissify.
+
+The problem: LLMs are great at reasoning about space but their only output format is text. Ask Claude to design a floor plan, you get a paragraph. Accurate. Useless.
+
+The solution: a REST API that accepts JSON describing a sketch and returns SVG. An MCP server wraps it so Claude draws natively.
+
+No auth. No rate limit on free tier. 30+ element types including architectural symbols.
+
+Launched April 1 (yes, I know). Here's where it is after 36 hours: [update with real numbers]
+
+Would love feedback from anyone who's built API-first developer tools. Especially on the free tier strategy — currently considering keeping the render API free forever and charging for team/org features.
+
+skissify.com
+```
+
+---
+
+### r/SaaS — Post (NEW — Founder Audience)
+
+```
+Title: API-first vs UI-first: building a drawing tool where the API is the product
+
+Just launched Skissify. The render API is free, unlimited, no auth. The business model is teams/orgs.
+
+The logic: if the API is free and easy to try, developers build on top of it. Usage drives adoption. Adoption creates demand for team features.
+
+The risk: free API is expensive to run if it gets heavy traffic before monetization kicks in.
+
+36 hours in, the bet seems to be working — most signups come from Reddit/HN technical posts, not the landing page.
+
+Anyone else building API-first SaaS? What's your experience with free-tier-as-acquisition?
+```
 
 ---
 
