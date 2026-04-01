@@ -356,3 +356,39 @@ Build a GitHub Action that generates a Skissify floor plan or architecture diagr
 | "Skissify for Cursor/Windsurf" post | 🟢 P2 |
 
 ---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 83 — 02:39 CET — Launch Morning Final)
+
+**Context:** It's 02:39 CET on launch day. 4.5 hours until the 07:00 PH go-live. All major content assets are complete. This cycle adds precision assets for launch-morning execution.
+
+### New Assets Created This Cycle
+
+- **Instagram Stories sequence** — ✅ 4-slide story sequence (07:00/09:00/11:00/14:00 CET) added to SOCIAL-MEDIA.md. Different format from grid posts — tease, hook, demo, ask.
+- **April Fools skeptic comeback templates** — ✅ 5 pre-written reply templates added to SOCIAL-MEDIA.md. Includes the curl proof (Reply D) which is the strongest conversion tool.
+- **Personal network message** — ✅ WhatsApp/Signal template added. Close contacts convert better than strangers.
+- **Product Hunt first comment** — ✅ Pre-written comment to post immediately when PH page goes live. First comment sets the tone for all subsequent discussion.
+- **YouTube Short script (30s)** — ✅ Added to SOCIAL-MEDIA.md. Even a rough screen record posted as Shorts gets algorithmic reach.
+- **Blog: "Launch morning — it's 02:00 AM"** — ✅ Created `blog/launch-morning-its-02am-and-i-cant-sleep.md`. Authentic BuildInPublic essay for Dev.to/Hashnode. Post as Day 1 live update or Day 2 retrospective.
+
+### Execution Insights for Launch Day
+
+- **Post the PH first comment IMMEDIATELY** — before any other comment lands. It anchors the conversation.
+- **Instagram Stories disappear in 24h** — they're lower stakes, higher intimacy. Use them to show behind-the-scenes.
+- **Save the skeptic replies** — open SOCIAL-MEDIA.md on your phone. When someone tweets "lol april fools" — paste Reply A immediately.
+- **Don't engage with trolls** — engage with the curious ones. "Is this real?" deserves the curl command. "You're an idiot" doesn't deserve a reply.
+- **The personal DM round** — 5 close contacts DM'd at 07:00 matters more than 5 public tweets. They actually upvote.
+
+### Final T-4h Checklist (02:39 CET)
+
+| Action | Priority | Status |
+|--------|----------|--------|
+| Sleep 4 hours | 🔴 P0 | ⏳ DO THIS NOW |
+| 06:30: Server health check | 🔴 P0 | ⏳ |
+| 07:00: PH goes live — post first comment immediately | 🔴 P0 | ⏳ |
+| 07:00: DM 5 people | 🔴 P0 | ⏳ |
+| 09:00: Twitter thread | 🔴 P0 | ⏳ |
+| 09:00: Instagram Stories slide 2 | 🟡 P1 | ⏳ |
+| 10:00: Show HN post | 🔴 P0 | ⏳ |
+| 11:00: Reddit drops begin | 🔴 P0 | ⏳ |
+
+---

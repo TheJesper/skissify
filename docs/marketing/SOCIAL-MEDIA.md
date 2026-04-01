@@ -1,7 +1,170 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 1, 2026 — Cycle 81 (Day 2 Prep + Platform Expansion)**
+**Last updated: April 1, 2026 — Cycle 83 (02:39 CET — Launch Morning Final)**
+
+---
+
+## CYCLE 83 ADDITIONS — 02:39 CET Launch Morning
+
+### Instagram Stories Sequence (Launch Day — 4 slides)
+
+*Stories disappear in 24h, post around 09:00 CET for max reach. Use Canva/text overlay.*
+
+**Story 1 — The tease (07:00 CET)**
+```
+Background: dark/black
+Text: "In a few hours I'm launching something."
+Subtext: "It lets AI agents draw."
+Bottom: skissify.com  →
+```
+
+**Story 2 — The hook (09:00 CET)**
+```
+Background: cream paper texture
+Text: "You asked Claude to describe a room."
+Text: "What if it could also DRAW it?"
+Bottom: Link sticker → skissify.com
+```
+
+**Story 3 — The demo (11:00 CET)**
+```
+Background: screen recording GIF (JSON → floor plan)
+Text overlay: "JSON in. Hand-drawn sketch out."
+Bottom: "Try it free →" + link sticker
+```
+
+**Story 4 — The ask (14:00 CET)**
+```
+Background: gradient (cream → warm white)
+Text: "Launching on Product Hunt today."
+Text: "Would love your support 🙏"
+Bottom: Link sticker → PH page
+```
+
+---
+
+### April Fools Skeptic Comeback Templates
+
+*Pre-written replies for when people say "this is a joke, right?" — post in replies, not as main posts.*
+
+**Reply A — Short and confident:**
+```
+Not a joke. Here's proof:
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"paper":"cream","tool":"ballpoint","elements":[{"type":"rect","x":50,"y":50,"width":200,"height":150,"label":"Room"}]}'
+
+Run it. Get an SVG back. April 1 just makes it better.
+```
+
+**Reply B — Playful:**
+```
+Best day to launch honestly — if it works on April Fools, you know it's real.
+
+Try: npx skissify-mcp
+Tell Claude to draw your apartment.
+```
+
+**Reply C — Ultra short:**
+```
+It's real. skissify.com. No signup.
+```
+
+**Reply D — The challenge:**
+```
+April Fools test: I bet you get an SVG back within 10 seconds.
+
+curl -s -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d @- <<'EOF'
+{"paper":"cream","tool":"ballpoint","wobble":{"amount":2},"elements":[{"type":"rect","x":100,"y":100,"width":200,"height":150,"label":"Office"}]}
+EOF
+
+Clocks running.
+```
+
+**Reply E — For tech journalists / commenters:**
+```
+Launching on April 1 was a deliberate filter. Anyone who tries it today despite the date is genuinely curious. Those are the best early users.
+
+API docs: skissify.com/docs
+No auth. No rate limits. It works.
+```
+
+---
+
+### Personal Network (WhatsApp / iMessage / Signal)
+
+*Send to close contacts, friends, former colleagues. 1-2 sentences max.*
+
+```
+Hey! I launched my side project today — skissify.com.
+It's a drawing API that lets AI agents like Claude generate hand-drawn floor plans and diagrams.
+Would love if you tried it or shared it with anyone who builds with AI.
+(Yes, I launched on April Fools. No, it's not a joke 😄)
+```
+
+---
+
+### Discord Status Update (personal status in AI servers)
+
+```
+🚀 just launched skissify.com — JSON → hand-drawn SVG API + MCP server
+```
+
+---
+
+### LinkedIn Comment / Reply Template
+
+*For when people comment on your launch post:*
+
+```
+Thanks! The MCP setup takes about 2 minutes — add the 6-line config to Claude Desktop and ask it to "sketch a rough floor plan." The first time it works is genuinely surprising.
+
+If you try it and hit any issues, just ping me here or open a GitHub issue.
+```
+
+---
+
+### YouTube Short Script (30 seconds)
+
+*Screen record: terminal → Claude → floor plan render*
+
+```
+0:00 HOOK (spoken + text): "Claude can now draw. Here's how."
+0:03 Screen: open Claude Desktop
+0:06 Type: "Sketch a rough floor plan for a 1-bedroom apartment, ~50 square meters"
+0:10 Claude constructs JSON, calls Skissify MCP
+0:18 Floor plan appears: wobbly walls, furniture symbols, room labels
+0:22 REACTION: "That took 8 seconds. No mouse. No Figma. Just an LLM + an API."
+0:26 END CARD: "skissify.com — npx skissify-mcp to get started"
+0:30 CAPTION: AI can draw now. #VibeDrawing #MCP #AIAgents #Claude #BuildInPublic
+```
+
+---
+
+### Product Hunt First Comment (post immediately after launch goes live)
+
+*Post this as the FIRST comment on your own PH page — before anyone else can.*
+
+```
+Hey PH! 👋 Builder here.
+
+Skissify solves one frustration: AI agents can reason about space, architecture, and layout — but they've never been able to *output* it visually. Until now.
+
+The render API is completely free, no auth required. The fastest way to see if this is useful:
+
+1. Install: npx skissify-mcp
+2. Open Claude Desktop
+3. Ask it to sketch any room, floor plan, or diagram
+
+If it draws something you didn't expect, I've done my job.
+
+Happy to answer any questions in the comments. Ask me anything — architecture, MCP integration, the wobble algorithm, pricing, whatever.
+
+— Jesper (Stockholm 🇸🇪, building this solo)
+```
 
 ---
 
