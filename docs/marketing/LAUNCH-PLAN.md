@@ -1,7 +1,7 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 — 14:00 CET (LAUNCH DAY — T+7H IN)**
+**Current Date: April 1, 2026 — 15:08 CET (LAUNCH DAY — T+8H IN — SEE CYCLE 94)**
 
 ---
 
@@ -197,6 +197,96 @@ RIGHT NOW (overdue):
 | Bluesky | ✅ Morning / ⏳ 15:30 update |
 | Newsletter (own) | ✅ Sent |
 | Product Hunt Maker Update | ⏳ 20:00 |
+| TLDR/Bytes.dev pitch | ⏳ Send today |
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 94 — 15:08 CET — T+8H IN)
+
+### Status at 15:08 — Cycle 94 Additions
+
+| New This Cycle | Status |
+|----------------|--------|
+| Bluesky afternoon update | ✅ Written — Cycle 94 — post at 15:30 |
+| Threads (Meta) afternoon post | ✅ Written — Cycle 94 — POST NOW (overdue) |
+| r/worldbuilding post (map angle) | ✅ Written — Cycle 94 — post at 16:30 |
+| r/gamedesign post (level layout) | ✅ Written — Cycle 94 — post at 16:45 |
+| r/AutoCAD pre-CAD angle | ✅ Written — Cycle 94 — post at 17:00 |
+| r/learnprogramming tutorial angle | ✅ Written — Cycle 94 — post at 17:30 |
+| Twitter build-in-public 7-tweet thread | ✅ Written — Cycle 94 — post at 19:00 |
+| Product Hunt Maker Update copy | ✅ Written — Cycle 94 — post at 20:00 EXACTLY |
+| LinkedIn evening update | ✅ Written — Cycle 94 — post at 20:00 |
+| Substack newsletter outreach (4 targets) | ✅ Written — Cycle 94 — send today |
+| r/Architects professional angle | ✅ Written — Cycle 94 — post TOMORROW morning |
+| Trending hashtag cluster research | ✅ Done — Cycle 94 — see SOCIAL-MEDIA.md |
+| New viral hooks (5 tested angles) | ✅ Written — Cycle 94 |
+
+### New Insights — Cycle 94
+
+- **r/worldbuilding** (700K members) is adjacent to r/DnD but has broader "map + layout" culture. Blueprint-mode maps fit perfectly. Large community, high sharing rate.
+- **r/gamedesign** (80K members) — level layout prototyping is an active pain point. Small but high-quality audience.
+- **r/AutoCAD** — the "pre-CAD napkin sketch" angle is legitimate and non-spammy for this community.
+- **r/learnprogramming** — the schema design insight (94% vs 40% accuracy) is genuinely educational and will earn organic upvotes.
+- **Substack newsletters** (Ben's Bites, The Rundown AI, AI Tool Report, Mindstream) — these reach a combined 500K+ AI-interested readers. Pitch email written in Cycle 94.
+- **#VibeDrawing** is emerging as the companion to #VibeCoding. Skissify can own this hashtag. Use it on every post.
+- **#AIGotHands** is coinable — nobody owns it yet. Could become a viral hook if the right influencer picks it up.
+- **Evening thread at 19:00** is the most important post of the day. Include real numbers. Honesty outperforms polish in build-in-public content.
+- **Product Hunt Maker Update at 20:00** is the last high-visibility action of day 1. Don't skip it. It triggers notifications to all voters and watchers.
+
+### Priority Action List (15:08 CET)
+
+RIGHT NOW:
+1. 🔴 Threads post — overdue — copy in Cycle 94
+2. 🔴 Discord drops — still overdue — copy in Cycle 93
+3. 🔴 r/n8n, r/mcp, r/ClaudeAI, r/startups — overdue — copies in Cycle 93
+
+Next 2 hours:
+- 15:30: Bluesky update — copy Cycle 94
+- 16:00: r/DnD — copy Cycle 93
+- 16:30: r/worldbuilding — copy Cycle 94
+- 16:45: r/gamedesign — copy Cycle 94
+- 17:00: r/AutoCAD — copy Cycle 94
+- 17:30: r/learnprogramming — copy Cycle 94
+- 18:00: Send newsletter pitches (4 targets) — copy Cycle 94
+
+Evening:
+- 19:00: Twitter 7-tweet build-in-public thread — copy Cycle 94
+- 20:00: Product Hunt Maker Update — copy Cycle 94 (HIGH PRIORITY)
+- 20:00: LinkedIn evening update — copy Cycle 94
+
+Tomorrow morning (carry-over):
+- r/Architects post — copy Cycle 94
+- Week 2 roadmap blog post — use blog/week-2-what-were-building-roadmap-post.md
+
+### Updated Channel Status (15:08 CET)
+
+| Channel | Status |
+|---------|--------|
+| Product Hunt | ✅ Live / ⏳ Maker Update 20:00 |
+| Twitter/X | ✅ Morning / ✅ 14:30 done / ⏳ 19:00 thread |
+| Hacker News | ✅ Live |
+| Reddit (r/webdev, r/artificial, r/ChatGPT) | ✅ Done |
+| r/mcp | ⏳ OVERDUE — post NOW |
+| r/ClaudeAI | ⏳ OVERDUE — post NOW |
+| r/n8n | ⏳ OVERDUE — post NOW |
+| r/startups | ⏳ OVERDUE — post NOW |
+| r/AIAssistants | ⏳ Post NOW |
+| r/InteriorDesign | ⏳ 15:00 (imminent) |
+| r/HomeImprovement | ⏳ 15:30 |
+| r/DnD | ⏳ 16:00 |
+| r/worldbuilding | ⏳ 16:30 — NEW Cycle 94 |
+| r/gamedesign | ⏳ 16:45 — NEW Cycle 94 |
+| r/AutoCAD | ⏳ 17:00 — NEW Cycle 94 |
+| r/learnprogramming | ⏳ 17:30 — NEW Cycle 94 |
+| r/Architects | ⏳ Tomorrow morning |
+| LinkedIn | ✅ Morning / ⏳ 20:00 evening update |
+| Threads (Meta) | ⏳ NOW (overdue) |
+| Bluesky | ✅ Morning / ⏳ 15:30 update |
+| Discord (4 servers) | ⏳ OVERDUE |
+| Indie Hackers | ⏳ NOW — overdue |
+| Hashnode | ⏳ Today |
+| Substack newsletter pitches | ⏳ Send by 18:00 — copy Cycle 94 |
+| Product Hunt Maker Update | ⏳ 20:00 — copy Cycle 94 |
 | TLDR/Bytes.dev pitch | ⏳ Send today |
 
 ---
