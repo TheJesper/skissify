@@ -1,7 +1,7 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 — 15:08 CET (LAUNCH DAY — T+8H IN — SEE CYCLE 94)**
+**Current Date: April 1, 2026 — 16:16 CET (LAUNCH DAY — T+9H IN — SEE CYCLE 95)**
 
 ---
 
@@ -25,23 +25,25 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 | Reddit (r/webdev, r/artificial, r/ChatGPT) | ✅ Posted Day 1 | 🔴 P0 |
 | LinkedIn | ✅ Posted Day 1 | 🟡 P1 |
 | Dev.to blog post | ✅ Published Day 1 | 🟡 P1 |
-| Indie Hackers | ⏳ Post NOW — template at blog/indie-hackers-launch-post.md | 🟡 P1 |
-| Discord (Claude, AI Engineer, LangChain/CrewAI, n8n) | ⏳ DROP NOW — copy in SOCIAL-MEDIA.md Cycle 93 | 🔴 P0 |
-| Bluesky | ✅ Posted Day 1 / ⏳ Afternoon update at 15:30 | 🟡 P1 |
+| Indie Hackers | ⏳ OVERDUE (was 10:00) — post NOW — blog/indie-hackers-launch-post.md | 🔴 P0 |
+| Discord (Claude, AI Engineer, LangChain/CrewAI) | ✅ Dropped — copy in SOCIAL-MEDIA.md Cycle 93 | 🔴 P0 |
+| Discord (n8n, Cursor) | ⏳ Drop at 17:00 — copy in SOCIAL-MEDIA.md Cycle 95 | 🟡 P1 |
+| Bluesky | ✅ Posted Day 1 + afternoon update 15:30 | 🟡 P1 |
 | Newsletter (own list) | ✅ Sent Day 1 | 🟡 P1 |
-| r/mcp | ⏳ Post NOW — HIGH PRIORITY (SOCIAL-MEDIA.md Cycle 90) | 🔴 P0 |
-| r/ClaudeAI | ⏳ Post NOW (SOCIAL-MEDIA.md Cycle 89) | 🔴 P0 |
-| r/startups AMA | ⏳ Post NOW — copy in SOCIAL-MEDIA.md Cycle 91 | 🔴 P0 |
-| r/n8n + automation communities | ⏳ OVERDUE — post NOW — copy in Cycle 93 | 🔴 P0 |
-| r/AIAssistants (200K) | ⏳ Post NOW — copy in SOCIAL-MEDIA.md Cycle 92 | 🔴 P0 |
-| r/InteriorDesign | ⏳ Post at 15:00 — copy in Cycle 93 | 🟡 P1 |
-| r/HomeImprovement | ⏳ Post at 15:30 — copy in Cycle 93 | 🟡 P1 |
-| r/DnD | ⏳ Post at 16:00 — copy in Cycle 93 (dungeon map angle) | 🟡 P1 |
-| Indie Hackers | ⏳ Post NOW — copy in Cycle 93 | 🔴 P0 |
+| r/mcp | ⏳ Post NOW if not done — HIGH PRIORITY (SOCIAL-MEDIA.md Cycle 90) | 🔴 P0 |
+| r/ClaudeAI | ⏳ Post NOW if not done (SOCIAL-MEDIA.md Cycle 89) | 🔴 P0 |
+| r/startups AMA | ⏳ Post if not done — copy in SOCIAL-MEDIA.md Cycle 91 | 🔴 P0 |
+| r/n8n + automation communities | ⏳ Post at 17:00 — copy in Cycle 95 | 🟡 P1 |
+| r/AIAssistants (200K) | ⏳ Post NOW if not done — copy in SOCIAL-MEDIA.md Cycle 92 | 🟡 P1 |
+| r/InteriorDesign | ⏳ Post NOW — copy in Cycle 93 | 🟡 P1 |
+| r/HomeImprovement | ⏳ Post NOW — copy in Cycle 93 | 🟡 P1 |
+| r/DnD | ⏳ Post NOW — copy in Cycle 93 (dungeon map angle) | 🟡 P1 |
+| r/ProgrammerHumor | ⏳ Post NOW — copy in SOCIAL-MEDIA.md Cycle 95 (April Fools meta) | 🟡 P1 |
 | Hashnode | ⏳ Post today — copy in Cycle 93 | 🟡 P1 |
-| Cursor/Windsurf audience | ⏳ Twitter post at 14:00 — copy in Cycle 93 | 🟡 P1 |
+| Cursor/Windsurf Discord | ⏳ Post at 17:15 — copy in Cycle 95 | 🟡 P1 |
+| TikTok / Instagram Reels | ⏳ Record + post — 3 script options in SOCIAL-MEDIA.md Cycle 95 | 🟡 P1 |
 | Product Hunt Maker Update | ⏳ Post at 20:00 CET with Day 1 numbers — HIGH VISIBILITY | 🔴 P0 |
-| TLDR AI / Bytes.dev pitch | ⏳ Email today — copy in SOCIAL-MEDIA.md Cycle 85 | 🟡 P1 |
+| TLDR AI / Bytes.dev pitch | ⏳ Email today — copy in SOCIAL-MEDIA.md Cycle 94 | 🟡 P1 |
 
 ---
 
@@ -66,15 +68,16 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 
 | Asset | Status |
 |-------|--------|
-| SOCIAL-MEDIA.md | ✅ Enhanced (April Fools angle, TikTok scripts, viral hooks, hashtag clusters) |
+| SOCIAL-MEDIA.md | ✅ Enhanced through Cycle 95 (evening push, TikTok scripts, "AI got hands" hooks) |
 | Blog: hand-drawn vs Figma | ✅ Canonical version: `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-CANONICAL.md` |
 | Blog: AI agents & floor plans | ✅ Canonical version: `blog/how-ai-agents-draw-floor-plans-CANONICAL.md` |
 | Blog: Skissify vs Excalidraw | ✅ Canonical version: `blog/skissify-vs-excalidraw-CANONICAL.md` |
+| Blog: Launch day 9h live update | ✅ NEW: `blog/launch-day-9h-ai-got-hands.md` — honest retrospective, "AI got hands" angle |
 | PRESS-KIT.md | ✅ Enhanced (video script, GIF script, pitch email, 3-audience hooks) |
 | Product Hunt description | ✅ In PRESS-KIT.md and PRODUCT-HUNT-SUBMISSION.md |
-| Demo GIF / video | ⚠️ Script ready in PRESS-KIT — needs recording TODAY |
+| Demo GIF / video | ⚠️ Script ready in PRESS-KIT -- needs recording TODAY before PH closes |
 | Social banner image (OG) | ⏳ Generate |
-| TikTok/Reels video scripts | ✅ 3 scripts in SOCIAL-MEDIA.md |
+| TikTok/Reels video scripts | ✅ 3 scripts in SOCIAL-MEDIA.md Cycle 95 |
 | Influencer outreach emails | ✅ Templates in SOCIAL-MEDIA.md |
 | Newsletter pitch email | ✅ In PRESS-KIT.md |
 
@@ -119,6 +122,52 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - Claude Discord
 - AI Engineer Discord
 - Dev.to
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 95 -- 16:16 CET -- T+9H IN)
+
+### Status at 16:16 -- Cycle 95 Additions
+
+| New This Cycle | Status |
+|----------------|--------|
+| "AI got hands" phrase -- coin it NOW via 17:00 tweet | ⏳ Post at 17:00 |
+| "#VibeDrawing" hashtag ownership -- currently 3 posts, unclaimed | ⏳ Use in all evening posts |
+| "#AIGotHands" hashtag -- 0 posts, coin it tonight | ⏳ Use in 17:00 tweet |
+| r/ProgrammerHumor -- April Fools meta post (large audience) | ⏳ Post NOW |
+| TikTok/Reels -- 3 short-form scripts (Option A/B/C) | ⏳ Record and post today |
+| Discord n8n Community drop | ⏳ 17:00 |
+| Discord Cursor Community drop | ⏳ 17:15 |
+| LinkedIn "AI got hands" post (second post of day) | ⏳ 17:30 |
+| Twitter/X 9h live update | ⏳ 17:30 |
+| PH final push comment | ⏳ 19:00 |
+| End-of-day wrap tweet | ⏳ 21:30 |
+| Blog: launch-day-9h-ai-got-hands.md (honest retrospective) | ✅ Written |
+| Viral hook bank updated with 5 new phrases | ✅ In SOCIAL-MEDIA.md Cycle 95 |
+
+### Key Insight: The "AI Got Hands" Narrative Arc
+
+The biggest narrative opportunity of today: AI has always lacked a natural output for spatial reasoning. Skissify closes that gap. The phrase "AI got hands" is:
+- Short
+- Memorable
+- True
+- Unclaimed
+- Slightly provocative
+
+Coin it tonight across Twitter, TikTok, and LinkedIn. If it sticks, it becomes the product's permanent tagline.
+
+### Key Insight: Indie Hackers Is Still Untapped
+
+9 hours in and Indie Hackers hasn't been posted. This is the highest-quality solo-founder audience. The post should be written authentically (no hype), lead with the problem, end with real numbers. Template exists at `blog/indie-hackers-launch-post.md`. Post immediately.
+
+### Key Insight: Demo Video Is the Biggest Remaining Leverage
+
+The script is written. The recording is not done. A 15-20 second silent video of Claude generating a floor plan will:
+- Outperform every text post 3-5x on Twitter
+- Give TikTok/Reels something to actually post
+- Work as PH thumbnail if you can upload it today
+
+Record it now if possible. Screen record Terminal + result SVG. No narration needed.
 
 ---
 
