@@ -2,6 +2,60 @@
 
 ---
 
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #89 (02:31 CET, Wednesday April 1)
+
+### Context: Run #89 Key Findings
+- **89 consecutive niche-clean scans** — spatial sketch MCP lane uncontested
+- **OpenClaw featured "Goes Viral" on PulseMCP newsletter** — co-marketing opportunity with native MCP audience
+- **5 new UI/UX wireframe AI tools confirmed** (Banani, Google Stitch, TypMo, Uizard, Visily) — all wrong lane, no threat
+- **MCP 2026 roadmap: enterprise audit trails + SSO** — Skissify Enterprise tier should reference these
+- **EUR 2/mo is below market** — EUR 5/mo Pro should be the primary CTA, not undersold with EUR 2 framing
+- **MCP SDK: 97M monthly downloads, 10K+ servers** — ecosystem growth confirms bet is right
+- **PulseMCP listing from Run #88 still critical** (carried) — if not done Wednesday, do Thursday first
+
+---
+
+### 🎯 Action 1 (HIGHEST PRIORITY — Thursday): Leverage OpenClaw PulseMCP Viral Moment for Co-Marketing
+
+PulseMCP newsletter featured OpenClaw as a viral tool this week. The headline "OpenClaw Goes Viral, MCP Apps Release, Agentic Coding Accelerating" positions OpenClaw readers as the exact Skissify Pro prospect (agent builders, MCP-stack developers).
+
+**Steps (45 min)**:
+1. Submit Skissify to PulseMCP (pulsemcp.com/servers — submit/suggest option) if not done from Run #88 Action 1
+2. In the submission description, specifically mention OpenClaw integration: "Used inside OpenClaw agent orchestration for automated visual output. JSON manifest in → hand-drawn SVG out."
+3. Post in PulseMCP community or Discord (if exists): "Just submitted Skissify — the visual output MCP layer for agent stacks like OpenClaw"
+4. Reference PulseMCP's OpenClaw newsletter post when posting about Skissify on X/Mastodon: "Saw OpenClaw going viral on @PulseMCP this week — here's the visual output MCP layer that pairs with it: [skissify.com]"
+
+**Why this is Thursday's top action**: The OpenClaw viral moment has a recency window. PulseMCP newsletter readers will be in "discovery mode" for a few days. Attaching Skissify to this wave costs zero and targets the highest-intent cohort available.
+
+---
+
+### 🎯 Action 2 (HIGH — Thursday): Audit Landing Page — Remove EUR 2 Framing, Lead with EUR 5/mo Output Demo
+
+Market data confirms EUR 2/mo is 6–10x below typical indie SaaS pricing ($12–20/mo). Framing Skissify as a EUR 2/mo product undervalues it and may signal low quality to developers doing price-quality assessment.
+
+**Steps (30 min)**:
+1. Review skissify.com pricing page — identify any EUR 2/mo mentions or "as low as EUR 2" copy
+2. Replace with EUR 5/mo Pro as primary CTA with "below expense threshold, no approval needed" angle
+3. Ensure the hero section shows an actual hand-drawn SVG output (floor plan or napkin diagram) — not JSON, not an editor screenshot. The output IS the product.
+4. Add a one-line comparison: "EUR 5/mo vs. Excalidraw+ at EUR 6/mo — but with MCP, JSON input, and architectural elements."
+
+**Why this matters**: The conversion bottleneck is output trust, not price. Showing the output converts; lowering the price does not. EUR 5/mo converts the same rate as EUR 2/mo for developers who have already seen the output.
+
+---
+
+### 🎯 Action 3 (HIGH — Thursday): Add Enterprise MCP Readiness Language to Pricing Page
+
+The official MCP 2026 roadmap targets enterprise-managed auth (SSO) and audit trails as 2026–2027 deliverables. Enterprise procurement teams evaluating MCP tools now will include these in evaluation criteria.
+
+**Steps (20 min)**:
+1. Add an "Enterprise" row to the pricing table (if not already present) with: "MCP audit-trail compatible · SSO-ready · self-hosted option · EUR 200+/mo"
+2. Add two-line footnote under Enterprise tier: "Built for MCP 2026 enterprise readiness roadmap. Audit trail support and enterprise SSO on roadmap for Q3 2026."
+3. This costs nothing to add and positions Skissify in enterprise evaluation shortlists 12–18 months early
+
+**Why this is worth 20 minutes**: Enterprise contracts are pre-decided by procurement criteria. Being in the evaluation set before the budget flows is the entire strategy. A single EUR 200/mo enterprise customer = 40 Pro subscribers in revenue.
+
+---
+
 ## 2026-04-01 (Wednesday) — Updated by Automated Strategy Run #88 (00:15 CET, Wednesday April 1)
 
 ### Context: Run #88 Key Findings

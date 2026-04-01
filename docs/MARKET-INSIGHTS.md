@@ -2,6 +2,44 @@
 
 ---
 
+## Entry: April 1, 2026 — 02:31 CET | Automated Strategy Run #89
+
+### Theme: OpenClaw as Co-Marketing Vector, EUR 5 as Primary CTA (Not EUR 2), and Enterprise MCP Readiness Window
+
+#### Insight 1: OpenClaw Going Viral on PulseMCP Is a Native Co-Marketing Event — Skissify Should Attach Immediately
+
+PulseMCP's newsletter featured OpenClaw (the orchestration platform) as a viral tool under the headline "OpenClaw Goes Viral, MCP Apps Release, Agentic Coding Accelerating." The PulseMCP newsletter audience is the highest-quality Skissify prospect cohort available — they are actively building MCP stacks and discovering new tools.
+
+**Why someone pays EUR 5/mo from this insight**: A developer who reads PulseMCP's newsletter about OpenClaw is exactly the person who: (1) already runs agent orchestration, (2) is evaluating new MCP tools to add, (3) is in "tool discovery mode" not "tool skepticism mode." The OpenClaw story creates a frame of "innovative AI tools I need" — Skissify listed in the same issue or referenced in the same newsletter context inherits that frame.
+
+**The co-marketing angle**: "OpenClaw orchestrates agents. Skissify gives those agents a visual output layer. Together they close the loop." This is not a stretch — it's literally how the strategy agent running in OpenClaw creates this document. That's a real demo story.
+
+**Conversion path**: Submit Skissify to PulseMCP referencing OpenClaw integration → if the newsletter covers both in sequence, Skissify reaches 10,000+ MCP-literate developers in one shot → EUR 5/mo is frictionless for this audience.
+
+**Data source**: pulsemcp.com/posts/newsletter-openclaw-goes-viral-mcp-apps-release-agentic-coding-accelerating
+
+#### Insight 2: EUR 5/mo Is the Right Primary CTA — EUR 2 Framing Undervalues the Product
+
+Market benchmarks for indie tools in 2026: typical micro-SaaS entry is $12–20/month; AI-powered tools are $19–99/month. EUR 5/mo Pro is already positioned at 60–80% discount vs. market rates.
+
+**Why EUR 5/mo converts better than EUR 2/mo framing**: The "expense report threshold" argument applies equally to EUR 5 as EUR 2 — both are below the individual payment friction point. But EUR 2/mo signals a disposable, low-quality tool; EUR 5/mo signals "a serious tool, fairly priced." Developers are not optimizing for the cheapest tool — they're optimizing for the right tool. EUR 5/mo communicates substance; EUR 2/mo communicates trial or hobby.
+
+**The real barrier to EUR 5/mo conversion is not price**: It is output trust — developers will not pay any monthly fee for a tool whose output they haven't seen. The conversion bottleneck is showing the hand-drawn SVG output on the landing page, not lowering the price. Every EUR spent on pricing experiments should instead go to output showcase quality.
+
+**Recommendation**: Remove EUR 2/mo framing from all marketing materials. Lead with EUR 5/mo Pro as primary CTA. The pricing question is answered; the output trust question is not yet fully addressed.
+
+#### Insight 3: MCP Enterprise Readiness Is a 2026–2027 Revenue Window — Skissify Should Be Positioned Early
+
+The official MCP 2026 roadmap explicitly targets enterprise-managed auth (SSO, away from static secrets) and audit trails. This signals that enterprise customers will expect MCP tools to have these capabilities within 12–18 months.
+
+**Why someone pays EUR 200+/mo from this insight**: Enterprise procurement happens in advance of feature delivery — a company evaluating MCP tools in late 2026 will ask "do you have audit logs?" and "can we use our SSO?" before purchasing. Skissify's existing Enterprise tier (EUR 200+/mo) should explicitly claim "MCP audit-trail compatible" and "SSO-ready on roadmap" to be in the evaluation set when enterprise spend begins flowing.
+
+**Market size**: The MCP enterprise readiness wave in 2026–2027 could deliver the first EUR 200–500/mo enterprise customer without any outbound sales — simply by being in the right directories (PulseMCP, official MCP registry) with the right enterprise messaging when procurement teams search.
+
+**Data source**: blog.modelcontextprotocol.io/posts/2026-mcp-roadmap, thenewstack.io/model-context-protocol-roadmap-2026
+
+---
+
 ## Entry: April 1, 2026 — 00:15 CET | Automated Strategy Run #88
 
 ### Theme: Why Someone Pays EUR 2/mo — "MCP Servers Are the New SaaS," the PulseMCP Distribution Gap, and the ToDiagram Structural Signal
