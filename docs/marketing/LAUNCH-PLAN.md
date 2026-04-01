@@ -1,7 +1,65 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — DAY 2 (SEE CYCLE 98)**
+**Current Date: April 2, 2026 — DAY 2/3 TRANSITION (SEE CYCLE 99)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 99 — Day 2/3 Transition)
+
+### Cycle 99 — New Blog Posts Written (3 new posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Why Hand-Drawn Beats Figma (Stakeholder Meeting) | `blog/why-hand-drawn-beats-figma-day3-thursday-angle.md` | PM/design lead, Thursday meeting scenario, premature convergence argument | ✅ Ready to publish |
+| How AI Agents Draw Floor Plans (Homeowner Guide) | `blog/how-ai-agents-draw-floor-plans-the-homeowner-guide.md` | Non-developer guide: homeowners, contractors, renovation planning | ✅ Ready to publish |
+| Skissify vs Excalidraw (LocalLLaMA Verdict) | `blog/skissify-vs-excalidraw-the-localllama-verdict.md` | Local LLM runners, self-hosting, floor plan benchmark for Ollama/Llama 3 | ✅ Ready to publish |
+
+### Cycle 99 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Community research table (r/LocalLLaMA 266K+, r/ChatGPT 4M, r/learnprogramming) | ✅ Added |
+| Twitter/X Thursday morning thread (self-hosting angle) | ✅ Added |
+| Twitter/X Thursday homeowner angle tweet | ✅ Added |
+| Twitter/X honest 48-hour numbers tweet (fill with actuals) | ✅ Added |
+| r/LocalLLaMA post copy (LLM pipeline comparison vs Excalidraw) | ✅ Added |
+| r/ChatGPT post copy (floor plan homeowner angle) | ✅ Added |
+| YouTube Shorts script (queue with demo video recording) | ✅ Added |
+| Hashtag intel update (#LocalLLM addition, YouTube Shorts confirmation) | ✅ Added |
+
+### Cycle 99 — PRESS-KIT.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| r/LocalLLaMA, r/ChatGPT, r/learnprogramming added to Tier 2 communities | ✅ Added |
+| The Batch + Indie Hackers newsletter added to newsletter targets | ✅ Added |
+| New blog assets table (3 Cycle 99 posts) | ✅ Added |
+
+### Cycle 99 — Priority Actions for Thursday April 3
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| Post to r/LocalLLaMA (copy in SOCIAL-MEDIA.md Cycle 99) | ⏳ Post 09:00 CET | 🔴 P0 |
+| Post to r/ChatGPT (copy in SOCIAL-MEDIA.md Cycle 99) | ⏳ Post 10:00 CET | 🔴 P0 |
+| Twitter/X Thursday morning thread (08:00 CET) | ⏳ Copy in Cycle 99 | 🔴 P0 |
+| **RECORD DEMO VIDEO** — this has been P0 since Cycle 82 | ⏳ Record Thursday evening | 🔴 P0 — CRITICAL |
+| Publish homeowner blog to skissify.com/blog | ⏳ New angle, matches r/ChatGPT post | 🟡 P1 |
+| Publish r/LocalLLaMA verdict blog to Dev.to | ⏳ Technical SEO value | 🟡 P1 |
+| Publish Thursday angle Figma blog to Hashnode | ⏳ PM/design audience | 🟡 P1 |
+| YouTube Shorts — queue script once demo is recorded | ⏳ Same recording session as demo | 🟡 P1 |
+| Fill 48-hour honest numbers tweet with actuals | ⏳ Post Thursday 20:00 CET | 🟡 P1 |
+| Indie Hackers post — still overdue | ⏳ Post NOW — copy in Cycle 98 | 🔴 P0 |
+
+### Cycle 99 — New Community Intelligence
+
+| Insight | Action |
+|---------|--------|
+| r/LocalLLaMA (266K+) is completely untapped — self-hosting + Excalidraw comparison is exactly right for this audience | Post Thursday morning |
+| r/ChatGPT (4M) responds well to the homeowner use case — no technical knowledge required | Post Thursday morning |
+| YouTube Shorts performing well for AI demo tools — add to same recording session as demo video | Record Thursday |
+| r/MachineLearning (3M) potential with floor plan benchmark data — save for Week 2 with real accuracy numbers | Plan Week 2 |
+| Indie Hackers "$10K MRR" discussion threads — free API as acquisition strategy is highly relevant content | Comment/post this week |
 
 ---
 

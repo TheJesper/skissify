@@ -1,7 +1,156 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 98 (Day 2 Evening Push + New Platform Blitz)**
+**Last updated: April 2, 2026 — Cycle 99 (Day 2 Late Night / Day 3 Prep)**
+
+---
+
+## CYCLE 99 — DAY 2/3 TRANSITION — LATE NIGHT + THURSDAY MORNING PREP
+
+*Context: Day 2 wrapping up. New community research confirms r/LocalLLaMA (266K+) is untapped — post the technical comparison angle there. Thursday morning is prime posting time for the developer audience. New blog posts target homeowners and local LLM builders. Goals: queue Thursday morning content, hit r/LocalLLaMA, prep the "homeowner guide" for r/HomeImprovement re-engagement, add YouTube Shorts as a new platform for the demo video.*
+
+---
+
+### Community Research Findings (Cycle 99 — April 2026)
+
+**New high-value communities not yet posted to:**
+
+| Community | Size | Angle | Priority |
+|-----------|------|-------|----------|
+| r/LocalLLaMA | 266K+ | Skissify vs Excalidraw for LLM pipelines, self-hosting | 🔴 P0 |
+| r/ChatGPT | 4M | Floor plan demo, no-code homeowner angle | 🟡 P1 |
+| r/MachineLearning | 3M | Technical rendering pipeline, floor plan benchmark | 🟡 P2 |
+| r/learnprogramming | Large | First project with an MCP tool tutorial | 🟡 P1 |
+| Indie Hackers "$10K MRR" thread | Active | Free API as acquisition strategy | 🟡 P1 |
+
+**Hashtag intel update (April 2026):**
+- X/Twitter algorithm in 2026 continues to reward 1–2 targeted hashtags over hashtag stacking
+- `#VibeDrawing` and `#AIGotHands` remain unclaimed — use consistently to build ownership
+- `#LocalLLM` has strong r/LocalLLaMA crossover audience on X — add for technical posts
+- YouTube Shorts with AI tool demos performing well — demo video should go there simultaneously with TikTok
+
+---
+
+### Twitter/X — Thursday Morning Thread (08:00 CET — technical audience)
+
+```
+I added a self-hosting guide for Skissify last night.
+
+Docker. Offline. No external API calls.
+
+For the local LLM crowd: your pipeline now looks like:
+1. Ollama → Llama 3 (local inference)
+2. Skissify (local render server)
+3. MCP client connecting them
+
+Entire floor plan generation stack. Air-gapped. Free.
+
+skissify.com/docs/self-hosting
+
+#LocalLLM #MCP #BuildInPublic
+```
+
+---
+
+### Twitter/X — Thursday Homeowner Angle (10:00 CET — broad reach)
+
+```
+The Skissify use case I didn't plan for:
+
+Homeowners are telling Claude to sketch their renovation ideas.
+Then sharing the hand-drawn sketch with their contractor.
+Then updating the sketch in real time during the call.
+
+"Move the island 2 feet left and add a window above the sink."
+→ Updated sketch in 15 seconds.
+
+Nobody planned this use case. Zero developers in this workflow.
+
+#VibeDrawing
+```
+
+---
+
+### Twitter/X — Honest Numbers Tweet (Thursday evening, 20:00 CET)
+
+```
+48-hour honest update on Skissify:
+
+The data so far:
+→ [Fill with actual signups]
+→ [Fill with API calls]
+→ [Fill with PH votes]
+
+What's working: Reddit technical posts, Twitter demo threads
+What's not working: posting without a demo video (still haven't recorded it)
+
+The demo video is still the #1 remaining leverage point.
+Planning to record Thursday evening.
+
+#BuildInPublic
+```
+
+---
+
+### r/LocalLLaMA — Post (NEW HIGH PRIORITY)
+
+```
+Title: I built a REST API so local LLMs can output floor plans and diagrams — here's the Excalidraw comparison
+
+If you've tried to get a local LLM to produce visual diagrams via Excalidraw JSON: it's painful. Excalidraw's internal format isn't a stable render API. You can't render it server-side without a headless browser. The output is fragile.
+
+I built Skissify for exactly this use case. JSON in → hand-drawn SVG out. No auth. Self-hostable with Docker.
+
+The LLM-friendly manifest is simple:
+- Element types: rect, circle, line, door-symbol, stair, window, etc.
+- Coordinate system is explicit and LLM-readable
+- Llama 3 70B generates valid manifests at ~87% accuracy on first try
+
+For a fully local stack:
+git clone [repo]
+docker compose up
+# → POST to http://localhost:3000/api/render
+
+I've been testing with Ollama + Llama 3. System prompt that works well is in the GitHub README.
+
+Curious if anyone here has tried other models (Mistral, Qwen, DeepSeek) for floor plan generation — I'd love benchmark comparisons.
+
+skissify.com | self-hosting docs at skissify.com/docs/self-hosting
+```
+
+---
+
+### r/ChatGPT — Post (NEW — 4M members)
+
+```
+Title: I told ChatGPT/Claude to sketch my apartment floor plan — it actually did
+
+With a free tool called Skissify MCP connected, just describe the layout:
+
+"Sketch a 2-bedroom apartment, roughly 60m2. Living room in the center, kitchen along the north wall, two bedrooms on the south side. One bathroom between them."
+
+You get a hand-drawn SVG sketch back — labeled rooms, furniture symbols, doors and windows. Takes 20 seconds.
+
+No design tool. No CAD. Just describing in plain English.
+
+The connection setup takes about 2 minutes: skissify.com/docs/mcp-setup
+
+(Also works with a simple browser editor at skissify.com if you don't want to mess with config files.)
+```
+
+---
+
+### YouTube Shorts — Script (Queue with demo video recording)
+
+```
+[0:00–0:03] Text on screen: "What if your AI could actually draw?"
+[0:03–0:10] Screen: Claude Desktop open. User types: "Sketch a 2-bed apartment"
+[0:10–0:18] Claude constructs JSON, calls Skissify MCP tool
+[0:18–0:25] Hand-drawn floor plan renders — wobbly walls, furniture, labels
+[0:25–0:28] Text: "30 seconds. No design tool. Free."
+[0:28–0:30] Text: "skissify.com" + "npx skissify-mcp"
+Caption: AI can draw now. #VibeDrawing #AIGotHands #FloorPlan
+```
 
 ---
 

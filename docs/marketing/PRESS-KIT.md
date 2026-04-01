@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 98 (Day 2 Evening — Enhanced)*
+*Last updated: April 2, 2026 — Cycle 99 (Day 2/3 Transition — Community Research + New Blog Posts)*
 
 ---
 
@@ -351,6 +351,9 @@ Sketch data stored on-platform is owned by the user.
 | AI Engineer Discord | Discord | — | Visual output layer for agent stacks |
 | Dev.to | Blog | — | Technical tutorial + blog syndication |
 | Hashnode | Blog | — | Cross-post canonical blog posts |
+| r/LocalLLaMA | Reddit | 266K+ | Self-hostable, LLM-native, floor plan benchmark |
+| r/ChatGPT | Reddit | 4M | Homeowner use case + no-code floor plans |
+| r/learnprogramming | Reddit | Large | Beginner MCP tutorial, first AI tool project |
 
 ### Tier 3 — Niche but converting
 | Community | Platform | Size | Angle |
@@ -369,6 +372,15 @@ Sketch data stored on-platform is owned by the user.
 | Ben's Bites | 100K AI builders | "AI got hands" narrative |
 | The Rundown AI | 300K | Visual output as missing AI primitive |
 | Bytes.dev | Developer-focused | REST API + architectural use case |
+| The Batch (deeplearning.ai) | ML engineers | Floor plan benchmark + LLM accuracy data |
+| Indie Hackers newsletter | Founders | API-first free tier as acquisition engine |
+
+### New Blog Assets (Cycle 99)
+| Blog Post | File | Angle | Publish On |
+|-----------|------|-------|------------|
+| Why Hand-Drawn Beats Figma (Stakeholder Meeting) | `blog/why-hand-drawn-beats-figma-day3-thursday-angle.md` | PM/design team, Thursday meeting angle | Dev.to, Hashnode |
+| How AI Agents Draw Floor Plans (Homeowner Guide) | `blog/how-ai-agents-draw-floor-plans-the-homeowner-guide.md` | Non-developer, r/HomeImprovement, r/ChatGPT | skissify.com/blog |
+| Skissify vs Excalidraw (r/LocalLLaMA Verdict) | `blog/skissify-vs-excalidraw-the-localllama-verdict.md` | Local LLM, self-hosting, API-first | r/LocalLLaMA, Dev.to |
 
 ---
 
