@@ -2,6 +2,35 @@
 
 ---
 
+## Entry: 2026-04-02 — Automated Strategy Run #101 (Late Night, ~23:38 CET)
+
+### Theme: Enterprise Validates the AI→Visual Pipeline — Skissify's Missing Integration Story
+
+#### What Would Make Someone Pay EUR 2 for Skissify — New Framework
+
+Three distinct triggers discovered this cycle:
+
+**Trigger A: The Excalidraw Refugee**
+Developer hits GitHub Issue #10946 (REST API for Excalidraw+). Finds it unscheduled. Googles "excalidraw REST API alternative." Finds Skissify. POST /api/render works headlessly. Pays EUR 2 starter bundle to test in production. Converts to EUR 5/mo Pro when they hit 1,000 renders.
+
+**Trigger B: The Enterprise Pipeline Builder**
+Developer read about Microsoft's Architecture Review Agent (Azure OpenAI + Excalidraw MCP). Tries to replicate it but needs stateless output for their serverless architecture. Excalidraw MCP requires a browser session — incompatible. Finds Skissify via "headless diagram API" search. EUR 5/mo Pro is approved by their manager (below expense threshold). Scales to Team or API overage within 30 days.
+
+**Trigger C: The tldraw Computer User**
+Builds a visual AI workflow in tldraw computer. The final step needs to output a hand-drawn architectural sketch. Googles "tldraw export hand-drawn SVG API." Finds Skissify's integration post. Pays EUR 2 to try it. Keeps coming back because their AI workflow uses it automatically.
+
+**Common thread**: All three triggers require Skissify to be discoverable at the exact moment of need. Blog post SEO and MCP registry presence are the infrastructure. Without them, none of these triggers fire.
+
+#### MCP Linux Foundation — Long-Term Bet Confirmed Safe
+
+MCP TypeScript SDK donated to Linux Foundation (Q1 2026). This eliminates the "what if Anthropic deprecates MCP" risk entirely. Skissify's MCP server is now a permanent infrastructure investment, not a bet on a proprietary protocol. Priority escalated: MCP registry submission is now "infrastructure hygiene" not "growth hack."
+
+#### Developer Tool Pricing — $19/mo Is the Anchor
+
+GitHub Copilot anchors the developer tool subscription market at $19/month. Every developer who pays for Copilot has already internalized "this is what AI tools cost." Skissify's EUR 5/mo is significantly below this anchor — the risk is underpricing, not overpricing. Consider a EUR 9/mo Pro tier with cleaner limits (5,000 renders + full API access) to capture more value from developers who are pre-qualified by paying for Copilot. EUR 5/mo leaves money on the table.
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #100 (Night, ~22:30 CET)
 
 ### Theme: The Excalidraw REST API Gap Is Skissify's Confirmed Moat + Credit Model Normalization

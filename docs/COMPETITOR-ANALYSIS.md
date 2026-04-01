@@ -2,6 +2,70 @@
 
 ---
 
+## Update: 2026-04-02 — Automated Strategy Run #101 (Late Night, ~23:38 CET)
+
+### Status: 7 topics researched. NEW: Microsoft open-source Architecture Review Agent (Feb 2026) uses Excalidraw MCP — enterprise validation of AI→visual pipeline at scale. tldraw AI Image Pipeline template confirms SDK-4.0 agentic push. MCP TypeScript SDK donated to Linux Foundation — protocol longevity risk eliminated. Excalidraw added Custom AI Tokens + Presentation Waiting Room + Radar Charts in Q1 2026. Developer tool pricing sweet spot confirmed at $19-29/mo (GitHub Copilot anchors $19). JSON Crack / ToDiagram confirmed different lane (data-graph, not hand-drawn). Headless JSON→hand-drawn SVG API: uncontested confirmed for 101st consecutive scan.
+
+### Microsoft Architecture Review Agent — Enterprise Validation Signal (NEW — HIGH SIGNIFICANCE)
+
+**Source**: techcommunity.microsoft.com/blog/educatordeveloperblog/stop-drawing-architecture-diagrams-manually-meet-the-open-source-ai-architecture/4496271
+
+Microsoft shipped an open-source Architecture Review Agent (Feb 2026) that:
+- Takes architecture descriptions in any format → visual diagrams
+- Uses Azure OpenAI + Excalidraw MCP as the render layer
+- Is published in Microsoft Tech Community, not a side project
+
+**Why this matters**: Enterprise adoption of "AI agent + visual output tool" is confirmed at Microsoft scale. But the render layer is Excalidraw MCP (session-dependent, browser-required, ~3s cold start). If a developer builds on this pattern and hits Excalidraw's headless limitations, Skissify is the answer.
+
+**Opportunity**: Publish "Why Microsoft's Architecture Agent Uses Excalidraw — And When You Should Use Skissify Instead." Targets enterprise developers building on the Microsoft pattern who need headless, stateless rendering.
+
+**Threat assessment**: **LOW-MEDIUM** (validates the category; validates Excalidraw's lead; but Microsoft is not shipping a competing render API).
+
+### tldraw AI Image Pipeline Template (NEW — MEDIUM)
+
+**Source**: tldraw.dev/releases/v4.4.0, appdevelopermagazine.com/tldraw-sdk-4.0-release-new-starter-kits-and-licensing-model/
+
+tldraw SDK 4.0 shipped an "Image Pipeline" starter template — a visual node-based canvas for AI image generation workflows with typed port connections and a DAG execution engine. This is NOT a render API; it is a canvas for composing AI workflows.
+
+**Skissify positioning**: tldraw's image pipeline produces AI images from prompts via nodes. Skissify produces hand-drawn SVG from JSON. These are complementary: a tldraw workflow node could call POST /api/render as its output step. "tldraw computer → Skissify render" as a documented integration is a legitimate distribution play.
+
+**Threat assessment**: **MEDIUM** — tldraw is pulling AI developers into its canvas ecosystem. They need a render output layer; Skissify can be it.
+
+### MCP Linux Foundation Donation — Protocol Risk Eliminated
+
+**Source**: blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/, thenewstack.io/model-context-protocol-roadmap-2026/
+
+MCP TypeScript SDK donated to Linux Foundation. 97M monthly downloads confirmed. 6,400+ servers in registry.
+
+**Skissify implication**: MCP foundation risk (Anthropic controls it) is now structurally eliminated. Skissify's bet on MCP as distribution is now a bet on a neutral, foundation-governed protocol. Long-term viability confirmed. MCP server investment should be prioritized as a permanent distribution channel, not a trend to monitor.
+
+### Excalidraw Q1 2026 Feature Audit
+
+**Source**: plus.excalidraw.com/changelog, github.com/excalidraw/excalidraw/releases
+
+New in Q1 2026:
+- **Custom AI Tokens** — users plug in own Claude/OpenAI/Gemini API keys for AI features
+- **Presentation Waiting Room** — admit/deny participants
+- **Radar Charts** (multi-series data)
+- **25x faster shape indicator rendering** via 2D canvas
+- **Worker-offloaded slide previews**
+
+**Threat assessment**: Custom AI Tokens is the most significant signal. Excalidraw is positioning as a bring-your-own-AI frontend — users who bring their own Claude key will expect Claude to generate Excalidraw diagrams. This reinforces Excalidraw MCP's lead AND creates a user cohort that will eventually want headless output. GitHub Issue #10946 (REST API request) is from this same cohort.
+
+### Updated Competitor Matrix (Run #101 — Wednesday April 1, late night)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw+** | Official MCP (26 tools, Anthropic partnership). Custom AI Tokens live. NO REST API (GH Issue #10946). Microsoft uses it in Architecture Agent. | **HIGH — REST gap is confirmed moat** |
+| **tldraw** | SDK 4.0. AI Image Pipeline template. "computer" (Gemini 2.0 Flash). No render API. | **MEDIUM-HIGH** |
+| **Figma** | In official MCP registry. No hand-drawn or JSON-manifest API. | Low |
+| **Kroki** | REST API for text→diagram (no hand-drawn). Closest API analogue. | **MEDIUM** |
+| **Microsoft ArchReview Agent** | Open source. Uses Azure OpenAI + Excalidraw MCP. Validates enterprise AI→visual pipeline. | Low (validates category) |
+| **JSON Crack / ToDiagram** | JSON→data graph diagrams. No hand-drawn, different visual lane. | Low |
+| **Skissify** | Headless JSON→hand-drawn SVG API: uncontested. MCP registry: absent. | **Uncontested in headless spatial lane** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #100 (Night, ~22:30 CET)
 
 ### Status: 6 topics researched. CRITICAL: Excalidraw MCP is now OFFICIALLY launched (26 tools, Anthropic partnership). GitHub Issue #10946 CONFIRMS no REST API for Excalidraw+ — this is Skissify's proven lane. Google Cloud launched fully-managed remote MCP servers across all GCP services — MCP is enterprise-validated. Credit model adoption +126% YoY (79/500 top SaaS use credits, up from 35 in 2024). The Register March 31: "usage-based billing muddles pricing" — buyer confusion is an opportunity. JSON→hand-drawn API: zero competition confirmed. dAIgram/DiagramGPT/Sketch2Scheme all in sketch-to-digital lane (different category). Kroki is the closest REST-API analogue but outputs technical styles only.

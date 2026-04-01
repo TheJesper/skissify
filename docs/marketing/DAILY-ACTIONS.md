@@ -2,6 +2,52 @@
 
 ---
 
+## 2026-04-02 — Strategy Run #101 Actions (Late Night, April 1, ~23:38 CET)
+
+### Context: Run #101 Key New Findings
+- **Microsoft Architecture Review Agent** (Feb 2026) = enterprise validation of AI→visual pipeline, uses Excalidraw MCP (session-dependent) — opens "enterprise headless" positioning for Skissify
+- **tldraw AI Image Pipeline template** = tldraw is building for agentic workflows; their users need a render output layer (opportunity)
+- **MCP donated to Linux Foundation** = MCP registry investment is permanent infrastructure, not a trend
+- **Developer tool pricing anchor: $19/mo** (GitHub Copilot) — Skissify's EUR 5/mo may be significantly underpriced
+
+---
+
+### Action 1 (CRITICAL — April 2, first thing): MCP Registry Submission (Carry-Over + New Urgency)
+
+This has been flagged every run. Linux Foundation donation confirms MCP is permanent infrastructure. Microsoft Architecture Agent validates enterprise discovery via MCP. Every day absent = compounding missed discovery.
+
+**Steps** (2 hours):
+1. Official registry: github.com/modelcontextprotocol/registry — tags: visual, architecture, floor-plan, hand-drawn, JSON, SVG
+2. Glama.ai + mcp.so + pulsemcp.com — complete all metadata for Grade A
+3. Description: "POST a JSON manifest → receive a hand-drawn SVG. Architectural sketches, floor plans, napkin diagrams. Headless. Stateless. No browser. No session."
+
+---
+
+### Action 2 (HIGH — April 2): Write "Why Microsoft's Architecture Agent Chose Excalidraw — And When to Use Skissify"
+
+The Microsoft Architecture Review Agent (Feb 2026, open-source) validates that enterprise developers are building AI→visual pipelines NOW. They chose Excalidraw MCP. Enterprise devs building on this pattern will hit the headless limitation. This post captures them at that moment.
+
+**Steps** (1.5 hours):
+1. 500-word post: "Microsoft's agent is great. But it requires a browser session for rendering. Here's when you need headless instead."
+2. Sections: What the Microsoft agent does → Why Excalidraw MCP is session-dependent → What headless rendering means → Skissify's POST /api/render → 5-line code diff
+3. Publish to Skissify blog + dev.to
+4. SEO targets: "headless diagram API", "excalidraw alternative serverless", "architecture diagram API"
+
+---
+
+### Action 3 (MEDIUM — April 2): A/B Test EUR 9/mo Pro Tier Copy on Pricing Page
+
+GitHub Copilot anchors developer tools at $19/mo. Skissify's EUR 5/mo may be significantly underpriced for developers who are pre-qualified buyers (Copilot subscribers). Test a EUR 9/mo Pro variant with better limits (5,000 renders instead of 1,000) to capture more value without adding friction.
+
+**Steps** (30 min):
+1. Add a "Pro+" or "Builder" tier at EUR 9/mo to the pricing page (visually prominent, positioned between Pro and Team)
+2. Limits: 5,000 renders/mo, full API access, 3 seats, no watermark
+3. Messaging: "Built for developers who build with AI. 5,000 renders/month. Full API."
+4. Keep EUR 5/mo Pro visible — let users self-select
+5. Track which converts better over 7 days
+
+---
+
 ## 2026-04-02 — Strategy Run #100 Actions (Night, April 1, ~22:30 CET)
 
 ### Context: Run #100 Key Findings
