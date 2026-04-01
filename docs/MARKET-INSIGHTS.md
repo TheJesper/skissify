@@ -2,6 +2,44 @@
 
 ---
 
+## Entry: 2026-04-01 — Automated Strategy Run #94 (09:16 CET)
+
+### Theme: Predictable Pricing as a Moat, the Chromium Workaround Signal, and Enterprise MCP Scale
+
+#### "Unexpected AI Charges" Are a Market Pain — Skissify's EUR 0.005/Render Is the Antidote
+
+78% of IT leaders report unexpected charges from AI consumption-based pricing. 61% have cut projects due to unplanned SaaS cost increases. This is the dominant budget anxiety for anyone buying AI tools in 2026. Skissify's per-render pricing is one of the most transparent models in the category: 1 render = EUR 0.005, always. No token spikes, no workflow step ambiguity, no surprise overage invoices.
+
+**Why someone pays EUR 5/mo from this**: A developer or team evaluating "hand-drawn sketch API" will compare Skissify's EUR 5/mo (1,000 renders included, clear overage) against the budget uncertainty of other AI tools. Skissify is the predictable line item. At EUR 5/mo, it barely shows up on a department's AI spend report — but the value (client-ready sketches, automated floor plan renders, agent visual output) is concrete. The psychological sale is "I know exactly what this will cost."
+
+**Pricing page copy implication**: Lead with certainty. "200 floor plan renders = EUR 1.00. Know your costs before you deploy." This directly addresses the 78% who've been burned by unpredictable AI billing.
+
+#### The `excalidraw-render` Hack Proves the Market Exists — And That Skissify Is the Right Solution
+
+A community project emerged that wraps Excalidraw in a Chromium/Puppeteer process to enable server-side headless sketch rendering. Developers built this because they needed headless sketch rendering and no clean solution existed. The hack works but requires running a full Chromium process, has slow cold-start, is fragile, and has no architectural elements.
+
+**Why someone pays EUR 5/mo from this**: The developer who found `excalidraw-render` and got it working is the exact Skissify customer. They've already proven they have the problem (need headless sketch in a pipeline), already proven they'll invest engineering time to solve it, and already proven the Excalidraw path is painful. Skissify is the professional solution to the problem they already have. The conversion pitch: "You spent 3 hours setting up a Chromium server to hack Excalidraw into a headless renderer. Or: POST JSON to Skissify's API. EUR 5/mo."
+
+**Community distribution angle**: Search for `excalidraw-render` users on GitHub Issues, Dev.to, and Stack Overflow. These are warm leads who have already validated the problem. A targeted blog post or comment pointing to Skissify as the clean solution costs nothing and reaches exactly the right audience.
+
+#### Enterprise MCP Is Production-Ready — Pinterest at 66K Invocations/Month Is the Proof Point
+
+Pinterest runs 66,000+ MCP invocations per month internally, saving ~7,000 hours/month. MCP is no longer experimental — it's production infrastructure at enterprise scale. The 97 million monthly SDK downloads confirm this is a platform with real adoption velocity.
+
+**Why someone pays EUR 5/mo from this**: Enterprise MCP users don't blink at EUR 5/mo. Their concern is reliability, documented APIs, and SLA. Skissify needs to signal enterprise-readiness: uptime stats, API versioning, response time guarantees, clear SLA language in the Pro/Team tier. At EUR 5/mo, Skissify is already priced for individual developers — but communicating enterprise-grade reliability converts teams and small companies who will upgrade to Team/Enterprise tiers.
+
+**Strategic implication**: Add a "built for pipelines" reliability signal to the landing page. Not marketing fluff — concrete: "99.9% uptime," "p95 < 200ms render," "versioned API," "no breaking changes without notice." These signals differentiate Skissify from hobby projects and community hacks.
+
+#### ArkDesign.ai — New Named Embed Partner Lead
+
+ArkDesign.ai positions as the first AI for architectural schematic optimization (US code compliance, density, profitability for real estate developers). Their output is structured technical data for investors. They have 1M+ floor plan generation tools as peers (Maket, etc.) and no visual sketch layer.
+
+**The embed pitch in one sentence**: "ArkDesign.ai generates the architectural data; Skissify renders it as a concept sketch for client and investor presentations — at EUR 500–2,000/year, it's a line item, not a budget conversation."
+
+**Concrete outreach approach**: Find the founder via LinkedIn or their contact page. Lead with: "Your users present to clients and boards — they need a concept sketch mode, not a technical schematic. Skissify renders your JSON output as hand-drawn architectural sketches. Let me show you in 10 minutes."
+
+---
+
 ## Entry: 2026-04-01 — Automated Strategy Run #93 (08:08 CET)
 
 ### Theme: Category Formation, Headless Moat, and the `.well-known` Discovery Window

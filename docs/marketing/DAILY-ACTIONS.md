@@ -2,6 +2,63 @@
 
 ---
 
+## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #94 (09:16 CET, Wednesday April 1)
+
+### Context: Run #94 Key Findings
+- **ArkDesign.ai** detected — new architectural AI SaaS, US code optimization, no sketch output → embed partner lead
+- **`excalidraw-render` community hack** identified — developers building Chromium wrappers to get headless sketch rendering → these are warm Skissify leads
+- **Enterprise MCP scale confirmed** — Pinterest 66K invocations/month, 97M SDK downloads/month globally
+- **Usage-based pricing anxiety** — 78% IT leaders hit unexpected AI charges → Skissify's transparent EUR 0.005/render is a positioning advantage
+
+---
+
+### 🎯 Action 1 (HIGH — Thursday): Find and Reach `excalidraw-render` Users — Warm Lead Outreach
+
+Developers who set up `excalidraw-render` (Chromium/Puppeteer headless hack) already have the exact Skissify problem. They invested time to solve it badly. Converting one of them to a paying user is the highest-leverage outreach possible.
+
+**Steps (30 min)**:
+1. Search GitHub for issues/PRs mentioning `excalidraw-render` or "excalidraw headless"
+2. Search Dev.to and Medium for posts about "headless excalidraw" or "excalidraw server-side render"
+3. Search Stack Overflow for "excalidraw headless rendering" questions
+4. On any thread where the hack is discussed: post a brief, helpful comment — "If you need a clean API for this (no Chromium required), check out Skissify — POST JSON, get hand-drawn SVG. EUR 5/mo."
+5. Do not be spammy — only reply where the question is genuinely solved by Skissify
+
+**Why this converts**: These users have already validated the problem, already invested effort, and already know the workaround is painful. Skissify is the upgrade they're looking for.
+
+---
+
+### 🎯 Action 2 (MEDIUM — Thursday): Cold Outreach to ArkDesign.ai
+
+ArkDesign.ai generates architectural schematics for investors and developers but lacks a visual sketch/concept export. Skissify is the exact presentation layer they're missing. One partnership = EUR 500–2,000/year recurring.
+
+**Steps (20 min)**:
+1. Visit arkdesign.ai — find contact email or founder LinkedIn
+2. Send ONE short cold email or LinkedIn message:
+   > Subject: Sketch export mode for ArkDesign — quick idea
+   >
+   > Your users present architectural schematics to clients and investors. Those audiences respond better to concept sketches than technical renders during ideation. Skissify renders JSON-based architectural data as hand-drawn sketches — same elements, concept aesthetic.
+   >
+   > Would a "Show as Sketch" export mode be useful to your users? Happy to show a demo in 10 minutes. [Skissify link]
+3. Keep it under 100 words. No pitch deck. One ask: a 10-minute demo.
+
+**Why this matters**: Maket.ai is a confirmed embed target (1M+ users), but ArkDesign.ai is smaller and more reachable. Getting an embed partnership with an architectural AI tool is a proof point for the entire embed revenue stream.
+
+---
+
+### 🎯 Action 3 (MEDIUM — Thursday): Add "Predictable Pricing" Signal to Landing Page / Pricing Section
+
+78% of IT leaders report unexpected charges from AI tools. This is the dominant budget anxiety in the market. Skissify's pricing is completely transparent — but the landing page doesn't say that explicitly.
+
+**Steps (20 min)**:
+1. Find the pricing section on skissify.com
+2. Add one line under the Pro tier: "200 renders/month = EUR 1.00 in overage. Know your costs before you deploy."
+3. Add one line under API pricing: "No token surprises. EUR 0.005 per render, always."
+4. Optional: Add a small callout box: "Predictable pricing — Unlike AI tools that bill by token or workflow step, every render costs the same."
+
+**Why this converts**: Developers evaluating sketch API options in 2026 have been burned by surprise AI bills. Calling out predictable pricing pre-empts their objection and shortens the decision cycle. This is a 20-minute copy change with real conversion impact.
+
+---
+
 ## 2026-04-02 (Thursday) — Updated by Automated Strategy Run #93 (08:08 CET, Wednesday April 1)
 
 ### Context: Run #93 Key Findings

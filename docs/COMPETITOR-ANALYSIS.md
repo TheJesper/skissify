@@ -2,6 +2,80 @@
 
 ---
 
+## Update: 2026-04-01 — Automated Strategy Run #94 (09:16 CET)
+
+### Status: Wednesday mid-morning scan — 4 topics researched. 🟢 NICHE CLEAN: No new headless JSON spatial sketch competitor found. ArkDesign.ai identified (new architectural AI, US code optimization, investor/developer segment) — potential embed partner, not a threat. Community project `excalidraw-render` (headless Chromium/Puppeteer workaround) detected but is fragile, unofficial, not a real API — reinforces Skissify's headless render moat. MCP enterprise adoption accelerating globally: Pinterest 66K invocations/month, 97M SDK downloads/month. Usage-based pricing reaching 62% of AI products by 2027 — Skissify's transparent EUR 0.005/render model is ahead of the curve and a selling point vs. unpredictable competitors. NICHE STATUS: 94 consecutive scans, spatial JSON headless sketch lane uncontested.
+
+### 🟢 ArkDesign.ai — New Architectural AI Entrant (Embed Partner Candidate)
+
+**Source**: arkdesign.ai (active in 2026)
+
+ArkDesign.ai describes itself as "the first AI solution for architectural schematic design" — focused on profitability optimization, density, and US zoning/code compliance for real estate developers and investors.
+
+Key characteristics:
+- **Input**: Site constraints + program requirements → optimized architectural schematics
+- **Output**: Data-driven schematic designs, US code-compliant, investor-ready reports
+- **Target user**: Real estate developers, investors, not architects doing client presentations
+- **No sketch aesthetic**: Output is structured/technical, not hand-drawn
+- **No MCP server**: Not in the MCP ecosystem
+- **Threat level**: Low — different job-to-be-done (optimization vs. visual presentation)
+
+**Skissify lane impact**: Positive — new embed partner candidate. ArkDesign.ai produces architectural data outputs that clients and boards need to review visually. A "show as sketch" export mode (hand-drawn concept render) is exactly the presentation layer ArkDesign.ai lacks. Partnership pitch: EUR 500–2,000/yr embed license enables their users to export any generated schematic as a hand-drawn concept sketch for investor presentations.
+
+**Escalate to MEDIUM if**: ArkDesign.ai adds a sketch/visual export mode or MCP server.
+
+### Community Project: `excalidraw-render` — Headless via Chromium (Not a Real API)
+
+**Source**: xgueret.github.io/en/posts/excalidraw_mcp/ (community write-up, 2026)
+
+A community project (`excalidraw-render`) enables "headless" Excalidraw rendering by spinning up a Chromium/Puppeteer instance server-side. Described as "a headless printer" where Claude Code builds JSON of Excalidraw elements, sends it to the server, and gets PNG/SVG back. First render takes several seconds while Chromium spins up.
+
+**Skissify lane impact**: Low. This is NOT an official API — it is a community workaround that:
+- Requires a running Chromium/Puppeteer process (not truly headless)
+- First render is slow (Chromium spin-up latency)
+- Not maintained by Excalidraw team
+- No architectural domain vocabulary (doors, windows, stairs, dimensions)
+- No JSON manifest schema — uses Excalidraw's internal element format
+- Not available as a hosted SaaS API
+
+**What this confirms**: Developers want headless sketch rendering badly enough to build Chromium wrappers around browser apps. Skissify's native headless render API is the professional solution to the problem this hack is solving. Use in positioning: "Skissify vs. running Chromium around Excalidraw — same result, 100x less infrastructure."
+
+### MCP Enterprise Adoption — Scale Benchmarks (April 2026)
+
+**Source**: medium.com/pinterest-engineering (March 2026), use-apify.com/blog/mcp-standard-ecosystem-2026
+
+Pinterest's internal MCP ecosystem: 66,000+ invocations/month, delivering ~7,000 hours of time saved monthly. Global: 97 million SDK downloads/month (Python + TypeScript). Enterprise adoption in 2026 is moving from experimentation to production.
+
+**Skissify lane impact**: Positive validation. MCP is not a niche protocol anymore — enterprises are running it at scale. A sketch render tool in the MCP ecosystem in April 2026 is positioning in front of a production-grade enterprise wave, not an experimental community.
+
+**EUR 5/mo conversion angle**: At Pinterest's scale (66K invocations/month), any MCP tool used 1,000+ times/month becomes infrastructure. Skissify at EUR 5/mo for 1,000 renders is infrastructure-grade pricing. That's the frame for converting agent builders: "At this scale, EUR 5/mo is noise."
+
+### Usage-Based Pricing Validation — 62% of AI Products by 2027
+
+**Source**: flexprice.io/blog/why-ai-companies-have-adopted-usage-based-pricing, pymnts.com/news/artificial-intelligence/2026/ai-moves-saas-subscriptions-consumption
+
+78% of IT leaders report unexpected charges from AI consumption-based pricing. 61% cut projects due to unplanned SaaS cost increases. Usage-based pricing will account for 62% of all AI product pricing strategies by 2027.
+
+**Skissify lane impact**: Positive — and actionable on positioning. The market pain is "unpredictable AI pricing." Skissify's EUR 0.005/render is completely predictable: 1,000 renders = EUR 5. No surprise bills. This is a differentiator worth calling out explicitly on the pricing page and in any blog post about cost management.
+
+**Conversion hook**: "Unlike AI tools that bill by token or workflow step, Skissify charges EUR 0.005 per sketch. 200 floor plan renders = EUR 1.00. You know exactly what you're getting."
+
+### Updated Competitor Matrix (Run #94 — Wednesday April 1, 09:16 CET)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw** | Official MCP server live. Community `excalidraw-render` hack for headless (Chromium-based, fragile). No JSON manifest, no spatial elements. | **MEDIUM** |
+| **Sketch (design app)** | Official MCP server (March 25, 2026). macOS-only, app-dependent. UI/UX lane. | Low |
+| **ArkDesign.ai** | **NEW: Architectural AI for US code compliance and profitability. No sketch aesthetic, no MCP. Embed partner candidate.** | **Low — embed partner opportunity** |
+| tldraw | SDK 4.3, cloud sync, $6K/yr SDK. SaaS pivot. | Low-Medium |
+| Frame0 | Hand-drawn wireframing MCP. UI/UX only. | Low |
+| Archy | 20+ diagram types via Mermaid MCP. Software architecture only. | Low |
+| ToDiagram | JSON/YAML/XML → interactive diagrams. No hand-drawn. | Low-Medium |
+| Maket.ai | v2 (zoning, HVAC, 3D renders). 1M+ users. No sketch, no MCP. | Low — embed partner |
+| **Skissify** | **94 scans clean. JSON-native spatial hand-drawn headless MCP: uncontested. Excalidraw-render hack validates the market need. Enterprise MCP adoption incoming.** | **Uncontested** |
+
+---
+
 ## Update: 2026-04-01 — Automated Strategy Run #93 (08:08 CET)
 
 ### Status: Wednesday morning scan — 5 topics researched. 🟡 NEW COMPETITOR: Sketch (the design app) launched official MCP server March 25, 2026 — design-tool-as-MCP-server pattern now confirmed across Excalidraw, Frame0, Sketch, Archy, and ToDiagram. Skissify still uncontested in spatial/floor-plan/JSON-headless lane. tldraw added cloud sync in early 2026 (SaaS pivot, high SDK cost drives devs to alternatives). Maket v2 launched Q1 2026 (1M+ users, zoning code, HVAC, material takeoffs) — embed partner opportunity strengthened. MCP Server Cards (`.well-known` auto-discovery) arriving in 2026 roadmap — Skissify must implement before launch. NICHE STATUS: 93 consecutive scans, spatial JSON headless sketch lane uncontested.
