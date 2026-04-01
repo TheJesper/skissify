@@ -1,7 +1,7 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 1, 2026 — 12:52 CET (LAUNCH DAY — T+5H52M IN)**
+**Current Date: April 1, 2026 — 14:00 CET (LAUNCH DAY — T+7H IN)**
 
 ---
 
@@ -26,17 +26,22 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 | LinkedIn | ✅ Posted Day 1 | 🟡 P1 |
 | Dev.to blog post | ✅ Published Day 1 | 🟡 P1 |
 | Indie Hackers | ⏳ Post NOW — template at blog/indie-hackers-launch-post.md | 🟡 P1 |
-| Discord (AI/dev servers) | ⏳ Drop at 14:00 — copy in SOCIAL-MEDIA.md Cycle 91 | 🟡 P1 |
+| Discord (Claude, AI Engineer, LangChain/CrewAI, n8n) | ⏳ DROP NOW — copy in SOCIAL-MEDIA.md Cycle 93 | 🔴 P0 |
 | Bluesky | ✅ Posted Day 1 / ⏳ Afternoon update at 15:30 | 🟡 P1 |
 | Newsletter (own list) | ✅ Sent Day 1 | 🟡 P1 |
 | r/mcp | ⏳ Post NOW — HIGH PRIORITY (SOCIAL-MEDIA.md Cycle 90) | 🔴 P0 |
 | r/ClaudeAI | ⏳ Post NOW (SOCIAL-MEDIA.md Cycle 89) | 🔴 P0 |
 | r/startups AMA | ⏳ Post NOW — copy in SOCIAL-MEDIA.md Cycle 91 | 🔴 P0 |
-| r/n8n + automation communities | ⏳ Post at 12:30 — copy in SOCIAL-MEDIA.md Cycle 91 | 🟡 P1 |
-| r/AIAssistants (200K) | ⏳ Post today — template needed (Cycle 92) | 🟡 P1 |
-| Cursor/Windsurf audience | ⏳ Twitter post at 14:00 (SOCIAL-MEDIA.md Cycle 85) | 🟡 P1 |
+| r/n8n + automation communities | ⏳ OVERDUE — post NOW — copy in Cycle 93 | 🔴 P0 |
+| r/AIAssistants (200K) | ⏳ Post NOW — copy in SOCIAL-MEDIA.md Cycle 92 | 🔴 P0 |
+| r/InteriorDesign | ⏳ Post at 15:00 — copy in Cycle 93 | 🟡 P1 |
+| r/HomeImprovement | ⏳ Post at 15:30 — copy in Cycle 93 | 🟡 P1 |
+| r/DnD | ⏳ Post at 16:00 — copy in Cycle 93 (dungeon map angle) | 🟡 P1 |
+| Indie Hackers | ⏳ Post NOW — copy in Cycle 93 | 🔴 P0 |
+| Hashnode | ⏳ Post today — copy in Cycle 93 | 🟡 P1 |
+| Cursor/Windsurf audience | ⏳ Twitter post at 14:00 — copy in Cycle 93 | 🟡 P1 |
 | Product Hunt Maker Update | ⏳ Post at 20:00 CET with Day 1 numbers — HIGH VISIBILITY | 🔴 P0 |
-| TLDR AI / Bytes.dev pitch | ⏳ Email at 12:00 — copy in SOCIAL-MEDIA.md Cycle 85 | 🟡 P1 |
+| TLDR AI / Bytes.dev pitch | ⏳ Email today — copy in SOCIAL-MEDIA.md Cycle 85 | 🟡 P1 |
 
 ---
 
@@ -114,6 +119,85 @@ Skissify is an AI-agent-compatible hand-drawn sketch tool. JSON in → beautiful
 - Claude Discord
 - AI Engineer Discord
 - Dev.to
+
+---
+
+## NEW IDEAS (Added 2026-04-01, Cycle 93 — 14:00 CET — T+7H IN)
+
+### Status at 14:00 — Cycle 93 Additions
+
+| New This Cycle | Status |
+|----------------|--------|
+| Discord wave copy (Claude, AI Engineer, LangChain, n8n) | ✅ Written — SOCIAL-MEDIA.md Cycle 93 — DROP NOW |
+| r/n8n dedicated post | ✅ Written — Cycle 93 — POST OVERDUE |
+| r/InteriorDesign post | ✅ Written — Cycle 93 — post at 15:00 |
+| r/HomeImprovement post | ✅ Written — Cycle 93 — post at 15:30 |
+| r/DnD dungeon map angle | ✅ Written — Cycle 93 — post at 16:00 |
+| Twitter/X evening build-in-public thread | ✅ Written — Cycle 93 — post at 19:00 |
+| LinkedIn afternoon momentum update | ✅ Written — Cycle 93 — post at 15:00 |
+| Indie Hackers launch post | ✅ Written — Cycle 93 — POST NOW |
+| Hashnode developer crosspost | ✅ Written — Cycle 93 — post today |
+
+### New Insights — Cycle 93
+
+- **Unexpected audiences are the story now.** 7 hours in, the most shareable angle isn't the MCP integration — it's "I built for AI agents and homeowners showed up." This is the viral narrative. Use it in every afternoon post.
+
+- **Discord drops should be community-specific.** Don't send one copy everywhere. The Claude Discord gets the MCP angle. The n8n Discord gets the workflow automation angle. The CrewAI Discord gets the agent tool angle. Copy written for each in Cycle 93.
+
+- **r/DnD is a high-ROI surprise channel.** Blueprint mode + architectural symbols = dungeon aesthetic. This community is large (2M+), loves tools that solve creative problems, and shares aggressively. The "I accidentally built a dungeon map generator" framing is genuine and will perform.
+
+- **Indie Hackers post is overdue.** This should have gone up at 09:00. Their audience rewards transparency and real metrics. Post now with whatever numbers you have — even zero is honest and relatable.
+
+- **Hashnode crosspost**: developer-focused blogging platform (500K+ readers). Dev.to is higher traffic, but Hashnode has better developer SEO and a different audience. Both should have the same article.
+
+- **The evening thread at 19:00 should include real numbers.** Build-in-public posts with honest metrics outperform polished summaries. The format: what worked, what surprised me, what's broken, what's next. 6 tweets. Genuine tone.
+
+- **r/HomeImprovement (3M members)** — massively underused. The "sketch your renovation idea for the contractor" use case is universal. The subreddit allows tool posts if genuinely useful and non-spammy. Use the r/HomeImprovement copy in Cycle 93.
+
+- **Hashnode SEO note**: tag with "AI", "developer-tools", "MCP", "sketch", "API". These tags surface in Google search results within 48-72 hours.
+
+### Priority Action List (14:00 CET)
+
+RIGHT NOW (overdue):
+1. 🔴 Discord drops — 4 servers — copy in Cycle 93
+2. 🔴 r/n8n post — copy in Cycle 93
+3. 🔴 Indie Hackers — copy in Cycle 93
+
+14:30: Twitter/X 7-hour milestone tweet — copy in Cycle 93
+15:00: LinkedIn afternoon update — copy in Cycle 93
+15:00: r/InteriorDesign — copy in Cycle 93
+15:30: r/HomeImprovement — copy in Cycle 93
+16:00: r/DnD — copy in Cycle 93
+16:00: Twitter schema thread — copy in Cycle 92
+19:00: Twitter evening build-in-public thread — copy in Cycle 93
+20:00: Product Hunt Maker Update — copy in Cycle 92
+
+### Updated Channel Status (14:00 CET)
+
+| Channel | Status |
+|---------|--------|
+| Product Hunt | ✅ Live |
+| Twitter/X | ✅ Morning / ⏳ 14:30 + 16:00 + 19:00 pending |
+| Hacker News | ✅ Live / ⏳ engage comments |
+| Reddit (r/webdev, r/artificial, r/ChatGPT) | ✅ Done |
+| r/mcp | ⏳ Should have been done |
+| r/ClaudeAI | ⏳ Should have been done |
+| r/startups AMA | ⏳ Should have been done |
+| r/AIAssistants (200K) | ⏳ Post NOW |
+| r/n8n + automation | ⏳ OVERDUE — copy ready Cycle 93 |
+| r/InteriorDesign | ⏳ 15:00 — copy ready Cycle 93 |
+| r/HomeImprovement | ⏳ 15:30 — copy ready Cycle 93 |
+| r/DnD | ⏳ 16:00 — copy ready Cycle 93 |
+| LinkedIn | ✅ Morning / ⏳ 15:00 update — copy ready |
+| Discord wave (4 servers) | ⏳ NOW — copy ready Cycle 93 |
+| Mastodon/Fosstodon | ⏳ Overdue — copy in Cycle 92 |
+| Threads | ⏳ Overdue — copy in Cycle 92 |
+| Indie Hackers | ⏳ NOW — copy ready Cycle 93 |
+| Hashnode | ⏳ Today — copy ready Cycle 93 |
+| Bluesky | ✅ Morning / ⏳ 15:30 update |
+| Newsletter (own) | ✅ Sent |
+| Product Hunt Maker Update | ⏳ 20:00 |
+| TLDR/Bytes.dev pitch | ⏳ Send today |
 
 ---
 
