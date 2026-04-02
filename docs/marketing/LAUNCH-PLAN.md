@@ -1,7 +1,63 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2 — Day 2 Night / SHOW HN EVE (SEE CYCLE 119)**
+**Current Date: April 3 — Day 3 / SHOW HN DAY (SEE CYCLE 120)**
+
+---
+
+## NEW IDEAS (Added 2026-04-03 00:01 CET, Cycle 120 — Show HN Day)
+
+### Cycle 120 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Beats Figma — Show HN Edition" (fresh angle: the polish signal, wobble as communication tool, Show HN social proof) | `blog/why-hand-drawn-beats-figma-show-hn-day-cycle120.md` | ✅ Written — post to Dev.to / HN |
+| Blog: "How AI Agents Draw Floor Plans: Complete Technical Guide" (full JSON walkthrough, flat vs hierarchical benchmark data, REST API curl) | `blog/how-ai-agents-draw-floor-plans-cycle120.md` | ✅ Written — post to Dev.to + r/LocalLLaMA |
+| Blog: "Skissify vs Excalidraw: Why They're Not Competing" (sharpest version — human vs agent binary, API determinism, element type philosophy) | `blog/skissify-vs-excalidraw-show-hn-day-cycle120.md` | ✅ Written — post to Dev.to + r/webdev |
+| SOCIAL-MEDIA.md Cycle 120 (Show HN live engagement templates, Cursor community, Warp Terminal Discord, r/homeimprovement viral crossover, Perplexity answer targeting, Product Hunt Golden Kitty campaign, Claude Extensions submission copy, new hashtags: #SketchAPI #NapkinPhase #AgentOutput #DrawableJSON) | SOCIAL-MEDIA.md Cycle 120 | ✅ Written |
+| PRESS-KIT.md Cycle 120 update | PRESS-KIT.md | ✅ Updated |
+
+### Cycle 120 — Priority Actions for TODAY (April 3 — Show HN Day)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Show HN 09:00–11:00 CET** | 🔴 P0 — ANCHOR | 2 min |
+| **Post r/LocalLLaMA (2.3M)** — use `how-ai-agents-draw-floor-plans-cycle120.md` blog as anchor | 🔴 P0 OVERDUE | 5 min |
+| **Post MCP Discord #showcase** — OVERDUE — post immediately when Show HN goes live | 🔴 P0 OVERDUE | 5 min |
+| **Publish `how-ai-agents-draw-floor-plans-cycle120.md` to Dev.to** | 🔴 P0 — Show HN cross-traffic | 10 min |
+| **Submit DevHunt** — 7-day window, run in parallel to HN | 🔴 P0 | 10 min |
+| **Submit Claude Extensions showcase** — Cycle 120 copy | 🔴 P0 — NEW, permanent | 5 min |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | 🔴 P0 OVERDUE | 5 min |
+| **Submit Smol Launch** — OVERDUE | 🔴 P0 OVERDUE | 10 min |
+| **Engage every HN comment within 15 min** — Cycle 120 engagement templates | 🔴 P0 ongoing | ongoing |
+| **Cursor Discord** — Cycle 120 copy | 🟡 P1 | 3 min |
+| **Post r/homeimprovement (2.9M)** — non-dev viral angle — Cycle 120 copy | 🟡 P1 — NEW | 5 min |
+| **Publish `skissify-vs-excalidraw-show-hn-day-cycle120.md` to Dev.to** | 🟡 P1 | 10 min |
+| **Publish `why-hand-drawn-beats-figma-show-hn-day-cycle120.md` to Dev.to** | 🟡 P1 | 10 min |
+| **Post r/webdev (1.1M)** — `vs-excaladraw` blog as entry point | 🟡 P1 OVERDUE | 5 min |
+| **RECORD DEMO VIDEO** — P0 FOREVER | 🔴 P0 | 20 min |
+
+### Cycle 120 — New Channels/Angles
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| Cursor Discord | Power developer audience building AI features. MCP/Claude overlap is very high. Cycle 120 copy ready. | 🔴 P0 |
+| r/homeimprovement (2.9M) | Largest floor plan use case audience that is NOT developers. They use the visual editor, not API. Viral potential for real estate / renovation angle. Never posted. | 🟡 P1 |
+| Claude Extensions (Anthropic) | Official Anthropic showcase channel for MCP tools. Permanent discoverability. Simple submission. | 🔴 P0 — submit today |
+| Perplexity answer targeting | Perplexity serves answers to "can AI draw floor plans?" — create content that becomes the source. Two target posts identified in Cycle 120. | 🟡 P1 |
+| Warp Terminal Discord | Terminal-first power devs who use AI heavily. Skissify is a natural fit. | 🟡 P1 |
+| Product Hunt Golden Kitty | Plant awareness for end-of-year awards. Post appears in Golden Kitty nomination period. | 🟡 P1 |
+| r/artificialintelligence (1.5M) | Large general AI audience, never posted. Less targeted than r/LocalLLaMA but high volume. | 🟡 P1 |
+
+### Cycle 120 — Strategic Insight (Show HN Day)
+
+**The engagement velocity in the first 2 hours determines HN ranking.** Every minute without a response to an HN comment costs position. The Cycle 120 engagement templates cover the 5 most common comment types — have these open in a browser tab when Show HN goes live.
+
+**r/homeimprovement is the untapped crossover.** 2.9 million people planning home renovations regularly look for floor plan tools. They don't care about JSON or MCP — they care about "I described my room, AI drew it." The Cycle 120 copy is written in non-developer language specifically for this audience.
+
+**The Claude Extensions channel is permanent.** Unlike reddit posts that fade, an official listing in Anthropic's tool showcase stays discoverable indefinitely. This is a 5-minute submission with long-tail value. Do it today while Show HN gives you credibility.
+
+**"The sketch is the API response"** — this framing landed well in early feedback. When agent builders see that the API returns a URL (not a blob, not a file download), it clicks. The URL is a first-class primitive. You can embed it, share it, version it. Lean on this in all Show HN responses.
 
 ---
 

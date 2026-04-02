@@ -1,7 +1,224 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 119 (Show HN Eve — final final pass. New: Farcaster/Warpcast copy (large crypto-dev crossover audience, never posted), Raycast community MCP copy, Zed editor community copy, DevHunt 7-day launch submission pack, GitHub README badge campaign copy, LinkedIn Newsletter format post (reaches ALL followers, not just feed), YouTube Shorts script variant (different pacing from TikTok), new hashtags: #VibeArchitecture #AgentDriven #DrawFirst #SketchAPI, new communities: Farcaster /dev, Raycast community, Zed Discord. 2 new blogs: "The Curl Test" trust-signal post, n8n/Make/Zapier automation guide. Strategy note: Farcaster devs have extremely high HN overlap — 15-min post there tonight before bed.)**
+**Last updated: April 3, 2026 — Cycle 120 (Show HN Day — Live. New: Cursor community copy, Warp Terminal Discord copy, Product Hunt Golden Kitty campaign copy, Perplexity AI answer targeting, Claude Extensions showcase copy, r/homeimprovement viral angle, Show HN live-thread engagement templates, "the sketch is the API response" positioning. New hashtags: #SketchAPI #NapkinPhase #AgentOutput #DrawableJSON. New communities: Cursor Discord, Warp Terminal community, r/homeimprovement (viral non-dev angle), Claude Extensions, Product Hunt Golden Kitty (Best AI Tool). Strategic note: Show HN is live NOW — all engagement goes to the HN thread first. Secondary channels amplify after HN gains traction.)**
+
+---
+
+## Cycle 120 — April 3, 2026 (Show HN Day — LIVE)
+
+### Show HN Engagement Templates (use within 15 min of each comment)
+
+*For technical questions about the JSON schema:*
+```
+Good question — the schema is intentionally flat (not hierarchical) because LLM success rates
+improve ~3:1 with flat structures. Flat JSON: 88-92% valid first attempt. Hierarchical: 61%.
+The model has less nesting debt to track.
+
+Full schema reference: skissify.com/for-agents
+```
+
+*For "why not just use DALL-E / image generation?":*
+```
+The key difference is determinism + editability. With Skissify, the same JSON always produces
+the same sketch. An agent can regenerate it, version it in git, or modify one element
+without touching the rest. DALL-E output is stochastic — you can't "change the bedroom
+to 180px wide" in a diff.
+```
+
+*For "how does the wobble work?":*
+```
+Three overlapping harmonics, not a simple sine wave. Each line gets a unique phase offset
+and amplitude derived from a seeded PRNG (seed = element ID + position). Same JSON = same wobble.
+
+The multi-harmonic approach avoids the "mechanical regularity" that makes single-frequency wobble
+look fake — you know how those cheap "hand-drawn" SVG effects all look the same? That's a single sine wave.
+```
+
+*For "is the source available?":*
+```
+The MCP server is open source: [GitHub link]
+The core renderer is currently closed. Happy to discuss open-sourcing the renderer
+if there's community interest — what would you use it for?
+```
+
+*For skeptics / "seems niche":*
+```
+Fair. Right now it's niche: people building AI agents that need visual output.
+But every month, more developers are building agents — and every one of them eventually wants
+their agent to produce something the user can see, not just read.
+The niche is growing fast.
+```
+
+---
+
+### NEW: Cursor Community Copy
+
+*Post to Cursor Discord #showcase or #tools after Show HN gains traction.*
+
+```
+Cursor users building AI features — just launched something you might find useful.
+
+Skissify gives your AI assistant the ability to draw. Not describe. Draw.
+
+MCP install: npx skissify-mcp
+
+In Cursor chat: "Create a system diagram for this architecture" → returns a hand-drawn
+diagram URL you can paste into your PR description or docs.
+
+Show HN today: [link]
+```
+
+---
+
+### NEW: Warp Terminal Community Copy
+
+*Post to Warp Discord or community forum. Warp users are power developers who use AI heavily in terminal.*
+
+```
+Warp developers — launched Skissify today on HN.
+
+skissify-mcp: give your AI assistant a drawing tool via MCP.
+
+Use case that resonates with terminal-first devs:
+You're designing a service. Ask Claude to sketch the architecture.
+Claude calls Skissify → returns a URL you can share in the PR.
+Architecture reviews with visual context, generated from code discussion.
+
+npx skissify-mcp | skissify.com
+```
+
+---
+
+### NEW: Product Hunt Golden Kitty Campaign
+
+*PH Golden Kitty awards "Best AI Tool" yearly. Start building the campaign now.*
+
+**Thread/post for Golden Kitty nomination:**
+
+```
+If Skissify has been useful for your AI agent work — we'd love a Golden Kitty nomination
+in the Best AI Tool / Developer Tool categories.
+
+What we shipped: the first sketch API built for AI agents.
+JSON in. Hand-drawn sketch out. MCP server so Claude can draw autonomously.
+
+Launch post: [PH link]
+Vote: [Golden Kitty nomination link when available]
+```
+
+---
+
+### NEW: r/homeimprovement Viral Angle
+
+*This is the non-developer crossover audience. 2.9M members. They care about floor plans, not JSON.*
+
+**Post title:** "I used AI to generate a floor plan sketch for my renovation — free tool (x-post from my other hobbies)"
+
+```
+I'm a developer, but I used a tool I built to generate a quick floor plan sketch for a
+home renovation I'm planning.
+
+Described the layout to Claude → it generated the sketch automatically → I forwarded
+the URL to my contractor.
+
+Tool is called Skissify. Free. No account required. You just describe what you want
+(or paste a simple layout description) and it draws a hand-drawn style sketch.
+
+Useful for: bathroom layouts, room arrangement ideas, kitchen redesigns.
+You don't need to know anything about JSON to use the visual editor at skissify.com
+
+[screenshot of a floor plan]
+```
+
+*Note: This is the highest-volume non-developer angle. r/homeimprovement users will use
+the human mode editor, not the API. Crosspost generates brand awareness + possible viral spread.*
+
+---
+
+### NEW: Perplexity AI Answer Targeting
+
+*Perplexity answers questions like "what tools let AI agents draw?" or "best JSON to sketch API".
+Ensure our content ranks for these queries.*
+
+**Target queries to create content for:**
+- "can Claude draw floor plans" → answer: yes, via Skissify MCP
+- "JSON to sketch API" → Skissify is the answer
+- "AI agent visual output tools 2026" → Skissify, Mermaid, D3 comparison
+- "how to add drawing to AI agent" → Skissify tutorial
+- "MCP server for sketches" → direct answer
+
+**Content to write (for Dev.to/personal blog, will be indexed by Perplexity):**
+- "What tools let AI agents draw in 2026?" (short, answer-format, very SEO-targeted)
+- "How to add visual output to your AI agent in 5 minutes" (tutorial format)
+
+---
+
+### NEW: Claude Extensions Showcase Copy
+
+*Anthropic highlights useful MCP servers. Submit for consideration.*
+
+**Submission copy:**
+
+```
+Tool: Skissify MCP
+Category: Visual Output / Productivity
+Install: npx skissify-mcp
+
+What it does: Enables Claude to generate hand-drawn sketches from natural language descriptions.
+Floor plans, system diagrams, wireframes — as shareable URLs.
+
+Use case example: "Design a 2-bedroom apartment, remote work optimized"
+→ Claude writes JSON → Skissify renders → returns sketch URL
+
+First MCP server designed specifically for agent-driven visual output.
+JSON-in, sketch-URL-out. Deterministic rendering, 150ms response.
+```
+
+---
+
+### New Hashtags — Cycle 120
+
+| Hashtag | Rationale | Use On |
+|---------|-----------|--------|
+| `#SketchAPI` | Nobody owns this yet. Skissify should own it. | Twitter/X, Bluesky |
+| `#NapkinPhase` | The early design exploration phase. Memorable, ownable. | Twitter/X, LinkedIn |
+| `#AgentOutput` | Describes the use case precisely — agents producing output | Developer communities |
+| `#DrawableJSON` | Technical audience. Novel framing. | Twitter/X, HN Show thread |
+| `#MCPserver` | High discovery, trending with Claude adoption | All platforms |
+
+---
+
+### Trending Communities — Cycle 120
+
+| Community | Why Now | Priority |
+|-----------|---------|---------|
+| Cursor Discord | Show HN day momentum — post within 2h of HN going live | 🔴 P0 |
+| r/homeimprovement (2.9M) | Non-developer crossover, viral floor plan potential | 🟡 P1 |
+| Warp Terminal community | Power dev audience, heavy AI usage | 🟡 P1 |
+| Claude Extensions page | Official Anthropic channel, permanent discovery | 🔴 P0 |
+| Product Hunt Golden Kitty | Plant the seed now for year-end award | 🟡 P1 |
+| Perplexity answer targeting | SEO play — create content that answers "can AI agents draw?" | 🟡 P1 |
+| r/artificialintelligence (1.5M) | Never posted. Large AI consumer audience. | 🟡 P1 |
+
+---
+
+### Cycle 120 — Show HN Day Priority Sequence
+
+*Execute in this order. Engagement velocity in first 2 hours determines HN ranking.*
+
+1. **[09:00 CET] Post Show HN** — copy in Cycle 113
+2. **[09:05 CET] Post first HN comment** — tech detail + success rates + "happy to answer"
+3. **[09:10 CET] Twitter tease** — "Show HN is live. Here's the thing I shipped 👇 [link]"
+4. **[09:15 CET] Farcaster /dev** — Cycle 119 copy (if not posted last night)
+5. **[09:30 CET] LinkedIn** — "We just posted Show HN. Here's the story."
+6. **[09:45 CET] MCP Discord #showcase** — OVERDUE, POST NOW
+7. **[10:00 CET] r/LocalLLaMA** — Cycle 116 copy — 2.3M members, never posted
+8. **[10:15 CET] DevHunt submission** — Cycle 119 pack
+9. **[10:30 CET] Cursor Discord** — Cycle 120 copy
+10. **[11:00 CET] Indie Hackers milestone** — OVERDUE, POST NOW
+11. **[11:30 CET] Smol Launch** — OVERDUE, POST NOW
+12. **Ongoing] Respond every HN comment** — within 15 minutes all day
 
 ---
 

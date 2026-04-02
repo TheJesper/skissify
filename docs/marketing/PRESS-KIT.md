@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 117 (Pre-Show-HN evening. 3 new blogs: deterministic wobble technical deep dive, "draw before you type" visual-first AI manifesto, Skissify vs Excalidraw API-first framing. SOCIAL-MEDIA.md Cycle 117: warm-up Twitter thread, HN engagement scripts, r/compsci wobble angle, Mastodon/Fosstodon, GitHub Discussions template, "draw before you type" concept hooks. Strategy: pre-HN warm-up window tonight.)*
+*Last updated: April 3, 2026 — Cycle 120 (Show HN Day — LIVE. Status update below. New: Claude Extensions showcase copy, Golden Kitty campaign prep, r/homeimprovement crossover angle. 3 new blogs: why-hand-drawn-beats-figma-show-hn-day-cycle120, how-ai-agents-draw-floor-plans-cycle120, skissify-vs-excalidraw-show-hn-day-cycle120. Key insight: "sketch is the API response" positioning resonates with agent builders.)*
 
 ---
 
@@ -66,6 +66,30 @@ Skissify is a sketch rendering API built for the age of AI agents. The tool acce
 - **Paper styles:** 4 (cream, white, graph, blueprint)
 - **LLM success rate:** 88–92% valid JSON floor plans on first attempt
 - **Price:** Free tier + €5/mo Pro
+
+---
+
+## Cycle 120 Status — April 3, 2026 (Show HN Day LIVE)
+
+| Item | Status |
+|------|--------|
+| Blog: "Why Hand-Drawn Beats Figma — Show HN Edition" (fresh angle: polish signal, wobble as communication tool, Show HN validation) | ✅ **NEW** — `blog/why-hand-drawn-beats-figma-show-hn-day-cycle120.md` — post to Dev.to / Hashnode today |
+| Blog: "How AI Agents Draw Floor Plans: Complete Technical Guide" (flat vs hierarchical schema benchmark, full JSON example, REST API curl) | ✅ **NEW** — `blog/how-ai-agents-draw-floor-plans-cycle120.md` — post to Dev.to + r/LocalLLaMA today |
+| Blog: "Skissify vs Excalidraw: Why They're Not Competing" (sharpest framing yet — human vs agent, determinism, API binary distinction) | ✅ **NEW** — `blog/skissify-vs-excalidraw-show-hn-day-cycle120.md` — post to Dev.to + r/webdev today |
+| SOCIAL-MEDIA.md Cycle 120 | ✅ **NEW** — Show HN engagement templates, Cursor community, Warp Terminal, r/homeimprovement, Perplexity targeting, Golden Kitty campaign, Claude Extensions |
+| New channels: Cursor Discord, Warp Terminal community, r/homeimprovement, Claude Extensions, Perplexity targets | ✅ **IDENTIFIED** — in SOCIAL-MEDIA.md Cycle 120 |
+| New hashtags: #SketchAPI #NapkinPhase #AgentOutput #DrawableJSON | ✅ **ADDED** |
+| LAUNCH-PLAN.md Cycle 120 | ✅ **DONE** |
+| MCP Discord #showcase | ⚠️ **OVERDUE since Cycle 111** — do NOW (Show HN live) |
+| r/LocalLLaMA (2.3M) | ⚠️ **OVERDUE** — do NOW |
+| Indie Hackers | ⚠️ **OVERDUE since Cycle 98** — do Show HN day |
+| Smol Launch | ⚠️ **OVERDUE since Cycle 111** — do Show HN day |
+| DevHunt | ⚠️ **OVERDUE from Cycle 119** — submit today |
+| Demo video | ⚠️ **P0 FOREVER** |
+| AlternativeTo | ⚠️ **OVERDUE** |
+| SaaSHub | ⚠️ **OVERDUE** |
+| Claude Extensions submission | ⚠️ **NEW — copy ready in SOCIAL-MEDIA.md Cycle 120** |
+| r/homeimprovement crossover post | ⚠️ **NEW — copy ready** — viral non-dev angle |
 
 ---
 
