@@ -2,6 +2,72 @@
 
 ---
 
+## [2026-04-02] — Strategy Run #109 Actions (Thursday April 2, evening)
+
+### Context: Run #109 Key New Findings
+- **Excalidraw+ official MCP** (Feb 2026): Browser session-based. Not headless. But occupies "hand-drawn + MCP" mindshare before Skissify is listed. New conversion trigger K created.
+- **tldraw v4.5.0** (March 2026): SVG sanitization + high-DPI. Watch for headless render path signals in next 2 releases.
+- **Sketch design tool MCP**: Enterprise channel now open via MCP. Different audience but signals enterprise adoption of MCP visual tools.
+- **Blueprint-MCP** (ArcadeAI): Code→architecture diagram via MCP. No overlap with Skissify today.
+- **11 active payment triggers identified**. Zero price resistance across all. Awareness is the only blocker.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 10th consecutive cycle): MCP Registry PR — Now Competing With Excalidraw
+
+**Excalidraw shipped official MCP in February 2026. They have the brand. They have the listing lead. Skissify is absent from every MCP directory for the 10th consecutive strategy run. The window is not just open — it is closing.**
+
+When a developer now searches "hand-drawn diagram MCP" or "whiteboard MCP tool", they find Excalidraw+. Excalidraw's MCP is browser-based (requires a session), but they won't read the fine print unless Skissify is in the same search results to create a comparison.
+
+**Steps (with Excalidraw MCP urgency framing)**:
+1. `github.com/modelcontextprotocol/registry` — PR with `skissify.json`
+2. Registry description must lead with: "Stateless hand-drawn SVG renderer. POST a JSON manifest → get back SVG. No browser. No session. No Chromium. Works in Lambda, CI/CD, Docker. Cold start: 0ms. Unlike Excalidraw's MCP, no running browser is required."
+3. Submit simultaneously to: glama.ai, pulsemcp.com, mcp.so, mcpservers.org, Cline marketplace (21st.dev)
+4. Add `.well-known/mcp.json` endpoint to skissify.com
+5. Create a comparison tweet: "Excalidraw's MCP requires an active browser session. Skissify's MCP is a stateless API. POST JSON, get SVG. No browser. No session. EUR 2/month. [link]"
+6. Create a Reddit post in r/mcp (or r/ClaudeAI) framing the distinction clearly
+
+**Time: 2-3 hours. Excalidraw's listing is the urgency trigger this needed for 10 cycles.**
+
+---
+
+### Action 2 (HIGH — tomorrow): "Excalidraw MCP vs Skissify MCP — Same Category, Opposite Architecture" Post
+
+**Excalidraw officially entering MCP means developers are now comparing tools in this category. A direct technical comparison post captures that evaluation traffic.**
+
+Target search queries: "excalidraw mcp vs alternatives", "hand-drawn diagram mcp headless", "excalidraw mcp serverless", "sketch renderer mcp api"
+
+**Post structure**:
+1. Hook: "Excalidraw just shipped MCP support. Here's what it does — and what it can't do."
+2. What Excalidraw MCP does: writes to interactive whiteboard sessions (great for collaborative design)
+3. What Excalidraw MCP doesn't do: headless rendering, serverless pipelines, stateless SVG output
+4. What Skissify MCP does: POST JSON → instant SVG, no session, no browser, any infrastructure
+5. Table: Excalidraw+ MCP ($7/user/mo, session-required) vs Skissify MCP (EUR 2/mo, stateless)
+6. Code snippet: 5-line Skissify API call vs Excalidraw session setup flow
+7. CTA: "If you need a whiteboard: Excalidraw. If you need a pipeline: Skissify."
+
+**Distribution**: dev.to, HN ("Ask HN: What's the right tool when you need headless hand-drawn diagram rendering?"), r/mcp, r/selfhosted
+
+**Why now**: Excalidraw's MCP launch is fresh news. Developers are evaluating it NOW. The comparison window is 2-4 weeks before the market settles on defaults.
+
+---
+
+### Action 3 (MEDIUM — this week): Monitor tldraw for Headless Render Path Signal
+
+**tldraw v4.5.0 added SVG sanitization (March 2026) — a feature that only matters if SVG output is being used in production contexts. This is the first signal that tldraw is thinking about headless SVG output. If the next 1-2 releases add a headless render path, Skissify's LOW-STABLE threat assessment upgrades to HIGH.**
+
+**Setup a monitoring trigger**:
+1. Watch `github.com/tldraw/tldraw/releases` via RSS or GitHub Watch (Releases only)
+2. Alert keywords to monitor in release notes: "headless", "server-side render", "Node.js renderer", "CLI", "SVG export API", "REST endpoint"
+3. If any of these appear: immediately escalate to competitive response mode
+4. Bonus: tldraw's `v3.15.6` (Feb 11) mentioned "license diagnostics" — monitor for any pricing change that lowers the $6K/yr barrier (would create new conversion pressure)
+
+**Why this matters**: tldraw has the technical talent and the React ecosystem to build a headless path quickly. The current absence is architectural choice, not technical limitation. SVG sanitization suggests they're thinking about it. A 30-minute monitoring setup now saves a reactive crisis later.
+
+**Time: 30 minutes. Set up GitHub Watch + keyword alert. Log in next strategy run.**
+
+---
+
 ## [2026-04-02] — Strategy Run #108 Actions (Thursday April 2, 15:24 CET)
 
 ### Context: Run #108 Key Findings

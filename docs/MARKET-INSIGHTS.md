@@ -2,6 +2,67 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #109 (Thursday April 2, evening)
+
+### Theme: Excalidraw Official MCP Launch — What It Changes for Skissify's EUR 2 Pitch
+
+#### Excalidraw Just Validated the MCP Distribution Channel — And Landed There Before Skissify
+
+Excalidraw+ shipped MCP support in February 2026. This is the most significant competitor move in 9 runs. What it means for Skissify's EUR 2/mo pitch:
+
+**The bad news**: Developers searching "hand-drawn whiteboard + MCP" will now find Excalidraw+ first. Brand recognition + February lead = Excalidraw occupies the mindshare before Skissify is listed. Every day without a Skissify MCP registry entry is compounding damage.
+
+**The good news**: Excalidraw's MCP is categorically different from what Skissify offers. Excalidraw MCP = write to an interactive whiteboard session. Skissify MCP = call a stateless render endpoint, get back SVG, done. The use cases don't overlap:
+- Excalidraw MCP: "Open my whiteboard and add a node" (session-based, browser-required)
+- Skissify MCP: "Render this floor plan JSON as SVG" (pipeline-safe, serverless, no session)
+
+**The EUR 2 conversion insight this creates**: A developer evaluating Excalidraw+ ($6–7/user/month) for programmatic rendering will hit two walls: (1) needs a browser session running, (2) can't use in CI/CD or serverless. Skissify solves both for EUR 2/mo — **less than one-third the price of Excalidraw+, no browser required, works in any pipeline context.** The comparison that converts: "Excalidraw+ = $7/user/month and requires a browser. Skissify = EUR 2/month and works in Lambda."
+
+#### New Payment Trigger K — The Excalidraw+ MCP Evaluator
+
+| Trigger | Discovery Moment | Why EUR 2 Is Easy | Urgency |
+|---------|-----------------|-------------------|---------|
+| **K: Excalidraw+ MCP Evaluator** | Evaluates Excalidraw's new MCP, discovers browser session required for rendering | Skissify = pipeline-safe, EUR 2 vs $7, no session overhead | **HIGH (new, Run #109)** |
+
+#### tldraw v4.5.0 — SVG Sanitization as a Signal
+
+tldraw's March 2026 addition of SVG sanitization means they're thinking about SVG output quality for production contexts. This is the first sign tldraw is considering use cases beyond interactive canvas. Watch the next 2 releases: if they add a headless render path, threat level escalates from LOW to MEDIUM immediately. Monitor monthly.
+
+#### Micro-Subscription EUR 2 — What Makes Someone Pay It in 2026
+
+The question isn't "is EUR 2 cheap enough?" — all 11 identified triggers share zero price resistance. The question is: "what makes someone pull out their card?"
+
+Based on observed MCP ecosystem patterns (21st.dev: $10K MRR in 6 weeks at $16/mo freemium; Napkin.ai: $12/mo with no hand-drawn aesthetic):
+
+**The EUR 2 card-pull happens when**:
+1. **The pipeline is blocked without it.** If an AI agent workflow fails because no sketch renderer exists, EUR 2 unblocks it. Zero deliberation. (Triggers A, B, E, J, K)
+2. **The alternative is clearly worse and more expensive.** Excalidraw+ is $7/mo AND needs a browser. EUR 2 + no browser = no-brainer comparison conversion. (Triggers A, H, K)
+3. **There's a specific output to show someone.** Developer has a demo with a floor plan. Needs it now. Watermark blocks the demo. EUR 2 = problem solved. Urgency collapses deliberation. (Triggers D, G)
+4. **The free tier built the habit.** They already rely on Skissify daily. Upgrade is natural continuation, not a decision. (Trigger F — auto-convert after 14 days)
+5. **Peer validation exists.** Someone in r/mcp or r/selfhosted posted it, others confirmed using it. Social proof + low price = impulse purchase. (All triggers, MCP community vectors)
+
+**The one thing that prevents payment when price is not an issue**: Not knowing Skissify exists. This remains the only blocker across all 11 triggers. MCP registry absence is the top suppressor. Fixing it converts EUR 2 skeptics into paying users before any feature improvement ever would.
+
+#### Updated Trigger Framework (11 triggers — Run #109)
+
+| # | Trigger | EUR 2 Friction | Status |
+|---|---------|---------------|--------|
+| A | Excalidraw headless refugee | Zero | ACTIVE |
+| B | Enterprise pipeline builder | Zero | ACTIVE |
+| C | tldraw node user | Low | ACTIVE |
+| D | Design-to-sketch backfill | Low | ACTIVE |
+| E | Claude Code user mid-session | Zero | ACTIVE |
+| F | 14-day opt-out auto-convert | Zero | ACTIVE |
+| G | Enterprise-blocked developer | Low | ACTIVE |
+| H | Draw.io aesthetic refugee | Zero | ACTIVE |
+| I | Stitch user wanting upstream sketch tool | Low | ACTIVE (Run #107) |
+| J | Chromium refugee from `excalidraw-render` | Zero | ACTIVE (Run #108) |
+| **K** | **Excalidraw+ MCP evaluator (browser wall hit)** | **Zero** | **NEW (Run #109)** |
+
+All 11 triggers share: awareness is the only barrier. EUR 2 is never the issue.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #108 (Thursday April 2, 15:24 CET)
 
 ### Theme: The Chromium Moat — Why Skissify's Zero-Dependency Architecture Is A Commercial Advantage, Not Just A Technical One

@@ -2,6 +2,79 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #109 (Thursday April 2, evening)
+
+### Status: 6 topics researched. KEY FINDINGS: Excalidraw+ added **official MCP support in Feb 2026** + Custom AI Tokens — closing the AI integration gap but still Chromium-dependent for headless rendering. tldraw v4.5.0 (March 18) adds SVG sanitization + high-DPI image sizing + click-through transparent pixels — no headless JSON API, $6K/yr unchanged. Sketch (design tool) launched its own MCP server. Blueprint-MCP (ArcadeAI) entered the "code-to-diagram" niche via MCP. New entrant: Sketch2scheme converts hand-drawn sketches to digital — opposite direction from Skissify. dAIgram converts images to editable diagrams. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #109 confirms for 9th consecutive session).
+
+### Excalidraw+ — Official MCP Support Shipped (UPGRADED TO HIGH THREAT — MONITOR WEEKLY)
+
+**Sources**: plus.excalidraw.com/changelog (verified 2026-04-02), [Excalidraw MCP writeup](https://skywork.ai/skypage/en/ai-diagramming-excalidraw-server/1978272683440672768)
+
+Excalidraw+ shipped its official MCP integration in **February 2026** alongside several major AI features:
+- **MCP Support**: Model Context Protocol integration — AI agents can now write to Excalidraw boards via MCP
+- **Custom AI Tokens**: Users can plug in their own OpenAI, Claude, Gemini, or OpenRouter API keys
+- **Advanced Charts**: Radar charts, multi-series visualization (Jan/Feb 2026)
+- **Interactive Presentations**: Real-time reactions, presenter waiting room, YouTube sync
+- Pricing: still $6–7/user/month (Excalidraw+)
+
+**What remains unchanged**: The official MCP integration is browser-based — it writes TO Excalidraw whiteboards, not a headless render endpoint. The community `excalidraw-render` workaround (Chromium, 170MB, 3s cold start) is still the only headless path. No stateless JSON→SVG API exists.
+
+**Threat escalation**: Excalidraw now has MCP listed in its official changelog. Developers evaluating "diagram tools with MCP" will find Excalidraw first due to brand recognition. Skissify's absence from MCP registries is now more costly than ever.
+
+**Skissify response**: The differentiator must be hammered: Excalidraw's MCP = browser session required. Skissify's MCP = stateless API, no browser, serverless-compatible. Different tools for different contexts. Excalidraw is for *interactive whiteboards*. Skissify is for *programmatic pipelines*.
+
+---
+
+### tldraw v4.5.0 (March 18, 2026) — SVG Sanitization, High-DPI, Click-Through Transparency (LOW-STABLE)
+
+**Sources**: github.com/tldraw/tldraw/releases (verified 2026-04-02), releasebot.io/updates/tldraw
+
+Latest tldraw releases (2026 cadence):
+- **v4.5.0** (March 18): SVG sanitization, high-DPI image sizing, `Editor.resizeToBounds()`, click-through transparent image pixels, configurable embed definitions
+- **v4.4.0** (Feb 18): 25x faster shape indicators (canvas vs SVG), R-tree spatial indexing, quick zoom, fill styles, laser pointer with grouped sessions
+- **v4.3.0** (Jan 21): SQLite sync storage (pluggable), 80% draw shape encoding reduction, TypeScript module augmentation
+- **v4.5.6** (April 1): Minor patch, release notes pending
+
+**Assessment**: tldraw is maturing fast as a canvas SDK — each release is high quality and thoughtful. The SVG sanitization feature is notable: they're getting SVG output closer to production-safe. But still no headless JSON→SVG render API. Still $6,000/year commercial license. Still React/DOM-dependent. **Not a direct threat. Threat level: LOW-STABLE.**
+
+---
+
+### Sketch (Design Tool) MCP Server — Enterprise Channel Opens (MEDIUM, NEW)
+
+**Sources**: sketch.com/docs/mcp-server/, getguru.com/reference/sketch-mcp, pulsemcp.com/servers/sketch (verified 2026-04-02)
+
+Sketch (the macOS design tool) launched a local MCP server. Enables AI agents to: query designs, generate code from design files, answer questions about components. Target: enterprise design-to-code pipelines.
+
+**For Skissify**: Sketch's MCP presence signals that design tools are actively entering the MCP ecosystem. The Sketch audience (enterprise design teams, iOS/macOS developers) may not overlap with Skissify's current target (AI agent builders). However, enterprise architects who use Sketch for design might also need Skissify for quick programmatic sketches before committing to full design. **Monitor — possible integration opportunity.**
+
+---
+
+### Blueprint-MCP (ArcadeAI) — Code-to-Architecture Diagram (LOW, NEW)
+
+**Sources**: github.com/ArcadeAI/blueprint-mcp (verified 2026-04-02)
+
+Blueprint-MCP generates architecture diagrams for understanding codebases and system architecture using Nano Banana Pro. Targets developers who want to visualize their code structure via MCP.
+
+**Assessment**: Different use case from Skissify — Blueprint reads code and draws system diagrams. Skissify accepts spatial JSON manifests for custom layouts. No overlap. **Threat level: LOW. Watch for feature creep into hand-drawn output.**
+
+---
+
+### Updated Competitor Matrix (Run #109 — Thursday April 2, evening)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Excalidraw+** | Official MCP (Feb 2026) — browser session required. `excalidraw-render` community: Chromium headless (3s cold start, 170MB). | NO (requires Chromium or browser) | YES | NO | YES (browser-based) | **HIGH — but Chromium moat holds** |
+| **tldraw SDK** | v4.5.0 (March 2026): SVG sanitization, high-DPI. No headless API. $6K/yr unchanged. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Sketch (design tool)** | MCP server launched — enterprise design-to-code pipeline. macOS only. | NO | NO | YES | YES | **MEDIUM (new channel)** |
+| **Draw.io (JGraph)** | Official MCP Feb 2026. Clean vector. Enterprise credibility. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **Blueprint-MCP** | Code→architecture diagram via MCP. Clean vector. Developer-focused. | NO | NO | YES | YES | **LOW (different use case)** |
+| **SVGMaker MCP** | Text→clean SVG via MCP. Freemium. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM (directory collision)** |
+| **Google Stitch 2.0** | FREE. Sketch→polished UI. Opposite direction workflow. | NO | NO (consumes sketches) | YES | NO | **MEDIUM (adjacent)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: **zero Chromium, instant cold start, uncontested**. MCP Registry: ABSENT (CRITICAL × 9). | **YES (only one, no Chromium)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #108 (Thursday April 2, 15:24 CET)
 
 ### Status: 5 topics researched. KEY FINDINGS: Excalidraw headless gap partially closed by community `excalidraw-render` MCP — but requires Chromium (3s first render, 170MB download, CDN dependency). Skissify's zero-dependency moat CONFIRMED. SVGMaker MCP (new) entered "AI → SVG via MCP" space with text-prompt model — different aesthetic (clean, not hand-drawn) but same distribution channel. tldraw: Image Pipeline template + 25x rendering perf boost, no pricing change, no JSON headless API. MCP registry API now frozen at v0.1 (stable) + Visual Studio 2026 native MCP support = expanding addressable market. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested**.
