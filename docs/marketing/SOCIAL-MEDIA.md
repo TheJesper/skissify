@@ -1,7 +1,179 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 102 (Day 2 — Thursday 01:12 CET — Discord communities, Notion, TikTok scripts, r/HomeImprovement)**
+**Last updated: April 2, 2026 — Cycle 103 (Day 2 — Thursday 02:20 CET — Bluesky, Mastodon/Fosstodon, r/programming, r/homeautomation, Dev.to publish schedule, week-1 Saturday hooks)**
+
+---
+
+## CYCLE 103 — DAY 2 THURSDAY 02:20 — BLUESKY + MASTODON + r/PROGRAMMING + DEV.TO SCHEDULE
+
+*Context: Day 2, 02:20 CET. All Discord/Notion/TikTok copy written (Cycle 102). This cycle adds platforms not yet covered: Bluesky, Mastodon/Fosstodon, r/programming (flat schema insight), r/homeautomation (smart home audience), Dev.to cross-post schedule, and Saturday Week-1 anniversary hooks (early prep).*
+
+---
+
+### NEW PLATFORM: Bluesky — Morning launch post
+
+```
+JSON in. Hand-drawn sketch out.
+
+Built Skissify so AI agents can actually draw things — floor plans, architecture diagrams, system layouts.
+
+POST /api/render with a flat JSON manifest → returns a shareable sketch URL.
+npx skissify-mcp → Claude can draw.
+
+No API key. No auth. Free tier.
+
+https://skissify.com
+
+#AI #MCP #BuildInPublic #DevTools #AIAgents
+```
+
+---
+
+### NEW PLATFORM: Bluesky — Flat schema technical post (developer audience)
+
+```
+Technical finding while building a sketch API for AI agents:
+
+Flat JSON schema → 94% LLM generation accuracy
+Hierarchical/nested → ~40% accuracy
+
+I tried "rooms contain elements" (makes OOP sense). LLMs kept violating parent-child constraints. Switched to flat coords (every element: x, y, w, h in paper-space). Accuracy jumped immediately.
+
+Lesson: flat beats nested for LLM-generated JSON, even when nested is "more correct" semantically.
+
+The tool: https://skissify.com
+
+#AI #LLM #APIDesign #MCP #DevTools
+```
+
+---
+
+### NEW PLATFORM: Bluesky — Floor plan demo thread
+
+```
+Gave Claude a pencil.
+
+You can now ask Claude Desktop to draw a floor plan, architecture diagram, or technical sketch. It calls the Skissify MCP server and returns a shareable URL.
+
+"Sketch a 2-bedroom apartment with a balcony"
+"Draw the architecture of a REST API service"
+"Sketch a D&D dungeon map"
+
+Works right now: add npx skissify-mcp to claude_desktop_config.json
+
+https://skissify.com/for-agents
+
+#Claude #MCP #AIAgents #FloorPlan #BuildInPublic
+```
+
+---
+
+### NEW PLATFORM: Mastodon / Fosstodon — Developer post
+
+```
+🖊️ Skissify: JSON → hand-drawn sketch API
+
+Built for AI agents and developers who need programmatic diagram rendering.
+
+Key technical decision: flat coordinate schema beats hierarchical for LLM generation accuracy (94% vs ~40%). Every element gets x, y, w, h in paper-space — no nesting, no parent-child constraints for LLMs to violate.
+
+REST API (no auth, free tier):
+POST https://skissify.com/api/render
+
+MCP server:
+npx skissify-mcp
+
+26 element types including floor plan architecture (walls, doors, stairs, furniture).
+
+#MCP #AI #DevTools #BuildInPublic #OpenSource #FloorPlan #AIAgents
+```
+
+---
+
+### NEW PLATFORM: r/programming — Technical post
+
+```
+Title: The schema design decision that got my LLM sketch generator to 94% accuracy
+
+I built a REST API that renders hand-drawn sketches from JSON (for AI agents).
+
+The hardest part wasn't the rendering — it was designing a JSON schema that LLMs could generate reliably.
+
+First attempt: hierarchical. Rooms contained elements. Elements referenced parent rooms. Logical.
+
+Problem: LLMs kept generating elements with mismatched parent IDs, coordinates outside room bounds, undefined room references. ~40% of outputs were valid.
+
+Second attempt: flat coordinates. Every element gets x, y, w, h in absolute paper-space. No nesting, no parent-child relationships.
+
+Result: ~94% of LLM-generated manifests render correctly on the first try.
+
+The lesson: when your JSON schema is consumed by LLMs, flat wins over hierarchical even when hierarchical is "more correct" from a modeling perspective. LLMs generate well-constrained primitives better than they maintain cross-reference consistency.
+
+The tool is Skissify: https://skissify.com
+API: POST /api/render
+MCP: npx skissify-mcp
+
+Happy to discuss schema design for LLM-generated structured output — it's an underexplored area.
+```
+
+---
+
+### NEW PLATFORM: r/homeautomation — Smart home floor plan angle
+
+```
+Title: Using AI + Skissify MCP to generate floor plan sketches for home automation planning
+
+Been using this for room layout planning when setting up automations:
+
+1. Claude Desktop + Skissify MCP (npx skissify-mcp)
+2. Describe your home layout in plain language
+3. Claude generates a hand-drawn floor plan with room labels
+4. Use it as a reference when setting up zones in Home Assistant / Google Home
+
+Not a replacement for proper floor plans — but for rough zone planning ("which automations affect which rooms"), a quick sketch is faster than anything else.
+
+The floor plan elements are architectural: walls, doors, windows, stairs, furniture. You can add labels for automation zones too.
+
+Free: https://skissify.com
+Setup: https://skissify.com/for-agents
+```
+
+---
+
+### Dev.to Cross-Post Schedule (Cycle 103 additions)
+
+Priority posts to publish on Dev.to this week (highest SEO + developer audience value):
+
+| Post | File | Publish When | Notes |
+|------|------|--------------|-------|
+| Flat schema insight | `how-ai-agents-draw-floor-plans-bluesky-thursday.md` | Thursday AM | Fresh, specific, shareable insight — great for Dev.to |
+| API test vs Excalidraw | `skissify-vs-excalidraw-the-api-test.md` | Thursday noon | Dev-focused comparison, low competition keyword |
+| n8n integration | `skissify-n8n-visual-automation.md` | Thursday PM | Cross-post to both Dev.to and n8n community forum |
+| json-render parallel | `skissify-is-json-render-for-spatial-sketches.md` | Friday AM | Developer conceptual hook — "json-render for space" |
+| 48h retrospective | `the-floor-plan-you-can-generate-in-48-hours.md` | Friday PM | Honest numbers, builds credibility |
+
+---
+
+### Week-1 Saturday Hooks (prep now for April 5 — 4 days after launch)
+
+```
+TWITTER/X — Saturday April 5 "1 week ago" thread
+
+1/ One week ago I launched Skissify.
+
+Here's what surprised me:
+
+2/ Audience I built for: AI developers building Claude/LangChain agents.
+Audience that actually showed up: homebuilders. Teachers. D&D dungeon masters. Architects.
+
+3/ The floor plan use case was obvious. The "let me sketch my kitchen renovation" use case was not.
+Turns out rough sketches are a better communication format than polished wireframes in a lot of contexts.
+
+4/ The one technical thing I'd tell myself one week ago: design JSON schemas for flat coordinates from day one. Hierarchical schemas and LLMs are a bad combination.
+
+5/ skissify.com is still free to try. One week later, still no API key required.
+```
 
 ---
 

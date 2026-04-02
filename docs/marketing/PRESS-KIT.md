@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 102 (Day 2 Thursday 01:12 CET — Discord communities, Notion, TikTok strategy, r/HomeImprovement, blog assets updated)*
+*Last updated: April 2, 2026 — Cycle 103 (Day 2 Thursday 02:20 CET — Bluesky/Mastodon added, r/programming post, r/homeautomation, Dev.to schedule, Week-1 Saturday hooks, 3 new blog posts)*
 
 ---
 
@@ -19,7 +19,7 @@
 
 ---
 
-## Day 2 Status (April 2, 2026 — Thursday, Cycle 102)
+## Day 2 Status (April 2, 2026 — Thursday, Cycle 103)
 
 | Item | Status |
 |------|--------|
@@ -42,6 +42,12 @@
 | HuggingFace Discord #show-and-tell | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
 | TikTok / Instagram Reels | ⏳ Scripts written (Cycle 102) — record today |
 | Indie Hackers launch post | ⏳ OVERDUE — copy in SOCIAL-MEDIA.md Cycle 98 |
+| Bluesky posts (3 variants) | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
+| Mastodon/Fosstodon post | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
+| r/programming flat schema post | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
+| r/homeautomation post | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
+| Dev.to cross-post schedule | ⏳ Schedule — 5 posts listed in SOCIAL-MEDIA.md Cycle 103 |
+| Week-1 Saturday Twitter thread | ⏳ Prep now — copy in SOCIAL-MEDIA.md Cycle 103 |
 
 **Today's #1 priority:** Record the demo video. All TikTok/Reels scripts are ready (Cycle 102 blog + SOCIAL-MEDIA.md). A 15-second silent screen capture of Claude drawing a floor plan via MCP will outperform every text post by 5–10x across TikTok, Reels, and Twitter/X.
 

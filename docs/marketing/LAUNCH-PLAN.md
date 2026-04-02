@@ -1,7 +1,70 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — 01:12 CET, Day 2 (SEE CYCLE 102)**
+**Current Date: April 2, 2026 — 02:20 CET, Day 2 (SEE CYCLE 103)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 103 — Day 2 Thursday 02:20 CET)
+
+### Cycle 103 — New Blog Posts Written (3 new posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Why Hand-Drawn Beats Figma: The Homebuilder Test | `blog/why-hand-drawn-beats-figma-the-homebuilder-test.md` | r/HomeImprovement + contractor communication angle — "a sketch signals intent, Figma signals done" | ✅ Ready to publish |
+| How AI Agents Draw Floor Plans: Bluesky Thursday Primer | `blog/how-ai-agents-draw-floor-plans-bluesky-thursday.md` | Bluesky/Mastodon dev audience — flat schema insight, curl examples, technical depth | ✅ Ready to publish |
+| Skissify vs Excalidraw: The API Test | `blog/skissify-vs-excalidraw-the-api-test.md` | Developer angle — Excalidraw has no REST API, Skissify is built for programmatic use | ✅ Ready to publish |
+
+### Cycle 103 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Bluesky launch post | ✅ Added |
+| Bluesky flat schema technical post | ✅ Added |
+| Bluesky floor plan demo thread | ✅ Added |
+| Mastodon/Fosstodon developer post | ✅ Added |
+| r/programming flat schema post (technical depth) | ✅ Added |
+| r/homeautomation smart home floor plan angle | ✅ Added |
+| Dev.to cross-post schedule (5 posts, prioritized) | ✅ Added |
+| Week-1 Saturday Twitter/X thread (April 5) | ✅ Added |
+
+### Cycle 103 — Priority Actions for Thursday April 2 (MORNING — URGENT)
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, overdue 20+ cycles | ⏳ Record Thursday morning | 🔴 P0 — CRITICAL |
+| Post to Bluesky (3 posts, copy in Cycle 103) | ⏳ Post Thursday AM | 🔴 P0 |
+| Post to Mastodon/Fosstodon (copy in Cycle 103) | ⏳ Post Thursday AM | 🟡 P1 |
+| Post to r/programming (flat schema technical post, Cycle 103) | ⏳ Post Thursday 10:00 CET | 🔴 P0 |
+| Post to r/homeautomation (copy in Cycle 103) | ⏳ Post Thursday 11:00 CET | 🟡 P1 |
+| Publish "Skissify vs Excalidraw: API Test" to Dev.to | ⏳ Thursday noon | 🔴 P0 |
+| Publish flat schema blog to Dev.to | ⏳ Thursday AM | 🔴 P0 |
+| Post to Anthropic Discord #showcase (copy in Cycle 102) | ⏳ Get invite + post | 🔴 P0 |
+| Post to LangChain Discord #tools (copy in Cycle 102) | ⏳ Post Thursday 09:00 CET | 🔴 P0 |
+| Post to r/n8n + r/automation (copy in Cycle 101) | ⏳ Post Thursday 10:00 CET | 🔴 P0 |
+| Submit to glama.ai (copy in Cycle 101) | ⏳ 20-min task | 🔴 P0 |
+| Indie Hackers post (OVERDUE since Cycle 98) | ⏳ Post NOW | 🔴 P0 |
+| Prep Week-1 Saturday Twitter thread (copy in Cycle 103) | ⏳ Schedule for April 5 | 🟡 P1 |
+
+### Cycle 103 — New Platforms / Channels Identified
+
+| Channel | Size | Angle | Priority |
+|---------|------|-------|---------|
+| Bluesky developer community | Growing, high-signal | Flat schema insight + MCP demo | 🔴 P0 — untapped, high intent |
+| Mastodon/Fosstodon | Dev/FOSS audience | Technical credibility, open tool | 🟡 P1 |
+| r/programming | 6M+ | Flat schema = 94% accuracy — genuinely useful insight | 🔴 P0 — educational content performs well |
+| r/homeautomation | 300K+ | Smart home planning, zone layout sketching | 🟡 P1 — non-dev audience |
+| Dev.to | Developer publishing | Cross-post 5 existing blog posts for SEO | 🔴 P0 — easy reach |
+
+### Cycle 103 — Strategic Insight (Dev.to + Bluesky)
+
+Two untapped channels this cycle:
+
+**Dev.to:** We have 200+ blog posts and haven't published a single one to Dev.to. The n8n post, flat schema post, and Excalidraw API comparison are all strong Dev.to content. Each post builds backlinks and gets passive discovery from Dev.to's algorithm. Low effort, high SEO value.
+
+**Bluesky:** Developer-heavy community that Mastodon-migrated devs use. Very responsive to technical honesty and build-in-public content. The flat schema insight (94% vs 40%) is exactly the kind of concrete, specific technical finding that performs on Bluesky. Post at 08:00–09:00 Stockholm time for US east coast morning overlap.
+
+**r/programming:** Different from r/LocalLLaMA or r/mcp. This audience is general developers who will appreciate the schema design insight. Frame it as "learned this while building X" not as "check out my product." Educational framing converts better on this subreddit.
 
 ---
 
