@@ -1,6 +1,29 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 111 (Day 5 Sunday — Google Stitch comparison angle, MCP Discord #showcase copy, Smol Launch submission copy, #VibeDesign hashtag set, new blog post: skissify-vs-google-stitch-vibe-design-2026.md)*
+*Last updated: April 2, 2026 — Cycle 112 (Day 2 Wednesday — Cursor integration angle, Product Hunt Vibe Coding category, vibecoding.app submission, new blog post: skissify-cursor-vibe-coding-visual-layer.md, #VibeCoding hashtag set, Dev.to MCP wave)*
+
+---
+
+## Day 2 Status (April 2, 2026 — Wednesday, Cycle 112)
+
+| Item | Status |
+|------|--------|
+| Blog: Skissify + Cursor visual layer | ✅ **NEW** — `blog/skissify-cursor-vibe-coding-visual-layer.md` — post to Dev.to NOW |
+| Cursor integration hooks (4 posts) | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 112 |
+| Product Hunt Vibe Coding category | ✅ **NEW** — submission copy in SOCIAL-MEDIA.md Cycle 112 — separate from main PH |
+| vibecoding.app listing | ✅ **NEW** — submission copy in SOCIAL-MEDIA.md Cycle 112 — permanent SEO |
+| #VibeCoding hashtag set 2026 | ✅ **NEW** — master combo in SOCIAL-MEDIA.md Cycle 112 |
+| Dev.to MCP wave post | ⏳ **ACTION** — post Cursor blog to Dev.to today (MCP content spiking) |
+| MCP Discord #showcase post | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 111 — P0 |
+| Smol Launch submission | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 111 — P0, 7-day window |
+| Demo video | ⚠️ **P0 FOREVER** — blocks all video channels |
+| Show HN | ⚠️ **OVERDUE** — optimal window Tue 09:00–11:00 CET (tomorrow!) |
+| Indie Hackers post | ⚠️ **OVERDUE since Cycle 98** |
+| AlternativeTo submission | ⚠️ **OVERDUE** — 10-min task, permanent SEO |
+| SaaSHub submission | ⚠️ **OVERDUE** — 10-min task, permanent SEO |
+| Email drip sequence | ⚠️ **IMPLEMENT** — 3 emails written in Cycle 110 |
+
+**Day 2 P0 actions (in order):** Post new Cursor blog to Dev.to → Post MCP Discord #showcase → Submit Smol Launch → Post r/vibecoding → Schedule Show HN for Thursday AM.
 
 ---
 

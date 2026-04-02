@@ -1,7 +1,62 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2 → Day 5 begins (SEE CYCLE 111)**
+**Current Date: April 2 → Day 2 (SEE CYCLE 112)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 112 — Day 2 Wednesday)
+
+### Cycle 112 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: Cursor + Skissify visual layer for vibe coders | `blog/skissify-cursor-vibe-coding-visual-layer.md` | ✅ Written — post to Dev.to NOW |
+| SOCIAL-MEDIA.md Cycle 112 (Cursor hooks, PH vibe-coding category, vibecoding.app, Dev.to wave, #VibeCoding master set) | SOCIAL-MEDIA.md Cycle 112 | ✅ Written |
+| PRESS-KIT.md Day 2 status table (corrected dates) | PRESS-KIT.md | ✅ Updated |
+
+### Cycle 112 — Priority Actions for Wednesday April 2
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Cursor blog to Dev.to** — MCP content spiking now, perfect timing | 🔴 P0 — Dev.to MCP wave is live | 10 min |
+| **Post MCP Discord #showcase** (copy Cycle 111) — 11,851 MCP devs, never posted | 🔴 P0 — most targeted untapped channel | 5 min |
+| **Submit Smol Launch** (copy Cycle 111) — 7-day window, indie-friendly | 🔴 P0 — 10 min task | 10 min |
+| **Submit Product Hunt Vibe Coding category** (copy Cycle 112) — separate from main PH | 🔴 P0 — dedicated vibe coder audience | 10 min |
+| **Post r/vibecoding** (copy Cycle 108) — 89K audience, never posted | 🔴 P0 | 5 min |
+| **List on vibecoding.app** (copy Cycle 112) — permanent ranking/SEO | 🟡 P1 | 10 min |
+| **Submit AlternativeTo** — 10-min task, permanent SEO backlink | 🟡 P1 | 10 min |
+| **Post Indie Hackers** (OVERDUE since Cycle 98) | 🟡 P1 | 5 min |
+| **Schedule Show HN for TOMORROW Thu** 09:00–11:00 CET — optimal window | 🔴 P0 — missed Tuesday, Thursday is next best | 5 min prep |
+| **RECORD DEMO VIDEO** — P0 forever | 🔴 P0 — blocks all video channels | 20 min |
+
+### Cycle 112 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| Product Hunt "Vibe Coding" category | Dedicated PH category for vibe tools — less competition than main feed, perfect audience fit | 🔴 P0 — 10 min task |
+| vibecoding.app | Tool ranking site used by indie hackers — permanent listing, SEO, Karpathy community discovery | 🔴 P0 — 10 min |
+| Cursor-specific angle | Cursor is #1 vibe coding tool. "Sketch before Cursor prompts" is a concrete, relatable workflow hook | 🔴 P0 — new blog written |
+| Dev.to MCP wave | Dev.to MCP content spiking March 2026 — publish Cursor blog now while wave is live | 🔴 P0 — time-sensitive |
+
+### Cycle 112 — Research Findings (April 2, 2026)
+
+| Finding | Source | Action |
+|---------|--------|--------|
+| Product Hunt has dedicated "vibe coding" category | producthunt.com/categories/vibe-coding | Submit Skissify there specifically |
+| vibecoding.app ranks tools for indie hackers on X | vibecoding.app | Submit listing |
+| Cursor is #1 vibe coding tool (survey data) | Product Hunt + Indie Hackers | Target Cursor users with sketch-before-code workflow |
+| Dev.to MCP articles spiking — "Claude Code dominates, MCP goes mainstream" (March 2026) | dev.to/alexmercedcoder AI Weekly | Publish Cursor blog to Dev.to immediately |
+| 84% of developers using or planning AI coding tools; 51% daily usage | Industry surveys | Confirms massive TAM — keep posting |
+| claudemcp.com is the community hub for MCP (separate from Discord) | claudemcp.com | Consider listing Skissify MCP there |
+
+### Cycle 112 — Strategic Insight (Cursor + Vibe Coding Category is a Gift)
+
+**Cursor is used by the majority of vibe coders, and Skissify's "sketch before prompting Cursor" workflow is a concrete, testable, shareable story.** Unlike abstract "AI can draw" messaging, "I added a sketch step before my Cursor workflow and iterations dropped" is a **repeatable user story** that resonates with exactly the people who already spend 40+ minutes/day in Cursor.
+
+**Product Hunt has a specific vibe coding category.** This means Skissify can be listed *twice* on PH — main feed (done) and vibe coding category. The vibe coding audience is highly self-selected, early-adopter, and much more likely to engage with an MCP tool than the general PH audience.
+
+**The timing is perfect:** Dev.to is publishing MCP "mainstream" content weekly right now. A Cursor-focused Skissify blog posted to Dev.to today will land in the middle of that wave.
 
 ---
 

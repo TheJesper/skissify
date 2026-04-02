@@ -1,7 +1,147 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 111 (Day 5 — Google Stitch "vibe design" comparison angle, MCP Discord #showcase post, Smol Launch submission copy, #VibeDesign hashtag set, 3 new viral hooks)**
+**Last updated: April 2, 2026 — Cycle 112 (Day 2 — Cursor integration angle, Product Hunt Vibe Coding category, vibecoding.app submission, #VibeCoding stack hooks, 4 new posts)**
+
+---
+
+## CYCLE 112 — DAY 2 (APRIL 2) — CURSOR + VIBE CODING STACK ANGLE
+
+*Context: Day 2 post-launch (launched April 1). Research confirms Product Hunt has a dedicated "vibe coding" category (separate from main PH feed), vibecoding.app ranks tools for indie hackers, and Cursor is the #1 tool in every vibe coder stack. Skissify has a compelling story as "the visual layer Cursor users are missing." Dev.to MCP articles are spiking right now (Claude Code dominates as of March 2026). All four angles below are untapped.*
+
+---
+
+### NEW HOOK: Cursor users — the missing visual layer
+
+**Twitter/X — Core Cursor hook (post 10:00 AM CET)**
+```
+I use Cursor for vibe coding.
+
+But describing layouts in text leads to 45 minutes of "make it more centered, move this left, add some padding."
+
+Fixed it: I sketch first with an MCP tool, then prompt Cursor.
+
+Claude → @Skissify sketch → Cursor implementation.
+
+First draft is now usually right.
+
+→ npx skissify-mcp
+
+#VibeCoding #Cursor #MCPServer #AIAgents
+```
+
+**Twitter/X — The vibe stack thread**
+```
+The vibe coding stack nobody is posting (but should):
+
+1. Describe idea to Claude
+2. Claude calls Skissify → hand-drawn sketch (5 sec)
+3. Review spatial layout before writing a prompt
+4. Prompt Cursor with sketch as context
+5. Ship
+
+Going from idea → code without the sketch step means iterating on vibe alone.
+
+Add the visual layer. It takes 30 seconds.
+
+→ npx skissify-mcp
+
+#VibeCoding #MCPServer #BuildInPublic #Cursor #AITools
+```
+
+**LinkedIn — Developer authority post**
+```
+Everyone is talking about what goes INTO Cursor. Nobody talks about what comes OUT.
+
+Here's what vibe coding looks like without a sketch layer:
+• Type layout idea in text
+• AI generates components
+• They look nothing like what you imagined
+• 45 min of "more centered, more padding, move this left"
+• Ship something that almost works
+
+Here's what it looks like with Skissify:
+• Describe idea to Claude
+• Claude draws a hand-drawn sketch (5 sec)
+• Confirm: "yes, that's the layout"
+• Prompt Cursor with spatial clarity
+• First draft is right
+
+One tool. One extra step. Significantly less iteration.
+
+I built Skissify for exactly this: JSON in, hand-drawn sketch out, no auth required.
+
+Try it: skissify.com | npx skissify-mcp
+
+#VibeCoding #Cursor #AIAgents #BuildInPublic #DeveloperTools #MCP
+```
+
+---
+
+### NEW PLATFORM: Product Hunt "Vibe Coding" Category
+
+*Product Hunt has a dedicated vibe coding category (https://www.producthunt.com/categories/vibe-coding). This is SEPARATE from the main PH daily feed. Submit Skissify specifically to this category — it is less competitive and the audience is exactly right.*
+
+**Product Hunt Vibe Coding Category submission tagline:**
+```
+Skissify — Hand-drawn sketches for vibe coders. JSON in, sketch out. The visual layer before Cursor generates your code.
+```
+
+**Product Hunt Vibe Coding comment/description:**
+```
+Skissify adds a sketch layer to your vibe coding workflow.
+
+Instead of describing layouts in text and iterating 45 times, you:
+1. Describe to Claude → hand-drawn sketch appears
+2. Confirm the spatial layout visually
+3. Prompt Cursor with spatial clarity
+
+Free API. MCP server. Works in Claude Desktop, Cursor, Windsurf.
+
+→ npx skissify-mcp
+→ skissify.com
+```
+
+---
+
+### NEW PLATFORM: vibecoding.app
+
+*vibecoding.app ranks vibe coding tools for indie hackers. Submit Skissify as a tool in the "AI Agents / MCP" category. This is a permanent listing + traffic source.*
+
+**vibecoding.app submission description:**
+```
+Skissify is an MCP server and free API that gives AI agents the ability to draw. Describe a layout, floor plan, or diagram — Skissify returns a hand-drawn sketch URL. Used by developers building with Claude, Cursor, and other vibe coding tools as a "sketch before code" visual layer.
+
+→ npx skissify-mcp | skissify.com/api/render
+```
+
+---
+
+### NEW ANGLE: Dev.to "MCP is mainstream" wave
+
+*Dev.to is spiking with MCP content right now (Claude Code dominates as of March 2026 — confirmed in research). Post the Cursor + Skissify article as a Dev.to post today.*
+
+**Dev.to post title options:**
+- "I Added a Sketch Layer to My Cursor Workflow and My Layouts Got Way Better"
+- "The Vibe Coding Step Everyone Skips (And How Skissify Fixes It)"
+- "npx skissify-mcp — The Visual Primitive My AI Stack Was Missing"
+
+**Dev.to tags:** `#mcp`, `#vibecoding`, `#cursor`, `#claude`, `#aiagents`
+
+---
+
+### UPDATED Hashtag Set — Vibe Coding Wave (April 2026)
+
+*Add #VibeCoding to all posts this week. Karpathy's term has massive organic reach. Combines with #VibeDesign for the Google Stitch overlap.*
+
+**Master hashtag combo for April 2026:**
+```
+Primary: #VibeCoding #VibeDesign
+Mid-tier: #MCPServer #AIAgents #Cursor #BuildInPublic
+Niche: #SketchFirst #NapkinPhase #VisualLayer #JsonToSketch #Skissify
+```
+
+---
 
 ---
 

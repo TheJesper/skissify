@@ -1,7 +1,31 @@
 # Skissify — Hashtag Research & Community Targeting
 
-*Last Updated: March 27, 2026*
-*Research by: Marketing Team Lead (Cron Cycle 3)*
+*Last Updated: April 2, 2026 — Cycle 112*
+*Research by: Marketing Team Lead*
+
+---
+
+## 🔥 HOT: April 2026 Master Combo (Use Now)
+
+```
+Primary:  #VibeCoding #VibeDesign
+Mid-tier: #MCPServer #AIAgents #Cursor #BuildInPublic
+Niche:    #SketchFirst #NapkinPhase #VisualLayer #JsonToSketch #Skissify
+```
+
+**Why now:** #VibeCoding (Karpathy's term) has massive organic reach in April 2026. #VibeDesign was launched by Google Stitch (March 2026) and is trending. Both hashtags have audiences that perfectly match Skissify's value prop.
+
+---
+
+## 🆕 New Platforms (April 2026 Research)
+
+| Platform | URL | Priority | Notes |
+|----------|-----|----------|-------|
+| Product Hunt Vibe Coding category | producthunt.com/categories/vibe-coding | 🔴 P0 | Dedicated PH category, less competitive, self-selected vibe coders |
+| vibecoding.app | vibecoding.app | 🔴 P0 | Tool ranking site, permanent listing, indie hacker community |
+| claudemcp.com | claudemcp.com | 🟡 P1 | MCP community hub, consider listing Skissify MCP server |
+| MCP Discord #showcase | discord.gg/anthropic | 🔴 P0 — 11,851 members | Most targeted channel, never posted (Cycle 111) |
+| Smol Launch | smol.pub/launch | 🔴 P0 | 7-day window vs PH 24h, indie-friendly |
 
 ---
 
