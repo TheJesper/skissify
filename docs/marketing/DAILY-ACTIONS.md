@@ -2,6 +2,124 @@
 
 ---
 
+## [2026-04-02] — Strategy Run #111 Actions (Thursday April 2, late night)
+
+### Context: Run #111 Key New Findings
+- **Pinterest production MCP**: 844 users, 66K calls/month, 7,000 hours/month saved — enterprise ROI is documented
+- **Google official MCP for ALL services**: MCP is now platform infrastructure at Google Cloud scale
+- **Credit-based pricing 126% YoY**: Skissify's per-render model is trend-aligned; base price still too low
+- **Google Stitch biggest upgrades**: AI-native canvas + Claude Code integration — remains complementary, not competitive
+- **Sketch2Diagram**: Reverse direction (hand-drawn → digital), validates the sketch↔digital niche, no threat
+
+---
+
+### Action 1 (CRITICAL — TODAY, 12th consecutive cycle): MCP Registry Submission — Infrastructure-Level Urgency
+
+**Google just extended MCP to ALL Google Cloud services. Pinterest documented 7,000 hours/month saved from MCP. The ecosystem is infrastructure now, not an experiment. Skissify absent from all MCP directories while Frame0, Excalidraw, Draw.io, and SVGMaker are listed = invisible at infrastructure scale.**
+
+Steps (unchanged from #110, escalated priority):
+1. `github.com/modelcontextprotocol/registry` — Submit `skissify.json` PR
+2. Submit simultaneously to: pulsemcp.com, glama.ai, mcp.so, mcpservers.org
+3. Description must include: "headless", "serverless-compatible", "hand-drawn", "no desktop app", "no Chromium", "floor plan", "architectural"
+4. Comparison callout: "Unlike Frame0 (desktop app required) and Excalidraw MCP (browser session required), Skissify is a pure stateless API. POST JSON → get SVG. Works in Lambda, Cloudflare Workers, Docker, CI/CD."
+
+**Time: 2-3 hours. This is now 12 cycles overdue.**
+
+---
+
+### Action 2 (HIGH — tomorrow): Write the Enterprise ROI One-Pager Using Pinterest Data
+
+**Pinterest documented 7,000 hours/month saved from MCP. This is Skissify's enterprise pitch foundation. Architecture firms, construction tech companies, and AI agent builders can see their ROI in concrete terms.**
+
+Steps:
+1. Create `docs/marketing/ENTERPRISE-ROI.md`
+2. Model: "A team that generates 5,000 architectural sketches/month via Skissify API"
+   - Old: 2 hrs/sketch manually in Figma × 5,000 = 10,000 hours/month
+   - New: POST JSON → SVG, ~2 seconds × 5,000 = 2.8 hours/month
+   - Savings: ~9,997 hours/month at $50/hr = $499,850/month
+   - Skissify cost at Enterprise tier: EUR 200/month flat
+   - ROI: **2,499x**
+3. More realistic version: 500 sketches/month → 998 hours saved → $49,900 saved → EUR 200/month → **249x ROI**
+4. Use this in LinkedIn posts targeting "AI agent builders", "PropTech engineers", "architectural software teams"
+5. Subject line: "Pinterest saved 7,000 hours/month with MCP. What does your team spend on diagramming?"
+
+**Time: 1 hour. High-leverage for enterprise outreach.**
+
+---
+
+### Action 3 (MEDIUM — this week): Update Pricing Page — EUR 2 → EUR 5, Add Credit Model Language
+
+**Credit-based pricing grew 126% YoY. The micro-SaaS pricing floor is $9–29/mo. EUR 2 signals toy. EUR 5 signals tool. The conversion hypothesis: zero price resistance means the barrier is awareness, not price. Test it.**
+
+Steps (same as Run #110, re-escalated):
+1. Update Pro tier price display: EUR 2 → EUR 5/mo
+2. Add hybrid credit framing: "Includes 1,000 renders/month. Need more? EUR 0.005 per render."
+3. Framing copy: "Less than one coffee. More than a toy." (EUR 5 in Stockholm < one espresso)
+4. Comparison copy: "Cheaper than Excalidraw+ (€5 vs $7/mo). Works in Lambda. No browser. No desktop."
+5. Monitor 14 days. If conversion drops <40%, EUR 5 is better NPV. Pinterest-style ROI framing makes price irrelevant.
+
+---
+
+## [2026-04-02] — Strategy Run #110 Actions (Thursday April 2, night)
+
+### Context: Run #110 Key New Findings
+- **Frame0 Diagramming MCP** (pulsemcp.com): Hand-drawn + SVG + MCP but requires desktop app. Closest competitor architecture yet. Trigger L created.
+- **tldraw v4.5.6**: Minor patch April 2. No headless movement.
+- **PulseMCP**: 14,274 servers confirmed (was 11,000 estimate — 30% revision upward).
+- **svg2roughjs**: OSS library validates hand-drawn niche. No hosted API competitor.
+- **Pricing**: EUR 2 is below micro-SaaS floor. Data supports testing EUR 5/mo.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 11th consecutive cycle): MCP Registry Submission — Frame0 Is Already Listed
+
+**Frame0 is in PulseMCP with hand-drawn style + SVG + MCP. Skissify is not listed anywhere. This is no longer a "window" — Frame0 is now the default answer to "hand-drawn sketch MCP" searches, and it has the wrong architecture for serverless pipelines. Skissify needs to appear in the same search results to win the comparison.**
+
+Steps:
+1. `github.com/modelcontextprotocol/registry` — Submit `skissify.json` PR
+2. Registry description must lead: "The only hosted headless JSON→hand-drawn SVG API. No desktop app. No browser. No Chromium. POST a JSON manifest, get back SVG instantly. Works in Lambda, Cloudflare Workers, CI/CD. Unlike Frame0 (requires desktop) or Excalidraw MCP (requires browser), Skissify is a pure stateless API."
+3. Submit simultaneously to: pulsemcp.com (where Frame0 is listed), glama.ai, mcp.so, mcpservers.org
+4. On PulseMCP listing: explicitly tag as "headless", "serverless-compatible", "hand-drawn", "floor plan", "architectural"
+5. Create a post in r/mcp: "I found Frame0 for hand-drawn wireframes but it needs a desktop app — Skissify is the headless version" — let the community do the comparison
+
+**Time: 2-3 hours. Frame0 being listed is the urgency trigger this needed for 11 cycles.**
+
+---
+
+### Action 2 (HIGH — tomorrow): Pricing A/B Test — EUR 2 → EUR 5/mo
+
+**EUR 2 is below the micro-SaaS pricing floor. No comparable developer tool charges EUR 2/mo. 21st.dev charges $16/mo and hit $10K MRR in 6 weeks. Napkin.ai: $12/mo. Excalidraw+: $6–7/mo. EUR 5/mo is still cheaper than every comparable and 2.5x better LTV.**
+
+Steps:
+1. Update Pro tier pricing display from EUR 2 → EUR 5/mo on pricing page
+2. Keep lifetime deal anchor at EUR 99 (unchanged — still looks like a deal vs EUR 5/mo × 12 months)
+3. Add the framing: "Less than one espresso a month" (EUR 5 in Stockholm = literally less than a coffee)
+4. Monitor: conversion rate over next 14 days. If conversion drops <40%, EUR 5 is better NPV.
+5. Messaging update: "Cheaper than Excalidraw+ (€5 vs $7). Works in Lambda. No browser." — updated comparison copy
+
+**Hypothesis**: Zero price resistance at EUR 2 means zero price resistance at EUR 5. The only blocker is awareness, not price. Test it.
+
+---
+
+### Action 3 (MEDIUM — this week): Write "Skissify vs Frame0 — Desktop vs API" Comparison Post
+
+**Frame0 just created a new high-intent search query: "hand-drawn wireframe MCP serverless" — people who find Frame0 and hit the desktop limitation will search for alternatives. Skissify needs to be the answer.**
+
+Post structure:
+1. Hook: "Frame0 is a great hand-drawn wireframe tool — unless you're building a pipeline"
+2. What Frame0 does: hand-drawn wireframes + MCP + SVG export. Great for local design work.
+3. What Frame0 can't do: Deployed serverless functions, CI/CD, Docker containers, any environment without a running desktop app
+4. What Skissify does: POST JSON → SVG. Any environment. Zero setup. EUR 5/month.
+5. Decision table: "If you're designing locally → Frame0. If you're building a pipeline → Skissify."
+6. Code snippet: 5-line API call to Skissify from a Node.js Lambda function
+
+Distribution: dev.to, r/mcp, r/selfhosted, r/ClaudeAI
+SEO target: "hand-drawn diagram API serverless", "frame0 alternative headless", "MCP sketch tool pipeline"
+
+**Why now**: Frame0's MCP listing is recent. Being first in search results for "frame0 alternative" is a short window.
+
+---
+
 ## [2026-04-02] — Strategy Run #109 Actions (Thursday April 2, evening)
 
 ### Context: Run #109 Key New Findings

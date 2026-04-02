@@ -2,6 +2,114 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #111 (Thursday April 2, late night)
+
+### Theme: Enterprise MCP Is Proven Infrastructure — Skissify's API Model Is Right, Price Is Still Wrong
+
+#### The Pinterest Signal Changes the Enterprise Pitch
+
+Pinterest: 844 engineers, 66,000 MCP calls/month, 7,000 hours saved/month. At $50/hr that's $350,000/month in engineering time saved by MCP tools at a single company. This isn't a thesis — it's a published case study from Q1 2026.
+
+What does this mean for "why would someone pay EUR 2/mo for Skissify?"
+
+The question is wrong. The question should be: **"Why would an engineering team pay EUR 200/mo for Skissify's Enterprise tier?"** The Pinterest data answers it. If Skissify's MCP tool generates 5,000 architectural sketches per month for a team building an AI-driven design tool — at EUR 0.005/render that's EUR 25 in overage on a EUR 200/month flat rate. The team saves 50 hours of manual diagramming (at $50/hr = $2,500). ROI is 12.5x. That's the enterprise pitch.
+
+The EUR 2/mo question is for the freemium→Pro funnel. That pitch is different: "Is EUR 2/mo the right friction point to convert free users?" Answer: no. Because EUR 2 signals low confidence, not accessibility. The conversion trigger should be value (first meaningful use of the API in a real project), not price.
+
+#### Why EUR 2 Doesn't Work as a Conversion Trigger
+
+Three new data points from Run #111 confirm what Runs #108–110 suggested:
+
+1. **Credit-based pricing is 126% more common YoY** — users in 2026 expect base-subscription + usage charges. EUR 2 with no usage model looks like a toy, not a professional API.
+
+2. **Micro-SaaS floor is $9–29/mo** for developer tools — EUR 2 is 77% below the floor at which developers perceive value.
+
+3. **Pinterest case study** — the users who generate real ROI from API tools don't evaluate at EUR 2. They evaluate at "does this save my team time?" EUR 5 or EUR 9 would not prevent those conversions. EUR 2 just doesn't signal it.
+
+**The real question someone asks before upgrading:** "Will this work reliably in my CI/CD pipeline?" Not "is EUR 2 worth it?" The barrier is technical trust, not price. Which means raising to EUR 5 costs nothing and gains LTV.
+
+#### Google MCP Infrastructure + Skissify Absence = Compounding Gap
+
+Google just made MCP a first-class infrastructure primitive across all Google Cloud services. Microsoft, AWS, HashiCorp already did the same. This means:
+
+- Every AI framework, every enterprise AI project will default to MCP-compatible tools
+- The "visual output" gap in the MCP directory is about to become more visible as usage scales
+- Frame0 is listed. Draw.io is listed. Excalidraw is listed. SVGMaker is listed. Skissify is not listed.
+- At Google Cloud scale, "not listed" = "doesn't exist"
+
+The MCP registry action (#1 in every Daily Actions for 11 runs) has now escalated from "distribution opportunity" to "existence prerequisite."
+
+#### Updated Trigger Framework (12 triggers — unchanged since Run #110)
+
+All 12 triggers remain active. Trigger L (Frame0 desktop refugee) confirmed valid by Sketch2Diagram data: there IS a market for "hand-drawn ↔ digital" conversion tools, and the serverless/pipeline gap Frame0 can't fill is real. No new triggers identified this run.
+
+---
+
+## [2026-04-02] — Automated Strategy Run #110 (Thursday April 2, night)
+
+### Theme: Frame0 Validates the Category — and Skissify's Pricing Anchor Is Wrong
+
+#### Frame0: The Market Is Telling You Something
+
+Frame0 launched an MCP server for hand-drawn wireframes with SVG export. This is the most structurally similar competitor Skissify has encountered across 110 strategy runs. Frame0 exists because someone looked at the space and concluded: "there is demand for a hand-drawn sketch tool with MCP + SVG output."
+
+What Frame0 got right: hand-drawn aesthetic, SVG output, MCP integration, AI agent workflow compatibility.
+
+What Frame0 got wrong (for Skissify's target user): desktop app as backend. A developer building a CI/CD pipeline or serverless function cannot depend on a macOS/Windows desktop app being installed on a server. This is not a minor limitation — it is architecturally incompatible with automated pipelines.
+
+**The EUR 2 conversion insight this creates**: Frame0 users who ship an AI agent pipeline, discover the desktop app limitation in production, and need a hosted headless alternative → find Skissify. EUR 2 is trivial against the cost of debugging a failed deployment. Call this Trigger L.
+
+#### New Trigger L — Frame0 Desktop Refugee
+
+| Trigger | Discovery Moment | Why EUR 2 Is Easy | Urgency |
+|---------|-----------------|-------------------|---------|
+| **L: Frame0 Desktop Refugee** | Tries Frame0 MCP for CI/CD/serverless, hits desktop app wall in production | Skissify = hosted API, no desktop install, works in Lambda | **MEDIUM-HIGH (new, Run #110)** |
+
+#### EUR 2 Is Below the Micro-SaaS Pricing Floor — Test EUR 5/mo Now
+
+**New data this run** confirms EUR 2 has no comparable product in the micro-SaaS market at that price point. The floor for developer tools is $9–29/month. Napkin.ai: $12/mo. 21st.dev: $16/mo. Excalidraw+: $6–7/mo.
+
+EUR 2/mo signals:
+- "I'm not confident in the value" (founder psychology)
+- "This might be a toy" (buyer psychology)
+- Caps LTV at EUR 24/year per user
+
+EUR 5/mo signals:
+- Still 30% cheaper than Excalidraw+'s cheapest tier
+- Still 70% cheaper than Napkin.ai
+- Still below the "needs expense approval" threshold
+- Matches what 21st.dev (the MCP comparable case study) charges at the low end of freemium
+- LTV EUR 60/year per user (2.5x improvement, same conversion rate)
+
+**Recommended action**: Run a single pricing test. Bump the displayed Pro price to EUR 5/mo. Measure conversion change over 2 weeks. If conversion drops by less than 40%, the EUR 5 point has better NPV. Given zero price resistance across all 12 identified triggers, the hypothesis is that conversion will not meaningfully drop.
+
+#### Updated Trigger Framework (12 triggers — Run #110)
+
+| # | Trigger | EUR 2 Friction | Status |
+|---|---------|---------------|--------|
+| A | Excalidraw headless refugee | Zero | ACTIVE |
+| B | Enterprise pipeline builder | Zero | ACTIVE |
+| C | tldraw node user | Low | ACTIVE |
+| D | Design-to-sketch backfill | Low | ACTIVE |
+| E | Claude Code user mid-session | Zero | ACTIVE |
+| F | 14-day opt-out auto-convert | Zero | ACTIVE |
+| G | Enterprise-blocked developer | Low | ACTIVE |
+| H | Draw.io aesthetic refugee | Zero | ACTIVE |
+| I | Stitch user wanting upstream sketch tool | Low | ACTIVE (Run #107) |
+| J | Chromium refugee from `excalidraw-render` | Zero | ACTIVE (Run #108) |
+| K | Excalidraw+ MCP evaluator (browser wall hit) | Zero | ACTIVE (Run #109) |
+| **L** | **Frame0 desktop refugee (CI/CD wall hit)** | **Zero** | **NEW (Run #110)** |
+
+#### PulseMCP Scale Revision: 14,274 Servers — Urgency Compounds
+
+Previous runs used 11,000 as the MCP server count. PulseMCP's own directory shows 14,274. The earlier figure came from a third-party article. The actual scale is 30% larger than modeled.
+
+In a 14,274-server ecosystem, the "visual output" category is occupied by: Draw.io (clean vector), Mermaid (text-to-chart), Frame0 (desktop-required hand-drawn), SVGMaker (generative decorative SVG). The "headless structured JSON→hand-drawn SVG via hosted API" slot remains empty across 14,274 servers.
+
+Being absent from this directory costs more than previously estimated. The MCP registry action is not optional.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #109 (Thursday April 2, evening)
 
 ### Theme: Excalidraw Official MCP Launch — What It Changes for Skissify's EUR 2 Pitch

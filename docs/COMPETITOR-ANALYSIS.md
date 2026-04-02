@@ -2,6 +2,199 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #111 (Thursday April 2, late night)
+
+### Status: 5 topics researched. KEY FINDINGS: **Pinterest deployed production-scale MCP** (844 users, 66K invocations/month, 7,000 hours saved/month) — enterprise MCP is no longer a thesis, it's proven infrastructure. **Google officially extended MCP support to ALL Google services** — MCP is becoming OS-level infrastructure. **Credit-based pricing up 126% YoY** (79 of 500 SaaS companies) — Skissify's per-render API model is trend-aligned but base price anchor remains below floor. **Sketch2Diagram** (Devpost) converts hand-drawn→digital diagrams (opposite of Skissify, not a threat). **Google Stitch "biggest upgrades"** with AI-native canvas + Claude Code integration — remains upstream of Skissify's use case. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #111 — 11th consecutive confirmation).
+
+---
+
+### Pinterest Production MCP — Enterprise Validation Confirmed (STRONG POSITIVE SIGNAL)
+
+**Sources**: infoq.com/news/2026/04/pinterest-mcp-ecosystem/ (verified 2026-04-02)
+
+Pinterest engineering has deployed a production-grade MCP ecosystem across real engineering teams:
+- **844 active users** running MCP-powered AI workflows
+- **66,000 invocations/month** across all MCP tools
+- **7,000 hours saved/month** — real, measurable productivity ROI
+- Tools: internal task automation, diverse internal tool integrations
+
+**For Skissify**: This is the single most important signal in 10+ runs for the enterprise API pitch. A Fortune 500 company is processing 66,000 MCP tool calls per month and documenting the ROI. When an enterprise architect asks "why would I pay for an MCP tool?" — the answer is now Pinterest: 7,000 hours/month saved at $50/hr = $350,000/month in saved engineering time for one company. Visual output generation (diagrams, floor plans, architectural sketches) is a high-frequency enterprise task. If Skissify processes 1,000 renders/month for one enterprise client at EUR 0.005/render = EUR 5. The value exchange is wildly favorable. **This data makes the Enterprise tier pitch concrete. Use it.**
+
+**Threat assessment: POSITIVE** — Pinterest's deployment validates Skissify's entire business model premise: MCP tools at scale, paid API, enterprise ROI.
+
+---
+
+### Google Official MCP for ALL Services — MCP Is Now Infrastructure (MAJOR POSITIVE SIGNAL)
+
+**Sources**: cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services (verified 2026-04-02)
+
+Google has announced fully-managed, remote MCP servers covering ALL Google and Google Cloud services via a unified MCP layer. Key implications:
+- MCP is no longer a developer-tool niche — it is platform infrastructure
+- Google joins Microsoft, AWS, HashiCorp as enterprise MCP backers
+- Unified MCP layer = any Claude/AI agent can now call any Google service natively
+- The addressable market for MCP tools just expanded to every Google Cloud user
+
+**For Skissify**: When Google treats MCP as infrastructure, the developer ecosystem takes notice. Every AI agent framework (LangChain, CrewAI, AutoGen, Mastra, n8n) will prioritize MCP compatibility. Skissify being absent from MCP registries is now a larger competitive deficit than it was in Run #110. **The registration urgency is now INFRASTRUCTURE-LEVEL, not just a distribution tactic.**
+
+**Threat assessment: POSITIVE (accelerates the entire MCP ecosystem Skissify benefits from)**
+
+---
+
+### Credit-Based Pricing 126% YoY — Skissify's API Model Is Trend-Aligned (PRICING SIGNAL)
+
+**Sources**: growthunhinged.com/p/2025-state-of-saas-pricing-changes, zylo.com/blog/saas-statistics/ (verified 2026-04-02)
+
+2026 SaaS pricing data:
+- **Credit-based pricing models**: 79 of 500 index companies (was 35 in 2024) — **126% YoY increase**
+- **Hybrid model** (base sub + usage charges): gold standard for developer tools
+- **Solo practitioner pricing floor**: $29–49/month
+- **Micro-SaaS sweet spot**: $9–29/month for single-user developer tools
+- **SaaS market**: projected $299B–$908B in 2026 (range across sources)
+
+**For Skissify**: The per-render pricing model (EUR 0.005/render overage) is perfectly aligned with the dominant 2026 pricing trend. This is not a strategic experiment — it is the industry standard. The base subscription (EUR 2/mo) remains the anomaly. EUR 5–9/mo aligns with the micro-SaaS floor. The credit/usage hybrid (base sub + overage renders) is exactly what 79 of the top 500 SaaS companies now do. Skissify's architecture is right. The price anchor is wrong.
+
+---
+
+### Google Stitch "Biggest Upgrades" — AI-Native Canvas + Claude Code Integration (LOW, MONITOR)
+
+**Sources**: medium.com/design-bootcamp/my-hands-on-walkthrough-of-google-stitchs-biggest-upgrades-yet-b8cb921ccee8, stitch.withgoogle.com/docs/mcp/setup/ (verified 2026-04-02)
+
+Google Stitch shipped its biggest upgrade: AI-native canvas for exploration, image/text/code input, bidirectional design-to-code sync. New integrations: Claude Code, Gemini CLI, VS Code, Cursor. Stitch MCP now listed on mcpservers.org.
+
+**For Stitch vs Skissify**: Stitch = AI generates polished UI from descriptions (design-to-code). Skissify = AI generates hand-drawn sketches from JSON (idea-to-sketch). The workflows diverge at "stage of fidelity": Stitch is for finalizing, Skissify is for exploring. Stitch's Claude Code integration creates a new angle: a developer using Claude Code for a project might use Stitch for polished mockups AND Skissify for quick architectural sketches in the same session. **Complementary, not competitive.**
+
+**Threat assessment: LOW** — Stitch going deeper into design-to-code makes it less of a Skissify substitute. The hand-drawn sketch use case (early exploration, rough ideas, floor plans) is not where Stitch is heading.
+
+---
+
+### Sketch2Diagram — Reverse Direction (NOT A THREAT)
+
+**Sources**: devpost.com/software/sketch2diagram (verified 2026-04-02)
+
+Sketch2Diagram converts hand-drawn sketches (drawn with mouse/stylus) into clean digital flowcharts using AI + geometric rules. SVG/Mermaid export. Browser-based.
+
+**Assessment**: Opposite direction from Skissify. Sketch2Diagram: physical/drawn input → clean digital. Skissify: structured JSON input → hand-drawn visual. These are entirely different use cases and audiences. No competitive overlap. **Threat level: NONE. Validates that humans want to move between sketch and digital formats — Skissify serves the JSON→sketch direction.**
+
+---
+
+### Updated Competitor Matrix (Run #111 — Thursday April 2, late night)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Frame0** | MCP server on PulseMCP. Hand-drawn wireframes. SVG export. Desktop app required. | NO (requires desktop app) | **YES** | YES (desktop) | YES | **MEDIUM (closest architecture match, but desktop-only)** |
+| **Excalidraw+** | Official MCP (Feb 2026) — browser session-based. `excalidraw-render`: Chromium (3s cold start, 170MB). | NO (requires Chromium or browser) | YES | NO | YES (browser-based) | **HIGH — Chromium moat holds** |
+| **tldraw SDK** | v4.5.6 (April 2, 2026) minor patch. SVG sanitization. No headless API. $6K/yr. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Draw.io (JGraph)** | Official MCP Feb 2026. 700+ enterprise icons. Enterprise credibility. Multiple tutorials now prominent. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Google Stitch** | Biggest upgrade: AI-native canvas, Claude Code integration. MCP listed. Design-to-code direction. | NO | NO (consumes sketches) | YES | YES (new) | **LOW (diverging use case)** |
+| **Sketch (design tool)** | MCP server — enterprise design-to-code pipeline. macOS only. | NO | NO | YES | YES | **MEDIUM (new channel)** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **Blueprint-MCP** | Code→architecture diagram via MCP. Clean vector. | NO | NO | YES | YES | **LOW** |
+| **SVGMaker MCP** | Text→clean SVG via MCP. Freemium. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM** |
+| **svg2roughjs** | OSS library: SVG→hand-drawn. No hosted API, no MCP. | NO (library only) | YES (library) | YES | NO | **LOW (validates niche)** |
+| **Sketch2Diagram** | Hand-drawn→clean digital flowchart. Reverse direction. | NO | NO (opposite) | YES | NO | **NONE** |
+| **Skissify** | Headless JSON→hand-drawn SVG: **zero Chromium, instant cold start, uncontested**. MCP Registry: ABSENT (CRITICAL × 11). | **YES (only one, no Chromium, no desktop)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
+## [2026-04-02] — Automated Strategy Run #110 (Thursday April 2, night)
+
+### Status: 5 topics researched. KEY FINDINGS: **Frame0 Diagramming MCP** discovered — hand-drawn wireframes + SVG export + MCP integration, BUT requires Frame0 desktop app as backend (not serverless). This is the closest competitor architecture yet found. tldraw v4.5.6 minor patch published today (April 2). PulseMCP confirmed at **14,274 servers** (vs 11,000 estimate in Run #107 — 30% revision). **svg2roughjs** (OSS library: SVG→hand-drawn) validates the niche but no hosted API exists. Micro-SaaS pricing floor confirmed at $9–29/mo for dev tools — EUR 2/mo is structurally below market. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #110 — 10th consecutive confirmation).
+
+---
+
+### Frame0 Diagramming MCP — Closest Competitor Architecture Yet Found (MEDIUM THREAT, NEW)
+
+**Sources**: pulsemcp.com/servers/niklauslee-frame0-diagramming, frame0.app (verified 2026-04-02)
+
+Frame0 is a hand-drawn wireframe tool that has published an MCP server on PulseMCP. Capabilities:
+- **Hand-drawn wireframe style** (sketch aesthetic)
+- **SVG export** (+ PNG, JPEG, WebP)
+- **MCP integration** — AI agents can create wireframes via MCP
+- **Prompt-driven**: describe UI layout → Frame0 renders it in hand-drawn style
+
+**Critical limitation**: Frame0 MCP requires the **Frame0 desktop application running as a backend**. It is a local MCP server that talks to the Frame0 desktop app — not a hosted stateless API. This means:
+- Cannot deploy to serverless (Lambda, Cloudflare Workers)
+- Cannot run in CI/CD pipelines without desktop app installed
+- Not available as a paid hosted API
+- User must install and run Frame0 locally
+
+**What Frame0 does NOT have**: No JSON schema for spatial/architectural elements. No doors, windows, stairs, dimension annotations. No paper type / tool type parameters. No hosted SaaS API.
+
+**Threat assessment: MEDIUM (new, highest-architecture overlap yet)** — Frame0 is the first competitor that ticks "hand-drawn style + SVG export + MCP integration" simultaneously. However, the desktop-app dependency is a fundamental blocker for the pipeline/serverless use cases Skissify targets. A developer building an AI agent workflow cannot depend on Frame0 desktop being installed on a server. Skissify's zero-dependency API remains categorically different.
+
+**Skissify response**: Frame0 validates that the market wants exactly what Skissify does (hand-drawn + MCP + SVG). The differentiator: Skissify = POST JSON → SVG via hosted API, no desktop, no session. Use Frame0's existence as social proof that the category is real, while highlighting the serverless/pipeline gap Frame0 cannot fill.
+
+**New conversion trigger**: Frame0 users who hit the desktop-app limitation for CI/CD or serverless pipelines → Trigger L.
+
+---
+
+### tldraw v4.5.6 — Minor Patch Today (LOW-STABLE)
+
+**Sources**: npmjs.com/package/tldraw (verified 2026-04-02, "published 8 hours ago")
+
+tldraw v4.5.6 published April 2, 2026. Based on the patch version, this is a bug-fix release on the 4.5.x line (SVG sanitization, high-DPI images, click-through transparency introduced in 4.5.0). No new headless render capabilities. No pricing changes. $6,000/year commercial license unchanged.
+
+**Threat assessment: LOW-STABLE** — Patch cadence is healthy (multiple releases per month) but still no movement toward headless JSON→SVG API. SVG sanitization in 4.5.0 remains the only signal of production SVG interest. Watch 4.6.0 for escalation.
+
+---
+
+### PulseMCP Scale — 14,274 Servers Confirmed (POSITIVE SIGNAL)
+
+**Sources**: pulsemcp.com/servers (verified 2026-04-02)
+
+PulseMCP officially lists **14,274 MCP servers** — significantly higher than the 11,000 figure from a dev.to article cited in Run #107. This 30% revision means the MCP ecosystem is larger than previously modeled. Combined with the "less than 5% monetized" stat from Run #107, the non-monetized gap is even wider than estimated.
+
+**For Skissify**: The "visual output / hand-drawn sketch" category among 14,274 servers is occupied by: Draw.io (clean vector), Mermaid (text-to-chart), Frame0 (desktop-required hand-drawn), SVGMaker (AI-generated decorative SVG). The headless structured JSON→hand-drawn SVG slot remains empty. With 14,274 servers, directory visibility has never mattered more — being absent is worse, not better.
+
+---
+
+### svg2roughjs — OSS Niche Validator (LOW, INFORMATIONAL)
+
+**Sources**: github.com/fskpf/svg2roughjs (verified 2026-04-02)
+
+`svg2roughjs` is an open-source JavaScript library that takes any SVG and converts it to a Rough.js hand-drawn rendering. It is the closest open-source primitive to what Skissify does as a hosted API. Key facts:
+- Library only — no hosted SaaS, no API, no MCP integration
+- Input: existing SVG (not JSON manifest)
+- Output: Rough.js-rendered hand-drawn version of the SVG
+- Actively maintained on GitHub
+- Used as an open-source building block, not a product
+
+**For Skissify**: The existence of svg2roughjs confirms developer appetite for programmatic hand-drawn rendering. The gap from "open-source library you wire up yourself" to "hosted API you POST JSON to and get SVG back" is exactly the gap Skissify fills. No one has turned svg2roughjs (or Rough.js) into a hosted, JSON-first, architectural-domain-aware SaaS. **Skissify owns this gap.**
+
+---
+
+### Micro-SaaS Pricing Floor — EUR 2 May Be Underpriced (STRATEGIC SIGNAL)
+
+**Sources**: nxcode.io/micro-saas-ideas-2026, medium.com/@aymane.bt/the-future-of-saas-pricing-in-2026 (verified 2026-04-02)
+
+2026 micro-SaaS pricing data:
+- **Developer tools**: $9–$29/month typical floor
+- **AI content tools**: $19–$99/month
+- **21st.dev precedent**: $16/month (UI components via MCP) → $10K MRR in 6 weeks
+- **Napkin.ai**: $12/month (text→polished diagrams)
+- **Excalidraw+**: $6–7/user/month
+- **EUR 2/month**: No established product found at this price point in search results — below the psychological micro-SaaS floor
+
+**Analysis**: EUR 2 is priced for impulse acquisition, not value signaling. At EUR 2, Skissify signals "toy project" rather than "professional tool." The 21st.dev case study ($16/mo, $10K MRR in 6 weeks) demonstrates that MCP tool buyers are willing to pay 8x more than Skissify's current anchor. EUR 5/mo (matching Excalidraw+ at the low end) would still be 30% cheaper than Excalidraw+ while signaling professional tier. Testing EUR 5/mo is now data-backed, not speculative.
+
+---
+
+### Updated Competitor Matrix (Run #110 — Thursday April 2, night)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Frame0** | MCP server on PulseMCP. Hand-drawn wireframes. SVG export. Desktop app required. | NO (requires desktop app) | **YES** | YES (desktop) | YES | **MEDIUM (new — closest architecture match, but desktop-only)** |
+| **Excalidraw+** | Official MCP (Feb 2026) — browser session-based. `excalidraw-render`: Chromium (3s cold start, 170MB). | NO (requires Chromium or browser) | YES | NO | YES (browser-based) | **HIGH — Chromium moat holds** |
+| **tldraw SDK** | v4.5.6 (April 2, 2026) minor patch. SVG sanitization. No headless API. $6K/yr. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Draw.io (JGraph)** | Official MCP Feb 2026. 700+ enterprise icons. Enterprise credibility. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Sketch design tool** | MCP server — enterprise design-to-code pipeline. macOS only. | NO | NO | YES | YES | **MEDIUM (new channel)** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **SVGMaker MCP** | Text→clean SVG via MCP. Freemium. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM (directory collision)** |
+| **svg2roughjs** | OSS library: SVG→hand-drawn conversion. No hosted API, no MCP. | NO (library only) | YES (library) | YES | NO | **LOW (validates niche, not competitive)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: **zero Chromium, instant cold start, uncontested**. MCP Registry: ABSENT (CRITICAL × 10). | **YES (only one, no Chromium, no desktop)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #109 (Thursday April 2, evening)
 
 ### Status: 6 topics researched. KEY FINDINGS: Excalidraw+ added **official MCP support in Feb 2026** + Custom AI Tokens — closing the AI integration gap but still Chromium-dependent for headless rendering. tldraw v4.5.0 (March 18) adds SVG sanitization + high-DPI image sizing + click-through transparent pixels — no headless JSON API, $6K/yr unchanged. Sketch (design tool) launched its own MCP server. Blueprint-MCP (ArcadeAI) entered the "code-to-diagram" niche via MCP. New entrant: Sketch2scheme converts hand-drawn sketches to digital — opposite direction from Skissify. dAIgram converts images to editable diagrams. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #109 confirms for 9th consecutive session).
