@@ -69,6 +69,41 @@ Skissify is a sketch rendering API built for the age of AI agents. The tool acce
 
 ---
 
+## Cycle 119 Status — April 2, 2026 (Show HN Eve Final Pass)
+
+| Item | Status |
+|------|--------|
+| Blog: "The Curl Test: 30-Second Way to Judge an AI Tool" (new unique angle, evergreen SEO) | ✅ **NEW** — `blog/the-curl-test-30-second-way-to-judge-an-ai-tool-cycle119.md` — post to Dev.to + HackerNoon day 4–7 |
+| Blog: "Skissify in n8n, Make.com, and Zapier" (automation workflow guide, buyer persona) | ✅ **NEW** — `blog/skissify-in-n8n-make-zapier-workflow-automation-cycle119.md` — post to n8n community forum + Dev.to |
+| SOCIAL-MEDIA.md Cycle 119 | ✅ **NEW** — Farcaster, Raycast, Zed, DevHunt, LinkedIn Newsletter, YouTube Shorts variant, Val Town |
+| New channels: Farcaster /dev, Raycast, Zed Discord, Val Town, DevHunt | ✅ **IDENTIFIED** — in SOCIAL-MEDIA.md Cycle 119 |
+| New hashtags: #VibeArchitecture #AgentDriven #DrawFirst #SketchAPI | ✅ **ADDED** — in SOCIAL-MEDIA.md Cycle 119 |
+| LAUNCH-PLAN.md Cycle 119 update | ✅ **DONE** |
+| MCP Discord #showcase | ⚠️ **OVERDUE since Cycle 111** — do Show HN day |
+| r/LocalLLaMA (2.3M) | ⚠️ **OVERDUE** — do Show HN day |
+| Indie Hackers | ⚠️ **OVERDUE since Cycle 98** — do Show HN day |
+| Smol Launch | ⚠️ **OVERDUE since Cycle 111** — do Show HN day |
+| DevHunt | ⚠️ **NEW — submit Show HN day** — 7-day window, parallel to HN |
+| Demo video | ⚠️ **P0 FOREVER** |
+| AlternativeTo | ⚠️ **OVERDUE** |
+| SaaSHub | ⚠️ **OVERDUE** |
+
+**Cycle 119 Show HN day P0 sequence (COMPLETE VERSION):**
+1. Post Show HN 09:00–11:00 CET (Cycle 113 copy) — anchor
+2. Post Farcaster /dev — Cycle 119 copy (if not done tonight)
+3. Submit DevHunt — Cycle 119 pack — immediately after Show HN post
+4. Post MCP Discord #showcase — OVERDUE — P0
+5. Post r/LocalLLaMA — OVERDUE — P0
+6. Twitter hook at 08:45 CET (Cycle 118)
+7. LinkedIn at 09:30 CET
+8. Post Indie Hackers — OVERDUE
+9. Submit Smol Launch — OVERDUE
+10. Engage HN comments (15-min SLA on every comment)
+11. Post n8n automation blog to n8n community forum
+12. Post Raycast community
+
+---
+
 ## Day 3 Status — Cycle 116 Update (April 3, 2026 — Show HN Day)
 
 | Item | Status |

@@ -1,7 +1,76 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2 — Day 2 Evening / Pre-Show-HN Warm-Up (SEE CYCLE 117)**
+**Current Date: April 2 — Day 2 Night / SHOW HN EVE (SEE CYCLE 119)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02 Late Night, Cycle 119 — Show HN Eve Final Pass)
+
+### Cycle 119 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "The Curl Test: The 30-Second Way to Judge an AI Tool" (new unique angle — curl as trust-signal, not covered in 277+ prior blogs) | `blog/the-curl-test-30-second-way-to-judge-an-ai-tool-cycle119.md` | ✅ Written — post to Dev.to / HackerNoon day 4+ |
+| Blog: "Skissify in n8n, Make.com, and Zapier" (automation workflow guide with actual JSON workflow configs — never written before) | `blog/skissify-in-n8n-make-zapier-workflow-automation-cycle119.md` | ✅ Written — post to n8n community blog + Dev.to |
+| SOCIAL-MEDIA.md Cycle 119 (Farcaster/Warpcast copy for tonight, Raycast community copy, Zed editor copy, DevHunt 7-day submission pack, GitHub README badge copy, LinkedIn Newsletter format post, YouTube Shorts 30s script, new hashtags: #VibeArchitecture #AgentDriven #DrawFirst #SketchAPI, new communities: Farcaster /dev, Raycast, Zed Discord, Val Town) | SOCIAL-MEDIA.md Cycle 119 | ✅ Written |
+| HASHTAGS-AND-COMMUNITIES.md — Cycle 119 hashtag additions | HASHTAGS-AND-COMMUNITIES.md | ✅ Added inline in SOCIAL-MEDIA.md |
+
+### Cycle 119 — Priority Actions for Tonight (April 2 — 23:00 CET)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **Post Farcaster /dev cast** — Cycle 119 technical hook — tonight before bed | 🔴 P0 — do tonight | 3 min |
+| **Post warm-up Twitter thread** — Cycle 117/118 copy — if not yet done | 🔴 P0 — do tonight | 5 min |
+| **Post Mastodon/Fosstodon** — any previous cycle copy — if not yet done | 🟡 P1 — do tonight | 3 min |
+| **Sleep** — Show HN 09:00 CET requires you to be sharp | ✅ Required | 6+ hrs |
+
+### Cycle 119 — Priority Actions for Tomorrow (April 3 — Show HN Day)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Show HN 09:00–11:00 CET** — copy in SOCIAL-MEDIA.md Cycle 113 | 🔴 P0 — ANCHOR ACTION | 2 min |
+| **Submit DevHunt** — Cycle 119 submission copy — 7-day window, run parallel to Show HN | 🔴 P0 — NEW | 10 min |
+| **Post r/LocalLLaMA (2.3M)** — never posted — Cycle 116 copy | 🔴 P0 OVERDUE | 5 min |
+| **Post MCP Discord #showcase** — OVERDUE since Cycle 111 | 🔴 P0 OVERDUE | 5 min |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | 🔴 P0 OVERDUE | 5 min |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | 🔴 P0 OVERDUE | 10 min |
+| **Engage every HN comment within 15 min** — Cycle 117 scripts | 🔴 P0 ongoing | ongoing |
+| **Post n8n automation blog** — Cycle 119 — to n8n community forum + Dev.to | 🟡 P1 — NEW | 10 min |
+| **Post Raycast community** — Cycle 119 copy — high MCP overlap | 🟡 P1 — NEW | 5 min |
+| **Post Val Town community** — Cycle 119 copy — one-liner val angle | 🟡 P1 — NEW | 3 min |
+| **Publish LinkedIn Newsletter** — Cycle 119 "I gave my AI agent a pencil" | 🟡 P1 — NEW | 5 min |
+| **RECORD DEMO VIDEO** — P0 FOREVER UNTIL DONE | 🔴 P0 | 20 min |
+
+### Cycle 119 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| Farcaster /dev channel | High HN overlap, crypto-adjacent tech founders. Many have migrated there from Twitter. Low posting volume = more visibility. | 🔴 P0 — tonight |
+| Raycast community | Raycast users install MCP extensions. Exact target demographic. Power developers, high conversion rate. | 🟡 P1 — day 3+ |
+| Val Town | Serverless function platform. Skissify is a perfect one-liner val. Community shares useful one-liners. | 🟡 P1 — day 3+ |
+| DevHunt.org | 7-day launch window (vs PH 24h). Better for sustained developer traction. Requires separate submission. | 🔴 P0 — Show HN day |
+| LinkedIn Newsletter | Different from regular LinkedIn posts — reaches 100% of followers. One post = permanent newsletter issue. | 🟡 P1 — Show HN day |
+| Zed Discord | AI-first editor. Users are exactly building agent workflows. | 🟡 P1 — day 3+ |
+
+### Cycle 119 — Strategic Insight (The Last Night)
+
+**You've produced 277+ blog posts, 119 cycles of social copy, and comprehensive launch materials.** The bottleneck is not content — it's execution. Tonight's highest-leverage action is:
+
+1. Farcaster cast (3 min) — reaches HN-adjacent audience before they go to bed
+2. Sleep (6+ hrs) — you need to be sharp and responsive for HN comments
+
+Tomorrow's highest-leverage actions are, in order:
+1. Post Show HN (anchor — everything else amplifies this)
+2. Submit DevHunt immediately after (7-day window catches the long tail)
+3. Post the 4 OVERDUE channels (MCP Discord, r/LocalLLaMA, Indie Hackers, Smol Launch)
+4. Engage every HN comment within 15 minutes (the HN algorithm rewards engagement velocity)
+
+**The Curl Test blog is your best SEO long-play.** It targets "how to evaluate AI tools" — a permanent evergreen query — while naturally ranking for "Skissify." Post to Dev.to and HackerNoon 3–5 days after Show HN when the news hook has settled.
+
+**The n8n automation blog targets a buyer persona with budget.** n8n community users run automation workflows for businesses. They pay for API access. This blog should go to the n8n community forum, not just Dev.to.
+
+---
 
 ---
 

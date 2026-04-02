@@ -2,6 +2,49 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #114 (Thursday April 2, 22:12 Stockholm)
+
+### Theme: The Digitization Crowd Confirms the Rendering Gap. Two Registries. Credit Pricing Wins.
+
+#### The Sketch-Digitization Market Is Now Three Deep — Skissify's Side Is Empty
+
+Run #114 surfaces **Sketch2scheme** (sketch2scheme.com): photo of hand-drawn sketch → Draw.io/Mermaid export. Added to dAIgram (photo→JSON diagram) and SnapDiagram, the hand-drawn-to-digital direction now has at least three active tools. This is now a *crowded direction*.
+
+The strategic implication: the more tools that solve "digitize my hand-drawn sketch," the more clearly Skissify owns the opposite pole — "render my structured data as a hand-drawn sketch." These tools are inadvertently marketing Skissify's category by proving the category exists.
+
+**Positioning sharpening**: Skissify's tagline should lean into the contrast: "You've got tools to digitize your sketches. Skissify runs the pipeline the other way." This framing acknowledges the market, differentiates immediately, and is impossible for dAIgram/Sketch2scheme to dispute.
+
+#### Why Someone Pays EUR 5/mo for Skissify (New Trigger — Run #114)
+
+**Trigger O (Sketch2scheme / dAIgram pipeline user)**: "I have three tools to turn my hand-drawn sketches into clean diagrams. I have zero tools to turn my clean data back into a hand-drawn sketch. I need Skissify to run the return leg — re-render a finalized JSON manifest as a sketch for a client presentation that shouldn't look 'done' yet."
+
+This trigger is important: it reframes payment not as "paying for a diagram tool" but as "paying for the aesthetic that signals a specific collaboration intent." Clients treat polished diagrams differently than sketches. The sketch communicates "we're still deciding." That communication intent has business value. EUR 5/mo for that signal is cheap.
+
+#### Two Registries, Not One — Discovery Surface Area Just Doubled
+
+Prior runs tracked modelcontextprotocol.io (6,400+ servers) as the single registry target. Run #114 surfaces the **MACH Alliance MCP Registry** (machalliance.org) — a separate enterprise-focused curated registry, planned Q4 2026, targeting enterprise architects and composable system builders. This is a *different audience* from the developer-community registry.
+
+The MACH Alliance audience (enterprise CTO, architecture teams, composable tech buyers) is:
+- Exactly Skissify's EUR 200/month Enterprise tier target
+- Likely to query a curated, verified registry rather than the community one
+- Aligned with architectural diagramming use cases (floor plans, system designs)
+
+**Combined registry strategy**: submit to modelcontextprotocol.io for developer discovery, submit to MACH Alliance for enterprise discovery. Two different buyers, two different registries. Both are underserved by any hand-drawn sketch tool.
+
+#### Credit Pricing is the Fastest-Growing SaaS Pricing Model — +126% YoY
+
+New hard number from PricingSaaS 500 data: credit-based pricing grew 126% YoY (35 → 79 companies out of 500). This is the *fastest-growing pricing model* in the dataset. Combined with Gartner's 70% preference-shift forecast and the hybrid model trajectory (43% → 61% by year-end), Skissify's per-render billing is structurally correct.
+
+The one remaining risk: spend predictability. 78% of IT leaders cite surprise bills as #1 concern (documented Run #112). The fix is explicit spend caps on the pricing page, not a model change. EUR 5 Pro is correct. EUR 0.005/render overage is correct. A "max monthly overage: EUR X — we'll pause and ask before charging more" is the missing UX that closes the enterprise veto.
+
+#### MCP Server Cards — The .well-known Endpoint Worth 2 Hours
+
+The MCP spec roadmap includes Server Cards: `.well-known/mcp-server.json` endpoints that make a tool self-describing without registry dependency. Implementation cost: ~2 hours to return a static JSON with capabilities, pricing, and schema. Benefit: any agent framework that checks `.well-known` auto-discovers Skissify without manual configuration.
+
+This is the lowest-effort, highest-optionality action available. Implement it alongside the registry submission. It costs 2 hours and makes Skissify auto-discoverable forever.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #113 (Thursday April 2, 21:04 Stockholm)
 
 ### Theme: The JSON+Sketch Axis Has New Entrants — Skissify's Moat Is Still the Headless API

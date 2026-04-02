@@ -2,6 +2,108 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #114 (Thursday April 2, 22:12 Stockholm)
+
+### Status: 5 topics researched. KEY FINDINGS: **Sketch2scheme** discovered — photo of hand-drawn sketch → digital flowchart export (Draw.io/Mermaid). Third photo-to-diagram tool found (after dAIgram, SnapDiagram); confirms digitization direction is well-served but JSON-to-hand-drawn side remains uncontested. **Pinterest MCP production deployment** confirmed (InfoQ, April 2026) — enterprise MCP is now real at scale. **MACH Alliance MCP Registry** launching Q4 2026 — separate enterprise-focused registry from modelcontextprotocol.io; TWO registries to submit to. **MCP Server Cards** (.well-known metadata URL spec) coming in official MCP spec — early implementation advantage. **Credit-based SaaS pricing +126% YoY** (79/500 PricingSaaS companies, up from 35 in 2024). **Gartner: 70% of businesses will prefer usage-based over per-seat by 2026**. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #114 — 14th consecutive confirmation).
+
+---
+
+### Sketch2scheme — Hand-drawn Photo → Digital Flowchart (LOW THREAT, NEW)
+
+**Sources**: sketch2scheme.com (verified 2026-04-02)
+
+Sketch2scheme converts photos of hand-drawn sketches → digital flowcharts with export to Draw.io, Mermaid, PNG, SVG, PDF. Third photo-to-diagram tool discovered (alongside dAIgram and SnapDiagram):
+- **Input**: Photo of hand-drawn sketch
+- **Output**: Digital flowchart (Draw.io / Mermaid format, SVG/PNG/PDF)
+- **Direction**: Physical sketch → structured data (same as dAIgram — opposite to Skissify)
+- No JSON input. No MCP integration found. No headless API.
+
+**For Skissify**: The sketch-digitization market (photo→diagram) is now clearly served by at least 3 tools. This further validates that the *opposite* direction (JSON→hand-drawn) is genuinely unoccupied. The more crowded the "digitize my sketch" space becomes, the clearer Skissify's positioning: "You already have tools to digitize your sketch. Skissify is for when your data needs to look like a sketch."
+
+One angle: developers who use Sketch2scheme to digitize whiteboard sessions could feed that output into Skissify for re-rendering with tunable hand-drawn quality and architectural elements. Third potential pipeline partner after dAIgram.
+
+**Threat assessment: LOW (opposite direction, validates the gap)**
+
+---
+
+### Pinterest MCP — Production Scale Confirms Enterprise MCP is Real (CONTEXT SIGNAL)
+
+**Sources**: infoq.com/news/2026/04/pinterest-mcp-ecosystem/ (April 2026)
+
+Pinterest deployed MCP at production scale for agent workflows. Previously documented (prior runs) was Pinterest saving 7,000 hours/month with MCP. This InfoQ April 2026 report confirms the deployment is real and operational.
+- Confirms: enterprise teams are building MCP tool stacks in production, not just prototyping
+- Confirms: the "approved tool stack" pattern (IT selects MCP servers, deploys org-wide) is live
+- Confirms: missing from enterprise MCP stack = missing from enterprise discovery
+
+**For Skissify**: If an enterprise is building a Pinterest-scale agent workflow and needs architectural diagram output, they query their MCP registry. Skissify is not there. This is the clearest proof yet of what's being missed. The window for "early, lower-bar submission" is Q2 2026 (now). Q4 2026 verified registries will require SLA commitments.
+
+---
+
+### MACH Alliance MCP Registry — SECOND Enterprise Registry to Target (NEW CRITICAL)
+
+**Sources**: machalliance.org/mach-alliance-mcp-registry (verified 2026-04-02)
+
+MACH Alliance (enterprise composable commerce/architecture consortium) is launching a curated MCP registry planned for Q4 2026. This is a *separate* enterprise-focused registry from `modelcontextprotocol.io`. Key distinctions:
+- **Focus**: Enterprise-grade, composable architecture tools
+- **Audience**: Enterprise IT, CTOs, architecture teams — exact Skissify enterprise buyer profile
+- **Timeline**: Q4 2026 (earlier submission = easier entry, lower bar before SLA requirements)
+- **Different from**: modelcontextprotocol.io community registry
+
+**For Skissify**: There are now TWO registries to target, not one. The MACH Alliance registry reaches exactly the enterprise buyer (architecture teams, enterprise IT) that Skissify's EUR 200/month Enterprise tier targets. This doubles the registry surface area. Submit to BOTH. The MACH audience (enterprise architects building composable systems) is also the audience most likely to need architectural floor plan diagrams.
+
+**Action required: Add MACH Alliance to registry submission list. Priority: HIGH.**
+
+---
+
+### MCP Server Cards — .well-known Metadata Spec Arriving (EARLY MOVER OPPORTUNITY)
+
+**Sources**: modelcontextprotocol.io/development/roadmap (verified 2026-04-02)
+
+MCP specification roadmap includes **Server Cards**: `.well-known` URL metadata endpoints that make MCP servers self-describing and discoverable without a live connection. Status: in-spec, not yet widely implemented.
+- Pattern: `skissify.com/.well-known/mcp-server.json` → returns server metadata (name, capabilities, pricing, schema)
+- Benefit: AI agents and orchestration frameworks can auto-discover and configure Skissify without manual setup
+- Benefit: Future registries (both modelcontextprotocol.io and MACH Alliance) will likely require or prefer Server Cards
+
+**For Skissify**: Being an early implementer of Server Cards (before it's widely adopted) means automatic discoverability by any framework that checks `.well-known`. Low implementation cost (~2 hours to add a static JSON endpoint). High discoverability upside. **Implement alongside MCP registry submission.**
+
+---
+
+### Credit-Based SaaS Pricing — +126% YoY Growth Confirms Skissify's Model (PRICING VALIDATION)
+
+**Sources**: metronome.com/state-of-usage-based-pricing-2025, pricingsaas.com 500 data (verified 2026-04-02)
+
+New quantified data on credit-based pricing adoption:
+- **79 of PricingSaaS 500 companies** now use credit-based models (up from **35 in 2024** — +126% YoY)
+- **61% of SaaS companies** now use usage-based pricing (up from 45% in 2021)
+- **Hybrid models** (base subscription + usage overage): gold standard, 43% now → 61% projected end 2026
+- **Gartner**: 70% of businesses will prefer usage-based over per-seat by 2026
+- Per-seat still dominant at 67% of companies, but structurally declining
+
+**For Skissify**: The per-render model is not just theoretically correct — it's empirically confirmed by the fastest-growing pricing category in SaaS (+126% YoY). Skissify's pricing design is ahead of where 70% of the market will be by year-end. Do not second-guess the model. The risk remains framing: spend caps prevent the 78% enterprise concern about surprise bills (documented Run #112).
+
+---
+
+### Updated Competitor Matrix (Run #114 — Thursday April 2, 22:12)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Sketch2scheme** | NEW. Photo → digital flowchart. Draw.io/Mermaid export. No JSON input. No API. | NO (photo input) | NO (digital output) | YES | NO | **LOW (opposite direction, validates gap)** |
+| **dAIgram** | Photo/sketch → editable diagram + JSON export. No API. Browser only. | NO (visual input) | NO (clean output) | YES | NO | **MEDIUM (same JSON+sketch axis, opposite direction)** |
+| **ToDiagram** | JSON/YAML/CSV→interactive two-way diagrams. No hand-drawn. No API found. | NO (web UI only) | NO | YES | NO | **MEDIUM-STABLE** |
+| **AI Diagram Maker** | MCP+JSON input since Jan 2026. Clean vector output. | PARTIAL (unclear headless) | NO | YES | YES (Jan 2026) | **MEDIUM (MCP+JSON without hand-drawn)** |
+| **InfraSketch.AI** | Natural language→architecture diagrams. Free. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM (same audience, different domain)** |
+| **Frame0** | MCP server on PulseMCP. Hand-drawn wireframes. SVG export. Desktop app required. | NO (requires desktop app) | **YES** | YES (desktop) | YES | **MEDIUM (closest architecture match, desktop-only)** |
+| **Excalidraw+** | Feb 2026: custom AI tokens, advanced charts. No JSON API changes. Chromium render dependency. | NO (requires Chromium or browser) | YES | NO | YES (browser-based) | **HIGH (brand) — Chromium moat holds** |
+| **tldraw SDK** | v4.x: canvas-based shape indicators (25x faster vs SVG). $6K/yr commercial. No MCP. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Draw.io (JGraph)** | Official MCP Feb 2026. 700+ enterprise icons. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Google Stitch** | AI-native canvas, Claude Code integration. Design-to-code direction. | NO | NO (consumes sketches) | YES | YES | **LOW (diverging use case)** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **SVGMaker MCP** | Text→clean SVG via MCP. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM** |
+| **svg2roughjs** | OSS library: SVG→hand-drawn. No hosted API, no MCP. | NO (library only) | YES (library) | YES | NO | **LOW (validates niche)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: **zero Chromium, instant cold start, uncontested**. MCP Registry: ABSENT (CRITICAL × **15**). | **YES (only one, no Chromium, no desktop)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #113 (Thursday April 2, 21:04 Stockholm)
 
 ### Status: 5 topics researched. KEY FINDINGS: **dAIgram** discovered — converts hand-drawn sketches AND photos → editable JSON/SVG diagrams (partial reverse-direction, MEDIUM threat, first tool found that touches JSON + hand-drawn in the same pipeline). **ToDiagram** (todiagram.com) — JSON/YAML/CSV→interactive two-way diagrams, web-based, no hand-drawn output, but covers the JSON→diagram audience. **AI Diagram Maker** has MCP integration since Jan 2026 with JSON input. **InfraSketch.AI** covers natural language→architecture diagrams (no JSON API, no hand-drawn). **Gartner: 40% of enterprise SaaS will include outcome-based pricing by end 2026** (up from 15%) — supports Skissify Enterprise framing. **MCP registry absence: Run 14 / CRITICAL.** Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #113 — 13th consecutive confirmation).

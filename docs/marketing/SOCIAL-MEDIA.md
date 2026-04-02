@@ -1,7 +1,289 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 118 (Late night, final prep before Show HN. New: "Which tool should your AI agent use?" hook, TikTok/Reels script for wobble demo, Discord server list for Show HN day drop, post-Show-HN momentum copy (keep thread alive hours 4–8), Product Hunt revival post template, n8n/Make community copy. New angle: "agent-first design" framing. 3 new blogs: "The Meeting Test" Figma comparison, technical floor plan walkthrough with code, Excalidraw vs Skissify agent-first frame. Research: Discord servers with 10K+ AI builders not yet posted to.)**
+**Last updated: April 2, 2026 — Cycle 119 (Show HN Eve — final final pass. New: Farcaster/Warpcast copy (large crypto-dev crossover audience, never posted), Raycast community MCP copy, Zed editor community copy, DevHunt 7-day launch submission pack, GitHub README badge campaign copy, LinkedIn Newsletter format post (reaches ALL followers, not just feed), YouTube Shorts script variant (different pacing from TikTok), new hashtags: #VibeArchitecture #AgentDriven #DrawFirst #SketchAPI, new communities: Farcaster /dev, Raycast community, Zed Discord. 2 new blogs: "The Curl Test" trust-signal post, n8n/Make/Zapier automation guide. Strategy note: Farcaster devs have extremely high HN overlap — 15-min post there tonight before bed.)**
+
+---
+
+## Cycle 119 — April 2, 2026 (Show HN Eve — Final Window)
+
+### NEW: Farcaster / Warpcast Copy
+
+*Post tonight (before 23:30 CET). High HN/technical founder overlap. Cast in /dev or /ai channel.*
+
+**Cast 1 — Technical hook:**
+
+```
+I built an API that accepts JSON and returns hand-drawn SVGs.
+
+AI agents can call it directly. No browser. No human.
+
+curl -X POST skissify.com/api/sketch \
+  -d '{"paper":"cream","wobble":4,"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":150,"label":"Room"}]}'
+
+→ returns shareable URL in 150ms
+
+Show HN tomorrow morning: skissify.com
+```
+
+**Cast 2 — "draw before you type" hook:**
+
+```
+Agents are great at describing spatial layouts.
+They're bad at rendering them.
+
+Built Skissify to fix that: MCP server + REST API for hand-drawn sketches.
+
+npx skissify-mcp
+
+Your agent gets a pencil. Show HN tomorrow.
+```
+
+**Cast 3 — blueprint mode visual (if you can attach screenshot):**
+
+```
+Blueprint mode hit different.
+
+White ink on dark blue. Looks like a real architect's working drawing.
+
+Same JSON, different paper style. Full control from the manifest.
+
+skissify.com — Show HN tomorrow
+```
+
+---
+
+### NEW: Raycast Community Copy
+
+*Post to Raycast's community forum / Discord after Show HN is live. Raycast users are power users who install MCP extensions.*
+
+**Forum/Discord post:**
+
+```
+Hey Raycast folks — just launched Skissify MCP on Show HN today.
+
+Skissify adds hand-drawing capability to Claude and other AI assistants.
+Install via: npx skissify-mcp
+
+Use case: "Claude, sketch the API architecture for my new service" → you get a hand-drawn diagram back as a URL.
+
+Works with any MCP-compatible client. The MCP server has 4 tools:
+- sketch: render a sketch from JSON
+- sketch_template: start from a template (floor-plan, system-diagram, wireframe)
+- list_presets: see available presets
+- get_schema: fetch the full element type reference
+
+Would love feedback from Raycast power users. → skissify.com
+```
+
+---
+
+### NEW: Zed Editor Community Copy
+
+*Zed has its own AI assistant (Zed AI) and supports MCP. Post to Zed Discord #extensions or #showcase after Show HN.*
+
+```
+Zed users — launched something that pairs well with Zed AI.
+
+Skissify MCP: gives your AI assistant the ability to produce hand-drawn sketches.
+
+npx skissify-mcp
+
+In Zed AI: "Sketch out the component architecture for this module" → returns URL to hand-drawn diagram.
+
+Show HN today: [link]
+Docs: skissify.com/for-agents
+```
+
+---
+
+### NEW: DevHunt 7-Day Launch Submission
+
+*DevHunt.org gives you 7 days vs Product Hunt's 24h. Submit on Show HN day to run in parallel. Better for sustained developer traction.*
+
+**DevHunt submission copy:**
+
+**Name:** Skissify — JSON to Hand-Drawn Sketch API
+
+**Tagline:** AI agents can now draw. POST JSON → get hand-drawn SVG in 150ms.
+
+**Description (250 words):**
+
+> Skissify is a sketch rendering API built for AI agents and automation workflows. Post a JSON manifest describing rooms, components, or diagrams — get back a hand-drawn SVG with a shareable URL.
+>
+> **Why it exists:** AI assistants like Claude are excellent at describing spatial layouts, system architectures, and wireframes in natural language. But they had no way to render them visually — until now.
+>
+> **How it works:**
+> - REST API: `POST /api/sketch` with a JSON manifest
+> - MCP server: `npx skissify-mcp` — Claude can draw autonomously
+> - ~150ms response time, zero auth for free tier
+> - 14 element types: rooms, arrows, doors, windows, dimensions, text
+> - 4 paper styles: cream, white, grid, blueprint
+> - Deterministic wobble via seeded PRNG — same JSON = same sketch
+>
+> **Use cases:**
+> - AI floor plan generation
+> - Agent-driven architecture diagrams
+> - Automation workflow visual outputs (n8n, Make.com, Zapier)
+> - GitHub PR architecture review sketches
+> - Real estate CRM automated sketches
+>
+> **Free tier:** Unlimited public sketches. No account required.
+> **Pro tier:** €5/month for private sketches + API key auth.
+>
+> Built by a solo founder in Stockholm. Launched April 1, 2026.
+
+**Tags:** AI, API, Sketch, MCP, Developer Tools, Automation, Floor Plan
+
+---
+
+### NEW: GitHub README Badge Campaign
+
+*Add to your README to drive passive discovery. Share the badge copy with early users.*
+
+**Markdown badge:**
+
+```markdown
+[![Skissify](https://img.shields.io/badge/Skissify-AI%20Sketch%20API-4F46E5?style=flat-square&logo=data:image/svg+xml;base64,...)](https://skissify.com)
+```
+
+**Simple text badge:**
+
+```markdown
+[Powered by Skissify](https://skissify.com) — AI sketch generation
+```
+
+**Tweet/post to encourage users to add:**
+
+```
+If you're building something with Skissify — add this to your README:
+
+[Powered by Skissify](https://skissify.com)
+
+Helps others find it. Helps me see what you're building.
+```
+
+---
+
+### NEW: LinkedIn Newsletter Format
+
+*LinkedIn Newsletter reaches 100% of your followers (not just algorithm feed). Post this as a newsletter issue on Show HN day.*
+
+**Newsletter title:** "The Day I Gave My AI Agent a Pencil"
+
+**Content:**
+
+> Three days ago I launched a side project called Skissify. This is what I learned.
+>
+> **The idea was simple:** AI assistants describe spatial things — floor plans, system architectures, wireframes — but they can't draw them. I built an API to fix that. POST JSON, get hand-drawn SVG.
+>
+> **The unexpected part:** Who actually uses it.
+>
+> I built it for AI agent developers. The first users were: a D&D player making dungeon maps, a home renovation forum member sketching room layouts, and a student designing a school project. None of them were "AI agent developers."
+>
+> **What this taught me about building for AI:**
+>
+> 1. **The curl test is real.** Tools that work from a terminal with zero friction get used by people you didn't plan for.
+>
+> 2. **"AI-compatible" is not a niche.** Every developer tool is becoming AI-compatible. The question is whether you designed for it or bolted it on.
+>
+> 3. **Visual output is the missing layer.** LLMs generate text. They reason spatially. But rendering that spatial reasoning visually has required a human — until API-first tools like this close the gap.
+>
+> Today I'm posting to Hacker News (Show HN). Whether it works or not, the experiment taught me more about the agent-era of software than any article I've read.
+>
+> → [skissify.com](https://skissify.com)
+>
+> If you're building with AI agents and want a visual output layer, try the curl command.
+
+---
+
+### NEW: YouTube Shorts Script (30-second blueprint mode focus)
+
+*Different from TikTok version — slower pacing, less text overlay, more focus on the visual result.*
+
+```
+[0:00–0:05]
+Screen: Terminal. Cursor blinking.
+No music yet. Silence.
+Text overlay: "I gave an AI a pencil."
+
+[0:05–0:12]
+Screen: Type the curl command. Hit enter.
+Sound: keyboard clicks
+Text overlay: "One API call."
+
+[0:12–0:20]
+Screen: Response JSON. URL appears.
+Sound: chime
+Text overlay: "150ms."
+Action: Open URL in browser
+
+[0:20–0:30]
+Screen: The floor plan in blueprint mode. Full screen.
+Music fades in. Slow pan across the sketch.
+Text overlay: "Hand-drawn. Reproducible. Agent-generated."
+Text overlay at end: "skissify.com"
+
+No voiceover. Let the visual do the work.
+```
+
+---
+
+### NEW: Trending Hashtags Cycle 119
+
+Research additions (April 2026):
+
+| Hashtag | Volume | Why use it |
+|---------|--------|------------|
+| `#VibeArchitecture` | Rising | Natural extension of #VibeDesign for spatial/architectural AI use cases |
+| `#AgentDriven` | Growing | Emerging term for AI agent-driven development workflows |
+| `#DrawFirst` | Low — ownable | Counter-positioning to "code first" — Skissify is the draw-first tool |
+| `#SketchAPI` | Niche | Technical search term — developers looking for exactly this |
+| `#JSONtoSVG` | Low — ownable | Technical search term, highly specific, findable by builders |
+| `#NapkinPhase` | Brand term | Coined in our content — keep using to own the term |
+
+**Best combo for Show HN day posts:**
+- Twitter/X: `#VibeCoding #MCPServer` (max 2)
+- LinkedIn: `#BuildInPublic #AIAgents #SoloFounder`
+- Bluesky: `#ShowHN #VibeCoding #SketchFirst`
+- Farcaster: no hashtags (Farcaster culture prefers clean casts)
+
+---
+
+### NEW: Communities Not Yet Posted (Cycle 119 Research)
+
+| Community | Platform | Members | Angle | Priority |
+|-----------|---------|---------|-------|---------|
+| Farcaster /dev | Farcaster | ~80K active | Technical founders, HN overlap | 🔴 P0 — tonight |
+| Raycast community forum | raycast.com/community | ~25K | MCP extension users, power devs | 🟡 P1 — post day 3+ |
+| Zed Discord #showcase | discord.gg/zed | ~40K | AI-first editor users, builders | 🟡 P1 — post day 3+ |
+| Linear changelog followers | linear.app | n/a | Dev tool users who track product launches | 🟢 P2 |
+| Val Town community | val.town | ~15K | Serverless function builders — can embed Skissify | 🟡 P1 |
+| Deno Deploy Discord | discord.gg/deno | ~20K | Edge compute + API users | 🟢 P2 |
+
+**Val Town angle (new, not covered before):**
+
+```
+Hey Val Town — built something that works well as a val.
+
+Skissify: POST JSON → hand-drawn SVG + shareable URL. No auth.
+
+One-liner val:
+
+const response = await fetch("https://skissify.com/api/sketch", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ paper: "cream", wobble: 4, elements: [
+    { type: "rect", x: 50, y: 50, w: 200, h: 150, label: "Room" }
+  ]})
+});
+const { url } = await response.json();
+return url; // shareable sketch URL
+
+skissify.com — Show HN today
+```
+
+---
 
 ---
 

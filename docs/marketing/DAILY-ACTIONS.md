@@ -2,6 +2,62 @@
 
 ---
 
+## [2026-04-02] — Strategy Run #114 Actions (Thursday April 2, 22:12 Stockholm)
+
+### Context: Run #114 Key New Findings
+- **Sketch2scheme** (sketch2scheme.com): Third photo-to-diagram tool. Digitization direction is crowded. JSON-to-hand-drawn side is empty.
+- **Pinterest MCP production deployment** (InfoQ, April 2026): Enterprise MCP tool stacks are real and live. Skissify missing = missed by real buyers.
+- **MACH Alliance MCP Registry** (machalliance.org): Q4 2026 launch. Separate enterprise registry. Second target beyond modelcontextprotocol.io.
+- **MCP Server Cards** (.well-known spec): Low-effort auto-discoverability. Implement with registry submission.
+- **Credit pricing +126% YoY**: 79/500 PricingSaaS companies now credit-based. Gartner: 70% will prefer usage-based over per-seat by end 2026.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 15th consecutive cycle): Registry Double Submission — MCP + MACH Alliance
+
+**New finding: there are now TWO enterprise registries to submit to, not one. The MACH Alliance registry targets enterprise architects — exactly Skissify's EUR 200/month Enterprise buyer. Submit to both simultaneously while both are in pre-launch / lower-bar phase.**
+
+Steps:
+1. Submit PR to `github.com/modelcontextprotocol/registry` with `skissify.json` (as documented in Run #113)
+2. Submit to MACH Alliance registry: machalliance.org/mach-alliance-mcp-registry (contact/form for early listing)
+3. While submitting, implement `.well-known/mcp-server.json` endpoint on skissify.com (~2 hours, static JSON)
+   ```json
+   { "name": "skissify", "description": "Headless JSON→hand-drawn SVG API. No Chromium. Floor plans, architecture, diagrams.", "pricing": "EUR 5/mo Pro, EUR 0.005/render API", "schema": "https://skissify.com/schema/manifest.json", "capabilities": ["svg-render", "json-schema", "headless", "architectural-elements"] }
+   ```
+4. Also submit to: pulsemcp.com, mcp.so, glama.ai, mcpservers.org
+
+**Combined time: 3-4 hours. 15 cycles overdue. Pinterest runs MCP at production scale. Skissify is absent.**
+
+---
+
+### Action 2 (HIGH — tomorrow): Add "You've Got Tools to Digitize. Skissify Runs the Other Direction." to Landing Page
+
+**Sketch2scheme + dAIgram + SnapDiagram = three tools solving sketch-digitization. They are inadvertently marketing Skissify's category. Time to explicitly own the opposite pole.**
+
+Steps:
+1. Add a section to the landing page (or pricing page) titled: **"Every other tool converts your hand-drawn sketch INTO data. Skissify converts your data INTO a hand-drawn sketch."**
+2. Show the two-direction diagram: `photo → [dAIgram/Sketch2scheme] → JSON → [Skissify] → hand-drawn SVG`
+3. Link to a short blog post or Twitter thread: "I tried every sketch-digitization tool. Then I realized I needed the opposite."
+4. Update the homepage meta description to include "JSON to hand-drawn sketch" (vs current phrasing — check current)
+
+**Time: 1-2 hours. Creates immediate differentiation from all 3 digitization tools and captures cross-traffic from users who've tried them.**
+
+---
+
+### Action 3 (MEDIUM — this week): Add Spend Cap to Pricing Page to Kill the Enterprise Veto
+
+**78% of IT leaders cite unpredictable bills as #1 reason to reject usage-based tools. Skissify's per-render model is structurally correct (+126% YoY credit pricing growth), but missing the UX that removes the enterprise veto: an explicit monthly spend cap.**
+
+Steps:
+1. Add to pricing page under API/MCP overages: **"Monthly overage cap: Set a max charge. We'll pause API access and notify you — never silently exceed your limit."**
+2. Add spend cap as a configurable setting in the Pro/Team dashboard (or at minimum, promise it with "coming soon")
+3. Rewrite Enterprise tier description: "Flat rate. No overage surprises. EUR 200/month = unlimited renders + SLA."
+4. Update `docs/marketing/EMAIL-AND-DIRECTORIES.md` enterprise pitch template with this line: "Unlike other API tools, Skissify never charges more than your agreed monthly cap without explicit approval."
+
+**Time: 1-2 hours. Removes the #1 reason enterprise IT rejects usage-based tools. Directly enables the EUR 200/month Enterprise conversion.**
+
+---
+
 ## [2026-04-02] — Strategy Run #113 Actions (Thursday April 2, 21:04 Stockholm)
 
 ### Context: Run #113 Key New Findings
