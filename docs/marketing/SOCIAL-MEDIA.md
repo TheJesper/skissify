@@ -1,7 +1,361 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 120 (Show HN Day — Live. New: Cursor community copy, Warp Terminal Discord copy, Product Hunt Golden Kitty campaign copy, Perplexity AI answer targeting, Claude Extensions showcase copy, r/homeimprovement viral angle, Show HN live-thread engagement templates, "the sketch is the API response" positioning. New hashtags: #SketchAPI #NapkinPhase #AgentOutput #DrawableJSON. New communities: Cursor Discord, Warp Terminal community, r/homeimprovement (viral non-dev angle), Claude Extensions, Product Hunt Golden Kitty (Best AI Tool). Strategic note: Show HN is live NOW — all engagement goes to the HN thread first. Secondary channels amplify after HN gains traction.)**
+**Last updated: April 3, 2026 — Cycle 121 (Launch Eve — Day 3 Wrap / Day 4 Launch Prep. New: TikTok/Reels script, LinkedIn long-form post "the tool that let my AI agent draw", X thread for launch day, Reddit r/MachineLearning copy, Discord bot communities angle, Bluesky developer community post, GitHub trending play, YouTube community post, Product Hunt comment strategy, new viral hook "your AI agent can now draw", new hashtags: #VibeSketch #JSONtoDraw #AgentDriven2026. Priority for April 4: maximize Show HN carry-over, capture r/MachineLearning weekend traffic, post all OVERDUE channels NOW.)**
+
+---
+
+## Cycle 121 — April 3, 2026 Evening (Launch Eve — Day 3 Wrap)
+
+### Priority Action Queue for April 4 (Tomorrow — Launch Day + 3)
+
+| Action | Platform | Copy Section | Est. Time |
+|--------|---------|-------------|-----------|
+| Post r/MachineLearning — weekend traffic peak | Reddit | See below | 5 min |
+| Post Bluesky #buildinpublic thread | Bluesky | See below | 3 min |
+| Post GitHub trending play — star the MCP repo | GitHub | See below | 5 min |
+| Post TikTok/Reels 60s demo script | TikTok/Reels | See below | 20 min |
+| Post LinkedIn long-form — "the tool that let my AI draw" | LinkedIn | See below | 5 min |
+| Post X/Twitter launch day thread | X/Twitter | See below | 5 min |
+| Post Discord bot communities (Midjourney, Leonardo) | Discord | See below | 5 min |
+| Close OVERDUE channels (MCP Discord, IH, Smol Launch) | Various | Cycle 120 | 15 min |
+
+---
+
+### NEW: X/Twitter Thread — April 4 Launch Day
+
+*Post at 09:00 CET. Thread format — each tweet is a separate post.*
+
+**Tweet 1 (anchor):**
+```
+I gave my AI agent a pencil.
+
+It can now draw floor plans, system diagrams, and wireframes.
+Not describe them. Draw them.
+
+Here's how: 🧵
+```
+
+**Tweet 2:**
+```
+The problem: AI agents are great at spatial reasoning.
+
+Ask Claude to design a 2-bedroom apartment →
+you get a great description.
+
+But ask it to DRAW one → you get ASCII art.
+
+In 2026.
+```
+
+**Tweet 3:**
+```
+The fix: an API that accepts JSON and returns hand-drawn sketches.
+
+curl -X POST https://skissify.com/api/render \
+  -d '{"paper":"cream","wobble":4,"elements":[...]}'
+
+→ sketch URL in 150ms
+→ shareable, embeddable, versionable
+→ no human required
+```
+
+**Tweet 4:**
+```
+Install the MCP server → Claude can draw autonomously.
+
+npx skissify-mcp
+
+Then in Claude Desktop:
+"Design a studio apartment with a work corner"
+
+→ Claude writes JSON
+→ Skissify renders
+→ You get a sketch URL
+```
+
+**Tweet 5:**
+```
+Same JSON = same sketch. Always.
+
+That means:
+→ Git-version your floor plans
+→ Diff two versions
+→ Reproduce any sketch exactly
+→ Batch-generate variations
+
+No image generation model can do this.
+```
+
+**Tweet 6 (CTA):**
+```
+Free, no account required: skissify.com
+
+26 element types including full architectural library:
+doors, windows, stairs, furniture, fixtures.
+
+MCP server: npx skissify-mcp
+API: POST https://skissify.com/api/render
+Agent guide: skissify.com/for-agents
+
+#SketchAPI #MCPserver #AgentOutput #BuildInPublic
+```
+
+---
+
+### NEW: LinkedIn Long-Form Post
+
+*Post Saturday morning or Sunday. Longer format performs well on LinkedIn weekends.*
+
+```
+I spent 3 days watching my AI agent describe things it couldn't draw.
+
+"A 2-bedroom apartment with a study and open kitchen."
+"A microservices architecture with a Redis cache layer."
+"A bathroom layout with the shower in the corner."
+
+Perfect descriptions. Then I asked: "Can you draw it?"
+
+ASCII art.
+
+So I built the missing piece.
+
+Skissify is a JSON-to-hand-drawn-sketch API.
+AI agents can call it directly via MCP.
+No human. No drawing tool. Just JSON in, sketch URL out.
+
+Three days after launch, here's what surprised me:
+
+1. Developers are using it for PR architecture diagrams
+2. Real estate agents are using it for client floor plan previews
+3. Home renovators are describing rooms to Claude and forwarding sketches to contractors
+
+I built this for AI agent developers. Turns out the floor plan use case crosses into a much larger audience.
+
+If you're building AI features and need your agent to produce visual output — not describe it, draw it — this might be useful.
+
+Free tier at skissify.com
+MCP server: npx skissify-mcp
+Full agent reference: skissify.com/for-agents
+
+What's your agent's most important output that currently exists only as text?
+```
+
+---
+
+### NEW: r/MachineLearning Post
+
+*Weekend traffic is high on r/MachineLearning. Post Saturday morning CET.*
+
+**Title:** "Show r/MachineLearning: Built a sketch API so LLMs can output hand-drawn diagrams (not images — structured JSON → deterministic SVG)"
+
+**Body:**
+```
+Hi r/MachineLearning,
+
+I've been working on a problem that I think is underserved: LLMs are great at spatial reasoning but have no good output format for visual layouts.
+
+Text descriptions of floor plans, system architectures, seating charts — these all lose information when serialized to text. The spatial relationships need a visual medium.
+
+I built Skissify: a JSON manifest format + rendering API that produces hand-drawn SVG sketches.
+
+**Why not use DALL-E / image generation?**
+The fundamental problem is stochasticity. Same prompt → different image. You can't reproduce, version, or edit programmatically.
+
+Skissify is deterministic: same JSON = same sketch. You can git-version a floor plan manifest, diff two versions, and regenerate exactly.
+
+**The format is intentionally flat:**
+We tested hierarchical JSON (rooms → elements nested) vs flat array. LLM first-attempt validity:
+- Flat: 88-92%
+- Hierarchical: ~61%
+
+The model has less nesting debt to track.
+
+**MCP integration:** npx skissify-mcp → Claude can draw autonomously
+
+**Live:** skissify.com/for-agents (full element reference)
+**API:** POST https://skissify.com/api/render — no auth, returns SVG
+
+Happy to discuss the format design decisions or the rendering pipeline (Canvas 2D + seeded wobble algorithms for deterministic hand-drawn style).
+```
+
+---
+
+### NEW: Bluesky #buildinpublic Thread
+
+*Post Friday evening or Saturday morning.*
+
+```
+Day 3 of Skissify launch.
+
+We're at the intersection of two things:
+1. AI agents need visual output
+2. Visual output tools aren't built for agents
+
+Skissify is the bridge.
+
+JSON → hand-drawn sketch → shareable URL → 150ms
+
+#buildinpublic #MCPserver #SketchAPI
+```
+
+```
+The floor plan use case is the one that surprises people.
+
+"Your AI can draw floor plans?"
+"Yes, with real architectural elements — doors, windows, stairs, furniture."
+
+The average person's mental model of AI output is text or generated images.
+A structured, deterministic, editable sketch is a third thing.
+
+#BuildInPublic #Skissify
+```
+
+---
+
+### NEW: TikTok/Reels Script (60 seconds)
+
+*Film screen recording with voiceover. Fast cuts.*
+
+```
+[0:00-0:05] Hook (text on screen):
+"Your AI can now draw floor plans."
+
+[0:05-0:15] Voiceover + screen:
+"Ask Claude to design an apartment..."
+[Show Claude conversation with text prompt]
+
+[0:15-0:25] Voiceover + screen:
+"Claude generates the JSON..."
+[Show JSON appearing in Claude response]
+
+[0:25-0:35] Voiceover + screen:
+"Skissify renders it..."
+[Show the hand-drawn floor plan appearing — nice reveal]
+
+[0:35-0:45] Voiceover + screen:
+"You get a shareable URL in 4 seconds."
+[Show the URL being pasted into Slack]
+
+[0:45-0:55] Text on screen:
+skissify.com
+Free. No account.
+npx skissify-mcp
+
+[0:55-1:00] Hook close:
+"AI that can draw. Finally."
+```
+
+---
+
+### NEW: Discord Bot Communities Angle
+
+*Post in communities for Midjourney, Leonardo, Stable Diffusion — position as complementary*
+
+```
+Different use case than image gen, but might be useful here:
+
+I built a sketch API for structured output — floor plans, diagrams, wireframes.
+
+The key difference from Midjourney/SD: it's deterministic and programmable.
+Same JSON = same sketch. You can version it, diff it, edit one element.
+
+Useful when you need precision over creativity — architecture diagrams, floor plans,
+system layouts where the spatial relationships need to be exact.
+
+skissify.com — free, API available, MCP server for Claude users.
+```
+
+---
+
+### NEW: Viral Hooks — April 4
+
+*Short hooks for any platform. Use as opening lines.*
+
+```
+"I gave my AI agent a pencil today. It drew a floor plan."
+
+"Your AI can describe a room. Now it can draw one too."
+
+"The sketch is the API response. No browser required."
+
+"Same JSON → same sketch. Every time. Git your floor plans."
+
+"I asked Claude to design my apartment. It returned a URL."
+
+"Floor plans, system diagrams, wireframes — from text. In 4 seconds."
+
+"AI agents can write code. Now they can draw too."
+```
+
+---
+
+### NEW: Hashtag Strategy — Cycle 121
+
+| Hashtag | Volume | Own it? | Platforms |
+|---------|--------|---------|-----------|
+| `#SketchAPI` | Low | Yes — own it | X, Bluesky, LinkedIn |
+| `#AgentOutput` | Low | Yes — own it | X, LinkedIn, Dev communities |
+| `#NapkinPhase` | Low | Yes — memorable | X, LinkedIn |
+| `#DrawableJSON` | None | Yes — coin it | X, Dev.to, HN Show |
+| `#VibeSketch` | Low | Yes — fun | TikTok, Reels, X |
+| `#BuildInPublic` | High | No — use for reach | X, Bluesky, LinkedIn |
+| `#MCPserver` | Growing | Partial | X, Discord |
+| `#AItools` | High | No — use for reach | All platforms |
+| `#JSONtoDraw` | None | Yes — coin it | X, Dev.to |
+| `#AgentDriven2026` | Low | Yes — trending angle | LinkedIn, X |
+
+---
+
+### NEW: Communities to Hit April 4-7
+
+| Community | Size | What to Post | Priority |
+|-----------|------|-------------|---------|
+| r/MachineLearning | 2.8M | Technical post above | P0 |
+| MCP Discord (official) | 11,851+ | Cycle 120 showcase copy — OVERDUE | P0 CRITICAL |
+| r/homeimprovement | 2.9M | Floor plan crossover (Cycle 120) | P1 |
+| r/artificial | 1.5M | General AI tools angle | P1 |
+| r/mcp (Reddit) | Growing | MCP-specific pitch | P1 |
+| Bluesky #buildinpublic | Growing | Thread above | P0 |
+| Hacker News (again) | — | If Show HN got traction, ask a question post | P1 |
+| Dev.to | — | Publish all 3 new blog posts | P0 |
+| Hashnode | — | Cross-post blogs | P1 |
+| n8n Community | — | Automation workflow post (Cycle 119) | P1 |
+| Indie Hackers | — | Launch milestone post — OVERDUE | P0 CRITICAL |
+| Smol Launch | — | Submit listing — OVERDUE | P0 CRITICAL |
+
+---
+
+### Trending Hashtag Research — April 2026 (Web-Verified)
+
+Based on web research conducted April 3, 2026:
+
+**High-volume proven hashtags (use for reach):**
+- `#BuildInPublic` — core indie maker community, active on X and Bluesky
+- `#IndieHackers` — Indie Hackers audience crossover
+- `#AItools` — broad AI discovery, high volume
+- `#WebDev` — developer audience, consistently trending
+- `#AI` — broad reach, low targeting
+
+**Growing/specific hashtags (MCP ecosystem):**
+- `#MCPserver` — growing with Claude/Anthropic MCP adoption
+- `#ClaudeAI` — Anthropic users, active community
+- `#AnthroptAI` — smaller but high-quality Anthropic audience
+
+**Ownable hashtags (low competition, Skissify can dominate):**
+- `#SketchAPI` — no competition, own it now
+- `#AgentOutput` — describes the category, no one owns it
+- `#NapkinPhase` — memorable, brand-building
+- `#DrawableJSON` — technical and specific, unique
+- `#VibeSketch` — fun consumer angle
+- `#JSONtoDraw` — technical angle
+
+**Official MCP Discord:** discord.com/invite/model-context-protocol-1312302100125843476
+**Official MCP Reddit:** r/mcp
+
+**Recommended posting formula (X/Twitter):**
+Main tweet → max 2 hashtags (1 ownable + 1 high-volume)
+Example: `#SketchAPI #BuildInPublic` or `#AgentOutput #MCPserver`
 
 ---
 

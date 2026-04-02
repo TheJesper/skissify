@@ -1,7 +1,61 @@
-# Skissify Launch Plan 🚀
+# Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 — Day 3 / SHOW HN DAY (SEE CYCLE 120)**
+**Current Date: April 3 — Day 3 / SHOW HN DAY — Cycle 121 Evening Wrap**
+
+---
+
+## NEW IDEAS (Added 2026-04-03 Evening, Cycle 121 — Launch Eve Wrap)
+
+### Cycle 121 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — definitive final version (psychology of polish, Figma tax breakdown, AI agent workflow, clear agent-era framing) | `blog/why-hand-drawn-sketches-beat-figma-launch-day-definitive.md` | DONE — publish to Dev.to April 4 |
+| Blog: "How AI Agents Can Draw Floor Plans: A Complete Guide" — definitive version (full element library, API examples, MCP setup, 4 real workflows, benchmark table, image gen comparison) | `blog/how-ai-agents-can-draw-floor-plans-launch-day-guide.md` | DONE — publish to Dev.to + r/MachineLearning April 4 |
+| Blog: "Skissify vs Excalidraw: An Honest 2026 Comparison" — decision tree, full feature table, "both are good for different things" framing | `blog/skissify-vs-excalidraw-definitive-2026.md` | DONE — publish to Dev.to + r/webdev April 4 |
+| SOCIAL-MEDIA.md Cycle 121 | SOCIAL-MEDIA.md | DONE |
+| PRESS-KIT.md Cycle 121 | PRESS-KIT.md | DONE |
+
+### Cycle 121 — Priority Actions for April 4 (Tomorrow)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **Post MCP Discord #showcase** — OVERDUE since Cycle 111 — post FIRST, before anything else | P0 CRITICAL | 3 min |
+| **Post r/LocalLLaMA (2.3M)** — OVERDUE — post immediately after Discord | P0 CRITICAL | 5 min |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | P0 CRITICAL | 5 min |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | P0 CRITICAL | 10 min |
+| **Submit DevHunt** — OVERDUE from Cycle 119 | P0 | 10 min |
+| **Submit Claude Extensions** — Cycle 120 copy — permanent visibility | P0 | 5 min |
+| **Publish all 3 definitive blogs to Dev.to** — Cycle 121 | P0 | 20 min |
+| **Post r/MachineLearning** — Cycle 121 copy — weekend traffic peak | P1 | 5 min |
+| **Post LinkedIn long-form** — Cycle 121 copy | P1 | 5 min |
+| **Post X/Twitter thread** — Cycle 121 copy | P1 | 5 min |
+| **Post Bluesky #buildinpublic** — Cycle 121 copy | P1 | 3 min |
+| **Post r/homeimprovement** — Cycle 120 copy — non-dev viral angle | P1 | 5 min |
+| **Add to AlternativeTo** — 10 min, permanent SEO | P1 | 10 min |
+| **Add to SaaSHub** — 10 min, permanent SEO | P1 | 10 min |
+| **Record demo video** — blocks all video channels | P0 FOREVER | 20+ min |
+
+### Cycle 121 — New Channels/Angles
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| r/MachineLearning (2.8M) | Never posted. Weekend traffic peak Saturday. Technical post about flat JSON schema and LLM success rates — exactly right for this audience. | P0 — April 4 |
+| LinkedIn long-form | Different format from regular posts — performs well on weekends. "3 days after launch, here's what surprised me" angle is authentic and shareable. | P1 — April 4 |
+| TikTok/Reels | New 60s script written. "Your AI can now draw floor plans" hook is consumer-accessible. Requires 20 min to film. | P1 — April 4-5 |
+| Discord bot communities (Midjourney, Leonardo) | Complementary angle — "different from image gen" framing is well-received in these communities. Not competitive. | P2 — April 5-7 |
+| GitHub trending play | Star the MCP repo, write a compelling README with a GIF. Trending on GitHub is a free HN-adjacent audience. | P1 — April 4 |
+
+### Cycle 121 — Strategic Insight
+
+**The OVERDUE channels are still the highest-leverage actions.** Four channels have been ready for posting since Cycles 98-111 and have not been posted yet: MCP Discord, r/LocalLLaMA, Indie Hackers, Smol Launch. These represent an estimated reach of 3M+ relevant users. Nothing written in Cycle 121 matters until these are posted.
+
+**The three definitive blog posts are the best versions of each topic.** The blog directory now has 282+ posts but the three definitive ones (Cycle 121) consolidate all prior versions into a single canonical post per topic. These are the ones to publish, bookmark, and distribute.
+
+**r/MachineLearning is the weekend move.** ML Reddit peaks Saturday-Sunday. The technical angle about flat JSON schema and LLM success rates (88% vs 61%) is exactly the kind of data-driven post this community engages with. Post Saturday morning CET.
+
+**The demo video is the permanent blocker.** Every cycle says "P0 FOREVER" — and it remains undone. This is the single highest-leverage piece of content that does not exist. A 60-second demo of Claude generating a floor plan via MCP would go viral on its own. Record it April 4.
 
 ---
 
