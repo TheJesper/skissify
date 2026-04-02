@@ -618,6 +618,8 @@ export default function Toolbar({
                 { keys: ["Shift+click"], desc: "Add to selection" },
                 { keys: ["Drag (empty)"], desc: "Box-select elements" },
                 { keys: ["Alt+drag"], desc: "Pan canvas" },
+                { keys: ["Space+drag"], desc: "Pan canvas (hold Space to pan)" },
+                { keys: ["Middle mouse"], desc: "Pan canvas (middle-click drag)" },
                 { keys: ["Scroll"], desc: "Zoom toward cursor" },
                 { keys: ["0"], desc: "Fit / reset view" },
                 { keys: ["?"], desc: "Toggle this panel" },

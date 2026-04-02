@@ -493,6 +493,10 @@ export default function Canvas({
   const drawPoints = useRef<{ x: number; y: number }[]>([]);
   const [drawPreview, setDrawPreview] = useState<{ x: number; y: number }[] | null>(null);
 
+  // Space-to-pan state: hold Space = temporary pan mode
+  const spaceKeyDown = useRef(false);
+  const isSpacePanning = useRef(false);
+
   // Rotation handle drag state
   const isRotating = useRef(false);
   const rotateElementIdx = useRef<number>(-1);
@@ -1004,12 +1008,22 @@ export default function Canvas({
     []
   );
 
-  // Pan with alt/ctrl + drag; drag-move elements; box-select on empty space
+  // Pan with alt/ctrl + drag, middle-mouse, or Space+drag; drag-move elements; box-select on empty space
   const handleMouseDown = useCallback(
     (e: React.MouseEvent) => {
-      if (e.altKey || e.ctrlKey) {
+      // Middle mouse button (button === 1) always pans
+      if (e.button === 1) {
+        e.preventDefault();
         isPanning.current = true;
         lastMouse.current = { x: e.clientX, y: e.clientY };
+        setCursor("grabbing");
+        return;
+      }
+      if (e.altKey || e.ctrlKey || spaceKeyDown.current) {
+        isPanning.current = true;
+        isSpacePanning.current = spaceKeyDown.current;
+        lastMouse.current = { x: e.clientX, y: e.clientY };
+        setCursor("grabbing");
         return;
       }
 
@@ -1251,7 +1265,20 @@ export default function Canvas({
 
   const handleMouseUp = useCallback(
     (e: React.MouseEvent) => {
+      // Middle mouse button release always ends pan
+      if (e.button === 1) {
+        isPanning.current = false;
+        isSpacePanning.current = false;
+        setCursor(spaceKeyDown.current ? "grab" : "crosshair");
+        return;
+      }
       isPanning.current = false;
+      if (isSpacePanning.current) {
+        isSpacePanning.current = false;
+        // Stay in space-grab-ready mode if Space is still held
+        if (spaceKeyDown.current) setCursor("grab");
+        return;
+      }
 
       // Finalize freehand draw
       if (isDrawing.current && drawMode && onDrawPath) {
@@ -1631,8 +1658,17 @@ export default function Canvas({
         setCursor("grabbing");
         return;
       }
+      if (isPanning.current) {
+        setCursor("grabbing");
+        return;
+      }
       if (isBoxSelecting.current) {
         setCursor("crosshair");
+        return;
+      }
+      // Space key held = ready to pan (Figma-style)
+      if (spaceKeyDown.current) {
+        setCursor("grab");
         return;
       }
       if (e.altKey || e.ctrlKey) {
@@ -1697,9 +1733,34 @@ export default function Canvas({
           resetView();
         }
       }
+      // Space: enter temporary pan mode (like Figma/Sketch)
+      if (e.key === " " && !e.repeat) {
+        const target = e.target as HTMLElement;
+        const isInput =
+          target instanceof HTMLTextAreaElement ||
+          target instanceof HTMLInputElement;
+        if (!isInput) {
+          e.preventDefault();
+          spaceKeyDown.current = true;
+          // Update cursor to show pan-ready state
+          setCursor("grab");
+        }
+      }
+    };
+    const upHandler = (e: KeyboardEvent) => {
+      if (e.key === " ") {
+        spaceKeyDown.current = false;
+        isSpacePanning.current = false;
+        // Reset cursor to default crosshair (next mousemove will refine it)
+        setCursor("crosshair");
+      }
     };
     window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
+    window.addEventListener("keyup", upHandler);
+    return () => {
+      window.removeEventListener("keydown", handler);
+      window.removeEventListener("keyup", upHandler);
+    };
   }, [onSelectElements, resetView]);
 
   return (
