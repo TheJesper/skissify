@@ -1,7 +1,66 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2 — Day 2 Evening (SEE CYCLE 115)**
+**Current Date: April 3 — Day 3 Show HN Day (SEE CYCLE 116)**
+
+---
+
+## NEW IDEAS (Added 2026-04-03, Cycle 116 — Show HN Day)
+
+### Cycle 116 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" (cycle116, sharpest version) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle116.md` | ✅ Written — post to Dev.to today |
+| Blog: "How AI Agents Draw Floor Plans" (Show HN edition, full technical) | `blog/how-ai-agents-draw-floor-plans-cycle116-show-hn.md` | ✅ Written — post to Dev.to today alongside Show HN |
+| Blog: "Skissify vs Excalidraw — Definitive Show HN Guide" | `blog/skissify-vs-excalidraw-the-definitive-show-hn-guide.md` | ✅ Written — post to Dev.to / Hashnode |
+| SOCIAL-MEDIA.md Cycle 116 (r/LocalLLaMA 2.3M, r/webdev 1.1M, Mastodon/Fosstodon, Bluesky Starter Packs, Peerlist, 8 viral hooks, hashtag research, trending stat: MCP 97M monthly SDK downloads) | SOCIAL-MEDIA.md Cycle 116 | ✅ Written |
+| PRESS-KIT.md Cycle 116 status table | PRESS-KIT.md | ✅ Updated |
+
+### Cycle 116 — Priority Actions for Day 3 (April 3 — Show HN Day)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Show HN 09:00–11:00 CET** — copy in SOCIAL-MEDIA.md Cycle 113 | 🔴 P0 — POST NOW | 2 min |
+| **Post MCP Discord #showcase** — OVERDUE since Cycle 111 — today or never for Show HN momentum | 🔴 P0 OVERDUE | 5 min |
+| **Post r/LocalLLaMA** (2.3M) — new copy in SOCIAL-MEDIA.md Cycle 116 — never posted | 🔴 P0 — NEW HIGH LEVERAGE | 5 min |
+| **Post Twitter hook 1** (tease) at 08:45 CET — Cycle 116 | 🔴 P0 | 2 min |
+| **Publish "How AI Agents Draw Floor Plans" to Dev.to** — Cycle 116 blog | 🔴 P0 | 10 min |
+| **Post r/webdev** (1.1M) — new copy in Cycle 116 | 🟡 P1 | 5 min |
+| **Post Mastodon/Fosstodon** — Cycle 116 copy | 🟡 P1 | 3 min |
+| **Post Peerlist** — Cycle 116 copy | 🟡 P1 | 5 min |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | 🔴 P0 OVERDUE | 10 min |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | 🔴 P0 OVERDUE | 5 min |
+| **Engage HN thread actively** — reply to every comment within 15 min | 🔴 P0 ongoing | ongoing |
+| **Post r/AIAgents** (750K) — Cycle 115 copy | 🟡 P1 | 5 min |
+| **AI newsletter outreach** — TLDR AI, The Rundown, Ben's Bites — Cycle 115 templates | 🟡 P1 | 15 min |
+| **RECORD DEMO VIDEO** — P0 FOREVER UNTIL DONE | 🔴 P0 | 20 min |
+
+### Cycle 116 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| r/LocalLLaMA (2.3M) | **Never posted.** Highest density of LLM tool builders online. The flat-JSON-schema benchmark post is exactly what this community wants to read. | 🔴 P0 — immediate |
+| r/webdev (1.1M) | JSON API + curl demo is natural developer content. The developer-tool angle is stronger here than the AI angle. | 🔴 P0 |
+| Mastodon / Fosstodon | Developer-heavy Mastodon instance. Many HN users are there. Good for building ongoing presence. | 🟡 P1 |
+| Bluesky Starter Packs | Request to be added to "AI Tools" and "Developer Tools" packs — passive ongoing discovery. Packs circulate for weeks. | 🟡 P1 |
+| Dev.to (Show HN day cross-post) | Dev.to MCP content wave still active. Technical benchmark blog → 2–5K reads. Post same day as Show HN for maximum cross-audience effect. | 🔴 P0 |
+
+### Cycle 116 — Key Research Findings
+
+| Finding | Implication |
+|---------|-------------|
+| MCP: 97 million monthly SDK downloads (Feb 2026) | Lead with this stat — bigger than most devs realize. It proves Skissify is in a massive ecosystem. |
+| r/LocalLLaMA is the single highest-density community for LLM tool builders | Never posted. P0 for Show HN day. The flat-JSON benchmark angle is perfect for this audience. |
+| 2026 Twitter/X: max 1–2 hashtags per post, algorithm rewards engagement over hashtag count | Stop using 6+ hashtag stacks. Pick 1 strong hashtag per post. |
+| #VibeDesign trending from Google Stitch (March 2026) | Skissify is phase 1 of the vibe design workflow. Use this framing. |
+| Claude Code had a viral moment, "agent tools" category is hot right now | "I gave Claude a pencil" framing performs well. Lean into this. |
+
+### Cycle 116 — Strategic Note
+
+**The untapped audience that Show HN day reveals:** r/LocalLLaMA has 2.3 million members and is the community where people actually build LLM tools — they understand the flat-JSON-schema benchmark, they know what MCP is, and they're exactly the people who will open-source improvements to the schema or contribute integrations. Posting there today, alongside Show HN, creates a one-two punch: HN for breadth + LocalLLaMA for depth.
+
+**The Mastodon angle is underrated.** Many of the most influential technical founders maintain Mastodon presence alongside Twitter. A Fosstodon post today creates cross-discovery for the HN crowd who've migrated off Twitter.
 
 ---
 

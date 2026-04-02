@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 115 (Day 2 evening. New blogs: why-hand-drawn-ideas-win-before-figma.md, how-ai-agents-draw-floor-plans-step-by-step.md, skissify-vs-excalidraw-honest-comparison-2026.md. New social copy in SOCIAL-MEDIA.md Cycle 115: AI newsletter outreach, agent framework Discord communities, YouTube Shorts strategy, 6 new viral hooks. Press kit media assets spec added.)*
+*Last updated: April 3, 2026 — Cycle 116 (Show HN day. 3 new blogs: cycle116 editions of all 3 core posts. SOCIAL-MEDIA.md Cycle 116: r/LocalLLaMA (2.3M), r/webdev (1.1M), Mastodon/Fosstodon, Bluesky Starter Pack strategy, Peerlist, Dev.to, 8 new viral hooks, hashtag research confirmed. LAUNCH-PLAN.md Cycle 116 actions added. Research: MCP at 97M monthly downloads Feb 2026 — use in all technical outreach.)*
 
 ---
 
@@ -69,7 +69,46 @@ Skissify is a sketch rendering API built for the age of AI agents. The tool acce
 
 ---
 
-## Day 3 Status (April 3, 2026 — Thursday, Cycle 114 — SHOW HN DAY)
+## Day 3 Status — Cycle 116 Update (April 3, 2026 — Show HN Day)
+
+| Item | Status |
+|------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" (cycle116) | ✅ **NEW** — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle116.md` — sharpest version yet, post to Dev.to |
+| Blog: "How AI Agents Draw Floor Plans" (Show HN edition) | ✅ **NEW** — `blog/how-ai-agents-draw-floor-plans-cycle116-show-hn.md` — technical, schema insight, post to Dev.to today |
+| Blog: "Skissify vs Excalidraw — Definitive Show HN Guide" | ✅ **NEW** — `blog/skissify-vs-excalidraw-the-definitive-show-hn-guide.md` — decision tree, 3-min read |
+| SOCIAL-MEDIA.md Cycle 116 | ✅ **NEW** — r/LocalLLaMA, r/webdev, Mastodon, Bluesky Starter Packs, Peerlist, 8 hooks, hashtag research |
+| Hashtag strategy updated | ✅ **NEW** — confirmed 2026: max 1–2 per tweet, #VibeDesign + #MCPServer primary |
+| MCP 97M monthly downloads stat | ✅ **NEW** — confirmed from research, use in all technical outreach |
+| r/LocalLLaMA post copy (2.3M members) | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 116 — P0, never posted |
+| r/webdev post copy (1.1M members) | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 116 — P0, never posted |
+| Mastodon/Fosstodon post copy | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 116 — developer-heavy, HN overlap |
+| Bluesky Starter Pack strategy | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 116 — passive ongoing discovery |
+| Peerlist post copy | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 116 |
+| Dev.to Show HN day post | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 116 — technical benchmark angle |
+| 8 new viral Twitter/X hooks | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 116 |
+| MCP Discord #showcase | ⚠️ **STILL OVERDUE** — copy in Cycle 111 — do this NOW |
+| Smol Launch | ⚠️ **STILL OVERDUE** — copy in Cycle 111 — do this TODAY |
+| r/vibecoding | ⚠️ **STILL OVERDUE** — copy in Cycle 108 |
+| Indie Hackers | ⚠️ **OVERDUE since Cycle 98** |
+| Demo video | ⚠️ **P0 FOREVER** |
+| AlternativeTo | ⚠️ **OVERDUE** — 10 min, permanent SEO |
+| SaaSHub | ⚠️ **OVERDUE** — 10 min, permanent SEO |
+
+**Day 3 Cycle 116 P0 sequence (in order):**
+1. Post Show HN at 09:00–11:00 CET (Cycle 113 copy)
+2. Twitter hook 1 at 08:45 CET (Cycle 116)
+3. Twitter hook 2 at 09:05 CET (Show HN announce)
+4. MCP Discord #showcase — P0 OVERDUE
+5. r/LocalLLaMA post (Cycle 116) — 2.3M members, perfect audience
+6. LinkedIn at 09:30 CET (Cycle 114)
+7. Publish "How AI agents draw floor plans" to Dev.to
+8. r/webdev post (Cycle 116)
+9. Mastodon/Fosstodon post (Cycle 116)
+10. Engage HN thread constantly
+
+---
+
+## Day 3 Status — Cycle 114 (April 3, 2026 — Thursday, Original SHOW HN DAY)
 
 | Item | Status |
 |------|--------|

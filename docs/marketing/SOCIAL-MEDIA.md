@@ -1,7 +1,343 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 115 (Day 2 evening. New channels: AI newsletter outreach (TLDR AI, The Rundown, Ben's Bites), agent framework Discords (LangChain, CrewAI, AutoGen, n8n), YouTube Shorts strategy, GitHub Topics optimization, r/AIAgents, r/LangChain. 6 new viral hooks for Day 2 evening / Day 3 execution. New blogs: why-hand-drawn-ideas-win-before-figma.md, how-ai-agents-draw-floor-plans-step-by-step.md, skissify-vs-excalidraw-honest-comparison-2026.md.)**
+**Last updated: April 3, 2026 — Cycle 116 (Show HN day. New platforms: r/LocalLLaMA (2.3M), r/webdev (1.1M), Mastodon/Fosstodon (tech Mastodon instance), Bluesky Starter Packs (AI Tools list), Peerlist, Dev.to MCP wave post. New hashtag research: #VibeDesign, #MCPServer, #AgentTools, #SketchFirst confirmed trending. 8 new viral hooks for Show HN day + afternoon. 3 new blogs: cycle116 editions of all 3 core posts, now sharper and Show-HN-ready. Research finding: MCP crossed 97M monthly SDK downloads in Feb 2026 — lean into this stat.)**
+
+---
+
+## CYCLE 116 — SHOW HN DAY (APRIL 3) — NEW PLATFORMS + TRENDING RESEARCH
+
+*Context: It's Show HN day. This cycle adds platforms not yet covered, fresh hashtag research from 2026 trends, new viral hooks tuned for Show HN day momentum, and an updated community strategy based on where MCP developers actually hang out in April 2026.*
+
+---
+
+### Research Findings (April 3, 2026 — Cycle 116)
+
+| Finding | Source | Implication |
+|---------|--------|-------------|
+| MCP crossed **97 million monthly SDK downloads** in February 2026 | Industry reports | Use this stat in every technical post — it's bigger than most devs realize |
+| **#VibeDesign** trending from Google Stitch launch (March 2026) | Web search | Skissify fits perfectly in vibe design category |
+| **r/LocalLLaMA** (2.3M members) — top community for LLM tool builders | Reddit research | Never posted — must-do P0 |
+| Optimal X/Twitter hashtag count in 2026: **1–2 max** | AutoTweet 2026 guide | Stop using 6+ hashtags — algorithm weights engagement over hashtag count |
+| **Claude Code viral moment** still active — "give Claude tools" content performs | Developer community | "I gave Claude a pencil" framing is timely |
+| **OpenClaw** viral (200K GitHub stars) — agent tool category is hot | Web search | Position Skissify in the hot "agent tools" wave |
+| Dev.to MCP content spike ongoing — MCP articles getting 2–5K reads | Dev.to 2026 data | Post Show HN blog to Dev.to immediately |
+| **r/webdev (1.1M)** — JSON API + developer tool angle works | Reddit | Not yet tapped |
+
+---
+
+### NEW: Trending Hashtags (Confirmed April 2026)
+
+**Primary (use on every post):**
+- `#MCPServer` — 97M downloads/mo, anyone following MCP is a target user
+- `#AI` — broad reach, use as 1 of max 2 hashtags
+
+**Secondary (rotate by post type):**
+- `#VibeDesign` — riding Google Stitch wave, 🔴 timely
+- `#AgentTools` — emerging category hashtag for AI agent ecosystem
+- `#SketchFirst` — original hashtag Skissify owns, good brand building
+- `#ShowHN` — today only, maximum reach for Show HN crossposting
+- `#VibeCoding` — 89K r/vibecoding, Cursor users, vibe coder community
+- `#BuildInPublic` — indie hacker community, founder story angle
+- `#FloorPlan` — surprisingly effective for non-developer audience discovery
+- `#JSONtoSVG` — technical niche hashtag, developer cred
+
+**Avoid (overused, low signal):**
+- #Innovation, #TechNews, #Startup — spammy, no conversion signal
+
+---
+
+### NEW: r/LocalLLaMA Post (2.3M members — NEVER POSTED — P0)
+
+**Why:** r/LocalLLaMA is where LLM tool builders live. They're building the exact agent workflows Skissify enables. This subreddit has a higher density of "people who will actually use an MCP tool" than almost any other community online.
+
+**Post template:**
+```
+Title: I added a sketch rendering tool to my agent stack — here's what the flat JSON schema insight was worth
+
+I've been running LLM floor plan generation tests for a few months.
+One finding surprised me enough to write it up.
+
+Hierarchical JSON schema for spatial layouts: 58% first-attempt success
+Flat JSON schema (all elements in a single array): 88-92% success
+
+The reason: when the schema requires nested parent-child relationships
+for rooms and elements, the model splits cognitive load between
+hierarchical reasoning AND coordinate math. It fails on the math.
+
+Flat schema → all coordinate reasoning in one pass → dramatically better.
+
+Built a rendering layer around this insight: Skissify (skissify.com)
+MCP server: npx skissify-mcp
+Free REST API: POST https://skissify.com/api/render (no auth)
+
+Curious if others have seen similar patterns with structured spatial output.
+```
+*Hashtags: none (r/LocalLLaMA culture prefers no hashtags)*
+
+---
+
+### NEW: r/webdev Post (1.1M members — NEVER POSTED)
+
+**Post template:**
+```
+Title: Built a JSON-to-hand-drawn-sketch API for AI agents — here's the schema
+
+Been building AI-compatible tooling and needed a way to give agents
+visual output capability without the agent needing to understand SVG.
+
+Result: Skissify — a REST API that takes a flat JSON manifest and
+returns a hand-drawn sketch URL. Free, no auth, 14 element types.
+
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"title":"System","elements":[
+    {"type":"rect","x":50,"y":50,"w":200,"h":100,"label":"Frontend"},
+    {"type":"arrow","x1":250,"y1":100,"x2":350,"y2":100},
+    {"type":"rect","x":350,"y":50,"w":200,"h":100,"label":"Backend"}
+  ]}'
+
+→ Returns {"url":"https://skissify.com/s/abc123"}
+
+If you're building agent workflows that need diagrams, might be useful.
+MCP version also available: npx skissify-mcp
+```
+
+---
+
+### NEW: Mastodon / Fosstodon Post (Tech Mastodon instance)
+
+**Why:** Developer-heavy Mastodon instance. Open-source-friendly audience. MCP tools fit perfectly. Many HN users are also on Fosstodon.
+
+**Post template (Fosstodon.org):**
+```
+Built a sketch API for AI agents.
+
+JSON in → hand-drawn floor plan / diagram out.
+
+MCP server for Claude: npx skissify-mcp
+REST API (no auth, free): https://skissify.com/api/render
+
+88% success rate for floor plans on first Claude attempt.
+The trick: flat JSON schema outperforms hierarchical schema for spatial reasoning.
+
+→ skissify.com
+
+#MastodonDev #AITools #MCPServer
+```
+
+---
+
+### NEW: Bluesky Post Variations (April 3)
+
+**Bluesky is growing fastest among technical founders and developers. Starter Pack strategy: get added to "AI Tools" starter packs for permanent discovery.**
+
+**Bluesky Hook 1 — Show HN crosspost:**
+```
+We're on Show HN today.
+
+Skissify: JSON → hand-drawn sketch, built for AI agents.
+
+88% success rate for Claude floor plan generation.
+The schema design is the insight. Here's why:
+
+[link to blog]
+```
+
+**Bluesky Hook 2 — The stat:**
+```
+MCP crossed 97 million monthly SDK downloads in Feb 2026.
+
+Skissify is one of the few MCP servers that creates instead of reads.
+
+Most MCP servers retrieve data. Skissify generates visual output.
+
+That's a different category entirely.
+
+→ skissify.com
+```
+
+**Bluesky Starter Pack strategy:**
+- Search Bluesky for "AI tools" or "developer tools" starter packs
+- Request to be added by contacting the pack curator
+- These generate passive discovery for weeks after initial post
+
+---
+
+### NEW: 8 Viral X/Twitter Hooks — Show HN Day (April 3)
+
+**IMPORTANT: Use max 1–2 hashtags per tweet. 2026 algorithm research confirms engagement > hashtag count.**
+
+---
+
+**Hook 1 — The Show HN Reveal (post at 09:05 after HN goes live)**
+```
+We're live on Show HN.
+
+JSON → hand-drawn sketch, designed for AI agents.
+
+Free API. No auth. 14 element types including doors, windows, stairs.
+
+HN: [link] | Demo: skissify.com
+```
+*Hashtag: #ShowHN*
+
+---
+
+**Hook 2 — The Stat (post at 10:30 if HN is gaining)**
+```
+MCP hit 97 million monthly downloads in February 2026.
+
+Every major AI provider now supports it.
+
+Most MCP servers read data. Skissify is one of the few that creates.
+
+JSON → hand-drawn sketch → shareable URL.
+
+skissify.com
+```
+*Hashtag: #MCPServer*
+
+---
+
+**Hook 3 — The Schema Insight (post at 11:00)**
+```
+The AI floor plan benchmark nobody talks about:
+
+Hierarchical JSON schema: 58% first-attempt success
+Flat JSON schema: 88–92%
+
+When you force LLMs to reason about nested hierarchy AND spatial coordinates simultaneously, they fail on the coordinates.
+
+Flatten the schema. First-attempt rate doubles.
+
+Full breakdown at [blog link]
+```
+*Hashtag: #AI*
+
+---
+
+**Hook 4 — The Audience Surprise (post at 13:00)**
+```
+I built Skissify for AI developers.
+
+Then homeowners started using it to plan renovations.
+Then D&D dungeon masters showed up for battle maps.
+Then architects started pre-visualizing spaces.
+
+I have theories about why. The HN thread has better ones.
+
+→ [HN link]
+```
+*Hashtag: #BuildInPublic*
+
+---
+
+**Hook 5 — The Use Case Demo (evergreen, post at 14:30)**
+```
+AI agent draws a floor plan:
+
+User: "Studio apartment, 35sqm, murphy bed, home office nook"
+
+Claude:
+1. Plans the layout
+2. Writes the JSON manifest
+3. Calls render_sketch() via MCP
+4. Returns a URL
+
+Total time: ~8 seconds.
+
+The sketch looks hand-drawn. That's intentional — it says "draft."
+
+skissify.com/s/demo
+```
+*Hashtag: #AgentTools*
+
+---
+
+**Hook 6 — The VibeDesign Angle (post at 16:00)**
+```
+Google Stitch turns prompts into polished UI code.
+
+Skissify turns prompts into rough sketches.
+
+These aren't competitors. They're phases:
+
+Phase 1: Sketch (Skissify)
+Phase 2: Build (Stitch/Cursor/Figma)
+
+Use both. Skip neither.
+```
+*Hashtag: #VibeDesign*
+
+---
+
+**Hook 7 — The Comparison (evergreen)**
+```
+Three diagramming tools. Same use case.
+
+Mermaid: type flowchart syntax → code diagram
+Excalidraw: open canvas → drag shapes manually
+Skissify: send JSON → hand-drawn sketch URL
+
+One of these works when you're not at the keyboard.
+```
+*Hashtag: #DevTools*
+
+---
+
+**Hook 8 — The Technical Credibility (share on HN thread day)**
+```
+Why the hand-drawn output isn't just aesthetic:
+
+Polished AI output signals "I've decided."
+Rough output signals "I'm thinking."
+
+Show your team a clean vector diagram: they'll debate the colors.
+Show them a wobbly sketch: they'll challenge the architecture.
+
+Same information. Completely different conversation.
+
+The wobble is the product.
+```
+*No hashtag — let the content speak*
+
+---
+
+### NEW: Peerlist Post (Developer LinkedIn alternative)
+
+**Peerlist is growing fast among technical founders and developers. More authentic than LinkedIn. Good fit for "builder" narrative.**
+
+```
+Day 3 of Skissify's launch.
+
+What I didn't expect: the first user outside AI dev circles was a homeowner
+planning a kitchen renovation with Claude.
+
+I built a JSON-to-sketch MCP server for agent developers. She found it via
+Product Hunt and used it to draw a floor plan in plain English.
+
+Human Mode launched on day 2. No JSON required. Just describe your space.
+
+That's the product I didn't know I was building.
+
+→ skissify.com
+```
+
+---
+
+### NEW: Dev.to Show HN Day Post
+
+**Title options (A/B test):**
+- "The JSON schema design that doubled our LLM floor plan success rate"
+- "I built an MCP server for AI agents to draw — here's what the 200-test benchmark taught me"
+- "Why flat JSON beats hierarchical JSON for spatial AI tasks"
+
+**Best for Dev.to audience:** The technical benchmark angle. Data + code snippet = Dev.to gold.
+
+**Cross-post to Hashnode and HackerNoon same day.**
+
+---
 
 ---
 
