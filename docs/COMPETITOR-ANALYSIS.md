@@ -2,6 +2,93 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #107 (Thursday April 2, afternoon)
+
+### Status: 6 topics researched. KEY FINDINGS: Google Stitch 2.0 is FREE and ships sketch-to-UI (March 2026) — a new category entrant that normalizes "sketch as input" but targets UI prototyping not diagrams. tldraw SDK 4.3 (Jan 2026) adds SQLite sync storage and React 19 support — still no headless SVG export, $6K/yr unchanged. Napkin.ai confirmed at $12/mo — 6x Skissify's price, text-to-diagram (not hand-drawn). MCP ecosystem: 11,000+ servers, only 5% monetized — indie window is NOW. 21st.dev hit $10K MRR in 6 weeks on Cline marketplace (freemium → $16/mo). Headless JSON→hand-drawn SVG API: uncontested for 107th consecutive scan.
+
+### Google Stitch 2.0 — New Entrant (MEDIUM THREAT, CATEGORY-ADJACENT)
+
+**Source**: stitch.withgoogle.com, tech-insider.org/google-stitch-ai-design-tool-march-2026-update/ (verified 2026-04-02)
+
+Google Labs relaunched **Stitch** in March 2026 as a full AI-native infinite canvas design tool. Key features:
+- Upload a hand-drawn sketch → Stitch generates polished UI from it (Experimental Mode, Gemini 2.5 Pro)
+- Voice Canvas: speak to the canvas, AI makes live updates
+- "Vibe Design": describe a business objective → multiple UI directions generated
+- **Completely free** (Google Labs experimental, no paid plan)
+
+**What Stitch does NOT do**: No JSON-first input. No hand-drawn aesthetic output — it converts sketches INTO polished Figma-quality UI. No MCP support. No architectural/domain elements. Not a sketch renderer — it's a sketch consumer. No SVG API.
+
+**Threat assessment**: **MEDIUM (new, category-adjacent)** — Stitch normalizes "sketch as input to AI" in the developer/designer mindshare. This is actually positive for Skissify: the more people think "sketches are AI-compatible," the more natural the Skissify value prop becomes. The tools serve opposite directions: Stitch = sketch → polished UI; Skissify = JSON → hand-drawn sketch. They can coexist. Google's free offering may eat Napkin.ai and Uizard market share; Skissify is not in that lane.
+
+**Action**: Write a "Skissify vs Google Stitch — two opposite directions" post. Position: Stitch generates FROM sketches; Skissify generates sketches FOR AI agents. Same aesthetic, opposite workflows.
+
+---
+
+### tldraw SDK 4.3 — Minor Release (LOW THREAT, STABLE)
+
+**Source**: tldraw.dev/blog/tldraw-sdk-4.3, tldraw.dev/releases (verified 2026-04-02)
+
+tldraw SDK 4.3 (released January 2026) includes:
+- SQLite sync storage (pluggable persistence via Cloudflare Durable Objects or Node SQLite)
+- React 19 support (updated types)
+- Custom global shape type declarations
+- Draw/highlight shapes made more data-efficient
+- 35 additional bug fixes
+
+**No render API. No headless SVG export. No JSON manifest schema. $6,000/year commercial license unchanged.**
+
+**Threat assessment**: **LOW-STABLE (unchanged)** — 4.3 is a developer experience and infrastructure release. No new features that touch the hand-drawn headless space. The $6K/yr licensing continues to drive developers toward alternatives.
+
+---
+
+### Napkin.ai — Confirmed Competitor Pricing (MEDIUM THREAT, STABLE)
+
+**Source**: napkin.ai/pricing/, aichief.com/ai-design-tools/napkin/ (verified 2026-04-02)
+
+Napkin.ai 2026 pricing confirmed:
+- **Free**: 500 AI credits/week (~1 credit per word selected)
+- **Plus**: $12/person/month (10,000 AI credits/month)
+- **Pro**: $30/person/month (30,000 AI credits/month)
+- **Enterprise**: Custom
+
+**What Napkin does**: Text → professional business diagrams (charts, scenes, infographics). Clean polished output. No hand-drawn style. No JSON input. No MCP support. No architectural elements.
+
+**Threat assessment**: **MEDIUM-STABLE** — At $12/mo (6x Skissify's EUR 2/mo), Napkin.ai targets business storytelling professionals who want polished visual output from text. Completely different use case from Skissify. However, Napkin competes for the "AI → visual" developer mindshare budget. The key differentiator: Skissify is for the napkin-sketch stage; Napkin.ai is for the polished-presentation stage.
+
+---
+
+### MCP Ecosystem Monetization — The Indie Window Is Now (HIGH STRATEGIC SIGNAL)
+
+**Source**: dev.to/krisying/mcp-servers-are-the-new-saas-how-im-monetizing-ai-tool-integrations-in-2026-2e9e, medium.com/mcp-server/the-rise-of-mcp-protocol-adoption (verified 2026-04-02)
+
+Updated MCP ecosystem data (April 2026):
+- **11,000+ MCP servers** exist (up from 5,800 in March 2026)
+- **Less than 5% are monetized** — "equivalent to the early App Store before everyone figured out how to charge"
+- **97M SDK downloads/month** (up from earlier counts)
+- **21st.dev case study**: $10K MRR in 6 weeks, zero marketing, freemium model (10 free credits → $16/mo → $32/mo), via Cline marketplace
+- **Amazon Ads** launched official MCP server in February 2026 (open beta), joining Google, LinkedIn, Meta, HubSpot
+- MCP-Hive combines directory + gateway + billing — zero-friction monetization layer for indie MCP publishers
+
+**For Skissify**: The window is explicitly NOW. 95% of MCP servers are unmonetized. The category "visual output / sketch rendering" is empty in every MCP directory. 21st.dev's $10K MRR proof point is directly comparable to Skissify's price tier ($16/mo vs Skissify's EUR 2/mo — Skissify is actually priced too low relative to demonstrated willingness to pay for MCP tools).
+
+**Action**: Consider testing EUR 5/mo MCP tier (matching 21st.dev's ~$16 minus B2C discount) before the market matures.
+
+---
+
+### Updated Competitor Matrix (Run #107 — Thursday April 2, afternoon)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-----------------|
+| **Excalidraw+** | MCP (browser-required). Issue #10946 open. Advanced charts, GDrive video. | NO | YES | YES (browser) | **HIGH — headless gap confirmed moat** |
+| **Draw.io (JGraph)** | Official MCP server Feb 3, 2026. Clean vector. Enterprise credibility. | NO (requires runtime) | NO | YES | **MEDIUM-HIGH (distribution race)** |
+| **tldraw SDK 4.3** | SQLite sync, React 19. No render API. $6K/yr license. | NO | Partial (UI only) | NO | **LOW-STABLE** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | NO | **MEDIUM-STABLE** |
+| **Google Stitch 2.0** | FREE. Sketch→polished UI. March 2026. No JSON. Opposite direction. | NO | NO (consumes sketches) | NO | **MEDIUM (adjacent, not direct)** |
+| **21st.dev** | $10K MRR in 6 weeks. UI components via Cline MCP. Freemium→$16/mo. | NO (UI components) | NO | YES | **LOW (different domain)** |
+| **Skissify** | Headless JSON→hand-drawn SVG API: **uncontested**. MCP Registry: **STILL ABSENT** (CRITICAL × 8). | **YES (only one)** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #106 (Thursday April 2, 09:45 CET)
 
 ### Status: 4 topics researched. CRITICAL NEW FINDING: Draw.io released an official MCP server (Feb 3, 2026) — first major corporate diagram tool to ship a production-ready headless MCP. Excalidraw MCP third-party ecosystem expanding (Maaker AI, community integrations). tldraw: no April release, Image Pipeline template only. SaaS: usage-based pricing trend accelerates (Gartner: 70% will prefer usage-based over per-seat by 2026). Headless JSON→hand-drawn SVG API: uncontested for 106th consecutive scan.

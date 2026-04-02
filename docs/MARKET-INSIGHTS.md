@@ -2,6 +2,62 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #107 (Thursday April 2, afternoon)
+
+### Theme: The Opposite-Direction Trap — Why Google Stitch Validates Skissify Instead of Threatening It
+
+#### New Intelligence: Google Stitch 2.0 Ships Free — And Goes The Wrong Direction
+
+Google Stitch 2.0 (March 2026) ships sketch-to-polished-UI. It's free. It's backed by Google Labs. And it validates Skissify's entire premise.
+
+Here is the key insight: **Stitch converts sketches INTO finished UI. Skissify converts JSON INTO sketches.** These are opposite workflow steps. Stitch's existence proves that the sketch aesthetic has been fully legitimized by Google. It confirms that "the napkin phase" — rough, hand-drawn thinking — is now accepted as a serious input format in AI workflows. This is the cultural precondition for Skissify's EUR 2/mo pitch.
+
+**The EUR 2 trigger for 2026, updated (Run #107)**:
+
+The new trigger created by Stitch's launch: **Trigger I — The Stitch User Wanting to Go Back Up the Chain.**
+
+A designer used Stitch to generate polished UI from a sketch. They want to quickly mock up the next version as a sketch before committing to polished output. They need a tool that goes from idea → sketch quickly, without drawing by hand. Skissify is that tool: describe the layout in JSON, get a sketch. No manual drawing. No design tools. Feed it back to Stitch if needed.
+
+| Trigger | Discovery Moment | Why EUR 2 Is Easy | Urgency |
+|---------|-----------------|-------------------|---------|
+| **I: Stitch User Going Upstream** | Uses Google Stitch, wants to mock sketch-stage before polishing | Stitch is the polish tool, Skissify is the think tool | **MEDIUM (new)** |
+
+#### The 21st.dev Proof Point — Skissify May Be Priced Too Low
+
+21st.dev hit $10K MRR in 6 weeks on the Cline MCP marketplace with zero marketing. Their model: 10 free credits → $16/mo → $32/mo. No comparable hand-drawn sketch tool exists on any MCP marketplace.
+
+**What this means for Skissify's EUR 2/mo price**:
+- EUR 2/mo is impulse-buy territory — good for conversion
+- $16/mo is the proven MCP tool willingness-to-pay ceiling (21st.dev data)
+- The gap suggests Skissify can run a EUR 2/mo entry tier AND a EUR 9/mo "agent power user" tier (API volume + priority) without friction
+
+**Revised EUR 2 value analysis**:
+At EUR 2/mo, the question "what would make someone pay?" is almost wrong — the question is "what stops them from paying?" The barrier is awareness + first-use moment, not price psychology. A developer who has one successful agent sketch generation will pay EUR 2 without thinking. The job is to make that first generation happen.
+
+#### MCP Saturation Is Coming — But The Hand-Drawn Category Is Empty Today
+
+11,000+ MCP servers, less than 5% monetized. Every major SaaS (Amazon, Google, LinkedIn, Meta, HubSpot) has shipped official MCP servers in early 2026. The window where "being on the MCP Registry" confers first-mover advantage is explicitly measured in months, not years.
+
+**The visual output category of the MCP Registry is still empty.** A search for "hand-drawn", "sketch", "SVG render", or "floor plan" returns zero results in any MCP directory today. This is either a catastrophic distribution failure or an uncontested moat — depending entirely on whether Skissify submits a PR this week.
+
+#### Updated Payment Trigger Framework (9 triggers — Run #107)
+
+| # | Trigger | EUR 2 Friction | Status |
+|---|---------|---------------|--------|
+| A | Excalidraw headless refugee | Zero (they already pay $7/mo) | ACTIVE |
+| B | Enterprise pipeline builder | Zero (pipeline ROI >> EUR 2) | ACTIVE |
+| C | tldraw node user | Low | ACTIVE |
+| D | Design-to-sketch backfill | Low | ACTIVE |
+| E | Claude Code user mid-session | Zero (momentum cost) | ACTIVE |
+| F | 14-day opt-out auto-convert | Zero (49.9% benchmark) | ACTIVE |
+| G | Enterprise-blocked developer (REST API workaround) | Low | ACTIVE |
+| H | Draw.io aesthetic refugee | Zero (already in MCP ecosystem) | ACTIVE (Run #106) |
+| **I** | **Stitch user wanting upstream sketch tool** | **Low** | **NEW (Run #107)** |
+
+All 9 triggers share one property: **discovery is the only barrier.** EUR 2 is not the obstacle. Being findable is.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #106 (Thursday April 2, 09:45 CET)
 
 ### Theme: The Draw.io MCP Shock — Why the "First Mover" Window Is Now Measured in Days, Not Weeks

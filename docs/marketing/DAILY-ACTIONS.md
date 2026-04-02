@@ -2,7 +2,77 @@
 
 ---
 
-## [2026-04-02] — Strategy Run #106 Actions (Thursday April 2, 09:45 CET)
+## [2026-04-02] — Strategy Run #107 Actions (Thursday April 2, afternoon)
+
+### Context: Run #107 Key New Findings
+- **Google Stitch 2.0** (FREE, March 2026): Sketch→polished UI. Validates "sketch as AI input" culturally. Opposite workflow direction from Skissify — not a threat, a tailwind.
+- **tldraw SDK 4.3** (Jan 2026): SQLite sync, React 19 support. No render API. $6K/yr unchanged.
+- **Napkin.ai**: $12/mo confirmed. Text→polished diagrams. 6x Skissify price. No hand-drawn aesthetic.
+- **21st.dev**: $10K MRR in 6 weeks on Cline MCP marketplace. Model: freemium→$16/mo. Zero marketing.
+- **MCP ecosystem**: 11,000+ servers, <5% monetized. Visual sketch category empty in every directory.
+- **Headless JSON→hand-drawn SVG API**: uncontested for 107th consecutive scan.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 8th consecutive cycle): MCP Registry PR — The Window Is Still Open, Barely
+
+**11,000+ MCP servers. <5% monetized. 21st.dev hit $10K MRR in 6 weeks with zero marketing. The sketch/visual output category is empty in every directory. This is a once-in-a-product-lifecycle opportunity that requires one GitHub PR.**
+
+The 21st.dev case study is the closest comparable to Skissify: niche AI output tool, freemium→paid, MCP-first distribution, zero marketing. Their success came from being in the Cline marketplace before competition arrived. Skissify has the same window in the hand-drawn sketch category right now.
+
+**Steps** (8th cycle — now with 21st.dev urgency framing):
+1. `github.com/modelcontextprotocol/registry` — PR with `skissify.json`. Tags: `visual`, `sketch`, `hand-drawn`, `architecture`, `floor-plan`, `JSON`, `SVG`, `headless`, `stateless`
+2. Registry description must reference the category vacuum: "The only hand-drawn sketch renderer in the MCP ecosystem. POST JSON → receive SVG. No browser. No session. No Chromium. Architectural domain elements: doors, windows, stairs, dimensions."
+3. Submit simultaneously to: `glama.ai/mcp/servers`, `pulsemcp.com`, `mcp.so`, `mcpservers.org`, `mcpmarket.com` (new — 2026 directory)
+4. Submit to **Cline marketplace** — 21st.dev's primary distribution channel for $10K MRR
+5. Implement `.well-known/mcp.json` endpoint (MCP 2026 roadmap Priority 1)
+6. Announce on Twitter/X, tag @modelcontextprotocol, @excalidraw, @tldraw
+
+**Time estimate: 2-3 hours. The category is empty today. It will not be empty in 60 days.**
+
+---
+
+### Action 2 (HIGH — today/tomorrow): Write "Skissify vs Google Stitch — Two Directions of the Same Sketch"
+
+**Google Stitch 2.0 launched free in March 2026. It converts sketches INTO polished UI. Skissify converts JSON INTO sketches. They are opposite workflow tools serving the same aesthetic. A well-timed comparison post captures Stitch's search traffic and positions Skissify as the upstream complement.**
+
+Google Stitch is generating significant developer curiosity (multiple tutorials, NxCode guide, Codecademy article published within days of March launch). Searches for "Google Stitch alternative", "sketch to UI tool", and "AI design canvas 2026" are all rising. A comparison post published now can intercept this traffic with a non-competitive framing.
+
+**Angle**: "Stitch gives you polished UI from a sketch. Skissify gives you a sketch from an idea. Use them in sequence: Skissify → rough sketch → Stitch → polished UI. Total time: under 60 seconds."
+
+**Steps**:
+1. Write 500-word post at `skissify.ai/blog/skissify-vs-google-stitch`
+2. Target keywords: "Google Stitch alternative", "sketch to UI 2026", "AI sketch generator JSON", "hand-drawn diagram tool free"
+3. Include a workflow diagram (made with Skissify, naturally)
+4. Submit to dev.to, hashnode, Hacker News (Show HN: "I made the sketch tool that feeds Google Stitch")
+5. Tweet with @googledevs tag — they may retweet (adjacent use case, no competition)
+
+**Why now**: Stitch traffic is rising. Zero hand-drawn sketch tools have positioned themselves as Stitch complements yet.
+
+---
+
+### Action 3 (MEDIUM — this week): Price Tier Experiment — Add EUR 9/mo "Agent" Tier
+
+**21st.dev proves MCP tool users pay $16/mo for UI components. Skissify's EUR 2/mo is 8x cheaper for a comparable MCP tool. The market is telling us the floor is EUR 2 but the ceiling is EUR 15+.**
+
+Current gap: Skissify has EUR 2/mo (individual) and EUR 12/user/mo (Team). Nothing in between for the "agent power user" — a developer running automated pipelines who needs higher API volume but isn't a Team customer.
+
+**Proposed new tier: EUR 9/mo "Agent Pro"**
+- 10,000 renders/month (vs 1,000 in EUR 2/mo Pro)
+- Priority API queue
+- Webhook support for async rendering
+- Access to `.well-known/mcp.json` managed server
+
+This tier targets exactly the 21st.dev customer profile: developer, MCP-first, values reliability over features, pays without thinking at EUR 9/mo.
+
+**Steps**:
+1. Add "Agent Pro" tier to pricing page (no code changes required for initial test)
+2. Gauge interest with a "Join waitlist" CTA (validate before building)
+3. If 10+ waitlist signups in 7 days → build the tier. If not → keep current structure.
+
+---
+
+## 2026-04-02 — Strategy Run #106 Actions (Thursday April 2, 09:45 CET)
 
 ### Context: Run #106 Key New Findings
 - **Draw.io official MCP server** shipped Feb 3, 2026 — 57 days ago. Enterprise-grade, growing blog ecosystem, zero hand-drawn aesthetic. First major MCP diagram tool with corporate backing. Distribution competitor, not product competitor.

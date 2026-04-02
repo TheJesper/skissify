@@ -14,7 +14,74 @@ const asRect = (el: SketchElement) => el as unknown as { x: number; y: number; w
 const asCirc = (el: SketchElement) => el as unknown as { cx: number; cy: number; r: number };
 const asPos = (el: SketchElement) => el as unknown as { x: number; y: number };
 
+/**
+ * Extract bounding box for architectural elements that use non-standard coordinate schemes:
+ * - column: cx/cy/size OR x/y/s  → square of side `size` centered on cx,cy
+ * - door-symbol: x/y/w (no h)    → bounding box is w×w (arc swings within a w-radius quadrant)
+ * - door-slide: x/y/w/d (no h)   → bounding box is w×d
+ * - opening: x/y/w (no h)        → bounding box is w×8 (thin slit in wall)
+ * - window (new): x/y/w (no h)   → bounding box is w×8 (thin slit in wall)
+ * Returns null if the element is not one of these types.
+ */
+function getArchElementBounds(el: SketchElement): { x: number; y: number; w: number; h: number } | null {
+  const raw = el as unknown as AnyEl;
+  if (el.type === "column") {
+    const ccx = (raw.cx ?? raw.x ?? 0) as number;
+    const ccy = (raw.cy ?? raw.y ?? 0) as number;
+    const cs = (raw.s ?? raw.size ?? 12) as number;
+    return { x: ccx - cs / 2, y: ccy - cs / 2, w: cs, h: cs };
+  }
+  if (el.type === "door-symbol") {
+    const dw = (raw.w ?? 36) as number;
+    const dwall = (raw.wall ?? "h") as string;
+    const swing = (raw.swing ?? "right") as string;
+    if (dwall === "h") {
+      // Arc swings into y-negative or y-positive depending on swing
+      const arcY = swing === "right" ? (raw.y as number) - dw : (raw.y as number);
+      return { x: raw.x as number, y: arcY, w: dw * 2, h: dw };
+    } else {
+      // Vertical wall: arc swings to the right
+      return { x: raw.x as number, y: (raw.y as number), w: dw, h: dw * 2 };
+    }
+  }
+  if (el.type === "door-slide") {
+    const dsw = (raw.w ?? 60) as number;
+    const dsd = (raw.d ?? 8) as number;
+    const dsWall = (raw.wall ?? "h") as string;
+    if (dsWall === "h") {
+      return { x: raw.x as number, y: raw.y as number, w: dsw, h: dsd };
+    } else {
+      return { x: raw.x as number, y: raw.y as number, w: dsd, h: dsw };
+    }
+  }
+  if (el.type === "opening") {
+    // opening with x/y/w format (no h)
+    if ("x" in el && "w" in el && !("h" in el) && !("x1" in el)) {
+      const ow = (raw.w ?? 40) as number;
+      const owall = (raw.wall ?? "h") as string;
+      if (owall === "h") return { x: raw.x as number, y: (raw.y as number) - 4, w: ow, h: 8 };
+      return { x: (raw.x as number) - 4, y: raw.y as number, w: 8, h: ow };
+    }
+  }
+  if (el.type === "window") {
+    // window with x/y/w format (no h, no x1/y1)
+    if ("x" in el && "w" in el && !("h" in el) && !("x1" in el)) {
+      const ww = (raw.w ?? 60) as number;
+      const wwall = (raw.wall ?? "h") as string;
+      const wd = (raw.d ?? 8) as number;
+      if (wwall === "h") return { x: raw.x as number, y: raw.y as number, w: ww, h: wd };
+      return { x: raw.x as number, y: raw.y as number, w: wd, h: ww };
+    }
+  }
+  return null;
+}
+
 function getElementBounds(el: SketchElement): { x: number; y: number; w: number; h: number } | null {
+  // Handle architectural elements with non-standard coordinate schemes first
+  const archBounds = getArchElementBounds(el);
+  if (archBounds) {
+    return { x: archBounds.x - 5, y: archBounds.y - 5, w: archBounds.w + 10, h: archBounds.h + 10 };
+  }
   if ("x1" in el && "x2" in el) {
     const { x1, y1, x2, y2 } = asLine(el);
     // For wall lines, expand bounds to include the full wall thickness
