@@ -1,7 +1,68 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 — Day 3 Show HN Day (SEE CYCLE 116)**
+**Current Date: April 2 — Day 2 Evening / Pre-Show-HN Warm-Up (SEE CYCLE 117)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02 Evening, Cycle 117 — Pre-Show-HN Warm-Up)
+
+### Cycle 117 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Deterministic Wobble: How Skissify Makes Hand-Drawn Art Reproducible" (deep technical dive — seeded PRNG, Canvas 2D, why determinism matters for AI) | `blog/deterministic-wobble-how-skissify-makes-hand-drawn-art-reproducible-cycle117.md` | ✅ Written — post to Dev.to + HackerNoon on Show HN day |
+| Blog: "Your AI Agent Should Draw Before It Types" (manifesto — visual-first AI workflow, spatial reasoning gap) | `blog/your-ai-agent-should-draw-before-it-types-cycle117.md` | ✅ Written — post on Show HN day, great for Bluesky/LinkedIn |
+| Blog: "Skissify vs Excalidraw: The API-First Answer" (API-first framing, reproducibility angle, honest feature table) | `blog/skissify-vs-excalidraw-the-api-first-answer-cycle117.md` | ✅ Written — post to Dev.to, useful for HN comparison questions |
+| SOCIAL-MEDIA.md Cycle 117 (warm-up Twitter thread, HN engagement scripts, r/compsci angle, Mastodon/Fosstodon copy, GitHub Discussions template, "draw before you type" hooks) | SOCIAL-MEDIA.md Cycle 117 | ✅ Written |
+
+### Cycle 117 — Priority Actions for Tonight (April 2 — 21:00+ CET)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **Post warm-up Twitter thread** — 4 tweets, 21:00 CET — copy Cycle 117 (builds context trail for HN voters) | 🔴 P0 — do tonight | 5 min |
+| **Post Mastodon/Fosstodon** — Cycle 117 copy — tonight (HN audience overlap) | 🔴 P0 — do tonight | 3 min |
+| **Read HN engagement scripts** — Cycle 117 — have these ready for 09:00 CET Show HN | 🟡 P1 — prep only | 3 min |
+| **Post r/compsci** — Cycle 117 copy — can post tonight or Show HN day | 🟡 P1 | 5 min |
+
+### Cycle 117 — Priority Actions for Tomorrow (April 3 — Show HN Day)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Show HN 09:00–11:00 CET** — copy in SOCIAL-MEDIA.md Cycle 113 | 🔴 P0 — optimal window | 2 min |
+| **Post r/LocalLLaMA (2.3M)** — Cycle 116 copy — never posted | 🔴 P0 | 5 min |
+| **Post MCP Discord #showcase** — OVERDUE since Cycle 111 | 🔴 P0 | 5 min |
+| **Engage every HN comment within 15 min** — use Cycle 117 scripts | 🔴 P0 | ongoing |
+| **Post "draw before you type" Twitter hook** — Cycle 117 | 🟡 P1 | 2 min |
+| **Post "draw before you type" LinkedIn** — Cycle 117 | 🟡 P1 | 2 min |
+| **Publish deterministic wobble blog to Dev.to** — Cycle 117 | 🟡 P1 | 10 min |
+| **Post r/compsci** — wobble algorithm story — Cycle 117 | 🟡 P1 | 5 min |
+| **Post r/webdev (1.1M)** — Cycle 116 copy — never posted | 🟡 P1 | 5 min |
+| **Submit Smol Launch** — OVERDUE | 🔴 P0 | 10 min |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | 🔴 P0 | 5 min |
+| **RECORD DEMO VIDEO** — P0 FOREVER | 🔴 P0 | 20 min |
+
+### Cycle 117 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| r/compsci (1.9M) | Wobble algorithm (seeded PRNG) is genuinely interesting to CS audience. Lead with algorithm, not product pitch. | 🟡 P1 |
+| GitHub Discussions (Anthropic/Claude repos) | Most targeted developer audience online. Contribute to existing discussions about visual output/MCP. Template ready in Cycle 117. | 🟡 P1 |
+| Warm-up Twitter thread (tonight) | Pre-HN context trail. HN voters who've seen your Twitter thread are primed to upvote. 5 min task, high leverage. | 🔴 P0 — tonight |
+| Mastodon/Fosstodon (tonight) | HN/Twitter overlap. Many influential technical founders have migrated here. Post tonight builds presence before HN day. | 🔴 P0 — tonight |
+
+### Cycle 117 — Strategic Insight (The Pre-HN Warm-Up Window)
+
+**The two hours before you post Show HN matter.** HN voters who recognize your project from Twitter/Mastodon are more likely to upvote (social proof, familiarity effect). The warm-up thread tonight builds a reference trail:
+
+1. HN voter sees your post at 09:00
+2. Googles "Skissify" → finds Twitter thread from last night
+3. Sees technical detail in thread → builds trust
+4. Upvotes
+
+This isn't a new strategy — it's documented in multiple successful Show HN post-mortems. The window to execute it is **tonight, before 23:00 CET**.
+
+**The r/compsci angle is underused.** Technical communities respond to algorithm stories, not launch announcements. "I used a seeded LCG to make hand-drawn art deterministic" is an interesting algorithmic post. "I launched a product" is noise. Cycle 117 has the r/compsci copy ready.
 
 ---
 

@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 3, 2026 — Cycle 116 (Show HN day. 3 new blogs: cycle116 editions of all 3 core posts. SOCIAL-MEDIA.md Cycle 116: r/LocalLLaMA (2.3M), r/webdev (1.1M), Mastodon/Fosstodon, Bluesky Starter Pack strategy, Peerlist, Dev.to, 8 new viral hooks, hashtag research confirmed. LAUNCH-PLAN.md Cycle 116 actions added. Research: MCP at 97M monthly downloads Feb 2026 — use in all technical outreach.)*
+*Last updated: April 2, 2026 — Cycle 117 (Pre-Show-HN evening. 3 new blogs: deterministic wobble technical deep dive, "draw before you type" visual-first AI manifesto, Skissify vs Excalidraw API-first framing. SOCIAL-MEDIA.md Cycle 117: warm-up Twitter thread, HN engagement scripts, r/compsci wobble angle, Mastodon/Fosstodon, GitHub Discussions template, "draw before you type" concept hooks. Strategy: pre-HN warm-up window tonight.)*
 
 ---
 

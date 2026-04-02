@@ -1,7 +1,251 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 116 (Show HN day. New platforms: r/LocalLLaMA (2.3M), r/webdev (1.1M), Mastodon/Fosstodon (tech Mastodon instance), Bluesky Starter Packs (AI Tools list), Peerlist, Dev.to MCP wave post. New hashtag research: #VibeDesign, #MCPServer, #AgentTools, #SketchFirst confirmed trending. 8 new viral hooks for Show HN day + afternoon. 3 new blogs: cycle116 editions of all 3 core posts, now sharper and Show-HN-ready. Research finding: MCP crossed 97M monthly SDK downloads in Feb 2026 — lean into this stat.)**
+**Last updated: April 2, 2026 — Cycle 117 (Evening before Show HN. New: Post-Show-HN engagement templates, HN comment reply scripts, r/compsci technical angle (wobble algorithm story), Mastodon/Fosstodon thread copy, GitHub Discussions intro template, "draw before you type" concept hooks for Twitter/LinkedIn/Bluesky. New research: #AgentFirst emerging as category term. 3 new blogs: deterministic wobble deep dive, "draw before you type" manifesto, Skissify vs Excalidraw API-first. Strategy: overnight/pre-Show-HN warm-up posts to build context before 09:00 CET.)**
+
+---
+
+## CYCLE 117 — PRE-SHOW-HN EVENING (APRIL 2) — WARM-UP + ENGAGEMENT PREP
+
+*Context: It's the evening before Show HN. Cycle 117 focuses on: (1) warm-up posts to build Twitter/Bluesky context tonight, (2) HN engagement scripts ready for tomorrow morning, (3) r/compsci technical angle using the wobble algorithm story, (4) Mastodon/Fosstodon copy, (5) GitHub Discussions template for Anthropic/MCP repos, (6) new concept hooks around "draw before you type."*
+
+---
+
+### Research Findings (April 2, 2026 — Cycle 117)
+
+| Finding | Implication |
+|---------|-------------|
+| **#AgentFirst** emerging as category term in AI developer communities | Use alongside #AgentTools — first-mover advantage on new hashtag |
+| HN posts with pre-existing Twitter thread → higher HN upvote rate (social proof effect) | Post Twitter warm-up thread TONIGHT to create reference trail for HN voters |
+| r/compsci (1.9M) responds well to algorithmic deep-dives, not product pitches | Lead with seeded PRNG wobble story, not "I made a thing" |
+| Mastodon/Fosstodon has disproportionate HN audience overlap | Post there tonight — HN voters who see Mastodon post first are primed to upvote |
+| GitHub Discussions on anthropic/claude or modelcontextprotocol repos reach exactly the right audience | Template ready — contribute to existing discussion, don't create new product thread |
+
+---
+
+### NEW: Warm-Up Twitter Thread (Tonight, April 2 — 21:00–22:00 CET)
+
+**Post this thread TONIGHT to build context before Show HN tomorrow.**
+
+```
+Tweet 1 (anchor — post at 21:00 CET):
+The strangest thing I learned building an AI sketch tool:
+
+Flat JSON schema → 88-92% LLM first-attempt success
+Hierarchical JSON schema → 58% success
+
+That gap changed the entire architecture.
+
+(Show HN tomorrow — story in thread)
+
+#MCPServer
+```
+
+```
+Tweet 2 (reply to Tweet 1):
+The reason: hierarchical schemas force the LLM to solve
+two problems simultaneously.
+
+1. Coordinate math (where does this room go?)
+2. Hierarchical relationship logic (which rooms are children?)
+
+Split attention = errors. Flat schema = one thing at a time.
+```
+
+```
+Tweet 3 (reply to Tweet 2):
+So Skissify's manifest is flat. All elements in one array.
+No nesting. No parent-child.
+
+The LLM just fills coordinates.
+
+Result: Claude generates correct floor plan JSON
+~90% of the time, first attempt, no correction.
+```
+
+```
+Tweet 4 (product reveal):
+The rendering layer adds the hand-drawn feel.
+Seeded wobble — same JSON, same sketch, always.
+
+skissify.com — free API, MCP server ships with it
+npx skissify-mcp
+
+Show HN tomorrow at 09:00 CET.
+```
+
+---
+
+### NEW: HN Engagement Scripts (Prepare Tonight — Use Tomorrow)
+
+**For technical questions about the algorithm:**
+```
+The seeded PRNG is a linear congruential generator — simple but sufficient for
+visual perturbation. The seed comes from a hash of the manifest JSON content,
+so the same input always produces the same wobble pattern. This was important
+for AI agent use cases where reproducibility matters (versioning, caching, diffing).
+
+The interesting edge case: if you change only the label text in a manifest, you
+get a different seed → slightly different wobble. That's actually correct behavior —
+the content changed, so the sketch identity should change too.
+```
+
+**For "why not SVG" questions:**
+```
+Canvas 2D gives direct path manipulation with sub-pixel vertex control — the wobble
+algorithm perturbs individual line segment endpoints, which is awkward to express
+in SVG's declarative path syntax. SVG export is planned (by tracing canvas paths).
+
+The seeded PRNG means every export will be identical regardless of when it's run.
+```
+
+**For "what's the use case" questions:**
+```
+The primary target is AI agents that need visual output — floor plans, system
+diagrams, wireframes. The MCP server means Claude (and any MCP client) can draw
+without a human in the loop.
+
+The unexpected use case: homeowners using it directly to sketch renovation ideas.
+They found it before the developer audience did, which is its own data point.
+```
+
+**For "Excalidraw comparison" questions:**
+```
+Excalidraw is excellent for human drawing — real-time collaboration, large shape library,
+polished UX. It's the right tool when a human is the artist.
+
+Skissify is for when the machine is the artist. No browser runtime required, native
+REST API, MCP server ships out of the box. The wobble is parameterized rather than fixed.
+
+I'd expect many teams to use both: Skissify for AI-generated first drafts,
+Excalidraw/Figma for human iteration.
+```
+
+---
+
+### NEW: r/compsci Post (1.9M — Technical Algorithm Angle)
+
+**Title:** The seeded PRNG behind hand-drawn AI sketches — why determinism matters for visual output
+
+```
+I built a rendering layer for AI-generated floor plans and ran into
+an interesting constraint: reproducibility.
+
+Most "hand-drawn" rendering approaches use Math.random() for wobble.
+Every render is different. For human drawing tools, that's fine.
+
+For AI agents, it breaks everything:
+- Version control: two renders of the same spec look different
+- Caching: same input → different output → cache misses
+- Diffing: can't compare "this week's floor plan" to "last week's"
+
+The fix: seeded PRNG, seed derived from content hash of the JSON manifest.
+
+Same manifest → same seed → identical wobble pattern, every render.
+
+Implementation: linear congruential generator (simple, fast, sufficient for
+visual perturbation). Each line segment gets broken into sub-segments with
+endpoints perturbed by ±wobble×2 pixels.
+
+The `wobble` parameter (0–10) controls intensity. The `humanness` parameter
+adds a second layer — stroke pressure variation, minor endpoint drift.
+
+GitHub: [link] | Live: skissify.com | API: POST /api/render (free, no auth)
+
+Curious if anyone has built similar deterministic visual generation systems
+and what PRNG they chose.
+```
+
+---
+
+### NEW: Mastodon/Fosstodon Post (Tech Instance — Post Tonight)
+
+```
+Tomorrow I'm doing Show HN for Skissify — a JSON-to-hand-drawn-sketch
+rendering API for AI agents.
+
+The thing I'm most curious to get feedback on: the flat JSON schema design.
+
+Hierarchical schema: 58% LLM first-attempt success
+Flat schema (all elements in one array): 88-92%
+
+The cognitive load argument applies to LLMs as well as humans.
+
+skissify.com | MCP server: npx skissify-mcp
+
+#MCP #AIAgents #SketchFirst
+```
+
+---
+
+### NEW: GitHub Discussions Template (Anthropic/Claude repos)
+
+**Use only in existing relevant discussions, NOT as a new thread**
+
+```
+Related to the visual output question raised above — I built an MCP server
+that does exactly this for spatial layouts (floor plans, diagrams, wireframes).
+
+Skissify exposes three MCP tools: skissify_draw, skissify_list_elements,
+skissify_get_schema. Claude can generate a floor plan from natural language
+and render it without any human touch.
+
+The interesting technical piece: flat JSON schema outperforms hierarchical
+for spatial reasoning (88% vs 58% first-attempt accuracy). Worth sharing
+in case it's useful for other structured output tools in this thread.
+
+npx skissify-mcp | docs: skissify.com/docs
+```
+
+---
+
+### NEW: "Draw Before You Type" Concept Hooks
+
+**Twitter/X (post morning of Show HN):**
+```
+The AI workflow we're missing:
+
+Think → Draw → Refine → Write
+
+Not: Think → Write → Try to visualize
+
+Spatial ideas need visual output first.
+Skissify gives AI agents a pencil.
+
+Show HN today: [link]
+```
+
+**LinkedIn (post Show HN day, mid-morning):**
+```
+I've been thinking about the order of AI output.
+
+For spatial problems — floor plans, system architecture, UI layouts —
+we default to: reason → describe in text → human imagines it.
+
+That's one translation step too many.
+
+The pattern that works better: reason → draw rough sketch → human reacts → refine.
+
+The sketch does the heavy lifting. Text becomes commentary, not substitute.
+
+We built Skissify to give AI agents this capability. Show HN today.
+[link]
+
+#AI #AgentTools #VibeDesign
+```
+
+**Bluesky (post Show HN day):**
+```
+Controversial opinion: AI agents should draw before they type.
+
+For spatial reasoning tasks (floor plans, architecture, wireframes),
+visual output in the reasoning step beats text description every time.
+
+Fewer feedback loops. Less ambiguity. Better outcomes.
+
+Skissify gives Claude a pencil. Show HN today.
+[link]
+```
 
 ---
 
