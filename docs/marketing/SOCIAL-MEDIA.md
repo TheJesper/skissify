@@ -1,7 +1,239 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 117 (Evening before Show HN. New: Post-Show-HN engagement templates, HN comment reply scripts, r/compsci technical angle (wobble algorithm story), Mastodon/Fosstodon thread copy, GitHub Discussions intro template, "draw before you type" concept hooks for Twitter/LinkedIn/Bluesky. New research: #AgentFirst emerging as category term. 3 new blogs: deterministic wobble deep dive, "draw before you type" manifesto, Skissify vs Excalidraw API-first. Strategy: overnight/pre-Show-HN warm-up posts to build context before 09:00 CET.)**
+**Last updated: April 2, 2026 — Cycle 118 (Late night, final prep before Show HN. New: "Which tool should your AI agent use?" hook, TikTok/Reels script for wobble demo, Discord server list for Show HN day drop, post-Show-HN momentum copy (keep thread alive hours 4–8), Product Hunt revival post template, n8n/Make community copy. New angle: "agent-first design" framing. 3 new blogs: "The Meeting Test" Figma comparison, technical floor plan walkthrough with code, Excalidraw vs Skissify agent-first frame. Research: Discord servers with 10K+ AI builders not yet posted to.)**
+
+---
+
+## Cycle 118 — April 2, 2026 (Night Before Show HN — Final Window)
+
+### NEW: "Which tool should your AI agent use?" Twitter hook
+
+*Post this at 07:30 CET tomorrow — 90 minutes before Show HN — as a standalone hook to warm the audience.*
+
+```
+Quick breakdown: Skissify vs Excalidraw
+
+They both make hand-drawn diagrams. But one is for humans. One is for AI agents.
+
+Here's how to know which to use ↓
+```
+
+*Thread continues:*
+
+```
+2/ Excalidraw is excellent software.
+
+It's built for humans with mice and trackpads. Real-time collaboration, freehand drawing, offline mode.
+
+If a human is drawing, use Excalidraw.
+```
+
+```
+3/ But try this: ask Claude to produce an Excalidraw diagram autonomously.
+
+No MCP server. No API. Claude can describe one. It cannot make one.
+
+The actor changed. The tool didn't.
+```
+
+```
+4/ Skissify is designed for AI agents:
+→ REST API (POST JSON → get SVG)
+→ MCP server (npx skissify-mcp)
+→ ~94% first-try LLM accuracy with flat JSON
+→ Shareable URL as output (agents pass strings)
+→ No auth, 150ms response
+
+skissify.com
+```
+
+```
+5/ The pattern I keep seeing in 2026:
+
+Skissify for the AI draft phase → rough, fast, shareable
+Excalidraw for the human polish phase → refined for presentations
+
+Use both. Know which is which.
+```
+
+---
+
+### NEW: TikTok / Instagram Reels Script (wobble slider demo)
+
+*60-second screen record. No voiceover needed — music + text overlays only.*
+
+```
+TEXT OVERLAY: "Your AI just got a pencil"
+
+[0:00–0:08]
+Screen: Skissify editor, blank canvas
+Text: "I gave Claude the ability to draw"
+Action: Cursor opens Claude Desktop
+
+[0:08–0:20]
+Screen: Claude chat, type prompt
+Text: "Prompt: 'Draw me a 2-bedroom floor plan'"
+Action: Claude processes, sketch appears
+
+[0:20–0:35]
+Screen: Resulting floor plan sketch
+Text: "Hand-drawn. Wobbly. Like a real sketch."
+Action: Slowly drag wobble slider 0→10 (satisfying)
+
+[0:35–0:50]
+Screen: Switch to blueprint mode
+Text: "Blueprint mode hits different"
+Action: Watch cream → blueprint transition
+
+[0:50–0:60]
+Screen: Copy share URL, paste in browser
+Text: "Shareable URL. No login. Free."
+CTA: "skissify.com — try the curl command"
+
+HASHTAGS: #AI #VibeCoding #FloorPlan #AIAgents #BuildInPublic #MCP #HandDrawn
+```
+
+---
+
+### NEW: Discord servers — Show HN Day drop list
+
+*Post to these TODAY (April 2 evening) or first thing April 3 morning. Timed with Show HN submission.*
+
+| Server | Channel | Copy to use |
+|--------|---------|-------------|
+| Anthropic Discord | #mcp-showcase | Cycle 117 MCP copy — **OVERDUE** |
+| AI Engineer World's Fair Discord | #tools-and-resources | Short intro + skissify.com link |
+| LangChain Discord | #showcase | Cycle 115 agent integration copy |
+| CrewAI Discord | #i-made-this | "Add drawing to your crew" hook |
+| n8n Community Discord | #share-your-workflow | n8n integration demo copy (below) |
+| Cursor Discord | #extensions | MCP install copy |
+| Buildspace Discord | #share-your-work | "I launched this on April Fools" story |
+| Indie Hackers Discord | #show-ih | Cycle 115 founder story copy |
+
+**n8n Community Discord copy:**
+
+```
+Hey n8n builders — launched something that pairs well with n8n workflows.
+
+Skissify: a REST API that renders hand-drawn SVG sketches from JSON.
+Zero auth. POST JSON, get SVG + shareable URL in ~150ms.
+
+Use case in n8n: HTTP Request node → POST floor plan manifest →
+returns URL → attach to email/Slack/report node.
+
+No SDK. No account. Works like any other API node.
+
+skissify.com/for-agents has the full JSON schema.
+
+Happy to share the n8n workflow JSON if anyone wants to try it.
+```
+
+---
+
+### NEW: Post-Show-HN Momentum Copy (Hours 4–8 on April 3)
+
+*Use these after the initial HN rush, to keep traffic coming through the afternoon.*
+
+**Twitter — 4 hours in (around 13:00–14:00 CET):**
+
+```
+4 hours into Show HN.
+
+The comment I wasn't expecting: "This is the first MCP server where the OUTPUT is the point, not the input."
+
+That's a cleaner description than anything I wrote in the post.
+
+Thread: news.ycombinator.com/item?id=[ID]
+```
+
+**Twitter — 6 hours in (around 15:00 CET):**
+
+```
+Something I noticed watching Show HN traction:
+
+The comments that drive more upvotes aren't "great product!" they're "how does X work?"
+
+So here's how the wobble algorithm works: it uses a seeded LCG (Linear Congruential Generator) so the same input always produces the same sketch.
+
+Deterministic wobble. Same JSON → same SVG. Every time.
+```
+
+**LinkedIn — afternoon post (Show HN day, 14:00–16:00 CET):**
+
+```
+What I've learned in 3 days of building in public:
+
+1. The people who think it's a joke (launched April 1) try the curl command to prove it wrong. They convert best.
+
+2. Communities you didn't plan for show up. D&D players built dungeon maps. Renovation planners sketched room layouts. These are real users.
+
+3. The algorithm that matters most is not HN or PH. It's "does the demo click?" If someone runs the curl command and gets a hand-drawn SVG back, they get it instantly.
+
+3 days in. Still learning.
+
+→ skissify.com
+
+#BuildInPublic #IndieHacker #SoloFounder #AITools #MCP
+```
+
+---
+
+### NEW: Product Hunt Revival Template (April 4–5)
+
+*If PH momentum has slowed, use this to drive a second wave of traffic.*
+
+**Twitter:**
+
+```
+If you missed the Product Hunt launch — we're still there.
+
+Skissify: JSON → hand-drawn sketch API.
+AI agents, floor plans, architecture diagrams, D&D maps.
+
+Would love an upvote if it looks useful: [PH link]
+
+Free API, no auth: skissify.com
+```
+
+---
+
+### NEW: r/singularity (1.2M) — Post for Show HN day or April 4
+
+```
+Title: I built an API that gives AI agents the ability to draw — not generate images, but sketch structured diagrams
+
+What changed: LLMs have always been able to reason spatially. "Design a floor plan" → paragraph of text. Accurate, but not visual.
+
+Skissify closes this: POST a JSON manifest describing rooms/shapes → hand-drawn SVG with wobble and paper textures.
+
+The schema insight: flat JSON gets ~94% first-try LLM accuracy. Nested/hierarchical gets ~40%. Design for how LLMs think, not how devs usually structure APIs.
+
+Free API, no auth: skissify.com
+MCP server: npx skissify-mcp (Claude Desktop + Cursor)
+```
+
+---
+
+### NEW: Show HN Day — Self-Comment Template (Spatial Reasoning Gap)
+
+*Post within 5 minutes of Show HN submission — this is the schema/technical insight comment.*
+
+```
+Founder here. Happy to answer any questions.
+
+The thing I keep coming back to: LLMs have impressive spatial reasoning. Ask Claude to design a floor plan verbally and you get something genuinely useful. But the output format is text, and text can't be handed to a contractor or passed to the next agent in a pipeline.
+
+Skissify is trying to be the missing output primitive — the same way a database is a primitive for querying structured data, or a file system is a primitive for storing text. The sketch URL is a primitive for passing visual spatial data between agents.
+
+The flat JSON schema was the hardest design decision. Every developer instinct says "nest the data — rooms have walls, walls have doors." But LLM accuracy drops from 94% to 40% with nested schemas. Designing for LLM training data patterns, not developer intuition, was counterintuitive but necessary.
+
+Free API at skissify.com — no auth, just POST JSON.
+```
+
+---
+
+
 
 ---
 

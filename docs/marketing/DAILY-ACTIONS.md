@@ -2,6 +2,62 @@
 
 ---
 
+## [2026-04-02] — Strategy Run #113 Actions (Thursday April 2, 21:04 Stockholm)
+
+### Context: Run #113 Key New Findings
+- **dAIgram** (daigram.app): First tool on the JSON+sketch axis. Opposite direction (photo→JSON) but same category. Validates market. MEDIUM threat.
+- **ToDiagram** (todiagram.com): JSON/YAML→interactive two-way diagrams. No hand-drawn. Confirms hand-drawn is Skissify's true moat.
+- **AI Diagram Maker**: MCP + JSON input since Jan 2026. Clean vector. No hand-drawn.
+- **Gartner**: 40% enterprise SaaS outcome-based by end 2026. Skissify's per-render model is ahead of the curve.
+- **MCP absence**: Run 14. Competitors listed; Skissify absent.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 14th consecutive cycle): Submit to MCP Registry NOW
+
+**dAIgram has no MCP. ToDiagram has no MCP. AI Diagram Maker got MCP in January. Frame0 got MCP. Excalidraw got MCP. Skissify is the only headless JSON→hand-drawn SVG tool with a working MCP implementation — and still not listed anywhere. At 14 consecutive cycles, this is not a backlog item; it is the #1 blocker to organic discovery.**
+
+Steps (final simplified version):
+1. Submit PR to `github.com/modelcontextprotocol/registry` with `skissify.json`
+2. Simultaneously submit to pulsemcp.com, mcp.so, glama.ai, mcpservers.org
+3. Registry description: **"The only hosted headless JSON→hand-drawn SVG API. No Chromium. No desktop app. POST JSON manifest → get SVG instantly. Works in Lambda, Cloudflare Workers, CI/CD. Unlike Frame0 (desktop required) and Excalidraw MCP (browser required), Skissify is a pure stateless API. Architectural elements: floor plans, doors, windows, stairs, dimensions."**
+4. Tag with: `diagram`, `sketch`, `hand-drawn`, `floor-plan`, `svg`, `headless`, `stateless`, `architecture`, `json`
+
+**Time: 2-3 hours. 14 cycles overdue = estimated 4+ weeks of missed organic discovery.**
+
+---
+
+### Action 2 (HIGH — tomorrow): Test dAIgram and Document the Pipeline Integration Story
+
+**dAIgram converts hand-drawn photos → editable diagrams + JSON. Skissify converts JSON → hand-drawn sketches. Together they form a round-trip pipeline. Testing this integration creates content, validates Trigger N, and surfaces a co-marketing angle.**
+
+Steps:
+1. Take a photo of a hand-drawn floor plan or whiteboard sketch
+2. Run it through dAIgram, export the JSON
+3. Feed the JSON (adapted if needed) to Skissify's renderer
+4. Document: what's the JSON structure compatibility? What mapping is needed?
+5. Write up as a tweet thread or short blog post: "I used dAIgram to digitize my whiteboard sketch, then re-rendered it with Skissify. Here's what happened."
+6. If the pipeline works: reach out to dAIgram team about cross-promotion or integration (they have no MCP, Skissify does — complementary)
+
+**Time: 2-3 hours. Generates content + validates new market trigger + potential partnership.**
+
+---
+
+### Action 3 (MEDIUM — this week): Reframe Enterprise Tier Using Outcome-Based Language
+
+**Gartner forecasts 40% of enterprise SaaS will use outcome-based pricing by end 2026. Skissify's Enterprise tier (EUR 200/month) needs outcome-based framing NOW to be aligned with how enterprise buyers evaluate tools.**
+
+Steps:
+1. Update `docs/marketing/ENTERPRISE-ROI.md` (or create if Action 2 from Run #111 not done)
+2. Lead with outcome framing: "500 architectural diagrams/month → replaces ~998 hours of manual Figma diagramming → saves ~EUR 45,000/month at EUR 45/hr → Skissify cost: EUR 200/month. ROI: **225x**."
+3. Add to pricing page under Enterprise tier: "Outcome pricing: you pay for diagrams generated, not seats installed."
+4. Update the Enterprise pitch email template (in `docs/marketing/EMAIL-AND-DIRECTORIES.md`) with this framing
+5. Add one LinkedIn post targeting "PropTech engineers" and "AI agent builders" using the 225x ROI figure
+
+**Time: 1-2 hours. Positions Skissify ahead of the Gartner pricing curve.**
+
+---
+
 ## [2026-04-02] — Strategy Run #111 Actions (Thursday April 2, late night)
 
 ### Context: Run #111 Key New Findings

@@ -2,6 +2,212 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #113 (Thursday April 2, 21:04 Stockholm)
+
+### Status: 5 topics researched. KEY FINDINGS: **dAIgram** discovered — converts hand-drawn sketches AND photos → editable JSON/SVG diagrams (partial reverse-direction, MEDIUM threat, first tool found that touches JSON + hand-drawn in the same pipeline). **ToDiagram** (todiagram.com) — JSON/YAML/CSV→interactive two-way diagrams, web-based, no hand-drawn output, but covers the JSON→diagram audience. **AI Diagram Maker** has MCP integration since Jan 2026 with JSON input. **InfraSketch.AI** covers natural language→architecture diagrams (no JSON API, no hand-drawn). **Gartner: 40% of enterprise SaaS will include outcome-based pricing by end 2026** (up from 15%) — supports Skissify Enterprise framing. **MCP registry absence: Run 14 / CRITICAL.** Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #113 — 13th consecutive confirmation).
+
+---
+
+### dAIgram — First Tool Found That Spans JSON + Hand-Drawn Direction (MEDIUM THREAT, NEW)
+
+**Sources**: daigram.app (verified 2026-04-02)
+
+dAIgram converts hand-drawn sketches, screenshots, and photos into editable diagrams, with export to JSON, PNG, PDF, JPG. Key profile:
+- **Input**: Photos/screenshots of sketches, whiteboards, napkins
+- **Output**: Editable diagrams + JSON export
+- **Direction**: Physical/visual input → structured JSON (opposite primary direction from Skissify, but touches both ends of the sketch↔JSON axis)
+- No headless API found. No MCP integration. Browser-based.
+
+**For Skissify**: dAIgram is the first tool discovered that operates on the same sketch↔JSON axis. The critical difference: dAIgram converts *visual input* to JSON (digitize a sketch). Skissify converts *JSON* to a hand-drawn sketch (render a diagram as sketch). These are genuinely opposite flows, but they compete for the same mental category in a user's head: "the tool that connects my sketch and my data."
+
+Risk: A user who wants "sketches that are also data" may evaluate both tools and find dAIgram sufficient if they work primarily from drawings. Skissify's moat: programmatic generation (no camera required), CI/CD compatibility, MCP integration, architectural elements.
+
+**Threat assessment: MEDIUM (new — monitor quarterly)**
+
+---
+
+### ToDiagram — JSON→Interactive Diagrams, Established, No Hand-Drawn (MEDIUM THREAT, EXISTING)
+
+**Sources**: todiagram.com (verified 2026-04-02)
+
+ToDiagram converts JSON, YAML, CSV, XML → interactive two-way diagrams. Web-based, no download required. Two-way editing is notable: change the diagram → updates the JSON.
+- **JSON support**: Yes (primary input format)
+- **Hand-drawn output**: No (clean vector)
+- **Headless API**: Not found
+- **MCP integration**: Not found
+
+**For Skissify**: ToDiagram directly competes for the "I have JSON and want a visual diagram" user. The differentiation: (1) Skissify produces hand-drawn aesthetic, (2) Skissify is MCP/agent-compatible, (3) Skissify has architectural domain elements. Users who want clean diagramming from JSON may prefer ToDiagram. Users who want hand-drawn, agent-generated, or architectural-style output land at Skissify.
+
+**Threat assessment: MEDIUM-STABLE (covers the JSON-visual-diagram need without hand-drawn)**
+
+---
+
+### AI Diagram Maker — MCP Integration + JSON Input Since January 2026 (MEDIUM THREAT, ESCALATING)
+
+**Sources**: aidiagrammaker.com/blog/json-to-diagram (verified 2026-04-02)
+
+AI Diagram Maker added MCP integration in January 2026, with JSON input supported. Works with ChatGPT, Claude Code, and other MCP-compatible AI frameworks.
+- **JSON input**: Yes
+- **MCP integration**: Yes (since Jan 2026)
+- **Hand-drawn output**: No (clean vector)
+- **Headless API**: Unclear
+
+**For Skissify**: This is the closest competitor yet in terms of MCP + JSON input. The gap that still holds: no hand-drawn output, no architectural elements. For developers who need *clean* AI-generated diagrams this is a direct alternative. Skissify's differentiation narrows to the hand-drawn aesthetic + architectural domain elements.
+
+**Threat assessment: MEDIUM (MCP+JSON combination is now covered by at least one clean-vector competitor)**
+
+---
+
+### InfraSketch.AI — Natural Language → Architecture Diagrams (MEDIUM, DIVERGING)
+
+**Sources**: infrasketch.ai (verified 2026-04-02)
+
+InfraSketch.AI generates interactive architecture diagrams from natural language. Positioned as "free AI system design tool used by engineers at top tech companies."
+- **Input**: Natural language prompts
+- **Output**: Interactive architecture diagrams (system design style)
+- **Hand-drawn**: No
+- **JSON input**: No
+- **MCP integration**: Not found
+
+**For Skissify**: Different input paradigm (prompts vs JSON) and different aesthetic (clean vs hand-drawn). Competes for the "I need a quick architecture diagram" use case but serves a different workflow. Skissify's architectural elements (floor plans, doors, windows) are spatial/physical. InfraSketch covers software/system architecture.
+
+**Threat assessment: MEDIUM (overlapping audience, different content domain)**
+
+---
+
+### Excalidraw — No March-April 2026 JSON API Movement (LOW NEW RISK)
+
+**Sources**: plus.excalidraw.com/changelog, github.com/excalidraw/excalidraw/releases (verified 2026-04-02)
+
+Most recent confirmed updates (Feb 2026): Custom AI tokens (own OpenAI/Claude/Gemini/OpenRouter keys), Presentation Waiting Room, Advanced Charts (radar charts, multi-series), Interactive Presentations with real-time reactions. No JSON-first API added. No MCP architecture change. No headless option.
+
+**Assessment**: Excalidraw continues optimizing for human collaborative use. No movement toward programmatic/agent use. Chromium dependency for renders remains. Skissify's moat vs Excalidraw is stable.
+
+**Threat assessment: HIGH (brand/mindshare), STABLE (no new technical overlap)**
+
+---
+
+### Outcome-Based Pricing Signal — Gartner 40% Enterprise Forecast (PRICING INTELLIGENCE)
+
+**Sources**: Gartner 2026 forecast via Ibbaka/Younium (verified 2026-04-02)
+
+- Gartner forecasts **40% of enterprise SaaS** will include outcome-based pricing elements by end of 2026 (up from 15% two years prior)
+- Per-seat models under structural pressure: AI agents reducing required seats by up to 80% in modeled scenarios
+- Hybrid models (base sub + usage): gold standard, 43% now → 61% projected by end 2026
+- Spend cap / predictability requirement remains critical: 78% of IT leaders cite surprise charges as #1 billing concern
+
+**For Skissify**: Outcome-based framing for Enterprise tier is now not a premium pricing experiment — it is the industry direction. Frame the Enterprise tier as "pay for architectural diagrams that replace engineering hours" rather than "pay per seat." The per-render overage model is structurally aligned with where the market is going. The base price (EUR 2 → EUR 5) increase is confirmed by all data. Add spend caps to pricing page to address the 78% concern.
+
+---
+
+### Updated Competitor Matrix (Run #113 — Thursday April 2, 21:04)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **dAIgram** | NEW. Photo/sketch → editable diagram + JSON export. No API. Browser only. | NO (visual input) | NO (clean output) | YES | NO | **MEDIUM (new — same JSON+sketch axis, opposite direction)** |
+| **ToDiagram** | JSON/YAML/CSV→interactive two-way diagrams. No hand-drawn. No API found. | NO (web UI only) | NO | YES | NO | **MEDIUM-STABLE (covers JSON→diagram w/o hand-drawn)** |
+| **AI Diagram Maker** | MCP+JSON input since Jan 2026. Clean vector output. ChatGPT/Claude compatible. | PARTIAL (unclear headless) | NO | YES | YES (Jan 2026) | **MEDIUM (MCP+JSON without hand-drawn)** |
+| **InfraSketch.AI** | Natural language→architecture diagrams. Free. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM (same audience, different domain)** |
+| **Frame0** | MCP server on PulseMCP. Hand-drawn wireframes. SVG export. Desktop app required. | NO (requires desktop app) | **YES** | YES (desktop) | YES | **MEDIUM (closest architecture match, but desktop-only)** |
+| **Excalidraw+** | Feb 2026: custom AI tokens, advanced charts. No JSON API changes. Chromium render dependency. | NO (requires Chromium or browser) | YES | NO | YES (browser-based) | **HIGH (brand) — Chromium moat holds** |
+| **tldraw SDK** | v4.3 stable. No headless API. $6K/yr commercial. No MCP. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Draw.io (JGraph)** | Official MCP Feb 2026. 700+ enterprise icons. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Google Stitch** | AI-native canvas, Claude Code integration. Design-to-code direction. | NO | NO (consumes sketches) | YES | YES | **LOW (diverging use case)** |
+| **Google Colab MCP** | Data viz in Colab via AI agents. Different category. | NO (Python runtime) | NO | YES | YES | **NONE — complementary** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **SVGMaker MCP** | Text→clean SVG via MCP. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM** |
+| **svg2roughjs** | OSS library: SVG→hand-drawn. No hosted API, no MCP. | NO (library only) | YES (library) | YES | NO | **LOW (validates niche)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: **zero Chromium, instant cold start, uncontested**. MCP Registry: ABSENT (CRITICAL × **14**). | **YES (only one, no Chromium, no desktop)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
+## [2026-04-02] — Automated Strategy Run #112 (Thursday April 2, 19:56 Stockholm)
+
+### Status: 4 topics researched. KEY FINDINGS: **Google Colab MCP Server** launched (March 19–April 1, 2026) — AI agents now generate visualizations natively inside Colab; accelerates the "agent visual output" wave but does NOT cover hand-drawn sketches. **MCP Registry at 6,400+ servers** (Feb 2026) — Skissify still absent (13th consecutive cycle). **tldraw SDK** — no April release; still SDK-only, no headless JSON API, **LOW threat STABLE**. **Credit pricing backlash**: 78% of IT leaders report unexpected charges from usage-based billing — Skissify must frame overages as "predictable" or risk churn. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #112 — 12th consecutive confirmation).
+
+---
+
+### Google Colab MCP Server — Agents Now Generate Visual Output Natively (CONTEXT SIGNAL)
+
+**Sources**: developers.googleblog.com/announcing-the-colab-mcp-server-connect-any-ai-agent-to-google-colab (April 1, 2026), marktechpost.com/2026/03/19/google-colab-now-has-an-open-source-mcp-model-context-protocol-server (March 19, 2026)
+
+Google released an open-source Colab MCP Server allowing any AI agent (Claude Code, Gemini CLI, custom frameworks) to control Colab notebooks directly:
+- Agents create cells, execute Python, **generate visualizations**, format analysis — all autonomously
+- Compatible with: Claude Code, Gemini CLI, any MCP-compatible orchestration framework
+- Available on PyPI: `google-colab-mcp`
+- Computation runs in Google Colab cloud; agent and server can run locally
+
+**Colab MCP vs Skissify**: Colab generates **data visualizations** (matplotlib, seaborn, regression plots, charts). Skissify generates **hand-drawn architectural sketches and spatial diagrams** from JSON. These serve entirely different output categories. A developer using Claude Code for a data pipeline uses Colab MCP for charts AND Skissify for architecture diagrams in the same session. **Complementary, not competitive.**
+
+**For Skissify**: This is the clearest signal yet that "AI agents generating visual output" is going mainstream at platform level. Google, Anthropic, and every major framework are treating visual output as a first-class agentic capability. Skissify's niche (hand-drawn spatial/architectural) is the one gap Google and Colab explicitly do not cover. **The platform wave is here. The gap is real. Registration urgency escalates to PLATFORM-LEVEL.**
+
+**Threat assessment: POSITIVE (accelerates the category, does not compete)**
+
+---
+
+### MCP Registry at 6,400+ Servers — Skissify Absence is Now Statistically Significant (CRITICAL)
+
+**Sources**: modelcontextprotocol.io/specification, blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/ (verified 2026-04-02)
+
+As of February 2026, the official MCP registry has **6,400+ registered servers** (up from ~5,800 community-built servers tracked in previous runs). Key registry developments:
+- `.well-known` URL standard in progress: servers will be discoverable without a live connection
+- Q4 2026 target: curated, verified server directory with **security audits, usage statistics, and SLA commitments**
+- 97M monthly SDK downloads — ecosystem is production-grade, not experimental
+- Registry still in preview but "single source of truth" positioning is locked in
+
+**For Skissify**: At 6,400 servers, being absent is no longer just "missing a distribution channel." It is statistically absent from a directory that enterprises query to populate their AI tool stacks. The Q4 2026 "verified directory with SLA commitments" will be even harder to enter after launch. Submit NOW while the bar is lower (preview = lower barrier). **This is run 13. The window is closing.**
+
+**Threat assessment: OPERATIONAL BLOCKER** — Skissify cannot capture enterprise API buyers who discover tools via MCP directory.
+
+---
+
+### Credit Pricing Backlash — 78% of IT Leaders Hit by Surprise Bills (PRICING RISK)
+
+**Sources**: zylo.com/blog/consumption-based-pricing-saas, growthunhinged.com/p/2025-state-of-saas-pricing-changes, colorwhistle.com/saas-credits-system-guide/ (verified 2026-04-02)
+
+New nuance in the 2026 pricing data that Run #111 underweighted:
+- **78% of IT leaders** experienced unexpected charges from consumption-based/AI pricing models
+- The pendulum is "swinging back toward simplicity and predictability" after the credit boom
+- **43% of companies use hybrid models** (base sub + usage), projected **61% by end of 2026**
+- But: buyer fatigue with surprise bills is real — "credit multipliers" and opaque overages are causing churn
+- Hybrid model = gold standard, **BUT predictability of overages must be explicitly communicated**
+
+**For Skissify**: The EUR 0.005/render overage model is trend-correct (hybrid). The risk is framing: if Skissify shows a usage meter with no cap, 78% of enterprise buyers will flinch. **Solution: Add a "spend cap" option or monthly overage ceiling. Frame as "predictable overages" not "unlimited charges."** e.g., "You'll never pay more than EUR X/month without explicit approval." This removes the enterprise veto.
+
+The base price concern from prior runs (EUR 2 → EUR 5) remains valid. But the bigger risk at enterprise scale is not the base price — it is unpredictable API charges.
+
+**Threat assessment: PRICING RISK (mitigatable via spend-cap UX)**
+
+---
+
+### tldraw SDK Status — No April Launch, LOW Threat STABLE (MONITOR)
+
+**Sources**: tldraw.dev/releases, tldraw.dev/blog/category/release-notes (verified 2026-04-02)
+
+tldraw's most recent documented release is **v4.3** (January 19, 2026) — minor version bump. SDK 4.2 key additions: custom transports for multiplayer, runtime tool registration, new fill style. No April 2026 major release found. No MCP integration announced. No JSON-first API. $6,000/year commercial license still in effect.
+
+**Assessment**: tldraw continues its SDK/whiteboard track. Zero overlap with Skissify's headless JSON API model. The $6K/year price point keeps small teams away entirely. **Threat: LOW — STABLE for 3+ consecutive cycles.**
+
+---
+
+### Updated Competitor Matrix (Run #112 — Thursday April 2, 19:56)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Frame0** | MCP server on PulseMCP. Hand-drawn wireframes. SVG export. Desktop app required. | NO (requires desktop app) | **YES** | YES (desktop) | YES | **MEDIUM (closest architecture match, but desktop-only)** |
+| **Excalidraw+** | Official MCP (Feb 2026) — browser session-based. `excalidraw-render`: Chromium (3s cold start, 170MB). | NO (requires Chromium or browser) | YES | NO | YES (browser-based) | **HIGH — Chromium moat holds** |
+| **tldraw SDK** | v4.3 (Jan 2026) last release. Runtime tool registration. No headless API. $6K/yr. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Draw.io (JGraph)** | Official MCP Feb 2026. 700+ enterprise icons. Enterprise credibility. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Google Stitch** | Biggest upgrade: AI-native canvas, Claude Code integration. MCP listed. Design-to-code direction. | NO | NO (consumes sketches) | YES | YES | **LOW (diverging use case)** |
+| **Google Colab MCP** | NEW (March 2026). AI agents generate visualizations in Colab. Data viz only (matplotlib, seaborn). | NO (Python runtime) | NO | YES | YES | **NONE — different category** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **SVGMaker MCP** | Text→clean SVG via MCP. Freemium. 4.2s avg API response. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM** |
+| **svg2roughjs** | OSS library: SVG→hand-drawn. No hosted API, no MCP. | NO (library only) | YES (library) | YES | NO | **LOW (validates niche)** |
+| **Rough.js** | <9kB library: hand-drawn Canvas/SVG. No hosted API, no MCP, no schema. | NO (library only) | YES (library) | YES | NO | **LOW (validates niche)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: **zero Chromium, instant cold start, uncontested**. MCP Registry: ABSENT (CRITICAL × 13). | **YES (only one, no Chromium, no desktop)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #111 (Thursday April 2, late night)
 
 ### Status: 5 topics researched. KEY FINDINGS: **Pinterest deployed production-scale MCP** (844 users, 66K invocations/month, 7,000 hours saved/month) — enterprise MCP is no longer a thesis, it's proven infrastructure. **Google officially extended MCP support to ALL Google services** — MCP is becoming OS-level infrastructure. **Credit-based pricing up 126% YoY** (79 of 500 SaaS companies) — Skissify's per-render API model is trend-aligned but base price anchor remains below floor. **Sketch2Diagram** (Devpost) converts hand-drawn→digital diagrams (opposite of Skissify, not a threat). **Google Stitch "biggest upgrades"** with AI-native canvas + Claude Code integration — remains upstream of Skissify's use case. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #111 — 11th consecutive confirmation).

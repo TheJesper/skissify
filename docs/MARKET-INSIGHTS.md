@@ -2,6 +2,85 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #113 (Thursday April 2, 21:04 Stockholm)
+
+### Theme: The JSON+Sketch Axis Has New Entrants — Skissify's Moat Is Still the Headless API
+
+#### dAIgram and the JSON↔Sketch Axis
+
+Run #113 surfaces the first tool that lives on the same conceptual axis as Skissify: **dAIgram** converts photos and hand-drawn sketches into editable diagrams with JSON export. It operates in the *opposite* direction (visual input → structured data), but it occupies the same mental category a user reaches for: "the thing that connects my sketches and my structured data."
+
+What this means for Skissify's positioning: the "sketch ↔ JSON" category is now two-sided. dAIgram owns the "I have a sketch, give me data" side. Skissify owns the "I have data, give me a sketch" side. These are not just complementary — **they could be marketed as a pipeline**: dAIgram digitizes → Skissify re-renders with tunable quality. This is a potential partnership or co-marketing angle worth exploring.
+
+More critically: dAIgram's existence confirms the category is real enough to attract multiple players. Category validation is a positive signal for Skissify's market thesis.
+
+#### ToDiagram Covers JSON→Diagram Without Hand-Drawn — The Gap Holds
+
+ToDiagram (todiagram.com) handles JSON/YAML/CSV to interactive diagrams with two-way editing. It is a mature web app that has been solving "I have JSON and want a diagram" for some time. Notable gap: **zero hand-drawn output**. The aesthetic differentiation is not a minor preference — it is a use-case differentiator. Hand-drawn sketches communicate "in progress," "open to feedback," "this is a concept." Clean vector diagrams communicate "decided," "final," "approved." Skissify's users are choosing the former intentionally.
+
+**For the EUR 2 → EUR 5 question**: A user who found ToDiagram (free, no watermark, no signup) and switched to Skissify did so specifically for the hand-drawn output. That user has already demonstrated price insensitivity to the cost delta. EUR 5 will not prevent this conversion.
+
+#### Outcome-Based Pricing Is Now Gartner's Official Direction for Enterprise
+
+Gartner projects 40% of enterprise SaaS will use outcome-based pricing by end 2026 (up from 15%). Per-seat pressure from AI agents (up to 80% seat reduction) makes this structural. The implication for Skissify's Enterprise tier: **position the price as the cost of the outcome (architectural diagrams), not the cost of the tool.**
+
+Concrete reframe:
+- **Old**: "EUR 200/month for unlimited API access and SSO"
+- **New**: "EUR 200/month to generate architectural diagrams that replace 200+ hours of manual diagramming/month. Pinterest documented 7,000 hours/month saved with MCP at similar scale."
+
+The Gartner trajectory means Skissify is ahead of the enterprise pricing curve by designing per-render from the start. Do not abandon it. Lean in harder.
+
+#### What Makes Someone Pay EUR 5/mo for Skissify (Updated — Run #113)
+
+Prior framework had 12 triggers. Run #113 adds two:
+
+**Trigger M (ToDiagram refugee)**: "I tried ToDiagram for JSON diagrams. The output looks corporate. I need something that feels like a sketch — for client presentations, architecture reviews, or D&D maps. I'll pay EUR 5 for the aesthetic."
+
+**Trigger N (dAIgram pipeline user)**: "I'm using dAIgram to digitize my whiteboard. But I want to re-render those diagrams with tunable hand-drawn quality and MCP integration. Skissify is the downstream renderer in my pipeline."
+
+Both triggers are narrow but real. Trigger N in particular suggests a potential technical partnership or integration with dAIgram worth exploring.
+
+---
+
+## [2026-04-02] — Automated Strategy Run #112 (Thursday April 2, 19:56 Stockholm)
+
+### Theme: The Platform Wave Has Arrived — Colab MCP Proves It. Skissify's Gap Is Structural.
+
+#### Google Colab MCP Changes the Frame for "Why Visual Output Matters"
+
+Google just made it possible for AI agents to generate visualizations natively inside Colab. This is not a Skissify competitor — it's Skissify's thesis confirmed by Google's product roadmap.
+
+Here's the logic: Google decided that "agent-generated visualizations" are important enough to build platform infrastructure for. They built Colab MCP for *data visualizations* (charts, plots, regression curves). They built Google Stitch for *polished UI mockups*. They have NOT built anything for *hand-drawn architectural/spatial sketches*. That gap is structural. Colab doesn't do floor plans. Stitch doesn't do rough sketches. Excalidraw MCP requires Chromium. Frame0 requires a desktop app.
+
+The question "why would someone pay EUR 2/mo for Skissify?" is now fully reframed: **Google is investing platform engineering resources into agent-generated visual output. What they won't build is the hand-drawn architectural layer. That is exactly what Skissify is.**
+
+The answer to "why pay?" is: "Because Google built Colab MCP for charts and Stitch for UI mockups, and nobody built the hand-drawn architectural sketch layer except Skissify. You can use all three in the same Claude Code session."
+
+#### The Predictability Problem Overrides the Price Problem
+
+Run #112 surfaces a critical nuance that prior runs missed: 78% of IT leaders experienced unexpected charges from consumption-based pricing. The pendulum is swinging toward simplicity. This does NOT mean abandon usage-based pricing — hybrid models are still the gold standard (43% → 61% adoption). It means **how you frame overages is now as important as whether you have them**.
+
+A buyer evaluating Skissify's API tier does not fear EUR 5/month. They fear an invoice for EUR 300/month because an agent loop ran unchecked. The conversion barrier is not price — it is trust that the bill won't surprise them.
+
+**The actionable insight**: Before raising the base price (EUR 2 → EUR 5, still valid), add spend-cap language to the pricing page. "Your monthly API charges will never exceed EUR X without your approval." This single sentence converts the 78% who flinch at usage models. It costs nothing to implement and removes the enterprise veto.
+
+#### MCP Registry at 6,400 Servers: The Cost of Absence Compounds Monthly
+
+In Run #101, absence from the MCP registry was a "missed opportunity." In Run #112, at 6,400 servers, absence is a **competitive position**. Buyers searching the registry for "diagram," "sketch," "floor plan," or "visual output" find Frame0, Excalidraw, Draw.io, and SVGMaker. They find 6,400 other things. They do not find Skissify. Each month of absence is a month of compounding invisibility at 97M SDK download scale.
+
+The Q4 2026 "verified directory with SLA commitments" will raise the submission bar. The window for easy entry is the current preview period. Submit now.
+
+#### What Makes Someone Pay EUR 2/mo for Skissify (Updated — Run #112)
+
+This question was wrong from the start. The right question set:
+1. **Freemium → Pro trigger**: "I shipped a Claude Code project that needed architectural sketches. The API worked in my pipeline. I need private storage and unlimited renders." — Trigger: first successful pipeline integration.
+2. **Enterprise trigger**: "My team generates 500 architectural sketches/month via API. At EUR 200/month flat, the ROI vs manual Figma diagramming is 249x." — Trigger: ROI calculation (Pinterest data supports this).
+3. **The new trigger from Run #112**: "I'm already using Colab MCP for data viz and Stitch for UI. I need the hand-drawn architectural layer. Skissify is the only headless option. EUR 5/month is trivial." — Trigger: multi-tool agent stack assembly.
+
+Trigger 3 is new and increasingly realistic as agent stacks normalize.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #111 (Thursday April 2, late night)
 
 ### Theme: Enterprise MCP Is Proven Infrastructure — Skissify's API Model Is Right, Price Is Still Wrong
