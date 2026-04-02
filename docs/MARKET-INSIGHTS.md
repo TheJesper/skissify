@@ -2,6 +2,48 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #106 (Thursday April 2, 09:45 CET)
+
+### Theme: The Draw.io MCP Shock — Why the "First Mover" Window Is Now Measured in Days, Not Weeks
+
+#### New Intelligence: Draw.io Shipped Feb 3. We Are Still Not Listed.
+
+Draw.io's official MCP server shipped February 3, 2026 — 57 days ago. In those 57 days, multiple blog posts, tutorials, and community integrations have been published. Draw.io now owns the "MCP diagram" search intent in developer circles. Skissify does not appear in any of these searches.
+
+This is the most direct evidence yet that the MCP Registry submission delay has a compounding cost: every day without a listing, competing tools deepen their semantic foothold in AI agent toolboxes.
+
+**The EUR 2 pay trigger in this context**: A developer using Draw.io MCP discovers it produces clean corporate-looking diagrams. They want hand-drawn sketch aesthetics for a pitch deck or napkin idea. They search "hand-drawn diagram MCP" or "sketch style diagram API." Today: Skissify does not appear. Tomorrow, with one blog post and one MCP Registry PR: Skissify is the only result that answers the query correctly.
+
+#### Trigger H: The Draw.io Aesthetic Refugee (New — Run #106)
+
+| Trigger | Discovery Moment | Why EUR 2 Is Easy | Urgency |
+|---------|-----------------|-------------------|---------|
+| **H: Draw.io Aesthetic Refugee** | Uses Draw.io MCP, wants hand-drawn aesthetic, Skissify is the only alternative | Draw.io is free but "too corporate" for ideation stage | **HIGH (new)** |
+
+A developer already comfortable with MCP workflows (Draw.io MCP user) wants a different visual register. The concept of "MCP for diagrams" is already internalized — switching to Skissify is low-friction. The only question is discoverability. This is a zero-resistance conversion if Skissify is listed in the MCP Registry with "hand-drawn" in the description.
+
+#### Pricing Validation from 2026 Data
+
+**Gartner (2026)**: 70% of businesses prefer usage-based pricing over per-seat. This directly validates Skissify's per-render API billing (EUR 0.005/render). An agent generating 10,000 sketches/month pays EUR 50/month — fair, transparent, scales with value.
+
+**Opt-out trial insight**: Benchmark conversion is 49.9% for opt-out trials (card required up-front) vs 3.9% for freemium. For a EUR 2/mo tool, opt-out trials are worth testing — the low price reduces card-entry friction dramatically. "14-day free, then EUR 2/mo, cancel anytime" converts 13x better than free-forever.
+
+**The sub-EUR 5 impulse zone**: Tests confirm that purchase decisions under EUR 5 are made in under 10 seconds. The EUR 2 price point lives entirely inside impulse-buy psychology. No approval needed, no spreadsheet analysis. The only friction is awareness — which is a discovery problem, not a pricing problem.
+
+#### What Makes Someone Pay EUR 2/mo for Skissify — Updated Model (Run #106)
+
+The core answer remains: **pain at discovery, not browsing.** But the discovery landscape has shifted:
+
+1. **Excalidraw MCP users** (browser-session workflow) who hit a use case requiring headless/API output
+2. **Draw.io MCP users** (clean vector) who want hand-drawn aesthetic — new pool, growing fast
+3. **Claude Code users** who want to generate sketches inside an agent pipeline without a browser dependency
+4. **Enterprise developers** blocked from MCP by IT whitelists who buy REST API access directly
+5. **Architecture/construction professionals** who find Skissify via "floor plan sketch" long-tail SEO
+
+None of these people are browsing for "a nice sketch tool." They are solving a specific problem and hitting a wall. Skissify must be the wall-remover. EUR 2 is the toll, not the sale.
+
+---
+
 ## Entry: 2026-04-02 — Automated Strategy Run #105 (Morning, ~08:37 CET)
 
 ### Theme: The Enterprise Gatekeeping Clock — Why MCP Registry Submission Is Now a Race

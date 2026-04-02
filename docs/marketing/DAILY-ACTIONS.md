@@ -2,6 +2,75 @@
 
 ---
 
+## [2026-04-02] — Strategy Run #106 Actions (Thursday April 2, 09:45 CET)
+
+### Context: Run #106 Key New Findings
+- **Draw.io official MCP server** shipped Feb 3, 2026 — 57 days ago. Enterprise-grade, growing blog ecosystem, zero hand-drawn aesthetic. First major MCP diagram tool with corporate backing. Distribution competitor, not product competitor.
+- **Excalidraw MCP** third-party ecosystem expanding (Maaker AI, community tutorials). All require browser session. Headless gap confirmed widening.
+- **tldraw**: No April release. Image Pipeline template only. $6K/year SDK license unchanged.
+- **SaaS pricing**: Gartner confirms 70% usage-based preference. Opt-out trials: 49.9% conversion (13x freemium). EUR 2/mo sub-EUR-5 impulse zone confirmed.
+- **Headless JSON→hand-drawn SVG API**: uncontested for 106th consecutive scan.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 7th consecutive cycle): Submit to MCP Registry — Draw.io Changed the Stakes
+
+**Draw.io shipped their MCP server 57 days ago. Every day Skissify is absent from the registry, Draw.io deepens its foothold in "MCP diagram" developer mindshare. The window to appear alongside Draw.io (not after it) closes daily.**
+
+Draw.io MCP is now the reference point developers use when evaluating "what MCP diagram tools exist." When they search for a hand-drawn alternative, Skissify must be the first result. That requires a registry listing, not just a working product.
+
+**Steps** (7th cycle, now with Draw.io counter-positioning):
+1. `github.com/modelcontextprotocol/registry` — PR with `skissify.json`. Tags: `visual`, `architecture`, `floor-plan`, `hand-drawn`, `JSON`, `SVG`, `sketch`, `headless`, `stateless`
+2. Registry description MUST include counter-positioning vs Draw.io AND Excalidraw: "Unlike Draw.io (clean vector) and Excalidraw (browser-required canvas), Skissify is a stateless POST → hand-drawn SVG API. No browser. No session. No runtime. Architectural domain elements included."
+3. Submit simultaneously to: `glama.ai/mcp/servers`, `pulsemcp.com`, `mcp.so`, `mcpservers.org`
+4. Implement `.well-known/mcp.json` endpoint (MCP 2026 roadmap Priority 1)
+5. Write one blog post: "Draw.io MCP vs Excalidraw MCP vs Skissify — which MCP diagram tool for which job?" — targets all three tool name searches, positions Skissify in the category
+6. Announce on Twitter/X, tag @modelcontextprotocol, @excalidraw
+
+**Time estimate: 2-3 hours. Every day of delay = more Draw.io mindshare to overcome.**
+
+---
+
+### Action 2 (HIGH — today): Publish "Skissify vs Draw.io MCP vs Excalidraw MCP" Comparison Post
+
+**Draw.io MCP is generating blog traffic. "Create architecture diagrams with Claude + Draw.io MCP" posts are ranking. Skissify must appear in these searches as the hand-drawn alternative.**
+
+Three high-traffic comparison queries currently return zero Skissify results:
+- "MCP diagram tool comparison 2026"
+- "hand-drawn diagram MCP"
+- "Draw.io vs Excalidraw MCP"
+
+A single targeted post captures all three. The angle: each tool has a distinct job. Draw.io = clean corporate diagrams. Excalidraw MCP = interactive whiteboard with AI. Skissify = programmatic hand-drawn aesthetic for agents/pipelines. No overlap. All three can coexist.
+
+**Steps**:
+1. Write 600-word comparison post at `skissify.ai/blog/mcp-diagram-tools-compared`
+2. Target keywords: "MCP diagram tool", "hand-drawn diagram API", "Draw.io MCP alternative", "Excalidraw MCP headless"
+3. Include a decision table: "If you need X → use Y"
+4. Link to Skissify MCP docs and REST API endpoint
+5. Submit URL to dev.to, hashnode, lobste.rs for distribution
+
+**Why today**: Draw.io MCP tutorials are 2 months old and already ranking. A well-positioned comparison post published now can rank in the same cluster within 2-4 weeks.
+
+---
+
+### Action 3 (MEDIUM — this week): Test Opt-Out Trial Pricing Model
+
+**Gartner 2026: usage-based is the direction. FirstPageSage: opt-out trials convert at 49.9% vs 3.9% freemium. At EUR 2/mo, the card-entry barrier is minimal. This is a directly testable hypothesis.**
+
+Current model: free forever, upgrade for Pro features. Benchmark: 3.9% free→paid conversion.
+
+Alternative to A/B test: opt-out trial. "14 days full Pro access, then EUR 2/mo. Cancel before Day 14 and pay nothing." At EUR 2/mo, users are unlikely to cancel — the perceived cost of cancellation hassle exceeds EUR 2. This is the Netflix/Spotify model applied to micro-SaaS.
+
+**Steps**:
+1. Add opt-out trial flow to signup: "Start 14-day free trial" (card required)
+2. Day 12 email: "Your trial ends in 2 days — stay for EUR 2/mo"
+3. Compare trial-to-paid conversion vs freemium baseline over 30 days
+4. If conversion > 10%, make opt-out trial the default onboarding path
+
+**Risk**: EUR 2/mo is so low that chargebacks/disputes from users who forgot to cancel could damage payment processor relationship. Mitigate with prominent cancellation link in every email.
+
+---
+
 ## 2026-04-02 — Strategy Run #105 Actions (Thursday April 2, morning — 08:37 CET)
 
 ### Context: Run #105 Key New Findings

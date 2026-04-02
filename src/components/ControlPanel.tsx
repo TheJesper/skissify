@@ -487,6 +487,75 @@ function ElementCoordEditor({
         </div>
       </div>
 
+      {/* Rotation control — shown for all element types */}
+      <div className="space-y-1.5">
+        <div className="flex items-center justify-between">
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide">
+            Rotation
+          </label>
+          {(el.rotation as number | undefined ?? 0) !== 0 && (
+            <button
+              onClick={() => {
+                onUpdate(elementIdx, { rotation: 0 });
+                setDraft((prev) => { const n = { ...prev }; delete n["rotation"]; return n; });
+              }}
+              title="Reset rotation to 0°"
+              className="text-[9px] text-[#cb4b16] hover:text-[#dc322f] transition-colors"
+            >
+              ↺ reset
+            </button>
+          )}
+        </div>
+        <div className="flex items-center gap-2">
+          <input
+            type="number"
+            min={-360}
+            max={360}
+            step={1}
+            value={"rotation" in draft ? draft["rotation"] : String(Math.round((el.rotation as number | undefined ?? 0) * 10) / 10)}
+            onChange={(e) => setDraft((prev) => ({ ...prev, rotation: e.target.value }))}
+            onBlur={(e) => {
+              const num = parseFloat(e.target.value);
+              if (!isNaN(num)) onUpdate(elementIdx, { rotation: ((num % 360) + 360) % 360 });
+              setDraft((prev) => { const n = { ...prev }; delete n["rotation"]; return n; });
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                const num = parseFloat((e.target as HTMLInputElement).value);
+                if (!isNaN(num)) onUpdate(elementIdx, { rotation: ((num % 360) + 360) % 360 });
+                setDraft((prev) => { const n = { ...prev }; delete n["rotation"]; return n; });
+              }
+              e.stopPropagation();
+            }}
+            className="w-16 bg-[#fdf6e3] border border-[#93a1a1] rounded px-1 py-1 text-[11px] text-[#586e75] text-center font-mono focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+          />
+          <span className="text-[10px] text-[#93a1a1]">deg</span>
+          {/* Quick rotation presets */}
+          <div className="flex gap-0.5 ml-auto">
+            {[0, 45, 90, 135, 180, 270].map((deg) => {
+              const current = Math.round((el.rotation as number | undefined ?? 0) * 10) / 10;
+              return (
+                <button
+                  key={deg}
+                  onClick={() => {
+                    onUpdate(elementIdx, { rotation: deg });
+                    setDraft((prev) => { const n = { ...prev }; delete n["rotation"]; return n; });
+                  }}
+                  title={`Set rotation to ${deg}°`}
+                  className={`px-1 py-0.5 rounded text-[9px] font-mono border transition-all ${
+                    current === deg
+                      ? "ring-1 ring-[#268bd2] border-transparent bg-[#eee8d5] text-[#073642]"
+                      : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#eee8d5] text-[#657b83]"
+                  }`}
+                >
+                  {deg}°
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       {/* Furniture-specific property controls */}
       {element.type === "bed" && (
         <div>

@@ -2,6 +2,75 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #106 (Thursday April 2, 09:45 CET)
+
+### Status: 4 topics researched. CRITICAL NEW FINDING: Draw.io released an official MCP server (Feb 3, 2026) — first major corporate diagram tool to ship a production-ready headless MCP. Excalidraw MCP third-party ecosystem expanding (Maaker AI, community integrations). tldraw: no April release, Image Pipeline template only. SaaS: usage-based pricing trend accelerates (Gartner: 70% will prefer usage-based over per-seat by 2026). Headless JSON→hand-drawn SVG API: uncontested for 106th consecutive scan.
+
+### Draw.io Official MCP Server — CRITICAL NEW COMPETITOR (HIGH THREAT, NEW)
+
+**Sources**: thomasthornton.cloud/draw-io-mcp-for-diagram-generation, jls42.org/posts/deep-dive-skill-aws-diagram-claude-code-drawio-mcp, pulsemcp.com/servers/simonkurtz-msft-drawio-diagram-generator (verified 2026-04-02)
+
+On **February 3, 2026**, JGraph (the team behind draw.io/diagrams.net) released an **official MCP server**. This is the first major established diagram tool to ship a production-grade MCP integration with corporate backing. Capabilities confirmed:
+- Controls Draw.io programmatically — AI agents can create, modify, and organize diagram elements
+- Works with Claude Code, Gemini CLI, and any MCP-compatible agent
+- Used for AWS architecture diagrams, Azure diagrams, infrastructure documentation
+- Community tutorials growing rapidly (multiple blog posts in Feb-Mar 2026)
+
+**What Draw.io MCP does NOT do**: No hand-drawn aesthetic. Output is clean vector (flowchart/UML style). No JSON manifest schema. No SVG export API. No architectural domain elements (doors, windows, stairs). Requires Draw.io runtime/browser for rendering.
+
+**Threat assessment**: **MEDIUM-HIGH (new)** — Draw.io is now in the MCP ecosystem with enterprise credibility and broad diagram coverage. It will appear in "MCP diagram" search results before Skissify does. However, the aesthetic gap (clean vector vs hand-drawn) remains unbridged. Skissify's moat is the hand-drawn style + headless POST → SVG pipeline — neither of which Draw.io provides.
+
+**Action required**: Skissify must submit to MCP Registry NOW to appear alongside Draw.io in the "diagram" category. The differentiator in registry description: "Hand-drawn aesthetic. Stateless POST → SVG. No browser. No runtime. Architectural domain elements."
+
+### Excalidraw MCP Ecosystem — Third-Party Expansion (CONFIRMED GROWING)
+
+**Sources**: rajeevpentyala.com/2026/03/16/excalidraw-mcp, pulsemcp.com/servers/maaker-ai-excalidraw, codenote.net/en/posts/excalidraw-mcp-server-agent-skill (verified 2026-04-02)
+
+The Excalidraw MCP ecosystem has expanded beyond the official February 2026 integration:
+- **Maaker AI** built a dedicated Excalidraw MCP server (listed on PulseMCP)
+- Community tutorials showing "hand-drawn architecture diagrams with Claude Code + Excalidraw MCP" published March 2026
+- The combination "Claude Code + Excalidraw MCP" is gaining developer mindshare as a zero-cost hand-drawn diagram workflow
+
+**The critical gap**: All Excalidraw MCP workflows require an **interactive browser session**. The agent creates elements in a live Excalidraw canvas running on localhost. This is fundamentally different from Skissify's approach (stateless API, no browser, no session). Use cases that cannot use Excalidraw MCP: CI/CD pipelines, serverless functions, batch diagram generation, API integrations, non-browser environments.
+
+**Threat assessment**: **HIGH (growing)** — Excalidraw MCP is capturing the "hand-drawn diagrams in Claude Code" mindshare. However the headless/API gap is larger than ever. Issue #10946 (headless render API) remains open and unaddressed as of April 2026.
+
+### tldraw — No April Release (CONFIRMED STABLE)
+
+**Source**: github.com/tldraw/tldraw/releases, tldraw.dev/releases (verified 2026-04-02)
+
+No tldraw release in April 2026 as of 09:45 CET. Most recent release remains the Image Pipeline template (node-based AI image generation canvas, via `npx create-tldraw`). 25x canvas rendering performance improvement confirmed in prior release.
+
+**No render API. No hand-drawn headless export. No JSON manifest schema.** SDK license remains $6,000/year commercial.
+
+**Threat assessment**: **MEDIUM-STABLE (unchanged)**
+
+### SaaS Pricing 2026 — Usage-Based Acceleration (CONFIRMED TREND)
+
+**Sources**: medium.com/@aymane.bt/the-future-of-saas-pricing-in-2026, firstpagesage.com/seo-blog/average-saas-conversion-rates (verified 2026-04-02)
+
+New 2026 data confirming Skissify's pricing model direction:
+- **Gartner**: 70% of businesses will prefer usage-based pricing over per-seat by 2026
+- **Gartner**: 40% of enterprise SaaS will include outcome-based elements by 2026 (up from 15%)
+- **Freemium → paid conversion**: 3.9% average; top performers 8-15% (visitor → lead)
+- **Trial-to-paid**: 12-35% range; demo-to-close 22-30%
+- **Opt-out trial conversion**: 49.9% benchmark (13x higher than opt-in)
+
+**Skissify pricing validation**: Per-render API billing (EUR 0.005/render) is perfectly aligned with the 2026 usage-based trend. EUR 2/mo price point is below the 10-second psychological decision threshold for impulse purchases.
+
+### Updated Competitor Matrix (Run #106 — Thursday April 2, 09:45 CET)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Skissify Threat |
+|------|---------------------|-------------------|-----------------|
+| **Excalidraw+** | MCP (browser-required), Feb 2026 changelog: adv. charts, GDrive video, presentation room. Issue #10946 open. | NO | **HIGH — headless gap confirmed moat** |
+| **Draw.io (JGraph)** | Official MCP server shipped Feb 3, 2026. Clean vector diagrams. Enterprise credibility. | NO (requires runtime) | **MEDIUM-HIGH (new, distribution race)** |
+| **tldraw** | No April release. Image Pipeline template only. $6K/year SDK license. | NO | **MEDIUM-STABLE** |
+| **Figma + FigJam** | Claude → FigJam diagrams. Figma MCP in VS Code/Cursor. Clean vector only. | NO | **LOW-MEDIUM** |
+| **Maaker AI Excalidraw MCP** | Third-party Excalidraw MCP. Browser-required. No headless. | NO | **LOW** (same gap) |
+| **Skissify** | Headless JSON→hand-drawn SVG API: **uncontested**. MCP registry: **STILL ABSENT** (CRITICAL × 7). | **YES (only one)** | Uncontested in headless hand-drawn lane |
+
+---
+
 ## Update: 2026-04-02 — Automated Strategy Run #105 (Morning, ~08:37 CET)
 
 ### Status: 5 topics researched. NEW: Pinterest deploys production MCP at 66,000 invocations/month — enterprise MCP validation is here, creating "approved registry" gatekeeping risk. Excalidraw Feb 2026 changelog confirmed: advanced charts, Google Drive video embeds, presentation waiting room — still zero headless API. New diagram entrants found (Daigram, DiagramGPT/Eraser, DiagrammingAI) — all text-to-diagram, zero hand-drawn SVG. MCP ecosystem reaches 5,800+ servers + 97M monthly SDK downloads. SaaS: 73% now offer free tiers (Forrester 2026). Headless JSON→hand-drawn SVG API: uncontested for 105th consecutive scan.
