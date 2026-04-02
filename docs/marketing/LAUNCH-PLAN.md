@@ -1,7 +1,61 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3, 2026 — Day 3 (SEE CYCLE 109)**
+**Current Date: April 3, 2026 — Day 4 begins (SEE CYCLE 110)**
+
+---
+
+## NEW IDEAS (Added 2026-04-03, Cycle 110 — Day 4 Saturday)
+
+### Cycle 110 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Email drip sequence (3 emails: Day 0 / 3 / 7) | SOCIAL-MEDIA.md Cycle 110 | ✅ Written — implement in your ESP now |
+| LinkedIn poll post | SOCIAL-MEDIA.md Cycle 110 | ✅ Written — post Day 4 or 5 |
+| r/ArchitectureStudents post | SOCIAL-MEDIA.md Cycle 110 | ✅ Written — post Saturday AM |
+| r/AIAssistants post | SOCIAL-MEDIA.md Cycle 110 | ✅ Written — post Saturday AM |
+| Twitter Spaces Office Hours invite (Sat Apr 5) | SOCIAL-MEDIA.md Cycle 110 | ✅ Written — schedule now |
+| Dev.to series strategy (3-post series Mon/Tue/Wed) | SOCIAL-MEDIA.md Cycle 110 | ✅ Structured |
+| Week 1 metrics post template | SOCIAL-MEDIA.md Cycle 110 | ✅ Written — fill in real numbers |
+| Week 1 retrospective blog post | `blog/week-1-retrospective-what-actually-happened.md` | ✅ Ready to publish |
+
+### Cycle 110 — Priority Actions for Saturday April 4
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **IMPLEMENT EMAIL DRIP** — 3 emails in Cycle 110, add to your ESP (Resend/Mailchimp) | 🔴 P0 — highest ROI action | 30 min |
+| Post r/ArchitectureStudents (copy Cycle 110) | 🔴 P0 — fresh untapped audience | 5 min |
+| Post r/AIAssistants (copy Cycle 110) | 🔴 P0 — directly on-target | 5 min |
+| Post LinkedIn poll (copy Cycle 110) | 🟡 P1 — algorithm boost, re-engages network | 5 min |
+| Schedule Twitter Spaces Office Hours for Apr 5 | 🟡 P1 — notification to followers, expert positioning | 10 min |
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, FINAL WARNING | 🔴 P0 — everything else is suboptimal without this | 20 min |
+| Post Indie Hackers (OVERDUE since Cycle 98) | 🔴 P0 | 5 min |
+| Submit AlternativeTo (copy Cycle 107) | 🔴 P0 — permanent SEO | 10 min |
+| Submit SaaSHub (copy Cycle 107) | 🔴 P0 — permanent SEO | 10 min |
+
+### Cycle 110 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| r/ArchitectureStudents | Academic crit use case — hand-drawn style = "thinking in progress" = correct register for crits | 🔴 P0 — niche but deeply relevant |
+| r/AIAssistants | Direct target — agent builders who want visual output | 🔴 P0 — on-brief |
+| Email onboarding drip | New signups in launch week = highest-intent users you'll ever have. 3-email sequence written | 🔴 P0 — highest conversion leverage |
+| Dev.to article series | Named series creates sidebar link + cross-promotion. Compound SEO. 3 posts already exist | 🟡 P1 — publish Mon/Tue/Wed |
+| Twitter Spaces | Scheduled "office hours" builds community, creates notification touchpoint, positions as expert | 🟡 P1 |
+| LinkedIn poll | 3-5x more reach than standard posts; re-engages connections who missed launch | 🟡 P1 |
+
+### Cycle 110 — Strategic Insight (Email > All Social Combined at This Stage)
+
+**The email drip sequence is Cycle 110's most valuable addition.** Launch week is the one moment when signups have maximum intent. Without an onboarding sequence, most of them will never return. The three emails in Cycle 110 do exactly one thing each:
+
+- **Day 0:** Get them to their first sketch in 3 minutes (reduce time-to-value)
+- **Day 3:** Share unexpected use cases (expand their mental model of what Skissify is for)
+- **Day 7:** Honest week-1 update + soft Pro tier nudge (convert 5-10% to paid)
+
+This is 2 hours of implementation work that will generate more paid conversions than any single social post.
+
+**The compound curve:** Week 2 is about building infrastructure that pays off in months, not days. AlternativeTo + SaaSHub = permanent backlinks. Dev.to series = 3 indexed posts. Email drip = conversion engine. These aren't exciting to do but they compound. Every day without them is a day of compounding missed.
 
 ---
 

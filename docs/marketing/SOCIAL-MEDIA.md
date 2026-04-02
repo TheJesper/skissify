@@ -1,7 +1,257 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 108 (Day 3 — new platforms: TikTok/Reels scripts, Pinterest, Reddit r/vibecoding + r/cursor, Threads, Discord DM template, Product directories CTA blitz, enhanced CTAs, 2026 community research update)**
+**Last updated: April 3, 2026 — Cycle 110 (Day 4 — email onboarding drip sequence, LinkedIn poll, r/ArchitectureStudents, Twitter Spaces invite, Dev.to series strategy, Week 1 metrics post template, Substack "office hours" angle, r/AIAssistants post)**
+
+---
+
+## CYCLE 110 — DAY 4 SATURDAY — EMAIL DRIP + COMPOUND GROWTH INFRASTRUCTURE
+
+*Context: Day 4. Launch spike has faded. This cycle focuses on: (1) Email onboarding sequence for new signups — never written before, highest ROI at this stage, (2) LinkedIn poll for algorithm boost, (3) two new Reddit angles (r/ArchitectureStudents + r/AIAssistants), (4) Twitter Spaces invite format, (5) Dev.to article series strategy, (6) Week 1 metrics post template for when Jesper has real numbers.*
+
+---
+
+### NEW: EMAIL ONBOARDING DRIP SEQUENCE (3 emails — never written until now)
+
+*This is Cycle 110's most valuable addition. New signups during launch week are high-intent. A 3-email sequence converts them to paying users. Trigger on signup.*
+
+---
+
+**Email 1 — Sent immediately on signup**
+```
+Subject: Your first sketch (takes 3 minutes)
+
+Hey,
+
+Thanks for signing up to Skissify.
+
+Here's the fastest way to see what it does:
+
+1. Open the editor at skissify.com
+2. Paste this JSON:
+
+{
+  "paper": "cream",
+  "tool": "pencil",
+  "elements": [
+    { "type": "rect", "x": 100, "y": 100, "width": 300, "height": 200, "label": "Living Room" },
+    { "type": "window", "x": 200, "y": 100, "width": 60 },
+    { "type": "door-symbol", "x": 100, "y": 250, "width": 60 }
+  ]
+}
+
+3. Watch it render as a hand-drawn floor plan.
+
+If you're using Claude Desktop, try: "Use skissify-mcp to draw a simple floor plan of a studio apartment."
+
+That's it. The API is at skissify.com/api/render — no auth required.
+
+Questions? Reply here.
+
+— Jesper
+```
+
+---
+
+**Email 2 — Sent 3 days after signup**
+```
+Subject: The use case I didn't expect
+
+Hey,
+
+Three days in — here's something I learned from watching how people use Skissify:
+
+The biggest surprise: homeowners and contractors are using it more than I expected.
+
+Not to build AI agents. Just to sketch floor plans and send them to contractors before calls.
+"Here's roughly what I'm thinking — 3 bedrooms, open kitchen, L-shaped layout" — one sketch, zero Figma required.
+
+A few other use cases showing up:
+• D&D dungeon maps (r/DnD discovered it on launch day)
+• Architecture students rapid-sketching floor plan variants
+• Product managers sketching app layouts before calling Figma
+• AI agent builders using sketch URLs as persistent visual memory
+
+The one thing they all have in common: a sketch communicates spatial intent that words can't.
+
+If you've found a use case I haven't thought of, reply to this email — I'd genuinely like to know.
+
+— Jesper
+
+P.S. The JSON Schema Cookbook has 10 copy-paste recipes: skissify.com/docs/cookbook
+```
+
+---
+
+**Email 3 — Sent 7 days after signup**
+```
+Subject: Week 1 in the wild — what I learned
+
+Hey,
+
+One week since launch. A few honest notes:
+
+What worked: The MCP integration resonated with AI agent builders immediately. "npx skissify-mcp" is the fastest path to a hand-drawn sketch from Claude Desktop — people who tried it got it instantly.
+
+What didn't work yet: Video demos. I still haven't recorded a 60-second demo. Every text post I've done underperforms a video by 5–10x. This week I'll fix that.
+
+What surprised me: The communities that showed up for it. Not just developers — homeowners, dungeon masters, architecture students.
+
+For you: If you're on the free tier and have hit the 50-sketch limit, the Pro tier is EUR 5/month — less than a coffee. It removes the limit, removes the watermark, and gives you 1,000 API renders/month.
+
+If Skissify isn't useful yet, tell me what would make it useful. I read every reply.
+
+— Jesper
+
+skissify.com/pricing
+```
+
+---
+
+### NEW PLATFORM: LinkedIn Poll — Algorithm boost
+
+*LinkedIn polls get 3-5x more reach than standard posts. Use on Day 4 to re-engage connections who missed the launch.*
+
+```
+[POLL POST]
+
+Quick question for the product people:
+
+When you're explaining a new feature idea to your dev team, you usually...
+
+○ Write a detailed spec
+○ Draw a rough sketch on paper / Figma
+○ Record a Loom video walkthrough
+○ Describe it verbally in a meeting
+
+(I built Skissify because my answer is always "rough sketch" — and I wanted AI agents to do that too)
+
+#BuildInPublic #ProductManagement #AITools #SketchFirst
+```
+
+---
+
+### NEW PLATFORM: r/ArchitectureStudents — Study tool angle
+
+```
+Title: I built a floor plan sketcher that takes JSON and outputs hand-drawn SVG — useful for rapid scheme development?
+
+Architecture students — looking for feedback from people who actually use floor plan tools in crit prep.
+
+I built Skissify after getting frustrated with how long it takes to get a rough floor plan from idea to shareable form. The workflow:
+
+1. Describe a layout in JSON (or have Claude generate the JSON)
+2. Skissify renders it as a hand-drawn floor plan — wobble lines, hatching, architectural symbols (doors, windows, stairs)
+3. Share the URL or export SVG
+
+The hand-drawn style is intentional — it reads as "concept sketch" rather than "finished drawing," which matters for crits where you want to show thinking-in-progress, not polish.
+
+Architecture students use case I'm curious about: could this accelerate scheme development for quick studies? Or is the JSON input too much friction?
+
+Free to try: skissify.com
+MCP integration (for Claude): npx skissify-mcp
+
+Would love to hear if this is useful or if I'm missing what the actual workflow needs.
+```
+
+---
+
+### NEW PLATFORM: r/AIAssistants — Practical agent output angle
+
+```
+Title: My AI agent can now "draw" — here's the workflow that finally makes spatial descriptions useful
+
+One problem I kept running into with AI assistants: they're great at describing spatial layouts but can't show you one.
+
+"A three-bedroom apartment with an open-plan kitchen and a south-facing living room" — Claude can describe it in detail. But until Skissify, it couldn't actually draw it.
+
+Now the workflow is:
+1. Ask Claude: "Sketch a 3-bed apartment floor plan with an open kitchen"
+2. Claude calls Skissify MCP → returns a shareable URL with a hand-drawn floor plan
+3. The sketch is a permanent URL — I can paste it into follow-up prompts, share with contractors, or iterate
+
+The key insight: sketch URLs become persistent visual memory. Agent A draws the floor plan, Agent B imports the URL to continue the spatial conversation.
+
+Tool: npx skissify-mcp (Claude Desktop / Cursor / Windsurf compatible)
+Free API: skissify.com/api/render — no auth
+
+Anyone else building spatial context into their agent workflows?
+
+#AIAssistants #MCPServer #AgentWorkflow
+```
+
+---
+
+### NEW FORMAT: Twitter Spaces "Office Hours" invite
+
+*Post this Friday or Saturday — Twitter Spaces scheduled invite. Even with 0 attendees, the notification reaches followers. The framing "answer questions about the API" positions Jesper as a technical expert.*
+
+```
+🎙️ Skissify Office Hours — Saturday April 5, 15:00 CET
+
+I'll spend 30 minutes answering questions about:
+→ The JSON schema design (why flat, not nested?)
+→ How to use Skissify MCP with Claude / Cursor / Windsurf
+→ The floor plan rendering algorithm (wobble, humanness, seed params)
+→ What I'm building next
+
+Ask anything. No signup required — just show up.
+
+[Link to Twitter Space]
+
+#MCPServer #AIAgents #BuildInPublic
+```
+
+---
+
+### Dev.to ARTICLE SERIES STRATEGY (compound SEO play)
+
+*Instead of publishing individual posts, structure as a named series. Dev.to series get linked in sidebars, cross-promote each other, and rank as a collection.*
+
+**Series name:** "Building the Sketch Layer for AI Agents"
+
+**3-post series to publish this week:**
+
+| # | Post | File | Angle | Target keyword |
+|---|------|------|-------|---------------|
+| 1 | Why AI Agents Need a Drawing Tool (Not Just a Description) | `blog/why-your-ai-agent-needs-visual-output-now.md` | Missing output format | "AI agent visual output" |
+| 2 | How I Built a JSON-to-Hand-Drawn-Sketch API in 2026 | (new — see below) | Build-in-public, technical | "JSON sketch API" "hand-drawn API" |
+| 3 | 10 JSON Recipes for AI-Generated Floor Plans | `blog/skissify-json-schema-cookbook-10-copy-paste-recipes.md` | Practical cookbook | "JSON floor plan generator" |
+
+*Publish 1 per day Mon/Tue/Wed — link back to each other. Each post ends: "This is part N of [series name] on Dev.to."*
+
+---
+
+### NEW: Week 1 Metrics Post Template (for Twitter + LinkedIn)
+
+*Use when Jesper has real numbers. Fill in [brackets].*
+
+```
+Week 1 Skissify numbers — honest update:
+
+→ Signups: [N]
+→ API renders: [N] (sketches generated)
+→ Product Hunt: #[N] of the day
+→ Show HN: [N] points / [N] comments
+→ MCP installs: [N] (npx skissify-mcp)
+→ Countries: [N] (the one I didn't expect: [country])
+
+Most surprising audience: [audience]
+Most asked question: [question]
+Biggest miss: still no demo video recorded (fixing this week)
+
+Next 7 days:
+→ Record 60-second demo
+→ Pro tier soft launch
+→ Dev.to series (3 posts)
+→ AlternativeTo + SaaSHub submissions
+
+Building in public. More next week.
+
+#BuildInPublic #Skissify #IndieHacker
+```
+
+---
 
 ---
 

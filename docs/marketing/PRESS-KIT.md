@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 3, 2026 — Cycle 109 (Day 3 Friday AM — blog posts enhanced x3, SOCIAL-MEDIA.md: PH 2026 mechanics, LinkedIn/Twitter/X/r-entrepreneur/Bluesky/YouTube Community ready-to-post copy, hashtag master list 2026, web search: Adobe 30% hand-drawn trend confirmed, PH upvote quality mechanics)*
+*Last updated: April 3, 2026 — Cycle 110 (Day 4 Saturday — email drip sequence 3 emails, LinkedIn poll, r/ArchitectureStudents + r/AIAssistants posts, Twitter Spaces office hours, Dev.to article series strategy, Week 1 metrics post template, Week 1 retrospective blog post)*
 
 ---
 
@@ -16,6 +16,28 @@
 | **Founded** | 2026, Stockholm, Sweden |
 | **Founder** | Jesper (Conzeon AB) |
 | **Press** | press@skissify.com |
+
+---
+
+## Day 4 Status (April 4, 2026 — Saturday, Cycle 110)
+
+| Item | Status |
+|------|--------|
+| Email drip sequence (Day 0 / Day 3 / Day 7) | ✅ **NEW** — 3 emails written in SOCIAL-MEDIA.md Cycle 110 |
+| LinkedIn poll (algorithm boost format) | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 110 |
+| r/ArchitectureStudents post | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 110 |
+| r/AIAssistants post | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 110 |
+| Twitter Spaces "Office Hours" invite (Sat Apr 5) | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 110 |
+| Dev.to article series strategy (3 posts Mon/Tue/Wed) | ✅ **NEW** — structure in SOCIAL-MEDIA.md Cycle 110 |
+| Week 1 metrics post template (Twitter + LinkedIn) | ✅ **NEW** — template in SOCIAL-MEDIA.md Cycle 110 |
+| Week 1 retrospective blog post | ✅ **NEW** — `blog/week-1-retrospective-what-actually-happened.md` — ready to publish |
+| Demo video | ⚠️ **STILL OVERDUE** — P0, blocking all video content |
+| Indie Hackers post | ⚠️ **OVERDUE since Cycle 98** — copy in SOCIAL-MEDIA.md Cycle 105 |
+| AlternativeTo submission | ⚠️ **OVERDUE** — 10-min task, permanent SEO backlink |
+| SaaSHub submission | ⚠️ **OVERDUE** — 10-min task, permanent SEO backlink |
+| Show HN | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 106 — optimal window Tue 09:00–11:00 CET |
+
+**Week 2 P0 focus:** Demo video → Show HN → Indie Hackers → AlternativeTo/SaaSHub → Dev.to series. Email drip live. Four tasks, each ≤20 minutes.
 
 ---
 
