@@ -1,7 +1,74 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — 04:36 CET, Day 2 (SEE CYCLE 104)**
+**Current Date: April 2, 2026 — Day 2 (SEE CYCLE 106)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 106 — Day 2 Thursday)
+
+### Cycle 106 — New Blog Posts Written (3 revised/canonical posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Why Hand-Drawn Beats Figma v2 (viral hooks revision) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-v2.md` | Sharper opening, vibe-drawing angle, 2026 AI workflow section, viral hook openers | ✅ Ready to publish |
+| How AI Agents Draw Floor Plans (Definitive) | `blog/how-ai-agents-can-draw-floor-plans-definitive.md` | Complete: curl examples, MCP setup, 5 real workflows, flat schema insight, element types table | ✅ Ready to publish |
+| Skissify vs Excalidraw (Definitive 2026) | `blog/skissify-vs-excalidraw-the-definitive-2026-guide.md` | Full feature comparison table, API test (Excalidraw has no REST API), decision tree | ✅ Ready to publish |
+
+### Cycle 106 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| 2026 trending hashtag master list (platform-specific combos) | ✅ Added |
+| Viral hook: "vibe-draw before you vibe-code" (Cursor audience) | ✅ Added |
+| Viral hook: "the missing output format" (dev/builder audience) | ✅ Added |
+| Viral hook: "your agent can describe rooms but can't draw them" | ✅ Added |
+| Viral hook: "I gave Claude a pencil" (TikTok/short-form) | ✅ Added |
+| Hacker News Show HN copy (flat schema + API angle) | ✅ Added |
+| Substack Notes Day 2 builder reflection (homebuilder surprise angle) | ✅ Added |
+| AI newsletter cold pitch template (TLDR AI, Ben's Bites, Rundown AI) | ✅ Added |
+| Product Hunt Day 2 morning comment (homebuilder + D&D + flat schema) | ✅ Added |
+| LinkedIn Day 2 founder update (vibe-drawing + flat schema) | ✅ Added |
+| r/webdev API-first angle post (curl example, 30+ types) | ✅ Added |
+
+### Cycle 106 — PRESS-KIT.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Cycle 106 blog assets table added | ✅ Added |
+| Day 2 status table updated with 6 new Cycle 106 items | ✅ Updated |
+
+### Cycle 106 — Priority Actions for Thursday April 2 (REMAINING)
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, still critical | ⏳ Record TODAY | 🔴 P0 — CRITICAL, everything else unblocked after this |
+| Post Hacker News Show HN (copy Cycle 106) | ⏳ Post 09:00–11:00 CET | 🔴 P0 — best window for HN |
+| Post LinkedIn Day 2 update (copy Cycle 106) | ⏳ 10:00 CET | 🔴 P0 |
+| Post Product Hunt Day 2 comment (copy Cycle 106) | ⏳ 08:00 CET | 🔴 P0 |
+| Send AI newsletter pitches (TLDR AI, Ben's Bites, Rundown AI) | ⏳ Send today | 🔴 P0 — each email 5 mins |
+| Post Substack Notes reflection (copy Cycle 106) | ⏳ 11:00 CET | 🟡 P1 |
+| Post r/webdev API angle (copy Cycle 106) | ⏳ 11:00 CET | 🟡 P1 |
+| Post Cursor Discord (copy Cycle 104) | ⏳ 10:00 CET | 🔴 P0 — vibe-draw hook |
+| Submit to DevHunt (copy Cycle 104) | ⏳ 10-min task | 🔴 P0 |
+| Indie Hackers post (OVERDUE since Cycle 98) | ⏳ Post NOW | 🔴 P0 |
+| Publish definitive blog posts to Dev.to | ⏳ Thursday PM | 🟡 P1 |
+
+### Cycle 106 — New Channels Identified
+
+| Channel | Size | Angle | Priority |
+|---------|------|-------|---------|
+| Hacker News Show HN | High-intent dev audience | Flat schema insight + no-auth API — both are genuinely interesting to HN | 🔴 P0 — 09:00–11:00 CET is optimal window |
+| Substack Notes | Growing builder community | Day 2 honest reflection — homebuilder surprise angle converts well | 🟡 P1 — 15 min to post |
+| AI newsletters (TLDR AI, Ben's Bites, Rundown) | 100K–1.5M each | Cold pitch template ready (Cycle 106) | 🔴 P0 — each email is 5 min |
+
+### Cycle 106 — Strategic Insight (HN + Newsletters)
+
+**Hacker News** is the highest-intent dev audience and we haven't posted a Show HN yet. The optimal angle is the flat schema insight (94% vs 40% accuracy) — this is a concrete, useful technical finding that HN rewards. Lead with the technical insight, not the product pitch. Post between 09:00–11:00 CET to hit US morning + European overlap.
+
+**Newsletter cold pitches** are underused. With 150+ blog posts and a genuinely novel product (no-auth REST API for AI agent visual output), three emails to TLDR AI, Ben's Bites, and The Rundown AI take 15 minutes and can unlock 50K+ impressions each. The cold pitch template is in SOCIAL-MEDIA.md Cycle 106.
+
+**Vibe-drawing** is the narrative shift that will carry Week 2. Vibe-coding is mainstream in 2026 (Cursor, Windsurf, Claude Code everywhere). Every vibe-coder starts with a spatial idea they describe in text. Skissify makes that spatial intent visual — before the code, not after. "Vibe-draw before you vibe-code" is the hook that bridges the AI-agent builder audience and the Cursor power-user audience.
 
 ---
 

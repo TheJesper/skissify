@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 105 (Day 2 Thursday 05:44 CET — Day 2 status updated, screenshots list expanded, Cycle 105 new blog posts added, r/webdev + Indie Hackers + YouTube + LinkedIn + GitHub copy written in SOCIAL-MEDIA.md)*
+*Last updated: April 2, 2026 — Cycle 106 (Day 2 Thursday — viral hooks added, 2026 trending hashtags master list, Hacker News Ask HN copy, Substack Notes post, AI newsletter cold pitch template, 3 new blog posts written: Figma v2, floor plans definitive, Excalidraw definitive)*
 
 ---
 
@@ -19,7 +19,7 @@
 
 ---
 
-## Day 2 Status (April 2, 2026 — Thursday, Cycle 105)
+## Day 2 Status (April 2, 2026 — Thursday, Cycle 106)
 
 | Item | Status |
 |------|--------|
@@ -43,7 +43,12 @@
 | YouTube video description | ⏳ **NEW** — written (Cycle 105), ready for when video is recorded |
 | LinkedIn Day 2 founder update | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 105 — post 10:00 CET |
 | GitHub Discussion (MCP repos) | ⏳ **NEW** — template in SOCIAL-MEDIA.md Cycle 105 |
-| AI newsletter pitch emails | ⏳ **NEW** — template in SOCIAL-MEDIA.md Cycle 105 — send today |
+| AI newsletter pitch emails | ⏳ **NEW** — template in SOCIAL-MEDIA.md Cycle 105/106 — send today |
+| Viral hooks (vibe-draw, missing output format) | ✅ **NEW Cycle 106** — 4 new hooks in SOCIAL-MEDIA.md |
+| 2026 trending hashtag master list | ✅ **NEW Cycle 106** — in SOCIAL-MEDIA.md |
+| Hacker News Show HN copy | ✅ **NEW Cycle 106** — in SOCIAL-MEDIA.md |
+| Substack Notes Day 2 post | ✅ **NEW Cycle 106** — in SOCIAL-MEDIA.md |
+| r/webdev API angle post | ✅ **NEW Cycle 106** — in SOCIAL-MEDIA.md |
 | Anthropic Discord #showcase | ⏳ Copy in SOCIAL-MEDIA.md Cycle 102 |
 | LangChain Discord #tools | ⏳ Copy in SOCIAL-MEDIA.md Cycle 102 |
 | r/LocalLLaMA | ⏳ Copy in SOCIAL-MEDIA.md Cycle 99 |
@@ -428,6 +433,13 @@ Sketch data stored on-platform is owned by the user.
 | Skissify + Notion: Missing Diagram Layer | `blog/skissify-notion-workflow-the-missing-diagram-layer.md` | 30M Notion users, AI-generated diagrams as live embeds | r/Notion, Dev.to, Hashnode, LinkedIn |
 | 7 Discord Communities for Skissify | `blog/discord-communities-that-will-love-skissify.md` | Community playbook with exact copy for each Discord | Internal strategy reference (post excerpts only) |
 | TikTok/Reels Strategy for AI Demo Tools | `blog/tiktok-reels-strategy-ai-draws-floor-plans.md` | Full video scripts: core demo, D&D dungeon, homeowner, dev | Internal strategy reference — video scripts ready to record |
+
+### New Blog Assets (Cycle 106)
+| Blog Post | File | Angle | Publish On |
+|-----------|------|-------|------------|
+| Why Hand-Drawn Beats Figma (v2 — viral hooks) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-v2.md` | Sharper hooks, vibe-drawing angle, 2026 AI workflow section | r/webdev, r/UXDesign, r/ProductManagement, Dev.to, LinkedIn |
+| How AI Agents Draw Floor Plans (Definitive) | `blog/how-ai-agents-can-draw-floor-plans-definitive.md` | Complete guide: curl examples, MCP, 5 real workflows, flat schema insight | r/LocalLLaMA, Anthropic Discord, Dev.to, HN Show |
+| Skissify vs Excalidraw (Definitive 2026) | `blog/skissify-vs-excalidraw-the-definitive-2026-guide.md` | Full feature table, API test, decision tree — honest tone from builder | r/webdev, r/programming, Dev.to, HN |
 
 ---
 
