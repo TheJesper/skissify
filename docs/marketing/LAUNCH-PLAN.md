@@ -1,7 +1,68 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3, 2026 — Day 3 (SEE CYCLE 108)**
+**Current Date: April 3, 2026 — Day 3 (SEE CYCLE 109)**
+
+---
+
+## NEW IDEAS (Added 2026-04-03, Cycle 109 — Day 3 Friday AM)
+
+### Cycle 109 — Blog Posts Enhanced (3 canonical posts rewritten)
+
+| Post | File | Status | Notes |
+|------|------|--------|-------|
+| Why Hand-Drawn Beats Figma | `blog/why-hand-drawn-beats-figma.md` | ✅ Enhanced | Added "Imperfect by Design" 2026 trend data (Adobe 30%+ stat), expanded 5 hand-drawn win scenarios, cleaner structure |
+| How AI Agents Can Draw Floor Plans | `blog/ai-agents-floor-plans.md` | ✅ Enhanced | Added LangChain, CrewAI, n8n, Mastra code examples, prompt engineering tips, "beyond floor plans" section, local stack docs |
+| Skissify vs Excalidraw | `blog/skissify-vs-excalidraw.md` | ✅ Enhanced | Expanded workflow decision table (10 rows), clearer "when to use both", stronger honest framing |
+
+### Cycle 109 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Product Hunt 2026 mechanics table (upvote quality, first 4h window, no direct ask rule) | ✅ Added |
+| PH Day 3 maker comment (ready to post on listing) | ✅ Added |
+| LinkedIn "Imperfect by Design" authority post | ✅ Added |
+| Twitter/X 5-tweet thread on intentional imperfection | ✅ Added |
+| r/entrepreneur launch story post (4 lessons, narrative format) | ✅ Added |
+| Bluesky 4-post thread starter kit | ✅ Added |
+| YouTube Community post (pre-video channel building) | ✅ Added |
+| r/webdev API showcase (fresh angle, less technical) | ✅ Added |
+| Hashtag master list 2026 (design trend + AI + dev + platform-specific maximums) | ✅ Added |
+| Web search findings integrated: PH 2026 upvote mechanics, indie dev communities, hand-drawn trend data | ✅ Added |
+
+### Cycle 109 — Web Search Findings
+
+| Finding | Source | Action |
+|---------|--------|--------|
+| Adobe: 30%+ rise in hand-drawn design searches | Adobe Creative Trends 2025 | Use in all press angles + LinkedIn posts |
+| Canva 2026: "Authentic imperfection" is a key trend | Canva Design Trends 2026 | Use in design community posts |
+| PH: first 4h critical, upvote quality > quantity | Product Hunt 2026 guides | Adjust PH mobilization strategy |
+| PH: cannot ask for upvotes — ask to "visit and comment" | PH community guidelines | Fix all CTAs that say "upvote us" |
+| PH: ~1,000 upvotes for Product of Day | Multiple PH launch guides | Day 1 email mobilization target |
+| Indie dev communities: HN + Reddit + Indie Hackers = developer tool sweet spot | indiehackers.com research | Priority: HN Show HN still P0 |
+| Hand-drawn "Naive Design" trend confirmed for 2026 (Kittl, Envato, Creative Boom) | Multiple design trend reports | Press angle: Skissify is on-trend |
+
+### Cycle 109 — New Ideas Discovered
+
+| Idea | Priority | Notes |
+|------|----------|-------|
+| YouTube Community posts (channel building without videos) | 🟡 P1 | Copy in Cycle 109 — no video required, builds subscribers early |
+| Press angle: "Skissify is the tool for the Imperfect by Design movement" | 🟡 P1 | Use Adobe/Canva trend data as hook in press pitches |
+| r/entrepreneur launch story post (lesson format performs well) | 🟡 P1 | Different audience from r/SideProject — business founders not just devs |
+| Bluesky thread kit (4-post series) | 🟡 P1 | Dev community on Bluesky growing — thread format outperforms single posts |
+| PH Day 3 maker comment with update | 🔴 P0 TODAY | Keeps listing active, signals founder engagement |
+
+### Cycle 109 — Priority Actions for Friday April 3 (additions to Cycle 108 list)
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| Post PH Day 3 maker comment (copy Cycle 109) | ⏳ Post NOW | 🔴 P0 — keeps listing alive |
+| Post LinkedIn "Imperfect by Design" (copy Cycle 109) | ⏳ 7:30–9:00 AM CET | 🔴 P0 — authority post |
+| Post r/entrepreneur launch story (copy Cycle 109) | ⏳ Friday | 🟡 P1 |
+| Post Twitter/X imperfection thread (copy Cycle 109) | ⏳ 9:00 AM CET | 🟡 P1 |
+| Post Bluesky thread (copy Cycle 109) | ⏳ Friday AM | 🟡 P1 |
+| Publish enhanced blog posts to Dev.to (all 3 canonical posts ready) | ⏳ Friday PM | 🟡 P1 |
+| Create YouTube channel + first Community post (copy Cycle 109) | ⏳ This week | 🟢 P2 |
 
 ---
 
