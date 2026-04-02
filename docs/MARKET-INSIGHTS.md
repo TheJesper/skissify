@@ -2,6 +2,64 @@
 
 ---
 
+## Entry: 2026-04-02 — Automated Strategy Run #105 (Morning, ~08:37 CET)
+
+### Theme: The Enterprise Gatekeeping Clock — Why MCP Registry Submission Is Now a Race
+
+#### New Intelligence: Pinterest's Production MCP + What It Means for Skissify's EUR 2 Pay Trigger
+
+Pinterest's full production MCP deployment (66,000 invocations/month, 7,000 hours saved) confirms a pattern already emerging in corporate IT: **approved MCP server registries**. Pinterest built an internal registry with human-in-the-loop approval. This is the enterprise model. And it creates a new, time-sensitive pay trigger for Skissify.
+
+**Trigger G: The Enterprise-Blocked Developer** (new, run #105)
+
+A developer at a mid-to-large company wants to use Skissify MCP in their AI agent pipeline. Their IT team has a whitelist of approved MCP servers (Pinterest model). Skissify is not on the public registry → not discovered → not on the whitelist → blocked. The developer finds Skissify, wants to use it, but cannot get IT approval without official MCP Registry listing + documentation + security posture.
+
+**The EUR 2 trigger from this**: A developer who found Skissify through organic search or a blog post but cannot use it via MCP in their enterprise context will **buy the API key** directly as a workaround — REST API does not require MCP Registry listing. EUR 2/mo billed to personal card, API key used outside the enterprise MCP ecosystem.
+
+This trigger is currently unreachable because: (a) Skissify is not in any search results for "hand-drawn diagram API", (b) The REST API isn't yet published. Both are fixable this week.
+
+#### Updated EUR 2 Trigger Framework (7 triggers — Run #105)
+
+| Trigger | Discovery Moment | Why EUR 2 Is Easy | Urgency |
+|---------|-----------------|-------------------|---------|
+| A: Excalidraw Refugee | Hits headless REST gap → searches → finds Skissify | Excalidraw+ is $6-7/mo and still no API | HIGH |
+| B: Enterprise Pipeline Builder | POST /api/render works, needs consistent access | Pipeline value >> EUR 2/mo | HIGH |
+| C: tldraw Node User | Image Pipeline node needs SVG output | Single integration unlocks whole workflow | MEDIUM |
+| D: Design-to-Sketch Backfill | Figma too polished for thinking stage | "Figma for deliverables, Skissify for thinking" | MEDIUM |
+| E: Claude Code User | Skissify skill triggers mid-session | Momentum cost of stopping > EUR 2 | HIGH |
+| F: 14-day Trial Auto-Convert | Signs up, forgets to cancel, gets value, stays | Opt-out mechanics (49.9% benchmark) | HIGH |
+| **G: Enterprise-Blocked Developer** | Can't use MCP → buys REST API key directly | Workaround is cheaper than IT fight | **NEW** |
+
+**Thread across all 7**: Every trigger is pain-at-discovery. No trigger is "I browsed and chose Skissify." The product must be embedded in existing workflows/registries to hit these moments.
+
+#### The "73% Free Tier" Saturation Problem
+
+Forrester 2026: 73% of SaaS companies now offer free tiers. This means:
+- Free tier is expected, not exceptional
+- Users do not pay because of free tier existence — they pay because the upgrade moment is well-crafted
+- The paywall hit is more important than the pricing page
+
+**Skissify's upgrade moment design** (current plan):
+- Hits 50 save limit → modal appears → "EUR 2/mo, unlimited saves"
+- API rate limit hit → upgrade prompt
+- MCP usage cap hit → upgrade prompt
+
+**Better upgrade moment** (run #105 recommendation): Add a **sketch share** feature gated at free tier. You can create sketches for free, but sharing a sketch URL requires Pro. Social sharing is the natural end-state of sketch creation — the paywall hits at the exact moment of maximum perceived value (user wants to show someone their sketch). This is the Canva model: create free, share/export gated.
+
+#### Data Confidence Level Update
+
+| Metric | Source | Confidence |
+|--------|--------|-----------|
+| 3.9% freemium→paid conversion | FirstPageSage 2026 | HIGH |
+| 49.9% opt-out trial conversion | FirstPageSage 2026 | HIGH |
+| 73% SaaS offer free tier | Forrester 2026 (via Revenera) | HIGH |
+| 5,800+ MCP servers | Context Studios (Mar 2026) | HIGH |
+| 97M monthly SDK downloads | Context Studios (Mar 2026) | HIGH |
+| Pinterest 66K invocations/month | InfoQ/Pinterest Engineering (Apr 2026) | HIGH |
+| Headless hand-drawn SVG gap | 105-scan streak, zero findings | HIGH (overwhelming) |
+
+---
+
 ## Entry: 2026-04-02 — Automated Strategy Run #104 (Evening)
 
 ### Theme: Quantifying the Pay Trigger — What the Data Says About EUR 2/mo

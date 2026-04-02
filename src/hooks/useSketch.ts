@@ -24,6 +24,23 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
   const jsonRef = useRef<string>(JSON.stringify(initial, null, 2));
   const clipboardRef = useRef<SketchData["elements"]>([]);
 
+  /**
+   * Style clipboard — stores visual properties from the last "Copy Style" action.
+   * Holds only style-related fields, not geometric coords.
+   */
+  const styleClipboardRef = useRef<{
+    color?: string;
+    strokeWidth?: number;
+    fillColor?: string;
+    fontFamily?: string;
+    opacity?: number;
+    wallWidth?: number;
+    textColor?: string;
+  } | null>(null);
+
+  /** True when the style clipboard holds data (used to enable the Paste Style button). */
+  const [hasStyleClipboard, setHasStyleClipboard] = useState(false);
+
   // Undo/redo history
   const historyRef = useRef<SketchData[]>([initial]);
   const historyIndexRef = useRef(0);
@@ -493,6 +510,62 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     updateSketch({ elements: newElements });
     setSelectedElements(pastedIndices);
   }, [sketch.elements, updateSketch]);
+
+  /**
+   * Copy the visual style properties (color, strokeWidth, fillColor, fontFamily,
+   * opacity, wallWidth, textColor) from the first selected element to the style clipboard.
+   * Does not copy geometric coordinates.
+   */
+  const copyStyle = useCallback(() => {
+    if (selectedElements.size === 0) return;
+    const idx = [...selectedElements][0];
+    const el = sketch.elements[idx];
+    if (!el) return;
+    const a = el as unknown as Record<string, unknown>;
+    styleClipboardRef.current = {
+      ...(typeof a.color === "string"       ? { color: a.color }                     : {}),
+      ...(typeof a.strokeWidth === "number" ? { strokeWidth: a.strokeWidth }         : {}),
+      ...(typeof a.fillColor === "string"   ? { fillColor: a.fillColor }             : {}),
+      ...(typeof a.fontFamily === "string"  ? { fontFamily: a.fontFamily }           : {}),
+      ...(typeof a.opacity === "number"     ? { opacity: a.opacity }                 : {}),
+      ...(typeof a.wallWidth === "number"   ? { wallWidth: a.wallWidth }             : {}),
+      ...(typeof a.textColor === "string"   ? { textColor: a.textColor }             : {}),
+    };
+    setHasStyleClipboard(true);
+  }, [sketch.elements, selectedElements]);
+
+  /**
+   * Paste the style clipboard's visual properties onto all currently selected elements.
+   * If the style clipboard is empty, does nothing.
+   * Geometric coordinates are never modified.
+   */
+  const pasteStyle = useCallback(() => {
+    const style = styleClipboardRef.current;
+    if (!style || selectedElements.size === 0) return;
+    setSketch((prev) => {
+      const newElements = prev.elements.map((el, i) => {
+        if (!selectedElements.has(i)) return el;
+        const a = el as unknown as Record<string, unknown>;
+        // Build merged element: apply each style prop if it was in the clipboard.
+        // For wallWidth, only apply to line elements.
+        const merged: Record<string, unknown> = { ...a };
+        if ("color" in style)       merged.color       = style.color;
+        if ("strokeWidth" in style) merged.strokeWidth = style.strokeWidth;
+        if ("fillColor" in style)   merged.fillColor   = style.fillColor;
+        if ("fontFamily" in style && (el.type === "text" || el.type === "dim")) {
+          merged.fontFamily = style.fontFamily;
+        }
+        if ("opacity" in style)     merged.opacity     = style.opacity;
+        if ("wallWidth" in style && el.type === "line") merged.wallWidth = style.wallWidth;
+        if ("textColor" in style)   merged.textColor   = style.textColor;
+        return merged as unknown as SketchData["elements"][number];
+      });
+      const next = { ...prev, elements: newElements as SketchData["elements"] };
+      jsonRef.current = JSON.stringify(next, null, 2);
+      pushHistory(next);
+      return next;
+    });
+  }, [selectedElements, pushHistory]);
 
   /**
    * Select all elements of the same type as the currently selected element(s).
@@ -1173,6 +1246,9 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     copySelected,
     pasteElements,
     pasteInPlace,
+    copyStyle,
+    pasteStyle,
+    hasStyleClipboard,
     selectSameType,
     colorSelected,
     rotateSelected,

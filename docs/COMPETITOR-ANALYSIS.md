@@ -2,6 +2,84 @@
 
 ---
 
+## Update: 2026-04-02 — Automated Strategy Run #105 (Morning, ~08:37 CET)
+
+### Status: 5 topics researched. NEW: Pinterest deploys production MCP at 66,000 invocations/month — enterprise MCP validation is here, creating "approved registry" gatekeeping risk. Excalidraw Feb 2026 changelog confirmed: advanced charts, Google Drive video embeds, presentation waiting room — still zero headless API. New diagram entrants found (Daigram, DiagramGPT/Eraser, DiagrammingAI) — all text-to-diagram, zero hand-drawn SVG. MCP ecosystem reaches 5,800+ servers + 97M monthly SDK downloads. SaaS: 73% now offer free tiers (Forrester 2026). Headless JSON→hand-drawn SVG API: uncontested for 105th consecutive scan.
+
+### Pinterest MCP Production Deployment — Enterprise Gatekeeping Risk (NEW HIGH-STRATEGIC SIGNAL)
+
+**Source**: medium.com/pinterest-engineering/building-an-mcp-ecosystem-at-pinterest, infoq.com/news/2026/04/pinterest-mcp-ecosystem/ (fetched 2026-04-02)
+
+Pinterest engineering has deployed a full production MCP ecosystem: fleet of cloud-hosted domain-specific MCP servers (Presto, Spark, Airflow domains), a **central MCP registry** as source of truth for approved servers, human-in-the-loop approval, and integrations across IDEs + internal chat. Scale: **66,000 invocations/month**, estimated **7,000 hours saved/month**.
+
+**Why this matters for Skissify**: The Pinterest model (central "approved" registry) is the pattern large companies will follow. If Skissify is not in the public MCP Registry before enterprise IT teams lock down their approved server lists, Skissify gets filtered out pre-discovery. The window to be in the "default allowed" list is now — not after enterprises build their internal whitelists.
+
+**Second implication**: Pinterest's architecture uses a **UI + API for discovery and validation** of MCP servers. This means enterprise customers evaluating Skissify will look for: (1) documentation, (2) security posture, (3) rate limiting, (4) SLA. Skissify's enterprise checklist gains urgency.
+
+**Threat assessment**: **MEDIUM-HIGH (new)** — Not a product threat. A distribution threat. The window for organic MCP Registry entry is open today; enterprise whitelist lockdowns are Q2-Q3 2026.
+
+### Excalidraw Feb 2026 Changelog — Still No Headless API (CONFIRMED UNCHANGED)
+
+**Source**: plus.excalidraw.com/changelog (fetched 2026-04-02)
+
+February 2026 Excalidraw+ updates confirmed:
+- **Presentation Waiting Room**: Manage guest access with admission flow
+- **Advanced charts**: Radar charts, multiple data series in one chart
+- **Google Drive video embeds**: Play videos directly from Google Drive in boards
+- **Custom AI tokens**: OpenAI, Claude, Gemini, OpenRouter API keys for AI features
+- **Issue #10946** (headless render API): Still open, still unaddressed
+
+**Skissify implication**: Excalidraw is doubling down on the interactive collaboration use case — presentations, charts, video. These features have zero overlap with Skissify's headless API position. The moat widens as Excalidraw invests in live sessions (requiring browser/session) while Skissify is stateless POST → SVG.
+
+### New Diagram Entrants — Daigram, DiagramGPT, DiagrammingAI (LOW THREAT)
+
+**Source**: daigram.app, eraser.io/diagramgpt, diagrammingai.com (found in search 2026-04-02)
+
+Three diagram tools surfaced in "AI hand-drawn diagram" search:
+- **Daigram**: OCR-based — converts *images of hand-drawn sketches* into editable digital files. Inverse of Skissify (sketch → digital, not JSON → hand-drawn).
+- **DiagramGPT by Eraser**: Text-to-diagram AI. Clean vector output, no hand-drawn aesthetic, developer-facing.
+- **DiagrammingAI**: Text/prompt-to-diagram. No hand-drawn mode, no JSON manifest API.
+
+**Threat assessment**: **LOW (all three)**. None generate hand-drawn SVG from JSON. Daigram is complementary (converts physical sketches to digital → Skissify converts JSON to sketches). DiagramGPT/DiagrammingAI compete with Mermaid, not Skissify.
+
+**SEO opportunity**: All three appear in "hand-drawn diagram AI" searches. Skissify does not yet. Content targeting: "JSON to hand-drawn diagram" and "programmatic hand-drawn sketch API" are zero-competition long-tail terms.
+
+### MCP Ecosystem Scale — 5,800 Servers, 97M SDK Downloads (CONFIRMED GROWTH)
+
+**Source**: contextstudios.ai/blog/mcp-ecosystem-in-2026-what-the-v127-release-actually-tells-us (confirmed 2026-04-02)
+
+As of March 2026:
+- **5,800+ MCP servers** covering every major business category
+- **97 million monthly SDK downloads**
+- TypeScript SDK v1.27.1, Python SDK v1.26 — current versions
+- All major AI providers (Anthropic, OpenAI, Google, Microsoft) on board
+
+**Skissify gap**: 5,800 servers and **still no hand-drawn sketch renderer**. The architecture/visual category remains unoccupied by any headless SVG tool. Being server #5,801 in the visual sketch category is still first-mover in the headless spatial sketch subcategory.
+
+### SaaS Freemium 2026 — 73% Offer Free Tiers (UPDATED DATA)
+
+**Source**: firstpagesage.com/seo-blog/saas-freemium-conversion-rates/, revenera.com/blog/software-monetization/saas-pricing-models-guide/ (fetched 2026-04-02)
+
+**New data point**: Forrester 2026 SaaS Study — **73% of SaaS companies now offer free tiers**. Market is saturated with freemium, which means:
+1. Free tier alone is table stakes — not a differentiator
+2. The quality of the upgrade moment (the "paywall hit") is the real conversion lever
+3. EUR 2/mo is below the psychological decision threshold — tests confirm sub-EUR 5 decisions are made in under 10 seconds
+
+### Updated Competitor Matrix (Run #105 — Thursday April 2, morning)
+
+| Tool | Status (2026-04-02) | Skissify Threat |
+|------|---------------------|-----------------|
+| **Excalidraw+** | Feb 2026: adv. charts, GDrive video, presentation room, custom AI tokens. Issue #10946 open. No headless. | **HIGH — headless gap confirmed moat** |
+| **tldraw** | No April release. 25x rendering + Image Pipeline template. No render API. | **MEDIUM-STABLE** |
+| **Figma + FigJam** | Claude → FigJam diagrams. Figma MCP in VS Code/Cursor/Windsurf. Clean vector only. | **LOW-MEDIUM** |
+| **Sketch.com** | AI agent skills (Claude Code + Cursor). No hand-drawn, no JSON API, no headless. | **LOW** (distribution opportunity) |
+| **Daigram** | OCR sketch→digital. Inverse flow (physical→digital). No JSON→SVG. | **LOW** (complementary) |
+| **DiagramGPT / DiagrammingAI** | Text-to-diagram. No hand-drawn. No JSON manifest. Mermaid-competitive, not Skissify-competitive. | **LOW** |
+| **Pinterest MCP pattern** | Enterprise "approved registry" model emerging. Gatekeeping risk Q2-Q3 2026. | **MEDIUM-HIGH (distribution risk)** |
+| **Skissify** | Headless JSON→hand-drawn SVG API: uncontested. MCP registry: **STILL ABSENT** (CRITICAL × 6). | **Uncontested in headless spatial lane** |
+
+---
+
 ## Update: 2026-04-02 — Automated Strategy Run #104 (Evening)
 
 ### Status: 6 topics researched. Excalidraw MCP confirmed (Feb 2026 changelog) — 26 tools, no REST/headless API, Issue #10946 still open. tldraw confirmed no April release yet; most recent update is 25x canvas rendering + Image Pipeline template (still no render API). MCP roadmap 2026 confirmed: 4 priorities — Transport Evolution, Agent Communication, Governance Maturation, Enterprise Readiness. MCP Registry growing organically, categories unfiltered (no "architecture" slot claimed = opportunity still open). SaaS freemium: avg 3.9% free-to-paid conversion; opt-out trials hit 49.9%. MCP freemium strategy: free MCP for discovery, usage guardrails drive conversion. Headless JSON→hand-drawn SVG API: uncontested for 104th consecutive scan.

@@ -133,6 +133,9 @@ function EditorInner({
     copySelected,
     pasteElements,
     pasteInPlace,
+    copyStyle,
+    pasteStyle,
+    hasStyleClipboard,
     selectSameType,
     addPathElement,
     colorSelected,
@@ -512,6 +515,16 @@ function EditorInner({
           e.preventDefault();
           ungroupSelected();
         }
+        // Ctrl+Alt+C = copy style (format painter source)
+        if (e.altKey && e.key === "c" && !isInput && selectedElements.size > 0) {
+          e.preventDefault();
+          copyStyle();
+        }
+        // Ctrl+Alt+V = paste style onto selected elements
+        if (e.altKey && e.key === "v" && !isInput && selectedElements.size > 0) {
+          e.preventDefault();
+          pasteStyle();
+        }
       }
 
       // R = rotate selected 15° clockwise, Shift+R = 15° counter-clockwise
@@ -554,7 +567,7 @@ function EditorInner({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode, setSnapGrid, sketch.snapGrid]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, handleDownloadJSON, copySelected, pasteElements, copyStyle, pasteStyle, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode, setSnapGrid, sketch.snapGrid]);
 
   // Compute the color of the first selected element (or undefined)
   const selectedColor: string | undefined = (() => {

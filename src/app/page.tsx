@@ -219,6 +219,9 @@ function EditorInner({
     copySelected,
     pasteElements,
     pasteInPlace,
+    copyStyle,
+    pasteStyle,
+    hasStyleClipboard,
     selectSameType,
     colorSelected,
     strokeWidthSelected,
@@ -568,6 +571,16 @@ function EditorInner({
           e.preventDefault();
           ungroupSelected();
         }
+        // Ctrl+Alt+C = copy style (format painter source)
+        if (e.altKey && e.key === "c" && !isInput && selectedElements.size > 0) {
+          e.preventDefault();
+          copyStyle();
+        }
+        // Ctrl+Alt+V = paste style onto selected elements
+        if (e.altKey && e.key === "v" && !isInput && selectedElements.size > 0) {
+          e.preventDefault();
+          pasteStyle();
+        }
       }
 
       if (e.key === "r" && !isInput && selectedElements.size > 0 && !e.ctrlKey && !e.metaKey) {
@@ -609,7 +622,7 @@ function EditorInner({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, pasteInPlace, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode, setSnapGrid, sketch.snapGrid]);
+  }, [selectedElements, deleteSelected, undo, redo, handleSave, handleDownload, handleDownloadSVG, copySelected, pasteElements, pasteInPlace, copyStyle, pasteStyle, rotateSelected, nudgeSelected, selectAll, groupSelected, ungroupSelected, setDrawMode, setSnapGrid, sketch.snapGrid]);
 
   /** Handle actions dispatched from the Command Palette */
   const handleCommandPaletteAction = useCallback(
@@ -854,6 +867,9 @@ function EditorInner({
             selectedHasGroup={selectedHasGroup}
             onGroupSelected={groupSelected}
             onUngroupSelected={ungroupSelected}
+            onCopyStyle={copyStyle}
+            onPasteStyle={pasteStyle}
+            hasStyleClipboard={hasStyleClipboard}
             renderStyle={sketch.renderStyle}
             onRenderStyle={setRenderStyle}
             snapGrid={sketch.snapGrid ?? 0}
@@ -1046,6 +1062,9 @@ function EditorInner({
           selectedHasGroup={selectedHasGroup}
           onGroupSelected={groupSelected}
           onUngroupSelected={ungroupSelected}
+          onCopyStyle={copyStyle}
+          onPasteStyle={pasteStyle}
+          hasStyleClipboard={hasStyleClipboard}
           renderStyle={sketch.renderStyle}
           onRenderStyle={setRenderStyle}
           snapGrid={sketch.snapGrid ?? 0}

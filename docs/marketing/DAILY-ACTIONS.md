@@ -2,6 +2,68 @@
 
 ---
 
+## 2026-04-02 — Strategy Run #105 Actions (Thursday April 2, morning — 08:37 CET)
+
+### Context: Run #105 Key New Findings
+- **Pinterest MCP production** (April 2026): 66K invocations/month, 7K hours saved. Enterprise "approved registry" pattern emerging → gatekeeping risk if Skissify delays MCP Registry submission into Q2.
+- **Excalidraw Feb 2026**: Advanced charts, Google Drive video, presentation waiting room. Still zero headless API.
+- **New entrants** (Daigram, DiagramGPT, DiagrammingAI): All text/image-to-diagram. Zero hand-drawn SVG. Low threat, SEO opportunity.
+- **MCP scale**: 5,800+ servers, 97M SDK downloads/month. Visual sketch category still empty.
+- **SaaS**: 73% offer free tier (Forrester 2026) — upgrade moment design is the differentiator, not free tier existence.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 6th consecutive cycle): Submit Skissify to MCP Registry NOW
+
+**The enterprise gatekeeping clock is ticking. Pinterest's "approved registry" model is the enterprise standard. Q2 IT lockdowns will whitelist only tools already in the public registry. Delay = exclusion.**
+
+Pinterest data: companies build approved-server lists off the public MCP Registry. If Skissify is not listed by the time enterprise IT teams run their Q2 audits, Skissify is filtered out before any developer can advocate for it. The window is measured in weeks, not months.
+
+**Steps** (unchanged, urgency increased):
+1. `github.com/modelcontextprotocol/registry` — PR with `skissify.json`. Tags: `visual`, `architecture`, `floor-plan`, `hand-drawn`, `JSON`, `SVG`, `sketch`, `headless`, `stateless`
+2. Description: "POST a JSON manifest → receive a hand-drawn SVG. No browser required. No session. No Chromium. Architectural sketches, floor plans, napkin diagrams. The only headless hand-drawn SVG render API in the MCP ecosystem."
+3. Submit simultaneously: `glama.ai/mcp/servers`, `pulsemcp.com`, `mcp.so`, `mcpservers.org`
+4. Plan `.well-known/mcp.json` endpoint (MCP 2026 roadmap Priority 1)
+5. Add security/rate-limit documentation (enterprise checklist requirement per Pinterest pattern)
+6. Announce on Twitter/X, tag @modelcontextprotocol
+
+**Time estimate: 2-3 hours. Irreversible distribution gain.**
+
+---
+
+### Action 2 (HIGH — today): Target "Hand-Drawn Diagram API" SEO Gap
+
+**Daigram, DiagramGPT, DiagrammingAI all appear in "hand-drawn diagram AI" searches. Skissify does not. These tools are not competitors — they're crowd-marking a search intent Skissify can own outright.**
+
+Run #105 found three tools in the "AI hand-drawn diagram generator" search results. None generate hand-drawn SVG from JSON. Skissify is invisible in these results despite being the only tool in the world that does exactly what those searches are looking for.
+
+**Steps**:
+1. Write a landing page (or blog post) titled: "The only JSON-to-hand-drawn-diagram API" targeting zero-competition long-tail
+2. Target keywords with zero competition: "JSON to hand-drawn SVG", "programmatic hand-drawn sketch API", "hand-drawn diagram API", "AI agent sketch renderer"
+3. Submit a comparison post: "Daigram vs DiagramGPT vs Skissify — completely different tools" (SEO play on competitor name traffic)
+4. Add `<meta>` tags to skissify.ai: schema.org SoftwareApplication, category "Diagram Software", keywords above
+
+**Why today**: Daigram/DiagramGPT are currently ranking for "hand-drawn diagram AI" with zero hand-drawn SVG output. Skissify produces exactly what those queries want. Publishing one targeted post today captures organic traffic before these tools add hand-drawn features.
+
+---
+
+### Action 3 (MEDIUM — this week): Add "Share Sketch" Upgrade Moment to Roadmap
+
+**73% of SaaS now offers free tiers (Forrester 2026). Free tier is not a differentiator. The upgrade moment is. Sketch sharing is the highest-value moment to gate.**
+
+The Canva model: create free, share/export gated. Applied to Skissify: create and preview sketches free, but generating a shareable URL requires Pro. The upgrade moment is "I want to show this to someone" — maximum perceived value, natural sharing moment, zero resentment about the paywall.
+
+**Steps**:
+1. Add to product roadmap: `sketch_url` → public link feature, gated at Pro
+2. Free tier: JSON editor + canvas preview only (no share link)
+3. Pro tier: generates `skissify.ai/s/[id]` shareable URL, optionally password-protected
+4. Watermark on free exports (current plan) + share link gate (new) = two natural upgrade moments
+5. Update pricing page to call out: "Share your sketches with a link — Pro only"
+
+**Why this beats "unlimited saves" as primary gate**: Saves are a quantity limit (feels punitive). Share link is a quality upgrade (feels additive). Users who hit the save limit feel restricted; users who discover share links feel they're missing out. Psychological framing matters at EUR 2/mo impulse decisions.
+
+---
+
 ## 2026-04-02 — Strategy Run #104 Actions (Thursday April 2, evening)
 
 ### Context: Run #104 Key New Findings
