@@ -1,7 +1,69 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2 → Day 2 (SEE CYCLE 112)**
+**Current Date: April 2 → Day 2 (SEE CYCLE 113)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 113 — Day 2 Wednesday Evening)
+
+### Cycle 113 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Show HN final submission copy (title + body, Human Mode included) | SOCIAL-MEDIA.md Cycle 113 | ✅ Written — POST TOMORROW 09:00 CET |
+| Indie Hackers founder story ("built for AI devs, homeowners found it first") | SOCIAL-MEDIA.md Cycle 113 | ✅ Written — POST TONIGHT |
+| Lobsters submission copy (technical, curated dev community) | SOCIAL-MEDIA.md Cycle 113 | ✅ Written |
+| r/homeimprovement post (non-dev renovation angle) | SOCIAL-MEDIA.md Cycle 113 | ✅ Written |
+| Substack Notes posts × 2 (insight + discovery hooks) | SOCIAL-MEDIA.md Cycle 113 | ✅ Written |
+| GitHub Discussions template (for MCP/Claude repos) | SOCIAL-MEDIA.md Cycle 113 | ✅ Written |
+| 6 new viral Twitter/X hooks for Day 3 | SOCIAL-MEDIA.md Cycle 113 | ✅ Written |
+| Blog: "Show HN tomorrow — the story behind the pitch" | `blog/show-hn-tomorrow-the-story-behind-the-pitch.md` | ✅ Written — publish to Dev.to/Hashnode Day 3 |
+
+### Cycle 113 — Priority Actions for Thursday April 3
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Show HN** — 09:00–11:00 CET, use copy in SOCIAL-MEDIA.md Cycle 113 | 🔴 P0 — optimal HN window | 2 min |
+| **Post Indie Hackers** (OVERDUE since Cycle 98) — copy Cycle 113 | 🔴 P0 — post tonight if possible | 5 min |
+| **Post MCP Discord #showcase** — copy in SOCIAL-MEDIA.md Cycle 111 | 🔴 P0 — 11,851 targeted devs, never posted | 5 min |
+| **Submit Smol Launch** — copy in SOCIAL-MEDIA.md Cycle 111 | 🔴 P0 — 7-day window, indie-friendly | 10 min |
+| **Post r/vibecoding** (89K audience) — copy in SOCIAL-MEDIA.md Cycle 108 | 🔴 P0 | 5 min |
+| **Post Twitter hook 1** (Show HN tease) at 08:00 CET — copy Cycle 113 | 🟡 P1 | 2 min |
+| **Post Twitter hook 2** (floor plan reveal) at 10:00 CET — copy Cycle 113 | 🟡 P1 | 2 min |
+| **Publish blog** to Dev.to: `show-hn-tomorrow-the-story-behind-the-pitch.md` | 🟡 P1 | 10 min |
+| **Post Lobsters** if you have account — copy Cycle 113 | 🟡 P1 | 5 min |
+| **Post r/homeimprovement** — copy Cycle 113 | 🟡 P1 | 5 min |
+| **Post Substack Notes** × 2 — copy Cycle 113 | 🟡 P1 | 5 min |
+| **Submit AlternativeTo** — permanent SEO, 10 min | 🟡 P1 | 10 min |
+| **Submit SaaSHub** — permanent SEO, 10 min | 🟡 P1 | 10 min |
+| **RECORD DEMO VIDEO** — P0 FOREVER | 🔴 P0 — blocks all video channels | 20 min |
+
+### Cycle 113 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| Lobsters (lobste.rs) | Curated dev community — technical trust, longer shelf life than HN, less competition | 🟡 P1 — requires account |
+| r/homeimprovement | 89K+ non-dev audience — renovation/floor plan use case is directly on-brief | 🟡 P1 — untapped |
+| Substack Notes | Reaches newsletter writers/readers — tech + design crossover, "building in public" angle | 🟡 P1 |
+| GitHub Discussions (Anthropic/MCP repos) | Developer trust — contribute, don't advertise; targeted MCP builder audience | 🟡 P1 — requires account |
+| YouTube Shorts script prep | Even without recording, scripting these now means zero prep time when demo video is ready | 🟢 P2 |
+
+### Cycle 113 — Strategic Insight (Show HN is the Alpha)
+
+**Tomorrow's Show HN is the single highest-leverage untapped action in the backlog.** Unlike every other channel (Reddit, Discord, Dev.to), HN posts from builders with genuine stories — not product pitches — get the right 1,000 people. The HN audience includes:
+- MCP tool builders who will immediately understand the agent use case
+- Senior engineers who will stress-test the architecture choices
+- Journalists and newsletter writers who monitor HN for "interesting technical projects"
+- Product Hunt voters who discover products via HN roundup posts
+
+The Show HN copy in Cycle 113 is the strongest version yet. It includes:
+- Human Mode (launched post-original draft)
+- The homeowner discovery story (authentic, HN loves this)
+- Technical details (seeded wobble, Canvas 2D, MCP tools exposed)
+- An explicit invitation for feedback from MCP builders
+
+**The Indie Hackers post should go live tonight.** IH posts get indexed quickly and generate long-tail organic traffic. The "built for X, found by Y" narrative format is documented to perform well on IH. This is a 5-minute task that's been on the backlog for 14+ cycles.
 
 ---
 

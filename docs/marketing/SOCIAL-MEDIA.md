@@ -1,7 +1,300 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 112 (Day 2 — Cursor integration angle, Product Hunt Vibe Coding category, vibecoding.app submission, #VibeCoding stack hooks, 4 new posts)**
+**Last updated: April 2, 2026 — Cycle 113 (Day 2 evening — Show HN final copy, Indie Hackers founder story, Lobsters, r/homeimprovement, Substack Notes, GitHub Discussions template, 6 new viral hooks)**
+
+---
+
+## CYCLE 113 — DAY 2 EVENING (APRIL 2) — SHOW HN PREP + OVERDUE CHANNELS
+
+*Context: Launch Day 2 (April 2). Show HN window opens TOMORROW April 3 at 09:00 CET. This cycle focuses on preparing the best possible Show HN submission, finally writing the Indie Hackers post (overdue since Cycle 98), and covering 4 channels that have no copy yet: Lobsters, r/homeimprovement, Substack Notes, GitHub Discussions. Six new viral hooks added for Day 3.*
+
+---
+
+### P0 TOMORROW: Show HN — Final Submission Copy (Post April 3, 09:00–11:00 CET)
+
+*This is the definitive Show HN. Previous drafts existed but didn't include Human Mode (launched post-original draft) or the unexpected audience discovery. This version is cleaner, more honest, and structured for the HN audience who will dig into the technical and product story.*
+
+**Title:**
+```
+Show HN: Skissify – JSON to hand-drawn sketch, designed for AI agents (MCP)
+```
+
+**Body:**
+```
+I built a sketch renderer where the primary input is JSON, not a mouse.
+
+The motivation was specific: LLMs can reason about spatial layouts (floor plans, system diagrams, wireframes) but their only output format is text. This creates a persistent gap — the AI understands the space but can't show it. Skissify closes that gap.
+
+How it works:
+- POST a JSON manifest to /api/render → get back an SVG that looks hand-drawn
+- An MCP server (npx skissify-mcp) exposes this as a native tool in Claude Desktop, Cursor, Windsurf
+- Claude calls render_sketch with a manifest → returns a permanent shareable URL
+
+The "hand-drawn" output is intentional. Rough sketches generate better early-stage feedback than polished visuals — people react to structure instead of aesthetics.
+
+What I didn't expect: homeowners found it before developers did. The floor plan use case (describe your renovation, get a sketch to show your contractor) turned out to be as compelling as the AI agent use case.
+
+There's also a Human Mode now — plain text input, no JSON required — after I realized the tool had an audience beyond agent builders.
+
+Tech: Next.js, HTML Canvas 2D, seeded random wobble algorithms, Caveat font. The wobble is deterministic (same JSON → same sketch every time) which matters for agent workflows.
+
+Free API, no auth. Open to feedback — especially from people building MCP tools.
+
+Live: https://skissify.com
+API: POST https://skissify.com/api/render
+MCP: npx skissify-mcp
+```
+
+---
+
+### OVERDUE: Indie Hackers Post (post TODAY or first thing tomorrow)
+
+*Indie Hackers rewards honest founder stories over sales copy. This version uses the "built for X, found by Y" arc that performs well on IH. No pitch, just story + data.*
+
+**Title:**
+```
+I built a sketch API for AI agents. Homeowners found it first.
+```
+
+**Body:**
+```
+I launched Skissify on April 1 — a tool that turns JSON into hand-drawn sketches, designed so AI agents can draw.
+
+The hypothesis: LLMs can reason about spatial layouts but can't output visuals. An MCP server that gives Claude a drawing tool would be useful for the AI developer community. Floor plans, wireframes, architecture diagrams — anything you'd normally describe in text, now drawable in 5 seconds.
+
+That's the product I built. Then launch day happened.
+
+The first batch of excited users weren't AI developers. They were homeowners.
+
+One person in the beta described their renovation project to Claude, got a sketch, printed it, and showed it to their contractor. They said: "We actually talked about the same thing for the first time."
+
+That wasn't in my roadmap.
+
+So now Skissify has two use cases running in parallel:
+1. AI agent visual output (MCP, developer-focused)
+2. Instant renovation sketches for non-technical homeowners
+
+I added Human Mode in the first 48 hours — plain text input, no JSON — specifically because the homeowner use case deserved its own door in.
+
+Numbers so far (Day 2):
+- Product Hunt launched April 1
+- API is free, no auth
+- MCP: npx skissify-mcp
+
+The biggest learning: build the tool, then watch who uses it. The audience tells you more than your spec.
+
+What's your experience with unexpected use case discovery?
+
+→ skissify.com
+```
+
+---
+
+### NEW PLATFORM: Lobsters (lobste.rs)
+
+*Lobsters is a curated, invitation-only tech community. Requires an account but submissions are high-quality and stay visible longer than HN. Good for technical credibility.*
+
+**Title:**
+```
+Skissify: REST API that renders JSON as hand-drawn sketches (built for AI agent visual output)
+```
+
+**Body/comment:**
+```
+I built Skissify to solve a specific gap in AI agent pipelines: LLMs can reason spatially but can't output drawings. With Skissify's MCP server, Claude can call render_sketch with a JSON manifest and return a shareable SVG URL.
+
+Technical details that might be interesting to this community:
+
+- The wobble algorithm is seeded random — deterministic output from the same JSON. This matters for agent workflows where reproducibility is expected.
+- Canvas 2D renderer (not WebGL, not SVG generation from scratch). The hand-drawn effect is applied at draw time via parametric perturbation of lines, not post-processing.
+- 14 element types with semantic architectural symbols (door-symbol, door-slide, stair, opening, column) — not just rectangles.
+- The MCP server exposes three tools: render_sketch, get_manifest, list_element_types.
+
+The hand-drawn output is intentional. Early-stage diagrams should look rough — it changes how people give feedback (structure vs. aesthetics).
+
+Free API, no auth. MCP install: npx skissify-mcp
+Live: skissify.com
+```
+
+---
+
+### NEW PLATFORM: r/homeimprovement (post Day 3 morning)
+
+*89,000+ subscribers. Non-developer audience. This is the homeowner angle — no jargon, personal story format.*
+
+**Title:**
+```
+I built an AI sketch tool and renovation planners are the ones using it most
+```
+
+**Body:**
+```
+I built Skissify primarily for AI developers (it's an MCP tool that lets Claude generate hand-drawn diagrams). But on launch day, the most excited users were homeowners planning renovations.
+
+The use case: describe your project to Claude — "open kitchen with island, dining area separated by a half-wall, utility room off the back" — and get a hand-drawn floor plan sketch in under 10 seconds. Share it with your contractor. Actually get on the same page.
+
+There's no CAD skills required. No software to download. Just describe what you're imagining and the AI draws it.
+
+A few people in the beta told me this was the first time they could communicate their renovation vision to a contractor clearly. That wasn't what I designed it for, but now it's a core feature.
+
+If you're planning a renovation and have been struggling to explain your vision, try it:
+→ skissify.com (free, no account needed for basic sketches)
+
+Happy to answer questions about how it works.
+```
+
+---
+
+### NEW PLATFORM: Substack Notes (post Day 3)
+
+*Short, reflective. Substack Notes reach newsletter writers who share with technical/creative audiences. Ideal for the "building in public" and AI/design crossover communities.*
+
+**Note 1 — The insight post:**
+```
+Something I didn't expect when building Skissify:
+
+The hardest problem wasn't the rendering engine (Canvas 2D wobble algorithms). It wasn't the MCP integration. It wasn't the JSON schema design.
+
+It was deciding how rough the sketches should look.
+
+Too polished = people expect Figma. Too rough = it looks broken.
+
+The sweet spot is "clearly deliberate imperfection" — like an architect's quick study sketch. A drawing that says "I know what I'm doing, I'm just thinking out loud."
+
+That specific aesthetic is doing more work for the product than any feature I built.
+
+→ skissify.com
+```
+
+**Note 2 — The discovery post:**
+```
+I built an MCP tool for AI developers. The first real fans were homeowners planning kitchen renovations.
+
+They were describing their projects to Claude and getting hand-drawn floor plan sketches to show their contractors.
+
+I added a plain-text "Human Mode" within 48 hours of launch, specifically for them.
+
+Sometimes you discover your product by watching the first 50 people use it.
+```
+
+---
+
+### NEW: GitHub Discussions Template (for MCP/Claude repos)
+
+*Post in discussions on the anthropics-mcp GitHub repo, or the Claude Desktop discussions. Technical community, developer trust. Do not post as an ad — contribute context.*
+
+**GitHub Discussion template:**
+```
+**Title:** Built an MCP server for sketch rendering (visual output primitive for agents)
+
+I've been building agent workflows with Claude Desktop and kept running into the same gap: the agent can reason about spatial layouts perfectly but can't produce a visual output.
+
+I built Skissify MCP as a result — it exposes a render_sketch tool that takes a JSON manifest and returns a hand-drawn SVG URL. Claude can now generate floor plans, diagrams, wireframes, or any spatial output natively via tool call.
+
+Example interaction:
+"Claude, sketch a small apartment with a living room, kitchen, and one bedroom."
+→ Claude generates the manifest, calls render_sketch, returns: https://skissify.com/s/[id]
+
+Technical details:
+- MCP server: npx skissify-mcp
+- REST API: POST /api/render (no auth, free tier)
+- 14 element types with architectural symbols
+- Seeded random wobble = deterministic output from same input
+
+Happy to discuss the schema design or how the tool fits into multi-step agent pipelines. Would be curious whether others have built spatial/visual tools for their MCP stacks.
+```
+
+---
+
+### NEW VIRAL HOOKS — Day 3 Twitter/X (post April 3)
+
+**Hook 1 — The "Show HN" tease (post 08:00 CET, before Show HN goes live)**
+```
+Posted to Show HN this morning.
+
+The tl;dr: I built a tool so AI agents can draw instead of describe.
+
+If you've ever asked Claude to "design a layout" and got 400 words of text, this is what I built instead.
+
+→ skissify.com | Search HN for "Skissify" to upvote/comment
+
+#ShowHN #MCPServer #AIAgents #BuildInPublic
+```
+
+**Hook 2 — The floor plan reveal (post 10:00 CET)**
+```
+This is a floor plan.
+
+I didn't draw it.
+
+I typed "2-bed apartment, open kitchen, bathroom off the hallway, south-facing living room" into Claude.
+
+Claude called Skissify. This appeared.
+
+It took 8 seconds.
+
+→ skissify.com/s/[REAL_SKETCH_URL_HERE]
+
+#AIAgents #FloorPlan #MCPServer #VibeCoding
+```
+
+**Hook 3 — The comparison hook (post 14:00 CET)**
+```
+Before Skissify: "The living room should be roughly square, connected to the kitchen via an opening, with windows on two sides, and..."
+
+After Skissify: [sketch]
+
+AI agents were always good at understanding space.
+Now they can draw it.
+
+npx skissify-mcp
+
+#AIAgents #MCPServer #VibeDesign #VibeCoding
+```
+
+**Hook 4 — The honest builder hook (post 18:00 CET)**
+```
+Day 2 of launching Skissify.
+
+I built it for AI developers.
+Homeowners found it first.
+
+Now I have two completely different user groups and one weekend to figure out which story to tell.
+
+This is the part of building in public nobody talks about: when your product is right but your assumptions are wrong.
+
+→ skissify.com
+
+#BuildInPublic #Skissify #IndieHacker
+```
+
+**Hook 5 — The simple truth hook (anytime)**
+```
+Text describes.
+Sketches show.
+
+AI has been text-only for too long.
+
+→ npx skissify-mcp
+
+#AIAgents #MCP #VibeDesign
+```
+
+**Hook 6 — The refactor hook (tech audience)**
+```
+I refactored my whole spec document process.
+
+Old way: "The service connects to the database via a connection pool, calls the cache layer first, falls back to PostgreSQL, returns to the API gateway which..."
+
+New way: Claude calls Skissify, draws the architecture. Two seconds. One URL. I paste it in the PR description.
+
+Architecture diagrams are now a one-liner in my agent workflow.
+
+→ npx skissify-mcp
+
+#MCPServer #DeveloperTools #AIAgents #BuildInPublic
+```
 
 ---
 

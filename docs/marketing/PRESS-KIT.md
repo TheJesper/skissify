@@ -1,6 +1,35 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 112 (Day 2 Wednesday — Cursor integration angle, Product Hunt Vibe Coding category, vibecoding.app submission, new blog post: skissify-cursor-vibe-coding-visual-layer.md, #VibeCoding hashtag set, Dev.to MCP wave)*
+*Last updated: April 2, 2026 — Cycle 113 (Day 2 evening — Show HN final copy, Indie Hackers founder story, Lobsters, r/homeimprovement, Substack Notes, GitHub Discussions, 6 new viral hooks, new blog: show-hn-tomorrow-the-story-behind-the-pitch.md)*
+
+---
+
+## Day 2 Evening Status (April 2, 2026 — Wednesday, Cycle 113)
+
+| Item | Status |
+|------|--------|
+| Show HN final submission copy | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 113 — **POST TOMORROW April 3, 09:00–11:00 CET** |
+| Indie Hackers founder story post | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 113 — post NOW (overdue since Cycle 98) |
+| Lobsters submission copy | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 113 |
+| r/homeimprovement post | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 113 |
+| Substack Notes posts (2 variants) | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 113 |
+| GitHub Discussions template | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 113 |
+| 6 new viral Twitter/X hooks for Day 3 | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 113 |
+| Blog: "Show HN tomorrow — the story behind the pitch" | ✅ **NEW** — `blog/show-hn-tomorrow-the-story-behind-the-pitch.md` |
+| MCP Discord #showcase | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 111 — P0 |
+| Smol Launch | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 111 — P0 |
+| r/vibecoding | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 108 |
+| AlternativeTo | ⚠️ **OVERDUE** — 10 min, permanent SEO |
+| SaaSHub | ⚠️ **OVERDUE** — 10 min, permanent SEO |
+| Demo video | ⚠️ **P0 FOREVER** — blocks all video channels |
+| Email drip sequence | ⚠️ **IMPLEMENT** — 3 emails written in Cycle 110 |
+
+**Day 2 evening P0 sequence:**
+1. Post Indie Hackers NOW (5 min, overdue)
+2. Post MCP Discord #showcase (5 min, copy in Cycle 111)
+3. Post r/vibecoding (5 min, copy in Cycle 108)
+4. Submit Smol Launch (10 min, copy in Cycle 111)
+5. Set alarm for 09:00 CET tomorrow → paste Show HN (Cycle 113)
 
 ---
 
