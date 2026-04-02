@@ -1,10 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { PaperType, ToolType, PAPER_SIZES, FONT_OPTIONS, SkissifyFont, RenderStyle, RENDER_STYLE_OPTIONS, BlueprintMetadata, SketchElement } from "@/lib/types";
 import ElementThumbnailPanel from "./ElementThumbnailPanel";
 import ElementsListPanel from "./ElementsListPanel";
 import LayersPanel from "./LayersPanel";
+
+// ── Collapsible Section State (persisted to localStorage) ────────────────────
+
+const LS_KEY = "skissify-panel-collapsed";
+
+/** Load collapsed-section ids from localStorage (gracefully handles SSR/JSON errors). */
+function loadCollapsedSections(): Set<string> {
+  if (typeof window === "undefined") return new Set();
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return new Set();
+    const arr = JSON.parse(raw) as string[];
+    return new Set(Array.isArray(arr) ? arr : []);
+  } catch {
+    return new Set();
+  }
+}
+
+/** Persist collapsed-section ids to localStorage. */
+function saveCollapsedSections(ids: Set<string>): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(LS_KEY, JSON.stringify(Array.from(ids)));
+  } catch {
+    // ignore quota errors
+  }
+}
 
 interface ControlPanelProps {
   paper: PaperType;
@@ -675,10 +702,30 @@ export default function ControlPanel({
     return c.toLowerCase();
   };
   const activeInkColor = normalizeColor(inkColor);
+
+  // ── Collapsible section state ────────────────────────────────────────────
+  // Initialise from localStorage on first render; fall back to empty Set (all open)
+  const [collapsedSections, setCollapsedSections] = useState<Set<string>>(() => loadCollapsedSections());
+
+  const toggleSection = useCallback((id: string) => {
+    setCollapsedSections((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      saveCollapsedSections(next);
+      return next;
+    });
+  }, []);
+
+  const isCollapsed = (id: string) => collapsedSections.has(id);
+
   return (
     <div className="w-[300px] min-w-[300px] flex flex-col overflow-y-auto" style={{ backgroundColor: "#eee8d5", borderRight: "1px solid #93a1a1", color: "#586e75" }}>
       {/* Paper */}
-      <Section title="Paper">
+      <Section title="Paper" collapsed={isCollapsed("paper")} onToggleCollapse={() => toggleSection("paper")}>
         <div className="flex gap-1.5">
           {paperTypes.map((p) => (
             <button
@@ -702,7 +749,7 @@ export default function ControlPanel({
 
       {/* Blueprint Title Block */}
       {paper === "blueprint" && onMetadata && (
-        <Section title="Title Block">
+        <Section title="Title Block" collapsed={isCollapsed("title-block")} onToggleCollapse={() => toggleSection("title-block")}>
           <div className="space-y-1.5">
             {([
               { key: "title", label: "Title", placeholder: "FLOOR PLAN" },
@@ -730,7 +777,7 @@ export default function ControlPanel({
       )}
 
       {/* Tool */}
-      <Section title="Tool">
+      <Section title="Tool" collapsed={isCollapsed("tool")} onToggleCollapse={() => toggleSection("tool")}>
         <div className="flex gap-1.5">
           {toolTypes.map((t) => (
             <button
@@ -750,8 +797,8 @@ export default function ControlPanel({
 
       {/* Render Style */}
       {onRenderStyle && (
-        <Section title="Render Style">
-          <div className="grid grid-cols-3 gap-1">
+        <Section title="Render Style" collapsed={isCollapsed("render-style")} onToggleCollapse={() => toggleSection("render-style")}>
+          <div className="grid grid-cols-2 gap-1">
             {RENDER_STYLE_OPTIONS.map((s) => (
               <button
                 key={s.key}
@@ -772,7 +819,7 @@ export default function ControlPanel({
       )}
 
       {/* Ink Color */}
-      <Section title="Ink Color">
+      <Section title="Ink Color" collapsed={isCollapsed("ink-color")} onToggleCollapse={() => toggleSection("ink-color")}>
         <div className="grid grid-cols-4 gap-1.5 mb-1.5">
           {presetInkColors.map((c) => (
             <button
@@ -802,7 +849,7 @@ export default function ControlPanel({
       </Section>
 
       {/* Text Font */}
-      <Section title="Text Font">
+      <Section title="Text Font" collapsed={isCollapsed("text-font")} onToggleCollapse={() => toggleSection("text-font")}>
         <div className="space-y-2">
           <div>
             <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">Labels &amp; Text</label>
@@ -846,7 +893,7 @@ export default function ControlPanel({
       </Section>
 
       {/* Wobble & Human Touch */}
-      <Section title="Wobble & Human Touch">
+      <Section title="Wobble & Human Touch" collapsed={isCollapsed("wobble")} onToggleCollapse={() => toggleSection("wobble")}>
         <SliderControl
           label="Amplitude"
           value={amplitude}
@@ -861,7 +908,7 @@ export default function ControlPanel({
       </Section>
 
       {/* Paper Size */}
-      <Section title="Paper Size">
+      <Section title="Paper Size" collapsed={isCollapsed("paper-size")} onToggleCollapse={() => toggleSection("paper-size")}>
         <div className="flex gap-1.5 mb-2">
           {Object.entries(PAPER_SIZES).map(([key, size]) => (
             <button
@@ -904,7 +951,7 @@ export default function ControlPanel({
       </Section>
 
       {/* Selection Info */}
-      <Section title="Selection">
+      <Section title="Selection" collapsed={isCollapsed("selection")} onToggleCollapse={() => toggleSection("selection")}>
         <div className="text-[11px] text-[#657b83] space-y-0.5 font-mono">
           <div>
             <kbd className="bg-[#eee8d5] px-1 rounded text-[10px]">click</kbd> select,{" "}
@@ -1288,7 +1335,7 @@ export default function ControlPanel({
       {/* Add Elements */}
       {/* Grid Snap */}
       {onSnapGrid && (
-        <Section title="Grid Snap">
+        <Section title="Grid Snap" collapsed={isCollapsed("grid-snap")} onToggleCollapse={() => toggleSection("grid-snap")}>
           <div className="space-y-2">
             {/* On/Off toggle row */}
             <div className="flex items-center justify-between">
@@ -1331,7 +1378,7 @@ export default function ControlPanel({
 
       {/* Freehand Draw */}
       {onDrawModeChange && (
-        <Section title="Draw">
+        <Section title="Draw" collapsed={isCollapsed("draw")} onToggleCollapse={() => toggleSection("draw")}>
           <div className="flex flex-col gap-2">
             <button
               onClick={() => onDrawModeChange(!drawMode)}
@@ -1361,7 +1408,7 @@ export default function ControlPanel({
 
       {/* Elements List */}
       {elements && onSelectElement && onToggleVisibility && selectedElements && (
-        <Section title={`Elements (${elements.length})`}>
+        <Section title={`Elements (${elements.length})`} collapsed={isCollapsed("elements-list")} onToggleCollapse={() => toggleSection("elements-list")}>
           <ElementsListPanel
             elements={elements}
             selectedElements={selectedElements}
@@ -1373,7 +1420,7 @@ export default function ControlPanel({
 
       {/* Layers Panel */}
       {onAddLayer && onRemoveLayer && onRenameLayer && onSetLayerVisibility && (
-        <Section title="Layers">
+        <Section title="Layers" collapsed={isCollapsed("layers")} onToggleCollapse={() => toggleSection("layers")}>
           <LayersPanel
             layers={layers ?? []}
             elements={elements ?? []}
@@ -1387,7 +1434,7 @@ export default function ControlPanel({
         </Section>
       )}
 
-      <Section title="Add Element">
+      <Section title="Add Element" collapsed={isCollapsed("add-element")} onToggleCollapse={() => toggleSection("add-element")}>
         <ElementThumbnailPanel paper={paper} onAddElement={onAddElement} />
       </Section>
     </div>
@@ -1397,16 +1444,51 @@ export default function ControlPanel({
 function Section({
   title,
   children,
+  collapsed,
+  onToggleCollapse,
 }: {
   title: string;
   children: React.ReactNode;
+  /** When provided, the section is collapsible and shows a toggle chevron. */
+  collapsed?: boolean;
+  onToggleCollapse?: () => void;
 }) {
+  const isCollapsible = onToggleCollapse !== undefined;
   return (
-    <div className="px-3 py-2.5 border-b border-[#eee8d5]">
-      <h3 className="text-[10px] font-semibold uppercase tracking-wider text-[#93a1a1] mb-2">
-        {title}
-      </h3>
-      {children}
+    <div className="border-b border-[#eee8d5]">
+      <button
+        type="button"
+        onClick={isCollapsible ? onToggleCollapse : undefined}
+        className={`w-full flex items-center justify-between px-3 py-2.5 text-left ${
+          isCollapsible ? "cursor-pointer hover:bg-[#e8e0cc]/40 transition-colors" : "cursor-default"
+        }`}
+        aria-expanded={isCollapsible ? !collapsed : undefined}
+      >
+        <h3 className="text-[10px] font-semibold uppercase tracking-wider text-[#93a1a1]">
+          {title}
+        </h3>
+        {isCollapsible && (
+          <svg
+            width="10"
+            height="10"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-[#93a1a1] shrink-0 transition-transform duration-150"
+            style={{ transform: collapsed ? "rotate(-90deg)" : "rotate(0deg)" }}
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        )}
+      </button>
+      {!collapsed && (
+        <div className="px-3 pb-2.5 pt-0.5">
+          {children}
+        </div>
+      )}
     </div>
   );
 }

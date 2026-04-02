@@ -8140,3 +8140,189 @@ AMA about the launch, the April Fools timing decision, or the technical architec
 ---
 
 *Last updated: April 2, 2026 — Cycle 104 (04:36 CET — Day 2 Morning)*
+
+---
+
+## CYCLE 105 — DAY 2 THURSDAY 05:44 — r/WEBDEV + INDIE HACKERS + YOUTUBE + LINKEDIN + GITHUB + EMAIL OUTREACH
+
+*Context: Day 2, 05:44 CET. Three new blog posts written this cycle (why-hand-drawn-sketches-beat-figma-quick-ideas, how-ai-agents-draw-floor-plans-tutorial, skissify-vs-excalidraw-developer-comparison-2026). This cycle adds: r/webdev (API angle), Indie Hackers launch post (overdue since Cycle 98), YouTube video description, LinkedIn Day 2 founder story, GitHub Discussion template, AI newsletter pitch email, and expanded viral hook bank.*
+
+---
+
+### NEW PLATFORM: r/webdev — API-First Diagram Tool
+
+**Title:** Built a REST API for hand-drawn diagrams — POST JSON, get sketch URL, no auth
+
+**Body:**
+Got tired of Mermaid's templating limitations. Built something different: Skissify — a REST API for hand-drawn diagram generation. No account needed.
+
+```bash
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"paper":"cream","tool":"pencil","wobble":2,"elements":[
+    {"type":"rect","x":50,"y":50,"w":200,"h":100,"label":"API Gateway"},
+    {"type":"arrow","x1":150,"y1":150,"x2":150,"y2":220},
+    {"type":"rect","x":50,"y":220,"w":200,"h":100,"label":"App Server"},
+    {"type":"arrow","x1":150,"y1":320,"x2":150,"y2":390},
+    {"type":"rect","x":50,"y":390,"w":200,"h":100,"label":"Database"}
+  ]}'
+```
+
+Returns: `{"url": "https://skissify.com/sketch/abc123"}`
+
+Use cases:
+- Auto-generate architecture diagrams in CI/CD documentation
+- PR descriptions with visual architecture context
+- LLM agents that need visual output (the primary use case)
+- Any script that needs a "quick diagram" without opening a UI tool
+
+26 element types including floor plan architectural symbols (walls, doors, windows, stairs, furniture). MCP server: `npx skissify-mcp` for Claude Desktop / Cursor.
+
+https://skissify.com — free, no auth, <200ms
+
+Happy to discuss the rendering architecture or the schema design choices (the flat vs hierarchical JSON decision was interesting).
+
+---
+
+### INDIE HACKERS — Launch Post (OVERDUE SINCE CYCLE 98 — POST TODAY)
+
+**Title:** Launched on April 1 — here's what 24 hours taught me about unexpected audiences
+
+Launched Skissify yesterday (April 1 — deliberate; AI dev communities were active and less noisy than a normal Tuesday).
+
+**What it is:** REST API + MCP server for generating hand-drawn diagrams from JSON. The missing visual output primitive for LLM pipelines.
+
+**Who I built it for:** AI developers building Claude/LangChain/CrewAI agents who need visual output.
+
+**Who showed up on Day 1:**
+- AI developers (expected)
+- Homeowners sketching renovation ideas before contractor calls (not expected)
+- Dungeon Masters generating D&D maps from Claude prompts (very not expected)
+- Architecture students doing rapid concept sketches without Figma licenses (not expected)
+- n8n users adding it as an HTTP node in automation workflows (makes total sense in hindsight)
+
+**The technical thing I'd tell my past self:** Design JSON schemas for flat coordinates from day one. Hierarchical schemas + LLMs = ~40% valid output. Flat schemas (every element positioned in absolute paper-space) = ~94%. Schema flatness directly predicts LLM generation accuracy.
+
+**The April 1 strategy:** Every real startup avoids April 1 out of joke-fear. That creates a gap. My tagline ("JSON in. Hand-drawn sketch out.") doesn't read like a joke. The serious tech communities were active and less noisy. It worked.
+
+**What I'd do differently:** Record a demo video before launch. All the scripts were written. Still no video. Classic mistake.
+
+Free, no auth: skissify.com
+
+---
+
+### YOUTUBE VIDEO DESCRIPTION (ready for when demo is recorded)
+
+```
+Skissify: JSON In, Hand-Drawn Sketch Out — Complete Demo
+
+Give AI agents the ability to draw. Skissify is a REST API and MCP server that converts JSON manifests into hand-drawn style sketches — floor plans, architecture diagrams, system layouts, anything spatial.
+
+TIMESTAMPS:
+00:00 - What Skissify does (30 sec overview)
+00:30 - Add MCP server to Claude Desktop (1 minute setup)
+01:30 - Claude draws a floor plan from a text description
+02:30 - Claude draws a system architecture diagram
+03:30 - Using the REST API directly with curl
+04:30 - JSON schema explained (why flat coordinates beat hierarchical)
+05:30 - Human mode: draw in the browser without writing code
+
+TRY FREE (no account): https://skissify.com
+FOR AGENT DEVELOPERS: https://skissify.com/for-agents
+MCP SETUP: npx skissify-mcp
+
+WHAT YOU CAN DRAW: Floor plans, architecture diagrams, D&D maps, system diagrams, wireframes, room layouts, technical sketches, site maps
+
+#AI #MCP #FloorPlan #AIAgents #Claude #DevTools #BuildInPublic #Skissify #Diagram
+```
+
+---
+
+### LINKEDIN — Day 2 Founder Update (post Thursday 10:00 CET)
+
+24 hours after launching Skissify.
+
+I built it for AI developers — a REST API + MCP server that gives AI agents a visual output primitive. LLMs can reason spatially but couldn't *draw*. Skissify closes that gap.
+
+What I didn't expect: the non-developer audiences who showed up on Day 1.
+
+A homeowner sketching a kitchen renovation before calling a contractor. An architecture student doing rapid concept sketches without paying for Figma. A dungeon master asking Claude to generate a D&D map and sharing the result in their game group.
+
+The lesson: I built an API for a very specific audience. But "hand-drawn sketch from structured data" turns out to have a broader surface area than anticipated.
+
+Skissify is free to try. No account. POST JSON, get sketch URL.
+
+If you're working on anything where quick spatial sketches are useful — for your team, your agents, or your own workflow — worth 5 minutes.
+
+skissify.com
+
+#AIAgents #MCP #BuildInPublic #ProductLaunch #DevTools
+
+---
+
+### GITHUB DISCUSSION TEMPLATE — MCP Repos
+
+Post in: modelcontextprotocol/servers Discussions, anthropics/claude-desktop Issues, popular MCP server lists
+
+```
+New MCP server: Skissify — gives Claude the ability to draw hand-drawn sketches
+
+npx skissify-mcp
+
+Setup in claude_desktop_config.json:
+{"mcpServers": {"skissify": {"command": "npx", "args": ["skissify-mcp"]}}}
+
+Use cases:
+- Ask Claude to sketch a floor plan → shareable URL
+- Ask Claude to diagram a system architecture → hand-drawn SVG
+- Any agent pipeline that needs spatial/visual output
+
+REST API: POST https://skissify.com/api/render — no auth, free
+Docs: https://skissify.com/for-agents
+```
+
+---
+
+### AI NEWSLETTER PITCH — Template
+
+**Subject:** New MCP tool for newsletter: give Claude the ability to draw (Skissify)
+
+Hi [Name],
+
+New tool worth mentioning for your readers building with MCP:
+
+Skissify — REST API + MCP server that gives AI agents a drawing capability. `npx skissify-mcp` → Claude can sketch floor plans, architecture diagrams, anything spatial. Returns shareable URLs.
+
+Technical hook your readers will find interesting: flat JSON schemas produce 94% accurate LLM-generated renders. Hierarchical schemas drop to ~40%. It's become a useful design principle for any JSON-first AI tool.
+
+Free, no auth, 30+ element types.
+
+→ skissify.com | press@skissify.com
+
+**Send to:** Lenny's Newsletter, TLDR Tech, The Batch (deeplearning.ai), Import AI, Ben's Bites, Superhuman AI
+
+---
+
+### Viral Hook Bank — Cycle 105 Additions
+
+**"The API that shouldn't need to exist":**
+> "Skissify is an API that technically shouldn't need to exist. LLMs can reason spatially. They should produce spatial artifacts. The fact that they couldn't was a gap in the output format layer. Skissify fills it."
+
+**"Sketch before you spec":**
+> "Best workflow change in years: sketch before you spec. 30 seconds to capture spatial intent, then write requirements. The sketch stays anchored; the spec evolves around it."
+
+**"Contractors understand sketches, not specs":**
+> "Contractors don't read specs. They read sketches. A hand-drawn floor plan communicates intent in a way no text description does. Skissify makes that sketch a 4-second operation."
+
+**"Your agent's missing output type":**
+> "Your AI agent can write code, search the web, send emails. Can it draw? Skissify adds drawing to the agent toolkit — one MCP server, zero auth."
+
+**"The napkin sketch for the API age":**
+> "The napkin sketch is a communication format, not a design artifact. Skissify is the napkin sketch for the API age: structured enough to be generated programmatically, rough enough to invite feedback."
+
+**"A2A visual handoff":**
+> "A2A pipelines pass data between agents. Sometimes the data is spatial. Skissify gives agents a way to encode spatial intent that downstream agents — and humans — can actually read."
+
+---
+
+*Last updated: April 2, 2026 — Cycle 105 (05:44 CET — Day 2, r/webdev + Indie Hackers + YouTube + LinkedIn + GitHub + email outreach)*

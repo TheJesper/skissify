@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 103 (Day 2 Thursday 02:20 CET — Bluesky/Mastodon added, r/programming post, r/homeautomation, Dev.to schedule, Week-1 Saturday hooks, 3 new blog posts)*
+*Last updated: April 2, 2026 — Cycle 105 (Day 2 Thursday 05:44 CET — Day 2 status updated, screenshots list expanded, Cycle 105 new blog posts added, r/webdev + Indie Hackers + YouTube + LinkedIn + GitHub copy written in SOCIAL-MEDIA.md)*
 
 ---
 
@@ -19,37 +19,41 @@
 
 ---
 
-## Day 2 Status (April 2, 2026 — Thursday, Cycle 103)
+## Day 2 Status (April 2, 2026 — Thursday, Cycle 105)
 
 | Item | Status |
 |------|--------|
 | Product Hunt | ✅ Live — update with final Day 1 vote count |
-| Demo video (60s screen record) | ⚠️ TikTok script written (Cycle 102) — RECORD TODAY (overdue since Cycle 82) |
+| Demo video (60s screen record) | ⚠️ **CRITICAL OVERDUE** — scripts ready since Cycle 82, YouTube desc ready (Cycle 105) — RECORD TODAY |
 | Demo GIF (10s) | ⚠️ Script ready — RECORD TODAY |
 | Social OG banner | ⚠️ Generate — 1200x630px |
 | Press inquiries inbox | ✅ press@skissify.com active |
-| Bluesky / Mastodon handle claimed | ⏳ Confirm handles |
-| n8n community post | ⏳ Post — copy in SOCIAL-MEDIA.md Cycle 101 |
+| Bluesky posts (3 variants) | ⏳ Copy in SOCIAL-MEDIA.md Cycle 103 |
+| Mastodon/Fosstodon post | ⏳ Copy in SOCIAL-MEDIA.md Cycle 103 |
+| r/programming flat schema post | ⏳ Copy in SOCIAL-MEDIA.md Cycle 103 |
+| r/homeautomation post | ⏳ Copy in SOCIAL-MEDIA.md Cycle 103 |
+| Dev.to cross-post schedule | ⏳ 5 posts queued — SOCIAL-MEDIA.md Cycle 103 |
+| Cursor Discord #show-and-tell | ⏳ Copy in SOCIAL-MEDIA.md Cycle 104 — post 10:00 CET |
+| DevHunt submission | ⏳ Copy in SOCIAL-MEDIA.md Cycle 104 — 10-min task |
+| Peerlist launch post | ⏳ Copy in SOCIAL-MEDIA.md Cycle 104 — post 09:00 CET |
+| Twitter/X Day 2 morning thread | ⏳ Copy in SOCIAL-MEDIA.md Cycle 104 — post 08:00 CET |
+| r/SideProject Day 2 update | ⏳ Copy in SOCIAL-MEDIA.md Cycle 104 — post 09:00 CET |
+| r/webdev API post | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 105 — post 11:00 CET |
+| Indie Hackers launch post | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 105 — POST TODAY (overdue since Cycle 98) |
+| YouTube video description | ⏳ **NEW** — written (Cycle 105), ready for when video is recorded |
+| LinkedIn Day 2 founder update | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 105 — post 10:00 CET |
+| GitHub Discussion (MCP repos) | ⏳ **NEW** — template in SOCIAL-MEDIA.md Cycle 105 |
+| AI newsletter pitch emails | ⏳ **NEW** — template in SOCIAL-MEDIA.md Cycle 105 — send today |
+| Anthropic Discord #showcase | ⏳ Copy in SOCIAL-MEDIA.md Cycle 102 |
+| LangChain Discord #tools | ⏳ Copy in SOCIAL-MEDIA.md Cycle 102 |
+| r/LocalLLaMA | ⏳ Copy in SOCIAL-MEDIA.md Cycle 99 |
+| n8n community + r/automation | ⏳ Copy in SOCIAL-MEDIA.md Cycle 101 |
 | glama.ai submission | ⏳ 20-min task — copy in SOCIAL-MEDIA.md Cycle 101 |
-| r/LocalLLaMA | ⏳ Post 09:00 CET — copy in SOCIAL-MEDIA.md Cycle 99 |
-| r/ChatGPT homeowner post | ⏳ Post 10:00 CET — copy in SOCIAL-MEDIA.md Cycle 99 |
-| r/automation + r/n8n | ⏳ Copy in SOCIAL-MEDIA.md Cycle 101 |
-| r/HomeImprovement | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
-| r/Notion | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
-| Anthropic Discord #showcase | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
-| LangChain Discord #tools | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
-| CrewAI Discord #showcase | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
-| HuggingFace Discord #show-and-tell | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 102 |
-| TikTok / Instagram Reels | ⏳ Scripts written (Cycle 102) — record today |
-| Indie Hackers launch post | ⏳ OVERDUE — copy in SOCIAL-MEDIA.md Cycle 98 |
-| Bluesky posts (3 variants) | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
-| Mastodon/Fosstodon post | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
-| r/programming flat schema post | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
-| r/homeautomation post | ⏳ NEW — copy in SOCIAL-MEDIA.md Cycle 103 |
-| Dev.to cross-post schedule | ⏳ Schedule — 5 posts listed in SOCIAL-MEDIA.md Cycle 103 |
-| Week-1 Saturday Twitter thread | ⏳ Prep now — copy in SOCIAL-MEDIA.md Cycle 103 |
+| TikTok / Instagram Reels | ⏳ Scripts written (Cycle 102) — record demo video first |
 
-**Today's #1 priority:** Record the demo video. All TikTok/Reels scripts are ready (Cycle 102 blog + SOCIAL-MEDIA.md). A 15-second silent screen capture of Claude drawing a floor plan via MCP will outperform every text post by 5–10x across TikTok, Reels, and Twitter/X.
+**Today's #1 priority:** Record the demo video. YouTube description is now written (Cycle 105). A 15-second silent screen capture of Claude drawing a floor plan will outperform every text post by 5-10x.
+
+**Today's #2 priority:** Post to Indie Hackers (copy in Cycle 105). Overdue since Cycle 98.
 
 ---
 
