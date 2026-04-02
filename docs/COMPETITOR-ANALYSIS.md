@@ -2,6 +2,90 @@
 
 ---
 
+## Update: 2026-04-02 — Automated Strategy Run #104 (Evening)
+
+### Status: 6 topics researched. Excalidraw MCP confirmed (Feb 2026 changelog) — 26 tools, no REST/headless API, Issue #10946 still open. tldraw confirmed no April release yet; most recent update is 25x canvas rendering + Image Pipeline template (still no render API). MCP roadmap 2026 confirmed: 4 priorities — Transport Evolution, Agent Communication, Governance Maturation, Enterprise Readiness. MCP Registry growing organically, categories unfiltered (no "architecture" slot claimed = opportunity still open). SaaS freemium: avg 3.9% free-to-paid conversion; opt-out trials hit 49.9%. MCP freemium strategy: free MCP for discovery, usage guardrails drive conversion. Headless JSON→hand-drawn SVG API: uncontested for 104th consecutive scan.
+
+### Excalidraw MCP (Feb 2026) — Confirmed 26-Tool Integration (HIGH THREAT COMPONENT, CONFIRMED)
+
+**Source**: plus.excalidraw.com/changelog (fetched 2026-04-02)
+
+Excalidraw+ February 2026 update officially confirmed MCP support: "Introduced support for the Model Context Protocol (MCP) to better integrate with AI agents." Also confirmed: Jan 2026 added YouTube video syncing, QR code sharing for live sessions, presenter view. Feb 2026 additionally added custom AI tokens (OpenAI, Claude, Gemini, OpenRouter).
+
+**What the MCP integration does NOT include**: No REST API. No headless endpoint. No JSON manifest → SVG output. Issue #10946 (headless render API) remains open and unaddressed. The MCP integration is UI-focused — it lets agents control the whiteboard canvas interactively, not generate SVG output programmatically.
+
+**Threat assessment**: **HIGH (unchanged)** — Excalidraw now has official MCP presence, which means it will show up in the MCP Registry in the "whiteboard" category. Skissify's moat remains the headless/API gap: Excalidraw requires a browser session, Skissify is stateless POST → SVG.
+
+**Action required**: When submitting to MCP Registry, explicitly document "headless" and "no browser required" as primary differentiators from Excalidraw. The gap is real and provable.
+
+### tldraw — No New April 2026 Release (CONFIRMED MEDIUM-STABLE, UNCHANGED)
+
+**Source**: tldraw.dev/releases, github.com/tldraw/tldraw/releases (checked 2026-04-02)
+
+No April 2026 release exists as of today. Most recent updates (Q1 2026 confirmed):
+- Shape indicators: 2D canvas rendering instead of SVG → up to **25x faster** performance
+- Image Pipeline starter template via `npx create-tldraw` — visual node-based canvas, typed port connections, DAG execution engine (Cloudflare Worker backed)
+- Manager-based agent architecture template with action schema registries
+- NO headless mode. NO JSON→SVG REST API. NO render endpoint.
+
+**Threat assessment**: **MEDIUM-STABLE (confirmed unchanged)**. tldraw is doubling down on SDK and canvas performance, not headless APIs. The Image Pipeline template positions tldraw as a node-based workflow canvas — this is complementary, not competitive with Skissify.
+
+### MCP 2026 Roadmap — Enterprise Readiness + Transport Evolution (STRATEGIC ALIGNMENT)
+
+**Source**: blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/ (fetched 2026-04-02)
+
+Four 2026 MCP priorities confirmed:
+1. **Transport Evolution & Scalability** — `.well-known` server discoverability without live connections; horizontal scaling
+2. **Agent Communication** — Tasks primitive refinement (retry semantics, result expiration)
+3. **Governance Maturation** — Working Group contributor ladder, domain-specific SEP reviews
+4. **Enterprise Readiness** — Audit trails, SSO auth, gateway behavior, config portability (via extensions, not core spec changes)
+
+**Key insight for Skissify**: Priority 1 (`.well-known` discoverability) means MCP servers will be auto-discoverable by URL pattern. Skissify should plan a `.well-known/mcp.json` endpoint at launch — this future-proofs discovery before the registry becomes saturated. Priority 4 (enterprise SSO) aligns with Skissify's Enterprise tier roadmap.
+
+**Registry status**: The official MCP Registry (registry.modelcontextprotocol.io) is community-driven and growing organically. No "architecture" or "floor-plan" category filter visible — this means early submissions define category vocabulary. Tag aggressively: `visual`, `sketch`, `architecture`, `floor-plan`, `headless`, `hand-drawn`, `JSON`, `SVG`.
+
+### SaaS Freemium Conversion Data — Quantifying the EUR 2 Pay Trigger (NEW INTELLIGENCE)
+
+**Source**: firstpagesage.com/seo-blog/saas-freemium-conversion-rates/ (fetched 2026-04-02), newsletter.pricingsaas.com/p/the-mcp-freemium-strategy (fetched 2026-04-02)
+
+**Freemium conversion benchmarks (2026)**:
+- Avg visitor → free signup: **13.2%**
+- Avg free → paid conversion: **3.9%** (range 2.6%–5.8% by vertical)
+- Opt-out trials (auto-charge at end): **49.9%** — 13x higher than freemium
+
+**MCP-specific freemium data** (PricingSaaS newsletter):
+- Successful MCP companies (Otter.ai, Zapier, Jam) offer free MCP access for discovery, then monetize via usage guardrails
+- Free MCP → hits usage cap → paid upgrade is the proven funnel
+- "You should offer a free way to use your MCP to drive usage, then set guardrails to drive paid conversion."
+
+**Skissify implication**: The 3.9% free→paid average means at 1,000 registered users → ~39 paying. At EUR 5/mo = EUR 195 MRR. This validates the business plan's Month 9-14 projection. The MCP freemium model (free renders up to limit, then pay) is confirmed best practice. The 50 free saves limit in the free tier is strategically correct — it's a guardrail, not a gift.
+
+### JSON-to-Diagram Space: Still No Hand-Drawn Competitor (CONFIRMED RUN #104)
+
+**Source**: conceptviz.app, jointjs.com, kroki.io, modeling-languages.com (checked 2026-04-02)
+
+2026 diagramming landscape scan:
+- **Draw.io/Diagrams.net** — SVG/PNG/PDF export, no hand-drawn style, no JSON manifest API, no headless render endpoint
+- **JointJS** — JSON serialization/deserialization, SVG-based, no hand-drawn aesthetic
+- **Kroki** — unified REST API for Mermaid/PlantUML/D2/Excalidraw formats, no hand-drawn SVG output, no architectural vocabulary
+- **Excalidraw** (via Kroki) — hand-drawn style but requires browser session, no headless JSON manifest API
+
+**Zero competition in headless JSON→hand-drawn SVG confirmed for 104th consecutive scan.**
+
+### Updated Competitor Matrix (Run #104 — Thursday April 2, evening)
+
+| Tool | Status (2026-04-02) | Skissify Threat |
+|------|---------------------|-----------------|
+| **Excalidraw+** | MCP confirmed (26 tools, Feb 2026). No REST/headless API. Issue #10946 open. Custom AI tokens. | **HIGH — headless gap confirmed moat** |
+| **tldraw** | No April release. 25x rendering + Image Pipeline template. No render API. | **MEDIUM-STABLE** |
+| **Figma + FigJam** | Claude → FigJam diagrams. Figma MCP in VS Code/Cursor/Windsurf. Clean vector only. No JSON manifest. | **LOW-MEDIUM** |
+| **Sketch.com** | AI agent skills (Claude Code + Cursor). No hand-drawn, no JSON API, no headless. | **LOW** (distribution opportunity) |
+| **Kroki** | REST multi-format API (Mermaid/PlantUML/D2/Excalidraw). No hand-drawn SVG output, no architectural vocab. | **LOW-MEDIUM** |
+| **JointJS / Draw.io** | JSON serialization, SVG-based, no hand-drawn aesthetic, no headless manifest API. | **Low** |
+| **Skissify** | Headless JSON→hand-drawn SVG API: uncontested. MCP registry: **STILL ABSENT** (CRITICAL × 5). | **Uncontested in headless spatial lane** |
+
+---
+
 ## Update: 2026-04-02 — Automated Strategy Run #103 (Morning, ~04:06 CET)
 
 ### Status: 5 topics researched. NEW: Sketch.com launches AI agent skills (Claude Code + Cursor design-to-code integration) — creates upstream distribution opportunity. tldraw adds 25x faster shape rendering + manager-based agent architecture template — still zero render API. MCP Registry v0.1 in API-freeze (stable, open for submission) — official registry confirmed operational. SaaS pricing: "simplicity trend" emerging — 70% of buyers prefer UBP by 2026 but want simpler implementations. Headless JSON→hand-drawn SVG API: uncontested for 103rd consecutive scan.

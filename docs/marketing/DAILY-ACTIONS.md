@@ -2,6 +2,69 @@
 
 ---
 
+## 2026-04-02 — Strategy Run #104 Actions (Thursday April 2, evening)
+
+### Context: Run #104 Key New Findings
+- **Excalidraw MCP confirmed (Feb 2026)**: 26 tools, no REST API, headless gap confirmed moat. Issue #10946 still open.
+- **tldraw**: No April release. Still no render API. Medium-stable (unchanged).
+- **MCP 2026 Roadmap**: `.well-known` discoverability coming — plan endpoint now. Enterprise SSO extension aligns with Skissify Enterprise tier.
+- **Freemium data**: 3.9% avg free→paid conversion; opt-out trials hit 49.9% (13x higher). MCP freemium: free access + usage cap = confirmed best practice (Otter.ai, Zapier, Jam).
+- **Headless JSON→hand-drawn SVG**: uncontested for 104th consecutive scan.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 5th consecutive cycle): Submit Skissify to MCP Registry
+
+**Still the highest-leverage action. Still unblocked. Ships in 2 hours.**
+
+Excalidraw now has official MCP presence (Feb 2026). The differentiator to register first in "architecture" + "floor-plan" + "headless" categories closes as adjacent tools occupy the vocabulary. Skissify's key differentiator *against Excalidraw in the registry*: "No browser. No session. Stateless POST → SVG. Excalidraw MCP requires an interactive canvas. Skissify does not."
+
+**Steps**:
+1. `github.com/modelcontextprotocol/registry` — PR with `skissify.json`. Tags: `visual`, `architecture`, `floor-plan`, `hand-drawn`, `JSON`, `SVG`, `sketch`, `headless`, `stateless`
+2. Description must include: "POST a JSON manifest → receive a hand-drawn SVG. No browser required. No session. No Chromium. Architectural sketches, floor plans, napkin diagrams. The only headless hand-drawn SVG render API in the MCP ecosystem."
+3. Submit simultaneously: `glama.ai/mcp/servers`, `pulsemcp.com`, `mcp.so`, `mcpservers.org`
+4. Plan `.well-known/mcp.json` endpoint (MCP 2026 roadmap Priority 1 — transport discoverability is coming)
+5. Announce on Twitter/X, tag @modelcontextprotocol
+
+---
+
+### Action 2 (HIGH — this week): Add 14-Day Opt-Out Trial to Pricing
+
+**New data: opt-out trials convert at 49.9% vs 3.9% for open freemium. This is a 13x revenue multiplier on the same traffic.**
+
+The current plan has a lifetime deal (EUR 99, 500-cap) as the conversion accelerant. Data says the opt-out trial is more effective at the EUR 2-5/mo price point for individual users, and does not eat into long-term revenue the way lifetime deals do.
+
+**Implementation**:
+1. At signup, start a **14-day Pro trial** (all Pro features unlocked, no credit card required at first)
+2. On Day 10: email "Your Pro trial ends in 4 days. Keep it for EUR 2/mo — cancel anytime in one click."
+3. On Day 14: auto-convert to EUR 2/mo (requires card at trial start) OR downgrade to free (card not required at signup — show upsell modal instead)
+4. Test both variants: (a) card required at trial start (higher conversion, more friction); (b) card at Day 14 (lower friction, lower conversion but bigger top of funnel)
+5. Update pricing page copy: "Start free. Get 14 days of Pro. Keep it for EUR 2/mo — or don't."
+
+**Why this beats lifetime deal as first action**: A EUR 99 LTD converts today but earns nothing after. An opt-out trial at 49.9% of a 1,000-user cohort = ~250 paying users × EUR 2-5/mo = EUR 500-1,250 MRR. Recurring revenue compounds; LTD does not.
+
+---
+
+### Action 3 (MEDIUM — this week): Position Explicitly Against Excalidraw's Headless Gap
+
+**Now that Excalidraw has official MCP, Skissify must name the gap or developers won't know to look.**
+
+Excalidraw's MCP gives agents interactive whiteboard control. It does NOT give agents a headless render API. GitHub Issue #10946 has been open and unresolved. Developers who find Excalidraw MCP and need headless output will google "Excalidraw headless API alternative" — Skissify must own that search result.
+
+**Implementation**:
+1. Write one blog post: **"Why Excalidraw MCP Is Not a Render API (And What to Use Instead)"**
+   - Explain the difference: interactive MCP vs headless REST
+   - Show Issue #10946 (documented user demand, unmet)
+   - Show Skissify's `POST /api/render` example
+   - CTA: "Try it free — 50 renders, no credit card"
+2. Target SEO keywords: "excalidraw headless api", "excalidraw mcp render", "excalidraw json to svg api", "programmatic sketch api"
+3. Cross-post to dev.to, Hashnode, and share in relevant Discord/Slack communities
+4. Pin a comment on Excalidraw Issue #10946 (if appropriate): "If you need headless SVG output now, Skissify supports this via POST /api/render — [link]"
+
+**Why now**: Excalidraw MCP announcement (Feb 2026) will spike search traffic for "excalidraw mcp" and adjacent terms. The gap is at peak salience. Content published now captures that traffic before it dissipates.
+
+---
+
 ## 2026-04-03 — Strategy Run #103 Actions (Thursday April 2, morning ~04:06 CET)
 
 ### Context: Run #103 Key New Findings

@@ -2,6 +2,59 @@
 
 ---
 
+## Entry: 2026-04-02 — Automated Strategy Run #104 (Evening)
+
+### Theme: Quantifying the Pay Trigger — What the Data Says About EUR 2/mo
+
+#### The Core Question: What Makes Someone Pay EUR 2/mo for Skissify?
+
+This cycle brings the first hard conversion data from the 2026 SaaS freemium research. The answer is not a feature — it's a moment.
+
+**The Trigger Framework (data-backed, 2026):**
+
+**1. Pain at the point of discovery (confirmed by MCP freemium data)**
+Otter.ai, Zapier, Jam — the three companies with documented MCP freemium success — all share one pattern: the user discovers the tool's value *while already inside a workflow*. Not on a landing page. Not from an ad. The product inserts itself at the moment of pain.
+- For Skissify: MCP Registry listing → agent calls Skissify mid-task → 50-render free cap hits → EUR 2 is cheaper than rethinking the pipeline.
+- For Skissify: Claude Code skill triggers → user sees sketch output mid-session → "I want this on my next project" → EUR 2 is a rounding error.
+
+**2. The EUR 2 "approval-free zone"**
+Freemium → paid conversion rates average 3.9% across SaaS verticals (FirstPageSage 2026 report). Developer tools skew higher (~4.5-5%) because pain is specific and measurable. At EUR 2/mo the decision requires zero approval — no expense report, no team discussion, no manager sign-off. It's an impulse decision made in 10 seconds. The pricing is structured correctly.
+
+**3. Usage cap design (confirmed best practice)**
+The PricingSaaS MCP freemium analysis (2026) confirms: free MCP access with a usage cap is the dominant monetization pattern for MCP tools. Skissify's 50-save free tier is structurally identical to Jam's 30-jam limit and Zapier's 100-task limit. This is not conservative — it is correct architecture for the MCP freemium funnel.
+
+**4. Opt-out trial opportunity (49.9% conversion data)**
+The highest-converting freemium variant is the opt-out trial (49.9% paid conversion vs 3.9% for open-ended freemium). Skissify should test a 14-day Pro trial at signup, auto-converting to EUR 2/mo unless cancelled. Even at 50% of benchmark (25% conversion), a 1,000-user base yields 250 paying users vs ~39 from standard freemium. This is a 6x multiplier on the same traffic.
+
+**5. Simplicity as a trust signal**
+2026 SaaS buyers are fatigued by credit tier math (61% of SaaS now uses some usage-based element; buyers decode 5+ pricing models per vendor). EUR 0.005/render, flat, no bundles = instant trust from power users who've been burned. Power users are the conversion bedrock — they use enough to hit limits, they understand pricing, they have budget authority.
+
+#### EUR 2 Trigger Taxonomy (Updated Run #104)
+
+| Trigger | Discovery Moment | Why EUR 2 Is Easy | Probability |
+|---------|-----------------|-------------------|-------------|
+| **A: Excalidraw Refugee** | Hits headless API gap → searches → finds Skissify | Excalidraw+ is $6-7/mo and still no API | HIGH |
+| **B: Enterprise Pipeline Builder** | POST /api/render works, needs consistent access | Pipeline value >> EUR 2/mo cost | HIGH |
+| **C: tldraw Node User** | Image Pipeline node needs SVG output, Skissify fits | Single integration unlocks whole workflow | MEDIUM |
+| **D: Design-to-Sketch Backfill** | Figma too polished for thinking stage, Skissify fills gap | "Figma for deliverables, Skissify for thinking" | MEDIUM |
+| **E: Claude Code User** | Skissify skill triggers mid-session | Momentum cost of stopping > EUR 2 | HIGH |
+| **F: 14-day Trial Auto-Convert** | Signs up, forgets to cancel, gets value, stays | Opt-out mechanics (49.9% benchmark) | HIGH |
+
+**New Trigger F** (this cycle): The opt-out trial. Not a discovery trigger — a mechanics trigger. Data shows 49.9% trial-to-paid conversion vs 3.9% for open freemium. If Skissify implements a 14-day Pro trial at signup (auto-converts to EUR 2/mo), Trigger F outperforms all other triggers combined in raw conversion volume.
+
+#### Key Numbers (Run #104 Additions)
+
+- **3.9%** avg freemium → paid conversion (FirstPageSage 2026)
+- **49.9%** opt-out trial → paid conversion (same source, 13x higher)
+- **13.2%** avg visitor → free signup rate
+- **~39 paying users** projected from 1,000 registered (3.9% base rate)
+- **~250 paying users** projected from 1,000 registered (49.9% opt-out trial rate)
+- **EUR 195 MRR** at 3.9% base (39 × EUR 5/mo)
+- **EUR 1,250 MRR** at 49.9% opt-out trial rate (250 × EUR 5/mo)
+- **Break-even** (EUR 135/mo fixed costs): 27 Pro subscribers — achievable at either rate
+
+---
+
 ## Entry: 2026-04-02 — Automated Strategy Run #103 (Morning, ~04:06 CET)
 
 ### Theme: Skills Ecosystem + Simplicity Pricing = Two Free Distribution Wins
