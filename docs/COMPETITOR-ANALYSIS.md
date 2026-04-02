@@ -2,6 +2,72 @@
 
 ---
 
+## Update: 2026-04-02 — Automated Strategy Run #102 (Early Morning, ~01:50 CET)
+
+### Status: 6 topics researched. NEW: Figma + Claude FigJam creates editable vector diagrams from conversation (LOW threat — clean style, not hand-drawn). MCP ecosystem confirmed at 10,000+ public servers (up from 6,400 in run #101). Excalidraw January/February 2026 feature audit completed — no REST API, no headless output. tldraw no new release since SDK 4.0 (Sep 2025), still no JSON→SVG render API. SaaS inflation confirmed at 12.2% (5x market). No new "JSON → hand-drawn" competitor identified. Headless JSON→hand-drawn SVG API: uncontested for 102nd consecutive scan.
+
+### Figma + Claude FigJam Integration — New Q1 2026 (NEW — LOW-MEDIUM THREAT)
+
+**Source**: figma.com/blog/think-outside-of-the-box-with-claude-and-figjam/, paulcostan.com/2026/03/design-faster-smarter-best-practices-for-using-ai-in-figma-in-2026-and-how-mcp-expands/
+
+Figma announced Claude can now generate editable FigJam diagrams from Claude conversations, PDFs, images, or screenshots. Figma Make (prompt → prototype) was embedded in FigJam/Slides since January 2026. The Figma MCP server brings design context into VS Code, Cursor, Windsurf, and Claude.
+
+**What this does NOT do**: FigJam diagrams are clean vector style (not hand-drawn), have no JSON-manifest input API, and are not headless/programmatic for agents. This is a "human describes → AI draws in FigJam" workflow, not a "POST JSON → GET SVG" API.
+
+**Threat assessment**: **LOW-MEDIUM** (Figma is pulling Claude users into FigJam for diagram creation — but the output is pixel-perfect and the workflow is session-dependent. Skissify's hand-drawn aesthetic and headless API remain completely unaddressed by this feature.)
+
+**Opportunity**: Position Skissify as "what happens when your agent needs to sketch, not design." Figma/FigJam is for polished deliverables; Skissify is for the thinking stage.
+
+### MCP Ecosystem Now 10,000+ Public Servers (GROWTH SIGNAL)
+
+**Source**: use-apify.com/blog/mcp-standard-ecosystem-2026, stackgen.com/blog/the-10-best-mcp-servers-for-platform-engineers-in-2026
+
+MCP ecosystem has grown to 10,000+ public servers (up from 6,400 noted in Run #101). Remote-first MCP (stdio → hosted HTTP endpoints) is the new default. OAuth for enterprise MCP access is becoming standard. Industry-specific MCP servers for healthcare, finance, legal, education are multiplying.
+
+**Pinterest note**: Pinterest built an internal MCP ecosystem with a web UI to discover servers by team, support channel, security posture, and live tool status. This signals enterprise-scale adoption patterns. MCP is now a real infrastructure layer.
+
+**Skissify implication**: Registry absence is even more critical. At 10,000+ servers, early visibility in the official registry becomes more — not less — important. The registry filters by category; Skissify must occupy "visual", "architecture", "floor-plan" category slots before they're dominated by adjacent tools.
+
+### Excalidraw January–February 2026 Feature Audit (CONFIRMED PRIOR FINDINGS)
+
+**Source**: plus.excalidraw.com/changelog
+
+**January 2026**: YouTube video syncing, QR code sharing for live sessions.
+**February 2026**: Custom AI Tokens (own Claude/OpenAI/Gemini/OpenRouter keys), Presentation Waiting Room (admit/deny guests), Radar Charts (multi-series data), Google Drive video embedding, interactive presentations (reactions, raised hand queue).
+
+**What's still missing**: Zero REST API. Zero headless output. GitHub Issue #10946 (REST API request) remains open with no scheduled implementation. All Excalidraw AI features are session-dependent, browser-required, human-operated.
+
+**Threat assessment**: **HIGH** (feature velocity is strong, but all features deepen the human collaboration use case — none address the headless/agent generation gap that Skissify fills).
+
+### tldraw No New Release (CONFIRMED STABLE THREAT)
+
+**Source**: tldraw.dev/releases
+
+Latest tldraw release is still SDK 4.0 (September 2025) + patch updates. No new MCP, no render API, no JSON→SVG output. Agent starter kit ships for Cursor-style chatbot interfaces. Still no programmatic hand-drawn output.
+
+**Threat assessment**: **MEDIUM-STABLE** (tldraw is focused on SDK ecosystem, not render APIs. Skissify's lane is safe).
+
+### SaaS Pricing Inflation Confirmed at 12.2% (PRICING SIGNAL)
+
+**Source**: vertice.one/l/saas-inflation-index-report, aisaaswriter.com/saas-pricing-news-2026/
+
+SaaS inflation running at 12.2% — 5x general market inflation. Microsoft 365 price increases announced effective July 2026 (Business Basic $6→$7/user, Standard $12.50→$14.50/user). Credit model growth: 79/500 top SaaS companies use credits (+126% YoY).
+
+**What this means for Skissify**: EUR 5/mo Pro is becoming *more* competitive, not less — as incumbents raise prices, Skissify's entry tier becomes a stronger value proposition. The EUR 2 starter/trial hook looks even more attractive against a market where everything is going up.
+
+### Updated Competitor Matrix (Run #102 — Thursday April 2, early morning)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw+** | Jan/Feb feature push (Custom AI Tokens, Radar Charts, Waiting Room). Official MCP (26 tools). NO REST API confirmed (Issue #10946 open). | **HIGH — headless gap confirmed moat** |
+| **tldraw** | SDK 4.0 stable. No new release. Agent starter kit. No render API. | **MEDIUM-STABLE** |
+| **Figma + FigJam** | Claude → FigJam diagrams live. Figma MCP in VS Code/Cursor. Clean vector only. No hand-drawn. No JSON manifest API. | **LOW-MEDIUM** |
+| **DiagrammingAI** | Text → Mermaid/PlantUML/Excalidraw. Requires Excalidraw session for hand-drawn. No headless API. | Low |
+| **Kroki** | REST multi-format diagram API. Zero hand-drawn output. Complementary, not competing. | Low |
+| **Skissify** | Headless JSON→hand-drawn SVG API: uncontested. MCP registry: STILL absent. | **Uncontested in headless spatial lane** |
+
+---
+
 ## Update: 2026-04-02 — Automated Strategy Run #101 (Late Night, ~23:38 CET)
 
 ### Status: 7 topics researched. NEW: Microsoft open-source Architecture Review Agent (Feb 2026) uses Excalidraw MCP — enterprise validation of AI→visual pipeline at scale. tldraw AI Image Pipeline template confirms SDK-4.0 agentic push. MCP TypeScript SDK donated to Linux Foundation — protocol longevity risk eliminated. Excalidraw added Custom AI Tokens + Presentation Waiting Room + Radar Charts in Q1 2026. Developer tool pricing sweet spot confirmed at $19-29/mo (GitHub Copilot anchors $19). JSON Crack / ToDiagram confirmed different lane (data-graph, not hand-drawn). Headless JSON→hand-drawn SVG API: uncontested confirmed for 101st consecutive scan.

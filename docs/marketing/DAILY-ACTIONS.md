@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-04-02 — Strategy Run #102 Actions (Early Morning, ~01:50 CET)
+
+### Context: Run #102 Key New Findings
+- **Figma + Claude FigJam** (Q1 2026) generates polished vector diagrams from Claude conversations — confirms Skissify's "thinking stage" positioning vs Figma's "deliverable stage"
+- **MCP ecosystem at 10,000+ servers** — registry absence is a discoverability black hole, not just a missed opportunity
+- **Excalidraw Jan/Feb 2026**: Custom AI Tokens, Radar Charts, video embedding — still zero REST API (Issue #10946 open). Feature velocity high but confined to human collaboration lane.
+- **SaaS inflation 12.2%**: Microsoft raising M365 prices July 2026. Skissify's EUR 5/mo becomes more competitive without changing anything.
+
+---
+
+### Action 1 (CRITICAL CARRY-OVER — April 2, before anything else): MCP Registry Submission
+
+**This is the 3rd consecutive cycle this appears as #1 critical action.** MCP is at 10,000+ servers. Figma, Excalidraw, draw.io all listed. Skissify absent. Enterprise developers sort by category ("visual", "architecture") — at 10K servers, undiscovered = invisible.
+
+**Steps (2 hours max)**:
+1. Submit to official registry: github.com/modelcontextprotocol/registry — tags: `visual`, `architecture`, `floor-plan`, `hand-drawn`, `JSON`, `SVG`, `sketch`
+2. Submit to glama.ai/mcp/servers — fill ALL metadata fields (name, description, categories, capabilities). Aim for Grade A.
+3. Submit to mcp.so, pulsemcp.com, mcpservers.org (10 min each)
+4. Use this description: "POST a JSON manifest → receive a hand-drawn SVG. Architectural sketches, floor plans, napkin diagrams. Headless. Stateless. No browser. No session. No Chromium."
+5. Announce submission on Twitter/X and tag @modelcontextprotocol
+
+**Why today**: Each day unregistered loses compounding install history. There is no recovery mechanism.
+
+---
+
+### Action 2 (HIGH — April 2): Write "Figma vs Skissify: Polish vs Thinking" Positioning Post
+
+The Figma + Claude FigJam integration (Q1 2026) is generating developer buzz. Turn it into a distribution event for Skissify.
+
+**Angle**: "Figma + Claude is incredible for polished diagrams. But there's a stage before that — when ideas are messy and you don't want a deliverable. That's what Skissify is for."
+
+**Steps (45 min)**:
+1. Write a 300-word post for dev.to + LinkedIn: "I use Claude + FigJam for polished diagrams. I use Skissify when I'm still thinking."
+2. Lead with: "Claude can now draw FigJam diagrams. Here's what it can't do." → hand-drawn aesthetic, headless API, JSON-first
+3. Include a side-by-side: FigJam output (clean, professional) vs Skissify output (hand-drawn, "sketchy")
+4. CTA: "Try the thinking-stage layer: skissify.com"
+5. SEO angle: "figma claude alternative sketch", "claude figjam hand-drawn"
+
+---
+
+### Action 3 (MEDIUM — April 2): Add "vs FigJam" and "vs Excalidraw AI" Comparison Pages
+
+With Figma + Claude FigJam live and Excalidraw Custom AI Tokens live, both tools now have explicit AI features. These are now search queries developers will type after trying those tools.
+
+**Steps (1 hour)**:
+1. Create `/compare/figma-figjam-vs-skissify` page: Key differences table. "Use FigJam when: polished output, team collaboration. Use Skissify when: agent pipeline, hand-drawn aesthetic, headless API."
+2. Update existing Excalidraw comparison content to mention Custom AI Tokens — and explicitly state Skissify is headless, Excalidraw AI is not.
+3. Target keywords: "figma figjam alternative hand-drawn", "excalidraw ai alternative", "headless diagram API 2026"
+4. Internal link from pricing page: "Switching from FigJam? Here's what's different →"
+
+---
+
 ## 2026-04-02 — Strategy Run #101 Actions (Late Night, April 1, ~23:38 CET)
 
 ### Context: Run #101 Key New Findings

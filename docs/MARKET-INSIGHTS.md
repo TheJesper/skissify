@@ -2,6 +2,39 @@
 
 ---
 
+## Entry: 2026-04-02 — Automated Strategy Run #102 (Early Morning, ~01:50 CET)
+
+### Theme: The "Thinking Stage" Gap — Figma Owns Polish, Skissify Owns the Napkin
+
+#### What Would Make Someone Pay EUR 2 for Skissify — New Trigger D
+
+The Figma + Claude FigJam integration (Q1 2026) reveals a new trigger by contrast:
+
+**Trigger D: The Design-to-Sketch Backfill**
+A product designer uses Claude + FigJam to create polished diagrams. But the day before, when ideas were forming, they had no tool for the rough-thinking phase. FigJam feels too "official" — every Figma canvas becomes a deliverable, not a napkin. Someone mentions Skissify: "use this for thinking, FigJam for showing." EUR 2 to try the thinking-stage tool is an instant yes. The hand-drawn style signals "this is a draft" in a way Figma never can.
+
+**Updated EUR 2 Trigger Framework:**
+- Trigger A: Excalidraw Refugee (headless REST gap → POST /render works, EUR 2 to test)
+- Trigger B: Enterprise Pipeline Builder (serverless + Excalidraw MCP incompatible → Skissify headless)
+- Trigger C: tldraw Computer User (workflow output needs hand-drawn SVG)
+- **Trigger D: Design-to-Sketch Backfill** (Figma too polished for thinking stage → Skissify for napkin phase)
+
+Common thread across all four: someone is in pain RIGHT NOW and discovers Skissify at that exact moment. Distribution is the bottleneck, not the product.
+
+#### SaaS Price Inflation = Relative Value Improvement
+
+SaaS inflation confirmed at 12.2% (5x market). Microsoft raising M365 prices July 2026. Every incumbent raising prices = Skissify's EUR 5/mo gets relatively cheaper without changing anything. The market is moving toward Skissify's price point by moving away from it.
+
+**Pricing strategy implication**: Freeze EUR 5/mo through at least Q3 2026. Do not raise prices during the phase when users are price-fatigued from incumbent hikes. Be the stable, affordable option while Figma and Microsoft raise.
+
+#### MCP Registry Compound Effect — 10,000 Servers, Still Absent
+
+The MCP ecosystem is at 10,000+ servers. Absence from the registry is no longer "missing opportunity" — at this scale, absence is a discoverability black hole. Enterprise developers building agent pipelines sort by category ("visual", "architecture") — if Skissify isn't in those categories, it doesn't exist to them.
+
+**Quantified urgency**: MCP ecosystem growing ~50-100 new servers/day at current rate. Each new server that lists first in "visual" or "architecture" gets compounding install history. There is no catch-up mechanism once install momentum is established. MCP registry submission is not a marketing task. It is infrastructure.
+
+---
+
 ## Entry: 2026-04-02 — Automated Strategy Run #101 (Late Night, ~23:38 CET)
 
 ### Theme: Enterprise Validates the AI→Visual Pipeline — Skissify's Missing Integration Story
