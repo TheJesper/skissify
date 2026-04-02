@@ -2,6 +2,70 @@
 
 ---
 
+## [2026-04-02] — Strategy Run #108 Actions (Thursday April 2, 15:24 CET)
+
+### Context: Run #108 Key Findings
+- **`excalidraw-render` MCP** (community): Headless hand-drawn SVG via Chromium. 3s cold start, 170MB download, CDN dependency. Validates demand, confirms Skissify's zero-dependency moat.
+- **SVGMaker MCP** (new): Text→clean SVG via MCP. Freemium. Different aesthetic, same distribution channel. Directory collision risk.
+- **tldraw**: Image Pipeline template (AI workflows), 25x render perf boost, no headless API, $6K/yr unchanged.
+- **MCP registry v0.1 frozen** (stable API). Visual Studio 2026 native MCP support. A2A coordination coming Q3 2026.
+- **10 active payment triggers identified**. Awareness is the only barrier. EUR 2 is not the issue.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 9th consecutive cycle): MCP Registry PR — The Last Uncontested Window
+
+**`excalidraw-render` now exists. SVGMaker MCP now exists. The visual output category is being populated. Every day without a Skissify registry entry is a day someone else gets indexed first.**
+
+The proof case is now ironclad: `excalidraw-render` proves demand for headless hand-drawn SVG via MCP. SVGMaker proves the category is being monetized. Skissify is the only tool that does both: hand-drawn aesthetic AND headless (no Chromium) AND JSON-first schema AND architectural domain elements. This combination must be in the registry before the category gets crowded.
+
+**Steps** (with new `excalidraw-render` urgency framing):
+1. `github.com/modelcontextprotocol/registry` — PR with `skissify.json`
+2. Registry description must lead with: "The only hand-drawn sketch renderer in MCP with **zero Chromium dependency**. POST JSON → instant SVG. No browser launch. No 170MB download. Serverless-compatible. Cold start: 0ms."
+3. Tags: `visual`, `sketch`, `hand-drawn`, `architecture`, `floor-plan`, `JSON`, `SVG`, `headless`, `stateless`, `serverless`
+4. Submit to Cline marketplace (21st.dev distribution channel), glama.ai, pulsemcp.com, mcp.so, mcpservers.org
+5. Implement `.well-known/mcp.json` endpoint
+6. Tweet: "excalidraw-render needs Chromium. Skissify doesn't. Same hand-drawn output. Zero browser dependency. JSON in, SVG out. [link]"
+
+**Time: 2-3 hours. The `excalidraw-render` launch is the urgency signal this needed.**
+
+---
+
+### Action 2 (HIGH — today/tomorrow): Write "No Chromium: Why Skissify Beats Headless Excalidraw for Pipelines"
+
+**`excalidraw-render` MCP validates the exact use case Skissify was built for — and then fails to fully deliver it. A technical comparison post published now captures developers who searched for headless Excalidraw and hit the wall.**
+
+Target search queries: "excalidraw headless no chromium", "hand-drawn diagram API serverless", "sketch SVG generator CI/CD", "lightweight diagram renderer Node.js"
+
+**Post structure**:
+1. "I tried headless Excalidraw. It works. Then I saw the dependencies." (hook)
+2. Technical comparison table: Chromium vs no-Chromium, cold start, binary size, serverless compatibility
+3. Code snippet: Skissify API call (10 lines) vs `excalidraw-render` setup (Chromium install, launch, wait)
+4. Floor plan demo output side-by-side
+5. CTA: "Try Skissify's API free — no download, no browser, no friction."
+
+**Distribution**: dev.to, HN ("Ask HN: Does anyone else need headless hand-drawn diagram rendering without Chromium?"), Reddit r/selfhosted, r/devops, r/mcp (if exists)
+
+**Why now**: `excalidraw-render` was just discovered (April 2026 data). Developers are trying it NOW. The frustration window is open for 2-4 weeks.
+
+---
+
+### Action 3 (MEDIUM — this week): Registry Description Differentiation Against SVGMaker
+
+**SVGMaker MCP entered the directory. A developer searching for "SVG MCP tool" will find both tools. Skissify's description must make the difference unmistakable in 2 sentences.**
+
+Current risk: A developer looking for "AI SVG via MCP" finds SVGMaker (text→decorative SVG) and Skissify (JSON→structured hand-drawn sketch) listed next to each other with similar tags. Without explicit differentiation, they try SVGMaker first (it's generative, no schema to learn).
+
+**Revised registry positioning**:
+- **Lead sentence**: "Skissify renders hand-drawn architectural sketches from a JSON manifest — deterministic, structured output, zero Chromium, instant cold start."
+- **Second sentence**: "Give it a door, a window, a staircase — it draws them exactly where you specify. Not AI-generated decoration. Precision sketching for agents."
+- **Tags to add**: `deterministic`, `structured`, `architectural`, `floor-plan`, `precise`, `no-llm-required`
+- **Tags to avoid**: `AI-generated`, `creative`, `illustration` (these are SVGMaker's territory)
+
+This positioning also works as the Twitter/X bio, Product Hunt tagline, and npm package description.
+
+---
+
 ## [2026-04-02] — Strategy Run #107 Actions (Thursday April 2, afternoon)
 
 ### Context: Run #107 Key New Findings

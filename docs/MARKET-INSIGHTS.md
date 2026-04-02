@@ -2,6 +2,63 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #108 (Thursday April 2, 15:24 CET)
+
+### Theme: The Chromium Moat — Why Skissify's Zero-Dependency Architecture Is A Commercial Advantage, Not Just A Technical One
+
+#### The Community Validates The Gap — Then Proves Skissify's Moat
+
+`excalidraw-render` MCP (community-built, April 2026) is the first attempt to make Excalidraw headless for MCP pipelines. It works — but requires headless Chromium, a 170MB browser download, and a 3-second cold start on first use. The fundamental constraint is architectural: Excalidraw's renderer relies on the DOM and Canvas API. There is no pure-Node render path.
+
+**The insight**: The community TRIED to build what Skissify already is. They couldn't. Not because they lack skill — because Excalidraw's architecture prevents it. Skissify was designed from day one to render without a browser. This is now a proven moat, not an assumed one.
+
+**The commercial implication**: Every developer who evaluates `excalidraw-render` and hits the Chromium wall is a Skissify conversion waiting to happen. The trigger: "I want headless hand-drawn SVG without 170MB of browser." The search that leads there: "excalidraw headless no Chromium", "hand-drawn diagram API serverless", "sketch SVG generator lightweight".
+
+**New Payment Trigger J — The Chromium Refugee**:
+
+| Trigger | Discovery Moment | Why EUR 2 Is Easy | Urgency |
+|---------|-----------------|-------------------|---------|
+| **J: Chromium Refugee** | Tried `excalidraw-render`, hit Chromium dependency in CI/CD/serverless | Skissify solves the exact problem, instant, zero deps | **HIGH (new, Run #108)** |
+
+#### SVGMaker MCP: Directory Collision Risk, Not Product Threat
+
+SVGMaker now has an MCP server (text → clean SVG). It will appear in the same MCP directories as Skissify. This is a distribution risk, not a product risk. A developer searching for "SVG MCP tool" may find SVGMaker before Skissify. The differentiation must be crystal clear in registry descriptions.
+
+**Skissify positioning against SVGMaker**:
+- SVGMaker: generative, probabilistic, decorative (text → whatever the AI draws)
+- Skissify: deterministic, structured, architectural (JSON schema → exact layout you specified)
+
+If you need a logo, use SVGMaker. If you need a floor plan that accurately places the kitchen window 2m from the door, use Skissify.
+
+**Action for registry descriptions**: Lead with "deterministic" and "structured" — these are the words that separate Skissify from every other AI SVG tool in the directory.
+
+#### MCP A2A (Q3 2026) — The Architecture Skissify Was Built For
+
+The MCP roadmap confirms agent-to-agent coordination arrives Q3 2026. An orchestrator agent (Claude, GPT-4o, any framework) will be able to call Skissify as a specialized visual sub-agent. The orchestrator says "draw this floor plan", Skissify receives a JSON manifest, returns an SVG, the orchestrator embeds it in a report.
+
+This is the exact use case Skissify was designed for. Q3 2026 is when the ecosystem catches up to the architecture.
+
+**Opportunity**: Be listed in MCP registries as a "visual sub-agent" before Q3. When A2A launches, Skissify should already be the default recommendation.
+
+#### Updated Trigger Framework (10 triggers — Run #108)
+
+| # | Trigger | EUR 2 Friction | Status |
+|---|---------|---------------|--------|
+| A | Excalidraw headless refugee | Zero | ACTIVE |
+| B | Enterprise pipeline builder | Zero | ACTIVE |
+| C | tldraw node user | Low | ACTIVE |
+| D | Design-to-sketch backfill | Low | ACTIVE |
+| E | Claude Code user mid-session | Zero | ACTIVE |
+| F | 14-day opt-out auto-convert | Zero | ACTIVE |
+| G | Enterprise-blocked developer | Low | ACTIVE |
+| H | Draw.io aesthetic refugee | Zero | ACTIVE |
+| I | Stitch user wanting upstream sketch tool | Low | ACTIVE (Run #107) |
+| **J** | **Chromium refugee from `excalidraw-render`** | **Zero** | **NEW (Run #108)** |
+
+All 10 triggers share the same property: **awareness is the only barrier**. EUR 2 is not the issue.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #107 (Thursday April 2, afternoon)
 
 ### Theme: The Opposite-Direction Trap — Why Google Stitch Validates Skissify Instead of Threatening It
