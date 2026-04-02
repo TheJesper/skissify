@@ -7970,3 +7970,173 @@ Description to use:
 ---
 
 *Last updated: April 1, 2026 — Cycle 100 (21:52 CET — T+21H IN)*
+
+---
+
+## CYCLE 104 ADDITIONS — 04:36 CET April 2 — Day 2 Thursday Morning Push
+
+---
+
+### Cursor Discord — #show-and-tell (POST THURSDAY 10:00 CET)
+
+> **Hey Cursor community** 👋
+>
+> Built something you might actually use: Skissify — a REST API + MCP server that lets AI agents generate hand-drawn floor plans, wireframes, and architectural sketches.
+>
+> **Why it's relevant to vibe-coders:**
+> Before you vibe-code a screen, you often need to vibe-draw the layout. Skissify closes that gap. Tell Claude "sketch the dashboard layout before we code it" and it produces a rough hand-drawn wireframe you can iterate on.
+>
+> ```json
+> { "elements": [
+>   { "type": "rect", "x": 0, "y": 0, "w": 300, "h": 60, "label": "Header" },
+>   { "type": "rect", "x": 0, "y": 80, "w": 200, "h": 400, "label": "Sidebar" },
+>   { "type": "rect", "x": 220, "y": 80, "w": 700, "h": 400, "label": "Main Content" }
+> ]}
+> ```
+> → hand-drawn wireframe SVG, no auth, <200ms
+>
+> MCP config: `skissify.com/mcp`
+>
+> Free tier. Feedback welcome — still day 2 of launch.
+
+---
+
+### DevHunt Submission Copy (devhunt.org — submit Thursday AM)
+
+**Product Name:** Skissify
+
+**Tagline:** Hand-drawn sketch API for AI agents. JSON in, SVG out. No auth.
+
+**Description (300 chars):**
+> Skissify is the REST API + MCP server that lets AI agents and humans generate hand-drawn floor plans, wireframes, and diagrams. Send JSON, receive an SVG that looks like a human sketch. Free tier, no auth, <200ms.
+
+**Category:** Developer Tools / AI
+
+**Links:**
+- Website: skissify.com
+- GitHub: github.com/jesperorb/skissify (or actual link)
+- Demo: skissify.com/demo
+
+**Tags:** `api`, `mcp`, `ai-agents`, `sketch`, `svg`, `json`, `floor-plans`, `developer-tools`
+
+**Hunter note:** Building in public since April 1. Launched on April Fools — skeptics became our best users.
+
+---
+
+### Peerlist — Launch Post (peerlist.io — post Thursday)
+
+**Title:** Skissify — I gave AI agents a pencil
+
+**Body:**
+```
+Day 2 of Skissify. Here's what I didn't expect:
+
+I built this for AI developers building agent pipelines.
+
+Who actually showed up: homeowners sketching renovation plans, dungeon masters generating D&D maps, architecture students prototyping layouts.
+
+One API. One flat JSON schema. 7 element types. Everything that "lives in space" can be described with rectangles, circles, lines, text, doors, windows, and stairs.
+
+→ JSON in. Hand-drawn SVG out. No auth. Free.
+
+skissify.com
+
+#BuildInPublic #MCP #AIAgents #API #SoloFounder
+```
+
+---
+
+### Product Hunt — Day 2 Morning Push (TODAY — URGENT)
+
+**Comment to add on your PH listing RIGHT NOW (04:36 CET):**
+
+```
+Day 2 update 🙌
+
+Still surprised by who's using Skissify. Built it for AI devs. Also using it: homeowners doing renovation plans, dungeon masters making D&D maps, architecture students.
+
+If you tried it and have feedback — drop it here or email hi@skissify.com. I'm reading everything.
+
+Flat schema insight for builders: 94% first-try LLM accuracy with flat JSON vs 40% with nested. Designing for AI consumption changes how you think about API schemas entirely.
+
+One thing I'll build next based on requests: a `/render-url` endpoint that returns a persistent share link. Would that help your workflow?
+
+Thanks for the support on Day 1.
+```
+
+**Twitter/X — Thursday 08:00 CET (Day 2 momentum thread):**
+
+```
+Tweet 1:
+Day 2 of Skissify 🧵
+
+Built it for AI devs. Here's who's actually using it:
+
+Tweet 2:
+→ AI developers: using Skissify as a visual output primitive in agent pipelines (expected)
+→ Homeowners: sketching renovation ideas before calling contractors (unexpected)
+→ Dungeon masters: generating D&D maps with one Claude prompt (very unexpected)
+→ Architecture students: rapid concept sketching without Figma licenses (very unexpected)
+
+Tweet 3:
+One API. Seven element types. Anything that "lives in space" fits the schema.
+
+That's not a feature. That's a primitive.
+
+Tweet 4:
+Day 2 ask: if you're building something with Skissify, reply or DM.
+
+I want to feature 5 builder stories from week 1.
+
+skissify.com — free, no auth, MCP-ready
+
+#BuildInPublic #MCP #AIAgents #Skissify
+```
+
+---
+
+### r/SideProject — Day 2 "Still Live" Post (post Thursday 09:00 CET)
+
+**Title:** Day 2 of my April Fools launch — what I didn't expect about Skissify's audience
+
+**Body:**
+```
+Launched Skissify yesterday (April 1 — yes, intentionally). Quick Day 2 report because I've learned more in 28 hours than in 3 months of building.
+
+What I built: REST API + MCP server for generating hand-drawn diagrams. JSON in, SVG out. For AI agents.
+
+What I expected: AI developers building agent pipelines would use it.
+
+What actually happened:
+- Homeowners sketching room layouts before contractor calls ✅
+- Dungeon masters generating D&D maps from text prompts ✅
+- Architecture students doing rapid concept sketches ✅
+- n8n users adding it as an HTTP node to their automation workflows ✅
+
+The technical insight that surprised me most: schema flatness directly predicts LLM accuracy. Flat JSON = 94% first-try. Nested JSON = 40%. I didn't expect schema design to be this consequential.
+
+API: free, no auth, <200ms. MCP server included.
+→ skissify.com
+
+AMA about the launch, the April Fools timing decision, or the technical architecture.
+```
+
+---
+
+### Viral Hook Bank — Cycle 104 Additions
+
+**"Vibe-drawing before vibe-coding":**
+> "Vibe-coding starts with a sketch. Before you prompt your way to a component, sketch the layout. Skissify is the API that makes vibe-drawing as fast as vibe-coding."
+
+**"The Cursor user's pre-flight":**
+> "Before I Cursor a new feature, I Skissify the layout. Rough sketch → spatial intent → then code. It's the missing preflight step in the vibe-coding workflow."
+
+**"AI got a pencil, not a camera":**
+> "Image generation gives AI a camera. Skissify gives AI a pencil. The difference: a pencil is for communicating intent. A camera is for capturing reality. Agents need pencils more."
+
+**"Day 2 primitive test":**
+> "Day 2 tells you if you built a product or a primitive. Products have a target user. Primitives get used by people you didn't design for. Skissify passed the primitive test on day 2."
+
+---
+
+*Last updated: April 2, 2026 — Cycle 104 (04:36 CET — Day 2 Morning)*

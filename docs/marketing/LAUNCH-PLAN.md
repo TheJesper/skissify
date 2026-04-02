@@ -1,7 +1,65 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — 02:20 CET, Day 2 (SEE CYCLE 103)**
+**Current Date: April 2, 2026 — 04:36 CET, Day 2 (SEE CYCLE 104)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 104 — Day 2 Thursday 04:36 CET)
+
+### Cycle 104 — New Blog Post Written
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Skissify for Product Managers: Ship Ideas Before Code | `blog/skissify-for-product-managers-ship-ideas-before-code.md` | PM audience — sketch-first workflow, Figma tax, rough sketches get better feedback | ✅ Ready to publish |
+
+### Cycle 104 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Cursor Discord #show-and-tell copy (Day 2 priority, FIRST TIME written) | ✅ Added |
+| DevHunt submission copy (devhunt.org — 300 char description + tags) | ✅ Added |
+| Peerlist launch post copy | ✅ Added |
+| Product Hunt Day 2 morning push comment | ✅ Added |
+| Twitter/X Day 2 morning thread (primitive test angle) | ✅ Added |
+| r/SideProject Day 2 "still live" post (different angle from Day 1 post) | ✅ Added |
+| 4 new viral hooks: vibe-drawing, Cursor preflight, AI pencil vs camera, Day 2 primitive test | ✅ Added |
+
+### Cycle 104 — Priority Actions for Thursday April 2 (MORNING — 04:36 CET)
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, STILL unrecorded — 20 minutes, just screen capture | ⏳ Record NOW | 🔴 P0 — CRITICAL, OVERDUE |
+| Add PH Day 2 morning comment (copy in Cycle 104) | ⏳ Post at 08:00 CET | 🔴 P0 |
+| Post to Cursor Discord (copy in Cycle 104) | ⏳ Post 10:00 CET | 🔴 P0 — first time this community targeted |
+| Submit to DevHunt (copy in Cycle 104) | ⏳ 10-min task Thursday AM | 🔴 P0 — free, untapped |
+| Post to Peerlist (copy in Cycle 104) | ⏳ Post Thursday 09:00 CET | 🟡 P1 |
+| Post r/SideProject Day 2 update (copy in Cycle 104) | ⏳ Post 09:00 CET | 🔴 P0 |
+| Twitter/X Day 2 primitive test thread (copy in Cycle 104) | ⏳ 08:00 CET | 🔴 P0 |
+| Post to Bluesky (3 posts from Cycle 103) | ⏳ Post 08:00-09:00 CET | 🔴 P0 |
+| Post to Anthropic Discord #showcase (copy Cycle 102) | ⏳ Post 09:00 CET | 🔴 P0 |
+| Post to LangChain Discord #tools (copy Cycle 102) | ⏳ Post 09:00 CET | 🔴 P0 |
+| Post r/programming flat schema post (copy Cycle 103) | ⏳ Post 10:00 CET | 🔴 P0 |
+| Submit to glama.ai (copy Cycle 101) | ⏳ 20-min task | 🔴 P0 |
+| Indie Hackers post (OVERDUE since Cycle 98) | ⏳ Post NOW | 🔴 P0 |
+| Publish PM blog to Dev.to + LinkedIn | ⏳ Thursday noon | 🟡 P1 |
+
+### Cycle 104 — New Channels Identified
+
+| Channel | Size | Angle | Priority |
+|---------|------|-------|---------|
+| Cursor Discord #show-and-tell | Active vibe-coders | "Vibe-draw before you vibe-code" — wireframe your layout before prompting Cursor | 🔴 P0 — perfect product-market fit |
+| DevHunt (devhunt.org) | Dev-focused PH alternative | Free listing, dev audience, indexed by Google | 🔴 P0 — 10-min task |
+| Peerlist (peerlist.io) | Maker/dev community | Build-in-public angle, Day 2 story converts here | 🟡 P1 |
+| PM/Product communities (Lenny's, Product Coalition) | PMs | New blog post targets this audience | 🟡 P1 — after PM blog publishes |
+
+### Cycle 104 — Strategic Insight (Vibe-Drawing + Cursor)
+
+**Cursor Discord is the missing link.** Every person using Cursor for vibe-coding starts with a vague spatial idea — "I want a dashboard with X on the left, Y on the right." They're currently describing that in text. Skissify makes that spatial intent *visual* in seconds. The hook "vibe-draw before you vibe-code" is the clearest product value proposition for this audience.
+
+**DevHunt is a 10-minute win.** It's a Product Hunt alternative specifically for developer tools. Free listing. Dev-focused audience with high purchase intent for API products. Listed in our directories doc since Cycle 1, never submitted. Do it Thursday morning before anything else.
+
+**PM audience is untapped.** 103 cycles of content and nothing specifically written for Product Managers as the primary audience. The new PM blog addresses the "Figma Tax" — the overhead of opening Figma for a rough idea — and positions Skissify as the pre-Figma tool. Publish to Dev.to and share in Product Coalition Slack or Lenny's Newsletter community.
 
 ---
 
