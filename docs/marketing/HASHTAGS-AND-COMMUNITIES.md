@@ -1,6 +1,6 @@
 # Skissify — Hashtag Research & Community Targeting
 
-*Last Updated: April 2, 2026 — Cycle 112*
+*Last Updated: April 3, 2026 — Cycle 114 (Show HN day)*
 *Research by: Marketing Team Lead*
 
 ---
@@ -8,16 +8,33 @@
 ## 🔥 HOT: April 2026 Master Combo (Use Now)
 
 ```
-Primary:  #VibeCoding #VibeDesign
+Primary:  #VibeCoding #VibeDesign #ShowHN
 Mid-tier: #MCPServer #AIAgents #Cursor #BuildInPublic
-Niche:    #SketchFirst #NapkinPhase #VisualLayer #JsonToSketch #Skissify
+Niche:    #SketchFirst #NapkinPhase #VisualLayer #JsonToSketch #JSONtoSVG #Skissify
 ```
 
-**Why now:** #VibeCoding (Karpathy's term) has massive organic reach in April 2026. #VibeDesign was launched by Google Stitch (March 2026) and is trending. Both hashtags have audiences that perfectly match Skissify's value prop.
+**Why now:** #VibeCoding (Karpathy's term) has massive organic reach in April 2026. #VibeDesign was launched by Google Stitch (March 2026) and is trending. #ShowHN is on-brand for today (Show HN post live). Both hashtags have audiences that perfectly match Skissify's value prop.
+
+**Ownable brand hashtags to build:**
+- `#SketchFirst` — our methodology term, low volume = ownable
+- `#NapkinPhase` — coined in our content, describes early-stage sketch workflow
+- `#JSONtoSVG` — technical, niche, findable by devs building similar things
 
 ---
 
-## 🆕 New Platforms (April 2026 Research)
+## 🆕 New Platforms (Cycle 114 Research — April 3, 2026)
+
+| Platform | URL | Priority | Notes |
+|----------|-----|----------|-------|
+| r/artificial | reddit.com/r/artificial | 🟡 P1 — 2.1M members | Largest general AI subreddit. High HN audience crossover. Post same day as Show HN. |
+| r/compsci | reddit.com/r/compsci | 🟡 P1 — 1.9M members | Algorithm/CS crowd. The wobble algorithm story resonates here. |
+| DevHunt.org | devhunt.org | 🟡 P1 | Developer-first PH alternative. Better sustained distribution than PH 24h window. |
+| Peerlist | peerlist.io | 🟢 P2 | Developer-focused LinkedIn. Growing indie hacker community. |
+| HackerNoon | hackernoon.com | 🟡 P1 | Accepts article submissions. High DA for SEO. Submit `sketch-first-development-the-missing-ai-phase.md`. |
+
+---
+
+## 🆕 New Platforms (April 2026 Research — Cycle 112)
 
 | Platform | URL | Priority | Notes |
 |----------|-----|----------|-------|

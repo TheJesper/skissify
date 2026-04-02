@@ -1,7 +1,66 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2 → Day 2 (SEE CYCLE 113)**
+**Current Date: April 3 → Day 3 SHOW HN DAY (SEE CYCLE 114)**
+
+---
+
+## NEW IDEAS (Added 2026-04-03, Cycle 114 — Day 3 Thursday — SHOW HN DAY)
+
+### Cycle 114 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Sketch-First Development: The Missing AI Phase" | `blog/sketch-first-development-the-missing-ai-phase.md` | ✅ Written — publish TODAY to Dev.to + HackerNoon |
+| SOCIAL-MEDIA.md Cycle 114 (Show HN day stack, r/artificial, r/compsci, DevHunt, Peerlist, HackerNoon, 8 viral hooks, LinkedIn, Bluesky) | SOCIAL-MEDIA.md Cycle 114 | ✅ Written |
+| Hashtag additions: #SketchFirst #NapkinPhase #JSONtoSVG #VisualLayer #ShowHN | HASHTAGS-AND-COMMUNITIES.md | ✅ New entries added |
+| New community registrations: r/artificial, r/compsci, Peerlist, DevHunt, HackerNoon | HASHTAGS-AND-COMMUNITIES.md | ✅ Added |
+
+### Cycle 114 — Priority Actions for Today (April 3 — Show HN Day)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Show HN 09:00–11:00 CET** — copy in SOCIAL-MEDIA.md Cycle 113 | 🔴 P0 — POST NOW | 2 min |
+| **Twitter hook #1 (tease)** at 08:45 CET — copy Cycle 114 | 🔴 P0 | 2 min |
+| **Twitter hook #2 (announce HN)** at 09:05 CET — copy Cycle 114 | 🔴 P0 | 2 min |
+| **Publish new blog** to Dev.to: `sketch-first-development-the-missing-ai-phase.md` — SEO + HN crosspost | 🔴 P0 | 10 min |
+| **Post LinkedIn** at 09:30 CET — copy Cycle 114 | 🟡 P1 | 3 min |
+| **Post Bluesky** at 10:00 CET — technical angle copy Cycle 114 | 🟡 P1 | 2 min |
+| **Post r/artificial** at 11:00 CET — 2.1M audience, HN crossover — copy Cycle 114 | 🟡 P1 | 5 min |
+| **Engage HN thread actively** — reply to every comment thoughtfully | 🔴 P0 — comments = ranking | ongoing |
+| **Submit DevHunt** at 13:00 CET — copy Cycle 114 | 🟡 P1 | 10 min |
+| **Post Peerlist** at 14:00 CET — copy Cycle 114 | 🟡 P2 | 5 min |
+| **Post Indie Hackers** (OVERDUE since Cycle 98) — copy Cycle 113 | 🔴 P0 | 5 min |
+| **Post MCP Discord #showcase** — copy Cycle 111 | 🔴 P0 | 5 min |
+| **Post r/vibecoding** (89K) — copy Cycle 108 | 🔴 P0 | 5 min |
+| **Submit Smol Launch** — copy Cycle 111 | 🟡 P1 | 10 min |
+| **RECORD DEMO VIDEO** — P0 FOREVER, blocks all video channels | 🔴 P0 | 20 min |
+
+### Cycle 114 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| r/artificial (2.1M) | Largest general AI subreddit. High HN audience overlap — perfect timing to cross-post Show HN | 🟡 P1 — post same day as HN |
+| r/compsci (1.9M) | Algorithm/CS crowd. The wobble algorithm story (seeded random + determinism) is genuinely interesting to this audience | 🟡 P1 |
+| DevHunt.org | Developer-first PH alternative. Better sustained distribution than PH 24h window | 🟡 P1 — 10 min task |
+| Peerlist | Developer-focused LinkedIn. Growing indie hacker community, technical founders | 🟢 P2 |
+| HackerNoon | Accepts article submissions. High DA for SEO. Submit new blog as HackerNoon article | 🟡 P1 |
+
+### Cycle 114 — Strategic Insight (Show HN Engagement = Ranking)
+
+**HN comment velocity in the first 2 hours determines front-page reach.**
+
+Data from HN analysis: posts with 3+ high-quality comments in the first hour sustain ranking pressure significantly longer than posts with only upvotes. This means:
+
+1. Be logged into HN the moment you post
+2. Reply to EVERY comment within 15 minutes of it appearing
+3. Add data/specifics in replies — don't just thank people
+4. If asked about technical details, share code snippets/schema in the thread
+5. If someone criticizes, engage honestly — HN rewards authenticity
+
+**The goal:** Reach the front page by 11:00 CET. Stay there until 16:00 CET (US morning engagement).
+
+If the Show HN underperforms: **do not repost same day**. Wait 72 hours minimum, revise title, try again. Multiple Show HNs from one project are acceptable if they're different angles.
 
 ---
 

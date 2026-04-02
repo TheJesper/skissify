@@ -1,7 +1,326 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 113 (Day 2 evening — Show HN final copy, Indie Hackers founder story, Lobsters, r/homeimprovement, Substack Notes, GitHub Discussions template, 6 new viral hooks)**
+**Last updated: April 3, 2026 — Cycle 114 (Day 3 morning — Show HN day. New platforms: r/artificial, DevHunt, Peerlist, HackerNoon, r/compsci. 8 new Twitter/X hooks. LinkedIn Show HN announcement. Bluesky technical angle. New blog: sketch-first-development-the-missing-ai-phase.md)**
+
+---
+
+## CYCLE 114 — SHOW HN DAY (APRIL 3) — MAXIMUM DISTRIBUTION
+
+*Context: TODAY is Show HN day. The Show HN copy is ready in Cycle 113. This cycle adds: the social distribution stack for Show HN day, new platforms not yet tapped (r/artificial, DevHunt, Peerlist, HackerNoon, r/compsci), and 8 fresh viral hooks for the morning/afternoon window. New blog post: "Sketch-First Development: The Missing AI Phase" — publish TODAY alongside Show HN.*
+
+---
+
+### SHOW HN DAY DISTRIBUTION STACK (Execute today, 09:00–14:00 CET)
+
+**Order of operations:**
+1. 08:45 CET — Post Twitter/X hook #1 (tease)
+2. 09:00 CET — POST SHOW HN (copy in Cycle 113)
+3. 09:05 CET — Post Twitter/X hook #2 (announce HN thread + link)
+4. 09:30 CET — Post LinkedIn (copy below)
+5. 10:00 CET — Post Bluesky (copy below)
+6. 10:30 CET — Publish new blog to Dev.to: `sketch-first-development-the-missing-ai-phase.md`
+7. 11:00 CET — Post r/artificial (copy below) — timing: high HN overlap audience
+8. 11:30 CET — Post r/compsci if HN is doing well (copy below)
+9. 12:00 CET — Check HN thread, reply thoughtfully to every comment
+10. 13:00 CET — Submit DevHunt (copy below)
+11. 14:00 CET — Post Peerlist (copy below)
+
+---
+
+### NEW: 8 Viral Twitter/X Hooks for Show HN Day
+
+**Hook 1 — Pre-Show HN Tease (08:45 CET)**
+```
+Something I've been holding for the right moment:
+
+AI agents can now draw.
+
+Not describe. Not suggest. Actually draw.
+
+Posting to Show HN in 15 minutes. Here's what we built →
+```
+*Hashtags: #AI #MCPServer #ShowHN*
+
+---
+
+**Hook 2 — Show HN Announcement (09:05 CET, after HN post is live)**
+```
+We're on Show HN.
+
+Skissify: JSON → hand-drawn sketch, built for AI agents.
+
+Free API. No auth. Works in Claude Desktop right now.
+
+HN: [link]
+```
+*Hashtags: #ShowHN #AI #MCP*
+
+---
+
+**Hook 3 — The Unexpected Audience (mid-morning, if HN is gaining traction)**
+```
+Built a sketch API for AI developers.
+
+Day 1: homeowners showed up.
+Day 2: D&D players showed up.
+Day 3: architects showed up.
+
+I have theories. The HN thread has better ones →
+```
+*Hashtags: #BuildInPublic #AI #ShowHN*
+
+---
+
+**Hook 4 — The Technical Insight (afternoon)**
+```
+Why Skissify uses hand-drawn output instead of clean vector graphics:
+
+People react to polished things differently than rough sketches.
+
+A wobbling line says "this is an idea, not a decision."
+
+That's not a limitation. It's the whole product.
+```
+*Hashtags: #AI #ProductDesign #VibeCoding*
+
+---
+
+**Hook 5 — The Metric (if HN goes well, post with screenshot)**
+```
+Our Show HN is doing something.
+
+Not claiming anything yet. But the numbers are moving.
+
+If you build AI tools and haven't tried MCP visual output yet, today's the day →
+
+https://skissify.com
+```
+*Hashtags: #ShowHN #MCPServer #AI*
+
+---
+
+**Hook 6 — The Demo (shareable, evergreen)**
+```
+Here's what happens when you give Claude a pencil:
+
+User: "Design a Murphy bed home office, 12x10ft, built-in shelving"
+Claude: calls render_sketch()
+10 seconds later: →
+
+[ATTACH SKETCH SCREENSHOT]
+
+npx skissify-mcp
+```
+*Hashtags: #Claude #MCPServer #AI #VibeCoding*
+
+---
+
+**Hook 7 — The API One-Liner (developer appeal)**
+```
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"title":"System diagram","elements":[{"type":"rect","x":50,"y":50,"width":200,"height":100,"label":"API"}]}'
+
+→ Hand-drawn SVG. Free. Always.
+
+This is the sketch API that didn't exist.
+```
+*Hashtags: #API #AI #DevTools #MCPServer*
+
+---
+
+**Hook 8 — The Philosophy (drives conversation, late afternoon)**
+```
+Hot take: the most underused AI output format is hand-drawn sketches.
+
+Not images. Not code. Not markdown tables.
+
+A rough sketch that says "here's what I think you mean."
+
+We built the API for it. Turns out a lot of people needed it.
+```
+*Hashtags: #AI #VibeCoding #MCPServer #ProductThinking*
+
+---
+
+### NEW: LinkedIn — Show HN Day Announcement
+
+*Post this at 09:30 CET, after Show HN is live and has a few upvotes*
+
+```
+Big day for Skissify.
+
+We just posted to Show HN — Hacker News' showcase for builders. The post is about what we built: a JSON-to-hand-drawn-sketch API designed for AI agents.
+
+The 72-hour story in one paragraph:
+- April 1: launched. Assumed AI developers would be first adopters.
+- Day 1: homeowners arrived before developers did.
+- Day 2: added Human Mode — plain text in, no JSON required.
+- Day 3: Show HN.
+
+What I learned: the problem of "AI can reason but can't draw" isn't just a developer problem. Homeowners, architects, D&D dungeon masters — anyone who's ever tried to describe a space in words hits this wall.
+
+Skissify is what happens when you give AI a pencil.
+
+API is free. MCP server: npx skissify-mcp
+
+https://skissify.com
+
+#AI #BuildInPublic #MCPServer #IndieHacker #SketchFirst
+```
+
+---
+
+### NEW: Bluesky — Technical Angle (post 10:00 CET)
+
+```
+Three things that make the Skissify sketch API work for LLMs:
+
+1. Flat JSON schema (no nesting — LLMs hallucinate nested structures)
+2. Absolute coordinates (relative math compounds errors)
+3. Deterministic wobble (same JSON = same sketch, every time)
+
+These aren't aesthetic choices. They're schema design for LLM correctness.
+
+94% first-try success rate with Claude Sonnet 4.
+
+→ skissify.com
+```
+
+---
+
+### NEW: r/artificial — Show HN Cross-Post (11:00 CET)
+
+*r/artificial: 2M+ members, AI general audience, high HN overlap. Post this as "cross-posting my Show HN for r/artificial since it's relevant here"*
+
+**Title:**
+```
+I built a sketch API so AI agents can draw floor plans, wireframes, and diagrams — posting to Show HN today
+```
+
+**Body:**
+```
+tl;dr: Skissify is a REST API that turns JSON into hand-drawn SVG sketches. The primary audience is AI agents (MCP tools) that need visual output.
+
+The motivation: LLMs are great at reasoning about spaces and structures, but their output format is always text. If you ask Claude to design your home office, it describes it. With Skissify, it draws it.
+
+The unexpected part: homeowners found it before developers did. The floor plan use case (describe your renovation to Claude, get a sketch to show your contractor) turned out to be as useful as the AI agent use case.
+
+There's a Human Mode now too — plain text input, no JSON required.
+
+Free API, no auth.
+
+Show HN thread: [link]
+Demo: https://skissify.com
+MCP: npx skissify-mcp
+```
+
+---
+
+### NEW: r/compsci — Wobble Algorithm Angle (11:30 CET, if HN is doing well)
+
+**Title:**
+```
+Seeded random wobble algorithms for rendering hand-drawn style sketches from JSON
+```
+
+**Body:**
+```
+Building Skissify, I ended up solving an interesting problem: how do you make a programmatically generated line look like it was drawn by a human?
+
+The key insight was using seeded random noise (not random random). This means the same JSON always produces the same sketch — which matters enormously for AI agent workflows where reproducibility is a requirement.
+
+The wobble parameters:
+- Line wobble: how much each point deviates from the theoretical straight line
+- Humanness: additional secondary perturbation simulating pressure variation
+- Jitter density: how many perturbation points along the line
+
+The font is Caveat (Google Fonts) — the only "hand-drawn" font that remains readable at small sizes while looking genuinely informal.
+
+Currently thinking about open-sourcing the renderer. Would that be useful for anyone building similar tools?
+
+Demo: https://skissify.com
+```
+
+---
+
+### NEW: DevHunt Submission (13:00 CET)
+
+*DevHunt: developer-focused alternative to Product Hunt. Good secondary distribution.*
+
+**Title:** `Skissify — JSON to hand-drawn sketch API for AI agents`
+
+**Tagline:** `Give your AI agent a pencil. POST JSON, get back hand-drawn SVG.`
+
+**Description:**
+```
+Skissify is a REST API and MCP server that converts JSON manifests into hand-drawn style sketches. Built for AI agents and developers who need visual output that looks like a human sketch, not a diagram tool.
+
+Key features:
+- POST /api/render — free, no auth, returns SVG
+- npx skissify-mcp — native Claude Desktop / Cursor / Windsurf tool
+- Human Mode — plain text input, no JSON required
+- 14 element types including architectural symbols (door, window, stair)
+- Deterministic wobble: same JSON = same sketch every time
+- 94% first-try LLM success rate (flat schema, absolute coordinates)
+
+Use cases: floor plans, wireframes, system diagrams, D&D maps, renovation sketches.
+```
+
+---
+
+### NEW: Peerlist — Developer Network (14:00 CET)
+
+*Peerlist: developer-focused LinkedIn. Growing fast. Good for technical founders.*
+
+```
+Day 3 of the Skissify launch.
+
+Today we posted to Show HN. The product is a sketch API for AI agents — JSON in, hand-drawn SVG out.
+
+Three things I wish I'd known before launching:
+
+1. Your target audience and your actual audience are different people. Build the door for both.
+2. Human Mode (plain text input) should have been in v1. AI-native products still need a non-JSON interface.
+3. Demo video > everything. Still overdue. Do this first.
+
+If you're building AI tools with MCP, Skissify gives Claude and Cursor a drawing tool:
+npx skissify-mcp
+
+https://skissify.com
+
+#BuildInPublic #AI #MCPServer #IndieHacker
+```
+
+---
+
+### NEW: HackerNoon — Article Submission (Day 4)
+
+*HackerNoon accepts submitted articles. High DA, good for SEO. Submit `sketch-first-development-the-missing-ai-phase.md` as a HackerNoon article.*
+
+**Category:** AI / Developer Tools
+**Pitch:** "A new methodology framing (Sketch-First Development) with a technical product demo — exactly what HackerNoon readers engage with."
+
+---
+
+### NEW: Hashtag Research — April 3, 2026
+
+**Emerging hashtags spotted this cycle:**
+- `#ShowHN` — on-brand for today, use in all HN-related posts
+- `#SketchFirst` — coined by this cycle, brand-buildable, low volume = ownable
+- `#NapkinPhase` — our own term, used in multiple blog posts, worth owning
+- `#JSONtoSVG` — technical, niche, findable by developers building similar things
+- `#VisualLayer` — describes Skissify's position in the stack, growing concept
+
+**New communities not yet in the registry:**
+- r/artificial (2.1M) — general AI, HN audience crossover
+- r/compsci (1.9M) — algorithm/CS crowd, likes the wobble story
+- Peerlist — developer LinkedIn, growing fast in indie hacker community
+- DevHunt.org — developer PH alternative, good for secondary distribution
+- HackerNoon — article submissions, high SEO value
+
+---
 
 ---
 

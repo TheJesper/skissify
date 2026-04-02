@@ -1,6 +1,42 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 113 (Day 2 evening — Show HN final copy, Indie Hackers founder story, Lobsters, r/homeimprovement, Substack Notes, GitHub Discussions, 6 new viral hooks, new blog: show-hn-tomorrow-the-story-behind-the-pitch.md)*
+*Last updated: April 3, 2026 — Cycle 114 (Day 3 — Show HN day. New blog: sketch-first-development-the-missing-ai-phase.md. New platforms: r/artificial, r/compsci, DevHunt, Peerlist, HackerNoon. 8 new Twitter/X hooks. Full Show HN distribution stack in SOCIAL-MEDIA.md Cycle 114.)*
+
+---
+
+## Day 3 Status (April 3, 2026 — Thursday, Cycle 114 — SHOW HN DAY)
+
+| Item | Status |
+|------|--------|
+| Show HN submission copy (final) | ✅ **READY** — SOCIAL-MEDIA.md Cycle 113 — **POST TODAY 09:00–11:00 CET** |
+| Blog: "Sketch-First Development: The Missing AI Phase" | ✅ **NEW** — `blog/sketch-first-development-the-missing-ai-phase.md` — post to Dev.to + HackerNoon |
+| Distribution stack for Show HN day | ✅ **NEW** — full ordered plan in SOCIAL-MEDIA.md Cycle 114 |
+| r/artificial (2.1M) post copy | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| r/compsci (1.9M) post copy | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| DevHunt submission copy | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| Peerlist post copy | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| HackerNoon article plan | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| 8 new Twitter/X hooks for Show HN day | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| LinkedIn Show HN announcement | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| Bluesky technical angle post | ✅ **NEW** — SOCIAL-MEDIA.md Cycle 114 |
+| MCP Discord #showcase | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 111 — P0 |
+| Smol Launch | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 111 — P0 |
+| r/vibecoding | ⚠️ **OVERDUE** — copy in SOCIAL-MEDIA.md Cycle 108 |
+| Indie Hackers post | ⚠️ **OVERDUE since Cycle 98** |
+| AlternativeTo | ⚠️ **OVERDUE** — 10 min, permanent SEO |
+| SaaSHub | ⚠️ **OVERDUE** — 10 min, permanent SEO |
+| Demo video | ⚠️ **P0 FOREVER** — blocks all video channels |
+| Email drip (3 emails written) | ⚠️ **IMPLEMENT** — copy in Cycle 110 |
+
+**Day 3 P0 sequence (in order):**
+1. Twitter tease hook at 08:45 CET (Cycle 114)
+2. POST Show HN at 09:00 CET (Cycle 113)
+3. Announce on Twitter at 09:05 CET (Cycle 114)
+4. LinkedIn at 09:30 CET (Cycle 114)
+5. Bluesky at 10:00 CET (Cycle 114)
+6. Publish Sketch-First blog to Dev.to at 10:30 CET
+7. r/artificial at 11:00 CET (Cycle 114)
+8. ENGAGE HN thread constantly — replies > upvotes for ranking
 
 ---
 
