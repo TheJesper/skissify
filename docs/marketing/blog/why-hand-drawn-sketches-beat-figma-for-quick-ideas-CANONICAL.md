@@ -133,6 +133,28 @@ The failure mode most teams fall into: jumping directly from Phase 1 to Phase 3.
 
 ---
 
+## 2026 Update: The "Vibe Design" Argument
+
+In March 2026, Google launched Stitch — a tool for going from prompt to polished UI code. The announcement was greeted with enthusiasm and the hashtag #VibeDesign started trending.
+
+One response to Stitch I keep seeing: *"Now we can go from idea to production UI in seconds."*
+
+This is the premature convergence problem with a new coat of paint.
+
+Going from idea directly to polished UI — even AI-generated polished UI — skips the alignment phase where the best design decisions get made. When the output looks production-ready, teams skip the structural conversation and jump straight to refinement. You end up building the wrong thing faster.
+
+The right workflow:
+
+1. **Rough sketch** (Skissify or whiteboard) — Is this the right structure? Where do we disagree? 5–10 minutes.
+2. **Alignment** — Team agrees on layout before anything gets polished.
+3. **Polished UI** (Stitch, v0, Figma) — Now build it correctly.
+
+Vibe design tools that go straight to polished output are excellent Phase 3 tools. The mistake is using them in Phase 1. The speed of AI generation makes premature convergence faster, not less likely.
+
+Rough sketches beat Figma for quick ideas in 2026 for the same reason they always have — and now they also beat AI-generated UI for the same reason. **The roughness is the point.**
+
+---
+
 ## The Two-Sentence Version
 
 If you want the summary you can paste into a Slack thread or send to a team lead:

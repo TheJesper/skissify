@@ -171,16 +171,44 @@ For solo use today, both are effectively free. For team collaboration, Excalidra
 
 ---
 
+## 2026 Update: Where Does Google Stitch Fit?
+
+*Added April 2026*
+
+Google launched [Stitch](https://aistudio.google.com/vibe-code) in March 2026 — a "vibe design" tool that turns prompts and wireframes into polished UI code, powered by Gemini. It has an MCP server. It's receiving significant attention.
+
+Where does Stitch sit relative to Skissify and Excalidraw?
+
+| | Skissify | Excalidraw | Google Stitch |
+|---|---|---|---|
+| **Primary job** | Hand-drawn sketch API (AI-first) | Human whiteboard | Prompt → polished UI code |
+| **Output format** | SVG (hand-drawn style) | SVG/PNG (clean) | HTML/CSS/React |
+| **Ideal phase** | Ideation — rough sketches | Alignment — human whiteboard | Production — final UI |
+| **AI agent support** | First-class MCP | None | MCP (Gemini-based) |
+| **Who operates it** | Code / AI agents | Human (mouse) | Human + Gemini |
+
+**The honest take:** These tools don't compete. They sequence.
+
+If you're building a "vibe design" workflow in 2026:
+
+1. **Skissify** — Generate rough hand-drawn sketches in the ideation phase. Keep the "draft" signal. Invite feedback on structure.
+2. **Excalidraw** — Human whiteboard session if the team needs to collaborate directly on canvas.
+3. **Google Stitch / v0 / Lovable** — Once structure is agreed, generate the polished UI.
+
+Skissify fills the napkin sketch phase that Stitch explicitly skips. The tools are designed for different moments in the same workflow.
+
+---
+
 ## The Bottom Line
 
-Excalidraw is the better whiteboard for human teams. Skissify is the better renderer for AI agents and programmatic workflows.
+Excalidraw is the better whiteboard for human teams. Skissify is the better renderer for AI agents and programmatic workflows. Google Stitch is the better tool when you're ready to produce polished UI.
 
 If you're building agents, automations, or anything where code needs to produce a visual — Skissify is currently the only tool designed for this.
 
 If you're a team that wants to whiteboard together visually — Excalidraw is excellent and proven.
 
-If you're building the future where AI agents are active participants in design workflows — Skissify is built for that future.
+If you want to go from sketch to shipped UI with AI — use Skissify to sketch, Stitch to build.
 
 ---
 
-*Try Skissify at [skissify.com](https://skissify.com). The render API is free and requires no authentication.*
+*Try Skissify at [skissify.com](https://skissify.com). The render API is free and requires no authentication. MCP server: `npx skissify-mcp`*

@@ -211,4 +211,20 @@ Content-Type: application/json
 
 Documentation: [skissify.com/for-agents](https://skissify.com/for-agents)
 
+---
+
+## 2026 Update: Vibe Design Workflows
+
+Google Stitch (launched March 2026) is a "vibe design" tool that generates polished UI from prompts. It has an MCP server too. Where does floor plan sketching fit?
+
+**The sequence:**
+
+1. Ask Claude via Skissify to sketch the floor plan (rough, hand-drawn — invites feedback on structure)
+2. Get alignment from the team/client on the layout
+3. Use a production tool (Stitch for web UI, CAD for architecture) to build the final version
+
+Skissify is the napkin phase. It keeps the "this is a draft" signal alive so spatial decisions get made by humans, not locked in by the first AI output. The rough sketch is intentional — it's how you keep the conversation open until the right structure emerges.
+
+The same principle applies to any AI agent workflow that involves spatial reasoning: sketch first, commit second.
+
 *Skissify launched April 1, 2026. Built in Stockholm. Free tier is unlimited — no auth required. The gap between "AI that thinks spatially" and "AI that draws spatially" is now closed.*

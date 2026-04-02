@@ -1,7 +1,191 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 110 (Day 4 — email onboarding drip sequence, LinkedIn poll, r/ArchitectureStudents, Twitter Spaces invite, Dev.to series strategy, Week 1 metrics post template, Substack "office hours" angle, r/AIAssistants post)**
+**Last updated: April 2, 2026 — Cycle 111 (Day 5 — Google Stitch "vibe design" comparison angle, MCP Discord #showcase post, Smol Launch submission copy, #VibeDesign hashtag set, 3 new viral hooks)**
+
+---
+
+## CYCLE 111 — DAY 5 SUNDAY — GOOGLE STITCH ANGLE + MCP DISCORD + SMOL LAUNCH
+
+*Context: Day 5. The compound growth week begins. This cycle's theme: ride the Google Stitch "vibe design" wave (launched March 2026), post to the MCP Discord (11,851 members — never posted), and submit to Smol Launch (7-day window, indie-friendly). Three distinct new channels + a timely trending hook. All copy ready to post.*
+
+---
+
+### NEW VIRAL HOOK: Google Stitch gave us a trending angle
+
+*Google Stitch (launched March 19, 2026) is a "vibe design" tool that turns prompts into UI code via MCP. This is not a competitor — it's a gift. Use these hooks to ride the Stitch momentum.*
+
+**Twitter/X — Positioning hook (post during Stitch conversation spikes)**
+```
+Google Stitch takes your prompt → polished UI code.
+Skissify takes your prompt → hand-drawn sketch.
+
+These aren't competing. They're Phase 1 and Phase 3 of the same workflow.
+
+Sketch first. Build second.
+
+Both are free. Both have MCP servers.
+#VibeDesign #MCPServer #AIAgents
+```
+
+**Twitter/X — Workflow thread**
+```
+The vibe design workflow nobody is talking about:
+
+1. Describe your idea to Claude
+2. Claude calls Skissify → hand-drawn sketch (the "napkin phase")
+3. Team agrees on structure
+4. Claude calls Google Stitch → polished UI code
+
+You just went from idea to code with two AI tools and zero Figma.
+
+This is what "vibe design" actually looks like in 2026.
+
+→ Skissify MCP: npx skissify-mcp
+→ Google Stitch MCP: (link)
+
+#VibeDesign #VibeCoding #MCPServer #AIAgents #BuildInPublic
+```
+
+**LinkedIn — Authority post (professional audience)**
+```
+Google's "vibe design" tool (Stitch) launched in March and everyone is talking about AI going straight from prompt to polished UI.
+
+Here's what nobody's said yet: polished UI is the wrong starting point.
+
+The problem with going prompt → polished UI directly:
+• Teams skip the alignment phase
+• Stakeholders see "finished" and argue about fonts, not structure
+• The AI made architectural decisions no human reviewed
+
+The fix: a sketch layer before the polish layer.
+
+Prompt → hand-drawn sketch (Skissify) → team alignment → polished UI (Stitch/Figma/v0)
+
+I built Skissify exactly for the phase Stitch skips. Two tools, one workflow.
+
+If you're exploring vibe design workflows, I'd love your feedback: skissify.com
+
+#VibeDesign #AITools #ProductDesign #BuildInPublic #MCP
+```
+
+---
+
+### NEW PLATFORM: MCP Discord Official (#showcase channel)
+
+*The official Model Context Protocol Discord has 11,851 members (April 2026). This is the single most targeted community for Skissify that we have not yet posted to. The #showcase channel is for MCP tools and integrations.*
+
+```
+**Title/first line:** Skissify MCP — I built an MCP server that draws. Hand-drawn sketches from JSON.
+
+Hey MCP community — I built a tool I wish existed when I started building agents.
+
+**The problem:** LLMs can reason about spatial layouts perfectly but their only output is text. Ask Claude to design a room and you get a paragraph. Ask it to plan a system architecture and you get bullet points.
+
+**What Skissify does:** `npx skissify-mcp` gives Claude (and any MCP client) a native drawing tool. The agent calls `render_sketch` with a JSON manifest → gets back a hand-drawn SVG with a shareable URL.
+
+Example Claude prompt: "Use skissify-mcp to sketch a floor plan of a 2-bed apartment with open kitchen"
+→ Claude generates the JSON, calls Skissify, returns a URL
+
+**Technical details:**
+- REST API: `POST https://skissify.com/api/render` — no auth, no rate limit on free tier
+- Element types: 30+ including architectural symbols (doors, windows, walls, stairs, furniture)
+- Paper modes: cream, white, yellow, blueprint
+- Tool modes: pencil, ballpoint, ink
+- MCP tools exposed: `render_sketch`, `get_manifest`, `list_element_types`
+
+Use cases in the wild: floor plans, wireframes, system architecture diagrams, D&D dungeon maps, project-to-contractor sketches.
+
+The server is designed to be a first-class MCP tool — not an afterthought.
+
+Code + docs: skissify.com/for-agents
+Install: `npx skissify-mcp`
+
+Would love feedback from other MCP builders on the tool design — what would you want from a drawing primitive in your agent pipeline?
+```
+
+---
+
+### NEW PLATFORM: Smol Launch submission
+
+*Smol Launch is a Product Hunt alternative with a 7-day launch window and focus on indie makers. Much lower competition than PH. Submit at smollaunch.com.*
+
+```
+**Product name:** Skissify
+
+**Tagline:** JSON in. Hand-drawn sketch out. AI agents can draw.
+
+**Description:**
+Skissify is a hand-drawn sketch renderer with a REST API designed for AI agents and developers.
+
+The workflow: POST a JSON manifest to /api/render, get back a beautiful wobbly SVG — architectural symbols, room labels, dimension lines, all rendered like a thoughtful human drew it on cream paper.
+
+An MCP server (npx skissify-mcp) makes this available as a native tool in Claude Desktop, Cursor, and any MCP-compatible agent. Ask Claude to "sketch a studio apartment floor plan" and it will construct the JSON and render it.
+
+**Key facts:**
+- No auth required — free API
+- 30+ element types (architectural: doors, windows, stairs, furniture; technical: arrows, dims, text)
+- Paper modes: cream, white, blueprint
+- Shareable public URLs for every sketch
+- In-browser editor + JSON panel
+
+**Why now:** AI agents can reason about space but couldn't draw until Skissify. This is the missing visual output primitive for the agent stack.
+
+**Links:**
+- Live: skissify.com
+- API docs: skissify.com/for-agents
+- MCP: npx skissify-mcp
+
+**Category:** Developer Tools / AI / Design Tools
+```
+
+---
+
+### NEW: #VibeDesign Hashtag Set (ride the Google Stitch wave)
+
+*Google Stitch's March 2026 launch made #VibeDesign trend. Use these hashtag combos on any AI design / sketch post.*
+
+**Primary combo (for all Skissify posts this week):**
+```
+#VibeDesign #VibeCoding #MCPServer #AIAgents #BuildInPublic
+```
+
+**Design-audience combo:**
+```
+#VibeDesign #SketchFirst #HandDrawn #DesignThinking #AITools
+```
+
+**Developer-audience combo:**
+```
+#VibeDesign #MCP #Claude #DevTools #APIFirst
+```
+
+**Floor plan / architecture combo:**
+```
+#VibeDesign #FloorPlan #ArchitectureAI #AIFloorPlan #HomeDesign
+```
+
+---
+
+### NEW: Bluesky — Google Stitch comparison (dev community)
+
+*Bluesky dev community is growing. Post this Sunday when Google Stitch is still trending.*
+
+```
+Google Stitch: prompt → polished UI ✨
+Skissify: prompt → hand-drawn sketch 📝
+
+Both are MCP servers. Both are free.
+
+Use Skissify first (napkin phase, invite feedback, stay flexible).
+Use Stitch after (once structure is agreed, build the real thing).
+
+This is the vibe design workflow that actually works.
+
+skissify.com — npx skissify-mcp
+
+#VibeDesign #MCP #VibeCoding
+```
 
 ---
 

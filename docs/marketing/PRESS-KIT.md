@@ -1,6 +1,27 @@
 # Skissify Press Kit
 
-*Last updated: April 3, 2026 — Cycle 110 (Day 4 Saturday — email drip sequence 3 emails, LinkedIn poll, r/ArchitectureStudents + r/AIAssistants posts, Twitter Spaces office hours, Dev.to article series strategy, Week 1 metrics post template, Week 1 retrospective blog post)*
+*Last updated: April 2, 2026 — Cycle 111 (Day 5 Sunday — Google Stitch comparison angle, MCP Discord #showcase copy, Smol Launch submission copy, #VibeDesign hashtag set, new blog post: skissify-vs-google-stitch-vibe-design-2026.md)*
+
+---
+
+## Day 5 Status (April 5–6, 2026 — Sunday, Cycle 111)
+
+| Item | Status |
+|------|--------|
+| Google Stitch comparison hook in CANONICAL posts | ✅ **NEW** — added to Excalidraw CANONICAL + Figma CANONICAL |
+| Skissify vs Google Stitch blog post | ✅ **NEW** — `blog/skissify-vs-google-stitch-vibe-design-2026.md` — post to Dev.to/Hashnode |
+| MCP Discord #showcase post | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 111 — P0, 11,851 targeted members |
+| Smol Launch submission | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 111 — P0, 7-day window |
+| #VibeDesign hashtag set | ✅ **NEW** — in SOCIAL-MEDIA.md Cycle 111 — use on all posts this week |
+| Bluesky Stitch comparison post | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 111 |
+| Email drip sequence | ⚠️ **IMPLEMENT** — 3 emails written in Cycle 110, need ESP implementation |
+| Demo video | ⚠️ **STILL OVERDUE** — P0, blocking all video channels |
+| Show HN | ⚠️ **OVERDUE** — optimal window Tuesday 09:00–11:00 CET |
+| Indie Hackers post | ⚠️ **OVERDUE since Cycle 98** |
+| AlternativeTo submission | ⚠️ **OVERDUE** — 10-min task |
+| SaaSHub submission | ⚠️ **OVERDUE** — 10-min task |
+
+**Week 2 theme:** Compound growth infrastructure + vibe design trend riding. Four non-negotiable tasks: Demo video, Show HN, MCP Discord, email drip. Everything else is bonus.
 
 ---
 

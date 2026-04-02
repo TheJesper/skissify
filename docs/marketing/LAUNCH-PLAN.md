@@ -1,7 +1,58 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3, 2026 — Day 4 begins (SEE CYCLE 110)**
+**Current Date: April 2 → Day 5 begins (SEE CYCLE 111)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 111 — Day 5 Sunday)
+
+### Cycle 111 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Cycle 111 SOCIAL-MEDIA section (Google Stitch angle, Smol Launch copy, MCP Discord strategy, #VibeDesign hashtag set, 3 new viral hooks) | SOCIAL-MEDIA.md Cycle 111 | ✅ Written |
+| Google Stitch comparison hook injected into Excalidraw CANONICAL post | `blog/skissify-vs-excalidraw-CANONICAL.md` | ✅ Added |
+| "Vibe Design vs Skissify" one-pager blog post | `blog/skissify-vs-google-stitch-vibe-design-2026.md` | ✅ Written |
+| Smol Launch submission copy | SOCIAL-MEDIA.md Cycle 111 | ✅ Written |
+| MCP Discord #showcase post copy | SOCIAL-MEDIA.md Cycle 111 | ✅ Written |
+| PRESS-KIT.md Day 5 status table | PRESS-KIT.md | ✅ Updated |
+
+### Cycle 111 — Priority Actions for Sunday April 5–6
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, P0 FOREVER UNTIL DONE | 🔴 P0 — blocks all video channels | 20 min |
+| Post to MCP Discord #showcase (copy Cycle 111) | 🔴 P0 — 11,851 developers who build MCP tools | 5 min |
+| Submit to Smol Launch (copy Cycle 111) — 7-day window vs PH's 24h | 🔴 P0 — indie maker platform, lower competition | 10 min |
+| Post r/vibecoding (copy Cycle 108) if not yet done | 🔴 P0 — 89K audience | 5 min |
+| Post Indie Hackers (OVERDUE since Cycle 98) | 🔴 P0 | 5 min |
+| Submit AlternativeTo | 🔴 P0 — permanent SEO | 10 min |
+| Post Bluesky Skissify vs Google Stitch angle (copy Cycle 111) | 🟡 P1 — dev community growing on Bluesky | 5 min |
+| Publish canonical blog post to Dev.to (Day 1 of series) | 🟡 P1 — start Dev.to series today | 15 min |
+| Implement email drip sequence in ESP (Cycle 110) | 🔴 P0 — highest conversion leverage | 30 min |
+
+### Cycle 111 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| MCP Discord official (11,851 members) | The official MCP community — Skissify is an MCP tool, they are the exact audience | 🔴 P0 — never posted |
+| Smol Launch | 7-day launch window (vs PH 24h), indie founder community, much lower competition | 🔴 P0 — 10 min task |
+| Google Stitch comparison angle | Google launched "vibe design" MCP tool in March 2026. Comparison angle: Stitch generates UI code, Skissify generates hand-drawn sketches. Complementary, not competing — both are vibe design | 🔴 P0 — timely hook |
+| #VibeDesign hashtag | Google Stitch launch created this trending hashtag — Skissify fits the "vibe design" category perfectly | 🔴 P0 — ride the wave |
+| r/GoogleAI + r/GeminiAI | Google Stitch users discovering MCP tools — post the Skissify MCP as the "sketch layer" complement to Stitch | 🟡 P1 |
+
+### Cycle 111 — Strategic Insight (Google Stitch is a Gift)
+
+**Google launched Stitch in March 2026 — a "vibe design" tool that turns prompts into UI code.** This is not a competitor. It's a gift.
+
+The angle: Stitch generates polished UI. Skissify generates rough hand-drawn sketches. These are Phase 3 and Phase 1 of the same workflow. Stitch is Figma-equivalent (production). Skissify is whiteboard-equivalent (ideation).
+
+The "vibe design" trend Stitch created gives Skissify a trending hashtag (#VibeDesign) and a legitimate hook into every conversation about AI design tools in April 2026. The post writes itself: "Stitch takes your idea to UI. Skissify takes your idea to sketch. Use both."
+
+**Additional wins from Cycle 111 research:**
+- MCP Discord has 11,851 members and an #showcase channel. We have never posted there. This is the most targeted audience for Skissify that exists and it's untapped.
+- Smol Launch gives products a 7-day window (vs Product Hunt's 24 hours). Less competition, more time to gather votes. Takes 10 minutes to submit.
 
 ---
 
