@@ -1,7 +1,57 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 → Day 3 SHOW HN DAY (SEE CYCLE 114)**
+**Current Date: April 2 — Day 2 Evening (SEE CYCLE 115)**
+
+---
+
+## NEW IDEAS (Added 2026-04-02 Evening, Cycle 115 — Day 2 Evening)
+
+### Cycle 115 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Ideas Win Before You Open Figma" | `blog/why-hand-drawn-ideas-win-before-figma.md` | ✅ Written — post Day 3 |
+| Blog: "How AI Agents Draw Floor Plans: Step-by-Step" | `blog/how-ai-agents-draw-floor-plans-step-by-step.md` | ✅ Written — technical tutorial, SEO gold |
+| Blog: "Skissify vs Excalidraw: Honest Comparison 2026" | `blog/skissify-vs-excalidraw-honest-comparison-2026.md` | ✅ Written — publish to Dev.to |
+| SOCIAL-MEDIA.md Cycle 115 (AI newsletters, agent framework Discords, YouTube Shorts, GitHub Topics, r/AIAgents, r/LangChain, 6 new hooks) | SOCIAL-MEDIA.md Cycle 115 | ✅ Written |
+| PRESS-KIT.md — full media assets spec, founder bio, boilerplate, one-liner variants | PRESS-KIT.md | ✅ Updated |
+
+### Cycle 115 — Priority Actions for Day 3 (April 3)
+
+| Action | Priority | Time Estimate |
+|--------|----------|--------------|
+| **POST Show HN 09:00–11:00 CET** — copy in SOCIAL-MEDIA.md Cycle 113 | 🔴 P0 | 2 min |
+| **AI newsletter outreach** — send to TLDR AI, The Rundown, Ben's Bites — copy Cycle 115 | 🔴 P0 — **NEW HIGH LEVERAGE** | 15 min |
+| **Post r/AIAgents (750K)** — copy Cycle 115 — NEW high-traffic community | 🔴 P0 | 5 min |
+| **Add GitHub topics** to skissify repo: mcp-server, ai-agents, hand-drawn, etc. — copy Cycle 115 | 🟡 P1 | 2 min |
+| **LangChain Discord + CrewAI Discord** — copy Cycle 115 | 🟡 P1 | 10 min |
+| **Submit Awesome MCP Servers list** on GitHub | 🟡 P1 | 5 min |
+| **Publish new blog** to Dev.to: `skissify-vs-excalidraw-honest-comparison-2026.md` | 🟡 P1 | 10 min |
+| **Post r/LangChain** — copy Cycle 115 | 🟡 P1 | 5 min |
+| **MCP Discord #showcase** — OVERDUE SINCE CYCLE 111 — P0 | 🔴 P0 | 5 min |
+| **Smol Launch** — OVERDUE — P0 | 🔴 P0 | 10 min |
+| **Indie Hackers** — OVERDUE SINCE CYCLE 98 | 🔴 P0 | 5 min |
+| **Record demo video** — P0 FOREVER | 🔴 P0 | 20 min |
+
+### Cycle 115 — New Channels/Angles Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| TLDR AI newsletter (600K) | Highest-reach AI developer newsletter. Single mention = thousands of targeted signups. Template in Cycle 115 | 🔴 P0 — send today |
+| The Rundown AI (600K+) | Second-largest AI newsletter. Simple submission form. Template ready. | 🔴 P0 |
+| Ben's Bites (developer-focused) | Curated AI tools. "Tool of the week" slot. Template ready. | 🟡 P1 |
+| r/AIAgents (750K) | NEW — large subreddit for agent builders, not tapped yet. Perfect fit. | 🔴 P0 |
+| LangChain Discord | 30K+ agent builders. They're building the exact workflows Skissify enables. | 🟡 P1 |
+| CrewAI Discord #showcase | 15K+ multi-agent framework users — "add drawing to your crew" angle | 🟡 P1 |
+| GitHub Topics (mcp-server, ai-agents) | Permanent organic discoverability. 2-minute task. | 🟡 P1 |
+| Awesome MCP Servers (GitHub list) | High DA link, permanent. Agent developers browse this list. | 🟡 P1 |
+
+### Cycle 115 — Strategic Note
+
+**The big miss so far: AI newsletters.** Every cycle has focused on social posts (Twitter, Reddit, Bluesky). But AI newsletters are where developer adoption actually happens. TLDR AI alone reaches 600K AI builders. A mention = better than 10 Reddit posts combined. This is the highest-leverage task not yet executed.
+
+**The second miss: agent framework communities.** The target user is someone building an AI agent who needs visual output. Those people are in LangChain, CrewAI, AutoGen, and n8n communities. None of these have been posted to yet (Cycle 115 adds them all).
 
 ---
 

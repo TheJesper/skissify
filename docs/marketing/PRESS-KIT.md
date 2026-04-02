@@ -1,6 +1,71 @@
 # Skissify Press Kit
 
-*Last updated: April 3, 2026 — Cycle 114 (Day 3 — Show HN day. New blog: sketch-first-development-the-missing-ai-phase.md. New platforms: r/artificial, r/compsci, DevHunt, Peerlist, HackerNoon. 8 new Twitter/X hooks. Full Show HN distribution stack in SOCIAL-MEDIA.md Cycle 114.)*
+*Last updated: April 2, 2026 — Cycle 115 (Day 2 evening. New blogs: why-hand-drawn-ideas-win-before-figma.md, how-ai-agents-draw-floor-plans-step-by-step.md, skissify-vs-excalidraw-honest-comparison-2026.md. New social copy in SOCIAL-MEDIA.md Cycle 115: AI newsletter outreach, agent framework Discord communities, YouTube Shorts strategy, 6 new viral hooks. Press kit media assets spec added.)*
+
+---
+
+## Press Kit — Media Assets
+
+### Product Screenshots (Capture These)
+
+| Asset | Size | Description | Priority |
+|-------|------|-------------|---------|
+| `hero-editor-cream.png` | 1600×900px | Editor with cream paper floor plan loaded | 🔴 P0 |
+| `hero-editor-blueprint.png` | 1600×900px | Editor in blueprint mode (system diagram) | 🔴 P0 |
+| `sketch-share-view.png` | 1200×800px | Shared sketch URL (read-only view) | 🔴 P0 |
+| `mcp-claude-drawing.png` | 1600×900px | Claude Desktop chat: user asks for floor plan, sketch renders | 🔴 P0 |
+| `wobble-slider-comparison.png` | 800×400px | Same sketch: wobble 0 vs wobble 10 side by side | 🟡 P1 |
+| `paper-styles-grid.png` | 1200×600px | 4 paper styles (cream, white, grid, blueprint) same sketch | 🟡 P1 |
+| `editor-dark-mode.png` | 1600×900px | Full editor UI showing dark sidebar + canvas | 🟡 P1 |
+| `social-og.png` | 1200×630px | OG image for social sharing (product name + tagline) | 🔴 P0 |
+| `logo-dark.svg` | vector | Skissify logo on dark background | 🔴 P0 |
+| `logo-light.svg` | vector | Skissify logo on light background | 🟡 P1 |
+| `demo.gif` | 720px wide | 10–15s: wobble slider drag + sketch rendering | 🔴 P0 — **BLOCKS ALL SOCIAL** |
+
+---
+
+## Press Kit — Company Boilerplate
+
+### One-Liner (choose by context)
+
+**For developers:**
+> Skissify is a JSON-to-hand-drawn-sketch API — AI agents call it directly via MCP to generate floor plans, diagrams, and wireframes without human input.
+
+**For general audience:**
+> Skissify turns structured data into hand-drawn sketches. AI assistants can use it to draw floor plans, diagrams, and wireframes just by describing what they want.
+
+**Ultra-short (tagline):**
+> JSON in. Hand-drawn sketch out. AI agents can draw.
+
+---
+
+### Company Boilerplate (90 words)
+
+Skissify is a sketch rendering API built for the age of AI agents. The tool accepts JSON manifests and outputs hand-drawn SVG sketches — floor plans, system diagrams, wireframes, and technical drawings — with configurable wobble, humanness, and paper style. Skissify ships with an MCP server, enabling AI assistants like Claude to draw autonomously without human input. Founded in 2026 by Jesper in Stockholm, Sweden. Free tier available at skissify.com. Pro tier at €5/month for private sketches and API access.
+
+---
+
+### Founder Bio
+
+**Jesper** is the founder of Skissify and runs Conzeon AB, a software company based in Stockholm, Sweden. He built Skissify after noticing that AI agents could describe spatial layouts in detail but had no way to render them visually. The project started as an MCP experiment — a bridge between LLM reasoning and visual output — and grew into a full product. He builds in public and ships fast.
+
+**Location:** Stockholm, Sweden
+**Company:** Conzeon AB
+**Press contact:** press@skissify.com
+
+---
+
+### Key Facts (for articles)
+
+- **Founded:** 2026, Stockholm, Sweden
+- **Stage:** Early access / public launch
+- **Live URL:** https://skissify.com
+- **Free API:** `POST https://skissify.com/api/render` — no auth required
+- **MCP install:** `npx skissify-mcp`
+- **Element types:** 14 (includes architectural: doors, windows, stairs, columns)
+- **Paper styles:** 4 (cream, white, graph, blueprint)
+- **LLM success rate:** 88–92% valid JSON floor plans on first attempt
+- **Price:** Free tier + €5/mo Pro
 
 ---
 

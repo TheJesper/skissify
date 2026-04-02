@@ -1,7 +1,296 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 114 (Day 3 morning — Show HN day. New platforms: r/artificial, DevHunt, Peerlist, HackerNoon, r/compsci. 8 new Twitter/X hooks. LinkedIn Show HN announcement. Bluesky technical angle. New blog: sketch-first-development-the-missing-ai-phase.md)**
+**Last updated: April 2, 2026 — Cycle 115 (Day 2 evening. New channels: AI newsletter outreach (TLDR AI, The Rundown, Ben's Bites), agent framework Discords (LangChain, CrewAI, AutoGen, n8n), YouTube Shorts strategy, GitHub Topics optimization, r/AIAgents, r/LangChain. 6 new viral hooks for Day 2 evening / Day 3 execution. New blogs: why-hand-drawn-ideas-win-before-figma.md, how-ai-agents-draw-floor-plans-step-by-step.md, skissify-vs-excalidraw-honest-comparison-2026.md.)**
+
+---
+
+## CYCLE 115 — DAY 2 EVENING / DAY 3 PREP — NEW CHANNELS
+
+*Context: Day 2 evening. Show HN is tomorrow morning. This cycle focuses on three underutilized distribution channels: (1) AI newsletters with massive developer reach, (2) Agent framework Discord communities where Skissify is an immediately useful tool, (3) GitHub discoverability optimization. Plus 6 new viral hooks and updated blog posts ready for cross-posting.*
+
+---
+
+### NEW: AI Newsletter Outreach (Send Tonight or Tomorrow AM)
+
+These newsletters reach tens of thousands of AI developers daily. A mention in even one of these outperforms a Reddit post.
+
+**TLDR AI** (600K subscribers)
+- Submit at: tldr.tech/ai/advertise or community submissions
+- Pitch: "Skissify — the MCP server that lets Claude draw floor plans autonomously. JSON in, hand-drawn SVG out. Free API, no auth. [skissify.com](https://skissify.com)"
+- Contact: community@tldr.tech
+
+**The Rundown AI** (600K+ subscribers)
+- Submit at: therundown.ai/submit
+- One-liner: "AI agents can now draw. Skissify is a JSON-to-hand-drawn-sketch MCP server — agents generate floor plans, diagrams, and wireframes without human input."
+
+**Ben's Bites** (developer-focused AI newsletter)
+- Submit at: bensbites.com/submit
+- Angle: "Tool of the week" — practical AI tooling for developers
+- Technical credibility: show the curl command + MCP install
+
+**The Batch (DeepLearning.AI)** (researcher/practitioner audience)
+- Submit at: deeplearning.ai/the-batch
+- Angle: "AI agent output formats beyond text — the case for structured visual output"
+
+**AI Weekly** (community newsletter)
+- Submit at: aiweekly.co
+
+**Template for all outreach:**
+```
+Subject: Skissify — JSON-to-sketch MCP server for AI agents
+
+Hi [Name],
+
+Quick tip for [newsletter]: Skissify just launched — it's a sketch renderer
+designed for AI agents. The MCP server lets Claude draw floor plans,
+wireframes, and system diagrams autonomously (JSON in → hand-drawn SVG out).
+
+Free API: POST https://skissify.com/api/render (no auth)
+MCP: npx skissify-mcp
+
+88–92% first-attempt success rate for floor plan generation from 200+ LLM tests.
+
+Might be worth a mention for your AI tools section.
+
+→ skissify.com
+— Jesper, Conzeon AB
+```
+
+---
+
+### NEW: Agent Framework Discord Communities
+
+These are the communities where Skissify is *immediately useful* — the people building the exact workflows Skissify enables.
+
+| Discord | Channel | Members | Post angle |
+|---------|---------|---------|-----------|
+| LangChain | #tools-and-integrations | 30K+ | "Tool for visual output in agent chains" |
+| CrewAI | #showcase | 15K+ | "Add drawing to your crew — MCP tool demo" |
+| AutoGen | #tools | 12K+ | "AutoGen + Skissify = agents that draw" |
+| n8n Community | #show-your-work | 20K+ | "n8n workflow: Claude → Skissify → floor plan URL" |
+| LlamaIndex | #general | 10K+ | "New tool: sketch output for LlamaIndex agents" |
+| Anthropic MCP | #showcase | 11,851 | "Skissify MCP — agents draw floor plans" ← OVERDUE P0 |
+
+**LangChain Discord post template:**
+```
+Built something that might be useful for your LangChain agents:
+
+Skissify MCP — a tool that lets agents draw sketches instead of describing them.
+
+Chain: user prompt → LLM → JSON manifest → render_sketch() → sketch URL
+
+Works with any LLM that supports MCP. Claude Desktop, Cursor, Windsurf.
+
+npx skissify-mcp → skissify.com
+
+Happy to share the tool schema if anyone wants to integrate it.
+```
+
+**n8n/automation post template:**
+```
+Built a node for generating hand-drawn sketches from AI output:
+
+HTTP Request → POST skissify.com/api/render with JSON → hand-drawn SVG URL
+
+Use case: AI designs a floor plan in JSON, Skissify renders it, URL goes to
+your client via email or Notion page.
+
+No auth, free tier. Full schema at skissify.com/docs.
+```
+
+---
+
+### NEW: YouTube Shorts / TikTok Strategy
+
+Scripts were written in Cycle 108. The demo video remains P0 and blocks all of this. When recorded, these are the priority posts:
+
+**Short #1 — "I gave Claude a pencil" (15s)**
+```
+Text overlay: "What if Claude could draw?"
+[Screen: Claude Desktop open]
+[Type: "Design a studio apartment, 40sqm, murphy bed, home office"]
+[Screen: sketch renders in 4 seconds]
+Text overlay: "It can now."
+Text overlay: "skissify.com"
+```
+
+**Short #2 — "The wobble slider" (10s)**
+```
+[Screen: Skissify editor, floor plan loaded]
+[Drag wobble slider from 0 to 10 slowly]
+[Show sketch getting progressively more hand-drawn]
+Text overlay: "How hand-drawn do you want it?"
+```
+
+**Short #3 — "Figma vs Skissify" (20s)**
+```
+Split screen:
+Left: Open Figma → pick colors → snap to grid → 5 minutes later
+Right: Type one message to Claude → 4 seconds → hand-drawn sketch
+Text overlay: "Different tools. Different jobs."
+```
+
+**YouTube channel description** (for video upload):
+```
+Skissify — JSON-to-hand-drawn-sketch for AI agents and developers.
+
+MCP server: npx skissify-mcp
+Free API: skissify.com/api/render
+Demo: skissify.com
+
+Subscribe for: AI agent workflows, MCP server tutorials, floor plan generation,
+vibe coding visual output
+```
+
+---
+
+### NEW: GitHub Discoverability
+
+**Topics to add to skissify repo:**
+`mcp-server`, `ai-agents`, `hand-drawn`, `floor-plan`, `json-to-svg`, `sketch`, `claude`, `llm-tools`, `vibe-coding`, `architectural-drawing`
+
+**GitHub README badge block:**
+```markdown
+[![npm](https://img.shields.io/npm/v/@skissify/mcp-server)](https://www.npmjs.com/package/@skissify/mcp-server)
+[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://skissify.com/docs/mcp)
+[![Free API](https://img.shields.io/badge/API-Free-green)](https://skissify.com/api/render)
+```
+
+**Awesome Lists to submit to:**
+- awesome-mcp-servers (GitHub) — "Skissify: JSON to hand-drawn sketches for AI agents"
+- awesome-ai-agents — visual output tools section
+- awesome-llm-tools — sketch generation
+
+---
+
+### NEW: 6 Viral Hooks for Day 2 Evening / Day 3
+
+**Hook 1 — The Question (Day 2 evening)**
+```
+What does an AI agent's drawing look like?
+
+Not an image. Not a description.
+An actual hand-drawn sketch, generated from JSON.
+
+Working demo: skissify.com/s/demo
+```
+*Hashtags: #AI #MCPServer #VibeCoding*
+
+---
+
+**Hook 2 — The Comparison (Day 3 morning)**
+```
+Three tools. Same use case.
+
+Mermaid: "flowchart TD → A[User]"  [text]
+Excalidraw: open canvas, draw manually  [mouse]
+Skissify: send JSON, get sketch URL  [API]
+
+One of these the AI can do without you.
+```
+*Hashtags: #AI #DevTools #MCPServer*
+
+---
+
+**Hook 3 — The Number (Day 3, if Show HN is live)**
+```
+88% of the time, Claude draws a valid floor plan on the first try.
+
+12% of the time it tries again.
+
+0% of the time does it need a canvas.
+
+→ skissify.com
+```
+*Hashtags: #AI #FloorPlan #MCPServer*
+
+---
+
+**Hook 4 — The Unexpected User (Day 3 afternoon)**
+```
+Who's using Skissify?
+
+- AI developers building agents that need visual output
+- Homeowners sketching renovation ideas with Claude
+- D&D dungeon masters generating battle maps
+- Architects pre-visualizing without CAD
+- Developers documenting system architecture
+
+I built it for the first one.
+```
+*Hashtags: #BuildInPublic #AI #Skissify*
+
+---
+
+**Hook 5 — The Technical Insight (share the blog post)**
+```
+Why AI agents generate flat-coordinate JSON 3x better than nested hierarchical JSON:
+
+When you require parent-child nesting to describe spatial layouts,
+the model reasons about hierarchy AND coordinates at the same time.
+
+Flat wins every time.
+
+Full breakdown + 200-test data: [link to blog post]
+```
+*Hashtags: #AIAgents #LLM #Engineering*
+
+---
+
+**Hook 6 — The API Demo (evergreen, shareable)**
+```
+The sketch API that didn't exist:
+
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"title":"API Design","elements":[
+    {"type":"rect","x":50,"y":50,"w":200,"h":100,"label":"Frontend"},
+    {"type":"arrow","x1":250,"y1":100,"x2":350,"y2":100},
+    {"type":"rect","x":350,"y":50,"w":200,"h":100,"label":"Backend"}
+  ]}'
+
+→ Hand-drawn SVG. Free. No auth. Every time.
+```
+*Hashtags: #API #DevTools #AI*
+
+---
+
+### NEW: r/AIAgents and r/LangChain Posts
+
+**r/AIAgents post (750K members):**
+```
+Title: I added a drawing tool to my agent stack — here's what changed
+
+I've been building AI agent workflows for a while and one gap kept showing up:
+agents can describe visual layouts beautifully but can't show them.
+
+Built Skissify to solve this — it's a JSON-to-sketch renderer with an MCP server.
+The agent writes JSON, calls render_sketch(), returns a URL. The output is
+hand-drawn style, which signals "draft" to the humans reviewing it.
+
+Success rates from 200+ test runs:
+- Floor plans: 88-92% valid JSON first attempt
+- System diagrams: 85%
+- UI wireframes: 71%
+
+Free to try: skissify.com | MCP: npx skissify-mcp
+```
+
+**r/LangChain post:**
+```
+Title: New tool: add sketch generation to your LangChain agent
+
+Sharing a tool I built for giving agents visual output capability:
+
+Skissify MCP server — your agent calls render_sketch() with a JSON manifest,
+gets back a shareable sketch URL. Hand-drawn style, 14 element types including
+architectural (doors, windows, stairs).
+
+Works as a LangChain tool wrapper or via MCP directly.
+
+REST API if you prefer: POST https://skissify.com/api/render (no auth, free)
+```
 
 ---
 
