@@ -2,6 +2,69 @@
 
 ---
 
+## [2026-04-02] — Strategy Run #115 Actions (Thursday April 2, 23:20 Stockholm)
+
+### Context: Run #115 Key New Findings
+- **SaaSpocalypse**: $285B SaaS market cap lost; seat-based pricing dropped 21%→15% YoY; 2.3× churn for seat-only models. Skissify's per-render model is now the *safe* choice.
+- **Excalidraw+ 2026**: Custom AI token support (Claude, GPT, Gemini), radar charts, Google Drive video embeds. No headless API. Chromium moat holds, but AI-native UX competition increases.
+- **Kong MCP Registry**: Third enterprise discovery vector. Kong pulls from official MCP registry → one submission triggers enterprise cascade.
+- **Official MCP Registry**: Live at registry.modelcontextprotocol.io. 5,800+ servers. Zero hand-drawn sketch tools listed. First-mover slot open.
+
+---
+
+### Action 1 (CRITICAL — TODAY, 16th consecutive cycle): Submit to Official MCP Registry — Triggers Enterprise Cascade
+
+**New finding: Official registry → Kong Enterprise Registry cascade is now confirmed. One submission creates THREE enterprise discovery vectors (official + Kong + MACH Alliance pipeline). Submit now.**
+
+Steps:
+1. Go to `github.com/modelcontextprotocol/registry`
+2. Fork, add `servers/skissify.json`:
+   ```json
+   {
+     "name": "skissify",
+     "description": "Headless JSON→hand-drawn SVG renderer. No Chromium. Floor plans, architecture, napkin diagrams. Zero cold start.",
+     "homepage": "https://skissify.com",
+     "pricing": "EUR 5/mo Pro, EUR 0.005/render API",
+     "capabilities": ["svg-render", "json-schema", "headless", "architectural-elements", "mcp-native"],
+     "schema": "https://skissify.com/schema/manifest.json"
+   }
+   ```
+3. Open PR with title: "Add Skissify — headless JSON→hand-drawn SVG, architectural elements, no Chromium"
+4. Simultaneously implement `.well-known/mcp-server.json` on skissify.com (~2 hours)
+5. Email Kong Konnect partner team about listing once PR is open (konghq.com/partners)
+
+**Combined time: 3-4 hours. After 16 cycles this is the single highest-leverage action available.**
+
+---
+
+### Action 2 (HIGH — tomorrow): Add "SaaSpocalypse-Safe Pricing" Framing to Pricing Page
+
+**New data: $285B evaporated from per-seat SaaS stocks. Teams are actively canceling seat-based tools. Skissify's per-render model is now the differentiated, *safe* choice — but the pricing page doesn't say that yet.**
+
+Steps:
+1. Add a badge/callout near pricing tiers: **"Priced like the AI era, not the seat era. Pay per sketch, not per seat."**
+2. Add 1-line context: "As AI agents replace human seats, per-seat tools lose revenue. Skissify scales with your agent activity."
+3. Add EUR 2/mo "Starter API" micro-tier evaluation (200 renders/month, single project, no watermark on API output). At 68 subscribers = breakeven. Lowers conversion friction for the pipeline developer.
+4. Update meta description: "The only headless JSON→hand-drawn sketch API. Usage-based. No seat fees. Works in CI/CD pipelines."
+
+**Time: 1-2 hours. Converts developers evaluating tools post-SaaSpocalypse cancellations.**
+
+---
+
+### Action 3 (HIGH — this week): Write "Excalidraw Now Has Claude Built In — Here's What It Still Can't Do" Blog Post
+
+**Excalidraw+ just added custom AI token support (Claude, GPT, Gemini). This is news in the developer community. Skissify can ride this wave by publishing a direct, honest comparison that acknowledges Excalidraw's new AI features while making the headless gap undeniable.**
+
+Steps:
+1. Draft post: "Excalidraw Now Has Claude Built In. Here's the One Thing It Still Can't Do."
+2. Structure: Acknowledge new Excalidraw+ features fairly → explain headless/pipeline gap → show Skissify JSON example in a CI/CD context → conclusion: "Two different tools, two different workflows"
+3. Publish to blog + share on X/HN/r/mcp (Excalidraw community frequently discusses AI integrations)
+4. Tag: `excalidraw`, `ai-agents`, `mcp`, `diagram-tools`, `json`
+
+**Time: 2 hours to draft. High SEO and community signal value — Excalidraw searches are high-volume and Skissify doesn't appear yet in comparisons.**
+
+---
+
 ## [2026-04-02] — Strategy Run #114 Actions (Thursday April 2, 22:12 Stockholm)
 
 ### Context: Run #114 Key New Findings

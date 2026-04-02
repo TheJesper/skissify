@@ -2,6 +2,45 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #115 (Thursday April 2, 23:20 Stockholm)
+
+### Theme: The SaaSpocalypse Is Skissify's Tailwind. Three Enterprise Registries. Excalidraw Goes AI-Native.
+
+#### The SaaSpocalypse Is Working FOR Skissify
+
+Run #115 surfaces the "SaaSpocalypse" — $285B in SaaS market cap lost by per-seat companies. Seat-based adoption dropped 21%→15% YoY. The core mechanism: AI agents replace human seats, collapsing seat counts while increasing software consumption. The tools that win are the ones agents *consume* — i.e., tools that generate output on agent request.
+
+Skissify is structurally on the winning side. Every render = one billable API call. As agent adoption grows, Skissify's revenue scales automatically. This is not a theoretical advantage — it is the exact pattern that is separating winners from losers in the Q1 2026 SaaS landscape.
+
+**What makes someone pay EUR 2/mo for Skissify (new trigger — Run #115)**:
+"I'm running 50 AI agents in production and I need every agent that generates an architecture diagram to produce output that doesn't look like a robot made it. Hand-drawn means stakeholders understand this is a draft. That distinction prevents expensive misunderstandings. EUR 2 per 400 renders is nothing."
+
+This is the enterprise B2B trigger: **aesthetic control over agent output quality**. The agent generates the sketch, but the human controls whether it looks "done" or "in-progress." That control is worth recurring revenue to anyone managing AI-generated deliverables.
+
+#### Excalidraw Goes AI-Native — Competitive Pressure Increases, Moat Still Holds
+
+Excalidraw+ shipped custom AI token support (bring-your-own Claude/GPT/Gemini key) in Q1 2026. This matters: it means users can generate Excalidraw sketches directly from Claude prompts without routing through Excalidraw's servers. The Chromium/headless moat still holds — no headless API, no CI/CD pipeline use — but the "AI-powered sketch" mental category is now more crowded at the consumer UX level.
+
+The strategic response: Skissify's message should double down on the headless/pipeline angle, not the "AI helps you sketch" angle. Excalidraw+ now owns "AI helps human sketch in browser." Skissify owns "JSON in → SVG out, no browser, no human required." These are different audiences and different use cases. Messaging clarity becomes more important as Excalidraw's AI features improve.
+
+#### Three Enterprise Discovery Registries — The Chain Has Become Actionable
+
+Prior runs identified two registries: modelcontextprotocol.io (developer community) and MACH Alliance (enterprise architects, Q4 2026). Run #115 adds **Kong MCP Registry** — enterprise IT/platform teams using Kong API Gateway. Kong's registry pulls from the official registry at `registry.modelcontextprotocol.io`. The full chain:
+
+`Submit to official registry → Kong Enterprise picks up → MACH Alliance targets same audience`
+
+This means **one submission** to the official registry creates a cascade of downstream enterprise discovery. The submission is not just about community visibility — it's the trigger for the enterprise cascade. Still not done after 15 cycles.
+
+#### EUR 2/mo Micro-Tier — The SaaSpocalypse Opens a New Entry Price
+
+Prior analysis focused on EUR 5/mo Pro as the lowest conversion point. The SaaSpocalypse context suggests a lower-friction entry matters more now: teams are *canceling* seat-based tools and evaluating replacements. They have a lower per-tool budget but a higher willingness to try new tools.
+
+A EUR 2/mo micro-tier (limited API renders, single user, no team features) could convert the developer who "just wants to try it in a pipeline" without committing EUR 5/mo. At EUR 135/mo fixed costs, 68 EUR 2/mo subscribers = breakeven. This is achievable before 100 total users.
+
+**Consider adding a EUR 2/mo "Starter API" tier** — 200 renders/month, no watermark on API output, single project save. Entry to the pipeline workflow. Upgrades to Pro at 201 renders.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #114 (Thursday April 2, 22:12 Stockholm)
 
 ### Theme: The Digitization Crowd Confirms the Rendering Gap. Two Registries. Credit Pricing Wins.

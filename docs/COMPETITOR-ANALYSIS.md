@@ -2,6 +2,113 @@
 
 ---
 
+## [2026-04-02] — Automated Strategy Run #115 (Thursday April 2, 23:20 Stockholm)
+
+### Status: 5 topics researched. KEY FINDINGS: **Excalidraw+ 2026** shipped custom AI token support (Claude, OpenAI, Gemini) + radar charts + Google Drive video embeds — MEDIUM-HIGH threat confirmed, Chromium moat holds, no headless API. **SaaSpocalypse confirmed**: $285B in SaaS market cap evaporated; seat-based adoption dropped 21%→15% YoY; 2.3× churn for seat-only models — Skissify's per-render model is now the *safe* choice, not the risky one. **Kong MCP Registry for Enterprise** launched — third enterprise discovery vector after modelcontextprotocol.io registry and MACH Alliance; Kong governs tool stacks for enterprise teams. **Frame0 unchanged** — still requires desktop app, no headless API, still MEDIUM threat. **Official MCP Registry now live** at registry.modelcontextprotocol.io with subregistries/enterprise structure. **Headless JSON→hand-drawn SVG with no Chromium: still uncontested** (Run #115 — 15th consecutive confirmation).
+
+---
+
+### Excalidraw+ 2026 — Custom AI Tokens + Advanced Charts + Video (MEDIUM-HIGH, ESCALATING)
+
+**Sources**: plus.excalidraw.com/changelog (verified 2026-04-02)
+
+New Excalidraw+ features shipped in Q1 2026:
+- **Custom AI token support**: Users can plug in their own OpenAI, Claude, Gemini, or OpenRouter API keys for AI features. This means Excalidraw no longer routes through Excalidraw servers — users bring-their-own-AI. Lowers their infrastructure cost, increases AI adoption in their UI.
+- **Advanced charts**: Radar charts and multi-series data visualizations within boards. Moves Excalidraw closer to data visualization territory.
+- **Google Drive video embedding**: Videos play inline within boards.
+- **Interactive presentations**: Real-time audience reactions, "raised hand" queue, YouTube sync, QR codes for live sessions.
+
+**For Skissify**: None of these close the Chromium/headless gap — Excalidraw+ still requires browser runtime. The custom AI token feature is notable: it means AI-powered Excalidraw sketches are now easier for Claude/GPT users, increasing direct competition for the "AI helps me sketch" mental category. However: Excalidraw still cannot be called headlessly from a CI/CD pipeline or from an MCP tool without spawning a browser. The moat holds.
+
+**New risk**: The "bring your own Claude key" feature positions Excalidraw as Claude-compatible without Anthropic involvement. If Excalidraw adds an MCP server that wraps browser operations, the moat narrows significantly. Monitor quarterly.
+
+**Threat assessment: MEDIUM-HIGH (stable — Chromium moat holds, but AI integration is deepening)**
+
+---
+
+### SaaSpocalypse — $285B Market Cap Loss Validates Skissify's Per-Render Model (PRICING VALIDATION CRITICAL)
+
+**Sources**: hickamsdictum.com, medium.com/write-a-catalyst, editorialge.com/saas-trends-q1 (verified 2026-04-02)
+
+The "SaaSpocalypse" is now the dominant narrative in SaaS pricing circles. Key confirmed numbers:
+- **$285 billion** in market capitalization lost by seat-based SaaS companies (analyst estimate, Q1 2026)
+- **Seat-based adoption**: dropped from 21% → 15% YoY (fastest single-year decline on record)
+- **Hybrid pricing adoption**: jumped 27% → 41% in the same period
+- **56% of AI leaders** now use hybrid models (subscription + usage)
+- **2.3× higher churn** for companies sticking with seat-only models
+- **IDC forecast**: 70% of software vendors will refactor away from pure per-seat by 2028
+
+The core mechanism, per Jason Lemkin (SaaStr): "If 10 AI agents can do the work of 100 sales reps, you don't need 100 Salesforce seats — you need 10." AI agents replacing human seats causes per-seat revenue collapse at scale. The tools that win are the ones agents *consume* rather than the ones agents *replace*.
+
+**For Skissify**: Skissify is a tool that agents *consume* (generate sketches), not a tool that agents *replace*. This is structurally the correct position. Every sketch Skissify renders = one API call = one billable unit. As agent activity grows, Skissify's revenue grows automatically. This is the opposite of a seat-based tool's problem.
+
+**Critical framing**: Skissify's per-render model is no longer "the risky alternative to subscriptions" — it is now demonstrably the lower-churn, higher-growth model. Update the pricing page framing to lean into this: "Priced like the AI era, not the seat era."
+
+**Threat assessment: STRATEGIC TAILWIND (SaaSpocalypse is working for Skissify, not against it)**
+
+---
+
+### Kong MCP Registry — Third Enterprise Discovery Vector (NEW CRITICAL)
+
+**Sources**: konghq.com/products/mcp-registry, konghq.com/blog/engineering/mcp-registry-dynamic-tool-discovery (verified 2026-04-02)
+
+Kong Inc. (major API gateway vendor, enterprise-grade) has launched an **MCP Server Registry** product that enterprise teams use for governed tool discovery and management. This is distinct from both modelcontextprotocol.io and MACH Alliance:
+- **Kong's position**: Enterprise API gateway — their registry is the governed enterprise tool catalog, used by teams that already trust Kong for API management
+- **Audience**: Enterprise IT and platform teams managing agent tool stacks
+- **Integration**: Connects to Kong Konnect for dynamic tool discovery at runtime
+- **Governance**: Audit trails, access controls, versioning — the "enterprise-safe" MCP registry
+
+**For Skissify**: There are now **THREE** enterprise-relevant registries:
+1. `registry.modelcontextprotocol.io` — community/developer (submit now)
+2. MACH Alliance MCP Registry — enterprise architects (Q4 2026 launch)
+3. **Kong MCP Registry** — enterprise IT/platform teams using Kong Gateway (new)
+
+The Kong vector is immediately actionable if Skissify is listed in the official MCP registry first — Kong's registry often mirrors/imports from the official one. Kong's enterprise customers are the same teams that need architectural diagrams, floor plans, and system design documentation.
+
+**Action required: Priority submit to official registry now. Kong discovery follows.**
+
+**Threat assessment: DISTRIBUTION OPPORTUNITY (submit to official registry first — Kong pulls from it)**
+
+---
+
+### Official MCP Registry — Now Live with Enterprise Subregistries (INFRASTRUCTURE UPDATE)
+
+**Sources**: registry.modelcontextprotocol.io, github.com/modelcontextprotocol/registry (verified 2026-04-02)
+
+The official MCP Registry (launched September 2025) is now live and operational with:
+- **Subregistry architecture**: Enterprise Registry, community subregistries
+- **5,800+ servers** listed (developer tools: 1,200+, business apps: 950+)
+- **Design principles**: Single Source of Truth, Vendor Neutral, Industry Security Standards
+- **Kong integration**: Kong Konnect pulls from the official registry for enterprise dynamic tool discovery
+
+**For Skissify**: The registry is live and accepts new submissions. At 5,800 servers covering developer tools (1,200+) and business apps (950+), **zero hand-drawn sketch tools** appear to be listed (confirmed by prior runs' competitor research — no hand-drawn/architectural sketch tool in any registry). First-mover slot is open.
+
+**The chain**: Official MCP Registry → Kong Enterprise Registry → MACH Alliance Registry. Submit to the official registry first and downstream discovery follows.
+
+**Threat assessment: CRITICAL MISSING PRESENCE (15+ runs overdue, registry is live and functional)**
+
+---
+
+### Updated Competitor Matrix (Run #115 — Thursday April 2, 23:20)
+
+| Tool | Status (2026-04-02) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Excalidraw+** | 2026: Custom AI tokens (Claude/GPT/Gemini), radar charts, video embeds, interactive presentations. **NO headless API changes.** | NO (requires Chromium or browser) | YES | NO | YES (browser-based) | **MEDIUM-HIGH (AI integration deepening — Chromium moat still holds)** |
+| **Frame0** | Unchanged. MCP server on PulseMCP. Hand-drawn wireframes. SVG export. Requires desktop app. | NO (requires desktop app) | **YES** | YES (desktop) | YES | **MEDIUM (closest architecture match, desktop-only)** |
+| **Draw.io (JGraph)** | Official MCP Feb 2026. 700+ enterprise icons. Now in official MCP registry. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **AI Diagram Maker** | MCP+JSON input since Jan 2026. Clean vector output. | PARTIAL (unclear headless) | NO | YES | YES (Jan 2026) | **MEDIUM (MCP+JSON without hand-drawn)** |
+| **Sketch2scheme** | Photo → digital flowchart. Draw.io/Mermaid export. No JSON input. No API. | NO (photo input) | NO (digital output) | YES | NO | **LOW (opposite direction, validates gap)** |
+| **dAIgram** | Photo/sketch → editable diagram + JSON export. No API. Browser only. | NO (visual input) | NO (clean output) | YES | NO | **MEDIUM (same JSON+sketch axis, opposite direction)** |
+| **ToDiagram** | JSON/YAML/CSV→interactive two-way diagrams. No hand-drawn. No API found. | NO (web UI only) | NO | YES | NO | **MEDIUM-STABLE** |
+| **InfraSketch.AI** | Natural language→architecture diagrams. Free. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM (same audience, different domain)** |
+| **tldraw SDK** | v4.x: canvas-based. $6K/yr commercial. No MCP. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Napkin.ai** | $12/mo. Text→polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **SVGMaker MCP** | Text→clean SVG via MCP. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM** |
+| **svg2roughjs** | OSS library: SVG→hand-drawn. No hosted API, no MCP. | NO (library only) | YES (library) | YES | NO | **LOW (validates niche)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: **zero Chromium, instant cold start, uncontested**. MCP Registry: ABSENT (CRITICAL × **16**). | **YES (only one, no Chromium, no desktop)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #114 (Thursday April 2, 22:12 Stockholm)
 
 ### Status: 5 topics researched. KEY FINDINGS: **Sketch2scheme** discovered — photo of hand-drawn sketch → digital flowchart export (Draw.io/Mermaid). Third photo-to-diagram tool found (after dAIgram, SnapDiagram); confirms digitization direction is well-served but JSON-to-hand-drawn side remains uncontested. **Pinterest MCP production deployment** confirmed (InfoQ, April 2026) — enterprise MCP is now real at scale. **MACH Alliance MCP Registry** launching Q4 2026 — separate enterprise-focused registry from modelcontextprotocol.io; TWO registries to submit to. **MCP Server Cards** (.well-known metadata URL spec) coming in official MCP spec — early implementation advantage. **Credit-based SaaS pricing +126% YoY** (79/500 PricingSaaS companies, up from 35 in 2024). **Gartner: 70% of businesses will prefer usage-based over per-seat by 2026**. Headless JSON→hand-drawn SVG with no Chromium: **still uncontested** (Run #114 — 14th consecutive confirmation).
