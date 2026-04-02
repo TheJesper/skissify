@@ -2,6 +2,63 @@
 
 ---
 
+## 2026-04-03 — Strategy Run #103 Actions (Thursday April 2, morning ~04:06 CET)
+
+### Context: Run #103 Key New Findings
+- **Sketch.com AI skills** (Claude Code + Cursor design-to-code integration) launches: confirms skills-based distribution is real and fast. Skissify needs a Claude Code skill.
+- **tldraw**: 25x rendering improvement, manager-based agent template. No render API. MEDIUM-STABLE.
+- **MCP Registry v0.1 API-freeze**: Registry is stable and open. Still absent from all categories. 873% growth in servers (425 → 4,100+). Category slots filling.
+- **SaaS pricing simplicity signal**: 2026 market moving back toward simple/predictable pricing. EUR 0.005/render is a competitive moat if positioned correctly.
+
+---
+
+### Action 1 (CRITICAL — April 3, must ship): Submit Skissify to MCP Registry
+
+**This is the 4th consecutive cycle this appears as #1. The registry is confirmed v0.1-stable. Submission is open. No technical blocker exists. Ship it.**
+
+**Steps (2 hours max)**:
+1. Submit to official registry at `github.com/modelcontextprotocol/registry` — PR with `skissify.json` entry. Tags: `visual`, `architecture`, `floor-plan`, `hand-drawn`, `JSON`, `SVG`, `sketch`, `headless`
+2. Submit to `glama.ai/mcp/servers` — fill ALL metadata (description, categories, capabilities). Aim for Grade A.
+3. Submit to `pulsemcp.com`, `mcp.so`, `mcpservers.org` (10 min each)
+4. Description: "POST a JSON manifest → receive a hand-drawn SVG. Architectural sketches, floor plans, napkin diagrams. Headless. Stateless. No browser. No session. No Chromium."
+5. Post submission announcement on Twitter/X, tag @modelcontextprotocol
+
+**Why April 3 is the deadline**: Registry growing at ~873% YoY. Category slots (`architecture`, `floor-plan`) are currently unclaimed. First mover in these categories gets compounding install history. There is no catch-up once another tool occupies "architecture" category slot.
+
+---
+
+### Action 2 (HIGH — April 3): Publish a Skissify Claude Code Skill
+
+Sketch.com just entered the Claude Code skills ecosystem with a design-to-code skill. Skissify can do the same — a sketch-output skill that lets Claude Code generate hand-drawn diagrams mid-session.
+
+**Steps (1 hour)**:
+1. Create `C:/Users/jespe/.claude/skills/skissify/SKILL.md` following the standard SKILL.md format (see AGENTS.md for examples)
+2. Skill trigger: when user says "sketch this architecture", "draw a floor plan", "generate a hand-drawn diagram", "skissify this"
+3. Skill behavior: construct a Skissify JSON manifest based on context → POST to `/api/render` → output the SVG result or link
+4. Include example manifests in the skill (floor plan, architecture diagram, napkin)
+5. Reference the skill from AGENTS.md skills registry
+6. Distribution: share the SKILL.md on GitHub, tag the Claude Code community, post to dev.to
+
+**Why this matters**: Trigger E (Claude Code user mid-session) is now a documented trigger for EUR 2 payment. A skill is the delivery mechanism for Trigger E. It costs ~1 hour to ship and compounds forever.
+
+---
+
+### Action 3 (MEDIUM — April 3): Rewrite Pricing Page Copy for "Simplicity" Positioning
+
+SaaS pricing fatigue confirmed: buyers face 5+ credit tier options per vendor in 2026. 43% hybrid models = buyers are exhausted decoding their bills. Skissify's flat EUR 0.005/render is the antidote — but current pricing page doesn't frame it that way.
+
+**Steps (45 min)**:
+1. Open pricing page component. Find the pricing description text.
+2. Add a "No math required" section before the tier table:
+   > "Every other tool has credit bundles, overage tiers, and plan comparisons. Skissify doesn't. EUR 0.005 per render. That's the whole formula."
+3. Add a visual contrast: a simplified table showing a competitor's tier complexity vs Skissify's single line
+4. Update the API section copy: "Transparent usage billing — no hidden credits, no tier-dependent rates. One price: EUR 0.005/render at any volume under 100K/month."
+5. A/B test two CTA variants: "Start free" vs "Try for EUR 2"
+
+**Why this matters**: Simple pricing is a conversion asset that costs zero ongoing maintenance. In a market moving toward simplicity, being positioned as the simplest option is a compounding advantage.
+
+---
+
 ## 2026-04-02 — Strategy Run #102 Actions (Early Morning, ~01:50 CET)
 
 ### Context: Run #102 Key New Findings

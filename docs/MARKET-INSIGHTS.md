@@ -2,6 +2,46 @@
 
 ---
 
+## Entry: 2026-04-02 — Automated Strategy Run #103 (Morning, ~04:06 CET)
+
+### Theme: Skills Ecosystem + Simplicity Pricing = Two Free Distribution Wins
+
+#### What Would Make Someone Pay EUR 2 for Skissify — New Trigger E
+
+The Sketch.com AI skills launch (Claude Code + Cursor design-to-code) reveals a fifth trigger:
+
+**Trigger E: The Claude Code User Who Needs a Sketch Step**
+A developer is using Claude Code. They've been using Sketch skills to implement designs. They need to quickly sketch out an architecture before coding. Claude Code has no native sketch output — it can describe, not draw. Someone publishes a Skissify Claude Code skill. Claude Code + Skissify: `POST /api/render` produces a hand-drawn architecture diagram inline in the session. EUR 2 starter trial is a sub-second yes for anyone mid-session who discovers it via the skills list.
+
+**Updated EUR 2 Trigger Framework (5 triggers):**
+- Trigger A: Excalidraw Refugee (headless REST gap → discovers Skissify)
+- Trigger B: Enterprise Pipeline Builder (serverless, Excalidraw MCP needs browser)
+- Trigger C: tldraw Computer User (node workflow output needs hand-drawn SVG)
+- Trigger D: Design-to-Sketch Backfill (Figma too polished for thinking stage)
+- **Trigger E: Claude Code User** (mid-session needs sketch output, discovers Skissify skill)
+
+Common thread: **Discovery at the moment of pain.** Every trigger is an in-context discovery. Zero are "I browsed the web and found Skissify." Distribution = presence where the pain happens (Claude Code skills, MCP registry, Google search, tldraw docs).
+
+#### Simplicity Pricing as a Moat: 2026 Fatigue Data
+
+SaaS pricing fatigue is real and measurable. 43% hybrid models in use; buyers face 5+ credit tier options per vendor. Gartner says the pendulum will swing back to simplicity in 2026. Skissify's EUR 0.005/render flat model is the simplest pricing in the entire diagram/render space.
+
+**Untapped positioning**: Run the pricing page as a contrast ad. Side-by-side: [Competitor X credit tiers — 3 columns, 8 rows of math] vs [Skissify: EUR 0.005/render]. No decoding required. This is not a feature — it's a relief.
+
+**Revenue implication**: Simple transparent pricing reduces churn from "I don't understand my bill." Lower churn compounds faster than higher prices. Freeze EUR 0.005/render as the stated rate through end of 2026.
+
+#### The Skills/Tool Ecosystem vs MCP Registry: Two Distribution Channels, One Product
+
+The Sketch.com AI skill launch confirms a pattern: tools insert themselves into developer workflows by publishing skills/plugins for the agent tools developers already use (Claude Code, Cursor, VS Code). This is parallel to MCP registry listing but different — it's about the IDE/agent IDE workflow, not the "discover a server" workflow.
+
+**Two distinct channels Skissify needs:**
+1. **MCP Registry** → For agent pipeline builders who run servers and browse `registry.modelcontextprotocol.io`
+2. **Claude Code Skill** → For individual developers mid-session in Claude Code who want to sketch something now
+
+Both are free. Both compound over time via install history. Neither has been executed.
+
+---
+
 ## Entry: 2026-04-02 — Automated Strategy Run #102 (Early Morning, ~01:50 CET)
 
 ### Theme: The "Thinking Stage" Gap — Figma Owns Polish, Skissify Owns the Napkin

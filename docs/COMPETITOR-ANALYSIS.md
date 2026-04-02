@@ -2,6 +2,77 @@
 
 ---
 
+## Update: 2026-04-02 — Automated Strategy Run #103 (Morning, ~04:06 CET)
+
+### Status: 5 topics researched. NEW: Sketch.com launches AI agent skills (Claude Code + Cursor design-to-code integration) — creates upstream distribution opportunity. tldraw adds 25x faster shape rendering + manager-based agent architecture template — still zero render API. MCP Registry v0.1 in API-freeze (stable, open for submission) — official registry confirmed operational. SaaS pricing: "simplicity trend" emerging — 70% of buyers prefer UBP by 2026 but want simpler implementations. Headless JSON→hand-drawn SVG API: uncontested for 103rd consecutive scan.
+
+### Sketch.com AI Agent Skills — New Design-to-Code Distribution Vector (NEW — LOW-MEDIUM THREAT, HIGH OPPORTUNITY)
+
+**Source**: sketch.com/changelog, visualmethod.co/blog/future-ai-sketch-tools-2026
+
+Sketch (the Mac design tool, ~1M users) launched AI agent skills — reusable workflows that help Claude Code and Cursor turn Sketch designs into working code. The first skill: `sketch-implement-design`. This integrates Sketch natively into the Claude Code/Cursor coding agent workflow.
+
+**What this does NOT do**: Sketch has no hand-drawn mode, no JSON-manifest API, and no headless rendering. It is a pixel-perfect vector design tool now connected to coding agents.
+
+**Threat assessment**: **LOW-MEDIUM** — Sketch is not in the hand-drawn/napkin space. However, it validates a key signal: design tools are inserting themselves into agent pipelines. Sketch got into Claude Code. Skissify should be next.
+
+**Opportunity**: Sketch entering the Claude Code skills ecosystem confirms that "design tool → Claude Code → implementation" is a real developer workflow. Skissify should publish a Claude Code skill at `C:/Users/jespe/.claude/skills/skissify/SKILL.md` format — making Claude Code able to call `POST /api/render` directly from a coding session when an agent wants to sketch an architecture. This is a distribution play, not a feature.
+
+### tldraw Performance + Agent Template Update (CONFIRMED MEDIUM-STABLE)
+
+**Source**: tldraw.dev/releases, releasebot.io/updates/tldraw
+
+Q1 2026 tldraw updates:
+- **Shape indicators** now render via 2D canvas (was SVG) — up to **25x faster** when selecting/hovering many shapes
+- **Agent starter template** restructured around manager-based architecture with mode system, action schema registries, prompt part definitions, canvas linting, and user action tracking
+- **Image pipeline template** via `npx create-tldraw` — visual node-based canvas for AI image generation workflows with typed port connections and DAG execution engine
+- NO new render API. NO JSON→SVG output endpoint. NO headless mode.
+
+**Threat assessment**: **MEDIUM-STABLE** (unchanged). tldraw is doubling down on SDK performance + agent canvas workflows. The image pipeline template makes tldraw a node-based workflow canvas — this is complementary to Skissify. A documented "tldraw node → Skissify render" integration pattern is now more viable than before.
+
+### MCP Registry — API Freeze (v0.1), Open for Submission (CRITICAL STATUS UPDATE)
+
+**Source**: github.com/modelcontextprotocol/registry, registry.modelcontextprotocol.io, blog.modelcontextprotocol.io
+
+The official MCP Registry launched in preview September 2025 and has now entered **v0.1 API freeze** — no breaking changes, stable for integrators. Registered servers are discoverable by all MCP clients. The registry is open for community-driven submissions. Visual tools (Figma, Excalidraw) are listed. Architecture/floor-plan category: empty.
+
+**Skissify status**: STILL ABSENT. This is the 4th consecutive run this is listed as critical. Registry is confirmed operational and accepting submissions.
+
+**Updated urgency quantification**: At ~4,100+ indexed servers (up from 425 mid-2025 — 873% growth), the registry sorts by category and install history. The `architecture`, `floor-plan`, `visual`, `sketch` category slots are filling. First mover advantage in these specific categories closes within weeks, not months.
+
+### SaaS Pricing: "Simplicity Returns" Signal (VALIDATES SKISSIFY'S TRANSPARENT MODEL)
+
+**Source**: metronome.com/state-of-usage-based-pricing-2025, growthunhinged.com, nxcode.io/saas-pricing-guide-2026
+
+- 38% of SaaS now uses UBP (up from 27% in 2023); 70% of buyers will prefer UBP over per-seat by end 2026
+- 43% hybrid models (subscription + usage) — projected 61% by end 2026
+- **Critical new signal**: "In 2026, the pendulum swings back toward simplicity and predictability as the market matures" — buyers are fatigued by overcomplicated credit tiers
+- Companies with consumption-based models grew ~8 percentage points faster on average
+
+**Skissify implication**: EUR 0.005/render (flat, transparent) is exactly what fatigued buyers want after decoding 5-tier credit bundles. Update pricing page copy: "No credit bundles. No tier math. One price: EUR 0.005 per render. That's it." This is a competitive advantage that costs nothing to implement.
+
+### JSON-to-Diagram Space: Still No Hand-Drawn Competitor (CONFIRMED)
+
+**Source**: todiagram.com, aidiagrammaker.com, jsonviewer.tools, dev.to/aidevtools
+
+New tools indexed in Q1 2026: ToDiagram (JSON/YAML/XML → interactive tree/graph), AI Diagram Maker (JSON → class diagrams), JSONViewer.tools (tree + graph visualization). All produce technical/clean vector styles. None have hand-drawn output. None have architectural vocabulary (doors, stairs, dimensions).
+
+**Zero competition in headless JSON→hand-drawn SVG confirmed for 103rd consecutive scan.**
+
+### Updated Competitor Matrix (Run #103 — Thursday April 2, morning)
+
+| Tool | April 2026 Status | Skissify Threat |
+|------|------------------|-----------------|
+| **Excalidraw+** | Jan/Feb feature push complete. Custom AI Tokens, Radar Charts, Waiting Room. Official MCP (26 tools). NO REST API (Issue #10946 still open). | **HIGH — headless gap confirmed moat** |
+| **tldraw** | SDK 4.0 + 25x faster rendering. Manager-based agent template. Image Pipeline template. No render API. | **MEDIUM-STABLE** |
+| **Figma + FigJam** | Claude → FigJam diagrams live. Figma MCP in VS Code/Cursor. Clean vector only. No hand-drawn. No JSON manifest API. | **LOW-MEDIUM** |
+| **Sketch.com** | NEW: AI agent skills (Claude Code + Cursor design-to-code). No hand-drawn, no JSON API, no headless. | **LOW** (distribution opportunity) |
+| **Kroki** | REST multi-format API (Mermaid/PlantUML/D2). No hand-drawn, no architectural vocab. | **LOW-MEDIUM** |
+| **ToDiagram / AI Diagram Maker** | JSON/YAML → clean vector graphs. No hand-drawn, no architectural elements, no REST API. | Low |
+| **Skissify** | Headless JSON→hand-drawn SVG API: uncontested. MCP registry: STILL absent (CRITICAL). | **Uncontested in headless spatial lane** |
+
+---
+
 ## Update: 2026-04-02 — Automated Strategy Run #102 (Early Morning, ~01:50 CET)
 
 ### Status: 6 topics researched. NEW: Figma + Claude FigJam creates editable vector diagrams from conversation (LOW threat — clean style, not hand-drawn). MCP ecosystem confirmed at 10,000+ public servers (up from 6,400 in run #101). Excalidraw January/February 2026 feature audit completed — no REST API, no headless output. tldraw no new release since SDK 4.0 (Sep 2025), still no JSON→SVG render API. SaaS inflation confirmed at 12.2% (5x market). No new "JSON → hand-drawn" competitor identified. Headless JSON→hand-drawn SVG API: uncontested for 102nd consecutive scan.
