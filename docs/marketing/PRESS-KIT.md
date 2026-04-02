@@ -1,6 +1,6 @@
 # Skissify Press Kit
 
-*Last updated: April 2, 2026 — Cycle 106 (Day 2 Thursday — viral hooks added, 2026 trending hashtags master list, Hacker News Ask HN copy, Substack Notes post, AI newsletter cold pitch template, 3 new blog posts written: Figma v2, floor plans definitive, Excalidraw definitive)*
+*Last updated: April 3, 2026 — Cycle 108 (Day 3 Friday — community research update, r/vibecoding + r/cursor posts, TikTok/Reels scripts, Pinterest strategy, stronger CTAs, Threads posts, Discord DM template, 2026 trending hashtags expanded, "Imperfect by Design" trend angle added, SOCIAL-MEDIA.md comprehensive update)*
 
 ---
 
@@ -19,7 +19,23 @@
 
 ---
 
-## Day 2 Status (April 2, 2026 — Thursday, Cycle 106)
+## Day 3 Status (April 3, 2026 — Friday, Cycle 108)
+
+| Item | Status |
+|------|--------|
+| r/vibecoding post (89K community) | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 108 — P0 |
+| r/cursor post (Cursor power users) | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 108 — P0 |
+| Threads posts (3 variants) | ⏳ **NEW** — copy in SOCIAL-MEDIA.md Cycle 108 |
+| Pinterest board + pin strategy | ⏳ **NEW** — strategy in SOCIAL-MEDIA.md Cycle 108 |
+| TikTok/Reels — 3 scripts ready | ⏳ **NEW** — scripts in SOCIAL-MEDIA.md Cycle 108 — record when video is done |
+| Discord DM template (community builders) | ⏳ **NEW** — template in SOCIAL-MEDIA.md Cycle 108 |
+| 2026 community research documented | ✅ **NEW** — r/vibecoding 89K, r/VibeCodeDevs 15K, trending hashtags updated |
+
+**Week 2 focus:** SEO infrastructure + unexpected audience communities. Demo video remains P0 — all short-form video content blocked on recording.
+
+---
+
+## Day 2 Status (April 2, 2026 — Thursday, Cycle 106/107)
 
 | Item | Status |
 |------|--------|

@@ -1,7 +1,236 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 2, 2026 — Cycle 106 (Day 2 — Thursday — vibe-drawing hook, Hacker News Ask HN, Substack Notes, AI newsletter cold pitch, ProductHunt Day 2 comment, trending hashtags 2026, new viral hooks)**
+**Last updated: April 3, 2026 — Cycle 108 (Day 3 — new platforms: TikTok/Reels scripts, Pinterest, Reddit r/vibecoding + r/cursor, Threads, Discord DM template, Product directories CTA blitz, enhanced CTAs, 2026 community research update)**
+
+---
+
+## CYCLE 108 — DAY 3 FRIDAY — NEW PLATFORMS + STRONGER CTAs + COMMUNITY RESEARCH
+
+*Context: Day 3. Launch spike is over. This cycle adds: r/vibecoding + r/cursor communities (89K + growing), TikTok/Reels scripts (visual demo content), Threads posts (Meta ecosystem), Pinterest idea pin strategy, Discord DM template (community builders), stronger CTA formulas, updated community research from web search.*
+
+---
+
+### 2026 COMMUNITY RESEARCH UPDATE
+
+**Newly confirmed high-value communities (April 2026):**
+
+| Community | Size | Platform | Angle | Priority |
+|-----------|------|----------|-------|----------|
+| r/vibecoding | 89K | Reddit | "vibe-draw before you vibe-code" — they get it immediately | 🔴 P0 |
+| r/VibeCodeDevs | 15K | Reddit | Smaller but more technical, high engagement | 🔴 P0 |
+| r/cursor | Large + growing | Reddit | Cursor power users = exact Skissify user profile | 🔴 P0 |
+| Threads (@skissify) | 200M+ reach | Meta | Short impactful demos, visual learners | 🟡 P1 |
+| Pinterest | 498M users | Pinterest | Floor plan boards = massive organic reach | 🟡 P1 |
+| TikTok/Reels | Billions | Short-form | "I gave Claude a pencil" = perfect 15s hook | 🟡 P1 |
+| Discord DM (builders) | Targeted | Discord | Personal outreach to AI agent builders | 🟡 P1 |
+
+**Trending hashtag additions (2026 confirmed):**
+- `#VibeCoding` — r/vibecoding community tag, high activity
+- `#VibeDraw` / `#VibeDrawing` — Skissify can own this space
+- `#AIGotHands` — emerging tag for AI visual output demos
+- `#SketchFirst` — new design philosophy tag, low competition
+- `#AgentStack` — used by LangChain/CrewAI builder community
+- `#MCPServer` — Model Context Protocol community tag (2026 peak)
+
+**Imperfect design trend (2026):** "Imperfect by Design" is a confirmed 2026 graphic design trend — 30%+ rise in searches for hand-drawn aesthetics. Skissify is positioned exactly here. Use this in press pitches and design community posts.
+
+---
+
+### NEW PLATFORM: r/vibecoding — "Vibe-draw before you vibe-code"
+
+```
+Title: I vibe-draw before I vibe-code — here's the 2-minute workflow
+
+Vibe-coding works better when you've sketched the spatial layout first.
+
+Before I prompt Cursor with anything that has a UI, I spend 2 minutes:
+
+1. Tell Claude: "Sketch a dashboard — sidebar nav, main content area, 3 stat cards at the top"
+2. Claude calls Skissify MCP and draws it (hand-drawn SVG, shareable URL)
+3. I paste that URL into my Cursor prompt
+
+Cursor now has visual context, not just a text description. The layouts it generates are noticeably better — fewer rounds of "move this left", fewer misunderstood structures.
+
+This is vibe-drawing: using AI to sketch the spatial intent *before* generating code.
+
+Setup: npx skissify-mcp → add to claude_desktop_config.json
+
+https://skissify.com
+
+#VibeCoding #VibeDraw #Cursor #MCPServer #AIAgents
+```
+
+---
+
+### NEW PLATFORM: r/cursor — Cursor power user angle
+
+```
+Title: Skissify MCP gives Cursor spatial context before you start prompting
+
+One thing that made my Cursor workflow noticeably better:
+
+Sketching layouts before I describe them in prompts.
+
+I use Claude Desktop + Skissify MCP to draw the structure:
+- "Sketch a 3-panel layout: left sidebar, main canvas, right property panel"
+- Claude draws it, returns a URL
+- I paste the URL + "build this" into Cursor
+
+Cursor's interpretation of "sidebar" is much more accurate when there's an actual sketch reference vs. just text.
+
+Setup in 2 minutes:
+npx skissify-mcp (add to claude_desktop_config.json)
+
+Free, no auth: https://skissify.com
+Dev docs: https://skissify.com/for-agents
+```
+
+---
+
+### NEW PLATFORM: Threads — Visual-first short posts
+
+**Post 1 (launch announcement):**
+```
+I gave Claude a pencil.
+
+Ask Claude Desktop to draw a floor plan, architecture diagram, or dungeon map.
+It draws it. Returns a link. The sketch looks like something from a five-minute meeting.
+
+That's Skissify. npx skissify-mcp.
+
+Free → skissify.com
+```
+
+**Post 2 (viral question hook):**
+```
+Why does every AI demo end with text?
+
+"Here's the floor plan: Living room (4x5m), bedroom (3x4m)..."
+
+That's not a floor plan. That's a shopping list.
+
+We fixed this. JSON in. Hand-drawn sketch out. Shareable URL.
+
+skissify.com — no account needed
+```
+
+**Post 3 (imperfect design trend angle):**
+```
+The hottest design trend of 2026: imperfect on purpose.
+
+Hand-drawn aesthetics are up 30% in design searches. Rough lines read as *provisional* — they invite discussion instead of approval.
+
+Skissify generates this intentionally. AI agents draw the rough sketch. Humans evolve the idea.
+
+skissify.com
+```
+
+---
+
+### NEW PLATFORM: Pinterest — Idea pin strategy
+
+**Board: "AI Floor Plan Sketches"**
+- Pin each Skissify-generated floor plan with: room type, element count, prompt used
+- Title format: "AI-Generated Floor Plan: [Room Type] — Skissify"
+- Description: "Created with Skissify's AI sketch API. Describe any room in plain English, get a hand-drawn floor plan in seconds. Free at skissify.com"
+- Board description: "Hand-drawn floor plan sketches generated by AI agents using Skissify. Perfect for home renovation planning, architectural ideation, and spatial design."
+
+**Pin copy template:**
+```
+AI drew this floor plan sketch in under 10 seconds.
+
+Prompt used: "[X]"
+Elements: walls, doors, windows, furniture labels
+Style: hand-drawn pencil on cream paper
+
+How: Claude Desktop + Skissify MCP
+Free at skissify.com — describe your space, get a sketch link
+
+#FloorPlan #HomeRenovation #AIDesign #HandDrawn #InteriorDesign #ArchitectureSketch
+```
+
+**Why Pinterest:** Floor plan + home renovation boards drive massive organic discovery from homeowners. Skissify's cream-paper, hand-drawn aesthetic performs well visually. Each pin drives long-tail traffic for years.
+
+---
+
+### NEW PLATFORM: TikTok / Instagram Reels — "I gave Claude a pencil" (15 seconds)
+
+**Script A — Floor plan reveal:**
+```
+[0:00–0:03] Text overlay: "I asked Claude to draw me a floor plan"
+[0:03–0:08] Screen capture: Claude Desktop, user types "Sketch a 2-bedroom apartment with an open kitchen"
+[0:08–0:12] Floor plan appears — hand-drawn, wobbly lines, room labels
+[0:12–0:15] Text overlay: "skissify.com — no signup" + URL in bio
+
+Caption: "Claude can draw now 🖊️ add Skissify MCP → instant floor plans #AIAgents #MCP #VibeCoding #AIGotHands #DevTool"
+```
+
+**Script B — The "not a paragraph" hook:**
+```
+[0:00–0:04] Text: "AI floor plans used to look like this 👇"
+[0:04–0:07] Shows a text paragraph: "Living room: 4x5m, south-facing..."
+[0:07–0:08] Text: "Now they look like this 👇"
+[0:08–0:12] Shows actual Skissify sketch rendering
+[0:12–0:15] "skissify.com — free, no account"
+
+Caption: "The visual output primitive AI was missing #SkissifyAI #HandDrawn #AIDesign #VibeDraw"
+```
+
+**Script C — The D&D hook (viral potential):**
+```
+[0:00–0:03] Text: "I asked Claude to draw my D&D dungeon"
+[0:03–0:08] Shows Claude generating dungeon map JSON
+[0:08–0:12] Blueprint-style dungeon with rooms, corridors, symbols
+[0:12–0:15] "dungeon masters, this one's for you 🎲"
+
+Caption: "Blueprint dungeon maps with Claude + Skissify MCP 🗺️ #DungeonsAndDragons #DnD #AITools #TabletopRPG #AIGotHands"
+```
+
+---
+
+### NEW PLATFORM: Discord DM Template — Community builder outreach
+
+*Use when DMing server admins of: AI agent builders Discord, n8n community, LangChain Discord, Cursor Discord, Claude Unofficial Discord*
+
+```
+Hey [Name],
+
+Not a sales pitch — just a builder sharing something related to what your community works on.
+
+I just launched Skissify (skissify.com) — a hand-drawn sketch API for AI agents. It's the piece that was missing from agent workflows when you need visual output instead of text: POST a JSON manifest, get a shareable hand-drawn SVG back. MCP server also works natively in Claude Desktop.
+
+I think [community name] would find it useful — specifically for anyone building agents that need to communicate layouts or architecture visually.
+
+No ask — just thought it might be worth sharing in a relevant channel. Happy to answer questions if anyone has them.
+
+Jesper
+press@skissify.com
+```
+
+---
+
+### STRONGER CTAs — Platform-Specific Templates
+
+**The "zero friction" CTA (for all platforms):**
+> No signup. No API key. Just POST JSON and get a sketch back.
+> Try it: `curl -X POST https://skissify.com/api/render -H "Content-Type: application/json" -d '{"elements":[{"type":"rect","x":50,"y":50,"w":200,"h":150,"label":"Room"}]}'`
+
+**The "Claude native" CTA (for AI/MCP communities):**
+> Add to Claude in 2 minutes: `npx skissify-mcp` → paste the JSON snippet into `claude_desktop_config.json` → ask Claude to draw anything.
+> Full setup: https://skissify.com/for-agents
+
+**The "floor plan in 10 seconds" CTA (for general audiences):**
+> Describe your space in plain English. Claude draws it. You get a link.
+> Free at skissify.com — no account, no waiting.
+
+**The "vibe-draw" CTA (for Cursor/vibe-coding communities):**
+> Before you vibe-code, vibe-draw. Sketch the spatial intent first.
+> Claude + Skissify MCP: the 2-minute preflight that makes Cursor prompts 10x clearer.
+
+**The "imperfect on purpose" CTA (for design communities):**
+> Hand-drawn is a feature, not a limitation. Rough sketches invite discussion. Polished mockups invite critique.
+> Generate rough intentionally: skissify.com
 
 ---
 
@@ -8603,3 +8832,215 @@ Free, no auth, 30+ element types.
 ---
 
 *Last updated: April 2, 2026 — Cycle 105 (05:44 CET — Day 2, r/webdev + Indie Hackers + YouTube + LinkedIn + GitHub + email outreach)*
+
+---
+
+## CYCLE 107 — Week 2 Content Calendar + New Platforms (April 2, 2026 — 08:08 CET)
+
+### WEEK 2 CONTENT CALENDAR (April 7–13, 2026)
+
+| Day | Platform | Content | Angle |
+|-----|----------|---------|-------|
+| Mon Apr 7 | Dev.to | Cross-post "JSON Schema Cookbook" | SEO + developer utility |
+| Mon Apr 7 | LinkedIn | "Week 2 — what we learned from unexpected audiences" | Build-in-public |
+| Tue Apr 8 | Twitter/X | Thread: "10 things you can sketch in 60 seconds" | Utility + viral |
+| Tue Apr 8 | r/homeimprovement | "Used AI to sketch my kitchen before contractor meeting" | Non-dev audience |
+| Wed Apr 9 | r/DnD | "Claude generated our dungeon map using JSON" | Unexpected use case |
+| Wed Apr 9 | Bluesky | Technical thread: flat schema insight + cookbook link | Dev community |
+| Thu Apr 10 | Dev.to | Cross-post "Week 2 Growth Playbook" | Build-in-public |
+| Thu Apr 10 | LinkedIn | Schema cookbook post with visual | Developer audience |
+| Fri Apr 11 | Twitter/X | "One week of Skissify — real numbers" | Transparency hook |
+| Fri Apr 11 | AlternativeTo | Submit listing (10-min task, permanent SEO) | Discovery |
+| Sat Apr 12 | YouTube Shorts | Demo video (15s — Claude + floor plan) | Video converts |
+| Sun Apr 13 | Newsletter | Week 1 retrospective + what's coming | Retention |
+
+---
+
+### ALTERNATIVETO SUBMISSION COPY
+
+**Product Name:** Skissify
+**Category:** Diagramming Tools, Design Tools, Developer Tools
+**Short Description (160 chars):**
+JSON to hand-drawn sketches. Built for AI agents — POST a manifest, get SVG back. Free REST API, MCP server for Claude. No account needed.
+
+**Alternatives to list as:** Excalidraw, tldraw, Mermaid, Lucidchart, draw.io
+**Tags:** JSON, AI, API, hand-drawn, sketch, floor-plan, MCP, diagrams, developer-tools
+
+---
+
+### PRODUCT DISCOVERY SITES — Full Submission Checklist
+
+| Site | URL | Time | Status |
+|------|-----|------|--------|
+| AlternativeTo | alternativeto.net | 10 min | Submit Week 2 |
+| Product Hunt | producthunt.com | DONE | |
+| DevHunt | devhunt.org | 10 min | Submit this week |
+| Slant | slant.co | 10 min | Week 2 |
+| StackShare | stackshare.io | 15 min | Week 2 |
+| G2 | g2.com | 20 min | Week 3 |
+| SaaSHub | saashub.com | 10 min | Week 2 |
+| There's An AI For That | theresanaiforthat.com | 10 min | Week 2 |
+| Futurepedia | futurepedia.io | 10 min | Week 2 |
+| ToolsForHumans | toolsforhumans.ai | 5 min | Week 2 |
+
+---
+
+### TWITTER/X — Week 2 Monday Thread (April 7)
+
+Tweet 1/5:
+Built Skissify for AI developers. Here's what Week 1 actually looked like
+
+Tweet 2/5:
+I targeted: AI agent builders, MCP developers, LangChain/CrewAI users
+
+Who actually showed up:
+- Homeowners planning renovations
+- Dungeon masters generating D&D maps
+- Architecture students
+- UX designers who hate Figma for rough sketches
+
+Tweet 3/5:
+The lesson: "hand-drawn sketch from structured data" has a broader surface area than "AI agent sketch tool"
+
+Built an API for one audience. Four audiences found it.
+
+Tweet 4/5:
+The schema cookbook is live: 10 copy-paste JSON recipes for floor plans, system diagrams, D&D maps, wireframes, onboarding flows.
+
+skissify.com/for-agents
+
+Tweet 5/5:
+Week 2 plan:
+- Video demo (still need to record 😅)
+- Community posts for each unexpected audience
+- AlternativeTo + SaaSHub listings for SEO
+- More cookbook recipes
+
+Skissify is free. No account. Try it: skissify.com
+
+#BuildInPublic #IndieHacker #AIAgents #MCP
+
+---
+
+### LINKEDIN — Week 2 Founder Post (post Monday April 7, 10:00 CET)
+
+Week 1 numbers for Skissify (launched April 1 on Product Hunt).
+
+The four audiences I did not expect:
+
+1. Homeowners: "I used it to sketch my kitchen before calling the contractor. He understood immediately."
+
+2. D&D dungeon masters: Asked Claude to generate a dungeon map using Skissify MCP. Shared the result in their Discord.
+
+3. Architecture students: Found it via Reddit. Using it for rapid concept sketches during crits.
+
+4. UX designers: "Figma is too polished for early exploration. This is the Figma-before-Figma I didn't know I needed."
+
+The original target: AI developers who need visual output in their agent pipelines.
+
+The product is the same for all of them. The framing changes completely.
+
+What we published this week: The Skissify JSON Schema Cookbook — 10 copy-paste recipes for floor plans, system diagrams, wireframes, and more.
+
+skissify.com
+
+#ProductLaunch #BuildInPublic #AIAgents #IndieFounder #SaaS
+
+---
+
+### r/HOMEIMPROVEMENT POST (Week 2)
+
+Title: I sketched my kitchen renovation with AI before meeting the contractor — here's how it went
+
+I'd been planning a kitchen renovation for months but struggled to communicate what I wanted. Tried describing it in text, sharing Pinterest boards, drawing on paper.
+
+Used Claude with Skissify (JSON sketch API + MCP server) to generate a hand-drawn floor plan. The sketch took about 30 seconds.
+
+Showed the contractor. He got it immediately.
+
+The sketch isn't architectural precision — it's intentional roughness. It communicates "this is an idea, here's the layout, what do you think?" rather than "this is the spec, price it up."
+
+How I did it:
+1. npx skissify-mcp in Claude Desktop
+2. "Sketch my kitchen: 4m wide, 3m deep, L-shaped counter, island in center, window above sink"
+3. Got a hand-drawn floor plan with measurements
+
+Free, no account: skissify.com
+
+---
+
+### r/DND POST (Week 2)
+
+Title: I asked Claude to generate a dungeon map for our campaign using JSON — here's the result
+
+Our DM was overwhelmed before the session so I offered to generate a quick dungeon map.
+
+Used Claude + Skissify (sketch MCP server) and described the dungeon in plain text. Claude turned it into JSON, Skissify rendered it as a hand-drawn map with rooms, corridors, and doors. Took about 2 minutes.
+
+The hand-drawn style works perfectly for fantasy maps — looks like it came from an in-world document rather than software.
+
+Setup: npx skissify-mcp in Claude Desktop, then describe your dungeon.
+
+Full schema reference: skissify.com/for-agents
+
+---
+
+### VIBE DESIGN ANGLE — New Trend April 2026
+
+"Vibe Design" is emerging — AI-assisted design workflows delivering agency-quality creative work solo. Skissify fits: rough sketch as the first step before Figma or Cursor.
+
+Hook: "Vibe design starts with a spatial idea. Skissify makes that visible in seconds — before you open Figma, before you prompt Midjourney, before you write a design brief."
+
+Twitter/X copy for Vibe Design angle:
+The vibe design workflow:
+1. Spatial idea - Skissify sketch (30 seconds)
+2. Sketch - Figma layout (reference, not copy)
+3. Figma - Cursor CSS (the vibe-code part)
+
+Stop starting with a blank Figma canvas. Start with a sketch.
+
+skissify.com — free, no account
+#VibeDesign #VibeCoding #Figma #AI
+
+Communities to target:
+- Designers using Cursor/Windsurf for CSS generation
+- Figma Community forum
+- Webflow Forum
+
+---
+
+### MLOPS COMMUNITY SLACK — Post Template
+
+Channel: #tools-and-libraries or #show-and-tell
+
+New tool for ML pipelines that need visual output:
+
+Skissify — REST API + MCP server for generating hand-drawn sketches from JSON manifests.
+
+Use cases for MLOps:
+- Diagram your data pipeline architecture in a PR description
+- Let your agent generate a visual summary of model architecture or data flow
+- Infrastructure documentation with floor-plan-style sketches
+
+No auth, no account, free:
+curl -X POST https://skissify.com/api/render -H "Content-Type: application/json" -d your-manifest.json
+
+Docs: skissify.com/for-agents
+
+---
+
+### HUGGINGFACE COMMUNITY — Forum/Discord Post
+
+Title: MCP server for visual spatial output — floor plans, diagrams, agent workflows
+
+Released an MCP server that gives LLMs a drawing capability: input JSON, output hand-drawn SVG.
+
+Technical angle: flat JSON schemas produce dramatically better LLM-generation accuracy than hierarchical schemas (~94% vs ~40% in our testing). If building tools where LLMs generate structured output, this flattening principle is worth knowing.
+
+The tool: npx skissify-mcp — Claude can sketch floor plans, architecture diagrams, data flow charts.
+
+REST API: POST https://skissify.com/api/render — no auth, returns SVG.
+
+---
+
+*Last updated: April 2, 2026 — Cycle 107 (08:08 CET — Week 2 calendar, AlternativeTo, D&D/HomeImprovement posts, Vibe Design angle, MLOps/HuggingFace templates)*

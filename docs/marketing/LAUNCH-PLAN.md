@@ -1,7 +1,125 @@
 # Skissify Launch Plan 🚀
 
 **Launch Date: April 1, 2026**
-**Current Date: April 2, 2026 — Day 2 (SEE CYCLE 106)**
+**Current Date: April 3, 2026 — Day 3 (SEE CYCLE 108)**
+
+---
+
+## NEW IDEAS (Added 2026-04-03, Cycle 108 — Day 3 Friday)
+
+### Cycle 108 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| r/vibecoding post (89K community — "vibe-draw before you vibe-code") | ✅ Added |
+| r/cursor post (Cursor power users — spatial context before prompting) | ✅ Added |
+| Threads posts — 3 variants (floor plan reveal, "not a paragraph" hook, imperfect design trend) | ✅ Added |
+| Pinterest board strategy + pin copy template (floor plan + home renovation angle) | ✅ Added |
+| TikTok/Reels — 3 scripts (floor plan reveal, paragraph vs sketch, D&D dungeon) | ✅ Added |
+| Discord DM template for community builder outreach | ✅ Added |
+| Stronger CTA formulas — 5 platform-specific templates | ✅ Added |
+| 2026 community research: r/vibecoding 89K, r/VibeCodeDevs 15K confirmed | ✅ Added |
+| "Imperfect by Design" 2026 trend angle (30%+ search rise in hand-drawn aesthetics) | ✅ Added |
+| PRESS-KIT.md: Day 3 status table added | ✅ Added |
+
+### Cycle 108 — Priority Actions for Friday April 3 (Day 3)
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, Day 3 FINAL WARNING | ⏳ Record TODAY | 🔴 P0 — CRITICAL, ALL VIDEO CONTENT BLOCKED |
+| Post r/vibecoding (copy Cycle 108) | ⏳ Post 10:00 CET | 🔴 P0 — 89K relevant audience |
+| Post r/cursor (copy Cycle 108) | ⏳ Post 10:00 CET | 🔴 P0 — exact user profile |
+| Submit AlternativeTo (copy Cycle 107) | ⏳ 10-min task | 🔴 P0 — permanent SEO |
+| Submit SaaSHub (copy Cycle 107) | ⏳ 10-min task | 🔴 P0 — permanent SEO |
+| Post Indie Hackers (OVERDUE since Cycle 98) | ⏳ Post NOW | 🔴 P0 |
+| Post Hacker News Show HN if not yet done (copy Cycle 106) | ⏳ 09:00–11:00 CET | 🔴 P0 |
+| Post Threads (3 variants, copy Cycle 108) | ⏳ Morning | 🟡 P1 |
+| Send AI newsletter pitches if not done (copy Cycle 106) | ⏳ Friday AM | 🟡 P1 |
+| Create Pinterest board + first 3 pins (copy Cycle 108) | ⏳ Friday PM | 🟡 P1 |
+| Publish definitive blog posts to Dev.to | ⏳ Friday PM | 🟡 P1 |
+
+### Cycle 108 — New Platforms / Channels Identified
+
+| Channel | Size | Angle | Priority |
+|---------|------|-------|----------|
+| r/vibecoding | 89K | "vibe-draw before you vibe-code" — spatial intent before code | 🔴 P0 — high resonance |
+| r/VibeCodeDevs | 15K | Technical builders, high engagement, API-first angle | 🔴 P0 |
+| r/cursor | Large + growing | Cursor users = exact Skissify target — spatial context angle | 🔴 P0 |
+| Threads (@skissify) | Massive reach | Short demos, visual learners, Meta algorithm push | 🟡 P1 |
+| Pinterest | 498M+ | Floor plan + home reno boards = years of organic traffic | 🟡 P1 — Week 2 |
+| TikTok/Reels | Billions | "I gave Claude a pencil" = perfect 15s viral hook | 🟡 P1 — record video first |
+
+### Cycle 108 — Strategic Insight (Day 3 Transition to Compound Growth)
+
+**The launch window is closing.** Day 3 marks the transition from "launch day energy" to "compound growth infrastructure." Three priorities:
+
+1. **r/vibecoding and r/cursor are the highest-priority untapped communities.** r/vibecoding (89K members) is perfectly primed for "vibe-draw before you vibe-code" — this is exactly their workflow language. r/cursor users are already spatially-minded; they just haven't heard of Skissify yet. Both posts can be done in 30 minutes.
+
+2. **Pinterest and Threads are Week 2 infrastructure.** Not urgent today, but each floor plan pin is a permanent discovery artifact that drives traffic for months. Create the boards now while launch energy is high.
+
+3. **The "Imperfect by Design" trend is a press angle.** 2026 design research confirms 30%+ search growth for hand-drawn aesthetics. This frames Skissify as on-trend for a major design movement — not just an AI tool. Use in press pitches and the design community posts.
+
+---
+
+## NEW IDEAS (Added 2026-04-02, Cycle 107 — Day 2 Thursday 08:08 CET)
+
+### Cycle 107 — New Blog Posts Written (2 new posts)
+
+| Post | File | Angle | Status |
+|------|------|-------|--------|
+| Skissify JSON Schema Cookbook — 10 Copy-Paste Recipes | `blog/skissify-json-schema-cookbook-10-copy-paste-recipes.md` | Practical recipes for devs + AI agents: floor plan, system architecture, API flow, D&D map, network topology, wireframe, garden plan, onboarding flow, microservices, 60-second sketch | ✅ Ready to publish |
+| Week 2 Growth Playbook: Keeping Launch Alive After the Spike | `blog/week-2-growth-playbook-keeping-launch-alive.md` | Honest build-in-public post: Day-by-day week 2 actions, metrics to track, AlternativeTo/SEO infrastructure, the compound curve | ✅ Ready to publish |
+
+### Cycle 107 — SOCIAL-MEDIA.md Enhanced
+
+| Addition | Status |
+|----------|--------|
+| Week 2 content calendar (April 7–13) with platform + angle | ✅ Added |
+| AlternativeTo submission copy (tags, categories, description) | ✅ Added |
+| Product discovery sites full checklist (10 sites, times, priority) | ✅ Added |
+| Twitter/X Week 2 Monday thread (four-audiences revelation) | ✅ Added |
+| LinkedIn Week 2 founder post (four unexpected audiences) | ✅ Added |
+| r/homeimprovement post (kitchen renovation contractor angle) | ✅ Added |
+| r/DnD post (dungeon map via Claude + Skissify MCP) | ✅ Added |
+| Vibe Design angle (April 2026 trend) + target communities | ✅ Added |
+| MLOps Community Slack post template | ✅ Added |
+| HuggingFace community post template | ✅ Added |
+
+### Cycle 107 — Priority Actions for Thursday April 2 (REMAINING — after Cycle 106 tasks)
+
+| Action | Status | Priority |
+|--------|--------|----------|
+| **RECORD DEMO VIDEO** — P0 since Cycle 82, STILL overdue | ⏳ Record TODAY | 🔴 P0 — CRITICAL |
+| Post Hacker News Show HN (copy Cycle 106) | ⏳ 09:00–11:00 CET | 🔴 P0 |
+| Submit to AlternativeTo (copy in Cycle 107) | ⏳ 10-min task | 🔴 P0 — permanent SEO |
+| Submit to SaaSHub + There's An AI For That | ⏳ 20-min total | 🔴 P0 — discovery |
+| Post r/homeimprovement (copy Cycle 107) | ⏳ Thursday PM | 🟡 P1 — non-dev audience |
+| Schedule LinkedIn Week 2 post for Monday April 7 | ⏳ Draft today | 🟡 P1 |
+| Post to HuggingFace Discord (copy Cycle 107) | ⏳ Thursday PM | 🟡 P1 |
+
+### Cycle 107 — New Platforms / Channels Identified
+
+| Channel | Why | Priority |
+|---------|-----|---------|
+| AlternativeTo | "Excalidraw alternative" searches → permanent organic discovery | 🔴 P0 — 10 min |
+| r/homeimprovement (1.2M) | Contractor communication angle is genuinely useful, not a stretch | 🔴 P0 — non-dev audience |
+| r/DnD (5M+) | Dungeon map angle already proven in earlier cycles | 🔴 P0 — viral potential |
+| Vibe Design communities | April 2026 trend — spatial sketching as first step in vibe design workflow | 🟡 P1 — emerging audience |
+| MLOps Community Slack | Pipeline documentation + agent visual output | 🟡 P1 — targeted |
+| HuggingFace community | Flat schema insight resonates with ML practitioners | 🟡 P1 |
+| SaaSHub | Free, permanent, indexes well in Google for tool comparisons | 🔴 P0 — 10 min |
+
+### Cycle 107 — Strategic Insight (Week 2 Pivot to Retention + SEO)
+
+**The launch spike is over.** Day 2 is the last day of high-velocity posting. From Day 3 onward, the strategy shifts to three pillars:
+
+1. **SEO infrastructure** — Directory submissions (AlternativeTo, SaaSHub, Futurepedia) create permanent backlinks that compound. Each one takes 10 minutes and drives traffic for years. We have none of these done. This is Week 2's highest-leverage work after the video.
+
+2. **Unexpected audience content** — The four unplanned audiences (homeowners, D&D players, architecture students, UX designers) are underserved and high-intent. One post in r/homeimprovement or r/DnD can drive more engaged users than ten posts in r/webdev. Write one post per unexpected audience.
+
+3. **JSON Schema Cookbook** — This is the most SEO-valuable piece of content we've created: 10 complete, copy-paste JSON examples that LLMs and developers can use directly. It targets the long-tail keyword "JSON floor plan generator" and every variant. Publish to Dev.to Monday.
+
+**The compound curve starts in Week 2.** Launch day was a spike. Week 2 SEO actions are the first seeds of the compound curve. Every directory submission, every Dev.to cross-post, every unexpected audience community post is a thread that pulls traffic months from now.
 
 ---
 
