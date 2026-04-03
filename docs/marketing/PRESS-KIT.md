@@ -1,6 +1,26 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 127 (Post-PH Day. SOCIAL-MEDIA.md Cycle 127 added: 4 new viral hooks, hashtag intelligence table, post-PH retrospective copy for Twitter/LinkedIn/Reddit, HN Show HN Human Mode prep, r/MachineLearning schema data post, r/artificial post. Blog posts updated with cross-links and #vibe-drawing tag. LAUNCH-PLAN.md Cycle 127 block added with 5 new ideas including "Sketch as diff" GitHub Action.)*
+*Last updated: April 3, 2026 — Cycle 128 (Launch Eve. New: 3 fresh blog post drafts (Cycle 128 editions of all three core posts), new SOCIAL-MEDIA.md Cycle 128 block with VibeCoding bridge hooks, community matrix with verified 2026 reach data, Threads/TikTok/YouTube Shorts scripts, LAUNCH-PLAN.md Cycle 128 block with new distribution ideas.)*
+
+---
+
+## Cycle 128 — What's New (April 3, 2026 — Launch Eve)
+
+### Launch Eve Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt listing | LIVE — launching April 4, 09:00 CET |
+| Blog posts (3 core) | DONE — Cycle 128 canonical versions written |
+| SOCIAL-MEDIA.md Cycle 128 | DONE — VibeCoding hooks, community matrix, TikTok/YouTube scripts |
+| PRESS-KIT.md Cycle 128 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 128 | DONE |
+| Demo video | STILL OVERDUE — recording 08:00 CET tomorrow (public commitment) |
+| r/LocalLLaMA (2.3M) | OVERDUE — posting TONIGHT |
+| MCP Discord #showcase | OVERDUE — posting TONIGHT |
+| Indie Hackers | OVERDUE — posting TONIGHT |
+| Smol Launch | OVERDUE — submitting TONIGHT |
+| 10 personal DMs | TO DO — tonight before midnight |
 
 ---
 

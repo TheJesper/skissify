@@ -1,7 +1,65 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5 — Day 5 / Post-Product Hunt — Cycle 127**
+**Current Date: April 3 — Launch Eve / Product Hunt Tomorrow — Cycle 128**
+
+---
+
+## NEW IDEAS (Added 2026-04-03, Cycle 128 — Launch Eve)
+
+### Cycle 128 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 128 edition (sharper hook, fidelity signal framing, Figma tax named explicitly, napkin phase concept, AI era closing argument) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle128.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 128 edition (three-line setup, full manifest example, flat vs hierarchical benchmark data, 4 real workflows, determinism argument) | `blog/how-ai-agents-can-draw-floor-plans-cycle128.md` | DONE |
+| Blog: "Skissify vs Excalidraw: A 2026 Comparison" — Cycle 128 edition (single framing question, full feature table, "use both" pattern, decision tree) | `blog/skissify-vs-excalidraw-comparison-cycle128.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 128 — VibeCoding bridge hooks, 5 new viral hooks, community matrix with 2026 reach data, Threads/TikTok/YouTube Shorts scripts, full platform timing guide, r/LocalLLaMA post copy, hashtag intelligence table with LinkedIn 2026 note (hashtags deprecated for reach) | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 128 — launch eve status table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 128 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 128 — Priority Actions for TONIGHT & TOMORROW
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | TONIGHT — NOW | Copy in Cycle 128 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | TONIGHT | Copy in SHOW-HN-LIVE-KIT.md |
+| **POST Indie Hackers** — OVERDUE SINCE CYCLE 98 | P0 CRITICAL | TONIGHT | |
+| **SUBMIT Smol Launch** — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | TONIGHT | |
+| **Send 10 personal DMs** — pre-launch activation | P0 CRITICAL | TONIGHT 20:00–22:00 | Templates in Cycle 125 SOCIAL-MEDIA.md |
+| **Post launch eve tweet** (20:00 CET) | P1 | TONIGHT | Copy in Cycle 128 SOCIAL-MEDIA.md |
+| **Post LinkedIn launch eve** | P1 | TONIGHT | Copy in Cycle 128 SOCIAL-MEDIA.md |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | 08:00 TOMORROW | 60s. Claude → floor plan via MCP. Final window. |
+| **Post PH live tweet + LinkedIn + Threads** (09:01 CET) | P0 | 09:01 TOMORROW | Copy in Cycle 128 SOCIAL-MEDIA.md |
+| **Post maker first comment on PH** | P0 | 09:02 TOMORROW | Copy in PRODUCT-HUNT-SUBMISSION.md |
+| **Submit DevHunt** — 7-day window from Show HN | P0 | 09:30 TOMORROW | |
+| **Publish 3 Cycle 128 blogs to Dev.to** | P0 | 10:00 TOMORROW | All 3 cycle 128 blog files |
+
+### Cycle 128 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle128.md | DONE Cycle 128 |
+| Blog: how-ai-agents-can-draw-floor-plans-cycle128.md | DONE Cycle 128 |
+| Blog: skissify-vs-excalidraw-comparison-cycle128.md | DONE Cycle 128 |
+| SOCIAL-MEDIA.md — 5 new viral hooks + community matrix + TikTok script + YouTube script | DONE Cycle 128 |
+| SOCIAL-MEDIA.md — hashtag intelligence table with LinkedIn 2026 algorithm note | DONE Cycle 128 |
+| PRESS-KIT.md — Cycle 128 launch eve status table | DONE Cycle 128 |
+| LAUNCH-PLAN.md — Cycle 128 block | DONE Cycle 128 |
+
+### Cycle 128 — New Ideas
+
+**Idea: VibeCoding is the bridge hashtag.** #VibeCoding has 150,000+ posts/month on X and was Collins English Dictionary Word of the Year 2025. Skissify is the visual output layer for vibe coding workflows. The phrase "vibe drawing" positions us inside an already-viral category. Use in every post this week. Frame: "You can vibe code an app. Now vibe draw the floor plan."
+
+**Idea: LinkedIn hashtags are no longer algorithmic (2026 change).** LinkedIn deprecated hashtag-based content discovery in 2026. The algorithm now uses keyword density, engagement quality, and dwell time. Use 3–4 hashtags as keywords/aesthetic, not for reach. Prioritize first-comment engagement and dwell time signals.
+
+**Idea: The "who is holding the pen?" Excalidraw framing is the sharpest single-sentence positioning.** Leads every comparison. Use in profile bios, PH tagline, and press kit one-liners. Test as PH subtitle.
+
+**Idea: r/homeimprovement (4.8M) is the highest-reach untapped community.** The non-dev angle: "describe your renovation to AI, get a hand-drawn floor plan in 4 seconds." No technical knowledge required. Viral because it's genuinely useful for a massive audience. Post the week after launch.
+
+**Idea: YouTube Shorts is the demo video format.** 60 seconds. Screen capture. Voiceover. No face required. Script written in Cycle 128 SOCIAL-MEDIA.md. Aligns with the demo video that has been P0 FOREVER. One recording = TikTok + Reels + Shorts. Do it after PH day.
+
+**Idea: Community matrix as shareable content.** The community table (15 channels, 2026 reach data) is itself interesting content for the build-in-public audience. "Here's every community we're planning to post to and why" — post as a LinkedIn article or Twitter thread. Transparent distribution strategy posts perform well.
 
 ---
 
