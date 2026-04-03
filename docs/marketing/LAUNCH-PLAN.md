@@ -1,7 +1,42 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4 — Product Hunt Day — Cycle 130**
+**Current Date: April 3 22:41 CET — T-10h Before Product Hunt — Cycle 131**
+
+---
+
+## NEW IDEAS (Added 2026-04-03, Cycle 131 — Launch Night T-10h)
+
+### Cycle 131 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Skissify Doesn't Use Image Generation (And Why That Was the Right Call)" — determinism bet, structured data argument, SVG-as-text embedding, agent era framing, honest DALL-E use cases | `blog/why-skissify-doesnt-use-image-generation.md` | DONE |
+| Blog/Post: r/homeimprovement 4.8M full post copy — body text, title A/B options, adjacent subreddit strategy table, posting notes | `blog/r-homeimprovement-launch-post.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 131 — 5 viral hooks: "determinism bet" image-gen counter-narrative, T-10h founder posts (Twitter + Bluesky), GPT-4o competitive hook, "the one question" thread, r/homeimprovement full post + 5 adjacent subreddits | `SOCIAL-MEDIA.md` | DONE |
+| LAUNCH-PLAN.md Cycle 131 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 131 — Priority Actions for TONIGHT (April 3 — T-10h Window)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST T-10h founder tweet + Bluesky** — authentic anticipation post | P0 | NOW (22:41–23:00 CET) | Copy in Cycle 131 SOCIAL-MEDIA.md |
+| **POST r/LocalLLaMA** — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | TONIGHT BEFORE MIDNIGHT | 2.3M. Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | TONIGHT | |
+| **POST Indie Hackers** — OVERDUE SINCE CYCLE 98 | P0 CRITICAL | TONIGHT | |
+| Sleep, wake 08:30 CET | — | 00:00–08:30 | |
+| **POST PH live tweet + LinkedIn + Bluesky** (09:01 CET) | P0 | 09:01 CET | Copy in Cycle 130 SOCIAL-MEDIA.md |
+| **POST r/homeimprovement** (4.8M) — post-PH week April 7 | P1 | April 7 | Full copy in Cycle 131 SOCIAL-MEDIA.md |
+
+### Cycle 131 — New Ideas
+
+**Idea: The "determinism bet" is the strongest technical counter-argument to image generation.** Same manifest → same sketch, every render. This is the single clearest technical differentiation from DALL-E, Midjourney, and Stable Diffusion for agent workflows. Use in every PH comment thread, HN comment, or Discord where someone asks "why not just prompt an image model?" The blog is staged and ready to publish to Dev.to.
+
+**Idea: r/homeimprovement (4.8M) is the highest-reach non-technical community available.** Full post copy staged in Cycle 131. Post April 7 Monday 10:00–12:00 CET. Cross-post strategy to 5 adjacent subreddits (r/malelivingspace, r/femalelivingspace, r/DesignMyRoom, r/HomeDecorating, r/FirstTimeHomeBuyer) over the following week. This channel has zero AI tool saturation — first mover wins here.
+
+**Idea: GPT-4o image generation is a free controversy hook.** If GPT-4o image capabilities are in the news, the "here's the actual difference" post performs well on Twitter/X. It positions Skissify as the technical alternative rather than a competitor. Frame: creative tool vs. deterministic tool. Copy staged in Cycle 131 SOCIAL-MEDIA.md.
+
+**Idea: The T-10h founder post is the most authentic moment in a launch.** Use the Cycle 131 copy tonight — it's specific (homeowner story), time-bound (10 hours), and honest (fingers crossed). This format consistently outperforms polished feature announcements for engagement.
 
 ---
 

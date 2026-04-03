@@ -1,7 +1,193 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 4, 2026 — Cycle 130 (Product Hunt Day. New: 5 new viral hooks including "the meeting test" narrative, "three-line setup" technical hook, GitHub Actions angle, r/DIY cross-post, post-PH momentum thread. New platforms: Reddit r/ChatGPT (4.1M), Polywork, GitHub Discussions. Full Product Hunt hour-by-hour copy with real-number fill-ins. Bluesky starter pack creation guide. "Vibe Drawing" as owned category content.)**
+**Last updated: April 3, 2026 22:41 CET — Cycle 131 (T-10h before PH. New: 5 viral hooks including "determinism bet" image-gen counter-narrative, r/homeimprovement 4.8M post copy, 22:41 "midnight founder" tweet, GPT-4o competitive hook, "the one question" thread opener. New: post-PH r/homeimprovement strategy + adjacent subreddits.)**
+
+---
+
+## Cycle 131 — April 3, 2026 22:41 CET (T-10 Hours Before Product Hunt)
+
+### Strategic Priority: THIS EXACT WINDOW
+
+It's 22:41 CET. Product Hunt goes live in ~10 hours. This is the last real posting window before the day explodes. Use it for two things: (1) the "night before" authentic founder post that builds anticipation, and (2) pre-position for the channels you'll hit the moment PH is live.
+
+---
+
+### Viral Hook 1: The "Determinism Bet" — Image AI Counter-Narrative
+
+**Why this works:** The first objection every technical person raises is "why not just use DALL-E?" This hook answers it in two sentences and positions Skissify as technically superior for agent use cases, not just different.
+
+**Twitter/X (post as standalone before PH goes live, or use as PH comment reply):**
+```
+Someone will ask: "why not just use image generation for this?"
+
+Here's the answer: same manifest → same sketch, every time. Deterministic. Versioned. Diffable.
+
+Image generation gives you pixels. Skissify gives you a URL you can commit, reference, and reproduce.
+
+For humans: doesn't matter. For AI agents: it's the whole point.
+
+skissify.com
+```
+
+**LinkedIn (slightly expanded — post as "pre-launch technical note"):**
+```
+Before we launch tomorrow, I want to answer the question I know is coming:
+
+"Why didn't you just use image generation?"
+
+Three reasons:
+
+1. Determinism. Same manifest → same sketch, every render. Image generation is stochastic by design. For AI agents that need consistent, reproducible outputs, stochastic is broken.
+
+2. Structure. The JSON manifest is the source of truth. You can modify it, version it, diff it, generate it with code. Pixels don't have a source of truth.
+
+3. Embedding. SVG output means the sketch lives as text. You can grep it, commit it to git, attach it to a PR, inline it in a markdown file. Try that with a JPEG.
+
+Image generation is a creative tool. Skissify is a drawing tool for machines.
+
+Tomorrow at 09:01 CET: skissify.com/launch
+```
+
+---
+
+### Viral Hook 2: T-10h Founder Post (Use Tonight at 22:30–23:00 CET)
+
+**Twitter/X:**
+```
+In 10 hours Skissify goes live on Product Hunt.
+
+I've been building this for 6 months. I keep thinking: what if nobody cares?
+
+Then I remember the homeowner who described her kitchen and said "I've never seen my own renovation plan this clearly before."
+
+She wasn't my target user. She's now my favorite user.
+
+9am CET tomorrow. Fingers crossed.
+```
+
+**Bluesky (same time):**
+```
+T-10 hours before we go live on Product Hunt.
+
+If you're an AI developer: there's an MCP server that lets Claude draw.
+
+If you're a homeowner: there's a text box where you describe your room and get a floor plan.
+
+Both are the same tool. I didn't plan that. It happened.
+
+See you at 9am CET. 🤞
+
+#VibeDrawing #ProductHunt
+```
+
+---
+
+### Viral Hook 3: GPT-4o Image Gen Competitive Hook
+
+**Twitter/X (use if GPT-4o image generation is trending — check before posting):**
+```
+Everyone's talking about GPT-4o image generation.
+
+Here's the difference between AI image gen and Skissify:
+
+AI image gen: prompt → pixels. Non-deterministic. Unstructured. Great for one-off creative work.
+
+Skissify: manifest → SVG sketch. Deterministic. Structured. Same input = same output, every time.
+
+For AI agents that need reproducible visual output? That difference is everything.
+
+skissify.com (launching Product Hunt tomorrow)
+```
+
+---
+
+### Viral Hook 4: "The One Question" Thread Opener (post PH morning, pin to profile)
+
+```
+The one question your AI agent can't answer right now:
+
+"Show me."
+
+It can describe a floor plan. It can write the coordinates. It can explain the layout in three paragraphs.
+
+It cannot draw it.
+
+That's the gap Skissify fills. JSON manifest in. Hand-drawn sketch out. 150ms.
+
+Today on Product Hunt → [link]
+
+Thread 🧵
+```
+
+*Follow-up tweet 1:*
+```
+Here's what "JSON manifest in, sketch out" actually looks like:
+
+You send this:
+{ "elements": [{"type": "room", "label": "Living Room"...}] }
+
+You get back:
+A shareable URL pointing to an SVG that looks hand-drawn.
+
+That URL is stable. Store it. Reference it. Diff it.
+
+2/
+```
+
+*Follow-up tweet 2:*
+```
+The three things agents couldn't do before Skissify:
+
+1. Return a visual output as a typed tool result
+2. Generate a reproducible, URL-based diagram
+3. Attach a sketch to any agent memory, handoff, or report
+
+Now they can. npx skissify-mcp
+
+3/
+```
+
+---
+
+### Viral Hook 5: r/homeimprovement (4.8M) — Full Post Copy
+
+**Target subreddit:** r/homeimprovement
+**Optimal posting time:** April 7 (Monday) 10:00–12:00 CET
+**Title:** I built a free tool that turns room descriptions into hand-drawn floor plan sketches (no signup, no JSON, just describe your room)
+
+**Post body:**
+```
+I'm a developer — I originally built this for AI agent workflows. Then homeowners started using it and I realized the use case was broader than I planned.
+
+The tool is at skissify.com/human. You type a description of your room and get a hand-drawn floor plan back in under 4 seconds. No account, no software, free.
+
+Example input I typed to test it:
+"Living room 5x6m. L-shaped sofa on the south wall. TV unit on the north wall, 2.2m wide. Coffee table between them. Reading chair in the NE corner. Two windows on the east wall."
+
+Output: labeled floor plan with everything positioned correctly, hand-drawn style.
+
+The rough sketch style is intentional — I found that rough sketches get better feedback from contractors and partners than polished renders. People respond to the idea, not the execution.
+
+Use cases people have told me about:
+- Planning furniture arrangement before a move
+- Sketching a renovation idea quickly for a contractor quote
+- Figuring out if a piece of furniture fits the way you're imagining
+- Showing a co-buyer/partner a layout idea
+
+No signup. No account. Free. skissify.com/human
+
+Happy to answer questions. Anyone else using AI tools for renovation planning?
+```
+
+**Adjacent subreddits to cross-post (same week):**
+| Subreddit | Members | Angle |
+|-----------|---------|-------|
+| r/malelivingspace | 1.1M | "Sketch your setup before you buy" |
+| r/femalelivingspace | 1.0M | "Plan your space before the furniture arrives" |
+| r/DesignMyRoom | 650K | "Describe your room, get a sketch back" |
+| r/HomeDecorating | 500K | "AI floor plan for renovation planning" |
+| r/FirstTimeHomeBuyer | 450K | "Free room planning tool — describe, get sketch" |
 
 ---
 
