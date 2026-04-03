@@ -274,8 +274,8 @@ function EditorInner({
   // Command palette
   const [showCommandPalette, setShowCommandPalette] = useState(false);
 
-  // Canvas control ref - lets us trigger resetView from outside the Canvas
-  const canvasControlRef = useRef<{ resetView: () => void } | null>(null);
+  // Canvas control ref - lets us trigger resetView/fitSelection from outside the Canvas
+  const canvasControlRef = useRef<{ resetView: () => void; fitSelection: (indices: number[]) => void } | null>(null);
 
   // Inline text edit state (double-click on text/rect/dim elements)
   const [editingElement, setEditingElement] = useState<{ idx: number; field: string; value: string } | null>(null);
@@ -619,6 +619,16 @@ function EditorInner({
         e.preventDefault();
         setShowCommandPalette((v) => !v);
       }
+
+      // F key → zoom to fit selected elements (or fit all if nothing selected)
+      if (e.key === "f" && !isInput && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+        e.preventDefault();
+        if (selectedElements.size > 0) {
+          canvasControlRef.current?.fitSelection(Array.from(selectedElements));
+        } else {
+          canvasControlRef.current?.resetView();
+        }
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -640,6 +650,13 @@ function EditorInner({
         case "new-sketch": newSketch(); break;
         case "select-same-type": selectSameType(); break;
         case "fit-view": canvasControlRef.current?.resetView(); break;
+        case "fit-selection":
+          if (selectedElements.size > 0) {
+            canvasControlRef.current?.fitSelection(Array.from(selectedElements));
+          } else {
+            canvasControlRef.current?.resetView();
+          }
+          break;
         case "redraw": redraw(); break;
         case "download-png": handleDownload(); break;
         case "download-svg": handleDownloadSVG(); break;

@@ -373,8 +373,8 @@ interface CanvasProps {
   onResizeEnd?: () => void;
   /** Called with current zoom level whenever it changes */
   onZoomChange?: (zoom: number) => void;
-  /** Exposed ref so parent can call resetView() */
-  canvasControlRef?: React.MutableRefObject<{ resetView: () => void } | null>;
+  /** Exposed ref so parent can call resetView() or fitSelection() */
+  canvasControlRef?: React.MutableRefObject<{ resetView: () => void; fitSelection: (indices: number[]) => void } | null>;
   /** Called with element index when user double-clicks an element to edit its text */
   onDoubleClickElement?: (idx: number) => void;
   /** Called when an element type is dropped onto the canvas - receives type + canvas coords */
@@ -531,12 +531,77 @@ export default function Canvas({
     onZoomChange?.(fitZoom);
   }, [canvasW, canvasH, onZoomChange]);
 
-  // Expose resetView via ref
+  /**
+   * Zoom and pan so that the given element indices fill the viewport with padding.
+   * Falls back to resetView() when no indices are provided or bounds can't be computed.
+   */
+  const fitSelection = useCallback(
+    (indices: number[]) => {
+      if (indices.length === 0) {
+        resetView();
+        return;
+      }
+      const container = containerRef.current;
+      if (!container) return;
+
+      // Compute the union bounding box of all selected elements in element-space
+      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+      for (const idx of indices) {
+        const el = sketch.elements[idx];
+        if (!el) continue;
+        const bounds = getElementBounds(el);
+        if (!bounds) continue;
+        minX = Math.min(minX, bounds.x);
+        minY = Math.min(minY, bounds.y);
+        maxX = Math.max(maxX, bounds.x + bounds.w);
+        maxY = Math.max(maxY, bounds.y + bounds.h);
+      }
+
+      if (!isFinite(minX) || !isFinite(minY)) {
+        resetView();
+        return;
+      }
+
+      // Apply the centering transform (same offset as renderer uses)
+      const ct = computeCenterTransform(sketch.elements, canvasW, canvasH);
+      const elemW = maxX - minX;
+      const elemH = maxY - minY;
+
+      // Compute a zoom that fits the selection with padding in the container
+      const cw = container.clientWidth;
+      const ch = container.clientHeight;
+      const padding = 60;
+      const fitZ = safeZoom(Math.min(
+        (cw - padding * 2) / (elemW * ct.scale),
+        (ch - padding * 2) / (elemH * ct.scale),
+        4 // Cap at 4× so we don't zoom in too far on tiny elements
+      ));
+
+      // Center of selection in element-space
+      const centerX = (minX + maxX) / 2;
+      const centerY = (minY + maxY) / 2;
+
+      // Convert to canvas-space (after centering transform)
+      const canvasCX = ct.tx + centerX * ct.scale;
+      const canvasCY = ct.ty + centerY * ct.scale;
+
+      // Pan so the canvas-space center maps to the viewport center
+      setZoom(fitZ);
+      setPan({
+        x: -(canvasCX - canvasW / 2) * fitZ,
+        y: -(canvasCY - canvasH / 2) * fitZ,
+      });
+      onZoomChange?.(fitZ);
+    },
+    [sketch.elements, canvasW, canvasH, resetView, onZoomChange]
+  );
+
+  // Expose resetView + fitSelection via ref
   useEffect(() => {
     if (canvasControlRef) {
-      canvasControlRef.current = { resetView };
+      canvasControlRef.current = { resetView, fitSelection };
     }
-  }, [canvasControlRef, resetView]);
+  }, [canvasControlRef, resetView, fitSelection]);
 
   /**
    * Pan so that element-space coordinate (ex, ey) is centered in the viewport.

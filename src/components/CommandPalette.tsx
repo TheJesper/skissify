@@ -238,6 +238,7 @@ export default function CommandPalette({
     // View actions
     const viewActions = [
       { id: "fit-view", label: "Fit view (zoom to sketch)", description: "0 key", icon: "⊞", keywords: ["fit", "zoom", "view", "reset"] },
+      { id: "fit-selection", label: "Fit selection (zoom to selected)", description: "F key", icon: "⊡", keywords: ["fit", "zoom", "selection", "selected", "focus"] },
       { id: "zoom-in", label: "Zoom in", description: "+", icon: "＋", keywords: ["zoom", "in"] },
       { id: "zoom-out", label: "Zoom out", description: "−", icon: "－", keywords: ["zoom", "out"] },
       { id: "redraw", label: "Redraw (new wobble seed)", description: "Randomizes hand-drawn lines", icon: "🔀", keywords: ["redraw", "seed", "wobble", "random"] },
