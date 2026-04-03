@@ -1,7 +1,51 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 — Launch Eve / Product Hunt Tomorrow — Cycle 128**
+**Current Date: April 4 — Product Hunt Day — Cycle 130**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 130 — Product Hunt Day)
+
+### Cycle 130 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 130 edition (meeting test experiment, premature convergence framing, fidelity mismatch named, AI-native sketching workflow, "rough is a feature" argument) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle130.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 130 edition (actual Claude conversation opener, three-line MCP setup, full 35sqm apartment manifest, flat vs nested JSON benchmark data, four workflows, determinism argument) | `blog/how-ai-agents-can-draw-floor-plans-cycle130.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 130 edition (technical architecture case for why Excalidraw can't be used by agents — headless render gap, React app constraint, production fragility, use-both workflow) | `blog/skissify-vs-excalidraw-comparison-cycle130.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 130 — PH day hour-by-hour copy (5 time slots), 5 new viral hooks (meeting test, GitHub Actions, r/ChatGPT, technical thread, VibeDrawing category), 3 new platforms (r/ChatGPT 4.1M, Polywork, GitHub Discussions), Bluesky starter pack creation guide | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 130 — launch day status table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 130 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 130 — Priority Actions for TODAY (April 4 — Product Hunt Day)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST PH live tweet + LinkedIn + Bluesky** (09:01 CET) | P0 | 09:01 CET | Copy in Cycle 130 SOCIAL-MEDIA.md |
+| **POST maker first comment on PH** | P0 | 09:02 CET | Per PRODUCT-HUNT-SUBMISSION.md |
+| **POST r/LocalLLaMA** — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | NOW — IMMEDIATELY | 2.3M. Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | NOW | |
+| **POST Indie Hackers** — OVERDUE SINCE CYCLE 98 | P0 CRITICAL | MORNING | |
+| **POST r/SideProject** (650K) | P0 | 12:00 CET | Copy in Cycle 130 SOCIAL-MEDIA.md |
+| **POST r/ChatGPT** (4.1M) — NEW CHANNEL | P1 | Afternoon | Copy in Cycle 130 SOCIAL-MEDIA.md |
+| **Publish Cycle 130 blogs to Dev.to** | P0 | 10:00 CET | All 3 cycle 130 blog files |
+| **Hour 1 update tweet** (10:00 CET) | P1 | 10:00 CET | Fill in real numbers |
+| **Evening support ask** (18:00 CET) | P1 | 18:00 CET | Copy in Cycle 130 SOCIAL-MEDIA.md |
+| **Day wrap tweet + LinkedIn** (22:00 CET) | P1 | 22:00 CET | Copy in Cycle 130 SOCIAL-MEDIA.md |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | 08:00 TODAY — LAST CHANCE BEFORE PH | 60s. Claude → floor plan. This is the final window. |
+
+### Cycle 130 — New Ideas
+
+**Idea: r/ChatGPT (4.1M) is a massive untapped channel with the right audience.** The non-technical angle: "ChatGPT describes rooms well. It just can't show them." This audience uses AI daily but is not technical. They don't know what an MCP server is — and they don't need to. The human mode at skissify.com/human works for them with zero setup. Post the non-technical version. Copy ready in Cycle 130 SOCIAL-MEDIA.md.
+
+**Idea: GitHub Actions is a novel and technically credible use case.** A GitHub Action that generates a Skissify floor plan from a JSON manifest and attaches it to PRs as a visual diff. "Code review for spaces." This is a genuine developer workflow that has never been done before. Build it as an open-source action, publish it to the GitHub Actions marketplace, blog it. Viral in developer communities independently of the main Skissify product.
+
+**Idea: "The meeting test" is the Figma post's anchor story.** The experiment (Room A: Figma, Room B: sketch) is the most concrete framing for the "premature convergence" argument. It's testable, specific, and shareable. Use it as the lead for the Figma blog post and as a standalone LinkedIn hook. The data point (18 min on CTA vs 22 min on premise validity) is memorable and quotable.
+
+**Idea: Polywork is an underused platform with high developer quality.** Developer portfolio posts on Polywork have strong discoverability for the "I built this" audience. Zero competition from other AI tools. Copy ready in Cycle 130 SOCIAL-MEDIA.md.
+
+**Idea: VibeDrawing as owned category language.** #VibeCoding is established. #VibeDrawing is the extension — visual output for the vibe coding workflow. Be the first to use this consistently. Post it in every launch-related tweet this week. The term compounds — first-mover advantage on a new search term that will grow as vibe coding grows.
 
 ---
 

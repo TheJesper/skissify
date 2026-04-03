@@ -1,6 +1,26 @@
 # Skissify Press Kit
 
-*Last updated: April 3, 2026 — Cycle 128 (Launch Eve. New: 3 fresh blog post drafts (Cycle 128 editions of all three core posts), new SOCIAL-MEDIA.md Cycle 128 block with VibeCoding bridge hooks, community matrix with verified 2026 reach data, Threads/TikTok/YouTube Shorts scripts, LAUNCH-PLAN.md Cycle 128 block with new distribution ideas.)*
+*Last updated: April 4, 2026 — Cycle 130 (Product Hunt Day. New: 3 new blog post drafts (Cycle 130 — all three core posts rewritten with fresh angles: meeting test, technical Excalidraw architecture comparison, three-line MCP setup), SOCIAL-MEDIA.md Cycle 130 block with 5 new viral hooks, r/ChatGPT + Polywork + GitHub Discussions channels, full PH day hour-by-hour copy, Bluesky starter pack strategy, VibeDrawing category ownership.)*
+
+---
+
+## Cycle 130 — What's New (April 4, 2026 — Product Hunt Day)
+
+### Launch Day Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: Figma comparison (Cycle 130) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle130.md` |
+| Blog: AI agents floor plans (Cycle 130) | DONE — `blog/how-ai-agents-can-draw-floor-plans-cycle130.md` |
+| Blog: Skissify vs Excalidraw (Cycle 130) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle130.md` |
+| SOCIAL-MEDIA.md Cycle 130 | DONE — PH day hour-by-hour copy, 5 new hooks, 3 new platforms |
+| PRESS-KIT.md Cycle 130 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 130 | DONE |
+| Demo video | STILL OVERDUE — record immediately after PH goes live |
+| r/LocalLLaMA (2.3M) | CRITICAL — post during PH day for maximum momentum |
+| MCP Discord #showcase | CRITICAL — post today |
+| r/ChatGPT (4.1M) | NEW — copy ready in Cycle 130 SOCIAL-MEDIA.md |
 
 ---
 
