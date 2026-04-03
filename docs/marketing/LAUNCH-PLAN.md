@@ -1,7 +1,63 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 22:41 CET — T-10h Before Product Hunt — Cycle 131**
+**Current Date: April 4, 2026 — Post-Launch Day — Cycle 132**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 132 — Post-Launch Momentum)
+
+### Cycle 132 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 132 (fidelity-signal framework, artifact certainty rule, AI era workflow, Figma tax reframed as phase mismatch) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle132.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 132 (four production workflows, GitHub Action use case, determinism argument sharpened, human mode section added) | `blog/how-ai-agents-can-draw-floor-plans-cycle132.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 132 (full 13-row feature table, decision tree, "use both" pattern, one-sentence positioning each tool, technical headless render explanation) | `blog/skissify-vs-excalidraw-comparison-cycle132.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 132 — 6 new viral hooks: TikTok/Reels 60s script, r/AI_Agents post, LinkedIn fidelity-signal post, Threads-native hook, Mastodon/fosstodon post, MCP Discord showcase (OVERDUE) | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 132 | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 132 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 132 — Priority Actions (April 4–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST MCP Discord #showcase** — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | TODAY — NOW | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST r/LocalLLaMA** (2.3M) — OVERDUE SINCE CYCLE 111 | P0 CRITICAL | TODAY — NOW | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST Indie Hackers** — OVERDUE SINCE CYCLE 98 | P0 CRITICAL | TODAY | |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | TODAY — last window before momentum dies | 60s, Claude → floor plan via MCP |
+| **POST fosstodon.org** — NEW channel | P1 | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 5) |
+| **POST Threads** — NEW | P1 | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/AI_Agents** — NEW channel | P1 | TODAY/TOMORROW | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 2) |
+| **PUBLISH 3 Cycle 132 blogs to Dev.to** | P0 | TODAY | All 3 cycle 132 blog files |
+| **RECORD TikTok/Reels** | P1 | THIS WEEK | Script in Cycle 132 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/homeimprovement** (4.8M) | P1 | April 7 Monday | Copy in Cycle 131 SOCIAL-MEDIA.md |
+
+### Cycle 132 — New Ideas
+
+**Idea: r/AI_Agents is the highest-quality new channel for launch week.** The subreddit is agent-builder native, growing rapidly in 2026 as agents move from demo to production. The post angle is purely technical (JSON schema, determinism, MCP integration) — this audience responds to substance over story. Copy ready in Cycle 132 SOCIAL-MEDIA.md. Post today or tomorrow.
+
+**Idea: TikTok/Reels/Shorts script is the missing visual asset.** The 60-second voiceover script (Hook 1) requires only screen capture — no face, no production setup. One recording becomes TikTok + Instagram Reels + YouTube Shorts. The demo moment ("then it drew this") is the exact hook format that performs on short-form video. Record this week while the launch energy is live.
+
+**Idea: The "fidelity signal" framework is a stronger Figma post angle than "premature convergence."** The Cycle 132 Figma blog post introduces a simple rule — match artifact fidelity to idea certainty — that is quotable, tweetable, and extends beyond Skissify. This framing works as a standalone LinkedIn post, a Twitter thread opener, and a conference talk premise. Extract and use independently.
+
+**Idea: fosstodon.org is underused and high-quality.** The developer Mastodon instance has strong MCP/open-source audience overlap. Hashtag discovery works well on Mastodon (unlike LinkedIn in 2026). Low saturation from AI tools. Post today.
+
+**Idea: The Excalidraw comparison decision tree is shareable content.** The "Is a human holding the pen?" decision tree from the Cycle 132 comparison blog works as a standalone image post. Screenshot the tree, post as an image on Twitter/LinkedIn/Threads with the caption "Use both — they're not competing." This format (visual decision tree) consistently gets saves and shares.
+
+**Idea: Peerlist for developer portfolio visibility.** Developer portfolio posts on Peerlist have strong discoverability for the "I built this" audience. Zero AI tool saturation. Post a standard "I built Skissify" entry with the MCP setup demo.
+
+### Cycle 132 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle132.md | DONE Cycle 132 |
+| Blog: how-ai-agents-can-draw-floor-plans-cycle132.md | DONE Cycle 132 |
+| Blog: skissify-vs-excalidraw-comparison-cycle132.md | DONE Cycle 132 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update + hashtag refresh | DONE Cycle 132 |
+| PRESS-KIT.md — Cycle 132 post-launch status table | DONE Cycle 132 |
+| LAUNCH-PLAN.md — Cycle 132 block | DONE Cycle 132 |
+| Hashtag research (WebSearch) — r/AI_Agents confirmed, #VibeDrawing confirmed growing | DONE Cycle 132 |
 
 ---
 

@@ -1,6 +1,28 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 130 (Product Hunt Day. New: 3 new blog post drafts (Cycle 130 — all three core posts rewritten with fresh angles: meeting test, technical Excalidraw architecture comparison, three-line MCP setup), SOCIAL-MEDIA.md Cycle 130 block with 5 new viral hooks, r/ChatGPT + Polywork + GitHub Discussions channels, full PH day hour-by-hour copy, Bluesky starter pack strategy, VibeDrawing category ownership.)*
+*Last updated: April 4, 2026 — Cycle 132 (Post-launch. New: 3 new blog posts (Cycle 132 — Figma post with fidelity-signal framework, floor plan post with four production workflows + GitHub Action use case, Excalidraw comparison with full feature table + decision tree), SOCIAL-MEDIA.md Cycle 132 block with 6 new viral hooks (TikTok script, r/AI_Agents, LinkedIn fidelity post, Threads, Mastodon, MCP Discord), platform matrix updated with r/AI_Agents + fosstodon + Peerlist, hashtag refresh.)*
+
+---
+
+## Cycle 132 — What's New (April 4, 2026 — Post-Launch Day)
+
+### Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: Figma comparison (Cycle 132) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle132.md` |
+| Blog: AI agents floor plans (Cycle 132) | DONE — `blog/how-ai-agents-can-draw-floor-plans-cycle132.md` |
+| Blog: Skissify vs Excalidraw (Cycle 132) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle132.md` |
+| SOCIAL-MEDIA.md Cycle 132 | DONE — TikTok script, r/AI_Agents, LinkedIn, Threads, Mastodon, Discord |
+| PRESS-KIT.md Cycle 132 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 132 | DONE |
+| Demo video | STILL OVERDUE — record today, final window |
+| r/LocalLLaMA (2.3M) | CRITICAL — post immediately, overdue 5+ cycles |
+| MCP Discord #showcase | CRITICAL — post immediately, overdue 5+ cycles |
+| r/AI_Agents | NEW — post this week, copy ready in Cycle 132 SOCIAL-MEDIA.md |
+| fosstodon.org | NEW — post today, copy ready in Cycle 132 SOCIAL-MEDIA.md |
+| TikTok/Reels/Shorts | NEW — script ready, record this week |
 
 ---
 
