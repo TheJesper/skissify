@@ -256,11 +256,17 @@ function ElementCoordEditor({
       { key: "w", label: "w" },
       { key: "h", label: "h" },
     ];
-  } else if (["window", "opening", "door-symbol", "door-slide", "column"].includes(element.type)) {
+  } else if (["window", "opening", "door-symbol", "door-slide"].includes(element.type)) {
     fields = [
       { key: "x", label: "x" },
       { key: "y", label: "y" },
       { key: "w", label: "w" },
+    ];
+  } else if (element.type === "column") {
+    fields = [
+      { key: "cx", label: "cx" },
+      { key: "cy", label: "cy" },
+      { key: "s", label: "s" },
     ];
   } else if (["bed", "sofa", "dining-table", "armchair", "desk", "bookshelf", "stove", "shower", "toilet", "bathtub", "sink"].includes(element.type)) {
     // Furniture & fixture elements — all use bounding box (x, y, w, h)
@@ -695,6 +701,31 @@ function ElementCoordEditor({
                 }`}
               >
                 {d === "left" ? "← Left" : "→ Right"}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Wall orientation toggle — shown for window, opening, door-symbol, door-slide */}
+      {["window", "opening", "door-symbol", "door-slide"].includes(element.type) && (
+        <div>
+          <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1.5">
+            Wall orientation
+          </label>
+          <div className="flex gap-1">
+            {(["h", "v"] as const).map((dir) => (
+              <button
+                key={dir}
+                onClick={() => onUpdate(elementIdx, { wall: dir })}
+                className={`flex-1 px-2 py-1.5 rounded text-xs font-medium transition-all ${
+                  (el.wall as string | undefined ?? "h") === dir
+                    ? "ring-2 ring-[#268bd2] bg-[#fdf6e3] text-[#073642]"
+                    : "bg-[#fdf6e3] hover:bg-[#e8e0cc] text-[#586e75]"
+                }`}
+                title={dir === "h" ? "Horizontal wall (runs left–right)" : "Vertical wall (runs up–down)"}
+              >
+                {dir === "h" ? "— Horizontal" : "| Vertical"}
               </button>
             ))}
           </div>
