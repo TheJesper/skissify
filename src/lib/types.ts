@@ -448,6 +448,12 @@ export interface SketchData {
   width?: number;
   height?: number;
   sessionSeed?: number;
+  /**
+   * Human-readable name for this sketch, e.g. "Villa Ekvägen — Ground Floor".
+   * Shown in the toolbar title, used as the filename when downloading, and passed
+   * as the `title` field when saving to the API.
+   */
+  title?: string;
   /** Default font for text/label elements */
   textFont?: SkissifyFont;
   /** Default font for dimension labels */

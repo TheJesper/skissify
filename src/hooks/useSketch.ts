@@ -129,6 +129,12 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [updateSketch]
   );
 
+  /** Set the human-readable title of the sketch (shown in toolbar, used for file names and API save). */
+  const setTitle = useCallback(
+    (title: string) => updateSketch({ title: title.trim() || undefined }),
+    [updateSketch]
+  );
+
   const loadPreset = useCallback((name: string) => {
     const preset = presets[name];
     if (preset) {
@@ -1270,6 +1276,7 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setRenderStyle,
     setSnapGrid,
     setMetadata,
+    setTitle,
     reorderSelected,
     toggleLockSelected,
     alignSelected,

@@ -158,6 +158,7 @@ function EditorInner({
     setRenderStyle,
     setSnapGrid,
     setMetadata,
+    setTitle,
     rotateElementSilent,
     commitRotate,
     reorderSelected,
@@ -248,7 +249,12 @@ function EditorInner({
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      const filename = sketchSlug
+      const titleSlug = sketch.title
+        ? sketch.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+        : null;
+      const filename = titleSlug
+        ? `skissify-${titleSlug}.png`
+        : sketchSlug
         ? `skissify-${sketchSlug}.png`
         : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.png`;
       a.download = filename;
@@ -263,7 +269,12 @@ function EditorInner({
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    const filename = sketchSlug
+    const titleSlug = sketch.title
+      ? sketch.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+      : null;
+    const filename = titleSlug
+      ? `skissify-${titleSlug}.svg`
+      : sketchSlug
       ? `skissify-${sketchSlug}.svg`
       : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.svg`;
     a.download = filename;
@@ -277,7 +288,12 @@ function EditorInner({
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    const filename = sketchSlug
+    const titleSlug = sketch.title
+      ? sketch.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+      : null;
+    const filename = titleSlug
+      ? `skissify-${titleSlug}.json`
+      : sketchSlug
       ? `skissify-${sketchSlug}.json`
       : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.json`;
     a.download = filename;
@@ -395,7 +411,7 @@ function EditorInner({
       const res = await fetch("/api/sketches", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: sketch, title: "Untitled Sketch" }),
+        body: JSON.stringify({ data: sketch, title: sketch.title || "Untitled Sketch" }),
       });
       if (res.ok) {
         const { slug } = await res.json();
@@ -714,6 +730,7 @@ function EditorInner({
         autosaveSavedAt={autosaveSavedAt}
         drawMode={drawMode}
         onDrawModeChange={setDrawMode}
+        onRenameSketch={setTitle}
       />
       {showAutosaveToast && (
         <div className="fixed top-16 left-1/2 -translate-x-1/2 z-[100] px-4 py-2 bg-[#eee8d5] border border-[#93a1a1] text-[#586e75] text-sm font-medium rounded-lg shadow-lg flex items-center gap-2">

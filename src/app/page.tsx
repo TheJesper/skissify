@@ -204,6 +204,7 @@ function EditorInner({
     setInkColor,
     setTextFont,
     setDimFont,
+    setTitle,
     loadPreset,
     updateFromJson,
     addElement,
@@ -442,7 +443,12 @@ function EditorInner({
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      const filename = sketchSlug
+      const titleSlug = sketch.title
+        ? sketch.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+        : null;
+      const filename = titleSlug
+        ? `skissify-${titleSlug}.png`
+        : sketchSlug
         ? `skissify-${sketchSlug}.png`
         : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.png`;
       a.download = filename;
@@ -458,7 +464,12 @@ function EditorInner({
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    const filename = sketchSlug
+    const titleSlug = sketch.title
+      ? sketch.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+      : null;
+    const filename = titleSlug
+      ? `skissify-${titleSlug}.svg`
+      : sketchSlug
       ? `skissify-${sketchSlug}.svg`
       : `skissify-${new Date().toISOString().slice(0, 19).replace(/[T:]/g, "-")}.svg`;
     a.download = filename;
@@ -487,7 +498,7 @@ function EditorInner({
       const res = await fetch("/api/sketches", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: sketch, title: "Untitled Sketch" }),
+        body: JSON.stringify({ data: sketch, title: sketch.title || "Untitled Sketch" }),
       });
       if (res.ok) {
         const { slug } = await res.json();
@@ -802,6 +813,7 @@ function EditorInner({
         autosaveSavedAt={autosaveSavedAt}
         drawMode={drawMode}
         onDrawModeChange={setDrawMode}
+        onRenameSketch={setTitle}
       />
 
       {/* Welcome toast */}

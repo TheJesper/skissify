@@ -27,6 +27,8 @@ interface ToolbarProps {
   drawMode?: boolean;
   /** Called when the user toggles freehand draw mode from the toolbar */
   onDrawModeChange?: (active: boolean) => void;
+  /** Called when the user renames the sketch from the toolbar title */
+  onRenameSketch?: (newTitle: string) => void;
 }
 
 export default function Toolbar({
@@ -46,6 +48,7 @@ export default function Toolbar({
   autosaveSavedAt,
   drawMode = false,
   onDrawModeChange,
+  onRenameSketch,
 }: ToolbarProps) {
   const { data: session } = useSession();
   const [saving, setSaving] = useState(false);
@@ -59,6 +62,10 @@ export default function Toolbar({
   const [showOverflowMenu, setShowOverflowMenu] = useState(false);
   const overflowRef = useRef<HTMLDivElement>(null);
   const importInputRef = useRef<HTMLInputElement>(null);
+  // Inline sketch title editing
+  const [editingTitle, setEditingTitle] = useState(false);
+  const [titleDraft, setTitleDraft] = useState("");
+  const titleInputRef = useRef<HTMLInputElement>(null);
 
   const showToast = useCallback((msg: string) => {
     setToast(msg);
@@ -96,6 +103,25 @@ export default function Toolbar({
 
   const handleMakePrivate = useCallback(() => {
     setShowProModal(true);
+  }, []);
+
+  // Title editing handlers
+  const handleTitleClick = useCallback(() => {
+    if (!onRenameSketch) return;
+    setTitleDraft(sketch?.title || "");
+    setEditingTitle(true);
+    // Focus input on next tick after render
+    setTimeout(() => titleInputRef.current?.select(), 0);
+  }, [onRenameSketch, sketch?.title]);
+
+  const commitTitle = useCallback(() => {
+    if (!editingTitle) return;
+    setEditingTitle(false);
+    if (onRenameSketch) onRenameSketch(titleDraft);
+  }, [editingTitle, titleDraft, onRenameSketch]);
+
+  const cancelTitle = useCallback(() => {
+    setEditingTitle(false);
   }, []);
 
   const handleImportClick = useCallback(() => {
@@ -287,8 +313,42 @@ export default function Toolbar({
         </span>
       )}
 
-      {/* Spacer */}
-      <div className="flex-1" />
+      {/* Sketch title — centered, click to rename */}
+      <div className="flex-1 flex items-center justify-center px-2">
+        {onRenameSketch && editingTitle ? (
+          <input
+            ref={titleInputRef}
+            autoFocus
+            value={titleDraft}
+            maxLength={80}
+            placeholder="Untitled Sketch"
+            onChange={(e) => setTitleDraft(e.target.value)}
+            onBlur={commitTitle}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") { e.preventDefault(); commitTitle(); }
+              if (e.key === "Escape") { e.preventDefault(); cancelTitle(); }
+            }}
+            className="text-sm font-medium text-center rounded px-2 py-0.5 outline-none max-w-[280px] w-full"
+            style={{
+              backgroundColor: "#fdf6e3",
+              color: "#073642",
+              border: "1px solid #268bd2",
+            }}
+          />
+        ) : (
+          <button
+            onClick={handleTitleClick}
+            title={onRenameSketch ? "Click to rename sketch" : undefined}
+            className={`text-sm max-w-[280px] truncate leading-none px-2 py-0.5 rounded transition-colors ${
+              onRenameSketch
+                ? "text-[#586e75] hover:text-[#073642] hover:bg-[#fdf6e3] cursor-text"
+                : "text-[#93a1a1] cursor-default"
+            }`}
+          >
+            {sketch?.title || (onRenameSketch ? "Untitled Sketch" : "")}
+          </button>
+        )}
+      </div>
 
       {/* Share button */}
       {savedSlug && (
