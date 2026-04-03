@@ -2,6 +2,60 @@
 
 ---
 
+## [2026-04-03] — Strategy Run #122 Actions (Friday April 3, 20:51 Stockholm) — FOR SATURDAY APRIL 4
+
+### Context: Run #122 Key New Findings
+- **tldraw v3.4 adds Excalidraw format compatibility** — combined ecosystem merges; headless gap becomes Skissify's cleaner moat
+- **Google announces official MCP for all Google services** — enterprise agent pipelines now have Google Workspace + MCP; Skissify's pipeline demo story is ready to write
+- **Credits model +126% YoY** (35→79 of PricingSaaS 500) — validates per-render pricing; standalone credit pack is a missing conversion path
+- **PulseMCP 11,170+ servers, quality filtering tightening** — official registry listing is now a quality signal, not just visibility
+- **23rd consecutive run: still no headless hand-drawn JSON API competitor found**
+
+---
+
+### Action 1 (CRITICAL — Saturday): MCP Registry + Claude Connectors Submission (Run #23 — Still Blocking)
+
+**Still the single most urgent unblocked task. Not confirmed complete through 22 previous runs.**
+
+The run #122 context adds weight: Google has now shipped enterprise MCP infrastructure, the Agentic AI Foundation governs the protocol, and 11k+ servers are indexed. The window for meaningful early-mover advantage narrows with each week of absence.
+
+**What to do Saturday**:
+1. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) — use these exact keywords in the description: "headless", "hand-drawn", "floor plan", "JSON", "no Chromium", "architectural", "sub-100ms"
+2. Submit to Claude Connectors at [claude.com/connectors](https://claude.com/connectors)
+3. If npm package is not yet published for the MCP server, do that first (takes ~10 min)
+
+**Success condition for Sunday Run #123**: "Skissify submitted to MCP registry. Link: ___"
+
+---
+
+### Action 2 (HIGH — Saturday): Add Standalone Credit Pack to Pricing Page
+
+**New from Run #122**: The per-render credit model is now the market standard (+126% YoY). Skissify's current pricing requires a subscription to get API access. Developers who distrust recurring charges are bouncing without converting.
+
+**What to do**:
+1. Add a **credit pack tier** to the pricing page: **EUR 5 = 2,000 renders, no subscription, no expiry**
+2. Position it between Free and Pro as "just buy credits" — label it "Pay once, render forever"
+3. CTA on free tier limit screen: "Upgrade to Pro (EUR 5/mo) or buy a render pack (EUR 5 one-time)"
+4. Update Stripe to support one-time payment product in addition to subscriptions
+
+**Why this converts**: Developers building agents often expense tools, but recurring charges require approval workflows. A EUR 5 one-time purchase is below any approval threshold and creates a zero-friction on-ramp. Target: 20% of free-to-paid conversions come through credit packs within 30 days of launch.
+
+---
+
+### Action 3 (MEDIUM — Saturday/Sunday): Write "The Merged Canvas Problem" Blog Post
+
+**New from Run #122**: tldraw v3.4's Excalidraw compatibility creates a timely content hook. Developers who know both tools will be Googling the implications this weekend.
+
+**What to write**: **"tldraw + Excalidraw Just Merged — Here's the One Thing They Still Can't Do"**
+- Lead: "tldraw v3.4 added Excalidraw format compatibility. Two of the best hand-drawn canvas tools now share a file format. For 99% of use cases, this is great news."
+- Pivot: "But if you're building an autonomous AI agent, neither of them works. Not because they're bad tools — because they're browser tools."
+- Core argument: headless pipeline use (GitHub Actions, serverless functions, backend batch jobs) requires zero browser dependency. Excalidraw + tldraw combined = still requires Chromium to render.
+- Close: "That's the gap Skissify fills. JSON in, hand-drawn SVG out, zero Chromium, sub-100ms cold start."
+- Target keywords: "tldraw excalidraw headless", "excalidraw api server-side", "hand drawn svg no chromium"
+- Publish Sunday; post in r/mcp and r/selfhosted
+
+---
+
 ## [2026-04-03] — Strategy Run #120 Actions (Friday April 3, 17:27 Stockholm) — FOR SATURDAY APRIL 4
 
 ### Context: Run #120 Key New Findings

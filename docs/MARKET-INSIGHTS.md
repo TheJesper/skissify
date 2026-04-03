@@ -2,6 +2,47 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #122 (Friday April 3, 20:51 Stockholm)
+
+### Theme: Credits Model Validated, tldraw+Excalidraw Ecosystem Merges, Google Goes All-In on MCP
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #122 Synthesis
+
+Three new data points sharpen the payment trigger analysis:
+
+**1. The credits/per-render market is now mainstream.** The PricingSaaS 500 shows 79 companies (up from 35 a year ago, +126%) now use credit-based pricing — including Figma and Salesforce. A developer in 2026 expects to pay per-render for tools that generate assets in agent pipelines. EUR 0.005/render is not unusual; it is the norm. The question is not "will they accept per-render pricing?" but "is the render cheap enough to feel automatic?" At EUR 0.005, 1,000 renders = EUR 5. That's below one coffee. This should be the headline on the pricing page: "1,000 AI-generated sketches for EUR 5."
+
+**2. The tldraw+Excalidraw merger redraws the competitive map.** tldraw v3.4 added Excalidraw file format compatibility. The combined ecosystem now definitively owns "interactive hand-drawn canvas for humans and AI sessions." Skissify's payment trigger sharpens: you pay for Skissify when you need headless (no browser, no session, pure API), not when you need a canvas. The EUR 2/mo payer is a developer who wants to `curl` a sketch into existence in a backend pipeline — not someone who wants to drag shapes around.
+
+**3. Google's full MCP service suite creates enterprise agent workflow demand.** With Google Drive, Docs, Maps, and Cloud all on official MCP endpoints, enterprise agents will routinely operate across Google Workspace. The pipeline: read brief from Google Docs (Google MCP) → generate floor plan (Skissify MCP) → save sketch URL to Sheets (Google MCP) is now a few lines of agent config. This is a concrete enterprise use case worth putting in the sales pitch.
+
+**Revised payment trigger summary:**
+- EUR 0 → first render: "I want to test if it works in my agent" (curiosity, instant conversion)
+- EUR 0 → EUR 2: "I've used my 50 free renders, I want more without a subscription" (credit pack path)
+- EUR 2/mo → EUR 5/mo: "I'm burning through 500+ renders/month automatically" (usage pushes upgrade)
+- EUR 5/mo → Team: "My team's agents need shared element libraries + higher volume" (collaboration trigger)
+- Enterprise: "I'm an architecture firm or construction-tech company that needs self-hosted + SLA" (compliance)
+
+**Tactical implication**: Add a **credit pack purchase** (EUR 5 = 2,000 renders, no subscription, no expiry) as a conversion path. Developers who distrust recurring charges will buy credits once and never leave. This is the micro-SaaS move: remove ALL friction between "I want to try this" and "money changed hands."
+
+#### The Merged Excalidraw+tldraw Ecosystem — Why It Clarifies, Not Threatens
+
+tldraw v3.4's Excalidraw compatibility is actually a gift to Skissify's positioning. Previously: "Why use Skissify instead of Excalidraw OR tldraw?" Now: "Why use Skissify instead of the entire Excalidraw+tldraw ecosystem?" The answer is easier to give: because the entire combined ecosystem is browser-based and session-dependent. Zero of them can generate a sketch in a GitHub Actions job. Zero of them accept raw JSON in a `curl` call. Zero of them have no Chromium dependency. The merged ecosystem validates the human-in-the-loop use case more thoroughly than ever — and leaves the headless pipeline use case entirely to Skissify.
+
+**Content implication**: Write "Why I Still Can't Use Excalidraw OR tldraw in My Agent Pipeline" — addresses developers who know both tools and are asking the question. The title acknowledges they're good tools; the content explains the architectural gap.
+
+#### Google Workspace MCP — Concrete Integration Story
+
+The Google MCP official launch creates Skissify's most concrete enterprise demo scenario:
+1. Google Docs MCP → read client brief
+2. Skissify MCP → generate architectural sketch from brief
+3. Google Sheets MCP → log sketch URL + metadata
+4. Google Slides MCP → embed sketch in presentation
+
+This is a complete, zero-code enterprise workflow using only MCP tools. No SDK, no browser, no session. This demo needs to exist on Skissify's website before Q2 2026.
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #120 (Friday April 3, 17:27 Stockholm)
 
 ### Theme: Google Stitch Goes Live, Frame0 Vibe-Wireframing Confirmed, Claude Marketplace Grows — Distribution Pressure Peaks

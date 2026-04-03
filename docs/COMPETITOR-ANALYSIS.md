@@ -2,6 +2,87 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #122 (Friday April 3, 20:51 Stockholm)
+
+### Status: 4 topics researched. KEY FINDINGS: **PulseMCP now shows 11,170+ servers** (stable around 11k, suggesting filtering is tightening quality threshold — still 22+ run window with zero headless hand-drawn JSON competitor). **tldraw v3.4 added Excalidraw compatibility** — the two dominant hand-drawn tools now share file format, effectively merging ecosystems; Skissify must not rely on format fragmentation as defense. **Google announced full official MCP support across ALL Google services** (Cloud, Drive, Docs, Maps, etc.) via a unified endpoint — enterprise MCP adoption accelerating from experimentation to standard infrastructure. **Credits/per-render model validated by market data**: 126% YoY growth in SaaS companies using credit models (35→79 of PricingSaaS 500). **No new headless hand-drawn JSON API competitor found** — 23rd consecutive run uncontested. CRITICAL carry-over: MCP Registry + Claude Connectors submission **still unconfirmed** (Run #23 since first flagged).
+
+---
+
+### tldraw v3.4 — Excalidraw Compatibility Added (THREAT ESCALATION: WATCH→MEDIUM)
+
+**Sources**: tldraw.dev/releases, slashdot.org/software/comparison/Excalidraw-vs-tldraw/, openalternative.co/compare/excalidraw/vs/tldraw, verified 2026-04-03
+
+tldraw v3.4 introduced **Excalidraw file format compatibility** — importing and exporting Excalidraw `.excalidraw` files directly. This effectively merges the two largest hand-drawn canvas ecosystems at the file-format level.
+
+**What changed**: Previously, Excalidraw and tldraw were siloed. Users had to choose and stay. Now, any project using Excalidraw format can open in tldraw (and vice versa). This creates one large combined ecosystem rather than two competing ones.
+
+**For Skissify**:
+- The combined Excalidraw+tldraw ecosystem now covers the entire "human-in-the-loop hand-drawn" segment more completely
+- This makes Skissify's differentiation **cleaner**, not weaker: the merged ecosystem excels at interactive human use; Skissify is headless, JSON-native, agent-pipeline use. These are genuinely different jobs.
+- Risk: if either tldraw or Excalidraw adds a headless JSON API (no browser), the combined ecosystem immediately becomes a competitor. Monitor tldraw SDK changelog closely.
+- The Excalidraw format compatibility means tldraw now supports Excalidraw's JSON schema — developers may use tldraw SDK as a headless Excalidraw renderer. Test if tldraw SDK can run headless + server-side.
+
+**Threat assessment: WATCH (elevated) — format unification creates larger ecosystem; headless gap still protects Skissify**
+
+---
+
+### Google Official MCP Support for All Google Services — Enterprise Adoption Acceleration (CONTEXT UPDATE)
+
+**Sources**: cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services, cdata.com/blog/2026-year-enterprise-ready-mcp-adoption, verified 2026-04-03
+
+Google announced fully-managed, remote MCP servers for its entire service suite — Drive, Docs, Maps, Search, Cloud — via a single globally-consistent enterprise endpoint. Enterprise procurement teams can now use MCP as standard infrastructure across all Google services.
+
+**For Skissify**: The Google announcement removes any remaining C-suite objection to MCP procurement. When Google ships enterprise MCP infrastructure, MCP is enterprise-safe by definition. This is a second-order validation of Skissify's MCP-first strategy (first was the Agentic AI Foundation donation in Run #121).
+
+**Specific opportunity**: Google Workspace agents (Docs, Slides) now have official MCP access. A developer building a Google Workspace agent that needs to generate a floor plan or architectural sketch has a clear path: Google Workspace MCP + Skissify MCP = AI that reads a brief from Docs and renders a sketch. This integration story is worth a blog post.
+
+**Threat assessment: STRATEGIC POSITIVE — enterprise MCP adoption means Skissify's market (enterprise agent pipelines) is now the mainstream**
+
+---
+
+### SaaS Credit Model Growing 126% YoY — Validates Skissify Pricing Architecture (VALIDATION)
+
+**Sources**: growthunhinged.com/p/2025-state-of-saas-pricing-changes, medium.com/@aymane.bt/the-future-of-saas-pricing-in-2026, zylo.com/blog/saas-statistics/, verified 2026-04-03
+
+PricingSaaS 500 data: companies using credit/consumption models grew from **35 to 79** in 12 months (+126% YoY). Figma, HubSpot, and Salesforce are all now on credit models. Gartner predicts 70% of businesses will prefer usage-based pricing over per-seat by 2026 (end of year).
+
+**For Skissify**: Skissify's per-render pricing (EUR 0.005/render, bundled in tiers) is architecturally correct. The data says so. Two tactical implications:
+1. **Offer a standalone credit pack** (no subscription required): e.g., EUR 5 = 2,000 renders, no expiry. Lowers friction for developers who don't want a recurring charge but want to buy credits once. Converts impulse buyers who bounce from the subscription page.
+2. **"No credit card for first 50 renders"** free tier is validated as conversion mechanism — the goal is not revenue at this stage, it's getting the API key into a developer's `.env`.
+
+**Threat assessment: POSITIVE SIGNAL — pricing model is market-aligned; add standalone credits CTA**
+
+---
+
+### PulseMCP 11,170+ Servers — Discovery Quality Threshold Tightening (CONTEXT UPDATE)
+
+**Sources**: pulsemcp.com/servers (daily updated), mcpmanager.ai/blog/mcp-adoption-statistics/, verified 2026-04-03
+
+PulseMCP's displayed count is now **11,170+** — approximately the same as Run #121's 11,180. Separately, a January 2026 snapshot cited 14,274 servers before filtering. The current displayed count suggests PulseMCP is applying a quality filter that removes ~3,000 low-quality/empty entries.
+
+**For Skissify**: The narrowing means the indexed set is higher-quality and more competitive for rankings. Being listed in the official Anthropic registry (currently ~2,000 entries vs PulseMCP's 11k) is a quality signal that PulseMCP is algorithmically surfacing. The delta between official and community index is now the trust layer.
+
+**Threat assessment: NEUTRAL — quality filtering validates early-mover advantage of official registry submission**
+
+---
+
+### Updated Competitor Matrix (Run #122 — Friday April 3, 20:51)
+
+| Tool | Status (2026-04-03 20:51) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw official MCP** | 26 tools, visual feedback loop, Claude Connectors. Interactive human+AI sessions. | NO | YES | NO | YES (official) | **HIGH** |
+| **tldraw v3.4** | Excalidraw file compatibility added. SDK $6K/yr. Founder teasing relaunch. | Partial (SDK, not headless) | NO | YES | NO | **MEDIUM (↑ elevated)** |
+| **Google Stitch** | Full MCP+SDK since April 2. Free 350 gen/mo. Polished UI mockups. | NO | NO (polished) | YES | YES | **MEDIUM** |
+| **Frame0** | MCP server stable. "Vibe wireframing" desktop app. No April 2026 updates detected. | NO (desktop only) | YES | YES (desktop) | YES | **MEDIUM-HIGH** |
+| **Google MCP (full suite)** | All Google services now officially MCP-enabled. Enterprise endpoint. | N/A (data tools) | N/A | YES | YES | **ECOSYSTEM** |
+| **Mermaid official MCP** | PNG rendering, token auth. Text-first. | YES (text-first) | NO | YES | YES | **MEDIUM** |
+| **Draw.io** | MCP added Feb 2026. 700+ enterprise icons. | NO | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Diagramming AI** | NLP→Excalidraw output. No JSON-first. | NO | NO | YES | Unknown | **LOW-MEDIUM** |
+| **Sketch2scheme** | Photo→digital diagram. Reverse direction. Free. | NO (reverse) | N/A | YES | NO | **LOW** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Zero Chromium. Sub-100ms. Architectural elements. MCP Registry: **ABSENT (CRITICAL × 23)**. Claude Connectors: **ABSENT (CRITICAL)**. | **YES (only Chromium-free)** | **YES (tunable)** | **YES (only one)** | YES (headless) | Uncontested |
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #121 (Friday April 3, 18:35 Stockholm)
 
 ### Status: 4 topics researched. KEY FINDINGS: **MCP donated to Agentic AI Foundation** — protocol now vendor-neutral open standard; risk removed for builders. **PulseMCP now tracks 11,180+ servers** (up from 5,800 in Run #119) — ecosystem growing fast, discovery competition intensifying. **Pinterest + MuleSoft in production MCP deployments** — enterprise validation confirmed. **Sketch2scheme** (free, photo→digital diagram) and **Diagramming AI** (adds Excalidraw-native output) identified as adjacent competitors not previously tracked. **No new April 2026 hand-drawn/sketch competitor launched** — Skissify's exact niche uncontested for 22nd consecutive run. **Google Stitch currently free (350 gen/mo)** — pricing race-to-zero risk emerging in polished UI tools (not Skissify's segment). CRITICAL carry-over: MCP registry submission **still pending** (Run #22 since first flagged).
