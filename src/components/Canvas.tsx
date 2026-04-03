@@ -375,8 +375,8 @@ interface CanvasProps {
   onZoomChange?: (zoom: number) => void;
   /** Exposed ref so parent can call resetView() or fitSelection() */
   canvasControlRef?: React.MutableRefObject<{ resetView: () => void; fitSelection: (indices: number[]) => void } | null>;
-  /** Called with element index when user double-clicks an element to edit its text */
-  onDoubleClickElement?: (idx: number) => void;
+  /** Called with element index and screen coordinates when user double-clicks an element to edit its text */
+  onDoubleClickElement?: (idx: number, clientX: number, clientY: number) => void;
   /** Called when an element type is dropped onto the canvas - receives type + canvas coords */
   onDropElement?: (type: string, canvasX: number, canvasY: number) => void;
   /** Called when user picks an action from the right-click context menu */
@@ -1036,7 +1036,7 @@ export default function Canvas({
           const editable = getElementText(el);
           if (editable !== null) {
             onSelectElements(new Set([i]));
-            onDoubleClickElement(i);
+            onDoubleClickElement(i, e.clientX, e.clientY);
           }
           return;
         }

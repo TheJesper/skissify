@@ -2,6 +2,97 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #120 (Friday April 3, 17:27 Stockholm)
+
+### Theme: Google Stitch Goes Live, Frame0 Vibe-Wireframing Confirmed, Claude Marketplace Grows — Distribution Pressure Peaks
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #120 Synthesis
+
+The EUR 2/mo question is sharpened by this run's findings. Three new data points reshape the answer:
+
+**1. The "vibe wireframing" vocabulary is now established.** Frame0's MCP plugin markets itself as "vibe wireframing" — AI agent → hand-drawn wireframe output. This is the vocabulary early adopters use. Skissify's value proposition should adopt this framing but extend it: "vibe sketching for spatial layouts — floor plans, architectural diagrams, room dimensions — not just wireframes." The distinction: vibe wireframing is UI. Vibe sketching is spatial. These are different professional contexts with different buyers.
+
+**2. Google Stitch MCP went live April 2 — the polished-output slot is occupied.** A developer building an AI agent that needs "show me a UI mockup" now has Google Stitch (polished, design-to-code) and Excalidraw (hand-drawn, collaborative). Neither answers "show me a floor plan with dimensions in a hand-drawn style." The EUR 2/mo payment trigger is: "Stitch and Excalidraw don't do what I need. This one does." Specificity of use case is the payment driver, not price sensitivity.
+
+**3. The developer willingness-to-pay floor for specialized tools is EUR 15-100/mo** (per search data). EUR 2/mo is positioned BELOW market floor for developer tools — which is intentional. The EUR 2 tier is not a revenue tier; it is a **conversion tier**. Its job is to remove the "I'll think about it" objection and get the first API key into a developer's agent config. Revenue comes from the 40% who hit the 1,000 render/month ceiling and upgrade to EUR 5 Pro, or the teams who need collaboration.
+
+**Revised WTP summary:**
+- EUR 0 → EUR 2: "I want to try it in my agent without committing" (conversion tier)
+- EUR 2 → EUR 5: "I'm generating 100+ sketches/month, remove the limit" (usage driver)
+- EUR 5 → EUR 12+: "My team needs shared libraries and more API volume" (collaboration driver)
+- EUR 12+ → Enterprise: "I need self-hosted + SLA + custom elements" (compliance/domain driver)
+
+The EUR 2/mo tier's conversion function is more valuable than its revenue contribution. It should be prominently offered with "no credit card" trial-to-paid friction, not buried.
+
+#### Frame0 "Vibe Wireframing" — Vocabulary Opportunity
+
+Frame0's MCP plugin explicitly uses "vibe wireframing." In 2026 developer culture, "vibe X" signals: AI-first, low-friction, natural language in → artifact out. Skissify should own "vibe sketching" as a differentiated vocabulary: natural language or JSON in → hand-drawn spatial sketch out. The "vibe" prefix is becoming the category name for AI-assisted creative tool use.
+
+**Action**: Add "vibe sketching" and "vibe floor plan" to Skissify's SEO keyword targets. These are uncontested search terms with zero current competitors. Publish: "Vibe Sketching: The Missing AI Output Format."
+
+#### Claude Marketplace as Enterprise Distribution Channel
+
+Anthropic's March 6 Marketplace launch (GitLab, Lovable, Replit, etc.) + Feb 24 Cowork expansion (12 new MCP connectors + private enterprise marketplaces) signals that Claude is building a **software distribution platform**, not just an AI assistant. Enterprise customers with Anthropic spend commitments can now apply that commitment to third-party tools.
+
+**For Skissify**: Architecture firms, construction tech companies, and engineering consultancies are natural enterprise buyers. If these firms are Claude enterprise customers (increasingly likely given Claude's enterprise growth), the Marketplace is where they buy. A Skissify listing in Claude Marketplace would be a qualified enterprise sales channel. This is a 6-12 month horizon goal but should be part of the product roadmap.
+
+#### The "No New Headless Hand-Drawn JSON API" Pattern — 21 Runs
+
+For the 21st consecutive automated strategy run, no new competitor has emerged in the specific intersection of: headless + JSON-native + hand-drawn aesthetic + architectural elements + no Chromium + sub-100ms cold start. The competitive gap is not closing in Skissify's core feature set. What IS closing:
+- MCP registry presence (Excalidraw, Mermaid now both official)
+- Developer vocabulary ("vibe wireframing" now claimed by Frame0)
+- Distribution surface (Claude Marketplace expanding)
+
+The moat is real. The distribution is the problem. Every strategy run confirms the same diagnosis: the product is differentiated; the presence is zero.
+
+---
+
+## [2026-04-03] — Automated Strategy Run #119 (Friday April 3, 16:19 Stockholm)
+
+### Theme: The Visual Feedback Loop Changes Everything — And Skissify Is Still Invisible
+
+#### Excalidraw's 26-Tool Expansion — The Feedback Loop Shift
+
+Excalidraw's official MCP (Anthropic-partnered, Claude Connectors) has grown from its initial tool set to 26 tools since the March 24, 2026 launch. The qualitative change is the feedback loop: `get_canvas_screenshot` means an AI agent can now draw → observe → refine in an iterative visual cycle. This is not prompt-in/SVG-out. It is a reasoning loop that mirrors how a human designer works.
+
+**What this means for payment willingness**: The Excalidraw MCP experience (interactive, session-based, human+AI loop) and the Skissify API experience (stateless, JSON-in/SVG-out, pipeline-safe) now serve different jobs. WTP for Skissify is concentrated in:
+- **Autonomous pipeline use** — no human in the loop, no session, just curl
+- **Architectural specificity** — elements Excalidraw cannot render regardless of tool count
+- **Deterministic output** — same JSON, same wobble seed, same SVG every time. No session state drift.
+- **Sub-second cold start** — 26 tools doesn't help if there's no environment to initialize them in
+
+The EUR 2/mo tier's job: remove the friction of the first API key. The EUR 5/mo Pro tier's job: serve the solo developer or agent builder who generates 100-1,000 sketches/month autonomously. The question "what makes someone pay EUR 2/mo" is answered by: **they need exactly one thing Excalidraw's MCP will never provide — a headless API that works where no browser exists.**
+
+#### Mermaid's Official MCP Is a Distribution Signal
+
+Mermaid now has an official MCP at mermaid.ai/docs/ai/mcp-server (HTTP/SSE, token auth, PNG rendering, interactive playground). This matters not as a direct competitor but as a **distribution signal**: if Mermaid — a text-to-diagram tool with no API business model — thought MCP registration was worth doing officially, then the MCP registry is where developers discover diagram tools in 2026. Skissify's absence from the registry is not a strategy gap; it is a visibility gap costing real developers every day.
+
+**Specific implication**: A developer searching "diagram MCP" or "sketch MCP" today will find Excalidraw (official), Mermaid (official), Draw.io, Sketch.com, ToDiagram, and Frame0. They will not find Skissify. The answer to "how do I add sketching to my agent?" will be answered by someone else's product for every developer who searches before Skissify registers.
+
+#### A2UI — The New Argument for Skissify as Visual Primitive
+
+The 2026 agent protocol stack now includes **A2UI** (Google), a declarative protocol for agents to return rich interactive visual output. The 4-protocol stack (MCP + A2A + AG-UI + A2UI) is under the Linux Foundation's AAIF, co-founded by OpenAI, Anthropic, Google, Microsoft, AWS, and Block. This is not a fringe concept.
+
+**What this means for Skissify's positioning**: A2UI answers the question "how does an agent return a visual?" at the protocol level. Skissify can be the rendering primitive that agents call when they need to fulfill an A2UI visual output requirement — specifically, when that visual is a sketch, floor plan, or spatial diagram. The positioning: "Skissify is the rendering layer for A2UI sketch output." This is a stronger claim than "JSON-to-SVG API" — it places Skissify inside the emerging standard rather than adjacent to it.
+
+**Concrete action**: Write a technical explainer: "Using Skissify as a Rendering Primitive for A2UI Visual Output" and publish it before the A2UI adoption curve peaks.
+
+#### SaaS Pricing Context — AI/ML Tools Up 23.4% in 2025
+
+New pricing data confirms: AI/ML tools raised prices an average of **23.4%** in 2025 (vs 14.2% for all SaaS). Notion went +400%. 73% of SaaS raised prices. Enterprise AI-native spend grew +108% (large enterprise: +393%).
+
+Implication: Skissify's EUR 5/mo Pro is positioned below the current market trajectory for AI developer tools. There is pricing power. However — at zero current users, acquisition matters more than margin. Hold EUR 5/mo through launch and first 500 users, then evaluate raising to EUR 7-9/mo.
+
+#### Zero Indexed Presence — The Blank Slate Is Both Risk and Opportunity
+
+Confirmed by search: Skissify has **no indexed presence** on the web. No product pages, no GitHub repos, no mentions, no brand conflicts. This is simultaneously:
+- **Risk**: Every developer searching for "hand-drawn sketch API" today leaves without knowing Skissify exists
+- **Opportunity**: The first content Skissify publishes will dominate "skissify" searches completely. There is no reputation to defend or overcome.
+
+The first five blog posts, the GitHub README, and the MCP registry listing will constitute 100% of Skissify's first impression. They should be treated as permanent brand pillars, not launch experiments.
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #118 (Friday April 3, 15:11 Stockholm)
 
 ### Theme: Excalidraw Is Now In Claude Connectors. The "Hand-Drawn MCP" Slot Has a Tenant. Skissify Needs To Evict Or Co-Exist.

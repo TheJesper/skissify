@@ -279,7 +279,8 @@ function EditorInner({
   const canvasControlRef = useRef<{ resetView: () => void; fitSelection: (indices: number[]) => void } | null>(null);
 
   // Inline text edit state (double-click on text/rect/dim elements)
-  const [editingElement, setEditingElement] = useState<{ idx: number; field: string; value: string } | null>(null);
+  // clientX/clientY = screen position of the double-click for positioned overlay
+  const [editingElement, setEditingElement] = useState<{ idx: number; field: string; value: string; clientX: number; clientY: number } | null>(null);
 
   useEffect(() => {
     if (restoredFromAutosave) {
@@ -309,19 +310,19 @@ function EditorInner({
 
   // Inline text editing handlers
   const handleDoubleClickElement = useCallback(
-    (idx: number) => {
+    (idx: number, clientX: number, clientY: number) => {
       const el = sketch.elements[idx];
       if (!el) return;
       if (el.type === "text") {
         const t = el as unknown as Record<string, unknown>;
         const val = (t.text ?? t.content ?? "") as string;
-        setEditingElement({ idx, field: "text", value: val });
+        setEditingElement({ idx, field: "text", value: val, clientX, clientY });
       } else if (el.type === "rect") {
         const r = el as unknown as Record<string, unknown>;
-        setEditingElement({ idx, field: "label", value: (r.label ?? "") as string });
+        setEditingElement({ idx, field: "label", value: (r.label ?? "") as string, clientX, clientY });
       } else if (el.type === "dim") {
         const d = el as unknown as Record<string, unknown>;
-        setEditingElement({ idx, field: "label", value: (d.label ?? "") as string });
+        setEditingElement({ idx, field: "label", value: (d.label ?? "") as string, clientX, clientY });
       }
     },
     [sketch.elements]
@@ -384,7 +385,12 @@ function EditorInner({
           break;
         case "edit-text": {
           const idx = [...selectedElements][0];
-          if (idx !== undefined) handleDoubleClickElement(idx);
+          if (idx !== undefined) {
+            // When triggered from command palette, center the popup on screen
+            const cx = typeof window !== "undefined" ? window.innerWidth / 2 : 640;
+            const cy = typeof window !== "undefined" ? window.innerHeight / 2 : 400;
+            handleDoubleClickElement(idx, cx, cy);
+          }
           break;
         }
         default:
@@ -965,22 +971,34 @@ function EditorInner({
           }}
         />
 
-        {/* Inline text editing overlay */}
-        {editingElement && (
-          <div className="absolute inset-0 flex items-center justify-center z-50 bg-black/20">
-            <div className="rounded-xl shadow-2xl p-4 flex flex-col gap-3 w-80" style={{ backgroundColor: "#073642", border: "1px solid #268bd2" }}>
-              <label className="text-xs font-semibold uppercase tracking-wide" style={{ color: "#93a1a1" }}>
-                Edit {editingElement.field === "label" ? "label" : "text"}
-                {editingElement.field === "text" && (
-                  <span className="ml-2 normal-case font-normal text-[10px]" style={{ color: "#586e75" }}>Shift+Enter = new line · Enter = save</span>
-                )}
-              </label>
+        {/* Inline text editing overlay — positioned near the clicked element */}
+        {editingElement && (() => {
+          // Clamp so the popup (w=288, max-h≈160) stays within viewport
+          const POPUP_W = 288;
+          const POPUP_H = editingElement.field === "text" ? 140 : 90;
+          const vw = typeof window !== "undefined" ? window.innerWidth : 1280;
+          const vh = typeof window !== "undefined" ? window.innerHeight : 800;
+          const left = Math.max(8, Math.min(editingElement.clientX - POPUP_W / 2, vw - POPUP_W - 8));
+          const top  = Math.max(8, Math.min(editingElement.clientY + 18, vh - POPUP_H - 8));
+          return (
+            <div
+              className="fixed z-50 rounded-xl shadow-2xl p-3 flex flex-col gap-2"
+              style={{ left, top, width: POPUP_W, backgroundColor: "#073642", border: "1px solid #268bd2", boxShadow: "0 8px 32px rgba(0,0,0,0.45)" }}
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "#93a1a1" }}>
+                  {editingElement.field === "label" ? "Edit label" : "Edit text"}
+                </span>
+                <span className="text-[9px]" style={{ color: "#586e75" }}>
+                  {editingElement.field === "text" ? "Shift+↵ = newline · ↵ = save · Esc" : "↵ = save · Esc"}
+                </span>
+              </div>
               {editingElement.field === "text" ? (
                 <textarea
                   autoFocus
                   rows={Math.max(2, editingElement.value.split("\n").length + 1)}
-                  className="w-full rounded px-3 py-2 text-sm outline-none resize-none"
-                  style={{ backgroundColor: "#002b36", color: "#839496", border: "1px solid #268bd2" }}
+                  className="w-full rounded px-2.5 py-1.5 text-sm outline-none resize-none"
+                  style={{ backgroundColor: "#002b36", color: "#93a1a1", border: "1px solid #268bd2", fontFamily: "inherit" }}
                   value={editingElement.value}
                   onChange={(e) => setEditingElement((prev) => prev ? { ...prev, value: e.target.value } : null)}
                   onKeyDown={(e) => {
@@ -991,8 +1009,8 @@ function EditorInner({
               ) : (
                 <input
                   autoFocus
-                  className="w-full rounded px-3 py-2 text-sm outline-none"
-                  style={{ backgroundColor: "#002b36", color: "#839496", border: "1px solid #268bd2" }}
+                  className="w-full rounded px-2.5 py-1.5 text-sm outline-none"
+                  style={{ backgroundColor: "#002b36", color: "#93a1a1", border: "1px solid #268bd2", fontFamily: "inherit" }}
                   value={editingElement.value}
                   onChange={(e) => setEditingElement((prev) => prev ? { ...prev, value: e.target.value } : null)}
                   onKeyDown={(e) => {
@@ -1001,25 +1019,25 @@ function EditorInner({
                   }}
                 />
               )}
-              <div className="flex gap-2 justify-end">
+              <div className="flex gap-1.5 justify-end">
                 <button
                   onClick={cancelInlineEdit}
-                  className="px-3 py-1.5 rounded text-xs"
+                  className="px-2.5 py-1 rounded text-[11px]"
                   style={{ backgroundColor: "#073642", color: "#657b83", border: "1px solid #586e75" }}
                 >
                   Cancel
                 </button>
                 <button
                   onClick={commitInlineEdit}
-                  className="px-3 py-1.5 rounded text-xs font-semibold"
+                  className="px-2.5 py-1 rounded text-[11px] font-semibold"
                   style={{ backgroundColor: "#268bd2", color: "#fdf6e3" }}
                 >
                   Save
                 </button>
               </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
       </div>
 
       {/* Mobile FAB */}

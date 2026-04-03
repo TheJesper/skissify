@@ -2,6 +2,135 @@
 
 ---
 
+## [2026-04-03] — Strategy Run #120 Actions (Friday April 3, 17:27 Stockholm) — FOR SATURDAY APRIL 4
+
+### Context: Run #120 Key New Findings
+- **Google Stitch MCP server + SDK live (April 2, 2026)** — design-to-code, infinite canvas, voice canvas mode; design AI niche now has MCP-enabled polished output tool
+- **Frame0 "vibe wireframing" MCP confirmed** — hand-drawn wireframe + agent integration live on desktop; elevated to MEDIUM-HIGH threat; vocabulary "vibe wireframing" is market vocabulary now
+- **Claude Marketplace launched (March 6)** — enterprise distribution platform beyond Connectors; GitLab, Lovable, Replit, Snowflake as partners; Skissify absent from all channels
+- **Excalidraw+ Custom AI Tokens** — enterprises can use own API keys; confirms Excalidraw doubling down on interactive UX, NOT headless
+- **21st consecutive run: no new headless hand-drawn JSON API competitor found**
+
+---
+
+### Action 1 (CRITICAL — Saturday): MCP Registry + Claude Connectors Submission (Same as #119 — Still Blocking)
+
+**This action was assigned in Runs #118 and #119 and is not yet confirmed complete. It is the single most urgent unblocked task.**
+
+Run #120 adds new urgency: Google Stitch MCP (April 2) means the registry now has a fresh entry in the "design tool + MCP" category. The window for being an "early mover" in agent design tooling is measured in days, not weeks.
+
+**What to do Saturday**:
+1. Confirm Skissify's MCP server is published as an npm package (required for most registry submissions)
+2. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) — tool name, description, category: "diagram/visualization", key differentiators: headless, zero Chromium, JSON-native, architectural elements (floor plans, doors, windows, stairs, dimensions)
+3. Check Claude Connectors submission path at [claude.com/connectors](https://claude.com/connectors) and submit there in parallel
+4. Note: Claude Marketplace (enterprise tier) is a 6-12 month horizon — but Connectors is achievable now
+
+**Success condition for Sunday Run #121**: "Skissify submitted to MCP registry and/or Claude Connectors."
+
+---
+
+### Action 2 (HIGH — Saturday): Publish "Vibe Sketching" SEO Content — Claim Uncontested Vocabulary
+
+**New from Run #120**: Frame0 owns "vibe wireframing." Google, Excalidraw, and Mermaid own their respective terms. "Vibe sketching" is uncontested. So are "vibe floor plan," "vibe sketch API," and "AI sketch tool for spatial layouts."
+
+**What to do**:
+1. Write a short (600-900 word) blog post: **"Vibe Sketching: The AI Output Format Nobody Talks About"**
+   - Angle: LLMs can write code, generate images, produce data — but they can't sketch a floor plan. Not because of intelligence, but because of output format. Vibe sketching is what happens when you give an agent a spatial output primitive. Here's how it works.
+   - Include: a JSON example that generates a simple floor plan → rendered Skissify sketch output
+   - Include: comparison table (Vibe Coding → code / Vibe Wireframing → UI / Vibe Sketching → spatial)
+2. Add "vibe sketching" as a primary SEO keyword across the site homepage, meta description, and README
+3. Publish to blog + post in r/mcp or r/LocalLLaMA as "I noticed nobody uses LLMs for spatial sketching — here's why and what I built"
+
+**Why now**: "Vibe X" is the most-searched AI-action vocabulary pattern of Q1 2026. Getting "vibe sketching" indexed this weekend costs zero; waiting costs the term.
+
+---
+
+### Action 3 (MEDIUM — Saturday/Sunday): Google Stitch Comparison Post — Capture New Search Traffic
+
+**New from Run #120**: Google Stitch MCP launched April 2 — 24 hours ago. Developers building design AI pipelines will now search "stitch vs excalidraw vs mermaid" and "google stitch alternatives." Zero content exists for these queries yet. Skissify can be first.
+
+**What to do**:
+1. Write: **"Google Stitch vs Excalidraw vs Skissify: Three Tools, Three Jobs"**
+   - Stitch: polished UI mockup → code. For design-to-dev workflows.
+   - Excalidraw: interactive hand-drawn diagrams. For human+AI collaborative sessions.
+   - Skissify: headless hand-drawn spatial sketches via JSON API. For autonomous agent pipelines and floor plans.
+   - Key line: "All three have MCP support. Only one works where there's no browser."
+2. Target keywords: "google stitch mcp alternative", "stitch vs skissify", "ai sketch tool no browser"
+3. Publish Sunday before the "Google Stitch MCP" SERP fills up
+
+**Why Saturday/Sunday matters**: A new Google product release generates peak organic search in the 48-72 hours post-launch. Stitch launched April 2. Peak search window: April 3-5. We are inside it.
+
+---
+
+## [2026-04-03] — Strategy Run #119 Actions (Friday April 3, 16:19 Stockholm) — FOR SATURDAY APRIL 4
+
+### Context: Run #119 Key New Findings
+- **Excalidraw MCP expanded to 26 tools** — `get_canvas_screenshot` + `describe_scene` + `export_to_image` → AI has iterative visual feedback loop. Threat elevated.
+- **Mermaid official MCP server live** (mermaid.ai/docs/ai/mcp-server) — PNG rendering, HTTP/SSE, token auth. Official registry competitor #2 confirmed.
+- **tldraw re-launch teased** by Steve Ruiz (Substack). Scope unknown. Monitor.
+- **A2UI protocol (Google)** — 4th agent protocol, specifically for agent-generated rich visual output. Placed under Linux Foundation AAIF alongside MCP, A2A, AG-UI.
+- **Skissify has zero indexed web presence** — blank slate. First content dominates everything.
+- **MCP ecosystem: 5,800+ servers, 97M monthly downloads** — registry is how developers find tools.
+
+---
+
+### Action 1 (CRITICAL — Saturday): Submit to Official MCP Registry
+
+**Problem**: 5,800+ servers in the MCP registry. Excalidraw (26 tools, Anthropic-partnered) and Mermaid (official server, PNG rendering) are both listed. Skissify is absent for the **20th consecutive strategy run**. Every search for "diagram MCP", "sketch MCP", "hand-drawn API" returns competitors. Skissify does not appear.
+
+**What to do**:
+1. Go to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) — review submission format and required fields
+2. Prepare listing data: tool name, description (emphasize: headless, zero Chromium, JSON-native, architectural elements), category (diagram/visualization), link to npm package or Docker image, usage example
+3. Submit. If there is a GitHub-based submission process (PR to the registry repo), do it Saturday.
+4. Ensure Skissify's MCP server is published as an npm package FIRST (required for most registry submissions)
+5. Simultaneously check Claude Connectors submission path (anthropic.com/claude/connectors developer docs)
+
+**Why Saturday**: This is a prerequisite for everything else. Claude Connectors, organic MCP discovery, and developer referrals all flow from registry presence. Run #120 should be able to confirm: "Skissify is listed in MCP registry."
+
+**Time: 1-3 hours (depending on what's already built). Blocker removed: invisible in every discovery channel.**
+
+---
+
+### Action 2 (HIGH — Saturday): Write and Publish "Skissify vs Mermaid vs Excalidraw — The Complete MCP Diagram Comparison 2026"
+
+**Context**: Mermaid's official MCP makes a 3-way comparison the highest-traffic SEO target in Skissify's category. Developers in 2026 will search "best diagram MCP", "mermaid vs excalidraw vs skissify", "headless diagram API" — and they will find nothing about Skissify. This post is the fix.
+
+**Content structure**:
+| Dimension | Mermaid MCP | Excalidraw MCP | Skissify API |
+|---|---|---|---|
+| Input format | Text (Mermaid syntax) | JSON (element schema) | JSON (spatial schema) |
+| Output | PNG, playground link | SVG via canvas session | SVG, standalone |
+| Headless? | YES | NO (session required) | YES |
+| Chromium needed? | NO | YES (browser env) | NO |
+| Hand-drawn style? | NO | YES (fixed) | YES (tunable) |
+| Architectural elements? | NO | NO | YES (doors, stairs, dim) |
+| Cold start | Fast | 3-8s (browser init) | <100ms |
+| MCP registry | Official | Official (Claude Connectors) | Coming soon |
+
+**Angle**: Not "Skissify is best" (can't claim that with zero users). Instead: "Three tools, three jobs — which one fits your agent pipeline?" Positions Skissify as complementary to both while capturing developer search traffic.
+
+**Publish to**: Blog, r/mcp subreddit, r/MachineLearning, HN Watch HN (if content is strong enough). This blog draft already exists at `docs/marketing/blog/skissify-vs-mermaid-vs-excalidraw-complete-guide.md` — check if it predates the Mermaid official MCP news and update accordingly.
+
+**Time: 2-3 hours (update existing draft + publish). SEO value: captures 3-way comparison queries before Skissify is even known.**
+
+---
+
+### Action 3 (HIGH — Saturday/Sunday): Draft "Skissify as Visual Primitive for A2UI Agents" Technical Explainer
+
+**Context**: Google's A2UI protocol (under Linux Foundation AAIF alongside MCP and A2A) is specifically designed for agents to return rich visual output. The 4-protocol stack is 2026 standard across OpenAI, Anthropic, Google, Microsoft, AWS, and Block. This is the emerging standard for "how agents return visuals." Skissify can be positioned as the **rendering primitive** inside A2UI workflows.
+
+**Why this matters**: Being referenced in A2UI documentation, examples, and tutorials is distribution at the protocol level — not just "a SaaS tool" but "the thing you call when your A2UI agent needs a sketch." This is the Mermaid playbook: Mermaid isn't famous because of its pricing page. It's famous because it's in GitHub markdown documentation everywhere.
+
+**What to do**:
+1. Research A2UI specification (github.com/a2aproject/A2A or Google Cloud docs)
+2. Write a technical explainer: "Using Skissify as a Rendering Primitive for A2UI Sketch Output" — with actual JSON request/response example showing how an A2UI agent calls Skissify
+3. Publish to blog + submit to any A2UI community channels, Discord, GitHub discussions
+4. Tag Google Cloud developer accounts when posting
+
+**Time: 2-3 hours. Strategic value: positions Skissify inside the emerging agent visual output standard before anyone else.**
+
+---
+
 ## [2026-04-03] — Strategy Run #118 Actions (Friday April 3, 15:11 Stockholm)
 
 ### Context: Run #118 Key New Findings

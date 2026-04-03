@@ -1,7 +1,10 @@
 # Why Hand-Drawn Sketches Beat Figma for Quick Ideas
 
-*Published: April 2, 2026 | Category: Design Thinking | ~1,600 words*
-*Tags: design, UX, product management, Figma, AI, sketching, collaboration*
+*Published: April 3, 2026 — Updated launch-day version (Cycle 128)*
+*~2,000 words | 7 min read*
+*Tags: #Design #UX #ProductThinking #Figma #AI #BuildInPublic #VibeDraw*
+
+> **TL;DR:** Figma is the right tool for production design. For early-stage exploration, a rough sketch generates structurally better feedback, unlocks bolder ideas, and keeps you from polishing the wrong thing. In 2026, AI agents can generate those sketches from plain text in five seconds. The napkin sketch is no longer analog-only — and that changes everything about early-stage product work.
 
 ---
 
@@ -31,7 +34,7 @@ A hand-drawn sketch short-circuits this dynamic. The wobble in the lines literal
 
 ## The Figma Trap (It's Not Figma's Fault)
 
-Figma ships with defaults that look good immediately. Auto-layout, component libraries, the Figma default type ramp — within an hour, a wireframe looks enough like a real product that your internal editor starts running.
+Figma ships with defaults that look good immediately. Auto-layout, component libraries, the default type ramp — within an hour, a wireframe looks enough like a real product that your internal editor starts running.
 
 That's where the trap closes.
 
@@ -61,25 +64,31 @@ Here's what changes when you show a hand-drawn sketch instead of a Figma frame:
 
 ## The 2026 Case: AI Changes the Equation
 
-In 2025, the rough sketch argument was about human behavior and meeting dynamics. In 2026, there's a second reason: **AI agents are now generating designs, and rough output is the appropriate output format**.
+In 2024, the rough sketch argument was about human behavior and meeting dynamics. In 2026, there's a second reason: **AI agents are now generating designs, and rough output is the appropriate output format**.
 
 When you ask Claude to design a product flow, you should not want pixel-perfect Figma files back. You want something that communicates the idea without performing completion. You want to know: *does this structure make sense?* Not: *is this the exact shade of gray we'll ship?*
 
 AI-generated sketches — wobbly walls, hand-drawn symbols, text in an imperfect font — carry the right epistemic signal. They say: *an AI thought about this. You should think about it harder.*
 
-This is why tools like Skissify exist in 2026. Not to replace design systems or production UI, but to fill the gap between "the AI generated a layout idea" and "this is a finalized mockup." The output should look like what it is: a fast draft.
+In 2026, with Skissify + Claude via MCP, the flow looks like this:
+
+1. *"Claude, sketch a 2-bedroom apartment for a solo professional who works from home. Living room opens to kitchen. Home office with door. Blueprint style."*
+2. Claude calls the Skissify MCP tool
+3. Five seconds later: a shareable hand-drawn floor plan
+
+No Figma. No drag-and-drop. No positioning rectangles. You described what you needed and got a visual output.
+
+**The output stays in "sketch mode."** Because Skissify renders in hand-drawn style — wobbly lines, pencil texture, architectural symbols that look intentionally rough — the output preserves the psychological signal that makes sketches work. Nobody looks at a Skissify output and thinks it's production-ready. That's a feature, not a bug.
 
 ---
 
 ## The Practical Framework: When to Use What
 
-This isn't a binary choice. It's a sequence:
-
 | Stage | Tool | Why |
 |-------|------|-----|
 | Idea exploration (hours 0–2) | Hand-drawn sketch / Skissify | Maximizes structural feedback, minimizes ego investment |
-| Concept validation | Low-fidelity wireframes (grayscale, no polish) | Still rough enough to invite challenge |
-| Design direction (agreed-upon concept) | Figma — now and only now | Start building components once the idea has survived criticism |
+| Concept validation | Low-fidelity wireframes | Still rough enough to invite challenge |
+| Design direction (agreed-upon concept) | Figma — now and only now | Start building components once the idea has survived |
 | Production | Figma + design system | Finalize everything here |
 
 The mistake most teams make is jumping to Figma at step one. The payoff of staying rough through steps one and two is front-loaded: harder conversations earlier, cheaper to fix, more ideas explored per hour.
@@ -87,8 +96,6 @@ The mistake most teams make is jumping to Figma at step one. The payoff of stayi
 ---
 
 ## Three Questions Before You Open Figma
-
-Before you fire up Figma on anything in the idea phase, ask:
 
 1. **Has this concept been challenged and survived?** If you haven't heard a genuine objection to the structure, you haven't stress-tested it. A hand-drawn sketch is better until you have.
 
@@ -100,11 +107,11 @@ Before you fire up Figma on anything in the idea phase, ask:
 
 ## The Sketch That Started Skissify
 
-The product you're reading about right now started as a rough floor plan sketched in conversation with an AI. I described a room. The AI described it back in text — accurate, but useless for anything you'd want to do with it.
+The product you're reading about started as a rough floor plan sketched in conversation with an AI. I described a room. The AI described it back in text — accurate, specific, thoughtful — but still a paragraph. There was no way to hand that to a contractor, share it in a meeting, or pass it to the next agent in a pipeline as a visual artifact.
 
 I wanted a picture. I got a paragraph.
 
-The gap between "AI can reason about space" and "AI can output space visually" was obvious and surprisingly unfilled. So I built the output primitive: a REST API that takes JSON and returns a hand-drawn SVG. No auth. No UI required. AI agents can call it directly.
+The gap between "AI can reason about space" and "AI can output space visually" was obvious and surprisingly unfilled. So I built the missing output primitive: a REST API that takes JSON and returns a hand-drawn SVG. No auth required. AI agents call it directly.
 
 The first time Claude drew a floor plan via Skissify, it looked exactly like something you'd sketch in a five-minute meeting. Wobbly walls. Rough furniture symbols. Dimensions scrawled next to the doorframes.
 
@@ -114,14 +121,30 @@ And that's the whole point.
 
 ---
 
+## Viral Angle: The Psychology of Roughness
+
+Here's the thing nobody in design tooling talks about openly:
+
+**The rougher your sketch, the more valuable the feedback you'll get.**
+
+This is documented cognitive science, not folk wisdom. Reviewers who see rough prototypes ask "should this exist?" Reviewers who see polished prototypes ask "can we make the button bigger?"
+
+In 2026, AI can generate rough sketches from plain language in five seconds. There is no longer a tradeoff between "sketch quality" and "speed." You can have both. The question is whether you actually want your AI agent producing outputs that look provisional — or whether you want it producing outputs that look finished before the thinking is finished.
+
+Skissify generates the wobble deliberately. skissify.com
+
+---
+
 ## Try It
 
 - **skissify.com** — browser editor, no signup
-- **npx skissify-mcp** — Claude draws directly in Claude Desktop
-- **POST /api/render** — no auth, returns SVG
+- **`npx skissify-mcp`** — Claude draws directly in Claude Desktop
+- **`POST /api/render`** — no auth, returns SVG in ~150ms
 
 The first sketch takes less than a minute. Bring it to your next meeting instead of the Figma file. Watch what the room does differently.
 
 ---
 
-*Skissify is a hand-drawn sketch tool for AI agents and developers. JSON in, wobbly SVG out. Free API, no auth.*
+*Skissify is a hand-drawn sketch tool for AI agents and developers. JSON in, wobbly SVG out. Free API, no auth required.*
+
+*Tags: #Design #Figma #AIAgents #UX #BuildInPublic #ProductThinking #HandDrawn #Skissify #VibeDraw #VibeDrawing*

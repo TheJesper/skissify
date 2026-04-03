@@ -2,6 +2,206 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #120 (Friday April 3, 17:27 Stockholm)
+
+### Status: 5 topics researched. KEY FINDINGS: **Google Stitch MCP server/SDK posted April 2, 2026** — design-to-code, infinite canvas, MCP-enabled; first concrete post-launch activity from Google's design AI. **Frame0 confirmed MCP plugin for "vibe wireframing"** — hand-drawn wireframe + AI agent integration now live, elevating it from MEDIUM to MEDIUM-HIGH. **Anthropic Claude Marketplace** (beyond Connectors) launched March 6, 2026 — full third-party app marketplace with GitLab, Lovable, Replit, Snowflake; Feb 24 brought 12 new MCP connectors + private enterprise marketplaces. **Excalidraw+ adds Custom AI Tokens** (Feb 2026) — enterprises can use own OpenAI/Claude API keys for AI features, reduces vendor lock-in concern. **No new "headless hand-drawn JSON API" competitor found** — Skissify's specific niche uncontested for 21st consecutive run. MCP registry absence now confirmed as primary blocking factor by multiple search angles.
+
+---
+
+### Google Stitch MCP Server + SDK — April 2, 2026 Launch (WATCH → ACTIVE)
+
+**Sources**: blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/ (April 2, 2026), search results verified 2026-04-03
+
+Google's Stitch — AI-powered UI design tool ("close the gap from idea to reality in minutes rather than days") — released its MCP server AND SDK on **April 2, 2026** (yesterday). Key details:
+- Infinite canvas design environment
+- Voice canvas mode (describe UI verbally → canvas updates)
+- MCP server for agent integration
+- Design-to-code: generate functional code from canvas designs
+- Positioned as "from idea to reality in minutes"
+
+**What changed from prior runs**: Stitch was categorized as LOW-MEDIUM threat because it was announced but no agent-facing API was live. The April 2 MCP server launch makes it a real integration option for developers building AI design workflows. This is now an active competitor in the "agent → visual output via MCP" space.
+
+**For Skissify**: Stitch targets UI mockup/code generation — polished outputs, not hand-drawn. The aesthetic overlap is zero. However, Stitch now competes for the same **developer mindshare** slot: "when my agent needs a visual, what tool do I add?" If Stitch is in an agent's MCP config alongside Excalidraw, there may be no room for Skissify unless Skissify's specific value prop (hand-drawn, JSON-spatial, architectural) is clearly differentiated.
+
+**Threat assessment: MEDIUM (elevated from LOW-MEDIUM — MCP server now live, April 2)**
+
+---
+
+### Frame0 — "Vibe Wireframing" MCP Plugin Confirmed (MEDIUM-HIGH, ELEVATED)
+
+**Sources**: frame0.app, lovable.dev/guides/wireframe-apps (search-verified 2026-04-03)
+
+Frame0 — desktop hand-drawn wireframe tool — has an **MCP plugin for "vibe wireframing"** — allowing AI agents to generate hand-drawn wireframes programmatically. This is a direct overlap with Skissify's hand-drawn + MCP positioning.
+
+Key differences vs. Skissify:
+- Frame0 is a **desktop app** (Mac/Windows) — requires local install, not a cloud API
+- Vibe wireframing means natural language → wireframe, not JSON → SVG
+- No architectural elements (doors, stairs, dimensions, floor plans)
+- No headless operation — Frame0 still opens a UI window
+- No self-hosting or API endpoint for CI/CD pipelines
+
+**For Skissify**: Frame0 captures the "I want hand-drawn wireframes from my AI" use case through NLP → desktop output. Skissify captures "I need to programmatically generate hand-drawn spatial diagrams at scale." These serve different developer personas: Frame0 = solo designer + AI assistant; Skissify = agent pipeline + architectural output.
+
+**Threat assessment: MEDIUM-HIGH (elevated from MEDIUM — vibe wireframing MCP is direct aesthetic overlap)**
+
+---
+
+### Anthropic Claude Marketplace + 12 New MCP Connectors (STRATEGIC URGENCY — ELEVATED)
+
+**Sources**: venturebeat.com/technology/anthropic-launches-claude-marketplace (March 6, 2026), siliconangle.com/2026/03/06/anthropic-launches-claude-marketplace-third-party-cloud-services/, almcorp.com/blog/claude-cowork-plugins-enterprise-guide/ (Feb 24, 2026), verified 2026-04-03
+
+Two distinct Anthropic distribution expansions confirmed:
+
+**Claude Marketplace (March 6, 2026)**:
+- Third-party app marketplace for enterprise Claude users with existing Anthropic spend commitment
+- Partners: GitLab, Harvey, Lovable, Replit, Rogo, Snowflake
+- Enterprises apply their Anthropic spend credit toward third-party tools
+
+**Claude Cowork Expansion (Feb 24, 2026)**:
+- 12 new MCP connectors: Google Calendar, Google Drive, Gmail, DocuSign, Apollo, Clay, Outreach, Similarweb, MSCI, LegalZoom, FactSet, WordPress
+- Private plugin marketplaces for enterprise teams
+- 10 new department-specific plugins
+- Cross-app workflows (Excel ↔ PowerPoint)
+
+**For Skissify**: The distribution landscape has expanded significantly. Claude Connectors (where Excalidraw is listed) is now embedded inside a broader Claude Marketplace + Cowork ecosystem. Every new connector added to these systems that is NOT Skissify is a missed referral. The enterprise Marketplace is particularly relevant: architecture firms and construction tech companies are prime Skissify enterprise targets — if they are Claude enterprise customers, the Marketplace is where they'll discover tools.
+
+**Threat assessment: STRATEGIC URGENCY (Claude Marketplace + Cowork expansion multiplies the cost of Skissify's absence)**
+
+---
+
+### Excalidraw+ Custom AI Tokens — Enterprise Flexibility Added (LOW, NOTED)
+
+**Sources**: plus.excalidraw.com/changelog (Feb 2026 entry), verified 2026-04-03
+
+Excalidraw+ added **Custom AI Tokens** in February 2026 — enterprise users can now provide their own OpenAI or Claude API keys for AI-powered features (AI diagram generation, auto-completion, etc.). This reduces the vendor lock-in concern that some enterprise customers raised.
+
+Additional Feb 2026 additions: Advanced Charts (radar, multi-series), Google Drive video embeds, Interactive Presentations with live reactions and raised-hand queue.
+
+**For Skissify**: Custom AI tokens + advanced collaboration features reinforce that Excalidraw+ is positioning as the interactive human+AI design session layer. This does NOT close the gap for programmatic/headless use — it deepens Excalidraw's commitment to the human-facing UX. The architectural divergence (interactive session vs. headless API) is confirmed by their own product direction.
+
+**Threat assessment: LOW for Skissify's target use case (confirms product divergence)**
+
+---
+
+### Updated Competitor Matrix (Run #120 — Friday April 3, 17:27)
+
+| Tool | Status (2026-04-03) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Excalidraw official MCP** | 26 tools, AI visual feedback loop (screenshot+iterate), Claude Connectors (Anthropic). Custom AI Tokens in Excalidraw+. | NO (session-based) | YES | NO | **YES (official, 26 tools)** | **HIGH** |
+| **Google Stitch** | **MCP server + SDK launched April 2, 2026. Design-to-code, infinite canvas, voice canvas.** | NO | NO (polished) | YES | **YES (April 2, 2026)** | **MEDIUM (elevated)** |
+| **Frame0** | Desktop hand-drawn wireframes, **MCP plugin "vibe wireframing" confirmed active.** | NO (desktop) | YES | YES (desktop) | YES | **MEDIUM-HIGH (elevated)** |
+| **Mermaid official MCP** | Official server at mermaid.ai/docs/ai/mcp-server. PNG rendering, token auth. | YES (text-first) | NO | YES | **YES (official)** | **MEDIUM** |
+| **Draw.io** | MCP added Feb 2026. 700+ enterprise icons. Infrastructure diagrams. | NO | NO | Partial | YES | **MEDIUM-HIGH** |
+| **excalidraw-render MCP** | Headless Chromium renderer. 3s first render. Community tool. | YES (Chromium) | YES | NO | YES | **MEDIUM** |
+| **tldraw-render MCP** | Headless Chromium renderer. 5-8s first render. | YES (Chromium) | NO | NO | YES | **MEDIUM** |
+| **tldraw (re-launch)** | Founder teasing re-launch (Substack). Scope unknown. SDK $6K/yr. | NO (current) | NO | YES | NO (current) | **WATCH** |
+| **ToDiagram MCP** | JSON/YAML/XML/CSV to interactive diagrams. Pro-gated API. | YES (clean) | NO | YES | YES | **LOW-MEDIUM** |
+| **Sketch.com** | Local MCP server. Mac-only, UI design. | NO | NO | YES (local) | YES | **MEDIUM** |
+| **SketchWow** | Desktop hand-drawn style diagrams/flowcharts/UI mockups. No API. | NO (desktop) | YES | YES (desktop) | NO | **LOW** |
+| **Skissify** | Headless JSON→hand-drawn SVG: zero Chromium, sub-100ms, tunable wobble, architectural elements. Claude Connectors: **ABSENT (CRITICAL × 21)**. MCP Registry: **ABSENT (CRITICAL)**. Claude Marketplace: **ABSENT**. | **YES (only Chromium-free one)** | **YES (tunable)** | **YES (only one)** | **YES (headless)** | Uncontested |
+
+---
+
+## [2026-04-03] — Automated Strategy Run #119 (Friday April 3, 16:19 Stockholm)
+
+### Status: 5 topics researched. KEY FINDINGS: **Excalidraw MCP expanded to 26 tools** — now has `describe_scene`, `get_canvas_screenshot`, `export_to_excalidraw_url`, `export_to_image`, snapshot/restore; AI has a **closed iterative feedback loop** with the canvas. **Mermaid now has an OFFICIAL MCP server** (mermaid.ai/docs/ai/mcp-server) with PNG rendering and token auth — legitimate indirect competitor, not just community. **tldraw re-launch teased** by founder Steve Ruiz on Substack (scope/timeline unknown). **A2UI by Google** — new 4th protocol in agent stack specifically for rich visual UI output from agents; A2A+MCP+AG-UI+A2UI stack now standard. **Skissify has zero indexed presence** — clean brand, blank slate advantage. **MCP ecosystem: 5,800+ servers, 97M monthly SDK downloads.** Skissify headless + tunable wobble + architectural elements: still uncontested (Run #119 — 20th consecutive confirmation).
+
+---
+
+### Excalidraw MCP Escalation — Now 26 Tools with AI Visual Feedback Loop (HIGH THREAT, RAPID EXPANSION)
+
+**Sources**: github.com/excalidraw/excalidraw-mcp, rajeevpentyala.com/2026/03/16/excalidraw-mcp-and-claude-code-design-architecture-diagrams/ (verified 2026-04-03)
+
+Since the official launch documented in Run #118, the Excalidraw MCP has expanded from its initial tool set to **26 MCP tools total**. Newly added since Run #118:
+- `describe_scene` — AI can describe what's on the canvas in text
+- `get_canvas_screenshot` — AI receives a visual snapshot of current canvas state
+- `export_to_excalidraw_url` — generates shareable encrypted Excalidraw URLs
+- `export_to_image` — direct PNG/SVG export from agent context
+- `snapshot_scene` / `restore_snapshot` — state management across agent turns
+
+**Critical new capability**: The AI now has a **closed visual feedback loop** — it can draw, screenshot, observe the result, and iterate. This is no longer prompt-in/diagram-out; it is an interactive visual reasoning loop. For general diagram tasks, this is a significant UX advantage.
+
+**What this changes for Skissify**:
+- Excalidraw is building toward a full "AI design session" UX. This is optimized for the interactive human+agent workflow (Claude side panel + Excalidraw canvas).
+- Skissify's model (JSON in → SVG out, headless, stateless) is the opposite architecture. These are complementary, not competing, in ideal positioning.
+- The correct framing is now: "Excalidraw MCP is for interactive visual sessions with a human in the loop. Skissify API is for programmatic, pipeline, and autonomous agent generation without a session."
+
+**Threat assessment: HIGH (26 tools + feedback loop elevates from initial launch — but architectural divergence means both can coexist in the market)**
+
+---
+
+### Mermaid Official MCP Server — Now a Legitimate Indirect Competitor (MEDIUM, NEW STATUS)
+
+**Sources**: mermaid.ai/docs/ai/mcp-server, github.com/hustcc/mcp-mermaid, mcpservers.org (verified 2026-04-03)
+
+Mermaid Chart has launched an official MCP server (docs at mermaid.ai/docs/ai/mcp-server) with:
+- Syntax validation
+- PNG rendering from Mermaid markup
+- Interactive playground link generation
+- Mermaid Chart account integration
+- Transport: HTTP and SSE with token-based auth
+
+Community additions: `hustcc/mcp-mermaid` (dynamic Mermaid generation via AI), `peng-shawn/mermaid-mcp-server` (Mermaid to PNG), plus a Notion→Mermaid generator (March 16, 2026 on PulseMCP).
+
+**For Skissify**: Mermaid's official MCP is now the incumbent in the "text/structured-data → diagram via MCP" category. The overlap with Skissify is indirect (Mermaid = flowcharts/sequence diagrams; Skissify = spatial/hand-drawn), but both answer the same agent question: "how do I generate a visual without a browser?" Developers comparing options will see Mermaid MCP before Skissify.
+
+**What Skissify has that Mermaid never will**: Hand-drawn aesthetics, architectural domain elements (doors, windows, stairs), spatial layout control via coordinates. Mermaid is auto-layout; Skissify is explicit spatial.
+
+**Threat assessment: MEDIUM (increases the field of "official MCP diagram tools" that appear before Skissify in discovery — urgency to register intensifies)**
+
+---
+
+### tldraw Re-launch Teased by Founder (WATCH, UNKNOWN)
+
+**Sources**: tldraw.substack.com/p/tldraws-upcoming-re-launch (verified 2026-04-03)
+
+tldraw founder Steve Ruiz has teased an upcoming re-launch on Substack. No timeline or scope confirmed. Could be: new product direction, revised SDK licensing, MCP integration, or a consumer-facing product. Given the $6K/year SDK licensing controversy and 25x rendering performance improvements, a re-positioning move is plausible.
+
+**For Skissify**: If tldraw adds a headless JSON API or MCP support as part of the re-launch, the competitive landscape shifts significantly. Monitor.
+
+**Threat assessment: WATCH — unknown. Check again in 2 weeks.**
+
+---
+
+### A2UI Protocol — Agents Now Have a Visual Output Standard (STRATEGIC OPPORTUNITY)
+
+**Sources**: medium.com/google-cloud/agent-protocols-mcp-a2a-a2ui-ag-ui-3ed8b356f1bc, digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp (verified 2026-04-03)
+
+The 2026 agent protocol stack now has 4 layers:
+| Protocol | Creator | Role |
+|---|---|---|
+| MCP | Anthropic | Tool/resource access |
+| A2A | Google | Agent-to-agent coordination |
+| AG-UI | CopilotKit | Backend-to-frontend event transport |
+| **A2UI** | **Google** | **Declarative generative UI — agents return rich visual output** |
+
+A2UI is specifically designed for agents to return web/mobile/desktop visual output. All 4 protocols are now under the **Linux Foundation's Agentic AI Foundation (AAIF)**, co-founded by OpenAI, Anthropic, Google, Microsoft, AWS, Block.
+
+**For Skissify**: Skissify can position as the **rendering layer for A2UI visual output** — when an agent wants to return a sketch, floor plan, or diagram as part of an A2UI widget, Skissify provides the SVG payload. This is a new distribution vector: not just "call the API" but "be the visual primitive embedded in A2UI responses."
+
+**Threat assessment: OPPORTUNITY — A2UI legitimizes agent-generated visual output as a protocol-level concern. Skissify should be referenced in A2UI documentation and examples.**
+
+---
+
+### Updated Competitor Matrix (Run #119 — Friday April 3, 16:19)
+
+| Tool | Status (2026-04-03) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Excalidraw official MCP** | **26 tools, AI feedback loop (screenshot+iterate), Claude Connectors (Anthropic). Updated post-Run #118.** | NO (session-based) | YES | NO | **YES (official, 26 tools)** | **HIGH (feedback loop elevates threat)** |
+| **Mermaid official MCP** | **Official server at mermaid.ai/docs/ai/mcp-server. PNG rendering, token auth. March 2026.** | YES (text-first) | NO | YES | **YES (official)** | **MEDIUM (indirect overlap — structured→diagram)** |
+| **excalidraw-render MCP** | Headless Chromium renderer. 3s first render. Community tool. | YES (Chromium) | YES | NO | YES | **MEDIUM (Chromium + cold start blockers)** |
+| **tldraw-render MCP** | Headless Chromium renderer. 5-8s first render. | YES (Chromium) | NO | NO | YES | **MEDIUM** |
+| **tldraw (re-launch)** | Founder teasing re-launch (Substack). Scope unknown. SDK $6K/yr. | NO (current) | NO | YES | NO (current) | **WATCH** |
+| **ToDiagram MCP** | JSON/YAML/XML/CSV to interactive diagrams. Pro-gated API. | YES (clean) | NO | YES | YES | **LOW-MEDIUM** |
+| **Google Stitch** | Infinite canvas, voice, MCP server, design-to-code (March 2026). | NO | NO | YES | YES | **LOW-MEDIUM** |
+| **Frame0** | Desktop hand-drawn wireframes, MCP on PulseMCP. | NO (desktop) | YES | YES | YES | **MEDIUM** |
+| **Draw.io** | MCP added Feb 2026. 700+ enterprise icons. Infrastructure diagrams. | NO | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Sketch.com** | Local MCP server. Mac-only, UI design direction. | NO | NO | YES (local) | YES | **MEDIUM** |
+| **SketchWow** | Hand-drawn style diagrams/flowcharts/UI mockups (desktop). Discovered Run #119. | NO (desktop) | YES | YES (desktop) | NO | **LOW (desktop-only, no API)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: zero Chromium, sub-100ms, tunable wobble, architectural elements. Claude Connectors: **ABSENT (CRITICAL × 20)**. MCP Registry: **ABSENT (CRITICAL)**. | **YES (only Chromium-free one)** | **YES (tunable)** | **YES (only one)** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #118 (Friday April 3, 15:11 Stockholm)
 
 ### Status: 5 topics researched. KEY FINDINGS: **OFFICIAL excalidraw/excalidraw-mcp** launched by Excalidraw team with Anthropic partnership — now in Claude Connectors marketplace, streams hand-drawn SVGs, updated March 24 2026. This is no longer community: it is the official team. **excalidraw-render + tldraw-render MCP** (bassimeledath) — headless Chromium renderers for both tools — 3s and 5-8s first renders respectively. Chromium still required; Skissify's Chromium-free moat intact but "headless gap" is narrowing at infrastructure level. **ToDiagram MCP** — JSON/YAML/XML/CSV to interactive editable diagrams, Pro-only API, NOT hand-drawn. **Credit-based SaaS pricing up 126% YoY** — 79 companies in PricingSaaS 500 now use credits vs 35 end-2024, validates Skissify's per-render model. **Skissify headless Chromium-free + tunable wobble + architectural elements: still uncontested** (Run #118 — 19th consecutive confirmation). **NEW URGENT ACTION**: Get Skissify into Claude Connectors before Excalidraw owns "hand-drawn MCP" in that marketplace.
