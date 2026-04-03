@@ -1,7 +1,7 @@
 # Skissify vs Excalidraw: The One Question That Decides It
 
-*Published: April 4, 2026 | blog.skissify.com | Cycle 126*
-*Tags: comparison, Excalidraw, whiteboarding, AI agents, diagramming, MCP, hand-drawn, API, tools*
+*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 127*
+*Tags: comparison, Excalidraw, whiteboarding, AI agents, diagramming, MCP, hand-drawn, API, tools, vibe-drawing*
 
 ---
 
@@ -141,3 +141,11 @@ You'll get a sketch URL back in about 150ms. That URL is shareable, embeddable, 
 ---
 
 *Skissify — JSON in, hand-drawn sketch out. Free tier. REST API, no auth. MCP: `npx skissify-mcp`. Built for AI agents. 26 element types. Stockholm, Sweden.*
+
+---
+
+## Further Reading
+
+- **[Why Hand-Drawn Sketches Beat Figma for Quick Ideas](./why-hand-drawn-beats-figma.md)** — the psychology of fidelity and why rough sketches get better feedback
+- **[How AI Agents Can Draw Floor Plans with Skissify](./ai-agents-floor-plans.md)** — four real agent workflows with full manifest examples
+- **[Skissify vs Mermaid vs Excalidraw: Full Comparison](./skissify-vs-mermaid-vs-excalidraw-full-comparison.md)** — a three-way comparison covering the full diagramming landscape

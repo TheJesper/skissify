@@ -1,7 +1,7 @@
 # How AI Agents Can Draw Floor Plans
 
-*Published: April 4, 2026 | blog.skissify.com | Cycle 126*
-*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, LangChain, n8n, automation*
+*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 127*
+*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, LangChain, n8n, automation, vibe-drawing*
 
 ---
 
@@ -137,3 +137,11 @@ Your agent can now draw. [Start at skissify.com](https://skissify.com).
 ---
 
 *Skissify is an open sketch API for AI agents. Free tier, no auth required. MCP server: `npx skissify-mcp`. 26 element types. Deterministic, seeded output. REST + MCP.*
+
+---
+
+## Further Reading
+
+- **[Why Hand-Drawn Sketches Beat Figma for Quick Ideas](./why-hand-drawn-beats-figma.md)** — the design psychology behind sketch-first workflows
+- **[Skissify vs Excalidraw: The One Question That Decides It](./skissify-vs-excalidraw.md)** — when to use which tool (and when to use both)
+- **[The JSON Schema Behind Skissify](./the-json-schema-behind-skissify.md)** — deep dive into why the flat schema outperforms hierarchical alternatives

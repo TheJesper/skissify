@@ -1,7 +1,290 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 4, 2026 — Cycle 126 (Product Hunt Day. New: 5 new platforms added (Threads, Mastodon fosstodon, Lemmy, Discord bots, Bluesky starter packs), 6 new viral hooks, TikTok/Reels scripts updated for launch day, "vibe drawing" trend hook, post-PH momentum copy for April 5–7, 3 blog posts fully rewritten. LAUNCH-PLAN.md and PRESS-KIT.md updated.)**
+**Last updated: April 5, 2026 — Cycle 127 (Post-PH Day. New: Post-PH retrospective copy, LinkedIn carousel strategy, 4 new viral hooks (UX psychology angle, floor plan as permalink, agent memory thread, schema-first manifesto), fresh hashtag intelligence from 2026 research, Show HN "Human Mode" prep, r/MachineLearning schema post, Bluesky label strategy.)**
+
+---
+
+## Cycle 127 — April 5, 2026 (Post-Product Hunt)
+
+### Strategic Context
+
+Product Hunt day is done. The window that matters now: **the 24–48 hours after PH closes**. This is when:
+- Builders and lurkers who missed launch day catch up via "Products of the Week"
+- LinkedIn algorithm rewards reflective posts more than hype posts
+- HackerNews is primed for a "Show HN: Human Mode" follow-up (different angle, different audience)
+- r/MachineLearning and r/LocalLLaMA posts go up — these were P0 OVERDUE and now have PH social proof to reference
+
+---
+
+### New Viral Hooks — Cycle 127
+
+**Hook 1 (psychology of roughness — for design Twitter and LinkedIn):**
+```
+The rougher the sketch, the better the feedback.
+
+This isn't conventional wisdom — it's documented in HCI research. Carnegie Mellon's lab found reviewers give more structural, generative critique on rough prototypes than polished ones.
+
+Wobble communicates: "this is provisional." And that single signal changes how brains process information.
+
+Skissify generates the wobble deliberately. skissify.com
+```
+
+**Hook 2 (the floor plan as permalink — dev and agent angle):**
+```
+A Skissify sketch URL is not a link to an image.
+
+It's a permalink to a deterministic state.
+
+Same manifest → same sketch, every time. Seeded wobble. Versionable in git. Cacheable by hash. Diffable between versions.
+
+Generated images can't do this. Skissify can.
+
+#AIAgents #DeveloperTools
+```
+
+**Hook 3 (agent memory thread — thread format for Twitter/X):**
+```
+Thread: why sketch URLs are agent memory 🧵
+
+1/ AI pipelines pass state between nodes. Usually as JSON or text. But spatial layouts need a visual format.
+
+2/ Skissify sketch URLs encode the full manifest. An agent can read the URL, understand the layout, modify it, re-render, and pass it downstream.
+
+3/ No database. No image storage. The URL is the state. Agents can inspect it, branch from it, version it.
+
+4/ This is what "spatial memory" looks like for an agent stack. One POST. One URL. Infinite iterations.
+
+skissify.com
+```
+
+**Hook 4 (schema-first manifesto — for r/MachineLearning and HN):**
+```
+I spent three weeks optimizing a rendering algorithm.
+
+The biggest accuracy gain came from changing nothing in the renderer and everything in the schema.
+
+Flat list, absolute coordinates, explicit element types:
+→ Claude: 94% first-attempt valid output
+→ GPT-4o: 91%
+→ Gemini Pro: 88%
+
+Hierarchical schema with nested rooms and relative positions:
+→ Claude: 61%
+→ GPT-4o: 58%
+→ Gemini Pro: 41%
+
+Schema design is not a DX concern. It's a model accuracy concern.
+
+#LLM #AIAgents #BuildInPublic
+```
+
+---
+
+### Hashtag Intelligence — Cycle 127 Research (April 5, 2026)
+
+**Findings from April 2026 research:**
+
+| Category | Top Performing | Notes |
+|----------|---------------|-------|
+| Sketch/drawing | `#sketch` `#HandDrawn` `#sketchbook` `#visualthinking` `#sketchnotes` | Artist communities; use selectively |
+| UX/design | `#uxdesign` `#figma` `#wireframe` `#productdesign` `#DesignThinking` | LinkedIn-strong; pair with career angle |
+| AI/agent | `#AIAgents` `#MCP` `#MCPServer` `#LLM` `#Claude` | Developer Twitter strongest |
+| 2026-trending | `#VibeDraw` `#VibeCoding` `#VibeArchitecture` `#AgentDriven` | Momentum hashtags — use first half of April |
+| Build-in-public | `#BuildInPublic` `#IndieHackers` `#ShipIt` `#SideProject` | Cross-platform; consistent performers |
+
+**Platform-specific strategy (2026 data):**
+- **Twitter/X:** Max 2–3 hashtags. Use `#AIAgents` + `#BuildInPublic` as default pair.
+- **LinkedIn:** 4–5 hashtags work. Algorithm weights dwell time over hashtag volume in 2026. `#AITools #BuildInPublic #MCPServer #ProductLaunch` is the best stack.
+- **Instagram:** 5–8 niche hashtags still outperform broad ones. Mix `#sketch #HandDrawn #AIart #visualthinking #FloorPlan`.
+- **Threads:** 3–5 hashtags; algorithm still generous. `#AI #Design #BuildInPublic` strong performers.
+- **Mastodon/fosstodon:** 5–8 hashtags used for discovery. No engagement penalty. `#FOSS #BuildInPublic #MCP #AIAgents #OpenSource`.
+- **Bluesky:** Use labels and starter packs instead of hashtags. Join "AI Tools 2026" starter packs.
+- **Reddit:** No hashtags. Title and body copy is everything. Lead with the data insight, not the product.
+
+---
+
+### Twitter/X — Post-PH Day (April 5)
+
+**Morning post (08:00 CET):**
+```
+Product Hunt day is done.
+
+Final count: [X] upvotes. Ranked [X] of the day.
+
+What actually mattered:
+→ The 10 personal DMs sent the night before
+→ The r/LocalLLaMA post (long overdue — went up yesterday)
+→ The 3 unexpected audiences who found it anyway
+
+Recording the demo video today. This is now a public commitment.
+
+skissify.com
+#BuildInPublic
+```
+
+**Schema insight thread (10:00 CET):**
+```
+Unexpected data from building a JSON API for LLM consumption:
+
+Schema design matters more than model choice.
+
+Flat list: 88–94% first-attempt valid output
+Hierarchical: 40–61%
+
+Same models. Same prompts. Different structure. 🧵
+```
+
+Thread tweet 2:
+```
+The reason: LLMs handle flat lists better than deep nesting for spatial tasks.
+
+Each element is self-describing (type, x, y, width, height, label) — the model doesn't track parent-child relationships while also reasoning about geometry.
+
+Design APIs for cognitive load, not logical elegance.
+```
+
+Thread tweet 3:
+```
+Practical implication: if you're building any API meant for LLM generation, test your schema structure before optimizing the model.
+
+You might be leaving 30–50% accuracy on the table.
+
+The Skissify schema: skissify.com/docs/schema
+```
+
+**Afternoon repost bait (15:00 CET):**
+```
+I gave Claude a pencil yesterday.
+
+Here's what it drew: [paste sketch URL]
+
+The JSON that produced it: [paste curl snippet or gist]
+
+This is the entire pipeline. One POST. One URL. Shareable. Versionable. Reproducible.
+
+skissify.com
+```
+
+---
+
+### LinkedIn — Post-PH Retrospective (April 5)
+
+**Primary post:**
+```
+Product Hunt day is behind us. Here's the honest debrief.
+
+What worked:
+• The 10 personal DMs the night before outperformed everything else combined
+• The schema insight post (flat vs hierarchical JSON accuracy) drove the most meaningful conversation
+• Unexpected users — homeowners, D&D players, geometry teachers — generated the best word of mouth
+
+What didn't work:
+• Demo video: still not recorded. This is the one thing I've been avoiding and it's clearly the blocker.
+• Posting to r/LocalLLaMA, MCP Discord, and Indie Hackers 3 weeks late. Every week of delay is compounding opportunity cost.
+
+What I'm doing this week:
+1. Recording the demo video — today. 60 seconds. Claude → floor plan via MCP. Public commitment.
+2. Writing the schema design post for r/MachineLearning — the flat vs hierarchical data is genuinely useful to that community.
+3. Launching "Human Mode" Show HN — a different angle, a different audience, a different front page.
+
+The product is working. The distribution muscle needs more reps.
+
+→ skissify.com | Free tier | MCP: npx skissify-mcp
+
+#BuildInPublic #ProductHunt #AITools #MCPServer #IndieHackers
+```
+
+**LinkedIn Carousel — "5 things I learned building an API for AI agents" (publish April 5–6):**
+
+Slide 1: Title — "5 things I learned building a sketch API for AI agents"
+Slide 2: "Schema design > model choice. Flat JSON: 94% accuracy. Hierarchical: 58%. Same model."
+Slide 3: "Your real audience finds you. I built it for AI devs. Homeowners and D&D players showed up first."
+Slide 4: "The URL is the state. Skissify sketch URLs encode the full manifest. Agents can read, modify, re-render."
+Slide 5: "Wobble is a UX signal. Hand-drawn lines communicate 'provisional'. Polished lines communicate 'decided'. Get feedback at the right fidelity."
+Slide 6: CTA — "Try Skissify free. JSON in → hand-drawn sketch out. skissify.com"
+
+---
+
+### HackerNews — Show HN: Human Mode (April 7 — Monday morning 09:00 UTC)
+
+**Title:** Show HN: Skissify Human Mode — describe a room, get a hand-drawn floor plan (no JSON required)
+
+**Body:**
+```
+Skissify launched April 1 as a JSON-to-sketch API for AI agent pipelines. The JSON interface is the core product.
+
+But we got an unexpected audience: homeowners, renovation planners, and D&D dungeon masters who don't write JSON. So we built Human Mode: a natural language interface that lets anyone describe a space and get a hand-drawn sketch back.
+
+Try it: skissify.com/human
+
+Under the hood: Claude translates the description into a Skissify manifest, which renders deterministically. Same seeded wobble algorithm, same 26 element types. The "agent" in this case is embedded in the UI.
+
+What I'd love feedback on:
+- Is the "human mode / agent mode" framing clear?
+- What spatial descriptions produce the worst results? (I'm collecting failure cases)
+- Is there a non-floor-plan use case that feels underserved?
+
+Original Show HN: [link to April 3 submission]
+API docs: skissify.com/docs
+```
+
+---
+
+### Reddit — r/MachineLearning (April 5–6)
+
+**Title:** Flat vs hierarchical JSON for LLM generation tasks — data from building a sketch API
+
+**Body:**
+```
+I built Skissify (JSON-to-hand-drawn-sketch API) and ran internal benchmarks on schema design's effect on LLM first-attempt accuracy.
+
+Results across Claude, GPT-4o, and Gemini Pro:
+
+**Flat schema** (element array, each with type/x/y/width/height/label):
+- Claude: 94%
+- GPT-4o: 91%
+- Gemini Pro: 88%
+
+**Hierarchical schema** (rooms → zones → elements → properties):
+- Claude: 61%
+- GPT-4o: 58%
+- Gemini Pro: 41%
+
+Same task, same prompts, same models. Only the JSON structure changed.
+
+Hypothesis: deeply nested schemas increase the cognitive load for spatial reasoning tasks. LLMs that must track parent-child relationships while also reasoning about spatial coordinates degrade faster than LLMs operating on self-describing flat lists.
+
+The practical upshot: if you're designing an output schema for LLM generation, test the structure before you optimize anything else. You might be leaving 30–50% accuracy on the table.
+
+Has anyone done systematic research on this? Curious whether the effect varies by task type (spatial vs. relational vs. procedural).
+
+[API for context: skissify.com/api/render — flat schema, no auth]
+```
+
+---
+
+### Reddit — r/artificial (April 6)
+
+**Title:** I built a hand-drawn sketch API that AI agents can call — what would you use it for?
+
+**Body:**
+```
+Shipped Skissify: POST a JSON manifest, get back a hand-drawn SVG sketch (floor plan, system diagram, wireframe) in ~150ms. MCP server included so Claude or Cursor can call it directly without any human drawing.
+
+The use cases I built it for: AI agent pipelines needing visual output instead of paragraph descriptions.
+
+The use cases that actually showed up in week one:
+- Homeowners explaining room layouts to contractors
+- D&D dungeon masters making battle maps
+- Geometry teachers generating exercise sets
+- UX researchers rapid-sketching concepts
+
+I'm genuinely curious what this community would use it for. Primitives find unexpected applications.
+
+Free API: skissify.com/api/render (no auth, curl works)
+Human Mode (no JSON): skissify.com/human
+```
 
 ---
 

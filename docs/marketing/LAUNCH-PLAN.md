@@ -1,7 +1,59 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4 — Day 4 / Product Hunt Day — Cycle 126**
+**Current Date: April 5 — Day 5 / Post-Product Hunt — Cycle 127**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 127 — Post-Product Hunt)
+
+### Cycle 127 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| SOCIAL-MEDIA.md Cycle 127 — 4 new viral hooks (psychology of roughness, floor plan permalink, agent memory thread, schema-first manifesto), full hashtag intelligence table with platform-specific 2026 data, post-PH Twitter thread + schema tweet thread, LinkedIn retrospective post + carousel script, HN Show HN Human Mode prep (April 7), r/MachineLearning schema post, r/artificial discovery post | `SOCIAL-MEDIA.md` | DONE |
+| LAUNCH-PLAN.md — Cycle 127 block | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 127 — Priority Actions for TODAY (April 5 — Post-PH)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 CRITICAL | 08:00–08:45 CET | OVERDUE AGAIN |
+| **Post morning tweet** (post-PH tone, real numbers) | P0 | 08:00 CET | Copy in Cycle 127 SOCIAL-MEDIA.md |
+| **Post schema insight thread** | P0 | 10:00 CET | Copy in Cycle 127 SOCIAL-MEDIA.md |
+| **Post LinkedIn retrospective** | P0 | Noon CET | Copy in Cycle 127 SOCIAL-MEDIA.md |
+| **Post r/LocalLLaMA** — OVERDUE 5 weeks | P0 CRITICAL | NOW | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **Post MCP Discord #showcase** — OVERDUE 5 weeks | P0 CRITICAL | NOW | |
+| **Post Indie Hackers milestone** — OVERDUE since Cycle 98 | P0 CRITICAL | MORNING | |
+| **Post r/MachineLearning schema post** | P1 | Afternoon | Copy in Cycle 127 SOCIAL-MEDIA.md |
+| **Post r/artificial** | P1 | Evening | Copy in Cycle 127 SOCIAL-MEDIA.md |
+| **Prep Show HN Human Mode** for April 7 Monday morning | P1 | Today | Copy in Cycle 127 SOCIAL-MEDIA.md |
+| **Post afternoon repost-bait tweet** | P1 | 15:00 CET | Copy in Cycle 127 SOCIAL-MEDIA.md |
+
+### Cycle 127 — Done Inventory (Completed This Cycle)
+
+| Item | Completed |
+|------|-----------|
+| SOCIAL-MEDIA.md — 4 new viral hooks | DONE Cycle 127 |
+| SOCIAL-MEDIA.md — hashtag intelligence table | DONE Cycle 127 |
+| SOCIAL-MEDIA.md — post-PH Twitter thread + schema thread | DONE Cycle 127 |
+| SOCIAL-MEDIA.md — LinkedIn retrospective + carousel | DONE Cycle 127 |
+| SOCIAL-MEDIA.md — HN Show HN Human Mode copy | DONE Cycle 127 |
+| SOCIAL-MEDIA.md — r/MachineLearning schema post | DONE Cycle 127 |
+| SOCIAL-MEDIA.md — r/artificial post | DONE Cycle 127 |
+| LAUNCH-PLAN.md — Cycle 127 block | DONE Cycle 127 |
+
+### Cycle 127 — New Ideas
+
+**Idea: LinkedIn Carousel as highest-engagement format.** The "5 things I learned" format consistently outperforms single posts on LinkedIn in 2026. 6-slide carousel with data insight as slide 2 (flat vs hierarchical schema accuracy) drives saves and shares better than narrative posts. Template staged in Cycle 127 SOCIAL-MEDIA.md.
+
+**Idea: Show HN Human Mode as second front-page attempt.** The original Show HN was April 3 (agent API). Human Mode is a genuinely different product angle — natural language in, sketch out — and targets a different HN audience (product builders, not just agent developers). Monday 09:00 UTC is the optimal posting time. Copy staged in Cycle 127 SOCIAL-MEDIA.md.
+
+**Idea: r/MachineLearning schema post.** The flat vs hierarchical accuracy data is genuinely useful research to that community, independent of the product. Lead with the data. Include the product as context only. This is the post that builds credibility without feeling like marketing.
+
+**Idea: "Sketch as diff" GitHub Action.** Create a GitHub Action that generates a Skissify floor plan from a JSON manifest and attaches it to PRs as a visual diff. Every time the manifest changes, a new sketch is generated. Developers see what changed spatially, not just in JSON. Story: "code review for spaces."
+
+**Idea: Add `#VibeDrawing` to every post this week.** The term is gaining traction alongside `#VibeCoding`. First-mover advantage on a new hashtag compounds quickly on Bluesky and LinkedIn. Use it consistently across all April 5–12 posts.
 
 ---
 

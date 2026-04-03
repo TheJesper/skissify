@@ -1,6 +1,26 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 126 (Product Hunt Day. Blog posts refreshed: why-hand-drawn-beats-figma.md, ai-agents-floor-plans.md, skissify-vs-excalidraw.md — all rewritten with sharper hooks and updated to Cycle 126 content. SOCIAL-MEDIA.md Cycle 126 added: 5 new platforms, 6 new viral hooks, Threads templates, fosstodon post, Lemmy post, Discord showcase post, post-PH momentum templates April 5–7. LAUNCH-PLAN.md Cycle 126 updated.)*
+*Last updated: April 5, 2026 — Cycle 127 (Post-PH Day. SOCIAL-MEDIA.md Cycle 127 added: 4 new viral hooks, hashtag intelligence table, post-PH retrospective copy for Twitter/LinkedIn/Reddit, HN Show HN Human Mode prep, r/MachineLearning schema data post, r/artificial post. Blog posts updated with cross-links and #vibe-drawing tag. LAUNCH-PLAN.md Cycle 127 block added with 5 new ideas including "Sketch as diff" GitHub Action.)*
+
+---
+
+## Cycle 127 — What's New (April 5, 2026)
+
+### Post-PH Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | DONE — final results available |
+| Blog posts (3 core) | DONE — updated with cross-links + vibe-drawing tag |
+| SOCIAL-MEDIA.md Cycle 127 | DONE — post-PH copy, 4 new hooks, hashtag table |
+| Demo video | STILL OVERDUE — record today |
+| r/LocalLLaMA (2.3M) | STILL OVERDUE — post today |
+| MCP Discord #showcase | STILL OVERDUE — post today |
+| Indie Hackers | STILL OVERDUE — post today |
+| r/MachineLearning post | NEW — copy ready in Cycle 127 SOCIAL-MEDIA.md |
+| r/artificial post | NEW — copy ready in Cycle 127 SOCIAL-MEDIA.md |
+| Show HN: Human Mode | PREP — post April 7 Monday 09:00 UTC |
+| LinkedIn carousel | NEW — "5 things I learned" template ready |
 
 ---
 

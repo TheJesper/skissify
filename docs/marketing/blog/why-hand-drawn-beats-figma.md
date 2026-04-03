@@ -1,7 +1,7 @@
 # Why Hand-Drawn Sketches Beat Figma for Quick Ideas
 
-*Published: April 4, 2026 | blog.skissify.com | Cycle 126*
-*Tags: design, UX, product, Figma, AI, sketching, workflow, hand-drawn, wireframe*
+*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 127*
+*Tags: design, UX, product, Figma, AI, sketching, workflow, hand-drawn, wireframe, vibe-drawing*
 
 ---
 
@@ -98,3 +98,11 @@ MCP server for AI agents: `npx skissify-mcp`
 ---
 
 *Skissify converts JSON into hand-drawn sketches via REST API and MCP server. 26 element types including full architectural symbols and furniture. Free tier at skissify.com.*
+
+---
+
+## Further Reading
+
+- **[How AI Agents Can Draw Floor Plans with Skissify](./ai-agents-floor-plans.md)** — if you want to see how the sketch-first principle applies inside agent pipelines
+- **[Skissify vs Excalidraw: The One Question That Decides It](./skissify-vs-excalidraw.md)** — a head-to-head comparison for teams already using hand-drawn tools
+- **[The Napkin Sketch API That Didn't Exist](./the-napkin-sketch-api-that-didnt-exist.md)** — the backstory of why Skissify was built
