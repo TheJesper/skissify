@@ -1,7 +1,46 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 — Day 3 / SHOW HN DAY — Cycle 121 Evening Wrap**
+**Current Date: April 3 — Day 3 / SHOW HN DAY — Cycle 122 (02:17 CET)**
+
+---
+
+## NEW IDEAS (Added 2026-04-03 02:17 CET, Cycle 122 — Show HN Pre-Dawn)
+
+### Cycle 122 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| **SHOW-HN-LIVE-KIT.md** — single execution doc: Show HN copy, all 4 OVERDUE channels, DevHunt, Twitter thread, HN comment templates, timing checklist | `docs/marketing/SHOW-HN-LIVE-KIT.md` | DONE — execute at 09:00 CET |
+| Blog: "It's 2am. Show HN Goes Live in 7 Hours. Here's Everything We Built." — authentic pre-launch founder note, schema benchmarks, unexpected use cases, honest demo video gap | `blog/show-hn-morning-02am-everything-ready.md` | DONE — post at 08:00 CET warm-up |
+| SOCIAL-MEDIA.md Cycle 122 | SOCIAL-MEDIA.md | DONE |
+
+### Cycle 122 — Priority Actions for TODAY (April 3 — Show HN Day)
+
+| Action | Priority | Time | Notes |
+|--------|----------|------|-------|
+| **Execute SHOW-HN-LIVE-KIT.md** — all steps in order | P0 CRITICAL | 09:00 CET | Single doc, everything staged |
+| **Post Show HN** | P0 ANCHOR | 09:00 CET | Copy in SHOW-HN-LIVE-KIT.md |
+| **Post MCP Discord #showcase** — OVERDUE 3 WEEKS | P0 CRITICAL | 09:15 CET | Copy in SHOW-HN-LIVE-KIT.md §2a |
+| **Post r/LocalLLaMA** — OVERDUE 3 WEEKS | P0 CRITICAL | 09:20 CET | Copy in SHOW-HN-LIVE-KIT.md §2b |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | P0 CRITICAL | 09:25 CET | Copy in SHOW-HN-LIVE-KIT.md §2c |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | P0 CRITICAL | 09:35 CET | Copy in SHOW-HN-LIVE-KIT.md §2d |
+| **Submit DevHunt** — 7-day window | P0 | 09:30 CET | Copy in SHOW-HN-LIVE-KIT.md §3 |
+| **Post Twitter thread** | P0 | 09:05 CET | Copy in SHOW-HN-LIVE-KIT.md §4 + Cycle 122 |
+| **Post warm-up blog** (2am founder note) | P1 | 08:00 CET | `blog/show-hn-morning-02am-everything-ready.md` |
+| **Engage HN comments every 15 min** | P0 ongoing | 09:00+ | Templates in SHOW-HN-LIVE-KIT.md §5 |
+| **Post LinkedIn noon** | P1 | 12:00 CET | Cycle 122 copy in SOCIAL-MEDIA.md |
+| **Post r/webdev** | P1 | 14:00 CET | Cycle 122 copy in SOCIAL-MEDIA.md |
+| **Post evening wrap** (all platforms) | P1 | 20:00 CET | Cycle 122 copy in SOCIAL-MEDIA.md |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | After HN | 60 seconds. Claude → floor plan. Do it. |
+
+### Cycle 122 — Strategic Note
+
+**The SHOW-HN-LIVE-KIT.md solves the execution problem.** 121 cycles of marketing content has been spread across a 400KB SOCIAL-MEDIA.md file. The four OVERDUE channels have been staged since Cycles 98–111 but keep getting deferred because the copy is buried. The Live Kit consolidates everything into a linear checklist. Open one file. Execute top to bottom. Done.
+
+**The 2am blog is pre-HN social proof.** Authenticity converts on HN. A founder note written at 2am before Show HN — with real engineering insights (the flat vs hierarchical JSON benchmark), real unexpected use cases (dungeon masters, homeowners), and honest admission about the demo video — builds trust before a single HN comment lands. Post at 08:00 CET warmup window.
+
+**The demo video is the permanent blocker.** This has been P0 FOREVER since Cycle 1. After Show HN today, record it. 60 seconds. Screen capture Claude Desktop generating a floor plan via the MCP server. Nothing else unlocks the same reach.
 
 ---
 

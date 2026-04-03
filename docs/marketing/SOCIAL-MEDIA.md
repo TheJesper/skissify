@@ -1,7 +1,220 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 121 (Launch Eve — Day 3 Wrap / Day 4 Launch Prep. New: TikTok/Reels script, LinkedIn long-form post "the tool that let my AI agent draw", X thread for launch day, Reddit r/MachineLearning copy, Discord bot communities angle, Bluesky developer community post, GitHub trending play, YouTube community post, Product Hunt comment strategy, new viral hook "your AI agent can now draw", new hashtags: #VibeSketch #JSONtoDraw #AgentDriven2026. Priority for April 4: maximize Show HN carry-over, capture r/MachineLearning weekend traffic, post all OVERDUE channels NOW.)**
+**Last updated: April 3, 2026 — Cycle 122 (Show HN Day 02:17 CET. New: SHOW-HN-LIVE-KIT.md created (single execution doc for today), X/Twitter "Show HN is live" thread + 5 sub-tweets, Bluesky 5-part thread, LinkedIn "Show HN morning" post, HN comment templates by type (6 scenarios), r/webdev afternoon post, evening wrap post, new viral hook "The schema insight: flat JSON = 88% accuracy, nested = 40%", new blog: show-hn-morning-02am-everything-ready.md. Priority: Execute SHOW-HN-LIVE-KIT.md in order at 09:00 CET.)**
+
+---
+
+## Cycle 122 — April 3, 2026 02:17 CET (Show HN Day — Pre-Dawn)
+
+### 🎯 ONE THING: Execute SHOW-HN-LIVE-KIT.md at 09:00 CET
+
+All copy is staged. All channels are ready. The kit is at `docs/marketing/SHOW-HN-LIVE-KIT.md`.
+
+Order of operations:
+1. Post Show HN (09:00 CET)
+2. MCP Discord within 30 min
+3. r/LocalLLaMA within 30 min
+4. Indie Hackers within 30 min
+5. Smol Launch within 30 min
+6. Twitter thread at 09:05 CET
+7. LinkedIn at noon
+8. r/webdev at 14:00
+9. Evening wrap at 20:00
+
+---
+
+### NEW: Bluesky Show HN Thread (Post at 09:10 CET)
+
+**Post 1:**
+```
+Show HN is live: Skissify — JSON manifest in, hand-drawn SVG out, MCP server included.
+
+The only sketch tool where the user is an AI agent.
+
+https://news.ycombinator.com/item?id=[paste]
+
+#ShowHN #BuildInPublic #MCP
+```
+
+**Post 2:**
+```
+The schema benchmark nobody was asking for:
+
+Flat JSON → 88–92% LLM first-attempt accuracy
+Hierarchical JSON → 40–61% LLM first-attempt accuracy
+
+If you're building an API for LLM consumption: design for cognitive load, not logical elegance.
+```
+
+**Post 3:**
+```
+What I built it for: AI devs building agent pipelines
+
+What it gets used for:
+→ D&D dungeon maps (blueprint paper style)
+→ Homeowners explaining layouts to contractors
+→ Geometry teachers generating 30 exercises in 10 min
+
+The product I shipped ≠ the product being used.
+```
+
+**Post 4:**
+```
+Free API, no auth required:
+
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"paper":"cream","elements":[
+    {"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Living Room"}
+  ]}'
+
+Returns SVG in ~150ms. URL is shareable, embeddable, versionable.
+```
+
+**Post 5:**
+```
+MCP server: npx skissify-mcp
+
+Any Claude/Cursor workflow can now call:
+"Draw a floor plan with a 5x7 kitchen, bedroom south wall, bathroom adjacent"
+
+And get back a sketch URL.
+
+Not a description. A drawing.
+
+skissify.com
+```
+
+---
+
+### NEW: LinkedIn "Show HN Morning" Post (Post at noon CET)
+
+```
+Show HN is live this morning.
+
+Three days ago I launched Skissify on Product Hunt. Today it goes to Hacker News.
+
+Here's the thing nobody tells you about technical launches:
+
+The audience you build for is never the audience that shows up first.
+
+I built a JSON-to-sketch API for AI developers. An MCP server for Claude and Cursor.
+Technical, agent-native, API-first.
+
+Day 1: A homeowner used it to explain her kitchen renovation to a contractor.
+Day 2: The D&D community found the blueprint paper style and started making dungeon maps.
+Day 3 (today): Show HN.
+
+The pattern: build a primitive, watch use cases emerge.
+
+If you're working on anything in AI right now — tools, agents, APIs — the unexpected use cases are your real market signal. Build the API, then follow the users.
+
+Skissify is free to try (no auth): skissify.com
+MCP server: npx skissify-mcp
+
+HN thread: [paste link]
+
+#AIAgents #BuildInPublic #MCP #SideProject #IndieHacker
+```
+
+---
+
+### NEW: r/webdev Post (Post at 14:00 CET)
+
+**Title:** `I built a REST API that returns hand-drawn SVGs from JSON — benchmarked LLM accuracy on schema design`
+
+**Body:**
+```
+Built Skissify — a sketch renderer. POST JSON manifest → get hand-drawn SVG back.
+
+The interesting engineering decision was the schema design.
+
+**Version 1: Hierarchical schema**
+{
+  "rooms": [
+    {
+      "name": "Kitchen",
+      "width": 300,
+      "height": 200,
+      "elements": [
+        { "type": "stove", "x": 10, "y": 10 },
+        { "type": "sink", "x": 150, "y": 10 }
+      ]
+    }
+  ]
+}
+
+LLM first-attempt accuracy: ~40–61%
+
+**Version 2: Flat schema**
+{
+  "elements": [
+    { "type": "rect", "x": 0, "y": 0, "width": 300, "height": 200, "label": "Kitchen" },
+    { "type": "stove", "x": 10, "y": 10 },
+    { "type": "sink", "x": 150, "y": 10 }
+  ]
+}
+
+LLM first-attempt accuracy: ~88–94%
+
+The difference: LLMs treat flat arrays as list-completion tasks (high confidence). Nesting requires depth tracking (more context = more failure modes).
+
+If you're building any API meant to be called by LLMs, design the schema around cognitive load, not logical elegance. Flat > Nested for generation accuracy.
+
+Free API (no auth): https://skissify.com/api/render
+Docs: https://skissify.com/for-agents
+MCP server: `npx skissify-mcp`
+```
+
+---
+
+### NEW: Evening Wrap Post — All Platforms (Post at 20:00 CET)
+
+**Twitter/X:**
+```
+Show HN Day 3 wrap.
+
+Posted at 09:00. Engaged every comment.
+Also finally posted:
+→ MCP Discord #showcase (was overdue 3 weeks)
+→ r/LocalLLaMA
+→ Indie Hackers
+→ Smol Launch
+
+Real numbers tomorrow morning.
+
+skissify.com
+#ShowHN #BuildInPublic
+```
+
+**LinkedIn:**
+```
+Show HN Day 3 wrap.
+
+Posted at 09:00 CET. Engaged every comment throughout the day.
+
+Finally cleared the four channels that had been staged but unposted for 3 weeks:
+MCP Discord, r/LocalLLaMA, Indie Hackers, Smol Launch.
+
+Launch lesson: the content was ready. Execution was the bottleneck.
+
+Real metrics post tomorrow morning.
+
+#BuildInPublic #ShowHN #IndieHacker
+```
+
+---
+
+### Cycle 122 — New Viral Hooks
+
+| Hook | Platform | When |
+|------|----------|------|
+| "Flat JSON: 88% accuracy. Nested: 40%. Schema design is UX, even when the user is an LLM." | HN comment / Twitter | Today in HN thread |
+| "The demo video doesn't exist. Everything else does. Recording tomorrow." | Indie Hackers / Twitter | Evening wrap |
+| "I built it for AI devs. D&D dungeon masters found it first." | All platforms | Day 3-4 sustained |
+| "The sketch URL is the API response. Not a blob. Not a download. A URL you can embed, share, version." | Twitter / r/webdev | Today + ongoing |
+| "2am before Show HN. Here's everything we built: [link to blog]" | Bluesky / Twitter | 08:00 CET warmup |
 
 ---
 
