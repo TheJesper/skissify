@@ -8720,3 +8720,98 @@ Paddle/ProfitWell 2026 data:
 
 ---
 
+
+## 2026-04-03 (Evening) — Run #122, 19:43 Stockholm
+
+**Sources**: plus.excalidraw.com/changelog, github.com/excalidraw/excalidraw/releases, tldraw.dev/releases, github.com/jgraph/drawio-mcp, infoq.com/news/2026/04/pinterest-mcp-ecosystem, anthropic.com/news/donating-the-model-context-protocol, inc.com/fast-company-2/why-architects-are-ditching-ai-renders, dev.to/peytongreen_dev/mcp-dev-summit-2026 (verified 2026-04-03)
+
+---
+
+### Excalidraw+ February 2026 — BYOK AI + Radar Charts + Presentation Overhaul (MEDIUM-HIGH)
+
+**Sources**: plus.excalidraw.com/changelog (verified 2026-04-03)
+
+Excalidraw+ shipped a significant February 2026 feature cluster:
+- **Custom AI tokens (BYOK)**: Users can supply their own OpenAI, Claude, Gemini, or OpenRouter API keys for AI features — removes Excalidraw as a billing intermediary for AI generation
+- **Radar charts**: Advanced chart types with multi-series visualisation — moving toward data diagram territory
+- **Presentation Waiting Room**: Guest admission/denial flow — signals push into professional meeting/demo use case
+- **YouTube sync + QR code sharing**: Positioning for live collaborative presentations
+
+Excalidraw still requires Chromium (browser-based, no headless JSON API), no architectural elements, no programmatic pipeline support. The BYOK AI feature is notable: it means Excalidraw is leaning into "AI-assisted human drawing" not "AI-generated programmatic JSON." This is the opposite direction from Skissify.
+
+**Threat assessment: MEDIUM-HIGH (stronger presentation features; still zero overlap on JSON/headless/agent use case)**
+
+---
+
+### tldraw SDK 4.3 (January 2026) — Performance + Image Pipeline Starter Kit (LOW-STABLE)
+
+**Sources**: tldraw.dev/releases, github.com/tldraw/tldraw/releases (verified 2026-04-03)
+
+tldraw SDK 4.3 (January 19, 2026) additions:
+- Shape indicators now rendered via 2D canvas instead of SVG — 25x performance improvement on hover/select with many shapes
+- **Image pipeline starter kit**: Visual node-based canvas for AI image generation workflows — DAG execution engine, typed port connections
+- New `TldrawUiSelect` component, consolidated options prop, quick zoom navigation
+- WCAG 2.2 AA accessibility compliance (introduced in SDK 4.0)
+
+No MCP server. No headless JSON rendering. $6,000/year commercial licence unchanged. The image pipeline kit is the most interesting signal: tldraw is building tooling for AI workflow *builders*, not AI agent *consumers*. Skissify's MCP integration targets the opposite end — agents call Skissify as a tool, not humans building agent UIs.
+
+**Threat assessment: LOW-STABLE (4th consecutive cycle — no strategic movement toward Skissify's niche)**
+
+---
+
+### Draw.io Official MCP Server (February 3, 2026) — XML/Mermaid Diagrams via MCP (MEDIUM-HIGH, ELEVATED)
+
+**Sources**: github.com/jgraph/drawio-mcp, mcpmarket.com/server/draw-io, atalupadhyay.wordpress.com/2026/03/15 (verified 2026-04-03)
+
+JGraph (the team behind draw.io) shipped their official MCP server on February 3, 2026. Key facts:
+- Formats supported: XML, CSV, Mermaid.js — **not hand-drawn, not JSON-first schema**
+- Tools: create, read, update, delete diagram elements; search 10,000+ shapes by style string
+- Opens diagrams in the draw.io desktop/web editor — requires the draw.io environment running
+- Multiple community forks also listed on PulseMCP and MCP registries
+- Google Cloud blog (February 2026): "Automating Infrastructure Diagrams with Draw.io, MCP, and Antigravity" — enterprise usage pattern emerging
+
+**For Skissify**: Draw.io's MCP requires the draw.io editor running. Skissify is headless — no editor, no runtime dependency, just JSON in → SVG out. The use cases are adjacent (both diagram via AI agent) but execution is different. Draw.io wins on shape library (10,000+ shapes); Skissify wins on hand-drawn aesthetic, zero runtime dependency, architectural elements, and sub-100ms headless render. Both are in the "AI agent creates visual output" space.
+
+**Critical gap**: Draw.io's MCP is in the official registry. Skissify is not. Draw.io is now the default "diagram via MCP" answer for agents. Skissify must list to claim the "hand-drawn / architectural sketch via MCP" sub-category before it also defaults to Draw.io by absence.
+
+**Threat assessment: MEDIUM-HIGH (officially in registry; captures generic diagram query; Skissify must list to differentiate the hand-drawn sub-category)**
+
+---
+
+### MCP Dev Summit April 2-3, 2026 — Auth Is the Dominant Unsolved Problem (ECOSYSTEM SIGNAL)
+
+**Sources**: dev.to/peytongreen_dev/mcp-dev-summit-2026, anthropic.com/news/donating-the-model-context-protocol (verified 2026-04-03)
+
+The first MCP Dev Summit ran April 2-3 in New York. Six dedicated sessions on authentication. MCP now has 97M+ monthly SDK downloads (Python + TypeScript combined). Adopted by Anthropic, OpenAI, Google, Microsoft, Amazon, Pinterest (production deployment), MuleSoft, Google Cloud.
+
+Skissify's MCP server is auth-light (it renders public SVGs from JSON — low-stakes, no credential risk). This is an advantage during the auth uncertainty period: tools that don't require OAuth/tokens face zero auth friction in adoption. Position as "zero-auth sketch renderer" in registry listing.
+
+**Ecosystem signal: TAILWIND (auth complexity benefits simple tools; Skissify's zero-auth profile is a listing advantage right now)**
+
+---
+
+### Architect Trend: Hand-Drawn Aesthetic Resurgence (CULTURAL TAILWIND)
+
+**Sources**: inc.com/fast-company-2/why-architects-are-ditching-ai-renders-for-hand-drawn-sketches-again (verified 2026-04-03)
+
+Inc/Fast Company covered a trend where architects are deliberately returning to hand-drawn sketch aesthetics because AI-generated photo-realistic renders have eroded client trust ("too perfect, feels fake"). Studios now use hand-drawn or sketch-style visuals intentionally to signal "early concept, not committed" to clients.
+
+**For Skissify**: This is a direct product-market fit signal for the architecture niche. Skissify's tunable humanness/wobble parameters are the tool for this use case. Content opportunity: write a post targeting architecture firms on "how to generate intentionally sketchy concept visuals from your JSON floorplan data."
+
+**Threat assessment: CULTURAL TAILWIND (architecture niche use case validated by mainstream business press)**
+
+---
+
+### Updated Competitor Matrix (Run #122 — Friday April 3, 2026 Evening)
+
+| Tool | Status (2026-04-03 Eve) | Headless JSON SVG | Hand-drawn | No Chromium | MCP | Threat |
+|------|------------------------|-------------------|------------|-------------|-----|--------|
+| **Draw.io** | Feb 2026: Official MCP server in registry. XML/Mermaid/CSV. 10K+ shapes. Requires editor runtime. | NO (editor required) | NO | Partial | **YES (official registry)** | **MEDIUM-HIGH (registry presence, generic diagrams)** |
+| **Excalidraw+** | Feb 2026: BYOK AI tokens, radar charts, presentation overhaul. No headless. | NO (Chromium) | YES | NO | YES (browser) | **MEDIUM-HIGH** |
+| **tldraw** | Jan 2026: SDK 4.3, image pipeline kit, 25x perf. No MCP. $6K/yr. | NO | Partial | YES | NO | **LOW-STABLE** |
+| **Miro** | Feb 2026: MCP server (Beta), SVG-to-Figma, AI reads boards. $10-20/user/mo. | NO | NO | YES | YES | **MEDIUM-HIGH** |
+| **AFFiNE** | 2026: AI mind maps + UML. OSS Miro alt. No JSON API. | NO | NO | YES | NO | **MEDIUM** |
+| **Frame0** | Unchanged. MCP on PulseMCP. Hand-drawn wireframes. Desktop. | NO (desktop) | YES | YES | YES | **MEDIUM** |
+| **Skissify** | Headless JSON hand-drawn SVG. MCP Registry: **ABSENT (CRITICAL x19)**. | **YES (only one)** | **YES** | **YES** | YES (headless) | Uncontested |
+
+---

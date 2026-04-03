@@ -8054,3 +8054,64 @@ Steps:
 **Time**: 1 hour.
 
 ---
+
+## [2026-04-04] — Actions for Saturday April 4, 2026 (from Run #122, 19:43)
+
+### Context: Run #122 Key New Findings
+- **Draw.io official MCP server** in registry since Feb 2026 — capturing generic "diagram via MCP" queries; hand-drawn/architectural sub-category still uncontested but only if Skissify lists
+- **Excalidraw+ BYOK AI + radar charts** — going deeper into human-assisted drawing, NOT programmatic JSON; confirms directional split
+- **tldraw SDK 4.3** — image pipeline kit, 25x perf; still no MCP, no headless JSON, $6K/yr unchanged
+- **Architect hand-drawn resurgence** — Inc/Fast Company article: architects ditching AI renders for sketch aesthetics (client trust); direct persona validation
+- **MCP Dev Summit April 2-3** — auth is the #1 unsolved problem; zero-auth tools (like Skissify) have a timing advantage in the registry
+- **97M MCP SDK downloads** — ecosystem mainstream; addressable pool is large now
+
+---
+
+### Action 1 (CRITICAL — 19th consecutive carry-over): Submit to Official MCP Registry NOW
+
+**Owner**: Founder
+**Why it escalated**: Draw.io official MCP server is now in the registry capturing all "diagram via MCP" queries. Developers searching for sketch or architectural diagram tools who find Draw.io first never look further. Every day absent is market share given to Draw.io by default. The hand-drawn + headless + architectural sub-category has zero entries — Skissify owns it on day one of listing.
+
+**Additional edge this cycle**: MCP Dev Summit identified auth as the #1 pain point. Skissify's zero-auth profile (no OAuth, no tokens, just JSON → SVG) is a genuine differentiator to highlight in the registry listing description. Lead with it.
+
+Steps:
+1. Fork `github.com/modelcontextprotocol/registry`
+2. Create `servers/skissify.json` — required keywords in description: "hand-drawn", "architectural", "floor plan", "headless", "no Chromium", "JSON schema", "zero-auth", "SVG"
+3. Open PR: "Add Skissify — headless JSON-to-hand-drawn SVG, zero-auth, no Chromium, architectural elements"
+4. Add `skissify.com/.well-known/mcp-server.json` for auto-discovery
+5. Also submit to PulseMCP (pulsemcp.com/add-server)
+
+**Time**: 3-4 hours. This is the highest-leverage action available.
+
+---
+
+### Action 2 (HIGH): Write Architecture Niche Blog Post — Capitalise on Inc/Fast Company Trend
+
+**Source signal**: Inc/Fast Company published "Why Architects Are Ditching AI Renderings for Hand-Drawn Sketches Again" — mainstream validation that architects are deliberately choosing sketch aesthetics over photo-realistic AI renders because clients distrust "too perfect" visuals.
+
+**Action**: Write a 600-800 word blog post targeting architecture/BIM professionals:
+- Title: "Generate intentional concept sketches from your floor plan JSON — why architects are returning to hand-drawn"
+- Angle: The hand-drawn aesthetic is a professional signal, not a limitation. Skissify generates it programmatically from JSON (BIM exports, parametric design data).
+- Include: a live example sketch from a floor plan JSON, tunable wobble demo, link to gallery
+- CTA: "Try free — no Chromium required, no setup, paste JSON and export SVG"
+- Target keywords: "hand-drawn floor plan generator", "sketch style architectural diagram", "JSON to floor plan sketch"
+- Distribute: post on Hacker News (Show HN), r/architecture, r/computational_design, LinkedIn
+
+**Why now**: The Inc article is fresh. Riding cultural momentum with a relevant post captures search intent while the trend is active.
+**Time**: 2-3 hours (writing + formatting + posting).
+
+---
+
+### Action 3 (MEDIUM): Add "Zero-Auth" and "No Runtime Dependency" to All Developer-Facing Copy
+
+**Source signal**: MCP Dev Summit April 2-3 — six sessions on auth; auth complexity is the #1 adoption barrier for MCP tools in 2026. Draw.io MCP requires the draw.io editor running. Miro requires OAuth. Excalidraw requires browser.
+
+**Action**: Update these three surfaces to lead with zero-auth / no-runtime-dependency messaging:
+1. **Landing page hero**: Add "Zero auth. No runtime. JSON in, SVG out." below the headline
+2. **MCP registry listing** (when submitted per Action 1): First sentence must be "Zero-auth headless renderer — no OAuth, no editor, no Chromium required."
+3. **README / npm package description**: Add "No runtime dependencies. Paste JSON, get hand-drawn SVG." to the first paragraph
+
+**Copy test**: "Zero-auth sketch rendering — EUR 2/mo" vs current "Pro Plan — EUR 2/mo." The auth-free framing maps directly to developer pain validated by the MCP Dev Summit data.
+**Time**: 30-45 minutes (copy edits only, no structural changes).
+
+---

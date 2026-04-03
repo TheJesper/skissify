@@ -6674,3 +6674,68 @@ PulseMCP indexes 11,180+ MCP servers. The official Anthropic registry has ~2,000
 **New action**: Update pricing page copy to use "API access" language for the developer tier, not "Pro plan." Test: "Get API access — EUR 2/mo" vs "Upgrade to Pro — EUR 2/mo."
 
 ---
+
+## 2026-04-03 (Evening) — Run #122, 19:43 Stockholm
+
+**Sources**: inc.com/fast-company-2/why-architects-are-ditching-ai-renders, dev.to/peytongreen_dev/mcp-dev-summit-2026, getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models, github.com/jgraph/drawio-mcp, zuplo.com/blog/one-year-of-mcp (verified 2026-04-03)
+
+---
+
+### What Would Make Someone Pay EUR 2/mo for Skissify — Updated Specifics
+
+**New evidence this cycle:**
+
+1. **The Draw.io MCP trap**: Draw.io is now the default "diagram via MCP agent" answer because it is in the official registry. An agent that finds Draw.io first never looks further. The EUR 2 payment trigger is now also a discovery trigger: the user can only pay if they find you. The MCP registry listing is now the #1 blocker to EUR 2 conversions — more important than pricing page copy.
+
+2. **Architect hand-drawn resurgence**: Inc/Fast Company documented architects deliberately choosing sketch aesthetics over AI photo-renders because clients distrust "too perfect" visuals. These architects generating floor plan JSONs from design tools need Skissify specifically. They will pay EUR 2 without hesitation if watermark is on client-facing exports. This is a zero-friction conversion: professional output requires paid.
+
+3. **Zero-auth advantage during MCP auth crisis**: The MCP Dev Summit (April 2-3) was dominated by authentication as the unsolved problem. Tools requiring OAuth tokens face adoption friction. Skissify renders JSON → SVG with no credential requirement. Developers embedding Skissify in agent pipelines face zero auth complexity. The EUR 2 feels like infrastructure cost, not SaaS subscription cost — which is the lowest-friction budget category for developers.
+
+4. **97M SDK downloads = massive addressable pipeline**: MCP has 97M monthly installs. Every developer building an agent workflow that produces any visual output is a potential EUR 2 customer. The addressable pool grew substantially this cycle — the MCP ecosystem is now mainstream, not early-adopter.
+
+---
+
+### Target Persona Update — Two Distinct EUR 2 Payers
+
+**Persona A: Agent Pipeline Developer**
+- Builds AI agent workflows (LangChain, CrewAI, Claude Code, n8n)
+- Wants to generate visual outputs (floor plans, diagrams, architecture sketches) programmatically
+- Pain: Draw.io MCP requires editor running; Mermaid has no hand-drawn style; Excalidraw has no headless API
+- Conversion trigger: pipeline blocked at 3am when free quota runs out, or watermark on a screenshot sent to Slack
+- Budget: treats EUR 2 as infrastructure (like database hosting, email API) — no approval needed
+- **New channel**: MCP official registry search for "hand-drawn" or "architectural sketch"
+
+**Persona B: Architecture / Construction Tech Firm**
+- Generates floor plans or building sketches from JSON data (BIM exports, parametric design)
+- Needs hand-drawn aesthetic for client presentations (confirmed trend: deliberately avoiding AI photo-renders)
+- Pain: No tool generates sketch-style SVG from JSON without a Chromium dependency
+- Conversion trigger: client sees watermark on concept sketch export
+- Budget: EUR 2/mo is immaterial for professional use; they would pay EUR 20 without blinking
+- **New channel**: Architecture tech blogs, BIM/CAD communities, fast-company-style press coverage
+
+---
+
+### Positioning Opportunities — New This Cycle
+
+1. **"Zero-auth sketch renderer for MCP pipelines"**: While Draw.io, Miro, and others deal with OAuth complexity from the MCP Dev Summit, Skissify's simple API requires no credentials. Lead with this in registry listing and developer-facing copy.
+
+2. **"The architectural sketch tool AI renders killed"**: Architects are returning to hand-drawn aesthetics because AI made photo-renders feel fake. Skissify generates those hand-drawn sketches programmatically. This is a content/SEO opportunity AND a positioning statement.
+
+3. **"EUR 2/mo vs Draw.io's editor dependency"**: Draw.io MCP is in the registry but requires the draw.io application running. Skissify is headless. "No runtime dependency. JSON in, SVG out. EUR 2/mo." This is a direct comparison that wins on the developer segment's core value: simplicity.
+
+4. **Cultural moment**: The Inc/Fast Company article validates the hand-drawn aesthetic as a professional choice, not a limitation. Skissify can quote this positioning in landing page copy: "Hand-drawn isn't a workaround. It's a signal architects now use deliberately."
+
+---
+
+### Key Differentiators — Reconfirmed and Sharpened
+
+| Differentiator | Evidence (this cycle) |
+|---------------|----------------------|
+| Headless, no Chromium | Draw.io MCP requires editor; Excalidraw requires browser — zero competition on headless |
+| Hand-drawn aesthetic, tunable | Excalidraw still browser-only; new Inc article validates architect demand for sketch aesthetics |
+| Zero-auth API | MCP Dev Summit: auth is the #1 unsolved problem — zero-auth tools have a timing advantage |
+| Architectural elements | No competitor has JSON-first doors/windows/stairs/dimensions in sketch style |
+| Sub-100ms render | Draw.io, Excalidraw, Miro all require runtime environments with longer setup |
+| EUR 2 infrastructure pricing | Framed as infra (database/email/storage tier), not app subscription — matches developer budget mental model |
+
+---
