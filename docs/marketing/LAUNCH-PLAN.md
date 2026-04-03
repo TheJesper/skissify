@@ -1,7 +1,66 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 — Day 3 / Product Hunt Eve — Cycle 125**
+**Current Date: April 4 — Day 4 / Product Hunt Day — Cycle 126**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 126 — Product Hunt Day)
+
+### Cycle 126 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — fully rewritten, sharper hook, new AI agent section, practical rule | `blog/why-hand-drawn-beats-figma.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — rewritten with full manifest example, 4 workflows, determinism section, agent memory angle | `blog/ai-agents-floor-plans.md` | DONE |
+| Blog: "Skissify vs Excalidraw: The One Question That Decides It" — rewritten with decision tree, new table, "use both" pattern, curl snippet | `blog/skissify-vs-excalidraw.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 126 — 5 new platforms (Threads, fosstodon, Lemmy, Discord bots, Bluesky starter packs), 6 new viral hooks (vibe drawing, agent memory URL, schema insight, unexpected users), post-PH momentum copy April 5–7, updated hashtag strategy | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 126 — launch day status table, updated timestamp | `PRESS-KIT.md` | DONE |
+
+### Cycle 126 — Priority Actions for TODAY (April 4 — Product Hunt Day)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 CRITICAL | 08:00–08:45 CET | OVERDUE |
+| **Post pre-launch warmup** (08:45 CET) | P0 | 08:45 CET | Per Cycle 125 copy |
+| **Post PH live tweet + LinkedIn + Warpcast** (09:01 CET) | P0 | 09:01 CET | Per Cycle 125 copy |
+| **Post maker first comment on PH** | P0 | 09:02 CET | Per PRODUCT-HUNT-SUBMISSION.md |
+| **Post r/LocalLLaMA** — OVERDUE 4 weeks | P0 CRITICAL | NOW | |
+| **Post MCP Discord #showcase** — OVERDUE 4 weeks | P0 CRITICAL | NOW | |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | P0 CRITICAL | MORNING | |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | P0 CRITICAL | MORNING | |
+| **Post Threads** (new channel) | P1 | 10:00 CET | Copy in Cycle 126 SOCIAL-MEDIA.md |
+| **Post fosstodon.org** (new channel) | P1 | 10:30 CET | Copy in Cycle 126 SOCIAL-MEDIA.md |
+| **Post Lemmy** (new channel) | P1 | 11:00 CET | Copy in Cycle 126 SOCIAL-MEDIA.md |
+| **Hour-1 update tweet** (10:00 CET) | P1 | 10:00 CET | Fill in real numbers |
+| **Midday push + r/SideProject** (12:00 CET) | P1 | 12:00 CET | Copy in Cycle 125 SOCIAL-MEDIA.md |
+| **Evening support ask** (18:00 CET) | P1 | 18:00 CET | Copy in Cycle 125 SOCIAL-MEDIA.md |
+| **Day wrap tweets + LinkedIn** (22:00 CET) | P1 | 22:00 CET | Fill in real numbers |
+
+### Cycle 126 — Done Inventory (Completed This Cycle)
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-beats-figma.md | DONE Cycle 126 |
+| Blog: ai-agents-floor-plans.md | DONE Cycle 126 |
+| Blog: skissify-vs-excalidraw.md | DONE Cycle 126 |
+| SOCIAL-MEDIA.md — 5 new platforms | DONE Cycle 126 |
+| SOCIAL-MEDIA.md — 6 new viral hooks | DONE Cycle 126 |
+| SOCIAL-MEDIA.md — post-PH momentum templates | DONE Cycle 126 |
+| PRESS-KIT.md — launch day status table | DONE Cycle 126 |
+| LAUNCH-PLAN.md — Cycle 126 block | DONE Cycle 126 |
+
+### Cycle 126 — New Ideas
+
+**Idea: "Vibe Drawing" as a content category.** The phrase "vibe coding" is trending. "Vibe drawing" is a direct parallel: describe a space in words, AI draws it. This is the same emotional hook. Create a dedicated landing page or blog tag `/vibe-drawing`. Every post in this category targets the exact audience discovering vibe coding who don't yet know spatial sketching is solved.
+
+**Idea: GitHub repo README sketch.** Add a Skissify-generated floor plan to the open-source MCP server README. "Here's a floor plan Claude generated with this server." One image, no explanation needed. PR to skissify-mcp repo.
+
+**Idea: "The curl test" as a weekly thread.** Every week, pick one AI tool and test it with a curl command. Skissify passes trivially. Most tools fail. Positions Skissify as the API-first benchmark in a category where most tools require GUIs.
+
+**Idea: Bluesky Starter Pack.** Create a "AI Tools 2026" starter pack including Skissify. Starter packs are currently the fastest-growing discovery mechanism on Bluesky for developer tools. Zero ad spend required.
+
+**Idea: Post-PH retrospective on April 5.** The day-after post-mortem consistently outperforms the launch post on LinkedIn and HN. Fill in real numbers, honest tone, one thing you'd do differently. Template staged in Cycle 126 SOCIAL-MEDIA.md.
 
 ---
 

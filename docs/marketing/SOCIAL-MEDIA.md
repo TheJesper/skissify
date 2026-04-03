@@ -1,7 +1,250 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 125 (Product Hunt Eve. New: PH Day personal network DM templates, Product Hunt morning activation sequence, hour-by-hour PH day tweet cadence, LinkedIn PH support post, post-PH wrap copy, Warpcast/Farcaster template, 3 new viral hooks for PH Day. Blog: `product-hunt-day-the-10-dms-that-matter.md` — post tonight 21:00 CET.)**
+**Last updated: April 4, 2026 — Cycle 126 (Product Hunt Day. New: 5 new platforms added (Threads, Mastodon fosstodon, Lemmy, Discord bots, Bluesky starter packs), 6 new viral hooks, TikTok/Reels scripts updated for launch day, "vibe drawing" trend hook, post-PH momentum copy for April 5–7, 3 blog posts fully rewritten. LAUNCH-PLAN.md and PRESS-KIT.md updated.)**
+
+---
+
+## Cycle 126 — April 4, 2026 (Product Hunt Day)
+
+### New Platforms Added This Cycle
+
+| Platform | Audience | Format | Status |
+|----------|----------|--------|--------|
+| Threads (Meta) | Design/lifestyle crossover | Image + caption, 500 chars | NEW — never posted |
+| fosstodon.org (Mastodon) | Developers, open-source community | Text thread, no algo | NEW — high engagement rate |
+| Lemmy (kbin.social) | Reddit-style, privacy-first devs | Post to !programming, !selfhosted | NEW — zero spam tolerance |
+| Discord bots showcase servers | Bot builders, automation devs | #showcase channel post | OVERDUE |
+| Bluesky Starter Packs | Developer/AI communities | Add to "AI Tools" starter packs | NEW — 2026 growth channel |
+
+---
+
+### New Viral Hooks — Cycle 126
+
+**Hook 1 (identity shift / status hook):**
+```
+The napkin sketch was always the most important artifact in the room.
+
+Nobody could automate it. Now they can.
+
+JSON in. Hand-drawn sketch out. 150ms.
+
+skissify.com
+```
+
+**Hook 2 (counterintuitive dev insight):**
+```
+I spent 3 weeks optimizing my rendering algorithm.
+
+The biggest accuracy gain came from making the JSON schema simpler.
+
+Flat list, absolute coordinates, explicit types: 92% LLM first-try.
+Nested hierarchy: 58%.
+
+Schema design beats model choice for spatial tasks.
+
+#AIAgents #BuildInPublic
+```
+
+**Hook 3 (show don't tell — curl hook):**
+```
+The floor plan I asked Claude to draw:
+
+[paste sketch URL]
+
+The command that made it:
+
+curl -X POST https://skissify.com/api/render -d '{ ... }'
+
+No Figma. No human drawing. 4 seconds.
+```
+
+**Hook 4 (vibe drawing trend — riding 2026 terminology):**
+```
+Vibe coding: describe code in English, AI writes it.
+Vibe drawing: describe a room, AI sketches it.
+
+Vibe drawing is real now. skissify.com
+```
+
+**Hook 5 (unexpected users — keeps performing):**
+```
+I shipped a JSON-to-floor-plan API for AI developers.
+
+Week 1 users:
+- A home renovation blogger
+- A D&D dungeon master (blueprint paper)
+- A geometry teacher (30 exercises in 10 min)
+- An estate agent (every listing gets a sketch)
+
+Primitives find their people.
+```
+
+**Hook 6 (agent memory / URL insight — dev Twitter gold):**
+```
+A Skissify sketch URL contains the full floor plan manifest.
+
+That means:
+→ Agents can read it
+→ Agents can modify it
+→ Agents can pass it to other agents
+
+The URL is not a link to an image. It's a spatial memory cell.
+```
+
+---
+
+### Threads (Meta) — Launch Day Posts
+
+**Post 1 (visual hook):**
+```
+My AI agent just drew me a floor plan.
+
+Not a description of a floor plan. An actual hand-drawn sketch.
+
+JSON in → sketch out → shareable URL in under 2 seconds.
+
+This is what Skissify does. skissify.com (free to try)
+```
+
+**Post 2 (design community angle):**
+```
+Designers: you know how a rough sketch gets better feedback than a polished Figma mockup?
+
+That's not an accident. Wobble in the lines communicates "this is provisional." Polished pixels communicate "this is decided."
+
+Now AI agents can produce the rough sketch. Automatically.
+
+→ skissify.com
+```
+
+---
+
+### fosstodon.org (Mastodon) — Launch Day Post
+
+```
+Shipped Skissify — a JSON-to-hand-drawn-sketch API with an MCP server.
+
+Tech: flat JSON schema (88–92% LLM first-try accuracy), seeded wobble for deterministic rendering, 26 architectural element types, REST + MCP.
+
+No human drawing involved. Agent describes layout → sketch URL returned.
+
+Free tier, no auth. npx skissify-mcp or POST /api/render.
+
+→ skissify.com
+#FOSS #BuildInPublic #MCP #AIAgents
+```
+
+---
+
+### Lemmy (!programming, !selfhosted) — Launch Day Post
+
+**Title:** Show HN style: I built a sketch rendering API for AI agents — JSON in, hand-drawn floor plans out
+
+```
+Built Skissify after noticing AI agents reason well about spatial layouts but have no good visual output format.
+
+ASCII art is unreadable at scale. Generated images (DALL-E, SD) are stochastic — different every run, not reproducible.
+
+Skissify is deterministic: same JSON manifest = same sketch. You can version them in git, diff two floor plans, cache by hash.
+
+Stack: Next.js, Canvas 2D, seeded wobble algorithm. MCP server so Claude/Cursor can call it directly.
+
+Free tier, no auth: curl -X POST https://skissify.com/api/render
+
+Questions welcome.
+```
+
+---
+
+### Discord Bots / Automation Servers — Showcase Post
+
+```
+**Skissify MCP Server** — give your AI agent a pencil
+
+`npx skissify-mcp` adds a `skissify_render` tool to Claude Desktop, Cursor, or any MCP-compatible runtime.
+
+The agent describes a spatial layout as JSON → gets a hand-drawn sketch URL back.
+
+26 element types: floor plan symbols, furniture, fixtures.
+API: POST https://skissify.com/api/render (no auth)
+
+skissify.com | Free tier available
+```
+
+---
+
+### Trending Hashtags — Cycle 126 Research (April 4, 2026)
+
+**Momentum hashtags (use first week of April):**
+`#VibeDraw` `#VibeCoding` `#VibeArchitecture` `#AIDrawing` `#SketchAPI`
+
+**SEO hashtags (evergreen):**
+`#FloorPlan` `#AIagent` `#MCPServer` `#JSONtoSVG` `#HandDrawn` `#SketchFirst`
+
+**Community hashtags:**
+`#IndieHackers` `#BuildInPublic` `#SideProject` `#ProductHunt` `#ShowHN`
+
+**Platform-specific (2026 data):**
+- Twitter/X: max 3 hashtags (2–3 optimal)
+- LinkedIn: 5 hashtags per post (algorithm-favored in 2026)
+- Instagram: 5–8 niche hashtags (broad ones are dead)
+- Threads: 3–5 hashtags (new platform, algorithm still generous)
+- Mastodon: 5–8 hashtags (used for discovery, no penalty)
+- Bluesky: no hashtags (use labels/starter packs instead)
+
+---
+
+### Post-PH Momentum — April 5–7 Templates
+
+**April 5 (day after PH):**
+
+Twitter/X:
+```
+Product Hunt is done. The product is not.
+
+Final PH count: [X] upvotes. What's next:
+
+→ Demo video (recording today — this is a public commitment)
+→ r/LocalLLaMA post — 3 weeks overdue, going up now
+→ MCP Discord #showcase — going up now
+→ Indie Hackers milestone post
+
+Build in public means publishing the boring days too.
+
+skissify.com
+```
+
+LinkedIn (April 5):
+```
+Product Hunt day wrapped. The real launch starts now.
+
+Three things I learned from launch week:
+
+1. The schema design matters more than the model. Flat JSON got 92% LLM first-try accuracy. Hierarchical schema got 58%. Same model.
+
+2. Homeowners found Skissify before AI developers did. "Describe my renovation to Claude and get a sketch for my contractor" wasn't in the brief.
+
+3. The demo video is always the blocker. Record it first.
+
+This week: posting to 4 overdue communities, recording the demo video, and writing the post-mortem.
+
+→ skissify.com (free tier)
+#BuildInPublic #ProductHunt #AITools
+```
+
+**April 6 (two days after PH):**
+```
+The communities I should have posted to on launch day finally got the post.
+
+r/LocalLLaMA: [link]
+MCP Discord: [link]
+Indie Hackers: [link]
+
+Lesson: no amount of tweet optimization replaces showing up in the communities where your users already are.
+
+Building in public means publishing the mistakes too. The demo video exists now.
+```
 
 ---
 

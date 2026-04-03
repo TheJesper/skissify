@@ -1,81 +1,100 @@
 # Why Hand-Drawn Sketches Beat Figma for Quick Ideas
 
-*Published: April 4, 2026 | Dev.to / blog.skissify.com | Cycle 123*
-*Category: Design Thinking | ~700 words*
+*Published: April 4, 2026 | blog.skissify.com | Cycle 126*
 *Tags: design, UX, product, Figma, AI, sketching, workflow, hand-drawn, wireframe*
 
 ---
 
 The fastest way to kill a good idea is to make it look too finished.
 
-You've been in this meeting. Someone says "let me pull up the mockup" and opens Figma. Within ninety seconds, the entire room is debating button labels and brand colors — instead of whether the feature is worth building at all. The underlying idea never gets pressure-tested. You went straight from concept to critique of execution.
+You've been in this meeting. Someone opens Figma. Within sixty seconds, the whole room is debating button radius and whether the CTA should say "Get started" or "Try free" — and nobody has asked yet whether this feature should exist at all. The idea got executed before it got validated. You went straight from concept to pixel-pushing.
 
-Designers call this premature convergence. And modern design tools are extraordinarily good at triggering it.
+This isn't a Figma problem. It's a fidelity problem. And it costs teams enormous amounts of time and money.
 
 ---
 
-## The Signal Hiding in Every Sketch
+## The Signal Hidden in Your Lines
 
-Every visual artifact sends an implicit message about its own finality.
+Every artifact you put in front of a room sends a message about how finished it is. People respond to that signal before they read a single word.
 
-A napkin sketch says: *this is a starting point — challenge me.*
-A polished Figma frame says: *this is a proposal — evaluate it.*
-A fully designed prototype says: *this is a decision — approve or reject.*
+A napkin sketch says: *This is raw. Push it around. Kill it if it's wrong.*
+A Figma frame says: *Someone worked on this. Evaluate it.*
+A pixel-perfect prototype says: *We're committed. Approve or reject.*
 
-These aren't social conventions — they're psychological signals baked into the fidelity of the artifact. Carnegie Mellon's HCI research group and multiple CHI papers have documented this consistently: reviewers give more structural, substantive feedback on rough representations than polished ones. The wobble in the lines literally communicates *this is provisional*. And that changes how people think.
+This isn't convention — it's psychology. Researchers at Carnegie Mellon's HCI lab have repeatedly documented that reviewers give more structural, generative feedback on rough prototypes than polished ones. The wobble in hand-drawn lines literally communicates *provisional* — and that word changes how brains process information.
 
-When your wireframe looks close to a real product, human cognition shifts from "what should we build?" to "what color should this be?" The polish performs confidence you may not actually have. Once that confidence is performed, the room adjusts accordingly — and the real question goes unasked.
+When your wireframe looks close to a shipped product, the human brain shifts from creative mode ("what should we build?") to evaluative mode ("is this right?"). The room starts optimizing the wrong thing. The big question — *should we build this at all?* — goes unasked.
 
 ---
 
 ## The Figma Tax
 
-Figma is excellent software. This isn't a criticism of Figma — it's a criticism of reaching for Figma too early.
+Figma is excellent software. The problem isn't Figma — it's reaching for Figma at the wrong stage.
 
-The cost isn't the monthly subscription. The cost is the **fidelity ratchet**: once you've invested two hours making something look polished, there's enormous psychological pressure — from yourself and from your team — to defend it rather than discard it. The sunk-cost fallacy in design form.
+The real cost is what I call the **fidelity ratchet**: once you've spent two hours on a design, there's enormous psychological pressure to defend it rather than discard it. The sunk-cost fallacy dressed as design work. Your stakeholders see polish and assume commitment. They stop asking "why?" and start asking "how?"
 
-The sketch sidesteps this entirely. A hand-drawn wireframe takes seven minutes. You can throw it away. You're supposed to throw it away. The entire frame of the interaction changes.
+A hand-drawn wireframe takes seven minutes. You can throw it away. You're *supposed* to throw it away. The entire frame of the conversation changes — and that's the point.
 
-This is the actual competitive advantage of rough sketches in collaborative work: they lower the cost of being wrong.
+Rough sketches lower the cost of being wrong. That's not a limitation. That's the product.
 
 ---
 
-## Why AI Agents Need This Most
+## Where This Gets Interesting for AI Teams
 
-There's a new user of design tools that nobody was thinking about eighteen months ago: the AI agent.
+There's a new user of design tools that nobody was planning for eighteen months ago: the AI agent.
 
-Language models reason about space with surprising precision. Ask Claude to design a studio apartment and you get coherent traffic flow, appropriate clearances, room placement logic. The spatial reasoning is real. But the output has always been a paragraph. You can't show a paragraph in a design review. You can't embed it in a ticket. You can't pass it downstream in an agent pipeline as a visual artifact.
+Language models can reason about space with surprising precision. Ask Claude to design a two-bedroom apartment and you'll get coherent traffic flow, appropriate clearances, a bathroom near the bedroom, windows on exterior walls. The spatial reasoning is real. But the output is always a paragraph.
 
-This is the gap Skissify was built for.
+You can't show a paragraph to a contractor. You can't embed it in a Jira ticket as a visual artifact. You can't pass it downstream in an agent pipeline in a format that humans and other agents can actually interpret.
 
-The API accepts a flat JSON manifest — a list of rooms, doors, windows, furniture — and returns a hand-drawn SVG in approximately 150 milliseconds. The sketch looks intentionally rough. It signals, correctly, that this is a draft — AI-generated, first-pass, meant to be iterated on. The fidelity communicates exactly what it should.
+So AI agents had a reading problem and a writing problem. They could read spatial descriptions and reason about them. But they couldn't *draw*.
+
+This is the gap Skissify fills.
+
+The API accepts a flat JSON manifest — rooms, doors, windows, furniture — and returns a hand-drawn SVG in about 150 milliseconds. The sketch looks intentionally rough because it *is* intentionally rough. It signals exactly what it should: draft, first-pass, subject to change.
 
 ```bash
 curl -X POST https://skissify.com/api/render \
   -H "Content-Type: application/json" \
-  -d '{"paper":"cream","elements":[
-    {"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Living Room"},
-    {"type":"door-symbol","x":0,"y":60,"width":40,"height":10}
-  ]}'
+  -d '{
+    "paper": "cream",
+    "tool": "pencil",
+    "elements": [
+      {"type":"rect","x":0,"y":0,"width":300,"height":200,"label":"Living Room"},
+      {"type":"rect","x":300,"y":0,"width":200,"height":200,"label":"Kitchen"},
+      {"type":"door-symbol","x":0,"y":100,"width":40,"height":10},
+      {"type":"window","x":150,"y":0,"width":80,"height":10}
+    ]
+  }'
 ```
 
-The response is a URL. Shareable, embeddable, versionable. The AI doesn't need a canvas — it needs a function that returns a picture.
+The response is a URL. Shareable, embeddable, diffable. Not a stochastic image that changes every run — a deterministic render, seeded from the data. The same manifest produces the same sketch every time.
 
 ---
 
-## The Practical Rule
+## The Rule That Unlocks This
 
-Here's the heuristic I've settled on after watching dozens of product teams work:
+Here's the heuristic I've arrived at after watching dozens of teams work:
 
 **If you're still asking "should we build this?" — use a sketch.**
 **If you've decided to build it and need to specify how — use Figma.**
 
-Hand-drawn sketches belong in the divergent phase: exploration, ideation, alignment. Figma belongs in the convergent phase: specification, handoff, review.
+These phases need different tools. Figma is a precision instrument for the convergent phase: specification, handoff, approval. Sketching is for the divergent phase: exploration, challenge, alignment.
 
-The mistake is confusing the phases. Polish your thinking first. Polish your pixels second.
+The mistake is chronological. Teams skip the sketch phase because "we'll just do a quick Figma." But there's no such thing. Figma triggers the fidelity ratchet the moment you open a new frame.
 
-Skissify makes that first step accessible to anyone — human or AI — without picking up a stylus or opening a design tool. [Try it free at skissify.com](https://skissify.com).
+Draw first. Polish second. The ideas that survive the sketch phase deserve Figma. The ones that die there just saved you a sprint.
 
 ---
 
-*Skissify converts JSON into hand-drawn sketches via REST API and MCP server. Free tier available. MCP server: `npx skissify-mcp`.*
+## Try It Free
+
+Whether you're a product manager, designer, developer, or an AI agent running in a pipeline — the sketch phase should be fast, cheap, and easy to throw away.
+
+[Try Skissify at skissify.com](https://skissify.com) — no account required, free tier, hand-drawn output in under 2 seconds.
+
+MCP server for AI agents: `npx skissify-mcp`
+
+---
+
+*Skissify converts JSON into hand-drawn sketches via REST API and MCP server. 26 element types including full architectural symbols and furniture. Free tier at skissify.com.*

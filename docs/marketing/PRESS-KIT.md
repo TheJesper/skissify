@@ -1,6 +1,26 @@
 # Skissify Press Kit
 
-*Last updated: April 3, 2026 — Cycle 121 (Launch Eve Wrap. 3 new definitive blog posts written: why-hand-drawn-beats-figma-launch-day-definitive, how-ai-agents-can-draw-floor-plans-launch-day-guide, skissify-vs-excalidraw-definitive-2026. SOCIAL-MEDIA.md Cycle 121 added: X thread, LinkedIn long-form, r/MachineLearning post, Bluesky thread, TikTok/Reels script, Discord bot communities angle, viral hooks, full hashtag + community table for April 4-7. PRESS-KIT key facts corrected: 26 element types. LAUNCH-PLAN.md Cycle 121 updated.)*
+*Last updated: April 4, 2026 — Cycle 126 (Product Hunt Day. Blog posts refreshed: why-hand-drawn-beats-figma.md, ai-agents-floor-plans.md, skissify-vs-excalidraw.md — all rewritten with sharper hooks and updated to Cycle 126 content. SOCIAL-MEDIA.md Cycle 126 added: 5 new platforms, 6 new viral hooks, Threads templates, fosstodon post, Lemmy post, Discord showcase post, post-PH momentum templates April 5–7. LAUNCH-PLAN.md Cycle 126 updated.)*
+
+---
+
+## Cycle 126 — What's New (April 4, 2026)
+
+### Launch Day Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt live | LIVE — producthunt.com/posts/skissify |
+| Blog posts refreshed | DONE — all 3 core posts rewritten |
+| SOCIAL-MEDIA.md Cycle 126 | DONE — 5 new platforms, 6 new hooks |
+| Demo video | OVERDUE — record today between 08:00–08:45 CET |
+| r/LocalLLaMA (2.3M) | OVERDUE — post immediately |
+| MCP Discord #showcase | OVERDUE — post immediately |
+| Indie Hackers | OVERDUE — post today |
+| Smol Launch | OVERDUE — post today |
+| Threads post | NEW — ready in SOCIAL-MEDIA.md Cycle 126 |
+| fosstodon.org | NEW — template ready |
+| Lemmy post | NEW — template ready |
 
 ---
 

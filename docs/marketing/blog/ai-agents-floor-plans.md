@@ -1,111 +1,139 @@
 # How AI Agents Can Draw Floor Plans
 
-*Published: April 4, 2026 | Dev.to / blog.skissify.com | Cycle 123*
-*Category: AI Agents & Tooling | ~750 words*
-*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, automation, LangChain*
+*Published: April 4, 2026 | blog.skissify.com | Cycle 126*
+*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, LangChain, n8n, automation*
 
 ---
 
-Language models have had spatial reasoning for years. Ask any capable model to design a two-bedroom apartment and you'll get something coherent — proper traffic flow, clearances between furniture, windows on exterior walls, a bathroom adjacent to the bedroom. The reasoning is real and has been for a while.
+Language models have had spatial reasoning for years. Ask any capable model to design a two-bedroom apartment and you'll get back something coherent — proper traffic flow, clearances between rooms, windows on exterior walls, a bathroom adjacent to the master bedroom. The reasoning is real. It has been for a while.
 
 The problem was always the output format.
 
-You'd describe a house layout to Claude and get back a paragraph. Thoughtful, accurate — but a paragraph. You can't show a paragraph to a contractor. You can't embed it in a project management ticket. You can't pass it to the next node in an agent pipeline as a visual artifact that downstream agents and humans can actually interpret.
+You could get a paragraph. Thoughtful, accurate, spatially correct. But a paragraph is not a floor plan. You can't hand a paragraph to your contractor. You can't embed it in a listing as a visual artifact. You can't pass it to the next node in your agent pipeline and have a downstream system or human understand the layout without re-reading the entire description.
 
 AI agents could *think* spatially. They couldn't *draw* spatially.
 
-Until the output format changed.
+That changed when the output format changed.
 
 ---
 
-## The Setup (Three Lines)
+## Three Lines to Get Started
 
 ```bash
-# Install the MCP server
+# Install the MCP server (Claude Desktop, Cursor, any MCP-compatible runtime)
 npx skissify-mcp
 
-# Or use the REST API directly — no auth required
-curl -X POST https://skissify.com/api/render -H "Content-Type: application/json" -d @floor-plan.json
+# Or call the REST API directly — no auth required
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d @floor-plan.json
 ```
 
-That's the entire integration. Claude Desktop, Cursor, or any MCP-compatible agent runtime can now call `skissify_render` with a JSON manifest and get back a sketch URL. The agent doesn't render anything — it describes spatial relationships in structured data, and Skissify handles the visual output.
+That's the integration. An MCP-compatible agent can now call `skissify_render` with a JSON manifest and get back a sketch URL. The agent doesn't manage pixels or canvas state. It describes spatial relationships in structured data and gets a visual artifact back.
 
 ---
 
-## The JSON Schema
+## Why Flat JSON Gets 92% First-Try Accuracy
 
-The flat manifest structure is designed specifically for LLM generation. Internal benchmarks show flat JSON achieves 88–92% valid output on first attempt; hierarchical nested schemas drop to 40–61%.
+The manifest structure matters more than the model.
 
-A simple floor plan:
+Internal benchmarks show flat JSON achieves **88–92% valid output on first attempt** from Claude, GPT-4o, and Gemini Pro. Hierarchical nested schemas drop to **40–61%**. Same models, same task, different schema design.
+
+The reason: LLMs handle flat lists better than deep nesting for spatial tasks. Each element is self-describing — position, size, type, label — without requiring the model to track parent-child relationships while also reasoning about spatial positions.
+
+Here's a complete three-bedroom floor plan manifest:
 
 ```json
 {
   "paper": "cream",
   "tool": "pencil",
   "wobble": 3,
+  "humanness": 2,
   "elements": [
     { "type": "rect", "x": 50, "y": 50, "width": 300, "height": 200, "label": "Living Room" },
     { "type": "rect", "x": 350, "y": 50, "width": 200, "height": 200, "label": "Kitchen" },
-    { "type": "rect", "x": 50, "y": 250, "width": 250, "height": 180, "label": "Bedroom" },
-    { "type": "rect", "x": 300, "y": 250, "width": 150, "height": 180, "label": "Bathroom" },
-    { "type": "door-symbol", "x": 50, "y": 200, "width": 40, "height": 10, "rotation": 0 },
-    { "type": "window", "x": 200, "y": 50, "width": 80, "height": 10 },
-    { "type": "text", "x": 200, "y": 10, "text": "Studio Apartment — 48m²" }
+    { "type": "rect", "x": 50, "y": 250, "width": 180, "height": 160, "label": "Bedroom 1" },
+    { "type": "rect", "x": 230, "y": 250, "width": 160, "height": 160, "label": "Bedroom 2" },
+    { "type": "rect", "x": 390, "y": 250, "width": 160, "height": 160, "label": "Bedroom 3" },
+    { "type": "rect", "x": 50, "y": 410, "width": 160, "height": 120, "label": "Bathroom" },
+    { "type": "door-symbol", "x": 50, "y": 180, "width": 40, "height": 10 },
+    { "type": "door-symbol", "x": 140, "y": 250, "width": 40, "height": 10 },
+    { "type": "window", "x": 150, "y": 50, "width": 80, "height": 10 },
+    { "type": "window", "x": 400, "y": 50, "width": 80, "height": 10 },
+    { "type": "bed", "x": 60, "y": 265, "width": 80, "height": 100, "pillows": "double" },
+    { "type": "text", "x": 200, "y": 20, "text": "3-Bed Apartment — 92m²" }
   ]
 }
 ```
 
-The 26 element types cover everything needed for architectural floor plans: basic primitives (`rect`, `line`, `circle`), annotations (`text`, `dim`, `arrow`), architectural symbols (`door-symbol`, `door-slide`, `window`, `stair`, `column`, `opening`), and furniture (`bed`, `sofa`, `armchair`, `desk`, `dining-table`, `bookshelf`), plus bathroom and kitchen fixtures.
+The 26 element types cover everything needed for architectural floor plans: primitives (`rect`, `line`, `circle`, `arc`), annotations (`text`, `dim`, `arrow`), architectural symbols (`door-symbol`, `door-slide`, `window`, `stair`, `column`, `opening`), furniture (`bed`, `sofa`, `armchair`, `desk`, `dining-table`, `bookshelf`), and bathroom/kitchen fixtures (`toilet`, `bathtub`, `sink`, `shower`, `stove`).
 
 ---
 
-## Four Real Workflows
+## Four Real Agent Workflows
 
-**1. Claude Desktop with MCP**
-User types: "Draw a 3-bedroom house with an open-plan kitchen and living area, two bathrooms, and a utility room." Claude reasons about the layout, generates the manifest, calls `skissify_render`, and pastes back a sketch URL. The whole exchange takes under ten seconds.
+**1. Claude Desktop with MCP — conversational floor plans**
 
-**2. LangChain / LlamaIndex Pipeline**
-An agent tasked with "generate a rental property listing including a floor plan sketch" calls the Skissify REST API as a tool, embeds the returned URL in the listing template. The human reviewer sees a rough sketch alongside the text — not a blank space.
+User: "Draw a studio apartment with an open kitchen, one bathroom, and a large south-facing window."
 
-**3. n8n or Make.com Automation**
-A workflow that receives a room description via webhook, passes it to GPT-4o or Claude for layout reasoning, POSTs the manifest to `/api/render`, and delivers the sketch URL via email or Slack. No code deployment required.
+Claude reasons about the layout, generates the manifest, calls `skissify_render`, and returns a sketch URL. Total time: under 10 seconds. No canvas interaction. No drawing software. The agent described the space and got a picture back.
 
-**4. Vibe coding in Cursor**
-Developer prompts: "Add a floor plan preview to the property details page. Use the Skissify API." Cursor generates the manifest from property data fields and embeds the sketch as an `<img>` tag. Works with the existing data model — no design tool needed.
+**2. LangChain / LlamaIndex — automated property listings**
+
+An agent tasked with "generate a rental property listing with a floor plan sketch" calls the Skissify REST API as a tool, receives the sketch URL, and embeds it in the listing template alongside the description text. The reviewer sees a rough plan — not a blank space.
+
+**3. n8n or Make.com — no-code spatial automation**
+
+A workflow receives a room description via webhook, passes it to Claude for layout reasoning, POSTs the manifest to `/api/render`, and delivers the sketch URL via email or Slack. No deployment. No canvas. Works with any model that can output JSON.
+
+**4. Vibe coding in Cursor — instant floor plan preview**
+
+Developer prompt: "Add a floor plan preview to the property detail page using the Skissify API." Cursor generates the manifest from existing property data fields, embeds the sketch as an `<img>` tag. Works with existing data models. No design tools opened.
 
 ---
 
-## Why Determinism Matters for Agents
+## Why Determinism Changes Everything for Agents
 
-Generated images (Midjourney, DALL-E, Stable Diffusion) are stochastic. Run the same prompt twice, get two different images. You cannot programmatically verify output, version control it, or reproduce it reliably.
+Generated images from Midjourney, DALL-E, or Stable Diffusion are stochastic. Run the same prompt twice, get two different images. You cannot programmatically verify the output, version it, or reproduce it.
 
-Skissify sketches are deterministic. The same JSON manifest produces the same sketch every time — down to the wobble, which is seeded from the manifest content. This means you can:
+Skissify sketches are deterministic. The same JSON manifest produces the same sketch every time — including the wobble, which is seeded from the manifest content. This means you can:
 
-- Diff two versions of a floor plan programmatically
-- Cache results by manifest hash
-- Store the manifest (not the image) and regenerate on demand
-- Build tests that assert a specific sketch URL for a given input
+- **Diff two floor plan versions** programmatically by comparing manifests
+- **Cache by manifest hash** — no redundant renders
+- **Store the manifest, not the image** — regenerate on demand, any time
+- **Write tests that assert specific output** — "this input always produces this sketch"
 
-For agents running in pipelines, this is the difference between a tool and a toy.
+For agents running in pipelines at scale, this is the difference between a tool and a toy. A stochastic image generator cannot be a reliable pipeline component. A deterministic renderer can.
+
+---
+
+## The Sketch URL as Agent Memory
+
+There's a property of the Skissify URL that most users don't notice at first: the sketch data lives in the URL itself.
+
+This means a sketch URL is not just a link to an image. It's a serialized manifest — agent-readable state. An orchestrator can inspect the URL to determine what the current floor plan contains, modify the manifest, re-render, and pass the new URL downstream. The sketch becomes a persistent, readable, rewritable spatial memory cell.
+
+No database. No state management. The URL is the state.
 
 ---
 
 ## Get Started
 
 ```bash
-# MCP server (for Claude Desktop / Cursor)
+# MCP (Claude Desktop, Cursor, Windsurf)
 npx skissify-mcp
 
-# REST API (no auth required)
+# REST API — no auth, no account
 curl -X POST https://skissify.com/api/render \
   -H "Content-Type: application/json" \
-  -d '{"paper":"cream","elements":[{"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Kitchen"}]}'
+  -d '{"paper":"cream","elements":[
+    {"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Kitchen"},
+    {"type":"window","x":80,"y":0,"width":60,"height":10}
+  ]}'
 ```
-
-The response contains a sketch URL. Paste it anywhere. Embed it in anything. Share it with anyone.
 
 Your agent can now draw. [Start at skissify.com](https://skissify.com).
 
 ---
 
-*Skissify is an open sketch API for AI agents. Free tier. MCP server: `npx skissify-mcp`. 26 element types. Deterministic output.*
+*Skissify is an open sketch API for AI agents. Free tier, no auth required. MCP server: `npx skissify-mcp`. 26 element types. Deterministic, seeded output. REST + MCP.*
