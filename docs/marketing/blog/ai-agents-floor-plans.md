@@ -1,230 +1,111 @@
-# How AI Agents Can Draw Floor Plans: A Complete Workflow Guide
+# How AI Agents Can Draw Floor Plans
 
-*Published: April 3, 2026 | 7-minute read*
-*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, LangChain, n8n*
-
----
-
-LLMs have had spatial reasoning since at least GPT-4. Ask any capable model to design a studio apartment and you'll get something coherent — traffic flow, clearances, room placement relative to windows, furniture that fits. The reasoning is real.
-
-The problem was always the **output format**.
-
-You'd describe a house to Claude and get a paragraph. Accurate, thoughtful — but a paragraph. You can't hand a paragraph to a contractor. You can't share it in a design review. You can't pass it to the next agent in a pipeline as a visual artifact.
-
-AI agents could *think* spatially. They couldn't *draw* spatially. Until now.
+*Published: April 4, 2026 | Dev.to / blog.skissify.com | Cycle 123*
+*Category: AI Agents & Tooling | ~750 words*
+*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, automation, LangChain*
 
 ---
 
-## The Core Setup (3 lines)
+Language models have had spatial reasoning for years. Ask any capable model to design a two-bedroom apartment and you'll get something coherent — proper traffic flow, clearances between furniture, windows on exterior walls, a bathroom adjacent to the bedroom. The reasoning is real and has been for a while.
+
+The problem was always the output format.
+
+You'd describe a house layout to Claude and get back a paragraph. Thoughtful, accurate — but a paragraph. You can't show a paragraph to a contractor. You can't embed it in a project management ticket. You can't pass it to the next node in an agent pipeline as a visual artifact that downstream agents and humans can actually interpret.
+
+AI agents could *think* spatially. They couldn't *draw* spatially.
+
+Until the output format changed.
+
+---
+
+## The Setup (Three Lines)
 
 ```bash
-# Option A: MCP server for Claude Desktop / Cursor / Windsurf
+# Install the MCP server
 npx skissify-mcp
 
-# Option B: Direct REST API — no auth, no account
-curl -X POST https://skissify.com/api/render \
-  -H "Content-Type: application/json" \
-  -d '{"paper":"cream","tool":"pencil","elements":[
-    {"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Living"},
-    {"type":"rect","x":0,"y":150,"width":100,"height":100,"label":"Bedroom"},
-    {"type":"door-symbol","x":80,"y":0,"width":60}
-  ]}'
+# Or use the REST API directly — no auth required
+curl -X POST https://skissify.com/api/render -H "Content-Type: application/json" -d @floor-plan.json
 ```
 
-Result: a hand-drawn SVG floor plan with wobbly walls, door swing symbols, and room labels. Renderable in a browser, embeddable in a doc, shareable via URL.
+That's the entire integration. Claude Desktop, Cursor, or any MCP-compatible agent runtime can now call `skissify_render` with a JSON manifest and get back a sketch URL. The agent doesn't render anything — it describes spatial relationships in structured data, and Skissify handles the visual output.
 
 ---
 
-## What the Manifest Looks Like
+## The JSON Schema
 
-The JSON schema is designed to be LLM-readable — flat, explicit, minimal ambiguity:
+The flat manifest structure is designed specifically for LLM generation. Internal benchmarks show flat JSON achieves 88–92% valid output on first attempt; hierarchical nested schemas drop to 40–61%.
+
+A simple floor plan:
 
 ```json
 {
   "paper": "cream",
-  "tool": "ballpoint",
+  "tool": "pencil",
   "wobble": 3,
-  "humanness": 2,
   "elements": [
-    {"type": "rect", "x": 0, "y": 0, "width": 300, "height": 200, "label": "Living Room"},
-    {"type": "rect", "x": 0, "y": 200, "width": 140, "height": 130, "label": "Kitchen"},
-    {"type": "rect", "x": 160, "y": 200, "width": 140, "height": 130, "label": "Bedroom"},
-    {"type": "door-symbol", "x": 120, "y": 0, "width": 60, "direction": "in"},
-    {"type": "window", "x": 0, "y": 80, "width": 60},
-    {"type": "dim", "x1": 0, "y1": -20, "x2": 300, "y2": -20, "label": "9.0m"}
+    { "type": "rect", "x": 50, "y": 50, "width": 300, "height": 200, "label": "Living Room" },
+    { "type": "rect", "x": 350, "y": 50, "width": 200, "height": 200, "label": "Kitchen" },
+    { "type": "rect", "x": 50, "y": 250, "width": 250, "height": 180, "label": "Bedroom" },
+    { "type": "rect", "x": 300, "y": 250, "width": 150, "height": 180, "label": "Bathroom" },
+    { "type": "door-symbol", "x": 50, "y": 200, "width": 40, "height": 10, "rotation": 0 },
+    { "type": "window", "x": 200, "y": 50, "width": 80, "height": 10 },
+    { "type": "text", "x": 200, "y": 10, "text": "Studio Apartment — 48m²" }
   ]
 }
 ```
 
-The coordinate system is intentionally simple: x/y in abstract units, width/height for rooms, everything on the same flat plane. Claude generates accurate manifests from natural language descriptions with very high reliability.
+The 26 element types cover everything needed for architectural floor plans: basic primitives (`rect`, `line`, `circle`), annotations (`text`, `dim`, `arrow`), architectural symbols (`door-symbol`, `door-slide`, `window`, `stair`, `column`, `opening`), and furniture (`bed`, `sofa`, `armchair`, `desk`, `dining-table`, `bookshelf`), plus bathroom and kitchen fixtures.
 
 ---
 
-## Five Real Workflows
+## Four Real Workflows
 
-### 1. Claude Desktop + MCP (Zero-Code Setup)
+**1. Claude Desktop with MCP**
+User types: "Draw a 3-bedroom house with an open-plan kitchen and living area, two bathrooms, and a utility room." Claude reasons about the layout, generates the manifest, calls `skissify_render`, and pastes back a sketch URL. The whole exchange takes under ten seconds.
 
-After running `npx skissify-mcp` and adding the config snippet to `claude_desktop_config.json`, you can say:
+**2. LangChain / LlamaIndex Pipeline**
+An agent tasked with "generate a rental property listing including a floor plan sketch" calls the Skissify REST API as a tool, embeds the returned URL in the listing template. The human reviewer sees a rough sketch alongside the text — not a blank space.
 
-> "Draw a two-bedroom apartment. Open-plan kitchen and living room on the south side. Two bedrooms on the north. One bathroom between them. Include the front door."
+**3. n8n or Make.com Automation**
+A workflow that receives a room description via webhook, passes it to GPT-4o or Claude for layout reasoning, POSTs the manifest to `/api/render`, and delivers the sketch URL via email or Slack. No code deployment required.
 
-Claude calls the `skissify_render` tool, constructs a complete manifest, and returns a hand-drawn SVG with a shareable URL. The entire process takes under 10 seconds.
-
-This is the fastest path to spatial output for anyone already using Claude Desktop.
-
-### 2. LangChain / Python Agent
-
-```python
-from langchain.tools import StructuredTool
-import requests, json
-
-def render_floor_plan(manifest: dict) -> str:
-    resp = requests.post(
-        "https://skissify.com/api/render",
-        json=manifest,
-        headers={"Content-Type": "application/json"}
-    )
-    return resp.json().get("url", "")
-
-skissify_tool = StructuredTool.from_function(
-    func=render_floor_plan,
-    name="render_floor_plan",
-    description="Render a JSON floor plan manifest to a hand-drawn SVG. Returns a shareable URL."
-)
-
-agent = initialize_agent(
-    tools=[skissify_tool],
-    llm=ChatOpenAI(model="gpt-4o"),
-    agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION
-)
-
-result = agent.run("Design a coworking space with 6 desks, a meeting room, and a kitchen area")
-# → Returns a URL to a hand-drawn coworking layout
-```
-
-### 3. CrewAI Multi-Agent Pipeline
-
-In a property listing pipeline: one agent extracts spatial data from listing descriptions, a second agent builds the floor plan manifest, a third agent calls Skissify and returns the sketch URL to the listing page. The sketch becomes an artifact that flows downstream — embeddable in HTML, passable to the next agent as context.
-
-```python
-from crewai import Agent, Task, Crew
-
-architect_agent = Agent(
-    role="Floor Plan Architect",
-    goal="Convert room descriptions into Skissify JSON manifests",
-    tools=[skissify_render_tool]
-)
-
-task = Task(
-    description="Generate a floor plan for: {property_description}",
-    agent=architect_agent
-)
-```
-
-### 4. n8n / Make Automation
-
-A homeowner describes their renovation via a chatbot form. The n8n workflow:
-1. Webhook receives form submission
-2. OpenAI node parses room descriptions → JSON manifest
-3. HTTP Request node POSTs to `skissify.com/api/render`
-4. Email/Slack node sends the sketch URL to the homeowner and contractor
-
-No code. No SDK. The free API tier handles the volume of a typical renovation consultancy.
-
-### 5. Mastra / TypeScript Agent Pipelines
-
-```typescript
-import { createSkissifyTool } from 'skissify-mastra';
-
-const floorPlanTool = createSkissifyTool({
-  // No API key needed for free tier
-});
-
-agent.addTool(floorPlanTool);
-// → Agent can now respond to "draw me a layout" with an actual sketch URL
-```
+**4. Vibe coding in Cursor**
+Developer prompts: "Add a floor plan preview to the property details page. Use the Skissify API." Cursor generates the manifest from property data fields and embeds the sketch as an `<img>` tag. Works with the existing data model — no design tool needed.
 
 ---
 
-## The Local / Air-Gapped Stack
+## Why Determinism Matters for Agents
 
-For teams that can't send data to external APIs:
+Generated images (Midjourney, DALL-E, Stable Diffusion) are stochastic. Run the same prompt twice, get two different images. You cannot programmatically verify output, version control it, or reproduce it reliably.
 
-```bash
-git clone https://github.com/skissify/skissify
-docker compose up
-# → Available at http://localhost:3000/api/render
-```
+Skissify sketches are deterministic. The same JSON manifest produces the same sketch every time — down to the wobble, which is seeded from the manifest content. This means you can:
 
-Pair with Ollama + Llama 3 for a fully local, air-gapped floor plan pipeline. Zero external API calls. Natural language description → hand-drawn sketch, entirely on-premises.
+- Diff two versions of a floor plan programmatically
+- Cache results by manifest hash
+- Store the manifest (not the image) and regenerate on demand
+- Build tests that assert a specific sketch URL for a given input
 
----
-
-## What You Get Back
-
-The response is a clean SVG — scalable, embeddable, shareable:
-
-- **Architectural symbols**: door swings, window glyphs, stairs — rendered correctly
-- **Hand-drawn text**: uses Caveat (Google Fonts) for authentic sketched labels
-- **Seeded wobble**: same JSON always produces the same sketch (deterministic output)
-- **Embeddable anywhere**: `<img>` tags, Notion, Confluence, Slack unfurl, any HTML
-
-The sketch URL is permanent. You can paste it into a PR description, a Notion doc, a project management ticket, or pass it to the next agent in the pipeline as a visual memory artifact.
-
----
-
-## Prompt Engineering Tips for LLMs
-
-Getting high-quality manifests from LLMs is straightforward, but a few patterns help:
-
-1. **Give explicit room dimensions in relative units**: "Living room 300x200, bedroom 150x150" is easier for the model than "a large living room"
-2. **Specify connectivity**: "Bedroom shares the east wall with the bathroom" gives the model geometric constraints to work with
-3. **Name the paper and tool**: `"paper":"cream","tool":"ballpoint"` for daytime work sketches; `"paper":"blueprint"` for technical drawings
-4. **Ask for door symbols explicitly**: Models sometimes omit them unless reminded — add "include front door and bedroom door" to your prompt
-
----
-
-## Why This Matters Beyond Floor Plans
-
-The same pattern works for any spatial output:
-
-- **System architecture diagrams**: services as rooms, APIs as connections
-- **Org charts**: teams as boxes, reporting lines as arrows
-- **Network topology**: nodes and edges with hand-drawn aesthetic
-- **UI wireframes**: containers and content zones without triggering the polish-response
-- **D&D dungeon maps**: rooms, corridors, secret passages in blueprint style
-
-The floor plan use case is obvious because spatial reasoning about rooms is something every LLM does well and every human understands immediately. But the primitive is general: JSON in, hand-drawn SVG out, shareable URL.
+For agents running in pipelines, this is the difference between a tool and a toy.
 
 ---
 
 ## Get Started
 
 ```bash
-# MCP (Claude Desktop, Cursor, Windsurf)
+# MCP server (for Claude Desktop / Cursor)
 npx skissify-mcp
 
-# REST API — no auth, free tier
-POST https://skissify.com/api/render
-Content-Type: application/json
+# REST API (no auth required)
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"paper":"cream","elements":[{"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Kitchen"}]}'
 ```
 
-Documentation: [skissify.com/for-agents](https://skissify.com/for-agents)
+The response contains a sketch URL. Paste it anywhere. Embed it in anything. Share it with anyone.
+
+Your agent can now draw. [Start at skissify.com](https://skissify.com).
 
 ---
 
-## 2026 Update: Vibe Design Workflows
-
-Google Stitch (launched March 2026) is a "vibe design" tool that generates polished UI from prompts. It has an MCP server too. Where does floor plan sketching fit?
-
-**The sequence:**
-
-1. Ask Claude via Skissify to sketch the floor plan (rough, hand-drawn — invites feedback on structure)
-2. Get alignment from the team/client on the layout
-3. Use a production tool (Stitch for web UI, CAD for architecture) to build the final version
-
-Skissify is the napkin phase. It keeps the "this is a draft" signal alive so spatial decisions get made by humans, not locked in by the first AI output. The rough sketch is intentional — it's how you keep the conversation open until the right structure emerges.
-
-The same principle applies to any AI agent workflow that involves spatial reasoning: sketch first, commit second.
-
-*Skissify launched April 1, 2026. Built in Stockholm. Free tier is unlimited — no auth required. The gap between "AI that thinks spatially" and "AI that draws spatially" is now closed.*
+*Skissify is an open sketch API for AI agents. Free tier. MCP server: `npx skissify-mcp`. 26 element types. Deterministic output.*

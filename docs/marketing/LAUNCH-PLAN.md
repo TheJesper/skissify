@@ -1,7 +1,65 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 — Day 3 / SHOW HN DAY — Cycle 122 (02:17 CET)**
+**Current Date: April 4 — Day 4 / LAUNCH DAY — Cycle 123**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 123 — Launch Day)
+
+### Cycle 123 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Beats Figma for Quick Ideas" — Cycle 123 definitive (premature convergence, Figma tax, AI agent use case, practical heuristic) | `blog/why-hand-drawn-beats-figma.md` | DONE — publish to Dev.to today |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 123 definitive (full JSON walkthrough, 4 real workflows, determinism argument, 3-line setup) | `blog/ai-agents-floor-plans.md` | DONE — publish to Dev.to + r/LocalLLaMA |
+| Blog: "Skissify vs Excalidraw: A 2026 Comparison" — Cycle 123 definitive (honest feature table, clear use-case split, decision tree) | `blog/skissify-vs-excalidraw.md` | DONE — publish to Dev.to + r/webdev |
+| SOCIAL-MEDIA.md Cycle 123 — full-platform copy: Twitter/X thread, LinkedIn post + long-form article, Reddit (r/LocalLLaMA, r/webdev, r/MachineLearning), HN response templates, ProductHunt comment, Instagram captions (3), TikTok 60s script, hashtag table from 2026 web research, evening wrap | SOCIAL-MEDIA.md | DONE |
+| PRESS-KIT.md — verified current (Cycle 121 version is the canonical press kit) | PRESS-KIT.md | DONE — no changes needed |
+
+### Cycle 123 — Priority Actions for TODAY (April 4 — Launch Day)
+
+| Action | Priority | Time | Notes |
+|--------|----------|------|-------|
+| **Post r/LocalLLaMA** — OVERDUE since Cycle 111 — copy in Cycle 123 SOCIAL-MEDIA.md | P0 CRITICAL | 9:00 | Do FIRST |
+| **Post MCP Discord #showcase** — OVERDUE since Cycle 111 | P0 CRITICAL | 9:05 | |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | P0 CRITICAL | 9:10 | |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | P0 CRITICAL | 9:20 | |
+| **Submit DevHunt** — still in 7-day window from Show HN | P0 | 9:30 | |
+| **Publish 3 blogs to Dev.to** — Cycle 123 definitive versions | P0 | 9:45 | |
+| **Post Twitter/X thread** — Cycle 123 copy | P0 | 10:00 | |
+| **Post LinkedIn noon post** — Cycle 123 copy | P1 | 12:00 | |
+| **Post r/webdev** — Cycle 123 copy | P1 | 14:00 | |
+| **Post r/MachineLearning** — Cycle 123 flat JSON data post | P1 | 15:00 | Saturday peak window |
+| **Post Instagram** — 3 caption templates in Cycle 123 SOCIAL-MEDIA.md | P1 | 16:00 | |
+| **Post evening wrap** — all platforms 20:00 | P1 | 20:00 | |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | After channels | 60s. Claude → floor plan. Do it today. |
+
+### Cycle 123 — Hashtag Research Summary (web research April 2026)
+
+**Sketchnoting community (2026):**
+Core: `#sketchnotes` `#visualthinking` `#sketchnoting` `#sketchnote` `#visualnotetaking` `#graphicrecording`
+Strategy: Instagram recommends 3–5 per post. More than 5 may reduce reach.
+
+**AI design tools trending communities 2026:**
+- Google Stitch (relaunched March 2026) — AI-native canvas
+- Emergent — "vibe coding" platform with AI-driven UI
+- Community trend: AI tools layering on each other (editor + terminal agent + CI)
+- 23% of designers/developers say most of their work is now on AI-powered products (up from 17% prior year)
+
+**Hand-drawn wireframe communities:**
+- The Wireframe Room (Discord)
+- r/drawing and friends (Discord, 35K+ members)
+- UI/UX communities: Slack "The Collective Studio", "ui | ux" Discord
+- r/UXDesign, r/webdev for distribution
+
+### Cycle 123 — Strategic Note
+
+**The four OVERDUE channels remain the highest-leverage actions.** 122 cycles of marketing content have not replaced posting to r/LocalLLaMA, MCP Discord, Indie Hackers, and Smol Launch. Combined estimated reach: 3M+ relevant users. Post today before anything else.
+
+**The three canonical blog files are now the definitive versions.** `why-hand-drawn-beats-figma.md`, `ai-agents-floor-plans.md`, `skissify-vs-excalidraw.md` are the current authoritative posts for each topic. Publish these to Dev.to. Link to these when answering community questions.
+
+**The demo video is still the permanent blocker.** 123 cycles. Still undone. Record today: 60 seconds, screen capture Claude Desktop generating a floor plan via MCP. This single artifact would outperform all 123 cycles of written copy combined on video-native platforms.
 
 ---
 

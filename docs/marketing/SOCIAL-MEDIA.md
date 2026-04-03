@@ -1,7 +1,344 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 3, 2026 — Cycle 122 (Show HN Day 02:17 CET. New: SHOW-HN-LIVE-KIT.md created (single execution doc for today), X/Twitter "Show HN is live" thread + 5 sub-tweets, Bluesky 5-part thread, LinkedIn "Show HN morning" post, HN comment templates by type (6 scenarios), r/webdev afternoon post, evening wrap post, new viral hook "The schema insight: flat JSON = 88% accuracy, nested = 40%", new blog: show-hn-morning-02am-everything-ready.md. Priority: Execute SHOW-HN-LIVE-KIT.md in order at 09:00 CET.)**
+**Last updated: April 4, 2026 — Cycle 123 (Launch Day. New: full-platform copy for Twitter/X, LinkedIn, Reddit, HackerNews, ProductHunt, Instagram, TikTok. Hashtag research updated from web (2026 data). Viral hooks refreshed. Blog posts `why-hand-drawn-beats-figma.md`, `ai-agents-floor-plans.md`, `skissify-vs-excalidraw.md` finalized. PRESS-KIT.md verified current. LAUNCH-PLAN.md updated with Cycle 123.)**
+
+---
+
+## Cycle 123 — April 4, 2026 (Launch Day — Execute These)
+
+### Hashtags (Cycle 123 Research — April 2026)
+
+**Primary (use on every post):**
+`#Skissify` `#BuildInPublic` `#MCP` `#AIAgents` `#ShipIt`
+
+**Design/Sketch community:**
+`#sketchnotes` `#visualthinking` `#sketchnoting` `#visualnotetaking` `#graphicrecording` `#HandDrawn` `#SketchAPI` `#DrawableJSON`
+
+**AI/Dev community:**
+`#Claude` `#LLM` `#AITools` `#VibeCoding` `#AgentOutput` `#NapkinPhase` `#VibeArchitecture` `#DrawFirst`
+
+**Trending 2026 (from research):**
+`#AIDesign` `#AgentDriven` `#MCPServer` `#FloorPlan` `#wireframe`
+
+**Instagram/TikTok specific:**
+`#sketch` `#drawing` `#doodle` `#illustration` `#howtodraw` `#visualstorytelling` `#AIart` `#techdesign`
+
+**Strategy note (2026):** Instagram now recommends 3–5 highly relevant hashtags per post. For Twitter/X use 2–3 max. For LinkedIn hashtags matter less than engagement in the first hour.
+
+---
+
+### Twitter/X — Launch Day Thread (Post NOW)
+
+**Tweet 1 (anchor):**
+```
+I built an API that gives AI agents a pencil.
+
+JSON in → hand-drawn sketch out → shareable URL
+
+Floor plans, wireframes, system diagrams — drawn by Claude or GPT, not by humans.
+
+skissify.com 🧵
+```
+
+**Tweet 2:**
+```
+The schema insight that surprised me:
+
+Flat JSON → 88–92% LLM first-attempt accuracy
+Hierarchical JSON → 40–61%
+
+If you're building an API for LLM consumption: design for cognitive load, not logical elegance.
+
+#AIAgents #MCP
+```
+
+**Tweet 3:**
+```
+The unexpected use cases nobody told me about:
+
+→ D&D dungeon masters making battle maps (blueprint paper)
+→ Homeowners explaining layouts to contractors
+→ Geometry teachers generating 30 exercises in 10 min
+→ UX researchers rapid-prototyping user flows
+
+I built it for AI devs. Real humans showed up first.
+```
+
+**Tweet 4:**
+```
+Free API, no auth:
+
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"paper":"cream","elements":[
+    {"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Living Room"}
+  ]}'
+
+Returns sketch URL in ~150ms. Embed it. Share it. Version it.
+
+#BuildInPublic #ShipIt
+```
+
+**Tweet 5:**
+```
+MCP server:
+npx skissify-mcp
+
+Any Claude/Cursor session can now say:
+"Draw a floor plan: 5x7 kitchen, bedroom on south wall, bathroom adjacent"
+
+And get back a drawing. Not a description. A drawing.
+
+skissify.com
+```
+
+---
+
+### LinkedIn — Launch Day Post (Post at noon)
+
+```
+I launched Skissify three days ago. Here's what I got wrong about the audience.
+
+I built it for AI developers building agent pipelines who needed a way to output visual artifacts — floor plans, wireframes, system diagrams — without a human drawing them.
+
+The audience that showed up first: a D&D dungeon master, two homeowners planning renovations, and a geometry teacher.
+
+The lesson: build for the use case you understand. But ship fast, because the use case you don't know about is usually more interesting.
+
+Skissify converts JSON into hand-drawn sketches. Free API, no auth required. MCP server ships with it so Claude and Cursor can draw autonomously.
+
+If you work with AI agents, pipelines, or just need a quick sketch tool: skissify.com
+
+What's the strangest use case you've seen for a developer tool? Drop it in comments.
+
+#BuildInPublic #AIAgents #MCP #Skissify #ProductLaunch
+```
+
+---
+
+### LinkedIn — Long-Form (Publish as article, April 4-5)
+
+```
+Title: I gave my AI agent a pencil. Here's what happened.
+
+Language models have been able to reason about space for years. Ask Claude to design a studio apartment and you get coherent traffic flow, proper clearances, logical room placement. The spatial reasoning is real.
+
+The problem: the output was always a paragraph.
+
+You can't show a paragraph to a contractor. You can't embed it in a design review. You can't pass a paragraph to the next agent in a pipeline as a visual artifact.
+
+So I built Skissify: a sketch API that accepts a JSON manifest and returns a hand-drawn SVG sketch in ~150ms. The flat JSON schema is optimized for LLM generation (88% valid output on first attempt vs 40% for hierarchical schemas). It ships with an MCP server so Claude and Cursor can call it directly.
+
+Three days after launch, the top use cases are:
+1. Agent pipelines that need visual output (what I built it for)
+2. Homeowners explaining room layouts to contractors (did not see this coming)
+3. Dungeon masters making D&D maps (definitely did not see this coming)
+4. UX researchers doing rapid concept sketching (makes complete sense in hindsight)
+
+The product I shipped ≠ the product being used. And that's fine — that's how it's supposed to work.
+
+Skissify is free to try: skissify.com
+MCP server: npx skissify-mcp
+```
+
+---
+
+### Reddit — r/LocalLLaMA (P0 OVERDUE — POST TODAY)
+
+**Title:** Show HN is live: Skissify — JSON manifest in, hand-drawn sketch out, MCP server included
+
+**Body:**
+```
+Built this for agent pipelines that need visual output. The problem: LLMs can reason spatially but the only output format was a paragraph.
+
+Skissify accepts a flat JSON manifest and returns a hand-drawn SVG sketch (floor plans, wireframes, system diagrams) in ~150ms. The flat schema is the key — 88-92% LLM first-attempt accuracy vs 40-61% for hierarchical schemas.
+
+Ships with an MCP server: npx skissify-mcp
+Free API, no auth: POST /api/render
+
+Show HN: https://news.ycombinator.com/item?id=[paste]
+Product: https://skissify.com
+
+Happy to answer questions about the schema design or MCP integration.
+```
+
+---
+
+### Reddit — r/webdev (Post afternoon)
+
+**Title:** I made a sketch API for AI agents — free, no auth, returns a URL
+
+**Body:**
+```
+Built Skissify: POST a JSON manifest, get back a hand-drawn SVG sketch URL.
+
+Free tier, no auth required. The URL is shareable/embeddable. MCP server included for Claude/Cursor workflows.
+
+curl -X POST https://skissify.com/api/render \
+  -H "Content-Type: application/json" \
+  -d '{"paper":"cream","elements":[{"type":"rect","x":0,"y":0,"width":200,"height":150,"label":"Kitchen"}]}'
+
+26 element types including architectural symbols (doors, windows, stairs). Use case: any AI workflow that needs to output a visual rather than a description.
+
+Honest question for this sub: what's the most useful non-agent use case you can see here? I keep getting surprised by who's actually using it.
+
+https://skissify.com
+```
+
+---
+
+### Reddit — r/MachineLearning (Post Saturday)
+
+**Title:** Flat JSON vs hierarchical JSON for LLM generation — data from building a sketch API
+
+**Body:**
+```
+Building Skissify (sketch rendering API for AI agents) gave me unexpected data on schema design for LLM output tasks.
+
+Internal benchmarks on first-attempt valid output rate:
+- Flat JSON (element array with type/x/y/width/height): 88–92%
+- Hierarchical nested JSON (rooms containing elements containing properties): 40–61%
+
+The hypothesis: cognitive load of deeply nested schemas exceeds the benefit of logical organization for LLM generation tasks. Flat schemas with explicit properties outperform semantically "correct" ones.
+
+Anyone doing systematic research on this? Would be curious whether the effect holds across different model families and schema depths.
+
+[The API if curious: skissify.com/api/render — no auth]
+```
+
+---
+
+### HackerNews — Show HN Response Templates
+
+**When someone says "cool but why not just use Excalidraw?":**
+```
+Excalidraw requires a human with a mouse. Skissify accepts a JSON manifest — an AI agent can generate it without any drawing interface. The sketch is the API response, not the endpoint. Different use case.
+```
+
+**When someone asks about the schema design:**
+```
+The flat schema was the key decision. Hierarchical JSON ("rooms" containing "elements" containing "properties") looked more logical but dropped LLM first-attempt accuracy from 88% to ~40-61%. Cognitive load beats logical elegance for LLM consumption. Design APIs for the thing generating the JSON, not for the thing reading it.
+```
+
+**When someone says "just use SVG directly":**
+```
+You can, but the challenge isn't SVG — it's that LLMs are bad at raw SVG coordinates. The manifest abstracts spatial relationships ("rect at x:50 y:50 width:200 height:150 labeled Kitchen") and handles all the rendering. The agent specifies intent; Skissify handles geometry.
+```
+
+---
+
+### ProductHunt — Comment Template (Pin on your own listing)
+
+```
+Hey PH 👋 Founder here.
+
+Skissify gives AI agents a visual output format. Instead of a paragraph about what a room layout looks like, the agent generates a JSON manifest and gets back a hand-drawn sketch URL.
+
+Free API, no auth. MCP server: npx skissify-mcp
+
+Biggest surprise after launch: D&D dungeon masters and homeowners showed up before AI developers. Ship fast — you don't know your real audience until they find you.
+
+Happy to answer any questions about the API design, MCP integration, or why the wobble is deterministic (important for agent pipelines!).
+```
+
+---
+
+### Instagram — Caption Templates
+
+**Visual: sketch of a floor plan being generated**
+```
+Your AI can now draw floor plans. Not describe them. Draw them.
+
+JSON in → hand-drawn sketch out → shareable URL in 150ms.
+
+@skissify 🏠✏️
+
+#AIart #AIdesign #FloorPlan #HandDrawn #SketchAPI #sketch #drawing #AItools #BuildInPublic #techdesign #visualthinking #MCP #AIAgents
+```
+
+**Visual: wobble slider comparison**
+```
+The wobble is the feature.
+
+Polished lines say "this is final."
+Wobbly lines say "this is a draft — challenge me."
+
+Hand-drawn sketches get better feedback because the fidelity signals the right thing.
+
+@skissify
+
+#sketchnotes #design #UX #visualthinking #HandDrawn #sketch #drawing #productdesign #DesignThinking #doodle
+```
+
+**Visual: code + sketch side by side**
+```
+3 lines of JSON.
+1 hand-drawn floor plan.
+0 humans required.
+
+skissify.com
+
+#coding #AItools #developertools #BuildInPublic #AIAgents #FloorPlan #MCP #Claude #sketch #techdesign
+```
+
+---
+
+### TikTok / Instagram Reels — 60-Second Script
+
+**[Hook — 0–3s]**
+"Your AI can draw floor plans now. Let me show you."
+
+**[Problem — 3–12s]**
+"The problem: AI can reason about space really well. Ask Claude to design a studio apartment and you get something coherent. But the output is always just a paragraph. You can't show a paragraph to a contractor."
+
+**[Solution — 12–35s]**
+"So I built Skissify. You give it a JSON description of a floor plan — rooms, doors, windows, furniture — and it gives you back a hand-drawn sketch. Like this. [show render] It comes out as a shareable URL. Embed it anywhere."
+
+**[Wow moment — 35–45s]**
+"The AI doesn't draw anything. It just describes the space in structured data. Skissify handles the visual. And the sketch looks intentionally rough — because it's a draft. The wobble communicates the right thing."
+
+**[CTA — 45–60s]**
+"Free API, no sign-up required. MCP server ships with it so Claude or Cursor can use it directly. Link in bio — skissify.com."
+
+**Hashtags:**
+```
+#AI #AItools #FloorPlan #coding #BuildInPublic #sketch #drawing #AIart #MCP #developertools #Claude #AIagent #techdesign #visualthinking #HandDrawn
+```
+
+---
+
+### Evening Wrap Post (All platforms — 20:00 CET)
+
+**Twitter/X:**
+```
+Day 4 of Skissify.
+
+Here's what still surprises me: the product I built for AI pipelines is being used by people planning home renovations, dungeon masters, and geometry teachers.
+
+Ship the thing you understand. The rest of the audience finds you.
+
+What did you build today? Drop it below.
+
+#BuildInPublic #Skissify #ShipIt
+```
+
+**Bluesky:**
+```
+Day 4 wrap.
+
+Skissify was built for AI agent pipelines.
+
+Top use cases this week:
+1. AI devs (expected)
+2. Homeowners + contractors (not expected)
+3. D&D dungeon masters (absolutely not expected)
+
+Ship fast. Your real audience is usually not the one you imagined.
+
+skissify.com
+#BuildInPublic #ShipIt
+```
 
 ---
 
