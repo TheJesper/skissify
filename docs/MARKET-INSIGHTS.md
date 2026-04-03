@@ -2,6 +2,56 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #118 (Friday April 3, 15:11 Stockholm)
+
+### Theme: Excalidraw Is Now In Claude Connectors. The "Hand-Drawn MCP" Slot Has a Tenant. Skissify Needs To Evict Or Co-Exist.
+
+#### The Official Excalidraw MCP — A Different Threat Tier
+
+The Excalidraw team, in partnership with Anthropic, launched `excalidraw/excalidraw-mcp` (updated March 24, 2026). It is now listed in Claude Connectors — the curated first-party marketplace where Claude users go to add capabilities.
+
+This is categorically different from the community MCP found in Run #117. Here is what changed:
+
+**Distribution**: A Claude user enabling Excalidraw from Connectors sees it as Claude-endorsed. Skissify is not discoverable through this channel at all. Every new Claude user who wants to draw diagrams will find Excalidraw in the Connectors list and nothing else in the hand-drawn category.
+
+**Brand association**: "Anthropic partner" is a trust signal that community projects cannot replicate. Skissify must either get its own Connectors listing or position explicitly as the "headless alternative" that runs where Excalidraw's MCP cannot.
+
+**What Skissify's moat still is**: Excalidraw's official MCP is session-based — it requires an active Excalidraw canvas environment. It is not a stateless HTTP API. It cannot run in GitHub Actions, Docker containers, Lambda functions, or any environment without an interactive session. Skissify's API is a pure HTTP endpoint: `POST /api/render`, JSON in, SVG out, zero state, zero session, zero cold start beyond standard network latency. This distinction needs to be the primary marketing message.
+
+#### Credit-Based Pricing Surge — 126% YoY Validates Skissify's Per-Render Model
+
+Out of the PricingSaaS 500 Index, 79 companies now use credit models vs 35 at end-2024 — a 126% year-over-year increase. OpenAI, HubSpot, Salesforce, Microsoft, and Clay all use credits.
+
+Implication for Skissify: The per-render pricing model (EUR 0.005/render, packaged in credit bundles) is now market-standard rather than exotic. Developers understand credit models. The pitch "buy render credits" requires zero education in 2026. This is a green light to launch credit bundles at higher gross margin than subscription alone.
+
+**Concrete recommendation**: Launch a "Render Credits" pack as a standalone purchase (e.g., 10,000 renders = EUR 40) alongside the Pro subscription. This captures one-time buyers, agent builders who spike usage, and enterprise teams who want metered control.
+
+#### What Makes Someone Pay EUR 2/mo (or EUR 5/mo) — April 2026 Update
+
+With Excalidraw now in Claude Connectors for free, the EUR 0 tier of "hand-drawn MCP" is occupied. Skissify's payment triggers in this context:
+
+1. **CI/CD use case** — Excalidraw MCP cannot run headlessly. If an agent pipeline needs to generate a sketch in GitHub Actions or a Docker container, Skissify is the only option. Engineers in this position will pay.
+
+2. **Architectural domain elements** — If the sketch requires doors, windows, stairs, or dimension annotations, no other tool renders these. Architecture firms and construction-tech agents have no alternative.
+
+3. **Tunable aesthetics** — Excalidraw's hand-drawn style is fixed (their renderer). Skissify's wobble, humanness, and stroke parameters are configurable. Design teams building branded "sketch style" outputs need this control.
+
+4. **Schema portability** — Skissify's JSON schema is simple and stable. Excalidraw's element schema changes with their releases. Agent builders who need a stable target schema to generate diagrams at scale will prefer Skissify's documented, versioned JSON.
+
+5. **Self-hostable** — Skissify's renderer can be self-hosted. The Excalidraw official MCP requires Anthropic's connector infrastructure.
+
+#### headless Chromium Renderers — How Skissify Should Respond
+
+`tldraw-render` and `excalidraw-render` (bassimeledath) now exist. They require Chromium (100MB+ auto-install) and have 3-8s cold starts. For developers evaluating their options:
+
+- **Lambda / serverless**: Chromium in Lambda requires special layers (~50MB compressed), adds ~$0.001/invocation cold start overhead. Skissify: standard HTTP, standard Lambda, no layers.
+- **Docker containers**: Chromium adds ~300MB to image size. CI time increases. Skissify: zero container overhead.
+- **GitHub Actions free tier**: Chromium installs eat into the 6 hours/month limit. Skissify: one curl call.
+
+Publish this comparison as a technical blog post. Developers evaluating `excalidraw-render` and `tldraw-render` will search for Chromium alternatives. That post intercepts them.
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #117 (Friday April 3, 14:03 Stockholm)
 
 ### Theme: Excalidraw Has a Community MCP Now. Your Moat Is Still Real, But The Messaging Needs Updating.

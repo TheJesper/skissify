@@ -2,6 +2,72 @@
 
 ---
 
+## [2026-04-03] — Strategy Run #118 Actions (Friday April 3, 15:11 Stockholm)
+
+### Context: Run #118 Key New Findings
+- **Official Excalidraw MCP in Claude Connectors** (Anthropic partnership, March 24, 2026) — "hand-drawn MCP" slot now has a major tenant in Claude's own marketplace
+- **excalidraw-render + tldraw-render MCP** (bassimeledath) — headless Chromium renderers now exist, 3-8s cold starts, Chromium required
+- **Credit-based pricing up 126% YoY** — 79 companies in PricingSaaS 500 vs 35 end-2024; per-render credit bundles now market-standard
+- **ToDiagram MCP** — JSON/YAML to interactive (not hand-drawn) diagrams, another JSON-to-visual MCP in the registry
+
+---
+
+### Action 1 (CRITICAL — this weekend): Apply for Claude Connectors Listing
+
+**Problem**: Excalidraw is now listed in Claude Connectors with Anthropic's blessing. Every Claude user looking for a diagram/sketch tool finds Excalidraw. Skissify is invisible in this channel.
+
+**What to do**:
+1. Check if Anthropic has an open Connectors submission process (check: anthropic.com/claude/connectors, Claude docs, or direct outreach via developers@anthropic.com)
+2. If there is a submission form, fill it out. Skissify's headless + architectural elements differentiation makes it genuinely complementary to Excalidraw's session-based connector
+3. If no open submission: write a pitch email to Anthropic developer relations. Subject: "Headless JSON-to-sketch MCP — complementary to Excalidraw connector." Emphasize CI/CD use case that Excalidraw Connector cannot serve.
+4. Simultaneously, ensure Skissify is listed in the official MCP Registry at registry.modelcontextprotocol.io — this is the prerequisite for any Connectors conversation
+
+**Why today**: Every week Excalidraw sits in Connectors without a headless alternative, Skissify loses mindshare in its primary distribution channel.
+
+**Time: 1-2 hours. Risk if skipped: Excalidraw "hand-drawn MCP" brand lock-in compounds weekly.**
+
+---
+
+### Action 2 (HIGH — this weekend): Publish "The Chromium Problem: Why Headless Doesn't Mean What You Think"
+
+**Context**: Both `tldraw-render` and `excalidraw-render` MCP tools have launched. They call themselves "headless" but require Chromium. Developers evaluating these tools will search for comparisons and alternatives. This post intercepts that search.
+
+**Thesis**: "Headless" has two meanings in developer tooling. Headless-with-Chromium (like puppeteer, playwright, these new MCPs) and truly headless (no browser dependency). For CI/CD, serverless, Docker, and pipelines — only the second kind works without pain.
+
+**Structure**:
+1. Show `excalidraw-render` installation: Node 18+ + Chromium auto-installed via agent-browser. Honest and fair — it works for local dev.
+2. Show the Lambda layer problem: Chromium in serverless requires special packaging. Cost and complexity.
+3. Show Docker image bloat: `docker build` with Chromium vs without.
+4. One-liner Skissify comparison: `curl -X POST https://skissify.com/api/render -d '...'` — no browser, no install, no layer.
+5. Code table: GitHub Actions with `excalidraw-render` vs Skissify API. Line count comparison.
+
+**Target keywords**: "excalidraw-render alternative", "tldraw headless Chromium", "headless diagram API without Chromium", "Skissify vs excalidraw-render"
+
+**Publish to**: blog, r/mcp, r/devops, Hacker News (Watch HN or Show HN if traffic target)
+
+**Time: 2-3 hours. SEO value: direct traffic from the audience evaluating these exact tools.**
+
+---
+
+### Action 3 (HIGH — this week): Launch Render Credit Bundles
+
+**Context**: Credit-based pricing grew 126% YoY in SaaS (79 companies now, up from 35 in 2024). Developers already understand credit models from OpenAI, HubSpot, and dozens of other tools. Skissify's per-render pricing is market-ready to package as credit bundles.
+
+**What to do**:
+1. Add a "Render Credits" purchase option to the pricing page (standalone, no subscription required):
+   - 1,000 renders = EUR 7 (trial)
+   - 10,000 renders = EUR 40 (standard)
+   - 100,000 renders = EUR 200 (agent/pipeline)
+2. Credits should never expire (credit model best practice — expiry creates churn)
+3. Position for: agent builders who spike usage, one-time pipeline projects, enterprise teams who want metered control without a subscription
+4. Add to pricing page alongside subscription tiers — "No subscription? Buy credits."
+
+**Why now**: With Excalidraw in Claude Connectors for free, Skissify needs a friction-less "first payment" option for pipeline builders who aren't ready to subscribe. A EUR 7 credit pack is a trivially approvable experiment. Monthly EUR 5/mo subscription requires more commitment.
+
+**Time: 3-5 hours (Stripe product setup + pricing page update). Revenue impact: opens a new acquisition channel for non-subscription buyers.**
+
+---
+
 ## [2026-04-03] — Strategy Run #117 Actions (Friday April 3, 14:03 Stockholm)
 
 ### Context: Run #117 Key New Findings

@@ -2,6 +2,100 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #118 (Friday April 3, 15:11 Stockholm)
+
+### Status: 5 topics researched. KEY FINDINGS: **OFFICIAL excalidraw/excalidraw-mcp** launched by Excalidraw team with Anthropic partnership — now in Claude Connectors marketplace, streams hand-drawn SVGs, updated March 24 2026. This is no longer community: it is the official team. **excalidraw-render + tldraw-render MCP** (bassimeledath) — headless Chromium renderers for both tools — 3s and 5-8s first renders respectively. Chromium still required; Skissify's Chromium-free moat intact but "headless gap" is narrowing at infrastructure level. **ToDiagram MCP** — JSON/YAML/XML/CSV to interactive editable diagrams, Pro-only API, NOT hand-drawn. **Credit-based SaaS pricing up 126% YoY** — 79 companies in PricingSaaS 500 now use credits vs 35 end-2024, validates Skissify's per-render model. **Skissify headless Chromium-free + tunable wobble + architectural elements: still uncontested** (Run #118 — 19th consecutive confirmation). **NEW URGENT ACTION**: Get Skissify into Claude Connectors before Excalidraw owns "hand-drawn MCP" in that marketplace.
+
+---
+
+### CRITICAL: Official Excalidraw MCP in Claude Connectors — Anthropic Partnership (HIGH THREAT, MOVEMENT)
+
+**Sources**: github.com/excalidraw/excalidraw-mcp, x.com/excalidraw/status/2021284377506742331 (verified 2026-04-03)
+
+The official Excalidraw team, in partnership with Anthropic, has launched `excalidraw/excalidraw-mcp` — "Fast and streamable Excalidraw MCP App." Updated March 24, 2026. This is not a community project.
+
+Key capabilities:
+- **Official Claude Connectors listing** — users can enable Excalidraw directly in Claude settings ("search for Excalidraw in Connectors")
+- **Works in Claude Code, ChatGPT, VS Code, Goose** and any MCP-compatible client
+- **Streams hand-drawn Excalidraw diagrams as SVG** with smooth viewport camera control
+- **Interactive fullscreen editing** — diagrams feel live and fluid as they evolve
+- **Fast and streamable** — described as designed for rapid, fluid agent interaction
+
+What Excalidraw posted on X: "Thanks to good people at @AnthropicAI we now have an official MCP for Excalidraw! Take it for a spin on @claudeai (search for Excalidraw in Connectors, or use in Claude Code and elsewhere). More to come. ✌"
+
+**What this changes for Skissify**:
+- Excalidraw now has an Anthropic-endorsed, official MCP in Claude's own Connectors marketplace
+- Any Claude user can add "hand-drawn diagram" capability in 3 clicks — without knowing Skissify exists
+- The "hand-drawn + MCP" slot in Claude Connectors is now occupied by a major player with an established brand
+- Messaging update needed: "Excalidraw's official MCP requires an active canvas session — Skissify runs as a pure stateless API with no session management, no Chromium, instant cold start"
+
+**What this does NOT change**:
+- Excalidraw's MCP still produces Excalidraw-style output (geometric with hand-drawn aesthetic) — not true tunable wobble
+- No architectural domain elements (doors, windows, stairs, dimension lines)
+- Still requires a running environment (not a pure HTTP endpoint like Skissify's API)
+- Skissify's JSON schema is simpler for programmatic generation — agents write natural JSON, not Excalidraw element schemas
+
+**Most urgent implication**: Every day Skissify is absent from Claude Connectors is a day where Excalidraw is the default "hand-drawn MCP" for all Claude users. This is the single most urgent registry action.
+
+**Threat assessment: HIGH (elevated from MEDIUM-HIGH — official Anthropic partnership + Claude Connectors listing is a step-change from community MCP)**
+
+---
+
+### tldraw-render + excalidraw-render MCP — Headless Chromium Renderers Enter Market (MEDIUM, NEW ENTRY)
+
+**Sources**: github.com/bassimeledath/tldraw-render-mcp, lobehub.com/mcp/bassimeledath-excalidraw-render (verified 2026-04-03)
+
+Developer bassimeledath has published two headless MCP renderers:
+
+**tldraw-render**: Headless tldraw diagram renderer for Claude Code CLI. Renders PNG or SVG locally. Uses headless Chromium (agent-browser). First render: ~5-8s (browser launch + React + tldraw CDN import from esm.sh). Subsequent: ~100ms. No data sent to tldraw servers.
+
+**excalidraw-render**: Same pattern for Excalidraw. First render: ~3s (Chromium + Excalidraw CDN). Subsequent: ~60ms. Privacy-preserving — only esm.sh startup request.
+
+Installation: `claude mcp add --scope user --transport stdio tldraw -- npx -y tldraw-render`
+
+**For Skissify**: These tools partially close the "headless gap" by wrapping existing tools in Chromium. Key remaining Skissify advantages:
+- **Zero Chromium**: Skissify's renderer has no browser dependency. Both tools require Node 18+ AND Chromium (auto-installed but ~100MB+ overhead).
+- **Cold start**: 3-8s first render is unusable in CI/CD pipelines. Skissify's API: <100ms end-to-end.
+- **No hand-drawn tuning**: Neither tool exposes wobble, humanness, or architectural elements. Output is whatever Excalidraw/tldraw renders.
+- **Schema simplicity**: Both require Excalidraw/tldraw element schemas. Skissify's JSON is designed for programmatic generation.
+
+**Threat assessment: MEDIUM (narrows "headless" claim in developer perception, but technical moat intact — Chromium dependency and 3-8s cold start are genuine blockers for the pipeline/CI use case)**
+
+---
+
+### ToDiagram MCP — JSON/YAML to Interactive Diagrams, Pro-Only API (LOW-MEDIUM, NEW ENTRY)
+
+**Sources**: todiagram.com/mcp, todiagram.com/pricing (verified 2026-04-03)
+
+ToDiagram MCP server enables AI copilots (Claude, Cline, custom agents) to generate interactive editable diagrams from JSON, YAML, XML, and CSV data. API access is Pro-only (upgrade required for API keys).
+
+**For Skissify**: ToDiagram operates in the "structured data → diagram" direction, which overlaps with Skissify's "JSON → sketch" positioning. Key differences:
+- ToDiagram outputs clean, interactive, polished diagrams — not hand-drawn
+- No architectural elements, no wobble, no hand-drawn aesthetic
+- API is Pro-gated (pricing not public) vs Skissify's transparent EUR 5/mo
+
+**Threat assessment: LOW-MEDIUM (same general category of "JSON-to-visual via MCP" but different aesthetic direction)**
+
+---
+
+### Updated Competitor Matrix (Run #118 — Friday April 3, 15:11)
+
+| Tool | Status (2026-04-03) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Excalidraw official MCP** | **In Claude Connectors (Anthropic partnership, March 2026). Streams hand-drawn SVGs. Official team.** | NO (session-based) | YES | NO | **YES (official, Claude Connectors)** | **HIGH (elevated — official + Connectors)** |
+| **excalidraw-render MCP** | Headless Chromium renderer. 3s first render. Community tool. | YES (Chromium) | YES | **NO (Chromium required)** | YES | **MEDIUM (Chromium + cold start blockers)** |
+| **tldraw-render MCP** | Headless Chromium renderer. 5-8s first render. Community tool. | YES (Chromium) | NO | **NO (Chromium required)** | YES | **MEDIUM (different aesthetic, Chromium)** |
+| **ToDiagram MCP** | JSON/YAML/XML/CSV to interactive diagrams. Pro-gated API. | YES (clean output) | NO | YES | YES | **LOW-MEDIUM (same category, different aesthetic)** |
+| **Google Stitch** | March 2026: infinite canvas, voice canvas, MCP server, design-to-code. | NO | NO (polished) | YES | **YES (March 2026)** | **LOW-MEDIUM** |
+| **Excalidraw community MCP** | mcp_excalidraw (yctimlin) — browser-dependent canvas sync. Superseded by official. | NO | YES | NO | YES (community) | **MEDIUM (superseded by official)** |
+| **Sketch.com** | Local MCP server. Mac-only, UI design direction. | NO | NO (polished) | YES (local) | YES | **MEDIUM (MCP registry presence)** |
+| **tldraw SDK** | Canvas perf (25× shape indicators). Image pipeline starter kit. $6K/yr. No MCP. | NO | Partial | YES | NO | **LOW-STABLE** |
+| **Draw.io** | MCP added Feb 2026. 700+ enterprise icons. Infrastructure diagrams. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Frame0** | Desktop hand-drawn wireframes, MCP on PulseMCP. | NO (desktop) | YES | YES (desktop) | YES | **MEDIUM** |
+| **Skissify** | Headless JSON→hand-drawn SVG: zero Chromium, sub-100ms cold start, tunable wobble, architectural elements. Claude Connectors: **ABSENT (CRITICAL × 19)**. | **YES (only Chromium-free one)** | **YES (tunable)** | **YES (only one)** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #117 (Friday April 3, 14:03 Stockholm)
 
 ### Status: 4 topics researched. KEY FINDINGS: **mcp_excalidraw community MCP server** (yctimlin/mcp_excalidraw) now exists — programmatic agent→Excalidraw canvas with real-time sync, still browser-dependent, but the "no Excalidraw MCP" talking point is now obsolete for the general category. **Sketch.com MCP Server** launched — Mac design tool enters MCP registry, local-only, UI design direction, NOT hand-drawn, NOT JSON-to-sketch. **Draw-it MCP + Painter MCP** — two new MCP canvas/drawing tools in registry, neither headless, neither JSON-first. **SEO competition activating**: March 2026 blog posts now rank for "architecture diagrams with MCP + Claude + Draw.io + Excalidraw" — category search content exists without Skissify. **SaaS pricing**: 78% dev-tool adoption of consumption-based models, 73% raised prices in 2025 — EUR 2/mo micro-tier confirmed as below-market entry. **Headless JSON→hand-drawn SVG with no Chromium: still uncontested** (Run #117 — 18th consecutive confirmation).
