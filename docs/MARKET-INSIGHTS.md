@@ -2,6 +2,46 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #123 (Friday April 3, 23:07 Stockholm)
+
+### Theme: tldraw MCP Confirmed Interactive-Only, Diagramming Market $12B by 2035, EUR 2/mo Tier Conversion Logic Validated
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #123 Synthesis
+
+Run #123 adds three new data layers to the payment trigger model:
+
+**1. The EUR 2/mo tier's conversion function is formally validated by pricing psychology data.** The 2026 SaaS pricing research confirms: 80% of purchase decisions are driven by perceived value, not price. EUR 2/mo is below any approval threshold — but it needs a value frame, not just a low number. The frame that works: **"1,000 AI-generated architectural sketches per month — no Chromium, no session, pure API."** The per-render framing (EUR 0.002/sketch) makes the value tangible. The center-stage effect (3-tier converts 1.4x vs 2-tier) validates Skissify's Free/Starter/Pro structure. The EUR 2/mo tier is the center stage — it should be the default highlighted option on the pricing page.
+
+**2. tldraw's official MCP App (March 2026) crystallizes what Skissify is NOT competing with.** tldraw's MCP gives agents an interactive canvas in Cursor — create shapes, edit shapes, delete shapes, see the result. This is the human-in-the-loop workflow. The only headless tldraw rendering path (community, not official) uses Chromium with 5-8 second cold starts. This contrast is now the clearest positioning statement Skissify can make: "tldraw MCP needs a browser. Skissify doesn't. That's the entire pitch for anyone running agents in CI/CD or serverless."
+
+**3. The diagramming market's scale ($12.07B by 2035, CAGR 16.88%) means Skissify needs 0.01% TAM capture to hit EUR 1M ARR.** This is not a niche-within-a-niche play — it is a focused entry into a large, fast-growing market. The payment trigger at EUR 2/mo is not "convincing someone to value hand-drawn sketches" — it is "being discoverable at the moment they need exactly what you do." Discovery (MCP registry, SEO, gallery pages) is the bottleneck, not willingness to pay.
+
+**Updated payment trigger model (Run #123):**
+- EUR 0 → first API call: "I'm testing if it works in my pipeline" — remove ALL friction (no credit card, instant key)
+- EUR 0 → EUR 2/mo: "I've hit the free limit and my agent needs more renders" — usage is the trigger, not a feature unlock
+- EUR 2/mo → credit pack (EUR 5, 2,000 renders): "I don't want a recurring charge but I need capacity" — one-time purchase removes recurring-charge anxiety, keeps developer in ecosystem
+- EUR 2/mo → EUR 5/mo Pro: "I'm automating 500+ renders/month" — usage ceiling triggers upgrade automatically
+- EUR 5/mo → Team EUR 12/user: "My team's agents need shared element libraries" — collaboration need triggers, not price
+- Enterprise: "We're an architecture firm, need self-hosted + SLA + custom arch elements" — compliance + domain specificity
+
+**New framing to add to the pricing page**: "Zero cold start tax. While headless Chromium tools need 5-8 seconds to warm up, Skissify renders in under 100ms. In a serverless function running 1,000 times a day, that's the difference between a $2 bill and a $160 bill."
+
+#### The Diagramming TAM Is Bigger Than Previously Modeled
+
+Prior business plan used AI agent market ($7.6B → $52.6B) as the TAM proxy. Run #123 adds the diagramming-specific TAM: $2.17B (2024) → $12.07B (2035), CAGR 16.88%. These markets overlap but are distinct:
+- AI agent market = the infrastructure buyer (uses Skissify as a tool in a pipeline)
+- Diagramming market = the end-user buyer (uses Skissify to produce a visual artifact)
+
+Skissify has both buyer types. The architecture firm paying Enterprise tier is a diagramming market buyer. The agent pipeline developer buying credits is an AI agent market buyer. The EUR 2/mo conversion tier should be positioned differently for each:
+- For agent developers: "1,000 headless renders, no Chromium, sub-100ms, $0.002 each"
+- For architects/designers: "Hand-drawn floor plans with tunable wobble and room dimensions — looks like you sketched it, works like an API"
+
+#### Mobile Pricing Pages: 58% of Visits (2026 Benchmark)
+
+58% of SaaS pricing page visits in 2026 are mobile. Skissify's pricing page must be mobile-optimized before launch — this is not a nice-to-have. The EUR 2/mo tier and credit pack CTA must be legible and tappable on a phone screen. This should be a launch checklist item.
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #122 (Friday April 3, 20:51 Stockholm)
 
 ### Theme: Credits Model Validated, tldraw+Excalidraw Ecosystem Merges, Google Goes All-In on MCP

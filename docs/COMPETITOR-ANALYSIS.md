@@ -2,6 +2,111 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #123 (Friday April 3, 23:07 Stockholm)
+
+### Status: 6 topics researched. KEY FINDINGS: **tldraw officially launched MCP App (March 2026)** — agents get interactive canvas, but headless rendering still uses Chromium (5-8s cold start); Skissify's zero-Chromium advantage confirmed. **Excalidraw MCP now has 26 tools + Python FastMCP dual-stack** — iterative agent refinement is their moat, not headless batch rendering. **Diagramming market projected $12.07B by 2035 (CAGR 16.88%)** from $2.17B in 2024 — Skissify's niche is riding a large wave. **MCP SDK hit 97M+ monthly downloads** — protocol adoption is mainstream infrastructure. **tldraw adds "Image Pipeline" AI starter template and agent manager architecture** — SDK deepening AI-native developer experience, not commoditizing it. **No new headless hand-drawn JSON API competitor — 24th consecutive run uncontested.** CRITICAL carry-over: MCP Registry + Claude Connectors submission **still unconfirmed (Run #24 since first flagged).**
+
+---
+
+### tldraw Official MCP App (March 2026) — Headless Still Chromium-Dependent (THREAT UPDATE: MEDIUM, CONFIRMED)
+
+**Sources**: [tldraw MCP App launch](https://tldraw.dev/blog/tldraw-mcp-app), [tldraw-render MCP (headless, Chromium)](https://lobehub.com/mcp/bassimeledath-tldraw-render-mcp), [tldraw releases 2026](https://tldraw.dev/releases), verified 2026-04-03
+
+tldraw launched its official **MCP App** in Cursor (March 2026) — giving AI agents three tools: create shapes, edit shapes, delete shapes. MCP Apps return full interactive UIs, not just text. The canvas lives in the client; the agent drives it via MCP. This is interactive co-creation, not headless batch.
+
+**Headless tldraw rendering (community, not official)**: `tldraw-render-mcp` exists as a community tool but uses **headless Chromium via agent-browser**. First render: 5-8 seconds. Subsequent: ~100ms. Cold start is 50-80x slower than Skissify's sub-100ms cold start.
+
+**New tldraw SDK features (2026)**:
+- Shape indicators now render on 2D canvas (25x faster selection performance on large canvases)
+- R-tree spatial indexing for large canvas performance
+- "Image Pipeline" starter template: visual node-based canvas for AI image generation workflows (Cloudflare Worker backend)
+- Agent starter template restructured around manager-based architecture with mode systems, action schema registries, canvas linting
+- Quick zoom navigation, TldrawUiSelect component, shape-aware binding checks
+
+**For Skissify**: tldraw's MCP App is interactive (browser session, human-in-the-loop). Its headless path requires Chromium + 5-8s cold start. Neither path competes with Skissify's zero-Chromium, sub-100ms, pure-JSON-in batch rendering. The SDK deepening confirms tldraw is targeting SDK developers (at $6K/year), not the per-render API market.
+
+**Threat assessment: MEDIUM (confirmed) — tldraw MCP is interactive, not headless batch; Skissify's niche unaffected**
+
+---
+
+### Excalidraw MCP — 26 Tools, Python FastMCP Dual-Stack, Iterative Refinement Moat (THREAT UPDATE: HIGH, DEEPENING)
+
+**Sources**: [excalidraw-mcp official](https://github.com/excalidraw/excalidraw-mcp), [excalidraw-mcp PyPI](https://pypi.org/project/excalidraw-mcp/), [yctimlin MCP toolkit](https://github.com/yctimlin/mcp_excalidraw), [Excalidraw MCP alternatives 2026](https://delulu9.com/mcp/excalidraw-mcp/), verified 2026-04-03
+
+Excalidraw's official MCP now has **26 tools** (13 added in recent version): canvas inspection, scene export/import, canvas screenshots, iterative diagram refinement. A Python FastMCP server + TypeScript canvas server dual-stack for performance. Auto-detects MCP vs REST API mode with HTTP fallback.
+
+**What agents can do**: Build, inspect, iteratively refine diagrams with visual feedback — agents see what they drew and adjust. This is the interactive refinement loop Skissify deliberately does not offer (and shouldn't — different use case).
+
+**Excalidraw+ new 2026 features** (from changelog):
+- January: YouTube video syncing, QR code live session sharing, presenter view, redesigned dark mode
+- February: Presentation Waiting Room (guest admission), Custom AI Tokens (own OpenAI/Claude/Gemini keys), Advanced Charts (radar, multi-series), Google Drive video embed, interactive presentations with raised-hand queue
+
+**For Skissify**: Excalidraw is doubling down on **collaborative interactive sessions** — presenter tools, video embed, audience reactions. This validates the thesis: they optimize for humans in real-time; Skissify optimizes for agents in pipelines. The 26-tool MCP is still browser-dependent. No headless export path without Chromium confirmed.
+
+**Threat assessment: HIGH (deepening interactive moat — but confirms architectural divergence from Skissify's batch pipeline niche)**
+
+---
+
+### Diagramming Market: $2.17B (2024) → $12.07B (2035), CAGR 16.88% (MARKET VALIDATION)
+
+**Sources**: [Spherical Insights: Top 30 diagramming companies 2024-2035](https://www.sphericalinsights.com/blogs/top-30-companies-in-the-global-flowchart-and-diagramming-tools-market-2024-2035-spherical-insights-analysis), [Best AI diagramming tools for devs 2026](https://dev.to/dashin_pro/best-ai-diagramming-tools-for-developers-in-2026-3ni3), verified 2026-04-03
+
+Global flowchart and diagramming tools market: **USD 2.17B (2024) → USD 12.07B (2035)**, CAGR 16.88%. AI diagramming capabilities listed in top-tier developer tool roundups for 2026 include: Lucidchart (AI text-to-flowchart), Miro (AI sticky note clustering + sketch-to-process), Next AI Draw.io (upload image → replicate as editable diagram), Google Stitch (sketch/wireframe photo → polished UI).
+
+**Key gap confirmed**: No tool in any 2026 developer roundup offers headless JSON-in → hand-drawn SVG-out with architectural elements. The "AI diagramming for devs" category is all interactive or polished output. Hand-drawn + headless + JSON-native remains an unoccupied niche in every major directory search.
+
+**For Skissify**: The overall TAM is large and growing fast. Skissify does not need to capture 1% of the $12B market — capturing 0.01% by 2030 = $1.2M ARR.
+
+**Threat assessment: STRATEGIC POSITIVE — large growing market, niche uncontested**
+
+---
+
+### MCP SDK: 97M+ Monthly Downloads — Infrastructure-Level Adoption (MARKET UPDATE)
+
+**Sources**: [2026 Enterprise MCP Adoption](https://www.cdata.com/blog/2026-year-enterprise-ready-mcp-adoption), [MCP ecosystem 2026 — Apify](https://use-apify.com/blog/mcp-standard-ecosystem-2026), [Pinterest production MCP deployment](https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/), verified 2026-04-03
+
+MCP official SDKs (Python + TypeScript): **97M+ monthly downloads** as of 2026. Gartner: 40% of enterprise apps will include task-specific AI agents by end of 2026 (up from <5%). 75% of API gateway vendors and 50% of iPaaS vendors will have MCP features by end of 2026. Pinterest production deployment: 66,000 MCP invocations/month across 844 active users, saving ~7,000 hours/month.
+
+**For Skissify**: 97M monthly downloads means millions of developers have MCP infrastructure in their stack. A Skissify MCP server is one npm install away from any of them. The MCP Registry submission remains the critical unblocked action — it converts infrastructure presence into discovery.
+
+**Threat assessment: STRATEGIC POSITIVE — massive addressable developer base with infrastructure already in place**
+
+---
+
+### SaaS Low-Price Conversion Psychology — EUR 2/mo Tier Positioning Validated (PRICING UPDATE)
+
+**Sources**: [2026 SaaS pricing best practices](https://influenceflow.io/resources/saas-pricing-page-best-practices-complete-guide-for-2026/), [Advanced SaaS pricing psychology 2026](https://ghl-services-playbooks-automation-crm-marketing.ghost.io/advanced-saas-pricing-psychology-beyond-basic-tiered-models/), [The 2026 Guide to SaaS, AI, and Agentic Pricing](https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models), verified 2026-04-03
+
+Key 2026 pricing psychology data points:
+- **80% of customers** base purchasing decisions on perceived value, not price — low price alone does not convert; value framing is the conversion driver
+- **Center-stage effect**: 3-tier pricing converts at **1.4x the rate** of 2-tier — Skissify's Free/Pro/Team structure is architecturally correct
+- **Cost-per-outcome framing**: "EUR 0.005 per render" sounds cheaper than "EUR 5/month" — use per-render framing prominently on pricing page
+- **Mobile pricing pages**: 58% of SaaS pricing page visits are mobile in 2026 — pricing page must be mobile-optimized
+- **EUR 2/mo as conversion tier** (not revenue tier): removes "I'll think about it" objection; pairs with credit packs for developers who distrust recurring charges
+- **Charm pricing**: EUR 1.99/mo vs EUR 2/mo — small but measurable lift on conversion for sub-EUR 5 tiers
+
+**For Skissify**: The EUR 2/mo tier's strategic function is confirmed as conversion engine, not revenue engine. The pricing page should lead with "1,000 AI-generated sketches for EUR 5" (per-render framing) and offer both subscription AND one-time credit packs. 3-tier structure should be maintained.
+
+**Threat assessment: POSITIVE — pricing architecture is validated by 2026 data**
+
+---
+
+### Updated Competitor Matrix (Run #123 — Friday April 3, 23:07)
+
+| Tool | Status (2026-04-03 23:07) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw official MCP** | 26 tools, Python FastMCP dual-stack, iterative refinement loop, Custom AI Tokens, presenter tools. Browser-dependent. | NO | YES | NO | YES (official, 26 tools) | **HIGH** |
+| **tldraw MCP App** | Official MCP App (March 2026, Cursor). Interactive canvas. Headless community tool uses Chromium (5-8s cold start). SDK $6K/yr. Image Pipeline + agent templates added. | Partial (Chromium, 5-8s) | NO | NO (headless Chromium) | YES (official MCP App) | **MEDIUM (confirmed)** |
+| **Google Stitch** | MCP+SDK since April 2. Free 350 gen/mo. Polished UI mockups. Accepts sketch photos → polished output. | NO | NO (polished) | YES | YES | **MEDIUM** |
+| **Frame0** | "Vibe wireframing" MCP server. Desktop app. Hand-drawn wireframes + agent integration. | NO (desktop only) | YES | YES (desktop) | YES | **MEDIUM-HIGH** |
+| **Mermaid official MCP** | PNG rendering, token auth. Text-first. | YES (text-first) | NO | YES | YES | **MEDIUM** |
+| **Draw.io / Next AI Draw.io** | MCP added Feb 2026. 700+ enterprise icons. AI image→diagram replication added. | NO | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Diagramming AI** | NLP→Excalidraw output. No JSON-first. | NO | NO | YES | Unknown | **LOW-MEDIUM** |
+| **Sketch2scheme** | Photo→digital diagram (reverse direction). Free. | NO (reverse) | N/A | YES | NO | **LOW** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Zero Chromium. Sub-100ms. Architectural elements. MCP Registry: **ABSENT (CRITICAL × 24)**. Claude Connectors: **ABSENT (CRITICAL)**. | **YES (only zero-Chromium)** | **YES (tunable)** | **YES (only one)** | YES (headless) | Uncontested |
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #122 (Friday April 3, 20:51 Stockholm)
 
 ### Status: 4 topics researched. KEY FINDINGS: **PulseMCP now shows 11,170+ servers** (stable around 11k, suggesting filtering is tightening quality threshold — still 22+ run window with zero headless hand-drawn JSON competitor). **tldraw v3.4 added Excalidraw compatibility** — the two dominant hand-drawn tools now share file format, effectively merging ecosystems; Skissify must not rely on format fragmentation as defense. **Google announced full official MCP support across ALL Google services** (Cloud, Drive, Docs, Maps, etc.) via a unified endpoint — enterprise MCP adoption accelerating from experimentation to standard infrastructure. **Credits/per-render model validated by market data**: 126% YoY growth in SaaS companies using credit models (35→79 of PricingSaaS 500). **No new headless hand-drawn JSON API competitor found** — 23rd consecutive run uncontested. CRITICAL carry-over: MCP Registry + Claude Connectors submission **still unconfirmed** (Run #23 since first flagged).

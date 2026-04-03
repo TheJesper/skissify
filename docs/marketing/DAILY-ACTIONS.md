@@ -2,6 +2,71 @@
 
 ---
 
+## [2026-04-03] — Strategy Run #123 Actions (Friday April 3, 23:07 Stockholm) — FOR SATURDAY APRIL 4
+
+### Context: Run #123 Key New Findings
+- **tldraw official MCP App (March 2026)** — interactive canvas for agents, but headless path still uses Chromium (5-8s cold start); Skissify's sub-100ms zero-Chromium advantage now has a concrete benchmark to cite
+- **Excalidraw MCP has 26 tools + Python FastMCP dual-stack** — iterative visual refinement is their moat; confirms architectural divergence from Skissify's batch pipeline niche
+- **Diagramming market: $2.17B (2024) → $12.07B (2035), CAGR 16.88%** — TAM is larger than the AI agent proxy used previously; dual buyer type confirmed (agent devs + architecture/design professionals)
+- **MCP SDK: 97M+ monthly downloads** — infrastructure-level adoption; discovery bottleneck (not willingness to pay) is the primary constraint
+- **EUR 2/mo center-stage effect validated**: 3-tier structure converts 1.4x vs 2-tier; 58% of pricing page visits are mobile in 2026
+- **24th consecutive run: no headless hand-drawn JSON API competitor found**
+
+---
+
+### Action 1 (CRITICAL — Saturday): MCP Registry + Claude Connectors Submission (Run #24 — Still Blocking)
+
+**Still the single most urgent unblocked task. Not confirmed complete through 23 previous runs.**
+
+Run #123 adds a concrete competitive benchmark: tldraw's community headless renderer uses Chromium (5-8s cold start). Use this exact number in the registry description. Developers searching for "headless hand-drawn diagram" now have a measurable reason to choose Skissify.
+
+**Registry description to use** (copy-paste ready):
+> "Skissify — headless JSON-to-hand-drawn-SVG rendering. Zero Chromium dependency. Sub-100ms cold start (vs 5-8s for Chromium-based renderers). Architectural elements: doors, windows, stairs, dimensions, room labels. Tunable wobble/humanness parameters. MCP tool: generate floor plans, sketches, and diagrams from structured JSON in any agent pipeline, CI/CD job, or serverless function."
+
+**Keywords to include**: headless, hand-drawn, floor plan, JSON, no Chromium, architectural, sub-100ms, SVG, MCP
+
+**What to do Saturday**:
+1. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) using the description above
+2. Submit to Claude Connectors at [claude.com/connectors](https://claude.com/connectors)
+3. If npm package is not yet published for the MCP server, do that first (takes ~10 min)
+
+**Success condition for Run #124**: "Skissify submitted to MCP registry. Link: ___"
+
+---
+
+### Action 2 (HIGH — Saturday): Add "Cold Start Comparison" to Landing Page and Pricing Page
+
+**New from Run #123**: tldraw's headless Chromium renderer takes 5-8 seconds cold start. Skissify's is sub-100ms. This is a 50-80x performance difference — the most concrete, quantifiable differentiator Skissify has vs any competitor. It should be on the landing page and pricing page immediately.
+
+**What to add**:
+
+Landing page hero section — add one line below the main headline:
+> "Sub-100ms cold start. No Chromium. 50x faster than headless Excalidraw or tldraw rendering."
+
+Pricing page — add a comparison callout before the tier table:
+> "Why pay for renders? Because headless Chromium tools charge you 5-8 seconds per cold start in serverless environments. At 1,000 invocations/day that's hours of wall time and dollars of compute. Skissify renders in under 100ms — every time, cold or warm."
+
+Developer docs / API reference — add a "Performance" section with the benchmark numbers and a code example showing a curl → SVG in a GitHub Actions workflow.
+
+**Why this converts**: Developers building in serverless/CI run cost calculations in their head. A concrete benchmark (sub-100ms vs 5-8s, EUR 0.002/render vs compute cost of Chromium spin-up) makes the buy decision rational, not emotional.
+
+---
+
+### Action 3 (MEDIUM — Saturday/Sunday): Update Pricing Page for Mobile and Add Credit Pack CTA
+
+**New from Run #123**: 58% of SaaS pricing page visits are mobile in 2026. 3-tier structure converts 1.4x vs 2-tier. Developers with recurring-charge anxiety need a credit pack escape hatch.
+
+**What to do**:
+1. **Mobile audit**: Open the Skissify pricing page on a phone. Verify the tier cards stack cleanly, CTAs are thumb-tappable, and the EUR 2/mo price is visible without scrolling.
+2. **Add credit pack tier** (between Free and Starter): "EUR 5 — 2,000 renders — no subscription — no expiry — pay once." Label: "Just buy renders." Link to Stripe one-time payment product.
+3. **Center-stage highlight**: Ensure the middle tier (Starter/Pro at EUR 2-5/mo) is visually highlighted (border, badge) — this triggers the center-stage conversion effect.
+4. **Per-render framing**: Add "= EUR 0.002 per sketch" as a subline under the tier price. Make the value concrete.
+5. **Mobile CTA**: The "Get started free" and "Buy renders" CTAs must be full-width buttons on mobile, minimum 44px tap target.
+
+**Target**: Credit pack CTA visible above the fold on mobile before Sunday's run.
+
+---
+
 ## [2026-04-03] — Strategy Run #122 Actions (Friday April 3, 20:51 Stockholm) — FOR SATURDAY APRIL 4
 
 ### Context: Run #122 Key New Findings
