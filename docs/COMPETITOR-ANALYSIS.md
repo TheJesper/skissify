@@ -2,6 +2,109 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #117 (Friday April 3, 14:03 Stockholm)
+
+### Status: 4 topics researched. KEY FINDINGS: **mcp_excalidraw community MCP server** (yctimlin/mcp_excalidraw) now exists — programmatic agent→Excalidraw canvas with real-time sync, still browser-dependent, but the "no Excalidraw MCP" talking point is now obsolete for the general category. **Sketch.com MCP Server** launched — Mac design tool enters MCP registry, local-only, UI design direction, NOT hand-drawn, NOT JSON-to-sketch. **Draw-it MCP + Painter MCP** — two new MCP canvas/drawing tools in registry, neither headless, neither JSON-first. **SEO competition activating**: March 2026 blog posts now rank for "architecture diagrams with MCP + Claude + Draw.io + Excalidraw" — category search content exists without Skissify. **SaaS pricing**: 78% dev-tool adoption of consumption-based models, 73% raised prices in 2025 — EUR 2/mo micro-tier confirmed as below-market entry. **Headless JSON→hand-drawn SVG with no Chromium: still uncontested** (Run #117 — 18th consecutive confirmation).
+
+---
+
+### mcp_excalidraw Community MCP Server — Agent→Excalidraw Canvas NOW EXISTS (MEDIUM-HIGH, MOVEMENT)
+
+**Sources**: github.com/yctimlin/mcp_excalidraw, codenote.net/en/posts/excalidraw-mcp-server-agent-skill/ (verified 2026-04-03)
+
+A community project `mcp_excalidraw` by yctimlin now provides: "MCP server and Claude Code skill for Excalidraw — programmatic canvas toolkit to create, edit, and export diagrams via AI agents with real-time canvas sync."
+
+Key capabilities:
+- **Programmatic agent control** of Excalidraw canvas via MCP
+- **Real-time canvas sync** — agent edits appear live in browser
+- **Claude Code skill** packaged for easy installation
+- **Export diagrams** via MCP tools
+- Documented in educational content (codenote.net tutorial: "Drawing Hand-Drawn Style Diagrams with AI Using Excalidraw MCP Server & Agent Skill")
+
+**What this means**: The "Excalidraw has no MCP integration" talking point used in Skissify's differentiation is now factually outdated in the general sense. A community workaround exists. However, critical gaps remain:
+- **Still browser-dependent** — requires a running Excalidraw browser tab; cannot run headlessly in CI/CD
+- **Not an API** — it's a local-first desktop integration, not a hosted endpoint
+- **No hand-drawn output** — Excalidraw's output is clean/geometric (the hand-drawn aesthetic is stylistic, not architectural)
+- **No architectural elements** — no doors, windows, stairs, dimensions
+
+**Competitive impact**: The differentiation column in Skissify's competitor matrix must be updated. The claim "no MCP support" is no longer accurate for Excalidraw. The valid moat remains: **headless + API + no Chromium + true hand-drawn + architectural domain elements**.
+
+**Messaging action needed**: Update all copy that says "Excalidraw has no MCP support" to "Excalidraw requires a browser tab to run — Skissify runs headlessly with zero cold start."
+
+**Threat assessment: MEDIUM-HIGH (elevated from prior stable — community MCP bridge exists, headless moat remains intact but must be re-articulated)**
+
+---
+
+### Sketch.com MCP Server — Mac Design Tool in MCP Registry (MEDIUM, NEW ENTRY)
+
+**Sources**: sketch.com/docs/mcp-server/, sketch.com/blog/mcp-server-use-cases/ (verified 2026-04-03)
+
+Sketch (the established Mac UI design application) has launched a built-in MCP server:
+- **Local-only, off by default** — lightweight web server running at `localhost:31126/mcp`
+- **Two core tools**: `get_selection_as_image` (capture selection as image for AI analysis) + `run_code` (execute SketchAPI code written by the AI)
+- **Use cases cited by Sketch**: "export all icons for developer handoff", "find inconsistencies in the design system"
+- **Claude Code integration**: `claude mcp add --transport http sketch http://localhost:31126/mcp`
+- **Security**: local-only, full user control over which AI clients connect and which documents are accessible
+
+**For Skissify**: Sketch is a UI design tool (Mac-only, paid, polished output). It does not output hand-drawn sketches, does not accept JSON input, does not run headlessly. The competitive overlap is minimal. However, Sketch's MCP server is now listed in the MCP registry and appears in "design tool MCP" searches. This adds another established player to the MCP design category.
+
+**Key differentiation vs Sketch MCP**: Sketch's MCP reads and modifies an open desktop document. Skissify's MCP generates new sketches from structured JSON data without any UI. Completely different workflow position.
+
+**Threat assessment: MEDIUM (new entry in MCP design search space, different direction, but category getting crowded)**
+
+---
+
+### Draw-it MCP + Painter MCP — Drawing Apps in MCP Registry (LOW, INFORMATIONAL)
+
+**Sources**: github.com/Pandoll-AI/draw-it-mcp, smithery.ai/server/@flrngel/mcp-painter, mcpservers.org (verified 2026-04-03)
+
+Two new drawing-related MCP tools confirmed in registry:
+
+**Draw-it MCP (Pandoll-AI)**:
+- Browser-based drawing app with Claude Desktop MCP integration
+- Human draws → AI analyzes and discusses the artwork
+- 60 FPS canvas, dark/light themes, auto-save
+- Direction: human-draws-AI-analyzes. Not programmatic. Not JSON input.
+
+**Painter MCP (flrngel on Smithery)**:
+- "AI Drawing Tool for Visual Content Creation"
+- Simple drawing tools for AI assistants
+- Available on MCP Market and Smithery
+
+**For Skissify**: Neither tool occupies the JSON-to-hand-drawn-SVG niche. Both are either human-first drawing apps or simple AI doodle tools. They do, however, occupy "drawing" and "canvas" keyword space in MCP registries. Skissify's absence means these tools get discovered for "drawing" searches instead.
+
+**Threat assessment: LOW (different direction, but occupying MCP registry keyword space Skissify should own)**
+
+---
+
+### SEO Gap — Architecture Diagrams with MCP Tutorial Content (ATTENTION NEEDED)
+
+**Sources**: atalupadhyay.wordpress.com/2026/03/15/create-architecture-diagrams-with-mcp-claude-draw-io-excalidraw/ (verified 2026-04-03)
+
+A March 15, 2026 blog post titled "Create Architecture Diagrams with MCP: Claude, Draw.io & Excalidraw" is now ranking for architecture diagram + MCP + Claude search queries. It covers Draw.io and Excalidraw as the go-to MCP tools for architecture diagrams.
+
+**For Skissify**: This is direct SEO competition for the "AI agent + architecture diagrams + MCP" search cluster. A developer reading this post in April 2026 gets a tutorial for Draw.io and Excalidraw — not Skissify. Skissify doesn't appear in this article or in the search results for this query.
+
+**Action needed**: Publish a comparison piece targeting the same keyword cluster with the headless/no-Chromium angle. "Architecture Diagrams with MCP: Why Draw.io and Excalidraw Require a Browser (and What Doesn't)" — positions Skissify for the query while referencing the existing content.
+
+---
+
+### Updated Competitor Matrix (Run #117 — Friday April 3, 14:03)
+
+| Tool | Status (2026-04-03) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Google Stitch** | March 2026 overhaul: infinite canvas, voice canvas, MCP server, design-to-code. | NO | NO (polished) | YES | **YES (March 2026)** | **LOW-MEDIUM** |
+| **Excalidraw+** | Q1 2026: BYOK AI tokens, charts, presentations. Community MCP server (`mcp_excalidraw`) now exists — browser-dependent. | NO (Chromium required) | YES | NO | **YES (community, browser-bound)** | **MEDIUM-HIGH (community MCP exists but headless gap intact)** |
+| **Sketch.com** | MCP server launched (local-only, UI design, Mac-only). | NO | NO (polished) | YES (local) | **YES (new — local)** | **MEDIUM (new MCP registry entry)** |
+| **tldraw SDK** | Canvas perf improvements, image pipeline starter kit. $6K/yr. No MCP. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Draw-it MCP** | Browser drawing app + AI analysis. Not headless, not JSON. | NO | NO | NO | YES | **LOW** |
+| **Painter MCP** | Simple drawing for AI. Not headless, not JSON. | NO | NO | YES | YES | **LOW** |
+| **Frame0** | Desktop hand-drawn wireframes, MCP on PulseMCP. | NO (desktop) | **YES** | YES (desktop) | YES | **MEDIUM** |
+| **Draw.io** | MCP added Feb 2026. 700+ enterprise icons. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Skissify** | Headless JSON→hand-drawn SVG: zero Chromium, instant cold start, uncontested. MCP Registry: **ABSENT (CRITICAL × 18)**. | **YES (only one)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #116 (Friday April 3)
 
 ### Status: 7 topics researched. KEY FINDINGS: **Excalidraw** OSS release cadence continues, no headless API changes; Plus tier AI token feature (Claude/GPT/Gemini BYOK) confirmed from February remains current. **tldraw 2026**: Shape indicators now canvas-rendered (25× faster), new "Image pipeline" starter kit for AI image workflow nodes — nudging toward agent-compatible tooling but no MCP, no headless JSON API. **Google Stitch March 2026 overhaul**: Infinite canvas + voice canvas + MCP integration + Figma export — significant AI-native design pivot; design-to-code direction, NOT JSON-to-hand-drawn. **MCP ecosystem**: 10,000+ active servers, 97M monthly SDK downloads, enterprise focus (audit trails, SSO-auth, gateway governance) maturing in 2026 — Skissify still absent from registry. **AI sketch tools 2026**: Adobe Firefly, Canva, Uizard, PromeAI all targeting sketch-to-image or hand-drawn-to-UI conversion (opposite direction from Skissify). **SaaS EUR 2/mo micro-tier**: AI-resolution tools (Zendesk $1.50-$2.00/resolution, Intercom $0.99/resolution) are normalizing sub-$2 per-unit pricing for AI workflows — validates Skissify's per-render pricing. **Headless JSON→hand-drawn SVG with no Chromium: still uncontested** (Run #116 — 16th consecutive confirmation).
@@ -8146,3 +8249,85 @@ Hybrid pricing (base fee + usage) dominates even in micro-SaaS. Charm pricing (E
 | **Skissify** | Headless stateless JSON→SVG. Uncontested in spatial/architectural lane. | **Uncontested** |
 
 ---
+
+## [2026-04-03] — Automated Strategy Run #117 (Friday April 3, 2026)
+
+### Status: 5 topics researched. KEY FINDINGS: **Miro shipped MCP server (Beta) in February 2026** connecting to Cursor, Claude Code, GitHub Copilot, Replit; reads board content into AI coding workflows; SVG export to Figma. CRITICAL new entry in the MCP design category. **tldraw 4.5.6** published April 1, 2026; no new conceptual features from prior cycle. **Excalidraw+ February 2026** changelog unchanged from Run #116 — no April update confirmed. **AFFiNE 2026**: AI mind map + UML sequence generation; OSS self-hosted Miro alternative; no JSON rendering API, no hand-drawn output. **SaaS 3-tier pricing**: ProfitWell 2026 data confirms 3-tier layouts convert at 1.4x vs 2-tier and 1.8x vs 4+ tiers. **JSON-to-hand-drawn SVG headless API: still uncontested** (Run #117 — 18th consecutive confirmation). **NEW CRITICAL: Miro MCP server in registry creates indirect pipeline path into "visual output for AI agents" positioning.**
+
+---
+
+### Miro February 2026 — MCP Server (Beta) + SVG Export + AI Web Reading (MEDIUM-HIGH, ESCALATING)
+
+**Sources**: miro.com/blog/whats-new-february-2026/, releasebot.io/updates/miro (verified 2026-04-03)
+
+Miro shipped a significant feature cluster in February 2026:
+- **MCP Server (Beta)**: Connects Miro boards to AI coding tools — Cursor, Claude Code, GitHub Copilot, Replit. AI reads board content (specs, diagrams) and uses it in code generation context.
+- **Flows and Sidekicks read web content**: Drop any public URL on a board; AI reads it inline.
+- **SVG export to Figma**: Copy Miro prototypes as SVG, paste into Figma with structure preserved.
+- **AI workflow integration**: Boards are now live context for AI coding agents.
+
+**For Skissify**: Miro is not a hand-drawn tool, but its MCP server means it is now IN the MCP registry competing for "visual tool for AI agents" mindshare. Miro requires human-created boards; Skissify accepts programmatic JSON. Miro is $10-20/user/month vs Skissify EUR 2-5/mo. The differentiation holds, but Miro's MCP presence in the registry means Skissify's continued absence is now competing against a named, well-resourced entry.
+
+**Positioning opportunity**: "Miro does it for human teams at $10/user. Skissify does it for AI agents at EUR 0.005/render." This framing makes the comparison work in Skissify's favour.
+
+**Threat assessment: MEDIUM-HIGH (Miro now in MCP registry — design category filling; Skissify absence is now competing against Miro's live MCP presence)**
+
+---
+
+### tldraw 4.5.6 (April 1, 2026) — Active Maintenance, No New Strategic Moves (LOW-STABLE)
+
+**Sources**: github.com/tldraw/tldraw/releases, tldraw.dev/releases (verified 2026-04-03)
+
+tldraw released version 4.5.6 on April 1, 2026. No major new feature announcements. Strategic additions remain image pipeline starter kit, canvas-rendered shape indicators (25x faster), SDK 4.0 commercial license ($6,000/year). No MCP, no headless API, no hand-drawn JSON rendering.
+
+**Threat assessment: LOW-STABLE (3rd consecutive cycle — no movement)**
+
+---
+
+### AFFiNE 2026 — AI Mind Maps + UML, Self-Hosted Miro Alternative (MEDIUM, NEW ENTRY)
+
+**Sources**: affine.pro/blog/mind-mapping-software, affine.pro/blog/uml-sequence-diagram (verified 2026-04-03)
+
+AFFiNE is an open-source self-hosted alternative to Miro/Notion with 2026 AI capabilities:
+- AI mind map generation from prompts, converts to task lists
+- AI UML sequence diagram generation from natural language flow descriptions
+- Self-hosted under BSL-like license; cloud tier available
+- Growing developer community as "open-source Miro" positioning
+
+AFFiNE generates diagrams from prompts but requires human interaction — no JSON API, no headless renderer, no hand-drawn aesthetic. Potential integration partner rather than direct threat.
+
+**Threat assessment: MEDIUM (new entry to monitor; integration partner potential)**
+
+---
+
+### SaaS 3-Tier Pricing — ProfitWell 2026 Confirms Optimal Structure (PRICING VALIDATION)
+
+**Sources**: pipelineroad.com/agency/blog/saas-pricing-page-best-practices, getmonetizely.com/blogs/the-psychology-behind-price-points-that-drive-conversions-in-saas (verified 2026-04-03)
+
+Paddle/ProfitWell 2026 data:
+- 3-tier pages convert at 1.4x vs 2-tier, 1.8x vs 4+ tiers
+- Positive framing ("includes unlimited") converts 23% better than limit framing ("limits you to")
+- 58% of SaaS pricing page visits are now on mobile (2026)
+- Annual framing at checkout significantly improves retention
+
+**For Skissify**: 3-tier structure validated. Mobile-first pricing page now critical. Consider surfacing EUR 2 Starter via toggle rather than as a 4th visible tier.
+
+**Threat assessment: PRICING TAILWIND**
+
+---
+
+### Updated Competitor Matrix (Run #117 — Friday April 3, 2026)
+
+| Tool | Status (2026-04-03) | Headless JSON SVG | Hand-drawn | No Chromium | MCP | Threat |
+|------|---------------------|-------------------|------------|-------------|-----|--------|
+| **Miro** | Feb 2026: MCP server (Beta), SVG-to-Figma, AI reads boards. $10-20/user/mo. | NO | NO | YES | YES (Feb 2026) | **MEDIUM-HIGH (in registry now)** |
+| **Google Stitch** | Mar 2026: MCP server, voice canvas, design-to-code. | NO | NO | YES | YES | **LOW-MEDIUM** |
+| **Excalidraw+** | Feb 2026: BYOK AI tokens, radar charts. No headless. | NO (Chromium) | YES | NO | YES (browser) | **MEDIUM-HIGH** |
+| **tldraw** | Apr 2026: 4.5.6. Image pipeline kit. No MCP. $6K/yr. | NO | Partial | YES | NO | **LOW-STABLE** |
+| **AFFiNE** | 2026: AI mind maps + UML. OSS Miro alt. No JSON API. | NO | NO | YES | NO | **MEDIUM (new)** |
+| **Draw.io** | MCP Feb 2026. In official registry. 700+ icons. | NO | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Frame0** | Unchanged. MCP on PulseMCP. Hand-drawn wireframes. Desktop. | NO (desktop) | YES | YES | YES | **MEDIUM** |
+| **Skissify** | Headless JSON hand-drawn SVG. MCP Registry: **ABSENT (CRITICAL x18)**. | **YES (only one)** | **YES** | **YES** | YES (headless) | Uncontested |
+
+---
+

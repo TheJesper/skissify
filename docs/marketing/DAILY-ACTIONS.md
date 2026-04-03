@@ -2,6 +2,74 @@
 
 ---
 
+## [2026-04-03] — Strategy Run #117 Actions (Friday April 3, 14:03 Stockholm)
+
+### Context: Run #117 Key New Findings
+- **mcp_excalidraw community MCP server** exists — agent→Excalidraw canvas with real-time sync, browser-bound. "Excalidraw has no MCP" is no longer accurate. Headless moat intact.
+- **Sketch.com MCP Server** launched — Mac design tool now in MCP registry. Design MCP category now has 10 entries, Skissify absent.
+- **SEO gap**: March 2026 blog post "Create Architecture Diagrams with MCP: Claude, Draw.io & Excalidraw" ranks for architecture diagram + MCP queries. Skissify not mentioned.
+- **SaaS pricing**: 78% dev-tool consumption models, 73% raised prices in 2025 — EUR 2/mo Starter tier is below-market entry positioning.
+
+---
+
+### Action 1 (CRITICAL — this session): Fix the Messaging on All Excalidraw Comparisons
+
+**Problem**: Multiple blog posts, the pricing page, and social copy state "Excalidraw has no MCP support." This is now factually incorrect — a community MCP project exists. If a developer googles this claim and finds `mcp_excalidraw`, the trust damage is immediate.
+
+**The correct claim**: "Excalidraw's community MCP requires an open browser tab — it cannot run headlessly, in CI/CD, or without a UI. Skissify runs as a pure API with zero cold start, no Chromium dependency."
+
+Steps:
+1. Search all blog posts and landing page copy for "Excalidraw has no MCP" / "no MCP integration" / "Excalidraw doesn't support MCP"
+2. Replace each instance with: "Excalidraw requires a browser tab to operate — even via its community MCP bridge. Skissify runs headlessly with zero cold start."
+3. Update the competitor matrix table on the marketing site if live
+4. Update `docs/marketing/COMPETITORS.md` with the corrected entry
+
+**Why today**: Tutorial content teaching developers to use Excalidraw via MCP already exists and ranks. Every day this claim appears in Skissify copy is a day a developer can disprove it and lose trust.
+
+**Time: 1-2 hours. Risk if skipped: credibility damage when fact-checked.**
+
+---
+
+### Action 2 (HIGH — this weekend): Publish "Why Excalidraw's MCP Still Isn't Headless (And Why That Matters)"
+
+**Context**: A developer reading `codenote.net/en/posts/excalidraw-mcp-server-agent-skill/` learns they can hook Claude to Excalidraw via MCP. They might conclude they don't need Skissify. This post intercepts that conclusion.
+
+**Thesis**: Excalidraw's MCP (community) is genuinely useful — but it requires an open browser tab, a running Excalidraw instance, and manual setup per machine. Skissify's API requires nothing except an HTTP call. For pipelines, documentation generators, and CI/CD — the distinction matters enormously.
+
+Structure:
+1. **Lead**: "I tried the Excalidraw MCP server so you don't have to. Here's what it does, and the one thing it can't do."
+2. Show the Excalidraw MCP setup (honest, no FUD): great for interactive sessions with Claude
+3. Show where it breaks: `npm ci` in GitHub Actions, Docker containers, server-side rendering, lambda functions
+4. Show the Skissify alternative: one HTTP call, JSON in, SVG out, no browser
+5. Code example: `curl -X POST https://skissify.com/api/render -d '...'` → SVG
+6. **CTA**: "Skissify is already headless. Try it free."
+
+**Publish to**: blog, r/mcp, r/webdev, HackerNews (Watch HN)
+
+**Time: 2-3 hours. SEO value: intercepts "Excalidraw MCP" search traffic with headless angle.**
+
+---
+
+### Action 3 (HIGH — this week): Target the "Architecture Diagrams + MCP + Claude" SEO Cluster
+
+**Context**: A March 15, 2026 post at `atalupadhyay.wordpress.com` ranks for "create architecture diagrams with MCP Claude Draw.io Excalidraw." Skissify is not mentioned. Developers searching this query get a tutorial pointing them to Draw.io and Excalidraw.
+
+**The counter-post**: "Architecture Diagrams with MCP: Draw.io and Excalidraw Both Need a Browser. Here's What Doesn't."
+
+Structure:
+1. Compare Draw.io MCP, Excalidraw MCP (community), and Skissify MCP for architecture diagram generation
+2. Show each tool's pipeline requirements honestly
+3. Benchmark: Excalidraw/Draw.io require browser runtime → cold start → not CI/CD compatible; Skissify is pure HTTP
+4. Show floor plan example with full JSON manifest → rendered SVG output
+5. Mention the architectural elements unique to Skissify (doors, windows, stairs, dimensions)
+6. **CTA**: Register at skissify.com, publish MCP server details
+
+**Target keywords**: "architecture diagrams mcp", "ai agent architecture diagram headless", "generate floor plan api mcp"
+
+**Time: 2-3 hours. Directly intercepts existing ranking content in our primary search cluster.**
+
+---
+
 ## [2026-04-03] — Strategy Run #116 Actions (Friday April 3, 2026)
 
 ### Context: Run #116 Key New Findings
@@ -7667,3 +7735,67 @@ ender_sketch tool live on npm? Yes/no + URL
 **Success metric**: Starter tier live in Stripe and visible on pricing page by end of day.
 
 ---
+
+## [2026-04-04] — Actions for Saturday April 4, 2026 (from Run #117)
+
+### Context: Run #117 Key New Findings
+- **Miro MCP server (Beta)** launched February 2026 — now in MCP registry, connecting to Cursor/Claude Code/Copilot/Replit. Design category in MCP registry now has: Miro, Google Stitch, Draw.io. Skissify is absent (18th consecutive cycle — CRITICAL).
+- **tldraw 4.5.6** released April 1 — active maintenance, no new strategic moves.
+- **ProfitWell 3-tier pricing data**: 3 tiers convert at 1.4x vs 2-tier, 1.8x vs 4+ tiers. 58% of pricing page visits are mobile.
+- **AFFiNE**: AI diagrams from prompts, OSS, no hand-drawn, potential integration partner.
+
+---
+
+### Action 1 (CRITICAL — 18th consecutive carry-over): Submit to Official MCP Registry
+
+**Owner**: Founder
+**Action**: Submit Skissify to registry.modelcontextprotocol.io today. Miro, Draw.io, and Google Stitch are all listed. The "hand-drawn sketch" and "architectural diagram" slots remain empty. First submission wins discovery.
+
+Steps:
+1. Fork `github.com/modelcontextprotocol/registry`
+2. Add `servers/skissify.json` with name, description targeting keywords: "hand-drawn", "floor plan", "architectural", "headless", "JSON schema"
+3. Open PR titled: "Add Skissify — headless JSON-to-hand-drawn SVG, no Chromium, architectural elements"
+4. Implement `skissify.com/.well-known/mcp-server.json` for auto-discovery (2h)
+5. Once PR is open: email Kong Konnect partners (konghq.com/partners) for enterprise cascade
+
+**Goal**: Be listed in the official MCP registry before next competitor enters the hand-drawn/sketch category. Miro is there. Draw.io is there. Skissify is the only hand-drawn tool and currently invisible.
+**Time**: 3-4 hours.
+
+---
+
+### Action 2 (HIGH): Publish Miro MCP Launch Reactive Post — "Miro Just Added MCP. Here's the Agent-Native Alternative."
+
+**Owner**: Founder
+**Action**: Publish a blog post + community post reacting to Miro's February 2026 MCP launch. Miro is $10-20/user/month and requires human-created boards. Skissify is EUR 2/mo and accepts programmatic JSON from AI agents. This is a clear differentiator worth publishing while Miro's MCP is still newsworthy.
+
+Steps:
+1. Draft post: "Miro Added an MCP Server. Here's What That Means for AI Agent Pipelines — And Why EUR 2/mo Beats $10/user."
+2. Structure: Miro MCP what it does → what it doesn't do (headless, JSON-native, hand-drawn) → Skissify as the complementary/alternative tool
+3. Include side-by-side: "Miro MCP: read board, generate code. Skissify MCP: generate JSON, render sketch. Two different directions, one pipeline."
+4. Publish to blog + r/ClaudeAI, r/mcp, Hacker News (Watch HN), X
+5. Tags: `mcp`, `miro`, `ai-agents`, `hand-drawn`, `diagram-api`
+
+**Goal**: Capture search traffic for "Miro MCP alternative" and "agent-native sketch tool" while Miro's MCP launch is recent news. Price-anchor Skissify against Miro's $10/user price.
+**Time**: 2-3 hours.
+
+---
+
+### Action 3 (HIGH): Audit and Fix Mobile Pricing Page
+
+**Owner**: Founder
+**Action**: Open Skissify pricing page on a phone. Check: (1) does the 3-tier table collapse cleanly? (2) are CTA buttons tap-sized (min 44px)? (3) does the annual/monthly toggle work on mobile? (4) is EUR 2 Starter surfaced as a toggle rather than a 4th full column?
+
+ProfitWell 2026 data: 58% of pricing page visits are mobile. A EUR 2 impulse purchase that fails because of a horizontal scroll or a missed tap is permanently lost.
+
+Steps:
+1. Open pricing page on iOS/Android or browser mobile emulator
+2. Check table layout, CTA button sizes, toggle controls
+3. Collapse table to 3 tiers (Free / Pro / Team) with EUR 2 Starter accessible via "See starter plan" link under Pro column
+4. Add positive framing to tier descriptions ("Pro includes 1,000 renders" not "Free is limited to 50")
+5. Verify annual/monthly toggle is prominent and functional on mobile
+
+**Goal**: Remove mobile UX as a conversion blocker for the EUR 2/mo tier before the MCP registry listing drives traffic.
+**Time**: 1-2 hours.
+
+---
+

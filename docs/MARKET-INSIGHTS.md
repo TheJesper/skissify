@@ -2,6 +2,53 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #117 (Friday April 3, 14:03 Stockholm)
+
+### Theme: Excalidraw Has a Community MCP Now. Your Moat Is Still Real, But The Messaging Needs Updating.
+
+#### The mcp_excalidraw Development — What It Changes and What It Doesn't
+
+A community project (`github.com/yctimlin/mcp_excalidraw`) now exists that gives AI agents (including Claude Code via a packaged skill) programmatic control over an Excalidraw canvas with real-time sync. Tutorial content already ranks for "AI agent Excalidraw diagram" queries.
+
+**What this changes for Skissify's messaging**:
+- "Excalidraw has no MCP support" is now factually incorrect. Drop this claim entirely.
+- The accurate claim is: "Excalidraw requires an open browser tab. Skissify runs headlessly."
+
+**What this does NOT change**:
+- Excalidraw still requires Chromium. No headless execution. Cannot run in CI/CD without a browser.
+- Excalidraw's output is clean/geometric. The "hand-drawn" label is aesthetic branding, not architectural.
+- Excalidraw has no architectural domain elements (doors, windows, stairs, dimensions).
+- Skissify remains the only headless, JSON-native, Chromium-free hand-drawn renderer.
+
+**WTP implication**: The community MCP bridge actually *increases* Skissify's urgency to register in the official MCP registry. A developer searching for "hand-drawn diagram MCP" will now find the mcp_excalidraw community project before Skissify. Skissify needs official registry presence to capture that first-mover slot for "hand-drawn" + "headless" in the same search.
+
+#### New MCP Design Category Count — April 3, 2026
+
+Design/diagram tools now confirmed in MCP registries (as of Run #117):
+1. **Google Stitch** — polished UI design, design-to-code (March 2026)
+2. **Draw.io** — technical diagrams (February 2026)
+3. **mcp_excalidraw** — community Excalidraw bridge, browser-bound (community)
+4. **Sketch.com** — Mac UI design, local-only (2026)
+5. **Draw-it MCP** — human drawing + AI analysis (community)
+6. **Painter MCP** — simple AI drawing (community)
+7. **SVGMaker MCP** — clean SVG generation (2025)
+8. **Frame0** — hand-drawn wireframes, desktop-only (2025)
+9. **AI Diagram Maker** — clean vector diagrams (Jan 2026)
+10. **Skissify** — headless JSON→hand-drawn SVG: **ABSENT**
+
+The hand-drawn + headless + JSON-native slot remains unoccupied in official registries. But the general category is now crowded enough that "MCP drawing tool" searches will surface multiple results — none of them Skissify. The absence is no longer invisible; it's actively costly.
+
+#### SaaS Pricing Signal — 73% Raised Prices, 78% Dev Tools on Consumption Models
+
+Run #117 confirms: 73% of SaaS raised prices in 2025 (upward market pressure). 78% of developer tools adopted consumption-based pricing. This means:
+- Skissify's EUR 5/mo Pro is *below market* for developer tools — there is pricing power available
+- Consumption-based EUR 0.005/render is market-standard, not exotic
+- The EUR 2/mo Starter API tier (200 renders) is below typical market entry — positions as "try before you commit"
+
+Takeaway: Skissify has room to raise Pro to EUR 7-9/mo post-launch without pricing out the market. But don't do it pre-launch — acquisition matters more than margin in month 0.
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #116 (Friday April 3, 2026)
 
 ### Theme: Sub-$2 Per-Action AI Pricing Is Normalized. Google Stitch MCP. The JSON-to-Sketch Side Is Still Empty.
@@ -6379,3 +6426,67 @@ The weakest pitch is "support this project." The strongest pitch is "your pipeli
 - More elements types alone (only relevant if they need those elements NOW)
 
 ---
+
+## 2026-04-03 — What Makes Someone Pay EUR 2/mo for Skissify
+
+**Date**: April 3, 2026 (Run #117) | **Sources**: pipelineroad.com SaaS pricing best practices, getmonetizely.com 2026 guide, Paddle/ProfitWell retention data, Miro MCP launch Feb 2026, tldraw 4.5.6 release notes
+
+---
+
+### Core Finding: Three-Tier Psychology Validates the EUR 2 Slot — But Only If Positioned Correctly
+
+ProfitWell's 2026 data confirms 3-tier SaaS converts at 1.4x a 2-tier layout and 1.8x a 4+ tier layout. This means Skissify's pricing page should show exactly three tiers prominently. The EUR 2 Starter tier is best surfaced as a toggle option ("billed monthly starting at EUR 2") rather than a fourth full column — preserving the 3-tier conversion advantage while keeping the micro-tier accessible.
+
+The EUR 2/mo price point maps directly to the "impulse purchase zone" (under EUR 3) where no approval process is triggered, no second thought occurs, and the decision time is under 30 seconds. The trigger must meet the user at the moment of friction.
+
+---
+
+### New Trigger 6: The MCP Agent Workflow Discovery Path (2026-specific)
+
+**Source signal**: Miro launched an MCP server in February 2026. It is now IN the official MCP registry. Developers building agent pipelines with Cursor, Claude Code, or GitHub Copilot are actively searching the MCP registry for visual output tools. Miro appears. Skissify does not (yet).
+
+When Skissify IS listed in the MCP registry, the discovery path for EUR 2/mo conversion becomes:
+1. Developer searches MCP registry for "sketch" or "hand-drawn"
+2. Finds Skissify listing
+3. Reads description: "headless JSON to hand-drawn SVG, no Chromium, EUR 0.005/render"
+4. Tests free tier via API — it works immediately with no browser dependency
+5. Hits free tier limit in their pipeline test within hours
+6. EUR 2 to unblock is immediate — no evaluation needed, no alternatives exist
+
+This is the highest-intent conversion path available because the user self-selected via search, found zero alternatives at the same tier, and the pipeline is working. The bottleneck is purely the EUR 2 friction, which is near-zero.
+
+**Product implication**: The MCP registry listing description IS the pricing page for this user segment. Optimize it to include the free tier limits and EUR 2 upgrade path inline.
+
+---
+
+### New Data Point: 58% Mobile Pricing Page Visits (2026)
+
+ProfitWell/Paddle data shows 58% of SaaS pricing page visits in 2026 are on mobile. EUR 2/mo conversion requires a pricing page that works on a phone screen. The 3-tier table must collapse cleanly on mobile — likely to a single highlighted "Pro" card with the others accessible via tabs or swipe.
+
+**What kills EUR 2 conversion on mobile**: a pricing table that requires horizontal scrolling, small tap targets on CTAs, and modal overlays for annual/monthly toggle. Fix these before the pricing page is live. A EUR 2 purchase lost to mobile UX is a EUR 2 purchase lost permanently.
+
+---
+
+### Updated EUR 2/mo Trigger Hierarchy (All Cycles Combined)
+
+| Rank | Trigger | Conversion time | Channel |
+|------|---------|----------------|---------|
+| 1 | **Pipeline blocked** — agent hits free quota mid-run at 3am | Under 30 seconds | API / agent workflow |
+| 2 | **Watermark visible** — showing output to client or colleague | Under 10 seconds | Web editor export |
+| 3 | **MCP registry discovery** — searched, found, tested, need more | Under 60 seconds | MCP registry |
+| 4 | **Annual framing** — EUR 19.99/yr shown before EUR 2/mo | Considered (seconds) | Pricing page |
+| 5 | **Credibility purchase** — developer shows Skissify in portfolio | Under 60 seconds | Web editor |
+| 6 | **Patronage** — solo founder story resonates | Minutes | Landing page |
+
+Triggers 1, 2, and 3 are the only ones worth optimising product and pricing page for. Triggers 4-6 follow if the page is clean.
+
+---
+
+### What Miro's MCP Launch Tells Us About EUR 2 Willingness to Pay
+
+Miro at $10-20/user/month now has an MCP server. Developers who encounter Miro via the MCP registry and see the price will look for alternatives. Skissify at EUR 2/mo vs Miro at $10/month is a 5x price difference for the specific use case of "send visual output from an AI agent pipeline." This price anchoring works in Skissify's favour if Skissify is listed in the same registry.
+
+**The insight**: Miro's MCP presence is inadvertent price-anchoring for Skissify. "The team whiteboard that costs $10/month now has an MCP server. The agent-native sketch tool costs EUR 2." The EUR 2 price becomes obviously correct in this frame.
+
+---
+
