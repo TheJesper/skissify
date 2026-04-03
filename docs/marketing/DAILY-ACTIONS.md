@@ -7994,3 +7994,63 @@ Steps:
 
 ---
 
+
+## [2026-04-04] — Actions for Saturday April 4, 2026 (from Run #121, 18:35)
+
+### Context: Run #121 Key New Findings
+- **MCP donated to Agentic AI Foundation** — vendor-neutral open standard confirmed; Google Cloud, Pinterest, MuleSoft all in production MCP deployments
+- **PulseMCP: 11,180+ servers** — discovery competition intensifying; official registry is now a quality badge
+- **Sketch2scheme** (free, photo→diagram) + **Diagramming AI** (NLP→Excalidraw) newly identified adjacent competitors
+- **Google Stitch free (350 gen/mo)** — no paid tier yet; race-to-zero risk in polished UI tools (not Skissify's segment)
+- **No new hand-drawn/JSON API competitor in April** — niche uncontested (22nd consecutive confirmation)
+
+---
+
+### Action 1 (CRITICAL — 22nd consecutive carry-over): Submit to Official MCP Registry
+
+**Owner**: Founder
+**Action**: Submit Skissify to registry.modelcontextprotocol.io. MCP is now officially a vendor-neutral open standard (donated to Agentic AI Foundation) — submit with full confidence. The official registry now carries a quality signal (2,000 entries vs 11,180 on PulseMCP). First hand-drawn sketch tool listed wins the category permanently.
+
+Steps:
+1. Fork `github.com/modelcontextprotocol/registry`
+2. Add `servers/skissify.json` — keywords: "hand-drawn", "floor plan", "architectural", "headless", "JSON schema", "no Chromium"
+3. Open PR: "Add Skissify — headless JSON-to-hand-drawn SVG, no Chromium, architectural elements"
+4. Add `skissify.com/.well-known/mcp-server.json` for auto-discovery (2h)
+5. Also submit to PulseMCP (pulsemcp.com/add-server) for maximum coverage
+
+**Why now**: MCP is vendor-neutral open standard. Pinterest and Google Cloud run it in production. Being absent from the registry is costing real discovery. No competitor occupies "hand-drawn" or "architectural" slots.
+**Time**: 3-4 hours.
+
+---
+
+### Action 2 (HIGH): Reframe Developer Pricing Copy as "API Access" Not "Pro Plan"
+
+**Source signal**: MCP donated to Agentic AI Foundation. Developers now treat MCP tools as infrastructure. "EUR 2/mo API access" maps to infra budget (like database hosting, email API) — not app budget (where approval friction exists).
+
+**Action**: Update pricing page copy for the EUR 2 tier:
+- Change: "Upgrade to Pro — EUR 2/mo" → "Get API access — EUR 2/mo"
+- Change: "Pro Plan" label → "API Access" or "Developer" label
+- Add: "Infrastructure pricing — pay like you pay for storage, email, or hosting"
+- Keep: watermark removal, private saves, 500 renders/mo included
+
+**A/B test hypothesis**: "API access" framing converts developer segment at 1.5-2x vs "Pro plan" framing because it matches the budget category developers already approve.
+
+**Time**: 30 minutes (copy only, no new tier structure needed).
+
+---
+
+### Action 3 (MEDIUM): List on AI Tool Directories to Capture Sketch2scheme's Audience
+
+**Source signal**: Sketch2scheme (photo→digital diagram) is listed on "There's An AI For That" and Toolify — targeting users who search for "sketch to diagram converter." These users want the hand-drawn aesthetic in some direction.
+
+**Action**: List Skissify on the same directories with messaging targeting "JSON to hand-drawn" and "programmatic sketch generation":
+1. Submit to theresanaiforthat.com with category: "diagram tools", "sketch tools", "AI for developers"
+2. Submit to toolify.ai
+3. Submit to futurepedia.io and aitoolsdirectory.com
+4. Use description: "Generate hand-drawn architectural sketches from JSON. No Chromium. Sub-100ms. Built for AI agents."
+5. Link to gallery page for SEO (each public sketch = indexed landing page)
+
+**Goal**: Capture discovery traffic from adjacent "AI sketch" searches and redirect to Skissify's stronger value prop (programmatic, not photo-upload).
+**Time**: 1 hour.
+
+---

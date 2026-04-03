@@ -2,6 +2,101 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #121 (Friday April 3, 18:35 Stockholm)
+
+### Status: 4 topics researched. KEY FINDINGS: **MCP donated to Agentic AI Foundation** — protocol now vendor-neutral open standard; risk removed for builders. **PulseMCP now tracks 11,180+ servers** (up from 5,800 in Run #119) — ecosystem growing fast, discovery competition intensifying. **Pinterest + MuleSoft in production MCP deployments** — enterprise validation confirmed. **Sketch2scheme** (free, photo→digital diagram) and **Diagramming AI** (adds Excalidraw-native output) identified as adjacent competitors not previously tracked. **No new April 2026 hand-drawn/sketch competitor launched** — Skissify's exact niche uncontested for 22nd consecutive run. **Google Stitch currently free (350 gen/mo)** — pricing race-to-zero risk emerging in polished UI tools (not Skissify's segment). CRITICAL carry-over: MCP registry submission **still pending** (Run #22 since first flagged).
+
+---
+
+### MCP Donated to Agentic AI Foundation — Protocol Now Vendor-Neutral (STRATEGIC POSITIVE)
+
+**Sources**: anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation, verified 2026-04-03
+
+Anthropic has officially donated the MCP protocol to the **Agentic AI Foundation**, making it a vendor-neutral open standard. This is a structural change — MCP is no longer "Anthropic's protocol."
+
+**What this means**:
+- Zero lock-in risk for developers building MCP servers (no single vendor can restrict or fork the standard)
+- Enterprise procurement teams can approve MCP integrations without "Anthropic dependency" concern
+- Google, Microsoft, OpenAI are all already MCP-compatible — the standard is cross-platform
+- MuleSoft, Google Cloud, Pinterest (production) all deployed enterprise MCP infrastructure in early 2026
+
+**For Skissify**: Building on MCP is now as safe a bet as building on REST. The Agentic AI Foundation validates MCP as the infrastructure standard for the next 5 years. Submit to the registry with confidence — this is not a bet on Anthropic's market position, it's a bet on open infrastructure.
+
+**Strategic implication**: Skissify's MCP server is not a feature — it's infrastructure. Frame it that way in the registry listing and on the landing page.
+
+**Threat assessment: STRATEGIC POSITIVE — removes final objection to MCP-first strategy**
+
+---
+
+### PulseMCP: 11,180+ Servers — Discovery Competition Intensifying (CONTEXT UPDATED)
+
+**Sources**: pulsemcp.com/servers (daily updated index), verified 2026-04-03
+
+PulseMCP now indexes **11,180+ MCP servers**, up from ~5,800 tracked in Run #119 (roughly 5,380 new servers in the window between runs). The official Anthropic registry is ~2,000 entries.
+
+**What changed**: The gap between "total MCP servers" and "official registry entries" is now ~9,000 servers — most tools are not officially listed. Being in the official registry is increasingly a quality signal, not just a visibility play.
+
+**For Skissify**: With 11k+ servers, search result ranking in the registry matters. Skissify's description must contain exact keywords developers use: "hand-drawn", "floor plan", "JSON", "headless", "no Chromium", "architectural". The hand-drawn + headless combination has zero competition in either PulseMCP or the official registry (confirmed via search).
+
+**Threat assessment: NEUTRAL — large ecosystem validates market, discovery still winnable with right keywords**
+
+---
+
+### Sketch2scheme + Diagramming AI — New Adjacent Competitors (LOW, NEWLY TRACKED)
+
+**Sources**: sketch2scheme.com, theresanaiforthat.com/s/sketch+to+diagram+converter/, diagrammingai.com, toolify.ai, verified 2026-04-03
+
+Two adjacent competitors not previously tracked:
+
+**Sketch2scheme** (sketch2scheme.com):
+- Uploads photo of hand-drawn sketch → AI extracts nodes/connections → outputs digital diagram
+- Completely **opposite direction** to Skissify (image→JSON vs JSON→image)
+- Free, no credits required — may capture the "digitize my whiteboard" user
+- Listed on multiple AI tool directories (There's An AI For That, Toolify)
+
+**Diagramming AI** (diagrammingai.com):
+- Natural language → Excalidraw-native output
+- Added Excalidraw format recently — closer to Skissify's output format
+- No hand-drawn control, no JSON-first input, no architectural elements
+
+**For Skissify**: Neither competes for the exact "programmatic JSON → hand-drawn SVG" niche. Sketch2scheme is the reverse workflow. Diagramming AI is NLP-first (not agent-native JSON). However, Sketch2scheme proves demand for the hand-drawn aesthetic in both directions — worth monitoring for potential partnership (Sketch2scheme digitizes; Skissify renders).
+
+**Threat assessment: LOW (Sketch2scheme), LOW-MEDIUM (Diagramming AI — Excalidraw output overlap)**
+
+---
+
+### Google Stitch Pricing — Currently Free (350 gen/mo), Race-to-Zero Risk (WATCH)
+
+**Sources**: nxcode.io/resources/news/google-stitch-pricing-plans-complete-guide-2026, verified 2026-04-03
+
+Google Stitch is currently **100% free** at 350 generations/month. No paid tier announced yet. For polished UI/mockup generation, this creates a "why pay for anything?" comparison risk in the design tool category.
+
+**For Skissify**: Stitch is free for polished visual UI generation. If developers use Stitch for polished mockups and Skissify for hand-drawn spatial/architectural output, these are complementary (different aesthetics). The risk: if Stitch adds hand-drawn output mode (currently zero aesthetic overlap), it becomes a direct threat backed by Google infrastructure. No indication of this direction.
+
+**Stitch's current limitations vs. Skissify**: No JSON-spatial input, no architectural elements, requires Stitch's UI (not headless), no wobble/humanness controls. 350 gen/month cap applies to all users.
+
+**Threat assessment: WATCH (free pricing is a signal; architectural divergence protects Skissify's niche for now)**
+
+---
+
+### Updated Competitor Matrix (Run #121 — Friday April 3, 18:35)
+
+| Tool | Status (2026-04-03 18:35) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Excalidraw official MCP** | 26 tools, visual feedback loop, Claude Connectors, Custom AI Tokens (Feb 2026) | NO | YES | NO | **YES (official, 26 tools)** | **HIGH** |
+| **Google Stitch** | MCP+SDK April 2, 2026. **Free (350 gen/mo)**. Design-to-code, voice canvas. | NO | NO (polished) | YES | YES | **MEDIUM** |
+| **Frame0** | MCP server updated Jan 26, 2026. "Vibe wireframing". Desktop app. | NO (desktop) | YES | YES (desktop) | YES | **MEDIUM-HIGH** |
+| **Mermaid official MCP** | Official server at mermaid.ai. PNG rendering, token auth. | YES (text-first) | NO | YES | YES | **MEDIUM** |
+| **Draw.io** | MCP added Feb 2026. 700+ enterprise icons. | NO | NO | Partial | YES | **MEDIUM-HIGH** |
+| **Diagramming AI** | NLP→Excalidraw output. No JSON-first, no architectural. | NO | NO | YES | Unknown | **LOW-MEDIUM** |
+| **Sketch2scheme** | Photo of sketch → digital diagram. Reverse direction. Free. | NO (reverse) | N/A | YES | NO | **LOW** |
+| **excalidraw-render MCP** | Headless Chromium. 3s first render. Community tool. | YES (Chromium) | YES | NO | YES | **MEDIUM** |
+| **tldraw (re-launch)** | Founder teasing (Substack). SDK $6K/yr. | NO (current) | NO | YES | NO | **WATCH** |
+| **Google Stitch** | Free 350 gen/mo. No April update detected. | NO | NO (polished) | YES | YES | **MEDIUM** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Zero Chromium. Sub-100ms. Architectural elements. MCP Registry: **ABSENT (CRITICAL × 22)**. Claude Connectors: **ABSENT (CRITICAL)**. | **YES (only Chromium-free)** | **YES (tunable)** | **YES (only one)** | YES (headless) | Uncontested |
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #120 (Friday April 3, 17:27 Stockholm)
 
 ### Status: 5 topics researched. KEY FINDINGS: **Google Stitch MCP server/SDK posted April 2, 2026** — design-to-code, infinite canvas, MCP-enabled; first concrete post-launch activity from Google's design AI. **Frame0 confirmed MCP plugin for "vibe wireframing"** — hand-drawn wireframe + AI agent integration now live, elevating it from MEDIUM to MEDIUM-HIGH. **Anthropic Claude Marketplace** (beyond Connectors) launched March 6, 2026 — full third-party app marketplace with GitLab, Lovable, Replit, Snowflake; Feb 24 brought 12 new MCP connectors + private enterprise marketplaces. **Excalidraw+ adds Custom AI Tokens** (Feb 2026) — enterprises can use own OpenAI/Claude API keys for AI features, reduces vendor lock-in concern. **No new "headless hand-drawn JSON API" competitor found** — Skissify's specific niche uncontested for 21st consecutive run. MCP registry absence now confirmed as primary blocking factor by multiple search angles.

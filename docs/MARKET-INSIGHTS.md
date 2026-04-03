@@ -6631,3 +6631,46 @@ Miro at $10-20/user/month now has an MCP server. Developers who encounter Miro v
 
 ---
 
+
+## 2026-04-03 (Evening) — MCP Vendor-Neutral Status + Discovery Competition Insights
+
+**Date**: April 3, 2026 (Run #121, 18:35 Stockholm) | **Sources**: anthropic.com/news/donating-the-model-context-protocol, pulsemcp.com/servers, nxcode.io, InfoQ April 2026
+
+---
+
+### MCP Is Now Infrastructure — Not a Bet on Anthropic
+
+Anthropic donated MCP to the Agentic AI Foundation. The protocol is now vendor-neutral. Pinterest, MuleSoft, and Google Cloud all have production MCP deployments in early 2026. This removes the final procurement objection for enterprise customers: "we don't want to depend on Anthropic."
+
+**EUR 2/mo implication**: Developers who were waiting to see if MCP "won" now have their answer. Anyone building agent pipelines is committing to MCP. Skissify's MCP server is infrastructure, not a feature. The EUR 2/mo price for API access should be framed as "infrastructure pricing" not "app pricing." Compare to: database hosting ($5-20/mo), email API (usage-based), storage (per GB). These feel natural. "Sketch rendering infrastructure: EUR 2/mo" fits the same mental model.
+
+**Pricing page copy implication**: Replace "Pro Plan" framing with "API Access" framing for the developer segment. "EUR 2/mo API access" converts differently than "EUR 2/mo Pro plan."
+
+---
+
+### 11,180 Servers = Discovery Is Now a Product Problem
+
+PulseMCP indexes 11,180+ MCP servers. The official Anthropic registry has ~2,000. The delta (~9,000 servers) is noise developers have to filter through. This means:
+
+1. Being in the **official registry** is now a quality badge, not just visibility
+2. The registry description text is ranked by keyword relevance
+3. "Hand-drawn", "floor plan", "architectural", "headless", "no Chromium" are all zero-competition terms in the registry — Skissify owns them on day 1
+
+**EUR 2/mo implication**: Discovery via MCP registry is the highest-intent acquisition channel. The user who finds Skissify via "hand-drawn sketch" search in the MCP registry has zero alternatives at this price point. The registry listing IS the sales funnel for this segment. Invest in the 200-word listing description as much as the pricing page.
+
+---
+
+### Updated EUR 2/mo Trigger Hierarchy (Run #121 additions)
+
+| Rank | Trigger | New insight |
+|------|---------|-------------|
+| 1 | Pipeline blocked at quota | Unchanged — highest intent |
+| 2 | Watermark visible to client | Unchanged |
+| 3 | MCP registry discovery | **Elevated** — 11k+ servers makes official registry listing a quality signal; discovery converts higher |
+| 4 | "Infrastructure pricing" frame | **New** — MCP vendor-neutral = developer budgets treat MCP tools as infrastructure, not apps; EUR 2 fits infra budget categories |
+| 5 | Annual framing EUR 19.99/yr | Unchanged |
+| 6 | Patronage | Unchanged — weakest trigger |
+
+**New action**: Update pricing page copy to use "API access" language for the developer tier, not "Pro plan." Test: "Get API access — EUR 2/mo" vs "Upgrade to Pro — EUR 2/mo."
+
+---
