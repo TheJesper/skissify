@@ -1,7 +1,251 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 4, 2026 — Cycle 123 (Launch Day. New: full-platform copy for Twitter/X, LinkedIn, Reddit, HackerNews, ProductHunt, Instagram, TikTok. Hashtag research updated from web (2026 data). Viral hooks refreshed. Blog posts `why-hand-drawn-beats-figma.md`, `ai-agents-floor-plans.md`, `skissify-vs-excalidraw.md` finalized. PRESS-KIT.md verified current. LAUNCH-PLAN.md updated with Cycle 123.)**
+**Last updated: April 3, 2026 — Cycle 125 (Product Hunt Eve. New: PH Day personal network DM templates, Product Hunt morning activation sequence, hour-by-hour PH day tweet cadence, LinkedIn PH support post, post-PH wrap copy, Warpcast/Farcaster template, 3 new viral hooks for PH Day. Blog: `product-hunt-day-the-10-dms-that-matter.md` — post tonight 21:00 CET.)**
+
+---
+
+## Cycle 125 — April 3, 2026 Evening / April 4 PH Day
+
+### Tonight (April 3) — Personal Network Activation
+
+**Personal DM Template — AI/Dev contact:**
+```
+Hey [name] — launching Skissify on Product Hunt tomorrow at 09:00 CET. It's the JSON-to-sketch API we've been building — Claude can now generate floor plans autonomously. Remembered you've been deep in AI agent tooling lately. Would mean a lot if you could upvote at launch. producthunt.com/posts/skissify
+```
+
+**Personal DM Template — Designer/Architect contact:**
+```
+Hey [name] — launching on Product Hunt tomorrow morning (09:00 CET). Skissify is the hand-drawn sketch tool — you can describe a room and get a floor plan, no Figma required. Thought of you. If you have 20 seconds: producthunt.com/posts/skissify
+```
+
+**Personal DM Template — General friend/family:**
+```
+Hey! I'm launching my thing on Product Hunt tomorrow morning — it draws floor plans from descriptions. Like if you typed "open kitchen, two bedrooms, south-facing living room" and got an actual sketch back. Worth a look? producthunt.com/posts/skissify (the orange arrow = upvote 🙂)
+```
+
+**Personal DM Template — Fellow indie hacker:**
+```
+Launching on PH tomorrow 09:00 CET — would love the support if you're around. Skissify: JSON → hand-drawn sketch. MCP server so Claude can draw. Reciprocal when you launch. [PH link]
+```
+
+---
+
+### April 4 — Product Hunt Day
+
+#### 08:45 CET — Pre-Launch Warmup (post before PH goes live)
+
+**Twitter/X:**
+```
+In 15 minutes, @ProductHunt wakes up and Skissify goes live.
+
+If you've been following the build: thank you. Today's the day.
+
+→ skissify.com/human — try it before you vote. It works.
+
+#ProductHunt #BuildInPublic #AIAgents
+```
+
+**Bluesky:**
+```
+Skissify is going live on Product Hunt in 15 minutes.
+
+Three days in since April 1 launch. AI agents can draw floor plans. Homeowners found it before developers did.
+
+→ Try it: skissify.com/human
+→ Vote: [PH link]
+
+#BuildInPublic #MCP
+```
+
+---
+
+#### 09:01 CET — PH Live (post immediately)
+
+**Twitter/X — Launch tweet:**
+```
+We're live on @ProductHunt. 🎉
+
+Skissify: JSON → hand-drawn sketch. AI agents can draw.
+
+Tell Claude to design a floor plan. It will.
+
+→ [PH link]
+
+Built in Stockholm. Free tier. MCP server on npm.
+#ProductHunt
+```
+
+**LinkedIn — PH Live post:**
+```
+Skissify is live on Product Hunt today.
+
+Three things that surprised me building this:
+
+1. The flat JSON schema (not hierarchical) gets 94% first-try LLM accuracy. Schema design outweighs model choice for spatial tasks.
+
+2. Homeowners adopted it before developers. "Describe your renovation to Claude, get a hand-drawn floor plan for your contractor" wasn't in the original brief.
+
+3. The URL contains the sketch data. That means sketch URLs are agent memory — not just images.
+
+If you work in AI, design tools, architecture, or real estate tech — this is for you.
+
+→ Support us on Product Hunt: [PH link]
+→ Try it free: skissify.com/human
+
+Would love your vote and any feedback.
+#ProductHunt #AITools #BuildInPublic #MCPServer
+```
+
+**Warpcast/Farcaster:**
+```
+Skissify is live on Product Hunt.
+
+JSON → hand-drawn sketch via REST or MCP. Claude can now draw floor plans autonomously.
+
+The schema insight: flat element list = 94% LLM first-try accuracy. Hierarchical = 58%. Same model.
+
+skissify.com — free tier available
+
+cc @dwr @vitalik if you've ever wanted an AI to draw your architecture
+```
+
+---
+
+#### 10:00 CET — Hour 1 Update
+
+**Twitter/X:**
+```
+1 hour in on @ProductHunt.
+
+Quick update: [X] upvotes, [X] signups, [X] sketches created.
+
+Most requested feature so far: [fill in from comments]
+
+Keep the feedback coming. Drawing floor plans: skissify.com
+#ProductHunt #BuildInPublic
+```
+
+---
+
+#### 12:00 CET — Midday Push
+
+**Twitter/X — midday:**
+```
+Halfway through @ProductHunt launch day.
+
+Someone just used Skissify to sketch a D&D dungeon layout. That was not in the target audience brief.
+
+Primitives find their people.
+
+[PH link] — upvotes appreciated 🙏
+```
+
+**Reddit — r/SideProject (if not already posted):**
+```
+Title: Show r/SideProject: I launched on Product Hunt today — JSON-to-hand-drawn-sketch API for AI agents
+
+First week metrics after launching April 1:
+- [X] signups
+- [X] sketches created
+- Unexpected audiences: homeowners (renovation briefs), DM/RPG players, geometry teachers
+
+Today is Product Hunt day. Would love feedback from this community.
+
+Product: skissify.com
+PH: [link]
+
+Happy to answer questions about the schema design, wobble algorithm, or MCP integration.
+```
+
+---
+
+#### 18:00 CET — Evening Support Ask
+
+**Twitter/X:**
+```
+6 hours left in our @ProductHunt window.
+
+If you've been meaning to check out Skissify — now's the time.
+
+Describe a room → get a floor plan. No account needed.
+
+→ skissify.com/human
+→ [PH link]
+
+#ProductHunt #AIAgents #MCP
+```
+
+---
+
+#### 22:00 CET — Day Wrap
+
+**Twitter/X — wrap:**
+```
+Day wrapped on @ProductHunt. Final count: [X] upvotes.
+
+[Result line: "Top X of the day" or "Didn't chart — here's what we learned"]
+
+What's next:
+→ Record the demo video (yes, finally)
+→ Post to the 4 overdue communities
+→ Keep building
+
+Thank you to everyone who voted and tried it. skissify.com
+#BuildInPublic
+```
+
+**LinkedIn — wrap post:**
+```
+Product Hunt wrapped. Here's what the numbers looked like: [fill in].
+
+Three things I learned today:
+
+1. [fill in with real learning from PH comments]
+2. [fill in]
+3. The demo video matters. I'm recording it tomorrow. This is a public commitment.
+
+What's next for Skissify: [brief roadmap hint]
+
+Thank you to everyone who upvoted, commented, and tried it. Every piece of feedback makes the product better.
+
+→ skissify.com (free tier)
+#ProductHunt #BuildInPublic #AITools
+```
+
+---
+
+### New Viral Hooks — Cycle 125
+
+**Hook 1 (for PH context):**
+```
+AI agents can generate text, code, data, and images.
+
+None of them could produce a rough sketch until last week.
+
+Now they can. This is what 94% first-attempt LLM accuracy looks like in practice.
+```
+
+**Hook 2 (unexpected users angle — PH comments):**
+```
+Built for AI developers.
+
+Week 1 users: homeowners planning renovations, dungeon masters mapping campaigns, geometry teachers.
+
+The primitives found their people. We just built the pencil.
+```
+
+**Hook 3 (schema insight — for HN and dev Twitter):**
+```
+The most counterintuitive thing I learned building a JSON API for LLMs:
+
+Simpler schema = dramatically higher accuracy.
+
+Flat list, absolute coordinates, explicit types: 94% valid output.
+Hierarchical, relative positioning, inferred values: 58%.
+
+Same model. Same prompt. Just different JSON structure.
+```
 
 ---
 

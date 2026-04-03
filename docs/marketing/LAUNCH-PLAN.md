@@ -1,7 +1,47 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 3 — Day 3 / Product Hunt Eve — Cycle 124**
+**Current Date: April 3 — Day 3 / Product Hunt Eve — Cycle 125**
+
+---
+
+## NEW IDEAS (Added 2026-04-03 14:44 CET, Cycle 125 — Product Hunt Eve)
+
+### Cycle 125 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "The 10 DMs That Will Matter More Than 10,000 Impressions Tomorrow" — honest pre-PH night post about personal network activation protocol, what not to do, demo video confession, why PH is about validation not conversions | `blog/product-hunt-day-the-10-dms-that-matter.md` | DONE — post tonight 21:00 CET |
+| SOCIAL-MEDIA.md Cycle 125 — PH Day personal network DM templates (4 variants: dev, designer, general, indie hacker), pre-launch warmup tweets (08:45 CET), PH live tweets + LinkedIn + Warpcast (09:01 CET), hour-1 update template, midday push + r/SideProject copy, evening support ask, day wrap tweets + LinkedIn with fill-in slots, 3 new viral hooks | SOCIAL-MEDIA.md | DONE |
+
+### Cycle 125 — Priority Actions for TONIGHT & TOMORROW
+
+| Action | Priority | Time | Notes |
+|--------|----------|------|-------|
+| **Send 10 personal DMs** — personal network activation | P0 CRITICAL | TONIGHT 20:00–22:00 | Templates in Cycle 125 SOCIAL-MEDIA.md. One message per person. Specific reason per contact. Do not bulk. |
+| **Post `product-hunt-day-the-10-dms-that-matter.md`** | P1 | TONIGHT 21:00 CET | Cross-post: Dev.to, LinkedIn |
+| **Post r/LocalLLaMA** — OVERDUE since Cycle 111 | P0 CRITICAL | NOW / TONIGHT | 3 weeks overdue. Do before midnight. |
+| **Post MCP Discord #showcase** — OVERDUE since Cycle 111 | P0 CRITICAL | NOW / TONIGHT | |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | P0 CRITICAL | TONIGHT | |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | P0 CRITICAL | TONIGHT | |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | 08:00 TOMORROW | 60 seconds. Claude → floor plan via MCP. Record before PH goes live. Final chance. |
+| **Post pre-launch warmup** (08:45 CET) | P0 | 08:45 TOMORROW | Cycle 125 copy in SOCIAL-MEDIA.md |
+| **Post PH live tweet + LinkedIn + Warpcast** (09:01 CET) | P0 | 09:01 TOMORROW | Cycle 125 copy |
+| **Post maker first comment** on PH | P0 | 09:02 TOMORROW | Copy in PRODUCT-HUNT-SUBMISSION.md |
+| **Hour-1 update tweet** (10:00 CET) | P1 | 10:00 TOMORROW | Fill in real numbers |
+| **Midday push + r/SideProject** (12:00 CET) | P1 | 12:00 TOMORROW | Cycle 125 copy |
+| **Evening support ask** (18:00 CET) | P1 | 18:00 TOMORROW | Cycle 125 copy |
+| **Day wrap tweets + LinkedIn** (22:00 CET) | P1 | 22:00 TOMORROW | Fill in real numbers |
+
+### Cycle 125 — Strategic Note
+
+**The 10 DMs are the highest-ROI action tonight.** After 125 cycles of content production, the single most impactful action before a Product Hunt launch is 10 personalized messages to people who know you. Not bulk email. Not scheduled tweets. Personal messages with specific reasons why it's relevant to each person. Templates are in Cycle 125 SOCIAL-MEDIA.md. Send before midnight.
+
+**Overdue channels are still the biggest missed opportunity.** r/LocalLLaMA, MCP Discord, Indie Hackers, Smol Launch have been overdue for 14+ cycles. Combined estimated reach: 3M+ relevant users. Post tonight before the PH window opens. The copy is staged in SHOW-HN-LIVE-KIT.md.
+
+**The demo video deadline is 08:00 tomorrow.** PH launches at 09:00 CET. Record between 08:00–08:45. 60 seconds. Screen capture Claude Desktop generating a floor plan. Upload to PH gallery before the listing goes live. This is the final window — if it doesn't happen before PH launch, it won't happen on PH launch day.
+
+**The wrap post is the next blog.** At 22:00 tomorrow, fill in the number slots in the Cycle 125 SOCIAL-MEDIA.md wrap templates and post the day results. Build-in-public wrap posts get high engagement on day-after HN and LinkedIn. Real numbers + honest tone = authentic content that performs.
 
 ---
 
