@@ -2,6 +2,85 @@
 
 ---
 
+## [2026-04-03] — Strategy Run #116 Actions (Friday April 3, 2026)
+
+### Context: Run #116 Key New Findings
+- **Google Stitch March 2026**: Shipped MCP server, infinite canvas, voice canvas, design-to-code pipeline. Polished UI direction. Design/diagram MCP category now filling — Skissify absent.
+- **tldraw 2026**: Image pipeline starter kit for AI workflows. Canvas-rendered shape indicators (25× faster). No MCP, no headless API. Stays LOW-STABLE threat.
+- **MCP ecosystem**: 10,000+ servers, 97M monthly SDK downloads, enterprise governance maturation. Google Stitch + Draw.io now both in MCP registry. Zero hand-drawn tools listed.
+- **Sub-$2 AI pricing normalized**: Zendesk $1.50–$2.00/resolution, Intercom $0.99/resolution at 8-figure ARR. EUR 2/mo Starter API tier now supported by market data.
+- **AI sketch tools**: Adobe Firefly, Canva, Uizard, PromeAI all in sketch-to-image/UI direction. JSON-to-hand-drawn pole still unoccupied (17th consecutive confirmation).
+
+---
+
+### Action 1 (CRITICAL — TODAY, 17th consecutive cycle): Submit to Official MCP Registry — Category Filling NOW
+
+**New urgency data: Google Stitch added an MCP server in March 2026. Draw.io added MCP in February 2026. The design/diagram category in the official MCP registry is activating. First-mover slot for "hand-drawn sketch tool" is still open but the window is narrowing every month.**
+
+**What changes if you do this today vs. next month**: Once a competitor lists first in the hand-drawn/sketch category of the registry, downstream enterprise discovery (Kong, MACH Alliance) picks them up instead of Skissify. This is not recoverable easily.
+
+Steps:
+1. Go to `github.com/modelcontextprotocol/registry`
+2. Fork the repo, create `servers/skissify.json`:
+   ```json
+   {
+     "name": "skissify",
+     "description": "Headless JSON→hand-drawn SVG renderer. Floor plans, architecture, napkin diagrams. No Chromium. Zero cold start. MCP-native.",
+     "homepage": "https://skissify.com",
+     "pricing": "Free tier, EUR 5/mo Pro, EUR 0.005/render API",
+     "capabilities": ["svg-render", "json-schema", "headless", "architectural-elements"],
+     "schema": "https://skissify.com/schema/manifest.json"
+   }
+   ```
+3. Open PR: "Add Skissify — headless JSON→hand-drawn SVG, no Chromium, architectural elements"
+4. Implement `skissify.com/.well-known/mcp-server.json` (2 hours — enables auto-discovery)
+5. Once PR is open: email Kong Konnect partner team (konghq.com/partners) to request listing
+
+**Data point**: Google Stitch (a Google Labs tool) took until March 2026 to add MCP. Skissify has had MCP-compatible architecture since launch. The registration is the missing step.
+**Combined time: 3-4 hours. ROI: enterprise cascade across three registries.**
+
+---
+
+### Action 2 (HIGH — this weekend): Add EUR 2/mo Starter API Tier + Pricing Page Update
+
+**New market data**: Intercom's Fin AI Agent ($0.99/resolution) is at 8-figure ARR with 393% annualized growth. Zendesk AI is $1.50–$2.00/resolution. Sub-$2 per-action AI pricing is now the normalised entry point for AI workflow tools. Skissify's EUR 0.005/render pricing is 250× cheaper per unit — but there's no entry tier below EUR 5/mo.
+
+**The gap**: Pipeline developers who want to test Skissify in a CI/CD workflow before committing EUR 5/mo have two options: free tier (50 saves, no API access) or Pro at EUR 5/mo. There's no "try the API with 200 renders for EUR 2" option. This is conversion friction that Intercom and Zendesk's pricing validates removing.
+
+Steps:
+1. Add EUR 2/mo "Starter API" tier to pricing page:
+   - 200 renders/month via API
+   - No watermark on API output
+   - No web editor (API-only — differentiates from Pro)
+   - Single project
+   - Upgrade prompt at 180 renders: "You're 90% through your monthly renders. Pro includes 1,000."
+2. Add badge near pricing: **"Priced like the AI era, not the seat era. Pay per render, not per seat."**
+3. Add spend cap guarantee: "Monthly API overage capped at EUR 20 — we'll pause and ask before charging more."
+
+**Time: 2-3 hours. Converts pipeline developers who won't commit EUR 5 without testing.**
+
+---
+
+### Action 3 (HIGH — this week): Publish "Google Just Added an MCP Server to Stitch — Here's the Sketch Tool Missing From Every MCP Registry"
+
+**New signal**: Google Stitch shipped an MCP server in March 2026. This is news in the MCP/AI-dev community right now. Stitch is a polished-UI tool; it doesn't do hand-drawn. Skissify does. Publishing a post that acknowledges Google's MCP entry, maps the design tool landscape in MCP registries, and positions Skissify as the missing hand-drawn tool creates a real-time SEO and community opportunity.
+
+**Why this week specifically**: The Stitch MCP launch was one month ago. The developer community is still actively discussing it. A post now can rank for "MCP design tools" and "Stitch MCP alternative" searches while they're hot.
+
+Steps:
+1. Draft post: "Google Stitch Added MCP Support. Here's the Sketch Tool Still Missing From Every AI Registry."
+2. Structure:
+   - Lead: "In March 2026, Google Stitch became an MCP server. Draw.io was already there. Excalidraw is coming. The design tool category in MCP registries is filling up — except one slot: hand-drawn sketches."
+   - Map the MCP design landscape (Stitch = polished UI, Draw.io = technical diagrams, SVGMaker = clean SVG, Skissify = hand-drawn sketch)
+   - Show what a Skissify MCP call looks like in a Claude workflow
+   - CTA: "Skissify's MCP is live. We're submitting to the official registry this week."
+3. Publish to blog + post on r/mcp, r/ClaudeAI, HN (Watch HN timing), X
+4. Tags: `mcp`, `google-stitch`, `ai-agents`, `diagram-tools`, `hand-drawn`
+
+**Time: 2 hours to draft. High-leverage: rides Google's brand, fills a content gap, doubles as a commitment announcement for the registry submission (Action 1).**
+
+---
+
 ## [2026-04-02] — Strategy Run #115 Actions (Thursday April 2, 23:20 Stockholm)
 
 ### Context: Run #115 Key New Findings

@@ -2,6 +2,75 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #116 (Friday April 3, 2026)
+
+### Theme: Sub-$2 Per-Action AI Pricing Is Normalized. Google Stitch MCP. The JSON-to-Sketch Side Is Still Empty.
+
+#### What Makes Someone Pay EUR 2/mo for Skissify — Full Analysis
+
+**The core question: what triggers payment for a sketch tool at EUR 2/mo?**
+
+Five distinct payment triggers have emerged across research runs. This section consolidates them with updated 2026 context.
+
+**Trigger 1 — The Pipeline Developer (primary target)**
+"I have a CI/CD pipeline where an AI agent generates architecture diagrams as part of a documentation step. I need those diagrams to render headlessly, without spinning up a browser, without installing Puppeteer, with zero cold start. EUR 2 is less than the compute cost of running Chromium for 400 renders."
+
+*New 2026 context*: With Intercom ($0.99/resolution) and Zendesk ($1.50-$2.00/resolution) normalizing sub-$2 per-action AI pricing, EUR 2/mo for 200 renders is already below the per-unit pricing of comparable AI-action tools. This makes the EUR 2 entry point feel *cheap*, not cheap-looking.
+
+**Trigger 2 — The Draft Signaler (clearest willingness-to-pay)**
+"My client can tell the difference between a polished diagram and a sketch. A sketch tells them 'this is a concept, challenge it.' A Figma mockup tells them 'this is decided, approve it.' I pay EUR 2 to send the right signal. That single communication choice prevents expensive scope creep."
+
+*New 2026 context*: Google Stitch's March 2026 update (text-to-polished-UI) accidentally validates this trigger — as polished AI-generated outputs become commodity, the *hand-drawn aesthetic* becomes a deliberate differentiator. The more Stitch and Figma AI fill the "polished" end, the more valuable the "rough" end becomes. EUR 2 is the cheapest way to signal "we're still deciding."
+
+**Trigger 3 — The Agent-Output Curator (enterprise angle)**
+"I'm running 50 AI agents in production. Some generate architecture diagrams. I need consistent hand-drawn output so stakeholders treat them as drafts, not deliverables. EUR 2/mo per agent per project is noise-level budget."
+
+*New 2026 context*: The 10,000+ MCP server ecosystem and enterprise governance maturation (audit trails, SSO, tool stacks) means enterprises are actively curating their agent tool stacks. A EUR 2/mo Starter tier is below any procurement threshold — it can be approved with a credit card, no PO required.
+
+**Trigger 4 — The Sketch Return Leg (pipeline user)**
+"I use dAIgram/Sketch2scheme to digitize my whiteboard sessions into JSON. Then I need to re-render that JSON as a clean, tunable hand-drawn sketch for a client presentation that shouldn't look computer-generated. EUR 2/mo is trivial for the return leg of the pipeline I already use."
+
+*New 2026 context*: At least three active tools (dAIgram, Sketch2scheme, SnapDiagram) now serve the digitization direction. The market is demonstrating that sketch↔data pipelines are real workflows. The return leg (data→sketch) is served by exactly one tool.
+
+**Trigger 5 — The Integration User (highest lifetime value)**
+"I added the Skissify MCP to my Claude workspace. Now every architecture conversation I have with Claude can include a sketch. EUR 2/mo is so obviously worth it I never think about it."
+
+*New 2026 context*: WTP research confirms products with 5–10 integrations command 20–30% higher willingness to pay vs. zero-integration baseline. Each MCP integration makes this trigger available to a new audience segment. The MCP registry submission is not just a distribution action — it is a WTP uplift action.
+
+#### The EUR 2/mo Micro-Tier Decision Framework
+
+Prior analysis proposed a EUR 2/mo "Starter API" tier: 200 renders/month, no watermark on API output, single project. Updated analysis:
+
+**Arguments for adding EUR 2/mo tier:**
+- Intercom/Zendesk have proven <$2/action is viable at scale
+- Lowers trial friction for pipeline developers (who need to test before committing EUR 5)
+- 68 subscribers = break-even vs. fixed costs (EUR 135/mo)
+- Pipeline developers rarely stay at 200 renders/month — natural upgrade to Pro
+
+**Arguments against:**
+- Adds pricing complexity (three paid tiers instead of two: Free, Starter, Pro, Team)
+- EUR 5/mo Pro is already below the "expense report threshold" — friction is already low
+- Support overhead per customer doesn't scale with revenue at EUR 2/mo
+
+**Recommendation**: Add EUR 2/mo tier, but gate it on *API-only* use (no web editor, no public gallery, no team features). Pure pipeline use. This segments "I want to try the API in a pipeline" from "I want the full tool." Upgrade trigger is automatic: hit 200 renders or need the editor.
+
+#### Google Stitch MCP — Why It Accelerates Skissify's Urgency, Not Its Threat
+
+Google Stitch shipped an MCP server in March 2026. This is relevant not because Stitch competes with Skissify (it doesn't — different output, different direction), but because:
+
+1. Stitch's MCP entry validates that design tools belong in MCP registries
+2. Enterprise teams building MCP tool stacks will now search "design" and "diagram" in registries
+3. Stitch will appear. Draw.io will appear. Skissify will not appear.
+4. The absence of Skissify from the registry is no longer a "missed opportunity" — it's an active displacement risk as the category fills
+
+The right frame: Stitch's arrival is not a competitive threat. It is a deadline. Register before the design/diagram category in the MCP registry is settled.
+
+#### Key Number: 10,000+ MCP Servers, One Registry, Zero Hand-Drawn Tools
+
+The MCP ecosystem grew 10× in 12 months (1,000 → 10,000+ servers). Developer tools and business apps are the largest categories. Zero hand-drawn sketch tools are listed. The first-mover slot for "hand-drawn diagram tool" in the official MCP registry is still open as of Run #116. This is an anomaly that will not persist.
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #115 (Thursday April 2, 23:20 Stockholm)
 
 ### Theme: The SaaSpocalypse Is Skissify's Tailwind. Three Enterprise Registries. Excalidraw Goes AI-Native.

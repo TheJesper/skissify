@@ -2,6 +2,145 @@
 
 ---
 
+## [2026-04-03] — Automated Strategy Run #116 (Friday April 3)
+
+### Status: 7 topics researched. KEY FINDINGS: **Excalidraw** OSS release cadence continues, no headless API changes; Plus tier AI token feature (Claude/GPT/Gemini BYOK) confirmed from February remains current. **tldraw 2026**: Shape indicators now canvas-rendered (25× faster), new "Image pipeline" starter kit for AI image workflow nodes — nudging toward agent-compatible tooling but no MCP, no headless JSON API. **Google Stitch March 2026 overhaul**: Infinite canvas + voice canvas + MCP integration + Figma export — significant AI-native design pivot; design-to-code direction, NOT JSON-to-hand-drawn. **MCP ecosystem**: 10,000+ active servers, 97M monthly SDK downloads, enterprise focus (audit trails, SSO-auth, gateway governance) maturing in 2026 — Skissify still absent from registry. **AI sketch tools 2026**: Adobe Firefly, Canva, Uizard, PromeAI all targeting sketch-to-image or hand-drawn-to-UI conversion (opposite direction from Skissify). **SaaS EUR 2/mo micro-tier**: AI-resolution tools (Zendesk $1.50-$2.00/resolution, Intercom $0.99/resolution) are normalizing sub-$2 per-unit pricing for AI workflows — validates Skissify's per-render pricing. **Headless JSON→hand-drawn SVG with no Chromium: still uncontested** (Run #116 — 16th consecutive confirmation).
+
+---
+
+### Google Stitch March 2026 Overhaul — MCP Integration, Voice Canvas, Design-to-Code (LOW-MEDIUM THREAT, ESCALATING ATTENTION)
+
+**Sources**: tech-insider.org/google-stitch-ai-design-tool-march-2026-update/, developers.googleblog.com/stitch-a-new-way-to-design-uis/ (verified 2026-04-03)
+
+Google Stitch received a major overhaul in March 2026 — one month ago. New capabilities:
+- **Infinite canvas** with AI agent reasoning across entire project history
+- **Voice Canvas**: speak to canvas, AI agent responds, makes live design updates
+- **Multi-screen generation**: describe an app flow → 5 interconnected screens at once
+- **Design System Import**: upload design tokens (colors, typography, spacing) → Stitch conforms new screens
+- **MCP integration**: bidirectional connection with AI coding agents; Stitch is now an MCP server
+- **DESIGN.md system**: portable design rules file (similar to CLAUDE.md pattern)
+- **Figma export**: properly structured auto layouts with named component layers
+
+**For Skissify**: Google Stitch is now an MCP tool operating in the design-to-code direction. This is adjacent but not directly competing: Stitch generates polished UI from prompts/sketches and exports code/Figma. Skissify renders structured JSON as hand-drawn sketches. However, the MCP angle creates a subtle threat: Stitch could be used in agent workflows to generate UI previews, which overlaps with Skissify's "visual output for AI agents" positioning.
+
+**Key differentiation**: Stitch outputs polished, production-ready UI. Skissify outputs intentionally rough, hand-drawn sketches signaling "draft" or "concept" status. These are genuinely different signals in a workflow. A sketch communicates "decide this" — Stitch output communicates "build this."
+
+**New risk**: Stitch's DESIGN.md pattern (portable design rules) is functionally similar to Skissify's JSON manifest concept. Monitor whether Stitch adds any "rough sketch" mode to signal early-stage work.
+
+**Threat assessment: LOW-MEDIUM (different direction, but Google's MCP entry into design tools elevates the category — Skissify must be listed in registry before Stitch dominates MCP design tool searches)**
+
+---
+
+### tldraw 2026 — Image Pipeline AI Starter Kit, Canvas Performance (LOW-STABLE, MARGINAL MOVEMENT)
+
+**Sources**: tldraw.dev/blog/whats-new-2025, tldraw.dev/releases (verified 2026-04-03)
+
+tldraw updates confirmed in 2025-2026:
+- **Shape indicators (canvas-rendered)**: Selection outlines and hover states now use 2D canvas instead of SVG elements. Up to 25× faster rendering when selecting/hovering many shapes. Performance moat for large diagrams.
+- **Image pipeline starter kit**: New starter template for visual node-based AI image generation workflows — custom node shapes, typed port connections, pipeline regions. This nudges tldraw toward agent-compatible visual tooling.
+- **SDK 4.0 (November 2025)**: Five starter kits, accessibility improvements, revised licensing ($6,000/year commercial confirmed).
+- **Rich text in all shapes** (March 2025): Bold, italic, lists, links, code in text tools and shape labels.
+- **Cloud save/sync** (March 2025): Login to save and sync files on tldraw.com.
+- **No MCP integration found.** No headless JSON API. No hand-drawn output.
+
+**For Skissify**: The "Image pipeline" starter kit is the most notable movement — tldraw is positioning itself as a visual canvas for building AI pipelines. This is adjacent to Skissify's agent-compatibility story. However, tldraw's approach requires building in React with their SDK ($6K/yr), while Skissify provides a hosted API (EUR 5/mo). Completely different price/effort profiles. No threat change.
+
+**Threat assessment: LOW-STABLE (image pipeline direction is adjacent, but SDK cost and React requirement keep audiences separate)**
+
+---
+
+### Excalidraw 2026 — Feature Summary (MEDIUM-HIGH, AI Integration Deepening)
+
+**Sources**: plus.excalidraw.com/changelog, github.com/excalidraw/excalidraw/releases (verified 2026-04-03)
+
+Running feature summary — all confirmed Q1 2026:
+- **January 2026**: YouTube video syncing for presentations, QR codes for live session sharing, presenter view, dark mode redesign, new language support (Russian, Spanish, Arabic).
+- **February 2026**: Custom AI token support (OpenAI, Claude, Gemini, OpenRouter BYOK), radar charts, multi-series data visualization, Google Drive video embeds, presentation waiting room, interactive reaction system.
+- **No headless API changes** in any 2026 release. Chromium dependency unchanged.
+
+**For Skissify**: Excalidraw's AI token (BYOK) feature means AI-assisted sketching is now frictionless for Claude/GPT users inside the Excalidraw UI. This increases competition in the "human uses AI to sketch" mental category — but has zero impact on the "agent generates sketch in a pipeline" use case. The moat is unchanged: Excalidraw requires a browser, cannot run in CI/CD, cannot be called headlessly.
+
+**Threat assessment: MEDIUM-HIGH (stable — AI-native UX improving but Chromium moat confirmed intact)**
+
+---
+
+### AI Sketch Tool Landscape 2026 — Crowded at Sketch-to-Image, Empty at JSON-to-Sketch (VALIDATION)
+
+**Sources**: myarchitectai.com/blog/sketch-to-render-ai, zsky.ai/blog/best-ai-sketch-generators-2026, textify.ai/uizard-review-2026 (verified 2026-04-03)
+
+The "AI sketch" tool space in 2026 is dominated by:
+- **Adobe Firefly**: Text/photo → sketch in various styles (pencil, crosshatching, charcoal). Sketch-to-image direction.
+- **Canva Sketch to Life**: Rough sketch → generated image. Three-step: sketch, describe, generate.
+- **Uizard**: Hand-drawn wireframe photo → editable digital UI mockup. Sketch-to-UI direction.
+- **PromeAI**: Sketch → architectural render for architects. AI rendering direction.
+- **Starryai, Dzine.ai, Monica.im**: Image-to-sketch or text-to-sketch generators.
+
+**Pattern**: Every tool found converts in the direction of "rough → polished." None converts in the direction of "structured data → hand-drawn sketch." This remains the unoccupied pole.
+
+**For Skissify**: The crowding of sketch-to-image tools is inadvertent validation. Every tool that helps architects "turn their sketch into a render" creates the complementary need: how do you turn your structured data *back* into a sketch for a client meeting? Skissify is the return leg of that pipeline.
+
+**Threat assessment: VALIDATION (crowded in opposite direction confirms Skissify's niche remains uncontested)**
+
+---
+
+### MCP Ecosystem 2026 — 10,000+ Servers, Enterprise Governance Maturation (DISTRIBUTION SIGNAL)
+
+**Sources**: contextstudios.ai/blog/mcp-ecosystem-in-2026-what-the-v127-release-actually-tells-us, thenewstack.io/model-context-protocol-roadmap-2026/, use-apify.com/blog/mcp-standard-ecosystem-2026 (verified 2026-04-03)
+
+MCP ecosystem status as of April 2026:
+- **10,000+ active MCP servers** (up from 1,000+ in early 2025)
+- **97 million monthly SDK downloads** (Python + TypeScript combined)
+- **First-class client support**: Claude, ChatGPT, Cursor, Gemini, Microsoft Copilot, VS Code
+- **2026 focus**: Enterprise governance — audit trails, SSO-integrated auth, gateway behavior, config portability
+- **Upcoming**: Triggers/event-driven updates, streamed result types, deeper security/authorization, extensions ecosystem
+- **Google Stitch**: Added MCP server in March 2026 (design tool entering MCP registry)
+
+**For Skissify**: The 10× growth (1,000 → 10,000 servers) and enterprise governance maturation are critical context. Enterprise teams are building approved MCP tool stacks. Google Stitch just added an MCP server. Draw.io added MCP in February 2026. The design/diagram category in MCP is activating. Skissify needs to be in the registry before "hand-drawn diagram" and "sketch tool" searches surface zero results — or worse, surface a competitor.
+
+**Current MCP registry presence: ABSENT (17th consecutive cycle — CRITICAL)**
+
+**Threat assessment: CRITICAL DISTRIBUTION URGENCY (category is activating, window for first-mover in sketch/hand-drawn narrowing)**
+
+---
+
+### AI-Resolution Per-Unit Pricing — Sub-$2 Normal in 2026 (PRICING VALIDATION)
+
+**Sources**: truto.one/blog/how-should-i-price-integrations-in-my-saas-product-2026, getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models (verified 2026-04-03)
+
+New pricing benchmarks for AI-resolution tools:
+- **Zendesk AI agents**: $1.50–$2.00 per automated resolution
+- **Intercom Fin AI Agent**: $0.99 per resolution — scaled to 8-figure ARR with 393% annualized growth
+- **Integration willingness to pay**: Products with 5–10 integrations command 20–30% higher WTP
+- **Products with 11+ integrations**: 30%+ higher WTP vs zero-integration baseline
+
+**For Skissify**: Sub-$2 per-action AI pricing is now normalized and battle-tested at scale (Intercom, Zendesk). This directly validates Skissify's EUR 0.005/render API pricing and the EUR 2/mo micro-tier concept (200 renders = EUR 0.01/render). The willingness-to-pay uplift from integrations (20–30%) also validates the MCP integration investment — each MCP integration that makes Skissify discoverable in a new agent framework increases WTP.
+
+**Threat assessment: PRICING TAILWIND (sub-$2/action market now mature, validates every tier)**
+
+---
+
+### Updated Competitor Matrix (Run #116 — Friday April 3, 2026)
+
+| Tool | Status (2026-04-03) | Headless JSON→SVG | Hand-drawn output | No Chromium | MCP support | Skissify Threat |
+|------|---------------------|-------------------|-------------------|-------------|-------------|-----------------|
+| **Google Stitch** | March 2026 overhaul: infinite canvas, voice canvas, MCP server, DESIGN.md, Figma export. Design-to-code direction. | NO (UI-based) | NO (polished output) | YES | **YES (March 2026)** | **LOW-MEDIUM (MCP entry into design category — register before Stitch dominates searches)** |
+| **Excalidraw+** | Q1 2026: Custom AI BYOK tokens (Claude/GPT/Gemini), radar charts, video embeds, interactive presentations. No headless changes. | NO (requires Chromium) | YES | NO | YES (browser-based) | **MEDIUM-HIGH (AI integration deepening, Chromium moat holds)** |
+| **tldraw SDK** | 2026: Canvas shape indicators (25× faster), Image pipeline AI starter kit. $6K/yr commercial. No MCP. | NO | Partial (UI only) | YES (UI only) | NO | **LOW-STABLE** |
+| **Frame0** | Unchanged. MCP server on PulseMCP. Hand-drawn wireframes. Desktop app required. | NO (desktop) | **YES** | YES (desktop) | YES | **MEDIUM (closest architecture match, desktop-only)** |
+| **Draw.io (JGraph)** | MCP added February 2026. 700+ enterprise icons. In official MCP registry. | NO (requires runtime) | NO | Partial | YES | **MEDIUM-HIGH** |
+| **AI Diagram Maker** | MCP+JSON input since Jan 2026. Clean vector. | PARTIAL | NO | YES | YES | **MEDIUM** |
+| **Uizard** | Hand-drawn wireframe photo → digital mockup. No JSON input, no API. | NO (visual input) | NO (clean output) | YES | NO | **LOW (opposite direction)** |
+| **dAIgram** | Photo/sketch → JSON export. No API. Browser only. | NO (visual input) | NO | YES | NO | **MEDIUM (sketch↔JSON axis, opposite direction)** |
+| **Sketch2scheme** | Photo → Draw.io/Mermaid. No JSON input. No API. | NO (photo input) | NO | YES | NO | **LOW (validates gap)** |
+| **ToDiagram** | JSON/YAML/CSV → interactive diagrams. No hand-drawn. No API. | NO (web UI) | NO | YES | NO | **MEDIUM-STABLE** |
+| **InfraSketch.AI** | NL → architecture diagrams. Free. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM (same audience)** |
+| **Napkin.ai** | $12/mo. Text → polished diagrams. No JSON. No hand-drawn. | NO | NO | YES | NO | **MEDIUM-STABLE** |
+| **SVGMaker MCP** | Text → clean SVG via MCP. No hand-drawn, no JSON schema. | NO (text-prompt) | NO | YES | YES | **LOW-MEDIUM** |
+| **svg2roughjs** | OSS: SVG → hand-drawn. No hosted API, no MCP. | NO (library) | YES (library) | YES | NO | **LOW (validates niche)** |
+| **Skissify** | Headless JSON→hand-drawn SVG: zero Chromium, instant cold start, uncontested. MCP Registry: **ABSENT (CRITICAL × 17)**. | **YES (only one)** | **YES** | **YES** | **YES (headless)** | Uncontested |
+
+---
+
 ## [2026-04-02] — Automated Strategy Run #115 (Thursday April 2, 23:20 Stockholm)
 
 ### Status: 5 topics researched. KEY FINDINGS: **Excalidraw+ 2026** shipped custom AI token support (Claude, OpenAI, Gemini) + radar charts + Google Drive video embeds — MEDIUM-HIGH threat confirmed, Chromium moat holds, no headless API. **SaaSpocalypse confirmed**: $285B in SaaS market cap evaporated; seat-based adoption dropped 21%→15% YoY; 2.3× churn for seat-only models — Skissify's per-render model is now the *safe* choice, not the risky one. **Kong MCP Registry for Enterprise** launched — third enterprise discovery vector after modelcontextprotocol.io registry and MACH Alliance; Kong governs tool stacks for enterprise teams. **Frame0 unchanged** — still requires desktop app, no headless API, still MEDIUM threat. **Official MCP Registry now live** at registry.modelcontextprotocol.io with subregistries/enterprise structure. **Headless JSON→hand-drawn SVG with no Chromium: still uncontested** (Run #115 — 15th consecutive confirmation).
