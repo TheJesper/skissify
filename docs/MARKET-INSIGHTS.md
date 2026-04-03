@@ -2,6 +2,53 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #124 (Saturday April 4, 00:16 Stockholm)
+
+### Theme: Draw.io MCP is the First Headless Programmatic Competitor — But Hand-Drawn Niche Holds; EU Pricing Sensitivity + 7-Day Onboarding = Conversion Formula
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #124 Synthesis
+
+Run #124 adds two new conversion levers and clarifies the competitive positioning against the first real headless programmatic diagram competitor (Draw.io MCP).
+
+**1. Draw.io MCP (JGraph, Feb 3 2026) crystallizes the hand-drawn positioning more sharply than any previous competitor.** Draw.io's official headless MCP generates polished, professional XML/SVG diagrams — exactly what enterprises need for system documentation. Skissify's output is intentionally the opposite: hand-drawn, wobbly, human. The payment trigger for EUR 2/mo is now simpler to frame: "I want it to look like a sketch, not like a Visio export. That's the entire difference." Developers who land on Draw.io MCP and find it outputs business-diagram aesthetics will search for the sketch version. Skissify needs to be discoverable at that moment (MCP registry, "hand-drawn" keyword in all listings).
+
+**2. European pricing sensitivity (20-25% higher than US) + trial-to-paid data (32-56% for top performers) = a concrete conversion formula.** For a EUR-denominated SaaS targeting EU developers:
+- The micro-tier (EUR 2/mo) removes the "too expensive for a hobby tool" objection that kills EU conversions
+- The 7-day time-to-value target means Day 1 = first render in their pipeline, Day 3 = first MCP call, Day 7 = first architectural element (floor plan component)
+- Trial-to-paid top performers use AI-native onboarding — for Skissify this means an onboarding sequence that generates example sketches *for the user's specific use case* (not generic demos)
+
+**Updated payment trigger model (Run #124):**
+- EUR 0 → EUR 2/mo: triggered by hitting free render limit OR by seeing the "what's in Pro" explanation on Day 3 of onboarding email — not by feature discovery alone
+- EUR 2/mo → EUR 5/mo: triggered automatically by usage ceiling (not a manual upgrade decision)
+- EUR 2/mo → credit pack (EUR 5 one-time): escape hatch for EUR-sensitive EU developers who distrust recurring charges; "just buy 2,000 renders, no subscription"
+- "Hand-drawn vs polished" decision moment: developer evaluating Draw.io MCP (polished output) vs Skissify (hand-drawn output) — Skissify needs to be in the same discovery path (MCP registry search terms, "hand-drawn diagram API" SEO)
+
+**New framing validated by Draw.io MCP launch**: "Draw.io MCP generates diagrams that look like you built them in Confluence. Skissify generates diagrams that look like you sketched them on a napkin. The use cases are different. Pick the one that matches what you're trying to communicate."
+
+#### The "Building Architecture" vs "Software Architecture" Naming Confusion — Must Fix
+
+Microsoft's Azure Architecture Review Agent using Excalidraw for "architecture diagrams" (software systems) surfaces a naming confusion risk: Skissify's architectural elements (floor plans, doors, windows, stairs) target building architecture, not software architecture. In search results and MCP registries, the keyword "architecture diagram" now means software system diagrams (boxes + arrows). Skissify must use more specific keywords: **floor plan, building sketch, spatial layout, room dimensions** — not "architecture diagram" which is dominated by the software engineering use case.
+
+**Keyword implication for MCP registry, SEO, and all listings:**
+- Use: "floor plan generator", "building sketch", "hand-drawn floor plan", "spatial layout API", "room dimensions sketch"
+- Avoid: "architecture diagram" (software-dominated), "system diagram" (polished/enterprise space)
+
+#### 7-Day Onboarding = The Missing Conversion Lever
+
+No previous run has surfaced this specifically. Top SaaS performers (32-56% trial-to-paid) use a structured 7-day onboarding with AI-native personalization. For Skissify, this means:
+
+| Day | Email/Action | Goal |
+|-----|-------------|------|
+| Day 0 (signup) | Instant: "Your first sketch in 60 seconds" — single curl command, no account setup | First render = trust |
+| Day 1 | "Here are 5 things people sketch with Skissify" — floor plan, napkin diagram, wireframe, D&D map, network diagram | Discovery of use cases |
+| Day 3 | "Add Skissify to your Claude agent in 3 lines" — MCP setup tutorial | Integration = stickiness |
+| Day 5 | "Your free limit: you've used X of 50 saves. Upgrade for EUR 2/mo" — usage-triggered | Conversion trigger |
+| Day 7 | "A sketch from your first week" — auto-generated recap of what they made | Emotional attachment |
+
+This sequence should be built before Pro tier launch, not after.
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #123 (Friday April 3, 23:07 Stockholm)
 
 ### Theme: tldraw MCP Confirmed Interactive-Only, Diagramming Market $12B by 2035, EUR 2/mo Tier Conversion Logic Validated

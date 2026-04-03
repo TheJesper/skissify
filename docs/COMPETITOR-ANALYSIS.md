@@ -2,6 +2,83 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #124 (Saturday April 4, 00:16 Stockholm)
+
+### Status: 6 topics researched. KEY FINDINGS: **Draw.io official MCP (@drawio/mcp, JGraph, Feb 3 2026)** — headless XML diagram generation from agents, no browser required, 10,000+ shapes — but outputs polished/professional SVG, NOT hand-drawn. Closest programmatic competitor ever found, different aesthetic niche. **Microsoft Azure Architecture Review Agent (open-source, Feb 2026)** uses Excalidraw MCP to auto-generate arch diagrams from YAML/Markdown — corporate toolchain coalescing around Excalidraw for agent diagram output. **WorkOS publishes Excalidraw agent skill** — agents can now self-describe via diagrams; all Excalidraw-bound, browser-dependent. **European SaaS pricing: EU customers 20-25% more price-sensitive than US** — validates EUR 2/mo micro-tier specifically for EU market. **Trial-to-paid conversion benchmark (2026): top performers reach 32-56%** with AI-native onboarding + 7-day time-to-value. **25th consecutive run: still no headless hand-drawn JSON API competitor confirmed.** CRITICAL carry-over: MCP Registry + Claude Connectors submission **still unconfirmed (Run #25 since first flagged).**
+
+---
+
+### Draw.io Official MCP (@drawio/mcp, JGraph, Feb 3 2026) — Headless Programmatic Diagrams, Polished Not Hand-Drawn (NEW THREAT: MEDIUM-HIGH)
+
+**Sources**: [jgraph/drawio-mcp GitHub](https://github.com/jgraph/drawio-mcp), [@drawio/mcp npm](https://www.npmjs.com/package/@drawio/mcp), [Draw.io MCP: Why It's Worth Using](https://thomasthornton.cloud/draw-io-mcp-for-diagram-generation-why-its-worth-using/), [Automating Infrastructure Diagrams with Draw.io MCP](https://medium.com/google-cloud/automating-mastering-infrastructure-diagrams-with-draw-io-mcp-and-antigravity-2839b78df143), verified 2026-04-04
+
+JGraph, the company behind draw.io/diagrams.net, released **`@drawio/mcp`** as an official npm package on February 3, 2026. Two deployment modes: **MCP Tool Server** (AI assistant generates Draw.io XML directly — no browser, no extension required) and **MCP App Server** (diagrams render as interactive iframes inline in AI chat).
+
+**Capabilities**: 10,000+ shapes searchable by keyword, generates editable XML/SVG directly, supports XML, CSV, and Mermaid.js input formats, CRUD tools for diagram elements. No Chromium dependency. No browser session. Generates diagrams in-process.
+
+**What this means**: Draw.io MCP is the first production-grade, officially-supported, truly headless programmatic diagram generation tool from a major player. It directly overlaps with Skissify's "agent generates a diagram without a browser" positioning — but with polished, professional, business-diagram aesthetics (boxes, arrows, enterprise shapes).
+
+**Critical distinction**: Draw.io output = polished/professional flowcharts and architecture diagrams. Skissify output = hand-drawn sketches with wobble, humanness, architectural elements (windows, doors, stairs). The aesthetic is fundamentally different. BUT: developers searching for "headless agent diagram MCP" will find Draw.io first (established brand, 10K shapes, JGraph credibility). Skissify must differentiate on aesthetic AND use case (ideation/sketching vs documentation/architecture).
+
+**For Skissify**: This is the first real competitive pressure on the "headless agent diagram" positioning. Counter-move: lean harder into what Draw.io cannot do — hand-drawn aesthetic, floor plan architectural elements, tunable humanness. "When you want to look like you sketched it, not built it in Visio."
+
+**Threat assessment: MEDIUM-HIGH (first headless programmatic competitor; different aesthetic niche but same discovery surface)**
+
+---
+
+### Microsoft Azure Architecture Review Agent (Excalidraw MCP, Open Source, Feb 2026) — Corporate Toolchain Coalescing (ECOSYSTEM SIGNAL)
+
+**Sources**: [Stop Drawing Architecture Diagrams Manually — Microsoft](https://techcommunity.microsoft.com/blog/educatordeveloperblog/stop-drawing-architecture-diagrams-manually-meet-the-open-source-ai-architecture/4496271), [Azure-Samples GitHub](https://github.com/Azure-Samples/agent-architecture-review-sample), [Excalidraw Architect MCP PyPI](https://libraries.io/pypi/excalidraw-architect-mcp), verified 2026-04-04
+
+Microsoft published an open-source Architecture Review Agent (Azure-Samples) that automatically converts YAML files, Markdown design docs, or informal architecture descriptions → structured risk assessments + interactive Excalidraw diagrams. Built on Microsoft Agent Framework + Azure OpenAI + Excalidraw MCP. Two deploy paths: traditional web app or Microsoft Foundry Hosted Agent. Assesses SPOFs, scalability bottlenecks, security gaps, anti-patterns automatically.
+
+**Signal**: Microsoft shipping Excalidraw MCP as the diagramming layer of choice in a reference architecture agent means Excalidraw MCP is becoming the default enterprise choice for agent diagram output. Enterprise developers following Azure samples will adopt Excalidraw as the sketch/diagram standard. This is a distribution moat being built for Excalidraw.
+
+**For Skissify**: Enterprise architectural documentation is going to Excalidraw (browser-based, interactive). Skissify's architectural element niche (floor plans, doors, windows, stairs, dimensions) is NOT the same use case as architecture review diagrams (system design, boxes + arrows). The naming similarity ("architectural") must be addressed in marketing to avoid confusion — Skissify is for building architecture (floor plans), not software architecture (system diagrams).
+
+**Threat assessment: LOW-MEDIUM (different use case; but validates agent-diagram ecosystem building around Excalidraw; Skissify must own the "building architecture" niche clearly)**
+
+---
+
+### WorkOS Excalidraw Agent Skills — Agents Describing Themselves Via Diagrams (ECOSYSTEM SIGNAL)
+
+**Sources**: [Use Excalidraw Skills So Your Agents Can Describe Themselves — WorkOS](https://workos.com/blog/excalidraw-skills-agents-describe-themselves), verified 2026-04-04
+
+WorkOS published a skill that allows agents to generate Excalidraw diagrams to describe their own capabilities, architecture, and decision trees. Agents produce structured .excalidraw JSON, handle arrow binding, color-coding, and semantic layout automatically. Not headless — requires Excalidraw canvas session.
+
+**For Skissify**: Confirms the "agents generating diagrams about themselves" use case is real and production-ready. Skissify's equivalent would be "agents generating floor plans of physical spaces they're reasoning about" — a more specific but defensible niche. The WorkOS pattern also validates the "agent skill" go-to-market: distributing Skissify as an agent skill (SKILL.md pattern) alongside MCP server.
+
+**Threat assessment: LOW (same ecosystem, different output; validates the agent-diagram market, not a direct threat)**
+
+---
+
+### European SaaS Pricing Sensitivity — EUR 2/mo Micro-Tier Validated for EU Market (PRICING UPDATE)
+
+**Sources**: [Europe vs USA: Adapting SaaS Pricing — Monetizely](https://www.getmonetizely.com/articles/europe-vs-usa-adapting-your-saas-pricing-to-regional-expectations), [SaaS Pricing Models 2026 — Revenera](https://www.revenera.com/blog/software-monetization/saas-pricing-models-guide/), [B2B SaaS Conversion Benchmarks 2026](https://www.saashero.net/competitor/b2b-saas-conversion-benchmarks-2026/), verified 2026-04-04
+
+European B2B SaaS customers show **20-25% higher price sensitivity** than US counterparts. Key behavioral differences: preference for more granular pricing tiers (not fewer), stronger preference for monthly over annual billing, and greater pricing transparency expectations. 2026 SaaS conversion benchmarks: top 10% convert 8-15% visitors to leads (industry avg 1.5%); trial-to-paid top performers: **32-56%** with AI-native onboarding + 7-day time-to-value strategy.
+
+**For Skissify**: A EUR-denominated micro-tier (EUR 2/mo) is directly calibrated for the European market's higher price sensitivity. The preference for granular tiers (more steps, smaller jumps) validates offering Free → EUR 2 Starter → EUR 5 Pro → EUR 12 Team vs a 3-tier US-style jump. The 7-day time-to-value target means Skissify needs an email onboarding sequence that delivers a "wow" moment by Day 7 at the latest — ideally Day 1 (first API render) and Day 3 (first MCP integration).
+
+**Threat assessment: POSITIVE — pricing architecture more validated for EU-first GTM; 7-day onboarding is the missing conversion lever**
+
+---
+
+### Updated Competitor Matrix (Run #124 — Saturday April 4, 00:16)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Draw.io official MCP** | `@drawio/mcp` Feb 3 2026 (JGraph). Headless XML/SVG generation. 10K+ shapes. No browser required. Polished output. | YES (XML/SVG, polished) | NO | YES | YES (official) | **MEDIUM-HIGH (NEW)** |
+| **Excalidraw official MCP** | 26 tools, Python FastMCP dual-stack, iterative refinement. Microsoft Azure Reference Agent uses it. Browser-dependent. | NO | YES | NO | YES (official, 26 tools) | **HIGH** |
+| **tldraw MCP App** | Official MCP App (March 2026). Interactive canvas. Community headless uses Chromium (5-8s cold start). SDK $6K/yr. | Partial (Chromium, 5-8s) | NO | NO (headless Chromium) | YES (official MCP App) | **MEDIUM** |
+| **Google Stitch** | Free 350 gen/mo. Sketch photos → polished UI mockups. MCP+SDK. | NO | NO (polished) | YES | YES | **MEDIUM** |
+| **Mermaid** | Text-to-diagram, huge dev adoption. No hand-drawn, no spatial control. | NO | NO | YES | Community | **LOW** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. | YES (native) | YES (tunable) | YES | YES | — |
+
+**25th consecutive run: no headless hand-drawn JSON API competitor found. Draw.io MCP is the closest entrant but occupies the polished/professional aesthetic, not hand-drawn.**
+
+---
+
 ## [2026-04-03] — Automated Strategy Run #123 (Friday April 3, 23:07 Stockholm)
 
 ### Status: 6 topics researched. KEY FINDINGS: **tldraw officially launched MCP App (March 2026)** — agents get interactive canvas, but headless rendering still uses Chromium (5-8s cold start); Skissify's zero-Chromium advantage confirmed. **Excalidraw MCP now has 26 tools + Python FastMCP dual-stack** — iterative agent refinement is their moat, not headless batch rendering. **Diagramming market projected $12.07B by 2035 (CAGR 16.88%)** from $2.17B in 2024 — Skissify's niche is riding a large wave. **MCP SDK hit 97M+ monthly downloads** — protocol adoption is mainstream infrastructure. **tldraw adds "Image Pipeline" AI starter template and agent manager architecture** — SDK deepening AI-native developer experience, not commoditizing it. **No new headless hand-drawn JSON API competitor — 24th consecutive run uncontested.** CRITICAL carry-over: MCP Registry + Claude Connectors submission **still unconfirmed (Run #24 since first flagged).**

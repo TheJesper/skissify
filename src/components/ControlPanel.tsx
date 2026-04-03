@@ -256,7 +256,26 @@ function ElementCoordEditor({
       { key: "w", label: "w" },
       { key: "h", label: "h" },
     ];
-  } else if (["window", "opening", "door-symbol", "door-slide"].includes(element.type)) {
+  } else if (["window", "opening"].includes(element.type)) {
+    // Windows and openings support two formats:
+    //   Legacy: x1/y1/x2/y2 (used by all presets)
+    //   New:    x/y/w/wall
+    // Detect which format this element uses and show the correct fields.
+    if (el.x1 != null || el.x2 != null || el.y1 != null || el.y2 != null) {
+      fields = [
+        { key: "x1", label: "x1" },
+        { key: "y1", label: "y1" },
+        { key: "x2", label: "x2" },
+        { key: "y2", label: "y2" },
+      ];
+    } else {
+      fields = [
+        { key: "x", label: "x" },
+        { key: "y", label: "y" },
+        { key: "w", label: "w" },
+      ];
+    }
+  } else if (["door-symbol", "door-slide"].includes(element.type)) {
     fields = [
       { key: "x", label: "x" },
       { key: "y", label: "y" },

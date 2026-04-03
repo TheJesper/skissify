@@ -2,6 +2,77 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #124 Actions (Saturday April 4, 00:16 Stockholm) — FOR SUNDAY APRIL 5
+
+### Context: Run #124 Key New Findings
+- **Draw.io official MCP (@drawio/mcp, JGraph, Feb 3 2026)** — first truly headless programmatic diagram MCP from a major brand; polished XML/SVG output (NOT hand-drawn); same discovery surface as Skissify in MCP registry; sharpens Skissify's hand-drawn positioning
+- **Microsoft Azure Architecture Review Agent (Excalidraw MCP, Feb 2026)** — corporate toolchain coalescing around Excalidraw for software architecture diagrams; naming confusion risk for Skissify ("architecture" = software vs building)
+- **European SaaS pricing: 20-25% higher price sensitivity than US** — EUR 2/mo micro-tier validated specifically for EU-first GTM
+- **Trial-to-paid top performers: 32-56%** with 7-day AI-native onboarding — 7-day email sequence is the missing conversion lever
+- **25th consecutive run: still no headless hand-drawn JSON API competitor found**
+
+---
+
+### Action 1 (CRITICAL — Sunday): MCP Registry + Claude Connectors Submission (Run #25 — Still Blocking)
+
+**Still the single most urgent unblocked task. Not confirmed complete through 24 previous runs.**
+
+Run #124 adds urgency: Draw.io's official MCP is now in the registry and discoverable for "headless diagram generation." Any developer searching the MCP registry for sketch/diagram tools will find Draw.io first. Skissify must be listed to appear alongside it.
+
+**Updated registry description** (include hand-drawn keywords to differentiate from Draw.io polished output):
+> "Skissify — headless JSON-to-hand-drawn-SVG. Zero Chromium. Sub-100ms cold start. The only MCP tool that renders sketches with tunable wobble and humanness — floor plans, napkin diagrams, wireframes, D&D maps. Architectural elements: doors, windows, stairs, room dimensions. Hand-drawn aesthetics for agents that want to look like they sketched it, not built it in Confluence."
+
+**Keywords**: hand-drawn, floor plan, sketch, JSON, wobble, napkin diagram, building layout, no Chromium, sub-100ms, SVG
+
+**What to do Sunday**:
+1. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/)
+2. Submit to Claude Connectors at [claude.com/connectors](https://claude.com/connectors)
+3. Ensure npm package for MCP server is published — if not, do that first
+
+**Success condition for Run #125**: "Skissify submitted to MCP registry. Link: ___"
+
+---
+
+### Action 2 (HIGH — Sunday): Fix the "Architecture" Keyword Confusion in All Listings
+
+**New from Run #124**: The word "architecture diagram" is now dominated by software engineering (Microsoft, Draw.io, Excalidraw all use it for boxes-and-arrows system diagrams). Skissify's architectural elements target building architecture (floor plans, doors, windows, stairs). Every listing, SEO title, and MCP description that says "architecture diagram" must be updated.
+
+**What to change Sunday:**
+
+Landing page hero / meta description — replace:
+- ❌ "Generate architecture diagrams with AI"
+- ✅ "Generate hand-drawn floor plans and sketches from JSON"
+
+MCP registry description — use:
+- ✅ "floor plan", "building sketch", "spatial layout", "room dimensions"
+- ❌ "architecture diagram", "system diagram"
+
+Blog post titles and SEO — audit for "architecture diagram" and replace with "floor plan" / "building sketch" where applicable.
+
+**Why now**: Draw.io MCP + Microsoft's Azure agent both use "architecture diagram" prominently. Skissify ranking for that keyword would attract the wrong audience (software engineers wanting box-and-arrow diagrams, not floor plans). Better to own "floor plan generator API" where there is zero competition.
+
+---
+
+### Action 3 (HIGH — Sunday): Draft 7-Day Onboarding Email Sequence Outline
+
+**New from Run #124**: Top SaaS performers achieve 32-56% trial-to-paid conversion with a structured 7-day AI-native onboarding sequence. This is the missing conversion lever — Skissify has no onboarding sequence currently.
+
+**What to do Sunday**: Draft the outline (not full copy yet) for a 7-email sequence:
+
+| Day | Subject line idea | Core value delivered |
+|-----|------------------|---------------------|
+| 0 | "Your first sketch in 60 seconds" | First render in their pipeline (curl command) |
+| 1 | "5 things people sketch with Skissify" | Discover use cases beyond floor plans |
+| 3 | "Add Skissify to your Claude agent (3 lines)" | MCP integration = stickiness |
+| 5 | "You've used X of 50 free renders" | Usage-triggered upgrade prompt |
+| 7 | "Your first week of sketches" | Emotional attachment via recap |
+
+**Output**: A `docs/marketing/ONBOARDING-SEQUENCE.md` file with subject lines, one-paragraph body copy draft, and CTA for each day. This becomes the brief for writing full emails when the Pro tier launches.
+
+**Why Sunday**: The 7-day sequence must exist before Pro tier goes live — conversion without onboarding is leaving 30%+ of potential paid users on the table.
+
+---
+
 ## [2026-04-03] — Strategy Run #123 Actions (Friday April 3, 23:07 Stockholm) — FOR SATURDAY APRIL 4
 
 ### Context: Run #123 Key New Findings
