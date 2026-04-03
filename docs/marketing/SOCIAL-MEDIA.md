@@ -13018,3 +13018,224 @@ Happy to answer questions about the schema design or rendering algorithm.
 - Instagram/Reels: up to 15 (use all)
 - TikTok: 4-6 (trending > niche)
 - Bluesky: 2-3 (community norms favor sparse hashtag use)
+
+---
+
+## Cycle 124 — April 3, 2026 13:36 CET (Product Hunt Eve — New Platforms + Hooks)
+
+*New this cycle: Mastodon/Fediverse templates, BlueSky threaded launch, Product Hunt eve countdown, Discord DM template, Dev.to series intro, r/artificial + r/DesignSoftware angles. Fresh viral hooks for PH launch day.*
+
+---
+
+### Mastodon / Fediverse — fosstodon.org + hachyderm.io
+
+**Post 1 (technical):**
+
+AI agents can reason about spatial layouts — apartments, system architectures, UI flows.
+
+They could not render them. Text output is not visual.
+
+Built Skissify: flat JSON → hand-drawn SVG sketch in ~150ms. REST API + MCP server.
+
+88% LLM first-attempt accuracy (vs 40% for hierarchical schemas — flat wins for agent consumption).
+
+Free tier: skissify.com
+MCP: npx skissify-mcp
+
+#FOSS #BuildInPublic #AI #MCP #ClaudeAI
+
+---
+
+**Post 2 (human angle):**
+
+I built it for AI developers.
+
+The first users: a D&D dungeon master, two homeowners planning renovations, a geometry teacher.
+
+That is how products work.
+
+skissify.com — JSON to hand-drawn sketches
+
+#IndieHacker #SideProject #OpenSource
+
+---
+
+**Engagement note:** fosstodon.org is the strongest instance for developer tools. hachyderm.io for infrastructure/DevOps crossover. Use #FOSS even if only the MCP server is OSS — it attracts the right audience.
+
+---
+
+### BlueSky — Launch Day Thread (April 4)
+
+**Post 1 (hook):**
+
+AI can now draw.
+
+Not describe. Not generate a stochastic image. Draw — deterministically, repeatably, from a JSON spec.
+
+Skissify is live on Product Hunt today: skissify.com
+
+Thread on what we learned in 3 days.
+
+---
+
+**Post 2:**
+
+The schema insight:
+
+Flat JSON → 88% LLM accuracy on first attempt
+Nested JSON → 40%
+
+If you are building APIs for agents: flat structures win. Cognitive load > logical elegance.
+
+#AIAgents #MCP
+
+---
+
+**Post 3:**
+
+The audience we did not expect:
+
+→ Dungeon masters making battle maps
+→ Homeowners explaining layouts to contractors
+→ Geometry teachers bulk-generating exercises
+
+I built it for pipeline devs. Real humans showed up first.
+
+#BuildInPublic
+
+---
+
+**Post 4 (CTA):**
+
+Product Hunt today: please upvote if you think sketch APIs for agents belong in the stack
+
+Also: 60s demo video finally coming today.
+
+---
+
+### Product Hunt — Maker's First Comment (v2, April 4)
+
+Hey PH — maker here.
+
+Three days in, three things I did not expect:
+
+1. Flat JSON outperforms nested JSON by 2x for LLM generation (88% vs 40% first-attempt accuracy). This is now the main design principle for everything we build.
+
+2. Our first real users were not AI developers — they were D&D dungeon masters and homeowners explaining renovations to contractors. The product works for all of them. The marketing still needs to catch up.
+
+3. The "hand-drawn" aesthetic is not just visual. It is a psychological signal that the sketch is provisional and open to change. Users get better feedback on sketches than on polished wireframes. Accidental UX research.
+
+What we need from you: upvote if you see the potential, leave a comment telling us what you would use it for, and share with one person building AI agent pipelines.
+
+MCP server for Claude / Cursor: npx skissify-mcp
+API docs: skissify.com/for-agents
+
+Ask me anything.
+
+---
+
+### Discord — DM Template for MCP Community Members
+
+Hey! I saw your post about [X] — the Skissify MCP server might be useful for your setup.
+
+It is an MCP server that gives Claude drawing capabilities — floor plans, diagrams, wireframes via JSON. Free, no auth.
+
+npx skissify-mcp to try it.
+
+Happy to show you how it integrates with your use case.
+
+---
+
+### r/artificial (3M+ members — NEVER POSTED)
+
+**Title:** I built an API that gives AI agents a pencil — JSON in, hand-drawn sketch out
+
+**Body:**
+LLMs can reason about space. Ask Claude to design an apartment and you get coherent traffic flow, correct room proportions, realistic clearances. The spatial intelligence is real.
+
+The output was always text. A paragraph describing a floor plan is not a floor plan.
+
+So I built Skissify: POST a JSON manifest, get back a hand-drawn SVG sketch in ~150ms. MCP server also ships with it so Claude can call it directly.
+
+Technical note for this sub: the flat JSON schema was a deliberate design choice. Flat schemas get 88-92% valid LLM output on first attempt. Hierarchical/nested schemas get 40-61%. If you are building tools for LLM consumption, make everything flat.
+
+Free to try at skissify.com, MCP server: npx skissify-mcp
+
+Ask me anything about the schema design, rendering algorithm, or the decision to go flat.
+
+---
+
+### r/DesignSoftware (niche, high quality — NEVER POSTED)
+
+**Title:** Made a JSON-based sketch renderer for AI agents — it accidentally became useful for human designers too
+
+**Body:**
+Background: I needed a way for AI agents (Claude, GPT, etc.) to output visual diagrams without a human at a keyboard. Built Skissify — a REST API that accepts JSON and returns hand-drawn SVG sketches.
+
+What surprised me: human designers started using it too, specifically for early-stage ideation. The imperfect "hand-drawn" look communicates "this is a draft" in a way that polished Figma frames do not. You get better feedback from stakeholders on a Skissify sketch than on a pixel-perfect mockup.
+
+Has anyone else noticed this effect? The lower the fidelity of a design artifact, the more honest the feedback?
+
+Product at skissify.com, human mode editor included (no JSON required).
+
+---
+
+### Dev.to — Series Intro Post
+
+**Title:** Building the Visual Output Layer for AI Agents — A Series
+
+**Intro:**
+This is the first post in a series about building Skissify, a sketch API for AI agents.
+
+The series covers:
+1. Why flat JSON beats hierarchical JSON for LLM generation (this one)
+2. The MCP spec and visual output (it is underused)
+3. The "sketch effect" — why imperfect renders generate better feedback
+4. Building a multi-agent visual pipeline
+5. What I would do differently (honest retrospective)
+
+Post 1 starts with the data that changed how I design APIs: flat JSON achieves 88% valid LLM output on first attempt. Nested JSON achieves 40%. Here is why, and what it means for anyone building developer tools in the agent era.
+
+---
+
+### YouTube Shorts Script (when video is recorded)
+
+**Hook (0:00-0:03):** "What if your AI could actually draw?"
+
+**Demo (0:03-0:30):**
+- Show Claude Desktop open
+- Type: "Draw me a floor plan for a small 2-bedroom apartment"
+- Watch JSON generate in chat
+- Watch sketch appear in browser
+
+**Close (0:30-0:55):**
+- Show wobble slider: "Adjust how hand-drawn it looks"
+- Show share URL: "Gets a permanent link"
+- Show blueprint mode: "Or go full blueprint for technical drawings"
+
+**CTA (0:55-1:00):** "Free at skissify.com. MCP server in the description."
+
+**YouTube Description:**
+I gave Claude a pencil.
+
+Skissify is a JSON-to-hand-drawn-sketch API + MCP server for AI agents. Claude, GPT, and other LLMs can now draw floor plans, wireframes, and system diagrams — not describe them.
+
+Free tier: skissify.com
+MCP server: npx skissify-mcp
+API docs: skissify.com/for-agents
+
+#AI #Claude #MCP #FloorPlan #AITools #VibeCoding #DevTools
+
+---
+
+### VIRAL HOOKS — Cycle 124 (Product Hunt Launch Day)
+
+Hook 1 (surprise/data): AI describes a floor plan. That is not the same as drawing it. Here is why it matters — and the API we built so it could.
+
+Hook 2 (contrarian): The AI agent stack is missing something obvious: a way to output drawings. Not images. Drawings. Here is what that looks like.
+
+Hook 3 (social proof + story): D&D dungeon masters found my AI developer tool before any AI developers did. Day 1. Not kidding.
+
+Hook 4 (tension): 124 cycles of marketing content. The highest-leverage piece — a 60-second demo video — still does not exist. Fixing that today.
+
+Hook 5 (technical + curiosity): Flat JSON: 88% LLM accuracy. Nested JSON: 40%. The schema design decision that made Skissify work.

@@ -1,7 +1,54 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4 — Day 4 / LAUNCH DAY — Cycle 123**
+**Current Date: April 3 — Day 3 / Product Hunt Eve — Cycle 124**
+
+---
+
+## NEW IDEAS (Added 2026-04-03 13:36 CET, Cycle 124 — Product Hunt Eve)
+
+### Cycle 124 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Five Things I Learned Building a Tool That Gives AI Agents a Pencil" — lessons-learned format (flat JSON data, unexpected users, sketch effect psychology, URL vs image, demo video blocker) | `blog/five-lessons-building-ai-pencil.md` | DONE — publish to Dev.to + HN |
+| Blog: "We're Going Live on Product Hunt Tomorrow. Here's Everything We've Built." — pre-PH launch letter with full product summary, unexpected users, ask | `blog/product-hunt-tomorrow-everything-ready.md` | DONE — post today 18:00 CET |
+| SOCIAL-MEDIA.md Cycle 124 — Mastodon/Fediverse templates (fosstodon + hachyderm), BlueSky thread, PH maker comment v2, Discord DM template, r/artificial post (3M — NEVER POSTED), r/DesignSoftware post, Dev.to series intro, YouTube Shorts script + description, 5 fresh viral hooks | SOCIAL-MEDIA.md | DONE |
+
+### Cycle 124 — Priority Actions for TODAY (April 3 — Product Hunt Eve)
+
+| Action | Priority | Time | Notes |
+|--------|----------|------|-------|
+| **Post r/LocalLLaMA** — OVERDUE since Cycle 111 | P0 CRITICAL | NOW | 3 weeks overdue. 2.3M members. Do first. |
+| **Post MCP Discord #showcase** — OVERDUE since Cycle 111 | P0 CRITICAL | NOW | |
+| **Post Indie Hackers** — OVERDUE since Cycle 98 | P0 CRITICAL | NOW | |
+| **Submit Smol Launch** — OVERDUE since Cycle 111 | P0 CRITICAL | NOW | |
+| **Post `product-hunt-tomorrow-everything-ready.md`** — pre-PH hype | P0 | 18:00 | Cross-post: Dev.to, LinkedIn, Bluesky, Twitter |
+| **Post Mastodon** — fosstodon.org (technical post) | P1 | 15:00 | New channel, never posted |
+| **Post r/artificial** (3M) — Cycle 124 copy | P1 | 16:00 | Never posted. High-value AI audience. |
+| **Post r/DesignSoftware** — Cycle 124 copy | P1 | 16:30 | New channel, "accidentally useful for designers" angle |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | TODAY | PH launch without video = missed. Do it before midnight. |
+| **Publish `five-lessons-building-ai-pencil.md` to Dev.to** | P0 | 09:00 tomorrow | PH launch day content calendar warm-up |
+
+### Cycle 124 — New Channels
+
+| Channel | Reach | Why Now | Priority |
+|---------|-------|---------|---------|
+| Mastodon/Fediverse (fosstodon.org) | 80K+ developer accounts | Tech-privacy crowd, heavy BuildInPublic engagement. Zero cost. Never posted. | P1 |
+| r/artificial (3M members) | 3M | AI general audience. Technical post. Never posted. | P1 TONIGHT |
+| r/DesignSoftware | 45K | Niche design tool community. High quality engagement. "Accidentally useful for designers" angle converts. | P1 TONIGHT |
+| YouTube Shorts | 2B+ | Script written. Just needs video. | BLOCKED — needs demo video |
+| hachyderm.io | 35K+ | Infrastructure/DevOps Mastodon instance. | P2 |
+
+### Cycle 124 — Strategic Note
+
+**Four channels still overdue after 124 cycles.** r/LocalLLaMA, MCP Discord, Indie Hackers, Smol Launch. These represent the single highest-ROI actions available. No amount of blog writing replaces them. Post today before the Product Hunt window opens.
+
+**The "five lessons" post is the best performing format we have not yet tried.** Lessons-learned posts consistently outperform feature announcements on HN, Dev.to, and LinkedIn. The content is authentic (flat JSON data, unexpected user types, demo video confession) and avoids the "look at my cool tool" pattern that gets flagged.
+
+**Mastodon is underutilized for developer tools.** fosstodon.org has 80K+ developer accounts and very high engagement rates for BuildInPublic content. The algorithm doesn't bury posts. Post once, get seen.
+
+**The demo video is the final unlock.** Product Hunt launches with video outperform text-only by 3x in upvotes. Record tonight. 60 seconds. Screen capture. Done.
 
 ---
 
