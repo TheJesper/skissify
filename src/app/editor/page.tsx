@@ -803,6 +803,10 @@ function EditorInner({
             onRemoveLayer={removeLayer}
             onRenameLayer={renameLayer}
             onSetElementLayer={setElementLayer}
+            onCopyStyle={copyStyle}
+            onPasteStyle={pasteStyle}
+            hasStyleClipboard={hasStyleClipboard}
+            onDuplicateSelected={() => { copySelected(); pasteElements(); }}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -989,6 +993,10 @@ function EditorInner({
             onRemoveLayer={removeLayer}
             onRenameLayer={renameLayer}
             onSetElementLayer={setElementLayer}
+            onCopyStyle={copyStyle}
+            onPasteStyle={pasteStyle}
+            hasStyleClipboard={hasStyleClipboard}
+            onDuplicateSelected={() => { copySelected(); pasteElements(); }}
           />
         </div>
       )}

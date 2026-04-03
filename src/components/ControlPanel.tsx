@@ -159,6 +159,8 @@ interface ControlPanelProps {
   onRenameLayer?: (layerId: string, name: string) => void;
   /** Called when selected elements are assigned to a layer */
   onSetElementLayer?: (layerId: string | undefined) => void;
+  /** Called to duplicate selected elements (copy + paste with offset) */
+  onDuplicateSelected?: () => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -770,6 +772,7 @@ export default function ControlPanel({
   onRemoveLayer,
   onRenameLayer,
   onSetElementLayer,
+  onDuplicateSelected,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -1050,12 +1053,29 @@ export default function ControlPanel({
               <span className="text-xs text-[#268bd2]">
                 {selectedCount} selected
               </span>
-              <button
-                onClick={onDeleteSelected}
-                className="ml-auto px-2 py-0.5 bg-red-900/50 hover:bg-red-800/60 text-red-300 rounded text-xs"
-              >
-                Delete
-              </button>
+              <div className="ml-auto flex items-center gap-1">
+                {onDuplicateSelected && (
+                  <button
+                    onClick={onDuplicateSelected}
+                    title="Duplicate selected elements (Ctrl+D)"
+                    className="px-2 py-0.5 bg-[#eee8d5] hover:bg-[#ddd8c5] text-[#586e75] rounded text-xs flex items-center gap-1"
+                  >
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="8" y="8" width="13" height="13" rx="2"/>
+                      <path d="M4 4h1a2 2 0 0 1 2 2v1"/>
+                      <path d="M4 12v1a2 2 0 0 0 2 2h1"/>
+                      <path d="M12 4h1a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    Dupe
+                  </button>
+                )}
+                <button
+                  onClick={onDeleteSelected}
+                  className="px-2 py-0.5 bg-red-900/50 hover:bg-red-800/60 text-red-300 rounded text-xs"
+                >
+                  Delete
+                </button>
+              </div>
             </div>
             {/* Coordinate editor — shown when exactly one element is selected */}
             {selectedCount === 1 && selectedElement && selectedElementIdx != null && onUpdateElement && (
