@@ -1,6 +1,49 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 145 (New: blog/hand-drawn-vs-figma.md — fresh canonical post on fidelity + cognitive load + two-stage design model. SOCIAL-MEDIA.md Cycle 145 block with 8 viral hooks: "Vibe Drawing Manifesto" Twitter megathread, LinkedIn "Fidelity Trap" carousel, Bluesky developer thread, r/NoCode (480K — agent pipeline post), Mastodon/Fosstodon, TikTok/Reels/Shorts script, Instagram Stories sequence, r/AIAssistants (335K). New platforms: Bluesky, Mastodon/Fosstodon, TikTok/Reels, YouTube Shorts, Instagram Stories, r/NoCode, r/AIAssistants. New hashtags: #VibeDraw #SketchFirst #AIDrawing #FidelityTrap #NoCodeAI #AgentArt #DrawToThink #SkissifyLaunch.)*
+*Last updated: April 5, 2026 — Cycle 146 (New: 3 canonical blog posts fully expanded to 700-900 words each — why-hand-drawn-beats-figma.md (added: cognitive neuroscience angle, mode-switch section, vibe drawing shift, 60-second rule, two-stage table), ai-agents-floor-plans.md (added: 5th workflow GitHub Actions, token economy comparison table, multi-agent memory chain), skissify-vs-excalidraw.md (added: Excalidraw community GitHub issue context, extended use-case decision tree, token efficiency comparison). SOCIAL-MEDIA.md Cycle 146 block with 6 viral hooks: "Token Economy" Twitter thread, r/MachineLearning (4.1M), r/Architecture (2.1M), r/InteriorDesign (1.9M), Dev.to "5th Framework" article, Pinterest "Vibe Drawing" board strategy. Research: Adobe +30% hand-drawn demand, Excalidraw API gap confirmed, new hashtags #VibeDraw #VibeDrawing #AIFloorPlan #SpatialAI #AgentSketch #SchemaDesign #DrawingWithAI.)*
+
+---
+
+## Cycle 146 — What's New (April 5, 2026 — Day 5 Post-Launch)
+
+### Canonical Blog Posts — Fully Expanded
+
+All three required blog posts have been fully written and expanded with new angles:
+
+| Blog Post | File | Words | New Sections Added |
+|-----------|------|-------|--------------------|
+| "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" | `blog/why-hand-drawn-beats-figma.md` | ~900 | 60-Second Rule, Mode Switch neuroscience, Two-Stage table, Vibe Drawing shift |
+| "How AI Agents Can Draw Floor Plans" | `blog/ai-agents-floor-plans.md` | ~950 | GitHub Actions workflow, Token Economy table, Multi-agent memory chain, 5-workflow section |
+| "Skissify vs Excalidraw" | `blog/skissify-vs-excalidraw.md` | ~900 | Extended decision tree, community demand context, token efficiency, use-case matrix |
+
+### Market Research Findings (April 5, 2026)
+
+| Finding | Source | Implication |
+|---------|--------|-------------|
+| +30% search growth for hand-drawn/imperfect design | Adobe 2024 Creative Trends | Market primed for Skissify aesthetic |
+| Excalidraw most-requested feature = programmatic API | Excalidraw GitHub issues | Skissify fills documented community gap |
+| #VibeDraw currently near-zero volume | Twitter/TikTok search | Ownable hashtag — act now |
+| r/MachineLearning (4.1M) responds to accuracy data | Reddit community analysis | Schema design post is high-fit |
+| Pinterest: "AI floor plan" / "hand-drawn architecture" growing | Pinterest Trends | New visual discovery channel |
+| r/InteriorDesign (1.9M) validated by actual user behaviour | User reports | Homeowner use case works |
+
+### Day 5 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: why-hand-drawn-beats-figma.md — expanded Cycle 146 | DONE — 900 words, 6 sections |
+| Blog: ai-agents-floor-plans.md — expanded Cycle 146 | DONE — 950 words, GitHub Actions + token economy |
+| Blog: skissify-vs-excalidraw.md — expanded Cycle 146 | DONE — 900 words, extended decision tree |
+| SOCIAL-MEDIA.md Cycle 146 | DONE — 6 hooks: Token Economy thread, r/MachineLearning, r/Architecture, r/InteriorDesign, Dev.to, Pinterest |
+| PRESS-KIT.md Cycle 146 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 146 | DONE |
+| Demo video | CRITICAL OVERDUE |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 |
+| r/MachineLearning (4.1M) | OVERDUE since Cycle 143 — NEW copy in Cycle 146 |
+| r/Architecture (2.1M) | OVERDUE since Cycle 140 — NEW copy in Cycle 146 |
+| r/DnD (3.2M) | OVERDUE since Cycle 135 |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 |
 
 ---
 

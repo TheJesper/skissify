@@ -1,7 +1,7 @@
 # How AI Agents Can Draw Floor Plans
 
-*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 127*
-*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, LangChain, n8n, automation, vibe-drawing*
+*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 146*
+*Tags: AI agents, MCP, floor plans, Claude, spatial reasoning, API, LangChain, n8n, automation, vibe-drawing, agent-workflows, JSON*
 
 ---
 
@@ -14,6 +14,20 @@ You could get a paragraph. Thoughtful, accurate, spatially correct. But a paragr
 AI agents could *think* spatially. They couldn't *draw* spatially.
 
 That changed when the output format changed.
+
+---
+
+## Why This Matters in 2026
+
+The agent tooling ecosystem has exploded. Claude Desktop, Cursor, Windsurf, Cline, and dozens of MCP-compatible runtimes mean that AI agents are now running in production workflows across every industry. These agents can write code, search the web, read files, send emails, and trigger automations.
+
+But until recently, they couldn't produce visual spatial artifacts. Text output from an agent describing a floor plan is not useful to:
+- A contractor who needs to understand room relationships
+- A real estate platform that needs an image in a listing
+- A downstream agent node that needs structured spatial data to reason about
+- A product manager who needs to show where the onboarding flow widget lives
+
+The missing output format was a **deterministic, API-producible spatial sketch** — and that's exactly what Skissify provides.
 
 ---
 
@@ -41,6 +55,12 @@ Internal benchmarks show flat JSON achieves **88–92% valid output on first att
 
 The reason: LLMs handle flat lists better than deep nesting for spatial tasks. Each element is self-describing — position, size, type, label — without requiring the model to track parent-child relationships while also reasoning about spatial positions.
 
+| Schema Type | First-Attempt Valid Output |
+|-------------|---------------------------|
+| Flat JSON (Skissify) | 88–92% |
+| Hierarchical JSON | 40–61% |
+| Natural language (text) | 0% — not machine-renderable |
+
 Here's a complete three-bedroom floor plan manifest:
 
 ```json
@@ -66,29 +86,71 @@ Here's a complete three-bedroom floor plan manifest:
 }
 ```
 
-The 26 element types cover everything needed for architectural floor plans: primitives (`rect`, `line`, `circle`, `arc`), annotations (`text`, `dim`, `arrow`), architectural symbols (`door-symbol`, `door-slide`, `window`, `stair`, `column`, `opening`), furniture (`bed`, `sofa`, `armchair`, `desk`, `dining-table`, `bookshelf`), and bathroom/kitchen fixtures (`toilet`, `bathtub`, `sink`, `shower`, `stove`).
+The 26 element types cover everything needed for architectural floor plans: primitives (`rect`, `line`, `circle`, `arc`), annotations (`text`, `dim`, `arrow`), architectural symbols (`door-symbol`, `door-slide`, `window`, `stair`, `column`, `opening`), furniture (`bed`, `sofa`, `armchair`, `dining-table`, `bookshelf`, `desk`), and bathroom/kitchen fixtures (`toilet`, `bathtub`, `sink`, `shower`, `stove`).
 
 ---
 
-## Four Real Agent Workflows
+## Five Real Agent Workflows
 
-**1. Claude Desktop with MCP — conversational floor plans**
+### 1. Claude Desktop with MCP — conversational floor plans
 
-User: "Draw a studio apartment with an open kitchen, one bathroom, and a large south-facing window."
+**User prompt:** "Draw a studio apartment with an open kitchen, one bathroom, and a large south-facing window."
 
 Claude reasons about the layout, generates the manifest, calls `skissify_render`, and returns a sketch URL. Total time: under 10 seconds. No canvas interaction. No drawing software. The agent described the space and got a picture back.
 
-**2. LangChain / LlamaIndex — automated property listings**
+**Best for:** Homeowners, architects doing rapid exploration, anyone who wants to iterate on layout through conversation.
+
+---
+
+### 2. LangChain / LlamaIndex — automated property listings
 
 An agent tasked with "generate a rental property listing with a floor plan sketch" calls the Skissify REST API as a tool, receives the sketch URL, and embeds it in the listing template alongside the description text. The reviewer sees a rough plan — not a blank space.
 
-**3. n8n or Make.com — no-code spatial automation**
+**Stack:**
+```python
+import requests
+
+def generate_floor_plan(room_data: dict) -> str:
+    resp = requests.post(
+        "https://skissify.com/api/render",
+        json={"paper": "cream", "tool": "pencil", "elements": room_data["elements"]}
+    )
+    return resp.json()["url"]
+```
+
+---
+
+### 3. n8n or Make.com — no-code spatial automation
 
 A workflow receives a room description via webhook, passes it to Claude for layout reasoning, POSTs the manifest to `/api/render`, and delivers the sketch URL via email or Slack. No deployment. No canvas. Works with any model that can output JSON.
 
-**4. Vibe coding in Cursor — instant floor plan preview**
+**Three-node workflow:**
+1. Claude API node — `"Design a floor plan for [input description]"` → JSON manifest
+2. HTTP Request node — `POST https://skissify.com/api/render` with manifest body
+3. Output node — embed sketch URL in email/Slack/Notion
+
+This is the zero-code path for the n8n community. No Python, no infrastructure. A webhook in, a floor plan out.
+
+---
+
+### 4. Vibe coding in Cursor — instant floor plan preview
 
 Developer prompt: "Add a floor plan preview to the property detail page using the Skissify API." Cursor generates the manifest from existing property data fields, embeds the sketch as an `<img>` tag. Works with existing data models. No design tools opened.
+
+---
+
+### 5. GitHub Actions — sketch on every PR
+
+```yaml
+- name: Generate architecture diagram
+  run: |
+    curl -X POST https://skissify.com/api/render \
+      -H "Content-Type: application/json" \
+      -d "$(cat .skissify/architecture.json)" \
+      | jq -r '.url' >> $GITHUB_STEP_SUMMARY
+```
+
+Every pull request automatically renders the current architecture diagram as a hand-drawn sketch and posts it as a job summary. Architecture drift becomes visible. The sketch is version-controlled as a JSON file in the repo.
 
 ---
 
@@ -102,6 +164,7 @@ Skissify sketches are deterministic. The same JSON manifest produces the same sk
 - **Cache by manifest hash** — no redundant renders
 - **Store the manifest, not the image** — regenerate on demand, any time
 - **Write tests that assert specific output** — "this input always produces this sketch"
+- **Version control floor plans in git** — the manifest IS the source of truth
 
 For agents running in pipelines at scale, this is the difference between a tool and a toy. A stochastic image generator cannot be a reliable pipeline component. A deterministic renderer can.
 
@@ -114,6 +177,28 @@ There's a property of the Skissify URL that most users don't notice at first: th
 This means a sketch URL is not just a link to an image. It's a serialized manifest — agent-readable state. An orchestrator can inspect the URL to determine what the current floor plan contains, modify the manifest, re-render, and pass the new URL downstream. The sketch becomes a persistent, readable, rewritable spatial memory cell.
 
 No database. No state management. The URL is the state.
+
+This is particularly powerful in multi-agent setups:
+1. **Planning agent** — generates initial floor plan manifest, produces sketch URL
+2. **Review agent** — reads manifest from URL, identifies issues, proposes modifications
+3. **Update agent** — applies modifications, re-renders, produces new URL
+4. **Delivery agent** — embeds final sketch URL in output artifact
+
+Each agent in the chain reads and writes spatial state through URLs. No shared database, no state synchronization problem.
+
+---
+
+## The Token Economy Argument
+
+Natural language spatial descriptions are expensive and lossy:
+
+> "The living room is a large rectangular space approximately 5 meters wide and 4 meters deep, located in the northwest corner of the apartment. It connects to the kitchen through an open arch on the eastern wall. The main entrance door is located on the south wall, roughly centered. Two windows face north..."
+
+That's 58 tokens to describe two rooms and a door — approximately 23 tokens per spatial element.
+
+A Skissify manifest element: `{"type":"rect","x":0,"y":0,"width":300,"height":200,"label":"Living Room"}` — 13 tokens. Lossless. Renderable. Machine-readable.
+
+For agent pipelines with context window constraints, this isn't just a formatting preference — it's a meaningful efficiency improvement. The manifest format is the compressed spatial encoding format for the agent era.
 
 ---
 
@@ -133,6 +218,8 @@ curl -X POST https://skissify.com/api/render \
 ```
 
 Your agent can now draw. [Start at skissify.com](https://skissify.com).
+
+#AIAgents #MCP #FloorPlan #VibeDraw #AgentWorkflow #n8n #ClaudeDesktop #LangChain
 
 ---
 

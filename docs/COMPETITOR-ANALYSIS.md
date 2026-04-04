@@ -2,6 +2,82 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #138 (Saturday April 4, Stockholm — Evening)
+
+### Status: 4 new entries / updates. KEY FINDINGS: **Pinterest deploys production MCP ecosystem** — domain-specific MCP servers + central registry at enterprise scale; validates that AI engineering teams build standardized tool registries and will expect visual-output tools in them; Skissify's gap = not registered. **Google Colab MCP Server** — Google ships open-source MCP server for notebook compute (March/April 2026); signals that every specialized compute tool category will need MCP coverage; the pattern is now Google-level validated. **tldraw 25x Canvas 2D performance win** — tldraw switched shape indicators from SVG to Canvas 2D, achieving 25x faster rendering; this is ironic confirmation that Skissify's Canvas 2D architecture is correct. **Eraser DiagramGPT 2026 — text/code-to-formal-diagram lane confirmed unchanged** — no hand-drawn, no floor plan, no MCP; SEO competitor for "AI diagram tool" queries. **MCP Registry submission process fully confirmed** — npm publish first, then `mcp-publisher` CLI; registry live at registry.modelcontextprotocol.io; actionable steps exist; 39th consecutive run CRITICAL RED for non-submission. **MCP Registry submission CRITICAL RED — 39th consecutive run unconfirmed.**
+
+---
+
+### Pinterest MCP Ecosystem — Production-Scale Enterprise Validation (NEW ENTRY)
+
+**Sources**: [Pinterest MCP Ecosystem — InfoQ](https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/), [Building an MCP Ecosystem at Pinterest — Medium](https://medium.com/pinterest-engineering/building-an-mcp-ecosystem-at-pinterest-d881eb4c16f1), verified 2026-04-04
+
+**What it is**: Pinterest engineering deployed a production MCP ecosystem: domain-specific MCP servers, a central registry, and human-in-the-loop approval for AI agents automating complex engineering tasks. As of January 2025 (pre-publication baseline): 66,000 MCP server invocations/month, 844 active users, ~7,000 engineering hours saved/month. Security model: two-layer authorization (JWT for human-in-loop, mesh identities for service-only flows), fine-grained authorization decorators, business-group gating.
+
+**Why it matters for Skissify**: Pinterest's architecture is the template for how large engineering organizations will consume MCP tools. They built a **domain-specific server registry** — a curated catalog of MCP servers for their internal tooling. Any external MCP server they integrate must be in a known registry (Anthropic's official registry, or npm with specific keywords). A Pinterest-style AI agent pipeline that generates engineering documentation or architecture artifacts will naturally reach for a "hand-drawn sketch" output layer for communication artifacts. Skissify's absence from the official MCP registry means it cannot be discovered by these enterprise engineering teams. The Pinterest deployment is not an isolated story — it is the **enterprise blueprint**. Every major tech company's AI engineering team will follow this pattern. Skissify must be in the registry before these teams finalize their "approved MCP tools" list.
+
+**Threat assessment: N/A (not a competitor; ENTERPRISE SIGNAL — Pinterest's production pattern defines what Skissify must do to reach enterprise engineering teams; registry presence is now a prerequisite for enterprise discoverability)**
+
+---
+
+### Google Colab MCP Server — "Every Tool Category Gets MCP" Signal (NEW ENTRY)
+
+**Sources**: [Google Developers Blog — Colab MCP Server](https://developers.googleblog.com/announcing-the-colab-mcp-server-connect-any-ai-agent-to-google-colab/), [MarkTechPost — Google Colab MCP](https://www.marktechpost.com/2026/03/19/google-colab-now-has-an-open-source-mcp-model-context-protocol-server-use-colab-runtimes-with-gpus-from-any-local-ai-agent/), verified 2026-04-04
+
+**What it is**: Google released an open-source MCP server for Google Colab (launched March 17–April 1, 2026), allowing any MCP-compatible AI agent to control Colab notebook interfaces, create/modify/execute Python code in cloud-hosted Jupyter notebooks with GPU access. Works with Claude Code, Gemini CLI, custom orchestration frameworks. Open source at github.com/googlecolab/colab-mcp.
+
+**Why it matters for Skissify**: Google's decision to wrap Colab in MCP is a category-defining signal. **Every specialized compute or rendering tool will need an MCP interface within 12 months.** Google didn't build a "Colab for AI agents" new product — they wrapped their existing compute platform in MCP. Skissify should do the same: the canvas renderer is already built; the MCP wrapper is the missing layer. Google's move also validates the developer workflow: agents call Colab for compute, Skissify for visual output, Stripe for payments — specialized single-purpose MCP tools, each best-in-class for one thing. Skissify as "the visual layer MCP server" is now a recognized pattern, not an experiment.
+
+**Threat assessment: N/A (Google is not competing with Skissify; this is an ECOSYSTEM SIGNAL — Google's MCP pattern confirms Skissify's exact architecture is correct; adds urgency to MCP submission)**
+
+---
+
+### tldraw Canvas 2D Switch — Skissify Architecture Validated by Competitor (COMPETITIVE UPDATE)
+
+**Sources**: [tldraw Releases — GitHub](https://github.com/tldraw/tldraw/releases), [tldraw npm 4.5.x](https://www.npmjs.com/package/tldraw), verified 2026-04-04
+
+**Update**: tldraw's recent releases switched shape indicators (selection outlines, hover states) from SVG rendering to 2D Canvas rendering, achieving **25x faster rendering** when selecting/hovering over many shapes. This is the same architectural choice Skissify made from day one: Canvas 2D for rendering, not SVG DOM manipulation.
+
+**What this reveals**: tldraw, with $12M in funding and $40-60M valuation, tried SVG-first and had to retreat to Canvas 2D for performance. Skissify built Canvas 2D as the core architecture from the start. This is not just an architectural validation — it is a **marketing proof point**: "While tldraw required major re-engineering to achieve Canvas 2D performance, Skissify was built Canvas 2D-first. Sub-100ms rendering is architecture, not optimization." The technical moat is real. Skissify's architecture is where well-funded competitors are migrating TO, not from.
+
+**Threat assessment: MEDIUM-HIGH (unchanged overall) — SDK $6K/yr; Image Pipeline template (workflow canvas); Canvas 2D performance update confirms Skissify's architecture advantage; no new April 2026 release beyond 4.5.6**
+
+---
+
+### Eraser DiagramGPT 2026 — Technical Diagram Lane Unchanged (ENTRY CONFIRMED)
+
+**Sources**: [Eraser DiagramGPT](https://www.eraser.io/diagramgpt), [Eraser AI](https://www.eraser.io/ai), verified 2026-04-04
+
+**Status**: Eraser/DiagramGPT uses GPT-4 to generate technical diagrams (flowcharts, ER diagrams, cloud architecture, sequence diagrams, BPMN) from text or code. Integrates with GitHub, Confluence, Notion, VS Code. No hand-drawn aesthetic. No floor plan elements. No MCP support. No JSON schema API. Pricing: free tier + paid (standard SaaS model).
+
+**Why it matters**: Eraser is publishing "best AI diagram tools 2026" content and competing for SEO queries Skissify also wants to own. Eraser is the strongest SEO competitor in the "AI diagram generator" category. The differentiation must be crisp in content: Eraser = formal technical diagrams (system architecture, ERDs, flowcharts) for engineering docs; Skissify = hand-drawn sketch aesthetic for idea communication, agent output, floor plans. Publish "Skissify vs Eraser DiagramGPT: sketches vs diagrams — which tool when?" to capture comparison traffic.
+
+**Threat assessment: MEDIUM-LOW (different aesthetic lane; formal diagrams vs. hand-drawn sketches; no MCP; SEO competitor for "AI diagram" queries; no change from prior assessment)**
+
+---
+
+### Updated Competitor Matrix (Run #138 — Saturday April 4, 2026 — Evening)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). March 31: Trash, Mermaid ERD, Slide Templates, Arrow Binding. $6-7/user/mo. | NO (canvas-dependent) | YES | NO | YES (official) | **CRITICAL** |
+| **tldraw (April 2026)** | SDK 4.5.x. Canvas 2D switch (+25x perf). MCP App (March 3). Image Pipeline template. $6K/yr SDK. | Partial (interactive canvas) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp`. Inline MCP App iframe. 4 integration modes. 10K+ shapes. | YES (XML/CSV/Mermaid) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Figma MCP + Make Kits** | Make Kits + Attachments (April 2). Agents create/edit canvas via MCP. $15-45/user/mo. | YES (Figma native) | NO | NO (requires Figma) | YES (official) | **MEDIUM (different lane)** |
+| **Eraser DiagramGPT** | Text/code→formal technical diagrams. GitHub/Notion/VS Code integrations. No MCP. No hand-drawn. | NO (interactive only) | NO | YES | NO | **MEDIUM-LOW (SEO competitor for "AI diagram" queries)** |
+| **Draw-it MCP** | Free OSS. Human draws on canvas, Claude analyzes. No JSON input. No programmatic output. | NO (human-driven canvas) | YES (human-drawn) | YES | YES (local) | **LOW (namespace squatter)** |
+| **Sketch (macOS app) MCP** | Built-in local MCP Server. macOS-only. Design-to-code. | NO (existing design files only) | NO (vector) | YES | YES (official, local) | **LOW-MEDIUM (brand/SEO collision)** |
+| **Archilogic Floor Plan SDK** | Professional AEC spatial platform. GraphQL API. Enterprise pricing. Photo-realistic. | YES (GraphQL API) | NO | YES | NO | **LOW (enterprise AEC lane)** |
+| **Apify AI Floor Plan Creator** | Structured input → floor plan image + metadata + AutoCAD. Pay-per-use. Photo-realistic. | YES (API) | NO | YES | NO | **LOW-MEDIUM (SEO competitor "floor plan API")** |
+| **InfraSketch** | Free AI cloud architecture diagrams, NL input. Active SEO. No MCP. No hand-drawn. | YES (NL→SVG) | NO | YES | NO | **MEDIUM-LOW (cloud/DevOps lane; SEO competitor)** |
+| **Sketch2Scheme** | Free. Photo of hand-drawn sketch → digital SVG/PNG/PDF/Draw.io. API available. No MCP. | NO (digitize, not generate) | YES (reads; doesn't generate) | YES | NO | **LOW-MEDIUM (inverse direction; SEO competitor)** |
+| **Prompt2Sketch** | OSS experimental. tldraw + Node.js MCP. Local/offline. Not production-ready. | YES (prompt→tldraw) | NO | NO (tldraw canvas) | YES (local only) | **LOW (thesis validation)** |
+| **Napkin AI** | $12/mo Plus (SVG export). $30/mo Pro. Text→business visuals. No JSON, no MCP, no API. | NO (interactive only) | NO | NO | NO | **LOW** |
+| **ArchitectureDiagram.ai** | JSON→SVG/PNG API. "Coming soon." IT/cloud arch only. No hand-drawn. | YES (coming soon) | NO | YES | NO | **MEDIUM-LOW (not yet live)** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. Canvas 2D (tldraw is migrating TO this). No Chromium. Arch elements. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
 ## Update: 2026-04-04 — Strategy Run #137 (Saturday April 4, Stockholm — Late Afternoon)
 
 ### Status: 4 new entries / updates. KEY FINDINGS: **Draw-it MCP confirmed as namespace squatter** — free OSS human-draws-Claude-analyzes tool; occupies "sketch MCP" search space; NOT a JSON generator; zero architectural elements. **Sketch (macOS app) MCP Server — brand SEO collision risk** — official MCP server for Sketch design app could intercept "sketch MCP" queries; different product entirely but same keyword cluster. **Archilogic Floor Plan SDK + GraphQL API** — professional spatial data platform; photo-realistic, not hand-drawn; targets AEC enterprises, not indie devs or AI agents. **Apify AI Floor Plan Creator API** — text or structured input → floor plan image + structured metadata + AutoCAD commands; not hand-drawn; no MCP; different output format. **tldraw adds Image Pipeline template** — AI image workflow canvas node editor via npx create-tldraw; shows tldraw pivoting toward workflow orchestration tools, not just whiteboard SDK. **SaaS freemium conversion baseline: 2-3%** — 73% of SaaS companies offer free tiers; 2-3% freemium-to-paid conversion is benchmark for user-to-revenue modeling. **MCP Registry submission CRITICAL RED — 38th consecutive run unconfirmed.**

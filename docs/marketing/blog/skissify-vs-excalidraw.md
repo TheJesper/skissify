@@ -1,7 +1,7 @@
 # Skissify vs Excalidraw: The One Question That Decides It
 
-*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 127*
-*Tags: comparison, Excalidraw, whiteboarding, AI agents, diagramming, MCP, hand-drawn, API, tools, vibe-drawing*
+*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 146*
+*Tags: comparison, Excalidraw, whiteboarding, AI agents, diagramming, MCP, hand-drawn, API, tools, vibe-drawing, workflow*
 
 ---
 
@@ -31,6 +31,8 @@ The single question that decides which tool you need:
 | **Offline / PWA** | No | Yes |
 | **Open source** | MCP server only | Full app (MIT) |
 | **Price** | Free tier + €5/mo Pro | Free (self-host) or Excalidraw+ |
+| **Best for spatial/floor plans** | Yes — 14 architectural element types | Requires community library |
+| **Version control friendly** | Yes — JSON manifest is the source of truth | Partial — JSON export available |
 
 ---
 
@@ -40,12 +42,13 @@ Excalidraw is the best human whiteboarding tool I know of. That's not a throwawa
 
 The UX is fast and intuitive. The collaboration in Excalidraw+ is excellent. It works offline. It's open source and self-hostable. The community has built hundreds of component libraries. If you're running a remote brainstorm, a product design sprint, or a quick technical diagram with a team, Excalidraw is the default choice for a reason.
 
-Excalidraw wins when:
+**Excalidraw wins when:**
 - A human needs to draw freehand with a team
 - You need real-time collaborative whiteboarding
 - Offline / PWA capability matters
 - You want a self-hosted, open-source solution
 - You're diagramming ad-hoc and don't have structured data to work from
+- The diagram is shaped by human judgment in the moment
 
 If a human is picking up a stylus or dragging shapes, use Excalidraw.
 
@@ -59,7 +62,7 @@ Excalidraw requires a human to make decisions: what shape, where, how big, label
 
 **The first-attempt accuracy number is the key fact here.** When you give an LLM a Skissify manifest schema, it produces valid, renderable output on the first attempt 88–92% of the time. Hierarchical diagram APIs that require nested structures achieve 40–61% with the same models. This isn't about model intelligence — it's about schema design. Flat lists are what LLMs are good at.
 
-Skissify also wins on:
+**Skissify also wins on:**
 
 **Determinism.** The same manifest always produces the same sketch — including the wobble, which is seeded from the manifest data. This means you can version floor plans in git, diff them, cache by hash, and write tests against them. You cannot do any of those things with a human-drawn Excalidraw canvas.
 
@@ -68,6 +71,8 @@ Skissify also wins on:
 **API ergonomics.** One POST, no auth, returns a sketch URL in ~150ms. That URL contains the manifest data, making it readable and rewritable by agents downstream. No Excalidraw equivalent exists.
 
 **MCP integration.** `npx skissify-mcp` adds a `skissify_render` tool to Claude Desktop, Cursor, or any MCP-compatible runtime in under a minute. Your agent starts drawing in the next conversation turn.
+
+**Token efficiency.** A Skissify element is ~13 tokens. Describing the same element in natural language is ~23 tokens — and natural language isn't machine-renderable anyway. For agents working within context window limits, this is a real efficiency gain.
 
 ---
 
@@ -88,6 +93,24 @@ Skissify also wins on:
 These aren't variants of the same workflow. They're different jobs entirely.
 
 A better analogy for Skissify than "Excalidraw but different" is: *what if Mermaid.js produced hand-drawn SVGs optimized for spatial layouts and AI output instead of rigid flowcharts?* That's closer to what this actually is.
+
+---
+
+## The Use Cases That Settle the Debate
+
+These are the edge cases where teams often get confused:
+
+**"I want Claude to sketch my idea."** → Skissify. Claude cannot meaningfully interact with the Excalidraw UI. With Skissify MCP, Claude draws on the first try.
+
+**"My team is brainstorming a system architecture."** → Excalidraw. Real-time collaboration with a team of humans drawing together is Excalidraw's core competency.
+
+**"I'm building a real estate app and need floor plan thumbnails."** → Skissify. REST API, deterministic output, 150ms response time. Embed as `<img>` tags, cache by manifest hash.
+
+**"I want to generate dungeon maps for my D&D campaign."** → Skissify (ask Claude to generate them via MCP) or Excalidraw (draw them yourself). Depends on whether you prefer describing or drawing.
+
+**"I'm running an n8n workflow that processes room data and needs visual output."** → Skissify. HTTP Request node, no auth, JSON in, URL out. Excalidraw has no API.
+
+**"My GitHub Actions pipeline should diagram the current architecture."** → Skissify. The manifest lives as a JSON file in the repo, rendered on every PR. No human interaction required.
 
 ---
 
@@ -115,6 +138,14 @@ That last case is actually a valid and underused pattern: use Skissify to produc
 
 ---
 
+## What the Excalidraw Community Actually Says
+
+The Excalidraw community is vocal about what they wish the tool could do: API access for programmatic generation is the most frequently requested feature in Excalidraw's GitHub issues. The community understands the need. The tool hasn't been built for it.
+
+Skissify was built specifically for that gap — not to compete with Excalidraw for human users, but to serve the programmatic use case that Excalidraw's design philosophy explicitly doesn't address.
+
+---
+
 ## Try the API Right Now
 
 ```bash
@@ -129,7 +160,7 @@ curl -X POST https://skissify.com/api/render \
       {"type":"rect","x":350,"y":50,"width":200,"height":200,"label":"Kitchen"},
       {"type":"door-symbol","x":50,"y":160,"width":40,"height":10},
       {"type":"window","x":200,"y":50,"width":80,"height":10},
-      {"type":"sofa","x":80,"y":150","width":120,"height":60}
+      {"type":"sofa","x":80,"y":150,"width":120,"height":60}
     ]
   }'
 ```
@@ -137,6 +168,8 @@ curl -X POST https://skissify.com/api/render \
 You'll get a sketch URL back in about 150ms. That URL is shareable, embeddable, and contains the full manifest — an agent can read it, modify it, and re-render.
 
 [Try Skissify free at skissify.com](https://skissify.com) | MCP server: `npx skissify-mcp`
+
+#Excalidraw #Skissify #AIDesign #VibeDraw #DiagramTools #MCP #HandDrawn #AgentTools
 
 ---
 

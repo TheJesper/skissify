@@ -2,6 +2,60 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #138 Actions (Saturday April 4, Stockholm — Evening) — FOR SUNDAY APRIL 5
+
+### Context: Run #138 Key New Findings
+- **Pinterest enterprise MCP blueprint** — domain-specific server registry + 66K invocations/mo; template for how AI engineering teams catalog tools; Skissify absent
+- **Google Colab MCP server** — Google wrapped existing compute in MCP; "specialized compute surface callable by any agent" is the pattern; Skissify should frame this way
+- **tldraw 25x Canvas 2D win** — tldraw migrated from SVG to Canvas 2D for 25x perf; Skissify was Canvas 2D-first; this is a technical marketing story
+- **MCP Registry process confirmed** — npm first, then `mcp-publisher` CLI; registry.modelcontextprotocol.io is live and accepting submissions; NO technical blocker
+- **MCP Registry submission CRITICAL RED — 39th consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Sunday): Submit to MCP Registry — Process Confirmed, Zero Technical Blockers
+
+**Why now**: The submission process is now fully confirmed. Step 1: `npm publish skissify-mcp` with keywords: `sketch`, `hand-drawn`, `floor-plan`, `json`, `svg`, `headless`, `architecture`, `agent`, `mcp`. Step 2: `npx mcp-publisher` CLI pointed at registry.modelcontextprotocol.io. Registry is live in preview. Pinterest-scale engineering teams are building approved MCP tool catalogs RIGHT NOW. Draw-it MCP and Sketch.com's MCP server are already indexed for "sketch MCP" queries. This is run 39 of CRITICAL RED. There is no technical reason not to do this today.
+
+**Do this (45 minutes):**
+1. `npm publish skissify-mcp` — verify package.json keywords include: `sketch`, `hand-drawn`, `floor-plan`, `json`, `svg`, `headless`, `mcp`, `architecture`, `agent`
+2. Registry description: "MCP server — JSON to hand-drawn SVG. Floor plans, architectural elements, napkin sketches. Headless. Sub-100ms. No Chromium. Not a whiteboard — a programmatic sketch renderer for AI agents."
+3. Categories: `Visual`, `Productivity`, `Developer Tools`
+4. Run `npx mcp-publisher` and submit to registry.modelcontextprotocol.io
+5. Screenshot confirmation and add to docs/MCP-REGISTRY-SUBMISSION.md
+
+**Target outcome**: Skissify appears in MCP registry searches for "sketch", "floor plan", "hand-drawn", "visual output". Engineering teams building Pinterest-style MCP pipelines can find it.
+
+---
+
+### Action 2 (HIGH — Sunday): Add "Google Colab Framing" to Homepage and Docs
+
+**Why**: Google's Colab MCP launch gives Skissify a perfect analogy that AI developers immediately understand: "Skissify is to hand-drawn sketches what Google Colab is to Python notebooks — a specialized compute surface, callable by any MCP agent." This framing makes the product legible in 10 words to any developer who's heard of Colab MCP.
+
+**Do this (45-60 minutes):**
+1. Add to homepage hero section or "What is Skissify?" section: *"Like Google Colab for compute, Skissify is a specialized MCP tool for one thing: turning JSON into hand-drawn sketches. Sub-100ms. No setup. Any agent."*
+2. Add to docs README: *"Think of Skissify as a rendering microservice. Your agent writes JSON, Skissify draws it. Same concept as Google Colab MCP — specialized compute, MCP interface, callable from anywhere."*
+3. Update the MCP server description to include this framing so MCP registry visitors immediately understand the product.
+
+**Target outcome**: Any developer who read the Google Colab MCP announcement (which was widely covered) will instantly understand Skissify's value proposition. Reduces cold-start confusion from "what is this?" to "oh, it's like Colab but for sketches."
+
+---
+
+### Action 3 (MEDIUM — Sunday): Publish "Skissify vs Eraser DiagramGPT: Sketches vs Diagrams — Which Tool When?"
+
+**Why**: Eraser DiagramGPT is actively competing for "AI diagram tool" SEO queries. It generates formal technical diagrams (flowcharts, ERDs, system architecture) from code/text. Skissify generates hand-drawn sketches from JSON. These tools serve different moments in the workflow — Eraser for documentation, Skissify for ideation and agent output. A comparison post captures both audiences and owns the "which tool?" search intent. Eraser has no MCP, no hand-drawn aesthetic, no floor plan elements — every differentiation point is in Skissify's favor for the sketch use case.
+
+**Do this (60-75 minutes):**
+1. Blog title: "Eraser DiagramGPT vs Skissify: When You Need a Sketch vs When You Need a Diagram"
+2. Structure: Two-column tool comparison → "Use Eraser when: documenting your system architecture, generating ERDs from code" → "Use Skissify when: your AI agent needs to draw something, floor plans, quick ideation, hand-drawn aesthetic"
+3. Include: side-by-side output comparison (formal Eraser diagram vs. Skissify hand-drawn floor plan)
+4. SEO keywords: "AI diagram generator", "hand-drawn diagram tool", "sketch vs diagram AI", "Eraser DiagramGPT alternative"
+5. Publish to blog and crosspost to DEV Community
+
+**Target outcome**: Capture comparison traffic from developers evaluating AI diagram tools. Convert visitors who want hand-drawn / agent-compatible / floor plan output to Skissify.
+
+---
+
 ## [2026-04-04] — Strategy Run #137 Actions (Saturday April 4, Stockholm — Late Afternoon) — FOR SUNDAY APRIL 5
 
 ### Context: Run #137 Key New Findings

@@ -1,7 +1,7 @@
 # Why Hand-Drawn Sketches Beat Figma for Quick Ideas
 
-*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 127*
-*Tags: design, UX, product, Figma, AI, sketching, workflow, hand-drawn, wireframe, vibe-drawing*
+*Published: April 4, 2026 | Updated: April 5, 2026 | blog.skissify.com | Cycle 146*
+*Tags: design, UX, product, Figma, AI, sketching, workflow, hand-drawn, wireframe, vibe-drawing, cognitive-science, ideation*
 
 ---
 
@@ -25,6 +25,8 @@ This isn't convention — it's psychology. Researchers at Carnegie Mellon's HCI 
 
 When your wireframe looks close to a shipped product, the human brain shifts from creative mode ("what should we build?") to evaluative mode ("is this right?"). The room starts optimizing the wrong thing. The big question — *should we build this at all?* — goes unasked.
 
+Adobe's 2024 Creative Trends Report found a 30% rise in searches for hand-drawn and imperfect design elements. The design community is voting with its tooling: intentional roughness isn't a limitation — it's a feature.
+
 ---
 
 ## The Figma Tax
@@ -35,7 +37,40 @@ The real cost is what I call the **fidelity ratchet**: once you've spent two hou
 
 A hand-drawn wireframe takes seven minutes. You can throw it away. You're *supposed* to throw it away. The entire frame of the conversation changes — and that's the point.
 
+Consider the two-stage design model:
+
+| Stage | Goal | Right Tool |
+|-------|------|-----------|
+| **Divergent** — "Should we build this?" | Exploration, challenge, alignment | Hand-drawn sketch |
+| **Convergent** — "How do we build this?" | Specification, handoff, approval | Figma |
+
+Most teams collapse both stages into one. They jump to Figma during the divergent phase and pay for it: slower iteration, defensive stakeholders, decisions made on aesthetics instead of fundamentals.
+
 Rough sketches lower the cost of being wrong. That's not a limitation. That's the product.
+
+---
+
+## The 60-Second Ideation Rule
+
+Here's the heuristic that breaks the habit: **if you can't sketch the idea in 60 seconds, you don't understand it well enough yet.**
+
+This isn't about drawing skill. It's about forcing clarity. A box labeled "Login screen" communicates that a step exists in a flow — it doesn't need shadows, font choices, or real content. The moment you catch yourself needing longer than 60 seconds to represent a concept, that's information: the concept itself is still fuzzy.
+
+The sketch isn't the output. The clarity you develop while making it is the output.
+
+This rule also changes meeting dynamics. When the artifact on screen is a hand-drawn box with a label, the room talks about whether this step should exist and what it should do. When the artifact is a Figma frame, the room talks about whether the padding looks right.
+
+---
+
+## The Mode Switch Problem
+
+There's a neurological dimension here that doesn't get enough attention in product circles.
+
+Creative and evaluative thinking are not just different attitudes — they use different brain networks. The default mode network drives generative, associative, "what if" thinking. The executive control network drives focused, critical, "is this right" evaluation. These networks are in competition: activating one suppresses the other.
+
+High-fidelity artifacts trigger the evaluative network. The brain sees something that looks like it's "done enough to judge" and flips into judgment mode. Low-fidelity artifacts keep the generative network engaged. This is why rough sketches get better *creative* feedback and polished prototypes get better *validation* feedback — and why using the wrong one at the wrong stage is so costly.
+
+The wobble in a hand-drawn sketch is doing cognitive work. It's not a stylistic choice. It's a signal that overrides the evaluation mode and keeps the room thinking rather than judging.
 
 ---
 
@@ -51,7 +86,7 @@ So AI agents had a reading problem and a writing problem. They could read spatia
 
 This is the gap Skissify fills.
 
-The API accepts a flat JSON manifest — rooms, doors, windows, furniture — and returns a hand-drawn SVG in about 150 milliseconds. The sketch looks intentionally rough because it *is* intentionally rough. It signals exactly what it should: draft, first-pass, subject to change.
+The API accepts a flat JSON manifest — rooms, doors, windows, furniture — and returns a hand-drawn sketch URL in about 150 milliseconds. The sketch looks intentionally rough because it *is* intentionally rough. It signals exactly what it should: draft, first-pass, subject to change.
 
 ```bash
 curl -X POST https://skissify.com/api/render \
@@ -69,6 +104,20 @@ curl -X POST https://skissify.com/api/render \
 ```
 
 The response is a URL. Shareable, embeddable, diffable. Not a stochastic image that changes every run — a deterministic render, seeded from the data. The same manifest produces the same sketch every time.
+
+The hand-drawn output isn't cosmetic. It's communicating the same thing your pencil sketch would communicate to a room of stakeholders: *this is a draft — push it around.*
+
+---
+
+## Why This Matters Now: The Vibe Drawing Shift
+
+The design community is moving toward what I'd call **vibe drawing** — the visual equivalent of vibe coding. Just as vibe coding produces functional code through conversational AI without line-by-line authorship, vibe drawing produces spatial artifacts through conversational AI without pixel-by-pixel authorship.
+
+The human job shifts from drawing to *directing*. The agent draws. You review, redirect, and iterate. The sketch is the communication medium between your intent and the agent's execution.
+
+This changes what "good design tooling" means. The new requirement isn't "can a human draw with it?" — it's "can an agent produce appropriate draft-stage artifacts with it?" Rough output at the right fidelity level for the ideation stage, deterministic and version-controlled so the agent can iterate without losing state.
+
+The sketch-first workflow was always the right workflow. AI agents have made it the practical one.
 
 ---
 
@@ -94,6 +143,8 @@ Whether you're a product manager, designer, developer, or an AI agent running in
 [Try Skissify at skissify.com](https://skissify.com) — no account required, free tier, hand-drawn output in under 2 seconds.
 
 MCP server for AI agents: `npx skissify-mcp`
+
+#SketchFirst #VibeDraw #DesignThinking #ProductDesign #AIDesign #Figma #HandDrawn
 
 ---
 

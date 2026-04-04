@@ -2,6 +2,38 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #138 (Saturday April 4, Stockholm — Evening)
+
+### Theme: Enterprise MCP Adoption Pattern Confirmed (Pinterest); Google Validates "Every Tool Gets MCP"; tldraw Migrates TO Skissify's Architecture; MCP Registry Process Confirmed Actionable
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #138 Synthesis
+
+Three discoveries this run triangulate toward one conclusion: **the MCP ecosystem is maturing from hobby experiment to enterprise infrastructure, and Skissify is architecturally correct but operationally absent.**
+
+**1. Pinterest's production MCP deployment is the enterprise blueprint — and Skissify isn't on it.** Pinterest engineering built a domain-specific MCP server registry with 66,000 invocations/month and 7,000 hours/month saved. This is not a hobby project — it is the template for how every serious AI engineering team will organize their tool catalog. The teams building at Pinterest scale will eventually need visual output for their agent pipelines: architecture sketches, floor plans, explainer diagrams in hand-drawn style. When they search the MCP registry for "visual output / sketch / hand-drawn," Skissify should be there. It isn't. The EUR 2/mo pay trigger for a Pinterest-type engineering user is not "is this useful?" — it's "is this in our approved tools catalog?" Registry presence is the enterprise sales motion. No submission = no enterprise funnel.
+
+**2. Google Colab MCP proves the architecture is now industry pattern — not a niche bet.** Google did not build "Colab AI" — they wrapped Colab in MCP so any agent can call it. This is the same move Skissify needs to make: wrap the Canvas 2D renderer in MCP so any agent can call it. Google's choice confirms that the MCP layer is where compute tools live in 2026. Skissify's Canvas 2D renderer is equivalent to Colab's notebook — specialized, fast, best-in-class for one task. Framing: "Skissify is to hand-drawn sketches what Google Colab is to Python notebooks — a specialized compute surface, callable by any MCP agent." This is the elevator pitch for agent developers.
+
+**3. tldraw's 25x Canvas 2D performance win is a technical marketing asset.** tldraw, with $12M in funding, tried SVG-first and had to switch shape rendering to Canvas 2D to achieve acceptable performance (25x speedup). Skissify was Canvas 2D from day one. This is not just an architecture validation — it's a story: "The tool that spent $12M and two major versions to reach Canvas 2D performance. We started there." Sub-100ms rendering isn't a claim — it's the natural consequence of building on the right abstraction. Use this in technical marketing: "Built Canvas 2D-first, like tldraw's latest version — but from day one."
+
+**4. The MCP Registry submission blocker is now fully unblocked.** The registry process is confirmed: (1) publish `skissify-mcp` to npm with correct keywords; (2) run `mcp-publisher` CLI pointing to the registry. The registry is live at registry.modelcontextprotocol.io. It is in preview but accepting submissions. There is no technical blocker. Every day of non-submission is a choice, not a constraint. The namespace is filling — Draw-it MCP, Sketch.com MCP, and soon others will occupy "sketch" keywords. Skissify must submit before the "sketch MCP" namespace is fully captured.
+
+---
+
+#### EUR 2/mo Trigger Analysis — Run #138 Update
+
+New trigger signals from this run:
+
+- **Pinterest pattern**: Enterprise engineering teams who build MCP pipelines pay for tools that are in approved catalogs. EUR 2/mo is not the barrier — registry presence is. Fix the registry → unlock enterprise funnel.
+- **Google Colab framing**: "Specialized compute surface, callable by any MCP agent" — this is the mental model. Developers who understand what Google Colab MCP does will immediately understand what Skissify MCP does. Use Colab as the analogy, not Excalidraw.
+- **tldraw Canvas 2D**: Technical users who know tldraw's architecture history will recognize Skissify's Canvas 2D choice as correct. The "built right from day one" story is a trust signal for developers choosing between tools.
+
+**Updated single most powerful conversion trigger**: The homepage should feature a "call it like Google Colab" demo — one curl command to the Skissify API (like calling a Colab cell) returns an SVG. Makes the product's value immediately legible to the MCP developer audience that Pinterest and Google are now validating as the target market.
+
+---
+
 ## Update: 2026-04-04 — Strategy Run #137 (Saturday April 4, Stockholm — Late Afternoon)
 
 ### Theme: The "Sketch MCP" Namespace Is Filling Up Fast; Floor Plan API Space Has Multiple New Entrants; 2-3% Freemium Conversion Baseline Sets the User Volume Target

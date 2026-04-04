@@ -1,7 +1,66 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 145**
+**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 146**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 146 — Day 5 Blog Expansion + ML + Architecture + Pinterest + Token Economy)
+
+### Cycle 146 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 146 (fully expanded: 60-second rule, cognitive mode switch neuroscience, two-stage design table, vibe drawing manifesto section, +30% Adobe stat) | `blog/why-hand-drawn-beats-figma.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 146 (fully expanded: 5 workflows incl. GitHub Actions, token economy comparison table, multi-agent memory chain pattern) | `blog/ai-agents-floor-plans.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 146 (fully expanded: use-case decision matrix, Excalidraw community demand context, token efficiency data, extended decision tree) | `blog/skissify-vs-excalidraw.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 146 — 6 new hooks: "Token Economy" Twitter thread (schema design + token data), r/MachineLearning (4.1M — schema accuracy post), r/Architecture (2.1M — AI floor plan launch post), r/InteriorDesign (1.9M — room planning use case), Dev.to "5th Agent Framework Use Case", Pinterest "Vibe Drawing" board strategy. New platforms: Pinterest, r/InteriorDesign. New hashtags: #TokenEconomy #SpatialAI #AgentSketch #SchemaDesign #AIFloorPlan #DrawingWithAI #HandDrawnAI. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 146 — Market research findings table, expanded blog post status, Day 5 milestone table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 146 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 146 — Priority Actions (April 5 — Saturday Evening, Day 5)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST r/MachineLearning** (4.1M) — OVERDUE + NEW COPY | P0 NOW | IMMEDIATELY | Cycle 146 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/Architecture** (2.1M) — OVERDUE + NEW COPY | P0 NOW | IMMEDIATELY | Cycle 146 SOCIAL-MEDIA.md (Hook 3) |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/DnD** (3.2M) — OVERDUE SINCE CYCLE 135 | P0 | TODAY | Cycle 135 SOCIAL-MEDIA.md |
+| **POST Twitter "Token Economy" thread** — NEW Cycle 146 | P1 | TODAY | Cycle 146 SOCIAL-MEDIA.md (Hook 1) |
+| **PUBLISH Dev.to "5th Framework" article** — NEW Cycle 146 | P1 | TODAY | Cycle 146 SOCIAL-MEDIA.md (Hook 5) |
+| **PUBLISH blog/why-hand-drawn-beats-figma.md to Dev.to** — expanded | P0 | TODAY 10:00 CET | Cycle 146 blog |
+| **PUBLISH blog/ai-agents-floor-plans.md to Dev.to** — expanded | P0 | TODAY 13:00 CET | Cycle 146 blog |
+| **PUBLISH blog/skissify-vs-excalidraw.md to Dev.to** — expanded | P0 | TODAY 16:00 CET | Cycle 146 blog |
+| **CREATE Pinterest "Vibe Drawing" board** — NEW Cycle 146 | P2 | THIS WEEK | Cycle 146 SOCIAL-MEDIA.md (Hook 6) |
+| **POST r/InteriorDesign** (1.9M) — NEW Cycle 146 | P1 | TODAY | Cycle 146 SOCIAL-MEDIA.md (Hook 4) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **RECORD + POST demo video** — OVERDUE | P0 | TODAY LAST WINDOW | Script in Cycle 139 SOCIAL-MEDIA.md |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md |
+
+### Cycle 146 — New Ideas
+
+**Idea: The three canonical blog posts are now genuinely 700-950 word production posts.** Previous versions were ~100-150 lines (rough drafts). All three have been expanded with new angles: the cognitive neuroscience of mode-switching (why-hand-drawn), the GitHub Actions workflow and token economy table (ai-agents-floor-plans), and the Excalidraw community demand context and use-case decision matrix (skissify-vs-excalidraw). These are now ready for Dev.to cross-posting. Dev.to has high organic reach for AI developer content and the posts are keyword-optimized.
+
+**Idea: r/MachineLearning (4.1M) is the highest-value unposted community for the schema design angle.** The flat-vs-hierarchical JSON accuracy data (88–92% vs 40–61%) is a genuinely interesting finding for the ML community — it's about how schema design affects LLM structured output accuracy, not just a product pitch. This post will be received as a contribution, not an advertisement, if framed correctly. High potential for comments from researchers and engineers who can validate or challenge the finding.
+
+**Idea: Pinterest is an untapped visual discovery channel.** The design community on Pinterest is searching for "AI floor plan", "hand-drawn architecture", and "vibe drawing" — all terms with growing volume and low competition. Pinterest content has a long discovery tail (pins resurface for months). A pinned board with 10-15 Skissify sketch examples with keyword-rich descriptions can drive steady inbound discovery from the homeowner/interior design audience without ongoing effort.
+
+**Idea: The "Token Economy" angle reframes Skissify for the technical audience.** Every AI developer working with agent pipelines understands context window constraints. Presenting the Skissify manifest as a compressed, lossless spatial encoding format (13 tokens vs 23 tokens for natural language, plus renderability) makes the case in terms that resonate with engineering audiences. This is a different hook than the design/aesthetics angle and reaches a different Twitter/HN sub-audience.
+
+**Idea: The cognitive mode switch section in the blog is a shareable standalone concept.** The explanation of why high-fidelity artifacts trigger evaluative thinking (executive control network) while low-fidelity artifacts sustain creative thinking (default mode network) is the kind of "hm, I hadn't thought about it that way" insight that gets shared on Twitter and saved on Pocket. Consider extracting this into a standalone 5-tweet thread separate from the full Skissify pitch.
+
+### Cycle 146 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-beats-figma.md — fully expanded (~900 words, 6 sections, new angles: 60-sec rule, mode switch, two-stage table, vibe drawing) | DONE Cycle 146 |
+| Blog: ai-agents-floor-plans.md — fully expanded (~950 words, 5 workflows, token economy table, multi-agent memory chain) | DONE Cycle 146 |
+| Blog: skissify-vs-excalidraw.md — fully expanded (~900 words, extended decision tree, community demand context, use-case matrix) | DONE Cycle 146 |
+| SOCIAL-MEDIA.md Cycle 146 — 6 hooks: Token Economy thread, r/MachineLearning, r/Architecture, r/InteriorDesign, Dev.to 5th Framework, Pinterest board strategy | DONE Cycle 146 |
+| PRESS-KIT.md Cycle 146 | DONE Cycle 146 |
+| LAUNCH-PLAN.md Cycle 146 | DONE Cycle 146 |
+| Market research: Adobe +30% hand-drawn demand, Excalidraw API gap confirmed, Pinterest opportunity validated, new hashtags identified | DONE Cycle 146 |
 
 ---
 
