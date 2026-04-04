@@ -1,7 +1,77 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 141**
+**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 142**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 142 — Day 4 Speed of Thought + Reproducibility + Blank Canvas + Broader Communities)
+
+### Cycle 142 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 142 ("Speed of Thought" angle — 90-second idea capture window, the cognitive tax of design tools, idea inflation when capture is delayed, right tool at right stage table) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle142.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 142 ("Reproducibility Problem" angle — non-determinism of text spatial descriptions, reproducibility stack table, sketch URL as git hash for visual concepts, diff-able manifest changes, multi-agent reference) | `blog/how-ai-agents-draw-floor-plans-cycle142.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 142 ("Blank Canvas Problem" angle — describing vs drawing, non-designer accessibility, 14-row feature table, four scenario analysis, recommended stage workflow) | `blog/skissify-vs-excalidraw-comparison-cycle142.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 142 — 6 new viral hooks: "Speed of Thought" Twitter thread (90-second test), r/artificial (1.3M — visual layer for 12K MCP servers), r/webdev (1.9M — Show-style with code snippet), Bluesky #BuildInPublic (Day 4 metrics share), Dev.to "Reproducibility Problem" technical article, r/SoftwareEngineering (1.1M — async whiteboard angle). New platforms: r/artificial, r/webdev, r/SoftwareEngineering, Bluesky. New hashtags: #SpeedOfThought #ReproducibleAI #VisualLayer #BlankCanvas #AgentOutput #AsyncDesign. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 142 — Day 4 status table with new channels (r/artificial, r/webdev, r/SoftwareEngineering, Bluesky) | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 142 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 142 — Priority Actions (April 4 — Saturday, Day 4)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** (212K) — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/artificial** (1.3M) — NEW Cycle 142 | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/webdev** (1.9M) — NEW Cycle 142 | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 3) |
+| **POST Bluesky #BuildInPublic** — NEW Cycle 142 | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 4) |
+| **PUBLISH Dev.to "Reproducibility Problem"** — NEW Cycle 142 | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 5) |
+| **POST r/SoftwareEngineering** (1.1M) — NEW Cycle 142 | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Twitter "Speed of Thought" thread** — NEW Cycle 142 | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/vibecoding** (153K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/ClaudeAI** (688K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ClaudeCode** (96K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 4) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — Day 4, Saturday window is prime | Script in Cycle 139 SOCIAL-MEDIA.md |
+| **POST r/Architecture** (2.1M) — NEW Cycle 140, still unposted | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/MachineLearning** (4.1M) — Cycle 138, still unposted | P0 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md |
+| **POST r/DnD** (3.2M) — Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md |
+| **PUBLISH 3 Cycle 142 blogs to Dev.to** | P0 | TODAY staggered 13:00/15:00/17:00 CET | |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 142 — New Ideas
+
+**Idea: r/artificial (1.3M) is the broadest AI community on Reddit and hasn't been targeted.** It mixes product news, research discussion, and open-source announcements. A post framed as "here's the visual output layer the MCP ecosystem is missing" fits the feed perfectly — it's a product announcement with a strong conceptual angle. The community responds well to "here's a gap in the ecosystem I filled" framing rather than pure product promotion.
+
+**Idea: r/webdev (1.9M) responds to technical Show posts.** The subreddit has a regular "Show r/webdev" format. A post that leads with the Canvas 2D rendering approach (Bézier wobble algorithm, seeded randomness) will attract developer curiosity independently of the product utility. Engineers share things that are technically interesting. The floor plan element types (door-symbol, dim, stair) are unusual enough to be worth a click.
+
+**Idea: r/SoftwareEngineering (1.1M) has a professional developer audience.** These are senior engineers and team leads who deal with async communication across timezones. The "whiteboard that scales" angle — fast visual communication for distributed teams — maps directly to their pain. The "rough = draft signal" insight is novel enough to generate discussion. Frame it as a question ("how do you communicate design async?") rather than a product announcement.
+
+**Idea: Bluesky #BuildInPublic is underused by founders and has high organic reach.** The platform rewards authentic, metrics-transparent posts. A Day 4 launch reflection with real numbers (what's working, what isn't, what the unexpected audiences are) will outperform any product announcement. The builder community shares honest posts because they validate their own experience. "Still haven't posted to r/LocalLLaMA after 4 days" is more relatable than "amazing launch results."
+
+**Idea: The "Speed of Thought" angle is the most universally relatable Skissify hook.** Every knowledge worker has experienced the 90-second idea window. It doesn't require understanding MCP, AI agents, or floor plans. It speaks to the basic human experience of having an idea and not being able to capture it fast enough. This is the content that gets shared outside technical communities — into product manager Slack channels, design team newsletters, and general "interesting tool" threads. It should be the first piece anyone shares from Skissify.
+
+**Idea: The reproducibility angle targets ML engineers and AI researchers directly.** This audience cares about reproducibility deeply — it's a core value in research. Framing sketch URLs as "deterministic, versioned, citable visual artifacts" maps to terminology this audience uses daily. They will immediately understand why non-deterministic text descriptions of space are a problem and what a JSON manifest approach provides. The r/MachineLearning post should use this angle.
+
+**Insight from web search: Claude Code is now the most-used AI coding tool (75% at smaller companies per March 2026 data).** r/ClaudeCode (96K, 4,200+ weekly contributors) is growing fast and has high engagement. The MCP integration story for Skissify should be framed as "here's a use case you can add to Claude Code in 30 seconds" — not a product announcement. Concrete setup snippet + one command + expected output. That's the format that gets bookmarked in this community.
+
+**Insight: Vibe coding went mainstream in 2026 per multiple sources.** "Vibe drawing" as an adjacent term for AI-generated visual output is well-positioned. r/vibecoding (153K) is the natural home for this. The framing should be: vibe coding produces code; vibe drawing produces sketches. Both are AI doing output work that used to require human craft skill. Same energy, different medium.
+
+### Cycle 142 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle142.md | DONE Cycle 142 |
+| Blog: how-ai-agents-draw-floor-plans-cycle142.md | DONE Cycle 142 |
+| Blog: skissify-vs-excalidraw-comparison-cycle142.md | DONE Cycle 142 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update (r/artificial, r/webdev, r/SoftwareEngineering, Bluesky) + new hashtags | DONE Cycle 142 |
+| PRESS-KIT.md — Cycle 142 Day 4 status table | DONE Cycle 142 |
+| LAUNCH-PLAN.md — Cycle 142 block | DONE Cycle 142 |
 
 ---
 

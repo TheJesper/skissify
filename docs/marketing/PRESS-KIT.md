@@ -1,6 +1,39 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 141 (New: 3 blog posts — "Meeting Before the Meeting" pre-alignment angle for Figma post, "The Coordinate Problem" for floor plan/AI agents post, "Collaboration Handoff" two-stage workflow for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 141 block with 6 viral hooks: "Meeting Before the Meeting" Twitter/LinkedIn thread, r/vibecoding vibe drawing post (153K), r/ClaudeAI use-case share (688K), r/ClaudeCode MCP integration (96K), Dev.to "Coordinate Problem" technical article, LinkedIn "Two-Stage Workflow" post. New platforms: r/vibecoding, r/ClaudeAI, r/ClaudeCode. New hashtags: #VibeCoding #ClaudeAI #SketchURL #PreAlignment #CoordinateProblem #AIDesignWorkflow.)*
+*Last updated: April 4, 2026 — Cycle 142 (New: 3 blog posts — "Speed of Thought" idea capture window for Figma post, "The Reproducibility Problem" for floor plan/AI agents post, "The Blank Canvas Problem" accessibility angle for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 142 block with 6 viral hooks: "Speed of Thought" Twitter thread, r/artificial (1.3M), r/webdev (1.9M) Show-style post, Bluesky #BuildInPublic Day 4 metrics, Dev.to "Reproducibility Problem" technical article, r/SoftwareEngineering (1.1M) async design communication post. New platforms: r/artificial, r/webdev, r/SoftwareEngineering, Bluesky. New hashtags: #SpeedOfThought #ReproducibleAI #VisualLayer #BlankCanvas #AgentOutput #AsyncDesign.)*
+
+---
+
+## Cycle 142 — What's New (April 4, 2026 — Day 4 Post-Launch)
+
+### Day 4 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "Speed of Thought" — Figma idea capture post (Cycle 142) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle142.md` |
+| Blog: "The Reproducibility Problem" — AI agents floor plan post (Cycle 142) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle142.md` |
+| Blog: "The Blank Canvas Problem" — Excalidraw comparison (Cycle 142) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle142.md` |
+| SOCIAL-MEDIA.md Cycle 142 | DONE — 6 hooks: Speed of Thought Twitter, r/artificial, r/webdev Show-style, Bluesky BuildInPublic, Dev.to Reproducibility, r/SoftwareEngineering |
+| PRESS-KIT.md Cycle 142 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 142 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY (Day 4, Saturday, last ideal window) |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents (212K) | OVERDUE since Cycle 132 — post today |
+| r/ClaudeAI (688K) | NEW Cycle 141 — post today (Hook 3) |
+| r/vibecoding (153K) | NEW Cycle 141 — post today (Hook 2) |
+| r/ClaudeCode (96K) | NEW Cycle 141 — post today (Hook 4) |
+| r/artificial (1.3M) | **NEW Cycle 142** — post today (Hook 2) |
+| r/webdev (1.9M) | **NEW Cycle 142** — post today (Hook 3) |
+| r/SoftwareEngineering (1.1M) | **NEW Cycle 142** — post today (Hook 6) |
+| Bluesky #BuildInPublic | **NEW Cycle 142** — post today (Hook 4) |
+| r/Architecture (2.1M) | NEW Cycle 140 — still unposted |
+| r/ProgrammerHumor (4.1M) | NEW Cycle 140 — still unposted |
+| r/MachineLearning (4.1M) | Cycle 138 — still unposted |
+| r/DnD (3.2M) | Cycle 135 — still unposted |
+| HN Show HN | P1 — MONDAY April 7, 08:00 CET |
 
 ---
 

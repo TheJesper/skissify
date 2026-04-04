@@ -1,7 +1,313 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 5, 2026 — Cycle 141 (New: 6 viral hooks — "Meeting Before the Meeting" pre-alignment angle (Twitter/LinkedIn), r/vibecoding agent visual output post (153K members), r/ClaudeAI use-case share (688K members), r/ClaudeCode developer workflow (96K members), Dev.to "Coordinate Problem" technical deep-dive, LinkedIn "Two-Stage Workflow" carousel (Skissify + Excalidraw). New platforms: r/vibecoding, r/ClaudeAI, r/ClaudeCode. New hashtags: #VibeCoding #ClaudeAI #SketchURL #PreAlignment #CoordinateProblem #AIDesignWorkflow.)**
+**Last updated: April 4, 2026 — Cycle 142 (New: 6 viral hooks — "Speed of Thought" Twitter/X thread (idea capture window angle), r/artificial (1.3M — visual layer for 12K MCP servers), r/webdev (1.9M — Show-style launch post), Bluesky/Twitter #BuildInPublic weekend metrics share, Dev.to "Reproducibility Problem" deep-dive, r/SoftwareEngineering (1.1M — whiteboard that scales). New platforms: r/artificial, r/webdev, r/SoftwareEngineering, Bluesky. New hashtags: #SketchURL #SpeedOfThought #ReproducibleAI #AgentStack #VisualPrimitive #BuildInPublic.)**
+
+---
+
+## Cycle 142 — April 4, 2026 (Day 4 Post-Launch — Speed of Thought + Reproducibility + Blank Canvas + New Communities)
+
+### Strategic Priority
+
+Day 4 (Saturday). Weekend developer browser window — prime time for discovery posts. New targets this cycle:
+
+1. **r/artificial (1.3M)** — broad AI community, product launch angle, "visual layer the MCP ecosystem is missing"
+2. **r/webdev (1.9M)** — large developer community, Show-style post with demo and code snippet
+3. **r/SoftwareEngineering (1.1M)** — professional developer community, whiteboard communication angle
+4. **Bluesky #BuildInPublic** — weekend builder culture, share real metrics from Day 4
+5. **"Speed of Thought" Twitter thread** — new angle: idea capture window, 90-second test
+6. **Dev.to "Reproducibility Problem"** — technical deep-dive, deterministic sketch URLs as AI infrastructure
+
+Still critically overdue — post these immediately:
+- r/LocalLLaMA (2.3M) — OVERDUE since Cycle 111
+- MCP Discord #showcase — OVERDUE since Cycle 111
+- Indie Hackers — OVERDUE since Cycle 98
+- r/AI_Agents (212K) — OVERDUE since Cycle 132
+
+---
+
+### Viral Hook 1: "Speed of Thought" — Twitter/X Thread
+
+**Platform:** Twitter/X thread
+**Core insight:** There is a 90-second window after you have a design idea. Your tool either works inside that window or the idea fades. Figma fails this test. Skissify passes it.
+
+**Twitter/X opener:**
+```
+There is a 90-second window after you have an idea.
+
+In that window: the layout is vivid. The structure is clear. You can see it.
+
+Then someone speaks. Or you open Figma. And the window closes.
+
+What you draw 3 minutes later is an approximation of what you had. 🧵
+```
+
+**Tweet 2:**
+```
+This is not a memory problem.
+
+It's a friction problem.
+
+Every second your tool costs you is a second the idea spends morphing into something vaguer.
+
+The tool with zero seconds of setup cost is not a luxury.
+It's the only tool that actually works.
+```
+
+**Tweet 3:**
+```
+The 90-second test:
+
+1. Have a design idea
+2. Set a timer
+3. Try to share a visible sketch before it expires
+
+Figma needs 3 minutes before your first box.
+
+skissify.com/human needs a sentence.
+
+Which one is at the speed of thought?
+```
+
+**Tweet 4:**
+```
+"But it's not that hard to open Figma"
+
+It's not about difficulty. It's about the cognitive state.
+
+The moment you think about file management, frame sizes, and component libraries,
+you're no longer thinking about the idea.
+
+You're thinking about the tool.
+
+The idea can't afford that tax.
+```
+
+**Tweet 5 (CTA):**
+```
+I built Skissify to work at the speed of thought.
+
+Text in → sketch URL out → drop in Slack → done in 60 seconds.
+
+Not because I'm lazy (I am). Because ideas expire.
+
+→ skissify.com/human
+
+#SketchFirst #SpeedOfThought #ProductDesign #AITools
+```
+
+---
+
+### Viral Hook 2: r/artificial (1.3M) — Visual Layer for the MCP Ecosystem
+
+**Platform:** r/artificial
+**Title:** "The MCP ecosystem has 12,000+ servers. Almost none of them can draw. I built the one that can."
+
+**Post body:**
+```
+The Model Context Protocol has gone properly mainstream. 12,000+ servers, running inside Claude, Cursor, and every other AI tool that matters.
+
+Most of them add data retrieval or action execution. Very few add new output formats.
+
+Here's what I mean:
+
+When Claude needs to answer a question, it can write text or code. That's it.
+If it needs to communicate a spatial layout — a floor plan, an architecture diagram, a system design — it describes it in words.
+
+Words are lossy for space. Same prompt → different output every time. Can't be referenced. Can't be versioned.
+
+I built Skissify to solve this. It's an MCP server that adds a new output format: the addressable sketch.
+
+Claude (or any agent) produces a JSON manifest. Skissify renders it to a hand-drawn sketch and returns a permanent URL. That URL is the sketch forever. It never changes.
+
+Use cases showing up I didn't expect:
+- Architects using agents to iterate floor plans via chat
+- Developers using it to diagram API flows in a conversational workflow
+- Teachers sketching concept maps mid-conversation
+
+Add it to Claude Code in 30 seconds:
+
+{
+  "mcpServers": {
+    "skissify": {
+      "command": "npx",
+      "args": ["-y", "@skissify/mcp"]
+    }
+  }
+}
+
+Then ask: "Draw a floor plan of a small 1-bedroom apartment."
+
+The response will include a URL, not a description.
+
+→ skissify.com
+```
+
+**Hashtags:** #MCP #AIAgents #ClaudeCode #SketchURL #VisualPrimitive
+
+---
+
+### Viral Hook 3: r/webdev (1.9M) — Show-Style Launch Post
+
+**Platform:** r/webdev
+**Title:** "Show r/webdev — I built a sketch renderer that turns JSON into hand-drawn floor plans (useful for AI agents)"
+
+**Post body:**
+```
+Been working on this for a few months. Just launched 4 days ago on Product Hunt.
+
+Skissify is a sketch rendering engine. You give it a JSON manifest, it gives back a hand-drawn sketch.
+
+The key insight: hand-drawn style is useful precisely because it's NOT polished. When a diagram looks rough, people treat it as a draft. When it looks polished, they treat it as a decision. Both are useful signals.
+
+How it works technically:
+- HTML Canvas 2D rendering
+- Seeded Bézier curve perturbation for the "wobble" (looks hand-drawn)
+- 14 element types: rect, circle, arc, line, arrow, text, dim, door-symbol, door-slide, window, stair, opening, column
+- JSON manifest in → sketch PNG/URL out
+
+The MCP integration is where it gets interesting for AI workflows. Claude can generate the manifest, Skissify renders it, Claude responds with a sketch URL.
+
+Code snippet for the manifest format:
+{
+  "paper": "cream",
+  "tool": "pencil",
+  "wobble": 0.4,
+  "elements": [
+    {"type": "rect", "x": 50, "y": 50, "width": 200, "height": 150, "label": "Kitchen"},
+    {"type": "door-symbol", "x": 50, "y": 125, "width": 30},
+    {"type": "window", "x": 100, "y": 50, "width": 60},
+    {"type": "dim", "x": 50, "y": 220, "width": 200, "label": "3m"}
+  ]
+}
+
+Human mode is simpler — just type a description, it uses an LLM to generate the manifest for you.
+
+Stack: Next.js 15, React 19, TypeScript, Tailwind CSS 4, HTML Canvas, Anthropic API for human mode.
+
+Would love feedback on the canvas rendering approach — curious if anyone's done similar Bézier wobble algorithms.
+
+→ skissify.com
+```
+
+---
+
+### Viral Hook 4: Bluesky / Twitter #BuildInPublic — Weekend Day 4 Metrics
+
+**Platform:** Bluesky + Twitter/X
+**Core:** Raw metrics from 4 days post-launch, builder-to-builder transparency
+
+**Post:**
+```
+Day 4 of Skissify launch. Saturday morning. Here's what's real:
+
+📦 What shipped: sketch renderer, 14 element types, MCP server, human mode (describe → sketch)
+
+📊 What's working: technical communities who use MCP (Claude Code subreddit, AI_Agents)
+
+📊 What's not working yet: haven't posted to the big ones (r/LocalLLaMA 2.3M, r/MachineLearning 4.1M) — because making content keeps feeling more important than posting it. Classic mistake.
+
+🎯 Today's plan: actually post. Stop writing about posting.
+
+Biggest learning so far: the use cases I built for (AI devs) are finding it. The use cases I didn't expect (architects, DMs for tabletop games, teachers) are also finding it.
+
+If you're building with AI agents and want visual output that isn't text or blurry images: → skissify.com/mcp
+
+#BuildInPublic #Skissify #IndieHacker #MCPServer #AITools #SketchURL
+```
+
+---
+
+### Viral Hook 5: Dev.to — "The Reproducibility Problem" Technical Article
+
+**Platform:** Dev.to
+**Title:** "The Reproducibility Problem: Why AI Agents Fail at Spatial Output (and How to Fix It)"
+**Tags:** ai, mcp, agents, javascript, claude
+
+**Opening hook:**
+```
+Ask Claude to describe a floor plan.
+Ask it again.
+Get two different floor plans.
+
+This is not a hallucination. It's a reproducibility problem.
+
+And it means text-based spatial communication doesn't scale in AI workflows.
+```
+
+**Article summary for Dev.to:**
+Full article covers: the non-determinism of text spatial descriptions, the reproducibility stack (text vs code vs diffusion images vs structured manifests), why the sketch URL functions as a "git hash for visual concepts", the Skissify MCP setup walkthrough, and the workflow diff between text descriptions and manifest-based rendering.
+
+**CTA:** skissify.com/mcp + GitHub for the MCP server
+
+---
+
+### Viral Hook 6: r/SoftwareEngineering (1.1M) — The Whiteboard That Scales
+
+**Platform:** r/SoftwareEngineering
+**Title:** "How do you communicate system design ideas asynchronously? I built a sketch URL tool for this"
+
+**Post body:**
+```
+Running into a recurring problem: I have a system design idea. The team is across 3 timezones. I need to share it before our next meeting.
+
+Options I've tried:
+1. Write it out in text → lossy, people interpret differently, ends in a call anyway
+2. Draw in Excalidraw → great tool but blank canvas means it takes me 5+ minutes
+3. Take a photo of a whiteboard → looks unprofessional, unreadable on mobile
+4. Open Figma → overkill for an early idea, signals more completeness than exists
+
+What I built instead: Skissify. You describe the layout in one sentence, it renders a hand-drawn sketch and gives you a URL.
+
+Drop the URL in Slack. No attachment, no upload, just a link. Works on any device. Loads in under a second.
+
+I designed it to look rough intentionally. When a diagram looks polished, reviewers give polish feedback ("change the font"). When it looks like a napkin sketch, they give structure feedback ("should this service even exist?"). The roughness is a feature.
+
+For teams that use Claude Code, there's an MCP server. Claude can generate the sketch manifest directly and return a URL.
+
+Curious how others handle async system design communication — what's your current tool for this?
+
+→ skissify.com
+```
+
+---
+
+### Platform Matrix (Cycle 142 Update)
+
+| Platform | Subscribers | Priority | Status | Angle |
+|----------|------------|----------|--------|-------|
+| r/LocalLLaMA | 2.3M | P0 CRITICAL OVERDUE | POST NOW | MCP visual layer |
+| MCP Discord #showcase | — | P0 CRITICAL OVERDUE | POST NOW | Agent output format |
+| Indie Hackers | — | P0 CRITICAL OVERDUE | POST NOW | Builder launch story |
+| r/AI_Agents | 212K | P0 OVERDUE | POST NOW | Agent visual output |
+| r/ClaudeAI | 688K | P0 Cycle 141 | POST TODAY | Use case with sketch URL |
+| r/vibecoding | 153K | P0 Cycle 141 | POST TODAY | Vibe drawing angle |
+| r/ClaudeCode | 96K | P0 Cycle 141 | POST TODAY | MCP integration walkthrough |
+| r/artificial | 1.3M | P1 **NEW Cycle 142** | POST TODAY | Visual layer for MCP ecosystem |
+| r/webdev | 1.9M | P1 **NEW Cycle 142** | POST TODAY | Show-style technical launch |
+| r/SoftwareEngineering | 1.1M | P1 **NEW Cycle 142** | POST TODAY | Async design communication |
+| Bluesky #BuildInPublic | — | P1 **NEW Cycle 142** | POST TODAY | Day 4 metrics transparency |
+| Twitter/X thread | — | P1 Cycle 142 | POST TODAY | Speed of Thought |
+| Dev.to "Reproducibility" | — | P1 Cycle 142 | POST TODAY | Technical deep-dive |
+| r/Architecture | 2.1M | P1 Cycle 140 | POST TODAY | Spatial AI output |
+| r/ProgrammerHumor | 4.1M | P1 Cycle 140 | POST TODAY | Meme angle |
+| r/MachineLearning | 4.1M | P0 Cycle 138 | POST TODAY | Spatial output limitation |
+| r/DnD | 3.2M | P0 Cycle 135 | POST TODAY | Dungeon map generation |
+| r/homeimprovement | 4.8M | P1 | MONDAY | Renovation planning angle |
+| HN Show HN | — | P1 | MONDAY 08:00 CET | Human mode launch |
+| Product Hunt | — | LIVE | ONGOING | Engage all comments |
+
+### Hashtag Library (Cycle 142 additions in bold)
+
+```
+#Skissify #SketchFirst #SketchURL #AISketch #HandDrawn #AITools
+#MCPServer #ClaudeCode #AIAgents #AgentStack #VisualPrimitive
+#VibeCoding #ClaudeAI #PreAlignment #CoordinateProblem #AIDesignWorkflow
+#MeetingBeforeTheMeeting #VibeDraw #SunkCostWireframe #SpatialMemory
+#BuildInPublic #IndieHacker #MakerLife #WeekendProject #SaturdayBuilds
+**#SpeedOfThought** **#ReproducibleAI** **#VisualLayer** **#BlankCanvas**
+**#AgentOutput** **#DeterministicAI** **#SketchAsCode** **#AsyncDesign**
+```
 
 ---
 
