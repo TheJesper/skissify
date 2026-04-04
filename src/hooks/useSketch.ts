@@ -107,6 +107,16 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     [updateSketch]
   );
 
+  const setRoomFont = useCallback(
+    (roomFont: SkissifyFont) => updateSketch({ roomFont }),
+    [updateSketch]
+  );
+
+  const setTitleFont = useCallback(
+    (titleFont: SkissifyFont) => updateSketch({ titleFont }),
+    [updateSketch]
+  );
+
   const setRenderStyle = useCallback(
     (renderStyle: RenderStyle) => {
       // Blueprint mode auto-switches paper to blueprint
@@ -1237,6 +1247,8 @@ export function useSketch(initialData?: SketchData, initialPresetName?: string) 
     setInkColor,
     setTextFont,
     setDimFont,
+    setRoomFont,
+    setTitleFont,
     loadPreset,
     updateFromJson,
     addElement,

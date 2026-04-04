@@ -204,6 +204,8 @@ function EditorInner({
     setInkColor,
     setTextFont,
     setDimFont,
+    setRoomFont,
+    setTitleFont,
     setTitle,
     loadPreset,
     updateFromJson,
@@ -872,6 +874,8 @@ function EditorInner({
             inkColor={sketch.inkColor}
             textFont={sketch.textFont}
             dimFont={sketch.dimFont}
+            roomFont={sketch.roomFont}
+            titleFont={sketch.titleFont}
             width={sketch.width}
             height={sketch.height}
             selectedCount={selectedElements.size}
@@ -889,6 +893,8 @@ function EditorInner({
             onInkColor={setInkColor}
             onTextFont={setTextFont}
             onDimFont={setDimFont}
+            onRoomFont={setRoomFont}
+            onTitleFont={setTitleFont}
             onResize={handleResize}
             onAddElement={addElement}
             onDeleteSelected={deleteSelected}
@@ -1080,6 +1086,8 @@ function EditorInner({
           inkColor={sketch.inkColor}
           textFont={sketch.textFont}
           dimFont={sketch.dimFont}
+          roomFont={sketch.roomFont}
+          titleFont={sketch.titleFont}
           width={sketch.width}
           height={sketch.height}
           selectedCount={selectedElements.size}
@@ -1097,6 +1105,8 @@ function EditorInner({
           onInkColor={setInkColor}
           onTextFont={setTextFont}
           onDimFont={setDimFont}
+          onRoomFont={setRoomFont}
+          onTitleFont={setTitleFont}
           onResize={handleResize}
           onAddElement={addElement}
           onDeleteSelected={deleteSelected}

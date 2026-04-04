@@ -286,6 +286,16 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       for (const s of sides) {
         parts.push(`<path d="${pointsToPath(s)}" ${sa}/>`);
       }
+      // Render rect label if present — uses roomFont if set, otherwise textFont
+      if (E(el).label) {
+        const labelColor = sketch.paper === "blueprint" ? "#e0f0ff" : (el.color || defaultColor);
+        const roomFontCss = resolveFontCssSvg(sketch.roomFont ?? sketch.textFont, "'Courier New', monospace");
+        const lx = el.x + 5;
+        const ly = el.y + (el.h / 2) + 4;
+        parts.push(
+          `<text x="${lx}" y="${ly}" font-family="${roomFontCss}" font-size="9" fill="${labelColor}">${escapeXml(String(E(el).label))}</text>`
+        );
+      }
       break;
     }
 
@@ -330,11 +340,13 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
       const lineSpacing = fontSize * lineHeightMultiplier;
       const rotation = (Math.sin(hashElement(el)) * sketch.humanness * 2 * Math.PI) / 180;
       const fillColor = el.color || defaultColor;
-      // Respect per-element fontFamily override, then sketch-level textFont, then default
-      const textFontCss = resolveFontCssSvg(
-        (et.fontFamily as SkissifyFont | undefined) ?? sketch.textFont,
-        "'Courier New', monospace"
+      // Respect per-element fontFamily override, then sketch-level textFont/titleFont, then default.
+      // Large text (fontSize >= 14) uses titleFont if set and no per-element override is present.
+      const isTitleTextSvg = fontSize >= 14;
+      const svgLevelFont = (et.fontFamily as SkissifyFont | undefined) ?? (
+        isTitleTextSvg ? (sketch.titleFont ?? sketch.textFont) : sketch.textFont
       );
+      const textFontCss = resolveFontCssSvg(svgLevelFont, "'Courier New', monospace");
 
       // Build lines: split on \n (maxWidth word-wrap is approximate in SVG via tspan)
       const rawLines = content.split("\n");
@@ -909,6 +921,8 @@ export function renderSketchToSVG(sketch: SketchData, watermark = false): string
   const usedFonts = new Set<string>();
   if (sketch.textFont) usedFonts.add(sketch.textFont);
   if (sketch.dimFont) usedFonts.add(sketch.dimFont);
+  if (sketch.roomFont) usedFonts.add(sketch.roomFont);
+  if (sketch.titleFont) usedFonts.add(sketch.titleFont);
   sketch.elements.forEach((el) => {
     const anyEl = el as unknown as Record<string, unknown>;
     if (typeof anyEl.fontFamily === "string") usedFonts.add(anyEl.fontFamily);

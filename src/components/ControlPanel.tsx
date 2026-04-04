@@ -42,6 +42,10 @@ interface ControlPanelProps {
   inkColor: string;
   textFont?: SkissifyFont;
   dimFont?: SkissifyFont;
+  /** Font for room/area labels drawn inside `rect` elements via the `label` prop */
+  roomFont?: SkissifyFont;
+  /** Font for title/caption text (large text elements, fontSize >= 14) */
+  titleFont?: SkissifyFont;
   width?: number;
   height?: number;
   selectedCount: number;
@@ -59,6 +63,8 @@ interface ControlPanelProps {
   onInkColor: (c: string) => void;
   onTextFont: (f: SkissifyFont) => void;
   onDimFont: (f: SkissifyFont) => void;
+  onRoomFont: (f: SkissifyFont) => void;
+  onTitleFont: (f: SkissifyFont) => void;
   onResize: (w: number, h: number) => void;
   onAddElement: (type: string) => void;
   onDeleteSelected: () => void;
@@ -763,6 +769,8 @@ export default function ControlPanel({
   inkColor,
   textFont,
   dimFont,
+  roomFont,
+  titleFont,
   width,
   height,
   selectedCount,
@@ -777,6 +785,8 @@ export default function ControlPanel({
   onInkColor,
   onTextFont,
   onDimFont,
+  onRoomFont,
+  onTitleFont,
   onResize,
   onAddElement,
   onDeleteSelected,
@@ -979,47 +989,41 @@ export default function ControlPanel({
         </div>
       </Section>
 
-      {/* Text Font */}
+      {/* Text Font — 4 categories */}
       <Section title="Text Font" collapsed={isCollapsed("text-font")} onToggleCollapse={() => toggleSection("text-font")}>
         <div className="space-y-2">
-          <div>
-            <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">Labels &amp; Text</label>
-            <div className="grid grid-cols-2 gap-1">
-              {FONT_OPTIONS.map((f) => (
-                <button
-                  key={f.key}
-                  onClick={() => onTextFont(f.key)}
-                  className={`px-2 py-1.5 rounded text-xs transition-all border ${
-                    (textFont ?? "courier") === f.key
-                      ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5]"
-                      : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
-                  }`}
-                  style={{ fontFamily: f.css }}
-                >
-                  {f.label}
-                </button>
-              ))}
+          {(
+            [
+              { label: "Labels & Text", value: textFont, onChange: onTextFont, hint: "text elements, rect labels fallback" },
+              { label: "Dimensions", value: dimFont, onChange: onDimFont, hint: "dim element labels" },
+              { label: "Room Labels", value: roomFont ?? textFont, onChange: onRoomFont, hint: "rect label (room names)" },
+              { label: "Title / Caption", value: titleFont ?? textFont, onChange: onTitleFont, hint: "large text ≥ 14px" },
+            ] as const
+          ).map(({ label, value, onChange, hint }) => (
+            <div key={label}>
+              <div className="flex items-center gap-1 mb-1">
+                <label className="text-[10px] text-[#657b83] uppercase tracking-wide">{label}</label>
+                <span className="text-[8px] text-[#93a1a1] ml-auto normal-case">{hint}</span>
+              </div>
+              <div className="grid grid-cols-3 gap-1">
+                {FONT_OPTIONS.map((f) => (
+                  <button
+                    key={f.key}
+                    onClick={() => onChange(f.key)}
+                    className={`px-1.5 py-1 rounded text-[11px] transition-all border ${
+                      (value ?? "courier") === f.key
+                        ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5]"
+                        : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
+                    }`}
+                    style={{ fontFamily: f.css }}
+                    title={`${label}: ${f.label}`}
+                  >
+                    {f.label}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-          <div>
-            <label className="text-[10px] text-[#657b83] uppercase tracking-wide block mb-1">Dimensions</label>
-            <div className="grid grid-cols-2 gap-1">
-              {FONT_OPTIONS.map((f) => (
-                <button
-                  key={f.key}
-                  onClick={() => onDimFont(f.key)}
-                  className={`px-2 py-1.5 rounded text-xs transition-all border ${
-                    (dimFont ?? "courier") === f.key
-                      ? "ring-2 ring-[#268bd2] border-transparent bg-[#eee8d5]"
-                      : "border-[#93a1a1] bg-[#fdf6e3] hover:bg-[#fdf6e3]/80"
-                  }`}
-                  style={{ fontFamily: f.css }}
-                >
-                  {f.label}
-                </button>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </Section>
 

@@ -458,6 +458,17 @@ export interface SketchData {
   textFont?: SkissifyFont;
   /** Default font for dimension labels */
   dimFont?: SkissifyFont;
+  /**
+   * Font for room/area labels — text drawn inside `rect` elements via the `label` property.
+   * Falls back to `textFont` if not set.
+   */
+  roomFont?: SkissifyFont;
+  /**
+   * Font for title/caption text elements (e.g. drawing title, section headings).
+   * Applied to text elements with `fontSize >= 14` when no per-element override is set.
+   * Falls back to `textFont` if not set.
+   */
+  titleFont?: SkissifyFont;
   /** Render style: affects wobble parameters and drawing mode */
   renderStyle?: RenderStyle;
   /** Metadata for blueprint title block overlay */

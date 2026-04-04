@@ -551,7 +551,7 @@ function renderElement(
           HL(ctx, ix + ico(), iy + irh + ico(), ix + ico(), iy + ico(), { ...opts, seed: opts.seed! + 14 }, color, tool, paper, rng, h);
         }
       }
-      // Render label if present
+      // Render label if present — uses roomFont if set, otherwise falls back to textFont
       if (el.label) {
         renderElement(ctx, {
           type: "text",
@@ -560,6 +560,8 @@ function renderElement(
           content: el.label,
           size: 9,
           color: resolveColor(el, sketch, true),
+          // Use roomFont as per-element override (SkissifyFont key) if defined
+          fontFamily: sketch.roomFont,
         }, idx + 500, sketch);
       }
       break;
@@ -633,11 +635,13 @@ function renderElement(
       } else {
         ctx.fillStyle = tc;
       }
-      // Per-element fontFamily overrides sketch-level textFont, which overrides default
-      const textFontCss = resolveFontCss(
-        (el.fontFamily as SkissifyFont | undefined) ?? sketch.textFont,
-        "'Courier New', monospace"
+      // Per-element fontFamily overrides sketch-level textFont/titleFont, which overrides default.
+      // Large text (fontSize >= 14) uses titleFont if defined and no per-element override is set.
+      const isTitleText = size >= 14;
+      const sketchLevelFont = (el.fontFamily as SkissifyFont | undefined) ?? (
+        isTitleText ? (sketch.titleFont ?? sketch.textFont) : sketch.textFont
       );
+      const textFontCss = resolveFontCss(sketchLevelFont, "'Courier New', monospace");
       ctx.font = `${size}px ${textFontCss}`;
 
       // Build lines: split on \n first, then word-wrap each segment if maxWidth is set
