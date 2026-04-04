@@ -830,6 +830,7 @@ function EditorInner({
             onPasteStyle={pasteStyle}
             hasStyleClipboard={hasStyleClipboard}
             onDuplicateSelected={() => { copySelected(); pasteElements(); }}
+            onSelectSameType={selectSameType}
             onRoomFont={setRoomFont}
             onTitleFont={setTitleFont}
           />
@@ -1026,6 +1027,7 @@ function EditorInner({
             onPasteStyle={pasteStyle}
             hasStyleClipboard={hasStyleClipboard}
             onDuplicateSelected={() => { copySelected(); pasteElements(); }}
+            onSelectSameType={selectSameType}
             onRoomFont={setRoomFont}
             onTitleFont={setTitleFont}
           />

@@ -167,6 +167,11 @@ interface ControlPanelProps {
   onSetElementLayer?: (layerId: string | undefined) => void;
   /** Called to duplicate selected elements (copy + paste with offset) */
   onDuplicateSelected?: () => void;
+  /**
+   * Called to select all elements of the same type(s) as the currently selected elements.
+   * Shows a contextual "Select all [type]" button in the Selection panel.
+   */
+  onSelectSameType?: () => void;
 }
 
 const paperTypes: { key: PaperType; label: string; color: string }[] = [
@@ -833,6 +838,7 @@ export default function ControlPanel({
   onRenameLayer,
   onSetElementLayer,
   onDuplicateSelected,
+  onSelectSameType,
 }: ControlPanelProps) {
   // Normalize inkColor for comparison (handle #111 vs #111111)
   const normalizeColor = (c: string) => {
@@ -1121,6 +1127,21 @@ export default function ControlPanel({
                       <path d="M12 4h1a2 2 0 0 1 2 2v1"/>
                     </svg>
                     Dupe
+                  </button>
+                )}
+                {onSelectSameType && (
+                  <button
+                    onClick={onSelectSameType}
+                    title="Select all elements of the same type(s) as the current selection — Ctrl+K → select same type"
+                    className="px-2 py-0.5 bg-[#eee8d5] hover:bg-[#ddd8c5] text-[#586e75] rounded text-xs flex items-center gap-1"
+                  >
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M5 3h14"/>
+                      <path d="M5 9h14"/>
+                      <path d="M5 15h14"/>
+                      <path d="M5 21h14"/>
+                    </svg>
+                    All same
                   </button>
                 )}
                 <button
@@ -1608,14 +1629,14 @@ export default function ControlPanel({
 
       {/* Elements List */}
       {elements && onSelectElement && onToggleVisibility && selectedElements && (
-        <Section title={`Elements (${elements.length})`} collapsed={isCollapsed("elements-list")} onToggleCollapse={() => toggleSection("elements-list")}>
-          <ElementsListPanel
-            elements={elements}
-            selectedElements={selectedElements}
-            onSelectElement={onSelectElement}
-            onToggleVisibility={onToggleVisibility}
-          />
-        </Section>
+        <ElementsListSection
+          elements={elements}
+          selectedElements={selectedElements}
+          onSelectElement={onSelectElement}
+          onToggleVisibility={onToggleVisibility}
+          collapsed={isCollapsed("elements-list")}
+          onToggleCollapse={() => toggleSection("elements-list")}
+        />
       )}
 
       {/* Layers Panel */}
@@ -1637,6 +1658,132 @@ export default function ControlPanel({
       <Section title="Add Element" collapsed={isCollapsed("add-element")} onToggleCollapse={() => toggleSection("add-element")}>
         <ElementThumbnailPanel paper={paper} onAddElement={onAddElement} />
       </Section>
+    </div>
+  );
+}
+
+/**
+ * A specialised collapsible section for the Elements List that owns its own
+ * search/filter state. Keeps the filter query local so it doesn't pollute the
+ * rest of the ControlPanel state.
+ */
+function ElementsListSection({
+  elements,
+  selectedElements,
+  onSelectElement,
+  onToggleVisibility,
+  collapsed,
+  onToggleCollapse,
+}: {
+  elements: SketchElement[];
+  selectedElements: Set<number>;
+  onSelectElement: (idx: number, shiftKey: boolean) => void;
+  onToggleVisibility: (idx: number) => void;
+  collapsed: boolean;
+  onToggleCollapse: () => void;
+}) {
+  const [filterQuery, setFilterQuery] = useState("");
+
+  const matchCount = (() => {
+    if (!filterQuery.trim()) return elements.length;
+    const q = filterQuery.trim().toLowerCase();
+    let n = 0;
+    for (let i = 0; i < elements.length; i++) {
+      const el = elements[i];
+      const a = el as unknown as Record<string, unknown>;
+      const parts: string[] = [el.type, String(i)];
+      if (el.type === "text") {
+        const t = (a.text as string) || (a.content as string) || "";
+        if (t) parts.push(t);
+      }
+      if ((el.type === "rect" || el.type === "dim") && a.label) {
+        parts.push(a.label as string);
+      }
+      if (parts.join(" ").toLowerCase().includes(q)) n++;
+    }
+    return n;
+  })();
+
+  const title = filterQuery.trim()
+    ? `Elements (${matchCount}/${elements.length})`
+    : `Elements (${elements.length})`;
+
+  return (
+    <div className="border-b border-[#eee8d5]">
+      <button
+        type="button"
+        onClick={onToggleCollapse}
+        className="w-full flex items-center justify-between px-3 py-2.5 text-left cursor-pointer hover:bg-[#e8e0cc]/40 transition-colors"
+        aria-expanded={!collapsed}
+      >
+        <h3 className="text-[10px] font-semibold uppercase tracking-wider text-[#93a1a1]">
+          {title}
+        </h3>
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="text-[#93a1a1] shrink-0 transition-transform duration-150"
+          style={{ transform: collapsed ? "rotate(-90deg)" : "rotate(0deg)" }}
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
+      {!collapsed && (
+        <div className="px-3 pb-2.5 pt-0.5 space-y-1.5">
+          {/* Search input — only shown when there are enough elements to warrant filtering */}
+          {elements.length >= 6 && (
+            <div className="relative">
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="absolute left-2 top-1/2 -translate-y-1/2 text-[#93a1a1] pointer-events-none"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                type="text"
+                value={filterQuery}
+                onChange={(e) => setFilterQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Escape") setFilterQuery("");
+                  e.stopPropagation();
+                }}
+                placeholder="Filter by type or label…"
+                className="w-full bg-[#fdf6e3] border border-[#93a1a1]/60 rounded pl-6 pr-6 py-1 text-[10px] text-[#586e75] placeholder:text-[#93a1a1] focus:ring-1 focus:ring-[#268bd2] focus:outline-none"
+              />
+              {filterQuery && (
+                <button
+                  onClick={() => setFilterQuery("")}
+                  className="absolute right-1.5 top-1/2 -translate-y-1/2 text-[#93a1a1] hover:text-[#586e75] w-4 h-4 flex items-center justify-center rounded text-[10px]"
+                  title="Clear filter"
+                >
+                  ×
+                </button>
+              )}
+            </div>
+          )}
+          <ElementsListPanel
+            elements={elements}
+            selectedElements={selectedElements}
+            onSelectElement={onSelectElement}
+            onToggleVisibility={onToggleVisibility}
+            filterQuery={filterQuery}
+          />
+        </div>
+      )}
     </div>
   );
 }

@@ -55,11 +55,30 @@ function getLabel(el: SketchElement, idx: number): string {
   return `${el.type} #${idx}`;
 }
 
+/** Get the full searchable text for an element (type + label/text content) */
+function getSearchText(el: SketchElement, idx: number): string {
+  const a = el as unknown as Record<string, unknown>;
+  const parts: string[] = [el.type, String(idx)];
+  if (el.type === "text") {
+    const t = (a.text as string) || (a.content as string) || "";
+    if (t) parts.push(t);
+  }
+  if (el.type === "rect" && a.label) {
+    parts.push(a.label as string);
+  }
+  if (el.type === "dim" && a.label) {
+    parts.push(a.label as string);
+  }
+  return parts.join(" ").toLowerCase();
+}
+
 interface ElementsListPanelProps {
   elements: SketchElement[];
   selectedElements: Set<number>;
   onSelectElement: (idx: number, shiftKey: boolean) => void;
   onToggleVisibility: (idx: number) => void;
+  /** Optional search/filter query — hides elements whose type+label don't match */
+  filterQuery?: string;
 }
 
 export default function ElementsListPanel({
@@ -67,6 +86,7 @@ export default function ElementsListPanel({
   selectedElements,
   onSelectElement,
   onToggleVisibility,
+  filterQuery = "",
 }: ElementsListPanelProps) {
   if (elements.length === 0) {
     return (
@@ -74,18 +94,34 @@ export default function ElementsListPanel({
     );
   }
 
+  const query = filterQuery.trim().toLowerCase();
+
+  // Build the list of visible indices (in reverse z-order, highest first)
+  const visibleEntries: Array<{ idx: number; el: SketchElement; label: string }> = [];
+  for (let visualIdx = 0; visualIdx < elements.length; visualIdx++) {
+    const idx = elements.length - 1 - visualIdx;
+    const el = elements[idx];
+    const label = getLabel(el, idx);
+    // Apply search filter
+    if (query && !getSearchText(el, idx).includes(query)) continue;
+    visibleEntries.push({ idx, el, label });
+  }
+
+  if (visibleEntries.length === 0) {
+    return (
+      <p className="text-[10px] text-[#93a1a1] italic">
+        No elements match &ldquo;{filterQuery}&rdquo;
+      </p>
+    );
+  }
+
   return (
     <div className="max-h-52 overflow-y-auto -mx-1">
-      {/* Render in reverse so top element (highest z-order) appears first — Figma convention */}
-      {[...elements].map((_, visualIdx) => {
-        // Reverse: visual position 0 → last element in array (top layer)
-        const idx = elements.length - 1 - visualIdx;
-        const el = elements[idx];
+      {visibleEntries.map(({ idx, el, label }) => {
         const isSelected = selectedElements.has(idx);
         const isHidden = el.visible === false;
         const isLocked = !!(el as unknown as Record<string, unknown>).locked;
         const icon = TYPE_ICONS[el.type] || "?";
-        const label = getLabel(el, idx);
 
         return (
           <button

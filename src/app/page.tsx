@@ -946,6 +946,7 @@ function EditorInner({
             onRenameLayer={renameLayer}
             onSetElementLayer={setElementLayer}
             onDuplicateSelected={() => { copySelected(); pasteElements(); }}
+            onSelectSameType={selectSameType}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -1157,6 +1158,7 @@ function EditorInner({
           onRenameLayer={renameLayer}
           onSetElementLayer={setElementLayer}
           onDuplicateSelected={() => { copySelected(); pasteElements(); }}
+          onSelectSameType={selectSameType}
         />
       </MobileBottomSheet>
     </div>
