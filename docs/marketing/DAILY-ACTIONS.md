@@ -2,6 +2,69 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #129 Actions (Saturday April 4, 05:56 Stockholm) — FOR MONDAY APRIL 6
+
+### Context: Run #129 Key New Findings
+- **A2A co-governed under Linux Foundation (AAIF)** — Salesforce, SAP, Workday already deploying; enterprise path is real NOW
+- **MCP Registry at 6,400+ servers** (up from 5,800 in Run #128 — +600 in ~2 weeks; accelerating)
+- **Pinterest production MCP deployment** — enterprise private MCP registries are real; Skissify Docker = enterprise pitch
+- **Pricing floor $9–15/mo confirmed** — three independent sources agree EUR 5/mo Pro is below market
+- **Lucidchart confirmed as closest JSON-input competitor** — enterprise-priced, no hand-drawn; our niche is clear
+- **MCP Registry submission CRITICAL RED — 30th consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Monday): MCP Registry Submission (Run #30 — Final Escalation)
+
+**30 consecutive runs have flagged this as critical and it remains unconfirmed. This is the single highest-leverage action in the Skissify roadmap.** The window has a hard deadline: MCP A2A Q3 2026 launch means tools listed before Q3 build discovery ranking and usage statistics that unlisted tools cannot recover. A2A is now also AAIF/Linux Foundation standard adopted by Salesforce/SAP/Workday — enterprise agents will search the registry.
+
+**Registry listing copy (Run #129 update — adds AAIF/enterprise framing):**
+> "Skissify — headless JSON→hand-drawn SVG renderer. Visual output sub-agent for MCP/A2A pipelines. Works with Claude, GPT-4, CrewAI, LangGraph, n8n, Mastra. AAIF-compatible. Zero Chromium. Sub-100ms. XSS-safe Canvas 2D. Schema-driven: floor plans, napkin diagrams, wireframes, architecture sketches. Architectural elements: doors, windows, stairs, room dimensions, columns. Keywords: hand-drawn, floor plan, sketch renderer, JSON, SVG, no browser, visual output, agent diagram, architecture."
+
+**Steps Monday:**
+1. Submit to registry.modelcontextprotocol.io
+2. Submit to Claude Connectors at claude.com/connectors
+3. Confirm npm MCP package is published first
+4. Post in Run #130: "Submitted. URL: ___"
+
+---
+
+### Action 2 (HIGH — Monday): Add EUR 9–12/mo "Pro" Tier to Pricing Page
+
+**New from Run #129**: Three independent 2026 pricing data sources confirm $2–5/month standalone tier is below the validated market floor for developer tools. EUR 5/mo Pro is leaving revenue on the table. The recommended restructure: introduce EUR 9–12/mo "Pro" with 5,000 renders/month + API access.
+
+**Why now**: This is a pricing page edit + Stripe product addition — no code change to the product. It can be done in under 2 hours. The current EUR 5/mo tier stays; EUR 9–12/mo becomes "Pro"; current "Pro" becomes "Indie". No existing user is disrupted (grandfather existing EUR 5/mo subscribers at EUR 5/mo).
+
+**Implementation:**
+- Rename current EUR 5/mo → "Indie" (500 renders/mo, no watermark, private)
+- Add new "Pro" at EUR 9/mo (5,000 renders, API access, team share)
+- Add EUR 15/mo "Studio" (unlimited renders, architectural element packs, floor plan templates)
+- Add EUR 5 one-time credit pack (2,000 renders) for EU no-subscription users
+- Update Stripe products + pricing page copy
+
+**Expected impact**: Pro conversion at EUR 9/mo from current EUR 5/mo Indie converts are the most price-elastic segment (already paying, want more renders). Second, architecture-vertical users will recognize the Studio tier as legitimately priced for their use case.
+
+---
+
+### Action 3 (HIGH — Monday): Publish "Visualize Your A2A Agent Pipeline with Skissify" Blog Post
+
+**New from Run #129**: A2A is not just a Q3 2026 developer feature — it is already enterprise-deployed under AAIF/Linux Foundation (Salesforce, SAP, Workday). A blog post targeting this audience will rank for searches that don't exist yet but will be high-intent when A2A adoption accelerates in Q2-Q3 2026.
+
+**Draft title**: "How to Visualize Your A2A Agent Graph with Skissify (MCP + AAIF Compatible)"
+
+**Structure:**
+1. What is A2A agent coordination (brief, link to AAIF)
+2. Why visual output matters for agent pipelines (audit trails, planning artifacts, client demos)
+3. Skissify as the visual output sub-agent — one MCP call, one hand-drawn SVG back
+4. JSON example: render a 3-node agent topology (orchestrator → analyzer → renderer)
+5. Call to action: MCP registry install + EUR 2/mo Indie
+
+**Why this works**: There are zero results for "A2A agent graph visualization" and "AAIF visual output MCP" right now. Publishing before Q3 2026 captures first-mover SEO for the entire A2A visualization category. This is the blog.skissify.com / dev.to post that will still be ranking in Q4 2026 when enterprise teams search.
+
+**Time estimate**: 45-minute post using existing skissify blog framework. Already have similar posts (see docs/marketing/blog/a2a-mcp-converge-skissify-fits-both.md for starting point).
+
+---
+
 ## [2026-04-04] — Strategy Run #128 Actions (Saturday April 4, 04:48 Stockholm) — FOR SUNDAY APRIL 5 / MONDAY APRIL 6
 
 ### Context: Run #128 Key New Findings

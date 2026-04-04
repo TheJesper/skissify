@@ -2,6 +2,48 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #129 (Saturday April 4, 05:56 Stockholm)
+
+### Theme: A2A Reaches Enterprise (Salesforce/SAP/Workday); Pricing Floor Confirmed at $9–15/mo; Pinterest MCP Production Validates Enterprise Path
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #129 Synthesis
+
+Run #129 introduces three new angles not present in previous runs: (1) A2A is not Q3 2026 developer-feature territory — it is already deployed at enterprise scale (Salesforce, SAP, Workday), validating a paying enterprise customer profile beyond indie developers, (2) independent pricing data from three 2026 sources converge on $9–15/month as the validated floor for developer tools, meaning EUR 5/mo Pro is leaving money on the table, (3) Pinterest's production MCP deployment confirms the "enterprise private MCP registry" pattern — Skissify's Docker self-hosted path is the enterprise play.
+
+**1. The EUR 2/mo payment trigger is not just for indie devs — A2A enterprise adoption changes the ceiling.** Prior runs framed A2A as a "Q3 2026 developer feature." Run #129 changes that framing: A2A is co-governed under AAIF (Linux Foundation), already adopted by Salesforce, SAP, and Workday at enterprise scale. These organizations are deploying agent pipelines TODAY that need visual output. The payment conversation shifts: an enterprise architect who builds a Salesforce agent pipeline and needs it visualized is not evaluating a EUR 2/mo tool — they are evaluating a EUR 15–19/mo Studio tier or an enterprise Docker self-hosted license. The EUR 2/mo entry tier validates intent; the enterprise path is where revenue lives.
+
+**Updated EUR 2/mo trigger**: "Your AI agent wrote a plan. Skissify draws it. EUR 2/month, no SDK, no browser, one curl command." This works for indie devs. For enterprise: "Your A2A pipeline needs visual artifacts. Skissify is the MCP sub-agent that renders them — self-hosted, XSS-safe, zero Chromium dependency."
+
+**2. EUR 5/mo Pro is below the validated $9–15/month market floor — consider repricing or tier renaming.** Three independent 2026 pricing sources (Valueships, NxCode, Growth Unhinged) agree: standalone $2–5/month tiers are below market for developer tools. The winning 2026 pattern: freemium (0) → flat base ($9–15/month) → credit overages. Skissify's current EUR 5/mo "Pro" slot sits below this floor. Two options: (a) reposition EUR 5/mo as "Indie" and introduce EUR 9–12/mo "Pro" with 5,000 renders + API access, or (b) keep EUR 5/mo but add a EUR 15–19/mo "Studio" tier immediately for the architecture vertical. Option (b) is lower risk (no current user disruption) and should be executed first.
+
+**3. Pinterest enterprise MCP validates Skissify's Docker self-hosted pitch.** Pinterest deployed domain-specific MCP servers at production scale in April 2026. The enterprise pattern: multiple domain-specific servers + private central registry. Architecture and construction firms will deploy similar patterns. A visual output MCP server (Skissify Docker) is a natural registry entry in any enterprise internal MCP catalog. The self-hosted pitch becomes: "Add Skissify to your enterprise MCP registry — hand-drawn visual output for your AI pipeline, no external API calls, runs on your infrastructure."
+
+**Updated payment trigger model (Run #129):**
+- EUR 0 → EUR 2/mo "Indie": visible render counter (15/20 renders) + "tldraw costs $6K/yr + browser; Skissify is €2/mo + curl"
+- EUR 2/mo → EUR 9–12/mo "Pro" *(recommended new tier)*: 5,000 renders/mo + API access + private sketches
+- EUR 9–12/mo → EUR 15–19/mo "Studio": architectural element packs + floor plan templates + priority support
+- EUR 0 → EUR 5 credit pack (2,000 renders): EU no-subscription segment
+- Enterprise: Docker self-hosted + XSS-safe SVG audit claim + private MCP registry deployment + A2A/AAIF compliant
+
+#### Enterprise Path — Concrete via Pinterest + A2A/AAIF
+
+Three signals in Run #129 that individually could be dismissed but together indicate an enterprise path is fundable: (1) Pinterest deployed production MCP — enterprise teams building private MCP registries want domain-specific tools, (2) Salesforce/SAP/Workday adopted A2A — enterprise AI pipelines exist at scale and need visual output, (3) Microsoft open-source AI Architecture Review Agents (Run #128) — Fortune 500 teams are building diagram-generating agents. Skissify is the only headless hand-drawn JSON→SVG tool in this ecosystem. The enterprise price point ($200–500/month self-hosted license) is not speculative — it is the standard for MCP tools deployed in enterprise private registries.
+
+#### Pricing Restructure Recommendation (Run #129 Synthesis)
+
+Current: Free (50 renders) → EUR 2/mo Pro → EUR 5/mo (under-defined)
+Recommended:
+```
+Free:         20 renders/mo, watermark, public only
+Indie:        EUR 2/mo — 500 renders, no watermark, private sketches
+Pro:          EUR 9–12/mo — 5,000 renders, API access, team share
+Studio:       EUR 15–19/mo — unlimited renders, arch elements, floor plan templates
+Enterprise:   EUR 200+/mo — Docker self-hosted, SSO, SLA, private MCP registry
+```
+This restructure captures: (a) current indie dev market at EUR 2/mo, (b) validated $9–15/mo floor with Pro, (c) architectural vertical premium at Studio, (d) enterprise Docker/MCP registry path.
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #128 (Saturday April 4, 04:48 Stockholm)
 
 ### Theme: A2A Protocol Makes "Skissify as Visual Sub-Agent" Concrete; Roundup SEO Gap is the Immediate Revenue Lever; Credit Model Mainstream

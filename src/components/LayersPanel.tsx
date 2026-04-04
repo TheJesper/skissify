@@ -87,14 +87,14 @@ export default function LayersPanel({
     <div className="space-y-1">
       {showEmpty ? (
         <div className="px-1 py-2 space-y-2">
-          <p className="text-[10px] text-neutral-500 leading-snug">
+          <p className="text-[10px] text-[#839496] leading-snug">
             No layers yet. Add the default floor plan layers or create your own.
           </p>
           <button
             onClick={() => {
               DEFAULT_LAYERS.forEach((l) => onAddLayer(l));
             }}
-            className="w-full px-3 py-1.5 bg-neutral-700 hover:bg-neutral-600 text-neutral-200 text-xs rounded transition-colors"
+            className="w-full px-3 py-1.5 bg-[#fdf6e3] hover:bg-[#eee8d5] text-[#073642] border border-[#93a1a1]/30 text-xs rounded transition-colors"
           >
             + Add default layers
           </button>
@@ -108,14 +108,14 @@ export default function LayersPanel({
               <li
                 key={layer.id}
                 className={`flex items-center gap-1.5 px-2 py-1.5 rounded group ${
-                  isAssigned ? "bg-neutral-700/60" : "hover:bg-neutral-800"
+                  isAssigned ? "bg-[#268bd2]/10 border border-[#268bd2]/20" : "hover:bg-[#fdf6e3]"
                 }`}
               >
                 {/* Visibility toggle */}
                 <button
                   title={layer.visible ? "Hide layer" : "Show layer"}
                   onClick={() => onSetLayerVisibility(layer.id, !layer.visible)}
-                  className="flex-shrink-0 w-5 h-5 flex items-center justify-center text-neutral-400 hover:text-neutral-100 transition-colors"
+                  className="flex-shrink-0 w-5 h-5 flex items-center justify-center text-[#657b83] hover:text-[#073642] transition-colors"
                 >
                   {layer.visible ? (
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -130,7 +130,7 @@ export default function LayersPanel({
 
                 {/* Color dot */}
                 <span
-                  className="flex-shrink-0 w-2.5 h-2.5 rounded-full border border-neutral-600"
+                  className="flex-shrink-0 w-2.5 h-2.5 rounded-full border border-[#93a1a1]/40"
                   style={{ backgroundColor: layer.color ?? "#839496" }}
                 />
 
@@ -145,12 +145,12 @@ export default function LayersPanel({
                       if (e.key === "Enter") commitEdit(layer.id);
                       if (e.key === "Escape") setEditingId(null);
                     }}
-                    className="flex-1 min-w-0 bg-neutral-700 text-neutral-100 text-xs px-1 py-0 rounded outline-none"
+                    className="flex-1 min-w-0 bg-[#fdf6e3] border border-[#268bd2]/50 text-[#073642] text-xs px-1 py-0 rounded outline-none focus:ring-1 focus:ring-[#268bd2]/30"
                   />
                 ) : (
                   <span
                     className={`flex-1 min-w-0 text-xs truncate cursor-default select-none ${
-                      layer.visible ? "text-neutral-200" : "text-neutral-500"
+                      layer.visible ? "text-[#073642]" : "text-[#93a1a1]"
                     }`}
                     onDoubleClick={() => startEdit(layer)}
                   >
@@ -160,7 +160,7 @@ export default function LayersPanel({
 
                 {/* Element count badge */}
                 {count > 0 && (
-                  <span className="flex-shrink-0 text-[9px] text-neutral-500 tabular-nums">
+                  <span className="flex-shrink-0 text-[9px] text-[#839496] tabular-nums">
                     {count}
                   </span>
                 )}
@@ -178,8 +178,8 @@ export default function LayersPanel({
                     }}
                     className={`flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity px-1.5 py-0.5 rounded text-[9px] font-medium ${
                       isAssigned
-                        ? "bg-blue-600/40 text-blue-300 hover:bg-red-700/40 hover:text-red-300"
-                        : "bg-neutral-700 text-neutral-300 hover:bg-blue-700/50 hover:text-blue-200"
+                        ? "bg-[#268bd2]/20 text-[#268bd2] hover:bg-[#dc322f]/15 hover:text-[#dc322f]"
+                        : "bg-[#eee8d5] text-[#657b83] hover:bg-[#268bd2]/15 hover:text-[#268bd2] border border-[#93a1a1]/30"
                     }`}
                   >
                     {isAssigned ? "✓" : "→"}
@@ -190,7 +190,7 @@ export default function LayersPanel({
                 <button
                   title="Remove layer"
                   onClick={() => onRemoveLayer(layer.id)}
-                  className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-4 h-4 flex items-center justify-center text-neutral-500 hover:text-red-400"
+                  className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-4 h-4 flex items-center justify-center text-[#839496] hover:text-[#dc322f]"
                 >
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                     <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
@@ -214,11 +214,11 @@ export default function LayersPanel({
               if (e.key === "Escape") { setAddingNew(false); setNewName(""); }
             }}
             placeholder="Layer name…"
-            className="flex-1 min-w-0 bg-neutral-700 text-neutral-100 text-xs px-2 py-1 rounded outline-none placeholder-neutral-500"
+            className="flex-1 min-w-0 bg-[#fdf6e3] border border-[#93a1a1]/30 text-[#073642] text-xs px-2 py-1 rounded outline-none focus:border-[#268bd2]/50 placeholder-[#93a1a1]"
           />
           <button
             onClick={commitAdd}
-            className="px-2 py-1 bg-blue-700 hover:bg-blue-600 text-white text-xs rounded transition-colors"
+            className="px-2 py-1 bg-[#268bd2] hover:bg-[#268bd2]/80 text-white text-xs rounded transition-colors"
           >
             Add
           </button>
@@ -226,7 +226,7 @@ export default function LayersPanel({
       ) : (
         <button
           onClick={() => setAddingNew(true)}
-          className="w-full mt-1 px-2 py-1 text-xs text-neutral-500 hover:text-neutral-300 hover:bg-neutral-800 rounded transition-colors flex items-center gap-1"
+          className="w-full mt-1 px-2 py-1 text-xs text-[#657b83] hover:text-[#073642] hover:bg-[#fdf6e3] rounded transition-colors flex items-center gap-1"
         >
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
             <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
@@ -237,7 +237,7 @@ export default function LayersPanel({
 
       {/* Quick help */}
       {layers.length > 0 && (
-        <p className="text-[9px] text-neutral-600 px-2 pt-1 leading-snug">
+        <p className="text-[9px] text-[#839496] px-2 pt-1 leading-snug">
           Double-click a name to rename. Select elements then click → to assign.
         </p>
       )}

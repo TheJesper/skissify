@@ -2,6 +2,86 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #129 (Saturday April 4, 05:56 Stockholm)
+
+### Status: 4 topics researched. KEY FINDINGS: **A2A co-governed under Linux Foundation / AAIF — enterprise adoption (Salesforce, SAP, Workday) accelerating beyond developer-only scope; Skissify's sub-agent positioning now has enterprise legitimacy.** **MCP Registry at 6,400+ servers (up from 5,800) — 600 new servers in ~2 weeks; growth accelerating.** **Pinterest deployed production-scale MCP in April 2026** — domain-specific MCP servers + central registry at enterprise scale. **Pricing floor confirmed at $9–15/month** — multiple independent sources confirm $2–5/month is below validated market floor for dev tools; EUR 5/mo Pro is likely leaving revenue on the table. **Sketch2scheme (XIX.AI) found — inverse direction competitor** (photo-of-sketch → digital diagram, not JSON → hand-drawn). **Lucidchart confirmed as closest JSON-input diagram competitor** (but enterprise-priced, no hand-drawn). **30th consecutive run: still no headless hand-drawn JSON→SVG API competitor found. MCP Registry submission CRITICAL RED (30 runs unconfirmed).**
+
+---
+
+### A2A Co-Governed Under Linux Foundation + AAIF — Enterprise Adoption Accelerates (STRATEGIC SIGNAL: ELEVATED)
+
+**Sources**: [MCP vs A2A Complete Guide 2026 — Pockit Tools](https://pockit.tools/blog/mcp-vs-a2a-ai-agent-protocols-complete-guide/), [Agentic Architectures: MCP and A2A — Dev.to](https://dev.to/topuzas/agentic-architectures-article-4-agentic-protocols-mcp-and-a2a-1577), verified 2026-04-04
+
+**New detail vs. Run #128**: Google's A2A protocol was donated to the Linux Foundation in June 2025 and is now co-governed with MCP under the AAIF (AI Agent Interoperability Framework). This is not just a Q3 2026 developer feature — it is infrastructure-level standardization already adopted by **Salesforce, SAP, and Workday**. Enterprise AI pipelines at Fortune 500 companies are deploying A2A today. When those pipelines need visual output, they will search the MCP/A2A registry for tools. Skissify's hand-drawn JSON renderer is the only candidate in that category.
+
+**Practical architecture pattern emerging in 2026**: Teams layer MCP (tool access) + A2A (agent coordination). Complex multi-agent flows produce JSON topology data. Skissify renders that topology as a hand-drawn sketch — architecture reviews, planning artifacts, client-facing visualizations. This is a concrete, enterprise-funded use case, not a hobbyist scenario.
+
+**For Skissify**: Add "A2A compatible" to MCP registry description. Blog post: "Visualize your A2A agent graph with Skissify — hand-drawn architecture diagrams from AI pipeline JSON." Target both Anthropic MCP docs audience AND emerging AAIF enterprise audience.
+
+**Threat assessment: CRITICAL OPPORTUNITY — A2A/AAIF standardization validates enterprise use case; enterprise adoption of A2A is already happening at Salesforce/SAP/Workday scale**
+
+---
+
+### MCP Registry at 6,400+ Servers — Growth Accelerating (ECOSYSTEM SIGNAL)
+
+**Sources**: [Pinterest MCP Production — InfoQ Apr 2026](https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/), [MCP Ecosystem v1.27 — Context Studios](https://www.contextstudios.ai/blog/mcp-ecosystem-in-2026-what-the-v127-release-actually-tells-us), verified 2026-04-04
+
+Registry count: **6,400+ servers** (updated from 5,800 in Run #128 — +600 servers in ~2 weeks). SDK downloads: **97 million/month**. Every major AI provider (Anthropic, OpenAI, Google DeepMind, Microsoft, AWS) has adopted MCP.
+
+**Pinterest production deployment (April 2026)**: Pinterest deployed domain-specific MCP servers at production scale — multiple specialized servers + a central internal registry for discovery. This is the Fortune 500 MCP adoption pattern now confirmed. Enterprise teams are building private registries of domain-specific MCP tools.
+
+**Implication for Skissify**: Enterprise teams with private MCP registries will include domain-specific visual output tools. A "sketch renderer" MCP server is a natural fit in any enterprise registry that includes architecture review agents (cf. Microsoft's open-source agent, confirmed Run #128). Skissify's self-hosted Docker path enables enterprise private deployment — this should be highlighted in enterprise pitch.
+
+**Threat assessment: POSITIVE — registry growth accelerating; hand-drawn JSON renderer gap persists through Run #129**
+
+---
+
+### Sketch2scheme (XIX.AI) — Inverse Direction Competitor Found (COMPETITIVE SIGNAL: LOW)
+
+**Sources**: [Sketch2scheme — XIX.AI](https://xix.ai/tool/sketch2scheme.html), [7 Best AI Diagram Tools 2026 — Level Up Coding](https://levelup.gitconnected.com/the-7-best-ai-diagram-tools-in-2026-reviewed-for-software-engineers-f18f258661d8), verified 2026-04-04
+
+**Sketch2scheme**: converts a **photo of a hand-drawn sketch → digital flowchart** via AI node/connection recognition. This is the inverse of Skissify's direction (JSON → hand-drawn output). Not a direct competitor — different user intent (digitizing existing sketches vs. generating sketches from data). However, it signals that the "hand-drawn sketch" aesthetic is gaining value: enough market demand exists for tools to digitize *from* hand-drawn, not just generate *to* hand-drawn.
+
+**Lucidchart (closest established JSON-input competitor)**: supports CSV/JSON/DB schema import for auto-diagram generation. Enterprise-priced ($12-19/user/mo). No hand-drawn aesthetic. This is the only established tool found (in 129 runs) that accepts structured JSON input for diagram generation — and it doesn't produce hand-drawn output.
+
+**SEO note**: "Best AI Diagram Tools 2026" roundups (Level Up Coding, InfraSketch, AiXoria, ScreenApp) now list 7-10 tools per article. Skissify appears in ZERO. 30-run carry-over from first SEO gap identification.
+
+**Threat assessment: VERY LOW (inverse direction, different use case) — Lucidchart confirms Skissify's JSON-input niche has no hand-drawn competitor at any price point**
+
+---
+
+### Pricing Floor at $9–15/Month — EUR 5/mo Pro Is Underpriced (PRICING SIGNAL: HIGH)
+
+**Sources**: [AI Pricing in 2026 — Valueships](https://www.valueships.com/post/ai-pricing-in-2026), [SaaS Pricing Strategy 2026 — NxCode](https://www.nxcode.io/resources/news/saas-pricing-strategy-guide-2026), [2026 SaaS Pricing — Growth Unhinged](https://www.growthunhinged.com/p/2025-state-of-saas-pricing-changes), verified 2026-04-04
+
+**Multiple independent 2026 sources converge**: $2–5/month standalone tier is below the validated market floor for developer tools. The 2026 winning pattern is: **freemium entry → $9–15/month flat base → credit/usage overages for high volume**. The hybrid model (flat base + per-use overage) is the dominant structure for AI tool pricing in 2026.
+
+**Implication for Skissify**: EUR 5/mo Pro (current plan) is below market. Market data suggests:
+- EUR 2/mo → keep as "Indie" (very low friction, proves willingness to pay)
+- EUR 9–15/mo → "Pro" (flat rate + 5,000 renders/mo) — this is where the validated price floor sits
+- Credit packs (EUR 5, 2,000 renders) → for EU users preferring no subscription
+
+**Caveat**: $2–5/month is still viable as a low-friction entry point for individual developers. The risk is that positioning it as "Pro" signals low value. Consider renaming EUR 2/mo to "Indie" and adding a EUR 9–12/mo "Pro" with substantially more renders + features.
+
+**Threat assessment: PRICING ACTION NEEDED — EUR 5/mo Pro is below market; consider EUR 9–12/mo Pro with render ceiling upgrade**
+
+---
+
+### Updated Competitor Matrix (Run #129 — Saturday April 4, 05:56)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **tldraw (April 2026)** | AI Image Pipeline template + 25x canvas perf. DAG execution engine. $6K/yr SDK 4.5.6. | Partial (Chromium, 5-8s cold start) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp` Feb 2026. Headless XML/SVG. 10K+ shapes. No Chromium. | YES (XML/SVG) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Excalidraw official MCP** | Feb 2026: Custom AI tokens (OpenAI/Claude/Gemini), radar charts. Shipping lull since Feb. Browser-dependent. | NO | YES | NO | YES (official) | **HIGH** |
+| **Lucidchart** | JSON/CSV/DB schema import for auto-diagrams. Enterprise-priced $12-19/user/mo. No hand-drawn. | YES (structured import) | NO | YES | NO | **MEDIUM (JSON-input competitor, no hand-drawn)** |
+| **Sketch2scheme (XIX.AI)** | Photo→digital flowchart via AI. Inverse direction. Not JSON→hand-drawn. | NO (photo input) | Inverse | YES | NO | **VERY LOW (different direction)** |
+| **Eraser DiagramGPT** | Text→D2 code + rendered diagrams. Architecture/ER/sequence. GitHub-native. Growing developer mindshare. | NO (text-based) | NO | YES | NO | **LOW-MEDIUM (roundup SEO)** |
+| **Microsoft AI Arch Agents** | Open-source, enterprise-funded. Auto-generates architecture diagrams from code. Not a sketch API. | Partial (framework-specific) | NO | YES | NO | **LOW (enterprise validation)** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #128 (Saturday April 4, 04:48 Stockholm)
 
 ### Status: 4 topics researched. KEY FINDINGS: **MCP Agent-to-Agent coordination confirmed for Q3 2026** — one agent calls another via MCP; Skissify's visual sub-agent positioning is now a concrete architecture pattern, not speculation. **Credit model adoption 126% YoY** — from 35 to 79/500 SaaS companies using credits (PricingSaaS 500); Skissify's per-render billing is trend-aligned. **D2 language + Eraser DiagramGPT** growing as developer-facing text→diagram alternatives; neither does hand-drawn. **Microsoft open-source AI Architecture Review Agents** — enterprise agent-diagram use case is real and funded. **"Best AI Diagram Tools 2026" roundups exist (InfraSketch, Level Up Coding, AiXoria)** — Skissify absent from all. **29th consecutive run: still no headless hand-drawn JSON→SVG API competitor found. MCP Registry submission CRITICAL RED (29 runs unconfirmed).**
