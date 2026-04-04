@@ -1,6 +1,34 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 140 (New: 3 blog posts — "Sunk Cost Wireframe" angle for Figma post, "Spatial Memory as First-Class Output" angle for floor plan post, "Input Method Is the Whole Story" angle for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 140 block with 6 viral hooks: "Sunk Cost Wireframe" Twitter thread + LinkedIn, r/Architecture spatial reasoning angle, r/ProgrammerHumor meme format, Dev.to "input method" technical article, Pinterest floor plan board strategy, LinkedIn "deterministic spatial output" thought leadership. New platforms: r/Architecture, r/ProgrammerHumor, Pinterest. New hashtags: #SunkCostWireframe #SpatialMemory #DeterministicOutput #DesignThinking #AIFloorPlan.)*
+*Last updated: April 5, 2026 — Cycle 141 (New: 3 blog posts — "Meeting Before the Meeting" pre-alignment angle for Figma post, "The Coordinate Problem" for floor plan/AI agents post, "Collaboration Handoff" two-stage workflow for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 141 block with 6 viral hooks: "Meeting Before the Meeting" Twitter/LinkedIn thread, r/vibecoding vibe drawing post (153K), r/ClaudeAI use-case share (688K), r/ClaudeCode MCP integration (96K), Dev.to "Coordinate Problem" technical article, LinkedIn "Two-Stage Workflow" post. New platforms: r/vibecoding, r/ClaudeAI, r/ClaudeCode. New hashtags: #VibeCoding #ClaudeAI #SketchURL #PreAlignment #CoordinateProblem #AIDesignWorkflow.)*
+
+---
+
+## Cycle 141 — What's New (April 5, 2026 — Day 5 Post-Launch)
+
+### Day 5 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "Meeting Before the Meeting" — Figma pre-alignment post (Cycle 141) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle141.md` |
+| Blog: "The Coordinate Problem" — AI agents floor plan post (Cycle 141) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle141.md` |
+| Blog: "Collaboration Handoff" — Excalidraw comparison (Cycle 141) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle141.md` |
+| SOCIAL-MEDIA.md Cycle 141 | DONE — 6 hooks: pre-alignment Twitter, r/vibecoding, r/ClaudeAI, r/ClaudeCode, Dev.to coordinate problem, LinkedIn two-stage workflow |
+| PRESS-KIT.md Cycle 141 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 141 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY (Day 5, absolute final window) |
+| r/LocalLLaMA (541K) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents (212K) | OVERDUE since Cycle 132 — post today |
+| r/vibecoding (153K) | NEW Cycle 141 — post today (Hook 2) |
+| r/ClaudeAI (688K) | NEW Cycle 141 — post today (Hook 3) |
+| r/ClaudeCode (96K) | NEW Cycle 141 — post today (Hook 4) |
+| r/Architecture (2.1M) | NEW Cycle 140 — still unposted |
+| r/ProgrammerHumor (4.1M) | NEW Cycle 140 — still unposted |
+| r/ExperiencedDevs (1.2M) | NEW Cycle 139 — still unposted |
+| r/MachineLearning (4.1M) | Cycle 138 — still unposted |
 
 ---
 

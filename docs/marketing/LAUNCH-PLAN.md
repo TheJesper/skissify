@@ -1,7 +1,74 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 140**
+**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 141**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 141 — Day 5 Pre-Alignment + Vibe Coding Communities + Coordinate Problem)
+
+### Cycle 141 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 141 ("Meeting Before the Meeting" angle — pre-alignment via rough sketch before Figma opens, Bill Buxton perceived completeness research, the 60-second test, two-meeting pattern with workflow table) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle141.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 141 ("Coordinate Problem" angle — why LLM text output loses spatial coordinate information, JSON manifest as rendering contract, deterministic output vs diffusion generation, versioning advantage) | `blog/how-ai-agents-draw-floor-plans-cycle141.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 141 ("Collaboration Handoff" angle — Skissify for explore stage, Excalidraw for document stage, 15-row feature table, four scenario analysis, two-stage workflow diagram) | `blog/skissify-vs-excalidraw-comparison-cycle141.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 141 — 6 new viral hooks: "Meeting Before the Meeting" Twitter/LinkedIn thread (pre-alignment angle), r/vibecoding vibe drawing post (153K), r/ClaudeAI use-case share (688K), r/ClaudeCode MCP integration walkthrough (96K), Dev.to "Coordinate Problem" technical explainer, LinkedIn "Two-Stage Workflow" post. New platforms: r/vibecoding, r/ClaudeAI, r/ClaudeCode. New hashtags: #VibeCoding #ClaudeAI #SketchURL #PreAlignment #CoordinateProblem #AIDesignWorkflow #MeetingBeforeTheMeeting. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 141 — Day 5 status table with new channels (r/vibecoding, r/ClaudeAI, r/ClaudeCode) | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 141 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 141 — Priority Actions (April 5–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (541K) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** (212K) — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/vibecoding** (153K) — NEW Cycle 141 | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/ClaudeAI** (688K) — NEW Cycle 141 | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ClaudeCode** (96K) — NEW Cycle 141 | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 4) |
+| **POST Twitter "Meeting Before Meeting" thread** — NEW Cycle 141 | P1 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 1) |
+| **PUBLISH Dev.to "Coordinate Problem" article** — NEW Cycle 141 | P1 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 5) |
+| **POST LinkedIn "Two-Stage Workflow"** — NEW Cycle 141 | P1 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 6) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — Day 5 absolute final window | Script in Cycle 139 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/Architecture** (2.1M) — NEW Cycle 140, still unposted | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/ProgrammerHumor** (4.1M) — NEW Cycle 140, still unposted | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ExperiencedDevs** (1.2M) — NEW Cycle 139, still unposted | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/MachineLearning** (4.1M) — Cycle 138, still unposted | P0 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 2) |
+| **SUBMIT Dev Hunt** — Cycle 138, still unsubmitted | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 5) |
+| **SUBMIT to MCP directories** (5 sites) — Cycle 137, still unsubmitted | P0 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/DnD** (3.2M) — Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1) |
+| **PUBLISH 3 Cycle 141 blogs to Dev.to** | P0 | TODAY staggered 10:00/13:00/16:00 CET | |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 4) |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 141 — New Ideas
+
+**Idea: r/ClaudeAI (688K) is the single highest-potential untapped community for Skissify.** Claude users are already sold on AI tools — they need use cases, not conversion. A use-case post with a real sketch URL (not just a description) will generate comments and shares from people who try it immediately. The post should include an actual sketch URL in the body so readers can see the output before clicking through. Frame as "here's what I built with Claude + Skissify" not "here's a product announcement."
+
+**Idea: r/vibecoding (153K) is perfectly positioned for the "vibe drawing" angle.** The community already celebrates using AI to generate code, diagrams, and artifacts without manual effort. Skissify is the visual output layer that vibe coding has been missing. The post frames it as "Claude can now draw instead of describe" — which is exactly the workflow enhancement this community will share with their networks.
+
+**Idea: r/ClaudeCode (96K, 4,200+ weekly contributors) is a high-signal technical community with real Claude Code users.** They will engage with the MCP integration story because they're already extending Claude with MCPs. A concrete setup walkthrough (config JSON + example tool call + example output) will be bookmarked and forwarded. This audience is comfortable with developer-facing content and will provide genuine technical feedback that generates organic conversation.
+
+**Idea: "The Coordinate Problem" is the most technically rigorous framing Skissify has.** LLMs failing at spatial coordinate output is a real, documented limitation. Framing Skissify as the solution to a specific LLM capability gap — not just a design tool — is the argument that resonates with ML engineers and AI researchers. This audience doesn't respond to "it's fast and free." They respond to "here's the exact capability boundary we're addressing and why."
+
+**Idea: The two-stage workflow (Skissify → Excalidraw) is the highest-value LinkedIn content format.** Engineering managers and design leads are actively deciding which tools to standardize across their teams. A concrete, named workflow ("explore in Skissify, document in Excalidraw") gives them a recommendation they can forward internally. LinkedIn posts with named workflow patterns consistently generate shares into corporate Slack channels — an audience that no social algorithm reaches.
+
+**Idea: The vibe coding hashtag (#VibeCoding) has 153K community members and strong momentum.** "Vibe drawing" as a coinable adjacent term positions Skissify alongside the vibe coding movement without competing with it. #VibeCoding posts in r/vibecoding and on Twitter consistently reach developer audiences who are experimenting with AI-augmented workflows. Using #VibeCoding + #SketchFirst in the same post connects Skissify to a movement that is already viral.
+
+### Cycle 141 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle141.md | DONE Cycle 141 |
+| Blog: how-ai-agents-draw-floor-plans-cycle141.md | DONE Cycle 141 |
+| Blog: skissify-vs-excalidraw-comparison-cycle141.md | DONE Cycle 141 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update + new platforms (r/vibecoding, r/ClaudeAI, r/ClaudeCode) + hashtag additions | DONE Cycle 141 |
+| PRESS-KIT.md — Cycle 141 Day 5 status table | DONE Cycle 141 |
+| LAUNCH-PLAN.md — Cycle 141 block | DONE Cycle 141 |
 
 ---
 
