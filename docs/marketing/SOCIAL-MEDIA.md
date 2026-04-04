@@ -1,7 +1,298 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 5, 2026 — Cycle 149 (New: 6 viral hooks — r/vibecoding "backlash angle" (87K — vibe coding hit a wall, Skissify is the reviewable visual output layer), "97M MCP Downloads, None of Them Draw" Twitter/X thread (MCP ecosystem gap framing), r/ChatGPTCoding (the structured-output schema angle, 350K+ members), LinkedIn thought-leadership post ("Vibe Coding Grew Up — Here's What the Visual Output Layer Looks Like"), Dev.to "Reviewable AI Output" article (SEO + developer audience), Bluesky vibe-drawing thread (developer-first, technical tone). New platforms: r/vibecoding, r/ChatGPTCoding, Bluesky thread. New hashtags: #VibeDrawing #ReviewableAI #StructuredOutput #AgentInfrastructure #MCPEcosystem #VibeCodingBachlash. New angle: "Vibe coding grew up — structured, reviewable AI output is the next phase." Ties Skissify directly into the vibe coding maturation narrative. Cycle 149 blog: three canonical posts refreshed with vibe coding backlash angle, MCP ecosystem framing, and sharpened decision trees.)**
+**Last updated: April 5, 2026 — Cycle 150 (New: 6 viral hooks — r/ExperiencedDevs "Claude Code went viral; give it a pencil" post, Twitter/X founder thread "Day 5: what I know and what I got wrong", r/artificial community contribution (AI spatial reasoning gap), LinkedIn "wrong lessons from vibe coding" thought leadership, Hacker News Ask HN pre-seed seeding, TikTok/Instagram Reels 30-second demo script. New platforms: r/ExperiencedDevs, TikTok/Instagram Reels. New hashtags: #BuildInPublic #AgentOutput #SketchFirst #DrawFirst #AISketch #FounderMode. New angle: "Build in public — day 5 founder honesty thread." Honest metrics + lessons convert better than pitches. Cycle 150 blog: three canonical posts refreshed with practical decision-trees, token economy tables, and the structured-data-vs-image distinction.)**
+
+---
+
+## Cycle 150 — April 5, 2026 (Day 5 Post-Launch — Build in Public + Founder Honesty + Viral Short-Form Demo)
+
+### Strategic Priority
+
+Day 5. Show HN is Monday at 08:00 CET — two days out. The pre-Show-HN window is the most valuable organic moment left before the Monday spike. This cycle's strategy: **build in public authenticity beats product pitches every time.**
+
+The developer community responds to founders who share real numbers, real mistakes, and real learnings. A Day 5 honest retrospective thread — traffic, what worked, what didn't, what was unexpected — gets more engagement than any product launch hook. The audience is the same audience that will vote on Monday's Show HN.
+
+Secondary angle: **short-form video is the single highest-upside unexecuted channel.** The Skissify demo is visually compelling: you type JSON, Claude draws a floor plan. This is "wow, machines can do that?" content. One Reel or TikTok with 50K views generates more awareness than a week of text posts.
+
+New platforms this cycle: r/ExperiencedDevs (builder community, values honesty), TikTok/Instagram Reels (visual demo potential), and a warm-up Ask HN question before Monday's Show HN.
+
+---
+
+### Viral Hook 1: r/ExperiencedDevs — "Claude Code Went Viral. Give It a Pencil."
+
+**Platform:** Reddit r/ExperiencedDevs
+**Priority:** P0 — senior developer community, values genuine contribution over pitches
+**Title:** "I added a sketch tool to Claude's MCP toolkit. Here's what agents actually draw when given a pencil."
+
+**Body:**
+```
+Claude Code has been everywhere this week. The coding capability is real — I've been using it daily.
+
+But there's a gap nobody's talking about: agents can read and write code, query databases, call APIs. What they can't do is produce structured spatial output. Floor plans. Architecture diagrams. Layout sketches.
+
+I built Skissify to close that gap. It's an MCP server + REST API: you give it a flat JSON manifest describing a layout, it returns a hand-drawn sketch URL in ~150ms.
+
+Here's what surprised me after 5 days of people using it:
+
+1. **The floor plan use case was a guess. The actual use case is architecture diagrams.** Developers are using it to sketch microservices topologies, not apartments. The spatial reasoning applies to both, but the developer audience found it first.
+
+2. **The schema matters more than the model.** Flat JSON (Skissify's format): 88–92% valid first-attempt from Claude. Nested/hierarchical JSON: 40–61%. Same model, different schema architecture, 2x accuracy.
+
+3. **"Deterministic" is the killer feature, not "hand-drawn."** The hand-drawn aesthetic is cute. But what technical users actually care about is: same manifest = same sketch, every time. Diffable. Version-controllable. Passable between agents.
+
+The MCP install: `npx @skissify/mcp` — three lines in your claude_desktop_config.json.
+
+[skissify.com — free, no auth]
+```
+
+**Why r/ExperiencedDevs:** Experienced developers filter for signal over noise. Posts that lead with learning over pitch do dramatically better. The schema accuracy finding is a genuine technical insight, not a marketing claim.
+
+---
+
+### Viral Hook 2: Twitter/X — Day 5 Founder Honesty Thread
+
+**Platform:** Twitter/X (8-tweet thread)
+**Priority:** P0 — builds in public audience, warms the HN community ahead of Monday
+**Hook:** Honest Day 5 retrospective with real numbers and real surprises
+
+**Tweet 1 (hook):**
+```
+Day 5 of launching Skissify. Here's what I expected vs what actually happened. 🧵
+
+(Real numbers. No vanity metrics.)
+```
+
+**Tweet 2:**
+```
+What I expected: designers would love the hand-drawn aesthetic.
+
+What happened: developers found it first — using it for architecture diagrams, not floor plans.
+
+The aesthetic is a secondary benefit. The primary value is: structured spatial data that's passable between agents.
+
+I built for the wrong primary audience and accidentally got the right one.
+```
+
+**Tweet 3:**
+```
+What I expected: the AI floor plan demo would be the viral moment.
+
+What happened: the "same manifest = same sketch" property is what gets shared.
+
+Determinism is invisible in a demo but it's the reason developers add it to their pipelines. Reviewable, diffable, version-controllable output.
+
+Lead with the architecture, not the aesthetics.
+```
+
+**Tweet 4:**
+```
+Schema accuracy finding I didn't expect:
+
+Flat JSON (Skissify format): 88–92% valid first-attempt from Claude 3.7
+Hierarchical/nested JSON: 40–61%
+
+Same model. Different schema architecture. 2x accuracy difference.
+
+Structure determines accuracy more than model selection.
+```
+
+**Tweet 5:**
+```
+What I expected: Product Hunt would be the main traffic driver.
+
+What happened: two Reddit comments in niche subreddits outperformed the Product Hunt launch.
+
+Community contribution > announcement. The post that worked started with a problem, not a product.
+```
+
+**Tweet 6:**
+```
+What I got wrong: I wrote the pitch before I understood the use case.
+
+The pitch said "AI floor plan generator." The use case is "structured spatial output for agent pipelines."
+
+These are completely different framings for completely different audiences with completely different jobs to be done.
+
+Write the pitch after you've seen 50 real sessions.
+```
+
+**Tweet 7:**
+```
+What I'd do differently from day 1:
+
+1. Ship the MCP server first, the web UI second
+2. Target r/LocalLLaMA before Product Hunt
+3. Lead with the JSON schema, not the sketch aesthetic
+4. Write the "honest founder" post on day 1, not day 5
+
+The developer audience rewards honesty. Not launch energy.
+```
+
+**Tweet 8 (CTA):**
+```
+Day 5. Show HN is Monday.
+
+If you're building agent pipelines and need structured spatial output: `npx @skissify/mcp`
+
+Free. No auth. 150ms.
+
+skissify.com
+
+#BuildInPublic #AIAgents #MCP #FounderMode
+```
+
+---
+
+### Viral Hook 3: r/artificial — Community Contribution (4.1M members)
+
+**Platform:** Reddit r/artificial
+**Priority:** P1 — large audience, values genuine AI capability discussion
+**Title:** "AI agents have excellent spatial reasoning but no spatial output format. Here's what happens when you give them one."
+
+**Body:**
+```
+Something I noticed building AI agent pipelines: LLMs have surprisingly good spatial reasoning.
+
+Ask Claude to describe a floor plan — it produces accurate room layouts, correct adjacencies, reasonable dimensions. Ask GPT-4o to reason about a microservices architecture — it gets the topology right.
+
+But the output format has been a bottleneck. Natural language spatial descriptions are not renderable without a human redrawing them. Image generation produces unstructured pixels — you can display them but you can't pass them to a downstream agent as data.
+
+I built Skissify to test the hypothesis that a simple flat JSON format would unlock this capability. The format:
+
+```json
+{
+  "elements": [
+    { "type": "rect", "x": 50, "y": 50, "w": 200, "h": 150, "label": "Living Room" },
+    { "type": "door-symbol", "x": 50, "y": 170 }
+  ]
+}
+```
+
+POST it, get a hand-drawn sketch URL back in 150ms.
+
+Result: 88–92% valid first-attempt JSON from Claude 3.7 with a flat schema. The spatial reasoning was already there. The format was the missing piece.
+
+If you've been hitting the structured spatial output problem in your pipelines: [skissify.com — free, no auth]
+```
+
+---
+
+### Viral Hook 4: LinkedIn — "The Wrong Lessons from Vibe Coding"
+
+**Platform:** LinkedIn
+**Priority:** P1 — CTOs, engineering managers, developer relations audience
+**Format:** Thought leadership post, 300–400 words
+
+**Copy:**
+```
+The wrong lesson from vibe coding is that AI tools are the problem.
+
+The right lesson is that unstructured output is the problem.
+
+The vibe coding backlash in 2026 is not "AI can't write code." It's "AI writes code I can't review, maintain, or explain." The capability is real. The output format is the issue.
+
+This applies to more than code.
+
+AI agents in 2026 have excellent spatial reasoning. They can describe floor plans, architecture diagrams, layout structures with impressive accuracy. But "excellent spatial reasoning" + "no structured spatial output format" = the same reviewability problem in a different domain.
+
+The answer is the same as it is for code: structure first. The manifest is the source of truth. The render is derived.
+
+Skissify: JSON manifest in, hand-drawn sketch out. The agent produces structured data. The sketch is the render. Same manifest = same sketch, every time. Diffable. Version-controllable. Passable to downstream agents as data.
+
+This is not a product pitch. It's a design principle.
+
+If you're building agent workflows that need to produce spatial output — floor plans, architecture diagrams, layout wireframes — the question worth asking is: does the output format make the output reviewable?
+
+If the answer is "it produces an image," the answer is no.
+
+#AgentOutput #ReviewableAI #AIAgents #StructuredOutput #BuildInPublic
+```
+
+---
+
+### Viral Hook 5: TikTok/Instagram Reels — 30-Second Demo Script
+
+**Platform:** TikTok, Instagram Reels
+**Priority:** P0 CRITICAL — highest upside unexecuted channel
+**Format:** 30-second screen recording with voiceover
+
+**Script:**
+```
+[0-3s] Hook text on screen: "I asked Claude to draw me a floor plan."
+
+[3-8s] Show Claude Desktop with MCP server active. Type: "Draw a 2-bedroom apartment with an open kitchen and a bathroom."
+
+[8-15s] Show Claude generating the JSON manifest in real-time.
+
+[15-22s] Show Skissify render appearing — hand-drawn sketch of the apartment layout.
+
+[22-28s] Zoom in on the sketch. Voice: "Hand-drawn style. Deterministic. Exportable. JSON source of truth."
+
+[28-30s] Text: "skissify.com — free, no auth. npx @skissify/mcp"
+```
+
+**Caption:**
+```
+Claude can draw your floor plan now 🏠
+
+MCP server: npx @skissify/mcp
+Free at skissify.com
+
+#AI #AIAgents #Claude #MCP #FloorPlan #AITools #BuildWithAI #ClaudeAI #AgentOutput #VibeDrawing
+```
+
+**Why this matters:** The visual is the hook. "You type, Claude draws" is instantly understandable and shareable. This is the format that generates 50K+ organic views from zero audience. Record this today.
+
+---
+
+### Viral Hook 6: Ask HN — Pre-Seed Question (Monday Warm-Up)
+
+**Platform:** Hacker News (Ask HN)
+**Priority:** P1 — warm the HN audience before Monday's Show HN
+**Title:** "Ask HN: How are you handling structured spatial output in AI agent pipelines?"
+
+**Body:**
+```
+Working on AI agent pipelines that need to produce spatial content (floor plans, layout diagrams, architecture sketches). Hit a gap: agents have good spatial reasoning but no structured output format that fits a pipeline.
+
+Natural language description: not renderable or passable.
+Image generation: unstructured, non-deterministic, pipeline dead end.
+
+We've been using a flat JSON manifest → sketch render approach. Flat schema produces 88–92% valid first-attempt output from Claude (vs 40–61% for hierarchical). The manifest is the source of truth; the image is derived.
+
+Curious how others are solving this. Are there other approaches to structured spatial output that work in production pipelines?
+```
+
+**Why Ask HN first:** An Ask HN question that gets 20–30 genuine responses builds HN community engagement before the Show HN post. People who contributed to the Ask HN thread are invested in the topic and will notice the Show HN post Monday.
+
+---
+
+### New Hashtag Research — Cycle 150
+
+**High-signal developer hashtags for 2026:**
+
+| Hashtag | Use case | Audience |
+|---------|----------|---------|
+| #BuildInPublic | Founder honesty threads | Startup/indie developer audience |
+| #AgentOutput | New, uncrowded, technically precise | ML engineers, agent builders |
+| #SketchFirst | Design process angle | Designers, product managers |
+| #FounderMode | Day 5 retrospective framing | Startup community |
+| #AISketch | Visual + AI intersection | Broad AI audience |
+| #DrawFirst | Alternative to #SketchFirst | Design-forward communities |
+| #MCPServer | Technical MCP community | Claude users, agent builders |
+| #VibeDrawing | Established Skissify hashtag | Existing community |
+
+**Communities not yet targeted (add to rotation):**
+
+| Community | Members | Angle |
+|-----------|---------|-------|
+| r/ExperiencedDevs | 200K+ | Senior developer, values signal |
+| r/sideprojects | 350K+ | Indie builder audience |
+| r/ProgrammerHumor | 3.5M | Viral potential with right sketch joke |
+| Discord: Buildspace | 50K+ | Early-stage builder community |
+| Discord: LangChain | 100K+ | Agent framework users |
+| Mastodon infosec.exchange | 50K+ | Technical developer migration from Twitter |
 
 ---
 

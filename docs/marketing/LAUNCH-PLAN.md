@@ -1,7 +1,69 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 149**
+**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 150**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 150 — Build in Public + Founder Honesty Thread + TikTok/Reels Demo + r/ExperiencedDevs + Ask HN Warm-Up + New Hashtags + Three Canonical Blog Posts)
+
+### Cycle 150 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 150 (commitment trap framing, cognitive science backing, 60-second rule, AI agent dimension, two-stage model with decision table) | `blog/why-hand-drawn-sketches-beat-figma-cycle150.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 150 (token economy table, 5 workflows, 3-min quickstart, structured-data-vs-image distinction, MCP 2026 roadmap context) | `blog/ai-agents-floor-plans-cycle150.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 150 (honest founder framing, full feature comparison table, decision tree, vibe coding reviewability angle, structured data vs image distinction) | `blog/skissify-vs-excalidraw-cycle150.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 150 — 6 hooks: r/ExperiencedDevs (senior dev community), Twitter/X Day 5 founder honesty thread (8 tweets), r/artificial community contribution, LinkedIn "wrong lessons from vibe coding", TikTok/Reels 30-sec demo script (P0 record today), Ask HN pre-seed warm-up. New platforms: r/ExperiencedDevs (200K+), TikTok/Instagram Reels. New hashtags: #BuildInPublic #AgentOutput #SketchFirst #FounderMode #DrawFirst. New angle: build-in-public authenticity + founder honesty converts better than pitches with the developer community. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 150 — product screenshots list, founder bio, four audience-specific one-liners, short/long boilerplate, Day 5 status | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 150 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 150 — Priority Actions (April 5, 2026 — Sunday Evening, Day 5)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **RECORD + POST TikTok/Reels 30-sec demo** — NEW Cycle 150, HIGHEST UPSIDE | P0 CRITICAL | TODAY — last window | Script in Cycle 150 SOCIAL-MEDIA.md (Hook 5) |
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 148 SOCIAL-MEDIA.md (Hook 1) |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST Twitter/X Day 5 Founder Thread** — NEW Cycle 150 | P0 | TONIGHT | Cycle 150 SOCIAL-MEDIA.md (Hook 2) |
+| **POST Ask HN pre-seed warm-up** — NEW Cycle 150 | P0 | TONIGHT — before Monday | Cycle 150 SOCIAL-MEDIA.md (Hook 6) |
+| **POST r/ExperiencedDevs** — NEW Cycle 150 | P1 | TONIGHT | Cycle 150 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/artificial** (4.1M) — NEW Cycle 150 | P1 | TONIGHT | Cycle 150 SOCIAL-MEDIA.md (Hook 3) |
+| **POST LinkedIn "Wrong Lessons from Vibe Coding"** — NEW Cycle 150 | P1 | TONIGHT | Cycle 150 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/vibecoding** (87K) — Cycle 149 | P1 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/ChatGPTCoding** (350K+) — Cycle 149 | P1 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 3) |
+| **PREPARE HN Show HN** | P0 | TONIGHT — post MONDAY 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/DnD** (3.2M) — OVERDUE SINCE CYCLE 135 | P1 | TODAY | Cycle 135 SOCIAL-MEDIA.md |
+| **PUBLISH blog/why-hand-drawn-sketches-beat-figma-cycle150.md to Dev.to** | P1 | TODAY | Cycle 150 blog |
+| **PUBLISH blog/ai-agents-floor-plans-cycle150.md to Dev.to** | P1 | TODAY | Cycle 150 blog |
+| **PUBLISH blog/skissify-vs-excalidraw-cycle150.md to Dev.to** | P1 | TODAY | Cycle 150 blog |
+
+### Cycle 150 — New Ideas
+
+**Idea: The Day 5 founder honesty thread is the highest-conversion content type for developer audiences.** Every launch cycle has produced polished product-forward hooks. None has produced a raw Day 5 retrospective: real traffic numbers, real surprises, real lessons. The developer community — especially the HN audience — responds to honesty in a way it does not respond to launch energy. A founder who says "I built for the wrong audience and accidentally got the right one" earns more trust than a founder who says "we hit X users on day 1." This thread serves double duty: it is authentic content AND it warms the HN community ahead of Monday's Show HN post.
+
+**Idea: The 30-second Reels/TikTok demo is the single highest-upside unexecuted channel.** The Skissify demo is visually remarkable: you type text, Claude draws a floor plan. This is exactly the "wait, machines can do that?" content that drives short-form video virality. The script is written. The only remaining step is recording. One video with 50K+ views generates more awareness than 10 days of text posts. The opportunity cost of not recording this is compounding every day.
+
+**Idea: r/ExperiencedDevs is a higher-signal community than r/programming for this announcement.** The r/ExperiencedDevs community explicitly values technical depth over hype. A post that leads with the schema accuracy finding (88% vs 40%) and the structured-data-vs-image distinction will be evaluated differently here than in a general programming subreddit. Experienced developers filter for signal and have higher referral rates than general audiences.
+
+**Idea: New hashtags #BuildInPublic and #AgentOutput target two underserved communities.** #BuildInPublic (founders sharing real numbers) has an active, engaged community on Twitter/X that amplifies authentic posts. #AgentOutput is uncrowded, technically precise, and directly describes the category Skissify is creating. Early adopters of a new hashtag get the highest share of impressions per post.
+
+**Idea: The product screenshots list in PRESS-KIT.md is a forcing function.** Creating a list of screenshots that need to exist (MCP integration demo, before/after JSON-to-sketch, render speed terminal) makes the media asset gap visible and actionable. These screenshots do not exist yet. Every press mention, blog post, and social post is weaker without them.
+
+**Idea: The Ask HN warm-up is the most underrated pre-Show-HN action.** A genuine Ask HN question about structured spatial output in agent pipelines — posted Sunday evening — generates a comment thread. Community members who engaged with that thread are primed to recognize and engage with the Show HN post Monday morning. This is not gaming the algorithm. It is genuine discourse that serves a secondary function.
+
+### Cycle 150 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-cycle150.md — commitment trap, 60-sec rule, cognitive science, AI agent dimension, two-stage model | DONE Cycle 150 |
+| Blog: ai-agents-floor-plans-cycle150.md — token economy table, 5 workflows, 3-min quickstart, structured data vs image | DONE Cycle 150 |
+| Blog: skissify-vs-excalidraw-cycle150.md — honest founder framing, full comparison table, decision tree | DONE Cycle 150 |
+| SOCIAL-MEDIA.md Cycle 150 — 6 hooks + hashtag research table + new community list | DONE Cycle 150 |
+| PRESS-KIT.md Cycle 150 — screenshots list, founder bio, 4 one-liners, short/long boilerplate | DONE Cycle 150 |
+| LAUNCH-PLAN.md Cycle 150 | DONE Cycle 150 |
+| Research: trending hashtags (#BuildInPublic, #AgentOutput), new communities (r/ExperiencedDevs 200K+, r/sideprojects 350K+, Discord: LangChain 100K+), Excalidraw competitive landscape 2026 | DONE Cycle 150 |
 
 ---
 

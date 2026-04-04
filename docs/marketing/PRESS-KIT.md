@@ -1,8 +1,94 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 149 (New: Cycle 149 section — vibe coding backlash angle, MCP ecosystem gap framing (97M SDK downloads, 10,000+ servers, none draw), reviewable AI output positioning, three new blog posts (cycle149 canonical versions). New platforms: r/vibecoding (87K), r/ChatGPTCoding (350K+), Bluesky. New hashtags: #VibeDrawing #ReviewableAI #StructuredOutput. Day 5 status: Show HN Monday, r/LocalLLaMA still critical overdue.)*
+*Last updated: April 5, 2026 — Cycle 150 (New: Cycle 150 section — build-in-public angle, Day 5 honest retrospective framing, new communities (r/ExperiencedDevs 200K+, r/sideprojects 350K+), short-form video strategy (TikTok/Reels 30-sec demo script), Ask HN pre-seed warm-up, updated one-liner. New hashtags: #BuildInPublic #AgentOutput #FounderMode #SketchFirst. Cycle 150 blog posts: three canonical posts freshened with practical decision-trees, token economy tables, and structured-data-vs-image distinction.)*
 
 ---
+
+## Cycle 150 — What's New (April 5, 2026 — Day 5 Post-Launch)
+
+### Strategic Positioning Update
+
+Cycle 150 introduces **"build in public" authenticity** as the primary engagement strategy. Day 5 retrospective posts — honest numbers, real surprises, lessons learned — outperform product pitches with the developer community. The HN audience in particular rewards founders who share the real picture before asking for attention.
+
+Combined with the **short-form video opportunity** (TikTok/Reels: "you type, Claude draws" is immediately shareable), this cycle addresses the two highest-upside unexecuted channels:
+
+1. **Founder honesty thread** — Day 5 retrospective on Twitter/X, seeding HN ahead of Monday
+2. **30-second video demo** — the single highest organic reach potential remaining
+
+Updated one-liner (day 5 framing):
+> "Skissify gives AI agents a pencil — JSON manifest in, hand-drawn sketch out, 150ms, deterministic, version-controllable."
+
+### Product Screenshots List
+
+For press, blog posts, and social media — what to capture:
+
+| Screenshot | Description | Priority |
+|------------|-------------|---------|
+| MCP integration demo | Claude Desktop with Skissify MCP active, floor plan generated | P0 |
+| Before/after JSON to sketch | Side-by-side: raw JSON manifest + rendered hand-drawn sketch | P0 |
+| Render speed demo | Terminal showing API call + 150ms response time | P1 |
+| Multiple paper types | Four renders: cream, white, yellow, blueprint — same manifest | P1 |
+| Architecture diagram | Microservices topology rendered as hand-drawn sketch | P1 |
+| Wobble comparison | Same manifest, different wobble values (0.1 vs 0.8) | P2 |
+| Mobile render | Floor plan sketch displayed on mobile screen | P2 |
+| Version diff | Two manifests side-by-side showing a room addition | P2 |
+
+### Founder Bio
+
+**[Founder name]** built Skissify after hitting the structured spatial output problem while building AI agent pipelines in late 2025. With a background in [engineering/design], they set out to answer a specific question: if LLMs have excellent spatial reasoning, why can't agents produce spatial output that fits in a structured pipeline?
+
+Skissify launched April 1, 2026. It is the first MCP-native rendering API for structured spatial output — flat JSON manifest in, hand-drawn sketch out, 150ms, no auth required.
+
+*Available for interviews, podcast appearances, and technical deep-dives on AI agent output formats.*
+
+### Product One-Liners (Use by Audience)
+
+| Audience | One-liner |
+|---------|-----------|
+| Developer/agent builder | "The rendering API that gives AI agents structured spatial output — JSON manifest in, hand-drawn sketch out, 150ms, MCP-native." |
+| Designer/product | "Skissify keeps your AI-generated layouts in the sketch phase — reviewable, provisional, cheap to kill." |
+| Press/general | "Skissify is the tool that taught AI agents to draw — not images, but structured sketches that pipelines can read and modify." |
+| Investor/enterprise | "Skissify is the visual output primitive for the AI agent stack — the missing layer between LLM spatial reasoning and structured renderable artifacts." |
+
+### Boilerplate (For Publication)
+
+**Short (50 words):**
+Skissify is a rendering API for AI agents and automated pipelines. It converts a flat JSON manifest into a hand-drawn sketch in ~150ms. The manifest is the source of truth — deterministic, version-controllable, and composable in agent workflows. Available via MCP server and REST API. Free at skissify.com.
+
+**Long (150 words):**
+Skissify is the structured spatial output layer for AI agent pipelines. Launched April 1, 2026, it converts a flat JSON manifest describing rooms, shapes, annotations, and architectural elements into a hand-drawn sketch URL in approximately 150ms.
+
+Unlike image generation, Skissify's output is deterministic — the same manifest produces the same sketch every time. The manifest is the primary artifact: inspectable, diffable, version-controllable, and passable between agents as structured data. The sketch is the render layer, communicating "provisional" to human reviewers through configurable wobble and hand-drawn aesthetic.
+
+Skissify integrates natively with the Model Context Protocol (MCP) via `npx @skissify/mcp`, enabling Claude Desktop, Cursor, and any MCP-compatible agent to call `skissify_render` directly. It also exposes a REST API for use in LangChain, CrewAI, n8n, GitHub Actions, and any HTTP-capable workflow.
+
+Free tier. No authentication required. Open schema. [skissify.com](https://skissify.com)
+
+### Three Blog Posts — Cycle 150
+
+| Blog Post | File | Key Angle |
+|-----------|------|-----------|
+| "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" | `blog/why-hand-drawn-sketches-beat-figma-cycle150.md` | The commitment trap; 60-second rule; AI agent dimension; two-stage design model |
+| "How AI Agents Can Draw Floor Plans" | `blog/ai-agents-floor-plans-cycle150.md` | Token economy table; 5 workflows; 3-min quickstart; structured-data-vs-image distinction |
+| "Skissify vs Excalidraw" | `blog/skissify-vs-excalidraw-cycle150.md` | Honest founder framing; feature comparison table; decision tree; vibe coding reviewability angle |
+
+### Day 5 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog posts (Cycle 150) | DONE — 3 new canonical posts |
+| SOCIAL-MEDIA.md Cycle 150 | DONE — 6 hooks: r/ExperiencedDevs, Twitter founder thread, r/artificial, LinkedIn, TikTok/Reels script, Ask HN |
+| PRESS-KIT.md Cycle 150 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 150 | DONE |
+| r/LocalLLaMA (2.3M) | **P0 CRITICAL OVERDUE — post IMMEDIATELY** |
+| MCP Discord #showcase | **P0 CRITICAL OVERDUE — post IMMEDIATELY** |
+| Demo video (30-sec Reels script ready) | **P0 CRITICAL — record TODAY, script in Cycle 150 SOCIAL-MEDIA.md Hook 5** |
+| HN Show HN | MONDAY April 7, 08:00 CET — prep in Cycle 137 |
+
+---
+
+## Cycle 149 — What's New (April 5, 2026 — Day 5 Post-Launch)
 
 ## Cycle 149 — What's New (April 5, 2026 — Day 5 Post-Launch)
 
