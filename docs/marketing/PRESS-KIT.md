@@ -1,6 +1,31 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 135 (New: 3 blog posts (Cycle 135 — new angles: "polite feedback trap" for Figma post, "unexpected audiences" dungeon map + real estate for floor plan post, "complete workflow guide" with 3 scenarios and 13-row table for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 135 block with 7 viral hooks (r/DnD dungeon map, r/realestate, quote card, r/homeimprovement final body, LinkedIn unexpected audiences, Bluesky AI, Dev.to publishing guide). New platforms: r/DnD, r/RPG, r/realestate, Bluesky. Hashtag additions: #DungeonMap #TtrpgCommunity #RealEstate #UnexpectedUsers.)*
+*Last updated: April 4, 2026 — Cycle 136 (New: 3 blog posts (vibe coding angle for Figma post, remote team whiteboard angle for floor plan post, permanent record problem for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 136 block with 6 viral hooks: vibe coder Cursor angle, remote team whiteboard LinkedIn/r/agile, Pinterest visual strategy (5 pin templates), r/softwarearchitecture PR diagram post, LinkedIn week-1 retro thread, Dev.to week-2 update. New platforms: Pinterest, r/cursor, r/agile, r/projectmanagement, r/softwarearchitecture. Hashtag additions: #VibeCoding #AgileTools #RemoteWork #DesignOps.)*
+
+---
+
+## Cycle 136 — What's New (April 4, 2026 — Day 3 Post-Launch)
+
+### Day 3 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "The Vibe Coder Edition" — Figma post (Cycle 136) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle136.md` |
+| Blog: "Remote Team Whiteboard" — Floor plan post (Cycle 136) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle136.md` |
+| Blog: "The Permanent Record Problem" — Excalidraw comparison (Cycle 136) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle136.md` |
+| SOCIAL-MEDIA.md Cycle 136 | DONE — 6 hooks: vibe coding, remote team, Pinterest (5 pins), r/softwarearchitecture, LinkedIn retro, Dev.to week-2 |
+| PRESS-KIT.md Cycle 136 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 136 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today |
+| r/DnD (3.2M) | NEW Cycle 135 — post today |
+| r/cursor | NEW Cycle 136 — post today |
+| Pinterest (new channel) | NEW Cycle 136 — create board + 5 pins today |
+| r/homeimprovement (4.8M) | HOLD — post Monday April 7, 10:00–12:00 CET |
 
 ---
 

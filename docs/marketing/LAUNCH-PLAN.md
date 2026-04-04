@@ -1,7 +1,67 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 4 — Cycle 135**
+**Current Date: April 4, 2026 — Post-Launch Day 3 — Cycle 136**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 136 — Day 3 New Channel Expansion)
+
+### Cycle 136 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 136 ("vibe coder edition" angle — Cursor/Claude Code users sketching before prompting AI coding assistants, spatial ambiguity problem, first-generation accuracy improvement, disposable sketch workflow) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle136.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 136 ("remote team whiteboard" angle — async whiteboard replacement, agent-generated sprint boards + architecture diagrams + user journeys, living artifacts that never go stale, three concrete workflows) | `blog/how-ai-agents-draw-floor-plans-cycle136.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 136 ("permanent record problem" angle — Excalidraw as thinking tool vs Skissify as artifact, 14-row feature comparison table, three scenarios requiring stable URLs, sequential workflow pattern) | `blog/skissify-vs-excalidraw-comparison-cycle136.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 136 — 6 new viral hooks: vibe coder r/cursor+Twitter post, remote team LinkedIn+r/agile post, Pinterest strategy (5 pin templates for home/office/dev audiences), r/softwarearchitecture PR diagram post, LinkedIn week-1 retro thread, Dev.to week-2 update. New platforms: Pinterest, r/cursor, r/agile, r/projectmanagement, r/softwarearchitecture. New hashtags: #VibeCoding #AgileTools #RemoteWork #DesignOps | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 136 — Day 3 status table with Pinterest + r/cursor as new channels | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 136 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 136 — Priority Actions (April 4–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/DnD** (3.2M) — NEW Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1) |
+| **CREATE Pinterest board + 5 pins** — NEW Cycle 136 | P1 | TODAY | 5 pin templates in Cycle 136 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/cursor** — NEW Cycle 136 | P1 | TODAY | Copy in Cycle 136 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/softwarearchitecture** (300K) — NEW Cycle 136 | P1 | TODAY | Copy in Cycle 136 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/agile** + **r/projectmanagement** — NEW Cycle 136 | P1 | TODAY | Copy in Cycle 136 SOCIAL-MEDIA.md (Hook 2) |
+| **POST LinkedIn week-1 retro thread** — NEW Cycle 136 | P1 | TODAY | Copy in Cycle 136 SOCIAL-MEDIA.md (Hook 5) |
+| **PUBLISH 3 Cycle 136 blogs to Dev.to** | P0 | TODAY staggered 10:00/13:00/16:00 CET | Tags in blog posts |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 4) |
+| **POST HN Ask HN / Show HN** | P1 | MONDAY April 7, 08:00 CET | Strategy in Cycle 134 SOCIAL-MEDIA.md (Hook 5) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — absolutely final window | 60s screen capture + voiceover |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 136 — New Ideas
+
+**Idea: Pinterest is the most underutilized channel for a visually-driven product.** Skissify produces hand-drawn sketches that look like interior design content. Pinterest's home design category has 10B+ monthly views. A board called "AI Floor Plan Sketches" with 5 well-described pins (living room, apartment, kitchen, office, dungeon map) can drive organic referral traffic for months with zero ongoing effort. Pinterest pins have a 3.5 month median lifespan vs 15 minutes for Twitter. The 5 pin templates are in Cycle 136 SOCIAL-MEDIA.md Hook 3. Create the board today.
+
+**Idea: r/cursor is untapped and perfectly targeted.** Cursor subreddit users are exactly the vibe coder audience. They already know AI coding assistants, they're already frustrated with spatial imprecision in prompts, and they're open to new workflow tools. The Cycle 136 blog post's "sketch before you code" angle is written for this audience. Post today.
+
+**Idea: The remote team async whiteboard angle opens a large new market.** r/agile (500K) and r/projectmanagement (1.4M) communities are not saturated with AI sketch tools. The framing ("your AI agent is now your team's whiteboard") is both technical (appeals to PMs with AI pipelines) and practical (appeals to anyone frustrated with synchronous whiteboarding). Three concrete workflows (PR architecture diagrams, sprint boards, user journeys) make it credible. Post today.
+
+**Idea: The r/softwarearchitecture PR diagram pattern is immediately actionable for engineers.** This community (300K) responds well to "I implemented X, here's the result." The post is framed as a question ("anyone else doing this?") which invites discussion. Engineers who review architecture changes can immediately see the value of spatial context in PRs. This post has high virality potential within a focused audience.
+
+**Idea: LinkedIn week-1 retro gets more engagement than product launch posts.** "What I expected vs what actually happened" format consistently outperforms feature announcements. The unexpected use cases (DnD, real estate, vibe coding, remote teams) make for a compelling narrative arc. Post Saturday morning CET for peak LinkedIn engagement.
+
+**Idea: Dev.to week-2 update is the most SEO-leveraged content play right now.** Week-2 posts rank well because they contain specific lessons + product links and fill a gap that launch-day posts don't cover. Publish Saturday at 10:00 CET with cross-post delay to Medium.
+
+### Cycle 136 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle136.md | DONE Cycle 136 |
+| Blog: how-ai-agents-draw-floor-plans-cycle136.md | DONE Cycle 136 |
+| Blog: skissify-vs-excalidraw-comparison-cycle136.md | DONE Cycle 136 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update + new platforms (Pinterest, r/cursor, r/agile, r/projectmanagement, r/softwarearchitecture) + hashtag additions | DONE Cycle 136 |
+| PRESS-KIT.md — Cycle 136 day-3 status table | DONE Cycle 136 |
+| LAUNCH-PLAN.md — Cycle 136 block | DONE Cycle 136 |
 
 ---
 

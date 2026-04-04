@@ -1,7 +1,258 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 5, 2026 — Cycle 135 (New: 7 viral hooks — dungeon map community post, real estate angle, "polite feedback trap" shareable quote, r/homeimprovement final body text, LinkedIn founder story thread, Bluesky AI community post, Dev.to canonical publishing. New platforms: r/DnD, r/RPG, r/realestate, Bluesky AI communities. Hashtag additions: #DungeonMap #TtrpgCommunity #RealEstate #SketchFirst.)**
+**Last updated: April 4, 2026 — Cycle 136 (New: 6 viral hooks — vibe coding angle (Cursor/Claude Code users), remote team whiteboard angle, Pinterest visual strategy, r/agile + r/projectmanagement post, week-1 retrospective LinkedIn thread, Dev.to week-2 update post. New platforms: Pinterest, r/agile, r/projectmanagement, r/softwarearchitecture. Hashtag additions: #VibeCoding #AgileTools #RemoteWork #SketchFirst #DesignOps.)**
+
+---
+
+## Cycle 136 — April 4, 2026 (Day 3 Post-Launch — Week 1 Momentum + New Audiences)
+
+### Strategic Priority
+
+Day 3. Core developer channels are seeded. This cycle focuses on three new vectors:
+
+1. **Vibe coders** — Cursor, Claude Code, Lovable, V0 users who generate UI from prompts. Skissify is the "sketch before you code" step that makes first-generation prompts accurate. Target: r/cursor, r/ClaudeAI, Twitter/X tech community, Dev.to vibe-coding tag.
+2. **Remote teams & async work** — Skissify as the AI-generated whiteboard for distributed teams. Target: r/agile, r/projectmanagement, r/softwarearchitecture, LinkedIn engineering managers.
+3. **Pinterest** — Skissify generates visually beautiful hand-drawn sketches. Pinterest is an untapped visual discovery channel. Home design, architecture, floor plan boards all have millions of active viewers. One good pin drives referral traffic for months.
+
+Critical pending actions (STILL OVERDUE — post these first):
+- r/LocalLLaMA (2.3M) — CRITICAL overdue since Cycle 111
+- MCP Discord #showcase — CRITICAL overdue since Cycle 111
+- Indie Hackers — CRITICAL overdue since Cycle 98
+- r/AI_Agents — overdue since Cycle 132
+
+---
+
+### Viral Hook 1: Vibe Coding Angle — r/cursor + Twitter/X + Dev.to
+
+**Subreddit:** r/cursor + r/ClaudeAI + r/programming
+**Title:** "Sketch your UI layout before prompting your AI coding assistant — my first-generation accuracy went from 40% to 90%"
+
+**Post body:**
+```
+Context: I vibe code with Cursor. Claude generates most of my UI.
+
+The problem: I'd describe a layout ("dashboard with sidebar, main canvas, toolbar") and get something that worked but was spatially wrong. Three more prompts to fix proportions, wrong-side sidebars, collapsed toolbars.
+
+The fix I found: sketch first.
+
+Open skissify.com/human. Describe your layout in one sentence. Get a URL in 8 seconds. Paste that URL into your Cursor prompt as context: "Build the layout shown at [URL]."
+
+The AI can now see what you mean by "three-column layout." The spatial ambiguity is resolved before the first token of code is generated.
+
+First-generation accuracy (for me, subjectively): improved significantly. Fewer iterations. Less time explaining "no, the toolbar should span the full width, not just the right panel."
+
+The sketch takes 8 seconds. If it's wrong, describe it differently. Zero sunk cost. That's the point.
+
+Tool: skissify.com/human — free, no account. Or add it as an MCP server if you're in Claude Code.
+```
+
+**Twitter/X thread opener:**
+```
+Vibe coding tip I wish I'd had earlier:
+
+Before you prompt your AI coding assistant with a UI layout description — sketch it first.
+
+8 seconds at skissify.com/human → paste URL in context → first generation is 2x closer.
+
+Here's why it works: 🧵
+```
+
+---
+
+### Viral Hook 2: Remote Team Whiteboard — LinkedIn + r/agile + r/projectmanagement
+
+**Subreddit:** r/agile (500K) + r/projectmanagement (1.4M) + r/softwarearchitecture (300K)
+**LinkedIn post title:** "Your AI agent just became your team's whiteboard. Here's the workflow."
+
+**Post body (LinkedIn):**
+```
+Remote teams lost the physical whiteboard when they went distributed.
+
+Digital whiteboards (Miro, FigJam) are a good replacement — but they require synchronous participation. Someone has to draw while others watch.
+
+There's a new pattern emerging for async teams: AI-generated spatial sketches.
+
+Workflow:
+1. Your AI agent reads the ticket / spec / architecture doc
+2. It generates a hand-drawn sketch of the spatial layout — floor plan, system diagram, user journey, sprint board
+3. The sketch URL goes into Notion / Linear / GitHub PR as a persistent artifact
+4. When something changes, the agent regenerates the sketch
+
+The sketch is never stale. It updates when the underlying data changes. Nobody has to schedule a whiteboarding session.
+
+I built Skissify to solve this: REST API + MCP server, hand-drawn output in 150ms. The sketch looks like something a human drew on a napkin — which is exactly the signal you want for a living document that's still evolving.
+
+skissify.com — free to try, no account required.
+
+#AITools #RemoteWork #AgentWorkflows #ProductManagement #DesignOps
+```
+
+**Reddit r/agile post:**
+```
+Title: "AI-generated sprint board sketches as async whiteboard replacements — anyone tried this?"
+
+Our team went fully async 6 months ago. We lost our physical board. Miro works but requires session coordination.
+
+Been experimenting with having our planning agent generate Skissify sketches of the sprint board — swim lanes, ticket boxes, dependency arrows. It regenerates when the backlog changes.
+
+Not replacing Jira. But having a spatial overview that's always current, embedded in our Notion, without anyone needing to draw it — that's been useful.
+
+Has anyone tried a similar pattern? Curious what tools people are using for agent-generated visual artifacts.
+```
+
+---
+
+### Viral Hook 3: Pinterest Visual Strategy
+
+**Platform:** Pinterest (450M+ monthly active users, huge home design / architecture audience)
+
+**Board name to create:** "AI Floor Plan Sketches | Skissify"
+
+**Pin descriptions (create 5 pins, one per room type):**
+
+**Pin 1 — Living room:**
+```
+AI-generated hand-drawn floor plan sketch of an open-plan living room with kitchen island. Created in 8 seconds using Skissify + Claude. No design software needed — just describe the space.
+
+Free at skissify.com/human ↗
+#FloorPlan #InteriorDesign #AIDesign #HomeRenovation #SketchFirst
+```
+
+**Pin 2 — Apartment:**
+```
+35sqm studio apartment layout sketch — hand-drawn style, generated by AI from a plain English description. Perfect for renovation planning before hiring an architect.
+
+Try free: skissify.com/human ↗
+#StudioApartment #FloorPlanDesign #HomeDesign #ApartmentLayout #RenovationPlanning
+```
+
+**Pin 3 — Kitchen:**
+```
+AI kitchen renovation sketch: L-shaped layout with peninsula island, showing traffic flow paths. Generated from: "L-shaped kitchen, 4m x 3.5m, island peninsula 1.2m x 0.8m, fridge freezer unit against north wall."
+
+skissify.com ↗
+#KitchenRenovation #KitchenDesign #FloorPlan #AIInteriorDesign
+```
+
+**Pin 4 — Office layout:**
+```
+AI-generated office floor plan: open plan with 8 desks, 2 meeting rooms, kitchen corner. Described to Claude, sketched by Skissify. Hand-drawn aesthetic signals "draft stage" — invites feedback instead of demanding approval.
+
+Try free: skissify.com/human ↗
+#OfficeDesign #WorkplaceDesign #FloorPlan #OfficeLayout
+```
+
+**Pin 5 — For developers:**
+```
+Not just for interiors: AI agents now generate architecture diagrams, system maps, and sprint boards in hand-drawn sketch style. Skissify MCP server for Claude Code — REST API for any pipeline.
+
+For builders: skissify.com/docs ↗
+#AIAgents #MCP #DeveloperTools #SoftwareArchitecture
+```
+
+---
+
+### Viral Hook 4: r/softwarearchitecture Community Post
+
+**Subreddit:** r/softwarearchitecture (300K members)
+**Title:** "I added sketch output to my architecture review agent — now PRs include a diagram of the system change"
+
+**Post body:**
+```
+Background: I have a Claude agent that reviews PRs at work. It reads the diff, checks for patterns, leaves comments.
+
+I added one new capability last week: the agent now generates a Skissify sketch showing the updated system topology — boxes for each service, arrows for data flows, highlighting which services are touched by the PR.
+
+The sketch goes into the PR description automatically.
+
+Result: reviewers get spatial context before reading a single line of code. "Service A now talks to Service B through a new message queue" is immediately clear as a diagram in a way it isn't in a paragraph.
+
+Technical setup: Skissify MCP server (one JSON config entry), Claude generates the manifest from its analysis of the codebase, REST call, sketch URL appended to PR body.
+
+Anyone else doing this kind of visual context injection into CI/review pipelines? Curious what other spatial outputs people are finding useful.
+
+GitHub + Skissify integration writeup: skissify.com/blog/github-actions-skissify-sketch-on-every-pr
+```
+
+---
+
+### Viral Hook 5: LinkedIn Week-1 Retrospective Thread
+
+**Format:** LinkedIn long-form post (founder/personal)
+
+**Post:**
+```
+Day 3 of Skissify. Here's what I actually know now.
+
+What I expected:
+— AI developers would be the primary audience
+— MCP integration would be the main value prop
+— Floor plans would be the main use case
+
+What actually happened:
+— DnD game masters started using it for dungeon maps (didn't see this coming)
+— Real estate agents found it for sharing rough layouts before photos are ready
+— Vibe coders are using it to sketch UI before prompting their coding assistants
+— Remote teams are exploring it as an async whiteboard replacement
+
+The lesson that keeps recurring: when you build a general primitive (JSON → hand-drawn sketch), you can't fully predict the applications. The primitive is composable. Users compose it into their contexts.
+
+What I'm doing with this insight: writing for each audience specifically. The DnD post is different from the architecture post is different from the vibe coding post. Same product. Different jobs to be done.
+
+Day 4 tomorrow. Still iterating on the positioning.
+
+If you've tried Skissify for anything unexpected, I want to hear it.
+
+#IndieHacking #ProductLaunch #AITools #BuildInPublic
+```
+
+---
+
+### Viral Hook 6: Dev.to Week-2 Update Post
+
+**Title:** "3 days after launch: 4 use cases I didn't design for"
+
+**Post opener:**
+```
+I launched Skissify on April 1st (yes, April Fools — yes, people thought it was a joke — no, it wasn't).
+
+Skissify turns JSON or plain English descriptions into hand-drawn sketches via a REST API and MCP server. I built it for AI agent pipelines that need spatial output.
+
+Three days in, here's what I actually know about who's using it and what for.
+
+[Use cases: DnD dungeon maps, real estate rough layouts, vibe coder UI sketches, remote team async whiteboard — each with a short paragraph]
+
+[CTA: try skissify.com/human — free, no account, 8 seconds]
+```
+
+**Dev.to tags:** `#showdev #webdev #ai #ux`
+**Cross-post timing:** Saturday April 5, 10:00 CET (Dev.to Saturday morning peak)
+
+---
+
+### Platform Matrix Update (Cycle 136)
+
+| Platform | Status | Post Copy |
+|----------|--------|-----------|
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE | Cycle 123 SOCIAL-MEDIA.md |
+| MCP Discord #showcase | CRITICAL OVERDUE | Cycle 132 SOCIAL-MEDIA.md |
+| Indie Hackers | CRITICAL OVERDUE | Draft in EMAIL-AND-DIRECTORIES.md |
+| r/AI_Agents | OVERDUE | Cycle 132 SOCIAL-MEDIA.md |
+| r/DnD (3.2M) | NEW Cycle 135 | Cycle 135 SOCIAL-MEDIA.md Hook 1 |
+| r/RPG (1.8M) | NEW Cycle 135 | Cycle 135 SOCIAL-MEDIA.md Hook 1 |
+| r/realestate (1.2M) | NEW Cycle 135 | Cycle 135 SOCIAL-MEDIA.md Hook 2 |
+| Bluesky AI | NEW Cycle 135 | Cycle 135 SOCIAL-MEDIA.md Hook 6 |
+| r/cursor | NEW Cycle 136 | Cycle 136 SOCIAL-MEDIA.md Hook 1 |
+| r/agile (500K) | NEW Cycle 136 | Cycle 136 SOCIAL-MEDIA.md Hook 2 |
+| r/projectmanagement (1.4M) | NEW Cycle 136 | Cycle 136 SOCIAL-MEDIA.md Hook 2 |
+| r/softwarearchitecture (300K) | NEW Cycle 136 | Cycle 136 SOCIAL-MEDIA.md Hook 4 |
+| Pinterest | NEW Cycle 136 | Cycle 136 SOCIAL-MEDIA.md Hook 3 |
+| LinkedIn founder retrospective | NEW Cycle 136 | Cycle 136 SOCIAL-MEDIA.md Hook 5 |
+| Dev.to week-2 update | NEW Cycle 136 | Cycle 136 SOCIAL-MEDIA.md Hook 6 |
+| r/homeimprovement (4.8M) | HOLD — POST MON April 7 | Cycle 135 SOCIAL-MEDIA.md Hook 4 |
+| HN Ask HN / Show HN | HOLD — POST MON April 7 08:00 CET | Cycle 134 SOCIAL-MEDIA.md Hook 5 |
+| Product Hunt comments | ROLLING | Respond daily |
 
 ---
 

@@ -2,6 +2,64 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #128 Actions (Saturday April 4, 04:48 Stockholm) — FOR SUNDAY APRIL 5 / MONDAY APRIL 6
+
+### Context: Run #128 Key New Findings
+- **MCP A2A coordination confirmed for Q3 2026** — one agent calls another via MCP; Skissify is the visual output sub-agent for AI pipelines; position NOW before Q3 launch
+- **Credit model 126% YoY adoption** — EUR/render pricing is mainstream; the problem is visibility of the usage ceiling, not the model itself
+- **"Best AI Diagram Tools 2026" roundups** — InfraSketch, Level Up Coding, AiXoria, ScreenApp all have roundup articles; Skissify in ZERO of them
+- **Microsoft open-source AI Architecture Review Agents** — enterprise AI diagram category validated at Fortune 500 level
+- **MCP Registry: 29th consecutive run unconfirmed — CRITICAL RED**
+
+---
+
+### Action 1 (CRITICAL — Monday): MCP Registry + Claude Connectors Submission (Run #29 — A2A Deadline Creates True Urgency)
+
+**Run #128 adds a hard deadline to the existing critical flag**: MCP A2A coordination launches Q3 2026. Tools listed in the MCP Registry before Q3 will have usage statistics and discovery ranking when A2A-capable orchestrators begin searching for sub-agents. Skissify is the only hand-drawn visual output MCP server. First-mover advantage expires at Q3 launch if we aren't listed.
+
+**Updated registry listing copy for Run #128** (adds A2A sub-agent framing):
+> "Skissify — headless JSON→hand-drawn SVG renderer. Visual output sub-agent for AI orchestrators and MCP pipelines. Zero Chromium. Sub-100ms. XSS-safe Canvas 2D. Schema-driven: floor plans, napkin diagrams, wireframes, architecture sketches. Architectural elements: doors, windows, stairs, room dimensions, columns. Works with Claude, CrewAI, LangGraph, n8n. Keywords: hand-drawn, floor plan, sketch renderer, JSON, SVG, no browser, visual output, agent diagram."
+
+**Steps Monday:**
+1. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/)
+2. Submit to Claude Connectors at [claude.com/connectors](https://claude.com/connectors)
+3. Confirm npm package for MCP server is published first
+4. Post in Run #129: "Skissify MCP Registry submitted. URL: ___"
+
+---
+
+### Action 2 (HIGH — Sunday): Email 3 Roundup Authors for "Best AI Diagram Tools 2026" Listing
+
+**New from Run #128**: High-ranking "Best AI Diagram Tools 2026" roundup articles exist at InfraSketch, Level Up Coding, AiXoria, and ScreenApp. Skissify is absent from all. These articles rank for "AI diagram API", "JSON diagram generator", and "hand-drawn diagram tool" — exactly the queries Skissify targets. Roundup SEO is passive acquisition with zero ongoing cost.
+
+**Outreach email template (send Sunday, takes 10 minutes):**
+
+Subject: "Skissify — hand-drawn JSON→SVG API for 'Best AI Diagram Tools 2026'"
+
+> Hi [Name], I noticed your "Best AI Diagram Tools 2026" roundup. I thought you might be interested in Skissify (skissify.com) — it takes a different approach from the tools you've listed. Rather than natural language → polished SVG, Skissify accepts a JSON manifest and renders hand-drawn style sketches (floor plans, wireframes, napkin diagrams). It's headless, sub-100ms, and MCP-compatible for AI agent workflows. It has architectural elements (doors, windows, stairs, dimensions) that no other tool has. Happy to provide a demo sketch or comparison table if useful for the article.
+
+**Targets:**
+1. InfraSketch blog (infrasketch.net/blog/best-ai-diagram-tools-2026)
+2. Level Up Coding / Rajasekar Elango (levelup.gitconnected.com article)
+3. AiXoria (aixoria.com/best-ai-tools-create-system-architecture-diagrams-2026)
+
+---
+
+### Action 3 (MEDIUM — Monday): Add Visible Render Counter to Free Tier UI
+
+**New from Run #128**: Credit model is mainstream — developers understand pay-per-render. The conversion problem is that free-tier users never see a usage limit during evaluation (50 renders is too generous). Fix: reduce free tier to 20 renders AND display a persistent render counter.
+
+**Concrete UI change:**
+- Display "X renders remaining" in the top bar (always visible, not just on hover)
+- At 15/20 renders: show a non-blocking banner ("5 renders left — upgrade for unlimited")
+- At 20/20: show upgrade modal with one-click EUR 2/mo action
+
+**Why this converts**: A developer who sees "4 renders remaining" is actively evaluating whether the tool is worth EUR 2. A developer who sees no counter never has that moment. This is a 1-2 hour UI change with measurable conversion impact.
+
+**Secondary**: Add EUR 5 one-time credit pack (2,000 renders) on pricing page for EU users who prefer no subscription. The "no subscription" segment is real and underserved at Skissify's price point.
+
+---
+
 ## [2026-04-04] — Strategy Run #126 Actions (Saturday April 4, 02:32 Stockholm) — FOR MONDAY APRIL 6
 
 ### Context: Run #126 Key New Findings

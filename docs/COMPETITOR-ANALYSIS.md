@@ -2,6 +2,87 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #128 (Saturday April 4, 04:48 Stockholm)
+
+### Status: 4 topics researched. KEY FINDINGS: **MCP Agent-to-Agent coordination confirmed for Q3 2026** — one agent calls another via MCP; Skissify's visual sub-agent positioning is now a concrete architecture pattern, not speculation. **Credit model adoption 126% YoY** — from 35 to 79/500 SaaS companies using credits (PricingSaaS 500); Skissify's per-render billing is trend-aligned. **D2 language + Eraser DiagramGPT** growing as developer-facing text→diagram alternatives; neither does hand-drawn. **Microsoft open-source AI Architecture Review Agents** — enterprise agent-diagram use case is real and funded. **"Best AI Diagram Tools 2026" roundups exist (InfraSketch, Level Up Coding, AiXoria)** — Skissify absent from all. **29th consecutive run: still no headless hand-drawn JSON→SVG API competitor found. MCP Registry submission CRITICAL RED (29 runs unconfirmed).**
+
+---
+
+### MCP Agent-to-Agent (A2A) Coordination — Q3 2026 (STRATEGIC SIGNAL: HIGH)
+
+**Sources**: [2026 MCP Roadmap](http://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/), [MCP Wikipedia](https://en.wikipedia.org/wiki/Model_Context_Protocol), verified 2026-04-04
+
+The official 2026 MCP Roadmap confirms Agent-to-Agent (A2A) coordination for Q3 2026: one agent calls another agent through MCP as if the second agent were a tool server. This enables hierarchical agent architectures where orchestrator agents delegate to specialized sub-agents.
+
+**What this means for Skissify**: The A2A pattern makes "Skissify as visual sub-agent" a concrete, supported architecture — not a metaphor. A Claude orchestrator (planning a software architecture) calls Skissify via MCP to generate a hand-drawn system diagram, then passes the result back. A CrewAI pipeline for real estate calls Skissify to produce a floor plan sketch. This is not a hypothetical use case — it is the Q3 2026 MCP design target. Skissify should position NOW as the "visual output sub-agent" for orchestrated AI pipelines. Registry listing before Q3 means Skissify is in agent-discovery databases when A2A goes live.
+
+**Updated MCP stats**: 97 million monthly SDK downloads. 5,800+ servers. Every major AI provider (Anthropic, OpenAI, Google DeepMind, Microsoft, AWS) has adopted MCP. Q2 2026 adds OAuth 2.1/PKCE enterprise auth. Q3 2026 adds A2A. Q4 2026 adds verified/curated tier.
+
+**For Skissify**: Add "visual sub-agent" to all positioning. Blog post: "How to call Skissify from your AI orchestrator via MCP (A2A preview)." Publish before Q3 to capture search traffic as A2A launches.
+
+**Threat assessment: CRITICAL OPPORTUNITY — A2A protocol validates Skissify's sub-agent positioning; list before Q3 to capture A2A-era discovery**
+
+---
+
+### Credit Model Adoption 126% YoY — Skissify's Pricing Direction Validated (PRICING SIGNAL)
+
+**Sources**: [2026 SaaS Pricing Guide — Monetizely](https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models), [SaaS Pricing State 2025 — Growth Unhinged](https://www.growthunhinged.com/p/2025-state-of-saas-pricing-changes), verified 2026-04-04
+
+PricingSaaS 500 Index: 79 companies now use credit models (up from 35 end of 2024). 126% YoY growth in credit adoption. Developer tools: $49-199/mo willingness to pay for tools saving 5-10 hours/week. Micro SaaS: $5K-$50K MRR achievable as solo founder.
+
+**What this means**: Skissify's per-render credit model is now mainstream, not experimental. The EUR 2/mo base + overage is the developer tool pricing template for 2026. The gap: Skissify is still below the $49-199/mo floor for tools that save significant time. The upgrade path from EUR 2 → EUR 5 → EUR 19 (architecture studio) needs to be surfaced more aggressively at usage limits.
+
+**Threat assessment: POSITIVE — pricing model validated; conversion triggers need strengthening**
+
+---
+
+### D2 Language + Eraser DiagramGPT — Text-to-Diagram Growing (COMPETITIVE SIGNAL: LOW-MEDIUM)
+
+**Sources**: [Eraser DiagramGPT](https://www.eraser.io/diagramgpt), [Best AI Diagram Tools 2026 — Level Up Coding](https://levelup.gitconnected.com/the-7-best-ai-diagram-tools-in-2026-reviewed-for-software-engineers-f18f258661d8), [AI Diagram Maker — D2](https://www.aidiagrammaker.com/blog/json-to-diagram), [InfraSketch AI Diagram Tools 2026](https://infrasketch.net/blog/best-ai-diagram-tools-2026), verified 2026-04-04
+
+Two new text-to-diagram competitors gaining developer mindshare in April 2026:
+- **Eraser DiagramGPT**: natural language → D2 code + rendered diagrams. Good for architecture/sequence/ER diagrams. Editable D2 source. GitHub native.
+- **D2 language AI tools**: plain English → D2 structured diagram code. Sub-10 second generation. Embeds in GitHub/Notion/Confluence.
+- **Diagram Generator AI**: free browser-based, text → Mermaid source + rendered SVG.
+
+None produce hand-drawn aesthetics. None are JSON-manifest-driven. None have architectural elements (doors, windows, stairs). All are text-in, polished-SVG-out.
+
+**SEO impact**: "Best AI diagram tools 2026" roundups (InfraSketch, Level Up Coding, AiXoria, ScreenApp) now list 7-10 tools per article. Skissify appears in ZERO of them. These roundup articles rank for high-intent queries. Each roundup we're absent from is a missed acquisition channel.
+
+**For Skissify**: Skissify's JSON-manifest-driven, hand-drawn output is a genuine differentiation that roundup writers would highlight — IF they knew Skissify existed. Outreach to 3 roundup authors this week is a higher-ROI action than any content piece.
+
+**Threat assessment: LOW (different paradigm — text vs JSON, polished vs hand-drawn) + MEDIUM SEO threat (roundup visibility gap)**
+
+---
+
+### Microsoft Open-Source AI Architecture Review Agents — Enterprise Validation (MARKET SIGNAL)
+
+**Sources**: [Microsoft Community Hub — AI Architecture Review Agents](https://techcommunity.microsoft.com/blog/educatordeveloperblog/stop-drawing-architecture-diagrams-manually-meet-the-open-source-ai-architecture/4496271), verified 2026-04-04
+
+Microsoft published open-source AI Architecture Review Agents that automatically generate architecture diagrams from code/infrastructure definitions. Enterprise use case: stop drawing architecture diagrams manually, use agents. This is a Fortune 500 funded validation of the "AI agents that generate diagrams" category.
+
+**What this means**: The "AI agent → visual diagram output" use case is now officially enterprise-validated. Microsoft's implementation uses agents + diagram generation. Skissify's MCP server is the piece that makes a Claude/GPT-4 orchestrator produce a *hand-drawn* architecture sketch instead of a generic flowchart. The differentiation: Skissify produces sketches that look like they came from a whiteboard session, not from a diagram tool. This is the "napkin sketch aesthetic" that enterprise architects use when they don't want to commit to a formal diagram yet.
+
+**For Skissify**: Add "architecture review agents" to MCP registry description and API docs. Blog post: "Use Skissify with your AI architecture review agent — hand-drawn output from automated reviews."
+
+**Threat assessment: LOW DIRECT THREAT (Microsoft doing generation, not a sketch API) + HIGH OPPORTUNITY (validates enterprise AI diagram market)**
+
+---
+
+### Updated Competitor Matrix (Run #128 — Saturday April 4, 04:48)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **tldraw (April 2026)** | AI Image Pipeline template + 25x canvas perf. DAG execution engine. $6K/yr SDK 4.3. | Partial (Chromium, 5-8s cold start) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp` Feb 3 2026. Headless XML/SVG. 10K+ shapes. No Chromium. | YES (XML/SVG) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Excalidraw official MCP** | Shipping lull confirmed April 2026 (no new features since Feb). Browser-dependent. | NO | YES | NO | YES (official) | **HIGH** |
+| **Eraser DiagramGPT** | Text→D2 code + rendered diagrams. Architecture/ER/sequence. GitHub-native. Growing developer mindshare. | NO (text-based) | NO | YES | NO | **LOW-MEDIUM (roundup SEO)** |
+| **D2 Language AI tools** | Text→D2 structured diagrams. Sub-10s. Notion/GitHub embed. Category growing. | NO (text-based) | NO | YES | NO | **LOW** |
+| **Microsoft AI Arch Agents** | Open-source, enterprise-funded. Auto-generates architecture diagrams from code. Not a sketch API. | Partial (framework-specific) | NO | YES | NO | **LOW (enterprise validation)** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #127 (Saturday April 4, 03:40 Stockholm)
 
 ### Status: 5 topics researched. KEY FINDINGS: **tldraw ships AI Image Pipeline template + 25x shape-indicator performance via 2D canvas rendering** — tldraw is entering AI workflow canvas territory; overlap with Skissify's agent-use-case is increasing. **MCP Registry now lists 5,800+ servers** — developer tools category has 1,200+ entries; Skissify still absent; the verified/curated tier launches Q4 2026 meaning early listings gain track record before audits start. **Excalidraw shipping lull confirmed** — no releases since February 2026; the window is still open. **Architect AI renders hand-drawn sketches → 3D building models** — new tangential competitor in architecture space (different direction: sketch-in vs JSON-in). **Vertical SaaS growing 2-3x faster than horizontal** — confirms Skissify's architectural-domain niche positioning. **28th consecutive run: still no headless hand-drawn JSON→SVG API competitor found.** CRITICAL carry-over: MCP Registry submission **still unconfirmed (Run #28 since first flagged — escalating to CRITICAL RED).**

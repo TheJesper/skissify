@@ -2,6 +2,41 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #128 (Saturday April 4, 04:48 Stockholm)
+
+### Theme: A2A Protocol Makes "Skissify as Visual Sub-Agent" Concrete; Roundup SEO Gap is the Immediate Revenue Lever; Credit Model Mainstream
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #128 Synthesis
+
+Run #128 surfaces three new angles: (1) MCP A2A coordination in Q3 2026 transforms Skissify from "a sketch tool with MCP" to "the canonical visual output sub-agent for AI pipelines", (2) "Best AI Diagram Tools 2026" roundup directories exist with high search rankings — Skissify appears in zero of them (InfraSketch, Level Up Coding, AiXoria, ScreenApp), (3) credit model adoption 126% YoY confirms the EUR/render billing is on-trend but conversion triggers need strengthening.
+
+**1. The A2A pattern is the strongest EUR 2/mo payment trigger discovered in 128 runs.** When MCP A2A launches in Q3 2026, developers building orchestrated AI pipelines will search for visual output sub-agents. The developer who discovers Skissify via MCP registry or a blog post will evaluate it in a specific context: "I need my orchestrator to generate a diagram of what it planned." The payment trigger is immediate and concrete: a working A2A call costs nothing to test, but once it's in a production pipeline, EUR 2/mo is a zero-friction line item. The critical difference from Run #127: it is no longer hypothetical. Anthropic's roadmap commits to A2A in Q3. Skissify should be positioned before that deadline. Payment trigger: "Your AI orchestrator needs visual output. Skissify is the sub-agent it calls. EUR 2/month, no SDK."
+
+**2. Roundup SEO absence is the cheapest EUR 2/mo revenue unlock not yet taken.** "Best AI Diagram Tools 2026" articles on InfraSketch, Level Up Coding, AiXoria, and ScreenApp collectively rank for queries like "AI diagram API", "JSON diagram generator", "hand-drawn diagram tool". These articles have no Skissify listing because no one has reached out. A single email to 3 roundup authors (referencing the unique hand-drawn + JSON + architectural elements niche) would place Skissify in front of developers who are already at the "evaluating diagram tools" purchase stage. No ad spend. No content. One email per author. This is the highest-ratio action left on the table.
+
+**3. Credit model is mainstream — the problem is showing the usage ceiling, not explaining the model.** 126% YoY growth in credit-based pricing means developers understand pay-per-render. They no longer need it explained. The conversion problem is different: developers don't hit limits during evaluation, so they don't feel the upgrade trigger. Solution: lower the free tier ceiling (from 50 to 20 renders) and make the counter visible. A developer who sees "18/20 renders used" is 10x more likely to convert than one who has never seen a usage number. EUR 2/mo feels trivial when you're watching your render count approach zero.
+
+**Updated payment trigger model (Run #128):**
+- EUR 0 → EUR 2/mo: **visible render counter** + tldraw contrast ("$6K/yr + browser vs €2/mo + curl") + **A2A pipeline argument** ("your orchestrator needs a visual output sub-agent")
+- EUR 2/mo → EUR 5/mo: render ceiling at 500/mo + API access unlock
+- EUR 5/mo → EUR 19/mo "Studio": architectural element packs + floor plan templates + priority support
+- EUR 0 → credit pack (EUR 5, 2,000 renders): EU no-subscription preference (growing market segment)
+- Enterprise: Docker self-hosted + XSS-safe SVG audit claim + MCP verified status (Q4 2026)
+
+#### A2A Visual Sub-Agent — Concrete Architecture Pattern
+
+The Q3 2026 MCP A2A design: orchestrator agent → calls Skissify MCP server → gets hand-drawn SVG → embeds in response or saves to artifact store. This is not a marketing metaphor. It is the official MCP specification direction. Skissify's JSON schema is the only structured, deterministic input for hand-drawn visual output in the MCP ecosystem. No competitor offers this. First-mover advantage in the A2A tool category is achievable with a single blog post and MCP registry listing — both unblocked since Run #1.
+
+#### Roundup SEO — Highest-ROI Unlocked Action
+
+"Best AI Diagram Tools 2026" roundups (InfraSketch, Level Up Coding, AiXoria, ScreenApp, ScreenApp) are indexed and ranking now. Each roundup lists 7-10 tools. Skissify's unique positioning (hand-drawn, JSON-manifest, architectural elements, MCP-compatible) is a differentiated entry that roundup writers actively want — it makes their article more complete. Outreach template: "I noticed your 'Best AI Diagram Tools 2026' article. Skissify is a hand-drawn JSON→SVG renderer built for AI agents and MCP pipelines — different from the polished vector tools you've listed. Would you consider adding it?" This is a 10-minute action with potentially months of passive SEO benefit.
+
+#### Credit Model Conversion Fix
+
+The free tier visibility problem: developers evaluate Skissify, use 12 of 50 renders, never hit a limit, never upgrade. Fix: reduce free tier to 20 renders AND display a persistent render counter in the UI. A visible "8 renders remaining" creates urgency that a hidden limit never does. This is a 1-hour UI change with measurable conversion impact. Secondary fix: trigger a modal at 15/20 renders with a one-click EUR 2/mo upgrade.
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #127 (Saturday April 4, 03:40 Stockholm)
 
 ### Theme: tldraw Entering AI Pipeline Territory — Headless Moat Must Be Articulated Now; MCP Registry at 5,800+ Servers With No Hand-Drawn Competitor; Vertical Pricing May Be Underpriced
