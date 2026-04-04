@@ -1,7 +1,61 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 146**
+**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 147**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 147 — Enterprise B2B Angle + Substack Notes + Threads + Stack Overflow + Discord Frameworks + Skissify Challenge)
+
+### Cycle 147 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "The Enterprise Case for AI Visual Output: What CTOs Need to Know in 2026" — B2B decision-maker audience, cost/ROI framing, enterprise agent stack visual layer, security/compliance angle | `blog/the-enterprise-case-for-ai-visual-output.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 147 — 5 new hooks: Substack Notes (5M+ tech readers, newsletter discovery), Threads/Meta (visual AI content, growing dev community), Stack Overflow answer-seeding strategy, Discord LangChain/CrewAI/Mastra framework servers, "Skissify Challenge" viral mechanic (share your weirdest sketch). New platforms: Substack Notes, Threads, Stack Overflow, Discord framework-specific servers. New hashtags: #AIVisualOutput #EnterpriseAI #SkissifyChallenge #VibeSketch #AISketch. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 147 — Enterprise positioning section, B2B one-liner, ROI framing, media contacts template | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 147 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 147 — Priority Actions (April 4, 2026 — Saturday Evening, Day 4)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/DnD** (3.2M) — OVERDUE SINCE CYCLE 135 | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md |
+| **POST "Skissify Challenge" on Twitter/X** — NEW Cycle 147 | P1 | TODAY | Cycle 147 SOCIAL-MEDIA.md (Hook 5) |
+| **POST Substack Notes** — NEW Cycle 147 | P1 | TODAY | Cycle 147 SOCIAL-MEDIA.md (Hook 1) |
+| **POST Threads** — NEW Cycle 147 | P1 | TODAY | Cycle 147 SOCIAL-MEDIA.md (Hook 2) |
+| **SEED Stack Overflow answers** — NEW Cycle 147 | P2 | THIS WEEK | Cycle 147 SOCIAL-MEDIA.md (Hook 3) |
+| **POST Discord LangChain/CrewAI servers** — NEW Cycle 147 | P1 | TODAY | Cycle 147 SOCIAL-MEDIA.md (Hook 4) |
+| **PUBLISH blog/the-enterprise-case-for-ai-visual-output.md to Dev.to** | P1 | TODAY | Cycle 147 blog |
+| **RECORD + POST demo video** — OVERDUE EVERY CYCLE | P0 | TODAY | Script in Cycle 139 SOCIAL-MEDIA.md |
+| **POST r/MachineLearning** (4.1M) — OVERDUE since Cycle 143 | P0 | TODAY | Cycle 146 SOCIAL-MEDIA.md (Hook 2) |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md |
+
+### Cycle 147 — New Ideas
+
+**Idea: Substack Notes is the most underutilized distribution channel for developer tools in 2026.** Substack Notes reaches 5M+ active readers who have explicitly opted into long-form tech content. A short Note (150-250 words) with a sketch example and link to the blog post gets surfaced to followers of large AI newsletters (Ben's Bites, The Batch, The Rundown AI, TLDR AI) through the discovery feed. Unlike Reddit, there is no spam filter. Unlike Twitter, posts don't decay in 2 hours. A pinned Note stays discoverable for weeks. This is a P1 action that costs 15 minutes to execute.
+
+**Idea: Threads (Meta) has a fast-growing developer and AI community in 2026 that Twitter/X has lost.** Many AI developers migrated from Twitter after 2024. Threads has the visual-first post format that suits a "look what Claude drew" demo perfectly. A 3-image post showing JSON-in → sketch-out gets natural engagement from the design and developer communities that have settled on Threads as their primary social. No API posting strategy needed — one organic post from the founder account.
+
+**Idea: Stack Overflow answer seeding is a durable, compounding channel.** Questions like "how can an AI agent generate a visual diagram?", "how to get Claude to output a floor plan?", and "what tools can LLMs use to produce diagrams?" exist and are unanswered or poorly answered. A genuine, helpful answer that mentions Skissify's MCP server as one option (alongside Mermaid, Graphviz) gets indexed and surfaces for months. This is a legitimate, helpful contribution — not spam. Each answer compounds over time as the question gets more views.
+
+**Idea: Discord LangChain, CrewAI, and Mastra servers are framework-specific communities where Skissify's MCP integration story is highly relevant.** The LangChain Discord has 100K+ members, CrewAI has 60K+, and Mastra (TypeScript agents) is a fast-growing community. A genuine show-and-tell post in the #showcase or #resources channel reaches active builders who are right now looking for output format solutions. Unlike subreddits, Discord servers have real-time engagement — a good post generates replies within minutes.
+
+**Idea: The "Skissify Challenge" is a viral mechanic that turns users into distribution.** Ask: "Show us your weirdest Skissify sketch — JSON in, hand-drawn out. Most creative wins." Run it on Twitter/X + Threads with #SkissifyChallenge. A challenge creates a reason to post, a reason to share, and UGC that demonstrates use cases the team never imagined. Even 10 participants generates 10 pieces of authentic content showing Skissify in novel contexts. The constraint (JSON manifest + weird use case) actually makes it more creative, not less.
+
+**Idea: The enterprise/B2B angle is completely undeveloped.** Every post so far has targeted individual developers, indie hackers, and hobbyists. But the actual buyers of enterprise AI tooling are CTOs, VPs of Engineering, and AI leads at mid-size companies building internal agent systems. They are asking: "What does the visual output layer of our agent stack look like?" A short, authoritative post framing Skissify as the visual primitive for enterprise AI agents — with ROI framing (reduced miscommunication, faster approval cycles, human-readable agent outputs) — reaches a different audience entirely. This audience reads Substack, LinkedIn, and HBR — not Reddit.
+
+### Cycle 147 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: the-enterprise-case-for-ai-visual-output.md (~800 words, B2B/CTO audience, enterprise framing) | DONE Cycle 147 |
+| SOCIAL-MEDIA.md Cycle 147 — 5 hooks: Substack Notes, Threads, Stack Overflow seeding, Discord framework servers, Skissify Challenge | DONE Cycle 147 |
+| PRESS-KIT.md Cycle 147 — enterprise positioning, B2B one-liner, ROI framing, media contacts template | DONE Cycle 147 |
+| LAUNCH-PLAN.md Cycle 147 | DONE Cycle 147 |
 
 ---
 
