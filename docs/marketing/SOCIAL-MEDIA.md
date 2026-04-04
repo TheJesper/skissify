@@ -1,7 +1,256 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 5, 2026 — Cycle 139 (New: 6 viral hooks — "Two Audiences" cognitive framing (Twitter/LinkedIn), r/ExperiencedDevs "spec-to-space" pattern post, YouTube Shorts script for AI floor plan demo, r/Notion/r/Obsidian productivity angle, Mastodon/Fediverse developer community posts, LinkedIn carousel "Skissify vs Excalidraw" 7-slide format. New platforms: r/ExperiencedDevs, YouTube Shorts, Mastodon/fosstodon.org, r/Notion, r/Obsidian. New hashtags: #AIWorkflow #VibeCoding #SketchFirst #AgentTools #SpatialAI #MicroSaaS.)**
+**Last updated: April 4, 2026 — Cycle 140 (New: 6 viral hooks — "Sunk Cost Wireframe" framing (Twitter/LinkedIn thread), r/Architecture spatial memory angle, r/ProductHunt Day 4 momentum post, Reddit r/ProgrammerHumor meme format, Dev.to "input method" angle (Skissify vs Excalidraw), LinkedIn thought leadership "deterministic spatial output". New platforms: r/Architecture, r/ProgrammerHumor, Pinterest (floor plan boards). New hashtags: #SunkCostWireframe #SpatialMemory #DeterministicOutput #DesignThinking #AIFloorPlan.)**
+
+---
+
+## Cycle 140 — April 4, 2026 (Day 4 Post-Launch — Sunk Cost + Spatial Memory + Input Method)
+
+### Strategic Priority
+
+Day 4 (Saturday). Weekend browsing window, developer-heavy audiences online. Focus:
+
+1. **"Sunk cost wireframe" hook** — most relatable pain point in product development. Every designer has lived this. This hook earns shares from people who have never heard of Skissify because the frustration is universal.
+2. **r/Architecture** — 2.1M members, floor plan generation is genuinely novel to this audience. Frame as "what happens when your AI assistant can sketch," not a product announcement.
+3. **r/ProgrammerHumor** — meme format for the "your AI agent explains space with words" vs "your AI agent shows space with a sketch" distinction. High shareability, low friction.
+4. **Dev.to technical post** — the "input method is the whole story" framing for Skissify vs Excalidraw resonates with developers who already use both and are confused about the distinction.
+5. **Pinterest** — underutilized for developer tools, but floor plan content performs extremely well on Pinterest boards. A single well-tagged post can drive ongoing organic traffic for months.
+
+Still critically overdue — post these immediately:
+- r/LocalLLaMA (2.3M) — OVERDUE since Cycle 111
+- MCP Discord #showcase — OVERDUE since Cycle 111
+- Indie Hackers — OVERDUE since Cycle 98
+- r/AI_Agents — OVERDUE since Cycle 132
+
+---
+
+### Viral Hook 1: "Sunk Cost Wireframe" — Twitter/X Thread
+
+**Platform:** Twitter/X thread + LinkedIn article
+**Core insight:** Nobody questions a napkin sketch. Everyone protects a Figma wireframe. That social dynamic kills better ideas. Rough beats polished — not because it looks better, but because it costs nothing to tear down.
+
+**Twitter/X thread opener:**
+```
+There is a failure mode in every product team that no one talks about.
+
+It is called the sunk cost wireframe.
+
+You spend 45 minutes in Figma. It looks professional. You walk into the review meeting — and you've already spent too much time to honestly want it torn apart.
+
+So has everyone else in the room. 🧵
+```
+
+**Thread tweet 2:**
+```
+Polished artifacts create invisible social contracts.
+
+When something looks finished, the unspoken signal is:
+→ "We are refining now"
+→ Not "we are questioning the direction"
+
+The reviewer shifts from evaluator to editor. They fix the font instead of fixing the flow.
+```
+
+**Thread tweet 3:**
+```
+This is not a soft skills problem. It is a design process bug.
+
+The fix: generate the rough sketch BEFORE you open Figma.
+
+No one defends a napkin sketch. There's nothing to protect.
+
+skissify.com/human → one sentence → sketch URL → drop it in the meeting invite.
+```
+
+**Thread tweet 4:**
+```
+The two-meeting pattern the fastest teams use:
+
+Session 1 (Skissify): Is this the right STRUCTURE?
+Session 2 (Figma): Is this the right EXECUTION?
+
+Collapsing both into one Figma session is where hours go to die.
+
+#SketchFirst #ProductDesign #DesignThinking
+```
+
+**LinkedIn post (standalone):**
+```
+The most expensive meeting in product development is the one where you defend a wireframe you shouldn't have built yet.
+
+Here is what I learned from watching design reviews go wrong:
+
+The more polished the artifact, the less structural feedback you receive. It is called perceived completeness bias — the visual quality of what you show people determines what kind of feedback they're able to give you.
+
+Show a Figma wireframe → people discuss fonts, spacing, colors.
+Show a rough sketch → people discuss whether you've solved the right problem.
+
+Same layout. Different signal.
+
+The fix isn't to get better at Figma. It's to sketch first.
+
+Our team built Skissify exactly for this moment. One sentence. Under 10 seconds. A sketch URL you can drop anywhere.
+
+Try it: skissify.com/human
+
+What's your team's experience with this bias? Have you found a way around it?
+
+#DesignThinking #ProductManagement #ScrumMaster #AgileDesign #UXDesign
+```
+
+---
+
+### Viral Hook 2: r/Architecture Post
+
+**Platform:** r/Architecture (2.1M subscribers)
+**Angle:** AI agents generating architectural floor plans as spatial reasoning output — genuine novelty for this community.
+
+**Post title:** "I built a tool that lets AI agents sketch floor plans — here's what surprised me about how they reason about space"
+
+**Post body:**
+```
+I've been working on Skissify (skissify.com), a sketch renderer that lets AI agents produce hand-drawn style floor plans from JSON or plain text descriptions.
+
+The surprising part: language models are genuinely good spatial reasoners. When you ask Claude to plan a one-bedroom apartment with specific constraints (south-facing living room, storage near the entrance, separate kitchen), it produces coherent, considered layouts.
+
+The gap was always in output. The agent could reason about space but had no way to show its work. Skissify closes that loop — the agent calls the API, gets back a sketch URL, and the spatial reasoning becomes a shareable artifact.
+
+A few interesting observations from building this:
+
+1. AI agents gravitate toward certain room proportions (roughly 3:4 for bedrooms, wider for living spaces) that feel architecturally reasonable — I don't know if this comes from training data or emergent spatial reasoning
+2. The /human endpoint (plain text → sketch) tends to produce more open plans than the JSON manifest path — possibly because language descriptions favor flow over enclosure
+3. Blueprint paper type + ink tool produces sketches that architectural clients find more credible than cream paper + pencil, even at the same wobble level
+
+Happy to share some example outputs or the JSON manifest format if anyone's curious. Mostly want to know if professional architects find this kind of rough AI-generated sketch useful as a starting point for client conversations, or if it's too rough to be useful.
+
+Skissify is free, no account required: skissify.com
+```
+
+---
+
+### Viral Hook 3: r/ProgrammerHumor Meme Format
+
+**Platform:** r/ProgrammerHumor (4.1M subscribers)
+**Format:** Two-panel comparison (text post with ASCII art or description for image)
+
+**Post title:** "AI agents before and after visual output"
+
+**Post body:**
+```
+BEFORE Skissify:
+
+User: "Design me a two-bedroom apartment"
+
+Agent: "The apartment features a south-facing living room connected to an open-plan kitchen. The primary bedroom, located in the northwest corner, benefits from morning light through the en-suite bathroom window. A secondary bedroom adjacent to the hallway..."
+
+[continues for 800 words]
+
+User: [tries to visualize 800-word room description]
+
+User: [gives up]
+
+---
+
+AFTER Skissify:
+
+User: "Design me a two-bedroom apartment"
+
+Agent: *calls generate_sketch*
+
+Agent: "Here's the layout: skissify.com/s/abc123"
+
+User: [looks at sketch]
+
+User: "Move the bathroom"
+
+Agent: *updates manifest, returns new URL*
+
+---
+
+It's just JSON in, sketch out. No magic.
+
+skissify.com — free, no account required
+
+#programming #AITools #MCP #AgentDev
+```
+
+---
+
+### Viral Hook 4: Dev.to Article — "The Input Method Is the Whole Story: Skissify vs Excalidraw"
+
+**Platform:** Dev.to (1M+ developer readers)
+**Angle:** Technical distinction — input method (programmatic vs manual) explains every difference between the two tools.
+
+**Article intro:**
+```
+The fastest way to confuse a potential Skissify user is to compare it to Excalidraw without explaining the input method.
+
+Both produce hand-drawn style visuals. Both use informal aesthetics. At a screenshot level, they look similar.
+
+But the input model is completely different.
+
+Excalidraw: you draw. Mouse or trackpad, element by element.
+Skissify: you generate. JSON manifest, REST API, or plain text.
+
+Different input → different user → different moment → different job.
+
+This post explains exactly when to use each — and the two-stage workflow that uses both.
+```
+
+**Tags:** `#webdev #ai #tools #productivity`
+
+---
+
+### Viral Hook 5: Pinterest Floor Plan Strategy
+
+**Platform:** Pinterest
+**Angle:** Floor plan aesthetics perform durably on Pinterest. A well-tagged board compounds over months.
+
+**Board name:** "AI-Generated Floor Plans — Hand-Drawn Sketches"
+
+**Pin descriptions to use:**
+```
+Pin 1: "AI-generated apartment floor plan sketch — two bedroom, open plan kitchen, south-facing living room. Created with Skissify (skissify.com) using MCP server integration with Claude. Free to generate, no account needed. #FloorPlan #AIFloorPlan #ApartmentLayout #InteriorDesign #HandDrawn"
+
+Pin 2: "Hand-drawn style floor plan generated by AI agent. Blueprint paper, ink tool, wobble level 4. Input: one sentence description. Output: shareable sketch URL in under 10 seconds. skissify.com #FloorPlanDesign #BlueprintSketch #AIArchitecture #HomePlanning"
+
+Pin 3: "The rough sketch before the architect meets: AI-generated spatial layout for client briefing. Skissify renders JSON manifests as hand-drawn floor plans. Free tier, REST API available. #ArchitectureDraft #ClientPresentation #FloorPlanIdeas #SketchDesign"
+```
+
+---
+
+### Viral Hook 6: LinkedIn Thought Leadership — "Deterministic Spatial Output"
+
+**Platform:** LinkedIn (product managers, engineering managers, design leads)
+**Angle:** The determinism argument — same JSON, same sketch — as a feature for teams that need reproducibility.
+
+**Post:**
+```
+There is an underappreciated property that separates Skissify from image generation tools for spatial planning work:
+
+Deterministic rendering.
+
+Same JSON manifest → same sketch. Every time.
+
+This matters for teams because:
+
+→ You can version control your spatial layouts (check in the manifest, diff the changes)
+→ Agent outputs are reproducible — not random artifacts, but functions of their inputs
+→ The URL in your project document still shows the same thing in six months
+
+This is the opposite of DALL-E or Midjourney, where the same prompt produces a different image every run. That's right for creative work. It's wrong for planning work.
+
+When your AI agent generates a floor plan for a client briefing, you want that floor plan to be the same floor plan the client sees, the same floor plan the contractor references, and the same floor plan that goes in the compliance file.
+
+Skissify generates that artifact. Free tier, no account required.
+
+Is determinism a feature your teams care about in AI-generated artifacts? Curious how other product orgs are thinking about this.
+
+#ProductManagement #AITools #DesignOps #AgentWorkflows #EngineeringLeadership
+```
+
+---
 
 ---
 

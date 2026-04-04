@@ -1,7 +1,76 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 139**
+**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 140**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 140 — Day 4 Sunk Cost + Spatial Memory + Input Method)
+
+### Cycle 140 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 140 ("Sunk Cost Wireframe" angle — perceived completeness bias, social contract of polished artifacts, two-meeting pattern, Figma vs Skissify decision guide) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle140.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 140 ("Spatial Memory" angle — sketches as persistent addressable state, spatial memory across agent turns, deterministic rendering for version control, three connection options, five use cases) | `blog/how-ai-agents-draw-floor-plans-cycle140.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 140 ("Input Method Is the Whole Story" angle — programmatic vs manual input as the core distinction, 14-row feature table, four scenario analysis, two-stage workflow) | `blog/skissify-vs-excalidraw-comparison-cycle140.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 140 — 6 new viral hooks: "Sunk Cost Wireframe" Twitter thread + LinkedIn (perceived completeness bias), r/Architecture AI spatial reasoning post, r/ProgrammerHumor meme format, Dev.to "input method" technical article, Pinterest floor plan board strategy, LinkedIn "deterministic spatial output" thought leadership. New platforms: r/Architecture, r/ProgrammerHumor, Pinterest. New hashtags: #SunkCostWireframe #SpatialMemory #DeterministicOutput #DesignThinking #AIFloorPlan. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 140 — Day 4 status table with new channels | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 140 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 140 — Priority Actions (April 4–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/Architecture** (2.1M) — NEW Cycle 140 | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/ProgrammerHumor** (4.1M) — NEW Cycle 140 | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 3) |
+| **PUBLISH Dev.to "input method" article** — NEW Cycle 140 | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 4) |
+| **SET UP Pinterest floor plan board** — NEW Cycle 140 | P2 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 5) |
+| **POST LinkedIn "deterministic output"** — NEW Cycle 140 | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 6) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — absolute final window | 30s YouTube Shorts script in Cycle 139 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ExperiencedDevs** (1.2M) — NEW Cycle 139, still unposted | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 2) |
+| **POST Mastodon** (fosstodon + hachyderm) — NEW Cycle 139, still unposted | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 5) |
+| **POST r/Notion** (580K) — NEW Cycle 139, still unposted | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/ObsidianMD** (200K) — NEW Cycle 139, still unposted | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 4) |
+| **POST LinkedIn carousel** — NEW Cycle 139, still unposted | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 6) |
+| **POST r/MachineLearning** (4.1M) — Cycle 138, still unposted | P0 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 2) |
+| **SUBMIT Dev Hunt** — Cycle 138, still unsubmitted | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 5) |
+| **POST r/entrepreneur** (2.5M) — Cycle 138, still unposted | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 6) |
+| **SUBMIT to MCP directories** (5 sites) — Cycle 137, still unsubmitted | P0 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/webdev** (2.1M) — Cycle 137, still unposted | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/ProductManagement** (1.8M) — Cycle 137, still unposted | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/DnD** (3.2M) — Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1) |
+| **PUBLISH 3 Cycle 140 blogs to Dev.to** | P0 | TODAY staggered 10:00/13:00/16:00 CET | |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 4) |
+| **POST HN Ask HN / Show HN** | P1 | MONDAY April 7, 08:00 CET | Both drafts in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 140 — New Ideas
+
+**Idea: r/Architecture (2.1M) is completely untapped and uniquely suited.** The spatial reasoning angle — AI agents reasoning about space but having no visual output — is a genuine architectural insight, not a product announcement. Architecture professionals will engage critically and constructively with the observation. The comments will generate organic discovery from the architecture community. Frame it as a discovery, ask for professional feedback.
+
+**Idea: r/ProgrammerHumor is underused for serious developer tool distribution.** The before/after meme format (800 words of agent description vs one sketch URL) is genuinely funny and accurately represents the problem. ProgrammerHumor posts regularly get 50K+ upvotes and drive real traffic because the audience forwards them to their dev Slack channels. One viral meme post can match a week of blog output in reach.
+
+**Idea: Pinterest is a long-tail SEO machine for floor plan content.** Floor plan searches are extremely high on Pinterest — it is a top-5 platform for home planning content. A Skissify board with well-tagged floor plan sketch pins will compound over months as an organic traffic source with zero ongoing effort. The pins link back to skissify.com with image previews that demonstrate the product immediately.
+
+**Idea: The "deterministic spatial output" LinkedIn angle targets engineering managers and design leads.** This audience is actively evaluating AI tools for their teams and cares deeply about reproducibility and auditability. The argument that Skissify's output is a function (not a random sample) is a genuine technical differentiator that justifies tool adoption in professional contexts. Engineering managers will share this with their teams via internal Slack, which reaches an audience that social algorithms never touch.
+
+**Idea: The "sunk cost wireframe" is the highest-empathy hook in the Skissify library.** Every product person has experienced it. The social dynamic (nobody questions a napkin, everybody protects a Figma wireframe) is immediately recognizable. This hook earns shares from people who have never heard of Skissify because the insight is valuable on its own. Target: Twitter design community, LinkedIn product management community, r/ProductManagement.
+
+### Cycle 140 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle140.md | DONE Cycle 140 |
+| Blog: how-ai-agents-draw-floor-plans-cycle140.md | DONE Cycle 140 |
+| Blog: skissify-vs-excalidraw-comparison-cycle140.md | DONE Cycle 140 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + new platforms (r/Architecture, r/ProgrammerHumor, Pinterest) + hashtag additions | DONE Cycle 140 |
+| PRESS-KIT.md — Cycle 140 day-4 status table | DONE Cycle 140 |
+| LAUNCH-PLAN.md — Cycle 140 block | DONE Cycle 140 |
 
 ---
 

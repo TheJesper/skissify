@@ -1,6 +1,45 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 139 (New: 3 blog posts ("two audiences" cognitive framing for Figma post, "spec-to-space pattern" for floor plan post, "right tool for the right moment" for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 139 block with 6 viral hooks: "two audiences" cognitive hook (Twitter/LinkedIn), r/ExperiencedDevs spec-to-space pattern, YouTube Shorts floor plan demo script, r/Notion+r/ObsidianMD productivity angle, Mastodon/Fediverse developer posts, LinkedIn carousel Skissify vs Excalidraw. New platforms: r/ExperiencedDevs, YouTube Shorts, Mastodon, r/Notion, r/ObsidianMD. New hashtags: #AIWorkflow #VibeCoding #SketchFirst #AgentTools #SpatialAI #MicroSaaS.)*
+*Last updated: April 4, 2026 — Cycle 140 (New: 3 blog posts — "Sunk Cost Wireframe" angle for Figma post, "Spatial Memory as First-Class Output" angle for floor plan post, "Input Method Is the Whole Story" angle for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 140 block with 6 viral hooks: "Sunk Cost Wireframe" Twitter thread + LinkedIn, r/Architecture spatial reasoning angle, r/ProgrammerHumor meme format, Dev.to "input method" technical article, Pinterest floor plan board strategy, LinkedIn "deterministic spatial output" thought leadership. New platforms: r/Architecture, r/ProgrammerHumor, Pinterest. New hashtags: #SunkCostWireframe #SpatialMemory #DeterministicOutput #DesignThinking #AIFloorPlan.)*
+
+---
+
+## Cycle 140 — What's New (April 4, 2026 — Day 4 Post-Launch)
+
+### Day 4 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "Sunk Cost Wireframe" — Figma post (Cycle 140) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle140.md` |
+| Blog: "Spatial Memory as First-Class Output" — Floor plan post (Cycle 140) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle140.md` |
+| Blog: "Input Method Is the Whole Story" — Excalidraw comparison (Cycle 140) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle140.md` |
+| SOCIAL-MEDIA.md Cycle 140 | DONE — 6 hooks: sunk cost wireframe, r/Architecture, r/ProgrammerHumor, Dev.to, Pinterest, LinkedIn determinism |
+| PRESS-KIT.md Cycle 140 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 140 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today |
+| r/Architecture (2.1M) | NEW Cycle 140 — post today |
+| r/ProgrammerHumor (4.1M) | NEW Cycle 140 — post today |
+| Pinterest floor plan board | NEW Cycle 140 — set up today |
+| r/ExperiencedDevs (1.2M) | NEW Cycle 139 — still unposted |
+| YouTube Shorts | NEW Cycle 139 — still unrecorded |
+| Mastodon (fosstodon/hachyderm) | NEW Cycle 139 — still unposted |
+| r/Notion (580K) | NEW Cycle 139 — still unposted |
+| r/ObsidianMD (200K) | NEW Cycle 139 — still unposted |
+| LinkedIn carousel (Excalidraw comparison) | NEW Cycle 139 — still unposted |
+| r/MachineLearning (4.1M) | NEW Cycle 138 — still unposted |
+| Dev Hunt | NEW Cycle 138 — still unsubmitted |
+| r/entrepreneur (2.5M) | NEW Cycle 138 — still unposted |
+| MCP directories (5 sites) | NEW Cycle 137 — still unsubmitted |
+| r/webdev (2.1M) | NEW Cycle 137 — still unposted |
+| r/ProductManagement (1.8M) | NEW Cycle 137 — still unposted |
+| r/DnD (3.2M) | NEW Cycle 135 — still unposted |
+
+---
 
 ---
 
