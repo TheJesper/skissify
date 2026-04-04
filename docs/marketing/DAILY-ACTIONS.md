@@ -2,6 +2,65 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #126 Actions (Saturday April 4, 02:32 Stockholm) — FOR MONDAY APRIL 6
+
+### Context: Run #126 Key New Findings
+- **tldraw v4.5 ships SVG sanitization** — XSS-safe SVG is now a baseline expectation; Skissify Canvas 2D pipeline is inherently safer; document it
+- **Credit-based pricing pendulum swinging to simplicity** — Cursor seat+credits is the developer tool template; Skissify EUR 2/mo + overage is the right structure
+- **AI SVG generators (SVGMaker, VectorWitch, SVGGenie) proliferating** — text→polished SVG category growing; Skissify's JSON→hand-drawn gap is uncontested but SEO competition for generic "SVG generator" queries increasing
+- **Excalidraw in shipping lull (no new features since Feb 2026)** — finite window to submit MCP listing before their next push
+- **27th consecutive run: still no headless hand-drawn JSON API competitor found**
+- **MCP Registry + Claude Connectors: Run #27 unconfirmed — still the #1 blocker**
+
+---
+
+### Action 1 (CRITICAL — Monday): MCP Registry + Claude Connectors Submission (Run #27 — Excalidraw Lull Window)
+
+**This is the highest-priority unblocked task. Unconfirmed for 26 consecutive runs. Run #126 adds a new time-bound reason: Excalidraw is in a shipping lull (no new features since Feb 2026). This is the window where "hand-drawn diagram MCP" search results in the registry are less dominated by Excalidraw noise. Submit during the lull.**
+
+**Updated registry listing copy for Run #126** (differentiates from sketch.com, draw.io, and AI SVG generators):
+> "Skissify — headless JSON→hand-drawn SVG renderer. Zero Chromium. Sub-100ms cold start. XSS-safe output (Canvas 2D pipeline). Not a design file tool, not a polished vector generator — a render API that makes agent output look hand-sketched. Tunable wobble + humanness. Floor plans, napkin diagrams, wireframes. Architectural elements: doors, windows, stairs, room dimensions. Keywords: hand-drawn, floor plan, building sketch, JSON, wobble, SVG, no browser, sketch renderer."
+
+**Steps Monday:**
+1. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/)
+2. Submit to Claude Connectors at [claude.com/connectors](https://claude.com/connectors)
+3. Confirm npm package for MCP server is published first
+4. Post "Run #128 success condition": "Skissify submitted to MCP Registry. URL confirmed: ___"
+
+---
+
+### Action 2 (HIGH — Monday): Document SVG Security Posture in README + API Docs
+
+**New from Run #126**: tldraw v4.5 shipped SVG sanitization as a headline feature — signaling that enterprise and platform buyers now assume XSS-safe SVG output. Skissify's Canvas 2D rendering pipeline is inherently script-free (canvas context does not expose a script injection surface). This architectural advantage is invisible if undocumented.
+
+**What to add Monday:**
+
+In README security section (create if missing):
+> "**XSS-safe SVG output** — Skissify renders via an HTML Canvas 2D pipeline. SVG output is generated from canvas primitives, not from user-supplied SVG markup. There is no XSS injection surface by design. No external references, no embedded scripts in output SVGs."
+
+In API docs (security heading):
+> "Output SVGs are safe for direct embedding in HTML. Unlike tools that render user-provided SVG markup, Skissify generates SVG from canvas draw commands. Your users cannot inject scripts via sketch elements."
+
+**Why this matters for EUR 2/mo conversion**: Enterprise team leads evaluating Skissify for internal use need to answer "is this safe to embed?" before approving payment. The security note resolves that objection at the lowest possible friction.
+
+---
+
+### Action 3 (MEDIUM — Monday): SEO Content — Target "JSON to SVG" + "Programmatic Sketch" Queries
+
+**New from Run #126**: AI SVG generators (SVGMaker, VectorWitch, SVGGenie) are proliferating in the "AI SVG generator" search category. These tools use text→polished output; Skissify uses JSON manifest→hand-drawn output. But both appear in the same discovery surface for "JSON to SVG" or "SVG generator API" queries.
+
+**Concrete action — publish one blog post or README section** targeting:
+- Primary keyword: `"JSON to SVG API"` (low competition, high intent)
+- Secondary: `"programmatic hand-drawn diagram"`, `"deterministic sketch generator"`, `"JSON schema sketch renderer"`
+
+**Suggested post title**: "Why JSON→SVG beats text→SVG for agents: Skissify vs AI SVG generators"
+- Argument: text-to-SVG is non-deterministic (no schema, no validation, no repeatability). JSON manifest gives agents a stable API surface. Same argument as Mermaid vs natural language diagramming — structured input wins for programmatic use.
+- Include comparison table: Skissify vs SVGMaker vs VectorWitch on: input type, output aesthetic, determinism, agent-compatibility, pricing.
+
+**SEO goal**: Capture developers who tried text-based SVG generators and found them too unpredictable for pipeline use.
+
+---
+
 ## [2026-04-04] — Strategy Run #125 Actions (Saturday April 4, 01:24 Stockholm) — FOR MONDAY APRIL 6
 
 ### Context: Run #125 Key New Findings
@@ -452,6 +511,75 @@ Run #120 adds new urgency: Google Stitch MCP (April 2) means the registry now ha
 **Why now**: With Excalidraw in Claude Connectors for free, Skissify needs a friction-less "first payment" option for pipeline builders who aren't ready to subscribe. A EUR 7 credit pack is a trivially approvable experiment. Monthly EUR 5/mo subscription requires more commitment.
 
 **Time: 3-5 hours (Stripe product setup + pricing page update). Revenue impact: opens a new acquisition channel for non-subscription buyers.**
+
+---
+
+## [2026-04-04] — Strategy Run #127 Actions (Saturday April 4, 03:40 Stockholm)
+
+### Context: Run #127 Key New Findings
+- **tldraw AI Image Pipeline template shipped** — DAG-based AI pipeline canvas, typed ports, Cloudflare Worker execution; tldraw now competing for same AI pipeline builder audience; headless moat must be named explicitly
+- **MCP Registry: 5,800+ servers, 0 hand-drawn JSON renderers** — Q4 2026 verified/curated tier creates a hard submission deadline; 28th consecutive run without MCP listing = CRITICAL RED
+- **Excalidraw lull confirmed** — no releases since February 2026; low-noise window still open
+- **Vertical SaaS 2-3x growth + architecture buyer WTP $19-99/mo** — EUR 2/mo may be underpriced for architecture segment; Studio tier opportunity
+
+---
+
+### Action 1 (CRITICAL RED — today): Submit Skissify to MCP Registry
+
+**Problem**: 28 consecutive strategy runs have flagged MCP Registry submission. The MCP Registry now has 5,800+ tools. There is zero competition in the "hand-drawn JSON diagram renderer" category. The Q4 2026 verified tier (security audits + usage statistics) will reward tools that are already listed. Every day Skissify is unlisted is discoverability lost.
+
+**What to do**:
+1. Go to [https://registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io)
+2. Submit the Skissify MCP server (the server exists — this is a form submission, not a build task)
+3. Fill out: name ("Skissify — Hand-Drawn JSON Diagram Renderer"), description (40-word max: "Convert JSON manifests to hand-drawn SVG diagrams via API. No browser, no Chromium. Architectural elements (doors, windows, stairs), configurable wobble, sub-100ms generation."), category (Developer Tools + AI/Automation), URL, MCP endpoint
+4. Also submit to: Claude Connectors (Anthropic), Cursor MCP directory, VS Code MCP extensions list
+5. Confirm submission in DAILY-ACTIONS.md (add a "SUBMITTED: [date]" line here)
+
+**Why today**: Q4 2026 verified tier = usage statistics matter. Tools listed in April have 6+ months of usage data before audits begin. A tool submitted in October has zero. The window closes in ~6 months and starts paying off the day you submit.
+
+**Time: 30-60 minutes. This is a form, not a code task. There is no reason this has not happened yet.**
+
+---
+
+### Action 2 (HIGH — this weekend): Publish "Evaluating tldraw's AI Pipeline Template? Read This First"
+
+**Context**: tldraw shipped an AI Image Pipeline starter template in April 2026 — a DAG-based visual canvas for AI workflow builders with Cloudflare Worker execution. This positions tldraw as a visual AI pipeline tool. tldraw's commercial SDK costs $6,000/year. Their target audience is identical to Skissify's. This post intercepts developers at the moment they discover tldraw's pipeline template and hit the pricing page.
+
+**Structure**:
+1. **Lead**: "tldraw just shipped an AI image pipeline template. It's impressive. Here's the one thing the pricing page doesn't explain."
+2. Show the tldraw template honestly: great for interactive visual AI pipelines, well-engineered, beautiful UX
+3. The reveal: commercial SDK = $6,000/year. Plus: Chromium dependency for headless use.
+4. The use-case split: "If you need a visual canvas your users interact with → tldraw is excellent. If you need an API your agents call → tldraw is overkill."
+5. Code contrast: `npx create-tldraw` + $6K/yr license vs `curl -X POST https://skissify.com/api/render -d '...'` + EUR 2/mo
+6. **CTA**: "Skissify is the hand-drawn diagram API for AI pipelines. Free tier, no SDK license."
+
+**Target keywords**: "tldraw alternative API", "tldraw AI pipeline cost", "headless diagram API 2026", "tldraw commercial license alternative"
+
+**Publish to**: blog, r/mcp, r/selfhosted, Hacker News (Watch HN), LinkedIn
+
+**Time: 2-3 hours. SEO value: intercepts developer evaluation of tldraw's $6K licensing moment — the highest-intent audience Skissify can reach.**
+
+---
+
+### Action 3 (HIGH — this week): Add an "Architecture Studio" Pricing Tier at EUR 19/mo
+
+**Context**: Vertical SaaS growing 2-3x faster than horizontal. Architecture/construction buyers WTP: $19-$99/mo. Skissify has domain elements (doors, windows, stairs, dimension annotations) that NO other diagram tool has. EUR 5/mo prices these features at hobbyist rates for a professional audience. The data says architecture buyers will pay EUR 19/mo without hesitation if positioned correctly.
+
+**What to add** — new "Studio" tier:
+- **Price**: EUR 19/mo (billed annually: EUR 15/mo = EUR 180/yr)
+- **Included**: Unlimited renders, full architectural element library (doors, windows, stairs, openings, columns, dimension annotations), custom paper sizes (A0–A4), batch rendering API (100 sketches/request), priority support, commercial-use license for exports
+- **Differentiator**: "Professional floor plan drawings, hand-drawn style, API-first. Designed for architects, construction PMs, and proptech developers."
+- **Target buyer**: freelance architects, architecture firm junior staff, construction tech startups, proptech app developers
+
+**Why now**: tldraw's April 2026 update shows the market is moving toward AI-powered visual tools. Skissify's architectural elements are already built. The only missing step is packaging them at the right price point for the right buyer.
+
+**Steps**:
+1. Add "Studio" tier to Stripe (EUR 19/mo product)
+2. Add to pricing page with architecture-specific copy and use cases
+3. Create a "floor plan gallery" page (5-10 pre-rendered examples using existing elements) — this is the landing page for architecture buyers
+4. Add a blog post: "Draw Floor Plans in Code: Skissify's JSON Schema for Architects"
+
+**Time: 4-6 hours. Revenue impact: architectural buyers are the highest-WTP segment Skissify currently underprices. One architecture firm at EUR 19/mo + API overages = meaningful MRR.**
 
 ---
 
