@@ -1,6 +1,94 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 134 (New: 3 blog posts (Cycle 134 — new angles: "execution mode trap" for Figma post, n8n no-code workflow + floor plan as agent memory for floor plan post, "robot-human handoff" practical guide for Excaladraw comparison), SOCIAL-MEDIA.md Cycle 134 block with 6 new viral hooks (n8n community post, r/MachineLearning determinism angle, YouTube Community/Twitter thread, r/Entrepreneur founder story, HN Ask HN strategy, GitHub Discussions outreach), new platforms: n8n Community, r/n8n, r/MachineLearning, r/Entrepreneur, new hashtags: #NoCode #n8n #AIAutomation.)*
+*Last updated: April 5, 2026 — Cycle 135 (New: 3 blog posts (Cycle 135 — new angles: "polite feedback trap" for Figma post, "unexpected audiences" dungeon map + real estate for floor plan post, "complete workflow guide" with 3 scenarios and 13-row table for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 135 block with 7 viral hooks (r/DnD dungeon map, r/realestate, quote card, r/homeimprovement final body, LinkedIn unexpected audiences, Bluesky AI, Dev.to publishing guide). New platforms: r/DnD, r/RPG, r/realestate, Bluesky. Hashtag additions: #DungeonMap #TtrpgCommunity #RealEstate #UnexpectedUsers.)*
+
+---
+
+## Cycle 135 — What's New (April 5, 2026 — Day 4 Post-Launch)
+
+### Day 4 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "The Polite Feedback Trap" — Figma post (Cycle 135) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle135.md` |
+| Blog: "Unexpected Audiences" — Floor plan post (Cycle 135) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle135.md` |
+| Blog: "Two Tools, One Workflow" — Excalidraw comparison (Cycle 135) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle135.md` |
+| SOCIAL-MEDIA.md Cycle 135 | DONE — r/DnD, r/realestate, quote card, r/homeimprovement (hold for Mon), LinkedIn, Bluesky, Dev.to guide |
+| PRESS-KIT.md Cycle 135 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 135 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY, no more cycles without this |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today |
+| r/DnD (3.2M) | NEW Cycle 135 — post today (dungeon map story) |
+| r/realestate (1.2M) | NEW Cycle 135 — post today |
+| Bluesky AI community | NEW Cycle 135 — post today |
+| r/homeimprovement (4.8M) | HOLD — post Monday April 7, 10:00–12:00 CET |
+
+---
+
+## Product Screenshots Needed
+
+The following screenshot types should be captured for press/media use:
+
+| Screenshot | Description | Priority |
+|------------|-------------|----------|
+| `skissify-floor-plan-claude-mcp.png` | Claude chat window showing skissify_render call + resulting sketch URL | P0 |
+| `skissify-human-mode-ui.png` | skissify.com/human — the form + rendered sketch side by side | P0 |
+| `skissify-apartment-sketch.png` | A 35sqm apartment sketch (cream paper, pencil tool) | P0 |
+| `skissify-dungeon-map.png` | A DnD-style dungeon map — entrance chamber, corridors, boss room (cream paper, ink tool, wobble 0.5) | P0 NEW — viral asset for DnD/RPG community posts |
+| `skissify-blueprint-style.png` | A blueprint-style render showing the alt paper type | P1 |
+| `skissify-mcp-setup-terminal.png` | Terminal showing MCP server setup command (3 lines) | P1 |
+| `skissify-n8n-workflow.png` | n8n workflow screenshot showing Claude + HTTP Request nodes | P1 |
+| `skissify-real-estate-kitchen.png` | Kitchen renovation sketch (L-shaped, peninsula island) — for real estate / r/homeimprovement posts | P1 NEW |
+| `skissify-json-manifest.png` | Clean JSON manifest → sketch side-by-side | P2 |
+
+**Priority action:** Capture `skissify-dungeon-map.png` TODAY. It's the visual asset that makes the DnD community posts credible. Describe a dungeon to Claude via MCP, screenshot the rendered output.
+
+---
+
+## Founder Bio
+
+**Jesper** — builder and product designer based in Stockholm. Built Skissify to solve the "AI knows what the space should look like but can't show you" problem. Ships fast, moves between technical and non-technical audiences. Background in product design and developer tooling.
+
+*Available for press interviews, podcast appearances, and community AMAs. Responds same day.*
+
+---
+
+## One-Liner
+
+> Skissify turns JSON into hand-drawn sketches in 150ms — built for AI agents that need to produce visual output, not just describe it.
+
+**Alt one-liners by audience:**
+
+- **For developers:** "POST JSON, get a hand-drawn sketch URL back in 150ms. MCP server included."
+- **For non-technical users:** "Describe a room to AI and get a shareable floor plan sketch in seconds. No account needed."
+- **For press:** "Skissify is the rendering layer for AI agents that think spatially but produce text."
+- **For the DnD community:** "Tell Claude to design your dungeon. Get a hand-drawn map in 8 seconds."
+
+---
+
+## Boilerplate Description (100 words)
+
+Skissify is an AI-compatible sketch rendering API. It accepts a flat JSON manifest describing spatial elements (rooms, doors, windows, furniture, stairs) and returns a hand-drawn SVG sketch URL in ~150ms. Built for AI agent pipelines that need deterministic, version-controllable visual output — unlike image generation models, Skissify produces the same sketch every time for the same input. Available via REST API, MCP server (for Claude), and a no-code human mode at skissify.com/human. Free tier includes 100 renders per month. Launched April 1, 2026. Stack: Next.js 15 + TypeScript + HTML Canvas 2D.
+
+---
+
+## Unexpected Use Cases (Press-Worthy Stories)
+
+The following use cases emerged organically in the first 4 days of launch and are press-friendly angles:
+
+| Use Case | Community | Angle |
+|----------|-----------|-------|
+| Dungeon map generation | DnD / Tabletop RPG | "I built an AI floor plan tool. DnD players turned it into a dungeon map generator." |
+| Pre-listing property sketches | Real estate | "Real estate agents sharing AI floor plan sketches before photos are ready" |
+| Kitchen renovation briefs | Homeowners | "I sketched my renovation plan with AI before the £900 architect consultation" |
+| Makerspace layout planning | Makers / hackerspaces | "Planning a workshop with AI before moving a single tool" |
+| GitHub PR visual changelogs | Developers | "Attaching floor plan sketches to architecture PRs as visual diffs" |
+
+*These stories are available for journalist use. The dungeon map angle in particular has strong shareability across tech and non-tech publications.*
 
 ---
 

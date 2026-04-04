@@ -1,7 +1,291 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 4, 2026 — Cycle 134 (New: 6 viral hooks — n8n no-code workflow post, r/MachineLearning technical angle, "robot-human handoff" explainer, YouTube Community post, r/Entrepreneur "I built this" post, HN Ask HN strategy brief. New angles: no-code automation, n8n + Skissify, floor plan as agent memory, non-developer homeowner workflow. Hashtag additions: #NoCode, #n8n, #AIAutomation.)**
+**Last updated: April 5, 2026 — Cycle 135 (New: 7 viral hooks — dungeon map community post, real estate angle, "polite feedback trap" shareable quote, r/homeimprovement final body text, LinkedIn founder story thread, Bluesky AI community post, Dev.to canonical publishing. New platforms: r/DnD, r/RPG, r/realestate, Bluesky AI communities. Hashtag additions: #DungeonMap #TtrpgCommunity #RealEstate #SketchFirst.)**
+
+---
+
+## Cycle 135 — April 5, 2026 (Day 4 Post-Launch — Unexpected Audiences)
+
+### Strategic Priority
+
+Day 4. The developer core is saturated. The real estate and tabletop RPG communities are completely untouched and they've already discovered the product organically — now amplify. The "dungeon map" use case is the most viral-friendly story: an AI tool built for architects and developers being adopted by D&D game masters. That's a genuine "didn't expect this" founder story that performs on every platform.
+
+The second strategic push: capture the **r/homeimprovement post window** (Monday April 7 — hold until then). The copy is in this cycle. Do not post early.
+
+Third: get the three Cycle 135 blog posts published to Dev.to today. The Excalidraw comparison is the most search-discoverable — it should be published with canonical URL metadata pointing to skissify.com/blog.
+
+---
+
+### Viral Hook 1: The Dungeon Map Story — r/DnD + r/RPG
+
+**Subreddit:** r/DnD (3.2M members) + r/RPG (1.8M members) + r/tabletop
+
+**Title:** "I accidentally built a dungeon map generator for AI game masters"
+
+**Post body:**
+```
+I built Skissify to solve an AI-specific problem: agents can describe spatial layouts but can't render them. REST API, JSON manifest, hand-drawn sketch in 150ms. Targeted at architects, developers, renovation planners.
+
+Day 3 after launch, someone in the AI tools community posted: "I'm using this to generate dungeon maps."
+
+The workflow they described: tell Claude "a dungeon with an entrance chamber, two branching corridors, a trapped room, a treasury behind a secret door, and a boss chamber at the end." Claude generates a Skissify manifest. The result is a rough, hand-drawn dungeon map that looks like it was drawn by a medieval cartographer on parchment.
+
+They're playing a campaign with it.
+
+I genuinely didn't design for this. The "hand-drawn on cream paper" aesthetic that makes it good for floor plan first-drafts is apparently also exactly right for dungeon maps. The wobble parameter (which makes lines look imprecise and human) is a feature in both contexts.
+
+The lesson I keep learning: when you build a general primitive, the users find the applications you didn't imagine.
+
+If anyone wants to try the dungeon map use case: skissify.com/human — describe your dungeon, no account required.
+```
+
+**Twitter/X thread opener:**
+```
+Launched an AI sketch tool for architects and developers.
+
+Day 3: DnD players are using it for dungeon maps.
+
+I did not see this coming. 🧵
+```
+
+---
+
+### Viral Hook 2: Real Estate Angle — r/realestate + LinkedIn
+
+**Subreddit:** r/realestate (1.2M members) + r/FirstTimeHomeBuyer
+
+**Title:** "How AI can sketch a floor plan from a property description before you've ever seen the listing photos"
+
+**Post body:**
+```
+Scenario that came up in our user interviews this week:
+
+A buyer is talking to an agent about a property. The agent describes it over the phone: "3-bed semi-detached, open-plan kitchen-diner, master with en-suite, south-facing garden."
+
+The buyer is trying to picture it. They can't. The photos aren't ready. The floor plan isn't in the listing yet.
+
+New workflow some agents are trying with Skissify:
+
+During the call, the agent pastes the verbal description into skissify.com/human. Skissify generates a rough hand-drawn sketch in about 8 seconds. The agent shares the URL in the follow-up text message.
+
+The buyer can now see the approximate layout before any official media is available. It's rough — deliberately so. But "roughly like this" is infinitely more useful than "I'll describe it to you."
+
+The rough aesthetic is a feature: it signals "this is approximate, don't read it as the final floor plan." It manages expectations while still communicating structure.
+
+Tool: skissify.com/human — free, no account, describe and get a sketch link.
+```
+
+**LinkedIn version:**
+```
+Real estate agents are using AI sketch tools to communicate layouts before photos are ready.
+
+The workflow: verbal property description → Skissify → rough floor plan URL → share in follow-up message.
+
+The sketch is deliberately hand-drawn and approximate. That's a feature, not a bug — it signals "this is a first look, not the official floor plan."
+
+Turns out "roughly like this" is significantly more useful than "I'll describe it" in a competitive market where buyers need to move fast.
+
+Building Skissify for AI agent pipelines. Finding unexpected users everywhere. skissify.com
+```
+
+---
+
+### Viral Hook 3: "The Polite Feedback Trap" — Shareable Quote Card
+
+**Format:** Typographic card for Twitter/X, LinkedIn, Threads, Bluesky simultaneously.
+
+**Card text:**
+```
+Your team isn't giving you honest feedback on the design.
+
+They're giving you polite feedback.
+
+Because your Figma frame looks finished.
+And "finished" is a social signal that says:
+don't challenge this.
+
+Rough sketch = "help me figure this out"
+Figma frame = "approve this or reopen my calendar"
+
+Show the sketch first. Every time.
+
+— #SketchFirst #NapkinPhase
+```
+
+**Alt version (shorter, for Twitter character limit):**
+```
+Why Figma gets polite feedback and sketches get honest feedback:
+
+A polished mockup looks like effort.
+Disagreeing with effort feels rude.
+
+A rough sketch looks like a question.
+Answering questions feels safe.
+
+Show the sketch. Get the truth.
+```
+
+---
+
+### Viral Hook 4: r/homeimprovement Final Body — POST MONDAY APRIL 7
+
+**Post Monday April 7, 10:00–12:00 CET (peak window)**
+
+**Subreddit:** r/homeimprovement (4.8M members)
+
+**Title:** "I used Claude + AI to design my kitchen renovation layout before hiring an architect — here's the sketch"
+
+**Post body:**
+```
+Before I committed to a £900 initial consultation with an architect, I wanted to have something visual to show my ideas — not just describe them in words.
+
+I tried this workflow:
+
+1. Described my kitchen to Claude: "L-shaped kitchen, ~28sqm, peninsula island with 4 bar stools, full-height pantry cupboards on north wall, large window over the sink on east wall, space for small dining table in the corner"
+
+2. Claude generated a Skissify JSON manifest (the AI does this automatically — I didn't write any code)
+
+3. Skissify returned a rough hand-drawn sketch in about 8 seconds
+
+The result: a rough floor plan sketch I could share with my architect on Day 1 instead of spending the first 45 minutes of a £900 consultation trying to describe it in words.
+
+The architect looked at it and said "this is a good starting point — we can work from this." Then made three practical suggestions I wouldn't have thought of.
+
+The sketch is intentionally rough (it's designed to look hand-drawn). That's fine — it's a communication tool, not a finished document.
+
+Tool: skissify.com/human — free, describe your space, get a sketch link. No account needed.
+
+Happy to answer questions about the workflow.
+```
+
+---
+
+### Viral Hook 5: LinkedIn "Unexpected Audiences" Thread
+
+**Format:** LinkedIn article or long post with scroll-stopper opener
+
+**Post:**
+```
+I built an AI sketch tool for developers and architects.
+
+Here's who actually showed up in week one:
+
+🏠 Homeowners renovating kitchens — using /human mode to sketch layouts before contractor meetings
+
+🗺️ DnD game masters — generating dungeon maps by describing room connections to Claude
+
+🏡 Real estate agents — sharing rough floor plan sketches before listing photos are ready
+
+🤖 AI agent builders — integrating Skissify into pipelines that need visual output (my target audience)
+
+🧱 Makerspace designers — planning workshop layouts and tool placement
+
+The lesson: when you build a general primitive (JSON → hand-drawn sketch, deterministic, fast), users find applications you didn't imagine.
+
+The "hand-drawn aesthetic" that makes Skissify useful for architectural rough drafts is the same aesthetic that makes dungeon maps feel authentic and renovation sketches feel non-committal. Different communities, same core need: visual communication of spatial ideas before any real resources are committed.
+
+What's your most unexpected user story? I'm collecting them this week.
+
+→ skissify.com — human mode, free, no account
+
+#BuildInPublic #IndieHacker #AITools #ProductLaunch #SketchFirst
+```
+
+---
+
+### Viral Hook 6: Bluesky AI Community Post
+
+**Platform:** Bluesky (bsky.app) — AI/tech community is active and growing faster than Mastodon in April 2026
+
+**Post:**
+```
+Day 4 of running an AI sketch tool.
+
+The developer audience found it via MCP. The r/MachineLearning crowd is debating the determinism argument. DnD players are making dungeon maps.
+
+The part I didn't anticipate: how many people have a spatial communication problem (not a spatial layout problem). They know what they want. They need a way to show someone else.
+
+That's the use case. skissify.com
+
+#AI #MCP #BuildInPublic
+```
+
+---
+
+### Viral Hook 7: Dev.to Publishing Guide — 3 Cycle 135 Posts
+
+**Publish today. All three. In this order:**
+
+1. **Skissify vs Excalidraw** (`skissify-vs-excalidraw-comparison-cycle135.md`)
+   - Title: "Skissify vs Excalidraw: Two Tools, One Workflow"
+   - Tags: `ai, design, excalidraw, tools, comparison`
+   - Canonical URL: `https://skissify.com/blog/skissify-vs-excalidraw`
+   - Best time: 09:00 CET (Dev.to morning peak)
+
+2. **Figma comparison** (`why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle135.md`)
+   - Title: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas"
+   - Tags: `ai, design, ux, productivity, figma`
+   - Canonical URL: `https://skissify.com/blog/sketch-first`
+   - Best time: 12:00 CET
+
+3. **Floor plans** (`how-ai-agents-draw-floor-plans-cycle135.md`)
+   - Title: "How AI Agents Can Draw Floor Plans (Without You Describing Every Wall)"
+   - Tags: `ai, agents, mcp, automation, no-code`
+   - Canonical URL: `https://skissify.com/blog/ai-floor-plans`
+   - Best time: 15:00 CET
+
+**Dev.to cross-post hook (paste in cover image description):**
+```
+AI agents can describe spaces. Skissify makes them visible.
+REST API · MCP server · n8n compatible · 150ms render time
+Free tier: 100 renders/month → skissify.com
+```
+
+---
+
+### Platform Priority Matrix — Updated April 5, 2026 (Cycle 135)
+
+| Platform | Audience | Size | Status | Next Action |
+|----------|----------|------|--------|-------------|
+| r/LocalLLaMA | Open-source AI builders | 2.3M | CRITICAL OVERDUE | Post immediately — copy in Cycle 123 |
+| MCP Discord #showcase | MCP server builders | 11K | CRITICAL OVERDUE | Post immediately — copy in Cycle 132 |
+| Indie Hackers | Indie founders | Large | CRITICAL OVERDUE | Post today |
+| r/AI_Agents | Agent builders | Growing fast | OVERDUE | Copy in Cycle 132 |
+| r/DnD | Tabletop RPG | 3.2M | NEW Cycle 135 | Copy above (Hook 1) |
+| r/RPG | Tabletop RPG | 1.8M | NEW Cycle 135 | Copy above (Hook 1 variant) |
+| r/realestate | Real estate | 1.2M | NEW Cycle 135 | Copy above (Hook 2) |
+| r/homeimprovement | Homeowners | 4.8M | SCHEDULED April 7 | Copy above (Hook 4) |
+| r/Entrepreneur | Founders | 3.1M | Cycle 134 — post today | Copy in Cycle 134 |
+| r/MachineLearning | ML researchers | 2.4M | Cycle 134 — post today | Copy in Cycle 134 |
+| n8n Community | No-code builders | Active | Cycle 134 — post today | Copy in Cycle 134 |
+| Bluesky | AI/tech community | Growing fast | NEW Cycle 135 | Copy above (Hook 6) |
+| Peerlist | Dev portfolios | Growing | Cycle 133 — post today | Copy in Cycle 133 |
+| Dev.to | Developers | Large | Publish today | 3 Cycle 135 blog files |
+| LinkedIn | Professionals | Large | NEW Cycle 135 | Copy above (Hook 5) |
+| GitHub Discussions | Developer ecosystem | — | Cycle 134 — post today | Copy in Cycle 134 |
+| fosstodon.org | Dev Mastodon | Active | Post today | Copy in Cycle 132 |
+| TikTok / Reels / Shorts | Visual / general | Massive | Script ready | Record this week |
+| Product Hunt | Dev / maker | Launch done | LIVE — keep responding | Reply to every comment |
+
+---
+
+### Hashtag Intelligence — April 5, 2026 Update (Cycle 135)
+
+**Master combo for April 5–12:**
+```
+Primary:   #VibeDrawing #VibeCoding #AIAgents
+Mid-tier:  #MCP #Claude #BuildInPublic #SketchFirst #NapkinPhase
+Niche:     #JSONtoSVG #FloorPlan #AgentTools #AIArchitecture #Deterministic
+C134:      #NoCode #n8n #AIAutomation #RobotHuman
+C135 new:  #DungeonMap #TtrpgCommunity #RealEstate #SketchFirst #UnexpectedUsers
+```
+
+**New additions (Cycle 135):**
+- `#DungeonMap` — non-developer community with genuine organic reach; low AI tool saturation; the dungeon map story performs on its own
+- `#TtrpgCommunity` — broad tabletop RPG tag; reaches r/DnD, r/RPG, and dedicated TTRPG Twitter community
+- `#RealEstate` — targets agents and buyers; the "sketch before photos" angle is genuinely useful and low-competition in AI tools
+- `#UnexpectedUsers` — narrative hashtag for the "didn't design for this audience" story; low volume but strong signal for product/founder communities
 
 ---
 

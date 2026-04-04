@@ -1,7 +1,67 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 3 — Cycle 134**
+**Current Date: April 5, 2026 — Post-Launch Day 4 — Cycle 135**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 135 — Day 4 Unexpected Audiences)
+
+### Cycle 135 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 135 ("polite feedback trap" angle, stakeholder psychology, specificity problem in Figma, napkin phase framing for AI-native teams, $0 feedback trick) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle135.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 135 ("unexpected audiences" angle — dungeon maps, real estate, homeowners alongside developer path; curl command example; dungeon map use case section) | `blog/how-ai-agents-draw-floor-plans-cycle135.md` | DONE |
+| Blog: "Skissify vs Excalidraw: Two Tools, One Workflow" — Cycle 135 (3 complete workflow patterns, 13-row feature table with new rows, 3 common objections answered with concrete responses, "robot goes first" framing) | `blog/skissify-vs-excalidraw-comparison-cycle135.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 135 — 7 new viral hooks: r/DnD dungeon map founder story, r/realestate + LinkedIn real estate angle, "polite feedback trap" shareable quote card (2 versions), r/homeimprovement final body text, LinkedIn "unexpected audiences" thread, Bluesky AI community post, Dev.to publishing guide with timing + canonical URLs. New platforms: r/DnD (3.2M), r/RPG (1.8M), r/realestate (1.2M), Bluesky. New hashtags: #DungeonMap #TtrpgCommunity #RealEstate #UnexpectedUsers | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 135 — Day 4 status table, expanded screenshots list (dungeon map + real estate kitchen as new P0/P1 assets), expanded founder bio, 4 alt one-liners by audience, unexpected use cases press table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 135 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 135 — Priority Actions (April 5–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **CAPTURE skissify-dungeon-map.png** — NEW P0 visual asset | P0 | TODAY | Describe dungeon to Claude via MCP, screenshot output |
+| **POST r/DnD** (3.2M) — NEW Cycle 135 | P1 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/RPG** (1.8M) — NEW Cycle 135 | P1 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1 variant) |
+| **POST r/realestate** (1.2M) — NEW Cycle 135 | P1 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 2) |
+| **POST Bluesky AI community** — NEW Cycle 135 | P1 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 6) |
+| **POST LinkedIn "Unexpected Audiences" thread** — NEW Cycle 135 | P1 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 5) |
+| **PUBLISH 3 Cycle 135 blogs to Dev.to** | P0 | TODAY staggered 09:00/12:00/15:00 CET | Tags and canonical URLs in Cycle 135 SOCIAL-MEDIA.md (Hook 7) |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 4) |
+| **POST HN Ask HN / Show HN** | P1 | MONDAY April 7, 08:00 CET | Strategy in Cycle 134 SOCIAL-MEDIA.md (Hook 5) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — absolute final window | 60s screen capture + voiceover. Script in Cycle 132 SOCIAL-MEDIA.md. |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 135 — New Ideas
+
+**Idea: The dungeon map story is the most viral-ready angle yet.** "I built an AI tool for architects. DnD players turned it into a dungeon map generator." This is a complete narrative arc with a protagonist (the builder), an unexpected twist (the DnD use case), and a clear emotional payoff (surprised delight). It works on Twitter, Reddit, LinkedIn, Bluesky, and in podcast pitches. The copy is in Cycle 135 SOCIAL-MEDIA.md Hook 1. Post immediately to r/DnD and r/RPG — these communities are not saturated with AI tools and will respond warmly to a genuine "you surprised me" story.
+
+**Idea: Screenshot the dungeon map TODAY.** This is the highest-ROI 10-minute task on the board. Open Claude, describe a dungeon via the MCP server, screenshot the rendered sketch. This one image makes every DnD/RPG community post credible, shareable, and viral-ready. Without it, the post is a link and a description. With it, it's a visual story.
+
+**Idea: r/realestate is a 1.2M community with zero AI sketch tool competition.** The "sketch before photos" angle solves a real problem agents face (communicating layouts to buyers before media is ready). It's practical, non-promotional in framing, and the free /human mode removes all friction. Post today while the "day 4 of launch" founder angle is still fresh.
+
+**Idea: Bluesky is outperforming Mastodon in April 2026 for AI/tech community engagement.** The Mastodon post has been on the list since Cycle 132 and has lower expected ROI than Bluesky at current trajectories. Post to Bluesky first (Hook 6 in Cycle 135 SOCIAL-MEDIA.md), then fosstodon.org. Both are short-form and take 2 minutes.
+
+**Idea: The four alt one-liners in PRESS-KIT.md are a distribution upgrade.** The original one-liner ("Skissify turns JSON into hand-drawn sketches in 150ms — built for AI agents") is accurate for developers but wrong for every other audience. The press kit now has four versions. Use the right one in each community: DnD one-liner for gaming communities, non-technical one-liner for homeowner subreddits, press one-liner for journalist outreach.
+
+**Idea: The Monday r/homeimprovement post (4.8M) should include the dungeon map as a surprising aside.** Not as the main content — as a single line at the bottom: "I also learned this week that DnD players use it for dungeon maps, which I genuinely did not anticipate." This adds personality, increases comment engagement, and creates a natural conversation thread.
+
+### Cycle 135 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle135.md | DONE Cycle 135 |
+| Blog: how-ai-agents-draw-floor-plans-cycle135.md | DONE Cycle 135 |
+| Blog: skissify-vs-excalidraw-comparison-cycle135.md | DONE Cycle 135 |
+| SOCIAL-MEDIA.md — 7 new viral hooks + platform matrix update + new platforms (r/DnD, r/RPG, r/realestate, Bluesky) + hashtag additions | DONE Cycle 135 |
+| PRESS-KIT.md — Cycle 135 day-4 status table + expanded screenshots + alt one-liners + press use case table | DONE Cycle 135 |
+| LAUNCH-PLAN.md — Cycle 135 block | DONE Cycle 135 |
 
 ---
 
