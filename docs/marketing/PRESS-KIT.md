@@ -1,6 +1,42 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 137 (New: 3 blog posts (PM completion bias angle for Figma post, complete 2026 workflow + 5 use cases for floor plan post, 14-row feature table + definitive comparison for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 137 block with 7 viral hooks: PM completion bias Twitter/LinkedIn/r/ProductManagement, MCP directory submission strategy (5 directories), TikTok/Reels 30s demo concept, r/webdev spatial context for AI coding, spatial version control Dev.to/HN thread, HN Ask HN pre-post content, Product Hunt day-4 discussion cross-post. New platforms: TikTok/Reels, r/webdev, r/ProductManagement, MCP directories. Hashtag additions: #ProductManagement #WebDev #WireframingTools #SpatialThinking.)*
+*Last updated: April 4, 2026 — Cycle 138 (New: 3 blog posts (30-second pre-meeting test angle for Figma post, incident architecture diagram angle for floor plan post, collaboration handoff pattern for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 138 block with 6 viral hooks: 30-second pre-meeting sketch (Twitter/LinkedIn), r/MachineLearning spatial reasoning angle, r/softwareengineering incident architecture pattern, build-in-public week 1 retrospective thread, Dev Hunt submission, r/entrepreneur indie founder story. New platforms: r/MachineLearning, Dev Hunt, r/entrepreneur, r/softwareengineering. New hashtags: #BuildInPublic #IndieHacker #MachineLearning #IncidentResponse.)*
+
+---
+
+## Cycle 138 — What's New (April 4, 2026 — Day 4 Post-Launch)
+
+### Day 4 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "The 30-Second Pre-Meeting Test" — Figma post (Cycle 138) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle138.md` |
+| Blog: "The Incident Architecture Diagram Problem" — Floor plan post (Cycle 138) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle138.md` |
+| Blog: "The Collaboration Handoff" — Excalidraw comparison (Cycle 138) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle138.md` |
+| SOCIAL-MEDIA.md Cycle 138 | DONE — 6 hooks: 30-second sketch, r/MachineLearning, r/softwareengineering, build-in-public thread, Dev Hunt, r/entrepreneur |
+| PRESS-KIT.md Cycle 138 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 138 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY — day 4 final window |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today |
+| MCP directories (5 sites) | NEW Cycle 137 — submit today |
+| r/MachineLearning (4.1M) | NEW Cycle 138 — post today |
+| r/softwareengineering (600K) | NEW Cycle 138 — post today |
+| Dev Hunt | NEW Cycle 138 — submit today |
+| r/entrepreneur (2.5M) | NEW Cycle 138 — post today |
+| Build-in-public Twitter thread | NEW Cycle 138 — post today |
+| r/webdev (2.1M) | NEW Cycle 137 — still unposted |
+| r/ProductManagement (1.8M) | NEW Cycle 137 — still unposted |
+| TikTok/Reels video | NEW Cycle 137 — still unrecorded |
+| r/DnD (3.2M) | NEW Cycle 135 — still unposted |
+| r/cursor | NEW Cycle 136 — still unposted |
+| r/homeimprovement (4.8M) | HOLD — post Monday April 7, 10:00–12:00 CET |
+| HN Ask HN / Show HN | HOLD — post Monday April 7, 08:00 CET |
+
+---
 
 ---
 

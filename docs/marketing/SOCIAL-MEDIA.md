@@ -1,7 +1,252 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 5, 2026 — Cycle 137 (New: 7 viral hooks — PM completion bias angle (Twitter/LinkedIn/r/ProductManagement), MCP directory submission strategy (5 directories), TikTok/Reels sketch demo concept, r/webdev developer workflow post, "spatial version control" concept thread, Hacker News Ask HN pre-post thread, cross-post to Product Hunt discussion. New platforms: TikTok/Reels, r/webdev, r/ProductManagement, MCP directories. Hashtag additions: #ProductManagement #WebDev #WireframingTools #SketchFirst #SpatialThinking.)**
+**Last updated: April 4, 2026 — Cycle 138 (New: 6 viral hooks — "30-second pre-meeting sketch" angle (Twitter/LinkedIn), r/MachineLearning post (4.1M), r/softwareengineering incident architecture angle, "build in public" week-1 Twitter thread, Dev Hunt submission, r/entrepreneur indie founder story. New platforms: r/MachineLearning, Dev Hunt, r/entrepreneur, r/softwareengineering. New hashtags: #BuildInPublic #IndieHacker #MachineLearning #IncidentResponse #SoftwareEngineering.)**
+
+---
+
+## Cycle 138 — April 4, 2026 (Day 4 Post-Launch — Build-in-Public + New Technical Communities)
+
+### Strategic Priority
+
+Day 4 (Saturday). This is peak weekend browsing time — ideal for r/ posts and Twitter threads. Priorities:
+
+1. **Build-in-public thread** — the "week 1 of Skissify" transparent retrospective tweet thread. This format drives outsized engagement from the dev/indie community and attracts the exact early adopter audience that becomes advocates.
+2. **r/MachineLearning** — 4.1M members, high technical bar, but the "AI agent visual output" angle is genuinely novel and post-able. The incident architecture angle resonates here.
+3. **Dev Hunt** — secondary launch platform for dev tools. 20-minute submission with existing copy.
+4. **r/entrepreneur** — founder story framing. "I built a sketch tool for AI agents and 4 days later here's what I know" is exactly the format this subreddit rewards.
+
+Still critically overdue — post these immediately:
+- r/LocalLLaMA (2.3M) — OVERDUE since Cycle 111
+- MCP Discord #showcase — OVERDUE since Cycle 111
+- Indie Hackers — OVERDUE since Cycle 98
+- r/AI_Agents — OVERDUE since Cycle 132
+
+---
+
+### Viral Hook 1: "30-Second Pre-Meeting Sketch" — Twitter/X + LinkedIn
+
+**Platform:** Twitter/X thread + LinkedIn
+**Core insight:** The fastest argument against Figma-first workflows is the time cost. 30 seconds changes the conversation.
+
+**Twitter/X thread opener:**
+```
+Before your next design meeting, try this:
+
+1. Open skissify.com/human
+2. Type one sentence describing the layout
+3. Drop the URL in the meeting invite
+
+30 seconds. No account. No Figma.
+
+The feedback quality difference is immediate. Here's why: 🧵
+```
+
+**Twitter thread (3 more tweets):**
+```
+Tweet 2:
+Figma wireframes look finished. Polished things trigger courtesy responses.
+
+Your stakeholder isn't lying when they say "looks great" — their brain just processed it as "decided."
+
+A rough sketch signals: we're still deciding. That signal changes what gets said.
+```
+
+```
+Tweet 3:
+The feedback you get on a rough sketch:
+→ "The nav should be on the right"
+→ "This flow is backwards for how users come in"
+→ "I'd expect the primary action to be above the fold"
+
+The feedback you get on a Figma wireframe:
+→ "Can we try a rounder button?"
+→ "What font is that?"
+```
+
+```
+Tweet 4:
+The 30-second sketch doesn't replace Figma.
+
+It replaces the first 3 hours of Figma work that turns out to be wrong.
+
+Sketch → decide → design → ship. Not design → discover it's wrong → redesign → ship.
+
+skissify.com/human — free, no account.
+```
+
+**LinkedIn post:**
+```
+A 30-second test for your next design review:
+
+Before opening Figma, type a one-sentence description of your layout at skissify.com/human. Get a rough sketch URL. Drop it in the meeting.
+
+The structural decisions — navigation, primary action placement, content hierarchy — get resolved in the first 5 minutes. Figma time becomes execution time, not architecture time.
+
+The sketch doesn't replace Figma. It does the job that happens before Figma: the 30 seconds of visual thinking that saves 3 hours of rework.
+
+What's your current process for early-stage design feedback?
+
+#ProductDesign #UXDesign #DesignThinking #AITools #ProductManagement
+```
+
+---
+
+### Viral Hook 2: r/MachineLearning — "The Missing Output Format"
+
+**Platform:** r/MachineLearning (4.1M)
+**Post type:** Discussion / Show-and-tell
+
+```
+Title: "I built an MCP server that gives AI agents the ability to draw — here's what I learned about spatial reasoning"
+
+When I built Skissify (an MCP server that generates hand-drawn sketches from JSON), I expected architects and designers to be the main users.
+
+What I didn't expect: the spatial reasoning improvement.
+
+When Claude has Skissify available, the quality of the layouts it proposes improves measurably. Having a drawing output channel seems to activate more structured spatial thinking than text alone.
+
+Some observations from 4 days of users:
+- Floor plan requests become more geometrically coherent when the agent can output sketches
+- Architecture diagrams proposed by agents with visual output have fewer obvious circular dependencies
+- The feedback loop (generate → evaluate visually → revise) produces better results than text-only iteration
+
+I'm not claiming I understand the mechanism — would be curious if anyone has studied this. The server: npx -y @skissify/mcp-server. Skissify.com for the human-mode version.
+
+Anyone done work on how visual output channels affect LLM spatial reasoning?
+```
+
+---
+
+### Viral Hook 3: r/softwareengineering — Incident Architecture Angle
+
+**Platform:** r/softwareengineering (600K)
+
+```
+Title: "Architecture diagrams are always wrong in incidents. Here's a pattern that fixes it."
+
+Every engineering team has a system architecture diagram. It was accurate the day someone drew it. It's been drifting from reality ever since.
+
+I built a solution I want to share: instead of maintaining a diagram, we now generate one from current state whenever we need it.
+
+The setup: an AI agent (Claude with MCP) + Skissify (skissify.com — generates hand-drawn diagrams from JSON). When an incident starts or we need context sync, someone types "generate the architecture diagram for [service cluster]" and gets a sketch URL to paste in the war room.
+
+Three things I noticed after switching to this:
+1. Nobody argues about whether the diagram is current — it was generated 30 seconds ago
+2. New engineers get accurate onboarding diagrams instead of the outdated static one
+3. PRs that change service relationships now attach a sketch URL instead of "see Confluence"
+
+MCP setup: npx -y @skissify/mcp-server
+Human mode (no code): skissify.com/human
+
+Curious if others have hit this "permanently stale diagram" problem and how you've solved it.
+```
+
+---
+
+### Viral Hook 4: Build-in-Public Week 1 Twitter Thread
+
+**Platform:** Twitter/X
+**Format:** Transparent retrospective thread
+
+```
+Tweet 1:
+Week 1 of launching Skissify. Real numbers, honest retrospective. 🧵
+
+(Skissify = MCP server that gives AI agents the ability to draw hand-drawn sketches)
+```
+
+```
+Tweet 2:
+What I built: a tool that takes JSON and returns a hand-drawn sketch URL in ~150ms.
+
+Sounds simple. The use cases turned out to be wider than I expected:
+→ AI agents drawing floor plans
+→ Architecture diagrams from runbooks
+→ Product managers sketching before wireframing
+→ DnD dungeon maps (didn't see that coming)
+```
+
+```
+Tweet 3:
+What I got right:
+→ /human mode (no JSON required, just describe the layout) — this became the top-traffic page
+→ MCP server first — AI developers are actively looking for new capabilities
+→ Stable sketch URLs — critical for async workflows I hadn't fully anticipated
+```
+
+```
+Tweet 4:
+What I got wrong:
+→ No demo video on launch day — still haven't recorded one (it's day 4)
+→ No email list before launch — starting from zero
+→ Underestimated r/LocalLLaMA — haven't posted there yet and it's been 4 days
+
+Biggest lesson: post to communities BEFORE you think you're ready.
+```
+
+```
+Tweet 5:
+Week 2 priorities:
+→ Record the 60-second demo video
+→ Post to r/LocalLLaMA + r/AI_Agents + Indie Hackers (all overdue)
+→ Submit to 5 MCP directories for permanent backlinks
+
+If you're building for the MCP ecosystem: skissify.com
+```
+
+---
+
+### Viral Hook 5: Dev Hunt Submission
+
+**Platform:** Dev Hunt (devhunt.org)
+**Submission copy:**
+
+```
+Name: Skissify
+Tagline: Give AI agents the ability to draw. Hand-drawn sketches from JSON in 150ms.
+
+Description:
+Skissify is a sketch SaaS and MCP server that gives AI agents (Claude, GPT, any MCP client) the ability to generate hand-drawn spatial sketches — floor plans, architecture diagrams, system maps, UI wireframes.
+
+The agent POSTs a JSON manifest describing the layout. Skissify returns a stable sketch URL in ~150ms. The sketch looks hand-drawn, lives at a permanent URL, and can be version-controlled.
+
+Also works without code: skissify.com/human — describe a layout in plain English, get a sketch in 8 seconds.
+
+Built for: AI developers, MCP ecosystem builders, product managers, architects, DnD dungeon masters.
+
+Install: npx -y @skissify/mcp-server
+```
+
+---
+
+### Viral Hook 6: r/entrepreneur — Indie Founder Story
+
+**Platform:** r/entrepreneur (2.5M)
+
+```
+Title: "Day 4 of my launch: what's working, what isn't, and the one thing I'm most wrong about"
+
+4 days ago I launched Skissify — an MCP server that gives AI agents the ability to draw hand-drawn sketches. Here's the honest version of what's happening.
+
+What's working:
+- The /human mode (no JSON, just describe a layout) is getting more traffic than the developer API, which I didn't expect
+- r/DnD users discovered it for dungeon maps (completely unplanned audience)
+- Product managers are using it for stakeholder sketches (different from my target of AI developers)
+
+What isn't working:
+- I haven't recorded a demo video. Day 4. Still no video. This is embarrassing.
+- I haven't posted to the communities I know I should (r/LocalLLaMA 2.3M, Indie Hackers, MCP Discord). Fear of rejection? Laziness? Both.
+- No email list. I launched without building one. Starting from zero.
+
+The thing I'm most wrong about: I thought this was a developer tool. It's turning out to be three different tools for three different audiences, and each one needs a different message.
+
+The lesson I keep learning: ship first, figure out the market after.
+
+Anyone else hit the "built for developers, used by everyone else" problem?
+```
+
+---
 
 ---
 

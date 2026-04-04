@@ -1,7 +1,70 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 4 — Cycle 137**
+**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 138**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 138 — Day 4 Build-in-Public + Technical Communities)
+
+### Cycle 138 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 138 ("30-second pre-meeting test" angle — speed as the primary argument, structural vs cosmetic feedback, two-tool workflow with sequencing table) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle138.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 138 ("incident architecture diagram" angle — war room use case, living diagram pattern, three incident use cases, three setup options) | `blog/how-ai-agents-draw-floor-plans-cycle138.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 138 ("collaboration handoff" angle — when each tool wins, the handoff pattern, 10-row feature comparison, two routing questions) | `blog/skissify-vs-excalidraw-comparison-cycle138.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 138 — 6 new viral hooks: 30-second pre-meeting sketch (Twitter/LinkedIn), r/MachineLearning spatial reasoning angle, r/softwareengineering incident architecture, build-in-public week 1 Twitter thread, Dev Hunt submission copy, r/entrepreneur founder story. New platforms: r/MachineLearning, Dev Hunt, r/entrepreneur, r/softwareengineering. New hashtags: #BuildInPublic #IndieHacker #MachineLearning #IncidentResponse. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 138 — Day 4 status table with new channels | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 138 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 138 — Priority Actions (April 4–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/MachineLearning** (4.1M) — NEW Cycle 138 | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/softwareengineering** (600K) — NEW Cycle 138 | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 3) |
+| **POST build-in-public Twitter thread** — NEW Cycle 138 | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 4) |
+| **SUBMIT Dev Hunt** — NEW Cycle 138 | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 5) |
+| **POST r/entrepreneur** (2.5M) — NEW Cycle 138 | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 6) |
+| **SUBMIT to MCP directories** (5 sites) — from Cycle 137 | P0 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/webdev** (2.1M) — from Cycle 137, still unposted | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/ProductManagement** (1.8M) — from Cycle 137, still unposted | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 1) |
+| **RECORD TikTok/Reels demo video** — from Cycle 137, still unrecorded | P1 | TODAY | Script in Cycle 137 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/DnD** (3.2M) — from Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/cursor** — from Cycle 136, still unposted | P1 | TODAY | Copy in Cycle 136 SOCIAL-MEDIA.md (Hook 1) |
+| **PUBLISH 3 Cycle 138 blogs to Dev.to** | P0 | TODAY staggered 10:00/13:00/16:00 CET | |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 4) |
+| **POST HN Ask HN / Show HN** | P1 | MONDAY April 7, 08:00 CET | Both drafts in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — day 4 absolute deadline | 60s screen capture + voiceover |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 138 — New Ideas
+
+**Idea: r/MachineLearning is a technically credible audience for the spatial reasoning angle.** The observation that AI agents produce better spatial layouts when they have a visual output channel is a genuine research-adjacent insight that this community will engage with. Frame it as an observation and question, not a product announcement. The post invites discussion; Skissify is the example, not the hero.
+
+**Idea: Build-in-public threads are the highest-ROI format for indie dev tools in 2026.** The format (transparent metrics, honest mistakes, lessons learned) is exactly what the AI developer audience follows and shares. Week 1 retrospective threads regularly reach 10K+ impressions because they combine entertainment (schadenfreude about what went wrong) with instruction (what to do differently). The demo video gap, the missed communities, the unexpected audiences — these are the story.
+
+**Idea: Dev Hunt (devhunt.org) is an undiscovered launch platform for developer tools.** Product Hunt is saturated; Dev Hunt's developer-specific audience converts at higher rates for technical tools. The submission takes 20 minutes using copy already written. One more permanent backlink and discovery channel.
+
+**Idea: r/entrepreneur has strong appetite for day-N retrospectives from indie founders.** The format "day 4, here's the honest truth" performs because it's rare — most founders only share wins. A transparent post about what's overdue (no demo video, uncaptured communities) gets upvoted because it's relatable. The conversion path is soft (Skissify mentioned naturally, not pushed).
+
+**Idea: r/softwareengineering is less competitive than r/programming for technical product posts.** The incident architecture angle (diagrams are always wrong, here's a pattern that fixes it) is directly useful to this audience without being promotional. The comment about "living diagrams vs static documents" generates discussion on its own merits.
+
+### Cycle 138 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle138.md | DONE Cycle 138 |
+| Blog: how-ai-agents-draw-floor-plans-cycle138.md | DONE Cycle 138 |
+| Blog: skissify-vs-excalidraw-comparison-cycle138.md | DONE Cycle 138 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform additions (r/MachineLearning, Dev Hunt, r/entrepreneur, r/softwareengineering) + build-in-public strategy | DONE Cycle 138 |
+| PRESS-KIT.md — Cycle 138 day-4 status table | DONE Cycle 138 |
+| LAUNCH-PLAN.md — Cycle 138 block | DONE Cycle 138 |
 
 ---
 
