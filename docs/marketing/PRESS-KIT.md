@@ -1,6 +1,42 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 143 (New: 3 blog posts — "The Permission Signal" for Figma/sketches post, "The Handoff Problem" for AI agents/floor plans post, "Stage-Appropriate Tools" for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 143 block with 6 viral hooks: "Permission Signal" Twitter thread, r/ProductManagement (1.8M), r/MachineLearning (4.1M) agent handoff post, LinkedIn carousel "Two-Stage Workflow", Discord vibe-coding server (70K+) post, HackerNoon technical article submission. New platforms: HackerNoon, vibe-coding Discord, r/ProductManagement (if not already targeted). New hashtags: #PermissionSignal #VibeDrawing #HandoffProblem #StageAppropriate #MultiAgent #AgentStack #DesignLeadership.)*
+*Last updated: April 4, 2026 — Cycle 144 (New: 3 blog posts — "The Cognitive Load Argument" for Figma/sketches post, "The Token Economy" for AI agents/floor plans post, "The Velocity Test" for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 144 block with 6 viral hooks: "Cognitive Load" Twitter thread, r/startups (1.4M — 60-second rule), r/UIDesign (500K+ — tool-for-stage post), LinkedIn "Token Economy" (AI manifest efficiency), Dev.to "Velocity Test" article, ProductHunt "Ask the Maker" engagement. New platforms: r/startups, r/UIDesign, ProductHunt community. New hashtags: #CognitiveLoad #TokenEconomy #VelocityTest #IdeationFirst #DesignVelocity #AgentOutput.)*
+
+---
+
+## Cycle 144 — What's New (April 4, 2026 — Day 4 Post-Launch)
+
+### Day 4 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "The Cognitive Load Argument" — Figma/sketches post (Cycle 144) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle144.md` |
+| Blog: "The Token Economy" — AI agents/floor plans post (Cycle 144) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle144.md` |
+| Blog: "The Velocity Test" — Excalidraw comparison (Cycle 144) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle144.md` |
+| SOCIAL-MEDIA.md Cycle 144 | DONE — 6 hooks: Cognitive Load Twitter thread, r/startups 60-second rule, r/UIDesign tool-for-stage, LinkedIn Token Economy, Dev.to Velocity Test, ProductHunt Ask the Maker |
+| PRESS-KIT.md Cycle 144 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 144 | DONE |
+| Demo video | CRITICAL OVERDUE — record ASAP (Day 4 Saturday is the last ideal window) |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents (212K) | OVERDUE since Cycle 132 — post today |
+| r/startups (1.4M) | NEW Cycle 144 — post today (Hook 2) |
+| r/UIDesign (500K+) | NEW Cycle 144 — post today (Hook 3) |
+| LinkedIn Token Economy | NEW Cycle 144 — post today (Hook 4) |
+| Dev.to Velocity Test | NEW Cycle 144 — post today (Hook 5) |
+| ProductHunt community | NEW Cycle 144 — engage today (Hook 6) |
+| r/ProductManagement (1.8M) | NEW Cycle 143 — still unposted |
+| r/MachineLearning (4.1M) | NEW Cycle 143 — still unposted |
+| Discord vibe-coding server (70K+) | NEW Cycle 143 — still unposted |
+| HackerNoon submission | NEW Cycle 143 — still unposted |
+| r/artificial (1.3M) | NEW Cycle 142 — still unposted |
+| r/webdev (1.9M) | NEW Cycle 142 — still unposted |
+| r/SoftwareEngineering (1.1M) | NEW Cycle 142 — still unposted |
+| r/Architecture (2.1M) | NEW Cycle 140 — still unposted |
+| r/DnD (3.2M) | Cycle 135 — still unposted |
+| HN Show HN | P1 — MONDAY April 7, 08:00 CET |
 
 ---
 

@@ -1,7 +1,76 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 143**
+**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 144**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 144 — Day 4 Cognitive Load + Token Economy + Velocity Test)
+
+### Cycle 144 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 144 ("Cognitive Load Argument" — mode-switching tax during ideation, 60-second rule for ideation tools, two-mode design process diagram, four-tool time-to-artifact comparison) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle144.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 144 ("Token Economy" — natural language spatial encoding is lossy and token-wasteful, JSON manifest as compressed spatial format, losslessness argument, multi-agent workflow diagram, token count comparison table) | `blog/how-ai-agents-draw-floor-plans-cycle144.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 144 ("Velocity Test" — 5-scenario head-to-head comparison, time-to-shareable-artifact measurement, honest positioning for each tool, 14-row feature table, recommended stage workflow) | `blog/skissify-vs-excalidraw-comparison-cycle144.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 144 — 6 new viral hooks: "Cognitive Load" Twitter thread (mode-switching kills ideas), r/startups (1.4M — 60-second ideation rule post), r/UIDesign (500K+ — stopped using Figma for ideation post), LinkedIn "Token Economy" (AI manifest efficiency), Dev.to "Velocity Test" article, ProductHunt "Ask the Maker" engagement templates. New platforms: r/startups, r/UIDesign, ProductHunt community. New hashtags: #CognitiveLoad #TokenEconomy #VelocityTest #IdeationFirst #DesignVelocity #AgentOutput #SpatialAI. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 144 — Day 4 status table with new channels (r/startups, r/UIDesign, LinkedIn token economy, Dev.to velocity test, ProductHunt community) | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 144 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 144 — Priority Actions (April 4 — Saturday, Day 4)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** (212K) — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/startups** (1.4M) — NEW Cycle 144 | P1 | TODAY | Copy in Cycle 144 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/UIDesign** (500K+) — NEW Cycle 144 | P1 | TODAY | Copy in Cycle 144 SOCIAL-MEDIA.md (Hook 3) |
+| **POST LinkedIn Token Economy** — NEW Cycle 144 | P1 | TODAY | Copy in Cycle 144 SOCIAL-MEDIA.md (Hook 4) |
+| **PUBLISH Dev.to Velocity Test** — NEW Cycle 144 | P1 | TODAY | Copy in Cycle 144 SOCIAL-MEDIA.md (Hook 5) |
+| **ENGAGE ProductHunt comments** — NEW Cycle 144 | P0 | TODAY + Rolling | Use reply templates in Cycle 144 SOCIAL-MEDIA.md (Hook 6) |
+| **POST r/ProductManagement** (1.8M) — NEW Cycle 143, still unposted | P1 | TODAY | Copy in Cycle 143 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/MachineLearning** (4.1M) — Cycle 143, still unposted | P0 | TODAY | Copy in Cycle 143 SOCIAL-MEDIA.md (Hook 3) |
+| **POST Discord vibe-coding server** (70K+) — Cycle 143, still unposted | P1 | TODAY | Copy in Cycle 143 SOCIAL-MEDIA.md (Hook 5) |
+| **SUBMIT HackerNoon article** — Cycle 143, still unposted | P1 | TODAY | Cycle 143 SOCIAL-MEDIA.md (Hook 6) |
+| **POST r/artificial** (1.3M) — Cycle 142, still unposted | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/webdev** (1.9M) — Cycle 142, still unposted | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/vibecoding** (153K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/ClaudeAI** (688K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ClaudeCode** (96K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 4) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — Day 4 Saturday is ideal window | Script in Cycle 139 SOCIAL-MEDIA.md |
+| **POST r/Architecture** (2.1M) — Cycle 140, still unposted | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/DnD** (3.2M) — Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md |
+| **PUBLISH 3 Cycle 144 blogs to Dev.to** | P0 | TODAY staggered 10:00/13:00/16:00 CET | |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Use templates in Cycle 144 SOCIAL-MEDIA.md (Hook 6) |
+
+### Cycle 144 — New Ideas
+
+**Idea: The "Cognitive Load Argument" is the most psychologically grounded case for rough sketches.** It moves beyond aesthetics (rough looks friendly) and beyond social signaling (roughness communicates incompleteness) into cognitive science. The mode-switching cost is documented in attention research and applies universally — every designer, PM, and engineer has experienced the idea that disappeared while they were setting up the tool. This framing resonates with people who found the Permission Signal post too soft: they want a functional explanation, not a psychological one. The cognitive load argument gives it to them.
+
+**Idea: The 60-second rule is a memorable heuristic that spreads on its own.** A rule with a number is more repeatable than a principle. "Any ideation artifact must take under 60 seconds to create" is the kind of rule that people adopt, name-drop in their own meetings, and attribute to their own process. Skissify passes the rule. Figma doesn't. The rule spreads the product by spreading the constraint.
+
+**Idea: r/startups (1.4M) is an untapped community with perfect product-market fit.** Startup founders and early product teams have the exact problem: they are small, they need to validate fast, they can't afford to spend sprint time on the wrong idea. The 60-second ideation rule is a startup operational efficiency story, not just a design tool story. r/startups responds well to "here's a process we changed and why it worked" posts with clear before/after framing.
+
+**Idea: r/UIDesign (500K+) is the highest-relevance design community not yet targeted.** r/UIDesign is full of designers who know Figma is the wrong tool for ideation and are looking for alternatives. The "I stopped using Figma for ideation" post format has worked extremely well on r/UXDesign and should perform similarly here. The community actively discusses tool choices and process optimization. Skissify fits directly into that conversation.
+
+**Idea: The "Token Economy" argument opens a new technical audience: AI infrastructure engineers.** This audience does not care about design workflows. They care about token efficiency, agent latency, and lossless inter-agent communication. The argument that natural language spatial descriptions are lossy and token-wasteful while JSON manifests are lossless and token-efficient is directly legible to ML engineers, AI infrastructure developers, and people building LLM-native applications. This audience has not been reached by any previous Skissify messaging.
+
+**Idea: ProductHunt "Ask the Maker" threads are high-conversion community touchpoints.** When a maker actively responds to every comment on a ProductHunt launch, engagement compounds: each reply generates a notification to the commenter, who often re-engages. Providing templated replies for the most common question types (Excalidraw comparison, agent integration, human mode) means replies can go out quickly without sacrificing quality. This is the simplest and highest-leverage Day 4 action that doesn't require creating new content.
+
+### Cycle 144 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle144.md | DONE Cycle 144 |
+| Blog: how-ai-agents-draw-floor-plans-cycle144.md | DONE Cycle 144 |
+| Blog: skissify-vs-excalidraw-comparison-cycle144.md | DONE Cycle 144 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update (r/startups, r/UIDesign, LinkedIn token economy, Dev.to velocity test, ProductHunt community) + new hashtags | DONE Cycle 144 |
+| PRESS-KIT.md — Cycle 144 Day 4 status table | DONE Cycle 144 |
+| LAUNCH-PLAN.md — Cycle 144 block | DONE Cycle 144 |
 
 ---
 
