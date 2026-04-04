@@ -305,19 +305,50 @@ function hitRotationHandle(el: SketchElement, mx: number, my: number, HSIZE = 10
   return dx * dx + dy * dy <= HSIZE * HSIZE;
 }
 
-/** Apply a resize delta to an element, returning a partial update object */
+/** Apply a resize delta to an element, returning a partial update object.
+ * When `constrain` is true (Shift held), corner handles maintain the starting aspect ratio.
+ */
 function applyResizeDelta(
   handleId: HandleId,
   startEl: Record<string, number>,
   dx: number,
-  dy: number
+  dy: number,
+  constrain = false
 ): Record<string, number> {
   const MIN_SIZE = 4;
+
+  /**
+   * For corner resize handles: when Shift is held, pick the dominant axis delta and
+   * derive the other dimension from the starting aspect ratio so proportions are preserved.
+   * Returns {newW, newH, effectiveDx, effectiveDy} — all positive, >= MIN_SIZE.
+   */
+  function constrainCorner(rawW: number, rawH: number): { cw: number; ch: number } {
+    if (!constrain || startEl.w == null || startEl.h == null || startEl.h === 0) {
+      return { cw: Math.max(MIN_SIZE, rawW), ch: Math.max(MIN_SIZE, rawH) };
+    }
+    const aspect = startEl.w / startEl.h; // original w/h ratio
+    // Pick the dimension that changed the most as the driver
+    const fracW = rawW / startEl.w;
+    const fracH = rawH / startEl.h;
+    if (Math.abs(fracW - 1) >= Math.abs(fracH - 1)) {
+      // Width drives
+      const cw = Math.max(MIN_SIZE, rawW);
+      const ch = Math.max(MIN_SIZE, cw / aspect);
+      return { cw, ch };
+    } else {
+      // Height drives
+      const ch = Math.max(MIN_SIZE, rawH);
+      const cw = Math.max(MIN_SIZE, ch * aspect);
+      return { cw, ch };
+    }
+  }
+
   switch (handleId) {
     // Rect corners / edges
     case "nw": {
-      const newW = Math.max(MIN_SIZE, startEl.w - dx);
-      const newH = Math.max(MIN_SIZE, startEl.h - dy);
+      const rawW = startEl.w - dx;
+      const rawH = startEl.h - dy;
+      const { cw: newW, ch: newH } = constrainCorner(rawW, rawH);
       return {
         x: startEl.x + (startEl.w - newW),
         y: startEl.y + (startEl.h - newH),
@@ -330,8 +361,9 @@ function applyResizeDelta(
       return { y: startEl.y + (startEl.h - newH), h: newH };
     }
     case "ne": {
-      const newW = Math.max(MIN_SIZE, startEl.w + dx);
-      const newH = Math.max(MIN_SIZE, startEl.h - dy);
+      const rawW = startEl.w + dx;
+      const rawH = startEl.h - dy;
+      const { cw: newW, ch: newH } = constrainCorner(rawW, rawH);
       return { y: startEl.y + (startEl.h - newH), w: newW, h: newH };
     }
     case "w": {
@@ -341,13 +373,19 @@ function applyResizeDelta(
     case "e":
       return { w: Math.max(MIN_SIZE, startEl.w + dx) };
     case "sw": {
-      const newW = Math.max(MIN_SIZE, startEl.w - dx);
-      return { x: startEl.x + (startEl.w - newW), w: newW, h: Math.max(MIN_SIZE, startEl.h + dy) };
+      const rawW = startEl.w - dx;
+      const rawH = startEl.h + dy;
+      const { cw: newW, ch: newH } = constrainCorner(rawW, rawH);
+      return { x: startEl.x + (startEl.w - newW), w: newW, h: newH };
     }
     case "s":
       return { h: Math.max(MIN_SIZE, startEl.h + dy) };
-    case "se":
-      return { w: Math.max(MIN_SIZE, startEl.w + dx), h: Math.max(MIN_SIZE, startEl.h + dy) };
+    case "se": {
+      const rawW = startEl.w + dx;
+      const rawH = startEl.h + dy;
+      const { cw: newW, ch: newH } = constrainCorner(rawW, rawH);
+      return { w: newW, h: newH };
+    }
     // Line endpoints
     case "p1":
       return { x1: startEl.x1 + dx, y1: startEl.y1 + dy };
@@ -1236,11 +1274,14 @@ export default function Canvas({
           isResizing.current = true;
         }
         if (isResizing.current) {
+          // Shift held on a corner handle = proportional (aspect-ratio-locked) resize
+          const isCorner = ["nw", "ne", "sw", "se"].includes(activeResizeHandle.current);
           const updates = applyResizeDelta(
             activeResizeHandle.current,
             resizeStartEl.current,
             dx,
-            dy
+            dy,
+            isCorner && e.shiftKey
           );
           onResizeElement(resizeElementIdx.current, updates);
         }

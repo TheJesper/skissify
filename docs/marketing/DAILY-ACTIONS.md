@@ -2,6 +2,118 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #137 Actions (Saturday April 4, Stockholm — Late Afternoon) — FOR SUNDAY APRIL 5
+
+### Context: Run #137 Key New Findings
+- **Draw-it MCP** — free OSS tool occupying "sketch MCP" namespace; NOT a JSON generator; creates registry/SEO collision risk
+- **Sketch (macOS) MCP Server** — high-authority brand competing for "sketch MCP" queries
+- **Archilogic Floor Plan SDK + Apify Floor Plan Creator** — new floor plan API entrants; photo-realistic; validate demand; price Skissify out of their lane (too cheap = different market)
+- **2-3% freemium conversion baseline** — 900-1,350 free users needed to hit break-even; one HN post achieves this
+- **MCP Registry submission CRITICAL RED — 38th consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Sunday): Submit MCP Server to Registry Before Namespace is Lost
+
+**Why now**: Draw-it MCP and Sketch.com's MCP Server are now indexed in MCP registries for "sketch" and "draw" queries. Neither does what Skissify does, but both capture the namespace. A developer searching "sketch MCP" today finds two tools that can't generate anything from JSON. Skissify must appear as the unambiguous answer to "I want my AI agent to generate hand-drawn sketches from data." 38 runs, 38 times this has been flagged. It is now a namespace emergency.
+
+**Do this (45-60 minutes):**
+1. Publish `skissify-mcp` to npm with keywords: `sketch`, `hand-drawn`, `floor-plan`, `JSON`, `SVG`, `headless`, `architecture`, `agent`, `MCP`; description: "MCP server — JSON to hand-drawn SVG, floor plans, architectural diagrams. Headless. Sub-100ms. No Chromium."
+2. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) — fill all fields: name, description, categories (Visual, Productivity), tags (sketch, floor-plan, hand-drawn, JSON, SVG)
+3. In the description explicitly include "not Draw-it MCP, not Sketch app — this generates hand-drawn sketches from structured data, programmatically"
+
+**Target outcome**: Skissify appears when any MCP client user searches "sketch floor plan hand-drawn" — zero competition for that exact query. Every day of delay cedes ground to Draw-it MCP and Sketch.com.
+
+---
+
+### Action 2 (HIGH — Sunday): Write "My Agent Needs to Draw: Why Draw-it MCP and Sketch.com MCP Won't Help You"
+
+**Why**: A developer building an AI pipeline who wants their agent to produce visual output will search "sketch MCP" or "draw MCP" and find Draw-it MCP (human draws → Claude analyzes) and Sketch.com MCP (existing design files → code). Both disappoint this developer. Skissify is the answer — but invisible unless we own the comparison content.
+
+**Do this (60-75 minutes):**
+1. Blog title: "Why 'Sketch MCP' Searches Lead You to the Wrong Tools (And What to Use Instead)"
+2. Structure: Problem → Tool 1 (Draw-it MCP: humans draw, AI analyzes — not what you need) → Tool 2 (Sketch.com MCP: existing design files — not what you need) → Solution (Skissify: `POST {"elements": [...]}` → hand-drawn SVG in 100ms → MCP returns it to your agent)
+3. Code example: One-shot Skissify API call from a Claude agent that generates a floor plan sketch
+4. SEO target keywords: "sketch MCP", "drawing MCP server", "AI agent generate sketch", "hand-drawn diagram MCP"
+5. Publish to blog; crosspost to r/mcp (genuine contribution post, not spam)
+
+**Target outcome**: Own the "sketch MCP" intent for developers who tried the wrong tools and are still searching for the right one.
+
+---
+
+### Action 3 (MEDIUM — Sunday): Add "First API Call in 2 Minutes" to Homepage / Docs
+
+**Why**: The 2-3% freemium conversion benchmark means Skissify needs the "aha moment" (first successful API call) to be friction-free. Every minute of delay between signup and first rendered sketch is a lost conversion. Archilogic requires enterprise onboarding. Apify requires credit setup. Draw-it MCP requires local npm install. Skissify should win on "under 2 minutes from zero to rendered sketch." If the homepage doesn't demonstrate a live API call in the first screen, add it now.
+
+**Do this (30-45 minutes):**
+1. Add a "Try the API in 30 seconds" section to the homepage with a pre-filled curl command:
+   ```bash
+   curl -X POST https://api.skissify.com/render \
+     -H "Content-Type: application/json" \
+     -d '{"elements":[{"type":"rect","x":100,"y":100,"w":200,"h":150}]}' \
+     -o sketch.svg
+   ```
+2. Add "Open in Claude" button that pre-fills a Claude.ai prompt: "Call the Skissify MCP server and generate a 2-bedroom floor plan sketch"
+3. Add explicit messaging: "No login needed for the first render. Get your API key in 60 seconds."
+
+**Target outcome**: Reduce time-to-first-successful-API-call to under 2 minutes. At 2-3% conversion, this directly increases MRR. One extra conversion per 100 free users = EUR 5-10/mo compounding.
+
+---
+
+## [2026-04-04] — Strategy Run #136 Actions (Saturday April 4, Stockholm — Afternoon) — FOR MONDAY APRIL 6
+
+### Context: Run #136 Key New Findings
+- **Sketch2Scheme** — free AI tool, photo of hand-drawn sketch → SVG/PNG/PDF/Draw.io; API; SEO competitor for "hand-drawn diagram API" queries
+- **Prompt2Sketch** — OSS experimental tldraw+MCP project; validates Skissify's thesis; warm audience to target
+- **77% of top SaaS companies use consumption-based pricing** — table stakes; pricing story must pivot to performance/cost moat
+- **MCP 2026 roadmap: image/media types coming** — Skissify SVG as native MCP return value = major UX upgrade
+- **MCP Registry submission CRITICAL RED — 37th consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Monday): Publish MCP Server to Registry + npm
+
+**Why now**: 37 consecutive runs without submission. Prompt2Sketch (local tldraw+MCP experiment) appeared in search results this run — meaning developers ARE searching for MCP diagram tools. Skissify must be discoverable when they search "sketch", "floor plan", "hand-drawn" in the MCP registry.
+
+**Do this (45-60 minutes):**
+1. Publish `skissify-mcp` to npm: description = "MCP server — JSON to hand-drawn SVG, floor plans, architectural diagrams, headless, sub-100ms, no Chromium"
+2. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) with keywords: `sketch`, `floor-plan`, `hand-drawn`, `SVG`, `JSON`, `architecture`, `headless`
+3. Post in r/mcp and on Twitter/X: "Built an MCP server that generates hand-drawn floor plans and sketches from JSON — no Chromium, sub-100ms, EUR 2/mo. [link]"
+
+**Target outcome**: Appear in MCP client searches for "sketch" and "floor plan". One discovery = one potential EUR 2/mo conversion. This is zero-cost organic distribution.
+
+---
+
+### Action 2 (HIGH — Monday): Reach the Prompt2Sketch Audience
+
+**Why**: A developer on GitHub independently built the exact Skissify use case (AI → diagram via MCP) using tldraw. They spent hours building locally what Skissify provides in seconds for EUR 2/mo. This is the warmest possible lead: developer who (a) wants AI-driven diagrams via MCP, (b) built it themselves because no solution existed, (c) is unhappy with the result (no hand-drawn, no floor plan elements, not production-ready).
+
+**Do this (30-45 minutes):**
+1. Open a GitHub issue or discussion on [Arsenic-01/Prompt2Sketch](https://github.com/Arsenic-01/Prompt2Sketch): "Love what you're building — if you need hand-drawn aesthetics or floor plan elements (doors/windows/stairs), Skissify has an MCP server that adds that layer. Happy to compare notes." (Genuine, not spammy.)
+2. Post on r/LocalLLaMA or r/mcp referencing Prompt2Sketch: "Saw someone building a tldraw+MCP diagram tool locally — built a cloud alternative that adds hand-drawn aesthetics + architectural elements. Would love feedback from anyone experimenting in this space."
+3. Write a blog post: "Why developers are building their own MCP diagram tools — and when to use Skissify instead" — specifically addressing the Prompt2Sketch pattern (local DIY vs. EUR 2/mo cloud solution).
+
+**Target outcome**: Convert at least 1 developer from Prompt2Sketch audience to Skissify free trial.
+
+---
+
+### Action 3 (MEDIUM — Monday): Publish "Skissify vs Sketch2Scheme: Generate vs Digitize"
+
+**Why**: Sketch2Scheme is free and does "hand-drawn diagram ↔ digital" — it will rank for "hand-drawn diagram API" search queries. Skissify must publish a comparison post to own that query with the right framing: Sketch2Scheme reads existing hand-drawn sketches; Skissify *creates* hand-drawn sketches from data. These are opposite tools.
+
+**Do this (60 minutes):**
+1. Title: "Sketch2Scheme vs Skissify: Two Tools That Look Similar But Do Opposite Things"
+2. Key framing: Sketch2Scheme = human draws on paper → AI digitizes (input: photo; output: clean SVG); Skissify = agent writes JSON → renders hand-drawn aesthetic (input: data; output: hand-drawn SVG). One is for humans post-sketch; one is for agents pre-sketch.
+3. Decision table: "Use Sketch2Scheme if you have paper sketches to digitize / Use Skissify if your AI agent needs to generate visual output"
+4. Include a Skissify JSON manifest example that produces a floor plan Sketch2Scheme literally cannot generate.
+5. Publish to blog; share on r/webdev.
+
+**Reference**: [Sketch2Scheme](https://sketch2scheme.com/), [Skissify MCP docs]
+
+**Target outcome**: Own "hand-drawn diagram API" search intent before Sketch2Scheme's free positioning dominates.
+
+---
+
 ## [2026-04-04] — Strategy Run #135 Actions (Saturday April 4, Stockholm — Midday) — FOR SUNDAY APRIL 5
 
 ### Context: Run #135 Key New Findings

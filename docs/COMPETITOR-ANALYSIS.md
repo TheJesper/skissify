@@ -2,6 +2,184 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #137 (Saturday April 4, Stockholm — Late Afternoon)
+
+### Status: 4 new entries / updates. KEY FINDINGS: **Draw-it MCP confirmed as namespace squatter** — free OSS human-draws-Claude-analyzes tool; occupies "sketch MCP" search space; NOT a JSON generator; zero architectural elements. **Sketch (macOS app) MCP Server — brand SEO collision risk** — official MCP server for Sketch design app could intercept "sketch MCP" queries; different product entirely but same keyword cluster. **Archilogic Floor Plan SDK + GraphQL API** — professional spatial data platform; photo-realistic, not hand-drawn; targets AEC enterprises, not indie devs or AI agents. **Apify AI Floor Plan Creator API** — text or structured input → floor plan image + structured metadata + AutoCAD commands; not hand-drawn; no MCP; different output format. **tldraw adds Image Pipeline template** — AI image workflow canvas node editor via npx create-tldraw; shows tldraw pivoting toward workflow orchestration tools, not just whiteboard SDK. **SaaS freemium conversion baseline: 2-3%** — 73% of SaaS companies offer free tiers; 2-3% freemium-to-paid conversion is benchmark for user-to-revenue modeling. **MCP Registry submission CRITICAL RED — 38th consecutive run unconfirmed.**
+
+---
+
+### Draw-it MCP — Namespace Squatter in "Sketch MCP" Space (NEW ENTRY)
+
+**Sources**: [Draw-it MCP — Awesome MCP Servers](https://mcpservers.org/servers/Pandoll-AI/draw-it-mcp), [Draw-it-MCP by Pandoll-AI — Glama](https://glama.ai/mcp/servers/@Pandoll-AI/draw-it-mcp), [Draw-it-MCP — LobeHub](https://lobehub.com/mcp/draw-it-mcp-draw-it-mcp), verified 2026-04-04
+
+**What it does**: Draw-it MCP is a free open-source browser-based drawing application with MCP integration. Users draw on a 60 FPS canvas (brushes, color picker, undo/redo, auto-save, dark/light theme) and then ask Claude to analyze the artwork, identify shapes, suggest improvements, or discuss the composition. It is a **human → canvas → AI analyzes** workflow. Install: `npx draw-it-mcp` or `npm install -g draw-it-mcp`. Free, OSS, no paid tier.
+
+**What it is NOT**: Draw-it MCP does NOT generate sketches from JSON or data. It is NOT headless. It has NO architectural domain elements (doors/windows/stairs/dimensions). It does NOT produce programmatic output for agents. It is a creative sketchpad where humans draw and Claude comments.
+
+**Why it matters for Skissify**: Draw-it MCP is indexed in MCP registries under keywords including "sketch", "draw", "drawing", "canvas", "MCP". This creates **namespace collision risk** for Skissify's "sketch MCP" search intent. A developer searching "sketch MCP server" may find Draw-it MCP first and incorrectly conclude the use case is solved. Skissify must own the keywords: "hand-drawn JSON sketch MCP", "floor plan MCP", "headless sketch API MCP". The differentiation must be crisp in the MCP registry description: "JSON input → hand-drawn SVG output — programmatic, headless, no human required." Draw-it MCP's presence actually creates urgency: the "sketch + MCP" namespace is filling up with tools that look adjacent but do opposite things. Submit to MCP Registry NOW or lose the namespace.
+
+**Threat assessment: LOW (different direction — human draws, Claude analyzes; no programmatic output; no JSON input; SEO/namespace collision risk is the real issue)**
+
+---
+
+### Sketch (macOS App) MCP Server — Brand Collision Risk (NEW ENTRY)
+
+**Sources**: [Sketch MCP Server Docs](https://www.sketch.com/docs/mcp-server/), [Sketch MCP by mater1996 — PulseMCP](https://www.pulsemcp.com/servers/sketch), [Bridging Design and Code — Skywork AI](https://skywork.ai/skypage/en/bridging-design-code-ai-engineer-guide/1981282442686988288), verified 2026-04-04
+
+**What it does**: Sketch (the macOS vector design app, sketch.com) has a built-in local MCP Server that lets Claude, ChatGPT, or Codex interact with Sketch documents. Two main tools: `get_selection_as_image` (captures current selection as image) and `run_code` (executes SketchAPI code to create/modify design elements). Design-to-code workflows, automated design analysis, component extraction. macOS-only.
+
+**Why it matters for Skissify**: Sketch (the app) has high domain authority, brand recognition, and is indexed prominently in MCP registries. A developer or agent builder searching "sketch MCP" will find Sketch.com's MCP server prominently. This is **Skissify's biggest brand/SEO collision risk**. "Skissify" sounds like "Sketch" + "ify" — deliberate — but this makes the keyword conflict worse. Skissify's positioning must explicitly own: "programmatic hand-drawn sketch generation from JSON" vs. Sketch.com's "AI assistant for your Sketch design files." No overlap in use case, but significant overlap in search intent.
+
+**Threat assessment: LOW-MEDIUM (no product overlap; HIGH SEO/brand collision risk for "sketch MCP" queries; Skissify must clearly differentiate in registry listings and homepage copy)**
+
+---
+
+### Archilogic Floor Plan SDK + GraphQL API — AEC Spatial Platform (NEW ENTRY)
+
+**Sources**: [Archilogic.com](https://www.archilogic.com), [Archilogic Layout & Furnishing AI](https://www.archilogic.com/project/layout-furnishing-ai), verified 2026-04-04
+
+**What it does**: Archilogic is a professional spatial data platform targeting the AEC (Architecture, Engineering, Construction) industry. Offers a Floor Plan SDK, GraphQL API, Extensions Framework, and AI-powered layout + furnishing generation. Targets enterprise real estate companies (portfolio management, building digitization, space planning at scale). Photo-realistic rendering. Pricing: enterprise contracts.
+
+**Why it matters for Skissify**: Archilogic occupies the "floor plan API" space for enterprise AEC. It does NOT offer hand-drawn aesthetics, does NOT target indie developers or AI agents, and costs enterprise rates. However, Archilogic will rank for "floor plan API" and "floor plan SDK" queries — the same queries Skissify wants. Archilogic's existence validates the B2B demand for programmatic floor plan generation; Skissify's EUR 5/mo Pro serves the market segment Archilogic has priced out (indie devs, small teams, AI agent builders).
+
+**Threat assessment: LOW (enterprise AEC lane; no hand-drawn aesthetic; no MCP; enterprise pricing; validates demand for Skissify's more accessible floor plan API)**
+
+---
+
+### Apify AI Floor Plan Creator API — Structured Input → Floor Plan Image (NEW ENTRY)
+
+**Sources**: [Apify AI Floor Plan Creator](https://apify.com/calm_necessity/ai-floor-planner), verified 2026-04-04
+
+**What it does**: An Apify-hosted API actor that generates clean, professional floor plan images from text descriptions or structured inputs. Returns a generated floor plan image URL, structured metadata (room dimensions, element positions), and AutoCAD commands for technical implementation. Photo-realistic output (not hand-drawn). No MCP support. Pricing: Apify pay-per-use credits model.
+
+**Why it matters for Skissify**: This is the closest functional competitor found to date for the "structured input → floor plan output via API" use case — but produces professional/realistic renderings vs. Skissify's hand-drawn aesthetic. The differentiation is the aesthetic purpose: Archilogic and Apify are for "real" floor plans (construction, real estate); Skissify is for "sketch-phase" floor plans (ideation, communication, agent output). The two use cases are complementary, not competing. A developer might use Skissify for quick agent-generated sketches and Archilogic/Apify for production-grade plans. Skissify should position as "the sketch layer, not the production layer."
+
+**Threat assessment: LOW-MEDIUM (photo-realistic output vs. hand-drawn; no MCP; API model validates Skissify's API pricing approach; SEO competitor for "floor plan API" queries)**
+
+---
+
+### tldraw Image Pipeline Template — Workflow Canvas Direction Confirmed
+
+**Sources**: [tldraw Releases](https://tldraw.dev/releases), [tldraw npm 4.5.6](https://www.npmjs.com/package/tldraw), verified 2026-04-04
+
+**Update**: tldraw has added an "Image Pipeline" starter template via `npx create-tldraw` — a visual node-based canvas for building AI image generation workflows, with custom node shapes, typed port connections, pipeline regions with play/stop controls, and a DAG-based execution engine backed by a Cloudflare Worker API. No new April 2026 release found (4.5.6 on April 2 remains latest).
+
+**What this reveals**: tldraw is expanding from "whiteboard SDK" toward "visual workflow orchestration canvas." The Image Pipeline template shows tldraw positioning itself for AI workflow visualization (DAG/node graphs), not just freeform drawing. This is a different lane than Skissify's "JSON input → hand-drawn SVG output" — tldraw is building workflow tools for developers using their React SDK; Skissify is a headless render API for agent output. No direct conflict, but tldraw's direction toward "AI workflows as canvas" is worth monitoring.
+
+**Threat assessment: MEDIUM-HIGH (unchanged) — React SDK still $6K/yr; Image Pipeline template confirms workflow-canvas not headless-JSON direction; no architectural elements added**
+
+---
+
+### SaaS Freemium Conversion Baseline — 2-3% Benchmark (PRICING INTELLIGENCE UPDATE)
+
+**Sources**: [SaaS Freemium Conversion Rates 2026 — First Page Sage](https://firstpagesage.com/seo-blog/saas-freemium-conversion-rates/), [Micro-SaaS Pricing Strategies — Freemius](https://freemius.com/blog/micro-saas-pricing-strategies/), verified 2026-04-04
+
+**Updated data**: 73% of SaaS companies offer free tiers in 2026 (Forrester). Industry benchmark for freemium-to-paid conversion: **2-3% for paid sign-ups**. Median pricing page conversion: 3-5% for free trials.
+
+**Skissify modeling implication**: At 2-3% freemium-to-paid conversion, Skissify needs approximately 1,000-1,500 free users to generate 20-30 paid subscribers. At EUR 2/mo Indie tier: 27 paid subscribers = break-even (~1,350 free users). At EUR 5/mo Pro: 27 subscribers from ~900 free users. The Business Plan's break-even scenario (27 Pro subscribers) requires ~900-1,350 registered free users — achievable in Month 2-3 post a successful HN launch (which can drive 500-2,000 signups in 24 hours). The 2-3% baseline is conservative; developer tools with strong API demos can achieve 5-8% if the "aha moment" (first successful API call) is reached quickly. Priority: remove all friction between signup and first API call.
+
+---
+
+### Updated Competitor Matrix (Run #137 — Saturday April 4, 2026 — Late Afternoon)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). March 31: Trash, Mermaid ERD, Slide Templates, Arrow Binding. $6-7/user/mo. | NO (canvas-dependent) | YES | NO | YES (official) | **CRITICAL** |
+| **tldraw (April 2026)** | SDK 4.5.6 (April 2). MCP App (March 3). Image Pipeline template (AI workflow canvas). $6K/yr SDK. | Partial (interactive canvas) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp`. Inline MCP App iframe. 4 integration modes. 10K+ shapes. | YES (XML/CSV/Mermaid) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Figma MCP + Make Kits** | Make Kits + Attachments (April 2). Agents create/edit canvas via MCP. $15-45/user/mo. | YES (Figma native) | NO | NO (requires Figma) | YES (official) | **MEDIUM (different lane)** |
+| **Draw-it MCP (NEW)** | Free OSS. Human draws on canvas, Claude analyzes. No JSON input. No programmatic output. `npx draw-it-mcp`. | NO (human-driven canvas) | YES (human-drawn, not generated) | YES | YES (local) | **LOW (namespace squatter; opposite direction; SEO/registry collision risk)** |
+| **Sketch (macOS app) MCP** | Built-in local MCP Server. `get_selection_as_image` + `run_code`. macOS-only. Design-to-code. | NO (existing design files only) | NO (vector) | YES | YES (official, local) | **LOW-MEDIUM (brand/SEO collision for "sketch MCP" queries)** |
+| **Archilogic Floor Plan SDK** | Professional AEC spatial platform. Floor Plan SDK + GraphQL API. Enterprise pricing. Photo-realistic. | YES (GraphQL API) | NO | YES | NO | **LOW (enterprise AEC lane; validates floor plan API demand)** |
+| **Apify AI Floor Plan Creator** | Structured input → floor plan image + metadata + AutoCAD commands. Apify pay-per-use. Photo-realistic. | YES (API) | NO | YES | NO | **LOW-MEDIUM (API model validates pricing; photo-realistic not hand-drawn; SEO competitor for "floor plan API")** |
+| **InfraSketch (April 2026)** | Free AI cloud architecture diagrams, natural language. Active SEO. No MCP. No hand-drawn. | YES (NL→SVG) | NO | YES | NO | **MEDIUM-LOW (cloud/DevOps lane; SEO competitor)** |
+| **Sketch2Scheme** | Free. Photo of hand-drawn sketch → digital SVG/PNG/PDF/Draw.io. API available. No MCP. | NO (digitize, not generate) | YES (reads, doesn't generate) | YES | NO | **LOW-MEDIUM (inverse direction; SEO competitor)** |
+| **Prompt2Sketch** | OSS experimental. tldraw + Node.js MCP. Local/offline. Not production-ready. Free. | YES (prompt→tldraw) | NO | NO (tldraw canvas) | YES (local only) | **LOW (experimental; thesis validation)** |
+| **Napkin AI** | $12/mo Plus (SVG export). $30/mo Pro. Text→business visuals. No JSON, no MCP, no API. | NO (interactive only) | NO | NO | NO | **LOW** |
+| **ArchitectureDiagram.ai** | JSON→SVG/PNG API. "Coming soon." IT/cloud arch only. No hand-drawn. | YES (coming soon) | NO | YES | NO | **MEDIUM-LOW (not yet live)** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
+## Update: 2026-04-04 — Strategy Run #136 (Saturday April 4, Stockholm — Afternoon)
+
+### Status: 4 topics researched. KEY FINDINGS: **Sketch2Scheme confirmed as inverse-competitor** — free AI tool that converts photos of hand-drawn sketches to digital SVG/PNG/PDF/Draw.io; API available; completely different direction (human → digital) vs Skissify (agent JSON → hand-drawn aesthetic); but competes for "hand-drawn diagram API" search intent. **Prompt2Sketch confirmed as experimental MCP competitor** — open-source, local-first, tldraw-backed, prompt→diagram via MCP; NOT production-ready, not monetized, no architectural elements; validates Skissify's thesis. **77% of top software companies now use consumption-based pricing** (up from 43% hybrid adoption figure — this is the larger set); $55.7M average annual SaaS spend per org (+8% YoY); credit model +126% YoY. **MCP 2026 roadmap: media types (image/audio/video) coming** — opportunity for Skissify SVG rendering to leverage richer MCP output primitives. **MCP Registry submission CRITICAL RED — 37th consecutive run unconfirmed.**
+
+---
+
+### Sketch2Scheme — Inverse-Competitor Confirmed (NEW ENTRY)
+
+**Sources**: [Sketch2Scheme](https://sketch2scheme.com/), [MOGE listing](https://moge.ai/product/sketch2scheme), [XIX.AI tool page](https://xix.ai/tool/sketch2scheme.html), [Creati.ai listing](https://creati.ai/ai-tools/sketch2scheme/), verified 2026-04-04
+
+**What it does**: Sketch2Scheme converts photos of hand-drawn sketches (from paper/notebook) into digital diagrams using AI. Upload a photo of a hand-drawn flowchart or diagram — AI recognizes nodes, connections, and text, auto-arranges them, and exports PNG, SVG, PDF, or Draw.io-compatible files. API available. **Free, no credits required.**
+
+**Why it matters for Skissify**: Sketch2Scheme is an *inverse* tool — human draws by hand → AI digitizes. Skissify is the opposite: agent writes JSON → renders hand-drawn aesthetic. The use cases don't overlap directly. But both tools compete for the search query "hand-drawn diagram API." A developer searching "hand-drawn SVG API" might find Sketch2Scheme first. Skissify's differentiation must be crisp: "we generate the hand-drawn aesthetic from data, not digitize existing drawings." Publish a "Skissify vs Sketch2Scheme" comparison post to own this search intent. Additionally: Sketch2Scheme's free API offering raises the question of whether Skissify's EUR 2/mo is the right entry point — but Skissify's value is programmatic generation (not digitization), which is a fundamentally different and more valuable use case for AI agent pipelines.
+
+**Threat assessment: LOW-MEDIUM (different direction; SEO competitor for "hand-drawn diagram API" queries; free API raises comparison questions)**
+
+---
+
+### Prompt2Sketch — Experimental MCP+tldraw Competitor (NEW ENTRY)
+
+**Sources**: [GitHub — Arsenic-01/Prompt2Sketch](https://github.com/Arsenic-01/Prompt2Sketch), [Lobehub MCP listing](https://lobehub.com/mcp/arsenic-01-mcp_tldraw), verified 2026-04-04
+
+**What it does**: Prompt2Sketch is an open-source local-first tool combining tldraw canvas + Node.js MCP server for AI-driven diagram generation from prompts. Next.js 15 frontend, WebSocket-based MCP backend, Zod+TypeScript. No API limits (runs locally via Ollama/local LLMs). NOT production-ready — no multi-user collaboration, no deployment, experimental only.
+
+**What it lacks vs Skissify**: No hand-drawn aesthetic (tldraw is not hand-drawn), no architectural domain elements (no doors/windows/stairs/dimensions), requires local setup + tldraw SDK or Ollama, no cloud hosted API, no pricing (free but also zero support/SLA), not indexed in MCP registry. Experimental status means no production use.
+
+**Why it matters**: Prompt2Sketch demonstrates that developers are independently building "AI → diagram via MCP" workflows, validating Skissify's entire thesis. The developer who builds Prompt2Sketch locally would convert to Skissify's EUR 2/mo if they needed: (a) hand-drawn aesthetic, (b) floor plan / architectural elements, (c) cloud API without local infrastructure, (d) MCP registry discoverability. This is a warm market signal.
+
+**Threat assessment: LOW (experimental, local-only, no monetization, no hand-drawn aesthetic; strong thesis validation)**
+
+---
+
+### MCP 2026 Roadmap — Media Types (Image/Audio/Video) Coming
+
+**Sources**: [MCP Roadmap 2026 — The New Stack](https://thenewstack.io/model-context-protocol-roadmap-2026/), [2026 MCP Roadmap — MCP Blog](http://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/), [Complete Guide to MCP 2026 — DEV Community](https://dev.to/universe7creator/the-complete-guide-to-model-context-protocol-mcp-building-ai-native-applications-in-2026-5e57), verified 2026-04-04
+
+**2026 MCP roadmap priorities**:
+- **Transport scalability**: Streamable HTTP gaps with load balancers and horizontal scaling — enterprises hit these in production
+- **Tasks primitive lifecycle**: Retry semantics, expiry policies — required for reliable agent pipelines
+- **Enterprise readiness**: Audit trails, SSO-integrated auth, configuration portability
+- **Media types**: Images, video, audio — agents will see, hear, and watch in 2026 (not just read/write text)
+- **Open governance**: Transparent standards and decision-making (Linux Foundation)
+
+**Skissify opportunity — Media Types**: When MCP adds native image/SVG as a first-class media type (not just text responses), Skissify can return SVG directly as an MCP tool result — no file save, no URL, just the sketch inline in the agent's context. This is a protocol-level upgrade that Skissify should be ready to implement. It makes the "agent creates a sketch" workflow completely seamless: JSON in → SVG media type out → agent uses it directly.
+
+---
+
+### SaaS Pricing — 77% of Top Companies Now Consumption-Based (UPDATED)
+
+**Sources**: [175+ SaaS Statistics 2026 — Zylo](https://zylo.com/blog/saas-statistics/), [State of Usage-Based Pricing 2025 — Metronome](https://metronome.com/state-of-usage-based-pricing-2025), [SaaS Inflation Index 2026 — Vertice](https://www.vertice.one/l/saas-inflation-index-report), [Future of SaaS Pricing — Medium](https://medium.com/@aymane.bt/the-future-of-saas-pricing-in-2026-an-expert-guide-for-founders-and-leaders-a8d996892876), verified 2026-04-04
+
+**Updated key metrics (April 2026)**:
+- **77%** of the largest software companies now incorporate consumption-based pricing (broader dataset than the 43% hybrid-only figure from Run #135)
+- **$55.7M** average annual SaaS spend per organization in 2026 (+8% YoY) — SaaS budgets are growing, not shrinking
+- Credit model companies: **79 of PricingSaaS 500** (up from 35 in 2024, +126% YoY) — confirmed again
+- **80%** of customers report usage-based pricing provides better value alignment
+
+**Skissify pricing implication**: The 77% figure (vs 43% earlier) represents the full set — per-seat AND hybrid AND pure consumption. The market has fully normalized usage-based billing. Skissify's EUR 0.005/render overage is now expected, not innovative. The pricing story must shift to differentiation: **near-zero compute cost per render** (Canvas 2D, sub-100ms, no GPU) = Skissify's structural margin advantage that no Chromium-based competitor can match.
+
+---
+
+### Updated Competitor Matrix (Run #136 — Saturday April 4, 2026 — Afternoon)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). March 2026: Trash, Mermaid ERD, Slide Templates, Arrow Binding. $6-7/user/mo. | NO (canvas-dependent) | YES | NO | YES (official) | **CRITICAL** |
+| **tldraw (April 2026)** | SDK 4.5.6 (April 2, 2026). MCP App (March 3, 2026). No new April updates found. $6K/yr SDK. | Partial (interactive canvas) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp`. Inline MCP App iframe. 4 integration modes. 10K+ shapes. | YES (XML/CSV/Mermaid) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Figma MCP + Make Kits** | Agents create/edit Figma canvas via MCP. Make Kits + Attachments (April 2, 2026). $15-45/user/mo. | YES (Figma native) | NO | NO (requires Figma) | YES (official) | **MEDIUM (different lane)** |
+| **InfraSketch (April 2026)** | Free AI cloud architecture diagrams, natural language. Active SEO. No MCP. | YES (NL→SVG) | NO | YES | NO | **MEDIUM-LOW (cloud/DevOps lane; SEO competitor)** |
+| **Sketch2Scheme (NEW)** | Free. Photo of hand-drawn sketch → digital SVG/PNG/PDF/Draw.io. API available. No MCP. | NO (digitize, not generate) | YES (reads hand-drawn; doesn't generate) | YES | NO | **LOW-MEDIUM (inverse direction; SEO competitor for "hand-drawn diagram API")** |
+| **Prompt2Sketch (NEW)** | OSS experimental. tldraw + Node.js MCP. Local/offline. Not production-ready. Free. | YES (prompt→tldraw) | NO | NO (tldraw canvas) | YES (local only) | **LOW (experimental, local-only; thesis validation)** |
+| **Napkin AI** | $12/mo Plus (SVG export), $30/mo Pro. Text→business visuals. No JSON, no MCP, no API. | NO (interactive only) | NO | NO | NO | **LOW** |
+| **ArchitectureDiagram.ai** | JSON→SVG/PNG API. "Coming soon." IT/cloud arch only. No hand-drawn. | YES (coming soon) | NO | YES | NO | **MEDIUM-LOW (not yet live)** |
+| **OpenFlowKit** | MIT/free OSS. JSON DSL. SVG export. "Under construction." | YES (DSL) | NO | Partial | NO | **MEDIUM** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
 ## Update: 2026-04-04 — Strategy Run #135 (Saturday April 4, Stockholm — Midday)
 
 ### Status: 5 topics researched. KEY FINDINGS: **Figma Make Kits + Attachments launched April 2, 2026** — deep design system context in AI prototyping; accepts SVG/JSON attachments; doubles down on enterprise/design-system lane, NOT headless JSON→sketch. **InfraSketch confirmed as active competitor** — free AI architecture diagram tool (natural language→cloud infra diagrams), no hand-drawn aesthetic, cloud-only domain; SEO active with "best AI diagram tools 2026" blog posts. **Napkin AI pricing updated** — $12/mo Plus (SVG export), $30/mo Pro; text→business visuals, not JSON-driven, not MCP-compatible; further validates sub-$15 pricing floor for the sketch/diagram utility tier. **MCP ecosystem now 12,000+ servers on PulseMCP** (after filtering low-quality) — Linux Foundation stewardship confirmed; 97M monthly SDK downloads; zero of them produce hand-drawn JSON→SVG. **SaaS hybrid pricing hits 43% adoption** — 61% projected by end 2026; Bessemer projects 62% of all SaaS will have usage-based component by 2027. **MCP Registry submission CRITICAL RED — 36th consecutive run unconfirmed.**

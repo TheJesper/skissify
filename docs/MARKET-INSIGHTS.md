@@ -2,6 +2,69 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #137 (Saturday April 4, Stockholm — Late Afternoon)
+
+### Theme: The "Sketch MCP" Namespace Is Filling Up Fast; Floor Plan API Space Has Multiple New Entrants; 2-3% Freemium Conversion Baseline Sets the User Volume Target
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #137 Synthesis
+
+This run reveals a structural urgency: **the MCP registry namespace around "sketch" and "draw" is being claimed by tools that have nothing to do with programmatic JSON→hand-drawn generation.** Draw-it MCP (free, human canvas + Claude) and Sketch.com's MCP Server are now indexed in MCP registries and search results for "sketch MCP." Neither does what Skissify does. But they dilute the namespace. A developer who finds these tools first may conclude the space is "solved" and stop looking. This is the hidden cost of delayed MCP Registry submission: you don't just miss discovery — you let unrelated tools define the category for you.
+
+**1. The namespace problem is the real urgency driver for MCP submission.** Draw-it MCP (OSS, human draws → Claude analyzes) and Sketch.com MCP (existing design files → AI interaction) both score high in "sketch + MCP" searches. Neither generates anything from JSON. Neither has floor plan elements. Neither is headless. But a developer who finds them may not realize Skissify is a different and more useful thing. The moment Skissify is in the MCP Registry with keywords "hand-drawn JSON sketch floor plan headless", it becomes the ONLY result that matches "I want my AI agent to generate hand-drawn diagrams from data." Zero competition for that exact query. Every day of delay is a day someone else defines "sketch MCP" for the ecosystem.
+
+**2. The floor plan API space is validated but crowded with photo-realistic tools.** Archilogic (enterprise GraphQL API), Apify (text→floor plan image), Maket.ai (AI floor plan creation) — all of these exist and serve legitimate demand. None of them serve the "sketch phase" of design thinking. The EUR 2/mo question becomes: which developer needs a hand-drawn floor plan from JSON? Answer: (a) AI agent builders who generate spatial explanations (e.g., "here's a sketch of the room layout I'm describing"), (b) architects and renovation planners doing quick ideation (not final plans), (c) D&D/game map creators, (d) real estate apps doing "concept sketch" previews. The photo-realistic tools have priced out these use cases — Archilogic is enterprise, Apify charges per credit. Skissify at EUR 2/mo is the only option for the sketch-phase use case at human pricing.
+
+**3. The 2-3% freemium conversion rate sets Skissify's user volume target precisely.** Industry benchmark: 2-3% freemium-to-paid conversion (First Page Sage, 2026). Skissify break-even = 27 Pro subscribers. At 2% conversion: 1,350 free users needed. At 3% conversion: 900 free users. A Hacker News "Show HN" can drive 500-2,000 signups in 24 hours — meaning a single successful HN post takes Skissify to break-even or beyond. The first 90 days strategy should be: one high-quality launch on HN that gets enough free users → natural 2-3% convert to EUR 5/mo Pro → break-even achieved before any marketing spend. This is NOT aspirational — it's the industry baseline. The product needs to be good enough to trigger the "first successful API call" aha moment within 5 minutes of signup.
+
+**4. EUR 2/mo Indie tier is the right psychological entry point — confirmed by comparison class.** Draw-it MCP: free but does nothing useful for agent builders. Sketch.com MCP: free but macOS-only, requires Sketch license. Archilogic: enterprise pricing. Apify: per-credit variable cost (unpredictable). Napkin AI: $12/mo for SVG export. EUR 2/mo sits in a gap no competitor occupies: "predictable flat rate for a developer building something that needs occasional hand-drawn sketch output." It's cheaper than a Spotify subscription and unlocks a capability none of the free tools provide. The EUR 2/mo is not priced low because the product is weak — it's priced low because the target user (indie dev building an AI pipeline) has been conditioned by the ecosystem to expect either "free (limited)" or "$12+" (pro tools). EUR 2 is psychologically free for a developer who bills at $100+/hr.
+
+---
+
+#### EUR 2/mo Trigger Analysis — Run #137 Update
+
+Three new trigger signals from this run:
+
+- **Draw-it MCP comparison**: A developer who finds Draw-it MCP hoping to make their agent "draw" something will be confused — it requires a human to draw. The trigger moment for EUR 2/mo Skissify: "I want the agent to draw, not me." This is a specific emotional inflection point that should be in the marketing copy.
+- **Archilogic / Apify comparison**: Professional floor plan APIs exist but are enterprise-priced or per-credit variable. EUR 2/mo Skissify is "I need floor plan sketches in my pipeline and I don't want to think about billing." Flat-rate predictability is a feature for developers.
+- **2-3% conversion baseline**: The system works if the product works. The single most important engineering investment is reducing time-to-first-successful-API-call to under 2 minutes. Everything else (conversion, MRR, growth) follows from that.
+
+---
+
+## Update: 2026-04-04 — Strategy Run #136 (Saturday April 4, Stockholm — Afternoon)
+
+### Theme: Inverse-Competitor Emerges (Sketch2Scheme); Developers Independently Build Skissify's Use Case (Prompt2Sketch); 77% of Top SaaS Now Consumption-Based; MCP Adding Image Media Type = SVG Opportunity
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #136 Synthesis
+
+Two new discoveries this run sharpen the willingness-to-pay thesis from opposite directions. **Sketch2Scheme** (free, hand-drawn photo → digital SVG) proves developers value the hand-drawn ↔ digital conversion, but does the *opposite* of what Skissify does. **Prompt2Sketch** (experimental, open-source, local tldraw + MCP) proves developers are independently hacking together the exact Skissify workflow — which means the demand is real and the pain is real, but the solution they've built is rough. Skissify is the polished, cloud-hosted, production-ready version of what developers want.
+
+**1. Sketch2Scheme proves hand-drawn aesthetics have search demand — Skissify must own "generate, not digitize."** Sketch2Scheme is free and does something visually similar to Skissify's output (hand-drawn diagrams). But it reads *existing* hand-drawn sketches; Skissify *creates* them from data. The distinction is foundational: Sketch2Scheme is for humans who already sketched something; Skissify is for AI agents that need to sketch something. The EUR 2/mo is paid not for the aesthetic — it's paid for the programmatic generation. A developer whose AI pipeline needs to produce a floor plan sketch from structured data cannot use Sketch2Scheme. There is no substitute.
+
+**2. Prompt2Sketch is the warm market signal Skissify needed.** A developer independently built a tldraw + MCP system to generate diagrams from prompts locally. This confirms: (a) developers want AI-generated diagrams via MCP, (b) they're willing to build it themselves if no solution exists, (c) the local DIY solution is messy (no hand-drawn, no floor plan elements, no cloud API, experimental). Skissify's EUR 2/mo is the "I'll pay to not build this myself" decision. The willingness-to-build is proxy for willingness-to-pay. Reach the Prompt2Sketch audience — they are the warmest possible lead.
+
+**3. 77% consumption-based pricing (not 43%) — the structural margin story IS the pricing story now.** The 77% figure confirms that usage-based billing is simply table stakes. The pricing page should not lead with "hybrid model" (everyone has one). It should lead with **performance**: "sub-100ms, no GPU, no Chromium — every render beyond your plan is near-100% margin, and we pass that efficiency to you." Skissify's Canvas 2D architecture is a cost moat. No Chromium-based competitor can match EUR 0.005/render at any scale without subsidizing losses.
+
+**4. MCP adding image/video/audio media types = Skissify SVG as a first-class MCP return value.** The 2026 MCP roadmap explicitly includes image and media type support. Today, Skissify returns a URL or base64 SVG as text. When MCP adds native image types, Skissify can return `svg` as a media object — the sketch appears inline in the agent's context window, rendered by the MCP client. This is the "aha moment" for any developer: ask Claude to design a floor plan, Claude calls Skissify MCP, the SVG renders directly in the chat. No download, no URL, no browser tab. Implement this on day one of MCP media type availability.
+
+---
+
+#### EUR 2/mo Trigger Analysis — Run #136 Update
+
+The core trigger remains: **integration creates identity.** New supporting evidence from Run #136:
+
+- **Sketch2Scheme comparison**: Free tool exists for "hand-drawn + digital" — but completely different direction (scan, not generate). The EUR 2/mo trigger is specifically "my agent can now draw for me" — no free substitute for this.
+- **Prompt2Sketch comparison**: A developer who built Prompt2Sketch locally paid with hours of their time. EUR 2/mo is a rational "buy not build" decision for the same outcome, better quality, cloud-hosted.
+- **77% UBP adoption**: Developers have normalized "subscription + usage" — no friction in the billing model itself.
+- **MCP media types**: When SVGs render inline in MCP clients, the "aha moment" triggers immediately in the demo. Build the demo for this before the protocol ships.
+
+**The single most powerful conversion trigger**: A live "try it in Claude" button on the homepage that calls the Skissify MCP tool and renders a floor plan SVG in the chat window. This removes all friction between "I've heard of Skissify" and "I understand why I'd pay EUR 2/mo."
+
+---
+
 ## Update: 2026-04-04 — Strategy Run #135 (Saturday April 4, Stockholm — Midday)
 
 ### Theme: Figma Make Goes Deep on Design Systems; InfraSketch Emerges as SEO Competitor; Hybrid Pricing Hits 43% Market Adoption; EUR 2/mo Remains Correct as Entry Hook
