@@ -2,6 +2,74 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #141 (Saturday April 4, 2026 — Evening Cycle)
+
+### Status: 4 new entries / updates. KEY FINDINGS: **tldraw raised $10M Series A (April 2025), total $14.1M — Google/DeepMind partnership confirmed building AI canvas tools; this is the highest-funded competitor in the space and is investing in interactive AI canvas, not headless.** **Eraser.io — confirmed active competitor at $10-25/user/mo — AI co-pilot for code+diagram, private Git repo integration, 5 diagram types; targets engineering teams, not agents; no hand-drawn, no JSON schema, no MCP.** **MCP donated to Linux Foundation (AAIF, December 2025) — now a true open standard backed by OpenAI, Microsoft, Google, Amazon, Anthropic; 97M SDK downloads; enterprise Year 2026 confirmed.** **Credit model adoption up 126% YoY — but 78% of IT leaders report unexpected overage charges = flat EUR 2/mo is a trust signal, not a limitation.** **MCP Registry submission CRITICAL RED — 42nd consecutive run unconfirmed.**
+
+---
+
+### tldraw Series A + Google Partnership — Highest-Funded Competitor (THREAT UPDATE)
+
+**Sources**: [tldraw Series A announcement](https://tldraw.dev/blog/announcing-tldraw-series-a), [Google AI showcase — tldraw](https://ai.google.dev/showcase/tldraw), verified 2026-04-04
+
+**New data**: tldraw raised a **$10M Series A** (April 2025, led by Lux Capital + Definition). Total raised: **~$14.1M**. Investors include Sequoia, AI Futures Fund, Preston-Werner Ventures. Built `computer.tldraw.com` with **Google DeepMind using Gemini 1.5/2.0 Flash** — natural language → visual programming canvas. "Make Real" converts hand-drawn content to functional components via GPT/Gemini. SDK 4.0+ commercial license: **$6,000/year**.
+
+**Why it matters for Skissify**: tldraw is moving toward "AI-native interactive canvas" — with Google's compute resources and Gemini integration. This means tldraw is doubling down on the interactive/collaborative direction, NOT headless. The $6K/year SDK license creates a price cliff that pushes solo devs and agent builders away. Skissify's EUR 2/mo vs. tldraw's $6K/year is a 36,000x price difference for different audiences — but tldraw's brand gravity in the developer community is real and funded.
+
+**Threat assessment: MEDIUM-HIGH — highest-funded competitor; but investing in interactive AI canvas, not headless rendering; price cliff ($6K/year) protects Skissify's developer segment; Google partnership means visual AI is mainstream, validates the category; tldraw will not descend to EUR 2/mo API territory**
+
+---
+
+### Eraser.io — AI Co-Pilot for Technical Diagrams, $10-25/user/mo (NEW ENTRY)
+
+**Sources**: [eraser.io/pricing](https://www.eraser.io/pricing), [eraser.io/product/ai-diagrams](https://www.eraser.io/product/ai-diagrams), verified 2026-04-04
+
+**What it is**: AI-native technical diagramming tool combining markdown editor + canvas + diagram-as-code. Generates flowcharts, ER diagrams, cloud architecture diagrams, sequence diagrams, BPMN from natural language or code. Integrates with GitHub, Confluence, Notion — can generate diagrams from **private Git repos**. Pricing: Free (5 files, 10 AI runs/month) | Starter $10/member | Business $25/member (SAML SSO). Data never used for model training. No MCP. No hand-drawn aesthetic. No JSON schema input. No architectural spatial elements (no doors, windows, dimensions). Web UI only.
+
+**Why it matters for Skissify**: Eraser.io is the closest "AI + technical diagrams" competitor targeting engineering teams. Its $10-25/seat pricing confirms the market pays for AI diagram tools. However, Eraser targets team collaboration (GitHub sync, Confluence integration) while Skissify targets agent pipelines (HTTP call → SVG). Eraser requires a human to prompt it; Skissify is called by agents. The use cases are complementary, not identical. Key SEO/positioning gap: "Eraser.io vs Skissify" is a legitimate comparison page to write — Eraser for human-driven flowcharts, Skissify for agent-driven hand-drawn spatial diagrams.
+
+**Threat assessment: MEDIUM — validates the technical diagram AI market; different user (human team vs. agent pipeline); no overlap in hand-drawn spatial use case; creates SEO comparison opportunity; their $10-25/seat pricing confirms Skissify EUR 2/mo is well below the market floor**
+
+---
+
+### MCP Donated to Linux Foundation (AAIF) — Open Standard Confirmed (ECOSYSTEM UPDATE)
+
+**Sources**: [MCP ecosystem 2026 — Apify](https://use-apify.com/blog/mcp-standard-ecosystem-2026), [CData — 2026 Year of Enterprise MCP](https://www.cdata.com/blog/2026-year-enterprise-ready-mcp-adoption), [2026 MCP Roadmap](http://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/), verified 2026-04-04
+
+**Status**: In December 2025, Anthropic donated MCP to the **Agentic AI Foundation (AAIF)** under the Linux Foundation — now a neutral open standard. Adoption: OpenAI Agents SDK, Microsoft Copilot, Google Gemini, Amazon Bedrock, HuggingFace all standardized on MCP. **97M SDK downloads**. 2026 roadmap focus: streamable HTTP at scale, enterprise audit trails, SAML auth, gateway patterns, Tasks primitive improvements.
+
+**Why it matters for Skissify**: MCP being under Linux Foundation means it cannot be locked to one vendor — it is the permanent standard for agent tool calling. Enterprise adoption is accelerating with SSO, audit trail, and gateway requirements. Skissify's MCP server should explicitly target enterprise gateway compatibility (stateless, no persistent session, standard auth headers). The 97M download signal means MCP tooling is now "real infrastructure" — being indexed in the MCP ecosystem has compounding SEO and discovery value. Urgency to submit is now maximum: the enterprise wave is starting.
+
+**Ecosystem implication: MCP Registry submission is no longer a "nice to have" — it is the primary agent discovery mechanism for enterprise tooling in 2026.**
+
+---
+
+### Credit Model Adoption + Flat Pricing Trust Signal (PRICING INTELLIGENCE)
+
+**Sources**: [AI pricing in 2026 — Valueships](https://www.valueships.com/post/ai-pricing-in-2026), [State of SaaS pricing — Growth Unhinged](https://www.growthunhinged.com/p/2025-state-of-saas-pricing-changes), verified 2026-04-04
+
+**Data**: Credit/usage model adoption up **126% YoY** (79/500 tracked SaaS products, up from 35 in late 2024). But: **78% of IT leaders report unexpected overage charges** on consumption-based models. This creates documented trust friction. The dominant winning pattern is **hybrid flat base + optional usage variable**.
+
+**Implication for Skissify**: EUR 2/mo flat is now a *trust signal*, not a pricing limitation. Position as: "No surprise bills. EUR 2/mo, period. Up to 1,000 renders." The documented 78% IT leader overage frustration is Skissify's anti-Chromium moment for pricing — it's a concrete industry number that makes flat pricing feel safe. Add this to the pricing page: "No credit systems. No surprise overage bills. Just EUR 2/mo."
+
+---
+
+### Updated Competitor Matrix (Run #141 — Saturday April 4, 2026 — Evening)
+
+| Tool | Funding/Scale | Headless JSON→SVG | Hand-drawn | MCP | Threat |
+|------|--------------|-------------------|------------|-----|--------|
+| **tldraw (April 2026)** | $14.1M raised, Google/DeepMind partnership | Partial (interactive canvas) | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Eraser.io** | Active (no public funding) | NO (web UI only) | NO | NO | **MEDIUM (SEO + team diagram segment)** |
+| **Excalidraw+ (2026)** | OSS, $6-7/user/mo | NO (canvas-dependent) | YES | YES (interactive canvas) | **CRITICAL (brand)** |
+| **tldraw-render-mcp (bassimeledath)** | Community project | YES (Chromium, 5-8s cold) | NO | YES (local) | **MEDIUM** |
+| **excalidraw-render** | Community project | YES (Chromium required) | YES | NO | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | Established tool | YES (XML/CSV/Mermaid) | NO | YES | **MEDIUM-HIGH** |
+| **Figma MCP** | $15-45/user/mo | YES (Figma native) | NO | YES | **MEDIUM** |
+| **SketchWow** | $49 lifetime | NO | YES (human GUI) | NO | **LOW (pricing anchor)** |
+| **Skissify** | Pre-revenue, solo | YES (Canvas 2D, no Chromium) | YES (tunable) | YES (unsubmitted) | — |
+
+---
+
 ## Update: 2026-04-04 — Strategy Run #140 (Saturday April 4, 2026 — Morning Cycle)
 
 ### Status: 4 new entries / updates. KEY FINDINGS: **tldraw-render-mcp (bassimeledath) — headless tldraw MCP renderer confirmed on LobeHub; requires Chromium singleton, 5-8s cold start, ~100ms warm; same author as excalidraw-render; Skissify's no-Chromium, sub-100ms-always advantage is now a concrete spec gap, not an abstract claim.** **Excalidraw 2026 feature push: BYOK AI tokens (OpenAI/Claude/Gemini/OpenRouter), Mermaid ERD, Slide Templates, Radar Charts, YouTube embeds, Presenter Waiting Room; MCP App in Claude/Cursor/VSCode/ChatGPT — interactive canvas only, not headless.** **SketchWow $49 lifetime deal confirmed active** — human-facing hand-drawn tool, no API/MCP/JSON, but $49 one-time pricing is a psychological benchmark for Skissify's own lifetime deal positioning. **Sketch MCP Server (mater1996) confirmed: design-file-to-code, not a sketch generator** — reads Sketch design files and renders SVGs; no overlap with Skissify's generation use case; SEO/namespace collision risk confirmed. **MCP Registry submission CRITICAL RED — 41st consecutive run unconfirmed.**

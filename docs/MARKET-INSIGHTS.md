@@ -2,6 +2,60 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #141 (Saturday April 4, 2026 — Evening)
+
+### Theme: Flat EUR 2/mo Is a Trust Signal (Not a Limitation); tldraw's $14M + Google Validates the Category; Eraser.io Defines the "Human-AI Diagram" Segment Skissify Should Not Fight; MCP Is Permanent Infrastructure
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #141 Synthesis
+
+**New this run: three compounding signals — tldraw's $14M funding validates the visual AI category; 78% IT leader overage distrust makes flat pricing a competitive feature; Eraser.io at $10-25/seat confirms Skissify is priced well below all team-facing alternatives.**
+
+**Trigger 5 (NEW): "I know tldraw costs $6,000/year for a license — EUR 2/mo is not a price I need to justify"**
+tldraw's $6K/year commercial SDK license is now documented and controversial. Developers who've priced out tldraw for embedded use see EUR 2/mo as in a completely different category. The mental math: tldraw SDK = $500/month for one developer team; Skissify = EUR 2/month for one developer's agent pipeline. Even if Skissify does 10% of what tldraw can do, the price-to-value ratio is 250:1. tldraw's price controversy (widely discussed in the community since SDK 4.0) creates a permanent negative association with commercial sketch tool licensing. Skissify benefits passively from this every time a developer googles "tldraw alternative cheaper."
+
+**Trigger 6 (NEW): "No credit systems, no surprise bills — just EUR 2/mo"**
+78% of IT leaders report unexpected overage charges on consumption-based billing. This is not a marginal concern — it is the majority experience with credits-based SaaS. Flat EUR 2/mo pricing is a trust signal. The pitch is: "We don't have credit systems. We don't have overage charges. 1,000 renders per month. EUR 2. That's it." For developers integrating Skissify into an agent pipeline, unpredictable billing is worse than a slightly higher flat rate. EUR 2 flat is safer than any credits-based alternative. Add to pricing page: **"No credits. No surprises. EUR 2/month, flat."**
+
+**Trigger 7 (NEW): "MCP is now under Linux Foundation — this is permanent infrastructure"**
+MCP's donation to the Linux Foundation (AAIF, December 2025) changes the calculus for developers choosing which tools to integrate. MCP is no longer a bet on Anthropic staying relevant — it is the open standard that OpenAI, Google, Microsoft, Amazon, and HuggingFace all committed to. A developer choosing to build on MCP tooling is making a safe, standards-based choice. Skissify's MCP server sits on permanent infrastructure. The pitch: "Skissify is in the MCP ecosystem — the same open standard used by every major AI platform. Your agents call Skissify the same way they call any other tool."
+
+**Trigger 8 (NEW): "Eraser.io charges $25/seat for my team to make diagrams — Skissify charges EUR 2/mo for my agent to make 1,000 sketches"**
+Eraser.io's Business tier at $25/user/month (unlimited AI, GitHub sync, SAML SSO) confirms the market pays premium for AI diagram tools. But Eraser requires human attention — you prompt it, it generates a flowchart, you review it. Skissify is the opposite: your agent calls it, it returns SVG, the agent continues. EUR 2/mo for what Eraser would charge $25+/user for if it could even do it — and Eraser cannot, because it has no headless API. "My Eraser license costs $25/month to let me make diagrams. Skissify costs EUR 2/month to let my Claude agent make 1,000 sketches while I sleep."
+
+**Updated payment trigger hierarchy (all 8 triggers):**
+1. Sub-100ms vs 5-8s Chromium cold start — pipeline viability
+2. SketchWow $49 one-time vs EUR 2/mo + agent-callable — value comparison
+3. Excalidraw investing in interactive features, not headless — structural gap widens
+4. EUR 2/mo below "expense report threshold" — impulse purchase
+5. tldraw $6K/year SDK vs EUR 2/mo — price category perception *(NEW)*
+6. No credits/no surprise bills — flat pricing as trust signal *(NEW)*
+7. MCP open standard under Linux Foundation — safe long-term bet *(NEW)*
+8. Eraser.io $25/seat vs EUR 2/mo for agents — team tool vs. agent tool *(NEW)*
+
+**The payment decision is now supported by 8 compounding triggers. Each new trigger adds a conversion pathway from a different developer persona.**
+
+---
+
+#### Pricing Competitive Position — Run #141 Update
+
+| Tool | Price | Model | Headless API | Hand-drawn | Agent-callable |
+|------|-------|-------|-------------|------------|----------------|
+| tldraw SDK | $6,000/year | Commercial license | Partial (interactive) | NO | SDK embedding only |
+| Eraser.io Business | $25/user/month | Per seat | NO | NO | NO |
+| Excalidraw+ | $6-7/user/month | Per seat | NO | YES | Interactive canvas only |
+| tldraw-render-mcp | Free (self-host) | DIY | YES (Chromium, 5-8s cold) | NO | Local MCP only |
+| excalidraw-render | Free (self-host) | DIY | YES (Chromium required) | YES | Local only |
+| SketchWow | $49 one-time | Lifetime | NO | YES | NO |
+| **Skissify Pro** | **EUR 2/mo flat** | **Flat, no credits** | **YES (no Chromium, sub-100ms)** | **YES (tunable)** | **YES (hosted API + MCP)** |
+
+Skissify remains the only tool that is: headless, hand-drawn, agent-callable, hosted, flat-priced, and under EUR 5/mo.
+
+**Sources:** [tldraw Series A](https://tldraw.dev/blog/announcing-tldraw-series-a), [Eraser pricing](https://www.eraser.io/pricing), [MCP ecosystem 2026 — Apify](https://use-apify.com/blog/mcp-standard-ecosystem-2026), [AI pricing 2026 — Valueships](https://www.valueships.com/post/ai-pricing-in-2026), [State of SaaS pricing — Growth Unhinged](https://www.growthunhinged.com/p/2025-state-of-saas-pricing-changes)
+
+---
+
 ## Update: 2026-04-04 — Strategy Run #140 (Saturday April 4, 2026)
 
 ### Theme: Chromium Cold-Start Is the Concrete Gap; SketchWow $49 Anchors Lifetime Deal Pricing; Excalidraw Feature Velocity = Ecosystem Lock-in Risk; EUR 2/mo Positioned Below All Human-Facing Alternatives

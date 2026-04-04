@@ -236,8 +236,9 @@ function renderElement(sketch: SketchData, el: SketchElement, defaultColor: stri
 
   switch (el.type) {
     case "line": {
-      if (el.wallWidth && el.wallWidth > 0) {
+      if (el.wallWidth && el.wallWidth > 0 && sketch.renderStyle !== "napkin") {
         // ── Wall rendering: two parallel wobble lines with filled interior ──
+        // Napkin mode: skip double-line walls — render as simple single lines
         const { x1, y1, x2, y2, wallWidth } = el;
         const hw = wallWidth / 2;
         const dx = x2 - x1, dy = y2 - y1;
@@ -851,12 +852,21 @@ function renderBlueprintOverlay(W: number, H: number, meta?: BlueprintMetadata):
     parts.push(`<text x="${tx + 6}" y="${ty + 3 * rowH + 14}" font-family="Georgia, serif" font-size="7" fill="${wc}">BY: ${escapeXml(drawnBy)}</text>`);
   }
 
-  // North arrow
-  const nax = tx - 22;
-  const nay = H - 44;
-  parts.push(`<line x1="${nax}" y1="${nay - 12}" x2="${nax}" y2="${nay + 12}" stroke="${wc}" stroke-width="0.5"/>`);
-  parts.push(`<line x1="${nax - 4}" y1="${nay}" x2="${nax + 4}" y2="${nay}" stroke="${wc}" stroke-width="0.5"/>`);
-  parts.push(`<text x="${nax}" y="${nay - 17}" font-family="Georgia, serif" font-size="7" font-weight="bold" fill="${wc}" text-anchor="middle">N</text>`);
+  // North arrow — classic architectural diamond needle
+  const nax = tx - 28;
+  const nay = H - 50;
+  const nR = 16;
+  const nW = 5;
+  // Circle background
+  parts.push(`<circle cx="${nax}" cy="${nay}" r="${nR + 4}" fill="none" stroke="${wl}" stroke-width="0.5"/>`);
+  // North half of diamond (filled solid)
+  parts.push(`<polygon points="${nax},${nay - nR} ${nax + nW},${nay} ${nax},${nay} ${nax - nW},${nay}" fill="${wc}" stroke="none"/>`);
+  // South half of diamond (outlined only)
+  parts.push(`<polygon points="${nax},${nay + nR} ${nax + nW},${nay} ${nax},${nay} ${nax - nW},${nay}" fill="none" stroke="${wc}" stroke-width="0.5"/>`);
+  // Thin center shaft
+  parts.push(`<line x1="${nax}" y1="${nay - nR}" x2="${nax}" y2="${nay + nR}" stroke="${wl}" stroke-width="0.3"/>`);
+  // "N" label
+  parts.push(`<text x="${nax}" y="${nay - nR - 3}" font-family="Georgia, serif" font-size="8" font-weight="bold" fill="${wc}" text-anchor="middle" dominant-baseline="auto">N</text>`);
 
   // Scale bar
   const sbx = 24;

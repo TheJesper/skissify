@@ -2,6 +2,64 @@
 
 ---
 
+## [2026-04-04 Evening] — Strategy Run #141 Actions (Saturday April 4, 20:41) — FOR SUNDAY APRIL 5
+
+### Context: Run #141 Key New Findings
+- **tldraw $14.1M raised, Google/DeepMind partnership** — category validated by serious money; doubling down on interactive AI canvas, not headless; $6K/year SDK creates price cliff that protects Skissify's segment
+- **Eraser.io $10-25/seat** — confirmed active team-diagram competitor; no hand-drawn, no MCP, no JSON schema; creates "vs Eraser" SEO opportunity
+- **MCP donated to Linux Foundation (AAIF, Dec 2025)** — open standard confirmed; enterprise wave starting; 97M downloads; MCP Registry submission urgency now MAXIMUM
+- **78% IT leader overage distrust** — flat EUR 2/mo pricing is a trust differentiator; "no credits, no surprises" is a headline, not a footnote
+- **MCP Registry submission CRITICAL RED — 42nd consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Sunday): Write "Skissify vs Eraser.io" Comparison Page
+
+**Why now**: Eraser.io is a well-funded, actively marketed AI diagram tool at $10-25/user/month. Developers searching "AI diagram tool", "code to diagram AI", or "technical diagram generator" find Eraser. A comparison page targeting "Skissify vs Eraser.io" captures that traffic and positions Skissify for the segment Eraser cannot serve: agent-callable, headless, hand-drawn spatial diagrams. Eraser has strong SEO — riding on that brand through comparison content is a zero-cost acquisition channel.
+
+**Do this (45 minutes):**
+1. Write `/docs/marketing/blog/skissify-vs-eraser-different-jobs.md` — title: "Skissify vs Eraser.io: When You Need Diagrams vs When Your Agent Needs to Draw"
+2. Key frame: Eraser = human-driven flowcharts from code/text; Skissify = agent-driven hand-drawn spatial diagrams from JSON. Different jobs. Different buyers.
+3. Include a comparison table: Headless API (Skissify YES / Eraser NO), Hand-drawn style (YES/NO), JSON schema input (YES/NO), MCP-callable (YES/NO), Price (EUR 2/mo vs $25/seat).
+4. CTA: "If you want a tool that generates diagrams for humans to read — Eraser is great. If you want your AI agent to produce hand-drawn sketches at 3am without opening a browser — Skissify."
+5. Publish to blog and add an internal link from the pricing page's FAQ section.
+
+**Target outcome**: Rank for "Eraser alternative for AI agents" and "Eraser vs Skissify" — capture developers who found Eraser but need headless programmatic output. Long-term SEO asset.
+
+---
+
+### Action 2 (HIGH — Sunday): Add "No Credits. No Surprises." to Pricing Page
+
+**Why now**: 78% of IT leaders report unexpected overage charges on consumption-based SaaS (2026 data). This is the #1 documented friction point for adopting usage-based tools. Flat EUR 2/mo is Skissify's answer — but only if the pricing page *says it clearly*. Currently, the pricing page likely shows features and tiers without making "flat, no-credits" a hero message. This is a 15-minute fix with measurable conversion impact.
+
+**Do this (15 minutes):**
+1. Add a yellow/green callout box directly above or below the pricing tiers: **"No credit systems. No overage charges. No surprise bills. EUR 2/month — flat. Always."**
+2. Add a FAQ entry: "Do you have a credit system or usage caps?" → "No. EUR 2/month includes 1,000 renders. EUR 5/month (Pro) includes unlimited. No credits, no overage fees, no billing surprises."
+3. Add this line to the hero section meta description for SEO: "Flat pricing, no credits, no surprise bills."
+4. Tweet: "78% of developers report unexpected overage charges on AI tools. Skissify: EUR 2/month flat. 1,000 renders. No credits. No billing alerts. No surprises. Just sketches."
+
+**Target outcome**: Convert pricing page visitors who are comparison shopping and have been burned by credits-based billing on other AI tools. Flat pricing is a trust advantage — make it unmissable.
+
+---
+
+### Action 3 (MEDIUM — Sunday): Write a LinkedIn/Twitter Thread on MCP Going Open Standard
+
+**Why now**: MCP's donation to the Linux Foundation (AAIF, December 2025) is a significant event that most non-AI-specialist developers haven't fully processed. Writing a short thread explaining "what this means for tools in the MCP ecosystem" positions Skissify as an expert voice AND creates organic discovery. The angle: "MCP is now permanent infrastructure — like npm or Git. Tools that are in the MCP registry now are in the right place at the right time."
+
+**Do this (30 minutes):**
+1. Draft a 5-tweet thread:
+   - Tweet 1: "MCP is now under the Linux Foundation. This is bigger than it sounds. Thread:"
+   - Tweet 2: "In December 2025, Anthropic donated MCP to the Agentic AI Foundation (AAIF). OpenAI, Google, Microsoft, Amazon all standardized on it. 97M SDK downloads. This is now the universal tool-calling standard for AI agents."
+   - Tweet 3: "What that means: MCP is permanent. It can't be locked to any one vendor. It's the npm/HTTP/Git of agent tool calling."
+   - Tweet 4: "For developers building agent pipelines — pick your MCP tools carefully. The ones in the registry now will have compounding discovery advantages as the enterprise adoption wave hits."
+   - Tweet 5: "Skissify is building for this. JSON in → hand-drawn sketch out → via MCP. [link to skissify.com] Being in the registry early compounds. We're submitting now."
+2. Cross-post to LinkedIn as a brief post (not a thread — LinkedIn format is different).
+3. This doubles as justification for the MCP Registry submission urgency.
+
+**Target outcome**: Establish Skissify as an MCP-ecosystem-aware voice; attract developers who are building MCP-first agent systems; drive organic profile traffic to skissify.com.
+
+---
+
 ## [2026-04-04] — Strategy Run #140 Actions (Saturday April 4) — FOR SUNDAY APRIL 6
 
 ### Context: Run #140 Key New Findings

@@ -288,20 +288,49 @@ function drawBlueprintOverlay(
     ctx.fillText("BY: " + drawnBy, tx + 6, ty + 3 * rowH + 6);
   }
 
-  // North arrow
-  const nax = tx - 22, nay = H - 44;
+  // North arrow — classic architectural diamond needle
+  const nax = tx - 28, nay = H - 50;
+  const nR = 16; // half-height of diamond
+  const nW = 5;  // half-width (wing) of diamond
+  // Circle background
+  ctx.beginPath();
+  ctx.arc(nax, nay, nR + 4, 0, Math.PI * 2);
+  ctx.strokeStyle = wl;
+  ctx.lineWidth = 0.5;
+  ctx.stroke();
+  // North half of diamond (filled solid)
+  ctx.beginPath();
+  ctx.moveTo(nax, nay - nR);       // north tip
+  ctx.lineTo(nax + nW, nay);       // east midpoint
+  ctx.lineTo(nax, nay);            // center
+  ctx.lineTo(nax - nW, nay);       // west midpoint
+  ctx.closePath();
+  ctx.fillStyle = wc;
+  ctx.fill();
+  // South half of diamond (outlined only)
+  ctx.beginPath();
+  ctx.moveTo(nax, nay + nR);       // south tip
+  ctx.lineTo(nax + nW, nay);       // east midpoint
+  ctx.lineTo(nax, nay);            // center
+  ctx.lineTo(nax - nW, nay);       // west midpoint
+  ctx.closePath();
   ctx.strokeStyle = wc;
   ctx.lineWidth = 0.5;
-  ctx.beginPath();
-  ctx.moveTo(nax, nay - 12);
-  ctx.lineTo(nax, nay + 12);
-  ctx.moveTo(nax - 4, nay);
-  ctx.lineTo(nax + 4, nay);
   ctx.stroke();
+  // Thin center shaft
+  ctx.beginPath();
+  ctx.moveTo(nax, nay - nR);
+  ctx.lineTo(nax, nay + nR);
+  ctx.strokeStyle = wl;
+  ctx.lineWidth = 0.3;
+  ctx.stroke();
+  // "N" label
   ctx.fillStyle = wc;
-  ctx.font = "bold 7px Georgia, serif";
+  ctx.font = "bold 8px Georgia, serif";
   ctx.textAlign = "center";
-  ctx.fillText("N", nax, nay - 15);
+  ctx.textBaseline = "bottom";
+  ctx.fillText("N", nax, nay - nR - 2);
+  ctx.textBaseline = "top";
 
   // Scale bar
   ctx.strokeStyle = wl;
@@ -473,8 +502,9 @@ function renderElement(
 
   switch (el.type) {
     case "line": {
-      if (el.wallWidth && el.wallWidth > 0) {
+      if (el.wallWidth && el.wallWidth > 0 && sketch.renderStyle !== "napkin") {
         // ── Wall rendering: two parallel wobble lines with filled interior ──
+        // Napkin mode: skip double-line walls — render as simple single lines
         const { x1, y1, x2, y2, wallWidth } = el;
         const hw = wallWidth / 2;
         // Perpendicular unit vector
