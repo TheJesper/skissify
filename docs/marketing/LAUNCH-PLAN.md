@@ -1,7 +1,76 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 138**
+**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 139**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 139 — Day 5 Cognitive Hooks + New Platforms)
+
+### Cycle 139 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 139 ("two audiences" angle — explore mode vs critique mode, perceived completeness cognitive science, two-column feedback comparison table, AI agent spatial reasoning bonus) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle139.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 139 ("spec-to-space pattern" — text spec to spatial visual as first-class output, three connection options (MCP/REST/human), five real use cases (apartment, office, architecture, DnD, sprint boards), determinism/versioning advantage) | `blog/how-ai-agents-draw-floor-plans-cycle139.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 139 ("right tool for right moment" — explore mode vs API generation, 14-row feature table, 3 scenarios, two-stage workflow pattern, AI-native distinction) | `blog/skissify-vs-excalidraw-comparison-cycle139.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 139 — 6 new viral hooks: "two audiences" cognitive hook (Twitter/LinkedIn thread), r/ExperiencedDevs spec-to-space pattern, YouTube Shorts floor plan demo script, r/Notion+r/ObsidianMD productivity angle, Mastodon/Fediverse developer posts (2 toots), LinkedIn carousel Skissify vs Excalidraw (7 slides). New platforms: r/ExperiencedDevs, YouTube Shorts, Mastodon, r/Notion, r/ObsidianMD. New hashtags: #AIWorkflow #VibeCoding #SketchFirst #AgentTools #SpatialAI #MicroSaaS. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 139 — Added: one-liner, 4 taglines by audience, 50-word boilerplate, 100-word boilerplate, founder bio, 10-item screenshots checklist, Day 5 status table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 139 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 139 — Priority Actions (April 5–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — absolute final window | 30s YouTube Shorts script in Cycle 139 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ExperiencedDevs** (1.2M) — NEW Cycle 139 | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 2) |
+| **POST Mastodon** (fosstodon + hachyderm) — NEW Cycle 139 | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 5) |
+| **POST r/Notion** (580K) — NEW Cycle 139 | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/ObsidianMD** (200K) — NEW Cycle 139 | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 4) |
+| **POST LinkedIn carousel** (Skissify vs Excalidraw 7 slides) — NEW Cycle 139 | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Twitter "two audiences" thread** — NEW Cycle 139 | P1 | TODAY | Copy in Cycle 139 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/MachineLearning** (4.1M) — Cycle 138, still unposted | P0 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/softwareengineering** (600K) — Cycle 138, still unposted | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 3) |
+| **SUBMIT Dev Hunt** — Cycle 138, still unsubmitted | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 5) |
+| **POST r/entrepreneur** (2.5M) — Cycle 138, still unposted | P1 | TODAY | Copy in Cycle 138 SOCIAL-MEDIA.md (Hook 6) |
+| **SUBMIT to MCP directories** (5 sites) — Cycle 137, still unsubmitted | P0 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/webdev** (2.1M) — Cycle 137, still unposted | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/ProductManagement** (1.8M) — Cycle 137, still unposted | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/DnD** (3.2M) — Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/cursor** — Cycle 136, still unposted | P1 | TODAY | Copy in Cycle 136 SOCIAL-MEDIA.md (Hook 1) |
+| **PUBLISH 3 Cycle 139 blogs to Dev.to** | P0 | TODAY staggered 09:00/12:00/15:00 CET | |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 4) |
+| **POST HN Ask HN / Show HN** | P1 | MONDAY April 7, 08:00 CET | Both drafts in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 139 — New Ideas
+
+**Idea: The "cognitive modes" framing (explore vs critique) is the strongest intellectual hook Skissify has.** It's not a feature claim — it's a research-backed insight that design teams can apply immediately. Posts with this frame will earn shares from people who've never heard of Skissify, because the insight is valuable on its own. "Perceived completeness" is a real concept in design research and it makes for compelling Twitter threads.
+
+**Idea: r/ExperiencedDevs is the highest-signal developer subreddit that hasn't been targeted.** Unlike r/programming (very large, more noise), r/ExperiencedDevs maintains a high bar for discussion quality. The spec-to-space pattern is a genuine workflow innovation that this community will engage with critically and constructively. The post is framed as a discovery/question, not a promotion.
+
+**Idea: Mastodon is systematically undercovered in indie product launches.** fosstodon.org (FOSS/open-source community) and hachyderm.io (tech professionals) have high engagement-per-follower ratios because there's no algorithm suppression. Two short toots (no threading required) will reach a technical audience that doesn't see most Product Hunt-style launches.
+
+**Idea: Notes app communities (r/Notion, r/ObsidianMD) represent an untapped wedge audience.** These users are already AI-workflow-forward, they're building personal knowledge systems, and they want visual artifacts embedded in their notes. The /human endpoint solves an exact problem they have: "I want a rough layout in my note without opening a design tool." The post is framed as a workflow share, not a product announcement.
+
+**Idea: LinkedIn carousels are the highest-engagement post format for B2B tool comparison content.** The Skissify vs Excalidraw comparison maps perfectly to a 7-slide carousel. This format gets shared by design leads and engineering managers who want to send "read this" to their teams — which means it spreads into Slack channels and email threads that social algorithms never reach.
+
+**Idea: #SketchFirst is a coinable term with category-defining potential.** If Skissify can establish "sketch first, then design" as a named workflow practice (like "mobile first"), the hashtag becomes a persistent discovery channel. It costs nothing to use it consistently and it's currently unclaimed. Start every post with the workflow frame, not just the tool.
+
+### Cycle 139 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle139.md | DONE Cycle 139 |
+| Blog: how-ai-agents-draw-floor-plans-cycle139.md | DONE Cycle 139 |
+| Blog: skissify-vs-excalidraw-comparison-cycle139.md | DONE Cycle 139 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update + new platforms (r/ExperiencedDevs, YouTube Shorts, Mastodon, r/Notion, r/ObsidianMD) + hashtag additions | DONE Cycle 139 |
+| PRESS-KIT.md — one-liner, taglines, boilerplates, founder bio, screenshots checklist, Cycle 139 day-5 status table | DONE Cycle 139 |
+| LAUNCH-PLAN.md — Cycle 139 block | DONE Cycle 139 |
 
 ---
 

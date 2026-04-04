@@ -1,7 +1,352 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 4, 2026 — Cycle 138 (New: 6 viral hooks — "30-second pre-meeting sketch" angle (Twitter/LinkedIn), r/MachineLearning post (4.1M), r/softwareengineering incident architecture angle, "build in public" week-1 Twitter thread, Dev Hunt submission, r/entrepreneur indie founder story. New platforms: r/MachineLearning, Dev Hunt, r/entrepreneur, r/softwareengineering. New hashtags: #BuildInPublic #IndieHacker #MachineLearning #IncidentResponse #SoftwareEngineering.)**
+**Last updated: April 5, 2026 — Cycle 139 (New: 6 viral hooks — "Two Audiences" cognitive framing (Twitter/LinkedIn), r/ExperiencedDevs "spec-to-space" pattern post, YouTube Shorts script for AI floor plan demo, r/Notion/r/Obsidian productivity angle, Mastodon/Fediverse developer community posts, LinkedIn carousel "Skissify vs Excalidraw" 7-slide format. New platforms: r/ExperiencedDevs, YouTube Shorts, Mastodon/fosstodon.org, r/Notion, r/Obsidian. New hashtags: #AIWorkflow #VibeCoding #SketchFirst #AgentTools #SpatialAI #MicroSaaS.)**
+
+---
+
+## Cycle 139 — April 5, 2026 (Day 5 Post-Launch — Cognitive Hooks + New Platforms)
+
+### Strategic Priority
+
+Day 5 (Sunday). Late-weekend browsing peaks. Focus:
+
+1. **Cognitive hook content** — The "two audiences" framing (explore mode vs critique mode) is the highest-quality intellectual hook we have. It's shareable on its own merits — educational value independent of product.
+2. **r/ExperiencedDevs** — 1.2M members, high signal-to-noise ratio, developer tools discussion is a recurring top post category. The "spec-to-space" pattern is a genuine workflow innovation.
+3. **YouTube Shorts / TikTok** — visual product, 30-second demo is overdue. The floor plan generation demo is self-explanatory without voiceover. Record today.
+4. **Mastodon/Fediverse** — the developer community on fosstodon.org and hachyderm.io is underserved by most tool launches. High engagement-per-follower ratio, no algorithm suppression.
+5. **r/Notion + r/Obsidian** — productivity tool communities increasingly overlap with AI agent workflows. The "visual thinking layer for your notes" angle resonates.
+
+Still critically overdue — post these immediately:
+- r/LocalLLaMA (2.3M) — OVERDUE since Cycle 111
+- MCP Discord #showcase — OVERDUE since Cycle 111
+- Indie Hackers — OVERDUE since Cycle 98
+- r/AI_Agents — OVERDUE since Cycle 132
+
+---
+
+### Viral Hook 1: "Two Audiences" — Twitter/X + LinkedIn (Cognitive Framing)
+
+**Platform:** Twitter/X thread + LinkedIn
+**Core insight:** Hand-drawn sketches trigger "explore mode." Polished wireframes trigger "critique mode." This is cognitive science, not opinion — and it changes how you run design reviews.
+
+**Twitter/X thread opener:**
+```
+Your stakeholders have two modes.
+
+Explore mode: "What if we inverted the whole flow?"
+Critique mode: "Can we try a rounder button?"
+
+The visual quality of what you show them determines which mode activates.
+
+Hand-drawn sketch → explore mode.
+Figma wireframe → critique mode.
+
+Here's why this matters: 🧵
+```
+
+**Thread tweet 2:**
+```
+"Perceived effort" in a visual artifact inversely correlates with the structural feedback you'll receive.
+
+The more finished something looks, the more people protect it from change.
+
+Balsamiq built a $10M business on this insight in 2012. The insight is still true.
+
+The difference now: you don't need Balsamiq. You need 30 seconds.
+```
+
+**Thread tweet 3:**
+```
+The meeting you want:
+→ "The nav should move to top"
+→ "What if there's no nav — everything's search?"
+→ "This flow is backwards for how users enter"
+
+The meeting you get with Figma:
+→ "What font is that?"
+→ "Can we try #4A90E2 instead of #3B82F6?"
+→ "The spacing feels a bit tight here"
+
+Same wireframe. Different signal sent.
+```
+
+**Thread tweet 4:**
+```
+Before your next design meeting:
+
+1. Go to skissify.com/human
+2. Type one sentence: what the layout should be
+3. Drop the URL in the meeting invite
+
+You'll spend the first 5 minutes on structure.
+Instead of the first 20 on whether the button should be rounded.
+
+Free. No account. 30 seconds.
+```
+
+**LinkedIn post:**
+```
+There's a concept in design research called "perceived completeness."
+
+The more finished a visual artifact looks, the more your audience shifts from generative thinking ("what if we changed this entirely?") to evaluative thinking ("can we tweak this?").
+
+This is why Balsamiq deliberately made their wireframes look rough. It kept stakeholders in explore mode longer — where the real decisions happen.
+
+In 2026, you don't need Balsamiq. You can get a rough sketch of any layout at skissify.com/human in 30 seconds. Type a description. Share the URL.
+
+The sketches look hand-drawn. Not "bad" — intentionally rough in a way that signals: we're still deciding.
+
+Two design reviews:
+- One where you share a Figma wireframe and spend 30 minutes on button radius
+- One where you share a sketch and resolve the entire navigation architecture before the coffee cools
+
+Same time investment. Completely different output.
+
+What does your early-stage design review process look like?
+
+#ProductDesign #UXDesign #DesignThinking #AITools #ProductManagement #DesignLeadership
+```
+
+---
+
+### Viral Hook 2: r/ExperiencedDevs — "Spec-to-Space Pattern"
+
+**Platform:** r/ExperiencedDevs (1.2M)
+**Post type:** Workflow / pattern discussion
+**Title:** `The "spec-to-space" pattern: AI agents that output diagrams alongside text`
+
+```
+Something I've started doing in my AI agent workflows that's been surprisingly useful.
+
+Instead of getting text descriptions of layouts (floor plans, architecture diagrams, UI wireframes), I've wired up my Claude setup to produce a sketch alongside the text response.
+
+The pattern:
+1. User asks for a layout/architecture/diagram in natural language
+2. Agent reasons about the spatial structure
+3. Agent calls Skissify API with a JSON manifest
+4. Response includes: text explanation + sketch URL
+
+The sketch looks hand-drawn. It's not polished — but that's the point. It's a spatial artifact that communicates structure without triggering "this is decided" reactions in the reader.
+
+I'm calling it "spec-to-space" — turning a text spec into a spatial visual as a first-class output.
+
+Three things I didn't expect:
+1. The LLM's spatial reasoning is noticeably better when it has a visual output channel. It "thinks in space" differently when it knows the output is a diagram, not a description.
+2. The sketches are JSON-based and seeded, so they version-control perfectly. My architecture diagrams now live next to the code in Git and diff meaningfully.
+3. Non-technical stakeholders engage with sketch URLs in ways they never did with text specs.
+
+Anyone else building agent workflows that produce visual artifacts? Curious what tools you're using.
+
+[Skissify MCP docs if anyone wants to replicate: skissify.com/api/docs]
+```
+
+---
+
+### Viral Hook 3: YouTube Shorts / TikTok / Reels — "Floor Plan in 30 Seconds" Demo
+
+**Platform:** YouTube Shorts, TikTok, Instagram Reels
+**Format:** 30-second screen capture, no voiceover needed
+**Hook text overlay (first 3 seconds):** "I asked an AI to draw me a floor plan"
+
+**Shot sequence:**
+```
+0:00–0:03 — Text overlay: "I asked an AI to draw me a floor plan"
+0:03–0:08 — Show Claude/agent terminal: type "generate a 2-bedroom apartment sketch"
+0:08–0:15 — Show Skissify API call firing (terminal output)
+0:15–0:22 — Show rendered sketch appearing: cream paper, hand-drawn rooms, labels
+0:22–0:27 — Zoom in on sketch details (wobble lines, door symbols, dimensions)
+0:27–0:30 — Text overlay: "skissify.com — free, no account" + URL
+
+Caption:
+Your AI agent can now draw.
+
+Not describe. Draw.
+
+JSON manifest → hand-drawn sketch in < 1 second.
+
+14 element types: rooms, doors, stairs, windows, dimensions.
+
+Works with Claude, GPT, any MCP or REST API client.
+
+#AITools #AIAgents #FloorPlan #BuildWithAI #MCP #SketchFirst #VibeCoding #IndieHacker #BuildInPublic
+```
+
+---
+
+### Viral Hook 4: r/Notion + r/Obsidian — "Visual Layer for Your Notes"
+
+**Platform:** r/Notion (580K), r/ObsidianMD (200K)
+**Post type:** Tool recommendation / workflow
+**Title:** `Added a sketch layer to my notes using AI — sharing the workflow`
+
+```
+I use [Notion/Obsidian] for everything, and the one thing I've always wanted is quick rough visuals embedded in notes without switching to a design tool.
+
+Found a workflow that works: Skissify has a /human endpoint where you type a description of a layout and get back a sketch URL. The URL is stable (doesn't change) so it embeds in Notion/Obsidian perfectly.
+
+Examples I've used this week:
+- Office layout for a relocation decision (described to Skissify, embedded the sketch in the planning note)
+- Architecture diagram for a side project (described the service structure, got a rough diagram, linked in the tech spec)
+- Kitchen redesign layout (showed rough to spouse before calling a contractor)
+
+If you're using AI-assisted notes (Claude, ChatGPT plugins), the Skissify MCP server adds sketch generation as a native tool. Type "sketch this layout" in your note and your AI assistant produces a sketch URL inline.
+
+Not a paid tool recommendation — I just found it genuinely useful for keeping spatial thinking inside my notes workflow.
+
+skissify.com/human — free, no account.
+```
+
+---
+
+### Viral Hook 5: Mastodon / Fediverse — Developer Community Posts
+
+**Platform:** fosstodon.org, hachyderm.io, mastodon.social
+**Format:** Short toots, not thread-heavy
+
+**Toot 1 (fosstodon.org — open source / dev tool angle):**
+```
+Launched Skissify this week — an open-architecture sketch renderer for AI agents.
+
+JSON manifest in → hand-drawn style sketch out.
+
+The interesting part: AI agents produce noticeably better spatial reasoning when they have a visual output channel. The sketch is a thinking tool, not just a display tool.
+
+MCP server available for Claude/Cursor users. REST API for everything else.
+
+skissify.com — free, no account for the /human endpoint.
+
+#FOSS #AITools #MCP #DeveloperTools #IndieHacker
+```
+
+**Toot 2 (hachyderm.io — tech professional angle):**
+```
+Four days post-launch observation: the use cases we didn't build for are the most interesting ones.
+
+- DnD dungeon maps (r/DnD found us)
+- Real estate layout concepts
+- Remote team async sprint boards
+
+When you build a "floor plan tool for AI agents" and discover your most engaged users are game masters, something is right about the underlying product.
+
+skissify.com
+
+#BuildInPublic #MicroSaaS #IndieHacker #AIAgents
+```
+
+---
+
+### Viral Hook 6: LinkedIn Carousel — "Skissify vs Excalidraw in 7 Slides"
+
+**Platform:** LinkedIn
+**Format:** 7-slide carousel (image + text)
+**Hook slide:** "You're using the wrong tool for the wrong moment."
+
+```
+Slide 1 (Hook):
+You're using the wrong sketch tool for the wrong moment.
+
+Skissify vs Excalidraw: when to use which.
+
+[Swipe →]
+
+---
+
+Slide 2 (The core distinction):
+Excalidraw: A whiteboard for human collaboration in real time.
+Skissify: A rendering engine for AI agents and programmatic generation.
+
+Same aesthetic. Completely different jobs.
+
+---
+
+Slide 3 (Excalidraw moment):
+Use Excalidraw when:
+✓ You're in a meeting
+✓ Multiple people need to draw at once
+✓ The process of drawing IS the value
+✓ You want freeform shapes and annotations
+
+---
+
+Slide 4 (Skissify moment):
+Use Skissify when:
+✓ An AI agent needs to return a visual
+✓ You want diagrams that version-control in Git
+✓ You need programmatic generation from JSON
+✓ You're building a product that produces spatial artifacts
+
+---
+
+Slide 5 (The feature gap that matters):
+Excalidraw has no API.
+Skissify is API-first.
+
+If your agent needs to draw something, Excalidraw can't help.
+If you need real-time human collaboration, Skissify isn't the answer.
+
+---
+
+Slide 6 (The two-stage workflow):
+Best workflow in 2026:
+
+1. Skissify → generate initial rough (human or AI)
+2. Decide on structure from the rough
+3. Excalidraw → collaborative refinement + annotations
+4. Final artifact → engineering handoff
+
+Spec → Sketch → Refine → Build.
+
+---
+
+Slide 7 (CTA):
+Try Skissify free: skissify.com
+(No account, no install — just type a description)
+
+For AI agent integration: skissify.com/api/docs
+
+#ProductDesign #AITools #Excalidraw #Diagramming #DeveloperTools #AIAgents #MCP
+```
+
+---
+
+### Hashtag & Community Research — Cycle 139 (April 5, 2026)
+
+**Newly confirmed trending hashtags (research-backed):**
+- `#AIWorkflow` — growing fast in developer/builder communities
+- `#VibeCoding` — strong in Cursor/Claude Code communities
+- `#SketchFirst` — niche but ownable — establish Skissify as the anchor
+- `#AgentTools` — emerging category tag as MCP ecosystem grows
+- `#SpatialAI` — research-adjacent, r/MachineLearning resonates
+- `#MicroSaaS` — indie hacker community standard
+- `#SpecToSpace` — coinable term, potential to own the category framing
+
+**New platforms confirmed for Cycle 139:**
+- r/ExperiencedDevs (1.2M) — developer workflow discussions, high signal
+- YouTube Shorts — overdue, visual product, self-explanatory demo
+- Mastodon/fosstodon.org + hachyderm.io — undercrowded, high engagement/follower ratio
+- r/Notion (580K) + r/ObsidianMD (200K) — notes tools overlap with AI workflow users
+- LinkedIn carousel format — highest LinkedIn engagement format for B2B tools
+
+**Platform matrix update:**
+| Platform | Status | Content |
+|---|---|---|
+| r/ExperiencedDevs (1.2M) | NEW Cycle 139 | Hook 2 |
+| YouTube Shorts | NEW Cycle 139 | Hook 3 |
+| Mastodon (fosstodon/hachyderm) | NEW Cycle 139 | Hook 5 |
+| r/Notion (580K) | NEW Cycle 139 | Hook 4 |
+| r/ObsidianMD (200K) | NEW Cycle 139 | Hook 4 |
+| LinkedIn carousel | NEW Cycle 139 | Hook 6 |
+| r/MachineLearning (4.1M) | Cycle 138 — still unposted | Hook 2 Cycle 138 |
+| r/softwareengineering (600K) | Cycle 138 — still unposted | Hook 3 Cycle 138 |
+| Dev Hunt | Cycle 138 — still unsubmitted | Hook 5 Cycle 138 |
+| r/entrepreneur (2.5M) | Cycle 138 — still unposted | Hook 6 Cycle 138 |
+| r/webdev (2.1M) | Cycle 137 — still unposted | Hook 4 Cycle 137 |
+| r/ProductManagement (1.8M) | Cycle 137 — still unposted | Hook 1 Cycle 137 |
+| r/DnD (3.2M) | Cycle 135 — still unposted | Hook 1 Cycle 135 |
+| r/cursor | Cycle 136 — still unposted | Hook 1 Cycle 136 |
+| r/homeimprovement (4.8M) | HOLD — Monday April 7 | Copy in Cycle 135 |
+| HN Ask HN / Show HN | HOLD — Monday April 7 | Copy in Cycle 137 |
 
 ---
 

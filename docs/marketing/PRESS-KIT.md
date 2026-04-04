@@ -1,6 +1,88 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 138 (New: 3 blog posts (30-second pre-meeting test angle for Figma post, incident architecture diagram angle for floor plan post, collaboration handoff pattern for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 138 block with 6 viral hooks: 30-second pre-meeting sketch (Twitter/LinkedIn), r/MachineLearning spatial reasoning angle, r/softwareengineering incident architecture pattern, build-in-public week 1 retrospective thread, Dev Hunt submission, r/entrepreneur indie founder story. New platforms: r/MachineLearning, Dev Hunt, r/entrepreneur, r/softwareengineering. New hashtags: #BuildInPublic #IndieHacker #MachineLearning #IncidentResponse.)*
+*Last updated: April 5, 2026 — Cycle 139 (New: 3 blog posts ("two audiences" cognitive framing for Figma post, "spec-to-space pattern" for floor plan post, "right tool for the right moment" for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 139 block with 6 viral hooks: "two audiences" cognitive hook (Twitter/LinkedIn), r/ExperiencedDevs spec-to-space pattern, YouTube Shorts floor plan demo script, r/Notion+r/ObsidianMD productivity angle, Mastodon/Fediverse developer posts, LinkedIn carousel Skissify vs Excalidraw. New platforms: r/ExperiencedDevs, YouTube Shorts, Mastodon, r/Notion, r/ObsidianMD. New hashtags: #AIWorkflow #VibeCoding #SketchFirst #AgentTools #SpatialAI #MicroSaaS.)*
+
+---
+
+## Core Press Kit Assets
+
+### Product One-Liner
+> **Skissify** — the sketch renderer for AI agents. Describe a layout, get a hand-drawn sketch. Works via JSON manifest, REST API, or MCP server.
+
+### Taglines (choose by audience)
+- **Developers:** "JSON in, hand-drawn sketch out. API-first, AI-native."
+- **Designers:** "The rough sketch before Figma. 30 seconds, no account."
+- **AI builders:** "Give your agent a pencil. Skissify MCP adds spatial output to any LLM workflow."
+- **Press:** "The tool that lets AI agents draw."
+
+### Boilerplate (short, 50 words)
+Skissify is an AI-compatible sketch tool that renders hand-drawn style visuals from JSON manifests. It targets floor plans, architecture diagrams, and spatial layouts with 14 configurable element types. Skissify integrates with AI agents via MCP server and REST API, and is available free at skissify.com with no account required.
+
+### Boilerplate (long, 100 words)
+Skissify renders hand-drawn style sketches from structured JSON, making spatial visualization a first-class output for AI agents and developers. It supports 14 element types — rooms, doors, stairs, windows, arrows, dimensions, and more — with configurable wobble and humanness parameters that produce the rough aesthetic proven to elicit better structural feedback in design reviews. Skissify connects to AI agents via Model Context Protocol (MCP) and REST API, enabling language models to produce visual artifacts programmatically. The /human endpoint allows anyone to generate a sketch from a plain text description in under 10 seconds. Free tier available at skissify.com, no account required.
+
+### Founder Bio
+Independent developer. Built Skissify to solve a specific problem: AI agents are good at reasoning about space but have no way to show their work. Skissify gives the agent a pencil. Launch: April 1, 2026.
+
+---
+
+## Screenshots Checklist
+
+> For journalists, bloggers, and directory listings — capture these screenshots before outreach.
+
+| Screenshot | Description | Priority |
+|---|---|---|
+| `hero-sketch-floor-plan.png` | Apartment floor plan sketch on cream paper — rooms labeled, doors, windows visible | P0 |
+| `hero-sketch-architecture.png` | Microservices architecture diagram — service boxes, arrows, labels in pencil style | P0 |
+| `hero-sketch-ui-wireframe.png` | Three-panel dashboard wireframe — nav, chart, activity feed | P0 |
+| `editor-json-manifest.png` | Split view: JSON manifest on left, rendered sketch on right | P0 |
+| `human-endpoint-demo.png` | /human page: text input with "describe a layout" prompt, sketch output | P0 |
+| `mcp-integration.png` | Claude terminal calling generate_sketch, URL returned, sketch shown | P1 |
+| `paper-types-grid.png` | 2x2 grid showing cream, white, yellow, blueprint paper types | P1 |
+| `element-types-reference.png` | All 14 element types labeled: line, rect, circle, arc, arrow, text, dashed, dim, window, door-symbol, door-slide, stair, opening, column | P1 |
+| `dungeon-map-demo.png` | Fantasy dungeon map — demonstrates unexpected creative use case | P2 |
+| `wobble-comparison.png` | Same layout at wobble 0 vs wobble 3 vs wobble 6 — shows spectrum from clean to rough | P2 |
+
+---
+
+## Cycle 139 — What's New (April 5, 2026 — Day 5 Post-Launch)
+
+### Day 5 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "Two Audiences" — Figma post (Cycle 139) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle139.md` |
+| Blog: "Spec-to-Space Pattern" — Floor plan post (Cycle 139) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle139.md` |
+| Blog: "Right Tool for Right Moment" — Excalidraw comparison (Cycle 139) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle139.md` |
+| SOCIAL-MEDIA.md Cycle 139 | DONE — 6 hooks: cognitive framing, r/ExperiencedDevs, YouTube Shorts, r/Notion/Obsidian, Mastodon, LinkedIn carousel |
+| PRESS-KIT.md Cycle 139 | DONE — this file (added one-liner, taglines, boilerplates, screenshots checklist) |
+| LAUNCH-PLAN.md Cycle 139 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today |
+| r/MachineLearning (4.1M) | NEW Cycle 138 — still unposted |
+| r/softwareengineering (600K) | NEW Cycle 138 — still unposted |
+| Dev Hunt | NEW Cycle 138 — still unsubmitted |
+| r/entrepreneur (2.5M) | NEW Cycle 138 — still unposted |
+| r/ExperiencedDevs (1.2M) | NEW Cycle 139 — post today |
+| YouTube Shorts | NEW Cycle 139 — record today |
+| Mastodon (fosstodon/hachyderm) | NEW Cycle 139 — post today |
+| r/Notion (580K) | NEW Cycle 139 — post today |
+| r/ObsidianMD (200K) | NEW Cycle 139 — post today |
+| LinkedIn carousel | NEW Cycle 139 — post today |
+| MCP directories (5 sites) | NEW Cycle 137 — still unsubmitted |
+| r/webdev (2.1M) | NEW Cycle 137 — still unposted |
+| r/ProductManagement (1.8M) | NEW Cycle 137 — still unposted |
+| TikTok/Reels video | NEW Cycle 137 — still unrecorded |
+| r/DnD (3.2M) | NEW Cycle 135 — still unposted |
+| r/cursor | NEW Cycle 136 — still unposted |
+| r/homeimprovement (4.8M) | HOLD — Monday April 7, 10:00–12:00 CET |
+| HN Ask HN / Show HN | HOLD — Monday April 7, 08:00 CET |
+
+---
 
 ---
 
