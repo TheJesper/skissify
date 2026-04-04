@@ -1,7 +1,69 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 148**
+**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 149**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 149 — Vibe Coding Backlash + MCP Ecosystem Gap + Reviewable AI Output + r/vibecoding + r/ChatGPTCoding + LinkedIn Maturation Post)
+
+### Cycle 149 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 149 (vibe coding backlash parallel, fidelity signal table, two-stage design model, 60-second rule updated) | `blog/why-hand-drawn-sketches-beat-figma-cycle149.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 149 (MCP 2026 ecosystem context: 97M downloads / 10K servers / output gap, 5 workflows, 3-minute quickstart) | `blog/ai-agents-floor-plans-cycle149.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 149 (vibe coding reviewability angle, updated decision tree, structured data vs image distinction) | `blog/skissify-vs-excalidraw-cycle149.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 149 — 6 hooks: r/vibecoding backlash post, "97M MCP Downloads, None Draw" Twitter thread, r/ChatGPTCoding schema accuracy post, LinkedIn maturation post, Dev.to article outline, Bluesky technical thread. New platforms: r/vibecoding (87K), r/ChatGPTCoding (350K+), Bluesky. New hashtags: #VibeDrawing #ReviewableAI #StructuredOutput #AgentInfrastructure #MCPEcosystem. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 149 — Vibe coding backlash research, MCP ecosystem data, Day 5 status, new one-liner | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 149 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 149 — Priority Actions (April 5, 2026 — Sunday, Day 5)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 148 SOCIAL-MEDIA.md (Hook 1) |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/vibecoding** (87K) — NEW Cycle 149, perfect timing | P0 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 1) |
+| **POST "97M MCP Downloads" Twitter thread** — NEW Cycle 149 | P0 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/ChatGPTCoding** (350K+) — NEW Cycle 149 | P1 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 3) |
+| **POST LinkedIn maturation post** — NEW Cycle 149 | P1 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 4) |
+| **POST Bluesky developer thread** — NEW Cycle 149 | P1 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 6) |
+| **PUBLISH Dev.to reviewable output article** — NEW Cycle 149 | P1 | TODAY | Cycle 149 SOCIAL-MEDIA.md (Hook 5) |
+| **RECORD + POST YT Shorts demo** — P0 CRITICAL OVERDUE | P0 | TODAY — Sunday last window | Script in Cycle 148 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/MachineLearning** (4.1M) — OVERDUE since Cycle 143 | P0 | TODAY | Cycle 146 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/DnD** (3.2M) — OVERDUE SINCE CYCLE 135 | P0 | TODAY | Cycle 135 SOCIAL-MEDIA.md |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **PUBLISH blog/why-hand-drawn-sketches-beat-figma-cycle149.md to Dev.to** | P0 | TODAY | Cycle 149 blog |
+| **PUBLISH blog/ai-agents-floor-plans-cycle149.md to Dev.to** | P0 | TODAY | Cycle 149 blog |
+| **PUBLISH blog/skissify-vs-excalidraw-cycle149.md to Dev.to** | P0 | TODAY | Cycle 149 blog |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md |
+
+### Cycle 149 — New Ideas
+
+**Idea: The vibe coding backlash is the single best moment to position Skissify as "reviewable output."** Reddit data shows builders publicly returning to no-code/visual tools after hitting maintenance walls with AI-generated code. The core complaint is not that AI tools fail — it is that their output is not reviewable. Skissify's manifest-first model is the direct architectural answer: the JSON is the source of truth, the sketch is the render, every element is addressable and diffable. This narrative lands with exactly the r/vibecoding audience that is processing this transition right now.
+
+**Idea: r/vibecoding (87K members) is an untapped community with perfect timing.** The subreddit is in the middle of a maturation discussion. A genuine post from a builder who hit the structured output problem and solved it with Skissify is a contribution, not a pitch. The timing window is narrow — the backlash conversation is happening now, and the most-upvoted posts in this moment will be the ones that offer concrete solutions.
+
+**Idea: The MCP ecosystem gap framing is new and data-backed.** 97 million monthly SDK downloads, 10,000+ servers — none producing structured spatial output. This is a measurable gap. Posts that frame Skissify as filling a documented gap in a high-growth ecosystem (rather than as a standalone tool) are evaluated differently by technical audiences. The gap is not hypothetical; it is visible in the MCP server directory. This framing works on Twitter, on HN, and in the Show HN post Monday.
+
+**Idea: LinkedIn's developer-adjacent audience is ready for the maturation narrative.** The "vibe coding grew up" post format — tracing the evolution from Phase 1 (prompts → apps) to Phase 2 (reviewable, structured output) — is exactly the kind of thought leadership that gets shared on LinkedIn by CTOs and engineering managers. It is a framework post, not a product post. Skissify appears as the example of the principle, not the subject of the pitch.
+
+**Idea: r/ChatGPTCoding (350K+) is the right community for the schema accuracy finding.** The 88% vs 40% flat-vs-hierarchical JSON accuracy data is a genuine empirical contribution to the structured output conversation that is actively happening in this community. Technical posts with numbers get saved and reshared. The schema design insight — that flat schemas dramatically outperform hierarchical for LLM structured output — is broadly useful beyond Skissify. Sharing it is a contribution that happens to have a Skissify origin story.
+
+**Idea: Bluesky is the technical developer community that Twitter was in 2020.** The dev community that migrated from Twitter has settled on Bluesky as their primary technical discourse platform. A genuine founder thread — honest technical framing, curl commands, no hype — gets the engagement that Twitter used to deliver. The audience is smaller but higher signal. A thread that resonates on Bluesky gets shared in more developer group chats than anything published to Twitter.
+
+### Cycle 149 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-cycle149.md — vibe coding backlash parallel, fidelity signal table, two-stage model | DONE Cycle 149 |
+| Blog: ai-agents-floor-plans-cycle149.md — MCP ecosystem context, 97M/10K gap, 5 workflows, 3-min quickstart | DONE Cycle 149 |
+| Blog: skissify-vs-excalidraw-cycle149.md — vibe coding reviewability angle, decision tree, structured data vs image | DONE Cycle 149 |
+| SOCIAL-MEDIA.md Cycle 149 — 6 hooks: r/vibecoding, MCP Twitter thread, r/ChatGPTCoding, LinkedIn, Dev.to, Bluesky | DONE Cycle 149 |
+| PRESS-KIT.md Cycle 149 — maturation one-liner, research findings, Day 5 status | DONE Cycle 149 |
+| LAUNCH-PLAN.md Cycle 149 | DONE Cycle 149 |
+| Research: vibe coding backlash validated (Reddit data, April 2026), MCP ecosystem stats confirmed (97M SDK downloads, 10K+ servers), r/vibecoding (87K) identified, r/ChatGPTCoding (350K+) validated | DONE Cycle 149 |
 
 ---
 

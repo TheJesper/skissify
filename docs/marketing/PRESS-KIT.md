@@ -1,6 +1,55 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 148 (New: Cycle 148 section — three blog post refreshes (cycle148 canonical versions with stronger hooks and token economy framing), updated platform matrix, GitHub badge kit, Ask HN pre-seed tactic, YouTube Shorts demo script. New angle: "The rendering API AI agents were missing" — infrastructure positioning. Day 4 status: Product Hunt live, Show HN Monday, r/LocalLLaMA CRITICAL overdue.)*
+*Last updated: April 5, 2026 — Cycle 149 (New: Cycle 149 section — vibe coding backlash angle, MCP ecosystem gap framing (97M SDK downloads, 10,000+ servers, none draw), reviewable AI output positioning, three new blog posts (cycle149 canonical versions). New platforms: r/vibecoding (87K), r/ChatGPTCoding (350K+), Bluesky. New hashtags: #VibeDrawing #ReviewableAI #StructuredOutput. Day 5 status: Show HN Monday, r/LocalLLaMA still critical overdue.)*
+
+---
+
+## Cycle 149 — What's New (April 5, 2026 — Day 5 Post-Launch)
+
+### Strategic Positioning Update
+
+Cycle 149 introduces the **"vibe coding maturation"** narrative. The vibe coding community is experiencing a reviewability backlash — builders want AI output they can inspect, diff, and maintain. Skissify's manifest-first, deterministic output is the direct answer to this for the spatial category.
+
+Combined with the MCP ecosystem gap angle (97M monthly SDK downloads, 10,000+ active servers, none producing structured spatial output), this positions Skissify at the intersection of two major 2026 narratives:
+
+1. **Reviewable AI output** — the answer to vibe coding's maturation challenge
+2. **The MCP output gap** — 10,000 servers that read and write, zero that draw
+
+One-liner (maturation framing):
+> "Skissify is the structured spatial output layer that vibe coding was missing — JSON manifest in, hand-drawn sketch out, deterministic and version-controllable."
+
+### Three Blog Posts — Cycle 149
+
+| Blog Post | File | Key Angle |
+|-----------|------|-----------|
+| "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" | `blog/why-hand-drawn-sketches-beat-figma-cycle149.md` | Vibe coding backlash parallel; fidelity signal table; two-stage design model |
+| "How AI Agents Can Draw Floor Plans" | `blog/ai-agents-floor-plans-cycle149.md` | MCP 2026 roadmap context; 97M downloads / 10K servers gap; 5 workflows incl. GitHub Actions + n8n |
+| "Skissify vs Excalidraw" | `blog/skissify-vs-excalidraw-cycle149.md` | Vibe coding reviewability angle; updated decision tree; "structured data vs image" distinction |
+
+### Research Findings — Cycle 149
+
+| Finding | Source | Implication |
+|---------|--------|-------------|
+| MCP: 97M+ monthly SDK downloads, 10,000+ active servers | MCP Blog / The New Stack, April 2026 | Massive addressable market; ecosystem needs output tooling |
+| Vibe coding backlash: builders returning to visual/no-code tools | Reddit r/vibecoding, AppBuilderGuides.com, April 2026 | Reviewable output narrative is the right frame NOW |
+| r/vibecoding: 87K members, active maturation/backlash discussion | Reddit, April 2026 | High-fit community not yet targeted |
+| r/ChatGPTCoding: 350K+ members discussing structured output | Reddit, April 2026 | Schema accuracy data is genuine contribution |
+| MCP 2026 roadmap adding image/video transport | MCP Blog, April 2026 | Skissify is ahead of the curve; manifest stays source of truth |
+| AI agent tools market: $7.6B in 2025, projected $50B by 2030 | Multiple sources, 2026 | Macro tailwind validates infrastructure positioning |
+
+### Day 5 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog posts (Cycle 149) | DONE — 3 new canonical posts |
+| SOCIAL-MEDIA.md Cycle 149 | DONE — 6 hooks: r/vibecoding, MCP Twitter thread, r/ChatGPTCoding, LinkedIn, Dev.to article, Bluesky thread |
+| PRESS-KIT.md Cycle 149 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 149 | DONE |
+| r/LocalLLaMA (2.3M) | **P0 CRITICAL OVERDUE — post IMMEDIATELY** |
+| MCP Discord #showcase | **P0 CRITICAL OVERDUE — post IMMEDIATELY** |
+| Demo video (YouTube Shorts script ready) | CRITICAL OVERDUE — script in Cycle 148 |
+| HN Show HN | MONDAY April 7, 08:00 CET |
 
 ---
 
