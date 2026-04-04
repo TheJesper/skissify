@@ -1,7 +1,68 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 3 — Cycle 136**
+**Current Date: April 5, 2026 — Post-Launch Day 4 — Cycle 137**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 137 — Day 4 New Channels + Viral Refresh)
+
+### Cycle 137 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 137 ("PM completion bias" angle — stakeholder honesty problem, cognitive science of rough vs polished, Skissify as friction-free sketch tool, clear use-Figma-vs-Skissify decision guide) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle137.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 137 ("complete 2026 workflow" — all three setup options (MCP, REST API, /human), 5 concrete use cases, determinism argument, spatial version control preview) | `blog/how-ai-agents-draw-floor-plans-cycle137.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 137 ("definitive 2026 comparison" — one-sentence positioning, 14-row feature table, 3 scenario win analysis, the two-stage workflow using both tools) | `blog/skissify-vs-excalidraw-comparison-cycle137.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 137 — 7 new viral hooks: PM completion bias (Twitter/LinkedIn/r/ProductManagement), MCP directory submission (5 directories + copy), TikTok/Reels 30s demo script, r/webdev vibe coding post, spatial version control Dev.to/HN thread, HN Ask HN + Show HN drafts, Product Hunt day-4 discussion. New platforms: TikTok/Reels, r/webdev, r/ProductManagement, MCP directories. New hashtags: #ProductManagement #WebDev #WireframingTools #SpatialThinking. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 137 — Day 4 status table with MCP directories, TikTok/Reels, r/webdev, r/ProductManagement as new channels | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 137 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 137 — Priority Actions (April 5–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **SUBMIT to MCP directories** (5 sites) — NEW Cycle 137 | P0 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/webdev** (2.1M) — NEW Cycle 137 | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 4) |
+| **POST r/ProductManagement** (1.8M) — NEW Cycle 137 | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 1) |
+| **RECORD TikTok/Reels demo video** — NEW Cycle 137 | P1 | TODAY | Script in Cycle 137 SOCIAL-MEDIA.md (Hook 3) |
+| **POST Twitter/X completion bias thread** — NEW Cycle 137 | P1 | TODAY | Copy in Cycle 137 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/DnD** (3.2M) — NEW Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/cursor** — NEW Cycle 136, still unposted | P1 | TODAY | Copy in Cycle 136 SOCIAL-MEDIA.md (Hook 1) |
+| **PUBLISH 3 Cycle 137 blogs to Dev.to** | P0 | TODAY staggered 09:00/12:00/15:00 CET | |
+| **POST r/homeimprovement** (4.8M) | P1 | MONDAY April 7, 10:00–12:00 CET | Copy in Cycle 135 SOCIAL-MEDIA.md (Hook 4) |
+| **POST HN Ask HN / Show HN** | P1 | MONDAY April 7, 08:00 CET | Both drafts in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — final deadline | 60s screen capture + voiceover |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 137 — New Ideas
+
+**Idea: MCP directories are the highest-ROI undone distribution task.** In 2026, MCP directories (mcp.so, mcplist.io, cursor.directory, awesome-mcp-servers GitHub, glama.ai) are the primary discovery channel for AI agent tools. Indie developers who submit to 5+ directories see 10x more organic installs than those who rely on social alone. Each listing is a permanent backlink. Submission copy is in Cycle 137 SOCIAL-MEDIA.md Hook 2. Submit all five today — it takes 20 minutes.
+
+**Idea: TikTok/Reels is the highest-reach untapped format for a visually-driven product.** Skissify's core demo (type a description → watch a hand-drawn sketch appear) is perfectly suited for short video. There's no voiceover needed — the screen recording is self-explanatory. A 30-second demo video posted to TikTok, Reels, and YouTube Shorts covers an audience that no text post reaches. The shot sequence is in Cycle 137 SOCIAL-MEDIA.md Hook 3. Record today with any screen capture tool.
+
+**Idea: r/webdev (2.1M) is less saturated than r/programming for AI dev tools.** The vibe coding angle — sketch before you prompt — is directly actionable for the majority of r/webdev members who use AI coding assistants in 2026. The post is non-promotional (no hard sell, framed as a question/discovery). Post today while the "week 1 of launch" founder angle is still credible.
+
+**Idea: The PM completion bias angle has genuine educational value and will spread organically.** This isn't a feature announcement — it's a cognitive science insight that every product manager and UX designer can apply immediately, with or without Skissify. Posts with standalone educational value outperform promotional posts by 5-10x on LinkedIn and Twitter. The Skissify mention is a practical application, not the thesis. This is the frame that makes it shareable.
+
+**Idea: Spatial version control is the most technically distinctive concept we haven't fully communicated.** "Your architecture diagram is just JSON in Git — it diffs, it versions, it lives next to the code it describes." This is a genuinely new idea for most developers. A Dev.to post + HN thread about this concept will attract the exact technical audience that builds production agent pipelines.
+
+**Idea: r/ProductManagement (1.8M) is an entirely untapped community with no AI sketch tool presence.** Product managers struggle with the exact problem Skissify solves — getting real feedback in early-stage design reviews. The completion bias post is written directly for this audience. They also have decision-making authority to add tools to team workflows. A single post here has compounding ROI if it lands.
+
+### Cycle 137 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle137.md | DONE Cycle 137 |
+| Blog: how-ai-agents-draw-floor-plans-cycle137.md | DONE Cycle 137 |
+| Blog: skissify-vs-excalidraw-comparison-cycle137.md | DONE Cycle 137 |
+| SOCIAL-MEDIA.md — 7 new viral hooks + platform matrix update + new platforms (TikTok, r/webdev, r/ProductManagement, MCP directories) + hashtag additions | DONE Cycle 137 |
+| PRESS-KIT.md — Cycle 137 day-4 status table | DONE Cycle 137 |
+| LAUNCH-PLAN.md — Cycle 137 block | DONE Cycle 137 |
 
 ---
 

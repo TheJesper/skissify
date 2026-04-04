@@ -1,6 +1,35 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 136 (New: 3 blog posts (vibe coding angle for Figma post, remote team whiteboard angle for floor plan post, permanent record problem for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 136 block with 6 viral hooks: vibe coder Cursor angle, remote team whiteboard LinkedIn/r/agile, Pinterest visual strategy (5 pin templates), r/softwarearchitecture PR diagram post, LinkedIn week-1 retro thread, Dev.to week-2 update. New platforms: Pinterest, r/cursor, r/agile, r/projectmanagement, r/softwarearchitecture. Hashtag additions: #VibeCoding #AgileTools #RemoteWork #DesignOps.)*
+*Last updated: April 5, 2026 — Cycle 137 (New: 3 blog posts (PM completion bias angle for Figma post, complete 2026 workflow + 5 use cases for floor plan post, 14-row feature table + definitive comparison for Excalidraw comparison). SOCIAL-MEDIA.md Cycle 137 block with 7 viral hooks: PM completion bias Twitter/LinkedIn/r/ProductManagement, MCP directory submission strategy (5 directories), TikTok/Reels 30s demo concept, r/webdev spatial context for AI coding, spatial version control Dev.to/HN thread, HN Ask HN pre-post content, Product Hunt day-4 discussion cross-post. New platforms: TikTok/Reels, r/webdev, r/ProductManagement, MCP directories. Hashtag additions: #ProductManagement #WebDev #WireframingTools #SpatialThinking.)*
+
+---
+
+## Cycle 137 — What's New (April 5, 2026 — Day 4 Post-Launch)
+
+### Day 4 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "The PM's Shortest Argument" — Figma post (Cycle 137) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle137.md` |
+| Blog: "Complete 2026 Workflow" — Floor plan post (Cycle 137) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle137.md` |
+| Blog: "Definitive 2026 Comparison" — Excalidraw comparison (Cycle 137) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle137.md` |
+| SOCIAL-MEDIA.md Cycle 137 | DONE — 7 hooks: PM completion bias, MCP directories, TikTok/Reels, r/webdev, spatial version control, HN pre-post, PH discussion |
+| PRESS-KIT.md Cycle 137 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 137 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY — final window |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today |
+| MCP directories (5 sites) | NEW Cycle 137 — submit today |
+| r/webdev (2.1M) | NEW Cycle 137 — post today |
+| r/ProductManagement (1.8M) | NEW Cycle 137 — post today |
+| TikTok/Reels video | NEW Cycle 137 — record today, 30s screen capture |
+| r/DnD (3.2M) | NEW Cycle 135 — still unposted |
+| r/cursor | NEW Cycle 136 — still unposted |
+| r/homeimprovement (4.8M) | HOLD — post Monday April 7, 10:00–12:00 CET |
+| HN Ask HN / Show HN | HOLD — post Monday April 7, 08:00 CET |
 
 ---
 
