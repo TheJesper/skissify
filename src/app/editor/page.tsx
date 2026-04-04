@@ -172,6 +172,8 @@ function EditorInner({
     addLayer,
     removeLayer,
     renameLayer,
+    setRoomFont,
+    setTitleFont,
   } = useSketch(initialData ?? undefined, initialPreset ?? undefined);
 
   const [sketchSlug, setSketchSlug] = useState<string | null>(loadedSlug);
@@ -828,6 +830,8 @@ function EditorInner({
             onPasteStyle={pasteStyle}
             hasStyleClipboard={hasStyleClipboard}
             onDuplicateSelected={() => { copySelected(); pasteElements(); }}
+            onRoomFont={setRoomFont}
+            onTitleFont={setTitleFont}
           />
           <JsonEditor
             value={JSON.stringify(sketch, null, 2)}
@@ -1022,6 +1026,8 @@ function EditorInner({
             onPasteStyle={pasteStyle}
             hasStyleClipboard={hasStyleClipboard}
             onDuplicateSelected={() => { copySelected(); pasteElements(); }}
+            onRoomFont={setRoomFont}
+            onTitleFont={setTitleFont}
           />
         </div>
       )}
