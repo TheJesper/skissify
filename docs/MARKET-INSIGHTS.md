@@ -2,6 +2,43 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #125 (Saturday April 4, 01:24 Stockholm)
+
+### Theme: Per-Action Pricing Mainstream, Brand Positioning vs sketch.com, Enterprise MCP Opportunity
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #125 Synthesis
+
+Run #125 adds two new angles: (1) per-action pricing framing from Intercom/Zendesk, and (2) enterprise self-hosted opportunity from Fortune 500 MCP adoption.
+
+**1. Per-action pricing ($0.99/resolution for Intercom, EUR 0.005/render for Skissify) is now the standard mental model for AI tool buyers.** Developers evaluating Skissify already understand per-action billing — it's how they pay for Intercom, Zendesk, OpenAI tokens. The payment trigger at EUR 2/mo is no longer about explaining subscription pricing; it's about surfacing the usage comparison: "200 API renders = EUR 1. That's 200 sketches for a quarter of your morning coffee." The EUR 2/mo base tier is a subscription "reservation" that provides render headroom; the per-render overage is the actual value metric developers will reason about.
+
+**Updated copy frame (Run #125)**: "Intercom charges $0.99 per resolved support ticket. Skissify charges €0.005 per rendered sketch. Same model, different output. 200 renders for €1."
+
+**2. Sketch design tool's MCP launch (sketch.com) creates a brand differentiation mandate.** In MCP registries and search results, "sketch" is now both a major design tool (sketch.com) and Skissify's verb. Positioning must sharpen: Skissify is NOT a design file viewer — it is a JSON-to-SVG hand-drawn RENDERER. The payment trigger for EUR 2/mo is clearer when framed as: "It's not a design tool. It's an API that turns your agent's JSON output into something that looks hand-drawn. That's it. EUR 2/mo."
+
+**3. Fortune 500 internal MCP ecosystems (Pinterest March 2026) open a new enterprise self-hosted pipeline.** Companies like Pinterest are building proprietary internal MCP toolchains. These enterprises need every type of MCP tool for their agents. A hand-drawn sketch renderer MCP is a natural fit — "add visual output to your internal agent ecosystem." This is a new customer segment that requires: self-hosted docs, a Docker image, and an enterprise pricing page before first outreach.
+
+**Updated payment trigger model (Run #125):**
+- EUR 0 → EUR 2/mo: usage ceiling + "per-render" framing making EUR 2/mo feel like buying a render pack, not a subscription
+- EUR 0 → credit pack (EUR 5 one-time, 2,000 renders): preferred by EU developers; avoids recurring-charge anxiety; keep them in ecosystem
+- EUR 2/mo → EUR 5/mo: automatic ceiling trigger at 1,000 renders/month
+- Enterprise: internal MCP ecosystem integration; self-hosted; SLA; custom elements; entry via Pinterest-style enterprise MCP outreach
+
+#### Brand Sharpening — "Sketch" Is Now Ambiguous
+
+With sketch.com launching MCP, the word "sketch" in MCP contexts defaults to the design tool. Skissify must own the VERB "sketching" + the OUTPUT format "hand-drawn SVG" — not the TOOL category "sketch tool." Every touchpoint must clarify: output type (hand-drawn SVG), input type (JSON), runtime context (headless, sub-100ms, no browser).
+
+Recommended naming shift in all contexts:
+- FROM: "Skissify sketch tool" → TO: "Skissify hand-drawn renderer"
+- FROM: "sketch your ideas" → TO: "render hand-drawn sketches from JSON"
+- FROM: "AI sketch tool" → TO: "headless JSON-to-hand-drawn-SVG API"
+
+#### Enterprise MCP Opportunity — Self-Hosted Docs as GTM Unlock
+
+Pinterest Engineering's March 2026 post documents Fortune 500 internal MCP infrastructure in detail. These companies are actively seeking MCP tools to add to internal registries. Skissify's self-hosted Docker image + enterprise license = the enterprise GTM entry point. The self-hosted docs are currently underdeveloped (or absent). Before any enterprise outreach, the minimum viable enterprise artifact is: a Docker Compose file + a README showing "add Skissify to your internal MCP ecosystem in 5 minutes."
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #124 (Saturday April 4, 00:16 Stockholm)
 
 ### Theme: Draw.io MCP is the First Headless Programmatic Competitor — But Hand-Drawn Niche Holds; EU Pricing Sensitivity + 7-Day Onboarding = Conversion Formula

@@ -2,6 +2,96 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #125 (Saturday April 4, 01:24 Stockholm)
+
+### Status: 5 topics researched. KEY FINDINGS: **Sketch (design tool) ships official MCP server** — reads/modifies .sketch design files via AI agents; NOT a hand-drawn renderer, but "Sketch" brand now has MCP presence alongside "Skissify" (brand differentiation risk, not product risk). **Excalidraw+ Custom AI Tokens (Feb 2026)** — bring-your-own Claude/GPT/Gemini key deepens Excalidraw+ stickiness; their premium offering now more compelling. **tldraw v3.4 Excalidraw import compatibility** — cross-tool file portability increasing; signals ecosystem consolidation risk. **Intercom Fin ($0.99/resolution) + Zendesk ($1.50-2.00/resolution)** — per-action micro-payment model mainstream in AI SaaS; validates Skissify EUR 0.005/render pricing anchor. **Pinterest MCP ecosystem (March 2026)** — Fortune 500 companies building internal MCP toolchains; enterprise self-hosted opportunity. **26th consecutive run: still no headless hand-drawn JSON API competitor found.** CRITICAL carry-over: MCP Registry + Claude Connectors submission **still unconfirmed (Run #26 since first flagged).**
+
+---
+
+### Sketch Design Tool Official MCP Server (2026) — Brand Proximity Risk (NEW SIGNAL: LOW-MEDIUM)
+
+**Sources**: [Sketch MCP Server Launch](https://www.sketch.com/changelog/), [Sketch AI Integration 2026](https://www.sketch.com/blog/9-reasons-to-choose-sketch-in-2026/), verified 2026-04-04
+
+Sketch (the macOS design tool, sketch.com) shipped an official MCP server in 2026 that gives MCP-compatible AI clients (Claude, Cursor, etc.) direct access to Sketch design documents. Capabilities: explore designs, answer questions about layers and styles, generate new assets, make design changes. Also ships a `sketch-implement-design` skill for Claude Code and Cursor that turns .sketch files into working code.
+
+**What this means**: The brand "Sketch" now has an official MCP presence. Developers searching MCP registries and docs for "sketch" will find sketch.com's tool. "Skissify" is sufficiently distinct but this increases the importance of differentiating Skissify's positioning — NOT "design file tool", but "hand-drawn sketch RENDERER from JSON." The presence of sketch.com MCP also validates that sketch-related tools are a growing MCP category.
+
+**Critical distinction**: Sketch MCP = read/modify design files (.sketch format, macOS-only). Skissify MCP = generate hand-drawn SVG output from JSON manifests (platform-agnostic, headless, no file format). Fundamentally different tools.
+
+**For Skissify**: Ensure all MCP registry listings, README, and landing page copy clearly states "JSON-to-SVG renderer" not "sketch tool" — the latter creates brand confusion with sketch.com. Use "hand-drawn diagram renderer" and "sketch generator" rather than "sketch tool."
+
+**Threat assessment: LOW-MEDIUM (brand proximity in MCP search results; not a product threat; addressable with clear positioning)**
+
+---
+
+### Excalidraw+ Custom AI Tokens (Feb 2026) — Premium Stickiness Deepening (COMPETITIVE UPDATE)
+
+**Sources**: [Excalidraw+ Changelog](https://plus.excalidraw.com/changelog), verified 2026-04-04
+
+Excalidraw+ shipped Custom AI Tokens in February 2026 — users can connect their own OpenAI, Claude, Gemini, or OpenRouter API keys to power Excalidraw's AI features. Combined with January 2026 additions: YouTube video syncing, QR code sharing, Interactive Presentations with real-time reactions, Advanced Charts (radar charts, multi-series), Google Drive video embedding.
+
+**Signal**: Excalidraw+ is becoming an AI-native collaborative canvas, not just a whiteboard. Custom AI tokens means their $6-7/user/mo becomes the "already-integrated AI sketch platform." Their moat is deepening — users who integrate their Claude key into Excalidraw+ are significantly harder to move to alternatives.
+
+**For Skissify**: The custom AI token feature is a response to developers wanting cost control. Skissify's EUR 0.005/render pricing is transparent and usage-based — but Excalidraw+ is positioning as the "bring your own AI" platform for visuals. Skissify should emphasize the CLI/API model ("no seat costs, pure API") to differentiate from Excalidraw+'s per-seat subscription model.
+
+**Threat assessment: MEDIUM (stickiness deepening for Excalidraw+ users; Skissify must own the API-first, seat-free positioning)**
+
+---
+
+### tldraw v3.4 Excalidraw Compatibility — Ecosystem Consolidation Signal (WATCH)
+
+**Sources**: [tldraw Releases](https://tldraw.dev/releases), verified 2026-04-04
+
+tldraw v3.4 introduced Excalidraw import compatibility. Users can import .excalidraw files into tldraw. Cross-tool compatibility reduces switching friction between Excalidraw and tldraw — signals these two dominant players are converging into an interoperable ecosystem.
+
+**For Skissify**: Cross-compatibility between the two biggest hand-drawn-style tools could accelerate network effects around the .excalidraw file format. Skissify uses JSON (not .excalidraw format). Watch this space — if .excalidraw becomes a de facto standard for hand-drawn interchange, Skissify should consider exporting to .excalidraw format as a bridge. The JSON schema moat only holds if the schema is discoverable and agents adopt it.
+
+**Threat assessment: LOW (consolidation between Excalidraw and tldraw is their internal dynamic; Skissify's agent-native JSON schema serves a different runtime use case)**
+
+---
+
+### Intercom Fin + Zendesk Per-Action Pricing — Micro-Payment Model Mainstream (PRICING SIGNAL)
+
+**Sources**: [2026 SaaS Pricing Guide — Monetizely](https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models), [SaaS Conversion Metrics 2026](https://influenceflow.io/resources/saas-conversion-metrics-the-complete-2026-guide-to-tracking-optimizing-every-stage/), verified 2026-04-04
+
+Intercom Fin AI Agent is priced at $0.99 per resolved conversation, scaling to 8-figure ARR at 393% annualized growth. Zendesk AI agents: $1.50–$2.00 per automated resolution. Western Europe SaaS landing page conversion: 3-4% (lower than US 3-5%, consistent with prior 20-25% sensitivity finding). Per-action/per-resolution pricing is now the reference model for AI SaaS — not per-seat.
+
+**For Skissify**: Skissify's EUR 0.005/render is the correct per-action pricing model — same mental model as Intercom/Zendesk but for visual output. The reference pricing (€0.005/render vs $0.99/conversation) positions Skissify as extremely affordable for what it does. The copy opportunity: "Intercom charges $0.99 for a resolved support ticket. Skissify charges €0.005 for a rendered sketch. 200x more renders per dollar."
+
+**Updated pricing matrix threat**: Per-action pricing is now table stakes for AI tools. Any SaaS that uses per-seat pricing for agent-driven usage will lose to per-action pricing on cost-consciousness among developers.
+
+**Threat assessment: POSITIVE — pricing model validated as industry standard; Skissify already aligned**
+
+---
+
+### Pinterest Internal MCP Ecosystem (March 2026) — Enterprise MCP Adoption Signal (OPPORTUNITY)
+
+**Sources**: [Building an MCP Ecosystem at Pinterest](https://medium.com/pinterest-engineering/building-an-mcp-ecosystem-at-pinterest-d881eb4c16f1), verified 2026-04-04
+
+Pinterest Engineering published a detailed post (March 2026) on building their internal MCP ecosystem — internal MCP servers for data access, tooling, and AI workflow automation. Fortune 500 companies are building proprietary internal MCP toolchains, not just using public MCP servers.
+
+**For Skissify**: Enterprise internal toolchains = enterprise self-hosted demand. Companies building internal MCP ecosystems will want sketch/diagram rendering capabilities for their internal AI agents. An enterprise self-hosted Skissify MCP server (with SLA + custom element packs) becomes a natural fit for companies like Pinterest that already have internal MCP infrastructure. The outreach pitch: "Add hand-drawn sketch rendering to your internal MCP ecosystem — self-hosted, no data leaves your network."
+
+**Threat assessment: POSITIVE — enterprise MCP adoption creates self-hosted enterprise tier demand; Skissify should have enterprise self-hosted docs ready before first outreach**
+
+---
+
+### Updated Competitor Matrix (Run #125 — Saturday April 4, 01:24)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Draw.io official MCP** | `@drawio/mcp` Feb 3 2026 (JGraph). Headless XML/SVG generation. 10K+ shapes. No browser required. Polished output. | YES (XML/SVG, polished) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Excalidraw official MCP** | 26 tools, Python FastMCP dual-stack, iterative refinement. Custom AI tokens Feb 2026. Browser-dependent. | NO | YES | NO | YES (official, 26 tools) | **HIGH** |
+| **tldraw MCP App** | Official MCP App (March 2026). v3.4 Excalidraw import compatibility. Interactive canvas. Headless uses Chromium (5-8s cold start). SDK $6K/yr. | Partial (Chromium, 5-8s) | NO | NO (headless Chromium) | YES (official MCP App) | **MEDIUM** |
+| **Sketch design tool MCP** | Reads/modifies .sketch design files. macOS-only design tool. Brand proximity risk for "Skissify" name in MCP search. NOT a renderer. | NO | NO | YES | YES (official) | **LOW-MEDIUM (brand only)** |
+| **Google Stitch** | Free 350 gen/mo. Sketch photos → polished UI mockups. MCP+SDK. | NO | NO (polished) | YES | YES | **MEDIUM** |
+| **Mermaid** | Text-to-diagram, huge dev adoption. No hand-drawn, no spatial control. | NO | NO | YES | Community | **LOW** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. | YES (native) | YES (tunable) | YES | YES | — |
+
+**26th consecutive run: no headless hand-drawn JSON API competitor found. Competitive gap confirmed.**
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #124 (Saturday April 4, 00:16 Stockholm)
 
 ### Status: 6 topics researched. KEY FINDINGS: **Draw.io official MCP (@drawio/mcp, JGraph, Feb 3 2026)** — headless XML diagram generation from agents, no browser required, 10,000+ shapes — but outputs polished/professional SVG, NOT hand-drawn. Closest programmatic competitor ever found, different aesthetic niche. **Microsoft Azure Architecture Review Agent (open-source, Feb 2026)** uses Excalidraw MCP to auto-generate arch diagrams from YAML/Markdown — corporate toolchain coalescing around Excalidraw for agent diagram output. **WorkOS publishes Excalidraw agent skill** — agents can now self-describe via diagrams; all Excalidraw-bound, browser-dependent. **European SaaS pricing: EU customers 20-25% more price-sensitive than US** — validates EUR 2/mo micro-tier specifically for EU market. **Trial-to-paid conversion benchmark (2026): top performers reach 32-56%** with AI-native onboarding + 7-day time-to-value. **25th consecutive run: still no headless hand-drawn JSON API competitor confirmed.** CRITICAL carry-over: MCP Registry + Claude Connectors submission **still unconfirmed (Run #25 since first flagged).**

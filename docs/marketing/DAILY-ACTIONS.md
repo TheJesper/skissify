@@ -2,6 +2,74 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #125 Actions (Saturday April 4, 01:24 Stockholm) — FOR MONDAY APRIL 6
+
+### Context: Run #125 Key New Findings
+- **Sketch design tool (sketch.com) now has MCP** — brand proximity risk in MCP registry search; "sketch" as a category is now ambiguous; Skissify must position as "hand-drawn renderer," not "sketch tool"
+- **Excalidraw+ Custom AI Tokens (Feb 2026)** — per-seat premium deepening stickiness; Skissify must own the "API-first, no seat costs" frame
+- **Intercom Fin ($0.99/resolution) + Zendesk ($1.50-2.00/resolution)** — per-action pricing mainstream; EUR 0.005/render framing validated: "200 renders for €1"
+- **Pinterest internal MCP ecosystem (March 2026)** — Fortune 500 building internal MCP toolchains; enterprise self-hosted opportunity is real and immediate
+- **26th consecutive run: still no headless hand-drawn JSON API competitor**
+- **MCP Registry + Claude Connectors: Run #26 unconfirmed — still the #1 blocker**
+
+---
+
+### Action 1 (CRITICAL — Monday): MCP Registry + Claude Connectors Submission (Run #26 — Still Blocking)
+
+**Still the highest-priority unblocked task. Unconfirmed for 25 previous runs. With sketch.com now in the MCP ecosystem, Skissify's absence from the registry is more costly than ever — developers searching for "sketch" or "hand-drawn" MCP tools will find sketch.com's design tool but not Skissify.**
+
+**Updated registry listing copy for Run #125** (differentiates from both sketch.com and draw.io):
+> "Skissify — headless JSON→hand-drawn SVG renderer. Zero Chromium. Sub-100ms cold start. Not a design file tool — a render API. Tunable wobble + humanness. Floor plans, napkin diagrams, wireframes, D&D maps. Architectural elements: doors, windows, stairs, room dimensions. Keywords: hand-drawn, floor plan, building sketch, JSON, wobble, SVG, no browser."
+
+**Steps Monday:**
+1. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/)
+2. Submit to Claude Connectors at [claude.com/connectors](https://claude.com/connectors)
+3. Confirm npm package for MCP server is published first
+4. Post "Run #126 success condition": "Skissify submitted to MCP Registry. URL confirmed: ___"
+
+---
+
+### Action 2 (HIGH — Monday): Sharpen Brand Copy — "Hand-Drawn Renderer," Not "Sketch Tool"
+
+**New from Run #125**: sketch.com's MCP launch means "sketch tool" in MCP contexts now defaults to the design file viewer. Skissify must immediately update all external-facing copy to avoid brand confusion.
+
+**What to change Monday:**
+
+Landing page hero — replace:
+- ❌ "The AI sketch tool"
+- ✅ "JSON → hand-drawn SVG. For AI agents that want to look like they sketched it."
+
+MCP description keyword — shift:
+- ❌ "sketch tool", "AI sketch tool"
+- ✅ "hand-drawn renderer", "JSON-to-SVG", "headless render API"
+
+Pricing page framing — add Intercom/Zendesk anchor:
+- ✅ "Intercom charges $0.99 per resolved ticket. Skissify charges €0.005 per rendered sketch. Same per-action model. 200 sketches for €1."
+
+README opening line — tighten:
+- ❌ "Skissify is a sketch tool that..."
+- ✅ "Skissify renders hand-drawn SVGs from JSON. Headless, sub-100ms, no Chromium. Built for AI agents."
+
+---
+
+### Action 3 (HIGH — Monday): Create Enterprise Self-Hosted Quick-Start Doc
+
+**New from Run #125**: Fortune 500 companies (Pinterest pattern) are building internal MCP ecosystems. They will not sign up for SaaS — they need a self-hosted Docker option with 5-minute setup. This is the enterprise GTM unlock.
+
+**What to create Monday:**
+
+A new file `docs/SELF-HOSTED.md` containing:
+1. Docker Compose snippet (Skissify MCP server, self-hosted)
+2. Environment variables reference
+3. "Add to your internal MCP registry" instructions (3 steps)
+4. Enterprise licensing CTA (email to contact for SLA + custom elements)
+
+**Why now**: Before any enterprise cold outreach, this doc must exist. When a Pinterest-style company evaluates Skissify for their internal MCP toolchain, their first question is "can we self-host?" The answer must be documented, not implicit.
+
+**Target audience copy**: "Add hand-drawn sketch rendering to your internal MCP ecosystem in 5 minutes. Self-hosted. No data leaves your network. Custom architectural elements available for enterprise."
+
+---
+
 ## [2026-04-04] — Strategy Run #124 Actions (Saturday April 4, 00:16 Stockholm) — FOR SUNDAY APRIL 5
 
 ### Context: Run #124 Key New Findings
