@@ -1,6 +1,60 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 146 (New: 3 canonical blog posts fully expanded to 700-900 words each — why-hand-drawn-beats-figma.md (added: cognitive neuroscience angle, mode-switch section, vibe drawing shift, 60-second rule, two-stage table), ai-agents-floor-plans.md (added: 5th workflow GitHub Actions, token economy comparison table, multi-agent memory chain), skissify-vs-excalidraw.md (added: Excalidraw community GitHub issue context, extended use-case decision tree, token efficiency comparison). SOCIAL-MEDIA.md Cycle 146 block with 6 viral hooks: "Token Economy" Twitter thread, r/MachineLearning (4.1M), r/Architecture (2.1M), r/InteriorDesign (1.9M), Dev.to "5th Framework" article, Pinterest "Vibe Drawing" board strategy. Research: Adobe +30% hand-drawn demand, Excalidraw API gap confirmed, new hashtags #VibeDraw #VibeDrawing #AIFloorPlan #SpatialAI #AgentSketch #SchemaDesign #DrawingWithAI.)*
+*Last updated: April 4, 2026 — Cycle 148 (New: Cycle 148 section — three blog post refreshes (cycle148 canonical versions with stronger hooks and token economy framing), updated platform matrix, GitHub badge kit, Ask HN pre-seed tactic, YouTube Shorts demo script. New angle: "The rendering API AI agents were missing" — infrastructure positioning. Day 4 status: Product Hunt live, Show HN Monday, r/LocalLLaMA CRITICAL overdue.)*
+
+---
+
+## Cycle 148 — What's New (April 4, 2026 — Day 4 Post-Launch)
+
+### Three Blog Posts — Cycle 148 Refreshes
+
+All three canonical blog posts have been refreshed with stronger cold-open hooks, sharper framing, and cycle 148 strategic positioning:
+
+| Blog Post | File | Key Improvement |
+|-----------|------|-----------------|
+| "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" | `blog/why-hand-drawn-sketches-beat-figma-cycle148.md` | Stronger fidelity ratchet concept, 60-second rule section, clearer two-stage table |
+| "How AI Agents Can Draw Floor Plans" | `blog/ai-agents-floor-plans-cycle148.md` | Token economy table, 5 real workflows (incl. GitHub Actions + n8n), 3-minute quickstart |
+| "Skissify vs Excalidraw" | `blog/skissify-vs-excalidraw-cycle148.md` | Honest framing ("I built Skissify"), use-case decision matrix, token efficiency table |
+
+### New Strategic Angle: Infrastructure Positioning
+
+Cycle 148 introduces the **"rendering API AI agents were missing"** framing. Previous cycles positioned Skissify as a sketch tool. This cycle repositions it as **infrastructure** — the visual output primitive that every agent stack needs but nobody has named yet. This unlocks the enterprise/DevTools audience in addition to the existing designer/builder audience.
+
+One-liner (infrastructure framing):
+> "Skissify is the rendering API that gives AI agents a spatial output format — JSON in, hand-drawn sketch out, 150ms, no auth."
+
+### Day 4 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog posts (Cycle 148) | DONE — 3 refreshed canonical posts |
+| SOCIAL-MEDIA.md Cycle 148 | DONE — 6 hooks: r/LocalLLaMA emergency, AI Got Hands thread, YT Shorts script, Ask HN seed, PH blitz templates, GitHub badge kit |
+| PRESS-KIT.md Cycle 148 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 148 | DONE |
+| r/LocalLLaMA (2.3M) | **P0 CRITICAL OVERDUE — post IMMEDIATELY** |
+| MCP Discord #showcase | **P0 CRITICAL OVERDUE — post IMMEDIATELY** |
+| Demo video | CRITICAL OVERDUE — YT Shorts script ready in Cycle 148 SOCIAL-MEDIA.md |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 |
+| HN Show HN | MONDAY April 7, 08:00 CET |
+
+### Key Numbers (For Press Use)
+
+| Metric | Value |
+|--------|-------|
+| Launch date | April 1, 2026 |
+| JSON schema first-attempt accuracy | 88–92% (flat) vs 40–61% (hierarchical) |
+| Render time | ~150ms |
+| Element types | 14 architectural + 12 general = 26 total |
+| MCP install | `npx @skissify/mcp` |
+| API endpoint | `POST https://skissify.com/api/render` |
+| Auth required | No (free tier) |
+| Price | Free tier + €5/mo Pro |
+| Headquarters | Stockholm, Sweden |
+
+---
+
+*Previously updated: April 5, 2026 — Cycle 146 (New: 3 canonical blog posts fully expanded to 700-900 words each — why-hand-drawn-beats-figma.md (added: cognitive neuroscience angle, mode-switch section, vibe drawing shift, 60-second rule, two-stage table), ai-agents-floor-plans.md (added: 5th workflow GitHub Actions, token economy comparison table, multi-agent memory chain), skissify-vs-excalidraw.md (added: Excalidraw community GitHub issue context, extended use-case decision tree, token efficiency comparison). SOCIAL-MEDIA.md Cycle 146 block with 6 viral hooks: "Token Economy" Twitter thread, r/MachineLearning (4.1M), r/Architecture (2.1M), r/InteriorDesign (1.9M), Dev.to "5th Framework" article, Pinterest "Vibe Drawing" board strategy. Research: Adobe +30% hand-drawn demand, Excalidraw API gap confirmed, new hashtags #VibeDraw #VibeDrawing #AIFloorPlan #SpatialAI #AgentSketch #SchemaDesign #DrawingWithAI.)*
 
 ---
 

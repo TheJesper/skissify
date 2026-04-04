@@ -1,7 +1,67 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 147**
+**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 148**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 148 — Infrastructure Positioning + r/LocalLLaMA Emergency + AI Got Hands Thread + YT Shorts Script + Ask HN Seed + PH Blitz + GitHub Badges)
+
+### Cycle 148 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 148 (stronger fidelity ratchet, 60-second rule, cleaner two-stage table, AI agent dimension section) | `blog/why-hand-drawn-sketches-beat-figma-cycle148.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 148 (5 real workflows incl. GitHub Actions + n8n, token economy table, 3-minute quickstart, infrastructure framing) | `blog/ai-agents-floor-plans-cycle148.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 148 (honest "I built Skissify" framing, use-case decision matrix, token efficiency table, sharper verdict) | `blog/skissify-vs-excalidraw-cycle148.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 148 — 6 new hooks: r/LocalLLaMA emergency post (P0), "AI Got Hands" Twitter/X thread (8 tweets), YouTube Shorts 60-sec demo script, Ask HN pre-seed post (Saturday/Sunday), Product Hunt Day-4 comment blitz templates, GitHub README badge kit. New platforms: YouTube Shorts, Ask HN pre-seed. New hashtags: #AIGotHands #MachineSketch #DrawFirst #SkissifyNow #RenderingAPI #AgentInfrastructure. New angle: "The rendering API AI agents were missing" (infrastructure positioning). | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 148 — Infrastructure positioning angle, key numbers table, cycle 148 blog status, Day 4 milestone table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 148 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 148 — Priority Actions (April 4, 2026 — Saturday Evening, Day 4)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | NEW copy in Cycle 148 SOCIAL-MEDIA.md (Hook 1) |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST "AI Got Hands" Twitter/X thread** — NEW Cycle 148 | P0 | TONIGHT | Cycle 148 SOCIAL-MEDIA.md (Hook 2) |
+| **POST Ask HN pre-seed** — NEW Cycle 148 | P1 | TONIGHT or SUNDAY AM | Cycle 148 SOCIAL-MEDIA.md (Hook 4) |
+| **RECORD + POST YT Shorts/Reels/TikTok** — Script NEW Cycle 148 | P0 | TODAY LAST WINDOW | Cycle 148 SOCIAL-MEDIA.md (Hook 3) |
+| **PRODUCT HUNT Day-4 comment blitz** — NEW Cycle 148 | P1 | TONIGHT | Cycle 148 SOCIAL-MEDIA.md (Hook 5) |
+| **POST GitHub badge kit** to dev communities — NEW Cycle 148 | P2 | THIS WEEK | Cycle 148 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/MachineLearning** (4.1M) — OVERDUE since Cycle 143 | P0 | TODAY | Cycle 146 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/DnD** (3.2M) — OVERDUE SINCE CYCLE 135 | P0 | TODAY | Cycle 135 SOCIAL-MEDIA.md |
+| **POST Substack Notes** — Cycle 147 | P1 | TODAY | Cycle 147 SOCIAL-MEDIA.md (Hook 1) |
+| **POST Threads** — Cycle 147 | P1 | TODAY | Cycle 147 SOCIAL-MEDIA.md (Hook 2) |
+| **SEED Stack Overflow answers** — Cycle 147 | P2 | THIS WEEK | Cycle 147 SOCIAL-MEDIA.md (Hook 3) |
+| **PUBLISH blog/why-hand-drawn-sketches-beat-figma-cycle148.md to Dev.to** | P0 | TODAY | Cycle 148 blog |
+| **PUBLISH blog/ai-agents-floor-plans-cycle148.md to Dev.to** | P0 | TODAY | Cycle 148 blog |
+| **PUBLISH blog/skissify-vs-excalidraw-cycle148.md to Dev.to** | P0 | TODAY | Cycle 148 blog |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md |
+
+### Cycle 148 — New Ideas
+
+**Idea: Infrastructure positioning is the biggest untested frame.** Every post so far has described Skissify as a sketch tool, a design tool, or a floor plan tool. None have positioned it as *infrastructure* — the rendering API that belongs in every agent stack that produces spatial output. The difference is not just semantic. Infrastructure buyers (DevTools, enterprise agents) evaluate on: reliability, schema stability, token efficiency, and composability. These are all Skissify strengths. The infrastructure frame also de-risks the "is it just for floor plans?" objection — infrastructure is horizontal, not vertical.
+
+**Idea: The Ask HN pre-seed is a legitimate community contribution that also warms the audience for Monday's Show HN.** A genuine question about AI agent visual output formats — citing the flat vs hierarchical accuracy finding — starts a conversation in the HN community. People who engage with that question are primed to recognize the problem space when the Show HN post appears Monday morning. This is not gaming the algorithm. It is genuine discourse that happens to serve a secondary function.
+
+**Idea: YouTube Shorts / Reels has the highest upside of any unexecuted channel.** The demo is visually compelling: you type, Claude draws. This is exactly the "wow, machines can do that?" content that drives short-form video virality. The Shorts script (Cycle 148 SOCIAL-MEDIA.md Hook 3) is ready. Recording and publishing this is the single highest-leverage action remaining — 15 minutes to record, potential for 100K+ organic views.
+
+**Idea: The GitHub badge kit turns every project that uses Skissify into a distribution node.** README badges are low-friction, high-permanence. A developer who adds a Skissify badge to their agent project repo creates an inbound link every time someone browses that repo. Over 50 repos, that's 50 permanent inbound discovery points, each targeting the exact audience (developers building AI agents) that Skissify needs.
+
+**Idea: The Product Hunt Day-4 comment blitz is the cheapest possible engagement action.** Product Hunt surfaces "Maker Updates" and active maker engagement to voters. Responding to every comment, posting three new maker questions, and thanking upvoters by name takes 30 minutes and can re-surface Skissify in the daily digest of users who upvoted earlier this week.
+
+### Cycle 148 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-cycle148.md — refreshed canonical (~850 words, fidelity ratchet, 60-sec rule, AI agent dimension, infrastructure framing) | DONE Cycle 148 |
+| Blog: ai-agents-floor-plans-cycle148.md — refreshed canonical (~1000 words, 5 workflows, token economy table, 3-min quickstart, infrastructure angle) | DONE Cycle 148 |
+| Blog: skissify-vs-excalidraw-cycle148.md — refreshed canonical (~900 words, honest framing, decision matrix, token efficiency table, sharper verdict) | DONE Cycle 148 |
+| SOCIAL-MEDIA.md Cycle 148 — 6 hooks: r/LocalLLaMA emergency, AI Got Hands thread, YT Shorts script, Ask HN seed, PH blitz templates, GitHub badge kit | DONE Cycle 148 |
+| PRESS-KIT.md Cycle 148 — infrastructure angle, key numbers table, Day 4 status | DONE Cycle 148 |
+| LAUNCH-PLAN.md Cycle 148 | DONE Cycle 148 |
 
 ---
 
