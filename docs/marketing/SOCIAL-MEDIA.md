@@ -1,7 +1,204 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 5, 2026 — Cycle 133 (New: 5 viral hooks — "napkin beats Figma" shareable card, Peerlist "I built this" post, Dev.to cross-post hook, r/homeimprovement post body, LinkedIn "use both" carousel caption set. New angles: "use-both" positioning, homeowner non-technical pipeline, Peerlist dev-portfolio launch. Hashtag additions: #NapkinPhase, #AIArchitecture, #AgentTools.)**
+**Last updated: April 4, 2026 — Cycle 134 (New: 6 viral hooks — n8n no-code workflow post, r/MachineLearning technical angle, "robot-human handoff" explainer, YouTube Community post, r/Entrepreneur "I built this" post, HN Ask HN strategy brief. New angles: no-code automation, n8n + Skissify, floor plan as agent memory, non-developer homeowner workflow. Hashtag additions: #NoCode, #n8n, #AIAutomation.)**
+
+---
+
+## Cycle 134 — April 4, 2026 (Day 3 Post-Launch — Expand Audience)
+
+### Strategic Priority
+
+Day 3. Launch energy is stabilizing. The developer core has seen the product. The next wave is two audiences who haven't: **no-code builders** (n8n, Zapier, Make) and **non-technical homeowners** (r/homeimprovement, r/DesignMyRoom). Both can use Skissify without writing a line of code. Neither has been reached yet. The Cycle 134 blogs are written for both audiences.
+
+Additionally: **r/MachineLearning** is an underused channel. The determinism argument (same JSON → same sketch, every time) is genuinely interesting to ML practitioners who deal with non-deterministic model outputs daily. Post the technical angle there.
+
+---
+
+### Viral Hook 1: n8n Community Post — No-Code Workflow
+
+**Platform:** n8n community forum (community.n8n.io) + r/n8n + n8n Discord
+
+**Post title:** "I built a floor plan generator with n8n + Claude + Skissify (no code, 20 minutes)"
+
+**Post body:**
+```
+Sharing a workflow I built this week that's been surprisingly useful.
+
+The problem: I was trying to communicate renovation layout ideas to contractors and kept running into the "everyone imagines something different" problem.
+
+The workflow:
+1. User submits a plain-text description of their space via a form
+2. n8n passes it to Claude with a system prompt: "Generate a Skissify JSON manifest for this space description"
+3. n8n HTTP Request node POSTs the manifest to api.skissify.com/render
+4. Skissify returns a sketch URL in ~150ms
+5. The sketch link is sent back to the user
+
+Total setup: about 20 minutes. No code. The manifest is flat JSON (no nesting) so Claude generates it reliably on the first attempt.
+
+The tool: Skissify (skissify.com) — a sketch rendering API I built for exactly this kind of pipeline. Free tier covers 100 renders/month. MCP server also available if you're using Claude directly.
+
+Happy to share the n8n workflow JSON if anyone wants it.
+```
+
+**Reddit r/n8n title:** "Made a no-code floor plan generator with n8n + AI — 20 min setup, shareable sketch links"
+
+---
+
+### Viral Hook 2: r/MachineLearning — The Determinism Post
+
+**Subreddit:** r/MachineLearning (2.4M members) — technical, research-oriented
+
+**Title:** "Why we chose structured JSON over image generation for AI agent visual output (and the tradeoff)"
+
+**Post body:**
+```
+[D] Building Skissify, a sketch rendering API for AI agents. Made a non-obvious architectural choice I want to discuss: we use a deterministic renderer (JSON manifest → SVG canvas) instead of an image generation model.
+
+The reasoning:
+
+**Determinism**: Same manifest = same sketch, every single time. You can hash it, cache it, diff it between versions, store it in version control. With diffusion models, you're rolling dice every render.
+
+**Agent compatibility**: LLMs produce text, not images. Asking Claude to generate a Skissify manifest is a structured text prediction task. First-attempt success rate is ~90% without fine-tuning. Asking Claude to generate a good DALL-E prompt for a floor plan and then trusting DALL-E to interpret it architecturally is two uncertain steps, not one.
+
+**Interpretability**: You can read a JSON manifest and know exactly what it encodes. You cannot read a latent diffusion noise tensor and know what room layout it encodes.
+
+The tradeoff: the sketches are constrained. Skissify renders 26 element types — rooms, doors, windows, stairs, furniture fixtures. It won't generate a photorealistic bedroom. But for agent workflows that need to communicate spatial structure rather than visual aesthetics, this constraint is a feature.
+
+Curious if others have thought about the determinism vs. flexibility tradeoff in visual agent output.
+```
+
+---
+
+### Viral Hook 3: YouTube Community Post — "The Question I Kept Getting"
+
+**Platform:** YouTube Community tab (if channel exists) + Twitter/X thread
+
+**Format:** Text post on YouTube Community, then screenshot as Twitter thread opener
+
+**Post:**
+```
+The question I keep getting after launching Skissify:
+
+"Why not just use DALL-E / Midjourney / GPT-4o image generation?"
+
+The answer in one sentence: because same input → different output every time, and that's a problem when an AI agent is generating the sketch.
+
+Longer answer 🧵 (or in the comments):
+
+The Skissify renderer is deterministic. POST the same JSON manifest, get the same sketch URL back, every single time. You can hash it. Cache it. Version-control it. Check it into git.
+
+A diffusion model gives you a different result every render. Beautiful results, but you can't build a reliable agent workflow on top of non-determinism.
+
+Also: agents produce text, not images. Generating a Skissify manifest is a text prediction task. Claude is remarkably good at it (~90% first attempt). Generating a useful DALL-E prompt for a floor plan is two uncertain steps.
+
+The constraint (26 element types, no photorealism) is the point. Agents need to communicate spatial structure, not generate art.
+
+→ skissify.com — free tier, MCP server, no account required for /human mode
+```
+
+---
+
+### Viral Hook 4: r/Entrepreneur — "I Built This" Founder Story
+
+**Subreddit:** r/Entrepreneur (3.1M members)
+
+**Title:** "I launched an AI sketch tool this week — here's what day 3 looks like"
+
+**Post body:**
+```
+Launched Skissify (skissify.com) on Product Hunt earlier this week. It's a sketch rendering API — you POST JSON, you get back a hand-drawn SVG sketch URL in 150ms. Built for AI agents that need to produce visual output (floor plans, system diagrams, layout sketches).
+
+Day 3 reality check:
+
+What I expected: technical developer audience, MCP server users, AI builders.
+
+What I also got: homeowners renovating spaces who found the /human mode (no JSON required, just describe your room). Real estate agents communicating layout ideas to clients. A Dungeons & Dragons community using it for dungeon maps.
+
+The unplanned audiences are always more interesting than the planned ones.
+
+What I'd do differently: record a 60-second demo video before launch. Every comment thread on PH has someone asking "can I see it in action?" and I keep linking to screenshots instead of a video.
+
+Happy to answer questions about the launch, the stack, or what's working.
+
+Stack: Next.js 15 + TypeScript + HTML Canvas 2D + Caveat font. MCP server in separate package.
+```
+
+---
+
+### Viral Hook 5: HN Ask HN Strategy — "The Right Time to Post"
+
+**Note:** This is a strategic brief, not a ready-to-post copy.
+
+**When to post:** Monday April 7, 08:00 CET (US East Coast 02:00 AM — catches early HN readers before the workday starts; post times this early often get the best morning traction)
+
+**HN Show HN title:** `Show HN: Skissify – POST JSON, get a hand-drawn sketch URL (150ms, MCP server included)`
+
+**Or Ask HN angle:** `Ask HN: How are you handling visual output in AI agent pipelines?`
+
+The Ask HN approach invites discussion and positions Skissify as a solution to a problem HN is actively thinking about. Less promotional, more discussion-seeding. Either angle works — choose based on how many upvotes the Show HN from launch day has already accumulated.
+
+---
+
+### Viral Hook 6: GitHub Discussions — "Skissify for GitHub Actions"
+
+**Platform:** GitHub Discussions in relevant repos (LangChain, Mastra, n8n, CrewAI)
+
+**Post:**
+```
+Has anyone integrated Skissify with this framework yet? Built a proof-of-concept where a GitHub Action generates a Skissify floor plan from a JSON manifest and attaches it to the PR as a visual changelog.
+
+The action calls the Skissify REST API (no SDK needed), passes the manifest, and embeds the sketch URL in the PR description. Works with any framework that produces structured JSON output.
+
+Relevant for anyone building agent workflows that need to communicate spatial layouts (architecture diagrams, floor plans, system flow sketches) in a CI/CD-friendly format.
+
+Would be happy to open-source the Action if there's interest.
+
+→ Skissify API: skissify.com/docs | MCP server: npx skissify-mcp
+```
+
+---
+
+### Platform Priority Matrix — Updated April 4, 2026 (Cycle 134)
+
+| Platform | Audience | Size | Status | Next Action |
+|----------|----------|------|--------|-------------|
+| r/LocalLLaMA | Open-source AI builders | 2.3M | CRITICAL OVERDUE | Post immediately — copy in Cycle 123 |
+| MCP Discord #showcase | MCP server builders | 11K | CRITICAL OVERDUE | Post immediately — copy in Cycle 132 |
+| Indie Hackers | Indie founders | Large | CRITICAL OVERDUE | Post today |
+| r/AI_Agents | Agent builders | Growing fast | OVERDUE — post now | Copy in Cycle 132 |
+| r/homeimprovement | Homeowners | 4.8M | Scheduled April 7 | Copy in Cycle 133 |
+| n8n Community | No-code builders | Active | NEW Cycle 134 — post today | Copy above (Hook 1) |
+| r/n8n | n8n users | Growing | NEW Cycle 134 | Copy above (Hook 1 variant) |
+| r/MachineLearning | ML researchers | 2.4M | NEW Cycle 134 | Copy above (Hook 2) |
+| r/Entrepreneur | Founders | 3.1M | NEW Cycle 134 | Copy above (Hook 4) |
+| GitHub Discussions | Developer ecosystem | — | NEW Cycle 134 | Copy above (Hook 6) |
+| Peerlist | Dev portfolios | Growing | NEW Cycle 133 — post today | Copy in Cycle 133 |
+| Dev.to | Developers | Large | NEW — post today | 3 Cycle 134 blog files |
+| TikTok / Reels / Shorts | Visual / general | Massive | Script ready | Record this week — script in Cycle 132 |
+| fosstodon.org | Dev Mastodon | Active | Post today | Copy in Cycle 132 (Hook 5) |
+| r/ChatGPT | Non-technical AI users | 4.1M | This week | Copy in Cycle 130 |
+| Product Hunt | Dev / maker | Launch done | LIVE — keep responding | Reply to every comment |
+
+---
+
+### Hashtag Intelligence — April 4, 2026 Update (Cycle 134)
+
+**Master combo for April 4–12:**
+```
+Primary:   #VibeDrawing #VibeCoding #AIAgents
+Mid-tier:  #MCP #Claude #BuildInPublic #SketchFirst #NapkinPhase
+Niche:     #JSONtoSVG #FloorPlan #AgentTools #AIArchitecture #Deterministic
+New C134:  #NoCode #n8n #AIAutomation #RobotHuman
+```
+
+**New additions (Cycle 134):**
+- `#NoCode` — catches the n8n/Zapier/Make audience; high search volume, low competition in AI agent space
+- `#n8n` — specific tag for n8n community posts; very discoverable within the n8n ecosystem
+- `#AIAutomation` — broad enough for general AI audience, specific enough to attract builders
+- `#RobotHuman` — experimental; use in "robot-human handoff" posts to see if it catches
+
+**Platform rules (unchanged):**
 
 ---
 

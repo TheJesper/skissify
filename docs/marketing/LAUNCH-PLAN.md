@@ -1,7 +1,64 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 5, 2026 — Post-Launch Day 2 — Cycle 133**
+**Current Date: April 4, 2026 — Post-Launch Day 3 — Cycle 134**
+
+---
+
+## NEW IDEAS (Added 2026-04-04, Cycle 134 — Day 3 Audience Expansion)
+
+### Cycle 134 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 134 ("execution mode trap" angle, AI-native teams workflow, napkin phase framing, 2026 AI speed collapse, match fidelity to certainty principle) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle134.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans (Without Writing Code)" — Cycle 134 (n8n no-code workflow as primary path, floor plan as persistent agent memory, n8n HTTP Request node walkthrough, audience table by role) | `blog/how-ai-agents-draw-floor-plans-cycle134.md` | DONE |
+| Blog: "Skissify vs Excalidraw: The Robot-Human Handoff Guide" — Cycle 134 (robot-human handoff as primary framework, practical scenario guide, 3 concrete workflows, 13-row feature table, "not competing, sequential" final message) | `blog/skissify-vs-excalidraw-comparison-cycle134.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 134 — 6 new viral hooks: n8n community post, r/MachineLearning determinism post, YouTube Community/Twitter thread, r/Entrepreneur founder story, HN Ask HN strategy, GitHub Discussions outreach. New platforms: n8n Community, r/n8n, r/MachineLearning, r/Entrepreneur. New hashtags: #NoCode #n8n #AIAutomation. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 134 — added product screenshots list, founder bio, one-liner, boilerplate, Day 3 status table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 134 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 134 — Priority Actions (April 4–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 2) |
+| **POST n8n Community** — NEW Cycle 134 | P1 | TODAY | Copy in Cycle 134 SOCIAL-MEDIA.md (Hook 1) |
+| **POST r/MachineLearning** (2.4M) — NEW Cycle 134 | P1 | TODAY | Copy in Cycle 134 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/Entrepreneur** (3.1M) — NEW Cycle 134 | P1 | TODAY | Copy in Cycle 134 SOCIAL-MEDIA.md (Hook 4) |
+| **POST GitHub Discussions** (LangChain/Mastra/n8n repos) — NEW Cycle 134 | P1 | TODAY | Copy in Cycle 134 SOCIAL-MEDIA.md (Hook 6) |
+| **PUBLISH 3 Cycle 134 blogs to Dev.to** | P0 | TODAY | Tags: ai, agents, mcp, design, tools |
+| **POST Peerlist** — Cycle 133 | P1 | TODAY | Copy in Cycle 133 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/homeimprovement** (4.8M) | P1 | Monday April 7, 10:00–12:00 CET | Copy in Cycle 133 SOCIAL-MEDIA.md (Hook 4) |
+| **RECORD DEMO VIDEO** — P0 FOREVER | P0 FOREVER | TODAY — ABSOLUTELY FINAL WINDOW | 60s screen capture + voiceover. Script in Cycle 132 SOCIAL-MEDIA.md. |
+| **Post HN Ask HN / Show HN** | P1 | Monday April 7 08:00 CET | Strategy in Cycle 134 SOCIAL-MEDIA.md (Hook 5) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 134 — New Ideas
+
+**Idea: n8n Community is the highest-ROI no-code channel and it's completely untapped.** The n8n community forum has a "show your workflow" culture where quality posts get organic promotion within the tool's interface. A post showing "floor plan generator in 20 min, zero code" reaches 100K+ active n8n users. The post copy is ready in Cycle 134 SOCIAL-MEDIA.md. Also post to r/n8n and n8n Discord simultaneously.
+
+**Idea: r/MachineLearning is a quality-over-quantity play.** 2.4M members, but the audience is researchers and ML engineers who respond to technical depth. The determinism argument (structured output vs. diffusion models for agent workflows) is a genuine research-adjacent question. A thoughtful post with an invitation to discuss will get engagement. Post the Cycle 134 "determinism" angle (Hook 2) — it's written for this audience.
+
+**Idea: GitHub Discussions outreach is a high-trust, low-competition channel.** Posting a thoughtful "has anyone done X with this framework?" message in the Discussions tab of LangChain, Mastra, n8n, and CrewAI repositories reaches the exact audience who is building agent pipelines. These posts aren't promotional if they genuinely invite discussion. The Cycle 134 Hook 6 copy is written to invite, not advertise.
+
+**Idea: The floor plan as persistent agent memory is a concept worth a standalone post.** The blog introduces the concept — sketch URL as version-controllable, diff-able, cache-able artifact. This deserves a dedicated Twitter/LinkedIn thread that goes deeper into the "memory" angle. A sketch isn't just output — it's context that the agent (and humans) can reference in future conversations. "Send me the floor plan from last week" is a real workflow that only works if the sketch is a stable, persistent URL.
+
+**Idea: HN timing matters more than HN copy.** Monday 08:00 CET (02:00 AM US East Coast) is the sweet spot for catching early East Coast readers before the workday fires up. The Show HN title from launch day may still be in the Hacker News index — check before posting a second Show HN. If it is, the Ask HN angle ("How are you handling visual output in agent pipelines?") is lower friction and invites genuine conversation.
+
+### Cycle 134 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle134.md | DONE Cycle 134 |
+| Blog: how-ai-agents-draw-floor-plans-cycle134.md | DONE Cycle 134 |
+| Blog: skissify-vs-excalidraw-comparison-cycle134.md | DONE Cycle 134 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update + new platforms (n8n, r/MachineLearning, r/Entrepreneur, GitHub) + hashtag additions | DONE Cycle 134 |
+| PRESS-KIT.md — Cycle 134 day-3 status table + screenshots list + founder bio + one-liner + boilerplate | DONE Cycle 134 |
+| LAUNCH-PLAN.md — Cycle 134 block | DONE Cycle 134 |
 
 ---
 

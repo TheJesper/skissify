@@ -1,6 +1,67 @@
 # Skissify Press Kit
 
-*Last updated: April 5, 2026 — Cycle 133 (New: 3 blog posts (Cycle 133 — shorter/sharper rewrites of all three core posts, new angles: stakeholder psychology for Figma post, Mastra/LangGraph callouts for floor plan post, "use-both pattern" for Excalidraw comparison), SOCIAL-MEDIA.md Cycle 133 block with 5 new viral hooks (shareable card, Peerlist post, Dev.to hooks, r/homeimprovement body, LinkedIn carousel), new hashtags: #NapkinPhase #AIArchitecture #AgentTools, platform matrix updated.)*
+*Last updated: April 4, 2026 — Cycle 134 (New: 3 blog posts (Cycle 134 — new angles: "execution mode trap" for Figma post, n8n no-code workflow + floor plan as agent memory for floor plan post, "robot-human handoff" practical guide for Excaladraw comparison), SOCIAL-MEDIA.md Cycle 134 block with 6 new viral hooks (n8n community post, r/MachineLearning determinism angle, YouTube Community/Twitter thread, r/Entrepreneur founder story, HN Ask HN strategy, GitHub Discussions outreach), new platforms: n8n Community, r/n8n, r/MachineLearning, r/Entrepreneur, new hashtags: #NoCode #n8n #AIAutomation.)*
+
+---
+
+## Cycle 134 — What's New (April 4, 2026 — Day 3 Post-Launch)
+
+### Day 3 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: Figma comparison (Cycle 134) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle134.md` |
+| Blog: AI agents floor plans / n8n (Cycle 134) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle134.md` |
+| Blog: Robot-human handoff / Excalidraw (Cycle 134) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle134.md` |
+| SOCIAL-MEDIA.md Cycle 134 | DONE — n8n community, r/MachineLearning, YouTube Community, r/Entrepreneur, HN strategy, GitHub Discussions |
+| PRESS-KIT.md Cycle 134 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 134 | DONE |
+| Demo video | STILL OVERDUE — record immediately, no more excuses |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post today |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today |
+| n8n Community | NEW Cycle 134 — post today (copy in Cycle 134 SOCIAL-MEDIA.md Hook 1) |
+| r/MachineLearning | NEW Cycle 134 — post today (copy in Cycle 134 SOCIAL-MEDIA.md Hook 2) |
+| r/Entrepreneur | NEW Cycle 134 — post today (copy in Cycle 134 SOCIAL-MEDIA.md Hook 4) |
+| GitHub Discussions outreach | NEW Cycle 134 — post to LangChain/Mastra/n8n/CrewAI |
+| r/homeimprovement (4.8M) | Scheduled April 7 Monday — copy in Cycle 133 |
+
+---
+
+## Product Screenshots Needed
+
+The following screenshot types should be captured for press/media use:
+
+| Screenshot | Description | Priority |
+|------------|-------------|----------|
+| `skissify-floor-plan-claude-mcp.png` | Claude chat window showing skissify_render call + resulting sketch URL | P0 |
+| `skissify-human-mode-ui.png` | skissify.com/human — the form + rendered sketch side by side | P0 |
+| `skissify-apartment-sketch.png` | A 35sqm apartment sketch (cream paper, pencil tool) | P0 |
+| `skissify-blueprint-style.png` | A blueprint-style render showing the alt paper type | P1 |
+| `skissify-mcp-setup-terminal.png` | Terminal showing MCP server setup command (3 lines) | P1 |
+| `skissify-n8n-workflow.png` | n8n workflow screenshot showing Claude + HTTP Request nodes | P1 |
+| `skissify-dungeon-map.png` | A D&D-style dungeon map (unexpected use case) | P2 |
+| `skissify-json-manifest.png` | Clean JSON manifest → sketch side-by-side | P2 |
+
+---
+
+## Founder Bio
+
+**Jesper** — builder and product designer. Built Skissify to solve the "AI knows what the room should look like but can't show you" problem. Works in Stockholm, ships fast.
+
+---
+
+## One-Liner
+
+> Skissify turns JSON into hand-drawn sketches in 150ms — built for AI agents that need to produce visual output, not just describe it.
+
+---
+
+## Boilerplate Description (100 words)
+
+Skissify is an AI-compatible sketch rendering API. It accepts a flat JSON manifest describing spatial elements (rooms, doors, windows, furniture, stairs) and returns a hand-drawn SVG sketch URL in ~150ms. Built for AI agent pipelines that need deterministic, version-controllable visual output — unlike image generation models, Skissify produces the same sketch every time for the same input. Available via REST API, MCP server (for Claude), and a no-code human mode at skissify.com/human. Free tier includes 100 renders per month. Launched April 1, 2026. Stack: Next.js 15 + TypeScript + HTML Canvas 2D.
 
 ---
 
