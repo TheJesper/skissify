@@ -2,6 +2,70 @@
 
 ---
 
+## Update: 2026-04-05 — Strategy Run #139 (Sunday April 5 — AI Research Cycle)
+
+### Status: 4 new entries / updates. KEY FINDINGS: **Excalidraw-render — headless JSON→hand-drawn printer directly entering Skissify's lane** — `excalidraw-render` project (Feb 2026) uses the real @excalidraw/excalidraw library as a "headless printer": Claude Code sends JSON, server returns faithful hand-drawn SVG rendering, no canvas required. This is the closest functional competitor to Skissify's core architecture yet found. No floor plan elements, no MCP server, no tunable wobble, no arch domain elements — but it renders Excalidraw JSON headlessly, which overlaps with Skissify's "JSON→hand-drawn" pitch. Differentiation must sharpen around: (1) Skissify has architectural domain elements (doors, windows, stairs, dimensions), (2) Skissify is built as a hosted API/MCP tool — no local server required, (3) Skissify has tunable humanness/wobble params, (4) Skissify's JSON schema is designed specifically for agent output, not tied to Excalidraw's interactive canvas format. **Official Excalidraw MCP App (excalidraw/excalidraw-mcp)** — fast and streamable MCP App for Excalidraw canvas interaction; works with Claude, ChatGPT, VS Code, Goose; but requires an interactive canvas session, not headless. **DiagrammingAI — NL→hand-drawn Excalidraw via web UI** — wraps Excalidraw with AI generation from natural language; web-only, no API/MCP, no floor plan elements, no headless mode. **SketchUp 2026 — "Generate Textures" AI feature** — generative AI for 3D materials, not diagrams; no overlap. **MCP ecosystem crosses 97M SDK downloads** — every major AI platform supports MCP (OpenAI Agents SDK, Gemini, AWS); enterprise adoption escalating; registry submission urgency now MAXIMUM. **MCP Registry submission CRITICAL RED — 40th consecutive run unconfirmed.**
+
+---
+
+### excalidraw-render — Headless JSON→Hand-Drawn Printer (CRITICAL NEW ENTRY)
+
+**Sources**: [Generate Excalidraw Diagrams from Claude Code with MCP — xgueret](https://xgueret.github.io/en/posts/excalidraw_mcp/), [GitHub — excalidraw/excalidraw-mcp](https://github.com/excalidraw/excalidraw-mcp), [GitHub — yctimlin/mcp_excalidraw](https://github.com/yctimlin/mcp_excalidraw), verified 2026-04-05
+
+**What it is**: A lightweight headless server that accepts Excalidraw JSON and renders it to PNG/SVG using the real `@excalidraw/excalidraw` library — no browser, no interactive canvas. As of February 2026, described as a "headless printer" for Claude Code: send JSON shape descriptions, receive faithful Excalidraw-style hand-drawn output. Local process, no hosted API, no cloud tier. Part of a community of CLI/MCP scripts around the Excalidraw ecosystem.
+
+**What it is NOT**: Not a hosted SaaS. Not a production API. Not headless in the cloud-service sense. No architectural domain elements (doors, windows, stairs, dimensions). No tunable wobble parameters. No floor plan primitives. No MCP server published to the registry. No billing/usage tier. Community project, not a product.
+
+**Why it matters for Skissify**: This is the most direct architectural analog found so far. The value prop ("Claude Code sends JSON, headless server returns hand-drawn SVG") is identical to what Skissify does. However, it requires local setup, uses Excalidraw's JSON format (which is tied to Excalidraw's element model), and has no floor plan domain knowledge. Skissify's differentiators against excalidraw-render: (1) hosted cloud API — no local server needed, callable from any agent anywhere; (2) Skissify's JSON schema has explicit architectural primitives (door-symbol, door-slide, window, stair, dim, opening, column) that Excalidraw JSON does not support; (3) tunable humanness/wobble parameters built for agent control; (4) EUR 2-5/mo predictable flat-rate pricing vs. self-hosted DIY complexity; (5) MCP server + registry listing (pending). The existence of excalidraw-render validates Skissify's exact product thesis while confirming the gap: developers want this capability but have only fragile DIY tooling. Skissify is the production version.
+
+**Threat assessment: MEDIUM-HIGH — direct architectural overlap on core JSON→hand-drawn pitch; differentiated by (a) hosted API, (b) architectural domain elements, (c) tunable wobble, (d) MCP registry listing; community project not a funded competitor; creates urgency to sharpen "not tied to Excalidraw's format" messaging and to publish hosted API as the alternative to local setup**
+
+---
+
+### Official Excalidraw MCP App — Interactive Canvas MCP (COMPETITIVE UPDATE)
+
+**Sources**: [GitHub — excalidraw/excalidraw-mcp](https://github.com/excalidraw/excalidraw-mcp), [PulseMCP — Excalidraw Maaker MCP](https://www.pulsemcp.com/servers/maaker-ai-excalidraw), verified 2026-04-05
+
+**Update**: The official `excalidraw/excalidraw-mcp` is a "fast and streamable MCP App" for Excalidraw canvas interaction. It requires an interactive canvas session — it controls a live Excalidraw frontend, not a headless renderer. Works with Claude, ChatGPT, VS Code, Goose. A separate community tool (`yctimlin/mcp_excalidraw`) provides programmatic canvas control with real-time sync. Neither is headless without a running browser/canvas process.
+
+**Why it matters for Skissify**: The official Excalidraw MCP App is in the MCP Registry for interactive canvas use cases — it will appear in "hand-drawn MCP" searches. Skissify must differentiate as the **headless** option: no running canvas, no browser session, no interactive UI required. Agents that run in CI/CD, server-side pipelines, or batch jobs cannot use an interactive canvas MCP. Skissify serves this headless programmatic use case. Marketing message: "Not a canvas you control — a renderer you call."
+
+**Threat assessment: CRITICAL — Excalidraw now has official MCP presence and hand-drawn aesthetic; Skissify's survival differentiator is (1) headless/no-browser, (2) architectural domain elements, (3) own JSON schema designed for agent output (not tied to Excalidraw's interactive format)**
+
+---
+
+### DiagrammingAI — NL→Excalidraw Web UI (NEW ENTRY)
+
+**Sources**: [DiagrammingAI](https://diagrammingai.com/), [Excalidraw Visual Editor — DiagrammingAI](https://diagrammingai.com/docs/guide/excalidraw-editor), verified 2026-04-05
+
+**What it is**: Web application that generates Mermaid, PlantUML, GraphViz, D2, and Excalidraw diagrams from natural language. For Excalidraw output, produces hand-drawn-style infographics. Web UI only, no API, no MCP, no headless mode, no JSON schema for agents. Standard SaaS, no pricing details found in search results.
+
+**Why it matters for Skissify**: DiagrammingAI is building on the Excalidraw aesthetic via web UI. No floor plan elements. No architectural domain primitives. No agent/programmatic access. SEO competitor for "AI hand-drawn diagram" queries. Differentiation: Skissify is for agents and API pipelines; DiagrammingAI is for humans typing in a browser.
+
+**Threat assessment: LOW-MEDIUM — same aesthetic lane; zero API/MCP/programmatic overlap; SEO competitor for "hand-drawn diagram AI" queries**
+
+---
+
+### Updated Competitor Matrix (Run #139 — Sunday April 5, 2026)
+
+| Tool | Status (2026-04-05) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). March 31: Trash, Mermaid ERD, Slide Templates, Arrow Binding. $6-7/user/mo. | NO (canvas-dependent) | YES | NO | YES (official) | **CRITICAL** |
+| **excalidraw-render (Feb 2026)** | Headless printer: Claude Code sends Excalidraw JSON, server returns hand-drawn SVG/PNG. Local process. Community project. | YES (Excalidraw JSON format) | YES (Excalidraw style) | YES | NO | **MEDIUM-HIGH (closest architectural analog)** |
+| **tldraw (April 2026)** | SDK 4.5.x. Canvas 2D switch (+25x perf). MCP App (March 3). Image Pipeline template. $6K/yr SDK. | Partial (interactive canvas) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp`. Inline MCP App iframe. 4 integration modes. 10K+ shapes. | YES (XML/CSV/Mermaid) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Figma MCP + Make Kits** | Make Kits + Attachments (April 2). Agents create/edit canvas via MCP. $15-45/user/mo. | YES (Figma native) | NO | NO (requires Figma) | YES (official) | **MEDIUM (different lane)** |
+| **DiagrammingAI** | NL→Mermaid/Excalidraw/PlantUML/D2. Web UI only. No API/MCP. No floor plan elements. | NO (web UI only) | YES (Excalidraw) | YES | NO | **LOW-MEDIUM (SEO competitor "hand-drawn diagram AI")** |
+| **Eraser DiagramGPT** | Text/code→formal technical diagrams. GitHub/Notion/VS Code integrations. No MCP. No hand-drawn. | NO (interactive only) | NO | YES | NO | **MEDIUM-LOW (SEO competitor for "AI diagram" queries)** |
+| **Draw-it MCP** | Free OSS. Human draws on canvas, Claude analyzes. No JSON input. No programmatic output. | NO (human-driven canvas) | YES (human-drawn) | YES | YES (local) | **LOW (namespace squatter)** |
+| **Sketch (macOS app) MCP** | Built-in local MCP Server. macOS-only. Design-to-code. | NO (existing design files only) | NO (vector) | YES | YES (official, local) | **LOW-MEDIUM (brand/SEO collision)** |
+| **Archilogic Floor Plan SDK** | Professional AEC spatial platform. GraphQL API. Enterprise pricing. Photo-realistic. | YES (GraphQL API) | NO | YES | NO | **LOW (enterprise AEC lane)** |
+| **Apify AI Floor Plan Creator** | Structured input → floor plan image + metadata + AutoCAD. Pay-per-use. Photo-realistic. | YES (API) | NO | YES | NO | **LOW-MEDIUM (SEO competitor "floor plan API")** |
+| **InfraSketch** | Free AI cloud architecture diagrams, NL input. Active SEO. No MCP. No hand-drawn. | YES (NL→SVG) | NO | YES | NO | **MEDIUM-LOW (cloud/DevOps lane; SEO competitor)** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. Canvas 2D (tldraw is migrating TO this). No Chromium. Arch elements. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
 ## Update: 2026-04-04 — Strategy Run #138 (Saturday April 4, Stockholm — Evening)
 
 ### Status: 4 new entries / updates. KEY FINDINGS: **Pinterest deploys production MCP ecosystem** — domain-specific MCP servers + central registry at enterprise scale; validates that AI engineering teams build standardized tool registries and will expect visual-output tools in them; Skissify's gap = not registered. **Google Colab MCP Server** — Google ships open-source MCP server for notebook compute (March/April 2026); signals that every specialized compute tool category will need MCP coverage; the pattern is now Google-level validated. **tldraw 25x Canvas 2D performance win** — tldraw switched shape indicators from SVG to Canvas 2D, achieving 25x faster rendering; this is ironic confirmation that Skissify's Canvas 2D architecture is correct. **Eraser DiagramGPT 2026 — text/code-to-formal-diagram lane confirmed unchanged** — no hand-drawn, no floor plan, no MCP; SEO competitor for "AI diagram tool" queries. **MCP Registry submission process fully confirmed** — npm publish first, then `mcp-publisher` CLI; registry live at registry.modelcontextprotocol.io; actionable steps exist; 39th consecutive run CRITICAL RED for non-submission. **MCP Registry submission CRITICAL RED — 39th consecutive run unconfirmed.**

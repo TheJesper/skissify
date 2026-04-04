@@ -2,6 +2,65 @@
 
 ---
 
+## [2026-04-05] — Strategy Run #139 Actions (Sunday April 5) — FOR MONDAY APRIL 6
+
+### Context: Run #139 Key New Findings
+- **excalidraw-render** — community headless Excalidraw JSON→SVG printer (Feb 2026); closest architectural analog found; local-only, no arch elements, no MCP; proves demand, confirms the gap Skissify fills
+- **Official Excalidraw MCP App** (excalidraw/excalidraw-mcp) — interactive canvas MCP; requires live canvas session; NOT headless; but competes for "hand-drawn MCP" search terms in the registry
+- **DiagrammingAI** — NL→Excalidraw web UI; no API/MCP; SEO competitor for "hand-drawn diagram AI" queries
+- **MCP ecosystem hits 97M SDK downloads** — every major AI platform (OpenAI, Google, AWS, Microsoft) now supports MCP; adoption is at inflection; timing for registry submission is maximum urgency
+- **MCP Registry submission CRITICAL RED — 40th consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Monday): Submit to MCP Registry — 40th Run, No Remaining Excuses
+
+**Why now**: `excalidraw/excalidraw-mcp` is in the registry for "hand-drawn MCP" searches. excalidraw-render is indexed on community sites. The official Excalidraw MCP App will appear when any developer searches "hand-drawn sketch MCP." Skissify does not appear. At 97M MCP SDK downloads and enterprise adoption at Pinterest, AWS, and Google scale, this is the single highest-ROI action available. Every day of delay is a day the "headless hand-drawn JSON sketch MCP" namespace is defined by Excalidraw's interactive-canvas tools, not by Skissify's headless API.
+
+**Do this (45 minutes):**
+1. `npm publish skissify-mcp` — confirm package.json keywords include: `sketch`, `hand-drawn`, `floor-plan`, `json`, `svg`, `headless`, `architecture`, `agent`, `mcp`, `architectural-elements`
+2. Registry description (optimized to differentiate from Excalidraw MCP): "**Headless** JSON→hand-drawn SVG. No browser. No interactive canvas. No Excalidraw session required. Floor plans, doors, windows, stairs, dimensions. Sub-100ms. Call it from any agent, CI/CD pipeline, or server. Skissify is a renderer, not a whiteboard."
+3. Categories: `Visual`, `Developer Tools`, `Productivity`
+4. Run `npx mcp-publisher` → submit to registry.modelcontextprotocol.io
+5. Save screenshot to `docs/MCP-REGISTRY-SUBMISSION.md`
+
+**Target outcome**: Skissify appears for "headless sketch MCP", "floor plan MCP", "hand-drawn JSON SVG" — zero results today. Differentiator from Excalidraw MCP is explicit: headless, no browser, programmatic.
+
+---
+
+### Action 2 (HIGH — Monday): Write "excalidraw-render vs Skissify: DIY vs Hosted Headless Rendering" Post
+
+**Why**: excalidraw-render is indexed, the blog post at xgueret.github.io already describes how to use it as a headless printer for Claude Code. Any developer who finds that post is the warmest possible Skissify lead — they want exactly what Skissify does, just without the local server setup. A comparison post targeting that exact audience captures inbound search from "headless excalidraw render" and "excalidraw JSON SVG programmatic" queries. Estimated audience: small but extremely high-intent (these are developers who already know they want the capability).
+
+**Do this (60 minutes):**
+1. Blog title: "excalidraw-render vs Skissify: Two Ways to Get Headless Hand-Drawn SVG from JSON"
+2. Structure: What excalidraw-render does → Why it's a great proof-of-concept → What breaks in production (local process, no floor plan elements, Excalidraw JSON format lock-in, no hosted API, no usage billing) → What Skissify adds: hosted API, architectural domain elements, tunable wobble, EUR 2/mo predictable pricing, MCP server
+3. Key message: "If you built your own excalidraw-render setup, Skissify is the hosted production version of that idea."
+4. Include: code example showing excalidraw-render curl vs. Skissify API curl — same concept, different operational model
+5. SEO keywords: "headless excalidraw", "excalidraw JSON API", "hand-drawn SVG programmatic", "excalidraw render server"
+6. Post to blog + link from GitHub README of Skissify
+
+**Target outcome**: Capture the 50-200 developers per month searching for "headless excalidraw" options. Convert the self-builders (excalidraw-render DIYers) to Skissify paid users.
+
+---
+
+### Action 3 (MEDIUM — Monday): Add a Working curl Demo to Homepage Hero
+
+**Why**: The single highest-converting demo for this audience is a curl command that returns a hand-drawn SVG in under 100ms. No signup, no form, no friction. The developer who pastes that command into their terminal and sees the SVG output is already 70% converted to EUR 2/mo. The excalidraw-render existence proves developers will set up a LOCAL SERVER just to get this capability — Skissify's value prop is "no local server." The homepage must make this vivid: one command, instant result. This is the "aha moment" the whole product is built for.
+
+**Do this (45-60 minutes):**
+1. Homepage hero section — add a two-panel code demo:
+   - Left: JSON input (a simple 3-element floor plan: two walls + a door)
+   - Right: The SVG output rendered inline (static or animated)
+2. Below the demo: one curl command: `curl -X POST https://api.skissify.com/render -d @sketch.json --output sketch.svg`
+3. Below the curl: "No browser. No canvas. No Excalidraw session. Just JSON in, hand-drawn SVG out. Sub-100ms."
+4. CTA button: "Get API Key — EUR 2/mo" directly below the curl command
+5. A/B test: same page with "Free tier — 50 renders/month" vs. "EUR 2/mo Pro — 1,000 renders/month" as the primary CTA
+
+**Target outcome**: Reduce time-to-aha from 5+ minutes (sign up → read docs → write JSON → see output) to under 60 seconds (see demo → run curl → see SVG → click CTA). This single change is likely worth 2-3x improvement in trial-to-paid conversion based on industry benchmarks for API-first products.
+
+---
+
 ## [2026-04-04] — Strategy Run #138 Actions (Saturday April 4, Stockholm — Evening) — FOR SUNDAY APRIL 5
 
 ### Context: Run #138 Key New Findings
