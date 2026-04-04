@@ -2,6 +2,190 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #135 Actions (Saturday April 4, Stockholm — Midday) — FOR SUNDAY APRIL 5
+
+### Context: Run #135 Key New Findings
+- **Figma Make Kits + Attachments** (April 2, 2026) — deep design system AI prototyping; JSON/SVG as attachments; $15-45/mo; enterprise lane only; Skissify headless lane untouched
+- **InfraSketch confirmed active** — free AI cloud architecture tool with SEO content ("best AI diagram tools 2026"); no hand-drawn; no MCP; SEO competitor for "AI diagram" queries
+- **Napkin AI: $12/mo SVG export** — Skissify EUR 5 Pro offers stronger utility at 58% lower price; key positioning opportunity
+- **Hybrid SaaS pricing: 43% adoption (2026)** — 61% projected by end-2026; Skissify's model is now market-standard
+- **MCP: 12,000+ servers on PulseMCP**, Linux Foundation stewardship confirmed; zero hand-drawn SVG output servers
+- **MCP Registry submission CRITICAL RED — 36th consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Sunday): Publish MCP Server to Registry + npm
+
+**Context from Run #135**: MCP ecosystem now has 12,000+ servers post-quality-filter on PulseMCP, 97M monthly SDK downloads, and Linux Foundation stewardship. Every Claude, Cursor, Gemini, and VS Code user now expects to find tools via the MCP registry. Skissify MCP remains undiscoverable for the 36th consecutive strategy run. This is a zero-cost, high-leverage action that competes with Draw.io, tldraw, and Figma's official MCP entries — all of which are actively discovered by developers right now.
+
+**Do this (45-60 minutes):**
+1. Publish `skissify-mcp` to npm with description: "MCP server — JSON to hand-drawn SVG, floor plans, architectural diagrams, headless, no browser required"
+2. Submit to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) — keywords: `sketch`, `floor-plan`, `hand-drawn`, `SVG`, `JSON`, `architecture`, `headless`
+3. Post in r/mcp: "I built a MCP server that turns JSON manifests into hand-drawn sketches — floor plans, architecture diagrams, napkin sketches. Headless, sub-100ms, EUR 2/mo. [link]"
+
+**Target outcome**: Skissify appears in search results when developers type "sketch" or "floor plan" in any MCP-enabled AI client. One discovery = one potential EUR 2/mo conversion.
+
+---
+
+### Action 2 (HIGH — Sunday): Write "Skissify vs InfraSketch — Two Very Different Jobs" SEO Post
+
+**Context from Run #135**: InfraSketch is actively publishing comparison content ("best AI diagram tools 2026") and competing for "AI architecture diagram" search traffic. Skissify must respond with its own comparison post before InfraSketch's SEO compounds. The comparison is clean: InfraSketch = cloud infra diagrams from natural language, free, no MCP, clean vector style; Skissify = hand-drawn sketches + floor plans from JSON, MCP-native, EUR 2/mo, no browser required.
+
+**Do this (60-90 minutes):**
+1. Title: "Skissify vs InfraSketch: When You Need a Floor Plan vs a Cloud Diagram"
+2. Structure:
+   - What InfraSketch does well (cloud architecture, natural language, free)
+   - What Skissify does that InfraSketch can't (hand-drawn aesthetic, JSON-first, floor plans, doors/windows/stairs, MCP-native, headless API)
+   - Decision table: "Use InfraSketch if... / Use Skissify if..."
+   - Code example: Skissify JSON manifest for a floor plan (something InfraSketch literally cannot produce)
+3. Publish to blog; include both tool names for SEO
+4. Share on r/webdev and LinkedIn
+
+**Target outcome**: Capture "InfraSketch alternative" and "AI floor plan tool" search traffic. Establish Skissify as the hand-drawn, agent-native alternative to text-driven diagram tools.
+
+**Reference**: https://infrasketch.net/blog/best-ai-diagram-tools-2026
+
+---
+
+### Action 3 (MEDIUM — Sunday): Update Pricing Page — Rename "Starter" to "Indie" + Add Napkin Anchor
+
+**Context from Run #135**: Napkin AI charges $12/mo just for SVG export. Skissify EUR 5 Pro offers private sketches + unlimited saves + 1,000 API renders/month. The value gap is massive and not visible on Skissify's pricing page. Additionally, the EUR 2/mo entry tier should be named "Indie" (not "Starter") to signal the persona, not the progression step. This is a 30-minute change with potential significant impact on conversion rate.
+
+**Do this (20-30 minutes):**
+1. Rename the EUR 2/mo tier from "Starter" to "Indie" (or whatever the current lowest paid tier is called)
+2. Add a line to the EUR 5 Pro tier: "SVG export included — Napkin charges $12/mo for this alone"
+3. Add to pricing page FAQ: "Why EUR 2/mo when InfraSketch is free?" → "InfraSketch draws cloud diagrams. Skissify draws floor plans, napkin sketches, and architecture diagrams — from JSON, for your AI agent, in 100ms. Different tool, different job."
+4. Tweet the updated pricing page: "Updated our pricing. TL;DR: EUR 2/mo for indie builders. EUR 5/mo includes API + SVG export. Napkin charges $12/mo for just the SVG export. We think that's too much."
+
+**Target outcome**: Clearer persona targeting, explicit price anchoring against Napkin AI, improved conversion from free→Indie tier.
+
+---
+
+## [2026-04-05] — Strategy Run #134 Actions (Sunday April 5, Stockholm — Morning) — FOR MONDAY APRIL 6
+
+### Context: Run #134 Key New Findings
+- **tldraw 4.5.6 released April 2, 2026** — cadence restored after 2.5-month gap; bug-fix release, no MCP/API changes
+- **Figma officially opened canvas to AI agents via MCP** — "use_figma" MCP tool enables agents to create/edit components on Figma canvas; $15-45/user/mo entry price; validates agent-visual creation category
+- **FigJam + Microsoft 365 Copilot** — diagram generation from M365 context (flowcharts, Gantt, sequence, state diagrams); enterprise collaboration lock-in deepens
+- **Draw.io MCP now renders inline as iframes in AI chat** — 4 integration modes including Claude Code skill; 10K+ shapes
+- **MCP ecosystem: 97M monthly SDK downloads, 4,133+ indexed servers** — Pinterest production deployment saving thousands of hours/month; enterprise adoption accelerating
+- **Credit-based pricing grew 126% YoY** — 79 of PricingSaaS 500 now use credits (up from 35 in 2024); validates Skissify's hybrid model
+- **MCP Registry submission CRITICAL RED — 35th consecutive run unconfirmed**
+- Run #133 actions for Monday still partially valid — "JSON to Diagram API" blog post and MCP registry submission carry forward
+
+---
+
+### Action 1 (CRITICAL — Monday): Register Skissify MCP Server in the Official Registry
+
+**Context from Run #134**: The MCP registry now has 4,133+ indexed servers and 97M monthly SDK downloads. Figma, Draw.io, tldraw, and Excalidraw all have official MCP servers registered and discoverable by Claude, Cursor, Gemini, ChatGPT, and VS Code users. Skissify is the only tool in its category — headless JSON→hand-drawn SVG — and yet it is invisible to MCP clients because the registry submission has not been completed. This is the 35th consecutive strategy run flagging this as CRITICAL RED.
+
+**Do this (30-60 minutes — highest priority):**
+1. Go to [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/) — submit the Skissify MCP server
+2. Server name: `skissify` — description must include: "JSON to hand-drawn SVG, floor plans, architectural diagrams, headless, no browser required"
+3. Keywords: `sketch`, `floor-plan`, `hand-drawn`, `SVG`, `JSON`, `architecture`, `diagram`, `headless`
+4. Ensure the `skissify-mcp` npm package is published and the registry entry links to it
+5. Cross-post announcement in: r/mcp, r/ClaudeAI, relevant MCP Discord servers
+
+**Target outcome**: Every Claude, Cursor, Gemini, and VS Code user searching for "sketch", "drawing", "floor plan", or "diagram" MCP tool finds Skissify. This is the single highest-leverage action with zero content creation cost.
+
+**URL**: https://registry.modelcontextprotocol.io/
+
+---
+
+### Action 2 (HIGH — Monday): Publish "Figma MCP vs Skissify MCP — Different Jobs, Same Agent Pipeline" Blog Post
+
+**Context from Run #134**: Figma officially opened their canvas to AI agents via MCP (March/April 2026). This is a newsworthy moment that Skissify can piggyback on. Developers reading about Figma MCP will wonder: "What about hand-drawn sketches? What about floor plans? What if I don't need design system components?" That is Skissify's exact audience.
+
+**Do this (60-90 minutes — blog post + social):**
+1. Title: "Figma Just Opened Its Canvas to AI Agents. Here's When You Want Skissify Instead."
+2. Structure:
+   - What Figma MCP does (UI components, design systems, Figma canvas, $15-45/mo)
+   - What Skissify MCP does (hand-drawn SVG, floor plans, JSON manifests, EUR 2/mo, no browser)
+   - The rule of thumb: "Figma MCP = polish your UI. Skissify MCP = sketch your idea."
+   - Code example: side-by-side showing a Figma MCP call vs. a Skissify MCP call for generating a simple floor plan
+3. Publish to blog
+4. Share on: Twitter/X ("Figma opened canvas to agents. Great. But if your agent needs a hand-drawn floor plan, here's what you actually want."), LinkedIn, r/mcp, r/ClaudeAI
+
+**Target outcome**: Capture developer traffic searching for "Figma MCP alternatives" and "AI agent drawing tool" who were exposed to Figma MCP news but need a cheaper, simpler, hand-drawn option. Skissify appears as the natural pairing in the agent visual stack (Figma for UI, Skissify for sketches/floor plans).
+
+**Reference**: https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/
+
+---
+
+### Action 3 (MEDIUM — Monday): Add Draw.io MCP Inline Iframe Feature to Skissify's MCP Roadmap
+
+**Context from Run #134**: Draw.io's MCP server now renders diagrams inline as interactive iframes directly in AI chat interfaces (Claude, Cursor, etc.) using the MCP Apps protocol. This means when a user asks Draw.io to create a diagram, it appears visually in the conversation — not just a file that opens in a browser. This is a significant UX upgrade that Skissify's MCP server should replicate.
+
+**Do this (30-45 minutes — roadmap + GitHub issue):**
+1. Create a GitHub issue titled "MCP App Protocol: Inline SVG rendering in AI chat (parity with draw.io MCP)"
+2. Describe: "Draw.io's @drawio/mcp now renders diagrams inline in Claude/Cursor chat via MCP Apps protocol. Skissify should render the hand-drawn SVG inline in the AI chat conversation, not just return a URL. This closes the 'show me the sketch right here' UX gap."
+3. Add to public roadmap if one exists, or note in CLAUDE.md under upcoming features
+4. Tweet the roadmap item: "Working on inline sketch rendering in AI chat — so when you ask Claude to draw a floor plan via Skissify MCP, the hand-drawn sketch appears right in the conversation. Like draw.io does for diagrams, but hand-drawn."
+
+**Target outcome**: Signal to developers that Skissify is tracking the MCP ecosystem and iterating toward feature parity on UX. This is also content for the MCP community audience — showing responsiveness to ecosystem developments. The actual implementation can follow; the commitment generates interest now.
+
+**Reference**: https://github.com/jgraph/drawio-mcp
+
+---
+
+## [2026-04-04] — Strategy Run #133 Actions (Saturday April 4, Stockholm — Night) — FOR SUNDAY APRIL 5
+
+### Context: Run #133 Key New Findings
+- **ArchitectureDiagram.ai** confirmed building JSON→SVG API ("coming soon") — first near-lane competitor; no hand-drawn; window open to capture "JSON to diagram API" search queries before they launch
+- **tldraw SDK 4.3** is last confirmed release (January 19, 2026) — no April release yet; 2.5-month gap; monthly cadence slowing
+- **AI diagramming market: USD 12.07B by 2035** — validated niche market size
+- **EUR 2/mo confirmed below 2026 micro-SaaS floor** — correct positioning as friction-removal step, not revenue tier
+- **MCP Registry submission CRITICAL RED — 34th consecutive run unconfirmed**
+- Previous Run #132 actions for Sunday still apply (MCP registry keyword optimization, Skissify vs Excalidraw MCP blog post, tldraw Computer watchlist) — carry forward
+
+---
+
+### Action 1 (CRITICAL — Sunday): Publish a "JSON to Diagram API" Search-Capture Blog Post Before ArchitectureDiagram.ai Launches
+
+**New from Run #133**: ArchitectureDiagram.ai is building a JSON→SVG API and it is currently "coming soon" — not live. This is a time-limited window to rank for "JSON to diagram API", "JSON architecture diagram API", and "JSON to SVG API" before they publish. Their focus is IT/cloud architecture (AWS boxes, network diagrams), not hand-drawn. Skissify's post must capture developers who want EITHER use case and discover the hand-drawn/floor-plan differentiation.
+
+**Do this (60 minutes — blog post):**
+1. Title: "The JSON to Diagram API That Actually Exists in 2026 (Hand-Drawn, Headless, EUR 2/mo)"
+2. Body: Explain the problem (agents need SVG output; no JSON→SVG API is live and headless); show a curl example with a real JSON manifest; compare to ArchitectureDiagram.ai ("coming soon"), Mermaid (text-not-JSON), Excalidraw (browser required), tldraw ($6K/yr)
+3. Include: A floor plan example JSON + the resulting SVG render (screenshot or embed)
+4. CTA: `curl -X POST https://api.skissify.com/render -H "Content-Type: application/json" -d @floor.json`
+5. Publish to blog + cross-post to dev.to with tag "json, api, diagram, mcp, agents"
+
+**Target outcome**: Rank for "JSON to diagram API 2026" and "JSON to SVG diagram headless" before ArchitectureDiagram.ai goes live. Every week this post exists before their launch, Skissify accumulates domain authority on those queries.
+
+---
+
+### Action 2 (HIGH — Sunday): Complete MCP Registry Submission to All Three Directories (34-Run Deadline)
+
+**Still CRITICAL RED from Run #133**: 34 consecutive runs without confirmed MCP registry submission. ArchitectureDiagram.ai entering the JSON→SVG API space makes this more urgent — Skissify must be discoverable in MCP registry search BEFORE any new entrant establishes a listing. The registry keyword for "JSON diagram" will be contested within months.
+
+**Do this (45 minutes — three simultaneous submissions):**
+1. **registry.modelcontextprotocol.io** — official MCP Registry. Submit `@skissify/mcp-server`. Description must open with: "Headless JSON→hand-drawn SVG. No browser. No Chromium. One curl call. Sub-100ms. Returns SVG file."
+2. **pulsemcp.com** — confirmed discovery channel (Excalidraw Maaker MCP is listed there). Submit with tags: `hand-drawn`, `floor-plan`, `svg`, `headless`, `architectural`, `JSON`, `curl`
+3. **publicmcpregistry.com** — third directory confirmed in Run #132. Submit same description.
+
+**Copy for all three listings (first 100 chars matter most for search ranking):**
+> "Skissify — headless JSON→hand-drawn SVG. No browser. Sub-100ms. Floor plans, doors, windows, stairs. EUR 2/mo. curl-compatible. Works with Claude, GPT-4, CrewAI, LangGraph, n8n, Mastra."
+
+**Confirmation required**: Post URL of confirmed listing in the next strategy run. This has been CRITICAL RED for 34 runs. Every run without confirmation is compounding lost index time in the registry.
+
+---
+
+### Action 3 (MEDIUM — Sunday): Post One Comparison Tweet/Thread "tldraw SDK vs Skissify — January Was Their Last Release"
+
+**New from Run #133**: tldraw SDK 4.3 shipped January 19, 2026 — no release in 2.5 months as of April 4. This is not confirmed as a "halt" but it is a factual gap developers can verify. Developers evaluating tldraw at $6,000/year commercial in Q2 2026 are already in their renewal window.
+
+**Do this (20 minutes — Twitter/X thread, 3 posts):**
+1. Post 1: "tldraw SDK last shipped January 19, 2026. It costs $6,000/year. I ship Skissify every week for EUR 2/month." [include tldraw.dev/releases link]
+2. Post 2: "tldraw returns an interactive canvas. Skissify returns an SVG file. One of these is embeddable in a PDF, an email, a CI artifact, or an API response without a browser. Guess which." [curl example]
+3. Post 3: "If you're building an AI agent that needs sketch output — Skissify is headless, JSON-first, sub-100ms. No $6K SDK. No browser. No Chromium. One curl call." [link to docs/demo]
+
+**Why Sunday**: Developers review tool options on weekends. A Sunday thread in #buildinpublic, tagged with tldraw, reaches founders/developers who are actively making tool decisions for the week ahead. Time investment: 20 minutes. Return: organic discovery from developers searching tldraw alternatives.
+
+**Tone**: Factual, not combative. State the dates and prices; let developers draw their own conclusions.
+
+---
+
 ## [2026-04-04] — Strategy Run #132 Actions (Saturday April 4, Stockholm) — FOR SUNDAY APRIL 5
 
 ### Context: Run #132 Key New Findings

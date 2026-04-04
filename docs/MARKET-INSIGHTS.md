@@ -2,6 +2,164 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #135 (Saturday April 4, Stockholm — Midday)
+
+### Theme: Figma Make Goes Deep on Design Systems; InfraSketch Emerges as SEO Competitor; Hybrid Pricing Hits 43% Market Adoption; EUR 2/mo Remains Correct as Entry Hook
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #135 Synthesis
+
+This run surfaces four new signals: (1) **Figma Make Kits + Attachments** (April 2) deepen Figma's hold on the enterprise design-system lane while leaving Skissify's headless sketch API lane completely empty; (2) **InfraSketch** is actively publishing SEO content and competing for "AI architecture diagram" search queries — Skissify needs an SEO counter-presence; (3) **Napkin AI** charges $12/mo for SVG export (Skissify's EUR 5 Pro is 58% cheaper with API access); (4) **hybrid SaaS pricing is now 43% market standard**, validating Skissify's model before it even launches.
+
+**1. Figma Make Kits reinforce the "wrong tool" insight for Skissify's audience.** Figma Make now accepts JSON and SVG attachments, has npm package integration, and teaches AI to use your design system. This is the most advanced AI design tool on the market. And it is completely irrelevant to a developer who wants `curl -X POST https://api.skissify.com/render -d @floor-plan.json` and gets back an SVG in 100ms for EUR 0.005. The more sophisticated Figma's AI design system becomes, the more obviously Skissify fills the OTHER need: quick, cheap, headless, hand-drawn, schema-first. Figma Make Kits is the best possible reminder to Skissify users why they chose Skissify.
+
+**2. InfraSketch's SEO activity is a competitive signal Skissify must respond to.** InfraSketch is publishing "best AI diagram tools 2026" comparison posts — exactly the kind of search traffic Skissify needs to intercept. Key insight: InfraSketch ranks for "AI architecture diagram generator" queries but does NOT offer hand-drawn output, JSON schema input, MCP support, or floor plan elements. Skissify should publish "Skissify vs InfraSketch: hand-drawn sketches vs cloud diagrams" to capture the comparison query traffic before InfraSketch's SEO compounds further.
+
+**3. The EUR 2/mo entry hook is validated by Napkin AI's $12 SVG paywall.** Napkin charges $12/mo just to export SVGs without branding. Skissify at EUR 2/mo gives private sketches, unlimited saves, and API access (1,000 renders/mo). The value contrast is stark: Skissify offers a stronger utility proposition at 1/6th the price. The EUR 2 "Indie" tier should be marketed explicitly as the "developer's response to Napkin AI" — same goal (visual output), but for agents, not humans, at 1/6th the price.
+
+**4. 43% hybrid pricing adoption means Skissify's model is correct AND expected by 2026 buyers.** The Chargebee data (43% hybrid, 61% projected by end-2026) means developers and teams now expect "flat subscription + usage overage" as a default. Skissify launching with a hybrid model is not innovative — it is now table-stakes. The differentiation is the render cost: at EUR 0.005/render with sub-100ms Canvas 2D, Skissify's overage is essentially pure margin. This should be communicated as a performance story ("we render in 100ms with zero GPU overhead") not just a pricing story.
+
+---
+
+#### EUR 2/mo Trigger Analysis — Run #135 Update
+
+The core trigger remains: **integration creates identity**. The EUR 2/mo is not purchased for the features — it is purchased when a developer first successfully calls the API from their agent and sees a hand-drawn SVG appear in their response. The decision to upgrade from Free to EUR 2/mo happens at the moment of "this works in my pipeline."
+
+**New supporting evidence from Run #135**:
+- Napkin AI's $12 SVG-export paywall shows users will pay for visual utility — Skissify's EUR 2 is an order of magnitude lower friction
+- InfraSketch's free model (no paid tier visible) creates a "serious users pay" gap that Skissify EUR 2/mo can occupy without matching InfraSketch's free tier
+- Figma Make Kits require $15-45/mo entry — every developer who reaches for Figma and decides "too complex, too expensive" is a potential EUR 2/mo Skissify conversion
+
+**EUR 2/mo should be renamed "Indie"** (not "Starter") — signals the persona (individual builder) rather than the progression step. Keep the price. The label does the selling.
+
+---
+
+## Update: 2026-04-05 — Strategy Run #134 (Sunday April 5, Stockholm — Morning)
+
+### Theme: Figma Enters Agent-Visual Creation via MCP; tldraw Resumes Shipping; Credit-Based Pricing Explodes 126% YoY; EUR 2/mo Validated as Friction-Removal Hook at Near-Zero Compute Cost
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #134 Synthesis
+
+This run adds three new market signals that sharpen the EUR 2/mo question: (1) **Figma has formally entered agent-driven visual creation via MCP** — the category is now defined by major players, validating Skissify's positioning but also raising the bar for what "agent + visual output" must deliver; (2) **credit-based SaaS pricing grew 126% YoY** (79 companies in the PricingSaaS 500 now offering credits, up from 35 in 2024) — Skissify's usage-based overage model is correct and timely; (3) **tldraw resumed shipping with 4.5.6** on April 2, 2026 — the "paid $6K, nothing shipped" window that existed in Run #133 has closed.
+
+**1. The EUR 2/mo proposition sharpens against the Figma MCP launch.** Figma now offers agent-driven visual creation — but at $15-45/user/month, requiring design system setup, Figma licenses, and UI/component knowledge. A developer building an AI floor plan agent or architecture diagram pipeline does not want Figma. They want: a JSON payload in, an SVG out, in 100ms, for EUR 2/month. Figma's MCP entry raises awareness of "agents that draw" as a category while leaving Skissify's price, speed, and domain specificity completely unchallenged. The Figma launch is the best free marketing Skissify could ask for — it validates the category without competing in the headless, hand-drawn, JSON-first lane.
+
+**2. Credit-based pricing at EUR 0.005/render is the right model for 2026.** The PricingSaaS 500 data (126% YoY growth in credit-based companies) confirms Skissify's hybrid model — flat subscription (EUR 2-9/mo) + overage renders (EUR 0.005/render) — is aligned with where the market is moving. AI SaaS gross margins of 20-60% vs traditional SaaS 70-90% mean usage-based billing is not just trendy; it's structurally necessary. Skissify's Canvas 2D render cost is effectively zero (no GPU, no Chromium, sub-100ms) — meaning every render beyond the included allocation is near-100% margin. This is the single best financial property of the product and must be communicated clearly in pricing copy.
+
+**3. EUR 2/mo works because Skissify's CAC is near-zero and churn rate determines LTV, not price.** The 2026 SaaS conversion research confirms: typical freemium-to-paid SaaS conversion is 2-5%, with top performers reaching 10-25% via free trials. At EUR 2/mo: (a) the friction to convert is near-zero — impulse purchase territory, (b) the retention trigger is the first successful API call from an agent — once integrated, churn probability drops significantly (switching costs apply), (c) upgrade path is clear: a developer using the API for 500+ renders/month will naturally move to EUR 5 Pro or EUR 12 Team for higher quotas. EUR 2/mo is the step from "free tier abuser" to "paying customer identity" — the LTV comes from the upgrade, not the initial conversion.
+
+**4. The willingness-to-pay signal from the Figma/tldraw price gap is significant.** tldraw charges $6,000/year for SDK commercial use. Figma charges $15-45/user/month for design tools. Excalidraw+ charges $6-7/user/month. All of these represent the "established tool" category. Skissify at EUR 2/mo occupies the "utility API" category — the mental model is closer to a Stripe or Postmark API call than a design tool subscription. Developers budget for utility APIs without approval processes (under EUR 50/month is typically expensed without manager sign-off). EUR 2/mo is below the detection threshold of most enterprise expense approval workflows — this is the correct framing for the pricing page.
+
+---
+
+#### Target Persona Pain Points — Run #134 Update
+
+**Persona A: Developer building an AI agent that generates floor plans (highest-value)**
+- Pain: Every sketch tool requires a browser, an active session, or a user in the loop
+- Figma MCP requires design system setup, $15-45/mo licenses, UI component knowledge — overkill
+- Draw.io MCP renders XML — not a native JSON schema, no hand-drawn output
+- What triggers EUR 2/mo: "I need a portable SVG in my API response. Skissify is the only tool that returns one without launching a browser."
+- **New Run #134 angle**: "Figma just opened their canvas to agents. Skissify opened ours 6 months earlier, for 1/10th the price, with hand-drawn style and no design system required."
+
+**Persona B: Solo developer / indie hacker using Skissify for documentation or pitches**
+- Pain: Mermaid diagrams look technical; Excalidraw requires manual drawing; hand-drawn PDFs from Figma cost $15/mo
+- What triggers EUR 2/mo: "I produce better-looking documents and it looks personal, not AI-generated."
+- Retention trigger: First time a client compliments the sketch aesthetic in a proposal
+
+**Persona C: AI framework developer integrating visual output into their pipeline (agent builder)**
+- Pain: No native JSON→SVG endpoint exists — all sketch tools are interactive, browser-based
+- MCP ecosystem at 4,133 servers — but zero of them produce hand-drawn SVG
+- What triggers EUR 2/mo: Discovering Skissify is already in the MCP registry (once submitted)
+- **Critical blocker**: MCP Registry submission still not completed — 35th consecutive run. This persona CANNOT discover Skissify without it.
+
+---
+
+#### Pricing Psychology — Run #134 Findings
+
+**Key data from 2026 SaaS pricing research**:
+- Freemium-to-paid conversion: 2-5% industry average; 10-25% for free trial models
+- Credit-based pricing companies in PricingSaaS 500: 79 (2026) vs. 35 (2024) — 126% YoY growth
+- Sub-$10/mo subscription: impulse-purchase territory, no manager approval needed in most orgs
+- Psychological price anchoring: $29 outperforms $30; EUR 1.99 outperforms EUR 2.00 — trivial but worth testing
+- Enterprise AI SaaS gross margins: 20-60% (vs 70-90% traditional SaaS) — usage billing protects margins
+
+**For Skissify specifically**:
+- EUR 2/mo should be named clearly (e.g., "Indie" not "Starter") to signal it is for individual builders
+- The pricing page must show the per-render cost prominently: "EUR 0.005/render beyond quota"
+- Usage-based overage must auto-upgrade path (e.g., "You're using 2,000 renders/mo — upgrade to Pro to save 60%")
+- Lifetime Deal at EUR 99 (capped 500 users) remains the strongest launch lever for early MRR
+
+---
+
+#### Strategic Insight: EUR 2/mo Makes Sense Specifically Because of Near-Zero Compute Cost
+
+The EUR 2/mo question has the same answer across Runs #133 and #134 but now with stronger evidence:
+
+EUR 2/mo works for Skissify because:
+1. **Canvas 2D rendering is free** — no Chromium headless browser, no GPU, sub-100ms; each render costs < EUR 0.0001 in compute
+2. **The price is below expense-approval thresholds** — individuals pay without asking; companies pay without noticing
+3. **Integration creates switching cost** — once a developer has `skissify_render` in their agent, they don't remove it
+4. **EUR 2 is a commitment signal, not a revenue signal** — converts "curious free user" into "customer identity"
+5. **Real revenue comes from overage** — 1,000 API renders/month at EUR 0.005 = EUR 5 in overage alone; agentic users scale fast
+
+The EUR 2/mo tier should be kept as-is. The revenue story is in the overage curve.
+
+---
+
+## Update: 2026-04-04 — Strategy Run #133 (Saturday April 4, Stockholm — Night)
+
+### Theme: New JSON API Competitor Emerges (Not Live Yet); AI Diagram Market at USD 12B by 2035; EUR 2/mo Micro-SaaS Floor Confirmed Below Market; MCP Still the Primary Distribution Channel
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #133 Synthesis
+
+Run #133 introduces two new data dimensions: (1) **ArchitectureDiagram.ai** is building a JSON→SVG API — the first confirmed competitor approaching Skissify's core lane, though currently "coming soon" and in a different aesthetic domain (IT architecture vs. hand-drawn sketch), and (2) **micro-SaaS pricing research confirms EUR 2/mo is below the typical 2026 SaaS floor ($9-20/month for most tools)** — validating it as a friction-removal entry step, not a sustainable revenue tier. The EUR 2/mo question therefore has a clearer answer: it works specifically because Skissify's compute cost is near-zero and the primary revenue is upstream (EUR 9–19/mo tiers).
+
+**1. The ArchitectureDiagram.ai signal is strategic, not threatening — yet.** A team is building a JSON→SVG API for architecture diagrams (cloud/IT). They do not have hand-drawn output. They do not have floor plan elements. They do not have MCP distribution. Their API is "coming soon." But their existence confirms the market thesis: developers WANT a JSON→SVG API for diagram generation. The question is only who wins the search query "JSON to diagram API." Skissify must publish its npm rendering engine and MCP server BEFORE ArchitectureDiagram.ai ships, to capture the "hand-drawn" and "floor plan" and "architectural domain" queries first.
+
+**2. EUR 2/mo is below the 2026 SaaS pricing floor — use it as a hook, not a price signal.** 2026 micro-SaaS data confirms most developer tools charge $9-49/month for premium tiers. EUR 2/mo sits below even micro-SaaS floor pricing. This is correct for Skissify because: (a) Skissify's compute cost per render is near-zero (Canvas 2D, sub-100ms, no GPU), (b) EUR 2/mo is a conversion step from "free tier abuser" to "paying customer on record" — the LTV comes from upgrades, (c) purchasing power parity (PPP) pricing for EU/Eastern Europe markets makes EUR 2/mo appropriate for developer utility tools. The signal from Run #133 pricing data: do NOT raise the EUR 2/mo Indie tier — it is already positioned as intentionally below-market to minimize friction.
+
+**3. The USD 12.07B diagramming market validates niche play.** At 12B total market by 2035, even a 0.01% niche capture is EUR 1.2M ARR. Skissify does not need to beat Miro, Lucidchart, or Excalidraw. It needs to own the intersection of: headless + hand-drawn + JSON-first + architectural domain elements. No other tool occupies this intersection — confirmed across 34 consecutive research runs.
+
+**4. SketchUp 2026's AI texture launch is a category confirmation, not a threat.** SketchUp adding AI to 3D modeling confirms that the architecture software vertical is actively adopting AI. SketchUp's users (3D architects, BIM specialists) are an adjacent persona to Skissify's target (developers building floor plan AI pipelines). A co-marketing angle: "What SketchUp does in 3D, Skissify does in hand-drawn 2D JSON." Potential content crossover for architecture-adjacent developers searching for 2D sketch output for their AI floor plan agents.
+
+---
+
+#### Target Persona Pain Points — Run #133 Update
+
+**Persona A: Developer building an AI agent that generates floor plans (highest-value)**
+- Pain: Every sketch tool requires a browser, an active session, or a user in the loop
+- Current workaround: Take Mermaid text output and describe it in prose (no visual output)
+- What triggers EUR 2/mo: "I need a portable SVG in my API response. Skissify is the only tool that returns one."
+- Upgrade trigger (EUR 9/mo): API rate limit hit at 1,000 renders/month
+
+**Persona B: Architect or proptech founder using LLMs to generate spatial layouts**
+- Pain: LLMs generate floor plan descriptions in text; no tool converts to sketch format without manual drawing
+- Current workaround: Describe the layout in words and show a hand-drawn PNG from a previous session
+- What triggers EUR 2/mo: "I need door/window/stair symbols in my AI-generated sketch. No other tool has these."
+- Upgrade trigger (EUR 19/mo Studio): Access to full architectural element library
+
+**Persona C: MCP tool chain builder (n8n, CrewAI, LangGraph, Mastra)**
+- Pain: Agent pipelines produce text artifacts only; visual output requires spinning up a browser or screenshotting
+- Current workaround: Markdown tables, ASCII art, or embedded Mermaid (no hand-drawn aesthetic)
+- What triggers EUR 2/mo: "Found Skissify in MCP registry. Works via curl. Removes watermark. EUR 2/month."
+- Discovery channel: MCP registry keyword search "hand-drawn diagram" or "floor plan"
+
+---
+
+#### Key Market Opportunities — Run #133
+
+1. **Beat ArchitectureDiagram.ai to "JSON→SVG API" search ranking** — their API is "coming soon"; Skissify's npm publish + blog post can capture that query space before they launch. Time-sensitive window: now.
+2. **SketchUp 2026 content crossover** — SketchUp 2026 launched AI texture generation; blog angle "SketchUp for 3D, Skissify for 2D hand-drawn floor plans" targets the architecture AI pipeline vertical.
+3. **EUR 2/mo PPP pricing signal** — 2026 pricing research validates PPP discounts (30-50%) for Eastern Europe, India, Brazil. Skissify's EUR 2/mo Indie IS the PPP-adjusted price for most EU developer markets. No change needed.
+4. **AI Diagram Generator market at USD 12.07B by 2035** — Skissify's CAGR-adjusted niche target: 0.01% = EUR 1M+ ARR by 2035 on current trajectory. Keeps the market size narrative credible for any future fundraising or partnership conversations.
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #132 (Saturday April 4, Stockholm — Evening)
 
 ### Theme: MCP at 20,000 Servers Is Now a Search Problem; Excalidraw March Features Are Human UX; tldraw Splits into Three Products; EUR 2/mo Entry Tier Survives New Pricing Data

@@ -2,6 +2,281 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #135 (Saturday April 4, Stockholm — Midday)
+
+### Status: 5 topics researched. KEY FINDINGS: **Figma Make Kits + Attachments launched April 2, 2026** — deep design system context in AI prototyping; accepts SVG/JSON attachments; doubles down on enterprise/design-system lane, NOT headless JSON→sketch. **InfraSketch confirmed as active competitor** — free AI architecture diagram tool (natural language→cloud infra diagrams), no hand-drawn aesthetic, cloud-only domain; SEO active with "best AI diagram tools 2026" blog posts. **Napkin AI pricing updated** — $12/mo Plus (SVG export), $30/mo Pro; text→business visuals, not JSON-driven, not MCP-compatible; further validates sub-$15 pricing floor for the sketch/diagram utility tier. **MCP ecosystem now 12,000+ servers on PulseMCP** (after filtering low-quality) — Linux Foundation stewardship confirmed; 97M monthly SDK downloads; zero of them produce hand-drawn JSON→SVG. **SaaS hybrid pricing hits 43% adoption** — 61% projected by end 2026; Bessemer projects 62% of all SaaS will have usage-based component by 2027. **MCP Registry submission CRITICAL RED — 36th consecutive run unconfirmed.**
+
+---
+
+### Figma Make Kits + Make Attachments — April 2, 2026 (COMPETITIVE UPDATE)
+
+**Sources**: [Figma Blog — Make Kits and Make Attachments](https://www.figma.com/blog/introducing-make-kits-and-make-attachments/), [Figma Release Notes](https://www.figma.com/release-notes/), [Figma X announcement](https://x.com/figma/status/2039698532102480302), verified 2026-04-04
+
+**New development**: On April 2, 2026, Figma launched Make Kits and Make Attachments — bringing real design system context into Figma Make AI prototype generation. Make Kits let design system authors package components, styles, tokens, and npm packages with guidelines that teach Make how to use them. Make Attachments let users add PRDs, brand guidelines, code files, CSVs, JSON files, SVGs, images, and videos directly to AI prompts.
+
+**What this means for Skissify**: Figma Make now accepts JSON and SVG as attachments — a potential surface for overlap if a user tried to feed a Skissify-style JSON manifest to Figma Make. However: (1) Figma Make produces pixel-perfect UI components, not hand-drawn sketches; (2) it requires Figma paid plans ($15-45/user/month); (3) it is interactive canvas–based, not a headless render API. This deepens Figma's hold on the design system + AI prototyping lane while leaving Skissify's headless JSON→hand-drawn SVG lane completely untouched. The SVG/JSON attachment support is a signal that "structured inputs for AI visual generation" is becoming mainstream — Skissify's JSON schema is well-positioned as the dedicated sketch-layer standard.
+
+**Threat assessment: LOW (enterprise design-system lane; not headless, not hand-drawn, $15-45/mo entry)**
+
+---
+
+### InfraSketch — Active Competitor Confirmed (NEW ENTRY)
+
+**Sources**: [InfraSketch.net](https://www.infrasketch.net/), [InfraSketch.ai](https://infrasketch.ai/), [GitHub — maafrank/InfraSketch](https://github.com/maafrank/InfraSketch), [Best AI Diagram Tools 2026 — InfraSketch Blog](https://infrasketch.net/blog/best-ai-diagram-tools-2026), [InfraSketch 2026 Overview — TechTrendin](https://www.techtrendin.com/products/infrasketch), verified 2026-04-04
+
+**New finding**: InfraSketch is an AI-powered system design tool that generates interactive architecture diagrams and comprehensive design documents from plain English prompts. Free tier. Cloud infra focus (AWS, Azure, GCP). Exports Markdown design docs as "source of truth" for Claude Code and other AI coding assistants. Natural language input — not JSON-first.
+
+**Feature summary**: Natural language→architecture diagrams, hover-to-inspect component details, conversational design iteration, color-coded nodes (databases, caches, servers, APIs, load balancers, queues, CDNs), Markdown export for LLM context injection, real-time updates.
+
+**Differentiator gap vs Skissify**: InfraSketch = cloud infrastructure diagrams, clean vector style, natural language input, free, no MCP. Skissify = hand-drawn aesthetic, JSON-first, floor plans + architectural elements, programmatic/agent use, MCP-native, EUR 2+/mo. The domains barely overlap — InfraSketch targets DevOps/platform engineers; Skissify targets AI agent builders, architects, and indie developers. However, InfraSketch is actively publishing SEO content ("best AI diagram tools 2026"), which means it competes for search traffic in the "AI diagram" query space.
+
+**Threat assessment: MEDIUM-LOW (different domain/aesthetic; SEO competitor for "AI architecture diagram" queries; validates "JSON→architecture visualization" demand)**
+
+---
+
+### Napkin AI Pricing Update — $12-30/mo (PRICING INTELLIGENCE)
+
+**Sources**: [Napkin AI Pricing](https://www.napkin.ai/pricing/), [Napkin AI Review 2026 — AIChief](https://aichief.com/ai-design-tools/napkin-ai/), [Napkin AI Review — TechRaisal](https://www.techraisal.com/blog/napkin-ai-review/), verified 2026-04-04
+
+**Current Napkin AI pricing**: Free (weekly credits, multi-format import), Plus ($12/person/month — SVG export, no branding), Pro ($30/person/month), Enterprise (custom).
+
+**Relevance for Skissify**: Napkin AI converts text→business visuals (flowcharts, diagrams, infographics) — not hand-drawn, not JSON-driven, not MCP-compatible. The $12/mo Plus tier (SVG export) is the most comparable paid threshold. Skissify's EUR 5 Pro tier with SVG export + API access at EUR 5/mo sits 58% below Napkin's first paid tier. The pricing gap continues to validate Skissify's sub-$10 positioning for utility-tier sketch tools. Napkin is reviewed positively for "faster than Figma" visual creation — the same pitch Skissify should be making in the developer segment. Note: Napkin has no API, no MCP, no JSON schema — pure prompt-to-visual, human-in-the-loop only.
+
+**Threat assessment: LOW (different input paradigm; no headless/API mode; validates sub-$15 pricing floor for sketch utility tools)**
+
+---
+
+### MCP Ecosystem Scale Update — 12,000+ Servers Post-Filter (April 2026)
+
+**Sources**: [Complete Guide to MCP Servers 2026 — SkillsIndex](https://skillsindex.dev/blog/complete-guide-mcp-servers-2026/), [MCP Standard and Ecosystem 2026 — Apify](https://use-apify.com/blog/mcp-standard-ecosystem-2026), [Pinterest MCP Production — InfoQ](https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/), [MCP Roadmap 2026 — The New Stack](https://thenewstack.io/model-context-protocol-roadmap-2026/), verified 2026-04-04
+
+**Updated scale metrics (April 2026)**:
+- **12,000+ servers** on PulseMCP after filtering low-quality implementations (up from 4,133 on SkillsIndex which uses stricter quality filters)
+- **97 million monthly SDK downloads** (Python + TypeScript)
+- **Linux Foundation** stewards the MCP protocol since late 2025 — ensures long-term stability and enterprise trust
+- **Pinterest production**: 66,000 invocations/month across 844 active users, saving 7,000 hours/month
+- **Enterprise backing confirmed**: Microsoft, AWS, HashiCorp all shipping native MCP servers for core infrastructure tools
+
+**Zero of 12,000+ servers produce hand-drawn sketch output or architectural floor plan elements.** The MCP Registry submission gap has now reached 36 consecutive runs. Every day of non-submission is a missed discovery opportunity as MCP client adoption accelerates into production enterprise use.
+
+---
+
+### SaaS Pricing — Hybrid Model Hits 43% Adoption (April 2026)
+
+**Sources**: [SaaS Pricing Strategy Guide 2026 — NxCode](https://www.nxcode.io/resources/news/saas-pricing-strategy-guide-2026), [The Future of SaaS Pricing 2026 — Medium](https://medium.com/@aymane.bt/the-future-of-saas-pricing-in-2026-an-expert-guide-for-founders-and-leaders-a8d996892876), [1,800 Pricing Changes — Product Studio](https://productstudio.substack.com/p/1800-pricing-changes-in-one-year), [Flexera Hybrid Era Blog](https://www.flexera.com/blog/saas-management/from-seats-to-consumption-why-saas-pricing-has-entered-its-hybrid-era/), verified 2026-04-04
+
+**Key data points (April 2026 confirmation)**:
+- **43%** of SaaS companies now use hybrid pricing models — up from ~30% in 2025
+- **61%** projected hybrid model adoption by end of 2026 (Chargebee)
+- **62%** of all SaaS will have some usage-based component by 2027 (Bessemer Venture Partners)
+- Credit-based pricing grew **126% YoY** (79 of PricingSaaS 500 companies, up from 35 in 2024)
+- AI per-request compute costs vary **10x** depending on input complexity — driving usage-based billing
+
+**For Skissify**: The hybrid EUR 2-5/mo subscription + EUR 0.005/render overage model is now industry-standard for AI utility SaaS. The "1,800 pricing changes in one year" signal means competitors are still iterating; Skissify should lock in pricing early and stay stable to build trust. Near-zero compute cost per render (Canvas 2D, sub-100ms) means overage is ~100% margin — a structural advantage that should be communicated on the pricing page.
+
+---
+
+### Updated Competitor Matrix (Run #135 — Saturday April 4, 2026)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). March 2026: Trash, Mermaid ERD, Slide Templates, Arrow Binding. $6-7/user/mo. | NO (canvas-dependent) | YES | NO | YES (official) | **CRITICAL** |
+| **tldraw (April 2026)** | SDK 4.5.6 (April 2, 2026). MCP App (March 3, 2026 — Cursor, expanding to VS Code/ChatGPT/Claude). $6K/yr SDK. | Partial (interactive canvas) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp`. Inline MCP App iframe rendering. 4 integration modes. 10K+ shapes. | YES (XML/CSV/Mermaid) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Figma MCP + Make Kits** | Agents can create/edit Figma canvas via MCP. Make Kits + Attachments (April 2, 2026). $15-45/user/mo. | YES (Figma native) | NO | NO (requires Figma) | YES (official) | **MEDIUM (different lane)** |
+| **InfraSketch (NEW)** | Free AI cloud architecture diagrams from natural language. Active SEO. No MCP. No hand-drawn. | YES (natural lang→SVG) | NO | YES | NO | **MEDIUM-LOW (cloud/DevOps lane; SEO competitor)** |
+| **Napkin AI** | $12/mo Plus (SVG export). $30/mo Pro. Text→business visuals. No JSON, no MCP, no API. | NO (interactive only) | NO | NO | NO | **LOW (no headless/API)** |
+| **ArchitectureDiagram.ai** | JSON→SVG/PNG API. "Coming soon." IT/cloud arch only. No hand-drawn. | YES (coming soon) | NO | YES | NO | **MEDIUM-LOW (not yet live)** |
+| **OpenFlowKit** | MIT/free OSS. JSON DSL. SVG export. Flowpilot AI (BYOK Anthropic). "Under construction." | YES (DSL) | NO | Partial | NO | **MEDIUM** |
+| **FigJam + Copilot** | M365 Copilot integration for diagram generation from documents/messages. | NO (interactive only) | NO | NO | NO | **LOW (enterprise collab lane)** |
+
+---
+
+## Update: 2026-04-05 — Strategy Run #134 (Sunday April 5, Stockholm — Morning)
+
+### Status: 6 topics researched. KEY FINDINGS: **tldraw 4.5.6 confirmed released April 2, 2026** — ends the 2.5-month release gap; monthly cadence restored; includes bug fixes (circular deps, high-DPI images, frame parenting, custom shape crop crash). **Figma has opened canvas to AI agents via MCP** — "Figma canvas is now open to agents" (official blog post); agents can create/edit components, apply variables, and build designs using design systems via MCP — this is CRITICAL for Skissify's MCP positioning. **Draw.io MCP app protocol update** — diagrams now render inline as interactive iframes in AI chat (not just browser tabs); February 2026 shipping confirmed with four integration approaches including Claude Code skill. **FigJam + Microsoft 365 Copilot integration** — users can generate flowcharts, Gantt charts, sequence diagrams from M365 context (documents, messages); deepens enterprise lock-in. **MCP ecosystem: 97M monthly SDK downloads, 4,133+ indexed servers** — Pinterest production deployment confirmed saving thousands of hours per month. **Headless JSON→hand-drawn SVG: niche uncontested (35th consecutive run).**
+
+---
+
+### tldraw 4.5.6 Released April 2, 2026 — Cadence Restored (COMPETITIVE UPDATE)
+
+**Sources**: [tldraw npm](https://www.npmjs.com/package/tldraw), [tldraw Releases](https://tldraw.dev/releases), [tldraw GitHub](https://github.com/tldraw/tldraw/releases), verified 2026-04-05
+
+**New findings vs. Run #133**:
+- **tldraw 4.5.6** released approximately April 2, 2026 — 2 days prior to this run. This ends the 2.5-month January→April release gap flagged in Run #133.
+- **Bug fixes shipped**: circular dependency improvements, high-DPI image sizing (macOS + Windows), shapes pasted with Ctrl+V not parenting to frames, crashes when cropping custom shapes.
+- **Earlier releases in this cycle** (4.x series) added: R-tree spatial indexing, 2D canvas rendering for shape indicators (up to 25x performance improvement), Image Pipeline starter template (AI image workflow canvas), TldrawUiSelect component, consolidated `options` prop, fill styles dropdown, shape-aware binding checks.
+- The January→April gap was a development pause, not a halt. The resume with 4.5.6 shows active maintenance.
+
+**Positioning implication**: The "paid $6K, nothing shipped since January" window has closed. tldraw is active again. However 4.5.6 is bug-fix focused — no new MCP features, no JSON-schema API, no architectural elements. The SDK-for-React moat remains narrow and expensive for the developer segment Skissify targets (EUR 5/mo vs $6,000/yr).
+
+**Threat assessment: MEDIUM-HIGH (unchanged) — Monthly cadence restored; SDK still React-only, $6K/yr, no headless JSON input**
+
+---
+
+### Figma Opens Canvas to AI Agents via MCP — CRITICAL COMPETITIVE SIGNAL
+
+**Sources**: [Figma Blog — The Figma Canvas is Now Open to Agents](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/), [AI Agent Figma Integration 2026 MCP Guide — Fast.io](https://fast.io/resources/ai-agent-figma-integration/), [Building a Figma-Driven MCP Production Pipeline — Francesca Tabor, March 31, 2026](https://www.francescatabor.com/articles/2026/3/31/building-a-figma-driven-mcp-production-pipeline), verified 2026-04-05
+
+**New development**: Figma has shipped an MCP server enabling AI agents to directly create and edit designs on the Figma canvas — not just read files. Via the `use_figma` MCP tool, Claude Code, Codex, and other MCP clients can generate and modify design assets linked to design systems. This marks Figma's formal entry into agent-driven visual creation.
+
+**What agents can do via Figma MCP**:
+- Create and edit components, apply variables, build designs using your own design system
+- Query design metadata, retrieve screenshots, extract component mappings
+- Use "Skills" (markdown files encoding team conventions) to drive agent canvas behavior
+- Generate templates, timelines, org charts from prompts
+
+**Why this matters for Skissify**: Figma's MCP server targets the UI/design-system use case — pixel-perfect components, design tokens, Figma-native formats. It does NOT produce hand-drawn sketch output. It does NOT have a JSON manifest schema for spatial layouts. It requires Figma licenses ($15-45/user/month). However, it establishes "agent-driven visual creation via MCP" as a category that developers and product teams now expect. Skissify must position clearly: "Figma MCP = polished UI components; Skissify MCP = hand-drawn sketches, floor plans, architecture diagrams — in seconds, from JSON, at EUR 5/mo."
+
+**Threat assessment: MEDIUM (different aesthetic and domain; validates MCP-visual creation category; Figma price point ($15-45/mo) leaves Skissify's EUR 5 tier unchallenged)**
+
+---
+
+### Draw.io MCP — Inline Diagram Rendering in AI Chat (UPDATE)
+
+**Sources**: [draw.io MCP GitHub — jgraph/drawio-mcp](https://github.com/jgraph/drawio-mcp), [@drawio/mcp npm](https://www.npmjs.com/package/@drawio/mcp), [Medium — Configuring Draw.io MCP Server in VS Code, March 2026](https://medium.com/@rakesh.sheshadri44/configuring-the-draw-io-mcp-server-in-vs-code-for-ai-generated-diagrams-09ff30cf6503), [Medium — Automating Infrastructure Diagrams with Draw.io MCP, Feb 2026](https://medium.com/google-cloud/automating-mastering-infrastructure-diagrams-with-draw-io-mcp-and-antigravity-2839b78df143), verified 2026-04-05
+
+**New findings vs. Run #132**:
+- Draw.io MCP now offers **four integration approaches**: (1) original MCP server opening diagrams in editor (XML/CSV/Mermaid), (2) Claude Code skill generating native `.drawio` files with optional PNG/SVG/PDF export, (3) MCP App protocol rendering diagrams **inline as interactive iframes** in AI chat (not just opening browser tabs), (4) PyPI package `drawio-mcp`.
+- **search_shapes tool**: 10,000+ shapes across AWS, Azure, GCP, P&ID, electrical, Cisco, Kubernetes, UML, BPMN libraries — far broader shape coverage than Skissify's architectural elements, but without hand-drawn aesthetic.
+- Developer adoption increasing: tutorials from Google Cloud community (Feb 2026), VS Code configuration guides (March 2026) confirm growing usage.
+
+**Positioning implication**: Draw.io MCP is the most technically capable headless diagramming MCP server today. It has XML/CSV/Mermaid input (not JSON schema), no hand-drawn output, and requires the draw.io application for rendering. Skissify's differentiators remain: (1) hand-drawn aesthetic, (2) native JSON schema, (3) architectural domain elements (doors/windows/stairs/dimensions), (4) sub-100ms Canvas 2D — no Chromium, no draw.io app required. The inline iframe MCP App rendering is a feature worth monitoring for Skissify to replicate.
+
+**Threat assessment: MEDIUM-HIGH (unchanged) — most feature-rich MCP diagram server; architectural elements and hand-drawn aesthetic remain Skissify's gap**
+
+---
+
+### FigJam + Microsoft 365 Copilot — Enterprise Diagram Generation from M365 Context
+
+**Sources**: [FigJam AI — Figma](https://www.figma.com/figjam/ai/), [Miro vs FigJam 2026 — Startup House](https://startup-house.com/blog/figjam-vs-miro), [Figma Release Notes](https://www.figma.com/release-notes/), verified 2026-04-05
+
+**New development**: FigJam now integrates with Microsoft 365 Copilot, enabling users to generate structured diagrams (flowcharts, Gantt charts, sequence diagrams, state diagrams) from M365 context — referencing documents, messages, and other M365 assets in a prompt. FigJam AI also added image tools (Expand, Erase, Isolate) and Vectorize to its canvas, available in FigJam, Slides, and Buzz (beta).
+
+**Relevance for Skissify**: FigJam + Copilot targets enterprise teams already in the Microsoft/Figma ecosystem. It is text-prompt-driven, not JSON-schema-driven. No hand-drawn output. No headless API. Price: included in Figma paid plans ($15-45/user/month). This integration deepens FigJam's hold on enterprise visual collaboration but does not threaten Skissify's developer/agent pipeline niche.
+
+**Threat assessment: LOW for Skissify's core (different lane — enterprise collaboration vs. headless programmatic rendering)**
+
+---
+
+### MCP Ecosystem Scale — 97M Monthly Downloads, 4,133+ Servers, Pinterest Production Deployment
+
+**Sources**: [Pinterest Deploys Production-Scale MCP Ecosystem — InfoQ, April 2026](https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/), [MCP Standard and Ecosystem 2026 — Apify](https://use-apify.com/blog/mcp-standard-ecosystem-2026), [2026 Year for Enterprise-Ready MCP Adoption — CData](https://www.cdata.com/blog/2026-year-enterprise-ready-mcp-adoption/), verified 2026-04-05
+
+**Current ecosystem scale (April 2026)**:
+- **97 million monthly SDK downloads** (Python + TypeScript combined)
+- **4,133+ MCP servers** indexed on SkillsIndex (up from ~425 mid-2025, 873% growth)
+- **6,400+ servers** registered in the official MCP registry (as of February 2026)
+- **16,670 servers** across all directories as of September 2025 (per historical tracking)
+- **Client support**: Claude, ChatGPT, Cursor, Gemini, Microsoft Copilot, VS Code — all first-class
+
+**Pinterest production case study**: Pinterest deployed a domain-specific MCP ecosystem for AI agent automation of complex engineering tasks, with a central registry, domain-specific servers, and human-in-the-loop approval — saving thousands of hours per month. This is MCP moving from developer experimentation to production enterprise infrastructure.
+
+**Implication for Skissify**: 4,133 indexed servers and zero of them produce hand-drawn sketch output or architectural floor plan elements. Skissify's MCP server, once registered, enters a market where MCP is becoming enterprise infrastructure. The **MCP Registry submission remains CRITICAL RED** — 35th consecutive run without confirmed submission. Each day of non-submission is a missed opportunity as MCP client users search for visual output tools.
+
+---
+
+### Updated Competitor Matrix (Run #134 — Sunday April 5, 2026)
+
+| Tool | Status (2026-04-05) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). March 2026: Trash, Mermaid ERD, Slide Templates, Arrow Binding. $6-7/user/mo. | NO (canvas-dependent) | YES | NO | YES (official) | **CRITICAL** |
+| **tldraw (April 2026)** | SDK 4.5.6 (April 2, 2026 — cadence restored). MCP App (March 3, 2026). Computer/Gemini product. $6K/yr SDK. | Partial (interactive canvas) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp` Feb 2026. Inline MCP App iframe rendering. 4 integration modes. 10K+ shapes. | YES (XML/CSV/Mermaid) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Figma MCP (NEW)** | Agents can create/edit Figma canvas via MCP. Design system integration. $15-45/user/mo. March/April 2026. | YES (Figma native) | NO | NO (requires Figma) | YES (official) | **MEDIUM (different lane)** |
+| **FigJam + Copilot** | M365 Copilot integration for diagram generation from documents/messages. April 2026. | NO (interactive only) | NO | NO | NO | **LOW (enterprise collab lane)** |
+| **ArchitectureDiagram.ai** | JSON→SVG/PNG API. "Coming soon." IT/cloud arch only. No hand-drawn. | YES (coming soon) | NO | YES | NO | **MEDIUM-LOW (not yet live)** |
+| **OpenFlowKit** | MIT/free OSS. JSON DSL. SVG export. Flowpilot AI (BYOK Anthropic). "Under construction." | YES (DSL) | NO | Partial | NO | **MEDIUM** |
+| **ToDiagram** | JSON/YAML/CSV/XML→interactive diagrams. SVG export. Data visualization lane. | YES (data viz) | NO | YES | NO | **LOW** |
+| **Lucidchart** | AI-assisted drafting from text (2026 emphasis). $12-19/user/mo. | YES (structured import) | NO | YES | NO | **MEDIUM** |
+| **Eraser DiagramGPT** | Text→D2 code + rendered diagrams. GitHub-native. | NO (text-based) | NO | YES | NO | **LOW-MEDIUM** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
+## Update: 2026-04-04 — Strategy Run #133 (Saturday April 4, Stockholm — Night)
+
+### Status: 6 topics researched. KEY FINDINGS: **tldraw SDK 4.3 (Jan 2026) is the latest confirmed release** — no April 2026 release yet; next release overdue (last: Jan 19, 2026). tldraw now shipping again post-4.2 (Nov 2025) / 4.3 (Jan 2026) cadence — monthly minor versions confirmed; "12-month halt" finding from Run #130 remains UNCONFIRMED, now contradicted by two confirmed 2025-2026 releases. **ArchitectureDiagram.ai confirmed as new headless JSON→SVG competitor** — API "coming soon" status; no hand-drawn aesthetic; no MCP. **ToDiagram confirmed** — JSON/YAML/CSV/XML→interactive diagrams, SVG export, no hand-drawn, no MCP. **Eraser DiagramGPT** and **Diagramming AI** (Kroki-backed text→SVG) expanding but remain text-input, not JSON-schema-first. **SketchUp 2026 launched** with generative AI texture generation — 3D architecture tool; completely different category. **AI diagramming market projected USD 12.07B by 2035** (Spherical Insights). **Headless JSON→hand-drawn SVG: niche uncontested (34th consecutive run).**
+
+---
+
+### tldraw SDK April 2026 Status — Confirmed Monthly Cadence, No April Release Yet (COMPETITIVE UPDATE)
+
+**Sources**: [tldraw Releases](https://tldraw.dev/releases), [tldraw SDK 4.0 announcement](https://tldraw.dev/blog/tldraw-sdk-4-0), [tldraw GitHub](https://github.com/tldraw/tldraw/releases), [tldraw npm](https://www.npmjs.com/package/tldraw), verified 2026-04-04
+
+**New findings vs. Run #132**:
+- **tldraw SDK 4.3** released January 19, 2026 — confirmed most recent public release as of April 4, 2026.
+- **tldraw SDK 4.2** released November 19, 2025. Monthly cadence (Nov → Jan) is confirmed; gap from January to April is now 2.5 months without a release.
+- The April 2026 search found no April release. Either one is imminent or there is a development pause post-4.3.
+- **April 2026 feature snapshot** (from tldraw blog/search): R-tree spatial indexing, 2D canvas rendering for shape indicators (up to 25x perf improvement), Image Pipeline starter template (AI image workflow canvas), TldrawUiSelect component, consolidated `options` prop.
+- These are SDK-level features for React embedding, not changes to MCP App or Computer product tracks.
+
+**Positioning implication**: tldraw SDK at $6,000/year commercial has not released in 2.5 months. Developers evaluating Q2 2026 renewals face the same "paid $6K, nothing shipped since January" calculus. The Run #130 "12-month halt" is now definitively contradicted (two releases in 2025-2026), but the January→April gap is a real signal to watch. If no release by May 2026, it becomes a legitimate renewal blocker talking point.
+
+**Threat assessment: MEDIUM-HIGH (unchanged) — MCP App active; SDK cadence slowed but not halted; headless gap persists**
+
+---
+
+### ArchitectureDiagram.ai — New JSON→SVG API Competitor (COMPETITIVE SIGNAL: MEDIUM-LOW)
+
+**Sources**: [architecturediagram.ai/api-docs](https://architecturediagram.ai/api-docs), [Best AI Architecture Diagram Tools 2026 — Aixoria](https://aixoria.com/best-ai-tools-to-create-system-architecture-diagrams-in-2026/), verified 2026-04-04
+
+**New tool identified**: ArchitectureDiagram.ai offers an API that accepts JSON input and outputs SVG/PNG architecture diagrams programmatically. Status: **"API coming soon"** — not yet live as a production API as of April 4, 2026. Focused on cloud/IT architecture diagrams (AWS, Azure, GCP component boxes), not hand-drawn aesthetic. No MCP server. No architectural domain elements (doors/windows/stairs).
+
+**Why this matters**: This is the closest new entrant to Skissify's JSON→SVG API positioning. However: (1) it is not yet live, (2) it targets IT/cloud architecture (network diagrams, infrastructure), not hand-drawn sketches or floor plans, (3) no hand-drawn aesthetic, (4) no MCP distribution. It occupies a different aesthetic lane entirely.
+
+**Threat assessment: MEDIUM-LOW (JSON→SVG API overlap; different domain and aesthetic; "coming soon" = not yet a live competitor)**
+
+---
+
+### ToDiagram — JSON/Data→Interactive Diagram Tool (COMPETITIVE SIGNAL: LOW)
+
+**Sources**: [todiagram.com](https://todiagram.com/), [Best AI Diagramming Tools for Developers 2026 — DEV Community](https://dev.to/dashin_pro/best-ai-diagramming-tools-for-developers-in-2026-3ni3), verified 2026-04-04
+
+**Tool confirmed**: ToDiagram converts JSON, YAML, CSV, and XML into interactive two-way diagrams. SVG export available. Primary use case: data visualization and schema exploration (e.g., visualize a JSON API response structure). Not a sketch tool. No hand-drawn aesthetic. No MCP server. No spatial layout control beyond auto-layout.
+
+**Relevance**: ToDiagram targets the "I have JSON data and want to see it as a diagram" use case — different from Skissify's "I have a JSON manifest describing a spatial sketch and want it rendered as hand-drawn SVG." No overlap in primary use case. Possible confusion in search queries like "JSON to diagram" — Skissify's content should clearly distinguish: "JSON schema manifest → hand-drawn spatial sketch" vs. "JSON data → graph/tree visualization."
+
+**Threat assessment: LOW (data visualization lane, not sketch rendering; no hand-drawn; no MCP)**
+
+---
+
+### SketchUp 2026 — AI Texture Generation in 3D (COMPETITIVE SIGNAL: NONE)
+
+**Sources**: [SketchUp 2026 What's New — SketchUp Africa](https://www.sketchupafrica.com/sketchup-products/whats-new-in-sketchup-2026/), [AI for Designers 2026 — Phygital+](https://phygital.plus/blog/best-ai-tools-for-designers/), verified 2026-04-04
+
+**Finding**: SketchUp 2026 launched with "Generate Textures" — one-click AI texture sampling from images or classic materials to generate new Photoreal Materials. This is a 3D modeling / BIM-adjacent tool, not a 2D sketch renderer. Zero overlap with Skissify's JSON→hand-drawn SVG output. Different user (3D architects vs. diagram/sketch generation pipeline).
+
+**Threat assessment: NONE — different product category entirely**
+
+---
+
+### AI Diagramming Market Size — USD 12.07B by 2035 (MARKET SIGNAL)
+
+**Sources**: [Top 30 Companies in Global Flowchart and Diagramming Tools Market — Spherical Insights](https://www.sphericalinsights.com/blogs/top-30-companies-in-the-global-flowchart-and-diagramming-tools-market-2024-2035-spherical-insights-analysis), verified 2026-04-04
+
+**Data point**: The global flowchart and diagramming tools market is projected to reach approximately USD 12.07 billion by 2035. This is the broader market Skissify participates in (a niche of AI-compatible headless diagram rendering within a broader market also served by Lucidchart, Miro, Visio, draw.io, Mermaid).
+
+**Implication**: Market growth is structural. Enterprise tools (Lucidchart, Miro) will capture the largest share. Skissify's path is to own the headless/agent-compatible/hand-drawn niche — not to compete on breadth. The 12.07B total market validates that even a 0.01% niche share is worth building.
+
+---
+
+### Updated Competitor Matrix (Run #133 — Saturday April 4, 2026 Night)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). March 2026: Trash, Mermaid ERD, Slide Templates. $6-7/user/mo. | NO (canvas-dependent) | YES | NO | YES (official) | **CRITICAL** |
+| **tldraw (April 2026)** | SDK 4.3 (Jan 2026, last confirmed). MCP App (March 3, 2026). Computer/Gemini product. $6K/yr SDK. | Partial (interactive canvas only) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH** |
+| **Draw.io official MCP** | `@drawio/mcp` Feb 2026. Headless XML/SVG. No Chromium. 700+ Azure icons. | YES (XML/SVG) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **ArchitectureDiagram.ai** | JSON→SVG/PNG API. "Coming soon." IT/cloud arch only. No hand-drawn. | YES (coming soon) | NO | YES | NO | **MEDIUM-LOW (new; not live yet)** |
+| **OpenFlowKit** | MIT/free OSS. JSON/TypeScript/Prisma. SVG export. Flowpilot AI (BYOK Anthropic). "Under construction." | YES (DSL) | NO | Partial | NO | **MEDIUM** |
+| **ToDiagram** | JSON/YAML/CSV/XML→interactive diagrams. SVG export. Data visualization lane. | YES (data viz) | NO | YES | NO | **LOW** |
+| **Lucidchart** | AI-assisted drafting from text (2026 emphasis). $12-19/user/mo. | YES (structured import) | NO | YES | NO | **MEDIUM** |
+| **Eraser DiagramGPT** | Text→D2 code + rendered diagrams. GitHub-native. | NO (text-based) | NO | YES | NO | **LOW-MEDIUM** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #132 (Saturday April 4, Stockholm — Evening)
 
 ### Status: 5 topics researched. KEY FINDINGS: **Excalidraw March 2026 release** adds Trash system, Mermaid ERD + State Diagrams, Slide Templates, Arrow Binding toggle — editor deepening, not headless API; no new moat threat. **tldraw "Computer" project** (computer.tldraw.com) is a separate product from the SDK — Gemini 2.0 Flash-powered "natural language computing" canvas; a visual AI workflow builder distinct from MCP App; not headless, not a pipeline tool. **MCP registry now 20,000+ public servers** (up from 10,000 cited in prior runs); 97M+ monthly SDK downloads; Pinterest, Google Cloud deploying production MCP. **No new headless JSON→hand-drawn SVG API competitor found — niche uncontested (33rd consecutive run).** **MCP Registry submission CRITICAL RED — 33rd consecutive run unconfirmed.** **SVG AI landscape** (Recraft, VectoSolve, VectorWitch) are text/image→raster/vector tools — zero headless JSON-schema diagram APIs; different category.
