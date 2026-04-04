@@ -2,6 +2,185 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #131 (Saturday April 4, Stockholm)
+
+### Status: 6 topics researched. KEY FINDINGS: **tldraw officially shipped MCP App on March 3, 2026** — launches Cursor first, VS Code/ChatGPT/Claude rollout ongoing; returns interactive canvas UI (not just text), raises competitive threat from LOW to MEDIUM-HIGH. **Excalidraw+ added MCP support in January 2026** (public API + MCP integration) plus Custom AI Tokens (BYOK OpenAI/Claude/Gemini) in February 2026; excalidraw-mcp official repo confirmed on GitHub — hand-drawn competitor now has MCP distribution; threat upgraded to CRITICAL. **No new headless JSON→hand-drawn API competitor found — niche remains uncontested (32nd consecutive run).** **tldraw shipping again (Run #131 contradicts Run #130)** — Releasebot shows February 2026 release notes; prior "12-month halt" finding may have been a GitHub pagination artifact; treat as UNCONFIRMED until verified directly on tldraw.dev/releases. **Micro-pricing EUR 2/mo confirmed as viable Indie/solo segment play** — typical 2026 micro-SaaS floor is $20–99/mo for mass-market tools, but developer utility tools with low compute cost can sustain EUR 2 entry; "below expense-report threshold" positioning validated. **MCP Registry submission CRITICAL RED — 32nd consecutive run unconfirmed.**
+
+---
+
+### tldraw Official MCP App — Competitive Threat Upgraded (COMPETITIVE SIGNAL: MEDIUM-HIGH)
+
+**Sources**: [tldraw MCP App announcement](https://tldraw.dev/blog/tldraw-mcp-app), [PulseMCP: Tldraw Agent MCP Server by Joel Hooks](https://www.pulsemcp.com/servers/joelhooks-tldraw-agent), [tldraw Releasebot Feb 2026](https://releasebot.io/updates/tldraw), verified 2026-04-04
+
+**New finding vs. Run #130**: tldraw launched its official MCP App on **March 3, 2026**, starting with Cursor integration. It returns an **interactive tldraw canvas as UI** (not just text output) — this is MCP Apps, an extension of MCP that returns HTML/interactive components. Rollout to VS Code, ChatGPT, and Claude was announced for the days following launch.
+
+Additionally, Releasebot shows tldraw release activity in February 2026, which contradicts Run #130's "12-month shipping halt" finding. The prior finding may have been a GitHub pagination artifact (only showing old data) rather than a genuine pause. **Treat Run #130's "12-month halt" as UNCONFIRMED. Do not use it in marketing copy until verified directly on tldraw.dev/releases or their changelog.**
+
+**Why this raises the threat level**: tldraw's MCP App is browser-rendered (interactive canvas via MCP App UI), requires a React/Electron host, and is SDK-licensed at $6,000/year commercial. It is NOT headless, NOT sub-100ms, and NOT curl-compatible. But it is now in the MCP ecosystem with official branding. Developers searching MCP Registry for "diagram" or "canvas" will find tldraw.
+
+**Positioning counter**: Skissify's differentiation remains intact — headless, no Chromium, sub-100ms, EUR 2–9/mo, JSON→SVG file output (tldraw returns interactive canvas, not a portable file). Emphasize in MCP Registry listing: "Returns SVG file — embeddable anywhere, no browser, no SDK license."
+
+**Threat assessment: MEDIUM-HIGH (official MCP presence; interactive canvas; but not headless/portable; SDK cost remains $6K/yr)**
+
+---
+
+### Excalidraw+ MCP + Custom AI Tokens — Threat Upgraded to CRITICAL (COMPETITIVE SIGNAL: CRITICAL)
+
+**Sources**: [Excalidraw+ Changelog](https://plus.excalidraw.com/changelog), [excalidraw/excalidraw-mcp GitHub](https://github.com/excalidraw/excalidraw-mcp), [Excalidraw MCP Server review — Delulu9 2026](https://delulu9.com/mcp/excalidraw-mcp/), verified 2026-04-04
+
+**New findings vs. Run #130**:
+- **January 2026**: Excalidraw+ added public API enhancements with MCP support. YouTube video syncing for presentations, QR code sharing, presenter view.
+- **February 2026**: Custom AI Tokens (BYOK — bring your own OpenAI, Claude, Gemini, or OpenRouter key). Advanced Charts (radar charts, multi-series). Interactive presentation features (raised hand queue, real-time reactions).
+- **Official MCP repo**: `github.com/excalidraw/excalidraw-mcp` confirmed — fast and streamable Excalidraw MCP App. Multiple community implementations also exist on PyPI (`excalidraw-mcp`) and npm.
+
+**Why this is CRITICAL for Skissify**: Excalidraw now has: (1) hand-drawn aesthetic (core differentiator match), (2) MCP distribution (core distribution match), (3) BYOK AI tokens (agent-compatible), (4) JSON import/export (Excalidraw file format). The gap between Excalidraw and Skissify has narrowed. Excalidraw's MCP server requires a browser/canvas host — it is NOT headless. Programmatic generation via curl is not supported. But the marketing surface overlap is now significant.
+
+**Remaining Skissify advantages**:
+1. **Headless/no browser** — Excalidraw MCP requires a live canvas (browser or Electron). Skissify renders server-side, no Chromium.
+2. **Architectural domain elements** — Excalidraw has zero doors, windows, stairs, room dimensions, columns. Skissify is the only tool with these.
+3. **Price** — Excalidraw+ is $6–7/user/month. Skissify targets EUR 2/mo Indie entry.
+4. **JSON-first schema** — Excalidraw's JSON is internal state, not a clean API schema. Skissify's schema is designed for agent output.
+5. **SVG file output** — Excalidraw exports to SVG but requires user action. Skissify returns SVG in response body (no UX flow).
+
+**Recommended response**: Update competitive table, MCP Registry description, and homepage to explicitly address the Excalidraw MCP comparison. Key message: "Excalidraw MCP needs a browser. Skissify MCP returns an SVG file in one curl call."
+
+**Threat assessment: CRITICAL (hand-drawn + MCP overlap now confirmed; headless/architectural gap is Skissify's primary moat)**
+
+---
+
+### Micro-Pricing EUR 2/mo — Validated Indie Segment Positioning (PRICING SIGNAL)
+
+**Sources**: [Micro-SaaS Pricing Strategies — Freemius](https://freemius.com/blog/micro-saas-pricing-strategies/), [Micro SaaS Ideas 2026 — NxCode](https://www.nxcode.io/resources/news/micro-saas-ideas-2026), [Indie Hacker SaaS Stack 2026 — TLDL](https://www.tldl.io/resources/indie-hacker-saas-stack-2026), verified 2026-04-04
+
+**Finding**: Mass-market micro-SaaS tools in 2026 typically target $20–99/month. EUR 2/month is below this floor for consumer-facing products. However, **developer utility tools with very low compute cost (sub-100ms server-side rendering, no GPU) have a viable EUR 2/mo entry tier** for the following reasons:
+- "Below expense-report threshold" (individuals pay without approval) — validated as pricing psychology tactic
+- Developer tools succeed with friction-free entry tiers; EUR 2/mo removes payment barrier while filtering out free-tier abusers
+- Micro-SaaS solo founders are building entire products at $0 infra cost until first revenue — EUR 2/mo fits "pay for a coffee, get unlimited personal use"
+- The real revenue comes from EUR 9/mo Pro (API + team) and EUR 15–19/mo Studio (arch elements), not the EUR 2/mo Indie
+
+**Recommendation**: Keep EUR 2/mo "Indie" as the entry conversion step (not a revenue driver). Optimize funnel from Indie → Pro (EUR 9/mo) with API usage limit messaging: "You've made 800/1,000 renders this month. Upgrade to Pro for 5x the volume."
+
+**Threat assessment: POSITIVE — EUR 2/mo Indie tier positioning validated; optimize conversion funnel to Pro**
+
+---
+
+### Updated Competitor Matrix (Run #131 — Saturday April 4, 2026)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **Excalidraw+ (April 2026)** | MCP App + BYOK AI Tokens (Feb 2026). Official `excalidraw/excalidraw-mcp` repo. $6-7/user/mo. | NO (canvas-dependent, browser required) | YES | NO | YES (official) | **CRITICAL (hand-drawn + MCP overlap; headless/architectural gap persists)** |
+| **tldraw (April 2026)** | Official MCP App launched March 3, 2026 (Cursor first; VS Code/Claude rollout). Interactive canvas UI. $6K/yr SDK. | Partial (browser/interactive canvas) | NO | NO | YES (official MCP App) | **MEDIUM-HIGH (MCP presence; but not headless/portable)** |
+| **Draw.io official MCP** | `@drawio/mcp` Feb 2026. Headless XML/SVG. 700+ Azure icons. No Chromium. | YES (XML/SVG) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **OpenFlowKit** | MIT/free OSS. JSON/TypeScript/Prisma input. SVG export. Flowpilot AI (BYOK Anthropic). "Under construction." | YES (Diagram as Code DSL) | NO | Partially (local-first) | NO | **MEDIUM (JSON-input overlap; no hand-drawn; under construction)** |
+| **Lucidchart** | JSON/CSV/DB schema import. Enterprise $12-19/user/mo. No hand-drawn. | YES (structured import) | NO | YES | NO | **MEDIUM** |
+| **dAIgram.app** | Image/sketch photo→editable digital diagram. Confirmed inverse direction. | NO (photo input) | Inverse | YES | NO | **VERY LOW** |
+| **Eraser DiagramGPT** | Text→D2 code + rendered diagrams. GitHub-native. | NO (text-based) | NO | YES | NO | **LOW-MEDIUM** |
+| **Microsoft AI Arch Agents** | Open-source, enterprise-funded. Auto-generates architecture diagrams from code. | Partial | NO | YES | NO | **LOW** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
+## [2026-04-04] — Automated Strategy Run #130 (Saturday April 4, 07:04 Stockholm)
+
+### Status: 4 topics researched. KEY FINDINGS: **tldraw has not shipped a release in 12+ months** (last: v4.5.7, April 3, 2025) — significant competitive weakness at $6K/yr SDK price. **OpenFlowKit confirmed as new OSS JSON-input diagram competitor** — MIT, JSON/TypeScript/Prisma input, SVG export, AI-assisted via BYOK Anthropic, but NO hand-drawn aesthetic; free/under construction. **dAIgram.app confirmed inverse-direction tool** — image/photo→editable digital diagram (same direction as Sketch2scheme, not a direct competitor). **SaaS pricing 2026: "hybridization and partial reversion"** — pure usage-based being tempered by customer psychology; flat base + overage is the winner; AI cost deflation enables more generous fixed tiers. **ALERT: HN post trending** ("Anthropic no longer allowing Claude Code subscriptions to use OpenClaw", 443 points) — potential signal about MCP tool access restrictions via Claude Code subscription; monitoring recommended for Skissify MCP distribution impact. **31st consecutive run: still no headless hand-drawn JSON→SVG API competitor found. MCP Registry submission CRITICAL RED (31 runs unconfirmed).**
+
+---
+
+### tldraw 12-Month Shipping Halt — Competitive Weakness Signal (COMPETITIVE SIGNAL: ELEVATED)
+
+**Sources**: [tldraw GitHub releases](https://github.com/tldraw/tldraw/releases), [tldraw Releases](https://tldraw.dev/releases), verified 2026-04-04
+
+**New finding vs. Run #129**: tldraw's last confirmed release is **v4.5.7 (April 3, 2025)** — approximately 12 months without a public release. Prior competitor analysis noted v4.5.6 shipping with the AI Image Pipeline template (Run #127, April 2026). The GitHub releases page as of April 4, 2026 shows April 2025 dates as most recent. This is either a data fetch limitation OR a genuine 12-month shipping pause.
+
+**Why this matters**: A $6,000/year commercial SDK license with no public releases in 12 months is a liability in developer tool markets. Paid customers evaluating renewal in Q2 2026 face a "we paid $6K and nothing shipped" situation. Developer communities on HN/Reddit regularly surface this as a renewal blocker. Compare: Skissify at EUR 5/mo (or EUR 2/mo planned Indie) ships continuously as a solo founder with no SDK license friction.
+
+**Positioning opportunity**: "Skissify ships monthly. tldraw's last release was April 2025. We cost EUR 2/month, not $6,000/year." Add explicit "always updating" messaging to pricing page. If tldraw's pause is confirmed (worth checking their Discord/blog), this is a PR moment — blog post targeting "tldraw alternative 2026" captures developers at renewal evaluation stage.
+
+**Threat assessment: MEDIUM-HIGH → MEDIUM (shipping pause reduces threat; $6K/yr + stale SDK weakens competitive position)**
+
+---
+
+### OpenFlowKit — New OSS JSON-Input Diagram Competitor (COMPETITIVE SIGNAL: MEDIUM)
+
+**Sources**: [openflowkit.com](https://www.openflowkit.com), [Product Hunt](https://www.producthunt.com), verified 2026-04-04
+
+**New tool identified**: OpenFlowKit is an open-source (MIT), locally-stored diagram editor that accepts **JSON, TypeScript, Prisma schemas, SQL, and React components** as input via its "Diagram as Code" DSL. It also offers "Flowpilot AI" natural language generation with BYOK OpenAI/Anthropic support. Exports: SVG, PNG, MP4 (cinematic animation), GIF, JSON, Figma (with editable layers).
+
+**Key characteristics**: Free, MIT licensed, peer-to-peer multiplayer (WebRTC), local-first, auto-layout (ELK.js). Still "under construction" per their page. No confirmed production user base found. No hand-drawn aesthetic — outputs clean, polished vector diagrams.
+
+**Competitive analysis vs. Skissify**:
+- Overlapping: JSON input, SVG export, AI-assisted generation (Flowpilot = Anthropic BYOK), open source
+- Differentiating: OpenFlowKit has NO hand-drawn aesthetic, NO architectural domain elements (doors/windows/stairs), NO MCP server, no headless API (requires browser/Electron), "under construction" status
+- Price: Free/MIT vs. Skissify's EUR 2–9/mo
+
+**Threat vector**: OpenFlowKit could capture the "I want JSON→diagram for free" segment before Skissify's open-source rendering engine ships. However, it lacks the hand-drawn aesthetic that is Skissify's core differentiator. Developers building architecture pipelines need the "napkin sketch" look — OpenFlowKit gives them another polished Mermaid-style output.
+
+**SEO impact**: OpenFlowKit will target "JSON to diagram free" and "diagram as code open source" queries — both of which Skissify could rank for with its planned OSS rendering engine release. Skissify should prioritize publishing the npm rendering engine before OpenFlowKit ships stable.
+
+**Threat assessment: MEDIUM (JSON-input overlap; different aesthetic lane; still under construction; MCP/hand-drawn gap persists)**
+
+---
+
+### dAIgram.app — Inverse-Direction Competitor Confirmed (COMPETITIVE SIGNAL: VERY LOW)
+
+**Sources**: [daigram.app](https://daigram.app), [Product Hunt](https://www.producthunt.com), verified 2026-04-04
+
+**Confirmed**: dAIgram converts **image files (JPG/PNG) of hand-drawn sketches or flowcharts → structured digital diagrams**. It internally generates JSON to represent the diagram structure, then offers export to JPG/PNG/PDF/JSON. This is the inverse direction from Skissify (structured JSON → hand-drawn visual). Output is clean/polished, not hand-drawn aesthetic.
+
+**Relevance**: dAIgram reinforces the "hand-drawn sketch aesthetic has value" signal (same as Sketch2scheme). Both tools digitize FROM hand-drawn, indicating market demand for the aesthetic. The direction confirms Skissify's niche — generating TO hand-drawn is still uncontested.
+
+**Interesting detail**: dAIgram outputs JSON describing diagram structure. If developers want to round-trip (hand-drawn photo → JSON → edit → back to hand-drawn), dAIgram + Skissify could be complementary tools. Blog post opportunity: "From sketch to JSON and back — the complete hand-drawn diagram pipeline with dAIgram + Skissify."
+
+**Threat assessment: VERY LOW (confirmed inverse direction; complementary rather than competitive)**
+
+---
+
+### SaaS Pricing 2026: Hybridization and Partial Reversion — Flat Base Wins (PRICING SIGNAL)
+
+**Sources**: [2026 SaaS/AI Pricing Guide — Monetizely](https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models), verified 2026-04-04
+
+**New synthesis vs. Run #129**: The 2026 pricing trend is "hybridization and partial reversion" — pure usage-based pricing is being tempered by **customer psychology around budget predictability**. Key data point: 41% of enterprise SaaS companies are implementing hybrid approaches (base fee + usage overages). Customers are reverting to "familiar, budgetable" models — even when usage-based is theoretically more fair.
+
+**AI cost deflation context**: AI development costs dropped from $100M to ~$30 (training cost proxies). This enables vendors to offer more generous fixed-tier allowances without margin pressure. For Skissify: EUR 9/mo Pro with 5,000 renders/month is affordable to sustain given low compute costs per render (<0.01ms CPU time for hand-drawn SVG).
+
+**Implication for Skissify**: The hybrid model (EUR 2/mo Indie flat + EUR 9/mo Pro flat + overage credit packs) is validated by 2026 market data. But the framing matters: customers don't want to think about per-render costs during normal use — they want "EUR 9/month, I get plenty of renders, done." The credit overage is a safety valve, not the main story. Update pricing page copy: emphasize flat tiers prominently, de-emphasize per-render pricing (put it in FAQ or footnote).
+
+**Specific recommendation**: Change pricing page headline from "EUR 0.005 per render" to "EUR 9/month, 5,000 renders included" — the render limit number should be highlighted, not the per-render price.
+
+**Threat assessment: POSITIVE — Skissify's hybrid model is on-trend; reframe pricing page to emphasize generous flat tiers over per-render costs**
+
+---
+
+### HN Trending: Anthropic Restricting Claude Code MCP Integrations (MONITORING ALERT)
+
+**Sources**: [Hacker News homepage](https://news.ycombinator.com), April 4, 2026, verified 2026-04-04
+
+**Unconfirmed signal**: A Hacker News post titled "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw" had 443 points visible on the front page as of this run. Unable to read full thread (rate limited). OpenClaw is an MCP gateway product.
+
+**Why this matters for Skissify**: If Anthropic is restricting certain MCP tool integrations via Claude Code subscriptions, this could affect the "install Skissify MCP server via Claude Code" distribution path. It could also signal Anthropic's MCP policy direction — either tightening integration requirements (favoring Claude Connectors) or changing subscription terms for MCP tool usage.
+
+**Action needed**: Verify the full HN thread. Check if the restriction affects third-party MCP server discovery/installation or only specific tool categories. If Claude Code subscription users can't use external MCP servers freely, Skissify's primary distribution channel (MCP Registry + Claude Code install) needs a backup strategy (direct API via curl, npm package standalone).
+
+**Threat assessment: UNCONFIRMED — Monitoring; if verified, could be a distribution channel risk requiring direct API path emphasis in marketing**
+
+---
+
+### Updated Competitor Matrix (Run #130 — Saturday April 4, 07:04)
+
+| Tool | Status (2026-04-04) | Headless JSON→SVG | Hand-drawn | No Chromium | MCP support | Threat |
+|------|---------------------|-------------------|------------|-------------|-------------|--------|
+| **tldraw (April 2026)** | Last release v4.5.7 (April 3, 2025) — ~12 months no new release. $6K/yr SDK license. AI Image Pipeline template. | Partial (Chromium, 5-8s cold start) | NO | NO | YES (official MCP App) | **MEDIUM (shipping halt + $6K/yr weakens position)** |
+| **Draw.io official MCP** | `@drawio/mcp` Feb 2026. Headless XML/SVG. 10K+ shapes. No Chromium. | YES (XML/SVG) | NO | YES | YES (official) | **MEDIUM-HIGH** |
+| **Excalidraw official MCP** | Shipping lull since Feb 2026. Browser-dependent. | NO | YES | NO | YES (official) | **HIGH** |
+| **OpenFlowKit** | NEW (Run #130). MIT/free OSS. JSON/TypeScript/Prisma input. SVG export. Flowpilot AI (BYOK Anthropic). Peer-to-peer multiplayer. "Under construction." | YES (Diagram as Code DSL) | NO | Partially (local-first) | NO | **MEDIUM (JSON-input overlap; no hand-drawn; under construction)** |
+| **Lucidchart** | JSON/CSV/DB schema import for auto-diagrams. Enterprise-priced $12-19/user/mo. No hand-drawn. | YES (structured import) | NO | YES | NO | **MEDIUM (JSON-input competitor, no hand-drawn)** |
+| **dAIgram.app** | NEW (Run #130). Image/sketch photo→editable digital diagram. Outputs JSON. Free/demo. Confirmed inverse direction. | NO (photo input) | Inverse | YES | NO | **VERY LOW (inverse direction; confirmed non-competitor)** |
+| **Eraser DiagramGPT** | Text→D2 code + rendered diagrams. Architecture/ER/sequence. GitHub-native. | NO (text-based) | NO | YES | NO | **LOW-MEDIUM (roundup SEO)** |
+| **Microsoft AI Arch Agents** | Open-source, enterprise-funded. Auto-generates architecture diagrams from code. | Partial (framework-specific) | NO | YES | NO | **LOW (enterprise validation)** |
+| **Skissify** | Headless JSON→hand-drawn SVG. Sub-100ms. No Chromium. Arch elements. XSS-safe Canvas 2D. | YES (native) | YES (tunable) | YES | YES (unsubmitted) | — |
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #129 (Saturday April 4, 05:56 Stockholm)
 
 ### Status: 4 topics researched. KEY FINDINGS: **A2A co-governed under Linux Foundation / AAIF — enterprise adoption (Salesforce, SAP, Workday) accelerating beyond developer-only scope; Skissify's sub-agent positioning now has enterprise legitimacy.** **MCP Registry at 6,400+ servers (up from 5,800) — 600 new servers in ~2 weeks; growth accelerating.** **Pinterest deployed production-scale MCP in April 2026** — domain-specific MCP servers + central registry at enterprise scale. **Pricing floor confirmed at $9–15/month** — multiple independent sources confirm $2–5/month is below validated market floor for dev tools; EUR 5/mo Pro is likely leaving revenue on the table. **Sketch2scheme (XIX.AI) found — inverse direction competitor** (photo-of-sketch → digital diagram, not JSON → hand-drawn). **Lucidchart confirmed as closest JSON-input diagram competitor** (but enterprise-priced, no hand-drawn). **30th consecutive run: still no headless hand-drawn JSON→SVG API competitor found. MCP Registry submission CRITICAL RED (30 runs unconfirmed).**

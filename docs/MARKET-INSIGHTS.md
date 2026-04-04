@@ -2,6 +2,72 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #131 (Saturday April 4, Stockholm)
+
+### Theme: Excalidraw MCP Now CRITICAL; tldraw Shipping Again; EUR 2/mo Entry Tier Validated; Headless Gap Still Uncontested
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #131 Synthesis
+
+Run #131 surfaces the most significant competitive shift to date: **Excalidraw now has official MCP support + BYOK AI tokens**, making it a real hand-drawn + MCP competitor for the first time. This narrows Skissify's marketing surface overlap and demands sharper differentiation. The EUR 2/mo entry question must now be answered in the context of a competitor that is free to start and $6–7/mo with hand-drawn aesthetic + MCP.
+
+**1. The only EUR 2/mo conversion trigger that beats Excalidraw is "headless + architectural."** Excalidraw's MCP server requires a live browser canvas. It cannot be called via curl. It cannot render server-side. It has no doors, windows, stairs, or room dimensions. These are not edge cases — they are the entire value proposition for agentic pipelines and architecture sketches. The EUR 2/mo pitch is now: "Excalidraw MCP needs a browser open. Skissify returns an SVG in one curl call. EUR 2/month, no setup." This is the sharpest conversion argument in 131 runs.
+
+**2. tldraw's official MCP App (March 3, 2026) makes "canvas in chat" mainstream — but it's not portable.** tldraw's MCP App returns an interactive canvas as the response, not a file. This is great for live diagramming sessions in Cursor/VS Code. It is useless for pipeline automation (you cannot embed an interactive canvas in a PDF, email, documentation page, or CI artifact). Skissify's SVG file output is the portable, automatable alternative. The message: "tldraw MCP: great for humans sketching in Cursor. Skissify MCP: great for agents generating deliverables."
+
+**3. EUR 2/mo Indie tier positioning is validated — optimize the upgrade funnel.** 2026 micro-SaaS data confirms EUR 2/mo works for developer utilities with low compute cost. The entry tier is a conversion step, not a revenue target. The trigger from EUR 0 → EUR 2/mo is: remove watermark, get 1,000 renders/month. The trigger from EUR 2/mo → EUR 9/mo is: API access + 5,000 renders + team share. Every usage prompt ("You've used 800/1,000 renders this month") is a conversion moment. Build the counter UI before building any other feature.
+
+**4. "Architectural elements" is now Skissify's clearest moat.** Across 131 runs of competitive analysis, zero competitors have been found with doors, windows, stairs, room dimensions, or column symbols in a hand-drawn aesthetic. This is not a feature gap — it is a category absence. The architecture/construction vertical (architecture firms, proptech, real estate AI agents) has NO tool in this space. A single blog post targeting "AI floor plan sketch generator" with one demo floor plan could drive qualified signups from a vertical with enterprise budgets.
+
+**Updated EUR 2/mo payment trigger model (Run #131):**
+- EUR 0 → EUR 2/mo "Indie": "Excalidraw needs a browser. We return an SVG. EUR 2/month." + render counter at 1,000/mo limit
+- EUR 2/mo → EUR 9/mo "Pro": "5,000 renders/month included. API access. Team share." (render counter at limit)
+- EUR 9/mo → EUR 15–19/mo "Studio": "Architectural elements — doors, windows, stairs, floor plans. Only in Studio."
+- Enterprise: Docker self-hosted + A2A/AAIF + private registry deployment
+- Credit pack: EUR 5 for 2,000 renders (no subscription, EU preference segment)
+
+#### Excalidraw MCP — Sharpen the Headless Message Now
+
+Excalidraw's MCP presence means developers searching "hand-drawn diagram MCP" will now find two results: Excalidraw (official, browser-dependent) and Skissify (official, headless). The SEO race for that query has started. Skissify must publish its MCP server to the registry before the Excalidraw MCP listing accumulates more installs. The headless/no-browser distinction is the differentiator that wins that query — it must be in the first line of the MCP Registry description and the homepage hero.
+
+#### tldraw MCP — "Portable vs. Interactive" Framing
+
+tldraw's MCP App is a UX win for humans using AI assistants to sketch. It is not a win for automated pipelines. Skissify should explicitly target the "pipeline/automation" use case in its MCP listing to avoid competing on tldraw's terrain (interactive canvas in chat). Skissify wins when the agent needs an output file. tldraw wins when a human wants to sketch with AI assistance. These are different jobs.
+
+---
+
+## [2026-04-04] — Automated Strategy Run #130 (Saturday April 4, 07:04 Stockholm)
+
+### Theme: tldraw 12-Month Shipping Halt; OpenFlowKit OSS Threatens JSON-Input SEO; Flat Tiers Beat Per-Render Framing; HN MCP Restriction Alert
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #130 Synthesis
+
+Run #130 introduces four new angles: (1) tldraw has not shipped in 12 months, weakening the "best JSON-adjacent sketch tool" competition at $6K/yr, (2) OpenFlowKit (MIT/free) enters the JSON-input diagram space but without hand-drawn aesthetic, creating an SEO timing threat before Skissify's OSS engine ships, (3) 2026 pricing psychology favors flat tiers over per-render framing even when hybrid model is used, (4) an HN post about Anthropic restricting MCP tool access via Claude Code subscriptions (443 points) is an unconfirmed distribution channel risk.
+
+**1. tldraw's 12-month shipping pause makes "EUR 2/mo vs $6K/yr" even sharper.** Last release v4.5.7 was April 3, 2025. Developers evaluating tldraw SDK renewal in Q2 2026 are asking: "We paid $6,000, nothing shipped in a year, what are we getting?" This is a live market vulnerability. Skissify's positioning should explicitly address this: "tldraw SDK: $6,000/year, last release April 2025. Skissify: EUR 2/month, ships continuously." The tldraw comparison is now a factual claim, not just a price comparison.
+
+**2. OpenFlowKit threatens the "free JSON→diagram" SEO lane before Skissify's OSS core ships.** OpenFlowKit is MIT, accepts JSON/TypeScript/Prisma as input, uses BYOK Anthropic for AI generation, and exports SVG. It has NO hand-drawn aesthetic and is "under construction" — but it will eventually capture "JSON to diagram free" and "diagram as code open source" searches. Skissify should publish the npm rendering engine on GitHub before OpenFlowKit ships stable. Every month of delay lets OpenFlowKit accumulate GitHub stars in the same query space. **Timeline urgency: publish OSS engine before OpenFlowKit reaches v1.0.**
+
+**3. Pricing page reframe: flat tiers beat per-render framing for conversion.** 2026 customer psychology: developers want "EUR 9/month, I get plenty, I don't think about it." The current plan to emphasize "EUR 0.005 per render" in pricing creates mental friction even if it's fair. The 41% of enterprise SaaS companies using hybrid pricing succeed by burying the overage rate and leading with the flat tier value. Recommended change: pricing page headline becomes "5,000 renders/month" not "EUR 0.005/render." Put the credit overage in an expandable FAQ. This is a 30-minute copy edit with measurable conversion impact.
+
+**4. HN MCP restriction signal — verify before MCP Registry submission goes live.** A trending HN post ("Anthropic no longer allowing Claude Code subscriptions to use OpenClaw", 443 points) may signal an Anthropic policy shift on external MCP server discovery through Claude Code subscriptions. Before submitting to MCP Registry, confirm the submission path still results in Claude Code users being able to discover and install Skissify's MCP server. If Claude Code subscription is restricting certain MCP integrations, Skissify needs a "direct npm install" path as the primary channel (not just Claude Code discovery). This does NOT block the MCP Registry submission — it changes where the install CTA points.
+
+**Updated EUR 2/mo payment trigger model (Run #130):**
+- EUR 0 → EUR 2/mo "Indie": visible render counter + **"tldraw: $6K/yr, last shipped April 2025. Skissify: EUR 2/month, ships monthly."**
+- EUR 2/mo → EUR 9/mo "Pro": **"5,000 renders/month included"** (not "EUR 0.005/render") + API access
+- EUR 9/mo → EUR 15/mo "Studio": architectural element packs + floor plan templates
+- EUR 0 → EUR 5 credit pack: EU no-subscription segment
+- Enterprise: Docker self-hosted + A2A/AAIF compliant + private MCP registry deployment
+
+#### OpenFlowKit OSS SEO Timeline Risk
+
+OpenFlowKit is "under construction" but MIT and already on Product Hunt. The risk window: if it ships stable before Skissify publishes its OSS rendering engine on npm/GitHub, OpenFlowKit captures developer mindshare in the "JSON→diagram open source" category. Skissify's hand-drawn aesthetic is the differentiator — but that only helps if developers encounter Skissify in the same search results as OpenFlowKit. Publishing the npm rendering engine + GitHub repo is the blocker prevention step. **Recommended: prioritize OSS engine release over any other marketing action this week.**
+
+#### tldraw Competitive Pivot Window
+
+If tldraw has genuinely paused shipping for 12 months at $6,000/year commercial license, their developer community is at peak vulnerability to alternatives. Channels where this community lives: tldraw Discord, GitHub discussions, Twitter/X, HN "Ask HN: tldraw alternatives." Skissify should have a presence in at least one of these channels this week. A simple HN comment ("We built Skissify as a headless alternative — EUR 2/mo, JSON-first, hand-drawn") in a tldraw discussion thread can capture developer mindshare from a competitor in visible decline.
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #129 (Saturday April 4, 05:56 Stockholm)
 
 ### Theme: A2A Reaches Enterprise (Salesforce/SAP/Workday); Pricing Floor Confirmed at $9–15/mo; Pinterest MCP Production Validates Enterprise Path

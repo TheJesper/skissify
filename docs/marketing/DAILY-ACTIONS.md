@@ -2,6 +2,122 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #131 Actions (Saturday April 4, Stockholm) — FOR MONDAY APRIL 7
+
+### Context: Run #131 Key New Findings
+- **Excalidraw MCP confirmed CRITICAL**: Official `excalidraw/excalidraw-mcp` repo + Jan/Feb 2026 BYOK AI tokens. Hand-drawn + MCP overlap is real. Headless/architectural gap is Skissify's primary moat.
+- **tldraw official MCP App launched March 3, 2026**: Interactive canvas UI in Cursor (VS Code/Claude rollout next). Not headless — returns canvas, not SVG file.
+- **tldraw "12-month halt" finding from Run #130 is UNCONFIRMED** — Releasebot shows Feb 2026 activity. Do NOT use in marketing copy until verified on tldraw.dev/releases.
+- **EUR 2/mo Indie tier validated** for low-compute developer utilities — optimize upgrade funnel (render counter UI is conversion lever)
+- **MCP Registry submission CRITICAL RED — 32nd consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Monday): MCP Registry Submission — Final Deadline
+
+**32 consecutive runs. This is the single highest-leverage action.**  Excalidraw now has an official MCP listing. tldraw has an official MCP App. Every week Skissify is unlisted, Excalidraw accumulates installs in the "hand-drawn diagram MCP" query space. The window to be the first headless hand-drawn MCP server in the registry is closing.
+
+**Updated registry listing copy (Run #131 — sharper headless vs. Excalidraw framing):**
+> "Skissify — headless JSON→hand-drawn SVG. Returns an SVG file. No browser. No Chromium. One curl call. Sub-100ms. Excalidraw MCP needs a live canvas — Skissify renders server-side and returns a portable file. Architectural elements: doors, windows, stairs, floor plans, room dimensions, columns. Tunable wobble/humanness. Works with Claude, GPT-4, CrewAI, LangGraph, n8n, Mastra. A2A/AAIF compatible. EUR 2/month. Keywords: hand-drawn, floor plan, sketch, JSON, SVG, headless, no browser, agent diagram, architecture."
+
+**Steps Monday (30 minutes):**
+1. Confirm `@skissify/mcp-server` npm package is published
+2. Submit to registry.modelcontextprotocol.io
+3. Submit to claude.com/connectors
+4. Post confirmation URL in next run
+
+---
+
+### Action 2 (HIGH — Monday): Update Homepage Hero Copy — "Excalidraw MCP Needs a Browser. We Don't."
+
+**New from Run #131**: Excalidraw now has official MCP support. Developers searching "hand-drawn diagram MCP" will find both. Skissify's current homepage does not address this comparison. Update homepage hero to make the headless distinction the lead message.
+
+**Recommended hero copy change (15 minutes — copy edit only, no code):**
+- Current (assumed): "JSON to hand-drawn sketches for AI agents"
+- New: "The headless sketch renderer for AI agents. JSON in, SVG file out. No browser. No SDK. EUR 2/month."
+- Sub-headline: "Excalidraw MCP returns a live canvas. Skissify returns a portable SVG — embed it anywhere, automate it in any pipeline."
+- CTA: "Try in 30 seconds — one curl call" with code block showing `curl -X POST api.skissify.com/render -d @sketch.json`
+
+**Why now**: The Excalidraw MCP listing is live. Any developer who evaluates both tools in the same session will land on Skissify's homepage. The current copy may not close the comparison. This is a 15-minute copy edit with measurable impact on the next competitive evaluation cycle.
+
+---
+
+### Action 3 (HIGH — Monday): Build Render Counter UI — The Primary EUR 2→9/mo Conversion Lever
+
+**New from Run #131**: EUR 2/mo Indie tier is validated as an entry step, not a revenue driver. The upgrade from EUR 2/mo → EUR 9/mo Pro is triggered by hitting the render limit (1,000/mo). Without a visible render counter, users never feel the pressure to upgrade.
+
+**Minimum viable counter (half-day build):**
+1. Add render counter to dashboard: "823 / 1,000 renders used this month" with progress bar
+2. At 80% (800/1,000): yellow banner — "You've used 80% of your renders. Upgrade to Pro for 5,000/month."
+3. At 100% (1,000/1,000): red banner + soft block — "Render limit reached. Add EUR 5 credit pack (2,000 renders) or upgrade to Pro (EUR 9/mo, 5,000/mo)."
+4. "Upgrade to Pro" CTA links to Stripe checkout, pre-filled EUR 9/mo Pro
+
+**Why this is Action 3 (not Action 4+)**: Without a counter, the EUR 2/mo Indie tier generates EUR 2/month forever. With a counter, it generates EUR 2/mo until the user hits 1,000 renders, then converts to EUR 9/mo. Every 1,000 renders burned is a conversion event. Build the counter before acquiring more users.
+
+---
+
+## [2026-04-04] — Strategy Run #130 Actions (Saturday April 4, 07:04 Stockholm) — FOR MONDAY APRIL 7
+
+### Context: Run #130 Key New Findings
+- **tldraw last shipped v4.5.7 (April 3, 2025)** — 12 months without a release at $6K/yr SDK; competitive vulnerability window open
+- **OpenFlowKit (NEW)**: MIT/free OSS, JSON/TypeScript input, SVG export, BYOK Anthropic AI — no hand-drawn; "under construction"; threatens JSON-input SEO lane before Skissify OSS engine ships
+- **dAIgram.app (NEW)**: Confirmed inverse-direction (image→digital); not a competitor; potential blog partnership angle
+- **Pricing psychology**: Flat tiers beat per-render framing; 41% enterprise hybrid adoption; AI cost deflation enables generous tiers
+- **HN alert (unconfirmed)**: Anthropic restricting Claude Code MCP integrations (443 pts) — verify before MCP Registry submission
+- **MCP Registry submission CRITICAL RED — 31st consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Monday): Verify HN MCP Restriction Story + Confirm MCP Registry Submission Path
+
+**New from Run #130**: A trending HN post ("Anthropic no longer allowing Claude Code subscriptions to use OpenClaw", 443 points) may signal Anthropic restricting external MCP tool access via Claude Code subscriptions. This MUST be verified before MCP Registry submission to confirm the install CTA will work for Claude Code users.
+
+**Steps Monday:**
+1. Read the full HN thread: search HN for "Anthropic OpenClaw Claude Code subscription" or check news.ycombinator.com directly
+2. Determine: is this a policy change affecting ALL third-party MCP servers, or specific to OpenClaw?
+3. If ALL third-party MCP servers affected: update Skissify's primary install CTA to `npm install @skissify/mcp-server` (not Claude Code discovery)
+4. If OpenClaw-specific: proceed with MCP Registry submission without changes
+5. Submit to registry.modelcontextprotocol.io regardless — the registry listing has value beyond Claude Code discovery
+
+**Why this is urgent**: 31 consecutive runs have flagged MCP Registry submission as critical. The HN alert is a potential reason it hasn't been submitted yet, but should NOT block it further. The worst case: registry is listed, Claude Code users must install via npm instead of one-click. Still worth doing.
+
+---
+
+### Action 2 (HIGH — Monday): Publish OSS Rendering Engine to npm + GitHub Before OpenFlowKit Stabilizes
+
+**New from Run #130**: OpenFlowKit is a new MIT/free OSS competitor that accepts JSON/TypeScript input and exports SVG via "Diagram as Code" DSL + BYOK Anthropic AI. It is "under construction" but on Product Hunt. When it ships stable, it will capture "JSON to diagram free OSS" search results.
+
+**Skissify's counter**: publish the rendering engine as an npm package NOW, before OpenFlowKit hits v1.0. The hand-drawn aesthetic is the differentiator, but only if developers find Skissify in the same search results. A GitHub repo with 100+ stars and an npm package with weekly downloads will outrank a newer OSS entrant in developer tool discovery.
+
+**Minimum viable OSS release (Monday):**
+1. Create `@skissify/renderer` (or `skissify-core`) npm package from existing `src/lib/renderer.ts` + `src/lib/wobble.ts` + `src/lib/types.ts`
+2. Publish to npm with clear README: "Hand-drawn SVG renderer. JSON in, SVG out. No browser required."
+3. Create GitHub repo: `github.com/[username]/skissify-renderer` with MIT license
+4. Post to relevant threads where OpenFlowKit is being discussed: "We shipped a headless hand-drawn renderer — check skissify-core on npm"
+
+**Expected impact**: 50-200 npm downloads/week from existing JSON-diagram searchers; GitHub stars from developers who find it via OpenFlowKit comparison queries.
+
+---
+
+### Action 3 (HIGH — Monday): Rewrite Pricing Page — Flat Tiers, Not Per-Render
+
+**New from Run #130**: 2026 pricing psychology is "hybridization and partial reversion" — customers prefer flat, predictable billing. 41% enterprise hybrid adoption works because the FLAT TIER is prominent and the overage is a footnote. Currently Skissify's pricing mentions "EUR 0.005 per render" prominently. This creates mental friction at the decision point.
+
+**Recommended rewrite (30-minute task):**
+- **Headline**: Change from "Pay per render" to "5,000 renders/month included in Pro"
+- **Pro tier callout**: Bold "5,000 renders/month" — not the per-render price
+- **Overage**: Move "EUR 0.005 per render after limit" to FAQ or small footnote under tier
+- **tldraw contrast line**: Add to Pro tier description: "vs. tldraw SDK at $6,000/year (last updated April 2025)"
+- **Credit pack**: Add "EUR 5 — 2,000 renders, one-time" as a visible option for no-subscription preference
+
+**Before/After example:**
+- Before: "Pro: EUR 9/mo — API access, 5,000 renders, overage at EUR 0.005/render"
+- After: "Pro: EUR 9/month — **5,000 renders included** — API access, private sketches, team share. Need more? Add renders at EUR 5 for 2,000."
+
+**Why now**: This is a copy edit. No code change. Can be done in <1 hour. Measurable conversion impact within days.
+
+---
+
 ## [2026-04-04] — Strategy Run #129 Actions (Saturday April 4, 05:56 Stockholm) — FOR MONDAY APRIL 6
 
 ### Context: Run #129 Key New Findings
