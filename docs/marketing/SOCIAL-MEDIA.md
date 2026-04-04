@@ -1,7 +1,269 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 4, 2026 — Cycle 142 (New: 6 viral hooks — "Speed of Thought" Twitter/X thread (idea capture window angle), r/artificial (1.3M — visual layer for 12K MCP servers), r/webdev (1.9M — Show-style launch post), Bluesky/Twitter #BuildInPublic weekend metrics share, Dev.to "Reproducibility Problem" deep-dive, r/SoftwareEngineering (1.1M — whiteboard that scales). New platforms: r/artificial, r/webdev, r/SoftwareEngineering, Bluesky. New hashtags: #SketchURL #SpeedOfThought #ReproducibleAI #AgentStack #VisualPrimitive #BuildInPublic.)**
+**Last updated: April 5, 2026 — Cycle 143 (New: 6 viral hooks — "Permission Signal" Twitter thread (roughness as psychological safety), LinkedIn "Two-Stage Design Workflow" carousel, r/ProductManagement (1.8M — ideation speed post), r/MachineLearning (4.1M — agent handoff problem), Discord vibe-coding server launch post, HackerNoon "Handoff Problem" technical submission. New platforms: HackerNoon, vibe-coding Discord (70K+), r/ProductManagement. New hashtags: #PermissionSignal #VibeDrawing #HandoffProblem #StageAppropriate #AIAgentStack #MultiAgent.)**
+
+---
+
+## Cycle 143 — April 5, 2026 (Day 5 Post-Launch — Permission Signal + Handoff Problem + Stage-Appropriate Tools)
+
+### Strategic Priority
+
+Day 5 (Sunday). Prime async reading window — developers and designers catching up on weekend content before Monday. New angles this cycle:
+
+1. **"The Permission Signal"** — roughness communicates psychological safety; why that matters for teams
+2. **"The Handoff Problem"** — multi-agent orchestration and visual state transfer
+3. **"Stage-Appropriate Tools"** — Skissify for explore, Excalidraw for document (cooperation, not competition)
+4. **LinkedIn carousel** — visual two-stage workflow diagram (high share rate in engineering audiences)
+5. **r/ProductManagement (1.8M)** — ideation speed post, "why your team keeps giving polish feedback at the wrong time"
+6. **Discord vibe-coding server (70K+)** — direct community post, "vibe drawing is the next vibe coding"
+
+Still critically overdue — post these NOW:
+- r/LocalLLaMA (2.3M) — OVERDUE since Cycle 111
+- MCP Discord #showcase — OVERDUE since Cycle 111
+- Indie Hackers — OVERDUE since Cycle 98
+- r/AI_Agents (212K) — OVERDUE since Cycle 132
+
+---
+
+### Viral Hook 1: "The Permission Signal" — Twitter/X Thread
+
+**Platform:** Twitter/X thread
+**Core insight:** Rough sketches don't just convey ideas — they signal to a room that the idea is still open for challenge. Polished artifacts suppress structural feedback. The roughness is a feature.
+
+**Tweet 1 (opener):**
+```
+Your team is not giving you bad feedback.
+
+Your tool is giving them the wrong signal.
+
+When you share a polished Figma frame in ideation, the room interprets "polished" as "nearly decided."
+
+They give you polish feedback. You wanted strategic feedback. 🧵
+```
+
+**Tweet 2:**
+```
+Bill Buxton called this "perceived completeness bias" in 1992.
+
+When an artifact looks finished, people self-censor structural objections.
+
+It feels impolite to say "should this feature exist?" when someone is clearly proud of how clean it looks.
+
+The artifact trains the room to not challenge the idea.
+```
+
+**Tweet 3:**
+```
+The fix is not to make worse Figma frames.
+
+The fix is to use a rough sketch.
+
+A hand-drawn, wobbly, obviously-draft sketch sends one clear signal:
+
+"React to the concept, not the execution. This is not done. Challenge the direction."
+
+That permission unlocks better decisions.
+```
+
+**Tweet 4:**
+```
+The roughness is not a limitation.
+
+It is a feature.
+
+A sketch that looks rough tells the room: we're still in the question-asking phase.
+
+A sketch that looks polished tells the room: we're close to done.
+
+At 9am in ideation, "still questioning" is worth more than "close to done."
+```
+
+**Tweet 5 (CTA):**
+```
+I built Skissify for the question-asking phase.
+
+Generate a rough sketch in 30 seconds → drop the URL → get structural feedback.
+
+The sketch looks rough on purpose. That's the product.
+
+→ skissify.com/human
+
+#SketchFirst #PermissionSignal #ProductDesign #BuildInPublic
+```
+
+---
+
+### Viral Hook 2: r/ProductManagement (1.8M) Post
+
+**Platform:** r/ProductManagement
+**Title:** "Why your team keeps giving layout feedback during ideation (and how to fix it with one tool swap)"
+**Format:** Text post with workflow table
+
+**Body:**
+```
+Classic PM problem: you share a Figma wireframe in a discovery session and instead of strategic feedback, you get:
+
+"Can we make the button bigger?"
+"What font is that?"
+"The spacing feels off."
+
+This is not a bad team. This is a signal problem.
+
+When you share a polished artifact, reviewers interpret the polish level as "confidence level." A clean Figma frame says "decisions are close to final." So they give final-stage feedback — even at day 1.
+
+The fix: rough sketches for ideation.
+
+A sketch that looks hand-drawn, wobbly, and obviously draft sends a different signal: "this is a direction, not a proposal." Reviewers give exploration feedback: "Should this feature exist?" "What if users skip this step entirely?"
+
+My workflow now:
+
+| Stage | Tool | Why |
+|-------|------|-----|
+| Ideation (is this right?) | Skissify (rough sketch, URL in 30s) | Signals "still questioning" |
+| Validation (is this good?) | Figma | Signals "evaluating execution" |
+| Documentation (this is decided) | Figma/Excalidraw | Signals "recording a decision" |
+
+The only change: I stop using Figma for ideation.
+
+Tool that fixed this for me: Skissify (skissify.com) — generates a hand-drawn sketch from a text description. Takes 30 seconds. The roughness is intentional — it's what makes the feedback useful.
+
+Anyone else had this problem? What's your fix?
+```
+
+---
+
+### Viral Hook 3: r/MachineLearning (4.1M) — The Handoff Problem
+
+**Platform:** r/MachineLearning
+**Title:** "The visual state transfer problem in multi-agent AI workflows (and a JSON-based fix)"
+**Format:** Technical post with code snippet
+
+**Body:**
+```
+Multi-agent workflows that produce spatial output have a structural problem: visual state degrades when it passes through text.
+
+Agent A: "bedroom in northeast corner, 4m x 5m, window north-facing"
+Agent B: receives text, interprets, re-encodes in its own vocabulary
+Agent C: receives Agent B's interpretation, not Agent A's intent
+
+Each hop loses precision. Coordinate systems, measurement conventions, and spatial vocabulary vary between agents. By the time you're 3 steps deep in an orchestration chain, the spatial intent is unrecoverable without human intervention.
+
+I've been experimenting with a JSON manifest approach via Skissify's API:
+
+{
+  "elements": [
+    { "type": "rect", "x": 340, "y": 80, "w": 160, "h": 200, "label": "Bedroom" },
+    { "type": "window", "x": 360, "y": 80, "w": 120, "label": "Garden view" }
+  ]
+}
+
+→ Returns: https://skissify.com/s/a1b2c3...
+
+This URL is deterministic (same manifest = same URL). It functions as a content hash for a visual artifact. Agents can store, retrieve, and diff manifests without re-rendering or re-describing.
+
+The practical benefit: agent review steps can compare a rendered sketch against requirements without reconstructing spatial information from text descriptions.
+
+Has anyone else run into visual state transfer problems in multi-agent spatial workflows? Curious if there are other approaches to this.
+
+MCP server available for Claude-based workflows: github.com/skissify/skissify-mcp
+```
+
+---
+
+### Viral Hook 4: LinkedIn "Two-Stage Workflow" — Carousel Post
+
+**Platform:** LinkedIn
+**Format:** Carousel post (7 slides)
+**Core insight:** Stop using Figma for exploration. Use stage-appropriate tools.
+
+**Text above carousel:**
+```
+Most design teams use the wrong tool at the wrong stage.
+
+Not because they don't know Figma is powerful.
+
+Because nobody told them that "powerful" is a liability in ideation.
+
+Here's the two-stage model that fixed it for us. 👇
+```
+
+**Slide 1:** "The Two-Stage Design Model" (title)
+**Slide 2:** "Stage 1 — Explore" / Tool: Skissify / Goal: Generate options, kill wrong ideas fast / Time: 30 seconds per concept
+**Slide 3:** "Stage 2 — Document" / Tool: Figma or Excalidraw / Goal: Record decisions, hand off to engineers / Time: 30 minutes per artifact
+**Slide 4:** "The Polished-Artifact Trap" — When you use Figma in Stage 1, reviewers treat it like Stage 2. They give polish feedback, not strategic feedback.
+**Slide 5:** "The Permission Signal" — A rough sketch tells the room: challenge the direction, not the execution. That permission unlocks better decisions.
+**Slide 6:** "The Workflow" — [Skissify sketch URL in Slack] → "Thoughts on direction?" → [Actual strategic feedback] → [Figma for the chosen direction]
+**Slide 7:** CTA — "Try the explore stage with Skissify. 30 seconds. The roughness is the point. → skissify.com/human"
+
+**Hashtags:** #ProductDesign #DesignProcess #UX #UIDesign #AITools #BuildInPublic #DesignLeadership
+
+---
+
+### Viral Hook 5: Discord Vibe-Coding Server (70K+) Post
+
+**Platform:** Discord — vibecoding server (#show-and-tell or #tools channel)
+**Format:** Short punchy post with sketch URL
+
+**Body:**
+```
+vibe coding produces code.
+vibe drawing produces sketches.
+
+same energy. different output.
+
+I built a tool so Claude can draw instead of describe.
+
+Instead of: "put a bedroom in the northeast corner with a north-facing window"
+You get: skissify.com/s/[sketch-url]
+
+It's an MCP server. Plug it into Claude and it draws floor plans, room layouts, any spatial concept.
+
+No image generation. Just JSON → hand-drawn sketch. Deterministic. Versioned. Shareable URL.
+
+→ skissify.com | MCP config: github.com/skissify/skissify-mcp
+
+#VibeCoding #VibeDrawing #MCP #ClaudeAI #BuildInPublic
+```
+
+---
+
+### Viral Hook 6: HackerNoon Article Submission
+
+**Platform:** HackerNoon (submit via hackernoon.com/contribute)
+**Title:** "The Visual State Transfer Problem in Multi-Agent AI Workflows"
+**Publish angle:** Technical deep-dive, 1500 words, developer audience
+**Content:** Expand the r/MachineLearning post into a full article with:
+- Problem definition (spatial state degrades through text hops)
+- Technical walkthrough (JSON manifest as shared visual format)
+- Code example (curl API call + response)
+- Workflow diagram (planning → sketch → review → refinement)
+- Conclusion (why the MCP ecosystem needs a visual output layer)
+
+**HackerNoon-specific hooks:**
+- Technical depth is rewarded (not a listicle)
+- "The problem" framing works better than "my product" framing
+- Code snippets get engagement from the dev audience
+- Cross-post to Dev.to same day for backlink
+
+---
+
+### Cycle 143 — Hashtag Additions
+
+**New hashtags from web research (April 2026):**
+
+| Hashtag | Volume | Audience | When to Use |
+|---------|--------|----------|-------------|
+| #PermissionSignal | Owned/new | Design leaders, PMs | Permission Signal content |
+| #VibeDrawing | Owned/new | Vibe coding community | AI-generated sketch content |
+| #HandoffProblem | Owned/new | ML engineers, AI builders | Multi-agent spatial workflow content |
+| #StageAppropriate | Owned/new | Design teams, PMs | Figma vs Skissify comparison content |
+| #MultiAgent | Growing | AI engineers | Agent workflow content |
+| #AgentStack | Growing | AI engineers | MCP/agent integration content |
+| #IndieHackers | High | Founders, builders | BuildInPublic content |
+| #ProductHuntLaunch | Seasonal | Indie hackers | Launch day callbacks |
+| #DesignLeadership | Mid | Engineering managers, design leads | LinkedIn carousel content |
+| #VibeCoding | Very high (153K community) | Developers | Discord/Reddit vibe coding posts |
 
 ---
 

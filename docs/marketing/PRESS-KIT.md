@@ -1,6 +1,38 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 142 (New: 3 blog posts — "Speed of Thought" idea capture window for Figma post, "The Reproducibility Problem" for floor plan/AI agents post, "The Blank Canvas Problem" accessibility angle for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 142 block with 6 viral hooks: "Speed of Thought" Twitter thread, r/artificial (1.3M), r/webdev (1.9M) Show-style post, Bluesky #BuildInPublic Day 4 metrics, Dev.to "Reproducibility Problem" technical article, r/SoftwareEngineering (1.1M) async design communication post. New platforms: r/artificial, r/webdev, r/SoftwareEngineering, Bluesky. New hashtags: #SpeedOfThought #ReproducibleAI #VisualLayer #BlankCanvas #AgentOutput #AsyncDesign.)*
+*Last updated: April 5, 2026 — Cycle 143 (New: 3 blog posts — "The Permission Signal" for Figma/sketches post, "The Handoff Problem" for AI agents/floor plans post, "Stage-Appropriate Tools" for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 143 block with 6 viral hooks: "Permission Signal" Twitter thread, r/ProductManagement (1.8M), r/MachineLearning (4.1M) agent handoff post, LinkedIn carousel "Two-Stage Workflow", Discord vibe-coding server (70K+) post, HackerNoon technical article submission. New platforms: HackerNoon, vibe-coding Discord, r/ProductManagement (if not already targeted). New hashtags: #PermissionSignal #VibeDrawing #HandoffProblem #StageAppropriate #MultiAgent #AgentStack #DesignLeadership.)*
+
+---
+
+## Cycle 143 — What's New (April 5, 2026 — Day 5 Post-Launch)
+
+### Day 5 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: "The Permission Signal" — Figma/sketches post (Cycle 143) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle143.md` |
+| Blog: "The Handoff Problem" — AI agents/floor plans post (Cycle 143) | DONE — `blog/how-ai-agents-draw-floor-plans-cycle143.md` |
+| Blog: "Stage-Appropriate Tools" — Excalidraw comparison (Cycle 143) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle143.md` |
+| SOCIAL-MEDIA.md Cycle 143 | DONE — 6 hooks: Permission Signal Twitter, r/ProductManagement, r/MachineLearning agent handoff, LinkedIn carousel, Discord vibe-coding, HackerNoon submission |
+| PRESS-KIT.md Cycle 143 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 143 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY (Day 5, absolutely final window) |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents (212K) | OVERDUE since Cycle 132 — post today |
+| r/ProductManagement (1.8M) | NEW Cycle 143 — post today (Hook 2) |
+| r/MachineLearning (4.1M) | NEW Cycle 143 agent handoff post (Hook 3) — also overdue from Cycle 138 general post |
+| Discord vibe-coding server (70K+) | NEW Cycle 143 — post today (Hook 5) |
+| HackerNoon submission | NEW Cycle 143 — submit today (Hook 6) |
+| LinkedIn carousel | NEW Cycle 143 — post today (Hook 4) |
+| r/artificial (1.3M) | NEW Cycle 142 — still unposted |
+| r/webdev (1.9M) | NEW Cycle 142 — still unposted |
+| r/SoftwareEngineering (1.1M) | NEW Cycle 142 — still unposted |
+| r/Architecture (2.1M) | NEW Cycle 140 — still unposted |
+| r/DnD (3.2M) | Cycle 135 — still unposted |
+| HN Show HN | P1 — MONDAY April 7, 08:00 CET |
 
 ---
 

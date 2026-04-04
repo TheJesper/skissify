@@ -1,7 +1,74 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 142**
+**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 143**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 143 — Day 5 Permission Signal + Handoff Problem + Stage-Appropriate Tools)
+
+### Cycle 143 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma" — Cycle 143 ("Permission Signal" angle — roughness as psychological safety signal, perceived completeness bias research, two-stage design model table, four scenario analysis, cognitive tax calculation) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle143.md` | DONE |
+| Blog: "How AI Agents Draw Floor Plans" — Cycle 143 ("Handoff Problem" angle — visual state degradation in multi-agent workflows, JSON manifest as shared visual format, sketch URL as content-addressed agent memory, concrete 6-step multi-agent floor plan workflow) | `blog/how-ai-agents-draw-floor-plans-cycle143.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 143 ("Stage-Appropriate Tools" angle — cooperation not competition framing, explore vs document stages, 15-row feature table, honest limitations of Skissify, recommended two-stage workflow) | `blog/skissify-vs-excalidraw-comparison-cycle143.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 143 — 6 new viral hooks: "Permission Signal" Twitter thread (roughness as psychological safety), r/ProductManagement (1.8M — ideation speed post), r/MachineLearning (4.1M — agent handoff technical post), LinkedIn "Two-Stage Workflow" carousel (7 slides), Discord vibe-coding server (70K+ — vibe drawing post), HackerNoon technical article submission. New platforms: HackerNoon, vibe-coding Discord, r/ProductManagement. New hashtags: #PermissionSignal #VibeDrawing #HandoffProblem #StageAppropriate #MultiAgent #AgentStack #DesignLeadership. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 143 — Day 5 status table with new channels (r/ProductManagement, r/MachineLearning agent post, Discord vibe-coding, HackerNoon, LinkedIn carousel) | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 143 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 143 — Priority Actions (April 5 — Sunday, Day 5)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** (212K) — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST r/ProductManagement** (1.8M) — NEW Cycle 143 | P1 | TODAY | Copy in Cycle 143 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/MachineLearning** (4.1M) — Cycle 143 agent handoff angle | P0 | TODAY | Copy in Cycle 143 SOCIAL-MEDIA.md (Hook 3) |
+| **POST LinkedIn carousel "Two-Stage Workflow"** — NEW Cycle 143 | P1 | TODAY | Copy in Cycle 143 SOCIAL-MEDIA.md (Hook 4) |
+| **POST Discord vibe-coding server** (70K+) — NEW Cycle 143 | P1 | TODAY | Copy in Cycle 143 SOCIAL-MEDIA.md (Hook 5) |
+| **SUBMIT HackerNoon article** — NEW Cycle 143 | P1 | TODAY | Expand r/ML post to 1500-word article |
+| **POST r/artificial** (1.3M) — NEW Cycle 142, still unposted | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/webdev** (1.9M) — NEW Cycle 142, still unposted | P1 | TODAY | Copy in Cycle 142 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/vibecoding** (153K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/ClaudeAI** (688K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ClaudeCode** (96K) — Cycle 141, still unposted | P0 | TODAY | Copy in Cycle 141 SOCIAL-MEDIA.md (Hook 4) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — Day 5 absolute final window | Script in Cycle 139 SOCIAL-MEDIA.md |
+| **POST r/Architecture** (2.1M) — NEW Cycle 140, still unposted | P1 | TODAY | Copy in Cycle 140 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/DnD** (3.2M) — Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md |
+| **PUBLISH 3 Cycle 143 blogs to Dev.to** | P0 | TODAY staggered 10:00/13:00/16:00 CET | |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment |
+
+### Cycle 143 — New Ideas
+
+**Idea: The "Permission Signal" framing is the highest-converting idea for design and PM audiences.** Every product manager, design lead, and engineering manager has experienced the problem: you share something in a discovery meeting and get polish feedback instead of strategic feedback. The root cause (perceived completeness bias) is well-documented research going back to 1992. Framing Skissify as "the tool that sends the right signal at the right stage" is more persuasive than "it's fast and rough." It explains *why* the roughness is valuable, not just *what* the roughness is.
+
+**Idea: r/ProductManagement (1.8M) is a high-value untapped community.** PMs care about team decision velocity, stakeholder alignment, and feedback quality — all of which the Permission Signal argument addresses. The subreddit responds well to "here's a problem I had and how I solved it" posts with workflow tables. The Figma-for-ideation problem is one that every PM recognizes from their own meetings. A post that names the problem and offers a tool-level fix will generate significant organic discussion.
+
+**Idea: The "Handoff Problem" is the most technically precise argument Skissify can make to ML engineers.** It frames Skissify not as a design tool but as infrastructure for multi-agent spatial workflows. This is the argument that ML researchers and AI engineers find compelling — not "it makes pretty sketches" but "it solves visual state degradation in agent orchestration chains." The HackerNoon submission should use this frame, as HackerNoon's audience is technical and responds to problem-first framing.
+
+**Idea: The Discord vibe-coding server (70K+) is the highest-reach community Skissify hasn't reached.** The vibe coding movement is explicitly about AI generating artifacts that used to require human craft. Skissify is the visual output layer of this movement. The post should use the exact parallel: "vibe coding produces code / vibe drawing produces sketches." This is a coinable phrase that community members will repeat and share. #VibeDrawing as a branded hashtag extension of #VibeCoding is ownable and positions Skissify at the center of a movement that is actively growing.
+
+**Idea: LinkedIn carousel posts have the highest share rate into corporate Slack channels.** Engineering managers and design leads share LinkedIn carousels internally when they contain named, replicable workflow patterns. "The Two-Stage Design Model" is exactly this: a named workflow with two clearly defined stages, two clearly defined tools, and a clear explanation of why each tool is appropriate for each stage. This is content that gets forwarded in team Slack channels — reaching audiences that no Reddit algorithm or Twitter feed reaches.
+
+**Insight from web research: HackerNoon has high domain authority and accepts article submissions.** Publishing "The Visual State Transfer Problem in Multi-Agent AI Workflows" on HackerNoon creates a high-DA backlink for Skissify's SEO, reaches the HackerNoon developer audience (which has significant overlap with Hacker News), and provides a canonical technical reference that other content can link to. The article should be approximately 1500 words with code examples — HackerNoon's editorial standards favor technical depth over length.
+
+**Insight from web research: The vibe-coding Discord server (discord.gg/vibecoding) has 6,424+ members and growing.** The Bridgemind AI Discord claims 70,000+ vibe coders. These communities are directly relevant to Skissify's "vibe drawing" positioning. A post in the #tools or #show-and-tell channel with a concrete demo (actual sketch URL) and a clear one-line value prop will reach builders who are already looking for AI-generated output tools.
+
+### Cycle 143 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle143.md | DONE Cycle 143 |
+| Blog: how-ai-agents-draw-floor-plans-cycle143.md | DONE Cycle 143 |
+| Blog: skissify-vs-excalidraw-comparison-cycle143.md | DONE Cycle 143 |
+| SOCIAL-MEDIA.md — 6 new viral hooks + platform matrix update (r/ProductManagement, r/MachineLearning agent angle, Discord vibe-coding, HackerNoon, LinkedIn carousel) + new hashtags | DONE Cycle 143 |
+| PRESS-KIT.md — Cycle 143 Day 5 status table | DONE Cycle 143 |
+| LAUNCH-PLAN.md — Cycle 143 block | DONE Cycle 143 |
 
 ---
 
