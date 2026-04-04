@@ -1,7 +1,60 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day — Cycle 132**
+**Current Date: April 5, 2026 — Post-Launch Day 2 — Cycle 133**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 133 — Day 2 Tail Extension)
+
+### Cycle 133 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 133 (stakeholder psychology angle, "polite lies" hook, "your stakeholders are lying to you" opener, cleaner use-figma-when framing, 550 words, Dev.to-optimized) | `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle133.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — Cycle 133 (Mastra + LangGraph callouts, "three minutes to a drawing agent" framing, under-the-hood schema explanation, REST API endpoint explicitly named, determinism argument sharpened) | `blog/how-ai-agents-can-draw-floor-plans-cycle133.md` | DONE |
+| Blog: "Skissify vs Excalidraw" — Cycle 133 ("use-both pattern" as primary message, 13-row feature table retained, one-sentence per tool positioning, sequential workflow diagram, Dev.to search-optimized title) | `blog/skissify-vs-excalidraw-comparison-cycle133.md` | DONE |
+| SOCIAL-MEDIA.md Cycle 133 — 5 new viral hooks: shareable typographic card, Peerlist "I built this" post, Dev.to cross-post hooks, r/homeimprovement full post body, LinkedIn carousel caption set. New hashtags: #NapkinPhase #AIArchitecture #AgentTools | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 133 | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 133 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 133 — Priority Actions (April 5–7)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | |
+| **POST r/AI_Agents** — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 2) |
+| **POST Peerlist** — NEW | P1 | TODAY | Copy in Cycle 133 SOCIAL-MEDIA.md (Hook 2) |
+| **PUBLISH 3 Cycle 133 blogs to Dev.to** | P0 | TODAY | With Dev.to hooks from Cycle 133 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/homeimprovement** (4.8M) | P1 | Monday April 7, 10:00–12:00 CET | Copy in Cycle 133 SOCIAL-MEDIA.md (Hook 4) |
+| **RECORD DEMO VIDEO** — P0 FOREVER (no more excuses) | P0 FOREVER | TODAY — absolute final window | 60s screen capture + voiceover. Script in Cycle 132 SOCIAL-MEDIA.md. |
+| **POST fosstodon.org** | P1 | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 5) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Engage every comment before end of day |
+
+### Cycle 133 — New Ideas
+
+**Idea: Peerlist is the cleanest "I built this" channel with zero AI tool saturation.** Developer portfolio posts get strong discoverability from a high-quality audience of builders. The post angle is technical but personal (stack, architecture decisions, problem framing). Copy ready in Cycle 133 SOCIAL-MEDIA.md.
+
+**Idea: Dev.to is the single highest-ROI publish destination for all three blog posts.** The Cycle 133 blog files are shorter and sharper than previous cycles — they're designed to be read in 4–5 minutes and upvoted by the Dev.to developer community. Publish all three today with the hook lines from Cycle 133 SOCIAL-MEDIA.md as descriptions. Tag: `ai, agents, mcp, design, tools`.
+
+**Idea: The "use-both pattern" is a positioning upgrade.** Framing Skissify and Excalidraw as sequential tools (automated generation → human refinement) removes the competitive tension and makes both communities receptive. The Excalidraw open-source community is defensive about "alternatives" framing — the "use-both" angle disarms this and positions Skissify as an addition rather than a threat. Use this framing in every Excalidraw comparison from now on.
+
+**Idea: r/homeimprovement (4.8M) is the highest-reach untapped community and the post copy is ready.** Full body text staged in Cycle 133 SOCIAL-MEDIA.md. Post Monday April 7, 10:00–12:00 CET peak window. The non-technical angle ("I asked AI to design my renovation") has zero overlap with the AI developer community — it reaches a completely new audience.
+
+**Idea: #NapkinPhase is ownable.** Low saturation on all platforms. Pairs perfectly with the "rough is intentional" angle. Use consistently in every sketch-first post going forward. It will compound.
+
+### Cycle 133 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle133.md | DONE Cycle 133 |
+| Blog: how-ai-agents-can-draw-floor-plans-cycle133.md | DONE Cycle 133 |
+| Blog: skissify-vs-excalidraw-comparison-cycle133.md | DONE Cycle 133 |
+| SOCIAL-MEDIA.md — 5 new viral hooks + platform matrix update + hashtag additions | DONE Cycle 133 |
+| PRESS-KIT.md — Cycle 133 day-2 status table | DONE Cycle 133 |
+| LAUNCH-PLAN.md — Cycle 133 block | DONE Cycle 133 |
 
 ---
 

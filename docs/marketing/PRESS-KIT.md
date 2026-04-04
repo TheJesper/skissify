@@ -1,6 +1,30 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 132 (Post-launch. New: 3 new blog posts (Cycle 132 — Figma post with fidelity-signal framework, floor plan post with four production workflows + GitHub Action use case, Excalidraw comparison with full feature table + decision tree), SOCIAL-MEDIA.md Cycle 132 block with 6 new viral hooks (TikTok script, r/AI_Agents, LinkedIn fidelity post, Threads, Mastodon, MCP Discord), platform matrix updated with r/AI_Agents + fosstodon + Peerlist, hashtag refresh.)*
+*Last updated: April 5, 2026 — Cycle 133 (New: 3 blog posts (Cycle 133 — shorter/sharper rewrites of all three core posts, new angles: stakeholder psychology for Figma post, Mastra/LangGraph callouts for floor plan post, "use-both pattern" for Excalidraw comparison), SOCIAL-MEDIA.md Cycle 133 block with 5 new viral hooks (shareable card, Peerlist post, Dev.to hooks, r/homeimprovement body, LinkedIn carousel), new hashtags: #NapkinPhase #AIArchitecture #AgentTools, platform matrix updated.)*
+
+---
+
+## Cycle 133 — What's New (April 5, 2026 — Day 2 Post-Launch)
+
+### Day 2 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: Figma comparison (Cycle 133) | DONE — `blog/why-hand-drawn-sketches-beat-figma-for-quick-ideas-cycle133.md` |
+| Blog: AI agents floor plans (Cycle 133) | DONE — `blog/how-ai-agents-can-draw-floor-plans-cycle133.md` |
+| Blog: Skissify vs Excalidraw (Cycle 133) | DONE — `blog/skissify-vs-excalidraw-comparison-cycle133.md` |
+| SOCIAL-MEDIA.md Cycle 133 | DONE — shareable card, Peerlist, Dev.to hooks, r/homeimprovement body, LinkedIn carousel |
+| PRESS-KIT.md Cycle 133 | DONE — this file |
+| LAUNCH-PLAN.md Cycle 133 | DONE |
+| Demo video | STILL OVERDUE — record today without exception |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post today |
+| r/AI_Agents | OVERDUE since Cycle 132 — post today, copy ready |
+| Peerlist | NEW — post today, copy in Cycle 133 SOCIAL-MEDIA.md |
+| Dev.to — 3 Cycle 133 blog posts | NEW — publish today |
+| r/homeimprovement (4.8M) | Scheduled April 7 — copy ready in Cycle 133 |
 
 ---
 

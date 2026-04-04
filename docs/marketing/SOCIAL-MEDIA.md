@@ -1,7 +1,205 @@
 # Skissify Social Media Copy
 
 **Launch: April 1, 2026**
-**Last updated: April 4, 2026 — Cycle 132 (New: 6 viral hooks — TikTok/Reels voiceover script, r/AI_Agents post copy, LinkedIn "fidelity signal" post, Threads-native hook, Mastodon/fosstodon post, Discord MCP showcase copy. New platforms: r/AI_Agents (growing fast, agent builders), fosstodon.org (developer Mastodon), Peerlist. Hashtag refresh: #VibeDrawing confirmed growing, #AIAgents 2026 community data added.)**
+**Last updated: April 5, 2026 — Cycle 133 (New: 5 viral hooks — "napkin beats Figma" shareable card, Peerlist "I built this" post, Dev.to cross-post hook, r/homeimprovement post body, LinkedIn "use both" carousel caption set. New angles: "use-both" positioning, homeowner non-technical pipeline, Peerlist dev-portfolio launch. Hashtag additions: #NapkinPhase, #AIArchitecture, #AgentTools.)**
+
+---
+
+## Cycle 133 — April 5, 2026 (Day After Launch — Extend the Tail)
+
+### Strategic Priority
+
+The first 72 hours are gone. What keeps momentum alive now is **breadth**: new communities, new angles, new content formats. The core technical audience has seen the product. The next wave is: homeowners who don't care about JSON, developers who use LangGraph and Mastra, and the "I built this" portfolio crowd on Peerlist and Dev.to.
+
+The three Cycle 133 blog posts are shorter, sharper, and optimized for different distribution — the Figma post for LinkedIn shares, the floor plan post for Dev.to upvotes, the Excalidraw comparison for organic search.
+
+---
+
+### Viral Hook 1: "The Napkin Beats Figma" — Shareable Image Card
+
+**Format:** Single image post. Screenshot or generate the following text as a typographic card. Post to Twitter/X, Threads, LinkedIn, Bluesky simultaneously.
+
+**Image text:**
+```
+Your stakeholders are giving you polite feedback, not honest feedback.
+
+Because your Figma frame looks finished.
+And finished means: don't challenge this.
+
+A rough sketch says: this is early — push back.
+
+Match fidelity to certainty.
+Sketch first. Figma later.
+```
+
+**Caption (Twitter/X — 1–2 hashtags max):**
+```
+The most expensive Figma mistake: opening it before the idea is validated.
+
+Rough is a signal. Not a limitation.
+
+skissify.com #VibeDrawing
+```
+
+**Caption (LinkedIn — in post body, no image, dense text):**
+```
+I've watched this happen in product meetings more times than I can count.
+
+Room walks in with a polished Figma frame. Everyone nods. A few gentle suggestions. Meeting ends. Three weeks later: the whole premise was wrong.
+
+The problem wasn't the design. It was the signal the artifact sent. Polish says "this is decided." A rough sketch says "help me figure this out."
+
+In 2026, you can generate three hand-drawn sketch options from a Claude conversation before the meeting starts. No Figma. No designer hours. Just rough layouts that invite challenge.
+
+That's the point. The roughness is the feature.
+
+→ skissify.com (AI agents can now draw rough sketches, not just describe them)
+```
+
+**Caption (Bluesky + Mastodon — hashtags work well here):**
+```
+Figma is a finishing tool being used as a thinking tool.
+
+A rough sketch is epistemic permission: "I don't have this figured out yet."
+
+That signal is worth more than any prototype fidelity in week one.
+
+→ skissify.com
+
+#VibeDrawing #VibeCoding #SketchFirst #NapkinPhase #ProductDesign
+```
+
+---
+
+### Viral Hook 2: Peerlist — "I Built This" Post
+
+**Platform:** Peerlist (developer portfolio, zero AI tool saturation, strong "I built this" discoverability)
+
+**Post:**
+```
+I built Skissify — a sketch rendering API for AI agents.
+
+The problem: language models reason well about spatial layouts (floor plans, system diagrams, room arrangements) but produce text output that no human can react to visually.
+
+The tool: POST a flat JSON manifest, get back a hand-drawn SVG sketch URL in ~150ms.
+
+What makes it different from just generating an image:
+- Deterministic: same manifest = same sketch, always. Hash it, cache it, version-control it.
+- MCP server: Claude can call skissify_render directly. Three-line setup.
+- Architectural element types: 26 types including doors, windows, stairs, furniture fixtures.
+- Flat schema: no nested objects, optimized for LLM generation accuracy (~90% first-attempt success rate).
+
+Stack: Next.js 15 + React 19 + TypeScript + HTML Canvas 2D + custom wobble algorithms + Caveat font (Google Fonts).
+
+Free tier at skissify.com. Would love feedback from anyone building agent pipelines.
+```
+
+---
+
+### Viral Hook 3: Dev.to Cross-Post Hook
+
+**Target:** Dev.to — post all three Cycle 133 blog files today. Each needs a Dev.to-specific hook in the first sentence.
+
+**For "Why Hand-Drawn Sketches Beat Figma":**
+Opening hook to add as Dev.to description:
+> Your stakeholders are lying to you — politely, professionally, and entirely because of your tool choice. Here's the one rule that changes early-stage design meetings.
+
+**For "How AI Agents Can Draw Floor Plans":**
+> Three minutes, one terminal command, and Claude can now draw floor plans — not describe them. Here's the complete setup and four production workflows.
+
+**For "Skissify vs Excalidraw":**
+> Both produce hand-drawn sketches. Both are used by developers. The actual difference is one question: is a human holding the pen? Full feature table inside.
+
+**Tags for all three:** `ai, agents, mcp, design, tools`
+
+---
+
+### Viral Hook 4: r/homeimprovement Post Body — April 7 Window
+
+**Subreddit:** r/homeimprovement (4.8M members) | Post Monday April 7, 10:00–12:00 CET
+
+**Title options:**
+- A: "I asked AI to design my apartment renovation — it drew me a floor plan in 4 seconds"
+- B: "AI can now sketch floor plans, not just describe them — free tool I built"
+
+**Post body:**
+```
+I renovated a small apartment last year. The most frustrating part wasn't the work — it was communicating the layout ideas to contractors and my partner before anything was decided.
+
+I'd describe what I was thinking. They'd nod. We'd all imagine something different.
+
+I built a tool to fix this. It's called Skissify. You describe a room layout in plain language to an AI assistant. The AI generates a hand-drawn floor plan that looks like something you'd sketch on paper. You get a shareable link. The whole thing takes about 4 seconds.
+
+No technical knowledge required. Just go to skissify.com/human, describe your space, and hit render.
+
+It uses actual architectural element types — doors that show swing direction, windows, stairs, furniture boxes — not just rectangles. The hand-drawn style is intentional: it looks like a first draft because it IS a first draft. Something you can show a contractor and say "roughly like this."
+
+If you're planning a renovation, redesigning a room, or just trying to communicate a layout idea to anyone, give it a try. Free, no account required.
+
+Happy to answer questions about how it works or what's possible.
+```
+
+---
+
+### Viral Hook 5: LinkedIn Carousel Caption Set — "The Use-Both Pattern"
+
+**Format:** 5-slide carousel. Each slide = one line of caption. Screenshots of: Skissify sketch → same sketch → Excalidraw import refinement.
+
+**Slide captions:**
+```
+Slide 1: Two sketch tools. Wildly different jobs.
+
+Slide 2: Skissify: AI generates the first draft. 150ms. JSON in, sketch URL out.
+
+Slide 3: Excalidraw: you refine it by hand. Real-time collaboration. Open source.
+
+Slide 4: The pattern: Automated generation → Human refinement.
+
+Slide 5: Not competing. Sequential.
+          skissify.com
+          #VibeDrawing #AIAgents #Excalidraw
+```
+
+---
+
+### Platform Priority Matrix — Updated April 5, 2026
+
+| Platform | Audience | Size | Status | Next Action |
+|----------|----------|------|--------|-------------|
+| r/LocalLLaMA | Open-source AI builders | 2.3M | CRITICAL OVERDUE | Post immediately — copy in Cycle 123 |
+| MCP Discord #showcase | MCP server builders | 11K | CRITICAL OVERDUE | Post immediately — copy in Cycle 132 |
+| Indie Hackers | Indie founders | Large | CRITICAL OVERDUE | Post today |
+| r/AI_Agents | Agent builders | Growing fast | OVERDUE — post now | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| r/homeimprovement | Homeowners | 4.8M | Scheduled April 7 | Copy above (Hook 4) |
+| Peerlist | Dev portfolios | Growing | NEW — post today | Copy above (Hook 2) |
+| Dev.to | Developers | Large | NEW — post today | 3 Cycle 133 blog files |
+| TikTok / Reels / Shorts | Visual / general | Massive | Script ready | Record this week — script in Cycle 132 |
+| fosstodon.org | Dev Mastodon | Active | Post today | Copy in Cycle 132 (Hook 5) |
+| Threads | Design / general | Large | Post today | Copy above (Hook 1 caption) |
+| r/ChatGPT | Non-technical AI users | 4.1M | This week | Copy in Cycle 130 |
+| Product Hunt | Dev / maker | Launch done | LIVE — keep responding | Reply to every comment |
+
+---
+
+### Hashtag Intelligence — April 5, 2026 Update
+
+**Master combo for April 5–12:**
+```
+Primary:   #VibeDrawing #VibeCoding #AIAgents
+Mid-tier:  #MCP #Claude #BuildInPublic #SketchFirst #NapkinPhase
+Niche:     #JSONtoSVG #FloorPlan #AgentTools #AIArchitecture #Deterministic
+```
+
+**New additions (Cycle 133):**
+- `#NapkinPhase` — pairs perfectly with the Figma post angle; low saturation, own the term
+- `#AIArchitecture` — growing with the rise of agents generating spatial output; search-discoverable
+- `#AgentTools` — catches the LangGraph/Mastra/CrewAI audience browsing for new tool integrations
+
+**Platform rules (unchanged from Cycle 132):**
+- X/Twitter: 1–2 hashtags max
+- LinkedIn: decorative only, 3–4, in post body
+- TikTok/Reels: 5–8, mix broad + niche
+- Bluesky + Mastodon: 4–7, hashtags drive discovery
 
 ---
 
