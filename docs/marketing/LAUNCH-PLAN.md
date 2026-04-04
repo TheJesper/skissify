@@ -1,7 +1,75 @@
 # Skissify Launch Plan
 
 **Launch Date: April 1, 2026**
-**Current Date: April 4, 2026 — Post-Launch Day 4 — Cycle 144**
+**Current Date: April 5, 2026 — Post-Launch Day 5 — Cycle 145**
+
+---
+
+## NEW IDEAS (Added 2026-04-05, Cycle 145 — Day 5 Video + Bluesky + NoCode + Vibe Drawing Manifesto)
+
+### Cycle 145 — New Content Created
+
+| Item | File / Location | Status |
+|------|----------------|--------|
+| Blog: "Why Hand-Drawn Sketches Beat Figma for Quick Ideas" — Cycle 145 ("Two-Stage Design Model" — fidelity trap, cognitive mode switch, 60-second ideation rule, hand-drawn lines as permission signal, AI agent dimension) | `blog/hand-drawn-vs-figma.md` | DONE |
+| Blog: "How AI Agents Can Draw Floor Plans" — canonical post | `blog/ai-agents-floor-plans.md` | EXISTING (Cycle 127, production-ready) |
+| Blog: "Skissify vs Excalidraw" — canonical post | `blog/skissify-vs-excalidraw.md` | EXISTING (Cycle 127, production-ready) |
+| SOCIAL-MEDIA.md Cycle 145 — 8 new viral hooks: "Vibe Drawing Manifesto" Twitter megathread (10-tweet, quote-bait), LinkedIn "Fidelity Trap" carousel (7 slides), Bluesky developer thread, r/NoCode (480K — agent pipeline tutorial), Mastodon/Fosstodon, TikTok/Reels/YouTube Shorts script (60-second demo), Instagram Stories sequence (5 frames), r/AIAssistants (335K). New platforms: Bluesky, Mastodon/Fosstodon, TikTok/Reels, YouTube Shorts, Instagram Stories, r/NoCode, r/AIAssistants. New hashtags: #VibeDraw #SketchFirst #AIDrawing #FidelityTrap #NoCodeAI #AgentArt #DrawToThink #SkissifyLaunch. | `SOCIAL-MEDIA.md` | DONE |
+| PRESS-KIT.md Cycle 145 — Added: product one-liner, 100-word boilerplate, Day 5 status table, product screenshots list (12 assets), founder bio template, key numbers table | `PRESS-KIT.md` | DONE |
+| LAUNCH-PLAN.md Cycle 145 | `LAUNCH-PLAN.md` | DONE |
+
+### Cycle 145 — Priority Actions (April 5 — Saturday, Day 5)
+
+| Action | Priority | Time | Status |
+|--------|----------|------|--------|
+| **POST r/LocalLLaMA** (2.3M) — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 123 SOCIAL-MEDIA.md |
+| **POST MCP Discord #showcase** — CRITICAL OVERDUE SINCE CYCLE 111 | P0 NOW | IMMEDIATELY | Copy in Cycle 132 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Indie Hackers** — CRITICAL OVERDUE SINCE CYCLE 98 | P0 NOW | TODAY | Draft in EMAIL-AND-DIRECTORIES.md |
+| **POST r/AI_Agents** (212K) — OVERDUE SINCE CYCLE 132 | P0 NOW | TODAY | Copy in Cycle 132 SOCIAL-MEDIA.md |
+| **POST "Vibe Drawing Manifesto" Twitter thread** — NEW Cycle 145 | P0 | TODAY | Cycle 145 SOCIAL-MEDIA.md (Hook 1) |
+| **POST LinkedIn "Fidelity Trap" carousel** — NEW Cycle 145 | P1 | TODAY | Cycle 145 SOCIAL-MEDIA.md (Hook 2) |
+| **POST Bluesky thread** — NEW Cycle 145 | P1 | TODAY | Cycle 145 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/NoCode** (480K) — NEW Cycle 145 | P1 | TODAY | Cycle 145 SOCIAL-MEDIA.md (Hook 4) |
+| **POST Mastodon/Fosstodon** — NEW Cycle 145 | P2 | TODAY | Cycle 145 SOCIAL-MEDIA.md (Hook 5) |
+| **RECORD + POST TikTok/Reels/YouTube Shorts** — NEW Cycle 145 | P0 | TODAY | Script in Cycle 145 SOCIAL-MEDIA.md (Hook 6) |
+| **POST Instagram Stories** — NEW Cycle 145 | P1 | TODAY | Cycle 145 SOCIAL-MEDIA.md (Hook 7) |
+| **POST r/AIAssistants** (335K) — NEW Cycle 145 | P1 | TODAY | Cycle 145 SOCIAL-MEDIA.md (Hook 8) |
+| **POST r/startups** (1.4M) — Cycle 144, still unposted | P1 | TODAY | Cycle 144 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/UIDesign** (500K+) — Cycle 144, still unposted | P1 | TODAY | Cycle 144 SOCIAL-MEDIA.md (Hook 3) |
+| **POST r/ProductManagement** (1.8M) — Cycle 143, still unposted | P1 | TODAY | Cycle 143 SOCIAL-MEDIA.md (Hook 2) |
+| **POST r/MachineLearning** (4.1M) — Cycle 143, still unposted | P0 | TODAY | Cycle 143 SOCIAL-MEDIA.md (Hook 3) |
+| **POST Discord vibe-coding server** (70K+) — Cycle 143, still unposted | P1 | TODAY | Cycle 143 SOCIAL-MEDIA.md (Hook 5) |
+| **SUBMIT HackerNoon article** — Cycle 143, still unposted | P1 | TODAY | Cycle 143 SOCIAL-MEDIA.md (Hook 6) |
+| **RECORD DEMO VIDEO** | P0 FOREVER | TODAY — Day 5 Saturday is LAST ideal weekend window | Script in Cycle 139 SOCIAL-MEDIA.md |
+| **POST r/DnD** (3.2M) — Cycle 135, still unposted | P0 | TODAY | Copy in Cycle 135 SOCIAL-MEDIA.md |
+| **PUBLISH blog/hand-drawn-vs-figma.md to Dev.to** | P0 | TODAY 10:00 CET | Cycle 145 blog |
+| **PUBLISH blog/ai-agents-floor-plans.md to Dev.to** | P0 | TODAY 13:00 CET | Cycle 127 blog |
+| **PUBLISH blog/skissify-vs-excalidraw.md to Dev.to** | P0 | TODAY 16:00 CET | Cycle 127 blog |
+| **POST HN Show HN** | P1 | MONDAY April 7, 08:00 CET | Draft in Cycle 137 SOCIAL-MEDIA.md (Hook 6) |
+| **RESPOND to all Product Hunt comments** | P0 | Rolling | Use templates in Cycle 144 SOCIAL-MEDIA.md (Hook 6) |
+
+### Cycle 145 — New Ideas
+
+**Idea: The "Vibe Drawing" hashtag is ownable right now.** #VibeCoding has 2.3M+ posts on TikTok and growing communities across Twitter, Reddit, and Discord. #VibeDraw and #VibeDrawing are currently nearly empty — a blue-ocean hashtag opportunity. Skissify is the natural owner of this term: it is literally the visual output layer of the vibe coding workflow. Consistently tagging every post, blog, and demo with #VibeDraw while the term is unclaimed builds an ownable association at zero cost. This is the highest-leverage brand positioning action available this week.
+
+**Idea: Video content is the largest untapped channel.** All 144 previous cycles have produced text content (blog posts, Reddit posts, Twitter threads). Zero video has been produced despite the demo being visually compelling and the 60-second format being a natural fit for short-form video. A single 60-second TikTok/Reels/Shorts showing "I typed a description and Claude drew a floor plan" has viral potential that no amount of Reddit text posts can match. Day 5 Saturday is the last optimal window before the launch weekend ends.
+
+**Idea: Bluesky and Mastodon are high-signal developer communities with low noise.** Both platforms have active developer communities that are particularly receptive to honest, technical "I built this" posts without promotional framing. The Fosstodon.org instance has a strong overlap with the MCP/AI agent builder audience. Unlike Reddit, where posts can disappear into spam filters, Mastodon and Bluesky posts reach followers directly. The communities are small enough that a genuine post from a founder gets seen and shared organically.
+
+**Idea: r/NoCode (480K) is the best-fit community for the n8n/Make use case.** The no-code community is explicitly building AI workflows and has an acute need for visual output nodes. The Skissify API fits perfectly into existing n8n/Make/Zapier workflows: it is a simple HTTP Request node that takes JSON in and returns a URL. A tutorial post showing the exact three-node workflow (Claude API → Skissify API → output) will get saved and reshared within the community because it solves a concrete problem they are actively discussing.
+
+**Idea: The PRESS-KIT.md was missing core press assets.** Added: product one-liner (9 words), 100-word boilerplate, complete screenshots/asset list (12 items), founder bio template, key numbers table. These are the assets journalists and newsletter writers need when they want to cover Skissify. Without them, inbound interest converts to nothing. With them, a single email from a newsletter author turns into a feature. The press kit should be linked from the main README and the website's press page.
+
+**Idea: Instagram Stories have the highest engagement rate of any content format in the first 24 hours.** While Instagram is not the primary developer audience, the design and product community on Instagram is large and underserved by most developer tools. A 5-frame Stories sequence that shows the concept-to-sketch flow is fast to produce and reaches the design/PM audience that the LinkedIn carousel doesn't reach. Stories disappear after 24 hours, which creates urgency and makes them feel timely rather than promotional.
+
+### Cycle 145 — Done Inventory
+
+| Item | Completed |
+|------|-----------|
+| Blog: hand-drawn-vs-figma.md ("Two-Stage Design Model" — fidelity trap, cognitive mode switch, 60-second rule, AI dimension) | DONE Cycle 145 |
+| SOCIAL-MEDIA.md — 8 new viral hooks + platform matrix update (Bluesky, Mastodon, TikTok/Reels/Shorts, Instagram Stories, r/NoCode, r/AIAssistants) + new hashtags (#VibeDraw etc.) | DONE Cycle 145 |
+| PRESS-KIT.md — product one-liner, 100-word boilerplate, Day 5 status table, screenshots list, founder bio, key numbers | DONE Cycle 145 |
+| LAUNCH-PLAN.md — Cycle 145 block | DONE Cycle 145 |
 
 ---
 

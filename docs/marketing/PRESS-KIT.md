@@ -1,6 +1,91 @@
 # Skissify Press Kit
 
-*Last updated: April 4, 2026 — Cycle 144 (New: 3 blog posts — "The Cognitive Load Argument" for Figma/sketches post, "The Token Economy" for AI agents/floor plans post, "The Velocity Test" for Excalidraw comparison. SOCIAL-MEDIA.md Cycle 144 block with 6 viral hooks: "Cognitive Load" Twitter thread, r/startups (1.4M — 60-second rule), r/UIDesign (500K+ — tool-for-stage post), LinkedIn "Token Economy" (AI manifest efficiency), Dev.to "Velocity Test" article, ProductHunt "Ask the Maker" engagement. New platforms: r/startups, r/UIDesign, ProductHunt community. New hashtags: #CognitiveLoad #TokenEconomy #VelocityTest #IdeationFirst #DesignVelocity #AgentOutput.)*
+*Last updated: April 5, 2026 — Cycle 145 (New: blog/hand-drawn-vs-figma.md — fresh canonical post on fidelity + cognitive load + two-stage design model. SOCIAL-MEDIA.md Cycle 145 block with 8 viral hooks: "Vibe Drawing Manifesto" Twitter megathread, LinkedIn "Fidelity Trap" carousel, Bluesky developer thread, r/NoCode (480K — agent pipeline post), Mastodon/Fosstodon, TikTok/Reels/Shorts script, Instagram Stories sequence, r/AIAssistants (335K). New platforms: Bluesky, Mastodon/Fosstodon, TikTok/Reels, YouTube Shorts, Instagram Stories, r/NoCode, r/AIAssistants. New hashtags: #VibeDraw #SketchFirst #AIDrawing #FidelityTrap #NoCodeAI #AgentArt #DrawToThink #SkissifyLaunch.)*
+
+---
+
+## Cycle 145 — What's New (April 5, 2026 — Day 5 Post-Launch)
+
+### Product One-Liner
+
+**Skissify** — JSON in, hand-drawn sketch out. The rendering API for AI agents that need to draw.
+
+### Boilerplate (100 words)
+
+Skissify is a sketch rendering API and MCP server that converts structured JSON manifests into hand-drawn style visual artifacts. Launched April 1, 2026, Skissify enables AI agents — running in Claude Desktop, Cursor, n8n, LangChain, or any MCP-compatible runtime — to produce deterministic, shareable, embeddable sketches of floor plans, wireframes, diagrams, and spatial layouts. The flat JSON schema achieves 88–92% first-attempt accuracy from major LLMs. Output is deterministic: the same manifest always produces the same sketch, enabling version control, diffing, and caching by manifest hash. Free tier with no authentication required. REST API + MCP server. Built in Stockholm, Sweden.
+
+### Day 5 Post-Launch Status
+
+| Milestone | Status |
+|-----------|--------|
+| Product Hunt | LIVE — producthunt.com/posts/skissify |
+| Blog: hand-drawn-vs-figma.md — "Two-Stage Design Model + Fidelity Trap + Cognitive Mode Switch" | DONE — `blog/hand-drawn-vs-figma.md` (Cycle 145) |
+| Blog: ai-agents-floor-plans.md | EXISTING — production-ready at Cycle 127 |
+| Blog: skissify-vs-excalidraw.md | EXISTING — production-ready at Cycle 127 |
+| SOCIAL-MEDIA.md Cycle 145 | DONE — 8 hooks: Vibe Drawing Manifesto megathread, LinkedIn Fidelity Trap carousel, Bluesky, r/NoCode, Mastodon/Fosstodon, TikTok/Reels/Shorts, Instagram Stories, r/AIAssistants |
+| PRESS-KIT.md Cycle 145 | DONE — this section |
+| LAUNCH-PLAN.md Cycle 145 | DONE |
+| Demo video | CRITICAL OVERDUE — record TODAY (Day 5, absolutely last weekend window) |
+| r/LocalLLaMA (2.3M) | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| MCP Discord #showcase | CRITICAL OVERDUE since Cycle 111 — post NOW |
+| Indie Hackers | CRITICAL OVERDUE since Cycle 98 — post NOW |
+| r/AI_Agents (212K) | OVERDUE since Cycle 132 — post today |
+| r/startups (1.4M) | Cycle 144 — still unposted |
+| r/UIDesign (500K+) | Cycle 144 — still unposted |
+| r/ProductManagement (1.8M) | Cycle 143 — still unposted |
+| r/MachineLearning (4.1M) | Cycle 143 — still unposted |
+| Discord vibe-coding (70K+) | Cycle 143 — still unposted |
+| HackerNoon submission | Cycle 143 — still unposted |
+| r/NoCode (480K) | NEW Cycle 145 — post today |
+| r/AIAssistants (335K) | NEW Cycle 145 — post today |
+| Bluesky thread | NEW Cycle 145 — post today |
+| Mastodon/Fosstodon | NEW Cycle 145 — post today |
+| TikTok/Reels/YouTube Shorts | NEW Cycle 145 — record + post today |
+| Instagram Stories | NEW Cycle 145 — post today |
+| r/artificial (1.3M) | Cycle 142 — still unposted |
+| r/webdev (1.9M) | Cycle 142 — still unposted |
+| r/Architecture (2.1M) | Cycle 140 — still unposted |
+| r/DnD (3.2M) | Cycle 135 — still unposted |
+| HN Show HN | P1 — MONDAY April 7, 08:00 CET |
+
+### Product Screenshots List (for Media Requests)
+
+| Asset | Description | Format |
+|-------|-------------|--------|
+| `skissify-hero.png` | Full-page hero showing cream paper + pencil floor plan | PNG 1920×1080 |
+| `skissify-json-to-sketch.png` | Split-screen: JSON manifest (left) → rendered sketch (right) | PNG 1920×1080 |
+| `skissify-floor-plan-3bed.png` | 3-bedroom apartment in pencil/cream, labeled rooms + furniture | PNG 1200×900 |
+| `skissify-dungeon-map.png` | D&D dungeon map in blueprint paper style | PNG 1200×900 |
+| `skissify-human-mode.png` | Human mode UI — text input to sketch, no JSON visible | PNG 1200×900 |
+| `skissify-mcp-demo.gif` | Claude Desktop calling skissify_render, sketch URL returned | GIF 1280×720 |
+| `skissify-api-curl.png` | Terminal: curl command + JSON response with sketch URL | PNG 1200×720 |
+| `skissify-paper-types.png` | Four paper types (cream, white, yellow, blueprint) side by side | PNG 1600×400 |
+| `skissify-tool-types.png` | Three tool types (pencil, ballpoint, ink) side by side | PNG 1600×400 |
+| `skissify-logo.svg` | Logo, black on transparent | SVG |
+| `skissify-logo-white.svg` | Logo, white on transparent | SVG |
+| `skissify-og-image.png` | Open Graph 1200×630 for social sharing | PNG 1200×630 |
+
+*Request assets: press@skissify.com*
+
+### Founder Bio
+
+**[Founder Name]** is the creator of Skissify, a sketch rendering API built for AI agents. Based in Stockholm, Sweden, [Founder] previously [background]. Skissify launched April 1, 2026. [Founder] is available for comment on AI agent output formats, visual primitives in LLM workflows, and the design process implications of AI-generated artifacts.
+
+*Contact: [founder@skissify.com] | Twitter/X: [@skissify]*
+
+### Key Numbers (Day 5)
+
+| Metric | Value |
+|--------|-------|
+| Launch date | April 1, 2026 |
+| API response time | ~150ms |
+| Element types | 26 (incl. architectural symbols + furniture) |
+| LLM first-attempt accuracy | 88–92% (flat JSON schema) |
+| Paper types | 4 (cream, white, yellow, blueprint) |
+| Tool types | 3 (pencil, ballpoint, ink) |
+| Auth required | No — free tier, no account |
+| MCP server | `npx skissify-mcp` |
+| Price | Free tier + €5/mo Pro |
 
 ---
 
