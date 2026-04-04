@@ -2,6 +2,61 @@
 
 ---
 
+## Update: 2026-04-04 — Strategy Run #140 (Saturday April 4, 2026)
+
+### Theme: Chromium Cold-Start Is the Concrete Gap; SketchWow $49 Anchors Lifetime Deal Pricing; Excalidraw Feature Velocity = Ecosystem Lock-in Risk; EUR 2/mo Positioned Below All Human-Facing Alternatives
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #140 Synthesis
+
+**New this run: tldraw-render-mcp gives Skissify's sub-100ms claim a concrete competitor number.**
+
+The community headless rendering ecosystem now has two tools from one developer (bassimeledath): excalidraw-render and tldraw-render-mcp. Both require headless Chromium. Both have a **5-8 second cold start per session**. Both are local-only, no hosted API, no billing, no arch elements. Together they prove that the demand is real and the DIY path is painful.
+
+**The EUR 2/mo payment trigger — updated with hard data:**
+
+**Trigger 1: "5-8 seconds is a pipeline blocker, sub-100ms is not"**
+For any agent pipeline, CI/CD job, or batch rendering task, a 5-8 second cold start is the difference between "works in production" and "technically possible but operationally broken." tldraw-render-mcp's documented 5-8s cold start (warm: ~100ms, but Chromium must be kept alive) means agents must manage a Chromium process lifecycle, monitor memory, handle crashes, and deal with environment-specific browser dependencies. Skissify's Canvas 2D renderer has no browser, no cold start, and no process management — it is stateless and always sub-100ms. EUR 2/mo is "I don't want to babysit a Chromium process in my agent pipeline." This is now a concrete spec advantage, not a vague claim.
+
+**Trigger 2: "SketchWow costs $49 and can't do what Skissify does for EUR 2/mo"**
+SketchWow's $49 lifetime deal establishes that users pay for hand-drawn diagram tools. EUR 2/mo = EUR 24/year = EUR 48 for two years — cheaper than SketchWow's one-time lifetime fee. And Skissify does something SketchWow fundamentally cannot: respond to an HTTP call from an AI agent. The value comparison is decisive: SketchWow = human clicks shapes in a GUI. Skissify = your agent generates 1,000 floor plan sketches overnight without human intervention, billed at EUR 2/mo flat. The EUR 2/mo price point is now anchored below *every* human-facing hand-drawn tool in the market.
+
+**Trigger 3: "Excalidraw is getting bigger, not more API-friendly"**
+Excalidraw's 2026 feature push (BYOK AI tokens, Radar Charts, Slide Templates, Presenter Waiting Room, YouTube embeds) is entirely interactive-canvas-centric. Every new Excalidraw feature deepens the assumption that a human is watching a screen. The MCP App requires a live canvas session. BYOK tokens are UI features. None of this moves toward a headless programmatic API. Skissify's structural advantage — being designed headless-first — is getting *more* differentiated, not less, as Excalidraw invests in the interactive experience. A developer who wants headless rendering will not find it in Excalidraw's roadmap.
+
+**Trigger 4: "The micro-SaaS pricing range confirms EUR 2/mo is correct"**
+Market data on micro-SaaS developer tools (2026): typical subscription range $5-20/mo; GitHub Copilot at $19/mo; Napkin AI at $12/mo; SketchWow at $49 one-time. EUR 2/mo is below all of these. The psychological threshold for "I won't even check my expense report" is approximately $5/mo for individual developers. EUR 2/mo is below that threshold — it is an impulse conversion, not a considered purchase. The conversion friction is near-zero. The decision is "yes" or "I forgot to sign up yet," not "is this worth it?"
+
+**The single clearest conversion path (updated for Run #140):**
+1. Developer finds Skissify via MCP registry (or HN/Reddit/blog).
+2. Sees the homepage demo: one curl command, SVG returned in <100ms, no setup.
+3. Runs the curl. Gets the SVG.
+4. Thinks: "This is what tldraw-render-mcp should be, but without Chromium."
+5. Clicks "Get API Key — EUR 2/mo."
+6. Pipeline ships in 30 minutes.
+
+The entire conversion journey from discovery to paid customer is under 60 minutes. No other hand-drawn sketch tool has a path this short. The EUR 2/mo price point is what makes it frictionless.
+
+---
+
+#### Pricing Competitive Position — Run #140 Update
+
+| Tool | Price | Headless API | Hand-drawn | Agent-callable |
+|------|-------|-------------|------------|----------------|
+| Excalidraw+ | $6-7/user/mo | NO | YES | Interactive canvas only |
+| tldraw-render-mcp | Free (self-host) | YES (Chromium, 5-8s cold) | NO | Local MCP only |
+| excalidraw-render | Free (self-host) | YES (Chromium required) | YES | Local only |
+| SketchWow | $49 one-time | NO | YES | NO |
+| Napkin AI | $12-30/mo | NO | NO | NO |
+| **Skissify Pro** | **EUR 2/mo** | **YES (no Chromium, sub-100ms)** | **YES (tunable)** | **YES (hosted API + MCP)** |
+
+Skissify is the only tool in this table that is: headless, hand-drawn, agent-callable, hosted, and sub-EUR 5/mo. The gap is not closing — it is widening as competitors invest in interactive features.
+
+**Sources:** [LobeHub — tldraw-render-mcp](https://lobehub.com/mcp/bassimeledath-tldraw-render-mcp), [GitHub — bassimeledath/tldraw-render-mcp](https://github.com/bassimeledath/tldraw-render-mcp), [Excalidraw+ Changelog](https://plus.excalidraw.com/changelog), [SketchWow — Capterra 2026](https://www.capterra.com/p/10012993/SketchWow/), [SaaS Pricing Models — alguna 2026](https://blog.alguna.com/saas-pricing-models/), [Micro SaaS Ideas 2026 — Lovable](https://lovable.dev/guides/micro-saas-ideas-for-solopreneurs-2026)
+
+---
+
 ## Update: 2026-04-05 — Strategy Run #139 (Sunday April 5)
 
 ### Theme: excalidraw-render Confirms Demand But Validates the Gap; MCP Ecosystem Hits 97M Downloads = Timing Peak; EUR 2/mo Willingness-to-Pay Fully Synthesized

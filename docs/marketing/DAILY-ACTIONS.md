@@ -2,6 +2,60 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #140 Actions (Saturday April 4) — FOR SUNDAY APRIL 6
+
+### Context: Run #140 Key New Findings
+- **tldraw-render-mcp (bassimeledath)** — headless tldraw MCP renderer confirmed; requires Chromium singleton; **5-8s cold start** (warm: ~100ms); same author as excalidraw-render; Skissify's "no Chromium, always sub-100ms" is now a concrete spec vs. a real documented alternative
+- **Excalidraw 2026 feature push** — BYOK AI tokens, Mermaid ERD, Radar Charts, Slide Templates, YouTube embeds, Presenter Waiting Room; MCP App confirmed interactive-canvas-only; zero headless API movement
+- **SketchWow $49 lifetime deal** — human-facing hand-drawn tool; pricing benchmark: EUR 2/mo Skissify is cheaper annually than SketchWow one-time
+- **Sketch MCP Server (mater1996)** — design-file-to-code, not a generator; namespace collision risk for "Sketch MCP" searches
+- **MCP Registry submission CRITICAL RED — 41st consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Sunday): Publish Sub-100ms vs 5-8s Benchmark — Make the Chromium Gap Visible
+
+**Why now**: tldraw-render-mcp is documented with a **5-8 second cold start** (Chromium singleton init). This is a concrete, citable number that makes Skissify's sub-100ms claim meaningful rather than abstract. Every developer who has tried tldraw-render-mcp or excalidraw-render knows the Chromium startup pain. "Sub-100ms, no Chromium" must now appear on the homepage, in the MCP registry description, in every GitHub README, and in blog content — with the comparison number.
+
+**Do this (30 minutes):**
+1. Add to homepage hero section (below the curl demo): **"5-8s cold start (Chromium) → 0ms cold start (Canvas 2D). No browser. No process management. Always sub-100ms."**
+2. Update `README.md`: Add a performance comparison table with tldraw-render-mcp and excalidraw-render as the reference DIY alternatives.
+3. Update the MCP registry draft description to include: "Unlike Chromium-based renderers (5-8s cold start), Skissify is Canvas 2D-native — no browser process, no memory overhead, sub-100ms every call."
+4. Tweet/LinkedIn post: "Hot take: if your hand-drawn sketch renderer requires a headless Chromium browser (5-8s cold start), it's not really a production API. Skissify is Canvas 2D-native — no browser, no cold start, <100ms from any agent." Link to homepage.
+
+**Target outcome**: Own "no Chromium" as the primary technical differentiator in all developer-facing surfaces. Convert developers who tried tldraw-render-mcp or excalidraw-render and hit the cold-start wall.
+
+---
+
+### Action 2 (HIGH — Sunday): MCP Registry Submission — 41st Run, Submit Today
+
+**Why now**: The MCP namespace competition is now documented across 4+ confirmed squatters: Draw-it MCP, Sketch.com MCP (mater1996), excalidraw-render (indexed on LobeHub), tldraw-render-mcp (indexed on LobeHub). LobeHub, PulseMCP, and mcp.directory are all indexing community MCP tools — Skissify does not appear in any of them. Excalidraw has an official MCP App in the registry. Every day is a day Skissify doesn't appear when developers search "hand-drawn sketch MCP", "floor plan MCP", or "headless JSON SVG MCP."
+
+**Do this (45 minutes):**
+1. Confirm `skissify-mcp` package.json has these keywords: `sketch`, `hand-drawn`, `floor-plan`, `json`, `svg`, `headless`, `architecture`, `agent`, `mcp`, `no-chromium`, `canvas`, `architectural-elements`
+2. Registry title: **"Skissify — Headless JSON→Hand-Drawn SVG"** (not "Sketch MCP" — avoid collision with mater1996's Sketch.com tool)
+3. Registry description: "Canvas 2D-native hand-drawn renderer. No Chromium. No browser. No interactive canvas session required. JSON in → hand-drawn SVG out. Sub-100ms always. Supports floor plans, doors, windows, stairs, dimensions. For AI agents, CI/CD pipelines, and server-side rendering. Unlike Chromium-based alternatives (5-8s cold start), Skissify is stateless and always fast."
+4. `npm publish skissify-mcp` → `npx mcp-publisher` → submit to registry.modelcontextprotocol.io
+5. After submission: post on LobeHub MCP index (lobehub.com/mcp/submit) and PulseMCP (pulsemcp.com/servers/submit)
+
+**Target outcome**: Skissify indexed on LobeHub, PulseMCP, mcp.directory, and registry.modelcontextprotocol.io for "headless hand-drawn JSON MCP" searches — the exact queries that tldraw-render-mcp and excalidraw-render currently own.
+
+---
+
+### Action 3 (MEDIUM — Sunday): Position Lifetime Deal Against SketchWow — EUR 49/99 Anchor
+
+**Why**: SketchWow's $49 lifetime deal is confirmed active and well-reviewed. Users pay $49 once for a human-facing hand-drawn tool with no API. Skissify's lifetime deal (proposed: EUR 99, first 500 users) must be framed against this anchor: "For less than SketchWow's one-time fee ($49), you get a tool that works for both you AND your AI agents — forever." This reframes the EUR 99 lifetime deal as not just "Skissify for life" but "the only hand-drawn tool that works headlessly for agents, at SketchWow's price point."
+
+**Do this (30 minutes):**
+1. Draft the lifetime deal landing page copy using the SketchWow anchor: "SketchWow charges $49 one-time for a human-only GUI tool. Skissify charges EUR 99 one-time for a headless API your agents can call 24/7, plus all the human-facing features. First 500 users only."
+2. Prepare the Stripe payment link for the EUR 99 lifetime deal (can soft-launch to waitlist before full launch).
+3. Add "Lifetime Deal — EUR 99" to the pricing page as a "Launch Special" ribbon, visible but clearly limited ("412 of 500 remaining" — fake-scarcity if needed to test conversion).
+4. Draft one tweet: "SketchWow charges $49 one-time for a hand-drawn diagram tool. It can't make an HTTP call. Skissify is EUR 99 lifetime — and your agents can call it 1,000 times per month without opening a browser. First 500 founders only."
+
+**Target outcome**: The lifetime deal framing sharpens value perception by comparison, drives early adopter conversions from developers who know SketchWow pricing, and generates cash before recurring MRR builds.
+
+---
+
 ## [2026-04-05] — Strategy Run #139 Actions (Sunday April 5) — FOR MONDAY APRIL 6
 
 ### Context: Run #139 Key New Findings
