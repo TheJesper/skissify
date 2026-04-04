@@ -2,6 +2,58 @@
 
 ---
 
+## [2026-04-04] — Strategy Run #132 Actions (Saturday April 4, Stockholm) — FOR SUNDAY APRIL 5
+
+### Context: Run #132 Key New Findings
+- **MCP registry 20,000+ servers** — listing is necessary but no longer sufficient; keyword ranking within registry is the new competition
+- **Excalidraw March 2026**: Trash system, Mermaid ERD/State, Slide Templates, Arrow Binding — all human UX, no headless change; CRITICAL threat unchanged
+- **tldraw Computer** (computer.tldraw.com) = separate Gemini 2.0 Flash product; visual workflow builder; not a sketch renderer; LOW threat
+- **EUR 2/mo entry tier survives new pricing data** — developer utilities with zero GPU cost can sustain sub-$5 entry; optimize the funnel, not the price
+- **MCP Registry submission CRITICAL RED — 33rd consecutive run unconfirmed**
+
+---
+
+### Action 1 (CRITICAL — Sunday): Optimize MCP Registry Listing Description for Keyword Search
+
+**New from Run #132**: The registry now has 20,000+ servers. Being listed is necessary but not sufficient — Skissify's listing must rank for "hand-drawn", "floor plan", "headless", "SVG file" inside the registry search. The current action from Run #131 (submit to registry) remains #1, but now includes keyword optimization as a co-requirement.
+
+**Do both in the same session (45 minutes total):**
+1. Submit to registry.modelcontextprotocol.io with the optimized description from Run #131 — ensure the first 100 characters contain: "headless", "hand-drawn", "SVG file", "floor plan"
+2. Submit to PulseMCP (pulsemcp.com) — separate directory where Excalidraw Maaker MCP is already listed; Skissify needs a listing there too; Run #132 confirms PulseMCP is a real discovery channel
+3. Submit to publicmcpregistry.com — third directory confirmed in Run #132 research
+4. Tag: `hand-drawn`, `sketch`, `floor-plan`, `svg`, `headless`, `architectural`, `JSON`, `curl`
+
+**Target outcome**: Skissify appears in registry search results alongside excalidraw-mcp when developers search "hand-drawn diagram". The first line of the description must contain the headless/no-browser distinction.
+
+---
+
+### Action 2 (HIGH — Sunday): Write One-Page Technical Comparison: "Skissify vs Excalidraw MCP — Which Headless?"
+
+**New from Run #132**: Excalidraw's Maaker AI MCP wrapper is listed on PulseMCP generating 20+ diagram types. Developers evaluating "hand-drawn diagram MCP" will find this listing. Skissify needs a short technical comparison page that ranks for developers who have already found Excalidraw MCP and are asking "is there a headless version?"
+
+**Page spec (2 hours — blog post or docs page):**
+- Title: "Skissify vs Excalidraw MCP: Which One Is Actually Headless?"
+- Body: Side-by-side curl call comparison — Excalidraw MCP requires browser canvas; Skissify returns SVG in response body
+- Include: latency comparison (sub-100ms Skissify vs. browser startup time), pipeline compatibility table, architectural elements availability matrix
+- CTA: "Try Skissify in 30 seconds: `curl -X POST api.skissify.com/render -d @floor.json`"
+
+**Why Sunday**: This is a copy asset, not a code task. It can be written in one focused session and published immediately. Every day it is not live, developers landing on the Excalidraw MCP listing have no counterpoint to find.
+
+---
+
+### Action 3 (MEDIUM — Sunday): Add tldraw Computer to Competitive Awareness Watchlist
+
+**New from Run #132**: `computer.tldraw.com` is a separate Gemini 2.0 Flash-powered tldraw product — visual node-based AI workflow builder. It is NOT a direct competitor to Skissify today (different category: workflow builder vs. sketch renderer). However, if tldraw adds "generate sketch output from node" to Computer, it becomes relevant.
+
+**Action (30 minutes):**
+1. Add computer.tldraw.com to the weekly check URL list in competitive monitoring
+2. Set a one-sentence alert condition in the watchlist: "Alert if Computer adds SVG file output or JSON input schema for diagram elements"
+3. No marketing response needed yet — document in COMPETITOR-ANALYSIS.md watchlist section
+
+**Why not higher priority**: Run #132 confirms tldraw Computer is a visual workflow builder aimed at business users building AI pipelines, not developers needing portable sketch output. Threat is LOW until the product pivot condition above is triggered.
+
+---
+
 ## [2026-04-04] — Strategy Run #131 Actions (Saturday April 4, Stockholm) — FOR MONDAY APRIL 7
 
 ### Context: Run #131 Key New Findings

@@ -2,6 +2,67 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #132 (Saturday April 4, Stockholm — Evening)
+
+### Status: 5 topics researched. KEY FINDINGS: **Excalidraw March 2026 release** adds Trash system, Mermaid ERD + State Diagrams, Slide Templates, Arrow Binding toggle — editor deepening, not headless API; no new moat threat. **tldraw "Computer" project** (computer.tldraw.com) is a separate product from the SDK — Gemini 2.0 Flash-powered "natural language computing" canvas; a visual AI workflow builder distinct from MCP App; not headless, not a pipeline tool. **MCP registry now 20,000+ public servers** (up from 10,000 cited in prior runs); 97M+ monthly SDK downloads; Pinterest, Google Cloud deploying production MCP. **No new headless JSON→hand-drawn SVG API competitor found — niche uncontested (33rd consecutive run).** **MCP Registry submission CRITICAL RED — 33rd consecutive run unconfirmed.** **SVG AI landscape** (Recraft, VectoSolve, VectorWitch) are text/image→raster/vector tools — zero headless JSON-schema diagram APIs; different category.
+
+---
+
+### Excalidraw March 2026 Release — Editor Deepening, No New Headless Threat (COMPETITIVE SIGNAL: LOW-MEDIUM)
+
+**Sources**: [Excalidraw+ Changelog](https://plus.excalidraw.com/changelog), [excalidraw/mermaid-to-excalidraw GitHub](https://github.com/excalidraw/mermaid-to-excalidraw), verified 2026-04-04
+
+**New findings vs. Run #131**:
+- **Trash System (March 2026)**: Dedicated sidebar + view for deleted scenes. Bulk restore, permanent deletion date display. Quality-of-life feature for heavy SaaS users.
+- **Mermaid Expansion (March 2026)**: State Diagrams and Entity Relationship Diagrams (ERD) added to Excalidraw+. Dedicated Mermaid code editor for precise syntax. NOTE: The mermaid-to-excalidraw library currently only renders flowcharts natively; other types render as images — this is a partial implementation, not full vector support.
+- **Slide Templates**: New template picker for presentations with tagging and recently used tracking.
+- **Arrow Binding toggle**: Users can now switch automatic arrow binding on/off.
+
+**Assessment**: All March 2026 Excalidraw updates are human-facing UX improvements. None affect the headless API, MCP server capability, or server-side rendering. The ERD/State Diagram claim is partially marketing — the underlying library still renders non-flowchart Mermaid as images, not Excalidraw vector shapes. No new threat to Skissify's headless/architectural niche. The Excalidraw CRITICAL threat rating from Run #131 stands due to MCP + hand-drawn overlap, not these March updates.
+
+**Threat assessment: Unchanged (CRITICAL for hand-drawn MCP overlap; these March features are human UX only)**
+
+---
+
+### tldraw "Computer" Project — Separate Gemini-Powered Visual Workflow Builder (COMPETITIVE SIGNAL: LOW)
+
+**Sources**: [tldraw Computer](https://computer.tldraw.com/), [Google AI Showcase: tldraw](https://ai.google.dev/showcase/tldraw), [The Decoder: tldraw Natural Language Computer](https://the-decoder.com/tldraw-unveils-experimental-natural-language-computer-powered-by-gemini-2-0/), [Toolify: tldraw Computer Gemini 2.0 Flash overview](https://www.toolify.ai/ai-news/tldraw-computer-gemini-20-flash-image-3-ai-canvas-overview-3810860), verified 2026-04-04
+
+**New finding vs. Run #131**: `computer.tldraw.com` is a **separate experimental product** from the tldraw SDK — a "natural language computing" canvas powered by Gemini 2.0 Flash. Users create AI workflows using visual blocks and arrows on an infinite canvas; Gemini generates component procedures and connections from natural language input (e.g., "create a marketing campaign from this product description"). This is NOT the tldraw MCP App launched March 3, 2026 — it predates it and is a distinct product track.
+
+**Why this is LOW threat for Skissify**: tldraw Computer is a visual AI workflow builder (think node-based programming with Gemini), not a diagram renderer or sketch generator. It does not output SVG, does not have a JSON input schema, and requires interactive browser use. It is aimed at business users building AI pipelines visually, not developers needing portable sketch output for agents.
+
+**Context**: tldraw is now running at least three product tracks simultaneously — SDK ($6K/yr), MCP App (Cursor/VS Code/Claude integration), and Computer (Gemini-powered workflow canvas). This fragmentation is relevant: developer attention and engineering resources are split. Skissify is a single-purpose headless renderer with a clear JSON→SVG contract.
+
+**Threat assessment: LOW (different category — visual workflow builder, not sketch renderer; no overlap with Skissify's headless agent pipeline use case)**
+
+---
+
+### MCP Ecosystem Scale Update — 20,000+ Servers, Enterprise Adoption (ECOSYSTEM SIGNAL)
+
+**Sources**: [PulseMCP: Excalidraw Maaker MCP](https://www.pulsemcp.com/servers/maaker-ai-excalidraw), [Public MCP Registry](https://publicmcpregistry.com/), [InfoQ: Pinterest MCP Production](https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/), [Apify MCP Standard 2026](https://use-apify.com/blog/mcp-standard-ecosystem-2026), [Google Cloud MCP announcement](https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services), verified 2026-04-04
+
+**New findings vs. Run #131**:
+- **20,000+ public MCP servers** on registries (up from 10,000 cited in prior runs, 34,700 npm dependents per Run #131). Official MCP Registry launched in preview September 2025; now widely populated.
+- **97M+ monthly SDK downloads** (Python + TypeScript official SDKs). MCP is the dominant agent tool protocol.
+- **Pinterest production deployment**: Pinterest engineering deployed domain-specific MCP servers with central registry, human-in-loop approval, governance controls. Signal: enterprise MCP is real production infrastructure, not experimental.
+- **Google Cloud official MCP support**: Cloud API Registry + Apigee API Hub announced to help developers find trusted MCP tools. Signal: MCP is becoming a platform-level expectation.
+- **Four protocols now coexist**: MCP, A2A, ACP, UCP — each solves a distinct layer. MCP = tool access. A2A = agent-to-agent. Research from 177,000 MCP tools available on arXiv (2603.23802).
+
+**Implication for Skissify**: 20,000 servers means the registry is crowded. Being listed is necessary but not sufficient. Skissify's listing must win the "hand-drawn sketch" and "floor plan" keyword queries inside the registry. The MCP listing description is now a search ranking problem, not just a directory entry. Optimize for: "hand-drawn", "SVG file", "headless", "floor plan", "architectural", "no browser", "curl".
+
+---
+
+### SVG AI Tool Landscape — Not a Direct Competitor Category (LANDSCAPE SCAN)
+
+**Sources**: [VectoSolve AI SVG 2026](https://vectosolve.com/blog/ai-svg-animation-tools-2026), [SVGMaker Top AI SVG 2026](https://svgmaker.io/blogs/top-10-ai-svg-generation-tools-in-2026-compared), [VectorWitch](https://vectorwitch.com/blog/the-complete-guide-to-ai-powered-svg-generation-in-2026), verified 2026-04-04
+
+**Finding**: A new category of AI SVG tools emerged in 2025-2026 — text/image prompt → vector SVG output: Recraft (native vector from text, editable in Figma/Illustrator), VectoSolve (SVG animations from text in 8 seconds, pure CSS), VectorWitch (text → professional SVG in seconds). These are **creative/design tools**, not diagram/sketch renderers. They have no JSON input schema, no programmatic API for structured data (rooms, arrows, dimensions), and no hand-drawn aesthetic. They are in a different category from Skissify and do not compete for the same search queries.
+
+**Conclusion**: The headless JSON→hand-drawn diagram API niche remains uncontested for the 33rd consecutive run. No new direct competitor identified.
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #131 (Saturday April 4, Stockholm)
 
 ### Status: 6 topics researched. KEY FINDINGS: **tldraw officially shipped MCP App on March 3, 2026** — launches Cursor first, VS Code/ChatGPT/Claude rollout ongoing; returns interactive canvas UI (not just text), raises competitive threat from LOW to MEDIUM-HIGH. **Excalidraw+ added MCP support in January 2026** (public API + MCP integration) plus Custom AI Tokens (BYOK OpenAI/Claude/Gemini) in February 2026; excalidraw-mcp official repo confirmed on GitHub — hand-drawn competitor now has MCP distribution; threat upgraded to CRITICAL. **No new headless JSON→hand-drawn API competitor found — niche remains uncontested (32nd consecutive run).** **tldraw shipping again (Run #131 contradicts Run #130)** — Releasebot shows February 2026 release notes; prior "12-month halt" finding may have been a GitHub pagination artifact; treat as UNCONFIRMED until verified directly on tldraw.dev/releases. **Micro-pricing EUR 2/mo confirmed as viable Indie/solo segment play** — typical 2026 micro-SaaS floor is $20–99/mo for mass-market tools, but developer utility tools with low compute cost can sustain EUR 2 entry; "below expense-report threshold" positioning validated. **MCP Registry submission CRITICAL RED — 32nd consecutive run unconfirmed.**

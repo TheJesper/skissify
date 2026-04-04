@@ -2,6 +2,54 @@
 
 ---
 
+## [2026-04-04] — Automated Strategy Run #132 (Saturday April 4, Stockholm — Evening)
+
+### Theme: MCP at 20,000 Servers Is Now a Search Problem; Excalidraw March Features Are Human UX; tldraw Splits into Three Products; EUR 2/mo Entry Tier Survives New Pricing Data
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #132 Synthesis
+
+Run #132 introduces three new data dimensions: (1) MCP registry is now 20,000+ servers — being listed is no longer a competitive moat, but keyword ranking within the registry is, (2) Excalidraw March 2026 updates (Trash, Mermaid ERD, Slide Templates) are entirely human UX with no headless implications — the CRITICAL threat from Run #131 is unchanged but not worsened, (3) tldraw is now running three distinct product tracks (SDK, MCP App, Computer/Gemini) — fragmentation signal. The EUR 2/mo pricing question now has a richer answer involving the MCP discovery context.
+
+**1. EUR 2/mo is justified when the alternative requires an open browser OR $6,000/year.** The Run #132 data reinforces that both major competitors (Excalidraw MCP, tldraw MCP App) require interactive browser contexts. Skissify's curl-compatible, headless, sub-100ms SVG response is structurally impossible for them. The payment trigger at EUR 2/mo is:
+
+- "Remove the watermark from SVG exports" — clean professional output
+- "1,000 renders/month included" — above the free tier limit
+- "No browser open. No Electron. One curl call." — the value is automation, not features
+
+Data point from Run #132: MCP SDK downloads are 97M+/month. Developers building MCP tool chains actively evaluate: "Does this server need a running browser?" For server-side pipelines (CI/CD, batch generation, document automation), Skissify's EUR 2/mo is a no-brainer versus "install a headless browser and configure Excalidraw." The decision is made before the user opens the pricing page.
+
+**2. The MCP registry keyword problem changes the EUR 2/mo conversion funnel.** With 20,000+ MCP servers, developers discover tools by searching within the registry. A developer who searches "hand-drawn diagram" in the registry and finds Skissify is already pre-qualified. Their decision path is: install MCP server (free) → hit 100 render limit → see "EUR 2/month removes the limit and the watermark" → convert. This is a faster, higher-intent funnel than organic SEO. The MCP listing IS the acquisition channel, and EUR 2/mo is the first conversion step immediately after installation.
+
+**Data point**: Run #132 confirms Excalidraw has a Maaker AI MCP wrapper listed on PulseMCP (url: pulsemcp.com/servers/maaker-ai-excalidraw) that generates 20+ diagram types with Sugiyama layout. This is a third-party wrapper around Excalidraw's hand-drawn canvas, confirming that the "hand-drawn diagram via MCP" query is actively being served. Skissify's native headless position is the differentiator.
+
+**3. Excalidraw March 2026 features reveal their customer profile — and it's not Skissify's.** Trash system with restore/bulk-delete, presentation slide templates, arrow binding toggle — these are features for teams using Excalidraw as an ongoing collaborative whiteboard. Skissify's customer does not have a "deleted scenes sidebar" problem. They have an "I need an SVG of a floor plan in my API response in 80ms" problem. The product profiles have diverged, not converged. This is a signal to lean INTO the single-purpose, headless positioning rather than adding collaboration features to compete.
+
+**4. tldraw's three-product fragmentation is a market opportunity for messaging.** tldraw now runs: (1) SDK at $6K/yr for embedding, (2) MCP App for interactive canvas in Cursor, (3) Computer/Gemini for natural language workflow building. Each product has a different buyer. The message Skissify can use: "tldraw does three things at $6K/year. Skissify does one thing at EUR 2/month." Simplicity is a competitive argument in a market where developers are evaluating multiple complex SDKs.
+
+**Updated EUR 2/mo payment trigger model (Run #132):**
+- **Discovery path**: MCP registry search "hand-drawn sketch" → install Skissify MCP server → hit 100-render free limit
+- **EUR 0 → EUR 2/mo "Indie"** trigger: render counter at limit + watermark on SVG → "Remove limit & watermark for EUR 2/month, no browser required"
+- **EUR 2/mo → EUR 9/mo "Pro"** trigger: 1,000/mo render limit hit → API key access + 5,000 renders/mo
+- **EUR 9/mo → EUR 15–19/mo "Studio"** trigger: architectural project work → "Doors, windows, stairs, floor plan elements — Studio only"
+- **Enterprise**: Docker self-hosted + A2A compatibility + private registry deployment + SLA
+
+**Data-backed pricing floor for developer utilities (Run #132)**: Most micro-SaaS developer tools charge $5–29/mo. EUR 2/mo is below the typical floor, but justified for Skissify because: (a) compute cost per render is near-zero (no GPU, sub-100ms Canvas 2D), (b) the entry tier is a conversion step, not a revenue driver, (c) the developer audience is sensitive to friction — EUR 2/mo removes the payment barrier while filtering free-tier API abusers. The real revenue is EUR 9/mo Pro (API) and EUR 15–19/mo Studio (arch elements).
+
+#### MCP Registry Keyword Strategy — New Priority (Run #132)
+
+With 20,000+ servers in the registry, the listing description is now a search ranking problem. Priority keywords for Skissify's MCP listing (ordered by conversion intent):
+
+1. `hand-drawn` — matches Excalidraw query space; headless distinction wins
+2. `floor plan` — zero other MCP servers offer architectural floor plan elements
+3. `headless` — the technical differentiator from all browser-dependent tools
+4. `SVG file` — emphasizes portable, embeddable output (not interactive canvas)
+5. `no browser` — explicitly addresses the Excalidraw/tldraw requirement
+6. `curl` — developer trust signal: if you can curl it, it's a real API
+7. `architectural` — domain-specific; pre-qualifies architecture/proptech users
+8. `EUR 2` — price signal in the listing; converts on discovery, not after signup
+
+---
+
 ## [2026-04-04] — Automated Strategy Run #131 (Saturday April 4, Stockholm)
 
 ### Theme: Excalidraw MCP Now CRITICAL; tldraw Shipping Again; EUR 2/mo Entry Tier Validated; Headless Gap Still Uncontested
