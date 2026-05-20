@@ -9311,3 +9311,26 @@ Steps:
 **Time**: 30-45 minutes (copy edits only, no structural changes).
 
 ---
+
+---
+
+## [2026-04-04] — Strategy Run #142 Actions (Saturday April 4, Late Evening) — FOR SATURDAY APRIL 5
+
+### Context: Run #142 Key New Findings
+- **Excalidraw March 2026** — Trash System, Mermaid ERD+State Diagrams, Slide Templates, Presenter View; all interactive canvas; zero headless movement; confirmed structural divergence widens
+- **tldraw 2026** — Image Pipeline template (visual workflow builder), Agent Starter restructure, computer.tldraw.com Gemini NL canvas; $14.1M raised; doubling down on interactive IDE, not headless rendering
+- **Mermaid "Vibe Diagramming"** — AI Chatbot, ChatGPT integration, VS 2026 native render; Mermaid positioning as AI-to-formal-diagram default; creates counter-brand opportunity "Vibe Drawing" for Skissify
+- **MCP: 10,000+ servers** (10x in 12 months); enterprise tool catalogs being finalized NOW
+- **Zendesk $1.50–$2.00/AI resolution** — outcome pricing data validates EUR 2/mo infrastructure framing
+- **MCP Registry submission CRITICAL RED — 43rd consecutive run unconfirmed**
+
+---
+
+## 2026-04-05 (Saturday April 5)
+
+1. **Coin the "Vibe Drawing" brand position and publish a 300-word post on X/LinkedIn** — Mermaid is calling itself "Vibe Diagramming." That framing positions formal auto-layout diagrams as the default AI output. Skissify's counter-brand is "Vibe Drawing": hand-drawn, spatially explicit sketches for ideas that aren't ready to be formal yet. Write one short post: "Mermaid gives you vibe diagramming. Skissify gives you vibe drawing. Diagrams tell you what something is. Sketches show you what it could be." Include a side-by-side: Mermaid ERD vs. Skissify floor plan sketch. Link to homepage. Expected outcome: first public articulation of the Mermaid vs. Skissify positioning; SEO seed for "Mermaid alternative hand-drawn" and "vibe drawing API"; brand differentiation from the most-used text-to-diagram tool in developer tooling.
+
+2. **Submit to MCP Registry — final blocker audit + execution (43rd run, no more waiting)** — At 10,000 MCP servers (10x growth in 12 months), enterprise teams are finalizing their approved tool catalogs. Pinterest-scale engineering organizations are building curated MCP registries right now. Every day of delay is a day Skissify does not appear in searches for "headless sketch MCP", "floor plan MCP", or "hand-drawn SVG agent tool." Spend 45 minutes: confirm skissify-mcp package.json keywords (sketch, hand-drawn, floor-plan, json, svg, headless, architecture, agent, mcp, architectural-elements), set registry title to "Skissify — Headless JSON to Hand-Drawn SVG", run npm publish + npx mcp-publisher, submit to registry.modelcontextprotocol.io. Then submit to LobeHub (lobehub.com/mcp/submit) and PulseMCP (pulsemcp.com/servers/submit). Expected outcome: Skissify indexed in all major MCP discovery channels; first appearance in "headless hand-drawn JSON MCP" search results; unblocks enterprise tool catalog discovery.
+
+3. **Add "Vibe Drawing" framing + Zendesk pricing anchor to the homepage hero copy** — Mermaid's "Vibe Diagramming" framing will spread through the developer community as a recognized term. Skissify's homepage should pre-empt this by introducing "Vibe Drawing" as a distinct concept, and the Zendesk data point ($2/AI resolution) provides a compelling pricing anchor: "Zendesk charges $2 per AI resolution. Skissify gives your agent 1,000 hand-drawn sketches for EUR 2/month." This is a concrete market-comparable pricing comparison that makes EUR 2/mo feel like a bargain for infrastructure-level value. Update the homepage hero: add "Vibe Drawing API" as a tagline variant and the Zendesk comparison line to the pricing section. Expected outcome: sharper brand position vs. Mermaid; concrete pricing comparison that converts developers who have seen Zendesk's outcome-based pricing; "Vibe Drawing" term seeds future SEO for the brand.
+

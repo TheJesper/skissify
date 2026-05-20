@@ -7586,3 +7586,68 @@ PulseMCP indexes 11,180+ MCP servers. The official Anthropic registry has ~2,000
 | EUR 2 infrastructure pricing | Framed as infra (database/email/storage tier), not app subscription — matches developer budget mental model |
 
 ---
+
+---
+
+## Update: 2026-04-04 — Strategy Run #142 (Saturday April 4, 2026 — Late Evening)
+
+### Theme: "Vibe Drawing" Is the Counter-Brand to Mermaid's "Vibe Diagramming"; tldraw Workflow Builder Validates Headless Lane; Zendesk Outcome Pricing Confirms EUR 2/mo Architecture; MCP Now at 10K Servers
+
+---
+
+#### What Makes Someone Pay EUR 2/mo for Skissify? — Run #142 Synthesis
+
+**New this run: Mermaid's "Vibe Diagramming" framing is a gift — it defines the text-to-formal-diagram space Skissify must NOT compete in, and clarifies the spatial/hand-drawn lane Skissify OWNS.**
+
+**Trigger 9 (NEW): "Mermaid does diagrams. Skissify does drawings."**
+Mermaid launched a "Vibe Diagramming" campaign in 2026, positioning AI-to-Mermaid generation as the default developer diagram workflow. Mermaid's output is always formal, grid-aligned, auto-positioned vector graphics — flowcharts, sequence diagrams, ERDs. There is no concept of spatial position, no floor plan primitives, no hand-drawn wobble. The moment a developer wants a sketch that looks like it was drawn on a napkin, or a floor plan where rooms are positioned explicitly, or a diagram with doors and stairs — Mermaid cannot help. "Vibe Drawing" is the counter-brand: where Mermaid gives you formal diagrams, Skissify gives you hand-drawn sketches. The SEO play: "Mermaid alternative for hand-drawn output" and "Vibe Drawing API."
+
+**Trigger 10 (NEW): "tldraw is a visual IDE now. I just need a renderer."**
+tldraw's 2026 direction — Image Pipeline template, Agent Starter, computer.tldraw.com Gemini canvas, $14.1M raised — makes it increasingly clear that tldraw is building a visual programming environment. It requires a canvas session, a browser, human interaction, and now Cloudflare Workers backend. For a developer who just wants to generate a hand-drawn sketch from JSON in a pipeline, tldraw is architectural overkill at $6,000/year. Skissify is the answer: not a visual IDE, not a workflow builder — a single HTTP call that returns SVG. EUR 2/mo for a renderer, not an IDE.
+
+**Trigger 11 (NEW): "Zendesk charges $2 per AI resolution. I can get 1,000 renders for $2/month."**
+Zendesk prices AI agents at $1.50–$2.00 per automated resolution. This is the mainstream market benchmark for AI automation value. Skissify at EUR 2/mo for 1,000 renders = EUR 0.002 per render. In outcome-based pricing terms: Skissify's per-render cost is 1,000x more efficient than Zendesk's per-resolution model. The framing shift: "EUR 2/mo is not a subscription — it is infrastructure pricing. Like paying EUR 0.002 per CDN request, except you get a hand-drawn sketch." For developers building products that generate sketches for end users, EUR 2/mo for 1,000 renders is a rounding error in the cost of building.
+
+**Updated payment trigger hierarchy (all 11 triggers):**
+1. Sub-100ms vs 5-8s Chromium cold start — pipeline viability
+2. SketchWow $49 one-time vs EUR 2/mo + agent-callable — value comparison
+3. Excalidraw investing in interactive features, not headless — structural gap widens
+4. EUR 2/mo below "expense report threshold" — impulse purchase
+5. tldraw $6K/year SDK vs EUR 2/mo — price category perception
+6. No credits/no surprise bills — flat pricing as trust signal
+7. MCP open standard under Linux Foundation — safe long-term bet
+8. Eraser.io $25/seat vs EUR 2/mo for agents — team tool vs. agent tool
+9. "Mermaid does diagrams. Skissify does drawings." — aesthetic lane clarity (NEW)
+10. tldraw is a visual IDE. Skissify is a renderer. — architectural clarity (NEW)
+11. Zendesk charges $2/resolution. Skissify gives 1,000 renders for EUR 2/mo. — infrastructure pricing frame (NEW)
+
+---
+
+#### Pain Points JSON-to-Hand-Drawn Sketch Solves That Competitors Don't — Run #142 Analysis
+
+**Pain 1: "My agent output looks like a finished design, not a sketch idea."**
+Mermaid, Draw.io, Figma MCP — all produce formal, polished vector output. When an AI agent generates a floor plan or architecture diagram using these tools, it looks like a deliverable. Hand-drawn aesthetic from Skissify signals "this is exploratory — the AI is showing you an idea, not a final spec." This semantic signal reduces false expectations in stakeholder communication.
+
+**Pain 2: "I need a visual in my CI/CD pipeline, not in a browser tab."**
+Every major competitor in 2026 requires either an interactive canvas session (Excalidraw MCP, tldraw computer, Figma MCP), a local server with Chromium (tldraw-render-mcp, excalidraw-render), or a running browser (Draw.io MCP iframe mode). Skissify is the only option that works as a pure HTTP API in a server-side pipeline. Agents running at 3am in a CI/CD job cannot open a browser.
+
+**Pain 3: "I need floor plan elements — doors, windows, stairs — and no competitor has them."**
+The competitor matrix confirms: zero competitors have architectural domain elements (door-symbol, door-slide, window, stair, dim, opening, column). Real estate agents, architects, construction tech, and home design AI tools need these. Skissify is the only JSON-to-sketch API that includes architectural primitives. This is a durable moat.
+
+**Pain 4: "Mermaid forces auto-layout. I need to control where things are."**
+Mermaid diagrams auto-position nodes based on graph algorithms. You cannot say "put the kitchen at position (200, 300) and the living room at (200, 500)." Skissify's JSON schema is explicitly spatial — every element has x/y coordinates and dimensions. For floor plans, room layouts, and spatial diagrams, explicit positioning is not optional. This is a fundamental architectural difference.
+
+---
+
+#### Key Insights From Today's Research — Run #142
+
+1. **Mermaid's "Vibe Diagramming" creates the counter-brand opportunity "Vibe Drawing."** Mermaid is successfully positioning as the AI-to-diagram standard. Skissify should position as the AI-to-sketch standard — the hand-drawn spatial layer that Mermaid cannot provide. The brand bifurcation is now clear: Mermaid = formal diagrams, Skissify = hand-drawn drawings.
+
+2. **tldraw's 2026 direction (visual IDE + $14M + Google) makes the headless lane *more* vacant, not less.** Every dollar tldraw invests in interactive visual programming is a dollar not invested in headless rendering APIs. The funded players are moving away from Skissify's lane. Solo-dev tools filling that lane (excalidraw-render, tldraw-render-mcp) remain fragile community projects. Skissify is the only funded-quality alternative being built for that lane.
+
+3. **Zendesk/Intercom outcome pricing data ($1.50–$2.00 per AI automation) validates EUR 2/mo as the correct infrastructure price point.** This gives Skissify a market-comparable pricing anchor from mainstream SaaS. "Our per-render cost is lower than Zendesk's per-resolution cost" is a quotable pricing comparison.
+
+4. **MCP 10x growth in 12 months (1,000 → 10,000 servers) means the discovery window is narrowing.** At 1,000 servers, early submission captured a blank field. At 10,000 servers, the visual-output and sketch categories are still underpopulated but won't be forever. Registry submission urgency is now maximum.
+
+**Sources:** [Excalidraw+ Changelog](https://plus.excalidraw.com/changelog), [tldraw/computer (Google Showcase)](https://ai.google.dev/showcase/tldraw), [Mermaid Chart Vibe Diagramming](https://mermaid.ai/blog/posts/vibe-diagramming-is-already-happening-heres-what-it-actually-is), [MCP Roadmap 2026 — The New Stack](https://thenewstack.io/model-context-protocol-roadmap-2026/), [SaaS Pricing 2026 — getmonetizely](https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models), [Lovable Micro SaaS 2026](https://lovable.dev/guides/micro-saas-ideas-for-solopreneurs-2026)
+

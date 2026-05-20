@@ -10490,3 +10490,107 @@ Inc/Fast Company covered a trend where architects are deliberately returning to 
 | **Skissify** | Headless JSON hand-drawn SVG. MCP Registry: **ABSENT (CRITICAL x19)**. | **YES (only one)** | **YES** | **YES** | YES (headless) | Uncontested |
 
 ---
+
+
+---
+
+## Update: 2026-04-04 — Strategy Run #142 (Saturday April 4, 2026 — Late Evening Cycle)
+
+### Status: 6 research vectors covered. KEY FINDINGS: **Excalidraw confirmed March 2026 additions — Trash System, Expanded Mermaid ERD/State Diagrams, Slide Templates — all interactive canvas, zero headless movement; Presenter View + QR code sharing deepen the human-in-front-of-screen assumption.** **tldraw doubled down on AI canvas — Image Pipeline template (visual node-based AI workflow builder), Agent Starter restructure with mode system + action schema registries, Google/Gemini computer.tldraw.com natural-language computing canvas; none of this is headless rendering.** **Mermaid 2026 — AI Chatbot + ChatGPT integration + "Vibe Diagramming" campaign; Visual Studio 2026 native Mermaid render; Mermaid tightening grip on text-to-formal-diagram niche.** **MCP ecosystem: 10,000+ active servers now confirmed (up from ~1,000 in early 2025 — 10x in 12 months); enterprise adoption wave is starting.** **Micro-SaaS pricing: Zendesk AI agents at $1.50–$2.00 per automated resolution — outcome-based pricing validates EUR 2/mo per-pipeline tier as correct market positioning.** **MCP Registry submission CRITICAL RED — 43rd consecutive run unconfirmed.**
+
+---
+
+### Excalidraw March 2026 Feature Drop — Deeper Interactive Canvas Lock-in (COMPETITIVE UPDATE)
+
+**Sources**: [Excalidraw+ Changelog](https://plus.excalidraw.com/changelog), [Excalidraw GitHub Releases](https://github.com/excalidraw/excalidraw/releases), verified 2026-04-04
+
+**Confirmed new features (March–April 2026):**
+- **Trash System**: New sidebar/view to manage deleted scenes with bulk actions, restore, and auto-purge scheduling. Signals growing investment in cloud storage UX — more user data locked into Excalidraw+.
+- **Expanded Mermaid Support**: State Diagrams + ERD now supported in addition to flowcharts. Dedicated Mermaid Code Editor. Excalidraw is absorbing Mermaid's text-to-diagram use case into its interactive canvas.
+- **Slide Templates**: Pre-built presentation layouts with tag-based template picker. Positions Excalidraw+ as a presentation layer, not just a diagram tool.
+- **YouTube Video Syncing + QR Code Sharing**: Rich media embeds + live collaboration session QR codes. Presenter View + Presenter Waiting Room confirmed active.
+- **January 2026**: Redesigned dark mode, expanded language support (Russian, Spanish, Arabic).
+
+**Strategic interpretation for Skissify**: Every Excalidraw feature in 2026 deepens the assumption that a human is watching a screen and controlling a canvas. Mermaid ERD integration is notable — Excalidraw is absorbing the text-to-diagram space, narrowing the gap between Excalidraw and Mermaid for human users, but has zero effect on the headless programmatic use case. Skissify's structural differentiation vs. Excalidraw continues to widen as Excalidraw builds upward (richer interactive features) rather than sideways (headless API).
+
+**Threat assessment: CRITICAL (brand/ecosystem mindshare) — but structural headless gap unchanged; Mermaid ERD absorption means Excalidraw is now a Mermaid+canvas combo for humans; Skissify's architectural lane untouched**
+
+---
+
+### tldraw 2026 AI Canvas Expansion — Workflow Builder + Agent Starter Templates (COMPETITIVE UPDATE)
+
+**Sources**: [Google AI Showcase — tldraw/computer](https://ai.google.dev/showcase/tldraw), [tldraw Release Notes February 2026 — Releasebot](https://releasebot.io/updates/tldraw), verified 2026-04-04
+
+**Confirmed new capabilities (2026):**
+- **Image Pipeline Starter Template**: Visual node-based canvas for AI image generation workflows — custom node shapes, typed port connections, pipeline regions with play/stop controls, DAG-based execution engine backed by Cloudflare Workers. Positions tldraw as a visual workflow orchestration tool, not just a whiteboard SDK.
+- **Agent Starter Template (restructured)**: Manager-based architecture with mode system, action schema registries, prompt part definitions, canvas linting, user action tracking.
+- **computer.tldraw.com (live)**: Google/Gemini-powered natural language computing canvas. Interactive, browser-required, human-in-the-loop.
+
+**Strategic interpretation**: tldraw is building an AI-native interactive canvas platform — a visual programming environment, not a rendering API. The Image Pipeline template is the exact opposite of Skissify's architecture: requires a visual canvas session, a browser, human interaction, and Cloudflare Workers backend. Skissify is a single HTTP call returning SVG. tldraw is building a visual IDE. This divergence validates that the headless rendering niche remains unclaimed by funded players.
+
+**Threat assessment: MEDIUM-HIGH (Google partnership raises brand authority in AI visual tools; $6K/year SDK price cliff protects Skissify's developer segment; workflow builder direction diverges further from headless lane)**
+
+---
+
+### Mermaid 2026 — "Vibe Diagramming" + AI Chatbot + Text Editor Integration (COMPETITIVE UPDATE)
+
+**Sources**: [Mermaid Chart Blog — Vibe Diagramming](https://mermaid.ai/blog/posts/vibe-diagramming-is-already-happening-heres-what-it-actually-is), [W3Resource Mermaid.js Guide 2026](https://www.w3resource.com/javascript/mermaid-js-guide-to-create-diagrams-as-code.php), [Docsie — Mermaid Diagrams 2026](https://www.docsie.io/blog/articles/mermaid-diagrams-knowledge-base-2026/), verified 2026-04-04
+
+**Confirmed 2026 features:**
+- **AI Chatbot** embedded in Mermaid.ai: builds, edits, and polishes diagrams from plain language; "Repair Diagram" feature auto-fixes syntax errors.
+- **ChatGPT integration**: Generate Mermaid syntax directly from ChatGPT via the Mermaid Chart plugin.
+- **"Vibe Diagramming" campaign**: Describe a system in a PRD or Slack thread, AI produces Mermaid syntax instantly. Mermaid is positioning this as the default developer diagram workflow.
+- **Visual Studio 2026**: Built-in Mermaid chart rendering in markdown files. GitHub, GitLab, and major documentation tools all render Mermaid natively by 2026.
+- **C4 diagrams, sequence diagrams, cloud architecture, ER diagrams, dependency graphs** all supported from AI descriptions.
+
+**Strategic interpretation for Skissify**: Mermaid is tightening its grip on text-to-formal-diagram with AI generation baked in. However, Mermaid output remains formal, grid-aligned, vector — no hand-drawn aesthetic, no spatial layout control, no floor plan domain primitives. The "Vibe Diagramming" framing creates a counter-positioning opportunity: **"Vibe Drawing"** — the aesthetic layer Mermaid cannot provide. SEO opportunity: "Mermaid vs Skissify: diagrams vs drawings — which one when?"
+
+**New SEO target**: "Mermaid alternative hand-drawn" and "Mermaid but sketchy style" — developers who love Mermaid text-first model but need hand-drawn output for spatial/floor plan use cases.
+
+**Threat assessment: MEDIUM — Mermaid AI features tighten text-to-formal-diagram lock-in; zero overlap with Skissify's hand-drawn spatial domain; creates SEO comparison opportunity; "Vibe Drawing" is the counter-brand to "Vibe Diagramming"**
+
+---
+
+### MCP Ecosystem Scale Update — 10,000+ Servers, Enterprise Adoption Wave Starting (ECOSYSTEM UPDATE)
+
+**Sources**: [MCP Standard and Ecosystem 2026 — Apify](https://use-apify.com/blog/mcp-standard-ecosystem-2026), [The New Stack — MCP Roadmap 2026](https://thenewstack.io/model-context-protocol-roadmap-2026/), [CData — 2026 Year of Enterprise MCP](https://www.cdata.com/blog/2026-year-enterprise-ready-mcp-adoption), verified 2026-04-04
+
+**Updated scale data (2026-04-04):**
+- **10,000+ active MCP servers** (up from ~1,000 in early 2025 — 10x in ~12 months)
+- **97M monthly SDK downloads** (Python + TypeScript combined)
+- **2026 roadmap priorities**: audit trails, SSO-integrated auth, gateway behavior, configuration portability, governance maturation
+- **All major AI platforms standardized**: OpenAI Agents SDK, Microsoft Copilot, Google Gemini, Amazon Bedrock, HuggingFace
+- **Pinterest production blueprint**: 66K invocations/month, 844 active users, 7K engineering hours/month saved — now the template for enterprise MCP tool catalogs
+
+**Implication for Skissify**: Ecosystem grew 10x in 12 months. Enterprise tool catalogs are being finalized NOW. The teams building approved MCP tool lists are choosing right now. Every day of non-submission is a day those catalogs close without Skissify listed.
+
+**MCP Registry submission CRITICAL RED — 43rd consecutive run unconfirmed. No technical blocker. This is a priority execution gap, not a research gap.**
+
+---
+
+### Micro-SaaS EUR 2/mo Pricing — Outcome-Based Market Validation (PRICING UPDATE)
+
+**Sources**: [The 2026 Guide to SaaS, AI, and Agentic Pricing](https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models), [Lovable — Micro SaaS Ideas 2026](https://lovable.dev/guides/micro-saas-ideas-for-solopreneurs-2026), [Medium — Future of SaaS Pricing 2026](https://medium.com/@aymane.bt/the-future-of-saas-pricing-in-2026-an-expert-guide-for-founders-and-leaders-a8d996892876), verified 2026-04-04
+
+**New data**: Zendesk prices AI agents at **$1.50–$2.00 per automated resolution**. Intercom Fin AI Agent: **$0.99 per resolution**. Outcome-based pricing for AI automation converges around EUR 1–2 per unit of value delivered. Skissify EUR 2/mo for 1,000 renders = EUR 0.002/render — infrastructure pricing, not feature-per-seat. Correct framing: "like a CDN charge per render."
+
+**2026 micro-SaaS context**: Solo founders typically target $5K–$50K/month ARR. Typical personal plan pricing: $5/month. EUR 2/mo is intentionally below market floor for personal subscriptions to minimize adoption friction — the real revenue growth path is API usage volume at scale.
+
+**Implication**: EUR 2/mo tier is correct. Zendesk/Intercom outcome-based pricing data confirms EUR 1–2 per unit of AI work is a validated market signal. Frame the EUR 2/mo as infrastructure pricing: predictable, flat, like a CDN — not a stripped-down subscription.
+
+---
+
+### Updated Competitor Matrix (Run #142 — Saturday April 4, 2026 — Late Evening)
+
+| Tool | Key 2026 Update | Headless JSON→SVG | Hand-drawn | No Chromium | MCP | Threat |
+|------|----------------|-------------------|------------|-------------|-----|--------|
+| **Excalidraw+ (April 2026)** | Trash System, Mermaid ERD+State Diagrams, Slide Templates, Presenter View, QR sharing, YouTube sync | NO (canvas session) | YES | NO | YES (interactive) | **CRITICAL** |
+| **tldraw (April 2026)** | Image Pipeline template, Agent Starter restructure, computer.tldraw.com Gemini NL, $14.1M raised | Partial (interactive) | NO | NO | YES (official) | **MEDIUM-HIGH** |
+| **Mermaid Chart (2026)** | AI Chatbot, ChatGPT integration, "Vibe Diagramming" campaign, VS 2026 native render | YES (text-first) | NO (vector) | YES | NO | **MEDIUM (SEO + text-to-diagram lock-in)** |
+| **Eraser.io** | $10-25/seat, AI co-pilot, GitHub sync, no MCP, no hand-drawn | NO (interactive) | NO | YES | NO | **MEDIUM** |
+| **Draw.io MCP** | Official @drawio/mcp, 10K+ shapes, 4 integration modes | YES (XML/CSV/Mermaid) | NO | YES | YES | **MEDIUM-HIGH** |
+| **tldraw-render-mcp (bassimeledath)** | Headless Chromium singleton, 5-8s cold start, community project | YES (simplified JSON) | NO | NO | YES (local) | **MEDIUM** |
+| **excalidraw-render** | Headless Excalidraw printer, local-only, Chromium-based | YES (Excalidraw JSON) | YES | NO | NO | **MEDIUM-HIGH** |
+| **SketchWow** | $49 lifetime, human-facing, no API | NO | YES | YES | NO | **LOW (pricing anchor)** |
+| **Skissify** | Canvas 2D-native, sub-100ms, arch elements, tunable wobble, MCP unsubmitted | YES (native JSON) | YES (tunable) | YES | YES (unsubmitted) | — |
+
